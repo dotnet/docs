@@ -5,5 +5,6 @@ General .NET Concepts
 	:titlesonly:
 	
 	primer
+	intro-clr
 	
 	

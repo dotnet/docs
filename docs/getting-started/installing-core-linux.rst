@@ -1,7 +1,172 @@
 .. include:: /stub-topic.txt
 
-|stub-icon| Installing .NET Core on Linux 
+Installing .NET Core on Linux
 =========================================
 
-.. include:: /stub-notice.txt
-    
+These instructions will lead you through acquiring the .NET Core DNX SDK
+via the `.NET Version Manager (DNVM) <https://github.com/aspnet/dnvm>`__
+and running a "Hello World" demo on Linux.
+
+.NET Core NuGet packages and the .NET Core DNX SDKs are available on the
+`ASP.NET 'vnext' myget feed <https://www.myget.org/F/aspnetvnext>`__,
+which you can more easily view on
+`gallery <https://www.myget.org/gallery/aspnetvnext>`__ for the feed.
+
+Setting up the environment
+--------------------------
+
+These instructions have been written and tested on Ubuntu 14.04 LTS, since that is the main Linux distribution the .NET Core team uses. These instructions may succeed on other distributions as well. We are always accepting new pull requests on `our GitHub repo <https://www.github.com/dotnet/coreclr/>`_ that address running on other Linux distributions. The only requirement is that they do not break the ability to use Ubuntu 14.04 LTS.
+
+Installing the required packages
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Install the ``libunwind8``, ``libssl-dev`` and ``unzip`` packages:
+
+::
+
+    sudo apt-get install libunwind8 libssl-dev unzip
+
+You also need a latest version of Mono, which is required for DNX tooling. This is a temporary requirement, and will not be required in the future.
+
+::
+
+    sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+    echo "deb http://download.mono-project.com/repo/debian wheezy main" | sudo tee /etc/apt/sources.list.d/mono-xamarin.list
+    sudo apt-get update
+    sudo apt-get install mono-complete
+
+Certificates
+^^^^^^^^^^^^
+
+You need to import trusted root certificates in order to restore NuGet packages. You can do that with the ``mozroots`` tool.
+
+::
+
+    mozroots --import --sync
+
+Installing DNVM
+---------------
+
+You need DNVM as a starting point. DNVM enables you to acquire one or multiple .NET Execution Environments (DNX). DNVM is a shell script and does not require .NET. You can use the below command to install it.
+
+::
+
+    curl -sSL https://raw.githubusercontent.com/aspnet/Home/dev/dnvminstall.sh | DNX_BRANCH=dev sh && source ~/.dnx/dnvm/dnvm.sh
+
+Installing the .NET Core DNX
+----------------------------
+
+You first need to acquire the Mono DNX. It doesn't include Mono, but is
+needed to use the DNX tools on top of Mono. In particular, the DNU
+command is not yet supported on .NET Core, requiring us to use Mono for
+this purpose (until DNU runs on .NET Core). Mono is the default DNX, so
+you can acquire it via ``dnvnm upgrade``.
+
+::
+
+    dnvm upgrade -u
+
+Next, acquire the .NET Core DNX SDK.
+
+::
+
+    dnvm install latest -r coreclr -u
+
+You can see the currently installed DNX versions with ``dnvm list``.
+
+::
+
+    dnvm list
+
+::
+
+    Active Version              Runtime Arch Location             Alias
+    ------ -------              ------- ---- --------             -----
+      *    1.0.0-beta5-11649    coreclr x64  ~/.dnx/runtimes
+           1.0.0-beta5-11649    mono         ~/.dnx/runtimes      default
+
+Using a specific runtime
+------------------------
+
+You can choose which of the installed DNXs you want to use with ``dnvm use``, specifying arguments that are similar to the ones used when installing a runtime.
+
+::
+
+    dnvm use -r coreclr -arch x86 1.0.0-beta5-11649
+    Adding ~/.dnx/runtimes/dnx-coreclr-win-x86.1.0.0-beta5-11649/bin
+    to process PATH
+
+    dnvm list
+
+    Active Version              Runtime Arch Location             Alias
+    ------ -------              ------- ---- --------             -----
+      *    1.0.0-beta5-11649    coreclr x64  ~/.dnx/runtimes
+           1.0.0-beta5-11649    mono         ~/.dnx/runtimes      default
+
+See the asterisk in the listing above? It's purpose is to tell you which runtime is now active. "Active" here means that all of the interaction with your projects and .NET Core will use this runtime.
+
+That's it! You now have the .NET Core runtime installed on your machine and it is time to take it for a spin.
+
+Write your App
+--------------
+
+his being an introduction-level document, it seems fitting to start with a "Hello World" app.  Here's a very simple one you can copy and paste into a CS file in a directory.
+
+.. code:: csharp
+
+    using System;
+
+    public class Program
+    {
+        public static void Main (string[] args)
+        {
+            Console.WriteLine("Hello, Linux");
+            Console.WriteLine("Love from CoreCLR.");
+        }
+    }
+
+A more ambitious example is available on the `corefxlab repo <https://www.github.com/dotnet/corefxlab/>`_ that will print out a pretty picture based on the argument you provide at runtime. If you wish to use this example, simply save the `C# file <https://raw.githubusercontent.com/dotnet/corefxlab/master/demos/CoreClrConsoleApplications/HelloWorld/HelloWorld.cs>`_ to a directory somewhere on your machine.
+
+The next thing you will need is a ``project.json`` file that will outline the dependencies of an app, so you can **actually** run it. Use the contents below, it will work for both examples above. Save this file in a directory next to the CS file that contains your code.
+
+::
+
+    {
+        "version": "1.0.0-*",
+        "dependencies": {
+        },
+        "frameworks" : {
+            "dnx451" : { },
+            "dnxcore50" : {
+                "dependencies": {
+                    "System.Console": "4.0.0-beta-*"
+                }
+            }
+        }
+    }
+
+Run your App
+------------
+
+You need to restore packages for your app, based on your project.json,
+with ``dnu restore``. You will need to run this command under the Mono
+DNX. The first command switches the active runtime to the Mono one.
+
+::
+
+    dnvm use 1.0.0-beta5-11649 -r mono
+    dnu restore
+
+You are now ready to run your app under .NET Core. As you can guess, however, before you do that you first need to switch to the .NET Core runtime. The first command below does exactly that.
+
+::
+
+    dnvm use 1.0.0-beta5-11649 -r coreclr
+    dnx . run
+
+    Hello, Linux
+    Love from CoreCLR.
+
+Building .NET Core from source
+------------------------------
+.NET Core is an open source project that is hosted on GitHub. This means that you can, at any given time, clone the repository and build .NET Core from source. This is a more advanced scenario that is usually used when you want to add features to the .NET runtime or the BCL or if you are a contributor to these projects. The detailed instruction on how to build .NET Core windows can be found in the `.NET Core OS X build instructions <https://github.com/dotnet/coreclr/blob/master/Documentation/linux-instructions.md>`_ on GitHub.

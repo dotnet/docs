@@ -7,4 +7,4 @@ Getting started
 	overview
 	installing-core-windows
 	installing-core-linux
-	installing-core-macosx
+	installing-core-osx

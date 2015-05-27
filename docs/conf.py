@@ -47,7 +47,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'coreclrdoc'
+project = '.NET Core Documentation'
 copyright = '2015, Zlatko Knezevic'
 author = 'Zlatko Knezevic'
 

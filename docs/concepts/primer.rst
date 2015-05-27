@@ -5,12 +5,12 @@
 kind of app type or workload where general purpose solutions are used.
 It has several key features that are attractive to many developers,
 including automatic memory management and modern programming languages,
-that make it easier to efficiently build high-quality apps. .NET enables
-a high-level programming environment with many convenience features,
-while providing low-level access to native memory and APIs.
+that make it easier to efficiently build high*quality apps. .NET enables
+a high*level programming environment with many convenience features,
+while providing low*level access to native memory and APIs.
 
-Multiple implementations of .NET are available, based on open `.NET
-Standards <dotnet-standards.md>`__ that specify the fundamentals of the
+Multiple implementations of .NET are available, based on open :doc:`.NET
+Standards <https://github.com/dotnet/coreclr/blob/master/Documentation/dotnet-standards.md>`_ that specify the fundamentals of the
 platform. They are separately optimized for different app types (e.g.
 desktop, mobile, gaming, cloud) and support many chips (e.g. x86/x64,
 ARM) and operating systems (e.g. Windows, Linux, iOS, Android, OS X).
@@ -25,20 +25,20 @@ There are a set of key features that together define .NET. Most of them
 are not unique on their own, but the particular aggregation of these
 features is what defines .NET as being distinct.
 
--  Garbage Collection
--  Verifiable code - type and memory safety
--  Flexible native code compilation (enables JIT and AOT)
--  Fast native interop and access to native memory
--  Operating system agnostic
--  Chip-agnostic (e.g. x86, ARM64) byte-code
--  Language-agnostic (e.g. C#, F#, VB) runtime
--  Flexible type system
--  Expressive (imperative and functional) programming languages
--  Programmable source code compiler (Roslyn)
--  Assembly format
--  .NET Class Libraries <class-libraries.md>
--  Large framework library <framework-libraries.md>
--  Package management
+* :doc:`Garbage Collection <gc-overview>`
+*  Verifiable code & type and memory safety
+*  Flexible native code compilation (enables JIT and AOT)
+*  Fast native interop and access to native memory
+*  Operating system agnostic
+*  Chip-agnostic (e.g. x86, ARM64) byte-code
+*  Language-agnostic (e.g. C#, F#, VB) runtime
+*  Flexible type system
+*  Expressive (imperative and functional) programming languages
+*  Programmable source code compiler (Roslyn)
+*  :doc:`Assembly format <assembly-format>`
+*  :doc:`.NET Class Libraries <class-libraries>`
+*  :doc:`Large framework library <framework-libraries>`
+*  Package management
 
 TODO: Ensure that this list is correct. Write and link to a chapter for
 each of these defining features.
@@ -81,7 +81,7 @@ a given object, and the memory it consumes, are those of its type. A
 ``SumTotal`` method. A program can only call the declared methods of a
 given type. All other calls will result in an exception.
 
-.NET languages can be object-oriented, with hierarchies of base and
+.NET languages can be object*oriented, with hierarchies of base and
 derived classes. The .NET runtime will only allow object casts and calls
 that align with the object hierarchy.
 
@@ -89,44 +89,87 @@ that align with the object hierarchy.
 
     Dog dog = Dog.AdoptDog();
     Pet pet = (Pet)dog; // Dog derives from Pet
-    pet.ActCute(); 
+    pet.ActCute();
     Car car = (Car)dog; // will throw - no relationship between Car and Dog
     object temp = (object)dog; // legal - a Dog is an object
     car = (Car)temp; // will throw - the runtime isn't fooled
     car.Accelerate() // the dog won't like this, nor will the program get this far
 
 Type safety also guarantees the fidelity of accessor keywords (e.g.
-private, public, internal). This is particularly useful for non-public
+private, public, internal). This is particularly useful for non*public
 data that an implementation uses to manage its behavior.
 
 ::
 
     Dog dog = Dog._nextDogToBeAdopted; // will throw - this is a private field
 
-Generic Types
-^^^^^^^^^^^^^
+Generic Types (Generics)
+^^^^^^^^^^^^^^^^^^^^^^^^
 
-Generic types enable a kind of uncoordinated mix-ins of (largely)
-arbitrary types. They allow the creation of a kind of *compound type*. A
-generic type is considered to be *open*, as it requires a set of types
-(however many type parameters it exposes) to be provided in order to be
-*closed*. While static in nature, like the rest of the .NET type system,
-generics provide a kind of faux dynamism that developers find very
-useful.
+We use generics all the time in C#, whether implicitly of explicitly. When you use LINQ in C#, did you ever notice that you are working with IEnumerable<T>? Or if you every saw an online sample of a "generic repository" for talking to databases using Entity Framework, did you see that most methods return IQueryable<T>? You may have wondered what the **T** is in these examples and why is it in there?
 
-The most commonly used generic type is ``List<T>`` and its sibling
-``Dictionary<K,V>``. You can use these types, and also create your own
-generic types. The following example demonstrates the use of these two
-built-in generic types.
+First introduced to the .NET Framework 2.0, generics involved changes to both the C# language and the Common Language Runtime (CLR). **Generics** are essentially a "code template" that allows developers to define `type-safe <https://msdn.microsoft.com/en-us/library/hbzz1a9a%28v=vs.110%29.aspx>`_ data structures without committing to an actual data type. For example, ``List<T>`` is a `Generic Collection <https://msdn.microsoft.com/en-us/library/System.Collections.Generic(v=vs.110).aspx>`_ that can be declared and used with any type: ``List<int>``, ``List<string>``, ``List<Person>``, etc.
+
+So, what's the point? Why are generics useful? In order to understand this, we need to take a look at a specific class before and after adding generics. Let's look at the ``ArrayList``. In C# 1.0, the ``ArrayList`` elements were of type ``object``. This meant that any element that was added was silently converted into an ``object``; same thing happens on reading the elements from the list (this process is known as `boxing <https://msdn.microsoft.com/en-us/library/yz2be5wk.aspx>`_ and unboxing respectively). Boxing and unboxing have an impact of performance. More than that, however, there is no way to tell at compile time what is the actual type of the data in the list. This makes for some fragile code. Generics solve this problem by providing additional information the type of data each instance of list will contain. Put simply, you can only add integers to ``List<int>`` and only add Persons to ``List<Person>``, etc.
+
+Generics are also available at runtime, or **reified**. This means the
+runtime knows what type of data structure you are using and can store it
+in memory more efficiently.
+
+Here is a small program that illustrates the efficiency of knowing the
+data structure type at runtime:
 
 ::
 
-    List<string> strings = new List<string>();
-    strings.Add("string A");
-    strings.Add("string B");
+    using System;
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Diagnostics;
 
-    Dictionary<int,List<string>> lists = new Dictionary<int,List<string>>();
-    lists.Add(DateTime.Now.Hour,strings); // new strings added every hour
+    namespace GenericsExample {
+      class Program {
+        static void Main(string[] args) {
+          //generic list
+          List ListGeneric = new List { 5, 9, 1, 4 };
+          //non-generic list
+          ArrayList ListNonGeneric = new ArrayList { 5, 9, 1, 4 };
+          // timer for generic list sort
+          Stopwatch s = Stopwatch.StartNew();
+          ListGeneric.Sort();
+          s.Stop();
+          Console.WriteLine($"Generic Sort: {ListGeneric}  \n Time taken: {s.Elapsed.TotalMilliseconds}ms");
+
+          //timer for non-generic list sort
+          Stopwatch s2 = Stopwatch.StartNew();
+          ListNonGeneric.Sort();
+          s2.Stop();
+          Console.WriteLine($"Non-Generic Sort: {ListNonGeneric}  \n Time taken: {s2.Elapsed.TotalMilliseconds}ms");
+          Console.ReadLine();
+        }
+      }
+    }
+
+This program yields the following output:
+
+::
+
+    Generic Sort: System.Collections.Generic.List\`1[System.Int32] Time taken: 0.0789ms
+    Non-Generic Sort: System.Collections.ArrayList Time taken: 2.4324ms
+
+The first thing you notice here is that sorting the generic list is
+significantly faster than for the non-generic list. You might also
+notice that the type for the generic list is distinct ([System.Int32])
+whereas the type for the non-generic list is generalized. Because the
+runtime knows the generic ``List<int>`` is of type int, it can store the
+list elements in an underlying integer array in memory while the
+non-generic ``ArrayList`` has to cast each list element as an object as
+stored in an object array in memory. As shown through this example, the
+extra castings take up time and slow down the list sort.
+
+The last useful thing about the runtime knowing the type of your generic
+is a better debugging experience. When you are debugging a generic in
+C#, you know what type each element is in your data structure. Without
+generics, you would have no idea what type each element was.
 
 Async Programming
 ^^^^^^^^^^^^^^^^^
@@ -136,13 +179,13 @@ runtime, the framework libraries and various .NET languages. Async is
 based off of the ``Task`` concept, which encapsulates a set of
 operations to be completed. Tasks are distinct from threads and may not
 rely on threads or require CPU time much at all, particularly for
-i/o-bound tasks.
+I/O-bound tasks.
 
 TODO: Elaborate on Task concept.
 
 C# includes special treatment for async, including the special keyword
 ``await`` for managing tasks. The following example demonstrates calling
-a web service as an async operation.
+a web endpoint as an async operation.
 
 ::
 
@@ -159,7 +202,7 @@ Language Integrated Query (LINQ)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .NET programs typically operate on some form of data. The data can be
-database-resident or in the form of objects (sometimes called POCOs -
+database-resident or in the form of objects (sometimes called POCOs for
 "Plain Old CLR Objects"). LINQ provides a language-integrated uniform
 query model over data, independent of the source. Linq providers bridge
 the gap between the uniform query model and the form of the data, such
@@ -202,7 +245,7 @@ and then called. The following example demonstrates delegate use.
             Console.WriteLine(rev("a string"));
         }
 
-.NET include a set of pre-defined delegate types - Func<> and Action<> -
+.NET includes a set of pre-defined delegate types - ``Func<>`` and ``Action<>`` -
 that be used in many situations, without the requirement to define new
 types. The example above can be re-written to no longer defined the
 reverse delegate and instead define the rev variable as a Func. The

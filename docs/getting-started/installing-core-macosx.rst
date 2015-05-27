@@ -1,6 +1,6 @@
 .. include:: /stub-topic.txt
 
-Installing .NET Core on MacOSX
+Installing .NET Core on OS X
 ==============================
 
 These instructions will lead you through acquiring the .NET Core DNX SDK

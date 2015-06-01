@@ -1,5 +1,6 @@
 .NET Primer
 ===========
+By `Rich Lander`_, `Zlatko Knezevic`_
 
 .NET is a general purpose development platform. It can be used for any
 kind of app type or workload where general purpose solutions are used.
@@ -18,7 +19,7 @@ Open source is also an important part of the .NET ecosystem, with
 multiple .NET implementations and many libraries available under
 OSI-approved licenses.
 
-You can take a look at the :doc:`<getting-started/overview>` document to figure out all of the different editions of .NET Framework that are available, both Microsoft's and others.
+You can take a look at the :doc:`../getting-started/overview` document to figure out all of the different editions of .NET Framework that are available, both Microsoft's and others.
 
 Key .NET Concepts
 -----------------
@@ -26,9 +27,9 @@ Key .NET Concepts
 There is a certain number of concepts that are very important to understand if you are new to the .NET Platform. These concepts are the cornerstone of the entire platform, and understanding them at the outset is important for general understanding of how .NET works.
 
 * :doc:`Managed Code <managed-code>`
-* :doc:`Runtime <runtime>`
+* :doc:`Runtime <common-language-runtime>`
 * :doc:`Base Class Library <framework-libraries>`
-* :doc:`Common Type System <cts>`
+* :doc:`Common Type System <common-type-system>`
 
 
 A stroll through .NET
@@ -40,7 +41,7 @@ As any mature and advanced application development framework, .NET has many powe
 * Type safety
 * The managed compiler
 * Delegates and lambdas
-* Generics
+* `Generic Types (Generics)`_
 * LINQ
 * Asynchronous support
 * Dynamic language features
@@ -184,70 +185,33 @@ handler.
 Generic Types (Generics)
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-We use generics all the time in C#, whether implicitly of explicitly. When you use LINQ in C#, did you ever notice that you are working with IEnumerable<T>? Or if you every saw an online sample of a "generic repository" for talking to databases using Entity Framework, did you see that most methods return IQueryable<T>? You may have wondered what the **T** is in these examples and why is it in there?
+Generic types, a.k.a "generics" are a feature that was added in .NET Framework 2.0. In short, generics allow the programmer to introduce a "type parameter" when designing their classes, that will allow the client code (i.e. the users of the type) to specify the exact type to use in place of the type parameter.
 
-First introduced to the .NET Framework 2.0, generics involved changes to both the C# language and the Common Language Runtime (CLR). **Generics** are essentially a "code template" that allows developers to define `type-safe <https://msdn.microsoft.com/en-us/library/hbzz1a9a%28v=vs.110%29.aspx>`_ data structures without committing to an actual data type. For example, ``List<T>`` is a `Generic Collection <https://msdn.microsoft.com/en-us/library/System.Collections.Generic(v=vs.110).aspx>`_ that can be declared and used with any type: ``List<int>``, ``List<string>``, ``List<Person>``, etc.
+Generics were added in order to help programmers implement generic data structures. Before their arrival, in order for a, say, `List` type to be generic, it would have to work with elements that were of type `object`. This would have various performance as well as semantic problems, not to mention possible subtle runtime errors. The most notorious of the latter is when a data structure contains, for instance, both integers and strings, and an `InvalidCastException` is thrown on working with the list's members.
 
-So, what's the point? Why are generics useful? In order to understand this, we need to take a look at a specific class before and after adding generics. Let's look at the ``ArrayList``. In C# 1.0, the ``ArrayList`` elements were of type ``object``. This meant that any element that was added was silently converted into an ``object``; same thing happens on reading the elements from the list (this process is known as `boxing <https://msdn.microsoft.com/en-us/library/yz2be5wk.aspx>`_ and unboxing respectively). Boxing and unboxing have an impact of performance. More than that, however, there is no way to tell at compile time what is the actual type of the data in the list. This makes for some fragile code. Generics solve this problem by providing additional information the type of data each instance of list will contain. Put simply, you can only add integers to ``List<int>`` and only add Persons to ``List<Person>``, etc.
-
-Generics are also available at runtime, or **reified**. This means the
-runtime knows what type of data structure you are using and can store it
-in memory more efficiently.
-
-Here is a small program that illustrates the efficiency of knowing the
-data structure type at runtime:
+The below sample shows a basic program running using an instance of `List<T>` types.
 
 ::
 
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Diagnostics;
+  using System;
+  using System.Collections.Generic;
 
-    namespace GenericsExample {
-      class Program {
-        static void Main(string[] args) {
-          //generic list
-          List ListGeneric = new List { 5, 9, 1, 4 };
-          //non-generic list
-          ArrayList ListNonGeneric = new ArrayList { 5, 9, 1, 4 };
-          // timer for generic list sort
-          Stopwatch s = Stopwatch.StartNew();
-          ListGeneric.Sort();
-          s.Stop();
-          Console.WriteLine($"Generic Sort: {ListGeneric}  \n Time taken: {s.Elapsed.TotalMilliseconds}ms");
+  namespace GenericsSampleShort {
+      public static void Main(string[] args){
+          // List<string> is the client way of specifying the actual type for the type parameter T
+          List<string> listOfStrings = new List<string> { "First", "Second", "Third" };
 
-          //timer for non-generic list sort
-          Stopwatch s2 = Stopwatch.StartNew();
-          ListNonGeneric.Sort();
-          s2.Stop();
-          Console.WriteLine($"Non-Generic Sort: {ListNonGeneric}  \n Time taken: {s2.Elapsed.TotalMilliseconds}ms");
-          Console.ReadLine();
-        }
+          // listOfStrings can accept only strings, both on read and write.
+          listOfStrings.Add("Fourth");
+
+          // Below will throw a compile-time error, since the type parameter
+          // specifies this list as containing only strings.
+          listOfStrings.Add(1);
+
       }
-    }
+  }
 
-This program yields the following output:
-
-::
-
-    Generic Sort: System.Collections.Generic.List\`1[System.Int32] Time taken: 0.0789ms
-    Non-Generic Sort: System.Collections.ArrayList Time taken: 2.4324ms
-
-The first thing you notice here is that sorting the generic list is
-significantly faster than for the non-generic list. You might also
-notice that the type for the generic list is distinct ([System.Int32])
-whereas the type for the non-generic list is generalized. Because the
-runtime knows the generic ``List<int>`` is of type int, it can store the
-list elements in an underlying integer array in memory while the
-non-generic ``ArrayList`` has to cast each list element as an object as
-stored in an object array in memory. As shown through this example, the
-extra castings take up time and slow down the list sort.
-
-The last useful thing about the runtime knowing the type of your generic
-is a better debugging experience. When you are debugging a generic in
-C#, you know what type each element is in your data structure. Without
-generics, you would have no idea what type each element was.
+Read more about it in the :doc:`generics` document.
 
 Async Programming
 ^^^^^^^^^^^^^^^^^

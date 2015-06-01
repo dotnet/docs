@@ -5,9 +5,9 @@
 kind of app type or workload where general purpose solutions are used.
 It has several key features that are attractive to many developers,
 including automatic memory management and modern programming languages,
-that make it easier to efficiently build high*quality apps. .NET enables
-a high*level programming environment with many convenience features,
-while providing low*level access to native memory and APIs.
+that make it easier to efficiently build high-quality apps. .NET enables
+a high-level programming environment with many convenience features,
+while providing low-level access to native memory and APIs.
 
 Multiple implementations of .NET are available, based on open `.NET
 Standards <https://github.com/dotnet/coreclr/blob/master/Documentation/dotnet-standards.md>`_ that specify the fundamentals of the
@@ -18,41 +18,41 @@ Open source is also an important part of the .NET ecosystem, with
 multiple .NET implementations and many libraries available under
 OSI-approved licenses.
 
-Defining .NET Features
-----------------------
+You can take a look at the :doc:`<getting-started/overview>` document to figure out all of the different editions of .NET Framework that are available, both Microsoft's and others.
 
-There are a set of key features that together define .NET. Most of them
-are not unique on their own, but the particular aggregation of these
-features is what defines .NET as being distinct.
+Key .NET Concepts
+-----------------
 
-* :doc:`Garbage Collection <gc-overview>`
-*  Verifiable code & type and memory safety
-*  Flexible native code compilation (enables JIT and AOT)
-*  Fast native interop and access to native memory
-*  Operating system agnostic
-*  Chip-agnostic (e.g. x86, ARM64) byte-code
-*  Language-agnostic (e.g. C#, F#, VB) runtime
-*  Flexible type system
-*  Expressive (imperative and functional) programming languages
-*  Programmable source code compiler (Roslyn)
-*  :doc:`Assembly format <assembly-format>`
-*  :doc:`.NET Class Libraries <class-libraries>`
-*  :doc:`Large framework library <framework-libraries>`
-*  Package management
+There is a certain number of concepts that are very important to understand if you are new to the .NET Platform. These concepts are the cornerstone of the entire platform, and understanding them at the outset is important for general understanding of how .NET works.
 
-TODO: Ensure that this list is correct. Write and link to a chapter for
-each of these defining features.
+* :doc:`Managed Code <managed-code>`
+* :doc:`Runtime <runtime>`
+* :doc:`Base Class Library <framework-libraries>`
+* :doc:`Common Type System <cts>`
 
-.NET by Example
----------------
 
-.NET includes many features and capabilities that you will use on a
-daily basis for common tasks and needs. You can see these described
-below, with examples. Some of the same topics are discussed in more
-detail in documents linked above.
+A stroll through .NET
+---------------------
+
+As any mature and advanced application development framework, .NET has many powerful features that make the developer's job easier and aim to make writing code more powerful and expressive. This section will outline the basics of the most salient features and provide pointers to more detailed discussions where needed. After finishing this stroll, you should have enough information to be able to read the samples on our GitHub repos as well as other code and understand what is going on.
+
+* Automatic memory management
+* Type safety
+* The managed compiler
+* Delegates and lambdas
+* Generics
+* LINQ
+* Asynchronous support
+* Dynamic language features
+* Code contracts
+* Native interoperability
+
+
+Automatic memory management
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Memory Safety
-^^^^^^^^^^^^^
+~~~~~~~~~~~~~
 
 One of the less obvious but quite far-reaching features that a garbage
 collector enables is memory safety. The invariant of memory safety is
@@ -102,6 +102,84 @@ data that an implementation uses to manage its behavior.
 ::
 
     Dog dog = Dog._nextDogToBeAdopted; // will throw - this is a private field
+
+Delegates and Lambdas
+^^^^^^^^^^^^^^^^^^^^^
+
+Delegates are like C++ function pointers, but are type safe. They are a
+kind of disconnected method within the CLR type system. Regular methods
+are attached to a class and only directly callable through static or
+instance calling conventions. Alternatively, delegates can be thought of
+as a one method interface, without the interface.
+
+Delegates define a type, which specify a particular method signature. A
+method (static or instance) that satisfies this signature can be
+assigned to a variable of that type, then called directly (with the
+appropriate arguments) or passed as an argument itself to another method
+and then called. The following example demonstrates delegate use.
+
+::
+
+        public delegate string Reverse(string s);
+
+        static string ReverseString(string s)
+        {
+            return new string(s.Reverse().ToArray());
+        }
+
+        static void Main(string[] args)
+        {
+            Reverse rev = ReverseString;
+
+            Console.WriteLine(rev("a string"));
+        }
+
+.NET includes a set of pre-defined delegate types - ``Func<>`` and ``Action<>`` -
+that be used in many situations, without the requirement to define new
+types. The example above can be re-written to no longer defined the
+reverse delegate and instead define the rev variable as a Func. The
+program will function the same.
+
+::
+
+    Func<string,string> rev = ReverseString;
+
+Lambdas are a more convenient syntax for using delegates. They declare a
+signature and a method body, but don't have an formal identity of their
+own, unless they are assigned to a delegate. Unlike delegates, they can
+be directly assigned as the left-hand side of event registration or as a
+Linq select clause.
+
+You can see the use of lambda as a linq select clause in the Linq
+section above. The following example rewrites the program above using
+the more compact lambda syntax. Note that an explictly defined delegate
+could still be used, instead of Func<>.
+
+::
+
+    static void Main(string[] args)
+    {
+        Func<string,string> rev = (s) => {return new string(s.Reverse().ToArray());};
+
+        Console.WriteLine(rev("a string"));
+    }
+
+The following example demonstrated the use of a lambda as an event
+handler.
+
+::
+
+    public MainWindow()
+    {
+        InitializeComponent();
+
+        Loaded += (o, e) =>
+        {
+            this.Title = "Loaded";
+        };
+    }
+
+
 
 Generic Types (Generics)
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -212,86 +290,20 @@ more.
 The follow examples demonstrate various uses of LINQ to query different
 forms of data.
 
-TODO: Examples.
+TODO: finish the section, link to a more detailed document.
 
-Delegates and Lambdas
-^^^^^^^^^^^^^^^^^^^^^
+Dynamic language features
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Delegates are like C++ function pointers, but are type safe. They are a
-kind of disconnected method within the CLR type system. Regular methods
-are attached to a class and only directly callable through static or
-instance calling conventions. Alternatively, delegates can be thought of
-as a one method interface, without the interface.
+TODO: finish section
 
-Delegates define a type, which specify a particular method signature. A
-method (static or instance) that satisfies this signature can be
-assigned to a variable of that type, then called directly (with the
-appropriate arguments) or passed as an argument itself to another method
-and then called. The following example demonstrates delegate use.
-
-::
-
-        public delegate string Reverse(string s);
-
-        static string ReverseString(string s)
-        {
-            return new string(s.Reverse().ToArray());
-        }
-
-        static void Main(string[] args)
-        {
-            Reverse rev = ReverseString;
-
-            Console.WriteLine(rev("a string"));
-        }
-
-.NET includes a set of pre-defined delegate types - ``Func<>`` and ``Action<>`` -
-that be used in many situations, without the requirement to define new
-types. The example above can be re-written to no longer defined the
-reverse delegate and instead define the rev variable as a Func. The
-program will function the same.
-
-::
-
-    Func<string,string> rev = ReverseString;
-
-Lambdas are a more convenient syntax for using delegates. They declare a
-signature and a method body, but don't have an formal identity of their
-own, unless they are assigned to a delegate. Unlike delegates, they can
-be directly assigned as the left-hand side of event registration or as a
-Linq select clause.
-
-You can see the use of lambda as a linq select clause in the Linq
-section above. The following example rewrites the program above using
-the more compact lambda syntax. Note that an explictly defined delegate
-could still be used, instead of Func<>.
-
-::
-
-    static void Main(string[] args)
-    {
-        Func<string,string> rev = (s) => {return new string(s.Reverse().ToArray());};
-
-        Console.WriteLine(rev("a string"));
-    }
-
-The following example demonstrated the use of a lambda as an event
-handler.
-
-::
-
-    public MainWindow()
-    {
-        InitializeComponent();
-
-        Loaded += (o, e) =>
-        {
-            this.Title = "Loaded";
-        };
-    }
-
-Native Interop
+Code contracts
 ^^^^^^^^^^^^^^
+
+TODO: finish section
+
+Native Interoperability
+^^^^^^^^^^^^^^^^^^^^^^^
 
 .NET provides low-level access to native APIs via the platform invoke or
 P/Invoke facility. It enables a mapping of .NET types to native types,
@@ -305,7 +317,7 @@ The Java and Objective-C interop systems provided by Xamarin on top of
 Mono are fundamentally the same.
 
 Unsafe Code
-^^^^^^^^^^^
+~~~~~~~~~~~
 
 The CLR enables the ability to acccess native memory and do pointer
 arithmetic. These operations are needed for some algortithms and for

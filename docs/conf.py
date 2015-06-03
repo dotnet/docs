@@ -104,6 +104,13 @@ pygments_style = 'sphinx'
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = False
 
+rst_prolog = """
+.. raw:: html
+
+	<noscript><img alt="" width="1" height="1" src="https://c.microsoft.com/trans_pixel.aspx"/></noscript>
+
+.. include:: /authors.txt
+"""
 
 # -- Options for HTML output ----------------------------------------------
 

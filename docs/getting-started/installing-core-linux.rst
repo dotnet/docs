@@ -22,13 +22,13 @@ Installing the required packages
 
 Install the ``libunwind8``, ``libssl-dev`` and ``unzip`` packages:
 
-::
+.. code-block:: console
 
     sudo apt-get install libunwind8 libssl-dev unzip
 
 You also need a latest version of Mono, which is required for DNX tooling. This is a temporary requirement, and will not be required in the future.
 
-::
+.. code-block:: console
 
     sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
     echo "deb http://download.mono-project.com/repo/debian wheezy main" | sudo tee /etc/apt/sources.list.d/mono-xamarin.list
@@ -40,7 +40,7 @@ Certificates
 
 You need to import trusted root certificates in order to restore NuGet packages. You can do that with the ``mozroots`` tool.
 
-::
+.. code-block:: console
 
     mozroots --import --sync
 
@@ -49,7 +49,7 @@ Installing DNVM
 
 You need DNVM as a starting point. DNVM enables you to acquire one or multiple .NET Execution Environments (DNX). DNVM is a shell script and does not require .NET. You can use the below command to install it.
 
-::
+.. code-block:: console
 
     curl -sSL https://raw.githubusercontent.com/aspnet/Home/dev/dnvminstall.sh | DNX_BRANCH=dev sh && source ~/.dnx/dnvm/dnvm.sh
 
@@ -62,23 +62,23 @@ command is not yet supported on .NET Core, requiring us to use Mono for
 this purpose (until DNU runs on .NET Core). Mono is the default DNX, so
 you can acquire it via ``dnvnm upgrade``.
 
-::
+.. code-block:: console
 
     dnvm upgrade -u
 
 Next, acquire the .NET Core DNX SDK.
 
-::
+.. code-block:: console
 
     dnvm install latest -r coreclr -u
 
 You can see the currently installed DNX versions with ``dnvm list``.
 
-::
+.. code-block:: console
 
     dnvm list
 
-::
+.. code-block:: console
 
     Active Version              Runtime Arch Location             Alias
     ------ -------              ------- ---- --------             -----
@@ -90,7 +90,7 @@ Using a specific runtime
 
 You can choose which of the installed DNXs you want to use with ``dnvm use``, specifying arguments that are similar to the ones used when installing a runtime.
 
-::
+.. code-block:: console
 
     dnvm use -r coreclr -arch x86 1.0.0-beta5-11649
     Adding ~/.dnx/runtimes/dnx-coreclr-win-x86.1.0.0-beta5-11649/bin
@@ -112,7 +112,7 @@ Write your App
 
 his being an introduction-level document, it seems fitting to start with a "Hello World" app.  Here's a very simple one you can copy and paste into a CS file in a directory.
 
-.. code:: csharp
+.. code-block:: c#
 
     using System;
 
@@ -129,7 +129,7 @@ A more ambitious example is available on the `corefxlab repo <https://www.github
 
 The next thing you will need is a ``project.json`` file that will outline the dependencies of an app, so you can **actually** run it. Use the contents below, it will work for both examples above. Save this file in a directory next to the CS file that contains your code.
 
-::
+.. code-blocl:: json
 
     {
         "version": "1.0.0-*",
@@ -152,14 +152,14 @@ You need to restore packages for your app, based on your project.json,
 with ``dnu restore``. You will need to run this command under the Mono
 DNX. The first command switches the active runtime to the Mono one.
 
-::
+.. code-block:: console
 
     dnvm use 1.0.0-beta5-11649 -r mono
     dnu restore
 
 You are now ready to run your app under .NET Core. As you can guess, however, before you do that you first need to switch to the .NET Core runtime. The first command below does exactly that.
 
-::
+.. code-block:: console
 
     dnvm use 1.0.0-beta5-11649 -r coreclr
     dnx . run

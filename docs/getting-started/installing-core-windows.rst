@@ -15,7 +15,7 @@ which doesn't depend on .NET. You can install it via a PowerShell
 command from a command prompt window. You can find alternate DNVM install instructions at the
 `ASP.NET Home repo <https://github.com/aspnet/home>`__.
 
-::
+.. code-block:: console
 
     @powershell -NoProfile -ExecutionPolicy unrestricted -Command "&{$Branch='dev';iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/aspnet/Home/dev/dnvminstall.ps1'))}"
 
@@ -26,19 +26,19 @@ Installing a .NET Core DNX
 
 It's easy to install the latest .NET Core-based DNX, using the ``dnvm install`` command.
 
-::
+.. code-block:: console
 
     dnvm install -r coreclr latest -u
 
 This will install the 32-bit version of .NET Core. If you want the 64-bit version, you can specify processor architecture.
 
-::
+.. code-block:: console
 
     dnvm install -r coreclr -arch x64 latest -u
 
 You can see the currently installed DNX versions with ``dnvm list``.
 
-::
+.. code-block:: console
 
     dnvm list
 
@@ -56,7 +56,7 @@ Using a specific runtime
 
 You can choose which of the installed DNXs you want to use with ``dnvm use``, specifying arguments that are similar to the ones used when installing a runtime.
 
-::
+.. code-block:: console
 
     dnvm use -r coreclr -arch x86 1.0.0-beta5-11649
     Adding C:\Users\[user]\.dnx\runtimes\dnx-coreclr-win-x86.1.0.0-beta5-11649\bin
@@ -78,7 +78,7 @@ Write your App
 
 This being an introduction-level document, it seems fitting to start with a "Hello World" app.  Here's a very simple one you can copy and paste into a CS file in a directory.
 
-.. code:: csharp
+.. code-block:: c#
 
     using System;
 
@@ -95,7 +95,7 @@ A more ambitious example is available on the `corefxlab repo <https://www.github
 
 The next thing you will need is a ``project.json`` file that will outline the dependencies of an app, so you can **actually** run it. Use the contents below, it will work for both examples above. Save this file in a directory next to the CS file that contains your code.
 
-::
+.. code-block:: c#
 
     {
         "version": "1.0.0-*",
@@ -117,13 +117,13 @@ Run your App
 You need to restore packages for your app, based on your project.json,
 with ``dnu restore``.
 
-::
+.. code-block:: console
 
     dnu restore
 
 You can run your app with the DNX command.
 
-::
+.. code-block:: console
 
     dnx . run
 

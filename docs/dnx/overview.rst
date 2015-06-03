@@ -91,6 +91,8 @@ Packages and feeds
 
 For package dependencies to resolve they must first be installed. You can use DNU to install a new package into an existing project or to restore all package dependencies for an existing project, like this::
 
+.. code-block:: console
+
     dnu restore
 
 Packages are restored using the configured set of package feeds. You configure the available package feeds using `NuGet configuration files (NuGet.config) <http://docs.nuget.org/consume/nuget-config-file>`_.
@@ -130,9 +132,13 @@ A command is a named execution of a .NET entry point with specific arguments. Yo
 
 You can then use DNX to execute the commands defined by your project, like this::
 
+.. code-block:: console
+
     dnx . web
 
 Commands can  be built and distributed as NuGet packages. You can then use DNU to install commands globally on a machine::
+
+.. code-block:: console
 
     dnu commands install MyCommand
 

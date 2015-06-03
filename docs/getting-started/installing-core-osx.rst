@@ -21,7 +21,7 @@ which doesn't depend on .NET. On OS X the best way to get DNVM is to use `Homebr
 you don't have Homebrew installed then follow the `Homebrew installation
 instructions <http://www.brew.sh>`__. Once you have Homebrew up and running you can use the the following commands:
 
-::
+.. code-block:: console
 
     brew tap aspnet/dnx
     brew update
@@ -29,7 +29,7 @@ instructions <http://www.brew.sh>`__. Once you have Homebrew up and running you 
 
 You will likely need to register the dnvm command:
 
-::
+.. code-block:: console
 
     source dnvm.sh
 
@@ -38,23 +38,23 @@ Installing the .NET Core DNX
 
 Since .NET Core is still a work in progress, you will need to make use of `Mono <http://www.mono-project.com>`_ to run certain parts of the DNX tooling. On non-Windows operating systems, Mono is the default DNX, so you can use a simple ``dnvm upgrade`` command to install it.
 
-::
+.. code-block:: console
 
     dnvm upgrade -u
 
 Next, acquire the .NET Core DNX SDK.
 
-::
+.. code-block:: console
 
     dnvm install latest -r coreclr -u
 
 You can see the currently installed DNX versions with ``dnvm list``.
 
-::
+.. code-block:: console
 
     dnvm list
 
-::
+.. code-block:: console
 
     Active Version              Runtime Arch Location             Alias
     ------ -------              ------- ---- --------             -----
@@ -69,7 +69,7 @@ Using a specific runtime
 
 You can choose which of the installed DNXs you want to use with ``dnvm use``, specifying arguments that are similar to the ones used when installing a runtime.
 
-::
+.. code-block:: console
 
     dnvm use -r coreclr -arch x64 1.0.0-beta5-11649
     Adding ~/.dnx/runtimes/dnx-coreclr-win-x86.1.0.0-beta5-11649/bin
@@ -92,7 +92,7 @@ Write your App
 
 This being an introduction-level document, it seems fitting to start with a "Hello World" app.  Here's a very simple one you can copy and paste into a CS file in a directory.
 
-.. code:: csharp
+.. code-block:: c#
 
     using System;
 
@@ -109,7 +109,7 @@ A more ambitious example is available on the `corefxlab repo <https://www.github
 
 The next thing you will need is a ``project.json`` file that will outline the dependencies of an app, so you can **actually** run it. Use the contents below, it will work for both examples above. Save this file in a directory next to the CS file that contains your code.
 
-::
+.. code-block:: json
 
     {
         "version": "1.0.0-*",
@@ -132,14 +132,14 @@ You need to restore packages for your app, based on your project.json,
 with ``dnu restore``. You will need to run this command under the Mono
 DNX. The first command switches the active runtime to the Mono one.
 
-::
+.. code-block:: console
 
     dnvm use 1.0.0-beta5-11649 -r mono
     dnu restore
 
 You are now ready to run your app under .NET Core. As you can guess, however, before you do that you first need to switch to the .NET Core runtime. The first command below does exactly that.
 
-::
+.. code-block:: console
 
     dnvm use 1.0.0-beta5-11649 -r coreclr
     dnx . run

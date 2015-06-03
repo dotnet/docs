@@ -355,7 +355,7 @@ span, plus the span of any leading or trailing trivia.
 
 For example:
 
-.. code::
+.. code-block:: c#
 
           if (x > 3)
           {

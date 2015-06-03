@@ -1,6 +1,6 @@
 DNX Overview
 ====================================
-By :ref:`Daniel Roth <dnx-author>` | Updated : 28 April 2015
+By `Daniel Roth`_
 
 What is the .NET Execution Environment?
 ---------------------------------------------
@@ -162,7 +162,3 @@ DNX Version Manager
 You can install multiple DNX versions and flavors on your machine. To install and manage different DNX versions and flavors you use the .NET Version Manager (DNVM). DNVM lets you list the different DNX versions and flavors on your machine, install new ones and switch the active DNX.
 
 See :doc:`/getting-started/index` for instructions on how to acquire and install DNVM for your platform.
-
-.. _dnx-author:
-
-.. include:: /_authors/daniel-roth.txt

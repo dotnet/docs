@@ -1,13 +1,14 @@
 Creating a Cross-Platform Console App with DNX
 ==============================================
-By :ref:`Steve Smith <console-author>` | Originally Published: 28 April 2015 
+By `Steve Smith`_
+
 Using the .NET Execution environment (DNX), it's very easy to run a simple console application.
 
 In this article:
 	- `Creating a Console App`_
 	- `Specifying Project Settings`_
 	- `Running the App`_
-	
+
 You can `view and download the source <https://github.com/aspnet/Docs/tree/master/samples/CreatingConsoleAppWithDNX>`_ from the project created in this article.
 
 Creating a Console App
@@ -24,7 +25,7 @@ Creating a console application is extremely straightforward. For this article, w
 .. literalinclude:: console/sample/Program.cs
 	:linenos:
 	:language: c#
-	
+
 It really doesn't get any simpler than this. Create a file with these contents and save it as ``Program.cs`` in your current folder.
 
 Specifying Project Settings
@@ -61,7 +62,3 @@ Summary
 -------
 
 Creating and running your first console application on DNX is very simple, and only requires two files.
-	
-.. _console-author:
-
-.. include:: /_authors/steve-smith.txt

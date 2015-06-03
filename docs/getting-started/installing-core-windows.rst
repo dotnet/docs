@@ -1,7 +1,6 @@
-.. include:: /stub-topic.txt
-
 Installing .NET Core on Windows
 ===============================
+By `Zlatko Knezevic`_
 
 This document will lead you through acquiring the .NET Core DNX SDK via the `.NET Version Manager (DNVM) <https://github.com/aspnet/dnvm>`_ and running a "Hello World" demo on Windows.
 

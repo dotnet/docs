@@ -1,7 +1,7 @@
 Introduction to the Common Language Runtime (CLR)
 =================================================
 
-By Vance Morrison ([@vancem](https://github.com/vancem)) - 2007
+By `Vance Morrison`_ - 2007
 
 What is the Common Language Runtime (CLR)? To put it succinctly:
 

@@ -10,12 +10,16 @@ Contents:
 
 .. toctree::
    :titlesonly:
-   
+
    getting-started/index
    tutorials-samples/index
    concepts/index
    dotnet-native/index
    dnx/index
+   development/index
+   porting/index
+   packaging/index
+   bcl/index
    roslyn/index
 
 
@@ -26,4 +30,3 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-

@@ -15,7 +15,8 @@ in memory more efficiently.
 Here is a small program that illustrates the efficiency of knowing the
 data structure type at runtime:
 
-::
+.. code-block:: c#
+  :linenos:
 
     using System;
     using System.Collections;
@@ -47,7 +48,7 @@ data structure type at runtime:
 
 This program yields the following output:
 
-::
+.. code-block:: console
 
     Generic Sort: System.Collections.Generic.List\`1[System.Int32] Time taken: 0.0789ms
     Non-Generic Sort: System.Collections.ArrayList Time taken: 2.4324ms

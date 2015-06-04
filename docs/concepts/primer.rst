@@ -38,7 +38,7 @@ A stroll through .NET
 As any mature and advanced application development framework, .NET has many powerful features that make the developer's job easier and aim to make writing code more powerful and expressive. This section will outline the basics of the most salient features and provide pointers to more detailed discussions where needed. After finishing this stroll, you should have enough information to be able to read the samples on our GitHub repos as well as other code and understand what is going on.
 
 * Automatic memory management
-* Type safety
+* `Type safety`_
 * The managed compiler
 * Delegates and lambdas
 * `Generic Types (Generics)`_
@@ -80,15 +80,17 @@ Objects are allocated in terms of types. The only operations allowed for
 a given object, and the memory it consumes, are those of its type. A
 ``Dog`` type may have ``Jump`` and ``WagTail`` methods, but not likely a
 ``SumTotal`` method. A program can only call the declared methods of a
-given type. All other calls will result in an exception.
+given type. All other calls will result either in a compile-time error or a
+run-time exception (in case of using dynamic features or ``object``).
 
-.NET languages can be object*oriented, with hierarchies of base and
+.NET languages can be object-oriented, with hierarchies of base and
 derived classes. The .NET runtime will only allow object casts and calls
-that align with the object hierarchy.
+that align with the object hierarchy. Remember that every type defined in any
+.NET language derives from the core ``object`` type.
 
-::
+.. code-block:: c#
 
-    Dog dog = Dog.AdoptDog();
+    Dog dog = Dog.AdoptDog(); // Returns a Dog type
     Pet pet = (Pet)dog; // Dog derives from Pet
     pet.ActCute();
     Car car = (Car)dog; // will throw - no relationship between Car and Dog
@@ -96,13 +98,32 @@ that align with the object hierarchy.
     car = (Car)temp; // will throw - the runtime isn't fooled
     car.Accelerate() // the dog won't like this, nor will the program get this far
 
-Type safety also guarantees the fidelity of accessor keywords (e.g.
-private, public, internal). This is particularly useful for non*public
-data that an implementation uses to manage its behavior.
+Type safety is also used to help enforce encapsulation by guaranteeing the fidelity
+of the accessor keywords. Accessor keywords are artifacts which control access to
+members of a given type by other code. These are usually used for various kinds
+of data within a type that are used to manage its behavior.
 
-::
+.. code-block:: c#
 
     Dog dog = Dog._nextDogToBeAdopted; // will throw - this is a private field
+
+Some .NET languages support **type inference**. Type inference means that the compiler
+will deduce the type of the expression on the left-hand side from the expression on the
+right-hand side. This doesn't mean that the type safety is broken or avoided. The resulting
+type **has** a strong type with everything that implies. Let's rewrite the first two lines
+of the previous example to introduce type inference. You will note that the rest of
+the example is completely the same.
+
+.. code-block:: c#
+  :linenos:
+
+    var dog = Dog.AdoptDog();
+    var pet = (Pet)dog; 
+    pet.ActCute();
+    Car car = (Car)dog; // will throw - no relationship between Car and Dog
+    object temp = (object)dog; // legal - a Dog is an object
+    car = (Car)temp; // will throw - the runtime isn't fooled
+    car.Accelerate() // the dog won't like this, nor will the program get this far
 
 Delegates and Lambdas
 ^^^^^^^^^^^^^^^^^^^^^
@@ -191,7 +212,7 @@ Generics were added in order to help programmers implement generic data structur
 
 The below sample shows a basic program running using an instance of `List<T>` types.
 
-::
+.. code-block:: c#
 
   using System;
   using System.Collections.Generic;

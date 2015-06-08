@@ -8,7 +8,8 @@
 .NET Core Documentation
 =======================
 
-Contents:
+Topics
+------
 
 .. toctree::
    :titlesonly:
@@ -24,7 +25,10 @@ Contents:
    bcl/index
    roslyn/index
 
+Related resources
+-----------------
 
+* :ref:`ASP.NET 5 Documentation <aspnet:index>`
 
 Indices and tables
 ==================

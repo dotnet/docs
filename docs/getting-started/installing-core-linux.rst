@@ -129,7 +129,7 @@ A more ambitious example is available on the `corefxlab repo <https://www.github
 
 The next thing you will need is a ``project.json`` file that will outline the dependencies of an app, so you can **actually** run it. Use the contents below, it will work for both examples above. Save this file in a directory next to the CS file that contains your code.
 
-.. code-blocl:: json
+.. code-block:: json
 
     {
         "version": "1.0.0-*",

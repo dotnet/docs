@@ -302,3 +302,8 @@ texinfo_documents = [
 
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 #texinfo_no_detailmenu = False
+
+# Mapping to other projects
+intersphinx_mapping = {
+    'aspnet': ('http://docs.asp.net/en/latest', 'aspnet.inv')
+}

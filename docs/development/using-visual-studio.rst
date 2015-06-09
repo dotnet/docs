@@ -1,6 +1,6 @@
 .. include:: /stub-topic.txt
 
-|stub-icon| Using Visual Studio 
-======================================
+|stub-icon| Development using Visual Studio 2015
+================================================
 
 .. include:: /stub-notice.txt

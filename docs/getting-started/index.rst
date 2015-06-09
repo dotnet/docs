@@ -4,8 +4,8 @@ Getting started
 .. toctree::
 	:titlesonly:
 
+	intro-clr
 	overview
-	supporting-core
 	installing-core-windows
 	installing-core-linux
 	installing-core-osx

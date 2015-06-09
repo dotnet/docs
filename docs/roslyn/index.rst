@@ -1,10 +1,10 @@
-"Roslyn"
---------
+.NET Compiler Platform ("Roslyn")
+---------------------------------
 
 .. include:: /stub-topic.txt
 
-|stub-icon| Roslyn
-==================
+|stub-icon| .NET Compiler Platform
+==================================
 
 .. toctree::
 	:titlesonly:

@@ -1,6 +1,6 @@
 .. include:: /stub-topic.txt
 
-|stub-icon| Using vi/vim
-========================
+|stub-icon| Development using vim
+=================================
 
 .. include:: /stub-notice.txt

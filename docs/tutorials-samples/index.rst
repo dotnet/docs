@@ -3,9 +3,7 @@ Tutorials & Samples
 
 .. toctree::
 	:titlesonly:
-	
-	console
-	uwp
-	
-	
-	
+
+	first-console-app
+	first-uwp-app
+	first-web-app

@@ -1,6 +1,6 @@
 .. include:: /stub-topic.txt
 
-|stub-icon| Using Sublime Text
-==============================
+|stub-icon| Development using Sublime Text
+==========================================
 
 .. include:: /stub-notice.txt

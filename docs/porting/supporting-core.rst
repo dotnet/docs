@@ -10,7 +10,7 @@ program is across .NET platforms by analyzing assemblies. The
 Portability Analyzer is offered as a Visual Studio Extension and as a
 console app.
 
-New Targets
+New Targets 
 -----------
 
 -  `.NET Core 5 <https://www.dotnetfoundation.org/netcore5>`_: Has a

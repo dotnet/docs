@@ -1,10 +1,8 @@
-General .NET Concepts
----------------------
+The .NET Primer
+---------------
 
 .. toctree::
 	:titlesonly:
-	
+
 	primer
-	intro-clr
-	
 	

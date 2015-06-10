@@ -17,11 +17,11 @@ Topics
    getting-started/index
    tutorials-samples/index
    concepts/index
-   dotnet-native/index
-   dnx/index
    development/index
+   dnx/index
    porting/index
    packaging/index
+   deployment/index
    bcl/index
    roslyn/index
 

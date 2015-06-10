@@ -9,7 +9,7 @@ that make it easier to efficiently build high*quality apps. .NET enables
 a high*level programming environment with many convenience features,
 while providing low*level access to native memory and APIs.
 
-Multiple implementations of .NET are available, based on open :doc:`.NET
+Multiple implementations of .NET are available, based on open `.NET
 Standards <https://github.com/dotnet/coreclr/blob/master/Documentation/dotnet-standards.md>`_ that specify the fundamentals of the
 platform. They are separately optimized for different app types (e.g.
 desktop, mobile, gaming, cloud) and support many chips (e.g. x86/x64,

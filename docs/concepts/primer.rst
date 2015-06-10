@@ -40,7 +40,7 @@ As any mature and advanced application development framework, .NET has many powe
 * Automatic memory management
 * `Type safety`_
 * The managed compiler
-* Delegates and lambdas
+* `Delegates and lambdas`_
 * `Generic Types (Generics)`_
 * LINQ
 * Asynchronous support
@@ -118,7 +118,7 @@ the example is completely the same.
   :linenos:
 
     var dog = Dog.AdoptDog();
-    var pet = (Pet)dog; 
+    var pet = (Pet)dog;
     pet.ActCute();
     Car car = (Car)dog; // will throw - no relationship between Car and Dog
     object temp = (object)dog; // legal - a Dog is an object
@@ -128,80 +128,14 @@ the example is completely the same.
 Delegates and Lambdas
 ^^^^^^^^^^^^^^^^^^^^^
 
-Delegates are like C++ function pointers, but are type safe. They are a
+Delegates are like C++ function pointers, with a big difference that they are type safe. They are a
 kind of disconnected method within the CLR type system. Regular methods
 are attached to a class and only directly callable through static or
-instance calling conventions. Alternatively, delegates can be thought of
-as a one method interface, without the interface.
+instance calling conventions.
 
-Delegates define a type, which specify a particular method signature. A
-method (static or instance) that satisfies this signature can be
-assigned to a variable of that type, then called directly (with the
-appropriate arguments) or passed as an argument itself to another method
-and then called. The following example demonstrates delegate use.
+Delegates are used in various APIs and places in the .NET world, especially through lambda expressions, which are a cornerstone of Linq.
 
-::
-
-        public delegate string Reverse(string s);
-
-        static string ReverseString(string s)
-        {
-            return new string(s.Reverse().ToArray());
-        }
-
-        static void Main(string[] args)
-        {
-            Reverse rev = ReverseString;
-
-            Console.WriteLine(rev("a string"));
-        }
-
-.NET includes a set of pre-defined delegate types - ``Func<>`` and ``Action<>`` -
-that be used in many situations, without the requirement to define new
-types. The example above can be re-written to no longer defined the
-reverse delegate and instead define the rev variable as a Func. The
-program will function the same.
-
-::
-
-    Func<string,string> rev = ReverseString;
-
-Lambdas are a more convenient syntax for using delegates. They declare a
-signature and a method body, but don't have an formal identity of their
-own, unless they are assigned to a delegate. Unlike delegates, they can
-be directly assigned as the left-hand side of event registration or as a
-Linq select clause.
-
-You can see the use of lambda as a linq select clause in the Linq
-section above. The following example rewrites the program above using
-the more compact lambda syntax. Note that an explictly defined delegate
-could still be used, instead of Func<>.
-
-::
-
-    static void Main(string[] args)
-    {
-        Func<string,string> rev = (s) => {return new string(s.Reverse().ToArray());};
-
-        Console.WriteLine(rev("a string"));
-    }
-
-The following example demonstrated the use of a lambda as an event
-handler.
-
-::
-
-    public MainWindow()
-    {
-        InitializeComponent();
-
-        Loaded += (o, e) =>
-        {
-            this.Title = "Loaded";
-        };
-    }
-
-
+Read more about it in the :doc:`delegates-lambdas` document.
 
 Generic Types (Generics)
 ^^^^^^^^^^^^^^^^^^^^^^^^

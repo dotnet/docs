@@ -37,7 +37,7 @@ A stroll through .NET
 
 As any mature and advanced application development framework, .NET has many powerful features that make the developer's job easier and aim to make writing code more powerful and expressive. This section will outline the basics of the most salient features and provide pointers to more detailed discussions where needed. After finishing this stroll, you should have enough information to be able to read the samples on our GitHub repos as well as other code and understand what is going on.
 
-* Automatic memory management
+* `Automatic memory management`_
 * `Type safety`_
 * The managed compiler
 * `Delegates and lambdas`_
@@ -52,8 +52,27 @@ As any mature and advanced application development framework, .NET has many powe
 Automatic memory management
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Memory Safety
-~~~~~~~~~~~~~
+Garbage collection is the most well-known of .NET features. Developers do not need to actively manage memory, although there are affordances to provide more information to the garbage collector (GC). C# includes the  ``new``  keyword to allocate memory in terms of a particular type, and the  ``using``  keyword to provide scope for the usage of the object. The GC operates on a lazy approach to memory management, preferring application throughput to the immediate collection of memory.
+
+The following two lines both allocate memory:
+
+.. code-block:: c#
+
+  var title = ".NET Primer";
+  var list = new List<string>;
+
+There is no analogous keyword to de-allocate memory, as de-allocation happens automatically when the garbage collector reclaims the memory through its scheduled running.
+
+Method variables normally go out of scope once a method completes, at which point they can be collected. However, you can indicate to the GC that a particular object is out of scope sooner than method exit using the ``using`` statement.
+
+.. code-block:: c#
+
+  using(FileStream stream = GetFileStream(context))
+  {
+      //operations on the stream
+  }
+
+Once the ``using`` block completes, the GC will know that the ``stream`` object in the example above is free to be collected and its memory reclaimed.
 
 One of the less obvious but quite far-reaching features that a garbage
 collector enables is memory safety. The invariant of memory safety is
@@ -68,7 +87,7 @@ field off the end of an object.
 
 The following example will throw as a result of memory safety.
 
-::
+.. code-block:: c#
 
     int[] numbers = new int[42];
     int number = numbers[42]; // will throw (indexes are 0-based)

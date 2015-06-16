@@ -15,8 +15,9 @@ Creating a Console App
 ----------------------
 
 Before you begin, make sure you have successfully installed DNX on your system:
-	- :doc:`Installing on Windows </getting-started/installing-on-windows>`
-	- :doc:`Installing on Mac OS X </getting-started/installing-on-mac>`
+	- :doc:`Installing on Windows </getting-started/installing-core-windows>`
+	- :doc:`Installing on Mac OS X </getting-started/installing-core-osx>`
+	- :doc:`Installing on Linux </getting-started/installing-core-linux>`
 
 Open a console or terminal window in an empty working folder, where ``dnx`` is configured.
 

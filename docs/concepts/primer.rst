@@ -27,9 +27,9 @@ Key .NET Concepts
 There is a certain number of concepts that are very important to understand if you are new to the .NET Platform. These concepts are the cornerstone of the entire platform, and understanding them at the outset is important for general understanding of how .NET works.
 
 * :doc:`Managed Code <managed-code>`
-* :doc:`Runtime <common-language-runtime>`
-* :doc:`Base Class Library <framework-libraries>`
 * :doc:`Common Type System <common-type-system>`
+* :doc:`The runtime <common-language-runtime>`
+* :doc:`Base Class Library <framework-libraries>`
 
 
 A stroll through .NET

@@ -22,6 +22,8 @@ Topics
    porting/index
    packaging/index
    deployment/index
+   nuget/index
+   languages/index
    bcl/index
    roslyn/index
 

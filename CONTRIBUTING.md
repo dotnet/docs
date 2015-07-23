@@ -89,14 +89,13 @@ place them in a folder within the `/samples/` folder.
 updates to your branch. When they are ready to accept the PR, they will add a
 "LGTM" (Looks Good To Me) comment and any other steps that are (maybe) needed.
 
-## Common Pitfalls ##
+## Guidance Checklist ##
 
-Below are some common pitfalls you should try to avoid:
+Below is a short list of guiding rules that you should keep in mind when you are
+contributing to .NET Core documentation.
 
 - Don't forget to submit an issue before starting work on an article
 - Don't forget to create a separate branch before working on your article
 - Don't update or `merge` your branch after you submit your pull request
-- Don't forget to squash your commits once your pull request is ready to be
-	accepted
 - If updating code samples in `/samples/`, be sure any line number references
 	in your article remain correct

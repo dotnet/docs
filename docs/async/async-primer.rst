@@ -54,11 +54,11 @@ client-app snippet
 	    var getDirectionsTask = _directionsClient.GetDrivingDirectionsToLocation(user.LastKnownLocation);
 		
 	    // This independent work can be done concurrently
-		// since it doesn't rely on directions!
+	    // since it doesn't rely on directions!
 	    NotifyUserOfPickup(basicUserData, this.DriverInfo);
 	    
-	    // The await operator suspends SelectUserForPickup_Pressed, return control to its caller.
-		// This is what allows the app to be responsive and not hang on the UI thread.
+	    // The await operator suspends SelectUserForPickup_Pressed, returning control to its caller.
+	    // This is what allows the app to be responsive and not hang on the UI thread.
 	    var directionsJson = await getDirectionsTask;
 		
 	    // Using the JSON.NET library to deserialize data

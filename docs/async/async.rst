@@ -1,6 +1,6 @@
 Asynchronous Programming in .NET
 ================================
-By Phillip Carter
+By `Phillip Carter`_
 
 Modern apps and services are expected to be responsive.
 
@@ -43,11 +43,11 @@ Simple Async Example
 
 The following example shows somewhat of a "real life" scenario: getting directions to a user for a ridesharing app.
 
-client-app snippet
+Client app snippet:
 
 .. code-block:: c#
 
-	private async void GetDirectionsForPickup_Pressed(object sender, RoutedEventArgs e)
+	private async void GetDirectionsForPickup_Pressed(object sender, CustomUserDataEventArgs e)
 	{
 	    var basicUserData = e.Source as BasicUserData;
 
@@ -67,7 +67,7 @@ client-app snippet
 	    DrawRouteOnMap(directionsData.Polyline);
 	}
 
-web-service snippet
+Web service snippet:
 
 .. code-block:: c#
 
@@ -91,13 +91,46 @@ DIAGRAM.jpg
 
 Explanation of what's going on here, using the sample from above.
 
-Rules and Guidelines
---------------------
+Important Info and Advice
+-------------------------
 
-STUFF
+Although async programming is relatively straightfoward, there are some details to keep in mind which could otherwise result in some nasty behavior.
+
+* ``await`` is what will ultimately make a method asynchronous.
+
+Failing to apply the ``await`` operator to a task will result in the async method running synchronously!  Application of ``await`` is what suspends the async method, giving back control to the method which called it.  Pay attention to compiler warnings about this.
+
+* ``async void`` should only be used for event handlers.
+
+Why?  That's the only reason they were allowed in the first place.  Async programming revolved around the ``Task`` and ``Task<T>`` objects, which provide flexibility in dealing with any asynchronous work that needs to be done.  Throwing that out of the window with ``async void`` doesn't follow the model very well.  Here's some specific issues:
+
+    (a) Exceptions thrown in an ``async void`` method can't be caught.
+	
+    (b) They are very difficult to test.
+	
+    (c) They can cause dastardly side effects if the caller isn't expecting them to be async.
+	
+That being said, ``async void`` is perfect for event handlers, such as the pressing of a button.  If said event involves any blocking tasks, async is a perfect candidate.
+
+* Avoid async lambda expressions
+
+Lambda expressions in LINQ use deferred execution, meaning code could end up executing at a time when you're not expecting it to.  The introduction of blocking tasks into this can easily result in a deadlock.  It's far better to have clear, deterministic code rather than fancy lambda expressions which may or may not execute when you expect them to.
+
+* Try to write code that is naturally "Async all the way"
+
+As you may notice when working with ``async`` and ``await``, it's far easier to call async code from other async code.  Conversely, getting async methods involved with synchronous code can turn into a mess.  Mixing async and blocking code can result in deadlocks, blocked context threads, and significantly more complex error-handling.  The following table should provide some guidance.
+
+====================== ================================= =======================
+Use this...            Instead of this...                When wishing to do this
+====================== ================================= =======================
+``await``              ``Task.Wait`` or ``Task.Result``  Retreiving the result of a background task
+``await Task.WhenAny`` ``Task.WaitAny``                  Waiting for any task to complete
+``await Task.WhenAll`` ``Task.WaitAll``                  Retreiving the results of multiple tasks
+``await Task.Delay``   ``Thread.Sleep``                  Wait a period of time
+====================== ================================= =======================
 
 
-Important Details
------------------
+More Information
+----------------
 
-IMPORTANT STUFF HERE LIKE YOU CAN TECHNICALLY WRITE SYNCHRONOUS METHODS WITH ASYNC
+Link to more info goes here.

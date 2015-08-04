@@ -24,7 +24,7 @@ Topics
    deployment/index
    bcl/index
    roslyn/index
-   async/async-primer
+   async/index
 
 Related resources
 -----------------

@@ -14,7 +14,7 @@ What is it?
 
 From the developer's perspective, the async model is some nice syntax that hides complexity and allows you to focus on functionality.
 
-The core of this model of programming is the ``async`` and ``await`` keywords (``Async`` and ``Await`` in VB.NET), which a you sprinkle over otherwise normal methods.
+The core of this model of programming is the ``async`` and ``await`` keywords (``Async`` and ``Await`` in VB.NET), which you sprinkle over otherwise normal methods.
 
 A few important things to know before continuing:
 

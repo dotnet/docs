@@ -1,20 +1,20 @@
-Asynchronous Programming in .NET
-================================
+Asynchronous Programming
+========================
 By `Phillip Carter`_
 
 Modern apps and services are expected to be responsive.
 
 * Client applications are expected to be always-on, always-connected, but keep the UI free for the user to interact with.
-* Services are expected to be able to still serve data immediately while under a heavy load.
+* Services are expected to be able gracefully handle a heavy load.
 
 .NET provides the capability for apps and services to be responsive with an easy-to-use, language-level asynchronous programming model.
 
 What is it?
 -----------
 
-From the developer's perspective, the async model is some nice syntax that hides complexity and allows you to focus on functionality.
+From a developer's perspective, the async model is some nice syntax that hides complexity and allows you to focus on functionality without worrying about things like thread pools and callbacks.
 
-The core of this model of programming is the ``async`` and ``await`` keywords (``Async`` and ``Await`` in VB.NET), which you sprinkle over otherwise normal methods.
+The core of this model of programming is the ``async`` and ``await`` keywords (``Async`` and ``Await`` in VB.NET), which you sprinkle over otherwise normal methods. 
 
 A few important things to know before continuing:
 
@@ -35,8 +35,6 @@ Here are a few reasons:
 * Modern web services must be able to handle a high load with the number of devices potentially connecting to them.
 * Many of the newer, better .NET APIs are themselves asynchronous in nature.
 * It's super easy to write async methods!
-
-In other words, good asynchronousity is expected from users, it's easy to write asynchronous code with .NET, and interacting with modern .NET APIs will require it anyways.
 
 Simple Async Example
 --------------------
@@ -95,20 +93,15 @@ Bonus snippet: writing an inline event handler in Xamarin for an android game!
 	   var result = await DoFireballDamageCalculation();
 	   ShowDamageOnScreen(result);
 	};
-	
-What Happens in an Async Method
--------------------------------
-
-TODO:
-
-DIAGRAM.jpg
-
-Explanation of what's going on here, using the sample from above.
 
 Important Info and Advice
 -------------------------
 
 Although async programming is relatively straightfoward, there are some details to keep in mind which could otherwise result in some nasty behavior.
+
+* Do yourself a favor and append "Async" to the end of every async method you write.
+
+Yes, it's sort of hungarian notation which is so widely hated, but being extra explicit is a lot better than tracking down a race condition.
 
 * ``await`` is what will ultimately make a method asynchronous.
 
@@ -140,7 +133,7 @@ Use this...            Instead of this...                When wishing to do this
 ``await``              ``Task.Wait`` or ``Task.Result``  Retreiving the result of a background task
 ``await Task.WhenAny`` ``Task.WaitAny``                  Waiting for any task to complete
 ``await Task.WhenAll`` ``Task.WaitAll``                  Retreiving the results of multiple tasks
-``await Task.Delay``   ``Thread.Sleep``                  Wait a period of time
+``await Task.Delay``   ``Thread.Sleep``                  Waiting for a period of time
 ====================== ================================= =======================
 
 

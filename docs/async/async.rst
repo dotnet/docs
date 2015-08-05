@@ -20,23 +20,23 @@ A few important things to know before continuing:
 
 * ``Task<T>`` and ``Task`` are used a lot in async code.  These are abstractions that can be thought of as "something that needs to get done and not on the main thread".
 * Marking a method as ``async`` tells the compiler that you're expecting to ``await`` some blocking task.
+* ``await`` can only be used inside an async method.
 * When the ``await`` keyword is applied, it suspends the async method and returns control back to its caller until the awaited task is complete.  This is what makes it responsive.
-* Unless an async method has an ``await`` inside its body, it will run synchronously, defating the whole point of making it async!
-* Return types are either ``Task<T>`` or ``Task``, with the exception of event handlers (these are void).  More on this later.
-* ``await`` can only be used inside an async method.  Be wary of "polluting" your app with async method everywhere!  More on this later.
+* Unless an async method has an ``await`` inside its body, it will run synchronously, defeating the whole point of making it async!
+* Return types are either ``Task<T>`` or ``Task``, with the exception of event handlers (these are ``void``).  More on this later.
 
 Why Async?
 ----------
 
 Here are a few reasons:
 
-* Responsiveness in apps and services is expected by users, and punished harshly (one-star reviews) for even slight UX hangups
-* Almost all modern apps demand elements which block on I/O in some way
-* Modern web services must be able to handle a high load
-* It's super easy to write async methods
-* Many of the newer, better .NET APIs are themselves asynchronous in nature
+* Responsiveness in apps and services is expected by users, and even slight UX hangups are often punished harshly (one-star reviews).
+* Almost all modern apps demand elements which block on I/O in some way.
+* Modern web services must be able to handle a high load with the number of devices potentially connecting to them.
+* Many of the newer, better .NET APIs are themselves asynchronous in nature.
+* It's super easy to write async methods!
 
-In other words, asynchronousity is expected from users, it's easy to write asynchronous code with .NET, and interacting with modern .NET APIs will require it anyways.
+In other words, good asynchronousity is expected from users, it's easy to write asynchronous code with .NET, and interacting with modern .NET APIs will require it anyways.
 
 Simple Async Example
 --------------------
@@ -51,11 +51,13 @@ Client app snippet:
 	{
 	    var basicUserData = e.Source as BasicUserData;
 
+	    // _directionsClient is a made-up object that would encapsulate certain complexity,
+	    // such as getting the location from the device.
 	    var getDirectionsTask = _directionsClient.GetDrivingDirectionsToLocation(user.LastKnownLocation);
 		
 	    // This independent work can be done concurrently
 	    // since it doesn't rely on directions!
-	    NotifyUserOfPickup(basicUserData, this.DriverInfo);
+	    NotifyUserOfPickupAsync(basicUserData, this.DriverInfo);
 	    
 	    // The await operator suspends SelectUserForPickup_Pressed, returning control to its caller.
 	    // This is what allows the app to be responsive and not hang on the UI thread.
@@ -84,8 +86,20 @@ Web service snippet:
 	    return json;
 	}
 	
+Bonus snippet: writing an inline event handler in Xamarin for an android game!
+
+.. code-block:: c#
+
+	fireball.DamageDone += async =>
+	{
+	   var result = await DoFireballDamageCalculation();
+	   ShowDamageOnScreen(result);
+	};
+	
 What Happens in an Async Method
 -------------------------------
+
+TODO:
 
 DIAGRAM.jpg
 
@@ -106,15 +120,15 @@ Why?  That's the only reason they were allowed in the first place.  Async progra
 
     (a) Exceptions thrown in an ``async void`` method can't be caught.
 	
-    (b) They are very difficult to test.
+    (b) ``async void`` methods are very difficult to test.
 	
-    (c) They can cause dastardly side effects if the caller isn't expecting them to be async.
+    (c) ``async void`` methods can cause bad side effects if the caller isn't expecting them to be async.
 	
-That being said, ``async void`` is perfect for event handlers, such as the pressing of a button.  If said event involves any blocking tasks, async is a perfect candidate.
+That being said, ``async void`` is perfect for event handlers, such as the pressing of a button.  If an event involves any blocking tasks, async is a perfect candidate.
 
-* Avoid async lambda expressions
+* Avoid async lambda expressions when combined with other async code
 
-Lambda expressions in LINQ use deferred execution, meaning code could end up executing at a time when you're not expecting it to.  The introduction of blocking tasks into this can easily result in a deadlock.  It's far better to have clear, deterministic code rather than fancy lambda expressions which may or may not execute when you expect them to.
+Lambda expressions in LINQ use deferred execution, meaning code could end up executing at a time when you're not expecting it to.  The introduction of blocking tasks into this can easily result in a deadlock.  It's far better to have clear, deterministic code rather than clever asynchronous lambda expressions which may or may not execute when you expect them to.
 
 * Try to write code that is naturally "Async all the way"
 

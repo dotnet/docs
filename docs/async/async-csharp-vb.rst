@@ -1,4 +1,4 @@
-Asynchronous Programming in C# and VB
+Async Programming in C#/VB
 =====================================
 By `Phillip Carter`_
 
@@ -34,7 +34,7 @@ Client app snippet:
 		
 	    // This independent work can be done concurrently
 	    // since it doesn't rely on directions!
-	    NotifyUserOfPickupAsync(basicUserData, this.DriverInfo);
+	    NotifyUserOfPickupAsync(basicUserData.Contact);
 	    
 	    // The await operator suspends SelectUserForPickup_Pressed, returning control to its caller.
 	    // This is what allows the app to be responsive and not hang on the UI thread.
@@ -92,7 +92,7 @@ Client app snippet:
 		
 		' This independent work can be done concurrently
 		' since it doesn't rely on directions!
-		NotifyUserOfPickupAsync(b, this.DriverInfo)
+		NotifyUserOfPickupAsync(b.ContactInfo)
 		
 		Dim directionsJson As String = Await getDirectionsTask
 		

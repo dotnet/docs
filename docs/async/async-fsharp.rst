@@ -24,7 +24,7 @@ The following is a somewhat "real-world" example: a basic WebApi controller for 
 	type DirectionsController() = 
 		inherit ApiController()
 
-		let sendDirectionsForPickup(user:UserData, driver:DriverData) = async {			
+		let sendDirectionsToDriver(user:UserData, driver:DriverData) = async {			
 			let! drivingDirections = GetDrivingDirectionsAsync user.Location driver.Location
 			JsonConvert.SerializeObject(drivingDirections)
 		}

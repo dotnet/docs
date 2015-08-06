@@ -1,43 +1,22 @@
-Asynchronous Programming
-========================
+Asynchronous Programming in C# and VB
+=====================================
 By `Phillip Carter`_
 
-Modern apps and services are expected to be responsive.
+From a developer's perspective, the C#/VB async model is some nice syntax that hides complexity and allows you to focus on writing methods without worrying about things like thread pools and callbacks.
 
-* Client applications are expected to be always-on, always-connected, but keep the UI free for the user to interact with.
-* Services are expected to be able gracefully handle a heavy load.
-
-.NET provides the capability for apps and services to be responsive with an easy-to-use, language-level asynchronous programming model.
-
-What is it?
------------
-
-From a developer's perspective, the async model is some nice syntax that hides complexity and allows you to focus on functionality without worrying about things like thread pools and callbacks.
-
-The core of this model of programming is the ``async`` and ``await`` keywords (``Async`` and ``Await`` in VB.NET), which you sprinkle over otherwise normal methods. 
+The core of this are the ``async`` and ``await`` keywords (``Async`` and ``Await`` in VB.NET), which you sprinkle over otherwise normal methods. 
 
 A few important things to know before continuing:
 
-* ``Task<T>`` and ``Task`` are used a lot in async code.  These are abstractions that can be thought of as "something that needs to get done and not on the main thread".
+* ``Task<T>`` and ``Task`` are used a lot in async code.  These are abstractions that can be thought of as "something that needs to get done and could be long-running".
 * Marking a method as ``async`` tells the compiler that you're expecting to ``await`` some blocking task.
 * ``await`` can only be used inside an async method.
 * When the ``await`` keyword is applied, it suspends the async method and returns control back to its caller until the awaited task is complete.  This is what makes it responsive.
 * Unless an async method has an ``await`` inside its body, it will run synchronously, defeating the whole point of making it async!
 * Return types are either ``Task<T>`` or ``Task``, with the exception of event handlers (these are ``void``).  More on this later.
 
-Why Async?
-----------
-
-Here are a few reasons:
-
-* Responsiveness in apps and services is expected by users, and even slight UX hangups are often punished harshly (one-star reviews).
-* Almost all modern apps demand elements which block on I/O in some way.
-* Modern web services must be able to handle a high load with the number of devices potentially connecting to them.
-* Many of the newer, better .NET APIs are themselves asynchronous in nature.
-* It's super easy to write async methods!
-
-Simple Async Example
---------------------
+Simple Async Example (C#)
+-------------------------
 
 The following example shows somewhat of a "real life" scenario: getting directions to a user for a ridesharing app.
 
@@ -76,7 +55,7 @@ Web service snippet:
 	{
 	    // Suspends GetUser() to allow the caller (the web service) to accept another request,
 	    // rather than blocking on this one.
-	    var directions = await _locationService.GetDirections(startPos, endPos);
+	    var directions = await _locationService.GetDirectionsAsync(startPos, endPos);
 	    
 	    // Using the JSON.NET library to serialize data
 	    var json = JsonConvert.SerializeObject(directions);
@@ -93,15 +72,60 @@ Bonus snippet: writing an inline event handler in Xamarin for an android game!
 	   var result = await DoFireballDamageCalculation();
 	   ShowDamageOnScreen(result);
 	};
+	
+Simple Async Example (VB)
+-------------------------
+
+These are the VB-equivalent code snippets from above.
+
+Client app snippet:
+
+.. code-block:: vb.net
+
+	Private Async Sub GetDirectionsForPickup_Pressed(sender As Object, e As CustomUserDataEventArgs) Handles GetDirectionsForPickup.Click
+		
+		Dim b As BasicUserData = e.Source
+		
+		' _directionsClient is a made-up object that would encapsulate certain complexity,
+		' such as getting the location from the device.
+		Dim getDirectionsTask As Task(Of String) = _directionsClient.GetDrivingDirectionsToLocation(user.LastKnownLocation)
+		
+		' This independent work can be done concurrently
+		' since it doesn't rely on directions!
+		NotifyUserOfPickupAsync(b, this.DriverInfo)
+		
+		Dim directionsJson As String = Await getDirectionsTask
+		
+		' Using the JSON.NET library to deserialize data
+		Dim d As DirectionsData = JsonConvert.DeserializeObject(Of DirectionsData)(directionsJson)
+		
+		DrawRouteOnMap(d.Polyline)		
+	End Sub
+
+Web Service snippet:
+
+.. code-block:: vb.net
+
+	<HttpGet>
+	Public Async Function GetDirections(startPos as GeoPoint, endPos as GeoPoint) As Task(Of String)
+
+		' Suspends GetUser() to allow the caller (the web service) to accept another request,
+		' rather than blocking on this one.
+		Dim dirs As Directions = Await _locationService.GetDirectionsAsync(startPos, endPost);
+		
+		Dim json As String = JsonConvert.SerializeObject(dirs);
+		
+		Return json
+	End Function
 
 Important Info and Advice
 -------------------------
 
 Although async programming is relatively straightfoward, there are some details to keep in mind which could otherwise result in some nasty behavior.
 
-* Do yourself a favor and append "Async" to the end of every async method you write.
+* Do yourself a favor and append "Async" to the end of every async method you write which could be consumed by another method.
 
-Yes, it's sort of hungarian notation which is so widely hated, but being extra explicit is a lot better than tracking down a race condition.
+Yes, it's sort of hungarian notation which is so widely hated, but being extra explicit is a lot better than tracking down a race condition.  Note that certain methods which aren't explicity called by you code (such as event handlers or web controller methods) may not necessarily apply.
 
 * ``await`` is what will ultimately make a method asynchronous.
 

@@ -24,7 +24,7 @@ Topics
    deployment/index
    bcl/index
    roslyn/index
-   async/index
+   async/async-index
 
 Related resources
 -----------------

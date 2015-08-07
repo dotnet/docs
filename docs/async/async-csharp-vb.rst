@@ -125,7 +125,7 @@ Although async programming is relatively straightfoward, there are some details 
 
 * Do yourself a favor and append "Async" to the end of every async method you write which could be consumed by another method.
 
-Yes, it's sort of hungarian notation which is so widely hated, but being extra explicit is a lot better than tracking down a race condition.  Note that certain methods which aren't explicity called by you code (such as event handlers or web controller methods) may not necessarily apply.
+Yes, it's sort of hungarian notation which is widely hated, but being extra explicit is a lot better than tracking down a race condition.  Note that certain methods which aren't explicity called by your code (such as event handlers or web controller methods) may not necessarily apply.
 
 * ``await`` is what will ultimately make a method asynchronous.
 
@@ -133,7 +133,7 @@ Failing to apply the ``await`` operator to a task will result in the async metho
 
 * ``async void`` should only be used for event handlers.
 
-Why?  That's the only reason they were allowed in the first place.  Async programming revolved around the ``Task`` and ``Task<T>`` objects, which provide flexibility in dealing with any asynchronous work that needs to be done.  Throwing that out of the window with ``async void`` doesn't follow the model very well.  Here's some specific issues:
+Why?  That's the only reason they were allowed in the first place!  Async programming uses the ``Task`` and ``Task<T>`` objects, which provide flexibility in dealing with any asynchronous work that needs to be done.  Throwing that out of the window with ``async void`` doesn't follow the model very well.  Here's some specific issues:
 
     (a) Exceptions thrown in an ``async void`` method can't be caught.
 	
@@ -141,7 +141,7 @@ Why?  That's the only reason they were allowed in the first place.  Async progra
 	
     (c) ``async void`` methods can cause bad side effects if the caller isn't expecting them to be async.
 	
-That being said, ``async void`` is perfect for event handlers, such as the pressing of a button.  If an event involves any blocking tasks, async is a perfect candidate.
+That said, ``async void`` is perfect for event handlers where the event involves any blocking task(s).
 
 * Avoid async lambda expressions when combined with other async code
 

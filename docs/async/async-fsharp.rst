@@ -1,5 +1,5 @@
 Async Programming in F#
-==============================
+=======================
 By `Phillip Carter`_ and hopefully David Stephens!
 
 Async programming in F# is accomplished via `computation expressions`_, a convenient monad syntax to allow for sequenced computations.  While the details can get a bit hairy, the end result is a rather nice syntax known as an "async block".
@@ -56,7 +56,7 @@ The following is a somewhat "real-world" example: a basic WebApi controller for 
 For the C#/VB Programmer Looking Into F#
 ----------------------------------------
 
-This section assumes you're familiar with the async model in C#/VB.
+This section assumes you're familiar with the async model in C#/VB.  If you are not, :doc:`async-csharp-vb` is a starting point.
 
 Similarities:
 

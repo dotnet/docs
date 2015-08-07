@@ -4,6 +4,6 @@ Asynchronous Programming with .NET
 .. toctree::
 	:titlesonly:
 
-	overview
+	async-overview
 	async-csharp-vb
 	async-fsharp

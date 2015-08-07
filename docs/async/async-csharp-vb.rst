@@ -1,5 +1,5 @@
 Async Programming in C#/VB
-=====================================
+==========================
 By `Phillip Carter`_
 
 From a developer's perspective, the C#/VB async model is some nice syntax that hides complexity and allows you to focus on writing methods without worrying about things like thread pools and callbacks.

@@ -46,25 +46,41 @@ The following is a somewhat "real-world" example: a basic WebApi controller for 
 			sendDirectionsToDriver user driver
 		}
 		
-For C# Programmer Looking Into F#
------------------------------------
+For the C# Programmer Looking Into F#
+-------------------------------------
 
-If you're a C# programmer and aren't familiar with async C# programming, it's worth taking a look at [the C#/VB async programming model](LINK).
-
-TODO
+If you're a C# programmer and aren't familiar with async C# programming, it's worth taking a look at [the C#/VB async programming model](LINK) before reading this.
 
 Similarities:
 
-* the thing
-* the other thing
+* ``let!``, ``use!``, and ``do!`` work pretty much the same way as ``await``
+
+While it is not technically true that they operate the same way, in practice they are used to accomplish their goals in the same way.  F# gives some extra utility with ``use!``.
+
+* Task-based approach to solving async problems
+
+Although F#'s model uses a completely different type to capture async workflows (``Async<T>`` compared with ``Task<T>``), the conceptual model differs little.
+
+* Data-parallel programming
+
+``Async.Parallel`` corresponds to ``Task.WhenAll``.  Both methods create a workflow or task which runs multiple operations and does not complete until all sub-operations have completed.
 
 Differences:
 
-* that one thing
-* that other one thing
-* this one too
+* Cancellation support is simple in F# and annoying in C#
 
-			
+Supporting cancellation of a task midway through its execution in C# requires checking the ``IsCancellationRequested`` property or calling ``ThrowIfCancellationRequested()`` on a ``CancellationToken`` object that's passed into the async method.  F# async workflows are naturally cancellable, requireing only a ``CancellationToken`` be passed into the invocation of ``Async.Start`` to support cancellation.
+
+* Less "async everywhere" and better composability
+
+Because ``Async<T>`` is just a specification of work to be done, it allows for async methods to be more easily-composed.  This results in a lot less pollution of ``async`` keywords everywhere.
+
+* Nested ``let!`` is not allowed
+
+Unlike ``await``, which can be nested indefinitely, ``let!`` cannot and must have its result bound before using it inside of another ``let!`` expression.
+
+TODO: MORE DIFFERENCES ON THE WAY
+		
 Important Info and Advice
 -------------------------
 

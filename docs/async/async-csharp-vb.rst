@@ -8,12 +8,12 @@ The core of this are the ``async`` and ``await`` keywords (``Async`` and ``Await
 
 A few important things to know before continuing:
 
-* ``Task<T>`` and ``Task`` are used a lot in async code.  These are abstractions that can be thought of as "something that needs to get done and could be long-running".
+* ``Task<T>`` and ``Task`` are used to represent the return types for async code.  These are abstractions that can be thought of as "something that needs to get done and could be long-running".  Read more about Tasks <here>.
 * Marking a method as ``async`` tells the compiler that you're expecting to ``await`` some blocking task.
 * ``await`` can only be used inside an async method.
 * When the ``await`` keyword is applied, it suspends the async method and returns control back to its caller until the awaited task is complete.  This is what makes it responsive.
-* Unless an async method has an ``await`` inside its body, it will run synchronously, defeating the whole point of making it async!
-* Return types are either ``Task<T>`` or ``Task``, with the exception of event handlers (these are ``void``).  More on this later.
+* Unless an async method has an ``await`` inside its body, it will run synchronously!
+* Return types for async methods should always be either ``Task<T>`` or ``Task``, with the exception of event handlers (these are ``void``).  More on this later.
 
 Simple Async Example (C#)
 -------------------------
@@ -123,9 +123,9 @@ Important Info and Advice
 
 Although async programming is relatively straightfoward, there are some details to keep in mind which could otherwise result in some nasty behavior.
 
-* Do yourself a favor and append "Async" to the end of every async method you write which could be consumed by another method.
+* Best practice is to add "Async" to the end of every async method you write which could be consumed by another method.
 
-Yes, it's sort of hungarian notation which is widely hated, but being extra explicit is a lot better than tracking down a race condition.  Note that certain methods which aren't explicity called by your code (such as event handlers or web controller methods) may not necessarily apply.
+Failure to do so could result in having to track down a race condition later.  It's better to be explicit here!  Note that certain methods which aren't explicity called by your code (such as event handlers or web controller methods) may not necessarily apply.
 
 * ``await`` is what will ultimately make a method asynchronous.
 
@@ -143,9 +143,9 @@ Why?  That's the only reason they were allowed in the first place!  Async progra
 	
 That said, ``async void`` is perfect for event handlers where the event involves any blocking task(s).
 
-* Avoid async lambda expressions when combined with other async code
+* Avoid async lambdas + LINQ when combined with other async code
 
-Lambda expressions in LINQ use deferred execution, meaning code could end up executing at a time when you're not expecting it to.  The introduction of blocking tasks into this can easily result in a deadlock.  It's far better to have clear, deterministic code rather than clever asynchronous lambda expressions which may or may not execute when you expect them to.
+Lambda expressions in LINQ use deferred execution, meaning code could end up executing at a time when you're not expecting it to.  The introduction of blocking tasks into this can easily result in a deadlock.  When in doubt, don't mix LINQ and async methods inside the lambda expression.
 
 * Try to write code that is naturally "Async all the way"
 

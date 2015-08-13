@@ -166,9 +166,9 @@ That said, ``async void`` is perfect for event handlers where the event involves
 
 Lambda expressions in LINQ use deferred execution, meaning code could end up executing at a time when you're not expecting it to.  The introduction of blocking tasks into this can easily result in a deadlock.  When in doubt, don't mix LINQ and async methods inside the lambda expression.
 
-* Try to write code that is naturally "Async all the way"
+* Try to write code that "naturally" awaits blocking results
 
-As you may notice when working with ``async`` and ``await``, it's far easier to call async code from other async code.  Conversely, getting async methods involved with synchronous code can turn into a mess.  Mixing async and blocking code can result in deadlocks, blocked context threads, and significantly more complex error-handling.  The following table should provide some guidance.
+Although it is certainly easier to call other async code from an async method, not doing so correctly can result in deadlocks, blocked context threads, and significantly more complex error-handling.  The following table should provide some guidance in how to deal with blocking code from an async context:
 
 ====================== ================================= =======================
 Use this...            Instead of this...                When wishing to do this
@@ -179,8 +179,21 @@ Use this...            Instead of this...                When wishing to do this
 ``await Task.Delay``   ``Thread.Sleep``                  Waiting for a period of time
 ====================== ================================= =======================
 
+The good news is that calling async code which has no return value has no caveats.  ``JustDoesAJobAsync()`` does not need to be coordinated unless the calling method depends on its execution.  However, this would warrant a refactor, bringing up the final point...
+
+* Write less stateful code
+
+Depend less on the state of objects and the exeuction of certain methods when writing async code.  Instead, depend on the return values of methods.  Why?
+
+	(a) Easier to reason about
+	(b) Easier to test
+	(c) Mixing async and synchronous code is far simpler
+	(d) Race conditions can typically be avoided altogether
+	(e) Depending on return values makes coordinating async code simple
+	
+Although C# and VB are object-oriented languages, try to think more with a functional mindset and less with an object-oriented mindset when writing async code.
 
 More Information
 ----------------
-
-Link to more info goes here.
+* `Async/Await Reference Docs <https://msdn.microsoft.com/en-us/library/hh191443.aspx>`_
+* `Tasks and the Task Parallel Library <https://msdn.microsoft.com/en-us/library/dd460717(v=vs.110).aspx>`_

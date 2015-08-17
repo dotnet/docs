@@ -55,7 +55,7 @@ Web service snippet:
 	{
 	    // Suspends GetUser() to allow the caller (the web service) to accept another request,
 	    // rather than blocking on this one.
-	    var directions = await _locationService.GetDirectionsAsync(startPos, endPos);
+	    var directions = await _directionsService.GetDirectionsAsync(startPos, endPos);
 	    
 	    // Using the JSON.NET library to serialize data
 	    var json = JsonConvert.SerializeObject(directions);
@@ -69,7 +69,7 @@ Bonus snippet: writing an inline event handler in Xamarin for an android game!
 
 	fireball.DamageDone += async =>
 	{
-	   var result = await DoFireballDamageCalculation();
+	   var result = await GetFireballDamageDone();
 	   ShowDamageOnScreen(result);
 	};
 	
@@ -111,7 +111,7 @@ Web Service snippet:
 
 		' Suspends GetUser() to allow the caller (the web service) to accept another request,
 		' rather than blocking on this one.
-		Dim dirs As Directions = Await _locationService.GetDirectionsAsync(startPos, endPost);
+		Dim dirs As Directions = Await _directionsService.GetDirectionsAsync(startPos, endPost);
 		
 		Dim json As String = JsonConvert.SerializeObject(dirs);
 		
@@ -140,15 +140,15 @@ Important Info and Advice
 
 Although async programming is relatively straightfoward, there are some details to keep in mind which could otherwise result in some nasty behavior.
 
-* Best practice is to add "Async" to the end of every async method you write which could be consumed by another method.
+* **Best practice is to add "Async" to the end of every async method you write which could be consumed by another method.**
 
 Failure to do so could result in having to track down a race condition later.  It's better to be explicit here!  Note that certain methods which aren't explicity called by your code (such as event handlers or web controller methods) may not necessarily apply.
 
-* ``await`` is what will ultimately make a method asynchronous.
+* ``await`` **is what will ultimately make a method asynchronous.**
 
 Failing to apply the ``await`` operator to a task will result in the async method running synchronously!  Application of ``await`` is what suspends the async method, giving back control to the method which called it.  Pay attention to compiler warnings about this.
 
-* ``async void`` should only be used for event handlers.
+* ``async void`` **should only be used for event handlers.**
 
 Why?  That's the only reason they were allowed in the first place!  Async programming uses the ``Task`` and ``Task<T>`` objects, which provide flexibility in coordinating asynchronous work.  Throwing that out of the window with ``async void`` doesn't follow the model very well.  Here's some specific issues:
 
@@ -160,11 +160,11 @@ Why?  That's the only reason they were allowed in the first place!  Async progra
 	
 That said, ``async void`` is perfect for event handlers where the event involves any blocking task(s).
 
-* Tread carefully when using async lambdas in LINQ expressions
+* **Tread carefully when using async lambdas in LINQ expressions**
 
 Lambda expressions in LINQ use deferred execution, meaning code could end up executing at a time when you're not expecting it to.  The introduction of blocking tasks into this can easily result in a deadlock if not written correctly.  The nesting of asyncronous code like this can also make it more difficult to reason about the execution of the code.  Async and LINQ are powerful, but if they are abused they can make things difficult.  Clarity is always better than cleverness.
 
-* Try to write code that "naturally" awaits blocking results
+* **Try to write code that "naturally" awaits blocking results**
 
 Although it is certainly easier to call other async code from an async method, not doing so correctly can result in deadlocks, blocked context threads, and significantly more complex error-handling.  The following table should provide some guidance in how to deal with blocking code from an async context:
 
@@ -179,7 +179,7 @@ Use this...            Instead of this...                When wishing to do this
 
 The good news is that calling async code which has no return value has no caveats.  ``JustDoesAJobAsync()`` does not need to be coordinated unless the calling method depends on its execution.  However, this would warrant a refactor, bringing up the final point...
 
-* Write less stateful code
+* **Write less stateful code**
 
 Depend less on the state of objects and the exeuction of certain methods when writing async code.  Instead, depend on the return values of methods.  Why?
 
@@ -190,7 +190,7 @@ Depend less on the state of objects and the exeuction of certain methods when wr
 	(e) Depending on return values makes coordinating async code simple
 	(f) (Bonus) it works really well with dependency injection
 	
-Although C# and VB are object-oriented languages, try to think with a more functional mindset when writing async code.
+Aim for complete or near-complete `Referential Transparency <https://en.wikipedia.org/wiki/Referential_transparency_(computer_science)>`_ in your code.
 
 More Information
 ----------------

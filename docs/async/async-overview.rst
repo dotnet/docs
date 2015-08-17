@@ -14,7 +14,7 @@ Why Write Async Code?
 Here are a few reasons:
 
 * Almost all modern apps demand elements which block on I/O in some way.  Because of this, responsive apps and services are expected by users, and even slight UX hangups are often punished harshly (via one-star reviews).
-* Modern web services must be able to handle a high load with the number of devices potentially connecting to them.
+* Modern web services must be able to handle a high load with the number of devices potentially connecting to them.  Async programming allows systems to scale up so that sudden spikes in traffic don't bring a system to its knees.
 * Many of the newer, better .NET APIs are themselves asynchronous in nature.
 * It's super easy to write async methods!
 

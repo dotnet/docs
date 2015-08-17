@@ -126,7 +126,7 @@ As mentioned before, Tasks are constructs which represent blocking operations.
 * ``Task`` represents a single asynchronous operation which does not return a value.
 * ``Task<T>`` represents a single asynchronous operation which returns a value of type ``T``.
 
-It's important to reason about Tasks as abstractions rather than threads, largely because they may not run on new threads at all, and do not require the juggling of callback code either.
+It's important to reason about Tasks as abstractions of work to be done rather than threads, largely because they typically aren't threads at all!  Asynchronous .NET library calls essentially delegate work to the operating system, which is naturally asynchronous when I/O is performed.  Let this be made clear once more: when calling an async .NET library method, there is no thread spawned to handle the work.  If you haven't read about THIS ARTICLE WHICH IS TO BE WRITTEN, it is encouraged to fully understand the relationship being task-based asynchronous programming and the system your code runs on.
 
 Tasks are awaitable, meaning that the application of the ``await`` keyword will allow for either:
 
@@ -135,7 +135,7 @@ Tasks are awaitable, meaning that the application of the ``await`` keyword will 
 
 The above code samples demonstrate this.
 
-Tasks are also used outside of the async programming model.  They are the foundation of the Task Parallel Library, which allows support for `Data Parallelism <https://msdn.microsoft.com/en-us/library/dd537608(v=vs.110).aspx>`_ and `Task Parallelism <https://msdn.microsoft.com/en-us/library/dd537609(v=vs.110).aspx>`_.  However, from the perspective of writing responsive code with the C#/VB async programming model, ``Task`` and ``Task<T>`` are really just used as a means to an end: coordinating blocking operations and extracting their return values (if they have them).
+Tasks are also used outside of the async programming model.  They are the foundation of the Task Parallel Library, which allows support for `Data Parallelism <https://msdn.microsoft.com/en-us/library/dd537608(v=vs.110).aspx>`_ and `Task Parallelism <https://msdn.microsoft.com/en-us/library/dd537609(v=vs.110).aspx>`_.  However, from the perspective of writing responsive code with the C#/VB async programming model, ``Task`` and ``Task<T>`` are really just used as a means to an end: coordinating blocking operations and extracting their return values (if they have them), to allow applications to scale up seamlessly.
 
 Important Info and Advice
 -------------------------

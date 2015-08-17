@@ -126,16 +126,14 @@ As mentioned before, Tasks are constructs which represent blocking operations.
 * ``Task`` represents a single asynchronous operation which does not return a value.
 * ``Task<T>`` represents a single asynchronous operation which returns a value of type ``T``.
 
-It's important to reason about Tasks as abstractions of work to be done rather than threads, largely because they typically aren't threads at all!  Asynchronous .NET library calls essentially delegate work to the operating system, which is naturally asynchronous when I/O is performed.  Let this be made clear once more: when calling an async .NET library method, there is no thread spawned to handle the work.  If you haven't read about THIS ARTICLE WHICH IS TO BE WRITTEN, it is encouraged to fully understand the relationship being task-based asynchronous programming and the system your code runs on.
+It's important to reason about Tasks as abstractions of work to be done rather than threads, largely because they typically aren't threads at all!  Asynchronous .NET library calls essentially delegate work to the operating system, which is naturally asynchronous when I/O is performed.  Let this be made clear once more: when calling an async .NET library method, there is no new thread spawned to handle the work.
 
 Tasks are awaitable, meaning that the application of the ``await`` keyword will allow for either:
 
 * "Unwrapping" the return value for a ``Task<T>`` operation after it completes.
 * Simply waiting for a ``Task`` operation to finish before moving forward.
 
-The above code samples demonstrate this.
-
-Tasks are also used outside of the async programming model.  They are the foundation of the Task Parallel Library, which allows support for `Data Parallelism <https://msdn.microsoft.com/en-us/library/dd537608(v=vs.110).aspx>`_ and `Task Parallelism <https://msdn.microsoft.com/en-us/library/dd537609(v=vs.110).aspx>`_.  However, from the perspective of writing responsive code with the C#/VB async programming model, ``Task`` and ``Task<T>`` are really just used as a means to an end: coordinating blocking operations and extracting their return values (if they have them), to allow applications to scale up seamlessly.
+Tasks are also used outside of the async programming model.  They are the foundation of the Task Parallel Library, which allows support for `Data Parallelism <https://msdn.microsoft.com/en-us/library/dd537608(v=vs.110).aspx>`_ and `Task Parallelism <https://msdn.microsoft.com/en-us/library/dd537609(v=vs.110).aspx>`_.  However, from the perspective of writing responsive code with the C#/VB async programming model, ``Task`` and ``Task<T>`` are really just used as a means to an end: coordinating blocking operations and extracting their return values (if they have them), to allow applications to be responsive.
 
 Important Info and Advice
 -------------------------
@@ -152,9 +150,9 @@ Failing to apply the ``await`` operator to a task will result in the async metho
 
 * ``async void`` should only be used for event handlers.
 
-Why?  That's the only reason they were allowed in the first place!  Async programming uses the ``Task`` and ``Task<T>`` objects, which provide flexibility in dealing with any asynchronous work that needs to be done.  Throwing that out of the window with ``async void`` doesn't follow the model very well.  Here's some specific issues:
+Why?  That's the only reason they were allowed in the first place!  Async programming uses the ``Task`` and ``Task<T>`` objects, which provide flexibility in coordinating asynchronous work.  Throwing that out of the window with ``async void`` doesn't follow the model very well.  Here's some specific issues:
 
-    (a) Exceptions thrown in an ``async void`` method can't be caught.
+    (a) Exceptions thrown in an ``async void`` method can't be caught outside of that method.
 	
     (b) ``async void`` methods are very difficult to test.
 	
@@ -162,9 +160,9 @@ Why?  That's the only reason they were allowed in the first place!  Async progra
 	
 That said, ``async void`` is perfect for event handlers where the event involves any blocking task(s).
 
-* Avoid async lambdas + LINQ when combined with other async code
+* Tread carefully when using async lambdas in LINQ expressions
 
-Lambda expressions in LINQ use deferred execution, meaning code could end up executing at a time when you're not expecting it to.  The introduction of blocking tasks into this can easily result in a deadlock.  When in doubt, don't mix LINQ and async methods inside the lambda expression.
+Lambda expressions in LINQ use deferred execution, meaning code could end up executing at a time when you're not expecting it to.  The introduction of blocking tasks into this can easily result in a deadlock if not written correctly.  The nesting of asyncronous code like this can also make it more difficult to reason about the execution of the code.  Async and LINQ are powerful, but if they are abused they can make things difficult.  Clarity is always better than cleverness.
 
 * Try to write code that "naturally" awaits blocking results
 
@@ -185,13 +183,14 @@ The good news is that calling async code which has no return value has no caveat
 
 Depend less on the state of objects and the exeuction of certain methods when writing async code.  Instead, depend on the return values of methods.  Why?
 
-	(a) Easier to reason about
-	(b) Easier to test
+	(a) Code will be easier to reason about
+	(b) Code will be easier to test
 	(c) Mixing async and synchronous code is far simpler
 	(d) Race conditions can typically be avoided altogether
 	(e) Depending on return values makes coordinating async code simple
+	(f) (Bonus) it works really well with dependency injection
 	
-Although C# and VB are object-oriented languages, try to think more with a functional mindset and less with an object-oriented mindset when writing async code.
+Although C# and VB are object-oriented languages, try to think with a more functional mindset when writing async code.
 
 More Information
 ----------------

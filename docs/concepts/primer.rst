@@ -43,7 +43,7 @@ As any mature and advanced application development framework, .NET has many powe
 * `Delegates and lambdas`_
 * `Generic Types (Generics)`_
 * LINQ
-* Asynchronous support
+* `Async Programming`_
 * Dynamic language features
 * Code contracts
 * Native interoperability
@@ -190,29 +190,10 @@ Read more about it in the :doc:`generics` document.
 Async Programming
 ^^^^^^^^^^^^^^^^^
 
-Async is a first-class concept within .NET, with async support in the
-runtime, the framework libraries and various .NET languages. Async is
-based off of the ``Task`` concept, which encapsulates a set of
-operations to be completed. Tasks are distinct from threads and may not
-rely on threads or require CPU time much at all, particularly for
-I/O-bound tasks.
+Async programming is a first-class concept within .NET, with async support in the
+runtime, the framework libraries, and .NET language constructs.  Internally, they are based off of the ``Task`` object and API, which takes advantage of the operating system to perform I/O-bound jobs as efficiently as possible.
 
-TODO: Elaborate on Task concept.
-
-C# includes special treatment for async, including the special keyword
-``await`` for managing tasks. The following example demonstrates calling
-a web endpoint as an async operation.
-
-::
-
-    string url = "http://someUrl";
-    HttpClient client = new HttpClient();
-    string json = await client.GetStringAsync(url);
-
-The call to ``client.GetStringAsync(url)`` does not block, but instead
-immediately yields by returning a ``Task``. Computation resumes and the
-call returns the requested string when the network activity has
-completed.
+To learn more about async programming in .NET, start with the :doc:`../../async/async-overview`.
 
 Language Integrated Query (LINQ)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

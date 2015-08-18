@@ -26,7 +26,7 @@ Client app snippet:
 
 	private async void GetDirectionsForPickup_Pressed(object sender, CustomUserDataEventArgs e)
 	{
-	    var basicUserData = e.Source as BasicUserData;
+	    var user = e.Source as BasicUserData;
 
 	    // _directionsClient is a made-up object that would encapsulate certain complexity,
 	    // such as getting the location from the device.
@@ -34,7 +34,7 @@ Client app snippet:
 		
 	    // This independent work can be done concurrently
 	    // since it doesn't rely on directions!
-	    NotifyUserOfPickupAsync(basicUserData.Contact);
+	    NotifyUserOfPickupAsync(user.Contact);
 	    
 	    // The await operator suspends SelectUserForPickup_Pressed, returning control to its caller.
 	    // This is what allows the app to be responsive and not hang on the UI thread.
@@ -69,8 +69,12 @@ Bonus snippet: writing an inline event handler in Xamarin for an android game!
 
 	fireball.DamageDone += async =>
 	{
-	   var result = await GetFireballDamageDone();
-	   ShowDamageOnScreen(result);
+	    // The game's UI thread frees up to perform other calculations
+	    // as the fireball damage is retrieved.
+	    var result = await GetFireballDamageDone();
+		
+	    // Now this method has control of the UI thread again.
+	    ShowDamageOnScreen(result);
 	};
 	
 Simple Async Example (VB)
@@ -84,7 +88,7 @@ Client app snippet:
 
 	Private Async Sub GetDirectionsForPickup_Pressed(sender As Object, e As CustomUserDataEventArgs) Handles GetDirectionsForPickup.Click
 		
-		Dim b As BasicUserData = e.Source
+		Dim user As BasicUserData = e.Source
 		
 		' _directionsClient is a made-up object that would encapsulate certain complexity,
 		' such as getting the location from the device.
@@ -92,7 +96,7 @@ Client app snippet:
 		
 		' This independent work can be done concurrently
 		' since it doesn't rely on directions!
-		NotifyUserOfPickupAsync(b.ContactInfo)
+		NotifyUserOfPickupAsync(user.ContactInfo)
 		
 		Dim directionsJson As String = Await getDirectionsTask
 		
@@ -133,14 +137,14 @@ Tasks are awaitable, meaning that the application of the ``await`` keyword will 
 * "Unwrapping" the return value for a ``Task<T>`` operation after it completes.
 * Simply waiting for a ``Task`` operation to finish before moving forward.
 
-Tasks are also used outside of the async programming model.  They are the foundation of the Task Parallel Library, which allows support for `Data Parallelism <https://msdn.microsoft.com/en-us/library/dd537608(v=vs.110).aspx>`_ and `Task Parallelism <https://msdn.microsoft.com/en-us/library/dd537609(v=vs.110).aspx>`_.  However, from the perspective of writing responsive code with the C#/VB async programming model, ``Task`` and ``Task<T>`` are really just used as a means to an end: coordinating blocking operations and extracting their return values (if they have them), to allow applications to be responsive.
+Tasks are also used outside of the async programming model.  They are the foundation of the Task Parallel Library, which allows support for `Data Parallelism <https://msdn.microsoft.com/en-us/library/dd537608(v=vs.110).aspx>`_ and `Task Parallelism <https://msdn.microsoft.com/en-us/library/dd537609(v=vs.110).aspx>`_.  However, from the perspective of writing responsive code with the C#/VB async programming model, ``Task`` and ``Task<T>`` are really just used as a means to coordinating blocking operations and extracting their return values (if they have them).
 
 Important Info and Advice
 -------------------------
 
 Although async programming is relatively straightfoward, there are some details to keep in mind which could otherwise result in some nasty behavior.
 
-* **Best practice is to add "Async" to the end of every async method you write which could be consumed by another method.**
+* **Best practice is to add "Async" to the end of every async method name you write which could be consumed by another method.**
 
 Failure to do so could result in having to track down a race condition later.  It's better to be explicit here!  Note that certain methods which aren't explicity called by your code (such as event handlers or web controller methods) may not necessarily apply.
 
@@ -190,7 +194,7 @@ Depend less on the state of objects and the exeuction of certain methods when wr
 	(e) Depending on return values makes coordinating async code simple
 	(f) (Bonus) it works really well with dependency injection
 	
-Aim for complete or near-complete `Referential Transparency <https://en.wikipedia.org/wiki/Referential_transparency_(computer_science)>`_ in your code.
+For a specific goal, aim for complete or near-complete `Referential Transparency <https://en.wikipedia.org/wiki/Referential_transparency_(computer_science)>`_ in your code.  Doing so will result in an extremely predictable, testable, and maintainable codebase.
 
 More Information
 ----------------

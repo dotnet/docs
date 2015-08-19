@@ -258,14 +258,64 @@ Unsafe Code
 ~~~~~~~~~~~
 
 The CLR enables the ability to acccess native memory and do pointer
-arithmetic. These operations are needed for some algortithms and for
-calling some native APIs. The use of these capabilities is discouraged,
-since you no longer get the benefit of verifiability, nor will your code
-be allowed to run in all environments. The best practice is to confine
-unsafe code as much as possible and that the vast majority of code is
-type-safe.
+arithmetic via ``unsafe`` code. These operations are needed for certain algorithms and system interoperability.  Although powerful, use of unsafe code is discouraged unless it is necessary to interop with system APIs or implement the most efficient algorithm.  Unsafe code is not guaranteed to run in all environments, and also loses the benefits of a garbage collector and type safety.  It's recommended to confine
+unsafe code as much as possible, and test that code extremely thoroughly.
 
-TODO: Examples.
+Taken from the `.NET CoreFx Linux Interop Source <https://github.com/dotnet/corefx/tree/master/src/Common/src/Interop/Linux>`_:
+
+.. code-block:: c#
+
+  // Copyright (c) Microsoft. All rights reserved.
+  // Licensed under the MIT license. See LICENSE file in the project root for full license information.
+  
+  using System;
+  using System.Runtime.InteropServices;
+  
+  using ino_t = System.IntPtr;
+  using off_t = System.Int64; // Assuming either 64-bit machine or _FILE_OFFSET_BITS == 64
+  
+  internal static partial class Interop
+  {
+      internal static partial class libc
+      {
+          [DllImport(Libraries.Libc, SetLastError = true)]
+          internal static extern IntPtr readdir(SafeDirHandle dirp);
+  
+          internal static unsafe DType GetDirEntType(IntPtr dirEnt)
+          {
+              return ((dirent*)dirEnt)->d_type;
+          }
+  
+          internal static unsafe string GetDirEntName(IntPtr dirEnt)
+          {
+              return Marshal.PtrToStringAnsi((IntPtr)((dirent*)dirEnt)->d_name);
+          }
+  
+          internal enum DType : byte
+          {
+              DT_UNKNOWN = 0,
+              DT_FIFO = 1,
+              DT_CHR = 2,
+              DT_DIR = 4,
+              DT_BLK = 6,
+              DT_REG = 8,
+              DT_LNK = 10,
+              DT_SOCK = 12,
+              DT_WHT = 14
+          }
+  
+          #pragma warning disable 0649 // fields are assigned by P/Invoke call 
+          private unsafe struct dirent 
+          { 
+              internal ino_t d_ino; 
+              internal off_t d_off; 
+              internal short d_reclen; 
+              internal DType d_type; 
+              internal fixed byte d_name[256];
+          } 
+          #pragma warning restore 0649 
+      }
+  }
 
 Notes
 -----

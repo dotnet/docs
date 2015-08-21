@@ -42,7 +42,7 @@ As any mature and advanced application development framework, .NET has many powe
 * The managed compiler
 * `Delegates and lambdas`_
 * `Generic Types (Generics)`_
-* LINQ
+* `Language Integrated Query (LINQ)`_
 * Asynchronous support
 * Dynamic language features
 * Code contracts
@@ -217,18 +217,9 @@ completed.
 Language Integrated Query (LINQ)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.NET programs typically operate on some form of data. The data can be
-database-resident or in the form of objects (sometimes called POCOs for
-"Plain Old CLR Objects"). LINQ provides a language-integrated uniform
-query model over data, independent of the source. Linq providers bridge
-the gap between the uniform query model and the form of the data, such
-as SQL Server tables, XML documents, standard collections like List and
-more.
+LINQ is a powerful set of features for C# and VB that allow you to write simple, declarative code for operating on data.  The data can be in many forms (such as in-memory objects, in a SQL database, or an XML document), but the LINQ code you write typically won't look different for each data source!
 
-The follow examples demonstrate various uses of LINQ to query different
-forms of data.
-
-TODO: finish the section, link to a more detailed document.
+To learn more and see some samples, check out :doc:`linq`.
 
 Dynamic language features
 ^^^^^^^^^^^^^^^^^^^^^^^^^

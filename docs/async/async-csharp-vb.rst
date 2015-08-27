@@ -2,21 +2,33 @@ Async Programming in C#/VB
 ==========================
 By `Phillip Carter`_
 
-From a developer's perspective, the C#/VB async model is some nice syntax that hides complexity and allows you to focus on writing methods without worrying about things like thread pools and callbacks.
+Async programming is traditionally associated with callbacks and a general lack of straightforward code.  One might even say that straightforward code and scalable code are often at odds with one another.  This is not a problem with the C#/VB async model!  It is a language-level construct which hides complexity and allows you to focus on the problem at hand without making the code confusing in the process.
 
-The core of this are the ``async`` and ``await`` keywords (``Async`` and ``Await`` in VB.NET), which you sprinkle over otherwise normal methods. 
+The core of this are the ``async`` and ``await`` keywords (``Async`` and ``Await`` in VB), which allow for simple changes to code with a huge impact.  For example:
+
+.. code-block:: c#
+
+	button.Clicked += async (o, e) =>
+	{
+	    var data = await _httpClient.DownloadStringAsync(URL);
+	    DisplayData(data);
+	};
+	
+And that's it!  No callbacks and no library to wrestle with.
+
+For those who are more theoretically-inclined, the model used by C# and VB is an implementation of the `Future and Promise concurrency model <https://en.wikipedia.org/wiki/Futures_and_promises>`_.
 
 A few important things to know before continuing:
 
-* ``Task<T>`` and ``Task`` are used to represent the return types for async code.  These are abstractions that can be thought of as "something that needs to get done and could be long-running".  `More on Task and Task<T>`_.
-* Marking a method as ``async`` tells the compiler that you're expecting to ``await`` some blocking task.
+* Async code relies on ``Task<T>`` and ``Task``, which are constructs used to abstract the notion of a job that you need to wait on for a result.  They also act as the return types, except for the case of Event Handlers (these return ``void``).  `More on Task and Task<T>`_.
+* Marking a method as ``async`` tells the compiler that you're expecting to ``await`` the completion of a task.   Application of ``await`` is optional, but recommended in most cases.
 * ``await`` can only be used inside an async method.
-* When the ``await`` keyword is applied, it suspends the async method and returns control back to its caller until the awaited task is complete.  This is what makes it responsive.
-* Unless an async method has an ``await`` inside its body, it will run synchronously!
-* Return types for async methods should always be either ``Task<T>`` or ``Task``, with the exception of event handlers (these are ``void``).  More on this later.
+* When the ``await`` keyword is applied, it suspends the calling method and returns control back to its caller until the awaited task is complete.  This is what makes it responsive.
+* Unless an async method has an ``await`` inside its body, it will never yield!
+* Although not strictly required, ``async void`` should **only** be used on Event Handlers.  More on this later.
 
-Simple Async Example (C#)
--------------------------
+Bigger Example (C#)
+------------------
 
 The following example shows somewhat of a "real life" scenario: getting directions to a user for a ridesharing app.
 
@@ -63,21 +75,7 @@ Web service snippet:
 	    return json;
 	}
 	
-Bonus snippet: writing an inline event handler in Xamarin for an android game!
-
-.. code-block:: c#
-
-	fireball.DamageDone += async =>
-	{
-	    // The game's UI thread frees up to perform other calculations
-	    // as the fireball damage is retrieved.
-	    var result = await GetFireballDamageDone();
-		
-	    // Now this method has control of the UI thread again.
-	    ShowDamageOnScreen(result);
-	};
-	
-Simple Async Example (VB)
+Bigger Example (VB)
 -------------------------
 
 These are the VB-equivalent code snippets from above.
@@ -125,10 +123,10 @@ Web Service snippet:
 More on Task and Task<T>
 ------------------------
 
-As mentioned before, Tasks are constructs which represent blocking operations.
+As mentioned before, Tasks are constructs which represent long-running operations calling code must wait on.
 
-* ``Task`` represents a single asynchronous operation which does not return a value.
-* ``Task<T>`` represents a single asynchronous operation which returns a value of type ``T``.
+* ``Task`` represents a single operation which does not return a value.
+* ``Task<T>`` represents a single operation which returns a value of type ``T``.
 
 It's important to reason about Tasks as abstractions of work to be done rather than threads, largely because they typically aren't threads at all!  Asynchronous .NET library calls essentially delegate work to the operating system, which is naturally asynchronous when I/O is performed.  Let this be made clear once more: when calling an async .NET library method, there is no new thread spawned to handle the work.
 

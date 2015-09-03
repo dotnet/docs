@@ -262,61 +262,49 @@ The CLR enables the ability to acccess native memory and do pointer
 arithmetic via ``unsafe`` code. These operations are needed for certain algorithms and system interoperability.  Although powerful, use of unsafe code is discouraged unless it is necessary to interop with system APIs or implement the most efficient algorithm.  Unsafe code is not guaranteed to run in all environments, and also loses the benefits of a garbage collector and type safety.  It's recommended to confine
 unsafe code as much as possible, and test that code extremely thoroughly.
 
-Taken from the `.NET CoreFx Linux Interop Source <https://github.com/dotnet/corefx/tree/master/src/Common/src/Interop/Linux>`_:
+Taken from the `StringBuilder class in the .NET BCL reference source <http://referencesource.microsoft.com/#mscorlib/system/text/stringbuilder.cs,adf60ee46ebd299f>`_:
 
 .. code-block:: c#
-
-  // Copyright (c) Microsoft. All rights reserved.
-  // Licensed under the MIT license. See LICENSE file in the project root for full license information.
   
-  using System;
-  using System.Runtime.InteropServices;
-  
-  using ino_t = System.IntPtr;
-  using off_t = System.Int64; // Assuming either 64-bit machine or _FILE_OFFSET_BITS == 64
-  
-  internal static partial class Interop
-  {
-      internal static partial class libc
-      {
-          [DllImport(Libraries.Libc, SetLastError = true)]
-          internal static extern IntPtr readdir(SafeDirHandle dirp);
-  
-          internal static unsafe DType GetDirEntType(IntPtr dirEnt)
-          {
-              return ((dirent*)dirEnt)->d_type;
-          }
-  
-          internal static unsafe string GetDirEntName(IntPtr dirEnt)
-          {
-              return Marshal.PtrToStringAnsi((IntPtr)((dirent*)dirEnt)->d_name);
-          }
-  
-          internal enum DType : byte
-          {
-              DT_UNKNOWN = 0,
-              DT_FIFO = 1,
-              DT_CHR = 2,
-              DT_DIR = 4,
-              DT_BLK = 6,
-              DT_REG = 8,
-              DT_LNK = 10,
-              DT_SOCK = 12,
-              DT_WHT = 14
-          }
-  
-          #pragma warning disable 0649 // fields are assigned by P/Invoke call 
-          private unsafe struct dirent 
-          { 
-              internal ino_t d_ino; 
-              internal off_t d_off; 
-              internal short d_reclen; 
-              internal DType d_type; 
-              internal fixed byte d_name[256];
-          } 
-          #pragma warning restore 0649 
-      }
-  }
+  public override String ToString() {
+            Contract.Ensures(Contract.Result<String>() != null);
+ 
+            VerifyClassInvariant();
+            
+            if (Length == 0)
+                return String.Empty;
+ 
+            string ret = string.FastAllocateString(Length);
+            StringBuilder chunk = this;
+            unsafe {
+                fixed (char* destinationPtr = ret)
+                {
+                    do
+                    {
+                        if (chunk.m_ChunkLength > 0)
+                        {
+                            // Copy these into local variables so that they are stable even in the presence of ----s (hackers might do this)
+                            char[] sourceArray = chunk.m_ChunkChars;
+                            int chunkOffset = chunk.m_ChunkOffset;
+                            int chunkLength = chunk.m_ChunkLength;
+    
+                            // Check that we will not overrun our boundaries. 
+                            if ((uint)(chunkLength + chunkOffset) <= ret.Length && (uint)chunkLength <= (uint)sourceArray.Length)
+                            {
+                                fixed (char* sourcePtr = sourceArray)
+                                    string.wstrcpy(destinationPtr + chunkOffset, sourcePtr, chunkLength);
+                            }
+                            else
+                            {
+                                throw new ArgumentOutOfRangeException("chunkLength", Environment.GetResourceString("ArgumentOutOfRange_Index"));
+                            }
+                        }
+                        chunk = chunk.m_ChunkPrevious;
+                    } while (chunk != null);
+                }
+            }
+            return ret;
+        }
 
 Notes
 -----

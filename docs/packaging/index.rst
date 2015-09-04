@@ -5,6 +5,3 @@ Packaging .NET Core Applications
   :titlesonly:
 
   packaging-overview
-  packaging-nuget
-  packaging-publish
-  packaging-binaries

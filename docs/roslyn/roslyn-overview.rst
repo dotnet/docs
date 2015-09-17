@@ -199,7 +199,7 @@ of source code. They serve two important purposes:
    code in a user’s project.
 2. To enable tools - such as refactorings and an IDE - to create,
    modify, and rearrange source code in a natural manner without having
-   use direct text edits. By creating and manipulating trees, tools can
+   to use direct text edits. By creating and manipulating trees, tools can
    easily create and rearrange source code.
 
 Syntax Trees

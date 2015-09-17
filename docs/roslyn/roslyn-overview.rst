@@ -142,7 +142,7 @@ snapshot of a single invocation of a compiler, including assembly
 references, compiler options, and source code files. There are two
 distinct APIs that represent the C# language and the Visual Basic
 language. These two APIs are similar in shape but tailored for
-high-fidelity to each individual language. This layer has no
+high fidelity to each individual language. This layer has no
 dependencies on Visual Studio components.
 
 Diagnostic APIs

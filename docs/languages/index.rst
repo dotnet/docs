@@ -9,8 +9,8 @@ Programming languages on the .NET Platform
     overview
     c-sharp
     f-sharp
-    visual-basic    
-	
+    visual-basic
+    cli-languages	
 
 .. include:: /stub-notice.txt
 

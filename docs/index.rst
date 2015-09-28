@@ -15,15 +15,15 @@ Topics
    :titlesonly:
 
    getting-started/index
-   tutorials-samples/index
    concepts/index
+   tutorials-samples/index
    development/index
    dnx/index
    porting/index
    packaging/index
    deployment/index
    bcl/index
-   roslyn/index
+   advanced/index
 
 Related resources
 -----------------

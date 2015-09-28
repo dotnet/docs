@@ -152,7 +152,7 @@ As part of their analysis the compiler may produce a set of diagnostics
 covering everything from syntax, semantic, and definite assignment
 errors to various warnings and informational diagnostics. The Compiler
 API layer exposes diagnostics through an extensible API allowing for
-user-defined analyzers to be plugged into a Compilation and user-defined
+user-defined analyzers to be plugged into a compilation and user-defined
 diagnostics, such as those produced by tools like StyleCop or FxCop, to
 be produced alongside compiler-defined diagnostics. Producing
 diagnostics in this way has the benefit of integrating naturally with

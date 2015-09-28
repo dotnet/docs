@@ -262,7 +262,7 @@ The CLR enables the ability to acccess native memory and do pointer
 arithmetic via ``unsafe`` code. These operations are needed for certain algorithms and system interoperability.  Although powerful, use of unsafe code is discouraged unless it is necessary to interop with system APIs or implement the most efficient algorithm.  Unsafe code is not guaranteed to run in all environments, and also loses the benefits of a garbage collector and type safety.  It's recommended to confine
 unsafe code as much as possible, and test that code extremely thoroughly.
 
-Taken from the `StringBuilder class in the .NET BCL reference source <http://referencesource.microsoft.com/#mscorlib/system/text/stringbuilder.cs,adf60ee46ebd299f>`_:
+Taken from the `StringBuilder class in the .NET BCL source <https://github.com/dotnet/coreclr/blob/master/src/mscorlib/src/System/Text/StringBuilder.cs#L327>`_:
 
 .. code-block:: c#
   

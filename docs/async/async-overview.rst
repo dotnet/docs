@@ -16,7 +16,7 @@ If you are developing a system which blocks on I/O in some way, you should be wr
 * Almost all modern apps demand elements which block on I/O in some way.  Because of this, responsive apps are expected by users, and even slight UX hangups are often punished harshly (via one-star reviews).
 * Modern web services must be able to handle a high load with the number of devices potentially connecting to them.  Async programming allows scaling up so that sudden spikes in traffic don't bring a system to its knees.
 * Many of the newer, better .NET APIs are themselves asynchronous in nature.
-* It's super easy to write async methods!
+* It's super easy to write async code in .NET!
 
 Especially in the case of F#, a functional-first language designed to solve problems at scale, asynchronous programming is a necessity for elastic services under a heavy load.
 

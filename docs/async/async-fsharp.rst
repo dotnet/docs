@@ -6,7 +6,7 @@ Async programming in F# can be accomplished through a language-level programming
 
 At the center of it all is ``Async<'a>``, a representation of a task performed in an asynchronous context, where ``'a`` is the type returned by the expression when the ``return`` keyword is used.  The code used to represent this is known as an async block: ``async { expression }``.
 
-The key thing to understand here is that an async expression's type is ``Async<'a>``, which is merely a *specification* of work to be done in an async context.  It is not executed until you explicitly start it with one of the starting functions (such as ``Async.RunSynchronously``).  Although this is a different way of thinking about doing work, in practice it ends up being quite simple.
+The key thing to understand here is that an async expression's type is ``Async<'a>``, which is merely a *specification* of work to be done in an asynchronous context.  It is not executed until you explicitly start it with one of the starting functions (such as ``Async.RunSynchronously``).  Although this is a different way of thinking about doing work, in practice it ends up being quite simple.
 
 For example, say we wanted to download the HTML from microsoft.com without blocking the main thread.  One way to write it is like this:
 
@@ -22,14 +22,14 @@ For example, say we wanted to download the HTML from microsoft.com without block
 	let html = "http://microsoft.com/" |> fetchHtmlAsync |> Async.RunSynchronously
 	printfn "%s" html
 
-And that's it!  Aside from the introduction of ``let!`` and ``return``, this is just normal F# code.
+And that's it!  Aside from the introduction of ``async``, ``let!``, and ``return``, this is just normal F# code.
 
 There are a few syntactical elements to know before you can move forward:
 
 * The body of an async expression is wrapped in an ``async{ ... }`` block of code.
 * ``let!`` binds the result of an async expression (which runs on another context).
 * ``use!`` works just like let, but disposes the resource when it goes out of scope.
-* ``do!`` will start an async workflow.  This is used for async jobs with no return value.
+* ``do!`` will await an async workflow which doesn't return anything.
 * ``return`` simply returns a result from an async expression.
 * ``return!`` executes an async workflow and returns its return value as a result.
 
@@ -65,6 +65,11 @@ As mentioned earlier, async code is really just a specification of work to be do
 
 There are other, less general ways to start an async workflow, which you can find <LINK HERE>.
 
+A Note on Threads
+^^^^^^^^^^^^^^^^^
+
+The phrase "on another thread" is mentioned above, but it is important to know that **this does not mean that async workflows are run on a newly spun-up thread**.  The workflow actually "jumps" between threads, borrowing them for a small amount of time to do useful work.  When an async workflow is effectively "waiting" (e.g. waiting for a network call to return something), any thread it was borrowing at the time is freed up to go do useful work on something else.  This allows async workflows to utilize the system as effectively as possible, and makes them especially strong for performing significant amounts of I/O.
+
 How to Add Parallelism to Async Code
 ------------------------------------
 
@@ -96,7 +101,7 @@ The following example will use ``Async.Parallel`` to download the HTML from four
 	for html in htmlList do
 	    printfn "%s" html
 
-Async Example
+Larger Example
 -------------
 
 TODO - something more complex than above
@@ -114,7 +119,7 @@ Although this is just a naming convention, it does make things like API discover
 
 * Listen to the compiler!
 
-F#'s compiler is very strict, making it nearly impossible to mix and match async and synchronous code in nasty ways.  Certain edge cases in truly bizarre code could technically compile and cause bad behavior ... but the compiler always generates a warning.  Sticking with idiomatic F# and listening to the compiler will make it all work seamlessly!
+F#'s compiler is very strict, making it nearly impossible to do something troubling like run "async" code synchronously.  If you come across a warning, that's a sign that the code won't execute how you think it will.  If you can make the compiler happy, your code will mostly likely execute as expected.
 
 For the C#/VB Programmer Looking Into F#
 ----------------------------------------
@@ -125,34 +130,57 @@ There is a fundamental difference between the C#/VB async model and the F# async
 
 When you call a function which returns a ``Task`` or ``Task<T>``, that job has already begun execution.  The handle returned represents an already-running asynchronous job.  In contrast, when you call an async function in F#, the ``Async<'a>`` returned represents a job which will be **generated** at some point.  Understanding this model is powerful, because it allows for asynchronous jobs in F# to be chained together easier, performed conditionally, and be started with a finer grain of control.
 
-There are also quite a few similarities which are worth noting:
+There are also quite a few similarities and differences worth noting.
 
-TODO THIS SECTION NEEDS A SLIGHT REWRITE
+Similartiies
+^^^^^^^^^^^^
 
-* ``Async.RunSymchronously`` is basically ``await`` when calling async code from a function.
+* ``Async.RunSymchronously`` is analogous to ``await`` when calling async code from a function.
 
-* ``let!``, ``use!``, and ``do!`` are similar to ``await`, but are more specific and can only be called within an ``async { }`` block.
+Although it operates very differently from ``await``, conceptually ``Async.RunSynchronously`` accomplishes a similar goal: waiting for an asynchronous job to finish and collecting its result (after starting that job).
 
-While it is not technically true that they operate the same way, in practice they are used to accomplish their goals in the same way.  F# gives some extra utility with ``use!``.
+* ``let!``, ``use!``, and ``do!`` are analogous to ``await`` when calling an async job from within an ``async{ }`` block.
 
-* Task-based approach to solving async problems.
+The three keywords can only be used within an ``async { }`` block, similar to how ``await`` can only be invoked inside an ``async`` method.  In short, ``let!`` is for when you want to capture and use a result, ``use!`` is the same but for something whose resources should get cleaned after it's used, and ``do!`` is for when you want to wait for an async workflow with no return value to finish before moving on.
 
-Although F#'s model uses a completely different type to capture async workflows (``Async<T>`` compared with ``Task<T>``), the conceptual model differs little.
+* For the purposes of representing async work, F#'s model doesn't differ much conceptually.
 
-* Data-parallel programming.
+Although F#'s model doesn't use a ``Task`` or ``Task<T>``, conceptually its type, ``Async<'a>``, is similar in that it models work being done in an asynchronous context.  The main difference is ``Async<'a>`` is a job which is ready to be started, whereas ``Task`` and ``Task<T>`` are jobs which are already happening.
 
-``Async.Parallel`` corresponds to ``Task.WhenAll``.  Both methods create a workflow or task which runs multiple operations and does not complete until all sub-operations have completed.
+* F# supports data-parallelism in a similar way.
 
-Differences:
+``Async.Parallel`` corresponds to ``Task.WhenAll`` for the scenario of wanting the results of a set of async jobs when they all complete.
 
-* Cancellation support is simple in F# and annoying in C#/VB.
+Differences
+^^^^^^^^^^^
 
-Supporting cancellation of a task midway through its execution in C# requires checking the ``IsCancellationRequested`` property or calling ``ThrowIfCancellationRequested()`` on a ``CancellationToken`` object that's passed into the async method.  F# async workflows are naturally cancellable, requireing only a ``CancellationToken`` be passed into the invocation of ``Async.Start`` to support cancellation.
+* Cancellation support is simpler in F# than in C#/VB.
 
-* Less "async everywhere", meaning async and non-async functions can be composed more easily.
+Supporting cancellation of a task midway through its execution in C#/VB requires checking the ``IsCancellationRequested`` property or calling ``ThrowIfCancellationRequested()`` on a ``CancellationToken`` object that's passed into the async method.
 
-``Async<T>`` is just a specification of work to be done.  This is in contrast with C#/VB, where ``Task<T>`` is an actual computation created and running in the background.  This results in a lot less pollution of ``async`` keywords everywhere.
+In contrast, F# async workflows are naturally cancellable.  Cancellation is a simple three-step process.
+
+1. Create a new ``CancellationTokenSource``.
+2. Pass it into a starting function.
+3. Call ``Cancel`` on the token.
+
+Example:
+
+.. code-block:: c#
+
+	let token = new CancellationTokenSource()
+	Async.Start (fooAsync, token)
+
+	// Immediately cancel fooAsync after it's been started.
+	token.Cancel()
+
+And that's it!
 
 * Nested ``let!`` is not allowed.
 
-Unlike ``await``, which can be nested indefinitely, ``let!`` cannot and must have its result bound before using it inside of another ``let!`` expression.
+Unlike ``await``, which can be nested indefinitely, ``let!`` cannot and must have its result bound before using it inside of a ``let!``, ``do!``, or ``use!``.
+
+Further resources:
+------------------
+
+* TODO (get David's suggestions)

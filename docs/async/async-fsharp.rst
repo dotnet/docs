@@ -38,13 +38,13 @@ Normal ``let``, ``use``, and ``do`` keywords can be used alongside the async ver
 How to start Async Code in F#
 -----------------------------
 
-As mentioned earlier, async code is really just a specification of work to be done in another context which needs to be explicitly started somewhere.  This can be accomplished a few different ways.
+As mentioned earlier, async code is really just a specification of work to be done in another context which needs to be explicitly started somewhere.  These are two primary was to accomplish this:
 
 1. ``Async.RunSynchronously`` will start an async job on another thread and await its result.
 
 .. code-block:: c#
 
-	let myFuncion =
+	let myFunction =
 	    // Execution of myFunction will pause until fooAsync finishes
 	    let result = Async.RunSynchronously (fooAsync x y)
 
@@ -55,15 +55,13 @@ As mentioned earlier, async code is really just a specification of work to be do
 
 .. code-block:: c#
 
-	// TODO
+	let myFunction =
+	    // Exeuction of myFunction will continue after calling this
+	    Async.Run (barAsync x)
 
-3. ``Async.StartImmediate`` will start an async job on the **current** thread, and will **not** await its result.
+	    printfn "%s" "barAsync is running in the background..."
 
-.. code-block:: c#
-
-	// TODO
-
-There are other, less general ways to start an async workflow, which you can find <LINK HERE>.
+There are other, less general ways to start an async workflow also available.  They are detailed `in the MSDN reference docs <https://msdn.microsoft.com/en-us/library/ee370232.aspx>`_.
 
 A Note on Threads
 ^^^^^^^^^^^^^^^^^
@@ -132,7 +130,7 @@ When you call a function which returns a ``Task`` or ``Task<T>``, that job has a
 
 There are also quite a few similarities and differences worth noting.
 
-Similartiies
+Similarities
 ^^^^^^^^^^^^
 
 * ``Async.RunSymchronously`` is analogous to ``await`` when calling async code from a function.
@@ -169,9 +167,9 @@ Example:
 .. code-block:: c#
 
 	let token = new CancellationTokenSource()
-	Async.Start (fooAsync, token)
+	Async.Start (barAsync x, token)
 
-	// Immediately cancel fooAsync after it's been started.
+	// Immediately cancel barAsync after it's been started.
 	token.Cancel()
 
 And that's it!
@@ -183,4 +181,6 @@ Unlike ``await``, which can be nested indefinitely, ``let!`` cannot and must hav
 Further resources:
 ------------------
 
-* TODO (get David's suggestions)
+* `Async Workflows on MSDN <https://msdn.microsoft.com/en-us/library/dd233250.aspx>`_
+* `Asynchronous Sequences for F# <http://fsprojects.github.io/FSharp.Control.AsyncSeq/library/AsyncSeq.html>`_
+* `F# Data HTTP Utilities <https://fsharp.github.io/FSharp.Data/library/Http.html>`_

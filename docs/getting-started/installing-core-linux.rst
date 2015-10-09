@@ -82,8 +82,8 @@ You can see the currently installed DNX versions with ``dnvm list``.
 
     Active Version              Runtime Arch Location             Alias
     ------ -------              ------- ---- --------             -----
-      *    1.0.0-beta5-11649    coreclr x64  ~/.dnx/runtimes
-           1.0.0-beta5-11649    mono         ~/.dnx/runtimes      default
+      *    1.0.0-rc1-15838      coreclr x64  ~/.dnx/runtimes
+           1.0.0-rc1-15838      mono         ~/.dnx/runtimes      default
 
 Using a specific runtime
 ------------------------
@@ -100,8 +100,8 @@ You can choose which of the installed DNXs you want to use with ``dnvm use``, sp
 
     Active Version              Runtime Arch Location             Alias
     ------ -------              ------- ---- --------             -----
-      *    1.0.0-beta5-11649    coreclr x64  ~/.dnx/runtimes
-           1.0.0-beta5-11649    mono         ~/.dnx/runtimes      default
+      *    1.0.0-rc1-15838      coreclr x64  ~/.dnx/runtimes
+           1.0.0-rc1-15838      mono         ~/.dnx/runtimes      default
 
 See the asterisk in the listing above? It's purpose is to tell you which runtime is now active. "Active" here means that all of the interaction with your projects and .NET Core will use this runtime.
 
@@ -154,15 +154,15 @@ DNX. The first command switches the active runtime to the Mono one.
 
 .. code-block:: console
 
-    dnvm use 1.0.0-beta5-11649 -r mono
+    dnvm use 1.0.0-rc1-15838 -r mono
     dnu restore
 
 You are now ready to run your app under .NET Core. As you can guess, however, before you do that you first need to switch to the .NET Core runtime. The first command below does exactly that.
 
 .. code-block:: console
 
-    dnvm use 1.0.0-beta5-11649 -r coreclr
-    dnx . run
+    dnvm use 1.0.0-rc1-15838 -r coreclr
+    dnx run
 
     Hello, Linux
     Love from CoreCLR.

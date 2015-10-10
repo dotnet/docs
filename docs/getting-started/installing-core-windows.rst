@@ -44,8 +44,8 @@ You can see the currently installed DNX versions with ``dnvm list``.
 
      Active Version           Runtime Architecture Location                            Alias
      ------ -------           ------- ------------ --------                            -----
-       *    1.0.0-beta5-11649 coreclr x64          C:\Users\[user]\.dnx\runtimes
-            1.0.0-beta5-11649 coreclr x86          C:\Users\[user]\.dnx\runtimes       default
+       *    1.0.0-rc1-15838   coreclr x64          C:\Users\[user]\.dnx\runtimes
+            1.0.0-rc1-15838   coreclr x86          C:\Users\[user]\.dnx\runtimes       default
 
 
 .. note::
@@ -58,16 +58,16 @@ You can choose which of the installed DNXs you want to use with ``dnvm use``, sp
 
 .. code-block:: console
 
-    dnvm use -r coreclr -arch x86 1.0.0-beta5-11649
-    Adding C:\Users\[user]\.dnx\runtimes\dnx-coreclr-win-x86.1.0.0-beta5-11649\bin
+    dnvm use -r coreclr -arch x86 1.0.0-rc1-15838
+    Adding C:\Users\[user]\.dnx\runtimes\dnx-coreclr-win-x86.1.0.0-rc1-15838\bin
     to process PATH
 
     dnvm list
 
     Active Version           Runtime Architecture Location                            Alias
     ------ -------           ------- ------------ --------                            -----
-           1.0.0-beta5-11649 coreclr x64          C:\Users\[user]\.dnx\runtimes
-      *    1.0.0-beta5-11649 coreclr x86          C:\Users\[user]\.dnx\runtimes       default
+           1.0.0-rc1-15838   coreclr x64          C:\Users\[user]\.dnx\runtimes
+      *    1.0.0-rc1-15838   coreclr x86          C:\Users\[user]\.dnx\runtimes       default
 
 See the asterisk in the listing above? It's purpose is to tell you which runtime is now active. "Active" here means that all of the interaction with your projects and .NET Core will use this runtime.
 
@@ -125,7 +125,7 @@ You can run your app with the DNX command.
 
 .. code-block:: console
 
-    dnx . run
+    dnx run
 
 This will instruct the currently active DNX to run your app. Note that you didn't need to actually build the code; DNX will take care of this for you.
 

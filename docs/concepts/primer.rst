@@ -46,7 +46,7 @@ As any mature and advanced application development framework, .NET has many powe
 * Asynchronous support
 * Dynamic language features
 * Code contracts
-* Native interoperability
+* `Native interoperability`_
 
 
 Automatic memory management
@@ -243,29 +243,24 @@ TODO: finish section
 Native Interoperability
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-.NET provides low-level access to native APIs via the platform invoke or
-P/Invoke facility. It enables a mapping of .NET types to native types,
-which the .NET runtime marshalls before calling the native API.
+Every operating system in current use provides a lot of platform support for 
+various programming tasks. .NET provides several ways to tap into those APIs. 
+Collectively, this support is called "native interoperability" and in this 
+section we will take a look at how to access native APIs from managed, .NET 
+code. 
 
-TODO: Examples.
+The main way to do native interoperability is via "platform invoke" or P/Invoke 
+for short. This support in .NET Core is available across Linux and Windows 
+platforms. Another, Windows-only way of doing native interoperability is known 
+as "COM interop". It's main goal is to allow using 
+`COM components <https://msdn.microsoft.com/en-us/library/bwa2bx93.aspx>`_
+in managed code. It is built on top of P/Invoke infrastructure, but it works in 
+subtly different ways. 
 
-Higher-level native interop can be established with P/Invoke. The COM
-and WinRT interop systems in the CLR are both built on top of P/Invoke.
-The Java and Objective-C interop systems provided by Xamarin on top of
-Mono are fundamentally the same.
+Most of Mono's (and thus Xamarin's) interoperability support for Java and 
+Objective-C are built similarly, that is, they use the same principles. 
 
-Unsafe Code
-~~~~~~~~~~~
-
-The CLR enables the ability to acccess native memory and do pointer
-arithmetic. These operations are needed for some algortithms and for
-calling some native APIs. The use of these capabilities is discouraged,
-since you no longer get the benefit of verifiability, nor will your code
-be allowed to run in all environments. The best practice is to confine
-unsafe code as much as possible and that the vast majority of code is
-type-safe.
-
-TODO: Examples.
+Read more about it in the :doc:`native-interop` document. 
 
 Notes
 -----

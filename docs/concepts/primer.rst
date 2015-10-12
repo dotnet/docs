@@ -258,22 +258,22 @@ Mono are fundamentally the same.
 Unsafe Code
 ~~~~~~~~~~~
 
-The CLR enables the ability to acccess native memory and do pointer
-arithmetic via ``unsafe`` code. These operations are needed for certain algorithms and system interoperability.  Although powerful, use of unsafe code is discouraged unless it is necessary to interop with system APIs or implement the most efficient algorithm.  Unsafe code is not guaranteed to run in all environments, and also loses the benefits of a garbage collector and type safety.  It's recommended to confine
+The CLR enables the ability to access native memory and do pointer
+arithmetic via ``unsafe`` code. These operations are needed for certain algorithms and system interoperability.  Although powerful, use of unsafe code is discouraged unless it is necessary to interop with system APIs or implement the most efficient algorithm.  Unsafe code may not predictably run in all environments, and also loses the benefits of a garbage collector and type safety.  It's recommended to confine
 unsafe code as much as possible, and test that code extremely thoroughly.
 
-Taken from the `StringBuilder class in the .NET BCL source <https://github.com/dotnet/coreclr/blob/master/src/mscorlib/src/System/Text/StringBuilder.cs#L327>`_:
+The ``ToString()`` method from the `StringBuilder class <https://github.com/dotnet/coreclr/blob/master/src/mscorlib/src/System/Text/StringBuilder.cs#L327>`_. illustrates how using ``unsafe`` code can efficiently implement an algorithm by moving around chunks of memory directly:
 
 .. code-block:: c#
-  
+
   public override String ToString() {
             Contract.Ensures(Contract.Result<String>() != null);
- 
+
             VerifyClassInvariant();
-            
+
             if (Length == 0)
                 return String.Empty;
- 
+
             string ret = string.FastAllocateString(Length);
             StringBuilder chunk = this;
             unsafe {
@@ -287,8 +287,8 @@ Taken from the `StringBuilder class in the .NET BCL source <https://github.com/d
                             char[] sourceArray = chunk.m_ChunkChars;
                             int chunkOffset = chunk.m_ChunkOffset;
                             int chunkLength = chunk.m_ChunkLength;
-    
-                            // Check that we will not overrun our boundaries. 
+
+                            // Check that we will not overrun our boundaries.
                             if ((uint)(chunkLength + chunkOffset) <= ret.Length && (uint)chunkLength <= (uint)sourceArray.Length)
                             {
                                 fixed (char* sourcePtr = sourceArray)

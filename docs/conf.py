@@ -50,8 +50,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = '.NET Core Documentation'
-copyright = '2015, Zlatko Knezevic'
-author = 'Zlatko Knezevic'
+copyright = '2015, Microsoft'
+author = 'Microsoft'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the

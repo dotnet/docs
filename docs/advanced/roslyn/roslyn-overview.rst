@@ -142,7 +142,7 @@ snapshot of a single invocation of a compiler, including assembly
 references, compiler options, and source code files. There are two
 distinct APIs that represent the C# language and the Visual Basic
 language. These two APIs are similar in shape but tailored for
-high-fidelity to each individual language. This layer has no
+high fidelity to each individual language. This layer has no
 dependencies on Visual Studio components.
 
 Diagnostic APIs
@@ -152,7 +152,7 @@ As part of their analysis the compiler may produce a set of diagnostics
 covering everything from syntax, semantic, and definite assignment
 errors to various warnings and informational diagnostics. The Compiler
 API layer exposes diagnostics through an extensible API allowing for
-user-defined analyzers to be plugged into a Compilation and user-defined
+user-defined analyzers to be plugged into a compilation and user-defined
 diagnostics, such as those produced by tools like StyleCop or FxCop, to
 be produced alongside compiler-defined diagnostics. Producing
 diagnostics in this way has the benefit of integrating naturally with
@@ -176,7 +176,7 @@ Workspaces APIs
 The Workspaces layer contains the Workspace API, which is the starting
 point for doing code analysis and refactoring over entire solutions. It
 assists you in organizing all the information about the projects in a
-solution into single object model, offering you direct access to the
+solution into a single object model, offering you direct access to the
 compiler layer object models without needing to parse files, configure
 options or manage project to project dependencies.
 
@@ -199,7 +199,7 @@ of source code. They serve two important purposes:
    code in a user’s project.
 2. To enable tools - such as refactorings and an IDE - to create,
    modify, and rearrange source code in a natural manner without having
-   use direct text edits. By creating and manipulating trees, tools can
+   to use direct text edits. By creating and manipulating trees, tools can
    easily create and rearrange source code.
 
 Syntax Trees

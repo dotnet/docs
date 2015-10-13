@@ -42,11 +42,11 @@ As any mature and advanced application development framework, .NET has many powe
 * The managed compiler
 * `Delegates and lambdas`_
 * `Generic Types (Generics)`_
-* LINQ
+* `Language Integrated Query (LINQ)`_
 * Asynchronous support
 * Dynamic language features
 * Code contracts
-* Native interoperability
+* `Native interoperability`_
 * `Unsafe Code`_
 
 
@@ -218,18 +218,9 @@ completed.
 Language Integrated Query (LINQ)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.NET programs typically operate on some form of data. The data can be
-database-resident or in the form of objects (sometimes called POCOs for
-"Plain Old CLR Objects"). LINQ provides a language-integrated uniform
-query model over data, independent of the source. Linq providers bridge
-the gap between the uniform query model and the form of the data, such
-as SQL Server tables, XML documents, standard collections like List and
-more.
+LINQ is a powerful set of features for C# and VB that allow you to write simple, declarative code for operating on data.  The data can be in many forms (such as in-memory objects, in a SQL database, or an XML document), but the LINQ code you write typically won't look different for each data source!
 
-The follow examples demonstrate various uses of LINQ to query different
-forms of data.
-
-TODO: finish the section, link to a more detailed document.
+To learn more and see some samples, check out :doc:`linq`.
 
 Dynamic language features
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -244,23 +235,31 @@ TODO: finish section
 Native Interoperability
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-.NET provides low-level access to native APIs via the platform invoke or
-P/Invoke facility. It enables a mapping of .NET types to native types,
-which the .NET runtime marshalls before calling the native API.
+Every operating system in current use provides a lot of platform support for
+various programming tasks. .NET provides several ways to tap into those APIs.
+Collectively, this support is called "native interoperability" and in this
+section we will take a look at how to access native APIs from managed, .NET
+code.
 
-TODO: Examples.
+The main way to do native interoperability is via "platform invoke" or P/Invoke
+for short. This support in .NET Core is available across Linux and Windows
+platforms. Another, Windows-only way of doing native interoperability is known
+as "COM interop". It's main goal is to allow using
+`COM components <https://msdn.microsoft.com/en-us/library/bwa2bx93.aspx>`_
+in managed code. It is built on top of P/Invoke infrastructure, but it works in
+subtly different ways.
 
-Higher-level native interop can be established with P/Invoke. The COM
-and WinRT interop systems in the CLR are both built on top of P/Invoke.
-The Java and Objective-C interop systems provided by Xamarin on top of
-Mono are fundamentally the same.
+Most of Mono's (and thus Xamarin's) interoperability support for Java and
+Objective-C are built similarly, that is, they use the same principles.
+
+Read more about it in the :doc:`native-interop` document.
 
 Unsafe Code
-~~~~~~~~~~~
+^^^^^^^^^^^
 
 The CLR enables the ability to access native memory and do pointer
 arithmetic via ``unsafe`` code. These operations are needed for certain algorithms and system interoperability.  Although powerful, use of unsafe code is discouraged unless it is necessary to interop with system APIs or implement the most efficient algorithm.  Unsafe code may not predictably run in all environments, and also loses the benefits of a garbage collector and type safety.  It's recommended to confine
-unsafe code as much as possible, and test that code extremely thoroughly.
+unsafe code as much as possible, and test that code thoroughly.
 
 The ``ToString()`` method from the `StringBuilder class <https://github.com/dotnet/coreclr/blob/master/src/mscorlib/src/System/Text/StringBuilder.cs#L327>`_. illustrates how using ``unsafe`` code can efficiently implement an algorithm by moving around chunks of memory directly:
 
@@ -309,7 +308,7 @@ The ``ToString()`` method from the `StringBuilder class <https://github.com/dotn
 Notes
 -----
 
-The term ".NET runtime" is used throughout the document to accomodate
+The term ".NET runtime" is used throughout the document to accommodate
 for the multiple implementations of .NET, such as CLR, Mono, IL2CPP and
 others. The more specific names are only used if needed.
 

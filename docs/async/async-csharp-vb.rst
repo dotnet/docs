@@ -4,7 +4,7 @@ By `Phillip Carter`_
 
 Async programming in C# and VB share a language-level asynchronous programming model which allows for easily writing asynchronous code without having to juggle callbacks or conform to a library which supports asynchronicity.
 
-The core it all are the ``Task`` and ``Task<T>`` objects, which model arbitrary asynchronous operations.  These are interacted with via the ``async`` and ``await`` keywords (``Async`` and ``Await`` in VB) to provide a natural-feeling way to write async code.  The result is the ability to write powerful code which cleanly expresses intent.  There are other ways to approach this than ``async`` and ``await``, outlined in the `Task-based Asynchronous Pattern (TAP) <https://msdn.microsoft.com/en-us/library/hh873175(v=vs.110).aspx>`_, which presents Task-based asynchronocity with options other than the language-level abstractions.  This document will focus on the language-level constructs from this point forward.
+The core of it all are the ``Task`` and ``Task<T>`` objects, which model asynchronous operations.  The async and await keywords provide a natural and synchronous developer experience for interacting with tasks.  The result is the ability to write powerful code which cleanly expresses intent.  There are other ways to approach this than ``async`` and ``await``, outlined in the `Task-based Asynchronous Pattern (TAP) <https://msdn.microsoft.com/en-us/library/hh873175(v=vs.110).aspx>`_, which presents Task-based asynchronocity with options other than the language-level abstractions.  This document will focus on the language-level constructs from this point forward.
 
 For example, say you want to download some data from a web service when a button is pressed, but don't want to hang up the UI thread.  It can be accomplished simply like this:
 
@@ -27,7 +27,7 @@ For those who are more theoretically-inclined, this is an implementation of the 
 A few important things to know before continuing:
 
 * Async code uses ``Task<T>`` and ``Task``, which are constructs used to model the work being done in an asynchronous context.  `More on Task and Task<T>`_
-* When the ``await`` keyword is applied, it suspends the calling method and returns control back to its caller until the awaited task is complete.  This is what allows a UI to be responsive and a service to be elastic.
+* When the ``await`` keyword is applied, it suspends the calling method and yields control back to its caller until the awaited task is complete.  This is what allows a UI to be responsive and a service to be elastic.
 * ``await`` can only be used inside an async method.
 * Unless an async method has an ``await`` inside its body, it will never yield!
 * ``async void`` should **only** be used on Event Handlers (where it is required).
@@ -35,7 +35,7 @@ A few important things to know before continuing:
 Example (C#)
 ------------
 
-The following example shows how to write basic async code for both a client app and a web service.  The code, in both cases, will count the number of times "Microsoft" appears in the HTML of "microsoft.com".
+The following example shows how to write basic async code for both a client app and a web service.  The code, in both cases, will count the number of times ".NET" appears in the HTML of "dotnetfoundation.org".
 
 Client app snippet (Universal Windows App):
 
@@ -43,21 +43,21 @@ Client app snippet (Universal Windows App):
 
 	private readonly HttpClient _httpClient = new HttpClient();
 
-	private async void SeeTheMicrosofts_Click(object sender, RoutedEventArgs e)
+	private async void SeeTheDotNets_Click(object sender, RoutedEventArgs e)
 	{
 	    // Capture the task handle here so we can await the background task later.
-	    var getMicrosoftDotComHtmlTask = _httpClient.GetStringAsync("microsoft.com");
+	    var getDotNetFoundationHtmlTask = _httpClient.GetStringAsync("http://dotnetfoundation.com");
 
 	    // Any other work on the UI thread can be done here, such as enabling a Progress Bar.
 	    NetworkProgressBar.IsEnabled = true;
 	    NetworkProgressBar.Visibility = Visibility.Visible;
 
-	    // The await operator suspends SeeTheMicrosofts_Clicked, returning control to its caller.
+	    // The await operator suspends SeeTheDotNets_Click, returning control to its caller.
 	    // This is what allows the app to be responsive and not hang on the UI thread.
-	    var html = await getMicrosoftDotComHtmlTask;
-	    int count = Regex.Matches(html, "Microsoft").Count;
+	    var html = await getDotNetFoundationHtmlTask;
+	    int count = Regex.Matches(html, ".NET").Count;
 
-	    MicrosoftCountLabel.Text = $"Number of Microsofts on microsoft.com: {count}";
+	    DotNetCountLabel.Text = $"Number of .NETs on dotnetfoundation.com: {count}";
 
 	    NetworkProgressBar.IsEnabled = false;
 	    NetworkProgressBar.Visbility = Visibility.Collapsed;
@@ -70,13 +70,14 @@ Web service snippet (ASP.NET MVC):
 	private readonly HttpClient _httpClient = new HttpClient();
 
 	[HttpGet]
-	public async Task<int> MicrosoftCount()
+	[Route("DotNetCount")]
+	public async Task<int> GetDotNetCountAsync()
 	{
-	    // Suspends MicrosoftCount() to allow the caller (the web service) to accept another request,
+	    // Suspends GetDotNetCountAsync() to allow the caller (the web server) to accept another request,
 	    // rather than blocking on this one.
-	    var html = await _httpClient.DownloadStringAsync("microsoft.com");
+	    var html = await _httpClient.DownloadStringAsync("https://dotnetfoundation.org");
 
-	    return Regex.Matches(html, "Microsoft").Count;
+	    return Regex.Matches(html, ".NET").Count;
 	}
 
 Example (VB)
@@ -90,21 +91,21 @@ Client app snippet (Universal Windows App):
 
 	Private Readonly Dim _httpClient As HttpClient = new HttpClient()
 
-	Private Async Sub SeeTheMicrosofts_Click(sender As Object, e As EventArgs)
+	Private Async Sub SeeTheDotNets_Click(sender As Object, e As RoutedEventArgs)
 
 	    ' Capture the task handle here so we can await it later.
-	    Dim getMicrosoftDotComHtmlTask As Task(Of String) = _httpClient.GetStringAsync("microsoft.com")
+	    Dim getDotNetFoundationHtmlTask As Task(Of String) = _httpClient.GetStringAsync("http://dotnetfoundation.org")
 
 	    ' Any other work on the UI thread can be done here, such as enabling a Progress Bar.
 	    NetworkProgressBar.IsEnabled = true
 	    NetworkProgressBar.Visibility = Visibility.Visible
 
-	    ' The await operator suspends SeeTheMicrosofts_Clicked, returning control to its caller.
+	    ' The await operator suspends SeeTheDotNets_Click, returning control to its caller.
 	    ' This is what allows the app to be responsive and not hang on the UI thread.
-	    Dim html As String = Await getMicrosoftDotComHtmlTask
-	    Dim count As Integer = Regex.Matches(html, "Microsoft").Count
+	    Dim html As String = Await getDotNetFoundationHtmlTask
+	    Dim count As Integer = Regex.Matches(html, ".NET").Count
 
-	    MicrosoftCountLabel.Text = $"Number of Microsofts on microsoft.com: {count}"
+	    DotNetCountLabel.Text = $"Number of .NETs on dotnetfoundation.com: {count}"
 
 	    NetworkProgressBar.IsEnabled = false
 	    NetworkProgressBar.Visbility = Visibility.Collapsed
@@ -117,26 +118,33 @@ Web Service snippet (ASP.NET MVC):
 	Private Readonly Dim _httpClient As HttpClient = new HttpClient()
 
 	<HttpGet>
-	Public Async Function MicrosoftCount() As Task(Of String)
+	<Route("MicrosoftCount")>
+	Public Async Function GetDotNetCountAsync() As Task(Of String)
 
-	    ' Suspends MicrosoftCount() to allow the caller (the web service) to accept another request,
+	    ' Suspends GetDotNetCountAsync() to allow the caller (the web server) to accept another request,
 	    ' rather than blocking on this one.
-	    Dim html As String = Await _httpClient.GetStringAsync("microsoft.com");
+	    Dim html As String = Await _httpClient.GetStringAsync("https://dotnetfoundation.org");
 
-	    Return Regex.Matches(html, "Microsoft").Count
+	    Return Regex.Matches(html, ".NET").Count
 	End Function
 
 More on Task and Task<T>
 ------------------------
 
-As mentioned before, Tasks are constructs used to represent operations which you will need to wait on to complete.  Although Tasks are general, the important context here is using them to represent an I/O operation.
+As mentioned before, Tasks are constructs used to represent operations which you will need to wait on to complete.
 
 * ``Task`` represents a single operation which does not return a value.
 * ``Task<T>`` represents a single operation which returns a value of type ``T``.
 
-It's important to reason about Tasks as abstractions of work to be done rather than threads, because in the context of asynchronous I/O they aren't threads at all!  Asynchronous .NET library calls essentially delegate work to the operating system, which is naturally asynchronous when I/O is performed.  Unless you write code using a Task to abstract the notion of a new thread (such as the ``Task.Run`` method), there will be no new thread spawned as a result of your async code.
+It's important to reason about Tasks of abstractions of work happening in the background, and *not* dedicated threads on the thread pool, because in the context of I/O-bound code, they aren't new threads at all!
 
-Tasks are awaitable, meaning that the application of the ``await`` keyword will allow your system to wait for the Task to complete without blocking the executing thread.  If you're using ``Task<T>``, the ``await`` keyword will additionally "unwrap" the value returned.
+Here's a short, 10,000 foot view of what happens with a typical async call:
+
+The call (such as ``GetStringAsync`` from ``HttpClient``) makes its way through the .NET libraries until it reaches a system interop call (such as ``P/Invoke`` on Windows).  This eventually makes the proper System API call (such as ``write`` to a socket file descriptor on Linux).  That System API call is then dealt with in the kernel, where the I/O request is sent to the proper subsystem.  Although details about scheduling the work on the appropriate device driver are different for each OS, eventually an "incomplete task" signal will be sent from the device driver, bubbling its way back up to the .NET runtime.  This will be converted into a ``Task`` or ``Task<T>`` by the runtime, sending that handle to the executing method which invoked the task in the first place.
+
+Although many details were glossed over (such as how "borrowing" compute time on a thread pool is coordinated), the important thing to recognize here is that **no thread is 100% dedicated to running the initiated task**.  This allows threads in the thread pool of a system to handle a larger volume of work rather than having to wait for I/O to finish.
+
+Tasks are awaitable, meaning that the use ``await`` will allow your application or service to perform useful work while the task is running by yielding control to its caller until the task is done.  If you're using ``Task<T>``, the ``await`` keyword will additionally "unwrap" the value returned when the Task is complete.
 
 Tasks are also used outside of the async programming model.  They are the foundation of the Task Parallel Library, which supports the parallelization of CPU-bound work via `Data Parallelism <https://msdn.microsoft.com/en-us/library/dd537608(v=vs.110).aspx>`_ and `Task Parallelism <https://msdn.microsoft.com/en-us/library/dd537609(v=vs.110).aspx>`_.
 
@@ -147,11 +155,7 @@ Although async programming is relatively straightforward, there are some details
 
 * **You should add "Async" as the suffix of every async method name you write.**
 
-This is the convention used in .NET to more-easily differentiate synchronous and asynchronous methods.  It's better to be explicit and follow that patter here!  Note that certain methods which aren't explicitly called by your code (such as event handlers or web controller methods) don't really apply.  Because these are not explicitly called by your code, being explicit about them isn't important.
-
-* ``await`` **is what will ultimately make your method asynchronous.**
-
-Failing to apply the ``await`` operator inside your async method will make it run synchronously and not wait for any Tasks it calls to finish!  Application of ``await`` waits for a Task you called to complete and suspends your async method, giving back control to the method which called it.  This allows that calling method to perform other work on the main thread of execution rather than forcing that thread to wait around and do nothing.  Pay attention to compiler warnings about this!
+This is the convention used in .NET to more-easily differentiate synchronous and asynchronous methods.  Note that certain methods which aren't explicitly called by your code (such as event handlers or web controller methods) don't necessarily apply.  Because these are not explicitly called by your code, being explicit about their naming isn't as important.
 
 * ``async void`` **should only be used for event handlers.**
 

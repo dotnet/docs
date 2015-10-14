@@ -4,11 +4,11 @@ By `Phillip Carter`_
 
 Async programming in F# can be accomplished through a language-level programming model designed to be easy to use and look just like any other F# code.
 
-At the center of it all is ``Async<'a>``, a representation of a task performed in an asynchronous context, where ``'a`` is the type returned by the expression when the ``return`` keyword is used.  The code used to represent this is known as an async block: ``async { expression }``.
+The core of async programming in F# is ``Async<'a>``, a representation work which can be executed to run in the background, where ``'a`` is the type returned via the special ``return`` keyword (or ``unit`` if the async workflow has no result to return).
 
-The key thing to understand here is that an async expression's type is ``Async<'a>``, which is merely a *specification* of work to be done in an asynchronous context.  It is not executed until you explicitly start it with one of the starting functions (such as ``Async.RunSynchronously``).  Although this is a different way of thinking about doing work, in practice it ends up being quite simple.
+The key concept to understand is that an async expression's type is ``Async<'a>``, which is merely a *specification* of work to be done in an asynchronous context.  It is not executed until you explicitly start it with one of the starting functions (such as ``Async.RunSynchronously``).  Although this is a different way of thinking about doing work, in practice it ends up being quite simple in practice.
 
-For example, say we wanted to download the HTML from microsoft.com without blocking the main thread.  One way to write it is like this:
+For example, say you wanted to download the HTML from dotnetfoundation.org without blocking the main thread. You can accomplish it like this:
 
 .. code-block:: c#
 
@@ -19,69 +19,29 @@ For example, say we wanted to download the HTML from microsoft.com without block
 	    return html
 	}
 
-	let html = "http://microsoft.com/" |> fetchHtmlAsync |> Async.RunSynchronously
+	let html = "http://dotnetfoundation.org" |> fetchHtmlAsync |> Async.RunSynchronously
 	printfn "%s" html
 
-And that's it!  Aside from the introduction of ``async``, ``let!``, and ``return``, this is just normal F# code.
+And that's it!  Aside from the use of ``async``, ``let!``, and ``return``, this is just normal F# code.
 
-There are a few syntactical elements to know before you can move forward:
+There are a few syntactical constructs which are worth understanding:
 
-* The body of an async expression is wrapped in an ``async{ ... }`` block of code.
 * ``let!`` binds the result of an async expression (which runs on another context).
-* ``use!`` works just like let, but disposes the resource when it goes out of scope.
+* ``use!`` works just like ``let!``, but disposes its bound resources when it goes out of scope.
 * ``do!`` will await an async workflow which doesn't return anything.
 * ``return`` simply returns a result from an async expression.
-* ``return!`` executes an async workflow and returns its return value as a result.
+* ``return!`` executes another async workflow and returns its return value as a result.
 
 Normal ``let``, ``use``, and ``do`` keywords can be used alongside the async versions just as they would in a normal function.
 
 How to start Async Code in F#
 -----------------------------
 
-As mentioned earlier, async code is really just a specification of work to be done in another context which needs to be explicitly started somewhere.  These are two primary was to accomplish this:
+As mentioned earlier, async code is a specification of work to be done in another context which needs to be explicitly started.  These are two primary ways to accomplish this:
 
-1. ``Async.RunSynchronously`` will start an async job on another thread and await its result.
-
-.. code-block:: c#
-
-	let myFunction =
-	    // Execution of myFunction will pause until fooAsync finishes
-	    let result = Async.RunSynchronously (fooAsync x y)
-
-	    // you actually have the result from fooAsync now!
-	    printfn "%A" result
-
-2. ``Async.Start`` will start an async job on another thread, and will **not** await its result.
+1. ``Async.RunSynchronously`` will start an async workflow on another thread and await its result.
 
 .. code-block:: c#
-
-	let myFunction =
-	    // Exeuction of myFunction will continue after calling this
-	    Async.Run (barAsync x)
-
-	    printfn "%s" "barAsync is running in the background..."
-
-There are other, less general ways to start an async workflow also available.  They are detailed `in the MSDN reference docs <https://msdn.microsoft.com/en-us/library/ee370232.aspx>`_.
-
-A Note on Threads
-^^^^^^^^^^^^^^^^^
-
-The phrase "on another thread" is mentioned above, but it is important to know that **this does not mean that async workflows are run on a newly spun-up thread**.  The workflow actually "jumps" between threads, borrowing them for a small amount of time to do useful work.  When an async workflow is effectively "waiting" (e.g. waiting for a network call to return something), any thread it was borrowing at the time is freed up to go do useful work on something else.  This allows async workflows to utilize the system as effectively as possible, and makes them especially strong for performing significant amounts of I/O.
-
-How to Add Parallelism to Async Code
-------------------------------------
-
-Sometimes there is a need to perform multiple non-blocking asynchronous jobs in parallel, collect their results, and interpret them in some way.  ``Async.Parallel`` offers a way to do this without needing to use the Task Parallel Library (which would involve needing to coordinate ``Async<'a>`` and ``Task<T>`` types somehow).
-
-The following example will use ``Async.Parallel`` to download the HTML from four popular sites in parallel, wait for those tasks to complete, and then print the HTML which was downloaded.
-
-.. code-block:: c#
-
-	let urlList = [
-	    "http://www.microsoft.com/"
-	    "http://www.google.com/"
-	    "http://www.amazon.com/"
-	    "http://www.facebook.com/" ]
 
 	let fetchHtmlAsync url = async {
 	    let uri = new System.Uri(url)
@@ -90,10 +50,64 @@ The following example will use ``Async.Parallel`` to download the HTML from four
 	    return html
 	}
 
-	let htmlList = urlList
-	               |> Seq.map fetchHtmlAsync // Build an Async<'a> for each site
-	               |> Async.Parallel         // Partition each Async<'a> across different threads
-	               |> Async.RunSynchronously // Run each Async<'a> and do a non-blocking wait
+	// Execution of fetchHtmlAsync will pause until fooAsync finishes
+	let html = "http://dotnetfoundation.org" |> fetchHtmlAsync |> Async.RunSynchronously
+
+	// you actually have the result from fooAsync now!
+	printfn "%A" html
+
+2. ``Async.Start`` will start an async workflow on another thread, and will **not** await its result.
+
+.. code-block:: c#
+
+	let uploadDataAsync url data = async {
+	    let uri = new System.Uri(url)
+	    let webClient = new System.Net.WebClient()
+	    webClient.UploadStringAsync(uri, data)
+	}
+
+	let workflow = uploadDataAsync "http://url-to-upload-to.com" "hello, world!"
+
+	// Execution will continue after calling this
+	Async.Run(workflow)
+
+	printfn "%s" "uploadDataAsync is running in the background..."
+
+There are other ways to start an async workflow available for more specific scenarios.  They are detailed `in the Async reference <https://msdn.microsoft.com/en-us/library/ee370232.aspx>`_.
+
+A Note on Threads
+^^^^^^^^^^^^^^^^^
+
+The phrase "on another thread" is mentioned above, but it is important to know that **this does not mean that async workflows are a facade for multithreading**.  The workflow actually "jumps" between threads, borrowing them for a small amount of time to do useful work.  When an async workflow is effectively "waiting" (e.g. waiting for a network call to return something), any thread it was borrowing at the time is freed up to go do useful work on something else.  This allows async workflows to utilize the system they run on as effectively as possible, and makes them especially strong for high-volume I/O scenarios.
+
+How to Add Parallelism to Async Code
+------------------------------------
+
+Sometimes you may need to perform multiple non-blocking asynchronous jobs in parallel, collect their results, and interpret them in some way.  ``Async.Parallel`` allows you to do this without needing to use the Task Parallel Library, which would involve needing to coerce ``Task<'a>`` and ``Async<'a>`` types.
+
+The following example will use ``Async.Parallel`` to download the HTML from four popular sites in parallel, wait for those tasks to complete, and then print the HTML which was downloaded.
+
+.. code-block:: c#
+
+	let urlList = [
+	    "http://www.microsoft.com"
+	    "http://www.google.com"
+	    "http://www.amazon.com"
+	    "http://www.facebook.com" ]
+
+	let fetchHtmlAsync url = async {
+	    let uri = new System.Uri(url)
+	    let webClient = new System.Net.WebClient()
+	    let! html = webClient.AsyncDownloadString(uri)
+	    return html
+	}
+
+	let getHtmlList =
+	    Seq.map fetchHtmlAsync    // Build an Async<'a> for each site
+	    >> Async.Parallel         // Partition each Async<'a> across different threads
+	    >> Async.RunSynchronously // Run each Async<'a> and do a non-blocking wait
+
+	let htmlList = urlList |> getHtmlList
 
 	// We now have the downloaded HTML for each site!
 	for html in htmlList do
@@ -166,10 +180,18 @@ Example:
 
 .. code-block:: c#
 
-	let token = new CancellationTokenSource()
-	Async.Start (barAsync x, token)
+	let uploadDataAsync url data = async {
+	    let uri = new System.Uri(url)
+	    let webClient = new System.Net.WebClient()
+	    webClient.UploadStringAsync(uri, data)
+	}
 
-	// Immediately cancel barAsync after it's been started.
+	let workflow = uploadDataAsync "http://url-to-upload-to.com" "hello, world!"
+
+	let token = new CancellationTokenSource()
+	Async.Start (workflow, token)
+
+	// Immediately cancel uploadDataAsync after it's been started.
 	token.Cancel()
 
 And that's it!

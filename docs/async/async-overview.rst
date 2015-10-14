@@ -6,7 +6,7 @@ Modern apps are expected to be responsive and modern services are expected to be
 * Client applications are expected to be always-on and always-connected, but also keep the UI free for the user to interact with.
 * Services are expected to handle spikes in traffic by gracefully scaling up and down.
 
-.NET provides the capability for apps and services to be responsive and elastic with easy-to-use, language-level asynchronous programming models in C#/VB and F#.
+.NET provides the capability for apps and services to be responsive and elastic with easy-to-use, language-level asynchronous programming models in C#, VB, and F#.
 
 Why Write Async Code?
 ---------------------

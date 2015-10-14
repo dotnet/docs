@@ -17,26 +17,25 @@ Library developers often target one of more .NET platforms. The following table 
 +======================+======+=====+
 | .NET Core            | x    | x   |
 +----------------------+------+-----+
-| .NET Framework 3.5   |      |     |
-+----------------------+------+-----+
-| .NET Framework 4.0   |      | x   |
-+----------------------+------+-----+
-| .NET Framework 4.5.x | x    | x   |
-+----------------------+------+-----+
-| .NET Framework 4.6.x | x    | x   |
-+----------------------+------+-----+
-| DNX Core 50          | x    |     |
-+----------------------+------+-----+
-| Silverlight          |      | x   |
+| DNX Core 50          | x    | x   |
 +----------------------+------+-----+
 | UWP 10               | x    | x   |
 +----------------------+------+-----+
-| WPS 8.x              | x    | x   |
+| .NET Framework 4.5+  | x    | x   |
 +----------------------+------+-----+
 | WP 8.1               | x    | x   |
 +----------------------+------+-----+
+| WPS 8.x              | x    | x   |
++----------------------+------+-----+
 | Xamarin.*            |      | x   |
 +----------------------+------+-----+
+| Mono                 |      | x   |
++----------------------+------+-----+
+| Silverlight          |      | x   |
++----------------------+------+-----+
+| .NET Framework 3.5   |      |     |
++----------------------+------+-----+
+
 
 You can target .NET Core or PCL if they support all of the platforms that you intend to target. .NET Core potentially exposes more APIs, so if you have the option of targeting it, it is a better choice. If you cannot target .NET Core or PCL for the platforms you need, you'll need to cross-compile with #ifdefs, which is an advanced option that will be described in more detail later.
 

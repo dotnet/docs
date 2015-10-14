@@ -1,8 +1,7 @@
 .. include:: /stub-topic.txt
 
-|stub-icon| Global.json Reference
+|stub-icon| Introduction to NuGet
 =================================
 
 .. include:: /stub-notice.txt
 
-.. _issue: https://github.com/aspnet/Docs/issues/54

@@ -1,8 +1,7 @@
 .. include:: /stub-topic.txt
 
-|stub-icon| Compilation
+|stub-icon| Using NuGet 
 =======================
 
 .. include:: /stub-notice.txt
 
-.. _issue: https://github.com/aspnet/Docs/issues/199

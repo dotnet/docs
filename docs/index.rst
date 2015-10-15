@@ -18,7 +18,6 @@ Topics
    concepts/index
    tutorials-samples/index
    development/index
-   dnx/index
    porting/index
    packaging/index
    deployment/index

@@ -258,7 +258,7 @@ Unsafe Code
 ^^^^^^^^^^^
 
 The CLR enables the ability to access native memory and do pointer
-arithmetic via ``unsafe`` code. These operations are needed for certain algorithms and system interoperability.  Although powerful, use of unsafe code is discouraged unless it is necessary to interop with system APIs or implement the most efficient algorithm.  Unsafe code may not predictably run in all environments, and also loses the benefits of a garbage collector and type safety.  It's recommended to confine unsafe code as much as possible, and test that code thoroughly.
+arithmetic via ``unsafe`` code. These operations are needed for certain algorithms and system interoperability.  Although powerful, use of unsafe code is discouraged unless it is necessary to interop with system APIs or implement the most efficient algorithm.  Unsafe code may not execute the same way in different environments, and also loses the benefits of a garbage collector and type safety.  It's recommended to confine and centralize unsafe code as much as possible, and test that code thoroughly.
 
 The ``ToString()`` method from the `StringBuilder class <https://github.com/dotnet/coreclr/blob/master/src/mscorlib/src/System/Text/StringBuilder.cs#L327>`_. illustrates how using ``unsafe`` code can efficiently implement an algorithm by moving around chunks of memory directly:
 

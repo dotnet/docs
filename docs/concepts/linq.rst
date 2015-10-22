@@ -130,7 +130,8 @@ The following is a quick demonstration of some of the essential pieces of LINQ. 
 	                select dog.TurnIntoACat();
 
 	// Summing then lengths of a set of strings
-	int sumOfStrings = strings.Aggregate((s1, s2) => s1.Length + s2.Length);
+	int seed = 0;
+	int sumOfStrings = strings.Aggregate(seed, (s1, s2) => s1.Length + s2.Length);
 
 * Flattening a list of lists:
 

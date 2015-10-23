@@ -24,6 +24,7 @@ Topics
    nuget/index
    languages/index
    bcl/index
+   async/async-index
    advanced/index
 
 Related resources

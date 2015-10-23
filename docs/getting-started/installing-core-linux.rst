@@ -162,7 +162,7 @@ You are now ready to run your app under .NET Core. As you can guess, however, be
 .. code-block:: console
 
     dnvm use 1.0.0-beta5-11649 -r coreclr
-    dnx . run
+    dnx run
 
     Hello, Linux
     Love from CoreCLR.

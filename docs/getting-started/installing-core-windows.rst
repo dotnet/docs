@@ -125,7 +125,7 @@ You can run your app with the DNX command.
 
 .. code-block:: console
 
-    dnx . run
+    dnx run
 
 This will instruct the currently active DNX to run your app. Note that you didn't need to actually build the code; DNX will take care of this for you.
 

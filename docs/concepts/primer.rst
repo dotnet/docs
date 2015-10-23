@@ -42,8 +42,8 @@ As any mature and advanced application development framework, .NET has many powe
 * The managed compiler
 * `Delegates and lambdas`_
 * `Generic Types (Generics)`_
+* `Async Programming`_
 * `Language Integrated Query (LINQ)`_
-* Asynchronous support
 * Dynamic language features
 * Code contracts
 * `Native interoperability`_
@@ -190,29 +190,10 @@ Read more about it in the :doc:`generics` document.
 Async Programming
 ^^^^^^^^^^^^^^^^^
 
-Async is a first-class concept within .NET, with async support in the
-runtime, the framework libraries and various .NET languages. Async is
-based off of the ``Task`` concept, which encapsulates a set of
-operations to be completed. Tasks are distinct from threads and may not
-rely on threads or require CPU time much at all, particularly for
-I/O-bound tasks.
+Async programming is a first-class concept within .NET, with async support in the
+runtime, the framework libraries, and .NET language constructs.  Internally, they are based off of the ``Task`` object and API, which takes advantage of the operating system to perform I/O-bound jobs as efficiently as possible.
 
-TODO: Elaborate on Task concept.
-
-C# includes special treatment for async, including the special keyword
-``await`` for managing tasks. The following example demonstrates calling
-a web endpoint as an async operation.
-
-::
-
-    string url = "http://someUrl";
-    HttpClient client = new HttpClient();
-    string json = await client.GetStringAsync(url);
-
-The call to ``client.GetStringAsync(url)`` does not block, but instead
-immediately yields by returning a ``Task``. Computation resumes and the
-call returns the requested string when the network activity has
-completed.
+To learn more about async programming in .NET, start with the :doc:`../../async/async-overview`.
 
 Language Integrated Query (LINQ)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -234,29 +215,29 @@ TODO: finish section
 Native Interoperability
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Every operating system in current use provides a lot of platform support for 
-various programming tasks. .NET provides several ways to tap into those APIs. 
-Collectively, this support is called "native interoperability" and in this 
-section we will take a look at how to access native APIs from managed, .NET 
-code. 
+Every operating system in current use provides a lot of platform support for
+various programming tasks. .NET provides several ways to tap into those APIs.
+Collectively, this support is called "native interoperability" and in this
+section we will take a look at how to access native APIs from managed, .NET
+code.
 
-The main way to do native interoperability is via "platform invoke" or P/Invoke 
-for short. This support in .NET Core is available across Linux and Windows 
-platforms. Another, Windows-only way of doing native interoperability is known 
-as "COM interop". It's main goal is to allow using 
+The main way to do native interoperability is via "platform invoke" or P/Invoke
+for short. This support in .NET Core is available across Linux and Windows
+platforms. Another, Windows-only way of doing native interoperability is known
+as "COM interop". It's main goal is to allow using
 `COM components <https://msdn.microsoft.com/en-us/library/bwa2bx93.aspx>`_
-in managed code. It is built on top of P/Invoke infrastructure, but it works in 
-subtly different ways. 
+in managed code. It is built on top of P/Invoke infrastructure, but it works in
+subtly different ways.
 
-Most of Mono's (and thus Xamarin's) interoperability support for Java and 
-Objective-C are built similarly, that is, they use the same principles. 
+Most of Mono's (and thus Xamarin's) interoperability support for Java and
+Objective-C are built similarly, that is, they use the same principles.
 
-Read more about it in the :doc:`native-interop` document. 
+Read more about it in the :doc:`native-interop` document.
 
 Notes
 -----
 
-The term ".NET runtime" is used throughout the document to accomodate
+The term ".NET runtime" is used throughout the document to accommodate
 for the multiple implementations of .NET, such as CLR, Mono, IL2CPP and
 others. The more specific names are only used if needed.
 

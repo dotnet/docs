@@ -47,6 +47,7 @@ As any mature and advanced application development framework, .NET has many powe
 * Dynamic language features
 * Code contracts
 * `Native interoperability`_
+* `Unsafe Code`_
 
 
 Automatic memory management
@@ -234,29 +235,79 @@ TODO: finish section
 Native Interoperability
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Every operating system in current use provides a lot of platform support for 
-various programming tasks. .NET provides several ways to tap into those APIs. 
-Collectively, this support is called "native interoperability" and in this 
-section we will take a look at how to access native APIs from managed, .NET 
-code. 
+Every operating system in current use provides a lot of platform support for
+various programming tasks. .NET provides several ways to tap into those APIs.
+Collectively, this support is called "native interoperability" and in this
+section we will take a look at how to access native APIs from managed, .NET
+code.
 
-The main way to do native interoperability is via "platform invoke" or P/Invoke 
-for short. This support in .NET Core is available across Linux and Windows 
-platforms. Another, Windows-only way of doing native interoperability is known 
-as "COM interop". It's main goal is to allow using 
+The main way to do native interoperability is via "platform invoke" or P/Invoke
+for short. This support in .NET Core is available across Linux and Windows
+platforms. Another, Windows-only way of doing native interoperability is known
+as "COM interop". It's main goal is to allow using
 `COM components <https://msdn.microsoft.com/en-us/library/bwa2bx93.aspx>`_
-in managed code. It is built on top of P/Invoke infrastructure, but it works in 
-subtly different ways. 
+in managed code. It is built on top of P/Invoke infrastructure, but it works in
+subtly different ways.
 
-Most of Mono's (and thus Xamarin's) interoperability support for Java and 
-Objective-C are built similarly, that is, they use the same principles. 
+Most of Mono's (and thus Xamarin's) interoperability support for Java and
+Objective-C are built similarly, that is, they use the same principles.
 
-Read more about it in the :doc:`native-interop` document. 
+Read more about it in the :doc:`native-interop` document.
+
+Unsafe Code
+^^^^^^^^^^^
+
+The CLR enables the ability to access native memory and do pointer
+arithmetic via ``unsafe`` code. These operations are needed for certain algorithms and system interoperability.  Although powerful, use of unsafe code is discouraged unless it is necessary to interop with system APIs or implement the most efficient algorithm.  Unsafe code may not execute the same way in different environments, and also loses the benefits of a garbage collector and type safety.  It's recommended to confine and centralize unsafe code as much as possible, and test that code thoroughly.
+
+The ``ToString()`` method from the `StringBuilder class <https://github.com/dotnet/coreclr/blob/master/src/mscorlib/src/System/Text/StringBuilder.cs#L327>`_. illustrates how using ``unsafe`` code can efficiently implement an algorithm by moving around chunks of memory directly:
+
+.. code-block:: c#
+
+  public override String ToString() {
+            Contract.Ensures(Contract.Result<String>() != null);
+
+            VerifyClassInvariant();
+
+            if (Length == 0)
+                return String.Empty;
+
+            string ret = string.FastAllocateString(Length);
+            StringBuilder chunk = this;
+            unsafe {
+                fixed (char* destinationPtr = ret)
+                {
+                    do
+                    {
+                        if (chunk.m_ChunkLength > 0)
+                        {
+                            // Copy these into local variables so that they are stable even in the presence of ----s (hackers might do this)
+                            char[] sourceArray = chunk.m_ChunkChars;
+                            int chunkOffset = chunk.m_ChunkOffset;
+                            int chunkLength = chunk.m_ChunkLength;
+
+                            // Check that we will not overrun our boundaries.
+                            if ((uint)(chunkLength + chunkOffset) <= ret.Length && (uint)chunkLength <= (uint)sourceArray.Length)
+                            {
+                                fixed (char* sourcePtr = sourceArray)
+                                    string.wstrcpy(destinationPtr + chunkOffset, sourcePtr, chunkLength);
+                            }
+                            else
+                            {
+                                throw new ArgumentOutOfRangeException("chunkLength", Environment.GetResourceString("ArgumentOutOfRange_Index"));
+                            }
+                        }
+                        chunk = chunk.m_ChunkPrevious;
+                    } while (chunk != null);
+                }
+            }
+            return ret;
+        }
 
 Notes
 -----
 
-The term ".NET runtime" is used throughout the document to accomodate
+The term ".NET runtime" is used throughout the document to accommodate
 for the multiple implementations of .NET, such as CLR, Mono, IL2CPP and
 others. The more specific names are only used if needed.
 

@@ -38,8 +38,7 @@ _build/html/index.html file to view the generated documentation.
 
 If contributing new documentation content, please review:
 
-- the [Sphinx Style Guide](http://documentation-style-guide-sphinx.readthedocs.
-	org/en/latest/style-guide.html)
+- the [Sphinx Style Guide](http://documentation-style-guide-sphinx.readthedocs.org/en/latest/style-guide.html)
 
 ## Adding Content ##
 

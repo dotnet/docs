@@ -42,11 +42,12 @@ As any mature and advanced application development framework, .NET has many powe
 * The managed compiler
 * `Delegates and lambdas`_
 * `Generic Types (Generics)`_
-* LINQ
-* Asynchronous support
+* `Language Integrated Query (LINQ)`_
+* `Async Programming`_
 * Dynamic language features
 * Code contracts
-* Native interoperability
+* `Native interoperability`_
+* `Unsafe Code`_
 
 
 Automatic memory management
@@ -190,45 +191,17 @@ Read more about it in the :doc:`generics` document.
 Async Programming
 ^^^^^^^^^^^^^^^^^
 
-Async is a first-class concept within .NET, with async support in the
-runtime, the framework libraries and various .NET languages. Async is
-based off of the ``Task`` concept, which encapsulates a set of
-operations to be completed. Tasks are distinct from threads and may not
-rely on threads or require CPU time much at all, particularly for
-I/O-bound tasks.
+Async programming is a first-class concept within .NET, with async support in the
+runtime, the framework libraries, and .NET language constructs.  Internally, they are based off of objects (such as ``Task``) which take advantage of the operating system to perform I/O-bound jobs as efficiently as possible.
 
-TODO: Elaborate on Task concept.
-
-C# includes special treatment for async, including the special keyword
-``await`` for managing tasks. The following example demonstrates calling
-a web endpoint as an async operation.
-
-::
-
-    string url = "http://someUrl";
-    HttpClient client = new HttpClient();
-    string json = await client.GetStringAsync(url);
-
-The call to ``client.GetStringAsync(url)`` does not block, but instead
-immediately yields by returning a ``Task``. Computation resumes and the
-call returns the requested string when the network activity has
-completed.
+To learn more about async programming in .NET, start with the :doc:`../../async/async-overview`.
 
 Language Integrated Query (LINQ)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.NET programs typically operate on some form of data. The data can be
-database-resident or in the form of objects (sometimes called POCOs for
-"Plain Old CLR Objects"). LINQ provides a language-integrated uniform
-query model over data, independent of the source. Linq providers bridge
-the gap between the uniform query model and the form of the data, such
-as SQL Server tables, XML documents, standard collections like List and
-more.
+LINQ is a powerful set of features for C# and VB that allow you to write simple, declarative code for operating on data.  The data can be in many forms (such as in-memory objects, in a SQL database, or an XML document), but the LINQ code you write typically won't look different for each data source!
 
-The follow examples demonstrate various uses of LINQ to query different
-forms of data.
-
-TODO: finish the section, link to a more detailed document.
+To learn more and see some samples, check out :doc:`linq`.
 
 Dynamic language features
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -243,34 +216,79 @@ TODO: finish section
 Native Interoperability
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-.NET provides low-level access to native APIs via the platform invoke or
-P/Invoke facility. It enables a mapping of .NET types to native types,
-which the .NET runtime marshalls before calling the native API.
+Every operating system in current use provides a lot of platform support for
+various programming tasks. .NET provides several ways to tap into those APIs.
+Collectively, this support is called "native interoperability" and in this
+section we will take a look at how to access native APIs from managed, .NET
+code.
 
-TODO: Examples.
+The main way to do native interoperability is via "platform invoke" or P/Invoke
+for short. This support in .NET Core is available across Linux and Windows
+platforms. Another, Windows-only way of doing native interoperability is known
+as "COM interop". It's main goal is to allow using
+`COM components <https://msdn.microsoft.com/en-us/library/bwa2bx93.aspx>`_
+in managed code. It is built on top of P/Invoke infrastructure, but it works in
+subtly different ways.
 
-Higher-level native interop can be established with P/Invoke. The COM
-and WinRT interop systems in the CLR are both built on top of P/Invoke.
-The Java and Objective-C interop systems provided by Xamarin on top of
-Mono are fundamentally the same.
+Most of Mono's (and thus Xamarin's) interoperability support for Java and
+Objective-C are built similarly, that is, they use the same principles.
+
+Read more about it in the :doc:`native-interop` document.
 
 Unsafe Code
-~~~~~~~~~~~
+^^^^^^^^^^^
 
-The CLR enables the ability to acccess native memory and do pointer
-arithmetic. These operations are needed for some algortithms and for
-calling some native APIs. The use of these capabilities is discouraged,
-since you no longer get the benefit of verifiability, nor will your code
-be allowed to run in all environments. The best practice is to confine
-unsafe code as much as possible and that the vast majority of code is
-type-safe.
+The CLR enables the ability to access native memory and do pointer
+arithmetic via ``unsafe`` code. These operations are needed for certain algorithms and system interoperability.  Although powerful, use of unsafe code is discouraged unless it is necessary to interop with system APIs or implement the most efficient algorithm.  Unsafe code may not execute the same way in different environments, and also loses the benefits of a garbage collector and type safety.  It's recommended to confine and centralize unsafe code as much as possible, and test that code thoroughly.
 
-TODO: Examples.
+The ``ToString()`` method from the `StringBuilder class <https://github.com/dotnet/coreclr/blob/master/src/mscorlib/src/System/Text/StringBuilder.cs#L327>`_. illustrates how using ``unsafe`` code can efficiently implement an algorithm by moving around chunks of memory directly:
+
+.. code-block:: c#
+
+  public override String ToString() {
+            Contract.Ensures(Contract.Result<String>() != null);
+
+            VerifyClassInvariant();
+
+            if (Length == 0)
+                return String.Empty;
+
+            string ret = string.FastAllocateString(Length);
+            StringBuilder chunk = this;
+            unsafe {
+                fixed (char* destinationPtr = ret)
+                {
+                    do
+                    {
+                        if (chunk.m_ChunkLength > 0)
+                        {
+                            // Copy these into local variables so that they are stable even in the presence of ----s (hackers might do this)
+                            char[] sourceArray = chunk.m_ChunkChars;
+                            int chunkOffset = chunk.m_ChunkOffset;
+                            int chunkLength = chunk.m_ChunkLength;
+
+                            // Check that we will not overrun our boundaries.
+                            if ((uint)(chunkLength + chunkOffset) <= ret.Length && (uint)chunkLength <= (uint)sourceArray.Length)
+                            {
+                                fixed (char* sourcePtr = sourceArray)
+                                    string.wstrcpy(destinationPtr + chunkOffset, sourcePtr, chunkLength);
+                            }
+                            else
+                            {
+                                throw new ArgumentOutOfRangeException("chunkLength", Environment.GetResourceString("ArgumentOutOfRange_Index"));
+                            }
+                        }
+                        chunk = chunk.m_ChunkPrevious;
+                    } while (chunk != null);
+                }
+            }
+            return ret;
+        }
 
 Notes
 -----
 
-The term ".NET runtime" is used throughout the document to accomodate
+The term ".NET runtime" is used throughout the document to accommodate
 for the multiple implementations of .NET, such as CLR, Mono, IL2CPP and
 others. The more specific names are only used if needed.
 

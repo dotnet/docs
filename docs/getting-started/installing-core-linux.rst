@@ -26,14 +26,6 @@ Install the ``libunwind8``, ``libssl-dev`` and ``unzip`` packages:
 
     sudo apt-get install libunwind8 libssl-dev unzip
 
-You also need a latest version of Mono, which is required for DNX tooling. This is a temporary requirement, and will not be required in the future.
-
-.. code-block:: console
-
-    sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
-    echo "deb http://download.mono-project.com/repo/debian wheezy main" | sudo tee /etc/apt/sources.list.d/mono-xamarin.list
-    sudo apt-get update
-    sudo apt-get install mono-complete
 
 Certificates
 ^^^^^^^^^^^^
@@ -56,17 +48,7 @@ You need DNVM as a starting point. DNVM enables you to acquire one or multiple .
 Installing the .NET Core DNX
 ----------------------------
 
-You first need to acquire the Mono DNX. It doesn't include Mono, but is
-needed to use the DNX tools on top of Mono. In particular, the DNU
-command is not yet supported on .NET Core, requiring us to use Mono for
-this purpose (until DNU runs on .NET Core). Mono is the default DNX, so
-you can acquire it via ``dnvm upgrade``.
-
-.. code-block:: console
-
-    dnvm upgrade -u
-
-Next, acquire the .NET Core DNX SDK.
+You first need to acquire the CoreCLR DNX.
 
 .. code-block:: console
 
@@ -83,7 +65,6 @@ You can see the currently installed DNX versions with ``dnvm list``.
     Active Version              Runtime Arch Location             Alias
     ------ -------              ------- ---- --------             -----
       *    1.0.0-beta5-11649    coreclr x64  ~/.dnx/runtimes
-           1.0.0-beta5-11649    mono         ~/.dnx/runtimes      default
 
 Using a specific runtime
 ------------------------
@@ -101,7 +82,6 @@ You can choose which of the installed DNXs you want to use with ``dnvm use``, sp
     Active Version              Runtime Arch Location             Alias
     ------ -------              ------- ---- --------             -----
       *    1.0.0-beta5-11649    coreclr x64  ~/.dnx/runtimes
-           1.0.0-beta5-11649    mono         ~/.dnx/runtimes      default
 
 See the asterisk in the listing above? It's purpose is to tell you which runtime is now active. "Active" here means that all of the interaction with your projects and .NET Core will use this runtime.
 
@@ -149,20 +129,12 @@ Run your App
 ------------
 
 You need to restore packages for your app, based on your project.json,
-with ``dnu restore``. You will need to run this command under the Mono
-DNX. The first command switches the active runtime to the Mono one.
+with ``dnu restore``.
 
 .. code-block:: console
 
-    dnvm use 1.0.0-beta5-11649 -r mono
     dnu restore
-
-You are now ready to run your app under .NET Core. As you can guess, however, before you do that you first need to switch to the .NET Core runtime. The first command below does exactly that.
-
-.. code-block:: console
-
-    dnvm use 1.0.0-beta5-11649 -r coreclr
-    dnx . run
+    dnx run
 
     Hello, Linux
     Love from CoreCLR.

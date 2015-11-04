@@ -1,7 +1,14 @@
-using System;
 using System.Linq;
+using System;
 
 namespace Restriction
 {
-	// TODO write some code
+    public class WhereSample1
+    {
+        
+        	public static void Main(string[] args){
+        		Console.WriteLine("Hello World from Core CLR!");
+        	}
+        
+    }
 }

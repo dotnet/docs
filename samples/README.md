@@ -43,11 +43,10 @@ To create a sample:
         }
     }
 ```
-
 To to build and run your sample...
 
 5. Grab the latest coreclr:
- ```    
+```    
 	dnvm upgrade latest -r coreclr -u
 ```	
 6. Go to the sample forlder and Build to check for errors. 

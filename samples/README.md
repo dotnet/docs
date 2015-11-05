@@ -16,8 +16,8 @@ To create a sample:
 1. File an [issue](https://github.com/dotnet/core-docs/issues) or add a comment to an existing one that your working on it
 2. For each set of samples that demonstrate a concept, add a project.json with your dependencies and target coreclr:
 
-    
-	{ 
+ ```
+ 	{ 
 		"dependencies": {
 		    "System.Runtime":"4.0.0-rc1-*",
 		    "System.Linq":"4.0.0-rc1-*",
@@ -27,11 +27,12 @@ To create a sample:
 		    "dnxcore50":{}
 	    }
     }
+```
 
 3. Write your sample. ex. WhereClause-Sample1.cs
 4. Create a program.cs with a Main entry point that calls your samples. If there is already one there, add the call to your sample:
 
-
+```
     public class Program
     {
         public void Main(string[] args)
@@ -41,20 +42,19 @@ To create a sample:
             sample.MethodSyntaxExample();
         }
     }
+```
 
 To to build and run your sample...
 
-3. Grab the latest coreclr:
-   
-    
+5. Grab the latest coreclr:
+ ```    
 	dnvm upgrade latest -r coreclr -u
-	
-4. Go to the sample forlder and Build to check for errors. 
-
-
+```	
+6. Go to the sample forlder and Build to check for errors. 
+```
     dnu build
-	
-5. Run!
-
-
+```	
+7. Run!
+```
     dnx run
+```	

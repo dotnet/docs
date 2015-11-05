@@ -7,6 +7,5 @@ public class Program
             
             var sample2 = new Aggregate.AggregateSample2();
             sample2.MethodSyntaxExample();
-            
         }
     }

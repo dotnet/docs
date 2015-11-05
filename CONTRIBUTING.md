@@ -126,5 +126,29 @@ Sample projects are also broken up by language.  Here is an example general stru
       /vb
       /fsharp
 ```
+When readying a sample project, please verify that it is runnable and testable.
 
-When readying a sample project, please verify that it is runnable and testable.  To do this, target `dnxcore50` in your `project.json` file for both your project and test project.  The sample should be run with the `dnx run` command and tested with the `dnx test` command.
+To do this, 
+
+1. Ensure you are running on CoreClr with the latest version of DNX:
+
+    ```
+    $ dnvm install latest -r coreclr -u
+    ``` 
+
+2. Ensure you are targeting DNX Core 5 in your `project.json` file:
+
+    ```
+    {
+        "frameworks:{
+            "dnxcore50":{}
+        }
+    }
+    ```
+
+3. Ensure you can run your sample:
+
+    ```
+    $ cd path-to-sample
+    $ dnx run
+    ```

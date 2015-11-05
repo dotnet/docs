@@ -102,7 +102,7 @@ contributing to .NET Core documentation.
 
 Samples should be:
 
-1. Individual, buildable projects
+1. Individual, buildable, and runnable Console apps
 2. Fully cross-platform and not dependent on Windows or Visual Studio
 3. Tested using Xunit with the Xunit commandline test runner
 
@@ -126,3 +126,5 @@ Sample projects are also broken up by language.  Here is an example general stru
       /vb
       /fsharp
 ```
+
+When readying a sample project, please verify that it is runnable and testable.  To do this, target `dnxcore50` in your `project.json` file for both your project and test project.  The sample should be run with the `dnx run` command and tested with the `dnx test` command.

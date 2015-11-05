@@ -21,7 +21,7 @@ To create a sample:
 		"dependencies": {
 		    "System.Runtime":"4.0.0-rc1-*",
 		    "System.Linq":"4.0.0-rc1-*",
-		    "System.Console": "4.0.0-rc1-*"
+		    "System.Console": "4.0.0-beta-*"
 	    },
 	    "frameworks": {
 		    "dnxcore50":{}

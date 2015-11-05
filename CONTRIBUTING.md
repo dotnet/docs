@@ -97,3 +97,32 @@ contributing to .NET Core documentation.
 - Don't update or `merge` your branch after you submit your pull request
 - If updating code samples in `/samples/`, be sure any line number references
 	in your article remain correct
+
+## Contributing to Samples
+
+Samples should be:
+
+1. Individual, buildable projects
+2. Fully cross-platform and not dependent on Windows or Visual Studio
+3. Tested using Xunit with the Xunit commandline test runner
+
+People should be able to download, build, run, and test the samples on Mac, Linux, or Windows.
+
+To learn about how to build and test new sample projects, see the .NET Class Library Manual (LINK NEEDED).
+
+Sample projects are also broken up by language.  Here is an example general structure:
+
+```
+/samples
+   /concept-to-sample
+      /csharp
+         global.json
+         /src
+            File1.cs
+            project.json
+         /test
+            Test1.cs
+            project.json
+      /vb
+      /fsharp
+```

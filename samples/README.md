@@ -12,6 +12,7 @@ If you wish to add a code sample:
 We will eventually have a CI system in place to build these projects.
 
 To create a sample:
+
 1. File an [issue](https://github.com/dotnet/core-docs/issues) or add a comment to an existing one that your working on it
 2. For each set of samples that demonstrate a concept, add a project.json with your dependencies and target coreclr:
 
@@ -41,7 +42,8 @@ To create a sample:
         }
     }
 
-To to build and run your sample
+To to build and run your sample...
+
 3. Grab the latest coreclr:
    
     

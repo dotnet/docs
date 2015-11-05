@@ -30,7 +30,7 @@ To create a sample:
 ```
 
 3. Write your sample. ex. WhereClause-Sample1.cs
-4. Create a program.cs with a Main entry point that calls your samples. If there is already one there, add the call to your sample:
+4. Create a Program.cs with a Main entry point that calls your samples. If there is already one there, add the call to your sample:
 
 ```
     public class Program

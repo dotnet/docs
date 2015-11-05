@@ -1,10 +1,12 @@
 {
-	"dependencies": {
-		"System.Runtime":"4.0.0-rc1-*",
-		"System.Linq":"4.0.0-rc1-*",
-		"System.Console": "4.0.0-beta-*"
-	},
 	"frameworks": {
-		"dotnet":{}
+		"dnx451" : { },
+        "dnxcore50" : {
+            "dependencies": {
+                "System.Runtime":"4.0.0-rc1-*",
+				"System.Linq":"4.0.0-rc1-*",
+				"System.Console": "4.0.0-beta-*"
+            }
+		}
 	}
 }

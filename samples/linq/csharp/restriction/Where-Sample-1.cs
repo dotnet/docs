@@ -14,7 +14,7 @@ namespace Restriction
         // 3 
         // 2 
         // 0
-        public void QuerySyntaxExample() 
+        public static void QuerySyntaxExample() 
         { 
             int[] numbers = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 }; 
       
@@ -39,7 +39,7 @@ namespace Restriction
         // 3 
         // 2 
         // 0
-        public void MethodSyntaxExample() 
+        public static void MethodSyntaxExample() 
         { 
             int[] numbers = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 }; 
       

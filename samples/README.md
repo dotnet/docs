@@ -6,8 +6,9 @@ If you wish to add a code sample:
 
 1. Your sample **must be part of a buildable project**
 2. Your sample **cannot be a Visual Studio Project**
-
 	- We do not want Windows and Visual Studio to be a dependency for people building these on their own.
+3. Your sample shoud conform to the [corefx coding style](https://github.com/dotnet/corefx/blob/master/Documentation/coding-guidelines/coding-style.md) to maintain consistency.
+	- Additionally, we prefer the use of `static` methods rather than instance methods when demonstrating something that doesn't require instantiating a new object.
 
 We will eventually have a CI system in place to build these projects.
 
@@ -17,7 +18,7 @@ To create a sample:
 2. For each set of samples that demonstrates a concept, add a project.json with your dependencies and target coreclr:
 
  ```javascript
- 	{ 
+ 	{
 		"dependencies": {
 		    "System.Runtime":"4.0.0-rc1-*",
 		    "System.Linq":"4.0.0-rc1-*",
@@ -36,9 +37,10 @@ To create a sample:
     {
         public void Main(string[] args)
         {
-            var sample = new WhereClause1();
-            sample.QuerySyntaxExample();
-            sample.MethodSyntaxExample();
+            WhereClause1.QuerySyntaxExample();
+
+			// Add the method syntax as an example.
+            WhereClause1.MethodSyntaxExample();
         }
     }
   ```
@@ -48,8 +50,8 @@ To create a sample:
 
  ```    
 	dnvm upgrade latest -r coreclr -u
- ```	
-6. Go to the sample folder and Build to check for errors. 
+ ```
+6. Go to the sample folder and Build to check for errors.
 
  ```
     dnu build
@@ -58,4 +60,4 @@ To create a sample:
 
  ```
     dnx run
- ```	
+ ```

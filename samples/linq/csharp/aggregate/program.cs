@@ -1,11 +1,13 @@
 public class Program
+{
+    public void Main(string[] args)
     {
-        public void Main(string[] args)
-        {
-            var sample1 = new Aggregate.AggregateSample1();
-            sample1.MethodSyntaxExample();
+        Aggregate.AggregateSample1.MethodSyntaxExample();
             
-            var sample2 = new Aggregate.AggregateSample2();
-            sample2.MethodSyntaxExample();
-        }
+        Aggregate.AggregateSample2.MethodSyntaxExample();
+
+        Aggregate.CountSample1.MethodSyntaxExample();
+
+        Aggregate.CountSample1.QuerySyntaxExample();   
     }
+}

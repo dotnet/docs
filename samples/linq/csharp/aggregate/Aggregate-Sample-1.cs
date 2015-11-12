@@ -3,12 +3,12 @@ using System;
 
 namespace Aggregate
 {
-    public class AggregateSample1
+    public static class AggregateSample1
     {
         //This sample uses Aggregate to create a running product on the array that calculates the total product of all elements.
         //Output: 
         //Total product of all numbers: 88.33081
-        public void MethodSyntaxExample() 
+        public static void MethodSyntaxExample() 
         { 
             double[] doubles = { 1.7, 2.3, 1.9, 4.1, 2.9 }; 
             

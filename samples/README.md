@@ -13,8 +13,8 @@ We will eventually have a CI system in place to build these projects.
 
 To create a sample:
 
-1. File an [issue](https://github.com/dotnet/core-docs/issues) or add a comment to an existing one that your working on it
-2. For each set of samples that demonstrate a concept, add a project.json with your dependencies and target coreclr:
+1. File an [issue](https://github.com/dotnet/core-docs/issues) or add a comment to an existing one that you are working on it.
+2. For each set of samples that demonstrates a concept, add a project.json with your dependencies and target coreclr:
 
  ```javascript
  	{ 
@@ -29,7 +29,7 @@ To create a sample:
     }
  ```
 
-3. Write your sample. ex. WhereClause-Sample1.cs
+3. Write your sample (example: `WhereClause-Sample1.cs`)
 4. Create a Program.cs with a Main entry point that calls your samples. If there is already one there, add the call to your sample:
   ```c#
     public class Program
@@ -49,7 +49,7 @@ To create a sample:
  ```    
 	dnvm upgrade latest -r coreclr -u
  ```	
-6. Go to the sample forlder and Build to check for errors. 
+6. Go to the sample folder and Build to check for errors. 
 
  ```
     dnu build

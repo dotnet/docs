@@ -1,0 +1,137 @@
+items:
+- uid: System.Security.Cryptography.X509Certificates.X509NameType
+  id: X509NameType
+  parent: System.Security.Cryptography.X509Certificates
+  children:
+  - System.Security.Cryptography.X509Certificates.X509NameType.DnsFromAlternativeName
+  - System.Security.Cryptography.X509Certificates.X509NameType.DnsName
+  - System.Security.Cryptography.X509Certificates.X509NameType.EmailName
+  - System.Security.Cryptography.X509Certificates.X509NameType.SimpleName
+  - System.Security.Cryptography.X509Certificates.X509NameType.UpnName
+  - System.Security.Cryptography.X509Certificates.X509NameType.UrlName
+  href: System.Security.Cryptography.X509Certificates.X509NameType.yml
+  name: X509NameType
+  fullName: System.Security.Cryptography.X509Certificates.X509NameType
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509NameType.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509NameType.cs
+    startLine: 8
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Specifies the type of name the X509 certificate contains.
+  syntax:
+    content: public enum X509NameType
+    content.vb: Public Enum X509NameType
+- uid: System.Security.Cryptography.X509Certificates.X509NameType.SimpleName
+  id: SimpleName
+  parent: System.Security.Cryptography.X509Certificates.X509NameType
+  href: System.Security.Cryptography.X509Certificates.X509NameType.yml
+  name: SimpleName
+  fullName: System.Security.Cryptography.X509Certificates.X509NameType.SimpleName
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509NameType.cs
+    startLine: 10
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The simple name of a subject or issuer of an X509 certificate.
+  syntax:
+    content: SimpleName = 0
+- uid: System.Security.Cryptography.X509Certificates.X509NameType.EmailName
+  id: EmailName
+  parent: System.Security.Cryptography.X509Certificates.X509NameType
+  href: System.Security.Cryptography.X509Certificates.X509NameType.yml
+  name: EmailName
+  fullName: System.Security.Cryptography.X509Certificates.X509NameType.EmailName
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509NameType.cs
+    startLine: 11
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The email address of the subject or issuer associated of an X509 certificate.
+  syntax:
+    content: EmailName = 1
+- uid: System.Security.Cryptography.X509Certificates.X509NameType.UpnName
+  id: UpnName
+  parent: System.Security.Cryptography.X509Certificates.X509NameType
+  href: System.Security.Cryptography.X509Certificates.X509NameType.yml
+  name: UpnName
+  fullName: System.Security.Cryptography.X509Certificates.X509NameType.UpnName
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509NameType.cs
+    startLine: 12
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The UPN name of the subject or issuer of an X509 certificate.
+  syntax:
+    content: UpnName = 2
+- uid: System.Security.Cryptography.X509Certificates.X509NameType.DnsName
+  id: DnsName
+  parent: System.Security.Cryptography.X509Certificates.X509NameType
+  href: System.Security.Cryptography.X509Certificates.X509NameType.yml
+  name: DnsName
+  fullName: System.Security.Cryptography.X509Certificates.X509NameType.DnsName
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509NameType.cs
+    startLine: 13
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The DNS name associated with the alternative name of either the subject or issuer of an X509 certificate.
+  syntax:
+    content: DnsName = 3
+- uid: System.Security.Cryptography.X509Certificates.X509NameType.DnsFromAlternativeName
+  id: DnsFromAlternativeName
+  parent: System.Security.Cryptography.X509Certificates.X509NameType
+  href: System.Security.Cryptography.X509Certificates.X509NameType.yml
+  name: DnsFromAlternativeName
+  fullName: System.Security.Cryptography.X509Certificates.X509NameType.DnsFromAlternativeName
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509NameType.cs
+    startLine: 14
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The DNS name associated with the alternative name of either the subject or the issuer of an X.509 certificate.  This value is equivalent to the @'System.Security.Cryptography.X509Certificates.X509NameType.DnsName' value.
+  syntax:
+    content: DnsFromAlternativeName = 4
+- uid: System.Security.Cryptography.X509Certificates.X509NameType.UrlName
+  id: UrlName
+  parent: System.Security.Cryptography.X509Certificates.X509NameType
+  href: System.Security.Cryptography.X509Certificates.X509NameType.yml
+  name: UrlName
+  fullName: System.Security.Cryptography.X509Certificates.X509NameType.UrlName
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509NameType.cs
+    startLine: 15
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The URL address associated with the alternative name of either the subject or issuer of an X509 certificate.
+  syntax:
+    content: UrlName = 5
+references:
+- uid: System.Security.Cryptography.X509Certificates
+  isExternal: false
+  name: System.Security.Cryptography.X509Certificates
+  fullName: System.Security.Cryptography.X509Certificates
+  type: Namespace

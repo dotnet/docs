@@ -1,0 +1,313 @@
+items:
+- uid: System.Security.SecureStringMarshal
+  id: SecureStringMarshal
+  parent: System.Security
+  children:
+  - System.Security.SecureStringMarshal.SecureStringToCoTaskMemUnicode(System.Security.SecureString)
+  - System.Security.SecureStringMarshal.ZeroFreeCoTaskMemUnicode(System.IntPtr)
+  href: System.Security.SecureStringMarshal.yml
+  name: SecureStringMarshal
+  fullName: System.Security.SecureStringMarshal
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Security.SecureString/src/System/Security/SecureStringMarshal.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Security.SecureString/src/System/Security/SecureStringMarshal.cs
+    startLine: 7
+  assemblies:
+  - System.Security.SecureString
+  namespace: System.Security
+  syntax:
+    content: public class SecureStringMarshal
+    content.vb: Public Class SecureStringMarshal
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Security.SecureStringMarshal.SecureStringToCoTaskMemUnicode(System.Security.SecureString)
+  id: SecureStringToCoTaskMemUnicode(System.Security.SecureString)
+  parent: System.Security.SecureStringMarshal
+  href: System.Security.SecureStringMarshal.yml
+  name: SecureStringToCoTaskMemUnicode(SecureString)
+  fullName: System.Security.SecureStringMarshal.SecureStringToCoTaskMemUnicode(System.Security.SecureString)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Security.SecureString/src/System/Security/SecureStringMarshal.cs
+    startLine: 9
+  assemblies:
+  - System.Security.SecureString
+  namespace: System.Security
+  syntax:
+    content: public static IntPtr SecureStringToCoTaskMemUnicode(SecureString s)
+    content.vb: Public Shared Function SecureStringToCoTaskMemUnicode(s As SecureString) As IntPtr
+    parameters:
+    - id: s
+      type: System.Security.SecureString
+    return:
+      type: System.IntPtr
+      description: 
+- uid: System.Security.SecureStringMarshal.ZeroFreeCoTaskMemUnicode(System.IntPtr)
+  id: ZeroFreeCoTaskMemUnicode(System.IntPtr)
+  parent: System.Security.SecureStringMarshal
+  href: System.Security.SecureStringMarshal.yml
+  name: ZeroFreeCoTaskMemUnicode(IntPtr)
+  fullName: System.Security.SecureStringMarshal.ZeroFreeCoTaskMemUnicode(System.IntPtr)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Security.SecureString/src/System/Security/SecureStringMarshal.cs
+    startLine: 20
+  assemblies:
+  - System.Security.SecureString
+  namespace: System.Security
+  syntax:
+    content: public static void ZeroFreeCoTaskMemUnicode(IntPtr s)
+    content.vb: Public Shared Sub ZeroFreeCoTaskMemUnicode(s As IntPtr)
+    parameters:
+    - id: s
+      type: System.IntPtr
+references:
+- uid: System.Security
+  isExternal: false
+  name: System.Security
+  fullName: System.Security
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Security.SecureString
+  parent: System.Security
+  isExternal: false
+  href: System.Security.SecureString.yml
+  name: SecureString
+  fullName: System.Security.SecureString
+  type: Class
+- uid: System.IntPtr
+  parent: System
+  isExternal: true
+  name: IntPtr
+  fullName: System.IntPtr

@@ -1,0 +1,706 @@
+items:
+- uid: System.Text.Encodings.Web.TextEncoderSettings
+  id: TextEncoderSettings
+  parent: System.Text.Encodings.Web
+  children:
+  - System.Text.Encodings.Web.TextEncoderSettings.#ctor
+  - System.Text.Encodings.Web.TextEncoderSettings.#ctor(System.Text.Encodings.Web.TextEncoderSettings)
+  - System.Text.Encodings.Web.TextEncoderSettings.#ctor(System.Text.Unicode.UnicodeRange[])
+  - System.Text.Encodings.Web.TextEncoderSettings.AllowCharacter(System.Char)
+  - System.Text.Encodings.Web.TextEncoderSettings.AllowCharacters(System.Char[])
+  - System.Text.Encodings.Web.TextEncoderSettings.AllowCodePoints(System.Collections.Generic.IEnumerable{System.Int32})
+  - System.Text.Encodings.Web.TextEncoderSettings.AllowRange(System.Text.Unicode.UnicodeRange)
+  - System.Text.Encodings.Web.TextEncoderSettings.AllowRanges(System.Text.Unicode.UnicodeRange[])
+  - System.Text.Encodings.Web.TextEncoderSettings.Clear
+  - System.Text.Encodings.Web.TextEncoderSettings.ForbidCharacter(System.Char)
+  - System.Text.Encodings.Web.TextEncoderSettings.ForbidCharacters(System.Char[])
+  - System.Text.Encodings.Web.TextEncoderSettings.ForbidRange(System.Text.Unicode.UnicodeRange)
+  - System.Text.Encodings.Web.TextEncoderSettings.ForbidRanges(System.Text.Unicode.UnicodeRange[])
+  - System.Text.Encodings.Web.TextEncoderSettings.GetAllowedCodePoints
+  href: System.Text.Encodings.Web.TextEncoderSettings.yml
+  name: TextEncoderSettings
+  fullName: System.Text.Encodings.Web.TextEncoderSettings
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Text.Encodings.Web/src/System/Text/Encodings/Web/TextEncoderSettings.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Text.Encodings.Web/src/System/Text/Encodings/Web/TextEncoderSettings.cs
+    startLine: 12
+  assemblies:
+  - System.Text.Encodings.Web
+  namespace: System.Text.Encodings.Web
+  summary: Represents a filter which allows only certain Unicode code points through.
+  syntax:
+    content: public class TextEncoderSettings
+    content.vb: Public Class TextEncoderSettings
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Text.Encodings.Web.TextEncoderSettings.#ctor
+  id: '#ctor'
+  parent: System.Text.Encodings.Web.TextEncoderSettings
+  href: System.Text.Encodings.Web.TextEncoderSettings.yml
+  name: TextEncoderSettings()
+  fullName: System.Text.Encodings.Web.TextEncoderSettings.TextEncoderSettings()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Text.Encodings.Web/src/System/Text/Encodings/Web/TextEncoderSettings.cs
+    startLine: 19
+  assemblies:
+  - System.Text.Encodings.Web
+  namespace: System.Text.Encodings.Web
+  summary: Instantiates an empty filter (allows no code points through by default).
+  syntax:
+    content: public TextEncoderSettings()
+    content.vb: Public Sub New
+- uid: System.Text.Encodings.Web.TextEncoderSettings.#ctor(System.Text.Encodings.Web.TextEncoderSettings)
+  id: '#ctor(System.Text.Encodings.Web.TextEncoderSettings)'
+  parent: System.Text.Encodings.Web.TextEncoderSettings
+  href: System.Text.Encodings.Web.TextEncoderSettings.yml
+  name: TextEncoderSettings(TextEncoderSettings)
+  fullName: System.Text.Encodings.Web.TextEncoderSettings.TextEncoderSettings(System.Text.Encodings.Web.TextEncoderSettings)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Text.Encodings.Web/src/System/Text/Encodings/Web/TextEncoderSettings.cs
+    startLine: 27
+  assemblies:
+  - System.Text.Encodings.Web
+  namespace: System.Text.Encodings.Web
+  summary: Instantiates the filter by cloning the allow list of another @'System.Text.Encodings.Web.TextEncoderSettings'.
+  syntax:
+    content: public TextEncoderSettings(TextEncoderSettings other)
+    content.vb: Public Sub New(other As TextEncoderSettings)
+    parameters:
+    - id: other
+      type: System.Text.Encodings.Web.TextEncoderSettings
+- uid: System.Text.Encodings.Web.TextEncoderSettings.#ctor(System.Text.Unicode.UnicodeRange[])
+  id: '#ctor(System.Text.Unicode.UnicodeRange[])'
+  parent: System.Text.Encodings.Web.TextEncoderSettings
+  href: System.Text.Encodings.Web.TextEncoderSettings.yml
+  name: TextEncoderSettings(UnicodeRange[])
+  name.vb: TextEncoderSettings(UnicodeRange())
+  fullName: System.Text.Encodings.Web.TextEncoderSettings.TextEncoderSettings(System.Text.Unicode.UnicodeRange[])
+  fullName.vb: System.Text.Encodings.Web.TextEncoderSettings.TextEncoderSettings(System.Text.Unicode.UnicodeRange())
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Text.Encodings.Web/src/System/Text/Encodings/Web/TextEncoderSettings.cs
+    startLine: 37
+  assemblies:
+  - System.Text.Encodings.Web
+  namespace: System.Text.Encodings.Web
+  summary: >-
+    Instantiates the filter where only the character ranges specified by <paramref name="allowedRanges" />
+
+    are allowed by the filter.
+  syntax:
+    content: public TextEncoderSettings(params UnicodeRange[] allowedRanges)
+    content.vb: Public Sub New(ParamArray allowedRanges As UnicodeRange())
+    parameters:
+    - id: allowedRanges
+      type: System.Text.Unicode.UnicodeRange[]
+- uid: System.Text.Encodings.Web.TextEncoderSettings.AllowCharacter(System.Char)
+  id: AllowCharacter(System.Char)
+  parent: System.Text.Encodings.Web.TextEncoderSettings
+  href: System.Text.Encodings.Web.TextEncoderSettings.yml
+  name: AllowCharacter(Char)
+  fullName: System.Text.Encodings.Web.TextEncoderSettings.AllowCharacter(System.Char)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.Encodings.Web/src/System/Text/Encodings/Web/TextEncoderSettings.cs
+    startLine: 50
+  assemblies:
+  - System.Text.Encodings.Web
+  namespace: System.Text.Encodings.Web
+  summary: Allows the character specified by <paramref name="character" /> through the filter.
+  syntax:
+    content: public virtual void AllowCharacter(char character)
+    content.vb: Public Overridable Sub AllowCharacter(character As Char)
+    parameters:
+    - id: character
+      type: System.Char
+- uid: System.Text.Encodings.Web.TextEncoderSettings.AllowCharacters(System.Char[])
+  id: AllowCharacters(System.Char[])
+  parent: System.Text.Encodings.Web.TextEncoderSettings
+  href: System.Text.Encodings.Web.TextEncoderSettings.yml
+  name: AllowCharacters(Char[])
+  name.vb: AllowCharacters(Char())
+  fullName: System.Text.Encodings.Web.TextEncoderSettings.AllowCharacters(System.Char[])
+  fullName.vb: System.Text.Encodings.Web.TextEncoderSettings.AllowCharacters(System.Char())
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.Encodings.Web/src/System/Text/Encodings/Web/TextEncoderSettings.cs
+    startLine: 58
+  assemblies:
+  - System.Text.Encodings.Web
+  namespace: System.Text.Encodings.Web
+  summary: Allows all characters specified by <paramref name="characters" /> through the filter.
+  syntax:
+    content: public virtual void AllowCharacters(params char[] characters)
+    content.vb: Public Overridable Sub AllowCharacters(ParamArray characters As Char())
+    parameters:
+    - id: characters
+      type: System.Char[]
+- uid: System.Text.Encodings.Web.TextEncoderSettings.AllowCodePoints(System.Collections.Generic.IEnumerable{System.Int32})
+  id: AllowCodePoints(System.Collections.Generic.IEnumerable{System.Int32})
+  parent: System.Text.Encodings.Web.TextEncoderSettings
+  href: System.Text.Encodings.Web.TextEncoderSettings.yml
+  name: AllowCodePoints(IEnumerable<Int32>)
+  name.vb: AllowCodePoints(IEnumerable(Of Int32))
+  fullName: System.Text.Encodings.Web.TextEncoderSettings.AllowCodePoints(System.Collections.Generic.IEnumerable<System.Int32>)
+  fullName.vb: System.Text.Encodings.Web.TextEncoderSettings.AllowCodePoints(System.Collections.Generic.IEnumerable(Of System.Int32))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.Encodings.Web/src/System/Text/Encodings/Web/TextEncoderSettings.cs
+    startLine: 74
+  assemblies:
+  - System.Text.Encodings.Web
+  namespace: System.Text.Encodings.Web
+  summary: Allows all code points specified by <paramref name="codePoints" />.
+  syntax:
+    content: public virtual void AllowCodePoints(IEnumerable<int> codePoints)
+    content.vb: Public Overridable Sub AllowCodePoints(codePoints As IEnumerable(Of Integer))
+    parameters:
+    - id: codePoints
+      type: System.Collections.Generic.IEnumerable{System.Int32}
+- uid: System.Text.Encodings.Web.TextEncoderSettings.AllowRange(System.Text.Unicode.UnicodeRange)
+  id: AllowRange(System.Text.Unicode.UnicodeRange)
+  parent: System.Text.Encodings.Web.TextEncoderSettings
+  href: System.Text.Encodings.Web.TextEncoderSettings.yml
+  name: AllowRange(UnicodeRange)
+  fullName: System.Text.Encodings.Web.TextEncoderSettings.AllowRange(System.Text.Unicode.UnicodeRange)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.Encodings.Web/src/System/Text/Encodings/Web/TextEncoderSettings.cs
+    startLine: 95
+  assemblies:
+  - System.Text.Encodings.Web
+  namespace: System.Text.Encodings.Web
+  summary: Allows all characters specified by <paramref name="range" /> through the filter.
+  syntax:
+    content: public virtual void AllowRange(UnicodeRange range)
+    content.vb: Public Overridable Sub AllowRange(range As UnicodeRange)
+    parameters:
+    - id: range
+      type: System.Text.Unicode.UnicodeRange
+- uid: System.Text.Encodings.Web.TextEncoderSettings.AllowRanges(System.Text.Unicode.UnicodeRange[])
+  id: AllowRanges(System.Text.Unicode.UnicodeRange[])
+  parent: System.Text.Encodings.Web.TextEncoderSettings
+  href: System.Text.Encodings.Web.TextEncoderSettings.yml
+  name: AllowRanges(UnicodeRange[])
+  name.vb: AllowRanges(UnicodeRange())
+  fullName: System.Text.Encodings.Web.TextEncoderSettings.AllowRanges(System.Text.Unicode.UnicodeRange[])
+  fullName.vb: System.Text.Encodings.Web.TextEncoderSettings.AllowRanges(System.Text.Unicode.UnicodeRange())
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.Encodings.Web/src/System/Text/Encodings/Web/TextEncoderSettings.cs
+    startLine: 113
+  assemblies:
+  - System.Text.Encodings.Web
+  namespace: System.Text.Encodings.Web
+  summary: Allows all characters specified by <paramref name="ranges" /> through the filter.
+  syntax:
+    content: public virtual void AllowRanges(params UnicodeRange[] ranges)
+    content.vb: Public Overridable Sub AllowRanges(ParamArray ranges As UnicodeRange())
+    parameters:
+    - id: ranges
+      type: System.Text.Unicode.UnicodeRange[]
+- uid: System.Text.Encodings.Web.TextEncoderSettings.Clear
+  id: Clear
+  parent: System.Text.Encodings.Web.TextEncoderSettings
+  href: System.Text.Encodings.Web.TextEncoderSettings.yml
+  name: Clear()
+  fullName: System.Text.Encodings.Web.TextEncoderSettings.Clear()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.Encodings.Web/src/System/Text/Encodings/Web/TextEncoderSettings.cs
+    startLine: 129
+  assemblies:
+  - System.Text.Encodings.Web
+  namespace: System.Text.Encodings.Web
+  summary: Resets this settings object by disallowing all characters.
+  syntax:
+    content: public virtual void Clear()
+    content.vb: Public Overridable Sub Clear
+- uid: System.Text.Encodings.Web.TextEncoderSettings.ForbidCharacter(System.Char)
+  id: ForbidCharacter(System.Char)
+  parent: System.Text.Encodings.Web.TextEncoderSettings
+  href: System.Text.Encodings.Web.TextEncoderSettings.yml
+  name: ForbidCharacter(Char)
+  fullName: System.Text.Encodings.Web.TextEncoderSettings.ForbidCharacter(System.Char)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.Encodings.Web/src/System/Text/Encodings/Web/TextEncoderSettings.cs
+    startLine: 137
+  assemblies:
+  - System.Text.Encodings.Web
+  namespace: System.Text.Encodings.Web
+  summary: Disallows the character <paramref name="character" /> through the filter.
+  syntax:
+    content: public virtual void ForbidCharacter(char character)
+    content.vb: Public Overridable Sub ForbidCharacter(character As Char)
+    parameters:
+    - id: character
+      type: System.Char
+- uid: System.Text.Encodings.Web.TextEncoderSettings.ForbidCharacters(System.Char[])
+  id: ForbidCharacters(System.Char[])
+  parent: System.Text.Encodings.Web.TextEncoderSettings
+  href: System.Text.Encodings.Web.TextEncoderSettings.yml
+  name: ForbidCharacters(Char[])
+  name.vb: ForbidCharacters(Char())
+  fullName: System.Text.Encodings.Web.TextEncoderSettings.ForbidCharacters(System.Char[])
+  fullName.vb: System.Text.Encodings.Web.TextEncoderSettings.ForbidCharacters(System.Char())
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.Encodings.Web/src/System/Text/Encodings/Web/TextEncoderSettings.cs
+    startLine: 145
+  assemblies:
+  - System.Text.Encodings.Web
+  namespace: System.Text.Encodings.Web
+  summary: Disallows all characters specified by <paramref name="characters" /> through the filter.
+  syntax:
+    content: public virtual void ForbidCharacters(params char[] characters)
+    content.vb: Public Overridable Sub ForbidCharacters(ParamArray characters As Char())
+    parameters:
+    - id: characters
+      type: System.Char[]
+- uid: System.Text.Encodings.Web.TextEncoderSettings.ForbidRange(System.Text.Unicode.UnicodeRange)
+  id: ForbidRange(System.Text.Unicode.UnicodeRange)
+  parent: System.Text.Encodings.Web.TextEncoderSettings
+  href: System.Text.Encodings.Web.TextEncoderSettings.yml
+  name: ForbidRange(UnicodeRange)
+  fullName: System.Text.Encodings.Web.TextEncoderSettings.ForbidRange(System.Text.Unicode.UnicodeRange)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.Encodings.Web/src/System/Text/Encodings/Web/TextEncoderSettings.cs
+    startLine: 161
+  assemblies:
+  - System.Text.Encodings.Web
+  namespace: System.Text.Encodings.Web
+  summary: Disallows all characters specified by <paramref name="range" /> through the filter.
+  syntax:
+    content: public virtual void ForbidRange(UnicodeRange range)
+    content.vb: Public Overridable Sub ForbidRange(range As UnicodeRange)
+    parameters:
+    - id: range
+      type: System.Text.Unicode.UnicodeRange
+- uid: System.Text.Encodings.Web.TextEncoderSettings.ForbidRanges(System.Text.Unicode.UnicodeRange[])
+  id: ForbidRanges(System.Text.Unicode.UnicodeRange[])
+  parent: System.Text.Encodings.Web.TextEncoderSettings
+  href: System.Text.Encodings.Web.TextEncoderSettings.yml
+  name: ForbidRanges(UnicodeRange[])
+  name.vb: ForbidRanges(UnicodeRange())
+  fullName: System.Text.Encodings.Web.TextEncoderSettings.ForbidRanges(System.Text.Unicode.UnicodeRange[])
+  fullName.vb: System.Text.Encodings.Web.TextEncoderSettings.ForbidRanges(System.Text.Unicode.UnicodeRange())
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.Encodings.Web/src/System/Text/Encodings/Web/TextEncoderSettings.cs
+    startLine: 179
+  assemblies:
+  - System.Text.Encodings.Web
+  namespace: System.Text.Encodings.Web
+  summary: Disallows all characters specified by <paramref name="ranges" /> through the filter.
+  syntax:
+    content: public virtual void ForbidRanges(params UnicodeRange[] ranges)
+    content.vb: Public Overridable Sub ForbidRanges(ParamArray ranges As UnicodeRange())
+    parameters:
+    - id: ranges
+      type: System.Text.Unicode.UnicodeRange[]
+- uid: System.Text.Encodings.Web.TextEncoderSettings.GetAllowedCodePoints
+  id: GetAllowedCodePoints
+  parent: System.Text.Encodings.Web.TextEncoderSettings
+  href: System.Text.Encodings.Web.TextEncoderSettings.yml
+  name: GetAllowedCodePoints()
+  fullName: System.Text.Encodings.Web.TextEncoderSettings.GetAllowedCodePoints()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.Encodings.Web/src/System/Text/Encodings/Web/TextEncoderSettings.cs
+    startLine: 204
+  assemblies:
+  - System.Text.Encodings.Web
+  namespace: System.Text.Encodings.Web
+  summary: Gets an enumeration of all allowed code points.
+  syntax:
+    content: public virtual IEnumerable<int> GetAllowedCodePoints()
+    content.vb: Public Overridable Function GetAllowedCodePoints As IEnumerable(Of Integer)
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Int32}
+references:
+- uid: System.Text.Encodings.Web
+  isExternal: false
+  name: System.Text.Encodings.Web
+  fullName: System.Text.Encodings.Web
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Text.Encodings.Web.TextEncoderSettings
+  parent: System.Text.Encodings.Web
+  isExternal: false
+  href: System.Text.Encodings.Web.TextEncoderSettings.yml
+  name: TextEncoderSettings
+  fullName: System.Text.Encodings.Web.TextEncoderSettings
+  type: Class
+  summary: Represents a filter which allows only certain Unicode code points through.
+- uid: System.Text.Unicode.UnicodeRange[]
+  isExternal: false
+  href: System.Text.Unicode.UnicodeRange.yml
+  name: UnicodeRange[]
+  name.vb: UnicodeRange()
+  fullName: System.Text.Unicode.UnicodeRange[]
+  fullName.vb: System.Text.Unicode.UnicodeRange()
+  spec.csharp:
+  - uid: System.Text.Unicode.UnicodeRange
+    name: UnicodeRange
+    fullName: System.Text.Unicode.UnicodeRange
+    href: System.Text.Unicode.UnicodeRange.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Text.Unicode.UnicodeRange
+    name: UnicodeRange
+    fullName: System.Text.Unicode.UnicodeRange
+    href: System.Text.Unicode.UnicodeRange.yml
+  - name: ()
+    fullName: ()
+- uid: System.Char
+  parent: System
+  isExternal: true
+  name: Char
+  fullName: System.Char
+- uid: System.Char[]
+  isExternal: true
+  name: Char[]
+  name.vb: Char()
+  fullName: System.Char[]
+  fullName.vb: System.Char()
+  spec.csharp:
+  - uid: System.Char
+    name: Char
+    fullName: System.Char
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Char
+    name: Char
+    fullName: System.Char
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Collections.Generic.IEnumerable{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<Int32>
+  name.vb: IEnumerable(Of Int32)
+  fullName: System.Collections.Generic.IEnumerable<System.Int32>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Text.Unicode.UnicodeRange
+  parent: System.Text.Unicode
+  isExternal: false
+  href: System.Text.Unicode.UnicodeRange.yml
+  name: UnicodeRange
+  fullName: System.Text.Unicode.UnicodeRange
+  type: Class
+  summary: Represents a contiguous range of Unicode code points.
+- uid: System.Text.Unicode
+  isExternal: false
+  name: System.Text.Unicode
+  fullName: System.Text.Unicode
+  type: Namespace

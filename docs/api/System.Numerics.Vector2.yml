@@ -1,0 +1,1747 @@
+items:
+- uid: System.Numerics.Vector2
+  id: Vector2
+  parent: System.Numerics
+  children:
+  - System.Numerics.Vector2.#ctor(System.Single)
+  - System.Numerics.Vector2.#ctor(System.Single,System.Single)
+  - System.Numerics.Vector2.Abs(System.Numerics.Vector2)
+  - System.Numerics.Vector2.Add(System.Numerics.Vector2,System.Numerics.Vector2)
+  - System.Numerics.Vector2.Clamp(System.Numerics.Vector2,System.Numerics.Vector2,System.Numerics.Vector2)
+  - System.Numerics.Vector2.CopyTo(System.Single[])
+  - System.Numerics.Vector2.CopyTo(System.Single[],System.Int32)
+  - System.Numerics.Vector2.Distance(System.Numerics.Vector2,System.Numerics.Vector2)
+  - System.Numerics.Vector2.DistanceSquared(System.Numerics.Vector2,System.Numerics.Vector2)
+  - System.Numerics.Vector2.Divide(System.Numerics.Vector2,System.Numerics.Vector2)
+  - System.Numerics.Vector2.Divide(System.Numerics.Vector2,System.Single)
+  - System.Numerics.Vector2.Dot(System.Numerics.Vector2,System.Numerics.Vector2)
+  - System.Numerics.Vector2.Equals(System.Numerics.Vector2)
+  - System.Numerics.Vector2.Equals(System.Object)
+  - System.Numerics.Vector2.GetHashCode
+  - System.Numerics.Vector2.Length
+  - System.Numerics.Vector2.LengthSquared
+  - System.Numerics.Vector2.Lerp(System.Numerics.Vector2,System.Numerics.Vector2,System.Single)
+  - System.Numerics.Vector2.Max(System.Numerics.Vector2,System.Numerics.Vector2)
+  - System.Numerics.Vector2.Min(System.Numerics.Vector2,System.Numerics.Vector2)
+  - System.Numerics.Vector2.Multiply(System.Numerics.Vector2,System.Numerics.Vector2)
+  - System.Numerics.Vector2.Multiply(System.Numerics.Vector2,System.Single)
+  - System.Numerics.Vector2.Multiply(System.Single,System.Numerics.Vector2)
+  - System.Numerics.Vector2.Negate(System.Numerics.Vector2)
+  - System.Numerics.Vector2.Normalize(System.Numerics.Vector2)
+  - System.Numerics.Vector2.One
+  - System.Numerics.Vector2.op_Addition(System.Numerics.Vector2,System.Numerics.Vector2)
+  - System.Numerics.Vector2.op_Division(System.Numerics.Vector2,System.Numerics.Vector2)
+  - System.Numerics.Vector2.op_Division(System.Numerics.Vector2,System.Single)
+  - System.Numerics.Vector2.op_Equality(System.Numerics.Vector2,System.Numerics.Vector2)
+  - System.Numerics.Vector2.op_Inequality(System.Numerics.Vector2,System.Numerics.Vector2)
+  - System.Numerics.Vector2.op_Multiply(System.Numerics.Vector2,System.Numerics.Vector2)
+  - System.Numerics.Vector2.op_Multiply(System.Numerics.Vector2,System.Single)
+  - System.Numerics.Vector2.op_Multiply(System.Single,System.Numerics.Vector2)
+  - System.Numerics.Vector2.op_Subtraction(System.Numerics.Vector2,System.Numerics.Vector2)
+  - System.Numerics.Vector2.op_UnaryNegation(System.Numerics.Vector2)
+  - System.Numerics.Vector2.Reflect(System.Numerics.Vector2,System.Numerics.Vector2)
+  - System.Numerics.Vector2.SquareRoot(System.Numerics.Vector2)
+  - System.Numerics.Vector2.Subtract(System.Numerics.Vector2,System.Numerics.Vector2)
+  - System.Numerics.Vector2.ToString
+  - System.Numerics.Vector2.ToString(System.String)
+  - System.Numerics.Vector2.ToString(System.String,System.IFormatProvider)
+  - System.Numerics.Vector2.Transform(System.Numerics.Vector2,System.Numerics.Matrix3x2)
+  - System.Numerics.Vector2.Transform(System.Numerics.Vector2,System.Numerics.Matrix4x4)
+  - System.Numerics.Vector2.Transform(System.Numerics.Vector2,System.Numerics.Quaternion)
+  - System.Numerics.Vector2.TransformNormal(System.Numerics.Vector2,System.Numerics.Matrix3x2)
+  - System.Numerics.Vector2.TransformNormal(System.Numerics.Vector2,System.Numerics.Matrix4x4)
+  - System.Numerics.Vector2.UnitX
+  - System.Numerics.Vector2.UnitY
+  - System.Numerics.Vector2.X
+  - System.Numerics.Vector2.Y
+  - System.Numerics.Vector2.Zero
+  href: System.Numerics.Vector2.yml
+  name: Vector2
+  fullName: System.Numerics.Vector2
+  type: Struct
+  source:
+    remote: &o1
+      path: src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs
+    startLine: 12
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Represents a vector with two single-precision floating-point values.
+  syntax:
+    content: 'public struct Vector2 : IEquatable<Vector2>, IFormattable'
+    content.vb: Public Structure Vector2 Implements IEquatable(Of Vector2), IFormattable
+  implements:
+  - System.IEquatable{System.Numerics.Vector2}
+  - System.IFormattable
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.Numerics.Vector2.Zero
+  id: Zero
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: Zero
+  fullName: System.Numerics.Vector2.Zero
+  type: Property
+  source:
+    remote: &o0
+      path: src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs
+    startLine: 18
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a vector whose 2 elements are equal to zero.
+  syntax:
+    content: public static Vector2 Zero { get; }
+    content.vb: Public Shared ReadOnly Property Zero As Vector2
+    parameters: []
+    return:
+      type: System.Numerics.Vector2
+- uid: System.Numerics.Vector2.One
+  id: One
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: One
+  fullName: System.Numerics.Vector2.One
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs
+    startLine: 22
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Gets a vector whose 2 elements are equal to one.
+  syntax:
+    content: public static Vector2 One { get; }
+    content.vb: Public Shared ReadOnly Property One As Vector2
+    parameters: []
+    return:
+      type: System.Numerics.Vector2
+- uid: System.Numerics.Vector2.UnitX
+  id: UnitX
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: UnitX
+  fullName: System.Numerics.Vector2.UnitX
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs
+    startLine: 26
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Gets the vector (1,0).
+  syntax:
+    content: public static Vector2 UnitX { get; }
+    content.vb: Public Shared ReadOnly Property UnitX As Vector2
+    parameters: []
+    return:
+      type: System.Numerics.Vector2
+- uid: System.Numerics.Vector2.UnitY
+  id: UnitY
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: UnitY
+  fullName: System.Numerics.Vector2.UnitY
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs
+    startLine: 30
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Gets the vector (0,1).
+  syntax:
+    content: public static Vector2 UnitY { get; }
+    content.vb: Public Shared ReadOnly Property UnitY As Vector2
+    parameters: []
+    return:
+      type: System.Numerics.Vector2
+- uid: System.Numerics.Vector2.GetHashCode
+  id: GetHashCode
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: GetHashCode()
+  fullName: System.Numerics.Vector2.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs
+    startLine: 38
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns the hash code for this instance.
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: The hash code.
+  overridden: System.ValueType.GetHashCode
+- uid: System.Numerics.Vector2.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: Equals(Object)
+  fullName: System.Numerics.Vector2.Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs
+    startLine: 50
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a value that indicates whether this instance and a specified object are equal.
+  syntax:
+    content: public override bool Equals(object obj)
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current instance.
+    return:
+      type: System.Boolean
+      description: True if the Object is equal to this Vector2; False otherwise.
+  overridden: System.ValueType.Equals(System.Object)
+- uid: System.Numerics.Vector2.ToString
+  id: ToString
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: ToString()
+  fullName: System.Numerics.Vector2.ToString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs
+    startLine: 62
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns the string representation of the current instance using default formatting.
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+      description: The string representation.
+  overridden: System.ValueType.ToString
+- uid: System.Numerics.Vector2.ToString(System.String)
+  id: ToString(System.String)
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: ToString(String)
+  fullName: System.Numerics.Vector2.ToString(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs
+    startLine: 72
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns the string representation of the current instance using the specified format string to format individual elements.
+  syntax:
+    content: public string ToString(string format)
+    content.vb: Public Function ToString(format As String) As String
+    parameters:
+    - id: format
+      type: System.String
+      description: A standard or custom numeric format string that defines the format of individual elements.
+    return:
+      type: System.String
+      description: The string representation.
+- uid: System.Numerics.Vector2.ToString(System.String,System.IFormatProvider)
+  id: ToString(System.String,System.IFormatProvider)
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: ToString(String, IFormatProvider)
+  fullName: System.Numerics.Vector2.ToString(System.String, System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs
+    startLine: 84
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns the string representation of the current instance using the specified format string to format individual elements and the specified format provider to define culture-specific formatting.
+  syntax:
+    content: public string ToString(string format, IFormatProvider formatProvider)
+    content.vb: Public Function ToString(format As String, formatProvider As IFormatProvider) As String
+    parameters:
+    - id: format
+      type: System.String
+      description: A standard or custom numeric format string that defines the format of individual elements.
+    - id: formatProvider
+      type: System.IFormatProvider
+      description: A format provider that supplies culture-specific formatting information.
+    return:
+      type: System.String
+      description: The string representation.
+- uid: System.Numerics.Vector2.Length
+  id: Length
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: Length()
+  fullName: System.Numerics.Vector2.Length()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs
+    startLine: 101
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns the length of the vector.
+  syntax:
+    content: public float Length()
+    content.vb: Public Function Length As Single
+    return:
+      type: System.Single
+      description: The vector's length.
+- uid: System.Numerics.Vector2.LengthSquared
+  id: LengthSquared
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: LengthSquared()
+  fullName: System.Numerics.Vector2.LengthSquared()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs
+    startLine: 120
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns the length of the vector squared.
+  syntax:
+    content: public float LengthSquared()
+    content.vb: Public Function LengthSquared As Single
+    return:
+      type: System.Single
+      description: The vector's length squared.
+- uid: System.Numerics.Vector2.Distance(System.Numerics.Vector2,System.Numerics.Vector2)
+  id: Distance(System.Numerics.Vector2,System.Numerics.Vector2)
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: Distance(Vector2, Vector2)
+  fullName: System.Numerics.Vector2.Distance(System.Numerics.Vector2, System.Numerics.Vector2)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs
+    startLine: 141
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Computes the Euclidean distance between the two given points.
+  syntax:
+    content: public static float Distance(Vector2 value1, Vector2 value2)
+    content.vb: Public Shared Function Distance(value1 As Vector2, value2 As Vector2) As Single
+    parameters:
+    - id: value1
+      type: System.Numerics.Vector2
+      description: The first point.
+    - id: value2
+      type: System.Numerics.Vector2
+      description: The second point.
+    return:
+      type: System.Single
+      description: The distance.
+- uid: System.Numerics.Vector2.DistanceSquared(System.Numerics.Vector2,System.Numerics.Vector2)
+  id: DistanceSquared(System.Numerics.Vector2,System.Numerics.Vector2)
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: DistanceSquared(Vector2, Vector2)
+  fullName: System.Numerics.Vector2.DistanceSquared(System.Numerics.Vector2, System.Numerics.Vector2)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs
+    startLine: 167
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns the Euclidean distance squared between two specified points.
+  syntax:
+    content: public static float DistanceSquared(Vector2 value1, Vector2 value2)
+    content.vb: Public Shared Function DistanceSquared(value1 As Vector2, value2 As Vector2) As Single
+    parameters:
+    - id: value1
+      type: System.Numerics.Vector2
+      description: The first point.
+    - id: value2
+      type: System.Numerics.Vector2
+      description: The second point.
+    return:
+      type: System.Single
+      description: The distance squared.
+- uid: System.Numerics.Vector2.Normalize(System.Numerics.Vector2)
+  id: Normalize(System.Numerics.Vector2)
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: Normalize(Vector2)
+  fullName: System.Numerics.Vector2.Normalize(System.Numerics.Vector2)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs
+    startLine: 189
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a vector with the same direction as the specified vector, but with a length of one.
+  syntax:
+    content: public static Vector2 Normalize(Vector2 value)
+    content.vb: Public Shared Function Normalize(value As Vector2) As Vector2
+    parameters:
+    - id: value
+      type: System.Numerics.Vector2
+      description: The vector to normalize.
+    return:
+      type: System.Numerics.Vector2
+      description: The normalized vector.
+- uid: System.Numerics.Vector2.Reflect(System.Numerics.Vector2,System.Numerics.Vector2)
+  id: Reflect(System.Numerics.Vector2,System.Numerics.Vector2)
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: Reflect(Vector2, Vector2)
+  fullName: System.Numerics.Vector2.Reflect(System.Numerics.Vector2, System.Numerics.Vector2)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs
+    startLine: 214
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns the reflection of a vector off a surface that has the specified normal.
+  syntax:
+    content: public static Vector2 Reflect(Vector2 vector, Vector2 normal)
+    content.vb: Public Shared Function Reflect(vector As Vector2, normal As Vector2) As Vector2
+    parameters:
+    - id: vector
+      type: System.Numerics.Vector2
+      description: The source vector.
+    - id: normal
+      type: System.Numerics.Vector2
+      description: The normal of the surface being reflected off.
+    return:
+      type: System.Numerics.Vector2
+      description: The reflected vector.
+- uid: System.Numerics.Vector2.Clamp(System.Numerics.Vector2,System.Numerics.Vector2,System.Numerics.Vector2)
+  id: Clamp(System.Numerics.Vector2,System.Numerics.Vector2,System.Numerics.Vector2)
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: Clamp(Vector2, Vector2, Vector2)
+  fullName: System.Numerics.Vector2.Clamp(System.Numerics.Vector2, System.Numerics.Vector2, System.Numerics.Vector2)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs
+    startLine: 238
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Restricts a vector between a minimum and a maximum value.
+  syntax:
+    content: public static Vector2 Clamp(Vector2 value1, Vector2 min, Vector2 max)
+    content.vb: Public Shared Function Clamp(value1 As Vector2, min As Vector2, max As Vector2) As Vector2
+    parameters:
+    - id: value1
+      type: System.Numerics.Vector2
+      description: The vector to restrict.
+    - id: min
+      type: System.Numerics.Vector2
+      description: The minimum value.
+    - id: max
+      type: System.Numerics.Vector2
+      description: The maximum value.
+    return:
+      type: System.Numerics.Vector2
+- uid: System.Numerics.Vector2.Lerp(System.Numerics.Vector2,System.Numerics.Vector2,System.Single)
+  id: Lerp(System.Numerics.Vector2,System.Numerics.Vector2,System.Single)
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: Lerp(Vector2, Vector2, Single)
+  fullName: System.Numerics.Vector2.Lerp(System.Numerics.Vector2, System.Numerics.Vector2, System.Single)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs
+    startLine: 261
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Performs a linear interpolation between two vectors based on the given weighting.
+  syntax:
+    content: public static Vector2 Lerp(Vector2 value1, Vector2 value2, float amount)
+    content.vb: Public Shared Function Lerp(value1 As Vector2, value2 As Vector2, amount As Single) As Vector2
+    parameters:
+    - id: value1
+      type: System.Numerics.Vector2
+      description: The first vector.
+    - id: value2
+      type: System.Numerics.Vector2
+      description: The second vector.
+    - id: amount
+      type: System.Single
+      description: A value between 0 and 1 that indicates the weight of *value2*.
+    return:
+      type: System.Numerics.Vector2
+      description: The interpolated vector.
+- uid: System.Numerics.Vector2.Transform(System.Numerics.Vector2,System.Numerics.Matrix3x2)
+  id: Transform(System.Numerics.Vector2,System.Numerics.Matrix3x2)
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: Transform(Vector2, Matrix3x2)
+  fullName: System.Numerics.Vector2.Transform(System.Numerics.Vector2, System.Numerics.Matrix3x2)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs
+    startLine: 275
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Transforms a vector by a specified 3x2 matrix.
+  syntax:
+    content: public static Vector2 Transform(Vector2 position, Matrix3x2 matrix)
+    content.vb: Public Shared Function Transform(position As Vector2, matrix As Matrix3x2) As Vector2
+    parameters:
+    - id: position
+      type: System.Numerics.Vector2
+      description: The vector to transform.
+    - id: matrix
+      type: System.Numerics.Matrix3x2
+      description: The transformation matrix.
+    return:
+      type: System.Numerics.Vector2
+      description: The transformed vector.
+- uid: System.Numerics.Vector2.Transform(System.Numerics.Vector2,System.Numerics.Matrix4x4)
+  id: Transform(System.Numerics.Vector2,System.Numerics.Matrix4x4)
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: Transform(Vector2, Matrix4x4)
+  fullName: System.Numerics.Vector2.Transform(System.Numerics.Vector2, System.Numerics.Matrix4x4)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs
+    startLine: 289
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Transforms a vector by a specified 4x4 matrix.
+  syntax:
+    content: public static Vector2 Transform(Vector2 position, Matrix4x4 matrix)
+    content.vb: Public Shared Function Transform(position As Vector2, matrix As Matrix4x4) As Vector2
+    parameters:
+    - id: position
+      type: System.Numerics.Vector2
+      description: The vector to transform.
+    - id: matrix
+      type: System.Numerics.Matrix4x4
+      description: The transformation matrix.
+    return:
+      type: System.Numerics.Vector2
+      description: The transformed vector.
+- uid: System.Numerics.Vector2.TransformNormal(System.Numerics.Vector2,System.Numerics.Matrix3x2)
+  id: TransformNormal(System.Numerics.Vector2,System.Numerics.Matrix3x2)
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: TransformNormal(Vector2, Matrix3x2)
+  fullName: System.Numerics.Vector2.TransformNormal(System.Numerics.Vector2, System.Numerics.Matrix3x2)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs
+    startLine: 303
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Transforms a vector normal by the given 3x2 matrix.
+  syntax:
+    content: public static Vector2 TransformNormal(Vector2 normal, Matrix3x2 matrix)
+    content.vb: Public Shared Function TransformNormal(normal As Vector2, matrix As Matrix3x2) As Vector2
+    parameters:
+    - id: normal
+      type: System.Numerics.Vector2
+      description: The source vector.
+    - id: matrix
+      type: System.Numerics.Matrix3x2
+      description: The matrix.
+    return:
+      type: System.Numerics.Vector2
+      description: The transformed vector.
+- uid: System.Numerics.Vector2.TransformNormal(System.Numerics.Vector2,System.Numerics.Matrix4x4)
+  id: TransformNormal(System.Numerics.Vector2,System.Numerics.Matrix4x4)
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: TransformNormal(Vector2, Matrix4x4)
+  fullName: System.Numerics.Vector2.TransformNormal(System.Numerics.Vector2, System.Numerics.Matrix4x4)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs
+    startLine: 317
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Transforms a vector normal by the given 4x4 matrix.
+  syntax:
+    content: public static Vector2 TransformNormal(Vector2 normal, Matrix4x4 matrix)
+    content.vb: Public Shared Function TransformNormal(normal As Vector2, matrix As Matrix4x4) As Vector2
+    parameters:
+    - id: normal
+      type: System.Numerics.Vector2
+      description: The source vector.
+    - id: matrix
+      type: System.Numerics.Matrix4x4
+      description: The matrix.
+    return:
+      type: System.Numerics.Vector2
+      description: The transformed vector.
+- uid: System.Numerics.Vector2.Transform(System.Numerics.Vector2,System.Numerics.Quaternion)
+  id: Transform(System.Numerics.Vector2,System.Numerics.Quaternion)
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: Transform(Vector2, Quaternion)
+  fullName: System.Numerics.Vector2.Transform(System.Numerics.Vector2, System.Numerics.Quaternion)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs
+    startLine: 331
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Transforms a vector by the specified Quaternion rotation value.
+  syntax:
+    content: public static Vector2 Transform(Vector2 value, Quaternion rotation)
+    content.vb: Public Shared Function Transform(value As Vector2, rotation As Quaternion) As Vector2
+    parameters:
+    - id: value
+      type: System.Numerics.Vector2
+      description: The vector to rotate.
+    - id: rotation
+      type: System.Numerics.Quaternion
+      description: The rotation to apply.
+    return:
+      type: System.Numerics.Vector2
+      description: The transformed vector.
+- uid: System.Numerics.Vector2.Add(System.Numerics.Vector2,System.Numerics.Vector2)
+  id: Add(System.Numerics.Vector2,System.Numerics.Vector2)
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: Add(Vector2, Vector2)
+  fullName: System.Numerics.Vector2.Add(System.Numerics.Vector2, System.Numerics.Vector2)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs
+    startLine: 360
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Adds two vectors together.
+  syntax:
+    content: public static Vector2 Add(Vector2 left, Vector2 right)
+    content.vb: Public Shared Function Add(left As Vector2, right As Vector2) As Vector2
+    parameters:
+    - id: left
+      type: System.Numerics.Vector2
+      description: The first vector to add.
+    - id: right
+      type: System.Numerics.Vector2
+      description: The second vector to add.
+    return:
+      type: System.Numerics.Vector2
+      description: The summed vector.
+- uid: System.Numerics.Vector2.Subtract(System.Numerics.Vector2,System.Numerics.Vector2)
+  id: Subtract(System.Numerics.Vector2,System.Numerics.Vector2)
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: Subtract(Vector2, Vector2)
+  fullName: System.Numerics.Vector2.Subtract(System.Numerics.Vector2, System.Numerics.Vector2)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs
+    startLine: 372
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Subtracts the second vector from the first.
+  syntax:
+    content: public static Vector2 Subtract(Vector2 left, Vector2 right)
+    content.vb: Public Shared Function Subtract(left As Vector2, right As Vector2) As Vector2
+    parameters:
+    - id: left
+      type: System.Numerics.Vector2
+      description: The first vector.
+    - id: right
+      type: System.Numerics.Vector2
+      description: The second vector.
+    return:
+      type: System.Numerics.Vector2
+      description: The difference vector.
+- uid: System.Numerics.Vector2.Multiply(System.Numerics.Vector2,System.Numerics.Vector2)
+  id: Multiply(System.Numerics.Vector2,System.Numerics.Vector2)
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: Multiply(Vector2, Vector2)
+  fullName: System.Numerics.Vector2.Multiply(System.Numerics.Vector2, System.Numerics.Vector2)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs
+    startLine: 384
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Multiplies two vectors together.
+  syntax:
+    content: public static Vector2 Multiply(Vector2 left, Vector2 right)
+    content.vb: Public Shared Function Multiply(left As Vector2, right As Vector2) As Vector2
+    parameters:
+    - id: left
+      type: System.Numerics.Vector2
+      description: The first vector.
+    - id: right
+      type: System.Numerics.Vector2
+      description: The second vector.
+    return:
+      type: System.Numerics.Vector2
+      description: The product vector.
+- uid: System.Numerics.Vector2.Multiply(System.Numerics.Vector2,System.Single)
+  id: Multiply(System.Numerics.Vector2,System.Single)
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: Multiply(Vector2, Single)
+  fullName: System.Numerics.Vector2.Multiply(System.Numerics.Vector2, System.Single)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs
+    startLine: 396
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Multiplies a vector by a specified scalar.
+  syntax:
+    content: public static Vector2 Multiply(Vector2 left, float right)
+    content.vb: Public Shared Function Multiply(left As Vector2, right As Single) As Vector2
+    parameters:
+    - id: left
+      type: System.Numerics.Vector2
+      description: The vector to multiply.
+    - id: right
+      type: System.Single
+      description: The scalar value.
+    return:
+      type: System.Numerics.Vector2
+      description: The scaled vector.
+- uid: System.Numerics.Vector2.Multiply(System.Single,System.Numerics.Vector2)
+  id: Multiply(System.Single,System.Numerics.Vector2)
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: Multiply(Single, Vector2)
+  fullName: System.Numerics.Vector2.Multiply(System.Single, System.Numerics.Vector2)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs
+    startLine: 408
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Multiplies a scalar value by a specified vector.
+  syntax:
+    content: public static Vector2 Multiply(float left, Vector2 right)
+    content.vb: Public Shared Function Multiply(left As Single, right As Vector2) As Vector2
+    parameters:
+    - id: left
+      type: System.Single
+      description: The scaled value.
+    - id: right
+      type: System.Numerics.Vector2
+      description: The vector.
+    return:
+      type: System.Numerics.Vector2
+      description: The scaled vector.
+- uid: System.Numerics.Vector2.Divide(System.Numerics.Vector2,System.Numerics.Vector2)
+  id: Divide(System.Numerics.Vector2,System.Numerics.Vector2)
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: Divide(Vector2, Vector2)
+  fullName: System.Numerics.Vector2.Divide(System.Numerics.Vector2, System.Numerics.Vector2)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs
+    startLine: 420
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Divides the first vector by the second.
+  syntax:
+    content: public static Vector2 Divide(Vector2 left, Vector2 right)
+    content.vb: Public Shared Function Divide(left As Vector2, right As Vector2) As Vector2
+    parameters:
+    - id: left
+      type: System.Numerics.Vector2
+      description: The first vector.
+    - id: right
+      type: System.Numerics.Vector2
+      description: The second vector.
+    return:
+      type: System.Numerics.Vector2
+      description: The vector resulting from the division.
+- uid: System.Numerics.Vector2.Divide(System.Numerics.Vector2,System.Single)
+  id: Divide(System.Numerics.Vector2,System.Single)
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: Divide(Vector2, Single)
+  fullName: System.Numerics.Vector2.Divide(System.Numerics.Vector2, System.Single)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs
+    startLine: 432
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Divides the specified vector by a specified scalar value.
+  syntax:
+    content: public static Vector2 Divide(Vector2 left, float divisor)
+    content.vb: Public Shared Function Divide(left As Vector2, divisor As Single) As Vector2
+    parameters:
+    - id: left
+      type: System.Numerics.Vector2
+      description: The vector.
+    - id: divisor
+      type: System.Single
+      description: The scalar value.
+    return:
+      type: System.Numerics.Vector2
+      description: The result of the division.
+- uid: System.Numerics.Vector2.Negate(System.Numerics.Vector2)
+  id: Negate(System.Numerics.Vector2)
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: Negate(Vector2)
+  fullName: System.Numerics.Vector2.Negate(System.Numerics.Vector2)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2.cs
+    startLine: 443
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Negates a specified vector.
+  syntax:
+    content: public static Vector2 Negate(Vector2 value)
+    content.vb: Public Shared Function Negate(value As Vector2) As Vector2
+    parameters:
+    - id: value
+      type: System.Numerics.Vector2
+      description: The vector to negate.
+    return:
+      type: System.Numerics.Vector2
+      description: The negated vector.
+- uid: System.Numerics.Vector2.X
+  id: X
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: X
+  fullName: System.Numerics.Vector2.X
+  type: Field
+  source:
+    remote: *o1
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs
+    startLine: 17
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: The X component of the vector.
+  syntax:
+    content: public float X
+    content.vb: Public X As Single
+- uid: System.Numerics.Vector2.Y
+  id: Y
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: Y
+  fullName: System.Numerics.Vector2.Y
+  type: Field
+  source:
+    remote: *o1
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs
+    startLine: 21
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: The Y component of the vector.
+  syntax:
+    content: public float Y
+    content.vb: Public Y As Single
+- uid: System.Numerics.Vector2.#ctor(System.Single)
+  id: '#ctor(System.Single)'
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: Vector2(Single)
+  fullName: System.Numerics.Vector2.Vector2(System.Single)
+  type: Constructor
+  source:
+    remote: *o1
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs
+    startLine: 28
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Creates a new @'System.Numerics.Vector2' object whose two elements have the same value.
+  syntax:
+    content: public Vector2(float value)
+    content.vb: Public Sub New(value As Single)
+    parameters:
+    - id: value
+      type: System.Single
+      description: The value to assign to both elements.
+- uid: System.Numerics.Vector2.#ctor(System.Single,System.Single)
+  id: '#ctor(System.Single,System.Single)'
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: Vector2(Single, Single)
+  fullName: System.Numerics.Vector2.Vector2(System.Single, System.Single)
+  type: Constructor
+  source:
+    remote: *o1
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs
+    startLine: 36
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Creates a vector whose elements have the specified values.
+  syntax:
+    content: public Vector2(float x, float y)
+    content.vb: Public Sub New(x As Single, y As Single)
+    parameters:
+    - id: x
+      type: System.Single
+      description: The value to assign to the @'System.Numerics.Vector2.X' field.
+    - id: y
+      type: System.Single
+      description: The value to assign to the @'System.Numerics.Vector2.Y' field.
+- uid: System.Numerics.Vector2.CopyTo(System.Single[])
+  id: CopyTo(System.Single[])
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: CopyTo(Single[])
+  name.vb: CopyTo(Single())
+  fullName: System.Numerics.Vector2.CopyTo(System.Single[])
+  fullName.vb: System.Numerics.Vector2.CopyTo(System.Single())
+  type: Method
+  source:
+    remote: *o1
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs
+    startLine: 49
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Copies the elements of the vector to a specified array.
+  syntax:
+    content: public void CopyTo(float[] array)
+    content.vb: Public Sub CopyTo(array As Single())
+    parameters:
+    - id: array
+      type: System.Single[]
+      description: The destination array.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentException
+    description: The number of elements in the current instance is greater than in the array.
+  - type: System.RankException
+    description: '*array* is multidimensional.'
+- uid: System.Numerics.Vector2.CopyTo(System.Single[],System.Int32)
+  id: CopyTo(System.Single[],System.Int32)
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: CopyTo(Single[], Int32)
+  name.vb: CopyTo(Single(), Int32)
+  fullName: System.Numerics.Vector2.CopyTo(System.Single[], System.Int32)
+  fullName.vb: System.Numerics.Vector2.CopyTo(System.Single(), System.Int32)
+  type: Method
+  source:
+    remote: *o1
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs
+    startLine: 63
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Copies the elements of the vector to a specified array starting at a specified index position.
+  syntax:
+    content: public void CopyTo(float[] array, int index)
+    content.vb: Public Sub CopyTo(array As Single(), index As Integer)
+    parameters:
+    - id: array
+      type: System.Single[]
+      description: The destination array.
+    - id: index
+      type: System.Int32
+      description: The index at which to copy the first element of the vector.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentException
+    description: The number of elements in the current instance is greater than in the array.
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero.-or-*index* is greater than or equal to the array length.'
+  - type: System.RankException
+    description: '*array* is multidimensional.'
+- uid: System.Numerics.Vector2.Equals(System.Numerics.Vector2)
+  id: Equals(System.Numerics.Vector2)
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: Equals(Vector2)
+  fullName: System.Numerics.Vector2.Equals(System.Numerics.Vector2)
+  type: Method
+  source:
+    remote: *o1
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs
+    startLine: 87
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a value that indicates whether this instance and another vector are equal.
+  syntax:
+    content: public bool Equals(Vector2 other)
+    content.vb: Public Function Equals(other As Vector2) As Boolean
+    parameters:
+    - id: other
+      type: System.Numerics.Vector2
+      description: The other vector.
+    return:
+      type: System.Boolean
+      description: True if the other Vector2 is equal to this instance; False otherwise.
+- uid: System.Numerics.Vector2.Dot(System.Numerics.Vector2,System.Numerics.Vector2)
+  id: Dot(System.Numerics.Vector2,System.Numerics.Vector2)
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: Dot(Vector2, Vector2)
+  fullName: System.Numerics.Vector2.Dot(System.Numerics.Vector2, System.Numerics.Vector2)
+  type: Method
+  source:
+    remote: *o1
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs
+    startLine: 101
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns the dot product of two vectors.
+  syntax:
+    content: public static float Dot(Vector2 value1, Vector2 value2)
+    content.vb: Public Shared Function Dot(value1 As Vector2, value2 As Vector2) As Single
+    parameters:
+    - id: value1
+      type: System.Numerics.Vector2
+      description: The first vector.
+    - id: value2
+      type: System.Numerics.Vector2
+      description: The second vector.
+    return:
+      type: System.Single
+      description: The dot product.
+- uid: System.Numerics.Vector2.Min(System.Numerics.Vector2,System.Numerics.Vector2)
+  id: Min(System.Numerics.Vector2,System.Numerics.Vector2)
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: Min(Vector2, Vector2)
+  fullName: System.Numerics.Vector2.Min(System.Numerics.Vector2, System.Numerics.Vector2)
+  type: Method
+  source:
+    remote: *o1
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs
+    startLine: 115
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a vector whose elements are the minimum of each of the pairs of elements in two specified vectors.
+  syntax:
+    content: public static Vector2 Min(Vector2 value1, Vector2 value2)
+    content.vb: Public Shared Function Min(value1 As Vector2, value2 As Vector2) As Vector2
+    parameters:
+    - id: value1
+      type: System.Numerics.Vector2
+      description: The first vector.
+    - id: value2
+      type: System.Numerics.Vector2
+      description: The second vector.
+    return:
+      type: System.Numerics.Vector2
+      description: The minimized vector.
+- uid: System.Numerics.Vector2.Max(System.Numerics.Vector2,System.Numerics.Vector2)
+  id: Max(System.Numerics.Vector2,System.Numerics.Vector2)
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: Max(Vector2, Vector2)
+  fullName: System.Numerics.Vector2.Max(System.Numerics.Vector2, System.Numerics.Vector2)
+  type: Method
+  source:
+    remote: *o1
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs
+    startLine: 130
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a vector whose elements are the maximum of each of the pairs of elements in two specified vectors.
+  syntax:
+    content: public static Vector2 Max(Vector2 value1, Vector2 value2)
+    content.vb: Public Shared Function Max(value1 As Vector2, value2 As Vector2) As Vector2
+    parameters:
+    - id: value1
+      type: System.Numerics.Vector2
+      description: The first vector.
+    - id: value2
+      type: System.Numerics.Vector2
+      description: The second vector.
+    return:
+      type: System.Numerics.Vector2
+      description: The maximized vector
+- uid: System.Numerics.Vector2.Abs(System.Numerics.Vector2)
+  id: Abs(System.Numerics.Vector2)
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: Abs(Vector2)
+  fullName: System.Numerics.Vector2.Abs(System.Numerics.Vector2)
+  type: Method
+  source:
+    remote: *o1
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs
+    startLine: 144
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a vector whose elements are the absolute values of each of the specified vector's elements.
+  syntax:
+    content: public static Vector2 Abs(Vector2 value)
+    content.vb: Public Shared Function Abs(value As Vector2) As Vector2
+    parameters:
+    - id: value
+      type: System.Numerics.Vector2
+      description: A vector.
+    return:
+      type: System.Numerics.Vector2
+      description: The absolute value vector.
+- uid: System.Numerics.Vector2.SquareRoot(System.Numerics.Vector2)
+  id: SquareRoot(System.Numerics.Vector2)
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: SquareRoot(Vector2)
+  fullName: System.Numerics.Vector2.SquareRoot(System.Numerics.Vector2)
+  type: Method
+  source:
+    remote: *o1
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs
+    startLine: 156
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a vector whose elements are the square root of each of a specified vector's elements.
+  syntax:
+    content: public static Vector2 SquareRoot(Vector2 value)
+    content.vb: Public Shared Function SquareRoot(value As Vector2) As Vector2
+    parameters:
+    - id: value
+      type: System.Numerics.Vector2
+      description: A vector.
+    return:
+      type: System.Numerics.Vector2
+      description: The square root vector.
+- uid: System.Numerics.Vector2.op_Addition(System.Numerics.Vector2,System.Numerics.Vector2)
+  id: op_Addition(System.Numerics.Vector2,System.Numerics.Vector2)
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: Addition(Vector2, Vector2)
+  fullName: System.Numerics.Vector2.Addition(System.Numerics.Vector2, System.Numerics.Vector2)
+  type: Operator
+  source:
+    remote: *o1
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs
+    startLine: 171
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Adds two vectors together.
+  syntax:
+    content: public static Vector2 operator +(Vector2 left, Vector2 right)
+    content.vb: Public Shared Operator +(left As Vector2, right As Vector2) As Vector2
+    parameters:
+    - id: left
+      type: System.Numerics.Vector2
+      description: The first vector to add.
+    - id: right
+      type: System.Numerics.Vector2
+      description: The second vector to add.
+    return:
+      type: System.Numerics.Vector2
+      description: The summed vector.
+- uid: System.Numerics.Vector2.op_Subtraction(System.Numerics.Vector2,System.Numerics.Vector2)
+  id: op_Subtraction(System.Numerics.Vector2,System.Numerics.Vector2)
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: Subtraction(Vector2, Vector2)
+  fullName: System.Numerics.Vector2.Subtraction(System.Numerics.Vector2, System.Numerics.Vector2)
+  type: Operator
+  source:
+    remote: *o1
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs
+    startLine: 184
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Subtracts the second vector from the first.
+  syntax:
+    content: public static Vector2 operator -(Vector2 left, Vector2 right)
+    content.vb: Public Shared Operator -(left As Vector2, right As Vector2) As Vector2
+    parameters:
+    - id: left
+      type: System.Numerics.Vector2
+      description: The first vector.
+    - id: right
+      type: System.Numerics.Vector2
+      description: The second vector.
+    return:
+      type: System.Numerics.Vector2
+      description: The difference vector.
+- uid: System.Numerics.Vector2.op_Multiply(System.Numerics.Vector2,System.Numerics.Vector2)
+  id: op_Multiply(System.Numerics.Vector2,System.Numerics.Vector2)
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: Multiply(Vector2, Vector2)
+  fullName: System.Numerics.Vector2.Multiply(System.Numerics.Vector2, System.Numerics.Vector2)
+  type: Operator
+  source:
+    remote: *o1
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs
+    startLine: 197
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Multiplies two vectors together.
+  syntax:
+    content: public static Vector2 operator *(Vector2 left, Vector2 right)
+    content.vb: Public Shared Operator *(left As Vector2, right As Vector2) As Vector2
+    parameters:
+    - id: left
+      type: System.Numerics.Vector2
+      description: The first vector.
+    - id: right
+      type: System.Numerics.Vector2
+      description: The second vector.
+    return:
+      type: System.Numerics.Vector2
+      description: The product vector.
+- uid: System.Numerics.Vector2.op_Multiply(System.Single,System.Numerics.Vector2)
+  id: op_Multiply(System.Single,System.Numerics.Vector2)
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: Multiply(Single, Vector2)
+  fullName: System.Numerics.Vector2.Multiply(System.Single, System.Numerics.Vector2)
+  type: Operator
+  source:
+    remote: *o1
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs
+    startLine: 210
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Multiples the scalar value by the specified vector.
+  syntax:
+    content: public static Vector2 operator *(float left, Vector2 right)
+    content.vb: Public Shared Operator *(left As Single, right As Vector2) As Vector2
+    parameters:
+    - id: left
+      type: System.Single
+      description: The vector.
+    - id: right
+      type: System.Numerics.Vector2
+      description: The scalar value.
+    return:
+      type: System.Numerics.Vector2
+      description: The scaled vector.
+- uid: System.Numerics.Vector2.op_Multiply(System.Numerics.Vector2,System.Single)
+  id: op_Multiply(System.Numerics.Vector2,System.Single)
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: Multiply(Vector2, Single)
+  fullName: System.Numerics.Vector2.Multiply(System.Numerics.Vector2, System.Single)
+  type: Operator
+  source:
+    remote: *o1
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs
+    startLine: 223
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Multiples the specified vector by the specified scalar value.
+  syntax:
+    content: public static Vector2 operator *(Vector2 left, float right)
+    content.vb: Public Shared Operator *(left As Vector2, right As Single) As Vector2
+    parameters:
+    - id: left
+      type: System.Numerics.Vector2
+      description: The vector.
+    - id: right
+      type: System.Single
+      description: The scalar value.
+    return:
+      type: System.Numerics.Vector2
+      description: The scaled vector.
+- uid: System.Numerics.Vector2.op_Division(System.Numerics.Vector2,System.Numerics.Vector2)
+  id: op_Division(System.Numerics.Vector2,System.Numerics.Vector2)
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: Division(Vector2, Vector2)
+  fullName: System.Numerics.Vector2.Division(System.Numerics.Vector2, System.Numerics.Vector2)
+  type: Operator
+  source:
+    remote: *o1
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs
+    startLine: 236
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Divides the first vector by the second.
+  syntax:
+    content: public static Vector2 operator /(Vector2 left, Vector2 right)
+    content.vb: Public Shared Operator /(left As Vector2, right As Vector2) As Vector2
+    parameters:
+    - id: left
+      type: System.Numerics.Vector2
+      description: The first vector.
+    - id: right
+      type: System.Numerics.Vector2
+      description: The second vector.
+    return:
+      type: System.Numerics.Vector2
+      description: The vector resulting from the division.
+- uid: System.Numerics.Vector2.op_Division(System.Numerics.Vector2,System.Single)
+  id: op_Division(System.Numerics.Vector2,System.Single)
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: Division(Vector2, Single)
+  fullName: System.Numerics.Vector2.Division(System.Numerics.Vector2, System.Single)
+  type: Operator
+  source:
+    remote: *o1
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs
+    startLine: 249
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Divides the specified vector by a specified scalar value.
+  syntax:
+    content: public static Vector2 operator /(Vector2 value1, float value2)
+    content.vb: Public Shared Operator /(value1 As Vector2, value2 As Single) As Vector2
+    parameters:
+    - id: value1
+      type: System.Numerics.Vector2
+      description: The vector.
+    - id: value2
+      type: System.Single
+      description: The scalar value.
+    return:
+      type: System.Numerics.Vector2
+      description: The result of the division.
+- uid: System.Numerics.Vector2.op_UnaryNegation(System.Numerics.Vector2)
+  id: op_UnaryNegation(System.Numerics.Vector2)
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: UnaryNegation(Vector2)
+  fullName: System.Numerics.Vector2.UnaryNegation(System.Numerics.Vector2)
+  type: Operator
+  source:
+    remote: *o1
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs
+    startLine: 264
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Negates the specified vector.
+  syntax:
+    content: public static Vector2 operator -(Vector2 value)
+    content.vb: Public Shared Operator -(value As Vector2) As Vector2
+    parameters:
+    - id: value
+      type: System.Numerics.Vector2
+      description: The vector to negate.
+    return:
+      type: System.Numerics.Vector2
+      description: The negated vector.
+- uid: System.Numerics.Vector2.op_Equality(System.Numerics.Vector2,System.Numerics.Vector2)
+  id: op_Equality(System.Numerics.Vector2,System.Numerics.Vector2)
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: Equality(Vector2, Vector2)
+  fullName: System.Numerics.Vector2.Equality(System.Numerics.Vector2, System.Numerics.Vector2)
+  type: Operator
+  source:
+    remote: *o1
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs
+    startLine: 276
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a value that indicates whether each pair of elements in two specified vectors is equal.
+  syntax:
+    content: public static bool operator ==(Vector2 left, Vector2 right)
+    content.vb: Public Shared Operator =(left As Vector2, right As Vector2) As Boolean
+    parameters:
+    - id: left
+      type: System.Numerics.Vector2
+      description: The first vector to compare.
+    - id: right
+      type: System.Numerics.Vector2
+      description: The second vector to compare.
+    return:
+      type: System.Boolean
+      description: True if the vectors are equal; False otherwise.
+- uid: System.Numerics.Vector2.op_Inequality(System.Numerics.Vector2,System.Numerics.Vector2)
+  id: op_Inequality(System.Numerics.Vector2,System.Numerics.Vector2)
+  parent: System.Numerics.Vector2
+  href: System.Numerics.Vector2.yml
+  name: Inequality(Vector2, Vector2)
+  fullName: System.Numerics.Vector2.Inequality(System.Numerics.Vector2, System.Numerics.Vector2)
+  type: Operator
+  source:
+    remote: *o1
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs
+    startLine: 288
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a value that indicates whether two specified vectors are not equal.
+  syntax:
+    content: public static bool operator !=(Vector2 left, Vector2 right)
+    content.vb: Public Shared Operator <>(left As Vector2, right As Vector2) As Boolean
+    parameters:
+    - id: left
+      type: System.Numerics.Vector2
+      description: The first vector to compare.
+    - id: right
+      type: System.Numerics.Vector2
+      description: The second vector to compare.
+    return:
+      type: System.Boolean
+      description: True if the vectors are not equal; False if they are equal.
+references:
+- uid: System.Numerics
+  isExternal: false
+  name: System.Numerics
+  fullName: System.Numerics
+  type: Namespace
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Numerics.Vector2
+  parent: System.Numerics
+  isExternal: false
+  href: System.Numerics.Vector2.yml
+  name: Vector2
+  fullName: System.Numerics.Vector2
+  type: Struct
+  summary: A structure encapsulating two single precision floating point values and provides hardware accelerated methods.
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.IFormatProvider
+  parent: System
+  isExternal: true
+  name: IFormatProvider
+  fullName: System.IFormatProvider
+- uid: System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  fullName: System.Single
+- uid: System.Numerics.Matrix3x2
+  parent: System.Numerics
+  isExternal: false
+  href: System.Numerics.Matrix3x2.yml
+  name: Matrix3x2
+  fullName: System.Numerics.Matrix3x2
+  type: Struct
+  summary: A structure encapsulating a 3x2 matrix.
+- uid: System.Numerics.Matrix4x4
+  parent: System.Numerics
+  isExternal: false
+  href: System.Numerics.Matrix4x4.yml
+  name: Matrix4x4
+  fullName: System.Numerics.Matrix4x4
+  type: Struct
+  summary: A structure encapsulating a 4x4 matrix.
+- uid: System.Numerics.Quaternion
+  parent: System.Numerics
+  isExternal: false
+  href: System.Numerics.Quaternion.yml
+  name: Quaternion
+  fullName: System.Numerics.Quaternion
+  type: Struct
+  summary: >-
+    A structure encapsulating a four-dimensional vector (x,y,z,w),
+
+    which is used to efficiently rotate an object about the (x,y,z) vector by the angle theta, where w = cos(theta/2).
+- uid: System.Single[]
+  isExternal: false
+  href: System.Single.yml
+  name: Single[]
+  name.vb: Single()
+  fullName: System.Single[]
+  fullName.vb: System.Single()
+  spec.csharp:
+  - uid: System.Single
+    name: Single
+    fullName: System.Single
+    href: System.Single.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    fullName: System.Single
+    href: System.Single.yml
+  - name: ()
+    fullName: ()
+- uid: System.ArgumentNullException
+- uid: System.RankException
+  isExternal: false
+  href: System.RankException.yml
+  name: RankException
+  fullName: System.RankException
+  type: Class
+- uid: System.ArgumentOutOfRangeException
+- uid: System.ArgumentException

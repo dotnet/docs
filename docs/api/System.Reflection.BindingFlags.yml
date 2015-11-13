@@ -1,0 +1,389 @@
+items:
+- uid: System.Reflection.BindingFlags
+  id: BindingFlags
+  parent: System.Reflection
+  children:
+  - System.Reflection.BindingFlags.CreateInstance
+  - System.Reflection.BindingFlags.DeclaredOnly
+  - System.Reflection.BindingFlags.Default
+  - System.Reflection.BindingFlags.ExactBinding
+  - System.Reflection.BindingFlags.FlattenHierarchy
+  - System.Reflection.BindingFlags.GetField
+  - System.Reflection.BindingFlags.GetProperty
+  - System.Reflection.BindingFlags.IgnoreCase
+  - System.Reflection.BindingFlags.IgnoreReturn
+  - System.Reflection.BindingFlags.Instance
+  - System.Reflection.BindingFlags.InvokeMethod
+  - System.Reflection.BindingFlags.NonPublic
+  - System.Reflection.BindingFlags.OptionalParamBinding
+  - System.Reflection.BindingFlags.Public
+  - System.Reflection.BindingFlags.PutDispProperty
+  - System.Reflection.BindingFlags.PutRefDispProperty
+  - System.Reflection.BindingFlags.SetField
+  - System.Reflection.BindingFlags.SetProperty
+  - System.Reflection.BindingFlags.Static
+  - System.Reflection.BindingFlags.SuppressChangeType
+  href: System.Reflection.BindingFlags.yml
+  name: BindingFlags
+  fullName: System.Reflection.BindingFlags
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Reflection/BindingFlags.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Reflection/BindingFlags.cs
+    startLine: 16
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies flags that control binding and the way in which the search for members and types is conducted by reflection.
+  syntax:
+    content: public enum BindingFlags
+    content.vb: Public Enum BindingFlags
+- uid: System.Reflection.BindingFlags.Default
+  id: Default
+  parent: System.Reflection.BindingFlags
+  href: System.Reflection.BindingFlags.yml
+  name: Default
+  fullName: System.Reflection.BindingFlags.Default
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/BindingFlags.cs
+    startLine: 26
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies no binding flag.
+  syntax:
+    content: Default = 0
+- uid: System.Reflection.BindingFlags.IgnoreCase
+  id: IgnoreCase
+  parent: System.Reflection.BindingFlags
+  href: System.Reflection.BindingFlags.yml
+  name: IgnoreCase
+  fullName: System.Reflection.BindingFlags.IgnoreCase
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/BindingFlags.cs
+    startLine: 29
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the case of the member name should not be considered when binding.
+  syntax:
+    content: IgnoreCase = 1
+- uid: System.Reflection.BindingFlags.DeclaredOnly
+  id: DeclaredOnly
+  parent: System.Reflection.BindingFlags
+  href: System.Reflection.BindingFlags.yml
+  name: DeclaredOnly
+  fullName: System.Reflection.BindingFlags.DeclaredOnly
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/BindingFlags.cs
+    startLine: 30
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that only members declared at the level of the supplied type's hierarchy should be considered. Inherited members are not considered.
+  syntax:
+    content: DeclaredOnly = 2
+- uid: System.Reflection.BindingFlags.Instance
+  id: Instance
+  parent: System.Reflection.BindingFlags
+  href: System.Reflection.BindingFlags.yml
+  name: Instance
+  fullName: System.Reflection.BindingFlags.Instance
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/BindingFlags.cs
+    startLine: 31
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that instance members are to be included in the search.
+  syntax:
+    content: Instance = 4
+- uid: System.Reflection.BindingFlags.Static
+  id: Static
+  parent: System.Reflection.BindingFlags
+  href: System.Reflection.BindingFlags.yml
+  name: Static
+  fullName: System.Reflection.BindingFlags.Static
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/BindingFlags.cs
+    startLine: 32
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that static members are to be included in the search.
+  syntax:
+    content: Static = 8
+- uid: System.Reflection.BindingFlags.Public
+  id: Public
+  parent: System.Reflection.BindingFlags
+  href: System.Reflection.BindingFlags.yml
+  name: Public
+  fullName: System.Reflection.BindingFlags.Public
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/BindingFlags.cs
+    startLine: 33
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that public members are to be included in the search.
+  syntax:
+    content: Public = 16
+- uid: System.Reflection.BindingFlags.NonPublic
+  id: NonPublic
+  parent: System.Reflection.BindingFlags
+  href: System.Reflection.BindingFlags.yml
+  name: NonPublic
+  fullName: System.Reflection.BindingFlags.NonPublic
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/BindingFlags.cs
+    startLine: 34
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that non-public members are to be included in the search.
+  syntax:
+    content: NonPublic = 32
+- uid: System.Reflection.BindingFlags.FlattenHierarchy
+  id: FlattenHierarchy
+  parent: System.Reflection.BindingFlags
+  href: System.Reflection.BindingFlags.yml
+  name: FlattenHierarchy
+  fullName: System.Reflection.BindingFlags.FlattenHierarchy
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/BindingFlags.cs
+    startLine: 35
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that public and protected static members up the hierarchy should be returned. Private static members in inherited classes are not returned. Static members include fields, methods, events, and properties. Nested types are not returned.
+  syntax:
+    content: FlattenHierarchy = 64
+- uid: System.Reflection.BindingFlags.InvokeMethod
+  id: InvokeMethod
+  parent: System.Reflection.BindingFlags
+  href: System.Reflection.BindingFlags.yml
+  name: InvokeMethod
+  fullName: System.Reflection.BindingFlags.InvokeMethod
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/BindingFlags.cs
+    startLine: 40
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that a method is to be invoked. This must not be a constructor or a type initializer.
+  syntax:
+    content: InvokeMethod = 256
+- uid: System.Reflection.BindingFlags.CreateInstance
+  id: CreateInstance
+  parent: System.Reflection.BindingFlags
+  href: System.Reflection.BindingFlags.yml
+  name: CreateInstance
+  fullName: System.Reflection.BindingFlags.CreateInstance
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/BindingFlags.cs
+    startLine: 41
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that Reflection should create an instance of the specified type. Calls the constructor that matches the given arguments. The supplied member name is ignored. If the type of lookup is not specified, (Instance | Public) will apply. It is not possible to call a type initializer.
+  syntax:
+    content: CreateInstance = 512
+- uid: System.Reflection.BindingFlags.GetField
+  id: GetField
+  parent: System.Reflection.BindingFlags
+  href: System.Reflection.BindingFlags.yml
+  name: GetField
+  fullName: System.Reflection.BindingFlags.GetField
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/BindingFlags.cs
+    startLine: 42
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the value of the specified field should be returned.
+  syntax:
+    content: GetField = 1024
+- uid: System.Reflection.BindingFlags.SetField
+  id: SetField
+  parent: System.Reflection.BindingFlags
+  href: System.Reflection.BindingFlags.yml
+  name: SetField
+  fullName: System.Reflection.BindingFlags.SetField
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/BindingFlags.cs
+    startLine: 43
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the value of the specified field should be set.
+  syntax:
+    content: SetField = 2048
+- uid: System.Reflection.BindingFlags.GetProperty
+  id: GetProperty
+  parent: System.Reflection.BindingFlags
+  href: System.Reflection.BindingFlags.yml
+  name: GetProperty
+  fullName: System.Reflection.BindingFlags.GetProperty
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/BindingFlags.cs
+    startLine: 44
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the value of the specified property should be returned.
+  syntax:
+    content: GetProperty = 4096
+- uid: System.Reflection.BindingFlags.SetProperty
+  id: SetProperty
+  parent: System.Reflection.BindingFlags
+  href: System.Reflection.BindingFlags.yml
+  name: SetProperty
+  fullName: System.Reflection.BindingFlags.SetProperty
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/BindingFlags.cs
+    startLine: 45
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the value of the specified property should be set. For COM properties, specifying this binding flag is equivalent to specifying PutDispProperty and PutRefDispProperty.
+  syntax:
+    content: SetProperty = 8192
+- uid: System.Reflection.BindingFlags.PutDispProperty
+  id: PutDispProperty
+  parent: System.Reflection.BindingFlags
+  href: System.Reflection.BindingFlags.yml
+  name: PutDispProperty
+  fullName: System.Reflection.BindingFlags.PutDispProperty
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/BindingFlags.cs
+    startLine: 49
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the PROPPUT member on a COM object should be invoked. PROPPUT specifies a property-setting function that uses a value. Use PutDispProperty if a property has both PROPPUT and PROPPUTREF and you need to distinguish which one is called.
+  syntax:
+    content: PutDispProperty = 16384
+- uid: System.Reflection.BindingFlags.PutRefDispProperty
+  id: PutRefDispProperty
+  parent: System.Reflection.BindingFlags
+  href: System.Reflection.BindingFlags.yml
+  name: PutRefDispProperty
+  fullName: System.Reflection.BindingFlags.PutRefDispProperty
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/BindingFlags.cs
+    startLine: 50
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the PROPPUTREF member on a COM object should be invoked. PROPPUTREF specifies a property-setting function that uses a reference instead of a value. Use PutRefDispProperty if a property has both PROPPUT and PROPPUTREF and you need to distinguish which one is called.
+  syntax:
+    content: PutRefDispProperty = 32768
+- uid: System.Reflection.BindingFlags.ExactBinding
+  id: ExactBinding
+  parent: System.Reflection.BindingFlags
+  href: System.Reflection.BindingFlags.yml
+  name: ExactBinding
+  fullName: System.Reflection.BindingFlags.ExactBinding
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/BindingFlags.cs
+    startLine: 52
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that types of the supplied arguments must exactly match the types of the corresponding formal parameters. Reflection throws an exception if the caller supplies a non-null Binder object, since that implies that the caller is supplying BindToXXX implementations that will pick the appropriate method.
+  syntax:
+    content: ExactBinding = 65536
+- uid: System.Reflection.BindingFlags.SuppressChangeType
+  id: SuppressChangeType
+  parent: System.Reflection.BindingFlags
+  href: System.Reflection.BindingFlags.yml
+  name: SuppressChangeType
+  fullName: System.Reflection.BindingFlags.SuppressChangeType
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/BindingFlags.cs
+    startLine: 53
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Not implemented.
+  syntax:
+    content: SuppressChangeType = 131072
+- uid: System.Reflection.BindingFlags.OptionalParamBinding
+  id: OptionalParamBinding
+  parent: System.Reflection.BindingFlags
+  href: System.Reflection.BindingFlags.yml
+  name: OptionalParamBinding
+  fullName: System.Reflection.BindingFlags.OptionalParamBinding
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/BindingFlags.cs
+    startLine: 57
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Returns the set of members whose parameter count matches the number of supplied arguments. This binding flag is used for methods with parameters that have default values and methods with variable arguments (varargs). This flag should only be used with @'System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])'.
+  syntax:
+    content: OptionalParamBinding = 262144
+- uid: System.Reflection.BindingFlags.IgnoreReturn
+  id: IgnoreReturn
+  parent: System.Reflection.BindingFlags
+  href: System.Reflection.BindingFlags.yml
+  name: IgnoreReturn
+  fullName: System.Reflection.BindingFlags.IgnoreReturn
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/BindingFlags.cs
+    startLine: 60
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Used in COM interop to specify that the return value of the member can be ignored.
+  syntax:
+    content: IgnoreReturn = 16777216
+references:
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace

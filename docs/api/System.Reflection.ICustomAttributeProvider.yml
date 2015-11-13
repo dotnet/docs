@@ -1,0 +1,154 @@
+items:
+- uid: System.Reflection.ICustomAttributeProvider
+  id: ICustomAttributeProvider
+  parent: System.Reflection
+  children:
+  - System.Reflection.ICustomAttributeProvider.GetCustomAttributes(System.Boolean)
+  - System.Reflection.ICustomAttributeProvider.GetCustomAttributes(System.Type,System.Boolean)
+  - System.Reflection.ICustomAttributeProvider.IsDefined(System.Type,System.Boolean)
+  href: System.Reflection.ICustomAttributeProvider.yml
+  name: ICustomAttributeProvider
+  fullName: System.Reflection.ICustomAttributeProvider
+  type: Interface
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Reflection/ICustomAttributeProvider.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Reflection/ICustomAttributeProvider.cs
+    startLine: 16
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Provides custom attributes for reflection objects that support them.
+  syntax:
+    content: public interface ICustomAttributeProvider
+    content.vb: Public Interface ICustomAttributeProvider
+- uid: System.Reflection.ICustomAttributeProvider.GetCustomAttributes(System.Type,System.Boolean)
+  id: GetCustomAttributes(System.Type,System.Boolean)
+  parent: System.Reflection.ICustomAttributeProvider
+  href: System.Reflection.ICustomAttributeProvider.yml
+  name: GetCustomAttributes(Type, Boolean)
+  fullName: System.Reflection.ICustomAttributeProvider.GetCustomAttributes(System.Type, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/ICustomAttributeProvider.cs
+    startLine: 21
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Returns an array of custom attributes defined on this member, identified by type, or an empty array if there are no custom attributes of that type.
+  syntax:
+    content: object[] GetCustomAttributes(Type attributeType, bool inherit)
+    content.vb: Function GetCustomAttributes(attributeType As Type, inherit As Boolean) As Object()
+    parameters:
+    - id: attributeType
+      type: System.Type
+      description: The type of the custom attributes.
+    - id: inherit
+      type: System.Boolean
+      description: When true, look up the hierarchy chain for the inherited custom attribute.
+    return:
+      type: System.Object[]
+  exceptions:
+  - type: System.TypeLoadException
+    description: The custom attribute type cannot be loaded.
+  - type: System.ArgumentNullException
+    description: '*attributeType* is null.'
+- uid: System.Reflection.ICustomAttributeProvider.GetCustomAttributes(System.Boolean)
+  id: GetCustomAttributes(System.Boolean)
+  parent: System.Reflection.ICustomAttributeProvider
+  href: System.Reflection.ICustomAttributeProvider.yml
+  name: GetCustomAttributes(Boolean)
+  fullName: System.Reflection.ICustomAttributeProvider.GetCustomAttributes(System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/ICustomAttributeProvider.cs
+    startLine: 25
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Returns an array of all of the custom attributes defined on this member, excluding named attributes, or an empty array if there are no custom attributes.
+  syntax:
+    content: object[] GetCustomAttributes(bool inherit)
+    content.vb: Function GetCustomAttributes(inherit As Boolean) As Object()
+    parameters:
+    - id: inherit
+      type: System.Boolean
+      description: When true, look up the hierarchy chain for the inherited custom attribute.
+    return:
+      type: System.Object[]
+  exceptions:
+  - type: System.TypeLoadException
+    description: The custom attribute type cannot be loaded.
+  - type: System.Reflection.AmbiguousMatchException
+    description: There is more than one attribute of type *attributeType* defined on this member.
+- uid: System.Reflection.ICustomAttributeProvider.IsDefined(System.Type,System.Boolean)
+  id: IsDefined(System.Type,System.Boolean)
+  parent: System.Reflection.ICustomAttributeProvider
+  href: System.Reflection.ICustomAttributeProvider.yml
+  name: IsDefined(Type, Boolean)
+  fullName: System.Reflection.ICustomAttributeProvider.IsDefined(System.Type, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/ICustomAttributeProvider.cs
+    startLine: 29
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Indicates whether one or more instance of *attributeType* is defined on this member.
+  syntax:
+    content: bool IsDefined(Type attributeType, bool inherit)
+    content.vb: Function IsDefined(attributeType As Type, inherit As Boolean) As Boolean
+    parameters:
+    - id: attributeType
+      type: System.Type
+      description: The type of the custom attributes.
+    - id: inherit
+      type: System.Boolean
+      description: When true, look up the hierarchy chain for the inherited custom attribute.
+    return:
+      type: System.Boolean
+references:
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  fullName: System.Type
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  name.vb: Object()
+  fullName: System.Object[]
+  fullName.vb: System.Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

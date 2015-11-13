@@ -1,0 +1,42 @@
+items:
+- uid: System.Runtime.CompilerServices.RuntimeHelpers.TryCode
+  id: RuntimeHelpers.TryCode
+  parent: System.Runtime.CompilerServices
+  children: []
+  href: System.Runtime.CompilerServices.RuntimeHelpers.TryCode.yml
+  name: RuntimeHelpers.TryCode
+  fullName: System.Runtime.CompilerServices.RuntimeHelpers.TryCode
+  type: Delegate
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/CompilerServices/RuntimeHelpers.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/CompilerServices/RuntimeHelpers.cs
+    startLine: 213
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.CompilerServices
+  summary: Represents a delegate to code that should be run in a try block..
+  syntax:
+    content: public delegate void TryCode(object userData);
+    content.vb: Public Delegate Sub TryCode(userData As Object)
+    parameters:
+    - id: userData
+      type: System.Object
+      description: Data to pass to the delegate.
+references:
+- uid: System.Runtime.CompilerServices
+  isExternal: false
+  name: System.Runtime.CompilerServices
+  fullName: System.Runtime.CompilerServices
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

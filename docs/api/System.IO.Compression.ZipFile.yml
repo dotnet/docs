@@ -1,0 +1,749 @@
+items:
+- uid: System.IO.Compression.ZipFile
+  id: ZipFile
+  parent: System.IO.Compression
+  children:
+  - System.IO.Compression.ZipFile.CreateFromDirectory(System.String,System.String)
+  - System.IO.Compression.ZipFile.CreateFromDirectory(System.String,System.String,CompressionLevel,System.Boolean)
+  - System.IO.Compression.ZipFile.CreateFromDirectory(System.String,System.String,CompressionLevel,System.Boolean,System.Text.Encoding)
+  - System.IO.Compression.ZipFile.ExtractToDirectory(System.String,System.String)
+  - System.IO.Compression.ZipFile.ExtractToDirectory(System.String,System.String,System.Text.Encoding)
+  - System.IO.Compression.ZipFile.Open(System.String,ZipArchiveMode)
+  - System.IO.Compression.ZipFile.Open(System.String,ZipArchiveMode,System.Text.Encoding)
+  - System.IO.Compression.ZipFile.OpenRead(System.String)
+  href: System.IO.Compression.ZipFile.yml
+  name: ZipFile
+  fullName: System.IO.Compression.ZipFile
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.IO.Compression.ZipFile/src/System/IO/Compression/ZipFile.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.IO.Compression.ZipFile/src/System/IO/Compression/ZipFile.cs
+    startLine: 8
+  assemblies:
+  - System.IO.Compression.ZipFile
+  namespace: System.IO.Compression
+  summary: Provides static methods for creating, extracting, and opening zip archives.
+  syntax:
+    content: public class ZipFile
+    content.vb: Public Class ZipFile
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.IO.Compression.ZipFile.OpenRead(System.String)
+  id: OpenRead(System.String)
+  parent: System.IO.Compression.ZipFile
+  href: System.IO.Compression.ZipFile.yml
+  name: OpenRead(String)
+  fullName: System.IO.Compression.ZipFile.OpenRead(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.Compression.ZipFile/src/System/IO/Compression/ZipFile.cs
+    startLine: 33
+  assemblies:
+  - System.IO.Compression.ZipFile
+  namespace: System.IO.Compression
+  summary: Opens a zip archive for reading at the specified path.
+  syntax:
+    content: public static ZipArchive OpenRead(string archiveFileName)
+    content.vb: Public Shared Function OpenRead(archiveFileName As String) As ZipArchive
+    parameters:
+    - id: archiveFileName
+      type: System.String
+      description: The path to the archive to open, specified as a relative or absolute path. A relative path is interpreted as relative to the current working directory.
+    return:
+      type: ZipArchive
+  exceptions:
+  - type: System.ArgumentException
+    description: '*archiveFileName* is @''System.String.Empty'', contains only white space, or contains at least one invalid character.'
+  - type: System.ArgumentNullException
+    description: '*archiveFileName* is null.'
+  - type: System.IO.PathTooLongException
+    description: In *archiveFileName*, the specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must not exceed 248 characters, and file names must not exceed 260 characters.
+  - type: System.IO.DirectoryNotFoundException
+    description: '*archiveFileName* is invalid or does not exist (for example, it is on an unmapped drive).'
+  - type: System.IO.IOException
+    description: '*archiveFileName* could not be opened.'
+  - type: System.UnauthorizedAccessException
+    description: '*archiveFileName* specifies a directory.-or-The caller does not have the required permission to access the file specified in *archiveFileName*.'
+  - type: System.IO.FileNotFoundException
+    description: The file specified in *archiveFileName* is not found.
+  - type: System.NotSupportedException
+    description: '*archiveFileName* contains an invalid format.'
+  - type: System.IO.InvalidDataException
+    description: '*archiveFileName* could not be interpreted as a zip archive.'
+- uid: System.IO.Compression.ZipFile.Open(System.String,ZipArchiveMode)
+  id: Open(System.String,ZipArchiveMode)
+  parent: System.IO.Compression.ZipFile
+  href: System.IO.Compression.ZipFile.yml
+  name: Open(String, ZipArchiveMode)
+  fullName: System.IO.Compression.ZipFile.Open(System.String, ZipArchiveMode)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.Compression.ZipFile/src/System/IO/Compression/ZipFile.cs
+    startLine: 74
+  assemblies:
+  - System.IO.Compression.ZipFile
+  namespace: System.IO.Compression
+  summary: Opens a <code>ZipArchive</code> on the specified <code>archiveFileName</code> in the specified <code>ZipArchiveMode</code> mode.
+  syntax:
+    content: public static ZipArchive Open(string archiveFileName, ZipArchiveMode mode)
+    content.vb: Public Shared Function Open(archiveFileName As String, mode As ZipArchiveMode) As ZipArchive
+    parameters:
+    - id: archiveFileName
+      type: System.String
+      description: >-
+        A string specifying the path on the filesystem to open the archive on.
+
+        The path is permitted to specify relative or absolute path information.
+
+        Relative path information is interpreted as relative to the current working directory.
+    - id: mode
+      type: ZipArchiveMode
+      description: >-
+        See the description of the <code>ZipArchiveMode</code> enum.
+
+        If <code>Read</code> is specified, the file is opened with <code>System.IO.FileMode.Open</code>, and will throw
+
+        a <code>FileNotFoundException</code> if the file does not exist.
+
+        If <code>Create</code> is specified, the file is opened with <code>System.IO.FileMode.CreateNew</code>, and will throw
+
+        a <code>System.IO.IOException</code> if the file already exists.
+
+        If <code>Update</code> is specified, the file is opened with <code>System.IO.FileMode.OpenOrCreate</code>.
+
+        If the file exists and is a Zip file, its entries will become accessible, and may be modified, and new entries may be created.
+
+        If the file exists and is not a Zip file, a <code>ZipArchiveException</code> will be thrown.
+
+        If the file exists and is empty or does not exist, a new Zip file will be created.
+
+        Note that creating a Zip file with the <code>ZipArchiveMode.Create</code> mode is more efficient when creating a new Zip file.
+    return:
+      type: ZipArchive
+  exceptions:
+  - type: System.ArgumentException
+    description: >-
+      archiveFileName is a zero-length string, contains only white space,
+
+      or contains one or more invalid characters as defined by InvalidPathChars.
+  - type: System.ArgumentNullException
+    description: path is null.
+  - type: System.IO.PathTooLongException
+    description: >-
+      The specified archiveFileName exceeds the system-defined maximum length.
+
+      For example, on Windows-based platforms, paths must be less than 248 characters,
+
+      and file names must be less than 260 characters.
+  - type: System.IO.DirectoryNotFoundException
+    description: The specified archiveFileName is invalid, (for example, it is on an unmapped drive).
+  - type: System.IO.IOException
+    description: An unspecified I/O error occurred while opening the file.
+  - type: System.UnauthorizedAccessException
+    description: >-
+      archiveFileName specified a directory.
+
+      -OR- The caller does not have the required permission.
+  - type: System.ArgumentOutOfRangeException
+    description: mode specified an invalid value.
+  - type: System.IO.FileNotFoundException
+    description: The file specified in archiveFileName was not found.
+  - type: System.NotSupportedException
+    description: archiveFileName is in an invalid format.
+- uid: System.IO.Compression.ZipFile.Open(System.String,ZipArchiveMode,System.Text.Encoding)
+  id: Open(System.String,ZipArchiveMode,System.Text.Encoding)
+  parent: System.IO.Compression.ZipFile
+  href: System.IO.Compression.ZipFile.yml
+  name: Open(String, ZipArchiveMode, Encoding)
+  fullName: System.IO.Compression.ZipFile.Open(System.String, ZipArchiveMode, System.Text.Encoding)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.Compression.ZipFile/src/System/IO/Compression/ZipFile.cs
+    startLine: 155
+  assemblies:
+  - System.IO.Compression.ZipFile
+  namespace: System.IO.Compression
+  summary: Opens a <code>ZipArchive</code> on the specified <code>archiveFileName</code> in the specified <code>ZipArchiveMode</code> mode.
+  syntax:
+    content: public static ZipArchive Open(string archiveFileName, ZipArchiveMode mode, Encoding entryNameEncoding)
+    content.vb: Public Shared Function Open(archiveFileName As String, mode As ZipArchiveMode, entryNameEncoding As Encoding) As ZipArchive
+    parameters:
+    - id: archiveFileName
+      type: System.String
+      description: >-
+        A string specifying the path on the filesystem to open the archive on.
+
+        The path is permitted to specify relative or absolute path information.
+
+        Relative path information is interpreted as relative to the current working directory.
+    - id: mode
+      type: ZipArchiveMode
+      description: >-
+        See the description of the <code>ZipArchiveMode</code> enum.
+
+        If <code>Read</code> is specified, the file is opened with <code>System.IO.FileMode.Open</code>, and will throw
+
+        a <code>FileNotFoundException</code> if the file does not exist.
+
+        If <code>Create</code> is specified, the file is opened with <code>System.IO.FileMode.CreateNew</code>, and will throw
+
+        a <code>System.IO.IOException</code> if the file already exists.
+
+        If <code>Update</code> is specified, the file is opened with <code>System.IO.FileMode.OpenOrCreate</code>.
+
+        If the file exists and is a Zip file, its entries will become accessible, and may be modified, and new entries may be created.
+
+        If the file exists and is not a Zip file, a <code>ZipArchiveException</code> will be thrown.
+
+        If the file exists and is empty or does not exist, a new Zip file will be created.
+
+        Note that creating a Zip file with the <code>ZipArchiveMode.Create</code> mode is more efficient when creating a new Zip file.
+    - id: entryNameEncoding
+      type: System.Text.Encoding
+      description: >-
+        The encoding to use when reading or writing entry names in this ZipArchive.
+
+        ///     <para>NOTE: Specifying this parameter to values other than <c>null</c> is discouraged.
+
+        However, this may be necessary for interoperability with ZIP archive tools and libraries that do not correctly support
+
+        UTF-8 encoding for entry names.<br />
+
+        This value is used as follows:</para><para><strong>Reading (opening) ZIP archive files:</strong></para><para>If <c>entryNameEncoding</c> is not specified (<c>== null</c>):</para><list><item>For entries where the language encoding flag (EFS) in the general purpose bit flag of the local file header is <em>not</em> set,
+
+        use the current system default code page (<c>Encoding.Default</c>) in order to decode the entry name.</item><item>For entries where the language encoding flag (EFS) in the general purpose bit flag of the local file header <em>is</em> set,
+
+        use UTF-8 (<c>Encoding.UTF8</c>) in order to decode the entry name.</item></list><para>If <c>entryNameEncoding</c> is specified (<c>!= null</c>):</para><list><item>For entries where the language encoding flag (EFS) in the general purpose bit flag of the local file header is <em>not</em> set,
+
+        use the specified <c>entryNameEncoding</c> in order to decode the entry name.</item><item>For entries where the language encoding flag (EFS) in the general purpose bit flag of the local file header <em>is</em> set,
+
+        use UTF-8 (<c>Encoding.UTF8</c>) in order to decode the entry name.</item></list><para><strong>Writing (saving) ZIP archive files:</strong></para><para>If <c>entryNameEncoding</c> is not specified (<c>== null</c>):</para><list><item>For entry names that contain characters outside the ASCII range,
+
+        the language encoding flag (EFS) will be set in the general purpose bit flag of the local file header,
+
+        and UTF-8 (<c>Encoding.UTF8</c>) will be used in order to encode the entry name into bytes.</item><item>For entry names that do not contain characters outside the ASCII range,
+
+        the language encoding flag (EFS) will not be set in the general purpose bit flag of the local file header,
+
+        and the current system default code page (<c>Encoding.Default</c>) will be used to encode the entry names into bytes.</item></list><para>If <c>entryNameEncoding</c> is specified (<c>!= null</c>):</para><list><item>The specified <c>entryNameEncoding</c> will always be used to encode the entry names into bytes.
+
+        The language encoding flag (EFS) in the general purpose bit flag of the local file header will be set if and only
+
+        if the specified <c>entryNameEncoding</c> is a UTF-8 encoding.</item></list><para>Note that Unicode encodings other than UTF-8 may not be currently used for the <c>entryNameEncoding</c>,
+
+        otherwise an @'System.ArgumentException' is thrown.</para>
+    return:
+      type: ZipArchive
+  exceptions:
+  - type: System.ArgumentException
+    description: >-
+      archiveFileName is a zero-length string, contains only white space,
+
+      or contains one or more invalid characters as defined by InvalidPathChars.
+  - type: System.ArgumentNullException
+    description: path is null.
+  - type: System.IO.PathTooLongException
+    description: >-
+      The specified archiveFileName exceeds the system-defined maximum length.
+
+      For example, on Windows-based platforms, paths must be less than 248 characters,
+
+      and file names must be less than 260 characters.
+  - type: System.IO.DirectoryNotFoundException
+    description: The specified archiveFileName is invalid, (for example, it is on an unmapped drive).
+  - type: System.IO.IOException
+    description: An unspecified I/O error occurred while opening the file.
+  - type: System.UnauthorizedAccessException
+    description: >-
+      archiveFileName specified a directory.
+
+      -OR- The caller does not have the required permission.
+  - type: System.ArgumentOutOfRangeException
+    description: mode specified an invalid value.
+  - type: System.IO.FileNotFoundException
+    description: The file specified in archiveFileName was not found.
+  - type: System.NotSupportedException
+    description: archiveFileName is in an invalid format.
+- uid: System.IO.Compression.ZipFile.CreateFromDirectory(System.String,System.String)
+  id: CreateFromDirectory(System.String,System.String)
+  parent: System.IO.Compression.ZipFile
+  href: System.IO.Compression.ZipFile.yml
+  name: CreateFromDirectory(String, String)
+  fullName: System.IO.Compression.ZipFile.CreateFromDirectory(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.Compression.ZipFile/src/System/IO/Compression/ZipFile.cs
+    startLine: 246
+  assemblies:
+  - System.IO.Compression.ZipFile
+  namespace: System.IO.Compression
+  summary: Creates a zip archive that contains the files and directories from the specified directory.
+  syntax:
+    content: public static void CreateFromDirectory(string sourceDirectoryName, string destinationArchiveFileName)
+    content.vb: Public Shared Sub CreateFromDirectory(sourceDirectoryName As String, destinationArchiveFileName As String)
+    parameters:
+    - id: sourceDirectoryName
+      type: System.String
+      description: The path to the directory to be archived, specified as a relative or absolute path. A relative path is interpreted as relative to the current working directory.
+    - id: destinationArchiveFileName
+      type: System.String
+      description: The path of the archive to be created, specified as a relative or absolute path. A relative path is interpreted as relative to the current working directory.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*sourceDirectoryName* or *destinationArchiveFileName* is @''System.String.Empty'', contains only white space, or contains at least one invalid character.'
+  - type: System.ArgumentNullException
+    description: '*sourceDirectoryName* or *destinationArchiveFileName* is null.'
+  - type: System.IO.PathTooLongException
+    description: In *sourceDirectoryName* or *destinationArchiveFileName*, the specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must not exceed 248 characters, and file names must not exceed 260 characters.
+  - type: System.IO.DirectoryNotFoundException
+    description: '*sourceDirectoryName* is invalid or does not exist (for example, it is on an unmapped drive).'
+  - type: System.IO.IOException
+    description: '*destinationArchiveFileName* already exists.-or-A file in the specified directory could not be opened.'
+  - type: System.UnauthorizedAccessException
+    description: '*destinationArchiveFileName* specifies a directory.-or-The caller does not have the required permission to access the directory specified in *sourceDirectoryName* or the file specified in *destinationArchiveFileName*.'
+  - type: System.NotSupportedException
+    description: '*sourceDirectoryName* or *destinationArchiveFileName* contains an invalid format.-or-The zip archive does not support writing.'
+- uid: System.IO.Compression.ZipFile.CreateFromDirectory(System.String,System.String,CompressionLevel,System.Boolean)
+  id: CreateFromDirectory(System.String,System.String,CompressionLevel,System.Boolean)
+  parent: System.IO.Compression.ZipFile
+  href: System.IO.Compression.ZipFile.yml
+  name: CreateFromDirectory(String, String, CompressionLevel, Boolean)
+  fullName: System.IO.Compression.ZipFile.CreateFromDirectory(System.String, System.String, CompressionLevel, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.Compression.ZipFile/src/System/IO/Compression/ZipFile.cs
+    startLine: 296
+  assemblies:
+  - System.IO.Compression.ZipFile
+  namespace: System.IO.Compression
+  syntax:
+    content: public static void CreateFromDirectory(string sourceDirectoryName, string destinationArchiveFileName, CompressionLevel compressionLevel, bool includeBaseDirectory)
+    content.vb: Public Shared Sub CreateFromDirectory(sourceDirectoryName As String, destinationArchiveFileName As String, compressionLevel As CompressionLevel, includeBaseDirectory As Boolean)
+    parameters:
+    - id: sourceDirectoryName
+      type: System.String
+    - id: destinationArchiveFileName
+      type: System.String
+    - id: compressionLevel
+      type: CompressionLevel
+    - id: includeBaseDirectory
+      type: System.Boolean
+- uid: System.IO.Compression.ZipFile.CreateFromDirectory(System.String,System.String,CompressionLevel,System.Boolean,System.Text.Encoding)
+  id: CreateFromDirectory(System.String,System.String,CompressionLevel,System.Boolean,System.Text.Encoding)
+  parent: System.IO.Compression.ZipFile
+  href: System.IO.Compression.ZipFile.yml
+  name: CreateFromDirectory(String, String, CompressionLevel, Boolean, Encoding)
+  fullName: System.IO.Compression.ZipFile.CreateFromDirectory(System.String, System.String, CompressionLevel, System.Boolean, System.Text.Encoding)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.Compression.ZipFile/src/System/IO/Compression/ZipFile.cs
+    startLine: 369
+  assemblies:
+  - System.IO.Compression.ZipFile
+  namespace: System.IO.Compression
+  syntax:
+    content: public static void CreateFromDirectory(string sourceDirectoryName, string destinationArchiveFileName, CompressionLevel compressionLevel, bool includeBaseDirectory, Encoding entryNameEncoding)
+    content.vb: Public Shared Sub CreateFromDirectory(sourceDirectoryName As String, destinationArchiveFileName As String, compressionLevel As CompressionLevel, includeBaseDirectory As Boolean, entryNameEncoding As Encoding)
+    parameters:
+    - id: sourceDirectoryName
+      type: System.String
+    - id: destinationArchiveFileName
+      type: System.String
+    - id: compressionLevel
+      type: CompressionLevel
+    - id: includeBaseDirectory
+      type: System.Boolean
+    - id: entryNameEncoding
+      type: System.Text.Encoding
+- uid: System.IO.Compression.ZipFile.ExtractToDirectory(System.String,System.String)
+  id: ExtractToDirectory(System.String,System.String)
+  parent: System.IO.Compression.ZipFile
+  href: System.IO.Compression.ZipFile.yml
+  name: ExtractToDirectory(String, String)
+  fullName: System.IO.Compression.ZipFile.ExtractToDirectory(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.Compression.ZipFile/src/System/IO/Compression/ZipFile.cs
+    startLine: 407
+  assemblies:
+  - System.IO.Compression.ZipFile
+  namespace: System.IO.Compression
+  summary: Extracts all the files in the specified zip archive to a directory on the file system.
+  syntax:
+    content: public static void ExtractToDirectory(string sourceArchiveFileName, string destinationDirectoryName)
+    content.vb: Public Shared Sub ExtractToDirectory(sourceArchiveFileName As String, destinationDirectoryName As String)
+    parameters:
+    - id: sourceArchiveFileName
+      type: System.String
+      description: The path to the archive that is to be extracted.
+    - id: destinationDirectoryName
+      type: System.String
+      description: The path to the directory in which to place the extracted files, specified as a relative or absolute path. A relative path is interpreted as relative to the current working directory.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*destinationDirectoryName* or *sourceArchiveFileName* is @''System.String.Empty'', contains only white space, or contains at least one invalid character.'
+  - type: System.ArgumentNullException
+    description: '*destinationDirectoryName* or *sourceArchiveFileName* is null.'
+  - type: System.IO.PathTooLongException
+    description: The specified path in *destinationDirectoryName* or *sourceArchiveFileName* exceeds the system-defined maximum length. For example, on Windows-based platforms, paths must not exceed 248 characters, and file names must not exceed 260 characters.
+  - type: System.IO.DirectoryNotFoundException
+    description: The specified path is invalid (for example, it is on an unmapped drive).
+  - type: System.IO.IOException
+    description: The directory specified by *destinationDirectoryName* already exists.-or-The name of an entry in the archive is @'System.String.Empty', contains only white space, or contains at least one invalid character.-or-Extracting an archive entry would create a file that is outside the directory specified by *destinationDirectoryName*. (For example, this might happen if the entry name contains parent directory accessors.) -or-An archive entry to extract has the same name as an entry that has already been extracted from the same archive.
+  - type: System.UnauthorizedAccessException
+    description: The caller does not have the required permission to access the archive or the destination directory.
+  - type: System.NotSupportedException
+    description: '*destinationDirectoryName* or *sourceArchiveFileName* contains an invalid format.'
+  - type: System.IO.FileNotFoundException
+    description: '*sourceArchiveFileName* was not found.'
+  - type: System.IO.InvalidDataException
+    description: The archive specified by *sourceArchiveFileName* is not a valid zip archive.-or-An archive entry was not found or was corrupt.-or-An archive entry was compressed by using a compression method that is not supported.
+- uid: System.IO.Compression.ZipFile.ExtractToDirectory(System.String,System.String,System.Text.Encoding)
+  id: ExtractToDirectory(System.String,System.String,System.Text.Encoding)
+  parent: System.IO.Compression.ZipFile
+  href: System.IO.Compression.ZipFile.yml
+  name: ExtractToDirectory(String, String, Encoding)
+  fullName: System.IO.Compression.ZipFile.ExtractToDirectory(System.String, System.String, System.Text.Encoding)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.Compression.ZipFile/src/System/IO/Compression/ZipFile.cs
+    startLine: 465
+  assemblies:
+  - System.IO.Compression.ZipFile
+  namespace: System.IO.Compression
+  summary: Extracts all the files in the specified zip archive to a directory on the file system and uses the specified character encoding for entry names.
+  syntax:
+    content: public static void ExtractToDirectory(string sourceArchiveFileName, string destinationDirectoryName, Encoding entryNameEncoding)
+    content.vb: Public Shared Sub ExtractToDirectory(sourceArchiveFileName As String, destinationDirectoryName As String, entryNameEncoding As Encoding)
+    parameters:
+    - id: sourceArchiveFileName
+      type: System.String
+      description: The path to the archive that is to be extracted.
+    - id: destinationDirectoryName
+      type: System.String
+      description: The path to the directory in which to place the extracted files, specified as a relative or absolute path. A relative path is interpreted as relative to the current working directory.
+    - id: entryNameEncoding
+      type: System.Text.Encoding
+      description: The encoding to use when reading or writing entry names in this archive. Specify a value for this parameter only when an encoding is required for interoperability with zip archive tools and libraries that do not support UTF-8 encoding for entry names.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*destinationDirectoryName* or *sourceArchiveFileName* is @''System.String.Empty'', contains only white space, or contains at least one invalid character.-or-*entryNameEncoding* is set to a Unicode encoding other than UTF-8.'
+  - type: System.ArgumentNullException
+    description: '*destinationDirectoryName* or *sourceArchiveFileName* is null.'
+  - type: System.IO.PathTooLongException
+    description: The specified path in *destinationDirectoryName* or *sourceArchiveFileName* exceeds the system-defined maximum length. For example, on Windows-based platforms, paths must not exceed 248 characters, and file names must not exceed 260 characters.
+  - type: System.IO.DirectoryNotFoundException
+    description: The specified path is invalid (for example, it is on an unmapped drive).
+  - type: System.IO.IOException
+    description: The directory specified by *destinationDirectoryName* already exists.-or-The name of an entry in the archive is @'System.String.Empty', contains only white space, or contains at least one invalid character.-or-Extracting an archive entry would create a file that is outside the directory specified by *destinationDirectoryName*. (For example, this might happen if the entry name contains parent directory accessors.) -or-An archive entry to extract has the same name as an entry that has already been extracted from the same archive.
+  - type: System.UnauthorizedAccessException
+    description: The caller does not have the required permission to access the archive or the destination directory.
+  - type: System.NotSupportedException
+    description: '*destinationDirectoryName* or *sourceArchiveFileName* contains an invalid format.'
+  - type: System.IO.FileNotFoundException
+    description: '*sourceArchiveFileName* was not found.'
+  - type: System.IO.InvalidDataException
+    description: The archive specified by *sourceArchiveFileName* is not a valid zip archive.-or-An archive entry was not found or was corrupt.-or-An archive entry was compressed by using a compression method that is not supported.
+references:
+- uid: System.IO.Compression
+  isExternal: false
+  name: System.IO.Compression
+  fullName: System.IO.Compression
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.ArgumentException
+- uid: System.ArgumentNullException
+- uid: System.IO.PathTooLongException
+  isExternal: false
+  href: System.IO.PathTooLongException.yml
+  name: PathTooLongException
+  fullName: System.IO.PathTooLongException
+  type: Class
+- uid: System.IO.DirectoryNotFoundException
+  isExternal: false
+  href: System.IO.DirectoryNotFoundException.yml
+  name: DirectoryNotFoundException
+  fullName: System.IO.DirectoryNotFoundException
+  type: Class
+- uid: System.IO.IOException
+- uid: System.UnauthorizedAccessException
+  isExternal: false
+  href: System.UnauthorizedAccessException.yml
+  name: UnauthorizedAccessException
+  fullName: System.UnauthorizedAccessException
+  type: Class
+- uid: System.IO.FileNotFoundException
+  isExternal: false
+  href: System.IO.FileNotFoundException.yml
+  name: FileNotFoundException
+  fullName: System.IO.FileNotFoundException
+  type: Class
+- uid: System.NotSupportedException
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: ZipArchive
+  isExternal: true
+  name: ZipArchive
+  fullName: ZipArchive
+- uid: System.ArgumentOutOfRangeException
+- uid: ZipArchiveMode
+  isExternal: true
+  name: ZipArchiveMode
+  fullName: ZipArchiveMode
+- uid: System.Text.Encoding
+  parent: System.Text
+  isExternal: true
+  name: Encoding
+  fullName: System.Text.Encoding
+- uid: System.Text
+  isExternal: false
+  name: System.Text
+  fullName: System.Text
+- uid: CompressionLevel
+  isExternal: true
+  name: CompressionLevel
+  fullName: CompressionLevel
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean

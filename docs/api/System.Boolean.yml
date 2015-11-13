@@ -1,0 +1,1021 @@
+items:
+- uid: System.Boolean
+  id: Boolean
+  parent: System
+  children:
+  - System.Boolean.CompareTo(System.Boolean)
+  - System.Boolean.CompareTo(System.Object)
+  - System.Boolean.Equals(System.Boolean)
+  - System.Boolean.Equals(System.Object)
+  - System.Boolean.FalseString
+  - System.Boolean.GetHashCode
+  - System.Boolean.GetTypeCode
+  - System.Boolean.Parse(System.String)
+  - System.Boolean.System#IConvertible#ToBoolean(System.IFormatProvider)
+  - System.Boolean.System#IConvertible#ToByte(System.IFormatProvider)
+  - System.Boolean.System#IConvertible#ToChar(System.IFormatProvider)
+  - System.Boolean.System#IConvertible#ToDateTime(System.IFormatProvider)
+  - System.Boolean.System#IConvertible#ToDecimal(System.IFormatProvider)
+  - System.Boolean.System#IConvertible#ToDouble(System.IFormatProvider)
+  - System.Boolean.System#IConvertible#ToInt16(System.IFormatProvider)
+  - System.Boolean.System#IConvertible#ToInt32(System.IFormatProvider)
+  - System.Boolean.System#IConvertible#ToInt64(System.IFormatProvider)
+  - System.Boolean.System#IConvertible#ToSByte(System.IFormatProvider)
+  - System.Boolean.System#IConvertible#ToSingle(System.IFormatProvider)
+  - System.Boolean.System#IConvertible#ToType(System.Type,System.IFormatProvider)
+  - System.Boolean.System#IConvertible#ToUInt16(System.IFormatProvider)
+  - System.Boolean.System#IConvertible#ToUInt32(System.IFormatProvider)
+  - System.Boolean.System#IConvertible#ToUInt64(System.IFormatProvider)
+  - System.Boolean.ToString
+  - System.Boolean.ToString(System.IFormatProvider)
+  - System.Boolean.TrueString
+  - System.Boolean.TryParse(System.String,System.Boolean@)
+  href: System.Boolean.yml
+  name: Boolean
+  fullName: System.Boolean
+  type: Struct
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Boolean.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Boolean.cs
+    startLine: 19
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Represents a Boolean (true or false) value.
+  syntax:
+    content: 'public struct Boolean : IComparable, IConvertible, IComparable<bool>, IEquatable<bool>'
+    content.vb: Public Structure Boolean Implements IComparable, IConvertible, IComparable(Of Boolean), IEquatable(Of Boolean)
+  implements:
+  - System.IComparable
+  - System.IConvertible
+  - System.IComparable{System.Boolean}
+  - System.IEquatable{System.Boolean}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.Boolean.TrueString
+  id: TrueString
+  parent: System.Boolean
+  href: System.Boolean.yml
+  name: TrueString
+  fullName: System.Boolean.TrueString
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Boolean.cs
+    startLine: 57
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Represents the Boolean value true as a string. This field is read-only.
+  syntax:
+    content: public static readonly string TrueString
+    content.vb: Public Shared ReadOnly TrueString As String
+- uid: System.Boolean.FalseString
+  id: FalseString
+  parent: System.Boolean
+  href: System.Boolean.yml
+  name: FalseString
+  fullName: System.Boolean.FalseString
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Boolean.cs
+    startLine: 61
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Represents the Boolean value false as a string. This field is read-only.
+  syntax:
+    content: public static readonly string FalseString
+    content.vb: Public Shared ReadOnly FalseString As String
+- uid: System.Boolean.GetHashCode
+  id: GetHashCode
+  parent: System.Boolean
+  href: System.Boolean.yml
+  name: GetHashCode()
+  fullName: System.Boolean.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Boolean.cs
+    startLine: 73
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns the hash code for this instance.
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+  overridden: System.ValueType.GetHashCode
+- uid: System.Boolean.ToString
+  id: ToString
+  parent: System.Boolean
+  href: System.Boolean.yml
+  name: ToString()
+  fullName: System.Boolean.ToString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Boolean.cs
+    startLine: 83
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the value of this instance to its equivalent string representation (either "True" or "False").
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+  overridden: System.ValueType.ToString
+- uid: System.Boolean.ToString(System.IFormatProvider)
+  id: ToString(System.IFormatProvider)
+  parent: System.Boolean
+  href: System.Boolean.yml
+  name: ToString(IFormatProvider)
+  fullName: System.Boolean.ToString(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Boolean.cs
+    startLine: 90
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the value of this instance to its equivalent string representation (either "True" or "False").
+  syntax:
+    content: public string ToString(IFormatProvider provider)
+    content.vb: Public Function ToString(provider As IFormatProvider) As String
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: (Reserved) An @'System.IFormatProvider' object.
+    return:
+      type: System.String
+- uid: System.Boolean.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Boolean
+  href: System.Boolean.yml
+  name: Equals(Object)
+  fullName: System.Boolean.Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Boolean.cs
+    startLine: 98
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns a value indicating whether this instance is equal to a specified object.
+  syntax:
+    content: public override bool Equals(object obj)
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: An object to compare to this instance.
+    return:
+      type: System.Boolean
+  overridden: System.ValueType.Equals(System.Object)
+- uid: System.Boolean.Equals(System.Boolean)
+  id: Equals(System.Boolean)
+  parent: System.Boolean
+  href: System.Boolean.yml
+  name: Equals(Boolean)
+  fullName: System.Boolean.Equals(System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Boolean.cs
+    startLine: 107
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns a value indicating whether this instance is equal to a specified @'System.Boolean' object.
+  syntax:
+    content: public bool Equals(bool obj)
+    content.vb: Public Function Equals(obj As Boolean) As Boolean
+    parameters:
+    - id: obj
+      type: System.Boolean
+      description: A @'System.Boolean' value to compare to this instance.
+    return:
+      type: System.Boolean
+- uid: System.Boolean.CompareTo(System.Object)
+  id: CompareTo(System.Object)
+  parent: System.Boolean
+  href: System.Boolean.yml
+  name: CompareTo(Object)
+  fullName: System.Boolean.CompareTo(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Boolean.cs
+    startLine: 120
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Compares this instance to a specified object and returns an integer that indicates their relationship to one another.
+  syntax:
+    content: public int CompareTo(object obj)
+    content.vb: Public Function CompareTo(obj As Object) As Integer
+    parameters:
+    - id: obj
+      type: System.Object
+      description: An object to compare to this instance, or null.
+    return:
+      type: System.Int32
+  exceptions:
+  - type: System.ArgumentException
+    description: '*obj* is not a @''System.Boolean''.'
+- uid: System.Boolean.CompareTo(System.Boolean)
+  id: CompareTo(System.Boolean)
+  parent: System.Boolean
+  href: System.Boolean.yml
+  name: CompareTo(Boolean)
+  fullName: System.Boolean.CompareTo(System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Boolean.cs
+    startLine: 136
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Compares this instance to a specified @'System.Boolean' object and returns an integer that indicates their relationship to one another.
+  syntax:
+    content: public int CompareTo(bool value)
+    content.vb: Public Function CompareTo(value As Boolean) As Integer
+    parameters:
+    - id: value
+      type: System.Boolean
+      description: A @'System.Boolean' object to compare to this instance.
+    return:
+      type: System.Int32
+- uid: System.Boolean.Parse(System.String)
+  id: Parse(System.String)
+  parent: System.Boolean
+  href: System.Boolean.yml
+  name: Parse(String)
+  fullName: System.Boolean.Parse(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Boolean.cs
+    startLine: 151
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the specified string representation of a logical value to its @'System.Boolean' equivalent, or throws an exception if the string is not equal to the value of @'System.Boolean.TrueString' or @'System.Boolean.FalseString'.
+  syntax:
+    content: public static bool Parse(string value)
+    content.vb: Public Shared Function Parse(value As String) As Boolean
+    parameters:
+    - id: value
+      type: System.String
+      description: A string containing the value to convert.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*value* is null.'
+  - type: System.FormatException
+    description: '*value* is not equal to the value of the @''System.Boolean.TrueString'' or @''System.Boolean.FalseString'' field.'
+- uid: System.Boolean.TryParse(System.String,System.Boolean@)
+  id: TryParse(System.String,System.Boolean@)
+  parent: System.Boolean
+  href: System.Boolean.yml
+  name: TryParse(String, out Boolean)
+  name.vb: TryParse(String, ByRef Boolean)
+  fullName: System.Boolean.TryParse(System.String, out System.Boolean)
+  fullName.vb: System.Boolean.TryParse(System.String, ByRef System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Boolean.cs
+    startLine: 165
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Tries to convert the specified string representation of a logical value to its @'System.Boolean' equivalent. A return value indicates whether the conversion succeeded or failed.
+  syntax:
+    content: public static bool TryParse(string value, out bool result)
+    content.vb: Public Shared Function TryParse(value As String, ByRef result As Boolean) As Boolean
+    parameters:
+    - id: value
+      type: System.String
+      description: A string containing the value to convert.
+    - id: result
+      type: System.Boolean
+      description: When this method returns, if the conversion succeeded, contains true if *value* is equal to @'System.Boolean.TrueString' or false if *value* is equal to @'System.Boolean.FalseString'. If the conversion failed, contains false. The conversion fails if *value* is null or is not equal to the value of either the @'System.Boolean.TrueString' or @'System.Boolean.FalseString' field.
+    return:
+      type: System.Boolean
+- uid: System.Boolean.GetTypeCode
+  id: GetTypeCode
+  parent: System.Boolean
+  href: System.Boolean.yml
+  name: GetTypeCode()
+  fullName: System.Boolean.GetTypeCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Boolean.cs
+    startLine: 223
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns the type code for the @'System.Boolean' value type.
+  syntax:
+    content: public TypeCode GetTypeCode()
+    content.vb: Public Function GetTypeCode As TypeCode
+    return:
+      type: System.TypeCode
+- uid: System.Boolean.System#IConvertible#ToBoolean(System.IFormatProvider)
+  id: System#IConvertible#ToBoolean(System.IFormatProvider)
+  parent: System.Boolean
+  href: System.Boolean.yml
+  name: IConvertible.ToBoolean(IFormatProvider)
+  name.vb: System.IConvertible.ToBoolean(IFormatProvider)
+  fullName: System.Boolean.System.IConvertible.ToBoolean(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Boolean.cs
+    startLine: 229
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: For a description of this member, see @'System.IConvertible.ToBoolean(System.IFormatProvider)'.
+  syntax:
+    content: bool IConvertible.ToBoolean(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToBoolean(provider As IFormatProvider) As Boolean Implements IConvertible.ToBoolean
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: This parameter is ignored.
+    return:
+      type: System.Boolean
+- uid: System.Boolean.System#IConvertible#ToChar(System.IFormatProvider)
+  id: System#IConvertible#ToChar(System.IFormatProvider)
+  parent: System.Boolean
+  href: System.Boolean.yml
+  name: IConvertible.ToChar(IFormatProvider)
+  name.vb: System.IConvertible.ToChar(IFormatProvider)
+  fullName: System.Boolean.System.IConvertible.ToChar(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Boolean.cs
+    startLine: 234
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: This conversion is not supported. Attempting to use this method throws an @'System.InvalidCastException'.
+  syntax:
+    content: char IConvertible.ToChar(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToChar(provider As IFormatProvider) As Char Implements IConvertible.ToChar
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: This parameter is ignored.
+    return:
+      type: System.Char
+  exceptions:
+  - type: System.InvalidCastException
+    description: You attempt to convert a @'System.Boolean' value to a @'System.Char' value. This conversion is not supported.
+- uid: System.Boolean.System#IConvertible#ToSByte(System.IFormatProvider)
+  id: System#IConvertible#ToSByte(System.IFormatProvider)
+  parent: System.Boolean
+  href: System.Boolean.yml
+  name: IConvertible.ToSByte(IFormatProvider)
+  name.vb: System.IConvertible.ToSByte(IFormatProvider)
+  fullName: System.Boolean.System.IConvertible.ToSByte(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Boolean.cs
+    startLine: 239
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: For a description of this member, see @'System.IConvertible.ToSByte(System.IFormatProvider)'.
+  syntax:
+    content: sbyte IConvertible.ToSByte(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToSByte(provider As IFormatProvider) As SByte Implements IConvertible.ToSByte
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: This parameter is ignored.
+    return:
+      type: System.SByte
+- uid: System.Boolean.System#IConvertible#ToByte(System.IFormatProvider)
+  id: System#IConvertible#ToByte(System.IFormatProvider)
+  parent: System.Boolean
+  href: System.Boolean.yml
+  name: IConvertible.ToByte(IFormatProvider)
+  name.vb: System.IConvertible.ToByte(IFormatProvider)
+  fullName: System.Boolean.System.IConvertible.ToByte(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Boolean.cs
+    startLine: 244
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: For a description of this member, see @'System.IConvertible.ToByte(System.IFormatProvider)'.
+  syntax:
+    content: byte IConvertible.ToByte(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToByte(provider As IFormatProvider) As Byte Implements IConvertible.ToByte
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: This parameter is ignored.
+    return:
+      type: System.Byte
+- uid: System.Boolean.System#IConvertible#ToInt16(System.IFormatProvider)
+  id: System#IConvertible#ToInt16(System.IFormatProvider)
+  parent: System.Boolean
+  href: System.Boolean.yml
+  name: IConvertible.ToInt16(IFormatProvider)
+  name.vb: System.IConvertible.ToInt16(IFormatProvider)
+  fullName: System.Boolean.System.IConvertible.ToInt16(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Boolean.cs
+    startLine: 249
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: For a description of this member, see @'System.IConvertible.ToInt16(System.IFormatProvider)'.
+  syntax:
+    content: short IConvertible.ToInt16(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToInt16(provider As IFormatProvider) As Short Implements IConvertible.ToInt16
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: This parameter is ignored.
+    return:
+      type: System.Int16
+- uid: System.Boolean.System#IConvertible#ToUInt16(System.IFormatProvider)
+  id: System#IConvertible#ToUInt16(System.IFormatProvider)
+  parent: System.Boolean
+  href: System.Boolean.yml
+  name: IConvertible.ToUInt16(IFormatProvider)
+  name.vb: System.IConvertible.ToUInt16(IFormatProvider)
+  fullName: System.Boolean.System.IConvertible.ToUInt16(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Boolean.cs
+    startLine: 254
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: For a description of this member, see @'System.IConvertible.ToUInt16(System.IFormatProvider)'.
+  syntax:
+    content: ushort IConvertible.ToUInt16(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToUInt16(provider As IFormatProvider) As UShort Implements IConvertible.ToUInt16
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: This parameter is ignored.
+    return:
+      type: System.UInt16
+- uid: System.Boolean.System#IConvertible#ToInt32(System.IFormatProvider)
+  id: System#IConvertible#ToInt32(System.IFormatProvider)
+  parent: System.Boolean
+  href: System.Boolean.yml
+  name: IConvertible.ToInt32(IFormatProvider)
+  name.vb: System.IConvertible.ToInt32(IFormatProvider)
+  fullName: System.Boolean.System.IConvertible.ToInt32(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Boolean.cs
+    startLine: 259
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: For a description of this member, see @'System.IConvertible.ToInt32(System.IFormatProvider)'.
+  syntax:
+    content: int IConvertible.ToInt32(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToInt32(provider As IFormatProvider) As Integer Implements IConvertible.ToInt32
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: This parameter is ignored.
+    return:
+      type: System.Int32
+- uid: System.Boolean.System#IConvertible#ToUInt32(System.IFormatProvider)
+  id: System#IConvertible#ToUInt32(System.IFormatProvider)
+  parent: System.Boolean
+  href: System.Boolean.yml
+  name: IConvertible.ToUInt32(IFormatProvider)
+  name.vb: System.IConvertible.ToUInt32(IFormatProvider)
+  fullName: System.Boolean.System.IConvertible.ToUInt32(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Boolean.cs
+    startLine: 264
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: For a description of this member, see @'System.IConvertible.ToUInt32(System.IFormatProvider)'.
+  syntax:
+    content: uint IConvertible.ToUInt32(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToUInt32(provider As IFormatProvider) As UInteger Implements IConvertible.ToUInt32
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: This parameter is ignored.
+    return:
+      type: System.UInt32
+- uid: System.Boolean.System#IConvertible#ToInt64(System.IFormatProvider)
+  id: System#IConvertible#ToInt64(System.IFormatProvider)
+  parent: System.Boolean
+  href: System.Boolean.yml
+  name: IConvertible.ToInt64(IFormatProvider)
+  name.vb: System.IConvertible.ToInt64(IFormatProvider)
+  fullName: System.Boolean.System.IConvertible.ToInt64(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Boolean.cs
+    startLine: 269
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: For a description of this member, see @'System.IConvertible.ToInt64(System.IFormatProvider)'.
+  syntax:
+    content: long IConvertible.ToInt64(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToInt64(provider As IFormatProvider) As Long Implements IConvertible.ToInt64
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: This parameter is ignored.
+    return:
+      type: System.Int64
+- uid: System.Boolean.System#IConvertible#ToUInt64(System.IFormatProvider)
+  id: System#IConvertible#ToUInt64(System.IFormatProvider)
+  parent: System.Boolean
+  href: System.Boolean.yml
+  name: IConvertible.ToUInt64(IFormatProvider)
+  name.vb: System.IConvertible.ToUInt64(IFormatProvider)
+  fullName: System.Boolean.System.IConvertible.ToUInt64(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Boolean.cs
+    startLine: 274
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: For a description of this member, see @'System.IConvertible.ToUInt64(System.IFormatProvider)'.
+  syntax:
+    content: ulong IConvertible.ToUInt64(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToUInt64(provider As IFormatProvider) As ULong Implements IConvertible.ToUInt64
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: This parameter is ignored.
+    return:
+      type: System.UInt64
+- uid: System.Boolean.System#IConvertible#ToSingle(System.IFormatProvider)
+  id: System#IConvertible#ToSingle(System.IFormatProvider)
+  parent: System.Boolean
+  href: System.Boolean.yml
+  name: IConvertible.ToSingle(IFormatProvider)
+  name.vb: System.IConvertible.ToSingle(IFormatProvider)
+  fullName: System.Boolean.System.IConvertible.ToSingle(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Boolean.cs
+    startLine: 279
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: For a description of this member, see @'System.IConvertible.ToSingle(System.IFormatProvider)'..
+  syntax:
+    content: float IConvertible.ToSingle(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToSingle(provider As IFormatProvider) As Single Implements IConvertible.ToSingle
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: This parameter is ignored.
+    return:
+      type: System.Single
+- uid: System.Boolean.System#IConvertible#ToDouble(System.IFormatProvider)
+  id: System#IConvertible#ToDouble(System.IFormatProvider)
+  parent: System.Boolean
+  href: System.Boolean.yml
+  name: IConvertible.ToDouble(IFormatProvider)
+  name.vb: System.IConvertible.ToDouble(IFormatProvider)
+  fullName: System.Boolean.System.IConvertible.ToDouble(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Boolean.cs
+    startLine: 284
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: For a description of this member, see @'System.IConvertible.ToDouble(System.IFormatProvider)'..
+  syntax:
+    content: double IConvertible.ToDouble(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToDouble(provider As IFormatProvider) As Double Implements IConvertible.ToDouble
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: This parameter is ignored.
+    return:
+      type: System.Double
+- uid: System.Boolean.System#IConvertible#ToDecimal(System.IFormatProvider)
+  id: System#IConvertible#ToDecimal(System.IFormatProvider)
+  parent: System.Boolean
+  href: System.Boolean.yml
+  name: IConvertible.ToDecimal(IFormatProvider)
+  name.vb: System.IConvertible.ToDecimal(IFormatProvider)
+  fullName: System.Boolean.System.IConvertible.ToDecimal(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Boolean.cs
+    startLine: 289
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: For a description of this member, see @'System.IConvertible.ToDecimal(System.IFormatProvider)'..
+  syntax:
+    content: decimal IConvertible.ToDecimal(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToDecimal(provider As IFormatProvider) As Decimal Implements IConvertible.ToDecimal
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: This parameter is ignored.
+    return:
+      type: System.Decimal
+- uid: System.Boolean.System#IConvertible#ToDateTime(System.IFormatProvider)
+  id: System#IConvertible#ToDateTime(System.IFormatProvider)
+  parent: System.Boolean
+  href: System.Boolean.yml
+  name: IConvertible.ToDateTime(IFormatProvider)
+  name.vb: System.IConvertible.ToDateTime(IFormatProvider)
+  fullName: System.Boolean.System.IConvertible.ToDateTime(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Boolean.cs
+    startLine: 294
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: This conversion is not supported. Attempting to use this method throws an @'System.InvalidCastException'.
+  syntax:
+    content: DateTime IConvertible.ToDateTime(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToDateTime(provider As IFormatProvider) As Date Implements IConvertible.ToDateTime
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: This parameter is ignored.
+    return:
+      type: System.DateTime
+  exceptions:
+  - type: System.InvalidCastException
+    description: You attempt to convert a @'System.Boolean' value to a @'System.DateTime' value. This conversion is not supported.
+- uid: System.Boolean.System#IConvertible#ToType(System.Type,System.IFormatProvider)
+  id: System#IConvertible#ToType(System.Type,System.IFormatProvider)
+  parent: System.Boolean
+  href: System.Boolean.yml
+  name: IConvertible.ToType(Type, IFormatProvider)
+  name.vb: System.IConvertible.ToType(Type, IFormatProvider)
+  fullName: System.Boolean.System.IConvertible.ToType(System.Type, System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Boolean.cs
+    startLine: 299
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: For a description of this member, see @'System.IConvertible.ToType(System.Type,System.IFormatProvider)'.
+  syntax:
+    content: object IConvertible.ToType(Type type, IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToType(type As Type, provider As IFormatProvider) As Object Implements IConvertible.ToType
+    parameters:
+    - id: type
+      type: System.Type
+      description: The desired type.
+    - id: provider
+      type: System.IFormatProvider
+      description: An @'System.IFormatProvider' implementation that supplies culture-specific information about the format of the returned value.
+    return:
+      type: System.Object
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*type* is null.'
+  - type: System.InvalidCastException
+    description: The requested type conversion is not supported.
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.IFormatProvider
+  parent: System
+  isExternal: true
+  name: IFormatProvider
+  fullName: System.IFormatProvider
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.TypeCode
+  parent: System
+  isExternal: false
+  href: System.TypeCode.yml
+  name: TypeCode
+  fullName: System.TypeCode
+  type: Enum
+- uid: System.Char
+  parent: System
+  isExternal: true
+  name: Char
+  fullName: System.Char
+- uid: System.SByte
+  parent: System
+  isExternal: true
+  name: SByte
+  fullName: System.SByte
+- uid: System.Byte
+  parent: System
+  isExternal: true
+  name: Byte
+  fullName: System.Byte
+- uid: System.Int16
+  parent: System
+  isExternal: true
+  name: Int16
+  fullName: System.Int16
+- uid: System.UInt16
+  parent: System
+  isExternal: true
+  name: UInt16
+  fullName: System.UInt16
+- uid: System.UInt32
+  parent: System
+  isExternal: true
+  name: UInt32
+  fullName: System.UInt32
+- uid: System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  fullName: System.Int64
+- uid: System.UInt64
+  parent: System
+  isExternal: true
+  name: UInt64
+  fullName: System.UInt64
+- uid: System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  fullName: System.Single
+- uid: System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  fullName: System.Double
+- uid: System.Decimal
+  parent: System
+  isExternal: true
+  name: Decimal
+  fullName: System.Decimal
+- uid: System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  fullName: System.DateTime
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  fullName: System.Type

@@ -1,0 +1,29 @@
+items:
+- uid: System.Runtime.InteropServices._AssemblyName
+  id: _AssemblyName
+  parent: System.Runtime.InteropServices
+  children: []
+  href: System.Runtime.InteropServices._AssemblyName.yml
+  name: _AssemblyName
+  fullName: System.Runtime.InteropServices._AssemblyName
+  type: Interface
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/ComInterfaces.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Reflection/ComInterfaces.cs
+    startLine: 656
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Exposes the @'System.Reflection.AssemblyName' class to unmanaged code.
+  syntax:
+    content: public interface _AssemblyName
+    content.vb: Public Interface _AssemblyName
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace

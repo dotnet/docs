@@ -1,0 +1,91 @@
+items:
+- uid: System.IO.Pipes
+  id: System.IO.Pipes
+  children:
+  - System.IO.Pipes.AnonymousPipeClientStream
+  - System.IO.Pipes.AnonymousPipeServerStream
+  - System.IO.Pipes.NamedPipeClientStream
+  - System.IO.Pipes.NamedPipeServerStream
+  - System.IO.Pipes.PipeDirection
+  - System.IO.Pipes.PipeOptions
+  - System.IO.Pipes.PipeStream
+  - System.IO.Pipes.PipeTransmissionMode
+  href: System.IO.Pipes.yml
+  name: System.IO.Pipes
+  fullName: System.IO.Pipes
+  type: Namespace
+  source:
+    remote:
+      path: src/System.IO.Pipes/src/System/IO/Pipes/PipeStreamAsyncResult.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.IO.Pipes/src/System/IO/Pipes/PipeStreamAsyncResult.cs
+    startLine: 7
+  assemblies:
+  - System.IO.Pipes
+  summary: The @'System.IO.Pipes' namespace contains types that provide a means for interprocess communication through anonymous and/or named pipes.
+references:
+- uid: System.IO.Pipes.AnonymousPipeClientStream
+  isExternal: false
+  href: System.IO.Pipes.AnonymousPipeClientStream.yml
+  name: AnonymousPipeClientStream
+  fullName: System.IO.Pipes.AnonymousPipeClientStream
+  type: Class
+  summary: Anonymous pipe client. Use this to open the client end of an anonymous pipes created with AnonymousPipeServerStream.
+- uid: System.IO.Pipes.AnonymousPipeServerStream
+  isExternal: false
+  href: System.IO.Pipes.AnonymousPipeServerStream.yml
+  name: AnonymousPipeServerStream
+  fullName: System.IO.Pipes.AnonymousPipeServerStream
+  type: Class
+  summary: Anonymous pipe server stream
+- uid: System.IO.Pipes.PipeDirection
+  parent: System.IO.Pipes
+  isExternal: false
+  href: System.IO.Pipes.PipeDirection.yml
+  name: PipeDirection
+  fullName: System.IO.Pipes.PipeDirection
+  type: Enum
+- uid: System.IO.Pipes.PipeOptions
+  parent: System.IO.Pipes
+  isExternal: false
+  href: System.IO.Pipes.PipeOptions.yml
+  name: PipeOptions
+  fullName: System.IO.Pipes.PipeOptions
+  type: Enum
+- uid: System.IO.Pipes.PipeTransmissionMode
+  parent: System.IO.Pipes
+  isExternal: false
+  href: System.IO.Pipes.PipeTransmissionMode.yml
+  name: PipeTransmissionMode
+  fullName: System.IO.Pipes.PipeTransmissionMode
+  type: Enum
+- uid: System.IO.Pipes.NamedPipeClientStream
+  isExternal: false
+  href: System.IO.Pipes.NamedPipeClientStream.yml
+  name: NamedPipeClientStream
+  fullName: System.IO.Pipes.NamedPipeClientStream
+  type: Class
+  summary: >-
+    Named pipe client. Use this to open the client end of a named pipes created with
+
+    NamedPipeServerStream.
+- uid: System.IO.Pipes.NamedPipeServerStream
+  isExternal: false
+  href: System.IO.Pipes.NamedPipeServerStream.yml
+  name: NamedPipeServerStream
+  fullName: System.IO.Pipes.NamedPipeServerStream
+  type: Class
+  summary: Named pipe server
+- uid: System.IO.Pipes.PipeStream
+  parent: System.IO.Pipes
+  isExternal: false
+  href: System.IO.Pipes.PipeStream.yml
+  name: PipeStream
+  fullName: System.IO.Pipes.PipeStream
+  type: Class
+- uid: System.IO.Pipes
+  isExternal: false
+  name: System.IO.Pipes
+  fullName: System.IO.Pipes
+  type: Namespace

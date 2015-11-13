@@ -1,0 +1,191 @@
+items:
+- uid: System.Runtime.Serialization.StreamingContextStates
+  id: StreamingContextStates
+  parent: System.Runtime.Serialization
+  children:
+  - System.Runtime.Serialization.StreamingContextStates.All
+  - System.Runtime.Serialization.StreamingContextStates.Clone
+  - System.Runtime.Serialization.StreamingContextStates.CrossAppDomain
+  - System.Runtime.Serialization.StreamingContextStates.CrossMachine
+  - System.Runtime.Serialization.StreamingContextStates.CrossProcess
+  - System.Runtime.Serialization.StreamingContextStates.File
+  - System.Runtime.Serialization.StreamingContextStates.Other
+  - System.Runtime.Serialization.StreamingContextStates.Persistence
+  - System.Runtime.Serialization.StreamingContextStates.Remoting
+  href: System.Runtime.Serialization.StreamingContextStates.yml
+  name: StreamingContextStates
+  fullName: System.Runtime.Serialization.StreamingContextStates
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/Serialization/StreamingContext.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/Serialization/StreamingContext.cs
+    startLine: 58
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Defines a set of flags that specifies the source or destination context for the stream during serialization.
+  syntax:
+    content: public enum StreamingContextStates
+    content.vb: Public Enum StreamingContextStates
+- uid: System.Runtime.Serialization.StreamingContextStates.CrossProcess
+  id: CrossProcess
+  parent: System.Runtime.Serialization.StreamingContextStates
+  href: System.Runtime.Serialization.StreamingContextStates.yml
+  name: CrossProcess
+  fullName: System.Runtime.Serialization.StreamingContextStates.CrossProcess
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/StreamingContext.cs
+    startLine: 62
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Specifies that the source or destination context is a different process on the same computer.
+  syntax:
+    content: CrossProcess = 1
+- uid: System.Runtime.Serialization.StreamingContextStates.CrossMachine
+  id: CrossMachine
+  parent: System.Runtime.Serialization.StreamingContextStates
+  href: System.Runtime.Serialization.StreamingContextStates.yml
+  name: CrossMachine
+  fullName: System.Runtime.Serialization.StreamingContextStates.CrossMachine
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/StreamingContext.cs
+    startLine: 63
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Specifies that the source or destination context is a different computer.
+  syntax:
+    content: CrossMachine = 2
+- uid: System.Runtime.Serialization.StreamingContextStates.File
+  id: File
+  parent: System.Runtime.Serialization.StreamingContextStates
+  href: System.Runtime.Serialization.StreamingContextStates.yml
+  name: File
+  fullName: System.Runtime.Serialization.StreamingContextStates.File
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/StreamingContext.cs
+    startLine: 64
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Specifies that the source or destination context is a file. Users can assume that files will last longer than the process that created them and not serialize objects in such a way that deserialization will require accessing any data from the current process.
+  syntax:
+    content: File = 4
+- uid: System.Runtime.Serialization.StreamingContextStates.Persistence
+  id: Persistence
+  parent: System.Runtime.Serialization.StreamingContextStates
+  href: System.Runtime.Serialization.StreamingContextStates.yml
+  name: Persistence
+  fullName: System.Runtime.Serialization.StreamingContextStates.Persistence
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/StreamingContext.cs
+    startLine: 65
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Specifies that the source or destination context is a persisted store, which could include databases, files, or other backing stores. Users can assume that persisted data will last longer than the process that created the data and not serialize objects so that deserialization will require accessing any data from the current process.
+  syntax:
+    content: Persistence = 8
+- uid: System.Runtime.Serialization.StreamingContextStates.Remoting
+  id: Remoting
+  parent: System.Runtime.Serialization.StreamingContextStates
+  href: System.Runtime.Serialization.StreamingContextStates.yml
+  name: Remoting
+  fullName: System.Runtime.Serialization.StreamingContextStates.Remoting
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/StreamingContext.cs
+    startLine: 66
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Specifies that the data is remoted to a context in an unknown location. Users cannot make any assumptions whether this is on the same computer.
+  syntax:
+    content: Remoting = 16
+- uid: System.Runtime.Serialization.StreamingContextStates.Other
+  id: Other
+  parent: System.Runtime.Serialization.StreamingContextStates
+  href: System.Runtime.Serialization.StreamingContextStates.yml
+  name: Other
+  fullName: System.Runtime.Serialization.StreamingContextStates.Other
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/StreamingContext.cs
+    startLine: 67
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Specifies that the serialization context is unknown.
+  syntax:
+    content: Other = 32
+- uid: System.Runtime.Serialization.StreamingContextStates.Clone
+  id: Clone
+  parent: System.Runtime.Serialization.StreamingContextStates
+  href: System.Runtime.Serialization.StreamingContextStates.yml
+  name: Clone
+  fullName: System.Runtime.Serialization.StreamingContextStates.Clone
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/StreamingContext.cs
+    startLine: 68
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Specifies that the object graph is being cloned. Users can assume that the cloned graph will continue to exist within the same process and be safe to access handles or other references to unmanaged resources.
+  syntax:
+    content: Clone = 64
+- uid: System.Runtime.Serialization.StreamingContextStates.CrossAppDomain
+  id: CrossAppDomain
+  parent: System.Runtime.Serialization.StreamingContextStates
+  href: System.Runtime.Serialization.StreamingContextStates.yml
+  name: CrossAppDomain
+  fullName: System.Runtime.Serialization.StreamingContextStates.CrossAppDomain
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/StreamingContext.cs
+    startLine: 69
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Specifies that the source or destination context is a different AppDomain. (For a description of AppDomains, see [&lt;topic://cpconapplicationdomains&gt;]).
+  syntax:
+    content: CrossAppDomain = 128
+- uid: System.Runtime.Serialization.StreamingContextStates.All
+  id: All
+  parent: System.Runtime.Serialization.StreamingContextStates
+  href: System.Runtime.Serialization.StreamingContextStates.yml
+  name: All
+  fullName: System.Runtime.Serialization.StreamingContextStates.All
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/StreamingContext.cs
+    startLine: 70
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Specifies that the serialized data can be transmitted to or received from any of the other contexts.
+  syntax:
+    content: All = 255
+references:
+- uid: System.Runtime.Serialization
+  isExternal: false
+  name: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+  type: Namespace

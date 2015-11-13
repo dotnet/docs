@@ -1,0 +1,334 @@
+items:
+- uid: System.Reflection.Metadata.TypeLayout
+  id: TypeLayout
+  parent: System.Reflection.Metadata
+  children:
+  - System.Reflection.Metadata.TypeLayout.#ctor(System.Int32,System.Int32)
+  - System.Reflection.Metadata.TypeLayout.IsDefault
+  - System.Reflection.Metadata.TypeLayout.PackingSize
+  - System.Reflection.Metadata.TypeLayout.Size
+  href: System.Reflection.Metadata.TypeLayout.yml
+  name: TypeLayout
+  fullName: System.Reflection.Metadata.TypeLayout
+  type: Struct
+  source:
+    remote: &o0
+      path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeLayout.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeLayout.cs
+    startLine: 5
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public struct TypeLayout
+    content.vb: Public Structure TypeLayout
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.Reflection.Metadata.TypeLayout.#ctor(System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32)'
+  parent: System.Reflection.Metadata.TypeLayout
+  href: System.Reflection.Metadata.TypeLayout.yml
+  name: TypeLayout(Int32, Int32)
+  fullName: System.Reflection.Metadata.TypeLayout.TypeLayout(System.Int32, System.Int32)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeLayout.cs
+    startLine: 10
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public TypeLayout(int size, int packingSize)
+    content.vb: Public Sub New(size As Integer, packingSize As Integer)
+    parameters:
+    - id: size
+      type: System.Int32
+    - id: packingSize
+      type: System.Int32
+- uid: System.Reflection.Metadata.TypeLayout.Size
+  id: Size
+  parent: System.Reflection.Metadata.TypeLayout
+  href: System.Reflection.Metadata.TypeLayout.yml
+  name: Size
+  fullName: System.Reflection.Metadata.TypeLayout.Size
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeLayout.cs
+    startLine: 16
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public int Size { get; }
+    content.vb: Public ReadOnly Property Size As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: 
+- uid: System.Reflection.Metadata.TypeLayout.PackingSize
+  id: PackingSize
+  parent: System.Reflection.Metadata.TypeLayout
+  href: System.Reflection.Metadata.TypeLayout.yml
+  name: PackingSize
+  fullName: System.Reflection.Metadata.TypeLayout.PackingSize
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeLayout.cs
+    startLine: 21
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public int PackingSize { get; }
+    content.vb: Public ReadOnly Property PackingSize As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: 
+- uid: System.Reflection.Metadata.TypeLayout.IsDefault
+  id: IsDefault
+  parent: System.Reflection.Metadata.TypeLayout
+  href: System.Reflection.Metadata.TypeLayout.yml
+  name: IsDefault
+  fullName: System.Reflection.Metadata.TypeLayout.IsDefault
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeLayout.cs
+    startLine: 26
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public bool IsDefault { get; }
+    content.vb: Public ReadOnly Property IsDefault As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: 
+references:
+- uid: System.Reflection.Metadata
+  isExternal: false
+  name: System.Reflection.Metadata
+  fullName: System.Reflection.Metadata
+  type: Namespace
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean

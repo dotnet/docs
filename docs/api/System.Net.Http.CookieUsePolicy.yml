@@ -1,0 +1,79 @@
+items:
+- uid: System.Net.Http.CookieUsePolicy
+  id: CookieUsePolicy
+  parent: System.Net.Http
+  children:
+  - System.Net.Http.CookieUsePolicy.IgnoreCookies
+  - System.Net.Http.CookieUsePolicy.UseInternalCookieStoreOnly
+  - System.Net.Http.CookieUsePolicy.UseSpecifiedCookieContainer
+  href: System.Net.Http.CookieUsePolicy.yml
+  name: CookieUsePolicy
+  fullName: System.Net.Http.CookieUsePolicy
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Net.Http.WinHttpHandler/src/System/Net/Http/WinHttpHandler.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Net.Http.WinHttpHandler/src/System/Net/Http/WinHttpHandler.cs
+    startLine: 39
+  assemblies:
+  - System.Net.Http.WinHttpHandler
+  namespace: System.Net.Http
+  syntax:
+    content: public enum CookieUsePolicy
+    content.vb: Public Enum CookieUsePolicy
+- uid: System.Net.Http.CookieUsePolicy.IgnoreCookies
+  id: IgnoreCookies
+  parent: System.Net.Http.CookieUsePolicy
+  href: System.Net.Http.CookieUsePolicy.yml
+  name: IgnoreCookies
+  fullName: System.Net.Http.CookieUsePolicy.IgnoreCookies
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Net.Http.WinHttpHandler/src/System/Net/Http/WinHttpHandler.cs
+    startLine: 42
+  assemblies:
+  - System.Net.Http.WinHttpHandler
+  namespace: System.Net.Http
+  syntax:
+    content: IgnoreCookies = 0
+- uid: System.Net.Http.CookieUsePolicy.UseInternalCookieStoreOnly
+  id: UseInternalCookieStoreOnly
+  parent: System.Net.Http.CookieUsePolicy
+  href: System.Net.Http.CookieUsePolicy.yml
+  name: UseInternalCookieStoreOnly
+  fullName: System.Net.Http.CookieUsePolicy.UseInternalCookieStoreOnly
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Net.Http.WinHttpHandler/src/System/Net/Http/WinHttpHandler.cs
+    startLine: 43
+  assemblies:
+  - System.Net.Http.WinHttpHandler
+  namespace: System.Net.Http
+  syntax:
+    content: UseInternalCookieStoreOnly = 1
+- uid: System.Net.Http.CookieUsePolicy.UseSpecifiedCookieContainer
+  id: UseSpecifiedCookieContainer
+  parent: System.Net.Http.CookieUsePolicy
+  href: System.Net.Http.CookieUsePolicy.yml
+  name: UseSpecifiedCookieContainer
+  fullName: System.Net.Http.CookieUsePolicy.UseSpecifiedCookieContainer
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Net.Http.WinHttpHandler/src/System/Net/Http/WinHttpHandler.cs
+    startLine: 44
+  assemblies:
+  - System.Net.Http.WinHttpHandler
+  namespace: System.Net.Http
+  syntax:
+    content: UseSpecifiedCookieContainer = 2
+references:
+- uid: System.Net.Http
+  isExternal: false
+  name: System.Net.Http
+  fullName: System.Net.Http
+  type: Namespace

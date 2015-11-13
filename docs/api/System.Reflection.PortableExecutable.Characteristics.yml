@@ -1,0 +1,283 @@
+items:
+- uid: System.Reflection.PortableExecutable.Characteristics
+  id: Characteristics
+  parent: System.Reflection.PortableExecutable
+  children:
+  - System.Reflection.PortableExecutable.Characteristics.AggressiveWSTrim
+  - System.Reflection.PortableExecutable.Characteristics.Bit32Machine
+  - System.Reflection.PortableExecutable.Characteristics.BytesReversedHi
+  - System.Reflection.PortableExecutable.Characteristics.BytesReversedLo
+  - System.Reflection.PortableExecutable.Characteristics.DebugStripped
+  - System.Reflection.PortableExecutable.Characteristics.Dll
+  - System.Reflection.PortableExecutable.Characteristics.ExecutableImage
+  - System.Reflection.PortableExecutable.Characteristics.LargeAddressAware
+  - System.Reflection.PortableExecutable.Characteristics.LineNumsStripped
+  - System.Reflection.PortableExecutable.Characteristics.LocalSymsStripped
+  - System.Reflection.PortableExecutable.Characteristics.NetRunFromSwap
+  - System.Reflection.PortableExecutable.Characteristics.RelocsStripped
+  - System.Reflection.PortableExecutable.Characteristics.RemovableRunFromSwap
+  - System.Reflection.PortableExecutable.Characteristics.System
+  - System.Reflection.PortableExecutable.Characteristics.UpSystemOnly
+  href: System.Reflection.PortableExecutable.Characteristics.yml
+  name: Characteristics
+  fullName: System.Reflection.PortableExecutable.Characteristics
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 5
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: 'public enum Characteristics : ushort'
+    content.vb: Public Enum Characteristics As UShort
+- uid: System.Reflection.PortableExecutable.Characteristics.RelocsStripped
+  id: RelocsStripped
+  parent: System.Reflection.PortableExecutable.Characteristics
+  href: System.Reflection.PortableExecutable.Characteristics.yml
+  name: RelocsStripped
+  fullName: System.Reflection.PortableExecutable.Characteristics.RelocsStripped
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 7
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: RelocsStripped = 1
+- uid: System.Reflection.PortableExecutable.Characteristics.ExecutableImage
+  id: ExecutableImage
+  parent: System.Reflection.PortableExecutable.Characteristics
+  href: System.Reflection.PortableExecutable.Characteristics.yml
+  name: ExecutableImage
+  fullName: System.Reflection.PortableExecutable.Characteristics.ExecutableImage
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 8
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: ExecutableImage = 2
+- uid: System.Reflection.PortableExecutable.Characteristics.LineNumsStripped
+  id: LineNumsStripped
+  parent: System.Reflection.PortableExecutable.Characteristics
+  href: System.Reflection.PortableExecutable.Characteristics.yml
+  name: LineNumsStripped
+  fullName: System.Reflection.PortableExecutable.Characteristics.LineNumsStripped
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 9
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: LineNumsStripped = 4
+- uid: System.Reflection.PortableExecutable.Characteristics.LocalSymsStripped
+  id: LocalSymsStripped
+  parent: System.Reflection.PortableExecutable.Characteristics
+  href: System.Reflection.PortableExecutable.Characteristics.yml
+  name: LocalSymsStripped
+  fullName: System.Reflection.PortableExecutable.Characteristics.LocalSymsStripped
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 10
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: LocalSymsStripped = 8
+- uid: System.Reflection.PortableExecutable.Characteristics.AggressiveWSTrim
+  id: AggressiveWSTrim
+  parent: System.Reflection.PortableExecutable.Characteristics
+  href: System.Reflection.PortableExecutable.Characteristics.yml
+  name: AggressiveWSTrim
+  fullName: System.Reflection.PortableExecutable.Characteristics.AggressiveWSTrim
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 11
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: AggressiveWSTrim = 16
+- uid: System.Reflection.PortableExecutable.Characteristics.LargeAddressAware
+  id: LargeAddressAware
+  parent: System.Reflection.PortableExecutable.Characteristics
+  href: System.Reflection.PortableExecutable.Characteristics.yml
+  name: LargeAddressAware
+  fullName: System.Reflection.PortableExecutable.Characteristics.LargeAddressAware
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 12
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: LargeAddressAware = 32
+- uid: System.Reflection.PortableExecutable.Characteristics.BytesReversedLo
+  id: BytesReversedLo
+  parent: System.Reflection.PortableExecutable.Characteristics
+  href: System.Reflection.PortableExecutable.Characteristics.yml
+  name: BytesReversedLo
+  fullName: System.Reflection.PortableExecutable.Characteristics.BytesReversedLo
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 13
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: BytesReversedLo = 128
+- uid: System.Reflection.PortableExecutable.Characteristics.Bit32Machine
+  id: Bit32Machine
+  parent: System.Reflection.PortableExecutable.Characteristics
+  href: System.Reflection.PortableExecutable.Characteristics.yml
+  name: Bit32Machine
+  fullName: System.Reflection.PortableExecutable.Characteristics.Bit32Machine
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 14
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: Bit32Machine = 256
+- uid: System.Reflection.PortableExecutable.Characteristics.DebugStripped
+  id: DebugStripped
+  parent: System.Reflection.PortableExecutable.Characteristics
+  href: System.Reflection.PortableExecutable.Characteristics.yml
+  name: DebugStripped
+  fullName: System.Reflection.PortableExecutable.Characteristics.DebugStripped
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 15
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: DebugStripped = 512
+- uid: System.Reflection.PortableExecutable.Characteristics.RemovableRunFromSwap
+  id: RemovableRunFromSwap
+  parent: System.Reflection.PortableExecutable.Characteristics
+  href: System.Reflection.PortableExecutable.Characteristics.yml
+  name: RemovableRunFromSwap
+  fullName: System.Reflection.PortableExecutable.Characteristics.RemovableRunFromSwap
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 16
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: RemovableRunFromSwap = 1024
+- uid: System.Reflection.PortableExecutable.Characteristics.NetRunFromSwap
+  id: NetRunFromSwap
+  parent: System.Reflection.PortableExecutable.Characteristics
+  href: System.Reflection.PortableExecutable.Characteristics.yml
+  name: NetRunFromSwap
+  fullName: System.Reflection.PortableExecutable.Characteristics.NetRunFromSwap
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 17
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: NetRunFromSwap = 2048
+- uid: System.Reflection.PortableExecutable.Characteristics.System
+  id: System
+  parent: System.Reflection.PortableExecutable.Characteristics
+  href: System.Reflection.PortableExecutable.Characteristics.yml
+  name: System
+  fullName: System.Reflection.PortableExecutable.Characteristics.System
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 18
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: System = 4096
+- uid: System.Reflection.PortableExecutable.Characteristics.Dll
+  id: Dll
+  parent: System.Reflection.PortableExecutable.Characteristics
+  href: System.Reflection.PortableExecutable.Characteristics.yml
+  name: Dll
+  fullName: System.Reflection.PortableExecutable.Characteristics.Dll
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 19
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: Dll = 8192
+- uid: System.Reflection.PortableExecutable.Characteristics.UpSystemOnly
+  id: UpSystemOnly
+  parent: System.Reflection.PortableExecutable.Characteristics
+  href: System.Reflection.PortableExecutable.Characteristics.yml
+  name: UpSystemOnly
+  fullName: System.Reflection.PortableExecutable.Characteristics.UpSystemOnly
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 20
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: UpSystemOnly = 16384
+- uid: System.Reflection.PortableExecutable.Characteristics.BytesReversedHi
+  id: BytesReversedHi
+  parent: System.Reflection.PortableExecutable.Characteristics
+  href: System.Reflection.PortableExecutable.Characteristics.yml
+  name: BytesReversedHi
+  fullName: System.Reflection.PortableExecutable.Characteristics.BytesReversedHi
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 21
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: BytesReversedHi = 32768
+references:
+- uid: System.Reflection.PortableExecutable
+  isExternal: false
+  name: System.Reflection.PortableExecutable
+  fullName: System.Reflection.PortableExecutable
+  type: Namespace

@@ -1,0 +1,64 @@
+items:
+- uid: System.Threading.LockRecursionPolicy
+  id: LockRecursionPolicy
+  parent: System.Threading
+  children:
+  - System.Threading.LockRecursionPolicy.NoRecursion
+  - System.Threading.LockRecursionPolicy.SupportsRecursion
+  href: System.Threading.LockRecursionPolicy.yml
+  name: LockRecursionPolicy
+  fullName: System.Threading.LockRecursionPolicy
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Threading/src/System/Threading/ReaderWriterLockSlim.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Threading/src/System/Threading/ReaderWriterLockSlim.cs
+    startLine: 9
+  assemblies:
+  - System.Threading.CoreCLR
+  namespace: System.Threading
+  summary: Specifies whether a lock can be entered multiple times by the same thread.
+  syntax:
+    content: public enum LockRecursionPolicy
+    content.vb: Public Enum LockRecursionPolicy
+- uid: System.Threading.LockRecursionPolicy.NoRecursion
+  id: NoRecursion
+  parent: System.Threading.LockRecursionPolicy
+  href: System.Threading.LockRecursionPolicy.yml
+  name: NoRecursion
+  fullName: System.Threading.LockRecursionPolicy.NoRecursion
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Threading/src/System/Threading/ReaderWriterLockSlim.cs
+    startLine: 11
+  assemblies:
+  - System.Threading.CoreCLR
+  namespace: System.Threading
+  summary: If a thread tries to enter a lock recursively, an exception is thrown. Some classes may allow certain recursions when this setting is in effect.
+  syntax:
+    content: NoRecursion = 0
+- uid: System.Threading.LockRecursionPolicy.SupportsRecursion
+  id: SupportsRecursion
+  parent: System.Threading.LockRecursionPolicy
+  href: System.Threading.LockRecursionPolicy.yml
+  name: SupportsRecursion
+  fullName: System.Threading.LockRecursionPolicy.SupportsRecursion
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Threading/src/System/Threading/ReaderWriterLockSlim.cs
+    startLine: 12
+  assemblies:
+  - System.Threading.CoreCLR
+  namespace: System.Threading
+  summary: A thread can enter a lock recursively. Some classes may restrict this capability.
+  syntax:
+    content: SupportsRecursion = 1
+references:
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading

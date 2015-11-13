@@ -1,0 +1,530 @@
+items:
+- uid: System.Collections.Generic.Dictionary`2.Enumerator
+  id: Dictionary`2.Enumerator
+  parent: System.Collections.Generic
+  children:
+  - System.Collections.Generic.Dictionary`2.Enumerator.Current
+  - System.Collections.Generic.Dictionary`2.Enumerator.Dispose
+  - System.Collections.Generic.Dictionary`2.Enumerator.MoveNext
+  - System.Collections.Generic.Dictionary`2.Enumerator.System#Collections#IDictionaryEnumerator#Entry
+  - System.Collections.Generic.Dictionary`2.Enumerator.System#Collections#IDictionaryEnumerator#Key
+  - System.Collections.Generic.Dictionary`2.Enumerator.System#Collections#IDictionaryEnumerator#Value
+  - System.Collections.Generic.Dictionary`2.Enumerator.System#Collections#IEnumerator#Current
+  - System.Collections.Generic.Dictionary`2.Enumerator.System#Collections#IEnumerator#Reset
+  href: System.Collections.Generic.Dictionary`2.Enumerator.yml
+  name: Dictionary<TKey, TValue>.Enumerator
+  name.vb: Dictionary(Of TKey, TValue).Enumerator
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>.Enumerator
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).Enumerator
+  type: Struct
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Collections/Generic/Dictionary.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Collections/Generic/Dictionary.cs
+    startLine: 707
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Enumerates the elements of a @'System.Collections.Generic.Dictionary`2'.
+  syntax:
+    content: 'public struct Enumerator : IEnumerator<KeyValuePair<TKey, TValue>>, IDisposable, IDictionaryEnumerator, IEnumerator'
+    content.vb: Public Structure Enumerator Implements IEnumerator(Of KeyValuePair(Of TKey, TValue)), IDisposable, IDictionaryEnumerator, IEnumerator
+  implements:
+  - System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{{TKey},{TValue}}}
+  - System.IDisposable
+  - System.Collections.IDictionaryEnumerator
+  - System.Collections.IEnumerator
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.Collections.Generic.Dictionary`2.Enumerator.MoveNext
+  id: MoveNext
+  parent: System.Collections.Generic.Dictionary`2.Enumerator
+  href: System.Collections.Generic.Dictionary`2.Enumerator.yml
+  name: MoveNext()
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>.Enumerator.MoveNext()
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).Enumerator.MoveNext()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/Dictionary.cs
+    startLine: 728
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Advances the enumerator to the next element of the @'System.Collections.Generic.Dictionary`2'.
+  syntax:
+    content: public bool MoveNext()
+    content.vb: Public Function MoveNext As Boolean
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The collection was modified after the enumerator was created.
+- uid: System.Collections.Generic.Dictionary`2.Enumerator.Current
+  id: Current
+  parent: System.Collections.Generic.Dictionary`2.Enumerator
+  href: System.Collections.Generic.Dictionary`2.Enumerator.yml
+  name: Current
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>.Enumerator.Current
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).Enumerator.Current
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/Dictionary.cs
+    startLine: 749
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Gets the element at the current position of the enumerator.
+  syntax:
+    content: public KeyValuePair<TKey, TValue> Current { get; }
+    content.vb: Public ReadOnly Property Current As KeyValuePair(Of TKey, TValue)
+    parameters: []
+    return:
+      type: System.Collections.Generic.KeyValuePair{{TKey},{TValue}}
+- uid: System.Collections.Generic.Dictionary`2.Enumerator.Dispose
+  id: Dispose
+  parent: System.Collections.Generic.Dictionary`2.Enumerator
+  href: System.Collections.Generic.Dictionary`2.Enumerator.yml
+  name: Dispose()
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>.Enumerator.Dispose()
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).Enumerator.Dispose()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/Dictionary.cs
+    startLine: 753
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Releases all resources used by the @'System.Collections.Generic.Dictionary`2.Enumerator'.
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+- uid: System.Collections.Generic.Dictionary`2.Enumerator.System#Collections#IEnumerator#Current
+  id: System#Collections#IEnumerator#Current
+  parent: System.Collections.Generic.Dictionary`2.Enumerator
+  href: System.Collections.Generic.Dictionary`2.Enumerator.yml
+  name: IEnumerator.Current
+  name.vb: System.Collections.IEnumerator.Current
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>.Enumerator.System.Collections.IEnumerator.Current
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).Enumerator.System.Collections.IEnumerator.Current
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/Dictionary.cs
+    startLine: 756
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Gets the element at the current position of the enumerator.
+  syntax:
+    content: object IEnumerator.Current { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.IEnumerator.Current As Object Implements IEnumerator.Current
+    parameters: []
+    return:
+      type: System.Object
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The enumerator is positioned before the first element of the collection or after the last element.
+- uid: System.Collections.Generic.Dictionary`2.Enumerator.System#Collections#IEnumerator#Reset
+  id: System#Collections#IEnumerator#Reset
+  parent: System.Collections.Generic.Dictionary`2.Enumerator
+  href: System.Collections.Generic.Dictionary`2.Enumerator.yml
+  name: IEnumerator.Reset()
+  name.vb: System.Collections.IEnumerator.Reset()
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>.Enumerator.System.Collections.IEnumerator.Reset()
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).Enumerator.System.Collections.IEnumerator.Reset()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/Dictionary.cs
+    startLine: 770
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Sets the enumerator to its initial position, which is before the first element in the collection.
+  syntax:
+    content: void IEnumerator.Reset()
+    content.vb: Sub System.Collections.IEnumerator.Reset Implements IEnumerator.Reset
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The collection was modified after the enumerator was created.
+- uid: System.Collections.Generic.Dictionary`2.Enumerator.System#Collections#IDictionaryEnumerator#Entry
+  id: System#Collections#IDictionaryEnumerator#Entry
+  parent: System.Collections.Generic.Dictionary`2.Enumerator
+  href: System.Collections.Generic.Dictionary`2.Enumerator.yml
+  name: IDictionaryEnumerator.Entry
+  name.vb: System.Collections.IDictionaryEnumerator.Entry
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>.Enumerator.System.Collections.IDictionaryEnumerator.Entry
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).Enumerator.System.Collections.IDictionaryEnumerator.Entry
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/Dictionary.cs
+    startLine: 779
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Gets the element at the current position of the enumerator.
+  syntax:
+    content: DictionaryEntry IDictionaryEnumerator.Entry { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.IDictionaryEnumerator.Entry As DictionaryEntry Implements IDictionaryEnumerator.Entry
+    parameters: []
+    return:
+      type: System.Collections.DictionaryEntry
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The enumerator is positioned before the first element of the collection or after the last element.
+- uid: System.Collections.Generic.Dictionary`2.Enumerator.System#Collections#IDictionaryEnumerator#Key
+  id: System#Collections#IDictionaryEnumerator#Key
+  parent: System.Collections.Generic.Dictionary`2.Enumerator
+  href: System.Collections.Generic.Dictionary`2.Enumerator.yml
+  name: IDictionaryEnumerator.Key
+  name.vb: System.Collections.IDictionaryEnumerator.Key
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>.Enumerator.System.Collections.IDictionaryEnumerator.Key
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).Enumerator.System.Collections.IDictionaryEnumerator.Key
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/Dictionary.cs
+    startLine: 789
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Gets the key of the element at the current position of the enumerator.
+  syntax:
+    content: object IDictionaryEnumerator.Key { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.IDictionaryEnumerator.Key As Object Implements IDictionaryEnumerator.Key
+    parameters: []
+    return:
+      type: System.Object
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The enumerator is positioned before the first element of the collection or after the last element.
+- uid: System.Collections.Generic.Dictionary`2.Enumerator.System#Collections#IDictionaryEnumerator#Value
+  id: System#Collections#IDictionaryEnumerator#Value
+  parent: System.Collections.Generic.Dictionary`2.Enumerator
+  href: System.Collections.Generic.Dictionary`2.Enumerator.yml
+  name: IDictionaryEnumerator.Value
+  name.vb: System.Collections.IDictionaryEnumerator.Value
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>.Enumerator.System.Collections.IDictionaryEnumerator.Value
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).Enumerator.System.Collections.IDictionaryEnumerator.Value
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/Dictionary.cs
+    startLine: 799
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Gets the value of the element at the current position of the enumerator.
+  syntax:
+    content: object IDictionaryEnumerator.Value { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.IDictionaryEnumerator.Value As Object Implements IDictionaryEnumerator.Value
+    parameters: []
+    return:
+      type: System.Object
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The enumerator is positioned before the first element of the collection or after the last element.
+references:
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Collections.Generic.KeyValuePair{{TKey},{TValue}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.KeyValuePair`2
+  name: KeyValuePair<TKey, TValue>
+  name.vb: KeyValuePair(Of TKey, TValue)
+  fullName: System.Collections.Generic.KeyValuePair<TKey, TValue>
+  fullName.vb: System.Collections.Generic.KeyValuePair(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.KeyValuePair`2
+  parent: System.Collections.Generic
+  isExternal: true
+  name: KeyValuePair<TKey, TValue>
+  name.vb: KeyValuePair(Of TKey, TValue)
+  fullName: System.Collections.Generic.KeyValuePair<TKey, TValue>
+  fullName.vb: System.Collections.Generic.KeyValuePair(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: )
+    fullName: )
+- uid: System.Collections.DictionaryEntry
+  parent: System.Collections
+  isExternal: true
+  name: DictionaryEntry
+  fullName: System.Collections.DictionaryEntry
+- uid: System.Collections
+  isExternal: false
+  name: System.Collections
+  fullName: System.Collections

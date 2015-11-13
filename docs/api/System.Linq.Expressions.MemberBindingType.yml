@@ -1,0 +1,125 @@
+items:
+- uid: System.Linq.Expressions.MemberBindingType
+  id: MemberBindingType
+  parent: System.Linq.Expressions
+  children:
+  - System.Linq.Expressions.MemberBindingType.Assignment
+  - System.Linq.Expressions.MemberBindingType.ListBinding
+  - System.Linq.Expressions.MemberBindingType.MemberBinding
+  href: System.Linq.Expressions.MemberBindingType.yml
+  name: MemberBindingType
+  fullName: System.Linq.Expressions.MemberBindingType
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Linq.Expressions/src/System/Linq/Expressions/MemberBinding.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Linq.Expressions/src/System/Linq/Expressions/MemberBinding.cs
+    startLine: 11
+  assemblies:
+  - System.Linq.Expressions
+  namespace: System.Linq.Expressions
+  summary: Describes the binding types that are used in @'System.Linq.Expressions.MemberInitExpression' objects.
+  syntax:
+    content: public enum MemberBindingType
+    content.vb: Public Enum MemberBindingType
+- uid: System.Linq.Expressions.MemberBindingType.Assignment
+  id: Assignment
+  parent: System.Linq.Expressions.MemberBindingType
+  href: System.Linq.Expressions.MemberBindingType.yml
+  name: Assignment
+  fullName: System.Linq.Expressions.MemberBindingType.Assignment
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Linq.Expressions/src/System/Linq/Expressions/MemberBinding.cs
+    startLine: 16
+  assemblies:
+  - System.Linq.Expressions
+  namespace: System.Linq.Expressions
+  summary: A binding that represents initializing a member with the value of an expression.
+  syntax:
+    content: Assignment = 0
+- uid: System.Linq.Expressions.MemberBindingType.MemberBinding
+  id: MemberBinding
+  parent: System.Linq.Expressions.MemberBindingType
+  href: System.Linq.Expressions.MemberBindingType.yml
+  name: MemberBinding
+  fullName: System.Linq.Expressions.MemberBindingType.MemberBinding
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Linq.Expressions/src/System/Linq/Expressions/MemberBinding.cs
+    startLine: 20
+  assemblies:
+  - System.Linq.Expressions
+  namespace: System.Linq.Expressions
+  summary: A binding that represents recursively initializing members of a member.
+  syntax:
+    content: MemberBinding = 1
+- uid: System.Linq.Expressions.MemberBindingType.ListBinding
+  id: ListBinding
+  parent: System.Linq.Expressions.MemberBindingType
+  href: System.Linq.Expressions.MemberBindingType.yml
+  name: ListBinding
+  fullName: System.Linq.Expressions.MemberBindingType.ListBinding
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Linq.Expressions/src/System/Linq/Expressions/MemberBinding.cs
+    startLine: 24
+  assemblies:
+  - System.Linq.Expressions
+  namespace: System.Linq.Expressions
+  summary: A binding that represents initializing a member of type @'System.Collections.IList' or @'System.Collections.Generic.ICollection`1' from a list of elements.
+  syntax:
+    content: ListBinding = 2
+references:
+- uid: System.Linq.Expressions
+  isExternal: false
+  name: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  type: Namespace
+- uid: System.Collections.IList
+  parent: System.Collections
+  isExternal: true
+  name: IList
+  fullName: System.Collections.IList
+- uid: System.Collections.Generic.ICollection`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: ICollection<T>
+  name.vb: ICollection(Of T)
+  fullName: System.Collections.Generic.ICollection<T>
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections
+  isExternal: false
+  name: System.Collections
+  fullName: System.Collections
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic

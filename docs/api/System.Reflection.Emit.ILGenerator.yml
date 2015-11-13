@@ -1,0 +1,1504 @@
+items:
+- uid: System.Reflection.Emit.ILGenerator
+  id: ILGenerator
+  parent: System.Reflection.Emit
+  children:
+  - System.Reflection.Emit.ILGenerator.BeginCatchBlock(System.Type)
+  - System.Reflection.Emit.ILGenerator.BeginExceptFilterBlock
+  - System.Reflection.Emit.ILGenerator.BeginExceptionBlock
+  - System.Reflection.Emit.ILGenerator.BeginFaultBlock
+  - System.Reflection.Emit.ILGenerator.BeginFinallyBlock
+  - System.Reflection.Emit.ILGenerator.BeginScope
+  - System.Reflection.Emit.ILGenerator.DeclareLocal(System.Type)
+  - System.Reflection.Emit.ILGenerator.DeclareLocal(System.Type,System.Boolean)
+  - System.Reflection.Emit.ILGenerator.DefineLabel
+  - System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode)
+  - System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Byte)
+  - System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Double)
+  - System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Int16)
+  - System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Int32)
+  - System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Int64)
+  - System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Reflection.ConstructorInfo)
+  - System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Reflection.Emit.Label)
+  - System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Reflection.Emit.Label[])
+  - System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Reflection.Emit.LocalBuilder)
+  - System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Reflection.Emit.SignatureHelper)
+  - System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Reflection.FieldInfo)
+  - System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Reflection.MethodInfo)
+  - System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.SByte)
+  - System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Single)
+  - System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.String)
+  - System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Type)
+  - System.Reflection.Emit.ILGenerator.EmitCall(System.Reflection.Emit.OpCode,System.Reflection.MethodInfo,System.Type[])
+  - System.Reflection.Emit.ILGenerator.EmitCalli(System.Reflection.Emit.OpCode,System.Reflection.CallingConventions,System.Type,System.Type[],System.Type[])
+  - System.Reflection.Emit.ILGenerator.EmitCalli(System.Reflection.Emit.OpCode,System.Runtime.InteropServices.CallingConvention,System.Type,System.Type[])
+  - System.Reflection.Emit.ILGenerator.EmitWriteLine(System.Reflection.Emit.LocalBuilder)
+  - System.Reflection.Emit.ILGenerator.EmitWriteLine(System.Reflection.FieldInfo)
+  - System.Reflection.Emit.ILGenerator.EmitWriteLine(System.String)
+  - System.Reflection.Emit.ILGenerator.EndExceptionBlock
+  - System.Reflection.Emit.ILGenerator.EndScope
+  - System.Reflection.Emit.ILGenerator.ILOffset
+  - System.Reflection.Emit.ILGenerator.MarkLabel(System.Reflection.Emit.Label)
+  - System.Reflection.Emit.ILGenerator.MarkSequencePoint(System.Diagnostics.SymbolStore.ISymbolDocumentWriter,System.Int32,System.Int32,System.Int32,System.Int32)
+  - System.Reflection.Emit.ILGenerator.ThrowException(System.Type)
+  - System.Reflection.Emit.ILGenerator.UsingNamespace(System.String)
+  href: System.Reflection.Emit.ILGenerator.yml
+  name: ILGenerator
+  fullName: System.Reflection.Emit.ILGenerator
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Reflection/Emit/ILGenerator.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Reflection/Emit/ILGenerator.cs
+    startLine: 16
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Generates Microsoft intermediate language (MSIL) instructions.
+  syntax:
+    content: 'public class ILGenerator : _ILGenerator'
+    content.vb: Public Class ILGenerator Implements _ILGenerator
+  inheritance:
+  - System.Object
+  implements:
+  - System.Runtime.InteropServices._ILGenerator
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode)
+  id: Emit(System.Reflection.Emit.OpCode)
+  parent: System.Reflection.Emit.ILGenerator
+  href: System.Reflection.Emit.ILGenerator.yml
+  name: Emit(OpCode)
+  fullName: System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ILGenerator.cs
+    startLine: 435
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Puts the specified instruction onto the stream of instructions.
+  syntax:
+    content: public virtual void Emit(OpCode opcode)
+    content.vb: Public Overridable Sub Emit(opcode As OpCode)
+    parameters:
+    - id: opcode
+      type: System.Reflection.Emit.OpCode
+      description: The Microsoft Intermediate Language (MSIL) instruction to be put onto the stream.
+- uid: System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Byte)
+  id: Emit(System.Reflection.Emit.OpCode,System.Byte)
+  parent: System.Reflection.Emit.ILGenerator
+  href: System.Reflection.Emit.ILGenerator.yml
+  name: Emit(OpCode, Byte)
+  fullName: System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode, System.Byte)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ILGenerator.cs
+    startLine: 442
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Puts the specified instruction and character argument onto the Microsoft intermediate language (MSIL) stream of instructions.
+  syntax:
+    content: public virtual void Emit(OpCode opcode, byte arg)
+    content.vb: Public Overridable Sub Emit(opcode As OpCode, arg As Byte)
+    parameters:
+    - id: opcode
+      type: System.Reflection.Emit.OpCode
+      description: The MSIL instruction to be put onto the stream.
+    - id: arg
+      type: System.Byte
+      description: The character argument pushed onto the stream immediately after the instruction.
+- uid: System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.SByte)
+  id: Emit(System.Reflection.Emit.OpCode,System.SByte)
+  parent: System.Reflection.Emit.ILGenerator
+  href: System.Reflection.Emit.ILGenerator.yml
+  name: Emit(OpCode, SByte)
+  fullName: System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode, System.SByte)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ILGenerator.cs
+    startLine: 449
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Puts the specified instruction and character argument onto the Microsoft intermediate language (MSIL) stream of instructions.
+  syntax:
+    content: public void Emit(OpCode opcode, sbyte arg)
+    content.vb: Public Sub Emit(opcode As OpCode, arg As SByte)
+    parameters:
+    - id: opcode
+      type: System.Reflection.Emit.OpCode
+      description: The MSIL instruction to be put onto the stream.
+    - id: arg
+      type: System.SByte
+      description: The character argument pushed onto the stream immediately after the instruction.
+- uid: System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Int16)
+  id: Emit(System.Reflection.Emit.OpCode,System.Int16)
+  parent: System.Reflection.Emit.ILGenerator
+  href: System.Reflection.Emit.ILGenerator.yml
+  name: Emit(OpCode, Int16)
+  fullName: System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode, System.Int16)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ILGenerator.cs
+    startLine: 463
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Puts the specified instruction and numerical argument onto the Microsoft intermediate language (MSIL) stream of instructions.
+  syntax:
+    content: public virtual void Emit(OpCode opcode, short arg)
+    content.vb: Public Overridable Sub Emit(opcode As OpCode, arg As Short)
+    parameters:
+    - id: opcode
+      type: System.Reflection.Emit.OpCode
+      description: The MSIL instruction to be emitted onto the stream.
+    - id: arg
+      type: System.Int16
+      description: The Int argument pushed onto the stream immediately after the instruction.
+- uid: System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Int32)
+  id: Emit(System.Reflection.Emit.OpCode,System.Int32)
+  parent: System.Reflection.Emit.ILGenerator
+  href: System.Reflection.Emit.ILGenerator.yml
+  name: Emit(OpCode, Int32)
+  fullName: System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ILGenerator.cs
+    startLine: 472
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Puts the specified instruction and numerical argument onto the Microsoft intermediate language (MSIL) stream of instructions.
+  syntax:
+    content: public virtual void Emit(OpCode opcode, int arg)
+    content.vb: Public Overridable Sub Emit(opcode As OpCode, arg As Integer)
+    parameters:
+    - id: opcode
+      type: System.Reflection.Emit.OpCode
+      description: The MSIL instruction to be put onto the stream.
+    - id: arg
+      type: System.Int32
+      description: The numerical argument pushed onto the stream immediately after the instruction.
+- uid: System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Reflection.MethodInfo)
+  id: Emit(System.Reflection.Emit.OpCode,System.Reflection.MethodInfo)
+  parent: System.Reflection.Emit.ILGenerator
+  href: System.Reflection.Emit.ILGenerator.yml
+  name: Emit(OpCode, MethodInfo)
+  fullName: System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode, System.Reflection.MethodInfo)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ILGenerator.cs
+    startLine: 480
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Puts the specified instruction onto the Microsoft intermediate language (MSIL) stream followed by the metadata token for the given method.
+  syntax:
+    content: public virtual void Emit(OpCode opcode, MethodInfo meth)
+    content.vb: Public Overridable Sub Emit(opcode As OpCode, meth As MethodInfo)
+    parameters:
+    - id: opcode
+      type: System.Reflection.Emit.OpCode
+      description: The MSIL instruction to be emitted onto the stream.
+    - id: meth
+      type: System.Reflection.MethodInfo
+      description: A MethodInfo representing a method.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*meth* is null.'
+  - type: System.NotSupportedException
+    description: '*meth* is a generic method for which the @''System.Reflection.MethodInfo.IsGenericMethodDefinition'' property is false.'
+- uid: System.Reflection.Emit.ILGenerator.EmitCalli(System.Reflection.Emit.OpCode,System.Reflection.CallingConventions,System.Type,System.Type[],System.Type[])
+  id: EmitCalli(System.Reflection.Emit.OpCode,System.Reflection.CallingConventions,System.Type,System.Type[],System.Type[])
+  parent: System.Reflection.Emit.ILGenerator
+  href: System.Reflection.Emit.ILGenerator.yml
+  name: EmitCalli(OpCode, CallingConventions, Type, Type[], Type[])
+  name.vb: EmitCalli(OpCode, CallingConventions, Type, Type(), Type())
+  fullName: System.Reflection.Emit.ILGenerator.EmitCalli(System.Reflection.Emit.OpCode, System.Reflection.CallingConventions, System.Type, System.Type[], System.Type[])
+  fullName.vb: System.Reflection.Emit.ILGenerator.EmitCalli(System.Reflection.Emit.OpCode, System.Reflection.CallingConventions, System.Type, System.Type(), System.Type())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ILGenerator.cs
+    startLine: 512
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Puts a @'System.Reflection.Emit.OpCodes.Calli' instruction onto the Microsoft intermediate language (MSIL) stream, specifying a managed calling convention for the indirect call.
+  syntax:
+    content: public virtual void EmitCalli(OpCode opcode, CallingConventions callingConvention, Type returnType, Type[] parameterTypes, Type[] optionalParameterTypes)
+    content.vb: Public Overridable Sub EmitCalli(opcode As OpCode, callingConvention As CallingConventions, returnType As Type, parameterTypes As Type(), optionalParameterTypes As Type())
+    parameters:
+    - id: opcode
+      type: System.Reflection.Emit.OpCode
+      description: The MSIL instruction to be emitted onto the stream. Must be @'System.Reflection.Emit.OpCodes.Calli'.
+    - id: callingConvention
+      type: System.Reflection.CallingConventions
+      description: The managed calling convention to be used.
+    - id: returnType
+      type: System.Type
+      description: The @'System.Type' of the result.
+    - id: parameterTypes
+      type: System.Type[]
+      description: The types of the required arguments to the instruction.
+    - id: optionalParameterTypes
+      type: System.Type[]
+      description: The types of the optional arguments for varargs calls.
+  exceptions:
+  - type: System.InvalidOperationException
+    description: '*optionalParameterTypes* is not null, but *callingConvention* does not include the @''System.Reflection.CallingConventions.VarArgs'' flag.'
+- uid: System.Reflection.Emit.ILGenerator.EmitCalli(System.Reflection.Emit.OpCode,System.Runtime.InteropServices.CallingConvention,System.Type,System.Type[])
+  id: EmitCalli(System.Reflection.Emit.OpCode,System.Runtime.InteropServices.CallingConvention,System.Type,System.Type[])
+  parent: System.Reflection.Emit.ILGenerator
+  href: System.Reflection.Emit.ILGenerator.yml
+  name: EmitCalli(OpCode, CallingConvention, Type, Type[])
+  name.vb: EmitCalli(OpCode, CallingConvention, Type, Type())
+  fullName: System.Reflection.Emit.ILGenerator.EmitCalli(System.Reflection.Emit.OpCode, System.Runtime.InteropServices.CallingConvention, System.Type, System.Type[])
+  fullName.vb: System.Reflection.Emit.ILGenerator.EmitCalli(System.Reflection.Emit.OpCode, System.Runtime.InteropServices.CallingConvention, System.Type, System.Type())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ILGenerator.cs
+    startLine: 556
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Puts a @'System.Reflection.Emit.OpCodes.Calli' instruction onto the Microsoft intermediate language (MSIL) stream, specifying an unmanaged calling convention for the indirect call.
+  syntax:
+    content: public virtual void EmitCalli(OpCode opcode, CallingConvention unmanagedCallConv, Type returnType, Type[] parameterTypes)
+    content.vb: Public Overridable Sub EmitCalli(opcode As OpCode, unmanagedCallConv As CallingConvention, returnType As Type, parameterTypes As Type())
+    parameters:
+    - id: opcode
+      type: System.Reflection.Emit.OpCode
+      description: The MSIL instruction to be emitted onto the stream. Must be @'System.Reflection.Emit.OpCodes.Calli'.
+    - id: unmanagedCallConv
+      type: System.Runtime.InteropServices.CallingConvention
+      description: The unmanaged calling convention to be used.
+    - id: returnType
+      type: System.Type
+      description: The @'System.Type' of the result.
+    - id: parameterTypes
+      type: System.Type[]
+      description: The types of the required arguments to the instruction.
+- uid: System.Reflection.Emit.ILGenerator.EmitCall(System.Reflection.Emit.OpCode,System.Reflection.MethodInfo,System.Type[])
+  id: EmitCall(System.Reflection.Emit.OpCode,System.Reflection.MethodInfo,System.Type[])
+  parent: System.Reflection.Emit.ILGenerator
+  href: System.Reflection.Emit.ILGenerator.yml
+  name: EmitCall(OpCode, MethodInfo, Type[])
+  name.vb: EmitCall(OpCode, MethodInfo, Type())
+  fullName: System.Reflection.Emit.ILGenerator.EmitCall(System.Reflection.Emit.OpCode, System.Reflection.MethodInfo, System.Type[])
+  fullName.vb: System.Reflection.Emit.ILGenerator.EmitCall(System.Reflection.Emit.OpCode, System.Reflection.MethodInfo, System.Type())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ILGenerator.cs
+    startLine: 601
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Puts a call or callvirt instruction onto the Microsoft intermediate language (MSIL) stream to call a varargs method.
+  syntax:
+    content: public virtual void EmitCall(OpCode opcode, MethodInfo methodInfo, Type[] optionalParameterTypes)
+    content.vb: Public Overridable Sub EmitCall(opcode As OpCode, methodInfo As MethodInfo, optionalParameterTypes As Type())
+    parameters:
+    - id: opcode
+      type: System.Reflection.Emit.OpCode
+      description: The MSIL instruction to be emitted onto the stream. Must be @'System.Reflection.Emit.OpCodes.Call', @'System.Reflection.Emit.OpCodes.Callvirt', or @'System.Reflection.Emit.OpCodes.Newobj'.
+    - id: methodInfo
+      type: System.Reflection.MethodInfo
+      description: The varargs method to be called.
+    - id: optionalParameterTypes
+      type: System.Type[]
+      description: The types of the optional arguments if the method is a varargs method; otherwise, null.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*opcode* does not specify a method call.'
+  - type: System.ArgumentNullException
+    description: '*methodInfo* is null.'
+  - type: System.InvalidOperationException
+    description: The calling convention for the method is not varargs, but optional parameter types are supplied. This exception is thrown in the .NET Framework versions 1.0 and 1.1, In subsequent versions, no exception is thrown.
+- uid: System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Reflection.Emit.SignatureHelper)
+  id: Emit(System.Reflection.Emit.OpCode,System.Reflection.Emit.SignatureHelper)
+  parent: System.Reflection.Emit.ILGenerator
+  href: System.Reflection.Emit.ILGenerator.yml
+  name: Emit(OpCode, SignatureHelper)
+  fullName: System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode, System.Reflection.Emit.SignatureHelper)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ILGenerator.cs
+    startLine: 639
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Puts the specified instruction and a signature token onto the Microsoft intermediate language (MSIL) stream of instructions.
+  syntax:
+    content: public virtual void Emit(OpCode opcode, SignatureHelper signature)
+    content.vb: Public Overridable Sub Emit(opcode As OpCode, signature As SignatureHelper)
+    parameters:
+    - id: opcode
+      type: System.Reflection.Emit.OpCode
+      description: The MSIL instruction to be emitted onto the stream.
+    - id: signature
+      type: System.Reflection.Emit.SignatureHelper
+      description: A helper for constructing a signature token.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*signature* is null.'
+- uid: System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Reflection.ConstructorInfo)
+  id: Emit(System.Reflection.Emit.OpCode,System.Reflection.ConstructorInfo)
+  parent: System.Reflection.Emit.ILGenerator
+  href: System.Reflection.Emit.ILGenerator.yml
+  name: Emit(OpCode, ConstructorInfo)
+  fullName: System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode, System.Reflection.ConstructorInfo)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ILGenerator.cs
+    startLine: 674
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Puts the specified instruction and metadata token for the specified constructor onto the Microsoft intermediate language (MSIL) stream of instructions.
+  syntax:
+    content: public virtual void Emit(OpCode opcode, ConstructorInfo con)
+    content.vb: Public Overridable Sub Emit(opcode As OpCode, con As ConstructorInfo)
+    parameters:
+    - id: opcode
+      type: System.Reflection.Emit.OpCode
+      description: The MSIL instruction to be emitted onto the stream.
+    - id: con
+      type: System.Reflection.ConstructorInfo
+      description: A ConstructorInfo representing a constructor.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: "*con* is null. This exception is new in the .NET Framework 4."
+- uid: System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Type)
+  id: Emit(System.Reflection.Emit.OpCode,System.Type)
+  parent: System.Reflection.Emit.ILGenerator
+  href: System.Reflection.Emit.ILGenerator.yml
+  name: Emit(OpCode, Type)
+  fullName: System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode, System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ILGenerator.cs
+    startLine: 718
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Puts the specified instruction onto the Microsoft intermediate language (MSIL) stream followed by the metadata token for the given type.
+  syntax:
+    content: public virtual void Emit(OpCode opcode, Type cls)
+    content.vb: Public Overridable Sub Emit(opcode As OpCode, cls As Type)
+    parameters:
+    - id: opcode
+      type: System.Reflection.Emit.OpCode
+      description: The MSIL instruction to be put onto the stream.
+    - id: cls
+      type: System.Type
+      description: A Type.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*cls* is null.'
+- uid: System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Int64)
+  id: Emit(System.Reflection.Emit.OpCode,System.Int64)
+  parent: System.Reflection.Emit.ILGenerator
+  href: System.Reflection.Emit.ILGenerator.yml
+  name: Emit(OpCode, Int64)
+  fullName: System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode, System.Int64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ILGenerator.cs
+    startLine: 745
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Puts the specified instruction and numerical argument onto the Microsoft intermediate language (MSIL) stream of instructions.
+  syntax:
+    content: public virtual void Emit(OpCode opcode, long arg)
+    content.vb: Public Overridable Sub Emit(opcode As OpCode, arg As Long)
+    parameters:
+    - id: opcode
+      type: System.Reflection.Emit.OpCode
+      description: The MSIL instruction to be put onto the stream.
+    - id: arg
+      type: System.Int64
+      description: The numerical argument pushed onto the stream immediately after the instruction.
+- uid: System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Single)
+  id: Emit(System.Reflection.Emit.OpCode,System.Single)
+  parent: System.Reflection.Emit.ILGenerator
+  href: System.Reflection.Emit.ILGenerator.yml
+  name: Emit(OpCode, Single)
+  fullName: System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode, System.Single)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ILGenerator.cs
+    startLine: 758
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Puts the specified instruction and numerical argument onto the Microsoft intermediate language (MSIL) stream of instructions.
+  syntax:
+    content: public virtual void Emit(OpCode opcode, float arg)
+    content.vb: Public Overridable Sub Emit(opcode As OpCode, arg As Single)
+    parameters:
+    - id: opcode
+      type: System.Reflection.Emit.OpCode
+      description: The MSIL instruction to be put onto the stream.
+    - id: arg
+      type: System.Single
+      description: The Single argument pushed onto the stream immediately after the instruction.
+- uid: System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Double)
+  id: Emit(System.Reflection.Emit.OpCode,System.Double)
+  parent: System.Reflection.Emit.ILGenerator
+  href: System.Reflection.Emit.ILGenerator.yml
+  name: Emit(OpCode, Double)
+  fullName: System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode, System.Double)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ILGenerator.cs
+    startLine: 769
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Puts the specified instruction and numerical argument onto the Microsoft intermediate language (MSIL) stream of instructions.
+  syntax:
+    content: public virtual void Emit(OpCode opcode, double arg)
+    content.vb: Public Overridable Sub Emit(opcode As OpCode, arg As Double)
+    parameters:
+    - id: opcode
+      type: System.Reflection.Emit.OpCode
+      description: The MSIL instruction to be put onto the stream. Defined in the OpCodes enumeration.
+    - id: arg
+      type: System.Double
+      description: The numerical argument pushed onto the stream immediately after the instruction.
+- uid: System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Reflection.Emit.Label)
+  id: Emit(System.Reflection.Emit.OpCode,System.Reflection.Emit.Label)
+  parent: System.Reflection.Emit.ILGenerator
+  href: System.Reflection.Emit.ILGenerator.yml
+  name: Emit(OpCode, Label)
+  fullName: System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode, System.Reflection.Emit.Label)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ILGenerator.cs
+    startLine: 784
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Puts the specified instruction onto the Microsoft intermediate language (MSIL) stream and leaves space to include a label when fixes are done.
+  syntax:
+    content: public virtual void Emit(OpCode opcode, Label label)
+    content.vb: Public Overridable Sub Emit(opcode As OpCode, label As Label)
+    parameters:
+    - id: opcode
+      type: System.Reflection.Emit.OpCode
+      description: The MSIL instruction to be emitted onto the stream.
+    - id: label
+      type: System.Reflection.Emit.Label
+      description: The label to which to branch from this location.
+- uid: System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Reflection.Emit.Label[])
+  id: Emit(System.Reflection.Emit.OpCode,System.Reflection.Emit.Label[])
+  parent: System.Reflection.Emit.ILGenerator
+  href: System.Reflection.Emit.ILGenerator.yml
+  name: Emit(OpCode, Label[])
+  name.vb: Emit(OpCode, Label())
+  fullName: System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode, System.Reflection.Emit.Label[])
+  fullName.vb: System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode, System.Reflection.Emit.Label())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ILGenerator.cs
+    startLine: 810
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Puts the specified instruction onto the Microsoft intermediate language (MSIL) stream and leaves space to include a label when fixes are done.
+  syntax:
+    content: public virtual void Emit(OpCode opcode, Label[] labels)
+    content.vb: Public Overridable Sub Emit(opcode As OpCode, labels As Label())
+    parameters:
+    - id: opcode
+      type: System.Reflection.Emit.OpCode
+      description: The MSIL instruction to be emitted onto the stream.
+    - id: labels
+      type: System.Reflection.Emit.Label[]
+      description: The array of label objects to which to branch from this location. All of the labels will be used.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: "*con* is null. This exception is new in the .NET Framework 4."
+- uid: System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Reflection.FieldInfo)
+  id: Emit(System.Reflection.Emit.OpCode,System.Reflection.FieldInfo)
+  parent: System.Reflection.Emit.ILGenerator
+  href: System.Reflection.Emit.ILGenerator.yml
+  name: Emit(OpCode, FieldInfo)
+  fullName: System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode, System.Reflection.FieldInfo)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ILGenerator.cs
+    startLine: 833
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Puts the specified instruction and metadata token for the specified field onto the Microsoft intermediate language (MSIL) stream of instructions.
+  syntax:
+    content: public virtual void Emit(OpCode opcode, FieldInfo field)
+    content.vb: Public Overridable Sub Emit(opcode As OpCode, field As FieldInfo)
+    parameters:
+    - id: opcode
+      type: System.Reflection.Emit.OpCode
+      description: The MSIL instruction to be emitted onto the stream.
+    - id: field
+      type: System.Reflection.FieldInfo
+      description: A FieldInfo representing a field.
+- uid: System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.String)
+  id: Emit(System.Reflection.Emit.OpCode,System.String)
+  parent: System.Reflection.Emit.ILGenerator
+  href: System.Reflection.Emit.ILGenerator.yml
+  name: Emit(OpCode, String)
+  fullName: System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ILGenerator.cs
+    startLine: 843
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Puts the specified instruction onto the Microsoft intermediate language (MSIL) stream followed by the metadata token for the given string.
+  syntax:
+    content: public virtual void Emit(OpCode opcode, string str)
+    content.vb: Public Overridable Sub Emit(opcode As OpCode, str As String)
+    parameters:
+    - id: opcode
+      type: System.Reflection.Emit.OpCode
+      description: The MSIL instruction to be emitted onto the stream.
+    - id: str
+      type: System.String
+      description: The String to be emitted.
+- uid: System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Reflection.Emit.LocalBuilder)
+  id: Emit(System.Reflection.Emit.OpCode,System.Reflection.Emit.LocalBuilder)
+  parent: System.Reflection.Emit.ILGenerator
+  href: System.Reflection.Emit.ILGenerator.yml
+  name: Emit(OpCode, LocalBuilder)
+  fullName: System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode, System.Reflection.Emit.LocalBuilder)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ILGenerator.cs
+    startLine: 856
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Puts the specified instruction onto the Microsoft intermediate language (MSIL) stream followed by the index of the given local variable.
+  syntax:
+    content: public virtual void Emit(OpCode opcode, LocalBuilder local)
+    content.vb: Public Overridable Sub Emit(opcode As OpCode, local As LocalBuilder)
+    parameters:
+    - id: opcode
+      type: System.Reflection.Emit.OpCode
+      description: The MSIL instruction to be emitted onto the stream.
+    - id: local
+      type: System.Reflection.Emit.LocalBuilder
+      description: A local variable.
+  exceptions:
+  - type: System.ArgumentException
+    description: The parent method of the *local* parameter does not match the method associated with this @'System.Reflection.Emit.ILGenerator'.
+  - type: System.ArgumentNullException
+    description: '*local* is null.'
+  - type: System.InvalidOperationException
+    description: '*opcode* is a single-byte instruction, and *local* represents a local variable with an index greater than Byte.MaxValue.'
+- uid: System.Reflection.Emit.ILGenerator.BeginExceptionBlock
+  id: BeginExceptionBlock
+  parent: System.Reflection.Emit.ILGenerator
+  href: System.Reflection.Emit.ILGenerator.yml
+  name: BeginExceptionBlock()
+  fullName: System.Reflection.Emit.ILGenerator.BeginExceptionBlock()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ILGenerator.cs
+    startLine: 944
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Begins an exception block for a non-filtered exception.
+  syntax:
+    content: public virtual Label BeginExceptionBlock()
+    content.vb: Public Overridable Function BeginExceptionBlock As Label
+    return:
+      type: System.Reflection.Emit.Label
+- uid: System.Reflection.Emit.ILGenerator.EndExceptionBlock
+  id: EndExceptionBlock
+  parent: System.Reflection.Emit.ILGenerator
+  href: System.Reflection.Emit.ILGenerator.yml
+  name: EndExceptionBlock()
+  fullName: System.Reflection.Emit.ILGenerator.EndExceptionBlock()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ILGenerator.cs
+    startLine: 988
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Ends an exception block.
+  syntax:
+    content: public virtual void EndExceptionBlock()
+    content.vb: Public Overridable Sub
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The end exception block occurs in an unexpected place in the code stream.
+  - type: System.NotSupportedException
+    description: The Microsoft intermediate language (MSIL) being generated is not currently in an exception block.
+- uid: System.Reflection.Emit.ILGenerator.BeginExceptFilterBlock
+  id: BeginExceptFilterBlock
+  parent: System.Reflection.Emit.ILGenerator
+  href: System.Reflection.Emit.ILGenerator.yml
+  name: BeginExceptFilterBlock()
+  fullName: System.Reflection.Emit.ILGenerator.BeginExceptFilterBlock()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ILGenerator.cs
+    startLine: 1026
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Begins an exception block for a filtered exception.
+  syntax:
+    content: public virtual void BeginExceptFilterBlock()
+    content.vb: Public Overridable Sub BeginExceptFilterBlock
+  exceptions:
+  - type: System.NotSupportedException
+    description: The Microsoft intermediate language (MSIL) being generated is not currently in an exception block. -or-This @'System.Reflection.Emit.ILGenerator' belongs to a @'System.Reflection.Emit.DynamicMethod'.
+- uid: System.Reflection.Emit.ILGenerator.BeginCatchBlock(System.Type)
+  id: BeginCatchBlock(System.Type)
+  parent: System.Reflection.Emit.ILGenerator
+  href: System.Reflection.Emit.ILGenerator.yml
+  name: BeginCatchBlock(Type)
+  fullName: System.Reflection.Emit.ILGenerator.BeginCatchBlock(System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ILGenerator.cs
+    startLine: 1041
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Begins a catch block.
+  syntax:
+    content: public virtual void BeginCatchBlock(Type exceptionType)
+    content.vb: Public Overridable Sub BeginCatchBlock(exceptionType As Type)
+    parameters:
+    - id: exceptionType
+      type: System.Type
+      description: The @'System.Type' object that represents the exception.
+  exceptions:
+  - type: System.ArgumentException
+    description: The catch block is within a filtered exception.
+  - type: System.ArgumentNullException
+    description: '*exceptionType* is null, and the exception filter block has not returned a value that indicates that finally blocks should be run until this catch block is located.'
+  - type: System.NotSupportedException
+    description: The Microsoft intermediate language (MSIL) being generated is not currently in an exception block.
+- uid: System.Reflection.Emit.ILGenerator.BeginFaultBlock
+  id: BeginFaultBlock
+  parent: System.Reflection.Emit.ILGenerator
+  href: System.Reflection.Emit.ILGenerator.yml
+  name: BeginFaultBlock()
+  fullName: System.Reflection.Emit.ILGenerator.BeginFaultBlock()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ILGenerator.cs
+    startLine: 1070
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Begins an exception fault block in the Microsoft intermediate language (MSIL) stream.
+  syntax:
+    content: public virtual void BeginFaultBlock()
+    content.vb: Public Overridable Sub BeginFaultBlock
+  exceptions:
+  - type: System.NotSupportedException
+    description: The MSIL being generated is not currently in an exception block. -or-This @'System.Reflection.Emit.ILGenerator' belongs to a @'System.Reflection.Emit.DynamicMethod'.
+- uid: System.Reflection.Emit.ILGenerator.BeginFinallyBlock
+  id: BeginFinallyBlock
+  parent: System.Reflection.Emit.ILGenerator
+  href: System.Reflection.Emit.ILGenerator.yml
+  name: BeginFinallyBlock()
+  fullName: System.Reflection.Emit.ILGenerator.BeginFinallyBlock()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ILGenerator.cs
+    startLine: 1084
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Begins a finally block in the Microsoft intermediate language (MSIL) instruction stream.
+  syntax:
+    content: public virtual void BeginFinallyBlock()
+    content.vb: Public Overridable Sub BeginFinallyBlock
+  exceptions:
+  - type: System.NotSupportedException
+    description: The MSIL being generated is not currently in an exception block.
+- uid: System.Reflection.Emit.ILGenerator.DefineLabel
+  id: DefineLabel
+  parent: System.Reflection.Emit.ILGenerator
+  href: System.Reflection.Emit.ILGenerator.yml
+  name: DefineLabel()
+  fullName: System.Reflection.Emit.ILGenerator.DefineLabel()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ILGenerator.cs
+    startLine: 1116
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Declares a new label.
+  syntax:
+    content: public virtual Label DefineLabel()
+    content.vb: Public Overridable Function DefineLabel As Label
+    return:
+      type: System.Reflection.Emit.Label
+- uid: System.Reflection.Emit.ILGenerator.MarkLabel(System.Reflection.Emit.Label)
+  id: MarkLabel(System.Reflection.Emit.Label)
+  parent: System.Reflection.Emit.ILGenerator
+  href: System.Reflection.Emit.ILGenerator.yml
+  name: MarkLabel(Label)
+  fullName: System.Reflection.Emit.ILGenerator.MarkLabel(System.Reflection.Emit.Label)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ILGenerator.cs
+    startLine: 1134
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Marks the Microsoft intermediate language (MSIL) stream's current position with the given label.
+  syntax:
+    content: public virtual void MarkLabel(Label loc)
+    content.vb: Public Overridable Sub MarkLabel(loc As Label)
+    parameters:
+    - id: loc
+      type: System.Reflection.Emit.Label
+      description: The label for which to set an index.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*loc* represents an invalid index into the label array.-or- An index for *loc* has already been defined.'
+- uid: System.Reflection.Emit.ILGenerator.ThrowException(System.Type)
+  id: ThrowException(System.Type)
+  parent: System.Reflection.Emit.ILGenerator
+  href: System.Reflection.Emit.ILGenerator.yml
+  name: ThrowException(Type)
+  fullName: System.Reflection.Emit.ILGenerator.ThrowException(System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ILGenerator.cs
+    startLine: 1156
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Emits an instruction to throw an exception.
+  syntax:
+    content: public virtual void ThrowException(Type excType)
+    content.vb: Public Overridable Sub ThrowException(excType As Type)
+    parameters:
+    - id: excType
+      type: System.Type
+      description: The class of the type of exception to throw.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*excType* is not the @''System.Exception'' class or a derived class of @''System.Exception''.-or- The type does not have a default constructor.'
+  - type: System.ArgumentNullException
+    description: '*excType* is null.'
+- uid: System.Reflection.Emit.ILGenerator.EmitWriteLine(System.String)
+  id: EmitWriteLine(System.String)
+  parent: System.Reflection.Emit.ILGenerator
+  href: System.Reflection.Emit.ILGenerator.yml
+  name: EmitWriteLine(String)
+  fullName: System.Reflection.Emit.ILGenerator.EmitWriteLine(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ILGenerator.cs
+    startLine: 1187
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Emits the Microsoft intermediate language (MSIL) to call <see cref="Overload:System.Console.WriteLine" /> with a string.
+  syntax:
+    content: public virtual void EmitWriteLine(string value)
+    content.vb: Public Overridable Sub EmitWriteLine(value As String)
+    parameters:
+    - id: value
+      type: System.String
+      description: The string to be printed.
+- uid: System.Reflection.Emit.ILGenerator.EmitWriteLine(System.Reflection.Emit.LocalBuilder)
+  id: EmitWriteLine(System.Reflection.Emit.LocalBuilder)
+  parent: System.Reflection.Emit.ILGenerator
+  href: System.Reflection.Emit.ILGenerator.yml
+  name: EmitWriteLine(LocalBuilder)
+  fullName: System.Reflection.Emit.ILGenerator.EmitWriteLine(System.Reflection.Emit.LocalBuilder)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ILGenerator.cs
+    startLine: 1198
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Emits the Microsoft intermediate language (MSIL) necessary to call <see cref="Overload:System.Console.WriteLine" /> with the given local variable.
+  syntax:
+    content: public virtual void EmitWriteLine(LocalBuilder localBuilder)
+    content.vb: Public Overridable Sub EmitWriteLine(localBuilder As LocalBuilder)
+    parameters:
+    - id: localBuilder
+      type: System.Reflection.Emit.LocalBuilder
+      description: The local variable whose value is to be written to the console.
+  exceptions:
+  - type: System.ArgumentException
+    description: The type of *localBuilder* is @'System.Reflection.Emit.TypeBuilder' or @'System.Reflection.Emit.EnumBuilder', which are not supported. -or-There is no overload of  that accepts the type of *localBuilder*.
+  - type: System.ArgumentNullException
+    description: '*localBuilder* is null.'
+- uid: System.Reflection.Emit.ILGenerator.EmitWriteLine(System.Reflection.FieldInfo)
+  id: EmitWriteLine(System.Reflection.FieldInfo)
+  parent: System.Reflection.Emit.ILGenerator
+  href: System.Reflection.Emit.ILGenerator.yml
+  name: EmitWriteLine(FieldInfo)
+  fullName: System.Reflection.Emit.ILGenerator.EmitWriteLine(System.Reflection.FieldInfo)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ILGenerator.cs
+    startLine: 1228
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Emits the Microsoft intermediate language (MSIL) necessary to call <see cref="Overload:System.Console.WriteLine" /> with the given field.
+  syntax:
+    content: public virtual void EmitWriteLine(FieldInfo fld)
+    content.vb: Public Overridable Sub EmitWriteLine(fld As FieldInfo)
+    parameters:
+    - id: fld
+      type: System.Reflection.FieldInfo
+      description: The field whose value is to be written to the console.
+  exceptions:
+  - type: System.ArgumentException
+    description: There is no overload of the  method that accepts the type of the specified field.
+  - type: System.ArgumentNullException
+    description: '*fld* is null.'
+  - type: System.NotSupportedException
+    description: The type of the field is @'System.Reflection.Emit.TypeBuilder' or @'System.Reflection.Emit.EnumBuilder', which are not supported.
+- uid: System.Reflection.Emit.ILGenerator.DeclareLocal(System.Type)
+  id: DeclareLocal(System.Type)
+  parent: System.Reflection.Emit.ILGenerator
+  href: System.Reflection.Emit.ILGenerator.yml
+  name: DeclareLocal(Type)
+  fullName: System.Reflection.Emit.ILGenerator.DeclareLocal(System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ILGenerator.cs
+    startLine: 1268
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Declares a local variable of the specified type.
+  syntax:
+    content: public virtual LocalBuilder DeclareLocal(Type localType)
+    content.vb: Public Overridable Function DeclareLocal(localType As Type) As LocalBuilder
+    parameters:
+    - id: localType
+      type: System.Type
+      description: A @'System.Type' object that represents the type of the local variable.
+    return:
+      type: System.Reflection.Emit.LocalBuilder
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*localType* is null.'
+  - type: System.InvalidOperationException
+    description: The containing type has been created by the @'System.Reflection.Emit.TypeBuilder.CreateType' method.
+- uid: System.Reflection.Emit.ILGenerator.DeclareLocal(System.Type,System.Boolean)
+  id: DeclareLocal(System.Type,System.Boolean)
+  parent: System.Reflection.Emit.ILGenerator
+  href: System.Reflection.Emit.ILGenerator.yml
+  name: DeclareLocal(Type, Boolean)
+  fullName: System.Reflection.Emit.ILGenerator.DeclareLocal(System.Type, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ILGenerator.cs
+    startLine: 1273
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Declares a local variable of the specified type, optionally pinning the object referred to by the variable.
+  syntax:
+    content: public virtual LocalBuilder DeclareLocal(Type localType, bool pinned)
+    content.vb: Public Overridable Function DeclareLocal(localType As Type, pinned As Boolean) As LocalBuilder
+    parameters:
+    - id: localType
+      type: System.Type
+      description: A @'System.Type' object that represents the type of the local variable.
+    - id: pinned
+      type: System.Boolean
+      description: true to pin the object in memory; otherwise, false.
+    return:
+      type: System.Reflection.Emit.LocalBuilder
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*localType* is null.'
+  - type: System.InvalidOperationException
+    description: The containing type has been created by the @'System.Reflection.Emit.TypeBuilder.CreateType' method.-or-The method body of the enclosing method has been created by the @'System.Reflection.Emit.MethodBuilder.CreateMethodBody(System.Byte[],System.Int32)' method.
+  - type: System.NotSupportedException
+    description: The method with which this @'System.Reflection.Emit.ILGenerator' is associated is not represented by a @'System.Reflection.Emit.MethodBuilder'.
+- uid: System.Reflection.Emit.ILGenerator.UsingNamespace(System.String)
+  id: UsingNamespace(System.String)
+  parent: System.Reflection.Emit.ILGenerator
+  href: System.Reflection.Emit.ILGenerator.yml
+  name: UsingNamespace(String)
+  fullName: System.Reflection.Emit.ILGenerator.UsingNamespace(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ILGenerator.cs
+    startLine: 1306
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Specifies the namespace to be used in evaluating locals and watches for the current active lexical scope.
+  syntax:
+    content: public virtual void UsingNamespace(string usingNamespace)
+    content.vb: Public Overridable Sub UsingNamespace(usingNamespace As String)
+    parameters:
+    - id: usingNamespace
+      type: System.String
+      description: The namespace to be used in evaluating locals and watches for the current active lexical scope
+  exceptions:
+  - type: System.ArgumentException
+    description: Length of *usingNamespace* is zero.
+  - type: System.ArgumentNullException
+    description: '*usingNamespace* is null.'
+  - type: System.NotSupportedException
+    description: This @'System.Reflection.Emit.ILGenerator' belongs to a @'System.Reflection.Emit.DynamicMethod'.
+- uid: System.Reflection.Emit.ILGenerator.MarkSequencePoint(System.Diagnostics.SymbolStore.ISymbolDocumentWriter,System.Int32,System.Int32,System.Int32,System.Int32)
+  id: MarkSequencePoint(System.Diagnostics.SymbolStore.ISymbolDocumentWriter,System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: System.Reflection.Emit.ILGenerator
+  href: System.Reflection.Emit.ILGenerator.yml
+  name: MarkSequencePoint(ISymbolDocumentWriter, Int32, Int32, Int32, Int32)
+  fullName: System.Reflection.Emit.ILGenerator.MarkSequencePoint(System.Diagnostics.SymbolStore.ISymbolDocumentWriter, System.Int32, System.Int32, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ILGenerator.cs
+    startLine: 1334
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Marks a sequence point in the Microsoft intermediate language (MSIL) stream.
+  syntax:
+    content: public virtual void MarkSequencePoint(ISymbolDocumentWriter document, int startLine, int startColumn, int endLine, int endColumn)
+    content.vb: Public Overridable Sub MarkSequencePoint(document As ISymbolDocumentWriter, startLine As Integer, startColumn As Integer, endLine As Integer, endColumn As Integer)
+    parameters:
+    - id: document
+      type: System.Diagnostics.SymbolStore.ISymbolDocumentWriter
+      description: The document for which the sequence point is being defined.
+    - id: startLine
+      type: System.Int32
+      description: The line where the sequence point begins.
+    - id: startColumn
+      type: System.Int32
+      description: The column in the line where the sequence point begins.
+    - id: endLine
+      type: System.Int32
+      description: The line where the sequence point ends.
+    - id: endColumn
+      type: System.Int32
+      description: The column in the line where the sequence point ends.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*startLine* or *endLine* is <= 0.'
+  - type: System.NotSupportedException
+    description: This @'System.Reflection.Emit.ILGenerator' belongs to a @'System.Reflection.Emit.DynamicMethod'.
+- uid: System.Reflection.Emit.ILGenerator.BeginScope
+  id: BeginScope
+  parent: System.Reflection.Emit.ILGenerator
+  href: System.Reflection.Emit.ILGenerator.yml
+  name: BeginScope()
+  fullName: System.Reflection.Emit.ILGenerator.BeginScope()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ILGenerator.cs
+    startLine: 1349
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Begins a lexical scope.
+  syntax:
+    content: public virtual void BeginScope()
+    content.vb: Public Overridable Sub BeginScope
+  exceptions:
+  - type: System.NotSupportedException
+    description: This @'System.Reflection.Emit.ILGenerator' belongs to a @'System.Reflection.Emit.DynamicMethod'.
+- uid: System.Reflection.Emit.ILGenerator.EndScope
+  id: EndScope
+  parent: System.Reflection.Emit.ILGenerator
+  href: System.Reflection.Emit.ILGenerator.yml
+  name: EndScope()
+  fullName: System.Reflection.Emit.ILGenerator.EndScope()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ILGenerator.cs
+    startLine: 1354
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Ends a lexical scope.
+  syntax:
+    content: public virtual void EndScope()
+    content.vb: Public Overridable Sub
+  exceptions:
+  - type: System.NotSupportedException
+    description: This @'System.Reflection.Emit.ILGenerator' belongs to a @'System.Reflection.Emit.DynamicMethod'.
+- uid: System.Reflection.Emit.ILGenerator.ILOffset
+  id: ILOffset
+  parent: System.Reflection.Emit.ILGenerator
+  href: System.Reflection.Emit.ILGenerator.yml
+  name: ILOffset
+  fullName: System.Reflection.Emit.ILGenerator.ILOffset
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ILGenerator.cs
+    startLine: 1359
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Gets the current offset, in bytes, in the Microsoft intermediate language (MSIL) stream that is being emitted by the @'System.Reflection.Emit.ILGenerator'.
+  syntax:
+    content: public virtual int ILOffset { get; }
+    content.vb: Public Overridable ReadOnly Property ILOffset As Integer
+    parameters: []
+    return:
+      type: System.Int32
+references:
+- uid: System.Reflection.Emit
+  isExternal: false
+  name: System.Reflection.Emit
+  fullName: System.Reflection.Emit
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Reflection.Emit.OpCode
+  parent: System.Reflection.Emit
+  isExternal: false
+  href: System.Reflection.Emit.OpCode.yml
+  name: OpCode
+  fullName: System.Reflection.Emit.OpCode
+  type: Struct
+- uid: System.Byte
+  parent: System
+  isExternal: true
+  name: Byte
+  fullName: System.Byte
+- uid: System.SByte
+  parent: System
+  isExternal: true
+  name: SByte
+  fullName: System.SByte
+- uid: System.Int16
+  parent: System
+  isExternal: true
+  name: Int16
+  fullName: System.Int16
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Reflection.MethodInfo
+  parent: System.Reflection
+  isExternal: true
+  name: MethodInfo
+  fullName: System.Reflection.MethodInfo
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace
+- uid: System.Reflection.CallingConventions
+  parent: System.Reflection
+  isExternal: false
+  href: System.Reflection.CallingConventions.yml
+  name: CallingConventions
+  fullName: System.Reflection.CallingConventions
+  type: Enum
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  fullName: System.Type
+- uid: System.Type[]
+  isExternal: true
+  name: Type[]
+  name.vb: Type()
+  fullName: System.Type[]
+  fullName.vb: System.Type()
+  spec.csharp:
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Runtime.InteropServices.CallingConvention
+  parent: System.Runtime.InteropServices
+  isExternal: false
+  href: System.Runtime.InteropServices.CallingConvention.yml
+  name: CallingConvention
+  fullName: System.Runtime.InteropServices.CallingConvention
+  type: Enum
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace
+- uid: System.Reflection.Emit.SignatureHelper
+  parent: System.Reflection.Emit
+  isExternal: false
+  href: System.Reflection.Emit.SignatureHelper.yml
+  name: SignatureHelper
+  fullName: System.Reflection.Emit.SignatureHelper
+  type: Class
+- uid: System.Reflection.ConstructorInfo
+  parent: System.Reflection
+  isExternal: true
+  name: ConstructorInfo
+  fullName: System.Reflection.ConstructorInfo
+- uid: System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  fullName: System.Int64
+- uid: System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  fullName: System.Single
+- uid: System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  fullName: System.Double
+- uid: System.Reflection.Emit.Label
+  parent: System.Reflection.Emit
+  isExternal: false
+  href: System.Reflection.Emit.Label.yml
+  name: Label
+  fullName: System.Reflection.Emit.Label
+  type: Struct
+- uid: System.Reflection.Emit.Label[]
+  isExternal: false
+  href: System.Reflection.Emit.Label.yml
+  name: Label[]
+  name.vb: Label()
+  fullName: System.Reflection.Emit.Label[]
+  fullName.vb: System.Reflection.Emit.Label()
+  spec.csharp:
+  - uid: System.Reflection.Emit.Label
+    name: Label
+    fullName: System.Reflection.Emit.Label
+    href: System.Reflection.Emit.Label.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Reflection.Emit.Label
+    name: Label
+    fullName: System.Reflection.Emit.Label
+    href: System.Reflection.Emit.Label.yml
+  - name: ()
+    fullName: ()
+- uid: System.Reflection.FieldInfo
+  parent: System.Reflection
+  isExternal: true
+  name: FieldInfo
+  fullName: System.Reflection.FieldInfo
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Reflection.Emit.LocalBuilder
+  parent: System.Reflection.Emit
+  isExternal: false
+  href: System.Reflection.Emit.LocalBuilder.yml
+  name: LocalBuilder
+  fullName: System.Reflection.Emit.LocalBuilder
+  type: Class
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Diagnostics.SymbolStore.ISymbolDocumentWriter
+  parent: System.Diagnostics.SymbolStore
+  isExternal: false
+  href: System.Diagnostics.SymbolStore.ISymbolDocumentWriter.yml
+  name: ISymbolDocumentWriter
+  fullName: System.Diagnostics.SymbolStore.ISymbolDocumentWriter
+  type: Interface
+- uid: System.Diagnostics.SymbolStore
+  isExternal: false
+  name: System.Diagnostics.SymbolStore
+  fullName: System.Diagnostics.SymbolStore
+  type: Namespace

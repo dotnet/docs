@@ -1,0 +1,522 @@
+items:
+- uid: System.Security.Cryptography.X509Certificates.X509ChainPolicy
+  id: X509ChainPolicy
+  parent: System.Security.Cryptography.X509Certificates
+  children:
+  - System.Security.Cryptography.X509Certificates.X509ChainPolicy.#ctor
+  - System.Security.Cryptography.X509Certificates.X509ChainPolicy.ApplicationPolicy
+  - System.Security.Cryptography.X509Certificates.X509ChainPolicy.CertificatePolicy
+  - System.Security.Cryptography.X509Certificates.X509ChainPolicy.ExtraStore
+  - System.Security.Cryptography.X509Certificates.X509ChainPolicy.Reset
+  - System.Security.Cryptography.X509Certificates.X509ChainPolicy.RevocationFlag
+  - System.Security.Cryptography.X509Certificates.X509ChainPolicy.RevocationMode
+  - System.Security.Cryptography.X509Certificates.X509ChainPolicy.UrlRetrievalTimeout
+  - System.Security.Cryptography.X509Certificates.X509ChainPolicy.VerificationFlags
+  - System.Security.Cryptography.X509Certificates.X509ChainPolicy.VerificationTime
+  href: System.Security.Cryptography.X509Certificates.X509ChainPolicy.yml
+  name: X509ChainPolicy
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainPolicy
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainPolicy.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainPolicy.cs
+    startLine: 14
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Represents the chain policy to be applied when building an X509 certificate chain. This class cannot be inherited.
+  syntax:
+    content: public sealed class X509ChainPolicy
+    content.vb: Public NotInheritable Class X509ChainPolicy
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Security.Cryptography.X509Certificates.X509ChainPolicy.#ctor
+  id: '#ctor'
+  parent: System.Security.Cryptography.X509Certificates.X509ChainPolicy
+  href: System.Security.Cryptography.X509Certificates.X509ChainPolicy.yml
+  name: X509ChainPolicy()
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainPolicy.X509ChainPolicy()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainPolicy.cs
+    startLine: 16
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Initializes a new instance of the @'System.Security.Cryptography.X509Certificates.X509ChainPolicy' class.
+  syntax:
+    content: public X509ChainPolicy()
+    content.vb: Public Sub New
+- uid: System.Security.Cryptography.X509Certificates.X509ChainPolicy.ApplicationPolicy
+  id: ApplicationPolicy
+  parent: System.Security.Cryptography.X509Certificates.X509ChainPolicy
+  href: System.Security.Cryptography.X509Certificates.X509ChainPolicy.yml
+  name: ApplicationPolicy
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainPolicy.ApplicationPolicy
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainPolicy.cs
+    startLine: 21
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Gets a collection of object identifiers (OIDs) specifying which application policies or enhanced key usages (EKUs) the certificate supports.
+  syntax:
+    content: public OidCollection ApplicationPolicy { get; }
+    content.vb: Public ReadOnly Property ApplicationPolicy As OidCollection
+    parameters: []
+    return:
+      type: OidCollection
+- uid: System.Security.Cryptography.X509Certificates.X509ChainPolicy.CertificatePolicy
+  id: CertificatePolicy
+  parent: System.Security.Cryptography.X509Certificates.X509ChainPolicy
+  href: System.Security.Cryptography.X509Certificates.X509ChainPolicy.yml
+  name: CertificatePolicy
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainPolicy.CertificatePolicy
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainPolicy.cs
+    startLine: 23
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Gets a collection of object identifiers (OIDs) specifying which certificate policies the certificate supports.
+  syntax:
+    content: public OidCollection CertificatePolicy { get; }
+    content.vb: Public ReadOnly Property CertificatePolicy As OidCollection
+    parameters: []
+    return:
+      type: OidCollection
+- uid: System.Security.Cryptography.X509Certificates.X509ChainPolicy.RevocationMode
+  id: RevocationMode
+  parent: System.Security.Cryptography.X509Certificates.X509ChainPolicy
+  href: System.Security.Cryptography.X509Certificates.X509ChainPolicy.yml
+  name: RevocationMode
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainPolicy.RevocationMode
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainPolicy.cs
+    startLine: 25
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Gets or sets values for X509 certificate revocation mode.
+  syntax:
+    content: public X509RevocationMode RevocationMode { get; set; }
+    content.vb: Public Property RevocationMode As X509RevocationMode
+    parameters: []
+    return:
+      type: System.Security.Cryptography.X509Certificates.X509RevocationMode
+  exceptions:
+  - type: System.ArgumentException
+    description: The @'System.Security.Cryptography.X509Certificates.X509RevocationMode' value supplied is not a valid flag.
+- uid: System.Security.Cryptography.X509Certificates.X509ChainPolicy.RevocationFlag
+  id: RevocationFlag
+  parent: System.Security.Cryptography.X509Certificates.X509ChainPolicy
+  href: System.Security.Cryptography.X509Certificates.X509ChainPolicy.yml
+  name: RevocationFlag
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainPolicy.RevocationFlag
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainPolicy.cs
+    startLine: 39
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Gets or sets values for X509 revocation flags.
+  syntax:
+    content: public X509RevocationFlag RevocationFlag { get; set; }
+    content.vb: Public Property RevocationFlag As X509RevocationFlag
+    parameters: []
+    return:
+      type: System.Security.Cryptography.X509Certificates.X509RevocationFlag
+  exceptions:
+  - type: System.ArgumentException
+    description: The @'System.Security.Cryptography.X509Certificates.X509RevocationFlag' value supplied is not a valid flag.
+- uid: System.Security.Cryptography.X509Certificates.X509ChainPolicy.VerificationFlags
+  id: VerificationFlags
+  parent: System.Security.Cryptography.X509Certificates.X509ChainPolicy
+  href: System.Security.Cryptography.X509Certificates.X509ChainPolicy.yml
+  name: VerificationFlags
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainPolicy.VerificationFlags
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainPolicy.cs
+    startLine: 53
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Gets verification flags for the certificate.
+  syntax:
+    content: public X509VerificationFlags VerificationFlags { get; set; }
+    content.vb: Public Property VerificationFlags As X509VerificationFlags
+    parameters: []
+    return:
+      type: System.Security.Cryptography.X509Certificates.X509VerificationFlags
+  exceptions:
+  - type: System.ArgumentException
+    description: The @'System.Security.Cryptography.X509Certificates.X509VerificationFlags' value supplied is not a valid flag. @'System.Security.Cryptography.X509Certificates.X509VerificationFlags.NoFlag' is the default value.
+- uid: System.Security.Cryptography.X509Certificates.X509ChainPolicy.VerificationTime
+  id: VerificationTime
+  parent: System.Security.Cryptography.X509Certificates.X509ChainPolicy
+  href: System.Security.Cryptography.X509Certificates.X509ChainPolicy.yml
+  name: VerificationTime
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainPolicy.VerificationTime
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainPolicy.cs
+    startLine: 67
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The time that the certificate was verified expressed in local time.
+  syntax:
+    content: public DateTime VerificationTime { get; set; }
+    content.vb: Public Property VerificationTime As Date
+    parameters: []
+    return:
+      type: System.DateTime
+- uid: System.Security.Cryptography.X509Certificates.X509ChainPolicy.UrlRetrievalTimeout
+  id: UrlRetrievalTimeout
+  parent: System.Security.Cryptography.X509Certificates.X509ChainPolicy
+  href: System.Security.Cryptography.X509Certificates.X509ChainPolicy.yml
+  name: UrlRetrievalTimeout
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainPolicy.UrlRetrievalTimeout
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainPolicy.cs
+    startLine: 69
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Gets the time span that elapsed during online revocation verification or downloading the certificate revocation list (CRL).
+  syntax:
+    content: public TimeSpan UrlRetrievalTimeout { get; set; }
+    content.vb: Public Property UrlRetrievalTimeout As TimeSpan
+    parameters: []
+    return:
+      type: System.TimeSpan
+- uid: System.Security.Cryptography.X509Certificates.X509ChainPolicy.ExtraStore
+  id: ExtraStore
+  parent: System.Security.Cryptography.X509Certificates.X509ChainPolicy
+  href: System.Security.Cryptography.X509Certificates.X509ChainPolicy.yml
+  name: ExtraStore
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainPolicy.ExtraStore
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainPolicy.cs
+    startLine: 71
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Represents an additional collection of certificates that can be searched by the chaining engine when validating a certificate chain.
+  syntax:
+    content: public X509Certificate2Collection ExtraStore { get; }
+    content.vb: Public ReadOnly Property ExtraStore As X509Certificate2Collection
+    parameters: []
+    return:
+      type: System.Security.Cryptography.X509Certificates.X509Certificate2Collection
+- uid: System.Security.Cryptography.X509Certificates.X509ChainPolicy.Reset
+  id: Reset
+  parent: System.Security.Cryptography.X509Certificates.X509ChainPolicy
+  href: System.Security.Cryptography.X509Certificates.X509ChainPolicy.yml
+  name: Reset()
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainPolicy.Reset()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainPolicy.cs
+    startLine: 73
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Resets the @'System.Security.Cryptography.X509Certificates.X509ChainPolicy' members to their default values.
+  syntax:
+    content: public void Reset()
+    content.vb: Public Sub Reset
+references:
+- uid: System.Security.Cryptography.X509Certificates
+  isExternal: false
+  name: System.Security.Cryptography.X509Certificates
+  fullName: System.Security.Cryptography.X509Certificates
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: OidCollection
+  isExternal: true
+  name: OidCollection
+  fullName: OidCollection
+- uid: System.Security.Cryptography.X509Certificates.X509RevocationMode
+  parent: System.Security.Cryptography.X509Certificates
+  isExternal: false
+  href: System.Security.Cryptography.X509Certificates.X509RevocationMode.yml
+  name: X509RevocationMode
+  fullName: System.Security.Cryptography.X509Certificates.X509RevocationMode
+  type: Enum
+- uid: System.Security.Cryptography.X509Certificates.X509RevocationFlag
+  parent: System.Security.Cryptography.X509Certificates
+  isExternal: false
+  href: System.Security.Cryptography.X509Certificates.X509RevocationFlag.yml
+  name: X509RevocationFlag
+  fullName: System.Security.Cryptography.X509Certificates.X509RevocationFlag
+  type: Enum
+- uid: System.Security.Cryptography.X509Certificates.X509VerificationFlags
+  parent: System.Security.Cryptography.X509Certificates
+  isExternal: false
+  href: System.Security.Cryptography.X509Certificates.X509VerificationFlags.yml
+  name: X509VerificationFlags
+  fullName: System.Security.Cryptography.X509Certificates.X509VerificationFlags
+  type: Enum
+- uid: System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  fullName: System.DateTime
+- uid: System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  fullName: System.TimeSpan
+- uid: System.Security.Cryptography.X509Certificates.X509Certificate2Collection
+  parent: System.Security.Cryptography.X509Certificates
+  isExternal: false
+  href: System.Security.Cryptography.X509Certificates.X509Certificate2Collection.yml
+  name: X509Certificate2Collection
+  fullName: System.Security.Cryptography.X509Certificates.X509Certificate2Collection
+  type: Class

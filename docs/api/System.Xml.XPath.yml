@@ -1,0 +1,145 @@
+items:
+- uid: System.Xml.XPath
+  id: System.Xml.XPath
+  children:
+  - System.Xml.XPath.Extensions
+  - System.Xml.XPath.IXPathNavigable
+  - System.Xml.XPath.XDocumentExtensions
+  - System.Xml.XPath.XmlCaseOrder
+  - System.Xml.XPath.XmlDataType
+  - System.Xml.XPath.XmlSortOrder
+  - System.Xml.XPath.XPathDocument
+  - System.Xml.XPath.XPathException
+  - System.Xml.XPath.XPathExpression
+  - System.Xml.XPath.XPathItem
+  - System.Xml.XPath.XPathNamespaceScope
+  - System.Xml.XPath.XPathNavigator
+  - System.Xml.XPath.XPathNodeIterator
+  - System.Xml.XPath.XPathNodeType
+  - System.Xml.XPath.XPathResultType
+  href: System.Xml.XPath.yml
+  name: System.Xml.XPath
+  fullName: System.Xml.XPath
+  type: Namespace
+  source:
+    remote:
+      path: src/System.Xml.XPath.XDocument/src/System/Xml/XPath/XNodeNavigator.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Xml.XPath.XDocument/src/System/Xml/XPath/XNodeNavigator.cs
+    startLine: 7
+  assemblies:
+  - System.Xml.XPath.XDocument
+  summary: The @'System.Xml.XPath' namespace contains the classes that define a cursor model for navigating and editing XML information items as instances of the XQuery 1.0 and XPath 2.0 Data Model.
+references:
+- uid: System.Xml.XPath.XDocumentExtensions
+  isExternal: false
+  href: System.Xml.XPath.XDocumentExtensions.yml
+  name: XDocumentExtensions
+  fullName: System.Xml.XPath.XDocumentExtensions
+  type: Class
+- uid: System.Xml.XPath.Extensions
+  isExternal: false
+  href: System.Xml.XPath.Extensions.yml
+  name: Extensions
+  fullName: System.Xml.XPath.Extensions
+  type: Class
+  summary: Extension methods
+- uid: System.Xml.XPath.IXPathNavigable
+  parent: System.Xml.XPath
+  isExternal: false
+  href: System.Xml.XPath.IXPathNavigable.yml
+  name: IXPathNavigable
+  fullName: System.Xml.XPath.IXPathNavigable
+- uid: System.Xml.XPath.XPathDocument
+  isExternal: false
+  href: System.Xml.XPath.XPathDocument.yml
+  name: XPathDocument
+  fullName: System.Xml.XPath.XPathDocument
+  type: Class
+  summary: >-
+    XDocument follows the XPath/XQuery data model.  All nodes in the tree reference the document,
+
+    and the document references the root node of the tree.  All namespaces are stored out-of-line,
+
+    in an Element --&gt; In-Scope-Namespaces map.
+- uid: System.Xml.XPath.XPathException
+  isExternal: false
+  href: System.Xml.XPath.XPathException.yml
+  name: XPathException
+  fullName: System.Xml.XPath.XPathException
+  type: Class
+- uid: System.Xml.XPath.XmlSortOrder
+  parent: System.Xml.XPath
+  isExternal: false
+  href: System.Xml.XPath.XmlSortOrder.yml
+  name: XmlSortOrder
+  fullName: System.Xml.XPath.XmlSortOrder
+  type: Enum
+- uid: System.Xml.XPath.XmlCaseOrder
+  parent: System.Xml.XPath
+  isExternal: false
+  href: System.Xml.XPath.XmlCaseOrder.yml
+  name: XmlCaseOrder
+  fullName: System.Xml.XPath.XmlCaseOrder
+  type: Enum
+- uid: System.Xml.XPath.XmlDataType
+  parent: System.Xml.XPath
+  isExternal: false
+  href: System.Xml.XPath.XmlDataType.yml
+  name: XmlDataType
+  fullName: System.Xml.XPath.XmlDataType
+  type: Enum
+- uid: System.Xml.XPath.XPathResultType
+  parent: System.Xml.XPath
+  isExternal: false
+  href: System.Xml.XPath.XPathResultType.yml
+  name: XPathResultType
+  fullName: System.Xml.XPath.XPathResultType
+  type: Enum
+- uid: System.Xml.XPath.XPathExpression
+  parent: System.Xml.XPath
+  isExternal: false
+  href: System.Xml.XPath.XPathExpression.yml
+  name: XPathExpression
+  fullName: System.Xml.XPath.XPathExpression
+  type: Class
+- uid: System.Xml.XPath.XPathItem
+  isExternal: false
+  href: System.Xml.XPath.XPathItem.yml
+  name: XPathItem
+  fullName: System.Xml.XPath.XPathItem
+  type: Class
+  summary: Base class for XPathNavigator and XmlAtomicValue.
+- uid: System.Xml.XPath.XPathNamespaceScope
+  parent: System.Xml.XPath
+  isExternal: false
+  href: System.Xml.XPath.XPathNamespaceScope.yml
+  name: XPathNamespaceScope
+  fullName: System.Xml.XPath.XPathNamespaceScope
+  type: Enum
+- uid: System.Xml.XPath.XPathNavigator
+  parent: System.Xml.XPath
+  isExternal: false
+  href: System.Xml.XPath.XPathNavigator.yml
+  name: XPathNavigator
+  fullName: System.Xml.XPath.XPathNavigator
+- uid: System.Xml.XPath.XPathNodeIterator
+  parent: System.Xml.XPath
+  isExternal: false
+  href: System.Xml.XPath.XPathNodeIterator.yml
+  name: XPathNodeIterator
+  fullName: System.Xml.XPath.XPathNodeIterator
+  type: Class
+- uid: System.Xml.XPath.XPathNodeType
+  parent: System.Xml.XPath
+  isExternal: false
+  href: System.Xml.XPath.XPathNodeType.yml
+  name: XPathNodeType
+  fullName: System.Xml.XPath.XPathNodeType
+  type: Enum
+- uid: System.Xml.XPath
+  isExternal: false
+  name: System.Xml.XPath
+  fullName: System.Xml.XPath
+  type: Namespace

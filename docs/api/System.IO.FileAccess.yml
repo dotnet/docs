@@ -1,0 +1,82 @@
+items:
+- uid: System.IO.FileAccess
+  id: FileAccess
+  parent: System.IO
+  children:
+  - System.IO.FileAccess.Read
+  - System.IO.FileAccess.ReadWrite
+  - System.IO.FileAccess.Write
+  href: System.IO.FileAccess.yml
+  name: FileAccess
+  fullName: System.IO.FileAccess
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.IO.FileSystem.Primitives/src/System/IO/FileAccess.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.IO.FileSystem.Primitives/src/System/IO/FileAccess.cs
+    startLine: 11
+  assemblies:
+  - System.IO.FileSystem.Primitives
+  namespace: System.IO
+  summary: Defines constants for read, write, or read/write access to a file.
+  syntax:
+    content: public enum FileAccess
+    content.vb: Public Enum FileAccess
+- uid: System.IO.FileAccess.Read
+  id: Read
+  parent: System.IO.FileAccess
+  href: System.IO.FileAccess.yml
+  name: Read
+  fullName: System.IO.FileAccess.Read
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem.Primitives/src/System/IO/FileAccess.cs
+    startLine: 18
+  assemblies:
+  - System.IO.FileSystem.Primitives
+  namespace: System.IO
+  summary: Read access to the file. Data can be read from the file. Combine with Write for read/write access.
+  syntax:
+    content: Read = 1
+- uid: System.IO.FileAccess.Write
+  id: Write
+  parent: System.IO.FileAccess
+  href: System.IO.FileAccess.yml
+  name: Write
+  fullName: System.IO.FileAccess.Write
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem.Primitives/src/System/IO/FileAccess.cs
+    startLine: 24
+  assemblies:
+  - System.IO.FileSystem.Primitives
+  namespace: System.IO
+  summary: Write access to the file. Data can be written to the file. Combine with Read for read/write access.
+  syntax:
+    content: Write = 2
+- uid: System.IO.FileAccess.ReadWrite
+  id: ReadWrite
+  parent: System.IO.FileAccess
+  href: System.IO.FileAccess.yml
+  name: ReadWrite
+  fullName: System.IO.FileAccess.ReadWrite
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem.Primitives/src/System/IO/FileAccess.cs
+    startLine: 31
+  assemblies:
+  - System.IO.FileSystem.Primitives
+  namespace: System.IO
+  summary: Read and write access to the file. Data can be written to and read from the file.
+  syntax:
+    content: ReadWrite = 3
+references:
+- uid: System.IO
+  isExternal: false
+  name: System.IO
+  fullName: System.IO

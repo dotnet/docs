@@ -1,0 +1,312 @@
+items:
+- uid: System.Runtime.InteropServices.ComTypes.STATDATA
+  id: STATDATA
+  parent: System.Runtime.InteropServices.ComTypes
+  children:
+  - System.Runtime.InteropServices.ComTypes.STATDATA.advf
+  - System.Runtime.InteropServices.ComTypes.STATDATA.advSink
+  - System.Runtime.InteropServices.ComTypes.STATDATA.connection
+  - System.Runtime.InteropServices.ComTypes.STATDATA.formatetc
+  href: System.Runtime.InteropServices.ComTypes.STATDATA.yml
+  name: STATDATA
+  fullName: System.Runtime.InteropServices.ComTypes.STATDATA
+  type: Struct
+  source:
+    remote: &o0
+      path: src/System.Runtime.InteropServices/src/System/Runtime/InteropServices/ComTypes/statdata.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Runtime.InteropServices/src/System/Runtime/InteropServices/ComTypes/statdata.cs
+    startLine: 5
+  assemblies:
+  - System.Runtime.InteropServices.CoreCLR
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Provides the managed definition of the STATDATA structure.
+  syntax:
+    content: public struct STATDATA
+    content.vb: Public Structure STATDATA
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.Runtime.InteropServices.ComTypes.STATDATA.formatetc
+  id: formatetc
+  parent: System.Runtime.InteropServices.ComTypes.STATDATA
+  href: System.Runtime.InteropServices.ComTypes.STATDATA.yml
+  name: formatetc
+  fullName: System.Runtime.InteropServices.ComTypes.STATDATA.formatetc
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Runtime.InteropServices/src/System/Runtime/InteropServices/ComTypes/statdata.cs
+    startLine: 7
+  assemblies:
+  - System.Runtime.InteropServices.CoreCLR
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Represents the @'System.Runtime.InteropServices.ComTypes.FORMATETC' structure for the data of interest to the advise sink. The advise sink receives notification of changes to the data specified by this @'System.Runtime.InteropServices.ComTypes.FORMATETC' structure.
+  syntax:
+    content: public FORMATETC formatetc
+    content.vb: Public formatetc As FORMATETC
+- uid: System.Runtime.InteropServices.ComTypes.STATDATA.advf
+  id: advf
+  parent: System.Runtime.InteropServices.ComTypes.STATDATA
+  href: System.Runtime.InteropServices.ComTypes.STATDATA.yml
+  name: advf
+  fullName: System.Runtime.InteropServices.ComTypes.STATDATA.advf
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Runtime.InteropServices/src/System/Runtime/InteropServices/ComTypes/statdata.cs
+    startLine: 8
+  assemblies:
+  - System.Runtime.InteropServices.CoreCLR
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Represents the @'System.Runtime.InteropServices.ComTypes.ADVF' enumeration value that determines when the advisory sink is notified of changes in the data.
+  syntax:
+    content: public ADVF advf
+    content.vb: Public advf As ADVF
+- uid: System.Runtime.InteropServices.ComTypes.STATDATA.advSink
+  id: advSink
+  parent: System.Runtime.InteropServices.ComTypes.STATDATA
+  href: System.Runtime.InteropServices.ComTypes.STATDATA.yml
+  name: advSink
+  fullName: System.Runtime.InteropServices.ComTypes.STATDATA.advSink
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Runtime.InteropServices/src/System/Runtime/InteropServices/ComTypes/statdata.cs
+    startLine: 9
+  assemblies:
+  - System.Runtime.InteropServices.CoreCLR
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Represents the @'System.Runtime.InteropServices.ComTypes.IAdviseSink' interface that will receive change notifications.
+  syntax:
+    content: public IAdviseSink advSink
+    content.vb: Public advSink As IAdviseSink
+- uid: System.Runtime.InteropServices.ComTypes.STATDATA.connection
+  id: connection
+  parent: System.Runtime.InteropServices.ComTypes.STATDATA
+  href: System.Runtime.InteropServices.ComTypes.STATDATA.yml
+  name: connection
+  fullName: System.Runtime.InteropServices.ComTypes.STATDATA.connection
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Runtime.InteropServices/src/System/Runtime/InteropServices/ComTypes/statdata.cs
+    startLine: 10
+  assemblies:
+  - System.Runtime.InteropServices.CoreCLR
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Represents the token that uniquely identifies the advisory connection. This token is returned by the method that sets up the advisory connection.
+  syntax:
+    content: public int connection
+    content.vb: Public connection As Integer
+references:
+- uid: System.Runtime.InteropServices.ComTypes
+  isExternal: false
+  name: System.Runtime.InteropServices.ComTypes
+  fullName: System.Runtime.InteropServices.ComTypes
+  type: Namespace
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

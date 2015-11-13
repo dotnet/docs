@@ -1,0 +1,83 @@
+items:
+- uid: System.ServiceProcess.ServiceStartMode
+  id: ServiceStartMode
+  parent: System.ServiceProcess
+  children:
+  - System.ServiceProcess.ServiceStartMode.Automatic
+  - System.ServiceProcess.ServiceStartMode.Disabled
+  - System.ServiceProcess.ServiceStartMode.Manual
+  href: System.ServiceProcess.ServiceStartMode.yml
+  name: ServiceStartMode
+  fullName: System.ServiceProcess.ServiceStartMode
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.ServiceProcess.ServiceController/src/System/ServiceProcess/ServiceStartMode.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.ServiceProcess.ServiceController/src/System/ServiceProcess/ServiceStartMode.cs
+    startLine: 5
+  assemblies:
+  - System.ServiceProcess.ServiceController
+  namespace: System.ServiceProcess
+  summary: Indicates the start mode of the service.
+  syntax:
+    content: public enum ServiceStartMode
+    content.vb: Public Enum ServiceStartMode
+- uid: System.ServiceProcess.ServiceStartMode.Manual
+  id: Manual
+  parent: System.ServiceProcess.ServiceStartMode
+  href: System.ServiceProcess.ServiceStartMode.yml
+  name: Manual
+  fullName: System.ServiceProcess.ServiceStartMode.Manual
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.ServiceProcess.ServiceController/src/System/ServiceProcess/ServiceStartMode.cs
+    startLine: 7
+  assemblies:
+  - System.ServiceProcess.ServiceController
+  namespace: System.ServiceProcess
+  summary: Indicates that the service is started only manually, by a user (using the Service Control Manager) or by an application.
+  syntax:
+    content: Manual = 3
+- uid: System.ServiceProcess.ServiceStartMode.Automatic
+  id: Automatic
+  parent: System.ServiceProcess.ServiceStartMode
+  href: System.ServiceProcess.ServiceStartMode.yml
+  name: Automatic
+  fullName: System.ServiceProcess.ServiceStartMode.Automatic
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.ServiceProcess.ServiceController/src/System/ServiceProcess/ServiceStartMode.cs
+    startLine: 8
+  assemblies:
+  - System.ServiceProcess.ServiceController
+  namespace: System.ServiceProcess
+  summary: Indicates that the service is to be started (or was started) by the operating system, at system start-up. If an automatically started service depends on a manually started service, the manually started service is also started automatically at system startup.
+  syntax:
+    content: Automatic = 2
+- uid: System.ServiceProcess.ServiceStartMode.Disabled
+  id: Disabled
+  parent: System.ServiceProcess.ServiceStartMode
+  href: System.ServiceProcess.ServiceStartMode.yml
+  name: Disabled
+  fullName: System.ServiceProcess.ServiceStartMode.Disabled
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.ServiceProcess.ServiceController/src/System/ServiceProcess/ServiceStartMode.cs
+    startLine: 9
+  assemblies:
+  - System.ServiceProcess.ServiceController
+  namespace: System.ServiceProcess
+  summary: Indicates that the service is disabled, so that it cannot be started by a user or application.
+  syntax:
+    content: Disabled = 4
+references:
+- uid: System.ServiceProcess
+  isExternal: false
+  name: System.ServiceProcess
+  fullName: System.ServiceProcess
+  type: Namespace

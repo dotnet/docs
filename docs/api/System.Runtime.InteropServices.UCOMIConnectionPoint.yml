@@ -1,0 +1,187 @@
+items:
+- uid: System.Runtime.InteropServices.UCOMIConnectionPoint
+  id: UCOMIConnectionPoint
+  parent: System.Runtime.InteropServices
+  children:
+  - System.Runtime.InteropServices.UCOMIConnectionPoint.Advise(System.Object,System.Int32@)
+  - System.Runtime.InteropServices.UCOMIConnectionPoint.EnumConnections(System.Runtime.InteropServices.UCOMIEnumConnections@)
+  - System.Runtime.InteropServices.UCOMIConnectionPoint.GetConnectionInterface(System.Guid@)
+  - System.Runtime.InteropServices.UCOMIConnectionPoint.GetConnectionPointContainer(System.Runtime.InteropServices.UCOMIConnectionPointContainer@)
+  - System.Runtime.InteropServices.UCOMIConnectionPoint.Unadvise(System.Int32)
+  href: System.Runtime.InteropServices.UCOMIConnectionPoint.yml
+  name: UCOMIConnectionPoint
+  fullName: System.Runtime.InteropServices.UCOMIConnectionPoint
+  type: Interface
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIConnectionPoint.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIConnectionPoint.cs
+    startLine: 16
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Use @'System.Runtime.InteropServices.ComTypes.IConnectionPoint' instead.
+  syntax:
+    content: public interface UCOMIConnectionPoint
+    content.vb: Public Interface UCOMIConnectionPoint
+- uid: System.Runtime.InteropServices.UCOMIConnectionPoint.GetConnectionInterface(System.Guid@)
+  id: GetConnectionInterface(System.Guid@)
+  parent: System.Runtime.InteropServices.UCOMIConnectionPoint
+  href: System.Runtime.InteropServices.UCOMIConnectionPoint.yml
+  name: GetConnectionInterface(out Guid)
+  name.vb: GetConnectionInterface(ByRef Guid)
+  fullName: System.Runtime.InteropServices.UCOMIConnectionPoint.GetConnectionInterface(out System.Guid)
+  fullName.vb: System.Runtime.InteropServices.UCOMIConnectionPoint.GetConnectionInterface(ByRef System.Guid)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIConnectionPoint.cs
+    startLine: 22
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Returns the IID of the outgoing interface managed by this connection point.
+  syntax:
+    content: void GetConnectionInterface(out Guid pIID)
+    content.vb: Sub GetConnectionInterface(ByRef pIID As Guid)
+    parameters:
+    - id: pIID
+      type: System.Guid
+      description: On successful return, contains the IID of the outgoing interface managed by this connection point.
+- uid: System.Runtime.InteropServices.UCOMIConnectionPoint.GetConnectionPointContainer(System.Runtime.InteropServices.UCOMIConnectionPointContainer@)
+  id: GetConnectionPointContainer(System.Runtime.InteropServices.UCOMIConnectionPointContainer@)
+  parent: System.Runtime.InteropServices.UCOMIConnectionPoint
+  href: System.Runtime.InteropServices.UCOMIConnectionPoint.yml
+  name: GetConnectionPointContainer(out UCOMIConnectionPointContainer)
+  name.vb: GetConnectionPointContainer(ByRef UCOMIConnectionPointContainer)
+  fullName: System.Runtime.InteropServices.UCOMIConnectionPoint.GetConnectionPointContainer(out System.Runtime.InteropServices.UCOMIConnectionPointContainer)
+  fullName.vb: System.Runtime.InteropServices.UCOMIConnectionPoint.GetConnectionPointContainer(ByRef System.Runtime.InteropServices.UCOMIConnectionPointContainer)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIConnectionPoint.cs
+    startLine: 23
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Retrieves the IConnectionPointContainer interface pointer to the connectable object that conceptually owns this connection point.
+  syntax:
+    content: void GetConnectionPointContainer(out UCOMIConnectionPointContainer ppCPC)
+    content.vb: Sub GetConnectionPointContainer(ByRef ppCPC As UCOMIConnectionPointContainer)
+    parameters:
+    - id: ppCPC
+      type: System.Runtime.InteropServices.UCOMIConnectionPointContainer
+      description: On successful return, contains the connectable object's IConnectionPointContainer interface.
+- uid: System.Runtime.InteropServices.UCOMIConnectionPoint.Advise(System.Object,System.Int32@)
+  id: Advise(System.Object,System.Int32@)
+  parent: System.Runtime.InteropServices.UCOMIConnectionPoint
+  href: System.Runtime.InteropServices.UCOMIConnectionPoint.yml
+  name: Advise(Object, out Int32)
+  name.vb: Advise(Object, ByRef Int32)
+  fullName: System.Runtime.InteropServices.UCOMIConnectionPoint.Advise(System.Object, out System.Int32)
+  fullName.vb: System.Runtime.InteropServices.UCOMIConnectionPoint.Advise(System.Object, ByRef System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIConnectionPoint.cs
+    startLine: 24
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Establishes an advisory connection between the connection point and the caller's sink object.
+  syntax:
+    content: void Advise(object pUnkSink, out int pdwCookie)
+    content.vb: Sub Advise(pUnkSink As Object, ByRef pdwCookie As Integer)
+    parameters:
+    - id: pUnkSink
+      type: System.Object
+      description: Reference to the sink to receive calls for the outgoing interface managed by this connection point.
+    - id: pdwCookie
+      type: System.Int32
+      description: On successful return, contains the connection cookie.
+- uid: System.Runtime.InteropServices.UCOMIConnectionPoint.Unadvise(System.Int32)
+  id: Unadvise(System.Int32)
+  parent: System.Runtime.InteropServices.UCOMIConnectionPoint
+  href: System.Runtime.InteropServices.UCOMIConnectionPoint.yml
+  name: Unadvise(Int32)
+  fullName: System.Runtime.InteropServices.UCOMIConnectionPoint.Unadvise(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIConnectionPoint.cs
+    startLine: 25
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Terminates an advisory connection previously established through @'System.Runtime.InteropServices.UCOMIConnectionPoint.Advise(System.Object,System.Int32@)'.
+  syntax:
+    content: void Unadvise(int dwCookie)
+    content.vb: Sub Unadvise(dwCookie As Integer)
+    parameters:
+    - id: dwCookie
+      type: System.Int32
+      description: The connection cookie previously returned from @'System.Runtime.InteropServices.UCOMIConnectionPoint.Advise(System.Object,System.Int32@)'.
+- uid: System.Runtime.InteropServices.UCOMIConnectionPoint.EnumConnections(System.Runtime.InteropServices.UCOMIEnumConnections@)
+  id: EnumConnections(System.Runtime.InteropServices.UCOMIEnumConnections@)
+  parent: System.Runtime.InteropServices.UCOMIConnectionPoint
+  href: System.Runtime.InteropServices.UCOMIConnectionPoint.yml
+  name: EnumConnections(out UCOMIEnumConnections)
+  name.vb: EnumConnections(ByRef UCOMIEnumConnections)
+  fullName: System.Runtime.InteropServices.UCOMIConnectionPoint.EnumConnections(out System.Runtime.InteropServices.UCOMIEnumConnections)
+  fullName.vb: System.Runtime.InteropServices.UCOMIConnectionPoint.EnumConnections(ByRef System.Runtime.InteropServices.UCOMIEnumConnections)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIConnectionPoint.cs
+    startLine: 26
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Creates an enumerator object for iteration through the connections that exist to this connection point.
+  syntax:
+    content: void EnumConnections(out UCOMIEnumConnections ppEnum)
+    content.vb: Sub EnumConnections(ByRef ppEnum As UCOMIEnumConnections)
+    parameters:
+    - id: ppEnum
+      type: System.Runtime.InteropServices.UCOMIEnumConnections
+      description: On successful return, contains the newly created enumerator.
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace
+- uid: System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  fullName: System.Guid
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Runtime.InteropServices.UCOMIConnectionPointContainer
+  isExternal: false
+  href: System.Runtime.InteropServices.UCOMIConnectionPointContainer.yml
+  name: UCOMIConnectionPointContainer
+  fullName: System.Runtime.InteropServices.UCOMIConnectionPointContainer
+  type: Interface
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Runtime.InteropServices.UCOMIEnumConnections
+  parent: System.Runtime.InteropServices
+  isExternal: false
+  href: System.Runtime.InteropServices.UCOMIEnumConnections.yml
+  name: UCOMIEnumConnections
+  fullName: System.Runtime.InteropServices.UCOMIEnumConnections
+  type: Interface

@@ -1,0 +1,299 @@
+items:
+- uid: System.Runtime.InteropServices.ComTypes.TYPEFLAGS
+  id: TYPEFLAGS
+  parent: System.Runtime.InteropServices.ComTypes
+  children:
+  - System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FAGGREGATABLE
+  - System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FAPPOBJECT
+  - System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FCANCREATE
+  - System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FCONTROL
+  - System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FDISPATCHABLE
+  - System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FDUAL
+  - System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FHIDDEN
+  - System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FLICENSED
+  - System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FNONEXTENSIBLE
+  - System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FOLEAUTOMATION
+  - System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FPREDECLID
+  - System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FPROXY
+  - System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FREPLACEABLE
+  - System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FRESTRICTED
+  - System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FREVERSEBIND
+  href: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.yml
+  name: TYPEFLAGS
+  fullName: System.Runtime.InteropServices.ComTypes.TYPEFLAGS
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 30
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Defines the properties and attributes of a type description.
+  syntax:
+    content: 'public enum TYPEFLAGS : short'
+    content.vb: Public Enum TYPEFLAGS As Short
+- uid: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FAPPOBJECT
+  id: TYPEFLAG_FAPPOBJECT
+  parent: System.Runtime.InteropServices.ComTypes.TYPEFLAGS
+  href: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.yml
+  name: TYPEFLAG_FAPPOBJECT
+  fullName: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FAPPOBJECT
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 34
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: A type description that describes an Application object.
+  syntax:
+    content: TYPEFLAG_FAPPOBJECT = 1
+- uid: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FCANCREATE
+  id: TYPEFLAG_FCANCREATE
+  parent: System.Runtime.InteropServices.ComTypes.TYPEFLAGS
+  href: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.yml
+  name: TYPEFLAG_FCANCREATE
+  fullName: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FCANCREATE
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 35
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Instances of the type can be created by ITypeInfo::CreateInstance.
+  syntax:
+    content: TYPEFLAG_FCANCREATE = 2
+- uid: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FLICENSED
+  id: TYPEFLAG_FLICENSED
+  parent: System.Runtime.InteropServices.ComTypes.TYPEFLAGS
+  href: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.yml
+  name: TYPEFLAG_FLICENSED
+  fullName: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FLICENSED
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 36
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: The type is licensed.
+  syntax:
+    content: TYPEFLAG_FLICENSED = 4
+- uid: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FPREDECLID
+  id: TYPEFLAG_FPREDECLID
+  parent: System.Runtime.InteropServices.ComTypes.TYPEFLAGS
+  href: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.yml
+  name: TYPEFLAG_FPREDECLID
+  fullName: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FPREDECLID
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 37
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: The type is predefined. The client application should automatically create a single instance of the object that has this attribute. The name of the variable that points to the object is the same as the class name of the object.
+  syntax:
+    content: TYPEFLAG_FPREDECLID = 8
+- uid: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FHIDDEN
+  id: TYPEFLAG_FHIDDEN
+  parent: System.Runtime.InteropServices.ComTypes.TYPEFLAGS
+  href: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.yml
+  name: TYPEFLAG_FHIDDEN
+  fullName: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FHIDDEN
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 38
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: The type should not be displayed to browsers.
+  syntax:
+    content: TYPEFLAG_FHIDDEN = 16
+- uid: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FCONTROL
+  id: TYPEFLAG_FCONTROL
+  parent: System.Runtime.InteropServices.ComTypes.TYPEFLAGS
+  href: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.yml
+  name: TYPEFLAG_FCONTROL
+  fullName: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FCONTROL
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 39
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: The type is a control from which other types will be derived and should not be displayed to users.
+  syntax:
+    content: TYPEFLAG_FCONTROL = 32
+- uid: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FDUAL
+  id: TYPEFLAG_FDUAL
+  parent: System.Runtime.InteropServices.ComTypes.TYPEFLAGS
+  href: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.yml
+  name: TYPEFLAG_FDUAL
+  fullName: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FDUAL
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 40
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: The interface supplies both IDispatch and VTBL binding.
+  syntax:
+    content: TYPEFLAG_FDUAL = 64
+- uid: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FNONEXTENSIBLE
+  id: TYPEFLAG_FNONEXTENSIBLE
+  parent: System.Runtime.InteropServices.ComTypes.TYPEFLAGS
+  href: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.yml
+  name: TYPEFLAG_FNONEXTENSIBLE
+  fullName: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FNONEXTENSIBLE
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 41
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: The interface cannot add members at run time.
+  syntax:
+    content: TYPEFLAG_FNONEXTENSIBLE = 128
+- uid: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FOLEAUTOMATION
+  id: TYPEFLAG_FOLEAUTOMATION
+  parent: System.Runtime.InteropServices.ComTypes.TYPEFLAGS
+  href: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.yml
+  name: TYPEFLAG_FOLEAUTOMATION
+  fullName: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FOLEAUTOMATION
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 42
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: The types used in the interface are fully compatible with Automation, including VTBL binding support. Setting dual on an interface sets both this flag and the  @'System.Runtime.InteropServices.TYPEFLAGS.TYPEFLAG_FDUAL'. This flag is not allowed on dispinterfaces.
+  syntax:
+    content: TYPEFLAG_FOLEAUTOMATION = 256
+- uid: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FRESTRICTED
+  id: TYPEFLAG_FRESTRICTED
+  parent: System.Runtime.InteropServices.ComTypes.TYPEFLAGS
+  href: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.yml
+  name: TYPEFLAG_FRESTRICTED
+  fullName: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FRESTRICTED
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 43
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Should not be accessible from macro languages. This flag is intended for system-level types or types that type browsers should not display.
+  syntax:
+    content: TYPEFLAG_FRESTRICTED = 512
+- uid: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FAGGREGATABLE
+  id: TYPEFLAG_FAGGREGATABLE
+  parent: System.Runtime.InteropServices.ComTypes.TYPEFLAGS
+  href: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.yml
+  name: TYPEFLAG_FAGGREGATABLE
+  fullName: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FAGGREGATABLE
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 44
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: The class supports aggregation.
+  syntax:
+    content: TYPEFLAG_FAGGREGATABLE = 1024
+- uid: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FREPLACEABLE
+  id: TYPEFLAG_FREPLACEABLE
+  parent: System.Runtime.InteropServices.ComTypes.TYPEFLAGS
+  href: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.yml
+  name: TYPEFLAG_FREPLACEABLE
+  fullName: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FREPLACEABLE
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 45
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: The object supports IConnectionPointWithDefault, and has default behaviors.
+  syntax:
+    content: TYPEFLAG_FREPLACEABLE = 2048
+- uid: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FDISPATCHABLE
+  id: TYPEFLAG_FDISPATCHABLE
+  parent: System.Runtime.InteropServices.ComTypes.TYPEFLAGS
+  href: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.yml
+  name: TYPEFLAG_FDISPATCHABLE
+  fullName: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FDISPATCHABLE
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 46
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Indicates that the interface derives from IDispatch, either directly or indirectly. This flag is computed; there is no Object Description Language for the flag.
+  syntax:
+    content: TYPEFLAG_FDISPATCHABLE = 4096
+- uid: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FREVERSEBIND
+  id: TYPEFLAG_FREVERSEBIND
+  parent: System.Runtime.InteropServices.ComTypes.TYPEFLAGS
+  href: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.yml
+  name: TYPEFLAG_FREVERSEBIND
+  fullName: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FREVERSEBIND
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 47
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Indicates base interfaces should be checked for name resolution before checking children, which is the reverse of the default behavior.
+  syntax:
+    content: TYPEFLAG_FREVERSEBIND = 8192
+- uid: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FPROXY
+  id: TYPEFLAG_FPROXY
+  parent: System.Runtime.InteropServices.ComTypes.TYPEFLAGS
+  href: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.yml
+  name: TYPEFLAG_FPROXY
+  fullName: System.Runtime.InteropServices.ComTypes.TYPEFLAGS.TYPEFLAG_FPROXY
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 48
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Indicates that the interface will be using a proxy/stub dynamic link library. This flag specifies that the type library proxy should not be unregistered when the type library is unregistered.
+  syntax:
+    content: TYPEFLAG_FPROXY = 16384
+references:
+- uid: System.Runtime.InteropServices.ComTypes
+  isExternal: false
+  name: System.Runtime.InteropServices.ComTypes
+  fullName: System.Runtime.InteropServices.ComTypes
+  type: Namespace

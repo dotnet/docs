@@ -1,0 +1,137 @@
+items:
+- uid: System.Security.Permissions.FileIOPermissionAccess
+  id: FileIOPermissionAccess
+  parent: System.Security.Permissions
+  children:
+  - System.Security.Permissions.FileIOPermissionAccess.AllAccess
+  - System.Security.Permissions.FileIOPermissionAccess.Append
+  - System.Security.Permissions.FileIOPermissionAccess.NoAccess
+  - System.Security.Permissions.FileIOPermissionAccess.PathDiscovery
+  - System.Security.Permissions.FileIOPermissionAccess.Read
+  - System.Security.Permissions.FileIOPermissionAccess.Write
+  href: System.Security.Permissions.FileIOPermissionAccess.yml
+  name: FileIOPermissionAccess
+  fullName: System.Security.Permissions.FileIOPermissionAccess
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Security/Permissions/FileIOPermission.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Security/Permissions/FileIOPermission.cs
+    startLine: 19
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Specifies the type of file access requested.
+  syntax:
+    content: public enum FileIOPermissionAccess
+    content.vb: Public Enum FileIOPermissionAccess
+- uid: System.Security.Permissions.FileIOPermissionAccess.NoAccess
+  id: NoAccess
+  parent: System.Security.Permissions.FileIOPermissionAccess
+  href: System.Security.Permissions.FileIOPermissionAccess.yml
+  name: NoAccess
+  fullName: System.Security.Permissions.FileIOPermissionAccess.NoAccess
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/FileIOPermission.cs
+    startLine: 24
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: No access to a file or directory. @'System.Security.Permissions.FileIOPermissionAccess.NoAccess' represents no valid @'System.Security.Permissions.FileIOPermissionAccess' values and causes an @'System.ArgumentException' when used as the parameter for @'System.Security.Permissions.FileIOPermission.GetPathList(System.Security.Permissions.FileIOPermissionAccess)', which expects a single value.
+  syntax:
+    content: NoAccess = 0
+- uid: System.Security.Permissions.FileIOPermissionAccess.Read
+  id: Read
+  parent: System.Security.Permissions.FileIOPermissionAccess
+  href: System.Security.Permissions.FileIOPermissionAccess.yml
+  name: Read
+  fullName: System.Security.Permissions.FileIOPermissionAccess.Read
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/FileIOPermission.cs
+    startLine: 25
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Access to read from a file or directory.
+  syntax:
+    content: Read = 1
+- uid: System.Security.Permissions.FileIOPermissionAccess.Write
+  id: Write
+  parent: System.Security.Permissions.FileIOPermissionAccess
+  href: System.Security.Permissions.FileIOPermissionAccess.yml
+  name: Write
+  fullName: System.Security.Permissions.FileIOPermissionAccess.Write
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/FileIOPermission.cs
+    startLine: 26
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Access to write to or delete a file or directory. @'System.Security.Permissions.FileIOPermissionAccess.Write' access includes deleting and overwriting files or directories.
+  syntax:
+    content: Write = 2
+- uid: System.Security.Permissions.FileIOPermissionAccess.Append
+  id: Append
+  parent: System.Security.Permissions.FileIOPermissionAccess
+  href: System.Security.Permissions.FileIOPermissionAccess.yml
+  name: Append
+  fullName: System.Security.Permissions.FileIOPermissionAccess.Append
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/FileIOPermission.cs
+    startLine: 27
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Access to append material to a file or directory. @'System.Security.Permissions.FileIOPermissionAccess.Append' access includes the ability to create a new file or directory.
+  syntax:
+    content: Append = 4
+- uid: System.Security.Permissions.FileIOPermissionAccess.PathDiscovery
+  id: PathDiscovery
+  parent: System.Security.Permissions.FileIOPermissionAccess
+  href: System.Security.Permissions.FileIOPermissionAccess.yml
+  name: PathDiscovery
+  fullName: System.Security.Permissions.FileIOPermissionAccess.PathDiscovery
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/FileIOPermission.cs
+    startLine: 28
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Access to the information in the path itself. This helps protect sensitive information in the path, such as user names, as well as information about the directory structure revealed in the path. This value does not grant access to files or folders represented by the path.
+  syntax:
+    content: PathDiscovery = 8
+- uid: System.Security.Permissions.FileIOPermissionAccess.AllAccess
+  id: AllAccess
+  parent: System.Security.Permissions.FileIOPermissionAccess
+  href: System.Security.Permissions.FileIOPermissionAccess.yml
+  name: AllAccess
+  fullName: System.Security.Permissions.FileIOPermissionAccess.AllAccess
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/FileIOPermission.cs
+    startLine: 29
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: '@''System.Security.Permissions.FileIOPermissionAccess.Append'', @''System.Security.Permissions.FileIOPermissionAccess.Read'', @''System.Security.Permissions.FileIOPermissionAccess.Write'', and @''System.Security.Permissions.FileIOPermissionAccess.PathDiscovery'' access to a file or directory. @''System.Security.Permissions.FileIOPermissionAccess.AllAccess'' represents multiple @''System.Security.Permissions.FileIOPermissionAccess'' values and causes an @''System.ArgumentException'' when used as the *access* parameter for the @''System.Security.Permissions.FileIOPermission.GetPathList(System.Security.Permissions.FileIOPermissionAccess)'' method, which expects a single value.'
+  syntax:
+    content: AllAccess = 15
+references:
+- uid: System.Security.Permissions
+  isExternal: false
+  name: System.Security.Permissions
+  fullName: System.Security.Permissions
+  type: Namespace

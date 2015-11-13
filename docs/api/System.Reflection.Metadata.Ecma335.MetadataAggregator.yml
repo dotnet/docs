@@ -1,0 +1,461 @@
+items:
+- uid: System.Reflection.Metadata.Ecma335.MetadataAggregator
+  id: MetadataAggregator
+  parent: System.Reflection.Metadata.Ecma335
+  children:
+  - System.Reflection.Metadata.Ecma335.MetadataAggregator.#ctor(System.Collections.Generic.IReadOnlyList{System.Int32},System.Collections.Generic.IReadOnlyList{System.Int32},System.Collections.Generic.IReadOnlyList{System.Reflection.Metadata.MetadataReader})
+  - System.Reflection.Metadata.Ecma335.MetadataAggregator.#ctor(System.Reflection.Metadata.MetadataReader,System.Collections.Generic.IReadOnlyList{System.Reflection.Metadata.MetadataReader})
+  - System.Reflection.Metadata.Ecma335.MetadataAggregator.GetGenerationHandle(System.Reflection.Metadata.Handle,System.Int32@)
+  href: System.Reflection.Metadata.Ecma335.MetadataAggregator.yml
+  name: MetadataAggregator
+  fullName: System.Reflection.Metadata.Ecma335.MetadataAggregator
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataAggregator.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataAggregator.cs
+    startLine: 9
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata.Ecma335
+  syntax:
+    content: public sealed class MetadataAggregator
+    content.vb: Public NotInheritable Class MetadataAggregator
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Reflection.Metadata.Ecma335.MetadataAggregator.#ctor(System.Reflection.Metadata.MetadataReader,System.Collections.Generic.IReadOnlyList{System.Reflection.Metadata.MetadataReader})
+  id: '#ctor(System.Reflection.Metadata.MetadataReader,System.Collections.Generic.IReadOnlyList{System.Reflection.Metadata.MetadataReader})'
+  parent: System.Reflection.Metadata.Ecma335.MetadataAggregator
+  href: System.Reflection.Metadata.Ecma335.MetadataAggregator.yml
+  name: MetadataAggregator(MetadataReader, IReadOnlyList<MetadataReader>)
+  name.vb: MetadataAggregator(MetadataReader, IReadOnlyList(Of MetadataReader))
+  fullName: System.Reflection.Metadata.Ecma335.MetadataAggregator.MetadataAggregator(System.Reflection.Metadata.MetadataReader, System.Collections.Generic.IReadOnlyList<System.Reflection.Metadata.MetadataReader>)
+  fullName.vb: System.Reflection.Metadata.Ecma335.MetadataAggregator.MetadataAggregator(System.Reflection.Metadata.MetadataReader, System.Collections.Generic.IReadOnlyList(Of System.Reflection.Metadata.MetadataReader))
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataAggregator.cs
+    startLine: 34
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata.Ecma335
+  syntax:
+    content: public MetadataAggregator(MetadataReader baseReader, IReadOnlyList<MetadataReader> deltaReaders)
+    content.vb: Public Sub New(baseReader As MetadataReader, deltaReaders As IReadOnlyList(Of MetadataReader))
+    parameters:
+    - id: baseReader
+      type: System.Reflection.Metadata.MetadataReader
+    - id: deltaReaders
+      type: System.Collections.Generic.IReadOnlyList{System.Reflection.Metadata.MetadataReader}
+- uid: System.Reflection.Metadata.Ecma335.MetadataAggregator.#ctor(System.Collections.Generic.IReadOnlyList{System.Int32},System.Collections.Generic.IReadOnlyList{System.Int32},System.Collections.Generic.IReadOnlyList{System.Reflection.Metadata.MetadataReader})
+  id: '#ctor(System.Collections.Generic.IReadOnlyList{System.Int32},System.Collections.Generic.IReadOnlyList{System.Int32},System.Collections.Generic.IReadOnlyList{System.Reflection.Metadata.MetadataReader})'
+  parent: System.Reflection.Metadata.Ecma335.MetadataAggregator
+  href: System.Reflection.Metadata.Ecma335.MetadataAggregator.yml
+  name: MetadataAggregator(IReadOnlyList<Int32>, IReadOnlyList<Int32>, IReadOnlyList<MetadataReader>)
+  name.vb: MetadataAggregator(IReadOnlyList(Of Int32), IReadOnlyList(Of Int32), IReadOnlyList(Of MetadataReader))
+  fullName: System.Reflection.Metadata.Ecma335.MetadataAggregator.MetadataAggregator(System.Collections.Generic.IReadOnlyList<System.Int32>, System.Collections.Generic.IReadOnlyList<System.Int32>, System.Collections.Generic.IReadOnlyList<System.Reflection.Metadata.MetadataReader>)
+  fullName.vb: System.Reflection.Metadata.Ecma335.MetadataAggregator.MetadataAggregator(System.Collections.Generic.IReadOnlyList(Of System.Int32), System.Collections.Generic.IReadOnlyList(Of System.Int32), System.Collections.Generic.IReadOnlyList(Of System.Reflection.Metadata.MetadataReader))
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataAggregator.cs
+    startLine: 39
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata.Ecma335
+  syntax:
+    content: public MetadataAggregator(IReadOnlyList<int> baseTableRowCounts, IReadOnlyList<int> baseHeapSizes, IReadOnlyList<MetadataReader> deltaReaders)
+    content.vb: Public Sub New(baseTableRowCounts As IReadOnlyList(Of Integer), baseHeapSizes As IReadOnlyList(Of Integer), deltaReaders As IReadOnlyList(Of MetadataReader))
+    parameters:
+    - id: baseTableRowCounts
+      type: System.Collections.Generic.IReadOnlyList{System.Int32}
+    - id: baseHeapSizes
+      type: System.Collections.Generic.IReadOnlyList{System.Int32}
+    - id: deltaReaders
+      type: System.Collections.Generic.IReadOnlyList{System.Reflection.Metadata.MetadataReader}
+- uid: System.Reflection.Metadata.Ecma335.MetadataAggregator.GetGenerationHandle(System.Reflection.Metadata.Handle,System.Int32@)
+  id: GetGenerationHandle(System.Reflection.Metadata.Handle,System.Int32@)
+  parent: System.Reflection.Metadata.Ecma335.MetadataAggregator
+  href: System.Reflection.Metadata.Ecma335.MetadataAggregator.yml
+  name: GetGenerationHandle(Handle, out Int32)
+  name.vb: GetGenerationHandle(Handle, ByRef Int32)
+  fullName: System.Reflection.Metadata.Ecma335.MetadataAggregator.GetGenerationHandle(System.Reflection.Metadata.Handle, out System.Int32)
+  fullName.vb: System.Reflection.Metadata.Ecma335.MetadataAggregator.GetGenerationHandle(System.Reflection.Metadata.Handle, ByRef System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataAggregator.cs
+    startLine: 243
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata.Ecma335
+  syntax:
+    content: public Handle GetGenerationHandle(Handle handle, out int generation)
+    content.vb: Public Function GetGenerationHandle(handle As Handle, ByRef generation As Integer) As Handle
+    parameters:
+    - id: handle
+      type: System.Reflection.Metadata.Handle
+    - id: generation
+      type: System.Int32
+    return:
+      type: System.Reflection.Metadata.Handle
+      description: 
+references:
+- uid: System.Reflection.Metadata.Ecma335
+  isExternal: false
+  name: System.Reflection.Metadata.Ecma335
+  fullName: System.Reflection.Metadata.Ecma335
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Reflection.Metadata.MetadataReader
+  isExternal: false
+  href: System.Reflection.Metadata.MetadataReader.yml
+  name: MetadataReader
+  fullName: System.Reflection.Metadata.MetadataReader
+  type: Class
+  summary: Reads metadata as defined byte the ECMA 335 CLI specification.
+- uid: System.Collections.Generic.IReadOnlyList{System.Reflection.Metadata.MetadataReader}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: System.Reflection.Metadata.MetadataReader.yml
+  name: IReadOnlyList<MetadataReader>
+  name.vb: IReadOnlyList(Of MetadataReader)
+  fullName: System.Collections.Generic.IReadOnlyList<System.Reflection.Metadata.MetadataReader>
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of System.Reflection.Metadata.MetadataReader)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Reflection.Metadata.MetadataReader
+    name: MetadataReader
+    fullName: System.Reflection.Metadata.MetadataReader
+    href: System.Reflection.Metadata.MetadataReader.yml
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Reflection.Metadata.MetadataReader
+    name: MetadataReader
+    fullName: System.Reflection.Metadata.MetadataReader
+    href: System.Reflection.Metadata.MetadataReader.yml
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IReadOnlyList<T>
+  name.vb: IReadOnlyList(Of T)
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.Generic.IReadOnlyList{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  name: IReadOnlyList<Int32>
+  name.vb: IReadOnlyList(Of Int32)
+  fullName: System.Collections.Generic.IReadOnlyList<System.Int32>
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of System.Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Reflection.Metadata.Handle
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.Handle.yml
+  name: Handle
+  fullName: System.Reflection.Metadata.Handle
+  type: Struct
+  summary: Represents any metadata entity (type reference/definition/specification, method definition, custom attribute, etc.) or value (string, blob, guid, user string).
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Reflection.Metadata
+  isExternal: false
+  name: System.Reflection.Metadata
+  fullName: System.Reflection.Metadata
+  type: Namespace

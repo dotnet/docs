@@ -1,0 +1,29 @@
+items:
+- uid: System.Runtime.InteropServices._TypeBuilder
+  id: _TypeBuilder
+  parent: System.Runtime.InteropServices
+  children: []
+  href: System.Runtime.InteropServices._TypeBuilder.yml
+  name: _TypeBuilder
+  fullName: System.Runtime.InteropServices._TypeBuilder
+  type: Interface
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/Emit/ComInterfaces.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Reflection/Emit/ComInterfaces.cs
+    startLine: 268
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Exposes the @'System.Reflection.Emit.TypeBuilder' class to unmanaged code.
+  syntax:
+    content: public interface _TypeBuilder
+    content.vb: Public Interface _TypeBuilder
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace

@@ -1,0 +1,329 @@
+items:
+- uid: System.Reflection.Metadata.DeclarativeSecurityAttribute
+  id: DeclarativeSecurityAttribute
+  parent: System.Reflection.Metadata
+  children:
+  - System.Reflection.Metadata.DeclarativeSecurityAttribute.Action
+  - System.Reflection.Metadata.DeclarativeSecurityAttribute.Parent
+  - System.Reflection.Metadata.DeclarativeSecurityAttribute.PermissionSet
+  href: System.Reflection.Metadata.DeclarativeSecurityAttribute.yml
+  name: DeclarativeSecurityAttribute
+  fullName: System.Reflection.Metadata.DeclarativeSecurityAttribute
+  type: Struct
+  source:
+    remote: &o0
+      path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/DeclarativeSecurityAttribute.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/DeclarativeSecurityAttribute.cs
+    startLine: 8
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public struct DeclarativeSecurityAttribute
+    content.vb: Public Structure DeclarativeSecurityAttribute
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.Reflection.Metadata.DeclarativeSecurityAttribute.Action
+  id: Action
+  parent: System.Reflection.Metadata.DeclarativeSecurityAttribute
+  href: System.Reflection.Metadata.DeclarativeSecurityAttribute.yml
+  name: Action
+  fullName: System.Reflection.Metadata.DeclarativeSecurityAttribute.Action
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/DeclarativeSecurityAttribute.cs
+    startLine: 29
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public DeclarativeSecurityAction Action { get; }
+    content.vb: Public ReadOnly Property Action As DeclarativeSecurityAction
+    parameters: []
+    return:
+      type: System.Reflection.DeclarativeSecurityAction
+      description: 
+- uid: System.Reflection.Metadata.DeclarativeSecurityAttribute.Parent
+  id: Parent
+  parent: System.Reflection.Metadata.DeclarativeSecurityAttribute
+  href: System.Reflection.Metadata.DeclarativeSecurityAttribute.yml
+  name: Parent
+  fullName: System.Reflection.Metadata.DeclarativeSecurityAttribute.Parent
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/DeclarativeSecurityAttribute.cs
+    startLine: 37
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public EntityHandle Parent { get; }
+    content.vb: Public ReadOnly Property Parent As EntityHandle
+    parameters: []
+    return:
+      type: System.Reflection.Metadata.EntityHandle
+      description: 
+- uid: System.Reflection.Metadata.DeclarativeSecurityAttribute.PermissionSet
+  id: PermissionSet
+  parent: System.Reflection.Metadata.DeclarativeSecurityAttribute
+  href: System.Reflection.Metadata.DeclarativeSecurityAttribute.yml
+  name: PermissionSet
+  fullName: System.Reflection.Metadata.DeclarativeSecurityAttribute.PermissionSet
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/DeclarativeSecurityAttribute.cs
+    startLine: 45
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public BlobHandle PermissionSet { get; }
+    content.vb: Public ReadOnly Property PermissionSet As BlobHandle
+    parameters: []
+    return:
+      type: System.Reflection.Metadata.BlobHandle
+      description: 
+references:
+- uid: System.Reflection.Metadata
+  isExternal: false
+  name: System.Reflection.Metadata
+  fullName: System.Reflection.Metadata
+  type: Namespace
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Reflection.DeclarativeSecurityAction
+  parent: System.Reflection
+  isExternal: false
+  href: System.Reflection.DeclarativeSecurityAction.yml
+  name: DeclarativeSecurityAction
+  fullName: System.Reflection.DeclarativeSecurityAction
+  type: Enum
+  summary: Specifies the security actions that can be performed using declarative security.
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace
+- uid: System.Reflection.Metadata.EntityHandle
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.EntityHandle.yml
+  name: EntityHandle
+  fullName: System.Reflection.Metadata.EntityHandle
+  type: Struct
+  summary: Represents a metadata entity (type reference/definition/specification, method definition, custom attribute, etc.).
+- uid: System.Reflection.Metadata.BlobHandle
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.BlobHandle.yml
+  name: BlobHandle
+  fullName: System.Reflection.Metadata.BlobHandle
+  type: Struct

@@ -1,0 +1,2588 @@
+items:
+- uid: System.Collections.ObjectModel.KeyedCollection`2
+  id: KeyedCollection`2
+  parent: System.Collections.ObjectModel
+  children:
+  - System.Collections.ObjectModel.KeyedCollection`2.#ctor
+  - System.Collections.ObjectModel.KeyedCollection`2.#ctor(System.Collections.Generic.IEqualityComparer{`0})
+  - System.Collections.ObjectModel.KeyedCollection`2.#ctor(System.Collections.Generic.IEqualityComparer{`0},System.Int32)
+  - System.Collections.ObjectModel.KeyedCollection`2.ChangeItemKey(`1,`0)
+  - System.Collections.ObjectModel.KeyedCollection`2.ClearItems
+  - System.Collections.ObjectModel.KeyedCollection`2.Comparer
+  - System.Collections.ObjectModel.KeyedCollection`2.Contains(`0)
+  - System.Collections.ObjectModel.KeyedCollection`2.Dictionary
+  - System.Collections.ObjectModel.KeyedCollection`2.GetKeyForItem(`1)
+  - System.Collections.ObjectModel.KeyedCollection`2.InsertItem(System.Int32,`1)
+  - System.Collections.ObjectModel.KeyedCollection`2.Item(`0)
+  - System.Collections.ObjectModel.KeyedCollection`2.Remove(`0)
+  - System.Collections.ObjectModel.KeyedCollection`2.RemoveItem(System.Int32)
+  - System.Collections.ObjectModel.KeyedCollection`2.SetItem(System.Int32,`1)
+  href: System.Collections.ObjectModel.KeyedCollection`2.yml
+  name: KeyedCollection<TKey, TItem>
+  name.vb: KeyedCollection(Of TKey, TItem)
+  fullName: System.Collections.ObjectModel.KeyedCollection<TKey, TItem>
+  fullName.vb: System.Collections.ObjectModel.KeyedCollection(Of TKey, TItem)
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.ObjectModel/src/System/Collections/ObjectModel/KeyedCollection.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.ObjectModel/src/System/Collections/ObjectModel/KeyedCollection.cs
+    startLine: 10
+  assemblies:
+  - System.ObjectModel
+  namespace: System.Collections.ObjectModel
+  summary: Provides the abstract base class for a collection whose keys are embedded in the values.
+  syntax:
+    content: 'public abstract class KeyedCollection<TKey, TItem> : Collection<TItem>, IList<TItem>, ICollection<TItem>, IList, ICollection, IReadOnlyList<TItem>, IReadOnlyCollection<TItem>, IEnumerable<TItem>, IEnumerable'
+    content.vb: Public MustInherit Class KeyedCollection(Of TKey, TItem) Inherits Collection(Of TItem) Implements IList(Of TItem), ICollection(Of TItem), IList, ICollection, IReadOnlyList(Of TItem), IReadOnlyCollection(Of TItem), IEnumerable(Of TItem), IEnumerable
+    typeParameters:
+    - id: TKey
+    - id: TItem
+  inheritance:
+  - System.Object
+  - System.Collections.ObjectModel.Collection{{TItem}}
+  implements:
+  - System.Collections.Generic.IList{{TItem}}
+  - System.Collections.Generic.ICollection{{TItem}}
+  - System.Collections.IList
+  - System.Collections.ICollection
+  - System.Collections.Generic.IReadOnlyList{{TItem}}
+  - System.Collections.Generic.IReadOnlyCollection{{TItem}}
+  - System.Collections.Generic.IEnumerable{{TItem}}
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Collections.ObjectModel.Collection{{TItem}}.Add({TItem})
+  - System.Collections.ObjectModel.Collection{{TItem}}.Clear
+  - System.Collections.ObjectModel.Collection{{TItem}}.CopyTo({TItem}[],System.Int32)
+  - System.Collections.ObjectModel.Collection{{TItem}}.Contains({TItem})
+  - System.Collections.ObjectModel.Collection{{TItem}}.GetEnumerator
+  - System.Collections.ObjectModel.Collection{{TItem}}.IndexOf({TItem})
+  - System.Collections.ObjectModel.Collection{{TItem}}.Insert(System.Int32,{TItem})
+  - System.Collections.ObjectModel.Collection{{TItem}}.Remove({TItem})
+  - System.Collections.ObjectModel.Collection{{TItem}}.RemoveAt(System.Int32)
+  - System.Collections.ObjectModel.Collection{{TItem}}.System#Collections#IEnumerable#GetEnumerator
+  - System.Collections.ObjectModel.Collection{{TItem}}.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  - System.Collections.ObjectModel.Collection{{TItem}}.System#Collections#IList#get_Item(System.Int32)
+  - System.Collections.ObjectModel.Collection{{TItem}}.System#Collections#IList#set_Item(System.Int32,System.Object)
+  - System.Collections.ObjectModel.Collection{{TItem}}.System#Collections#IList#Add(System.Object)
+  - System.Collections.ObjectModel.Collection{{TItem}}.System#Collections#IList#Contains(System.Object)
+  - System.Collections.ObjectModel.Collection{{TItem}}.System#Collections#IList#IndexOf(System.Object)
+  - System.Collections.ObjectModel.Collection{{TItem}}.System#Collections#IList#Insert(System.Int32,System.Object)
+  - System.Collections.ObjectModel.Collection{{TItem}}.System#Collections#IList#Remove(System.Object)
+  - System.Collections.ObjectModel.Collection{{TItem}}.Count
+  - System.Collections.ObjectModel.Collection{{TItem}}.Items
+  - System.Collections.ObjectModel.Collection{{TItem}}.Item(System.Int32)
+  - System.Collections.ObjectModel.Collection{{TItem}}.System#Collections#Generic#ICollection{T}#IsReadOnly
+  - System.Collections.ObjectModel.Collection{{TItem}}.System#Collections#ICollection#IsSynchronized
+  - System.Collections.ObjectModel.Collection{{TItem}}.System#Collections#ICollection#SyncRoot
+  - System.Collections.ObjectModel.Collection{{TItem}}.System#Collections#IList#Item(System.Int32)
+  - System.Collections.ObjectModel.Collection{{TItem}}.System#Collections#IList#IsReadOnly
+  - System.Collections.ObjectModel.Collection{{TItem}}.System#Collections#IList#IsFixedSize
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Collections.ObjectModel.KeyedCollection`2.#ctor
+  id: '#ctor'
+  parent: System.Collections.ObjectModel.KeyedCollection`2
+  href: System.Collections.ObjectModel.KeyedCollection`2.yml
+  name: KeyedCollection()
+  fullName: System.Collections.ObjectModel.KeyedCollection<TKey, TItem>.KeyedCollection()
+  fullName.vb: System.Collections.ObjectModel.KeyedCollection(Of TKey, TItem).KeyedCollection()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.ObjectModel/src/System/Collections/ObjectModel/KeyedCollection.cs
+    startLine: 21
+  assemblies:
+  - System.ObjectModel
+  namespace: System.Collections.ObjectModel
+  summary: Initializes a new instance of the @'System.Collections.ObjectModel.KeyedCollection`2' class that uses the default equality comparer.
+  syntax:
+    content: protected KeyedCollection()
+    content.vb: Protected Sub New
+- uid: System.Collections.ObjectModel.KeyedCollection`2.#ctor(System.Collections.Generic.IEqualityComparer{`0})
+  id: '#ctor(System.Collections.Generic.IEqualityComparer{`0})'
+  parent: System.Collections.ObjectModel.KeyedCollection`2
+  href: System.Collections.ObjectModel.KeyedCollection`2.yml
+  name: KeyedCollection(IEqualityComparer<TKey>)
+  name.vb: KeyedCollection(IEqualityComparer(Of TKey))
+  fullName: System.Collections.ObjectModel.KeyedCollection<TKey, TItem>.KeyedCollection(System.Collections.Generic.IEqualityComparer<TKey>)
+  fullName.vb: System.Collections.ObjectModel.KeyedCollection(Of TKey, TItem).KeyedCollection(System.Collections.Generic.IEqualityComparer(Of TKey))
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.ObjectModel/src/System/Collections/ObjectModel/KeyedCollection.cs
+    startLine: 23
+  assemblies:
+  - System.ObjectModel
+  namespace: System.Collections.ObjectModel
+  summary: Initializes a new instance of the @'System.Collections.ObjectModel.KeyedCollection`2' class that uses the specified equality comparer.
+  syntax:
+    content: protected KeyedCollection(IEqualityComparer<TKey> comparer)
+    content.vb: Protected Sub New(comparer As IEqualityComparer(Of TKey))
+    parameters:
+    - id: comparer
+      type: System.Collections.Generic.IEqualityComparer{{TKey}}
+      description: The implementation of the @'System.Collections.Generic.IEqualityComparer`1' generic interface to use when comparing keys, or null to use the default equality comparer for the type of the key, obtained from @'System.Collections.Generic.EqualityComparer`1.Default'.
+- uid: System.Collections.ObjectModel.KeyedCollection`2.#ctor(System.Collections.Generic.IEqualityComparer{`0},System.Int32)
+  id: '#ctor(System.Collections.Generic.IEqualityComparer{`0},System.Int32)'
+  parent: System.Collections.ObjectModel.KeyedCollection`2
+  href: System.Collections.ObjectModel.KeyedCollection`2.yml
+  name: KeyedCollection(IEqualityComparer<TKey>, Int32)
+  name.vb: KeyedCollection(IEqualityComparer(Of TKey), Int32)
+  fullName: System.Collections.ObjectModel.KeyedCollection<TKey, TItem>.KeyedCollection(System.Collections.Generic.IEqualityComparer<TKey>, System.Int32)
+  fullName.vb: System.Collections.ObjectModel.KeyedCollection(Of TKey, TItem).KeyedCollection(System.Collections.Generic.IEqualityComparer(Of TKey), System.Int32)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.ObjectModel/src/System/Collections/ObjectModel/KeyedCollection.cs
+    startLine: 26
+  assemblies:
+  - System.ObjectModel
+  namespace: System.Collections.ObjectModel
+  summary: Initializes a new instance of the @'System.Collections.ObjectModel.KeyedCollection`2' class that uses the specified equality comparer and creates a lookup dictionary when the specified threshold is exceeded.
+  syntax:
+    content: protected KeyedCollection(IEqualityComparer<TKey> comparer, int dictionaryCreationThreshold)
+    content.vb: Protected Sub New(comparer As IEqualityComparer(Of TKey), dictionaryCreationThreshold As Integer)
+    parameters:
+    - id: comparer
+      type: System.Collections.Generic.IEqualityComparer{{TKey}}
+      description: The implementation of the @'System.Collections.Generic.IEqualityComparer`1' generic interface to use when comparing keys, or null to use the default equality comparer for the type of the key, obtained from @'System.Collections.Generic.EqualityComparer`1.Default'.
+    - id: dictionaryCreationThreshold
+      type: System.Int32
+      description: "The number of elements the collection can hold without creating a lookup dictionary (0 creates the lookup dictionary when the first item is added), or –1 to specify that a lookup dictionary is never created."
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: "*dictionaryCreationThreshold* is less than –1."
+- uid: System.Collections.ObjectModel.KeyedCollection`2.Comparer
+  id: Comparer
+  parent: System.Collections.ObjectModel.KeyedCollection`2
+  href: System.Collections.ObjectModel.KeyedCollection`2.yml
+  name: Comparer
+  fullName: System.Collections.ObjectModel.KeyedCollection<TKey, TItem>.Comparer
+  fullName.vb: System.Collections.ObjectModel.KeyedCollection(Of TKey, TItem).Comparer
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.ObjectModel/src/System/Collections/ObjectModel/KeyedCollection.cs
+    startLine: 47
+  assemblies:
+  - System.ObjectModel
+  namespace: System.Collections.ObjectModel
+  summary: Gets the generic equality comparer that is used to determine equality of keys in the collection.
+  syntax:
+    content: public IEqualityComparer<TKey> Comparer { get; }
+    content.vb: Public ReadOnly Property Comparer As IEqualityComparer(Of TKey)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEqualityComparer{{TKey}}
+- uid: System.Collections.ObjectModel.KeyedCollection`2.Item(`0)
+  id: Item(`0)
+  parent: System.Collections.ObjectModel.KeyedCollection`2
+  href: System.Collections.ObjectModel.KeyedCollection`2.yml
+  name: Item[TKey]
+  name.vb: Item(TKey)
+  fullName: System.Collections.ObjectModel.KeyedCollection<TKey, TItem>.Item[TKey]
+  fullName.vb: System.Collections.ObjectModel.KeyedCollection(Of TKey, TItem).Item(TKey)
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.ObjectModel/src/System/Collections/ObjectModel/KeyedCollection.cs
+    startLine: 55
+  assemblies:
+  - System.ObjectModel
+  namespace: System.Collections.ObjectModel
+  summary: Gets the element with the specified key.
+  syntax:
+    content: public TItem this[TKey key] { get; }
+    content.vb: Public ReadOnly Property Item(key As TKey) As TItem
+    parameters:
+    - id: key
+      type: '{TKey}'
+      description: The key of the element to get.
+    return:
+      type: '{TItem}'
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*key* is null.'
+  - type: System.Collections.Generic.KeyNotFoundException
+    description: An element with the specified key does not exist in the collection.
+- uid: System.Collections.ObjectModel.KeyedCollection`2.Contains(`0)
+  id: Contains(`0)
+  parent: System.Collections.ObjectModel.KeyedCollection`2
+  href: System.Collections.ObjectModel.KeyedCollection`2.yml
+  name: Contains(TKey)
+  fullName: System.Collections.ObjectModel.KeyedCollection<TKey, TItem>.Contains(TKey)
+  fullName.vb: System.Collections.ObjectModel.KeyedCollection(Of TKey, TItem).Contains(TKey)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.ObjectModel/src/System/Collections/ObjectModel/KeyedCollection.cs
+    startLine: 78
+  assemblies:
+  - System.ObjectModel
+  namespace: System.Collections.ObjectModel
+  summary: Determines whether the collection contains an element with the specified key.
+  syntax:
+    content: public bool Contains(TKey key)
+    content.vb: Public Function Contains(key As TKey) As Boolean
+    parameters:
+    - id: key
+      type: '{TKey}'
+      description: The key to locate in the @'System.Collections.ObjectModel.KeyedCollection`2'.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*key* is null.'
+- uid: System.Collections.ObjectModel.KeyedCollection`2.Remove(`0)
+  id: Remove(`0)
+  parent: System.Collections.ObjectModel.KeyedCollection`2
+  href: System.Collections.ObjectModel.KeyedCollection`2.yml
+  name: Remove(TKey)
+  fullName: System.Collections.ObjectModel.KeyedCollection<TKey, TItem>.Remove(TKey)
+  fullName.vb: System.Collections.ObjectModel.KeyedCollection(Of TKey, TItem).Remove(TKey)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.ObjectModel/src/System/Collections/ObjectModel/KeyedCollection.cs
+    startLine: 117
+  assemblies:
+  - System.ObjectModel
+  namespace: System.Collections.ObjectModel
+  summary: Removes the element with the specified key from the @'System.Collections.ObjectModel.KeyedCollection`2'.
+  syntax:
+    content: public bool Remove(TKey key)
+    content.vb: Public Function Remove(key As TKey) As Boolean
+    parameters:
+    - id: key
+      type: '{TKey}'
+      description: The key of the element to remove.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*key* is null.'
+- uid: System.Collections.ObjectModel.KeyedCollection`2.Dictionary
+  id: Dictionary
+  parent: System.Collections.ObjectModel.KeyedCollection`2
+  href: System.Collections.ObjectModel.KeyedCollection`2.yml
+  name: Dictionary
+  fullName: System.Collections.ObjectModel.KeyedCollection<TKey, TItem>.Dictionary
+  fullName.vb: System.Collections.ObjectModel.KeyedCollection(Of TKey, TItem).Dictionary
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.ObjectModel/src/System/Collections/ObjectModel/KeyedCollection.cs
+    startLine: 144
+  assemblies:
+  - System.ObjectModel
+  namespace: System.Collections.ObjectModel
+  summary: Gets the lookup dictionary of the @'System.Collections.ObjectModel.KeyedCollection`2'.
+  syntax:
+    content: protected IDictionary<TKey, TItem> Dictionary { get; }
+    content.vb: Protected ReadOnly Property Dictionary As IDictionary(Of TKey, TItem)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IDictionary{{TKey},{TItem}}
+- uid: System.Collections.ObjectModel.KeyedCollection`2.ChangeItemKey(`1,`0)
+  id: ChangeItemKey(`1,`0)
+  parent: System.Collections.ObjectModel.KeyedCollection`2
+  href: System.Collections.ObjectModel.KeyedCollection`2.yml
+  name: ChangeItemKey(TItem, TKey)
+  fullName: System.Collections.ObjectModel.KeyedCollection<TKey, TItem>.ChangeItemKey(TItem, TKey)
+  fullName.vb: System.Collections.ObjectModel.KeyedCollection(Of TKey, TItem).ChangeItemKey(TItem, TKey)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.ObjectModel/src/System/Collections/ObjectModel/KeyedCollection.cs
+    startLine: 149
+  assemblies:
+  - System.ObjectModel
+  namespace: System.Collections.ObjectModel
+  summary: Changes the key associated with the specified element in the lookup dictionary.
+  syntax:
+    content: protected void ChangeItemKey(TItem item, TKey newKey)
+    content.vb: Protected Sub ChangeItemKey(item As TItem, newKey As TKey)
+    parameters:
+    - id: item
+      type: '{TItem}'
+      description: The element to change the key of.
+    - id: newKey
+      type: '{TKey}'
+      description: The new key for *item*.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*item* is null.-or-*key* is null.'
+  - type: System.ArgumentException
+    description: '*item* is not found.-or-*key* already exists in the @''System.Collections.ObjectModel.KeyedCollection`2''.'
+- uid: System.Collections.ObjectModel.KeyedCollection`2.ClearItems
+  id: ClearItems
+  parent: System.Collections.ObjectModel.KeyedCollection`2
+  href: System.Collections.ObjectModel.KeyedCollection`2.yml
+  name: ClearItems()
+  fullName: System.Collections.ObjectModel.KeyedCollection<TKey, TItem>.ClearItems()
+  fullName.vb: System.Collections.ObjectModel.KeyedCollection(Of TKey, TItem).ClearItems()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.ObjectModel/src/System/Collections/ObjectModel/KeyedCollection.cs
+    startLine: 172
+  assemblies:
+  - System.ObjectModel
+  namespace: System.Collections.ObjectModel
+  summary: Removes all elements from the @'System.Collections.ObjectModel.KeyedCollection`2'.
+  syntax:
+    content: protected override void ClearItems()
+    content.vb: Protected Overrides Sub ClearItems
+  overridden: System.Collections.ObjectModel.Collection{{TItem}}.ClearItems
+- uid: System.Collections.ObjectModel.KeyedCollection`2.GetKeyForItem(`1)
+  id: GetKeyForItem(`1)
+  parent: System.Collections.ObjectModel.KeyedCollection`2
+  href: System.Collections.ObjectModel.KeyedCollection`2.yml
+  name: GetKeyForItem(TItem)
+  fullName: System.Collections.ObjectModel.KeyedCollection<TKey, TItem>.GetKeyForItem(TItem)
+  fullName.vb: System.Collections.ObjectModel.KeyedCollection(Of TKey, TItem).GetKeyForItem(TItem)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.ObjectModel/src/System/Collections/ObjectModel/KeyedCollection.cs
+    startLine: 183
+  assemblies:
+  - System.ObjectModel
+  namespace: System.Collections.ObjectModel
+  summary: When implemented in a derived class, extracts the key from the specified element.
+  syntax:
+    content: protected abstract TKey GetKeyForItem(TItem item)
+    content.vb: Protected MustOverride Function GetKeyForItem(item As TItem) As TKey
+    parameters:
+    - id: item
+      type: '{TItem}'
+      description: The element from which to extract the key.
+    return:
+      type: '{TKey}'
+- uid: System.Collections.ObjectModel.KeyedCollection`2.InsertItem(System.Int32,`1)
+  id: InsertItem(System.Int32,`1)
+  parent: System.Collections.ObjectModel.KeyedCollection`2
+  href: System.Collections.ObjectModel.KeyedCollection`2.yml
+  name: InsertItem(Int32, TItem)
+  fullName: System.Collections.ObjectModel.KeyedCollection<TKey, TItem>.InsertItem(System.Int32, TItem)
+  fullName.vb: System.Collections.ObjectModel.KeyedCollection(Of TKey, TItem).InsertItem(System.Int32, TItem)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.ObjectModel/src/System/Collections/ObjectModel/KeyedCollection.cs
+    startLine: 185
+  assemblies:
+  - System.ObjectModel
+  namespace: System.Collections.ObjectModel
+  summary: Inserts an element into the @'System.Collections.ObjectModel.KeyedCollection`2' at the specified index.
+  syntax:
+    content: protected override void InsertItem(int index, TItem item)
+    content.vb: Protected Overrides Sub InsertItem(index As Integer, item As TItem)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index at which *item* should be inserted.
+    - id: item
+      type: '{TItem}'
+      description: The object to insert.
+  overridden: System.Collections.ObjectModel.Collection{{TItem}}.InsertItem(System.Int32,{TItem})
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than 0.-or-*index* is greater than @''System.Collections.ObjectModel.Collection`1.Count''.'
+- uid: System.Collections.ObjectModel.KeyedCollection`2.RemoveItem(System.Int32)
+  id: RemoveItem(System.Int32)
+  parent: System.Collections.ObjectModel.KeyedCollection`2
+  href: System.Collections.ObjectModel.KeyedCollection`2.yml
+  name: RemoveItem(Int32)
+  fullName: System.Collections.ObjectModel.KeyedCollection<TKey, TItem>.RemoveItem(System.Int32)
+  fullName.vb: System.Collections.ObjectModel.KeyedCollection(Of TKey, TItem).RemoveItem(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.ObjectModel/src/System/Collections/ObjectModel/KeyedCollection.cs
+    startLine: 195
+  assemblies:
+  - System.ObjectModel
+  namespace: System.Collections.ObjectModel
+  summary: Removes the element at the specified index of the @'System.Collections.ObjectModel.KeyedCollection`2'.
+  syntax:
+    content: protected override void RemoveItem(int index)
+    content.vb: Protected Overrides Sub RemoveItem(index As Integer)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The index of the element to remove.
+  overridden: System.Collections.ObjectModel.Collection{{TItem}}.RemoveItem(System.Int32)
+- uid: System.Collections.ObjectModel.KeyedCollection`2.SetItem(System.Int32,`1)
+  id: SetItem(System.Int32,`1)
+  parent: System.Collections.ObjectModel.KeyedCollection`2
+  href: System.Collections.ObjectModel.KeyedCollection`2.yml
+  name: SetItem(Int32, TItem)
+  fullName: System.Collections.ObjectModel.KeyedCollection<TKey, TItem>.SetItem(System.Int32, TItem)
+  fullName.vb: System.Collections.ObjectModel.KeyedCollection(Of TKey, TItem).SetItem(System.Int32, TItem)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.ObjectModel/src/System/Collections/ObjectModel/KeyedCollection.cs
+    startLine: 205
+  assemblies:
+  - System.ObjectModel
+  namespace: System.Collections.ObjectModel
+  summary: Replaces the item at the specified index with the specified item.
+  syntax:
+    content: protected override void SetItem(int index, TItem item)
+    content.vb: Protected Overrides Sub SetItem(index As Integer, item As TItem)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the item to be replaced.
+    - id: item
+      type: '{TItem}'
+      description: The new item.
+  overridden: System.Collections.ObjectModel.Collection{{TItem}}.SetItem(System.Int32,{TItem})
+references:
+- uid: System.Collections.ObjectModel
+  isExternal: false
+  name: System.Collections.ObjectModel
+  fullName: System.Collections.ObjectModel
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Collections.ObjectModel.Collection{{TItem}}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.Collection`1
+  name: Collection<TItem>
+  name.vb: Collection(Of TItem)
+  fullName: System.Collections.ObjectModel.Collection<TItem>
+  fullName.vb: System.Collections.ObjectModel.Collection(Of TItem)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1
+    name: Collection
+    fullName: System.Collections.ObjectModel.Collection
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TItem
+    fullName: TItem
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1
+    name: Collection
+    fullName: System.Collections.ObjectModel.Collection
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TItem
+    fullName: TItem
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{{TItem}}.Add({TItem})
+  parent: System.Collections.ObjectModel.Collection{{TItem}}
+  definition: System.Collections.ObjectModel.Collection`1.Add({T})
+  name: Add(TItem)
+  fullName: System.Collections.ObjectModel.Collection<TItem>.Add(TItem)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of TItem).Add(TItem)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.Add(`0)
+    name: Add
+    fullName: System.Collections.ObjectModel.Collection<TItem>.Add
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: TItem
+    fullName: TItem
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.Add(`0)
+    name: Add
+    fullName: System.Collections.ObjectModel.Collection(Of TItem).Add
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: TItem
+    fullName: TItem
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{{TItem}}.Clear
+  parent: System.Collections.ObjectModel.Collection{{TItem}}
+  definition: System.Collections.ObjectModel.Collection`1.Clear
+  name: Clear()
+  fullName: System.Collections.ObjectModel.Collection<TItem>.Clear()
+  fullName.vb: System.Collections.ObjectModel.Collection(Of TItem).Clear()
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.Clear
+    name: Clear
+    fullName: System.Collections.ObjectModel.Collection<TItem>.Clear
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.Clear
+    name: Clear
+    fullName: System.Collections.ObjectModel.Collection(Of TItem).Clear
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{{TItem}}.CopyTo({TItem}[],System.Int32)
+  parent: System.Collections.ObjectModel.Collection{{TItem}}
+  definition: System.Collections.ObjectModel.Collection`1.CopyTo({T}[],System.Int32)
+  name: CopyTo(TItem[], Int32)
+  name.vb: CopyTo(TItem(), Int32)
+  fullName: System.Collections.ObjectModel.Collection<TItem>.CopyTo(TItem[], System.Int32)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of TItem).CopyTo(TItem(), System.Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    fullName: System.Collections.ObjectModel.Collection<TItem>.CopyTo
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: TItem
+    fullName: TItem
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    fullName: System.Collections.ObjectModel.Collection(Of TItem).CopyTo
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: TItem
+    fullName: TItem
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{{TItem}}.Contains({TItem})
+  parent: System.Collections.ObjectModel.Collection{{TItem}}
+  definition: System.Collections.ObjectModel.Collection`1.Contains({T})
+  name: Contains(TItem)
+  fullName: System.Collections.ObjectModel.Collection<TItem>.Contains(TItem)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of TItem).Contains(TItem)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.Contains(`0)
+    name: Contains
+    fullName: System.Collections.ObjectModel.Collection<TItem>.Contains
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: TItem
+    fullName: TItem
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.Contains(`0)
+    name: Contains
+    fullName: System.Collections.ObjectModel.Collection(Of TItem).Contains
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: TItem
+    fullName: TItem
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{{TItem}}.GetEnumerator
+  parent: System.Collections.ObjectModel.Collection{{TItem}}
+  definition: System.Collections.ObjectModel.Collection`1.GetEnumerator
+  name: GetEnumerator()
+  fullName: System.Collections.ObjectModel.Collection<TItem>.GetEnumerator()
+  fullName.vb: System.Collections.ObjectModel.Collection(Of TItem).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.GetEnumerator
+    name: GetEnumerator
+    fullName: System.Collections.ObjectModel.Collection<TItem>.GetEnumerator
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.GetEnumerator
+    name: GetEnumerator
+    fullName: System.Collections.ObjectModel.Collection(Of TItem).GetEnumerator
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{{TItem}}.IndexOf({TItem})
+  parent: System.Collections.ObjectModel.Collection{{TItem}}
+  definition: System.Collections.ObjectModel.Collection`1.IndexOf({T})
+  name: IndexOf(TItem)
+  fullName: System.Collections.ObjectModel.Collection<TItem>.IndexOf(TItem)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of TItem).IndexOf(TItem)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.IndexOf(`0)
+    name: IndexOf
+    fullName: System.Collections.ObjectModel.Collection<TItem>.IndexOf
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: TItem
+    fullName: TItem
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.IndexOf(`0)
+    name: IndexOf
+    fullName: System.Collections.ObjectModel.Collection(Of TItem).IndexOf
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: TItem
+    fullName: TItem
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{{TItem}}.Insert(System.Int32,{TItem})
+  parent: System.Collections.ObjectModel.Collection{{TItem}}
+  definition: System.Collections.ObjectModel.Collection`1.Insert(System.Int32,{T})
+  name: Insert(Int32, TItem)
+  fullName: System.Collections.ObjectModel.Collection<TItem>.Insert(System.Int32, TItem)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of TItem).Insert(System.Int32, TItem)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.Insert(System.Int32,`0)
+    name: Insert
+    fullName: System.Collections.ObjectModel.Collection<TItem>.Insert
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - name: TItem
+    fullName: TItem
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.Insert(System.Int32,`0)
+    name: Insert
+    fullName: System.Collections.ObjectModel.Collection(Of TItem).Insert
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - name: TItem
+    fullName: TItem
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{{TItem}}.Remove({TItem})
+  parent: System.Collections.ObjectModel.Collection{{TItem}}
+  definition: System.Collections.ObjectModel.Collection`1.Remove({T})
+  name: Remove(TItem)
+  fullName: System.Collections.ObjectModel.Collection<TItem>.Remove(TItem)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of TItem).Remove(TItem)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.Remove(`0)
+    name: Remove
+    fullName: System.Collections.ObjectModel.Collection<TItem>.Remove
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: TItem
+    fullName: TItem
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.Remove(`0)
+    name: Remove
+    fullName: System.Collections.ObjectModel.Collection(Of TItem).Remove
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: TItem
+    fullName: TItem
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{{TItem}}.RemoveAt(System.Int32)
+  parent: System.Collections.ObjectModel.Collection{{TItem}}
+  definition: System.Collections.ObjectModel.Collection`1.RemoveAt(System.Int32)
+  name: RemoveAt(Int32)
+  fullName: System.Collections.ObjectModel.Collection<TItem>.RemoveAt(System.Int32)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of TItem).RemoveAt(System.Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.RemoveAt(System.Int32)
+    name: RemoveAt
+    fullName: System.Collections.ObjectModel.Collection<TItem>.RemoveAt
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.RemoveAt(System.Int32)
+    name: RemoveAt
+    fullName: System.Collections.ObjectModel.Collection(Of TItem).RemoveAt
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{{TItem}}.System#Collections#IEnumerable#GetEnumerator
+  parent: System.Collections.ObjectModel.Collection{{TItem}}
+  definition: System.Collections.ObjectModel.Collection`1.System#Collections#IEnumerable#GetEnumerator
+  name: IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: System.Collections.ObjectModel.Collection<TItem>.System.Collections.IEnumerable.GetEnumerator()
+  fullName.vb: System.Collections.ObjectModel.Collection(Of TItem).System.Collections.IEnumerable.GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IEnumerable#GetEnumerator
+    name: IEnumerable.GetEnumerator
+    fullName: System.Collections.ObjectModel.Collection<TItem>.System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IEnumerable#GetEnumerator
+    name: System.Collections.IEnumerable.GetEnumerator
+    fullName: System.Collections.ObjectModel.Collection(Of TItem).System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{{TItem}}.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  parent: System.Collections.ObjectModel.Collection{{TItem}}
+  definition: System.Collections.ObjectModel.Collection`1.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  name: ICollection.CopyTo(Array, Int32)
+  name.vb: System.Collections.ICollection.CopyTo(Array, Int32)
+  fullName: System.Collections.ObjectModel.Collection<TItem>.System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of TItem).System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+    name: ICollection.CopyTo
+    fullName: System.Collections.ObjectModel.Collection<TItem>.System.Collections.ICollection.CopyTo
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Array
+    name: Array
+    fullName: System.Array
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+    name: System.Collections.ICollection.CopyTo
+    fullName: System.Collections.ObjectModel.Collection(Of TItem).System.Collections.ICollection.CopyTo
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Array
+    name: Array
+    fullName: System.Array
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{{TItem}}.System#Collections#IList#get_Item(System.Int32)
+  parent: System.Collections.ObjectModel.Collection{{TItem}}
+  definition: System.Collections.ObjectModel.Collection`1.System#Collections#IList#get_Item(System.Int32)
+  name: IList.get_Item(Int32)
+  name.vb: System.Collections.IList.get_Item(Int32)
+  fullName: System.Collections.ObjectModel.Collection<TItem>.System.Collections.IList.get_Item(System.Int32)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of TItem).System.Collections.IList.get_Item(System.Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#get_Item(System.Int32)
+    name: IList.get_Item
+    fullName: System.Collections.ObjectModel.Collection<TItem>.System.Collections.IList.get_Item
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#get_Item(System.Int32)
+    name: System.Collections.IList.get_Item
+    fullName: System.Collections.ObjectModel.Collection(Of TItem).System.Collections.IList.get_Item
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{{TItem}}.System#Collections#IList#set_Item(System.Int32,System.Object)
+  parent: System.Collections.ObjectModel.Collection{{TItem}}
+  definition: System.Collections.ObjectModel.Collection`1.System#Collections#IList#set_Item(System.Int32,System.Object)
+  name: IList.set_Item(Int32, Object)
+  name.vb: System.Collections.IList.set_Item(Int32, Object)
+  fullName: System.Collections.ObjectModel.Collection<TItem>.System.Collections.IList.set_Item(System.Int32, System.Object)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of TItem).System.Collections.IList.set_Item(System.Int32, System.Object)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#set_Item(System.Int32,System.Object)
+    name: IList.set_Item
+    fullName: System.Collections.ObjectModel.Collection<TItem>.System.Collections.IList.set_Item
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#set_Item(System.Int32,System.Object)
+    name: System.Collections.IList.set_Item
+    fullName: System.Collections.ObjectModel.Collection(Of TItem).System.Collections.IList.set_Item
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{{TItem}}.System#Collections#IList#Add(System.Object)
+  parent: System.Collections.ObjectModel.Collection{{TItem}}
+  definition: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Add(System.Object)
+  name: IList.Add(Object)
+  name.vb: System.Collections.IList.Add(Object)
+  fullName: System.Collections.ObjectModel.Collection<TItem>.System.Collections.IList.Add(System.Object)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of TItem).System.Collections.IList.Add(System.Object)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Add(System.Object)
+    name: IList.Add
+    fullName: System.Collections.ObjectModel.Collection<TItem>.System.Collections.IList.Add
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Add(System.Object)
+    name: System.Collections.IList.Add
+    fullName: System.Collections.ObjectModel.Collection(Of TItem).System.Collections.IList.Add
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{{TItem}}.System#Collections#IList#Contains(System.Object)
+  parent: System.Collections.ObjectModel.Collection{{TItem}}
+  definition: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Contains(System.Object)
+  name: IList.Contains(Object)
+  name.vb: System.Collections.IList.Contains(Object)
+  fullName: System.Collections.ObjectModel.Collection<TItem>.System.Collections.IList.Contains(System.Object)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of TItem).System.Collections.IList.Contains(System.Object)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Contains(System.Object)
+    name: IList.Contains
+    fullName: System.Collections.ObjectModel.Collection<TItem>.System.Collections.IList.Contains
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Contains(System.Object)
+    name: System.Collections.IList.Contains
+    fullName: System.Collections.ObjectModel.Collection(Of TItem).System.Collections.IList.Contains
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{{TItem}}.System#Collections#IList#IndexOf(System.Object)
+  parent: System.Collections.ObjectModel.Collection{{TItem}}
+  definition: System.Collections.ObjectModel.Collection`1.System#Collections#IList#IndexOf(System.Object)
+  name: IList.IndexOf(Object)
+  name.vb: System.Collections.IList.IndexOf(Object)
+  fullName: System.Collections.ObjectModel.Collection<TItem>.System.Collections.IList.IndexOf(System.Object)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of TItem).System.Collections.IList.IndexOf(System.Object)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#IndexOf(System.Object)
+    name: IList.IndexOf
+    fullName: System.Collections.ObjectModel.Collection<TItem>.System.Collections.IList.IndexOf
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#IndexOf(System.Object)
+    name: System.Collections.IList.IndexOf
+    fullName: System.Collections.ObjectModel.Collection(Of TItem).System.Collections.IList.IndexOf
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{{TItem}}.System#Collections#IList#Insert(System.Int32,System.Object)
+  parent: System.Collections.ObjectModel.Collection{{TItem}}
+  definition: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Insert(System.Int32,System.Object)
+  name: IList.Insert(Int32, Object)
+  name.vb: System.Collections.IList.Insert(Int32, Object)
+  fullName: System.Collections.ObjectModel.Collection<TItem>.System.Collections.IList.Insert(System.Int32, System.Object)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of TItem).System.Collections.IList.Insert(System.Int32, System.Object)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Insert(System.Int32,System.Object)
+    name: IList.Insert
+    fullName: System.Collections.ObjectModel.Collection<TItem>.System.Collections.IList.Insert
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Insert(System.Int32,System.Object)
+    name: System.Collections.IList.Insert
+    fullName: System.Collections.ObjectModel.Collection(Of TItem).System.Collections.IList.Insert
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{{TItem}}.System#Collections#IList#Remove(System.Object)
+  parent: System.Collections.ObjectModel.Collection{{TItem}}
+  definition: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Remove(System.Object)
+  name: IList.Remove(Object)
+  name.vb: System.Collections.IList.Remove(Object)
+  fullName: System.Collections.ObjectModel.Collection<TItem>.System.Collections.IList.Remove(System.Object)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of TItem).System.Collections.IList.Remove(System.Object)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Remove(System.Object)
+    name: IList.Remove
+    fullName: System.Collections.ObjectModel.Collection<TItem>.System.Collections.IList.Remove
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Remove(System.Object)
+    name: System.Collections.IList.Remove
+    fullName: System.Collections.ObjectModel.Collection(Of TItem).System.Collections.IList.Remove
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{{TItem}}.Count
+  parent: System.Collections.ObjectModel.Collection{{TItem}}
+  definition: System.Collections.ObjectModel.Collection`1.Count
+  name: Count
+  fullName: System.Collections.ObjectModel.Collection<TItem>.Count
+  fullName.vb: System.Collections.ObjectModel.Collection(Of TItem).Count
+- uid: System.Collections.ObjectModel.Collection{{TItem}}.Items
+  parent: System.Collections.ObjectModel.Collection{{TItem}}
+  definition: System.Collections.ObjectModel.Collection`1.Items
+  name: Items
+  fullName: System.Collections.ObjectModel.Collection<TItem>.Items
+  fullName.vb: System.Collections.ObjectModel.Collection(Of TItem).Items
+- uid: System.Collections.ObjectModel.Collection{{TItem}}.Item(System.Int32)
+  parent: System.Collections.ObjectModel.Collection{{TItem}}
+  definition: System.Collections.ObjectModel.Collection`1.Item(System.Int32)
+  name: Item[Int32]
+  name.vb: Item(Int32)
+  fullName: System.Collections.ObjectModel.Collection<TItem>.Item[System.Int32]
+  fullName.vb: System.Collections.ObjectModel.Collection(Of TItem).Item(System.Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.Item(System.Int32)
+    name: Item
+    fullName: System.Collections.ObjectModel.Collection<TItem>.Item
+    isExternal: true
+  - name: '['
+    fullName: '['
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ']'
+    fullName: ']'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.Item(System.Int32)
+    name: Item
+    fullName: System.Collections.ObjectModel.Collection(Of TItem).Item
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{{TItem}}.System#Collections#Generic#ICollection{T}#IsReadOnly
+  parent: System.Collections.ObjectModel.Collection{{TItem}}
+  definition: System.Collections.ObjectModel.Collection`1.System#Collections#Generic#ICollection{T}#IsReadOnly
+  name: ICollection<TItem>.IsReadOnly
+  name.vb: System.Collections.Generic.ICollection<T>.IsReadOnly
+  fullName: System.Collections.ObjectModel.Collection<TItem>.System.Collections.Generic.ICollection<TItem>.IsReadOnly
+  fullName.vb: System.Collections.ObjectModel.Collection(Of TItem).System.Collections.Generic.ICollection<T>.IsReadOnly
+- uid: System.Collections.ObjectModel.Collection{{TItem}}.System#Collections#ICollection#IsSynchronized
+  parent: System.Collections.ObjectModel.Collection{{TItem}}
+  definition: System.Collections.ObjectModel.Collection`1.System#Collections#ICollection#IsSynchronized
+  name: ICollection.IsSynchronized
+  name.vb: System.Collections.ICollection.IsSynchronized
+  fullName: System.Collections.ObjectModel.Collection<TItem>.System.Collections.ICollection.IsSynchronized
+  fullName.vb: System.Collections.ObjectModel.Collection(Of TItem).System.Collections.ICollection.IsSynchronized
+- uid: System.Collections.ObjectModel.Collection{{TItem}}.System#Collections#ICollection#SyncRoot
+  parent: System.Collections.ObjectModel.Collection{{TItem}}
+  definition: System.Collections.ObjectModel.Collection`1.System#Collections#ICollection#SyncRoot
+  name: ICollection.SyncRoot
+  name.vb: System.Collections.ICollection.SyncRoot
+  fullName: System.Collections.ObjectModel.Collection<TItem>.System.Collections.ICollection.SyncRoot
+  fullName.vb: System.Collections.ObjectModel.Collection(Of TItem).System.Collections.ICollection.SyncRoot
+- uid: System.Collections.ObjectModel.Collection{{TItem}}.System#Collections#IList#Item(System.Int32)
+  parent: System.Collections.ObjectModel.Collection{{TItem}}
+  definition: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Item(System.Int32)
+  name: IList.Item[Int32]
+  name.vb: System.Collections.IList.Item(Int32)
+  fullName: System.Collections.ObjectModel.Collection<TItem>.System.Collections.IList.Item[System.Int32]
+  fullName.vb: System.Collections.ObjectModel.Collection(Of TItem).System.Collections.IList.Item(System.Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Item(System.Int32)
+    name: IList.Item
+    fullName: System.Collections.ObjectModel.Collection<TItem>.System.Collections.IList.Item
+    isExternal: true
+  - name: '['
+    fullName: '['
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ']'
+    fullName: ']'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Item(System.Int32)
+    name: System.Collections.IList.Item
+    fullName: System.Collections.ObjectModel.Collection(Of TItem).System.Collections.IList.Item
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{{TItem}}.System#Collections#IList#IsReadOnly
+  parent: System.Collections.ObjectModel.Collection{{TItem}}
+  definition: System.Collections.ObjectModel.Collection`1.System#Collections#IList#IsReadOnly
+  name: IList.IsReadOnly
+  name.vb: System.Collections.IList.IsReadOnly
+  fullName: System.Collections.ObjectModel.Collection<TItem>.System.Collections.IList.IsReadOnly
+  fullName.vb: System.Collections.ObjectModel.Collection(Of TItem).System.Collections.IList.IsReadOnly
+- uid: System.Collections.ObjectModel.Collection{{TItem}}.System#Collections#IList#IsFixedSize
+  parent: System.Collections.ObjectModel.Collection{{TItem}}
+  definition: System.Collections.ObjectModel.Collection`1.System#Collections#IList#IsFixedSize
+  name: IList.IsFixedSize
+  name.vb: System.Collections.IList.IsFixedSize
+  fullName: System.Collections.ObjectModel.Collection<TItem>.System.Collections.IList.IsFixedSize
+  fullName.vb: System.Collections.ObjectModel.Collection(Of TItem).System.Collections.IList.IsFixedSize
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Collections.ObjectModel.Collection`1
+  parent: System.Collections.ObjectModel
+  isExternal: true
+  name: Collection<T>
+  name.vb: Collection(Of T)
+  fullName: System.Collections.ObjectModel.Collection<T>
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1
+    name: Collection
+    fullName: System.Collections.ObjectModel.Collection
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1
+    name: Collection
+    fullName: System.Collections.ObjectModel.Collection
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.Add({T})
+  parent: System.Collections.ObjectModel.Collection`1
+  isExternal: true
+  name: Add(T)
+  fullName: System.Collections.ObjectModel.Collection<T>.Add(T)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).Add(T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.Add(`0)
+    name: Add
+    fullName: System.Collections.ObjectModel.Collection<T>.Add
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.Add(`0)
+    name: Add
+    fullName: System.Collections.ObjectModel.Collection(Of T).Add
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.Clear
+  parent: System.Collections.ObjectModel.Collection`1
+  isExternal: true
+  name: Clear()
+  fullName: System.Collections.ObjectModel.Collection<T>.Clear()
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).Clear()
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.Clear
+    name: Clear
+    fullName: System.Collections.ObjectModel.Collection<T>.Clear
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.Clear
+    name: Clear
+    fullName: System.Collections.ObjectModel.Collection(Of T).Clear
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.CopyTo({T}[],System.Int32)
+  parent: System.Collections.ObjectModel.Collection`1
+  isExternal: true
+  name: CopyTo(T[], Int32)
+  name.vb: CopyTo(T(), Int32)
+  fullName: System.Collections.ObjectModel.Collection<T>.CopyTo(T[], System.Int32)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).CopyTo(T(), System.Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    fullName: System.Collections.ObjectModel.Collection<T>.CopyTo
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: T
+    fullName: T
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    fullName: System.Collections.ObjectModel.Collection(Of T).CopyTo
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: T
+    fullName: T
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.Contains({T})
+  parent: System.Collections.ObjectModel.Collection`1
+  isExternal: true
+  name: Contains(T)
+  fullName: System.Collections.ObjectModel.Collection<T>.Contains(T)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).Contains(T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.Contains(`0)
+    name: Contains
+    fullName: System.Collections.ObjectModel.Collection<T>.Contains
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.Contains(`0)
+    name: Contains
+    fullName: System.Collections.ObjectModel.Collection(Of T).Contains
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.GetEnumerator
+  parent: System.Collections.ObjectModel.Collection`1
+  isExternal: true
+  name: GetEnumerator()
+  fullName: System.Collections.ObjectModel.Collection<T>.GetEnumerator()
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.GetEnumerator
+    name: GetEnumerator
+    fullName: System.Collections.ObjectModel.Collection<T>.GetEnumerator
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.GetEnumerator
+    name: GetEnumerator
+    fullName: System.Collections.ObjectModel.Collection(Of T).GetEnumerator
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.IndexOf({T})
+  parent: System.Collections.ObjectModel.Collection`1
+  isExternal: true
+  name: IndexOf(T)
+  fullName: System.Collections.ObjectModel.Collection<T>.IndexOf(T)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).IndexOf(T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.IndexOf(`0)
+    name: IndexOf
+    fullName: System.Collections.ObjectModel.Collection<T>.IndexOf
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.IndexOf(`0)
+    name: IndexOf
+    fullName: System.Collections.ObjectModel.Collection(Of T).IndexOf
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.Insert(System.Int32,{T})
+  parent: System.Collections.ObjectModel.Collection`1
+  isExternal: true
+  name: Insert(Int32, T)
+  fullName: System.Collections.ObjectModel.Collection<T>.Insert(System.Int32, T)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).Insert(System.Int32, T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.Insert(System.Int32,`0)
+    name: Insert
+    fullName: System.Collections.ObjectModel.Collection<T>.Insert
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.Insert(System.Int32,`0)
+    name: Insert
+    fullName: System.Collections.ObjectModel.Collection(Of T).Insert
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.Remove({T})
+  parent: System.Collections.ObjectModel.Collection`1
+  isExternal: true
+  name: Remove(T)
+  fullName: System.Collections.ObjectModel.Collection<T>.Remove(T)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).Remove(T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.Remove(`0)
+    name: Remove
+    fullName: System.Collections.ObjectModel.Collection<T>.Remove
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.Remove(`0)
+    name: Remove
+    fullName: System.Collections.ObjectModel.Collection(Of T).Remove
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.RemoveAt(System.Int32)
+  parent: System.Collections.ObjectModel.Collection`1
+  isExternal: true
+  name: RemoveAt(Int32)
+  fullName: System.Collections.ObjectModel.Collection<T>.RemoveAt(System.Int32)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).RemoveAt(System.Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.RemoveAt(System.Int32)
+    name: RemoveAt
+    fullName: System.Collections.ObjectModel.Collection<T>.RemoveAt
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.RemoveAt(System.Int32)
+    name: RemoveAt
+    fullName: System.Collections.ObjectModel.Collection(Of T).RemoveAt
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.System#Collections#IEnumerable#GetEnumerator
+  parent: System.Collections.ObjectModel.Collection`1
+  isExternal: true
+  name: IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.IEnumerable.GetEnumerator()
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).System.Collections.IEnumerable.GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IEnumerable#GetEnumerator
+    name: IEnumerable.GetEnumerator
+    fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IEnumerable#GetEnumerator
+    name: System.Collections.IEnumerable.GetEnumerator
+    fullName: System.Collections.ObjectModel.Collection(Of T).System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  parent: System.Collections.ObjectModel.Collection`1
+  isExternal: true
+  name: ICollection.CopyTo(Array, Int32)
+  name.vb: System.Collections.ICollection.CopyTo(Array, Int32)
+  fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+    name: ICollection.CopyTo
+    fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.ICollection.CopyTo
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Array
+    name: Array
+    fullName: System.Array
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+    name: System.Collections.ICollection.CopyTo
+    fullName: System.Collections.ObjectModel.Collection(Of T).System.Collections.ICollection.CopyTo
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Array
+    name: Array
+    fullName: System.Array
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#get_Item(System.Int32)
+  parent: System.Collections.ObjectModel.Collection`1
+  isExternal: true
+  name: IList.get_Item(Int32)
+  name.vb: System.Collections.IList.get_Item(Int32)
+  fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.IList.get_Item(System.Int32)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).System.Collections.IList.get_Item(System.Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#get_Item(System.Int32)
+    name: IList.get_Item
+    fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.IList.get_Item
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#get_Item(System.Int32)
+    name: System.Collections.IList.get_Item
+    fullName: System.Collections.ObjectModel.Collection(Of T).System.Collections.IList.get_Item
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#set_Item(System.Int32,System.Object)
+  parent: System.Collections.ObjectModel.Collection`1
+  isExternal: true
+  name: IList.set_Item(Int32, Object)
+  name.vb: System.Collections.IList.set_Item(Int32, Object)
+  fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.IList.set_Item(System.Int32, System.Object)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).System.Collections.IList.set_Item(System.Int32, System.Object)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#set_Item(System.Int32,System.Object)
+    name: IList.set_Item
+    fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.IList.set_Item
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#set_Item(System.Int32,System.Object)
+    name: System.Collections.IList.set_Item
+    fullName: System.Collections.ObjectModel.Collection(Of T).System.Collections.IList.set_Item
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Add(System.Object)
+  parent: System.Collections.ObjectModel.Collection`1
+  isExternal: true
+  name: IList.Add(Object)
+  name.vb: System.Collections.IList.Add(Object)
+  fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.IList.Add(System.Object)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).System.Collections.IList.Add(System.Object)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Add(System.Object)
+    name: IList.Add
+    fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.IList.Add
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Add(System.Object)
+    name: System.Collections.IList.Add
+    fullName: System.Collections.ObjectModel.Collection(Of T).System.Collections.IList.Add
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Contains(System.Object)
+  parent: System.Collections.ObjectModel.Collection`1
+  isExternal: true
+  name: IList.Contains(Object)
+  name.vb: System.Collections.IList.Contains(Object)
+  fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.IList.Contains(System.Object)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).System.Collections.IList.Contains(System.Object)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Contains(System.Object)
+    name: IList.Contains
+    fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.IList.Contains
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Contains(System.Object)
+    name: System.Collections.IList.Contains
+    fullName: System.Collections.ObjectModel.Collection(Of T).System.Collections.IList.Contains
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#IndexOf(System.Object)
+  parent: System.Collections.ObjectModel.Collection`1
+  isExternal: true
+  name: IList.IndexOf(Object)
+  name.vb: System.Collections.IList.IndexOf(Object)
+  fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.IList.IndexOf(System.Object)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).System.Collections.IList.IndexOf(System.Object)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#IndexOf(System.Object)
+    name: IList.IndexOf
+    fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.IList.IndexOf
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#IndexOf(System.Object)
+    name: System.Collections.IList.IndexOf
+    fullName: System.Collections.ObjectModel.Collection(Of T).System.Collections.IList.IndexOf
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Insert(System.Int32,System.Object)
+  parent: System.Collections.ObjectModel.Collection`1
+  isExternal: true
+  name: IList.Insert(Int32, Object)
+  name.vb: System.Collections.IList.Insert(Int32, Object)
+  fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.IList.Insert(System.Int32, System.Object)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).System.Collections.IList.Insert(System.Int32, System.Object)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Insert(System.Int32,System.Object)
+    name: IList.Insert
+    fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.IList.Insert
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Insert(System.Int32,System.Object)
+    name: System.Collections.IList.Insert
+    fullName: System.Collections.ObjectModel.Collection(Of T).System.Collections.IList.Insert
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Remove(System.Object)
+  parent: System.Collections.ObjectModel.Collection`1
+  isExternal: true
+  name: IList.Remove(Object)
+  name.vb: System.Collections.IList.Remove(Object)
+  fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.IList.Remove(System.Object)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).System.Collections.IList.Remove(System.Object)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Remove(System.Object)
+    name: IList.Remove
+    fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.IList.Remove
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Remove(System.Object)
+    name: System.Collections.IList.Remove
+    fullName: System.Collections.ObjectModel.Collection(Of T).System.Collections.IList.Remove
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.Count
+  parent: System.Collections.ObjectModel.Collection`1
+  isExternal: true
+  name: Count
+  fullName: System.Collections.ObjectModel.Collection<T>.Count
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).Count
+- uid: System.Collections.ObjectModel.Collection`1.Items
+  parent: System.Collections.ObjectModel.Collection`1
+  isExternal: true
+  name: Items
+  fullName: System.Collections.ObjectModel.Collection<T>.Items
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).Items
+- uid: System.Collections.ObjectModel.Collection`1.Item(System.Int32)
+  parent: System.Collections.ObjectModel.Collection`1
+  isExternal: true
+  name: Item[Int32]
+  name.vb: Item(Int32)
+  fullName: System.Collections.ObjectModel.Collection<T>.Item[System.Int32]
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).Item(System.Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.Item(System.Int32)
+    name: Item
+    fullName: System.Collections.ObjectModel.Collection<T>.Item
+    isExternal: true
+  - name: '['
+    fullName: '['
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ']'
+    fullName: ']'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.Item(System.Int32)
+    name: Item
+    fullName: System.Collections.ObjectModel.Collection(Of T).Item
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.System#Collections#Generic#ICollection{T}#IsReadOnly
+  parent: System.Collections.ObjectModel.Collection`1
+  isExternal: true
+  name: ICollection<T>.IsReadOnly
+  name.vb: System.Collections.Generic.ICollection<T>.IsReadOnly
+  fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.Generic.ICollection<T>.IsReadOnly
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).System.Collections.Generic.ICollection<T>.IsReadOnly
+- uid: System.Collections.ObjectModel.Collection`1.System#Collections#ICollection#IsSynchronized
+  parent: System.Collections.ObjectModel.Collection`1
+  isExternal: true
+  name: ICollection.IsSynchronized
+  name.vb: System.Collections.ICollection.IsSynchronized
+  fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.ICollection.IsSynchronized
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).System.Collections.ICollection.IsSynchronized
+- uid: System.Collections.ObjectModel.Collection`1.System#Collections#ICollection#SyncRoot
+  parent: System.Collections.ObjectModel.Collection`1
+  isExternal: true
+  name: ICollection.SyncRoot
+  name.vb: System.Collections.ICollection.SyncRoot
+  fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.ICollection.SyncRoot
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).System.Collections.ICollection.SyncRoot
+- uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Item(System.Int32)
+  parent: System.Collections.ObjectModel.Collection`1
+  isExternal: true
+  name: IList.Item[Int32]
+  name.vb: System.Collections.IList.Item(Int32)
+  fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.IList.Item[System.Int32]
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).System.Collections.IList.Item(System.Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Item(System.Int32)
+    name: IList.Item
+    fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.IList.Item
+    isExternal: true
+  - name: '['
+    fullName: '['
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ']'
+    fullName: ']'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Item(System.Int32)
+    name: System.Collections.IList.Item
+    fullName: System.Collections.ObjectModel.Collection(Of T).System.Collections.IList.Item
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#IsReadOnly
+  parent: System.Collections.ObjectModel.Collection`1
+  isExternal: true
+  name: IList.IsReadOnly
+  name.vb: System.Collections.IList.IsReadOnly
+  fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.IList.IsReadOnly
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).System.Collections.IList.IsReadOnly
+- uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#IsFixedSize
+  parent: System.Collections.ObjectModel.Collection`1
+  isExternal: true
+  name: IList.IsFixedSize
+  name.vb: System.Collections.IList.IsFixedSize
+  fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.IList.IsFixedSize
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).System.Collections.IList.IsFixedSize
+- uid: System.Collections.Generic.IEqualityComparer{{TKey}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEqualityComparer`1
+  name: IEqualityComparer<TKey>
+  name.vb: IEqualityComparer(Of TKey)
+  fullName: System.Collections.Generic.IEqualityComparer<TKey>
+  fullName.vb: System.Collections.Generic.IEqualityComparer(Of TKey)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TKey
+    fullName: TKey
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    fullName: TKey
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEqualityComparer`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEqualityComparer<T>
+  name.vb: IEqualityComparer(Of T)
+  fullName: System.Collections.Generic.IEqualityComparer<T>
+  fullName.vb: System.Collections.Generic.IEqualityComparer(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: '{TKey}'
+  isExternal: false
+  name: TKey
+  fullName: TKey
+- uid: '{TItem}'
+  isExternal: false
+  name: TItem
+  fullName: TItem
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Collections.Generic.IDictionary{{TKey},{TItem}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  name: IDictionary<TKey, TItem>
+  name.vb: IDictionary(Of TKey, TItem)
+  fullName: System.Collections.Generic.IDictionary<TKey, TItem>
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TItem)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TItem
+    fullName: TItem
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TItem
+    fullName: TItem
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IDictionary`2
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IDictionary<TKey, TValue>
+  name.vb: IDictionary(Of TKey, TValue)
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{{TItem}}.ClearItems
+  parent: System.Collections.ObjectModel.Collection{{TItem}}
+  definition: System.Collections.ObjectModel.Collection`1.ClearItems
+  name: ClearItems()
+  fullName: System.Collections.ObjectModel.Collection<TItem>.ClearItems()
+  fullName.vb: System.Collections.ObjectModel.Collection(Of TItem).ClearItems()
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.ClearItems
+    name: ClearItems
+    fullName: System.Collections.ObjectModel.Collection<TItem>.ClearItems
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.ClearItems
+    name: ClearItems
+    fullName: System.Collections.ObjectModel.Collection(Of TItem).ClearItems
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.ClearItems
+  parent: System.Collections.ObjectModel.Collection`1
+  isExternal: true
+  name: ClearItems()
+  fullName: System.Collections.ObjectModel.Collection<T>.ClearItems()
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).ClearItems()
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.ClearItems
+    name: ClearItems
+    fullName: System.Collections.ObjectModel.Collection<T>.ClearItems
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.ClearItems
+    name: ClearItems
+    fullName: System.Collections.ObjectModel.Collection(Of T).ClearItems
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{{TItem}}.InsertItem(System.Int32,{TItem})
+  parent: System.Collections.ObjectModel.Collection{{TItem}}
+  definition: System.Collections.ObjectModel.Collection`1.InsertItem(System.Int32,{T})
+  name: InsertItem(Int32, TItem)
+  fullName: System.Collections.ObjectModel.Collection<TItem>.InsertItem(System.Int32, TItem)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of TItem).InsertItem(System.Int32, TItem)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.InsertItem(System.Int32,`0)
+    name: InsertItem
+    fullName: System.Collections.ObjectModel.Collection<TItem>.InsertItem
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - name: TItem
+    fullName: TItem
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.InsertItem(System.Int32,`0)
+    name: InsertItem
+    fullName: System.Collections.ObjectModel.Collection(Of TItem).InsertItem
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - name: TItem
+    fullName: TItem
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.InsertItem(System.Int32,{T})
+  parent: System.Collections.ObjectModel.Collection`1
+  isExternal: true
+  name: InsertItem(Int32, T)
+  fullName: System.Collections.ObjectModel.Collection<T>.InsertItem(System.Int32, T)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).InsertItem(System.Int32, T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.InsertItem(System.Int32,`0)
+    name: InsertItem
+    fullName: System.Collections.ObjectModel.Collection<T>.InsertItem
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.InsertItem(System.Int32,`0)
+    name: InsertItem
+    fullName: System.Collections.ObjectModel.Collection(Of T).InsertItem
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{{TItem}}.RemoveItem(System.Int32)
+  parent: System.Collections.ObjectModel.Collection{{TItem}}
+  definition: System.Collections.ObjectModel.Collection`1.RemoveItem(System.Int32)
+  name: RemoveItem(Int32)
+  fullName: System.Collections.ObjectModel.Collection<TItem>.RemoveItem(System.Int32)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of TItem).RemoveItem(System.Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.RemoveItem(System.Int32)
+    name: RemoveItem
+    fullName: System.Collections.ObjectModel.Collection<TItem>.RemoveItem
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.RemoveItem(System.Int32)
+    name: RemoveItem
+    fullName: System.Collections.ObjectModel.Collection(Of TItem).RemoveItem
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.RemoveItem(System.Int32)
+  parent: System.Collections.ObjectModel.Collection`1
+  isExternal: true
+  name: RemoveItem(Int32)
+  fullName: System.Collections.ObjectModel.Collection<T>.RemoveItem(System.Int32)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).RemoveItem(System.Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.RemoveItem(System.Int32)
+    name: RemoveItem
+    fullName: System.Collections.ObjectModel.Collection<T>.RemoveItem
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.RemoveItem(System.Int32)
+    name: RemoveItem
+    fullName: System.Collections.ObjectModel.Collection(Of T).RemoveItem
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{{TItem}}.SetItem(System.Int32,{TItem})
+  parent: System.Collections.ObjectModel.Collection{{TItem}}
+  definition: System.Collections.ObjectModel.Collection`1.SetItem(System.Int32,{T})
+  name: SetItem(Int32, TItem)
+  fullName: System.Collections.ObjectModel.Collection<TItem>.SetItem(System.Int32, TItem)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of TItem).SetItem(System.Int32, TItem)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.SetItem(System.Int32,`0)
+    name: SetItem
+    fullName: System.Collections.ObjectModel.Collection<TItem>.SetItem
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - name: TItem
+    fullName: TItem
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.SetItem(System.Int32,`0)
+    name: SetItem
+    fullName: System.Collections.ObjectModel.Collection(Of TItem).SetItem
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - name: TItem
+    fullName: TItem
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.SetItem(System.Int32,{T})
+  parent: System.Collections.ObjectModel.Collection`1
+  isExternal: true
+  name: SetItem(Int32, T)
+  fullName: System.Collections.ObjectModel.Collection<T>.SetItem(System.Int32, T)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).SetItem(System.Int32, T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.SetItem(System.Int32,`0)
+    name: SetItem
+    fullName: System.Collections.ObjectModel.Collection<T>.SetItem
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.SetItem(System.Int32,`0)
+    name: SetItem
+    fullName: System.Collections.ObjectModel.Collection(Of T).SetItem
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )

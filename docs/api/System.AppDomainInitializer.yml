@@ -1,0 +1,52 @@
+items:
+- uid: System.AppDomainInitializer
+  id: AppDomainInitializer
+  parent: System
+  children: []
+  href: System.AppDomainInitializer.yml
+  name: AppDomainInitializer
+  fullName: System.AppDomainInitializer
+  type: Delegate
+  source:
+    remote:
+      path: src/mscorlib/src/System/AppDomain.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/AppDomain.cs
+    startLine: 118
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Represents the callback method to invoke when the application domain is initialized.
+  syntax:
+    content: public delegate void AppDomainInitializer(string[] args);
+    content.vb: Public Delegate Sub AppDomainInitializer(args As String())
+    parameters:
+    - id: args
+      type: System.String[]
+      description: An array of strings to pass as arguments to the callback method.
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  name.vb: String()
+  fullName: System.String[]
+  fullName.vb: System.String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    fullName: ()

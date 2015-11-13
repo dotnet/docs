@@ -1,0 +1,997 @@
+items:
+- uid: System.Version
+  id: Version
+  parent: System
+  children:
+  - System.Version.#ctor
+  - System.Version.#ctor(System.Int32,System.Int32)
+  - System.Version.#ctor(System.Int32,System.Int32,System.Int32)
+  - System.Version.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+  - System.Version.#ctor(System.String)
+  - System.Version.Build
+  - System.Version.Clone
+  - System.Version.CompareTo(System.Object)
+  - System.Version.CompareTo(System.Version)
+  - System.Version.Equals(System.Object)
+  - System.Version.Equals(System.Version)
+  - System.Version.GetHashCode
+  - System.Version.Major
+  - System.Version.MajorRevision
+  - System.Version.Minor
+  - System.Version.MinorRevision
+  - System.Version.op_Equality(System.Version,System.Version)
+  - System.Version.op_GreaterThan(System.Version,System.Version)
+  - System.Version.op_GreaterThanOrEqual(System.Version,System.Version)
+  - System.Version.op_Inequality(System.Version,System.Version)
+  - System.Version.op_LessThan(System.Version,System.Version)
+  - System.Version.op_LessThanOrEqual(System.Version,System.Version)
+  - System.Version.Parse(System.String)
+  - System.Version.Revision
+  - System.Version.ToString
+  - System.Version.ToString(System.Int32)
+  - System.Version.TryParse(System.String,System.Version@)
+  href: System.Version.yml
+  name: Version
+  fullName: System.Version
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Version.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Version.cs
+    startLine: 24
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Represents the version number of an assembly, operating system, or the common language runtime. This class cannot be inherited.
+  syntax:
+    content: 'public sealed class Version : ICloneable, IComparable, IComparable<Version>, IEquatable<Version>'
+    content.vb: Public NotInheritable Class Version Implements ICloneable, IComparable, IComparable(Of Version), IEquatable(Of Version)
+  inheritance:
+  - System.Object
+  implements:
+  - System.ICloneable
+  - System.IComparable
+  - System.IComparable{System.Version}
+  - System.IEquatable{System.Version}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Version.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32,System.Int32,System.Int32)'
+  parent: System.Version
+  href: System.Version.yml
+  name: Version(Int32, Int32, Int32, Int32)
+  fullName: System.Version.Version(System.Int32, System.Int32, System.Int32, System.Int32)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Version.cs
+    startLine: 36
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of the @'System.Version' class with the specified major, minor, build, and revision numbers.
+  syntax:
+    content: public Version(int major, int minor, int build, int revision)
+    content.vb: Public Sub New(major As Integer, minor As Integer, build As Integer, revision As Integer)
+    parameters:
+    - id: major
+      type: System.Int32
+      description: The major version number.
+    - id: minor
+      type: System.Int32
+      description: The minor version number.
+    - id: build
+      type: System.Int32
+      description: The build number.
+    - id: revision
+      type: System.Int32
+      description: The revision number.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*major*, *minor*, *build*, or *revision* is less than zero.'
+- uid: System.Version.#ctor(System.Int32,System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32,System.Int32)'
+  parent: System.Version
+  href: System.Version.yml
+  name: Version(Int32, Int32, Int32)
+  fullName: System.Version.Version(System.Int32, System.Int32, System.Int32)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Version.cs
+    startLine: 56
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of the @'System.Version' class using the specified major, minor, and build values.
+  syntax:
+    content: public Version(int major, int minor, int build)
+    content.vb: Public Sub New(major As Integer, minor As Integer, build As Integer)
+    parameters:
+    - id: major
+      type: System.Int32
+      description: The major version number.
+    - id: minor
+      type: System.Int32
+      description: The minor version number.
+    - id: build
+      type: System.Int32
+      description: The build number.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*major*, *minor*, or *build* is less than zero.'
+- uid: System.Version.#ctor(System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32)'
+  parent: System.Version
+  href: System.Version.yml
+  name: Version(Int32, Int32)
+  fullName: System.Version.Version(System.Int32, System.Int32)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Version.cs
+    startLine: 73
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of the @'System.Version' class using the specified major and minor values.
+  syntax:
+    content: public Version(int major, int minor)
+    content.vb: Public Sub New(major As Integer, minor As Integer)
+    parameters:
+    - id: major
+      type: System.Int32
+      description: The major version number.
+    - id: minor
+      type: System.Int32
+      description: The minor version number.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*major* or *minor* is less than zero.'
+- uid: System.Version.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: System.Version
+  href: System.Version.yml
+  name: Version(String)
+  fullName: System.Version.Version(System.String)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Version.cs
+    startLine: 85
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of the @'System.Version' class using the specified string.
+  syntax:
+    content: public Version(string version)
+    content.vb: Public Sub New(version As String)
+    parameters:
+    - id: version
+      type: System.String
+      description: A string containing the major, minor, build, and revision numbers, where each number is delimited with a period character ('.').
+  exceptions:
+  - type: System.ArgumentException
+    description: '*version* has fewer than two components or more than four components.'
+  - type: System.ArgumentNullException
+    description: '*version* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: A major, minor, build, or revision component is less than zero.
+  - type: System.FormatException
+    description: At least one component of *version* does not parse to an integer.
+  - type: System.OverflowException
+    description: At least one component of *version* represents a number greater than @'System.Int32.MaxValue'.
+- uid: System.Version.#ctor
+  id: '#ctor'
+  parent: System.Version
+  href: System.Version.yml
+  name: Version()
+  fullName: System.Version.Version()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Version.cs
+    startLine: 95
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of the @'System.Version' class.
+  syntax:
+    content: public Version()
+    content.vb: Public Sub New
+- uid: System.Version.Major
+  id: Major
+  parent: System.Version
+  href: System.Version.yml
+  name: Major
+  fullName: System.Version.Major
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Version.cs
+    startLine: 104
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the value of the major component of the version number for the current @'System.Version' object.
+  syntax:
+    content: public int Major { get; }
+    content.vb: Public ReadOnly Property Major As Integer
+    parameters: []
+    return:
+      type: System.Int32
+- uid: System.Version.Minor
+  id: Minor
+  parent: System.Version
+  href: System.Version.yml
+  name: Minor
+  fullName: System.Version.Minor
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Version.cs
+    startLine: 108
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the value of the minor component of the version number for the current @'System.Version' object.
+  syntax:
+    content: public int Minor { get; }
+    content.vb: Public ReadOnly Property Minor As Integer
+    parameters: []
+    return:
+      type: System.Int32
+- uid: System.Version.Build
+  id: Build
+  parent: System.Version
+  href: System.Version.yml
+  name: Build
+  fullName: System.Version.Build
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Version.cs
+    startLine: 112
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the value of the build component of the version number for the current @'System.Version' object.
+  syntax:
+    content: public int Build { get; }
+    content.vb: Public ReadOnly Property Build As Integer
+    parameters: []
+    return:
+      type: System.Int32
+- uid: System.Version.Revision
+  id: Revision
+  parent: System.Version
+  href: System.Version.yml
+  name: Revision
+  fullName: System.Version.Revision
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Version.cs
+    startLine: 116
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the value of the revision component of the version number for the current @'System.Version' object.
+  syntax:
+    content: public int Revision { get; }
+    content.vb: Public ReadOnly Property Revision As Integer
+    parameters: []
+    return:
+      type: System.Int32
+- uid: System.Version.MajorRevision
+  id: MajorRevision
+  parent: System.Version
+  href: System.Version.yml
+  name: MajorRevision
+  fullName: System.Version.MajorRevision
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Version.cs
+    startLine: 120
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the high 16 bits of the revision number.
+  syntax:
+    content: public short MajorRevision { get; }
+    content.vb: Public ReadOnly Property MajorRevision As Short
+    parameters: []
+    return:
+      type: System.Int16
+- uid: System.Version.MinorRevision
+  id: MinorRevision
+  parent: System.Version
+  href: System.Version.yml
+  name: MinorRevision
+  fullName: System.Version.MinorRevision
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Version.cs
+    startLine: 124
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the low 16 bits of the revision number.
+  syntax:
+    content: public short MinorRevision { get; }
+    content.vb: Public ReadOnly Property MinorRevision As Short
+    parameters: []
+    return:
+      type: System.Int16
+- uid: System.Version.Clone
+  id: Clone
+  parent: System.Version
+  href: System.Version.yml
+  name: Clone()
+  fullName: System.Version.Clone()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Version.cs
+    startLine: 128
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns a new @'System.Version' object whose value is the same as the current @'System.Version' object.
+  syntax:
+    content: public object Clone()
+    content.vb: Public Function Clone As Object
+    return:
+      type: System.Object
+- uid: System.Version.CompareTo(System.Object)
+  id: CompareTo(System.Object)
+  parent: System.Version
+  href: System.Version.yml
+  name: CompareTo(Object)
+  fullName: System.Version.CompareTo(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Version.cs
+    startLine: 137
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Compares the current @'System.Version' object to a specified object and returns an indication of their relative values.
+  syntax:
+    content: public int CompareTo(object version)
+    content.vb: Public Function CompareTo(version As Object) As Integer
+    parameters:
+    - id: version
+      type: System.Object
+      description: An object to compare, or null.
+    return:
+      type: System.Int32
+  exceptions:
+  - type: System.ArgumentException
+    description: '*version* is not of type @''System.Version''.'
+- uid: System.Version.CompareTo(System.Version)
+  id: CompareTo(System.Version)
+  parent: System.Version
+  href: System.Version.yml
+  name: CompareTo(Version)
+  fullName: System.Version.CompareTo(System.Version)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Version.cs
+    startLine: 193
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Compares the current @'System.Version' object to a specified @'System.Version' object and returns an indication of their relative values.
+  syntax:
+    content: public int CompareTo(Version value)
+    content.vb: Public Function CompareTo(value As Version) As Integer
+    parameters:
+    - id: value
+      type: System.Version
+      description: A @'System.Version' object to compare to the current @'System.Version' object, or null.
+    return:
+      type: System.Int32
+- uid: System.Version.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Version
+  href: System.Version.yml
+  name: Equals(Object)
+  fullName: System.Version.Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Version.cs
+    startLine: 225
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns a value indicating whether the current @'System.Version' object is equal to a specified object.
+  syntax:
+    content: public override bool Equals(object obj)
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: An object to compare with the current @'System.Version' object, or null.
+    return:
+      type: System.Boolean
+  overridden: System.Object.Equals(System.Object)
+- uid: System.Version.Equals(System.Version)
+  id: Equals(System.Version)
+  parent: System.Version
+  href: System.Version.yml
+  name: Equals(Version)
+  fullName: System.Version.Equals(System.Version)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Version.cs
+    startLine: 240
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns a value indicating whether the current @'System.Version' object and a specified @'System.Version' object represent the same value.
+  syntax:
+    content: public bool Equals(Version obj)
+    content.vb: Public Function Equals(obj As Version) As Boolean
+    parameters:
+    - id: obj
+      type: System.Version
+      description: A @'System.Version' object to compare to the current @'System.Version' object, or null.
+    return:
+      type: System.Boolean
+- uid: System.Version.GetHashCode
+  id: GetHashCode
+  parent: System.Version
+  href: System.Version.yml
+  name: GetHashCode()
+  fullName: System.Version.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Version.cs
+    startLine: 255
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns a hash code for the current @'System.Version' object.
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+  overridden: System.Object.GetHashCode
+- uid: System.Version.ToString
+  id: ToString
+  parent: System.Version
+  href: System.Version.yml
+  name: ToString()
+  fullName: System.Version.ToString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Version.cs
+    startLine: 270
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the value of the current @'System.Version' object to its equivalent @'System.String' representation.
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+  overridden: System.Object.ToString
+- uid: System.Version.ToString(System.Int32)
+  id: ToString(System.Int32)
+  parent: System.Version
+  href: System.Version.yml
+  name: ToString(Int32)
+  fullName: System.Version.ToString(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Version.cs
+    startLine: 276
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the value of the current @'System.Version' object to its equivalent @'System.String' representation. A specified count indicates the number of components to return.
+  syntax:
+    content: public string ToString(int fieldCount)
+    content.vb: Public Function ToString(fieldCount As Integer) As String
+    parameters:
+    - id: fieldCount
+      type: System.Int32
+      description: The number of components to return. The *fieldCount* ranges from 0 to 4.
+    return:
+      type: System.String
+  exceptions:
+  - type: System.ArgumentException
+    description: '*fieldCount* is less than 0, or more than 4.-or- *fieldCount* is more than the number of components defined in the current @''System.Version'' object.'
+- uid: System.Version.Parse(System.String)
+  id: Parse(System.String)
+  parent: System.Version
+  href: System.Version.yml
+  name: Parse(String)
+  fullName: System.Version.Parse(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Version.cs
+    startLine: 346
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the string representation of a version number to an equivalent @'System.Version' object.
+  syntax:
+    content: public static Version Parse(string input)
+    content.vb: Public Shared Function Parse(input As String) As Version
+    parameters:
+    - id: input
+      type: System.String
+      description: A string that contains a version number to convert.
+    return:
+      type: System.Version
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*input* is null.'
+  - type: System.ArgumentException
+    description: '*input* has fewer than two or more than four version components.'
+  - type: System.ArgumentOutOfRangeException
+    description: At least one component in *input* is less than zero.
+  - type: System.FormatException
+    description: At least one component in *input* is not an integer.
+  - type: System.OverflowException
+    description: At least one component in *input* represents a number that is greater than @'System.Int32.MaxValue'.
+- uid: System.Version.TryParse(System.String,System.Version@)
+  id: TryParse(System.String,System.Version@)
+  parent: System.Version
+  href: System.Version.yml
+  name: TryParse(String, out Version)
+  name.vb: TryParse(String, ByRef Version)
+  fullName: System.Version.TryParse(System.String, out System.Version)
+  fullName.vb: System.Version.TryParse(System.String, ByRef System.Version)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Version.cs
+    startLine: 360
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Tries to convert the string representation of a version number to an equivalent @'System.Version' object, and returns a value that indicates whether the conversion succeeded.
+  syntax:
+    content: public static bool TryParse(string input, out Version result)
+    content.vb: Public Shared Function TryParse(input As String, ByRef result As Version) As Boolean
+    parameters:
+    - id: input
+      type: System.String
+      description: A string that contains a version number to convert.
+    - id: result
+      type: System.Version
+      description: When this method returns, contains the @'System.Version' equivalent of the number that is contained in *input*, if the conversion succeeded, or a @'System.Version' object whose major and minor version numbers are 0 if the conversion failed. If *input* is null or @'System.String.Empty', *result* is null when the method returns.
+    return:
+      type: System.Boolean
+- uid: System.Version.op_Equality(System.Version,System.Version)
+  id: op_Equality(System.Version,System.Version)
+  parent: System.Version
+  href: System.Version.yml
+  name: Equality(Version, Version)
+  fullName: System.Version.Equality(System.Version, System.Version)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Version.cs
+    startLine: 430
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Determines whether two specified @'System.Version' objects are equal.
+  syntax:
+    content: public static bool operator ==(Version v1, Version v2)
+    content.vb: Public Shared Operator =(v1 As Version, v2 As Version) As Boolean
+    parameters:
+    - id: v1
+      type: System.Version
+      description: The first @'System.Version' object.
+    - id: v2
+      type: System.Version
+      description: The second @'System.Version' object.
+    return:
+      type: System.Boolean
+- uid: System.Version.op_Inequality(System.Version,System.Version)
+  id: op_Inequality(System.Version,System.Version)
+  parent: System.Version
+  href: System.Version.yml
+  name: Inequality(Version, Version)
+  fullName: System.Version.Inequality(System.Version, System.Version)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Version.cs
+    startLine: 438
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Determines whether two specified @'System.Version' objects are not equal.
+  syntax:
+    content: public static bool operator !=(Version v1, Version v2)
+    content.vb: Public Shared Operator <>(v1 As Version, v2 As Version) As Boolean
+    parameters:
+    - id: v1
+      type: System.Version
+      description: The first @'System.Version' object.
+    - id: v2
+      type: System.Version
+      description: The second @'System.Version' object.
+    return:
+      type: System.Boolean
+- uid: System.Version.op_LessThan(System.Version,System.Version)
+  id: op_LessThan(System.Version,System.Version)
+  parent: System.Version
+  href: System.Version.yml
+  name: LessThan(Version, Version)
+  fullName: System.Version.LessThan(System.Version, System.Version)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Version.cs
+    startLine: 442
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Determines whether the first specified @'System.Version' object is less than the second specified @'System.Version' object.
+  syntax:
+    content: public static bool operator <(Version v1, Version v2)
+    content.vb: Public Shared Operator <(v1 As Version, v2 As Version) As Boolean
+    parameters:
+    - id: v1
+      type: System.Version
+      description: The first @'System.Version' object.
+    - id: v2
+      type: System.Version
+      description: The second @'System.Version' object.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*v1* is null.'
+- uid: System.Version.op_LessThanOrEqual(System.Version,System.Version)
+  id: op_LessThanOrEqual(System.Version,System.Version)
+  parent: System.Version
+  href: System.Version.yml
+  name: LessThanOrEqual(Version, Version)
+  fullName: System.Version.LessThanOrEqual(System.Version, System.Version)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Version.cs
+    startLine: 449
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Determines whether the first specified @'System.Version' object is less than or equal to the second @'System.Version' object.
+  syntax:
+    content: public static bool operator <=(Version v1, Version v2)
+    content.vb: Public Shared Operator <=(v1 As Version, v2 As Version) As Boolean
+    parameters:
+    - id: v1
+      type: System.Version
+      description: The first @'System.Version' object.
+    - id: v2
+      type: System.Version
+      description: The second @'System.Version' object.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*v1* is null.'
+- uid: System.Version.op_GreaterThan(System.Version,System.Version)
+  id: op_GreaterThan(System.Version,System.Version)
+  parent: System.Version
+  href: System.Version.yml
+  name: GreaterThan(Version, Version)
+  fullName: System.Version.GreaterThan(System.Version, System.Version)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Version.cs
+    startLine: 456
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Determines whether the first specified @'System.Version' object is greater than the second specified @'System.Version' object.
+  syntax:
+    content: public static bool operator>(Version v1, Version v2)
+    content.vb: Public Shared Operator>(v1 As Version, v2 As Version) As Boolean
+    parameters:
+    - id: v1
+      type: System.Version
+      description: The first @'System.Version' object.
+    - id: v2
+      type: System.Version
+      description: The second @'System.Version' object.
+    return:
+      type: System.Boolean
+- uid: System.Version.op_GreaterThanOrEqual(System.Version,System.Version)
+  id: op_GreaterThanOrEqual(System.Version,System.Version)
+  parent: System.Version
+  href: System.Version.yml
+  name: GreaterThanOrEqual(Version, Version)
+  fullName: System.Version.GreaterThanOrEqual(System.Version, System.Version)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Version.cs
+    startLine: 460
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Determines whether the first specified @'System.Version' object is greater than or equal to the second specified @'System.Version' object.
+  syntax:
+    content: public static bool operator >=(Version v1, Version v2)
+    content.vb: Public Shared Operator >=(v1 As Version, v2 As Version) As Boolean
+    parameters:
+    - id: v1
+      type: System.Version
+      description: The first @'System.Version' object.
+    - id: v2
+      type: System.Version
+      description: The second @'System.Version' object.
+    return:
+      type: System.Boolean
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Int16
+  parent: System
+  isExternal: true
+  name: Int16
+  fullName: System.Int16
+- uid: System.Version
+  parent: System
+  isExternal: true
+  name: Version
+  fullName: System.Version
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )

@@ -1,0 +1,2293 @@
+items:
+- uid: System.Globalization.TaiwanLunisolarCalendar
+  id: TaiwanLunisolarCalendar
+  parent: System.Globalization
+  children:
+  - System.Globalization.TaiwanLunisolarCalendar.#ctor
+  - System.Globalization.TaiwanLunisolarCalendar.DaysInYearBeforeMinSupportedYear
+  - System.Globalization.TaiwanLunisolarCalendar.Eras
+  - System.Globalization.TaiwanLunisolarCalendar.GetEra(System.DateTime)
+  - System.Globalization.TaiwanLunisolarCalendar.MaxSupportedDateTime
+  - System.Globalization.TaiwanLunisolarCalendar.MinSupportedDateTime
+  href: System.Globalization.TaiwanLunisolarCalendar.yml
+  name: TaiwanLunisolarCalendar
+  fullName: System.Globalization.TaiwanLunisolarCalendar
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Globalization/TaiwanLunisolarCalendar.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Globalization/TaiwanLunisolarCalendar.cs
+    startLine: 20
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Represents the Taiwan lunisolar calendar. As for the Taiwan calendar, years are calculated using the Gregorian calendar, while days and months are calculated using the lunisolar calendar.
+  syntax:
+    content: 'public class TaiwanLunisolarCalendar : EastAsianLunisolarCalendar, ICloneable'
+    content.vb: Public Class TaiwanLunisolarCalendar Inherits EastAsianLunisolarCalendar Implements ICloneable
+  inheritance:
+  - System.Object
+  - System.Globalization.Calendar
+  - System.Globalization.EastAsianLunisolarCalendar
+  implements:
+  - System.ICloneable
+  inheritedMembers:
+  - System.Globalization.EastAsianLunisolarCalendar.AlgorithmType
+  - System.Globalization.EastAsianLunisolarCalendar.GetSexagenaryYear(System.DateTime)
+  - System.Globalization.EastAsianLunisolarCalendar.GetCelestialStem(System.Int32)
+  - System.Globalization.EastAsianLunisolarCalendar.GetTerrestrialBranch(System.Int32)
+  - System.Globalization.EastAsianLunisolarCalendar.GetDaysInMonth(System.Int32,System.Int32,System.Int32)
+  - System.Globalization.EastAsianLunisolarCalendar.ToDateTime(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
+  - System.Globalization.EastAsianLunisolarCalendar.AddMonths(System.DateTime,System.Int32)
+  - System.Globalization.EastAsianLunisolarCalendar.AddYears(System.DateTime,System.Int32)
+  - System.Globalization.EastAsianLunisolarCalendar.GetDayOfYear(System.DateTime)
+  - System.Globalization.EastAsianLunisolarCalendar.GetDayOfMonth(System.DateTime)
+  - System.Globalization.EastAsianLunisolarCalendar.GetDaysInYear(System.Int32,System.Int32)
+  - System.Globalization.EastAsianLunisolarCalendar.GetMonth(System.DateTime)
+  - System.Globalization.EastAsianLunisolarCalendar.GetYear(System.DateTime)
+  - System.Globalization.EastAsianLunisolarCalendar.GetDayOfWeek(System.DateTime)
+  - System.Globalization.EastAsianLunisolarCalendar.GetMonthsInYear(System.Int32,System.Int32)
+  - System.Globalization.EastAsianLunisolarCalendar.IsLeapDay(System.Int32,System.Int32,System.Int32,System.Int32)
+  - System.Globalization.EastAsianLunisolarCalendar.IsLeapMonth(System.Int32,System.Int32,System.Int32)
+  - System.Globalization.EastAsianLunisolarCalendar.GetLeapMonth(System.Int32,System.Int32)
+  - System.Globalization.EastAsianLunisolarCalendar.IsLeapYear(System.Int32,System.Int32)
+  - System.Globalization.EastAsianLunisolarCalendar.TwoDigitYearMax
+  - System.Globalization.EastAsianLunisolarCalendar.ToFourDigitYear(System.Int32)
+  - System.Globalization.Calendar.IsReadOnly
+  - System.Globalization.Calendar.Clone
+  - System.Globalization.Calendar.ReadOnly(System.Globalization.Calendar)
+  - System.Globalization.Calendar.CurrentEra
+  - System.Globalization.Calendar.AddMilliseconds(System.DateTime,System.Double)
+  - System.Globalization.Calendar.AddDays(System.DateTime,System.Int32)
+  - System.Globalization.Calendar.AddHours(System.DateTime,System.Int32)
+  - System.Globalization.Calendar.AddMinutes(System.DateTime,System.Int32)
+  - System.Globalization.Calendar.AddSeconds(System.DateTime,System.Int32)
+  - System.Globalization.Calendar.AddWeeks(System.DateTime,System.Int32)
+  - System.Globalization.Calendar.GetDaysInMonth(System.Int32,System.Int32)
+  - System.Globalization.Calendar.GetDaysInYear(System.Int32)
+  - System.Globalization.Calendar.GetHour(System.DateTime)
+  - System.Globalization.Calendar.GetMilliseconds(System.DateTime)
+  - System.Globalization.Calendar.GetMinute(System.DateTime)
+  - System.Globalization.Calendar.GetMonthsInYear(System.Int32)
+  - System.Globalization.Calendar.GetSecond(System.DateTime)
+  - System.Globalization.Calendar.GetWeekOfYear(System.DateTime,System.Globalization.CalendarWeekRule,System.DayOfWeek)
+  - System.Globalization.Calendar.IsLeapDay(System.Int32,System.Int32,System.Int32)
+  - System.Globalization.Calendar.IsLeapMonth(System.Int32,System.Int32)
+  - System.Globalization.Calendar.GetLeapMonth(System.Int32)
+  - System.Globalization.Calendar.IsLeapYear(System.Int32)
+  - System.Globalization.Calendar.ToDateTime(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Globalization.TaiwanLunisolarCalendar.MinSupportedDateTime
+  id: MinSupportedDateTime
+  parent: System.Globalization.TaiwanLunisolarCalendar
+  href: System.Globalization.TaiwanLunisolarCalendar.yml
+  name: MinSupportedDateTime
+  fullName: System.Globalization.TaiwanLunisolarCalendar.MinSupportedDateTime
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/TaiwanLunisolarCalendar.cs
+    startLine: 51
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Gets the minimum date and time supported by the @'System.Globalization.TaiwanLunisolarCalendar' class.
+  syntax:
+    content: public override DateTime MinSupportedDateTime { get; }
+    content.vb: Public Overrides ReadOnly Property MinSupportedDateTime As Date
+    parameters: []
+    return:
+      type: System.DateTime
+  overridden: System.Globalization.Calendar.MinSupportedDateTime
+- uid: System.Globalization.TaiwanLunisolarCalendar.MaxSupportedDateTime
+  id: MaxSupportedDateTime
+  parent: System.Globalization.TaiwanLunisolarCalendar
+  href: System.Globalization.TaiwanLunisolarCalendar.yml
+  name: MaxSupportedDateTime
+  fullName: System.Globalization.TaiwanLunisolarCalendar.MaxSupportedDateTime
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/TaiwanLunisolarCalendar.cs
+    startLine: 60
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Gets the maximum date and time supported by the @'System.Globalization.TaiwanLunisolarCalendar' class.
+  syntax:
+    content: public override DateTime MaxSupportedDateTime { get; }
+    content.vb: Public Overrides ReadOnly Property MaxSupportedDateTime As Date
+    parameters: []
+    return:
+      type: System.DateTime
+  overridden: System.Globalization.Calendar.MaxSupportedDateTime
+- uid: System.Globalization.TaiwanLunisolarCalendar.DaysInYearBeforeMinSupportedYear
+  id: DaysInYearBeforeMinSupportedYear
+  parent: System.Globalization.TaiwanLunisolarCalendar
+  href: System.Globalization.TaiwanLunisolarCalendar.yml
+  name: DaysInYearBeforeMinSupportedYear
+  fullName: System.Globalization.TaiwanLunisolarCalendar.DaysInYearBeforeMinSupportedYear
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/TaiwanLunisolarCalendar.cs
+    startLine: 67
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Gets the number of days in the year that precedes the year specified by the @'System.Globalization.TaiwanLunisolarCalendar.MinSupportedDateTime' property.
+  syntax:
+    content: protected override int DaysInYearBeforeMinSupportedYear { get; }
+    content.vb: Protected Overrides ReadOnly Property DaysInYearBeforeMinSupportedYear As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  overridden: System.Globalization.Calendar.DaysInYearBeforeMinSupportedYear
+- uid: System.Globalization.TaiwanLunisolarCalendar.#ctor
+  id: '#ctor'
+  parent: System.Globalization.TaiwanLunisolarCalendar
+  href: System.Globalization.TaiwanLunisolarCalendar.yml
+  name: TaiwanLunisolarCalendar()
+  fullName: System.Globalization.TaiwanLunisolarCalendar.TaiwanLunisolarCalendar()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/TaiwanLunisolarCalendar.cs
+    startLine: 298
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Initializes a new instance of the @'System.Globalization.TaiwanLunisolarCalendar' class.
+  syntax:
+    content: public TaiwanLunisolarCalendar()
+    content.vb: Public Sub New
+- uid: System.Globalization.TaiwanLunisolarCalendar.GetEra(System.DateTime)
+  id: GetEra(System.DateTime)
+  parent: System.Globalization.TaiwanLunisolarCalendar
+  href: System.Globalization.TaiwanLunisolarCalendar.yml
+  name: GetEra(DateTime)
+  fullName: System.Globalization.TaiwanLunisolarCalendar.GetEra(System.DateTime)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/TaiwanLunisolarCalendar.cs
+    startLine: 304
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Retrieves the era that corresponds to the specified @'System.DateTime'.
+  syntax:
+    content: public override int GetEra(DateTime time)
+    content.vb: Public Overrides Function GetEra(time As Date) As Integer
+    parameters:
+    - id: time
+      type: System.DateTime
+      description: The @'System.DateTime' to read.
+    return:
+      type: System.Int32
+  overridden: System.Globalization.Calendar.GetEra(System.DateTime)
+- uid: System.Globalization.TaiwanLunisolarCalendar.Eras
+  id: Eras
+  parent: System.Globalization.TaiwanLunisolarCalendar
+  href: System.Globalization.TaiwanLunisolarCalendar.yml
+  name: Eras
+  fullName: System.Globalization.TaiwanLunisolarCalendar.Eras
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/TaiwanLunisolarCalendar.cs
+    startLine: 322
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Gets the eras that are relevant to the current @'System.Globalization.TaiwanLunisolarCalendar' object.
+  syntax:
+    content: public override int[] Eras { get; }
+    content.vb: Public Overrides ReadOnly Property Eras As Integer()
+    parameters: []
+    return:
+      type: System.Int32[]
+  overridden: System.Globalization.Calendar.Eras
+references:
+- uid: System.Globalization
+  isExternal: false
+  name: System.Globalization
+  fullName: System.Globalization
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Globalization.Calendar
+  parent: System.Globalization
+  isExternal: false
+  href: System.Globalization.Calendar.yml
+  name: Calendar
+  fullName: System.Globalization.Calendar
+  type: Class
+- uid: System.Globalization.EastAsianLunisolarCalendar
+  parent: System.Globalization
+  isExternal: false
+  href: System.Globalization.EastAsianLunisolarCalendar.yml
+  name: EastAsianLunisolarCalendar
+  fullName: System.Globalization.EastAsianLunisolarCalendar
+  type: Class
+- uid: System.Globalization.EastAsianLunisolarCalendar.AlgorithmType
+  parent: System.Globalization.EastAsianLunisolarCalendar
+  isExternal: false
+  href: System.Globalization.EastAsianLunisolarCalendar.yml
+  name: AlgorithmType
+  fullName: System.Globalization.EastAsianLunisolarCalendar.AlgorithmType
+- uid: System.Globalization.EastAsianLunisolarCalendar.GetSexagenaryYear(System.DateTime)
+  parent: System.Globalization.EastAsianLunisolarCalendar
+  isExternal: false
+  href: System.Globalization.EastAsianLunisolarCalendar.yml
+  name: GetSexagenaryYear(DateTime)
+  fullName: System.Globalization.EastAsianLunisolarCalendar.GetSexagenaryYear(System.DateTime)
+  spec.csharp:
+  - uid: System.Globalization.EastAsianLunisolarCalendar.GetSexagenaryYear(System.DateTime)
+    name: GetSexagenaryYear
+    fullName: System.Globalization.EastAsianLunisolarCalendar.GetSexagenaryYear
+    href: System.Globalization.EastAsianLunisolarCalendar.yml
+  - name: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    href: System.DateTime.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Globalization.EastAsianLunisolarCalendar.GetSexagenaryYear(System.DateTime)
+    name: GetSexagenaryYear
+    fullName: System.Globalization.EastAsianLunisolarCalendar.GetSexagenaryYear
+    href: System.Globalization.EastAsianLunisolarCalendar.yml
+  - name: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    href: System.DateTime.yml
+  - name: )
+    fullName: )
+- uid: System.Globalization.EastAsianLunisolarCalendar.GetCelestialStem(System.Int32)
+  parent: System.Globalization.EastAsianLunisolarCalendar
+  isExternal: false
+  href: System.Globalization.EastAsianLunisolarCalendar.yml
+  name: GetCelestialStem(Int32)
+  fullName: System.Globalization.EastAsianLunisolarCalendar.GetCelestialStem(System.Int32)
+  spec.csharp:
+  - uid: System.Globalization.EastAsianLunisolarCalendar.GetCelestialStem(System.Int32)
+    name: GetCelestialStem
+    fullName: System.Globalization.EastAsianLunisolarCalendar.GetCelestialStem
+    href: System.Globalization.EastAsianLunisolarCalendar.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Globalization.EastAsianLunisolarCalendar.GetCelestialStem(System.Int32)
+    name: GetCelestialStem
+    fullName: System.Globalization.EastAsianLunisolarCalendar.GetCelestialStem
+    href: System.Globalization.EastAsianLunisolarCalendar.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Globalization.EastAsianLunisolarCalendar.GetTerrestrialBranch(System.Int32)
+  parent: System.Globalization.EastAsianLunisolarCalendar
+  isExternal: false
+  href: System.Globalization.EastAsianLunisolarCalendar.yml
+  name: GetTerrestrialBranch(Int32)
+  fullName: System.Globalization.EastAsianLunisolarCalendar.GetTerrestrialBranch(System.Int32)
+  spec.csharp:
+  - uid: System.Globalization.EastAsianLunisolarCalendar.GetTerrestrialBranch(System.Int32)
+    name: GetTerrestrialBranch
+    fullName: System.Globalization.EastAsianLunisolarCalendar.GetTerrestrialBranch
+    href: System.Globalization.EastAsianLunisolarCalendar.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Globalization.EastAsianLunisolarCalendar.GetTerrestrialBranch(System.Int32)
+    name: GetTerrestrialBranch
+    fullName: System.Globalization.EastAsianLunisolarCalendar.GetTerrestrialBranch
+    href: System.Globalization.EastAsianLunisolarCalendar.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Globalization.EastAsianLunisolarCalendar.GetDaysInMonth(System.Int32,System.Int32,System.Int32)
+  parent: System.Globalization.EastAsianLunisolarCalendar
+  isExternal: false
+  href: System.Globalization.EastAsianLunisolarCalendar.yml
+  name: GetDaysInMonth(Int32, Int32, Int32)
+  fullName: System.Globalization.EastAsianLunisolarCalendar.GetDaysInMonth(System.Int32, System.Int32, System.Int32)
+  spec.csharp:
+  - uid: System.Globalization.EastAsianLunisolarCalendar.GetDaysInMonth(System.Int32,System.Int32,System.Int32)
+    name: GetDaysInMonth
+    fullName: System.Globalization.EastAsianLunisolarCalendar.GetDaysInMonth
+    href: System.Globalization.EastAsianLunisolarCalendar.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Globalization.EastAsianLunisolarCalendar.GetDaysInMonth(System.Int32,System.Int32,System.Int32)
+    name: GetDaysInMonth
+    fullName: System.Globalization.EastAsianLunisolarCalendar.GetDaysInMonth
+    href: System.Globalization.EastAsianLunisolarCalendar.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Globalization.EastAsianLunisolarCalendar.ToDateTime(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: System.Globalization.EastAsianLunisolarCalendar
+  isExternal: false
+  href: System.Globalization.EastAsianLunisolarCalendar.yml
+  name: ToDateTime(Int32, Int32, Int32, Int32, Int32, Int32, Int32, Int32)
+  fullName: System.Globalization.EastAsianLunisolarCalendar.ToDateTime(System.Int32, System.Int32, System.Int32, System.Int32, System.Int32, System.Int32, System.Int32, System.Int32)
+  spec.csharp:
+  - uid: System.Globalization.EastAsianLunisolarCalendar.ToDateTime(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
+    name: ToDateTime
+    fullName: System.Globalization.EastAsianLunisolarCalendar.ToDateTime
+    href: System.Globalization.EastAsianLunisolarCalendar.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Globalization.EastAsianLunisolarCalendar.ToDateTime(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
+    name: ToDateTime
+    fullName: System.Globalization.EastAsianLunisolarCalendar.ToDateTime
+    href: System.Globalization.EastAsianLunisolarCalendar.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Globalization.EastAsianLunisolarCalendar.AddMonths(System.DateTime,System.Int32)
+  parent: System.Globalization.EastAsianLunisolarCalendar
+  isExternal: false
+  href: System.Globalization.EastAsianLunisolarCalendar.yml
+  name: AddMonths(DateTime, Int32)
+  fullName: System.Globalization.EastAsianLunisolarCalendar.AddMonths(System.DateTime, System.Int32)
+  spec.csharp:
+  - uid: System.Globalization.EastAsianLunisolarCalendar.AddMonths(System.DateTime,System.Int32)
+    name: AddMonths
+    fullName: System.Globalization.EastAsianLunisolarCalendar.AddMonths
+    href: System.Globalization.EastAsianLunisolarCalendar.yml
+  - name: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    href: System.DateTime.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Globalization.EastAsianLunisolarCalendar.AddMonths(System.DateTime,System.Int32)
+    name: AddMonths
+    fullName: System.Globalization.EastAsianLunisolarCalendar.AddMonths
+    href: System.Globalization.EastAsianLunisolarCalendar.yml
+  - name: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    href: System.DateTime.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Globalization.EastAsianLunisolarCalendar.AddYears(System.DateTime,System.Int32)
+  parent: System.Globalization.EastAsianLunisolarCalendar
+  isExternal: false
+  href: System.Globalization.EastAsianLunisolarCalendar.yml
+  name: AddYears(DateTime, Int32)
+  fullName: System.Globalization.EastAsianLunisolarCalendar.AddYears(System.DateTime, System.Int32)
+  spec.csharp:
+  - uid: System.Globalization.EastAsianLunisolarCalendar.AddYears(System.DateTime,System.Int32)
+    name: AddYears
+    fullName: System.Globalization.EastAsianLunisolarCalendar.AddYears
+    href: System.Globalization.EastAsianLunisolarCalendar.yml
+  - name: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    href: System.DateTime.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Globalization.EastAsianLunisolarCalendar.AddYears(System.DateTime,System.Int32)
+    name: AddYears
+    fullName: System.Globalization.EastAsianLunisolarCalendar.AddYears
+    href: System.Globalization.EastAsianLunisolarCalendar.yml
+  - name: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    href: System.DateTime.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Globalization.EastAsianLunisolarCalendar.GetDayOfYear(System.DateTime)
+  parent: System.Globalization.EastAsianLunisolarCalendar
+  isExternal: false
+  href: System.Globalization.EastAsianLunisolarCalendar.yml
+  name: GetDayOfYear(DateTime)
+  fullName: System.Globalization.EastAsianLunisolarCalendar.GetDayOfYear(System.DateTime)
+  spec.csharp:
+  - uid: System.Globalization.EastAsianLunisolarCalendar.GetDayOfYear(System.DateTime)
+    name: GetDayOfYear
+    fullName: System.Globalization.EastAsianLunisolarCalendar.GetDayOfYear
+    href: System.Globalization.EastAsianLunisolarCalendar.yml
+  - name: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    href: System.DateTime.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Globalization.EastAsianLunisolarCalendar.GetDayOfYear(System.DateTime)
+    name: GetDayOfYear
+    fullName: System.Globalization.EastAsianLunisolarCalendar.GetDayOfYear
+    href: System.Globalization.EastAsianLunisolarCalendar.yml
+  - name: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    href: System.DateTime.yml
+  - name: )
+    fullName: )
+- uid: System.Globalization.EastAsianLunisolarCalendar.GetDayOfMonth(System.DateTime)
+  parent: System.Globalization.EastAsianLunisolarCalendar
+  isExternal: false
+  href: System.Globalization.EastAsianLunisolarCalendar.yml
+  name: GetDayOfMonth(DateTime)
+  fullName: System.Globalization.EastAsianLunisolarCalendar.GetDayOfMonth(System.DateTime)
+  spec.csharp:
+  - uid: System.Globalization.EastAsianLunisolarCalendar.GetDayOfMonth(System.DateTime)
+    name: GetDayOfMonth
+    fullName: System.Globalization.EastAsianLunisolarCalendar.GetDayOfMonth
+    href: System.Globalization.EastAsianLunisolarCalendar.yml
+  - name: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    href: System.DateTime.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Globalization.EastAsianLunisolarCalendar.GetDayOfMonth(System.DateTime)
+    name: GetDayOfMonth
+    fullName: System.Globalization.EastAsianLunisolarCalendar.GetDayOfMonth
+    href: System.Globalization.EastAsianLunisolarCalendar.yml
+  - name: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    href: System.DateTime.yml
+  - name: )
+    fullName: )
+- uid: System.Globalization.EastAsianLunisolarCalendar.GetDaysInYear(System.Int32,System.Int32)
+  parent: System.Globalization.EastAsianLunisolarCalendar
+  isExternal: false
+  href: System.Globalization.EastAsianLunisolarCalendar.yml
+  name: GetDaysInYear(Int32, Int32)
+  fullName: System.Globalization.EastAsianLunisolarCalendar.GetDaysInYear(System.Int32, System.Int32)
+  spec.csharp:
+  - uid: System.Globalization.EastAsianLunisolarCalendar.GetDaysInYear(System.Int32,System.Int32)
+    name: GetDaysInYear
+    fullName: System.Globalization.EastAsianLunisolarCalendar.GetDaysInYear
+    href: System.Globalization.EastAsianLunisolarCalendar.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Globalization.EastAsianLunisolarCalendar.GetDaysInYear(System.Int32,System.Int32)
+    name: GetDaysInYear
+    fullName: System.Globalization.EastAsianLunisolarCalendar.GetDaysInYear
+    href: System.Globalization.EastAsianLunisolarCalendar.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Globalization.EastAsianLunisolarCalendar.GetMonth(System.DateTime)
+  parent: System.Globalization.EastAsianLunisolarCalendar
+  isExternal: false
+  href: System.Globalization.EastAsianLunisolarCalendar.yml
+  name: GetMonth(DateTime)
+  fullName: System.Globalization.EastAsianLunisolarCalendar.GetMonth(System.DateTime)
+  spec.csharp:
+  - uid: System.Globalization.EastAsianLunisolarCalendar.GetMonth(System.DateTime)
+    name: GetMonth
+    fullName: System.Globalization.EastAsianLunisolarCalendar.GetMonth
+    href: System.Globalization.EastAsianLunisolarCalendar.yml
+  - name: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    href: System.DateTime.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Globalization.EastAsianLunisolarCalendar.GetMonth(System.DateTime)
+    name: GetMonth
+    fullName: System.Globalization.EastAsianLunisolarCalendar.GetMonth
+    href: System.Globalization.EastAsianLunisolarCalendar.yml
+  - name: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    href: System.DateTime.yml
+  - name: )
+    fullName: )
+- uid: System.Globalization.EastAsianLunisolarCalendar.GetYear(System.DateTime)
+  parent: System.Globalization.EastAsianLunisolarCalendar
+  isExternal: false
+  href: System.Globalization.EastAsianLunisolarCalendar.yml
+  name: GetYear(DateTime)
+  fullName: System.Globalization.EastAsianLunisolarCalendar.GetYear(System.DateTime)
+  spec.csharp:
+  - uid: System.Globalization.EastAsianLunisolarCalendar.GetYear(System.DateTime)
+    name: GetYear
+    fullName: System.Globalization.EastAsianLunisolarCalendar.GetYear
+    href: System.Globalization.EastAsianLunisolarCalendar.yml
+  - name: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    href: System.DateTime.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Globalization.EastAsianLunisolarCalendar.GetYear(System.DateTime)
+    name: GetYear
+    fullName: System.Globalization.EastAsianLunisolarCalendar.GetYear
+    href: System.Globalization.EastAsianLunisolarCalendar.yml
+  - name: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    href: System.DateTime.yml
+  - name: )
+    fullName: )
+- uid: System.Globalization.EastAsianLunisolarCalendar.GetDayOfWeek(System.DateTime)
+  parent: System.Globalization.EastAsianLunisolarCalendar
+  isExternal: false
+  href: System.Globalization.EastAsianLunisolarCalendar.yml
+  name: GetDayOfWeek(DateTime)
+  fullName: System.Globalization.EastAsianLunisolarCalendar.GetDayOfWeek(System.DateTime)
+  spec.csharp:
+  - uid: System.Globalization.EastAsianLunisolarCalendar.GetDayOfWeek(System.DateTime)
+    name: GetDayOfWeek
+    fullName: System.Globalization.EastAsianLunisolarCalendar.GetDayOfWeek
+    href: System.Globalization.EastAsianLunisolarCalendar.yml
+  - name: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    href: System.DateTime.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Globalization.EastAsianLunisolarCalendar.GetDayOfWeek(System.DateTime)
+    name: GetDayOfWeek
+    fullName: System.Globalization.EastAsianLunisolarCalendar.GetDayOfWeek
+    href: System.Globalization.EastAsianLunisolarCalendar.yml
+  - name: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    href: System.DateTime.yml
+  - name: )
+    fullName: )
+- uid: System.Globalization.EastAsianLunisolarCalendar.GetMonthsInYear(System.Int32,System.Int32)
+  parent: System.Globalization.EastAsianLunisolarCalendar
+  isExternal: false
+  href: System.Globalization.EastAsianLunisolarCalendar.yml
+  name: GetMonthsInYear(Int32, Int32)
+  fullName: System.Globalization.EastAsianLunisolarCalendar.GetMonthsInYear(System.Int32, System.Int32)
+  spec.csharp:
+  - uid: System.Globalization.EastAsianLunisolarCalendar.GetMonthsInYear(System.Int32,System.Int32)
+    name: GetMonthsInYear
+    fullName: System.Globalization.EastAsianLunisolarCalendar.GetMonthsInYear
+    href: System.Globalization.EastAsianLunisolarCalendar.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Globalization.EastAsianLunisolarCalendar.GetMonthsInYear(System.Int32,System.Int32)
+    name: GetMonthsInYear
+    fullName: System.Globalization.EastAsianLunisolarCalendar.GetMonthsInYear
+    href: System.Globalization.EastAsianLunisolarCalendar.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Globalization.EastAsianLunisolarCalendar.IsLeapDay(System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: System.Globalization.EastAsianLunisolarCalendar
+  isExternal: false
+  href: System.Globalization.EastAsianLunisolarCalendar.yml
+  name: IsLeapDay(Int32, Int32, Int32, Int32)
+  fullName: System.Globalization.EastAsianLunisolarCalendar.IsLeapDay(System.Int32, System.Int32, System.Int32, System.Int32)
+  spec.csharp:
+  - uid: System.Globalization.EastAsianLunisolarCalendar.IsLeapDay(System.Int32,System.Int32,System.Int32,System.Int32)
+    name: IsLeapDay
+    fullName: System.Globalization.EastAsianLunisolarCalendar.IsLeapDay
+    href: System.Globalization.EastAsianLunisolarCalendar.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Globalization.EastAsianLunisolarCalendar.IsLeapDay(System.Int32,System.Int32,System.Int32,System.Int32)
+    name: IsLeapDay
+    fullName: System.Globalization.EastAsianLunisolarCalendar.IsLeapDay
+    href: System.Globalization.EastAsianLunisolarCalendar.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Globalization.EastAsianLunisolarCalendar.IsLeapMonth(System.Int32,System.Int32,System.Int32)
+  parent: System.Globalization.EastAsianLunisolarCalendar
+  isExternal: false
+  href: System.Globalization.EastAsianLunisolarCalendar.yml
+  name: IsLeapMonth(Int32, Int32, Int32)
+  fullName: System.Globalization.EastAsianLunisolarCalendar.IsLeapMonth(System.Int32, System.Int32, System.Int32)
+  spec.csharp:
+  - uid: System.Globalization.EastAsianLunisolarCalendar.IsLeapMonth(System.Int32,System.Int32,System.Int32)
+    name: IsLeapMonth
+    fullName: System.Globalization.EastAsianLunisolarCalendar.IsLeapMonth
+    href: System.Globalization.EastAsianLunisolarCalendar.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Globalization.EastAsianLunisolarCalendar.IsLeapMonth(System.Int32,System.Int32,System.Int32)
+    name: IsLeapMonth
+    fullName: System.Globalization.EastAsianLunisolarCalendar.IsLeapMonth
+    href: System.Globalization.EastAsianLunisolarCalendar.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Globalization.EastAsianLunisolarCalendar.GetLeapMonth(System.Int32,System.Int32)
+  parent: System.Globalization.EastAsianLunisolarCalendar
+  isExternal: false
+  href: System.Globalization.EastAsianLunisolarCalendar.yml
+  name: GetLeapMonth(Int32, Int32)
+  fullName: System.Globalization.EastAsianLunisolarCalendar.GetLeapMonth(System.Int32, System.Int32)
+  spec.csharp:
+  - uid: System.Globalization.EastAsianLunisolarCalendar.GetLeapMonth(System.Int32,System.Int32)
+    name: GetLeapMonth
+    fullName: System.Globalization.EastAsianLunisolarCalendar.GetLeapMonth
+    href: System.Globalization.EastAsianLunisolarCalendar.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Globalization.EastAsianLunisolarCalendar.GetLeapMonth(System.Int32,System.Int32)
+    name: GetLeapMonth
+    fullName: System.Globalization.EastAsianLunisolarCalendar.GetLeapMonth
+    href: System.Globalization.EastAsianLunisolarCalendar.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Globalization.EastAsianLunisolarCalendar.IsLeapYear(System.Int32,System.Int32)
+  parent: System.Globalization.EastAsianLunisolarCalendar
+  isExternal: false
+  href: System.Globalization.EastAsianLunisolarCalendar.yml
+  name: IsLeapYear(Int32, Int32)
+  fullName: System.Globalization.EastAsianLunisolarCalendar.IsLeapYear(System.Int32, System.Int32)
+  spec.csharp:
+  - uid: System.Globalization.EastAsianLunisolarCalendar.IsLeapYear(System.Int32,System.Int32)
+    name: IsLeapYear
+    fullName: System.Globalization.EastAsianLunisolarCalendar.IsLeapYear
+    href: System.Globalization.EastAsianLunisolarCalendar.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Globalization.EastAsianLunisolarCalendar.IsLeapYear(System.Int32,System.Int32)
+    name: IsLeapYear
+    fullName: System.Globalization.EastAsianLunisolarCalendar.IsLeapYear
+    href: System.Globalization.EastAsianLunisolarCalendar.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Globalization.EastAsianLunisolarCalendar.TwoDigitYearMax
+  parent: System.Globalization.EastAsianLunisolarCalendar
+  isExternal: false
+  href: System.Globalization.EastAsianLunisolarCalendar.yml
+  name: TwoDigitYearMax
+  fullName: System.Globalization.EastAsianLunisolarCalendar.TwoDigitYearMax
+- uid: System.Globalization.EastAsianLunisolarCalendar.ToFourDigitYear(System.Int32)
+  parent: System.Globalization.EastAsianLunisolarCalendar
+  isExternal: false
+  href: System.Globalization.EastAsianLunisolarCalendar.yml
+  name: ToFourDigitYear(Int32)
+  fullName: System.Globalization.EastAsianLunisolarCalendar.ToFourDigitYear(System.Int32)
+  spec.csharp:
+  - uid: System.Globalization.EastAsianLunisolarCalendar.ToFourDigitYear(System.Int32)
+    name: ToFourDigitYear
+    fullName: System.Globalization.EastAsianLunisolarCalendar.ToFourDigitYear
+    href: System.Globalization.EastAsianLunisolarCalendar.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Globalization.EastAsianLunisolarCalendar.ToFourDigitYear(System.Int32)
+    name: ToFourDigitYear
+    fullName: System.Globalization.EastAsianLunisolarCalendar.ToFourDigitYear
+    href: System.Globalization.EastAsianLunisolarCalendar.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Globalization.Calendar.IsReadOnly
+  parent: System.Globalization.Calendar
+  isExternal: false
+  href: System.Globalization.Calendar.yml
+  name: IsReadOnly
+  fullName: System.Globalization.Calendar.IsReadOnly
+- uid: System.Globalization.Calendar.Clone
+  parent: System.Globalization.Calendar
+  isExternal: false
+  href: System.Globalization.Calendar.yml
+  name: Clone()
+  fullName: System.Globalization.Calendar.Clone()
+  spec.csharp:
+  - uid: System.Globalization.Calendar.Clone
+    name: Clone
+    fullName: System.Globalization.Calendar.Clone
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Globalization.Calendar.Clone
+    name: Clone
+    fullName: System.Globalization.Calendar.Clone
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Globalization.Calendar.ReadOnly(System.Globalization.Calendar)
+  parent: System.Globalization.Calendar
+  isExternal: false
+  href: System.Globalization.Calendar.yml
+  name: ReadOnly(Calendar)
+  fullName: System.Globalization.Calendar.ReadOnly(System.Globalization.Calendar)
+  spec.csharp:
+  - uid: System.Globalization.Calendar.ReadOnly(System.Globalization.Calendar)
+    name: ReadOnly
+    fullName: System.Globalization.Calendar.ReadOnly
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - uid: System.Globalization.Calendar
+    name: Calendar
+    fullName: System.Globalization.Calendar
+    href: System.Globalization.Calendar.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Globalization.Calendar.ReadOnly(System.Globalization.Calendar)
+    name: ReadOnly
+    fullName: System.Globalization.Calendar.ReadOnly
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - uid: System.Globalization.Calendar
+    name: Calendar
+    fullName: System.Globalization.Calendar
+    href: System.Globalization.Calendar.yml
+  - name: )
+    fullName: )
+- uid: System.Globalization.Calendar.CurrentEra
+  parent: System.Globalization.Calendar
+  isExternal: false
+  href: System.Globalization.Calendar.yml
+  name: CurrentEra
+  fullName: System.Globalization.Calendar.CurrentEra
+- uid: System.Globalization.Calendar.AddMilliseconds(System.DateTime,System.Double)
+  parent: System.Globalization.Calendar
+  isExternal: false
+  href: System.Globalization.Calendar.yml
+  name: AddMilliseconds(DateTime, Double)
+  fullName: System.Globalization.Calendar.AddMilliseconds(System.DateTime, System.Double)
+  spec.csharp:
+  - uid: System.Globalization.Calendar.AddMilliseconds(System.DateTime,System.Double)
+    name: AddMilliseconds
+    fullName: System.Globalization.Calendar.AddMilliseconds
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    href: System.DateTime.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    fullName: System.Double
+    href: System.Double.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Globalization.Calendar.AddMilliseconds(System.DateTime,System.Double)
+    name: AddMilliseconds
+    fullName: System.Globalization.Calendar.AddMilliseconds
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    href: System.DateTime.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    fullName: System.Double
+    href: System.Double.yml
+  - name: )
+    fullName: )
+- uid: System.Globalization.Calendar.AddDays(System.DateTime,System.Int32)
+  parent: System.Globalization.Calendar
+  isExternal: false
+  href: System.Globalization.Calendar.yml
+  name: AddDays(DateTime, Int32)
+  fullName: System.Globalization.Calendar.AddDays(System.DateTime, System.Int32)
+  spec.csharp:
+  - uid: System.Globalization.Calendar.AddDays(System.DateTime,System.Int32)
+    name: AddDays
+    fullName: System.Globalization.Calendar.AddDays
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    href: System.DateTime.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Globalization.Calendar.AddDays(System.DateTime,System.Int32)
+    name: AddDays
+    fullName: System.Globalization.Calendar.AddDays
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    href: System.DateTime.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Globalization.Calendar.AddHours(System.DateTime,System.Int32)
+  parent: System.Globalization.Calendar
+  isExternal: false
+  href: System.Globalization.Calendar.yml
+  name: AddHours(DateTime, Int32)
+  fullName: System.Globalization.Calendar.AddHours(System.DateTime, System.Int32)
+  spec.csharp:
+  - uid: System.Globalization.Calendar.AddHours(System.DateTime,System.Int32)
+    name: AddHours
+    fullName: System.Globalization.Calendar.AddHours
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    href: System.DateTime.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Globalization.Calendar.AddHours(System.DateTime,System.Int32)
+    name: AddHours
+    fullName: System.Globalization.Calendar.AddHours
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    href: System.DateTime.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Globalization.Calendar.AddMinutes(System.DateTime,System.Int32)
+  parent: System.Globalization.Calendar
+  isExternal: false
+  href: System.Globalization.Calendar.yml
+  name: AddMinutes(DateTime, Int32)
+  fullName: System.Globalization.Calendar.AddMinutes(System.DateTime, System.Int32)
+  spec.csharp:
+  - uid: System.Globalization.Calendar.AddMinutes(System.DateTime,System.Int32)
+    name: AddMinutes
+    fullName: System.Globalization.Calendar.AddMinutes
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    href: System.DateTime.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Globalization.Calendar.AddMinutes(System.DateTime,System.Int32)
+    name: AddMinutes
+    fullName: System.Globalization.Calendar.AddMinutes
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    href: System.DateTime.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Globalization.Calendar.AddSeconds(System.DateTime,System.Int32)
+  parent: System.Globalization.Calendar
+  isExternal: false
+  href: System.Globalization.Calendar.yml
+  name: AddSeconds(DateTime, Int32)
+  fullName: System.Globalization.Calendar.AddSeconds(System.DateTime, System.Int32)
+  spec.csharp:
+  - uid: System.Globalization.Calendar.AddSeconds(System.DateTime,System.Int32)
+    name: AddSeconds
+    fullName: System.Globalization.Calendar.AddSeconds
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    href: System.DateTime.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Globalization.Calendar.AddSeconds(System.DateTime,System.Int32)
+    name: AddSeconds
+    fullName: System.Globalization.Calendar.AddSeconds
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    href: System.DateTime.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Globalization.Calendar.AddWeeks(System.DateTime,System.Int32)
+  parent: System.Globalization.Calendar
+  isExternal: false
+  href: System.Globalization.Calendar.yml
+  name: AddWeeks(DateTime, Int32)
+  fullName: System.Globalization.Calendar.AddWeeks(System.DateTime, System.Int32)
+  spec.csharp:
+  - uid: System.Globalization.Calendar.AddWeeks(System.DateTime,System.Int32)
+    name: AddWeeks
+    fullName: System.Globalization.Calendar.AddWeeks
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    href: System.DateTime.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Globalization.Calendar.AddWeeks(System.DateTime,System.Int32)
+    name: AddWeeks
+    fullName: System.Globalization.Calendar.AddWeeks
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    href: System.DateTime.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Globalization.Calendar.GetDaysInMonth(System.Int32,System.Int32)
+  parent: System.Globalization.Calendar
+  isExternal: false
+  href: System.Globalization.Calendar.yml
+  name: GetDaysInMonth(Int32, Int32)
+  fullName: System.Globalization.Calendar.GetDaysInMonth(System.Int32, System.Int32)
+  spec.csharp:
+  - uid: System.Globalization.Calendar.GetDaysInMonth(System.Int32,System.Int32)
+    name: GetDaysInMonth
+    fullName: System.Globalization.Calendar.GetDaysInMonth
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Globalization.Calendar.GetDaysInMonth(System.Int32,System.Int32)
+    name: GetDaysInMonth
+    fullName: System.Globalization.Calendar.GetDaysInMonth
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Globalization.Calendar.GetDaysInYear(System.Int32)
+  parent: System.Globalization.Calendar
+  isExternal: false
+  href: System.Globalization.Calendar.yml
+  name: GetDaysInYear(Int32)
+  fullName: System.Globalization.Calendar.GetDaysInYear(System.Int32)
+  spec.csharp:
+  - uid: System.Globalization.Calendar.GetDaysInYear(System.Int32)
+    name: GetDaysInYear
+    fullName: System.Globalization.Calendar.GetDaysInYear
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Globalization.Calendar.GetDaysInYear(System.Int32)
+    name: GetDaysInYear
+    fullName: System.Globalization.Calendar.GetDaysInYear
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Globalization.Calendar.GetHour(System.DateTime)
+  parent: System.Globalization.Calendar
+  isExternal: false
+  href: System.Globalization.Calendar.yml
+  name: GetHour(DateTime)
+  fullName: System.Globalization.Calendar.GetHour(System.DateTime)
+  spec.csharp:
+  - uid: System.Globalization.Calendar.GetHour(System.DateTime)
+    name: GetHour
+    fullName: System.Globalization.Calendar.GetHour
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    href: System.DateTime.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Globalization.Calendar.GetHour(System.DateTime)
+    name: GetHour
+    fullName: System.Globalization.Calendar.GetHour
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    href: System.DateTime.yml
+  - name: )
+    fullName: )
+- uid: System.Globalization.Calendar.GetMilliseconds(System.DateTime)
+  parent: System.Globalization.Calendar
+  isExternal: false
+  href: System.Globalization.Calendar.yml
+  name: GetMilliseconds(DateTime)
+  fullName: System.Globalization.Calendar.GetMilliseconds(System.DateTime)
+  spec.csharp:
+  - uid: System.Globalization.Calendar.GetMilliseconds(System.DateTime)
+    name: GetMilliseconds
+    fullName: System.Globalization.Calendar.GetMilliseconds
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    href: System.DateTime.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Globalization.Calendar.GetMilliseconds(System.DateTime)
+    name: GetMilliseconds
+    fullName: System.Globalization.Calendar.GetMilliseconds
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    href: System.DateTime.yml
+  - name: )
+    fullName: )
+- uid: System.Globalization.Calendar.GetMinute(System.DateTime)
+  parent: System.Globalization.Calendar
+  isExternal: false
+  href: System.Globalization.Calendar.yml
+  name: GetMinute(DateTime)
+  fullName: System.Globalization.Calendar.GetMinute(System.DateTime)
+  spec.csharp:
+  - uid: System.Globalization.Calendar.GetMinute(System.DateTime)
+    name: GetMinute
+    fullName: System.Globalization.Calendar.GetMinute
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    href: System.DateTime.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Globalization.Calendar.GetMinute(System.DateTime)
+    name: GetMinute
+    fullName: System.Globalization.Calendar.GetMinute
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    href: System.DateTime.yml
+  - name: )
+    fullName: )
+- uid: System.Globalization.Calendar.GetMonthsInYear(System.Int32)
+  parent: System.Globalization.Calendar
+  isExternal: false
+  href: System.Globalization.Calendar.yml
+  name: GetMonthsInYear(Int32)
+  fullName: System.Globalization.Calendar.GetMonthsInYear(System.Int32)
+  spec.csharp:
+  - uid: System.Globalization.Calendar.GetMonthsInYear(System.Int32)
+    name: GetMonthsInYear
+    fullName: System.Globalization.Calendar.GetMonthsInYear
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Globalization.Calendar.GetMonthsInYear(System.Int32)
+    name: GetMonthsInYear
+    fullName: System.Globalization.Calendar.GetMonthsInYear
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Globalization.Calendar.GetSecond(System.DateTime)
+  parent: System.Globalization.Calendar
+  isExternal: false
+  href: System.Globalization.Calendar.yml
+  name: GetSecond(DateTime)
+  fullName: System.Globalization.Calendar.GetSecond(System.DateTime)
+  spec.csharp:
+  - uid: System.Globalization.Calendar.GetSecond(System.DateTime)
+    name: GetSecond
+    fullName: System.Globalization.Calendar.GetSecond
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    href: System.DateTime.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Globalization.Calendar.GetSecond(System.DateTime)
+    name: GetSecond
+    fullName: System.Globalization.Calendar.GetSecond
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    href: System.DateTime.yml
+  - name: )
+    fullName: )
+- uid: System.Globalization.Calendar.GetWeekOfYear(System.DateTime,System.Globalization.CalendarWeekRule,System.DayOfWeek)
+  parent: System.Globalization.Calendar
+  isExternal: false
+  href: System.Globalization.Calendar.yml
+  name: GetWeekOfYear(DateTime, CalendarWeekRule, DayOfWeek)
+  fullName: System.Globalization.Calendar.GetWeekOfYear(System.DateTime, System.Globalization.CalendarWeekRule, System.DayOfWeek)
+  spec.csharp:
+  - uid: System.Globalization.Calendar.GetWeekOfYear(System.DateTime,System.Globalization.CalendarWeekRule,System.DayOfWeek)
+    name: GetWeekOfYear
+    fullName: System.Globalization.Calendar.GetWeekOfYear
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    href: System.DateTime.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Globalization.CalendarWeekRule
+    name: CalendarWeekRule
+    fullName: System.Globalization.CalendarWeekRule
+    href: System.Globalization.CalendarWeekRule.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.DayOfWeek
+    name: DayOfWeek
+    fullName: System.DayOfWeek
+    href: System.DayOfWeek.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Globalization.Calendar.GetWeekOfYear(System.DateTime,System.Globalization.CalendarWeekRule,System.DayOfWeek)
+    name: GetWeekOfYear
+    fullName: System.Globalization.Calendar.GetWeekOfYear
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    href: System.DateTime.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Globalization.CalendarWeekRule
+    name: CalendarWeekRule
+    fullName: System.Globalization.CalendarWeekRule
+    href: System.Globalization.CalendarWeekRule.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.DayOfWeek
+    name: DayOfWeek
+    fullName: System.DayOfWeek
+    href: System.DayOfWeek.yml
+  - name: )
+    fullName: )
+- uid: System.Globalization.Calendar.IsLeapDay(System.Int32,System.Int32,System.Int32)
+  parent: System.Globalization.Calendar
+  isExternal: false
+  href: System.Globalization.Calendar.yml
+  name: IsLeapDay(Int32, Int32, Int32)
+  fullName: System.Globalization.Calendar.IsLeapDay(System.Int32, System.Int32, System.Int32)
+  spec.csharp:
+  - uid: System.Globalization.Calendar.IsLeapDay(System.Int32,System.Int32,System.Int32)
+    name: IsLeapDay
+    fullName: System.Globalization.Calendar.IsLeapDay
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Globalization.Calendar.IsLeapDay(System.Int32,System.Int32,System.Int32)
+    name: IsLeapDay
+    fullName: System.Globalization.Calendar.IsLeapDay
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Globalization.Calendar.IsLeapMonth(System.Int32,System.Int32)
+  parent: System.Globalization.Calendar
+  isExternal: false
+  href: System.Globalization.Calendar.yml
+  name: IsLeapMonth(Int32, Int32)
+  fullName: System.Globalization.Calendar.IsLeapMonth(System.Int32, System.Int32)
+  spec.csharp:
+  - uid: System.Globalization.Calendar.IsLeapMonth(System.Int32,System.Int32)
+    name: IsLeapMonth
+    fullName: System.Globalization.Calendar.IsLeapMonth
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Globalization.Calendar.IsLeapMonth(System.Int32,System.Int32)
+    name: IsLeapMonth
+    fullName: System.Globalization.Calendar.IsLeapMonth
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Globalization.Calendar.GetLeapMonth(System.Int32)
+  parent: System.Globalization.Calendar
+  isExternal: false
+  href: System.Globalization.Calendar.yml
+  name: GetLeapMonth(Int32)
+  fullName: System.Globalization.Calendar.GetLeapMonth(System.Int32)
+  spec.csharp:
+  - uid: System.Globalization.Calendar.GetLeapMonth(System.Int32)
+    name: GetLeapMonth
+    fullName: System.Globalization.Calendar.GetLeapMonth
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Globalization.Calendar.GetLeapMonth(System.Int32)
+    name: GetLeapMonth
+    fullName: System.Globalization.Calendar.GetLeapMonth
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Globalization.Calendar.IsLeapYear(System.Int32)
+  parent: System.Globalization.Calendar
+  isExternal: false
+  href: System.Globalization.Calendar.yml
+  name: IsLeapYear(Int32)
+  fullName: System.Globalization.Calendar.IsLeapYear(System.Int32)
+  spec.csharp:
+  - uid: System.Globalization.Calendar.IsLeapYear(System.Int32)
+    name: IsLeapYear
+    fullName: System.Globalization.Calendar.IsLeapYear
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Globalization.Calendar.IsLeapYear(System.Int32)
+    name: IsLeapYear
+    fullName: System.Globalization.Calendar.IsLeapYear
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Globalization.Calendar.ToDateTime(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: System.Globalization.Calendar
+  isExternal: false
+  href: System.Globalization.Calendar.yml
+  name: ToDateTime(Int32, Int32, Int32, Int32, Int32, Int32, Int32)
+  fullName: System.Globalization.Calendar.ToDateTime(System.Int32, System.Int32, System.Int32, System.Int32, System.Int32, System.Int32, System.Int32)
+  spec.csharp:
+  - uid: System.Globalization.Calendar.ToDateTime(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
+    name: ToDateTime
+    fullName: System.Globalization.Calendar.ToDateTime
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Globalization.Calendar.ToDateTime(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
+    name: ToDateTime
+    fullName: System.Globalization.Calendar.ToDateTime
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Globalization.Calendar.MinSupportedDateTime
+  parent: System.Globalization.Calendar
+  isExternal: false
+  href: System.Globalization.Calendar.yml
+  name: MinSupportedDateTime
+  fullName: System.Globalization.Calendar.MinSupportedDateTime
+- uid: System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  fullName: System.DateTime
+- uid: System.Globalization.Calendar.MaxSupportedDateTime
+  parent: System.Globalization.Calendar
+  isExternal: false
+  href: System.Globalization.Calendar.yml
+  name: MaxSupportedDateTime
+  fullName: System.Globalization.Calendar.MaxSupportedDateTime
+- uid: System.Globalization.Calendar.DaysInYearBeforeMinSupportedYear
+  parent: System.Globalization.Calendar
+  isExternal: false
+  href: System.Globalization.Calendar.yml
+  name: DaysInYearBeforeMinSupportedYear
+  fullName: System.Globalization.Calendar.DaysInYearBeforeMinSupportedYear
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Globalization.Calendar.GetEra(System.DateTime)
+  parent: System.Globalization.Calendar
+  isExternal: false
+  href: System.Globalization.Calendar.yml
+  name: GetEra(DateTime)
+  fullName: System.Globalization.Calendar.GetEra(System.DateTime)
+  spec.csharp:
+  - uid: System.Globalization.Calendar.GetEra(System.DateTime)
+    name: GetEra
+    fullName: System.Globalization.Calendar.GetEra
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    href: System.DateTime.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Globalization.Calendar.GetEra(System.DateTime)
+    name: GetEra
+    fullName: System.Globalization.Calendar.GetEra
+    href: System.Globalization.Calendar.yml
+  - name: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    href: System.DateTime.yml
+  - name: )
+    fullName: )
+- uid: System.Globalization.Calendar.Eras
+  parent: System.Globalization.Calendar
+  isExternal: false
+  href: System.Globalization.Calendar.yml
+  name: Eras
+  fullName: System.Globalization.Calendar.Eras
+- uid: System.Int32[]
+  isExternal: true
+  name: Int32[]
+  name.vb: Int32()
+  fullName: System.Int32[]
+  fullName.vb: System.Int32()
+  spec.csharp:
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ()
+    fullName: ()

@@ -1,0 +1,137 @@
+items:
+- uid: System.Diagnostics.Contracts.ContractFailureKind
+  id: ContractFailureKind
+  parent: System.Diagnostics.Contracts
+  children:
+  - System.Diagnostics.Contracts.ContractFailureKind.Assert
+  - System.Diagnostics.Contracts.ContractFailureKind.Assume
+  - System.Diagnostics.Contracts.ContractFailureKind.Invariant
+  - System.Diagnostics.Contracts.ContractFailureKind.Postcondition
+  - System.Diagnostics.Contracts.ContractFailureKind.PostconditionOnException
+  - System.Diagnostics.Contracts.ContractFailureKind.Precondition
+  href: System.Diagnostics.Contracts.ContractFailureKind.yml
+  name: ContractFailureKind
+  fullName: System.Diagnostics.Contracts.ContractFailureKind
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs
+    startLine: 897
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Contracts
+  summary: Specifies the type of contract that failed.
+  syntax:
+    content: public enum ContractFailureKind
+    content.vb: Public Enum ContractFailureKind
+- uid: System.Diagnostics.Contracts.ContractFailureKind.Precondition
+  id: Precondition
+  parent: System.Diagnostics.Contracts.ContractFailureKind
+  href: System.Diagnostics.Contracts.ContractFailureKind.yml
+  name: Precondition
+  fullName: System.Diagnostics.Contracts.ContractFailureKind.Precondition
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs
+    startLine: 898
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Contracts
+  summary: A <see cref="Overload:System.Diagnostics.Contracts.Contract.Requires" /> contract failed.
+  syntax:
+    content: Precondition = 0
+- uid: System.Diagnostics.Contracts.ContractFailureKind.Postcondition
+  id: Postcondition
+  parent: System.Diagnostics.Contracts.ContractFailureKind
+  href: System.Diagnostics.Contracts.ContractFailureKind.yml
+  name: Postcondition
+  fullName: System.Diagnostics.Contracts.ContractFailureKind.Postcondition
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs
+    startLine: 899
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Contracts
+  summary: An <see cref="Overload:System.Diagnostics.Contracts.Contract.Ensures" /> contract failed.
+  syntax:
+    content: Postcondition = 1
+- uid: System.Diagnostics.Contracts.ContractFailureKind.PostconditionOnException
+  id: PostconditionOnException
+  parent: System.Diagnostics.Contracts.ContractFailureKind
+  href: System.Diagnostics.Contracts.ContractFailureKind.yml
+  name: PostconditionOnException
+  fullName: System.Diagnostics.Contracts.ContractFailureKind.PostconditionOnException
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs
+    startLine: 901
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Contracts
+  summary: An <see cref="Overload:System.Diagnostics.Contracts.Contract.EnsuresOnThrow" /> contract failed.
+  syntax:
+    content: PostconditionOnException = 2
+- uid: System.Diagnostics.Contracts.ContractFailureKind.Invariant
+  id: Invariant
+  parent: System.Diagnostics.Contracts.ContractFailureKind
+  href: System.Diagnostics.Contracts.ContractFailureKind.yml
+  name: Invariant
+  fullName: System.Diagnostics.Contracts.ContractFailureKind.Invariant
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs
+    startLine: 903
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Contracts
+  summary: An <see cref="Overload:System.Diagnostics.Contracts.Contract.Invariant" /> contract failed.
+  syntax:
+    content: Invariant = 3
+- uid: System.Diagnostics.Contracts.ContractFailureKind.Assert
+  id: Assert
+  parent: System.Diagnostics.Contracts.ContractFailureKind
+  href: System.Diagnostics.Contracts.ContractFailureKind.yml
+  name: Assert
+  fullName: System.Diagnostics.Contracts.ContractFailureKind.Assert
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs
+    startLine: 904
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Contracts
+  summary: An <see cref="Overload:System.Diagnostics.Contracts.Contract.Assert" /> contract failed.
+  syntax:
+    content: Assert = 4
+- uid: System.Diagnostics.Contracts.ContractFailureKind.Assume
+  id: Assume
+  parent: System.Diagnostics.Contracts.ContractFailureKind
+  href: System.Diagnostics.Contracts.ContractFailureKind.yml
+  name: Assume
+  fullName: System.Diagnostics.Contracts.ContractFailureKind.Assume
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs
+    startLine: 905
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Contracts
+  summary: An <see cref="Overload:System.Diagnostics.Contracts.Contract.Assume" /> contract failed.
+  syntax:
+    content: Assume = 5
+references:
+- uid: System.Diagnostics.Contracts
+  isExternal: false
+  name: System.Diagnostics.Contracts
+  fullName: System.Diagnostics.Contracts
+  type: Namespace

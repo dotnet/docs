@@ -1,0 +1,263 @@
+items:
+- uid: System.Runtime.InteropServices.TypeLibVarFlags
+  id: TypeLibVarFlags
+  parent: System.Runtime.InteropServices
+  children:
+  - System.Runtime.InteropServices.TypeLibVarFlags.FBindable
+  - System.Runtime.InteropServices.TypeLibVarFlags.FDefaultBind
+  - System.Runtime.InteropServices.TypeLibVarFlags.FDefaultCollelem
+  - System.Runtime.InteropServices.TypeLibVarFlags.FDisplayBind
+  - System.Runtime.InteropServices.TypeLibVarFlags.FHidden
+  - System.Runtime.InteropServices.TypeLibVarFlags.FImmediateBind
+  - System.Runtime.InteropServices.TypeLibVarFlags.FNonBrowsable
+  - System.Runtime.InteropServices.TypeLibVarFlags.FReadOnly
+  - System.Runtime.InteropServices.TypeLibVarFlags.FReplaceable
+  - System.Runtime.InteropServices.TypeLibVarFlags.FRequestEdit
+  - System.Runtime.InteropServices.TypeLibVarFlags.FRestricted
+  - System.Runtime.InteropServices.TypeLibVarFlags.FSource
+  - System.Runtime.InteropServices.TypeLibVarFlags.FUiDefault
+  href: System.Runtime.InteropServices.TypeLibVarFlags.yml
+  name: TypeLibVarFlags
+  fullName: System.Runtime.InteropServices.TypeLibVarFlags
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 319
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Describes the original settings of the @'System.Runtime.InteropServices.VARFLAGS' in the COM type library from which the variable was imported.
+  syntax:
+    content: public enum TypeLibVarFlags
+    content.vb: Public Enum TypeLibVarFlags
+- uid: System.Runtime.InteropServices.TypeLibVarFlags.FReadOnly
+  id: FReadOnly
+  parent: System.Runtime.InteropServices.TypeLibVarFlags
+  href: System.Runtime.InteropServices.TypeLibVarFlags.yml
+  name: FReadOnly
+  fullName: System.Runtime.InteropServices.TypeLibVarFlags.FReadOnly
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 324
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Assignment to the variable should not be allowed.
+  syntax:
+    content: FReadOnly = 1
+- uid: System.Runtime.InteropServices.TypeLibVarFlags.FSource
+  id: FSource
+  parent: System.Runtime.InteropServices.TypeLibVarFlags
+  href: System.Runtime.InteropServices.TypeLibVarFlags.yml
+  name: FSource
+  fullName: System.Runtime.InteropServices.TypeLibVarFlags.FSource
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 325
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: The variable returns an object that is a source of events.
+  syntax:
+    content: FSource = 2
+- uid: System.Runtime.InteropServices.TypeLibVarFlags.FBindable
+  id: FBindable
+  parent: System.Runtime.InteropServices.TypeLibVarFlags
+  href: System.Runtime.InteropServices.TypeLibVarFlags.yml
+  name: FBindable
+  fullName: System.Runtime.InteropServices.TypeLibVarFlags.FBindable
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 326
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: The variable supports data binding.
+  syntax:
+    content: FBindable = 4
+- uid: System.Runtime.InteropServices.TypeLibVarFlags.FRequestEdit
+  id: FRequestEdit
+  parent: System.Runtime.InteropServices.TypeLibVarFlags
+  href: System.Runtime.InteropServices.TypeLibVarFlags.yml
+  name: FRequestEdit
+  fullName: System.Runtime.InteropServices.TypeLibVarFlags.FRequestEdit
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 327
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates that the property supports the COM OnRequestEdit notification.
+  syntax:
+    content: FRequestEdit = 8
+- uid: System.Runtime.InteropServices.TypeLibVarFlags.FDisplayBind
+  id: FDisplayBind
+  parent: System.Runtime.InteropServices.TypeLibVarFlags
+  href: System.Runtime.InteropServices.TypeLibVarFlags.yml
+  name: FDisplayBind
+  fullName: System.Runtime.InteropServices.TypeLibVarFlags.FDisplayBind
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 328
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: The variable is displayed as bindable. @'System.Runtime.InteropServices.TypeLibVarFlags.FBindable' must also be set.
+  syntax:
+    content: FDisplayBind = 16
+- uid: System.Runtime.InteropServices.TypeLibVarFlags.FDefaultBind
+  id: FDefaultBind
+  parent: System.Runtime.InteropServices.TypeLibVarFlags
+  href: System.Runtime.InteropServices.TypeLibVarFlags.yml
+  name: FDefaultBind
+  fullName: System.Runtime.InteropServices.TypeLibVarFlags.FDefaultBind
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 329
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: The variable is the single property that best represents the object. Only one variable in a type info can have this value.
+  syntax:
+    content: FDefaultBind = 32
+- uid: System.Runtime.InteropServices.TypeLibVarFlags.FHidden
+  id: FHidden
+  parent: System.Runtime.InteropServices.TypeLibVarFlags
+  href: System.Runtime.InteropServices.TypeLibVarFlags.yml
+  name: FHidden
+  fullName: System.Runtime.InteropServices.TypeLibVarFlags.FHidden
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 330
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: The variable should not be displayed in a browser, though it exists and is bindable.
+  syntax:
+    content: FHidden = 64
+- uid: System.Runtime.InteropServices.TypeLibVarFlags.FRestricted
+  id: FRestricted
+  parent: System.Runtime.InteropServices.TypeLibVarFlags
+  href: System.Runtime.InteropServices.TypeLibVarFlags.yml
+  name: FRestricted
+  fullName: System.Runtime.InteropServices.TypeLibVarFlags.FRestricted
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 331
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: This flag is intended for system-level functions or functions that type browsers should not display.
+  syntax:
+    content: FRestricted = 128
+- uid: System.Runtime.InteropServices.TypeLibVarFlags.FDefaultCollelem
+  id: FDefaultCollelem
+  parent: System.Runtime.InteropServices.TypeLibVarFlags
+  href: System.Runtime.InteropServices.TypeLibVarFlags.yml
+  name: FDefaultCollelem
+  fullName: System.Runtime.InteropServices.TypeLibVarFlags.FDefaultCollelem
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 332
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Permits an optimization in which the compiler looks for a member named "xyz" on the type "abc". If such a member is found and is flagged as an accessor function for an element of the default collection, then a call is generated to that member function.
+  syntax:
+    content: FDefaultCollelem = 256
+- uid: System.Runtime.InteropServices.TypeLibVarFlags.FUiDefault
+  id: FUiDefault
+  parent: System.Runtime.InteropServices.TypeLibVarFlags
+  href: System.Runtime.InteropServices.TypeLibVarFlags.yml
+  name: FUiDefault
+  fullName: System.Runtime.InteropServices.TypeLibVarFlags.FUiDefault
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 333
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: The default display in the user interface.
+  syntax:
+    content: FUiDefault = 512
+- uid: System.Runtime.InteropServices.TypeLibVarFlags.FNonBrowsable
+  id: FNonBrowsable
+  parent: System.Runtime.InteropServices.TypeLibVarFlags
+  href: System.Runtime.InteropServices.TypeLibVarFlags.yml
+  name: FNonBrowsable
+  fullName: System.Runtime.InteropServices.TypeLibVarFlags.FNonBrowsable
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 334
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: The variable appears in an object browser, but not in a properties browser.
+  syntax:
+    content: FNonBrowsable = 1024
+- uid: System.Runtime.InteropServices.TypeLibVarFlags.FReplaceable
+  id: FReplaceable
+  parent: System.Runtime.InteropServices.TypeLibVarFlags
+  href: System.Runtime.InteropServices.TypeLibVarFlags.yml
+  name: FReplaceable
+  fullName: System.Runtime.InteropServices.TypeLibVarFlags.FReplaceable
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 335
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Tags the interface as having default behaviors.
+  syntax:
+    content: FReplaceable = 2048
+- uid: System.Runtime.InteropServices.TypeLibVarFlags.FImmediateBind
+  id: FImmediateBind
+  parent: System.Runtime.InteropServices.TypeLibVarFlags
+  href: System.Runtime.InteropServices.TypeLibVarFlags.yml
+  name: FImmediateBind
+  fullName: System.Runtime.InteropServices.TypeLibVarFlags.FImmediateBind
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 336
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: The variable is mapped as individual bindable properties.
+  syntax:
+    content: FImmediateBind = 4096
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace

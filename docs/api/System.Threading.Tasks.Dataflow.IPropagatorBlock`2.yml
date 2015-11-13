@@ -1,0 +1,922 @@
+items:
+- uid: System.Threading.Tasks.Dataflow.IPropagatorBlock`2
+  id: IPropagatorBlock`2
+  parent: System.Threading.Tasks.Dataflow
+  children: []
+  href: System.Threading.Tasks.Dataflow.IPropagatorBlock`2.yml
+  name: IPropagatorBlock<TInput, TOutput>
+  name.vb: IPropagatorBlock(Of TInput, TOutput)
+  fullName: System.Threading.Tasks.Dataflow.IPropagatorBlock<TInput, TOutput>
+  fullName.vb: System.Threading.Tasks.Dataflow.IPropagatorBlock(Of TInput, TOutput)
+  type: Interface
+  source:
+    remote:
+      path: src/System.Threading.Tasks.Dataflow/src/Base/IPropagatorBlock.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Threading.Tasks.Dataflow/src/Base/IPropagatorBlock.cs
+    startLine: 17
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Represents a dataflow block that is both a target for data and a source of data.
+  syntax:
+    content: 'public interface IPropagatorBlock<in TInput, out TOutput> : ITargetBlock<TInput>, ISourceBlock<TOutput>, IDataflowBlock'
+    content.vb: Public Interface IPropagatorBlock(Of In TInput, Out TOutput) Inherits ITargetBlock(Of TInput), ISourceBlock(Of TOutput)
+    typeParameters:
+    - id: TInput
+      description: Specifies the type of data accepted by the @'System.Threading.Tasks.Dataflow.IPropagatorBlock`2'.
+    - id: TOutput
+      description: Specifies the type of data supplied by the @'System.Threading.Tasks.Dataflow.IPropagatorBlock`2'.
+  inheritedMembers:
+  - System.Threading.Tasks.Dataflow.ITargetBlock{{TInput}}.OfferMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,{TInput},System.Threading.Tasks.Dataflow.ISourceBlock{{TInput}},System.Boolean)
+  - System.Threading.Tasks.Dataflow.ISourceBlock{{TOutput}}.LinkTo(System.Threading.Tasks.Dataflow.ITargetBlock{{TOutput}},System.Threading.Tasks.Dataflow.DataflowLinkOptions)
+  - System.Threading.Tasks.Dataflow.ISourceBlock{{TOutput}}.ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{{TOutput}},System.Boolean@)
+  - System.Threading.Tasks.Dataflow.ISourceBlock{{TOutput}}.ReserveMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{{TOutput}})
+  - System.Threading.Tasks.Dataflow.ISourceBlock{{TOutput}}.ReleaseReservation(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{{TOutput}})
+  - System.Threading.Tasks.Dataflow.IDataflowBlock.Completion
+  - System.Threading.Tasks.Dataflow.IDataflowBlock.Complete
+  - System.Threading.Tasks.Dataflow.IDataflowBlock.Fault(System.Exception)
+references:
+- uid: System.Threading.Tasks.Dataflow.IPropagatorBlock`2
+  parent: System.Threading.Tasks.Dataflow
+  isExternal: false
+  href: System.Threading.Tasks.Dataflow.IPropagatorBlock`2.yml
+  name: IPropagatorBlock<TInput, TOutput>
+  name.vb: IPropagatorBlock(Of TInput, TOutput)
+  fullName: System.Threading.Tasks.Dataflow.IPropagatorBlock<TInput, TOutput>
+  fullName.vb: System.Threading.Tasks.Dataflow.IPropagatorBlock(Of TInput, TOutput)
+  type: Interface
+  summary: Represents a dataflow block that is both a target for data and a source of data.
+  spec.csharp:
+  - uid: System.Threading.Tasks.Dataflow.IPropagatorBlock`2
+    name: IPropagatorBlock
+    fullName: System.Threading.Tasks.Dataflow.IPropagatorBlock
+    href: System.Threading.Tasks.Dataflow.IPropagatorBlock`2.yml
+  - name: <
+    fullName: <
+  - name: TInput
+    fullName: TInput
+  - name: ', '
+    fullName: ', '
+  - name: TOutput
+    fullName: TOutput
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Dataflow.IPropagatorBlock`2
+    name: IPropagatorBlock
+    fullName: System.Threading.Tasks.Dataflow.IPropagatorBlock
+    href: System.Threading.Tasks.Dataflow.IPropagatorBlock`2.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TInput
+    fullName: TInput
+  - name: ', '
+    fullName: ', '
+  - name: TOutput
+    fullName: TOutput
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Dataflow
+  isExternal: false
+  name: System.Threading.Tasks.Dataflow
+  fullName: System.Threading.Tasks.Dataflow
+  type: Namespace
+- uid: System.Threading.Tasks.Dataflow.ITargetBlock{{TInput}}.OfferMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,{TInput},System.Threading.Tasks.Dataflow.ISourceBlock{{TInput}},System.Boolean)
+  parent: System.Threading.Tasks.Dataflow.ITargetBlock{{TInput}}
+  definition: System.Threading.Tasks.Dataflow.ITargetBlock`1.OfferMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,{TInput},System.Threading.Tasks.Dataflow.ISourceBlock{{TInput}},System.Boolean)
+  href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  name: OfferMessage(DataflowMessageHeader, TInput, ISourceBlock<TInput>, Boolean)
+  name.vb: OfferMessage(DataflowMessageHeader, TInput, ISourceBlock(Of TInput), Boolean)
+  fullName: System.Threading.Tasks.Dataflow.ITargetBlock<TInput>.OfferMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader, TInput, System.Threading.Tasks.Dataflow.ISourceBlock<TInput>, System.Boolean)
+  fullName.vb: System.Threading.Tasks.Dataflow.ITargetBlock(Of TInput).OfferMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader, TInput, System.Threading.Tasks.Dataflow.ISourceBlock(Of TInput), System.Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Dataflow.ITargetBlock`1.OfferMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,`0,System.Threading.Tasks.Dataflow.ISourceBlock{`0},System.Boolean)
+    name: OfferMessage
+    fullName: System.Threading.Tasks.Dataflow.ITargetBlock<TInput>.OfferMessage
+    href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+    name: DataflowMessageHeader
+    fullName: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+    href: System.Threading.Tasks.Dataflow.DataflowMessageHeader.yml
+  - name: ', '
+    fullName: ', '
+  - name: TInput
+    fullName: TInput
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Dataflow.ISourceBlock`1
+    name: ISourceBlock
+    fullName: System.Threading.Tasks.Dataflow.ISourceBlock
+    href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  - name: <
+    fullName: <
+  - name: TInput
+    fullName: TInput
+  - name: '>'
+    fullName: '>'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.Tasks.Dataflow.ITargetBlock`1.OfferMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,`0,System.Threading.Tasks.Dataflow.ISourceBlock{`0},System.Boolean)
+    name: OfferMessage
+    fullName: System.Threading.Tasks.Dataflow.ITargetBlock(Of TInput).OfferMessage
+    href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+    name: DataflowMessageHeader
+    fullName: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+    href: System.Threading.Tasks.Dataflow.DataflowMessageHeader.yml
+  - name: ', '
+    fullName: ', '
+  - name: TInput
+    fullName: TInput
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Dataflow.ISourceBlock`1
+    name: ISourceBlock
+    fullName: System.Threading.Tasks.Dataflow.ISourceBlock
+    href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TInput
+    fullName: TInput
+  - name: )
+    fullName: )
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Dataflow.ISourceBlock{{TOutput}}.LinkTo(System.Threading.Tasks.Dataflow.ITargetBlock{{TOutput}},System.Threading.Tasks.Dataflow.DataflowLinkOptions)
+  parent: System.Threading.Tasks.Dataflow.ISourceBlock{{TOutput}}
+  definition: System.Threading.Tasks.Dataflow.ISourceBlock`1.LinkTo(System.Threading.Tasks.Dataflow.ITargetBlock{{TOutput}},System.Threading.Tasks.Dataflow.DataflowLinkOptions)
+  href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  name: LinkTo(ITargetBlock<TOutput>, DataflowLinkOptions)
+  name.vb: LinkTo(ITargetBlock(Of TOutput), DataflowLinkOptions)
+  fullName: System.Threading.Tasks.Dataflow.ISourceBlock<TOutput>.LinkTo(System.Threading.Tasks.Dataflow.ITargetBlock<TOutput>, System.Threading.Tasks.Dataflow.DataflowLinkOptions)
+  fullName.vb: System.Threading.Tasks.Dataflow.ISourceBlock(Of TOutput).LinkTo(System.Threading.Tasks.Dataflow.ITargetBlock(Of TOutput), System.Threading.Tasks.Dataflow.DataflowLinkOptions)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Dataflow.ISourceBlock`1.LinkTo(System.Threading.Tasks.Dataflow.ITargetBlock{`0},System.Threading.Tasks.Dataflow.DataflowLinkOptions)
+    name: LinkTo
+    fullName: System.Threading.Tasks.Dataflow.ISourceBlock<TOutput>.LinkTo
+    href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.Tasks.Dataflow.ITargetBlock`1
+    name: ITargetBlock
+    fullName: System.Threading.Tasks.Dataflow.ITargetBlock
+    href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  - name: <
+    fullName: <
+  - name: TOutput
+    fullName: TOutput
+  - name: '>'
+    fullName: '>'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Dataflow.DataflowLinkOptions
+    name: DataflowLinkOptions
+    fullName: System.Threading.Tasks.Dataflow.DataflowLinkOptions
+    href: System.Threading.Tasks.Dataflow.DataflowLinkOptions.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.Tasks.Dataflow.ISourceBlock`1.LinkTo(System.Threading.Tasks.Dataflow.ITargetBlock{`0},System.Threading.Tasks.Dataflow.DataflowLinkOptions)
+    name: LinkTo
+    fullName: System.Threading.Tasks.Dataflow.ISourceBlock(Of TOutput).LinkTo
+    href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.Tasks.Dataflow.ITargetBlock`1
+    name: ITargetBlock
+    fullName: System.Threading.Tasks.Dataflow.ITargetBlock
+    href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TOutput
+    fullName: TOutput
+  - name: )
+    fullName: )
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Dataflow.DataflowLinkOptions
+    name: DataflowLinkOptions
+    fullName: System.Threading.Tasks.Dataflow.DataflowLinkOptions
+    href: System.Threading.Tasks.Dataflow.DataflowLinkOptions.yml
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Dataflow.ISourceBlock{{TOutput}}.ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{{TOutput}},System.Boolean@)
+  parent: System.Threading.Tasks.Dataflow.ISourceBlock{{TOutput}}
+  definition: System.Threading.Tasks.Dataflow.ISourceBlock`1.ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{{TOutput}},System.Boolean@)
+  href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  name: ConsumeMessage(DataflowMessageHeader, ITargetBlock<TOutput>, Boolean)
+  name.vb: ConsumeMessage(DataflowMessageHeader, ITargetBlock(Of TOutput), Boolean)
+  fullName: System.Threading.Tasks.Dataflow.ISourceBlock<TOutput>.ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader, System.Threading.Tasks.Dataflow.ITargetBlock<TOutput>, System.Boolean)
+  fullName.vb: System.Threading.Tasks.Dataflow.ISourceBlock(Of TOutput).ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader, System.Threading.Tasks.Dataflow.ITargetBlock(Of TOutput), System.Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Dataflow.ISourceBlock`1.ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0},System.Boolean@)
+    name: ConsumeMessage
+    fullName: System.Threading.Tasks.Dataflow.ISourceBlock<TOutput>.ConsumeMessage
+    href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+    name: DataflowMessageHeader
+    fullName: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+    href: System.Threading.Tasks.Dataflow.DataflowMessageHeader.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Dataflow.ITargetBlock`1
+    name: ITargetBlock
+    fullName: System.Threading.Tasks.Dataflow.ITargetBlock
+    href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  - name: <
+    fullName: <
+  - name: TOutput
+    fullName: TOutput
+  - name: '>'
+    fullName: '>'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.Tasks.Dataflow.ISourceBlock`1.ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0},System.Boolean@)
+    name: ConsumeMessage
+    fullName: System.Threading.Tasks.Dataflow.ISourceBlock(Of TOutput).ConsumeMessage
+    href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+    name: DataflowMessageHeader
+    fullName: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+    href: System.Threading.Tasks.Dataflow.DataflowMessageHeader.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Dataflow.ITargetBlock`1
+    name: ITargetBlock
+    fullName: System.Threading.Tasks.Dataflow.ITargetBlock
+    href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TOutput
+    fullName: TOutput
+  - name: )
+    fullName: )
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Dataflow.ISourceBlock{{TOutput}}.ReserveMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{{TOutput}})
+  parent: System.Threading.Tasks.Dataflow.ISourceBlock{{TOutput}}
+  definition: System.Threading.Tasks.Dataflow.ISourceBlock`1.ReserveMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{{TOutput}})
+  href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  name: ReserveMessage(DataflowMessageHeader, ITargetBlock<TOutput>)
+  name.vb: ReserveMessage(DataflowMessageHeader, ITargetBlock(Of TOutput))
+  fullName: System.Threading.Tasks.Dataflow.ISourceBlock<TOutput>.ReserveMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader, System.Threading.Tasks.Dataflow.ITargetBlock<TOutput>)
+  fullName.vb: System.Threading.Tasks.Dataflow.ISourceBlock(Of TOutput).ReserveMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader, System.Threading.Tasks.Dataflow.ITargetBlock(Of TOutput))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Dataflow.ISourceBlock`1.ReserveMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0})
+    name: ReserveMessage
+    fullName: System.Threading.Tasks.Dataflow.ISourceBlock<TOutput>.ReserveMessage
+    href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+    name: DataflowMessageHeader
+    fullName: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+    href: System.Threading.Tasks.Dataflow.DataflowMessageHeader.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Dataflow.ITargetBlock`1
+    name: ITargetBlock
+    fullName: System.Threading.Tasks.Dataflow.ITargetBlock
+    href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  - name: <
+    fullName: <
+  - name: TOutput
+    fullName: TOutput
+  - name: '>'
+    fullName: '>'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.Tasks.Dataflow.ISourceBlock`1.ReserveMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0})
+    name: ReserveMessage
+    fullName: System.Threading.Tasks.Dataflow.ISourceBlock(Of TOutput).ReserveMessage
+    href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+    name: DataflowMessageHeader
+    fullName: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+    href: System.Threading.Tasks.Dataflow.DataflowMessageHeader.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Dataflow.ITargetBlock`1
+    name: ITargetBlock
+    fullName: System.Threading.Tasks.Dataflow.ITargetBlock
+    href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TOutput
+    fullName: TOutput
+  - name: )
+    fullName: )
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Dataflow.ISourceBlock{{TOutput}}.ReleaseReservation(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{{TOutput}})
+  parent: System.Threading.Tasks.Dataflow.ISourceBlock{{TOutput}}
+  definition: System.Threading.Tasks.Dataflow.ISourceBlock`1.ReleaseReservation(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{{TOutput}})
+  href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  name: ReleaseReservation(DataflowMessageHeader, ITargetBlock<TOutput>)
+  name.vb: ReleaseReservation(DataflowMessageHeader, ITargetBlock(Of TOutput))
+  fullName: System.Threading.Tasks.Dataflow.ISourceBlock<TOutput>.ReleaseReservation(System.Threading.Tasks.Dataflow.DataflowMessageHeader, System.Threading.Tasks.Dataflow.ITargetBlock<TOutput>)
+  fullName.vb: System.Threading.Tasks.Dataflow.ISourceBlock(Of TOutput).ReleaseReservation(System.Threading.Tasks.Dataflow.DataflowMessageHeader, System.Threading.Tasks.Dataflow.ITargetBlock(Of TOutput))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Dataflow.ISourceBlock`1.ReleaseReservation(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0})
+    name: ReleaseReservation
+    fullName: System.Threading.Tasks.Dataflow.ISourceBlock<TOutput>.ReleaseReservation
+    href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+    name: DataflowMessageHeader
+    fullName: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+    href: System.Threading.Tasks.Dataflow.DataflowMessageHeader.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Dataflow.ITargetBlock`1
+    name: ITargetBlock
+    fullName: System.Threading.Tasks.Dataflow.ITargetBlock
+    href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  - name: <
+    fullName: <
+  - name: TOutput
+    fullName: TOutput
+  - name: '>'
+    fullName: '>'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.Tasks.Dataflow.ISourceBlock`1.ReleaseReservation(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0})
+    name: ReleaseReservation
+    fullName: System.Threading.Tasks.Dataflow.ISourceBlock(Of TOutput).ReleaseReservation
+    href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+    name: DataflowMessageHeader
+    fullName: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+    href: System.Threading.Tasks.Dataflow.DataflowMessageHeader.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Dataflow.ITargetBlock`1
+    name: ITargetBlock
+    fullName: System.Threading.Tasks.Dataflow.ITargetBlock
+    href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TOutput
+    fullName: TOutput
+  - name: )
+    fullName: )
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Dataflow.IDataflowBlock.Completion
+  parent: System.Threading.Tasks.Dataflow.IDataflowBlock
+  isExternal: false
+  href: System.Threading.Tasks.Dataflow.IDataflowBlock.yml
+  name: Completion
+  fullName: System.Threading.Tasks.Dataflow.IDataflowBlock.Completion
+- uid: System.Threading.Tasks.Dataflow.IDataflowBlock.Complete
+  parent: System.Threading.Tasks.Dataflow.IDataflowBlock
+  isExternal: false
+  href: System.Threading.Tasks.Dataflow.IDataflowBlock.yml
+  name: Complete()
+  fullName: System.Threading.Tasks.Dataflow.IDataflowBlock.Complete()
+  spec.csharp:
+  - uid: System.Threading.Tasks.Dataflow.IDataflowBlock.Complete
+    name: Complete
+    fullName: System.Threading.Tasks.Dataflow.IDataflowBlock.Complete
+    href: System.Threading.Tasks.Dataflow.IDataflowBlock.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.Tasks.Dataflow.IDataflowBlock.Complete
+    name: Complete
+    fullName: System.Threading.Tasks.Dataflow.IDataflowBlock.Complete
+    href: System.Threading.Tasks.Dataflow.IDataflowBlock.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Dataflow.IDataflowBlock.Fault(System.Exception)
+  parent: System.Threading.Tasks.Dataflow.IDataflowBlock
+  isExternal: true
+  href: System.Threading.Tasks.Dataflow.IDataflowBlock.yml
+  name: Fault(Exception)
+  fullName: System.Threading.Tasks.Dataflow.IDataflowBlock.Fault(System.Exception)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Dataflow.IDataflowBlock.Fault(System.Exception)
+    name: Fault
+    fullName: System.Threading.Tasks.Dataflow.IDataflowBlock.Fault
+    href: System.Threading.Tasks.Dataflow.IDataflowBlock.yml
+  - name: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.Tasks.Dataflow.IDataflowBlock.Fault(System.Exception)
+    name: Fault
+    fullName: System.Threading.Tasks.Dataflow.IDataflowBlock.Fault
+    href: System.Threading.Tasks.Dataflow.IDataflowBlock.yml
+  - name: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Dataflow.ITargetBlock`1.OfferMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,{TInput},System.Threading.Tasks.Dataflow.ISourceBlock{{TInput}},System.Boolean)
+  parent: System.Threading.Tasks.Dataflow.ITargetBlock`1
+  isExternal: true
+  href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  name: OfferMessage(DataflowMessageHeader, TInput, ISourceBlock<TInput>, Boolean)
+  name.vb: OfferMessage(DataflowMessageHeader, TInput, ISourceBlock(Of TInput), Boolean)
+  fullName: System.Threading.Tasks.Dataflow.ITargetBlock<TInput>.OfferMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader, TInput, System.Threading.Tasks.Dataflow.ISourceBlock<TInput>, System.Boolean)
+  fullName.vb: System.Threading.Tasks.Dataflow.ITargetBlock(Of TInput).OfferMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader, TInput, System.Threading.Tasks.Dataflow.ISourceBlock(Of TInput), System.Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Dataflow.ITargetBlock`1.OfferMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,`0,System.Threading.Tasks.Dataflow.ISourceBlock{`0},System.Boolean)
+    name: OfferMessage
+    fullName: System.Threading.Tasks.Dataflow.ITargetBlock<TInput>.OfferMessage
+    href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+    name: DataflowMessageHeader
+    fullName: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+    href: System.Threading.Tasks.Dataflow.DataflowMessageHeader.yml
+  - name: ', '
+    fullName: ', '
+  - name: TInput
+    fullName: TInput
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Dataflow.ISourceBlock`1
+    name: ISourceBlock
+    fullName: System.Threading.Tasks.Dataflow.ISourceBlock
+    href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  - name: <
+    fullName: <
+  - name: TInput
+    fullName: TInput
+  - name: '>'
+    fullName: '>'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.Tasks.Dataflow.ITargetBlock`1.OfferMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,`0,System.Threading.Tasks.Dataflow.ISourceBlock{`0},System.Boolean)
+    name: OfferMessage
+    fullName: System.Threading.Tasks.Dataflow.ITargetBlock(Of TInput).OfferMessage
+    href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+    name: DataflowMessageHeader
+    fullName: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+    href: System.Threading.Tasks.Dataflow.DataflowMessageHeader.yml
+  - name: ', '
+    fullName: ', '
+  - name: TInput
+    fullName: TInput
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Dataflow.ISourceBlock`1
+    name: ISourceBlock
+    fullName: System.Threading.Tasks.Dataflow.ISourceBlock
+    href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TInput
+    fullName: TInput
+  - name: )
+    fullName: )
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Dataflow.ITargetBlock{{TInput}}
+  parent: System.Threading.Tasks.Dataflow
+  definition: System.Threading.Tasks.Dataflow.ITargetBlock`1
+  href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  name: ITargetBlock<TInput>
+  name.vb: ITargetBlock(Of TInput)
+  fullName: System.Threading.Tasks.Dataflow.ITargetBlock<TInput>
+  fullName.vb: System.Threading.Tasks.Dataflow.ITargetBlock(Of TInput)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Dataflow.ITargetBlock`1
+    name: ITargetBlock
+    fullName: System.Threading.Tasks.Dataflow.ITargetBlock
+    href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  - name: <
+    fullName: <
+  - name: TInput
+    fullName: TInput
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Dataflow.ITargetBlock`1
+    name: ITargetBlock
+    fullName: System.Threading.Tasks.Dataflow.ITargetBlock
+    href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TInput
+    fullName: TInput
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Dataflow.ISourceBlock`1.LinkTo(System.Threading.Tasks.Dataflow.ITargetBlock{{TOutput}},System.Threading.Tasks.Dataflow.DataflowLinkOptions)
+  parent: System.Threading.Tasks.Dataflow.ISourceBlock`1
+  isExternal: false
+  href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  name: LinkTo(ITargetBlock<TOutput>, DataflowLinkOptions)
+  name.vb: LinkTo(ITargetBlock(Of TOutput), DataflowLinkOptions)
+  fullName: System.Threading.Tasks.Dataflow.ISourceBlock<TOutput>.LinkTo(System.Threading.Tasks.Dataflow.ITargetBlock<TOutput>, System.Threading.Tasks.Dataflow.DataflowLinkOptions)
+  fullName.vb: System.Threading.Tasks.Dataflow.ISourceBlock(Of TOutput).LinkTo(System.Threading.Tasks.Dataflow.ITargetBlock(Of TOutput), System.Threading.Tasks.Dataflow.DataflowLinkOptions)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Dataflow.ISourceBlock`1.LinkTo(System.Threading.Tasks.Dataflow.ITargetBlock{`0},System.Threading.Tasks.Dataflow.DataflowLinkOptions)
+    name: LinkTo
+    fullName: System.Threading.Tasks.Dataflow.ISourceBlock<TOutput>.LinkTo
+    href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.Tasks.Dataflow.ITargetBlock`1
+    name: ITargetBlock
+    fullName: System.Threading.Tasks.Dataflow.ITargetBlock
+    href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  - name: <
+    fullName: <
+  - name: TOutput
+    fullName: TOutput
+  - name: '>'
+    fullName: '>'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Dataflow.DataflowLinkOptions
+    name: DataflowLinkOptions
+    fullName: System.Threading.Tasks.Dataflow.DataflowLinkOptions
+    href: System.Threading.Tasks.Dataflow.DataflowLinkOptions.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.Tasks.Dataflow.ISourceBlock`1.LinkTo(System.Threading.Tasks.Dataflow.ITargetBlock{`0},System.Threading.Tasks.Dataflow.DataflowLinkOptions)
+    name: LinkTo
+    fullName: System.Threading.Tasks.Dataflow.ISourceBlock(Of TOutput).LinkTo
+    href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.Tasks.Dataflow.ITargetBlock`1
+    name: ITargetBlock
+    fullName: System.Threading.Tasks.Dataflow.ITargetBlock
+    href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TOutput
+    fullName: TOutput
+  - name: )
+    fullName: )
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Dataflow.DataflowLinkOptions
+    name: DataflowLinkOptions
+    fullName: System.Threading.Tasks.Dataflow.DataflowLinkOptions
+    href: System.Threading.Tasks.Dataflow.DataflowLinkOptions.yml
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Dataflow.ISourceBlock{{TOutput}}
+  parent: System.Threading.Tasks.Dataflow
+  definition: System.Threading.Tasks.Dataflow.ISourceBlock`1
+  href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  name: ISourceBlock<TOutput>
+  name.vb: ISourceBlock(Of TOutput)
+  fullName: System.Threading.Tasks.Dataflow.ISourceBlock<TOutput>
+  fullName.vb: System.Threading.Tasks.Dataflow.ISourceBlock(Of TOutput)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Dataflow.ISourceBlock`1
+    name: ISourceBlock
+    fullName: System.Threading.Tasks.Dataflow.ISourceBlock
+    href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  - name: <
+    fullName: <
+  - name: TOutput
+    fullName: TOutput
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Dataflow.ISourceBlock`1
+    name: ISourceBlock
+    fullName: System.Threading.Tasks.Dataflow.ISourceBlock
+    href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TOutput
+    fullName: TOutput
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Dataflow.ISourceBlock`1.ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{{TOutput}},System.Boolean@)
+  parent: System.Threading.Tasks.Dataflow.ISourceBlock`1
+  isExternal: true
+  href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  name: ConsumeMessage(DataflowMessageHeader, ITargetBlock<TOutput>, Boolean)
+  name.vb: ConsumeMessage(DataflowMessageHeader, ITargetBlock(Of TOutput), Boolean)
+  fullName: System.Threading.Tasks.Dataflow.ISourceBlock<TOutput>.ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader, System.Threading.Tasks.Dataflow.ITargetBlock<TOutput>, System.Boolean)
+  fullName.vb: System.Threading.Tasks.Dataflow.ISourceBlock(Of TOutput).ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader, System.Threading.Tasks.Dataflow.ITargetBlock(Of TOutput), System.Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Dataflow.ISourceBlock`1.ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0},System.Boolean@)
+    name: ConsumeMessage
+    fullName: System.Threading.Tasks.Dataflow.ISourceBlock<TOutput>.ConsumeMessage
+    href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+    name: DataflowMessageHeader
+    fullName: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+    href: System.Threading.Tasks.Dataflow.DataflowMessageHeader.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Dataflow.ITargetBlock`1
+    name: ITargetBlock
+    fullName: System.Threading.Tasks.Dataflow.ITargetBlock
+    href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  - name: <
+    fullName: <
+  - name: TOutput
+    fullName: TOutput
+  - name: '>'
+    fullName: '>'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.Tasks.Dataflow.ISourceBlock`1.ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0},System.Boolean@)
+    name: ConsumeMessage
+    fullName: System.Threading.Tasks.Dataflow.ISourceBlock(Of TOutput).ConsumeMessage
+    href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+    name: DataflowMessageHeader
+    fullName: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+    href: System.Threading.Tasks.Dataflow.DataflowMessageHeader.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Dataflow.ITargetBlock`1
+    name: ITargetBlock
+    fullName: System.Threading.Tasks.Dataflow.ITargetBlock
+    href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TOutput
+    fullName: TOutput
+  - name: )
+    fullName: )
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Dataflow.ISourceBlock`1.ReserveMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{{TOutput}})
+  parent: System.Threading.Tasks.Dataflow.ISourceBlock`1
+  isExternal: false
+  href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  name: ReserveMessage(DataflowMessageHeader, ITargetBlock<TOutput>)
+  name.vb: ReserveMessage(DataflowMessageHeader, ITargetBlock(Of TOutput))
+  fullName: System.Threading.Tasks.Dataflow.ISourceBlock<TOutput>.ReserveMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader, System.Threading.Tasks.Dataflow.ITargetBlock<TOutput>)
+  fullName.vb: System.Threading.Tasks.Dataflow.ISourceBlock(Of TOutput).ReserveMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader, System.Threading.Tasks.Dataflow.ITargetBlock(Of TOutput))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Dataflow.ISourceBlock`1.ReserveMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0})
+    name: ReserveMessage
+    fullName: System.Threading.Tasks.Dataflow.ISourceBlock<TOutput>.ReserveMessage
+    href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+    name: DataflowMessageHeader
+    fullName: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+    href: System.Threading.Tasks.Dataflow.DataflowMessageHeader.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Dataflow.ITargetBlock`1
+    name: ITargetBlock
+    fullName: System.Threading.Tasks.Dataflow.ITargetBlock
+    href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  - name: <
+    fullName: <
+  - name: TOutput
+    fullName: TOutput
+  - name: '>'
+    fullName: '>'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.Tasks.Dataflow.ISourceBlock`1.ReserveMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0})
+    name: ReserveMessage
+    fullName: System.Threading.Tasks.Dataflow.ISourceBlock(Of TOutput).ReserveMessage
+    href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+    name: DataflowMessageHeader
+    fullName: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+    href: System.Threading.Tasks.Dataflow.DataflowMessageHeader.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Dataflow.ITargetBlock`1
+    name: ITargetBlock
+    fullName: System.Threading.Tasks.Dataflow.ITargetBlock
+    href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TOutput
+    fullName: TOutput
+  - name: )
+    fullName: )
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Dataflow.ISourceBlock`1.ReleaseReservation(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{{TOutput}})
+  parent: System.Threading.Tasks.Dataflow.ISourceBlock`1
+  isExternal: false
+  href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  name: ReleaseReservation(DataflowMessageHeader, ITargetBlock<TOutput>)
+  name.vb: ReleaseReservation(DataflowMessageHeader, ITargetBlock(Of TOutput))
+  fullName: System.Threading.Tasks.Dataflow.ISourceBlock<TOutput>.ReleaseReservation(System.Threading.Tasks.Dataflow.DataflowMessageHeader, System.Threading.Tasks.Dataflow.ITargetBlock<TOutput>)
+  fullName.vb: System.Threading.Tasks.Dataflow.ISourceBlock(Of TOutput).ReleaseReservation(System.Threading.Tasks.Dataflow.DataflowMessageHeader, System.Threading.Tasks.Dataflow.ITargetBlock(Of TOutput))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Dataflow.ISourceBlock`1.ReleaseReservation(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0})
+    name: ReleaseReservation
+    fullName: System.Threading.Tasks.Dataflow.ISourceBlock<TOutput>.ReleaseReservation
+    href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+    name: DataflowMessageHeader
+    fullName: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+    href: System.Threading.Tasks.Dataflow.DataflowMessageHeader.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Dataflow.ITargetBlock`1
+    name: ITargetBlock
+    fullName: System.Threading.Tasks.Dataflow.ITargetBlock
+    href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  - name: <
+    fullName: <
+  - name: TOutput
+    fullName: TOutput
+  - name: '>'
+    fullName: '>'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.Tasks.Dataflow.ISourceBlock`1.ReleaseReservation(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0})
+    name: ReleaseReservation
+    fullName: System.Threading.Tasks.Dataflow.ISourceBlock(Of TOutput).ReleaseReservation
+    href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+    name: DataflowMessageHeader
+    fullName: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+    href: System.Threading.Tasks.Dataflow.DataflowMessageHeader.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Dataflow.ITargetBlock`1
+    name: ITargetBlock
+    fullName: System.Threading.Tasks.Dataflow.ITargetBlock
+    href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TOutput
+    fullName: TOutput
+  - name: )
+    fullName: )
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Dataflow.IDataflowBlock
+  isExternal: false
+  href: System.Threading.Tasks.Dataflow.IDataflowBlock.yml
+  name: IDataflowBlock
+  fullName: System.Threading.Tasks.Dataflow.IDataflowBlock
+  type: Interface
+  summary: Represents a dataflow block.
+- uid: System.Threading.Tasks.Dataflow.ITargetBlock`1
+  parent: System.Threading.Tasks.Dataflow
+  isExternal: false
+  href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  name: ITargetBlock<TInput>
+  name.vb: ITargetBlock(Of TInput)
+  fullName: System.Threading.Tasks.Dataflow.ITargetBlock<TInput>
+  fullName.vb: System.Threading.Tasks.Dataflow.ITargetBlock(Of TInput)
+  type: Interface
+  summary: Represents a dataflow block that is a target for data.
+  spec.csharp:
+  - uid: System.Threading.Tasks.Dataflow.ITargetBlock`1
+    name: ITargetBlock
+    fullName: System.Threading.Tasks.Dataflow.ITargetBlock
+    href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  - name: <
+    fullName: <
+  - name: TInput
+    fullName: TInput
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Dataflow.ITargetBlock`1
+    name: ITargetBlock
+    fullName: System.Threading.Tasks.Dataflow.ITargetBlock
+    href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TInput
+    fullName: TInput
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Dataflow.ISourceBlock`1
+  parent: System.Threading.Tasks.Dataflow
+  isExternal: false
+  href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  name: ISourceBlock<TOutput>
+  name.vb: ISourceBlock(Of TOutput)
+  fullName: System.Threading.Tasks.Dataflow.ISourceBlock<TOutput>
+  fullName.vb: System.Threading.Tasks.Dataflow.ISourceBlock(Of TOutput)
+  type: Interface
+  summary: Represents a dataflow block that is a source of data.
+  spec.csharp:
+  - uid: System.Threading.Tasks.Dataflow.ISourceBlock`1
+    name: ISourceBlock
+    fullName: System.Threading.Tasks.Dataflow.ISourceBlock
+    href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  - name: <
+    fullName: <
+  - name: TOutput
+    fullName: TOutput
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Dataflow.ISourceBlock`1
+    name: ISourceBlock
+    fullName: System.Threading.Tasks.Dataflow.ISourceBlock
+    href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TOutput
+    fullName: TOutput
+  - name: )
+    fullName: )

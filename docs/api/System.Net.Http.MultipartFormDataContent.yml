@@ -1,0 +1,882 @@
+items:
+- uid: System.Net.Http.MultipartFormDataContent
+  id: MultipartFormDataContent
+  parent: System.Net.Http
+  children:
+  - System.Net.Http.MultipartFormDataContent.#ctor
+  - System.Net.Http.MultipartFormDataContent.#ctor(System.String)
+  - System.Net.Http.MultipartFormDataContent.Add(System.Net.Http.HttpContent)
+  - System.Net.Http.MultipartFormDataContent.Add(System.Net.Http.HttpContent,System.String)
+  - System.Net.Http.MultipartFormDataContent.Add(System.Net.Http.HttpContent,System.String,System.String)
+  href: System.Net.Http.MultipartFormDataContent.yml
+  name: MultipartFormDataContent
+  fullName: System.Net.Http.MultipartFormDataContent
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Net.Http/src/System/Net/Http/MultipartFormDataContent.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Net.Http/src/System/Net/Http/MultipartFormDataContent.cs
+    startLine: 9
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: Provides a container for content encoded using multipart/form-data MIME type.
+  syntax:
+    content: 'public class MultipartFormDataContent : MultipartContent, IDisposable, IEnumerable<HttpContent>, IEnumerable'
+    content.vb: Public Class MultipartFormDataContent Inherits MultipartContent Implements IDisposable, IEnumerable(Of HttpContent), IEnumerable
+  inheritance:
+  - System.Object
+  - System.Net.Http.HttpContent
+  - System.Net.Http.MultipartContent
+  implements:
+  - System.IDisposable
+  - System.Collections.Generic.IEnumerable{System.Net.Http.HttpContent}
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Net.Http.MultipartContent.Dispose(System.Boolean)
+  - System.Net.Http.MultipartContent.GetEnumerator
+  - System.Net.Http.MultipartContent.System#Collections#IEnumerable#GetEnumerator
+  - System.Net.Http.MultipartContent.SerializeToStreamAsync(System.IO.Stream,TransportContext)
+  - System.Net.Http.MultipartContent.TryComputeLength(System.Int64@)
+  - System.Net.Http.HttpContent.Headers
+  - System.Net.Http.HttpContent.ReadAsStringAsync
+  - System.Net.Http.HttpContent.ReadAsByteArrayAsync
+  - System.Net.Http.HttpContent.ReadAsStreamAsync
+  - System.Net.Http.HttpContent.CopyToAsync(System.IO.Stream,TransportContext)
+  - System.Net.Http.HttpContent.CopyToAsync(System.IO.Stream)
+  - System.Net.Http.HttpContent.LoadIntoBufferAsync
+  - System.Net.Http.HttpContent.LoadIntoBufferAsync(System.Int64)
+  - System.Net.Http.HttpContent.CreateContentReadStreamAsync
+  - System.Net.Http.HttpContent.Dispose
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Net.Http.MultipartFormDataContent.#ctor
+  id: '#ctor'
+  parent: System.Net.Http.MultipartFormDataContent
+  href: System.Net.Http.MultipartFormDataContent.yml
+  name: MultipartFormDataContent()
+  fullName: System.Net.Http.MultipartFormDataContent.MultipartFormDataContent()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/MultipartFormDataContent.cs
+    startLine: 16
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: Creates a new instance of the @'System.Net.Http.MultipartFormDataContent' class.
+  syntax:
+    content: public MultipartFormDataContent()
+    content.vb: Public Sub New
+- uid: System.Net.Http.MultipartFormDataContent.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: System.Net.Http.MultipartFormDataContent
+  href: System.Net.Http.MultipartFormDataContent.yml
+  name: MultipartFormDataContent(String)
+  fullName: System.Net.Http.MultipartFormDataContent.MultipartFormDataContent(System.String)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/MultipartFormDataContent.cs
+    startLine: 21
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: Creates a new instance of the @'System.Net.Http.MultipartFormDataContent' class.
+  syntax:
+    content: public MultipartFormDataContent(string boundary)
+    content.vb: Public Sub New(boundary As String)
+    parameters:
+    - id: boundary
+      type: System.String
+      description: The boundary string for the multipart form data content.
+  exceptions:
+  - type: System.ArgumentException
+    description: The *boundary* was null or contains only white space characters.-or-The *boundary* ends with a space character.
+  - type: System.OutOfRangeException
+    description: The length of the *boundary* was greater than 70.
+- uid: System.Net.Http.MultipartFormDataContent.Add(System.Net.Http.HttpContent)
+  id: Add(System.Net.Http.HttpContent)
+  parent: System.Net.Http.MultipartFormDataContent
+  href: System.Net.Http.MultipartFormDataContent.yml
+  name: Add(HttpContent)
+  fullName: System.Net.Http.MultipartFormDataContent.Add(System.Net.Http.HttpContent)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/MultipartFormDataContent.cs
+    startLine: 26
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: Add HTTP content to a collection of @'System.Net.Http.HttpContent' objects that get serialized to multipart/form-data MIME type.
+  syntax:
+    content: public override void Add(HttpContent content)
+    content.vb: Public Overrides Sub Add(content As HttpContent)
+    parameters:
+    - id: content
+      type: System.Net.Http.HttpContent
+      description: The HTTP content to add to the collection.
+  overridden: System.Net.Http.MultipartContent.Add(System.Net.Http.HttpContent)
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *content* was null.
+- uid: System.Net.Http.MultipartFormDataContent.Add(System.Net.Http.HttpContent,System.String)
+  id: Add(System.Net.Http.HttpContent,System.String)
+  parent: System.Net.Http.MultipartFormDataContent
+  href: System.Net.Http.MultipartFormDataContent.yml
+  name: Add(HttpContent, String)
+  fullName: System.Net.Http.MultipartFormDataContent.Add(System.Net.Http.HttpContent, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/MultipartFormDataContent.cs
+    startLine: 42
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: Add HTTP content to a collection of @'System.Net.Http.HttpContent' objects that get serialized to multipart/form-data MIME type.
+  syntax:
+    content: public void Add(HttpContent content, string name)
+    content.vb: Public Sub Add(content As HttpContent, name As String)
+    parameters:
+    - id: content
+      type: System.Net.Http.HttpContent
+      description: The HTTP content to add to the collection.
+    - id: name
+      type: System.String
+      description: The name for the HTTP content to add.
+  exceptions:
+  - type: System.ArgumentException
+    description: The *name* was null or contains only white space characters.
+  - type: System.ArgumentNullException
+    description: The *content* was null.
+- uid: System.Net.Http.MultipartFormDataContent.Add(System.Net.Http.HttpContent,System.String,System.String)
+  id: Add(System.Net.Http.HttpContent,System.String,System.String)
+  parent: System.Net.Http.MultipartFormDataContent
+  href: System.Net.Http.MultipartFormDataContent.yml
+  name: Add(HttpContent, String, String)
+  fullName: System.Net.Http.MultipartFormDataContent.Add(System.Net.Http.HttpContent, System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/MultipartFormDataContent.cs
+    startLine: 57
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: Add HTTP content to a collection of @'System.Net.Http.HttpContent' objects that get serialized to multipart/form-data MIME type.
+  syntax:
+    content: public void Add(HttpContent content, string name, string fileName)
+    content.vb: Public Sub Add(content As HttpContent, name As String, fileName As String)
+    parameters:
+    - id: content
+      type: System.Net.Http.HttpContent
+      description: The HTTP content to add to the collection.
+    - id: name
+      type: System.String
+      description: The name for the HTTP content to add.
+    - id: fileName
+      type: System.String
+      description: The file name for the HTTP content to add to the collection.
+  exceptions:
+  - type: System.ArgumentException
+    description: The *name* was null or contains only white space characters.-or-The *fileName* was null or contains only white space characters.
+  - type: System.ArgumentNullException
+    description: The *content* was null.
+references:
+- uid: System.Net.Http
+  isExternal: false
+  name: System.Net.Http
+  fullName: System.Net.Http
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Net.Http.HttpContent
+  parent: System.Net.Http
+  isExternal: false
+  href: System.Net.Http.HttpContent.yml
+  name: HttpContent
+  fullName: System.Net.Http.HttpContent
+  type: Class
+- uid: System.Net.Http.MultipartContent
+  isExternal: false
+  href: System.Net.Http.MultipartContent.yml
+  name: MultipartContent
+  fullName: System.Net.Http.MultipartContent
+  type: Class
+- uid: System.Net.Http.MultipartContent.Dispose(System.Boolean)
+  parent: System.Net.Http.MultipartContent
+  isExternal: true
+  href: System.Net.Http.MultipartContent.yml
+  name: Dispose(Boolean)
+  fullName: System.Net.Http.MultipartContent.Dispose(System.Boolean)
+  spec.csharp:
+  - uid: System.Net.Http.MultipartContent.Dispose(System.Boolean)
+    name: Dispose
+    fullName: System.Net.Http.MultipartContent.Dispose
+    href: System.Net.Http.MultipartContent.yml
+  - name: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.MultipartContent.Dispose(System.Boolean)
+    name: Dispose
+    fullName: System.Net.Http.MultipartContent.Dispose
+    href: System.Net.Http.MultipartContent.yml
+  - name: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Net.Http.MultipartContent.GetEnumerator
+  parent: System.Net.Http.MultipartContent
+  isExternal: false
+  href: System.Net.Http.MultipartContent.yml
+  name: GetEnumerator()
+  fullName: System.Net.Http.MultipartContent.GetEnumerator()
+  spec.csharp:
+  - uid: System.Net.Http.MultipartContent.GetEnumerator
+    name: GetEnumerator
+    fullName: System.Net.Http.MultipartContent.GetEnumerator
+    href: System.Net.Http.MultipartContent.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.MultipartContent.GetEnumerator
+    name: GetEnumerator
+    fullName: System.Net.Http.MultipartContent.GetEnumerator
+    href: System.Net.Http.MultipartContent.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Net.Http.MultipartContent.System#Collections#IEnumerable#GetEnumerator
+  parent: System.Net.Http.MultipartContent
+  isExternal: false
+  href: System.Net.Http.MultipartContent.yml
+  name: IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: System.Net.Http.MultipartContent.System.Collections.IEnumerable.GetEnumerator()
+  spec.csharp:
+  - uid: System.Net.Http.MultipartContent.System#Collections#IEnumerable#GetEnumerator
+    name: IEnumerable.GetEnumerator
+    fullName: System.Net.Http.MultipartContent.System.Collections.IEnumerable.GetEnumerator
+    href: System.Net.Http.MultipartContent.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.MultipartContent.System#Collections#IEnumerable#GetEnumerator
+    name: System.Collections.IEnumerable.GetEnumerator
+    fullName: System.Net.Http.MultipartContent.System.Collections.IEnumerable.GetEnumerator
+    href: System.Net.Http.MultipartContent.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Net.Http.MultipartContent.SerializeToStreamAsync(System.IO.Stream,TransportContext)
+  parent: System.Net.Http.MultipartContent
+  isExternal: true
+  href: System.Net.Http.MultipartContent.yml
+  name: SerializeToStreamAsync(Stream, TransportContext)
+  fullName: System.Net.Http.MultipartContent.SerializeToStreamAsync(System.IO.Stream, TransportContext)
+  spec.csharp:
+  - uid: System.Net.Http.MultipartContent.SerializeToStreamAsync(System.IO.Stream,TransportContext)
+    name: SerializeToStreamAsync
+    fullName: System.Net.Http.MultipartContent.SerializeToStreamAsync
+    href: System.Net.Http.MultipartContent.yml
+  - name: (
+    fullName: (
+  - uid: System.IO.Stream
+    name: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: TransportContext
+    name: TransportContext
+    fullName: TransportContext
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.MultipartContent.SerializeToStreamAsync(System.IO.Stream,TransportContext)
+    name: SerializeToStreamAsync
+    fullName: System.Net.Http.MultipartContent.SerializeToStreamAsync
+    href: System.Net.Http.MultipartContent.yml
+  - name: (
+    fullName: (
+  - uid: System.IO.Stream
+    name: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: TransportContext
+    name: TransportContext
+    fullName: TransportContext
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Net.Http.MultipartContent.TryComputeLength(System.Int64@)
+  parent: System.Net.Http.MultipartContent
+  isExternal: true
+  href: System.Net.Http.MultipartContent.yml
+  name: TryComputeLength(Int64)
+  fullName: System.Net.Http.MultipartContent.TryComputeLength(System.Int64)
+  spec.csharp:
+  - uid: System.Net.Http.MultipartContent.TryComputeLength(System.Int64@)
+    name: TryComputeLength
+    fullName: System.Net.Http.MultipartContent.TryComputeLength
+    href: System.Net.Http.MultipartContent.yml
+  - name: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.MultipartContent.TryComputeLength(System.Int64@)
+    name: TryComputeLength
+    fullName: System.Net.Http.MultipartContent.TryComputeLength
+    href: System.Net.Http.MultipartContent.yml
+  - name: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Net.Http.HttpContent.Headers
+  parent: System.Net.Http.HttpContent
+  isExternal: false
+  href: System.Net.Http.HttpContent.yml
+  name: Headers
+  fullName: System.Net.Http.HttpContent.Headers
+- uid: System.Net.Http.HttpContent.ReadAsStringAsync
+  parent: System.Net.Http.HttpContent
+  isExternal: false
+  href: System.Net.Http.HttpContent.yml
+  name: ReadAsStringAsync()
+  fullName: System.Net.Http.HttpContent.ReadAsStringAsync()
+  spec.csharp:
+  - uid: System.Net.Http.HttpContent.ReadAsStringAsync
+    name: ReadAsStringAsync
+    fullName: System.Net.Http.HttpContent.ReadAsStringAsync
+    href: System.Net.Http.HttpContent.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.HttpContent.ReadAsStringAsync
+    name: ReadAsStringAsync
+    fullName: System.Net.Http.HttpContent.ReadAsStringAsync
+    href: System.Net.Http.HttpContent.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Net.Http.HttpContent.ReadAsByteArrayAsync
+  parent: System.Net.Http.HttpContent
+  isExternal: false
+  href: System.Net.Http.HttpContent.yml
+  name: ReadAsByteArrayAsync()
+  fullName: System.Net.Http.HttpContent.ReadAsByteArrayAsync()
+  spec.csharp:
+  - uid: System.Net.Http.HttpContent.ReadAsByteArrayAsync
+    name: ReadAsByteArrayAsync
+    fullName: System.Net.Http.HttpContent.ReadAsByteArrayAsync
+    href: System.Net.Http.HttpContent.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.HttpContent.ReadAsByteArrayAsync
+    name: ReadAsByteArrayAsync
+    fullName: System.Net.Http.HttpContent.ReadAsByteArrayAsync
+    href: System.Net.Http.HttpContent.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Net.Http.HttpContent.ReadAsStreamAsync
+  parent: System.Net.Http.HttpContent
+  isExternal: false
+  href: System.Net.Http.HttpContent.yml
+  name: ReadAsStreamAsync()
+  fullName: System.Net.Http.HttpContent.ReadAsStreamAsync()
+  spec.csharp:
+  - uid: System.Net.Http.HttpContent.ReadAsStreamAsync
+    name: ReadAsStreamAsync
+    fullName: System.Net.Http.HttpContent.ReadAsStreamAsync
+    href: System.Net.Http.HttpContent.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.HttpContent.ReadAsStreamAsync
+    name: ReadAsStreamAsync
+    fullName: System.Net.Http.HttpContent.ReadAsStreamAsync
+    href: System.Net.Http.HttpContent.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Net.Http.HttpContent.CopyToAsync(System.IO.Stream,TransportContext)
+  parent: System.Net.Http.HttpContent
+  isExternal: true
+  href: System.Net.Http.HttpContent.yml
+  name: CopyToAsync(Stream, TransportContext)
+  fullName: System.Net.Http.HttpContent.CopyToAsync(System.IO.Stream, TransportContext)
+  spec.csharp:
+  - uid: System.Net.Http.HttpContent.CopyToAsync(System.IO.Stream,TransportContext)
+    name: CopyToAsync
+    fullName: System.Net.Http.HttpContent.CopyToAsync
+    href: System.Net.Http.HttpContent.yml
+  - name: (
+    fullName: (
+  - uid: System.IO.Stream
+    name: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: TransportContext
+    name: TransportContext
+    fullName: TransportContext
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.HttpContent.CopyToAsync(System.IO.Stream,TransportContext)
+    name: CopyToAsync
+    fullName: System.Net.Http.HttpContent.CopyToAsync
+    href: System.Net.Http.HttpContent.yml
+  - name: (
+    fullName: (
+  - uid: System.IO.Stream
+    name: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: TransportContext
+    name: TransportContext
+    fullName: TransportContext
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Net.Http.HttpContent.CopyToAsync(System.IO.Stream)
+  parent: System.Net.Http.HttpContent
+  isExternal: true
+  href: System.Net.Http.HttpContent.yml
+  name: CopyToAsync(Stream)
+  fullName: System.Net.Http.HttpContent.CopyToAsync(System.IO.Stream)
+  spec.csharp:
+  - uid: System.Net.Http.HttpContent.CopyToAsync(System.IO.Stream)
+    name: CopyToAsync
+    fullName: System.Net.Http.HttpContent.CopyToAsync
+    href: System.Net.Http.HttpContent.yml
+  - name: (
+    fullName: (
+  - uid: System.IO.Stream
+    name: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.HttpContent.CopyToAsync(System.IO.Stream)
+    name: CopyToAsync
+    fullName: System.Net.Http.HttpContent.CopyToAsync
+    href: System.Net.Http.HttpContent.yml
+  - name: (
+    fullName: (
+  - uid: System.IO.Stream
+    name: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Net.Http.HttpContent.LoadIntoBufferAsync
+  parent: System.Net.Http.HttpContent
+  isExternal: false
+  href: System.Net.Http.HttpContent.yml
+  name: LoadIntoBufferAsync()
+  fullName: System.Net.Http.HttpContent.LoadIntoBufferAsync()
+  spec.csharp:
+  - uid: System.Net.Http.HttpContent.LoadIntoBufferAsync
+    name: LoadIntoBufferAsync
+    fullName: System.Net.Http.HttpContent.LoadIntoBufferAsync
+    href: System.Net.Http.HttpContent.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.HttpContent.LoadIntoBufferAsync
+    name: LoadIntoBufferAsync
+    fullName: System.Net.Http.HttpContent.LoadIntoBufferAsync
+    href: System.Net.Http.HttpContent.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Net.Http.HttpContent.LoadIntoBufferAsync(System.Int64)
+  parent: System.Net.Http.HttpContent
+  isExternal: true
+  href: System.Net.Http.HttpContent.yml
+  name: LoadIntoBufferAsync(Int64)
+  fullName: System.Net.Http.HttpContent.LoadIntoBufferAsync(System.Int64)
+  spec.csharp:
+  - uid: System.Net.Http.HttpContent.LoadIntoBufferAsync(System.Int64)
+    name: LoadIntoBufferAsync
+    fullName: System.Net.Http.HttpContent.LoadIntoBufferAsync
+    href: System.Net.Http.HttpContent.yml
+  - name: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.HttpContent.LoadIntoBufferAsync(System.Int64)
+    name: LoadIntoBufferAsync
+    fullName: System.Net.Http.HttpContent.LoadIntoBufferAsync
+    href: System.Net.Http.HttpContent.yml
+  - name: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Net.Http.HttpContent.CreateContentReadStreamAsync
+  parent: System.Net.Http.HttpContent
+  isExternal: false
+  href: System.Net.Http.HttpContent.yml
+  name: CreateContentReadStreamAsync()
+  fullName: System.Net.Http.HttpContent.CreateContentReadStreamAsync()
+  spec.csharp:
+  - uid: System.Net.Http.HttpContent.CreateContentReadStreamAsync
+    name: CreateContentReadStreamAsync
+    fullName: System.Net.Http.HttpContent.CreateContentReadStreamAsync
+    href: System.Net.Http.HttpContent.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.HttpContent.CreateContentReadStreamAsync
+    name: CreateContentReadStreamAsync
+    fullName: System.Net.Http.HttpContent.CreateContentReadStreamAsync
+    href: System.Net.Http.HttpContent.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Net.Http.HttpContent.Dispose
+  parent: System.Net.Http.HttpContent
+  isExternal: false
+  href: System.Net.Http.HttpContent.yml
+  name: Dispose()
+  fullName: System.Net.Http.HttpContent.Dispose()
+  spec.csharp:
+  - uid: System.Net.Http.HttpContent.Dispose
+    name: Dispose
+    fullName: System.Net.Http.HttpContent.Dispose
+    href: System.Net.Http.HttpContent.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.HttpContent.Dispose
+    name: Dispose
+    fullName: System.Net.Http.HttpContent.Dispose
+    href: System.Net.Http.HttpContent.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Net.Http.MultipartContent.Add(System.Net.Http.HttpContent)
+  parent: System.Net.Http.MultipartContent
+  isExternal: false
+  href: System.Net.Http.MultipartContent.yml
+  name: Add(HttpContent)
+  fullName: System.Net.Http.MultipartContent.Add(System.Net.Http.HttpContent)
+  spec.csharp:
+  - uid: System.Net.Http.MultipartContent.Add(System.Net.Http.HttpContent)
+    name: Add
+    fullName: System.Net.Http.MultipartContent.Add
+    href: System.Net.Http.MultipartContent.yml
+  - name: (
+    fullName: (
+  - uid: System.Net.Http.HttpContent
+    name: HttpContent
+    fullName: System.Net.Http.HttpContent
+    href: System.Net.Http.HttpContent.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.MultipartContent.Add(System.Net.Http.HttpContent)
+    name: Add
+    fullName: System.Net.Http.MultipartContent.Add
+    href: System.Net.Http.MultipartContent.yml
+  - name: (
+    fullName: (
+  - uid: System.Net.Http.HttpContent
+    name: HttpContent
+    fullName: System.Net.Http.HttpContent
+    href: System.Net.Http.HttpContent.yml
+  - name: )
+    fullName: )

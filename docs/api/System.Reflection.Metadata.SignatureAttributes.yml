@@ -1,0 +1,115 @@
+items:
+- uid: System.Reflection.Metadata.SignatureAttributes
+  id: SignatureAttributes
+  parent: System.Reflection.Metadata
+  children:
+  - System.Reflection.Metadata.SignatureAttributes.ExplicitThis
+  - System.Reflection.Metadata.SignatureAttributes.Generic
+  - System.Reflection.Metadata.SignatureAttributes.Instance
+  - System.Reflection.Metadata.SignatureAttributes.None
+  href: System.Reflection.Metadata.SignatureAttributes.yml
+  name: SignatureAttributes
+  fullName: System.Reflection.Metadata.SignatureAttributes
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureAttributes.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureAttributes.cs
+    startLine: 10
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: >-
+    Specified additional flags that can be applied to method signatures.
+
+    Underlying values correspond to the representation in the leading signature
+
+    byte represented by @'System.Reflection.Metadata.SignatureHeader'.
+  syntax:
+    content: 'public enum SignatureAttributes : byte'
+    content.vb: Public Enum SignatureAttributes As Byte
+- uid: System.Reflection.Metadata.SignatureAttributes.None
+  id: None
+  parent: System.Reflection.Metadata.SignatureAttributes
+  href: System.Reflection.Metadata.SignatureAttributes.yml
+  name: None
+  fullName: System.Reflection.Metadata.SignatureAttributes.None
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureAttributes.cs
+    startLine: 16
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: No flags.
+  syntax:
+    content: None = 0
+- uid: System.Reflection.Metadata.SignatureAttributes.Generic
+  id: Generic
+  parent: System.Reflection.Metadata.SignatureAttributes
+  href: System.Reflection.Metadata.SignatureAttributes.yml
+  name: Generic
+  fullName: System.Reflection.Metadata.SignatureAttributes.Generic
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureAttributes.cs
+    startLine: 21
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Generic method.
+  syntax:
+    content: Generic = 16
+- uid: System.Reflection.Metadata.SignatureAttributes.Instance
+  id: Instance
+  parent: System.Reflection.Metadata.SignatureAttributes
+  href: System.Reflection.Metadata.SignatureAttributes.yml
+  name: Instance
+  fullName: System.Reflection.Metadata.SignatureAttributes.Instance
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureAttributes.cs
+    startLine: 27
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Instance method.
+  remarks: Ecma 335 CLI Specification refers to this flag as HAS_THIS.
+  syntax:
+    content: Instance = 32
+- uid: System.Reflection.Metadata.SignatureAttributes.ExplicitThis
+  id: ExplicitThis
+  parent: System.Reflection.Metadata.SignatureAttributes
+  href: System.Reflection.Metadata.SignatureAttributes.yml
+  name: ExplicitThis
+  fullName: System.Reflection.Metadata.SignatureAttributes.ExplicitThis
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureAttributes.cs
+    startLine: 32
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: The first explicitly declared parameter represents the instance pointer.
+  syntax:
+    content: ExplicitThis = 64
+references:
+- uid: System.Reflection.Metadata.SignatureHeader
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.SignatureHeader.yml
+  name: SignatureHeader
+  fullName: System.Reflection.Metadata.SignatureHeader
+  type: Struct
+  summary: Represents the signature characteristics specified by the leading byte of signature blobs.
+- uid: System.Reflection.Metadata
+  isExternal: false
+  name: System.Reflection.Metadata
+  fullName: System.Reflection.Metadata
+  type: Namespace

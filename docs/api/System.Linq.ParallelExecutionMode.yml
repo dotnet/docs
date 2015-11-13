@@ -1,0 +1,65 @@
+items:
+- uid: System.Linq.ParallelExecutionMode
+  id: ParallelExecutionMode
+  parent: System.Linq
+  children:
+  - System.Linq.ParallelExecutionMode.Default
+  - System.Linq.ParallelExecutionMode.ForceParallelism
+  href: System.Linq.ParallelExecutionMode.yml
+  name: ParallelExecutionMode
+  fullName: System.Linq.ParallelExecutionMode
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Linq.Parallel/src/System/Linq/ParallelExecutionMode.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Linq.Parallel/src/System/Linq/ParallelExecutionMode.cs
+    startLine: 19
+  assemblies:
+  - System.Linq.Parallel
+  namespace: System.Linq
+  summary: The query execution mode is a hint that specifies how the system should handle performance trade-offs when parallelizing queries.
+  syntax:
+    content: public enum ParallelExecutionMode
+    content.vb: Public Enum ParallelExecutionMode
+- uid: System.Linq.ParallelExecutionMode.Default
+  id: Default
+  parent: System.Linq.ParallelExecutionMode
+  href: System.Linq.ParallelExecutionMode.yml
+  name: Default
+  fullName: System.Linq.ParallelExecutionMode.Default
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Linq.Parallel/src/System/Linq/ParallelExecutionMode.cs
+    startLine: 26
+  assemblies:
+  - System.Linq.Parallel
+  namespace: System.Linq
+  summary: This is the default setting. PLINQ will examine the query's structure and will only parallelize the query if will likely result in speedup. If the query structure indicates that speedup is not likely to be obtained, then PLINQ will execute the query as an ordinary LINQ to Objects query.
+  syntax:
+    content: Default = 0
+- uid: System.Linq.ParallelExecutionMode.ForceParallelism
+  id: ForceParallelism
+  parent: System.Linq.ParallelExecutionMode
+  href: System.Linq.ParallelExecutionMode.yml
+  name: ForceParallelism
+  fullName: System.Linq.ParallelExecutionMode.ForceParallelism
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Linq.Parallel/src/System/Linq/ParallelExecutionMode.cs
+    startLine: 31
+  assemblies:
+  - System.Linq.Parallel
+  namespace: System.Linq
+  summary: Parallelize the entire query, even if that means using high-overhead algorithms. Use this flag in cases where you know that parallel execution of the query will result in speedup, but PLINQ in the Default mode would execute it as sequential.
+  syntax:
+    content: ForceParallelism = 1
+references:
+- uid: System.Linq
+  isExternal: false
+  name: System.Linq
+  fullName: System.Linq
+  type: Namespace

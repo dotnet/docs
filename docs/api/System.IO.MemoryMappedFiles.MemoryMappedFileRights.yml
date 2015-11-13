@@ -1,0 +1,263 @@
+items:
+- uid: System.IO.MemoryMappedFiles.MemoryMappedFileRights
+  id: MemoryMappedFileRights
+  parent: System.IO.MemoryMappedFiles
+  children:
+  - System.IO.MemoryMappedFiles.MemoryMappedFileRights.AccessSystemSecurity
+  - System.IO.MemoryMappedFiles.MemoryMappedFileRights.ChangePermissions
+  - System.IO.MemoryMappedFiles.MemoryMappedFileRights.CopyOnWrite
+  - System.IO.MemoryMappedFiles.MemoryMappedFileRights.Delete
+  - System.IO.MemoryMappedFiles.MemoryMappedFileRights.Execute
+  - System.IO.MemoryMappedFiles.MemoryMappedFileRights.FullControl
+  - System.IO.MemoryMappedFiles.MemoryMappedFileRights.Read
+  - System.IO.MemoryMappedFiles.MemoryMappedFileRights.ReadExecute
+  - System.IO.MemoryMappedFiles.MemoryMappedFileRights.ReadPermissions
+  - System.IO.MemoryMappedFiles.MemoryMappedFileRights.ReadWrite
+  - System.IO.MemoryMappedFiles.MemoryMappedFileRights.ReadWriteExecute
+  - System.IO.MemoryMappedFiles.MemoryMappedFileRights.TakeOwnership
+  - System.IO.MemoryMappedFiles.MemoryMappedFileRights.Write
+  href: System.IO.MemoryMappedFiles.MemoryMappedFileRights.yml
+  name: MemoryMappedFileRights
+  fullName: System.IO.MemoryMappedFiles.MemoryMappedFileRights
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.IO.MemoryMappedFiles/src/System/IO/MemoryMappedFiles/MemoryMappedFileRights.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.IO.MemoryMappedFiles/src/System/IO/MemoryMappedFiles/MemoryMappedFileRights.cs
+    startLine: 5
+  assemblies:
+  - System.IO.MemoryMappedFiles
+  namespace: System.IO.MemoryMappedFiles
+  summary: Specifies access rights to a memory-mapped file that is not associated with a file on disk.
+  syntax:
+    content: public enum MemoryMappedFileRights
+    content.vb: Public Enum MemoryMappedFileRights
+- uid: System.IO.MemoryMappedFiles.MemoryMappedFileRights.CopyOnWrite
+  id: CopyOnWrite
+  parent: System.IO.MemoryMappedFiles.MemoryMappedFileRights
+  href: System.IO.MemoryMappedFiles.MemoryMappedFileRights.yml
+  name: CopyOnWrite
+  fullName: System.IO.MemoryMappedFiles.MemoryMappedFileRights.CopyOnWrite
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.MemoryMappedFiles/src/System/IO/MemoryMappedFiles/MemoryMappedFileRights.cs
+    startLine: 9
+  assemblies:
+  - System.IO.MemoryMappedFiles
+  namespace: System.IO.MemoryMappedFiles
+  summary: The right to read and write to a file with the restriction that write operations will not be seen by other processes.
+  syntax:
+    content: CopyOnWrite = 1
+- uid: System.IO.MemoryMappedFiles.MemoryMappedFileRights.Write
+  id: Write
+  parent: System.IO.MemoryMappedFiles.MemoryMappedFileRights
+  href: System.IO.MemoryMappedFiles.MemoryMappedFileRights.yml
+  name: Write
+  fullName: System.IO.MemoryMappedFiles.MemoryMappedFileRights.Write
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.MemoryMappedFiles/src/System/IO/MemoryMappedFiles/MemoryMappedFileRights.cs
+    startLine: 10
+  assemblies:
+  - System.IO.MemoryMappedFiles
+  namespace: System.IO.MemoryMappedFiles
+  summary: The right to add data to a file or remove data from a file.
+  syntax:
+    content: Write = 2
+- uid: System.IO.MemoryMappedFiles.MemoryMappedFileRights.Read
+  id: Read
+  parent: System.IO.MemoryMappedFiles.MemoryMappedFileRights
+  href: System.IO.MemoryMappedFiles.MemoryMappedFileRights.yml
+  name: Read
+  fullName: System.IO.MemoryMappedFiles.MemoryMappedFileRights.Read
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.MemoryMappedFiles/src/System/IO/MemoryMappedFiles/MemoryMappedFileRights.cs
+    startLine: 11
+  assemblies:
+  - System.IO.MemoryMappedFiles
+  namespace: System.IO.MemoryMappedFiles
+  summary: The right to open and copy a file as read-only.
+  syntax:
+    content: Read = 4
+- uid: System.IO.MemoryMappedFiles.MemoryMappedFileRights.Execute
+  id: Execute
+  parent: System.IO.MemoryMappedFiles.MemoryMappedFileRights
+  href: System.IO.MemoryMappedFiles.MemoryMappedFileRights.yml
+  name: Execute
+  fullName: System.IO.MemoryMappedFiles.MemoryMappedFileRights.Execute
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.MemoryMappedFiles/src/System/IO/MemoryMappedFiles/MemoryMappedFileRights.cs
+    startLine: 12
+  assemblies:
+  - System.IO.MemoryMappedFiles
+  namespace: System.IO.MemoryMappedFiles
+  summary: The right to run an application file.
+  syntax:
+    content: Execute = 8
+- uid: System.IO.MemoryMappedFiles.MemoryMappedFileRights.Delete
+  id: Delete
+  parent: System.IO.MemoryMappedFiles.MemoryMappedFileRights
+  href: System.IO.MemoryMappedFiles.MemoryMappedFileRights.yml
+  name: Delete
+  fullName: System.IO.MemoryMappedFiles.MemoryMappedFileRights.Delete
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.MemoryMappedFiles/src/System/IO/MemoryMappedFiles/MemoryMappedFileRights.cs
+    startLine: 14
+  assemblies:
+  - System.IO.MemoryMappedFiles
+  namespace: System.IO.MemoryMappedFiles
+  summary: The right to delete a file.
+  syntax:
+    content: Delete = 65536
+- uid: System.IO.MemoryMappedFiles.MemoryMappedFileRights.ReadPermissions
+  id: ReadPermissions
+  parent: System.IO.MemoryMappedFiles.MemoryMappedFileRights
+  href: System.IO.MemoryMappedFiles.MemoryMappedFileRights.yml
+  name: ReadPermissions
+  fullName: System.IO.MemoryMappedFiles.MemoryMappedFileRights.ReadPermissions
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.MemoryMappedFiles/src/System/IO/MemoryMappedFiles/MemoryMappedFileRights.cs
+    startLine: 15
+  assemblies:
+  - System.IO.MemoryMappedFiles
+  namespace: System.IO.MemoryMappedFiles
+  summary: The right to open and copy access and audit rules from a file. This does not include the right to read data, file system attributes, or extended file system attributes.
+  syntax:
+    content: ReadPermissions = 131072
+- uid: System.IO.MemoryMappedFiles.MemoryMappedFileRights.ChangePermissions
+  id: ChangePermissions
+  parent: System.IO.MemoryMappedFiles.MemoryMappedFileRights
+  href: System.IO.MemoryMappedFiles.MemoryMappedFileRights.yml
+  name: ChangePermissions
+  fullName: System.IO.MemoryMappedFiles.MemoryMappedFileRights.ChangePermissions
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.MemoryMappedFiles/src/System/IO/MemoryMappedFiles/MemoryMappedFileRights.cs
+    startLine: 16
+  assemblies:
+  - System.IO.MemoryMappedFiles
+  namespace: System.IO.MemoryMappedFiles
+  summary: The right to change the security and audit rules associated with a file.
+  syntax:
+    content: ChangePermissions = 262144
+- uid: System.IO.MemoryMappedFiles.MemoryMappedFileRights.TakeOwnership
+  id: TakeOwnership
+  parent: System.IO.MemoryMappedFiles.MemoryMappedFileRights
+  href: System.IO.MemoryMappedFiles.MemoryMappedFileRights.yml
+  name: TakeOwnership
+  fullName: System.IO.MemoryMappedFiles.MemoryMappedFileRights.TakeOwnership
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.MemoryMappedFiles/src/System/IO/MemoryMappedFiles/MemoryMappedFileRights.cs
+    startLine: 17
+  assemblies:
+  - System.IO.MemoryMappedFiles
+  namespace: System.IO.MemoryMappedFiles
+  summary: The right to change the owner of a file.
+  syntax:
+    content: TakeOwnership = 524288
+- uid: System.IO.MemoryMappedFiles.MemoryMappedFileRights.ReadWrite
+  id: ReadWrite
+  parent: System.IO.MemoryMappedFiles.MemoryMappedFileRights
+  href: System.IO.MemoryMappedFiles.MemoryMappedFileRights.yml
+  name: ReadWrite
+  fullName: System.IO.MemoryMappedFiles.MemoryMappedFileRights.ReadWrite
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.MemoryMappedFiles/src/System/IO/MemoryMappedFiles/MemoryMappedFileRights.cs
+    startLine: 20
+  assemblies:
+  - System.IO.MemoryMappedFiles
+  namespace: System.IO.MemoryMappedFiles
+  summary: The right to open and copy a file, and the right to add data to a file or remove data from a file.
+  syntax:
+    content: ReadWrite = 6
+- uid: System.IO.MemoryMappedFiles.MemoryMappedFileRights.ReadExecute
+  id: ReadExecute
+  parent: System.IO.MemoryMappedFiles.MemoryMappedFileRights
+  href: System.IO.MemoryMappedFiles.MemoryMappedFileRights.yml
+  name: ReadExecute
+  fullName: System.IO.MemoryMappedFiles.MemoryMappedFileRights.ReadExecute
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.MemoryMappedFiles/src/System/IO/MemoryMappedFiles/MemoryMappedFileRights.cs
+    startLine: 21
+  assemblies:
+  - System.IO.MemoryMappedFiles
+  namespace: System.IO.MemoryMappedFiles
+  summary: The right to open and copy a folder or file as read-only, and to run application files. This right includes the @'System.IO.MemoryMappedFiles.MemoryMappedFileRights.Read' right and the @'System.IO.MemoryMappedFiles.MemoryMappedFileRights.Execute' right.
+  syntax:
+    content: ReadExecute = 12
+- uid: System.IO.MemoryMappedFiles.MemoryMappedFileRights.ReadWriteExecute
+  id: ReadWriteExecute
+  parent: System.IO.MemoryMappedFiles.MemoryMappedFileRights
+  href: System.IO.MemoryMappedFiles.MemoryMappedFileRights.yml
+  name: ReadWriteExecute
+  fullName: System.IO.MemoryMappedFiles.MemoryMappedFileRights.ReadWriteExecute
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.MemoryMappedFiles/src/System/IO/MemoryMappedFiles/MemoryMappedFileRights.cs
+    startLine: 22
+  assemblies:
+  - System.IO.MemoryMappedFiles
+  namespace: System.IO.MemoryMappedFiles
+  summary: The right to open and copy a file, the right to add data to a file or remove data from a file, and the right to run an application file.
+  syntax:
+    content: ReadWriteExecute = 14
+- uid: System.IO.MemoryMappedFiles.MemoryMappedFileRights.FullControl
+  id: FullControl
+  parent: System.IO.MemoryMappedFiles.MemoryMappedFileRights
+  href: System.IO.MemoryMappedFiles.MemoryMappedFileRights.yml
+  name: FullControl
+  fullName: System.IO.MemoryMappedFiles.MemoryMappedFileRights.FullControl
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.MemoryMappedFiles/src/System/IO/MemoryMappedFiles/MemoryMappedFileRights.cs
+    startLine: 24
+  assemblies:
+  - System.IO.MemoryMappedFiles
+  namespace: System.IO.MemoryMappedFiles
+  summary: The right to exert full control over a file, and to modify access control and audit rules. This value represents the right to do anything with a file and is the combination of all rights in this enumeration.
+  syntax:
+    content: FullControl = 983055
+- uid: System.IO.MemoryMappedFiles.MemoryMappedFileRights.AccessSystemSecurity
+  id: AccessSystemSecurity
+  parent: System.IO.MemoryMappedFiles.MemoryMappedFileRights
+  href: System.IO.MemoryMappedFiles.MemoryMappedFileRights.yml
+  name: AccessSystemSecurity
+  fullName: System.IO.MemoryMappedFiles.MemoryMappedFileRights.AccessSystemSecurity
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.MemoryMappedFiles/src/System/IO/MemoryMappedFiles/MemoryMappedFileRights.cs
+    startLine: 27
+  assemblies:
+  - System.IO.MemoryMappedFiles
+  namespace: System.IO.MemoryMappedFiles
+  summary: The right to get or set permissions on a file.
+  syntax:
+    content: AccessSystemSecurity = 16777216
+references:
+- uid: System.IO.MemoryMappedFiles
+  isExternal: false
+  name: System.IO.MemoryMappedFiles
+  fullName: System.IO.MemoryMappedFiles
+  type: Namespace

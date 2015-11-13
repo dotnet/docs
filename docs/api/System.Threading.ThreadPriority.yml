@@ -1,0 +1,118 @@
+items:
+- uid: System.Threading.ThreadPriority
+  id: ThreadPriority
+  parent: System.Threading
+  children:
+  - System.Threading.ThreadPriority.AboveNormal
+  - System.Threading.ThreadPriority.BelowNormal
+  - System.Threading.ThreadPriority.Highest
+  - System.Threading.ThreadPriority.Lowest
+  - System.Threading.ThreadPriority.Normal
+  href: System.Threading.ThreadPriority.yml
+  name: ThreadPriority
+  fullName: System.Threading.ThreadPriority
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Threading/ThreadPriority.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Threading/ThreadPriority.cs
+    startLine: 16
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Specifies the scheduling priority of a @'System.Threading.Thread'.
+  syntax:
+    content: public enum ThreadPriority
+    content.vb: Public Enum ThreadPriority
+- uid: System.Threading.ThreadPriority.Lowest
+  id: Lowest
+  parent: System.Threading.ThreadPriority
+  href: System.Threading.ThreadPriority.yml
+  name: Lowest
+  fullName: System.Threading.ThreadPriority.Lowest
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadPriority.cs
+    startLine: 23
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: The @'System.Threading.Thread' can be scheduled after threads with any other priority.
+  syntax:
+    content: Lowest = 0
+- uid: System.Threading.ThreadPriority.BelowNormal
+  id: BelowNormal
+  parent: System.Threading.ThreadPriority
+  href: System.Threading.ThreadPriority.yml
+  name: BelowNormal
+  fullName: System.Threading.ThreadPriority.BelowNormal
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadPriority.cs
+    startLine: 24
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: The @'System.Threading.Thread' can be scheduled after threads with Normal priority and before those with Lowest priority.
+  syntax:
+    content: BelowNormal = 1
+- uid: System.Threading.ThreadPriority.Normal
+  id: Normal
+  parent: System.Threading.ThreadPriority
+  href: System.Threading.ThreadPriority.yml
+  name: Normal
+  fullName: System.Threading.ThreadPriority.Normal
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadPriority.cs
+    startLine: 25
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: The @'System.Threading.Thread' can be scheduled after threads with AboveNormal priority and before those with BelowNormal priority. Threads have Normal priority by default.
+  syntax:
+    content: Normal = 2
+- uid: System.Threading.ThreadPriority.AboveNormal
+  id: AboveNormal
+  parent: System.Threading.ThreadPriority
+  href: System.Threading.ThreadPriority.yml
+  name: AboveNormal
+  fullName: System.Threading.ThreadPriority.AboveNormal
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadPriority.cs
+    startLine: 26
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: The @'System.Threading.Thread' can be scheduled after threads with Highest priority and before those with Normal priority.
+  syntax:
+    content: AboveNormal = 3
+- uid: System.Threading.ThreadPriority.Highest
+  id: Highest
+  parent: System.Threading.ThreadPriority
+  href: System.Threading.ThreadPriority.yml
+  name: Highest
+  fullName: System.Threading.ThreadPriority.Highest
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadPriority.cs
+    startLine: 27
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: The @'System.Threading.Thread' can be scheduled before threads with any other priority.
+  syntax:
+    content: Highest = 4
+references:
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading

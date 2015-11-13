@@ -1,0 +1,453 @@
+items:
+- uid: System.Net.WebUtility
+  id: WebUtility
+  parent: System.Net
+  children:
+  - System.Net.WebUtility.HtmlDecode(System.String)
+  - System.Net.WebUtility.HtmlEncode(System.String)
+  - System.Net.WebUtility.UrlDecode(System.String)
+  - System.Net.WebUtility.UrlDecodeToBytes(System.Byte[],System.Int32,System.Int32)
+  - System.Net.WebUtility.UrlEncode(System.String)
+  - System.Net.WebUtility.UrlEncodeToBytes(System.Byte[],System.Int32,System.Int32)
+  href: System.Net.WebUtility.yml
+  name: WebUtility
+  fullName: System.Net.WebUtility
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Runtime.Extensions/src/System/Net/WebUtility.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Runtime.Extensions/src/System/Net/WebUtility.cs
+    startLine: 17
+  assemblies:
+  - System.Runtime.Extensions.CoreCLR
+  namespace: System.Net
+  summary: Provides methods for encoding and decoding URLs when processing Web requests.
+  syntax:
+    content: public class WebUtility
+    content.vb: Public Class WebUtility
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Net.WebUtility.HtmlEncode(System.String)
+  id: HtmlEncode(System.String)
+  parent: System.Net.WebUtility
+  href: System.Net.WebUtility.yml
+  name: HtmlEncode(String)
+  fullName: System.Net.WebUtility.HtmlEncode(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Runtime.Extensions/src/System/Net/WebUtility.cs
+    startLine: 42
+  assemblies:
+  - System.Runtime.Extensions.CoreCLR
+  namespace: System.Net
+  summary: Converts a string to an HTML-encoded string.
+  syntax:
+    content: public static string HtmlEncode(string value)
+    content.vb: Public Shared Function HtmlEncode(value As String) As String
+    parameters:
+    - id: value
+      type: System.String
+      description: The string to encode.
+    return:
+      type: System.String
+- uid: System.Net.WebUtility.HtmlDecode(System.String)
+  id: HtmlDecode(System.String)
+  parent: System.Net.WebUtility
+  href: System.Net.WebUtility.yml
+  name: HtmlDecode(String)
+  fullName: System.Net.WebUtility.HtmlDecode(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Runtime.Extensions/src/System/Net/WebUtility.cs
+    startLine: 161
+  assemblies:
+  - System.Runtime.Extensions.CoreCLR
+  namespace: System.Net
+  summary: Converts a string that has been HTML-encoded for HTTP transmission into a decoded string.
+  syntax:
+    content: public static string HtmlDecode(string value)
+    content.vb: Public Shared Function HtmlDecode(value As String) As String
+    parameters:
+    - id: value
+      type: System.String
+      description: The string to decode.
+    return:
+      type: System.String
+- uid: System.Net.WebUtility.UrlEncode(System.String)
+  id: UrlEncode(System.String)
+  parent: System.Net.WebUtility
+  href: System.Net.WebUtility.yml
+  name: UrlEncode(String)
+  fullName: System.Net.WebUtility.UrlEncode(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Runtime.Extensions/src/System/Net/WebUtility.cs
+    startLine: 412
+  assemblies:
+  - System.Runtime.Extensions.CoreCLR
+  namespace: System.Net
+  summary: Converts a text string into a URL-encoded string.
+  syntax:
+    content: public static string UrlEncode(string value)
+    content.vb: Public Shared Function UrlEncode(value As String) As String
+    parameters:
+    - id: value
+      type: System.String
+      description: The text to URL-encode.
+    return:
+      type: System.String
+- uid: System.Net.WebUtility.UrlEncodeToBytes(System.Byte[],System.Int32,System.Int32)
+  id: UrlEncodeToBytes(System.Byte[],System.Int32,System.Int32)
+  parent: System.Net.WebUtility
+  href: System.Net.WebUtility.yml
+  name: UrlEncodeToBytes(Byte[], Int32, Int32)
+  name.vb: UrlEncodeToBytes(Byte(), Int32, Int32)
+  fullName: System.Net.WebUtility.UrlEncodeToBytes(System.Byte[], System.Int32, System.Int32)
+  fullName.vb: System.Net.WebUtility.UrlEncodeToBytes(System.Byte(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Runtime.Extensions/src/System/Net/WebUtility.cs
+    startLine: 423
+  assemblies:
+  - System.Runtime.Extensions.CoreCLR
+  namespace: System.Net
+  summary: Converts a byte array into a URL-encoded byte array.
+  syntax:
+    content: public static byte[] UrlEncodeToBytes(byte[] value, int offset, int count)
+    content.vb: Public Shared Function UrlEncodeToBytes(value As Byte(), offset As Integer, count As Integer) As Byte()
+    parameters:
+    - id: value
+      type: System.Byte[]
+      description: The @'System.Byte' array to URL-encode.
+    - id: offset
+      type: System.Int32
+      description: The offset, in bytes, from the start of the @'System.Byte' array to encode.
+    - id: count
+      type: System.Int32
+      description: The count, in bytes, to encode from the @'System.Byte' array.
+    return:
+      type: System.Byte[]
+- uid: System.Net.WebUtility.UrlDecode(System.String)
+  id: UrlDecode(System.String)
+  parent: System.Net.WebUtility
+  href: System.Net.WebUtility.yml
+  name: UrlDecode(String)
+  fullName: System.Net.WebUtility.UrlDecode(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Runtime.Extensions/src/System/Net/WebUtility.cs
+    startLine: 530
+  assemblies:
+  - System.Runtime.Extensions.CoreCLR
+  namespace: System.Net
+  summary: Converts a string that has been encoded for transmission in a URL into a decoded string.
+  syntax:
+    content: public static string UrlDecode(string encodedValue)
+    content.vb: Public Shared Function UrlDecode(encodedValue As String) As String
+    parameters:
+    - id: encodedValue
+      type: System.String
+      description: A URL-encoded string to decode.
+    return:
+      type: System.String
+- uid: System.Net.WebUtility.UrlDecodeToBytes(System.Byte[],System.Int32,System.Int32)
+  id: UrlDecodeToBytes(System.Byte[],System.Int32,System.Int32)
+  parent: System.Net.WebUtility
+  href: System.Net.WebUtility.yml
+  name: UrlDecodeToBytes(Byte[], Int32, Int32)
+  name.vb: UrlDecodeToBytes(Byte(), Int32, Int32)
+  fullName: System.Net.WebUtility.UrlDecodeToBytes(System.Byte[], System.Int32, System.Int32)
+  fullName.vb: System.Net.WebUtility.UrlDecodeToBytes(System.Byte(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Runtime.Extensions/src/System/Net/WebUtility.cs
+    startLine: 539
+  assemblies:
+  - System.Runtime.Extensions.CoreCLR
+  namespace: System.Net
+  summary: Converts an encoded byte array that has been encoded for transmission in a URL into a decoded byte array.
+  syntax:
+    content: public static byte[] UrlDecodeToBytes(byte[] encodedValue, int offset, int count)
+    content.vb: Public Shared Function UrlDecodeToBytes(encodedValue As Byte(), offset As Integer, count As Integer) As Byte()
+    parameters:
+    - id: encodedValue
+      type: System.Byte[]
+      description: A URL-encoded @'System.Byte' array to decode.
+    - id: offset
+      type: System.Int32
+      description: The offset, in bytes, from the start of the @'System.Byte' array to decode.
+    - id: count
+      type: System.Int32
+      description: The count, in bytes, to decode from the @'System.Byte' array.
+    return:
+      type: System.Byte[]
+references:
+- uid: System.Net
+  isExternal: false
+  name: System.Net
+  fullName: System.Net
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  name.vb: Byte()
+  fullName: System.Byte[]
+  fullName.vb: System.Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32

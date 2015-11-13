@@ -1,0 +1,119 @@
+items:
+- uid: System.Collections.Specialized.NotifyCollectionChangedAction
+  id: NotifyCollectionChangedAction
+  parent: System.Collections.Specialized
+  children:
+  - System.Collections.Specialized.NotifyCollectionChangedAction.Add
+  - System.Collections.Specialized.NotifyCollectionChangedAction.Move
+  - System.Collections.Specialized.NotifyCollectionChangedAction.Remove
+  - System.Collections.Specialized.NotifyCollectionChangedAction.Replace
+  - System.Collections.Specialized.NotifyCollectionChangedAction.Reset
+  href: System.Collections.Specialized.NotifyCollectionChangedAction.yml
+  name: NotifyCollectionChangedAction
+  fullName: System.Collections.Specialized.NotifyCollectionChangedAction
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.ObjectModel/src/System/Collections/Specialized/NotifyCollectionChangedEventArgs.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.ObjectModel/src/System/Collections/Specialized/NotifyCollectionChangedEventArgs.cs
+    startLine: 14
+  assemblies:
+  - System.ObjectModel
+  namespace: System.Collections.Specialized
+  summary: Describes the action that caused a @'System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged' event.
+  syntax:
+    content: public enum NotifyCollectionChangedAction
+    content.vb: Public Enum NotifyCollectionChangedAction
+- uid: System.Collections.Specialized.NotifyCollectionChangedAction.Add
+  id: Add
+  parent: System.Collections.Specialized.NotifyCollectionChangedAction
+  href: System.Collections.Specialized.NotifyCollectionChangedAction.yml
+  name: Add
+  fullName: System.Collections.Specialized.NotifyCollectionChangedAction.Add
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.ObjectModel/src/System/Collections/Specialized/NotifyCollectionChangedEventArgs.cs
+    startLine: 17
+  assemblies:
+  - System.ObjectModel
+  namespace: System.Collections.Specialized
+  summary: An item was added to the collection.
+  syntax:
+    content: Add = 0
+- uid: System.Collections.Specialized.NotifyCollectionChangedAction.Remove
+  id: Remove
+  parent: System.Collections.Specialized.NotifyCollectionChangedAction
+  href: System.Collections.Specialized.NotifyCollectionChangedAction.yml
+  name: Remove
+  fullName: System.Collections.Specialized.NotifyCollectionChangedAction.Remove
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.ObjectModel/src/System/Collections/Specialized/NotifyCollectionChangedEventArgs.cs
+    startLine: 19
+  assemblies:
+  - System.ObjectModel
+  namespace: System.Collections.Specialized
+  summary: An item was removed from the collection.
+  syntax:
+    content: Remove = 1
+- uid: System.Collections.Specialized.NotifyCollectionChangedAction.Replace
+  id: Replace
+  parent: System.Collections.Specialized.NotifyCollectionChangedAction
+  href: System.Collections.Specialized.NotifyCollectionChangedAction.yml
+  name: Replace
+  fullName: System.Collections.Specialized.NotifyCollectionChangedAction.Replace
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.ObjectModel/src/System/Collections/Specialized/NotifyCollectionChangedEventArgs.cs
+    startLine: 21
+  assemblies:
+  - System.ObjectModel
+  namespace: System.Collections.Specialized
+  summary: An item was replaced in the collection.
+  syntax:
+    content: Replace = 2
+- uid: System.Collections.Specialized.NotifyCollectionChangedAction.Move
+  id: Move
+  parent: System.Collections.Specialized.NotifyCollectionChangedAction
+  href: System.Collections.Specialized.NotifyCollectionChangedAction.yml
+  name: Move
+  fullName: System.Collections.Specialized.NotifyCollectionChangedAction.Move
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.ObjectModel/src/System/Collections/Specialized/NotifyCollectionChangedEventArgs.cs
+    startLine: 23
+  assemblies:
+  - System.ObjectModel
+  namespace: System.Collections.Specialized
+  summary: An item was moved within the collection.
+  syntax:
+    content: Move = 3
+- uid: System.Collections.Specialized.NotifyCollectionChangedAction.Reset
+  id: Reset
+  parent: System.Collections.Specialized.NotifyCollectionChangedAction
+  href: System.Collections.Specialized.NotifyCollectionChangedAction.yml
+  name: Reset
+  fullName: System.Collections.Specialized.NotifyCollectionChangedAction.Reset
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.ObjectModel/src/System/Collections/Specialized/NotifyCollectionChangedEventArgs.cs
+    startLine: 25
+  assemblies:
+  - System.ObjectModel
+  namespace: System.Collections.Specialized
+  summary: The content of the collection was cleared.
+  syntax:
+    content: Reset = 4
+references:
+- uid: System.Collections.Specialized
+  isExternal: false
+  name: System.Collections.Specialized
+  fullName: System.Collections.Specialized
+  type: Namespace

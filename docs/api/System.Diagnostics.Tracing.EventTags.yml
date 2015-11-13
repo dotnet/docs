@@ -1,0 +1,47 @@
+items:
+- uid: System.Diagnostics.Tracing.EventTags
+  id: EventTags
+  parent: System.Diagnostics.Tracing
+  children:
+  - System.Diagnostics.Tracing.EventTags.None
+  href: System.Diagnostics.Tracing.EventTags.yml
+  name: EventTags
+  fullName: System.Diagnostics.Tracing.EventTags
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Diagnostics/Eventing/TraceLogging/TraceLoggingEventTraits.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Diagnostics/Eventing/TraceLogging/TraceLoggingEventTraits.cs
+    startLine: 15
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Specifies the tracking of activity start and stop events. You should only use the lower 24 bits. For more information, see @'System.Diagnostics.Tracing.EventSourceOptions' and @'System.Diagnostics.Tracing.EventSource.Write(System.String,System.Diagnostics.Tracing.EventSourceOptions)'.
+  syntax:
+    content: public enum EventTags
+    content.vb: Public Enum EventTags
+- uid: System.Diagnostics.Tracing.EventTags.None
+  id: None
+  parent: System.Diagnostics.Tracing.EventTags
+  href: System.Diagnostics.Tracing.EventTags.yml
+  name: None
+  fullName: System.Diagnostics.Tracing.EventTags.None
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/TraceLogging/TraceLoggingEventTraits.cs
+    startLine: 21
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Specifies no tag and is equal to zero.
+  syntax:
+    content: None = 0
+references:
+- uid: System.Diagnostics.Tracing
+  isExternal: false
+  name: System.Diagnostics.Tracing
+  fullName: System.Diagnostics.Tracing
+  type: Namespace

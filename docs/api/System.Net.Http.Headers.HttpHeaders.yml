@@ -1,0 +1,770 @@
+items:
+- uid: System.Net.Http.Headers.HttpHeaders
+  id: HttpHeaders
+  parent: System.Net.Http.Headers
+  children:
+  - System.Net.Http.Headers.HttpHeaders.#ctor
+  - System.Net.Http.Headers.HttpHeaders.Add(System.String,System.Collections.Generic.IEnumerable{System.String})
+  - System.Net.Http.Headers.HttpHeaders.Add(System.String,System.String)
+  - System.Net.Http.Headers.HttpHeaders.Clear
+  - System.Net.Http.Headers.HttpHeaders.Contains(System.String)
+  - System.Net.Http.Headers.HttpHeaders.GetEnumerator
+  - System.Net.Http.Headers.HttpHeaders.GetValues(System.String)
+  - System.Net.Http.Headers.HttpHeaders.Remove(System.String)
+  - System.Net.Http.Headers.HttpHeaders.System#Collections#IEnumerable#GetEnumerator
+  - System.Net.Http.Headers.HttpHeaders.ToString
+  - System.Net.Http.Headers.HttpHeaders.TryAddWithoutValidation(System.String,System.Collections.Generic.IEnumerable{System.String})
+  - System.Net.Http.Headers.HttpHeaders.TryAddWithoutValidation(System.String,System.String)
+  - System.Net.Http.Headers.HttpHeaders.TryGetValues(System.String,System.Collections.Generic.IEnumerable{System.String}@)
+  href: System.Net.Http.Headers.HttpHeaders.yml
+  name: HttpHeaders
+  fullName: System.Net.Http.Headers.HttpHeaders
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Net.Http/src/System/Net/Http/Headers/HttpHeaders.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Net.Http/src/System/Net/Http/Headers/HttpHeaders.cs
+    startLine: 31
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: A collection of headers and their values as defined in RFC 2616.
+  syntax:
+    content: 'public abstract class HttpHeaders : IEnumerable<KeyValuePair<string, IEnumerable<string>>>, IEnumerable'
+    content.vb: Public MustInherit Class HttpHeaders Implements IEnumerable(Of KeyValuePair(Of String, IEnumerable(Of String))), IEnumerable
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Collections.Generic.IEnumerable{System.String}}}
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Net.Http.Headers.HttpHeaders.#ctor
+  id: '#ctor'
+  parent: System.Net.Http.Headers.HttpHeaders
+  href: System.Net.Http.Headers.HttpHeaders.yml
+  name: HttpHeaders()
+  fullName: System.Net.Http.Headers.HttpHeaders.HttpHeaders()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/HttpHeaders.cs
+    startLine: 46
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Initializes a new instance of the @'System.Net.Http.Headers.HttpHeaders' class.
+  syntax:
+    content: protected HttpHeaders()
+    content.vb: Protected Sub New
+- uid: System.Net.Http.Headers.HttpHeaders.Add(System.String,System.String)
+  id: Add(System.String,System.String)
+  parent: System.Net.Http.Headers.HttpHeaders
+  href: System.Net.Http.Headers.HttpHeaders.yml
+  name: Add(String, String)
+  fullName: System.Net.Http.Headers.HttpHeaders.Add(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/HttpHeaders.cs
+    startLine: 50
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Adds the specified header and its value into the @'System.Net.Http.Headers.HttpHeaders' collection.
+  syntax:
+    content: public void Add(string name, string value)
+    content.vb: Public Sub Add(name As String, value As String)
+    parameters:
+    - id: name
+      type: System.String
+      description: The header to add to the collection.
+    - id: value
+      type: System.String
+      description: The content of the header.
+- uid: System.Net.Http.Headers.HttpHeaders.Add(System.String,System.Collections.Generic.IEnumerable{System.String})
+  id: Add(System.String,System.Collections.Generic.IEnumerable{System.String})
+  parent: System.Net.Http.Headers.HttpHeaders
+  href: System.Net.Http.Headers.HttpHeaders.yml
+  name: Add(String, IEnumerable<String>)
+  name.vb: Add(String, IEnumerable(Of String))
+  fullName: System.Net.Http.Headers.HttpHeaders.Add(System.String, System.Collections.Generic.IEnumerable<System.String>)
+  fullName.vb: System.Net.Http.Headers.HttpHeaders.Add(System.String, System.Collections.Generic.IEnumerable(Of System.String))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/HttpHeaders.cs
+    startLine: 71
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Adds the specified header and its values into the @'System.Net.Http.Headers.HttpHeaders' collection.
+  syntax:
+    content: public void Add(string name, IEnumerable<string> values)
+    content.vb: Public Sub Add(name As String, values As IEnumerable(Of String))
+    parameters:
+    - id: name
+      type: System.String
+      description: The header to add to the collection.
+    - id: values
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: A list of header values to add to the collection.
+- uid: System.Net.Http.Headers.HttpHeaders.TryAddWithoutValidation(System.String,System.String)
+  id: TryAddWithoutValidation(System.String,System.String)
+  parent: System.Net.Http.Headers.HttpHeaders
+  href: System.Net.Http.Headers.HttpHeaders.yml
+  name: TryAddWithoutValidation(String, String)
+  fullName: System.Net.Http.Headers.HttpHeaders.TryAddWithoutValidation(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/HttpHeaders.cs
+    startLine: 106
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Returns a value that indicates whether the specified header and its value were added to the @'System.Net.Http.Headers.HttpHeaders' collection without validating the provided information.
+  syntax:
+    content: public bool TryAddWithoutValidation(string name, string value)
+    content.vb: Public Function TryAddWithoutValidation(name As String, value As String) As Boolean
+    parameters:
+    - id: name
+      type: System.String
+      description: The header to add to the collection.
+    - id: value
+      type: System.String
+      description: The content of the header.
+    return:
+      type: System.Boolean
+- uid: System.Net.Http.Headers.HttpHeaders.TryAddWithoutValidation(System.String,System.Collections.Generic.IEnumerable{System.String})
+  id: TryAddWithoutValidation(System.String,System.Collections.Generic.IEnumerable{System.String})
+  parent: System.Net.Http.Headers.HttpHeaders
+  href: System.Net.Http.Headers.HttpHeaders.yml
+  name: TryAddWithoutValidation(String, IEnumerable<String>)
+  name.vb: TryAddWithoutValidation(String, IEnumerable(Of String))
+  fullName: System.Net.Http.Headers.HttpHeaders.TryAddWithoutValidation(System.String, System.Collections.Generic.IEnumerable<System.String>)
+  fullName.vb: System.Net.Http.Headers.HttpHeaders.TryAddWithoutValidation(System.String, System.Collections.Generic.IEnumerable(Of System.String))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/HttpHeaders.cs
+    startLine: 127
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Returns a value that indicates whether the specified header and its values were added to the @'System.Net.Http.Headers.HttpHeaders' collection without validating the provided information.
+  syntax:
+    content: public bool TryAddWithoutValidation(string name, IEnumerable<string> values)
+    content.vb: Public Function TryAddWithoutValidation(name As String, values As IEnumerable(Of String)) As Boolean
+    parameters:
+    - id: name
+      type: System.String
+      description: The header to add to the collection.
+    - id: values
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: The values of the header.
+    return:
+      type: System.Boolean
+- uid: System.Net.Http.Headers.HttpHeaders.Clear
+  id: Clear
+  parent: System.Net.Http.Headers.HttpHeaders
+  href: System.Net.Http.Headers.HttpHeaders.yml
+  name: Clear()
+  fullName: System.Net.Http.Headers.HttpHeaders.Clear()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/HttpHeaders.cs
+    startLine: 150
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Removes all headers from the @'System.Net.Http.Headers.HttpHeaders' collection.
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear
+- uid: System.Net.Http.Headers.HttpHeaders.Remove(System.String)
+  id: Remove(System.String)
+  parent: System.Net.Http.Headers.HttpHeaders
+  href: System.Net.Http.Headers.HttpHeaders.yml
+  name: Remove(String)
+  fullName: System.Net.Http.Headers.HttpHeaders.Remove(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/HttpHeaders.cs
+    startLine: 158
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Removes the specified header from the @'System.Net.Http.Headers.HttpHeaders' collection.
+  syntax:
+    content: public bool Remove(string name)
+    content.vb: Public Function Remove(name As String) As Boolean
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the header to remove from the collection.
+    return:
+      type: System.Boolean
+- uid: System.Net.Http.Headers.HttpHeaders.GetValues(System.String)
+  id: GetValues(System.String)
+  parent: System.Net.Http.Headers.HttpHeaders
+  href: System.Net.Http.Headers.HttpHeaders.yml
+  name: GetValues(String)
+  fullName: System.Net.Http.Headers.HttpHeaders.GetValues(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/HttpHeaders.cs
+    startLine: 170
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Returns all header values for a specified header stored in the @'System.Net.Http.Headers.HttpHeaders' collection.
+  syntax:
+    content: public IEnumerable<string> GetValues(string name)
+    content.vb: Public Function GetValues(name As String) As IEnumerable(Of String)
+    parameters:
+    - id: name
+      type: System.String
+      description: The specified header to return values for.
+    return:
+      type: System.Collections.Generic.IEnumerable{System.String}
+- uid: System.Net.Http.Headers.HttpHeaders.TryGetValues(System.String,System.Collections.Generic.IEnumerable{System.String}@)
+  id: TryGetValues(System.String,System.Collections.Generic.IEnumerable{System.String}@)
+  parent: System.Net.Http.Headers.HttpHeaders
+  href: System.Net.Http.Headers.HttpHeaders.yml
+  name: TryGetValues(String, out IEnumerable<String>)
+  name.vb: TryGetValues(String, ByRef IEnumerable(Of String))
+  fullName: System.Net.Http.Headers.HttpHeaders.TryGetValues(System.String, out System.Collections.Generic.IEnumerable<System.String>)
+  fullName.vb: System.Net.Http.Headers.HttpHeaders.TryGetValues(System.String, ByRef System.Collections.Generic.IEnumerable(Of System.String))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/HttpHeaders.cs
+    startLine: 183
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Return if a specified header and specified values are stored in the @'System.Net.Http.Headers.HttpHeaders' collection.
+  syntax:
+    content: public bool TryGetValues(string name, out IEnumerable<string> values)
+    content.vb: Public Function TryGetValues(name As String, ByRef values As IEnumerable(Of String)) As Boolean
+    parameters:
+    - id: name
+      type: System.String
+      description: The specified header.
+    - id: values
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: The specified header values.
+    return:
+      type: System.Boolean
+- uid: System.Net.Http.Headers.HttpHeaders.Contains(System.String)
+  id: Contains(System.String)
+  parent: System.Net.Http.Headers.HttpHeaders
+  href: System.Net.Http.Headers.HttpHeaders.yml
+  name: Contains(String)
+  fullName: System.Net.Http.Headers.HttpHeaders.Contains(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/HttpHeaders.cs
+    startLine: 208
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Returns if  a specific header exists in the @'System.Net.Http.Headers.HttpHeaders' collection.
+  syntax:
+    content: public bool Contains(string name)
+    content.vb: Public Function Contains(name As String) As Boolean
+    parameters:
+    - id: name
+      type: System.String
+      description: The specific header.
+    return:
+      type: System.Boolean
+- uid: System.Net.Http.Headers.HttpHeaders.ToString
+  id: ToString
+  parent: System.Net.Http.Headers.HttpHeaders
+  href: System.Net.Http.Headers.HttpHeaders.yml
+  name: ToString()
+  fullName: System.Net.Http.Headers.HttpHeaders.ToString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/HttpHeaders.cs
+    startLine: 224
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Returns a string that represents the current @'System.Net.Http.Headers.HttpHeaders' object.
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+  overridden: System.Object.ToString
+- uid: System.Net.Http.Headers.HttpHeaders.GetEnumerator
+  id: GetEnumerator
+  parent: System.Net.Http.Headers.HttpHeaders
+  href: System.Net.Http.Headers.HttpHeaders.yml
+  name: GetEnumerator()
+  fullName: System.Net.Http.Headers.HttpHeaders.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/HttpHeaders.cs
+    startLine: 307
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Returns an enumerator that can iterate through the @'System.Net.Http.Headers.HttpHeaders' instance.
+  syntax:
+    content: public IEnumerator<KeyValuePair<string, IEnumerable<string>>> GetEnumerator()
+    content.vb: Public Function GetEnumerator As IEnumerator(Of KeyValuePair(Of String, IEnumerable(Of String)))
+    return:
+      type: System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{System.String,System.Collections.Generic.IEnumerable{System.String}}}
+- uid: System.Net.Http.Headers.HttpHeaders.System#Collections#IEnumerable#GetEnumerator
+  id: System#Collections#IEnumerable#GetEnumerator
+  parent: System.Net.Http.Headers.HttpHeaders
+  href: System.Net.Http.Headers.HttpHeaders.yml
+  name: IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: System.Net.Http.Headers.HttpHeaders.System.Collections.IEnumerable.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/HttpHeaders.cs
+    startLine: 357
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Gets an enumerator that can iterate through a @'System.Net.Http.Headers.HttpHeaders'.
+  syntax:
+    content: IEnumerator IEnumerable.GetEnumerator()
+    content.vb: Function System.Collections.IEnumerable.GetEnumerator As IEnumerator Implements IEnumerable.GetEnumerator
+    return:
+      type: System.Collections.IEnumerator
+references:
+- uid: System.Net.Http.Headers
+  isExternal: false
+  name: System.Net.Http.Headers
+  fullName: System.Net.Http.Headers
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<String>
+  name.vb: IEnumerable(Of String)
+  fullName: System.Collections.Generic.IEnumerable<System.String>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{System.String,System.Collections.Generic.IEnumerable{System.String}}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  name: IEnumerator<KeyValuePair<String, IEnumerable<String>>>
+  name.vb: IEnumerator(Of KeyValuePair(Of String, IEnumerable(Of String)))
+  fullName: System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<System.String, System.Collections.Generic.IEnumerable<System.String>>>
+  fullName.vb: System.Collections.Generic.IEnumerator(Of System.Collections.Generic.KeyValuePair(Of System.String, System.Collections.Generic.IEnumerable(Of System.String)))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  - name: '>'
+    fullName: '>'
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+  - name: )
+    fullName: )
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerator<T>
+  name.vb: IEnumerator(Of T)
+  fullName: System.Collections.Generic.IEnumerator<T>
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  isExternal: false
+  name: System.Collections
+  fullName: System.Collections

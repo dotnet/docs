@@ -1,0 +1,497 @@
+items:
+- uid: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags
+  id: X509ChainStatusFlags
+  parent: System.Security.Cryptography.X509Certificates
+  children:
+  - System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.CtlNotSignatureValid
+  - System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.CtlNotTimeValid
+  - System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.CtlNotValidForUsage
+  - System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.Cyclic
+  - System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.ExplicitDistrust
+  - System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.HasExcludedNameConstraint
+  - System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.HasNotDefinedNameConstraint
+  - System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.HasNotPermittedNameConstraint
+  - System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.HasNotSupportedCriticalExtension
+  - System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.HasNotSupportedNameConstraint
+  - System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.HasWeakSignature
+  - System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.InvalidBasicConstraints
+  - System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.InvalidExtension
+  - System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.InvalidNameConstraints
+  - System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.InvalidPolicyConstraints
+  - System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.NoError
+  - System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.NoIssuanceChainPolicy
+  - System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.NotSignatureValid
+  - System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.NotTimeNested
+  - System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.NotTimeValid
+  - System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.NotValidForUsage
+  - System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.OfflineRevocation
+  - System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.PartialChain
+  - System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.RevocationStatusUnknown
+  - System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.Revoked
+  - System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.UntrustedRoot
+  href: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.yml
+  name: X509ChainStatusFlags
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainStatusFlags.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainStatusFlags.cs
+    startLine: 8
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Defines the status of an X509 chain.
+  syntax:
+    content: public enum X509ChainStatusFlags
+    content.vb: Public Enum X509ChainStatusFlags
+- uid: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.NoError
+  id: NoError
+  parent: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags
+  href: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.yml
+  name: NoError
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.NoError
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainStatusFlags.cs
+    startLine: 11
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Specifies that the X509 chain has no errors.
+  syntax:
+    content: NoError = 0
+- uid: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.NotTimeValid
+  id: NotTimeValid
+  parent: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags
+  href: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.yml
+  name: NotTimeValid
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.NotTimeValid
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainStatusFlags.cs
+    startLine: 12
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Specifies that the X509 chain is not valid due to an invalid time value, such as a value that indicates an expired certificate.
+  syntax:
+    content: NotTimeValid = 1
+- uid: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.NotTimeNested
+  id: NotTimeNested
+  parent: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags
+  href: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.yml
+  name: NotTimeNested
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.NotTimeNested
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainStatusFlags.cs
+    startLine: 13
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Deprecated. Specifies that the CA (certificate authority) certificate and the issued certificate have validity periods that are not nested. For example, the CA cert can be valid from January 1 to December 1 and the issued certificate from January 2 to December 2, which would mean the validity periods are not nested.
+  syntax:
+    content: NotTimeNested = 2
+- uid: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.Revoked
+  id: Revoked
+  parent: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags
+  href: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.yml
+  name: Revoked
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.Revoked
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainStatusFlags.cs
+    startLine: 14
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Specifies that the X509 chain is invalid due to a revoked certificate.
+  syntax:
+    content: Revoked = 4
+- uid: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.NotSignatureValid
+  id: NotSignatureValid
+  parent: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags
+  href: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.yml
+  name: NotSignatureValid
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.NotSignatureValid
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainStatusFlags.cs
+    startLine: 15
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Specifies that the X509 chain is invalid due to an invalid certificate signature.
+  syntax:
+    content: NotSignatureValid = 8
+- uid: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.NotValidForUsage
+  id: NotValidForUsage
+  parent: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags
+  href: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.yml
+  name: NotValidForUsage
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.NotValidForUsage
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainStatusFlags.cs
+    startLine: 16
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Specifies that the key usage is not valid.
+  syntax:
+    content: NotValidForUsage = 16
+- uid: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.UntrustedRoot
+  id: UntrustedRoot
+  parent: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags
+  href: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.yml
+  name: UntrustedRoot
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.UntrustedRoot
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainStatusFlags.cs
+    startLine: 17
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Specifies that the X509 chain is invalid due to an untrusted root certificate.
+  syntax:
+    content: UntrustedRoot = 32
+- uid: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.RevocationStatusUnknown
+  id: RevocationStatusUnknown
+  parent: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags
+  href: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.yml
+  name: RevocationStatusUnknown
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.RevocationStatusUnknown
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainStatusFlags.cs
+    startLine: 18
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Specifies that it is not possible to determine whether the certificate has been revoked. This can be due to the certificate revocation list (CRL) being offline or unavailable.
+  syntax:
+    content: RevocationStatusUnknown = 64
+- uid: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.Cyclic
+  id: Cyclic
+  parent: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags
+  href: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.yml
+  name: Cyclic
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.Cyclic
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainStatusFlags.cs
+    startLine: 19
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Specifies that the X509 chain could not be built.
+  syntax:
+    content: Cyclic = 128
+- uid: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.InvalidExtension
+  id: InvalidExtension
+  parent: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags
+  href: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.yml
+  name: InvalidExtension
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.InvalidExtension
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainStatusFlags.cs
+    startLine: 20
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Specifies that the X509 chain is invalid due to an invalid extension.
+  syntax:
+    content: InvalidExtension = 256
+- uid: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.InvalidPolicyConstraints
+  id: InvalidPolicyConstraints
+  parent: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags
+  href: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.yml
+  name: InvalidPolicyConstraints
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.InvalidPolicyConstraints
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainStatusFlags.cs
+    startLine: 21
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Specifies that the X509 chain is invalid due to invalid policy constraints.
+  syntax:
+    content: InvalidPolicyConstraints = 512
+- uid: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.InvalidBasicConstraints
+  id: InvalidBasicConstraints
+  parent: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags
+  href: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.yml
+  name: InvalidBasicConstraints
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.InvalidBasicConstraints
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainStatusFlags.cs
+    startLine: 22
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Specifies that the X509 chain is invalid due to invalid basic constraints.
+  syntax:
+    content: InvalidBasicConstraints = 1024
+- uid: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.InvalidNameConstraints
+  id: InvalidNameConstraints
+  parent: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags
+  href: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.yml
+  name: InvalidNameConstraints
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.InvalidNameConstraints
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainStatusFlags.cs
+    startLine: 23
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Specifies that the X509 chain is invalid due to invalid name constraints.
+  syntax:
+    content: InvalidNameConstraints = 2048
+- uid: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.HasNotSupportedNameConstraint
+  id: HasNotSupportedNameConstraint
+  parent: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags
+  href: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.yml
+  name: HasNotSupportedNameConstraint
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.HasNotSupportedNameConstraint
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainStatusFlags.cs
+    startLine: 24
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Specifies that the certificate does not have a supported name constraint or has a name constraint that is unsupported.
+  syntax:
+    content: HasNotSupportedNameConstraint = 4096
+- uid: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.HasNotDefinedNameConstraint
+  id: HasNotDefinedNameConstraint
+  parent: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags
+  href: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.yml
+  name: HasNotDefinedNameConstraint
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.HasNotDefinedNameConstraint
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainStatusFlags.cs
+    startLine: 25
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Specifies that the certificate has an undefined name constraint.
+  syntax:
+    content: HasNotDefinedNameConstraint = 8192
+- uid: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.HasNotPermittedNameConstraint
+  id: HasNotPermittedNameConstraint
+  parent: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags
+  href: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.yml
+  name: HasNotPermittedNameConstraint
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.HasNotPermittedNameConstraint
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainStatusFlags.cs
+    startLine: 26
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Specifies that the certificate has an impermissible name constraint.
+  syntax:
+    content: HasNotPermittedNameConstraint = 16384
+- uid: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.HasExcludedNameConstraint
+  id: HasExcludedNameConstraint
+  parent: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags
+  href: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.yml
+  name: HasExcludedNameConstraint
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.HasExcludedNameConstraint
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainStatusFlags.cs
+    startLine: 27
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Specifies that the X509 chain is invalid because a certificate has excluded a name constraint.
+  syntax:
+    content: HasExcludedNameConstraint = 32768
+- uid: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.PartialChain
+  id: PartialChain
+  parent: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags
+  href: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.yml
+  name: PartialChain
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.PartialChain
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainStatusFlags.cs
+    startLine: 28
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Specifies that the X509 chain could not be built up to the root certificate.
+  syntax:
+    content: PartialChain = 65536
+- uid: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.CtlNotTimeValid
+  id: CtlNotTimeValid
+  parent: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags
+  href: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.yml
+  name: CtlNotTimeValid
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.CtlNotTimeValid
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainStatusFlags.cs
+    startLine: 29
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Specifies that the certificate trust list (CTL) is not valid because of an invalid time value, such as one that indicates that the CTL has expired.
+  syntax:
+    content: CtlNotTimeValid = 131072
+- uid: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.CtlNotSignatureValid
+  id: CtlNotSignatureValid
+  parent: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags
+  href: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.yml
+  name: CtlNotSignatureValid
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.CtlNotSignatureValid
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainStatusFlags.cs
+    startLine: 30
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Specifies that the certificate trust list (CTL) contains an invalid signature.
+  syntax:
+    content: CtlNotSignatureValid = 262144
+- uid: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.CtlNotValidForUsage
+  id: CtlNotValidForUsage
+  parent: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags
+  href: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.yml
+  name: CtlNotValidForUsage
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.CtlNotValidForUsage
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainStatusFlags.cs
+    startLine: 31
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Specifies that the certificate trust list (CTL) is not valid for this use.
+  syntax:
+    content: CtlNotValidForUsage = 524288
+- uid: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.OfflineRevocation
+  id: OfflineRevocation
+  parent: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags
+  href: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.yml
+  name: OfflineRevocation
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.OfflineRevocation
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainStatusFlags.cs
+    startLine: 32
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Specifies that the online certificate revocation list (CRL) the X509 chain relies on is currently offline.
+  syntax:
+    content: OfflineRevocation = 16777216
+- uid: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.NoIssuanceChainPolicy
+  id: NoIssuanceChainPolicy
+  parent: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags
+  href: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.yml
+  name: NoIssuanceChainPolicy
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.NoIssuanceChainPolicy
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainStatusFlags.cs
+    startLine: 33
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Specifies that there is no certificate policy extension in the certificate. This error would occur if a group policy has specified that all certificates must have a certificate policy.
+  syntax:
+    content: NoIssuanceChainPolicy = 33554432
+- uid: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.ExplicitDistrust
+  id: ExplicitDistrust
+  parent: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags
+  href: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.yml
+  name: ExplicitDistrust
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.ExplicitDistrust
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainStatusFlags.cs
+    startLine: 34
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Specifies that the certificate is explicitly distrusted.
+  syntax:
+    content: ExplicitDistrust = 67108864
+- uid: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.HasNotSupportedCriticalExtension
+  id: HasNotSupportedCriticalExtension
+  parent: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags
+  href: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.yml
+  name: HasNotSupportedCriticalExtension
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.HasNotSupportedCriticalExtension
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainStatusFlags.cs
+    startLine: 35
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Specifies that the certificate does not support a critical extension.
+  syntax:
+    content: HasNotSupportedCriticalExtension = 134217728
+- uid: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.HasWeakSignature
+  id: HasWeakSignature
+  parent: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags
+  href: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.yml
+  name: HasWeakSignature
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.HasWeakSignature
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainStatusFlags.cs
+    startLine: 36
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Specifies that the certificate has not been strong signed. Typically, this indicates that the MD2 or MD5 hashing algorithms were used to create a hash of the certificate.
+  syntax:
+    content: HasWeakSignature = 1048576
+references:
+- uid: System.Security.Cryptography.X509Certificates
+  isExternal: false
+  name: System.Security.Cryptography.X509Certificates
+  fullName: System.Security.Cryptography.X509Certificates
+  type: Namespace

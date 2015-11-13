@@ -1,0 +1,2832 @@
+items:
+- uid: System.Numerics.Vector
+  id: Vector
+  parent: System.Numerics
+  children:
+  - System.Numerics.Vector.Abs``1(System.Numerics.Vector{``0})
+  - System.Numerics.Vector.Add``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  - System.Numerics.Vector.AndNot``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  - System.Numerics.Vector.AsVectorByte``1(System.Numerics.Vector{``0})
+  - System.Numerics.Vector.AsVectorDouble``1(System.Numerics.Vector{``0})
+  - System.Numerics.Vector.AsVectorInt16``1(System.Numerics.Vector{``0})
+  - System.Numerics.Vector.AsVectorInt32``1(System.Numerics.Vector{``0})
+  - System.Numerics.Vector.AsVectorInt64``1(System.Numerics.Vector{``0})
+  - System.Numerics.Vector.AsVectorSByte``1(System.Numerics.Vector{``0})
+  - System.Numerics.Vector.AsVectorSingle``1(System.Numerics.Vector{``0})
+  - System.Numerics.Vector.AsVectorUInt16``1(System.Numerics.Vector{``0})
+  - System.Numerics.Vector.AsVectorUInt32``1(System.Numerics.Vector{``0})
+  - System.Numerics.Vector.AsVectorUInt64``1(System.Numerics.Vector{``0})
+  - System.Numerics.Vector.BitwiseAnd``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  - System.Numerics.Vector.BitwiseOr``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  - System.Numerics.Vector.ConditionalSelect(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})
+  - System.Numerics.Vector.ConditionalSelect(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double})
+  - System.Numerics.Vector.ConditionalSelect``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  - System.Numerics.Vector.Divide``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  - System.Numerics.Vector.Dot``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  - System.Numerics.Vector.Equals(System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double})
+  - System.Numerics.Vector.Equals(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})
+  - System.Numerics.Vector.Equals(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})
+  - System.Numerics.Vector.Equals(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})
+  - System.Numerics.Vector.Equals``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  - System.Numerics.Vector.EqualsAll``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  - System.Numerics.Vector.EqualsAny``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  - System.Numerics.Vector.GreaterThan(System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double})
+  - System.Numerics.Vector.GreaterThan(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})
+  - System.Numerics.Vector.GreaterThan(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})
+  - System.Numerics.Vector.GreaterThan(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})
+  - System.Numerics.Vector.GreaterThan``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  - System.Numerics.Vector.GreaterThanAll``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  - System.Numerics.Vector.GreaterThanAny``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  - System.Numerics.Vector.GreaterThanOrEqual(System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double})
+  - System.Numerics.Vector.GreaterThanOrEqual(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})
+  - System.Numerics.Vector.GreaterThanOrEqual(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})
+  - System.Numerics.Vector.GreaterThanOrEqual(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})
+  - System.Numerics.Vector.GreaterThanOrEqual``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  - System.Numerics.Vector.GreaterThanOrEqualAll``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  - System.Numerics.Vector.GreaterThanOrEqualAny``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  - System.Numerics.Vector.IsHardwareAccelerated
+  - System.Numerics.Vector.LessThan(System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double})
+  - System.Numerics.Vector.LessThan(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})
+  - System.Numerics.Vector.LessThan(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})
+  - System.Numerics.Vector.LessThan(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})
+  - System.Numerics.Vector.LessThan``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  - System.Numerics.Vector.LessThanAll``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  - System.Numerics.Vector.LessThanAny``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  - System.Numerics.Vector.LessThanOrEqual(System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double})
+  - System.Numerics.Vector.LessThanOrEqual(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})
+  - System.Numerics.Vector.LessThanOrEqual(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})
+  - System.Numerics.Vector.LessThanOrEqual(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})
+  - System.Numerics.Vector.LessThanOrEqual``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  - System.Numerics.Vector.LessThanOrEqualAll``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  - System.Numerics.Vector.LessThanOrEqualAny``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  - System.Numerics.Vector.Max``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  - System.Numerics.Vector.Min``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  - System.Numerics.Vector.Multiply``1(``0,System.Numerics.Vector{``0})
+  - System.Numerics.Vector.Multiply``1(System.Numerics.Vector{``0},``0)
+  - System.Numerics.Vector.Multiply``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  - System.Numerics.Vector.Negate``1(System.Numerics.Vector{``0})
+  - System.Numerics.Vector.OnesComplement``1(System.Numerics.Vector{``0})
+  - System.Numerics.Vector.SquareRoot``1(System.Numerics.Vector{``0})
+  - System.Numerics.Vector.Subtract``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  - System.Numerics.Vector.Xor``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  href: System.Numerics.Vector.yml
+  name: Vector
+  fullName: System.Numerics.Vector
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 10
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Contains various methods useful for creating, manipulating, combining, and converting generic vectors with one another.
+  syntax:
+    content: public class Vector
+    content.vb: Public Class Vector
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Numerics.Vector.ConditionalSelect(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})
+  id: ConditionalSelect(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: ConditionalSelect(Vector<Int32>, Vector<Single>, Vector<Single>)
+  name.vb: ConditionalSelect(Vector(Of Int32), Vector(Of Single), Vector(Of Single))
+  fullName: System.Numerics.Vector.ConditionalSelect(System.Numerics.Vector<System.Int32>, System.Numerics.Vector<System.Single>, System.Numerics.Vector<System.Single>)
+  fullName.vb: System.Numerics.Vector.ConditionalSelect(System.Numerics.Vector(Of System.Int32), System.Numerics.Vector(Of System.Single), System.Numerics.Vector(Of System.Single))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 22
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Creates a new vector with elements selected between the two given source vectors, and based on a mask vector.
+  syntax:
+    content: public static Vector<float> ConditionalSelect(Vector<int> condition, Vector<float> left, Vector<float> right)
+    content.vb: Public Shared Function ConditionalSelect(condition As Vector(Of Integer), left As Vector(Of Single), right As Vector(Of Single)) As Vector(Of Single)
+    parameters:
+    - id: condition
+      type: System.Numerics.Vector{System.Int32}
+      description: The integral mask vector used to drive selection.
+    - id: left
+      type: System.Numerics.Vector{System.Single}
+      description: The first source vector.
+    - id: right
+      type: System.Numerics.Vector{System.Single}
+      description: The second source vector.
+    return:
+      type: System.Numerics.Vector{System.Single}
+      description: The new vector with elements selected based on the mask.
+- uid: System.Numerics.Vector.ConditionalSelect(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double})
+  id: ConditionalSelect(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: ConditionalSelect(Vector<Int64>, Vector<Double>, Vector<Double>)
+  name.vb: ConditionalSelect(Vector(Of Int64), Vector(Of Double), Vector(Of Double))
+  fullName: System.Numerics.Vector.ConditionalSelect(System.Numerics.Vector<System.Int64>, System.Numerics.Vector<System.Double>, System.Numerics.Vector<System.Double>)
+  fullName.vb: System.Numerics.Vector.ConditionalSelect(System.Numerics.Vector(Of System.Int64), System.Numerics.Vector(Of System.Double), System.Numerics.Vector(Of System.Double))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 35
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Creates a new vector with elements selected between the two given source vectors, and based on a mask vector.
+  syntax:
+    content: public static Vector<double> ConditionalSelect(Vector<long> condition, Vector<double> left, Vector<double> right)
+    content.vb: Public Shared Function ConditionalSelect(condition As Vector(Of Long), left As Vector(Of Double), right As Vector(Of Double)) As Vector(Of Double)
+    parameters:
+    - id: condition
+      type: System.Numerics.Vector{System.Int64}
+      description: The integral mask vector used to drive selection.
+    - id: left
+      type: System.Numerics.Vector{System.Double}
+      description: The first source vector.
+    - id: right
+      type: System.Numerics.Vector{System.Double}
+      description: The second source vector.
+    return:
+      type: System.Numerics.Vector{System.Double}
+      description: The new vector with elements selected based on the mask.
+- uid: System.Numerics.Vector.ConditionalSelect``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  id: ConditionalSelect``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: ConditionalSelect<T>(Vector<T>, Vector<T>, Vector<T>)
+  name.vb: ConditionalSelect(Of T)(Vector(Of T), Vector(Of T), Vector(Of T))
+  fullName: System.Numerics.Vector.ConditionalSelect<T>(System.Numerics.Vector<T>, System.Numerics.Vector<T>, System.Numerics.Vector<T>)
+  fullName.vb: System.Numerics.Vector.ConditionalSelect(Of T)(System.Numerics.Vector(Of T), System.Numerics.Vector(Of T), System.Numerics.Vector(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 48
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Creates a new vector with elements selected between the two given source vectors, and based on a mask vector.
+  syntax:
+    content: 'public static Vector<T> ConditionalSelect<T>(Vector<T> condition, Vector<T> left, Vector<T> right)where T : struct'
+    content.vb: Public Shared Function ConditionalSelect(Of T As Structure)(condition As Vector(Of T), left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)
+    parameters:
+    - id: condition
+      type: System.Numerics.Vector{{T}}
+      description: The mask vector used to drive selection.
+    - id: left
+      type: System.Numerics.Vector{{T}}
+      description: The first source vector.
+    - id: right
+      type: System.Numerics.Vector{{T}}
+      description: The second source vector.
+    typeParameters:
+    - id: T
+    return:
+      type: System.Numerics.Vector{{T}}
+      description: The new vector with elements selected based on the mask.
+- uid: System.Numerics.Vector.Equals``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  id: Equals``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: Equals<T>(Vector<T>, Vector<T>)
+  name.vb: Equals(Of T)(Vector(Of T), Vector(Of T))
+  fullName: System.Numerics.Vector.Equals<T>(System.Numerics.Vector<T>, System.Numerics.Vector<T>)
+  fullName.vb: System.Numerics.Vector.Equals(Of T)(System.Numerics.Vector(Of T), System.Numerics.Vector(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 63
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a new vector whose elements signal whether the elements in left and right were equal.
+  syntax:
+    content: 'public static Vector<T> Equals<T>(Vector<T> left, Vector<T> right)where T : struct'
+    content.vb: Public Shared Function Equals(Of T As Structure)(left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{{T}}
+      description: The first vector to compare.
+    - id: right
+      type: System.Numerics.Vector{{T}}
+      description: The second vector to compare.
+    typeParameters:
+    - id: T
+    return:
+      type: System.Numerics.Vector{{T}}
+      description: The resultant vector.
+- uid: System.Numerics.Vector.Equals(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})
+  id: Equals(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: Equals(Vector<Single>, Vector<Single>)
+  name.vb: Equals(Vector(Of Single), Vector(Of Single))
+  fullName: System.Numerics.Vector.Equals(System.Numerics.Vector<System.Single>, System.Numerics.Vector<System.Single>)
+  fullName.vb: System.Numerics.Vector.Equals(System.Numerics.Vector(Of System.Single), System.Numerics.Vector(Of System.Single))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 75
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns an integral vector whose elements signal whether elements in the left and right floating point vectors were equal.
+  syntax:
+    content: public static Vector<int> Equals(Vector<float> left, Vector<float> right)
+    content.vb: Public Shared Function Equals(left As Vector(Of Single), right As Vector(Of Single)) As Vector(Of Integer)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{System.Single}
+      description: The first vector to compare.
+    - id: right
+      type: System.Numerics.Vector{System.Single}
+      description: The second vector to compare.
+    return:
+      type: System.Numerics.Vector{System.Int32}
+      description: The resultant vector.
+- uid: System.Numerics.Vector.Equals(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})
+  id: Equals(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: Equals(Vector<Int32>, Vector<Int32>)
+  name.vb: Equals(Vector(Of Int32), Vector(Of Int32))
+  fullName: System.Numerics.Vector.Equals(System.Numerics.Vector<System.Int32>, System.Numerics.Vector<System.Int32>)
+  fullName.vb: System.Numerics.Vector.Equals(System.Numerics.Vector(Of System.Int32), System.Numerics.Vector(Of System.Int32))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 87
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a new vector whose elements signal whether the elements in left and right were equal.
+  syntax:
+    content: public static Vector<int> Equals(Vector<int> left, Vector<int> right)
+    content.vb: Public Shared Function Equals(left As Vector(Of Integer), right As Vector(Of Integer)) As Vector(Of Integer)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{System.Int32}
+      description: The first vector to compare.
+    - id: right
+      type: System.Numerics.Vector{System.Int32}
+      description: The second vector to compare.
+    return:
+      type: System.Numerics.Vector{System.Int32}
+      description: The resultant vector.
+- uid: System.Numerics.Vector.Equals(System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double})
+  id: Equals(System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: Equals(Vector<Double>, Vector<Double>)
+  name.vb: Equals(Vector(Of Double), Vector(Of Double))
+  fullName: System.Numerics.Vector.Equals(System.Numerics.Vector<System.Double>, System.Numerics.Vector<System.Double>)
+  fullName.vb: System.Numerics.Vector.Equals(System.Numerics.Vector(Of System.Double), System.Numerics.Vector(Of System.Double))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 99
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns an integral vector whose elements signal whether elements in the left and right floating point vectors were equal.
+  syntax:
+    content: public static Vector<long> Equals(Vector<double> left, Vector<double> right)
+    content.vb: Public Shared Function Equals(left As Vector(Of Double), right As Vector(Of Double)) As Vector(Of Long)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{System.Double}
+      description: The first vector to compare.
+    - id: right
+      type: System.Numerics.Vector{System.Double}
+      description: The second vector to compare.
+    return:
+      type: System.Numerics.Vector{System.Int64}
+      description: The resultant vector.
+- uid: System.Numerics.Vector.Equals(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})
+  id: Equals(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: Equals(Vector<Int64>, Vector<Int64>)
+  name.vb: Equals(Vector(Of Int64), Vector(Of Int64))
+  fullName: System.Numerics.Vector.Equals(System.Numerics.Vector<System.Int64>, System.Numerics.Vector<System.Int64>)
+  fullName.vb: System.Numerics.Vector.Equals(System.Numerics.Vector(Of System.Int64), System.Numerics.Vector(Of System.Int64))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 111
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a new vector whose elements signal whether the elements in left and right were equal.
+  syntax:
+    content: public static Vector<long> Equals(Vector<long> left, Vector<long> right)
+    content.vb: Public Shared Function Equals(left As Vector(Of Long), right As Vector(Of Long)) As Vector(Of Long)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{System.Int64}
+      description: The first vector to compare.
+    - id: right
+      type: System.Numerics.Vector{System.Int64}
+      description: The second vector to compare.
+    return:
+      type: System.Numerics.Vector{System.Int64}
+      description: The resultant vector.
+- uid: System.Numerics.Vector.EqualsAll``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  id: EqualsAll``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: EqualsAll<T>(Vector<T>, Vector<T>)
+  name.vb: EqualsAll(Of T)(Vector(Of T), Vector(Of T))
+  fullName: System.Numerics.Vector.EqualsAll<T>(System.Numerics.Vector<T>, System.Numerics.Vector<T>)
+  fullName.vb: System.Numerics.Vector.EqualsAll(Of T)(System.Numerics.Vector(Of T), System.Numerics.Vector(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 123
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a boolean indicating whether each pair of elements in the given vectors are equal.
+  syntax:
+    content: 'public static bool EqualsAll<T>(Vector<T> left, Vector<T> right)where T : struct'
+    content.vb: Public Shared Function EqualsAll(Of T As Structure)(left As Vector(Of T), right As Vector(Of T)) As Boolean
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{{T}}
+      description: The first vector to compare.
+    - id: right
+      type: System.Numerics.Vector{{T}}
+      description: The first vector to compare.
+    typeParameters:
+    - id: T
+    return:
+      type: System.Boolean
+      description: True if all elements are equal; False otherwise.
+- uid: System.Numerics.Vector.EqualsAny``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  id: EqualsAny``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: EqualsAny<T>(Vector<T>, Vector<T>)
+  name.vb: EqualsAny(Of T)(Vector(Of T), Vector(Of T))
+  fullName: System.Numerics.Vector.EqualsAny<T>(System.Numerics.Vector<T>, System.Numerics.Vector<T>)
+  fullName.vb: System.Numerics.Vector.EqualsAny(Of T)(System.Numerics.Vector(Of T), System.Numerics.Vector(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 135
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a boolean indicating whether any single pair of elements in the given vectors are equal.
+  syntax:
+    content: 'public static bool EqualsAny<T>(Vector<T> left, Vector<T> right)where T : struct'
+    content.vb: Public Shared Function EqualsAny(Of T As Structure)(left As Vector(Of T), right As Vector(Of T)) As Boolean
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{{T}}
+      description: The first vector to compare.
+    - id: right
+      type: System.Numerics.Vector{{T}}
+      description: The second vector to compare.
+    typeParameters:
+    - id: T
+    return:
+      type: System.Boolean
+      description: True if any element pairs are equal; False if no element pairs are equal.
+- uid: System.Numerics.Vector.LessThan``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  id: LessThan``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: LessThan<T>(Vector<T>, Vector<T>)
+  name.vb: LessThan(Of T)(Vector(Of T), Vector(Of T))
+  fullName: System.Numerics.Vector.LessThan<T>(System.Numerics.Vector<T>, System.Numerics.Vector<T>)
+  fullName.vb: System.Numerics.Vector.LessThan(Of T)(System.Numerics.Vector(Of T), System.Numerics.Vector(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 150
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: >-
+    Returns a new vector whose elements signal whether the elements in left were less than their
+
+    corresponding elements in right.
+  syntax:
+    content: 'public static Vector<T> LessThan<T>(Vector<T> left, Vector<T> right)where T : struct'
+    content.vb: Public Shared Function LessThan(Of T As Structure)(left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{{T}}
+      description: The first vector to compare.
+    - id: right
+      type: System.Numerics.Vector{{T}}
+      description: The second vector to compare.
+    typeParameters:
+    - id: T
+    return:
+      type: System.Numerics.Vector{{T}}
+      description: The resultant vector.
+- uid: System.Numerics.Vector.LessThan(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})
+  id: LessThan(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: LessThan(Vector<Single>, Vector<Single>)
+  name.vb: LessThan(Vector(Of Single), Vector(Of Single))
+  fullName: System.Numerics.Vector.LessThan(System.Numerics.Vector<System.Single>, System.Numerics.Vector<System.Single>)
+  fullName.vb: System.Numerics.Vector.LessThan(System.Numerics.Vector(Of System.Single), System.Numerics.Vector(Of System.Single))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 163
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: >-
+    Returns an integral vector whose elements signal whether the elements in left were less than their
+
+    corresponding elements in right.
+  syntax:
+    content: public static Vector<int> LessThan(Vector<float> left, Vector<float> right)
+    content.vb: Public Shared Function LessThan(left As Vector(Of Single), right As Vector(Of Single)) As Vector(Of Integer)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{System.Single}
+      description: The first vector to compare.
+    - id: right
+      type: System.Numerics.Vector{System.Single}
+      description: The second vector to compare.
+    return:
+      type: System.Numerics.Vector{System.Int32}
+      description: The resultant integral vector.
+- uid: System.Numerics.Vector.LessThan(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})
+  id: LessThan(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: LessThan(Vector<Int32>, Vector<Int32>)
+  name.vb: LessThan(Vector(Of Int32), Vector(Of Int32))
+  fullName: System.Numerics.Vector.LessThan(System.Numerics.Vector<System.Int32>, System.Numerics.Vector<System.Int32>)
+  fullName.vb: System.Numerics.Vector.LessThan(System.Numerics.Vector(Of System.Int32), System.Numerics.Vector(Of System.Int32))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 176
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: >-
+    Returns a new vector whose elements signal whether the elements in left were less than their
+
+    corresponding elements in right.
+  syntax:
+    content: public static Vector<int> LessThan(Vector<int> left, Vector<int> right)
+    content.vb: Public Shared Function LessThan(left As Vector(Of Integer), right As Vector(Of Integer)) As Vector(Of Integer)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{System.Int32}
+      description: The first vector to compare.
+    - id: right
+      type: System.Numerics.Vector{System.Int32}
+      description: The second vector to compare.
+    return:
+      type: System.Numerics.Vector{System.Int32}
+      description: The resultant vector.
+- uid: System.Numerics.Vector.LessThan(System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double})
+  id: LessThan(System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: LessThan(Vector<Double>, Vector<Double>)
+  name.vb: LessThan(Vector(Of Double), Vector(Of Double))
+  fullName: System.Numerics.Vector.LessThan(System.Numerics.Vector<System.Double>, System.Numerics.Vector<System.Double>)
+  fullName.vb: System.Numerics.Vector.LessThan(System.Numerics.Vector(Of System.Double), System.Numerics.Vector(Of System.Double))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 189
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: >-
+    Returns an integral vector whose elements signal whether the elements in left were less than their
+
+    corresponding elements in right.
+  syntax:
+    content: public static Vector<long> LessThan(Vector<double> left, Vector<double> right)
+    content.vb: Public Shared Function LessThan(left As Vector(Of Double), right As Vector(Of Double)) As Vector(Of Long)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{System.Double}
+      description: The first vector to compare.
+    - id: right
+      type: System.Numerics.Vector{System.Double}
+      description: The second vector to compare.
+    return:
+      type: System.Numerics.Vector{System.Int64}
+      description: The resultant integral vector.
+- uid: System.Numerics.Vector.LessThan(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})
+  id: LessThan(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: LessThan(Vector<Int64>, Vector<Int64>)
+  name.vb: LessThan(Vector(Of Int64), Vector(Of Int64))
+  fullName: System.Numerics.Vector.LessThan(System.Numerics.Vector<System.Int64>, System.Numerics.Vector<System.Int64>)
+  fullName.vb: System.Numerics.Vector.LessThan(System.Numerics.Vector(Of System.Int64), System.Numerics.Vector(Of System.Int64))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 202
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: >-
+    Returns a new vector whose elements signal whether the elements in left were less than their
+
+    corresponding elements in right.
+  syntax:
+    content: public static Vector<long> LessThan(Vector<long> left, Vector<long> right)
+    content.vb: Public Shared Function LessThan(left As Vector(Of Long), right As Vector(Of Long)) As Vector(Of Long)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{System.Int64}
+      description: The first vector to compare.
+    - id: right
+      type: System.Numerics.Vector{System.Int64}
+      description: The second vector to compare.
+    return:
+      type: System.Numerics.Vector{System.Int64}
+      description: The resultant vector.
+- uid: System.Numerics.Vector.LessThanAll``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  id: LessThanAll``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: LessThanAll<T>(Vector<T>, Vector<T>)
+  name.vb: LessThanAll(Of T)(Vector(Of T), Vector(Of T))
+  fullName: System.Numerics.Vector.LessThanAll<T>(System.Numerics.Vector<T>, System.Numerics.Vector<T>)
+  fullName.vb: System.Numerics.Vector.LessThanAll(Of T)(System.Numerics.Vector(Of T), System.Numerics.Vector(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 214
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a boolean indicating whether all of the elements in left are less than their corresponding elements in right.
+  syntax:
+    content: 'public static bool LessThanAll<T>(Vector<T> left, Vector<T> right)where T : struct'
+    content.vb: Public Shared Function LessThanAll(Of T As Structure)(left As Vector(Of T), right As Vector(Of T)) As Boolean
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{{T}}
+      description: The first vector to compare.
+    - id: right
+      type: System.Numerics.Vector{{T}}
+      description: The second vector to compare.
+    typeParameters:
+    - id: T
+    return:
+      type: System.Boolean
+      description: True if all elements in left are less than their corresponding elements in right; False otherwise.
+- uid: System.Numerics.Vector.LessThanAny``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  id: LessThanAny``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: LessThanAny<T>(Vector<T>, Vector<T>)
+  name.vb: LessThanAny(Of T)(Vector(Of T), Vector(Of T))
+  fullName: System.Numerics.Vector.LessThanAny<T>(System.Numerics.Vector<T>, System.Numerics.Vector<T>)
+  fullName.vb: System.Numerics.Vector.LessThanAny(Of T)(System.Numerics.Vector(Of T), System.Numerics.Vector(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 227
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a boolean indicating whether any element in left is less than its corresponding element in right.
+  syntax:
+    content: 'public static bool LessThanAny<T>(Vector<T> left, Vector<T> right)where T : struct'
+    content.vb: Public Shared Function LessThanAny(Of T As Structure)(left As Vector(Of T), right As Vector(Of T)) As Boolean
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{{T}}
+      description: The first vector to compare.
+    - id: right
+      type: System.Numerics.Vector{{T}}
+      description: The second vector to compare.
+    typeParameters:
+    - id: T
+    return:
+      type: System.Boolean
+      description: True if any elements in left are less than their corresponding elements in right; False otherwise.
+- uid: System.Numerics.Vector.LessThanOrEqual``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  id: LessThanOrEqual``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: LessThanOrEqual<T>(Vector<T>, Vector<T>)
+  name.vb: LessThanOrEqual(Of T)(Vector(Of T), Vector(Of T))
+  fullName: System.Numerics.Vector.LessThanOrEqual<T>(System.Numerics.Vector<T>, System.Numerics.Vector<T>)
+  fullName.vb: System.Numerics.Vector.LessThanOrEqual(Of T)(System.Numerics.Vector(Of T), System.Numerics.Vector(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 243
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: >-
+    Returns a new vector whose elements signal whether the elements in left were less than or equal to their
+
+    corresponding elements in right.
+  syntax:
+    content: 'public static Vector<T> LessThanOrEqual<T>(Vector<T> left, Vector<T> right)where T : struct'
+    content.vb: Public Shared Function LessThanOrEqual(Of T As Structure)(left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{{T}}
+      description: The first vector to compare.
+    - id: right
+      type: System.Numerics.Vector{{T}}
+      description: The second vector to compare.
+    typeParameters:
+    - id: T
+    return:
+      type: System.Numerics.Vector{{T}}
+      description: The resultant vector.
+- uid: System.Numerics.Vector.LessThanOrEqual(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})
+  id: LessThanOrEqual(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: LessThanOrEqual(Vector<Single>, Vector<Single>)
+  name.vb: LessThanOrEqual(Vector(Of Single), Vector(Of Single))
+  fullName: System.Numerics.Vector.LessThanOrEqual(System.Numerics.Vector<System.Single>, System.Numerics.Vector<System.Single>)
+  fullName.vb: System.Numerics.Vector.LessThanOrEqual(System.Numerics.Vector(Of System.Single), System.Numerics.Vector(Of System.Single))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 256
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: >-
+    Returns an integral vector whose elements signal whether the elements in left were less than or equal to their
+
+    corresponding elements in right.
+  syntax:
+    content: public static Vector<int> LessThanOrEqual(Vector<float> left, Vector<float> right)
+    content.vb: Public Shared Function LessThanOrEqual(left As Vector(Of Single), right As Vector(Of Single)) As Vector(Of Integer)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{System.Single}
+      description: The first vector to compare.
+    - id: right
+      type: System.Numerics.Vector{System.Single}
+      description: The second vector to compare.
+    return:
+      type: System.Numerics.Vector{System.Int32}
+      description: The resultant integral vector.
+- uid: System.Numerics.Vector.LessThanOrEqual(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})
+  id: LessThanOrEqual(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: LessThanOrEqual(Vector<Int32>, Vector<Int32>)
+  name.vb: LessThanOrEqual(Vector(Of Int32), Vector(Of Int32))
+  fullName: System.Numerics.Vector.LessThanOrEqual(System.Numerics.Vector<System.Int32>, System.Numerics.Vector<System.Int32>)
+  fullName.vb: System.Numerics.Vector.LessThanOrEqual(System.Numerics.Vector(Of System.Int32), System.Numerics.Vector(Of System.Int32))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 269
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: >-
+    Returns a new vector whose elements signal whether the elements in left were less than or equal to their
+
+    corresponding elements in right.
+  syntax:
+    content: public static Vector<int> LessThanOrEqual(Vector<int> left, Vector<int> right)
+    content.vb: Public Shared Function LessThanOrEqual(left As Vector(Of Integer), right As Vector(Of Integer)) As Vector(Of Integer)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{System.Int32}
+      description: The first vector to compare.
+    - id: right
+      type: System.Numerics.Vector{System.Int32}
+      description: The second vector to compare.
+    return:
+      type: System.Numerics.Vector{System.Int32}
+      description: The resultant vector.
+- uid: System.Numerics.Vector.LessThanOrEqual(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})
+  id: LessThanOrEqual(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: LessThanOrEqual(Vector<Int64>, Vector<Int64>)
+  name.vb: LessThanOrEqual(Vector(Of Int64), Vector(Of Int64))
+  fullName: System.Numerics.Vector.LessThanOrEqual(System.Numerics.Vector<System.Int64>, System.Numerics.Vector<System.Int64>)
+  fullName.vb: System.Numerics.Vector.LessThanOrEqual(System.Numerics.Vector(Of System.Int64), System.Numerics.Vector(Of System.Int64))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 282
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: >-
+    Returns a new vector whose elements signal whether the elements in left were less than or equal to their
+
+    corresponding elements in right.
+  syntax:
+    content: public static Vector<long> LessThanOrEqual(Vector<long> left, Vector<long> right)
+    content.vb: Public Shared Function LessThanOrEqual(left As Vector(Of Long), right As Vector(Of Long)) As Vector(Of Long)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{System.Int64}
+      description: The first vector to compare.
+    - id: right
+      type: System.Numerics.Vector{System.Int64}
+      description: The second vector to compare.
+    return:
+      type: System.Numerics.Vector{System.Int64}
+      description: The resultant vector.
+- uid: System.Numerics.Vector.LessThanOrEqual(System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double})
+  id: LessThanOrEqual(System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: LessThanOrEqual(Vector<Double>, Vector<Double>)
+  name.vb: LessThanOrEqual(Vector(Of Double), Vector(Of Double))
+  fullName: System.Numerics.Vector.LessThanOrEqual(System.Numerics.Vector<System.Double>, System.Numerics.Vector<System.Double>)
+  fullName.vb: System.Numerics.Vector.LessThanOrEqual(System.Numerics.Vector(Of System.Double), System.Numerics.Vector(Of System.Double))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 295
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: >-
+    Returns an integral vector whose elements signal whether the elements in left were less than or equal to their
+
+    corresponding elements in right.
+  syntax:
+    content: public static Vector<long> LessThanOrEqual(Vector<double> left, Vector<double> right)
+    content.vb: Public Shared Function LessThanOrEqual(left As Vector(Of Double), right As Vector(Of Double)) As Vector(Of Long)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{System.Double}
+      description: The first vector to compare.
+    - id: right
+      type: System.Numerics.Vector{System.Double}
+      description: The second vector to compare.
+    return:
+      type: System.Numerics.Vector{System.Int64}
+      description: The resultant integral vector.
+- uid: System.Numerics.Vector.LessThanOrEqualAll``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  id: LessThanOrEqualAll``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: LessThanOrEqualAll<T>(Vector<T>, Vector<T>)
+  name.vb: LessThanOrEqualAll(Of T)(Vector(Of T), Vector(Of T))
+  fullName: System.Numerics.Vector.LessThanOrEqualAll<T>(System.Numerics.Vector<T>, System.Numerics.Vector<T>)
+  fullName.vb: System.Numerics.Vector.LessThanOrEqualAll(Of T)(System.Numerics.Vector(Of T), System.Numerics.Vector(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 307
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a boolean indicating whether all elements in left are less than or equal to their corresponding elements in right.
+  syntax:
+    content: 'public static bool LessThanOrEqualAll<T>(Vector<T> left, Vector<T> right)where T : struct'
+    content.vb: Public Shared Function LessThanOrEqualAll(Of T As Structure)(left As Vector(Of T), right As Vector(Of T)) As Boolean
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{{T}}
+      description: The first vector to compare.
+    - id: right
+      type: System.Numerics.Vector{{T}}
+      description: The second vector to compare.
+    typeParameters:
+    - id: T
+    return:
+      type: System.Boolean
+      description: True if all elements in left are less than or equal to their corresponding elements in right; False otherwise.
+- uid: System.Numerics.Vector.LessThanOrEqualAny``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  id: LessThanOrEqualAny``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: LessThanOrEqualAny<T>(Vector<T>, Vector<T>)
+  name.vb: LessThanOrEqualAny(Of T)(Vector(Of T), Vector(Of T))
+  fullName: System.Numerics.Vector.LessThanOrEqualAny<T>(System.Numerics.Vector<T>, System.Numerics.Vector<T>)
+  fullName.vb: System.Numerics.Vector.LessThanOrEqualAny(Of T)(System.Numerics.Vector(Of T), System.Numerics.Vector(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 320
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a boolean indicating whether any element in left is less than or equal to its corresponding element in right.
+  syntax:
+    content: 'public static bool LessThanOrEqualAny<T>(Vector<T> left, Vector<T> right)where T : struct'
+    content.vb: Public Shared Function LessThanOrEqualAny(Of T As Structure)(left As Vector(Of T), right As Vector(Of T)) As Boolean
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{{T}}
+      description: The first vector to compare.
+    - id: right
+      type: System.Numerics.Vector{{T}}
+      description: The second vector to compare.
+    typeParameters:
+    - id: T
+    return:
+      type: System.Boolean
+      description: True if any elements in left are less than their corresponding elements in right; False otherwise.
+- uid: System.Numerics.Vector.GreaterThan``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  id: GreaterThan``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: GreaterThan<T>(Vector<T>, Vector<T>)
+  name.vb: GreaterThan(Of T)(Vector(Of T), Vector(Of T))
+  fullName: System.Numerics.Vector.GreaterThan<T>(System.Numerics.Vector<T>, System.Numerics.Vector<T>)
+  fullName.vb: System.Numerics.Vector.GreaterThan(Of T)(System.Numerics.Vector(Of T), System.Numerics.Vector(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 336
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: >-
+    Returns a new vector whose elements signal whether the elements in left were greater than their
+
+    corresponding elements in right.
+  syntax:
+    content: 'public static Vector<T> GreaterThan<T>(Vector<T> left, Vector<T> right)where T : struct'
+    content.vb: Public Shared Function GreaterThan(Of T As Structure)(left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{{T}}
+      description: The first vector to compare.
+    - id: right
+      type: System.Numerics.Vector{{T}}
+      description: The second vector to compare.
+    typeParameters:
+    - id: T
+    return:
+      type: System.Numerics.Vector{{T}}
+      description: The resultant vector.
+- uid: System.Numerics.Vector.GreaterThan(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})
+  id: GreaterThan(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: GreaterThan(Vector<Single>, Vector<Single>)
+  name.vb: GreaterThan(Vector(Of Single), Vector(Of Single))
+  fullName: System.Numerics.Vector.GreaterThan(System.Numerics.Vector<System.Single>, System.Numerics.Vector<System.Single>)
+  fullName.vb: System.Numerics.Vector.GreaterThan(System.Numerics.Vector(Of System.Single), System.Numerics.Vector(Of System.Single))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 349
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: >-
+    Returns an integral vector whose elements signal whether the elements in left were greater than their
+
+    corresponding elements in right.
+  syntax:
+    content: public static Vector<int> GreaterThan(Vector<float> left, Vector<float> right)
+    content.vb: Public Shared Function GreaterThan(left As Vector(Of Single), right As Vector(Of Single)) As Vector(Of Integer)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{System.Single}
+      description: The first vector to compare.
+    - id: right
+      type: System.Numerics.Vector{System.Single}
+      description: The second vector to compare.
+    return:
+      type: System.Numerics.Vector{System.Int32}
+      description: The resultant integral vector.
+- uid: System.Numerics.Vector.GreaterThan(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})
+  id: GreaterThan(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: GreaterThan(Vector<Int32>, Vector<Int32>)
+  name.vb: GreaterThan(Vector(Of Int32), Vector(Of Int32))
+  fullName: System.Numerics.Vector.GreaterThan(System.Numerics.Vector<System.Int32>, System.Numerics.Vector<System.Int32>)
+  fullName.vb: System.Numerics.Vector.GreaterThan(System.Numerics.Vector(Of System.Int32), System.Numerics.Vector(Of System.Int32))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 362
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: >-
+    Returns a new vector whose elements signal whether the elements in left were greater than their
+
+    corresponding elements in right.
+  syntax:
+    content: public static Vector<int> GreaterThan(Vector<int> left, Vector<int> right)
+    content.vb: Public Shared Function GreaterThan(left As Vector(Of Integer), right As Vector(Of Integer)) As Vector(Of Integer)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{System.Int32}
+      description: The first vector to compare.
+    - id: right
+      type: System.Numerics.Vector{System.Int32}
+      description: The second vector to compare.
+    return:
+      type: System.Numerics.Vector{System.Int32}
+      description: The resultant vector.
+- uid: System.Numerics.Vector.GreaterThan(System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double})
+  id: GreaterThan(System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: GreaterThan(Vector<Double>, Vector<Double>)
+  name.vb: GreaterThan(Vector(Of Double), Vector(Of Double))
+  fullName: System.Numerics.Vector.GreaterThan(System.Numerics.Vector<System.Double>, System.Numerics.Vector<System.Double>)
+  fullName.vb: System.Numerics.Vector.GreaterThan(System.Numerics.Vector(Of System.Double), System.Numerics.Vector(Of System.Double))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 375
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: >-
+    Returns an integral vector whose elements signal whether the elements in left were greater than their
+
+    corresponding elements in right.
+  syntax:
+    content: public static Vector<long> GreaterThan(Vector<double> left, Vector<double> right)
+    content.vb: Public Shared Function GreaterThan(left As Vector(Of Double), right As Vector(Of Double)) As Vector(Of Long)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{System.Double}
+      description: The first vector to compare.
+    - id: right
+      type: System.Numerics.Vector{System.Double}
+      description: The second vector to compare.
+    return:
+      type: System.Numerics.Vector{System.Int64}
+      description: The resultant integral vector.
+- uid: System.Numerics.Vector.GreaterThan(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})
+  id: GreaterThan(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: GreaterThan(Vector<Int64>, Vector<Int64>)
+  name.vb: GreaterThan(Vector(Of Int64), Vector(Of Int64))
+  fullName: System.Numerics.Vector.GreaterThan(System.Numerics.Vector<System.Int64>, System.Numerics.Vector<System.Int64>)
+  fullName.vb: System.Numerics.Vector.GreaterThan(System.Numerics.Vector(Of System.Int64), System.Numerics.Vector(Of System.Int64))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 388
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: >-
+    Returns a new vector whose elements signal whether the elements in left were greater than their
+
+    corresponding elements in right.
+  syntax:
+    content: public static Vector<long> GreaterThan(Vector<long> left, Vector<long> right)
+    content.vb: Public Shared Function GreaterThan(left As Vector(Of Long), right As Vector(Of Long)) As Vector(Of Long)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{System.Int64}
+      description: The first vector to compare.
+    - id: right
+      type: System.Numerics.Vector{System.Int64}
+      description: The second vector to compare.
+    return:
+      type: System.Numerics.Vector{System.Int64}
+      description: The resultant vector.
+- uid: System.Numerics.Vector.GreaterThanAll``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  id: GreaterThanAll``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: GreaterThanAll<T>(Vector<T>, Vector<T>)
+  name.vb: GreaterThanAll(Of T)(Vector(Of T), Vector(Of T))
+  fullName: System.Numerics.Vector.GreaterThanAll<T>(System.Numerics.Vector<T>, System.Numerics.Vector<T>)
+  fullName.vb: System.Numerics.Vector.GreaterThanAll(Of T)(System.Numerics.Vector(Of T), System.Numerics.Vector(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 401
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: >-
+    Returns a boolean indicating whether all elements in left are greater than the corresponding elements in right.
+
+    elements in right.
+  syntax:
+    content: 'public static bool GreaterThanAll<T>(Vector<T> left, Vector<T> right)where T : struct'
+    content.vb: Public Shared Function GreaterThanAll(Of T As Structure)(left As Vector(Of T), right As Vector(Of T)) As Boolean
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{{T}}
+      description: The first vector to compare.
+    - id: right
+      type: System.Numerics.Vector{{T}}
+      description: The second vector to compare.
+    typeParameters:
+    - id: T
+    return:
+      type: System.Boolean
+      description: True if all elements in left are greater than their corresponding elements in right; False otherwise.
+- uid: System.Numerics.Vector.GreaterThanAny``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  id: GreaterThanAny``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: GreaterThanAny<T>(Vector<T>, Vector<T>)
+  name.vb: GreaterThanAny(Of T)(Vector(Of T), Vector(Of T))
+  fullName: System.Numerics.Vector.GreaterThanAny<T>(System.Numerics.Vector<T>, System.Numerics.Vector<T>)
+  fullName.vb: System.Numerics.Vector.GreaterThanAny(Of T)(System.Numerics.Vector(Of T), System.Numerics.Vector(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 414
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a boolean indicating whether any element in left is greater than its corresponding element in right.
+  syntax:
+    content: 'public static bool GreaterThanAny<T>(Vector<T> left, Vector<T> right)where T : struct'
+    content.vb: Public Shared Function GreaterThanAny(Of T As Structure)(left As Vector(Of T), right As Vector(Of T)) As Boolean
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{{T}}
+      description: The first vector to compare.
+    - id: right
+      type: System.Numerics.Vector{{T}}
+      description: The second vector to compare.
+    typeParameters:
+    - id: T
+    return:
+      type: System.Boolean
+      description: True if any elements in left are greater than their corresponding elements in right; False otherwise.
+- uid: System.Numerics.Vector.GreaterThanOrEqual``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  id: GreaterThanOrEqual``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: GreaterThanOrEqual<T>(Vector<T>, Vector<T>)
+  name.vb: GreaterThanOrEqual(Of T)(Vector(Of T), Vector(Of T))
+  fullName: System.Numerics.Vector.GreaterThanOrEqual<T>(System.Numerics.Vector<T>, System.Numerics.Vector<T>)
+  fullName.vb: System.Numerics.Vector.GreaterThanOrEqual(Of T)(System.Numerics.Vector(Of T), System.Numerics.Vector(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 430
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: >-
+    Returns a new vector whose elements signal whether the elements in left were greater than or equal to their
+
+    corresponding elements in right.
+  syntax:
+    content: 'public static Vector<T> GreaterThanOrEqual<T>(Vector<T> left, Vector<T> right)where T : struct'
+    content.vb: Public Shared Function GreaterThanOrEqual(Of T As Structure)(left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{{T}}
+      description: The first vector to compare.
+    - id: right
+      type: System.Numerics.Vector{{T}}
+      description: The second vector to compare.
+    typeParameters:
+    - id: T
+    return:
+      type: System.Numerics.Vector{{T}}
+      description: The resultant vector.
+- uid: System.Numerics.Vector.GreaterThanOrEqual(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})
+  id: GreaterThanOrEqual(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Single})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: GreaterThanOrEqual(Vector<Single>, Vector<Single>)
+  name.vb: GreaterThanOrEqual(Vector(Of Single), Vector(Of Single))
+  fullName: System.Numerics.Vector.GreaterThanOrEqual(System.Numerics.Vector<System.Single>, System.Numerics.Vector<System.Single>)
+  fullName.vb: System.Numerics.Vector.GreaterThanOrEqual(System.Numerics.Vector(Of System.Single), System.Numerics.Vector(Of System.Single))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 443
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: >-
+    Returns an integral vector whose elements signal whether the elements in left were greater than or equal to their
+
+    corresponding elements in right.
+  syntax:
+    content: public static Vector<int> GreaterThanOrEqual(Vector<float> left, Vector<float> right)
+    content.vb: Public Shared Function GreaterThanOrEqual(left As Vector(Of Single), right As Vector(Of Single)) As Vector(Of Integer)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{System.Single}
+      description: The first vector to compare.
+    - id: right
+      type: System.Numerics.Vector{System.Single}
+      description: The second vector to compare.
+    return:
+      type: System.Numerics.Vector{System.Int32}
+      description: The resultant integral vector.
+- uid: System.Numerics.Vector.GreaterThanOrEqual(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})
+  id: GreaterThanOrEqual(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int32})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: GreaterThanOrEqual(Vector<Int32>, Vector<Int32>)
+  name.vb: GreaterThanOrEqual(Vector(Of Int32), Vector(Of Int32))
+  fullName: System.Numerics.Vector.GreaterThanOrEqual(System.Numerics.Vector<System.Int32>, System.Numerics.Vector<System.Int32>)
+  fullName.vb: System.Numerics.Vector.GreaterThanOrEqual(System.Numerics.Vector(Of System.Int32), System.Numerics.Vector(Of System.Int32))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 456
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: >-
+    Returns a new vector whose elements signal whether the elements in left were greater than or equal to their
+
+    corresponding elements in right.
+  syntax:
+    content: public static Vector<int> GreaterThanOrEqual(Vector<int> left, Vector<int> right)
+    content.vb: Public Shared Function GreaterThanOrEqual(left As Vector(Of Integer), right As Vector(Of Integer)) As Vector(Of Integer)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{System.Int32}
+      description: The first vector to compare.
+    - id: right
+      type: System.Numerics.Vector{System.Int32}
+      description: The second vector to compare.
+    return:
+      type: System.Numerics.Vector{System.Int32}
+      description: The resultant vector.
+- uid: System.Numerics.Vector.GreaterThanOrEqual(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})
+  id: GreaterThanOrEqual(System.Numerics.Vector{System.Int64},System.Numerics.Vector{System.Int64})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: GreaterThanOrEqual(Vector<Int64>, Vector<Int64>)
+  name.vb: GreaterThanOrEqual(Vector(Of Int64), Vector(Of Int64))
+  fullName: System.Numerics.Vector.GreaterThanOrEqual(System.Numerics.Vector<System.Int64>, System.Numerics.Vector<System.Int64>)
+  fullName.vb: System.Numerics.Vector.GreaterThanOrEqual(System.Numerics.Vector(Of System.Int64), System.Numerics.Vector(Of System.Int64))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 469
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: >-
+    Returns a new vector whose elements signal whether the elements in left were greater than or equal to their
+
+    corresponding elements in right.
+  syntax:
+    content: public static Vector<long> GreaterThanOrEqual(Vector<long> left, Vector<long> right)
+    content.vb: Public Shared Function GreaterThanOrEqual(left As Vector(Of Long), right As Vector(Of Long)) As Vector(Of Long)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{System.Int64}
+      description: The first vector to compare.
+    - id: right
+      type: System.Numerics.Vector{System.Int64}
+      description: The second vector to compare.
+    return:
+      type: System.Numerics.Vector{System.Int64}
+      description: The resultant vector.
+- uid: System.Numerics.Vector.GreaterThanOrEqual(System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double})
+  id: GreaterThanOrEqual(System.Numerics.Vector{System.Double},System.Numerics.Vector{System.Double})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: GreaterThanOrEqual(Vector<Double>, Vector<Double>)
+  name.vb: GreaterThanOrEqual(Vector(Of Double), Vector(Of Double))
+  fullName: System.Numerics.Vector.GreaterThanOrEqual(System.Numerics.Vector<System.Double>, System.Numerics.Vector<System.Double>)
+  fullName.vb: System.Numerics.Vector.GreaterThanOrEqual(System.Numerics.Vector(Of System.Double), System.Numerics.Vector(Of System.Double))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 482
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: >-
+    Returns an integral vector whose elements signal whether the elements in left were greater than or equal to
+
+    their corresponding elements in right.
+  syntax:
+    content: public static Vector<long> GreaterThanOrEqual(Vector<double> left, Vector<double> right)
+    content.vb: Public Shared Function GreaterThanOrEqual(left As Vector(Of Double), right As Vector(Of Double)) As Vector(Of Long)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{System.Double}
+      description: The first vector to compare.
+    - id: right
+      type: System.Numerics.Vector{System.Double}
+      description: The second vector to compare.
+    return:
+      type: System.Numerics.Vector{System.Int64}
+      description: The resultant integral vector.
+- uid: System.Numerics.Vector.GreaterThanOrEqualAll``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  id: GreaterThanOrEqualAll``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: GreaterThanOrEqualAll<T>(Vector<T>, Vector<T>)
+  name.vb: GreaterThanOrEqualAll(Of T)(Vector(Of T), Vector(Of T))
+  fullName: System.Numerics.Vector.GreaterThanOrEqualAll<T>(System.Numerics.Vector<T>, System.Numerics.Vector<T>)
+  fullName.vb: System.Numerics.Vector.GreaterThanOrEqualAll(Of T)(System.Numerics.Vector(Of T), System.Numerics.Vector(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 495
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: >-
+    Returns a boolean indicating whether all of the elements in left are greater than or equal to
+
+    their corresponding elements in right.
+  syntax:
+    content: 'public static bool GreaterThanOrEqualAll<T>(Vector<T> left, Vector<T> right)where T : struct'
+    content.vb: Public Shared Function GreaterThanOrEqualAll(Of T As Structure)(left As Vector(Of T), right As Vector(Of T)) As Boolean
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{{T}}
+      description: The first vector to compare.
+    - id: right
+      type: System.Numerics.Vector{{T}}
+      description: The second vector to compare.
+    typeParameters:
+    - id: T
+    return:
+      type: System.Boolean
+      description: True if all elements in left are greater than or equal to their corresponding elements in right; False otherwise.
+- uid: System.Numerics.Vector.GreaterThanOrEqualAny``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  id: GreaterThanOrEqualAny``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: GreaterThanOrEqualAny<T>(Vector<T>, Vector<T>)
+  name.vb: GreaterThanOrEqualAny(Of T)(Vector(Of T), Vector(Of T))
+  fullName: System.Numerics.Vector.GreaterThanOrEqualAny<T>(System.Numerics.Vector<T>, System.Numerics.Vector<T>)
+  fullName.vb: System.Numerics.Vector.GreaterThanOrEqualAny(Of T)(System.Numerics.Vector(Of T), System.Numerics.Vector(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 508
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a boolean indicating whether any element in left is greater than or equal to its corresponding element in right.
+  syntax:
+    content: 'public static bool GreaterThanOrEqualAny<T>(Vector<T> left, Vector<T> right)where T : struct'
+    content.vb: Public Shared Function GreaterThanOrEqualAny(Of T As Structure)(left As Vector(Of T), right As Vector(Of T)) As Boolean
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{{T}}
+      description: The first vector to compare.
+    - id: right
+      type: System.Numerics.Vector{{T}}
+      description: The second vector to compare.
+    typeParameters:
+    - id: T
+    return:
+      type: System.Boolean
+      description: True if any elements in left are greater than or equal to their corresponding elements in right; False otherwise.
+- uid: System.Numerics.Vector.IsHardwareAccelerated
+  id: IsHardwareAccelerated
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: IsHardwareAccelerated
+  fullName: System.Numerics.Vector.IsHardwareAccelerated
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 525
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns whether or not vector operations are subject to hardware acceleration through JIT intrinsic support.
+  syntax:
+    content: public static bool IsHardwareAccelerated { get; }
+    content.vb: Public Shared ReadOnly Property IsHardwareAccelerated As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Numerics.Vector.Abs``1(System.Numerics.Vector{``0})
+  id: Abs``1(System.Numerics.Vector{``0})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: Abs<T>(Vector<T>)
+  name.vb: Abs(Of T)(Vector(Of T))
+  fullName: System.Numerics.Vector.Abs<T>(System.Numerics.Vector<T>)
+  fullName.vb: System.Numerics.Vector.Abs(Of T)(System.Numerics.Vector(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 543
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a new vector whose elements are the absolute values of the given vector's elements.
+  syntax:
+    content: 'public static Vector<T> Abs<T>(Vector<T> value)where T : struct'
+    content.vb: Public Shared Function Abs(Of T As Structure)(value As Vector(Of T)) As Vector(Of T)
+    parameters:
+    - id: value
+      type: System.Numerics.Vector{{T}}
+      description: The source vector.
+    typeParameters:
+    - id: T
+    return:
+      type: System.Numerics.Vector{{T}}
+      description: The absolute value vector.
+- uid: System.Numerics.Vector.Min``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  id: Min``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: Min<T>(Vector<T>, Vector<T>)
+  name.vb: Min(Of T)(Vector(Of T), Vector(Of T))
+  fullName: System.Numerics.Vector.Min<T>(System.Numerics.Vector<T>, System.Numerics.Vector<T>)
+  fullName.vb: System.Numerics.Vector.Min(Of T)(System.Numerics.Vector(Of T), System.Numerics.Vector(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 555
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a new vector whose elements are the minimum of each pair of elements in the two given vectors.
+  syntax:
+    content: 'public static Vector<T> Min<T>(Vector<T> left, Vector<T> right)where T : struct'
+    content.vb: Public Shared Function Min(Of T As Structure)(left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{{T}}
+      description: The first source vector.
+    - id: right
+      type: System.Numerics.Vector{{T}}
+      description: The second source vector.
+    typeParameters:
+    - id: T
+    return:
+      type: System.Numerics.Vector{{T}}
+      description: The minimum vector.
+- uid: System.Numerics.Vector.Max``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  id: Max``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: Max<T>(Vector<T>, Vector<T>)
+  name.vb: Max(Of T)(Vector(Of T), Vector(Of T))
+  fullName: System.Numerics.Vector.Max<T>(System.Numerics.Vector<T>, System.Numerics.Vector<T>)
+  fullName.vb: System.Numerics.Vector.Max(Of T)(System.Numerics.Vector(Of T), System.Numerics.Vector(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 567
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a new vector whose elements are the maximum of each pair of elements in the two given vectors.
+  syntax:
+    content: 'public static Vector<T> Max<T>(Vector<T> left, Vector<T> right)where T : struct'
+    content.vb: Public Shared Function Max(Of T As Structure)(left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{{T}}
+      description: The first source vector.
+    - id: right
+      type: System.Numerics.Vector{{T}}
+      description: The second source vector.
+    typeParameters:
+    - id: T
+    return:
+      type: System.Numerics.Vector{{T}}
+      description: The maximum vector.
+- uid: System.Numerics.Vector.Dot``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  id: Dot``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: Dot<T>(Vector<T>, Vector<T>)
+  name.vb: Dot(Of T)(Vector(Of T), Vector(Of T))
+  fullName: System.Numerics.Vector.Dot<T>(System.Numerics.Vector<T>, System.Numerics.Vector<T>)
+  fullName.vb: System.Numerics.Vector.Dot(Of T)(System.Numerics.Vector(Of T), System.Numerics.Vector(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 581
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns the dot product of two vectors.
+  syntax:
+    content: 'public static T Dot<T>(Vector<T> left, Vector<T> right)where T : struct'
+    content.vb: Public Shared Function Dot(Of T As Structure)(left As Vector(Of T), right As Vector(Of T)) As T
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{{T}}
+      description: The first source vector.
+    - id: right
+      type: System.Numerics.Vector{{T}}
+      description: The second source vector.
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+      description: The dot product.
+- uid: System.Numerics.Vector.SquareRoot``1(System.Numerics.Vector{``0})
+  id: SquareRoot``1(System.Numerics.Vector{``0})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: SquareRoot<T>(Vector<T>)
+  name.vb: SquareRoot(Of T)(Vector(Of T))
+  fullName: System.Numerics.Vector.SquareRoot<T>(System.Numerics.Vector<T>)
+  fullName.vb: System.Numerics.Vector.SquareRoot(Of T)(System.Numerics.Vector(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 592
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a new vector whose elements are the square roots of the given vector's elements.
+  syntax:
+    content: 'public static Vector<T> SquareRoot<T>(Vector<T> value)where T : struct'
+    content.vb: Public Shared Function SquareRoot(Of T As Structure)(value As Vector(Of T)) As Vector(Of T)
+    parameters:
+    - id: value
+      type: System.Numerics.Vector{{T}}
+      description: The source vector.
+    typeParameters:
+    - id: T
+    return:
+      type: System.Numerics.Vector{{T}}
+      description: The square root vector.
+- uid: System.Numerics.Vector.Add``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  id: Add``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: Add<T>(Vector<T>, Vector<T>)
+  name.vb: Add(Of T)(Vector(Of T), Vector(Of T))
+  fullName: System.Numerics.Vector.Add<T>(System.Numerics.Vector<T>, System.Numerics.Vector<T>)
+  fullName.vb: System.Numerics.Vector.Add(Of T)(System.Numerics.Vector(Of T), System.Numerics.Vector(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 606
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Creates a new vector whose values are the sum of each pair of elements from the two given vectors.
+  syntax:
+    content: 'public static Vector<T> Add<T>(Vector<T> left, Vector<T> right)where T : struct'
+    content.vb: Public Shared Function Add(Of T As Structure)(left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{{T}}
+      description: The first source vector.
+    - id: right
+      type: System.Numerics.Vector{{T}}
+      description: The second source vector.
+    typeParameters:
+    - id: T
+    return:
+      type: System.Numerics.Vector{{T}}
+      description: The summed vector.
+- uid: System.Numerics.Vector.Subtract``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  id: Subtract``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: Subtract<T>(Vector<T>, Vector<T>)
+  name.vb: Subtract(Of T)(Vector(Of T), Vector(Of T))
+  fullName: System.Numerics.Vector.Subtract<T>(System.Numerics.Vector<T>, System.Numerics.Vector<T>)
+  fullName.vb: System.Numerics.Vector.Subtract(Of T)(System.Numerics.Vector(Of T), System.Numerics.Vector(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 618
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Creates a new vector whose values are the difference between each pairs of elements in the given vectors.
+  syntax:
+    content: 'public static Vector<T> Subtract<T>(Vector<T> left, Vector<T> right)where T : struct'
+    content.vb: Public Shared Function Subtract(Of T As Structure)(left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{{T}}
+      description: The first source vector.
+    - id: right
+      type: System.Numerics.Vector{{T}}
+      description: The second source vector.
+    typeParameters:
+    - id: T
+    return:
+      type: System.Numerics.Vector{{T}}
+      description: The difference vector.
+- uid: System.Numerics.Vector.Multiply``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  id: Multiply``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: Multiply<T>(Vector<T>, Vector<T>)
+  name.vb: Multiply(Of T)(Vector(Of T), Vector(Of T))
+  fullName: System.Numerics.Vector.Multiply<T>(System.Numerics.Vector<T>, System.Numerics.Vector<T>)
+  fullName.vb: System.Numerics.Vector.Multiply(Of T)(System.Numerics.Vector(Of T), System.Numerics.Vector(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 630
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Creates a new vector whose values are the product of each pair of elements from the two given vectors.
+  syntax:
+    content: 'public static Vector<T> Multiply<T>(Vector<T> left, Vector<T> right)where T : struct'
+    content.vb: Public Shared Function Multiply(Of T As Structure)(left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{{T}}
+      description: The first source vector.
+    - id: right
+      type: System.Numerics.Vector{{T}}
+      description: The second source vector.
+    typeParameters:
+    - id: T
+    return:
+      type: System.Numerics.Vector{{T}}
+      description: The summed vector.
+- uid: System.Numerics.Vector.Multiply``1(System.Numerics.Vector{``0},``0)
+  id: Multiply``1(System.Numerics.Vector{``0},``0)
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: Multiply<T>(Vector<T>, T)
+  name.vb: Multiply(Of T)(Vector(Of T), T)
+  fullName: System.Numerics.Vector.Multiply<T>(System.Numerics.Vector<T>, T)
+  fullName.vb: System.Numerics.Vector.Multiply(Of T)(System.Numerics.Vector(Of T), T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 642
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a new vector whose values are the values of the given vector each multiplied by a scalar value.
+  syntax:
+    content: 'public static Vector<T> Multiply<T>(Vector<T> left, T right)where T : struct'
+    content.vb: Public Shared Function Multiply(Of T As Structure)(left As Vector(Of T), right As T) As Vector(Of T)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{{T}}
+      description: The source vector.
+    - id: right
+      type: '{T}'
+      description: The scalar factor.
+    typeParameters:
+    - id: T
+    return:
+      type: System.Numerics.Vector{{T}}
+      description: The scaled vector.
+- uid: System.Numerics.Vector.Multiply``1(``0,System.Numerics.Vector{``0})
+  id: Multiply``1(``0,System.Numerics.Vector{``0})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: Multiply<T>(T, Vector<T>)
+  name.vb: Multiply(Of T)(T, Vector(Of T))
+  fullName: System.Numerics.Vector.Multiply<T>(T, System.Numerics.Vector<T>)
+  fullName.vb: System.Numerics.Vector.Multiply(Of T)(T, System.Numerics.Vector(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 654
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a new vector whose values are the values of the given vector each multiplied by a scalar value.
+  syntax:
+    content: 'public static Vector<T> Multiply<T>(T left, Vector<T> right)where T : struct'
+    content.vb: Public Shared Function Multiply(Of T As Structure)(left As T, right As Vector(Of T)) As Vector(Of T)
+    parameters:
+    - id: left
+      type: '{T}'
+      description: The scalar factor.
+    - id: right
+      type: System.Numerics.Vector{{T}}
+      description: The source vector.
+    typeParameters:
+    - id: T
+    return:
+      type: System.Numerics.Vector{{T}}
+      description: The scaled vector.
+- uid: System.Numerics.Vector.Divide``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  id: Divide``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: Divide<T>(Vector<T>, Vector<T>)
+  name.vb: Divide(Of T)(Vector(Of T), Vector(Of T))
+  fullName: System.Numerics.Vector.Divide<T>(System.Numerics.Vector<T>, System.Numerics.Vector<T>)
+  fullName.vb: System.Numerics.Vector.Divide(Of T)(System.Numerics.Vector(Of T), System.Numerics.Vector(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 667
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: >-
+    Returns a new vector whose values are the result of dividing the first vector's elements
+
+    by the corresponding elements in the second vector.
+  syntax:
+    content: 'public static Vector<T> Divide<T>(Vector<T> left, Vector<T> right)where T : struct'
+    content.vb: Public Shared Function Divide(Of T As Structure)(left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{{T}}
+      description: The first source vector.
+    - id: right
+      type: System.Numerics.Vector{{T}}
+      description: The second source vector.
+    typeParameters:
+    - id: T
+    return:
+      type: System.Numerics.Vector{{T}}
+      description: The divided vector.
+- uid: System.Numerics.Vector.Negate``1(System.Numerics.Vector{``0})
+  id: Negate``1(System.Numerics.Vector{``0})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: Negate<T>(Vector<T>)
+  name.vb: Negate(Of T)(Vector(Of T))
+  fullName: System.Numerics.Vector.Negate<T>(System.Numerics.Vector<T>)
+  fullName.vb: System.Numerics.Vector.Negate(Of T)(System.Numerics.Vector(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 678
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a new vector whose elements are the given vector's elements negated.
+  syntax:
+    content: 'public static Vector<T> Negate<T>(Vector<T> value)where T : struct'
+    content.vb: Public Shared Function Negate(Of T As Structure)(value As Vector(Of T)) As Vector(Of T)
+    parameters:
+    - id: value
+      type: System.Numerics.Vector{{T}}
+      description: The source vector.
+    typeParameters:
+    - id: T
+    return:
+      type: System.Numerics.Vector{{T}}
+      description: The negated vector.
+- uid: System.Numerics.Vector.BitwiseAnd``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  id: BitwiseAnd``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: BitwiseAnd<T>(Vector<T>, Vector<T>)
+  name.vb: BitwiseAnd(Of T)(Vector(Of T), Vector(Of T))
+  fullName: System.Numerics.Vector.BitwiseAnd<T>(System.Numerics.Vector<T>, System.Numerics.Vector<T>)
+  fullName.vb: System.Numerics.Vector.BitwiseAnd(Of T)(System.Numerics.Vector(Of T), System.Numerics.Vector(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 692
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a new vector by performing a bitwise-and operation on each of the elements in the given vectors.
+  syntax:
+    content: 'public static Vector<T> BitwiseAnd<T>(Vector<T> left, Vector<T> right)where T : struct'
+    content.vb: Public Shared Function BitwiseAnd(Of T As Structure)(left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{{T}}
+      description: The first source vector.
+    - id: right
+      type: System.Numerics.Vector{{T}}
+      description: The second source vector.
+    typeParameters:
+    - id: T
+    return:
+      type: System.Numerics.Vector{{T}}
+      description: The resultant vector.
+- uid: System.Numerics.Vector.BitwiseOr``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  id: BitwiseOr``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: BitwiseOr<T>(Vector<T>, Vector<T>)
+  name.vb: BitwiseOr(Of T)(Vector(Of T), Vector(Of T))
+  fullName: System.Numerics.Vector.BitwiseOr<T>(System.Numerics.Vector<T>, System.Numerics.Vector<T>)
+  fullName.vb: System.Numerics.Vector.BitwiseOr(Of T)(System.Numerics.Vector(Of T), System.Numerics.Vector(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 704
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a new vector by performing a bitwise-or operation on each of the elements in the given vectors.
+  syntax:
+    content: 'public static Vector<T> BitwiseOr<T>(Vector<T> left, Vector<T> right)where T : struct'
+    content.vb: Public Shared Function BitwiseOr(Of T As Structure)(left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{{T}}
+      description: The first source vector.
+    - id: right
+      type: System.Numerics.Vector{{T}}
+      description: The second source vector.
+    typeParameters:
+    - id: T
+    return:
+      type: System.Numerics.Vector{{T}}
+      description: The resultant vector.
+- uid: System.Numerics.Vector.OnesComplement``1(System.Numerics.Vector{``0})
+  id: OnesComplement``1(System.Numerics.Vector{``0})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: OnesComplement<T>(Vector<T>)
+  name.vb: OnesComplement(Of T)(Vector(Of T))
+  fullName: System.Numerics.Vector.OnesComplement<T>(System.Numerics.Vector<T>)
+  fullName.vb: System.Numerics.Vector.OnesComplement(Of T)(System.Numerics.Vector(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 715
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a new vector whose elements are obtained by taking the one's complement of the given vector's elements.
+  syntax:
+    content: 'public static Vector<T> OnesComplement<T>(Vector<T> value)where T : struct'
+    content.vb: Public Shared Function OnesComplement(Of T As Structure)(value As Vector(Of T)) As Vector(Of T)
+    parameters:
+    - id: value
+      type: System.Numerics.Vector{{T}}
+      description: The source vector.
+    typeParameters:
+    - id: T
+    return:
+      type: System.Numerics.Vector{{T}}
+      description: The one's complement vector.
+- uid: System.Numerics.Vector.Xor``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  id: Xor``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: Xor<T>(Vector<T>, Vector<T>)
+  name.vb: Xor(Of T)(Vector(Of T), Vector(Of T))
+  fullName: System.Numerics.Vector.Xor<T>(System.Numerics.Vector<T>, System.Numerics.Vector<T>)
+  fullName.vb: System.Numerics.Vector.Xor(Of T)(System.Numerics.Vector(Of T), System.Numerics.Vector(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 727
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a new vector by performing a bitwise-exclusive-or operation on each of the elements in the given vectors.
+  syntax:
+    content: 'public static Vector<T> Xor<T>(Vector<T> left, Vector<T> right)where T : struct'
+    content.vb: Public Shared Function Xor(Of T As Structure)(left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{{T}}
+      description: The first source vector.
+    - id: right
+      type: System.Numerics.Vector{{T}}
+      description: The second source vector.
+    typeParameters:
+    - id: T
+    return:
+      type: System.Numerics.Vector{{T}}
+      description: The resultant vector.
+- uid: System.Numerics.Vector.AndNot``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  id: AndNot``1(System.Numerics.Vector{``0},System.Numerics.Vector{``0})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: AndNot<T>(Vector<T>, Vector<T>)
+  name.vb: AndNot(Of T)(Vector(Of T), Vector(Of T))
+  fullName: System.Numerics.Vector.AndNot<T>(System.Numerics.Vector<T>, System.Numerics.Vector<T>)
+  fullName.vb: System.Numerics.Vector.AndNot(Of T)(System.Numerics.Vector(Of T), System.Numerics.Vector(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 739
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a new vector by performing a bitwise-and-not operation on each of the elements in the given vectors.
+  syntax:
+    content: 'public static Vector<T> AndNot<T>(Vector<T> left, Vector<T> right)where T : struct'
+    content.vb: Public Shared Function AndNot(Of T As Structure)(left As Vector(Of T), right As Vector(Of T)) As Vector(Of T)
+    parameters:
+    - id: left
+      type: System.Numerics.Vector{{T}}
+      description: The first source vector.
+    - id: right
+      type: System.Numerics.Vector{{T}}
+      description: The second source vector.
+    typeParameters:
+    - id: T
+    return:
+      type: System.Numerics.Vector{{T}}
+      description: The resultant vector.
+- uid: System.Numerics.Vector.AsVectorByte``1(System.Numerics.Vector{``0})
+  id: AsVectorByte``1(System.Numerics.Vector{``0})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: AsVectorByte<T>(Vector<T>)
+  name.vb: AsVectorByte(Of T)(Vector(Of T))
+  fullName: System.Numerics.Vector.AsVectorByte<T>(System.Numerics.Vector<T>)
+  fullName.vb: System.Numerics.Vector.AsVectorByte(Of T)(System.Numerics.Vector(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 752
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Reinterprets the bits of the given vector into those of a vector of unsigned bytes.
+  syntax:
+    content: 'public static Vector<byte> AsVectorByte<T>(Vector<T> value)where T : struct'
+    content.vb: Public Shared Function AsVectorByte(Of T As Structure)(value As Vector(Of T)) As Vector(Of Byte)
+    parameters:
+    - id: value
+      type: System.Numerics.Vector{{T}}
+      description: The source vector
+    typeParameters:
+    - id: T
+    return:
+      type: System.Numerics.Vector{System.Byte}
+      description: The reinterpreted vector.
+- uid: System.Numerics.Vector.AsVectorSByte``1(System.Numerics.Vector{``0})
+  id: AsVectorSByte``1(System.Numerics.Vector{``0})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: AsVectorSByte<T>(Vector<T>)
+  name.vb: AsVectorSByte(Of T)(Vector(Of T))
+  fullName: System.Numerics.Vector.AsVectorSByte<T>(System.Numerics.Vector<T>)
+  fullName.vb: System.Numerics.Vector.AsVectorSByte(Of T)(System.Numerics.Vector(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 763
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Reinterprets the bits of the given vector into those of a vector of signed bytes.
+  syntax:
+    content: 'public static Vector<sbyte> AsVectorSByte<T>(Vector<T> value)where T : struct'
+    content.vb: Public Shared Function AsVectorSByte(Of T As Structure)(value As Vector(Of T)) As Vector(Of SByte)
+    parameters:
+    - id: value
+      type: System.Numerics.Vector{{T}}
+      description: The source vector
+    typeParameters:
+    - id: T
+    return:
+      type: System.Numerics.Vector{System.SByte}
+      description: The reinterpreted vector.
+- uid: System.Numerics.Vector.AsVectorUInt16``1(System.Numerics.Vector{``0})
+  id: AsVectorUInt16``1(System.Numerics.Vector{``0})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: AsVectorUInt16<T>(Vector<T>)
+  name.vb: AsVectorUInt16(Of T)(Vector(Of T))
+  fullName: System.Numerics.Vector.AsVectorUInt16<T>(System.Numerics.Vector<T>)
+  fullName.vb: System.Numerics.Vector.AsVectorUInt16(Of T)(System.Numerics.Vector(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 775
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Reinterprets the bits of the given vector into those of a vector of 16-bit integers.
+  syntax:
+    content: 'public static Vector<ushort> AsVectorUInt16<T>(Vector<T> value)where T : struct'
+    content.vb: Public Shared Function AsVectorUInt16(Of T As Structure)(value As Vector(Of T)) As Vector(Of UShort)
+    parameters:
+    - id: value
+      type: System.Numerics.Vector{{T}}
+      description: The source vector
+    typeParameters:
+    - id: T
+    return:
+      type: System.Numerics.Vector{System.UInt16}
+      description: The reinterpreted vector.
+- uid: System.Numerics.Vector.AsVectorInt16``1(System.Numerics.Vector{``0})
+  id: AsVectorInt16``1(System.Numerics.Vector{``0})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: AsVectorInt16<T>(Vector<T>)
+  name.vb: AsVectorInt16(Of T)(Vector(Of T))
+  fullName: System.Numerics.Vector.AsVectorInt16<T>(System.Numerics.Vector<T>)
+  fullName.vb: System.Numerics.Vector.AsVectorInt16(Of T)(System.Numerics.Vector(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 787
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Reinterprets the bits of the given vector into those of a vector of signed 16-bit integers.
+  syntax:
+    content: 'public static Vector<short> AsVectorInt16<T>(Vector<T> value)where T : struct'
+    content.vb: Public Shared Function AsVectorInt16(Of T As Structure)(value As Vector(Of T)) As Vector(Of Short)
+    parameters:
+    - id: value
+      type: System.Numerics.Vector{{T}}
+      description: The source vector
+    typeParameters:
+    - id: T
+    return:
+      type: System.Numerics.Vector{System.Int16}
+      description: The reinterpreted vector.
+- uid: System.Numerics.Vector.AsVectorUInt32``1(System.Numerics.Vector{``0})
+  id: AsVectorUInt32``1(System.Numerics.Vector{``0})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: AsVectorUInt32<T>(Vector<T>)
+  name.vb: AsVectorUInt32(Of T)(Vector(Of T))
+  fullName: System.Numerics.Vector.AsVectorUInt32<T>(System.Numerics.Vector<T>)
+  fullName.vb: System.Numerics.Vector.AsVectorUInt32(Of T)(System.Numerics.Vector(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 798
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Reinterprets the bits of the given vector into those of a vector of unsigned 32-bit integers.
+  syntax:
+    content: 'public static Vector<uint> AsVectorUInt32<T>(Vector<T> value)where T : struct'
+    content.vb: Public Shared Function AsVectorUInt32(Of T As Structure)(value As Vector(Of T)) As Vector(Of UInteger)
+    parameters:
+    - id: value
+      type: System.Numerics.Vector{{T}}
+      description: The source vector
+    typeParameters:
+    - id: T
+    return:
+      type: System.Numerics.Vector{System.UInt32}
+      description: The reinterpreted vector.
+- uid: System.Numerics.Vector.AsVectorInt32``1(System.Numerics.Vector{``0})
+  id: AsVectorInt32``1(System.Numerics.Vector{``0})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: AsVectorInt32<T>(Vector<T>)
+  name.vb: AsVectorInt32(Of T)(Vector(Of T))
+  fullName: System.Numerics.Vector.AsVectorInt32<T>(System.Numerics.Vector<T>)
+  fullName.vb: System.Numerics.Vector.AsVectorInt32(Of T)(System.Numerics.Vector(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 810
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Reinterprets the bits of the given vector into those of a vector of signed 32-bit integers.
+  syntax:
+    content: 'public static Vector<int> AsVectorInt32<T>(Vector<T> value)where T : struct'
+    content.vb: Public Shared Function AsVectorInt32(Of T As Structure)(value As Vector(Of T)) As Vector(Of Integer)
+    parameters:
+    - id: value
+      type: System.Numerics.Vector{{T}}
+      description: The source vector
+    typeParameters:
+    - id: T
+    return:
+      type: System.Numerics.Vector{System.Int32}
+      description: The reinterpreted vector.
+- uid: System.Numerics.Vector.AsVectorUInt64``1(System.Numerics.Vector{``0})
+  id: AsVectorUInt64``1(System.Numerics.Vector{``0})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: AsVectorUInt64<T>(Vector<T>)
+  name.vb: AsVectorUInt64(Of T)(Vector(Of T))
+  fullName: System.Numerics.Vector.AsVectorUInt64<T>(System.Numerics.Vector<T>)
+  fullName.vb: System.Numerics.Vector.AsVectorUInt64(Of T)(System.Numerics.Vector(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 821
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Reinterprets the bits of the given vector into those of a vector of unsigned 64-bit integers.
+  syntax:
+    content: 'public static Vector<ulong> AsVectorUInt64<T>(Vector<T> value)where T : struct'
+    content.vb: Public Shared Function AsVectorUInt64(Of T As Structure)(value As Vector(Of T)) As Vector(Of ULong)
+    parameters:
+    - id: value
+      type: System.Numerics.Vector{{T}}
+      description: The source vector
+    typeParameters:
+    - id: T
+    return:
+      type: System.Numerics.Vector{System.UInt64}
+      description: The reinterpreted vector.
+- uid: System.Numerics.Vector.AsVectorInt64``1(System.Numerics.Vector{``0})
+  id: AsVectorInt64``1(System.Numerics.Vector{``0})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: AsVectorInt64<T>(Vector<T>)
+  name.vb: AsVectorInt64(Of T)(Vector(Of T))
+  fullName: System.Numerics.Vector.AsVectorInt64<T>(System.Numerics.Vector<T>)
+  fullName.vb: System.Numerics.Vector.AsVectorInt64(Of T)(System.Numerics.Vector(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 834
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Reinterprets the bits of the given vector into those of a vector of signed 64-bit integers.
+  syntax:
+    content: 'public static Vector<long> AsVectorInt64<T>(Vector<T> value)where T : struct'
+    content.vb: Public Shared Function AsVectorInt64(Of T As Structure)(value As Vector(Of T)) As Vector(Of Long)
+    parameters:
+    - id: value
+      type: System.Numerics.Vector{{T}}
+      description: The source vector
+    typeParameters:
+    - id: T
+    return:
+      type: System.Numerics.Vector{System.Int64}
+      description: The reinterpreted vector.
+- uid: System.Numerics.Vector.AsVectorSingle``1(System.Numerics.Vector{``0})
+  id: AsVectorSingle``1(System.Numerics.Vector{``0})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: AsVectorSingle<T>(Vector<T>)
+  name.vb: AsVectorSingle(Of T)(Vector(Of T))
+  fullName: System.Numerics.Vector.AsVectorSingle<T>(System.Numerics.Vector<T>)
+  fullName.vb: System.Numerics.Vector.AsVectorSingle(Of T)(System.Numerics.Vector(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 845
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Reinterprets the bits of the given vector into those of a vector of 32-bit floating point numbers.
+  syntax:
+    content: 'public static Vector<float> AsVectorSingle<T>(Vector<T> value)where T : struct'
+    content.vb: Public Shared Function AsVectorSingle(Of T As Structure)(value As Vector(Of T)) As Vector(Of Single)
+    parameters:
+    - id: value
+      type: System.Numerics.Vector{{T}}
+      description: The source vector
+    typeParameters:
+    - id: T
+    return:
+      type: System.Numerics.Vector{System.Single}
+      description: The reinterpreted vector.
+- uid: System.Numerics.Vector.AsVectorDouble``1(System.Numerics.Vector{``0})
+  id: AsVectorDouble``1(System.Numerics.Vector{``0})
+  parent: System.Numerics.Vector
+  href: System.Numerics.Vector.yml
+  name: AsVectorDouble<T>(Vector<T>)
+  name.vb: AsVectorDouble(Of T)(Vector(Of T))
+  fullName: System.Numerics.Vector.AsVectorDouble<T>(System.Numerics.Vector<T>)
+  fullName.vb: System.Numerics.Vector.AsVectorDouble(Of T)(System.Numerics.Vector(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
+    startLine: 856
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Reinterprets the bits of the given vector into those of a vector of 64-bit floating point numbers.
+  syntax:
+    content: 'public static Vector<double> AsVectorDouble<T>(Vector<T> value)where T : struct'
+    content.vb: Public Shared Function AsVectorDouble(Of T As Structure)(value As Vector(Of T)) As Vector(Of Double)
+    parameters:
+    - id: value
+      type: System.Numerics.Vector{{T}}
+      description: The source vector
+    typeParameters:
+    - id: T
+    return:
+      type: System.Numerics.Vector{System.Double}
+      description: The reinterpreted vector.
+references:
+- uid: System.Numerics
+  isExternal: false
+  name: System.Numerics
+  fullName: System.Numerics
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Numerics.Vector{System.Int32}
+  parent: System.Numerics
+  definition: System.Numerics.Vector`1
+  href: System.Numerics.Vector`1.yml
+  name: Vector<Int32>
+  name.vb: Vector(Of Int32)
+  fullName: System.Numerics.Vector<System.Int32>
+  fullName.vb: System.Numerics.Vector(Of System.Int32)
+  spec.csharp:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    fullName: System.Numerics.Vector
+    href: System.Numerics.Vector`1.yml
+  - name: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    fullName: System.Numerics.Vector
+    href: System.Numerics.Vector`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Numerics.Vector{System.Single}
+  parent: System.Numerics
+  definition: System.Numerics.Vector`1
+  href: System.Numerics.Vector`1.yml
+  name: Vector<Single>
+  name.vb: Vector(Of Single)
+  fullName: System.Numerics.Vector<System.Single>
+  fullName.vb: System.Numerics.Vector(Of System.Single)
+  spec.csharp:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    fullName: System.Numerics.Vector
+    href: System.Numerics.Vector`1.yml
+  - name: <
+    fullName: <
+  - uid: System.Single
+    name: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    fullName: System.Numerics.Vector
+    href: System.Numerics.Vector`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Single
+    name: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Numerics.Vector`1
+  parent: System.Numerics
+  isExternal: false
+  href: System.Numerics.Vector`1.yml
+  name: Vector<T>
+  name.vb: Vector(Of T)
+  fullName: System.Numerics.Vector<T>
+  fullName.vb: System.Numerics.Vector(Of T)
+  type: Struct
+  summary: >-
+    A structure that represents a single Vector. The count of this Vector is fixed but CPU register dependent.
+
+    This struct only supports numerical types. This type is intended to be used as a building block for vectorizing
+
+    large algorithms. This type is immutable, individual elements cannot be modified.
+  spec.csharp:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    fullName: System.Numerics.Vector
+    href: System.Numerics.Vector`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    fullName: System.Numerics.Vector
+    href: System.Numerics.Vector`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Numerics.Vector{System.Int64}
+  parent: System.Numerics
+  definition: System.Numerics.Vector`1
+  href: System.Numerics.Vector`1.yml
+  name: Vector<Int64>
+  name.vb: Vector(Of Int64)
+  fullName: System.Numerics.Vector<System.Int64>
+  fullName.vb: System.Numerics.Vector(Of System.Int64)
+  spec.csharp:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    fullName: System.Numerics.Vector
+    href: System.Numerics.Vector`1.yml
+  - name: <
+    fullName: <
+  - uid: System.Int64
+    name: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    fullName: System.Numerics.Vector
+    href: System.Numerics.Vector`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Int64
+    name: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Numerics.Vector{System.Double}
+  parent: System.Numerics
+  definition: System.Numerics.Vector`1
+  href: System.Numerics.Vector`1.yml
+  name: Vector<Double>
+  name.vb: Vector(Of Double)
+  fullName: System.Numerics.Vector<System.Double>
+  fullName.vb: System.Numerics.Vector(Of System.Double)
+  spec.csharp:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    fullName: System.Numerics.Vector
+    href: System.Numerics.Vector`1.yml
+  - name: <
+    fullName: <
+  - uid: System.Double
+    name: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    fullName: System.Numerics.Vector
+    href: System.Numerics.Vector`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Double
+    name: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Numerics.Vector{{T}}
+  parent: System.Numerics
+  definition: System.Numerics.Vector`1
+  href: System.Numerics.Vector`1.yml
+  name: Vector<T>
+  name.vb: Vector(Of T)
+  fullName: System.Numerics.Vector<T>
+  fullName.vb: System.Numerics.Vector(Of T)
+  spec.csharp:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    fullName: System.Numerics.Vector
+    href: System.Numerics.Vector`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    fullName: System.Numerics.Vector
+    href: System.Numerics.Vector`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: '{T}'
+  isExternal: false
+  name: T
+  fullName: T
+- uid: System.Numerics.Vector{System.Byte}
+  parent: System.Numerics
+  definition: System.Numerics.Vector`1
+  href: System.Numerics.Vector`1.yml
+  name: Vector<Byte>
+  name.vb: Vector(Of Byte)
+  fullName: System.Numerics.Vector<System.Byte>
+  fullName.vb: System.Numerics.Vector(Of System.Byte)
+  spec.csharp:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    fullName: System.Numerics.Vector
+    href: System.Numerics.Vector`1.yml
+  - name: <
+    fullName: <
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    fullName: System.Numerics.Vector
+    href: System.Numerics.Vector`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Numerics.Vector{System.SByte}
+  parent: System.Numerics
+  definition: System.Numerics.Vector`1
+  href: System.Numerics.Vector`1.yml
+  name: Vector<SByte>
+  name.vb: Vector(Of SByte)
+  fullName: System.Numerics.Vector<System.SByte>
+  fullName.vb: System.Numerics.Vector(Of System.SByte)
+  spec.csharp:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    fullName: System.Numerics.Vector
+    href: System.Numerics.Vector`1.yml
+  - name: <
+    fullName: <
+  - uid: System.SByte
+    name: SByte
+    fullName: System.SByte
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    fullName: System.Numerics.Vector
+    href: System.Numerics.Vector`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.SByte
+    name: SByte
+    fullName: System.SByte
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Numerics.Vector{System.UInt16}
+  parent: System.Numerics
+  definition: System.Numerics.Vector`1
+  href: System.Numerics.Vector`1.yml
+  name: Vector<UInt16>
+  name.vb: Vector(Of UInt16)
+  fullName: System.Numerics.Vector<System.UInt16>
+  fullName.vb: System.Numerics.Vector(Of System.UInt16)
+  spec.csharp:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    fullName: System.Numerics.Vector
+    href: System.Numerics.Vector`1.yml
+  - name: <
+    fullName: <
+  - uid: System.UInt16
+    name: UInt16
+    fullName: System.UInt16
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    fullName: System.Numerics.Vector
+    href: System.Numerics.Vector`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.UInt16
+    name: UInt16
+    fullName: System.UInt16
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Numerics.Vector{System.Int16}
+  parent: System.Numerics
+  definition: System.Numerics.Vector`1
+  href: System.Numerics.Vector`1.yml
+  name: Vector<Int16>
+  name.vb: Vector(Of Int16)
+  fullName: System.Numerics.Vector<System.Int16>
+  fullName.vb: System.Numerics.Vector(Of System.Int16)
+  spec.csharp:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    fullName: System.Numerics.Vector
+    href: System.Numerics.Vector`1.yml
+  - name: <
+    fullName: <
+  - uid: System.Int16
+    name: Int16
+    fullName: System.Int16
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    fullName: System.Numerics.Vector
+    href: System.Numerics.Vector`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Int16
+    name: Int16
+    fullName: System.Int16
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Numerics.Vector{System.UInt32}
+  parent: System.Numerics
+  definition: System.Numerics.Vector`1
+  href: System.Numerics.Vector`1.yml
+  name: Vector<UInt32>
+  name.vb: Vector(Of UInt32)
+  fullName: System.Numerics.Vector<System.UInt32>
+  fullName.vb: System.Numerics.Vector(Of System.UInt32)
+  spec.csharp:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    fullName: System.Numerics.Vector
+    href: System.Numerics.Vector`1.yml
+  - name: <
+    fullName: <
+  - uid: System.UInt32
+    name: UInt32
+    fullName: System.UInt32
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    fullName: System.Numerics.Vector
+    href: System.Numerics.Vector`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.UInt32
+    name: UInt32
+    fullName: System.UInt32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Numerics.Vector{System.UInt64}
+  parent: System.Numerics
+  definition: System.Numerics.Vector`1
+  href: System.Numerics.Vector`1.yml
+  name: Vector<UInt64>
+  name.vb: Vector(Of UInt64)
+  fullName: System.Numerics.Vector<System.UInt64>
+  fullName.vb: System.Numerics.Vector(Of System.UInt64)
+  spec.csharp:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    fullName: System.Numerics.Vector
+    href: System.Numerics.Vector`1.yml
+  - name: <
+    fullName: <
+  - uid: System.UInt64
+    name: UInt64
+    fullName: System.UInt64
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    fullName: System.Numerics.Vector
+    href: System.Numerics.Vector`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.UInt64
+    name: UInt64
+    fullName: System.UInt64
+    isExternal: true
+  - name: )
+    fullName: )

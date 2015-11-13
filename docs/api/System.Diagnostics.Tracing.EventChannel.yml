@@ -1,0 +1,119 @@
+items:
+- uid: System.Diagnostics.Tracing.EventChannel
+  id: EventChannel
+  parent: System.Diagnostics.Tracing
+  children:
+  - System.Diagnostics.Tracing.EventChannel.Admin
+  - System.Diagnostics.Tracing.EventChannel.Analytic
+  - System.Diagnostics.Tracing.EventChannel.Debug
+  - System.Diagnostics.Tracing.EventChannel.None
+  - System.Diagnostics.Tracing.EventChannel.Operational
+  href: System.Diagnostics.Tracing.EventChannel.yml
+  name: EventChannel
+  fullName: System.Diagnostics.Tracing.EventChannel
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Diagnostics/Eventing/Winmeta.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Diagnostics/Eventing/Winmeta.cs
+    startLine: 122
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Specifies the event log channel for the event.
+  syntax:
+    content: 'public enum EventChannel : byte'
+    content.vb: Public Enum EventChannel As Byte
+- uid: System.Diagnostics.Tracing.EventChannel.None
+  id: None
+  parent: System.Diagnostics.Tracing.EventChannel
+  href: System.Diagnostics.Tracing.EventChannel.yml
+  name: None
+  fullName: System.Diagnostics.Tracing.EventChannel.None
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/Winmeta.cs
+    startLine: 131
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: No channel specified.
+  syntax:
+    content: None = 0
+- uid: System.Diagnostics.Tracing.EventChannel.Admin
+  id: Admin
+  parent: System.Diagnostics.Tracing.EventChannel
+  href: System.Diagnostics.Tracing.EventChannel.yml
+  name: Admin
+  fullName: System.Diagnostics.Tracing.EventChannel.Admin
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/Winmeta.cs
+    startLine: 134
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: The administrator log channel.
+  syntax:
+    content: Admin = 16
+- uid: System.Diagnostics.Tracing.EventChannel.Operational
+  id: Operational
+  parent: System.Diagnostics.Tracing.EventChannel
+  href: System.Diagnostics.Tracing.EventChannel.yml
+  name: Operational
+  fullName: System.Diagnostics.Tracing.EventChannel.Operational
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/Winmeta.cs
+    startLine: 136
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: The operational channel.
+  syntax:
+    content: Operational = 17
+- uid: System.Diagnostics.Tracing.EventChannel.Analytic
+  id: Analytic
+  parent: System.Diagnostics.Tracing.EventChannel
+  href: System.Diagnostics.Tracing.EventChannel.yml
+  name: Analytic
+  fullName: System.Diagnostics.Tracing.EventChannel.Analytic
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/Winmeta.cs
+    startLine: 138
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: The analytic channel.
+  syntax:
+    content: Analytic = 18
+- uid: System.Diagnostics.Tracing.EventChannel.Debug
+  id: Debug
+  parent: System.Diagnostics.Tracing.EventChannel
+  href: System.Diagnostics.Tracing.EventChannel.yml
+  name: Debug
+  fullName: System.Diagnostics.Tracing.EventChannel.Debug
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/Winmeta.cs
+    startLine: 140
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: The debug channel.
+  syntax:
+    content: Debug = 19
+references:
+- uid: System.Diagnostics.Tracing
+  isExternal: false
+  name: System.Diagnostics.Tracing
+  fullName: System.Diagnostics.Tracing
+  type: Namespace

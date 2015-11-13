@@ -1,0 +1,119 @@
+items:
+- uid: System.Runtime.InteropServices.ComTypes.FUNCKIND
+  id: FUNCKIND
+  parent: System.Runtime.InteropServices.ComTypes
+  children:
+  - System.Runtime.InteropServices.ComTypes.FUNCKIND.FUNC_DISPATCH
+  - System.Runtime.InteropServices.ComTypes.FUNCKIND.FUNC_NONVIRTUAL
+  - System.Runtime.InteropServices.ComTypes.FUNCKIND.FUNC_PUREVIRTUAL
+  - System.Runtime.InteropServices.ComTypes.FUNCKIND.FUNC_STATIC
+  - System.Runtime.InteropServices.ComTypes.FUNCKIND.FUNC_VIRTUAL
+  href: System.Runtime.InteropServices.ComTypes.FUNCKIND.yml
+  name: FUNCKIND
+  fullName: System.Runtime.InteropServices.ComTypes.FUNCKIND
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 232
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Defines how to access a function.
+  syntax:
+    content: public enum FUNCKIND
+    content.vb: Public Enum FUNCKIND
+- uid: System.Runtime.InteropServices.ComTypes.FUNCKIND.FUNC_VIRTUAL
+  id: FUNC_VIRTUAL
+  parent: System.Runtime.InteropServices.ComTypes.FUNCKIND
+  href: System.Runtime.InteropServices.ComTypes.FUNCKIND.yml
+  name: FUNC_VIRTUAL
+  fullName: System.Runtime.InteropServices.ComTypes.FUNCKIND.FUNC_VIRTUAL
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 235
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: The function is accessed in the same way as @'System.Runtime.InteropServices.FUNCKIND.FUNC_PUREVIRTUAL', except the function has an implementation.
+  syntax:
+    content: FUNC_VIRTUAL = 0
+- uid: System.Runtime.InteropServices.ComTypes.FUNCKIND.FUNC_PUREVIRTUAL
+  id: FUNC_PUREVIRTUAL
+  parent: System.Runtime.InteropServices.ComTypes.FUNCKIND
+  href: System.Runtime.InteropServices.ComTypes.FUNCKIND.yml
+  name: FUNC_PUREVIRTUAL
+  fullName: System.Runtime.InteropServices.ComTypes.FUNCKIND.FUNC_PUREVIRTUAL
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 236
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: The function is accessed through the virtual function table (VTBL), and takes an implicit this pointer.
+  syntax:
+    content: FUNC_PUREVIRTUAL = 1
+- uid: System.Runtime.InteropServices.ComTypes.FUNCKIND.FUNC_NONVIRTUAL
+  id: FUNC_NONVIRTUAL
+  parent: System.Runtime.InteropServices.ComTypes.FUNCKIND
+  href: System.Runtime.InteropServices.ComTypes.FUNCKIND.yml
+  name: FUNC_NONVIRTUAL
+  fullName: System.Runtime.InteropServices.ComTypes.FUNCKIND.FUNC_NONVIRTUAL
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 237
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: The function is accessed by static address and takes an implicit this pointer.
+  syntax:
+    content: FUNC_NONVIRTUAL = 2
+- uid: System.Runtime.InteropServices.ComTypes.FUNCKIND.FUNC_STATIC
+  id: FUNC_STATIC
+  parent: System.Runtime.InteropServices.ComTypes.FUNCKIND
+  href: System.Runtime.InteropServices.ComTypes.FUNCKIND.yml
+  name: FUNC_STATIC
+  fullName: System.Runtime.InteropServices.ComTypes.FUNCKIND.FUNC_STATIC
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 238
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: The function is accessed by static address and does not take an implicit this pointer.
+  syntax:
+    content: FUNC_STATIC = 3
+- uid: System.Runtime.InteropServices.ComTypes.FUNCKIND.FUNC_DISPATCH
+  id: FUNC_DISPATCH
+  parent: System.Runtime.InteropServices.ComTypes.FUNCKIND
+  href: System.Runtime.InteropServices.ComTypes.FUNCKIND.yml
+  name: FUNC_DISPATCH
+  fullName: System.Runtime.InteropServices.ComTypes.FUNCKIND.FUNC_DISPATCH
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 239
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: The function can be accessed only through IDispatch.
+  syntax:
+    content: FUNC_DISPATCH = 4
+references:
+- uid: System.Runtime.InteropServices.ComTypes
+  isExternal: false
+  name: System.Runtime.InteropServices.ComTypes
+  fullName: System.Runtime.InteropServices.ComTypes
+  type: Namespace

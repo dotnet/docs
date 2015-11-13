@@ -1,0 +1,150 @@
+items:
+- uid: System.Reflection.Metadata.SignatureCallingConvention
+  id: SignatureCallingConvention
+  parent: System.Reflection.Metadata
+  children:
+  - System.Reflection.Metadata.SignatureCallingConvention.CDecl
+  - System.Reflection.Metadata.SignatureCallingConvention.Default
+  - System.Reflection.Metadata.SignatureCallingConvention.FastCall
+  - System.Reflection.Metadata.SignatureCallingConvention.StdCall
+  - System.Reflection.Metadata.SignatureCallingConvention.ThisCall
+  - System.Reflection.Metadata.SignatureCallingConvention.VarArgs
+  href: System.Reflection.Metadata.SignatureCallingConvention.yml
+  name: SignatureCallingConvention
+  fullName: System.Reflection.Metadata.SignatureCallingConvention
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureCallingConvention.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureCallingConvention.cs
+    startLine: 10
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: >-
+    Specifies how arguments in a given signature are passed from the caller to the callee.
+
+    Underlying values correspond to the representation in the leading signature byte
+
+    represented by @'System.Reflection.Metadata.SignatureHeader'.
+  syntax:
+    content: 'public enum SignatureCallingConvention : byte'
+    content.vb: Public Enum SignatureCallingConvention As Byte
+- uid: System.Reflection.Metadata.SignatureCallingConvention.Default
+  id: Default
+  parent: System.Reflection.Metadata.SignatureCallingConvention
+  href: System.Reflection.Metadata.SignatureCallingConvention.yml
+  name: Default
+  fullName: System.Reflection.Metadata.SignatureCallingConvention.Default
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureCallingConvention.cs
+    startLine: 15
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Managed calling convention with fixed-length argument list.
+  syntax:
+    content: Default = 0
+- uid: System.Reflection.Metadata.SignatureCallingConvention.CDecl
+  id: CDecl
+  parent: System.Reflection.Metadata.SignatureCallingConvention
+  href: System.Reflection.Metadata.SignatureCallingConvention.yml
+  name: CDecl
+  fullName: System.Reflection.Metadata.SignatureCallingConvention.CDecl
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureCallingConvention.cs
+    startLine: 20
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Unmanaged C/C++-style calling convention where the call stack is cleaned by the caller.
+  syntax:
+    content: CDecl = 1
+- uid: System.Reflection.Metadata.SignatureCallingConvention.StdCall
+  id: StdCall
+  parent: System.Reflection.Metadata.SignatureCallingConvention
+  href: System.Reflection.Metadata.SignatureCallingConvention.yml
+  name: StdCall
+  fullName: System.Reflection.Metadata.SignatureCallingConvention.StdCall
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureCallingConvention.cs
+    startLine: 25
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Unmanaged calling convention where call stack is cleaned up by the callee.
+  syntax:
+    content: StdCall = 2
+- uid: System.Reflection.Metadata.SignatureCallingConvention.ThisCall
+  id: ThisCall
+  parent: System.Reflection.Metadata.SignatureCallingConvention
+  href: System.Reflection.Metadata.SignatureCallingConvention.yml
+  name: ThisCall
+  fullName: System.Reflection.Metadata.SignatureCallingConvention.ThisCall
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureCallingConvention.cs
+    startLine: 30
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Unmanaged C++-style calling convention for calling instance member functions with a fixed argument list.
+  syntax:
+    content: ThisCall = 3
+- uid: System.Reflection.Metadata.SignatureCallingConvention.FastCall
+  id: FastCall
+  parent: System.Reflection.Metadata.SignatureCallingConvention
+  href: System.Reflection.Metadata.SignatureCallingConvention.yml
+  name: FastCall
+  fullName: System.Reflection.Metadata.SignatureCallingConvention.FastCall
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureCallingConvention.cs
+    startLine: 35
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Unmanaged calling convention where arguments are passed in registers when possible.
+  syntax:
+    content: FastCall = 4
+- uid: System.Reflection.Metadata.SignatureCallingConvention.VarArgs
+  id: VarArgs
+  parent: System.Reflection.Metadata.SignatureCallingConvention
+  href: System.Reflection.Metadata.SignatureCallingConvention.yml
+  name: VarArgs
+  fullName: System.Reflection.Metadata.SignatureCallingConvention.VarArgs
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureCallingConvention.cs
+    startLine: 40
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Managed calling convention for passing extra arguments.
+  syntax:
+    content: VarArgs = 5
+references:
+- uid: System.Reflection.Metadata.SignatureHeader
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.SignatureHeader.yml
+  name: SignatureHeader
+  fullName: System.Reflection.Metadata.SignatureHeader
+  type: Struct
+  summary: Represents the signature characteristics specified by the leading byte of signature blobs.
+- uid: System.Reflection.Metadata
+  isExternal: false
+  name: System.Reflection.Metadata
+  fullName: System.Reflection.Metadata
+  type: Namespace

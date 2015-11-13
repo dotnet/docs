@@ -1,0 +1,112 @@
+items:
+- uid: System.ComponentModel.IComponent
+  id: IComponent
+  parent: System.ComponentModel
+  children:
+  - System.ComponentModel.IComponent.Disposed
+  - System.ComponentModel.IComponent.Site
+  href: System.ComponentModel.IComponent.yml
+  name: IComponent
+  fullName: System.ComponentModel.IComponent
+  type: Interface
+  source:
+    remote: &o0
+      path: src/System.ComponentModel.Primitives/src/System/ComponentModel/IComponent.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.ComponentModel.Primitives/src/System/ComponentModel/IComponent.cs
+    startLine: 24
+  assemblies:
+  - System.ComponentModel.Primitives
+  namespace: System.ComponentModel
+  summary: Provides functionality required by all components.
+  syntax:
+    content: 'public interface IComponent : IDisposable'
+    content.vb: Public Interface IComponent Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+- uid: System.ComponentModel.IComponent.Site
+  id: Site
+  parent: System.ComponentModel.IComponent
+  href: System.ComponentModel.IComponent.yml
+  name: Site
+  fullName: System.ComponentModel.IComponent.Site
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.ComponentModel.Primitives/src/System/ComponentModel/IComponent.cs
+    startLine: 32
+  assemblies:
+  - System.ComponentModel.Primitives
+  namespace: System.ComponentModel
+  summary: Gets or sets the @'System.ComponentModel.ISite' associated with the @'System.ComponentModel.IComponent'.
+  syntax:
+    content: ISite Site { get; set; }
+    content.vb: Property Site As ISite
+    parameters: []
+    return:
+      type: System.ComponentModel.ISite
+- uid: System.ComponentModel.IComponent.Disposed
+  id: Disposed
+  parent: System.ComponentModel.IComponent
+  href: System.ComponentModel.IComponent.yml
+  name: Disposed
+  fullName: System.ComponentModel.IComponent.Disposed
+  type: Event
+  source:
+    remote: *o0
+    path: src/System.ComponentModel.Primitives/src/System/ComponentModel/IComponent.cs
+    startLine: 41
+  assemblies:
+  - System.ComponentModel.Primitives
+  namespace: System.ComponentModel
+  summary: Represents the method that handles the @'System.ComponentModel.IComponent.Disposed' event of a component.
+  syntax:
+    content: event EventHandler Disposed
+    content.vb: Event Disposed As EventHandler
+references:
+- uid: System.ComponentModel
+  isExternal: false
+  name: System.ComponentModel
+  fullName: System.ComponentModel
+  type: Namespace
+- uid: System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: false
+  href: System.IDisposable.yml
+  name: Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    fullName: System.IDisposable.Dispose
+    href: System.IDisposable.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    fullName: System.IDisposable.Dispose
+    href: System.IDisposable.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.ComponentModel.ISite
+  parent: System.ComponentModel
+  isExternal: false
+  href: System.ComponentModel.ISite.yml
+  name: ISite
+  fullName: System.ComponentModel.ISite
+  type: Interface

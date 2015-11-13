@@ -1,0 +1,908 @@
+items:
+- uid: System.Threading.Tasks.Dataflow.ActionBlock`1
+  id: ActionBlock`1
+  parent: System.Threading.Tasks.Dataflow
+  children:
+  - System.Threading.Tasks.Dataflow.ActionBlock`1.#ctor(System.Action{`0})
+  - System.Threading.Tasks.Dataflow.ActionBlock`1.#ctor(System.Action{`0},System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions)
+  - System.Threading.Tasks.Dataflow.ActionBlock`1.#ctor(System.Func{`0,System.Threading.Tasks.Task})
+  - System.Threading.Tasks.Dataflow.ActionBlock`1.#ctor(System.Func{`0,System.Threading.Tasks.Task},System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions)
+  - System.Threading.Tasks.Dataflow.ActionBlock`1.Complete
+  - System.Threading.Tasks.Dataflow.ActionBlock`1.Completion
+  - System.Threading.Tasks.Dataflow.ActionBlock`1.InputCount
+  - System.Threading.Tasks.Dataflow.ActionBlock`1.Post(`0)
+  - System.Threading.Tasks.Dataflow.ActionBlock`1.System#Threading#Tasks#Dataflow#IDataflowBlock#Fault(System.Exception)
+  - System.Threading.Tasks.Dataflow.ActionBlock`1.System#Threading#Tasks#Dataflow#ITargetBlock{TInput}#OfferMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,`0,System.Threading.Tasks.Dataflow.ISourceBlock{`0},System.Boolean)
+  - System.Threading.Tasks.Dataflow.ActionBlock`1.ToString
+  href: System.Threading.Tasks.Dataflow.ActionBlock`1.yml
+  name: ActionBlock<TInput>
+  name.vb: ActionBlock(Of TInput)
+  fullName: System.Threading.Tasks.Dataflow.ActionBlock<TInput>
+  fullName.vb: System.Threading.Tasks.Dataflow.ActionBlock(Of TInput)
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Threading.Tasks.Dataflow/src/Blocks/ActionBlock.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Threading.Tasks.Dataflow/src/Blocks/ActionBlock.cs
+    startLine: 23
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Provides a dataflow block that invokes a provided @'System.Action`1' delegate for every data element received.
+  syntax:
+    content: 'public sealed class ActionBlock<TInput> : ITargetBlock<TInput>, IDataflowBlock, IDebuggerDisplay'
+    content.vb: Public NotInheritable Class ActionBlock(Of TInput) Implements ITargetBlock(Of TInput), IDataflowBlock, IDebuggerDisplay
+    typeParameters:
+    - id: TInput
+      description: Specifies the type of data operated on by this @'System.Threading.Tasks.Dataflow.ActionBlock`1'.
+  inheritance:
+  - System.Object
+  implements:
+  - System.Threading.Tasks.Dataflow.ITargetBlock{{TInput}}
+  - System.Threading.Tasks.Dataflow.IDataflowBlock
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Threading.Tasks.Dataflow.ActionBlock`1.#ctor(System.Action{`0})
+  id: '#ctor(System.Action{`0})'
+  parent: System.Threading.Tasks.Dataflow.ActionBlock`1
+  href: System.Threading.Tasks.Dataflow.ActionBlock`1.yml
+  name: ActionBlock(Action<TInput>)
+  name.vb: ActionBlock(Action(Of TInput))
+  fullName: System.Threading.Tasks.Dataflow.ActionBlock<TInput>.ActionBlock(System.Action<TInput>)
+  fullName.vb: System.Threading.Tasks.Dataflow.ActionBlock(Of TInput).ActionBlock(System.Action(Of TInput))
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Blocks/ActionBlock.cs
+    startLine: 35
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Initializes a new instance of the @'System.Threading.Tasks.Dataflow.ActionBlock`1' class with the specified action.
+  syntax:
+    content: public ActionBlock(Action<TInput> action)
+    content.vb: Public Sub New(action As Action(Of TInput))
+    parameters:
+    - id: action
+      type: System.Action{{TInput}}
+      description: The action to invoke with each data element received.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*action* is null.'
+- uid: System.Threading.Tasks.Dataflow.ActionBlock`1.#ctor(System.Action{`0},System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions)
+  id: '#ctor(System.Action{`0},System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions)'
+  parent: System.Threading.Tasks.Dataflow.ActionBlock`1
+  href: System.Threading.Tasks.Dataflow.ActionBlock`1.yml
+  name: ActionBlock(Action<TInput>, ExecutionDataflowBlockOptions)
+  name.vb: ActionBlock(Action(Of TInput), ExecutionDataflowBlockOptions)
+  fullName: System.Threading.Tasks.Dataflow.ActionBlock<TInput>.ActionBlock(System.Action<TInput>, System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions)
+  fullName.vb: System.Threading.Tasks.Dataflow.ActionBlock(Of TInput).ActionBlock(System.Action(Of TInput), System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Blocks/ActionBlock.cs
+    startLine: 44
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Initializes a new instance of the @'System.Threading.Tasks.Dataflow.ActionBlock`1' class with the specified action and configuration options.
+  syntax:
+    content: public ActionBlock(Action<TInput> action, ExecutionDataflowBlockOptions dataflowBlockOptions)
+    content.vb: Public Sub New(action As Action(Of TInput), dataflowBlockOptions As ExecutionDataflowBlockOptions)
+    parameters:
+    - id: action
+      type: System.Action{{TInput}}
+      description: The action to invoke with each data element received.
+    - id: dataflowBlockOptions
+      type: System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions
+      description: The options with which to configure this @'System.Threading.Tasks.Dataflow.ActionBlock`1'.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*action* is null.-or-*dataflowBlockOptions* is null.'
+- uid: System.Threading.Tasks.Dataflow.ActionBlock`1.#ctor(System.Func{`0,System.Threading.Tasks.Task})
+  id: '#ctor(System.Func{`0,System.Threading.Tasks.Task})'
+  parent: System.Threading.Tasks.Dataflow.ActionBlock`1
+  href: System.Threading.Tasks.Dataflow.ActionBlock`1.yml
+  name: ActionBlock(Func<TInput, Task>)
+  name.vb: ActionBlock(Func(Of TInput, Task))
+  fullName: System.Threading.Tasks.Dataflow.ActionBlock<TInput>.ActionBlock(System.Func<TInput, System.Threading.Tasks.Task>)
+  fullName.vb: System.Threading.Tasks.Dataflow.ActionBlock(Of TInput).ActionBlock(System.Func(Of TInput, System.Threading.Tasks.Task))
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Blocks/ActionBlock.cs
+    startLine: 51
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Initializes a new instance of the @'System.Threading.Tasks.Dataflow.ActionBlock`1' class with the specified action.
+  syntax:
+    content: public ActionBlock(Func<TInput, Task> action)
+    content.vb: Public Sub New(action As Func(Of TInput, Task))
+    parameters:
+    - id: action
+      type: System.Func{{TInput},System.Threading.Tasks.Task}
+      description: The action to invoke with each data element received.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*action* is null.'
+- uid: System.Threading.Tasks.Dataflow.ActionBlock`1.#ctor(System.Func{`0,System.Threading.Tasks.Task},System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions)
+  id: '#ctor(System.Func{`0,System.Threading.Tasks.Task},System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions)'
+  parent: System.Threading.Tasks.Dataflow.ActionBlock`1
+  href: System.Threading.Tasks.Dataflow.ActionBlock`1.yml
+  name: ActionBlock(Func<TInput, Task>, ExecutionDataflowBlockOptions)
+  name.vb: ActionBlock(Func(Of TInput, Task), ExecutionDataflowBlockOptions)
+  fullName: System.Threading.Tasks.Dataflow.ActionBlock<TInput>.ActionBlock(System.Func<TInput, System.Threading.Tasks.Task>, System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions)
+  fullName.vb: System.Threading.Tasks.Dataflow.ActionBlock(Of TInput).ActionBlock(System.Func(Of TInput, System.Threading.Tasks.Task), System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Blocks/ActionBlock.cs
+    startLine: 60
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Initializes a new instance of the @'System.Threading.Tasks.Dataflow.ActionBlock`1' class with the specified action and configuration options.
+  syntax:
+    content: public ActionBlock(Func<TInput, Task> action, ExecutionDataflowBlockOptions dataflowBlockOptions)
+    content.vb: Public Sub New(action As Func(Of TInput, Task), dataflowBlockOptions As ExecutionDataflowBlockOptions)
+    parameters:
+    - id: action
+      type: System.Func{{TInput},System.Threading.Tasks.Task}
+      description: The action to invoke with each data element received.
+    - id: dataflowBlockOptions
+      type: System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions
+      description: The options with which to configure this @'System.Threading.Tasks.Dataflow.ActionBlock`1'.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*action* is null.-or-*dataflowBlockOptions* is null.'
+- uid: System.Threading.Tasks.Dataflow.ActionBlock`1.Complete
+  id: Complete
+  parent: System.Threading.Tasks.Dataflow.ActionBlock`1
+  href: System.Threading.Tasks.Dataflow.ActionBlock`1.yml
+  name: Complete()
+  fullName: System.Threading.Tasks.Dataflow.ActionBlock<TInput>.Complete()
+  fullName.vb: System.Threading.Tasks.Dataflow.ActionBlock(Of TInput).Complete()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Blocks/ActionBlock.cs
+    startLine: 219
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Signals to the dataflow block that it shouldn't accept or produce any more messages and shouldn't consume any more postponed messages.
+  syntax:
+    content: public void Complete()
+    content.vb: Public Sub Complete
+- uid: System.Threading.Tasks.Dataflow.ActionBlock`1.System#Threading#Tasks#Dataflow#IDataflowBlock#Fault(System.Exception)
+  id: System#Threading#Tasks#Dataflow#IDataflowBlock#Fault(System.Exception)
+  parent: System.Threading.Tasks.Dataflow.ActionBlock`1
+  href: System.Threading.Tasks.Dataflow.ActionBlock`1.yml
+  name: IDataflowBlock.Fault(Exception)
+  name.vb: System.Threading.Tasks.Dataflow.IDataflowBlock.Fault(Exception)
+  fullName: System.Threading.Tasks.Dataflow.ActionBlock<TInput>.System.Threading.Tasks.Dataflow.IDataflowBlock.Fault(System.Exception)
+  fullName.vb: System.Threading.Tasks.Dataflow.ActionBlock(Of TInput).System.Threading.Tasks.Dataflow.IDataflowBlock.Fault(System.Exception)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Blocks/ActionBlock.cs
+    startLine: 232
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Causes the dataflow block to complete in a faulted state.
+  syntax:
+    content: void IDataflowBlock.Fault(Exception exception)
+    content.vb: Sub System.Threading.Tasks.Dataflow.IDataflowBlock.Fault(exception As Exception) Implements IDataflowBlock.Fault
+    parameters:
+    - id: exception
+      type: System.Exception
+      description: The exception that caused the faulting.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*exception* is null.'
+- uid: System.Threading.Tasks.Dataflow.ActionBlock`1.Completion
+  id: Completion
+  parent: System.Threading.Tasks.Dataflow.ActionBlock`1
+  href: System.Threading.Tasks.Dataflow.ActionBlock`1.yml
+  name: Completion
+  fullName: System.Threading.Tasks.Dataflow.ActionBlock<TInput>.Completion
+  fullName.vb: System.Threading.Tasks.Dataflow.ActionBlock(Of TInput).Completion
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Blocks/ActionBlock.cs
+    startLine: 248
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Gets a @'System.Threading.Tasks.Task' object that represents the asynchronous operation and completion of the dataflow block.
+  syntax:
+    content: public Task Completion { get; }
+    content.vb: Public ReadOnly Property Completion As Task
+    parameters: []
+    return:
+      type: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks.Dataflow.ActionBlock`1.Post(`0)
+  id: Post(`0)
+  parent: System.Threading.Tasks.Dataflow.ActionBlock`1
+  href: System.Threading.Tasks.Dataflow.ActionBlock`1.yml
+  name: Post(TInput)
+  fullName: System.Threading.Tasks.Dataflow.ActionBlock<TInput>.Post(TInput)
+  fullName.vb: System.Threading.Tasks.Dataflow.ActionBlock(Of TInput).Post(TInput)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Blocks/ActionBlock.cs
+    startLine: 267
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Posts an item to the target dataflow block.
+  remarks: >-
+    This method will return once the target block has decided to accept or decline the item,
+
+    but unless otherwise dictated by special semantics of the target block, it does not wait
+
+    for the item to actually be processed (for example, @'System.Threading.Tasks.Dataflow.ActionBlock`1'
+
+    will return from Post as soon as it has stored the posted item into its input queue).  From the perspective
+
+    of the block's processing, Post is asynchronous. For target blocks that support postponing offered messages,
+
+    or for blocks that may do more processing in their Post implementation, consider using
+
+    @'System.Threading.Tasks.Dataflow.DataflowBlock.SendAsync',
+
+    which will return immediately and will enable the target to postpone the posted message and later consume it
+
+    after SendAsync returns.
+  syntax:
+    content: public bool Post(TInput item)
+    content.vb: Public Function Post(item As TInput) As Boolean
+    parameters:
+    - id: item
+      type: '{TInput}'
+      description: The item being offered to the target.
+    return:
+      type: System.Boolean
+      description: true if the item was accepted by the target block; otherwise, false.
+- uid: System.Threading.Tasks.Dataflow.ActionBlock`1.System#Threading#Tasks#Dataflow#ITargetBlock{TInput}#OfferMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,`0,System.Threading.Tasks.Dataflow.ISourceBlock{`0},System.Boolean)
+  id: System#Threading#Tasks#Dataflow#ITargetBlock{TInput}#OfferMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,`0,System.Threading.Tasks.Dataflow.ISourceBlock{`0},System.Boolean)
+  parent: System.Threading.Tasks.Dataflow.ActionBlock`1
+  href: System.Threading.Tasks.Dataflow.ActionBlock`1.yml
+  name: ITargetBlock<TInput>.OfferMessage(DataflowMessageHeader, TInput, ISourceBlock<TInput>, Boolean)
+  name.vb: System.Threading.Tasks.Dataflow.ITargetBlock<TInput>.OfferMessage(DataflowMessageHeader, TInput, ISourceBlock(Of TInput), Boolean)
+  fullName: System.Threading.Tasks.Dataflow.ActionBlock<TInput>.System.Threading.Tasks.Dataflow.ITargetBlock<TInput>.OfferMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader, TInput, System.Threading.Tasks.Dataflow.ISourceBlock<TInput>, System.Boolean)
+  fullName.vb: System.Threading.Tasks.Dataflow.ActionBlock(Of TInput).System.Threading.Tasks.Dataflow.ITargetBlock<TInput>.OfferMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader, TInput, System.Threading.Tasks.Dataflow.ISourceBlock(Of TInput), System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Blocks/ActionBlock.cs
+    startLine: 281
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Offers a message to the dataflow block, and gives it the opportunity to consume or postpone the message.
+  syntax:
+    content: DataflowMessageStatus ITargetBlock<TInput>.OfferMessage(DataflowMessageHeader messageHeader, TInput messageValue, ISourceBlock<TInput> source, bool consumeToAccept)
+    content.vb: Function System.Threading.Tasks.Dataflow.ITargetBlock<TInput>.OfferMessage(messageHeader As DataflowMessageHeader, messageValue As TInput, source As ISourceBlock(Of TInput), consumeToAccept As Boolean) As DataflowMessageStatus Implements ITargetBlock(Of TInput).OfferMessage
+    parameters:
+    - id: messageHeader
+      type: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+      description: The header of the message being offered.
+    - id: messageValue
+      type: '{TInput}'
+      description: The value of the message being offered.
+    - id: source
+      type: System.Threading.Tasks.Dataflow.ISourceBlock{{TInput}}
+      description: The dataflow block that is offering the message. This may be null.
+    - id: consumeToAccept
+      type: System.Boolean
+      description: true to instruct the target to call @'System.Threading.Tasks.Dataflow.ISourceBlock`1.ConsumeMessage()' synchronously during the call to @'System.Threading.Tasks.Dataflow.ITargetBlock`1.OfferMessage()', prior to returning @'System.Threading.Tasks.Dataflow.DataflowMessageStatus.Accepted', in order to consume the message.
+    return:
+      type: System.Threading.Tasks.Dataflow.DataflowMessageStatus
+  exceptions:
+  - type: System.ArgumentException
+    description: '*messageHeader* is not valid.-or-*consumeToAccept* may be true only if provided with a non-null *source*.'
+- uid: System.Threading.Tasks.Dataflow.ActionBlock`1.InputCount
+  id: InputCount
+  parent: System.Threading.Tasks.Dataflow.ActionBlock`1
+  href: System.Threading.Tasks.Dataflow.ActionBlock`1.yml
+  name: InputCount
+  fullName: System.Threading.Tasks.Dataflow.ActionBlock<TInput>.InputCount
+  fullName.vb: System.Threading.Tasks.Dataflow.ActionBlock(Of TInput).InputCount
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Blocks/ActionBlock.cs
+    startLine: 289
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Gets the number of input items waiting to be processed by this block.
+  syntax:
+    content: public int InputCount { get; }
+    content.vb: Public ReadOnly Property InputCount As Integer
+    parameters: []
+    return:
+      type: System.Int32
+- uid: System.Threading.Tasks.Dataflow.ActionBlock`1.ToString
+  id: ToString
+  parent: System.Threading.Tasks.Dataflow.ActionBlock`1
+  href: System.Threading.Tasks.Dataflow.ActionBlock`1.yml
+  name: ToString()
+  fullName: System.Threading.Tasks.Dataflow.ActionBlock<TInput>.ToString()
+  fullName.vb: System.Threading.Tasks.Dataflow.ActionBlock(Of TInput).ToString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Blocks/ActionBlock.cs
+    startLine: 301
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Returns a string that represents the formatted name of this @'System.Threading.Tasks.Dataflow.IDataflowBlock' instance.
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+  overridden: System.Object.ToString
+references:
+- uid: System.Action`1
+  parent: System
+  isExternal: true
+  name: Action<T>
+  name.vb: Action(Of T)
+  fullName: System.Action<T>
+  fullName.vb: System.Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Dataflow.ActionBlock`1
+  isExternal: false
+  href: System.Threading.Tasks.Dataflow.ActionBlock`1.yml
+  name: ActionBlock<TInput>
+  name.vb: ActionBlock(Of TInput)
+  fullName: System.Threading.Tasks.Dataflow.ActionBlock<TInput>
+  fullName.vb: System.Threading.Tasks.Dataflow.ActionBlock(Of TInput)
+  type: Class
+  summary: Provides a dataflow block that invokes a provided @'System.Action`1' delegate for every data element received.
+  spec.csharp:
+  - uid: System.Threading.Tasks.Dataflow.ActionBlock`1
+    name: ActionBlock
+    fullName: System.Threading.Tasks.Dataflow.ActionBlock
+    href: System.Threading.Tasks.Dataflow.ActionBlock`1.yml
+  - name: <
+    fullName: <
+  - name: TInput
+    fullName: TInput
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Dataflow.ActionBlock`1
+    name: ActionBlock
+    fullName: System.Threading.Tasks.Dataflow.ActionBlock
+    href: System.Threading.Tasks.Dataflow.ActionBlock`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TInput
+    fullName: TInput
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Dataflow
+  isExternal: false
+  name: System.Threading.Tasks.Dataflow
+  fullName: System.Threading.Tasks.Dataflow
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.ArgumentNullException
+- uid: System.Action{{TInput}}
+  parent: System
+  definition: System.Action`1
+  name: Action<TInput>
+  name.vb: Action(Of TInput)
+  fullName: System.Action<TInput>
+  fullName.vb: System.Action(Of TInput)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TInput
+    fullName: TInput
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TInput
+    fullName: TInput
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions
+  isExternal: false
+  href: System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions.yml
+  name: ExecutionDataflowBlockOptions
+  fullName: System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions
+  type: Class
+  summary: >-
+    Provides options used to configure the processing performed by dataflow blocks that
+
+    process each message through the invocation of a user-provided delegate, blocks such
+
+    as @'System.Threading.Tasks.Dataflow.ActionBlock`1' and @'System.Threading.Tasks.Dataflow.TransformBlock`2'.
+- uid: System.Func`2
+  parent: System
+  isExternal: true
+  name: Func<T, TResult>
+  name.vb: Func(Of T, TResult)
+  fullName: System.Func<T, TResult>
+  fullName.vb: System.Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: ', '
+    fullName: ', '
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: ', '
+    fullName: ', '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Func{{TInput},System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`2
+  name: Func<TInput, Task>
+  name.vb: Func(Of TInput, Task)
+  fullName: System.Func<TInput, System.Threading.Tasks.Task>
+  fullName.vb: System.Func(Of TInput, System.Threading.Tasks.Task)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TInput
+    fullName: TInput
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TInput
+    fullName: TInput
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  fullName: System.Exception
+- uid: System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  type: Namespace
+- uid: System.Threading.Tasks.Dataflow.ITargetBlock`1
+  parent: System.Threading.Tasks.Dataflow
+  isExternal: false
+  href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  name: ITargetBlock<TInput>
+  name.vb: ITargetBlock(Of TInput)
+  fullName: System.Threading.Tasks.Dataflow.ITargetBlock<TInput>
+  fullName.vb: System.Threading.Tasks.Dataflow.ITargetBlock(Of TInput)
+  type: Interface
+  summary: Represents a dataflow block that is a target for data.
+  spec.csharp:
+  - uid: System.Threading.Tasks.Dataflow.ITargetBlock`1
+    name: ITargetBlock
+    fullName: System.Threading.Tasks.Dataflow.ITargetBlock
+    href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  - name: <
+    fullName: <
+  - name: TInput
+    fullName: TInput
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Dataflow.ITargetBlock`1
+    name: ITargetBlock
+    fullName: System.Threading.Tasks.Dataflow.ITargetBlock
+    href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TInput
+    fullName: TInput
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Dataflow.DataflowBlock.SendAsync
+- uid: '{TInput}'
+  isExternal: false
+  name: TInput
+  fullName: TInput
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+  parent: System.Threading.Tasks.Dataflow
+  isExternal: false
+  href: System.Threading.Tasks.Dataflow.DataflowMessageHeader.yml
+  name: DataflowMessageHeader
+  fullName: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+  type: Struct
+  summary: Provides a container of data attributes for passing between dataflow blocks.
+- uid: System.Threading.Tasks.Dataflow.ISourceBlock{{TInput}}
+  parent: System.Threading.Tasks.Dataflow
+  definition: System.Threading.Tasks.Dataflow.ISourceBlock`1
+  href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  name: ISourceBlock<TInput>
+  name.vb: ISourceBlock(Of TInput)
+  fullName: System.Threading.Tasks.Dataflow.ISourceBlock<TInput>
+  fullName.vb: System.Threading.Tasks.Dataflow.ISourceBlock(Of TInput)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Dataflow.ISourceBlock`1
+    name: ISourceBlock
+    fullName: System.Threading.Tasks.Dataflow.ISourceBlock
+    href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  - name: <
+    fullName: <
+  - name: TInput
+    fullName: TInput
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Dataflow.ISourceBlock`1
+    name: ISourceBlock
+    fullName: System.Threading.Tasks.Dataflow.ISourceBlock
+    href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TInput
+    fullName: TInput
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Dataflow.DataflowMessageStatus
+  parent: System.Threading.Tasks.Dataflow
+  isExternal: false
+  href: System.Threading.Tasks.Dataflow.DataflowMessageStatus.yml
+  name: DataflowMessageStatus
+  fullName: System.Threading.Tasks.Dataflow.DataflowMessageStatus
+  type: Enum
+  summary: Represents the status of a @'System.Threading.Tasks.Dataflow.DataflowMessageHeader' when passed between dataflow blocks.
+- uid: System.Threading.Tasks.Dataflow.ISourceBlock`1
+  parent: System.Threading.Tasks.Dataflow
+  isExternal: false
+  href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  name: ISourceBlock<TOutput>
+  name.vb: ISourceBlock(Of TOutput)
+  fullName: System.Threading.Tasks.Dataflow.ISourceBlock<TOutput>
+  fullName.vb: System.Threading.Tasks.Dataflow.ISourceBlock(Of TOutput)
+  type: Interface
+  summary: Represents a dataflow block that is a source of data.
+  spec.csharp:
+  - uid: System.Threading.Tasks.Dataflow.ISourceBlock`1
+    name: ISourceBlock
+    fullName: System.Threading.Tasks.Dataflow.ISourceBlock
+    href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  - name: <
+    fullName: <
+  - name: TOutput
+    fullName: TOutput
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Dataflow.ISourceBlock`1
+    name: ISourceBlock
+    fullName: System.Threading.Tasks.Dataflow.ISourceBlock
+    href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TOutput
+    fullName: TOutput
+  - name: )
+    fullName: )
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String

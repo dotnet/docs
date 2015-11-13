@@ -1,0 +1,593 @@
+items:
+- uid: System.Reflection.Emit.ExceptionHandler
+  id: ExceptionHandler
+  parent: System.Reflection.Emit
+  children:
+  - System.Reflection.Emit.ExceptionHandler.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Reflection.ExceptionHandlingClauseOptions,System.Int32)
+  - System.Reflection.Emit.ExceptionHandler.Equals(System.Object)
+  - System.Reflection.Emit.ExceptionHandler.Equals(System.Reflection.Emit.ExceptionHandler)
+  - System.Reflection.Emit.ExceptionHandler.ExceptionTypeToken
+  - System.Reflection.Emit.ExceptionHandler.FilterOffset
+  - System.Reflection.Emit.ExceptionHandler.GetHashCode
+  - System.Reflection.Emit.ExceptionHandler.HandlerLength
+  - System.Reflection.Emit.ExceptionHandler.HandlerOffset
+  - System.Reflection.Emit.ExceptionHandler.Kind
+  - System.Reflection.Emit.ExceptionHandler.op_Equality(System.Reflection.Emit.ExceptionHandler,System.Reflection.Emit.ExceptionHandler)
+  - System.Reflection.Emit.ExceptionHandler.op_Inequality(System.Reflection.Emit.ExceptionHandler,System.Reflection.Emit.ExceptionHandler)
+  - System.Reflection.Emit.ExceptionHandler.TryLength
+  - System.Reflection.Emit.ExceptionHandler.TryOffset
+  href: System.Reflection.Emit.ExceptionHandler.yml
+  name: ExceptionHandler
+  fullName: System.Reflection.Emit.ExceptionHandler
+  type: Struct
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Reflection/Emit/MethodBuilder.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Reflection/Emit/MethodBuilder.cs
+    startLine: 1399
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Represents an exception handler in a byte array of IL to be passed to a method such as @'System.Reflection.Emit.MethodBuilder.SetMethodBody(System.Byte[],System.Int32,System.Byte[],System.Collections.Generic.IEnumerable{System.Reflection.Emit.ExceptionHandler},System.Collections.Generic.IEnumerable{System.Int32})'.
+  syntax:
+    content: 'public struct ExceptionHandler : IEquatable<ExceptionHandler>'
+    content.vb: Public Structure ExceptionHandler Implements IEquatable(Of ExceptionHandler)
+  implements:
+  - System.IEquatable{System.Reflection.Emit.ExceptionHandler}
+  inheritedMembers:
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.Reflection.Emit.ExceptionHandler.ExceptionTypeToken
+  id: ExceptionTypeToken
+  parent: System.Reflection.Emit.ExceptionHandler
+  href: System.Reflection.Emit.ExceptionHandler.yml
+  name: ExceptionTypeToken
+  fullName: System.Reflection.Emit.ExceptionHandler.ExceptionTypeToken
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/MethodBuilder.cs
+    startLine: 1412
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Gets the token of the exception type handled by this handler.
+  syntax:
+    content: public int ExceptionTypeToken { get; }
+    content.vb: Public ReadOnly Property ExceptionTypeToken As Integer
+    parameters: []
+    return:
+      type: System.Int32
+- uid: System.Reflection.Emit.ExceptionHandler.TryOffset
+  id: TryOffset
+  parent: System.Reflection.Emit.ExceptionHandler
+  href: System.Reflection.Emit.ExceptionHandler.yml
+  name: TryOffset
+  fullName: System.Reflection.Emit.ExceptionHandler.TryOffset
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/MethodBuilder.cs
+    startLine: 1417
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Gets the byte offset at which the code that is protected by this exception handler begins.
+  syntax:
+    content: public int TryOffset { get; }
+    content.vb: Public ReadOnly Property TryOffset As Integer
+    parameters: []
+    return:
+      type: System.Int32
+- uid: System.Reflection.Emit.ExceptionHandler.TryLength
+  id: TryLength
+  parent: System.Reflection.Emit.ExceptionHandler
+  href: System.Reflection.Emit.ExceptionHandler.yml
+  name: TryLength
+  fullName: System.Reflection.Emit.ExceptionHandler.TryLength
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/MethodBuilder.cs
+    startLine: 1422
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Gets the length, in bytes, of the code protected by this exception handler.
+  syntax:
+    content: public int TryLength { get; }
+    content.vb: Public ReadOnly Property TryLength As Integer
+    parameters: []
+    return:
+      type: System.Int32
+- uid: System.Reflection.Emit.ExceptionHandler.FilterOffset
+  id: FilterOffset
+  parent: System.Reflection.Emit.ExceptionHandler
+  href: System.Reflection.Emit.ExceptionHandler.yml
+  name: FilterOffset
+  fullName: System.Reflection.Emit.ExceptionHandler.FilterOffset
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/MethodBuilder.cs
+    startLine: 1427
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Gets the byte offset at which the filter code for the exception handler begins.
+  syntax:
+    content: public int FilterOffset { get; }
+    content.vb: Public ReadOnly Property FilterOffset As Integer
+    parameters: []
+    return:
+      type: System.Int32
+- uid: System.Reflection.Emit.ExceptionHandler.HandlerOffset
+  id: HandlerOffset
+  parent: System.Reflection.Emit.ExceptionHandler
+  href: System.Reflection.Emit.ExceptionHandler.yml
+  name: HandlerOffset
+  fullName: System.Reflection.Emit.ExceptionHandler.HandlerOffset
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/MethodBuilder.cs
+    startLine: 1432
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Gets the byte offset of the first instruction of the exception handler.
+  syntax:
+    content: public int HandlerOffset { get; }
+    content.vb: Public ReadOnly Property HandlerOffset As Integer
+    parameters: []
+    return:
+      type: System.Int32
+- uid: System.Reflection.Emit.ExceptionHandler.HandlerLength
+  id: HandlerLength
+  parent: System.Reflection.Emit.ExceptionHandler
+  href: System.Reflection.Emit.ExceptionHandler.yml
+  name: HandlerLength
+  fullName: System.Reflection.Emit.ExceptionHandler.HandlerLength
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/MethodBuilder.cs
+    startLine: 1437
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Gets the length, in bytes, of the exception handler.
+  syntax:
+    content: public int HandlerLength { get; }
+    content.vb: Public ReadOnly Property HandlerLength As Integer
+    parameters: []
+    return:
+      type: System.Int32
+- uid: System.Reflection.Emit.ExceptionHandler.Kind
+  id: Kind
+  parent: System.Reflection.Emit.ExceptionHandler
+  href: System.Reflection.Emit.ExceptionHandler.yml
+  name: Kind
+  fullName: System.Reflection.Emit.ExceptionHandler.Kind
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/MethodBuilder.cs
+    startLine: 1442
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Gets a value that represents the kind of exception handler this object represents.
+  syntax:
+    content: public ExceptionHandlingClauseOptions Kind { get; }
+    content.vb: Public ReadOnly Property Kind As ExceptionHandlingClauseOptions
+    parameters: []
+    return:
+      type: System.Reflection.ExceptionHandlingClauseOptions
+- uid: System.Reflection.Emit.ExceptionHandler.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Reflection.ExceptionHandlingClauseOptions,System.Int32)
+  id: '#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Reflection.ExceptionHandlingClauseOptions,System.Int32)'
+  parent: System.Reflection.Emit.ExceptionHandler
+  href: System.Reflection.Emit.ExceptionHandler.yml
+  name: ExceptionHandler(Int32, Int32, Int32, Int32, Int32, ExceptionHandlingClauseOptions, Int32)
+  fullName: System.Reflection.Emit.ExceptionHandler.ExceptionHandler(System.Int32, System.Int32, System.Int32, System.Int32, System.Int32, System.Reflection.ExceptionHandlingClauseOptions, System.Int32)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/MethodBuilder.cs
+    startLine: 1464
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Initializes a new instance of the @'System.Reflection.Emit.ExceptionHandler' class with the specified parameters.
+  syntax:
+    content: public ExceptionHandler(int tryOffset, int tryLength, int filterOffset, int handlerOffset, int handlerLength, ExceptionHandlingClauseOptions kind, int exceptionTypeToken)
+    content.vb: Public Sub New(tryOffset As Integer, tryLength As Integer, filterOffset As Integer, handlerOffset As Integer, handlerLength As Integer, kind As ExceptionHandlingClauseOptions, exceptionTypeToken As Integer)
+    parameters:
+    - id: tryOffset
+      type: System.Int32
+      description: The byte offset of the first instruction protected by this exception handler.
+    - id: tryLength
+      type: System.Int32
+      description: The number of bytes protected by this exception handler.
+    - id: filterOffset
+      type: System.Int32
+      description: The byte offset of the beginning of the filter code. The filter code ends at the first instruction of the handler block. For non-filter exception handlers, specify 0 (zero) for this parameter.
+    - id: handlerOffset
+      type: System.Int32
+      description: The byte offset of the first instruction of this exception handler.
+    - id: handlerLength
+      type: System.Int32
+      description: The number of bytes in this exception handler.
+    - id: kind
+      type: System.Reflection.ExceptionHandlingClauseOptions
+      description: One of the enumeration values that specifies the kind of exception handler.
+    - id: exceptionTypeToken
+      type: System.Int32
+      description: The token of the exception type handled by this exception handler. If not applicable, specify 0 (zero).
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*tryOffset*, *filterOffset*, *handlerOffset*, *tryLength*, or *handlerLength* are negative.'
+- uid: System.Reflection.Emit.ExceptionHandler.GetHashCode
+  id: GetHashCode
+  parent: System.Reflection.Emit.ExceptionHandler
+  href: System.Reflection.Emit.ExceptionHandler.yml
+  name: GetHashCode()
+  fullName: System.Reflection.Emit.ExceptionHandler.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/MethodBuilder.cs
+    startLine: 1564
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+  overridden: System.ValueType.GetHashCode
+- uid: System.Reflection.Emit.ExceptionHandler.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Reflection.Emit.ExceptionHandler
+  href: System.Reflection.Emit.ExceptionHandler.yml
+  name: Equals(Object)
+  fullName: System.Reflection.Emit.ExceptionHandler.Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/MethodBuilder.cs
+    startLine: 1569
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Indicates whether this instance of the @'System.Reflection.Emit.ExceptionHandler' object is equal to a specified object.
+  syntax:
+    content: public override bool Equals(object obj)
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare this instance to.
+    return:
+      type: System.Boolean
+  overridden: System.ValueType.Equals(System.Object)
+- uid: System.Reflection.Emit.ExceptionHandler.Equals(System.Reflection.Emit.ExceptionHandler)
+  id: Equals(System.Reflection.Emit.ExceptionHandler)
+  parent: System.Reflection.Emit.ExceptionHandler
+  href: System.Reflection.Emit.ExceptionHandler.yml
+  name: Equals(ExceptionHandler)
+  fullName: System.Reflection.Emit.ExceptionHandler.Equals(System.Reflection.Emit.ExceptionHandler)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/MethodBuilder.cs
+    startLine: 1574
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Indicates whether this instance of the @'System.Reflection.Emit.ExceptionHandler' object is equal to another @'System.Reflection.Emit.ExceptionHandler' object.
+  syntax:
+    content: public bool Equals(ExceptionHandler other)
+    content.vb: Public Function Equals(other As ExceptionHandler) As Boolean
+    parameters:
+    - id: other
+      type: System.Reflection.Emit.ExceptionHandler
+      description: The exception handler object to compare this instance to.
+    return:
+      type: System.Boolean
+- uid: System.Reflection.Emit.ExceptionHandler.op_Equality(System.Reflection.Emit.ExceptionHandler,System.Reflection.Emit.ExceptionHandler)
+  id: op_Equality(System.Reflection.Emit.ExceptionHandler,System.Reflection.Emit.ExceptionHandler)
+  parent: System.Reflection.Emit.ExceptionHandler
+  href: System.Reflection.Emit.ExceptionHandler.yml
+  name: Equality(ExceptionHandler, ExceptionHandler)
+  fullName: System.Reflection.Emit.ExceptionHandler.Equality(System.Reflection.Emit.ExceptionHandler, System.Reflection.Emit.ExceptionHandler)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/MethodBuilder.cs
+    startLine: 1586
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Determines whether two specified instances of @'System.Reflection.Emit.ExceptionHandler' are equal.
+  syntax:
+    content: public static bool operator ==(ExceptionHandler left, ExceptionHandler right)
+    content.vb: Public Shared Operator =(left As ExceptionHandler, right As ExceptionHandler) As Boolean
+    parameters:
+    - id: left
+      type: System.Reflection.Emit.ExceptionHandler
+      description: The first object to compare.
+    - id: right
+      type: System.Reflection.Emit.ExceptionHandler
+      description: The second object to compare.
+    return:
+      type: System.Boolean
+- uid: System.Reflection.Emit.ExceptionHandler.op_Inequality(System.Reflection.Emit.ExceptionHandler,System.Reflection.Emit.ExceptionHandler)
+  id: op_Inequality(System.Reflection.Emit.ExceptionHandler,System.Reflection.Emit.ExceptionHandler)
+  parent: System.Reflection.Emit.ExceptionHandler
+  href: System.Reflection.Emit.ExceptionHandler.yml
+  name: Inequality(ExceptionHandler, ExceptionHandler)
+  fullName: System.Reflection.Emit.ExceptionHandler.Inequality(System.Reflection.Emit.ExceptionHandler, System.Reflection.Emit.ExceptionHandler)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/MethodBuilder.cs
+    startLine: 1591
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Determines whether two specified instances of @'System.Reflection.Emit.ExceptionHandler' are not equal.
+  syntax:
+    content: public static bool operator !=(ExceptionHandler left, ExceptionHandler right)
+    content.vb: Public Shared Operator <>(left As ExceptionHandler, right As ExceptionHandler) As Boolean
+    parameters:
+    - id: left
+      type: System.Reflection.Emit.ExceptionHandler
+      description: The first object to compare.
+    - id: right
+      type: System.Reflection.Emit.ExceptionHandler
+      description: The second object to compare.
+    return:
+      type: System.Boolean
+references:
+- uid: System.Reflection.Emit
+  isExternal: false
+  name: System.Reflection.Emit
+  fullName: System.Reflection.Emit
+  type: Namespace
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Reflection.ExceptionHandlingClauseOptions
+  parent: System.Reflection
+  isExternal: false
+  href: System.Reflection.ExceptionHandlingClauseOptions.yml
+  name: ExceptionHandlingClauseOptions
+  fullName: System.Reflection.ExceptionHandlingClauseOptions
+  type: Enum
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace
+- uid: System.ArgumentOutOfRangeException
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Reflection.Emit.ExceptionHandler
+  parent: System.Reflection.Emit
+  isExternal: false
+  href: System.Reflection.Emit.ExceptionHandler.yml
+  name: ExceptionHandler
+  fullName: System.Reflection.Emit.ExceptionHandler
+  type: Struct
+  summary: Describes exception handler in a method body.

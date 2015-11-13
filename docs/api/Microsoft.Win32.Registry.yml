@@ -1,0 +1,500 @@
+items:
+- uid: Microsoft.Win32.Registry
+  id: Registry
+  parent: Microsoft.Win32
+  children:
+  - Microsoft.Win32.Registry.ClassesRoot
+  - Microsoft.Win32.Registry.CurrentConfig
+  - Microsoft.Win32.Registry.CurrentUser
+  - Microsoft.Win32.Registry.GetValue(System.String,System.String,System.Object)
+  - Microsoft.Win32.Registry.LocalMachine
+  - Microsoft.Win32.Registry.PerformanceData
+  - Microsoft.Win32.Registry.SetValue(System.String,System.String,System.Object)
+  - Microsoft.Win32.Registry.SetValue(System.String,System.String,System.Object,Microsoft.Win32.RegistryValueKind)
+  - Microsoft.Win32.Registry.Users
+  href: Microsoft.Win32.Registry.yml
+  name: Registry
+  fullName: Microsoft.Win32.Registry
+  type: Class
+  source:
+    remote: &o0
+      path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/Registry.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/Registry.cs
+    startLine: 16
+  assemblies:
+  - Microsoft.Win32.Registry
+  namespace: Microsoft.Win32
+  summary: Provides @'Microsoft.Win32.RegistryKey' objects that represent the root keys in the Windows registry, and static methods to access key/value pairs.
+  syntax:
+    content: public class Registry
+    content.vb: Public Class Registry
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Microsoft.Win32.Registry.CurrentUser
+  id: CurrentUser
+  parent: Microsoft.Win32.Registry
+  href: Microsoft.Win32.Registry.yml
+  name: CurrentUser
+  fullName: Microsoft.Win32.Registry.CurrentUser
+  type: Field
+  source:
+    remote: *o0
+    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/Registry.cs
+    startLine: 28
+  assemblies:
+  - Microsoft.Win32.Registry
+  namespace: Microsoft.Win32
+  summary: Contains information about the current user preferences. This field reads the Windows registry base key HKEY_CURRENT_USER
+  syntax:
+    content: public static readonly RegistryKey CurrentUser
+    content.vb: Public Shared ReadOnly CurrentUser As RegistryKey
+- uid: Microsoft.Win32.Registry.LocalMachine
+  id: LocalMachine
+  parent: Microsoft.Win32.Registry
+  href: Microsoft.Win32.Registry.yml
+  name: LocalMachine
+  fullName: Microsoft.Win32.Registry.LocalMachine
+  type: Field
+  source:
+    remote: *o0
+    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/Registry.cs
+    startLine: 35
+  assemblies:
+  - Microsoft.Win32.Registry
+  namespace: Microsoft.Win32
+  summary: Contains the configuration data for the local machine. This field reads the Windows registry base key HKEY_LOCAL_MACHINE.
+  syntax:
+    content: public static readonly RegistryKey LocalMachine
+    content.vb: Public Shared ReadOnly LocalMachine As RegistryKey
+- uid: Microsoft.Win32.Registry.ClassesRoot
+  id: ClassesRoot
+  parent: Microsoft.Win32.Registry
+  href: Microsoft.Win32.Registry.yml
+  name: ClassesRoot
+  fullName: Microsoft.Win32.Registry.ClassesRoot
+  type: Field
+  source:
+    remote: *o0
+    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/Registry.cs
+    startLine: 42
+  assemblies:
+  - Microsoft.Win32.Registry
+  namespace: Microsoft.Win32
+  summary: Defines the types (or classes) of documents and the properties associated with those types. This field reads the Windows registry base key HKEY_CLASSES_ROOT.
+  syntax:
+    content: public static readonly RegistryKey ClassesRoot
+    content.vb: Public Shared ReadOnly ClassesRoot As RegistryKey
+- uid: Microsoft.Win32.Registry.Users
+  id: Users
+  parent: Microsoft.Win32.Registry
+  href: Microsoft.Win32.Registry.yml
+  name: Users
+  fullName: Microsoft.Win32.Registry.Users
+  type: Field
+  source:
+    remote: *o0
+    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/Registry.cs
+    startLine: 49
+  assemblies:
+  - Microsoft.Win32.Registry
+  namespace: Microsoft.Win32
+  summary: Contains information about the default user configuration. This field reads the Windows registry base key HKEY_USERS.
+  syntax:
+    content: public static readonly RegistryKey Users
+    content.vb: Public Shared ReadOnly Users As RegistryKey
+- uid: Microsoft.Win32.Registry.PerformanceData
+  id: PerformanceData
+  parent: Microsoft.Win32.Registry
+  href: Microsoft.Win32.Registry.yml
+  name: PerformanceData
+  fullName: Microsoft.Win32.Registry.PerformanceData
+  type: Field
+  source:
+    remote: *o0
+    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/Registry.cs
+    startLine: 56
+  assemblies:
+  - Microsoft.Win32.Registry
+  namespace: Microsoft.Win32
+  summary: Contains performance information for software components. This field reads the Windows registry base key HKEY_PERFORMANCE_DATA.
+  syntax:
+    content: public static readonly RegistryKey PerformanceData
+    content.vb: Public Shared ReadOnly PerformanceData As RegistryKey
+- uid: Microsoft.Win32.Registry.CurrentConfig
+  id: CurrentConfig
+  parent: Microsoft.Win32.Registry
+  href: Microsoft.Win32.Registry.yml
+  name: CurrentConfig
+  fullName: Microsoft.Win32.Registry.CurrentConfig
+  type: Field
+  source:
+    remote: *o0
+    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/Registry.cs
+    startLine: 63
+  assemblies:
+  - Microsoft.Win32.Registry
+  namespace: Microsoft.Win32
+  summary: Contains configuration information pertaining to the hardware that is not specific to the user. This field reads the Windows registry base key HKEY_CURRENT_CONFIG.
+  syntax:
+    content: public static readonly RegistryKey CurrentConfig
+    content.vb: Public Shared ReadOnly CurrentConfig As RegistryKey
+- uid: Microsoft.Win32.Registry.GetValue(System.String,System.String,System.Object)
+  id: GetValue(System.String,System.String,System.Object)
+  parent: Microsoft.Win32.Registry
+  href: Microsoft.Win32.Registry.yml
+  name: GetValue(String, String, Object)
+  fullName: Microsoft.Win32.Registry.GetValue(System.String, System.String, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/Registry.cs
+    startLine: 125
+  assemblies:
+  - Microsoft.Win32.Registry
+  namespace: Microsoft.Win32
+  summary: Retrieves the value associated with the specified name, in the specified registry key. If the name is not found in the specified key, returns a default value that you provide, or null if the specified key does not exist.
+  syntax:
+    content: public static object GetValue(string keyName, string valueName, object defaultValue)
+    content.vb: Public Shared Function GetValue(keyName As String, valueName As String, defaultValue As Object) As Object
+    parameters:
+    - id: keyName
+      type: System.String
+      description: The full registry path of the key, beginning with a valid registry root, such as "HKEY_CURRENT_USER".
+    - id: valueName
+      type: System.String
+      description: The name of the name/value pair.
+    - id: defaultValue
+      type: System.Object
+      description: The value to return if *valueName* does not exist.
+    return:
+      type: System.Object
+  exceptions:
+  - type: System.Security.SecurityException
+    description: The user does not have the permissions required to read from the registry key.
+  - type: System.IO.IOException
+    description: The @'Microsoft.Win32.RegistryKey' that contains the specified value has been marked for deletion.
+  - type: System.ArgumentException
+    description: '*keyName* does not begin with a valid registry root.'
+- uid: Microsoft.Win32.Registry.SetValue(System.String,System.String,System.Object)
+  id: SetValue(System.String,System.String,System.Object)
+  parent: Microsoft.Win32.Registry
+  href: Microsoft.Win32.Registry.yml
+  name: SetValue(String, String, Object)
+  fullName: Microsoft.Win32.Registry.SetValue(System.String, System.String, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/Registry.cs
+    startLine: 146
+  assemblies:
+  - Microsoft.Win32.Registry
+  namespace: Microsoft.Win32
+  summary: Sets the specified name/value pair on the specified registry key. If the specified key does not exist, it is created.
+  syntax:
+    content: public static void SetValue(string keyName, string valueName, object value)
+    content.vb: Public Shared Sub SetValue(keyName As String, valueName As String, value As Object)
+    parameters:
+    - id: keyName
+      type: System.String
+      description: The full registry path of the key, beginning with a valid registry root, such as "HKEY_CURRENT_USER".
+    - id: valueName
+      type: System.String
+      description: The name of the name/value pair.
+    - id: value
+      type: System.Object
+      description: The value to be stored.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*value* is null.'
+  - type: System.ArgumentException
+    description: '*keyName* does not begin with a valid registry root. -or-*keyName* is longer than the maximum length allowed (255 characters).'
+  - type: System.UnauthorizedAccessException
+    description: The @'Microsoft.Win32.RegistryKey' is read-only, and thus cannot be written to; for example, it is a root-level node.
+  - type: System.Security.SecurityException
+    description: The user does not have the permissions required to create or modify registry keys.
+- uid: Microsoft.Win32.Registry.SetValue(System.String,System.String,System.Object,Microsoft.Win32.RegistryValueKind)
+  id: SetValue(System.String,System.String,System.Object,Microsoft.Win32.RegistryValueKind)
+  parent: Microsoft.Win32.Registry
+  href: Microsoft.Win32.Registry.yml
+  name: SetValue(String, String, Object, RegistryValueKind)
+  fullName: Microsoft.Win32.Registry.SetValue(System.String, System.String, System.Object, Microsoft.Win32.RegistryValueKind)
+  type: Method
+  source:
+    remote: *o0
+    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/Registry.cs
+    startLine: 151
+  assemblies:
+  - Microsoft.Win32.Registry
+  namespace: Microsoft.Win32
+  summary: Sets the name/value pair on the specified registry key, using the specified registry data type. If the specified key does not exist, it is created.
+  syntax:
+    content: public static void SetValue(string keyName, string valueName, object value, RegistryValueKind valueKind)
+    content.vb: Public Shared Sub SetValue(keyName As String, valueName As String, value As Object, valueKind As RegistryValueKind)
+    parameters:
+    - id: keyName
+      type: System.String
+      description: The full registry path of the key, beginning with a valid registry root, such as "HKEY_CURRENT_USER".
+    - id: valueName
+      type: System.String
+      description: The name of the name/value pair.
+    - id: value
+      type: System.Object
+      description: The value to be stored.
+    - id: valueKind
+      type: Microsoft.Win32.RegistryValueKind
+      description: The registry data type to use when storing the data.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*value* is null.'
+  - type: System.ArgumentException
+    description: '*keyName* does not begin with a valid registry root.-or-*keyName* is longer than the maximum length allowed (255 characters).-or- The type of *value* did not match the registry data type specified by *valueKind*, therefore the data could not be converted properly.'
+  - type: System.UnauthorizedAccessException
+    description: The @'Microsoft.Win32.RegistryKey' is read-only, and thus cannot be written to; for example, it is a root-level node, or the key has not been opened with write access.
+  - type: System.Security.SecurityException
+    description: The user does not have the permissions required to create or modify registry keys.
+references:
+- uid: Microsoft.Win32
+  isExternal: false
+  name: Microsoft.Win32
+  fullName: Microsoft.Win32
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: Microsoft.Win32.RegistryValueKind
+  parent: Microsoft.Win32
+  isExternal: false
+  href: Microsoft.Win32.RegistryValueKind.yml
+  name: RegistryValueKind
+  fullName: Microsoft.Win32.RegistryValueKind
+  type: Enum

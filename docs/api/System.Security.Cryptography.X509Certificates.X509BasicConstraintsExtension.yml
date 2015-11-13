@@ -1,0 +1,270 @@
+items:
+- uid: System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension
+  id: X509BasicConstraintsExtension
+  parent: System.Security.Cryptography.X509Certificates
+  children:
+  - System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.#ctor
+  - System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.#ctor(AsnEncodedData,System.Boolean)
+  - System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.#ctor(System.Boolean,System.Boolean,System.Int32,System.Boolean)
+  - System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.CertificateAuthority
+  - System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.CopyFrom(AsnEncodedData)
+  - System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.HasPathLengthConstraint
+  - System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.PathLengthConstraint
+  href: System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.yml
+  name: X509BasicConstraintsExtension
+  fullName: System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509BasicConstraintsExtension.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509BasicConstraintsExtension.cs
+    startLine: 15
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Defines the constraints set on a certificate. This class cannot be inherited.
+  syntax:
+    content: 'public sealed class X509BasicConstraintsExtension : X509Extension'
+    content.vb: Public NotInheritable Class X509BasicConstraintsExtension Inherits X509Extension
+  inheritance:
+  - System.Object
+  - System.Security.Cryptography.X509Certificates.X509Extension
+  inheritedMembers:
+  - System.Security.Cryptography.X509Certificates.X509Extension.Critical
+- uid: System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.#ctor
+  id: '#ctor'
+  parent: System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension
+  href: System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.yml
+  name: X509BasicConstraintsExtension()
+  fullName: System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.X509BasicConstraintsExtension()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509BasicConstraintsExtension.cs
+    startLine: 17
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Initializes a new instance of the @'System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension' class.
+  syntax:
+    content: public X509BasicConstraintsExtension()
+    content.vb: Public Sub New
+- uid: System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.#ctor(System.Boolean,System.Boolean,System.Int32,System.Boolean)
+  id: '#ctor(System.Boolean,System.Boolean,System.Int32,System.Boolean)'
+  parent: System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension
+  href: System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.yml
+  name: X509BasicConstraintsExtension(Boolean, Boolean, Int32, Boolean)
+  fullName: System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.X509BasicConstraintsExtension(System.Boolean, System.Boolean, System.Int32, System.Boolean)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509BasicConstraintsExtension.cs
+    startLine: 23
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Initializes a new instance of the @'System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension' class. Parameters specify a value that indicates whether a certificate is a certificate authority (CA) certificate, a value that indicates whether the certificate has a restriction on the number of path levels it allows, the number of levels allowed in a certificate's path, and a value that indicates whether the extension is critical.
+  syntax:
+    content: public X509BasicConstraintsExtension(bool certificateAuthority, bool hasPathLengthConstraint, int pathLengthConstraint, bool critical)
+    content.vb: Public Sub New(certificateAuthority As Boolean, hasPathLengthConstraint As Boolean, pathLengthConstraint As Integer, critical As Boolean)
+    parameters:
+    - id: certificateAuthority
+      type: System.Boolean
+      description: true if the certificate is a certificate authority (CA) certificate; otherwise, false.
+    - id: hasPathLengthConstraint
+      type: System.Boolean
+      description: true if the certificate has a restriction on the number of path levels it allows; otherwise, false.
+    - id: pathLengthConstraint
+      type: System.Int32
+      description: The number of levels allowed in a certificate's path.
+    - id: critical
+      type: System.Boolean
+      description: true if the extension is critical; otherwise, false.
+- uid: System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.#ctor(AsnEncodedData,System.Boolean)
+  id: '#ctor(AsnEncodedData,System.Boolean)'
+  parent: System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension
+  href: System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.yml
+  name: X509BasicConstraintsExtension(AsnEncodedData, Boolean)
+  fullName: System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.X509BasicConstraintsExtension(AsnEncodedData, System.Boolean)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509BasicConstraintsExtension.cs
+    startLine: 28
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  syntax:
+    content: public X509BasicConstraintsExtension(AsnEncodedData encodedBasicConstraints, bool critical)
+    content.vb: Public Sub New(encodedBasicConstraints As AsnEncodedData, critical As Boolean)
+    parameters:
+    - id: encodedBasicConstraints
+      type: AsnEncodedData
+    - id: critical
+      type: System.Boolean
+- uid: System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.CertificateAuthority
+  id: CertificateAuthority
+  parent: System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension
+  href: System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.yml
+  name: CertificateAuthority
+  fullName: System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.CertificateAuthority
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509BasicConstraintsExtension.cs
+    startLine: 33
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Gets a value indicating whether a certificate is a certificate authority (CA) certificate.
+  syntax:
+    content: public bool CertificateAuthority { get; }
+    content.vb: Public ReadOnly Property CertificateAuthority As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.HasPathLengthConstraint
+  id: HasPathLengthConstraint
+  parent: System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension
+  href: System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.yml
+  name: HasPathLengthConstraint
+  fullName: System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.HasPathLengthConstraint
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509BasicConstraintsExtension.cs
+    startLine: 44
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Gets a value indicating whether a certificate has a restriction on the number of path levels it allows.
+  syntax:
+    content: public bool HasPathLengthConstraint { get; }
+    content.vb: Public ReadOnly Property HasPathLengthConstraint As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.Security.Cryptography.CryptographicException
+    description: The extension cannot be decoded.
+- uid: System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.PathLengthConstraint
+  id: PathLengthConstraint
+  parent: System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension
+  href: System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.yml
+  name: PathLengthConstraint
+  fullName: System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.PathLengthConstraint
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509BasicConstraintsExtension.cs
+    startLine: 55
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Gets the number of levels allowed in a certificate's path.
+  syntax:
+    content: public int PathLengthConstraint { get; }
+    content.vb: Public ReadOnly Property PathLengthConstraint As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  exceptions:
+  - type: System.Security.Cryptography.CryptographicException
+    description: The extension cannot be decoded.
+- uid: System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.CopyFrom(AsnEncodedData)
+  id: CopyFrom(AsnEncodedData)
+  parent: System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension
+  href: System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.yml
+  name: CopyFrom(AsnEncodedData)
+  fullName: System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension.CopyFrom(AsnEncodedData)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509BasicConstraintsExtension.cs
+    startLine: 66
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  syntax:
+    content: public override void CopyFrom(AsnEncodedData asnEncodedData)
+    content.vb: Public Overrides Sub CopyFrom(asnEncodedData As AsnEncodedData)
+    parameters:
+    - id: asnEncodedData
+      type: AsnEncodedData
+  overridden: System.Security.Cryptography.X509Certificates.X509Extension.CopyFrom(AsnEncodedData)
+references:
+- uid: System.Security.Cryptography.X509Certificates
+  isExternal: false
+  name: System.Security.Cryptography.X509Certificates
+  fullName: System.Security.Cryptography.X509Certificates
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Security.Cryptography.X509Certificates.X509Extension
+  parent: System.Security.Cryptography.X509Certificates
+  isExternal: false
+  href: System.Security.Cryptography.X509Certificates.X509Extension.yml
+  name: X509Extension
+  fullName: System.Security.Cryptography.X509Certificates.X509Extension
+  type: Class
+- uid: System.Security.Cryptography.X509Certificates.X509Extension.Critical
+  parent: System.Security.Cryptography.X509Certificates.X509Extension
+  isExternal: false
+  href: System.Security.Cryptography.X509Certificates.X509Extension.yml
+  name: Critical
+  fullName: System.Security.Cryptography.X509Certificates.X509Extension.Critical
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: AsnEncodedData
+  isExternal: true
+  name: AsnEncodedData
+  fullName: AsnEncodedData
+- uid: System.Security.Cryptography.X509Certificates.X509Extension.CopyFrom(AsnEncodedData)
+  parent: System.Security.Cryptography.X509Certificates.X509Extension
+  isExternal: true
+  href: System.Security.Cryptography.X509Certificates.X509Extension.yml
+  name: CopyFrom(AsnEncodedData)
+  fullName: System.Security.Cryptography.X509Certificates.X509Extension.CopyFrom(AsnEncodedData)
+  spec.csharp:
+  - uid: System.Security.Cryptography.X509Certificates.X509Extension.CopyFrom(AsnEncodedData)
+    name: CopyFrom
+    fullName: System.Security.Cryptography.X509Certificates.X509Extension.CopyFrom
+    href: System.Security.Cryptography.X509Certificates.X509Extension.yml
+  - name: (
+    fullName: (
+  - uid: AsnEncodedData
+    name: AsnEncodedData
+    fullName: AsnEncodedData
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.X509Certificates.X509Extension.CopyFrom(AsnEncodedData)
+    name: CopyFrom
+    fullName: System.Security.Cryptography.X509Certificates.X509Extension.CopyFrom
+    href: System.Security.Cryptography.X509Certificates.X509Extension.yml
+  - name: (
+    fullName: (
+  - uid: AsnEncodedData
+    name: AsnEncodedData
+    fullName: AsnEncodedData
+    isExternal: true
+  - name: )
+    fullName: )

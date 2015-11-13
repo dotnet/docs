@@ -1,0 +1,83 @@
+items:
+- uid: System.Xml.XPath.XPathNamespaceScope
+  id: XPathNamespaceScope
+  parent: System.Xml.XPath
+  children:
+  - System.Xml.XPath.XPathNamespaceScope.All
+  - System.Xml.XPath.XPathNamespaceScope.ExcludeXml
+  - System.Xml.XPath.XPathNamespaceScope.Local
+  href: System.Xml.XPath.XPathNamespaceScope.yml
+  name: XPathNamespaceScope
+  fullName: System.Xml.XPath.XPathNamespaceScope
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Xml.XPath/src/System/Xml/XPath/XPathNamespaceScope.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Xml.XPath/src/System/Xml/XPath/XPathNamespaceScope.cs
+    startLine: 5
+  assemblies:
+  - System.Xml.XPath
+  namespace: System.Xml.XPath
+  summary: Defines the namespace scope.
+  syntax:
+    content: public enum XPathNamespaceScope
+    content.vb: Public Enum XPathNamespaceScope
+- uid: System.Xml.XPath.XPathNamespaceScope.All
+  id: All
+  parent: System.Xml.XPath.XPathNamespaceScope
+  href: System.Xml.XPath.XPathNamespaceScope.yml
+  name: All
+  fullName: System.Xml.XPath.XPathNamespaceScope.All
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Xml.XPath/src/System/Xml/XPath/XPathNamespaceScope.cs
+    startLine: 7
+  assemblies:
+  - System.Xml.XPath
+  namespace: System.Xml.XPath
+  summary: Returns all namespaces defined in the scope of the current node. This includes the xmlns:xml namespace which is always declared implicitly. The order of the namespaces returned is not defined.
+  syntax:
+    content: All = 0
+- uid: System.Xml.XPath.XPathNamespaceScope.ExcludeXml
+  id: ExcludeXml
+  parent: System.Xml.XPath.XPathNamespaceScope
+  href: System.Xml.XPath.XPathNamespaceScope.yml
+  name: ExcludeXml
+  fullName: System.Xml.XPath.XPathNamespaceScope.ExcludeXml
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Xml.XPath/src/System/Xml/XPath/XPathNamespaceScope.cs
+    startLine: 8
+  assemblies:
+  - System.Xml.XPath
+  namespace: System.Xml.XPath
+  summary: Returns all namespaces defined in the scope of the current node, excluding the xmlns:xml namespace. The xmlns:xml namespace is always declared implicitly. The order of the namespaces returned is not defined.
+  syntax:
+    content: ExcludeXml = 1
+- uid: System.Xml.XPath.XPathNamespaceScope.Local
+  id: Local
+  parent: System.Xml.XPath.XPathNamespaceScope
+  href: System.Xml.XPath.XPathNamespaceScope.yml
+  name: Local
+  fullName: System.Xml.XPath.XPathNamespaceScope.Local
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Xml.XPath/src/System/Xml/XPath/XPathNamespaceScope.cs
+    startLine: 9
+  assemblies:
+  - System.Xml.XPath
+  namespace: System.Xml.XPath
+  summary: Returns all namespaces that are defined locally at the current node.
+  syntax:
+    content: Local = 2
+references:
+- uid: System.Xml.XPath
+  isExternal: false
+  name: System.Xml.XPath
+  fullName: System.Xml.XPath
+  type: Namespace

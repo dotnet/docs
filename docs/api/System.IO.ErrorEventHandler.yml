@@ -1,0 +1,50 @@
+items:
+- uid: System.IO.ErrorEventHandler
+  id: ErrorEventHandler
+  parent: System.IO
+  children: []
+  href: System.IO.ErrorEventHandler.yml
+  name: ErrorEventHandler
+  fullName: System.IO.ErrorEventHandler
+  type: Delegate
+  source:
+    remote:
+      path: src/System.IO.FileSystem.Watcher/src/System/IO/ErrorEventHandler.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.IO.FileSystem.Watcher/src/System/IO/ErrorEventHandler.cs
+    startLine: 10
+  assemblies:
+  - System.IO.FileSystem.Watcher
+  namespace: System.IO
+  summary: Represents the method that will handle the @'System.IO.FileSystemWatcher.Error' event of a @'System.IO.FileSystemWatcher' object.
+  syntax:
+    content: public delegate void ErrorEventHandler(object sender, ErrorEventArgs e);
+    content.vb: Public Delegate Sub ErrorEventHandler(sender As Object, e As ErrorEventArgs)
+    parameters:
+    - id: sender
+      type: System.Object
+      description: The source of the event.
+    - id: e
+      type: System.IO.ErrorEventArgs
+      description: An @'System.IO.ErrorEventArgs' object that contains the event data.
+references:
+- uid: System.IO
+  isExternal: false
+  name: System.IO
+  fullName: System.IO
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.IO.ErrorEventArgs
+  isExternal: false
+  href: System.IO.ErrorEventArgs.yml
+  name: ErrorEventArgs
+  fullName: System.IO.ErrorEventArgs
+  type: Class
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

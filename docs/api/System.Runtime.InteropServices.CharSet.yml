@@ -1,0 +1,101 @@
+items:
+- uid: System.Runtime.InteropServices.CharSet
+  id: CharSet
+  parent: System.Runtime.InteropServices
+  children:
+  - System.Runtime.InteropServices.CharSet.Ansi
+  - System.Runtime.InteropServices.CharSet.Auto
+  - System.Runtime.InteropServices.CharSet.None
+  - System.Runtime.InteropServices.CharSet.Unicode
+  href: System.Runtime.InteropServices.CharSet.yml
+  name: CharSet
+  fullName: System.Runtime.InteropServices.CharSet
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/InteropServices/CharSet.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/InteropServices/CharSet.cs
+    startLine: 13
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Dictates which character set marshaled strings should use.
+  syntax:
+    content: public enum CharSet
+    content.vb: Public Enum CharSet
+- uid: System.Runtime.InteropServices.CharSet.None
+  id: None
+  parent: System.Runtime.InteropServices.CharSet
+  href: System.Runtime.InteropServices.CharSet.yml
+  name: None
+  fullName: System.Runtime.InteropServices.CharSet.None
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/CharSet.cs
+    startLine: 17
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: This value is obsolete and has the same behavior as @'System.Runtime.InteropServices.CharSet.Ansi'.
+  syntax:
+    content: None = 1
+- uid: System.Runtime.InteropServices.CharSet.Ansi
+  id: Ansi
+  parent: System.Runtime.InteropServices.CharSet
+  href: System.Runtime.InteropServices.CharSet.yml
+  name: Ansi
+  fullName: System.Runtime.InteropServices.CharSet.Ansi
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/CharSet.cs
+    startLine: 18
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Marshal strings as multiple-byte character strings.
+  syntax:
+    content: Ansi = 2
+- uid: System.Runtime.InteropServices.CharSet.Unicode
+  id: Unicode
+  parent: System.Runtime.InteropServices.CharSet
+  href: System.Runtime.InteropServices.CharSet.yml
+  name: Unicode
+  fullName: System.Runtime.InteropServices.CharSet.Unicode
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/CharSet.cs
+    startLine: 19
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Marshal strings as Unicode 2-byte characters.
+  syntax:
+    content: Unicode = 3
+- uid: System.Runtime.InteropServices.CharSet.Auto
+  id: Auto
+  parent: System.Runtime.InteropServices.CharSet
+  href: System.Runtime.InteropServices.CharSet.yml
+  name: Auto
+  fullName: System.Runtime.InteropServices.CharSet.Auto
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/CharSet.cs
+    startLine: 20
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Automatically marshal strings appropriately for the target operating system. The default is @'System.Runtime.InteropServices.CharSet.Unicode' on Windows NT, Windows 2000, Windows XP, and the Windows Server 2003 family; the default is @'System.Runtime.InteropServices.CharSet.Ansi' on Windows 98 and Windows Me. Although the common language runtime default is @'System.Runtime.InteropServices.CharSet.Auto', languages may override this default. For example, by default C# marks all methods and types as @'System.Runtime.InteropServices.CharSet.Ansi'.
+  syntax:
+    content: Auto = 4
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace

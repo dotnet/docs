@@ -1,0 +1,29 @@
+items:
+- uid: System.Runtime.InteropServices._ConstructorInfo
+  id: _ConstructorInfo
+  parent: System.Runtime.InteropServices
+  children: []
+  href: System.Runtime.InteropServices._ConstructorInfo.yml
+  name: _ConstructorInfo
+  fullName: System.Runtime.InteropServices._ConstructorInfo
+  type: Interface
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/ComInterfaces.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Reflection/ComInterfaces.cs
+    startLine: 402
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Exposes the public members of the @'System.Reflection.ConstructorInfo' class to unmanaged code.
+  syntax:
+    content: public interface _ConstructorInfo
+    content.vb: Public Interface _ConstructorInfo
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace

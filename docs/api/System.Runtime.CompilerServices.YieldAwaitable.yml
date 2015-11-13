@@ -1,0 +1,275 @@
+items:
+- uid: System.Runtime.CompilerServices.YieldAwaitable
+  id: YieldAwaitable
+  parent: System.Runtime.CompilerServices
+  children:
+  - System.Runtime.CompilerServices.YieldAwaitable.GetAwaiter
+  href: System.Runtime.CompilerServices.YieldAwaitable.yml
+  name: YieldAwaitable
+  fullName: System.Runtime.CompilerServices.YieldAwaitable
+  type: Struct
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/CompilerServices/YieldAwaitable.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/CompilerServices/YieldAwaitable.cs
+    startLine: 40
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.CompilerServices
+  summary: Provides the context for waiting when asynchronously switching into a target environment.
+  remarks: This type is intended for compiler use only.
+  syntax:
+    content: public struct YieldAwaitable
+    content.vb: Public Structure YieldAwaitable
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.Runtime.CompilerServices.YieldAwaitable.GetAwaiter
+  id: GetAwaiter
+  parent: System.Runtime.CompilerServices.YieldAwaitable
+  href: System.Runtime.CompilerServices.YieldAwaitable.yml
+  name: GetAwaiter()
+  fullName: System.Runtime.CompilerServices.YieldAwaitable.GetAwaiter()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/CompilerServices/YieldAwaitable.cs
+    startLine: 45
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.CompilerServices
+  summary: Retrieves a @'System.Runtime.CompilerServices.YieldAwaitable.YieldAwaiter' object  for this instance of the class.
+  remarks: This method is intended for compiler user rather than use directly in code.
+  syntax:
+    content: public YieldAwaitable.YieldAwaiter GetAwaiter()
+    content.vb: Public Function GetAwaiter As YieldAwaitable.YieldAwaiter
+    return:
+      type: System.Runtime.CompilerServices.YieldAwaitable.YieldAwaiter
+      description: An awaiter for this awaitable.
+references:
+- uid: System.Runtime.CompilerServices
+  isExternal: false
+  name: System.Runtime.CompilerServices
+  fullName: System.Runtime.CompilerServices
+  type: Namespace
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Runtime.CompilerServices.YieldAwaitable
+  isExternal: false
+  href: System.Runtime.CompilerServices.YieldAwaitable.yml
+  name: YieldAwaitable
+  fullName: System.Runtime.CompilerServices.YieldAwaitable
+  type: Struct
+  summary: Provides an awaitable context for switching into a target environment.
+- uid: System.Runtime.CompilerServices.YieldAwaitable.YieldAwaiter
+  parent: System.Runtime.CompilerServices
+  isExternal: false
+  href: System.Runtime.CompilerServices.YieldAwaitable.YieldAwaiter.yml
+  name: YieldAwaitable.YieldAwaiter
+  fullName: System.Runtime.CompilerServices.YieldAwaitable.YieldAwaiter
+  type: Struct
+  summary: Provides an awaiter that switches into a target environment.

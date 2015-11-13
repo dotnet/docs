@@ -1,0 +1,486 @@
+items:
+- uid: System.Xml.Linq.XObject
+  id: XObject
+  parent: System.Xml.Linq
+  children:
+  - System.Xml.Linq.XObject.AddAnnotation(System.Object)
+  - System.Xml.Linq.XObject.Annotation(System.Type)
+  - System.Xml.Linq.XObject.Annotation``1
+  - System.Xml.Linq.XObject.Annotations(System.Type)
+  - System.Xml.Linq.XObject.Annotations``1
+  - System.Xml.Linq.XObject.BaseUri
+  - System.Xml.Linq.XObject.Changed
+  - System.Xml.Linq.XObject.Changing
+  - System.Xml.Linq.XObject.Document
+  - System.Xml.Linq.XObject.NodeType
+  - System.Xml.Linq.XObject.Parent
+  - System.Xml.Linq.XObject.RemoveAnnotations(System.Type)
+  - System.Xml.Linq.XObject.RemoveAnnotations``1
+  href: System.Xml.Linq.XObject.yml
+  name: XObject
+  fullName: System.Xml.Linq.XObject
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XObject.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XObject.cs
+    startLine: 13
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Represents a node or an attribute in an XML tree.
+  syntax:
+    content: 'public abstract class XObject : IXmlLineInfo'
+    content.vb: Public MustInherit Class XObject Inherits IXmlLineInfo
+  inheritance:
+  - System.Object
+- uid: System.Xml.Linq.XObject.BaseUri
+  id: BaseUri
+  parent: System.Xml.Linq.XObject
+  href: System.Xml.Linq.XObject.yml
+  name: BaseUri
+  fullName: System.Xml.Linq.XObject.BaseUri
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XObject.cs
+    startLine: 23
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Gets the base URI for this @'System.Xml.Linq.XObject'.
+  syntax:
+    content: public string BaseUri { get; }
+    content.vb: Public ReadOnly Property BaseUri As String
+    parameters: []
+    return:
+      type: System.String
+- uid: System.Xml.Linq.XObject.Document
+  id: Document
+  parent: System.Xml.Linq.XObject
+  href: System.Xml.Linq.XObject.yml
+  name: Document
+  fullName: System.Xml.Linq.XObject.Document
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XObject.cs
+    startLine: 47
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Gets the @'System.Xml.Linq.XDocument' for this @'System.Xml.Linq.XObject'.
+  syntax:
+    content: public XDocument Document { get; }
+    content.vb: Public ReadOnly Property Document As XDocument
+    parameters: []
+    return:
+      type: System.Xml.Linq.XDocument
+- uid: System.Xml.Linq.XObject.NodeType
+  id: NodeType
+  parent: System.Xml.Linq.XObject
+  href: System.Xml.Linq.XObject.yml
+  name: NodeType
+  fullName: System.Xml.Linq.XObject.NodeType
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XObject.cs
+    startLine: 60
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Gets the node type for this @'System.Xml.Linq.XObject'.
+  syntax:
+    content: public abstract XmlNodeType NodeType { get; }
+    content.vb: Public MustOverride ReadOnly Property NodeType As XmlNodeType
+    parameters: []
+    return:
+      type: XmlNodeType
+- uid: System.Xml.Linq.XObject.Parent
+  id: Parent
+  parent: System.Xml.Linq.XObject
+  href: System.Xml.Linq.XObject.yml
+  name: Parent
+  fullName: System.Xml.Linq.XObject.Parent
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XObject.cs
+    startLine: 68
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Gets the parent @'System.Xml.Linq.XElement' of this @'System.Xml.Linq.XObject'.
+  remarks: If this @'System.Xml.Linq.XObject' has no parent @'System.Xml.Linq.XElement', this property returns null.
+  syntax:
+    content: public XElement Parent { get; }
+    content.vb: Public ReadOnly Property Parent As XElement
+    parameters: []
+    return:
+      type: System.Xml.Linq.XElement
+- uid: System.Xml.Linq.XObject.AddAnnotation(System.Object)
+  id: AddAnnotation(System.Object)
+  parent: System.Xml.Linq.XObject
+  href: System.Xml.Linq.XObject.yml
+  name: AddAnnotation(Object)
+  fullName: System.Xml.Linq.XObject.AddAnnotation(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XObject.cs
+    startLine: 77
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Adds an object to the annotation list of this @'System.Xml.Linq.XObject'.
+  syntax:
+    content: public void AddAnnotation(object annotation)
+    content.vb: Public Sub AddAnnotation(annotation As Object)
+    parameters:
+    - id: annotation
+      type: System.Object
+      description: An @'System.Object' that contains the annotation to add.
+- uid: System.Xml.Linq.XObject.Annotation(System.Type)
+  id: Annotation(System.Type)
+  parent: System.Xml.Linq.XObject
+  href: System.Xml.Linq.XObject.yml
+  name: Annotation(Type)
+  fullName: System.Xml.Linq.XObject.Annotation(System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XObject.cs
+    startLine: 114
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Gets the first annotation object of the specified type from this @'System.Xml.Linq.XObject'.
+  syntax:
+    content: public object Annotation(Type type)
+    content.vb: Public Function Annotation(type As Type) As Object
+    parameters:
+    - id: type
+      type: System.Type
+      description: The @'System.Type' of the annotation to retrieve.
+    return:
+      type: System.Object
+      description: >-
+        The first matching annotation object, or null
+
+        if no annotation is the specified type.
+- uid: System.Xml.Linq.XObject.Annotation``1
+  id: Annotation``1
+  parent: System.Xml.Linq.XObject
+  href: System.Xml.Linq.XObject.yml
+  name: Annotation<T>()
+  name.vb: Annotation(Of T)()
+  fullName: System.Xml.Linq.XObject.Annotation<T>()
+  fullName.vb: System.Xml.Linq.XObject.Annotation(Of T)()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XObject.cs
+    startLine: 170
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Get the first annotation object of the specified type from this @'System.Xml.Linq.XObject'.
+  syntax:
+    content: 'public T Annotation<T>()where T : class'
+    content.vb: Public Function Annotation(Of T As Class) As T
+    typeParameters:
+    - id: T
+      description: The type of the annotation to retrieve.
+    return:
+      type: '{T}'
+      description: >-
+        The first matching annotation object, or null if no annotation
+
+        is the specified type.
+- uid: System.Xml.Linq.XObject.Annotations(System.Type)
+  id: Annotations(System.Type)
+  parent: System.Xml.Linq.XObject
+  href: System.Xml.Linq.XObject.yml
+  name: Annotations(Type)
+  fullName: System.Xml.Linq.XObject.Annotations(System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XObject.cs
+    startLine: 193
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Gets a collection of annotations of the specified type for this @'System.Xml.Linq.XObject'.
+  syntax:
+    content: public IEnumerable<object> Annotations(Type type)
+    content.vb: Public Function Annotations(type As Type) As IEnumerable(Of Object)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The @'System.Type' of the annotations to retrieve.
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Object}
+      description: An enumerable collection of annotations for this XObject.
+- uid: System.Xml.Linq.XObject.Annotations``1
+  id: Annotations``1
+  parent: System.Xml.Linq.XObject
+  href: System.Xml.Linq.XObject.yml
+  name: Annotations<T>()
+  name.vb: Annotations(Of T)()
+  fullName: System.Xml.Linq.XObject.Annotations<T>()
+  fullName.vb: System.Xml.Linq.XObject.Annotations(Of T)()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XObject.cs
+    startLine: 226
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Gets a collection of annotations of the specified type for this @'System.Xml.Linq.XObject'.
+  syntax:
+    content: 'public IEnumerable<T> Annotations<T>()where T : class'
+    content.vb: Public Function Annotations(Of T As Class) As IEnumerable(Of T)
+    typeParameters:
+    - id: T
+      description: The type of the annotations to retrieve.
+    return:
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: An enumerable collection of annotations for this XObject.
+- uid: System.Xml.Linq.XObject.RemoveAnnotations(System.Type)
+  id: RemoveAnnotations(System.Type)
+  parent: System.Xml.Linq.XObject
+  href: System.Xml.Linq.XObject.yml
+  name: RemoveAnnotations(Type)
+  fullName: System.Xml.Linq.XObject.RemoveAnnotations(System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XObject.cs
+    startLine: 253
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Removes the annotations of the specified type from this @'System.Xml.Linq.XObject'.
+  syntax:
+    content: public void RemoveAnnotations(Type type)
+    content.vb: Public Sub RemoveAnnotations(type As Type)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The @'System.Type' of annotations to remove.
+- uid: System.Xml.Linq.XObject.RemoveAnnotations``1
+  id: RemoveAnnotations``1
+  parent: System.Xml.Linq.XObject
+  href: System.Xml.Linq.XObject.yml
+  name: RemoveAnnotations<T>()
+  name.vb: RemoveAnnotations(Of T)()
+  fullName: System.Xml.Linq.XObject.RemoveAnnotations<T>()
+  fullName.vb: System.Xml.Linq.XObject.RemoveAnnotations(Of T)()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XObject.cs
+    startLine: 289
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Removes the annotations of the specified type from this @'System.Xml.Linq.XObject'.
+  syntax:
+    content: 'public void RemoveAnnotations<T>()where T : class'
+    content.vb: Public Sub RemoveAnnotations(Of T As Class)
+    typeParameters:
+    - id: T
+      description: The type of annotations to remove.
+- uid: System.Xml.Linq.XObject.Changed
+  id: Changed
+  parent: System.Xml.Linq.XObject
+  href: System.Xml.Linq.XObject.yml
+  name: Changed
+  fullName: System.Xml.Linq.XObject.Changed
+  type: Event
+  source:
+    remote: *o0
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XObject.cs
+    startLine: 323
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Raised when this @'System.Xml.Linq.XObject' or any of its descendants have changed.
+  syntax:
+    content: public event EventHandler<XObjectChangeEventArgs> Changed
+    content.vb: Public Event Changed As EventHandler(Of XObjectChangeEventArgs)
+- uid: System.Xml.Linq.XObject.Changing
+  id: Changing
+  parent: System.Xml.Linq.XObject
+  href: System.Xml.Linq.XObject.yml
+  name: Changing
+  fullName: System.Xml.Linq.XObject.Changing
+  type: Event
+  source:
+    remote: *o0
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XObject.cs
+    startLine: 352
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Raised when this @'System.Xml.Linq.XObject' or any of its descendants are about to change.
+  syntax:
+    content: public event EventHandler<XObjectChangeEventArgs> Changing
+    content.vb: Public Event Changing As EventHandler(Of XObjectChangeEventArgs)
+references:
+- uid: System.Xml.Linq
+  isExternal: false
+  name: System.Xml.Linq
+  fullName: System.Xml.Linq
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Xml.Linq.XObject
+  parent: System.Xml.Linq
+  isExternal: false
+  href: System.Xml.Linq.XObject.yml
+  name: XObject
+  fullName: System.Xml.Linq.XObject
+  type: Class
+  summary: Represents a node or an attribute in an XML tree.
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Xml.Linq.XDocument
+  parent: System.Xml.Linq
+  isExternal: false
+  href: System.Xml.Linq.XDocument.yml
+  name: XDocument
+  fullName: System.Xml.Linq.XDocument
+  type: Class
+  summary: Represents an XML document.
+- uid: XmlNodeType
+  isExternal: true
+  name: XmlNodeType
+  fullName: XmlNodeType
+- uid: System.Xml.Linq.XElement
+  parent: System.Xml.Linq
+  isExternal: false
+  href: System.Xml.Linq.XElement.yml
+  name: XElement
+  fullName: System.Xml.Linq.XElement
+  type: Class
+  summary: Represents an XML element.
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  fullName: System.Type
+- uid: '{T}'
+  isExternal: false
+  name: T
+  fullName: T
+- uid: System.Collections.Generic.IEnumerable{System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<Object>
+  name.vb: IEnumerable(Of Object)
+  fullName: System.Collections.Generic.IEnumerable<System.Object>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )

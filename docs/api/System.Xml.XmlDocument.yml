@@ -1,0 +1,2454 @@
+items:
+- uid: System.Xml.XmlDocument
+  id: XmlDocument
+  parent: System.Xml
+  children:
+  - System.Xml.XmlDocument.#ctor
+  - System.Xml.XmlDocument.#ctor(System.Xml.XmlImplementation)
+  - System.Xml.XmlDocument.#ctor(XmlNameTable)
+  - System.Xml.XmlDocument.BaseURI
+  - System.Xml.XmlDocument.CloneNode(System.Boolean)
+  - System.Xml.XmlDocument.CreateAttribute(System.String)
+  - System.Xml.XmlDocument.CreateAttribute(System.String,System.String)
+  - System.Xml.XmlDocument.CreateAttribute(System.String,System.String,System.String)
+  - System.Xml.XmlDocument.CreateCDataSection(System.String)
+  - System.Xml.XmlDocument.CreateComment(System.String)
+  - System.Xml.XmlDocument.CreateDocumentFragment
+  - System.Xml.XmlDocument.CreateElement(System.String)
+  - System.Xml.XmlDocument.CreateElement(System.String,System.String)
+  - System.Xml.XmlDocument.CreateElement(System.String,System.String,System.String)
+  - System.Xml.XmlDocument.CreateNode(System.String,System.String,System.String)
+  - System.Xml.XmlDocument.CreateNode(XmlNodeType,System.String,System.String)
+  - System.Xml.XmlDocument.CreateNode(XmlNodeType,System.String,System.String,System.String)
+  - System.Xml.XmlDocument.CreateProcessingInstruction(System.String,System.String)
+  - System.Xml.XmlDocument.CreateSignificantWhitespace(System.String)
+  - System.Xml.XmlDocument.CreateTextNode(System.String)
+  - System.Xml.XmlDocument.CreateWhitespace(System.String)
+  - System.Xml.XmlDocument.CreateXmlDeclaration(System.String,System.String,System.String)
+  - System.Xml.XmlDocument.DocumentElement
+  - System.Xml.XmlDocument.GetElementsByTagName(System.String)
+  - System.Xml.XmlDocument.GetElementsByTagName(System.String,System.String)
+  - System.Xml.XmlDocument.Implementation
+  - System.Xml.XmlDocument.ImportNode(System.Xml.XmlNode,System.Boolean)
+  - System.Xml.XmlDocument.InnerText
+  - System.Xml.XmlDocument.InnerXml
+  - System.Xml.XmlDocument.IsReadOnly
+  - System.Xml.XmlDocument.Load(System.IO.Stream)
+  - System.Xml.XmlDocument.Load(System.IO.TextReader)
+  - System.Xml.XmlDocument.Load(XmlReader)
+  - System.Xml.XmlDocument.LoadXml(System.String)
+  - System.Xml.XmlDocument.LocalName
+  - System.Xml.XmlDocument.Name
+  - System.Xml.XmlDocument.NameTable
+  - System.Xml.XmlDocument.NodeChanged
+  - System.Xml.XmlDocument.NodeChanging
+  - System.Xml.XmlDocument.NodeInserted
+  - System.Xml.XmlDocument.NodeInserting
+  - System.Xml.XmlDocument.NodeRemoved
+  - System.Xml.XmlDocument.NodeRemoving
+  - System.Xml.XmlDocument.NodeType
+  - System.Xml.XmlDocument.OwnerDocument
+  - System.Xml.XmlDocument.ParentNode
+  - System.Xml.XmlDocument.PreserveWhitespace
+  - System.Xml.XmlDocument.ReadNode(XmlReader)
+  - System.Xml.XmlDocument.Save(System.IO.Stream)
+  - System.Xml.XmlDocument.Save(System.IO.TextWriter)
+  - System.Xml.XmlDocument.Save(XmlWriter)
+  - System.Xml.XmlDocument.WriteContentTo(XmlWriter)
+  - System.Xml.XmlDocument.WriteTo(XmlWriter)
+  href: System.Xml.XmlDocument.yml
+  name: XmlDocument
+  fullName: System.Xml.XmlDocument
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 12
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Represents an XML document. You can use this class to load, validate, edit, add, and position XML in a document. For examples, see the Remarks section on this page.
+  syntax:
+    content: 'public class XmlDocument : XmlNode, IEnumerable'
+    content.vb: Public Class XmlDocument Inherits XmlNode Implements IEnumerable
+  inheritance:
+  - System.Object
+  - System.Xml.XmlNode
+  implements:
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Xml.XmlNode.Value
+  - System.Xml.XmlNode.ChildNodes
+  - System.Xml.XmlNode.PreviousSibling
+  - System.Xml.XmlNode.NextSibling
+  - System.Xml.XmlNode.Attributes
+  - System.Xml.XmlNode.FirstChild
+  - System.Xml.XmlNode.LastChild
+  - System.Xml.XmlNode.InsertBefore(System.Xml.XmlNode,System.Xml.XmlNode)
+  - System.Xml.XmlNode.InsertAfter(System.Xml.XmlNode,System.Xml.XmlNode)
+  - System.Xml.XmlNode.ReplaceChild(System.Xml.XmlNode,System.Xml.XmlNode)
+  - System.Xml.XmlNode.RemoveChild(System.Xml.XmlNode)
+  - System.Xml.XmlNode.PrependChild(System.Xml.XmlNode)
+  - System.Xml.XmlNode.AppendChild(System.Xml.XmlNode)
+  - System.Xml.XmlNode.HasChildNodes
+  - System.Xml.XmlNode.Normalize
+  - System.Xml.XmlNode.Supports(System.String,System.String)
+  - System.Xml.XmlNode.NamespaceURI
+  - System.Xml.XmlNode.Prefix
+  - System.Xml.XmlNode.System#Collections#IEnumerable#GetEnumerator
+  - System.Xml.XmlNode.GetEnumerator
+  - System.Xml.XmlNode.OuterXml
+  - System.Xml.XmlNode.RemoveAll
+  - System.Xml.XmlNode.GetNamespaceOfPrefix(System.String)
+  - System.Xml.XmlNode.GetPrefixOfNamespace(System.String)
+  - System.Xml.XmlNode.Item(System.String)
+  - System.Xml.XmlNode.Item(System.String,System.String)
+  - System.Xml.XmlNode.PreviousText
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Xml.XmlDocument.#ctor
+  id: '#ctor'
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: XmlDocument()
+  fullName: System.Xml.XmlDocument.XmlDocument()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 64
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Initializes a new instance of the @'System.Xml.XmlDocument' class.
+  syntax:
+    content: public XmlDocument()
+    content.vb: Public Sub New
+- uid: System.Xml.XmlDocument.#ctor(XmlNameTable)
+  id: '#ctor(XmlNameTable)'
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: XmlDocument(XmlNameTable)
+  fullName: System.Xml.XmlDocument.XmlDocument(XmlNameTable)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 70
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  syntax:
+    content: public XmlDocument(XmlNameTable nt)
+    content.vb: Public Sub New(nt As XmlNameTable)
+    parameters:
+    - id: nt
+      type: XmlNameTable
+- uid: System.Xml.XmlDocument.#ctor(System.Xml.XmlImplementation)
+  id: '#ctor(System.Xml.XmlImplementation)'
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: XmlDocument(XmlImplementation)
+  fullName: System.Xml.XmlDocument.XmlDocument(System.Xml.XmlImplementation)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 74
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Initializes a new instance of the XmlDocument class with the specified @'System.Xml.XmlImplementation'.
+  syntax:
+    content: protected XmlDocument(XmlImplementation imp)
+    content.vb: Protected Sub New(imp As XmlImplementation)
+    parameters:
+    - id: imp
+      type: System.Xml.XmlImplementation
+      description: The XmlImplementation to use.
+- uid: System.Xml.XmlDocument.CloneNode(System.Boolean)
+  id: CloneNode(System.Boolean)
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: CloneNode(Boolean)
+  fullName: System.Xml.XmlDocument.CloneNode(System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 213
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Creates a duplicate of this node.
+  syntax:
+    content: public override XmlNode CloneNode(bool deep)
+    content.vb: Public Overrides Function CloneNode(deep As Boolean) As XmlNode
+    parameters:
+    - id: deep
+      type: System.Boolean
+      description: true to recursively clone the subtree under the specified node; false to clone only the node itself.
+    return:
+      type: System.Xml.XmlNode
+  overridden: System.Xml.XmlNode.CloneNode(System.Boolean)
+- uid: System.Xml.XmlDocument.NodeType
+  id: NodeType
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: NodeType
+  fullName: System.Xml.XmlDocument.NodeType
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 224
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets the type of the current node.
+  syntax:
+    content: public override XmlNodeType NodeType { get; }
+    content.vb: Public Overrides ReadOnly Property NodeType As XmlNodeType
+    parameters: []
+    return:
+      type: XmlNodeType
+  overridden: System.Xml.XmlNode.NodeType
+- uid: System.Xml.XmlDocument.ParentNode
+  id: ParentNode
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: ParentNode
+  fullName: System.Xml.XmlDocument.ParentNode
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 229
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets the parent node of this node (for nodes that can have parents).
+  syntax:
+    content: public override XmlNode ParentNode { get; }
+    content.vb: Public Overrides ReadOnly Property ParentNode As XmlNode
+    parameters: []
+    return:
+      type: System.Xml.XmlNode
+  overridden: System.Xml.XmlNode.ParentNode
+- uid: System.Xml.XmlDocument.Implementation
+  id: Implementation
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: Implementation
+  fullName: System.Xml.XmlDocument.Implementation
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 254
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets the @'System.Xml.XmlImplementation' object for the current document.
+  syntax:
+    content: public XmlImplementation Implementation { get; }
+    content.vb: Public ReadOnly Property Implementation As XmlImplementation
+    parameters: []
+    return:
+      type: System.Xml.XmlImplementation
+- uid: System.Xml.XmlDocument.Name
+  id: Name
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: Name
+  fullName: System.Xml.XmlDocument.Name
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 260
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets the qualified name of the node.
+  syntax:
+    content: public override string Name { get; }
+    content.vb: Public Overrides ReadOnly Property Name As String
+    parameters: []
+    return:
+      type: System.String
+  overridden: System.Xml.XmlNode.Name
+- uid: System.Xml.XmlDocument.LocalName
+  id: LocalName
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: LocalName
+  fullName: System.Xml.XmlDocument.LocalName
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 266
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets the local name of the node.
+  syntax:
+    content: public override string LocalName { get; }
+    content.vb: Public Overrides ReadOnly Property LocalName As String
+    parameters: []
+    return:
+      type: System.String
+  overridden: System.Xml.XmlNode.LocalName
+- uid: System.Xml.XmlDocument.DocumentElement
+  id: DocumentElement
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: DocumentElement
+  fullName: System.Xml.XmlDocument.DocumentElement
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 272
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets the root @'System.Xml.XmlElement' for the document.
+  syntax:
+    content: public XmlElement DocumentElement { get; }
+    content.vb: Public ReadOnly Property DocumentElement As XmlElement
+    parameters: []
+    return:
+      type: System.Xml.XmlElement
+- uid: System.Xml.XmlDocument.OwnerDocument
+  id: OwnerDocument
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: OwnerDocument
+  fullName: System.Xml.XmlDocument.OwnerDocument
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 289
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets the @'System.Xml.XmlDocument' to which the current node belongs.
+  syntax:
+    content: public override XmlDocument OwnerDocument { get; }
+    content.vb: Public Overrides ReadOnly Property OwnerDocument As XmlDocument
+    parameters: []
+    return:
+      type: System.Xml.XmlDocument
+  overridden: System.Xml.XmlNode.OwnerDocument
+- uid: System.Xml.XmlDocument.CreateAttribute(System.String)
+  id: CreateAttribute(System.String)
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: CreateAttribute(String)
+  fullName: System.Xml.XmlDocument.CreateAttribute(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 434
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Creates an @'System.Xml.XmlAttribute' with the specified @'System.Xml.XmlDocument.Name'.
+  syntax:
+    content: public XmlAttribute CreateAttribute(string name)
+    content.vb: Public Function CreateAttribute(name As String) As XmlAttribute
+    parameters:
+    - id: name
+      type: System.String
+      description: The qualified name of the attribute. If the name contains a colon, the @'System.Xml.XmlNode.Prefix' property reflects the part of the name preceding the first colon and the @'System.Xml.XmlDocument.LocalName' property reflects the part of the name following the first colon. The @'System.Xml.XmlNode.NamespaceURI' remains empty unless the prefix is a recognized built-in prefix such as xmlns. In this case NamespaceURI has a value of http://www.w3.org/2000/xmlns/.
+    return:
+      type: System.Xml.XmlAttribute
+- uid: System.Xml.XmlDocument.CreateCDataSection(System.String)
+  id: CreateCDataSection(System.String)
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: CreateCDataSection(String)
+  fullName: System.Xml.XmlDocument.CreateCDataSection(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 460
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Creates an @'System.Xml.XmlCDataSection' containing the specified data.
+  syntax:
+    content: public virtual XmlCDataSection CreateCDataSection(string data)
+    content.vb: Public Overridable Function CreateCDataSection(data As String) As XmlCDataSection
+    parameters:
+    - id: data
+      type: System.String
+      description: The content of the new XmlCDataSection.
+    return:
+      type: System.Xml.XmlCDataSection
+- uid: System.Xml.XmlDocument.CreateComment(System.String)
+  id: CreateComment(System.String)
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: CreateComment(String)
+  fullName: System.Xml.XmlDocument.CreateComment(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 467
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Creates an @'System.Xml.XmlComment' containing the specified data.
+  syntax:
+    content: public virtual XmlComment CreateComment(string data)
+    content.vb: Public Overridable Function CreateComment(data As String) As XmlComment
+    parameters:
+    - id: data
+      type: System.String
+      description: The content of the new XmlComment.
+    return:
+      type: System.Xml.XmlComment
+- uid: System.Xml.XmlDocument.CreateDocumentFragment
+  id: CreateDocumentFragment
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: CreateDocumentFragment()
+  fullName: System.Xml.XmlDocument.CreateDocumentFragment()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 479
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Creates an @'System.Xml.XmlDocumentFragment'.
+  syntax:
+    content: public virtual XmlDocumentFragment CreateDocumentFragment()
+    content.vb: Public Overridable Function CreateDocumentFragment As XmlDocumentFragment
+    return:
+      type: System.Xml.XmlDocumentFragment
+- uid: System.Xml.XmlDocument.CreateElement(System.String)
+  id: CreateElement(System.String)
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: CreateElement(String)
+  fullName: System.Xml.XmlDocument.CreateElement(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 485
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Creates an element with the specified name.
+  syntax:
+    content: public XmlElement CreateElement(string name)
+    content.vb: Public Function CreateElement(name As String) As XmlElement
+    parameters:
+    - id: name
+      type: System.String
+      description: The qualified name of the element. If the name contains a colon then the @'System.Xml.XmlNode.Prefix' property reflects the part of the name preceding the colon and the @'System.Xml.XmlDocument.LocalName' property reflects the part of the name after the colon. The qualified name cannot include a prefix of'xmlns'.
+    return:
+      type: System.Xml.XmlElement
+- uid: System.Xml.XmlDocument.CreateProcessingInstruction(System.String,System.String)
+  id: CreateProcessingInstruction(System.String,System.String)
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: CreateProcessingInstruction(String, String)
+  fullName: System.Xml.XmlDocument.CreateProcessingInstruction(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 501
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Creates an @'System.Xml.XmlProcessingInstruction' with the specified name and data.
+  syntax:
+    content: public virtual XmlProcessingInstruction CreateProcessingInstruction(string target, string data)
+    content.vb: Public Overridable Function CreateProcessingInstruction(target As String, data As String) As XmlProcessingInstruction
+    parameters:
+    - id: target
+      type: System.String
+      description: The name of the processing instruction.
+    - id: data
+      type: System.String
+      description: The data for the processing instruction.
+    return:
+      type: System.Xml.XmlProcessingInstruction
+- uid: System.Xml.XmlDocument.CreateXmlDeclaration(System.String,System.String,System.String)
+  id: CreateXmlDeclaration(System.String,System.String,System.String)
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: CreateXmlDeclaration(String, String, String)
+  fullName: System.Xml.XmlDocument.CreateXmlDeclaration(System.String, System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 507
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Creates an @'System.Xml.XmlDeclaration' node with the specified values.
+  syntax:
+    content: public virtual XmlDeclaration CreateXmlDeclaration(string version, string encoding, string standalone)
+    content.vb: Public Overridable Function CreateXmlDeclaration(version As String, encoding As String, standalone As String) As XmlDeclaration
+    parameters:
+    - id: version
+      type: System.String
+      description: The version must be "1.0".
+    - id: encoding
+      type: System.String
+      description: 'The value of the encoding attribute. This is the encoding that is used when you save the @''System.Xml.XmlDocument'' to a file or a stream; therefore, it must be set to a string supported by the @''System.Text.Encoding'' class, otherwise @''System.Xml.XmlDocument.Save(System.String)'' fails. If this is null or String.Empty, the Save method does not write an encoding attribute on the XML declaration and therefore the default encoding, UTF-8, is used.Note: If the XmlDocument is saved to either a @''System.IO.TextWriter'' or an @''System.Xml.XmlTextWriter'', this encoding value is discarded. Instead, the encoding of the TextWriter or the XmlTextWriter is used. This ensures that the XML written out can be read back using the correct encoding.'
+    - id: standalone
+      type: System.String
+      description: The value must be either "yes" or "no". If this is null or String.Empty, the Save method does not write a standalone attribute on the XML declaration.
+    return:
+      type: System.Xml.XmlDeclaration
+  exceptions:
+  - type: System.ArgumentException
+    description: The values of *version* or *standalone* are something other than the ones specified above.
+- uid: System.Xml.XmlDocument.CreateTextNode(System.String)
+  id: CreateTextNode(System.String)
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: CreateTextNode(String)
+  fullName: System.Xml.XmlDocument.CreateTextNode(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 513
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Creates an @'System.Xml.XmlText' with the specified text.
+  syntax:
+    content: public virtual XmlText CreateTextNode(string text)
+    content.vb: Public Overridable Function CreateTextNode(text As String) As XmlText
+    parameters:
+    - id: text
+      type: System.String
+      description: The text for the Text node.
+    return:
+      type: System.Xml.XmlText
+- uid: System.Xml.XmlDocument.CreateSignificantWhitespace(System.String)
+  id: CreateSignificantWhitespace(System.String)
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: CreateSignificantWhitespace(String)
+  fullName: System.Xml.XmlDocument.CreateSignificantWhitespace(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 519
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Creates an @'System.Xml.XmlSignificantWhitespace' node.
+  syntax:
+    content: public virtual XmlSignificantWhitespace CreateSignificantWhitespace(string text)
+    content.vb: Public Overridable Function CreateSignificantWhitespace(text As String) As XmlSignificantWhitespace
+    parameters:
+    - id: text
+      type: System.String
+      description: The string must contain only the following characters &amp;#20; &amp;#10; &amp;#13; and &amp;#9;
+    return:
+      type: System.Xml.XmlSignificantWhitespace
+- uid: System.Xml.XmlDocument.CreateWhitespace(System.String)
+  id: CreateWhitespace(System.String)
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: CreateWhitespace(String)
+  fullName: System.Xml.XmlDocument.CreateWhitespace(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 525
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Creates an @'System.Xml.XmlWhitespace' node.
+  syntax:
+    content: public virtual XmlWhitespace CreateWhitespace(string text)
+    content.vb: Public Overridable Function CreateWhitespace(text As String) As XmlWhitespace
+    parameters:
+    - id: text
+      type: System.String
+      description: The string must contain only the following characters &amp;#20; &amp;#10; &amp;#13; and &amp;#9;
+    return:
+      type: System.Xml.XmlWhitespace
+- uid: System.Xml.XmlDocument.GetElementsByTagName(System.String)
+  id: GetElementsByTagName(System.String)
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: GetElementsByTagName(String)
+  fullName: System.Xml.XmlDocument.GetElementsByTagName(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 532
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Returns an @'System.Xml.XmlNodeList' containing a list of all descendant elements that match the specified @'System.Xml.XmlDocument.Name'.
+  syntax:
+    content: public virtual XmlNodeList GetElementsByTagName(string name)
+    content.vb: Public Overridable Function GetElementsByTagName(name As String) As XmlNodeList
+    parameters:
+    - id: name
+      type: System.String
+      description: The qualified name to match. It is matched against the Name property of the matching node. The special value "*" matches all tags.
+    return:
+      type: System.Xml.XmlNodeList
+- uid: System.Xml.XmlDocument.CreateAttribute(System.String,System.String)
+  id: CreateAttribute(System.String,System.String)
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: CreateAttribute(String, String)
+  fullName: System.Xml.XmlDocument.CreateAttribute(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 541
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Creates an @'System.Xml.XmlAttribute' with the specified qualified name and @'System.Xml.XmlNode.NamespaceURI'.
+  syntax:
+    content: public XmlAttribute CreateAttribute(string qualifiedName, string namespaceURI)
+    content.vb: Public Function CreateAttribute(qualifiedName As String, namespaceURI As String) As XmlAttribute
+    parameters:
+    - id: qualifiedName
+      type: System.String
+      description: The qualified name of the attribute. If the name contains a colon then the @'System.Xml.XmlNode.Prefix' property will reflect the part of the name preceding the colon and the @'System.Xml.XmlDocument.LocalName' property will reflect the part of the name after the colon.
+    - id: namespaceURI
+      type: System.String
+      description: The namespaceURI of the attribute. If the qualified name includes a prefix of xmlns, then this parameter must be http://www.w3.org/2000/xmlns/.
+    return:
+      type: System.Xml.XmlAttribute
+- uid: System.Xml.XmlDocument.CreateElement(System.String,System.String)
+  id: CreateElement(System.String,System.String)
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: CreateElement(String, String)
+  fullName: System.Xml.XmlDocument.CreateElement(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 552
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Creates an @'System.Xml.XmlElement' with the qualified name and @'System.Xml.XmlNode.NamespaceURI'.
+  syntax:
+    content: public XmlElement CreateElement(string qualifiedName, string namespaceURI)
+    content.vb: Public Function CreateElement(qualifiedName As String, namespaceURI As String) As XmlElement
+    parameters:
+    - id: qualifiedName
+      type: System.String
+      description: The qualified name of the element. If the name contains a colon then the @'System.Xml.XmlNode.Prefix' property will reflect the part of the name preceding the colon and the @'System.Xml.XmlDocument.LocalName' property will reflect the part of the name after the colon. The qualified name cannot include a prefix of'xmlns'.
+    - id: namespaceURI
+      type: System.String
+      description: The namespace URI of the element.
+    return:
+      type: System.Xml.XmlElement
+- uid: System.Xml.XmlDocument.GetElementsByTagName(System.String,System.String)
+  id: GetElementsByTagName(System.String,System.String)
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: GetElementsByTagName(String, String)
+  fullName: System.Xml.XmlDocument.GetElementsByTagName(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 562
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Returns an @'System.Xml.XmlNodeList' containing a list of all descendant elements that match the specified @'System.Xml.XmlDocument.LocalName' and @'System.Xml.XmlNode.NamespaceURI'.
+  syntax:
+    content: public virtual XmlNodeList GetElementsByTagName(string localName, string namespaceURI)
+    content.vb: Public Overridable Function GetElementsByTagName(localName As String, namespaceURI As String) As XmlNodeList
+    parameters:
+    - id: localName
+      type: System.String
+      description: The LocalName to match. The special value "*" matches all tags.
+    - id: namespaceURI
+      type: System.String
+      description: NamespaceURI to match.
+    return:
+      type: System.Xml.XmlNodeList
+- uid: System.Xml.XmlDocument.ImportNode(System.Xml.XmlNode,System.Boolean)
+  id: ImportNode(System.Xml.XmlNode,System.Boolean)
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: ImportNode(XmlNode, Boolean)
+  fullName: System.Xml.XmlDocument.ImportNode(System.Xml.XmlNode, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 591
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Imports a node from another document to the current document.
+  syntax:
+    content: public virtual XmlNode ImportNode(XmlNode node, bool deep)
+    content.vb: Public Overridable Function ImportNode(node As XmlNode, deep As Boolean) As XmlNode
+    parameters:
+    - id: node
+      type: System.Xml.XmlNode
+      description: The node being imported.
+    - id: deep
+      type: System.Boolean
+      description: true to perform a deep clone; otherwise, false.
+    return:
+      type: System.Xml.XmlNode
+  exceptions:
+  - type: System.InvalidOperationException
+    description: Calling this method on a node type which cannot be imported.
+- uid: System.Xml.XmlDocument.NameTable
+  id: NameTable
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: NameTable
+  fullName: System.Xml.XmlDocument.NameTable
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 692
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets the @'System.Xml.XmlNameTable' associated with this implementation.
+  syntax:
+    content: public XmlNameTable NameTable { get; }
+    content.vb: Public ReadOnly Property NameTable As XmlNameTable
+    parameters: []
+    return:
+      type: XmlNameTable
+- uid: System.Xml.XmlDocument.CreateAttribute(System.String,System.String,System.String)
+  id: CreateAttribute(System.String,System.String,System.String)
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: CreateAttribute(String, String, String)
+  fullName: System.Xml.XmlDocument.CreateAttribute(System.String, System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 699
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Creates an @'System.Xml.XmlAttribute' with the specified @'System.Xml.XmlNode.Prefix', @'System.Xml.XmlDocument.LocalName', and @'System.Xml.XmlNode.NamespaceURI'.
+  syntax:
+    content: public virtual XmlAttribute CreateAttribute(string prefix, string localName, string namespaceURI)
+    content.vb: Public Overridable Function CreateAttribute(prefix As String, localName As String, namespaceURI As String) As XmlAttribute
+    parameters:
+    - id: prefix
+      type: System.String
+      description: The prefix of the attribute (if any). String.Empty and null are equivalent.
+    - id: localName
+      type: System.String
+      description: The local name of the attribute.
+    - id: namespaceURI
+      type: System.String
+      description: The namespace URI of the attribute (if any). String.Empty and null are equivalent. If *prefix* is xmlns, then this parameter must be http://www.w3.org/2000/xmlns/; otherwise an exception is thrown.
+    return:
+      type: System.Xml.XmlAttribute
+- uid: System.Xml.XmlDocument.CreateElement(System.String,System.String,System.String)
+  id: CreateElement(System.String,System.String,System.String)
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: CreateElement(String, String, String)
+  fullName: System.Xml.XmlDocument.CreateElement(System.String, System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 709
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Creates an element with the specified @'System.Xml.XmlNode.Prefix', @'System.Xml.XmlDocument.LocalName', and @'System.Xml.XmlNode.NamespaceURI'.
+  syntax:
+    content: public virtual XmlElement CreateElement(string prefix, string localName, string namespaceURI)
+    content.vb: Public Overridable Function CreateElement(prefix As String, localName As String, namespaceURI As String) As XmlElement
+    parameters:
+    - id: prefix
+      type: System.String
+      description: The prefix of the new element (if any). String.Empty and null are equivalent.
+    - id: localName
+      type: System.String
+      description: The local name of the new element.
+    - id: namespaceURI
+      type: System.String
+      description: The namespace URI of the new element (if any). String.Empty and null are equivalent.
+    return:
+      type: System.Xml.XmlElement
+- uid: System.Xml.XmlDocument.PreserveWhitespace
+  id: PreserveWhitespace
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: PreserveWhitespace
+  fullName: System.Xml.XmlDocument.PreserveWhitespace
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 716
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets or sets a value indicating whether to preserve white space in element content.
+  syntax:
+    content: public bool PreserveWhitespace { get; set; }
+    content.vb: Public Property PreserveWhitespace As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Xml.XmlDocument.IsReadOnly
+  id: IsReadOnly
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: IsReadOnly
+  fullName: System.Xml.XmlDocument.IsReadOnly
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 723
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets a value indicating whether the current node is read-only.
+  syntax:
+    content: public override bool IsReadOnly { get; }
+    content.vb: Public Overrides ReadOnly Property IsReadOnly As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+  overridden: System.Xml.XmlNode.IsReadOnly
+- uid: System.Xml.XmlDocument.CreateNode(XmlNodeType,System.String,System.String,System.String)
+  id: CreateNode(XmlNodeType,System.String,System.String,System.String)
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: CreateNode(XmlNodeType, String, String, String)
+  fullName: System.Xml.XmlDocument.CreateNode(XmlNodeType, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 751
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  syntax:
+    content: public virtual XmlNode CreateNode(XmlNodeType type, string prefix, string name, string namespaceURI)
+    content.vb: Public Overridable Function CreateNode(type As XmlNodeType, prefix As String, name As String, namespaceURI As String) As XmlNode
+    parameters:
+    - id: type
+      type: XmlNodeType
+    - id: prefix
+      type: System.String
+    - id: name
+      type: System.String
+    - id: namespaceURI
+      type: System.String
+    return:
+      type: System.Xml.XmlNode
+- uid: System.Xml.XmlDocument.CreateNode(System.String,System.String,System.String)
+  id: CreateNode(System.String,System.String,System.String)
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: CreateNode(String, String, String)
+  fullName: System.Xml.XmlDocument.CreateNode(System.String, System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 807
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Creates an @'System.Xml.XmlNode' with the specified node type, @'System.Xml.XmlDocument.Name', and @'System.Xml.XmlNode.NamespaceURI'.
+  syntax:
+    content: public virtual XmlNode CreateNode(string nodeTypeString, string name, string namespaceURI)
+    content.vb: Public Overridable Function CreateNode(nodeTypeString As String, name As String, namespaceURI As String) As XmlNode
+    parameters:
+    - id: nodeTypeString
+      type: System.String
+      description: String version of the @'System.Xml.XmlNodeType' of the new node. This parameter must be one of the values listed in the table below.
+    - id: name
+      type: System.String
+      description: The qualified name of the new node. If the name contains a colon, it is parsed into @'System.Xml.XmlNode.Prefix' and @'System.Xml.XmlDocument.LocalName' components.
+    - id: namespaceURI
+      type: System.String
+      description: The namespace URI of the new node.
+    return:
+      type: System.Xml.XmlNode
+  exceptions:
+  - type: System.ArgumentException
+    description: The name was not provided and the XmlNodeType requires a name; or *nodeTypeString* is not one of the strings listed below.
+- uid: System.Xml.XmlDocument.CreateNode(XmlNodeType,System.String,System.String)
+  id: CreateNode(XmlNodeType,System.String,System.String)
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: CreateNode(XmlNodeType, String, String)
+  fullName: System.Xml.XmlDocument.CreateNode(XmlNodeType, System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 814
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  syntax:
+    content: public virtual XmlNode CreateNode(XmlNodeType type, string name, string namespaceURI)
+    content.vb: Public Overridable Function CreateNode(type As XmlNodeType, name As String, namespaceURI As String) As XmlNode
+    parameters:
+    - id: type
+      type: XmlNodeType
+    - id: name
+      type: System.String
+    - id: namespaceURI
+      type: System.String
+    return:
+      type: System.Xml.XmlNode
+- uid: System.Xml.XmlDocument.ReadNode(XmlReader)
+  id: ReadNode(XmlReader)
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: ReadNode(XmlReader)
+  fullName: System.Xml.XmlDocument.ReadNode(XmlReader)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 821
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  syntax:
+    content: public virtual XmlNode ReadNode(XmlReader reader)
+    content.vb: Public Overridable Function ReadNode(reader As XmlReader) As XmlNode
+    parameters:
+    - id: reader
+      type: XmlReader
+    return:
+      type: System.Xml.XmlNode
+- uid: System.Xml.XmlDocument.Load(System.IO.Stream)
+  id: Load(System.IO.Stream)
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: Load(Stream)
+  fullName: System.Xml.XmlDocument.Load(System.IO.Stream)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 898
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Loads the XML document from the specified stream.
+  syntax:
+    content: public virtual void Load(Stream inStream)
+    content.vb: Public Overridable Sub Load(inStream As Stream)
+    parameters:
+    - id: inStream
+      type: System.IO.Stream
+      description: The stream containing the XML document to load.
+  exceptions:
+  - type: System.Xml.XmlException
+    description: There is a load or parse error in the XML. In this case, a @'System.IO.FileNotFoundException' is raised.
+- uid: System.Xml.XmlDocument.Load(System.IO.TextReader)
+  id: Load(System.IO.TextReader)
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: Load(TextReader)
+  fullName: System.Xml.XmlDocument.Load(System.IO.TextReader)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 912
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Loads the XML document from the specified @'System.IO.TextReader'.
+  syntax:
+    content: public virtual void Load(TextReader txtReader)
+    content.vb: Public Overridable Sub Load(txtReader As TextReader)
+    parameters:
+    - id: txtReader
+      type: System.IO.TextReader
+      description: The TextReader used to feed the XML data into the document.
+  exceptions:
+  - type: System.Xml.XmlException
+    description: There is a load or parse error in the XML. In this case, the document remains empty.
+- uid: System.Xml.XmlDocument.Load(XmlReader)
+  id: Load(XmlReader)
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: Load(XmlReader)
+  fullName: System.Xml.XmlDocument.Load(XmlReader)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 926
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  syntax:
+    content: public virtual void Load(XmlReader reader)
+    content.vb: Public Overridable Sub Load(reader As XmlReader)
+    parameters:
+    - id: reader
+      type: XmlReader
+- uid: System.Xml.XmlDocument.LoadXml(System.String)
+  id: LoadXml(System.String)
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: LoadXml(String)
+  fullName: System.Xml.XmlDocument.LoadXml(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 947
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Loads the XML document from the specified string.
+  syntax:
+    content: public virtual void LoadXml(string xml)
+    content.vb: Public Overridable Sub LoadXml(xml As String)
+    parameters:
+    - id: xml
+      type: System.String
+      description: String containing the XML document to load.
+  exceptions:
+  - type: System.Xml.XmlException
+    description: There is a load or parse error in the XML. In this case, the document remains empty.
+- uid: System.Xml.XmlDocument.InnerText
+  id: InnerText
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: InnerText
+  fullName: System.Xml.XmlDocument.InnerText
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 977
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Throws an @'System.InvalidOperationException' in all cases.
+  syntax:
+    content: public override string InnerText { set; }
+    content.vb: Public Overrides WriteOnly Property InnerText As String
+    parameters: []
+    return:
+      type: System.String
+  overridden: System.Xml.XmlNode.InnerText
+  exceptions:
+  - type: System.InvalidOperationException
+    description: In all cases.
+- uid: System.Xml.XmlDocument.InnerXml
+  id: InnerXml
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: InnerXml
+  fullName: System.Xml.XmlDocument.InnerXml
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 985
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets or sets the markup representing the children of the current node.
+  syntax:
+    content: public override string InnerXml { get; set; }
+    content.vb: Public Overrides Property InnerXml As String
+    parameters: []
+    return:
+      type: System.String
+  overridden: System.Xml.XmlNode.InnerXml
+  exceptions:
+  - type: System.Xml.XmlException
+    description: The XML specified when setting this property is not well-formed.
+- uid: System.Xml.XmlDocument.Save(System.IO.Stream)
+  id: Save(System.IO.Stream)
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: Save(Stream)
+  fullName: System.Xml.XmlDocument.Save(System.IO.Stream)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 998
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Saves the XML document to the specified stream.
+  syntax:
+    content: public virtual void Save(Stream outStream)
+    content.vb: Public Overridable Sub Save(outStream As Stream)
+    parameters:
+    - id: outStream
+      type: System.IO.Stream
+      description: The stream to which you want to save.
+  exceptions:
+  - type: System.Xml.XmlException
+    description: The operation would not result in a well formed XML document (for example, no document element or duplicate XML declarations).
+- uid: System.Xml.XmlDocument.Save(System.IO.TextWriter)
+  id: Save(System.IO.TextWriter)
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: Save(TextWriter)
+  fullName: System.Xml.XmlDocument.Save(System.IO.TextWriter)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 1011
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Saves the XML document to the specified @'System.IO.TextWriter'.
+  syntax:
+    content: public virtual void Save(TextWriter writer)
+    content.vb: Public Overridable Sub Save(writer As TextWriter)
+    parameters:
+    - id: writer
+      type: System.IO.TextWriter
+      description: The TextWriter to which you want to save.
+  exceptions:
+  - type: System.Xml.XmlException
+    description: The operation would not result in a well formed XML document (for example, no document element or duplicate XML declarations).
+- uid: System.Xml.XmlDocument.Save(XmlWriter)
+  id: Save(XmlWriter)
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: Save(XmlWriter)
+  fullName: System.Xml.XmlDocument.Save(XmlWriter)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 1023
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  syntax:
+    content: public virtual void Save(XmlWriter w)
+    content.vb: Public Overridable Sub Save(w As XmlWriter)
+    parameters:
+    - id: w
+      type: XmlWriter
+- uid: System.Xml.XmlDocument.WriteTo(XmlWriter)
+  id: WriteTo(XmlWriter)
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: WriteTo(XmlWriter)
+  fullName: System.Xml.XmlDocument.WriteTo(XmlWriter)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 1056
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  syntax:
+    content: public override void WriteTo(XmlWriter w)
+    content.vb: Public Overrides Sub WriteTo(w As XmlWriter)
+    parameters:
+    - id: w
+      type: XmlWriter
+  overridden: System.Xml.XmlNode.WriteTo(XmlWriter)
+- uid: System.Xml.XmlDocument.WriteContentTo(XmlWriter)
+  id: WriteContentTo(XmlWriter)
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: WriteContentTo(XmlWriter)
+  fullName: System.Xml.XmlDocument.WriteContentTo(XmlWriter)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 1064
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  syntax:
+    content: public override void WriteContentTo(XmlWriter xw)
+    content.vb: Public Overrides Sub WriteContentTo(xw As XmlWriter)
+    parameters:
+    - id: xw
+      type: XmlWriter
+  overridden: System.Xml.XmlNode.WriteContentTo(XmlWriter)
+- uid: System.Xml.XmlDocument.NodeInserting
+  id: NodeInserting
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: NodeInserting
+  fullName: System.Xml.XmlDocument.NodeInserting
+  type: Event
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 1072
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Occurs when a node belonging to this document is about to be inserted into another node.
+  syntax:
+    content: public event XmlNodeChangedEventHandler NodeInserting
+    content.vb: Public Event NodeInserting As XmlNodeChangedEventHandler
+- uid: System.Xml.XmlDocument.NodeInserted
+  id: NodeInserted
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: NodeInserted
+  fullName: System.Xml.XmlDocument.NodeInserted
+  type: Event
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 1084
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Occurs when a node belonging to this document has been inserted into another node.
+  syntax:
+    content: public event XmlNodeChangedEventHandler NodeInserted
+    content.vb: Public Event NodeInserted As XmlNodeChangedEventHandler
+- uid: System.Xml.XmlDocument.NodeRemoving
+  id: NodeRemoving
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: NodeRemoving
+  fullName: System.Xml.XmlDocument.NodeRemoving
+  type: Event
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 1096
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Occurs when a node belonging to this document is about to be removed from the document.
+  syntax:
+    content: public event XmlNodeChangedEventHandler NodeRemoving
+    content.vb: Public Event NodeRemoving As XmlNodeChangedEventHandler
+- uid: System.Xml.XmlDocument.NodeRemoved
+  id: NodeRemoved
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: NodeRemoved
+  fullName: System.Xml.XmlDocument.NodeRemoved
+  type: Event
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 1108
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Occurs when a node belonging to this document has been removed from its parent.
+  syntax:
+    content: public event XmlNodeChangedEventHandler NodeRemoved
+    content.vb: Public Event NodeRemoved As XmlNodeChangedEventHandler
+- uid: System.Xml.XmlDocument.NodeChanging
+  id: NodeChanging
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: NodeChanging
+  fullName: System.Xml.XmlDocument.NodeChanging
+  type: Event
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 1120
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Occurs when the @'System.Xml.XmlNode.Value' of a node belonging to this document is about to be changed.
+  syntax:
+    content: public event XmlNodeChangedEventHandler NodeChanging
+    content.vb: Public Event NodeChanging As XmlNodeChangedEventHandler
+- uid: System.Xml.XmlDocument.NodeChanged
+  id: NodeChanged
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: NodeChanged
+  fullName: System.Xml.XmlDocument.NodeChanged
+  type: Event
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 1132
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Occurs when the @'System.Xml.XmlNode.Value' of a node belonging to this document has been changed.
+  syntax:
+    content: public event XmlNodeChangedEventHandler NodeChanged
+    content.vb: Public Event NodeChanged As XmlNodeChangedEventHandler
+- uid: System.Xml.XmlDocument.BaseURI
+  id: BaseURI
+  parent: System.Xml.XmlDocument
+  href: System.Xml.XmlDocument.yml
+  name: BaseURI
+  fullName: System.Xml.XmlDocument.BaseURI
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
+    startLine: 1260
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets the base URI of the current node.
+  syntax:
+    content: public override string BaseURI { get; }
+    content.vb: Public Overrides ReadOnly Property BaseURI As String
+    parameters: []
+    return:
+      type: System.String
+  overridden: System.Xml.XmlNode.BaseURI
+references:
+- uid: System.Xml
+  isExternal: false
+  name: System.Xml
+  fullName: System.Xml
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Xml.XmlNode
+  parent: System.Xml
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: XmlNode
+  fullName: System.Xml.XmlNode
+  type: Class
+- uid: System.Xml.XmlNode.Value
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: Value
+  fullName: System.Xml.XmlNode.Value
+- uid: System.Xml.XmlNode.ChildNodes
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: ChildNodes
+  fullName: System.Xml.XmlNode.ChildNodes
+- uid: System.Xml.XmlNode.PreviousSibling
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: PreviousSibling
+  fullName: System.Xml.XmlNode.PreviousSibling
+- uid: System.Xml.XmlNode.NextSibling
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: NextSibling
+  fullName: System.Xml.XmlNode.NextSibling
+- uid: System.Xml.XmlNode.Attributes
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: Attributes
+  fullName: System.Xml.XmlNode.Attributes
+- uid: System.Xml.XmlNode.FirstChild
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: FirstChild
+  fullName: System.Xml.XmlNode.FirstChild
+- uid: System.Xml.XmlNode.LastChild
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: LastChild
+  fullName: System.Xml.XmlNode.LastChild
+- uid: System.Xml.XmlNode.InsertBefore(System.Xml.XmlNode,System.Xml.XmlNode)
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: InsertBefore(XmlNode, XmlNode)
+  fullName: System.Xml.XmlNode.InsertBefore(System.Xml.XmlNode, System.Xml.XmlNode)
+  spec.csharp:
+  - uid: System.Xml.XmlNode.InsertBefore(System.Xml.XmlNode,System.Xml.XmlNode)
+    name: InsertBefore
+    fullName: System.Xml.XmlNode.InsertBefore
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.Xml.XmlNode
+    name: XmlNode
+    fullName: System.Xml.XmlNode
+    href: System.Xml.XmlNode.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlNode
+    name: XmlNode
+    fullName: System.Xml.XmlNode
+    href: System.Xml.XmlNode.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.XmlNode.InsertBefore(System.Xml.XmlNode,System.Xml.XmlNode)
+    name: InsertBefore
+    fullName: System.Xml.XmlNode.InsertBefore
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.Xml.XmlNode
+    name: XmlNode
+    fullName: System.Xml.XmlNode
+    href: System.Xml.XmlNode.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlNode
+    name: XmlNode
+    fullName: System.Xml.XmlNode
+    href: System.Xml.XmlNode.yml
+  - name: )
+    fullName: )
+- uid: System.Xml.XmlNode.InsertAfter(System.Xml.XmlNode,System.Xml.XmlNode)
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: InsertAfter(XmlNode, XmlNode)
+  fullName: System.Xml.XmlNode.InsertAfter(System.Xml.XmlNode, System.Xml.XmlNode)
+  spec.csharp:
+  - uid: System.Xml.XmlNode.InsertAfter(System.Xml.XmlNode,System.Xml.XmlNode)
+    name: InsertAfter
+    fullName: System.Xml.XmlNode.InsertAfter
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.Xml.XmlNode
+    name: XmlNode
+    fullName: System.Xml.XmlNode
+    href: System.Xml.XmlNode.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlNode
+    name: XmlNode
+    fullName: System.Xml.XmlNode
+    href: System.Xml.XmlNode.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.XmlNode.InsertAfter(System.Xml.XmlNode,System.Xml.XmlNode)
+    name: InsertAfter
+    fullName: System.Xml.XmlNode.InsertAfter
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.Xml.XmlNode
+    name: XmlNode
+    fullName: System.Xml.XmlNode
+    href: System.Xml.XmlNode.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlNode
+    name: XmlNode
+    fullName: System.Xml.XmlNode
+    href: System.Xml.XmlNode.yml
+  - name: )
+    fullName: )
+- uid: System.Xml.XmlNode.ReplaceChild(System.Xml.XmlNode,System.Xml.XmlNode)
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: ReplaceChild(XmlNode, XmlNode)
+  fullName: System.Xml.XmlNode.ReplaceChild(System.Xml.XmlNode, System.Xml.XmlNode)
+  spec.csharp:
+  - uid: System.Xml.XmlNode.ReplaceChild(System.Xml.XmlNode,System.Xml.XmlNode)
+    name: ReplaceChild
+    fullName: System.Xml.XmlNode.ReplaceChild
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.Xml.XmlNode
+    name: XmlNode
+    fullName: System.Xml.XmlNode
+    href: System.Xml.XmlNode.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlNode
+    name: XmlNode
+    fullName: System.Xml.XmlNode
+    href: System.Xml.XmlNode.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.XmlNode.ReplaceChild(System.Xml.XmlNode,System.Xml.XmlNode)
+    name: ReplaceChild
+    fullName: System.Xml.XmlNode.ReplaceChild
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.Xml.XmlNode
+    name: XmlNode
+    fullName: System.Xml.XmlNode
+    href: System.Xml.XmlNode.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlNode
+    name: XmlNode
+    fullName: System.Xml.XmlNode
+    href: System.Xml.XmlNode.yml
+  - name: )
+    fullName: )
+- uid: System.Xml.XmlNode.RemoveChild(System.Xml.XmlNode)
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: RemoveChild(XmlNode)
+  fullName: System.Xml.XmlNode.RemoveChild(System.Xml.XmlNode)
+  spec.csharp:
+  - uid: System.Xml.XmlNode.RemoveChild(System.Xml.XmlNode)
+    name: RemoveChild
+    fullName: System.Xml.XmlNode.RemoveChild
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.Xml.XmlNode
+    name: XmlNode
+    fullName: System.Xml.XmlNode
+    href: System.Xml.XmlNode.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.XmlNode.RemoveChild(System.Xml.XmlNode)
+    name: RemoveChild
+    fullName: System.Xml.XmlNode.RemoveChild
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.Xml.XmlNode
+    name: XmlNode
+    fullName: System.Xml.XmlNode
+    href: System.Xml.XmlNode.yml
+  - name: )
+    fullName: )
+- uid: System.Xml.XmlNode.PrependChild(System.Xml.XmlNode)
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: PrependChild(XmlNode)
+  fullName: System.Xml.XmlNode.PrependChild(System.Xml.XmlNode)
+  spec.csharp:
+  - uid: System.Xml.XmlNode.PrependChild(System.Xml.XmlNode)
+    name: PrependChild
+    fullName: System.Xml.XmlNode.PrependChild
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.Xml.XmlNode
+    name: XmlNode
+    fullName: System.Xml.XmlNode
+    href: System.Xml.XmlNode.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.XmlNode.PrependChild(System.Xml.XmlNode)
+    name: PrependChild
+    fullName: System.Xml.XmlNode.PrependChild
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.Xml.XmlNode
+    name: XmlNode
+    fullName: System.Xml.XmlNode
+    href: System.Xml.XmlNode.yml
+  - name: )
+    fullName: )
+- uid: System.Xml.XmlNode.AppendChild(System.Xml.XmlNode)
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: AppendChild(XmlNode)
+  fullName: System.Xml.XmlNode.AppendChild(System.Xml.XmlNode)
+  spec.csharp:
+  - uid: System.Xml.XmlNode.AppendChild(System.Xml.XmlNode)
+    name: AppendChild
+    fullName: System.Xml.XmlNode.AppendChild
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.Xml.XmlNode
+    name: XmlNode
+    fullName: System.Xml.XmlNode
+    href: System.Xml.XmlNode.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.XmlNode.AppendChild(System.Xml.XmlNode)
+    name: AppendChild
+    fullName: System.Xml.XmlNode.AppendChild
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.Xml.XmlNode
+    name: XmlNode
+    fullName: System.Xml.XmlNode
+    href: System.Xml.XmlNode.yml
+  - name: )
+    fullName: )
+- uid: System.Xml.XmlNode.HasChildNodes
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: HasChildNodes
+  fullName: System.Xml.XmlNode.HasChildNodes
+- uid: System.Xml.XmlNode.Normalize
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: Normalize()
+  fullName: System.Xml.XmlNode.Normalize()
+  spec.csharp:
+  - uid: System.Xml.XmlNode.Normalize
+    name: Normalize
+    fullName: System.Xml.XmlNode.Normalize
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.XmlNode.Normalize
+    name: Normalize
+    fullName: System.Xml.XmlNode.Normalize
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Xml.XmlNode.Supports(System.String,System.String)
+  parent: System.Xml.XmlNode
+  isExternal: true
+  href: System.Xml.XmlNode.yml
+  name: Supports(String, String)
+  fullName: System.Xml.XmlNode.Supports(System.String, System.String)
+  spec.csharp:
+  - uid: System.Xml.XmlNode.Supports(System.String,System.String)
+    name: Supports
+    fullName: System.Xml.XmlNode.Supports
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.XmlNode.Supports(System.String,System.String)
+    name: Supports
+    fullName: System.Xml.XmlNode.Supports
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Xml.XmlNode.NamespaceURI
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: NamespaceURI
+  fullName: System.Xml.XmlNode.NamespaceURI
+- uid: System.Xml.XmlNode.Prefix
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: Prefix
+  fullName: System.Xml.XmlNode.Prefix
+- uid: System.Xml.XmlNode.System#Collections#IEnumerable#GetEnumerator
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: System.Xml.XmlNode.System.Collections.IEnumerable.GetEnumerator()
+  spec.csharp:
+  - uid: System.Xml.XmlNode.System#Collections#IEnumerable#GetEnumerator
+    name: IEnumerable.GetEnumerator
+    fullName: System.Xml.XmlNode.System.Collections.IEnumerable.GetEnumerator
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.XmlNode.System#Collections#IEnumerable#GetEnumerator
+    name: System.Collections.IEnumerable.GetEnumerator
+    fullName: System.Xml.XmlNode.System.Collections.IEnumerable.GetEnumerator
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Xml.XmlNode.GetEnumerator
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: GetEnumerator()
+  fullName: System.Xml.XmlNode.GetEnumerator()
+  spec.csharp:
+  - uid: System.Xml.XmlNode.GetEnumerator
+    name: GetEnumerator
+    fullName: System.Xml.XmlNode.GetEnumerator
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.XmlNode.GetEnumerator
+    name: GetEnumerator
+    fullName: System.Xml.XmlNode.GetEnumerator
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Xml.XmlNode.OuterXml
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: OuterXml
+  fullName: System.Xml.XmlNode.OuterXml
+- uid: System.Xml.XmlNode.RemoveAll
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: RemoveAll()
+  fullName: System.Xml.XmlNode.RemoveAll()
+  spec.csharp:
+  - uid: System.Xml.XmlNode.RemoveAll
+    name: RemoveAll
+    fullName: System.Xml.XmlNode.RemoveAll
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.XmlNode.RemoveAll
+    name: RemoveAll
+    fullName: System.Xml.XmlNode.RemoveAll
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Xml.XmlNode.GetNamespaceOfPrefix(System.String)
+  parent: System.Xml.XmlNode
+  isExternal: true
+  href: System.Xml.XmlNode.yml
+  name: GetNamespaceOfPrefix(String)
+  fullName: System.Xml.XmlNode.GetNamespaceOfPrefix(System.String)
+  spec.csharp:
+  - uid: System.Xml.XmlNode.GetNamespaceOfPrefix(System.String)
+    name: GetNamespaceOfPrefix
+    fullName: System.Xml.XmlNode.GetNamespaceOfPrefix
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.XmlNode.GetNamespaceOfPrefix(System.String)
+    name: GetNamespaceOfPrefix
+    fullName: System.Xml.XmlNode.GetNamespaceOfPrefix
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Xml.XmlNode.GetPrefixOfNamespace(System.String)
+  parent: System.Xml.XmlNode
+  isExternal: true
+  href: System.Xml.XmlNode.yml
+  name: GetPrefixOfNamespace(String)
+  fullName: System.Xml.XmlNode.GetPrefixOfNamespace(System.String)
+  spec.csharp:
+  - uid: System.Xml.XmlNode.GetPrefixOfNamespace(System.String)
+    name: GetPrefixOfNamespace
+    fullName: System.Xml.XmlNode.GetPrefixOfNamespace
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.XmlNode.GetPrefixOfNamespace(System.String)
+    name: GetPrefixOfNamespace
+    fullName: System.Xml.XmlNode.GetPrefixOfNamespace
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Xml.XmlNode.Item(System.String)
+  parent: System.Xml.XmlNode
+  isExternal: true
+  href: System.Xml.XmlNode.yml
+  name: Item[String]
+  name.vb: Item(String)
+  fullName: System.Xml.XmlNode.Item[System.String]
+  fullName.vb: System.Xml.XmlNode.Item(System.String)
+  spec.csharp:
+  - uid: System.Xml.XmlNode.Item(System.String)
+    name: Item
+    fullName: System.Xml.XmlNode.Item
+    href: System.Xml.XmlNode.yml
+  - name: '['
+    fullName: '['
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ']'
+    fullName: ']'
+  spec.vb:
+  - uid: System.Xml.XmlNode.Item(System.String)
+    name: Item
+    fullName: System.Xml.XmlNode.Item
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Xml.XmlNode.Item(System.String,System.String)
+  parent: System.Xml.XmlNode
+  isExternal: true
+  href: System.Xml.XmlNode.yml
+  name: Item[String, String]
+  name.vb: Item(String, String)
+  fullName: System.Xml.XmlNode.Item[System.String, System.String]
+  fullName.vb: System.Xml.XmlNode.Item(System.String, System.String)
+  spec.csharp:
+  - uid: System.Xml.XmlNode.Item(System.String,System.String)
+    name: Item
+    fullName: System.Xml.XmlNode.Item
+    href: System.Xml.XmlNode.yml
+  - name: '['
+    fullName: '['
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ']'
+    fullName: ']'
+  spec.vb:
+  - uid: System.Xml.XmlNode.Item(System.String,System.String)
+    name: Item
+    fullName: System.Xml.XmlNode.Item
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Xml.XmlNode.PreviousText
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: PreviousText
+  fullName: System.Xml.XmlNode.PreviousText
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: XmlNameTable
+  isExternal: true
+  name: XmlNameTable
+  fullName: XmlNameTable
+- uid: System.Xml.XmlImplementation
+  parent: System.Xml
+  isExternal: false
+  href: System.Xml.XmlImplementation.yml
+  name: XmlImplementation
+  fullName: System.Xml.XmlImplementation
+  type: Class
+- uid: System.Xml.XmlNode.CloneNode(System.Boolean)
+  parent: System.Xml.XmlNode
+  isExternal: true
+  href: System.Xml.XmlNode.yml
+  name: CloneNode(Boolean)
+  fullName: System.Xml.XmlNode.CloneNode(System.Boolean)
+  spec.csharp:
+  - uid: System.Xml.XmlNode.CloneNode(System.Boolean)
+    name: CloneNode
+    fullName: System.Xml.XmlNode.CloneNode
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.XmlNode.CloneNode(System.Boolean)
+    name: CloneNode
+    fullName: System.Xml.XmlNode.CloneNode
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Xml.XmlNode.NodeType
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: NodeType
+  fullName: System.Xml.XmlNode.NodeType
+- uid: XmlNodeType
+  isExternal: true
+  name: XmlNodeType
+  fullName: XmlNodeType
+- uid: System.Xml.XmlNode.ParentNode
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: ParentNode
+  fullName: System.Xml.XmlNode.ParentNode
+- uid: System.Xml.XmlNode.Name
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: Name
+  fullName: System.Xml.XmlNode.Name
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Xml.XmlNode.LocalName
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: LocalName
+  fullName: System.Xml.XmlNode.LocalName
+- uid: System.Xml.XmlElement
+  parent: System.Xml
+  isExternal: false
+  href: System.Xml.XmlElement.yml
+  name: XmlElement
+  fullName: System.Xml.XmlElement
+  type: Class
+- uid: System.Xml.XmlNode.OwnerDocument
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: OwnerDocument
+  fullName: System.Xml.XmlNode.OwnerDocument
+- uid: System.Xml.XmlDocument
+  parent: System.Xml
+  isExternal: false
+  href: System.Xml.XmlDocument.yml
+  name: XmlDocument
+  fullName: System.Xml.XmlDocument
+  type: Class
+- uid: System.Xml.XmlAttribute
+  isExternal: false
+  href: System.Xml.XmlAttribute.yml
+  name: XmlAttribute
+  fullName: System.Xml.XmlAttribute
+  type: Class
+- uid: System.Xml.XmlCDataSection
+  isExternal: false
+  href: System.Xml.XmlCDataSection.yml
+  name: XmlCDataSection
+  fullName: System.Xml.XmlCDataSection
+  type: Class
+- uid: System.Xml.XmlComment
+  isExternal: false
+  href: System.Xml.XmlComment.yml
+  name: XmlComment
+  fullName: System.Xml.XmlComment
+  type: Class
+- uid: System.Xml.XmlDocumentFragment
+  parent: System.Xml
+  isExternal: false
+  href: System.Xml.XmlDocumentFragment.yml
+  name: XmlDocumentFragment
+  fullName: System.Xml.XmlDocumentFragment
+  type: Class
+- uid: System.Xml.XmlProcessingInstruction
+  parent: System.Xml
+  isExternal: false
+  href: System.Xml.XmlProcessingInstruction.yml
+  name: XmlProcessingInstruction
+  fullName: System.Xml.XmlProcessingInstruction
+  type: Class
+- uid: System.Xml.XmlDeclaration
+  isExternal: false
+  href: System.Xml.XmlDeclaration.yml
+  name: XmlDeclaration
+  fullName: System.Xml.XmlDeclaration
+  type: Class
+- uid: System.Xml.XmlText
+  parent: System.Xml
+  isExternal: false
+  href: System.Xml.XmlText.yml
+  name: XmlText
+  fullName: System.Xml.XmlText
+  type: Class
+- uid: System.Xml.XmlSignificantWhitespace
+  parent: System.Xml
+  isExternal: false
+  href: System.Xml.XmlSignificantWhitespace.yml
+  name: XmlSignificantWhitespace
+  fullName: System.Xml.XmlSignificantWhitespace
+  type: Class
+- uid: System.Xml.XmlWhitespace
+  parent: System.Xml
+  isExternal: false
+  href: System.Xml.XmlWhitespace.yml
+  name: XmlWhitespace
+  fullName: System.Xml.XmlWhitespace
+  type: Class
+- uid: System.Xml.XmlNodeList
+  parent: System.Xml
+  isExternal: false
+  href: System.Xml.XmlNodeList.yml
+  name: XmlNodeList
+  fullName: System.Xml.XmlNodeList
+  type: Class
+- uid: System.Xml.XmlNode.IsReadOnly
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: IsReadOnly
+  fullName: System.Xml.XmlNode.IsReadOnly
+- uid: XmlReader
+  isExternal: true
+  name: XmlReader
+  fullName: XmlReader
+- uid: System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  name: Stream
+  fullName: System.IO.Stream
+- uid: System.IO
+  isExternal: false
+  name: System.IO
+  fullName: System.IO
+- uid: System.IO.TextReader
+  parent: System.IO
+  isExternal: true
+  name: TextReader
+  fullName: System.IO.TextReader
+- uid: System.Xml.XmlNode.InnerText
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: InnerText
+  fullName: System.Xml.XmlNode.InnerText
+- uid: System.Xml.XmlNode.InnerXml
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: InnerXml
+  fullName: System.Xml.XmlNode.InnerXml
+- uid: System.IO.TextWriter
+  parent: System.IO
+  isExternal: true
+  name: TextWriter
+  fullName: System.IO.TextWriter
+- uid: XmlWriter
+  isExternal: true
+  name: XmlWriter
+  fullName: XmlWriter
+- uid: System.Xml.XmlNode.WriteTo(XmlWriter)
+  parent: System.Xml.XmlNode
+  isExternal: true
+  href: System.Xml.XmlNode.yml
+  name: WriteTo(XmlWriter)
+  fullName: System.Xml.XmlNode.WriteTo(XmlWriter)
+  spec.csharp:
+  - uid: System.Xml.XmlNode.WriteTo(XmlWriter)
+    name: WriteTo
+    fullName: System.Xml.XmlNode.WriteTo
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: XmlWriter
+    name: XmlWriter
+    fullName: XmlWriter
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.XmlNode.WriteTo(XmlWriter)
+    name: WriteTo
+    fullName: System.Xml.XmlNode.WriteTo
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: XmlWriter
+    name: XmlWriter
+    fullName: XmlWriter
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Xml.XmlNode.WriteContentTo(XmlWriter)
+  parent: System.Xml.XmlNode
+  isExternal: true
+  href: System.Xml.XmlNode.yml
+  name: WriteContentTo(XmlWriter)
+  fullName: System.Xml.XmlNode.WriteContentTo(XmlWriter)
+  spec.csharp:
+  - uid: System.Xml.XmlNode.WriteContentTo(XmlWriter)
+    name: WriteContentTo
+    fullName: System.Xml.XmlNode.WriteContentTo
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: XmlWriter
+    name: XmlWriter
+    fullName: XmlWriter
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.XmlNode.WriteContentTo(XmlWriter)
+    name: WriteContentTo
+    fullName: System.Xml.XmlNode.WriteContentTo
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: XmlWriter
+    name: XmlWriter
+    fullName: XmlWriter
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Xml.XmlNode.BaseURI
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: BaseURI
+  fullName: System.Xml.XmlNode.BaseURI

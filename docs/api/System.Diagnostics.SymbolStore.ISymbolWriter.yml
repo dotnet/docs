@@ -1,0 +1,734 @@
+items:
+- uid: System.Diagnostics.SymbolStore.ISymbolWriter
+  id: ISymbolWriter
+  parent: System.Diagnostics.SymbolStore
+  children:
+  - System.Diagnostics.SymbolStore.ISymbolWriter.Close
+  - System.Diagnostics.SymbolStore.ISymbolWriter.CloseMethod
+  - System.Diagnostics.SymbolStore.ISymbolWriter.CloseNamespace
+  - System.Diagnostics.SymbolStore.ISymbolWriter.CloseScope(System.Int32)
+  - System.Diagnostics.SymbolStore.ISymbolWriter.DefineDocument(System.String,System.Guid,System.Guid,System.Guid)
+  - System.Diagnostics.SymbolStore.ISymbolWriter.DefineField(System.Diagnostics.SymbolStore.SymbolToken,System.String,System.Reflection.FieldAttributes,System.Byte[],System.Diagnostics.SymbolStore.SymAddressKind,System.Int32,System.Int32,System.Int32)
+  - System.Diagnostics.SymbolStore.ISymbolWriter.DefineGlobalVariable(System.String,System.Reflection.FieldAttributes,System.Byte[],System.Diagnostics.SymbolStore.SymAddressKind,System.Int32,System.Int32,System.Int32)
+  - System.Diagnostics.SymbolStore.ISymbolWriter.DefineLocalVariable(System.String,System.Reflection.FieldAttributes,System.Byte[],System.Diagnostics.SymbolStore.SymAddressKind,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
+  - System.Diagnostics.SymbolStore.ISymbolWriter.DefineParameter(System.String,System.Reflection.ParameterAttributes,System.Int32,System.Diagnostics.SymbolStore.SymAddressKind,System.Int32,System.Int32,System.Int32)
+  - System.Diagnostics.SymbolStore.ISymbolWriter.DefineSequencePoints(System.Diagnostics.SymbolStore.ISymbolDocumentWriter,System.Int32[],System.Int32[],System.Int32[],System.Int32[],System.Int32[])
+  - System.Diagnostics.SymbolStore.ISymbolWriter.Initialize(System.IntPtr,System.String,System.Boolean)
+  - System.Diagnostics.SymbolStore.ISymbolWriter.OpenMethod(System.Diagnostics.SymbolStore.SymbolToken)
+  - System.Diagnostics.SymbolStore.ISymbolWriter.OpenNamespace(System.String)
+  - System.Diagnostics.SymbolStore.ISymbolWriter.OpenScope(System.Int32)
+  - System.Diagnostics.SymbolStore.ISymbolWriter.SetMethodSourceRange(System.Diagnostics.SymbolStore.ISymbolDocumentWriter,System.Int32,System.Int32,System.Diagnostics.SymbolStore.ISymbolDocumentWriter,System.Int32,System.Int32)
+  - System.Diagnostics.SymbolStore.ISymbolWriter.SetScopeRange(System.Int32,System.Int32,System.Int32)
+  - System.Diagnostics.SymbolStore.ISymbolWriter.SetSymAttribute(System.Diagnostics.SymbolStore.SymbolToken,System.String,System.Byte[])
+  - System.Diagnostics.SymbolStore.ISymbolWriter.SetUnderlyingWriter(System.IntPtr)
+  - System.Diagnostics.SymbolStore.ISymbolWriter.SetUserEntryPoint(System.Diagnostics.SymbolStore.SymbolToken)
+  - System.Diagnostics.SymbolStore.ISymbolWriter.UsingNamespace(System.String)
+  href: System.Diagnostics.SymbolStore.ISymbolWriter.yml
+  name: ISymbolWriter
+  fullName: System.Diagnostics.SymbolStore.ISymbolWriter
+  type: Interface
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymWriter.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymWriter.cs
+    startLine: 21
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Represents a symbol writer for managed code.
+  syntax:
+    content: public interface ISymbolWriter
+    content.vb: Public Interface ISymbolWriter
+- uid: System.Diagnostics.SymbolStore.ISymbolWriter.Initialize(System.IntPtr,System.String,System.Boolean)
+  id: Initialize(System.IntPtr,System.String,System.Boolean)
+  parent: System.Diagnostics.SymbolStore.ISymbolWriter
+  href: System.Diagnostics.SymbolStore.ISymbolWriter.yml
+  name: Initialize(IntPtr, String, Boolean)
+  fullName: System.Diagnostics.SymbolStore.ISymbolWriter.Initialize(System.IntPtr, System.String, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymWriter.cs
+    startLine: 27
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Sets the metadata emitter interface to associate with a writer.
+  syntax:
+    content: void Initialize(IntPtr emitter, string filename, bool fFullBuild)
+    content.vb: Sub Initialize(emitter As IntPtr, filename As String, fFullBuild As Boolean)
+    parameters:
+    - id: emitter
+      type: System.IntPtr
+      description: The metadata emitter interface.
+    - id: filename
+      type: System.String
+      description: The file name for which the debugging symbols are written. Some writers require a file name, and others do not. If a file name is specified for a writer that does not use file names, this parameter is ignored.
+    - id: fFullBuild
+      type: System.Boolean
+      description: true indicates that this is a full rebuild; false indicates that this is an incremental compilation.
+- uid: System.Diagnostics.SymbolStore.ISymbolWriter.DefineDocument(System.String,System.Guid,System.Guid,System.Guid)
+  id: DefineDocument(System.String,System.Guid,System.Guid,System.Guid)
+  parent: System.Diagnostics.SymbolStore.ISymbolWriter
+  href: System.Diagnostics.SymbolStore.ISymbolWriter.yml
+  name: DefineDocument(String, Guid, Guid, Guid)
+  fullName: System.Diagnostics.SymbolStore.ISymbolWriter.DefineDocument(System.String, System.Guid, System.Guid, System.Guid)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymWriter.cs
+    startLine: 33
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Defines a source document.
+  syntax:
+    content: ISymbolDocumentWriter DefineDocument(string url, Guid language, Guid languageVendor, Guid documentType)
+    content.vb: Function DefineDocument(url As String, language As Guid, languageVendor As Guid, documentType As Guid) As ISymbolDocumentWriter
+    parameters:
+    - id: url
+      type: System.String
+      description: The URL that identifies the document.
+    - id: language
+      type: System.Guid
+      description: The document language. This parameter can be @'System.Guid.Empty'.
+    - id: languageVendor
+      type: System.Guid
+      description: The identity of the vendor for the document language. This parameter can be @'System.Guid.Empty'.
+    - id: documentType
+      type: System.Guid
+      description: The type of the document. This parameter can be @'System.Guid.Empty'.
+    return:
+      type: System.Diagnostics.SymbolStore.ISymbolDocumentWriter
+- uid: System.Diagnostics.SymbolStore.ISymbolWriter.SetUserEntryPoint(System.Diagnostics.SymbolStore.SymbolToken)
+  id: SetUserEntryPoint(System.Diagnostics.SymbolStore.SymbolToken)
+  parent: System.Diagnostics.SymbolStore.ISymbolWriter
+  href: System.Diagnostics.SymbolStore.ISymbolWriter.yml
+  name: SetUserEntryPoint(SymbolToken)
+  fullName: System.Diagnostics.SymbolStore.ISymbolWriter.SetUserEntryPoint(System.Diagnostics.SymbolStore.SymbolToken)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymWriter.cs
+    startLine: 44
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Identifies the user-defined method as the entry point for the current module.
+  syntax:
+    content: void SetUserEntryPoint(SymbolToken entryMethod)
+    content.vb: Sub SetUserEntryPoint(entryMethod As SymbolToken)
+    parameters:
+    - id: entryMethod
+      type: System.Diagnostics.SymbolStore.SymbolToken
+      description: The metadata token for the method that is the user entry point.
+- uid: System.Diagnostics.SymbolStore.ISymbolWriter.OpenMethod(System.Diagnostics.SymbolStore.SymbolToken)
+  id: OpenMethod(System.Diagnostics.SymbolStore.SymbolToken)
+  parent: System.Diagnostics.SymbolStore.ISymbolWriter
+  href: System.Diagnostics.SymbolStore.ISymbolWriter.yml
+  name: OpenMethod(SymbolToken)
+  fullName: System.Diagnostics.SymbolStore.ISymbolWriter.OpenMethod(System.Diagnostics.SymbolStore.SymbolToken)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymWriter.cs
+    startLine: 57
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Opens a method to place symbol information into.
+  syntax:
+    content: void OpenMethod(SymbolToken method)
+    content.vb: Sub OpenMethod(method As SymbolToken)
+    parameters:
+    - id: method
+      type: System.Diagnostics.SymbolStore.SymbolToken
+      description: The metadata token for the method to be opened.
+- uid: System.Diagnostics.SymbolStore.ISymbolWriter.CloseMethod
+  id: CloseMethod
+  parent: System.Diagnostics.SymbolStore.ISymbolWriter
+  href: System.Diagnostics.SymbolStore.ISymbolWriter.yml
+  name: CloseMethod()
+  fullName: System.Diagnostics.SymbolStore.ISymbolWriter.CloseMethod()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymWriter.cs
+    startLine: 64
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Closes the current method.
+  syntax:
+    content: void CloseMethod()
+    content.vb: Sub CloseMethod
+- uid: System.Diagnostics.SymbolStore.ISymbolWriter.DefineSequencePoints(System.Diagnostics.SymbolStore.ISymbolDocumentWriter,System.Int32[],System.Int32[],System.Int32[],System.Int32[],System.Int32[])
+  id: DefineSequencePoints(System.Diagnostics.SymbolStore.ISymbolDocumentWriter,System.Int32[],System.Int32[],System.Int32[],System.Int32[],System.Int32[])
+  parent: System.Diagnostics.SymbolStore.ISymbolWriter
+  href: System.Diagnostics.SymbolStore.ISymbolWriter.yml
+  name: DefineSequencePoints(ISymbolDocumentWriter, Int32[], Int32[], Int32[], Int32[], Int32[])
+  name.vb: DefineSequencePoints(ISymbolDocumentWriter, Int32(), Int32(), Int32(), Int32(), Int32())
+  fullName: System.Diagnostics.SymbolStore.ISymbolWriter.DefineSequencePoints(System.Diagnostics.SymbolStore.ISymbolDocumentWriter, System.Int32[], System.Int32[], System.Int32[], System.Int32[], System.Int32[])
+  fullName.vb: System.Diagnostics.SymbolStore.ISymbolWriter.DefineSequencePoints(System.Diagnostics.SymbolStore.ISymbolDocumentWriter, System.Int32(), System.Int32(), System.Int32(), System.Int32(), System.Int32())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymWriter.cs
+    startLine: 73
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Defines a group of sequence points within the current method.
+  syntax:
+    content: void DefineSequencePoints(ISymbolDocumentWriter document, int[] offsets, int[] lines, int[] columns, int[] endLines, int[] endColumns)
+    content.vb: Sub DefineSequencePoints(document As ISymbolDocumentWriter, offsets As Integer(), lines As Integer(), columns As Integer(), endLines As Integer(), endColumns As Integer())
+    parameters:
+    - id: document
+      type: System.Diagnostics.SymbolStore.ISymbolDocumentWriter
+      description: The document object for which the sequence points are being defined.
+    - id: offsets
+      type: System.Int32[]
+      description: The sequence point offsets measured from the beginning of methods.
+    - id: lines
+      type: System.Int32[]
+      description: The document lines for the sequence points.
+    - id: columns
+      type: System.Int32[]
+      description: The document positions for the sequence points.
+    - id: endLines
+      type: System.Int32[]
+      description: The document end lines for the sequence points.
+    - id: endColumns
+      type: System.Int32[]
+      description: The document end positions for the sequence points.
+- uid: System.Diagnostics.SymbolStore.ISymbolWriter.OpenScope(System.Int32)
+  id: OpenScope(System.Int32)
+  parent: System.Diagnostics.SymbolStore.ISymbolWriter
+  href: System.Diagnostics.SymbolStore.ISymbolWriter.yml
+  name: OpenScope(Int32)
+  fullName: System.Diagnostics.SymbolStore.ISymbolWriter.OpenScope(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymWriter.cs
+    startLine: 98
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Opens a new lexical scope in the current method.
+  syntax:
+    content: int OpenScope(int startOffset)
+    content.vb: Function OpenScope(startOffset As Integer) As Integer
+    parameters:
+    - id: startOffset
+      type: System.Int32
+      description: The offset, in bytes, from the beginning of the method to the first instruction in the lexical scope.
+    return:
+      type: System.Int32
+- uid: System.Diagnostics.SymbolStore.ISymbolWriter.CloseScope(System.Int32)
+  id: CloseScope(System.Int32)
+  parent: System.Diagnostics.SymbolStore.ISymbolWriter
+  href: System.Diagnostics.SymbolStore.ISymbolWriter.yml
+  name: CloseScope(Int32)
+  fullName: System.Diagnostics.SymbolStore.ISymbolWriter.CloseScope(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymWriter.cs
+    startLine: 106
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Closes the current lexical scope.
+  syntax:
+    content: void CloseScope(int endOffset)
+    content.vb: Sub CloseScope(endOffset As Integer)
+    parameters:
+    - id: endOffset
+      type: System.Int32
+      description: The points past the last instruction in the scope.
+- uid: System.Diagnostics.SymbolStore.ISymbolWriter.SetScopeRange(System.Int32,System.Int32,System.Int32)
+  id: SetScopeRange(System.Int32,System.Int32,System.Int32)
+  parent: System.Diagnostics.SymbolStore.ISymbolWriter
+  href: System.Diagnostics.SymbolStore.ISymbolWriter.yml
+  name: SetScopeRange(Int32, Int32, Int32)
+  fullName: System.Diagnostics.SymbolStore.ISymbolWriter.SetScopeRange(System.Int32, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymWriter.cs
+    startLine: 111
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Defines the offset range for the specified lexical scope.
+  syntax:
+    content: void SetScopeRange(int scopeID, int startOffset, int endOffset)
+    content.vb: Sub SetScopeRange(scopeID As Integer, startOffset As Integer, endOffset As Integer)
+    parameters:
+    - id: scopeID
+      type: System.Int32
+      description: The identifier of the lexical scope.
+    - id: startOffset
+      type: System.Int32
+      description: The byte offset of the beginning of the lexical scope.
+    - id: endOffset
+      type: System.Int32
+      description: The byte offset of the end of the lexical scope.
+- uid: System.Diagnostics.SymbolStore.ISymbolWriter.DefineLocalVariable(System.String,System.Reflection.FieldAttributes,System.Byte[],System.Diagnostics.SymbolStore.SymAddressKind,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
+  id: DefineLocalVariable(System.String,System.Reflection.FieldAttributes,System.Byte[],System.Diagnostics.SymbolStore.SymAddressKind,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: System.Diagnostics.SymbolStore.ISymbolWriter
+  href: System.Diagnostics.SymbolStore.ISymbolWriter.yml
+  name: DefineLocalVariable(String, FieldAttributes, Byte[], SymAddressKind, Int32, Int32, Int32, Int32, Int32)
+  name.vb: DefineLocalVariable(String, FieldAttributes, Byte(), SymAddressKind, Int32, Int32, Int32, Int32, Int32)
+  fullName: System.Diagnostics.SymbolStore.ISymbolWriter.DefineLocalVariable(System.String, System.Reflection.FieldAttributes, System.Byte[], System.Diagnostics.SymbolStore.SymAddressKind, System.Int32, System.Int32, System.Int32, System.Int32, System.Int32)
+  fullName.vb: System.Diagnostics.SymbolStore.ISymbolWriter.DefineLocalVariable(System.String, System.Reflection.FieldAttributes, System.Byte(), System.Diagnostics.SymbolStore.SymAddressKind, System.Int32, System.Int32, System.Int32, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymWriter.cs
+    startLine: 122
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Defines a single variable in the current lexical scope.
+  syntax:
+    content: void DefineLocalVariable(string name, FieldAttributes attributes, byte[] signature, SymAddressKind addrKind, int addr1, int addr2, int addr3, int startOffset, int endOffset)
+    content.vb: Sub DefineLocalVariable(name As String, attributes As FieldAttributes, signature As Byte(), addrKind As SymAddressKind, addr1 As Integer, addr2 As Integer, addr3 As Integer, startOffset As Integer, endOffset As Integer)
+    parameters:
+    - id: name
+      type: System.String
+      description: The local variable name.
+    - id: attributes
+      type: System.Reflection.FieldAttributes
+      description: A bitwise combination of the local variable attributes.
+    - id: signature
+      type: System.Byte[]
+      description: The local variable signature.
+    - id: addrKind
+      type: System.Diagnostics.SymbolStore.SymAddressKind
+      description: The address types for *addr1*, *addr2*, and *addr3*.
+    - id: addr1
+      type: System.Int32
+      description: The first address for the local variable specification.
+    - id: addr2
+      type: System.Int32
+      description: The second address for the local variable specification.
+    - id: addr3
+      type: System.Int32
+      description: The third address for the local variable specification.
+    - id: startOffset
+      type: System.Int32
+      description: The start offset for the variable. If this parameter is zero, it is ignored and the variable is defined throughout the entire scope. If the parameter is nonzero, the variable falls within the offsets of the current scope.
+    - id: endOffset
+      type: System.Int32
+      description: The end offset for the variable. If this parameter is zero, it is ignored and the variable is defined throughout the entire scope. If the parameter is nonzero, the variable falls within the offsets of the current scope.
+- uid: System.Diagnostics.SymbolStore.ISymbolWriter.DefineParameter(System.String,System.Reflection.ParameterAttributes,System.Int32,System.Diagnostics.SymbolStore.SymAddressKind,System.Int32,System.Int32,System.Int32)
+  id: DefineParameter(System.String,System.Reflection.ParameterAttributes,System.Int32,System.Diagnostics.SymbolStore.SymAddressKind,System.Int32,System.Int32,System.Int32)
+  parent: System.Diagnostics.SymbolStore.ISymbolWriter
+  href: System.Diagnostics.SymbolStore.ISymbolWriter.yml
+  name: DefineParameter(String, ParameterAttributes, Int32, SymAddressKind, Int32, Int32, Int32)
+  fullName: System.Diagnostics.SymbolStore.ISymbolWriter.DefineParameter(System.String, System.Reflection.ParameterAttributes, System.Int32, System.Diagnostics.SymbolStore.SymAddressKind, System.Int32, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymWriter.cs
+    startLine: 143
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Defines a single parameter in the current method. The type of each parameter is taken from its position within the signature of the method.
+  syntax:
+    content: void DefineParameter(string name, ParameterAttributes attributes, int sequence, SymAddressKind addrKind, int addr1, int addr2, int addr3)
+    content.vb: Sub DefineParameter(name As String, attributes As ParameterAttributes, sequence As Integer, addrKind As SymAddressKind, addr1 As Integer, addr2 As Integer, addr3 As Integer)
+    parameters:
+    - id: name
+      type: System.String
+      description: The parameter name.
+    - id: attributes
+      type: System.Reflection.ParameterAttributes
+      description: A bitwise combination of the parameter attributes.
+    - id: sequence
+      type: System.Int32
+      description: The parameter signature.
+    - id: addrKind
+      type: System.Diagnostics.SymbolStore.SymAddressKind
+      description: The address types for *addr1*, *addr2*, and *addr3*.
+    - id: addr1
+      type: System.Int32
+      description: The first address for the parameter specification.
+    - id: addr2
+      type: System.Int32
+      description: The second address for the parameter specification.
+    - id: addr3
+      type: System.Int32
+      description: The third address for the parameter specification.
+- uid: System.Diagnostics.SymbolStore.ISymbolWriter.DefineField(System.Diagnostics.SymbolStore.SymbolToken,System.String,System.Reflection.FieldAttributes,System.Byte[],System.Diagnostics.SymbolStore.SymAddressKind,System.Int32,System.Int32,System.Int32)
+  id: DefineField(System.Diagnostics.SymbolStore.SymbolToken,System.String,System.Reflection.FieldAttributes,System.Byte[],System.Diagnostics.SymbolStore.SymAddressKind,System.Int32,System.Int32,System.Int32)
+  parent: System.Diagnostics.SymbolStore.ISymbolWriter
+  href: System.Diagnostics.SymbolStore.ISymbolWriter.yml
+  name: DefineField(SymbolToken, String, FieldAttributes, Byte[], SymAddressKind, Int32, Int32, Int32)
+  name.vb: DefineField(SymbolToken, String, FieldAttributes, Byte(), SymAddressKind, Int32, Int32, Int32)
+  fullName: System.Diagnostics.SymbolStore.ISymbolWriter.DefineField(System.Diagnostics.SymbolStore.SymbolToken, System.String, System.Reflection.FieldAttributes, System.Byte[], System.Diagnostics.SymbolStore.SymAddressKind, System.Int32, System.Int32, System.Int32)
+  fullName.vb: System.Diagnostics.SymbolStore.ISymbolWriter.DefineField(System.Diagnostics.SymbolStore.SymbolToken, System.String, System.Reflection.FieldAttributes, System.Byte(), System.Diagnostics.SymbolStore.SymAddressKind, System.Int32, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymWriter.cs
+    startLine: 153
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Defines a field in a type or a global field.
+  syntax:
+    content: void DefineField(SymbolToken parent, string name, FieldAttributes attributes, byte[] signature, SymAddressKind addrKind, int addr1, int addr2, int addr3)
+    content.vb: Sub DefineField(parent As SymbolToken, name As String, attributes As FieldAttributes, signature As Byte(), addrKind As SymAddressKind, addr1 As Integer, addr2 As Integer, addr3 As Integer)
+    parameters:
+    - id: parent
+      type: System.Diagnostics.SymbolStore.SymbolToken
+      description: The metadata type or method token.
+    - id: name
+      type: System.String
+      description: The field name.
+    - id: attributes
+      type: System.Reflection.FieldAttributes
+      description: A bitwise combination of the field attributes.
+    - id: signature
+      type: System.Byte[]
+      description: The field signature.
+    - id: addrKind
+      type: System.Diagnostics.SymbolStore.SymAddressKind
+      description: The address types for *addr1* and *addr2*.
+    - id: addr1
+      type: System.Int32
+      description: The first address for the field specification.
+    - id: addr2
+      type: System.Int32
+      description: The second address for the field specification.
+    - id: addr3
+      type: System.Int32
+      description: The third address for the field specification.
+- uid: System.Diagnostics.SymbolStore.ISymbolWriter.DefineGlobalVariable(System.String,System.Reflection.FieldAttributes,System.Byte[],System.Diagnostics.SymbolStore.SymAddressKind,System.Int32,System.Int32,System.Int32)
+  id: DefineGlobalVariable(System.String,System.Reflection.FieldAttributes,System.Byte[],System.Diagnostics.SymbolStore.SymAddressKind,System.Int32,System.Int32,System.Int32)
+  parent: System.Diagnostics.SymbolStore.ISymbolWriter
+  href: System.Diagnostics.SymbolStore.ISymbolWriter.yml
+  name: DefineGlobalVariable(String, FieldAttributes, Byte[], SymAddressKind, Int32, Int32, Int32)
+  name.vb: DefineGlobalVariable(String, FieldAttributes, Byte(), SymAddressKind, Int32, Int32, Int32)
+  fullName: System.Diagnostics.SymbolStore.ISymbolWriter.DefineGlobalVariable(System.String, System.Reflection.FieldAttributes, System.Byte[], System.Diagnostics.SymbolStore.SymAddressKind, System.Int32, System.Int32, System.Int32)
+  fullName.vb: System.Diagnostics.SymbolStore.ISymbolWriter.DefineGlobalVariable(System.String, System.Reflection.FieldAttributes, System.Byte(), System.Diagnostics.SymbolStore.SymAddressKind, System.Int32, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymWriter.cs
+    startLine: 163
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Defines a single global variable.
+  syntax:
+    content: void DefineGlobalVariable(string name, FieldAttributes attributes, byte[] signature, SymAddressKind addrKind, int addr1, int addr2, int addr3)
+    content.vb: Sub DefineGlobalVariable(name As String, attributes As FieldAttributes, signature As Byte(), addrKind As SymAddressKind, addr1 As Integer, addr2 As Integer, addr3 As Integer)
+    parameters:
+    - id: name
+      type: System.String
+      description: The global variable name.
+    - id: attributes
+      type: System.Reflection.FieldAttributes
+      description: A bitwise combination of the global variable attributes.
+    - id: signature
+      type: System.Byte[]
+      description: The global variable signature.
+    - id: addrKind
+      type: System.Diagnostics.SymbolStore.SymAddressKind
+      description: The address types for *addr1*, *addr2*, and *addr3*.
+    - id: addr1
+      type: System.Int32
+      description: The first address for the global variable specification.
+    - id: addr2
+      type: System.Int32
+      description: The second address for the global variable specification.
+    - id: addr3
+      type: System.Int32
+      description: The third address for the global variable specification.
+- uid: System.Diagnostics.SymbolStore.ISymbolWriter.Close
+  id: Close
+  parent: System.Diagnostics.SymbolStore.ISymbolWriter
+  href: System.Diagnostics.SymbolStore.ISymbolWriter.yml
+  name: Close()
+  fullName: System.Diagnostics.SymbolStore.ISymbolWriter.Close()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymWriter.cs
+    startLine: 174
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Closes @'System.Diagnostics.SymbolStore.ISymbolWriter' and commits the symbols to the symbol store.
+  syntax:
+    content: void Close()
+    content.vb: Sub Close
+- uid: System.Diagnostics.SymbolStore.ISymbolWriter.SetSymAttribute(System.Diagnostics.SymbolStore.SymbolToken,System.String,System.Byte[])
+  id: SetSymAttribute(System.Diagnostics.SymbolStore.SymbolToken,System.String,System.Byte[])
+  parent: System.Diagnostics.SymbolStore.ISymbolWriter
+  href: System.Diagnostics.SymbolStore.ISymbolWriter.yml
+  name: SetSymAttribute(SymbolToken, String, Byte[])
+  name.vb: SetSymAttribute(SymbolToken, String, Byte())
+  fullName: System.Diagnostics.SymbolStore.ISymbolWriter.SetSymAttribute(System.Diagnostics.SymbolStore.SymbolToken, System.String, System.Byte[])
+  fullName.vb: System.Diagnostics.SymbolStore.ISymbolWriter.SetSymAttribute(System.Diagnostics.SymbolStore.SymbolToken, System.String, System.Byte())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymWriter.cs
+    startLine: 180
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Defines an attribute when given the attribute name and the attribute value.
+  syntax:
+    content: void SetSymAttribute(SymbolToken parent, string name, byte[] data)
+    content.vb: Sub SetSymAttribute(parent As SymbolToken, name As String, data As Byte())
+    parameters:
+    - id: parent
+      type: System.Diagnostics.SymbolStore.SymbolToken
+      description: The metadata token for which the attribute is being defined.
+    - id: name
+      type: System.String
+      description: The attribute name.
+    - id: data
+      type: System.Byte[]
+      description: The attribute value.
+- uid: System.Diagnostics.SymbolStore.ISymbolWriter.OpenNamespace(System.String)
+  id: OpenNamespace(System.String)
+  parent: System.Diagnostics.SymbolStore.ISymbolWriter
+  href: System.Diagnostics.SymbolStore.ISymbolWriter.yml
+  name: OpenNamespace(String)
+  fullName: System.Diagnostics.SymbolStore.ISymbolWriter.OpenNamespace(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymWriter.cs
+    startLine: 186
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Opens a new namespace.
+  syntax:
+    content: void OpenNamespace(string name)
+    content.vb: Sub OpenNamespace(name As String)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the new namespace.
+- uid: System.Diagnostics.SymbolStore.ISymbolWriter.CloseNamespace
+  id: CloseNamespace
+  parent: System.Diagnostics.SymbolStore.ISymbolWriter
+  href: System.Diagnostics.SymbolStore.ISymbolWriter.yml
+  name: CloseNamespace()
+  fullName: System.Diagnostics.SymbolStore.ISymbolWriter.CloseNamespace()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymWriter.cs
+    startLine: 189
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Closes the most recent namespace.
+  syntax:
+    content: void CloseNamespace()
+    content.vb: Sub CloseNamespace
+- uid: System.Diagnostics.SymbolStore.ISymbolWriter.UsingNamespace(System.String)
+  id: UsingNamespace(System.String)
+  parent: System.Diagnostics.SymbolStore.ISymbolWriter
+  href: System.Diagnostics.SymbolStore.ISymbolWriter.yml
+  name: UsingNamespace(String)
+  fullName: System.Diagnostics.SymbolStore.ISymbolWriter.UsingNamespace(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymWriter.cs
+    startLine: 197
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Specifies that the given, fully qualified namespace name is used within the open lexical scope.
+  syntax:
+    content: void UsingNamespace(string fullName)
+    content.vb: Sub UsingNamespace(fullName As String)
+    parameters:
+    - id: fullName
+      type: System.String
+      description: The fully qualified name of the namespace.
+- uid: System.Diagnostics.SymbolStore.ISymbolWriter.SetMethodSourceRange(System.Diagnostics.SymbolStore.ISymbolDocumentWriter,System.Int32,System.Int32,System.Diagnostics.SymbolStore.ISymbolDocumentWriter,System.Int32,System.Int32)
+  id: SetMethodSourceRange(System.Diagnostics.SymbolStore.ISymbolDocumentWriter,System.Int32,System.Int32,System.Diagnostics.SymbolStore.ISymbolDocumentWriter,System.Int32,System.Int32)
+  parent: System.Diagnostics.SymbolStore.ISymbolWriter
+  href: System.Diagnostics.SymbolStore.ISymbolWriter.yml
+  name: SetMethodSourceRange(ISymbolDocumentWriter, Int32, Int32, ISymbolDocumentWriter, Int32, Int32)
+  fullName: System.Diagnostics.SymbolStore.ISymbolWriter.SetMethodSourceRange(System.Diagnostics.SymbolStore.ISymbolDocumentWriter, System.Int32, System.Int32, System.Diagnostics.SymbolStore.ISymbolDocumentWriter, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymWriter.cs
+    startLine: 204
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Specifies the true start and end of a method within a source file. Use @'System.Diagnostics.SymbolStore.ISymbolWriter.SetMethodSourceRange(System.Diagnostics.SymbolStore.ISymbolDocumentWriter,System.Int32,System.Int32,System.Diagnostics.SymbolStore.ISymbolDocumentWriter,System.Int32,System.Int32)' to specify the extent of a method, independent of the sequence points that exist within the method.
+  syntax:
+    content: void SetMethodSourceRange(ISymbolDocumentWriter startDoc, int startLine, int startColumn, ISymbolDocumentWriter endDoc, int endLine, int endColumn)
+    content.vb: Sub SetMethodSourceRange(startDoc As ISymbolDocumentWriter, startLine As Integer, startColumn As Integer, endDoc As ISymbolDocumentWriter, endLine As Integer, endColumn As Integer)
+    parameters:
+    - id: startDoc
+      type: System.Diagnostics.SymbolStore.ISymbolDocumentWriter
+      description: The document that contains the starting position.
+    - id: startLine
+      type: System.Int32
+      description: The starting line number.
+    - id: startColumn
+      type: System.Int32
+      description: The starting column.
+    - id: endDoc
+      type: System.Diagnostics.SymbolStore.ISymbolDocumentWriter
+      description: The document that contains the ending position.
+    - id: endLine
+      type: System.Int32
+      description: The ending line number.
+    - id: endColumn
+      type: System.Int32
+      description: The ending column number.
+- uid: System.Diagnostics.SymbolStore.ISymbolWriter.SetUnderlyingWriter(System.IntPtr)
+  id: SetUnderlyingWriter(System.IntPtr)
+  parent: System.Diagnostics.SymbolStore.ISymbolWriter
+  href: System.Diagnostics.SymbolStore.ISymbolWriter.yml
+  name: SetUnderlyingWriter(IntPtr)
+  fullName: System.Diagnostics.SymbolStore.ISymbolWriter.SetUnderlyingWriter(System.IntPtr)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymWriter.cs
+    startLine: 213
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Sets the underlying ISymUnmanagedWriter (the corresponding unmanaged interface) that a managed @'System.Diagnostics.SymbolStore.ISymbolWriter' uses to emit symbols.
+  syntax:
+    content: void SetUnderlyingWriter(IntPtr underlyingWriter)
+    content.vb: Sub SetUnderlyingWriter(underlyingWriter As IntPtr)
+    parameters:
+    - id: underlyingWriter
+      type: System.IntPtr
+      description: A pointer to code that represents the underlying writer.
+references:
+- uid: System.Diagnostics.SymbolStore
+  isExternal: false
+  name: System.Diagnostics.SymbolStore
+  fullName: System.Diagnostics.SymbolStore
+  type: Namespace
+- uid: System.IntPtr
+  parent: System
+  isExternal: true
+  name: IntPtr
+  fullName: System.IntPtr
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  fullName: System.Guid
+- uid: System.Diagnostics.SymbolStore.ISymbolDocumentWriter
+  parent: System.Diagnostics.SymbolStore
+  isExternal: false
+  href: System.Diagnostics.SymbolStore.ISymbolDocumentWriter.yml
+  name: ISymbolDocumentWriter
+  fullName: System.Diagnostics.SymbolStore.ISymbolDocumentWriter
+  type: Interface
+- uid: System.Diagnostics.SymbolStore.SymbolToken
+  parent: System.Diagnostics.SymbolStore
+  isExternal: false
+  href: System.Diagnostics.SymbolStore.SymbolToken.yml
+  name: SymbolToken
+  fullName: System.Diagnostics.SymbolStore.SymbolToken
+  type: Struct
+- uid: System.Int32[]
+  isExternal: true
+  name: Int32[]
+  name.vb: Int32()
+  fullName: System.Int32[]
+  fullName.vb: System.Int32()
+  spec.csharp:
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Reflection.FieldAttributes
+  parent: System.Reflection
+  isExternal: true
+  name: FieldAttributes
+  fullName: System.Reflection.FieldAttributes
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  name.vb: Byte()
+  fullName: System.Byte[]
+  fullName.vb: System.Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Diagnostics.SymbolStore.SymAddressKind
+  parent: System.Diagnostics.SymbolStore
+  isExternal: false
+  href: System.Diagnostics.SymbolStore.SymAddressKind.yml
+  name: SymAddressKind
+  fullName: System.Diagnostics.SymbolStore.SymAddressKind
+  type: Enum
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace
+- uid: System.Reflection.ParameterAttributes
+  parent: System.Reflection
+  isExternal: true
+  name: ParameterAttributes
+  fullName: System.Reflection.ParameterAttributes

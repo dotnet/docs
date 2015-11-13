@@ -1,0 +1,119 @@
+items:
+- uid: System.Reflection.PortableExecutable.PEStreamOptions
+  id: PEStreamOptions
+  parent: System.Reflection.PortableExecutable
+  children:
+  - System.Reflection.PortableExecutable.PEStreamOptions.Default
+  - System.Reflection.PortableExecutable.PEStreamOptions.LeaveOpen
+  - System.Reflection.PortableExecutable.PEStreamOptions.PrefetchEntireImage
+  - System.Reflection.PortableExecutable.PEStreamOptions.PrefetchMetadata
+  href: System.Reflection.PortableExecutable.PEStreamOptions.yml
+  name: PEStreamOptions
+  fullName: System.Reflection.PortableExecutable.PEStreamOptions
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEStreamOptions.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEStreamOptions.cs
+    startLine: 5
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: public enum PEStreamOptions
+    content.vb: Public Enum PEStreamOptions
+- uid: System.Reflection.PortableExecutable.PEStreamOptions.Default
+  id: Default
+  parent: System.Reflection.PortableExecutable.PEStreamOptions
+  href: System.Reflection.PortableExecutable.PEStreamOptions.yml
+  name: Default
+  fullName: System.Reflection.PortableExecutable.PEStreamOptions.Default
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEStreamOptions.cs
+    startLine: 11
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  summary: By default the stream is disposed when @'System.Reflection.PortableExecutable.PEReader' is disposed and sections of the PE image are read lazily.
+  syntax:
+    content: Default = 0
+- uid: System.Reflection.PortableExecutable.PEStreamOptions.LeaveOpen
+  id: LeaveOpen
+  parent: System.Reflection.PortableExecutable.PEStreamOptions
+  href: System.Reflection.PortableExecutable.PEStreamOptions.yml
+  name: LeaveOpen
+  fullName: System.Reflection.PortableExecutable.PEStreamOptions.LeaveOpen
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEStreamOptions.cs
+    startLine: 16
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  summary: Keep the stream open when the @'System.Reflection.PortableExecutable.PEReader' is disposed.
+  syntax:
+    content: LeaveOpen = 1
+- uid: System.Reflection.PortableExecutable.PEStreamOptions.PrefetchMetadata
+  id: PrefetchMetadata
+  parent: System.Reflection.PortableExecutable.PEStreamOptions
+  href: System.Reflection.PortableExecutable.PEStreamOptions.yml
+  name: PrefetchMetadata
+  fullName: System.Reflection.PortableExecutable.PEStreamOptions.PrefetchMetadata
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEStreamOptions.cs
+    startLine: 27
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  summary: Reads metadata section into memory right away.
+  remarks: >-
+    Reading from other sections of the file is not allowed (@'System.InvalidOperationException' is thrown by the @'System.Reflection.PortableExecutable.PEReader').
+
+    The underlying file may be closed and even deleted after @'System.Reflection.PortableExecutable.PEReader' is constructed.
+
+
+
+    @'System.Reflection.PortableExecutable.PEReader' closes the stream automatically by the time the constructor returns unless @'System.Reflection.PortableExecutable.PEStreamOptions.LeaveOpen' is specified.
+  syntax:
+    content: PrefetchMetadata = 2
+- uid: System.Reflection.PortableExecutable.PEStreamOptions.PrefetchEntireImage
+  id: PrefetchEntireImage
+  parent: System.Reflection.PortableExecutable.PEStreamOptions
+  href: System.Reflection.PortableExecutable.PEStreamOptions.yml
+  name: PrefetchEntireImage
+  fullName: System.Reflection.PortableExecutable.PEStreamOptions.PrefetchEntireImage
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEStreamOptions.cs
+    startLine: 35
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  summary: Reads the entire image into memory right away.
+  remarks: '@''System.Reflection.PortableExecutable.PEReader'' closes the stream automatically by the time the constructor returns unless @''System.Reflection.PortableExecutable.PEStreamOptions.LeaveOpen'' is specified.'
+  syntax:
+    content: PrefetchEntireImage = 4
+references:
+- uid: System.Reflection.PortableExecutable
+  isExternal: false
+  name: System.Reflection.PortableExecutable
+  fullName: System.Reflection.PortableExecutable
+  type: Namespace
+- uid: System.Reflection.PortableExecutable.PEReader
+  parent: System.Reflection.PortableExecutable
+  isExternal: false
+  href: System.Reflection.PortableExecutable.PEReader.yml
+  name: PEReader
+  fullName: System.Reflection.PortableExecutable.PEReader
+  type: Class
+  summary: Portable Executable format reader.
+- uid: System.InvalidOperationException
+- uid: System.Reflection.PortableExecutable.PEStreamOptions.LeaveOpen

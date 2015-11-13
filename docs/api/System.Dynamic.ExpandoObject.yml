@@ -1,0 +1,1043 @@
+items:
+- uid: System.Dynamic.ExpandoObject
+  id: ExpandoObject
+  parent: System.Dynamic
+  children:
+  - System.Dynamic.ExpandoObject.#ctor
+  - System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#Add(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+  - System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#Clear
+  - System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#Contains(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+  - System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.Object}[],System.Int32)
+  - System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#Count
+  - System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#IsReadOnly
+  - System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#Remove(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+  - System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary{System#String,System#Object}#Add(System.String,System.Object)
+  - System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary{System#String,System#Object}#ContainsKey(System.String)
+  - System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary{System#String,System#Object}#Item(System.String)
+  - System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary{System#String,System#Object}#Keys
+  - System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary{System#String,System#Object}#Remove(System.String)
+  - System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary{System#String,System#Object}#TryGetValue(System.String,System.Object@)
+  - System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary{System#String,System#Object}#Values
+  - System.Dynamic.ExpandoObject.System#Collections#Generic#IEnumerable{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#GetEnumerator
+  - System.Dynamic.ExpandoObject.System#Collections#IEnumerable#GetEnumerator
+  - System.Dynamic.ExpandoObject.System#Dynamic#IDynamicMetaObjectProvider#GetMetaObject(Expression)
+  href: System.Dynamic.ExpandoObject.yml
+  name: ExpandoObject
+  fullName: System.Dynamic.ExpandoObject
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs
+    startLine: 16
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  summary: Represents an object whose members can be dynamically added and removed at run time.
+  syntax:
+    content: 'public sealed class ExpandoObject : IDynamicMetaObjectProvider, IDictionary<string, object>, ICollection<KeyValuePair<string, object>>, IEnumerable<KeyValuePair<string, object>>, IEnumerable, INotifyPropertyChanged'
+    content.vb: Public NotInheritable Class ExpandoObject Implements IDynamicMetaObjectProvider, IDictionary(Of String, Object), ICollection(Of KeyValuePair(Of String, Object)), IEnumerable(Of KeyValuePair(Of String, Object)), IEnumerable, INotifyPropertyChanged
+  inheritance:
+  - System.Object
+  implements:
+  - System.Dynamic.IDynamicMetaObjectProvider
+  - System.Collections.Generic.IDictionary{System.String,System.Object}
+  - System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.Object}}
+  - System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}}
+  - System.Collections.IEnumerable
+  - INotifyPropertyChanged
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Dynamic.ExpandoObject.#ctor
+  id: '#ctor'
+  parent: System.Dynamic.ExpandoObject
+  href: System.Dynamic.ExpandoObject.yml
+  name: ExpandoObject()
+  fullName: System.Dynamic.ExpandoObject.ExpandoObject()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs
+    startLine: 33
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  summary: Initializes a new ExpandoObject that does not have members.
+  syntax:
+    content: public ExpandoObject()
+    content.vb: Public Sub New
+- uid: System.Dynamic.ExpandoObject.System#Dynamic#IDynamicMetaObjectProvider#GetMetaObject(Expression)
+  id: System#Dynamic#IDynamicMetaObjectProvider#GetMetaObject(Expression)
+  parent: System.Dynamic.ExpandoObject
+  href: System.Dynamic.ExpandoObject.yml
+  name: IDynamicMetaObjectProvider.GetMetaObject(Expression)
+  name.vb: System.Dynamic.IDynamicMetaObjectProvider.GetMetaObject(Expression)
+  fullName: System.Dynamic.ExpandoObject.System.Dynamic.IDynamicMetaObjectProvider.GetMetaObject(Expression)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs
+    startLine: 282
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  syntax:
+    content: DynamicMetaObject IDynamicMetaObjectProvider.GetMetaObject(Expression parameter)
+    content.vb: Function System.Dynamic.IDynamicMetaObjectProvider.GetMetaObject(parameter As Expression) As DynamicMetaObject Implements IDynamicMetaObjectProvider.GetMetaObject
+    parameters:
+    - id: parameter
+      type: Expression
+    return:
+      type: System.Dynamic.DynamicMetaObject
+- uid: System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary{System#String,System#Object}#Keys
+  id: System#Collections#Generic#IDictionary{System#String,System#Object}#Keys
+  parent: System.Dynamic.ExpandoObject
+  href: System.Dynamic.ExpandoObject.yml
+  name: IDictionary<String, Object>.Keys
+  name.vb: System.Collections.Generic.IDictionary<System.String,System.Object>.Keys
+  fullName: System.Dynamic.ExpandoObject.System.Collections.Generic.IDictionary<System.String, System.Object>.Keys
+  fullName.vb: System.Dynamic.ExpandoObject.System.Collections.Generic.IDictionary<System.String,System.Object>.Keys
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs
+    startLine: 605
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  syntax:
+    content: ICollection<string> IDictionary<string, object>.Keys { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.Generic.IDictionary<System.String,System.Object>.Keys As ICollection(Of String) Implements IDictionary(Of String, Object).Keys
+    parameters: []
+    return:
+      type: System.Collections.Generic.ICollection{System.String}
+- uid: System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary{System#String,System#Object}#Values
+  id: System#Collections#Generic#IDictionary{System#String,System#Object}#Values
+  parent: System.Dynamic.ExpandoObject
+  href: System.Dynamic.ExpandoObject.yml
+  name: IDictionary<String, Object>.Values
+  name.vb: System.Collections.Generic.IDictionary<System.String,System.Object>.Values
+  fullName: System.Dynamic.ExpandoObject.System.Collections.Generic.IDictionary<System.String, System.Object>.Values
+  fullName.vb: System.Dynamic.ExpandoObject.System.Collections.Generic.IDictionary<System.String,System.Object>.Values
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs
+    startLine: 613
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  syntax:
+    content: ICollection<object> IDictionary<string, object>.Values { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.Generic.IDictionary<System.String,System.Object>.Values As ICollection(Of Object) Implements IDictionary(Of String, Object).Values
+    parameters: []
+    return:
+      type: System.Collections.Generic.ICollection{System.Object}
+- uid: System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary{System#String,System#Object}#Item(System.String)
+  id: System#Collections#Generic#IDictionary{System#String,System#Object}#Item(System.String)
+  parent: System.Dynamic.ExpandoObject
+  href: System.Dynamic.ExpandoObject.yml
+  name: IDictionary<String, Object>.Item[String]
+  name.vb: System.Collections.Generic.IDictionary<System.String,System.Object>.Item(String)
+  fullName: System.Dynamic.ExpandoObject.System.Collections.Generic.IDictionary<System.String, System.Object>.Item[System.String]
+  fullName.vb: System.Dynamic.ExpandoObject.System.Collections.Generic.IDictionary<System.String,System.Object>.Item(System.String)
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs
+    startLine: 621
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  syntax:
+    content: object IDictionary<string, object>.this[string key] { get; set; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.Generic.IDictionary<System.String,System.Object>.Item(key As String) As Object Implements IDictionary(Of String, Object).this
+    parameters:
+    - id: key
+      type: System.String
+    return:
+      type: System.Object
+- uid: System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary{System#String,System#Object}#Add(System.String,System.Object)
+  id: System#Collections#Generic#IDictionary{System#String,System#Object}#Add(System.String,System.Object)
+  parent: System.Dynamic.ExpandoObject
+  href: System.Dynamic.ExpandoObject.yml
+  name: IDictionary<String, Object>.Add(String, Object)
+  name.vb: System.Collections.Generic.IDictionary<System.String,System.Object>.Add(String, Object)
+  fullName: System.Dynamic.ExpandoObject.System.Collections.Generic.IDictionary<System.String, System.Object>.Add(System.String, System.Object)
+  fullName.vb: System.Dynamic.ExpandoObject.System.Collections.Generic.IDictionary<System.String,System.Object>.Add(System.String, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs
+    startLine: 640
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  syntax:
+    content: void IDictionary<string, object>.Add(string key, object value)
+    content.vb: Sub System.Collections.Generic.IDictionary<System.String,System.Object>.Add(key As String, value As Object) Implements IDictionary(Of String, Object).Add
+    parameters:
+    - id: key
+      type: System.String
+    - id: value
+      type: System.Object
+- uid: System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary{System#String,System#Object}#ContainsKey(System.String)
+  id: System#Collections#Generic#IDictionary{System#String,System#Object}#ContainsKey(System.String)
+  parent: System.Dynamic.ExpandoObject
+  href: System.Dynamic.ExpandoObject.yml
+  name: IDictionary<String, Object>.ContainsKey(String)
+  name.vb: System.Collections.Generic.IDictionary<System.String,System.Object>.ContainsKey(String)
+  fullName: System.Dynamic.ExpandoObject.System.Collections.Generic.IDictionary<System.String, System.Object>.ContainsKey(System.String)
+  fullName.vb: System.Dynamic.ExpandoObject.System.Collections.Generic.IDictionary<System.String,System.Object>.ContainsKey(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs
+    startLine: 645
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  syntax:
+    content: bool IDictionary<string, object>.ContainsKey(string key)
+    content.vb: Function System.Collections.Generic.IDictionary<System.String,System.Object>.ContainsKey(key As String) As Boolean Implements IDictionary(Of String, Object).ContainsKey
+    parameters:
+    - id: key
+      type: System.String
+    return:
+      type: System.Boolean
+- uid: System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary{System#String,System#Object}#Remove(System.String)
+  id: System#Collections#Generic#IDictionary{System#String,System#Object}#Remove(System.String)
+  parent: System.Dynamic.ExpandoObject
+  href: System.Dynamic.ExpandoObject.yml
+  name: IDictionary<String, Object>.Remove(String)
+  name.vb: System.Collections.Generic.IDictionary<System.String,System.Object>.Remove(String)
+  fullName: System.Dynamic.ExpandoObject.System.Collections.Generic.IDictionary<System.String, System.Object>.Remove(System.String)
+  fullName.vb: System.Dynamic.ExpandoObject.System.Collections.Generic.IDictionary<System.String,System.Object>.Remove(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs
+    startLine: 654
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  syntax:
+    content: bool IDictionary<string, object>.Remove(string key)
+    content.vb: Function System.Collections.Generic.IDictionary<System.String,System.Object>.Remove(key As String) As Boolean Implements IDictionary(Of String, Object).Remove
+    parameters:
+    - id: key
+      type: System.String
+    return:
+      type: System.Boolean
+- uid: System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary{System#String,System#Object}#TryGetValue(System.String,System.Object@)
+  id: System#Collections#Generic#IDictionary{System#String,System#Object}#TryGetValue(System.String,System.Object@)
+  parent: System.Dynamic.ExpandoObject
+  href: System.Dynamic.ExpandoObject.yml
+  name: IDictionary<String, Object>.TryGetValue(String, out Object)
+  name.vb: System.Collections.Generic.IDictionary<System.String,System.Object>.TryGetValue(String, ByRef Object)
+  fullName: System.Dynamic.ExpandoObject.System.Collections.Generic.IDictionary<System.String, System.Object>.TryGetValue(System.String, out System.Object)
+  fullName.vb: System.Dynamic.ExpandoObject.System.Collections.Generic.IDictionary<System.String,System.Object>.TryGetValue(System.String, ByRef System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs
+    startLine: 661
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  syntax:
+    content: bool IDictionary<string, object>.TryGetValue(string key, out object value)
+    content.vb: Function System.Collections.Generic.IDictionary<System.String,System.Object>.TryGetValue(key As String, ByRef value As Object) As Boolean Implements IDictionary(Of String, Object).TryGetValue
+    parameters:
+    - id: key
+      type: System.String
+    - id: value
+      type: System.Object
+    return:
+      type: System.Boolean
+- uid: System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#Count
+  id: System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#Count
+  parent: System.Dynamic.ExpandoObject
+  href: System.Dynamic.ExpandoObject.yml
+  name: ICollection<KeyValuePair<String, Object>>.Count
+  name.vb: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.Count
+  fullName: System.Dynamic.ExpandoObject.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String, System.Object>>.Count
+  fullName.vb: System.Dynamic.ExpandoObject.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.Count
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs
+    startLine: 669
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  syntax:
+    content: int ICollection<KeyValuePair<string, object>>.Count { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.Count As Integer Implements ICollection(Of KeyValuePair(Of String, Object)).Count
+    parameters: []
+    return:
+      type: System.Int32
+- uid: System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#IsReadOnly
+  id: System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#IsReadOnly
+  parent: System.Dynamic.ExpandoObject
+  href: System.Dynamic.ExpandoObject.yml
+  name: ICollection<KeyValuePair<String, Object>>.IsReadOnly
+  name.vb: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.IsReadOnly
+  fullName: System.Dynamic.ExpandoObject.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String, System.Object>>.IsReadOnly
+  fullName.vb: System.Dynamic.ExpandoObject.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.IsReadOnly
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs
+    startLine: 677
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  syntax:
+    content: bool ICollection<KeyValuePair<string, object>>.IsReadOnly { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.IsReadOnly As Boolean Implements ICollection(Of KeyValuePair(Of String, Object)).IsReadOnly
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#Add(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+  id: System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#Add(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+  parent: System.Dynamic.ExpandoObject
+  href: System.Dynamic.ExpandoObject.yml
+  name: ICollection<KeyValuePair<String, Object>>.Add(KeyValuePair<String, Object>)
+  name.vb: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.Add(KeyValuePair(Of String, Object))
+  fullName: System.Dynamic.ExpandoObject.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String, System.Object>>.Add(System.Collections.Generic.KeyValuePair<System.String, System.Object>)
+  fullName.vb: System.Dynamic.ExpandoObject.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.Add(System.Collections.Generic.KeyValuePair(Of System.String, System.Object))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs
+    startLine: 682
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  syntax:
+    content: void ICollection<KeyValuePair<string, object>>.Add(KeyValuePair<string, object> item)
+    content.vb: Sub System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.Add(item As KeyValuePair(Of String, Object)) Implements ICollection(Of KeyValuePair(Of String, Object)).Add
+    parameters:
+    - id: item
+      type: System.Collections.Generic.KeyValuePair{System.String,System.Object}
+- uid: System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#Clear
+  id: System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#Clear
+  parent: System.Dynamic.ExpandoObject
+  href: System.Dynamic.ExpandoObject.yml
+  name: ICollection<KeyValuePair<String, Object>>.Clear()
+  name.vb: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.Clear()
+  fullName: System.Dynamic.ExpandoObject.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String, System.Object>>.Clear()
+  fullName.vb: System.Dynamic.ExpandoObject.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.Clear()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs
+    startLine: 687
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  syntax:
+    content: void ICollection<KeyValuePair<string, object>>.Clear()
+    content.vb: Sub System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.Clear Implements ICollection(Of KeyValuePair(Of String, Object)).Clear
+- uid: System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#Contains(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+  id: System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#Contains(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+  parent: System.Dynamic.ExpandoObject
+  href: System.Dynamic.ExpandoObject.yml
+  name: ICollection<KeyValuePair<String, Object>>.Contains(KeyValuePair<String, Object>)
+  name.vb: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.Contains(KeyValuePair(Of String, Object))
+  fullName: System.Dynamic.ExpandoObject.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String, System.Object>>.Contains(System.Collections.Generic.KeyValuePair<System.String, System.Object>)
+  fullName.vb: System.Dynamic.ExpandoObject.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.Contains(System.Collections.Generic.KeyValuePair(Of System.String, System.Object))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs
+    startLine: 712
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  syntax:
+    content: bool ICollection<KeyValuePair<string, object>>.Contains(KeyValuePair<string, object> item)
+    content.vb: Function System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.Contains(item As KeyValuePair(Of String, Object)) As Boolean Implements ICollection(Of KeyValuePair(Of String, Object)).Contains
+    parameters:
+    - id: item
+      type: System.Collections.Generic.KeyValuePair{System.String,System.Object}
+    return:
+      type: System.Boolean
+- uid: System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.Object}[],System.Int32)
+  id: System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.Object}[],System.Int32)
+  parent: System.Dynamic.ExpandoObject
+  href: System.Dynamic.ExpandoObject.yml
+  name: ICollection<KeyValuePair<String, Object>>.CopyTo(KeyValuePair<String, Object>[], Int32)
+  name.vb: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.CopyTo(KeyValuePair(Of String, Object)(), Int32)
+  fullName: System.Dynamic.ExpandoObject.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String, System.Object>>.CopyTo(System.Collections.Generic.KeyValuePair<System.String, System.Object>[], System.Int32)
+  fullName.vb: System.Dynamic.ExpandoObject.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.CopyTo(System.Collections.Generic.KeyValuePair(Of System.String, System.Object)(), System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs
+    startLine: 723
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  syntax:
+    content: void ICollection<KeyValuePair<string, object>>.CopyTo(KeyValuePair<string, object>[] array, int arrayIndex)
+    content.vb: Sub System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.CopyTo(array As KeyValuePair(Of String, Object)(), arrayIndex As Integer) Implements ICollection(Of KeyValuePair(Of String, Object)).CopyTo
+    parameters:
+    - id: array
+      type: System.Collections.Generic.KeyValuePair{System.String,System.Object}[]
+    - id: arrayIndex
+      type: System.Int32
+- uid: System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#Remove(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+  id: System#Collections#Generic#ICollection{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#Remove(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+  parent: System.Dynamic.ExpandoObject
+  href: System.Dynamic.ExpandoObject.yml
+  name: ICollection<KeyValuePair<String, Object>>.Remove(KeyValuePair<String, Object>)
+  name.vb: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.Remove(KeyValuePair(Of String, Object))
+  fullName: System.Dynamic.ExpandoObject.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String, System.Object>>.Remove(System.Collections.Generic.KeyValuePair<System.String, System.Object>)
+  fullName.vb: System.Dynamic.ExpandoObject.System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.Remove(System.Collections.Generic.KeyValuePair(Of System.String, System.Object))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs
+    startLine: 738
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  syntax:
+    content: bool ICollection<KeyValuePair<string, object>>.Remove(KeyValuePair<string, object> item)
+    content.vb: Function System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.Remove(item As KeyValuePair(Of String, Object)) As Boolean Implements ICollection(Of KeyValuePair(Of String, Object)).Remove
+    parameters:
+    - id: item
+      type: System.Collections.Generic.KeyValuePair{System.String,System.Object}
+    return:
+      type: System.Boolean
+- uid: System.Dynamic.ExpandoObject.System#Collections#Generic#IEnumerable{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#GetEnumerator
+  id: System#Collections#Generic#IEnumerable{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#GetEnumerator
+  parent: System.Dynamic.ExpandoObject
+  href: System.Dynamic.ExpandoObject.yml
+  name: IEnumerable<KeyValuePair<String, Object>>.GetEnumerator()
+  name.vb: System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.GetEnumerator()
+  fullName: System.Dynamic.ExpandoObject.System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<System.String, System.Object>>.GetEnumerator()
+  fullName.vb: System.Dynamic.ExpandoObject.System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs
+    startLine: 746
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  syntax:
+    content: IEnumerator<KeyValuePair<string, object>> IEnumerable<KeyValuePair<string, object>>.GetEnumerator()
+    content.vb: Function System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.GetEnumerator As IEnumerator(Of KeyValuePair(Of String, Object)) Implements IEnumerable(Of KeyValuePair(Of String, Object)).GetEnumerator
+    return:
+      type: System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{System.String,System.Object}}
+- uid: System.Dynamic.ExpandoObject.System#Collections#IEnumerable#GetEnumerator
+  id: System#Collections#IEnumerable#GetEnumerator
+  parent: System.Dynamic.ExpandoObject
+  href: System.Dynamic.ExpandoObject.yml
+  name: IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: System.Dynamic.ExpandoObject.System.Collections.IEnumerable.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/ExpandoObject.cs
+    startLine: 752
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  summary: Returns an enumerator that iterates through the collection.
+  syntax:
+    content: IEnumerator IEnumerable.GetEnumerator()
+    content.vb: Function System.Collections.IEnumerable.GetEnumerator As IEnumerator Implements IEnumerable.GetEnumerator
+    return:
+      type: System.Collections.IEnumerator
+references:
+- uid: System.Dynamic
+  isExternal: false
+  name: System.Dynamic
+  fullName: System.Dynamic
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Expression
+  isExternal: true
+  name: Expression
+  fullName: Expression
+- uid: System.Dynamic.DynamicMetaObject
+  parent: System.Dynamic
+  isExternal: false
+  href: System.Dynamic.DynamicMetaObject.yml
+  name: DynamicMetaObject
+  fullName: System.Dynamic.DynamicMetaObject
+  type: Class
+  summary: Represents the dynamic binding and a binding logic of an object participating in the dynamic binding.
+- uid: System.Collections.Generic.ICollection{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  name: ICollection<String>
+  name.vb: ICollection(Of String)
+  fullName: System.Collections.Generic.ICollection<System.String>
+  fullName.vb: System.Collections.Generic.ICollection(Of System.String)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: ICollection<T>
+  name.vb: ICollection(Of T)
+  fullName: System.Collections.Generic.ICollection<T>
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.Generic.ICollection{System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  name: ICollection<Object>
+  name.vb: ICollection(Of Object)
+  fullName: System.Collections.Generic.ICollection<System.Object>
+  fullName.vb: System.Collections.Generic.ICollection(Of System.Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Collections.Generic.KeyValuePair{System.String,System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.KeyValuePair`2
+  name: KeyValuePair<String, Object>
+  name.vb: KeyValuePair(Of String, Object)
+  fullName: System.Collections.Generic.KeyValuePair<System.String, System.Object>
+  fullName.vb: System.Collections.Generic.KeyValuePair(Of System.String, System.Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.KeyValuePair`2
+  parent: System.Collections.Generic
+  isExternal: true
+  name: KeyValuePair<TKey, TValue>
+  name.vb: KeyValuePair(Of TKey, TValue)
+  fullName: System.Collections.Generic.KeyValuePair<TKey, TValue>
+  fullName.vb: System.Collections.Generic.KeyValuePair(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.KeyValuePair{System.String,System.Object}[]
+  isExternal: true
+  name: KeyValuePair<String, Object>[]
+  name.vb: KeyValuePair(Of String, Object)()
+  fullName: System.Collections.Generic.KeyValuePair<System.String, System.Object>[]
+  fullName.vb: System.Collections.Generic.KeyValuePair(Of System.String, System.Object)()
+  spec.csharp:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  - name: ()
+    fullName: ()
+- uid: System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{System.String,System.Object}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  name: IEnumerator<KeyValuePair<String, Object>>
+  name.vb: IEnumerator(Of KeyValuePair(Of String, Object))
+  fullName: System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<System.String, System.Object>>
+  fullName.vb: System.Collections.Generic.IEnumerator(Of System.Collections.Generic.KeyValuePair(Of System.String, System.Object))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerator<T>
+  name.vb: IEnumerator(Of T)
+  fullName: System.Collections.Generic.IEnumerator<T>
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  isExternal: false
+  name: System.Collections
+  fullName: System.Collections

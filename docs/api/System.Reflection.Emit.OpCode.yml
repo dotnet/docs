@@ -1,0 +1,615 @@
+items:
+- uid: System.Reflection.Emit.OpCode
+  id: OpCode
+  parent: System.Reflection.Emit
+  children:
+  - System.Reflection.Emit.OpCode.Equals(System.Object)
+  - System.Reflection.Emit.OpCode.Equals(System.Reflection.Emit.OpCode)
+  - System.Reflection.Emit.OpCode.FlowControl
+  - System.Reflection.Emit.OpCode.GetHashCode
+  - System.Reflection.Emit.OpCode.Name
+  - System.Reflection.Emit.OpCode.op_Equality(System.Reflection.Emit.OpCode,System.Reflection.Emit.OpCode)
+  - System.Reflection.Emit.OpCode.op_Inequality(System.Reflection.Emit.OpCode,System.Reflection.Emit.OpCode)
+  - System.Reflection.Emit.OpCode.OpCodeType
+  - System.Reflection.Emit.OpCode.OperandType
+  - System.Reflection.Emit.OpCode.Size
+  - System.Reflection.Emit.OpCode.StackBehaviourPop
+  - System.Reflection.Emit.OpCode.StackBehaviourPush
+  - System.Reflection.Emit.OpCode.ToString
+  - System.Reflection.Emit.OpCode.Value
+  href: System.Reflection.Emit.OpCode.yml
+  name: OpCode
+  fullName: System.Reflection.Emit.OpCode
+  type: Struct
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Reflection/Emit/Opcode.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Reflection/Emit/Opcode.cs
+    startLine: 9
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Describes an intermediate language (IL) instruction.
+  syntax:
+    content: public struct OpCode
+    content.vb: Public Structure OpCode
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.Reflection.Emit.OpCode.OperandType
+  id: OperandType
+  parent: System.Reflection.Emit.OpCode
+  href: System.Reflection.Emit.OpCode.yml
+  name: OperandType
+  fullName: System.Reflection.Emit.OpCode.OperandType
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/Opcode.cs
+    startLine: 57
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: The operand type of an intermediate language (IL) instruction.
+  syntax:
+    content: public OperandType OperandType { get; }
+    content.vb: Public ReadOnly Property OperandType As OperandType
+    parameters: []
+    return:
+      type: System.Reflection.Emit.OperandType
+- uid: System.Reflection.Emit.OpCode.FlowControl
+  id: FlowControl
+  parent: System.Reflection.Emit.OpCode
+  href: System.Reflection.Emit.OpCode.yml
+  name: FlowControl
+  fullName: System.Reflection.Emit.OpCode.FlowControl
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/Opcode.cs
+    startLine: 65
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: The flow control characteristics of the intermediate language (IL) instruction.
+  syntax:
+    content: public FlowControl FlowControl { get; }
+    content.vb: Public ReadOnly Property FlowControl As FlowControl
+    parameters: []
+    return:
+      type: System.Reflection.Emit.FlowControl
+- uid: System.Reflection.Emit.OpCode.OpCodeType
+  id: OpCodeType
+  parent: System.Reflection.Emit.OpCode
+  href: System.Reflection.Emit.OpCode.yml
+  name: OpCodeType
+  fullName: System.Reflection.Emit.OpCode.OpCodeType
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/Opcode.cs
+    startLine: 73
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: The type of intermediate language (IL) instruction.
+  syntax:
+    content: public OpCodeType OpCodeType { get; }
+    content.vb: Public ReadOnly Property OpCodeType As OpCodeType
+    parameters: []
+    return:
+      type: System.Reflection.Emit.OpCodeType
+- uid: System.Reflection.Emit.OpCode.StackBehaviourPop
+  id: StackBehaviourPop
+  parent: System.Reflection.Emit.OpCode
+  href: System.Reflection.Emit.OpCode.yml
+  name: StackBehaviourPop
+  fullName: System.Reflection.Emit.OpCode.StackBehaviourPop
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/Opcode.cs
+    startLine: 82
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: How the intermediate language (IL) instruction pops the stack.
+  syntax:
+    content: public StackBehaviour StackBehaviourPop { get; }
+    content.vb: Public ReadOnly Property StackBehaviourPop As StackBehaviour
+    parameters: []
+    return:
+      type: System.Reflection.Emit.StackBehaviour
+- uid: System.Reflection.Emit.OpCode.StackBehaviourPush
+  id: StackBehaviourPush
+  parent: System.Reflection.Emit.OpCode
+  href: System.Reflection.Emit.OpCode.yml
+  name: StackBehaviourPush
+  fullName: System.Reflection.Emit.OpCode.StackBehaviourPush
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/Opcode.cs
+    startLine: 90
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: How the intermediate language (IL) instruction pushes operand onto the stack.
+  syntax:
+    content: public StackBehaviour StackBehaviourPush { get; }
+    content.vb: Public ReadOnly Property StackBehaviourPush As StackBehaviour
+    parameters: []
+    return:
+      type: System.Reflection.Emit.StackBehaviour
+- uid: System.Reflection.Emit.OpCode.Size
+  id: Size
+  parent: System.Reflection.Emit.OpCode
+  href: System.Reflection.Emit.OpCode.yml
+  name: Size
+  fullName: System.Reflection.Emit.OpCode.Size
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/Opcode.cs
+    startLine: 98
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: The size of the intermediate language (IL) instruction.
+  syntax:
+    content: public int Size { get; }
+    content.vb: Public ReadOnly Property Size As Integer
+    parameters: []
+    return:
+      type: System.Int32
+- uid: System.Reflection.Emit.OpCode.Value
+  id: Value
+  parent: System.Reflection.Emit.OpCode
+  href: System.Reflection.Emit.OpCode.yml
+  name: Value
+  fullName: System.Reflection.Emit.OpCode.Value
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/Opcode.cs
+    startLine: 106
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Gets the numeric value of the intermediate language (IL) instruction.
+  syntax:
+    content: public short Value { get; }
+    content.vb: Public ReadOnly Property Value As Short
+    parameters: []
+    return:
+      type: System.Int16
+- uid: System.Reflection.Emit.OpCode.Name
+  id: Name
+  parent: System.Reflection.Emit.OpCode
+  href: System.Reflection.Emit.OpCode.yml
+  name: Name
+  fullName: System.Reflection.Emit.OpCode.Name
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/Opcode.cs
+    startLine: 231
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: The name of the intermediate language (IL) instruction.
+  syntax:
+    content: public string Name { get; }
+    content.vb: Public ReadOnly Property Name As String
+    parameters: []
+    return:
+      type: System.String
+- uid: System.Reflection.Emit.OpCode.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Reflection.Emit.OpCode
+  href: System.Reflection.Emit.OpCode.yml
+  name: Equals(Object)
+  fullName: System.Reflection.Emit.OpCode.Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/Opcode.cs
+    startLine: 272
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Tests whether the given object is equal to this Opcode.
+  syntax:
+    content: public override bool Equals(object obj)
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare to this object.
+    return:
+      type: System.Boolean
+  overridden: System.ValueType.Equals(System.Object)
+- uid: System.Reflection.Emit.OpCode.Equals(System.Reflection.Emit.OpCode)
+  id: Equals(System.Reflection.Emit.OpCode)
+  parent: System.Reflection.Emit.OpCode
+  href: System.Reflection.Emit.OpCode.yml
+  name: Equals(OpCode)
+  fullName: System.Reflection.Emit.OpCode.Equals(System.Reflection.Emit.OpCode)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/Opcode.cs
+    startLine: 281
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Indicates whether the current instance is equal to the specified @'System.Reflection.Emit.OpCode'.
+  syntax:
+    content: public bool Equals(OpCode obj)
+    content.vb: Public Function Equals(obj As OpCode) As Boolean
+    parameters:
+    - id: obj
+      type: System.Reflection.Emit.OpCode
+      description: The @'System.Reflection.Emit.OpCode' to compare to the current instance.
+    return:
+      type: System.Boolean
+- uid: System.Reflection.Emit.OpCode.op_Equality(System.Reflection.Emit.OpCode,System.Reflection.Emit.OpCode)
+  id: op_Equality(System.Reflection.Emit.OpCode,System.Reflection.Emit.OpCode)
+  parent: System.Reflection.Emit.OpCode
+  href: System.Reflection.Emit.OpCode.yml
+  name: Equality(OpCode, OpCode)
+  fullName: System.Reflection.Emit.OpCode.Equality(System.Reflection.Emit.OpCode, System.Reflection.Emit.OpCode)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/Opcode.cs
+    startLine: 287
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Indicates whether two @'System.Reflection.Emit.OpCode' structures are equal.
+  syntax:
+    content: public static bool operator ==(OpCode a, OpCode b)
+    content.vb: Public Shared Operator =(a As OpCode, b As OpCode) As Boolean
+    parameters:
+    - id: a
+      type: System.Reflection.Emit.OpCode
+      description: The @'System.Reflection.Emit.OpCode' to compare to *b*.
+    - id: b
+      type: System.Reflection.Emit.OpCode
+      description: The @'System.Reflection.Emit.OpCode' to compare to *a*.
+    return:
+      type: System.Boolean
+- uid: System.Reflection.Emit.OpCode.op_Inequality(System.Reflection.Emit.OpCode,System.Reflection.Emit.OpCode)
+  id: op_Inequality(System.Reflection.Emit.OpCode,System.Reflection.Emit.OpCode)
+  parent: System.Reflection.Emit.OpCode
+  href: System.Reflection.Emit.OpCode.yml
+  name: Inequality(OpCode, OpCode)
+  fullName: System.Reflection.Emit.OpCode.Inequality(System.Reflection.Emit.OpCode, System.Reflection.Emit.OpCode)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/Opcode.cs
+    startLine: 293
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Indicates whether two @'System.Reflection.Emit.OpCode' structures are not equal.
+  syntax:
+    content: public static bool operator !=(OpCode a, OpCode b)
+    content.vb: Public Shared Operator <>(a As OpCode, b As OpCode) As Boolean
+    parameters:
+    - id: a
+      type: System.Reflection.Emit.OpCode
+      description: The @'System.Reflection.Emit.OpCode' to compare to *b*.
+    - id: b
+      type: System.Reflection.Emit.OpCode
+      description: The @'System.Reflection.Emit.OpCode' to compare to *a*.
+    return:
+      type: System.Boolean
+- uid: System.Reflection.Emit.OpCode.GetHashCode
+  id: GetHashCode
+  parent: System.Reflection.Emit.OpCode
+  href: System.Reflection.Emit.OpCode.yml
+  name: GetHashCode()
+  fullName: System.Reflection.Emit.OpCode.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/Opcode.cs
+    startLine: 299
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Returns the generated hash code for this Opcode.
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+  overridden: System.ValueType.GetHashCode
+- uid: System.Reflection.Emit.OpCode.ToString
+  id: ToString
+  parent: System.Reflection.Emit.OpCode
+  href: System.Reflection.Emit.OpCode.yml
+  name: ToString()
+  fullName: System.Reflection.Emit.OpCode.ToString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/Opcode.cs
+    startLine: 304
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Returns this Opcode as a @'System.String'.
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+  overridden: System.ValueType.ToString
+references:
+- uid: System.Reflection.Emit
+  isExternal: false
+  name: System.Reflection.Emit
+  fullName: System.Reflection.Emit
+  type: Namespace
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Reflection.Emit.OperandType
+  parent: System.Reflection.Emit
+  isExternal: false
+  href: System.Reflection.Emit.OperandType.yml
+  name: OperandType
+  fullName: System.Reflection.Emit.OperandType
+  type: Enum
+- uid: System.Reflection.Emit.FlowControl
+  parent: System.Reflection.Emit
+  isExternal: false
+  href: System.Reflection.Emit.FlowControl.yml
+  name: FlowControl
+  fullName: System.Reflection.Emit.FlowControl
+  type: Enum
+- uid: System.Reflection.Emit.OpCodeType
+  parent: System.Reflection.Emit
+  isExternal: false
+  href: System.Reflection.Emit.OpCodeType.yml
+  name: OpCodeType
+  fullName: System.Reflection.Emit.OpCodeType
+  type: Enum
+- uid: System.Reflection.Emit.StackBehaviour
+  parent: System.Reflection.Emit
+  isExternal: false
+  href: System.Reflection.Emit.StackBehaviour.yml
+  name: StackBehaviour
+  fullName: System.Reflection.Emit.StackBehaviour
+  type: Enum
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Int16
+  parent: System
+  isExternal: true
+  name: Int16
+  fullName: System.Int16
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  fullName: System.ValueType
+- uid: System.Reflection.Emit.OpCode
+  parent: System.Reflection.Emit
+  isExternal: false
+  href: System.Reflection.Emit.OpCode.yml
+  name: OpCode
+  fullName: System.Reflection.Emit.OpCode
+  type: Struct
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )

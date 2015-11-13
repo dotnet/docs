@@ -1,0 +1,82 @@
+items:
+- uid: System.UriKind
+  id: UriKind
+  parent: System
+  children:
+  - System.UriKind.Absolute
+  - System.UriKind.Relative
+  - System.UriKind.RelativeOrAbsolute
+  href: System.UriKind.yml
+  name: UriKind
+  fullName: System.UriKind
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Private.Uri/src/System/UriEnumTypes.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Private.Uri/src/System/UriEnumTypes.cs
+    startLine: 6
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: Defines the kinds of @'System.Uri's for the @'System.Uri.IsWellFormedUriString(System.String,System.UriKind)' and several <see cref="Overload:System.Uri.#ctor" /> methods.
+  syntax:
+    content: public enum UriKind
+    content.vb: Public Enum UriKind
+- uid: System.UriKind.RelativeOrAbsolute
+  id: RelativeOrAbsolute
+  parent: System.UriKind
+  href: System.UriKind.yml
+  name: RelativeOrAbsolute
+  fullName: System.UriKind.RelativeOrAbsolute
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Private.Uri/src/System/UriEnumTypes.cs
+    startLine: 8
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: The kind of the Uri is indeterminate.
+  syntax:
+    content: RelativeOrAbsolute = 0
+- uid: System.UriKind.Absolute
+  id: Absolute
+  parent: System.UriKind
+  href: System.UriKind.yml
+  name: Absolute
+  fullName: System.UriKind.Absolute
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Private.Uri/src/System/UriEnumTypes.cs
+    startLine: 9
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: The Uri is an absolute Uri.
+  syntax:
+    content: Absolute = 1
+- uid: System.UriKind.Relative
+  id: Relative
+  parent: System.UriKind
+  href: System.UriKind.yml
+  name: Relative
+  fullName: System.UriKind.Relative
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Private.Uri/src/System/UriEnumTypes.cs
+    startLine: 10
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: The Uri is a relative Uri.
+  syntax:
+    content: Relative = 2
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

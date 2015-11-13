@@ -1,0 +1,146 @@
+items:
+- uid: System.ComponentModel.ISite
+  id: ISite
+  parent: System.ComponentModel
+  children:
+  - System.ComponentModel.ISite.Component
+  - System.ComponentModel.ISite.Container
+  - System.ComponentModel.ISite.DesignMode
+  - System.ComponentModel.ISite.Name
+  href: System.ComponentModel.ISite.yml
+  name: ISite
+  fullName: System.ComponentModel.ISite
+  type: Interface
+  source:
+    remote: &o0
+      path: src/System.ComponentModel.Primitives/src/System/ComponentModel/ISite.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.ComponentModel.Primitives/src/System/ComponentModel/ISite.cs
+    startLine: 23
+  assemblies:
+  - System.ComponentModel.Primitives
+  namespace: System.ComponentModel
+  summary: Provides functionality required by sites.
+  syntax:
+    content: 'public interface ISite : IServiceProvider'
+    content.vb: Public Interface ISite Inherits IServiceProvider
+  inheritedMembers:
+  - System.IServiceProvider.GetService(System.Type)
+- uid: System.ComponentModel.ISite.Component
+  id: Component
+  parent: System.ComponentModel.ISite
+  href: System.ComponentModel.ISite.yml
+  name: Component
+  fullName: System.ComponentModel.ISite.Component
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.ComponentModel.Primitives/src/System/ComponentModel/ISite.cs
+    startLine: 29
+  assemblies:
+  - System.ComponentModel.Primitives
+  namespace: System.ComponentModel
+  summary: Gets the component associated with the @'System.ComponentModel.ISite' when implemented by a class.
+  syntax:
+    content: IComponent Component { get; }
+    content.vb: ReadOnly Property Component As IComponent
+    parameters: []
+    return:
+      type: System.ComponentModel.IComponent
+- uid: System.ComponentModel.ISite.Container
+  id: Container
+  parent: System.ComponentModel.ISite
+  href: System.ComponentModel.ISite.yml
+  name: Container
+  fullName: System.ComponentModel.ISite.Container
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.ComponentModel.Primitives/src/System/ComponentModel/ISite.cs
+    startLine: 35
+  assemblies:
+  - System.ComponentModel.Primitives
+  namespace: System.ComponentModel
+  summary: Gets the @'System.ComponentModel.IContainer' associated with the @'System.ComponentModel.ISite' when implemented by a class.
+  syntax:
+    content: IContainer Container { get; }
+    content.vb: ReadOnly Property Container As IContainer
+    parameters: []
+    return:
+      type: System.ComponentModel.IContainer
+- uid: System.ComponentModel.ISite.DesignMode
+  id: DesignMode
+  parent: System.ComponentModel.ISite
+  href: System.ComponentModel.ISite.yml
+  name: DesignMode
+  fullName: System.ComponentModel.ISite.DesignMode
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.ComponentModel.Primitives/src/System/ComponentModel/ISite.cs
+    startLine: 41
+  assemblies:
+  - System.ComponentModel.Primitives
+  namespace: System.ComponentModel
+  summary: Determines whether the component is in design mode when implemented by a class.
+  syntax:
+    content: bool DesignMode { get; }
+    content.vb: ReadOnly Property DesignMode As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.ComponentModel.ISite.Name
+  id: Name
+  parent: System.ComponentModel.ISite
+  href: System.ComponentModel.ISite.yml
+  name: Name
+  fullName: System.ComponentModel.ISite.Name
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.ComponentModel.Primitives/src/System/ComponentModel/ISite.cs
+    startLine: 49
+  assemblies:
+  - System.ComponentModel.Primitives
+  namespace: System.ComponentModel
+  summary: Gets or sets the name of the component associated with the @'System.ComponentModel.ISite' when implemented by a class.
+  syntax:
+    content: string Name { get; set; }
+    content.vb: Property Name As String
+    parameters: []
+    return:
+      type: System.String
+references:
+- uid: System.ComponentModel
+  isExternal: false
+  name: System.ComponentModel
+  fullName: System.ComponentModel
+  type: Namespace
+- uid: System.IServiceProvider.GetService(System.Type)
+- uid: System.ComponentModel.IComponent
+  isExternal: false
+  href: System.ComponentModel.IComponent.yml
+  name: IComponent
+  fullName: System.ComponentModel.IComponent
+  type: Interface
+- uid: System.ComponentModel.IContainer
+  isExternal: false
+  href: System.ComponentModel.IContainer.yml
+  name: IContainer
+  fullName: System.ComponentModel.IContainer
+  type: Interface
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String

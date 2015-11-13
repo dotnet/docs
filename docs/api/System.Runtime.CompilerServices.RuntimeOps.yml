@@ -1,0 +1,462 @@
+items:
+- uid: System.Runtime.CompilerServices.RuntimeOps
+  id: RuntimeOps
+  parent: System.Runtime.CompilerServices
+  children:
+  - System.Runtime.CompilerServices.RuntimeOps.CreateRuntimeVariables
+  - System.Runtime.CompilerServices.RuntimeOps.CreateRuntimeVariables(System.Object[],System.Int64[])
+  - System.Runtime.CompilerServices.RuntimeOps.MergeRuntimeVariables(System.Runtime.CompilerServices.IRuntimeVariables,System.Runtime.CompilerServices.IRuntimeVariables,System.Int32[])
+  - System.Runtime.CompilerServices.RuntimeOps.Quote(System.Linq.Expressions.Expression,System.Object,System.Object[])
+  href: System.Runtime.CompilerServices.RuntimeOps.yml
+  name: RuntimeOps
+  fullName: System.Runtime.CompilerServices.RuntimeOps
+  type: Class
+  source:
+    remote: &o1
+      path: src/System.Linq.Expressions/src/System/Runtime/CompilerServices/RuntimeOps.RuntimeVariableList.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Linq.Expressions/src/System/Runtime/CompilerServices/RuntimeOps.RuntimeVariableList.cs
+    startLine: 13
+  assemblies:
+  - System.Linq.Expressions
+  namespace: System.Runtime.CompilerServices
+  summary: Contains helper methods called from dynamically generated methods.
+  syntax:
+    content: public class RuntimeOps
+    content.vb: Public Class RuntimeOps
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Runtime.CompilerServices.RuntimeOps.Quote(System.Linq.Expressions.Expression,System.Object,System.Object[])
+  id: Quote(System.Linq.Expressions.Expression,System.Object,System.Object[])
+  parent: System.Runtime.CompilerServices.RuntimeOps
+  href: System.Runtime.CompilerServices.RuntimeOps.yml
+  name: Quote(Expression, Object, Object[])
+  name.vb: Quote(Expression, Object, Object())
+  fullName: System.Runtime.CompilerServices.RuntimeOps.Quote(System.Linq.Expressions.Expression, System.Object, System.Object[])
+  fullName.vb: System.Runtime.CompilerServices.RuntimeOps.Quote(System.Linq.Expressions.Expression, System.Object, System.Object())
+  type: Method
+  source:
+    remote: &o0
+      path: src/System.Linq.Expressions/src/System/Runtime/CompilerServices/RuntimeOps.ExpressionQuoter.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Linq.Expressions/src/System/Runtime/CompilerServices/RuntimeOps.ExpressionQuoter.cs
+    startLine: 22
+  assemblies:
+  - System.Linq.Expressions
+  namespace: System.Runtime.CompilerServices
+  summary: Quotes the provided expression tree.
+  syntax:
+    content: public static Expression Quote(Expression expression, object hoistedLocals, object[] locals)
+    content.vb: Public Shared Function Quote(expression As Expression, hoistedLocals As Object, locals As Object()) As Expression
+    parameters:
+    - id: expression
+      type: System.Linq.Expressions.Expression
+      description: The expression to quote.
+    - id: hoistedLocals
+      type: System.Object
+      description: The hoisted local state provided by the compiler.
+    - id: locals
+      type: System.Object[]
+      description: The actual hoisted local values.
+    return:
+      type: System.Linq.Expressions.Expression
+      description: The quoted expression.
+- uid: System.Runtime.CompilerServices.RuntimeOps.MergeRuntimeVariables(System.Runtime.CompilerServices.IRuntimeVariables,System.Runtime.CompilerServices.IRuntimeVariables,System.Int32[])
+  id: MergeRuntimeVariables(System.Runtime.CompilerServices.IRuntimeVariables,System.Runtime.CompilerServices.IRuntimeVariables,System.Int32[])
+  parent: System.Runtime.CompilerServices.RuntimeOps
+  href: System.Runtime.CompilerServices.RuntimeOps.yml
+  name: MergeRuntimeVariables(IRuntimeVariables, IRuntimeVariables, Int32[])
+  name.vb: MergeRuntimeVariables(IRuntimeVariables, IRuntimeVariables, Int32())
+  fullName: System.Runtime.CompilerServices.RuntimeOps.MergeRuntimeVariables(System.Runtime.CompilerServices.IRuntimeVariables, System.Runtime.CompilerServices.IRuntimeVariables, System.Int32[])
+  fullName.vb: System.Runtime.CompilerServices.RuntimeOps.MergeRuntimeVariables(System.Runtime.CompilerServices.IRuntimeVariables, System.Runtime.CompilerServices.IRuntimeVariables, System.Int32())
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Linq.Expressions/src/System/Runtime/CompilerServices/RuntimeOps.ExpressionQuoter.cs
+    startLine: 37
+  assemblies:
+  - System.Linq.Expressions
+  namespace: System.Runtime.CompilerServices
+  summary: Combines two runtime variable lists and returns a new list.
+  syntax:
+    content: public static IRuntimeVariables MergeRuntimeVariables(IRuntimeVariables first, IRuntimeVariables second, int[] indexes)
+    content.vb: Public Shared Function MergeRuntimeVariables(first As IRuntimeVariables, second As IRuntimeVariables, indexes As Integer()) As IRuntimeVariables
+    parameters:
+    - id: first
+      type: System.Runtime.CompilerServices.IRuntimeVariables
+      description: The first list.
+    - id: second
+      type: System.Runtime.CompilerServices.IRuntimeVariables
+      description: The second list.
+    - id: indexes
+      type: System.Int32[]
+      description: The index array indicating which list to get variables from.
+    return:
+      type: System.Runtime.CompilerServices.IRuntimeVariables
+      description: The merged runtime variables.
+- uid: System.Runtime.CompilerServices.RuntimeOps.CreateRuntimeVariables(System.Object[],System.Int64[])
+  id: CreateRuntimeVariables(System.Object[],System.Int64[])
+  parent: System.Runtime.CompilerServices.RuntimeOps
+  href: System.Runtime.CompilerServices.RuntimeOps.yml
+  name: CreateRuntimeVariables(Object[], Int64[])
+  name.vb: CreateRuntimeVariables(Object(), Int64())
+  fullName: System.Runtime.CompilerServices.RuntimeOps.CreateRuntimeVariables(System.Object[], System.Int64[])
+  fullName.vb: System.Runtime.CompilerServices.RuntimeOps.CreateRuntimeVariables(System.Object(), System.Int64())
+  type: Method
+  source:
+    remote: *o1
+    path: src/System.Linq.Expressions/src/System/Runtime/CompilerServices/RuntimeOps.RuntimeVariableList.cs
+    startLine: 22
+  assemblies:
+  - System.Linq.Expressions
+  namespace: System.Runtime.CompilerServices
+  summary: Creates an interface that can be used to modify closed over variables at runtime.
+  syntax:
+    content: public static IRuntimeVariables CreateRuntimeVariables(object[] data, long[] indexes)
+    content.vb: Public Shared Function CreateRuntimeVariables(data As Object(), indexes As Long()) As IRuntimeVariables
+    parameters:
+    - id: data
+      type: System.Object[]
+      description: The closure array.
+    - id: indexes
+      type: System.Int64[]
+      description: An array of indicies into the closure array where variables are found.
+    return:
+      type: System.Runtime.CompilerServices.IRuntimeVariables
+      description: An interface to access variables.
+- uid: System.Runtime.CompilerServices.RuntimeOps.CreateRuntimeVariables
+  id: CreateRuntimeVariables
+  parent: System.Runtime.CompilerServices.RuntimeOps
+  href: System.Runtime.CompilerServices.RuntimeOps.yml
+  name: CreateRuntimeVariables()
+  fullName: System.Runtime.CompilerServices.RuntimeOps.CreateRuntimeVariables()
+  type: Method
+  source:
+    remote: *o1
+    path: src/System.Linq.Expressions/src/System/Runtime/CompilerServices/RuntimeOps.RuntimeVariableList.cs
+    startLine: 32
+  assemblies:
+  - System.Linq.Expressions
+  namespace: System.Runtime.CompilerServices
+  summary: Creates an interface that can be used to modify closed over variables at runtime.
+  syntax:
+    content: public static IRuntimeVariables CreateRuntimeVariables()
+    content.vb: Public Shared Function CreateRuntimeVariables As IRuntimeVariables
+    return:
+      type: System.Runtime.CompilerServices.IRuntimeVariables
+      description: An interface to access variables.
+references:
+- uid: System.Runtime.CompilerServices
+  isExternal: false
+  name: System.Runtime.CompilerServices
+  fullName: System.Runtime.CompilerServices
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Linq.Expressions.Expression
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.Expression.yml
+  name: Expression
+  fullName: System.Linq.Expressions.Expression
+  type: Class
+  summary: The base type for all nodes in Expression Trees.
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  name.vb: Object()
+  fullName: System.Object[]
+  fullName.vb: System.Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Linq.Expressions
+  isExternal: false
+  name: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  type: Namespace
+- uid: System.Runtime.CompilerServices.IRuntimeVariables
+  isExternal: false
+  href: System.Runtime.CompilerServices.IRuntimeVariables.yml
+  name: IRuntimeVariables
+  fullName: System.Runtime.CompilerServices.IRuntimeVariables
+  type: Interface
+  summary: An interface to represent values of runtime variables.
+- uid: System.Int32[]
+  isExternal: true
+  name: Int32[]
+  name.vb: Int32()
+  fullName: System.Int32[]
+  fullName.vb: System.Int32()
+  spec.csharp:
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Int64[]
+  isExternal: false
+  href: System.Int64.yml
+  name: Int64[]
+  name.vb: Int64()
+  fullName: System.Int64[]
+  fullName.vb: System.Int64()
+  spec.csharp:
+  - uid: System.Int64
+    name: Int64
+    fullName: System.Int64
+    href: System.Int64.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int64
+    name: Int64
+    fullName: System.Int64
+    href: System.Int64.yml
+  - name: ()
+    fullName: ()

@@ -1,0 +1,130 @@
+items:
+- uid: System.Reflection.Metadata.SignatureKind
+  id: SignatureKind
+  parent: System.Reflection.Metadata
+  children:
+  - System.Reflection.Metadata.SignatureKind.Field
+  - System.Reflection.Metadata.SignatureKind.LocalVariables
+  - System.Reflection.Metadata.SignatureKind.Method
+  - System.Reflection.Metadata.SignatureKind.MethodSpecification
+  - System.Reflection.Metadata.SignatureKind.Property
+  href: System.Reflection.Metadata.SignatureKind.yml
+  name: SignatureKind
+  fullName: System.Reflection.Metadata.SignatureKind
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureKind.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureKind.cs
+    startLine: 9
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: >-
+    Specifies the signature kind. Underlying values correspond to the representation
+
+    in the leading signature byte represented by @'System.Reflection.Metadata.SignatureHeader'.
+  syntax:
+    content: 'public enum SignatureKind : byte'
+    content.vb: Public Enum SignatureKind As Byte
+- uid: System.Reflection.Metadata.SignatureKind.Method
+  id: Method
+  parent: System.Reflection.Metadata.SignatureKind
+  href: System.Reflection.Metadata.SignatureKind.yml
+  name: Method
+  fullName: System.Reflection.Metadata.SignatureKind.Method
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureKind.cs
+    startLine: 14
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Method reference, method definition, or standalone method signature.
+  syntax:
+    content: Method = 0
+- uid: System.Reflection.Metadata.SignatureKind.Field
+  id: Field
+  parent: System.Reflection.Metadata.SignatureKind
+  href: System.Reflection.Metadata.SignatureKind.yml
+  name: Field
+  fullName: System.Reflection.Metadata.SignatureKind.Field
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureKind.cs
+    startLine: 19
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Field signature.
+  syntax:
+    content: Field = 6
+- uid: System.Reflection.Metadata.SignatureKind.LocalVariables
+  id: LocalVariables
+  parent: System.Reflection.Metadata.SignatureKind
+  href: System.Reflection.Metadata.SignatureKind.yml
+  name: LocalVariables
+  fullName: System.Reflection.Metadata.SignatureKind.LocalVariables
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureKind.cs
+    startLine: 24
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Local variables signature.
+  syntax:
+    content: LocalVariables = 7
+- uid: System.Reflection.Metadata.SignatureKind.Property
+  id: Property
+  parent: System.Reflection.Metadata.SignatureKind
+  href: System.Reflection.Metadata.SignatureKind.yml
+  name: Property
+  fullName: System.Reflection.Metadata.SignatureKind.Property
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureKind.cs
+    startLine: 29
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Property signature.
+  syntax:
+    content: Property = 8
+- uid: System.Reflection.Metadata.SignatureKind.MethodSpecification
+  id: MethodSpecification
+  parent: System.Reflection.Metadata.SignatureKind
+  href: System.Reflection.Metadata.SignatureKind.yml
+  name: MethodSpecification
+  fullName: System.Reflection.Metadata.SignatureKind.MethodSpecification
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureKind.cs
+    startLine: 34
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Method specification signature.
+  syntax:
+    content: MethodSpecification = 10
+references:
+- uid: System.Reflection.Metadata.SignatureHeader
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.SignatureHeader.yml
+  name: SignatureHeader
+  fullName: System.Reflection.Metadata.SignatureHeader
+  type: Struct
+  summary: Represents the signature characteristics specified by the leading byte of signature blobs.
+- uid: System.Reflection.Metadata
+  isExternal: false
+  name: System.Reflection.Metadata
+  fullName: System.Reflection.Metadata
+  type: Namespace

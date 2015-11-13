@@ -1,0 +1,1114 @@
+items:
+- uid: System.Security.Permissions.FileIOPermission
+  id: FileIOPermission
+  parent: System.Security.Permissions
+  children:
+  - System.Security.Permissions.FileIOPermission.#ctor(System.Security.Permissions.FileIOPermissionAccess,System.String)
+  - System.Security.Permissions.FileIOPermission.#ctor(System.Security.Permissions.FileIOPermissionAccess,System.String[])
+  - System.Security.Permissions.FileIOPermission.#ctor(System.Security.Permissions.PermissionState)
+  - System.Security.Permissions.FileIOPermission.AddPathList(System.Security.Permissions.FileIOPermissionAccess,System.String)
+  - System.Security.Permissions.FileIOPermission.AddPathList(System.Security.Permissions.FileIOPermissionAccess,System.String[])
+  - System.Security.Permissions.FileIOPermission.AllFiles
+  - System.Security.Permissions.FileIOPermission.AllLocalFiles
+  - System.Security.Permissions.FileIOPermission.Copy
+  - System.Security.Permissions.FileIOPermission.Equals(System.Object)
+  - System.Security.Permissions.FileIOPermission.GetHashCode
+  - System.Security.Permissions.FileIOPermission.GetPathList(System.Security.Permissions.FileIOPermissionAccess)
+  - System.Security.Permissions.FileIOPermission.Intersect(System.Security.IPermission)
+  - System.Security.Permissions.FileIOPermission.IsSubsetOf(System.Security.IPermission)
+  - System.Security.Permissions.FileIOPermission.IsUnrestricted
+  - System.Security.Permissions.FileIOPermission.SetPathList(System.Security.Permissions.FileIOPermissionAccess,System.String)
+  - System.Security.Permissions.FileIOPermission.SetPathList(System.Security.Permissions.FileIOPermissionAccess,System.String[])
+  - System.Security.Permissions.FileIOPermission.Union(System.Security.IPermission)
+  href: System.Security.Permissions.FileIOPermission.yml
+  name: FileIOPermission
+  fullName: System.Security.Permissions.FileIOPermission
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Security/Permissions/FileIOPermission.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Security/Permissions/FileIOPermission.cs
+    startLine: 33
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Controls the ability to access files and folders. This class cannot be inherited.
+  syntax:
+    content: 'public sealed class FileIOPermission : CodeAccessPermission, IPermission, ISecurityEncodable, IStackWalk, IUnrestrictedPermission, IBuiltInPermission'
+    content.vb: Public NotInheritable Class FileIOPermission Inherits CodeAccessPermission Implements IPermission, ISecurityEncodable, IStackWalk, IUnrestrictedPermission, IBuiltInPermission
+  inheritance:
+  - System.Object
+  - System.Security.CodeAccessPermission
+  implements:
+  - System.Security.IPermission
+  - System.Security.ISecurityEncodable
+  - System.Security.IStackWalk
+  - System.Security.Permissions.IUnrestrictedPermission
+  inheritedMembers:
+  - System.Security.CodeAccessPermission.RevertAssert
+  - System.Security.CodeAccessPermission.RevertDeny
+  - System.Security.CodeAccessPermission.RevertPermitOnly
+  - System.Security.CodeAccessPermission.RevertAll
+  - System.Security.CodeAccessPermission.Demand
+  - System.Security.CodeAccessPermission.Assert
+  - System.Security.CodeAccessPermission.Deny
+  - System.Security.CodeAccessPermission.PermitOnly
+  - System.Object.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Security.Permissions.FileIOPermission.#ctor(System.Security.Permissions.PermissionState)
+  id: '#ctor(System.Security.Permissions.PermissionState)'
+  parent: System.Security.Permissions.FileIOPermission
+  href: System.Security.Permissions.FileIOPermission.yml
+  name: FileIOPermission(PermissionState)
+  fullName: System.Security.Permissions.FileIOPermission.FileIOPermission(System.Security.Permissions.PermissionState)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/FileIOPermission.cs
+    startLine: 47
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Initializes a new instance of the @'System.Security.Permissions.FileIOPermission' class with fully restricted or unrestricted permission as specified.
+  syntax:
+    content: public FileIOPermission(PermissionState state)
+    content.vb: Public Sub New(state As PermissionState)
+    parameters:
+    - id: state
+      type: System.Security.Permissions.PermissionState
+      description: One of the @'System.Security.Permissions.PermissionState' enumeration values.
+  exceptions:
+  - type: System.ArgumentException
+    description: The *state* parameter is not a valid value of @'System.Security.Permissions.PermissionState'.
+- uid: System.Security.Permissions.FileIOPermission.#ctor(System.Security.Permissions.FileIOPermissionAccess,System.String)
+  id: '#ctor(System.Security.Permissions.FileIOPermissionAccess,System.String)'
+  parent: System.Security.Permissions.FileIOPermission
+  href: System.Security.Permissions.FileIOPermission.yml
+  name: FileIOPermission(FileIOPermissionAccess, String)
+  fullName: System.Security.Permissions.FileIOPermission.FileIOPermission(System.Security.Permissions.FileIOPermissionAccess, System.String)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/FileIOPermission.cs
+    startLine: 63
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Initializes a new instance of the @'System.Security.Permissions.FileIOPermission' class with the specified access to the designated file or directory.
+  syntax:
+    content: public FileIOPermission(FileIOPermissionAccess access, string path)
+    content.vb: Public Sub New(access As FileIOPermissionAccess, path As String)
+    parameters:
+    - id: access
+      type: System.Security.Permissions.FileIOPermissionAccess
+      description: A bitwise combination of the @'System.Security.Permissions.FileIOPermissionAccess' enumeration values.
+    - id: path
+      type: System.String
+      description: The absolute path of the file or directory.
+  exceptions:
+  - type: System.ArgumentException
+    description: The *access* parameter is not a valid value of @'System.Security.Permissions.FileIOPermissionAccess'.-or- The *path* parameter is not a valid string.-or- The *path* parameter does not specify the absolute path to the file or directory.
+- uid: System.Security.Permissions.FileIOPermission.#ctor(System.Security.Permissions.FileIOPermissionAccess,System.String[])
+  id: '#ctor(System.Security.Permissions.FileIOPermissionAccess,System.String[])'
+  parent: System.Security.Permissions.FileIOPermission
+  href: System.Security.Permissions.FileIOPermission.yml
+  name: FileIOPermission(FileIOPermissionAccess, String[])
+  name.vb: FileIOPermission(FileIOPermissionAccess, String())
+  fullName: System.Security.Permissions.FileIOPermission.FileIOPermission(System.Security.Permissions.FileIOPermissionAccess, System.String[])
+  fullName.vb: System.Security.Permissions.FileIOPermission.FileIOPermission(System.Security.Permissions.FileIOPermissionAccess, System.String())
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/FileIOPermission.cs
+    startLine: 72
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Initializes a new instance of the @'System.Security.Permissions.FileIOPermission' class with the specified access to the designated files and directories.
+  syntax:
+    content: public FileIOPermission(FileIOPermissionAccess access, string[] pathList)
+    content.vb: Public Sub New(access As FileIOPermissionAccess, pathList As String())
+    parameters:
+    - id: access
+      type: System.Security.Permissions.FileIOPermissionAccess
+      description: A bitwise combination of the @'System.Security.Permissions.FileIOPermissionAccess' enumeration values.
+    - id: pathList
+      type: System.String[]
+      description: An array containing the absolute paths of the files and directories.
+  exceptions:
+  - type: System.ArgumentException
+    description: The *access* parameter is not a valid value of @'System.Security.Permissions.FileIOPermissionAccess'.-or- An entry in the *pathList* array is not a valid string.
+- uid: System.Security.Permissions.FileIOPermission.SetPathList(System.Security.Permissions.FileIOPermissionAccess,System.String)
+  id: SetPathList(System.Security.Permissions.FileIOPermissionAccess,System.String)
+  parent: System.Security.Permissions.FileIOPermission
+  href: System.Security.Permissions.FileIOPermission.yml
+  name: SetPathList(FileIOPermissionAccess, String)
+  fullName: System.Security.Permissions.FileIOPermission.SetPathList(System.Security.Permissions.FileIOPermissionAccess, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/FileIOPermission.cs
+    startLine: 115
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Sets the specified access to the specified file or directory, replacing the existing state of the permission.
+  syntax:
+    content: public void SetPathList(FileIOPermissionAccess access, string path)
+    content.vb: Public Sub SetPathList(access As FileIOPermissionAccess, path As String)
+    parameters:
+    - id: access
+      type: System.Security.Permissions.FileIOPermissionAccess
+      description: A bitwise combination of the @'System.Security.Permissions.FileIOPermissionAccess' values.
+    - id: path
+      type: System.String
+      description: The absolute path of the file or directory.
+  exceptions:
+  - type: System.ArgumentException
+    description: The *access* parameter is not a valid value of @'System.Security.Permissions.FileIOPermissionAccess'.-or- The *path* parameter is not a valid string.-or- The *path* parameter did not specify the absolute path to the file or directory.
+- uid: System.Security.Permissions.FileIOPermission.SetPathList(System.Security.Permissions.FileIOPermissionAccess,System.String[])
+  id: SetPathList(System.Security.Permissions.FileIOPermissionAccess,System.String[])
+  parent: System.Security.Permissions.FileIOPermission
+  href: System.Security.Permissions.FileIOPermission.yml
+  name: SetPathList(FileIOPermissionAccess, String[])
+  name.vb: SetPathList(FileIOPermissionAccess, String())
+  fullName: System.Security.Permissions.FileIOPermission.SetPathList(System.Security.Permissions.FileIOPermissionAccess, System.String[])
+  fullName.vb: System.Security.Permissions.FileIOPermission.SetPathList(System.Security.Permissions.FileIOPermissionAccess, System.String())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/FileIOPermission.cs
+    startLine: 125
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Sets the specified access to the specified files and directories, replacing the current state for the specified access with the new set of paths.
+  syntax:
+    content: public void SetPathList(FileIOPermissionAccess access, string[] pathList)
+    content.vb: Public Sub SetPathList(access As FileIOPermissionAccess, pathList As String())
+    parameters:
+    - id: access
+      type: System.Security.Permissions.FileIOPermissionAccess
+      description: A bitwise combination of the @'System.Security.Permissions.FileIOPermissionAccess' values.
+    - id: pathList
+      type: System.String[]
+      description: An array containing the absolute paths of the files and directories.
+  exceptions:
+  - type: System.ArgumentException
+    description: The *access* parameter is not a valid value of @'System.Security.Permissions.FileIOPermissionAccess'.-or- An entry in the *pathList* parameter is not a valid string.
+- uid: System.Security.Permissions.FileIOPermission.AddPathList(System.Security.Permissions.FileIOPermissionAccess,System.String)
+  id: AddPathList(System.Security.Permissions.FileIOPermissionAccess,System.String)
+  parent: System.Security.Permissions.FileIOPermission
+  href: System.Security.Permissions.FileIOPermission.yml
+  name: AddPathList(FileIOPermissionAccess, String)
+  fullName: System.Security.Permissions.FileIOPermission.AddPathList(System.Security.Permissions.FileIOPermissionAccess, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/FileIOPermission.cs
+    startLine: 172
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Adds access for the specified file or directory to the existing state of the permission.
+  syntax:
+    content: public void AddPathList(FileIOPermissionAccess access, string path)
+    content.vb: Public Sub AddPathList(access As FileIOPermissionAccess, path As String)
+    parameters:
+    - id: access
+      type: System.Security.Permissions.FileIOPermissionAccess
+      description: A bitwise combination of the @'System.Security.Permissions.FileIOPermissionAccess' values.
+    - id: path
+      type: System.String
+      description: The absolute path of a file or directory.
+  exceptions:
+  - type: System.ArgumentException
+    description: The *access* parameter is not a valid value of @'System.Security.Permissions.FileIOPermissionAccess'.-or- The *path* parameter is not a valid string.-or- The *path* parameter did not specify the absolute path to the file or directory.
+  - type: System.ArgumentNullException
+    description: The *path* parameter is null.
+  - type: System.NotSupportedException
+    description: The *path* parameter has an invalid format.
+- uid: System.Security.Permissions.FileIOPermission.AddPathList(System.Security.Permissions.FileIOPermissionAccess,System.String[])
+  id: AddPathList(System.Security.Permissions.FileIOPermissionAccess,System.String[])
+  parent: System.Security.Permissions.FileIOPermission
+  href: System.Security.Permissions.FileIOPermission.yml
+  name: AddPathList(FileIOPermissionAccess, String[])
+  name.vb: AddPathList(FileIOPermissionAccess, String())
+  fullName: System.Security.Permissions.FileIOPermission.AddPathList(System.Security.Permissions.FileIOPermissionAccess, System.String[])
+  fullName.vb: System.Security.Permissions.FileIOPermission.AddPathList(System.Security.Permissions.FileIOPermissionAccess, System.String())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/FileIOPermission.cs
+    startLine: 183
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Adds access for the specified files and directories to the existing state of the permission.
+  syntax:
+    content: public void AddPathList(FileIOPermissionAccess access, string[] pathList)
+    content.vb: Public Sub AddPathList(access As FileIOPermissionAccess, pathList As String())
+    parameters:
+    - id: access
+      type: System.Security.Permissions.FileIOPermissionAccess
+      description: A bitwise combination of the @'System.Security.Permissions.FileIOPermissionAccess' values.
+    - id: pathList
+      type: System.String[]
+      description: An array containing the absolute paths of the files and directories.
+  exceptions:
+  - type: System.ArgumentException
+    description: The *access* parameter is not a valid value of @'System.Security.Permissions.FileIOPermissionAccess'.-or- An entry in the *pathList* array is not valid.
+  - type: System.NotSupportedException
+    description: An entry in the *pathList* array has an invalid format.
+  - type: System.ArgumentNullException
+    description: The *pathList* parameter is null.
+- uid: System.Security.Permissions.FileIOPermission.GetPathList(System.Security.Permissions.FileIOPermissionAccess)
+  id: GetPathList(System.Security.Permissions.FileIOPermissionAccess)
+  parent: System.Security.Permissions.FileIOPermission
+  href: System.Security.Permissions.FileIOPermission.yml
+  name: GetPathList(FileIOPermissionAccess)
+  fullName: System.Security.Permissions.FileIOPermission.GetPathList(System.Security.Permissions.FileIOPermissionAccess)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/FileIOPermission.cs
+    startLine: 281
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Gets all files and directories with the specified @'System.Security.Permissions.FileIOPermissionAccess'.
+  syntax:
+    content: public string[] GetPathList(FileIOPermissionAccess access)
+    content.vb: Public Function GetPathList(access As FileIOPermissionAccess) As String()
+    parameters:
+    - id: access
+      type: System.Security.Permissions.FileIOPermissionAccess
+      description: One of the @'System.Security.Permissions.FileIOPermissionAccess' values that represents a single type of file access.
+    return:
+      type: System.String[]
+  exceptions:
+  - type: System.ArgumentException
+    description: '*access* is not a valid value of @''System.Security.Permissions.FileIOPermissionAccess''.-or- *access* is @''System.Security.Permissions.FileIOPermissionAccess.AllAccess'', which represents more than one type of file access, or @''System.Security.Permissions.FileIOPermissionAccess.NoAccess'', which does not represent any type of file access.'
+- uid: System.Security.Permissions.FileIOPermission.AllLocalFiles
+  id: AllLocalFiles
+  parent: System.Security.Permissions.FileIOPermission
+  href: System.Security.Permissions.FileIOPermission.yml
+  name: AllLocalFiles
+  fullName: System.Security.Permissions.FileIOPermission.AllLocalFiles
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/FileIOPermission.cs
+    startLine: 329
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Gets or sets the permitted access to all local files.
+  syntax:
+    content: public FileIOPermissionAccess AllLocalFiles { get; set; }
+    content.vb: Public Property AllLocalFiles As FileIOPermissionAccess
+    parameters: []
+    return:
+      type: System.Security.Permissions.FileIOPermissionAccess
+- uid: System.Security.Permissions.FileIOPermission.AllFiles
+  id: AllFiles
+  parent: System.Security.Permissions.FileIOPermission
+  href: System.Security.Permissions.FileIOPermission.yml
+  name: AllFiles
+  fullName: System.Security.Permissions.FileIOPermission.AllFiles
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/FileIOPermission.cs
+    startLine: 418
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Gets or sets the permitted access to all files.
+  syntax:
+    content: public FileIOPermissionAccess AllFiles { get; set; }
+    content.vb: Public Property AllFiles As FileIOPermissionAccess
+    parameters: []
+    return:
+      type: System.Security.Permissions.FileIOPermissionAccess
+- uid: System.Security.Permissions.FileIOPermission.IsUnrestricted
+  id: IsUnrestricted
+  parent: System.Security.Permissions.FileIOPermission
+  href: System.Security.Permissions.FileIOPermission.yml
+  name: IsUnrestricted()
+  fullName: System.Security.Permissions.FileIOPermission.IsUnrestricted()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/FileIOPermission.cs
+    startLine: 564
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Returns a value indicating whether the current permission is unrestricted.
+  syntax:
+    content: public bool IsUnrestricted()
+    content.vb: Public Function IsUnrestricted As Boolean
+    return:
+      type: System.Boolean
+- uid: System.Security.Permissions.FileIOPermission.IsSubsetOf(System.Security.IPermission)
+  id: IsSubsetOf(System.Security.IPermission)
+  parent: System.Security.Permissions.FileIOPermission
+  href: System.Security.Permissions.FileIOPermission.yml
+  name: IsSubsetOf(IPermission)
+  fullName: System.Security.Permissions.FileIOPermission.IsSubsetOf(System.Security.IPermission)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/FileIOPermission.cs
+    startLine: 575
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Determines whether the current permission is a subset of the specified permission.
+  syntax:
+    content: public override bool IsSubsetOf(IPermission target)
+    content.vb: Public Overrides Function IsSubsetOf(target As IPermission) As Boolean
+    parameters:
+    - id: target
+      type: System.Security.IPermission
+      description: A permission that is to be tested for the subset relationship. This permission must be the same type as the current permission.
+    return:
+      type: System.Boolean
+  overridden: System.Security.CodeAccessPermission.IsSubsetOf(System.Security.IPermission)
+  exceptions:
+  - type: System.ArgumentException
+    description: The *target* parameter is not null and is not of the same type as the current permission.
+- uid: System.Security.Permissions.FileIOPermission.Intersect(System.Security.IPermission)
+  id: Intersect(System.Security.IPermission)
+  parent: System.Security.Permissions.FileIOPermission
+  href: System.Security.Permissions.FileIOPermission.yml
+  name: Intersect(IPermission)
+  fullName: System.Security.Permissions.FileIOPermission.Intersect(System.Security.IPermission)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/FileIOPermission.cs
+    startLine: 599
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Creates and returns a permission that is the intersection of the current permission and the specified permission.
+  syntax:
+    content: public override IPermission Intersect(IPermission target)
+    content.vb: Public Overrides Function Intersect(target As IPermission) As IPermission
+    parameters:
+    - id: target
+      type: System.Security.IPermission
+      description: A permission to intersect with the current permission. It must be the same type as the current permission.
+    return:
+      type: System.Security.IPermission
+  overridden: System.Security.CodeAccessPermission.Intersect(System.Security.IPermission)
+  exceptions:
+  - type: System.ArgumentException
+    description: The *target* parameter is not null and is not of the same type as the current permission.
+- uid: System.Security.Permissions.FileIOPermission.Union(System.Security.IPermission)
+  id: Union(System.Security.IPermission)
+  parent: System.Security.Permissions.FileIOPermission
+  href: System.Security.Permissions.FileIOPermission.yml
+  name: Union(IPermission)
+  fullName: System.Security.Permissions.FileIOPermission.Union(System.Security.IPermission)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/FileIOPermission.cs
+    startLine: 651
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Creates a permission that is the union of the current permission and the specified permission.
+  syntax:
+    content: public override IPermission Union(IPermission other)
+    content.vb: Public Overrides Function Union(other As IPermission) As IPermission
+    parameters:
+    - id: other
+      type: System.Security.IPermission
+      description: A permission to combine with the current permission. It must be the same type as the current permission.
+    return:
+      type: System.Security.IPermission
+  overridden: System.Security.CodeAccessPermission.Union(System.Security.IPermission)
+  exceptions:
+  - type: System.ArgumentException
+    description: The *other* parameter is not null and is not of the same type as the current permission.
+- uid: System.Security.Permissions.FileIOPermission.Copy
+  id: Copy
+  parent: System.Security.Permissions.FileIOPermission
+  href: System.Security.Permissions.FileIOPermission.yml
+  name: Copy()
+  fullName: System.Security.Permissions.FileIOPermission.Copy()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/FileIOPermission.cs
+    startLine: 699
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Creates and returns an identical copy of the current permission.
+  syntax:
+    content: public override IPermission Copy()
+    content.vb: Public Overrides Function Copy As IPermission
+    return:
+      type: System.Security.IPermission
+  overridden: System.Security.CodeAccessPermission.Copy
+- uid: System.Security.Permissions.FileIOPermission.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Security.Permissions.FileIOPermission
+  href: System.Security.Permissions.FileIOPermission.yml
+  name: Equals(Object)
+  fullName: System.Security.Permissions.FileIOPermission.Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/FileIOPermission.cs
+    startLine: 865
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Determines whether the specified @'System.Security.Permissions.FileIOPermission' object is equal to the current @'System.Security.Permissions.FileIOPermission'.
+  syntax:
+    content: public override bool Equals(object obj)
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The @'System.Security.Permissions.FileIOPermission' object to compare with the current @'System.Security.Permissions.FileIOPermission'.
+    return:
+      type: System.Boolean
+  overridden: System.Security.CodeAccessPermission.Equals(System.Object)
+- uid: System.Security.Permissions.FileIOPermission.GetHashCode
+  id: GetHashCode
+  parent: System.Security.Permissions.FileIOPermission
+  href: System.Security.Permissions.FileIOPermission.yml
+  name: GetHashCode()
+  fullName: System.Security.Permissions.FileIOPermission.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/FileIOPermission.cs
+    startLine: 928
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Gets a hash code for the @'System.Security.Permissions.FileIOPermission' object that is suitable for use in hashing algorithms and data structures such as a hash table.
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+  overridden: System.Security.CodeAccessPermission.GetHashCode
+references:
+- uid: System.Security.Permissions
+  isExternal: false
+  name: System.Security.Permissions
+  fullName: System.Security.Permissions
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Security.CodeAccessPermission
+  isExternal: false
+  href: System.Security.CodeAccessPermission.yml
+  name: CodeAccessPermission
+  fullName: System.Security.CodeAccessPermission
+  type: Class
+- uid: System.Security.CodeAccessPermission.RevertAssert
+  parent: System.Security.CodeAccessPermission
+  isExternal: false
+  href: System.Security.CodeAccessPermission.yml
+  name: RevertAssert()
+  fullName: System.Security.CodeAccessPermission.RevertAssert()
+  spec.csharp:
+  - uid: System.Security.CodeAccessPermission.RevertAssert
+    name: RevertAssert
+    fullName: System.Security.CodeAccessPermission.RevertAssert
+    href: System.Security.CodeAccessPermission.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.CodeAccessPermission.RevertAssert
+    name: RevertAssert
+    fullName: System.Security.CodeAccessPermission.RevertAssert
+    href: System.Security.CodeAccessPermission.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Security.CodeAccessPermission.RevertDeny
+  parent: System.Security.CodeAccessPermission
+  isExternal: false
+  href: System.Security.CodeAccessPermission.yml
+  name: RevertDeny()
+  fullName: System.Security.CodeAccessPermission.RevertDeny()
+  spec.csharp:
+  - uid: System.Security.CodeAccessPermission.RevertDeny
+    name: RevertDeny
+    fullName: System.Security.CodeAccessPermission.RevertDeny
+    href: System.Security.CodeAccessPermission.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.CodeAccessPermission.RevertDeny
+    name: RevertDeny
+    fullName: System.Security.CodeAccessPermission.RevertDeny
+    href: System.Security.CodeAccessPermission.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Security.CodeAccessPermission.RevertPermitOnly
+  parent: System.Security.CodeAccessPermission
+  isExternal: false
+  href: System.Security.CodeAccessPermission.yml
+  name: RevertPermitOnly()
+  fullName: System.Security.CodeAccessPermission.RevertPermitOnly()
+  spec.csharp:
+  - uid: System.Security.CodeAccessPermission.RevertPermitOnly
+    name: RevertPermitOnly
+    fullName: System.Security.CodeAccessPermission.RevertPermitOnly
+    href: System.Security.CodeAccessPermission.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.CodeAccessPermission.RevertPermitOnly
+    name: RevertPermitOnly
+    fullName: System.Security.CodeAccessPermission.RevertPermitOnly
+    href: System.Security.CodeAccessPermission.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Security.CodeAccessPermission.RevertAll
+  parent: System.Security.CodeAccessPermission
+  isExternal: false
+  href: System.Security.CodeAccessPermission.yml
+  name: RevertAll()
+  fullName: System.Security.CodeAccessPermission.RevertAll()
+  spec.csharp:
+  - uid: System.Security.CodeAccessPermission.RevertAll
+    name: RevertAll
+    fullName: System.Security.CodeAccessPermission.RevertAll
+    href: System.Security.CodeAccessPermission.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.CodeAccessPermission.RevertAll
+    name: RevertAll
+    fullName: System.Security.CodeAccessPermission.RevertAll
+    href: System.Security.CodeAccessPermission.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Security.CodeAccessPermission.Demand
+  parent: System.Security.CodeAccessPermission
+  isExternal: false
+  href: System.Security.CodeAccessPermission.yml
+  name: Demand()
+  fullName: System.Security.CodeAccessPermission.Demand()
+  spec.csharp:
+  - uid: System.Security.CodeAccessPermission.Demand
+    name: Demand
+    fullName: System.Security.CodeAccessPermission.Demand
+    href: System.Security.CodeAccessPermission.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.CodeAccessPermission.Demand
+    name: Demand
+    fullName: System.Security.CodeAccessPermission.Demand
+    href: System.Security.CodeAccessPermission.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Security.CodeAccessPermission.Assert
+  parent: System.Security.CodeAccessPermission
+  isExternal: false
+  href: System.Security.CodeAccessPermission.yml
+  name: Assert()
+  fullName: System.Security.CodeAccessPermission.Assert()
+  spec.csharp:
+  - uid: System.Security.CodeAccessPermission.Assert
+    name: Assert
+    fullName: System.Security.CodeAccessPermission.Assert
+    href: System.Security.CodeAccessPermission.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.CodeAccessPermission.Assert
+    name: Assert
+    fullName: System.Security.CodeAccessPermission.Assert
+    href: System.Security.CodeAccessPermission.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Security.CodeAccessPermission.Deny
+  parent: System.Security.CodeAccessPermission
+  isExternal: false
+  href: System.Security.CodeAccessPermission.yml
+  name: Deny()
+  fullName: System.Security.CodeAccessPermission.Deny()
+  spec.csharp:
+  - uid: System.Security.CodeAccessPermission.Deny
+    name: Deny
+    fullName: System.Security.CodeAccessPermission.Deny
+    href: System.Security.CodeAccessPermission.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.CodeAccessPermission.Deny
+    name: Deny
+    fullName: System.Security.CodeAccessPermission.Deny
+    href: System.Security.CodeAccessPermission.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Security.CodeAccessPermission.PermitOnly
+  parent: System.Security.CodeAccessPermission
+  isExternal: false
+  href: System.Security.CodeAccessPermission.yml
+  name: PermitOnly()
+  fullName: System.Security.CodeAccessPermission.PermitOnly()
+  spec.csharp:
+  - uid: System.Security.CodeAccessPermission.PermitOnly
+    name: PermitOnly
+    fullName: System.Security.CodeAccessPermission.PermitOnly
+    href: System.Security.CodeAccessPermission.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.CodeAccessPermission.PermitOnly
+    name: PermitOnly
+    fullName: System.Security.CodeAccessPermission.PermitOnly
+    href: System.Security.CodeAccessPermission.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Security.Permissions.PermissionState
+  parent: System.Security.Permissions
+  isExternal: false
+  href: System.Security.Permissions.PermissionState.yml
+  name: PermissionState
+  fullName: System.Security.Permissions.PermissionState
+  type: Enum
+- uid: System.Security.Permissions.FileIOPermissionAccess
+  parent: System.Security.Permissions
+  isExternal: false
+  href: System.Security.Permissions.FileIOPermissionAccess.yml
+  name: FileIOPermissionAccess
+  fullName: System.Security.Permissions.FileIOPermissionAccess
+  type: Enum
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  name.vb: String()
+  fullName: System.String[]
+  fullName.vb: System.String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Security.CodeAccessPermission.IsSubsetOf(System.Security.IPermission)
+  parent: System.Security.CodeAccessPermission
+  isExternal: false
+  href: System.Security.CodeAccessPermission.yml
+  name: IsSubsetOf(IPermission)
+  fullName: System.Security.CodeAccessPermission.IsSubsetOf(System.Security.IPermission)
+  spec.csharp:
+  - uid: System.Security.CodeAccessPermission.IsSubsetOf(System.Security.IPermission)
+    name: IsSubsetOf
+    fullName: System.Security.CodeAccessPermission.IsSubsetOf
+    href: System.Security.CodeAccessPermission.yml
+  - name: (
+    fullName: (
+  - uid: System.Security.IPermission
+    name: IPermission
+    fullName: System.Security.IPermission
+    href: System.Security.IPermission.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.CodeAccessPermission.IsSubsetOf(System.Security.IPermission)
+    name: IsSubsetOf
+    fullName: System.Security.CodeAccessPermission.IsSubsetOf
+    href: System.Security.CodeAccessPermission.yml
+  - name: (
+    fullName: (
+  - uid: System.Security.IPermission
+    name: IPermission
+    fullName: System.Security.IPermission
+    href: System.Security.IPermission.yml
+  - name: )
+    fullName: )
+- uid: System.Security.IPermission
+  parent: System.Security
+  isExternal: false
+  href: System.Security.IPermission.yml
+  name: IPermission
+  fullName: System.Security.IPermission
+  type: Interface
+- uid: System.Security
+  isExternal: false
+  name: System.Security
+  fullName: System.Security
+  type: Namespace
+- uid: System.Security.CodeAccessPermission.Intersect(System.Security.IPermission)
+  parent: System.Security.CodeAccessPermission
+  isExternal: false
+  href: System.Security.CodeAccessPermission.yml
+  name: Intersect(IPermission)
+  fullName: System.Security.CodeAccessPermission.Intersect(System.Security.IPermission)
+  spec.csharp:
+  - uid: System.Security.CodeAccessPermission.Intersect(System.Security.IPermission)
+    name: Intersect
+    fullName: System.Security.CodeAccessPermission.Intersect
+    href: System.Security.CodeAccessPermission.yml
+  - name: (
+    fullName: (
+  - uid: System.Security.IPermission
+    name: IPermission
+    fullName: System.Security.IPermission
+    href: System.Security.IPermission.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.CodeAccessPermission.Intersect(System.Security.IPermission)
+    name: Intersect
+    fullName: System.Security.CodeAccessPermission.Intersect
+    href: System.Security.CodeAccessPermission.yml
+  - name: (
+    fullName: (
+  - uid: System.Security.IPermission
+    name: IPermission
+    fullName: System.Security.IPermission
+    href: System.Security.IPermission.yml
+  - name: )
+    fullName: )
+- uid: System.Security.CodeAccessPermission.Union(System.Security.IPermission)
+  parent: System.Security.CodeAccessPermission
+  isExternal: false
+  href: System.Security.CodeAccessPermission.yml
+  name: Union(IPermission)
+  fullName: System.Security.CodeAccessPermission.Union(System.Security.IPermission)
+  spec.csharp:
+  - uid: System.Security.CodeAccessPermission.Union(System.Security.IPermission)
+    name: Union
+    fullName: System.Security.CodeAccessPermission.Union
+    href: System.Security.CodeAccessPermission.yml
+  - name: (
+    fullName: (
+  - uid: System.Security.IPermission
+    name: IPermission
+    fullName: System.Security.IPermission
+    href: System.Security.IPermission.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.CodeAccessPermission.Union(System.Security.IPermission)
+    name: Union
+    fullName: System.Security.CodeAccessPermission.Union
+    href: System.Security.CodeAccessPermission.yml
+  - name: (
+    fullName: (
+  - uid: System.Security.IPermission
+    name: IPermission
+    fullName: System.Security.IPermission
+    href: System.Security.IPermission.yml
+  - name: )
+    fullName: )
+- uid: System.Security.CodeAccessPermission.Copy
+  parent: System.Security.CodeAccessPermission
+  isExternal: false
+  href: System.Security.CodeAccessPermission.yml
+  name: Copy()
+  fullName: System.Security.CodeAccessPermission.Copy()
+  spec.csharp:
+  - uid: System.Security.CodeAccessPermission.Copy
+    name: Copy
+    fullName: System.Security.CodeAccessPermission.Copy
+    href: System.Security.CodeAccessPermission.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.CodeAccessPermission.Copy
+    name: Copy
+    fullName: System.Security.CodeAccessPermission.Copy
+    href: System.Security.CodeAccessPermission.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Security.CodeAccessPermission.Equals(System.Object)
+  parent: System.Security.CodeAccessPermission
+  isExternal: false
+  href: System.Security.CodeAccessPermission.yml
+  name: Equals(Object)
+  fullName: System.Security.CodeAccessPermission.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Security.CodeAccessPermission.Equals(System.Object)
+    name: Equals
+    fullName: System.Security.CodeAccessPermission.Equals
+    href: System.Security.CodeAccessPermission.yml
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    href: System.Object.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.CodeAccessPermission.Equals(System.Object)
+    name: Equals
+    fullName: System.Security.CodeAccessPermission.Equals
+    href: System.Security.CodeAccessPermission.yml
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    href: System.Object.yml
+  - name: )
+    fullName: )
+- uid: System.Security.CodeAccessPermission.GetHashCode
+  parent: System.Security.CodeAccessPermission
+  isExternal: false
+  href: System.Security.CodeAccessPermission.yml
+  name: GetHashCode()
+  fullName: System.Security.CodeAccessPermission.GetHashCode()
+  spec.csharp:
+  - uid: System.Security.CodeAccessPermission.GetHashCode
+    name: GetHashCode
+    fullName: System.Security.CodeAccessPermission.GetHashCode
+    href: System.Security.CodeAccessPermission.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.CodeAccessPermission.GetHashCode
+    name: GetHashCode
+    fullName: System.Security.CodeAccessPermission.GetHashCode
+    href: System.Security.CodeAccessPermission.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32

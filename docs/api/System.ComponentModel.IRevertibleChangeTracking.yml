@@ -1,0 +1,91 @@
+items:
+- uid: System.ComponentModel.IRevertibleChangeTracking
+  id: IRevertibleChangeTracking
+  parent: System.ComponentModel
+  children:
+  - System.ComponentModel.IRevertibleChangeTracking.RejectChanges
+  href: System.ComponentModel.IRevertibleChangeTracking.yml
+  name: IRevertibleChangeTracking
+  fullName: System.ComponentModel.IRevertibleChangeTracking
+  type: Interface
+  source:
+    remote: &o0
+      path: src/System.ComponentModel/src/System/ComponentModel/IRevertibleChangeTracking.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.ComponentModel/src/System/ComponentModel/IRevertibleChangeTracking.cs
+    startLine: 10
+  assemblies:
+  - System.ComponentModel
+  namespace: System.ComponentModel
+  summary: Provides support for rolling back the changes
+  syntax:
+    content: 'public interface IRevertibleChangeTracking : IChangeTracking'
+    content.vb: Public Interface IRevertibleChangeTracking Inherits IChangeTracking
+  inheritedMembers:
+  - System.ComponentModel.IChangeTracking.IsChanged
+  - System.ComponentModel.IChangeTracking.AcceptChanges
+- uid: System.ComponentModel.IRevertibleChangeTracking.RejectChanges
+  id: RejectChanges
+  parent: System.ComponentModel.IRevertibleChangeTracking
+  href: System.ComponentModel.IRevertibleChangeTracking.yml
+  name: RejectChanges()
+  fullName: System.ComponentModel.IRevertibleChangeTracking.RejectChanges()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.ComponentModel/src/System/ComponentModel/IRevertibleChangeTracking.cs
+    startLine: 15
+  assemblies:
+  - System.ComponentModel
+  namespace: System.ComponentModel
+  summary: "Resets the object’s state to unchanged by rejecting the modifications."
+  syntax:
+    content: void RejectChanges()
+    content.vb: Sub RejectChanges
+references:
+- uid: System.ComponentModel
+  isExternal: false
+  name: System.ComponentModel
+  fullName: System.ComponentModel
+  type: Namespace
+- uid: System.ComponentModel.IChangeTracking.IsChanged
+  parent: System.ComponentModel.IChangeTracking
+  isExternal: false
+  href: System.ComponentModel.IChangeTracking.yml
+  name: IsChanged
+  fullName: System.ComponentModel.IChangeTracking.IsChanged
+- uid: System.ComponentModel.IChangeTracking.AcceptChanges
+  parent: System.ComponentModel.IChangeTracking
+  isExternal: false
+  href: System.ComponentModel.IChangeTracking.yml
+  name: AcceptChanges()
+  fullName: System.ComponentModel.IChangeTracking.AcceptChanges()
+  spec.csharp:
+  - uid: System.ComponentModel.IChangeTracking.AcceptChanges
+    name: AcceptChanges
+    fullName: System.ComponentModel.IChangeTracking.AcceptChanges
+    href: System.ComponentModel.IChangeTracking.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.IChangeTracking.AcceptChanges
+    name: AcceptChanges
+    fullName: System.ComponentModel.IChangeTracking.AcceptChanges
+    href: System.ComponentModel.IChangeTracking.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ComponentModel.IChangeTracking
+  isExternal: false
+  href: System.ComponentModel.IChangeTracking.yml
+  name: IChangeTracking
+  fullName: System.ComponentModel.IChangeTracking
+  type: Interface
+  summary: >-
+    Defines the mechanism for querying the object for changes and resetting of
+
+    the changed status.

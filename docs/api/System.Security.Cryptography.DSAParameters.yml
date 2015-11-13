@@ -1,0 +1,387 @@
+items:
+- uid: System.Security.Cryptography.DSAParameters
+  id: DSAParameters
+  parent: System.Security.Cryptography
+  children:
+  - System.Security.Cryptography.DSAParameters.Counter
+  - System.Security.Cryptography.DSAParameters.G
+  - System.Security.Cryptography.DSAParameters.J
+  - System.Security.Cryptography.DSAParameters.P
+  - System.Security.Cryptography.DSAParameters.Q
+  - System.Security.Cryptography.DSAParameters.Seed
+  - System.Security.Cryptography.DSAParameters.X
+  - System.Security.Cryptography.DSAParameters.Y
+  href: System.Security.Cryptography.DSAParameters.yml
+  name: DSAParameters
+  fullName: System.Security.Cryptography.DSAParameters
+  type: Struct
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Security/Cryptography/dsa.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Security/Cryptography/dsa.cs
+    startLine: 13
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: Contains the typical parameters for the @'System.Security.Cryptography.DSA' algorithm.
+  syntax:
+    content: public struct DSAParameters
+    content.vb: Public Structure DSAParameters
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.Security.Cryptography.DSAParameters.P
+  id: P
+  parent: System.Security.Cryptography.DSAParameters
+  href: System.Security.Cryptography.DSAParameters.yml
+  name: P
+  fullName: System.Security.Cryptography.DSAParameters.P
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/dsa.cs
+    startLine: 16
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: Specifies the P parameter for the @'System.Security.Cryptography.DSA' algorithm.
+  syntax:
+    content: public byte[] P
+    content.vb: Public P As Byte()
+- uid: System.Security.Cryptography.DSAParameters.Q
+  id: Q
+  parent: System.Security.Cryptography.DSAParameters
+  href: System.Security.Cryptography.DSAParameters.yml
+  name: Q
+  fullName: System.Security.Cryptography.DSAParameters.Q
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/dsa.cs
+    startLine: 17
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: Specifies the Q parameter for the @'System.Security.Cryptography.DSA' algorithm.
+  syntax:
+    content: public byte[] Q
+    content.vb: Public Q As Byte()
+- uid: System.Security.Cryptography.DSAParameters.G
+  id: G
+  parent: System.Security.Cryptography.DSAParameters
+  href: System.Security.Cryptography.DSAParameters.yml
+  name: G
+  fullName: System.Security.Cryptography.DSAParameters.G
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/dsa.cs
+    startLine: 18
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: Specifies the G parameter for the @'System.Security.Cryptography.DSA' algorithm.
+  syntax:
+    content: public byte[] G
+    content.vb: Public G As Byte()
+- uid: System.Security.Cryptography.DSAParameters.Y
+  id: Y
+  parent: System.Security.Cryptography.DSAParameters
+  href: System.Security.Cryptography.DSAParameters.yml
+  name: Y
+  fullName: System.Security.Cryptography.DSAParameters.Y
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/dsa.cs
+    startLine: 19
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: Specifies the Y parameter for the @'System.Security.Cryptography.DSA' algorithm.
+  syntax:
+    content: public byte[] Y
+    content.vb: Public Y As Byte()
+- uid: System.Security.Cryptography.DSAParameters.J
+  id: J
+  parent: System.Security.Cryptography.DSAParameters
+  href: System.Security.Cryptography.DSAParameters.yml
+  name: J
+  fullName: System.Security.Cryptography.DSAParameters.J
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/dsa.cs
+    startLine: 20
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: Specifies the J parameter for the @'System.Security.Cryptography.DSA' algorithm.
+  syntax:
+    content: public byte[] J
+    content.vb: Public J As Byte()
+- uid: System.Security.Cryptography.DSAParameters.X
+  id: X
+  parent: System.Security.Cryptography.DSAParameters
+  href: System.Security.Cryptography.DSAParameters.yml
+  name: X
+  fullName: System.Security.Cryptography.DSAParameters.X
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/dsa.cs
+    startLine: 21
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: Specifies the X parameter for the @'System.Security.Cryptography.DSA' algorithm.
+  syntax:
+    content: public byte[] X
+    content.vb: Public X As Byte()
+- uid: System.Security.Cryptography.DSAParameters.Seed
+  id: Seed
+  parent: System.Security.Cryptography.DSAParameters
+  href: System.Security.Cryptography.DSAParameters.yml
+  name: Seed
+  fullName: System.Security.Cryptography.DSAParameters.Seed
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/dsa.cs
+    startLine: 22
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: Specifies the seed for the @'System.Security.Cryptography.DSA' algorithm.
+  syntax:
+    content: public byte[] Seed
+    content.vb: Public Seed As Byte()
+- uid: System.Security.Cryptography.DSAParameters.Counter
+  id: Counter
+  parent: System.Security.Cryptography.DSAParameters
+  href: System.Security.Cryptography.DSAParameters.yml
+  name: Counter
+  fullName: System.Security.Cryptography.DSAParameters.Counter
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/dsa.cs
+    startLine: 23
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: Specifies the counter for the @'System.Security.Cryptography.DSA' algorithm.
+  syntax:
+    content: public int Counter
+    content.vb: Public Counter As Integer
+references:
+- uid: System.Security.Cryptography
+  isExternal: false
+  name: System.Security.Cryptography
+  fullName: System.Security.Cryptography
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

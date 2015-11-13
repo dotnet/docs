@@ -1,0 +1,547 @@
+items:
+- uid: System.Reflection.Metadata.MethodDefinition
+  id: MethodDefinition
+  parent: System.Reflection.Metadata
+  children:
+  - System.Reflection.Metadata.MethodDefinition.Attributes
+  - System.Reflection.Metadata.MethodDefinition.GetCustomAttributes
+  - System.Reflection.Metadata.MethodDefinition.GetDeclarativeSecurityAttributes
+  - System.Reflection.Metadata.MethodDefinition.GetDeclaringType
+  - System.Reflection.Metadata.MethodDefinition.GetGenericParameters
+  - System.Reflection.Metadata.MethodDefinition.GetImport
+  - System.Reflection.Metadata.MethodDefinition.GetParameters
+  - System.Reflection.Metadata.MethodDefinition.ImplAttributes
+  - System.Reflection.Metadata.MethodDefinition.Name
+  - System.Reflection.Metadata.MethodDefinition.RelativeVirtualAddress
+  - System.Reflection.Metadata.MethodDefinition.Signature
+  href: System.Reflection.Metadata.MethodDefinition.yml
+  name: MethodDefinition
+  fullName: System.Reflection.Metadata.MethodDefinition
+  type: Struct
+  source:
+    remote: &o0
+      path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/MethodDefinition.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/MethodDefinition.cs
+    startLine: 8
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public struct MethodDefinition
+    content.vb: Public Structure MethodDefinition
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.Reflection.Metadata.MethodDefinition.Name
+  id: Name
+  parent: System.Reflection.Metadata.MethodDefinition
+  href: System.Reflection.Metadata.MethodDefinition.yml
+  name: Name
+  fullName: System.Reflection.Metadata.MethodDefinition.Name
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/MethodDefinition.cs
+    startLine: 39
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public StringHandle Name { get; }
+    content.vb: Public ReadOnly Property Name As StringHandle
+    parameters: []
+    return:
+      type: System.Reflection.Metadata.StringHandle
+      description: 
+- uid: System.Reflection.Metadata.MethodDefinition.Signature
+  id: Signature
+  parent: System.Reflection.Metadata.MethodDefinition
+  href: System.Reflection.Metadata.MethodDefinition.yml
+  name: Signature
+  fullName: System.Reflection.Metadata.MethodDefinition.Signature
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/MethodDefinition.cs
+    startLine: 52
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public BlobHandle Signature { get; }
+    content.vb: Public ReadOnly Property Signature As BlobHandle
+    parameters: []
+    return:
+      type: System.Reflection.Metadata.BlobHandle
+      description: 
+- uid: System.Reflection.Metadata.MethodDefinition.RelativeVirtualAddress
+  id: RelativeVirtualAddress
+  parent: System.Reflection.Metadata.MethodDefinition
+  href: System.Reflection.Metadata.MethodDefinition.yml
+  name: RelativeVirtualAddress
+  fullName: System.Reflection.Metadata.MethodDefinition.RelativeVirtualAddress
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/MethodDefinition.cs
+    startLine: 65
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public int RelativeVirtualAddress { get; }
+    content.vb: Public ReadOnly Property RelativeVirtualAddress As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: 
+- uid: System.Reflection.Metadata.MethodDefinition.Attributes
+  id: Attributes
+  parent: System.Reflection.Metadata.MethodDefinition
+  href: System.Reflection.Metadata.MethodDefinition.yml
+  name: Attributes
+  fullName: System.Reflection.Metadata.MethodDefinition.Attributes
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/MethodDefinition.cs
+    startLine: 78
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public MethodAttributes Attributes { get; }
+    content.vb: Public ReadOnly Property Attributes As MethodAttributes
+    parameters: []
+    return:
+      type: System.Reflection.MethodAttributes
+      description: 
+- uid: System.Reflection.Metadata.MethodDefinition.ImplAttributes
+  id: ImplAttributes
+  parent: System.Reflection.Metadata.MethodDefinition
+  href: System.Reflection.Metadata.MethodDefinition.yml
+  name: ImplAttributes
+  fullName: System.Reflection.Metadata.MethodDefinition.ImplAttributes
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/MethodDefinition.cs
+    startLine: 91
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public MethodImplAttributes ImplAttributes { get; }
+    content.vb: Public ReadOnly Property ImplAttributes As MethodImplAttributes
+    parameters: []
+    return:
+      type: System.Reflection.MethodImplAttributes
+      description: 
+- uid: System.Reflection.Metadata.MethodDefinition.GetDeclaringType
+  id: GetDeclaringType
+  parent: System.Reflection.Metadata.MethodDefinition
+  href: System.Reflection.Metadata.MethodDefinition.yml
+  name: GetDeclaringType()
+  fullName: System.Reflection.Metadata.MethodDefinition.GetDeclaringType()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/MethodDefinition.cs
+    startLine: 104
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public TypeDefinitionHandle GetDeclaringType()
+    content.vb: Public Function GetDeclaringType As TypeDefinitionHandle
+    return:
+      type: System.Reflection.Metadata.TypeDefinitionHandle
+      description: 
+- uid: System.Reflection.Metadata.MethodDefinition.GetParameters
+  id: GetParameters
+  parent: System.Reflection.Metadata.MethodDefinition
+  href: System.Reflection.Metadata.MethodDefinition.yml
+  name: GetParameters()
+  fullName: System.Reflection.Metadata.MethodDefinition.GetParameters()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/MethodDefinition.cs
+    startLine: 109
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public ParameterHandleCollection GetParameters()
+    content.vb: Public Function GetParameters As ParameterHandleCollection
+    return:
+      type: System.Reflection.Metadata.ParameterHandleCollection
+      description: 
+- uid: System.Reflection.Metadata.MethodDefinition.GetGenericParameters
+  id: GetGenericParameters
+  parent: System.Reflection.Metadata.MethodDefinition
+  href: System.Reflection.Metadata.MethodDefinition.yml
+  name: GetGenericParameters()
+  fullName: System.Reflection.Metadata.MethodDefinition.GetGenericParameters()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/MethodDefinition.cs
+    startLine: 114
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public GenericParameterHandleCollection GetGenericParameters()
+    content.vb: Public Function GetGenericParameters As GenericParameterHandleCollection
+    return:
+      type: System.Reflection.Metadata.GenericParameterHandleCollection
+      description: 
+- uid: System.Reflection.Metadata.MethodDefinition.GetImport
+  id: GetImport
+  parent: System.Reflection.Metadata.MethodDefinition
+  href: System.Reflection.Metadata.MethodDefinition.yml
+  name: GetImport()
+  fullName: System.Reflection.Metadata.MethodDefinition.GetImport()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/MethodDefinition.cs
+    startLine: 119
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public MethodImport GetImport()
+    content.vb: Public Function GetImport As MethodImport
+    return:
+      type: System.Reflection.Metadata.MethodImport
+      description: 
+- uid: System.Reflection.Metadata.MethodDefinition.GetCustomAttributes
+  id: GetCustomAttributes
+  parent: System.Reflection.Metadata.MethodDefinition
+  href: System.Reflection.Metadata.MethodDefinition.yml
+  name: GetCustomAttributes()
+  fullName: System.Reflection.Metadata.MethodDefinition.GetCustomAttributes()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/MethodDefinition.cs
+    startLine: 130
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public CustomAttributeHandleCollection GetCustomAttributes()
+    content.vb: Public Function GetCustomAttributes As CustomAttributeHandleCollection
+    return:
+      type: System.Reflection.Metadata.CustomAttributeHandleCollection
+      description: 
+- uid: System.Reflection.Metadata.MethodDefinition.GetDeclarativeSecurityAttributes
+  id: GetDeclarativeSecurityAttributes
+  parent: System.Reflection.Metadata.MethodDefinition
+  href: System.Reflection.Metadata.MethodDefinition.yml
+  name: GetDeclarativeSecurityAttributes()
+  fullName: System.Reflection.Metadata.MethodDefinition.GetDeclarativeSecurityAttributes()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/MethodDefinition.cs
+    startLine: 135
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public DeclarativeSecurityAttributeHandleCollection GetDeclarativeSecurityAttributes()
+    content.vb: Public Function GetDeclarativeSecurityAttributes As DeclarativeSecurityAttributeHandleCollection
+    return:
+      type: System.Reflection.Metadata.DeclarativeSecurityAttributeHandleCollection
+      description: 
+references:
+- uid: System.Reflection.Metadata
+  isExternal: false
+  name: System.Reflection.Metadata
+  fullName: System.Reflection.Metadata
+  type: Namespace
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Reflection.Metadata.StringHandle
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.StringHandle.yml
+  name: StringHandle
+  fullName: System.Reflection.Metadata.StringHandle
+  type: Struct
+- uid: System.Reflection.Metadata.BlobHandle
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.BlobHandle.yml
+  name: BlobHandle
+  fullName: System.Reflection.Metadata.BlobHandle
+  type: Struct
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Reflection.MethodAttributes
+  parent: System.Reflection
+  isExternal: true
+  name: MethodAttributes
+  fullName: System.Reflection.MethodAttributes
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace
+- uid: System.Reflection.MethodImplAttributes
+  parent: System.Reflection
+  isExternal: true
+  name: MethodImplAttributes
+  fullName: System.Reflection.MethodImplAttributes
+- uid: System.Reflection.Metadata.TypeDefinitionHandle
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.TypeDefinitionHandle.yml
+  name: TypeDefinitionHandle
+  fullName: System.Reflection.Metadata.TypeDefinitionHandle
+  type: Struct
+- uid: System.Reflection.Metadata.ParameterHandleCollection
+  isExternal: false
+  href: System.Reflection.Metadata.ParameterHandleCollection.yml
+  name: ParameterHandleCollection
+  fullName: System.Reflection.Metadata.ParameterHandleCollection
+  type: Struct
+  summary: Collection of parameters of a specified method.
+- uid: System.Reflection.Metadata.GenericParameterHandleCollection
+  isExternal: false
+  href: System.Reflection.Metadata.GenericParameterHandleCollection.yml
+  name: GenericParameterHandleCollection
+  fullName: System.Reflection.Metadata.GenericParameterHandleCollection
+  type: Struct
+  summary: Represents generic type parameters of a method or type.
+- uid: System.Reflection.Metadata.MethodImport
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.MethodImport.yml
+  name: MethodImport
+  fullName: System.Reflection.Metadata.MethodImport
+  type: Struct
+- uid: System.Reflection.Metadata.CustomAttributeHandleCollection
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.CustomAttributeHandleCollection.yml
+  name: CustomAttributeHandleCollection
+  fullName: System.Reflection.Metadata.CustomAttributeHandleCollection
+  type: Struct
+- uid: System.Reflection.Metadata.DeclarativeSecurityAttributeHandleCollection
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.DeclarativeSecurityAttributeHandleCollection.yml
+  name: DeclarativeSecurityAttributeHandleCollection
+  fullName: System.Reflection.Metadata.DeclarativeSecurityAttributeHandleCollection
+  type: Struct

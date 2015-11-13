@@ -1,0 +1,461 @@
+items:
+- uid: System.Reflection.MethodAttributes
+  id: MethodAttributes
+  parent: System.Reflection
+  children:
+  - System.Reflection.MethodAttributes.Abstract
+  - System.Reflection.MethodAttributes.Assembly
+  - System.Reflection.MethodAttributes.CheckAccessOnOverride
+  - System.Reflection.MethodAttributes.FamANDAssem
+  - System.Reflection.MethodAttributes.Family
+  - System.Reflection.MethodAttributes.FamORAssem
+  - System.Reflection.MethodAttributes.Final
+  - System.Reflection.MethodAttributes.HasSecurity
+  - System.Reflection.MethodAttributes.HideBySig
+  - System.Reflection.MethodAttributes.MemberAccessMask
+  - System.Reflection.MethodAttributes.NewSlot
+  - System.Reflection.MethodAttributes.PinvokeImpl
+  - System.Reflection.MethodAttributes.Private
+  - System.Reflection.MethodAttributes.PrivateScope
+  - System.Reflection.MethodAttributes.Public
+  - System.Reflection.MethodAttributes.RequireSecObject
+  - System.Reflection.MethodAttributes.ReservedMask
+  - System.Reflection.MethodAttributes.ReuseSlot
+  - System.Reflection.MethodAttributes.RTSpecialName
+  - System.Reflection.MethodAttributes.SpecialName
+  - System.Reflection.MethodAttributes.Static
+  - System.Reflection.MethodAttributes.UnmanagedExport
+  - System.Reflection.MethodAttributes.Virtual
+  - System.Reflection.MethodAttributes.VtableLayoutMask
+  href: System.Reflection.MethodAttributes.yml
+  name: MethodAttributes
+  fullName: System.Reflection.MethodAttributes
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Reflection/MethodAttributes.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Reflection/MethodAttributes.cs
+    startLine: 9
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies flags for method attributes. These flags are defined in the corhdr.h file.
+  syntax:
+    content: public enum MethodAttributes
+    content.vb: Public Enum MethodAttributes
+- uid: System.Reflection.MethodAttributes.MemberAccessMask
+  id: MemberAccessMask
+  parent: System.Reflection.MethodAttributes
+  href: System.Reflection.MethodAttributes.yml
+  name: MemberAccessMask
+  fullName: System.Reflection.MethodAttributes.MemberAccessMask
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodAttributes.cs
+    startLine: 17
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Retrieves accessibility information.
+  syntax:
+    content: MemberAccessMask = 7
+- uid: System.Reflection.MethodAttributes.PrivateScope
+  id: PrivateScope
+  parent: System.Reflection.MethodAttributes
+  href: System.Reflection.MethodAttributes.yml
+  name: PrivateScope
+  fullName: System.Reflection.MethodAttributes.PrivateScope
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodAttributes.cs
+    startLine: 18
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Indicates that the member cannot be referenced.
+  syntax:
+    content: PrivateScope = 0
+- uid: System.Reflection.MethodAttributes.Private
+  id: Private
+  parent: System.Reflection.MethodAttributes
+  href: System.Reflection.MethodAttributes.yml
+  name: Private
+  fullName: System.Reflection.MethodAttributes.Private
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodAttributes.cs
+    startLine: 19
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Indicates that the method is accessible only to the current class.
+  syntax:
+    content: Private = 1
+- uid: System.Reflection.MethodAttributes.FamANDAssem
+  id: FamANDAssem
+  parent: System.Reflection.MethodAttributes
+  href: System.Reflection.MethodAttributes.yml
+  name: FamANDAssem
+  fullName: System.Reflection.MethodAttributes.FamANDAssem
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodAttributes.cs
+    startLine: 20
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Indicates that the method is accessible to members of this type and its derived types that are in this assembly only.
+  syntax:
+    content: FamANDAssem = 2
+- uid: System.Reflection.MethodAttributes.Assembly
+  id: Assembly
+  parent: System.Reflection.MethodAttributes
+  href: System.Reflection.MethodAttributes.yml
+  name: Assembly
+  fullName: System.Reflection.MethodAttributes.Assembly
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodAttributes.cs
+    startLine: 21
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Indicates that the method is accessible to any class of this assembly.
+  syntax:
+    content: Assembly = 3
+- uid: System.Reflection.MethodAttributes.Family
+  id: Family
+  parent: System.Reflection.MethodAttributes
+  href: System.Reflection.MethodAttributes.yml
+  name: Family
+  fullName: System.Reflection.MethodAttributes.Family
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodAttributes.cs
+    startLine: 22
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Indicates that the method is accessible only to members of this class and its derived classes.
+  syntax:
+    content: Family = 4
+- uid: System.Reflection.MethodAttributes.FamORAssem
+  id: FamORAssem
+  parent: System.Reflection.MethodAttributes
+  href: System.Reflection.MethodAttributes.yml
+  name: FamORAssem
+  fullName: System.Reflection.MethodAttributes.FamORAssem
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodAttributes.cs
+    startLine: 23
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Indicates that the method is accessible to derived classes anywhere, as well as to any class in the assembly.
+  syntax:
+    content: FamORAssem = 5
+- uid: System.Reflection.MethodAttributes.Public
+  id: Public
+  parent: System.Reflection.MethodAttributes
+  href: System.Reflection.MethodAttributes.yml
+  name: Public
+  fullName: System.Reflection.MethodAttributes.Public
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodAttributes.cs
+    startLine: 24
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Indicates that the method is accessible to any object for which this object is in scope.
+  syntax:
+    content: Public = 6
+- uid: System.Reflection.MethodAttributes.Static
+  id: Static
+  parent: System.Reflection.MethodAttributes
+  href: System.Reflection.MethodAttributes.yml
+  name: Static
+  fullName: System.Reflection.MethodAttributes.Static
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodAttributes.cs
+    startLine: 28
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Indicates that the method is defined on the type; otherwise, it is defined per instance.
+  syntax:
+    content: Static = 16
+- uid: System.Reflection.MethodAttributes.Final
+  id: Final
+  parent: System.Reflection.MethodAttributes
+  href: System.Reflection.MethodAttributes.yml
+  name: Final
+  fullName: System.Reflection.MethodAttributes.Final
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodAttributes.cs
+    startLine: 29
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Indicates that the method cannot be overridden.
+  syntax:
+    content: Final = 32
+- uid: System.Reflection.MethodAttributes.Virtual
+  id: Virtual
+  parent: System.Reflection.MethodAttributes
+  href: System.Reflection.MethodAttributes.yml
+  name: Virtual
+  fullName: System.Reflection.MethodAttributes.Virtual
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodAttributes.cs
+    startLine: 30
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Indicates that the method is virtual.
+  syntax:
+    content: Virtual = 64
+- uid: System.Reflection.MethodAttributes.HideBySig
+  id: HideBySig
+  parent: System.Reflection.MethodAttributes
+  href: System.Reflection.MethodAttributes.yml
+  name: HideBySig
+  fullName: System.Reflection.MethodAttributes.HideBySig
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodAttributes.cs
+    startLine: 31
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Indicates that the method hides by name and signature; otherwise, by name only.
+  syntax:
+    content: HideBySig = 128
+- uid: System.Reflection.MethodAttributes.CheckAccessOnOverride
+  id: CheckAccessOnOverride
+  parent: System.Reflection.MethodAttributes
+  href: System.Reflection.MethodAttributes.yml
+  name: CheckAccessOnOverride
+  fullName: System.Reflection.MethodAttributes.CheckAccessOnOverride
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodAttributes.cs
+    startLine: 32
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Indicates that the method can only be overridden when it is also accessible.
+  syntax:
+    content: CheckAccessOnOverride = 512
+- uid: System.Reflection.MethodAttributes.VtableLayoutMask
+  id: VtableLayoutMask
+  parent: System.Reflection.MethodAttributes
+  href: System.Reflection.MethodAttributes.yml
+  name: VtableLayoutMask
+  fullName: System.Reflection.MethodAttributes.VtableLayoutMask
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodAttributes.cs
+    startLine: 35
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Retrieves vtable attributes.
+  syntax:
+    content: VtableLayoutMask = 256
+- uid: System.Reflection.MethodAttributes.ReuseSlot
+  id: ReuseSlot
+  parent: System.Reflection.MethodAttributes
+  href: System.Reflection.MethodAttributes.yml
+  name: ReuseSlot
+  fullName: System.Reflection.MethodAttributes.ReuseSlot
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodAttributes.cs
+    startLine: 36
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Indicates that the method will reuse an existing slot in the vtable. This is the default behavior.
+  syntax:
+    content: ReuseSlot = 0
+- uid: System.Reflection.MethodAttributes.NewSlot
+  id: NewSlot
+  parent: System.Reflection.MethodAttributes
+  href: System.Reflection.MethodAttributes.yml
+  name: NewSlot
+  fullName: System.Reflection.MethodAttributes.NewSlot
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodAttributes.cs
+    startLine: 37
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Indicates that the method always gets a new slot in the vtable.
+  syntax:
+    content: NewSlot = 256
+- uid: System.Reflection.MethodAttributes.Abstract
+  id: Abstract
+  parent: System.Reflection.MethodAttributes
+  href: System.Reflection.MethodAttributes.yml
+  name: Abstract
+  fullName: System.Reflection.MethodAttributes.Abstract
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodAttributes.cs
+    startLine: 41
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Indicates that the class does not provide an implementation of this method.
+  syntax:
+    content: Abstract = 1024
+- uid: System.Reflection.MethodAttributes.SpecialName
+  id: SpecialName
+  parent: System.Reflection.MethodAttributes
+  href: System.Reflection.MethodAttributes.yml
+  name: SpecialName
+  fullName: System.Reflection.MethodAttributes.SpecialName
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodAttributes.cs
+    startLine: 42
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Indicates that the method is special. The name describes how this method is special.
+  syntax:
+    content: SpecialName = 2048
+- uid: System.Reflection.MethodAttributes.PinvokeImpl
+  id: PinvokeImpl
+  parent: System.Reflection.MethodAttributes
+  href: System.Reflection.MethodAttributes.yml
+  name: PinvokeImpl
+  fullName: System.Reflection.MethodAttributes.PinvokeImpl
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodAttributes.cs
+    startLine: 45
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Indicates that the method implementation is forwarded through PInvoke (Platform Invocation Services).
+  syntax:
+    content: PinvokeImpl = 8192
+- uid: System.Reflection.MethodAttributes.UnmanagedExport
+  id: UnmanagedExport
+  parent: System.Reflection.MethodAttributes
+  href: System.Reflection.MethodAttributes.yml
+  name: UnmanagedExport
+  fullName: System.Reflection.MethodAttributes.UnmanagedExport
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodAttributes.cs
+    startLine: 46
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Indicates that the managed method is exported by thunk to unmanaged code.
+  syntax:
+    content: UnmanagedExport = 8
+- uid: System.Reflection.MethodAttributes.RTSpecialName
+  id: RTSpecialName
+  parent: System.Reflection.MethodAttributes
+  href: System.Reflection.MethodAttributes.yml
+  name: RTSpecialName
+  fullName: System.Reflection.MethodAttributes.RTSpecialName
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodAttributes.cs
+    startLine: 47
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Indicates that the common language runtime checks the name encoding.
+  syntax:
+    content: RTSpecialName = 4096
+- uid: System.Reflection.MethodAttributes.ReservedMask
+  id: ReservedMask
+  parent: System.Reflection.MethodAttributes
+  href: System.Reflection.MethodAttributes.yml
+  name: ReservedMask
+  fullName: System.Reflection.MethodAttributes.ReservedMask
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodAttributes.cs
+    startLine: 50
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Indicates a reserved flag for runtime use only.
+  syntax:
+    content: ReservedMask = 53248
+- uid: System.Reflection.MethodAttributes.HasSecurity
+  id: HasSecurity
+  parent: System.Reflection.MethodAttributes
+  href: System.Reflection.MethodAttributes.yml
+  name: HasSecurity
+  fullName: System.Reflection.MethodAttributes.HasSecurity
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodAttributes.cs
+    startLine: 51
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Indicates that the method has security associated with it. Reserved flag for runtime use only.
+  syntax:
+    content: HasSecurity = 16384
+- uid: System.Reflection.MethodAttributes.RequireSecObject
+  id: RequireSecObject
+  parent: System.Reflection.MethodAttributes
+  href: System.Reflection.MethodAttributes.yml
+  name: RequireSecObject
+  fullName: System.Reflection.MethodAttributes.RequireSecObject
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodAttributes.cs
+    startLine: 52
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Indicates that the method calls another method containing security code. Reserved flag for runtime use only.
+  syntax:
+    content: RequireSecObject = 32768
+references:
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace

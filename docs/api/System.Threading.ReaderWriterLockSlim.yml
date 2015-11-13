@@ -1,0 +1,916 @@
+items:
+- uid: System.Threading.ReaderWriterLockSlim
+  id: ReaderWriterLockSlim
+  parent: System.Threading
+  children:
+  - System.Threading.ReaderWriterLockSlim.#ctor
+  - System.Threading.ReaderWriterLockSlim.#ctor(System.Threading.LockRecursionPolicy)
+  - System.Threading.ReaderWriterLockSlim.CurrentReadCount
+  - System.Threading.ReaderWriterLockSlim.Dispose
+  - System.Threading.ReaderWriterLockSlim.EnterReadLock
+  - System.Threading.ReaderWriterLockSlim.EnterUpgradeableReadLock
+  - System.Threading.ReaderWriterLockSlim.EnterWriteLock
+  - System.Threading.ReaderWriterLockSlim.ExitReadLock
+  - System.Threading.ReaderWriterLockSlim.ExitUpgradeableReadLock
+  - System.Threading.ReaderWriterLockSlim.ExitWriteLock
+  - System.Threading.ReaderWriterLockSlim.IsReadLockHeld
+  - System.Threading.ReaderWriterLockSlim.IsUpgradeableReadLockHeld
+  - System.Threading.ReaderWriterLockSlim.IsWriteLockHeld
+  - System.Threading.ReaderWriterLockSlim.RecursionPolicy
+  - System.Threading.ReaderWriterLockSlim.RecursiveReadCount
+  - System.Threading.ReaderWriterLockSlim.RecursiveUpgradeCount
+  - System.Threading.ReaderWriterLockSlim.RecursiveWriteCount
+  - System.Threading.ReaderWriterLockSlim.TryEnterReadLock(System.Int32)
+  - System.Threading.ReaderWriterLockSlim.TryEnterReadLock(System.TimeSpan)
+  - System.Threading.ReaderWriterLockSlim.TryEnterUpgradeableReadLock(System.Int32)
+  - System.Threading.ReaderWriterLockSlim.TryEnterUpgradeableReadLock(System.TimeSpan)
+  - System.Threading.ReaderWriterLockSlim.TryEnterWriteLock(System.Int32)
+  - System.Threading.ReaderWriterLockSlim.TryEnterWriteLock(System.TimeSpan)
+  - System.Threading.ReaderWriterLockSlim.WaitingReadCount
+  - System.Threading.ReaderWriterLockSlim.WaitingUpgradeCount
+  - System.Threading.ReaderWriterLockSlim.WaitingWriteCount
+  href: System.Threading.ReaderWriterLockSlim.yml
+  name: ReaderWriterLockSlim
+  fullName: System.Threading.ReaderWriterLockSlim
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Threading/src/System/Threading/ReaderWriterLockSlim.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Threading/src/System/Threading/ReaderWriterLockSlim.cs
+    startLine: 52
+  assemblies:
+  - System.Threading.CoreCLR
+  namespace: System.Threading
+  summary: Represents a lock that is used to manage access to a resource, allowing multiple threads for reading or exclusive access for writing.
+  syntax:
+    content: 'public class ReaderWriterLockSlim : IDisposable'
+    content.vb: Public Class ReaderWriterLockSlim Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Threading.ReaderWriterLockSlim.#ctor
+  id: '#ctor'
+  parent: System.Threading.ReaderWriterLockSlim
+  href: System.Threading.ReaderWriterLockSlim.yml
+  name: ReaderWriterLockSlim()
+  fullName: System.Threading.ReaderWriterLockSlim.ReaderWriterLockSlim()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Threading/src/System/Threading/ReaderWriterLockSlim.cs
+    startLine: 134
+  assemblies:
+  - System.Threading.CoreCLR
+  namespace: System.Threading
+  summary: Initializes a new instance of the @'System.Threading.ReaderWriterLockSlim' class with default property values.
+  syntax:
+    content: public ReaderWriterLockSlim()
+    content.vb: Public Sub New
+- uid: System.Threading.ReaderWriterLockSlim.#ctor(System.Threading.LockRecursionPolicy)
+  id: '#ctor(System.Threading.LockRecursionPolicy)'
+  parent: System.Threading.ReaderWriterLockSlim
+  href: System.Threading.ReaderWriterLockSlim.yml
+  name: ReaderWriterLockSlim(LockRecursionPolicy)
+  fullName: System.Threading.ReaderWriterLockSlim.ReaderWriterLockSlim(System.Threading.LockRecursionPolicy)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Threading/src/System/Threading/ReaderWriterLockSlim.cs
+    startLine: 139
+  assemblies:
+  - System.Threading.CoreCLR
+  namespace: System.Threading
+  summary: Initializes a new instance of the @'System.Threading.ReaderWriterLockSlim' class, specifying the lock recursion policy.
+  syntax:
+    content: public ReaderWriterLockSlim(LockRecursionPolicy recursionPolicy)
+    content.vb: Public Sub New(recursionPolicy As LockRecursionPolicy)
+    parameters:
+    - id: recursionPolicy
+      type: System.Threading.LockRecursionPolicy
+      description: One of the enumeration values that specifies the lock recursion policy.
+- uid: System.Threading.ReaderWriterLockSlim.EnterReadLock
+  id: EnterReadLock
+  parent: System.Threading.ReaderWriterLockSlim
+  href: System.Threading.ReaderWriterLockSlim.yml
+  name: EnterReadLock()
+  fullName: System.Threading.ReaderWriterLockSlim.EnterReadLock()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading/src/System/Threading/ReaderWriterLockSlim.cs
+    startLine: 204
+  assemblies:
+  - System.Threading.CoreCLR
+  namespace: System.Threading
+  summary: Tries to enter the lock in read mode.
+  syntax:
+    content: public void EnterReadLock()
+    content.vb: Public Sub EnterReadLock
+  exceptions:
+  - type: System.Threading.LockRecursionException
+    description: The @'System.Threading.ReaderWriterLockSlim.RecursionPolicy' property is @'System.Threading.LockRecursionPolicy.NoRecursion' and the current thread has already entered read mode. -or-The current thread may not acquire the read lock when it already holds the write lock. -or-The recursion number would exceed the capacity of the counter. This limit is so large that applications should never encounter it.
+  - type: System.ObjectDisposedException
+    description: The @'System.Threading.ReaderWriterLockSlim' object has been disposed.
+- uid: System.Threading.ReaderWriterLockSlim.TryEnterReadLock(System.TimeSpan)
+  id: TryEnterReadLock(System.TimeSpan)
+  parent: System.Threading.ReaderWriterLockSlim
+  href: System.Threading.ReaderWriterLockSlim.yml
+  name: TryEnterReadLock(TimeSpan)
+  fullName: System.Threading.ReaderWriterLockSlim.TryEnterReadLock(System.TimeSpan)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading/src/System/Threading/ReaderWriterLockSlim.cs
+    startLine: 265
+  assemblies:
+  - System.Threading.CoreCLR
+  namespace: System.Threading
+  summary: Tries to enter the lock in read mode, with an optional time-out.
+  syntax:
+    content: public bool TryEnterReadLock(TimeSpan timeout)
+    content.vb: Public Function TryEnterReadLock(timeout As TimeSpan) As Boolean
+    parameters:
+    - id: timeout
+      type: System.TimeSpan
+      description: The interval to wait, or -1 milliseconds to wait indefinitely.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.Threading.LockRecursionException
+    description: The @'System.Threading.ReaderWriterLockSlim.RecursionPolicy' property is @'System.Threading.LockRecursionPolicy.NoRecursion' and the current thread has already entered the lock. -or-The recursion number would exceed the capacity of the counter. The limit is so large that applications should never encounter it.
+  - type: System.ArgumentOutOfRangeException
+    description: The value of *timeout* is negative, but it is not equal to -1 milliseconds, which is the only negative value allowed.-or-The value of *timeout* is greater than @'System.Int32.MaxValue' milliseconds.
+  - type: System.ObjectDisposedException
+    description: The @'System.Threading.ReaderWriterLockSlim' object has been disposed.
+- uid: System.Threading.ReaderWriterLockSlim.TryEnterReadLock(System.Int32)
+  id: TryEnterReadLock(System.Int32)
+  parent: System.Threading.ReaderWriterLockSlim
+  href: System.Threading.ReaderWriterLockSlim.yml
+  name: TryEnterReadLock(Int32)
+  fullName: System.Threading.ReaderWriterLockSlim.TryEnterReadLock(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading/src/System/Threading/ReaderWriterLockSlim.cs
+    startLine: 270
+  assemblies:
+  - System.Threading.CoreCLR
+  namespace: System.Threading
+  summary: Tries to enter the lock in read mode, with an optional integer time-out.
+  syntax:
+    content: public bool TryEnterReadLock(int millisecondsTimeout)
+    content.vb: Public Function TryEnterReadLock(millisecondsTimeout As Integer) As Boolean
+    parameters:
+    - id: millisecondsTimeout
+      type: System.Int32
+      description: The number of milliseconds to wait, or -1 (@'System.Threading.Timeout.Infinite') to wait indefinitely.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.Threading.LockRecursionException
+    description: The @'System.Threading.ReaderWriterLockSlim.RecursionPolicy' property is @'System.Threading.LockRecursionPolicy.NoRecursion' and the current thread has already entered the lock. -or-The recursion number would exceed the capacity of the counter. The limit is so large that applications should never encounter it.
+  - type: System.ArgumentOutOfRangeException
+    description: The value of *millisecondsTimeout* is negative, but it is not equal to @'System.Threading.Timeout.Infinite' (-1), which is the only negative value allowed.
+  - type: System.ObjectDisposedException
+    description: The @'System.Threading.ReaderWriterLockSlim' object has been disposed.
+- uid: System.Threading.ReaderWriterLockSlim.EnterWriteLock
+  id: EnterWriteLock
+  parent: System.Threading.ReaderWriterLockSlim
+  href: System.Threading.ReaderWriterLockSlim.yml
+  name: EnterWriteLock()
+  fullName: System.Threading.ReaderWriterLockSlim.EnterWriteLock()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading/src/System/Threading/ReaderWriterLockSlim.cs
+    startLine: 404
+  assemblies:
+  - System.Threading.CoreCLR
+  namespace: System.Threading
+  summary: Tries to enter the lock in write mode.
+  syntax:
+    content: public void EnterWriteLock()
+    content.vb: Public Sub EnterWriteLock
+  exceptions:
+  - type: System.Threading.LockRecursionException
+    description: The @'System.Threading.ReaderWriterLockSlim.RecursionPolicy' property is @'System.Threading.LockRecursionPolicy.NoRecursion' and the current thread has already entered the lock in any mode. -or-The current thread has entered read mode, so trying to enter the lock in write mode would create the possibility of a deadlock. -or-The recursion number would exceed the capacity of the counter. The limit is so large that applications should never encounter it.
+  - type: System.ObjectDisposedException
+    description: The @'System.Threading.ReaderWriterLockSlim' object has been disposed.
+- uid: System.Threading.ReaderWriterLockSlim.TryEnterWriteLock(System.TimeSpan)
+  id: TryEnterWriteLock(System.TimeSpan)
+  parent: System.Threading.ReaderWriterLockSlim
+  href: System.Threading.ReaderWriterLockSlim.yml
+  name: TryEnterWriteLock(TimeSpan)
+  fullName: System.Threading.ReaderWriterLockSlim.TryEnterWriteLock(System.TimeSpan)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading/src/System/Threading/ReaderWriterLockSlim.cs
+    startLine: 409
+  assemblies:
+  - System.Threading.CoreCLR
+  namespace: System.Threading
+  summary: Tries to enter the lock in write mode, with an optional time-out.
+  syntax:
+    content: public bool TryEnterWriteLock(TimeSpan timeout)
+    content.vb: Public Function TryEnterWriteLock(timeout As TimeSpan) As Boolean
+    parameters:
+    - id: timeout
+      type: System.TimeSpan
+      description: The interval to wait, or -1 milliseconds to wait indefinitely.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.Threading.LockRecursionException
+    description: The @'System.Threading.ReaderWriterLockSlim.RecursionPolicy' property is @'System.Threading.LockRecursionPolicy.NoRecursion' and the current thread has already entered the lock. -or-The current thread initially entered the lock in read mode, and therefore trying to enter write mode would create the possibility of a deadlock. -or-The recursion number would exceed the capacity of the counter. The limit is so large that applications should never encounter it.
+  - type: System.ArgumentOutOfRangeException
+    description: The value of *timeout* is negative, but it is not equal to -1 milliseconds, which is the only negative value allowed.-or-The value of *timeout* is greater than @'System.Int32.MaxValue' milliseconds.
+  - type: System.ObjectDisposedException
+    description: The @'System.Threading.ReaderWriterLockSlim' object has been disposed.
+- uid: System.Threading.ReaderWriterLockSlim.TryEnterWriteLock(System.Int32)
+  id: TryEnterWriteLock(System.Int32)
+  parent: System.Threading.ReaderWriterLockSlim
+  href: System.Threading.ReaderWriterLockSlim.yml
+  name: TryEnterWriteLock(Int32)
+  fullName: System.Threading.ReaderWriterLockSlim.TryEnterWriteLock(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading/src/System/Threading/ReaderWriterLockSlim.cs
+    startLine: 414
+  assemblies:
+  - System.Threading.CoreCLR
+  namespace: System.Threading
+  summary: Tries to enter the lock in write mode, with an optional time-out.
+  syntax:
+    content: public bool TryEnterWriteLock(int millisecondsTimeout)
+    content.vb: Public Function TryEnterWriteLock(millisecondsTimeout As Integer) As Boolean
+    parameters:
+    - id: millisecondsTimeout
+      type: System.Int32
+      description: The number of milliseconds to wait, or -1 (@'System.Threading.Timeout.Infinite') to wait indefinitely.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.Threading.LockRecursionException
+    description: The @'System.Threading.ReaderWriterLockSlim.RecursionPolicy' property is @'System.Threading.LockRecursionPolicy.NoRecursion' and the current thread has already entered the lock. -or-The current thread initially entered the lock in read mode, and therefore trying to enter write mode would create the possibility of a deadlock. -or-The recursion number would exceed the capacity of the counter. The limit is so large that applications should never encounter it.
+  - type: System.ArgumentOutOfRangeException
+    description: The value of *millisecondsTimeout* is negative, but it is not equal to @'System.Threading.Timeout.Infinite' (-1), which is the only negative value allowed.
+  - type: System.ObjectDisposedException
+    description: The @'System.Threading.ReaderWriterLockSlim' object has been disposed.
+- uid: System.Threading.ReaderWriterLockSlim.EnterUpgradeableReadLock
+  id: EnterUpgradeableReadLock
+  parent: System.Threading.ReaderWriterLockSlim
+  href: System.Threading.ReaderWriterLockSlim.yml
+  name: EnterUpgradeableReadLock()
+  fullName: System.Threading.ReaderWriterLockSlim.EnterUpgradeableReadLock()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading/src/System/Threading/ReaderWriterLockSlim.cs
+    startLine: 587
+  assemblies:
+  - System.Threading.CoreCLR
+  namespace: System.Threading
+  summary: Tries to enter the lock in upgradeable mode.
+  syntax:
+    content: public void EnterUpgradeableReadLock()
+    content.vb: Public Sub EnterUpgradeableReadLock
+  exceptions:
+  - type: System.Threading.LockRecursionException
+    description: The @'System.Threading.ReaderWriterLockSlim.RecursionPolicy' property is @'System.Threading.LockRecursionPolicy.NoRecursion' and the current thread has already entered the lock in any mode. -or-The current thread has entered read mode, so trying to enter upgradeable mode would create the possibility of a deadlock. -or-The recursion number would exceed the capacity of the counter. The limit is so large that applications should never encounter it.
+  - type: System.ObjectDisposedException
+    description: The @'System.Threading.ReaderWriterLockSlim' object has been disposed.
+- uid: System.Threading.ReaderWriterLockSlim.TryEnterUpgradeableReadLock(System.TimeSpan)
+  id: TryEnterUpgradeableReadLock(System.TimeSpan)
+  parent: System.Threading.ReaderWriterLockSlim
+  href: System.Threading.ReaderWriterLockSlim.yml
+  name: TryEnterUpgradeableReadLock(TimeSpan)
+  fullName: System.Threading.ReaderWriterLockSlim.TryEnterUpgradeableReadLock(System.TimeSpan)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading/src/System/Threading/ReaderWriterLockSlim.cs
+    startLine: 592
+  assemblies:
+  - System.Threading.CoreCLR
+  namespace: System.Threading
+  summary: Tries to enter the lock in upgradeable mode, with an optional time-out.
+  syntax:
+    content: public bool TryEnterUpgradeableReadLock(TimeSpan timeout)
+    content.vb: Public Function TryEnterUpgradeableReadLock(timeout As TimeSpan) As Boolean
+    parameters:
+    - id: timeout
+      type: System.TimeSpan
+      description: The interval to wait, or -1 milliseconds to wait indefinitely.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.Threading.LockRecursionException
+    description: The @'System.Threading.ReaderWriterLockSlim.RecursionPolicy' property is @'System.Threading.LockRecursionPolicy.NoRecursion' and the current thread has already entered the lock. -or-The current thread initially entered the lock in read mode, and therefore trying to enter upgradeable mode would create the possibility of a deadlock. -or-The recursion number would exceed the capacity of the counter. The limit is so large that applications should never encounter it.
+  - type: System.ArgumentOutOfRangeException
+    description: The value of *timeout* is negative, but it is not equal to -1 milliseconds, which is the only negative value allowed.-or-The value of *timeout* is greater than @'System.Int32.MaxValue' milliseconds.
+  - type: System.ObjectDisposedException
+    description: The @'System.Threading.ReaderWriterLockSlim' object has been disposed.
+- uid: System.Threading.ReaderWriterLockSlim.TryEnterUpgradeableReadLock(System.Int32)
+  id: TryEnterUpgradeableReadLock(System.Int32)
+  parent: System.Threading.ReaderWriterLockSlim
+  href: System.Threading.ReaderWriterLockSlim.yml
+  name: TryEnterUpgradeableReadLock(Int32)
+  fullName: System.Threading.ReaderWriterLockSlim.TryEnterUpgradeableReadLock(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading/src/System/Threading/ReaderWriterLockSlim.cs
+    startLine: 597
+  assemblies:
+  - System.Threading.CoreCLR
+  namespace: System.Threading
+  summary: Tries to enter the lock in upgradeable mode, with an optional time-out.
+  syntax:
+    content: public bool TryEnterUpgradeableReadLock(int millisecondsTimeout)
+    content.vb: Public Function TryEnterUpgradeableReadLock(millisecondsTimeout As Integer) As Boolean
+    parameters:
+    - id: millisecondsTimeout
+      type: System.Int32
+      description: The number of milliseconds to wait, or -1 (@'System.Threading.Timeout.Infinite') to wait indefinitely.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.Threading.LockRecursionException
+    description: The @'System.Threading.ReaderWriterLockSlim.RecursionPolicy' property is @'System.Threading.LockRecursionPolicy.NoRecursion' and the current thread has already entered the lock. -or-The current thread initially entered the lock in read mode, and therefore trying to enter upgradeable mode would create the possibility of a deadlock. -or-The recursion number would exceed the capacity of the counter. The limit is so large that applications should never encounter it.
+  - type: System.ArgumentOutOfRangeException
+    description: The value of *millisecondsTimeout* is negative, but it is not equal to @'System.Threading.Timeout.Infinite' (-1), which is the only negative value allowed.
+  - type: System.ObjectDisposedException
+    description: The @'System.Threading.ReaderWriterLockSlim' object has been disposed.
+- uid: System.Threading.ReaderWriterLockSlim.ExitReadLock
+  id: ExitReadLock
+  parent: System.Threading.ReaderWriterLockSlim
+  href: System.Threading.ReaderWriterLockSlim.yml
+  name: ExitReadLock()
+  fullName: System.Threading.ReaderWriterLockSlim.ExitReadLock()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading/src/System/Threading/ReaderWriterLockSlim.cs
+    startLine: 724
+  assemblies:
+  - System.Threading.CoreCLR
+  namespace: System.Threading
+  summary: Reduces the recursion count for read mode, and exits read mode if the resulting count is 0 (zero).
+  syntax:
+    content: public void ExitReadLock()
+    content.vb: Public Sub ExitReadLock
+  exceptions:
+  - type: System.Threading.SynchronizationLockException
+    description: The current thread has not entered the lock in read mode.
+- uid: System.Threading.ReaderWriterLockSlim.ExitWriteLock
+  id: ExitWriteLock
+  parent: System.Threading.ReaderWriterLockSlim
+  href: System.Threading.ReaderWriterLockSlim.yml
+  name: ExitWriteLock()
+  fullName: System.Threading.ReaderWriterLockSlim.ExitWriteLock()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading/src/System/Threading/ReaderWriterLockSlim.cs
+    startLine: 764
+  assemblies:
+  - System.Threading.CoreCLR
+  namespace: System.Threading
+  summary: Reduces the recursion count for write mode, and exits write mode if the resulting count is 0 (zero).
+  syntax:
+    content: public void ExitWriteLock()
+    content.vb: Public Sub ExitWriteLock
+  exceptions:
+  - type: System.Threading.SynchronizationLockException
+    description: The current thread has not entered the lock in write mode.
+- uid: System.Threading.ReaderWriterLockSlim.ExitUpgradeableReadLock
+  id: ExitUpgradeableReadLock
+  parent: System.Threading.ReaderWriterLockSlim
+  href: System.Threading.ReaderWriterLockSlim.yml
+  name: ExitUpgradeableReadLock()
+  fullName: System.Threading.ReaderWriterLockSlim.ExitUpgradeableReadLock()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading/src/System/Threading/ReaderWriterLockSlim.cs
+    startLine: 811
+  assemblies:
+  - System.Threading.CoreCLR
+  namespace: System.Threading
+  summary: Reduces the recursion count for upgradeable mode, and exits upgradeable mode if the resulting count is 0 (zero).
+  syntax:
+    content: public void ExitUpgradeableReadLock()
+    content.vb: Public Sub ExitUpgradeableReadLock
+  exceptions:
+  - type: System.Threading.SynchronizationLockException
+    description: The current thread has not entered the lock in upgradeable mode.
+- uid: System.Threading.ReaderWriterLockSlim.Dispose
+  id: Dispose
+  parent: System.Threading.ReaderWriterLockSlim
+  href: System.Threading.ReaderWriterLockSlim.yml
+  name: Dispose()
+  fullName: System.Threading.ReaderWriterLockSlim.Dispose()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading/src/System/Threading/ReaderWriterLockSlim.cs
+    startLine: 1100
+  assemblies:
+  - System.Threading.CoreCLR
+  namespace: System.Threading
+  summary: Releases all resources used by the current instance of the @'System.Threading.ReaderWriterLockSlim' class.
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  exceptions:
+  - type: System.Threading.SynchronizationLockException
+    description: '@''System.Threading.ReaderWriterLockSlim.WaitingReadCount'' is greater than zero. -or-@''System.Threading.ReaderWriterLockSlim.WaitingUpgradeCount'' is greater than zero. -or-@''System.Threading.ReaderWriterLockSlim.WaitingWriteCount'' is greater than zero.'
+- uid: System.Threading.ReaderWriterLockSlim.IsReadLockHeld
+  id: IsReadLockHeld
+  parent: System.Threading.ReaderWriterLockSlim
+  href: System.Threading.ReaderWriterLockSlim.yml
+  name: IsReadLockHeld
+  fullName: System.Threading.ReaderWriterLockSlim.IsReadLockHeld
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Threading/src/System/Threading/ReaderWriterLockSlim.cs
+    startLine: 1143
+  assemblies:
+  - System.Threading.CoreCLR
+  namespace: System.Threading
+  summary: Gets a value that indicates whether the current thread has entered the lock in read mode.
+  syntax:
+    content: public bool IsReadLockHeld { get; }
+    content.vb: Public ReadOnly Property IsReadLockHeld As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Threading.ReaderWriterLockSlim.IsUpgradeableReadLockHeld
+  id: IsUpgradeableReadLockHeld
+  parent: System.Threading.ReaderWriterLockSlim
+  href: System.Threading.ReaderWriterLockSlim.yml
+  name: IsUpgradeableReadLockHeld
+  fullName: System.Threading.ReaderWriterLockSlim.IsUpgradeableReadLockHeld
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Threading/src/System/Threading/ReaderWriterLockSlim.cs
+    startLine: 1154
+  assemblies:
+  - System.Threading.CoreCLR
+  namespace: System.Threading
+  summary: Gets a value that indicates whether the current thread has entered the lock in upgradeable mode.
+  syntax:
+    content: public bool IsUpgradeableReadLockHeld { get; }
+    content.vb: Public ReadOnly Property IsUpgradeableReadLockHeld As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Threading.ReaderWriterLockSlim.IsWriteLockHeld
+  id: IsWriteLockHeld
+  parent: System.Threading.ReaderWriterLockSlim
+  href: System.Threading.ReaderWriterLockSlim.yml
+  name: IsWriteLockHeld
+  fullName: System.Threading.ReaderWriterLockSlim.IsWriteLockHeld
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Threading/src/System/Threading/ReaderWriterLockSlim.cs
+    startLine: 1165
+  assemblies:
+  - System.Threading.CoreCLR
+  namespace: System.Threading
+  summary: Gets a value that indicates whether the current thread has entered the lock in write mode.
+  syntax:
+    content: public bool IsWriteLockHeld { get; }
+    content.vb: Public ReadOnly Property IsWriteLockHeld As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Threading.ReaderWriterLockSlim.RecursionPolicy
+  id: RecursionPolicy
+  parent: System.Threading.ReaderWriterLockSlim
+  href: System.Threading.ReaderWriterLockSlim.yml
+  name: RecursionPolicy
+  fullName: System.Threading.ReaderWriterLockSlim.RecursionPolicy
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Threading/src/System/Threading/ReaderWriterLockSlim.cs
+    startLine: 1176
+  assemblies:
+  - System.Threading.CoreCLR
+  namespace: System.Threading
+  summary: Gets a value that indicates the recursion policy for the current @'System.Threading.ReaderWriterLockSlim' object.
+  syntax:
+    content: public LockRecursionPolicy RecursionPolicy { get; }
+    content.vb: Public ReadOnly Property RecursionPolicy As LockRecursionPolicy
+    parameters: []
+    return:
+      type: System.Threading.LockRecursionPolicy
+- uid: System.Threading.ReaderWriterLockSlim.CurrentReadCount
+  id: CurrentReadCount
+  parent: System.Threading.ReaderWriterLockSlim
+  href: System.Threading.ReaderWriterLockSlim.yml
+  name: CurrentReadCount
+  fullName: System.Threading.ReaderWriterLockSlim.CurrentReadCount
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Threading/src/System/Threading/ReaderWriterLockSlim.cs
+    startLine: 1191
+  assemblies:
+  - System.Threading.CoreCLR
+  namespace: System.Threading
+  summary: Gets the total number of unique threads that have entered the lock in read mode.
+  syntax:
+    content: public int CurrentReadCount { get; }
+    content.vb: Public ReadOnly Property CurrentReadCount As Integer
+    parameters: []
+    return:
+      type: System.Int32
+- uid: System.Threading.ReaderWriterLockSlim.RecursiveReadCount
+  id: RecursiveReadCount
+  parent: System.Threading.ReaderWriterLockSlim
+  href: System.Threading.ReaderWriterLockSlim.yml
+  name: RecursiveReadCount
+  fullName: System.Threading.ReaderWriterLockSlim.RecursiveReadCount
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Threading/src/System/Threading/ReaderWriterLockSlim.cs
+    startLine: 1205
+  assemblies:
+  - System.Threading.CoreCLR
+  namespace: System.Threading
+  summary: Gets the number of times the current thread has entered the lock in read mode, as an indication of recursion.
+  syntax:
+    content: public int RecursiveReadCount { get; }
+    content.vb: Public ReadOnly Property RecursiveReadCount As Integer
+    parameters: []
+    return:
+      type: System.Int32
+- uid: System.Threading.ReaderWriterLockSlim.RecursiveUpgradeCount
+  id: RecursiveUpgradeCount
+  parent: System.Threading.ReaderWriterLockSlim
+  href: System.Threading.ReaderWriterLockSlim.yml
+  name: RecursiveUpgradeCount
+  fullName: System.Threading.ReaderWriterLockSlim.RecursiveUpgradeCount
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Threading/src/System/Threading/ReaderWriterLockSlim.cs
+    startLine: 1218
+  assemblies:
+  - System.Threading.CoreCLR
+  namespace: System.Threading
+  summary: Gets the number of times the current thread has entered the lock in upgradeable mode, as an indication of recursion.
+  syntax:
+    content: public int RecursiveUpgradeCount { get; }
+    content.vb: Public ReadOnly Property RecursiveUpgradeCount As Integer
+    parameters: []
+    return:
+      type: System.Int32
+- uid: System.Threading.ReaderWriterLockSlim.RecursiveWriteCount
+  id: RecursiveWriteCount
+  parent: System.Threading.ReaderWriterLockSlim
+  href: System.Threading.ReaderWriterLockSlim.yml
+  name: RecursiveWriteCount
+  fullName: System.Threading.ReaderWriterLockSlim.RecursiveWriteCount
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Threading/src/System/Threading/ReaderWriterLockSlim.cs
+    startLine: 1242
+  assemblies:
+  - System.Threading.CoreCLR
+  namespace: System.Threading
+  summary: Gets the number of times the current thread has entered the lock in write mode, as an indication of recursion.
+  syntax:
+    content: public int RecursiveWriteCount { get; }
+    content.vb: Public ReadOnly Property RecursiveWriteCount As Integer
+    parameters: []
+    return:
+      type: System.Int32
+- uid: System.Threading.ReaderWriterLockSlim.WaitingReadCount
+  id: WaitingReadCount
+  parent: System.Threading.ReaderWriterLockSlim
+  href: System.Threading.ReaderWriterLockSlim.yml
+  name: WaitingReadCount
+  fullName: System.Threading.ReaderWriterLockSlim.WaitingReadCount
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Threading/src/System/Threading/ReaderWriterLockSlim.cs
+    startLine: 1266
+  assemblies:
+  - System.Threading.CoreCLR
+  namespace: System.Threading
+  summary: Gets the total number of threads that are waiting to enter the lock in read mode.
+  syntax:
+    content: public int WaitingReadCount { get; }
+    content.vb: Public ReadOnly Property WaitingReadCount As Integer
+    parameters: []
+    return:
+      type: System.Int32
+- uid: System.Threading.ReaderWriterLockSlim.WaitingUpgradeCount
+  id: WaitingUpgradeCount
+  parent: System.Threading.ReaderWriterLockSlim
+  href: System.Threading.ReaderWriterLockSlim.yml
+  name: WaitingUpgradeCount
+  fullName: System.Threading.ReaderWriterLockSlim.WaitingUpgradeCount
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Threading/src/System/Threading/ReaderWriterLockSlim.cs
+    startLine: 1274
+  assemblies:
+  - System.Threading.CoreCLR
+  namespace: System.Threading
+  summary: Gets the total number of threads that are waiting to enter the lock in upgradeable mode.
+  syntax:
+    content: public int WaitingUpgradeCount { get; }
+    content.vb: Public ReadOnly Property WaitingUpgradeCount As Integer
+    parameters: []
+    return:
+      type: System.Int32
+- uid: System.Threading.ReaderWriterLockSlim.WaitingWriteCount
+  id: WaitingWriteCount
+  parent: System.Threading.ReaderWriterLockSlim
+  href: System.Threading.ReaderWriterLockSlim.yml
+  name: WaitingWriteCount
+  fullName: System.Threading.ReaderWriterLockSlim.WaitingWriteCount
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Threading/src/System/Threading/ReaderWriterLockSlim.cs
+    startLine: 1282
+  assemblies:
+  - System.Threading.CoreCLR
+  namespace: System.Threading
+  summary: Gets the total number of threads that are waiting to enter the lock in write mode.
+  syntax:
+    content: public int WaitingWriteCount { get; }
+    content.vb: Public ReadOnly Property WaitingWriteCount As Integer
+    parameters: []
+    return:
+      type: System.Int32
+references:
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Threading.LockRecursionPolicy
+  parent: System.Threading
+  isExternal: false
+  href: System.Threading.LockRecursionPolicy.yml
+  name: LockRecursionPolicy
+  fullName: System.Threading.LockRecursionPolicy
+  type: Enum
+- uid: System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  fullName: System.TimeSpan
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32

@@ -1,0 +1,263 @@
+items:
+- uid: System.Security.Principal.TokenAccessLevels
+  id: TokenAccessLevels
+  parent: System.Security.Principal
+  children:
+  - System.Security.Principal.TokenAccessLevels.AdjustDefault
+  - System.Security.Principal.TokenAccessLevels.AdjustGroups
+  - System.Security.Principal.TokenAccessLevels.AdjustPrivileges
+  - System.Security.Principal.TokenAccessLevels.AdjustSessionId
+  - System.Security.Principal.TokenAccessLevels.AllAccess
+  - System.Security.Principal.TokenAccessLevels.AssignPrimary
+  - System.Security.Principal.TokenAccessLevels.Duplicate
+  - System.Security.Principal.TokenAccessLevels.Impersonate
+  - System.Security.Principal.TokenAccessLevels.MaximumAllowed
+  - System.Security.Principal.TokenAccessLevels.Query
+  - System.Security.Principal.TokenAccessLevels.QuerySource
+  - System.Security.Principal.TokenAccessLevels.Read
+  - System.Security.Principal.TokenAccessLevels.Write
+  href: System.Security.Principal.TokenAccessLevels.yml
+  name: TokenAccessLevels
+  fullName: System.Security.Principal.TokenAccessLevels
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Security/Principal/TokenAccessLevels.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Security/Principal/TokenAccessLevels.cs
+    startLine: 8
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Principal
+  summary: Defines the privileges of the user account associated with the access token.
+  syntax:
+    content: public enum TokenAccessLevels
+    content.vb: Public Enum TokenAccessLevels
+- uid: System.Security.Principal.TokenAccessLevels.AssignPrimary
+  id: AssignPrimary
+  parent: System.Security.Principal.TokenAccessLevels
+  href: System.Security.Principal.TokenAccessLevels.yml
+  name: AssignPrimary
+  fullName: System.Security.Principal.TokenAccessLevels.AssignPrimary
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Principal/TokenAccessLevels.cs
+    startLine: 12
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Principal
+  summary: The user can attach a primary token to a process.
+  syntax:
+    content: AssignPrimary = 1
+- uid: System.Security.Principal.TokenAccessLevels.Duplicate
+  id: Duplicate
+  parent: System.Security.Principal.TokenAccessLevels
+  href: System.Security.Principal.TokenAccessLevels.yml
+  name: Duplicate
+  fullName: System.Security.Principal.TokenAccessLevels.Duplicate
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Principal/TokenAccessLevels.cs
+    startLine: 13
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Principal
+  summary: The user can duplicate the token.
+  syntax:
+    content: Duplicate = 2
+- uid: System.Security.Principal.TokenAccessLevels.Impersonate
+  id: Impersonate
+  parent: System.Security.Principal.TokenAccessLevels
+  href: System.Security.Principal.TokenAccessLevels.yml
+  name: Impersonate
+  fullName: System.Security.Principal.TokenAccessLevels.Impersonate
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Principal/TokenAccessLevels.cs
+    startLine: 14
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Principal
+  summary: The user can impersonate a client.
+  syntax:
+    content: Impersonate = 4
+- uid: System.Security.Principal.TokenAccessLevels.Query
+  id: Query
+  parent: System.Security.Principal.TokenAccessLevels
+  href: System.Security.Principal.TokenAccessLevels.yml
+  name: Query
+  fullName: System.Security.Principal.TokenAccessLevels.Query
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Principal/TokenAccessLevels.cs
+    startLine: 15
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Principal
+  summary: The user can query the token.
+  syntax:
+    content: Query = 8
+- uid: System.Security.Principal.TokenAccessLevels.QuerySource
+  id: QuerySource
+  parent: System.Security.Principal.TokenAccessLevels
+  href: System.Security.Principal.TokenAccessLevels.yml
+  name: QuerySource
+  fullName: System.Security.Principal.TokenAccessLevels.QuerySource
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Principal/TokenAccessLevels.cs
+    startLine: 16
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Principal
+  summary: The user can query the source of the token.
+  syntax:
+    content: QuerySource = 16
+- uid: System.Security.Principal.TokenAccessLevels.AdjustPrivileges
+  id: AdjustPrivileges
+  parent: System.Security.Principal.TokenAccessLevels
+  href: System.Security.Principal.TokenAccessLevels.yml
+  name: AdjustPrivileges
+  fullName: System.Security.Principal.TokenAccessLevels.AdjustPrivileges
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Principal/TokenAccessLevels.cs
+    startLine: 17
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Principal
+  summary: The user can enable or disable privileges in the token.
+  syntax:
+    content: AdjustPrivileges = 32
+- uid: System.Security.Principal.TokenAccessLevels.AdjustGroups
+  id: AdjustGroups
+  parent: System.Security.Principal.TokenAccessLevels
+  href: System.Security.Principal.TokenAccessLevels.yml
+  name: AdjustGroups
+  fullName: System.Security.Principal.TokenAccessLevels.AdjustGroups
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Principal/TokenAccessLevels.cs
+    startLine: 18
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Principal
+  summary: The user can change the attributes of the groups in the token.
+  syntax:
+    content: AdjustGroups = 64
+- uid: System.Security.Principal.TokenAccessLevels.AdjustDefault
+  id: AdjustDefault
+  parent: System.Security.Principal.TokenAccessLevels
+  href: System.Security.Principal.TokenAccessLevels.yml
+  name: AdjustDefault
+  fullName: System.Security.Principal.TokenAccessLevels.AdjustDefault
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Principal/TokenAccessLevels.cs
+    startLine: 19
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Principal
+  summary: The user can change the default owner, primary group, or discretionary access control list (DACL) of the token.
+  syntax:
+    content: AdjustDefault = 128
+- uid: System.Security.Principal.TokenAccessLevels.AdjustSessionId
+  id: AdjustSessionId
+  parent: System.Security.Principal.TokenAccessLevels
+  href: System.Security.Principal.TokenAccessLevels.yml
+  name: AdjustSessionId
+  fullName: System.Security.Principal.TokenAccessLevels.AdjustSessionId
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Principal/TokenAccessLevels.cs
+    startLine: 20
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Principal
+  summary: The user can adjust the session identifier of the token.
+  syntax:
+    content: AdjustSessionId = 256
+- uid: System.Security.Principal.TokenAccessLevels.Read
+  id: Read
+  parent: System.Security.Principal.TokenAccessLevels
+  href: System.Security.Principal.TokenAccessLevels.yml
+  name: Read
+  fullName: System.Security.Principal.TokenAccessLevels.Read
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Principal/TokenAccessLevels.cs
+    startLine: 22
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Principal
+  summary: The user has standard read rights and the @'System.Security.Principal.TokenAccessLevels.Query' privilege for the token.
+  syntax:
+    content: Read = 131080
+- uid: System.Security.Principal.TokenAccessLevels.Write
+  id: Write
+  parent: System.Security.Principal.TokenAccessLevels
+  href: System.Security.Principal.TokenAccessLevels.yml
+  name: Write
+  fullName: System.Security.Principal.TokenAccessLevels.Write
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Principal/TokenAccessLevels.cs
+    startLine: 24
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Principal
+  summary: The user has standard write rights and the @'System.Security.Principal.TokenAccessLevels.AdjustPrivileges,F:System.Security.Principal.TokenAccessLevels.AdjustGroups', and @'System.Security.Principal.TokenAccessLevels.AdjustDefault' privileges for the token.
+  syntax:
+    content: Write = 131296
+- uid: System.Security.Principal.TokenAccessLevels.AllAccess
+  id: AllAccess
+  parent: System.Security.Principal.TokenAccessLevels
+  href: System.Security.Principal.TokenAccessLevels.yml
+  name: AllAccess
+  fullName: System.Security.Principal.TokenAccessLevels.AllAccess
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Principal/TokenAccessLevels.cs
+    startLine: 26
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Principal
+  summary: The user has all possible access to the token.
+  syntax:
+    content: AllAccess = 983551
+- uid: System.Security.Principal.TokenAccessLevels.MaximumAllowed
+  id: MaximumAllowed
+  parent: System.Security.Principal.TokenAccessLevels
+  href: System.Security.Principal.TokenAccessLevels.yml
+  name: MaximumAllowed
+  fullName: System.Security.Principal.TokenAccessLevels.MaximumAllowed
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Principal/TokenAccessLevels.cs
+    startLine: 37
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Principal
+  summary: The maximum value that can be assigned for the @'System.Security.Principal.TokenAccessLevels' enumeration.
+  syntax:
+    content: MaximumAllowed = 33554432
+references:
+- uid: System.Security.Principal
+  isExternal: false
+  name: System.Security.Principal
+  fullName: System.Security.Principal
+  type: Namespace

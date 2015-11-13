@@ -1,0 +1,119 @@
+items:
+- uid: System.Reflection.AssemblyNameFlags
+  id: AssemblyNameFlags
+  parent: System.Reflection
+  children:
+  - System.Reflection.AssemblyNameFlags.EnableJITcompileOptimizer
+  - System.Reflection.AssemblyNameFlags.EnableJITcompileTracking
+  - System.Reflection.AssemblyNameFlags.None
+  - System.Reflection.AssemblyNameFlags.PublicKey
+  - System.Reflection.AssemblyNameFlags.Retargetable
+  href: System.Reflection.AssemblyNameFlags.yml
+  name: AssemblyNameFlags
+  fullName: System.Reflection.AssemblyNameFlags
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Reflection/AssemblyNameFlags.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Reflection/AssemblyNameFlags.cs
+    startLine: 18
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Provides information about an @'System.Reflection.Assembly' reference.
+  syntax:
+    content: public enum AssemblyNameFlags
+    content.vb: Public Enum AssemblyNameFlags
+- uid: System.Reflection.AssemblyNameFlags.None
+  id: None
+  parent: System.Reflection.AssemblyNameFlags
+  href: System.Reflection.AssemblyNameFlags.yml
+  name: None
+  fullName: System.Reflection.AssemblyNameFlags.None
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/AssemblyNameFlags.cs
+    startLine: 23
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that no flags are in effect.
+  syntax:
+    content: None = 0
+- uid: System.Reflection.AssemblyNameFlags.PublicKey
+  id: PublicKey
+  parent: System.Reflection.AssemblyNameFlags
+  href: System.Reflection.AssemblyNameFlags.yml
+  name: PublicKey
+  fullName: System.Reflection.AssemblyNameFlags.PublicKey
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/AssemblyNameFlags.cs
+    startLine: 26
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that a public key is formed from the full public key rather than the public key token.
+  syntax:
+    content: PublicKey = 1
+- uid: System.Reflection.AssemblyNameFlags.EnableJITcompileOptimizer
+  id: EnableJITcompileOptimizer
+  parent: System.Reflection.AssemblyNameFlags
+  href: System.Reflection.AssemblyNameFlags.yml
+  name: EnableJITcompileOptimizer
+  fullName: System.Reflection.AssemblyNameFlags.EnableJITcompileOptimizer
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/AssemblyNameFlags.cs
+    startLine: 29
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that just-in-time (JIT) compiler optimization is disabled for the assembly. This is the exact opposite of the meaning that is suggested by the member name.
+  syntax:
+    content: EnableJITcompileOptimizer = 16384
+- uid: System.Reflection.AssemblyNameFlags.EnableJITcompileTracking
+  id: EnableJITcompileTracking
+  parent: System.Reflection.AssemblyNameFlags
+  href: System.Reflection.AssemblyNameFlags.yml
+  name: EnableJITcompileTracking
+  fullName: System.Reflection.AssemblyNameFlags.EnableJITcompileTracking
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/AssemblyNameFlags.cs
+    startLine: 30
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that just-in-time (JIT) compiler tracking is enabled for the assembly.
+  syntax:
+    content: EnableJITcompileTracking = 32768
+- uid: System.Reflection.AssemblyNameFlags.Retargetable
+  id: Retargetable
+  parent: System.Reflection.AssemblyNameFlags
+  href: System.Reflection.AssemblyNameFlags.yml
+  name: Retargetable
+  fullName: System.Reflection.AssemblyNameFlags.Retargetable
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/AssemblyNameFlags.cs
+    startLine: 31
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the assembly can be retargeted at runtime to an assembly from a different publisher. This value supports the .NET Framework infrastructure and is not intended to be used directly from your code.
+  syntax:
+    content: Retargetable = 256
+references:
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace

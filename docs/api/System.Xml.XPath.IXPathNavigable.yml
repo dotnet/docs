@@ -1,0 +1,56 @@
+items:
+- uid: System.Xml.XPath.IXPathNavigable
+  id: IXPathNavigable
+  parent: System.Xml.XPath
+  children:
+  - System.Xml.XPath.IXPathNavigable.CreateNavigator
+  href: System.Xml.XPath.IXPathNavigable.yml
+  name: IXPathNavigable
+  fullName: System.Xml.XPath.IXPathNavigable
+  type: Interface
+  source:
+    remote: &o0
+      path: src/System.Xml.XPath/src/System/Xml/XPath/IXPathNavigable.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Xml.XPath/src/System/Xml/XPath/IXPathNavigable.cs
+    startLine: 5
+  assemblies:
+  - System.Xml.XPath
+  namespace: System.Xml.XPath
+  summary: Provides an accessor to the @'System.Xml.XPath.XPathNavigator' class.
+  syntax:
+    content: public interface IXPathNavigable
+    content.vb: Public Interface IXPathNavigable
+- uid: System.Xml.XPath.IXPathNavigable.CreateNavigator
+  id: CreateNavigator
+  parent: System.Xml.XPath.IXPathNavigable
+  href: System.Xml.XPath.IXPathNavigable.yml
+  name: CreateNavigator()
+  fullName: System.Xml.XPath.IXPathNavigable.CreateNavigator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XPath/src/System/Xml/XPath/IXPathNavigable.cs
+    startLine: 7
+  assemblies:
+  - System.Xml.XPath
+  namespace: System.Xml.XPath
+  summary: Returns a new @'System.Xml.XPath.XPathNavigator' object.
+  syntax:
+    content: XPathNavigator CreateNavigator()
+    content.vb: Function CreateNavigator As XPathNavigator
+    return:
+      type: System.Xml.XPath.XPathNavigator
+references:
+- uid: System.Xml.XPath
+  isExternal: false
+  name: System.Xml.XPath
+  fullName: System.Xml.XPath
+  type: Namespace
+- uid: System.Xml.XPath.XPathNavigator
+  parent: System.Xml.XPath
+  isExternal: false
+  href: System.Xml.XPath.XPathNavigator.yml
+  name: XPathNavigator
+  fullName: System.Xml.XPath.XPathNavigator

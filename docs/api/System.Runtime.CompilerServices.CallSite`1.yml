@@ -1,0 +1,443 @@
+items:
+- uid: System.Runtime.CompilerServices.CallSite`1
+  id: CallSite`1
+  parent: System.Runtime.CompilerServices
+  children:
+  - System.Runtime.CompilerServices.CallSite`1.Create(System.Runtime.CompilerServices.CallSiteBinder)
+  - System.Runtime.CompilerServices.CallSite`1.Target
+  - System.Runtime.CompilerServices.CallSite`1.Update
+  href: System.Runtime.CompilerServices.CallSite`1.yml
+  name: CallSite<T>
+  name.vb: CallSite(Of T)
+  fullName: System.Runtime.CompilerServices.CallSite<T>
+  fullName.vb: System.Runtime.CompilerServices.CallSite(Of T)
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Dynamic.Runtime/src/System/Runtime/CompilerServices/CallSite.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Dynamic.Runtime/src/System/Runtime/CompilerServices/CallSite.cs
+    startLine: 119
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Runtime.CompilerServices
+  summary: Dynamic site type.
+  syntax:
+    content: 'public class CallSite<T> : CallSite where T : class'
+    content.vb: Public Class CallSite(Of T As Class) Inherits CallSite
+    typeParameters:
+    - id: T
+      description: The delegate type.
+  inheritance:
+  - System.Object
+  - System.Runtime.CompilerServices.CallSite
+  inheritedMembers:
+  - System.Runtime.CompilerServices.CallSite.Binder
+  - System.Runtime.CompilerServices.CallSite.Create(System.Type,System.Runtime.CompilerServices.CallSiteBinder)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Runtime.CompilerServices.CallSite`1.Update
+  id: Update
+  parent: System.Runtime.CompilerServices.CallSite`1
+  href: System.Runtime.CompilerServices.CallSite`1.yml
+  name: Update
+  fullName: System.Runtime.CompilerServices.CallSite<T>.Update
+  fullName.vb: System.Runtime.CompilerServices.CallSite(Of T).Update
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Runtime/CompilerServices/CallSite.cs
+    startLine: 125
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Runtime.CompilerServices
+  summary: The update delegate. Called when the dynamic site experiences cache miss.
+  syntax:
+    content: public T Update { get; }
+    content.vb: Public ReadOnly Property Update As T
+    parameters: []
+    return:
+      type: '{T}'
+      description: The update delegate.
+- uid: System.Runtime.CompilerServices.CallSite`1.Target
+  id: Target
+  parent: System.Runtime.CompilerServices.CallSite`1
+  href: System.Runtime.CompilerServices.CallSite`1.yml
+  name: Target
+  fullName: System.Runtime.CompilerServices.CallSite<T>.Target
+  fullName.vb: System.Runtime.CompilerServices.CallSite(Of T).Target
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Runtime/CompilerServices/CallSite.cs
+    startLine: 147
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Runtime.CompilerServices
+  summary: The Level 0 cache - a delegate specialized based on the site history.
+  syntax:
+    content: public T Target
+    content.vb: Public Target As T
+- uid: System.Runtime.CompilerServices.CallSite`1.Create(System.Runtime.CompilerServices.CallSiteBinder)
+  id: Create(System.Runtime.CompilerServices.CallSiteBinder)
+  parent: System.Runtime.CompilerServices.CallSite`1
+  href: System.Runtime.CompilerServices.CallSite`1.yml
+  name: Create(CallSiteBinder)
+  fullName: System.Runtime.CompilerServices.CallSite<T>.Create(System.Runtime.CompilerServices.CallSiteBinder)
+  fullName.vb: System.Runtime.CompilerServices.CallSite(Of T).Create(System.Runtime.CompilerServices.CallSiteBinder)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Runtime/CompilerServices/CallSite.cs
+    startLine: 186
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Runtime.CompilerServices
+  summary: Creates an instance of the dynamic call site, initialized with the binder responsible for the runtime binding of the dynamic operations at this call site.
+  syntax:
+    content: public static CallSite<T> Create(CallSiteBinder binder)
+    content.vb: Public Shared Function Create(binder As CallSiteBinder) As CallSite(Of T)
+    parameters:
+    - id: binder
+      type: System.Runtime.CompilerServices.CallSiteBinder
+      description: The binder responsible for the runtime binding of the dynamic operations at this call site.
+    return:
+      type: System.Runtime.CompilerServices.CallSite`1
+      description: The new instance of dynamic call site.
+references:
+- uid: System.Runtime.CompilerServices
+  isExternal: false
+  name: System.Runtime.CompilerServices
+  fullName: System.Runtime.CompilerServices
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Runtime.CompilerServices.CallSite
+  parent: System.Runtime.CompilerServices
+  isExternal: false
+  href: System.Runtime.CompilerServices.CallSite.yml
+  name: CallSite
+  fullName: System.Runtime.CompilerServices.CallSite
+  type: Class
+  summary: >-
+    A Dynamic Call Site base class. This type is used as a parameter type to the
+
+    dynamic site targets. The first parameter of the delegate (T) below must be
+
+    of this type.
+- uid: System.Runtime.CompilerServices.CallSite.Binder
+  parent: System.Runtime.CompilerServices.CallSite
+  isExternal: false
+  href: System.Runtime.CompilerServices.CallSite.yml
+  name: Binder
+  fullName: System.Runtime.CompilerServices.CallSite.Binder
+- uid: System.Runtime.CompilerServices.CallSite.Create(System.Type,System.Runtime.CompilerServices.CallSiteBinder)
+  parent: System.Runtime.CompilerServices.CallSite
+  isExternal: true
+  href: System.Runtime.CompilerServices.CallSite.yml
+  name: Create(Type, CallSiteBinder)
+  fullName: System.Runtime.CompilerServices.CallSite.Create(System.Type, System.Runtime.CompilerServices.CallSiteBinder)
+  spec.csharp:
+  - uid: System.Runtime.CompilerServices.CallSite.Create(System.Type,System.Runtime.CompilerServices.CallSiteBinder)
+    name: Create
+    fullName: System.Runtime.CompilerServices.CallSite.Create
+    href: System.Runtime.CompilerServices.CallSite.yml
+  - name: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Runtime.CompilerServices.CallSiteBinder
+    name: CallSiteBinder
+    fullName: System.Runtime.CompilerServices.CallSiteBinder
+    href: System.Runtime.CompilerServices.CallSiteBinder.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Runtime.CompilerServices.CallSite.Create(System.Type,System.Runtime.CompilerServices.CallSiteBinder)
+    name: Create
+    fullName: System.Runtime.CompilerServices.CallSite.Create
+    href: System.Runtime.CompilerServices.CallSite.yml
+  - name: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Runtime.CompilerServices.CallSiteBinder
+    name: CallSiteBinder
+    fullName: System.Runtime.CompilerServices.CallSiteBinder
+    href: System.Runtime.CompilerServices.CallSiteBinder.yml
+  - name: )
+    fullName: )
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: '{T}'
+  isExternal: false
+  name: T
+  fullName: T
+- uid: System.Runtime.CompilerServices.CallSiteBinder
+  parent: System.Runtime.CompilerServices
+  isExternal: false
+  href: System.Runtime.CompilerServices.CallSiteBinder.yml
+  name: CallSiteBinder
+  fullName: System.Runtime.CompilerServices.CallSiteBinder
+  type: Class
+  summary: Class responsible for runtime binding of the dynamic operations on the dynamic call site.
+- uid: System.Runtime.CompilerServices.CallSite`1
+  parent: System.Runtime.CompilerServices
+  isExternal: false
+  href: System.Runtime.CompilerServices.CallSite`1.yml
+  name: CallSite<T>
+  name.vb: CallSite(Of T)
+  fullName: System.Runtime.CompilerServices.CallSite<T>
+  fullName.vb: System.Runtime.CompilerServices.CallSite(Of T)
+  type: Class
+  summary: Dynamic site type.
+  spec.csharp:
+  - uid: System.Runtime.CompilerServices.CallSite`1
+    name: CallSite
+    fullName: System.Runtime.CompilerServices.CallSite
+    href: System.Runtime.CompilerServices.CallSite`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Runtime.CompilerServices.CallSite`1
+    name: CallSite
+    fullName: System.Runtime.CompilerServices.CallSite
+    href: System.Runtime.CompilerServices.CallSite`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )

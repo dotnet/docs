@@ -1,0 +1,77 @@
+items:
+- uid: System.Net.WebSockets
+  id: System.Net.WebSockets
+  children:
+  - System.Net.WebSockets.WebSocket
+  - System.Net.WebSockets.WebSocketCloseStatus
+  - System.Net.WebSockets.WebSocketError
+  - System.Net.WebSockets.WebSocketException
+  - System.Net.WebSockets.WebSocketMessageType
+  - System.Net.WebSockets.WebSocketReceiveResult
+  - System.Net.WebSockets.WebSocketState
+  href: System.Net.WebSockets.yml
+  name: System.Net.WebSockets
+  fullName: System.Net.WebSockets
+  type: Namespace
+  source:
+    remote:
+      path: src/System.Net.WebSockets/src/System/Net/WebSockets/WebSocketState.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Net.WebSockets/src/System/Net/WebSockets/WebSocketState.cs
+    startLine: 3
+  assemblies:
+  - System.Net.WebSockets
+  summary: The @'System.Net.WebSockets' namespace provides a managed implementation of the WebSocket interface for developers.
+references:
+- uid: System.Net.WebSockets.WebSocket
+  isExternal: false
+  href: System.Net.WebSockets.WebSocket.yml
+  name: WebSocket
+  fullName: System.Net.WebSockets.WebSocket
+  type: Class
+- uid: System.Net.WebSockets.WebSocketCloseStatus
+  parent: System.Net.WebSockets
+  isExternal: false
+  href: System.Net.WebSockets.WebSocketCloseStatus.yml
+  name: WebSocketCloseStatus
+  fullName: System.Net.WebSockets.WebSocketCloseStatus
+  type: Enum
+- uid: System.Net.WebSockets.WebSocketError
+  parent: System.Net.WebSockets
+  isExternal: false
+  href: System.Net.WebSockets.WebSocketError.yml
+  name: WebSocketError
+  fullName: System.Net.WebSockets.WebSocketError
+  type: Enum
+- uid: System.Net.WebSockets.WebSocketException
+  isExternal: false
+  href: System.Net.WebSockets.WebSocketException.yml
+  name: WebSocketException
+  fullName: System.Net.WebSockets.WebSocketException
+  type: Class
+- uid: System.Net.WebSockets.WebSocketMessageType
+  parent: System.Net.WebSockets
+  isExternal: false
+  href: System.Net.WebSockets.WebSocketMessageType.yml
+  name: WebSocketMessageType
+  fullName: System.Net.WebSockets.WebSocketMessageType
+  type: Enum
+- uid: System.Net.WebSockets.WebSocketReceiveResult
+  isExternal: false
+  href: System.Net.WebSockets.WebSocketReceiveResult.yml
+  name: WebSocketReceiveResult
+  fullName: System.Net.WebSockets.WebSocketReceiveResult
+  type: Class
+- uid: System.Net.WebSockets.WebSocketState
+  parent: System.Net.WebSockets
+  isExternal: false
+  href: System.Net.WebSockets.WebSocketState.yml
+  name: WebSocketState
+  fullName: System.Net.WebSockets.WebSocketState
+  type: Enum
+- uid: System.Net.WebSockets
+  isExternal: false
+  name: System.Net.WebSockets
+  fullName: System.Net.WebSockets
+  type: Namespace

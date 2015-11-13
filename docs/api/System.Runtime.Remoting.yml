@@ -1,0 +1,39 @@
+items:
+- uid: System.Runtime.Remoting
+  id: System.Runtime.Remoting
+  children:
+  - System.Runtime.Remoting.IObjectHandle
+  - System.Runtime.Remoting.ObjectHandle
+  href: System.Runtime.Remoting.yml
+  name: System.Runtime.Remoting
+  fullName: System.Runtime.Remoting
+  type: Namespace
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/Remoting/ObjectHandle.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/Remoting/ObjectHandle.cs
+    startLine: 15
+  assemblies:
+  - mscorlib
+  summary: The @'System.Runtime.Remoting' namespace provides classes and interfaces that allow developers to create and configure distributed applications. Some of the more important classes of the @'System.Runtime.Remoting' namespace are the @'System.Runtime.Remoting.RemotingConfiguration' class, the @'System.Runtime.Remoting.RemotingServices' class, and the @'System.Runtime.Remoting.ObjRef' class.
+references:
+- uid: System.Runtime.Remoting.IObjectHandle
+  isExternal: false
+  href: System.Runtime.Remoting.IObjectHandle.yml
+  name: IObjectHandle
+  fullName: System.Runtime.Remoting.IObjectHandle
+  type: Interface
+- uid: System.Runtime.Remoting.ObjectHandle
+  parent: System.Runtime.Remoting
+  isExternal: false
+  href: System.Runtime.Remoting.ObjectHandle.yml
+  name: ObjectHandle
+  fullName: System.Runtime.Remoting.ObjectHandle
+  type: Class
+- uid: System.Runtime.Remoting
+  isExternal: false
+  name: System.Runtime.Remoting
+  fullName: System.Runtime.Remoting
+  type: Namespace

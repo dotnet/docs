@@ -1,0 +1,852 @@
+items:
+- uid: System.Security.NamedPermissionSet
+  id: NamedPermissionSet
+  parent: System.Security
+  children: []
+  href: System.Security.NamedPermissionSet.yml
+  name: NamedPermissionSet
+  fullName: System.Security.NamedPermissionSet
+  type: Class
+  source:
+    remote:
+      path: src/mscorlib/src/System/Security/NamedPermissionSet.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Security/NamedPermissionSet.cs
+    startLine: 33
+  assemblies:
+  - mscorlib
+  namespace: System.Security
+  summary: Defines a permission set that has a name and description associated with it. This class cannot be inherited.
+  syntax:
+    content: 'public sealed class NamedPermissionSet : PermissionSet, ISecurityEncodable, ICollection, IEnumerable, IStackWalk, IDeserializationCallback'
+    content.vb: Public NotInheritable Class NamedPermissionSet Inherits PermissionSet Implements ISecurityEncodable, ICollection, IEnumerable, IStackWalk, IDeserializationCallback
+  inheritance:
+  - System.Object
+  - System.Security.PermissionSet
+  implements:
+  - System.Security.ISecurityEncodable
+  - System.Collections.ICollection
+  - System.Collections.IEnumerable
+  - System.Security.IStackWalk
+  - System.Runtime.Serialization.IDeserializationCallback
+  inheritedMembers:
+  - System.Security.PermissionSet.CopyTo(System.Array,System.Int32)
+  - System.Security.PermissionSet.SyncRoot
+  - System.Security.PermissionSet.IsSynchronized
+  - System.Security.PermissionSet.IsReadOnly
+  - System.Security.PermissionSet.IsEmpty
+  - System.Security.PermissionSet.Count
+  - System.Security.PermissionSet.SetPermission(System.Security.IPermission)
+  - System.Security.PermissionSet.SetPermissionImpl(System.Security.IPermission)
+  - System.Security.PermissionSet.AddPermission(System.Security.IPermission)
+  - System.Security.PermissionSet.AddPermissionImpl(System.Security.IPermission)
+  - System.Security.PermissionSet.IsUnrestricted
+  - System.Security.PermissionSet.IsSubsetOf(System.Security.PermissionSet)
+  - System.Security.PermissionSet.Intersect(System.Security.PermissionSet)
+  - System.Security.PermissionSet.Union(System.Security.PermissionSet)
+  - System.Security.PermissionSet.Equals(System.Object)
+  - System.Security.PermissionSet.GetHashCode
+  - System.Security.PermissionSet.Demand
+  - System.Security.PermissionSet.Assert
+  - System.Security.PermissionSet.Deny
+  - System.Security.PermissionSet.PermitOnly
+  - System.Security.PermissionSet.Copy
+  - System.Security.PermissionSet.GetEnumerator
+  - System.Security.PermissionSet.GetEnumeratorImpl
+  - System.Security.PermissionSet.ContainsNonCodeAccessPermissions
+  - System.Security.PermissionSet.RevertAssert
+  - System.Object.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+references:
+- uid: System.Security
+  isExternal: false
+  name: System.Security
+  fullName: System.Security
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Security.PermissionSet
+  parent: System.Security
+  isExternal: false
+  href: System.Security.PermissionSet.yml
+  name: PermissionSet
+  fullName: System.Security.PermissionSet
+  type: Class
+- uid: System.Security.PermissionSet.CopyTo(System.Array,System.Int32)
+  parent: System.Security.PermissionSet
+  isExternal: false
+  href: System.Security.PermissionSet.yml
+  name: CopyTo(Array, Int32)
+  fullName: System.Security.PermissionSet.CopyTo(System.Array, System.Int32)
+  spec.csharp:
+  - uid: System.Security.PermissionSet.CopyTo(System.Array,System.Int32)
+    name: CopyTo
+    fullName: System.Security.PermissionSet.CopyTo
+    href: System.Security.PermissionSet.yml
+  - name: (
+    fullName: (
+  - uid: System.Array
+    name: Array
+    fullName: System.Array
+    href: System.Array.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.PermissionSet.CopyTo(System.Array,System.Int32)
+    name: CopyTo
+    fullName: System.Security.PermissionSet.CopyTo
+    href: System.Security.PermissionSet.yml
+  - name: (
+    fullName: (
+  - uid: System.Array
+    name: Array
+    fullName: System.Array
+    href: System.Array.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Security.PermissionSet.SyncRoot
+  parent: System.Security.PermissionSet
+  isExternal: false
+  href: System.Security.PermissionSet.yml
+  name: SyncRoot
+  fullName: System.Security.PermissionSet.SyncRoot
+- uid: System.Security.PermissionSet.IsSynchronized
+  parent: System.Security.PermissionSet
+  isExternal: false
+  href: System.Security.PermissionSet.yml
+  name: IsSynchronized
+  fullName: System.Security.PermissionSet.IsSynchronized
+- uid: System.Security.PermissionSet.IsReadOnly
+  parent: System.Security.PermissionSet
+  isExternal: false
+  href: System.Security.PermissionSet.yml
+  name: IsReadOnly
+  fullName: System.Security.PermissionSet.IsReadOnly
+- uid: System.Security.PermissionSet.IsEmpty
+  parent: System.Security.PermissionSet
+  isExternal: false
+  href: System.Security.PermissionSet.yml
+  name: IsEmpty()
+  fullName: System.Security.PermissionSet.IsEmpty()
+  spec.csharp:
+  - uid: System.Security.PermissionSet.IsEmpty
+    name: IsEmpty
+    fullName: System.Security.PermissionSet.IsEmpty
+    href: System.Security.PermissionSet.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.PermissionSet.IsEmpty
+    name: IsEmpty
+    fullName: System.Security.PermissionSet.IsEmpty
+    href: System.Security.PermissionSet.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Security.PermissionSet.Count
+  parent: System.Security.PermissionSet
+  isExternal: false
+  href: System.Security.PermissionSet.yml
+  name: Count
+  fullName: System.Security.PermissionSet.Count
+- uid: System.Security.PermissionSet.SetPermission(System.Security.IPermission)
+  parent: System.Security.PermissionSet
+  isExternal: false
+  href: System.Security.PermissionSet.yml
+  name: SetPermission(IPermission)
+  fullName: System.Security.PermissionSet.SetPermission(System.Security.IPermission)
+  spec.csharp:
+  - uid: System.Security.PermissionSet.SetPermission(System.Security.IPermission)
+    name: SetPermission
+    fullName: System.Security.PermissionSet.SetPermission
+    href: System.Security.PermissionSet.yml
+  - name: (
+    fullName: (
+  - uid: System.Security.IPermission
+    name: IPermission
+    fullName: System.Security.IPermission
+    href: System.Security.IPermission.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.PermissionSet.SetPermission(System.Security.IPermission)
+    name: SetPermission
+    fullName: System.Security.PermissionSet.SetPermission
+    href: System.Security.PermissionSet.yml
+  - name: (
+    fullName: (
+  - uid: System.Security.IPermission
+    name: IPermission
+    fullName: System.Security.IPermission
+    href: System.Security.IPermission.yml
+  - name: )
+    fullName: )
+- uid: System.Security.PermissionSet.SetPermissionImpl(System.Security.IPermission)
+  parent: System.Security.PermissionSet
+  isExternal: false
+  href: System.Security.PermissionSet.yml
+  name: SetPermissionImpl(IPermission)
+  fullName: System.Security.PermissionSet.SetPermissionImpl(System.Security.IPermission)
+  spec.csharp:
+  - uid: System.Security.PermissionSet.SetPermissionImpl(System.Security.IPermission)
+    name: SetPermissionImpl
+    fullName: System.Security.PermissionSet.SetPermissionImpl
+    href: System.Security.PermissionSet.yml
+  - name: (
+    fullName: (
+  - uid: System.Security.IPermission
+    name: IPermission
+    fullName: System.Security.IPermission
+    href: System.Security.IPermission.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.PermissionSet.SetPermissionImpl(System.Security.IPermission)
+    name: SetPermissionImpl
+    fullName: System.Security.PermissionSet.SetPermissionImpl
+    href: System.Security.PermissionSet.yml
+  - name: (
+    fullName: (
+  - uid: System.Security.IPermission
+    name: IPermission
+    fullName: System.Security.IPermission
+    href: System.Security.IPermission.yml
+  - name: )
+    fullName: )
+- uid: System.Security.PermissionSet.AddPermission(System.Security.IPermission)
+  parent: System.Security.PermissionSet
+  isExternal: false
+  href: System.Security.PermissionSet.yml
+  name: AddPermission(IPermission)
+  fullName: System.Security.PermissionSet.AddPermission(System.Security.IPermission)
+  spec.csharp:
+  - uid: System.Security.PermissionSet.AddPermission(System.Security.IPermission)
+    name: AddPermission
+    fullName: System.Security.PermissionSet.AddPermission
+    href: System.Security.PermissionSet.yml
+  - name: (
+    fullName: (
+  - uid: System.Security.IPermission
+    name: IPermission
+    fullName: System.Security.IPermission
+    href: System.Security.IPermission.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.PermissionSet.AddPermission(System.Security.IPermission)
+    name: AddPermission
+    fullName: System.Security.PermissionSet.AddPermission
+    href: System.Security.PermissionSet.yml
+  - name: (
+    fullName: (
+  - uid: System.Security.IPermission
+    name: IPermission
+    fullName: System.Security.IPermission
+    href: System.Security.IPermission.yml
+  - name: )
+    fullName: )
+- uid: System.Security.PermissionSet.AddPermissionImpl(System.Security.IPermission)
+  parent: System.Security.PermissionSet
+  isExternal: false
+  href: System.Security.PermissionSet.yml
+  name: AddPermissionImpl(IPermission)
+  fullName: System.Security.PermissionSet.AddPermissionImpl(System.Security.IPermission)
+  spec.csharp:
+  - uid: System.Security.PermissionSet.AddPermissionImpl(System.Security.IPermission)
+    name: AddPermissionImpl
+    fullName: System.Security.PermissionSet.AddPermissionImpl
+    href: System.Security.PermissionSet.yml
+  - name: (
+    fullName: (
+  - uid: System.Security.IPermission
+    name: IPermission
+    fullName: System.Security.IPermission
+    href: System.Security.IPermission.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.PermissionSet.AddPermissionImpl(System.Security.IPermission)
+    name: AddPermissionImpl
+    fullName: System.Security.PermissionSet.AddPermissionImpl
+    href: System.Security.PermissionSet.yml
+  - name: (
+    fullName: (
+  - uid: System.Security.IPermission
+    name: IPermission
+    fullName: System.Security.IPermission
+    href: System.Security.IPermission.yml
+  - name: )
+    fullName: )
+- uid: System.Security.PermissionSet.IsUnrestricted
+  parent: System.Security.PermissionSet
+  isExternal: false
+  href: System.Security.PermissionSet.yml
+  name: IsUnrestricted()
+  fullName: System.Security.PermissionSet.IsUnrestricted()
+  spec.csharp:
+  - uid: System.Security.PermissionSet.IsUnrestricted
+    name: IsUnrestricted
+    fullName: System.Security.PermissionSet.IsUnrestricted
+    href: System.Security.PermissionSet.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.PermissionSet.IsUnrestricted
+    name: IsUnrestricted
+    fullName: System.Security.PermissionSet.IsUnrestricted
+    href: System.Security.PermissionSet.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Security.PermissionSet.IsSubsetOf(System.Security.PermissionSet)
+  parent: System.Security.PermissionSet
+  isExternal: false
+  href: System.Security.PermissionSet.yml
+  name: IsSubsetOf(PermissionSet)
+  fullName: System.Security.PermissionSet.IsSubsetOf(System.Security.PermissionSet)
+  spec.csharp:
+  - uid: System.Security.PermissionSet.IsSubsetOf(System.Security.PermissionSet)
+    name: IsSubsetOf
+    fullName: System.Security.PermissionSet.IsSubsetOf
+    href: System.Security.PermissionSet.yml
+  - name: (
+    fullName: (
+  - uid: System.Security.PermissionSet
+    name: PermissionSet
+    fullName: System.Security.PermissionSet
+    href: System.Security.PermissionSet.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.PermissionSet.IsSubsetOf(System.Security.PermissionSet)
+    name: IsSubsetOf
+    fullName: System.Security.PermissionSet.IsSubsetOf
+    href: System.Security.PermissionSet.yml
+  - name: (
+    fullName: (
+  - uid: System.Security.PermissionSet
+    name: PermissionSet
+    fullName: System.Security.PermissionSet
+    href: System.Security.PermissionSet.yml
+  - name: )
+    fullName: )
+- uid: System.Security.PermissionSet.Intersect(System.Security.PermissionSet)
+  parent: System.Security.PermissionSet
+  isExternal: false
+  href: System.Security.PermissionSet.yml
+  name: Intersect(PermissionSet)
+  fullName: System.Security.PermissionSet.Intersect(System.Security.PermissionSet)
+  spec.csharp:
+  - uid: System.Security.PermissionSet.Intersect(System.Security.PermissionSet)
+    name: Intersect
+    fullName: System.Security.PermissionSet.Intersect
+    href: System.Security.PermissionSet.yml
+  - name: (
+    fullName: (
+  - uid: System.Security.PermissionSet
+    name: PermissionSet
+    fullName: System.Security.PermissionSet
+    href: System.Security.PermissionSet.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.PermissionSet.Intersect(System.Security.PermissionSet)
+    name: Intersect
+    fullName: System.Security.PermissionSet.Intersect
+    href: System.Security.PermissionSet.yml
+  - name: (
+    fullName: (
+  - uid: System.Security.PermissionSet
+    name: PermissionSet
+    fullName: System.Security.PermissionSet
+    href: System.Security.PermissionSet.yml
+  - name: )
+    fullName: )
+- uid: System.Security.PermissionSet.Union(System.Security.PermissionSet)
+  parent: System.Security.PermissionSet
+  isExternal: false
+  href: System.Security.PermissionSet.yml
+  name: Union(PermissionSet)
+  fullName: System.Security.PermissionSet.Union(System.Security.PermissionSet)
+  spec.csharp:
+  - uid: System.Security.PermissionSet.Union(System.Security.PermissionSet)
+    name: Union
+    fullName: System.Security.PermissionSet.Union
+    href: System.Security.PermissionSet.yml
+  - name: (
+    fullName: (
+  - uid: System.Security.PermissionSet
+    name: PermissionSet
+    fullName: System.Security.PermissionSet
+    href: System.Security.PermissionSet.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.PermissionSet.Union(System.Security.PermissionSet)
+    name: Union
+    fullName: System.Security.PermissionSet.Union
+    href: System.Security.PermissionSet.yml
+  - name: (
+    fullName: (
+  - uid: System.Security.PermissionSet
+    name: PermissionSet
+    fullName: System.Security.PermissionSet
+    href: System.Security.PermissionSet.yml
+  - name: )
+    fullName: )
+- uid: System.Security.PermissionSet.Equals(System.Object)
+  parent: System.Security.PermissionSet
+  isExternal: false
+  href: System.Security.PermissionSet.yml
+  name: Equals(Object)
+  fullName: System.Security.PermissionSet.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Security.PermissionSet.Equals(System.Object)
+    name: Equals
+    fullName: System.Security.PermissionSet.Equals
+    href: System.Security.PermissionSet.yml
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    href: System.Object.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.PermissionSet.Equals(System.Object)
+    name: Equals
+    fullName: System.Security.PermissionSet.Equals
+    href: System.Security.PermissionSet.yml
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    href: System.Object.yml
+  - name: )
+    fullName: )
+- uid: System.Security.PermissionSet.GetHashCode
+  parent: System.Security.PermissionSet
+  isExternal: false
+  href: System.Security.PermissionSet.yml
+  name: GetHashCode()
+  fullName: System.Security.PermissionSet.GetHashCode()
+  spec.csharp:
+  - uid: System.Security.PermissionSet.GetHashCode
+    name: GetHashCode
+    fullName: System.Security.PermissionSet.GetHashCode
+    href: System.Security.PermissionSet.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.PermissionSet.GetHashCode
+    name: GetHashCode
+    fullName: System.Security.PermissionSet.GetHashCode
+    href: System.Security.PermissionSet.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Security.PermissionSet.Demand
+  parent: System.Security.PermissionSet
+  isExternal: false
+  href: System.Security.PermissionSet.yml
+  name: Demand()
+  fullName: System.Security.PermissionSet.Demand()
+  spec.csharp:
+  - uid: System.Security.PermissionSet.Demand
+    name: Demand
+    fullName: System.Security.PermissionSet.Demand
+    href: System.Security.PermissionSet.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.PermissionSet.Demand
+    name: Demand
+    fullName: System.Security.PermissionSet.Demand
+    href: System.Security.PermissionSet.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Security.PermissionSet.Assert
+  parent: System.Security.PermissionSet
+  isExternal: false
+  href: System.Security.PermissionSet.yml
+  name: Assert()
+  fullName: System.Security.PermissionSet.Assert()
+  spec.csharp:
+  - uid: System.Security.PermissionSet.Assert
+    name: Assert
+    fullName: System.Security.PermissionSet.Assert
+    href: System.Security.PermissionSet.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.PermissionSet.Assert
+    name: Assert
+    fullName: System.Security.PermissionSet.Assert
+    href: System.Security.PermissionSet.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Security.PermissionSet.Deny
+  parent: System.Security.PermissionSet
+  isExternal: false
+  href: System.Security.PermissionSet.yml
+  name: Deny()
+  fullName: System.Security.PermissionSet.Deny()
+  spec.csharp:
+  - uid: System.Security.PermissionSet.Deny
+    name: Deny
+    fullName: System.Security.PermissionSet.Deny
+    href: System.Security.PermissionSet.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.PermissionSet.Deny
+    name: Deny
+    fullName: System.Security.PermissionSet.Deny
+    href: System.Security.PermissionSet.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Security.PermissionSet.PermitOnly
+  parent: System.Security.PermissionSet
+  isExternal: false
+  href: System.Security.PermissionSet.yml
+  name: PermitOnly()
+  fullName: System.Security.PermissionSet.PermitOnly()
+  spec.csharp:
+  - uid: System.Security.PermissionSet.PermitOnly
+    name: PermitOnly
+    fullName: System.Security.PermissionSet.PermitOnly
+    href: System.Security.PermissionSet.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.PermissionSet.PermitOnly
+    name: PermitOnly
+    fullName: System.Security.PermissionSet.PermitOnly
+    href: System.Security.PermissionSet.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Security.PermissionSet.Copy
+  parent: System.Security.PermissionSet
+  isExternal: false
+  href: System.Security.PermissionSet.yml
+  name: Copy()
+  fullName: System.Security.PermissionSet.Copy()
+  spec.csharp:
+  - uid: System.Security.PermissionSet.Copy
+    name: Copy
+    fullName: System.Security.PermissionSet.Copy
+    href: System.Security.PermissionSet.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.PermissionSet.Copy
+    name: Copy
+    fullName: System.Security.PermissionSet.Copy
+    href: System.Security.PermissionSet.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Security.PermissionSet.GetEnumerator
+  parent: System.Security.PermissionSet
+  isExternal: false
+  href: System.Security.PermissionSet.yml
+  name: GetEnumerator()
+  fullName: System.Security.PermissionSet.GetEnumerator()
+  spec.csharp:
+  - uid: System.Security.PermissionSet.GetEnumerator
+    name: GetEnumerator
+    fullName: System.Security.PermissionSet.GetEnumerator
+    href: System.Security.PermissionSet.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.PermissionSet.GetEnumerator
+    name: GetEnumerator
+    fullName: System.Security.PermissionSet.GetEnumerator
+    href: System.Security.PermissionSet.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Security.PermissionSet.GetEnumeratorImpl
+  parent: System.Security.PermissionSet
+  isExternal: false
+  href: System.Security.PermissionSet.yml
+  name: GetEnumeratorImpl()
+  fullName: System.Security.PermissionSet.GetEnumeratorImpl()
+  spec.csharp:
+  - uid: System.Security.PermissionSet.GetEnumeratorImpl
+    name: GetEnumeratorImpl
+    fullName: System.Security.PermissionSet.GetEnumeratorImpl
+    href: System.Security.PermissionSet.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.PermissionSet.GetEnumeratorImpl
+    name: GetEnumeratorImpl
+    fullName: System.Security.PermissionSet.GetEnumeratorImpl
+    href: System.Security.PermissionSet.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Security.PermissionSet.ContainsNonCodeAccessPermissions
+  parent: System.Security.PermissionSet
+  isExternal: false
+  href: System.Security.PermissionSet.yml
+  name: ContainsNonCodeAccessPermissions()
+  fullName: System.Security.PermissionSet.ContainsNonCodeAccessPermissions()
+  spec.csharp:
+  - uid: System.Security.PermissionSet.ContainsNonCodeAccessPermissions
+    name: ContainsNonCodeAccessPermissions
+    fullName: System.Security.PermissionSet.ContainsNonCodeAccessPermissions
+    href: System.Security.PermissionSet.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.PermissionSet.ContainsNonCodeAccessPermissions
+    name: ContainsNonCodeAccessPermissions
+    fullName: System.Security.PermissionSet.ContainsNonCodeAccessPermissions
+    href: System.Security.PermissionSet.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Security.PermissionSet.RevertAssert
+  parent: System.Security.PermissionSet
+  isExternal: false
+  href: System.Security.PermissionSet.yml
+  name: RevertAssert()
+  fullName: System.Security.PermissionSet.RevertAssert()
+  spec.csharp:
+  - uid: System.Security.PermissionSet.RevertAssert
+    name: RevertAssert
+    fullName: System.Security.PermissionSet.RevertAssert
+    href: System.Security.PermissionSet.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.PermissionSet.RevertAssert
+    name: RevertAssert
+    fullName: System.Security.PermissionSet.RevertAssert
+    href: System.Security.PermissionSet.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

@@ -1,0 +1,65 @@
+items:
+- uid: System.Runtime.InteropServices.ComTypes.DATADIR
+  id: DATADIR
+  parent: System.Runtime.InteropServices.ComTypes
+  children:
+  - System.Runtime.InteropServices.ComTypes.DATADIR.DATADIR_GET
+  - System.Runtime.InteropServices.ComTypes.DATADIR.DATADIR_SET
+  href: System.Runtime.InteropServices.ComTypes.DATADIR.yml
+  name: DATADIR
+  fullName: System.Runtime.InteropServices.ComTypes.DATADIR
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Runtime.InteropServices/src/System/Runtime/InteropServices/ComTypes/datadir.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Runtime.InteropServices/src/System/Runtime/InteropServices/ComTypes/datadir.cs
+    startLine: 5
+  assemblies:
+  - System.Runtime.InteropServices.CoreCLR
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Specifies the direction of the data flow in the *dwDirection* parameter of the @'System.Runtime.InteropServices.ComTypes.IDataObject.EnumFormatEtc(System.Runtime.InteropServices.ComTypes.DATADIR)' method. This determines the formats that the resulting enumerator can enumerate.
+  syntax:
+    content: public enum DATADIR
+    content.vb: Public Enum DATADIR
+- uid: System.Runtime.InteropServices.ComTypes.DATADIR.DATADIR_GET
+  id: DATADIR_GET
+  parent: System.Runtime.InteropServices.ComTypes.DATADIR
+  href: System.Runtime.InteropServices.ComTypes.DATADIR.yml
+  name: DATADIR_GET
+  fullName: System.Runtime.InteropServices.ComTypes.DATADIR.DATADIR_GET
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Runtime.InteropServices/src/System/Runtime/InteropServices/ComTypes/datadir.cs
+    startLine: 7
+  assemblies:
+  - System.Runtime.InteropServices.CoreCLR
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Requests that @'System.Runtime.InteropServices.ComTypes.IDataObject.EnumFormatEtc(System.Runtime.InteropServices.ComTypes.DATADIR)' supply an enumerator for the formats that can be specified in @'System.Runtime.InteropServices.ComTypes.IDataObject.GetData(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.STGMEDIUM@)'.
+  syntax:
+    content: DATADIR_GET = 1
+- uid: System.Runtime.InteropServices.ComTypes.DATADIR.DATADIR_SET
+  id: DATADIR_SET
+  parent: System.Runtime.InteropServices.ComTypes.DATADIR
+  href: System.Runtime.InteropServices.ComTypes.DATADIR.yml
+  name: DATADIR_SET
+  fullName: System.Runtime.InteropServices.ComTypes.DATADIR.DATADIR_SET
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Runtime.InteropServices/src/System/Runtime/InteropServices/ComTypes/datadir.cs
+    startLine: 8
+  assemblies:
+  - System.Runtime.InteropServices.CoreCLR
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Requests that @'System.Runtime.InteropServices.ComTypes.IDataObject.EnumFormatEtc(System.Runtime.InteropServices.ComTypes.DATADIR)' supply an enumerator for the formats that can be specified in @'System.Runtime.InteropServices.ComTypes.IDataObject.SetData(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.STGMEDIUM@,System.Boolean)'.
+  syntax:
+    content: DATADIR_SET = 2
+references:
+- uid: System.Runtime.InteropServices.ComTypes
+  isExternal: false
+  name: System.Runtime.InteropServices.ComTypes
+  fullName: System.Runtime.InteropServices.ComTypes
+  type: Namespace

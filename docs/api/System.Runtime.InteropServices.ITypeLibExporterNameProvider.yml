@@ -1,0 +1,70 @@
+items:
+- uid: System.Runtime.InteropServices.ITypeLibExporterNameProvider
+  id: ITypeLibExporterNameProvider
+  parent: System.Runtime.InteropServices
+  children:
+  - System.Runtime.InteropServices.ITypeLibExporterNameProvider.GetNames
+  href: System.Runtime.InteropServices.ITypeLibExporterNameProvider.yml
+  name: ITypeLibExporterNameProvider
+  fullName: System.Runtime.InteropServices.ITypeLibExporterNameProvider
+  type: Interface
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/InteropServices/ITypeLibConverter.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/InteropServices/ITypeLibConverter.cs
+    startLine: 136
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Provides control over the casing of names when exported to a type library.
+  syntax:
+    content: public interface ITypeLibExporterNameProvider
+    content.vb: Public Interface ITypeLibExporterNameProvider
+- uid: System.Runtime.InteropServices.ITypeLibExporterNameProvider.GetNames
+  id: GetNames
+  parent: System.Runtime.InteropServices.ITypeLibExporterNameProvider
+  href: System.Runtime.InteropServices.ITypeLibExporterNameProvider.yml
+  name: GetNames()
+  fullName: System.Runtime.InteropServices.ITypeLibExporterNameProvider.GetNames()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ITypeLibConverter.cs
+    startLine: 141
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Returns a list of names to control the casing of.
+  syntax:
+    content: string[] GetNames()
+    content.vb: Function GetNames As String()
+    return:
+      type: System.String[]
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  name.vb: String()
+  fullName: System.String[]
+  fullName.vb: System.String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    fullName: ()

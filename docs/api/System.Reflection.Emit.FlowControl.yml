@@ -1,0 +1,173 @@
+items:
+- uid: System.Reflection.Emit.FlowControl
+  id: FlowControl
+  parent: System.Reflection.Emit
+  children:
+  - System.Reflection.Emit.FlowControl.Branch
+  - System.Reflection.Emit.FlowControl.Break
+  - System.Reflection.Emit.FlowControl.Call
+  - System.Reflection.Emit.FlowControl.Cond_Branch
+  - System.Reflection.Emit.FlowControl.Meta
+  - System.Reflection.Emit.FlowControl.Next
+  - System.Reflection.Emit.FlowControl.Return
+  - System.Reflection.Emit.FlowControl.Throw
+  href: System.Reflection.Emit.FlowControl.yml
+  name: FlowControl
+  fullName: System.Reflection.Emit.FlowControl
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Reflection/Emit/FlowControl.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Reflection/Emit/FlowControl.cs
+    startLine: 16
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Describes how an instruction alters the flow of control.
+  syntax:
+    content: public enum FlowControl
+    content.vb: Public Enum FlowControl
+- uid: System.Reflection.Emit.FlowControl.Branch
+  id: Branch
+  parent: System.Reflection.Emit.FlowControl
+  href: System.Reflection.Emit.FlowControl.yml
+  name: Branch
+  fullName: System.Reflection.Emit.FlowControl.Branch
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/FlowControl.cs
+    startLine: 21
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Branch instruction.
+  syntax:
+    content: Branch = 0
+- uid: System.Reflection.Emit.FlowControl.Break
+  id: Break
+  parent: System.Reflection.Emit.FlowControl
+  href: System.Reflection.Emit.FlowControl.yml
+  name: Break
+  fullName: System.Reflection.Emit.FlowControl.Break
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/FlowControl.cs
+    startLine: 22
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Break instruction.
+  syntax:
+    content: Break = 1
+- uid: System.Reflection.Emit.FlowControl.Call
+  id: Call
+  parent: System.Reflection.Emit.FlowControl
+  href: System.Reflection.Emit.FlowControl.yml
+  name: Call
+  fullName: System.Reflection.Emit.FlowControl.Call
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/FlowControl.cs
+    startLine: 23
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Call instruction.
+  syntax:
+    content: Call = 2
+- uid: System.Reflection.Emit.FlowControl.Cond_Branch
+  id: Cond_Branch
+  parent: System.Reflection.Emit.FlowControl
+  href: System.Reflection.Emit.FlowControl.yml
+  name: Cond_Branch
+  fullName: System.Reflection.Emit.FlowControl.Cond_Branch
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/FlowControl.cs
+    startLine: 24
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Conditional branch instruction.
+  syntax:
+    content: Cond_Branch = 3
+- uid: System.Reflection.Emit.FlowControl.Meta
+  id: Meta
+  parent: System.Reflection.Emit.FlowControl
+  href: System.Reflection.Emit.FlowControl.yml
+  name: Meta
+  fullName: System.Reflection.Emit.FlowControl.Meta
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/FlowControl.cs
+    startLine: 25
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Provides information about a subsequent instruction. For example, the Unaligned instruction of Reflection.Emit.Opcodes has FlowControl.Meta and specifies that the subsequent pointer instruction might be unaligned.
+  syntax:
+    content: Meta = 4
+- uid: System.Reflection.Emit.FlowControl.Next
+  id: Next
+  parent: System.Reflection.Emit.FlowControl
+  href: System.Reflection.Emit.FlowControl.yml
+  name: Next
+  fullName: System.Reflection.Emit.FlowControl.Next
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/FlowControl.cs
+    startLine: 26
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Normal flow of control.
+  syntax:
+    content: Next = 5
+- uid: System.Reflection.Emit.FlowControl.Return
+  id: Return
+  parent: System.Reflection.Emit.FlowControl
+  href: System.Reflection.Emit.FlowControl.yml
+  name: Return
+  fullName: System.Reflection.Emit.FlowControl.Return
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/FlowControl.cs
+    startLine: 32
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Return instruction.
+  syntax:
+    content: Return = 7
+- uid: System.Reflection.Emit.FlowControl.Throw
+  id: Throw
+  parent: System.Reflection.Emit.FlowControl
+  href: System.Reflection.Emit.FlowControl.yml
+  name: Throw
+  fullName: System.Reflection.Emit.FlowControl.Throw
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/FlowControl.cs
+    startLine: 33
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Exception throw instruction.
+  syntax:
+    content: Throw = 8
+references:
+- uid: System.Reflection.Emit
+  isExternal: false
+  name: System.Reflection.Emit
+  fullName: System.Reflection.Emit
+  type: Namespace

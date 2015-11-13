@@ -1,0 +1,83 @@
+items:
+- uid: System.IO.Compression.CompressionLevel
+  id: CompressionLevel
+  parent: System.IO.Compression
+  children:
+  - System.IO.Compression.CompressionLevel.Fastest
+  - System.IO.Compression.CompressionLevel.NoCompression
+  - System.IO.Compression.CompressionLevel.Optimal
+  href: System.IO.Compression.CompressionLevel.yml
+  name: CompressionLevel
+  fullName: System.IO.Compression.CompressionLevel
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.IO.Compression/src/System/IO/Compression/CompressionLevel.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.IO.Compression/src/System/IO/Compression/CompressionLevel.cs
+    startLine: 11
+  assemblies:
+  - System.IO.Compression
+  namespace: System.IO.Compression
+  summary: Specifies values that indicate whether a compression operation emphasizes speed or compression size.
+  syntax:
+    content: public enum CompressionLevel
+    content.vb: Public Enum CompressionLevel
+- uid: System.IO.Compression.CompressionLevel.Optimal
+  id: Optimal
+  parent: System.IO.Compression.CompressionLevel
+  href: System.IO.Compression.CompressionLevel.yml
+  name: Optimal
+  fullName: System.IO.Compression.CompressionLevel.Optimal
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.Compression/src/System/IO/Compression/CompressionLevel.cs
+    startLine: 13
+  assemblies:
+  - System.IO.Compression
+  namespace: System.IO.Compression
+  summary: The compression operation should be optimally compressed, even if the operation takes a longer time to complete.
+  syntax:
+    content: Optimal = 0
+- uid: System.IO.Compression.CompressionLevel.Fastest
+  id: Fastest
+  parent: System.IO.Compression.CompressionLevel
+  href: System.IO.Compression.CompressionLevel.yml
+  name: Fastest
+  fullName: System.IO.Compression.CompressionLevel.Fastest
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.Compression/src/System/IO/Compression/CompressionLevel.cs
+    startLine: 14
+  assemblies:
+  - System.IO.Compression
+  namespace: System.IO.Compression
+  summary: The compression operation should complete as quickly as possible, even if the resulting file is not optimally compressed.
+  syntax:
+    content: Fastest = 1
+- uid: System.IO.Compression.CompressionLevel.NoCompression
+  id: NoCompression
+  parent: System.IO.Compression.CompressionLevel
+  href: System.IO.Compression.CompressionLevel.yml
+  name: NoCompression
+  fullName: System.IO.Compression.CompressionLevel.NoCompression
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.Compression/src/System/IO/Compression/CompressionLevel.cs
+    startLine: 15
+  assemblies:
+  - System.IO.Compression
+  namespace: System.IO.Compression
+  summary: No compression should be performed on the file.
+  syntax:
+    content: NoCompression = 2
+references:
+- uid: System.IO.Compression
+  isExternal: false
+  name: System.IO.Compression
+  fullName: System.IO.Compression
+  type: Namespace

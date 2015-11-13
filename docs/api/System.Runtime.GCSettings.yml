@@ -1,0 +1,345 @@
+items:
+- uid: System.Runtime.GCSettings
+  id: GCSettings
+  parent: System.Runtime
+  children:
+  - System.Runtime.GCSettings.IsServerGC
+  - System.Runtime.GCSettings.LargeObjectHeapCompactionMode
+  - System.Runtime.GCSettings.LatencyMode
+  href: System.Runtime.GCSettings.yml
+  name: GCSettings
+  fullName: System.Runtime.GCSettings
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/GcSettings.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/GcSettings.cs
+    startLine: 31
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime
+  summary: Specifies the garbage collection settings for the current process.
+  syntax:
+    content: public class GCSettings
+    content.vb: Public Class GCSettings
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Runtime.GCSettings.LatencyMode
+  id: LatencyMode
+  parent: System.Runtime.GCSettings
+  href: System.Runtime.GCSettings.yml
+  name: LatencyMode
+  fullName: System.Runtime.GCSettings.LatencyMode
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/GcSettings.cs
+    startLine: 39
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime
+  summary: Gets or sets the current latency mode for garbage collection.
+  syntax:
+    content: public static GCLatencyMode LatencyMode { get; set; }
+    content.vb: Public Shared Property LatencyMode As GCLatencyMode
+    parameters: []
+    return:
+      type: System.Runtime.GCLatencyMode
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: The @'System.Runtime.GCSettings.LatencyMode' property is being set to an invalid value. -or-The @'System.Runtime.GCSettings.LatencyMode' property cannot be set to @'System.Runtime.GCLatencyMode.NoGCRegion'.
+- uid: System.Runtime.GCSettings.LargeObjectHeapCompactionMode
+  id: LargeObjectHeapCompactionMode
+  parent: System.Runtime.GCSettings
+  href: System.Runtime.GCSettings.yml
+  name: LargeObjectHeapCompactionMode
+  fullName: System.Runtime.GCSettings.LargeObjectHeapCompactionMode
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/GcSettings.cs
+    startLine: 65
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime
+  summary: '[Supported in the .NET Framework 4.5.1 and later versions] Gets or sets a value that indicates whether a full blocking garbage collection compacts the large object heap (LOH).'
+  syntax:
+    content: public static GCLargeObjectHeapCompactionMode LargeObjectHeapCompactionMode { get; set; }
+    content.vb: Public Shared Property LargeObjectHeapCompactionMode As GCLargeObjectHeapCompactionMode
+    parameters: []
+    return:
+      type: System.Runtime.GCLargeObjectHeapCompactionMode
+- uid: System.Runtime.GCSettings.IsServerGC
+  id: IsServerGC
+  parent: System.Runtime.GCSettings
+  href: System.Runtime.GCSettings.yml
+  name: IsServerGC
+  fullName: System.Runtime.GCSettings.IsServerGC
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/GcSettings.cs
+    startLine: 91
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime
+  summary: Gets a value that indicates whether server garbage collection is enabled.
+  syntax:
+    content: public static bool IsServerGC { get; }
+    content.vb: Public Shared ReadOnly Property IsServerGC As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+references:
+- uid: System.Runtime
+  isExternal: false
+  name: System.Runtime
+  fullName: System.Runtime
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Runtime.GCLatencyMode
+  parent: System.Runtime
+  isExternal: false
+  href: System.Runtime.GCLatencyMode.yml
+  name: GCLatencyMode
+  fullName: System.Runtime.GCLatencyMode
+  type: Enum
+- uid: System.Runtime.GCLargeObjectHeapCompactionMode
+  parent: System.Runtime
+  isExternal: false
+  href: System.Runtime.GCLargeObjectHeapCompactionMode.yml
+  name: GCLargeObjectHeapCompactionMode
+  fullName: System.Runtime.GCLargeObjectHeapCompactionMode
+  type: Enum
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean

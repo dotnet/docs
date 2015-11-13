@@ -1,0 +1,212 @@
+items:
+- uid: System.Dynamic
+  id: System.Dynamic
+  children:
+  - System.Dynamic.BinaryOperationBinder
+  - System.Dynamic.BindingRestrictions
+  - System.Dynamic.CallInfo
+  - System.Dynamic.ConvertBinder
+  - System.Dynamic.CreateInstanceBinder
+  - System.Dynamic.DeleteIndexBinder
+  - System.Dynamic.DeleteMemberBinder
+  - System.Dynamic.DynamicMetaObject
+  - System.Dynamic.DynamicMetaObjectBinder
+  - System.Dynamic.DynamicObject
+  - System.Dynamic.ExpandoObject
+  - System.Dynamic.GetIndexBinder
+  - System.Dynamic.GetMemberBinder
+  - System.Dynamic.IDynamicMetaObjectProvider
+  - System.Dynamic.IInvokeOnGetBinder
+  - System.Dynamic.InvokeBinder
+  - System.Dynamic.InvokeMemberBinder
+  - System.Dynamic.SetIndexBinder
+  - System.Dynamic.SetMemberBinder
+  - System.Dynamic.UnaryOperationBinder
+  href: System.Dynamic.yml
+  name: System.Dynamic
+  fullName: System.Dynamic
+  type: Namespace
+  source:
+    remote:
+      path: src/System.Dynamic.Runtime/src/System/Dynamic/UpdateDelegates.Generated.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/UpdateDelegates.Generated.cs
+    startLine: 5
+  assemblies:
+  - System.Dynamic.Runtime
+  summary: The @'System.Dynamic' namespace provides classes and interfaces that support Dynamic Language Runtime.
+references:
+- uid: System.Dynamic.BinaryOperationBinder
+  isExternal: false
+  href: System.Dynamic.BinaryOperationBinder.yml
+  name: BinaryOperationBinder
+  fullName: System.Dynamic.BinaryOperationBinder
+  type: Class
+  summary: Represents the binary dynamic operation at the call site, providing the binding semantic and the details about the operation.
+- uid: System.Dynamic.BindingRestrictions
+  parent: System.Dynamic
+  isExternal: false
+  href: System.Dynamic.BindingRestrictions.yml
+  name: BindingRestrictions
+  fullName: System.Dynamic.BindingRestrictions
+  type: Class
+  summary: Represents a set of binding restrictions on the @'System.Dynamic.DynamicMetaObject'under which the dynamic binding is valid.
+- uid: System.Dynamic.CallInfo
+  isExternal: false
+  href: System.Dynamic.CallInfo.yml
+  name: CallInfo
+  fullName: System.Dynamic.CallInfo
+  type: Class
+  summary: Describes arguments in the dynamic binding process.
+- uid: System.Dynamic.ConvertBinder
+  isExternal: false
+  href: System.Dynamic.ConvertBinder.yml
+  name: ConvertBinder
+  fullName: System.Dynamic.ConvertBinder
+  type: Class
+  summary: Represents the convert dynamic operation at the call site, providing the binding semantic and the details about the operation.
+- uid: System.Dynamic.CreateInstanceBinder
+  isExternal: false
+  href: System.Dynamic.CreateInstanceBinder.yml
+  name: CreateInstanceBinder
+  fullName: System.Dynamic.CreateInstanceBinder
+  type: Class
+  summary: Represents the create dynamic operation at the call site, providing the binding semantic and the details about the operation.
+- uid: System.Dynamic.DeleteIndexBinder
+  isExternal: false
+  href: System.Dynamic.DeleteIndexBinder.yml
+  name: DeleteIndexBinder
+  fullName: System.Dynamic.DeleteIndexBinder
+  type: Class
+  summary: Represents the dynamic delete index operation at the call site, providing the binding semantic and the details about the operation.
+- uid: System.Dynamic.DeleteMemberBinder
+  isExternal: false
+  href: System.Dynamic.DeleteMemberBinder.yml
+  name: DeleteMemberBinder
+  fullName: System.Dynamic.DeleteMemberBinder
+  type: Class
+  summary: Represents the dynamic delete member operation at the call site, providing the binding semantic and the details about the operation.
+- uid: System.Dynamic.DynamicMetaObject
+  parent: System.Dynamic
+  isExternal: false
+  href: System.Dynamic.DynamicMetaObject.yml
+  name: DynamicMetaObject
+  fullName: System.Dynamic.DynamicMetaObject
+  type: Class
+  summary: Represents the dynamic binding and a binding logic of an object participating in the dynamic binding.
+- uid: System.Dynamic.DynamicMetaObjectBinder
+  parent: System.Dynamic
+  isExternal: false
+  href: System.Dynamic.DynamicMetaObjectBinder.yml
+  name: DynamicMetaObjectBinder
+  fullName: System.Dynamic.DynamicMetaObjectBinder
+  type: Class
+  summary: The dynamic call site binder that participates in the @'System.Dynamic.DynamicMetaObject' binding protocol.
+- uid: System.Dynamic.DynamicObject
+  isExternal: false
+  href: System.Dynamic.DynamicObject.yml
+  name: DynamicObject
+  fullName: System.Dynamic.DynamicObject
+  type: Class
+  summary: >-
+    Provides a simple class that can be inherited from to create an object with dynamic behavior
+
+    at runtime.  Subclasses can override the various binder methods (GetMember, SetMember, Call, etc...)
+
+    to provide custom behavior that will be invoked at runtime.
+
+
+
+    If a method is not overridden then the DynamicObject does not directly support that behavior and
+
+    the call site will determine how the binding should be performed.
+- uid: System.Dynamic.ExpandoObject
+  isExternal: false
+  href: System.Dynamic.ExpandoObject.yml
+  name: ExpandoObject
+  fullName: System.Dynamic.ExpandoObject
+  type: Class
+  summary: Represents an object with members that can be dynamically added and removed at runtime.
+- uid: System.Dynamic.GetIndexBinder
+  parent: System.Dynamic
+  isExternal: false
+  href: System.Dynamic.GetIndexBinder.yml
+  name: GetIndexBinder
+  fullName: System.Dynamic.GetIndexBinder
+  type: Class
+  summary: Represents the dynamic get index operation at the call site, providing the binding semantic and the details about the operation.
+- uid: System.Dynamic.GetMemberBinder
+  parent: System.Dynamic
+  isExternal: false
+  href: System.Dynamic.GetMemberBinder.yml
+  name: GetMemberBinder
+  fullName: System.Dynamic.GetMemberBinder
+  type: Class
+  summary: Represents the dynamic get member operation at the call site, providing the binding semantic and the details about the operation.
+- uid: System.Dynamic.IDynamicMetaObjectProvider
+  parent: System.Dynamic
+  isExternal: false
+  href: System.Dynamic.IDynamicMetaObjectProvider.yml
+  name: IDynamicMetaObjectProvider
+  fullName: System.Dynamic.IDynamicMetaObjectProvider
+  type: Interface
+  summary: Represents a dynamic object, that can have its operations bound at runtime.
+- uid: System.Dynamic.IInvokeOnGetBinder
+  isExternal: false
+  href: System.Dynamic.IInvokeOnGetBinder.yml
+  name: IInvokeOnGetBinder
+  fullName: System.Dynamic.IInvokeOnGetBinder
+  type: Interface
+  summary: >-
+    Represents information about a dynamic get member operation, indicating
+
+    if the get member should invoke properties when performing the get.
+- uid: System.Dynamic.InvokeBinder
+  parent: System.Dynamic
+  isExternal: false
+  href: System.Dynamic.InvokeBinder.yml
+  name: InvokeBinder
+  fullName: System.Dynamic.InvokeBinder
+  type: Class
+  summary: Represents the invoke dynamic operation at the call site, providing the binding semantic and the details about the operation.
+- uid: System.Dynamic.InvokeMemberBinder
+  parent: System.Dynamic
+  isExternal: false
+  href: System.Dynamic.InvokeMemberBinder.yml
+  name: InvokeMemberBinder
+  fullName: System.Dynamic.InvokeMemberBinder
+  type: Class
+  summary: >-
+    Represents the invoke member dynamic operation at the call site,
+
+    providing the binding semantic and the details about the operation.
+- uid: System.Dynamic.SetIndexBinder
+  parent: System.Dynamic
+  isExternal: false
+  href: System.Dynamic.SetIndexBinder.yml
+  name: SetIndexBinder
+  fullName: System.Dynamic.SetIndexBinder
+  type: Class
+  summary: Represents the dynamic set index operation at the call site, providing the binding semantic and the details about the operation.
+- uid: System.Dynamic.SetMemberBinder
+  parent: System.Dynamic
+  isExternal: false
+  href: System.Dynamic.SetMemberBinder.yml
+  name: SetMemberBinder
+  fullName: System.Dynamic.SetMemberBinder
+  type: Class
+  summary: Represents the dynamic set member operation at the call site, providing the binding semantic and the details about the operation.
+- uid: System.Dynamic.UnaryOperationBinder
+  parent: System.Dynamic
+  isExternal: false
+  href: System.Dynamic.UnaryOperationBinder.yml
+  name: UnaryOperationBinder
+  fullName: System.Dynamic.UnaryOperationBinder
+  type: Class
+  summary: Represents the unary dynamic operation at the call site, providing the binding semantic and the details about the operation.
+- uid: System.Dynamic
+  isExternal: false
+  name: System.Dynamic
+  fullName: System.Dynamic
+  type: Namespace

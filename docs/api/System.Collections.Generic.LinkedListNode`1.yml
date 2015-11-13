@@ -1,0 +1,471 @@
+items:
+- uid: System.Collections.Generic.LinkedListNode`1
+  id: LinkedListNode`1
+  parent: System.Collections.Generic
+  children:
+  - System.Collections.Generic.LinkedListNode`1.#ctor(`0)
+  - System.Collections.Generic.LinkedListNode`1.List
+  - System.Collections.Generic.LinkedListNode`1.Next
+  - System.Collections.Generic.LinkedListNode`1.Previous
+  - System.Collections.Generic.LinkedListNode`1.Value
+  href: System.Collections.Generic.LinkedListNode`1.yml
+  name: LinkedListNode<T>
+  name.vb: LinkedListNode(Of T)
+  fullName: System.Collections.Generic.LinkedListNode<T>
+  fullName.vb: System.Collections.Generic.LinkedListNode(Of T)
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Collections/src/System/Collections/Generic/LinkedList.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Collections/src/System/Collections/Generic/LinkedList.cs
+    startLine: 546
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Represents a node in a @'System.Collections.Generic.LinkedList`1'. This class cannot be inherited.
+  syntax:
+    content: public sealed class LinkedListNode<T>
+    content.vb: Public NotInheritable Class LinkedListNode(Of T)
+    typeParameters:
+    - id: T
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Collections.Generic.LinkedListNode`1.#ctor(`0)
+  id: '#ctor(`0)'
+  parent: System.Collections.Generic.LinkedListNode`1
+  href: System.Collections.Generic.LinkedListNode`1.yml
+  name: LinkedListNode(T)
+  fullName: System.Collections.Generic.LinkedListNode<T>.LinkedListNode(T)
+  fullName.vb: System.Collections.Generic.LinkedListNode(Of T).LinkedListNode(T)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/LinkedList.cs
+    startLine: 553
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Initializes a new instance of the @'System.Collections.Generic.LinkedListNode`1' class, containing the specified value.
+  syntax:
+    content: public LinkedListNode(T value)
+    content.vb: Public Sub New(value As T)
+    parameters:
+    - id: value
+      type: '{T}'
+      description: The value to contain in the @'System.Collections.Generic.LinkedListNode`1'.
+- uid: System.Collections.Generic.LinkedListNode`1.List
+  id: List
+  parent: System.Collections.Generic.LinkedListNode`1
+  href: System.Collections.Generic.LinkedListNode`1.yml
+  name: List
+  fullName: System.Collections.Generic.LinkedListNode<T>.List
+  fullName.vb: System.Collections.Generic.LinkedListNode(Of T).List
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/LinkedList.cs
+    startLine: 564
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Gets the @'System.Collections.Generic.LinkedList`1' that the @'System.Collections.Generic.LinkedListNode`1' belongs to.
+  syntax:
+    content: public LinkedList<T> List { get; }
+    content.vb: Public ReadOnly Property List As LinkedList(Of T)
+    parameters: []
+    return:
+      type: System.Collections.Generic.LinkedList{{T}}
+- uid: System.Collections.Generic.LinkedListNode`1.Next
+  id: Next
+  parent: System.Collections.Generic.LinkedListNode`1
+  href: System.Collections.Generic.LinkedListNode`1.yml
+  name: Next
+  fullName: System.Collections.Generic.LinkedListNode<T>.Next
+  fullName.vb: System.Collections.Generic.LinkedListNode(Of T).Next
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/LinkedList.cs
+    startLine: 569
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Gets the next node in the @'System.Collections.Generic.LinkedList`1'.
+  syntax:
+    content: public LinkedListNode<T> Next { get; }
+    content.vb: Public ReadOnly Property Next As LinkedListNode(Of T)
+    parameters: []
+    return:
+      type: System.Collections.Generic.LinkedListNode`1
+- uid: System.Collections.Generic.LinkedListNode`1.Previous
+  id: Previous
+  parent: System.Collections.Generic.LinkedListNode`1
+  href: System.Collections.Generic.LinkedListNode`1.yml
+  name: Previous
+  fullName: System.Collections.Generic.LinkedListNode<T>.Previous
+  fullName.vb: System.Collections.Generic.LinkedListNode(Of T).Previous
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/LinkedList.cs
+    startLine: 574
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Gets the previous node in the @'System.Collections.Generic.LinkedList`1'.
+  syntax:
+    content: public LinkedListNode<T> Previous { get; }
+    content.vb: Public ReadOnly Property Previous As LinkedListNode(Of T)
+    parameters: []
+    return:
+      type: System.Collections.Generic.LinkedListNode`1
+- uid: System.Collections.Generic.LinkedListNode`1.Value
+  id: Value
+  parent: System.Collections.Generic.LinkedListNode`1
+  href: System.Collections.Generic.LinkedListNode`1.yml
+  name: Value
+  fullName: System.Collections.Generic.LinkedListNode<T>.Value
+  fullName.vb: System.Collections.Generic.LinkedListNode(Of T).Value
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/LinkedList.cs
+    startLine: 579
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Gets the value contained in the node.
+  syntax:
+    content: public T Value { get; set; }
+    content.vb: Public Property Value As T
+    parameters: []
+    return:
+      type: '{T}'
+references:
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: '{T}'
+  isExternal: false
+  name: T
+  fullName: T
+- uid: System.Collections.Generic.LinkedList{{T}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.LinkedList`1
+  href: System.Collections.Generic.LinkedList`1.yml
+  name: LinkedList<T>
+  name.vb: LinkedList(Of T)
+  fullName: System.Collections.Generic.LinkedList<T>
+  fullName.vb: System.Collections.Generic.LinkedList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.LinkedList`1
+    name: LinkedList
+    fullName: System.Collections.Generic.LinkedList
+    href: System.Collections.Generic.LinkedList`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.LinkedList`1
+    name: LinkedList
+    fullName: System.Collections.Generic.LinkedList
+    href: System.Collections.Generic.LinkedList`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.LinkedList`1
+  isExternal: false
+  href: System.Collections.Generic.LinkedList`1.yml
+  name: LinkedList<T>
+  name.vb: LinkedList(Of T)
+  fullName: System.Collections.Generic.LinkedList<T>
+  fullName.vb: System.Collections.Generic.LinkedList(Of T)
+  type: Class
+  spec.csharp:
+  - uid: System.Collections.Generic.LinkedList`1
+    name: LinkedList
+    fullName: System.Collections.Generic.LinkedList
+    href: System.Collections.Generic.LinkedList`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.LinkedList`1
+    name: LinkedList
+    fullName: System.Collections.Generic.LinkedList
+    href: System.Collections.Generic.LinkedList`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.LinkedListNode`1
+  parent: System.Collections.Generic
+  isExternal: false
+  href: System.Collections.Generic.LinkedListNode`1.yml
+  name: LinkedListNode<T>
+  name.vb: LinkedListNode(Of T)
+  fullName: System.Collections.Generic.LinkedListNode<T>
+  fullName.vb: System.Collections.Generic.LinkedListNode(Of T)
+  type: Class
+  spec.csharp:
+  - uid: System.Collections.Generic.LinkedListNode`1
+    name: LinkedListNode
+    fullName: System.Collections.Generic.LinkedListNode
+    href: System.Collections.Generic.LinkedListNode`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.LinkedListNode`1
+    name: LinkedListNode
+    fullName: System.Collections.Generic.LinkedListNode
+    href: System.Collections.Generic.LinkedListNode`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )

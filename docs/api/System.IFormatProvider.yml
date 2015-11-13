@@ -1,0 +1,63 @@
+items:
+- uid: System.IFormatProvider
+  id: IFormatProvider
+  parent: System
+  children:
+  - System.IFormatProvider.GetFormat(System.Type)
+  href: System.IFormatProvider.yml
+  name: IFormatProvider
+  fullName: System.IFormatProvider
+  type: Interface
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/IFormatProvider.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/IFormatProvider.cs
+    startLine: 15
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Provides a mechanism for retrieving an object to control formatting.
+  syntax:
+    content: public interface IFormatProvider
+    content.vb: Public Interface IFormatProvider
+- uid: System.IFormatProvider.GetFormat(System.Type)
+  id: GetFormat(System.Type)
+  parent: System.IFormatProvider
+  href: System.IFormatProvider.yml
+  name: GetFormat(Type)
+  fullName: System.IFormatProvider.GetFormat(System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IFormatProvider.cs
+    startLine: 19
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns an object that provides formatting services for the specified type.
+  syntax:
+    content: object GetFormat(Type formatType)
+    content.vb: Function GetFormat(formatType As Type) As Object
+    parameters:
+    - id: formatType
+      type: System.Type
+      description: An object that specifies the type of format object to return.
+    return:
+      type: System.Object
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  fullName: System.Type
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object

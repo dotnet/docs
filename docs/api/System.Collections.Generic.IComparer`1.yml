@@ -1,0 +1,74 @@
+items:
+- uid: System.Collections.Generic.IComparer`1
+  id: IComparer`1
+  parent: System.Collections.Generic
+  children:
+  - System.Collections.Generic.IComparer`1.Compare(`0,`0)
+  href: System.Collections.Generic.IComparer`1.yml
+  name: IComparer<T>
+  name.vb: IComparer(Of T)
+  fullName: System.Collections.Generic.IComparer<T>
+  fullName.vb: System.Collections.Generic.IComparer(Of T)
+  type: Interface
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Collections/Generic/IComparer.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Collections/Generic/IComparer.cs
+    startLine: 20
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Defines a method that a type implements to compare two objects.
+  syntax:
+    content: public interface IComparer<in T>
+    content.vb: Public Interface IComparer(Of In T)
+    typeParameters:
+    - id: T
+- uid: System.Collections.Generic.IComparer`1.Compare(`0,`0)
+  id: Compare(`0,`0)
+  parent: System.Collections.Generic.IComparer`1
+  href: System.Collections.Generic.IComparer`1.yml
+  name: Compare(T, T)
+  fullName: System.Collections.Generic.IComparer<T>.Compare(T, T)
+  fullName.vb: System.Collections.Generic.IComparer(Of T).Compare(T, T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/IComparer.cs
+    startLine: 26
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Compares two objects and returns a value indicating whether one is less than, equal to, or greater than the other.
+  syntax:
+    content: int Compare(T x, T y)
+    content.vb: Function Compare(x As T, y As T) As Integer
+    parameters:
+    - id: x
+      type: '{T}'
+      description: The first object to compare.
+    - id: y
+      type: '{T}'
+      description: The second object to compare.
+    return:
+      type: System.Int32
+references:
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: '{T}'
+  isExternal: false
+  name: T
+  fullName: T
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

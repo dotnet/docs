@@ -1,0 +1,83 @@
+items:
+- uid: System.IO.Pipes.PipeOptions
+  id: PipeOptions
+  parent: System.IO.Pipes
+  children:
+  - System.IO.Pipes.PipeOptions.Asynchronous
+  - System.IO.Pipes.PipeOptions.None
+  - System.IO.Pipes.PipeOptions.WriteThrough
+  href: System.IO.Pipes.PipeOptions.yml
+  name: PipeOptions
+  fullName: System.IO.Pipes.PipeOptions
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.IO.Pipes/src/System/IO/Pipes/PipeOptions.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.IO.Pipes/src/System/IO/Pipes/PipeOptions.cs
+    startLine: 5
+  assemblies:
+  - System.IO.Pipes
+  namespace: System.IO.Pipes
+  summary: Provides options for creating a @'System.IO.Pipes.PipeStream' object. This enumeration has a @'System.FlagsAttribute' attribute that allows a bitwise combination of its member values.
+  syntax:
+    content: public enum PipeOptions
+    content.vb: Public Enum PipeOptions
+- uid: System.IO.Pipes.PipeOptions.None
+  id: None
+  parent: System.IO.Pipes.PipeOptions
+  href: System.IO.Pipes.PipeOptions.yml
+  name: None
+  fullName: System.IO.Pipes.PipeOptions.None
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.Pipes/src/System/IO/Pipes/PipeOptions.cs
+    startLine: 8
+  assemblies:
+  - System.IO.Pipes
+  namespace: System.IO.Pipes
+  summary: Indicates that there are no additional parameters.
+  syntax:
+    content: None = 0
+- uid: System.IO.Pipes.PipeOptions.WriteThrough
+  id: WriteThrough
+  parent: System.IO.Pipes.PipeOptions
+  href: System.IO.Pipes.PipeOptions.yml
+  name: WriteThrough
+  fullName: System.IO.Pipes.PipeOptions.WriteThrough
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.Pipes/src/System/IO/Pipes/PipeOptions.cs
+    startLine: 9
+  assemblies:
+  - System.IO.Pipes
+  namespace: System.IO.Pipes
+  summary: Indicates that the system should write through any intermediate cache and go directly to the pipe.
+  syntax:
+    content: WriteThrough = -2147483648
+- uid: System.IO.Pipes.PipeOptions.Asynchronous
+  id: Asynchronous
+  parent: System.IO.Pipes.PipeOptions
+  href: System.IO.Pipes.PipeOptions.yml
+  name: Asynchronous
+  fullName: System.IO.Pipes.PipeOptions.Asynchronous
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.Pipes/src/System/IO/Pipes/PipeOptions.cs
+    startLine: 10
+  assemblies:
+  - System.IO.Pipes
+  namespace: System.IO.Pipes
+  summary: Indicates that the pipe can be used for asynchronous reading and writing.
+  syntax:
+    content: Asynchronous = 1073741824
+references:
+- uid: System.IO.Pipes
+  isExternal: false
+  name: System.IO.Pipes
+  fullName: System.IO.Pipes
+  type: Namespace

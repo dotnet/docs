@@ -1,0 +1,131 @@
+items:
+- uid: System.Linq.ParallelMergeOptions
+  id: ParallelMergeOptions
+  parent: System.Linq
+  children:
+  - System.Linq.ParallelMergeOptions.AutoBuffered
+  - System.Linq.ParallelMergeOptions.Default
+  - System.Linq.ParallelMergeOptions.FullyBuffered
+  - System.Linq.ParallelMergeOptions.NotBuffered
+  href: System.Linq.ParallelMergeOptions.yml
+  name: ParallelMergeOptions
+  fullName: System.Linq.ParallelMergeOptions
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Linq.Parallel/src/System/Linq/ParallelMergeOptions.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Linq.Parallel/src/System/Linq/ParallelMergeOptions.cs
+    startLine: 32
+  assemblies:
+  - System.Linq.Parallel
+  namespace: System.Linq
+  summary: Specifies the preferred type of output merge to use in a query. In other words, it indicates how PLINQ should merge the results from the various partitions back into a single result sequence. This is a hint only, and may not be respected by the system when parallelizing all queries.
+  remarks: >-
+    <para>
+
+    Use <b>NotBuffered</b> for queries that will be consumed and output as streams, this has the lowest latency
+
+    between beginning query execution and elements being yielded. For some queries, such as those involving a
+
+    sort (OrderBy, OrderByDescending), buffering is essential and a hint of NotBuffered or AutoBuffered will
+
+    be ignored.
+
+    </para>
+
+    <para>
+
+    Use <b>AutoBuffered</b> for most cases; this is the default.  It strikes a balance between latency and
+
+    overall performance.
+
+    </para>
+
+    <para>
+
+    Use <b>FullyBuffered</b> for queries when the entire output can be processed before the information is
+
+    needed. This option offers the best performance when all of the output can be accumulated before yielding
+
+    any information, though it is not suitable for stream processing or showing partial results mid-query.
+
+    </para>
+  syntax:
+    content: public enum ParallelMergeOptions
+    content.vb: Public Enum ParallelMergeOptions
+- uid: System.Linq.ParallelMergeOptions.Default
+  id: Default
+  parent: System.Linq.ParallelMergeOptions
+  href: System.Linq.ParallelMergeOptions.yml
+  name: Default
+  fullName: System.Linq.ParallelMergeOptions.Default
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Linq.Parallel/src/System/Linq/ParallelMergeOptions.cs
+    startLine: 37
+  assemblies:
+  - System.Linq.Parallel
+  namespace: System.Linq
+  summary: Use the default merge type, which is AutoBuffered.
+  syntax:
+    content: Default = 0
+- uid: System.Linq.ParallelMergeOptions.NotBuffered
+  id: NotBuffered
+  parent: System.Linq.ParallelMergeOptions
+  href: System.Linq.ParallelMergeOptions.yml
+  name: NotBuffered
+  fullName: System.Linq.ParallelMergeOptions.NotBuffered
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Linq.Parallel/src/System/Linq/ParallelMergeOptions.cs
+    startLine: 43
+  assemblies:
+  - System.Linq.Parallel
+  namespace: System.Linq
+  summary: Use a merge without output buffers. As soon as result elements have been computed, make that element available to the consumer of the query.
+  syntax:
+    content: NotBuffered = 1
+- uid: System.Linq.ParallelMergeOptions.AutoBuffered
+  id: AutoBuffered
+  parent: System.Linq.ParallelMergeOptions
+  href: System.Linq.ParallelMergeOptions.yml
+  name: AutoBuffered
+  fullName: System.Linq.ParallelMergeOptions.AutoBuffered
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Linq.Parallel/src/System/Linq/ParallelMergeOptions.cs
+    startLine: 50
+  assemblies:
+  - System.Linq.Parallel
+  namespace: System.Linq
+  summary: Use a merge with output buffers of a size chosen by the system. Results will accumulate into an output buffer before they are available to the consumer of the query.
+  syntax:
+    content: AutoBuffered = 2
+- uid: System.Linq.ParallelMergeOptions.FullyBuffered
+  id: FullyBuffered
+  parent: System.Linq.ParallelMergeOptions
+  href: System.Linq.ParallelMergeOptions.yml
+  name: FullyBuffered
+  fullName: System.Linq.ParallelMergeOptions.FullyBuffered
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Linq.Parallel/src/System/Linq/ParallelMergeOptions.cs
+    startLine: 56
+  assemblies:
+  - System.Linq.Parallel
+  namespace: System.Linq
+  summary: Use a merge with full output buffers. The system will accumulate all of the results before making any of them available to the consumer of the query.
+  syntax:
+    content: FullyBuffered = 3
+references:
+- uid: System.Linq
+  isExternal: false
+  name: System.Linq
+  fullName: System.Linq
+  type: Namespace

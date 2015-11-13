@@ -1,0 +1,2020 @@
+items:
+- uid: System.Text.RegularExpressions.Regex
+  id: Regex
+  parent: System.Text.RegularExpressions
+  children:
+  - System.Text.RegularExpressions.Regex.#ctor
+  - System.Text.RegularExpressions.Regex.#ctor(System.String)
+  - System.Text.RegularExpressions.Regex.#ctor(System.String,System.Text.RegularExpressions.RegexOptions)
+  - System.Text.RegularExpressions.Regex.#ctor(System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)
+  - System.Text.RegularExpressions.Regex.CacheSize
+  - System.Text.RegularExpressions.Regex.Escape(System.String)
+  - System.Text.RegularExpressions.Regex.GetGroupNames
+  - System.Text.RegularExpressions.Regex.GetGroupNumbers
+  - System.Text.RegularExpressions.Regex.GroupNameFromNumber(System.Int32)
+  - System.Text.RegularExpressions.Regex.GroupNumberFromName(System.String)
+  - System.Text.RegularExpressions.Regex.InfiniteMatchTimeout
+  - System.Text.RegularExpressions.Regex.IsMatch(System.String)
+  - System.Text.RegularExpressions.Regex.IsMatch(System.String,System.Int32)
+  - System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String)
+  - System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions)
+  - System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)
+  - System.Text.RegularExpressions.Regex.Match(System.String)
+  - System.Text.RegularExpressions.Regex.Match(System.String,System.Int32)
+  - System.Text.RegularExpressions.Regex.Match(System.String,System.Int32,System.Int32)
+  - System.Text.RegularExpressions.Regex.Match(System.String,System.String)
+  - System.Text.RegularExpressions.Regex.Match(System.String,System.String,System.Text.RegularExpressions.RegexOptions)
+  - System.Text.RegularExpressions.Regex.Match(System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)
+  - System.Text.RegularExpressions.Regex.Matches(System.String)
+  - System.Text.RegularExpressions.Regex.Matches(System.String,System.Int32)
+  - System.Text.RegularExpressions.Regex.Matches(System.String,System.String)
+  - System.Text.RegularExpressions.Regex.Matches(System.String,System.String,System.Text.RegularExpressions.RegexOptions)
+  - System.Text.RegularExpressions.Regex.Matches(System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)
+  - System.Text.RegularExpressions.Regex.MatchTimeout
+  - System.Text.RegularExpressions.Regex.Options
+  - System.Text.RegularExpressions.Regex.Replace(System.String,System.String)
+  - System.Text.RegularExpressions.Regex.Replace(System.String,System.String,System.Int32)
+  - System.Text.RegularExpressions.Regex.Replace(System.String,System.String,System.Int32,System.Int32)
+  - System.Text.RegularExpressions.Regex.Replace(System.String,System.String,System.String)
+  - System.Text.RegularExpressions.Regex.Replace(System.String,System.String,System.String,System.Text.RegularExpressions.RegexOptions)
+  - System.Text.RegularExpressions.Regex.Replace(System.String,System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)
+  - System.Text.RegularExpressions.Regex.Replace(System.String,System.String,System.Text.RegularExpressions.MatchEvaluator)
+  - System.Text.RegularExpressions.Regex.Replace(System.String,System.String,System.Text.RegularExpressions.MatchEvaluator,System.Text.RegularExpressions.RegexOptions)
+  - System.Text.RegularExpressions.Regex.Replace(System.String,System.String,System.Text.RegularExpressions.MatchEvaluator,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)
+  - System.Text.RegularExpressions.Regex.Replace(System.String,System.Text.RegularExpressions.MatchEvaluator)
+  - System.Text.RegularExpressions.Regex.Replace(System.String,System.Text.RegularExpressions.MatchEvaluator,System.Int32)
+  - System.Text.RegularExpressions.Regex.Replace(System.String,System.Text.RegularExpressions.MatchEvaluator,System.Int32,System.Int32)
+  - System.Text.RegularExpressions.Regex.RightToLeft
+  - System.Text.RegularExpressions.Regex.Split(System.String)
+  - System.Text.RegularExpressions.Regex.Split(System.String,System.Int32)
+  - System.Text.RegularExpressions.Regex.Split(System.String,System.Int32,System.Int32)
+  - System.Text.RegularExpressions.Regex.Split(System.String,System.String)
+  - System.Text.RegularExpressions.Regex.Split(System.String,System.String,System.Text.RegularExpressions.RegexOptions)
+  - System.Text.RegularExpressions.Regex.Split(System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)
+  - System.Text.RegularExpressions.Regex.ToString
+  - System.Text.RegularExpressions.Regex.Unescape(System.String)
+  href: System.Text.RegularExpressions.Regex.yml
+  name: Regex
+  fullName: System.Text.RegularExpressions.Regex
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 19
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Represents an immutable regular expression.To browse the .NET Framework source code for this type, see the Reference Source.
+  syntax:
+    content: public class Regex
+    content.vb: Public Class Regex
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Text.RegularExpressions.Regex.InfiniteMatchTimeout
+  id: InfiniteMatchTimeout
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: InfiniteMatchTimeout
+  fullName: System.Text.RegularExpressions.Regex.InfiniteMatchTimeout
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 38
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Specifies that a pattern-matching operation should not time out.
+  syntax:
+    content: public static readonly TimeSpan InfiniteMatchTimeout
+    content.vb: Public Shared ReadOnly InfiniteMatchTimeout As TimeSpan
+- uid: System.Text.RegularExpressions.Regex.#ctor
+  id: '#ctor'
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: Regex()
+  fullName: System.Text.RegularExpressions.Regex.Regex()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 65
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Initializes a new instance of the @'System.Text.RegularExpressions.Regex' class.
+  syntax:
+    content: protected Regex()
+    content.vb: Protected Sub New
+- uid: System.Text.RegularExpressions.Regex.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: Regex(String)
+  fullName: System.Text.RegularExpressions.Regex.Regex(System.String)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 74
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Initializes a new instance of the @'System.Text.RegularExpressions.Regex' class for the specified regular expression.
+  syntax:
+    content: public Regex(string pattern)
+    content.vb: Public Sub New(pattern As String)
+    parameters:
+    - id: pattern
+      type: System.String
+      description: The regular expression pattern to match.
+  exceptions:
+  - type: System.ArgumentException
+    description: A regular expression parsing error occurred.
+  - type: System.ArgumentNullException
+    description: '*pattern* is null.'
+- uid: System.Text.RegularExpressions.Regex.#ctor(System.String,System.Text.RegularExpressions.RegexOptions)
+  id: '#ctor(System.String,System.Text.RegularExpressions.RegexOptions)'
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: Regex(String, RegexOptions)
+  fullName: System.Text.RegularExpressions.Regex.Regex(System.String, System.Text.RegularExpressions.RegexOptions)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 83
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Initializes a new instance of the @'System.Text.RegularExpressions.Regex' class for the specified regular expression, with options that modify the pattern.
+  syntax:
+    content: public Regex(string pattern, RegexOptions options)
+    content.vb: Public Sub New(pattern As String, options As RegexOptions)
+    parameters:
+    - id: pattern
+      type: System.String
+      description: The regular expression pattern to match.
+    - id: options
+      type: System.Text.RegularExpressions.RegexOptions
+      description: A bitwise combination of the enumeration values that modify the regular expression.
+  exceptions:
+  - type: System.ArgumentException
+    description: A regular expression parsing error occurred.
+  - type: System.ArgumentNullException
+    description: '*pattern* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*options* contains an invalid flag.'
+- uid: System.Text.RegularExpressions.Regex.#ctor(System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)
+  id: '#ctor(System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)'
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: Regex(String, RegexOptions, TimeSpan)
+  fullName: System.Text.RegularExpressions.Regex.Regex(System.String, System.Text.RegularExpressions.RegexOptions, System.TimeSpan)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 88
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Initializes a new instance of the @'System.Text.RegularExpressions.Regex' class for the specified regular expression, with options that modify the pattern and a value that specifies how long a pattern matching method should attempt a match before it times out.
+  syntax:
+    content: public Regex(string pattern, RegexOptions options, TimeSpan matchTimeout)
+    content.vb: Public Sub New(pattern As String, options As RegexOptions, matchTimeout As TimeSpan)
+    parameters:
+    - id: pattern
+      type: System.String
+      description: The regular expression pattern to match.
+    - id: options
+      type: System.Text.RegularExpressions.RegexOptions
+      description: A bitwise combination of the enumeration values that modify the regular expression.
+    - id: matchTimeout
+      type: System.TimeSpan
+      description: A time-out interval, or @'System.Text.RegularExpressions.Regex.InfiniteMatchTimeout' to indicate that the method should not time out.
+  exceptions:
+  - type: System.ArgumentException
+    description: A regular expression parsing error occurred.
+  - type: System.ArgumentNullException
+    description: '*pattern* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*options* is not a valid @''System.Text.RegularExpressions.RegexOptions'' value.-or-*matchTimeout* is negative, zero, or greater than approximately 24 days.'
+- uid: System.Text.RegularExpressions.Regex.Escape(System.String)
+  id: Escape(System.String)
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: Escape(String)
+  fullName: System.Text.RegularExpressions.Regex.Escape(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 191
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: 'Escapes a minimal set of characters (\, *, +, ?, |, {, [, (,), ^, $,., #, and white space) by replacing them with their escape codes. This instructs the regular expression engine to interpret these characters literally rather than as metacharacters.'
+  syntax:
+    content: public static string Escape(string str)
+    content.vb: Public Shared Function Escape(str As String) As String
+    parameters:
+    - id: str
+      type: System.String
+      description: The input string that contains the text to convert.
+    return:
+      type: System.String
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*str* is null.'
+- uid: System.Text.RegularExpressions.Regex.Unescape(System.String)
+  id: Unescape(System.String)
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: Unescape(String)
+  fullName: System.Text.RegularExpressions.Regex.Unescape(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 202
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Converts any escaped characters in the input string.
+  syntax:
+    content: public static string Unescape(string str)
+    content.vb: Public Shared Function Unescape(str As String) As String
+    parameters:
+    - id: str
+      type: System.String
+      description: The input string containing the text to convert.
+    return:
+      type: System.String
+  exceptions:
+  - type: System.ArgumentException
+    description: '*str* includes an unrecognized escape sequence.'
+  - type: System.ArgumentNullException
+    description: '*str* is null.'
+- uid: System.Text.RegularExpressions.Regex.CacheSize
+  id: CacheSize
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: CacheSize
+  fullName: System.Text.RegularExpressions.Regex.CacheSize
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 211
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Gets or sets the maximum number of entries in the current static cache of compiled regular expressions.
+  syntax:
+    content: public static int CacheSize { get; set; }
+    content.vb: Public Shared Property CacheSize As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: The value in a set operation is less than zero.
+- uid: System.Text.RegularExpressions.Regex.Options
+  id: Options
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: Options
+  fullName: System.Text.RegularExpressions.Regex.Options
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 238
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Gets the options that were passed into the @'System.Text.RegularExpressions.Regex' constructor.
+  syntax:
+    content: public RegexOptions Options { get; }
+    content.vb: Public ReadOnly Property Options As RegexOptions
+    parameters: []
+    return:
+      type: System.Text.RegularExpressions.RegexOptions
+- uid: System.Text.RegularExpressions.Regex.MatchTimeout
+  id: MatchTimeout
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: MatchTimeout
+  fullName: System.Text.RegularExpressions.Regex.MatchTimeout
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 247
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Gets the time-out interval of the current instance.
+  syntax:
+    content: public TimeSpan MatchTimeout { get; }
+    content.vb: Public ReadOnly Property MatchTimeout As TimeSpan
+    parameters: []
+    return:
+      type: System.TimeSpan
+- uid: System.Text.RegularExpressions.Regex.RightToLeft
+  id: RightToLeft
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: RightToLeft
+  fullName: System.Text.RegularExpressions.Regex.RightToLeft
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 255
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Gets a value that indicates whether the regular expression searches from right to left.
+  syntax:
+    content: public bool RightToLeft { get; }
+    content.vb: Public ReadOnly Property RightToLeft As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Text.RegularExpressions.Regex.ToString
+  id: ToString
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: ToString()
+  fullName: System.Text.RegularExpressions.Regex.ToString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 266
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Returns the regular expression pattern that was passed into the Regex constructor.
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+  overridden: System.Object.ToString
+- uid: System.Text.RegularExpressions.Regex.GetGroupNames
+  id: GetGroupNames
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: GetGroupNames()
+  fullName: System.Text.RegularExpressions.Regex.GetGroupNames()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 281
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Returns an array of capturing group names for the regular expression.
+  syntax:
+    content: public string[] GetGroupNames()
+    content.vb: Public Function GetGroupNames As String()
+    return:
+      type: System.String[]
+- uid: System.Text.RegularExpressions.Regex.GetGroupNumbers
+  id: GetGroupNumbers
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: GetGroupNumbers()
+  fullName: System.Text.RegularExpressions.Regex.GetGroupNumbers()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 314
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Returns an array of capturing group numbers that correspond to group names in an array.
+  syntax:
+    content: public int[] GetGroupNumbers()
+    content.vb: Public Function GetGroupNumbers As Integer()
+    return:
+      type: System.Int32[]
+- uid: System.Text.RegularExpressions.Regex.GroupNameFromNumber(System.Int32)
+  id: GroupNameFromNumber(System.Int32)
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: GroupNameFromNumber(Int32)
+  fullName: System.Text.RegularExpressions.Regex.GroupNameFromNumber(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 351
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Gets the group name that corresponds to the specified group number.
+  syntax:
+    content: public string GroupNameFromNumber(int i)
+    content.vb: Public Function GroupNameFromNumber(i As Integer) As String
+    parameters:
+    - id: i
+      type: System.Int32
+      description: The group number to convert to the corresponding group name.
+    return:
+      type: System.String
+- uid: System.Text.RegularExpressions.Regex.GroupNumberFromName(System.String)
+  id: GroupNumberFromName(System.String)
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: GroupNumberFromName(String)
+  fullName: System.Text.RegularExpressions.Regex.GroupNumberFromName(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 387
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Returns the group number that corresponds to the specified group name.
+  syntax:
+    content: public int GroupNumberFromName(string name)
+    content.vb: Public Function GroupNumberFromName(name As String) As Integer
+    parameters:
+    - id: name
+      type: System.String
+      description: The group name to convert to the corresponding group number.
+    return:
+      type: System.Int32
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*name* is null.'
+- uid: System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String)
+  id: IsMatch(System.String,System.String)
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: IsMatch(String, String)
+  fullName: System.Text.RegularExpressions.Regex.IsMatch(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 429
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Indicates whether the specified regular expression finds a match in the specified input string.
+  syntax:
+    content: public static bool IsMatch(string input, string pattern)
+    content.vb: Public Shared Function IsMatch(input As String, pattern As String) As Boolean
+    parameters:
+    - id: input
+      type: System.String
+      description: The string to search for a match.
+    - id: pattern
+      type: System.String
+      description: The regular expression pattern to match.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentException
+    description: A regular expression parsing error occurred.
+  - type: System.ArgumentNullException
+    description: '*input* or *pattern* is null.'
+  - type: System.Text.RegularExpressions.RegexMatchTimeoutException
+    description: A time-out occurred. For more information about time-outs, see the Remarks section.
+- uid: System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions)
+  id: IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions)
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: IsMatch(String, String, RegexOptions)
+  fullName: System.Text.RegularExpressions.Regex.IsMatch(System.String, System.String, System.Text.RegularExpressions.RegexOptions)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 442
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Indicates whether the specified regular expression finds a match in the specified input string, using the specified matching options.
+  syntax:
+    content: public static bool IsMatch(string input, string pattern, RegexOptions options)
+    content.vb: Public Shared Function IsMatch(input As String, pattern As String, options As RegexOptions) As Boolean
+    parameters:
+    - id: input
+      type: System.String
+      description: The string to search for a match.
+    - id: pattern
+      type: System.String
+      description: The regular expression pattern to match.
+    - id: options
+      type: System.Text.RegularExpressions.RegexOptions
+      description: A bitwise combination of the enumeration values that provide options for matching.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentException
+    description: A regular expression parsing error occurred.
+  - type: System.ArgumentNullException
+    description: '*input* or *pattern* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*options* is not a valid @''System.Text.RegularExpressions.RegexOptions''  value.'
+  - type: System.Text.RegularExpressions.RegexMatchTimeoutException
+    description: A time-out occurred. For more information about time-outs, see the Remarks section.
+- uid: System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)
+  id: IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: IsMatch(String, String, RegexOptions, TimeSpan)
+  fullName: System.Text.RegularExpressions.Regex.IsMatch(System.String, System.String, System.Text.RegularExpressions.RegexOptions, System.TimeSpan)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 447
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Indicates whether the specified regular expression finds a match in the specified input string, using the specified matching options and time-out interval.
+  syntax:
+    content: public static bool IsMatch(string input, string pattern, RegexOptions options, TimeSpan matchTimeout)
+    content.vb: Public Shared Function IsMatch(input As String, pattern As String, options As RegexOptions, matchTimeout As TimeSpan) As Boolean
+    parameters:
+    - id: input
+      type: System.String
+      description: The string to search for a match.
+    - id: pattern
+      type: System.String
+      description: The regular expression pattern to match.
+    - id: options
+      type: System.Text.RegularExpressions.RegexOptions
+      description: A bitwise combination of the enumeration values that provide options for matching.
+    - id: matchTimeout
+      type: System.TimeSpan
+      description: A time-out interval, or @'System.Text.RegularExpressions.Regex.InfiniteMatchTimeout' to indicate that the method should not time out.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentException
+    description: A regular expression parsing error occurred.
+  - type: System.ArgumentNullException
+    description: '*input* or *pattern* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*options* is not a valid @''System.Text.RegularExpressions.RegexOptions'' value.-or-*matchTimeout* is negative, zero, or greater than approximately 24 days.'
+  - type: System.Text.RegularExpressions.RegexMatchTimeoutException
+    description: A time-out occurred.
+- uid: System.Text.RegularExpressions.Regex.IsMatch(System.String)
+  id: IsMatch(System.String)
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: IsMatch(String)
+  fullName: System.Text.RegularExpressions.Regex.IsMatch(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 459
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Indicates whether the regular expression specified in the @'System.Text.RegularExpressions.Regex' constructor finds a match in a specified input string.
+  syntax:
+    content: public bool IsMatch(string input)
+    content.vb: Public Function IsMatch(input As String) As Boolean
+    parameters:
+    - id: input
+      type: System.String
+      description: The string to search for a match.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*input* is null.'
+  - type: System.Text.RegularExpressions.RegexMatchTimeoutException
+    description: A time-out occurred. For more information about time-outs, see the Remarks section.
+- uid: System.Text.RegularExpressions.Regex.IsMatch(System.String,System.Int32)
+  id: IsMatch(System.String,System.Int32)
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: IsMatch(String, Int32)
+  fullName: System.Text.RegularExpressions.Regex.IsMatch(System.String, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 475
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Indicates whether the regular expression specified in the @'System.Text.RegularExpressions.Regex' constructor finds a match in the specified input string, beginning at the specified starting position in the string.
+  syntax:
+    content: public bool IsMatch(string input, int startat)
+    content.vb: Public Function IsMatch(input As String, startat As Integer) As Boolean
+    parameters:
+    - id: input
+      type: System.String
+      description: The string to search for a match.
+    - id: startat
+      type: System.Int32
+      description: The character position at which to start the search.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*input* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*startat* is less than zero or greater than the length of *input*.'
+  - type: System.Text.RegularExpressions.RegexMatchTimeoutException
+    description: A time-out occurred. For more information about time-outs, see the Remarks section.
+- uid: System.Text.RegularExpressions.Regex.Match(System.String,System.String)
+  id: Match(System.String,System.String)
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: Match(String, String)
+  fullName: System.Text.RegularExpressions.Regex.Match(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 490
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Searches the specified input string for the first occurrence of the specified regular expression.
+  syntax:
+    content: public static Match Match(string input, string pattern)
+    content.vb: Public Shared Function Match(input As String, pattern As String) As Match
+    parameters:
+    - id: input
+      type: System.String
+      description: The string to search for a match.
+    - id: pattern
+      type: System.String
+      description: The regular expression pattern to match.
+    return:
+      type: System.Text.RegularExpressions.Match
+  exceptions:
+  - type: System.ArgumentException
+    description: A regular expression parsing error occurred.
+  - type: System.ArgumentNullException
+    description: '*input* or *pattern* is null.'
+  - type: System.Text.RegularExpressions.RegexMatchTimeoutException
+    description: A time-out occurred. For more information about time-outs, see the Remarks section.
+- uid: System.Text.RegularExpressions.Regex.Match(System.String,System.String,System.Text.RegularExpressions.RegexOptions)
+  id: Match(System.String,System.String,System.Text.RegularExpressions.RegexOptions)
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: Match(String, String, RegexOptions)
+  fullName: System.Text.RegularExpressions.Regex.Match(System.String, System.String, System.Text.RegularExpressions.RegexOptions)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 503
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Searches the input string for the first occurrence of the specified regular expression, using the specified matching options.
+  syntax:
+    content: public static Match Match(string input, string pattern, RegexOptions options)
+    content.vb: Public Shared Function Match(input As String, pattern As String, options As RegexOptions) As Match
+    parameters:
+    - id: input
+      type: System.String
+      description: The string to search for a match.
+    - id: pattern
+      type: System.String
+      description: The regular expression pattern to match.
+    - id: options
+      type: System.Text.RegularExpressions.RegexOptions
+      description: A bitwise combination of the enumeration values that provide options for matching.
+    return:
+      type: System.Text.RegularExpressions.Match
+  exceptions:
+  - type: System.ArgumentException
+    description: A regular expression parsing error occurred.
+  - type: System.ArgumentNullException
+    description: '*input* or *pattern* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*options* is not a valid bitwise combination of @''System.Text.RegularExpressions.RegexOptions'' values.'
+  - type: System.Text.RegularExpressions.RegexMatchTimeoutException
+    description: A time-out occurred. For more information about time-outs, see the Remarks section.
+- uid: System.Text.RegularExpressions.Regex.Match(System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)
+  id: Match(System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: Match(String, String, RegexOptions, TimeSpan)
+  fullName: System.Text.RegularExpressions.Regex.Match(System.String, System.String, System.Text.RegularExpressions.RegexOptions, System.TimeSpan)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 509
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Searches the input string for the first occurrence of the specified regular expression, using the specified matching options and time-out interval.
+  syntax:
+    content: public static Match Match(string input, string pattern, RegexOptions options, TimeSpan matchTimeout)
+    content.vb: Public Shared Function Match(input As String, pattern As String, options As RegexOptions, matchTimeout As TimeSpan) As Match
+    parameters:
+    - id: input
+      type: System.String
+      description: The string to search for a match.
+    - id: pattern
+      type: System.String
+      description: The regular expression pattern to match.
+    - id: options
+      type: System.Text.RegularExpressions.RegexOptions
+      description: A bitwise combination of the enumeration values that provide options for matching.
+    - id: matchTimeout
+      type: System.TimeSpan
+      description: A time-out interval, or @'System.Text.RegularExpressions.Regex.InfiniteMatchTimeout' to indicate that the method should not time out.
+    return:
+      type: System.Text.RegularExpressions.Match
+  exceptions:
+  - type: System.ArgumentException
+    description: A regular expression parsing error occurred.
+  - type: System.ArgumentNullException
+    description: '*input* or *pattern* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*options* is not a valid bitwise combination of @''System.Text.RegularExpressions.RegexOptions'' values.-or-*matchTimeout* is negative, zero, or greater than approximately 24 days.'
+  - type: System.Text.RegularExpressions.RegexMatchTimeoutException
+    description: A time-out occurred. For more information about time-outs, see the Remarks section.
+- uid: System.Text.RegularExpressions.Regex.Match(System.String)
+  id: Match(System.String)
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: Match(String)
+  fullName: System.Text.RegularExpressions.Regex.Match(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 522
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Searches the specified input string for the first occurrence of the regular expression specified in the @'System.Text.RegularExpressions.Regex' constructor.
+  syntax:
+    content: public Match Match(string input)
+    content.vb: Public Function Match(input As String) As Match
+    parameters:
+    - id: input
+      type: System.String
+      description: The string to search for a match.
+    return:
+      type: System.Text.RegularExpressions.Match
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*input* is null.'
+  - type: System.Text.RegularExpressions.RegexMatchTimeoutException
+    description: A time-out occurred. For more information about time-outs, see the Remarks section.
+- uid: System.Text.RegularExpressions.Regex.Match(System.String,System.Int32)
+  id: Match(System.String,System.Int32)
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: Match(String, Int32)
+  fullName: System.Text.RegularExpressions.Regex.Match(System.String, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 537
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Searches the input string for the first occurrence of a regular expression, beginning at the specified starting position in the string.
+  syntax:
+    content: public Match Match(string input, int startat)
+    content.vb: Public Function Match(input As String, startat As Integer) As Match
+    parameters:
+    - id: input
+      type: System.String
+      description: The string to search for a match.
+    - id: startat
+      type: System.Int32
+      description: The zero-based character position at which to start the search.
+    return:
+      type: System.Text.RegularExpressions.Match
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*input* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*startat* is less than zero or greater than the length of *input*.'
+  - type: System.Text.RegularExpressions.RegexMatchTimeoutException
+    description: A time-out occurred. For more information about time-outs, see the Remarks section.
+- uid: System.Text.RegularExpressions.Regex.Match(System.String,System.Int32,System.Int32)
+  id: Match(System.String,System.Int32,System.Int32)
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: Match(String, Int32, Int32)
+  fullName: System.Text.RegularExpressions.Regex.Match(System.String, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 553
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Searches the input string for the first occurrence of a regular expression, beginning at the specified starting position and searching only the specified number of characters.
+  syntax:
+    content: public Match Match(string input, int beginning, int length)
+    content.vb: Public Function Match(input As String, beginning As Integer, length As Integer) As Match
+    parameters:
+    - id: input
+      type: System.String
+      description: The string to search for a match.
+    - id: beginning
+      type: System.Int32
+      description: The zero-based character position in the input string that defines the leftmost position to be searched.
+    - id: length
+      type: System.Int32
+      description: The number of characters in the substring to include in the search.
+    return:
+      type: System.Text.RegularExpressions.Match
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*input* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: "*beginning* is less than zero or greater than the length of *input*.-or-*length* is less than zero or greater than the length of *input*.-or-*beginning*+*length*– 1 identifies a position that is outside the range of *input*."
+  - type: System.Text.RegularExpressions.RegexMatchTimeoutException
+    description: A time-out occurred. For more information about time-outs, see the Remarks section.
+- uid: System.Text.RegularExpressions.Regex.Matches(System.String,System.String)
+  id: Matches(System.String,System.String)
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: Matches(String, String)
+  fullName: System.Text.RegularExpressions.Regex.Matches(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 567
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Searches the specified input string for all occurrences of a specified regular expression.
+  syntax:
+    content: public static MatchCollection Matches(string input, string pattern)
+    content.vb: Public Shared Function Matches(input As String, pattern As String) As MatchCollection
+    parameters:
+    - id: input
+      type: System.String
+      description: The string to search for a match.
+    - id: pattern
+      type: System.String
+      description: The regular expression pattern to match.
+    return:
+      type: System.Text.RegularExpressions.MatchCollection
+  exceptions:
+  - type: System.ArgumentException
+    description: A regular expression parsing error occurred.
+  - type: System.ArgumentNullException
+    description: '*input* or *pattern* is null.'
+- uid: System.Text.RegularExpressions.Regex.Matches(System.String,System.String,System.Text.RegularExpressions.RegexOptions)
+  id: Matches(System.String,System.String,System.Text.RegularExpressions.RegexOptions)
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: Matches(String, String, RegexOptions)
+  fullName: System.Text.RegularExpressions.Regex.Matches(System.String, System.String, System.Text.RegularExpressions.RegexOptions)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 578
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Searches the specified input string for all occurrences of a specified regular expression, using the specified matching options.
+  syntax:
+    content: public static MatchCollection Matches(string input, string pattern, RegexOptions options)
+    content.vb: Public Shared Function Matches(input As String, pattern As String, options As RegexOptions) As MatchCollection
+    parameters:
+    - id: input
+      type: System.String
+      description: The string to search for a match.
+    - id: pattern
+      type: System.String
+      description: The regular expression pattern to match.
+    - id: options
+      type: System.Text.RegularExpressions.RegexOptions
+      description: A bitwise combination of the enumeration values that specify options for matching.
+    return:
+      type: System.Text.RegularExpressions.MatchCollection
+  exceptions:
+  - type: System.ArgumentException
+    description: A regular expression parsing error occurred.
+  - type: System.ArgumentNullException
+    description: '*input* or *pattern* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*options* is not a valid bitwise combination of @''System.Text.RegularExpressions.RegexOptions'' values.'
+- uid: System.Text.RegularExpressions.Regex.Matches(System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)
+  id: Matches(System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: Matches(String, String, RegexOptions, TimeSpan)
+  fullName: System.Text.RegularExpressions.Regex.Matches(System.String, System.String, System.Text.RegularExpressions.RegexOptions, System.TimeSpan)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 583
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Searches the specified input string for all occurrences of a specified regular expression, using the specified matching options and time-out interval.
+  syntax:
+    content: public static MatchCollection Matches(string input, string pattern, RegexOptions options, TimeSpan matchTimeout)
+    content.vb: Public Shared Function Matches(input As String, pattern As String, options As RegexOptions, matchTimeout As TimeSpan) As MatchCollection
+    parameters:
+    - id: input
+      type: System.String
+      description: The string to search for a match.
+    - id: pattern
+      type: System.String
+      description: The regular expression pattern to match.
+    - id: options
+      type: System.Text.RegularExpressions.RegexOptions
+      description: A bitwise combination of the enumeration values that specify options for matching.
+    - id: matchTimeout
+      type: System.TimeSpan
+      description: A time-out interval, or @'System.Text.RegularExpressions.Regex.InfiniteMatchTimeout' to indicate that the method should not time out.
+    return:
+      type: System.Text.RegularExpressions.MatchCollection
+  exceptions:
+  - type: System.ArgumentException
+    description: A regular expression parsing error occurred.
+  - type: System.ArgumentNullException
+    description: '*input* or *pattern* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*options* is not a valid bitwise combination of @''System.Text.RegularExpressions.RegexOptions'' values.-or-*matchTimeout* is negative, zero, or greater than approximately 24 days.'
+- uid: System.Text.RegularExpressions.Regex.Matches(System.String)
+  id: Matches(System.String)
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: Matches(String)
+  fullName: System.Text.RegularExpressions.Regex.Matches(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 595
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Searches the specified input string for all occurrences of a regular expression.
+  syntax:
+    content: public MatchCollection Matches(string input)
+    content.vb: Public Function Matches(input As String) As MatchCollection
+    parameters:
+    - id: input
+      type: System.String
+      description: The string to search for a match.
+    return:
+      type: System.Text.RegularExpressions.MatchCollection
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*input* is null.'
+- uid: System.Text.RegularExpressions.Regex.Matches(System.String,System.Int32)
+  id: Matches(System.String,System.Int32)
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: Matches(String, Int32)
+  fullName: System.Text.RegularExpressions.Regex.Matches(System.String, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 609
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Searches the specified input string for all occurrences of a regular expression, beginning at the specified starting position in the string.
+  syntax:
+    content: public MatchCollection Matches(string input, int startat)
+    content.vb: Public Function Matches(input As String, startat As Integer) As MatchCollection
+    parameters:
+    - id: input
+      type: System.String
+      description: The string to search for a match.
+    - id: startat
+      type: System.Int32
+      description: The character position in the input string at which to start the search.
+    return:
+      type: System.Text.RegularExpressions.MatchCollection
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*input* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*startat* is less than zero or greater than the length of *input*.'
+- uid: System.Text.RegularExpressions.Regex.Replace(System.String,System.String,System.String)
+  id: Replace(System.String,System.String,System.String)
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: Replace(String, String, String)
+  fullName: System.Text.RegularExpressions.Regex.Replace(System.String, System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 621
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: In a specified input string, replaces all strings that match a specified regular expression with a specified replacement string.
+  syntax:
+    content: public static string Replace(string input, string pattern, string replacement)
+    content.vb: Public Shared Function Replace(input As String, pattern As String, replacement As String) As String
+    parameters:
+    - id: input
+      type: System.String
+      description: The string to search for a match.
+    - id: pattern
+      type: System.String
+      description: The regular expression pattern to match.
+    - id: replacement
+      type: System.String
+      description: The replacement string.
+    return:
+      type: System.String
+  exceptions:
+  - type: System.ArgumentException
+    description: A regular expression parsing error occurred.
+  - type: System.ArgumentNullException
+    description: '*input*, *pattern*, or *replacement* is null.'
+  - type: System.Text.RegularExpressions.RegexMatchTimeoutException
+    description: A time-out occurred. For more information about time-outs, see the Remarks section.
+- uid: System.Text.RegularExpressions.Regex.Replace(System.String,System.String,System.String,System.Text.RegularExpressions.RegexOptions)
+  id: Replace(System.String,System.String,System.String,System.Text.RegularExpressions.RegexOptions)
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: Replace(String, String, String, RegexOptions)
+  fullName: System.Text.RegularExpressions.Regex.Replace(System.String, System.String, System.String, System.Text.RegularExpressions.RegexOptions)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 631
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: In a specified input string, replaces all strings that match a specified regular expression with a specified replacement string. Specified options modify the matching operation.
+  syntax:
+    content: public static string Replace(string input, string pattern, string replacement, RegexOptions options)
+    content.vb: Public Shared Function Replace(input As String, pattern As String, replacement As String, options As RegexOptions) As String
+    parameters:
+    - id: input
+      type: System.String
+      description: The string to search for a match.
+    - id: pattern
+      type: System.String
+      description: The regular expression pattern to match.
+    - id: replacement
+      type: System.String
+      description: The replacement string.
+    - id: options
+      type: System.Text.RegularExpressions.RegexOptions
+      description: A bitwise combination of the enumeration values that provide options for matching.
+    return:
+      type: System.String
+  exceptions:
+  - type: System.ArgumentException
+    description: A regular expression parsing error occurred.
+  - type: System.ArgumentNullException
+    description: '*input*, *pattern*, or *replacement* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*options* is not a valid bitwise combination of @''System.Text.RegularExpressions.RegexOptions'' values.'
+  - type: System.Text.RegularExpressions.RegexMatchTimeoutException
+    description: A time-out occurred. For more information about time-outs, see the Remarks section.
+- uid: System.Text.RegularExpressions.Regex.Replace(System.String,System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)
+  id: Replace(System.String,System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: Replace(String, String, String, RegexOptions, TimeSpan)
+  fullName: System.Text.RegularExpressions.Regex.Replace(System.String, System.String, System.String, System.Text.RegularExpressions.RegexOptions, System.TimeSpan)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 636
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: In a specified input string, replaces all strings that match a specified regular expression with a specified replacement string. Additional parameters specify options that modify the matching operation and a time-out interval if no match is found.
+  syntax:
+    content: public static string Replace(string input, string pattern, string replacement, RegexOptions options, TimeSpan matchTimeout)
+    content.vb: Public Shared Function Replace(input As String, pattern As String, replacement As String, options As RegexOptions, matchTimeout As TimeSpan) As String
+    parameters:
+    - id: input
+      type: System.String
+      description: The string to search for a match.
+    - id: pattern
+      type: System.String
+      description: The regular expression pattern to match.
+    - id: replacement
+      type: System.String
+      description: The replacement string.
+    - id: options
+      type: System.Text.RegularExpressions.RegexOptions
+      description: A bitwise combination of the enumeration values that provide options for matching.
+    - id: matchTimeout
+      type: System.TimeSpan
+      description: A time-out interval, or @'System.Text.RegularExpressions.Regex.InfiniteMatchTimeout' to indicate that the method should not time out.
+    return:
+      type: System.String
+  exceptions:
+  - type: System.ArgumentException
+    description: A regular expression parsing error occurred.
+  - type: System.ArgumentNullException
+    description: '*input*, *pattern*, or *replacement* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*options* is not a valid bitwise combination of @''System.Text.RegularExpressions.RegexOptions'' values.-or-*matchTimeout* is negative, zero, or greater than approximately 24 days.'
+  - type: System.Text.RegularExpressions.RegexMatchTimeoutException
+    description: A time-out occurred. For more information about time-outs, see the Remarks section.
+- uid: System.Text.RegularExpressions.Regex.Replace(System.String,System.String)
+  id: Replace(System.String,System.String)
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: Replace(String, String)
+  fullName: System.Text.RegularExpressions.Regex.Replace(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 646
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: In a specified input string, replaces all strings that match a regular expression pattern with a specified replacement string.
+  syntax:
+    content: public string Replace(string input, string replacement)
+    content.vb: Public Function Replace(input As String, replacement As String) As String
+    parameters:
+    - id: input
+      type: System.String
+      description: The string to search for a match.
+    - id: replacement
+      type: System.String
+      description: The replacement string.
+    return:
+      type: System.String
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*input* or *replacement* is null.'
+  - type: System.Text.RegularExpressions.RegexMatchTimeoutException
+    description: A time-out occurred. For more information about time-outs, see the Remarks section.
+- uid: System.Text.RegularExpressions.Regex.Replace(System.String,System.String,System.Int32)
+  id: Replace(System.String,System.String,System.Int32)
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: Replace(String, String, Int32)
+  fullName: System.Text.RegularExpressions.Regex.Replace(System.String, System.String, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 659
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: In a specified input string, replaces a specified maximum number of strings that match a regular expression pattern with a specified replacement string.
+  syntax:
+    content: public string Replace(string input, string replacement, int count)
+    content.vb: Public Function Replace(input As String, replacement As String, count As Integer) As String
+    parameters:
+    - id: input
+      type: System.String
+      description: The string to search for a match.
+    - id: replacement
+      type: System.String
+      description: The replacement string.
+    - id: count
+      type: System.Int32
+      description: The maximum number of times the replacement can occur.
+    return:
+      type: System.String
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*input* or *replacement* is null.'
+  - type: System.Text.RegularExpressions.RegexMatchTimeoutException
+    description: A time-out occurred. For more information about time-outs, see the Remarks section.
+- uid: System.Text.RegularExpressions.Regex.Replace(System.String,System.String,System.Int32,System.Int32)
+  id: Replace(System.String,System.String,System.Int32,System.Int32)
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: Replace(String, String, Int32, Int32)
+  fullName: System.Text.RegularExpressions.Regex.Replace(System.String, System.String, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 672
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: In a specified input substring, replaces a specified maximum number of strings that match a regular expression pattern with a specified replacement string.
+  syntax:
+    content: public string Replace(string input, string replacement, int count, int startat)
+    content.vb: Public Function Replace(input As String, replacement As String, count As Integer, startat As Integer) As String
+    parameters:
+    - id: input
+      type: System.String
+      description: The string to search for a match.
+    - id: replacement
+      type: System.String
+      description: The replacement string.
+    - id: count
+      type: System.Int32
+      description: Maximum number of times the replacement can occur.
+    - id: startat
+      type: System.Int32
+      description: The character position in the input string where the search begins.
+    return:
+      type: System.String
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*input* or *replacement* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*startat* is less than zero or greater than the length of *input*.'
+  - type: System.Text.RegularExpressions.RegexMatchTimeoutException
+    description: A time-out occurred. For more information about time-outs, see the Remarks section.
+- uid: System.Text.RegularExpressions.Regex.Replace(System.String,System.String,System.Text.RegularExpressions.MatchEvaluator)
+  id: Replace(System.String,System.String,System.Text.RegularExpressions.MatchEvaluator)
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: Replace(String, String, MatchEvaluator)
+  fullName: System.Text.RegularExpressions.Regex.Replace(System.String, System.String, System.Text.RegularExpressions.MatchEvaluator)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 696
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: In a specified input string, replaces all strings that match a specified regular expression with a string returned by a @'System.Text.RegularExpressions.MatchEvaluator' delegate.
+  syntax:
+    content: public static string Replace(string input, string pattern, MatchEvaluator evaluator)
+    content.vb: Public Shared Function Replace(input As String, pattern As String, evaluator As MatchEvaluator) As String
+    parameters:
+    - id: input
+      type: System.String
+      description: The string to search for a match.
+    - id: pattern
+      type: System.String
+      description: The regular expression pattern to match.
+    - id: evaluator
+      type: System.Text.RegularExpressions.MatchEvaluator
+      description: A custom method that examines each match and returns either the original matched string or a replacement string.
+    return:
+      type: System.String
+  exceptions:
+  - type: System.ArgumentException
+    description: A regular expression parsing error occurred.
+  - type: System.ArgumentNullException
+    description: '*input*, *pattern*, or *evaluator* is null.'
+  - type: System.Text.RegularExpressions.RegexMatchTimeoutException
+    description: A time-out occurred. For more information about time-outs, see the Remarks section.
+- uid: System.Text.RegularExpressions.Regex.Replace(System.String,System.String,System.Text.RegularExpressions.MatchEvaluator,System.Text.RegularExpressions.RegexOptions)
+  id: Replace(System.String,System.String,System.Text.RegularExpressions.MatchEvaluator,System.Text.RegularExpressions.RegexOptions)
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: Replace(String, String, MatchEvaluator, RegexOptions)
+  fullName: System.Text.RegularExpressions.Regex.Replace(System.String, System.String, System.Text.RegularExpressions.MatchEvaluator, System.Text.RegularExpressions.RegexOptions)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 705
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: In a specified input string, replaces all strings that match a specified regular expression with a string returned by a @'System.Text.RegularExpressions.MatchEvaluator' delegate. Specified options modify the matching operation.
+  syntax:
+    content: public static string Replace(string input, string pattern, MatchEvaluator evaluator, RegexOptions options)
+    content.vb: Public Shared Function Replace(input As String, pattern As String, evaluator As MatchEvaluator, options As RegexOptions) As String
+    parameters:
+    - id: input
+      type: System.String
+      description: The string to search for a match.
+    - id: pattern
+      type: System.String
+      description: The regular expression pattern to match.
+    - id: evaluator
+      type: System.Text.RegularExpressions.MatchEvaluator
+      description: A custom method that examines each match and returns either the original matched string or a replacement string.
+    - id: options
+      type: System.Text.RegularExpressions.RegexOptions
+      description: A bitwise combination of the enumeration values that provide options for matching.
+    return:
+      type: System.String
+  exceptions:
+  - type: System.ArgumentException
+    description: A regular expression parsing error occurred.
+  - type: System.ArgumentNullException
+    description: '*input*, *pattern*, or *evaluator* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*options* is not a valid bitwise combination of @''System.Text.RegularExpressions.RegexOptions'' values.'
+  - type: System.Text.RegularExpressions.RegexMatchTimeoutException
+    description: A time-out occurred. For more information about time-outs, see the Remarks section.
+- uid: System.Text.RegularExpressions.Regex.Replace(System.String,System.String,System.Text.RegularExpressions.MatchEvaluator,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)
+  id: Replace(System.String,System.String,System.Text.RegularExpressions.MatchEvaluator,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: Replace(String, String, MatchEvaluator, RegexOptions, TimeSpan)
+  fullName: System.Text.RegularExpressions.Regex.Replace(System.String, System.String, System.Text.RegularExpressions.MatchEvaluator, System.Text.RegularExpressions.RegexOptions, System.TimeSpan)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 710
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: In a specified input string, replaces all substrings that match a specified regular expression with a string returned by a @'System.Text.RegularExpressions.MatchEvaluator' delegate. Additional parameters specify options that modify the matching operation and a time-out interval if no match is found.
+  syntax:
+    content: public static string Replace(string input, string pattern, MatchEvaluator evaluator, RegexOptions options, TimeSpan matchTimeout)
+    content.vb: Public Shared Function Replace(input As String, pattern As String, evaluator As MatchEvaluator, options As RegexOptions, matchTimeout As TimeSpan) As String
+    parameters:
+    - id: input
+      type: System.String
+      description: The string to search for a match.
+    - id: pattern
+      type: System.String
+      description: The regular expression pattern to match.
+    - id: evaluator
+      type: System.Text.RegularExpressions.MatchEvaluator
+      description: A custom method that examines each match and returns either the original matched string or a replacement string.
+    - id: options
+      type: System.Text.RegularExpressions.RegexOptions
+      description: A bitwise combination of enumeration values that provide options for matching.
+    - id: matchTimeout
+      type: System.TimeSpan
+      description: A time-out interval, or @'System.Text.RegularExpressions.Regex.InfiniteMatchTimeout' to indicate that the method should not time out.
+    return:
+      type: System.String
+  exceptions:
+  - type: System.ArgumentException
+    description: A regular expression parsing error occurred.
+  - type: System.ArgumentNullException
+    description: '*input*, *pattern*, or *evaluator* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*options* is not a valid bitwise combination of @''System.Text.RegularExpressions.RegexOptions'' values.-or-*matchTimeout* is negative, zero, or greater than approximately 24 days.'
+  - type: System.Text.RegularExpressions.RegexMatchTimeoutException
+    description: A time-out occurred. For more information about time-outs, see the Remarks section.
+- uid: System.Text.RegularExpressions.Regex.Replace(System.String,System.Text.RegularExpressions.MatchEvaluator)
+  id: Replace(System.String,System.Text.RegularExpressions.MatchEvaluator)
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: Replace(String, MatchEvaluator)
+  fullName: System.Text.RegularExpressions.Regex.Replace(System.String, System.Text.RegularExpressions.MatchEvaluator)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 719
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: In a specified input string, replaces all strings that match a specified regular expression with a string returned by a @'System.Text.RegularExpressions.MatchEvaluator' delegate.
+  syntax:
+    content: public string Replace(string input, MatchEvaluator evaluator)
+    content.vb: Public Function Replace(input As String, evaluator As MatchEvaluator) As String
+    parameters:
+    - id: input
+      type: System.String
+      description: The string to search for a match.
+    - id: evaluator
+      type: System.Text.RegularExpressions.MatchEvaluator
+      description: A custom method that examines each match and returns either the original matched string or a replacement string.
+    return:
+      type: System.String
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*input* or *evaluator* is null.'
+  - type: System.Text.RegularExpressions.RegexMatchTimeoutException
+    description: A time-out occurred. For more information about time-outs, see the Remarks section.
+- uid: System.Text.RegularExpressions.Regex.Replace(System.String,System.Text.RegularExpressions.MatchEvaluator,System.Int32)
+  id: Replace(System.String,System.Text.RegularExpressions.MatchEvaluator,System.Int32)
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: Replace(String, MatchEvaluator, Int32)
+  fullName: System.Text.RegularExpressions.Regex.Replace(System.String, System.Text.RegularExpressions.MatchEvaluator, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 731
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: In a specified input string, replaces a specified maximum number of strings that match a regular expression pattern with a string returned by a @'System.Text.RegularExpressions.MatchEvaluator' delegate.
+  syntax:
+    content: public string Replace(string input, MatchEvaluator evaluator, int count)
+    content.vb: Public Function Replace(input As String, evaluator As MatchEvaluator, count As Integer) As String
+    parameters:
+    - id: input
+      type: System.String
+      description: The string to search for a match.
+    - id: evaluator
+      type: System.Text.RegularExpressions.MatchEvaluator
+      description: A custom method that examines each match and returns either the original matched string or a replacement string.
+    - id: count
+      type: System.Int32
+      description: The maximum number of times the replacement will occur.
+    return:
+      type: System.String
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*input* or *evaluator* is null.'
+  - type: System.Text.RegularExpressions.RegexMatchTimeoutException
+    description: A time-out occurred. For more information about time-outs, see the Remarks section.
+- uid: System.Text.RegularExpressions.Regex.Replace(System.String,System.Text.RegularExpressions.MatchEvaluator,System.Int32,System.Int32)
+  id: Replace(System.String,System.Text.RegularExpressions.MatchEvaluator,System.Int32,System.Int32)
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: Replace(String, MatchEvaluator, Int32, Int32)
+  fullName: System.Text.RegularExpressions.Regex.Replace(System.String, System.Text.RegularExpressions.MatchEvaluator, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 744
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: In a specified input substring, replaces a specified maximum number of strings that match a regular expression pattern with a string returned by a @'System.Text.RegularExpressions.MatchEvaluator' delegate.
+  syntax:
+    content: public string Replace(string input, MatchEvaluator evaluator, int count, int startat)
+    content.vb: Public Function Replace(input As String, evaluator As MatchEvaluator, count As Integer, startat As Integer) As String
+    parameters:
+    - id: input
+      type: System.String
+      description: The string to search for a match.
+    - id: evaluator
+      type: System.Text.RegularExpressions.MatchEvaluator
+      description: A custom method that examines each match and returns either the original matched string or a replacement string.
+    - id: count
+      type: System.Int32
+      description: The maximum number of times the replacement will occur.
+    - id: startat
+      type: System.Int32
+      description: The character position in the input string where the search begins.
+    return:
+      type: System.String
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*input* or *evaluator* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*startat* is less than zero or greater than the length of *input*.'
+  - type: System.Text.RegularExpressions.RegexMatchTimeoutException
+    description: A time-out occurred. For more information about time-outs, see the Remarks section.
+- uid: System.Text.RegularExpressions.Regex.Split(System.String,System.String)
+  id: Split(System.String,System.String)
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: Split(String, String)
+  fullName: System.Text.RegularExpressions.Regex.Split(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 756
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Splits an input string into an array of substrings at the positions defined by a regular expression pattern.
+  syntax:
+    content: public static string[] Split(string input, string pattern)
+    content.vb: Public Shared Function Split(input As String, pattern As String) As String()
+    parameters:
+    - id: input
+      type: System.String
+      description: The string to split.
+    - id: pattern
+      type: System.String
+      description: The regular expression pattern to match.
+    return:
+      type: System.String[]
+  exceptions:
+  - type: System.ArgumentException
+    description: A regular expression parsing error occurred.
+  - type: System.ArgumentNullException
+    description: '*input* or *pattern* is null.'
+  - type: System.Text.RegularExpressions.RegexMatchTimeoutException
+    description: A time-out occurred. For more information about time-outs, see the Remarks section.
+- uid: System.Text.RegularExpressions.Regex.Split(System.String,System.String,System.Text.RegularExpressions.RegexOptions)
+  id: Split(System.String,System.String,System.Text.RegularExpressions.RegexOptions)
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: Split(String, String, RegexOptions)
+  fullName: System.Text.RegularExpressions.Regex.Split(System.String, System.String, System.Text.RegularExpressions.RegexOptions)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 764
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Splits an input string into an array of substrings at the positions defined by a specified regular expression pattern. Specified options modify the matching operation.
+  syntax:
+    content: public static string[] Split(string input, string pattern, RegexOptions options)
+    content.vb: Public Shared Function Split(input As String, pattern As String, options As RegexOptions) As String()
+    parameters:
+    - id: input
+      type: System.String
+      description: The string to split.
+    - id: pattern
+      type: System.String
+      description: The regular expression pattern to match.
+    - id: options
+      type: System.Text.RegularExpressions.RegexOptions
+      description: A bitwise combination of the enumeration values that provide options for matching.
+    return:
+      type: System.String[]
+  exceptions:
+  - type: System.ArgumentException
+    description: A regular expression parsing error occurred.
+  - type: System.ArgumentNullException
+    description: '*input* or *pattern* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*options* is not a valid bitwise combination of @''System.Text.RegularExpressions.RegexOptions'' values.'
+  - type: System.Text.RegularExpressions.RegexMatchTimeoutException
+    description: A time-out occurred. For more information about time-outs, see the Remarks section.
+- uid: System.Text.RegularExpressions.Regex.Split(System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)
+  id: Split(System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: Split(String, String, RegexOptions, TimeSpan)
+  fullName: System.Text.RegularExpressions.Regex.Split(System.String, System.String, System.Text.RegularExpressions.RegexOptions, System.TimeSpan)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 769
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Splits an input string into an array of substrings at the positions defined by a specified regular expression pattern. Additional parameters specify options that modify the matching operation and a time-out interval if no match is found.
+  syntax:
+    content: public static string[] Split(string input, string pattern, RegexOptions options, TimeSpan matchTimeout)
+    content.vb: Public Shared Function Split(input As String, pattern As String, options As RegexOptions, matchTimeout As TimeSpan) As String()
+    parameters:
+    - id: input
+      type: System.String
+      description: The string to split.
+    - id: pattern
+      type: System.String
+      description: The regular expression pattern to match.
+    - id: options
+      type: System.Text.RegularExpressions.RegexOptions
+      description: A bitwise combination of the enumeration values that provide options for matching.
+    - id: matchTimeout
+      type: System.TimeSpan
+      description: A time-out interval, or @'System.Text.RegularExpressions.Regex.InfiniteMatchTimeout' to indicate that the method should not time out.
+    return:
+      type: System.String[]
+  exceptions:
+  - type: System.ArgumentException
+    description: A regular expression parsing error occurred.
+  - type: System.ArgumentNullException
+    description: '*input* or *pattern* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*options* is not a valid bitwise combination of @''System.Text.RegularExpressions.RegexOptions'' values.-or-*matchTimeout* is negative, zero, or greater than approximately 24 days.'
+  - type: System.Text.RegularExpressions.RegexMatchTimeoutException
+    description: A time-out occurred. For more information about time-outs, see the Remarks section.
+- uid: System.Text.RegularExpressions.Regex.Split(System.String)
+  id: Split(System.String)
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: Split(String)
+  fullName: System.Text.RegularExpressions.Regex.Split(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 778
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Splits an input string into an array of substrings at the positions defined by a regular expression pattern specified in the @'System.Text.RegularExpressions.Regex' constructor.
+  syntax:
+    content: public string[] Split(string input)
+    content.vb: Public Function Split(input As String) As String()
+    parameters:
+    - id: input
+      type: System.String
+      description: The string to split.
+    return:
+      type: System.String[]
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*input* is null.'
+  - type: System.Text.RegularExpressions.RegexMatchTimeoutException
+    description: A time-out occurred. For more information about time-outs, see the Remarks section.
+- uid: System.Text.RegularExpressions.Regex.Split(System.String,System.Int32)
+  id: Split(System.String,System.Int32)
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: Split(String, Int32)
+  fullName: System.Text.RegularExpressions.Regex.Split(System.String, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 790
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Splits an input string a specified maximum number of times into an array of substrings, at the positions defined by a regular expression specified in the @'System.Text.RegularExpressions.Regex' constructor.
+  syntax:
+    content: public string[] Split(string input, int count)
+    content.vb: Public Function Split(input As String, count As Integer) As String()
+    parameters:
+    - id: input
+      type: System.String
+      description: The string to be split.
+    - id: count
+      type: System.Int32
+      description: The maximum number of times the split can occur.
+    return:
+      type: System.String[]
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*input* is null.'
+  - type: System.Text.RegularExpressions.RegexMatchTimeoutException
+    description: A time-out occurred. For more information about time-outs, see the Remarks section.
+- uid: System.Text.RegularExpressions.Regex.Split(System.String,System.Int32,System.Int32)
+  id: Split(System.String,System.Int32,System.Int32)
+  parent: System.Text.RegularExpressions.Regex
+  href: System.Text.RegularExpressions.Regex.yml
+  name: Split(String, Int32, Int32)
+  fullName: System.Text.RegularExpressions.Regex.Split(System.String, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/Regex.cs
+    startLine: 802
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Splits an input string a specified maximum number of times into an array of substrings, at the positions defined by a regular expression specified in the @'System.Text.RegularExpressions.Regex' constructor. The search for the regular expression pattern starts at a specified character position in the input string.
+  syntax:
+    content: public string[] Split(string input, int count, int startat)
+    content.vb: Public Function Split(input As String, count As Integer, startat As Integer) As String()
+    parameters:
+    - id: input
+      type: System.String
+      description: The string to be split.
+    - id: count
+      type: System.Int32
+      description: The maximum number of times the split can occur.
+    - id: startat
+      type: System.Int32
+      description: The character position in the input string where the search will begin.
+    return:
+      type: System.String[]
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*input* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*startat* is less than zero or greater than the length of *input*.'
+  - type: System.Text.RegularExpressions.RegexMatchTimeoutException
+    description: A time-out occurred. For more information about time-outs, see the Remarks section.
+references:
+- uid: System.Text.RegularExpressions
+  isExternal: false
+  name: System.Text.RegularExpressions
+  fullName: System.Text.RegularExpressions
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Text.RegularExpressions.RegexOptions
+  parent: System.Text.RegularExpressions
+  isExternal: false
+  href: System.Text.RegularExpressions.RegexOptions.yml
+  name: RegexOptions
+  fullName: System.Text.RegularExpressions.RegexOptions
+  type: Enum
+- uid: System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  fullName: System.TimeSpan
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  name.vb: String()
+  fullName: System.String[]
+  fullName.vb: System.String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Int32[]
+  isExternal: true
+  name: Int32[]
+  name.vb: Int32()
+  fullName: System.Int32[]
+  fullName.vb: System.Int32()
+  spec.csharp:
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Text.RegularExpressions.Match
+  parent: System.Text.RegularExpressions
+  isExternal: false
+  href: System.Text.RegularExpressions.Match.yml
+  name: Match
+  fullName: System.Text.RegularExpressions.Match
+  type: Class
+  summary: Represents the results from a single regular expression match.
+- uid: System.Text.RegularExpressions.MatchCollection
+  parent: System.Text.RegularExpressions
+  isExternal: false
+  href: System.Text.RegularExpressions.MatchCollection.yml
+  name: MatchCollection
+  fullName: System.Text.RegularExpressions.MatchCollection
+  type: Class
+  summary: >-
+    Represents the set of names appearing as capturing group
+
+    names in a regular expression.
+- uid: System.Text.RegularExpressions.MatchEvaluator
+  parent: System.Text.RegularExpressions
+  isExternal: false
+  href: System.Text.RegularExpressions.MatchEvaluator.yml
+  name: MatchEvaluator
+  fullName: System.Text.RegularExpressions.MatchEvaluator
+  type: Delegate

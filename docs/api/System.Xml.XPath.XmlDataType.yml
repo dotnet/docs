@@ -1,0 +1,65 @@
+items:
+- uid: System.Xml.XPath.XmlDataType
+  id: XmlDataType
+  parent: System.Xml.XPath
+  children:
+  - System.Xml.XPath.XmlDataType.Number
+  - System.Xml.XPath.XmlDataType.Text
+  href: System.Xml.XPath.XmlDataType.yml
+  name: XmlDataType
+  fullName: System.Xml.XPath.XmlDataType
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Xml.XPath/src/System/Xml/XPath/XPathExpr.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Xml.XPath/src/System/Xml/XPath/XPathExpr.cs
+    startLine: 21
+  assemblies:
+  - System.Xml.XPath
+  namespace: System.Xml.XPath
+  summary: Specifies the data type used to determine sort order.
+  syntax:
+    content: public enum XmlDataType
+    content.vb: Public Enum XmlDataType
+- uid: System.Xml.XPath.XmlDataType.Text
+  id: Text
+  parent: System.Xml.XPath.XmlDataType
+  href: System.Xml.XPath.XmlDataType.yml
+  name: Text
+  fullName: System.Xml.XPath.XmlDataType.Text
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Xml.XPath/src/System/Xml/XPath/XPathExpr.cs
+    startLine: 23
+  assemblies:
+  - System.Xml.XPath
+  namespace: System.Xml.XPath
+  summary: Values are sorted alphabetically.
+  syntax:
+    content: Text = 1
+- uid: System.Xml.XPath.XmlDataType.Number
+  id: Number
+  parent: System.Xml.XPath.XmlDataType
+  href: System.Xml.XPath.XmlDataType.yml
+  name: Number
+  fullName: System.Xml.XPath.XmlDataType.Number
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Xml.XPath/src/System/Xml/XPath/XPathExpr.cs
+    startLine: 24
+  assemblies:
+  - System.Xml.XPath
+  namespace: System.Xml.XPath
+  summary: Values are sorted numerically.
+  syntax:
+    content: Number = 2
+references:
+- uid: System.Xml.XPath
+  isExternal: false
+  name: System.Xml.XPath
+  fullName: System.Xml.XPath
+  type: Namespace

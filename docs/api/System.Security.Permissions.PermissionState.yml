@@ -1,0 +1,65 @@
+items:
+- uid: System.Security.Permissions.PermissionState
+  id: PermissionState
+  parent: System.Security.Permissions
+  children:
+  - System.Security.Permissions.PermissionState.None
+  - System.Security.Permissions.PermissionState.Unrestricted
+  href: System.Security.Permissions.PermissionState.yml
+  name: PermissionState
+  fullName: System.Security.Permissions.PermissionState
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Security/Permissions/PermissionState.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Security/Permissions/PermissionState.cs
+    startLine: 11
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Specifies whether a permission should have all or no access to resources at creation.
+  syntax:
+    content: public enum PermissionState
+    content.vb: Public Enum PermissionState
+- uid: System.Security.Permissions.PermissionState.Unrestricted
+  id: Unrestricted
+  parent: System.Security.Permissions.PermissionState
+  href: System.Security.Permissions.PermissionState.yml
+  name: Unrestricted
+  fullName: System.Security.Permissions.PermissionState.Unrestricted
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/PermissionState.cs
+    startLine: 15
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Full access to the resource protected by the permission.
+  syntax:
+    content: Unrestricted = 1
+- uid: System.Security.Permissions.PermissionState.None
+  id: None
+  parent: System.Security.Permissions.PermissionState
+  href: System.Security.Permissions.PermissionState.yml
+  name: None
+  fullName: System.Security.Permissions.PermissionState.None
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/PermissionState.cs
+    startLine: 16
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: No access to the resource protected by the permission.
+  syntax:
+    content: None = 0
+references:
+- uid: System.Security.Permissions
+  isExternal: false
+  name: System.Security.Permissions
+  fullName: System.Security.Permissions
+  type: Namespace

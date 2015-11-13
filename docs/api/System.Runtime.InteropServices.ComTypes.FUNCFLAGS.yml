@@ -1,0 +1,263 @@
+items:
+- uid: System.Runtime.InteropServices.ComTypes.FUNCFLAGS
+  id: FUNCFLAGS
+  parent: System.Runtime.InteropServices.ComTypes
+  children:
+  - System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FBINDABLE
+  - System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FDEFAULTBIND
+  - System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FDEFAULTCOLLELEM
+  - System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FDISPLAYBIND
+  - System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FHIDDEN
+  - System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FIMMEDIATEBIND
+  - System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FNONBROWSABLE
+  - System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FREPLACEABLE
+  - System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FREQUESTEDIT
+  - System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FRESTRICTED
+  - System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FSOURCE
+  - System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FUIDEFAULT
+  - System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FUSESGETLASTERROR
+  href: System.Runtime.InteropServices.ComTypes.FUNCFLAGS.yml
+  name: FUNCFLAGS
+  fullName: System.Runtime.InteropServices.ComTypes.FUNCFLAGS
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 267
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Identifies the constants that define the properties of a function.
+  syntax:
+    content: 'public enum FUNCFLAGS : short'
+    content.vb: Public Enum FUNCFLAGS As Short
+- uid: System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FRESTRICTED
+  id: FUNCFLAG_FRESTRICTED
+  parent: System.Runtime.InteropServices.ComTypes.FUNCFLAGS
+  href: System.Runtime.InteropServices.ComTypes.FUNCFLAGS.yml
+  name: FUNCFLAG_FRESTRICTED
+  fullName: System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FRESTRICTED
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 271
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: The function should not be accessible from macro languages. This flag is intended for system-level functions or functions that type browsers should not display.
+  syntax:
+    content: FUNCFLAG_FRESTRICTED = 1
+- uid: System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FSOURCE
+  id: FUNCFLAG_FSOURCE
+  parent: System.Runtime.InteropServices.ComTypes.FUNCFLAGS
+  href: System.Runtime.InteropServices.ComTypes.FUNCFLAGS.yml
+  name: FUNCFLAG_FSOURCE
+  fullName: System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FSOURCE
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 272
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: The function returns an object that is a source of events.
+  syntax:
+    content: FUNCFLAG_FSOURCE = 2
+- uid: System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FBINDABLE
+  id: FUNCFLAG_FBINDABLE
+  parent: System.Runtime.InteropServices.ComTypes.FUNCFLAGS
+  href: System.Runtime.InteropServices.ComTypes.FUNCFLAGS.yml
+  name: FUNCFLAG_FBINDABLE
+  fullName: System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FBINDABLE
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 273
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: The function that supports data binding.
+  syntax:
+    content: FUNCFLAG_FBINDABLE = 4
+- uid: System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FREQUESTEDIT
+  id: FUNCFLAG_FREQUESTEDIT
+  parent: System.Runtime.InteropServices.ComTypes.FUNCFLAGS
+  href: System.Runtime.InteropServices.ComTypes.FUNCFLAGS.yml
+  name: FUNCFLAG_FREQUESTEDIT
+  fullName: System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FREQUESTEDIT
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 274
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: When set, any call to a method that sets the property results first in a call to IPropertyNotifySink::OnRequestEdit. The implementation of OnRequestEdit determines if the call is allowed to set the property.
+  syntax:
+    content: FUNCFLAG_FREQUESTEDIT = 8
+- uid: System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FDISPLAYBIND
+  id: FUNCFLAG_FDISPLAYBIND
+  parent: System.Runtime.InteropServices.ComTypes.FUNCFLAGS
+  href: System.Runtime.InteropServices.ComTypes.FUNCFLAGS.yml
+  name: FUNCFLAG_FDISPLAYBIND
+  fullName: System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FDISPLAYBIND
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 275
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: The function that is displayed to the user as bindable. @'System.Runtime.InteropServices.FUNCFLAGS.FUNCFLAG_FBINDABLE' must also be set.
+  syntax:
+    content: FUNCFLAG_FDISPLAYBIND = 16
+- uid: System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FDEFAULTBIND
+  id: FUNCFLAG_FDEFAULTBIND
+  parent: System.Runtime.InteropServices.ComTypes.FUNCFLAGS
+  href: System.Runtime.InteropServices.ComTypes.FUNCFLAGS.yml
+  name: FUNCFLAG_FDEFAULTBIND
+  fullName: System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FDEFAULTBIND
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 276
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: The function that best represents the object. Only one function in a type can have this attribute.
+  syntax:
+    content: FUNCFLAG_FDEFAULTBIND = 32
+- uid: System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FHIDDEN
+  id: FUNCFLAG_FHIDDEN
+  parent: System.Runtime.InteropServices.ComTypes.FUNCFLAGS
+  href: System.Runtime.InteropServices.ComTypes.FUNCFLAGS.yml
+  name: FUNCFLAG_FHIDDEN
+  fullName: System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FHIDDEN
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 277
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: The function should not be displayed to the user, although it exists and is bindable.
+  syntax:
+    content: FUNCFLAG_FHIDDEN = 64
+- uid: System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FUSESGETLASTERROR
+  id: FUNCFLAG_FUSESGETLASTERROR
+  parent: System.Runtime.InteropServices.ComTypes.FUNCFLAGS
+  href: System.Runtime.InteropServices.ComTypes.FUNCFLAGS.yml
+  name: FUNCFLAG_FUSESGETLASTERROR
+  fullName: System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FUSESGETLASTERROR
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 278
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: The function supports GetLastError. If an error occurs during the function, the caller can call GetLastError to retrieve the error code.
+  syntax:
+    content: FUNCFLAG_FUSESGETLASTERROR = 128
+- uid: System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FDEFAULTCOLLELEM
+  id: FUNCFLAG_FDEFAULTCOLLELEM
+  parent: System.Runtime.InteropServices.ComTypes.FUNCFLAGS
+  href: System.Runtime.InteropServices.ComTypes.FUNCFLAGS.yml
+  name: FUNCFLAG_FDEFAULTCOLLELEM
+  fullName: System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FDEFAULTCOLLELEM
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 279
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Permits an optimization in which the compiler looks for a member named "xyz" on the type of "abc". If such a member is found, and is flagged as an accessor function for an element of the default collection, a call is generated to that member function. Permitted on members in dispinterfaces and interfaces; not permitted on modules.
+  syntax:
+    content: FUNCFLAG_FDEFAULTCOLLELEM = 256
+- uid: System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FUIDEFAULT
+  id: FUNCFLAG_FUIDEFAULT
+  parent: System.Runtime.InteropServices.ComTypes.FUNCFLAGS
+  href: System.Runtime.InteropServices.ComTypes.FUNCFLAGS.yml
+  name: FUNCFLAG_FUIDEFAULT
+  fullName: System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FUIDEFAULT
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 280
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: The type information member is the default member for display in the user interface.
+  syntax:
+    content: FUNCFLAG_FUIDEFAULT = 512
+- uid: System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FNONBROWSABLE
+  id: FUNCFLAG_FNONBROWSABLE
+  parent: System.Runtime.InteropServices.ComTypes.FUNCFLAGS
+  href: System.Runtime.InteropServices.ComTypes.FUNCFLAGS.yml
+  name: FUNCFLAG_FNONBROWSABLE
+  fullName: System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FNONBROWSABLE
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 281
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: The property appears in an object browser, but not in a properties browser.
+  syntax:
+    content: FUNCFLAG_FNONBROWSABLE = 1024
+- uid: System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FREPLACEABLE
+  id: FUNCFLAG_FREPLACEABLE
+  parent: System.Runtime.InteropServices.ComTypes.FUNCFLAGS
+  href: System.Runtime.InteropServices.ComTypes.FUNCFLAGS.yml
+  name: FUNCFLAG_FREPLACEABLE
+  fullName: System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FREPLACEABLE
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 282
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Tags the interface as having default behaviors.
+  syntax:
+    content: FUNCFLAG_FREPLACEABLE = 2048
+- uid: System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FIMMEDIATEBIND
+  id: FUNCFLAG_FIMMEDIATEBIND
+  parent: System.Runtime.InteropServices.ComTypes.FUNCFLAGS
+  href: System.Runtime.InteropServices.ComTypes.FUNCFLAGS.yml
+  name: FUNCFLAG_FIMMEDIATEBIND
+  fullName: System.Runtime.InteropServices.ComTypes.FUNCFLAGS.FUNCFLAG_FIMMEDIATEBIND
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 283
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Mapped as individual bindable properties.
+  syntax:
+    content: FUNCFLAG_FIMMEDIATEBIND = 4096
+references:
+- uid: System.Runtime.InteropServices.ComTypes
+  isExternal: false
+  name: System.Runtime.InteropServices.ComTypes
+  fullName: System.Runtime.InteropServices.ComTypes
+  type: Namespace

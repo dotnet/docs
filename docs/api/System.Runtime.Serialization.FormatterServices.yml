@@ -1,0 +1,521 @@
+items:
+- uid: System.Runtime.Serialization.FormatterServices
+  id: FormatterServices
+  parent: System.Runtime.Serialization
+  children:
+  - System.Runtime.Serialization.FormatterServices.GetObjectData(System.Object,System.Reflection.MemberInfo[])
+  - System.Runtime.Serialization.FormatterServices.GetSafeUninitializedObject(System.Type)
+  - System.Runtime.Serialization.FormatterServices.GetSurrogateForCyclicalReference(System.Runtime.Serialization.ISerializationSurrogate)
+  - System.Runtime.Serialization.FormatterServices.GetTypeFromAssembly(System.Reflection.Assembly,System.String)
+  - System.Runtime.Serialization.FormatterServices.GetUninitializedObject(System.Type)
+  - System.Runtime.Serialization.FormatterServices.PopulateObjectMembers(System.Object,System.Reflection.MemberInfo[],System.Object[])
+  href: System.Runtime.Serialization.FormatterServices.yml
+  name: FormatterServices
+  fullName: System.Runtime.Serialization.FormatterServices
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/Serialization/FormatterServices.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/Serialization/FormatterServices.cs
+    startLine: 30
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Provides static methods to aid with the implementation of a @'System.Runtime.Serialization.Formatter' for serialization. This class cannot be inherited.
+  syntax:
+    content: public class FormatterServices
+    content.vb: Public Class FormatterServices
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Runtime.Serialization.FormatterServices.GetUninitializedObject(System.Type)
+  id: GetUninitializedObject(System.Type)
+  parent: System.Runtime.Serialization.FormatterServices
+  href: System.Runtime.Serialization.FormatterServices.yml
+  name: GetUninitializedObject(Type)
+  fullName: System.Runtime.Serialization.FormatterServices.GetUninitializedObject(System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/FormatterServices.cs
+    startLine: 253
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Creates a new instance of the specified object type.
+  syntax:
+    content: public static object GetUninitializedObject(Type type)
+    content.vb: Public Shared Function GetUninitializedObject(type As Type) As Object
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type of object to create.
+    return:
+      type: System.Object
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *type* parameter is null.
+  - type: System.Security.SecurityException
+    description: The caller does not have the required permission.
+- uid: System.Runtime.Serialization.FormatterServices.GetSafeUninitializedObject(System.Type)
+  id: GetSafeUninitializedObject(System.Type)
+  parent: System.Runtime.Serialization.FormatterServices
+  href: System.Runtime.Serialization.FormatterServices.yml
+  name: GetSafeUninitializedObject(Type)
+  fullName: System.Runtime.Serialization.FormatterServices.GetSafeUninitializedObject(System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/FormatterServices.cs
+    startLine: 267
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Creates a new instance of the specified object type.
+  syntax:
+    content: public static object GetSafeUninitializedObject(Type type)
+    content.vb: Public Shared Function GetSafeUninitializedObject(type As Type) As Object
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type of object to create.
+    return:
+      type: System.Object
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *type* parameter is null.
+  - type: System.Runtime.Serialization.SerializationException
+    description: The *type* parameter is not a valid common language runtime type.
+  - type: System.Security.SecurityException
+    description: The caller does not have the required permission.
+- uid: System.Runtime.Serialization.FormatterServices.PopulateObjectMembers(System.Object,System.Reflection.MemberInfo[],System.Object[])
+  id: PopulateObjectMembers(System.Object,System.Reflection.MemberInfo[],System.Object[])
+  parent: System.Runtime.Serialization.FormatterServices
+  href: System.Runtime.Serialization.FormatterServices.yml
+  name: PopulateObjectMembers(Object, MemberInfo[], Object[])
+  name.vb: PopulateObjectMembers(Object, MemberInfo(), Object())
+  fullName: System.Runtime.Serialization.FormatterServices.PopulateObjectMembers(System.Object, System.Reflection.MemberInfo[], System.Object[])
+  fullName.vb: System.Runtime.Serialization.FormatterServices.PopulateObjectMembers(System.Object, System.Reflection.MemberInfo(), System.Object())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/FormatterServices.cs
+    startLine: 344
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Populates the specified object with values for each field drawn from the data array of objects.
+  syntax:
+    content: public static object PopulateObjectMembers(object obj, MemberInfo[] members, object[] data)
+    content.vb: Public Shared Function PopulateObjectMembers(obj As Object, members As MemberInfo(), data As Object()) As Object
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to populate.
+    - id: members
+      type: System.Reflection.MemberInfo[]
+      description: An array of @'System.Reflection.MemberInfo' that describes which fields and properties to populate.
+    - id: data
+      type: System.Object[]
+      description: An array of @'System.Object' that specifies the values for each field and property to populate.
+    return:
+      type: System.Object
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *obj*, *members*, or *data* parameter is null.An element of *members* is null.
+  - type: System.ArgumentException
+    description: The length of *members* does not match the length of *data*.
+  - type: System.Runtime.Serialization.SerializationException
+    description: An element of *members* is not an instance of @'System.Reflection.FieldInfo'.
+  - type: System.Security.SecurityException
+    description: The caller does not have the required permission.
+- uid: System.Runtime.Serialization.FormatterServices.GetObjectData(System.Object,System.Reflection.MemberInfo[])
+  id: GetObjectData(System.Object,System.Reflection.MemberInfo[])
+  parent: System.Runtime.Serialization.FormatterServices
+  href: System.Runtime.Serialization.FormatterServices.yml
+  name: GetObjectData(Object, MemberInfo[])
+  name.vb: GetObjectData(Object, MemberInfo())
+  fullName: System.Runtime.Serialization.FormatterServices.GetObjectData(System.Object, System.Reflection.MemberInfo[])
+  fullName.vb: System.Runtime.Serialization.FormatterServices.GetObjectData(System.Object, System.Reflection.MemberInfo())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/FormatterServices.cs
+    startLine: 399
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Extracts the data from the specified object and returns it as an array of objects.
+  syntax:
+    content: public static object[] GetObjectData(object obj, MemberInfo[] members)
+    content.vb: Public Shared Function GetObjectData(obj As Object, members As MemberInfo()) As Object()
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to write to the formatter.
+    - id: members
+      type: System.Reflection.MemberInfo[]
+      description: The members to extract from the object.
+    return:
+      type: System.Object[]
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *obj* or *members* parameter is null.An element of *members* is null.
+  - type: System.Runtime.Serialization.SerializationException
+    description: An element of *members* does not represent a field.
+- uid: System.Runtime.Serialization.FormatterServices.GetSurrogateForCyclicalReference(System.Runtime.Serialization.ISerializationSurrogate)
+  id: GetSurrogateForCyclicalReference(System.Runtime.Serialization.ISerializationSurrogate)
+  parent: System.Runtime.Serialization.FormatterServices
+  href: System.Runtime.Serialization.FormatterServices.yml
+  name: GetSurrogateForCyclicalReference(ISerializationSurrogate)
+  fullName: System.Runtime.Serialization.FormatterServices.GetSurrogateForCyclicalReference(System.Runtime.Serialization.ISerializationSurrogate)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/FormatterServices.cs
+    startLine: 442
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Returns a serialization surrogate for the specified @'System.Runtime.Serialization.ISerializationSurrogate'.
+  syntax:
+    content: public static ISerializationSurrogate GetSurrogateForCyclicalReference(ISerializationSurrogate innerSurrogate)
+    content.vb: Public Shared Function GetSurrogateForCyclicalReference(innerSurrogate As ISerializationSurrogate) As ISerializationSurrogate
+    parameters:
+    - id: innerSurrogate
+      type: System.Runtime.Serialization.ISerializationSurrogate
+      description: The specified surrogate.
+    return:
+      type: System.Runtime.Serialization.ISerializationSurrogate
+- uid: System.Runtime.Serialization.FormatterServices.GetTypeFromAssembly(System.Reflection.Assembly,System.String)
+  id: GetTypeFromAssembly(System.Reflection.Assembly,System.String)
+  parent: System.Runtime.Serialization.FormatterServices
+  href: System.Runtime.Serialization.FormatterServices.yml
+  name: GetTypeFromAssembly(Assembly, String)
+  fullName: System.Runtime.Serialization.FormatterServices.GetTypeFromAssembly(System.Reflection.Assembly, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/FormatterServices.cs
+    startLine: 458
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Looks up the @'System.Type' of the specified object in the provided @'System.Reflection.Assembly'.
+  syntax:
+    content: public static Type GetTypeFromAssembly(Assembly assem, string name)
+    content.vb: Public Shared Function GetTypeFromAssembly(assem As Assembly, name As String) As Type
+    parameters:
+    - id: assem
+      type: System.Reflection.Assembly
+      description: The assembly where you want to look up the object.
+    - id: name
+      type: System.String
+      description: The name of the object.
+    return:
+      type: System.Type
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *assem* parameter is null.
+  - type: System.Security.SecurityException
+    description: The caller does not have the required permission.
+references:
+- uid: System.Runtime.Serialization
+  isExternal: false
+  name: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  fullName: System.Type
+- uid: System.Reflection.MemberInfo[]
+  isExternal: true
+  name: MemberInfo[]
+  name.vb: MemberInfo()
+  fullName: System.Reflection.MemberInfo[]
+  fullName.vb: System.Reflection.MemberInfo()
+  spec.csharp:
+  - uid: System.Reflection.MemberInfo
+    name: MemberInfo
+    fullName: System.Reflection.MemberInfo
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Reflection.MemberInfo
+    name: MemberInfo
+    fullName: System.Reflection.MemberInfo
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  name.vb: Object()
+  fullName: System.Object[]
+  fullName.vb: System.Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Runtime.Serialization.ISerializationSurrogate
+  parent: System.Runtime.Serialization
+  isExternal: false
+  href: System.Runtime.Serialization.ISerializationSurrogate.yml
+  name: ISerializationSurrogate
+  fullName: System.Runtime.Serialization.ISerializationSurrogate
+  type: Interface
+- uid: System.Reflection.Assembly
+  parent: System.Reflection
+  isExternal: true
+  name: Assembly
+  fullName: System.Reflection.Assembly
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace

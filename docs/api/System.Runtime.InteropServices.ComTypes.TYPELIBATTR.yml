@@ -1,0 +1,350 @@
+items:
+- uid: System.Runtime.InteropServices.ComTypes.TYPELIBATTR
+  id: TYPELIBATTR
+  parent: System.Runtime.InteropServices.ComTypes
+  children:
+  - System.Runtime.InteropServices.ComTypes.TYPELIBATTR.guid
+  - System.Runtime.InteropServices.ComTypes.TYPELIBATTR.lcid
+  - System.Runtime.InteropServices.ComTypes.TYPELIBATTR.syskind
+  - System.Runtime.InteropServices.ComTypes.TYPELIBATTR.wLibFlags
+  - System.Runtime.InteropServices.ComTypes.TYPELIBATTR.wMajorVerNum
+  - System.Runtime.InteropServices.ComTypes.TYPELIBATTR.wMinorVerNum
+  href: System.Runtime.InteropServices.ComTypes.TYPELIBATTR.yml
+  name: TYPELIBATTR
+  fullName: System.Runtime.InteropServices.ComTypes.TYPELIBATTR
+  type: Struct
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeLib.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeLib.cs
+    startLine: 35
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Identifies a particular type library and provides localization support for member names.
+  syntax:
+    content: public struct TYPELIBATTR
+    content.vb: Public Structure TYPELIBATTR
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.Runtime.InteropServices.ComTypes.TYPELIBATTR.guid
+  id: guid
+  parent: System.Runtime.InteropServices.ComTypes.TYPELIBATTR
+  href: System.Runtime.InteropServices.ComTypes.TYPELIBATTR.yml
+  name: guid
+  fullName: System.Runtime.InteropServices.ComTypes.TYPELIBATTR.guid
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeLib.cs
+    startLine: 39
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Represents a globally unique library ID of a type library.
+  syntax:
+    content: public Guid guid
+    content.vb: Public guid As Guid
+- uid: System.Runtime.InteropServices.ComTypes.TYPELIBATTR.lcid
+  id: lcid
+  parent: System.Runtime.InteropServices.ComTypes.TYPELIBATTR
+  href: System.Runtime.InteropServices.ComTypes.TYPELIBATTR.yml
+  name: lcid
+  fullName: System.Runtime.InteropServices.ComTypes.TYPELIBATTR.lcid
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeLib.cs
+    startLine: 40
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Represents a locale ID of a type library.
+  syntax:
+    content: public int lcid
+    content.vb: Public lcid As Integer
+- uid: System.Runtime.InteropServices.ComTypes.TYPELIBATTR.syskind
+  id: syskind
+  parent: System.Runtime.InteropServices.ComTypes.TYPELIBATTR
+  href: System.Runtime.InteropServices.ComTypes.TYPELIBATTR.yml
+  name: syskind
+  fullName: System.Runtime.InteropServices.ComTypes.TYPELIBATTR.syskind
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeLib.cs
+    startLine: 41
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Represents the target hardware platform of a type library.
+  syntax:
+    content: public SYSKIND syskind
+    content.vb: Public syskind As SYSKIND
+- uid: System.Runtime.InteropServices.ComTypes.TYPELIBATTR.wMajorVerNum
+  id: wMajorVerNum
+  parent: System.Runtime.InteropServices.ComTypes.TYPELIBATTR
+  href: System.Runtime.InteropServices.ComTypes.TYPELIBATTR.yml
+  name: wMajorVerNum
+  fullName: System.Runtime.InteropServices.ComTypes.TYPELIBATTR.wMajorVerNum
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeLib.cs
+    startLine: 42
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Represents the major version number of a type library.
+  syntax:
+    content: public short wMajorVerNum
+    content.vb: Public wMajorVerNum As Short
+- uid: System.Runtime.InteropServices.ComTypes.TYPELIBATTR.wMinorVerNum
+  id: wMinorVerNum
+  parent: System.Runtime.InteropServices.ComTypes.TYPELIBATTR
+  href: System.Runtime.InteropServices.ComTypes.TYPELIBATTR.yml
+  name: wMinorVerNum
+  fullName: System.Runtime.InteropServices.ComTypes.TYPELIBATTR.wMinorVerNum
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeLib.cs
+    startLine: 43
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Represents the minor version number of a type library.
+  syntax:
+    content: public short wMinorVerNum
+    content.vb: Public wMinorVerNum As Short
+- uid: System.Runtime.InteropServices.ComTypes.TYPELIBATTR.wLibFlags
+  id: wLibFlags
+  parent: System.Runtime.InteropServices.ComTypes.TYPELIBATTR
+  href: System.Runtime.InteropServices.ComTypes.TYPELIBATTR.yml
+  name: wLibFlags
+  fullName: System.Runtime.InteropServices.ComTypes.TYPELIBATTR.wLibFlags
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeLib.cs
+    startLine: 44
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Represents library flags.
+  syntax:
+    content: public LIBFLAGS wLibFlags
+    content.vb: Public wLibFlags As LIBFLAGS
+references:
+- uid: System.Runtime.InteropServices.ComTypes
+  isExternal: false
+  name: System.Runtime.InteropServices.ComTypes
+  fullName: System.Runtime.InteropServices.ComTypes
+  type: Namespace
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

@@ -1,0 +1,209 @@
+items:
+- uid: System.Diagnostics.Tracing.EventKeywords
+  id: EventKeywords
+  parent: System.Diagnostics.Tracing
+  children:
+  - System.Diagnostics.Tracing.EventKeywords.All
+  - System.Diagnostics.Tracing.EventKeywords.AuditFailure
+  - System.Diagnostics.Tracing.EventKeywords.AuditSuccess
+  - System.Diagnostics.Tracing.EventKeywords.CorrelationHint
+  - System.Diagnostics.Tracing.EventKeywords.EventLogClassic
+  - System.Diagnostics.Tracing.EventKeywords.MicrosoftTelemetry
+  - System.Diagnostics.Tracing.EventKeywords.None
+  - System.Diagnostics.Tracing.EventKeywords.Sqm
+  - System.Diagnostics.Tracing.EventKeywords.WdiContext
+  - System.Diagnostics.Tracing.EventKeywords.WdiDiagnostic
+  href: System.Diagnostics.Tracing.EventKeywords.yml
+  name: EventKeywords
+  fullName: System.Diagnostics.Tracing.EventKeywords
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Diagnostics/Eventing/Winmeta.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Diagnostics/Eventing/Winmeta.cs
+    startLine: 147
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Defines the standard keywords that apply to events.
+  syntax:
+    content: 'public enum EventKeywords : long'
+    content.vb: Public Enum EventKeywords As Long
+- uid: System.Diagnostics.Tracing.EventKeywords.None
+  id: None
+  parent: System.Diagnostics.Tracing.EventKeywords
+  href: System.Diagnostics.Tracing.EventKeywords.yml
+  name: None
+  fullName: System.Diagnostics.Tracing.EventKeywords.None
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/Winmeta.cs
+    startLine: 152
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: No filtering on keywords is performed when the event is published.
+  syntax:
+    content: None = 0L
+- uid: System.Diagnostics.Tracing.EventKeywords.All
+  id: All
+  parent: System.Diagnostics.Tracing.EventKeywords
+  href: System.Diagnostics.Tracing.EventKeywords.yml
+  name: All
+  fullName: System.Diagnostics.Tracing.EventKeywords.All
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/Winmeta.cs
+    startLine: 156
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: All the bits are set to 1, representing every possible group of events.
+  syntax:
+    content: All = -1L
+- uid: System.Diagnostics.Tracing.EventKeywords.MicrosoftTelemetry
+  id: MicrosoftTelemetry
+  parent: System.Diagnostics.Tracing.EventKeywords
+  href: System.Diagnostics.Tracing.EventKeywords.yml
+  name: MicrosoftTelemetry
+  fullName: System.Diagnostics.Tracing.EventKeywords.MicrosoftTelemetry
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/Winmeta.cs
+    startLine: 160
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Attached to all Microsoft telemetry events.
+  syntax:
+    content: MicrosoftTelemetry = 562949953421312L
+- uid: System.Diagnostics.Tracing.EventKeywords.WdiContext
+  id: WdiContext
+  parent: System.Diagnostics.Tracing.EventKeywords
+  href: System.Diagnostics.Tracing.EventKeywords.yml
+  name: WdiContext
+  fullName: System.Diagnostics.Tracing.EventKeywords.WdiContext
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/Winmeta.cs
+    startLine: 164
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Attached to all Windows Diagnostics Infrastructure (WDI) context events.
+  syntax:
+    content: WdiContext = 562949953421312L
+- uid: System.Diagnostics.Tracing.EventKeywords.WdiDiagnostic
+  id: WdiDiagnostic
+  parent: System.Diagnostics.Tracing.EventKeywords
+  href: System.Diagnostics.Tracing.EventKeywords.yml
+  name: WdiDiagnostic
+  fullName: System.Diagnostics.Tracing.EventKeywords.WdiDiagnostic
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/Winmeta.cs
+    startLine: 168
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Attached to all Windows Diagnostics Infrastructure (WDI) diagnostic events.
+  syntax:
+    content: WdiDiagnostic = 1125899906842624L
+- uid: System.Diagnostics.Tracing.EventKeywords.Sqm
+  id: Sqm
+  parent: System.Diagnostics.Tracing.EventKeywords
+  href: System.Diagnostics.Tracing.EventKeywords.yml
+  name: Sqm
+  fullName: System.Diagnostics.Tracing.EventKeywords.Sqm
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/Winmeta.cs
+    startLine: 172
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Attached to all Service Quality Mechanism (SQM) events.
+  syntax:
+    content: Sqm = 2251799813685248L
+- uid: System.Diagnostics.Tracing.EventKeywords.AuditFailure
+  id: AuditFailure
+  parent: System.Diagnostics.Tracing.EventKeywords
+  href: System.Diagnostics.Tracing.EventKeywords.yml
+  name: AuditFailure
+  fullName: System.Diagnostics.Tracing.EventKeywords.AuditFailure
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/Winmeta.cs
+    startLine: 176
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Attached to all failed security audit events. Use this keyword only  for events in the security log.
+  syntax:
+    content: AuditFailure = 4503599627370496L
+- uid: System.Diagnostics.Tracing.EventKeywords.AuditSuccess
+  id: AuditSuccess
+  parent: System.Diagnostics.Tracing.EventKeywords
+  href: System.Diagnostics.Tracing.EventKeywords.yml
+  name: AuditSuccess
+  fullName: System.Diagnostics.Tracing.EventKeywords.AuditSuccess
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/Winmeta.cs
+    startLine: 180
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Attached to all successful security audit events. Use this keyword only for events in the security log.
+  syntax:
+    content: AuditSuccess = 9007199254740992L
+- uid: System.Diagnostics.Tracing.EventKeywords.CorrelationHint
+  id: CorrelationHint
+  parent: System.Diagnostics.Tracing.EventKeywords
+  href: System.Diagnostics.Tracing.EventKeywords.yml
+  name: CorrelationHint
+  fullName: System.Diagnostics.Tracing.EventKeywords.CorrelationHint
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/Winmeta.cs
+    startLine: 185
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Attached to transfer events where the related activity ID (correlation ID) is a computed value and is not guaranteed to be unique (that is, it is not a real GUID).
+  syntax:
+    content: CorrelationHint = 4503599627370496L
+- uid: System.Diagnostics.Tracing.EventKeywords.EventLogClassic
+  id: EventLogClassic
+  parent: System.Diagnostics.Tracing.EventKeywords
+  href: System.Diagnostics.Tracing.EventKeywords.yml
+  name: EventLogClassic
+  fullName: System.Diagnostics.Tracing.EventKeywords.EventLogClassic
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/Winmeta.cs
+    startLine: 189
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Attached to events that are raised by using the RaiseEvent function.
+  syntax:
+    content: EventLogClassic = 36028797018963968L
+references:
+- uid: System.Diagnostics.Tracing
+  isExternal: false
+  name: System.Diagnostics.Tracing
+  fullName: System.Diagnostics.Tracing
+  type: Namespace

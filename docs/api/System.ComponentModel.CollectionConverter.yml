@@ -1,0 +1,1009 @@
+items:
+- uid: System.ComponentModel.CollectionConverter
+  id: CollectionConverter
+  parent: System.ComponentModel
+  children:
+  - System.ComponentModel.CollectionConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)
+  href: System.ComponentModel.CollectionConverter.yml
+  name: CollectionConverter
+  fullName: System.ComponentModel.CollectionConverter
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/CollectionConverter.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/CollectionConverter.cs
+    startLine: 12
+  assemblies:
+  - System.ComponentModel.TypeConverter
+  namespace: System.ComponentModel
+  summary: Provides a type converter to convert collection objects to and from various other representations.
+  syntax:
+    content: 'public class CollectionConverter : TypeConverter'
+    content.vb: Public Class CollectionConverter Inherits TypeConverter
+  inheritance:
+  - System.Object
+  - System.ComponentModel.TypeConverter
+  inheritedMembers:
+  - System.ComponentModel.TypeConverter.CanConvertFrom(System.Type)
+  - System.ComponentModel.TypeConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)
+  - System.ComponentModel.TypeConverter.CanConvertTo(System.Type)
+  - System.ComponentModel.TypeConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)
+  - System.ComponentModel.TypeConverter.ConvertFrom(System.Object)
+  - System.ComponentModel.TypeConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)
+  - System.ComponentModel.TypeConverter.ConvertFromInvariantString(System.String)
+  - System.ComponentModel.TypeConverter.ConvertFromString(System.String)
+  - System.ComponentModel.TypeConverter.ConvertFromString(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.String)
+  - System.ComponentModel.TypeConverter.ConvertTo(System.Object,System.Type)
+  - System.ComponentModel.TypeConverter.ConvertToInvariantString(System.Object)
+  - System.ComponentModel.TypeConverter.ConvertToString(System.Object)
+  - System.ComponentModel.TypeConverter.ConvertToString(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)
+  - System.ComponentModel.TypeConverter.GetConvertFromException(System.Object)
+  - System.ComponentModel.TypeConverter.GetConvertToException(System.Object,System.Type)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.ComponentModel.CollectionConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)
+  id: ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)
+  parent: System.ComponentModel.CollectionConverter
+  href: System.ComponentModel.CollectionConverter.yml
+  name: ConvertTo(ITypeDescriptorContext, CultureInfo, Object, Type)
+  fullName: System.ComponentModel.CollectionConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext, System.Globalization.CultureInfo, System.Object, System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/CollectionConverter.cs
+    startLine: 19
+  assemblies:
+  - System.ComponentModel.TypeConverter
+  namespace: System.ComponentModel
+  summary: Converts the given value object to the specified destination type.
+  syntax:
+    content: public override object ConvertTo(ITypeDescriptorContext context, CultureInfo culture, object value, Type destinationType)
+    content.vb: Public Overrides Function ConvertTo(context As ITypeDescriptorContext, culture As CultureInfo, value As Object, destinationType As Type) As Object
+    parameters:
+    - id: context
+      type: System.ComponentModel.ITypeDescriptorContext
+      description: An @'System.ComponentModel.ITypeDescriptorContext' that provides a format context.
+    - id: culture
+      type: System.Globalization.CultureInfo
+      description: The culture to which *value* will be converted.
+    - id: value
+      type: System.Object
+      description: The @'System.Object' to convert. This parameter must inherit from @'System.Collections.ICollection'.
+    - id: destinationType
+      type: System.Type
+      description: The @'System.Type' to convert the value to.
+    return:
+      type: System.Object
+  overridden: System.ComponentModel.TypeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*destinationType* is null.'
+  - type: System.NotSupportedException
+    description: The conversion cannot be performed.
+references:
+- uid: System.ComponentModel
+  isExternal: false
+  name: System.ComponentModel
+  fullName: System.ComponentModel
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.ComponentModel.TypeConverter
+  parent: System.ComponentModel
+  isExternal: false
+  href: System.ComponentModel.TypeConverter.yml
+  name: TypeConverter
+  fullName: System.ComponentModel.TypeConverter
+  type: Class
+- uid: System.ComponentModel.TypeConverter.CanConvertFrom(System.Type)
+  parent: System.ComponentModel.TypeConverter
+  isExternal: true
+  href: System.ComponentModel.TypeConverter.yml
+  name: CanConvertFrom(Type)
+  fullName: System.ComponentModel.TypeConverter.CanConvertFrom(System.Type)
+  spec.csharp:
+  - uid: System.ComponentModel.TypeConverter.CanConvertFrom(System.Type)
+    name: CanConvertFrom
+    fullName: System.ComponentModel.TypeConverter.CanConvertFrom
+    href: System.ComponentModel.TypeConverter.yml
+  - name: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.TypeConverter.CanConvertFrom(System.Type)
+    name: CanConvertFrom
+    fullName: System.ComponentModel.TypeConverter.CanConvertFrom
+    href: System.ComponentModel.TypeConverter.yml
+  - name: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.ComponentModel.TypeConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)
+  parent: System.ComponentModel.TypeConverter
+  isExternal: true
+  href: System.ComponentModel.TypeConverter.yml
+  name: CanConvertFrom(ITypeDescriptorContext, Type)
+  fullName: System.ComponentModel.TypeConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext, System.Type)
+  spec.csharp:
+  - uid: System.ComponentModel.TypeConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)
+    name: CanConvertFrom
+    fullName: System.ComponentModel.TypeConverter.CanConvertFrom
+    href: System.ComponentModel.TypeConverter.yml
+  - name: (
+    fullName: (
+  - uid: System.ComponentModel.ITypeDescriptorContext
+    name: ITypeDescriptorContext
+    fullName: System.ComponentModel.ITypeDescriptorContext
+    href: System.ComponentModel.ITypeDescriptorContext.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.TypeConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)
+    name: CanConvertFrom
+    fullName: System.ComponentModel.TypeConverter.CanConvertFrom
+    href: System.ComponentModel.TypeConverter.yml
+  - name: (
+    fullName: (
+  - uid: System.ComponentModel.ITypeDescriptorContext
+    name: ITypeDescriptorContext
+    fullName: System.ComponentModel.ITypeDescriptorContext
+    href: System.ComponentModel.ITypeDescriptorContext.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.ComponentModel.TypeConverter.CanConvertTo(System.Type)
+  parent: System.ComponentModel.TypeConverter
+  isExternal: true
+  href: System.ComponentModel.TypeConverter.yml
+  name: CanConvertTo(Type)
+  fullName: System.ComponentModel.TypeConverter.CanConvertTo(System.Type)
+  spec.csharp:
+  - uid: System.ComponentModel.TypeConverter.CanConvertTo(System.Type)
+    name: CanConvertTo
+    fullName: System.ComponentModel.TypeConverter.CanConvertTo
+    href: System.ComponentModel.TypeConverter.yml
+  - name: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.TypeConverter.CanConvertTo(System.Type)
+    name: CanConvertTo
+    fullName: System.ComponentModel.TypeConverter.CanConvertTo
+    href: System.ComponentModel.TypeConverter.yml
+  - name: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.ComponentModel.TypeConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)
+  parent: System.ComponentModel.TypeConverter
+  isExternal: true
+  href: System.ComponentModel.TypeConverter.yml
+  name: CanConvertTo(ITypeDescriptorContext, Type)
+  fullName: System.ComponentModel.TypeConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext, System.Type)
+  spec.csharp:
+  - uid: System.ComponentModel.TypeConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)
+    name: CanConvertTo
+    fullName: System.ComponentModel.TypeConverter.CanConvertTo
+    href: System.ComponentModel.TypeConverter.yml
+  - name: (
+    fullName: (
+  - uid: System.ComponentModel.ITypeDescriptorContext
+    name: ITypeDescriptorContext
+    fullName: System.ComponentModel.ITypeDescriptorContext
+    href: System.ComponentModel.ITypeDescriptorContext.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.TypeConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)
+    name: CanConvertTo
+    fullName: System.ComponentModel.TypeConverter.CanConvertTo
+    href: System.ComponentModel.TypeConverter.yml
+  - name: (
+    fullName: (
+  - uid: System.ComponentModel.ITypeDescriptorContext
+    name: ITypeDescriptorContext
+    fullName: System.ComponentModel.ITypeDescriptorContext
+    href: System.ComponentModel.ITypeDescriptorContext.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.ComponentModel.TypeConverter.ConvertFrom(System.Object)
+  parent: System.ComponentModel.TypeConverter
+  isExternal: true
+  href: System.ComponentModel.TypeConverter.yml
+  name: ConvertFrom(Object)
+  fullName: System.ComponentModel.TypeConverter.ConvertFrom(System.Object)
+  spec.csharp:
+  - uid: System.ComponentModel.TypeConverter.ConvertFrom(System.Object)
+    name: ConvertFrom
+    fullName: System.ComponentModel.TypeConverter.ConvertFrom
+    href: System.ComponentModel.TypeConverter.yml
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.TypeConverter.ConvertFrom(System.Object)
+    name: ConvertFrom
+    fullName: System.ComponentModel.TypeConverter.ConvertFrom
+    href: System.ComponentModel.TypeConverter.yml
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.ComponentModel.TypeConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)
+  parent: System.ComponentModel.TypeConverter
+  isExternal: true
+  href: System.ComponentModel.TypeConverter.yml
+  name: ConvertFrom(ITypeDescriptorContext, CultureInfo, Object)
+  fullName: System.ComponentModel.TypeConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext, System.Globalization.CultureInfo, System.Object)
+  spec.csharp:
+  - uid: System.ComponentModel.TypeConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)
+    name: ConvertFrom
+    fullName: System.ComponentModel.TypeConverter.ConvertFrom
+    href: System.ComponentModel.TypeConverter.yml
+  - name: (
+    fullName: (
+  - uid: System.ComponentModel.ITypeDescriptorContext
+    name: ITypeDescriptorContext
+    fullName: System.ComponentModel.ITypeDescriptorContext
+    href: System.ComponentModel.ITypeDescriptorContext.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Globalization.CultureInfo
+    name: CultureInfo
+    fullName: System.Globalization.CultureInfo
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.TypeConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)
+    name: ConvertFrom
+    fullName: System.ComponentModel.TypeConverter.ConvertFrom
+    href: System.ComponentModel.TypeConverter.yml
+  - name: (
+    fullName: (
+  - uid: System.ComponentModel.ITypeDescriptorContext
+    name: ITypeDescriptorContext
+    fullName: System.ComponentModel.ITypeDescriptorContext
+    href: System.ComponentModel.ITypeDescriptorContext.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Globalization.CultureInfo
+    name: CultureInfo
+    fullName: System.Globalization.CultureInfo
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.ComponentModel.TypeConverter.ConvertFromInvariantString(System.String)
+  parent: System.ComponentModel.TypeConverter
+  isExternal: true
+  href: System.ComponentModel.TypeConverter.yml
+  name: ConvertFromInvariantString(String)
+  fullName: System.ComponentModel.TypeConverter.ConvertFromInvariantString(System.String)
+  spec.csharp:
+  - uid: System.ComponentModel.TypeConverter.ConvertFromInvariantString(System.String)
+    name: ConvertFromInvariantString
+    fullName: System.ComponentModel.TypeConverter.ConvertFromInvariantString
+    href: System.ComponentModel.TypeConverter.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.TypeConverter.ConvertFromInvariantString(System.String)
+    name: ConvertFromInvariantString
+    fullName: System.ComponentModel.TypeConverter.ConvertFromInvariantString
+    href: System.ComponentModel.TypeConverter.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.ComponentModel.TypeConverter.ConvertFromString(System.String)
+  parent: System.ComponentModel.TypeConverter
+  isExternal: true
+  href: System.ComponentModel.TypeConverter.yml
+  name: ConvertFromString(String)
+  fullName: System.ComponentModel.TypeConverter.ConvertFromString(System.String)
+  spec.csharp:
+  - uid: System.ComponentModel.TypeConverter.ConvertFromString(System.String)
+    name: ConvertFromString
+    fullName: System.ComponentModel.TypeConverter.ConvertFromString
+    href: System.ComponentModel.TypeConverter.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.TypeConverter.ConvertFromString(System.String)
+    name: ConvertFromString
+    fullName: System.ComponentModel.TypeConverter.ConvertFromString
+    href: System.ComponentModel.TypeConverter.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.ComponentModel.TypeConverter.ConvertFromString(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.String)
+  parent: System.ComponentModel.TypeConverter
+  isExternal: true
+  href: System.ComponentModel.TypeConverter.yml
+  name: ConvertFromString(ITypeDescriptorContext, CultureInfo, String)
+  fullName: System.ComponentModel.TypeConverter.ConvertFromString(System.ComponentModel.ITypeDescriptorContext, System.Globalization.CultureInfo, System.String)
+  spec.csharp:
+  - uid: System.ComponentModel.TypeConverter.ConvertFromString(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.String)
+    name: ConvertFromString
+    fullName: System.ComponentModel.TypeConverter.ConvertFromString
+    href: System.ComponentModel.TypeConverter.yml
+  - name: (
+    fullName: (
+  - uid: System.ComponentModel.ITypeDescriptorContext
+    name: ITypeDescriptorContext
+    fullName: System.ComponentModel.ITypeDescriptorContext
+    href: System.ComponentModel.ITypeDescriptorContext.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Globalization.CultureInfo
+    name: CultureInfo
+    fullName: System.Globalization.CultureInfo
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.TypeConverter.ConvertFromString(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.String)
+    name: ConvertFromString
+    fullName: System.ComponentModel.TypeConverter.ConvertFromString
+    href: System.ComponentModel.TypeConverter.yml
+  - name: (
+    fullName: (
+  - uid: System.ComponentModel.ITypeDescriptorContext
+    name: ITypeDescriptorContext
+    fullName: System.ComponentModel.ITypeDescriptorContext
+    href: System.ComponentModel.ITypeDescriptorContext.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Globalization.CultureInfo
+    name: CultureInfo
+    fullName: System.Globalization.CultureInfo
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.ComponentModel.TypeConverter.ConvertTo(System.Object,System.Type)
+  parent: System.ComponentModel.TypeConverter
+  isExternal: true
+  href: System.ComponentModel.TypeConverter.yml
+  name: ConvertTo(Object, Type)
+  fullName: System.ComponentModel.TypeConverter.ConvertTo(System.Object, System.Type)
+  spec.csharp:
+  - uid: System.ComponentModel.TypeConverter.ConvertTo(System.Object,System.Type)
+    name: ConvertTo
+    fullName: System.ComponentModel.TypeConverter.ConvertTo
+    href: System.ComponentModel.TypeConverter.yml
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.TypeConverter.ConvertTo(System.Object,System.Type)
+    name: ConvertTo
+    fullName: System.ComponentModel.TypeConverter.ConvertTo
+    href: System.ComponentModel.TypeConverter.yml
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.ComponentModel.TypeConverter.ConvertToInvariantString(System.Object)
+  parent: System.ComponentModel.TypeConverter
+  isExternal: true
+  href: System.ComponentModel.TypeConverter.yml
+  name: ConvertToInvariantString(Object)
+  fullName: System.ComponentModel.TypeConverter.ConvertToInvariantString(System.Object)
+  spec.csharp:
+  - uid: System.ComponentModel.TypeConverter.ConvertToInvariantString(System.Object)
+    name: ConvertToInvariantString
+    fullName: System.ComponentModel.TypeConverter.ConvertToInvariantString
+    href: System.ComponentModel.TypeConverter.yml
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.TypeConverter.ConvertToInvariantString(System.Object)
+    name: ConvertToInvariantString
+    fullName: System.ComponentModel.TypeConverter.ConvertToInvariantString
+    href: System.ComponentModel.TypeConverter.yml
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.ComponentModel.TypeConverter.ConvertToString(System.Object)
+  parent: System.ComponentModel.TypeConverter
+  isExternal: true
+  href: System.ComponentModel.TypeConverter.yml
+  name: ConvertToString(Object)
+  fullName: System.ComponentModel.TypeConverter.ConvertToString(System.Object)
+  spec.csharp:
+  - uid: System.ComponentModel.TypeConverter.ConvertToString(System.Object)
+    name: ConvertToString
+    fullName: System.ComponentModel.TypeConverter.ConvertToString
+    href: System.ComponentModel.TypeConverter.yml
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.TypeConverter.ConvertToString(System.Object)
+    name: ConvertToString
+    fullName: System.ComponentModel.TypeConverter.ConvertToString
+    href: System.ComponentModel.TypeConverter.yml
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.ComponentModel.TypeConverter.ConvertToString(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)
+  parent: System.ComponentModel.TypeConverter
+  isExternal: true
+  href: System.ComponentModel.TypeConverter.yml
+  name: ConvertToString(ITypeDescriptorContext, CultureInfo, Object)
+  fullName: System.ComponentModel.TypeConverter.ConvertToString(System.ComponentModel.ITypeDescriptorContext, System.Globalization.CultureInfo, System.Object)
+  spec.csharp:
+  - uid: System.ComponentModel.TypeConverter.ConvertToString(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)
+    name: ConvertToString
+    fullName: System.ComponentModel.TypeConverter.ConvertToString
+    href: System.ComponentModel.TypeConverter.yml
+  - name: (
+    fullName: (
+  - uid: System.ComponentModel.ITypeDescriptorContext
+    name: ITypeDescriptorContext
+    fullName: System.ComponentModel.ITypeDescriptorContext
+    href: System.ComponentModel.ITypeDescriptorContext.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Globalization.CultureInfo
+    name: CultureInfo
+    fullName: System.Globalization.CultureInfo
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.TypeConverter.ConvertToString(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)
+    name: ConvertToString
+    fullName: System.ComponentModel.TypeConverter.ConvertToString
+    href: System.ComponentModel.TypeConverter.yml
+  - name: (
+    fullName: (
+  - uid: System.ComponentModel.ITypeDescriptorContext
+    name: ITypeDescriptorContext
+    fullName: System.ComponentModel.ITypeDescriptorContext
+    href: System.ComponentModel.ITypeDescriptorContext.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Globalization.CultureInfo
+    name: CultureInfo
+    fullName: System.Globalization.CultureInfo
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.ComponentModel.TypeConverter.GetConvertFromException(System.Object)
+  parent: System.ComponentModel.TypeConverter
+  isExternal: true
+  href: System.ComponentModel.TypeConverter.yml
+  name: GetConvertFromException(Object)
+  fullName: System.ComponentModel.TypeConverter.GetConvertFromException(System.Object)
+  spec.csharp:
+  - uid: System.ComponentModel.TypeConverter.GetConvertFromException(System.Object)
+    name: GetConvertFromException
+    fullName: System.ComponentModel.TypeConverter.GetConvertFromException
+    href: System.ComponentModel.TypeConverter.yml
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.TypeConverter.GetConvertFromException(System.Object)
+    name: GetConvertFromException
+    fullName: System.ComponentModel.TypeConverter.GetConvertFromException
+    href: System.ComponentModel.TypeConverter.yml
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.ComponentModel.TypeConverter.GetConvertToException(System.Object,System.Type)
+  parent: System.ComponentModel.TypeConverter
+  isExternal: true
+  href: System.ComponentModel.TypeConverter.yml
+  name: GetConvertToException(Object, Type)
+  fullName: System.ComponentModel.TypeConverter.GetConvertToException(System.Object, System.Type)
+  spec.csharp:
+  - uid: System.ComponentModel.TypeConverter.GetConvertToException(System.Object,System.Type)
+    name: GetConvertToException
+    fullName: System.ComponentModel.TypeConverter.GetConvertToException
+    href: System.ComponentModel.TypeConverter.yml
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.TypeConverter.GetConvertToException(System.Object,System.Type)
+    name: GetConvertToException
+    fullName: System.ComponentModel.TypeConverter.GetConvertToException
+    href: System.ComponentModel.TypeConverter.yml
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.ComponentModel.TypeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)
+  parent: System.ComponentModel.TypeConverter
+  isExternal: true
+  href: System.ComponentModel.TypeConverter.yml
+  name: ConvertTo(ITypeDescriptorContext, CultureInfo, Object, Type)
+  fullName: System.ComponentModel.TypeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext, System.Globalization.CultureInfo, System.Object, System.Type)
+  spec.csharp:
+  - uid: System.ComponentModel.TypeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)
+    name: ConvertTo
+    fullName: System.ComponentModel.TypeConverter.ConvertTo
+    href: System.ComponentModel.TypeConverter.yml
+  - name: (
+    fullName: (
+  - uid: System.ComponentModel.ITypeDescriptorContext
+    name: ITypeDescriptorContext
+    fullName: System.ComponentModel.ITypeDescriptorContext
+    href: System.ComponentModel.ITypeDescriptorContext.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Globalization.CultureInfo
+    name: CultureInfo
+    fullName: System.Globalization.CultureInfo
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.TypeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)
+    name: ConvertTo
+    fullName: System.ComponentModel.TypeConverter.ConvertTo
+    href: System.ComponentModel.TypeConverter.yml
+  - name: (
+    fullName: (
+  - uid: System.ComponentModel.ITypeDescriptorContext
+    name: ITypeDescriptorContext
+    fullName: System.ComponentModel.ITypeDescriptorContext
+    href: System.ComponentModel.ITypeDescriptorContext.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Globalization.CultureInfo
+    name: CultureInfo
+    fullName: System.Globalization.CultureInfo
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.ComponentModel.ITypeDescriptorContext
+  parent: System.ComponentModel
+  isExternal: false
+  href: System.ComponentModel.ITypeDescriptorContext.yml
+  name: ITypeDescriptorContext
+  fullName: System.ComponentModel.ITypeDescriptorContext
+  type: Interface
+- uid: System.Globalization.CultureInfo
+  parent: System.Globalization
+  isExternal: true
+  name: CultureInfo
+  fullName: System.Globalization.CultureInfo
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  fullName: System.Type
+- uid: System.Globalization
+  isExternal: false
+  name: System.Globalization
+  fullName: System.Globalization

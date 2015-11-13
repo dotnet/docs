@@ -1,0 +1,332 @@
+items:
+- uid: System.Reflection.Metadata.MethodSpecification
+  id: MethodSpecification
+  parent: System.Reflection.Metadata
+  children:
+  - System.Reflection.Metadata.MethodSpecification.GetCustomAttributes
+  - System.Reflection.Metadata.MethodSpecification.Method
+  - System.Reflection.Metadata.MethodSpecification.Signature
+  href: System.Reflection.Metadata.MethodSpecification.yml
+  name: MethodSpecification
+  fullName: System.Reflection.Metadata.MethodSpecification
+  type: Struct
+  source:
+    remote: &o0
+      path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/MethodSpecification.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/MethodSpecification.cs
+    startLine: 7
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public struct MethodSpecification
+    content.vb: Public Structure MethodSpecification
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.Reflection.Metadata.MethodSpecification.Method
+  id: Method
+  parent: System.Reflection.Metadata.MethodSpecification
+  href: System.Reflection.Metadata.MethodSpecification.yml
+  name: Method
+  fullName: System.Reflection.Metadata.MethodSpecification.Method
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/MethodSpecification.cs
+    startLine: 32
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: >-
+    MethodDef or MemberRef handle specifying to which generic method this @'System.Reflection.Metadata.MethodSpecification' refers,
+
+    that is which generic method is it an instantiation of.
+  syntax:
+    content: public EntityHandle Method { get; }
+    content.vb: Public ReadOnly Property Method As EntityHandle
+    parameters: []
+    return:
+      type: System.Reflection.Metadata.EntityHandle
+- uid: System.Reflection.Metadata.MethodSpecification.Signature
+  id: Signature
+  parent: System.Reflection.Metadata.MethodSpecification
+  href: System.Reflection.Metadata.MethodSpecification.yml
+  name: Signature
+  fullName: System.Reflection.Metadata.MethodSpecification.Signature
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/MethodSpecification.cs
+    startLine: 43
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Blob handle holding the signature of this instantiation.
+  syntax:
+    content: public BlobHandle Signature { get; }
+    content.vb: Public ReadOnly Property Signature As BlobHandle
+    parameters: []
+    return:
+      type: System.Reflection.Metadata.BlobHandle
+- uid: System.Reflection.Metadata.MethodSpecification.GetCustomAttributes
+  id: GetCustomAttributes
+  parent: System.Reflection.Metadata.MethodSpecification
+  href: System.Reflection.Metadata.MethodSpecification.yml
+  name: GetCustomAttributes()
+  fullName: System.Reflection.Metadata.MethodSpecification.GetCustomAttributes()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/MethodSpecification.cs
+    startLine: 51
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public CustomAttributeHandleCollection GetCustomAttributes()
+    content.vb: Public Function GetCustomAttributes As CustomAttributeHandleCollection
+    return:
+      type: System.Reflection.Metadata.CustomAttributeHandleCollection
+      description: 
+references:
+- uid: System.Reflection.Metadata
+  isExternal: false
+  name: System.Reflection.Metadata
+  fullName: System.Reflection.Metadata
+  type: Namespace
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Reflection.Metadata.MethodSpecification
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.MethodSpecification.yml
+  name: MethodSpecification
+  fullName: System.Reflection.Metadata.MethodSpecification
+  type: Struct
+- uid: System.Reflection.Metadata.EntityHandle
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.EntityHandle.yml
+  name: EntityHandle
+  fullName: System.Reflection.Metadata.EntityHandle
+  type: Struct
+  summary: Represents a metadata entity (type reference/definition/specification, method definition, custom attribute, etc.).
+- uid: System.Reflection.Metadata.BlobHandle
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.BlobHandle.yml
+  name: BlobHandle
+  fullName: System.Reflection.Metadata.BlobHandle
+  type: Struct
+- uid: System.Reflection.Metadata.CustomAttributeHandleCollection
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.CustomAttributeHandleCollection.yml
+  name: CustomAttributeHandleCollection
+  fullName: System.Reflection.Metadata.CustomAttributeHandleCollection
+  type: Struct

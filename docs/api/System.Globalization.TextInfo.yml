@@ -1,0 +1,601 @@
+items:
+- uid: System.Globalization.TextInfo
+  id: TextInfo
+  parent: System.Globalization
+  children:
+  - System.Globalization.TextInfo.Clone
+  - System.Globalization.TextInfo.CultureName
+  - System.Globalization.TextInfo.Equals(System.Object)
+  - System.Globalization.TextInfo.GetHashCode
+  - System.Globalization.TextInfo.IsReadOnly
+  - System.Globalization.TextInfo.IsRightToLeft
+  - System.Globalization.TextInfo.ListSeparator
+  - System.Globalization.TextInfo.ReadOnly(System.Globalization.TextInfo)
+  - System.Globalization.TextInfo.ToLower(System.Char)
+  - System.Globalization.TextInfo.ToLower(System.String)
+  - System.Globalization.TextInfo.ToString
+  - System.Globalization.TextInfo.ToUpper(System.Char)
+  - System.Globalization.TextInfo.ToUpper(System.String)
+  href: System.Globalization.TextInfo.yml
+  name: TextInfo
+  fullName: System.Globalization.TextInfo
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Globalization/TextInfo.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Globalization/TextInfo.cs
+    startLine: 28
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Defines text properties and behaviors, such as casing, that are specific to a writing system.
+  syntax:
+    content: 'public class TextInfo : ICloneable, IDeserializationCallback'
+    content.vb: Public Class TextInfo Implements ICloneable, IDeserializationCallback
+  inheritance:
+  - System.Object
+  implements:
+  - System.ICloneable
+  - System.Runtime.Serialization.IDeserializationCallback
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Globalization.TextInfo.CultureName
+  id: CultureName
+  parent: System.Globalization.TextInfo
+  href: System.Globalization.TextInfo.yml
+  name: CultureName
+  fullName: System.Globalization.TextInfo.CultureName
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/TextInfo.cs
+    startLine: 406
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Gets the name of the culture associated with the current @'System.Globalization.TextInfo' object.
+  syntax:
+    content: public string CultureName { get; }
+    content.vb: Public ReadOnly Property CultureName As String
+    parameters: []
+    return:
+      type: System.String
+- uid: System.Globalization.TextInfo.IsReadOnly
+  id: IsReadOnly
+  parent: System.Globalization.TextInfo
+  href: System.Globalization.TextInfo.yml
+  name: IsReadOnly
+  fullName: System.Globalization.TextInfo.IsReadOnly
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/TextInfo.cs
+    startLine: 422
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Gets a value indicating whether the current @'System.Globalization.TextInfo' object is read-only.
+  syntax:
+    content: public bool IsReadOnly { get; }
+    content.vb: Public ReadOnly Property IsReadOnly As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Globalization.TextInfo.Clone
+  id: Clone
+  parent: System.Globalization.TextInfo
+  href: System.Globalization.TextInfo.yml
+  name: Clone()
+  fullName: System.Globalization.TextInfo.Clone()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/TextInfo.cs
+    startLine: 435
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Creates a new object that is a copy of the current @'System.Globalization.TextInfo' object.
+  syntax:
+    content: public virtual object Clone()
+    content.vb: Public Overridable Function Clone As Object
+    return:
+      type: System.Object
+- uid: System.Globalization.TextInfo.ReadOnly(System.Globalization.TextInfo)
+  id: ReadOnly(System.Globalization.TextInfo)
+  parent: System.Globalization.TextInfo
+  href: System.Globalization.TextInfo.yml
+  name: ReadOnly(TextInfo)
+  fullName: System.Globalization.TextInfo.ReadOnly(System.Globalization.TextInfo)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/TextInfo.cs
+    startLine: 451
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Returns a read-only version of the specified @'System.Globalization.TextInfo' object.
+  syntax:
+    content: public static TextInfo ReadOnly(TextInfo textInfo)
+    content.vb: Public Shared Function ReadOnly(textInfo As TextInfo) As TextInfo
+    parameters:
+    - id: textInfo
+      type: System.Globalization.TextInfo
+      description: A @'System.Globalization.TextInfo' object.
+    return:
+      type: System.Globalization.TextInfo
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*textInfo* is null.'
+- uid: System.Globalization.TextInfo.ListSeparator
+  id: ListSeparator
+  parent: System.Globalization.TextInfo
+  href: System.Globalization.TextInfo.yml
+  name: ListSeparator
+  fullName: System.Globalization.TextInfo.ListSeparator
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/TextInfo.cs
+    startLine: 488
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Gets or sets the string that separates items in a list.
+  syntax:
+    content: public virtual string ListSeparator { get; set; }
+    content.vb: Public Overridable Property ListSeparator As String
+    parameters: []
+    return:
+      type: System.String
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The value in a set operation is null.
+  - type: System.InvalidOperationException
+    description: In a set operation, the current @'System.Globalization.TextInfo' object is read-only.
+- uid: System.Globalization.TextInfo.ToLower(System.Char)
+  id: ToLower(System.Char)
+  parent: System.Globalization.TextInfo
+  href: System.Globalization.TextInfo.yml
+  name: ToLower(Char)
+  fullName: System.Globalization.TextInfo.ToLower(System.Char)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/TextInfo.cs
+    startLine: 521
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Converts the specified character to lowercase.
+  syntax:
+    content: public virtual char ToLower(char c)
+    content.vb: Public Overridable Function ToLower(c As Char) As Char
+    parameters:
+    - id: c
+      type: System.Char
+      description: The character to convert to lowercase.
+    return:
+      type: System.Char
+- uid: System.Globalization.TextInfo.ToLower(System.String)
+  id: ToLower(System.String)
+  parent: System.Globalization.TextInfo
+  href: System.Globalization.TextInfo.yml
+  name: ToLower(String)
+  fullName: System.Globalization.TextInfo.ToLower(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/TextInfo.cs
+    startLine: 531
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Converts the specified string to lowercase.
+  syntax:
+    content: public virtual string ToLower(string str)
+    content.vb: Public Overridable Function ToLower(str As String) As String
+    parameters:
+    - id: str
+      type: System.String
+      description: The string to convert to lowercase.
+    return:
+      type: System.String
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*str* is null.'
+- uid: System.Globalization.TextInfo.ToUpper(System.Char)
+  id: ToUpper(System.Char)
+  parent: System.Globalization.TextInfo
+  href: System.Globalization.TextInfo.yml
+  name: ToUpper(Char)
+  fullName: System.Globalization.TextInfo.ToUpper(System.Char)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/TextInfo.cs
+    startLine: 559
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Converts the specified character to uppercase.
+  syntax:
+    content: public virtual char ToUpper(char c)
+    content.vb: Public Overridable Function ToUpper(c As Char) As Char
+    parameters:
+    - id: c
+      type: System.Char
+      description: The character to convert to uppercase.
+    return:
+      type: System.Char
+- uid: System.Globalization.TextInfo.ToUpper(System.String)
+  id: ToUpper(System.String)
+  parent: System.Globalization.TextInfo
+  href: System.Globalization.TextInfo.yml
+  name: ToUpper(String)
+  fullName: System.Globalization.TextInfo.ToUpper(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/TextInfo.cs
+    startLine: 570
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Converts the specified string to uppercase.
+  syntax:
+    content: public virtual string ToUpper(string str)
+    content.vb: Public Overridable Function ToUpper(str As String) As String
+    parameters:
+    - id: str
+      type: System.String
+      description: The string to convert to uppercase.
+    return:
+      type: System.String
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*str* is null.'
+- uid: System.Globalization.TextInfo.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Globalization.TextInfo
+  href: System.Globalization.TextInfo.yml
+  name: Equals(Object)
+  fullName: System.Globalization.TextInfo.Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/TextInfo.cs
+    startLine: 617
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Determines whether the specified object represents the same writing system as the current @'System.Globalization.TextInfo' object.
+  syntax:
+    content: public override bool Equals(object obj)
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current @'System.Globalization.TextInfo'.
+    return:
+      type: System.Boolean
+  overridden: System.Object.Equals(System.Object)
+- uid: System.Globalization.TextInfo.GetHashCode
+  id: GetHashCode
+  parent: System.Globalization.TextInfo
+  href: System.Globalization.TextInfo.yml
+  name: GetHashCode()
+  fullName: System.Globalization.TextInfo.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/TextInfo.cs
+    startLine: 641
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Serves as a hash function for the current @'System.Globalization.TextInfo', suitable for hashing algorithms and data structures, such as a hash table.
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+  overridden: System.Object.GetHashCode
+- uid: System.Globalization.TextInfo.ToString
+  id: ToString
+  parent: System.Globalization.TextInfo
+  href: System.Globalization.TextInfo.yml
+  name: ToString()
+  fullName: System.Globalization.TextInfo.ToString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/TextInfo.cs
+    startLine: 657
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Returns a string that represents the current @'System.Globalization.TextInfo'.
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+  overridden: System.Object.ToString
+- uid: System.Globalization.TextInfo.IsRightToLeft
+  id: IsRightToLeft
+  parent: System.Globalization.TextInfo
+  href: System.Globalization.TextInfo.yml
+  name: IsRightToLeft
+  fullName: System.Globalization.TextInfo.IsRightToLeft
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/TextInfo.cs
+    startLine: 886
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Gets a value indicating whether the current @'System.Globalization.TextInfo' object represents a writing system where text flows from right to left.
+  syntax:
+    content: public bool IsRightToLeft { get; }
+    content.vb: Public ReadOnly Property IsRightToLeft As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+references:
+- uid: System.Globalization
+  isExternal: false
+  name: System.Globalization
+  fullName: System.Globalization
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Globalization.TextInfo
+  parent: System.Globalization
+  isExternal: false
+  href: System.Globalization.TextInfo.yml
+  name: TextInfo
+  fullName: System.Globalization.TextInfo
+  type: Class
+- uid: System.Char
+  parent: System
+  isExternal: true
+  name: Char
+  fullName: System.Char
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )

@@ -1,0 +1,118 @@
+items:
+- uid: System.GCNotificationStatus
+  id: GCNotificationStatus
+  parent: System
+  children:
+  - System.GCNotificationStatus.Canceled
+  - System.GCNotificationStatus.Failed
+  - System.GCNotificationStatus.NotApplicable
+  - System.GCNotificationStatus.Succeeded
+  - System.GCNotificationStatus.Timeout
+  href: System.GCNotificationStatus.yml
+  name: GCNotificationStatus
+  fullName: System.GCNotificationStatus
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/GC.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/GC.cs
+    startLine: 52
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Provides information about the current registration for notification of the next full garbage collection.
+  syntax:
+    content: public enum GCNotificationStatus
+    content.vb: Public Enum GCNotificationStatus
+- uid: System.GCNotificationStatus.Succeeded
+  id: Succeeded
+  parent: System.GCNotificationStatus
+  href: System.GCNotificationStatus.yml
+  name: Succeeded
+  fullName: System.GCNotificationStatus.Succeeded
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/GC.cs
+    startLine: 55
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The notification was successful and the registration was not canceled.
+  syntax:
+    content: Succeeded = 0
+- uid: System.GCNotificationStatus.Failed
+  id: Failed
+  parent: System.GCNotificationStatus
+  href: System.GCNotificationStatus.yml
+  name: Failed
+  fullName: System.GCNotificationStatus.Failed
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/GC.cs
+    startLine: 56
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The notification failed for any reason.
+  syntax:
+    content: Failed = 1
+- uid: System.GCNotificationStatus.Canceled
+  id: Canceled
+  parent: System.GCNotificationStatus
+  href: System.GCNotificationStatus.yml
+  name: Canceled
+  fullName: System.GCNotificationStatus.Canceled
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/GC.cs
+    startLine: 57
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The current registration was canceled by the user.
+  syntax:
+    content: Canceled = 2
+- uid: System.GCNotificationStatus.Timeout
+  id: Timeout
+  parent: System.GCNotificationStatus
+  href: System.GCNotificationStatus.yml
+  name: Timeout
+  fullName: System.GCNotificationStatus.Timeout
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/GC.cs
+    startLine: 58
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The time specified by the *millisecondsTimeout* parameter for either @'System.GC.WaitForFullGCApproach(System.Int32)' or @'System.GC.WaitForFullGCComplete(System.Int32)' has elapsed.
+  syntax:
+    content: Timeout = 3
+- uid: System.GCNotificationStatus.NotApplicable
+  id: NotApplicable
+  parent: System.GCNotificationStatus
+  href: System.GCNotificationStatus.yml
+  name: NotApplicable
+  fullName: System.GCNotificationStatus.NotApplicable
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/GC.cs
+    startLine: 59
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: 'This result can be caused by the following: there is no current registration for a garbage collection notification, concurrent garbage collection is enabled, or the time specified for the *millisecondsTimeout* parameter has expired and no garbage collection notification was obtained. (See the &lt;gcConcurrent&gt; runtime setting for information about how to disable concurrent garbage collection.)'
+  syntax:
+    content: NotApplicable = 4
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

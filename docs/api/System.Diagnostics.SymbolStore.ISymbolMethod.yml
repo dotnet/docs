@@ -1,0 +1,400 @@
+items:
+- uid: System.Diagnostics.SymbolStore.ISymbolMethod
+  id: ISymbolMethod
+  parent: System.Diagnostics.SymbolStore
+  children:
+  - System.Diagnostics.SymbolStore.ISymbolMethod.GetNamespace
+  - System.Diagnostics.SymbolStore.ISymbolMethod.GetOffset(System.Diagnostics.SymbolStore.ISymbolDocument,System.Int32,System.Int32)
+  - System.Diagnostics.SymbolStore.ISymbolMethod.GetParameters
+  - System.Diagnostics.SymbolStore.ISymbolMethod.GetRanges(System.Diagnostics.SymbolStore.ISymbolDocument,System.Int32,System.Int32)
+  - System.Diagnostics.SymbolStore.ISymbolMethod.GetScope(System.Int32)
+  - System.Diagnostics.SymbolStore.ISymbolMethod.GetSequencePoints(System.Int32[],System.Diagnostics.SymbolStore.ISymbolDocument[],System.Int32[],System.Int32[],System.Int32[],System.Int32[])
+  - System.Diagnostics.SymbolStore.ISymbolMethod.GetSourceStartEnd(System.Diagnostics.SymbolStore.ISymbolDocument[],System.Int32[],System.Int32[])
+  - System.Diagnostics.SymbolStore.ISymbolMethod.RootScope
+  - System.Diagnostics.SymbolStore.ISymbolMethod.SequencePointCount
+  - System.Diagnostics.SymbolStore.ISymbolMethod.Token
+  href: System.Diagnostics.SymbolStore.ISymbolMethod.yml
+  name: ISymbolMethod
+  fullName: System.Diagnostics.SymbolStore.ISymbolMethod
+  type: Interface
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymMethod.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymMethod.cs
+    startLine: 20
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Represents a method within a symbol store.
+  syntax:
+    content: public interface ISymbolMethod
+    content.vb: Public Interface ISymbolMethod
+- uid: System.Diagnostics.SymbolStore.ISymbolMethod.Token
+  id: Token
+  parent: System.Diagnostics.SymbolStore.ISymbolMethod
+  href: System.Diagnostics.SymbolStore.ISymbolMethod.yml
+  name: Token
+  fullName: System.Diagnostics.SymbolStore.ISymbolMethod.Token
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymMethod.cs
+    startLine: 24
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Gets the @'System.Diagnostics.SymbolStore.SymbolToken' containing the metadata for the current method.
+  syntax:
+    content: SymbolToken Token { get; }
+    content.vb: ReadOnly Property Token As SymbolToken
+    parameters: []
+    return:
+      type: System.Diagnostics.SymbolStore.SymbolToken
+- uid: System.Diagnostics.SymbolStore.ISymbolMethod.SequencePointCount
+  id: SequencePointCount
+  parent: System.Diagnostics.SymbolStore.ISymbolMethod
+  href: System.Diagnostics.SymbolStore.ISymbolMethod.yml
+  name: SequencePointCount
+  fullName: System.Diagnostics.SymbolStore.ISymbolMethod.SequencePointCount
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymMethod.cs
+    startLine: 27
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Gets a count of the sequence points in the method.
+  syntax:
+    content: int SequencePointCount { get; }
+    content.vb: ReadOnly Property SequencePointCount As Integer
+    parameters: []
+    return:
+      type: System.Int32
+- uid: System.Diagnostics.SymbolStore.ISymbolMethod.GetSequencePoints(System.Int32[],System.Diagnostics.SymbolStore.ISymbolDocument[],System.Int32[],System.Int32[],System.Int32[],System.Int32[])
+  id: GetSequencePoints(System.Int32[],System.Diagnostics.SymbolStore.ISymbolDocument[],System.Int32[],System.Int32[],System.Int32[],System.Int32[])
+  parent: System.Diagnostics.SymbolStore.ISymbolMethod
+  href: System.Diagnostics.SymbolStore.ISymbolMethod.yml
+  name: GetSequencePoints(Int32[], ISymbolDocument[], Int32[], Int32[], Int32[], Int32[])
+  name.vb: GetSequencePoints(Int32(), ISymbolDocument(), Int32(), Int32(), Int32(), Int32())
+  fullName: System.Diagnostics.SymbolStore.ISymbolMethod.GetSequencePoints(System.Int32[], System.Diagnostics.SymbolStore.ISymbolDocument[], System.Int32[], System.Int32[], System.Int32[], System.Int32[])
+  fullName.vb: System.Diagnostics.SymbolStore.ISymbolMethod.GetSequencePoints(System.Int32(), System.Diagnostics.SymbolStore.ISymbolDocument(), System.Int32(), System.Int32(), System.Int32(), System.Int32())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymMethod.cs
+    startLine: 36
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Gets the sequence points for the current method.
+  syntax:
+    content: void GetSequencePoints(int[] offsets, ISymbolDocument[] documents, int[] lines, int[] columns, int[] endLines, int[] endColumns)
+    content.vb: Sub GetSequencePoints(offsets As Integer(), documents As ISymbolDocument(), lines As Integer(), columns As Integer(), endLines As Integer(), endColumns As Integer())
+    parameters:
+    - id: offsets
+      type: System.Int32[]
+      description: The array of byte offsets from the beginning of the method for the sequence points.
+    - id: documents
+      type: System.Diagnostics.SymbolStore.ISymbolDocument[]
+      description: The array of documents in which the sequence points are located.
+    - id: lines
+      type: System.Int32[]
+      description: The array of lines in the documents at which the sequence points are located.
+    - id: columns
+      type: System.Int32[]
+      description: The array of columns in the documents at which the sequence points are located.
+    - id: endLines
+      type: System.Int32[]
+      description: The array of lines in the documents at which the sequence points end.
+    - id: endColumns
+      type: System.Int32[]
+      description: The array of columns in the documents at which the sequence points end.
+- uid: System.Diagnostics.SymbolStore.ISymbolMethod.RootScope
+  id: RootScope
+  parent: System.Diagnostics.SymbolStore.ISymbolMethod
+  href: System.Diagnostics.SymbolStore.ISymbolMethod.yml
+  name: RootScope
+  fullName: System.Diagnostics.SymbolStore.ISymbolMethod.RootScope
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymMethod.cs
+    startLine: 45
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Gets the root lexical scope for the current method. This scope encloses the entire method.
+  syntax:
+    content: ISymbolScope RootScope { get; }
+    content.vb: ReadOnly Property RootScope As ISymbolScope
+    parameters: []
+    return:
+      type: System.Diagnostics.SymbolStore.ISymbolScope
+- uid: System.Diagnostics.SymbolStore.ISymbolMethod.GetScope(System.Int32)
+  id: GetScope(System.Int32)
+  parent: System.Diagnostics.SymbolStore.ISymbolMethod
+  href: System.Diagnostics.SymbolStore.ISymbolMethod.yml
+  name: GetScope(Int32)
+  fullName: System.Diagnostics.SymbolStore.ISymbolMethod.GetScope(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymMethod.cs
+    startLine: 50
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Returns the most enclosing lexical scope when given an offset within a method.
+  syntax:
+    content: ISymbolScope GetScope(int offset)
+    content.vb: Function GetScope(offset As Integer) As ISymbolScope
+    parameters:
+    - id: offset
+      type: System.Int32
+      description: The byte offset within the method of the lexical scope.
+    return:
+      type: System.Diagnostics.SymbolStore.ISymbolScope
+- uid: System.Diagnostics.SymbolStore.ISymbolMethod.GetOffset(System.Diagnostics.SymbolStore.ISymbolDocument,System.Int32,System.Int32)
+  id: GetOffset(System.Diagnostics.SymbolStore.ISymbolDocument,System.Int32,System.Int32)
+  parent: System.Diagnostics.SymbolStore.ISymbolMethod
+  href: System.Diagnostics.SymbolStore.ISymbolMethod.yml
+  name: GetOffset(ISymbolDocument, Int32, Int32)
+  fullName: System.Diagnostics.SymbolStore.ISymbolMethod.GetOffset(System.Diagnostics.SymbolStore.ISymbolDocument, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymMethod.cs
+    startLine: 54
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Gets the Microsoft intermediate language (MSIL) offset within the method that corresponds to the specified position.
+  syntax:
+    content: int GetOffset(ISymbolDocument document, int line, int column)
+    content.vb: Function GetOffset(document As ISymbolDocument, line As Integer, column As Integer) As Integer
+    parameters:
+    - id: document
+      type: System.Diagnostics.SymbolStore.ISymbolDocument
+      description: The document for which the offset is requested.
+    - id: line
+      type: System.Int32
+      description: The document line corresponding to the offset.
+    - id: column
+      type: System.Int32
+      description: The document column corresponding to the offset.
+    return:
+      type: System.Int32
+- uid: System.Diagnostics.SymbolStore.ISymbolMethod.GetRanges(System.Diagnostics.SymbolStore.ISymbolDocument,System.Int32,System.Int32)
+  id: GetRanges(System.Diagnostics.SymbolStore.ISymbolDocument,System.Int32,System.Int32)
+  parent: System.Diagnostics.SymbolStore.ISymbolMethod
+  href: System.Diagnostics.SymbolStore.ISymbolMethod.yml
+  name: GetRanges(ISymbolDocument, Int32, Int32)
+  fullName: System.Diagnostics.SymbolStore.ISymbolMethod.GetRanges(System.Diagnostics.SymbolStore.ISymbolDocument, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymMethod.cs
+    startLine: 63
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Gets an array of start and end offset pairs that correspond to the ranges of Microsoft intermediate language (MSIL) that a given position covers within this method.
+  syntax:
+    content: int[] GetRanges(ISymbolDocument document, int line, int column)
+    content.vb: Function GetRanges(document As ISymbolDocument, line As Integer, column As Integer) As Integer()
+    parameters:
+    - id: document
+      type: System.Diagnostics.SymbolStore.ISymbolDocument
+      description: The document for which the offset is requested.
+    - id: line
+      type: System.Int32
+      description: The document line corresponding to the ranges.
+    - id: column
+      type: System.Int32
+      description: The document column corresponding to the ranges.
+    return:
+      type: System.Int32[]
+- uid: System.Diagnostics.SymbolStore.ISymbolMethod.GetParameters
+  id: GetParameters
+  parent: System.Diagnostics.SymbolStore.ISymbolMethod
+  href: System.Diagnostics.SymbolStore.ISymbolMethod.yml
+  name: GetParameters()
+  fullName: System.Diagnostics.SymbolStore.ISymbolMethod.GetParameters()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymMethod.cs
+    startLine: 70
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Gets the parameters for the current method.
+  syntax:
+    content: ISymbolVariable[] GetParameters()
+    content.vb: Function GetParameters As ISymbolVariable()
+    return:
+      type: System.Diagnostics.SymbolStore.ISymbolVariable[]
+- uid: System.Diagnostics.SymbolStore.ISymbolMethod.GetNamespace
+  id: GetNamespace
+  parent: System.Diagnostics.SymbolStore.ISymbolMethod
+  href: System.Diagnostics.SymbolStore.ISymbolMethod.yml
+  name: GetNamespace()
+  fullName: System.Diagnostics.SymbolStore.ISymbolMethod.GetNamespace()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymMethod.cs
+    startLine: 73
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Gets the namespace that the current method is defined within.
+  syntax:
+    content: ISymbolNamespace GetNamespace()
+    content.vb: Function GetNamespace As ISymbolNamespace
+    return:
+      type: System.Diagnostics.SymbolStore.ISymbolNamespace
+- uid: System.Diagnostics.SymbolStore.ISymbolMethod.GetSourceStartEnd(System.Diagnostics.SymbolStore.ISymbolDocument[],System.Int32[],System.Int32[])
+  id: GetSourceStartEnd(System.Diagnostics.SymbolStore.ISymbolDocument[],System.Int32[],System.Int32[])
+  parent: System.Diagnostics.SymbolStore.ISymbolMethod
+  href: System.Diagnostics.SymbolStore.ISymbolMethod.yml
+  name: GetSourceStartEnd(ISymbolDocument[], Int32[], Int32[])
+  name.vb: GetSourceStartEnd(ISymbolDocument(), Int32(), Int32())
+  fullName: System.Diagnostics.SymbolStore.ISymbolMethod.GetSourceStartEnd(System.Diagnostics.SymbolStore.ISymbolDocument[], System.Int32[], System.Int32[])
+  fullName.vb: System.Diagnostics.SymbolStore.ISymbolMethod.GetSourceStartEnd(System.Diagnostics.SymbolStore.ISymbolDocument(), System.Int32(), System.Int32())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymMethod.cs
+    startLine: 79
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Gets the start and end positions for the source of the current method.
+  syntax:
+    content: bool GetSourceStartEnd(ISymbolDocument[] docs, int[] lines, int[] columns)
+    content.vb: Function GetSourceStartEnd(docs As ISymbolDocument(), lines As Integer(), columns As Integer()) As Boolean
+    parameters:
+    - id: docs
+      type: System.Diagnostics.SymbolStore.ISymbolDocument[]
+      description: The starting and ending source documents.
+    - id: lines
+      type: System.Int32[]
+      description: The starting and ending lines in the corresponding source documents.
+    - id: columns
+      type: System.Int32[]
+      description: The starting and ending columns in the corresponding source documents.
+    return:
+      type: System.Boolean
+references:
+- uid: System.Diagnostics.SymbolStore
+  isExternal: false
+  name: System.Diagnostics.SymbolStore
+  fullName: System.Diagnostics.SymbolStore
+  type: Namespace
+- uid: System.Diagnostics.SymbolStore.SymbolToken
+  parent: System.Diagnostics.SymbolStore
+  isExternal: false
+  href: System.Diagnostics.SymbolStore.SymbolToken.yml
+  name: SymbolToken
+  fullName: System.Diagnostics.SymbolStore.SymbolToken
+  type: Struct
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Int32[]
+  isExternal: true
+  name: Int32[]
+  name.vb: Int32()
+  fullName: System.Int32[]
+  fullName.vb: System.Int32()
+  spec.csharp:
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Diagnostics.SymbolStore.ISymbolDocument[]
+  isExternal: false
+  href: System.Diagnostics.SymbolStore.ISymbolDocument.yml
+  name: ISymbolDocument[]
+  name.vb: ISymbolDocument()
+  fullName: System.Diagnostics.SymbolStore.ISymbolDocument[]
+  fullName.vb: System.Diagnostics.SymbolStore.ISymbolDocument()
+  spec.csharp:
+  - uid: System.Diagnostics.SymbolStore.ISymbolDocument
+    name: ISymbolDocument
+    fullName: System.Diagnostics.SymbolStore.ISymbolDocument
+    href: System.Diagnostics.SymbolStore.ISymbolDocument.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Diagnostics.SymbolStore.ISymbolDocument
+    name: ISymbolDocument
+    fullName: System.Diagnostics.SymbolStore.ISymbolDocument
+    href: System.Diagnostics.SymbolStore.ISymbolDocument.yml
+  - name: ()
+    fullName: ()
+- uid: System.Diagnostics.SymbolStore.ISymbolScope
+  parent: System.Diagnostics.SymbolStore
+  isExternal: false
+  href: System.Diagnostics.SymbolStore.ISymbolScope.yml
+  name: ISymbolScope
+  fullName: System.Diagnostics.SymbolStore.ISymbolScope
+  type: Interface
+- uid: System.Diagnostics.SymbolStore.ISymbolDocument
+  isExternal: false
+  href: System.Diagnostics.SymbolStore.ISymbolDocument.yml
+  name: ISymbolDocument
+  fullName: System.Diagnostics.SymbolStore.ISymbolDocument
+  type: Interface
+- uid: System.Diagnostics.SymbolStore.ISymbolVariable[]
+  isExternal: false
+  href: System.Diagnostics.SymbolStore.ISymbolVariable.yml
+  name: ISymbolVariable[]
+  name.vb: ISymbolVariable()
+  fullName: System.Diagnostics.SymbolStore.ISymbolVariable[]
+  fullName.vb: System.Diagnostics.SymbolStore.ISymbolVariable()
+  spec.csharp:
+  - uid: System.Diagnostics.SymbolStore.ISymbolVariable
+    name: ISymbolVariable
+    fullName: System.Diagnostics.SymbolStore.ISymbolVariable
+    href: System.Diagnostics.SymbolStore.ISymbolVariable.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Diagnostics.SymbolStore.ISymbolVariable
+    name: ISymbolVariable
+    fullName: System.Diagnostics.SymbolStore.ISymbolVariable
+    href: System.Diagnostics.SymbolStore.ISymbolVariable.yml
+  - name: ()
+    fullName: ()
+- uid: System.Diagnostics.SymbolStore.ISymbolNamespace
+  parent: System.Diagnostics.SymbolStore
+  isExternal: false
+  href: System.Diagnostics.SymbolStore.ISymbolNamespace.yml
+  name: ISymbolNamespace
+  fullName: System.Diagnostics.SymbolStore.ISymbolNamespace
+  type: Interface
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean

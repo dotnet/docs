@@ -1,0 +1,403 @@
+items:
+- uid: System.Diagnostics.ProcessModule
+  id: ProcessModule
+  parent: System.Diagnostics
+  children:
+  - System.Diagnostics.ProcessModule.BaseAddress
+  - System.Diagnostics.ProcessModule.EntryPointAddress
+  - System.Diagnostics.ProcessModule.FileName
+  - System.Diagnostics.ProcessModule.ModuleMemorySize
+  - System.Diagnostics.ProcessModule.ModuleName
+  - System.Diagnostics.ProcessModule.ToString
+  href: System.Diagnostics.ProcessModule.yml
+  name: ProcessModule
+  fullName: System.Diagnostics.ProcessModule
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Diagnostics.Process/src/System/Diagnostics/ProcessModule.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/ProcessModule.cs
+    startLine: 12
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Represents a.dll or .exe file that is loaded into a particular process.
+  syntax:
+    content: public class ProcessModule
+    content.vb: Public Class ProcessModule
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Diagnostics.ProcessModule.ModuleName
+  id: ModuleName
+  parent: System.Diagnostics.ProcessModule
+  href: System.Diagnostics.ProcessModule.yml
+  name: ModuleName
+  fullName: System.Diagnostics.ProcessModule.ModuleName
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/ProcessModule.cs
+    startLine: 32
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets the name of the process module.
+  syntax:
+    content: public string ModuleName { get; }
+    content.vb: Public ReadOnly Property ModuleName As String
+    parameters: []
+    return:
+      type: System.String
+- uid: System.Diagnostics.ProcessModule.FileName
+  id: FileName
+  parent: System.Diagnostics.ProcessModule
+  href: System.Diagnostics.ProcessModule.yml
+  name: FileName
+  fullName: System.Diagnostics.ProcessModule.FileName
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/ProcessModule.cs
+    startLine: 43
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets the full path to the module.
+  syntax:
+    content: public string FileName { get; }
+    content.vb: Public ReadOnly Property FileName As String
+    parameters: []
+    return:
+      type: System.String
+- uid: System.Diagnostics.ProcessModule.BaseAddress
+  id: BaseAddress
+  parent: System.Diagnostics.ProcessModule
+  href: System.Diagnostics.ProcessModule.yml
+  name: BaseAddress
+  fullName: System.Diagnostics.ProcessModule.BaseAddress
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/ProcessModule.cs
+    startLine: 54
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets the memory address where the module was loaded.
+  syntax:
+    content: public IntPtr BaseAddress { get; }
+    content.vb: Public ReadOnly Property BaseAddress As IntPtr
+    parameters: []
+    return:
+      type: System.IntPtr
+- uid: System.Diagnostics.ProcessModule.ModuleMemorySize
+  id: ModuleMemorySize
+  parent: System.Diagnostics.ProcessModule
+  href: System.Diagnostics.ProcessModule.yml
+  name: ModuleMemorySize
+  fullName: System.Diagnostics.ProcessModule.ModuleMemorySize
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/ProcessModule.cs
+    startLine: 68
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets the amount of memory that is required to load the module.
+  syntax:
+    content: public int ModuleMemorySize { get; }
+    content.vb: Public ReadOnly Property ModuleMemorySize As Integer
+    parameters: []
+    return:
+      type: System.Int32
+- uid: System.Diagnostics.ProcessModule.EntryPointAddress
+  id: EntryPointAddress
+  parent: System.Diagnostics.ProcessModule
+  href: System.Diagnostics.ProcessModule.yml
+  name: EntryPointAddress
+  fullName: System.Diagnostics.ProcessModule.EntryPointAddress
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/ProcessModule.cs
+    startLine: 80
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets the memory address for the function that runs when the system loads and runs the module.
+  syntax:
+    content: public IntPtr EntryPointAddress { get; }
+    content.vb: Public ReadOnly Property EntryPointAddress As IntPtr
+    parameters: []
+    return:
+      type: System.IntPtr
+- uid: System.Diagnostics.ProcessModule.ToString
+  id: ToString
+  parent: System.Diagnostics.ProcessModule
+  href: System.Diagnostics.ProcessModule.yml
+  name: ToString()
+  fullName: System.Diagnostics.ProcessModule.ToString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/ProcessModule.cs
+    startLine: 105
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Converts the name of the module to a string.
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+  overridden: System.Object.ToString
+references:
+- uid: System.Diagnostics
+  isExternal: false
+  name: System.Diagnostics
+  fullName: System.Diagnostics
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.IntPtr
+  parent: System
+  isExternal: true
+  name: IntPtr
+  fullName: System.IntPtr
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )

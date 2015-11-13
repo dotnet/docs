@@ -1,0 +1,67 @@
+items:
+- uid: System.IEquatable`1
+  id: IEquatable`1
+  parent: System
+  children:
+  - System.IEquatable`1.Equals(`0)
+  href: System.IEquatable`1.yml
+  name: IEquatable<T>
+  name.vb: IEquatable(Of T)
+  fullName: System.IEquatable<T>
+  fullName.vb: System.IEquatable(Of T)
+  type: Interface
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/IEquatable.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/IEquatable.cs
+    startLine: 6
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Defines a generalized method that a value type or class implements to create a type-specific method for determining equality of instances.
+  syntax:
+    content: public interface IEquatable<T>
+    content.vb: Public Interface IEquatable(Of T)
+    typeParameters:
+    - id: T
+- uid: System.IEquatable`1.Equals(`0)
+  id: Equals(`0)
+  parent: System.IEquatable`1
+  href: System.IEquatable`1.yml
+  name: Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IEquatable.cs
+    startLine: 8
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether the current object is equal to another object of the same type.
+  syntax:
+    content: bool Equals(T other)
+    content.vb: Function Equals(other As T) As Boolean
+    parameters:
+    - id: other
+      type: '{T}'
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: '{T}'
+  isExternal: false
+  name: T
+  fullName: T
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean

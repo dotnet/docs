@@ -1,0 +1,867 @@
+items:
+- uid: System.Net.Http.WinHttpHandler
+  id: WinHttpHandler
+  parent: System.Net.Http
+  children:
+  - System.Net.Http.WinHttpHandler.#ctor
+  - System.Net.Http.WinHttpHandler.AutomaticDecompression
+  - System.Net.Http.WinHttpHandler.AutomaticRedirection
+  - System.Net.Http.WinHttpHandler.CheckCertificateRevocationList
+  - System.Net.Http.WinHttpHandler.ClientCertificateOption
+  - System.Net.Http.WinHttpHandler.ClientCertificates
+  - System.Net.Http.WinHttpHandler.ConnectTimeout
+  - System.Net.Http.WinHttpHandler.CookieContainer
+  - System.Net.Http.WinHttpHandler.CookieUsePolicy
+  - System.Net.Http.WinHttpHandler.DefaultProxyCredentials
+  - System.Net.Http.WinHttpHandler.Dispose(System.Boolean)
+  - System.Net.Http.WinHttpHandler.MaxAutomaticRedirections
+  - System.Net.Http.WinHttpHandler.MaxConnectionsPerServer
+  - System.Net.Http.WinHttpHandler.MaxResponseDrainSize
+  - System.Net.Http.WinHttpHandler.MaxResponseHeadersLength
+  - System.Net.Http.WinHttpHandler.PreAuthenticate
+  - System.Net.Http.WinHttpHandler.Proxy
+  - System.Net.Http.WinHttpHandler.ReceiveDataTimeout
+  - System.Net.Http.WinHttpHandler.ReceiveHeadersTimeout
+  - System.Net.Http.WinHttpHandler.SendAsync(HttpRequestMessage,System.Threading.CancellationToken)
+  - System.Net.Http.WinHttpHandler.SendTimeout
+  - System.Net.Http.WinHttpHandler.ServerCertificateValidationCallback
+  - System.Net.Http.WinHttpHandler.ServerCredentials
+  - System.Net.Http.WinHttpHandler.SslProtocols
+  - System.Net.Http.WinHttpHandler.WindowsProxyUsePolicy
+  href: System.Net.Http.WinHttpHandler.yml
+  name: WinHttpHandler
+  fullName: System.Net.Http.WinHttpHandler
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Net.Http.WinHttpHandler/src/System/Net/Http/WinHttpHandler.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Net.Http.WinHttpHandler/src/System/Net/Http/WinHttpHandler.cs
+    startLine: 50
+  assemblies:
+  - System.Net.Http.WinHttpHandler
+  namespace: System.Net.Http
+  syntax:
+    content: 'public class WinHttpHandler : HttpMessageHandler'
+    content.vb: Public Class WinHttpHandler Inherits HttpMessageHandler
+  inheritance:
+  - System.Object
+- uid: System.Net.Http.WinHttpHandler.#ctor
+  id: '#ctor'
+  parent: System.Net.Http.WinHttpHandler
+  href: System.Net.Http.WinHttpHandler.yml
+  name: WinHttpHandler()
+  fullName: System.Net.Http.WinHttpHandler.WinHttpHandler()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Net.Http.WinHttpHandler/src/System/Net/Http/WinHttpHandler.cs
+    startLine: 148
+  assemblies:
+  - System.Net.Http.WinHttpHandler
+  namespace: System.Net.Http
+  syntax:
+    content: public WinHttpHandler()
+    content.vb: Public Sub New
+- uid: System.Net.Http.WinHttpHandler.AutomaticRedirection
+  id: AutomaticRedirection
+  parent: System.Net.Http.WinHttpHandler
+  href: System.Net.Http.WinHttpHandler.yml
+  name: AutomaticRedirection
+  fullName: System.Net.Http.WinHttpHandler.AutomaticRedirection
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http.WinHttpHandler/src/System/Net/Http/WinHttpHandler.cs
+    startLine: 153
+  assemblies:
+  - System.Net.Http.WinHttpHandler
+  namespace: System.Net.Http
+  syntax:
+    content: public bool AutomaticRedirection { get; set; }
+    content.vb: Public Property AutomaticRedirection As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: 
+- uid: System.Net.Http.WinHttpHandler.MaxAutomaticRedirections
+  id: MaxAutomaticRedirections
+  parent: System.Net.Http.WinHttpHandler
+  href: System.Net.Http.WinHttpHandler.yml
+  name: MaxAutomaticRedirections
+  fullName: System.Net.Http.WinHttpHandler.MaxAutomaticRedirections
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http.WinHttpHandler/src/System/Net/Http/WinHttpHandler.cs
+    startLine: 167
+  assemblies:
+  - System.Net.Http.WinHttpHandler
+  namespace: System.Net.Http
+  syntax:
+    content: public int MaxAutomaticRedirections { get; set; }
+    content.vb: Public Property MaxAutomaticRedirections As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: 
+- uid: System.Net.Http.WinHttpHandler.AutomaticDecompression
+  id: AutomaticDecompression
+  parent: System.Net.Http.WinHttpHandler
+  href: System.Net.Http.WinHttpHandler.yml
+  name: AutomaticDecompression
+  fullName: System.Net.Http.WinHttpHandler.AutomaticDecompression
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http.WinHttpHandler/src/System/Net/Http/WinHttpHandler.cs
+    startLine: 189
+  assemblies:
+  - System.Net.Http.WinHttpHandler
+  namespace: System.Net.Http
+  syntax:
+    content: public DecompressionMethods AutomaticDecompression { get; set; }
+    content.vb: Public Property AutomaticDecompression As DecompressionMethods
+    parameters: []
+    return:
+      type: DecompressionMethods
+      description: 
+- uid: System.Net.Http.WinHttpHandler.CookieUsePolicy
+  id: CookieUsePolicy
+  parent: System.Net.Http.WinHttpHandler
+  href: System.Net.Http.WinHttpHandler.yml
+  name: CookieUsePolicy
+  fullName: System.Net.Http.WinHttpHandler.CookieUsePolicy
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http.WinHttpHandler/src/System/Net/Http/WinHttpHandler.cs
+    startLine: 203
+  assemblies:
+  - System.Net.Http.WinHttpHandler
+  namespace: System.Net.Http
+  syntax:
+    content: public CookieUsePolicy CookieUsePolicy { get; set; }
+    content.vb: Public Property CookieUsePolicy As CookieUsePolicy
+    parameters: []
+    return:
+      type: System.Net.Http.CookieUsePolicy
+      description: 
+- uid: System.Net.Http.WinHttpHandler.CookieContainer
+  id: CookieContainer
+  parent: System.Net.Http.WinHttpHandler
+  href: System.Net.Http.WinHttpHandler.yml
+  name: CookieContainer
+  fullName: System.Net.Http.WinHttpHandler.CookieContainer
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http.WinHttpHandler/src/System/Net/Http/WinHttpHandler.cs
+    startLine: 224
+  assemblies:
+  - System.Net.Http.WinHttpHandler
+  namespace: System.Net.Http
+  syntax:
+    content: public CookieContainer CookieContainer { get; set; }
+    content.vb: Public Property CookieContainer As CookieContainer
+    parameters: []
+    return:
+      type: CookieContainer
+      description: 
+- uid: System.Net.Http.WinHttpHandler.SslProtocols
+  id: SslProtocols
+  parent: System.Net.Http.WinHttpHandler
+  href: System.Net.Http.WinHttpHandler.yml
+  name: SslProtocols
+  fullName: System.Net.Http.WinHttpHandler.SslProtocols
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http.WinHttpHandler/src/System/Net/Http/WinHttpHandler.cs
+    startLine: 238
+  assemblies:
+  - System.Net.Http.WinHttpHandler
+  namespace: System.Net.Http
+  syntax:
+    content: public SslProtocols SslProtocols { get; set; }
+    content.vb: Public Property SslProtocols As SslProtocols
+    parameters: []
+    return:
+      type: SslProtocols
+      description: 
+- uid: System.Net.Http.WinHttpHandler.ServerCertificateValidationCallback
+  id: ServerCertificateValidationCallback
+  parent: System.Net.Http.WinHttpHandler
+  href: System.Net.Http.WinHttpHandler.yml
+  name: ServerCertificateValidationCallback
+  fullName: System.Net.Http.WinHttpHandler.ServerCertificateValidationCallback
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http.WinHttpHandler/src/System/Net/Http/WinHttpHandler.cs
+    startLine: 259
+  assemblies:
+  - System.Net.Http.WinHttpHandler
+  namespace: System.Net.Http
+  syntax:
+    content: public Func<HttpRequestMessage, X509Certificate2, X509Chain, SslPolicyErrors, bool> ServerCertificateValidationCallback { get; set; }
+    content.vb: Public Property ServerCertificateValidationCallback As Func(Of HttpRequestMessage, X509Certificate2, X509Chain, SslPolicyErrors, Boolean)
+    parameters: []
+    return:
+      type: System.Func{HttpRequestMessage,X509Certificate2,X509Chain,SslPolicyErrors,System.Boolean}
+      description: 
+- uid: System.Net.Http.WinHttpHandler.CheckCertificateRevocationList
+  id: CheckCertificateRevocationList
+  parent: System.Net.Http.WinHttpHandler
+  href: System.Net.Http.WinHttpHandler.yml
+  name: CheckCertificateRevocationList
+  fullName: System.Net.Http.WinHttpHandler.CheckCertificateRevocationList
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http.WinHttpHandler/src/System/Net/Http/WinHttpHandler.cs
+    startLine: 279
+  assemblies:
+  - System.Net.Http.WinHttpHandler
+  namespace: System.Net.Http
+  syntax:
+    content: public bool CheckCertificateRevocationList { get; set; }
+    content.vb: Public Property CheckCertificateRevocationList As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: 
+- uid: System.Net.Http.WinHttpHandler.ClientCertificateOption
+  id: ClientCertificateOption
+  parent: System.Net.Http.WinHttpHandler
+  href: System.Net.Http.WinHttpHandler.yml
+  name: ClientCertificateOption
+  fullName: System.Net.Http.WinHttpHandler.ClientCertificateOption
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http.WinHttpHandler/src/System/Net/Http/WinHttpHandler.cs
+    startLine: 292
+  assemblies:
+  - System.Net.Http.WinHttpHandler
+  namespace: System.Net.Http
+  syntax:
+    content: public ClientCertificateOption ClientCertificateOption { get; set; }
+    content.vb: Public Property ClientCertificateOption As ClientCertificateOption
+    parameters: []
+    return:
+      type: ClientCertificateOption
+      description: 
+- uid: System.Net.Http.WinHttpHandler.ClientCertificates
+  id: ClientCertificates
+  parent: System.Net.Http.WinHttpHandler
+  href: System.Net.Http.WinHttpHandler.yml
+  name: ClientCertificates
+  fullName: System.Net.Http.WinHttpHandler.ClientCertificates
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http.WinHttpHandler/src/System/Net/Http/WinHttpHandler.cs
+    startLine: 312
+  assemblies:
+  - System.Net.Http.WinHttpHandler
+  namespace: System.Net.Http
+  syntax:
+    content: public X509Certificate2Collection ClientCertificates { get; }
+    content.vb: Public ReadOnly Property ClientCertificates As X509Certificate2Collection
+    parameters: []
+    return:
+      type: X509Certificate2Collection
+      description: 
+- uid: System.Net.Http.WinHttpHandler.PreAuthenticate
+  id: PreAuthenticate
+  parent: System.Net.Http.WinHttpHandler
+  href: System.Net.Http.WinHttpHandler.yml
+  name: PreAuthenticate
+  fullName: System.Net.Http.WinHttpHandler.PreAuthenticate
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http.WinHttpHandler/src/System/Net/Http/WinHttpHandler.cs
+    startLine: 325
+  assemblies:
+  - System.Net.Http.WinHttpHandler
+  namespace: System.Net.Http
+  syntax:
+    content: public bool PreAuthenticate { get; set; }
+    content.vb: Public Property PreAuthenticate As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: 
+- uid: System.Net.Http.WinHttpHandler.ServerCredentials
+  id: ServerCredentials
+  parent: System.Net.Http.WinHttpHandler
+  href: System.Net.Http.WinHttpHandler.yml
+  name: ServerCredentials
+  fullName: System.Net.Http.WinHttpHandler.ServerCredentials
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http.WinHttpHandler/src/System/Net/Http/WinHttpHandler.cs
+    startLine: 338
+  assemblies:
+  - System.Net.Http.WinHttpHandler
+  namespace: System.Net.Http
+  syntax:
+    content: public ICredentials ServerCredentials { get; set; }
+    content.vb: Public Property ServerCredentials As ICredentials
+    parameters: []
+    return:
+      type: ICredentials
+      description: 
+- uid: System.Net.Http.WinHttpHandler.WindowsProxyUsePolicy
+  id: WindowsProxyUsePolicy
+  parent: System.Net.Http.WinHttpHandler
+  href: System.Net.Http.WinHttpHandler.yml
+  name: WindowsProxyUsePolicy
+  fullName: System.Net.Http.WinHttpHandler.WindowsProxyUsePolicy
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http.WinHttpHandler/src/System/Net/Http/WinHttpHandler.cs
+    startLine: 351
+  assemblies:
+  - System.Net.Http.WinHttpHandler
+  namespace: System.Net.Http
+  syntax:
+    content: public WindowsProxyUsePolicy WindowsProxyUsePolicy { get; set; }
+    content.vb: Public Property WindowsProxyUsePolicy As WindowsProxyUsePolicy
+    parameters: []
+    return:
+      type: System.Net.Http.WindowsProxyUsePolicy
+      description: 
+- uid: System.Net.Http.WinHttpHandler.DefaultProxyCredentials
+  id: DefaultProxyCredentials
+  parent: System.Net.Http.WinHttpHandler
+  href: System.Net.Http.WinHttpHandler.yml
+  name: DefaultProxyCredentials
+  fullName: System.Net.Http.WinHttpHandler.DefaultProxyCredentials
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http.WinHttpHandler/src/System/Net/Http/WinHttpHandler.cs
+    startLine: 373
+  assemblies:
+  - System.Net.Http.WinHttpHandler
+  namespace: System.Net.Http
+  syntax:
+    content: public ICredentials DefaultProxyCredentials { get; set; }
+    content.vb: Public Property DefaultProxyCredentials As ICredentials
+    parameters: []
+    return:
+      type: ICredentials
+      description: 
+- uid: System.Net.Http.WinHttpHandler.Proxy
+  id: Proxy
+  parent: System.Net.Http.WinHttpHandler
+  href: System.Net.Http.WinHttpHandler.yml
+  name: Proxy
+  fullName: System.Net.Http.WinHttpHandler.Proxy
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http.WinHttpHandler/src/System/Net/Http/WinHttpHandler.cs
+    startLine: 387
+  assemblies:
+  - System.Net.Http.WinHttpHandler
+  namespace: System.Net.Http
+  syntax:
+    content: public IWebProxy Proxy { get; set; }
+    content.vb: Public Property Proxy As IWebProxy
+    parameters: []
+    return:
+      type: IWebProxy
+      description: 
+- uid: System.Net.Http.WinHttpHandler.MaxConnectionsPerServer
+  id: MaxConnectionsPerServer
+  parent: System.Net.Http.WinHttpHandler
+  href: System.Net.Http.WinHttpHandler.yml
+  name: MaxConnectionsPerServer
+  fullName: System.Net.Http.WinHttpHandler.MaxConnectionsPerServer
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http.WinHttpHandler/src/System/Net/Http/WinHttpHandler.cs
+    startLine: 401
+  assemblies:
+  - System.Net.Http.WinHttpHandler
+  namespace: System.Net.Http
+  syntax:
+    content: public int MaxConnectionsPerServer { get; set; }
+    content.vb: Public Property MaxConnectionsPerServer As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: 
+- uid: System.Net.Http.WinHttpHandler.ConnectTimeout
+  id: ConnectTimeout
+  parent: System.Net.Http.WinHttpHandler
+  href: System.Net.Http.WinHttpHandler.yml
+  name: ConnectTimeout
+  fullName: System.Net.Http.WinHttpHandler.ConnectTimeout
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http.WinHttpHandler/src/System/Net/Http/WinHttpHandler.cs
+    startLine: 425
+  assemblies:
+  - System.Net.Http.WinHttpHandler
+  namespace: System.Net.Http
+  syntax:
+    content: public TimeSpan ConnectTimeout { get; set; }
+    content.vb: Public Property ConnectTimeout As TimeSpan
+    parameters: []
+    return:
+      type: System.TimeSpan
+      description: 
+- uid: System.Net.Http.WinHttpHandler.SendTimeout
+  id: SendTimeout
+  parent: System.Net.Http.WinHttpHandler
+  href: System.Net.Http.WinHttpHandler.yml
+  name: SendTimeout
+  fullName: System.Net.Http.WinHttpHandler.SendTimeout
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http.WinHttpHandler/src/System/Net/Http/WinHttpHandler.cs
+    startLine: 444
+  assemblies:
+  - System.Net.Http.WinHttpHandler
+  namespace: System.Net.Http
+  syntax:
+    content: public TimeSpan SendTimeout { get; set; }
+    content.vb: Public Property SendTimeout As TimeSpan
+    parameters: []
+    return:
+      type: System.TimeSpan
+      description: 
+- uid: System.Net.Http.WinHttpHandler.ReceiveHeadersTimeout
+  id: ReceiveHeadersTimeout
+  parent: System.Net.Http.WinHttpHandler
+  href: System.Net.Http.WinHttpHandler.yml
+  name: ReceiveHeadersTimeout
+  fullName: System.Net.Http.WinHttpHandler.ReceiveHeadersTimeout
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http.WinHttpHandler/src/System/Net/Http/WinHttpHandler.cs
+    startLine: 463
+  assemblies:
+  - System.Net.Http.WinHttpHandler
+  namespace: System.Net.Http
+  syntax:
+    content: public TimeSpan ReceiveHeadersTimeout { get; set; }
+    content.vb: Public Property ReceiveHeadersTimeout As TimeSpan
+    parameters: []
+    return:
+      type: System.TimeSpan
+      description: 
+- uid: System.Net.Http.WinHttpHandler.ReceiveDataTimeout
+  id: ReceiveDataTimeout
+  parent: System.Net.Http.WinHttpHandler
+  href: System.Net.Http.WinHttpHandler.yml
+  name: ReceiveDataTimeout
+  fullName: System.Net.Http.WinHttpHandler.ReceiveDataTimeout
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http.WinHttpHandler/src/System/Net/Http/WinHttpHandler.cs
+    startLine: 482
+  assemblies:
+  - System.Net.Http.WinHttpHandler
+  namespace: System.Net.Http
+  syntax:
+    content: public TimeSpan ReceiveDataTimeout { get; set; }
+    content.vb: Public Property ReceiveDataTimeout As TimeSpan
+    parameters: []
+    return:
+      type: System.TimeSpan
+      description: 
+- uid: System.Net.Http.WinHttpHandler.MaxResponseHeadersLength
+  id: MaxResponseHeadersLength
+  parent: System.Net.Http.WinHttpHandler
+  href: System.Net.Http.WinHttpHandler.yml
+  name: MaxResponseHeadersLength
+  fullName: System.Net.Http.WinHttpHandler.MaxResponseHeadersLength
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http.WinHttpHandler/src/System/Net/Http/WinHttpHandler.cs
+    startLine: 501
+  assemblies:
+  - System.Net.Http.WinHttpHandler
+  namespace: System.Net.Http
+  syntax:
+    content: public int MaxResponseHeadersLength { get; set; }
+    content.vb: Public Property MaxResponseHeadersLength As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: 
+- uid: System.Net.Http.WinHttpHandler.MaxResponseDrainSize
+  id: MaxResponseDrainSize
+  parent: System.Net.Http.WinHttpHandler
+  href: System.Net.Http.WinHttpHandler.yml
+  name: MaxResponseDrainSize
+  fullName: System.Net.Http.WinHttpHandler.MaxResponseDrainSize
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http.WinHttpHandler/src/System/Net/Http/WinHttpHandler.cs
+    startLine: 523
+  assemblies:
+  - System.Net.Http.WinHttpHandler
+  namespace: System.Net.Http
+  syntax:
+    content: public int MaxResponseDrainSize { get; set; }
+    content.vb: Public Property MaxResponseDrainSize As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: 
+- uid: System.Net.Http.WinHttpHandler.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: System.Net.Http.WinHttpHandler
+  href: System.Net.Http.WinHttpHandler.yml
+  name: Dispose(Boolean)
+  fullName: System.Net.Http.WinHttpHandler.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.Http.WinHttpHandler/src/System/Net/Http/WinHttpHandler.cs
+    startLine: 546
+  assemblies:
+  - System.Net.Http.WinHttpHandler
+  namespace: System.Net.Http
+  syntax:
+    content: protected override void Dispose(bool disposing)
+    content.vb: Protected Overrides Sub Dispose(disposing As Boolean)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+- uid: System.Net.Http.WinHttpHandler.SendAsync(HttpRequestMessage,System.Threading.CancellationToken)
+  id: SendAsync(HttpRequestMessage,System.Threading.CancellationToken)
+  parent: System.Net.Http.WinHttpHandler
+  href: System.Net.Http.WinHttpHandler.yml
+  name: SendAsync(HttpRequestMessage, CancellationToken)
+  fullName: System.Net.Http.WinHttpHandler.SendAsync(HttpRequestMessage, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.Http.WinHttpHandler/src/System/Net/Http/WinHttpHandler.cs
+    startLine: 567
+  assemblies:
+  - System.Net.Http.WinHttpHandler
+  namespace: System.Net.Http
+  syntax:
+    content: protected override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+    content.vb: Protected Overrides Function SendAsync(request As HttpRequestMessage, cancellationToken As CancellationToken) As Task(Of HttpResponseMessage)
+    parameters:
+    - id: request
+      type: HttpRequestMessage
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{HttpResponseMessage}
+      description: 
+references:
+- uid: System.Net.Http
+  isExternal: false
+  name: System.Net.Http
+  fullName: System.Net.Http
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: DecompressionMethods
+  isExternal: true
+  name: DecompressionMethods
+  fullName: DecompressionMethods
+- uid: System.Net.Http.CookieUsePolicy
+  parent: System.Net.Http
+  isExternal: false
+  href: System.Net.Http.CookieUsePolicy.yml
+  name: CookieUsePolicy
+  fullName: System.Net.Http.CookieUsePolicy
+  type: Enum
+- uid: CookieContainer
+  isExternal: true
+  name: CookieContainer
+  fullName: CookieContainer
+- uid: SslProtocols
+  isExternal: true
+  name: SslProtocols
+  fullName: SslProtocols
+- uid: System.Func{HttpRequestMessage,X509Certificate2,X509Chain,SslPolicyErrors,System.Boolean}
+  parent: System
+  definition: System.Func`5
+  name: Func<HttpRequestMessage, X509Certificate2, X509Chain, SslPolicyErrors, Boolean>
+  name.vb: Func(Of HttpRequestMessage, X509Certificate2, X509Chain, SslPolicyErrors, Boolean)
+  fullName: System.Func<HttpRequestMessage, X509Certificate2, X509Chain, SslPolicyErrors, System.Boolean>
+  fullName.vb: System.Func(Of HttpRequestMessage, X509Certificate2, X509Chain, SslPolicyErrors, System.Boolean)
+  spec.csharp:
+  - uid: System.Func`5
+    name: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: HttpRequestMessage
+    name: HttpRequestMessage
+    fullName: HttpRequestMessage
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: X509Certificate2
+    name: X509Certificate2
+    fullName: X509Certificate2
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: X509Chain
+    name: X509Chain
+    fullName: X509Chain
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: SslPolicyErrors
+    name: SslPolicyErrors
+    fullName: SslPolicyErrors
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`5
+    name: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: HttpRequestMessage
+    name: HttpRequestMessage
+    fullName: HttpRequestMessage
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: X509Certificate2
+    name: X509Certificate2
+    fullName: X509Certificate2
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: X509Chain
+    name: X509Chain
+    fullName: X509Chain
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: SslPolicyErrors
+    name: SslPolicyErrors
+    fullName: SslPolicyErrors
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Func`5
+  parent: System
+  isExternal: true
+  name: Func<T1, T2, T3, T4, TResult>
+  name.vb: Func(Of T1, T2, T3, T4, TResult)
+  fullName: System.Func<T1, T2, T3, T4, TResult>
+  fullName.vb: System.Func(Of T1, T2, T3, T4, TResult)
+  spec.csharp:
+  - uid: System.Func`5
+    name: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T1
+    fullName: T1
+  - name: ', '
+    fullName: ', '
+  - name: T2
+    fullName: T2
+  - name: ', '
+    fullName: ', '
+  - name: T3
+    fullName: T3
+  - name: ', '
+    fullName: ', '
+  - name: T4
+    fullName: T4
+  - name: ', '
+    fullName: ', '
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`5
+    name: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T1
+    fullName: T1
+  - name: ', '
+    fullName: ', '
+  - name: T2
+    fullName: T2
+  - name: ', '
+    fullName: ', '
+  - name: T3
+    fullName: T3
+  - name: ', '
+    fullName: ', '
+  - name: T4
+    fullName: T4
+  - name: ', '
+    fullName: ', '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: ClientCertificateOption
+  isExternal: true
+  name: ClientCertificateOption
+  fullName: ClientCertificateOption
+- uid: X509Certificate2Collection
+  isExternal: true
+  name: X509Certificate2Collection
+  fullName: X509Certificate2Collection
+- uid: ICredentials
+  isExternal: true
+  name: ICredentials
+  fullName: ICredentials
+- uid: System.Net.Http.WindowsProxyUsePolicy
+  parent: System.Net.Http
+  isExternal: false
+  href: System.Net.Http.WindowsProxyUsePolicy.yml
+  name: WindowsProxyUsePolicy
+  fullName: System.Net.Http.WindowsProxyUsePolicy
+  type: Enum
+- uid: IWebProxy
+  isExternal: true
+  name: IWebProxy
+  fullName: IWebProxy
+- uid: System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  fullName: System.TimeSpan
+- uid: HttpRequestMessage
+  isExternal: true
+  name: HttpRequestMessage
+  fullName: HttpRequestMessage
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{HttpResponseMessage}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<HttpResponseMessage>
+  name.vb: Task(Of HttpResponseMessage)
+  fullName: System.Threading.Tasks.Task<HttpResponseMessage>
+  fullName.vb: System.Threading.Tasks.Task(Of HttpResponseMessage)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: HttpResponseMessage
+    name: HttpResponseMessage
+    fullName: HttpResponseMessage
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: HttpResponseMessage
+    name: HttpResponseMessage
+    fullName: HttpResponseMessage
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  name.vb: Task(Of TResult)
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  type: Namespace

@@ -1,0 +1,410 @@
+items:
+- uid: System.Collections.Concurrent.IProducerConsumerCollection`1
+  id: IProducerConsumerCollection`1
+  parent: System.Collections.Concurrent
+  children:
+  - System.Collections.Concurrent.IProducerConsumerCollection`1.CopyTo(`0[],System.Int32)
+  - System.Collections.Concurrent.IProducerConsumerCollection`1.ToArray
+  - System.Collections.Concurrent.IProducerConsumerCollection`1.TryAdd(`0)
+  - System.Collections.Concurrent.IProducerConsumerCollection`1.TryTake(`0@)
+  href: System.Collections.Concurrent.IProducerConsumerCollection`1.yml
+  name: IProducerConsumerCollection<T>
+  name.vb: IProducerConsumerCollection(Of T)
+  fullName: System.Collections.Concurrent.IProducerConsumerCollection<T>
+  fullName.vb: System.Collections.Concurrent.IProducerConsumerCollection(Of T)
+  type: Interface
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Collections/Concurrent/IProducerConsumerCollection.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Collections/Concurrent/IProducerConsumerCollection.cs
+    startLine: 26
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Concurrent
+  summary: Defines methods to manipulate thread-safe collections intended for producer/consumer usage. This interface provides a unified representation for producer/consumer collections so that higher level abstractions such as @'System.Collections.Concurrent.BlockingCollection`1' can use the collection as the underlying storage mechanism.
+  remarks: >-
+    All implementations of this interface must enable all members of this interface
+
+    to be used concurrently from multiple threads.
+  syntax:
+    content: 'public interface IProducerConsumerCollection<T> : IEnumerable<T>, ICollection, IEnumerable'
+    content.vb: Public Interface IProducerConsumerCollection(Of T) Inherits IEnumerable(Of T), ICollection
+    typeParameters:
+    - id: T
+      description: Specifies the type of elements in the collection.
+  inheritedMembers:
+  - System.Collections.Generic.IEnumerable{{T}}.GetEnumerator
+  - System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+  - System.Collections.ICollection.Count
+  - System.Collections.ICollection.SyncRoot
+  - System.Collections.ICollection.IsSynchronized
+- uid: System.Collections.Concurrent.IProducerConsumerCollection`1.CopyTo(`0[],System.Int32)
+  id: CopyTo(`0[],System.Int32)
+  parent: System.Collections.Concurrent.IProducerConsumerCollection`1
+  href: System.Collections.Concurrent.IProducerConsumerCollection`1.yml
+  name: CopyTo(T[], Int32)
+  name.vb: CopyTo(T(), Int32)
+  fullName: System.Collections.Concurrent.IProducerConsumerCollection<T>.CopyTo(T[], System.Int32)
+  fullName.vb: System.Collections.Concurrent.IProducerConsumerCollection(Of T).CopyTo(T(), System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Concurrent/IProducerConsumerCollection.cs
+    startLine: 49
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Concurrent
+  summary: Copies the elements of the @'System.Collections.Concurrent.IProducerConsumerCollection`1' to an @'System.Array', starting at a specified index.
+  syntax:
+    content: void CopyTo(T[] array, int index)
+    content.vb: Sub CopyTo(array As T(), index As Integer)
+    parameters:
+    - id: array
+      type: '{T}[]'
+      description: The one-dimensional @'System.Array' that is the destination of the elements copied from the @'System.Collections.Concurrent.IProducerConsumerCollection`1'. The array must have zero-based indexing.
+    - id: index
+      type: System.Int32
+      description: The zero-based index in *array* at which copying begins.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is a null reference (Nothing in Visual Basic).'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero.'
+  - type: System.ArgumentException
+    description: '*index* is equal to or greater than the length of the *array* -or- The number of elements in the collection is greater than the available space from *index* to the end of the destination *array*.'
+- uid: System.Collections.Concurrent.IProducerConsumerCollection`1.TryAdd(`0)
+  id: TryAdd(`0)
+  parent: System.Collections.Concurrent.IProducerConsumerCollection`1
+  href: System.Collections.Concurrent.IProducerConsumerCollection`1.yml
+  name: TryAdd(T)
+  fullName: System.Collections.Concurrent.IProducerConsumerCollection<T>.TryAdd(T)
+  fullName.vb: System.Collections.Concurrent.IProducerConsumerCollection(Of T).TryAdd(T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Concurrent/IProducerConsumerCollection.cs
+    startLine: 59
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Concurrent
+  summary: Attempts to add an object to the @'System.Collections.Concurrent.IProducerConsumerCollection`1'.
+  syntax:
+    content: bool TryAdd(T item)
+    content.vb: Function TryAdd(item As T) As Boolean
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The object to add to the @'System.Collections.Concurrent.IProducerConsumerCollection`1'.
+    return:
+      type: System.Boolean
+      description: true if the object was added successfully; otherwise, false.
+  exceptions:
+  - type: System.ArgumentException
+    description: The *item* was invalid for this collection.
+- uid: System.Collections.Concurrent.IProducerConsumerCollection`1.TryTake(`0@)
+  id: TryTake(`0@)
+  parent: System.Collections.Concurrent.IProducerConsumerCollection`1
+  href: System.Collections.Concurrent.IProducerConsumerCollection`1.yml
+  name: TryTake(out T)
+  name.vb: TryTake(ByRef T)
+  fullName: System.Collections.Concurrent.IProducerConsumerCollection<T>.TryTake(out T)
+  fullName.vb: System.Collections.Concurrent.IProducerConsumerCollection(Of T).TryTake(ByRef T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Concurrent/IProducerConsumerCollection.cs
+    startLine: 70
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Concurrent
+  summary: Attempts to remove and return an object from the @'System.Collections.Concurrent.IProducerConsumerCollection`1'.
+  syntax:
+    content: bool TryTake(out T item)
+    content.vb: Function TryTake(ByRef item As T) As Boolean
+    parameters:
+    - id: item
+      type: '{T}'
+      description: When this method returns, if the object was removed and returned successfully, *item* contains the removed object. If no object was available to be removed, the value is unspecified.
+    return:
+      type: System.Boolean
+      description: true if an object was removed and returned successfully; otherwise, false.
+- uid: System.Collections.Concurrent.IProducerConsumerCollection`1.ToArray
+  id: ToArray
+  parent: System.Collections.Concurrent.IProducerConsumerCollection`1
+  href: System.Collections.Concurrent.IProducerConsumerCollection`1.yml
+  name: ToArray()
+  fullName: System.Collections.Concurrent.IProducerConsumerCollection<T>.ToArray()
+  fullName.vb: System.Collections.Concurrent.IProducerConsumerCollection(Of T).ToArray()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Concurrent/IProducerConsumerCollection.cs
+    startLine: 76
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Concurrent
+  summary: Copies the elements contained in the @'System.Collections.Concurrent.IProducerConsumerCollection`1' to a new array.
+  syntax:
+    content: T[] ToArray()
+    content.vb: Function ToArray As T()
+    return:
+      type: '{T}[]'
+      description: A new array containing the elements copied from the @'System.Collections.Concurrent.IProducerConsumerCollection`1'.
+references:
+- uid: System.Collections.Concurrent
+  isExternal: false
+  name: System.Collections.Concurrent
+  fullName: System.Collections.Concurrent
+- uid: System.Collections.Generic.IEnumerable{{T}}.GetEnumerator
+  parent: System.Collections.Generic.IEnumerable{{T}}
+  definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  name: GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable(Of T).GetEnumerator
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+  parent: System.Collections.ICollection
+  isExternal: true
+  name: CopyTo(Array, Int32)
+  fullName: System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  spec.csharp:
+  - uid: System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+    name: CopyTo
+    fullName: System.Collections.ICollection.CopyTo
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Array
+    name: Array
+    fullName: System.Array
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+    name: CopyTo
+    fullName: System.Collections.ICollection.CopyTo
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Array
+    name: Array
+    fullName: System.Array
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.ICollection.Count
+  parent: System.Collections.ICollection
+  isExternal: true
+  name: Count
+  fullName: System.Collections.ICollection.Count
+- uid: System.Collections.ICollection.SyncRoot
+  parent: System.Collections.ICollection
+  isExternal: true
+  name: SyncRoot
+  fullName: System.Collections.ICollection.SyncRoot
+- uid: System.Collections.ICollection.IsSynchronized
+  parent: System.Collections.ICollection
+  isExternal: true
+  name: IsSynchronized
+  fullName: System.Collections.ICollection.IsSynchronized
+- uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  parent: System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable(Of T).GetEnumerator
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.ICollection
+  parent: System.Collections
+  isExternal: true
+  name: ICollection
+  fullName: System.Collections.ICollection
+- uid: System.Collections.Generic.IEnumerable`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections
+  isExternal: false
+  name: System.Collections
+  fullName: System.Collections
+- uid: System.Collections.Concurrent.IProducerConsumerCollection`1
+  parent: System.Collections.Concurrent
+  isExternal: false
+  href: System.Collections.Concurrent.IProducerConsumerCollection`1.yml
+  name: IProducerConsumerCollection<T>
+  name.vb: IProducerConsumerCollection(Of T)
+  fullName: System.Collections.Concurrent.IProducerConsumerCollection<T>
+  fullName.vb: System.Collections.Concurrent.IProducerConsumerCollection(Of T)
+  type: Interface
+  summary: Defines methods to manipulate thread-safe collections intended for producer/consumer usage.
+  spec.csharp:
+  - uid: System.Collections.Concurrent.IProducerConsumerCollection`1
+    name: IProducerConsumerCollection
+    fullName: System.Collections.Concurrent.IProducerConsumerCollection
+    href: System.Collections.Concurrent.IProducerConsumerCollection`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Concurrent.IProducerConsumerCollection`1
+    name: IProducerConsumerCollection
+    fullName: System.Collections.Concurrent.IProducerConsumerCollection
+    href: System.Collections.Concurrent.IProducerConsumerCollection`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Array
+  parent: System
+  isExternal: true
+  name: Array
+  fullName: System.Array
+- uid: System.ArgumentNullException
+- uid: System.ArgumentOutOfRangeException
+- uid: System.ArgumentException
+- uid: '{T}[]'
+  isExternal: false
+  name: T[]
+  name.vb: T()
+  fullName: T[]
+  fullName.vb: T()
+  spec.csharp:
+  - name: T
+    fullName: T
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - name: T
+    fullName: T
+  - name: ()
+    fullName: ()
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: '{T}'
+  isExternal: false
+  name: T
+  fullName: T
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean

@@ -1,0 +1,483 @@
+items:
+- uid: System.Reflection.CustomAttributeTypedArgument
+  id: CustomAttributeTypedArgument
+  parent: System.Reflection
+  children:
+  - System.Reflection.CustomAttributeTypedArgument.#ctor(System.Object)
+  - System.Reflection.CustomAttributeTypedArgument.#ctor(System.Type,System.Object)
+  - System.Reflection.CustomAttributeTypedArgument.ArgumentType
+  - System.Reflection.CustomAttributeTypedArgument.Equals(System.Object)
+  - System.Reflection.CustomAttributeTypedArgument.GetHashCode
+  - System.Reflection.CustomAttributeTypedArgument.op_Equality(System.Reflection.CustomAttributeTypedArgument,System.Reflection.CustomAttributeTypedArgument)
+  - System.Reflection.CustomAttributeTypedArgument.op_Inequality(System.Reflection.CustomAttributeTypedArgument,System.Reflection.CustomAttributeTypedArgument)
+  - System.Reflection.CustomAttributeTypedArgument.ToString
+  - System.Reflection.CustomAttributeTypedArgument.Value
+  href: System.Reflection.CustomAttributeTypedArgument.yml
+  name: CustomAttributeTypedArgument
+  fullName: System.Reflection.CustomAttributeTypedArgument
+  type: Struct
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Reflection/CustomAttribute.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Reflection/CustomAttribute.cs
+    startLine: 673
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Represents an argument of a custom attribute in the reflection-only context, or an element of an array argument.
+  syntax:
+    content: public struct CustomAttributeTypedArgument
+    content.vb: Public Structure CustomAttributeTypedArgument
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.Reflection.CustomAttributeTypedArgument.op_Equality(System.Reflection.CustomAttributeTypedArgument,System.Reflection.CustomAttributeTypedArgument)
+  id: op_Equality(System.Reflection.CustomAttributeTypedArgument,System.Reflection.CustomAttributeTypedArgument)
+  parent: System.Reflection.CustomAttributeTypedArgument
+  href: System.Reflection.CustomAttributeTypedArgument.yml
+  name: Equality(CustomAttributeTypedArgument, CustomAttributeTypedArgument)
+  fullName: System.Reflection.CustomAttributeTypedArgument.Equality(System.Reflection.CustomAttributeTypedArgument, System.Reflection.CustomAttributeTypedArgument)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/CustomAttribute.cs
+    startLine: 678
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Tests whether two @'System.Reflection.CustomAttributeTypedArgument' structures are equivalent.
+  syntax:
+    content: public static bool operator ==(CustomAttributeTypedArgument left, CustomAttributeTypedArgument right)
+    content.vb: Public Shared Operator =(left As CustomAttributeTypedArgument, right As CustomAttributeTypedArgument) As Boolean
+    parameters:
+    - id: left
+      type: System.Reflection.CustomAttributeTypedArgument
+      description: The @'System.Reflection.CustomAttributeTypedArgument' structure to the left of the equality operator.
+    - id: right
+      type: System.Reflection.CustomAttributeTypedArgument
+      description: The @'System.Reflection.CustomAttributeTypedArgument' structure to the right of the equality operator.
+    return:
+      type: System.Boolean
+- uid: System.Reflection.CustomAttributeTypedArgument.op_Inequality(System.Reflection.CustomAttributeTypedArgument,System.Reflection.CustomAttributeTypedArgument)
+  id: op_Inequality(System.Reflection.CustomAttributeTypedArgument,System.Reflection.CustomAttributeTypedArgument)
+  parent: System.Reflection.CustomAttributeTypedArgument
+  href: System.Reflection.CustomAttributeTypedArgument.yml
+  name: Inequality(CustomAttributeTypedArgument, CustomAttributeTypedArgument)
+  fullName: System.Reflection.CustomAttributeTypedArgument.Inequality(System.Reflection.CustomAttributeTypedArgument, System.Reflection.CustomAttributeTypedArgument)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/CustomAttribute.cs
+    startLine: 682
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Tests whether two @'System.Reflection.CustomAttributeTypedArgument' structures are different.
+  syntax:
+    content: public static bool operator !=(CustomAttributeTypedArgument left, CustomAttributeTypedArgument right)
+    content.vb: Public Shared Operator <>(left As CustomAttributeTypedArgument, right As CustomAttributeTypedArgument) As Boolean
+    parameters:
+    - id: left
+      type: System.Reflection.CustomAttributeTypedArgument
+      description: The @'System.Reflection.CustomAttributeTypedArgument' structure to the left of the inequality operator.
+    - id: right
+      type: System.Reflection.CustomAttributeTypedArgument
+      description: The @'System.Reflection.CustomAttributeTypedArgument' structure to the right of the inequality operator.
+    return:
+      type: System.Boolean
+- uid: System.Reflection.CustomAttributeTypedArgument.#ctor(System.Type,System.Object)
+  id: '#ctor(System.Type,System.Object)'
+  parent: System.Reflection.CustomAttributeTypedArgument
+  href: System.Reflection.CustomAttributeTypedArgument.yml
+  name: CustomAttributeTypedArgument(Type, Object)
+  fullName: System.Reflection.CustomAttributeTypedArgument.CustomAttributeTypedArgument(System.Type, System.Object)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/CustomAttribute.cs
+    startLine: 812
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Initializes a new instance of the @'System.Reflection.CustomAttributeTypedArgument' class with the specified type and value.
+  syntax:
+    content: public CustomAttributeTypedArgument(Type argumentType, object value)
+    content.vb: Public Sub New(argumentType As Type, value As Object)
+    parameters:
+    - id: argumentType
+      type: System.Type
+      description: The type of the custom attribute argument.
+    - id: value
+      type: System.Object
+      description: The value of the custom attribute argument.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*argumentType* is null.'
+- uid: System.Reflection.CustomAttributeTypedArgument.#ctor(System.Object)
+  id: '#ctor(System.Object)'
+  parent: System.Reflection.CustomAttributeTypedArgument
+  href: System.Reflection.CustomAttributeTypedArgument.yml
+  name: CustomAttributeTypedArgument(Object)
+  fullName: System.Reflection.CustomAttributeTypedArgument.CustomAttributeTypedArgument(System.Object)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/CustomAttribute.cs
+    startLine: 822
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Initializes a new instance of the @'System.Reflection.CustomAttributeTypedArgument' class with the specified value.
+  syntax:
+    content: public CustomAttributeTypedArgument(object value)
+    content.vb: Public Sub New(value As Object)
+    parameters:
+    - id: value
+      type: System.Object
+      description: The value of the custom attribute argument.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*value* is null.'
+- uid: System.Reflection.CustomAttributeTypedArgument.ToString
+  id: ToString
+  parent: System.Reflection.CustomAttributeTypedArgument
+  href: System.Reflection.CustomAttributeTypedArgument.yml
+  name: ToString()
+  fullName: System.Reflection.CustomAttributeTypedArgument.ToString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/CustomAttribute.cs
+    startLine: 907
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Returns a string consisting of the argument name, the equal sign, and a string representation of the argument value.
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+  overridden: System.ValueType.ToString
+- uid: System.Reflection.CustomAttributeTypedArgument.GetHashCode
+  id: GetHashCode
+  parent: System.Reflection.CustomAttributeTypedArgument
+  href: System.Reflection.CustomAttributeTypedArgument.yml
+  name: GetHashCode()
+  fullName: System.Reflection.CustomAttributeTypedArgument.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/CustomAttribute.cs
+    startLine: 946
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+  overridden: System.ValueType.GetHashCode
+- uid: System.Reflection.CustomAttributeTypedArgument.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Reflection.CustomAttributeTypedArgument
+  href: System.Reflection.CustomAttributeTypedArgument.yml
+  name: Equals(Object)
+  fullName: System.Reflection.CustomAttributeTypedArgument.Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/CustomAttribute.cs
+    startLine: 950
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  syntax:
+    content: public override bool Equals(object obj)
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current instance.
+    return:
+      type: System.Boolean
+  overridden: System.ValueType.Equals(System.Object)
+- uid: System.Reflection.CustomAttributeTypedArgument.ArgumentType
+  id: ArgumentType
+  parent: System.Reflection.CustomAttributeTypedArgument
+  href: System.Reflection.CustomAttributeTypedArgument.yml
+  name: ArgumentType
+  fullName: System.Reflection.CustomAttributeTypedArgument.ArgumentType
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/CustomAttribute.cs
+    startLine: 957
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Gets the type of the argument or of the array argument element.
+  syntax:
+    content: public Type ArgumentType { get; }
+    content.vb: Public ReadOnly Property ArgumentType As Type
+    parameters: []
+    return:
+      type: System.Type
+- uid: System.Reflection.CustomAttributeTypedArgument.Value
+  id: Value
+  parent: System.Reflection.CustomAttributeTypedArgument
+  href: System.Reflection.CustomAttributeTypedArgument.yml
+  name: Value
+  fullName: System.Reflection.CustomAttributeTypedArgument.Value
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/CustomAttribute.cs
+    startLine: 964
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Gets the value of the argument for a simple argument or for an element of an array argument; gets a collection of values for an array argument.
+  syntax:
+    content: public object Value { get; }
+    content.vb: Public ReadOnly Property Value As Object
+    parameters: []
+    return:
+      type: System.Object
+references:
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Reflection.CustomAttributeTypedArgument
+  parent: System.Reflection
+  isExternal: false
+  href: System.Reflection.CustomAttributeTypedArgument.yml
+  name: CustomAttributeTypedArgument
+  fullName: System.Reflection.CustomAttributeTypedArgument
+  type: Struct
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  fullName: System.Type
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )

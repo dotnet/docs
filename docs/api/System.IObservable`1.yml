@@ -1,0 +1,123 @@
+items:
+- uid: System.IObservable`1
+  id: IObservable`1
+  parent: System
+  children:
+  - System.IObservable`1.Subscribe(System.IObserver{`0})
+  href: System.IObservable`1.yml
+  name: IObservable<T>
+  name.vb: IObservable(Of T)
+  fullName: System.IObservable<T>
+  fullName.vb: System.IObservable(Of T)
+  type: Interface
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/IObservable.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/IObservable.cs
+    startLine: 17
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Defines a provider for push-based notification.
+  syntax:
+    content: public interface IObservable<out T>
+    content.vb: Public Interface IObservable(Of Out T)
+    typeParameters:
+    - id: T
+- uid: System.IObservable`1.Subscribe(System.IObserver{`0})
+  id: Subscribe(System.IObserver{`0})
+  parent: System.IObservable`1
+  href: System.IObservable`1.yml
+  name: Subscribe(IObserver<T>)
+  name.vb: Subscribe(IObserver(Of T))
+  fullName: System.IObservable<T>.Subscribe(System.IObserver<T>)
+  fullName.vb: System.IObservable(Of T).Subscribe(System.IObserver(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IObservable.cs
+    startLine: 19
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Notifies the provider that an observer is to receive notifications.
+  syntax:
+    content: IDisposable Subscribe(IObserver<T> observer)
+    content.vb: Function Subscribe(observer As IObserver(Of T)) As IDisposable
+    parameters:
+    - id: observer
+      type: System.IObserver{{T}}
+      description: The object that is to receive notifications.
+    return:
+      type: System.IDisposable
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.IObserver{{T}}
+  parent: System
+  definition: System.IObserver`1
+  href: System.IObserver`1.yml
+  name: IObserver<T>
+  name.vb: IObserver(Of T)
+  fullName: System.IObserver<T>
+  fullName.vb: System.IObserver(Of T)
+  spec.csharp:
+  - uid: System.IObserver`1
+    name: IObserver
+    fullName: System.IObserver
+    href: System.IObserver`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IObserver`1
+    name: IObserver
+    fullName: System.IObserver
+    href: System.IObserver`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  fullName: System.IDisposable
+- uid: System.IObserver`1
+  parent: System
+  isExternal: true
+  name: IObserver<T>
+  name.vb: IObserver(Of T)
+  fullName: System.IObserver<T>
+  fullName.vb: System.IObserver(Of T)
+  spec.csharp:
+  - uid: System.IObserver`1
+    name: IObserver
+    fullName: System.IObserver
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IObserver`1
+    name: IObserver
+    fullName: System.IObserver
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )

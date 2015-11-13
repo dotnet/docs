@@ -1,0 +1,303 @@
+items:
+- uid: System.Collections.Concurrent
+  id: System.Collections.Concurrent
+  children:
+  - System.Collections.Concurrent.BlockingCollection`1
+  - System.Collections.Concurrent.ConcurrentBag`1
+  - System.Collections.Concurrent.ConcurrentDictionary`2
+  - System.Collections.Concurrent.ConcurrentQueue`1
+  - System.Collections.Concurrent.ConcurrentStack`1
+  - System.Collections.Concurrent.EnumerablePartitionerOptions
+  - System.Collections.Concurrent.IProducerConsumerCollection`1
+  - System.Collections.Concurrent.OrderablePartitioner`1
+  - System.Collections.Concurrent.Partitioner
+  - System.Collections.Concurrent.Partitioner`1
+  href: System.Collections.Concurrent.yml
+  name: System.Collections.Concurrent
+  fullName: System.Collections.Concurrent
+  type: Namespace
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Concurrent/PartitionerStatic.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Collections/Concurrent/PartitionerStatic.cs
+    startLine: 18
+  assemblies:
+  - mscorlib
+  summary: The System.Collections.Concurrent namespace provides several thread-safe collection classes that should be used in place of the corresponding types in the @'System.Collections' and @'System.Collections.Generic' namespaces whenever multiple threads are accessing the collection concurrently. However, members accessed through one of the interfaces the current collections implement, including extension methods, are not guaranteed to be thread safe and may need to be synchronized by the caller.
+references:
+- uid: System.Collections.Concurrent.ConcurrentStack`1
+  isExternal: false
+  href: System.Collections.Concurrent.ConcurrentStack`1.yml
+  name: ConcurrentStack<T>
+  name.vb: ConcurrentStack(Of T)
+  fullName: System.Collections.Concurrent.ConcurrentStack<T>
+  fullName.vb: System.Collections.Concurrent.ConcurrentStack(Of T)
+  type: Class
+  summary: Represents a thread-safe last-in, first-out collection of objects.
+  spec.csharp:
+  - uid: System.Collections.Concurrent.ConcurrentStack`1
+    name: ConcurrentStack
+    fullName: System.Collections.Concurrent.ConcurrentStack
+    href: System.Collections.Concurrent.ConcurrentStack`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Concurrent.ConcurrentStack`1
+    name: ConcurrentStack
+    fullName: System.Collections.Concurrent.ConcurrentStack
+    href: System.Collections.Concurrent.ConcurrentStack`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Concurrent.IProducerConsumerCollection`1
+  parent: System.Collections.Concurrent
+  isExternal: false
+  href: System.Collections.Concurrent.IProducerConsumerCollection`1.yml
+  name: IProducerConsumerCollection<T>
+  name.vb: IProducerConsumerCollection(Of T)
+  fullName: System.Collections.Concurrent.IProducerConsumerCollection<T>
+  fullName.vb: System.Collections.Concurrent.IProducerConsumerCollection(Of T)
+  type: Interface
+  summary: Defines methods to manipulate thread-safe collections intended for producer/consumer usage.
+  spec.csharp:
+  - uid: System.Collections.Concurrent.IProducerConsumerCollection`1
+    name: IProducerConsumerCollection
+    fullName: System.Collections.Concurrent.IProducerConsumerCollection
+    href: System.Collections.Concurrent.IProducerConsumerCollection`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Concurrent.IProducerConsumerCollection`1
+    name: IProducerConsumerCollection
+    fullName: System.Collections.Concurrent.IProducerConsumerCollection
+    href: System.Collections.Concurrent.IProducerConsumerCollection`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Concurrent.ConcurrentDictionary`2
+  isExternal: false
+  href: System.Collections.Concurrent.ConcurrentDictionary`2.yml
+  name: ConcurrentDictionary<TKey, TValue>
+  name.vb: ConcurrentDictionary(Of TKey, TValue)
+  fullName: System.Collections.Concurrent.ConcurrentDictionary<TKey, TValue>
+  fullName.vb: System.Collections.Concurrent.ConcurrentDictionary(Of TKey, TValue)
+  type: Class
+  summary: Represents a thread-safe collection of keys and values.
+  spec.csharp:
+  - uid: System.Collections.Concurrent.ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    fullName: System.Collections.Concurrent.ConcurrentDictionary
+    href: System.Collections.Concurrent.ConcurrentDictionary`2.yml
+  - name: <
+    fullName: <
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Concurrent.ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    fullName: System.Collections.Concurrent.ConcurrentDictionary
+    href: System.Collections.Concurrent.ConcurrentDictionary`2.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: )
+    fullName: )
+- uid: System.Collections.Concurrent.ConcurrentQueue`1
+  isExternal: false
+  href: System.Collections.Concurrent.ConcurrentQueue`1.yml
+  name: ConcurrentQueue<T>
+  name.vb: ConcurrentQueue(Of T)
+  fullName: System.Collections.Concurrent.ConcurrentQueue<T>
+  fullName.vb: System.Collections.Concurrent.ConcurrentQueue(Of T)
+  type: Class
+  summary: Represents a thread-safe first-in, first-out collection of objects.
+  spec.csharp:
+  - uid: System.Collections.Concurrent.ConcurrentQueue`1
+    name: ConcurrentQueue
+    fullName: System.Collections.Concurrent.ConcurrentQueue
+    href: System.Collections.Concurrent.ConcurrentQueue`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Concurrent.ConcurrentQueue`1
+    name: ConcurrentQueue
+    fullName: System.Collections.Concurrent.ConcurrentQueue
+    href: System.Collections.Concurrent.ConcurrentQueue`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Concurrent.Partitioner`1
+  parent: System.Collections.Concurrent
+  isExternal: true
+  name: Partitioner<TSource>
+  name.vb: Partitioner(Of TSource)
+  fullName: System.Collections.Concurrent.Partitioner<TSource>
+  fullName.vb: System.Collections.Concurrent.Partitioner(Of TSource)
+  spec.csharp:
+  - uid: System.Collections.Concurrent.Partitioner`1
+    name: Partitioner
+    fullName: System.Collections.Concurrent.Partitioner
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TSource
+    fullName: TSource
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Concurrent.Partitioner`1
+    name: Partitioner
+    fullName: System.Collections.Concurrent.Partitioner
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TSource
+    fullName: TSource
+  - name: )
+    fullName: )
+- uid: System.Collections.Concurrent.OrderablePartitioner`1
+  parent: System.Collections.Concurrent
+  isExternal: true
+  name: OrderablePartitioner<TSource>
+  name.vb: OrderablePartitioner(Of TSource)
+  fullName: System.Collections.Concurrent.OrderablePartitioner<TSource>
+  fullName.vb: System.Collections.Concurrent.OrderablePartitioner(Of TSource)
+  spec.csharp:
+  - uid: System.Collections.Concurrent.OrderablePartitioner`1
+    name: OrderablePartitioner
+    fullName: System.Collections.Concurrent.OrderablePartitioner
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TSource
+    fullName: TSource
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Concurrent.OrderablePartitioner`1
+    name: OrderablePartitioner
+    fullName: System.Collections.Concurrent.OrderablePartitioner
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TSource
+    fullName: TSource
+  - name: )
+    fullName: )
+- uid: System.Collections.Concurrent.EnumerablePartitionerOptions
+  parent: System.Collections.Concurrent
+  isExternal: false
+  href: System.Collections.Concurrent.EnumerablePartitionerOptions.yml
+  name: EnumerablePartitionerOptions
+  fullName: System.Collections.Concurrent.EnumerablePartitionerOptions
+  type: Enum
+- uid: System.Collections.Concurrent.Partitioner
+  isExternal: false
+  href: System.Collections.Concurrent.Partitioner.yml
+  name: Partitioner
+  fullName: System.Collections.Concurrent.Partitioner
+  type: Class
+  summary: Provides common partitioning strategies for arrays, lists, and enumerables.
+- uid: System.Collections.Concurrent.BlockingCollection`1
+  isExternal: false
+  href: System.Collections.Concurrent.BlockingCollection`1.yml
+  name: BlockingCollection<T>
+  name.vb: BlockingCollection(Of T)
+  fullName: System.Collections.Concurrent.BlockingCollection<T>
+  fullName.vb: System.Collections.Concurrent.BlockingCollection(Of T)
+  type: Class
+  summary: >-
+    Provides blocking and bounding capabilities for thread-safe collections that
+
+    implement @'System.Collections.Concurrent.IProducerConsumerCollection{T}'.
+  spec.csharp:
+  - uid: System.Collections.Concurrent.BlockingCollection`1
+    name: BlockingCollection
+    fullName: System.Collections.Concurrent.BlockingCollection
+    href: System.Collections.Concurrent.BlockingCollection`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Concurrent.BlockingCollection`1
+    name: BlockingCollection
+    fullName: System.Collections.Concurrent.BlockingCollection
+    href: System.Collections.Concurrent.BlockingCollection`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Concurrent.ConcurrentBag`1
+  isExternal: false
+  href: System.Collections.Concurrent.ConcurrentBag`1.yml
+  name: ConcurrentBag<T>
+  name.vb: ConcurrentBag(Of T)
+  fullName: System.Collections.Concurrent.ConcurrentBag<T>
+  fullName.vb: System.Collections.Concurrent.ConcurrentBag(Of T)
+  type: Class
+  summary: Represents an thread-safe, unordered collection of objects.
+  spec.csharp:
+  - uid: System.Collections.Concurrent.ConcurrentBag`1
+    name: ConcurrentBag
+    fullName: System.Collections.Concurrent.ConcurrentBag
+    href: System.Collections.Concurrent.ConcurrentBag`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Concurrent.ConcurrentBag`1
+    name: ConcurrentBag
+    fullName: System.Collections.Concurrent.ConcurrentBag
+    href: System.Collections.Concurrent.ConcurrentBag`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Concurrent
+  isExternal: false
+  name: System.Collections.Concurrent
+  fullName: System.Collections.Concurrent

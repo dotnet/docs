@@ -1,0 +1,388 @@
+items:
+- uid: System.Runtime.InteropServices.EXCEPINFO
+  id: EXCEPINFO
+  parent: System.Runtime.InteropServices
+  children:
+  - System.Runtime.InteropServices.EXCEPINFO.bstrDescription
+  - System.Runtime.InteropServices.EXCEPINFO.bstrHelpFile
+  - System.Runtime.InteropServices.EXCEPINFO.bstrSource
+  - System.Runtime.InteropServices.EXCEPINFO.dwHelpContext
+  - System.Runtime.InteropServices.EXCEPINFO.pfnDeferredFillIn
+  - System.Runtime.InteropServices.EXCEPINFO.pvReserved
+  - System.Runtime.InteropServices.EXCEPINFO.wCode
+  - System.Runtime.InteropServices.EXCEPINFO.wReserved
+  href: System.Runtime.InteropServices.EXCEPINFO.yml
+  name: EXCEPINFO
+  fullName: System.Runtime.InteropServices.EXCEPINFO
+  type: Struct
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeInfo.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeInfo.cs
+    startLine: 211
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Use @'System.Runtime.InteropServices.ComTypes.EXCEPINFO' instead.
+  syntax:
+    content: public struct EXCEPINFO
+    content.vb: Public Structure EXCEPINFO
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.Runtime.InteropServices.EXCEPINFO.wCode
+  id: wCode
+  parent: System.Runtime.InteropServices.EXCEPINFO
+  href: System.Runtime.InteropServices.EXCEPINFO.yml
+  name: wCode
+  fullName: System.Runtime.InteropServices.EXCEPINFO.wCode
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeInfo.cs
+    startLine: 215
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Represents an error code identifying the error.
+  syntax:
+    content: public short wCode
+    content.vb: Public wCode As Short
+- uid: System.Runtime.InteropServices.EXCEPINFO.wReserved
+  id: wReserved
+  parent: System.Runtime.InteropServices.EXCEPINFO
+  href: System.Runtime.InteropServices.EXCEPINFO.yml
+  name: wReserved
+  fullName: System.Runtime.InteropServices.EXCEPINFO.wReserved
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeInfo.cs
+    startLine: 216
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: This field is reserved; must be set to 0.
+  syntax:
+    content: public short wReserved
+    content.vb: Public wReserved As Short
+- uid: System.Runtime.InteropServices.EXCEPINFO.bstrSource
+  id: bstrSource
+  parent: System.Runtime.InteropServices.EXCEPINFO
+  href: System.Runtime.InteropServices.EXCEPINFO.yml
+  name: bstrSource
+  fullName: System.Runtime.InteropServices.EXCEPINFO.bstrSource
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeInfo.cs
+    startLine: 217
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates the name of the source of the exception. Typically, this is an application name.
+  syntax:
+    content: public string bstrSource
+    content.vb: Public bstrSource As String
+- uid: System.Runtime.InteropServices.EXCEPINFO.bstrDescription
+  id: bstrDescription
+  parent: System.Runtime.InteropServices.EXCEPINFO
+  href: System.Runtime.InteropServices.EXCEPINFO.yml
+  name: bstrDescription
+  fullName: System.Runtime.InteropServices.EXCEPINFO.bstrDescription
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeInfo.cs
+    startLine: 218
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Describes the error intended for the customer.
+  syntax:
+    content: public string bstrDescription
+    content.vb: Public bstrDescription As String
+- uid: System.Runtime.InteropServices.EXCEPINFO.bstrHelpFile
+  id: bstrHelpFile
+  parent: System.Runtime.InteropServices.EXCEPINFO
+  href: System.Runtime.InteropServices.EXCEPINFO.yml
+  name: bstrHelpFile
+  fullName: System.Runtime.InteropServices.EXCEPINFO.bstrHelpFile
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeInfo.cs
+    startLine: 219
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Contains the fully-qualified drive, path, and file name of a Help file with more information about the error.
+  syntax:
+    content: public string bstrHelpFile
+    content.vb: Public bstrHelpFile As String
+- uid: System.Runtime.InteropServices.EXCEPINFO.dwHelpContext
+  id: dwHelpContext
+  parent: System.Runtime.InteropServices.EXCEPINFO
+  href: System.Runtime.InteropServices.EXCEPINFO.yml
+  name: dwHelpContext
+  fullName: System.Runtime.InteropServices.EXCEPINFO.dwHelpContext
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeInfo.cs
+    startLine: 220
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates the Help context ID of the topic within the Help file.
+  syntax:
+    content: public int dwHelpContext
+    content.vb: Public dwHelpContext As Integer
+- uid: System.Runtime.InteropServices.EXCEPINFO.pvReserved
+  id: pvReserved
+  parent: System.Runtime.InteropServices.EXCEPINFO
+  href: System.Runtime.InteropServices.EXCEPINFO.yml
+  name: pvReserved
+  fullName: System.Runtime.InteropServices.EXCEPINFO.pvReserved
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeInfo.cs
+    startLine: 221
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: This field is reserved; must be set to null.
+  syntax:
+    content: public IntPtr pvReserved
+    content.vb: Public pvReserved As IntPtr
+- uid: System.Runtime.InteropServices.EXCEPINFO.pfnDeferredFillIn
+  id: pfnDeferredFillIn
+  parent: System.Runtime.InteropServices.EXCEPINFO
+  href: System.Runtime.InteropServices.EXCEPINFO.yml
+  name: pfnDeferredFillIn
+  fullName: System.Runtime.InteropServices.EXCEPINFO.pfnDeferredFillIn
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeInfo.cs
+    startLine: 222
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Represents a pointer to a function that takes an @'System.Runtime.InteropServices.EXCEPINFO' structure as an argument and returns an HRESULT value. If deferred fill-in is not desired, this field is set to null.
+  syntax:
+    content: public IntPtr pfnDeferredFillIn
+    content.vb: Public pfnDeferredFillIn As IntPtr
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

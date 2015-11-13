@@ -1,0 +1,550 @@
+items:
+- uid: System.Threading.LazyInitializer
+  id: LazyInitializer
+  parent: System.Threading
+  children:
+  - System.Threading.LazyInitializer.EnsureInitialized``1(``0@)
+  - System.Threading.LazyInitializer.EnsureInitialized``1(``0@,System.Boolean@,System.Object@)
+  - System.Threading.LazyInitializer.EnsureInitialized``1(``0@,System.Boolean@,System.Object@,System.Func{``0})
+  - System.Threading.LazyInitializer.EnsureInitialized``1(``0@,System.Func{``0})
+  href: System.Threading.LazyInitializer.yml
+  name: LazyInitializer
+  fullName: System.Threading.LazyInitializer
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Threading/LazyInitializer.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Threading/LazyInitializer.cs
+    startLine: 55
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Provides lazy initialization routines.
+  remarks: >-
+    These routines avoid needing to allocate a dedicated, lazy-initialization instance, instead using
+
+    references to ensure targets have been initialized as they are accessed.
+  syntax:
+    content: public class LazyInitializer
+    content.vb: Public Class LazyInitializer
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Threading.LazyInitializer.EnsureInitialized``1(``0@)
+  id: EnsureInitialized``1(``0@)
+  parent: System.Threading.LazyInitializer
+  href: System.Threading.LazyInitializer.yml
+  name: EnsureInitialized<T>(ref T)
+  name.vb: EnsureInitialized(Of T)(ByRef T)
+  fullName: System.Threading.LazyInitializer.EnsureInitialized<T>(ref T)
+  fullName.vb: System.Threading.LazyInitializer.EnsureInitialized(Of T)(ByRef T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/LazyInitializer.cs
+    startLine: 84
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Initializes a target reference type with the type's default constructor if it hasn't already been initialized.
+  remarks: >-
+    <para>
+
+    This method may only be used on reference types. To ensure initialization of value
+
+    types, see other overloads of EnsureInitialized.
+
+    </para>
+
+    <para>
+
+    This method may be used concurrently by multiple threads to initialize <paramref name="target" />.
+
+    In the event that multiple threads access this method concurrently, multiple instances of <typeparamref name="T" />
+
+    may be created, but only one will be stored into <paramref name="target" />. In such an occurrence, this method will not dispose of the
+
+    objects that were not stored.  If such objects must be disposed, it is up to the caller to determine
+
+    if an object was not used and to then dispose of the object appropriately.
+
+    </para>
+  syntax:
+    content: 'public static T EnsureInitialized<T>(ref T target)where T : class'
+    content.vb: Public Shared Function EnsureInitialized(Of T As Class)(ByRef target As T) As T
+    parameters:
+    - id: target
+      type: '{T}'
+      description: A reference of type *T* to initialize if it has not already been initialized.
+    typeParameters:
+    - id: T
+      description: The refence type of the reference to be initialized.
+    return:
+      type: '{T}'
+      description: The initialized reference of type <typeparamref name="T" />.
+  exceptions:
+  - type: System.MemberAccessException
+    description: Permissions to access the constructor of type *T* were missing.
+  - type: System.MissingMemberException
+    description: Type *T* does not have a default constructor.
+- uid: System.Threading.LazyInitializer.EnsureInitialized``1(``0@,System.Func{``0})
+  id: EnsureInitialized``1(``0@,System.Func{``0})
+  parent: System.Threading.LazyInitializer
+  href: System.Threading.LazyInitializer.yml
+  name: EnsureInitialized<T>(ref T, Func<T>)
+  name.vb: EnsureInitialized(Of T)(ByRef T, Func(Of T))
+  fullName: System.Threading.LazyInitializer.EnsureInitialized<T>(ref T, System.Func<T>)
+  fullName.vb: System.Threading.LazyInitializer.EnsureInitialized(Of T)(ByRef T, System.Func(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/LazyInitializer.cs
+    startLine: 123
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Initializes a target reference type by using a specified function if it hasn't already been initialized.
+  remarks: >-
+    <para>
+
+    This method may only be used on reference types, and <paramref name="valueFactory" /> may
+
+    not return a null reference (Nothing in Visual Basic). To ensure initialization of value types or
+
+    to allow null reference types, see other overloads of EnsureInitialized.
+
+    </para>
+
+    <para>
+
+    This method may be used concurrently by multiple threads to initialize <paramref name="target" />.
+
+    In the event that multiple threads access this method concurrently, multiple instances of <typeparamref name="T" />
+
+    may be created, but only one will be stored into <paramref name="target" />. In such an occurrence, this method will not dispose of the
+
+    objects that were not stored.  If such objects must be disposed, it is up to the caller to determine
+
+    if an object was not used and to then dispose of the object appropriately.
+
+    </para>
+  syntax:
+    content: 'public static T EnsureInitialized<T>(ref T target, Func<T> valueFactory)where T : class'
+    content.vb: Public Shared Function EnsureInitialized(Of T As Class)(ByRef target As T, valueFactory As Func(Of T)) As T
+    parameters:
+    - id: target
+      type: '{T}'
+      description: The reference of type *T* to initialize if it hasn't already been initialized.
+    - id: valueFactory
+      type: System.Func{{T}}
+      description: The function that is called to initialize the reference.
+    typeParameters:
+    - id: T
+      description: The reference type of the reference to be initialized.
+    return:
+      type: '{T}'
+      description: The initialized reference of type <typeparamref name="T" />.
+  exceptions:
+  - type: System.MissingMemberException
+    description: Type *T* does not have a default constructor.
+  - type: System.InvalidOperationException
+    description: '*valueFactory* returned null (Nothing in Visual Basic).'
+- uid: System.Threading.LazyInitializer.EnsureInitialized``1(``0@,System.Boolean@,System.Object@)
+  id: EnsureInitialized``1(``0@,System.Boolean@,System.Object@)
+  parent: System.Threading.LazyInitializer
+  href: System.Threading.LazyInitializer.yml
+  name: EnsureInitialized<T>(ref T, ref Boolean, ref Object)
+  name.vb: EnsureInitialized(Of T)(ByRef T, ByRef Boolean, ByRef Object)
+  fullName: System.Threading.LazyInitializer.EnsureInitialized<T>(ref T, ref System.Boolean, ref System.Object)
+  fullName.vb: System.Threading.LazyInitializer.EnsureInitialized(Of T)(ByRef T, ByRef System.Boolean, ByRef System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/LazyInitializer.cs
+    startLine: 167
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Initializes a target reference or value type with its default constructor if it hasn't already been initialized.
+  syntax:
+    content: public static T EnsureInitialized<T>(ref T target, ref bool initialized, ref object syncLock)
+    content.vb: Public Shared Function EnsureInitialized(Of T)(ByRef target As T, ByRef initialized As Boolean, ByRef syncLock As Object) As T
+    parameters:
+    - id: target
+      type: '{T}'
+      description: A reference or value of type *T* to initialize if it hasn't already been initialized.
+    - id: initialized
+      type: System.Boolean
+      description: A reference to a Boolean value that determines whether the target has already been initialized.
+    - id: syncLock
+      type: System.Object
+      description: A reference to an object used as the mutually exclusive lock for initializing *target*. If *syncLock* is null, a new object will be instantiated.
+    typeParameters:
+    - id: T
+      description: The type of the reference to be initialized.
+    return:
+      type: '{T}'
+      description: The initialized value of type <typeparamref name="T" />.
+  exceptions:
+  - type: System.MemberAccessException
+    description: Permissions to access the constructor of type *T* were missing.
+  - type: System.MissingMemberException
+    description: Type *T* does not have a default constructor.
+- uid: System.Threading.LazyInitializer.EnsureInitialized``1(``0@,System.Boolean@,System.Object@,System.Func{``0})
+  id: EnsureInitialized``1(``0@,System.Boolean@,System.Object@,System.Func{``0})
+  parent: System.Threading.LazyInitializer
+  href: System.Threading.LazyInitializer.yml
+  name: EnsureInitialized<T>(ref T, ref Boolean, ref Object, Func<T>)
+  name.vb: EnsureInitialized(Of T)(ByRef T, ByRef Boolean, ByRef Object, Func(Of T))
+  fullName: System.Threading.LazyInitializer.EnsureInitialized<T>(ref T, ref System.Boolean, ref System.Object, System.Func<T>)
+  fullName.vb: System.Threading.LazyInitializer.EnsureInitialized(Of T)(ByRef T, ByRef System.Boolean, ByRef System.Object, System.Func(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/LazyInitializer.cs
+    startLine: 192
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Initializes a target reference or value type by using a specified function if it hasn't already been initialized.
+  syntax:
+    content: public static T EnsureInitialized<T>(ref T target, ref bool initialized, ref object syncLock, Func<T> valueFactory)
+    content.vb: Public Shared Function EnsureInitialized(Of T)(ByRef target As T, ByRef initialized As Boolean, ByRef syncLock As Object, valueFactory As Func(Of T)) As T
+    parameters:
+    - id: target
+      type: '{T}'
+      description: A reference or value of type *T* to initialize if it hasn't already been initialized.
+    - id: initialized
+      type: System.Boolean
+      description: A reference to a Boolean value that determines whether the target has already been initialized.
+    - id: syncLock
+      type: System.Object
+      description: A reference to an object used as the mutually exclusive lock for initializing *target*. If *syncLock* is null, a new object will be instantiated.
+    - id: valueFactory
+      type: System.Func{{T}}
+      description: The function that is called to initialize the reference or value.
+    typeParameters:
+    - id: T
+      description: The type of the reference to be initialized.
+    return:
+      type: '{T}'
+      description: The initialized value of type <typeparamref name="T" />.
+  exceptions:
+  - type: System.MemberAccessException
+    description: Permissions to access the constructor of type *T* were missing.
+  - type: System.MissingMemberException
+    description: Type *T* does not have a default constructor.
+references:
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.MissingMemberException
+  parent: System
+  isExternal: false
+  href: System.MissingMemberException.yml
+  name: MissingMemberException
+  fullName: System.MissingMemberException
+  type: Class
+- uid: System.MemberAccessException
+  isExternal: false
+  href: System.MemberAccessException.yml
+  name: MemberAccessException
+  fullName: System.MemberAccessException
+  type: Class
+- uid: '{T}'
+  isExternal: false
+  name: T
+  fullName: T
+- uid: System.Func{T}
+- uid: System.InvalidOperationException
+- uid: System.Func{{T}}
+  parent: System
+  definition: System.Func`1
+  name: Func<T>
+  name.vb: Func(Of T)
+  fullName: System.Func<T>
+  fullName.vb: System.Func(Of T)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Func`1
+  parent: System
+  isExternal: true
+  name: Func<TResult>
+  name.vb: Func(Of TResult)
+  fullName: System.Func<TResult>
+  fullName.vb: System.Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean

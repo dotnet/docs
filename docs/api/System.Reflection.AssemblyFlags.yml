@@ -1,0 +1,140 @@
+items:
+- uid: System.Reflection.AssemblyFlags
+  id: AssemblyFlags
+  parent: System.Reflection
+  children:
+  - System.Reflection.AssemblyFlags.ContentTypeMask
+  - System.Reflection.AssemblyFlags.DisableJitCompileOptimizer
+  - System.Reflection.AssemblyFlags.EnableJitCompileTracking
+  - System.Reflection.AssemblyFlags.PublicKey
+  - System.Reflection.AssemblyFlags.Retargetable
+  - System.Reflection.AssemblyFlags.WindowsRuntime
+  href: System.Reflection.AssemblyFlags.yml
+  name: AssemblyFlags
+  fullName: System.Reflection.AssemblyFlags
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+    startLine: 190
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection
+  syntax:
+    content: public enum AssemblyFlags
+    content.vb: Public Enum AssemblyFlags
+- uid: System.Reflection.AssemblyFlags.PublicKey
+  id: PublicKey
+  parent: System.Reflection.AssemblyFlags
+  href: System.Reflection.AssemblyFlags.yml
+  name: PublicKey
+  fullName: System.Reflection.AssemblyFlags.PublicKey
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+    startLine: 197
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection
+  summary: >-
+    The assembly reference holds the full (unhashed) public key.
+
+    Not applicable on assembly definition.
+  syntax:
+    content: PublicKey = 1
+- uid: System.Reflection.AssemblyFlags.Retargetable
+  id: Retargetable
+  parent: System.Reflection.AssemblyFlags
+  href: System.Reflection.AssemblyFlags.yml
+  name: Retargetable
+  fullName: System.Reflection.AssemblyFlags.Retargetable
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+    startLine: 202
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection
+  summary: The implementation of the referenced assembly used at runtime is not expected to match the version seen at compile time.
+  syntax:
+    content: Retargetable = 256
+- uid: System.Reflection.AssemblyFlags.WindowsRuntime
+  id: WindowsRuntime
+  parent: System.Reflection.AssemblyFlags
+  href: System.Reflection.AssemblyFlags.yml
+  name: WindowsRuntime
+  fullName: System.Reflection.AssemblyFlags.WindowsRuntime
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+    startLine: 207
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection
+  summary: The assembly contains Windows Runtime code.
+  syntax:
+    content: WindowsRuntime = 512
+- uid: System.Reflection.AssemblyFlags.ContentTypeMask
+  id: ContentTypeMask
+  parent: System.Reflection.AssemblyFlags
+  href: System.Reflection.AssemblyFlags.yml
+  name: ContentTypeMask
+  fullName: System.Reflection.AssemblyFlags.ContentTypeMask
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+    startLine: 212
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection
+  summary: Content type mask. Masked bits correspond to values of @'System.Reflection.AssemblyContentType'.
+  syntax:
+    content: ContentTypeMask = 3584
+- uid: System.Reflection.AssemblyFlags.DisableJitCompileOptimizer
+  id: DisableJitCompileOptimizer
+  parent: System.Reflection.AssemblyFlags
+  href: System.Reflection.AssemblyFlags.yml
+  name: DisableJitCompileOptimizer
+  fullName: System.Reflection.AssemblyFlags.DisableJitCompileOptimizer
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+    startLine: 217
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection
+  summary: Specifies that just-in-time (JIT) compiler optimization is disabled for the assembly.
+  syntax:
+    content: DisableJitCompileOptimizer = 16384
+- uid: System.Reflection.AssemblyFlags.EnableJitCompileTracking
+  id: EnableJitCompileTracking
+  parent: System.Reflection.AssemblyFlags
+  href: System.Reflection.AssemblyFlags.yml
+  name: EnableJitCompileTracking
+  fullName: System.Reflection.AssemblyFlags.EnableJitCompileTracking
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+    startLine: 222
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection
+  summary: Specifies that just-in-time (JIT) compiler tracking is enabled for the assembly.
+  syntax:
+    content: EnableJitCompileTracking = 32768
+references:
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace
+- uid: System.Reflection.AssemblyContentType

@@ -1,0 +1,2349 @@
+items:
+- uid: System.Threading.Tasks.Dataflow.DataflowBlock
+  id: DataflowBlock
+  parent: System.Threading.Tasks.Dataflow
+  children:
+  - System.Threading.Tasks.Dataflow.DataflowBlock.AsObservable``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0})
+  - System.Threading.Tasks.Dataflow.DataflowBlock.AsObserver``1(System.Threading.Tasks.Dataflow.ITargetBlock{``0})
+  - System.Threading.Tasks.Dataflow.DataflowBlock.Choose``2(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Action{``0},System.Threading.Tasks.Dataflow.ISourceBlock{``1},System.Action{``1})
+  - System.Threading.Tasks.Dataflow.DataflowBlock.Choose``2(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Action{``0},System.Threading.Tasks.Dataflow.ISourceBlock{``1},System.Action{``1},System.Threading.Tasks.Dataflow.DataflowBlockOptions)
+  - System.Threading.Tasks.Dataflow.DataflowBlock.Choose``3(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Action{``0},System.Threading.Tasks.Dataflow.ISourceBlock{``1},System.Action{``1},System.Threading.Tasks.Dataflow.ISourceBlock{``2},System.Action{``2})
+  - System.Threading.Tasks.Dataflow.DataflowBlock.Choose``3(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Action{``0},System.Threading.Tasks.Dataflow.ISourceBlock{``1},System.Action{``1},System.Threading.Tasks.Dataflow.ISourceBlock{``2},System.Action{``2},System.Threading.Tasks.Dataflow.DataflowBlockOptions)
+  - System.Threading.Tasks.Dataflow.DataflowBlock.Encapsulate``2(System.Threading.Tasks.Dataflow.ITargetBlock{``0},System.Threading.Tasks.Dataflow.ISourceBlock{``1})
+  - System.Threading.Tasks.Dataflow.DataflowBlock.LinkTo``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Threading.Tasks.Dataflow.ITargetBlock{``0})
+  - System.Threading.Tasks.Dataflow.DataflowBlock.LinkTo``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Threading.Tasks.Dataflow.ITargetBlock{``0},System.Predicate{``0})
+  - System.Threading.Tasks.Dataflow.DataflowBlock.LinkTo``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Threading.Tasks.Dataflow.ITargetBlock{``0},System.Threading.Tasks.Dataflow.DataflowLinkOptions,System.Predicate{``0})
+  - System.Threading.Tasks.Dataflow.DataflowBlock.NullTarget``1
+  - System.Threading.Tasks.Dataflow.DataflowBlock.OutputAvailableAsync``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0})
+  - System.Threading.Tasks.Dataflow.DataflowBlock.OutputAvailableAsync``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Threading.CancellationToken)
+  - System.Threading.Tasks.Dataflow.DataflowBlock.Post``1(System.Threading.Tasks.Dataflow.ITargetBlock{``0},``0)
+  - System.Threading.Tasks.Dataflow.DataflowBlock.Receive``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0})
+  - System.Threading.Tasks.Dataflow.DataflowBlock.Receive``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Threading.CancellationToken)
+  - System.Threading.Tasks.Dataflow.DataflowBlock.Receive``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.TimeSpan)
+  - System.Threading.Tasks.Dataflow.DataflowBlock.Receive``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.TimeSpan,System.Threading.CancellationToken)
+  - System.Threading.Tasks.Dataflow.DataflowBlock.ReceiveAsync``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0})
+  - System.Threading.Tasks.Dataflow.DataflowBlock.ReceiveAsync``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Threading.CancellationToken)
+  - System.Threading.Tasks.Dataflow.DataflowBlock.ReceiveAsync``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.TimeSpan)
+  - System.Threading.Tasks.Dataflow.DataflowBlock.ReceiveAsync``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.TimeSpan,System.Threading.CancellationToken)
+  - System.Threading.Tasks.Dataflow.DataflowBlock.SendAsync``1(System.Threading.Tasks.Dataflow.ITargetBlock{``0},``0)
+  - System.Threading.Tasks.Dataflow.DataflowBlock.SendAsync``1(System.Threading.Tasks.Dataflow.ITargetBlock{``0},``0,System.Threading.CancellationToken)
+  - System.Threading.Tasks.Dataflow.DataflowBlock.TryReceive``1(System.Threading.Tasks.Dataflow.IReceivableSourceBlock{``0},``0@)
+  href: System.Threading.Tasks.Dataflow.DataflowBlock.yml
+  name: DataflowBlock
+  fullName: System.Threading.Tasks.Dataflow.DataflowBlock
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs
+    startLine: 28
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Provides a set of static (Shared in Visual Basic) methods for working with dataflow blocks.
+  syntax:
+    content: public class DataflowBlock
+    content.vb: Public Class DataflowBlock
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Threading.Tasks.Dataflow.DataflowBlock.LinkTo``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Threading.Tasks.Dataflow.ITargetBlock{``0})
+  id: LinkTo``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Threading.Tasks.Dataflow.ITargetBlock{``0})
+  parent: System.Threading.Tasks.Dataflow.DataflowBlock
+  href: System.Threading.Tasks.Dataflow.DataflowBlock.yml
+  name: LinkTo<TOutput>(ISourceBlock<TOutput>, ITargetBlock<TOutput>)
+  name.vb: LinkTo(Of TOutput)(ISourceBlock(Of TOutput), ITargetBlock(Of TOutput))
+  fullName: System.Threading.Tasks.Dataflow.DataflowBlock.LinkTo<TOutput>(System.Threading.Tasks.Dataflow.ISourceBlock<TOutput>, System.Threading.Tasks.Dataflow.ITargetBlock<TOutput>)
+  fullName.vb: System.Threading.Tasks.Dataflow.DataflowBlock.LinkTo(Of TOutput)(System.Threading.Tasks.Dataflow.ISourceBlock(Of TOutput), System.Threading.Tasks.Dataflow.ITargetBlock(Of TOutput))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs
+    startLine: 37
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Links the @'System.Threading.Tasks.Dataflow.ISourceBlock`1' to the specified @'System.Threading.Tasks.Dataflow.ITargetBlock`1'.
+  syntax:
+    content: public static IDisposable LinkTo<TOutput>(ISourceBlock<TOutput> source, ITargetBlock<TOutput> target)
+    content.vb: Public Shared Function LinkTo(Of TOutput)(source As ISourceBlock(Of TOutput), target As ITargetBlock(Of TOutput)) As IDisposable
+    parameters:
+    - id: source
+      type: System.Threading.Tasks.Dataflow.ISourceBlock{{TOutput}}
+      description: The source from which to link.
+    - id: target
+      type: System.Threading.Tasks.Dataflow.ITargetBlock{{TOutput}}
+      description: The @'System.Threading.Tasks.Dataflow.ITargetBlock`1' to which to connect the source.
+    typeParameters:
+    - id: TOutput
+    return:
+      type: System.IDisposable
+      description: An IDisposable that, upon calling Dispose, will unlink the source from the target.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *source* is null.-or-The *target* is null.
+- uid: System.Threading.Tasks.Dataflow.DataflowBlock.LinkTo``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Threading.Tasks.Dataflow.ITargetBlock{``0},System.Predicate{``0})
+  id: LinkTo``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Threading.Tasks.Dataflow.ITargetBlock{``0},System.Predicate{``0})
+  parent: System.Threading.Tasks.Dataflow.DataflowBlock
+  href: System.Threading.Tasks.Dataflow.DataflowBlock.yml
+  name: LinkTo<TOutput>(ISourceBlock<TOutput>, ITargetBlock<TOutput>, Predicate<TOutput>)
+  name.vb: LinkTo(Of TOutput)(ISourceBlock(Of TOutput), ITargetBlock(Of TOutput), Predicate(Of TOutput))
+  fullName: System.Threading.Tasks.Dataflow.DataflowBlock.LinkTo<TOutput>(System.Threading.Tasks.Dataflow.ISourceBlock<TOutput>, System.Threading.Tasks.Dataflow.ITargetBlock<TOutput>, System.Predicate<TOutput>)
+  fullName.vb: System.Threading.Tasks.Dataflow.DataflowBlock.LinkTo(Of TOutput)(System.Threading.Tasks.Dataflow.ISourceBlock(Of TOutput), System.Threading.Tasks.Dataflow.ITargetBlock(Of TOutput), System.Predicate(Of TOutput))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs
+    startLine: 59
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Links the @'System.Threading.Tasks.Dataflow.ISourceBlock`1' to the specified @'System.Threading.Tasks.Dataflow.ITargetBlock`1' using the specified filter.
+  syntax:
+    content: public static IDisposable LinkTo<TOutput>(ISourceBlock<TOutput> source, ITargetBlock<TOutput> target, Predicate<TOutput> predicate)
+    content.vb: Public Shared Function LinkTo(Of TOutput)(source As ISourceBlock(Of TOutput), target As ITargetBlock(Of TOutput), predicate As Predicate(Of TOutput)) As IDisposable
+    parameters:
+    - id: source
+      type: System.Threading.Tasks.Dataflow.ISourceBlock{{TOutput}}
+      description: The source from which to link.
+    - id: target
+      type: System.Threading.Tasks.Dataflow.ITargetBlock{{TOutput}}
+      description: The @'System.Threading.Tasks.Dataflow.ITargetBlock`1' to which to connect the source.
+    - id: predicate
+      type: System.Predicate{{TOutput}}
+      description: The filter a message must pass in order for it to propagate from the source to the target.
+    typeParameters:
+    - id: TOutput
+    return:
+      type: System.IDisposable
+      description: An IDisposable that, upon calling Dispose, will unlink the source from the target.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *source* is null.-or-The *target* is null.-or-The *predicate* is null.
+- uid: System.Threading.Tasks.Dataflow.DataflowBlock.LinkTo``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Threading.Tasks.Dataflow.ITargetBlock{``0},System.Threading.Tasks.Dataflow.DataflowLinkOptions,System.Predicate{``0})
+  id: LinkTo``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Threading.Tasks.Dataflow.ITargetBlock{``0},System.Threading.Tasks.Dataflow.DataflowLinkOptions,System.Predicate{``0})
+  parent: System.Threading.Tasks.Dataflow.DataflowBlock
+  href: System.Threading.Tasks.Dataflow.DataflowBlock.yml
+  name: LinkTo<TOutput>(ISourceBlock<TOutput>, ITargetBlock<TOutput>, DataflowLinkOptions, Predicate<TOutput>)
+  name.vb: LinkTo(Of TOutput)(ISourceBlock(Of TOutput), ITargetBlock(Of TOutput), DataflowLinkOptions, Predicate(Of TOutput))
+  fullName: System.Threading.Tasks.Dataflow.DataflowBlock.LinkTo<TOutput>(System.Threading.Tasks.Dataflow.ISourceBlock<TOutput>, System.Threading.Tasks.Dataflow.ITargetBlock<TOutput>, System.Threading.Tasks.Dataflow.DataflowLinkOptions, System.Predicate<TOutput>)
+  fullName.vb: System.Threading.Tasks.Dataflow.DataflowBlock.LinkTo(Of TOutput)(System.Threading.Tasks.Dataflow.ISourceBlock(Of TOutput), System.Threading.Tasks.Dataflow.ITargetBlock(Of TOutput), System.Threading.Tasks.Dataflow.DataflowLinkOptions, System.Predicate(Of TOutput))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs
+    startLine: 78
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Links the @'System.Threading.Tasks.Dataflow.ISourceBlock`1' to the specified @'System.Threading.Tasks.Dataflow.ITargetBlock`1' using the specified filter.
+  syntax:
+    content: public static IDisposable LinkTo<TOutput>(ISourceBlock<TOutput> source, ITargetBlock<TOutput> target, DataflowLinkOptions linkOptions, Predicate<TOutput> predicate)
+    content.vb: Public Shared Function LinkTo(Of TOutput)(source As ISourceBlock(Of TOutput), target As ITargetBlock(Of TOutput), linkOptions As DataflowLinkOptions, predicate As Predicate(Of TOutput)) As IDisposable
+    parameters:
+    - id: source
+      type: System.Threading.Tasks.Dataflow.ISourceBlock{{TOutput}}
+      description: The source from which to link.
+    - id: target
+      type: System.Threading.Tasks.Dataflow.ITargetBlock{{TOutput}}
+      description: The @'System.Threading.Tasks.Dataflow.ITargetBlock`1' to which to connect the source.
+    - id: linkOptions
+      type: System.Threading.Tasks.Dataflow.DataflowLinkOptions
+      description: One of the enumeration values that specifies how to configure a link between dataflow blocks.
+    - id: predicate
+      type: System.Predicate{{TOutput}}
+      description: The filter a message must pass in order for it to propagate from the source to the target.
+    typeParameters:
+    - id: TOutput
+    return:
+      type: System.IDisposable
+      description: An IDisposable that, upon calling Dispose, will unlink the source from the target.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *source* is null (Nothing in Visual Basic).-or-The *target* is null (Nothing in Visual Basic).-or-The *linkOptions* is null (Nothing in Visual Basic).-or-The *predicate* is null (Nothing in Visual Basic).
+- uid: System.Threading.Tasks.Dataflow.DataflowBlock.Post``1(System.Threading.Tasks.Dataflow.ITargetBlock{``0},``0)
+  id: Post``1(System.Threading.Tasks.Dataflow.ITargetBlock{``0},``0)
+  parent: System.Threading.Tasks.Dataflow.DataflowBlock
+  href: System.Threading.Tasks.Dataflow.DataflowBlock.yml
+  name: Post<TInput>(ITargetBlock<TInput>, TInput)
+  name.vb: Post(Of TInput)(ITargetBlock(Of TInput), TInput)
+  fullName: System.Threading.Tasks.Dataflow.DataflowBlock.Post<TInput>(System.Threading.Tasks.Dataflow.ITargetBlock<TInput>, TInput)
+  fullName.vb: System.Threading.Tasks.Dataflow.DataflowBlock.Post(Of TInput)(System.Threading.Tasks.Dataflow.ITargetBlock(Of TInput), TInput)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs
+    startLine: 276
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Posts an item to the @'System.Threading.Tasks.Dataflow.ITargetBlock`1'.
+  remarks: >-
+    This method will return once the target block has decided to accept or decline the item,
+
+    but unless otherwise dictated by special semantics of the target block, it does not wait
+
+    for the item to actually be processed (for example, @'System.Threading.Tasks.Dataflow.ActionBlock`1'
+
+    will return from Post as soon as it has stored the posted item into its input queue).  From the perspective
+
+    of the block's processing, Post is asynchronous. For target blocks that support postponing offered messages,
+
+    or for blocks that may do more processing in their Post implementation, consider using
+
+    @'System.Threading.Tasks.Dataflow.DataflowBlock.SendAsync',
+
+    which will return immediately and will enable the target to postpone the posted message and later consume it
+
+    after SendAsync returns.
+  syntax:
+    content: public static bool Post<TInput>(ITargetBlock<TInput> target, TInput item)
+    content.vb: Public Shared Function Post(Of TInput)(target As ITargetBlock(Of TInput), item As TInput) As Boolean
+    parameters:
+    - id: target
+      type: System.Threading.Tasks.Dataflow.ITargetBlock{{TInput}}
+      description: The target block.
+    - id: item
+      type: '{TInput}'
+      description: The item being offered to the target.
+    typeParameters:
+    - id: TInput
+      description: Specifies the type of data accepted by the target block.
+    return:
+      type: System.Boolean
+      description: true if the item was accepted by the target block; otherwise, false.
+- uid: System.Threading.Tasks.Dataflow.DataflowBlock.SendAsync``1(System.Threading.Tasks.Dataflow.ITargetBlock{``0},``0)
+  id: SendAsync``1(System.Threading.Tasks.Dataflow.ITargetBlock{``0},``0)
+  parent: System.Threading.Tasks.Dataflow.DataflowBlock
+  href: System.Threading.Tasks.Dataflow.DataflowBlock.yml
+  name: SendAsync<TInput>(ITargetBlock<TInput>, TInput)
+  name.vb: SendAsync(Of TInput)(ITargetBlock(Of TInput), TInput)
+  fullName: System.Threading.Tasks.Dataflow.DataflowBlock.SendAsync<TInput>(System.Threading.Tasks.Dataflow.ITargetBlock<TInput>, TInput)
+  fullName.vb: System.Threading.Tasks.Dataflow.DataflowBlock.SendAsync(Of TInput)(System.Threading.Tasks.Dataflow.ITargetBlock(Of TInput), TInput)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs
+    startLine: 297
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Asynchronously offers a message to the target message block, allowing for postponement.
+  syntax:
+    content: public static Task<bool> SendAsync<TInput>(ITargetBlock<TInput> target, TInput item)
+    content.vb: Public Shared Function SendAsync(Of TInput)(target As ITargetBlock(Of TInput), item As TInput) As Task(Of Boolean)
+    parameters:
+    - id: target
+      type: System.Threading.Tasks.Dataflow.ITargetBlock{{TInput}}
+      description: The target to which to post the data.
+    - id: item
+      type: '{TInput}'
+      description: The item being offered to the target.
+    typeParameters:
+    - id: TInput
+      description: Specifies the type of the data to post to the target.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: >-
+        A @'System.Threading.Tasks.Task`1' that represents the asynchronous send.  If the target
+
+        accepts and consumes the offered element during the call to SendAsync, upon return
+
+        from the call the resulting @'System.Threading.Tasks.Task`1' will be completed and its @'System.Threading.Tasks.Task`1.Result'
+
+        property will return true.  If the target declines the offered element during the call, upon return from the call the resulting @'System.Threading.Tasks.Task`1' will
+
+        be completed and its @'System.Threading.Tasks.Task`1.Result' property will return false. If the target
+
+        postpones the offered element, the element will be buffered until such time that the target consumes or releases it, at which
+
+        point the Task will complete, with its @'System.Threading.Tasks.Task`1.Result' indicating whether the message was consumed.  If the target
+
+        never attempts to consume or release the message, the returned task will never complete.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *target* is null.
+- uid: System.Threading.Tasks.Dataflow.DataflowBlock.SendAsync``1(System.Threading.Tasks.Dataflow.ITargetBlock{``0},``0,System.Threading.CancellationToken)
+  id: SendAsync``1(System.Threading.Tasks.Dataflow.ITargetBlock{``0},``0,System.Threading.CancellationToken)
+  parent: System.Threading.Tasks.Dataflow.DataflowBlock
+  href: System.Threading.Tasks.Dataflow.DataflowBlock.yml
+  name: SendAsync<TInput>(ITargetBlock<TInput>, TInput, CancellationToken)
+  name.vb: SendAsync(Of TInput)(ITargetBlock(Of TInput), TInput, CancellationToken)
+  fullName: System.Threading.Tasks.Dataflow.DataflowBlock.SendAsync<TInput>(System.Threading.Tasks.Dataflow.ITargetBlock<TInput>, TInput, System.Threading.CancellationToken)
+  fullName.vb: System.Threading.Tasks.Dataflow.DataflowBlock.SendAsync(Of TInput)(System.Threading.Tasks.Dataflow.ITargetBlock(Of TInput), TInput, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs
+    startLine: 324
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Asynchronously offers a message to the target message block, allowing for postponement.
+  syntax:
+    content: public static Task<bool> SendAsync<TInput>(ITargetBlock<TInput> target, TInput item, CancellationToken cancellationToken)
+    content.vb: Public Shared Function SendAsync(Of TInput)(target As ITargetBlock(Of TInput), item As TInput, cancellationToken As CancellationToken) As Task(Of Boolean)
+    parameters:
+    - id: target
+      type: System.Threading.Tasks.Dataflow.ITargetBlock{{TInput}}
+      description: The target to which to post the data.
+    - id: item
+      type: '{TInput}'
+      description: The item being offered to the target.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token with which to request cancellation of the send operation.
+    typeParameters:
+    - id: TInput
+      description: Specifies the type of the data to post to the target.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: >-
+        <para>
+
+        A @'System.Threading.Tasks.Task`1' that represents the asynchronous send.  If the target
+
+        accepts and consumes the offered element during the call to SendAsync, upon return
+
+        from the call the resulting @'System.Threading.Tasks.Task`1' will be completed and its @'System.Threading.Tasks.Task`1.Result'
+
+        property will return true.  If the target declines the offered element during the call, upon return from the call the resulting @'System.Threading.Tasks.Task`1' will
+
+        be completed and its @'System.Threading.Tasks.Task`1.Result' property will return false. If the target
+
+        postpones the offered element, the element will be buffered until such time that the target consumes or releases it, at which
+
+        point the Task will complete, with its @'System.Threading.Tasks.Task`1.Result' indicating whether the message was consumed.  If the target
+
+        never attempts to consume or release the message, the returned task will never complete.
+
+        </para>
+
+        <para>
+
+        If cancellation is requested before the target has successfully consumed the sent data,
+
+        the returned task will complete in the Canceled state and the data will no longer be available to the target.
+
+        </para>
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *target* is null (Nothing in Visual Basic).
+- uid: System.Threading.Tasks.Dataflow.DataflowBlock.TryReceive``1(System.Threading.Tasks.Dataflow.IReceivableSourceBlock{``0},``0@)
+  id: TryReceive``1(System.Threading.Tasks.Dataflow.IReceivableSourceBlock{``0},``0@)
+  parent: System.Threading.Tasks.Dataflow.DataflowBlock
+  href: System.Threading.Tasks.Dataflow.DataflowBlock.yml
+  name: TryReceive<TOutput>(IReceivableSourceBlock<TOutput>, out TOutput)
+  name.vb: TryReceive(Of TOutput)(IReceivableSourceBlock(Of TOutput), ByRef TOutput)
+  fullName: System.Threading.Tasks.Dataflow.DataflowBlock.TryReceive<TOutput>(System.Threading.Tasks.Dataflow.IReceivableSourceBlock<TOutput>, out TOutput)
+  fullName.vb: System.Threading.Tasks.Dataflow.DataflowBlock.TryReceive(Of TOutput)(System.Threading.Tasks.Dataflow.IReceivableSourceBlock(Of TOutput), ByRef TOutput)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs
+    startLine: 812
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Attempts to synchronously receive an item from the @'System.Threading.Tasks.Dataflow.ISourceBlock`1'.
+  remarks: >-
+    This method does not wait until the source has an item to provide.
+
+    It will return whether or not an element was available.
+  syntax:
+    content: public static bool TryReceive<TOutput>(IReceivableSourceBlock<TOutput> source, out TOutput item)
+    content.vb: Public Shared Function TryReceive(Of TOutput)(source As IReceivableSourceBlock(Of TOutput), ByRef item As TOutput) As Boolean
+    parameters:
+    - id: source
+      type: System.Threading.Tasks.Dataflow.IReceivableSourceBlock{{TOutput}}
+      description: The source from which to receive.
+    - id: item
+      type: '{TOutput}'
+      description: The item received from the source.
+    typeParameters:
+    - id: TOutput
+    return:
+      type: System.Boolean
+      description: true if an item could be received; otherwise, false.
+- uid: System.Threading.Tasks.Dataflow.DataflowBlock.ReceiveAsync``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0})
+  id: ReceiveAsync``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0})
+  parent: System.Threading.Tasks.Dataflow.DataflowBlock
+  href: System.Threading.Tasks.Dataflow.DataflowBlock.yml
+  name: ReceiveAsync<TOutput>(ISourceBlock<TOutput>)
+  name.vb: ReceiveAsync(Of TOutput)(ISourceBlock(Of TOutput))
+  fullName: System.Threading.Tasks.Dataflow.DataflowBlock.ReceiveAsync<TOutput>(System.Threading.Tasks.Dataflow.ISourceBlock<TOutput>)
+  fullName.vb: System.Threading.Tasks.Dataflow.DataflowBlock.ReceiveAsync(Of TOutput)(System.Threading.Tasks.Dataflow.ISourceBlock(Of TOutput))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs
+    startLine: 831
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Asynchronously receives a value from the specified source.
+  syntax:
+    content: public static Task<TOutput> ReceiveAsync<TOutput>(ISourceBlock<TOutput> source)
+    content.vb: Public Shared Function ReceiveAsync(Of TOutput)(source As ISourceBlock(Of TOutput)) As Task(Of TOutput)
+    parameters:
+    - id: source
+      type: System.Threading.Tasks.Dataflow.ISourceBlock{{TOutput}}
+      description: The source from which to asynchronously receive.
+    typeParameters:
+    - id: TOutput
+      description: Specifies the type of data contained in the source.
+    return:
+      type: System.Threading.Tasks.Task{{TOutput}}
+      description: >-
+        A @'System.Threading.Tasks.Task`1' that represents the asynchronous receive operation.  When an item is successfully received from the source,
+
+        the returned task will be completed and its @'System.Threading.Tasks.Task`1.Result' will return the received item.  If an item cannot be retrieved,
+
+        because the source is empty and completed, the returned task will be canceled.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *source* is null.
+- uid: System.Threading.Tasks.Dataflow.DataflowBlock.ReceiveAsync``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Threading.CancellationToken)
+  id: ReceiveAsync``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Threading.CancellationToken)
+  parent: System.Threading.Tasks.Dataflow.DataflowBlock
+  href: System.Threading.Tasks.Dataflow.DataflowBlock.yml
+  name: ReceiveAsync<TOutput>(ISourceBlock<TOutput>, CancellationToken)
+  name.vb: ReceiveAsync(Of TOutput)(ISourceBlock(Of TOutput), CancellationToken)
+  fullName: System.Threading.Tasks.Dataflow.DataflowBlock.ReceiveAsync<TOutput>(System.Threading.Tasks.Dataflow.ISourceBlock<TOutput>, System.Threading.CancellationToken)
+  fullName.vb: System.Threading.Tasks.Dataflow.DataflowBlock.ReceiveAsync(Of TOutput)(System.Threading.Tasks.Dataflow.ISourceBlock(Of TOutput), System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs
+    startLine: 848
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Asynchronously receives a value from the specified source.
+  syntax:
+    content: public static Task<TOutput> ReceiveAsync<TOutput>(ISourceBlock<TOutput> source, CancellationToken cancellationToken)
+    content.vb: Public Shared Function ReceiveAsync(Of TOutput)(source As ISourceBlock(Of TOutput), cancellationToken As CancellationToken) As Task(Of TOutput)
+    parameters:
+    - id: source
+      type: System.Threading.Tasks.Dataflow.ISourceBlock{{TOutput}}
+      description: The source from which to asynchronously receive.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The @'System.Threading.CancellationToken' which may be used to cancel the receive operation.
+    typeParameters:
+    - id: TOutput
+      description: Specifies the type of data contained in the source.
+    return:
+      type: System.Threading.Tasks.Task{{TOutput}}
+      description: >-
+        A @'System.Threading.Tasks.Task`1' that represents the asynchronous receive operation.  When an item is successfully received from the source,
+
+        the returned task will be completed and its @'System.Threading.Tasks.Task`1.Result' will return the received item.  If an item cannot be retrieved,
+
+        either because cancellation is requested or the source is empty and completed, the returned task will be canceled.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *source* is null.
+- uid: System.Threading.Tasks.Dataflow.DataflowBlock.ReceiveAsync``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.TimeSpan)
+  id: ReceiveAsync``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.TimeSpan)
+  parent: System.Threading.Tasks.Dataflow.DataflowBlock
+  href: System.Threading.Tasks.Dataflow.DataflowBlock.yml
+  name: ReceiveAsync<TOutput>(ISourceBlock<TOutput>, TimeSpan)
+  name.vb: ReceiveAsync(Of TOutput)(ISourceBlock(Of TOutput), TimeSpan)
+  fullName: System.Threading.Tasks.Dataflow.DataflowBlock.ReceiveAsync<TOutput>(System.Threading.Tasks.Dataflow.ISourceBlock<TOutput>, System.TimeSpan)
+  fullName.vb: System.Threading.Tasks.Dataflow.DataflowBlock.ReceiveAsync(Of TOutput)(System.Threading.Tasks.Dataflow.ISourceBlock(Of TOutput), System.TimeSpan)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs
+    startLine: 868
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Asynchronously receives a value from the specified source.
+  syntax:
+    content: public static Task<TOutput> ReceiveAsync<TOutput>(ISourceBlock<TOutput> source, TimeSpan timeout)
+    content.vb: Public Shared Function ReceiveAsync(Of TOutput)(source As ISourceBlock(Of TOutput), timeout As TimeSpan) As Task(Of TOutput)
+    parameters:
+    - id: source
+      type: System.Threading.Tasks.Dataflow.ISourceBlock{{TOutput}}
+      description: The source from which to asynchronously receive.
+    - id: timeout
+      type: System.TimeSpan
+      description: A @'System.TimeSpan' that represents the number of milliseconds to wait, or a TimeSpan that represents -1 milliseconds to wait indefinitely.
+    typeParameters:
+    - id: TOutput
+      description: Specifies the type of data contained in the source.
+    return:
+      type: System.Threading.Tasks.Task{{TOutput}}
+      description: >-
+        A @'System.Threading.Tasks.Task`1' that represents the asynchronous receive operation.  When an item is successfully received from the source,
+
+        the returned task will be completed and its @'System.Threading.Tasks.Task`1.Result' will return the received item.  If an item cannot be retrieved,
+
+        either because the timeout expires or the source is empty and completed, the returned task will be canceled.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *source* is null.
+  - type: System.ArgumentOutOfRangeException
+    description: '*timeout* is a negative number other than -1 milliseconds, which represents an infinite time-out-or-*timeout* is greater than @''System.Int32.MaxValue''.'
+- uid: System.Threading.Tasks.Dataflow.DataflowBlock.ReceiveAsync``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.TimeSpan,System.Threading.CancellationToken)
+  id: ReceiveAsync``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.TimeSpan,System.Threading.CancellationToken)
+  parent: System.Threading.Tasks.Dataflow.DataflowBlock
+  href: System.Threading.Tasks.Dataflow.DataflowBlock.yml
+  name: ReceiveAsync<TOutput>(ISourceBlock<TOutput>, TimeSpan, CancellationToken)
+  name.vb: ReceiveAsync(Of TOutput)(ISourceBlock(Of TOutput), TimeSpan, CancellationToken)
+  fullName: System.Threading.Tasks.Dataflow.DataflowBlock.ReceiveAsync<TOutput>(System.Threading.Tasks.Dataflow.ISourceBlock<TOutput>, System.TimeSpan, System.Threading.CancellationToken)
+  fullName.vb: System.Threading.Tasks.Dataflow.DataflowBlock.ReceiveAsync(Of TOutput)(System.Threading.Tasks.Dataflow.ISourceBlock(Of TOutput), System.TimeSpan, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs
+    startLine: 889
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Asynchronously receives a value from the specified source.
+  syntax:
+    content: public static Task<TOutput> ReceiveAsync<TOutput>(ISourceBlock<TOutput> source, TimeSpan timeout, CancellationToken cancellationToken)
+    content.vb: Public Shared Function ReceiveAsync(Of TOutput)(source As ISourceBlock(Of TOutput), timeout As TimeSpan, cancellationToken As CancellationToken) As Task(Of TOutput)
+    parameters:
+    - id: source
+      type: System.Threading.Tasks.Dataflow.ISourceBlock{{TOutput}}
+      description: The source from which to asynchronously receive.
+    - id: timeout
+      type: System.TimeSpan
+      description: A @'System.TimeSpan' that represents the number of milliseconds to wait, or a TimeSpan that represents -1 milliseconds to wait indefinitely.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The @'System.Threading.CancellationToken' which may be used to cancel the receive operation.
+    typeParameters:
+    - id: TOutput
+      description: Specifies the type of data contained in the source.
+    return:
+      type: System.Threading.Tasks.Task{{TOutput}}
+      description: >-
+        A @'System.Threading.Tasks.Task`1' that represents the asynchronous receive operation.  When an item is successfully received from the source,
+
+        the returned task will be completed and its @'System.Threading.Tasks.Task`1.Result' will return the received item.  If an item cannot be retrieved,
+
+        either because the timeout expires, cancellation is requested, or the source is empty and completed, the returned task will be canceled.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *source* is null.
+  - type: System.ArgumentOutOfRangeException
+    description: '*timeout* is a negative number other than -1 milliseconds, which represents an infinite time-out-or-*timeout* is greater than @''System.Int32.MaxValue''.'
+- uid: System.Threading.Tasks.Dataflow.DataflowBlock.Receive``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0})
+  id: Receive``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0})
+  parent: System.Threading.Tasks.Dataflow.DataflowBlock
+  href: System.Threading.Tasks.Dataflow.DataflowBlock.yml
+  name: Receive<TOutput>(ISourceBlock<TOutput>)
+  name.vb: Receive(Of TOutput)(ISourceBlock(Of TOutput))
+  fullName: System.Threading.Tasks.Dataflow.DataflowBlock.Receive<TOutput>(System.Threading.Tasks.Dataflow.ISourceBlock<TOutput>)
+  fullName.vb: System.Threading.Tasks.Dataflow.DataflowBlock.Receive(Of TOutput)(System.Threading.Tasks.Dataflow.ISourceBlock(Of TOutput))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs
+    startLine: 910
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Synchronously receives an item from the source.
+  syntax:
+    content: public static TOutput Receive<TOutput>(ISourceBlock<TOutput> source)
+    content.vb: Public Shared Function Receive(Of TOutput)(source As ISourceBlock(Of TOutput)) As TOutput
+    parameters:
+    - id: source
+      type: System.Threading.Tasks.Dataflow.ISourceBlock{{TOutput}}
+      description: The source from which to receive.
+    typeParameters:
+    - id: TOutput
+      description: Specifies the type of data contained in the source.
+    return:
+      type: '{TOutput}'
+      description: The received item.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *source* is null.
+  - type: System.InvalidOperationException
+    description: No item could be received from the source.
+- uid: System.Threading.Tasks.Dataflow.DataflowBlock.Receive``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Threading.CancellationToken)
+  id: Receive``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Threading.CancellationToken)
+  parent: System.Threading.Tasks.Dataflow.DataflowBlock
+  href: System.Threading.Tasks.Dataflow.DataflowBlock.yml
+  name: Receive<TOutput>(ISourceBlock<TOutput>, CancellationToken)
+  name.vb: Receive(Of TOutput)(ISourceBlock(Of TOutput), CancellationToken)
+  fullName: System.Threading.Tasks.Dataflow.DataflowBlock.Receive<TOutput>(System.Threading.Tasks.Dataflow.ISourceBlock<TOutput>, System.Threading.CancellationToken)
+  fullName.vb: System.Threading.Tasks.Dataflow.DataflowBlock.Receive(Of TOutput)(System.Threading.Tasks.Dataflow.ISourceBlock(Of TOutput), System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs
+    startLine: 928
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Synchronously receives an item from the source.
+  remarks: If the source successfully offered an item that was received by this operation, it will be returned, even if a concurrent cancellation request occurs.
+  syntax:
+    content: public static TOutput Receive<TOutput>(ISourceBlock<TOutput> source, CancellationToken cancellationToken)
+    content.vb: Public Shared Function Receive(Of TOutput)(source As ISourceBlock(Of TOutput), cancellationToken As CancellationToken) As TOutput
+    parameters:
+    - id: source
+      type: System.Threading.Tasks.Dataflow.ISourceBlock{{TOutput}}
+      description: The source from which to receive.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The @'System.Threading.CancellationToken' which may be used to cancel the receive operation.
+    typeParameters:
+    - id: TOutput
+      description: Specifies the type of data contained in the source.
+    return:
+      type: '{TOutput}'
+      description: The received item.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *source* is null.
+  - type: System.InvalidOperationException
+    description: No item could be received from the source.
+  - type: System.OperationCanceledException
+    description: The operation was canceled before an item was received from the source.
+- uid: System.Threading.Tasks.Dataflow.DataflowBlock.Receive``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.TimeSpan)
+  id: Receive``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.TimeSpan)
+  parent: System.Threading.Tasks.Dataflow.DataflowBlock
+  href: System.Threading.Tasks.Dataflow.DataflowBlock.yml
+  name: Receive<TOutput>(ISourceBlock<TOutput>, TimeSpan)
+  name.vb: Receive(Of TOutput)(ISourceBlock(Of TOutput), TimeSpan)
+  fullName: System.Threading.Tasks.Dataflow.DataflowBlock.Receive<TOutput>(System.Threading.Tasks.Dataflow.ISourceBlock<TOutput>, System.TimeSpan)
+  fullName.vb: System.Threading.Tasks.Dataflow.DataflowBlock.Receive(Of TOutput)(System.Threading.Tasks.Dataflow.ISourceBlock(Of TOutput), System.TimeSpan)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs
+    startLine: 949
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Synchronously receives an item from the source.
+  remarks: If the source successfully offered an item that was received by this operation, it will be returned, even if a concurrent timeout occurs.
+  syntax:
+    content: public static TOutput Receive<TOutput>(ISourceBlock<TOutput> source, TimeSpan timeout)
+    content.vb: Public Shared Function Receive(Of TOutput)(source As ISourceBlock(Of TOutput), timeout As TimeSpan) As TOutput
+    parameters:
+    - id: source
+      type: System.Threading.Tasks.Dataflow.ISourceBlock{{TOutput}}
+      description: The source from which to receive.
+    - id: timeout
+      type: System.TimeSpan
+      description: A @'System.TimeSpan' that represents the number of milliseconds to wait, or a TimeSpan that represents -1 milliseconds to wait indefinitely.
+    typeParameters:
+    - id: TOutput
+      description: Specifies the type of data contained in the source.
+    return:
+      type: '{TOutput}'
+      description: The received item.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*timeout* is a negative number other than -1 milliseconds, which represents an infinite time-out-or-*timeout* is greater than @''System.Int32.MaxValue''.'
+  - type: System.ArgumentNullException
+    description: The *source* is null.
+  - type: System.InvalidOperationException
+    description: No item could be received from the source.
+  - type: System.TimeoutException
+    description: The specified timeout expired before an item was received from the source.
+- uid: System.Threading.Tasks.Dataflow.DataflowBlock.Receive``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.TimeSpan,System.Threading.CancellationToken)
+  id: Receive``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.TimeSpan,System.Threading.CancellationToken)
+  parent: System.Threading.Tasks.Dataflow.DataflowBlock
+  href: System.Threading.Tasks.Dataflow.DataflowBlock.yml
+  name: Receive<TOutput>(ISourceBlock<TOutput>, TimeSpan, CancellationToken)
+  name.vb: Receive(Of TOutput)(ISourceBlock(Of TOutput), TimeSpan, CancellationToken)
+  fullName: System.Threading.Tasks.Dataflow.DataflowBlock.Receive<TOutput>(System.Threading.Tasks.Dataflow.ISourceBlock<TOutput>, System.TimeSpan, System.Threading.CancellationToken)
+  fullName.vb: System.Threading.Tasks.Dataflow.DataflowBlock.Receive(Of TOutput)(System.Threading.Tasks.Dataflow.ISourceBlock(Of TOutput), System.TimeSpan, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs
+    startLine: 972
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Synchronously receives an item from the source.
+  remarks: If the source successfully offered an item that was received by this operation, it will be returned, even if a concurrent timeout or cancellation request occurs.
+  syntax:
+    content: public static TOutput Receive<TOutput>(ISourceBlock<TOutput> source, TimeSpan timeout, CancellationToken cancellationToken)
+    content.vb: Public Shared Function Receive(Of TOutput)(source As ISourceBlock(Of TOutput), timeout As TimeSpan, cancellationToken As CancellationToken) As TOutput
+    parameters:
+    - id: source
+      type: System.Threading.Tasks.Dataflow.ISourceBlock{{TOutput}}
+      description: The source from which to receive.
+    - id: timeout
+      type: System.TimeSpan
+      description: A @'System.TimeSpan' that represents the number of milliseconds to wait, or a TimeSpan that represents -1 milliseconds to wait indefinitely.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The @'System.Threading.CancellationToken' which may be used to cancel the receive operation.
+    typeParameters:
+    - id: TOutput
+      description: Specifies the type of data contained in the source.
+    return:
+      type: '{TOutput}'
+      description: The received item.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *source* is null.
+  - type: System.ArgumentOutOfRangeException
+    description: '*timeout* is a negative number other than -1 milliseconds, which represents an infinite time-out-or-*timeout* is greater than @''System.Int32.MaxValue''.'
+  - type: System.InvalidOperationException
+    description: No item could be received from the source.
+  - type: System.TimeoutException
+    description: The specified timeout expired before an item was received from the source.
+  - type: System.OperationCanceledException
+    description: The operation was canceled before an item was received from the source.
+- uid: System.Threading.Tasks.Dataflow.DataflowBlock.OutputAvailableAsync``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0})
+  id: OutputAvailableAsync``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0})
+  parent: System.Threading.Tasks.Dataflow.DataflowBlock
+  href: System.Threading.Tasks.Dataflow.DataflowBlock.yml
+  name: OutputAvailableAsync<TOutput>(ISourceBlock<TOutput>)
+  name.vb: OutputAvailableAsync(Of TOutput)(ISourceBlock(Of TOutput))
+  fullName: System.Threading.Tasks.Dataflow.DataflowBlock.OutputAvailableAsync<TOutput>(System.Threading.Tasks.Dataflow.ISourceBlock<TOutput>)
+  fullName.vb: System.Threading.Tasks.Dataflow.DataflowBlock.OutputAvailableAsync(Of TOutput)(System.Threading.Tasks.Dataflow.ISourceBlock(Of TOutput))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs
+    startLine: 1445
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Provides a @'System.Threading.Tasks.Task`1' that asynchronously monitors the source for available output.
+  syntax:
+    content: public static Task<bool> OutputAvailableAsync<TOutput>(ISourceBlock<TOutput> source)
+    content.vb: Public Shared Function OutputAvailableAsync(Of TOutput)(source As ISourceBlock(Of TOutput)) As Task(Of Boolean)
+    parameters:
+    - id: source
+      type: System.Threading.Tasks.Dataflow.ISourceBlock{{TOutput}}
+      description: The source to monitor.
+    typeParameters:
+    - id: TOutput
+      description: Specifies the type of data contained in the source.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: >-
+        A @'System.Threading.Tasks.Task`1' that informs of whether and when
+
+        more output is available.  When the task completes, if its @'System.Threading.Tasks.Task`1.Result' is true, more output
+
+        is available in the source (though another consumer of the source may retrieve the data).
+
+        If it returns false, more output is not and will never be available, due to the source
+
+        completing prior to output being available.
+- uid: System.Threading.Tasks.Dataflow.DataflowBlock.OutputAvailableAsync``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Threading.CancellationToken)
+  id: OutputAvailableAsync``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Threading.CancellationToken)
+  parent: System.Threading.Tasks.Dataflow.DataflowBlock
+  href: System.Threading.Tasks.Dataflow.DataflowBlock.yml
+  name: OutputAvailableAsync<TOutput>(ISourceBlock<TOutput>, CancellationToken)
+  name.vb: OutputAvailableAsync(Of TOutput)(ISourceBlock(Of TOutput), CancellationToken)
+  fullName: System.Threading.Tasks.Dataflow.DataflowBlock.OutputAvailableAsync<TOutput>(System.Threading.Tasks.Dataflow.ISourceBlock<TOutput>, System.Threading.CancellationToken)
+  fullName.vb: System.Threading.Tasks.Dataflow.DataflowBlock.OutputAvailableAsync(Of TOutput)(System.Threading.Tasks.Dataflow.ISourceBlock(Of TOutput), System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs
+    startLine: 1464
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Provides a @'System.Threading.Tasks.Task`1' that asynchronously monitors the source for available output.
+  syntax:
+    content: public static Task<bool> OutputAvailableAsync<TOutput>(ISourceBlock<TOutput> source, CancellationToken cancellationToken)
+    content.vb: Public Shared Function OutputAvailableAsync(Of TOutput)(source As ISourceBlock(Of TOutput), cancellationToken As CancellationToken) As Task(Of Boolean)
+    parameters:
+    - id: source
+      type: System.Threading.Tasks.Dataflow.ISourceBlock{{TOutput}}
+      description: The source to monitor.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token with which to cancel the asynchronous operation.
+    typeParameters:
+    - id: TOutput
+      description: Specifies the type of data contained in the source.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: >-
+        A @'System.Threading.Tasks.Task`1' that informs of whether and when
+
+        more output is available.  When the task completes, if its @'System.Threading.Tasks.Task`1.Result' is true, more output
+
+        is available in the source (though another consumer of the source may retrieve the data).
+
+        If it returns false, more output is not and will never be available, due to the source
+
+        completing prior to output being available.
+- uid: System.Threading.Tasks.Dataflow.DataflowBlock.Encapsulate``2(System.Threading.Tasks.Dataflow.ITargetBlock{``0},System.Threading.Tasks.Dataflow.ISourceBlock{``1})
+  id: Encapsulate``2(System.Threading.Tasks.Dataflow.ITargetBlock{``0},System.Threading.Tasks.Dataflow.ISourceBlock{``1})
+  parent: System.Threading.Tasks.Dataflow.DataflowBlock
+  href: System.Threading.Tasks.Dataflow.DataflowBlock.yml
+  name: Encapsulate<TInput, TOutput>(ITargetBlock<TInput>, ISourceBlock<TOutput>)
+  name.vb: Encapsulate(Of TInput, TOutput)(ITargetBlock(Of TInput), ISourceBlock(Of TOutput))
+  fullName: System.Threading.Tasks.Dataflow.DataflowBlock.Encapsulate<TInput, TOutput>(System.Threading.Tasks.Dataflow.ITargetBlock<TInput>, System.Threading.Tasks.Dataflow.ISourceBlock<TOutput>)
+  fullName.vb: System.Threading.Tasks.Dataflow.DataflowBlock.Encapsulate(Of TInput, TOutput)(System.Threading.Tasks.Dataflow.ITargetBlock(Of TInput), System.Threading.Tasks.Dataflow.ISourceBlock(Of TOutput))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs
+    startLine: 1645
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Encapsulates a target and a source into a single propagator.
+  remarks: >-
+    This method does not in any way connect the target to the source. It creates a
+
+    propagator block whose target methods delegate to the specified target and whose
+
+    source methods delegate to the specified source.  Any connection between the target
+
+    and the source is left for the developer to explicitly provide.  The propagator's
+
+    @'System.Threading.Tasks.Dataflow.IDataflowBlock' implementation delegates to the specified source.
+  syntax:
+    content: public static IPropagatorBlock<TInput, TOutput> Encapsulate<TInput, TOutput>(ITargetBlock<TInput> target, ISourceBlock<TOutput> source)
+    content.vb: Public Shared Function Encapsulate(Of TInput, TOutput)(target As ITargetBlock(Of TInput), source As ISourceBlock(Of TOutput)) As IPropagatorBlock(Of TInput, TOutput)
+    parameters:
+    - id: target
+      type: System.Threading.Tasks.Dataflow.ITargetBlock{{TInput}}
+      description: The target to encapsulate.
+    - id: source
+      type: System.Threading.Tasks.Dataflow.ISourceBlock{{TOutput}}
+      description: The source to encapsulate.
+    typeParameters:
+    - id: TInput
+      description: Specifies the type of input expected by the target.
+    - id: TOutput
+      description: Specifies the type of output produced by the source.
+    return:
+      type: System.Threading.Tasks.Dataflow.IPropagatorBlock{{TInput},{TOutput}}
+      description: The encapsulated target and source.
+- uid: System.Threading.Tasks.Dataflow.DataflowBlock.Choose``2(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Action{``0},System.Threading.Tasks.Dataflow.ISourceBlock{``1},System.Action{``1})
+  id: Choose``2(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Action{``0},System.Threading.Tasks.Dataflow.ISourceBlock{``1},System.Action{``1})
+  parent: System.Threading.Tasks.Dataflow.DataflowBlock
+  href: System.Threading.Tasks.Dataflow.DataflowBlock.yml
+  name: Choose<T1, T2>(ISourceBlock<T1>, Action<T1>, ISourceBlock<T2>, Action<T2>)
+  name.vb: Choose(Of T1, T2)(ISourceBlock(Of T1), Action(Of T1), ISourceBlock(Of T2), Action(Of T2))
+  fullName: System.Threading.Tasks.Dataflow.DataflowBlock.Choose<T1, T2>(System.Threading.Tasks.Dataflow.ISourceBlock<T1>, System.Action<T1>, System.Threading.Tasks.Dataflow.ISourceBlock<T2>, System.Action<T2>)
+  fullName.vb: System.Threading.Tasks.Dataflow.DataflowBlock.Choose(Of T1, T2)(System.Threading.Tasks.Dataflow.ISourceBlock(Of T1), System.Action(Of T1), System.Threading.Tasks.Dataflow.ISourceBlock(Of T2), System.Action(Of T2))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs
+    startLine: 1805
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Monitors two dataflow sources, invoking the provided handler for whichever source makes data available first.
+  syntax:
+    content: public static Task<int> Choose<T1, T2>(ISourceBlock<T1> source1, Action<T1> action1, ISourceBlock<T2> source2, Action<T2> action2)
+    content.vb: Public Shared Function Choose(Of T1, T2)(source1 As ISourceBlock(Of T1), action1 As Action(Of T1), source2 As ISourceBlock(Of T2), action2 As Action(Of T2)) As Task(Of Integer)
+    parameters:
+    - id: source1
+      type: System.Threading.Tasks.Dataflow.ISourceBlock{{T1}}
+      description: The first source.
+    - id: action1
+      type: System.Action{{T1}}
+      description: The handler to execute on data from the first source.
+    - id: source2
+      type: System.Threading.Tasks.Dataflow.ISourceBlock{{T2}}
+      description: The second source.
+    - id: action2
+      type: System.Action{{T2}}
+      description: The handler to execute on data from the second source.
+    typeParameters:
+    - id: T1
+      description: Specifies type of data contained in the first source.
+    - id: T2
+      description: Specifies type of data contained in the second source.
+    return:
+      type: System.Threading.Tasks.Task{System.Int32}
+      description: >-
+        <para>
+
+        A @'System.Threading.Tasks.Task`1' that represents the asynchronous choice.
+
+        If both sources are completed prior to the choice completing,
+
+        the resulting task will be canceled. When one of the sources has data available and successfully propagates
+
+        it to the choice, the resulting task will complete when the handler completes: if the handler throws an exception,
+
+        the task will end in the @'System.Threading.Tasks.TaskStatus.Faulted' state containing the unhandled exception, otherwise the task
+
+        will end with its @'System.Threading.Tasks.Task`1.Result' set to either 0 or 1 to
+
+        represent the first or second source, respectively.
+
+        </para>
+
+        <para>
+
+        This method will only consume an element from one of the two data sources, never both.
+
+        </para>
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *source1* is null.-or-The *action1* is null.-or-The *source2* is null.-or-The *action2* is null.
+- uid: System.Threading.Tasks.Dataflow.DataflowBlock.Choose``2(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Action{``0},System.Threading.Tasks.Dataflow.ISourceBlock{``1},System.Action{``1},System.Threading.Tasks.Dataflow.DataflowBlockOptions)
+  id: Choose``2(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Action{``0},System.Threading.Tasks.Dataflow.ISourceBlock{``1},System.Action{``1},System.Threading.Tasks.Dataflow.DataflowBlockOptions)
+  parent: System.Threading.Tasks.Dataflow.DataflowBlock
+  href: System.Threading.Tasks.Dataflow.DataflowBlock.yml
+  name: Choose<T1, T2>(ISourceBlock<T1>, Action<T1>, ISourceBlock<T2>, Action<T2>, DataflowBlockOptions)
+  name.vb: Choose(Of T1, T2)(ISourceBlock(Of T1), Action(Of T1), ISourceBlock(Of T2), Action(Of T2), DataflowBlockOptions)
+  fullName: System.Threading.Tasks.Dataflow.DataflowBlock.Choose<T1, T2>(System.Threading.Tasks.Dataflow.ISourceBlock<T1>, System.Action<T1>, System.Threading.Tasks.Dataflow.ISourceBlock<T2>, System.Action<T2>, System.Threading.Tasks.Dataflow.DataflowBlockOptions)
+  fullName.vb: System.Threading.Tasks.Dataflow.DataflowBlock.Choose(Of T1, T2)(System.Threading.Tasks.Dataflow.ISourceBlock(Of T1), System.Action(Of T1), System.Threading.Tasks.Dataflow.ISourceBlock(Of T2), System.Action(Of T2), System.Threading.Tasks.Dataflow.DataflowBlockOptions)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs
+    startLine: 1843
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Monitors two dataflow sources, invoking the provided handler for whichever source makes data available first.
+  syntax:
+    content: public static Task<int> Choose<T1, T2>(ISourceBlock<T1> source1, Action<T1> action1, ISourceBlock<T2> source2, Action<T2> action2, DataflowBlockOptions dataflowBlockOptions)
+    content.vb: Public Shared Function Choose(Of T1, T2)(source1 As ISourceBlock(Of T1), action1 As Action(Of T1), source2 As ISourceBlock(Of T2), action2 As Action(Of T2), dataflowBlockOptions As DataflowBlockOptions) As Task(Of Integer)
+    parameters:
+    - id: source1
+      type: System.Threading.Tasks.Dataflow.ISourceBlock{{T1}}
+      description: The first source.
+    - id: action1
+      type: System.Action{{T1}}
+      description: The handler to execute on data from the first source.
+    - id: source2
+      type: System.Threading.Tasks.Dataflow.ISourceBlock{{T2}}
+      description: The second source.
+    - id: action2
+      type: System.Action{{T2}}
+      description: The handler to execute on data from the second source.
+    - id: dataflowBlockOptions
+      type: System.Threading.Tasks.Dataflow.DataflowBlockOptions
+      description: The options with which to configure this choice.
+    typeParameters:
+    - id: T1
+      description: Specifies type of data contained in the first source.
+    - id: T2
+      description: Specifies type of data contained in the second source.
+    return:
+      type: System.Threading.Tasks.Task{System.Int32}
+      description: >-
+        <para>
+
+        A @'System.Threading.Tasks.Task`1' that represents the asynchronous choice.
+
+        If both sources are completed prior to the choice completing, or if the CancellationToken
+
+        provided as part of <paramref name="dataflowBlockOptions" /> is canceled prior to the choice completing,
+
+        the resulting task will be canceled. When one of the sources has data available and successfully propagates
+
+        it to the choice, the resulting task will complete when the handler completes: if the handler throws an exception,
+
+        the task will end in the @'System.Threading.Tasks.TaskStatus.Faulted' state containing the unhandled exception, otherwise the task
+
+        will end with its @'System.Threading.Tasks.Task`1.Result' set to either 0 or 1 to
+
+        represent the first or second source, respectively.
+
+        </para>
+
+        <para>
+
+        This method will only consume an element from one of the two data sources, never both.
+
+        If cancellation is requested after an element has been received, the cancellation request will be ignored,
+
+        and the relevant handler will be allowed to execute.
+
+        </para>
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *source1* is null.-or-The *action1* is null.-or-The *source2* is null.-or-The *action2* is null.-or-The *dataflowBlockOptions* is null.
+- uid: System.Threading.Tasks.Dataflow.DataflowBlock.Choose``3(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Action{``0},System.Threading.Tasks.Dataflow.ISourceBlock{``1},System.Action{``1},System.Threading.Tasks.Dataflow.ISourceBlock{``2},System.Action{``2})
+  id: Choose``3(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Action{``0},System.Threading.Tasks.Dataflow.ISourceBlock{``1},System.Action{``1},System.Threading.Tasks.Dataflow.ISourceBlock{``2},System.Action{``2})
+  parent: System.Threading.Tasks.Dataflow.DataflowBlock
+  href: System.Threading.Tasks.Dataflow.DataflowBlock.yml
+  name: Choose<T1, T2, T3>(ISourceBlock<T1>, Action<T1>, ISourceBlock<T2>, Action<T2>, ISourceBlock<T3>, Action<T3>)
+  name.vb: Choose(Of T1, T2, T3)(ISourceBlock(Of T1), Action(Of T1), ISourceBlock(Of T2), Action(Of T2), ISourceBlock(Of T3), Action(Of T3))
+  fullName: System.Threading.Tasks.Dataflow.DataflowBlock.Choose<T1, T2, T3>(System.Threading.Tasks.Dataflow.ISourceBlock<T1>, System.Action<T1>, System.Threading.Tasks.Dataflow.ISourceBlock<T2>, System.Action<T2>, System.Threading.Tasks.Dataflow.ISourceBlock<T3>, System.Action<T3>)
+  fullName.vb: System.Threading.Tasks.Dataflow.DataflowBlock.Choose(Of T1, T2, T3)(System.Threading.Tasks.Dataflow.ISourceBlock(Of T1), System.Action(Of T1), System.Threading.Tasks.Dataflow.ISourceBlock(Of T2), System.Action(Of T2), System.Threading.Tasks.Dataflow.ISourceBlock(Of T3), System.Action(Of T3))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs
+    startLine: 1891
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Monitors three dataflow sources, invoking the provided handler for whichever source makes data available first.
+  syntax:
+    content: public static Task<int> Choose<T1, T2, T3>(ISourceBlock<T1> source1, Action<T1> action1, ISourceBlock<T2> source2, Action<T2> action2, ISourceBlock<T3> source3, Action<T3> action3)
+    content.vb: Public Shared Function Choose(Of T1, T2, T3)(source1 As ISourceBlock(Of T1), action1 As Action(Of T1), source2 As ISourceBlock(Of T2), action2 As Action(Of T2), source3 As ISourceBlock(Of T3), action3 As Action(Of T3)) As Task(Of Integer)
+    parameters:
+    - id: source1
+      type: System.Threading.Tasks.Dataflow.ISourceBlock{{T1}}
+      description: The first source.
+    - id: action1
+      type: System.Action{{T1}}
+      description: The handler to execute on data from the first source.
+    - id: source2
+      type: System.Threading.Tasks.Dataflow.ISourceBlock{{T2}}
+      description: The second source.
+    - id: action2
+      type: System.Action{{T2}}
+      description: The handler to execute on data from the second source.
+    - id: source3
+      type: System.Threading.Tasks.Dataflow.ISourceBlock{{T3}}
+      description: The third source.
+    - id: action3
+      type: System.Action{{T3}}
+      description: The handler to execute on data from the third source.
+    typeParameters:
+    - id: T1
+      description: Specifies type of data contained in the first source.
+    - id: T2
+      description: Specifies type of data contained in the second source.
+    - id: T3
+      description: Specifies type of data contained in the third source.
+    return:
+      type: System.Threading.Tasks.Task{System.Int32}
+      description: >-
+        <para>
+
+        A @'System.Threading.Tasks.Task`1' that represents the asynchronous choice.
+
+        If all sources are completed prior to the choice completing,
+
+        the resulting task will be canceled. When one of the sources has data available and successfully propagates
+
+        it to the choice, the resulting task will complete when the handler completes: if the handler throws an exception,
+
+        the task will end in the @'System.Threading.Tasks.TaskStatus.Faulted' state containing the unhandled exception, otherwise the task
+
+        will end with its @'System.Threading.Tasks.Task`1.Result' set to the 0-based index of the source.
+
+        </para>
+
+        <para>
+
+        This method will only consume an element from one of the data sources, never more than one.
+
+        </para>
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *source1* is null.-or-The *action1* is null.-or-The *source2* is null.-or-The *action2* is null.-or-The *source3* is null.-or-The *action3* is null.
+- uid: System.Threading.Tasks.Dataflow.DataflowBlock.Choose``3(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Action{``0},System.Threading.Tasks.Dataflow.ISourceBlock{``1},System.Action{``1},System.Threading.Tasks.Dataflow.ISourceBlock{``2},System.Action{``2},System.Threading.Tasks.Dataflow.DataflowBlockOptions)
+  id: Choose``3(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Action{``0},System.Threading.Tasks.Dataflow.ISourceBlock{``1},System.Action{``1},System.Threading.Tasks.Dataflow.ISourceBlock{``2},System.Action{``2},System.Threading.Tasks.Dataflow.DataflowBlockOptions)
+  parent: System.Threading.Tasks.Dataflow.DataflowBlock
+  href: System.Threading.Tasks.Dataflow.DataflowBlock.yml
+  name: Choose<T1, T2, T3>(ISourceBlock<T1>, Action<T1>, ISourceBlock<T2>, Action<T2>, ISourceBlock<T3>, Action<T3>, DataflowBlockOptions)
+  name.vb: Choose(Of T1, T2, T3)(ISourceBlock(Of T1), Action(Of T1), ISourceBlock(Of T2), Action(Of T2), ISourceBlock(Of T3), Action(Of T3), DataflowBlockOptions)
+  fullName: System.Threading.Tasks.Dataflow.DataflowBlock.Choose<T1, T2, T3>(System.Threading.Tasks.Dataflow.ISourceBlock<T1>, System.Action<T1>, System.Threading.Tasks.Dataflow.ISourceBlock<T2>, System.Action<T2>, System.Threading.Tasks.Dataflow.ISourceBlock<T3>, System.Action<T3>, System.Threading.Tasks.Dataflow.DataflowBlockOptions)
+  fullName.vb: System.Threading.Tasks.Dataflow.DataflowBlock.Choose(Of T1, T2, T3)(System.Threading.Tasks.Dataflow.ISourceBlock(Of T1), System.Action(Of T1), System.Threading.Tasks.Dataflow.ISourceBlock(Of T2), System.Action(Of T2), System.Threading.Tasks.Dataflow.ISourceBlock(Of T3), System.Action(Of T3), System.Threading.Tasks.Dataflow.DataflowBlockOptions)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs
+    startLine: 1934
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Monitors three dataflow sources, invoking the provided handler for whichever source makes data available first.
+  syntax:
+    content: public static Task<int> Choose<T1, T2, T3>(ISourceBlock<T1> source1, Action<T1> action1, ISourceBlock<T2> source2, Action<T2> action2, ISourceBlock<T3> source3, Action<T3> action3, DataflowBlockOptions dataflowBlockOptions)
+    content.vb: Public Shared Function Choose(Of T1, T2, T3)(source1 As ISourceBlock(Of T1), action1 As Action(Of T1), source2 As ISourceBlock(Of T2), action2 As Action(Of T2), source3 As ISourceBlock(Of T3), action3 As Action(Of T3), dataflowBlockOptions As DataflowBlockOptions) As Task(Of Integer)
+    parameters:
+    - id: source1
+      type: System.Threading.Tasks.Dataflow.ISourceBlock{{T1}}
+      description: The first source.
+    - id: action1
+      type: System.Action{{T1}}
+      description: The handler to execute on data from the first source.
+    - id: source2
+      type: System.Threading.Tasks.Dataflow.ISourceBlock{{T2}}
+      description: The second source.
+    - id: action2
+      type: System.Action{{T2}}
+      description: The handler to execute on data from the second source.
+    - id: source3
+      type: System.Threading.Tasks.Dataflow.ISourceBlock{{T3}}
+      description: The third source.
+    - id: action3
+      type: System.Action{{T3}}
+      description: The handler to execute on data from the third source.
+    - id: dataflowBlockOptions
+      type: System.Threading.Tasks.Dataflow.DataflowBlockOptions
+      description: The options with which to configure this choice.
+    typeParameters:
+    - id: T1
+      description: Specifies type of data contained in the first source.
+    - id: T2
+      description: Specifies type of data contained in the second source.
+    - id: T3
+      description: Specifies type of data contained in the third source.
+    return:
+      type: System.Threading.Tasks.Task{System.Int32}
+      description: >-
+        <para>
+
+        A @'System.Threading.Tasks.Task`1' that represents the asynchronous choice.
+
+        If all sources are completed prior to the choice completing, or if the CancellationToken
+
+        provided as part of <paramref name="dataflowBlockOptions" /> is canceled prior to the choice completing,
+
+        the resulting task will be canceled. When one of the sources has data available and successfully propagates
+
+        it to the choice, the resulting task will complete when the handler completes: if the handler throws an exception,
+
+        the task will end in the @'System.Threading.Tasks.TaskStatus.Faulted' state containing the unhandled exception, otherwise the task
+
+        will end with its @'System.Threading.Tasks.Task`1.Result' set to the 0-based index of the source.
+
+        </para>
+
+        <para>
+
+        This method will only consume an element from one of the data sources, never more than one.
+
+        If cancellation is requested after an element has been received, the cancellation request will be ignored,
+
+        and the relevant handler will be allowed to execute.
+
+        </para>
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *source1* is null.-or-The *action1* is null.-or-The *source2* is null.-or-The *action2* is null.-or-The *source3* is null.-or-The *action3* is null.-or-The *dataflowBlockOptions* is null.
+- uid: System.Threading.Tasks.Dataflow.DataflowBlock.AsObservable``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0})
+  id: AsObservable``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0})
+  parent: System.Threading.Tasks.Dataflow.DataflowBlock
+  href: System.Threading.Tasks.Dataflow.DataflowBlock.yml
+  name: AsObservable<TOutput>(ISourceBlock<TOutput>)
+  name.vb: AsObservable(Of TOutput)(ISourceBlock(Of TOutput))
+  fullName: System.Threading.Tasks.Dataflow.DataflowBlock.AsObservable<TOutput>(System.Threading.Tasks.Dataflow.ISourceBlock<TOutput>)
+  fullName.vb: System.Threading.Tasks.Dataflow.DataflowBlock.AsObservable(Of TOutput)(System.Threading.Tasks.Dataflow.ISourceBlock(Of TOutput))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs
+    startLine: 2313
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Creates a new @'System.IObservable`1' abstraction over the @'System.Threading.Tasks.Dataflow.ISourceBlock`1'.
+  syntax:
+    content: public static IObservable<TOutput> AsObservable<TOutput>(ISourceBlock<TOutput> source)
+    content.vb: Public Shared Function AsObservable(Of TOutput)(source As ISourceBlock(Of TOutput)) As IObservable(Of TOutput)
+    parameters:
+    - id: source
+      type: System.Threading.Tasks.Dataflow.ISourceBlock{{TOutput}}
+      description: The source to wrap.
+    typeParameters:
+    - id: TOutput
+      description: Specifies the type of data contained in the source.
+    return:
+      type: System.IObservable{{TOutput}}
+      description: An IObservable{TOutput} that enables observers to be subscribed to the source.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *source* is null.
+- uid: System.Threading.Tasks.Dataflow.DataflowBlock.AsObserver``1(System.Threading.Tasks.Dataflow.ITargetBlock{``0})
+  id: AsObserver``1(System.Threading.Tasks.Dataflow.ITargetBlock{``0})
+  parent: System.Threading.Tasks.Dataflow.DataflowBlock
+  href: System.Threading.Tasks.Dataflow.DataflowBlock.yml
+  name: AsObserver<TInput>(ITargetBlock<TInput>)
+  name.vb: AsObserver(Of TInput)(ITargetBlock(Of TInput))
+  fullName: System.Threading.Tasks.Dataflow.DataflowBlock.AsObserver<TInput>(System.Threading.Tasks.Dataflow.ITargetBlock<TInput>)
+  fullName.vb: System.Threading.Tasks.Dataflow.DataflowBlock.AsObserver(Of TInput)(System.Threading.Tasks.Dataflow.ITargetBlock(Of TInput))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs
+    startLine: 2690
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Creates a new @'System.IObserver`1' abstraction over the @'System.Threading.Tasks.Dataflow.ITargetBlock`1'.
+  syntax:
+    content: public static IObserver<TInput> AsObserver<TInput>(ITargetBlock<TInput> target)
+    content.vb: Public Shared Function AsObserver(Of TInput)(target As ITargetBlock(Of TInput)) As IObserver(Of TInput)
+    parameters:
+    - id: target
+      type: System.Threading.Tasks.Dataflow.ITargetBlock{{TInput}}
+      description: The target to wrap.
+    typeParameters:
+    - id: TInput
+      description: Specifies the type of input accepted by the target block.
+    return:
+      type: System.IObserver{{TInput}}
+      description: An observer that wraps the target block.
+- uid: System.Threading.Tasks.Dataflow.DataflowBlock.NullTarget``1
+  id: NullTarget``1
+  parent: System.Threading.Tasks.Dataflow.DataflowBlock
+  href: System.Threading.Tasks.Dataflow.DataflowBlock.yml
+  name: NullTarget<TInput>()
+  name.vb: NullTarget(Of TInput)()
+  fullName: System.Threading.Tasks.Dataflow.DataflowBlock.NullTarget<TInput>()
+  fullName.vb: System.Threading.Tasks.Dataflow.DataflowBlock.NullTarget(Of TInput)()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowBlock.cs
+    startLine: 2766
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Gets a target block that synchronously accepts all messages offered to it and drops them.
+  syntax:
+    content: public static ITargetBlock<TInput> NullTarget<TInput>()
+    content.vb: Public Shared Function NullTarget(Of TInput) As ITargetBlock(Of TInput)
+    typeParameters:
+    - id: TInput
+      description: The type of the messages this block can accept.
+    return:
+      type: System.Threading.Tasks.Dataflow.ITargetBlock{{TInput}}
+      description: A @'System.Threading.Tasks.Dataflow.ITargetBlock`1' that accepts and subsequently drops all offered messages.
+references:
+- uid: System.Threading.Tasks.Dataflow
+  isExternal: false
+  name: System.Threading.Tasks.Dataflow
+  fullName: System.Threading.Tasks.Dataflow
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Threading.Tasks.Dataflow.ISourceBlock`1
+  parent: System.Threading.Tasks.Dataflow
+  isExternal: false
+  href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  name: ISourceBlock<TOutput>
+  name.vb: ISourceBlock(Of TOutput)
+  fullName: System.Threading.Tasks.Dataflow.ISourceBlock<TOutput>
+  fullName.vb: System.Threading.Tasks.Dataflow.ISourceBlock(Of TOutput)
+  type: Interface
+  summary: Represents a dataflow block that is a source of data.
+  spec.csharp:
+  - uid: System.Threading.Tasks.Dataflow.ISourceBlock`1
+    name: ISourceBlock
+    fullName: System.Threading.Tasks.Dataflow.ISourceBlock
+    href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  - name: <
+    fullName: <
+  - name: TOutput
+    fullName: TOutput
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Dataflow.ISourceBlock`1
+    name: ISourceBlock
+    fullName: System.Threading.Tasks.Dataflow.ISourceBlock
+    href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TOutput
+    fullName: TOutput
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Dataflow.ITargetBlock`1
+  parent: System.Threading.Tasks.Dataflow
+  isExternal: false
+  href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  name: ITargetBlock<TInput>
+  name.vb: ITargetBlock(Of TInput)
+  fullName: System.Threading.Tasks.Dataflow.ITargetBlock<TInput>
+  fullName.vb: System.Threading.Tasks.Dataflow.ITargetBlock(Of TInput)
+  type: Interface
+  summary: Represents a dataflow block that is a target for data.
+  spec.csharp:
+  - uid: System.Threading.Tasks.Dataflow.ITargetBlock`1
+    name: ITargetBlock
+    fullName: System.Threading.Tasks.Dataflow.ITargetBlock
+    href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  - name: <
+    fullName: <
+  - name: TInput
+    fullName: TInput
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Dataflow.ITargetBlock`1
+    name: ITargetBlock
+    fullName: System.Threading.Tasks.Dataflow.ITargetBlock
+    href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TInput
+    fullName: TInput
+  - name: )
+    fullName: )
+- uid: System.ArgumentNullException
+- uid: System.Threading.Tasks.Dataflow.ISourceBlock{{TOutput}}
+  parent: System.Threading.Tasks.Dataflow
+  definition: System.Threading.Tasks.Dataflow.ISourceBlock`1
+  href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  name: ISourceBlock<TOutput>
+  name.vb: ISourceBlock(Of TOutput)
+  fullName: System.Threading.Tasks.Dataflow.ISourceBlock<TOutput>
+  fullName.vb: System.Threading.Tasks.Dataflow.ISourceBlock(Of TOutput)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Dataflow.ISourceBlock`1
+    name: ISourceBlock
+    fullName: System.Threading.Tasks.Dataflow.ISourceBlock
+    href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  - name: <
+    fullName: <
+  - name: TOutput
+    fullName: TOutput
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Dataflow.ISourceBlock`1
+    name: ISourceBlock
+    fullName: System.Threading.Tasks.Dataflow.ISourceBlock
+    href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TOutput
+    fullName: TOutput
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Dataflow.ITargetBlock{{TOutput}}
+  parent: System.Threading.Tasks.Dataflow
+  definition: System.Threading.Tasks.Dataflow.ITargetBlock`1
+  href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  name: ITargetBlock<TOutput>
+  name.vb: ITargetBlock(Of TOutput)
+  fullName: System.Threading.Tasks.Dataflow.ITargetBlock<TOutput>
+  fullName.vb: System.Threading.Tasks.Dataflow.ITargetBlock(Of TOutput)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Dataflow.ITargetBlock`1
+    name: ITargetBlock
+    fullName: System.Threading.Tasks.Dataflow.ITargetBlock
+    href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  - name: <
+    fullName: <
+  - name: TOutput
+    fullName: TOutput
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Dataflow.ITargetBlock`1
+    name: ITargetBlock
+    fullName: System.Threading.Tasks.Dataflow.ITargetBlock
+    href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TOutput
+    fullName: TOutput
+  - name: )
+    fullName: )
+- uid: System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  fullName: System.IDisposable
+- uid: System.Predicate{{TOutput}}
+  parent: System
+  definition: System.Predicate`1
+  name: Predicate<TOutput>
+  name.vb: Predicate(Of TOutput)
+  fullName: System.Predicate<TOutput>
+  fullName.vb: System.Predicate(Of TOutput)
+  spec.csharp:
+  - uid: System.Predicate`1
+    name: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TOutput
+    fullName: TOutput
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Predicate`1
+    name: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TOutput
+    fullName: TOutput
+  - name: )
+    fullName: )
+- uid: System.Predicate`1
+  parent: System
+  isExternal: true
+  name: Predicate<T>
+  name.vb: Predicate(Of T)
+  fullName: System.Predicate<T>
+  fullName.vb: System.Predicate(Of T)
+  spec.csharp:
+  - uid: System.Predicate`1
+    name: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Predicate`1
+    name: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Dataflow.DataflowLinkOptions
+  parent: System.Threading.Tasks.Dataflow
+  isExternal: false
+  href: System.Threading.Tasks.Dataflow.DataflowLinkOptions.yml
+  name: DataflowLinkOptions
+  fullName: System.Threading.Tasks.Dataflow.DataflowLinkOptions
+  type: Class
+  summary: Provides options used to configure a link between dataflow blocks.
+- uid: System.Threading.Tasks.Dataflow.ActionBlock`1
+  isExternal: false
+  href: System.Threading.Tasks.Dataflow.ActionBlock`1.yml
+  name: ActionBlock<TInput>
+  name.vb: ActionBlock(Of TInput)
+  fullName: System.Threading.Tasks.Dataflow.ActionBlock<TInput>
+  fullName.vb: System.Threading.Tasks.Dataflow.ActionBlock(Of TInput)
+  type: Class
+  summary: Provides a dataflow block that invokes a provided @'System.Action`1' delegate for every data element received.
+  spec.csharp:
+  - uid: System.Threading.Tasks.Dataflow.ActionBlock`1
+    name: ActionBlock
+    fullName: System.Threading.Tasks.Dataflow.ActionBlock
+    href: System.Threading.Tasks.Dataflow.ActionBlock`1.yml
+  - name: <
+    fullName: <
+  - name: TInput
+    fullName: TInput
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Dataflow.ActionBlock`1
+    name: ActionBlock
+    fullName: System.Threading.Tasks.Dataflow.ActionBlock
+    href: System.Threading.Tasks.Dataflow.ActionBlock`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TInput
+    fullName: TInput
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Dataflow.DataflowBlock.SendAsync
+- uid: System.Threading.Tasks.Dataflow.ITargetBlock{{TInput}}
+  parent: System.Threading.Tasks.Dataflow
+  definition: System.Threading.Tasks.Dataflow.ITargetBlock`1
+  href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  name: ITargetBlock<TInput>
+  name.vb: ITargetBlock(Of TInput)
+  fullName: System.Threading.Tasks.Dataflow.ITargetBlock<TInput>
+  fullName.vb: System.Threading.Tasks.Dataflow.ITargetBlock(Of TInput)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Dataflow.ITargetBlock`1
+    name: ITargetBlock
+    fullName: System.Threading.Tasks.Dataflow.ITargetBlock
+    href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  - name: <
+    fullName: <
+  - name: TInput
+    fullName: TInput
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Dataflow.ITargetBlock`1
+    name: ITargetBlock
+    fullName: System.Threading.Tasks.Dataflow.ITargetBlock
+    href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TInput
+    fullName: TInput
+  - name: )
+    fullName: )
+- uid: '{TInput}'
+  isExternal: false
+  name: TInput
+  fullName: TInput
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  name.vb: Task(Of TResult)
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1.Result
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Boolean>
+  name.vb: Task(Of Boolean)
+  fullName: System.Threading.Tasks.Task<System.Boolean>
+  fullName.vb: System.Threading.Tasks.Task(Of System.Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  type: Namespace
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Dataflow.IReceivableSourceBlock{{TOutput}}
+  parent: System.Threading.Tasks.Dataflow
+  definition: System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1
+  href: System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1.yml
+  name: IReceivableSourceBlock<TOutput>
+  name.vb: IReceivableSourceBlock(Of TOutput)
+  fullName: System.Threading.Tasks.Dataflow.IReceivableSourceBlock<TOutput>
+  fullName.vb: System.Threading.Tasks.Dataflow.IReceivableSourceBlock(Of TOutput)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1
+    name: IReceivableSourceBlock
+    fullName: System.Threading.Tasks.Dataflow.IReceivableSourceBlock
+    href: System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1.yml
+  - name: <
+    fullName: <
+  - name: TOutput
+    fullName: TOutput
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1
+    name: IReceivableSourceBlock
+    fullName: System.Threading.Tasks.Dataflow.IReceivableSourceBlock
+    href: System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TOutput
+    fullName: TOutput
+  - name: )
+    fullName: )
+- uid: '{TOutput}'
+  isExternal: false
+  name: TOutput
+  fullName: TOutput
+- uid: System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1
+  parent: System.Threading.Tasks.Dataflow
+  isExternal: false
+  href: System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1.yml
+  name: IReceivableSourceBlock<TOutput>
+  name.vb: IReceivableSourceBlock(Of TOutput)
+  fullName: System.Threading.Tasks.Dataflow.IReceivableSourceBlock<TOutput>
+  fullName.vb: System.Threading.Tasks.Dataflow.IReceivableSourceBlock(Of TOutput)
+  type: Interface
+  summary: Represents a dataflow block that supports receiving of messages without linking.
+  spec.csharp:
+  - uid: System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1
+    name: IReceivableSourceBlock
+    fullName: System.Threading.Tasks.Dataflow.IReceivableSourceBlock
+    href: System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1.yml
+  - name: <
+    fullName: <
+  - name: TOutput
+    fullName: TOutput
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1
+    name: IReceivableSourceBlock
+    fullName: System.Threading.Tasks.Dataflow.IReceivableSourceBlock
+    href: System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TOutput
+    fullName: TOutput
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{{TOutput}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<TOutput>
+  name.vb: Task(Of TOutput)
+  fullName: System.Threading.Tasks.Task<TOutput>
+  fullName.vb: System.Threading.Tasks.Task(Of TOutput)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TOutput
+    fullName: TOutput
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TOutput
+    fullName: TOutput
+  - name: )
+    fullName: )
+- uid: System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  fullName: System.TimeSpan
+- uid: System.ArgumentOutOfRangeException
+- uid: System.InvalidOperationException
+- uid: System.OperationCanceledException
+- uid: System.TimeoutException
+  parent: System
+  isExternal: true
+  name: TimeoutException
+  fullName: System.TimeoutException
+- uid: System.Threading.Tasks.Dataflow.IDataflowBlock
+  isExternal: false
+  href: System.Threading.Tasks.Dataflow.IDataflowBlock.yml
+  name: IDataflowBlock
+  fullName: System.Threading.Tasks.Dataflow.IDataflowBlock
+  type: Interface
+  summary: Represents a dataflow block.
+- uid: System.Threading.Tasks.Dataflow.IPropagatorBlock{{TInput},{TOutput}}
+  parent: System.Threading.Tasks.Dataflow
+  definition: System.Threading.Tasks.Dataflow.IPropagatorBlock`2
+  href: System.Threading.Tasks.Dataflow.IPropagatorBlock`2.yml
+  name: IPropagatorBlock<TInput, TOutput>
+  name.vb: IPropagatorBlock(Of TInput, TOutput)
+  fullName: System.Threading.Tasks.Dataflow.IPropagatorBlock<TInput, TOutput>
+  fullName.vb: System.Threading.Tasks.Dataflow.IPropagatorBlock(Of TInput, TOutput)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Dataflow.IPropagatorBlock`2
+    name: IPropagatorBlock
+    fullName: System.Threading.Tasks.Dataflow.IPropagatorBlock
+    href: System.Threading.Tasks.Dataflow.IPropagatorBlock`2.yml
+  - name: <
+    fullName: <
+  - name: TInput
+    fullName: TInput
+  - name: ', '
+    fullName: ', '
+  - name: TOutput
+    fullName: TOutput
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Dataflow.IPropagatorBlock`2
+    name: IPropagatorBlock
+    fullName: System.Threading.Tasks.Dataflow.IPropagatorBlock
+    href: System.Threading.Tasks.Dataflow.IPropagatorBlock`2.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TInput
+    fullName: TInput
+  - name: ', '
+    fullName: ', '
+  - name: TOutput
+    fullName: TOutput
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Dataflow.IPropagatorBlock`2
+  parent: System.Threading.Tasks.Dataflow
+  isExternal: false
+  href: System.Threading.Tasks.Dataflow.IPropagatorBlock`2.yml
+  name: IPropagatorBlock<TInput, TOutput>
+  name.vb: IPropagatorBlock(Of TInput, TOutput)
+  fullName: System.Threading.Tasks.Dataflow.IPropagatorBlock<TInput, TOutput>
+  fullName.vb: System.Threading.Tasks.Dataflow.IPropagatorBlock(Of TInput, TOutput)
+  type: Interface
+  summary: Represents a dataflow block that is both a target for data and a source of data.
+  spec.csharp:
+  - uid: System.Threading.Tasks.Dataflow.IPropagatorBlock`2
+    name: IPropagatorBlock
+    fullName: System.Threading.Tasks.Dataflow.IPropagatorBlock
+    href: System.Threading.Tasks.Dataflow.IPropagatorBlock`2.yml
+  - name: <
+    fullName: <
+  - name: TInput
+    fullName: TInput
+  - name: ', '
+    fullName: ', '
+  - name: TOutput
+    fullName: TOutput
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Dataflow.IPropagatorBlock`2
+    name: IPropagatorBlock
+    fullName: System.Threading.Tasks.Dataflow.IPropagatorBlock
+    href: System.Threading.Tasks.Dataflow.IPropagatorBlock`2.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TInput
+    fullName: TInput
+  - name: ', '
+    fullName: ', '
+  - name: TOutput
+    fullName: TOutput
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.TaskStatus.Faulted
+- uid: System.Threading.Tasks.Dataflow.ISourceBlock{{T1}}
+  parent: System.Threading.Tasks.Dataflow
+  definition: System.Threading.Tasks.Dataflow.ISourceBlock`1
+  href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  name: ISourceBlock<T1>
+  name.vb: ISourceBlock(Of T1)
+  fullName: System.Threading.Tasks.Dataflow.ISourceBlock<T1>
+  fullName.vb: System.Threading.Tasks.Dataflow.ISourceBlock(Of T1)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Dataflow.ISourceBlock`1
+    name: ISourceBlock
+    fullName: System.Threading.Tasks.Dataflow.ISourceBlock
+    href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  - name: <
+    fullName: <
+  - name: T1
+    fullName: T1
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Dataflow.ISourceBlock`1
+    name: ISourceBlock
+    fullName: System.Threading.Tasks.Dataflow.ISourceBlock
+    href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T1
+    fullName: T1
+  - name: )
+    fullName: )
+- uid: System.Action{{T1}}
+  parent: System
+  definition: System.Action`1
+  name: Action<T1>
+  name.vb: Action(Of T1)
+  fullName: System.Action<T1>
+  fullName.vb: System.Action(Of T1)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T1
+    fullName: T1
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T1
+    fullName: T1
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Dataflow.ISourceBlock{{T2}}
+  parent: System.Threading.Tasks.Dataflow
+  definition: System.Threading.Tasks.Dataflow.ISourceBlock`1
+  href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  name: ISourceBlock<T2>
+  name.vb: ISourceBlock(Of T2)
+  fullName: System.Threading.Tasks.Dataflow.ISourceBlock<T2>
+  fullName.vb: System.Threading.Tasks.Dataflow.ISourceBlock(Of T2)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Dataflow.ISourceBlock`1
+    name: ISourceBlock
+    fullName: System.Threading.Tasks.Dataflow.ISourceBlock
+    href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  - name: <
+    fullName: <
+  - name: T2
+    fullName: T2
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Dataflow.ISourceBlock`1
+    name: ISourceBlock
+    fullName: System.Threading.Tasks.Dataflow.ISourceBlock
+    href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T2
+    fullName: T2
+  - name: )
+    fullName: )
+- uid: System.Action{{T2}}
+  parent: System
+  definition: System.Action`1
+  name: Action<T2>
+  name.vb: Action(Of T2)
+  fullName: System.Action<T2>
+  fullName.vb: System.Action(Of T2)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T2
+    fullName: T2
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T2
+    fullName: T2
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Int32}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Int32>
+  name.vb: Task(Of Int32)
+  fullName: System.Threading.Tasks.Task<System.Int32>
+  fullName.vb: System.Threading.Tasks.Task(Of System.Int32)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Action`1
+  parent: System
+  isExternal: true
+  name: Action<T>
+  name.vb: Action(Of T)
+  fullName: System.Action<T>
+  fullName.vb: System.Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Dataflow.DataflowBlockOptions
+  parent: System.Threading.Tasks.Dataflow
+  isExternal: false
+  href: System.Threading.Tasks.Dataflow.DataflowBlockOptions.yml
+  name: DataflowBlockOptions
+  fullName: System.Threading.Tasks.Dataflow.DataflowBlockOptions
+  type: Class
+  summary: Provides options used to configure the processing performed by dataflow blocks.
+- uid: System.Threading.Tasks.Dataflow.ISourceBlock{{T3}}
+  parent: System.Threading.Tasks.Dataflow
+  definition: System.Threading.Tasks.Dataflow.ISourceBlock`1
+  href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  name: ISourceBlock<T3>
+  name.vb: ISourceBlock(Of T3)
+  fullName: System.Threading.Tasks.Dataflow.ISourceBlock<T3>
+  fullName.vb: System.Threading.Tasks.Dataflow.ISourceBlock(Of T3)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Dataflow.ISourceBlock`1
+    name: ISourceBlock
+    fullName: System.Threading.Tasks.Dataflow.ISourceBlock
+    href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  - name: <
+    fullName: <
+  - name: T3
+    fullName: T3
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Dataflow.ISourceBlock`1
+    name: ISourceBlock
+    fullName: System.Threading.Tasks.Dataflow.ISourceBlock
+    href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T3
+    fullName: T3
+  - name: )
+    fullName: )
+- uid: System.Action{{T3}}
+  parent: System
+  definition: System.Action`1
+  name: Action<T3>
+  name.vb: Action(Of T3)
+  fullName: System.Action<T3>
+  fullName.vb: System.Action(Of T3)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T3
+    fullName: T3
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T3
+    fullName: T3
+  - name: )
+    fullName: )
+- uid: System.IObservable`1
+  parent: System
+  isExternal: true
+  name: IObservable<T>
+  name.vb: IObservable(Of T)
+  fullName: System.IObservable<T>
+  fullName.vb: System.IObservable(Of T)
+  spec.csharp:
+  - uid: System.IObservable`1
+    name: IObservable
+    fullName: System.IObservable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IObservable`1
+    name: IObservable
+    fullName: System.IObservable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.IObservable{{TOutput}}
+  parent: System
+  definition: System.IObservable`1
+  name: IObservable<TOutput>
+  name.vb: IObservable(Of TOutput)
+  fullName: System.IObservable<TOutput>
+  fullName.vb: System.IObservable(Of TOutput)
+  spec.csharp:
+  - uid: System.IObservable`1
+    name: IObservable
+    fullName: System.IObservable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TOutput
+    fullName: TOutput
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IObservable`1
+    name: IObservable
+    fullName: System.IObservable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TOutput
+    fullName: TOutput
+  - name: )
+    fullName: )
+- uid: System.IObserver`1
+  parent: System
+  isExternal: true
+  name: IObserver<T>
+  name.vb: IObserver(Of T)
+  fullName: System.IObserver<T>
+  fullName.vb: System.IObserver(Of T)
+  spec.csharp:
+  - uid: System.IObserver`1
+    name: IObserver
+    fullName: System.IObserver
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IObserver`1
+    name: IObserver
+    fullName: System.IObserver
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.IObserver{{TInput}}
+  parent: System
+  definition: System.IObserver`1
+  name: IObserver<TInput>
+  name.vb: IObserver(Of TInput)
+  fullName: System.IObserver<TInput>
+  fullName.vb: System.IObserver(Of TInput)
+  spec.csharp:
+  - uid: System.IObserver`1
+    name: IObserver
+    fullName: System.IObserver
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TInput
+    fullName: TInput
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IObserver`1
+    name: IObserver
+    fullName: System.IObserver
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TInput
+    fullName: TInput
+  - name: )
+    fullName: )

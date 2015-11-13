@@ -1,0 +1,466 @@
+items:
+- uid: System.Diagnostics.SymbolStore.SymLanguageType
+  id: SymLanguageType
+  parent: System.Diagnostics.SymbolStore
+  children:
+  - System.Diagnostics.SymbolStore.SymLanguageType.Basic
+  - System.Diagnostics.SymbolStore.SymLanguageType.C
+  - System.Diagnostics.SymbolStore.SymLanguageType.Cobol
+  - System.Diagnostics.SymbolStore.SymLanguageType.CPlusPlus
+  - System.Diagnostics.SymbolStore.SymLanguageType.CSharp
+  - System.Diagnostics.SymbolStore.SymLanguageType.ILAssembly
+  - System.Diagnostics.SymbolStore.SymLanguageType.Java
+  - System.Diagnostics.SymbolStore.SymLanguageType.JScript
+  - System.Diagnostics.SymbolStore.SymLanguageType.MCPlusPlus
+  - System.Diagnostics.SymbolStore.SymLanguageType.Pascal
+  - System.Diagnostics.SymbolStore.SymLanguageType.SMC
+  href: System.Diagnostics.SymbolStore.SymLanguageType.yml
+  name: SymLanguageType
+  fullName: System.Diagnostics.SymbolStore.SymLanguageType
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Diagnostics/SymbolStore/SymLanguageType.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/SymLanguageType.cs
+    startLine: 16
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Holds the public GUIDs for language types to be used with the symbol store.
+  syntax:
+    content: public class SymLanguageType
+    content.vb: Public Class SymLanguageType
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Diagnostics.SymbolStore.SymLanguageType.C
+  id: C
+  parent: System.Diagnostics.SymbolStore.SymLanguageType
+  href: System.Diagnostics.SymbolStore.SymLanguageType.yml
+  name: C
+  fullName: System.Diagnostics.SymbolStore.SymLanguageType.C
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/SymLanguageType.cs
+    startLine: 19
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Specifies the GUID of the C language type to be used with the symbol store.
+  syntax:
+    content: public static readonly Guid C
+    content.vb: Public Shared ReadOnly C As Guid
+- uid: System.Diagnostics.SymbolStore.SymLanguageType.CPlusPlus
+  id: CPlusPlus
+  parent: System.Diagnostics.SymbolStore.SymLanguageType
+  href: System.Diagnostics.SymbolStore.SymLanguageType.yml
+  name: CPlusPlus
+  fullName: System.Diagnostics.SymbolStore.SymLanguageType.CPlusPlus
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/SymLanguageType.cs
+    startLine: 20
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Specifies the GUID of the C++ language type to be used with the symbol store.
+  syntax:
+    content: public static readonly Guid CPlusPlus
+    content.vb: Public Shared ReadOnly CPlusPlus As Guid
+- uid: System.Diagnostics.SymbolStore.SymLanguageType.CSharp
+  id: CSharp
+  parent: System.Diagnostics.SymbolStore.SymLanguageType
+  href: System.Diagnostics.SymbolStore.SymLanguageType.yml
+  name: CSharp
+  fullName: System.Diagnostics.SymbolStore.SymLanguageType.CSharp
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/SymLanguageType.cs
+    startLine: 22
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Specifies the GUID of the C# language type to be used with the symbol store.
+  syntax:
+    content: public static readonly Guid CSharp
+    content.vb: Public Shared ReadOnly CSharp As Guid
+- uid: System.Diagnostics.SymbolStore.SymLanguageType.Basic
+  id: Basic
+  parent: System.Diagnostics.SymbolStore.SymLanguageType
+  href: System.Diagnostics.SymbolStore.SymLanguageType.yml
+  name: Basic
+  fullName: System.Diagnostics.SymbolStore.SymLanguageType.Basic
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/SymLanguageType.cs
+    startLine: 24
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Specifies the GUID of the Basic language type to be used with the symbol store.
+  syntax:
+    content: public static readonly Guid Basic
+    content.vb: Public Shared ReadOnly Basic As Guid
+- uid: System.Diagnostics.SymbolStore.SymLanguageType.Java
+  id: Java
+  parent: System.Diagnostics.SymbolStore.SymLanguageType
+  href: System.Diagnostics.SymbolStore.SymLanguageType.yml
+  name: Java
+  fullName: System.Diagnostics.SymbolStore.SymLanguageType.Java
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/SymLanguageType.cs
+    startLine: 26
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Specifies the GUID of the Java language type to be used with the symbol store.
+  syntax:
+    content: public static readonly Guid Java
+    content.vb: Public Shared ReadOnly Java As Guid
+- uid: System.Diagnostics.SymbolStore.SymLanguageType.Cobol
+  id: Cobol
+  parent: System.Diagnostics.SymbolStore.SymLanguageType
+  href: System.Diagnostics.SymbolStore.SymLanguageType.yml
+  name: Cobol
+  fullName: System.Diagnostics.SymbolStore.SymLanguageType.Cobol
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/SymLanguageType.cs
+    startLine: 28
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Specifies the GUID of the Cobol language type to be used with the symbol store.
+  syntax:
+    content: public static readonly Guid Cobol
+    content.vb: Public Shared ReadOnly Cobol As Guid
+- uid: System.Diagnostics.SymbolStore.SymLanguageType.Pascal
+  id: Pascal
+  parent: System.Diagnostics.SymbolStore.SymLanguageType
+  href: System.Diagnostics.SymbolStore.SymLanguageType.yml
+  name: Pascal
+  fullName: System.Diagnostics.SymbolStore.SymLanguageType.Pascal
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/SymLanguageType.cs
+    startLine: 30
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Specifies the GUID of the Pascal language type to be used with the symbol store.
+  syntax:
+    content: public static readonly Guid Pascal
+    content.vb: Public Shared ReadOnly Pascal As Guid
+- uid: System.Diagnostics.SymbolStore.SymLanguageType.ILAssembly
+  id: ILAssembly
+  parent: System.Diagnostics.SymbolStore.SymLanguageType
+  href: System.Diagnostics.SymbolStore.SymLanguageType.yml
+  name: ILAssembly
+  fullName: System.Diagnostics.SymbolStore.SymLanguageType.ILAssembly
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/SymLanguageType.cs
+    startLine: 32
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Specifies the GUID of the ILAssembly language type to be used with the symbol store.
+  syntax:
+    content: public static readonly Guid ILAssembly
+    content.vb: Public Shared ReadOnly ILAssembly As Guid
+- uid: System.Diagnostics.SymbolStore.SymLanguageType.JScript
+  id: JScript
+  parent: System.Diagnostics.SymbolStore.SymLanguageType
+  href: System.Diagnostics.SymbolStore.SymLanguageType.yml
+  name: JScript
+  fullName: System.Diagnostics.SymbolStore.SymLanguageType.JScript
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/SymLanguageType.cs
+    startLine: 34
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Specifies the GUID of the JScript language type to be used with the symbol store.
+  syntax:
+    content: public static readonly Guid JScript
+    content.vb: Public Shared ReadOnly JScript As Guid
+- uid: System.Diagnostics.SymbolStore.SymLanguageType.SMC
+  id: SMC
+  parent: System.Diagnostics.SymbolStore.SymLanguageType
+  href: System.Diagnostics.SymbolStore.SymLanguageType.yml
+  name: SMC
+  fullName: System.Diagnostics.SymbolStore.SymLanguageType.SMC
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/SymLanguageType.cs
+    startLine: 36
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Specifies the GUID of the SMC language type to be used with the symbol store.
+  syntax:
+    content: public static readonly Guid SMC
+    content.vb: Public Shared ReadOnly SMC As Guid
+- uid: System.Diagnostics.SymbolStore.SymLanguageType.MCPlusPlus
+  id: MCPlusPlus
+  parent: System.Diagnostics.SymbolStore.SymLanguageType
+  href: System.Diagnostics.SymbolStore.SymLanguageType.yml
+  name: MCPlusPlus
+  fullName: System.Diagnostics.SymbolStore.SymLanguageType.MCPlusPlus
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/SymLanguageType.cs
+    startLine: 38
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Specifies the GUID of the C++ language type to be used with the symbol store.
+  syntax:
+    content: public static readonly Guid MCPlusPlus
+    content.vb: Public Shared ReadOnly MCPlusPlus As Guid
+references:
+- uid: System.Diagnostics.SymbolStore
+  isExternal: false
+  name: System.Diagnostics.SymbolStore
+  fullName: System.Diagnostics.SymbolStore
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

@@ -1,0 +1,100 @@
+items:
+- uid: System.Runtime.ConstrainedExecution.Consistency
+  id: Consistency
+  parent: System.Runtime.ConstrainedExecution
+  children:
+  - System.Runtime.ConstrainedExecution.Consistency.MayCorruptAppDomain
+  - System.Runtime.ConstrainedExecution.Consistency.MayCorruptInstance
+  - System.Runtime.ConstrainedExecution.Consistency.MayCorruptProcess
+  - System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState
+  href: System.Runtime.ConstrainedExecution.Consistency.yml
+  name: Consistency
+  fullName: System.Runtime.ConstrainedExecution.Consistency
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/Reliability/ReliabilityContractAttribute.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/Reliability/ReliabilityContractAttribute.cs
+    startLine: 28
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.ConstrainedExecution
+  summary: Specifies a reliability contract.
+  syntax:
+    content: public enum Consistency
+    content.vb: Public Enum Consistency
+- uid: System.Runtime.ConstrainedExecution.Consistency.MayCorruptProcess
+  id: MayCorruptProcess
+  parent: System.Runtime.ConstrainedExecution.Consistency
+  href: System.Runtime.ConstrainedExecution.Consistency.yml
+  name: MayCorruptProcess
+  fullName: System.Runtime.ConstrainedExecution.Consistency.MayCorruptProcess
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Reliability/ReliabilityContractAttribute.cs
+    startLine: 31
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.ConstrainedExecution
+  summary: In the face of exceptional conditions, the CLR makes no guarantees regarding state consistency; that is, the condition might corrupt the process.
+  syntax:
+    content: MayCorruptProcess = 0
+- uid: System.Runtime.ConstrainedExecution.Consistency.MayCorruptAppDomain
+  id: MayCorruptAppDomain
+  parent: System.Runtime.ConstrainedExecution.Consistency
+  href: System.Runtime.ConstrainedExecution.Consistency.yml
+  name: MayCorruptAppDomain
+  fullName: System.Runtime.ConstrainedExecution.Consistency.MayCorruptAppDomain
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Reliability/ReliabilityContractAttribute.cs
+    startLine: 32
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.ConstrainedExecution
+  summary: In the face of exceptional conditions, the common language runtime (CLR) makes no guarantees regarding state consistency in the current application domain.
+  syntax:
+    content: MayCorruptAppDomain = 1
+- uid: System.Runtime.ConstrainedExecution.Consistency.MayCorruptInstance
+  id: MayCorruptInstance
+  parent: System.Runtime.ConstrainedExecution.Consistency
+  href: System.Runtime.ConstrainedExecution.Consistency.yml
+  name: MayCorruptInstance
+  fullName: System.Runtime.ConstrainedExecution.Consistency.MayCorruptInstance
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Reliability/ReliabilityContractAttribute.cs
+    startLine: 33
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.ConstrainedExecution
+  summary: In the face of exceptional conditions, the method is guaranteed to limit state corruption to the current instance.
+  syntax:
+    content: MayCorruptInstance = 2
+- uid: System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState
+  id: WillNotCorruptState
+  parent: System.Runtime.ConstrainedExecution.Consistency
+  href: System.Runtime.ConstrainedExecution.Consistency.yml
+  name: WillNotCorruptState
+  fullName: System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Reliability/ReliabilityContractAttribute.cs
+    startLine: 34
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.ConstrainedExecution
+  summary: In the face of exceptional conditions, the method is guaranteed not to corrupt state.
+  syntax:
+    content: WillNotCorruptState = 3
+references:
+- uid: System.Runtime.ConstrainedExecution
+  isExternal: false
+  name: System.Runtime.ConstrainedExecution
+  fullName: System.Runtime.ConstrainedExecution

@@ -1,0 +1,190 @@
+items:
+- uid: System.Globalization.CompareOptions
+  id: CompareOptions
+  parent: System.Globalization
+  children:
+  - System.Globalization.CompareOptions.IgnoreCase
+  - System.Globalization.CompareOptions.IgnoreKanaType
+  - System.Globalization.CompareOptions.IgnoreNonSpace
+  - System.Globalization.CompareOptions.IgnoreSymbols
+  - System.Globalization.CompareOptions.IgnoreWidth
+  - System.Globalization.CompareOptions.None
+  - System.Globalization.CompareOptions.Ordinal
+  - System.Globalization.CompareOptions.OrdinalIgnoreCase
+  - System.Globalization.CompareOptions.StringSort
+  href: System.Globalization.CompareOptions.yml
+  name: CompareOptions
+  fullName: System.Globalization.CompareOptions
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Globalization/CompareInfo.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Globalization/CompareInfo.cs
+    startLine: 44
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Defines the string comparison options to use with @'System.Globalization.CompareInfo'.
+  syntax:
+    content: public enum CompareOptions
+    content.vb: Public Enum CompareOptions
+- uid: System.Globalization.CompareOptions.None
+  id: None
+  parent: System.Globalization.CompareOptions
+  href: System.Globalization.CompareOptions.yml
+  name: None
+  fullName: System.Globalization.CompareOptions.None
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CompareInfo.cs
+    startLine: 49
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Indicates the default option settings for string comparisons.
+  syntax:
+    content: None = 0
+- uid: System.Globalization.CompareOptions.IgnoreCase
+  id: IgnoreCase
+  parent: System.Globalization.CompareOptions
+  href: System.Globalization.CompareOptions.yml
+  name: IgnoreCase
+  fullName: System.Globalization.CompareOptions.IgnoreCase
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CompareInfo.cs
+    startLine: 50
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Indicates that the string comparison must ignore case.
+  syntax:
+    content: IgnoreCase = 1
+- uid: System.Globalization.CompareOptions.IgnoreNonSpace
+  id: IgnoreNonSpace
+  parent: System.Globalization.CompareOptions
+  href: System.Globalization.CompareOptions.yml
+  name: IgnoreNonSpace
+  fullName: System.Globalization.CompareOptions.IgnoreNonSpace
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CompareInfo.cs
+    startLine: 51
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Indicates that the string comparison must ignore nonspacing combining characters, such as diacritics. The Unicode Standard defines combining characters as characters that are combined with base characters to produce a new character. Nonspacing combining characters do not occupy a spacing position by themselves when rendered.
+  syntax:
+    content: IgnoreNonSpace = 2
+- uid: System.Globalization.CompareOptions.IgnoreSymbols
+  id: IgnoreSymbols
+  parent: System.Globalization.CompareOptions
+  href: System.Globalization.CompareOptions.yml
+  name: IgnoreSymbols
+  fullName: System.Globalization.CompareOptions.IgnoreSymbols
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CompareInfo.cs
+    startLine: 52
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Indicates that the string comparison must ignore symbols, such as white-space characters, punctuation, currency symbols, the percent sign, mathematical symbols, the ampersand, and so on.
+  syntax:
+    content: IgnoreSymbols = 4
+- uid: System.Globalization.CompareOptions.IgnoreKanaType
+  id: IgnoreKanaType
+  parent: System.Globalization.CompareOptions
+  href: System.Globalization.CompareOptions.yml
+  name: IgnoreKanaType
+  fullName: System.Globalization.CompareOptions.IgnoreKanaType
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CompareInfo.cs
+    startLine: 53
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Indicates that the string comparison must ignore the Kana type. Kana type refers to Japanese hiragana and katakana characters, which represent phonetic sounds in the Japanese language. Hiragana is used for native Japanese expressions and words, while katakana is used for words borrowed from other languages, such as "computer" or "Internet". A phonetic sound can be expressed in both hiragana and katakana. If this value is selected, the hiragana character for one sound is considered equal to the katakana character for the same sound.
+  syntax:
+    content: IgnoreKanaType = 8
+- uid: System.Globalization.CompareOptions.IgnoreWidth
+  id: IgnoreWidth
+  parent: System.Globalization.CompareOptions
+  href: System.Globalization.CompareOptions.yml
+  name: IgnoreWidth
+  fullName: System.Globalization.CompareOptions.IgnoreWidth
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CompareInfo.cs
+    startLine: 54
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Indicates that the string comparison must ignore the character width. For example, Japanese katakana characters can be written as full-width or half-width. If this value is selected, the katakana characters written as full-width are considered equal to the same characters written as half-width.
+  syntax:
+    content: IgnoreWidth = 16
+- uid: System.Globalization.CompareOptions.OrdinalIgnoreCase
+  id: OrdinalIgnoreCase
+  parent: System.Globalization.CompareOptions
+  href: System.Globalization.CompareOptions.yml
+  name: OrdinalIgnoreCase
+  fullName: System.Globalization.CompareOptions.OrdinalIgnoreCase
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CompareInfo.cs
+    startLine: 55
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: String comparison must ignore case, then perform an ordinal comparison. This technique is equivalent to converting the string to uppercase using the invariant culture and then performing an ordinal comparison on the result.
+  syntax:
+    content: OrdinalIgnoreCase = 268435456
+- uid: System.Globalization.CompareOptions.StringSort
+  id: StringSort
+  parent: System.Globalization.CompareOptions
+  href: System.Globalization.CompareOptions.yml
+  name: StringSort
+  fullName: System.Globalization.CompareOptions.StringSort
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CompareInfo.cs
+    startLine: 56
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Indicates that the string comparison must use the string sort algorithm. In a string sort, the hyphen and the apostrophe, as well as other nonalphanumeric symbols, come before alphanumeric characters.
+  syntax:
+    content: StringSort = 536870912
+- uid: System.Globalization.CompareOptions.Ordinal
+  id: Ordinal
+  parent: System.Globalization.CompareOptions
+  href: System.Globalization.CompareOptions.yml
+  name: Ordinal
+  fullName: System.Globalization.CompareOptions.Ordinal
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CompareInfo.cs
+    startLine: 57
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Indicates that the string comparison must use successive Unicode UTF-16 encoded values of the string (code unit by code unit comparison), leading to a fast comparison but one that is culture-insensitive. A string starting with a code unit XXXX16 comes before a string starting with YYYY16, if XXXX16 is less than YYYY16. This value cannot be combined with other @'System.Globalization.CompareOptions' values and must be used alone.
+  syntax:
+    content: Ordinal = 1073741824
+references:
+- uid: System.Globalization
+  isExternal: false
+  name: System.Globalization
+  fullName: System.Globalization

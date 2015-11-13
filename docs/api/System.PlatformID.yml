@@ -1,0 +1,153 @@
+items:
+- uid: System.PlatformID
+  id: PlatformID
+  parent: System
+  children:
+  - System.PlatformID.NokiaS60
+  - System.PlatformID.Unix
+  - System.PlatformID.Win32NT
+  - System.PlatformID.Win32S
+  - System.PlatformID.Win32Windows
+  - System.PlatformID.WinCE
+  - System.PlatformID.Xbox
+  href: System.PlatformID.yml
+  name: PlatformID
+  fullName: System.PlatformID
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/PlatformID.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/PlatformID.cs
+    startLine: 13
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Identifies the operating system, or platform, supported by an assembly.
+  syntax:
+    content: public enum PlatformID
+    content.vb: Public Enum PlatformID
+- uid: System.PlatformID.Win32S
+  id: Win32S
+  parent: System.PlatformID
+  href: System.PlatformID.yml
+  name: Win32S
+  fullName: System.PlatformID.Win32S
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/PlatformID.cs
+    startLine: 17
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The operating system is Win32s. Win32s is a layer that runs on 16-bit versions of Windows to provide access to 32-bit applications.
+  syntax:
+    content: Win32S = 0
+- uid: System.PlatformID.Win32Windows
+  id: Win32Windows
+  parent: System.PlatformID
+  href: System.PlatformID.yml
+  name: Win32Windows
+  fullName: System.PlatformID.Win32Windows
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/PlatformID.cs
+    startLine: 18
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The operating system is Windows 95 or Windows 98.
+  syntax:
+    content: Win32Windows = 1
+- uid: System.PlatformID.Win32NT
+  id: Win32NT
+  parent: System.PlatformID
+  href: System.PlatformID.yml
+  name: Win32NT
+  fullName: System.PlatformID.Win32NT
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/PlatformID.cs
+    startLine: 19
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The operating system is Windows NT or later.
+  syntax:
+    content: Win32NT = 2
+- uid: System.PlatformID.WinCE
+  id: WinCE
+  parent: System.PlatformID
+  href: System.PlatformID.yml
+  name: WinCE
+  fullName: System.PlatformID.WinCE
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/PlatformID.cs
+    startLine: 20
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The operating system is Windows CE.
+  syntax:
+    content: WinCE = 3
+- uid: System.PlatformID.Unix
+  id: Unix
+  parent: System.PlatformID
+  href: System.PlatformID.yml
+  name: Unix
+  fullName: System.PlatformID.Unix
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/PlatformID.cs
+    startLine: 21
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The operating system is Unix.
+  syntax:
+    content: Unix = 4
+- uid: System.PlatformID.Xbox
+  id: Xbox
+  parent: System.PlatformID
+  href: System.PlatformID.yml
+  name: Xbox
+  fullName: System.PlatformID.Xbox
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/PlatformID.cs
+    startLine: 22
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The development platform is Xbox 360.
+  syntax:
+    content: Xbox = 5
+- uid: System.PlatformID.NokiaS60
+  id: NokiaS60
+  parent: System.PlatformID
+  href: System.PlatformID.yml
+  name: NokiaS60
+  fullName: System.PlatformID.NokiaS60
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/PlatformID.cs
+    startLine: 26
+  assemblies:
+  - mscorlib
+  namespace: System
+  syntax:
+    content: NokiaS60 = 6
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

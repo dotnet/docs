@@ -1,0 +1,136 @@
+items:
+- uid: System.StringComparison
+  id: StringComparison
+  parent: System
+  children:
+  - System.StringComparison.CurrentCulture
+  - System.StringComparison.CurrentCultureIgnoreCase
+  - System.StringComparison.InvariantCulture
+  - System.StringComparison.InvariantCultureIgnoreCase
+  - System.StringComparison.Ordinal
+  - System.StringComparison.OrdinalIgnoreCase
+  href: System.StringComparison.yml
+  name: StringComparison
+  fullName: System.StringComparison
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/StringComparison.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/StringComparison.cs
+    startLine: 16
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Specifies the culture, case, and sort rules to be used by certain overloads of the @'System.String.Compare(System.String,System.String)' and @'System.String.Equals(System.Object)' methods.
+  syntax:
+    content: public enum StringComparison
+    content.vb: Public Enum StringComparison
+- uid: System.StringComparison.CurrentCulture
+  id: CurrentCulture
+  parent: System.StringComparison
+  href: System.StringComparison.yml
+  name: CurrentCulture
+  fullName: System.StringComparison.CurrentCulture
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/StringComparison.cs
+    startLine: 19
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Compare strings using culture-sensitive sort rules and the current culture.
+  syntax:
+    content: CurrentCulture = 0
+- uid: System.StringComparison.CurrentCultureIgnoreCase
+  id: CurrentCultureIgnoreCase
+  parent: System.StringComparison
+  href: System.StringComparison.yml
+  name: CurrentCultureIgnoreCase
+  fullName: System.StringComparison.CurrentCultureIgnoreCase
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/StringComparison.cs
+    startLine: 20
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Compare strings using culture-sensitive sort rules, the current culture, and ignoring the case of the strings being compared.
+  syntax:
+    content: CurrentCultureIgnoreCase = 1
+- uid: System.StringComparison.InvariantCulture
+  id: InvariantCulture
+  parent: System.StringComparison
+  href: System.StringComparison.yml
+  name: InvariantCulture
+  fullName: System.StringComparison.InvariantCulture
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/StringComparison.cs
+    startLine: 21
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Compare strings using culture-sensitive sort rules and the invariant culture.
+  syntax:
+    content: InvariantCulture = 2
+- uid: System.StringComparison.InvariantCultureIgnoreCase
+  id: InvariantCultureIgnoreCase
+  parent: System.StringComparison
+  href: System.StringComparison.yml
+  name: InvariantCultureIgnoreCase
+  fullName: System.StringComparison.InvariantCultureIgnoreCase
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/StringComparison.cs
+    startLine: 22
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Compare strings using culture-sensitive sort rules, the invariant culture, and ignoring the case of the strings being compared.
+  syntax:
+    content: InvariantCultureIgnoreCase = 3
+- uid: System.StringComparison.Ordinal
+  id: Ordinal
+  parent: System.StringComparison
+  href: System.StringComparison.yml
+  name: Ordinal
+  fullName: System.StringComparison.Ordinal
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/StringComparison.cs
+    startLine: 23
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Compare strings using ordinal sort rules.
+  syntax:
+    content: Ordinal = 4
+- uid: System.StringComparison.OrdinalIgnoreCase
+  id: OrdinalIgnoreCase
+  parent: System.StringComparison
+  href: System.StringComparison.yml
+  name: OrdinalIgnoreCase
+  fullName: System.StringComparison.OrdinalIgnoreCase
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/StringComparison.cs
+    startLine: 24
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Compare strings using ordinal sort rules and ignoring the case of the strings being compared.
+  syntax:
+    content: OrdinalIgnoreCase = 5
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

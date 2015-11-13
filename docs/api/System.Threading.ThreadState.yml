@@ -1,0 +1,208 @@
+items:
+- uid: System.Threading.ThreadState
+  id: ThreadState
+  parent: System.Threading
+  children:
+  - System.Threading.ThreadState.Aborted
+  - System.Threading.ThreadState.AbortRequested
+  - System.Threading.ThreadState.Background
+  - System.Threading.ThreadState.Running
+  - System.Threading.ThreadState.Stopped
+  - System.Threading.ThreadState.StopRequested
+  - System.Threading.ThreadState.Suspended
+  - System.Threading.ThreadState.SuspendRequested
+  - System.Threading.ThreadState.Unstarted
+  - System.Threading.ThreadState.WaitSleepJoin
+  href: System.Threading.ThreadState.yml
+  name: ThreadState
+  fullName: System.Threading.ThreadState
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Threading/ThreadState.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Threading/ThreadState.cs
+    startLine: 15
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Specifies the execution states of a @'System.Threading.Thread'.
+  syntax:
+    content: public enum ThreadState
+    content.vb: Public Enum ThreadState
+- uid: System.Threading.ThreadState.Running
+  id: Running
+  parent: System.Threading.ThreadState
+  href: System.Threading.ThreadState.yml
+  name: Running
+  fullName: System.Threading.ThreadState.Running
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadState.cs
+    startLine: 23
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: The thread has been started, it is not blocked, and there is no pending @'System.Threading.ThreadAbortException'.
+  syntax:
+    content: Running = 0
+- uid: System.Threading.ThreadState.StopRequested
+  id: StopRequested
+  parent: System.Threading.ThreadState
+  href: System.Threading.ThreadState.yml
+  name: StopRequested
+  fullName: System.Threading.ThreadState.StopRequested
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadState.cs
+    startLine: 24
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: The thread is being requested to stop. This is for internal use only.
+  syntax:
+    content: StopRequested = 1
+- uid: System.Threading.ThreadState.SuspendRequested
+  id: SuspendRequested
+  parent: System.Threading.ThreadState
+  href: System.Threading.ThreadState.yml
+  name: SuspendRequested
+  fullName: System.Threading.ThreadState.SuspendRequested
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadState.cs
+    startLine: 25
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: The thread is being requested to suspend.
+  syntax:
+    content: SuspendRequested = 2
+- uid: System.Threading.ThreadState.Background
+  id: Background
+  parent: System.Threading.ThreadState
+  href: System.Threading.ThreadState.yml
+  name: Background
+  fullName: System.Threading.ThreadState.Background
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadState.cs
+    startLine: 26
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: The thread is being executed as a background thread, as opposed to a foreground thread. This state is controlled by setting the @'System.Threading.Thread.IsBackground' property.
+  syntax:
+    content: Background = 4
+- uid: System.Threading.ThreadState.Unstarted
+  id: Unstarted
+  parent: System.Threading.ThreadState
+  href: System.Threading.ThreadState.yml
+  name: Unstarted
+  fullName: System.Threading.ThreadState.Unstarted
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadState.cs
+    startLine: 27
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: The @'System.Threading.Thread.Start' method has not been invoked on the thread.
+  syntax:
+    content: Unstarted = 8
+- uid: System.Threading.ThreadState.Stopped
+  id: Stopped
+  parent: System.Threading.ThreadState
+  href: System.Threading.ThreadState.yml
+  name: Stopped
+  fullName: System.Threading.ThreadState.Stopped
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadState.cs
+    startLine: 28
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: The thread has stopped.
+  syntax:
+    content: Stopped = 16
+- uid: System.Threading.ThreadState.WaitSleepJoin
+  id: WaitSleepJoin
+  parent: System.Threading.ThreadState
+  href: System.Threading.ThreadState.yml
+  name: WaitSleepJoin
+  fullName: System.Threading.ThreadState.WaitSleepJoin
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadState.cs
+    startLine: 29
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: "The thread is blocked. This could be the result of calling @'System.Threading.Thread.Sleep(System.Int32)' or @'System.Threading.Thread.Join', of requesting a lock — for example, by calling @'System.Threading.Monitor.Enter(System.Object)' or @'System.Threading.Monitor.Wait(System.Object,System.Int32,System.Boolean)' — or of waiting on a thread synchronization object such as @'System.Threading.ManualResetEvent'."
+  syntax:
+    content: WaitSleepJoin = 32
+- uid: System.Threading.ThreadState.Suspended
+  id: Suspended
+  parent: System.Threading.ThreadState
+  href: System.Threading.ThreadState.yml
+  name: Suspended
+  fullName: System.Threading.ThreadState.Suspended
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadState.cs
+    startLine: 30
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: The thread has been suspended.
+  syntax:
+    content: Suspended = 64
+- uid: System.Threading.ThreadState.AbortRequested
+  id: AbortRequested
+  parent: System.Threading.ThreadState
+  href: System.Threading.ThreadState.yml
+  name: AbortRequested
+  fullName: System.Threading.ThreadState.AbortRequested
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadState.cs
+    startLine: 31
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: The @'System.Threading.Thread.Abort(System.Object)' method has been invoked on the thread, but the thread has not yet received the pending @'System.Threading.ThreadAbortException' that will attempt to terminate it.
+  syntax:
+    content: AbortRequested = 128
+- uid: System.Threading.ThreadState.Aborted
+  id: Aborted
+  parent: System.Threading.ThreadState
+  href: System.Threading.ThreadState.yml
+  name: Aborted
+  fullName: System.Threading.ThreadState.Aborted
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadState.cs
+    startLine: 32
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: The thread state includes @'System.Threading.ThreadState.AbortRequested' and the thread is now dead, but its state has not yet changed to @'System.Threading.ThreadState.Stopped'.
+  syntax:
+    content: Aborted = 256
+references:
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading

@@ -1,0 +1,498 @@
+items:
+- uid: System.Linq.OrderedParallelQuery`1
+  id: OrderedParallelQuery`1
+  parent: System.Linq
+  children:
+  - System.Linq.OrderedParallelQuery`1.GetEnumerator
+  href: System.Linq.OrderedParallelQuery`1.yml
+  name: OrderedParallelQuery<TSource>
+  name.vb: OrderedParallelQuery(Of TSource)
+  fullName: System.Linq.OrderedParallelQuery<TSource>
+  fullName.vb: System.Linq.OrderedParallelQuery(Of TSource)
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Linq.Parallel/src/System/Linq/Parallel/Enumerables/OrderedParallelQuery.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Linq.Parallel/src/System/Linq/Parallel/Enumerables/OrderedParallelQuery.cs
+    startLine: 20
+  assemblies:
+  - System.Linq.Parallel
+  namespace: System.Linq
+  summary: Represents a sorted, parallel sequence.
+  syntax:
+    content: 'public class OrderedParallelQuery<TSource> : ParallelQuery<TSource>, IEnumerable<TSource>, IEnumerable'
+    content.vb: Public Class OrderedParallelQuery(Of TSource) Inherits ParallelQuery(Of TSource) Implements IEnumerable(Of TSource), IEnumerable
+    typeParameters:
+    - id: TSource
+  inheritance:
+  - System.Object
+  - System.Linq.ParallelQuery
+  - System.Linq.ParallelQuery{{TSource}}
+  implements:
+  - System.Collections.Generic.IEnumerable{{TSource}}
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Linq.ParallelQuery.System#Collections#IEnumerable#GetEnumerator
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Linq.OrderedParallelQuery`1.GetEnumerator
+  id: GetEnumerator
+  parent: System.Linq.OrderedParallelQuery`1
+  href: System.Linq.OrderedParallelQuery`1.yml
+  name: GetEnumerator()
+  fullName: System.Linq.OrderedParallelQuery<TSource>.GetEnumerator()
+  fullName.vb: System.Linq.OrderedParallelQuery(Of TSource).GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Linq.Parallel/src/System/Linq/Parallel/Enumerables/OrderedParallelQuery.cs
+    startLine: 45
+  assemblies:
+  - System.Linq.Parallel
+  namespace: System.Linq
+  summary: Returns an enumerator that iterates through the sequence.
+  syntax:
+    content: public override IEnumerator<TSource> GetEnumerator()
+    content.vb: Public Overrides Function GetEnumerator As IEnumerator(Of TSource)
+    return:
+      type: System.Collections.Generic.IEnumerator{{TSource}}
+      description: An enumerator that iterates through the sequence.
+  overridden: System.Linq.ParallelQuery{{TSource}}.GetEnumerator
+references:
+- uid: System.Linq
+  isExternal: false
+  name: System.Linq
+  fullName: System.Linq
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Linq.ParallelQuery
+  parent: System.Linq
+  isExternal: false
+  href: System.Linq.ParallelQuery.yml
+  name: ParallelQuery
+  fullName: System.Linq.ParallelQuery
+  type: Class
+  summary: Represents a parallel sequence.
+- uid: System.Linq.ParallelQuery{{TSource}}
+  parent: System.Linq
+  definition: System.Linq.ParallelQuery`1
+  href: System.Linq.ParallelQuery`1.yml
+  name: ParallelQuery<TSource>
+  name.vb: ParallelQuery(Of TSource)
+  fullName: System.Linq.ParallelQuery<TSource>
+  fullName.vb: System.Linq.ParallelQuery(Of TSource)
+  spec.csharp:
+  - uid: System.Linq.ParallelQuery`1
+    name: ParallelQuery
+    fullName: System.Linq.ParallelQuery
+    href: System.Linq.ParallelQuery`1.yml
+  - name: <
+    fullName: <
+  - name: TSource
+    fullName: TSource
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.ParallelQuery`1
+    name: ParallelQuery
+    fullName: System.Linq.ParallelQuery
+    href: System.Linq.ParallelQuery`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TSource
+    fullName: TSource
+  - name: )
+    fullName: )
+- uid: System.Linq.ParallelQuery.System#Collections#IEnumerable#GetEnumerator
+  parent: System.Linq.ParallelQuery
+  isExternal: false
+  href: System.Linq.ParallelQuery.yml
+  name: IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: System.Linq.ParallelQuery.System.Collections.IEnumerable.GetEnumerator()
+  spec.csharp:
+  - uid: System.Linq.ParallelQuery.System#Collections#IEnumerable#GetEnumerator
+    name: IEnumerable.GetEnumerator
+    fullName: System.Linq.ParallelQuery.System.Collections.IEnumerable.GetEnumerator
+    href: System.Linq.ParallelQuery.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.ParallelQuery.System#Collections#IEnumerable#GetEnumerator
+    name: System.Collections.IEnumerable.GetEnumerator
+    fullName: System.Linq.ParallelQuery.System.Collections.IEnumerable.GetEnumerator
+    href: System.Linq.ParallelQuery.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Linq.ParallelQuery`1
+  parent: System.Linq
+  isExternal: false
+  href: System.Linq.ParallelQuery`1.yml
+  name: ParallelQuery<TSource>
+  name.vb: ParallelQuery(Of TSource)
+  fullName: System.Linq.ParallelQuery<TSource>
+  fullName.vb: System.Linq.ParallelQuery(Of TSource)
+  type: Class
+  summary: Represents a parallel sequence.
+  spec.csharp:
+  - uid: System.Linq.ParallelQuery`1
+    name: ParallelQuery
+    fullName: System.Linq.ParallelQuery
+    href: System.Linq.ParallelQuery`1.yml
+  - name: <
+    fullName: <
+  - name: TSource
+    fullName: TSource
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.ParallelQuery`1
+    name: ParallelQuery
+    fullName: System.Linq.ParallelQuery
+    href: System.Linq.ParallelQuery`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TSource
+    fullName: TSource
+  - name: )
+    fullName: )
+- uid: System.Linq.ParallelQuery{{TSource}}.GetEnumerator
+  parent: System.Linq.ParallelQuery{{TSource}}
+  definition: System.Linq.ParallelQuery`1.GetEnumerator
+  href: System.Linq.ParallelQuery`1.yml
+  name: GetEnumerator()
+  fullName: System.Linq.ParallelQuery<TSource>.GetEnumerator()
+  fullName.vb: System.Linq.ParallelQuery(Of TSource).GetEnumerator()
+  spec.csharp:
+  - uid: System.Linq.ParallelQuery`1.GetEnumerator
+    name: GetEnumerator
+    fullName: System.Linq.ParallelQuery<TSource>.GetEnumerator
+    href: System.Linq.ParallelQuery`1.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.ParallelQuery`1.GetEnumerator
+    name: GetEnumerator
+    fullName: System.Linq.ParallelQuery(Of TSource).GetEnumerator
+    href: System.Linq.ParallelQuery`1.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator{{TSource}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  name: IEnumerator<TSource>
+  name.vb: IEnumerator(Of TSource)
+  fullName: System.Collections.Generic.IEnumerator<TSource>
+  fullName.vb: System.Collections.Generic.IEnumerator(Of TSource)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TSource
+    fullName: TSource
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TSource
+    fullName: TSource
+  - name: )
+    fullName: )
+- uid: System.Linq.ParallelQuery`1.GetEnumerator
+  parent: System.Linq.ParallelQuery`1
+  isExternal: false
+  href: System.Linq.ParallelQuery`1.yml
+  name: GetEnumerator()
+  fullName: System.Linq.ParallelQuery<TSource>.GetEnumerator()
+  fullName.vb: System.Linq.ParallelQuery(Of TSource).GetEnumerator()
+  spec.csharp:
+  - uid: System.Linq.ParallelQuery`1.GetEnumerator
+    name: GetEnumerator
+    fullName: System.Linq.ParallelQuery<TSource>.GetEnumerator
+    href: System.Linq.ParallelQuery`1.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.ParallelQuery`1.GetEnumerator
+    name: GetEnumerator
+    fullName: System.Linq.ParallelQuery(Of TSource).GetEnumerator
+    href: System.Linq.ParallelQuery`1.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerator<T>
+  name.vb: IEnumerator(Of T)
+  fullName: System.Collections.Generic.IEnumerator<T>
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic

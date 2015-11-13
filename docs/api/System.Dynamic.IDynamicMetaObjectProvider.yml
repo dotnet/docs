@@ -1,0 +1,72 @@
+items:
+- uid: System.Dynamic.IDynamicMetaObjectProvider
+  id: IDynamicMetaObjectProvider
+  parent: System.Dynamic
+  children:
+  - System.Dynamic.IDynamicMetaObjectProvider.GetMetaObject(Expression)
+  href: System.Dynamic.IDynamicMetaObjectProvider.yml
+  name: IDynamicMetaObjectProvider
+  fullName: System.Dynamic.IDynamicMetaObjectProvider
+  type: Interface
+  source:
+    remote: &o0
+      path: src/System.Dynamic.Runtime/src/System/Dynamic/IDynamicMetaObjectProvider.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/IDynamicMetaObjectProvider.cs
+    startLine: 14
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  summary: Represents a dynamic object, that can have its operations bound at runtime.
+  remarks: >-
+    Objects that want to participate in the binding process should implement an IDynamicMetaObjectProvider interface,
+
+    and implement @'System.Dynamic.IDynamicMetaObjectProvider.GetMetaObject(Expression)' to return a @'System.Dynamic.DynamicMetaObject'.
+  syntax:
+    content: public interface IDynamicMetaObjectProvider
+    content.vb: Public Interface IDynamicMetaObjectProvider
+- uid: System.Dynamic.IDynamicMetaObjectProvider.GetMetaObject(Expression)
+  id: GetMetaObject(Expression)
+  parent: System.Dynamic.IDynamicMetaObjectProvider
+  href: System.Dynamic.IDynamicMetaObjectProvider.yml
+  name: GetMetaObject(Expression)
+  fullName: System.Dynamic.IDynamicMetaObjectProvider.GetMetaObject(Expression)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/IDynamicMetaObjectProvider.cs
+    startLine: 21
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  summary: Returns the @'System.Dynamic.DynamicMetaObject' responsible for binding operations performed on this object.
+  syntax:
+    content: DynamicMetaObject GetMetaObject(Expression parameter)
+    content.vb: Function GetMetaObject(parameter As Expression) As DynamicMetaObject
+    parameters:
+    - id: parameter
+      type: Expression
+      description: The expression tree representation of the runtime value.
+    return:
+      type: System.Dynamic.DynamicMetaObject
+      description: The @'System.Dynamic.DynamicMetaObject' to bind this object.
+references:
+- uid: System.Dynamic.IDynamicMetaObjectProvider.GetMetaObject(Expression)
+- uid: System.Dynamic.DynamicMetaObject
+  parent: System.Dynamic
+  isExternal: false
+  href: System.Dynamic.DynamicMetaObject.yml
+  name: DynamicMetaObject
+  fullName: System.Dynamic.DynamicMetaObject
+  type: Class
+  summary: Represents the dynamic binding and a binding logic of an object participating in the dynamic binding.
+- uid: System.Dynamic
+  isExternal: false
+  name: System.Dynamic
+  fullName: System.Dynamic
+  type: Namespace
+- uid: Expression
+  isExternal: true
+  name: Expression
+  fullName: Expression

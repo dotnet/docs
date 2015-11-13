@@ -1,0 +1,209 @@
+items:
+- uid: System.Runtime.InteropServices.CALLCONV
+  id: CALLCONV
+  parent: System.Runtime.InteropServices
+  children:
+  - System.Runtime.InteropServices.CALLCONV.CC_CDECL
+  - System.Runtime.InteropServices.CALLCONV.CC_MACPASCAL
+  - System.Runtime.InteropServices.CALLCONV.CC_MAX
+  - System.Runtime.InteropServices.CALLCONV.CC_MPWCDECL
+  - System.Runtime.InteropServices.CALLCONV.CC_MPWPASCAL
+  - System.Runtime.InteropServices.CALLCONV.CC_MSCPASCAL
+  - System.Runtime.InteropServices.CALLCONV.CC_PASCAL
+  - System.Runtime.InteropServices.CALLCONV.CC_RESERVED
+  - System.Runtime.InteropServices.CALLCONV.CC_STDCALL
+  - System.Runtime.InteropServices.CALLCONV.CC_SYSCALL
+  href: System.Runtime.InteropServices.CALLCONV.yml
+  name: CALLCONV
+  fullName: System.Runtime.InteropServices.CALLCONV
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeInfo.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeInfo.cs
+    startLine: 246
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Use @'System.Runtime.InteropServices.ComTypes.CALLCONV' instead.
+  syntax:
+    content: public enum CALLCONV
+    content.vb: Public Enum CALLCONV
+- uid: System.Runtime.InteropServices.CALLCONV.CC_CDECL
+  id: CC_CDECL
+  parent: System.Runtime.InteropServices.CALLCONV
+  href: System.Runtime.InteropServices.CALLCONV.yml
+  name: CC_CDECL
+  fullName: System.Runtime.InteropServices.CALLCONV.CC_CDECL
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeInfo.cs
+    startLine: 250
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates that the Cdecl calling convention is used for a method.
+  syntax:
+    content: CC_CDECL = 1
+- uid: System.Runtime.InteropServices.CALLCONV.CC_MSCPASCAL
+  id: CC_MSCPASCAL
+  parent: System.Runtime.InteropServices.CALLCONV
+  href: System.Runtime.InteropServices.CALLCONV.yml
+  name: CC_MSCPASCAL
+  fullName: System.Runtime.InteropServices.CALLCONV.CC_MSCPASCAL
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeInfo.cs
+    startLine: 251
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates that the Mscpascal calling convention is used for a method.
+  syntax:
+    content: CC_MSCPASCAL = 2
+- uid: System.Runtime.InteropServices.CALLCONV.CC_PASCAL
+  id: CC_PASCAL
+  parent: System.Runtime.InteropServices.CALLCONV
+  href: System.Runtime.InteropServices.CALLCONV.yml
+  name: CC_PASCAL
+  fullName: System.Runtime.InteropServices.CALLCONV.CC_PASCAL
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeInfo.cs
+    startLine: 252
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates that the Pascal calling convention is used for a method.
+  syntax:
+    content: CC_PASCAL = 2
+- uid: System.Runtime.InteropServices.CALLCONV.CC_MACPASCAL
+  id: CC_MACPASCAL
+  parent: System.Runtime.InteropServices.CALLCONV
+  href: System.Runtime.InteropServices.CALLCONV.yml
+  name: CC_MACPASCAL
+  fullName: System.Runtime.InteropServices.CALLCONV.CC_MACPASCAL
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeInfo.cs
+    startLine: 253
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates that the Macpascal calling convention is used for a method.
+  syntax:
+    content: CC_MACPASCAL = 3
+- uid: System.Runtime.InteropServices.CALLCONV.CC_STDCALL
+  id: CC_STDCALL
+  parent: System.Runtime.InteropServices.CALLCONV
+  href: System.Runtime.InteropServices.CALLCONV.yml
+  name: CC_STDCALL
+  fullName: System.Runtime.InteropServices.CALLCONV.CC_STDCALL
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeInfo.cs
+    startLine: 254
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates that the Stdcall calling convention is used for a method.
+  syntax:
+    content: CC_STDCALL = 4
+- uid: System.Runtime.InteropServices.CALLCONV.CC_RESERVED
+  id: CC_RESERVED
+  parent: System.Runtime.InteropServices.CALLCONV
+  href: System.Runtime.InteropServices.CALLCONV.yml
+  name: CC_RESERVED
+  fullName: System.Runtime.InteropServices.CALLCONV.CC_RESERVED
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeInfo.cs
+    startLine: 255
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: This value is reserved for future use.
+  syntax:
+    content: CC_RESERVED = 5
+- uid: System.Runtime.InteropServices.CALLCONV.CC_SYSCALL
+  id: CC_SYSCALL
+  parent: System.Runtime.InteropServices.CALLCONV
+  href: System.Runtime.InteropServices.CALLCONV.yml
+  name: CC_SYSCALL
+  fullName: System.Runtime.InteropServices.CALLCONV.CC_SYSCALL
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeInfo.cs
+    startLine: 256
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates that the Syscall calling convention is used for a method.
+  syntax:
+    content: CC_SYSCALL = 6
+- uid: System.Runtime.InteropServices.CALLCONV.CC_MPWCDECL
+  id: CC_MPWCDECL
+  parent: System.Runtime.InteropServices.CALLCONV
+  href: System.Runtime.InteropServices.CALLCONV.yml
+  name: CC_MPWCDECL
+  fullName: System.Runtime.InteropServices.CALLCONV.CC_MPWCDECL
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeInfo.cs
+    startLine: 257
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates that the Mpwcdecl calling convention is used for a method.
+  syntax:
+    content: CC_MPWCDECL = 7
+- uid: System.Runtime.InteropServices.CALLCONV.CC_MPWPASCAL
+  id: CC_MPWPASCAL
+  parent: System.Runtime.InteropServices.CALLCONV
+  href: System.Runtime.InteropServices.CALLCONV.yml
+  name: CC_MPWPASCAL
+  fullName: System.Runtime.InteropServices.CALLCONV.CC_MPWPASCAL
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeInfo.cs
+    startLine: 258
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates that the Mpwpascal calling convention is used for a method.
+  syntax:
+    content: CC_MPWPASCAL = 8
+- uid: System.Runtime.InteropServices.CALLCONV.CC_MAX
+  id: CC_MAX
+  parent: System.Runtime.InteropServices.CALLCONV
+  href: System.Runtime.InteropServices.CALLCONV.yml
+  name: CC_MAX
+  fullName: System.Runtime.InteropServices.CALLCONV.CC_MAX
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeInfo.cs
+    startLine: 259
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates the end of the @'System.Runtime.InteropServices.CALLCONV' enumeration.
+  syntax:
+    content: CC_MAX = 9
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace

@@ -1,0 +1,41 @@
+items:
+- uid: System.Threading.TimerCallback
+  id: TimerCallback
+  parent: System.Threading
+  children: []
+  href: System.Threading.TimerCallback.yml
+  name: TimerCallback
+  fullName: System.Threading.TimerCallback
+  type: Delegate
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/Timer.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Threading/Timer.cs
+    startLine: 21
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Represents the method that handles calls from a @'System.Threading.Timer'.
+  syntax:
+    content: public delegate void TimerCallback(object state);
+    content.vb: Public Delegate Sub TimerCallback(state As Object)
+    parameters:
+    - id: state
+      type: System.Object
+      description: An object containing application-specific information relevant to the method invoked by this delegate, or null.
+references:
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

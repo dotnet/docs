@@ -1,0 +1,490 @@
+items:
+- uid: System.Security.Principal.IdentityNotMappedException
+  id: IdentityNotMappedException
+  parent: System.Security.Principal
+  children:
+  - System.Security.Principal.IdentityNotMappedException.#ctor
+  - System.Security.Principal.IdentityNotMappedException.#ctor(System.String)
+  - System.Security.Principal.IdentityNotMappedException.#ctor(System.String,System.Exception)
+  - System.Security.Principal.IdentityNotMappedException.UnmappedIdentities
+  href: System.Security.Principal.IdentityNotMappedException.yml
+  name: IdentityNotMappedException
+  fullName: System.Security.Principal.IdentityNotMappedException
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Security.Principal.Windows/src/System/Security/Principal/IdentityNotMappedException.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/IdentityNotMappedException.cs
+    startLine: 5
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Represents an exception for a principal whose identity could not be mapped to a known identity.
+  syntax:
+    content: 'public sealed class IdentityNotMappedException : Exception, ISerializable, _Exception'
+    content.vb: Public NotInheritable Class IdentityNotMappedException Inherits Exception Implements ISerializable, _Exception
+  inheritance:
+  - System.Object
+  - System.Exception
+  implements:
+  - System.Runtime.Serialization.ISerializable
+  - System.Runtime.InteropServices._Exception
+  inheritedMembers:
+  - System.Exception.GetBaseException
+  - System.Exception.ToString
+  - System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - System.Exception.GetType
+  - System.Exception.Message
+  - System.Exception.Data
+  - System.Exception.InnerException
+  - System.Exception.TargetSite
+  - System.Exception.StackTrace
+  - System.Exception.HelpLink
+  - System.Exception.Source
+  - System.Exception.HResult
+  - System.Exception.SerializeObjectState
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.MemberwiseClone
+- uid: System.Security.Principal.IdentityNotMappedException.#ctor
+  id: '#ctor'
+  parent: System.Security.Principal.IdentityNotMappedException
+  href: System.Security.Principal.IdentityNotMappedException.yml
+  name: IdentityNotMappedException()
+  fullName: System.Security.Principal.IdentityNotMappedException.IdentityNotMappedException()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/IdentityNotMappedException.cs
+    startLine: 9
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Initializes a new instance of the @'System.Security.Principal.IdentityNotMappedException' class.
+  syntax:
+    content: public IdentityNotMappedException()
+    content.vb: Public Sub New
+- uid: System.Security.Principal.IdentityNotMappedException.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: System.Security.Principal.IdentityNotMappedException
+  href: System.Security.Principal.IdentityNotMappedException.yml
+  name: IdentityNotMappedException(String)
+  fullName: System.Security.Principal.IdentityNotMappedException.IdentityNotMappedException(System.String)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/IdentityNotMappedException.cs
+    startLine: 14
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Initializes a new instance of the @'System.Security.Principal.IdentityNotMappedException' class by using the specified error message.
+  syntax:
+    content: public IdentityNotMappedException(string message)
+    content.vb: Public Sub New(message As String)
+    parameters:
+    - id: message
+      type: System.String
+      description: The error message that explains the reason for the exception.
+- uid: System.Security.Principal.IdentityNotMappedException.#ctor(System.String,System.Exception)
+  id: '#ctor(System.String,System.Exception)'
+  parent: System.Security.Principal.IdentityNotMappedException
+  href: System.Security.Principal.IdentityNotMappedException.yml
+  name: IdentityNotMappedException(String, Exception)
+  fullName: System.Security.Principal.IdentityNotMappedException.IdentityNotMappedException(System.String, System.Exception)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/IdentityNotMappedException.cs
+    startLine: 19
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Initializes a new instance of the @'System.Security.Principal.IdentityNotMappedException' class by using the specified error message and inner exception.
+  syntax:
+    content: public IdentityNotMappedException(string message, Exception inner)
+    content.vb: Public Sub New(message As String, inner As Exception)
+    parameters:
+    - id: message
+      type: System.String
+      description: The error message that explains the reason for the exception.
+    - id: inner
+      type: System.Exception
+      description: The exception that is the cause of the current exception. If *inner* is not null, the current exception is raised in a catch block that handles the inner exception.
+- uid: System.Security.Principal.IdentityNotMappedException.UnmappedIdentities
+  id: UnmappedIdentities
+  parent: System.Security.Principal.IdentityNotMappedException
+  href: System.Security.Principal.IdentityNotMappedException.yml
+  name: UnmappedIdentities
+  fullName: System.Security.Principal.IdentityNotMappedException.UnmappedIdentities
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/IdentityNotMappedException.cs
+    startLine: 30
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Represents the collection of unmapped identities for an @'System.Security.Principal.IdentityNotMappedException' exception.
+  syntax:
+    content: public IdentityReferenceCollection UnmappedIdentities { get; }
+    content.vb: Public ReadOnly Property UnmappedIdentities As IdentityReferenceCollection
+    parameters: []
+    return:
+      type: System.Security.Principal.IdentityReferenceCollection
+references:
+- uid: System.Security.Principal
+  isExternal: false
+  name: System.Security.Principal
+  fullName: System.Security.Principal
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  fullName: System.Exception
+- uid: System.Exception.GetBaseException
+  parent: System.Exception
+  isExternal: true
+  name: GetBaseException()
+  fullName: System.Exception.GetBaseException()
+  spec.csharp:
+  - uid: System.Exception.GetBaseException
+    name: GetBaseException
+    fullName: System.Exception.GetBaseException
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Exception.GetBaseException
+    name: GetBaseException
+    fullName: System.Exception.GetBaseException
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Exception.ToString
+  parent: System.Exception
+  isExternal: true
+  name: ToString()
+  fullName: System.Exception.ToString()
+  spec.csharp:
+  - uid: System.Exception.ToString
+    name: ToString
+    fullName: System.Exception.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Exception.ToString
+    name: ToString
+    fullName: System.Exception.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: System.Exception
+  isExternal: true
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  fullName: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    fullName: System.Exception.GetObjectData
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    fullName: System.Runtime.Serialization.SerializationInfo
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    fullName: System.Exception.GetObjectData
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    fullName: System.Runtime.Serialization.SerializationInfo
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Exception.GetType
+  parent: System.Exception
+  isExternal: true
+  name: GetType()
+  fullName: System.Exception.GetType()
+  spec.csharp:
+  - uid: System.Exception.GetType
+    name: GetType
+    fullName: System.Exception.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Exception.GetType
+    name: GetType
+    fullName: System.Exception.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Exception.Message
+  parent: System.Exception
+  isExternal: true
+  name: Message
+  fullName: System.Exception.Message
+- uid: System.Exception.Data
+  parent: System.Exception
+  isExternal: true
+  name: Data
+  fullName: System.Exception.Data
+- uid: System.Exception.InnerException
+  parent: System.Exception
+  isExternal: true
+  name: InnerException
+  fullName: System.Exception.InnerException
+- uid: System.Exception.TargetSite
+  parent: System.Exception
+  isExternal: true
+  name: TargetSite
+  fullName: System.Exception.TargetSite
+- uid: System.Exception.StackTrace
+  parent: System.Exception
+  isExternal: true
+  name: StackTrace
+  fullName: System.Exception.StackTrace
+- uid: System.Exception.HelpLink
+  parent: System.Exception
+  isExternal: true
+  name: HelpLink
+  fullName: System.Exception.HelpLink
+- uid: System.Exception.Source
+  parent: System.Exception
+  isExternal: true
+  name: Source
+  fullName: System.Exception.Source
+- uid: System.Exception.HResult
+  parent: System.Exception
+  isExternal: true
+  name: HResult
+  fullName: System.Exception.HResult
+- uid: System.Exception.SerializeObjectState
+  parent: System.Exception
+  isExternal: true
+  name: SerializeObjectState
+  fullName: System.Exception.SerializeObjectState
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Security.Principal.IdentityReferenceCollection
+  parent: System.Security.Principal
+  isExternal: false
+  href: System.Security.Principal.IdentityReferenceCollection.yml
+  name: IdentityReferenceCollection
+  fullName: System.Security.Principal.IdentityReferenceCollection
+  type: Class

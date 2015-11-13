@@ -1,0 +1,1093 @@
+items:
+- uid: System.Dynamic.DynamicMetaObject
+  id: DynamicMetaObject
+  parent: System.Dynamic
+  children:
+  - System.Dynamic.DynamicMetaObject.#ctor(Expression,System.Dynamic.BindingRestrictions)
+  - System.Dynamic.DynamicMetaObject.#ctor(Expression,System.Dynamic.BindingRestrictions,System.Object)
+  - System.Dynamic.DynamicMetaObject.BindBinaryOperation(System.Dynamic.BinaryOperationBinder,System.Dynamic.DynamicMetaObject)
+  - System.Dynamic.DynamicMetaObject.BindConvert(System.Dynamic.ConvertBinder)
+  - System.Dynamic.DynamicMetaObject.BindCreateInstance(System.Dynamic.CreateInstanceBinder,System.Dynamic.DynamicMetaObject[])
+  - System.Dynamic.DynamicMetaObject.BindDeleteIndex(System.Dynamic.DeleteIndexBinder,System.Dynamic.DynamicMetaObject[])
+  - System.Dynamic.DynamicMetaObject.BindDeleteMember(System.Dynamic.DeleteMemberBinder)
+  - System.Dynamic.DynamicMetaObject.BindGetIndex(System.Dynamic.GetIndexBinder,System.Dynamic.DynamicMetaObject[])
+  - System.Dynamic.DynamicMetaObject.BindGetMember(System.Dynamic.GetMemberBinder)
+  - System.Dynamic.DynamicMetaObject.BindInvoke(System.Dynamic.InvokeBinder,System.Dynamic.DynamicMetaObject[])
+  - System.Dynamic.DynamicMetaObject.BindInvokeMember(System.Dynamic.InvokeMemberBinder,System.Dynamic.DynamicMetaObject[])
+  - System.Dynamic.DynamicMetaObject.BindSetIndex(System.Dynamic.SetIndexBinder,System.Dynamic.DynamicMetaObject[],System.Dynamic.DynamicMetaObject)
+  - System.Dynamic.DynamicMetaObject.BindSetMember(System.Dynamic.SetMemberBinder,System.Dynamic.DynamicMetaObject)
+  - System.Dynamic.DynamicMetaObject.BindUnaryOperation(System.Dynamic.UnaryOperationBinder)
+  - System.Dynamic.DynamicMetaObject.Create(System.Object,Expression)
+  - System.Dynamic.DynamicMetaObject.EmptyMetaObjects
+  - System.Dynamic.DynamicMetaObject.Expression
+  - System.Dynamic.DynamicMetaObject.GetDynamicMemberNames
+  - System.Dynamic.DynamicMetaObject.HasValue
+  - System.Dynamic.DynamicMetaObject.LimitType
+  - System.Dynamic.DynamicMetaObject.Restrictions
+  - System.Dynamic.DynamicMetaObject.RuntimeType
+  - System.Dynamic.DynamicMetaObject.Value
+  href: System.Dynamic.DynamicMetaObject.yml
+  name: DynamicMetaObject
+  fullName: System.Dynamic.DynamicMetaObject
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Dynamic.Runtime/src/System/Dynamic/DynamicMetaObject.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/DynamicMetaObject.cs
+    startLine: 13
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  summary: Represents the dynamic binding and a binding logic of an object participating in the dynamic binding.
+  syntax:
+    content: public class DynamicMetaObject
+    content.vb: Public Class DynamicMetaObject
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Dynamic.DynamicMetaObject.EmptyMetaObjects
+  id: EmptyMetaObjects
+  parent: System.Dynamic.DynamicMetaObject
+  href: System.Dynamic.DynamicMetaObject.yml
+  name: EmptyMetaObjects
+  fullName: System.Dynamic.DynamicMetaObject.EmptyMetaObjects
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/DynamicMetaObject.cs
+    startLine: 24
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  summary: Represents an empty array of type @'System.Dynamic.DynamicMetaObject'. This field is read only.
+  syntax:
+    content: public static readonly DynamicMetaObject[] EmptyMetaObjects
+    content.vb: Public Shared ReadOnly EmptyMetaObjects As DynamicMetaObject()
+- uid: System.Dynamic.DynamicMetaObject.#ctor(Expression,System.Dynamic.BindingRestrictions)
+  id: '#ctor(Expression,System.Dynamic.BindingRestrictions)'
+  parent: System.Dynamic.DynamicMetaObject
+  href: System.Dynamic.DynamicMetaObject.yml
+  name: DynamicMetaObject(Expression, BindingRestrictions)
+  fullName: System.Dynamic.DynamicMetaObject.DynamicMetaObject(Expression, System.Dynamic.BindingRestrictions)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/DynamicMetaObject.cs
+    startLine: 31
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  summary: Initializes a new instance of the @'System.Dynamic.DynamicMetaObject' class.
+  syntax:
+    content: public DynamicMetaObject(Expression expression, BindingRestrictions restrictions)
+    content.vb: Public Sub New(expression As Expression, restrictions As BindingRestrictions)
+    parameters:
+    - id: expression
+      type: Expression
+      description: The expression representing this @'System.Dynamic.DynamicMetaObject' during the dynamic binding process.
+    - id: restrictions
+      type: System.Dynamic.BindingRestrictions
+      description: The set of binding restrictions under which the binding is valid.
+- uid: System.Dynamic.DynamicMetaObject.#ctor(Expression,System.Dynamic.BindingRestrictions,System.Object)
+  id: '#ctor(Expression,System.Dynamic.BindingRestrictions,System.Object)'
+  parent: System.Dynamic.DynamicMetaObject
+  href: System.Dynamic.DynamicMetaObject.yml
+  name: DynamicMetaObject(Expression, BindingRestrictions, Object)
+  fullName: System.Dynamic.DynamicMetaObject.DynamicMetaObject(Expression, System.Dynamic.BindingRestrictions, System.Object)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/DynamicMetaObject.cs
+    startLine: 46
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  summary: Initializes a new instance of the @'System.Dynamic.DynamicMetaObject' class.
+  syntax:
+    content: public DynamicMetaObject(Expression expression, BindingRestrictions restrictions, object value)
+    content.vb: Public Sub New(expression As Expression, restrictions As BindingRestrictions, value As Object)
+    parameters:
+    - id: expression
+      type: Expression
+      description: The expression representing this @'System.Dynamic.DynamicMetaObject' during the dynamic binding process.
+    - id: restrictions
+      type: System.Dynamic.BindingRestrictions
+      description: The set of binding restrictions under which the binding is valid.
+    - id: value
+      type: System.Object
+      description: The runtime value represented by the @'System.Dynamic.DynamicMetaObject'.
+- uid: System.Dynamic.DynamicMetaObject.Expression
+  id: Expression
+  parent: System.Dynamic.DynamicMetaObject
+  href: System.Dynamic.DynamicMetaObject.yml
+  name: Expression
+  fullName: System.Dynamic.DynamicMetaObject.Expression
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/DynamicMetaObject.cs
+    startLine: 56
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  summary: The expression representing the @'System.Dynamic.DynamicMetaObject' during the dynamic binding process.
+  syntax:
+    content: public Expression Expression { get; }
+    content.vb: Public ReadOnly Property Expression As Expression
+    parameters: []
+    return:
+      type: Expression
+- uid: System.Dynamic.DynamicMetaObject.Restrictions
+  id: Restrictions
+  parent: System.Dynamic.DynamicMetaObject
+  href: System.Dynamic.DynamicMetaObject.yml
+  name: Restrictions
+  fullName: System.Dynamic.DynamicMetaObject.Restrictions
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/DynamicMetaObject.cs
+    startLine: 67
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  summary: The set of binding restrictions under which the binding is valid.
+  syntax:
+    content: public BindingRestrictions Restrictions { get; }
+    content.vb: Public ReadOnly Property Restrictions As BindingRestrictions
+    parameters: []
+    return:
+      type: System.Dynamic.BindingRestrictions
+- uid: System.Dynamic.DynamicMetaObject.Value
+  id: Value
+  parent: System.Dynamic.DynamicMetaObject
+  href: System.Dynamic.DynamicMetaObject.yml
+  name: Value
+  fullName: System.Dynamic.DynamicMetaObject.Value
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/DynamicMetaObject.cs
+    startLine: 78
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  summary: The runtime value represented by this @'System.Dynamic.DynamicMetaObject'.
+  syntax:
+    content: public object Value { get; }
+    content.vb: Public ReadOnly Property Value As Object
+    parameters: []
+    return:
+      type: System.Object
+- uid: System.Dynamic.DynamicMetaObject.HasValue
+  id: HasValue
+  parent: System.Dynamic.DynamicMetaObject
+  href: System.Dynamic.DynamicMetaObject.yml
+  name: HasValue
+  fullName: System.Dynamic.DynamicMetaObject.HasValue
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/DynamicMetaObject.cs
+    startLine: 89
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  summary: Gets a value indicating whether the @'System.Dynamic.DynamicMetaObject' has the runtime value.
+  syntax:
+    content: public bool HasValue { get; }
+    content.vb: Public ReadOnly Property HasValue As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Dynamic.DynamicMetaObject.RuntimeType
+  id: RuntimeType
+  parent: System.Dynamic.DynamicMetaObject
+  href: System.Dynamic.DynamicMetaObject.yml
+  name: RuntimeType
+  fullName: System.Dynamic.DynamicMetaObject.RuntimeType
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/DynamicMetaObject.cs
+    startLine: 101
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  summary: Gets the @'System.Type' of the runtime value or null if the @'System.Dynamic.DynamicMetaObject' has no value associated with it.
+  syntax:
+    content: public Type RuntimeType { get; }
+    content.vb: Public ReadOnly Property RuntimeType As Type
+    parameters: []
+    return:
+      type: System.Type
+- uid: System.Dynamic.DynamicMetaObject.LimitType
+  id: LimitType
+  parent: System.Dynamic.DynamicMetaObject
+  href: System.Dynamic.DynamicMetaObject.yml
+  name: LimitType
+  fullName: System.Dynamic.DynamicMetaObject.LimitType
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/DynamicMetaObject.cs
+    startLine: 133
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  summary: Gets the limit type of the @'System.Dynamic.DynamicMetaObject'.
+  remarks: Represents the most specific type known about the object represented by the @'System.Dynamic.DynamicMetaObject'. @'System.Dynamic.DynamicMetaObject.RuntimeType' if runtime value is available, a type of the @'System.Dynamic.DynamicMetaObject.Expression' otherwise.
+  syntax:
+    content: public Type LimitType { get; }
+    content.vb: Public ReadOnly Property LimitType As Type
+    parameters: []
+    return:
+      type: System.Type
+- uid: System.Dynamic.DynamicMetaObject.BindConvert(System.Dynamic.ConvertBinder)
+  id: BindConvert(System.Dynamic.ConvertBinder)
+  parent: System.Dynamic.DynamicMetaObject
+  href: System.Dynamic.DynamicMetaObject.yml
+  name: BindConvert(ConvertBinder)
+  fullName: System.Dynamic.DynamicMetaObject.BindConvert(System.Dynamic.ConvertBinder)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/DynamicMetaObject.cs
+    startLine: 146
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  summary: Performs the binding of the dynamic conversion operation.
+  syntax:
+    content: public virtual DynamicMetaObject BindConvert(ConvertBinder binder)
+    content.vb: Public Overridable Function BindConvert(binder As ConvertBinder) As DynamicMetaObject
+    parameters:
+    - id: binder
+      type: System.Dynamic.ConvertBinder
+      description: An instance of the @'System.Dynamic.ConvertBinder' that represents the details of the dynamic operation.
+    return:
+      type: System.Dynamic.DynamicMetaObject
+      description: The new @'System.Dynamic.DynamicMetaObject' representing the result of the binding.
+- uid: System.Dynamic.DynamicMetaObject.BindGetMember(System.Dynamic.GetMemberBinder)
+  id: BindGetMember(System.Dynamic.GetMemberBinder)
+  parent: System.Dynamic.DynamicMetaObject
+  href: System.Dynamic.DynamicMetaObject.yml
+  name: BindGetMember(GetMemberBinder)
+  fullName: System.Dynamic.DynamicMetaObject.BindGetMember(System.Dynamic.GetMemberBinder)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/DynamicMetaObject.cs
+    startLine: 157
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  summary: Performs the binding of the dynamic get member operation.
+  syntax:
+    content: public virtual DynamicMetaObject BindGetMember(GetMemberBinder binder)
+    content.vb: Public Overridable Function BindGetMember(binder As GetMemberBinder) As DynamicMetaObject
+    parameters:
+    - id: binder
+      type: System.Dynamic.GetMemberBinder
+      description: An instance of the @'System.Dynamic.GetMemberBinder' that represents the details of the dynamic operation.
+    return:
+      type: System.Dynamic.DynamicMetaObject
+      description: The new @'System.Dynamic.DynamicMetaObject' representing the result of the binding.
+- uid: System.Dynamic.DynamicMetaObject.BindSetMember(System.Dynamic.SetMemberBinder,System.Dynamic.DynamicMetaObject)
+  id: BindSetMember(System.Dynamic.SetMemberBinder,System.Dynamic.DynamicMetaObject)
+  parent: System.Dynamic.DynamicMetaObject
+  href: System.Dynamic.DynamicMetaObject.yml
+  name: BindSetMember(SetMemberBinder, DynamicMetaObject)
+  fullName: System.Dynamic.DynamicMetaObject.BindSetMember(System.Dynamic.SetMemberBinder, System.Dynamic.DynamicMetaObject)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/DynamicMetaObject.cs
+    startLine: 169
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  summary: Performs the binding of the dynamic set member operation.
+  syntax:
+    content: public virtual DynamicMetaObject BindSetMember(SetMemberBinder binder, DynamicMetaObject value)
+    content.vb: Public Overridable Function BindSetMember(binder As SetMemberBinder, value As DynamicMetaObject) As DynamicMetaObject
+    parameters:
+    - id: binder
+      type: System.Dynamic.SetMemberBinder
+      description: An instance of the @'System.Dynamic.SetMemberBinder' that represents the details of the dynamic operation.
+    - id: value
+      type: System.Dynamic.DynamicMetaObject
+      description: The @'System.Dynamic.DynamicMetaObject' representing the value for the set member operation.
+    return:
+      type: System.Dynamic.DynamicMetaObject
+      description: The new @'System.Dynamic.DynamicMetaObject' representing the result of the binding.
+- uid: System.Dynamic.DynamicMetaObject.BindDeleteMember(System.Dynamic.DeleteMemberBinder)
+  id: BindDeleteMember(System.Dynamic.DeleteMemberBinder)
+  parent: System.Dynamic.DynamicMetaObject
+  href: System.Dynamic.DynamicMetaObject.yml
+  name: BindDeleteMember(DeleteMemberBinder)
+  fullName: System.Dynamic.DynamicMetaObject.BindDeleteMember(System.Dynamic.DeleteMemberBinder)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/DynamicMetaObject.cs
+    startLine: 180
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  summary: Performs the binding of the dynamic delete member operation.
+  syntax:
+    content: public virtual DynamicMetaObject BindDeleteMember(DeleteMemberBinder binder)
+    content.vb: Public Overridable Function BindDeleteMember(binder As DeleteMemberBinder) As DynamicMetaObject
+    parameters:
+    - id: binder
+      type: System.Dynamic.DeleteMemberBinder
+      description: An instance of the @'System.Dynamic.DeleteMemberBinder' that represents the details of the dynamic operation.
+    return:
+      type: System.Dynamic.DynamicMetaObject
+      description: The new @'System.Dynamic.DynamicMetaObject' representing the result of the binding.
+- uid: System.Dynamic.DynamicMetaObject.BindGetIndex(System.Dynamic.GetIndexBinder,System.Dynamic.DynamicMetaObject[])
+  id: BindGetIndex(System.Dynamic.GetIndexBinder,System.Dynamic.DynamicMetaObject[])
+  parent: System.Dynamic.DynamicMetaObject
+  href: System.Dynamic.DynamicMetaObject.yml
+  name: BindGetIndex(GetIndexBinder, DynamicMetaObject[])
+  name.vb: BindGetIndex(GetIndexBinder, DynamicMetaObject())
+  fullName: System.Dynamic.DynamicMetaObject.BindGetIndex(System.Dynamic.GetIndexBinder, System.Dynamic.DynamicMetaObject[])
+  fullName.vb: System.Dynamic.DynamicMetaObject.BindGetIndex(System.Dynamic.GetIndexBinder, System.Dynamic.DynamicMetaObject())
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/DynamicMetaObject.cs
+    startLine: 192
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  summary: Performs the binding of the dynamic get index operation.
+  syntax:
+    content: public virtual DynamicMetaObject BindGetIndex(GetIndexBinder binder, DynamicMetaObject[] indexes)
+    content.vb: Public Overridable Function BindGetIndex(binder As GetIndexBinder, indexes As DynamicMetaObject()) As DynamicMetaObject
+    parameters:
+    - id: binder
+      type: System.Dynamic.GetIndexBinder
+      description: An instance of the @'System.Dynamic.GetIndexBinder' that represents the details of the dynamic operation.
+    - id: indexes
+      type: System.Dynamic.DynamicMetaObject[]
+      description: An array of @'System.Dynamic.DynamicMetaObject' instances - indexes for the get index operation.
+    return:
+      type: System.Dynamic.DynamicMetaObject
+      description: The new @'System.Dynamic.DynamicMetaObject' representing the result of the binding.
+- uid: System.Dynamic.DynamicMetaObject.BindSetIndex(System.Dynamic.SetIndexBinder,System.Dynamic.DynamicMetaObject[],System.Dynamic.DynamicMetaObject)
+  id: BindSetIndex(System.Dynamic.SetIndexBinder,System.Dynamic.DynamicMetaObject[],System.Dynamic.DynamicMetaObject)
+  parent: System.Dynamic.DynamicMetaObject
+  href: System.Dynamic.DynamicMetaObject.yml
+  name: BindSetIndex(SetIndexBinder, DynamicMetaObject[], DynamicMetaObject)
+  name.vb: BindSetIndex(SetIndexBinder, DynamicMetaObject(), DynamicMetaObject)
+  fullName: System.Dynamic.DynamicMetaObject.BindSetIndex(System.Dynamic.SetIndexBinder, System.Dynamic.DynamicMetaObject[], System.Dynamic.DynamicMetaObject)
+  fullName.vb: System.Dynamic.DynamicMetaObject.BindSetIndex(System.Dynamic.SetIndexBinder, System.Dynamic.DynamicMetaObject(), System.Dynamic.DynamicMetaObject)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/DynamicMetaObject.cs
+    startLine: 205
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  summary: Performs the binding of the dynamic set index operation.
+  syntax:
+    content: public virtual DynamicMetaObject BindSetIndex(SetIndexBinder binder, DynamicMetaObject[] indexes, DynamicMetaObject value)
+    content.vb: Public Overridable Function BindSetIndex(binder As SetIndexBinder, indexes As DynamicMetaObject(), value As DynamicMetaObject) As DynamicMetaObject
+    parameters:
+    - id: binder
+      type: System.Dynamic.SetIndexBinder
+      description: An instance of the @'System.Dynamic.SetIndexBinder' that represents the details of the dynamic operation.
+    - id: indexes
+      type: System.Dynamic.DynamicMetaObject[]
+      description: An array of @'System.Dynamic.DynamicMetaObject' instances - indexes for the set index operation.
+    - id: value
+      type: System.Dynamic.DynamicMetaObject
+      description: The @'System.Dynamic.DynamicMetaObject' representing the value for the set index operation.
+    return:
+      type: System.Dynamic.DynamicMetaObject
+      description: The new @'System.Dynamic.DynamicMetaObject' representing the result of the binding.
+- uid: System.Dynamic.DynamicMetaObject.BindDeleteIndex(System.Dynamic.DeleteIndexBinder,System.Dynamic.DynamicMetaObject[])
+  id: BindDeleteIndex(System.Dynamic.DeleteIndexBinder,System.Dynamic.DynamicMetaObject[])
+  parent: System.Dynamic.DynamicMetaObject
+  href: System.Dynamic.DynamicMetaObject.yml
+  name: BindDeleteIndex(DeleteIndexBinder, DynamicMetaObject[])
+  name.vb: BindDeleteIndex(DeleteIndexBinder, DynamicMetaObject())
+  fullName: System.Dynamic.DynamicMetaObject.BindDeleteIndex(System.Dynamic.DeleteIndexBinder, System.Dynamic.DynamicMetaObject[])
+  fullName.vb: System.Dynamic.DynamicMetaObject.BindDeleteIndex(System.Dynamic.DeleteIndexBinder, System.Dynamic.DynamicMetaObject())
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/DynamicMetaObject.cs
+    startLine: 217
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  summary: Performs the binding of the dynamic delete index operation.
+  syntax:
+    content: public virtual DynamicMetaObject BindDeleteIndex(DeleteIndexBinder binder, DynamicMetaObject[] indexes)
+    content.vb: Public Overridable Function BindDeleteIndex(binder As DeleteIndexBinder, indexes As DynamicMetaObject()) As DynamicMetaObject
+    parameters:
+    - id: binder
+      type: System.Dynamic.DeleteIndexBinder
+      description: An instance of the @'System.Dynamic.DeleteIndexBinder' that represents the details of the dynamic operation.
+    - id: indexes
+      type: System.Dynamic.DynamicMetaObject[]
+      description: An array of @'System.Dynamic.DynamicMetaObject' instances - indexes for the delete index operation.
+    return:
+      type: System.Dynamic.DynamicMetaObject
+      description: The new @'System.Dynamic.DynamicMetaObject' representing the result of the binding.
+- uid: System.Dynamic.DynamicMetaObject.BindInvokeMember(System.Dynamic.InvokeMemberBinder,System.Dynamic.DynamicMetaObject[])
+  id: BindInvokeMember(System.Dynamic.InvokeMemberBinder,System.Dynamic.DynamicMetaObject[])
+  parent: System.Dynamic.DynamicMetaObject
+  href: System.Dynamic.DynamicMetaObject.yml
+  name: BindInvokeMember(InvokeMemberBinder, DynamicMetaObject[])
+  name.vb: BindInvokeMember(InvokeMemberBinder, DynamicMetaObject())
+  fullName: System.Dynamic.DynamicMetaObject.BindInvokeMember(System.Dynamic.InvokeMemberBinder, System.Dynamic.DynamicMetaObject[])
+  fullName.vb: System.Dynamic.DynamicMetaObject.BindInvokeMember(System.Dynamic.InvokeMemberBinder, System.Dynamic.DynamicMetaObject())
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/DynamicMetaObject.cs
+    startLine: 229
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  summary: Performs the binding of the dynamic invoke member operation.
+  syntax:
+    content: public virtual DynamicMetaObject BindInvokeMember(InvokeMemberBinder binder, DynamicMetaObject[] args)
+    content.vb: Public Overridable Function BindInvokeMember(binder As InvokeMemberBinder, args As DynamicMetaObject()) As DynamicMetaObject
+    parameters:
+    - id: binder
+      type: System.Dynamic.InvokeMemberBinder
+      description: An instance of the @'System.Dynamic.InvokeMemberBinder' that represents the details of the dynamic operation.
+    - id: args
+      type: System.Dynamic.DynamicMetaObject[]
+      description: An array of @'System.Dynamic.DynamicMetaObject' instances - arguments to the invoke member operation.
+    return:
+      type: System.Dynamic.DynamicMetaObject
+      description: The new @'System.Dynamic.DynamicMetaObject' representing the result of the binding.
+- uid: System.Dynamic.DynamicMetaObject.BindInvoke(System.Dynamic.InvokeBinder,System.Dynamic.DynamicMetaObject[])
+  id: BindInvoke(System.Dynamic.InvokeBinder,System.Dynamic.DynamicMetaObject[])
+  parent: System.Dynamic.DynamicMetaObject
+  href: System.Dynamic.DynamicMetaObject.yml
+  name: BindInvoke(InvokeBinder, DynamicMetaObject[])
+  name.vb: BindInvoke(InvokeBinder, DynamicMetaObject())
+  fullName: System.Dynamic.DynamicMetaObject.BindInvoke(System.Dynamic.InvokeBinder, System.Dynamic.DynamicMetaObject[])
+  fullName.vb: System.Dynamic.DynamicMetaObject.BindInvoke(System.Dynamic.InvokeBinder, System.Dynamic.DynamicMetaObject())
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/DynamicMetaObject.cs
+    startLine: 241
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  summary: Performs the binding of the dynamic invoke operation.
+  syntax:
+    content: public virtual DynamicMetaObject BindInvoke(InvokeBinder binder, DynamicMetaObject[] args)
+    content.vb: Public Overridable Function BindInvoke(binder As InvokeBinder, args As DynamicMetaObject()) As DynamicMetaObject
+    parameters:
+    - id: binder
+      type: System.Dynamic.InvokeBinder
+      description: An instance of the @'System.Dynamic.InvokeBinder' that represents the details of the dynamic operation.
+    - id: args
+      type: System.Dynamic.DynamicMetaObject[]
+      description: An array of @'System.Dynamic.DynamicMetaObject' instances - arguments to the invoke operation.
+    return:
+      type: System.Dynamic.DynamicMetaObject
+      description: The new @'System.Dynamic.DynamicMetaObject' representing the result of the binding.
+- uid: System.Dynamic.DynamicMetaObject.BindCreateInstance(System.Dynamic.CreateInstanceBinder,System.Dynamic.DynamicMetaObject[])
+  id: BindCreateInstance(System.Dynamic.CreateInstanceBinder,System.Dynamic.DynamicMetaObject[])
+  parent: System.Dynamic.DynamicMetaObject
+  href: System.Dynamic.DynamicMetaObject.yml
+  name: BindCreateInstance(CreateInstanceBinder, DynamicMetaObject[])
+  name.vb: BindCreateInstance(CreateInstanceBinder, DynamicMetaObject())
+  fullName: System.Dynamic.DynamicMetaObject.BindCreateInstance(System.Dynamic.CreateInstanceBinder, System.Dynamic.DynamicMetaObject[])
+  fullName.vb: System.Dynamic.DynamicMetaObject.BindCreateInstance(System.Dynamic.CreateInstanceBinder, System.Dynamic.DynamicMetaObject())
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/DynamicMetaObject.cs
+    startLine: 253
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  summary: Performs the binding of the dynamic create instance operation.
+  syntax:
+    content: public virtual DynamicMetaObject BindCreateInstance(CreateInstanceBinder binder, DynamicMetaObject[] args)
+    content.vb: Public Overridable Function BindCreateInstance(binder As CreateInstanceBinder, args As DynamicMetaObject()) As DynamicMetaObject
+    parameters:
+    - id: binder
+      type: System.Dynamic.CreateInstanceBinder
+      description: An instance of the @'System.Dynamic.CreateInstanceBinder' that represents the details of the dynamic operation.
+    - id: args
+      type: System.Dynamic.DynamicMetaObject[]
+      description: An array of @'System.Dynamic.DynamicMetaObject' instances - arguments to the create instance operation.
+    return:
+      type: System.Dynamic.DynamicMetaObject
+      description: The new @'System.Dynamic.DynamicMetaObject' representing the result of the binding.
+- uid: System.Dynamic.DynamicMetaObject.BindUnaryOperation(System.Dynamic.UnaryOperationBinder)
+  id: BindUnaryOperation(System.Dynamic.UnaryOperationBinder)
+  parent: System.Dynamic.DynamicMetaObject
+  href: System.Dynamic.DynamicMetaObject.yml
+  name: BindUnaryOperation(UnaryOperationBinder)
+  fullName: System.Dynamic.DynamicMetaObject.BindUnaryOperation(System.Dynamic.UnaryOperationBinder)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/DynamicMetaObject.cs
+    startLine: 264
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  summary: Performs the binding of the dynamic unary operation.
+  syntax:
+    content: public virtual DynamicMetaObject BindUnaryOperation(UnaryOperationBinder binder)
+    content.vb: Public Overridable Function BindUnaryOperation(binder As UnaryOperationBinder) As DynamicMetaObject
+    parameters:
+    - id: binder
+      type: System.Dynamic.UnaryOperationBinder
+      description: An instance of the @'System.Dynamic.UnaryOperationBinder' that represents the details of the dynamic operation.
+    return:
+      type: System.Dynamic.DynamicMetaObject
+      description: The new @'System.Dynamic.DynamicMetaObject' representing the result of the binding.
+- uid: System.Dynamic.DynamicMetaObject.BindBinaryOperation(System.Dynamic.BinaryOperationBinder,System.Dynamic.DynamicMetaObject)
+  id: BindBinaryOperation(System.Dynamic.BinaryOperationBinder,System.Dynamic.DynamicMetaObject)
+  parent: System.Dynamic.DynamicMetaObject
+  href: System.Dynamic.DynamicMetaObject.yml
+  name: BindBinaryOperation(BinaryOperationBinder, DynamicMetaObject)
+  fullName: System.Dynamic.DynamicMetaObject.BindBinaryOperation(System.Dynamic.BinaryOperationBinder, System.Dynamic.DynamicMetaObject)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/DynamicMetaObject.cs
+    startLine: 276
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  summary: Performs the binding of the dynamic binary operation.
+  syntax:
+    content: public virtual DynamicMetaObject BindBinaryOperation(BinaryOperationBinder binder, DynamicMetaObject arg)
+    content.vb: Public Overridable Function BindBinaryOperation(binder As BinaryOperationBinder, arg As DynamicMetaObject) As DynamicMetaObject
+    parameters:
+    - id: binder
+      type: System.Dynamic.BinaryOperationBinder
+      description: An instance of the @'System.Dynamic.BinaryOperationBinder' that represents the details of the dynamic operation.
+    - id: arg
+      type: System.Dynamic.DynamicMetaObject
+      description: An instance of the @'System.Dynamic.DynamicMetaObject' representing the right hand side of the binary operation.
+    return:
+      type: System.Dynamic.DynamicMetaObject
+      description: The new @'System.Dynamic.DynamicMetaObject' representing the result of the binding.
+- uid: System.Dynamic.DynamicMetaObject.GetDynamicMemberNames
+  id: GetDynamicMemberNames
+  parent: System.Dynamic.DynamicMetaObject
+  href: System.Dynamic.DynamicMetaObject.yml
+  name: GetDynamicMemberNames()
+  fullName: System.Dynamic.DynamicMetaObject.GetDynamicMemberNames()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/DynamicMetaObject.cs
+    startLine: 286
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  summary: Returns the enumeration of all dynamic member names.
+  syntax:
+    content: public virtual IEnumerable<string> GetDynamicMemberNames()
+    content.vb: Public Overridable Function GetDynamicMemberNames As IEnumerable(Of String)
+    return:
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: The list of dynamic member names.
+- uid: System.Dynamic.DynamicMetaObject.Create(System.Object,Expression)
+  id: Create(System.Object,Expression)
+  parent: System.Dynamic.DynamicMetaObject
+  href: System.Dynamic.DynamicMetaObject.yml
+  name: Create(Object, Expression)
+  fullName: System.Dynamic.DynamicMetaObject.Create(System.Object, Expression)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/DynamicMetaObject.cs
+    startLine: 324
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  summary: Creates a meta-object for the specified object.
+  syntax:
+    content: public static DynamicMetaObject Create(object value, Expression expression)
+    content.vb: Public Shared Function Create(value As Object, expression As Expression) As DynamicMetaObject
+    parameters:
+    - id: value
+      type: System.Object
+      description: The object to get a meta-object for.
+    - id: expression
+      type: Expression
+      description: The expression representing this @'System.Dynamic.DynamicMetaObject' during the dynamic binding process.
+    return:
+      type: System.Dynamic.DynamicMetaObject
+      description: >-
+        If the given object implements @'System.Dynamic.IDynamicMetaObjectProvider' and is not a remote object from outside the current AppDomain,
+
+        returns the object's specific meta-object returned by @'System.Dynamic.IDynamicMetaObjectProvider.GetMetaObject(Expression)'. Otherwise a plain new meta-object
+
+        with no restrictions is created and returned.
+references:
+- uid: System.Dynamic
+  isExternal: false
+  name: System.Dynamic
+  fullName: System.Dynamic
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Dynamic.DynamicMetaObject
+  parent: System.Dynamic
+  isExternal: false
+  href: System.Dynamic.DynamicMetaObject.yml
+  name: DynamicMetaObject
+  fullName: System.Dynamic.DynamicMetaObject
+  type: Class
+  summary: Represents the dynamic binding and a binding logic of an object participating in the dynamic binding.
+- uid: Expression
+  isExternal: true
+  name: Expression
+  fullName: Expression
+- uid: System.Dynamic.BindingRestrictions
+  parent: System.Dynamic
+  isExternal: false
+  href: System.Dynamic.BindingRestrictions.yml
+  name: BindingRestrictions
+  fullName: System.Dynamic.BindingRestrictions
+  type: Class
+  summary: Represents a set of binding restrictions on the @'System.Dynamic.DynamicMetaObject'under which the dynamic binding is valid.
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  fullName: System.Type
+- uid: System.Dynamic.DynamicMetaObject.RuntimeType
+- uid: System.Dynamic.DynamicMetaObject.Expression
+- uid: System.Dynamic.ConvertBinder
+  isExternal: false
+  href: System.Dynamic.ConvertBinder.yml
+  name: ConvertBinder
+  fullName: System.Dynamic.ConvertBinder
+  type: Class
+  summary: Represents the convert dynamic operation at the call site, providing the binding semantic and the details about the operation.
+- uid: System.Dynamic.GetMemberBinder
+  parent: System.Dynamic
+  isExternal: false
+  href: System.Dynamic.GetMemberBinder.yml
+  name: GetMemberBinder
+  fullName: System.Dynamic.GetMemberBinder
+  type: Class
+  summary: Represents the dynamic get member operation at the call site, providing the binding semantic and the details about the operation.
+- uid: System.Dynamic.SetMemberBinder
+  parent: System.Dynamic
+  isExternal: false
+  href: System.Dynamic.SetMemberBinder.yml
+  name: SetMemberBinder
+  fullName: System.Dynamic.SetMemberBinder
+  type: Class
+  summary: Represents the dynamic set member operation at the call site, providing the binding semantic and the details about the operation.
+- uid: System.Dynamic.DeleteMemberBinder
+  isExternal: false
+  href: System.Dynamic.DeleteMemberBinder.yml
+  name: DeleteMemberBinder
+  fullName: System.Dynamic.DeleteMemberBinder
+  type: Class
+  summary: Represents the dynamic delete member operation at the call site, providing the binding semantic and the details about the operation.
+- uid: System.Dynamic.GetIndexBinder
+  parent: System.Dynamic
+  isExternal: false
+  href: System.Dynamic.GetIndexBinder.yml
+  name: GetIndexBinder
+  fullName: System.Dynamic.GetIndexBinder
+  type: Class
+  summary: Represents the dynamic get index operation at the call site, providing the binding semantic and the details about the operation.
+- uid: System.Dynamic.DynamicMetaObject[]
+  isExternal: false
+  href: System.Dynamic.DynamicMetaObject.yml
+  name: DynamicMetaObject[]
+  name.vb: DynamicMetaObject()
+  fullName: System.Dynamic.DynamicMetaObject[]
+  fullName.vb: System.Dynamic.DynamicMetaObject()
+  spec.csharp:
+  - uid: System.Dynamic.DynamicMetaObject
+    name: DynamicMetaObject
+    fullName: System.Dynamic.DynamicMetaObject
+    href: System.Dynamic.DynamicMetaObject.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Dynamic.DynamicMetaObject
+    name: DynamicMetaObject
+    fullName: System.Dynamic.DynamicMetaObject
+    href: System.Dynamic.DynamicMetaObject.yml
+  - name: ()
+    fullName: ()
+- uid: System.Dynamic.SetIndexBinder
+  parent: System.Dynamic
+  isExternal: false
+  href: System.Dynamic.SetIndexBinder.yml
+  name: SetIndexBinder
+  fullName: System.Dynamic.SetIndexBinder
+  type: Class
+  summary: Represents the dynamic set index operation at the call site, providing the binding semantic and the details about the operation.
+- uid: System.Dynamic.DeleteIndexBinder
+  isExternal: false
+  href: System.Dynamic.DeleteIndexBinder.yml
+  name: DeleteIndexBinder
+  fullName: System.Dynamic.DeleteIndexBinder
+  type: Class
+  summary: Represents the dynamic delete index operation at the call site, providing the binding semantic and the details about the operation.
+- uid: System.Dynamic.InvokeMemberBinder
+  parent: System.Dynamic
+  isExternal: false
+  href: System.Dynamic.InvokeMemberBinder.yml
+  name: InvokeMemberBinder
+  fullName: System.Dynamic.InvokeMemberBinder
+  type: Class
+  summary: >-
+    Represents the invoke member dynamic operation at the call site,
+
+    providing the binding semantic and the details about the operation.
+- uid: System.Dynamic.InvokeBinder
+  parent: System.Dynamic
+  isExternal: false
+  href: System.Dynamic.InvokeBinder.yml
+  name: InvokeBinder
+  fullName: System.Dynamic.InvokeBinder
+  type: Class
+  summary: Represents the invoke dynamic operation at the call site, providing the binding semantic and the details about the operation.
+- uid: System.Dynamic.CreateInstanceBinder
+  isExternal: false
+  href: System.Dynamic.CreateInstanceBinder.yml
+  name: CreateInstanceBinder
+  fullName: System.Dynamic.CreateInstanceBinder
+  type: Class
+  summary: Represents the create dynamic operation at the call site, providing the binding semantic and the details about the operation.
+- uid: System.Dynamic.UnaryOperationBinder
+  parent: System.Dynamic
+  isExternal: false
+  href: System.Dynamic.UnaryOperationBinder.yml
+  name: UnaryOperationBinder
+  fullName: System.Dynamic.UnaryOperationBinder
+  type: Class
+  summary: Represents the unary dynamic operation at the call site, providing the binding semantic and the details about the operation.
+- uid: System.Dynamic.BinaryOperationBinder
+  isExternal: false
+  href: System.Dynamic.BinaryOperationBinder.yml
+  name: BinaryOperationBinder
+  fullName: System.Dynamic.BinaryOperationBinder
+  type: Class
+  summary: Represents the binary dynamic operation at the call site, providing the binding semantic and the details about the operation.
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<String>
+  name.vb: IEnumerable(Of String)
+  fullName: System.Collections.Generic.IEnumerable<System.String>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Dynamic.IDynamicMetaObjectProvider
+  parent: System.Dynamic
+  isExternal: false
+  href: System.Dynamic.IDynamicMetaObjectProvider.yml
+  name: IDynamicMetaObjectProvider
+  fullName: System.Dynamic.IDynamicMetaObjectProvider
+  type: Interface
+  summary: Represents a dynamic object, that can have its operations bound at runtime.
+- uid: System.Dynamic.IDynamicMetaObjectProvider.GetMetaObject(Expression)

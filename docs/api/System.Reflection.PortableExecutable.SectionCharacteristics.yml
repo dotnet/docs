@@ -1,0 +1,856 @@
+items:
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics
+  id: SectionCharacteristics
+  parent: System.Reflection.PortableExecutable
+  children:
+  - System.Reflection.PortableExecutable.SectionCharacteristics.Align1024Bytes
+  - System.Reflection.PortableExecutable.SectionCharacteristics.Align128Bytes
+  - System.Reflection.PortableExecutable.SectionCharacteristics.Align16Bytes
+  - System.Reflection.PortableExecutable.SectionCharacteristics.Align1Bytes
+  - System.Reflection.PortableExecutable.SectionCharacteristics.Align2048Bytes
+  - System.Reflection.PortableExecutable.SectionCharacteristics.Align256Bytes
+  - System.Reflection.PortableExecutable.SectionCharacteristics.Align2Bytes
+  - System.Reflection.PortableExecutable.SectionCharacteristics.Align32Bytes
+  - System.Reflection.PortableExecutable.SectionCharacteristics.Align4096Bytes
+  - System.Reflection.PortableExecutable.SectionCharacteristics.Align4Bytes
+  - System.Reflection.PortableExecutable.SectionCharacteristics.Align512Bytes
+  - System.Reflection.PortableExecutable.SectionCharacteristics.Align64Bytes
+  - System.Reflection.PortableExecutable.SectionCharacteristics.Align8192Bytes
+  - System.Reflection.PortableExecutable.SectionCharacteristics.Align8Bytes
+  - System.Reflection.PortableExecutable.SectionCharacteristics.AlignMask
+  - System.Reflection.PortableExecutable.SectionCharacteristics.ContainsCode
+  - System.Reflection.PortableExecutable.SectionCharacteristics.ContainsInitializedData
+  - System.Reflection.PortableExecutable.SectionCharacteristics.ContainsUninitializedData
+  - System.Reflection.PortableExecutable.SectionCharacteristics.GPRel
+  - System.Reflection.PortableExecutable.SectionCharacteristics.LinkerComdat
+  - System.Reflection.PortableExecutable.SectionCharacteristics.LinkerInfo
+  - System.Reflection.PortableExecutable.SectionCharacteristics.LinkerNRelocOvfl
+  - System.Reflection.PortableExecutable.SectionCharacteristics.LinkerOther
+  - System.Reflection.PortableExecutable.SectionCharacteristics.LinkerRemove
+  - System.Reflection.PortableExecutable.SectionCharacteristics.Mem16Bit
+  - System.Reflection.PortableExecutable.SectionCharacteristics.MemDiscardable
+  - System.Reflection.PortableExecutable.SectionCharacteristics.MemExecute
+  - System.Reflection.PortableExecutable.SectionCharacteristics.MemFardata
+  - System.Reflection.PortableExecutable.SectionCharacteristics.MemLocked
+  - System.Reflection.PortableExecutable.SectionCharacteristics.MemNotCached
+  - System.Reflection.PortableExecutable.SectionCharacteristics.MemNotPaged
+  - System.Reflection.PortableExecutable.SectionCharacteristics.MemPreload
+  - System.Reflection.PortableExecutable.SectionCharacteristics.MemProtected
+  - System.Reflection.PortableExecutable.SectionCharacteristics.MemPurgeable
+  - System.Reflection.PortableExecutable.SectionCharacteristics.MemRead
+  - System.Reflection.PortableExecutable.SectionCharacteristics.MemShared
+  - System.Reflection.PortableExecutable.SectionCharacteristics.MemSysheap
+  - System.Reflection.PortableExecutable.SectionCharacteristics.MemWrite
+  - System.Reflection.PortableExecutable.SectionCharacteristics.NoDeferSpecExc
+  - System.Reflection.PortableExecutable.SectionCharacteristics.TypeCopy
+  - System.Reflection.PortableExecutable.SectionCharacteristics.TypeDSect
+  - System.Reflection.PortableExecutable.SectionCharacteristics.TypeGroup
+  - System.Reflection.PortableExecutable.SectionCharacteristics.TypeNoLoad
+  - System.Reflection.PortableExecutable.SectionCharacteristics.TypeNoPad
+  - System.Reflection.PortableExecutable.SectionCharacteristics.TypeOver
+  - System.Reflection.PortableExecutable.SectionCharacteristics.TypeReg
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: SectionCharacteristics
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 65
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: 'public enum SectionCharacteristics : uint'
+    content.vb: Public Enum SectionCharacteristics As UInteger
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.TypeReg
+  id: TypeReg
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: TypeReg
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.TypeReg
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 68
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: TypeReg = 0U
+    content.vb: TypeReg = 0UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.TypeDSect
+  id: TypeDSect
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: TypeDSect
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.TypeDSect
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 69
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: TypeDSect = 1U
+    content.vb: TypeDSect = 1UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.TypeNoLoad
+  id: TypeNoLoad
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: TypeNoLoad
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.TypeNoLoad
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 70
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: TypeNoLoad = 2U
+    content.vb: TypeNoLoad = 2UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.TypeGroup
+  id: TypeGroup
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: TypeGroup
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.TypeGroup
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 71
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: TypeGroup = 4U
+    content.vb: TypeGroup = 4UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.TypeNoPad
+  id: TypeNoPad
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: TypeNoPad
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.TypeNoPad
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 72
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: TypeNoPad = 8U
+    content.vb: TypeNoPad = 8UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.TypeCopy
+  id: TypeCopy
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: TypeCopy
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.TypeCopy
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 73
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: TypeCopy = 16U
+    content.vb: TypeCopy = 16UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.ContainsCode
+  id: ContainsCode
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: ContainsCode
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.ContainsCode
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 75
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: ContainsCode = 32U
+    content.vb: ContainsCode = 32UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.ContainsInitializedData
+  id: ContainsInitializedData
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: ContainsInitializedData
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.ContainsInitializedData
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 76
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: ContainsInitializedData = 64U
+    content.vb: ContainsInitializedData = 64UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.ContainsUninitializedData
+  id: ContainsUninitializedData
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: ContainsUninitializedData
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.ContainsUninitializedData
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 77
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: ContainsUninitializedData = 128U
+    content.vb: ContainsUninitializedData = 128UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.LinkerOther
+  id: LinkerOther
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: LinkerOther
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.LinkerOther
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 79
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: LinkerOther = 256U
+    content.vb: LinkerOther = 256UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.LinkerInfo
+  id: LinkerInfo
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: LinkerInfo
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.LinkerInfo
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 80
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: LinkerInfo = 512U
+    content.vb: LinkerInfo = 512UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.TypeOver
+  id: TypeOver
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: TypeOver
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.TypeOver
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 81
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: TypeOver = 1024U
+    content.vb: TypeOver = 1024UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.LinkerRemove
+  id: LinkerRemove
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: LinkerRemove
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.LinkerRemove
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 82
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: LinkerRemove = 2048U
+    content.vb: LinkerRemove = 2048UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.LinkerComdat
+  id: LinkerComdat
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: LinkerComdat
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.LinkerComdat
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 83
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: LinkerComdat = 4096U
+    content.vb: LinkerComdat = 4096UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.MemProtected
+  id: MemProtected
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: MemProtected
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.MemProtected
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 85
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: MemProtected = 16384U
+    content.vb: MemProtected = 16384UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.NoDeferSpecExc
+  id: NoDeferSpecExc
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: NoDeferSpecExc
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.NoDeferSpecExc
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 86
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: NoDeferSpecExc = 16384U
+    content.vb: NoDeferSpecExc = 16384UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.GPRel
+  id: GPRel
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: GPRel
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.GPRel
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 87
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: GPRel = 32768U
+    content.vb: GPRel = 32768UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.MemFardata
+  id: MemFardata
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: MemFardata
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.MemFardata
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 88
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: MemFardata = 32768U
+    content.vb: MemFardata = 32768UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.MemSysheap
+  id: MemSysheap
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: MemSysheap
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.MemSysheap
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 89
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: MemSysheap = 65536U
+    content.vb: MemSysheap = 65536UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.MemPurgeable
+  id: MemPurgeable
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: MemPurgeable
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.MemPurgeable
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 90
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: MemPurgeable = 131072U
+    content.vb: MemPurgeable = 131072UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.Mem16Bit
+  id: Mem16Bit
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: Mem16Bit
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.Mem16Bit
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 91
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: Mem16Bit = 131072U
+    content.vb: Mem16Bit = 131072UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.MemLocked
+  id: MemLocked
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: MemLocked
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.MemLocked
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 92
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: MemLocked = 262144U
+    content.vb: MemLocked = 262144UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.MemPreload
+  id: MemPreload
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: MemPreload
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.MemPreload
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 93
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: MemPreload = 524288U
+    content.vb: MemPreload = 524288UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.Align1Bytes
+  id: Align1Bytes
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: Align1Bytes
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.Align1Bytes
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 95
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: Align1Bytes = 1048576U
+    content.vb: Align1Bytes = 1048576UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.Align2Bytes
+  id: Align2Bytes
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: Align2Bytes
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.Align2Bytes
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 96
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: Align2Bytes = 2097152U
+    content.vb: Align2Bytes = 2097152UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.Align4Bytes
+  id: Align4Bytes
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: Align4Bytes
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.Align4Bytes
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 97
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: Align4Bytes = 3145728U
+    content.vb: Align4Bytes = 3145728UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.Align8Bytes
+  id: Align8Bytes
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: Align8Bytes
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.Align8Bytes
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 98
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: Align8Bytes = 4194304U
+    content.vb: Align8Bytes = 4194304UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.Align16Bytes
+  id: Align16Bytes
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: Align16Bytes
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.Align16Bytes
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 99
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: Align16Bytes = 5242880U
+    content.vb: Align16Bytes = 5242880UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.Align32Bytes
+  id: Align32Bytes
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: Align32Bytes
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.Align32Bytes
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 100
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: Align32Bytes = 6291456U
+    content.vb: Align32Bytes = 6291456UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.Align64Bytes
+  id: Align64Bytes
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: Align64Bytes
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.Align64Bytes
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 101
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: Align64Bytes = 7340032U
+    content.vb: Align64Bytes = 7340032UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.Align128Bytes
+  id: Align128Bytes
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: Align128Bytes
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.Align128Bytes
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 102
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: Align128Bytes = 8388608U
+    content.vb: Align128Bytes = 8388608UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.Align256Bytes
+  id: Align256Bytes
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: Align256Bytes
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.Align256Bytes
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 103
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: Align256Bytes = 9437184U
+    content.vb: Align256Bytes = 9437184UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.Align512Bytes
+  id: Align512Bytes
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: Align512Bytes
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.Align512Bytes
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 104
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: Align512Bytes = 10485760U
+    content.vb: Align512Bytes = 10485760UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.Align1024Bytes
+  id: Align1024Bytes
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: Align1024Bytes
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.Align1024Bytes
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 105
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: Align1024Bytes = 11534336U
+    content.vb: Align1024Bytes = 11534336UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.Align2048Bytes
+  id: Align2048Bytes
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: Align2048Bytes
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.Align2048Bytes
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 106
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: Align2048Bytes = 12582912U
+    content.vb: Align2048Bytes = 12582912UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.Align4096Bytes
+  id: Align4096Bytes
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: Align4096Bytes
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.Align4096Bytes
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 107
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: Align4096Bytes = 13631488U
+    content.vb: Align4096Bytes = 13631488UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.Align8192Bytes
+  id: Align8192Bytes
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: Align8192Bytes
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.Align8192Bytes
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 108
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: Align8192Bytes = 14680064U
+    content.vb: Align8192Bytes = 14680064UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.AlignMask
+  id: AlignMask
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: AlignMask
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.AlignMask
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 110
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: AlignMask = 15728640U
+    content.vb: AlignMask = 15728640UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.LinkerNRelocOvfl
+  id: LinkerNRelocOvfl
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: LinkerNRelocOvfl
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.LinkerNRelocOvfl
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 112
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: LinkerNRelocOvfl = 16777216U
+    content.vb: LinkerNRelocOvfl = 16777216UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.MemDiscardable
+  id: MemDiscardable
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: MemDiscardable
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.MemDiscardable
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 113
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: MemDiscardable = 33554432U
+    content.vb: MemDiscardable = 33554432UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.MemNotCached
+  id: MemNotCached
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: MemNotCached
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.MemNotCached
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 114
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: MemNotCached = 67108864U
+    content.vb: MemNotCached = 67108864UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.MemNotPaged
+  id: MemNotPaged
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: MemNotPaged
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.MemNotPaged
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 115
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: MemNotPaged = 134217728U
+    content.vb: MemNotPaged = 134217728UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.MemShared
+  id: MemShared
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: MemShared
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.MemShared
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 116
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: MemShared = 268435456U
+    content.vb: MemShared = 268435456UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.MemExecute
+  id: MemExecute
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: MemExecute
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.MemExecute
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 117
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: MemExecute = 536870912U
+    content.vb: MemExecute = 536870912UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.MemRead
+  id: MemRead
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: MemRead
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.MemRead
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 118
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: MemRead = 1073741824U
+    content.vb: MemRead = 1073741824UI
+- uid: System.Reflection.PortableExecutable.SectionCharacteristics.MemWrite
+  id: MemWrite
+  parent: System.Reflection.PortableExecutable.SectionCharacteristics
+  href: System.Reflection.PortableExecutable.SectionCharacteristics.yml
+  name: MemWrite
+  fullName: System.Reflection.PortableExecutable.SectionCharacteristics.MemWrite
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
+    startLine: 119
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.PortableExecutable
+  syntax:
+    content: MemWrite = 2147483648U
+    content.vb: MemWrite = 2147483648UI
+references:
+- uid: System.Reflection.PortableExecutable
+  isExternal: false
+  name: System.Reflection.PortableExecutable
+  fullName: System.Reflection.PortableExecutable
+  type: Namespace

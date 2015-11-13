@@ -1,0 +1,390 @@
+items:
+- uid: System.Security.Cryptography.X509Certificates.PublicKey
+  id: PublicKey
+  parent: System.Security.Cryptography.X509Certificates
+  children:
+  - System.Security.Cryptography.X509Certificates.PublicKey.#ctor(Oid,AsnEncodedData,AsnEncodedData)
+  - System.Security.Cryptography.X509Certificates.PublicKey.EncodedKeyValue
+  - System.Security.Cryptography.X509Certificates.PublicKey.EncodedParameters
+  - System.Security.Cryptography.X509Certificates.PublicKey.Key
+  - System.Security.Cryptography.X509Certificates.PublicKey.Oid
+  href: System.Security.Cryptography.X509Certificates.PublicKey.yml
+  name: PublicKey
+  fullName: System.Security.Cryptography.X509Certificates.PublicKey
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/PublicKey.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/PublicKey.cs
+    startLine: 15
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Represents a certificate's public key information. This class cannot be inherited.
+  syntax:
+    content: public sealed class PublicKey
+    content.vb: Public NotInheritable Class PublicKey
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Security.Cryptography.X509Certificates.PublicKey.#ctor(Oid,AsnEncodedData,AsnEncodedData)
+  id: '#ctor(Oid,AsnEncodedData,AsnEncodedData)'
+  parent: System.Security.Cryptography.X509Certificates.PublicKey
+  href: System.Security.Cryptography.X509Certificates.PublicKey.yml
+  name: PublicKey(Oid, AsnEncodedData, AsnEncodedData)
+  fullName: System.Security.Cryptography.X509Certificates.PublicKey.PublicKey(Oid, AsnEncodedData, AsnEncodedData)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/PublicKey.cs
+    startLine: 17
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  syntax:
+    content: public PublicKey(Oid oid, AsnEncodedData parameters, AsnEncodedData keyValue)
+    content.vb: Public Sub New(oid As Oid, parameters As AsnEncodedData, keyValue As AsnEncodedData)
+    parameters:
+    - id: oid
+      type: Oid
+    - id: parameters
+      type: AsnEncodedData
+    - id: keyValue
+      type: AsnEncodedData
+- uid: System.Security.Cryptography.X509Certificates.PublicKey.EncodedKeyValue
+  id: EncodedKeyValue
+  parent: System.Security.Cryptography.X509Certificates.PublicKey
+  href: System.Security.Cryptography.X509Certificates.PublicKey.yml
+  name: EncodedKeyValue
+  fullName: System.Security.Cryptography.X509Certificates.PublicKey.EncodedKeyValue
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/PublicKey.cs
+    startLine: 25
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Gets the ASN.1-encoded representation of the public key value.
+  syntax:
+    content: public AsnEncodedData EncodedKeyValue { get; }
+    content.vb: Public ReadOnly Property EncodedKeyValue As AsnEncodedData
+    parameters: []
+    return:
+      type: AsnEncodedData
+- uid: System.Security.Cryptography.X509Certificates.PublicKey.EncodedParameters
+  id: EncodedParameters
+  parent: System.Security.Cryptography.X509Certificates.PublicKey
+  href: System.Security.Cryptography.X509Certificates.PublicKey.yml
+  name: EncodedParameters
+  fullName: System.Security.Cryptography.X509Certificates.PublicKey.EncodedParameters
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/PublicKey.cs
+    startLine: 27
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Gets the ASN.1-encoded representation of the public key parameters.
+  syntax:
+    content: public AsnEncodedData EncodedParameters { get; }
+    content.vb: Public ReadOnly Property EncodedParameters As AsnEncodedData
+    parameters: []
+    return:
+      type: AsnEncodedData
+- uid: System.Security.Cryptography.X509Certificates.PublicKey.Key
+  id: Key
+  parent: System.Security.Cryptography.X509Certificates.PublicKey
+  href: System.Security.Cryptography.X509Certificates.PublicKey.yml
+  name: Key
+  fullName: System.Security.Cryptography.X509Certificates.PublicKey.Key
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/PublicKey.cs
+    startLine: 29
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Gets an @'System.Security.Cryptography.RSACryptoServiceProvider' or @'System.Security.Cryptography.DSACryptoServiceProvider' object representing the public key.
+  syntax:
+    content: public AsymmetricAlgorithm Key { get; }
+    content.vb: Public ReadOnly Property Key As AsymmetricAlgorithm
+    parameters: []
+    return:
+      type: System.Security.Cryptography.AsymmetricAlgorithm
+  exceptions:
+  - type: System.NotSupportedException
+    description: The key algorithm is not supported.
+- uid: System.Security.Cryptography.X509Certificates.PublicKey.Oid
+  id: Oid
+  parent: System.Security.Cryptography.X509Certificates.PublicKey
+  href: System.Security.Cryptography.X509Certificates.PublicKey.yml
+  name: Oid
+  fullName: System.Security.Cryptography.X509Certificates.PublicKey.Oid
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/PublicKey.cs
+    startLine: 40
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Gets an object identifier (OID) object of the public key.
+  syntax:
+    content: public Oid Oid { get; }
+    content.vb: Public ReadOnly Property Oid As Oid
+    parameters: []
+    return:
+      type: Oid
+references:
+- uid: System.Security.Cryptography.X509Certificates
+  isExternal: false
+  name: System.Security.Cryptography.X509Certificates
+  fullName: System.Security.Cryptography.X509Certificates
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Oid
+  isExternal: true
+  name: Oid
+  fullName: Oid
+- uid: AsnEncodedData
+  isExternal: true
+  name: AsnEncodedData
+  fullName: AsnEncodedData
+- uid: System.Security.Cryptography.AsymmetricAlgorithm
+  parent: System.Security.Cryptography
+  isExternal: true
+  name: AsymmetricAlgorithm
+  fullName: System.Security.Cryptography.AsymmetricAlgorithm
+- uid: System.Security.Cryptography
+  isExternal: false
+  name: System.Security.Cryptography
+  fullName: System.Security.Cryptography

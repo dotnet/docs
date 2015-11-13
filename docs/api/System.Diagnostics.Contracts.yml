@@ -1,0 +1,159 @@
+items:
+- uid: System.Diagnostics.Contracts
+  id: System.Diagnostics.Contracts
+  children:
+  - System.Diagnostics.Contracts.Contract
+  - System.Diagnostics.Contracts.ContractAbbreviatorAttribute
+  - System.Diagnostics.Contracts.ContractArgumentValidatorAttribute
+  - System.Diagnostics.Contracts.ContractClassAttribute
+  - System.Diagnostics.Contracts.ContractClassForAttribute
+  - System.Diagnostics.Contracts.ContractFailedEventArgs
+  - System.Diagnostics.Contracts.ContractFailureKind
+  - System.Diagnostics.Contracts.ContractInvariantMethodAttribute
+  - System.Diagnostics.Contracts.ContractOptionAttribute
+  - System.Diagnostics.Contracts.ContractPublicPropertyNameAttribute
+  - System.Diagnostics.Contracts.ContractReferenceAssemblyAttribute
+  - System.Diagnostics.Contracts.ContractRuntimeIgnoredAttribute
+  - System.Diagnostics.Contracts.ContractVerificationAttribute
+  - System.Diagnostics.Contracts.PureAttribute
+  href: System.Diagnostics.Contracts.yml
+  name: System.Diagnostics.Contracts
+  fullName: System.Diagnostics.Contracts
+  type: Namespace
+  source:
+    remote:
+      path: src/mscorlib/src/System/Diagnostics/Contracts/ContractsBCL.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Diagnostics/Contracts/ContractsBCL.cs
+    startLine: 39
+  assemblies:
+  - mscorlib
+  summary: The @'System.Diagnostics.Contracts' namespace contains static classes for representing program contracts such as preconditions, postconditions, and invariants.
+references:
+- uid: System.Diagnostics.Contracts.PureAttribute
+  isExternal: false
+  href: System.Diagnostics.Contracts.PureAttribute.yml
+  name: PureAttribute
+  fullName: System.Diagnostics.Contracts.PureAttribute
+  type: Class
+  summary: Methods and classes marked with this attribute can be used within calls to Contract methods. Such methods not make any visible state changes.
+- uid: System.Diagnostics.Contracts.ContractClassAttribute
+  isExternal: false
+  href: System.Diagnostics.Contracts.ContractClassAttribute.yml
+  name: ContractClassAttribute
+  fullName: System.Diagnostics.Contracts.ContractClassAttribute
+  type: Class
+  summary: Types marked with this attribute specify that a separate type contains the contracts for this type.
+- uid: System.Diagnostics.Contracts.ContractClassForAttribute
+  isExternal: false
+  href: System.Diagnostics.Contracts.ContractClassForAttribute.yml
+  name: ContractClassForAttribute
+  fullName: System.Diagnostics.Contracts.ContractClassForAttribute
+  type: Class
+  summary: Types marked with this attribute specify that they are a contract for the type that is the argument of the constructor.
+- uid: System.Diagnostics.Contracts.ContractInvariantMethodAttribute
+  isExternal: false
+  href: System.Diagnostics.Contracts.ContractInvariantMethodAttribute.yml
+  name: ContractInvariantMethodAttribute
+  fullName: System.Diagnostics.Contracts.ContractInvariantMethodAttribute
+  type: Class
+  summary: >-
+    This attribute is used to mark a method as being the invariant
+
+    method for a class. The method can have any name, but it must
+
+    return "void" and take no parameters. The body of the method
+
+    must consist solely of one or more calls to the method
+
+    Contract.Invariant. A suggested name for the method is
+
+    "ObjectInvariant".
+- uid: System.Diagnostics.Contracts.ContractReferenceAssemblyAttribute
+  isExternal: false
+  href: System.Diagnostics.Contracts.ContractReferenceAssemblyAttribute.yml
+  name: ContractReferenceAssemblyAttribute
+  fullName: System.Diagnostics.Contracts.ContractReferenceAssemblyAttribute
+  type: Class
+  summary: Attribute that specifies that an assembly is a reference assembly with contracts.
+- uid: System.Diagnostics.Contracts.ContractRuntimeIgnoredAttribute
+  isExternal: false
+  href: System.Diagnostics.Contracts.ContractRuntimeIgnoredAttribute.yml
+  name: ContractRuntimeIgnoredAttribute
+  fullName: System.Diagnostics.Contracts.ContractRuntimeIgnoredAttribute
+  type: Class
+  summary: Methods (and properties) marked with this attribute can be used within calls to Contract methods, but have no runtime behavior associated with them.
+- uid: System.Diagnostics.Contracts.ContractVerificationAttribute
+  isExternal: false
+  href: System.Diagnostics.Contracts.ContractVerificationAttribute.yml
+  name: ContractVerificationAttribute
+  fullName: System.Diagnostics.Contracts.ContractVerificationAttribute
+  type: Class
+  summary: >-
+    Instructs downstream tools whether to assume the correctness of this assembly, type or member without performing any verification or not.
+
+    Can use [ContractVerification(false)] to explicitly mark assembly, type or member as one to *not* have verification performed on it.
+
+    Most specific element found (member, type, then assembly) takes precedence.
+
+    (That is useful if downstream tools allow a user to decide which polarity is the default, unmarked case.)
+- uid: System.Diagnostics.Contracts.ContractPublicPropertyNameAttribute
+  isExternal: false
+  href: System.Diagnostics.Contracts.ContractPublicPropertyNameAttribute.yml
+  name: ContractPublicPropertyNameAttribute
+  fullName: System.Diagnostics.Contracts.ContractPublicPropertyNameAttribute
+  type: Class
+  summary: >-
+    Allows a field f to be used in the method contracts for a method m when f has less visibility than m.
+
+    For instance, if the method is public, but the field is private.
+- uid: System.Diagnostics.Contracts.ContractArgumentValidatorAttribute
+  isExternal: false
+  href: System.Diagnostics.Contracts.ContractArgumentValidatorAttribute.yml
+  name: ContractArgumentValidatorAttribute
+  fullName: System.Diagnostics.Contracts.ContractArgumentValidatorAttribute
+  type: Class
+  summary: >-
+    Enables factoring legacy if-then-throw into separate methods for reuse and full control over
+
+    thrown exception and arguments
+- uid: System.Diagnostics.Contracts.ContractAbbreviatorAttribute
+  isExternal: false
+  href: System.Diagnostics.Contracts.ContractAbbreviatorAttribute.yml
+  name: ContractAbbreviatorAttribute
+  fullName: System.Diagnostics.Contracts.ContractAbbreviatorAttribute
+  type: Class
+  summary: Enables writing abbreviations for contracts that get copied to other methods
+- uid: System.Diagnostics.Contracts.ContractOptionAttribute
+  isExternal: false
+  href: System.Diagnostics.Contracts.ContractOptionAttribute.yml
+  name: ContractOptionAttribute
+  fullName: System.Diagnostics.Contracts.ContractOptionAttribute
+  type: Class
+  summary: Allows setting contract and tool options at assembly, type, or method granularity.
+- uid: System.Diagnostics.Contracts.Contract
+  isExternal: false
+  href: System.Diagnostics.Contracts.Contract.yml
+  name: Contract
+  fullName: System.Diagnostics.Contracts.Contract
+  type: Class
+  summary: Contains static methods for representing program contracts such as preconditions, postconditions, and invariants.
+- uid: System.Diagnostics.Contracts.ContractFailureKind
+  parent: System.Diagnostics.Contracts
+  isExternal: false
+  href: System.Diagnostics.Contracts.ContractFailureKind.yml
+  name: ContractFailureKind
+  fullName: System.Diagnostics.Contracts.ContractFailureKind
+  type: Enum
+- uid: System.Diagnostics.Contracts.ContractFailedEventArgs
+  isExternal: false
+  href: System.Diagnostics.Contracts.ContractFailedEventArgs.yml
+  name: ContractFailedEventArgs
+  fullName: System.Diagnostics.Contracts.ContractFailedEventArgs
+  type: Class
+- uid: System.Diagnostics.Contracts
+  isExternal: false
+  name: System.Diagnostics.Contracts
+  fullName: System.Diagnostics.Contracts
+  type: Namespace

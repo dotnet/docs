@@ -1,0 +1,26 @@
+items:
+- uid: System.Diagnostics.Contracts.Internal
+  id: System.Diagnostics.Contracts.Internal
+  children:
+  - System.Diagnostics.Contracts.Internal.ContractHelper
+  href: System.Diagnostics.Contracts.Internal.yml
+  name: System.Diagnostics.Contracts.Internal
+  fullName: System.Diagnostics.Contracts.Internal
+  type: Namespace
+  source:
+    remote:
+      path: src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Diagnostics/Contracts/Contracts.cs
+    startLine: 915
+  assemblies:
+  - mscorlib
+  summary: The @'System.Diagnostics.Contracts.Internal' namespace provides classes that the binary rewriter can use to handle a contract failure.
+references:
+- uid: System.Diagnostics.Contracts.Internal.ContractHelper
+  isExternal: false
+  href: System.Diagnostics.Contracts.Internal.ContractHelper.yml
+  name: ContractHelper
+  fullName: System.Diagnostics.Contracts.Internal.ContractHelper
+  type: Class

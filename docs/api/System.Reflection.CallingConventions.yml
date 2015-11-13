@@ -1,0 +1,119 @@
+items:
+- uid: System.Reflection.CallingConventions
+  id: CallingConventions
+  parent: System.Reflection
+  children:
+  - System.Reflection.CallingConventions.Any
+  - System.Reflection.CallingConventions.ExplicitThis
+  - System.Reflection.CallingConventions.HasThis
+  - System.Reflection.CallingConventions.Standard
+  - System.Reflection.CallingConventions.VarArgs
+  href: System.Reflection.CallingConventions.yml
+  name: CallingConventions
+  fullName: System.Reflection.CallingConventions
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Reflection/CallingConventions.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Reflection/CallingConventions.cs
+    startLine: 14
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Defines the valid calling conventions for a method.
+  syntax:
+    content: public enum CallingConventions
+    content.vb: Public Enum CallingConventions
+- uid: System.Reflection.CallingConventions.Standard
+  id: Standard
+  parent: System.Reflection.CallingConventions
+  href: System.Reflection.CallingConventions.yml
+  name: Standard
+  fullName: System.Reflection.CallingConventions.Standard
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/CallingConventions.cs
+    startLine: 21
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies the default calling convention as determined by the common language runtime. Use this calling convention for static methods. For instance or virtual methods use HasThis.
+  syntax:
+    content: Standard = 1
+- uid: System.Reflection.CallingConventions.VarArgs
+  id: VarArgs
+  parent: System.Reflection.CallingConventions
+  href: System.Reflection.CallingConventions.yml
+  name: VarArgs
+  fullName: System.Reflection.CallingConventions.VarArgs
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/CallingConventions.cs
+    startLine: 22
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies the calling convention for methods with variable arguments.
+  syntax:
+    content: VarArgs = 2
+- uid: System.Reflection.CallingConventions.Any
+  id: Any
+  parent: System.Reflection.CallingConventions
+  href: System.Reflection.CallingConventions.yml
+  name: Any
+  fullName: System.Reflection.CallingConventions.Any
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/CallingConventions.cs
+    startLine: 23
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that either the Standard or the VarArgs calling convention may be used.
+  syntax:
+    content: Any = 3
+- uid: System.Reflection.CallingConventions.HasThis
+  id: HasThis
+  parent: System.Reflection.CallingConventions
+  href: System.Reflection.CallingConventions.yml
+  name: HasThis
+  fullName: System.Reflection.CallingConventions.HasThis
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/CallingConventions.cs
+    startLine: 24
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies an instance or virtual method (not a static method). At run-time, the called method is passed a pointer to the target object as its first argument (the this pointer). The signature stored in metadata does not include the type of this first argument, because the method is known and its owner class can be discovered from metadata.
+  syntax:
+    content: HasThis = 32
+- uid: System.Reflection.CallingConventions.ExplicitThis
+  id: ExplicitThis
+  parent: System.Reflection.CallingConventions
+  href: System.Reflection.CallingConventions.yml
+  name: ExplicitThis
+  fullName: System.Reflection.CallingConventions.ExplicitThis
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/CallingConventions.cs
+    startLine: 25
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the signature is a function-pointer signature, representing a call to an instance or virtual method (not a static method). If ExplicitThis is set, HasThis must also be set. The first argument passed to the called method is still a this pointer, but the type of the first argument is now unknown. Therefore, a token that describes the type (or class) of the this pointer is explicitly stored into its metadata signature.
+  syntax:
+    content: ExplicitThis = 64
+references:
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace

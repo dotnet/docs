@@ -1,0 +1,191 @@
+items:
+- uid: System.Reflection.MemberTypes
+  id: MemberTypes
+  parent: System.Reflection
+  children:
+  - System.Reflection.MemberTypes.All
+  - System.Reflection.MemberTypes.Constructor
+  - System.Reflection.MemberTypes.Custom
+  - System.Reflection.MemberTypes.Event
+  - System.Reflection.MemberTypes.Field
+  - System.Reflection.MemberTypes.Method
+  - System.Reflection.MemberTypes.NestedType
+  - System.Reflection.MemberTypes.Property
+  - System.Reflection.MemberTypes.TypeInfo
+  href: System.Reflection.MemberTypes.yml
+  name: MemberTypes
+  fullName: System.Reflection.MemberTypes
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Reflection/MemberTypes.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Reflection/MemberTypes.cs
+    startLine: 16
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Marks each type of member that is defined as a derived class of MemberInfo.
+  syntax:
+    content: public enum MemberTypes
+    content.vb: Public Enum MemberTypes
+- uid: System.Reflection.MemberTypes.Constructor
+  id: Constructor
+  parent: System.Reflection.MemberTypes
+  href: System.Reflection.MemberTypes.yml
+  name: Constructor
+  fullName: System.Reflection.MemberTypes.Constructor
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MemberTypes.cs
+    startLine: 22
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the member is a constructor, representing a @'System.Reflection.ConstructorInfo' member. Hexadecimal value of 0x01.
+  syntax:
+    content: Constructor = 1
+- uid: System.Reflection.MemberTypes.Event
+  id: Event
+  parent: System.Reflection.MemberTypes
+  href: System.Reflection.MemberTypes.yml
+  name: Event
+  fullName: System.Reflection.MemberTypes.Event
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MemberTypes.cs
+    startLine: 23
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the member is an event, representing an @'System.Reflection.EventInfo' member. Hexadecimal value of 0x02.
+  syntax:
+    content: Event = 2
+- uid: System.Reflection.MemberTypes.Field
+  id: Field
+  parent: System.Reflection.MemberTypes
+  href: System.Reflection.MemberTypes.yml
+  name: Field
+  fullName: System.Reflection.MemberTypes.Field
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MemberTypes.cs
+    startLine: 24
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the member is a field, representing a @'System.Reflection.FieldInfo' member. Hexadecimal value of 0x04.
+  syntax:
+    content: Field = 4
+- uid: System.Reflection.MemberTypes.Method
+  id: Method
+  parent: System.Reflection.MemberTypes
+  href: System.Reflection.MemberTypes.yml
+  name: Method
+  fullName: System.Reflection.MemberTypes.Method
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MemberTypes.cs
+    startLine: 25
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the member is a method, representing a @'System.Reflection.MethodInfo' member. Hexadecimal value of 0x08.
+  syntax:
+    content: Method = 8
+- uid: System.Reflection.MemberTypes.Property
+  id: Property
+  parent: System.Reflection.MemberTypes
+  href: System.Reflection.MemberTypes.yml
+  name: Property
+  fullName: System.Reflection.MemberTypes.Property
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MemberTypes.cs
+    startLine: 26
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the member is a property, representing a @'System.Reflection.PropertyInfo' member. Hexadecimal value of 0x10.
+  syntax:
+    content: Property = 16
+- uid: System.Reflection.MemberTypes.TypeInfo
+  id: TypeInfo
+  parent: System.Reflection.MemberTypes
+  href: System.Reflection.MemberTypes.yml
+  name: TypeInfo
+  fullName: System.Reflection.MemberTypes.TypeInfo
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MemberTypes.cs
+    startLine: 27
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the member is a type, representing a @'System.Reflection.MemberTypes.TypeInfo' member. Hexadecimal value of 0x20.
+  syntax:
+    content: TypeInfo = 32
+- uid: System.Reflection.MemberTypes.Custom
+  id: Custom
+  parent: System.Reflection.MemberTypes
+  href: System.Reflection.MemberTypes.yml
+  name: Custom
+  fullName: System.Reflection.MemberTypes.Custom
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MemberTypes.cs
+    startLine: 28
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the member is a custom member type. Hexadecimal value of 0x40.
+  syntax:
+    content: Custom = 64
+- uid: System.Reflection.MemberTypes.NestedType
+  id: NestedType
+  parent: System.Reflection.MemberTypes
+  href: System.Reflection.MemberTypes.yml
+  name: NestedType
+  fullName: System.Reflection.MemberTypes.NestedType
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MemberTypes.cs
+    startLine: 29
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the member is a nested type, extending @'System.Reflection.MemberInfo'.
+  syntax:
+    content: NestedType = 128
+- uid: System.Reflection.MemberTypes.All
+  id: All
+  parent: System.Reflection.MemberTypes
+  href: System.Reflection.MemberTypes.yml
+  name: All
+  fullName: System.Reflection.MemberTypes.All
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MemberTypes.cs
+    startLine: 30
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies all member types.
+  syntax:
+    content: All = 191
+references:
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace

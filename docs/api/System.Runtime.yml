@@ -1,0 +1,61 @@
+items:
+- uid: System.Runtime
+  id: System.Runtime
+  children:
+  - System.Runtime.GCLargeObjectHeapCompactionMode
+  - System.Runtime.GCLatencyMode
+  - System.Runtime.GCSettings
+  - System.Runtime.MemoryFailPoint
+  - System.Runtime.ProfileOptimization
+  href: System.Runtime.yml
+  name: System.Runtime
+  fullName: System.Runtime
+  type: Namespace
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/Versioning/NonVersionableAttribute.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/Versioning/NonVersionableAttribute.cs
+    startLine: 18
+  assemblies:
+  - mscorlib
+  summary: The @'System.Runtime' namespace contains advanced types that support diverse namespaces such as the System, Runtime, and the Security namespaces.
+references:
+- uid: System.Runtime.MemoryFailPoint
+  isExternal: false
+  href: System.Runtime.MemoryFailPoint.yml
+  name: MemoryFailPoint
+  fullName: System.Runtime.MemoryFailPoint
+  type: Class
+- uid: System.Runtime.GCLargeObjectHeapCompactionMode
+  parent: System.Runtime
+  isExternal: false
+  href: System.Runtime.GCLargeObjectHeapCompactionMode.yml
+  name: GCLargeObjectHeapCompactionMode
+  fullName: System.Runtime.GCLargeObjectHeapCompactionMode
+  type: Enum
+- uid: System.Runtime.GCLatencyMode
+  parent: System.Runtime
+  isExternal: false
+  href: System.Runtime.GCLatencyMode.yml
+  name: GCLatencyMode
+  fullName: System.Runtime.GCLatencyMode
+  type: Enum
+- uid: System.Runtime.GCSettings
+  isExternal: false
+  href: System.Runtime.GCSettings.yml
+  name: GCSettings
+  fullName: System.Runtime.GCSettings
+  type: Class
+- uid: System.Runtime.ProfileOptimization
+  isExternal: false
+  href: System.Runtime.ProfileOptimization.yml
+  name: ProfileOptimization
+  fullName: System.Runtime.ProfileOptimization
+  type: Class
+- uid: System.Runtime
+  isExternal: false
+  name: System.Runtime
+  fullName: System.Runtime
+  type: Namespace

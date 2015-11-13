@@ -1,0 +1,65 @@
+items:
+- uid: System.Resources.UltimateResourceFallbackLocation
+  id: UltimateResourceFallbackLocation
+  parent: System.Resources
+  children:
+  - System.Resources.UltimateResourceFallbackLocation.MainAssembly
+  - System.Resources.UltimateResourceFallbackLocation.Satellite
+  href: System.Resources.UltimateResourceFallbackLocation.yml
+  name: UltimateResourceFallbackLocation
+  fullName: System.Resources.UltimateResourceFallbackLocation
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Resources/UltimateResourceFallbackLocation.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Resources/UltimateResourceFallbackLocation.cs
+    startLine: 20
+  assemblies:
+  - mscorlib
+  namespace: System.Resources
+  summary: Specifies whether a @'System.Resources.ResourceManager' object looks for the resources of the app's default culture in the main assembly or in a satellite assembly.
+  syntax:
+    content: public enum UltimateResourceFallbackLocation
+    content.vb: Public Enum UltimateResourceFallbackLocation
+- uid: System.Resources.UltimateResourceFallbackLocation.MainAssembly
+  id: MainAssembly
+  parent: System.Resources.UltimateResourceFallbackLocation
+  href: System.Resources.UltimateResourceFallbackLocation.yml
+  name: MainAssembly
+  fullName: System.Resources.UltimateResourceFallbackLocation.MainAssembly
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Resources/UltimateResourceFallbackLocation.cs
+    startLine: 24
+  assemblies:
+  - mscorlib
+  namespace: System.Resources
+  summary: Fallback resources are located in the main assembly.
+  syntax:
+    content: MainAssembly = 0
+- uid: System.Resources.UltimateResourceFallbackLocation.Satellite
+  id: Satellite
+  parent: System.Resources.UltimateResourceFallbackLocation
+  href: System.Resources.UltimateResourceFallbackLocation.yml
+  name: Satellite
+  fullName: System.Resources.UltimateResourceFallbackLocation.Satellite
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Resources/UltimateResourceFallbackLocation.cs
+    startLine: 25
+  assemblies:
+  - mscorlib
+  namespace: System.Resources
+  summary: Fallback resources are located in a satellite assembly.
+  syntax:
+    content: Satellite = 1
+references:
+- uid: System.Resources
+  isExternal: false
+  name: System.Resources
+  fullName: System.Resources
+  type: Namespace

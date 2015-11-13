@@ -1,0 +1,542 @@
+items:
+- uid: System.Net.Http.Headers.TransferCodingWithQualityHeaderValue
+  id: TransferCodingWithQualityHeaderValue
+  parent: System.Net.Http.Headers
+  children:
+  - System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.#ctor(System.String)
+  - System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.#ctor(System.String,System.Double)
+  - System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.Parse(System.String)
+  - System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.Quality
+  - System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.TryParse(System.String,System.Net.Http.Headers.TransferCodingWithQualityHeaderValue@)
+  href: System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.yml
+  name: TransferCodingWithQualityHeaderValue
+  fullName: System.Net.Http.Headers.TransferCodingWithQualityHeaderValue
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Net.Http/src/System/Net/Http/Headers/TransferCodingWithQualityHeaderValue.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Net.Http/src/System/Net/Http/Headers/TransferCodingWithQualityHeaderValue.cs
+    startLine: 7
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Represents an Accept-Encoding header value.with optional quality factor.
+  syntax:
+    content: 'public sealed class TransferCodingWithQualityHeaderValue : TransferCodingHeaderValue, ICloneable'
+    content.vb: Public NotInheritable Class TransferCodingWithQualityHeaderValue Inherits TransferCodingHeaderValue Implements ICloneable
+  inheritance:
+  - System.Object
+  - System.Net.Http.Headers.TransferCodingHeaderValue
+  inheritedMembers:
+  - System.Net.Http.Headers.TransferCodingHeaderValue.Value
+  - System.Net.Http.Headers.TransferCodingHeaderValue.Parameters
+  - System.Net.Http.Headers.TransferCodingHeaderValue.TryParse(System.String,System.Net.Http.Headers.TransferCodingHeaderValue@)
+  - System.Net.Http.Headers.TransferCodingHeaderValue.ToString
+  - System.Net.Http.Headers.TransferCodingHeaderValue.Equals(System.Object)
+  - System.Net.Http.Headers.TransferCodingHeaderValue.GetHashCode
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.Quality
+  id: Quality
+  parent: System.Net.Http.Headers.TransferCodingWithQualityHeaderValue
+  href: System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.yml
+  name: Quality
+  fullName: System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.Quality
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/TransferCodingWithQualityHeaderValue.cs
+    startLine: 9
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Gets the quality factor from the @'System.Net.Http.Headers.TransferCodingWithQualityHeaderValue'.
+  syntax:
+    content: public double ? Quality { get; set; }
+    content.vb: Public Property Quality As Double?
+    parameters: []
+    return:
+      type: System.Nullable{System.Double}
+- uid: System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: System.Net.Http.Headers.TransferCodingWithQualityHeaderValue
+  href: System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.yml
+  name: TransferCodingWithQualityHeaderValue(String)
+  fullName: System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.TransferCodingWithQualityHeaderValue(System.String)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/TransferCodingWithQualityHeaderValue.cs
+    startLine: 20
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Initializes a new instance of the @'System.Net.Http.Headers.TransferCodingWithQualityHeaderValue' class.
+  syntax:
+    content: public TransferCodingWithQualityHeaderValue(string value)
+    content.vb: Public Sub New(value As String)
+    parameters:
+    - id: value
+      type: System.String
+      description: A string used to initialize the new instance.
+- uid: System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.#ctor(System.String,System.Double)
+  id: '#ctor(System.String,System.Double)'
+  parent: System.Net.Http.Headers.TransferCodingWithQualityHeaderValue
+  href: System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.yml
+  name: TransferCodingWithQualityHeaderValue(String, Double)
+  fullName: System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.TransferCodingWithQualityHeaderValue(System.String, System.Double)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/TransferCodingWithQualityHeaderValue.cs
+    startLine: 25
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Initializes a new instance of the @'System.Net.Http.Headers.TransferCodingWithQualityHeaderValue' class.
+  syntax:
+    content: public TransferCodingWithQualityHeaderValue(string value, double quality)
+    content.vb: Public Sub New(value As String, quality As Double)
+    parameters:
+    - id: value
+      type: System.String
+      description: A string used to initialize the new instance.
+    - id: quality
+      type: System.Double
+      description: A value for the quality factor.
+- uid: System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.Parse(System.String)
+  id: Parse(System.String)
+  parent: System.Net.Http.Headers.TransferCodingWithQualityHeaderValue
+  href: System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.yml
+  name: Parse(String)
+  fullName: System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.Parse(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/TransferCodingWithQualityHeaderValue.cs
+    startLine: 42
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Converts a string to an @'System.Net.Http.Headers.TransferCodingWithQualityHeaderValue' instance.
+  syntax:
+    content: public static TransferCodingWithQualityHeaderValue Parse(string input)
+    content.vb: Public Shared Function Parse(input As String) As TransferCodingWithQualityHeaderValue
+    parameters:
+    - id: input
+      type: System.String
+      description: A string that represents transfer-coding value information.
+    return:
+      type: System.Net.Http.Headers.TransferCodingWithQualityHeaderValue
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*input* is a null reference.'
+  - type: System.FormatException
+    description: '*input* is not valid transfer-coding with quality header value information.'
+- uid: System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.TryParse(System.String,System.Net.Http.Headers.TransferCodingWithQualityHeaderValue@)
+  id: TryParse(System.String,System.Net.Http.Headers.TransferCodingWithQualityHeaderValue@)
+  parent: System.Net.Http.Headers.TransferCodingWithQualityHeaderValue
+  href: System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.yml
+  name: TryParse(String, out TransferCodingWithQualityHeaderValue)
+  name.vb: TryParse(String, ByRef TransferCodingWithQualityHeaderValue)
+  fullName: System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.TryParse(System.String, out System.Net.Http.Headers.TransferCodingWithQualityHeaderValue)
+  fullName.vb: System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.TryParse(System.String, ByRef System.Net.Http.Headers.TransferCodingWithQualityHeaderValue)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/TransferCodingWithQualityHeaderValue.cs
+    startLine: 49
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Determines whether a string is valid @'System.Net.Http.Headers.TransferCodingWithQualityHeaderValue' information.
+  syntax:
+    content: public static bool TryParse(string input, out TransferCodingWithQualityHeaderValue parsedValue)
+    content.vb: Public Shared Function TryParse(input As String, ByRef parsedValue As TransferCodingWithQualityHeaderValue) As Boolean
+    parameters:
+    - id: input
+      type: System.String
+      description: The string to validate.
+    - id: parsedValue
+      type: System.Net.Http.Headers.TransferCodingWithQualityHeaderValue
+      description: The @'System.Net.Http.Headers.TransferCodingWithQualityHeaderValue' version of the string.
+    return:
+      type: System.Boolean
+references:
+- uid: System.Net.Http.Headers
+  isExternal: false
+  name: System.Net.Http.Headers
+  fullName: System.Net.Http.Headers
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Net.Http.Headers.TransferCodingHeaderValue
+  parent: System.Net.Http.Headers
+  isExternal: false
+  href: System.Net.Http.Headers.TransferCodingHeaderValue.yml
+  name: TransferCodingHeaderValue
+  fullName: System.Net.Http.Headers.TransferCodingHeaderValue
+  type: Class
+- uid: System.Net.Http.Headers.TransferCodingHeaderValue.Value
+  parent: System.Net.Http.Headers.TransferCodingHeaderValue
+  isExternal: false
+  href: System.Net.Http.Headers.TransferCodingHeaderValue.yml
+  name: Value
+  fullName: System.Net.Http.Headers.TransferCodingHeaderValue.Value
+- uid: System.Net.Http.Headers.TransferCodingHeaderValue.Parameters
+  parent: System.Net.Http.Headers.TransferCodingHeaderValue
+  isExternal: false
+  href: System.Net.Http.Headers.TransferCodingHeaderValue.yml
+  name: Parameters
+  fullName: System.Net.Http.Headers.TransferCodingHeaderValue.Parameters
+- uid: System.Net.Http.Headers.TransferCodingHeaderValue.TryParse(System.String,System.Net.Http.Headers.TransferCodingHeaderValue@)
+  parent: System.Net.Http.Headers.TransferCodingHeaderValue
+  isExternal: true
+  href: System.Net.Http.Headers.TransferCodingHeaderValue.yml
+  name: TryParse(String, TransferCodingHeaderValue)
+  fullName: System.Net.Http.Headers.TransferCodingHeaderValue.TryParse(System.String, System.Net.Http.Headers.TransferCodingHeaderValue)
+  spec.csharp:
+  - uid: System.Net.Http.Headers.TransferCodingHeaderValue.TryParse(System.String,System.Net.Http.Headers.TransferCodingHeaderValue@)
+    name: TryParse
+    fullName: System.Net.Http.Headers.TransferCodingHeaderValue.TryParse
+    href: System.Net.Http.Headers.TransferCodingHeaderValue.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Net.Http.Headers.TransferCodingHeaderValue
+    name: TransferCodingHeaderValue
+    fullName: System.Net.Http.Headers.TransferCodingHeaderValue
+    href: System.Net.Http.Headers.TransferCodingHeaderValue.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.Headers.TransferCodingHeaderValue.TryParse(System.String,System.Net.Http.Headers.TransferCodingHeaderValue@)
+    name: TryParse
+    fullName: System.Net.Http.Headers.TransferCodingHeaderValue.TryParse
+    href: System.Net.Http.Headers.TransferCodingHeaderValue.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Net.Http.Headers.TransferCodingHeaderValue
+    name: TransferCodingHeaderValue
+    fullName: System.Net.Http.Headers.TransferCodingHeaderValue
+    href: System.Net.Http.Headers.TransferCodingHeaderValue.yml
+  - name: )
+    fullName: )
+- uid: System.Net.Http.Headers.TransferCodingHeaderValue.ToString
+  parent: System.Net.Http.Headers.TransferCodingHeaderValue
+  isExternal: false
+  href: System.Net.Http.Headers.TransferCodingHeaderValue.yml
+  name: ToString()
+  fullName: System.Net.Http.Headers.TransferCodingHeaderValue.ToString()
+  spec.csharp:
+  - uid: System.Net.Http.Headers.TransferCodingHeaderValue.ToString
+    name: ToString
+    fullName: System.Net.Http.Headers.TransferCodingHeaderValue.ToString
+    href: System.Net.Http.Headers.TransferCodingHeaderValue.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.Headers.TransferCodingHeaderValue.ToString
+    name: ToString
+    fullName: System.Net.Http.Headers.TransferCodingHeaderValue.ToString
+    href: System.Net.Http.Headers.TransferCodingHeaderValue.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Net.Http.Headers.TransferCodingHeaderValue.Equals(System.Object)
+  parent: System.Net.Http.Headers.TransferCodingHeaderValue
+  isExternal: true
+  href: System.Net.Http.Headers.TransferCodingHeaderValue.yml
+  name: Equals(Object)
+  fullName: System.Net.Http.Headers.TransferCodingHeaderValue.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Net.Http.Headers.TransferCodingHeaderValue.Equals(System.Object)
+    name: Equals
+    fullName: System.Net.Http.Headers.TransferCodingHeaderValue.Equals
+    href: System.Net.Http.Headers.TransferCodingHeaderValue.yml
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.Headers.TransferCodingHeaderValue.Equals(System.Object)
+    name: Equals
+    fullName: System.Net.Http.Headers.TransferCodingHeaderValue.Equals
+    href: System.Net.Http.Headers.TransferCodingHeaderValue.yml
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Net.Http.Headers.TransferCodingHeaderValue.GetHashCode
+  parent: System.Net.Http.Headers.TransferCodingHeaderValue
+  isExternal: false
+  href: System.Net.Http.Headers.TransferCodingHeaderValue.yml
+  name: GetHashCode()
+  fullName: System.Net.Http.Headers.TransferCodingHeaderValue.GetHashCode()
+  spec.csharp:
+  - uid: System.Net.Http.Headers.TransferCodingHeaderValue.GetHashCode
+    name: GetHashCode
+    fullName: System.Net.Http.Headers.TransferCodingHeaderValue.GetHashCode
+    href: System.Net.Http.Headers.TransferCodingHeaderValue.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.Headers.TransferCodingHeaderValue.GetHashCode
+    name: GetHashCode
+    fullName: System.Net.Http.Headers.TransferCodingHeaderValue.GetHashCode
+    href: System.Net.Http.Headers.TransferCodingHeaderValue.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Nullable{System.Double}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Double>
+  name.vb: Nullable(Of Double)
+  fullName: System.Nullable<System.Double>
+  fullName.vb: System.Nullable(Of System.Double)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Double
+    name: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Double
+    name: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Nullable`1
+  parent: System
+  isExternal: true
+  name: Nullable<T>
+  name.vb: Nullable(Of T)
+  fullName: System.Nullable<T>
+  fullName.vb: System.Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  fullName: System.Double
+- uid: System.Net.Http.Headers.TransferCodingWithQualityHeaderValue
+  parent: System.Net.Http.Headers
+  isExternal: false
+  href: System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.yml
+  name: TransferCodingWithQualityHeaderValue
+  fullName: System.Net.Http.Headers.TransferCodingWithQualityHeaderValue
+  type: Class
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean

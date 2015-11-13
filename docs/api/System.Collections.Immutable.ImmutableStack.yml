@@ -1,0 +1,621 @@
+items:
+- uid: System.Collections.Immutable.ImmutableStack
+  id: ImmutableStack
+  parent: System.Collections.Immutable
+  children:
+  - System.Collections.Immutable.ImmutableStack.Create``1
+  - System.Collections.Immutable.ImmutableStack.Create``1(``0)
+  - System.Collections.Immutable.ImmutableStack.Create``1(``0[])
+  - System.Collections.Immutable.ImmutableStack.CreateRange``1(System.Collections.Generic.IEnumerable{``0})
+  - System.Collections.Immutable.ImmutableStack.Pop``1(System.Collections.Immutable.IImmutableStack{``0},``0@)
+  href: System.Collections.Immutable.ImmutableStack.yml
+  name: ImmutableStack
+  fullName: System.Collections.Immutable.ImmutableStack
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableStack.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableStack.cs
+    startLine: 13
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: A set of initialization methods for instances of @'System.Collections.Immutable.ImmutableStack`1'.
+  syntax:
+    content: public class ImmutableStack
+    content.vb: Public Class ImmutableStack
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Collections.Immutable.ImmutableStack.Create``1
+  id: Create``1
+  parent: System.Collections.Immutable.ImmutableStack
+  href: System.Collections.Immutable.ImmutableStack.yml
+  name: Create<T>()
+  name.vb: Create(Of T)()
+  fullName: System.Collections.Immutable.ImmutableStack.Create<T>()
+  fullName.vb: System.Collections.Immutable.ImmutableStack.Create(Of T)()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableStack.cs
+    startLine: 21
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Returns an empty collection.
+  syntax:
+    content: public static ImmutableStack<T> Create<T>()
+    content.vb: Public Shared Function Create(Of T) As ImmutableStack(Of T)
+    typeParameters:
+    - id: T
+      description: The type of items stored by the collection.
+    return:
+      type: System.Collections.Immutable.ImmutableStack{{T}}
+      description: The immutable collection.
+- uid: System.Collections.Immutable.ImmutableStack.Create``1(``0)
+  id: Create``1(``0)
+  parent: System.Collections.Immutable.ImmutableStack
+  href: System.Collections.Immutable.ImmutableStack.yml
+  name: Create<T>(T)
+  name.vb: Create(Of T)(T)
+  fullName: System.Collections.Immutable.ImmutableStack.Create<T>(T)
+  fullName.vb: System.Collections.Immutable.ImmutableStack.Create(Of T)(T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableStack.cs
+    startLine: 33
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Creates a new immutable collection prefilled with the specified item.
+  syntax:
+    content: public static ImmutableStack<T> Create<T>(T item)
+    content.vb: Public Shared Function Create(Of T)(item As T) As ImmutableStack(Of T)
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The item to prepopulate.
+    typeParameters:
+    - id: T
+      description: The type of items stored by the collection.
+    return:
+      type: System.Collections.Immutable.ImmutableStack{{T}}
+      description: The new immutable collection.
+- uid: System.Collections.Immutable.ImmutableStack.CreateRange``1(System.Collections.Generic.IEnumerable{``0})
+  id: CreateRange``1(System.Collections.Generic.IEnumerable{``0})
+  parent: System.Collections.Immutable.ImmutableStack
+  href: System.Collections.Immutable.ImmutableStack.yml
+  name: CreateRange<T>(IEnumerable<T>)
+  name.vb: CreateRange(Of T)(IEnumerable(Of T))
+  fullName: System.Collections.Immutable.ImmutableStack.CreateRange<T>(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableStack.CreateRange(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableStack.cs
+    startLine: 45
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Creates a new immutable collection prefilled with the specified items.
+  syntax:
+    content: public static ImmutableStack<T> CreateRange<T>(IEnumerable<T> items)
+    content.vb: Public Shared Function CreateRange(Of T)(items As IEnumerable(Of T)) As ImmutableStack(Of T)
+    parameters:
+    - id: items
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The items to prepopulate.
+    typeParameters:
+    - id: T
+      description: The type of items stored by the collection.
+    return:
+      type: System.Collections.Immutable.ImmutableStack{{T}}
+      description: The new immutable collection.
+- uid: System.Collections.Immutable.ImmutableStack.Create``1(``0[])
+  id: Create``1(``0[])
+  parent: System.Collections.Immutable.ImmutableStack
+  href: System.Collections.Immutable.ImmutableStack.yml
+  name: Create<T>(T[])
+  name.vb: Create(Of T)(T())
+  fullName: System.Collections.Immutable.ImmutableStack.Create<T>(T[])
+  fullName.vb: System.Collections.Immutable.ImmutableStack.Create(Of T)(T())
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableStack.cs
+    startLine: 65
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Creates a new immutable collection prefilled with the specified items.
+  syntax:
+    content: public static ImmutableStack<T> Create<T>(params T[] items)
+    content.vb: Public Shared Function Create(Of T)(ParamArray items As T()) As ImmutableStack(Of T)
+    parameters:
+    - id: items
+      type: '{T}[]'
+      description: The items to prepopulate.
+    typeParameters:
+    - id: T
+      description: The type of items stored by the collection.
+    return:
+      type: System.Collections.Immutable.ImmutableStack{{T}}
+      description: The new immutable collection.
+- uid: System.Collections.Immutable.ImmutableStack.Pop``1(System.Collections.Immutable.IImmutableStack{``0},``0@)
+  id: Pop``1(System.Collections.Immutable.IImmutableStack{``0},``0@)
+  parent: System.Collections.Immutable.ImmutableStack
+  href: System.Collections.Immutable.ImmutableStack.yml
+  name: Pop<T>(IImmutableStack<T>, out T)
+  name.vb: Pop(Of T)(IImmutableStack(Of T), ByRef T)
+  fullName: System.Collections.Immutable.ImmutableStack.Pop<T>(System.Collections.Immutable.IImmutableStack<T>, out T)
+  fullName.vb: System.Collections.Immutable.ImmutableStack.Pop(Of T)(System.Collections.Immutable.IImmutableStack(Of T), ByRef T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableStack.cs
+    startLine: 89
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Pops the top element off the stack.
+  syntax:
+    content: public static IImmutableStack<T> Pop<T>(IImmutableStack<T> stack, out T value)
+    content.vb: Public Shared Function Pop(Of T)(stack As IImmutableStack(Of T), ByRef value As T) As IImmutableStack(Of T)
+    parameters:
+    - id: stack
+      type: System.Collections.Immutable.IImmutableStack{{T}}
+      description: The stack to modify.
+    - id: value
+      type: '{T}'
+      description: The value that was removed from the stack.
+    typeParameters:
+    - id: T
+      description: The type of values contained in the stack.
+    return:
+      type: System.Collections.Immutable.IImmutableStack{{T}}
+      description: A stack; never <c>null</c>
+  exceptions:
+  - type: System.InvalidOperationException
+    description: Thrown when the stack is empty.
+references:
+- uid: System.Collections.Immutable.ImmutableStack`1
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableStack`1.yml
+  name: ImmutableStack<T>
+  name.vb: ImmutableStack(Of T)
+  fullName: System.Collections.Immutable.ImmutableStack<T>
+  fullName.vb: System.Collections.Immutable.ImmutableStack(Of T)
+  type: Class
+  summary: An immutable stack.
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableStack`1
+    name: ImmutableStack
+    fullName: System.Collections.Immutable.ImmutableStack
+    href: System.Collections.Immutable.ImmutableStack`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableStack`1
+    name: ImmutableStack
+    fullName: System.Collections.Immutable.ImmutableStack
+    href: System.Collections.Immutable.ImmutableStack`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable
+  isExternal: false
+  name: System.Collections.Immutable
+  fullName: System.Collections.Immutable
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Collections.Immutable.ImmutableStack{{T}}
+  parent: System.Collections.Immutable
+  definition: System.Collections.Immutable.ImmutableStack`1
+  href: System.Collections.Immutable.ImmutableStack`1.yml
+  name: ImmutableStack<T>
+  name.vb: ImmutableStack(Of T)
+  fullName: System.Collections.Immutable.ImmutableStack<T>
+  fullName.vb: System.Collections.Immutable.ImmutableStack(Of T)
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableStack`1
+    name: ImmutableStack
+    fullName: System.Collections.Immutable.ImmutableStack
+    href: System.Collections.Immutable.ImmutableStack`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableStack`1
+    name: ImmutableStack
+    fullName: System.Collections.Immutable.ImmutableStack
+    href: System.Collections.Immutable.ImmutableStack`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: '{T}'
+  isExternal: false
+  name: T
+  fullName: T
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: '{T}[]'
+  isExternal: false
+  name: T[]
+  name.vb: T()
+  fullName: T[]
+  fullName.vb: T()
+  spec.csharp:
+  - name: T
+    fullName: T
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - name: T
+    fullName: T
+  - name: ()
+    fullName: ()
+- uid: System.InvalidOperationException
+- uid: System.Collections.Immutable.IImmutableStack{{T}}
+  parent: System.Collections.Immutable
+  definition: System.Collections.Immutable.IImmutableStack`1
+  href: System.Collections.Immutable.IImmutableStack`1.yml
+  name: IImmutableStack<T>
+  name.vb: IImmutableStack(Of T)
+  fullName: System.Collections.Immutable.IImmutableStack<T>
+  fullName.vb: System.Collections.Immutable.IImmutableStack(Of T)
+  spec.csharp:
+  - uid: System.Collections.Immutable.IImmutableStack`1
+    name: IImmutableStack
+    fullName: System.Collections.Immutable.IImmutableStack
+    href: System.Collections.Immutable.IImmutableStack`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.IImmutableStack`1
+    name: IImmutableStack
+    fullName: System.Collections.Immutable.IImmutableStack
+    href: System.Collections.Immutable.IImmutableStack`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.IImmutableStack`1
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.IImmutableStack`1.yml
+  name: IImmutableStack<T>
+  name.vb: IImmutableStack(Of T)
+  fullName: System.Collections.Immutable.IImmutableStack<T>
+  fullName.vb: System.Collections.Immutable.IImmutableStack(Of T)
+  type: Interface
+  summary: An immutable stack.
+  spec.csharp:
+  - uid: System.Collections.Immutable.IImmutableStack`1
+    name: IImmutableStack
+    fullName: System.Collections.Immutable.IImmutableStack
+    href: System.Collections.Immutable.IImmutableStack`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.IImmutableStack`1
+    name: IImmutableStack
+    fullName: System.Collections.Immutable.IImmutableStack
+    href: System.Collections.Immutable.IImmutableStack`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )

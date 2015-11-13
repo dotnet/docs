@@ -1,0 +1,83 @@
+items:
+- uid: System.Runtime.InteropServices.ClassInterfaceType
+  id: ClassInterfaceType
+  parent: System.Runtime.InteropServices
+  children:
+  - System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch
+  - System.Runtime.InteropServices.ClassInterfaceType.AutoDual
+  - System.Runtime.InteropServices.ClassInterfaceType.None
+  href: System.Runtime.InteropServices.ClassInterfaceType.yml
+  name: ClassInterfaceType
+  fullName: System.Runtime.InteropServices.ClassInterfaceType
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 110
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Identifies the type of class interface that is generated for a class.
+  syntax:
+    content: public enum ClassInterfaceType
+    content.vb: Public Enum ClassInterfaceType
+- uid: System.Runtime.InteropServices.ClassInterfaceType.None
+  id: None
+  parent: System.Runtime.InteropServices.ClassInterfaceType
+  href: System.Runtime.InteropServices.ClassInterfaceType.yml
+  name: None
+  fullName: System.Runtime.InteropServices.ClassInterfaceType.None
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 114
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates that no class interface is generated for the class. If no interfaces are implemented explicitly, the class can only provide late-bound access through the IDispatch interface. This is the recommended setting for @'System.Runtime.InteropServices.ClassInterfaceAttribute'. Using ClassInterfaceType.None is the only way to expose functionality through interfaces implemented explicitly by the class.
+  syntax:
+    content: None = 0
+- uid: System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch
+  id: AutoDispatch
+  parent: System.Runtime.InteropServices.ClassInterfaceType
+  href: System.Runtime.InteropServices.ClassInterfaceType.yml
+  name: AutoDispatch
+  fullName: System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 115
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates that the class only supports late binding for COM clients. A dispinterface for the class is automatically exposed to COM clients on request. The type library produced by Tlbexp.exe (Type Library Exporter) does not contain type information for the dispinterface in order to prevent clients from caching the DISPIDs of the interface. The dispinterface does not exhibit the versioning problems described in @'System.Runtime.InteropServices.ClassInterfaceAttribute' because clients can only late-bind to the interface.
+  syntax:
+    content: AutoDispatch = 1
+- uid: System.Runtime.InteropServices.ClassInterfaceType.AutoDual
+  id: AutoDual
+  parent: System.Runtime.InteropServices.ClassInterfaceType
+  href: System.Runtime.InteropServices.ClassInterfaceType.yml
+  name: AutoDual
+  fullName: System.Runtime.InteropServices.ClassInterfaceType.AutoDual
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 116
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates that a dual class interface is automatically generated for the class and exposed to COM. Type information is produced for the class interface and published in the type library. Using AutoDual is strongly discouraged because of the versioning limitations described in @'System.Runtime.InteropServices.ClassInterfaceAttribute'.
+  syntax:
+    content: AutoDual = 2
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace

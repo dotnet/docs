@@ -1,0 +1,209 @@
+items:
+- uid: System.Reflection.DeclarativeSecurityAction
+  id: DeclarativeSecurityAction
+  parent: System.Reflection
+  children:
+  - System.Reflection.DeclarativeSecurityAction.Assert
+  - System.Reflection.DeclarativeSecurityAction.Demand
+  - System.Reflection.DeclarativeSecurityAction.Deny
+  - System.Reflection.DeclarativeSecurityAction.InheritanceDemand
+  - System.Reflection.DeclarativeSecurityAction.LinkDemand
+  - System.Reflection.DeclarativeSecurityAction.None
+  - System.Reflection.DeclarativeSecurityAction.PermitOnly
+  - System.Reflection.DeclarativeSecurityAction.RequestMinimum
+  - System.Reflection.DeclarativeSecurityAction.RequestOptional
+  - System.Reflection.DeclarativeSecurityAction.RequestRefuse
+  href: System.Reflection.DeclarativeSecurityAction.yml
+  name: DeclarativeSecurityAction
+  fullName: System.Reflection.DeclarativeSecurityAction
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+    startLine: 50
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection
+  summary: Specifies the security actions that can be performed using declarative security.
+  syntax:
+    content: 'public enum DeclarativeSecurityAction : short'
+    content.vb: Public Enum DeclarativeSecurityAction As Short
+- uid: System.Reflection.DeclarativeSecurityAction.None
+  id: None
+  parent: System.Reflection.DeclarativeSecurityAction
+  href: System.Reflection.DeclarativeSecurityAction.yml
+  name: None
+  fullName: System.Reflection.DeclarativeSecurityAction.None
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+    startLine: 55
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection
+  summary: No declarative security action.
+  syntax:
+    content: None = 0
+- uid: System.Reflection.DeclarativeSecurityAction.Demand
+  id: Demand
+  parent: System.Reflection.DeclarativeSecurityAction
+  href: System.Reflection.DeclarativeSecurityAction.yml
+  name: Demand
+  fullName: System.Reflection.DeclarativeSecurityAction.Demand
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+    startLine: 60
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection
+  summary: Check that all callers in the call chain have been granted specified permission,
+  syntax:
+    content: Demand = 2
+- uid: System.Reflection.DeclarativeSecurityAction.Assert
+  id: Assert
+  parent: System.Reflection.DeclarativeSecurityAction
+  href: System.Reflection.DeclarativeSecurityAction.yml
+  name: Assert
+  fullName: System.Reflection.DeclarativeSecurityAction.Assert
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+    startLine: 65
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection
+  summary: The calling code can access the resource identified by the current permission object, even if callers higher in the stack have not been granted permission to access the resource.
+  syntax:
+    content: Assert = 3
+- uid: System.Reflection.DeclarativeSecurityAction.Deny
+  id: Deny
+  parent: System.Reflection.DeclarativeSecurityAction
+  href: System.Reflection.DeclarativeSecurityAction.yml
+  name: Deny
+  fullName: System.Reflection.DeclarativeSecurityAction.Deny
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+    startLine: 70
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection
+  summary: Without further checks refuse Demand for the specified permission.
+  syntax:
+    content: Deny = 4
+- uid: System.Reflection.DeclarativeSecurityAction.PermitOnly
+  id: PermitOnly
+  parent: System.Reflection.DeclarativeSecurityAction
+  href: System.Reflection.DeclarativeSecurityAction.yml
+  name: PermitOnly
+  fullName: System.Reflection.DeclarativeSecurityAction.PermitOnly
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+    startLine: 75
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection
+  summary: Without further checks, refuse Demand for all permissions other than those specified.
+  syntax:
+    content: PermitOnly = 5
+- uid: System.Reflection.DeclarativeSecurityAction.LinkDemand
+  id: LinkDemand
+  parent: System.Reflection.DeclarativeSecurityAction
+  href: System.Reflection.DeclarativeSecurityAction.yml
+  name: LinkDemand
+  fullName: System.Reflection.DeclarativeSecurityAction.LinkDemand
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+    startLine: 80
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection
+  summary: Check that the immediate caller has been granted the specified permission;
+  syntax:
+    content: LinkDemand = 6
+- uid: System.Reflection.DeclarativeSecurityAction.InheritanceDemand
+  id: InheritanceDemand
+  parent: System.Reflection.DeclarativeSecurityAction
+  href: System.Reflection.DeclarativeSecurityAction.yml
+  name: InheritanceDemand
+  fullName: System.Reflection.DeclarativeSecurityAction.InheritanceDemand
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+    startLine: 85
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection
+  summary: The derived class inheriting the class or overriding a method is required to have been granted the specified permission.
+  syntax:
+    content: InheritanceDemand = 7
+- uid: System.Reflection.DeclarativeSecurityAction.RequestMinimum
+  id: RequestMinimum
+  parent: System.Reflection.DeclarativeSecurityAction
+  href: System.Reflection.DeclarativeSecurityAction.yml
+  name: RequestMinimum
+  fullName: System.Reflection.DeclarativeSecurityAction.RequestMinimum
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+    startLine: 90
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection
+  summary: The request for the minimum permissions required for code to run. This action can only be used within the scope of the assembly.
+  syntax:
+    content: RequestMinimum = 8
+- uid: System.Reflection.DeclarativeSecurityAction.RequestOptional
+  id: RequestOptional
+  parent: System.Reflection.DeclarativeSecurityAction
+  href: System.Reflection.DeclarativeSecurityAction.yml
+  name: RequestOptional
+  fullName: System.Reflection.DeclarativeSecurityAction.RequestOptional
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+    startLine: 95
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection
+  summary: The request for additional permissions that are optional (not required to run). This request implicitly refuses all other permissions not specifically requested. This action can only be used within the scope of the assembly.
+  syntax:
+    content: RequestOptional = 9
+- uid: System.Reflection.DeclarativeSecurityAction.RequestRefuse
+  id: RequestRefuse
+  parent: System.Reflection.DeclarativeSecurityAction
+  href: System.Reflection.DeclarativeSecurityAction.yml
+  name: RequestRefuse
+  fullName: System.Reflection.DeclarativeSecurityAction.RequestRefuse
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+    startLine: 100
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection
+  summary: The request that permissions that might be misused will not be granted to the calling code. This action can only be used within the scope of the assembly.
+  syntax:
+    content: RequestRefuse = 10
+references:
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace

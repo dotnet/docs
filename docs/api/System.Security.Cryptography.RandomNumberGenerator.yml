@@ -1,0 +1,397 @@
+items:
+- uid: System.Security.Cryptography.RandomNumberGenerator
+  id: RandomNumberGenerator
+  parent: System.Security.Cryptography
+  children:
+  - System.Security.Cryptography.RandomNumberGenerator.#ctor
+  - System.Security.Cryptography.RandomNumberGenerator.Create
+  - System.Security.Cryptography.RandomNumberGenerator.Dispose
+  - System.Security.Cryptography.RandomNumberGenerator.Dispose(System.Boolean)
+  - System.Security.Cryptography.RandomNumberGenerator.GetBytes(System.Byte[])
+  href: System.Security.Cryptography.RandomNumberGenerator.yml
+  name: RandomNumberGenerator
+  fullName: System.Security.Cryptography.RandomNumberGenerator
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Security.Cryptography.RandomNumberGenerator/src/System/Security/Cryptography/RandomNumberGenerator.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Security.Cryptography.RandomNumberGenerator/src/System/Security/Cryptography/RandomNumberGenerator.cs
+    startLine: 7
+  assemblies:
+  - System.Security.Cryptography.RandomNumberGenerator
+  namespace: System.Security.Cryptography
+  summary: Represents the abstract class from which all implementations of cryptographic random number generators derive.
+  syntax:
+    content: 'public abstract class RandomNumberGenerator : IDisposable'
+    content.vb: Public MustInherit Class RandomNumberGenerator Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Security.Cryptography.RandomNumberGenerator.#ctor
+  id: '#ctor'
+  parent: System.Security.Cryptography.RandomNumberGenerator
+  href: System.Security.Cryptography.RandomNumberGenerator.yml
+  name: RandomNumberGenerator()
+  fullName: System.Security.Cryptography.RandomNumberGenerator.RandomNumberGenerator()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.RandomNumberGenerator/src/System/Security/Cryptography/RandomNumberGenerator.cs
+    startLine: 9
+  assemblies:
+  - System.Security.Cryptography.RandomNumberGenerator
+  namespace: System.Security.Cryptography
+  summary: Initializes a new instance of @'System.Security.Cryptography.RandomNumberGenerator'.
+  syntax:
+    content: protected RandomNumberGenerator()
+    content.vb: Protected Sub New
+- uid: System.Security.Cryptography.RandomNumberGenerator.Create
+  id: Create
+  parent: System.Security.Cryptography.RandomNumberGenerator
+  href: System.Security.Cryptography.RandomNumberGenerator.yml
+  name: Create()
+  fullName: System.Security.Cryptography.RandomNumberGenerator.Create()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.RandomNumberGenerator/src/System/Security/Cryptography/RandomNumberGenerator.cs
+    startLine: 13
+  assemblies:
+  - System.Security.Cryptography.RandomNumberGenerator
+  namespace: System.Security.Cryptography
+  summary: When overridden in a derived class, creates an instance of the default implementation of a cryptographic random number generator that can be used to generate random data.
+  syntax:
+    content: public static RandomNumberGenerator Create()
+    content.vb: Public Shared Function Create As RandomNumberGenerator
+    return:
+      type: System.Security.Cryptography.RandomNumberGenerator
+- uid: System.Security.Cryptography.RandomNumberGenerator.Dispose
+  id: Dispose
+  parent: System.Security.Cryptography.RandomNumberGenerator
+  href: System.Security.Cryptography.RandomNumberGenerator.yml
+  name: Dispose()
+  fullName: System.Security.Cryptography.RandomNumberGenerator.Dispose()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.RandomNumberGenerator/src/System/Security/Cryptography/RandomNumberGenerator.cs
+    startLine: 18
+  assemblies:
+  - System.Security.Cryptography.RandomNumberGenerator
+  namespace: System.Security.Cryptography
+  summary: When overridden in a derived class, releases all resources used by the current instance of the @'System.Security.Cryptography.RandomNumberGenerator' class.
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+- uid: System.Security.Cryptography.RandomNumberGenerator.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: System.Security.Cryptography.RandomNumberGenerator
+  href: System.Security.Cryptography.RandomNumberGenerator.yml
+  name: Dispose(Boolean)
+  fullName: System.Security.Cryptography.RandomNumberGenerator.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.RandomNumberGenerator/src/System/Security/Cryptography/RandomNumberGenerator.cs
+    startLine: 25
+  assemblies:
+  - System.Security.Cryptography.RandomNumberGenerator
+  namespace: System.Security.Cryptography
+  summary: When overridden in a derived class, releases the unmanaged resources used by the @'System.Security.Cryptography.RandomNumberGenerator' and optionally releases the managed resources.
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: true to release both managed and unmanaged resources; false to release only unmanaged resources.
+- uid: System.Security.Cryptography.RandomNumberGenerator.GetBytes(System.Byte[])
+  id: GetBytes(System.Byte[])
+  parent: System.Security.Cryptography.RandomNumberGenerator
+  href: System.Security.Cryptography.RandomNumberGenerator.yml
+  name: GetBytes(Byte[])
+  name.vb: GetBytes(Byte())
+  fullName: System.Security.Cryptography.RandomNumberGenerator.GetBytes(System.Byte[])
+  fullName.vb: System.Security.Cryptography.RandomNumberGenerator.GetBytes(System.Byte())
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.RandomNumberGenerator/src/System/Security/Cryptography/RandomNumberGenerator.cs
+    startLine: 30
+  assemblies:
+  - System.Security.Cryptography.RandomNumberGenerator
+  namespace: System.Security.Cryptography
+  summary: When overridden in a derived class, fills an array of bytes with a cryptographically strong random sequence of values.
+  syntax:
+    content: public abstract void GetBytes(byte[] data)
+    content.vb: Public MustOverride Sub GetBytes(data As Byte())
+    parameters:
+    - id: data
+      type: System.Byte[]
+      description: The array to fill with cryptographically strong random bytes.
+references:
+- uid: System.Security.Cryptography
+  isExternal: false
+  name: System.Security.Cryptography
+  fullName: System.Security.Cryptography
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Security.Cryptography.RandomNumberGenerator
+  parent: System.Security.Cryptography
+  isExternal: false
+  href: System.Security.Cryptography.RandomNumberGenerator.yml
+  name: RandomNumberGenerator
+  fullName: System.Security.Cryptography.RandomNumberGenerator
+  type: Class
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  name.vb: Byte()
+  fullName: System.Byte[]
+  fullName.vb: System.Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()

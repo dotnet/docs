@@ -1,0 +1,351 @@
+items:
+- uid: System.Reflection.MethodImportAttributes
+  id: MethodImportAttributes
+  parent: System.Reflection
+  children:
+  - System.Reflection.MethodImportAttributes.BestFitMappingDisable
+  - System.Reflection.MethodImportAttributes.BestFitMappingEnable
+  - System.Reflection.MethodImportAttributes.BestFitMappingMask
+  - System.Reflection.MethodImportAttributes.CallingConventionCDecl
+  - System.Reflection.MethodImportAttributes.CallingConventionFastCall
+  - System.Reflection.MethodImportAttributes.CallingConventionMask
+  - System.Reflection.MethodImportAttributes.CallingConventionStdCall
+  - System.Reflection.MethodImportAttributes.CallingConventionThisCall
+  - System.Reflection.MethodImportAttributes.CallingConventionWinApi
+  - System.Reflection.MethodImportAttributes.CharSetAnsi
+  - System.Reflection.MethodImportAttributes.CharSetAuto
+  - System.Reflection.MethodImportAttributes.CharSetMask
+  - System.Reflection.MethodImportAttributes.CharSetUnicode
+  - System.Reflection.MethodImportAttributes.ExactSpelling
+  - System.Reflection.MethodImportAttributes.None
+  - System.Reflection.MethodImportAttributes.SetLastError
+  - System.Reflection.MethodImportAttributes.ThrowOnUnmappableCharDisable
+  - System.Reflection.MethodImportAttributes.ThrowOnUnmappableCharEnable
+  - System.Reflection.MethodImportAttributes.ThrowOnUnmappableCharMask
+  href: System.Reflection.MethodImportAttributes.yml
+  name: MethodImportAttributes
+  fullName: System.Reflection.MethodImportAttributes
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+    startLine: 111
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection
+  syntax:
+    content: 'public enum MethodImportAttributes : short'
+    content.vb: Public Enum MethodImportAttributes As Short
+- uid: System.Reflection.MethodImportAttributes.None
+  id: None
+  parent: System.Reflection.MethodImportAttributes
+  href: System.Reflection.MethodImportAttributes.yml
+  name: None
+  fullName: System.Reflection.MethodImportAttributes.None
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+    startLine: 114
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection
+  syntax:
+    content: None = 0
+- uid: System.Reflection.MethodImportAttributes.ExactSpelling
+  id: ExactSpelling
+  parent: System.Reflection.MethodImportAttributes
+  href: System.Reflection.MethodImportAttributes.yml
+  name: ExactSpelling
+  fullName: System.Reflection.MethodImportAttributes.ExactSpelling
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+    startLine: 115
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection
+  syntax:
+    content: ExactSpelling = 1
+- uid: System.Reflection.MethodImportAttributes.BestFitMappingDisable
+  id: BestFitMappingDisable
+  parent: System.Reflection.MethodImportAttributes
+  href: System.Reflection.MethodImportAttributes.yml
+  name: BestFitMappingDisable
+  fullName: System.Reflection.MethodImportAttributes.BestFitMappingDisable
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+    startLine: 116
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection
+  syntax:
+    content: BestFitMappingDisable = 32
+- uid: System.Reflection.MethodImportAttributes.BestFitMappingEnable
+  id: BestFitMappingEnable
+  parent: System.Reflection.MethodImportAttributes
+  href: System.Reflection.MethodImportAttributes.yml
+  name: BestFitMappingEnable
+  fullName: System.Reflection.MethodImportAttributes.BestFitMappingEnable
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+    startLine: 117
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection
+  syntax:
+    content: BestFitMappingEnable = 16
+- uid: System.Reflection.MethodImportAttributes.BestFitMappingMask
+  id: BestFitMappingMask
+  parent: System.Reflection.MethodImportAttributes
+  href: System.Reflection.MethodImportAttributes.yml
+  name: BestFitMappingMask
+  fullName: System.Reflection.MethodImportAttributes.BestFitMappingMask
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+    startLine: 118
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection
+  syntax:
+    content: BestFitMappingMask = 48
+- uid: System.Reflection.MethodImportAttributes.CharSetAnsi
+  id: CharSetAnsi
+  parent: System.Reflection.MethodImportAttributes
+  href: System.Reflection.MethodImportAttributes.yml
+  name: CharSetAnsi
+  fullName: System.Reflection.MethodImportAttributes.CharSetAnsi
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+    startLine: 119
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection
+  syntax:
+    content: CharSetAnsi = 2
+- uid: System.Reflection.MethodImportAttributes.CharSetUnicode
+  id: CharSetUnicode
+  parent: System.Reflection.MethodImportAttributes
+  href: System.Reflection.MethodImportAttributes.yml
+  name: CharSetUnicode
+  fullName: System.Reflection.MethodImportAttributes.CharSetUnicode
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+    startLine: 120
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection
+  syntax:
+    content: CharSetUnicode = 4
+- uid: System.Reflection.MethodImportAttributes.CharSetAuto
+  id: CharSetAuto
+  parent: System.Reflection.MethodImportAttributes
+  href: System.Reflection.MethodImportAttributes.yml
+  name: CharSetAuto
+  fullName: System.Reflection.MethodImportAttributes.CharSetAuto
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+    startLine: 121
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection
+  syntax:
+    content: CharSetAuto = 6
+- uid: System.Reflection.MethodImportAttributes.CharSetMask
+  id: CharSetMask
+  parent: System.Reflection.MethodImportAttributes
+  href: System.Reflection.MethodImportAttributes.yml
+  name: CharSetMask
+  fullName: System.Reflection.MethodImportAttributes.CharSetMask
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+    startLine: 122
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection
+  syntax:
+    content: CharSetMask = 6
+- uid: System.Reflection.MethodImportAttributes.ThrowOnUnmappableCharEnable
+  id: ThrowOnUnmappableCharEnable
+  parent: System.Reflection.MethodImportAttributes
+  href: System.Reflection.MethodImportAttributes.yml
+  name: ThrowOnUnmappableCharEnable
+  fullName: System.Reflection.MethodImportAttributes.ThrowOnUnmappableCharEnable
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+    startLine: 123
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection
+  syntax:
+    content: ThrowOnUnmappableCharEnable = 4096
+- uid: System.Reflection.MethodImportAttributes.ThrowOnUnmappableCharDisable
+  id: ThrowOnUnmappableCharDisable
+  parent: System.Reflection.MethodImportAttributes
+  href: System.Reflection.MethodImportAttributes.yml
+  name: ThrowOnUnmappableCharDisable
+  fullName: System.Reflection.MethodImportAttributes.ThrowOnUnmappableCharDisable
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+    startLine: 124
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection
+  syntax:
+    content: ThrowOnUnmappableCharDisable = 8192
+- uid: System.Reflection.MethodImportAttributes.ThrowOnUnmappableCharMask
+  id: ThrowOnUnmappableCharMask
+  parent: System.Reflection.MethodImportAttributes
+  href: System.Reflection.MethodImportAttributes.yml
+  name: ThrowOnUnmappableCharMask
+  fullName: System.Reflection.MethodImportAttributes.ThrowOnUnmappableCharMask
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+    startLine: 125
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection
+  syntax:
+    content: ThrowOnUnmappableCharMask = 12288
+- uid: System.Reflection.MethodImportAttributes.SetLastError
+  id: SetLastError
+  parent: System.Reflection.MethodImportAttributes
+  href: System.Reflection.MethodImportAttributes.yml
+  name: SetLastError
+  fullName: System.Reflection.MethodImportAttributes.SetLastError
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+    startLine: 126
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection
+  syntax:
+    content: SetLastError = 64
+- uid: System.Reflection.MethodImportAttributes.CallingConventionWinApi
+  id: CallingConventionWinApi
+  parent: System.Reflection.MethodImportAttributes
+  href: System.Reflection.MethodImportAttributes.yml
+  name: CallingConventionWinApi
+  fullName: System.Reflection.MethodImportAttributes.CallingConventionWinApi
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+    startLine: 127
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection
+  syntax:
+    content: CallingConventionWinApi = 256
+- uid: System.Reflection.MethodImportAttributes.CallingConventionCDecl
+  id: CallingConventionCDecl
+  parent: System.Reflection.MethodImportAttributes
+  href: System.Reflection.MethodImportAttributes.yml
+  name: CallingConventionCDecl
+  fullName: System.Reflection.MethodImportAttributes.CallingConventionCDecl
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+    startLine: 128
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection
+  syntax:
+    content: CallingConventionCDecl = 512
+- uid: System.Reflection.MethodImportAttributes.CallingConventionStdCall
+  id: CallingConventionStdCall
+  parent: System.Reflection.MethodImportAttributes
+  href: System.Reflection.MethodImportAttributes.yml
+  name: CallingConventionStdCall
+  fullName: System.Reflection.MethodImportAttributes.CallingConventionStdCall
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+    startLine: 129
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection
+  syntax:
+    content: CallingConventionStdCall = 768
+- uid: System.Reflection.MethodImportAttributes.CallingConventionThisCall
+  id: CallingConventionThisCall
+  parent: System.Reflection.MethodImportAttributes
+  href: System.Reflection.MethodImportAttributes.yml
+  name: CallingConventionThisCall
+  fullName: System.Reflection.MethodImportAttributes.CallingConventionThisCall
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+    startLine: 130
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection
+  syntax:
+    content: CallingConventionThisCall = 1024
+- uid: System.Reflection.MethodImportAttributes.CallingConventionFastCall
+  id: CallingConventionFastCall
+  parent: System.Reflection.MethodImportAttributes
+  href: System.Reflection.MethodImportAttributes.yml
+  name: CallingConventionFastCall
+  fullName: System.Reflection.MethodImportAttributes.CallingConventionFastCall
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+    startLine: 131
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection
+  syntax:
+    content: CallingConventionFastCall = 1280
+- uid: System.Reflection.MethodImportAttributes.CallingConventionMask
+  id: CallingConventionMask
+  parent: System.Reflection.MethodImportAttributes
+  href: System.Reflection.MethodImportAttributes.yml
+  name: CallingConventionMask
+  fullName: System.Reflection.MethodImportAttributes.CallingConventionMask
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+    startLine: 132
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection
+  syntax:
+    content: CallingConventionMask = 1792
+references:
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace

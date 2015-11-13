@@ -1,0 +1,2620 @@
+items:
+- uid: System.ConsoleKey
+  id: ConsoleKey
+  parent: System
+  children:
+  - System.ConsoleKey.A
+  - System.ConsoleKey.Add
+  - System.ConsoleKey.Applications
+  - System.ConsoleKey.Attention
+  - System.ConsoleKey.B
+  - System.ConsoleKey.Backspace
+  - System.ConsoleKey.BrowserBack
+  - System.ConsoleKey.BrowserFavorites
+  - System.ConsoleKey.BrowserForward
+  - System.ConsoleKey.BrowserHome
+  - System.ConsoleKey.BrowserRefresh
+  - System.ConsoleKey.BrowserSearch
+  - System.ConsoleKey.BrowserStop
+  - System.ConsoleKey.C
+  - System.ConsoleKey.Clear
+  - System.ConsoleKey.CrSel
+  - System.ConsoleKey.D
+  - System.ConsoleKey.D0
+  - System.ConsoleKey.D1
+  - System.ConsoleKey.D2
+  - System.ConsoleKey.D3
+  - System.ConsoleKey.D4
+  - System.ConsoleKey.D5
+  - System.ConsoleKey.D6
+  - System.ConsoleKey.D7
+  - System.ConsoleKey.D8
+  - System.ConsoleKey.D9
+  - System.ConsoleKey.Decimal
+  - System.ConsoleKey.Delete
+  - System.ConsoleKey.Divide
+  - System.ConsoleKey.DownArrow
+  - System.ConsoleKey.E
+  - System.ConsoleKey.End
+  - System.ConsoleKey.Enter
+  - System.ConsoleKey.EraseEndOfFile
+  - System.ConsoleKey.Escape
+  - System.ConsoleKey.Execute
+  - System.ConsoleKey.ExSel
+  - System.ConsoleKey.F
+  - System.ConsoleKey.F1
+  - System.ConsoleKey.F10
+  - System.ConsoleKey.F11
+  - System.ConsoleKey.F12
+  - System.ConsoleKey.F13
+  - System.ConsoleKey.F14
+  - System.ConsoleKey.F15
+  - System.ConsoleKey.F16
+  - System.ConsoleKey.F17
+  - System.ConsoleKey.F18
+  - System.ConsoleKey.F19
+  - System.ConsoleKey.F2
+  - System.ConsoleKey.F20
+  - System.ConsoleKey.F21
+  - System.ConsoleKey.F22
+  - System.ConsoleKey.F23
+  - System.ConsoleKey.F24
+  - System.ConsoleKey.F3
+  - System.ConsoleKey.F4
+  - System.ConsoleKey.F5
+  - System.ConsoleKey.F6
+  - System.ConsoleKey.F7
+  - System.ConsoleKey.F8
+  - System.ConsoleKey.F9
+  - System.ConsoleKey.G
+  - System.ConsoleKey.H
+  - System.ConsoleKey.Help
+  - System.ConsoleKey.Home
+  - System.ConsoleKey.I
+  - System.ConsoleKey.Insert
+  - System.ConsoleKey.J
+  - System.ConsoleKey.K
+  - System.ConsoleKey.L
+  - System.ConsoleKey.LaunchApp1
+  - System.ConsoleKey.LaunchApp2
+  - System.ConsoleKey.LaunchMail
+  - System.ConsoleKey.LaunchMediaSelect
+  - System.ConsoleKey.LeftArrow
+  - System.ConsoleKey.LeftWindows
+  - System.ConsoleKey.M
+  - System.ConsoleKey.MediaNext
+  - System.ConsoleKey.MediaPlay
+  - System.ConsoleKey.MediaPrevious
+  - System.ConsoleKey.MediaStop
+  - System.ConsoleKey.Multiply
+  - System.ConsoleKey.N
+  - System.ConsoleKey.NoName
+  - System.ConsoleKey.NumPad0
+  - System.ConsoleKey.NumPad1
+  - System.ConsoleKey.NumPad2
+  - System.ConsoleKey.NumPad3
+  - System.ConsoleKey.NumPad4
+  - System.ConsoleKey.NumPad5
+  - System.ConsoleKey.NumPad6
+  - System.ConsoleKey.NumPad7
+  - System.ConsoleKey.NumPad8
+  - System.ConsoleKey.NumPad9
+  - System.ConsoleKey.O
+  - System.ConsoleKey.Oem1
+  - System.ConsoleKey.Oem102
+  - System.ConsoleKey.Oem2
+  - System.ConsoleKey.Oem3
+  - System.ConsoleKey.Oem4
+  - System.ConsoleKey.Oem5
+  - System.ConsoleKey.Oem6
+  - System.ConsoleKey.Oem7
+  - System.ConsoleKey.Oem8
+  - System.ConsoleKey.OemClear
+  - System.ConsoleKey.OemComma
+  - System.ConsoleKey.OemMinus
+  - System.ConsoleKey.OemPeriod
+  - System.ConsoleKey.OemPlus
+  - System.ConsoleKey.P
+  - System.ConsoleKey.Pa1
+  - System.ConsoleKey.Packet
+  - System.ConsoleKey.PageDown
+  - System.ConsoleKey.PageUp
+  - System.ConsoleKey.Pause
+  - System.ConsoleKey.Play
+  - System.ConsoleKey.Print
+  - System.ConsoleKey.PrintScreen
+  - System.ConsoleKey.Process
+  - System.ConsoleKey.Q
+  - System.ConsoleKey.R
+  - System.ConsoleKey.RightArrow
+  - System.ConsoleKey.RightWindows
+  - System.ConsoleKey.S
+  - System.ConsoleKey.Select
+  - System.ConsoleKey.Separator
+  - System.ConsoleKey.Sleep
+  - System.ConsoleKey.Spacebar
+  - System.ConsoleKey.Subtract
+  - System.ConsoleKey.T
+  - System.ConsoleKey.Tab
+  - System.ConsoleKey.U
+  - System.ConsoleKey.UpArrow
+  - System.ConsoleKey.V
+  - System.ConsoleKey.VolumeDown
+  - System.ConsoleKey.VolumeMute
+  - System.ConsoleKey.VolumeUp
+  - System.ConsoleKey.W
+  - System.ConsoleKey.X
+  - System.ConsoleKey.Y
+  - System.ConsoleKey.Z
+  - System.ConsoleKey.Zoom
+  href: System.ConsoleKey.yml
+  name: ConsoleKey
+  fullName: System.ConsoleKey
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/ConsoleKey.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 16
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Specifies the standard keys on a console.
+  syntax:
+    content: public enum ConsoleKey
+    content.vb: Public Enum ConsoleKey
+- uid: System.ConsoleKey.Backspace
+  id: Backspace
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: Backspace
+  fullName: System.ConsoleKey.Backspace
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 19
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The BACKSPACE key.
+  syntax:
+    content: Backspace = 8
+- uid: System.ConsoleKey.Tab
+  id: Tab
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: Tab
+  fullName: System.ConsoleKey.Tab
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 20
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The TAB key.
+  syntax:
+    content: Tab = 9
+- uid: System.ConsoleKey.Clear
+  id: Clear
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: Clear
+  fullName: System.ConsoleKey.Clear
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 23
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The CLEAR key.
+  syntax:
+    content: Clear = 12
+- uid: System.ConsoleKey.Enter
+  id: Enter
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: Enter
+  fullName: System.ConsoleKey.Enter
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 24
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The ENTER key.
+  syntax:
+    content: Enter = 13
+- uid: System.ConsoleKey.Pause
+  id: Pause
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: Pause
+  fullName: System.ConsoleKey.Pause
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 29
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The PAUSE key.
+  syntax:
+    content: Pause = 19
+- uid: System.ConsoleKey.Escape
+  id: Escape
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: Escape
+  fullName: System.ConsoleKey.Escape
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 39
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The ESC (ESCAPE) key.
+  syntax:
+    content: Escape = 27
+- uid: System.ConsoleKey.Spacebar
+  id: Spacebar
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: Spacebar
+  fullName: System.ConsoleKey.Spacebar
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 44
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The SPACEBAR key.
+  syntax:
+    content: Spacebar = 32
+- uid: System.ConsoleKey.PageUp
+  id: PageUp
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: PageUp
+  fullName: System.ConsoleKey.PageUp
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 45
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The PAGE UP key.
+  syntax:
+    content: PageUp = 33
+- uid: System.ConsoleKey.PageDown
+  id: PageDown
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: PageDown
+  fullName: System.ConsoleKey.PageDown
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 46
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The PAGE DOWN key.
+  syntax:
+    content: PageDown = 34
+- uid: System.ConsoleKey.End
+  id: End
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: End
+  fullName: System.ConsoleKey.End
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 47
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The END key.
+  syntax:
+    content: End = 35
+- uid: System.ConsoleKey.Home
+  id: Home
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: Home
+  fullName: System.ConsoleKey.Home
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 48
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The HOME key.
+  syntax:
+    content: Home = 36
+- uid: System.ConsoleKey.LeftArrow
+  id: LeftArrow
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: LeftArrow
+  fullName: System.ConsoleKey.LeftArrow
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 49
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The LEFT ARROW key.
+  syntax:
+    content: LeftArrow = 37
+- uid: System.ConsoleKey.UpArrow
+  id: UpArrow
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: UpArrow
+  fullName: System.ConsoleKey.UpArrow
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 50
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The UP ARROW key.
+  syntax:
+    content: UpArrow = 38
+- uid: System.ConsoleKey.RightArrow
+  id: RightArrow
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: RightArrow
+  fullName: System.ConsoleKey.RightArrow
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 51
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The RIGHT ARROW key.
+  syntax:
+    content: RightArrow = 39
+- uid: System.ConsoleKey.DownArrow
+  id: DownArrow
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: DownArrow
+  fullName: System.ConsoleKey.DownArrow
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 52
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The DOWN ARROW key.
+  syntax:
+    content: DownArrow = 40
+- uid: System.ConsoleKey.Select
+  id: Select
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: Select
+  fullName: System.ConsoleKey.Select
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 53
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The SELECT key.
+  syntax:
+    content: Select = 41
+- uid: System.ConsoleKey.Print
+  id: Print
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: Print
+  fullName: System.ConsoleKey.Print
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 54
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The PRINT key.
+  syntax:
+    content: Print = 42
+- uid: System.ConsoleKey.Execute
+  id: Execute
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: Execute
+  fullName: System.ConsoleKey.Execute
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 55
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The EXECUTE key.
+  syntax:
+    content: Execute = 43
+- uid: System.ConsoleKey.PrintScreen
+  id: PrintScreen
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: PrintScreen
+  fullName: System.ConsoleKey.PrintScreen
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 56
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The PRINT SCREEN key.
+  syntax:
+    content: PrintScreen = 44
+- uid: System.ConsoleKey.Insert
+  id: Insert
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: Insert
+  fullName: System.ConsoleKey.Insert
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 57
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The INS (INSERT) key.
+  syntax:
+    content: Insert = 45
+- uid: System.ConsoleKey.Delete
+  id: Delete
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: Delete
+  fullName: System.ConsoleKey.Delete
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 58
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The DEL (DELETE) key.
+  syntax:
+    content: Delete = 46
+- uid: System.ConsoleKey.Help
+  id: Help
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: Help
+  fullName: System.ConsoleKey.Help
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 59
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The HELP key.
+  syntax:
+    content: Help = 47
+- uid: System.ConsoleKey.D0
+  id: D0
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: D0
+  fullName: System.ConsoleKey.D0
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 60
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The 0 key.
+  syntax:
+    content: D0 = 48
+- uid: System.ConsoleKey.D1
+  id: D1
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: D1
+  fullName: System.ConsoleKey.D1
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 61
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The 1 key.
+  syntax:
+    content: D1 = 49
+- uid: System.ConsoleKey.D2
+  id: D2
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: D2
+  fullName: System.ConsoleKey.D2
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 62
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The 2 key.
+  syntax:
+    content: D2 = 50
+- uid: System.ConsoleKey.D3
+  id: D3
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: D3
+  fullName: System.ConsoleKey.D3
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 63
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The 3 key.
+  syntax:
+    content: D3 = 51
+- uid: System.ConsoleKey.D4
+  id: D4
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: D4
+  fullName: System.ConsoleKey.D4
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 64
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The 4 key.
+  syntax:
+    content: D4 = 52
+- uid: System.ConsoleKey.D5
+  id: D5
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: D5
+  fullName: System.ConsoleKey.D5
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 65
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The 5 key.
+  syntax:
+    content: D5 = 53
+- uid: System.ConsoleKey.D6
+  id: D6
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: D6
+  fullName: System.ConsoleKey.D6
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 66
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The 6 key.
+  syntax:
+    content: D6 = 54
+- uid: System.ConsoleKey.D7
+  id: D7
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: D7
+  fullName: System.ConsoleKey.D7
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 67
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The 7 key.
+  syntax:
+    content: D7 = 55
+- uid: System.ConsoleKey.D8
+  id: D8
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: D8
+  fullName: System.ConsoleKey.D8
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 68
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The 8 key.
+  syntax:
+    content: D8 = 56
+- uid: System.ConsoleKey.D9
+  id: D9
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: D9
+  fullName: System.ConsoleKey.D9
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 69
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The 9 key.
+  syntax:
+    content: D9 = 57
+- uid: System.ConsoleKey.A
+  id: A
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: A
+  fullName: System.ConsoleKey.A
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 71
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The A key.
+  syntax:
+    content: A = 65
+- uid: System.ConsoleKey.B
+  id: B
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: B
+  fullName: System.ConsoleKey.B
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 72
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The B key.
+  syntax:
+    content: B = 66
+- uid: System.ConsoleKey.C
+  id: C
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: C
+  fullName: System.ConsoleKey.C
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 73
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The C key.
+  syntax:
+    content: C = 67
+- uid: System.ConsoleKey.D
+  id: D
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: D
+  fullName: System.ConsoleKey.D
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 74
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The D key.
+  syntax:
+    content: D = 68
+- uid: System.ConsoleKey.E
+  id: E
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: E
+  fullName: System.ConsoleKey.E
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 75
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The E key.
+  syntax:
+    content: E = 69
+- uid: System.ConsoleKey.F
+  id: F
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: F
+  fullName: System.ConsoleKey.F
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 76
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The F key.
+  syntax:
+    content: F = 70
+- uid: System.ConsoleKey.G
+  id: G
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: G
+  fullName: System.ConsoleKey.G
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 77
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The G key.
+  syntax:
+    content: G = 71
+- uid: System.ConsoleKey.H
+  id: H
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: H
+  fullName: System.ConsoleKey.H
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 78
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The H key.
+  syntax:
+    content: H = 72
+- uid: System.ConsoleKey.I
+  id: I
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: I
+  fullName: System.ConsoleKey.I
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 79
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The I key.
+  syntax:
+    content: I = 73
+- uid: System.ConsoleKey.J
+  id: J
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: J
+  fullName: System.ConsoleKey.J
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 80
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The J key.
+  syntax:
+    content: J = 74
+- uid: System.ConsoleKey.K
+  id: K
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: K
+  fullName: System.ConsoleKey.K
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 81
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The K key.
+  syntax:
+    content: K = 75
+- uid: System.ConsoleKey.L
+  id: L
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: L
+  fullName: System.ConsoleKey.L
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 82
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The L key.
+  syntax:
+    content: L = 76
+- uid: System.ConsoleKey.M
+  id: M
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: M
+  fullName: System.ConsoleKey.M
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 83
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The M key.
+  syntax:
+    content: M = 77
+- uid: System.ConsoleKey.N
+  id: N
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: N
+  fullName: System.ConsoleKey.N
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 84
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The N key.
+  syntax:
+    content: N = 78
+- uid: System.ConsoleKey.O
+  id: O
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: O
+  fullName: System.ConsoleKey.O
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 85
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The O key.
+  syntax:
+    content: O = 79
+- uid: System.ConsoleKey.P
+  id: P
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: P
+  fullName: System.ConsoleKey.P
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 86
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The P key.
+  syntax:
+    content: P = 80
+- uid: System.ConsoleKey.Q
+  id: Q
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: Q
+  fullName: System.ConsoleKey.Q
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 87
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The Q key.
+  syntax:
+    content: Q = 81
+- uid: System.ConsoleKey.R
+  id: R
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: R
+  fullName: System.ConsoleKey.R
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 88
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The R key.
+  syntax:
+    content: R = 82
+- uid: System.ConsoleKey.S
+  id: S
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: S
+  fullName: System.ConsoleKey.S
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 89
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The S key.
+  syntax:
+    content: S = 83
+- uid: System.ConsoleKey.T
+  id: T
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: T
+  fullName: System.ConsoleKey.T
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 90
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The T key.
+  syntax:
+    content: T = 84
+- uid: System.ConsoleKey.U
+  id: U
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: U
+  fullName: System.ConsoleKey.U
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 91
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The U key.
+  syntax:
+    content: U = 85
+- uid: System.ConsoleKey.V
+  id: V
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: V
+  fullName: System.ConsoleKey.V
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 92
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The V key.
+  syntax:
+    content: V = 86
+- uid: System.ConsoleKey.W
+  id: W
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: W
+  fullName: System.ConsoleKey.W
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 93
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The W key.
+  syntax:
+    content: W = 87
+- uid: System.ConsoleKey.X
+  id: X
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: X
+  fullName: System.ConsoleKey.X
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 94
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The X key.
+  syntax:
+    content: X = 88
+- uid: System.ConsoleKey.Y
+  id: Y
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: Y
+  fullName: System.ConsoleKey.Y
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 95
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The Y key.
+  syntax:
+    content: Y = 89
+- uid: System.ConsoleKey.Z
+  id: Z
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: Z
+  fullName: System.ConsoleKey.Z
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 96
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The Z key.
+  syntax:
+    content: Z = 90
+- uid: System.ConsoleKey.LeftWindows
+  id: LeftWindows
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: LeftWindows
+  fullName: System.ConsoleKey.LeftWindows
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 97
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The left Windows logo key (Microsoft Natural Keyboard).
+  syntax:
+    content: LeftWindows = 91
+- uid: System.ConsoleKey.RightWindows
+  id: RightWindows
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: RightWindows
+  fullName: System.ConsoleKey.RightWindows
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 98
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The right Windows logo key (Microsoft Natural Keyboard).
+  syntax:
+    content: RightWindows = 92
+- uid: System.ConsoleKey.Applications
+  id: Applications
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: Applications
+  fullName: System.ConsoleKey.Applications
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 99
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The Application key (Microsoft Natural Keyboard).
+  syntax:
+    content: Applications = 93
+- uid: System.ConsoleKey.Sleep
+  id: Sleep
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: Sleep
+  fullName: System.ConsoleKey.Sleep
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 101
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The Computer Sleep key.
+  syntax:
+    content: Sleep = 95
+- uid: System.ConsoleKey.NumPad0
+  id: NumPad0
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: NumPad0
+  fullName: System.ConsoleKey.NumPad0
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 102
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The 0 key on the numeric keypad.
+  syntax:
+    content: NumPad0 = 96
+- uid: System.ConsoleKey.NumPad1
+  id: NumPad1
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: NumPad1
+  fullName: System.ConsoleKey.NumPad1
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 103
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The 1 key on the numeric keypad.
+  syntax:
+    content: NumPad1 = 97
+- uid: System.ConsoleKey.NumPad2
+  id: NumPad2
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: NumPad2
+  fullName: System.ConsoleKey.NumPad2
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 104
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The 2 key on the numeric keypad.
+  syntax:
+    content: NumPad2 = 98
+- uid: System.ConsoleKey.NumPad3
+  id: NumPad3
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: NumPad3
+  fullName: System.ConsoleKey.NumPad3
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 105
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The 3 key on the numeric keypad.
+  syntax:
+    content: NumPad3 = 99
+- uid: System.ConsoleKey.NumPad4
+  id: NumPad4
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: NumPad4
+  fullName: System.ConsoleKey.NumPad4
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 106
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The 4 key on the numeric keypad.
+  syntax:
+    content: NumPad4 = 100
+- uid: System.ConsoleKey.NumPad5
+  id: NumPad5
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: NumPad5
+  fullName: System.ConsoleKey.NumPad5
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 107
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The 5 key on the numeric keypad.
+  syntax:
+    content: NumPad5 = 101
+- uid: System.ConsoleKey.NumPad6
+  id: NumPad6
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: NumPad6
+  fullName: System.ConsoleKey.NumPad6
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 108
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The 6 key on the numeric keypad.
+  syntax:
+    content: NumPad6 = 102
+- uid: System.ConsoleKey.NumPad7
+  id: NumPad7
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: NumPad7
+  fullName: System.ConsoleKey.NumPad7
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 109
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The 7 key on the numeric keypad.
+  syntax:
+    content: NumPad7 = 103
+- uid: System.ConsoleKey.NumPad8
+  id: NumPad8
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: NumPad8
+  fullName: System.ConsoleKey.NumPad8
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 110
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The 8 key on the numeric keypad.
+  syntax:
+    content: NumPad8 = 104
+- uid: System.ConsoleKey.NumPad9
+  id: NumPad9
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: NumPad9
+  fullName: System.ConsoleKey.NumPad9
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 111
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The 9 key on the numeric keypad.
+  syntax:
+    content: NumPad9 = 105
+- uid: System.ConsoleKey.Multiply
+  id: Multiply
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: Multiply
+  fullName: System.ConsoleKey.Multiply
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 112
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The Multiply key (the multiplication key on the numeric keypad).
+  syntax:
+    content: Multiply = 106
+- uid: System.ConsoleKey.Add
+  id: Add
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: Add
+  fullName: System.ConsoleKey.Add
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 113
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The Add key (the addition key on the numeric keypad).
+  syntax:
+    content: Add = 107
+- uid: System.ConsoleKey.Separator
+  id: Separator
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: Separator
+  fullName: System.ConsoleKey.Separator
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 114
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The Separator key.
+  syntax:
+    content: Separator = 108
+- uid: System.ConsoleKey.Subtract
+  id: Subtract
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: Subtract
+  fullName: System.ConsoleKey.Subtract
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 115
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The Subtract key (the subtraction key on the numeric keypad).
+  syntax:
+    content: Subtract = 109
+- uid: System.ConsoleKey.Decimal
+  id: Decimal
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: Decimal
+  fullName: System.ConsoleKey.Decimal
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 116
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The Decimal key (the decimal key on the numeric keypad).
+  syntax:
+    content: Decimal = 110
+- uid: System.ConsoleKey.Divide
+  id: Divide
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: Divide
+  fullName: System.ConsoleKey.Divide
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 117
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The Divide key (the division key on the numeric keypad).
+  syntax:
+    content: Divide = 111
+- uid: System.ConsoleKey.F1
+  id: F1
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: F1
+  fullName: System.ConsoleKey.F1
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 118
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The F1 key.
+  syntax:
+    content: F1 = 112
+- uid: System.ConsoleKey.F2
+  id: F2
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: F2
+  fullName: System.ConsoleKey.F2
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 119
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The F2 key.
+  syntax:
+    content: F2 = 113
+- uid: System.ConsoleKey.F3
+  id: F3
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: F3
+  fullName: System.ConsoleKey.F3
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 120
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The F3 key.
+  syntax:
+    content: F3 = 114
+- uid: System.ConsoleKey.F4
+  id: F4
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: F4
+  fullName: System.ConsoleKey.F4
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 121
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The F4 key.
+  syntax:
+    content: F4 = 115
+- uid: System.ConsoleKey.F5
+  id: F5
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: F5
+  fullName: System.ConsoleKey.F5
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 122
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The F5 key.
+  syntax:
+    content: F5 = 116
+- uid: System.ConsoleKey.F6
+  id: F6
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: F6
+  fullName: System.ConsoleKey.F6
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 123
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The F6 key.
+  syntax:
+    content: F6 = 117
+- uid: System.ConsoleKey.F7
+  id: F7
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: F7
+  fullName: System.ConsoleKey.F7
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 124
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The F7 key.
+  syntax:
+    content: F7 = 118
+- uid: System.ConsoleKey.F8
+  id: F8
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: F8
+  fullName: System.ConsoleKey.F8
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 125
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The F8 key.
+  syntax:
+    content: F8 = 119
+- uid: System.ConsoleKey.F9
+  id: F9
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: F9
+  fullName: System.ConsoleKey.F9
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 126
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The F9 key.
+  syntax:
+    content: F9 = 120
+- uid: System.ConsoleKey.F10
+  id: F10
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: F10
+  fullName: System.ConsoleKey.F10
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 127
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The F10 key.
+  syntax:
+    content: F10 = 121
+- uid: System.ConsoleKey.F11
+  id: F11
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: F11
+  fullName: System.ConsoleKey.F11
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 128
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The F11 key.
+  syntax:
+    content: F11 = 122
+- uid: System.ConsoleKey.F12
+  id: F12
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: F12
+  fullName: System.ConsoleKey.F12
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 129
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The F12 key.
+  syntax:
+    content: F12 = 123
+- uid: System.ConsoleKey.F13
+  id: F13
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: F13
+  fullName: System.ConsoleKey.F13
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 130
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The F13 key.
+  syntax:
+    content: F13 = 124
+- uid: System.ConsoleKey.F14
+  id: F14
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: F14
+  fullName: System.ConsoleKey.F14
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 131
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The F14 key.
+  syntax:
+    content: F14 = 125
+- uid: System.ConsoleKey.F15
+  id: F15
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: F15
+  fullName: System.ConsoleKey.F15
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 132
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The F15 key.
+  syntax:
+    content: F15 = 126
+- uid: System.ConsoleKey.F16
+  id: F16
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: F16
+  fullName: System.ConsoleKey.F16
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 133
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The F16 key.
+  syntax:
+    content: F16 = 127
+- uid: System.ConsoleKey.F17
+  id: F17
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: F17
+  fullName: System.ConsoleKey.F17
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 134
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The F17 key.
+  syntax:
+    content: F17 = 128
+- uid: System.ConsoleKey.F18
+  id: F18
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: F18
+  fullName: System.ConsoleKey.F18
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 135
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The F18 key.
+  syntax:
+    content: F18 = 129
+- uid: System.ConsoleKey.F19
+  id: F19
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: F19
+  fullName: System.ConsoleKey.F19
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 136
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The F19 key.
+  syntax:
+    content: F19 = 130
+- uid: System.ConsoleKey.F20
+  id: F20
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: F20
+  fullName: System.ConsoleKey.F20
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 137
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The F20 key.
+  syntax:
+    content: F20 = 131
+- uid: System.ConsoleKey.F21
+  id: F21
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: F21
+  fullName: System.ConsoleKey.F21
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 138
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The F21 key.
+  syntax:
+    content: F21 = 132
+- uid: System.ConsoleKey.F22
+  id: F22
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: F22
+  fullName: System.ConsoleKey.F22
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 139
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The F22 key.
+  syntax:
+    content: F22 = 133
+- uid: System.ConsoleKey.F23
+  id: F23
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: F23
+  fullName: System.ConsoleKey.F23
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 140
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The F23 key.
+  syntax:
+    content: F23 = 134
+- uid: System.ConsoleKey.F24
+  id: F24
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: F24
+  fullName: System.ConsoleKey.F24
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 141
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The F24 key.
+  syntax:
+    content: F24 = 135
+- uid: System.ConsoleKey.BrowserBack
+  id: BrowserBack
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: BrowserBack
+  fullName: System.ConsoleKey.BrowserBack
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 153
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The Browser Back key (Windows 2000 or later).
+  syntax:
+    content: BrowserBack = 166
+- uid: System.ConsoleKey.BrowserForward
+  id: BrowserForward
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: BrowserForward
+  fullName: System.ConsoleKey.BrowserForward
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 154
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The Browser Forward key (Windows 2000 or later).
+  syntax:
+    content: BrowserForward = 167
+- uid: System.ConsoleKey.BrowserRefresh
+  id: BrowserRefresh
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: BrowserRefresh
+  fullName: System.ConsoleKey.BrowserRefresh
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 155
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The Browser Refresh key (Windows 2000 or later).
+  syntax:
+    content: BrowserRefresh = 168
+- uid: System.ConsoleKey.BrowserStop
+  id: BrowserStop
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: BrowserStop
+  fullName: System.ConsoleKey.BrowserStop
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 156
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The Browser Stop key (Windows 2000 or later).
+  syntax:
+    content: BrowserStop = 169
+- uid: System.ConsoleKey.BrowserSearch
+  id: BrowserSearch
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: BrowserSearch
+  fullName: System.ConsoleKey.BrowserSearch
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 157
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The Browser Search key (Windows 2000 or later).
+  syntax:
+    content: BrowserSearch = 170
+- uid: System.ConsoleKey.BrowserFavorites
+  id: BrowserFavorites
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: BrowserFavorites
+  fullName: System.ConsoleKey.BrowserFavorites
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 158
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The Browser Favorites key (Windows 2000 or later).
+  syntax:
+    content: BrowserFavorites = 171
+- uid: System.ConsoleKey.BrowserHome
+  id: BrowserHome
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: BrowserHome
+  fullName: System.ConsoleKey.BrowserHome
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 159
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The Browser Home key (Windows 2000 or later).
+  syntax:
+    content: BrowserHome = 172
+- uid: System.ConsoleKey.VolumeMute
+  id: VolumeMute
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: VolumeMute
+  fullName: System.ConsoleKey.VolumeMute
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 160
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The Volume Mute key (Microsoft Natural Keyboard, Windows 2000 or later).
+  syntax:
+    content: VolumeMute = 173
+- uid: System.ConsoleKey.VolumeDown
+  id: VolumeDown
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: VolumeDown
+  fullName: System.ConsoleKey.VolumeDown
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 161
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The Volume Down key (Microsoft Natural Keyboard, Windows 2000 or later).
+  syntax:
+    content: VolumeDown = 174
+- uid: System.ConsoleKey.VolumeUp
+  id: VolumeUp
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: VolumeUp
+  fullName: System.ConsoleKey.VolumeUp
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 162
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The Volume Up key (Microsoft Natural Keyboard, Windows 2000 or later).
+  syntax:
+    content: VolumeUp = 175
+- uid: System.ConsoleKey.MediaNext
+  id: MediaNext
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: MediaNext
+  fullName: System.ConsoleKey.MediaNext
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 163
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The Media Next Track key (Windows 2000 or later).
+  syntax:
+    content: MediaNext = 176
+- uid: System.ConsoleKey.MediaPrevious
+  id: MediaPrevious
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: MediaPrevious
+  fullName: System.ConsoleKey.MediaPrevious
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 164
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The Media Previous Track key (Windows 2000 or later).
+  syntax:
+    content: MediaPrevious = 177
+- uid: System.ConsoleKey.MediaStop
+  id: MediaStop
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: MediaStop
+  fullName: System.ConsoleKey.MediaStop
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 165
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The Media Stop key (Windows 2000 or later).
+  syntax:
+    content: MediaStop = 178
+- uid: System.ConsoleKey.MediaPlay
+  id: MediaPlay
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: MediaPlay
+  fullName: System.ConsoleKey.MediaPlay
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 166
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The Media Play/Pause key (Windows 2000 or later).
+  syntax:
+    content: MediaPlay = 179
+- uid: System.ConsoleKey.LaunchMail
+  id: LaunchMail
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: LaunchMail
+  fullName: System.ConsoleKey.LaunchMail
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 167
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The Start Mail key (Microsoft Natural Keyboard, Windows 2000 or later).
+  syntax:
+    content: LaunchMail = 180
+- uid: System.ConsoleKey.LaunchMediaSelect
+  id: LaunchMediaSelect
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: LaunchMediaSelect
+  fullName: System.ConsoleKey.LaunchMediaSelect
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 168
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The Select Media key (Microsoft Natural Keyboard, Windows 2000 or later).
+  syntax:
+    content: LaunchMediaSelect = 181
+- uid: System.ConsoleKey.LaunchApp1
+  id: LaunchApp1
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: LaunchApp1
+  fullName: System.ConsoleKey.LaunchApp1
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 169
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The Start Application 1 key (Microsoft Natural Keyboard, Windows 2000 or later).
+  syntax:
+    content: LaunchApp1 = 182
+- uid: System.ConsoleKey.LaunchApp2
+  id: LaunchApp2
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: LaunchApp2
+  fullName: System.ConsoleKey.LaunchApp2
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 170
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The Start Application 2 key (Microsoft Natural Keyboard, Windows 2000 or later).
+  syntax:
+    content: LaunchApp2 = 183
+- uid: System.ConsoleKey.Oem1
+  id: Oem1
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: Oem1
+  fullName: System.ConsoleKey.Oem1
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 172
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The OEM 1 key (OEM specific).
+  syntax:
+    content: Oem1 = 186
+- uid: System.ConsoleKey.OemPlus
+  id: OemPlus
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: OemPlus
+  fullName: System.ConsoleKey.OemPlus
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 173
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The OEM Plus key on any country/region keyboard (Windows 2000 or later).
+  syntax:
+    content: OemPlus = 187
+- uid: System.ConsoleKey.OemComma
+  id: OemComma
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: OemComma
+  fullName: System.ConsoleKey.OemComma
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 174
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The OEM Comma key on any country/region keyboard (Windows 2000 or later).
+  syntax:
+    content: OemComma = 188
+- uid: System.ConsoleKey.OemMinus
+  id: OemMinus
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: OemMinus
+  fullName: System.ConsoleKey.OemMinus
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 175
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The OEM Minus key on any country/region keyboard (Windows 2000 or later).
+  syntax:
+    content: OemMinus = 189
+- uid: System.ConsoleKey.OemPeriod
+  id: OemPeriod
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: OemPeriod
+  fullName: System.ConsoleKey.OemPeriod
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 176
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The OEM Period key on any country/region keyboard (Windows 2000 or later).
+  syntax:
+    content: OemPeriod = 190
+- uid: System.ConsoleKey.Oem2
+  id: Oem2
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: Oem2
+  fullName: System.ConsoleKey.Oem2
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 177
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The OEM 2 key (OEM specific).
+  syntax:
+    content: Oem2 = 191
+- uid: System.ConsoleKey.Oem3
+  id: Oem3
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: Oem3
+  fullName: System.ConsoleKey.Oem3
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 178
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The OEM 3 key (OEM specific).
+  syntax:
+    content: Oem3 = 192
+- uid: System.ConsoleKey.Oem4
+  id: Oem4
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: Oem4
+  fullName: System.ConsoleKey.Oem4
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 181
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The OEM 4 key (OEM specific).
+  syntax:
+    content: Oem4 = 219
+- uid: System.ConsoleKey.Oem5
+  id: Oem5
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: Oem5
+  fullName: System.ConsoleKey.Oem5
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 182
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The OEM 5 (OEM specific).
+  syntax:
+    content: Oem5 = 220
+- uid: System.ConsoleKey.Oem6
+  id: Oem6
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: Oem6
+  fullName: System.ConsoleKey.Oem6
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 183
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The OEM 6 key (OEM specific).
+  syntax:
+    content: Oem6 = 221
+- uid: System.ConsoleKey.Oem7
+  id: Oem7
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: Oem7
+  fullName: System.ConsoleKey.Oem7
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 184
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The OEM 7 key (OEM specific).
+  syntax:
+    content: Oem7 = 222
+- uid: System.ConsoleKey.Oem8
+  id: Oem8
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: Oem8
+  fullName: System.ConsoleKey.Oem8
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 185
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The OEM 8 key (OEM specific).
+  syntax:
+    content: Oem8 = 223
+- uid: System.ConsoleKey.Oem102
+  id: Oem102
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: Oem102
+  fullName: System.ConsoleKey.Oem102
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 188
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The OEM 102 key (OEM specific).
+  syntax:
+    content: Oem102 = 226
+- uid: System.ConsoleKey.Process
+  id: Process
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: Process
+  fullName: System.ConsoleKey.Process
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 190
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The IME PROCESS key.
+  syntax:
+    content: Process = 229
+- uid: System.ConsoleKey.Packet
+  id: Packet
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: Packet
+  fullName: System.ConsoleKey.Packet
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 192
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The PACKET key (used to pass Unicode characters with keystrokes).
+  syntax:
+    content: Packet = 231
+- uid: System.ConsoleKey.Attention
+  id: Attention
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: Attention
+  fullName: System.ConsoleKey.Attention
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 195
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The ATTN key.
+  syntax:
+    content: Attention = 246
+- uid: System.ConsoleKey.CrSel
+  id: CrSel
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: CrSel
+  fullName: System.ConsoleKey.CrSel
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 196
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The CRSEL (CURSOR SELECT) key.
+  syntax:
+    content: CrSel = 247
+- uid: System.ConsoleKey.ExSel
+  id: ExSel
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: ExSel
+  fullName: System.ConsoleKey.ExSel
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 197
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The EXSEL (EXTEND SELECTION) key.
+  syntax:
+    content: ExSel = 248
+- uid: System.ConsoleKey.EraseEndOfFile
+  id: EraseEndOfFile
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: EraseEndOfFile
+  fullName: System.ConsoleKey.EraseEndOfFile
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 198
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The ERASE EOF key.
+  syntax:
+    content: EraseEndOfFile = 249
+- uid: System.ConsoleKey.Play
+  id: Play
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: Play
+  fullName: System.ConsoleKey.Play
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 199
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The PLAY key.
+  syntax:
+    content: Play = 250
+- uid: System.ConsoleKey.Zoom
+  id: Zoom
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: Zoom
+  fullName: System.ConsoleKey.Zoom
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 200
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The ZOOM key.
+  syntax:
+    content: Zoom = 251
+- uid: System.ConsoleKey.NoName
+  id: NoName
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: NoName
+  fullName: System.ConsoleKey.NoName
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 201
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: A constant reserved for future use.
+  syntax:
+    content: NoName = 252
+- uid: System.ConsoleKey.Pa1
+  id: Pa1
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: Pa1
+  fullName: System.ConsoleKey.Pa1
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 202
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The PA1 key.
+  syntax:
+    content: Pa1 = 253
+- uid: System.ConsoleKey.OemClear
+  id: OemClear
+  parent: System.ConsoleKey
+  href: System.ConsoleKey.yml
+  name: OemClear
+  fullName: System.ConsoleKey.OemClear
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKey.cs
+    startLine: 203
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The CLEAR key (OEM specific).
+  syntax:
+    content: OemClear = 254
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

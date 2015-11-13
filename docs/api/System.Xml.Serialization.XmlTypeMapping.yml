@@ -1,0 +1,411 @@
+items:
+- uid: System.Xml.Serialization.XmlTypeMapping
+  id: XmlTypeMapping
+  parent: System.Xml.Serialization
+  children:
+  - System.Xml.Serialization.XmlTypeMapping.TypeFullName
+  - System.Xml.Serialization.XmlTypeMapping.TypeName
+  - System.Xml.Serialization.XmlTypeMapping.XsdTypeName
+  - System.Xml.Serialization.XmlTypeMapping.XsdTypeNamespace
+  href: System.Xml.Serialization.XmlTypeMapping.yml
+  name: XmlTypeMapping
+  fullName: System.Xml.Serialization.XmlTypeMapping
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlTypeMapping.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlTypeMapping.cs
+    startLine: 16
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Contains a mapping of one type to another.
+  syntax:
+    content: 'public class XmlTypeMapping : XmlMapping'
+    content.vb: Public Class XmlTypeMapping Inherits XmlMapping
+  inheritance:
+  - System.Object
+  - System.Xml.Serialization.XmlMapping
+  inheritedMembers:
+  - System.Xml.Serialization.XmlMapping.ElementName
+  - System.Xml.Serialization.XmlMapping.XsdElementName
+  - System.Xml.Serialization.XmlMapping.Namespace
+  - System.Xml.Serialization.XmlMapping.SetKey(System.String)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Xml.Serialization.XmlTypeMapping.TypeName
+  id: TypeName
+  parent: System.Xml.Serialization.XmlTypeMapping
+  href: System.Xml.Serialization.XmlTypeMapping.yml
+  name: TypeName
+  fullName: System.Xml.Serialization.XmlTypeMapping.TypeName
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlTypeMapping.cs
+    startLine: 31
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Gets the type name of the mapped object.
+  syntax:
+    content: public string TypeName { get; }
+    content.vb: Public ReadOnly Property TypeName As String
+    parameters: []
+    return:
+      type: System.String
+- uid: System.Xml.Serialization.XmlTypeMapping.TypeFullName
+  id: TypeFullName
+  parent: System.Xml.Serialization.XmlTypeMapping
+  href: System.Xml.Serialization.XmlTypeMapping.yml
+  name: TypeFullName
+  fullName: System.Xml.Serialization.XmlTypeMapping.TypeFullName
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlTypeMapping.cs
+    startLine: 43
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: The fully qualified type name that includes the namespace (or namespaces) and type.
+  syntax:
+    content: public string TypeFullName { get; }
+    content.vb: Public ReadOnly Property TypeFullName As String
+    parameters: []
+    return:
+      type: System.String
+- uid: System.Xml.Serialization.XmlTypeMapping.XsdTypeName
+  id: XsdTypeName
+  parent: System.Xml.Serialization.XmlTypeMapping
+  href: System.Xml.Serialization.XmlTypeMapping.yml
+  name: XsdTypeName
+  fullName: System.Xml.Serialization.XmlTypeMapping.XsdTypeName
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlTypeMapping.cs
+    startLine: 55
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Gets the XML element name of the mapped object.
+  syntax:
+    content: public string XsdTypeName { get; }
+    content.vb: Public ReadOnly Property XsdTypeName As String
+    parameters: []
+    return:
+      type: System.String
+- uid: System.Xml.Serialization.XmlTypeMapping.XsdTypeNamespace
+  id: XsdTypeNamespace
+  parent: System.Xml.Serialization.XmlTypeMapping
+  href: System.Xml.Serialization.XmlTypeMapping.yml
+  name: XsdTypeNamespace
+  fullName: System.Xml.Serialization.XmlTypeMapping.XsdTypeNamespace
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlTypeMapping.cs
+    startLine: 67
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Gets the XML namespace of the mapped object.
+  syntax:
+    content: public string XsdTypeNamespace { get; }
+    content.vb: Public ReadOnly Property XsdTypeNamespace As String
+    parameters: []
+    return:
+      type: System.String
+references:
+- uid: System.Xml.Serialization
+  isExternal: false
+  name: System.Xml.Serialization
+  fullName: System.Xml.Serialization
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Xml.Serialization.XmlMapping
+  isExternal: false
+  href: System.Xml.Serialization.XmlMapping.yml
+  name: XmlMapping
+  fullName: System.Xml.Serialization.XmlMapping
+  type: Class
+- uid: System.Xml.Serialization.XmlMapping.ElementName
+  parent: System.Xml.Serialization.XmlMapping
+  isExternal: false
+  href: System.Xml.Serialization.XmlMapping.yml
+  name: ElementName
+  fullName: System.Xml.Serialization.XmlMapping.ElementName
+- uid: System.Xml.Serialization.XmlMapping.XsdElementName
+  parent: System.Xml.Serialization.XmlMapping
+  isExternal: false
+  href: System.Xml.Serialization.XmlMapping.yml
+  name: XsdElementName
+  fullName: System.Xml.Serialization.XmlMapping.XsdElementName
+- uid: System.Xml.Serialization.XmlMapping.Namespace
+  parent: System.Xml.Serialization.XmlMapping
+  isExternal: false
+  href: System.Xml.Serialization.XmlMapping.yml
+  name: Namespace
+  fullName: System.Xml.Serialization.XmlMapping.Namespace
+- uid: System.Xml.Serialization.XmlMapping.SetKey(System.String)
+  parent: System.Xml.Serialization.XmlMapping
+  isExternal: true
+  href: System.Xml.Serialization.XmlMapping.yml
+  name: SetKey(String)
+  fullName: System.Xml.Serialization.XmlMapping.SetKey(System.String)
+  spec.csharp:
+  - uid: System.Xml.Serialization.XmlMapping.SetKey(System.String)
+    name: SetKey
+    fullName: System.Xml.Serialization.XmlMapping.SetKey
+    href: System.Xml.Serialization.XmlMapping.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Serialization.XmlMapping.SetKey(System.String)
+    name: SetKey
+    fullName: System.Xml.Serialization.XmlMapping.SetKey
+    href: System.Xml.Serialization.XmlMapping.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String

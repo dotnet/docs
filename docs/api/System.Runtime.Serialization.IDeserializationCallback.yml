@@ -1,0 +1,29 @@
+items:
+- uid: System.Runtime.Serialization.IDeserializationCallback
+  id: IDeserializationCallback
+  parent: System.Runtime.Serialization
+  children: []
+  href: System.Runtime.Serialization.IDeserializationCallback.yml
+  name: IDeserializationCallback
+  fullName: System.Runtime.Serialization.IDeserializationCallback
+  type: Interface
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/Serialization/IDeserializationCallback.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/Serialization/IDeserializationCallback.cs
+    startLine: 17
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Indicates that a class is to be notified when deserialization of the entire object graph has been completed. Note that this interface is not called when deserializing with the XmlSerializer (System.Xml.Serialization.XmlSerializer).
+  syntax:
+    content: public interface IDeserializationCallback
+    content.vb: Public Interface IDeserializationCallback
+references:
+- uid: System.Runtime.Serialization
+  isExternal: false
+  name: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+  type: Namespace

@@ -1,0 +1,99 @@
+items:
+- uid: System.IAppDomainPauseManager
+  id: IAppDomainPauseManager
+  parent: System
+  children:
+  - System.IAppDomainPauseManager.Paused
+  - System.IAppDomainPauseManager.Pausing
+  - System.IAppDomainPauseManager.Resumed
+  - System.IAppDomainPauseManager.Resuming
+  href: System.IAppDomainPauseManager.yml
+  name: IAppDomainPauseManager
+  fullName: System.IAppDomainPauseManager
+  type: Interface
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/IAppDomainPauseManager.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/IAppDomainPauseManager.cs
+    startLine: 24
+  assemblies:
+  - mscorlib
+  namespace: System
+  syntax:
+    content: public interface IAppDomainPauseManager
+    content.vb: Public Interface IAppDomainPauseManager
+- uid: System.IAppDomainPauseManager.Pausing
+  id: Pausing
+  parent: System.IAppDomainPauseManager
+  href: System.IAppDomainPauseManager.yml
+  name: Pausing()
+  fullName: System.IAppDomainPauseManager.Pausing()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IAppDomainPauseManager.cs
+    startLine: 27
+  assemblies:
+  - mscorlib
+  namespace: System
+  syntax:
+    content: void Pausing()
+    content.vb: Sub Pausing
+- uid: System.IAppDomainPauseManager.Paused
+  id: Paused
+  parent: System.IAppDomainPauseManager
+  href: System.IAppDomainPauseManager.yml
+  name: Paused()
+  fullName: System.IAppDomainPauseManager.Paused()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IAppDomainPauseManager.cs
+    startLine: 28
+  assemblies:
+  - mscorlib
+  namespace: System
+  syntax:
+    content: void Paused()
+    content.vb: Sub Paused
+- uid: System.IAppDomainPauseManager.Resuming
+  id: Resuming
+  parent: System.IAppDomainPauseManager
+  href: System.IAppDomainPauseManager.yml
+  name: Resuming()
+  fullName: System.IAppDomainPauseManager.Resuming()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IAppDomainPauseManager.cs
+    startLine: 29
+  assemblies:
+  - mscorlib
+  namespace: System
+  syntax:
+    content: void Resuming()
+    content.vb: Sub Resuming
+- uid: System.IAppDomainPauseManager.Resumed
+  id: Resumed
+  parent: System.IAppDomainPauseManager
+  href: System.IAppDomainPauseManager.yml
+  name: Resumed()
+  fullName: System.IAppDomainPauseManager.Resumed()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IAppDomainPauseManager.cs
+    startLine: 30
+  assemblies:
+  - mscorlib
+  namespace: System
+  syntax:
+    content: void Resumed()
+    content.vb: Sub Resumed
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

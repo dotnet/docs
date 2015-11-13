@@ -1,0 +1,101 @@
+items:
+- uid: System.Runtime.InteropServices.ComTypes.DVASPECT
+  id: DVASPECT
+  parent: System.Runtime.InteropServices.ComTypes
+  children:
+  - System.Runtime.InteropServices.ComTypes.DVASPECT.DVASPECT_CONTENT
+  - System.Runtime.InteropServices.ComTypes.DVASPECT.DVASPECT_DOCPRINT
+  - System.Runtime.InteropServices.ComTypes.DVASPECT.DVASPECT_ICON
+  - System.Runtime.InteropServices.ComTypes.DVASPECT.DVASPECT_THUMBNAIL
+  href: System.Runtime.InteropServices.ComTypes.DVASPECT.yml
+  name: DVASPECT
+  fullName: System.Runtime.InteropServices.ComTypes.DVASPECT
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Runtime.InteropServices/src/System/Runtime/InteropServices/ComTypes/dvaspect.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Runtime.InteropServices/src/System/Runtime/InteropServices/ComTypes/dvaspect.cs
+    startLine: 5
+  assemblies:
+  - System.Runtime.InteropServices.CoreCLR
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Specifies the desired data or view aspect of the object when drawing or getting data.
+  syntax:
+    content: public enum DVASPECT
+    content.vb: Public Enum DVASPECT
+- uid: System.Runtime.InteropServices.ComTypes.DVASPECT.DVASPECT_CONTENT
+  id: DVASPECT_CONTENT
+  parent: System.Runtime.InteropServices.ComTypes.DVASPECT
+  href: System.Runtime.InteropServices.ComTypes.DVASPECT.yml
+  name: DVASPECT_CONTENT
+  fullName: System.Runtime.InteropServices.ComTypes.DVASPECT.DVASPECT_CONTENT
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Runtime.InteropServices/src/System/Runtime/InteropServices/ComTypes/dvaspect.cs
+    startLine: 8
+  assemblies:
+  - System.Runtime.InteropServices.CoreCLR
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: A representation of an object that lets that object be displayed as an embedded object inside a container. This value is typically specified for compound document objects. The presentation can be provided for the screen or printer.
+  syntax:
+    content: DVASPECT_CONTENT = 1
+- uid: System.Runtime.InteropServices.ComTypes.DVASPECT.DVASPECT_THUMBNAIL
+  id: DVASPECT_THUMBNAIL
+  parent: System.Runtime.InteropServices.ComTypes.DVASPECT
+  href: System.Runtime.InteropServices.ComTypes.DVASPECT.yml
+  name: DVASPECT_THUMBNAIL
+  fullName: System.Runtime.InteropServices.ComTypes.DVASPECT.DVASPECT_THUMBNAIL
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Runtime.InteropServices/src/System/Runtime/InteropServices/ComTypes/dvaspect.cs
+    startLine: 9
+  assemblies:
+  - System.Runtime.InteropServices.CoreCLR
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: A thumbnail representation of an object that lets that object be displayed in a browsing tool. The thumbnail is approximately a 120 by 120 pixel, 16-color (recommended), device-independent bitmap potentially wrapped in a metafile.
+  syntax:
+    content: DVASPECT_THUMBNAIL = 2
+- uid: System.Runtime.InteropServices.ComTypes.DVASPECT.DVASPECT_ICON
+  id: DVASPECT_ICON
+  parent: System.Runtime.InteropServices.ComTypes.DVASPECT
+  href: System.Runtime.InteropServices.ComTypes.DVASPECT.yml
+  name: DVASPECT_ICON
+  fullName: System.Runtime.InteropServices.ComTypes.DVASPECT.DVASPECT_ICON
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Runtime.InteropServices/src/System/Runtime/InteropServices/ComTypes/dvaspect.cs
+    startLine: 10
+  assemblies:
+  - System.Runtime.InteropServices.CoreCLR
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: An iconic representation of an object.
+  syntax:
+    content: DVASPECT_ICON = 4
+- uid: System.Runtime.InteropServices.ComTypes.DVASPECT.DVASPECT_DOCPRINT
+  id: DVASPECT_DOCPRINT
+  parent: System.Runtime.InteropServices.ComTypes.DVASPECT
+  href: System.Runtime.InteropServices.ComTypes.DVASPECT.yml
+  name: DVASPECT_DOCPRINT
+  fullName: System.Runtime.InteropServices.ComTypes.DVASPECT.DVASPECT_DOCPRINT
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Runtime.InteropServices/src/System/Runtime/InteropServices/ComTypes/dvaspect.cs
+    startLine: 11
+  assemblies:
+  - System.Runtime.InteropServices.CoreCLR
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: A representation of an object on the screen as though it were printed to a printer using the Print command from the File menu. The described data may represent a sequence of pages.
+  syntax:
+    content: DVASPECT_DOCPRINT = 8
+references:
+- uid: System.Runtime.InteropServices.ComTypes
+  isExternal: false
+  name: System.Runtime.InteropServices.ComTypes
+  fullName: System.Runtime.InteropServices.ComTypes
+  type: Namespace

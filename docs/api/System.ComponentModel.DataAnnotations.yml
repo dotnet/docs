@@ -1,0 +1,339 @@
+items:
+- uid: System.ComponentModel.DataAnnotations
+  id: System.ComponentModel.DataAnnotations
+  children:
+  - System.ComponentModel.DataAnnotations.AssociationAttribute
+  - System.ComponentModel.DataAnnotations.CompareAttribute
+  - System.ComponentModel.DataAnnotations.ConcurrencyCheckAttribute
+  - System.ComponentModel.DataAnnotations.CreditCardAttribute
+  - System.ComponentModel.DataAnnotations.CustomValidationAttribute
+  - System.ComponentModel.DataAnnotations.DataType
+  - System.ComponentModel.DataAnnotations.DataTypeAttribute
+  - System.ComponentModel.DataAnnotations.DisplayAttribute
+  - System.ComponentModel.DataAnnotations.DisplayColumnAttribute
+  - System.ComponentModel.DataAnnotations.DisplayFormatAttribute
+  - System.ComponentModel.DataAnnotations.EditableAttribute
+  - System.ComponentModel.DataAnnotations.EmailAddressAttribute
+  - System.ComponentModel.DataAnnotations.EnumDataTypeAttribute
+  - System.ComponentModel.DataAnnotations.FileExtensionsAttribute
+  - System.ComponentModel.DataAnnotations.FilterUIHintAttribute
+  - System.ComponentModel.DataAnnotations.IValidatableObject
+  - System.ComponentModel.DataAnnotations.KeyAttribute
+  - System.ComponentModel.DataAnnotations.MaxLengthAttribute
+  - System.ComponentModel.DataAnnotations.MinLengthAttribute
+  - System.ComponentModel.DataAnnotations.PhoneAttribute
+  - System.ComponentModel.DataAnnotations.RangeAttribute
+  - System.ComponentModel.DataAnnotations.RegularExpressionAttribute
+  - System.ComponentModel.DataAnnotations.RequiredAttribute
+  - System.ComponentModel.DataAnnotations.ScaffoldColumnAttribute
+  - System.ComponentModel.DataAnnotations.StringLengthAttribute
+  - System.ComponentModel.DataAnnotations.TimestampAttribute
+  - System.ComponentModel.DataAnnotations.UIHintAttribute
+  - System.ComponentModel.DataAnnotations.UrlAttribute
+  - System.ComponentModel.DataAnnotations.ValidationAttribute
+  - System.ComponentModel.DataAnnotations.ValidationContext
+  - System.ComponentModel.DataAnnotations.ValidationException
+  - System.ComponentModel.DataAnnotations.ValidationResult
+  - System.ComponentModel.DataAnnotations.Validator
+  href: System.ComponentModel.DataAnnotations.yml
+  name: System.ComponentModel.DataAnnotations
+  fullName: System.ComponentModel.DataAnnotations
+  type: Namespace
+  source:
+    remote:
+      path: src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/Validator.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/Validator.cs
+    startLine: 8
+  assemblies:
+  - System.ComponentModel.Annotations
+  summary: The @'System.ComponentModel.DataAnnotations' namespace provides attribute classes that are used to define metadata for ASP.NET MVC and ASP.NET data controls.
+references:
+- uid: System.ComponentModel.DataAnnotations.AssociationAttribute
+  isExternal: false
+  href: System.ComponentModel.DataAnnotations.AssociationAttribute.yml
+  name: AssociationAttribute
+  fullName: System.ComponentModel.DataAnnotations.AssociationAttribute
+  type: Class
+  summary: Used to mark an Entity member as an association
+- uid: System.ComponentModel.DataAnnotations.CompareAttribute
+  isExternal: false
+  href: System.ComponentModel.DataAnnotations.CompareAttribute.yml
+  name: CompareAttribute
+  fullName: System.ComponentModel.DataAnnotations.CompareAttribute
+  type: Class
+- uid: System.ComponentModel.DataAnnotations.ConcurrencyCheckAttribute
+  isExternal: false
+  href: System.ComponentModel.DataAnnotations.ConcurrencyCheckAttribute.yml
+  name: ConcurrencyCheckAttribute
+  fullName: System.ComponentModel.DataAnnotations.ConcurrencyCheckAttribute
+  type: Class
+  summary: >-
+    This attribute is used to mark the members of a Type that participate in
+
+    optimistic concurrency checks.
+- uid: System.ComponentModel.DataAnnotations.CreditCardAttribute
+  isExternal: false
+  href: System.ComponentModel.DataAnnotations.CreditCardAttribute.yml
+  name: CreditCardAttribute
+  fullName: System.ComponentModel.DataAnnotations.CreditCardAttribute
+  type: Class
+- uid: System.ComponentModel.DataAnnotations.CustomValidationAttribute
+  isExternal: false
+  href: System.ComponentModel.DataAnnotations.CustomValidationAttribute.yml
+  name: CustomValidationAttribute
+  fullName: System.ComponentModel.DataAnnotations.CustomValidationAttribute
+  type: Class
+  summary: >-
+    Validation attribute that executes a user-supplied method at runtime, using one of these signatures:
+
+    <para>
+
+    public static @'System.ComponentModel.DataAnnotations.ValidationResult' Method(object value) { ... }
+
+    </para><para>
+
+    public static @'System.ComponentModel.DataAnnotations.ValidationResult' Method(object value, @'System.ComponentModel.DataAnnotations.ValidationContext' context) {
+
+    ... }
+
+    </para><para>
+
+    The value can be strongly typed as type conversion will be attempted.
+
+    </para>
+- uid: System.ComponentModel.DataAnnotations.DataType
+  parent: System.ComponentModel.DataAnnotations
+  isExternal: false
+  href: System.ComponentModel.DataAnnotations.DataType.yml
+  name: DataType
+  fullName: System.ComponentModel.DataAnnotations.DataType
+  type: Enum
+  summary: Enumeration of logical data types that may appear in @'System.ComponentModel.DataAnnotations.DataTypeAttribute'
+- uid: System.ComponentModel.DataAnnotations.DataTypeAttribute
+  parent: System.ComponentModel.DataAnnotations
+  isExternal: false
+  href: System.ComponentModel.DataAnnotations.DataTypeAttribute.yml
+  name: DataTypeAttribute
+  fullName: System.ComponentModel.DataAnnotations.DataTypeAttribute
+  type: Class
+  summary: >-
+    Allows for clarification of the @'System.ComponentModel.DataAnnotations.DataTypeAttribute.DataType' represented by a given
+
+    property (such as @'System.ComponentModel.DataAnnotations.DataType.PhoneNumber'
+
+    or @'System.ComponentModel.DataAnnotations.DataType.Url')
+- uid: System.ComponentModel.DataAnnotations.DisplayAttribute
+  isExternal: false
+  href: System.ComponentModel.DataAnnotations.DisplayAttribute.yml
+  name: DisplayAttribute
+  fullName: System.ComponentModel.DataAnnotations.DisplayAttribute
+  type: Class
+  summary: >-
+    DisplayAttribute is a general-purpose attribute to specify user-visible globalizable strings for types and members.
+
+    The string properties of this class can be used either as literals or as resource identifiers into a specified
+
+    @'System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType'
+- uid: System.ComponentModel.DataAnnotations.DisplayColumnAttribute
+  isExternal: false
+  href: System.ComponentModel.DataAnnotations.DisplayColumnAttribute.yml
+  name: DisplayColumnAttribute
+  fullName: System.ComponentModel.DataAnnotations.DisplayColumnAttribute
+  type: Class
+  summary: >-
+    Sets the display column, the sort column, and the sort order for when a table is used as a parent table in FK
+
+    relationships.
+- uid: System.ComponentModel.DataAnnotations.DisplayFormatAttribute
+  parent: System.ComponentModel.DataAnnotations
+  isExternal: false
+  href: System.ComponentModel.DataAnnotations.DisplayFormatAttribute.yml
+  name: DisplayFormatAttribute
+  fullName: System.ComponentModel.DataAnnotations.DisplayFormatAttribute
+  type: Class
+  summary: >-
+    Allows overriding various display-related options for a given field. The options have the same meaning as in
+
+    BoundField.
+- uid: System.ComponentModel.DataAnnotations.EditableAttribute
+  isExternal: false
+  href: System.ComponentModel.DataAnnotations.EditableAttribute.yml
+  name: EditableAttribute
+  fullName: System.ComponentModel.DataAnnotations.EditableAttribute
+  type: Class
+  summary: >-
+    Indicates whether the consumer of a field or property, such as a client application,
+
+    should allow editing of the value.
+- uid: System.ComponentModel.DataAnnotations.EmailAddressAttribute
+  isExternal: false
+  href: System.ComponentModel.DataAnnotations.EmailAddressAttribute.yml
+  name: EmailAddressAttribute
+  fullName: System.ComponentModel.DataAnnotations.EmailAddressAttribute
+  type: Class
+- uid: System.ComponentModel.DataAnnotations.EnumDataTypeAttribute
+  isExternal: false
+  href: System.ComponentModel.DataAnnotations.EnumDataTypeAttribute.yml
+  name: EnumDataTypeAttribute
+  fullName: System.ComponentModel.DataAnnotations.EnumDataTypeAttribute
+  type: Class
+- uid: System.ComponentModel.DataAnnotations.FileExtensionsAttribute
+  isExternal: false
+  href: System.ComponentModel.DataAnnotations.FileExtensionsAttribute.yml
+  name: FileExtensionsAttribute
+  fullName: System.ComponentModel.DataAnnotations.FileExtensionsAttribute
+  type: Class
+- uid: System.ComponentModel.DataAnnotations.FilterUIHintAttribute
+  isExternal: false
+  href: System.ComponentModel.DataAnnotations.FilterUIHintAttribute.yml
+  name: FilterUIHintAttribute
+  fullName: System.ComponentModel.DataAnnotations.FilterUIHintAttribute
+  type: Class
+  summary: An attribute used to specify the filtering behavior for a column.
+- uid: System.ComponentModel.DataAnnotations.IValidatableObject
+  isExternal: false
+  href: System.ComponentModel.DataAnnotations.IValidatableObject.yml
+  name: IValidatableObject
+  fullName: System.ComponentModel.DataAnnotations.IValidatableObject
+  type: Interface
+- uid: System.ComponentModel.DataAnnotations.KeyAttribute
+  isExternal: false
+  href: System.ComponentModel.DataAnnotations.KeyAttribute.yml
+  name: KeyAttribute
+  fullName: System.ComponentModel.DataAnnotations.KeyAttribute
+  type: Class
+  summary: Used to mark one or more entity properties that provide the entity's unique identity
+- uid: System.ComponentModel.DataAnnotations.MaxLengthAttribute
+  isExternal: false
+  href: System.ComponentModel.DataAnnotations.MaxLengthAttribute.yml
+  name: MaxLengthAttribute
+  fullName: System.ComponentModel.DataAnnotations.MaxLengthAttribute
+  type: Class
+  summary: Specifies the maximum length of array/string data allowed in a property.
+- uid: System.ComponentModel.DataAnnotations.MinLengthAttribute
+  isExternal: false
+  href: System.ComponentModel.DataAnnotations.MinLengthAttribute.yml
+  name: MinLengthAttribute
+  fullName: System.ComponentModel.DataAnnotations.MinLengthAttribute
+  type: Class
+  summary: Specifies the minimum length of array/string data allowed in a property.
+- uid: System.ComponentModel.DataAnnotations.PhoneAttribute
+  isExternal: false
+  href: System.ComponentModel.DataAnnotations.PhoneAttribute.yml
+  name: PhoneAttribute
+  fullName: System.ComponentModel.DataAnnotations.PhoneAttribute
+  type: Class
+- uid: System.ComponentModel.DataAnnotations.RangeAttribute
+  isExternal: false
+  href: System.ComponentModel.DataAnnotations.RangeAttribute.yml
+  name: RangeAttribute
+  fullName: System.ComponentModel.DataAnnotations.RangeAttribute
+  type: Class
+  summary: Used for specifying a range constraint
+- uid: System.ComponentModel.DataAnnotations.RegularExpressionAttribute
+  isExternal: false
+  href: System.ComponentModel.DataAnnotations.RegularExpressionAttribute.yml
+  name: RegularExpressionAttribute
+  fullName: System.ComponentModel.DataAnnotations.RegularExpressionAttribute
+  type: Class
+  summary: Regular expression validation attribute
+- uid: System.ComponentModel.DataAnnotations.RequiredAttribute
+  isExternal: false
+  href: System.ComponentModel.DataAnnotations.RequiredAttribute.yml
+  name: RequiredAttribute
+  fullName: System.ComponentModel.DataAnnotations.RequiredAttribute
+  type: Class
+  summary: Validation attribute to indicate that a property field or parameter is required.
+- uid: System.ComponentModel.DataAnnotations.ScaffoldColumnAttribute
+  isExternal: false
+  href: System.ComponentModel.DataAnnotations.ScaffoldColumnAttribute.yml
+  name: ScaffoldColumnAttribute
+  fullName: System.ComponentModel.DataAnnotations.ScaffoldColumnAttribute
+  type: Class
+- uid: System.ComponentModel.DataAnnotations.StringLengthAttribute
+  isExternal: false
+  href: System.ComponentModel.DataAnnotations.StringLengthAttribute.yml
+  name: StringLengthAttribute
+  fullName: System.ComponentModel.DataAnnotations.StringLengthAttribute
+  type: Class
+  summary: Validation attribute to assert a string property, field or parameter does not exceed a maximum length
+- uid: System.ComponentModel.DataAnnotations.TimestampAttribute
+  isExternal: false
+  href: System.ComponentModel.DataAnnotations.TimestampAttribute.yml
+  name: TimestampAttribute
+  fullName: System.ComponentModel.DataAnnotations.TimestampAttribute
+  type: Class
+  summary: This attribute is used to mark a Timestamp member of a Type.
+- uid: System.ComponentModel.DataAnnotations.UIHintAttribute
+  isExternal: false
+  href: System.ComponentModel.DataAnnotations.UIHintAttribute.yml
+  name: UIHintAttribute
+  fullName: System.ComponentModel.DataAnnotations.UIHintAttribute
+  type: Class
+  summary: Attribute to provide a hint to the presentation layer about what control it should use
+- uid: System.ComponentModel.DataAnnotations.UrlAttribute
+  isExternal: false
+  href: System.ComponentModel.DataAnnotations.UrlAttribute.yml
+  name: UrlAttribute
+  fullName: System.ComponentModel.DataAnnotations.UrlAttribute
+  type: Class
+- uid: System.ComponentModel.DataAnnotations.ValidationAttribute
+  parent: System.ComponentModel.DataAnnotations
+  isExternal: false
+  href: System.ComponentModel.DataAnnotations.ValidationAttribute.yml
+  name: ValidationAttribute
+  fullName: System.ComponentModel.DataAnnotations.ValidationAttribute
+  type: Class
+  summary: >-
+    Base class for all validation attributes.
+
+    <para>Override @'System.ComponentModel.DataAnnotations.ValidationAttribute.IsValid(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)' to implement validation logic.</para>
+- uid: System.ComponentModel.DataAnnotations.ValidationContext
+  parent: System.ComponentModel.DataAnnotations
+  isExternal: false
+  href: System.ComponentModel.DataAnnotations.ValidationContext.yml
+  name: ValidationContext
+  fullName: System.ComponentModel.DataAnnotations.ValidationContext
+  type: Class
+  summary: Describes the context in which a validation is being performed.
+- uid: System.ComponentModel.DataAnnotations.ValidationException
+  isExternal: false
+  href: System.ComponentModel.DataAnnotations.ValidationException.yml
+  name: ValidationException
+  fullName: System.ComponentModel.DataAnnotations.ValidationException
+  type: Class
+  summary: Exception used for validation using @'System.ComponentModel.DataAnnotations.ValidationException.ValidationAttribute'.
+- uid: System.ComponentModel.DataAnnotations.ValidationResult
+  parent: System.ComponentModel.DataAnnotations
+  isExternal: false
+  href: System.ComponentModel.DataAnnotations.ValidationResult.yml
+  name: ValidationResult
+  fullName: System.ComponentModel.DataAnnotations.ValidationResult
+  type: Class
+  summary: >-
+    Container class for the results of a validation request.
+
+    <para>
+
+    Use the static @'System.ComponentModel.DataAnnotations.ValidationResult.Success' to represent successful validation.
+
+    </para>
+- uid: System.ComponentModel.DataAnnotations.Validator
+  isExternal: false
+  href: System.ComponentModel.DataAnnotations.Validator.yml
+  name: Validator
+  fullName: System.ComponentModel.DataAnnotations.Validator
+  type: Class
+  summary: >-
+    Helper class to validate objects, properties and other values using their associated
+
+    @'System.ComponentModel.DataAnnotations.ValidationAttribute'
+
+    custom attributes.
+- uid: System.ComponentModel.DataAnnotations
+  isExternal: false
+  name: System.ComponentModel.DataAnnotations
+  fullName: System.ComponentModel.DataAnnotations
+  type: Namespace

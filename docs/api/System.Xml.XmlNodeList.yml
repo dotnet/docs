@@ -1,0 +1,415 @@
+items:
+- uid: System.Xml.XmlNodeList
+  id: XmlNodeList
+  parent: System.Xml
+  children:
+  - System.Xml.XmlNodeList.Count
+  - System.Xml.XmlNodeList.GetEnumerator
+  - System.Xml.XmlNodeList.Item(System.Int32)
+  - System.Xml.XmlNodeList.ItemOf(System.Int32)
+  - System.Xml.XmlNodeList.PrivateDisposeNodeList
+  - System.Xml.XmlNodeList.System#IDisposable#Dispose
+  href: System.Xml.XmlNodeList.yml
+  name: XmlNodeList
+  fullName: System.Xml.XmlNodeList
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNodeList.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNodeList.cs
+    startLine: 8
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Represents an ordered collection of nodes.
+  syntax:
+    content: 'public abstract class XmlNodeList : IEnumerable, IDisposable'
+    content.vb: Public MustInherit Class XmlNodeList Implements IEnumerable, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.IEnumerable
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Xml.XmlNodeList.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: System.Xml.XmlNodeList
+  href: System.Xml.XmlNodeList.yml
+  name: Item(Int32)
+  fullName: System.Xml.XmlNodeList.Item(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNodeList.cs
+    startLine: 11
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Retrieves a node at the given index.
+  syntax:
+    content: public abstract XmlNode Item(int index)
+    content.vb: Public MustOverride Function Item(index As Integer) As XmlNode
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index into the list of nodes.
+    return:
+      type: System.Xml.XmlNode
+- uid: System.Xml.XmlNodeList.Count
+  id: Count
+  parent: System.Xml.XmlNodeList
+  href: System.Xml.XmlNodeList.yml
+  name: Count
+  fullName: System.Xml.XmlNodeList.Count
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNodeList.cs
+    startLine: 14
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets the number of nodes in the XmlNodeList.
+  syntax:
+    content: public abstract int Count { get; }
+    content.vb: Public MustOverride ReadOnly Property Count As Integer
+    parameters: []
+    return:
+      type: System.Int32
+- uid: System.Xml.XmlNodeList.GetEnumerator
+  id: GetEnumerator
+  parent: System.Xml.XmlNodeList
+  href: System.Xml.XmlNodeList.yml
+  name: GetEnumerator()
+  fullName: System.Xml.XmlNodeList.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNodeList.cs
+    startLine: 18
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets an enumerator that iterates through the collection of nodes.
+  syntax:
+    content: public abstract IEnumerator GetEnumerator()
+    content.vb: Public MustOverride Function GetEnumerator As IEnumerator
+    return:
+      type: System.Collections.IEnumerator
+- uid: System.Xml.XmlNodeList.ItemOf(System.Int32)
+  id: ItemOf(System.Int32)
+  parent: System.Xml.XmlNodeList
+  href: System.Xml.XmlNodeList.yml
+  name: ItemOf[Int32]
+  name.vb: ItemOf(Int32)
+  fullName: System.Xml.XmlNodeList.ItemOf[System.Int32]
+  fullName.vb: System.Xml.XmlNodeList.ItemOf(System.Int32)
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNodeList.cs
+    startLine: 21
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets a node at the given index.
+  syntax:
+    content: public virtual XmlNode this[int i] { get; }
+    content.vb: Public Overridable ReadOnly Property ItemOf(i As Integer) As XmlNode
+    parameters:
+    - id: i
+      type: System.Int32
+      description: The zero-based index into the list of nodes.
+    return:
+      type: System.Xml.XmlNode
+- uid: System.Xml.XmlNodeList.System#IDisposable#Dispose
+  id: System#IDisposable#Dispose
+  parent: System.Xml.XmlNodeList
+  href: System.Xml.XmlNodeList.yml
+  name: IDisposable.Dispose()
+  name.vb: System.IDisposable.Dispose()
+  fullName: System.Xml.XmlNodeList.System.IDisposable.Dispose()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNodeList.cs
+    startLine: 24
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Releases all resources used by the @'System.Xml.XmlNodeList' class.
+  syntax:
+    content: void IDisposable.Dispose()
+    content.vb: Sub System.IDisposable.Dispose Implements IDisposable.Dispose
+- uid: System.Xml.XmlNodeList.PrivateDisposeNodeList
+  id: PrivateDisposeNodeList
+  parent: System.Xml.XmlNodeList
+  href: System.Xml.XmlNodeList.yml
+  name: PrivateDisposeNodeList()
+  fullName: System.Xml.XmlNodeList.PrivateDisposeNodeList()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNodeList.cs
+    startLine: 29
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Disposes resources in the node list privately.
+  syntax:
+    content: protected virtual void PrivateDisposeNodeList()
+    content.vb: Protected Overridable Sub PrivateDisposeNodeList
+references:
+- uid: System.Xml
+  isExternal: false
+  name: System.Xml
+  fullName: System.Xml
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Xml.XmlNode
+  parent: System.Xml
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: XmlNode
+  fullName: System.Xml.XmlNode
+  type: Class
+- uid: System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  isExternal: false
+  name: System.Collections
+  fullName: System.Collections

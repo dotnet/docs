@@ -1,0 +1,29 @@
+items:
+- uid: System.Runtime.InteropServices._EventInfo
+  id: _EventInfo
+  parent: System.Runtime.InteropServices
+  children: []
+  href: System.Runtime.InteropServices._EventInfo.yml
+  name: _EventInfo
+  fullName: System.Runtime.InteropServices._EventInfo
+  type: Interface
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/ComInterfaces.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Reflection/ComInterfaces.cs
+    startLine: 577
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Exposes the public members of the @'System.Reflection.EventInfo' class to unmanaged code.
+  syntax:
+    content: public interface _EventInfo
+    content.vb: Public Interface _EventInfo
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace

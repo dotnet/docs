@@ -1,0 +1,173 @@
+items:
+- uid: System.Runtime.InteropServices.ComTypes.TYMED
+  id: TYMED
+  parent: System.Runtime.InteropServices.ComTypes
+  children:
+  - System.Runtime.InteropServices.ComTypes.TYMED.TYMED_ENHMF
+  - System.Runtime.InteropServices.ComTypes.TYMED.TYMED_FILE
+  - System.Runtime.InteropServices.ComTypes.TYMED.TYMED_GDI
+  - System.Runtime.InteropServices.ComTypes.TYMED.TYMED_HGLOBAL
+  - System.Runtime.InteropServices.ComTypes.TYMED.TYMED_ISTORAGE
+  - System.Runtime.InteropServices.ComTypes.TYMED.TYMED_ISTREAM
+  - System.Runtime.InteropServices.ComTypes.TYMED.TYMED_MFPICT
+  - System.Runtime.InteropServices.ComTypes.TYMED.TYMED_NULL
+  href: System.Runtime.InteropServices.ComTypes.TYMED.yml
+  name: TYMED
+  fullName: System.Runtime.InteropServices.ComTypes.TYMED
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Runtime.InteropServices/src/System/Runtime/InteropServices/ComTypes/tymed.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Runtime.InteropServices/src/System/Runtime/InteropServices/ComTypes/tymed.cs
+    startLine: 5
+  assemblies:
+  - System.Runtime.InteropServices.CoreCLR
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Provides the managed definition of the TYMED structure.
+  syntax:
+    content: public enum TYMED
+    content.vb: Public Enum TYMED
+- uid: System.Runtime.InteropServices.ComTypes.TYMED.TYMED_HGLOBAL
+  id: TYMED_HGLOBAL
+  parent: System.Runtime.InteropServices.ComTypes.TYMED
+  href: System.Runtime.InteropServices.ComTypes.TYMED.yml
+  name: TYMED_HGLOBAL
+  fullName: System.Runtime.InteropServices.ComTypes.TYMED.TYMED_HGLOBAL
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Runtime.InteropServices/src/System/Runtime/InteropServices/ComTypes/tymed.cs
+    startLine: 8
+  assemblies:
+  - System.Runtime.InteropServices.CoreCLR
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: The storage medium is a global memory handle (HGLOBAL). Allocate the global handle with the GMEM_SHARE flag. If the @'System.Runtime.InteropServices.ComTypes.STGMEDIUM'@'System.Runtime.InteropServices.ComTypes.STGMEDIUM.pUnkForRelease' member is null, the destination process should use GlobalFree to release the memory.
+  syntax:
+    content: TYMED_HGLOBAL = 1
+- uid: System.Runtime.InteropServices.ComTypes.TYMED.TYMED_FILE
+  id: TYMED_FILE
+  parent: System.Runtime.InteropServices.ComTypes.TYMED
+  href: System.Runtime.InteropServices.ComTypes.TYMED.yml
+  name: TYMED_FILE
+  fullName: System.Runtime.InteropServices.ComTypes.TYMED.TYMED_FILE
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Runtime.InteropServices/src/System/Runtime/InteropServices/ComTypes/tymed.cs
+    startLine: 9
+  assemblies:
+  - System.Runtime.InteropServices.CoreCLR
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: The storage medium is a disk file identified by a path. If the STGMEDIUM@'System.Runtime.InteropServices.ComTypes.STGMEDIUM.pUnkForRelease' member is null, the destination process should use OpenFile to delete the file.
+  syntax:
+    content: TYMED_FILE = 2
+- uid: System.Runtime.InteropServices.ComTypes.TYMED.TYMED_ISTREAM
+  id: TYMED_ISTREAM
+  parent: System.Runtime.InteropServices.ComTypes.TYMED
+  href: System.Runtime.InteropServices.ComTypes.TYMED.yml
+  name: TYMED_ISTREAM
+  fullName: System.Runtime.InteropServices.ComTypes.TYMED.TYMED_ISTREAM
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Runtime.InteropServices/src/System/Runtime/InteropServices/ComTypes/tymed.cs
+    startLine: 10
+  assemblies:
+  - System.Runtime.InteropServices.CoreCLR
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: The storage medium is a stream object identified by an IStream pointer. Use ISequentialStream::Read to read the data. If the @'System.Runtime.InteropServices.ComTypes.STGMEDIUM'@'System.Runtime.InteropServices.ComTypes.STGMEDIUM.pUnkForRelease' member is not null, the destination process should use IStream::Release to release the stream component.
+  syntax:
+    content: TYMED_ISTREAM = 4
+- uid: System.Runtime.InteropServices.ComTypes.TYMED.TYMED_ISTORAGE
+  id: TYMED_ISTORAGE
+  parent: System.Runtime.InteropServices.ComTypes.TYMED
+  href: System.Runtime.InteropServices.ComTypes.TYMED.yml
+  name: TYMED_ISTORAGE
+  fullName: System.Runtime.InteropServices.ComTypes.TYMED.TYMED_ISTORAGE
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Runtime.InteropServices/src/System/Runtime/InteropServices/ComTypes/tymed.cs
+    startLine: 11
+  assemblies:
+  - System.Runtime.InteropServices.CoreCLR
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: The storage medium is a storage component identified by an IStorage pointer. The data is in the streams and storages contained by this IStorage instance. If the @'System.Runtime.InteropServices.ComTypes.STGMEDIUM'@'System.Runtime.InteropServices.ComTypes.STGMEDIUM.pUnkForRelease' member is not null, the destination process should use IStorage::Release to release the storage component.
+  syntax:
+    content: TYMED_ISTORAGE = 8
+- uid: System.Runtime.InteropServices.ComTypes.TYMED.TYMED_GDI
+  id: TYMED_GDI
+  parent: System.Runtime.InteropServices.ComTypes.TYMED
+  href: System.Runtime.InteropServices.ComTypes.TYMED.yml
+  name: TYMED_GDI
+  fullName: System.Runtime.InteropServices.ComTypes.TYMED.TYMED_GDI
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Runtime.InteropServices/src/System/Runtime/InteropServices/ComTypes/tymed.cs
+    startLine: 12
+  assemblies:
+  - System.Runtime.InteropServices.CoreCLR
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: The storage medium is a Graphics Device Interface (GDI) component (HBITMAP). If the @'System.Runtime.InteropServices.ComTypes.STGMEDIUM'@'System.Runtime.InteropServices.ComTypes.STGMEDIUM.pUnkForRelease' member is null, the destination process should use DeleteObject to delete the bitmap.
+  syntax:
+    content: TYMED_GDI = 16
+- uid: System.Runtime.InteropServices.ComTypes.TYMED.TYMED_MFPICT
+  id: TYMED_MFPICT
+  parent: System.Runtime.InteropServices.ComTypes.TYMED
+  href: System.Runtime.InteropServices.ComTypes.TYMED.yml
+  name: TYMED_MFPICT
+  fullName: System.Runtime.InteropServices.ComTypes.TYMED.TYMED_MFPICT
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Runtime.InteropServices/src/System/Runtime/InteropServices/ComTypes/tymed.cs
+    startLine: 13
+  assemblies:
+  - System.Runtime.InteropServices.CoreCLR
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: The storage medium is a metafile (HMETAFILE). Use the Windows or WIN32 functions to access the metafile's data. If the @'System.Runtime.InteropServices.ComTypes.STGMEDIUM'@'System.Runtime.InteropServices.ComTypes.STGMEDIUM.pUnkForRelease' member is null, the destination process should use DeleteMetaFile to delete the bitmap.
+  syntax:
+    content: TYMED_MFPICT = 32
+- uid: System.Runtime.InteropServices.ComTypes.TYMED.TYMED_ENHMF
+  id: TYMED_ENHMF
+  parent: System.Runtime.InteropServices.ComTypes.TYMED
+  href: System.Runtime.InteropServices.ComTypes.TYMED.yml
+  name: TYMED_ENHMF
+  fullName: System.Runtime.InteropServices.ComTypes.TYMED.TYMED_ENHMF
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Runtime.InteropServices/src/System/Runtime/InteropServices/ComTypes/tymed.cs
+    startLine: 14
+  assemblies:
+  - System.Runtime.InteropServices.CoreCLR
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: The storage medium is an enhanced metafile. If the @'System.Runtime.InteropServices.ComTypes.STGMEDIUM'@'System.Runtime.InteropServices.ComTypes.STGMEDIUM.pUnkForRelease' member is null, the destination process should use DeleteEnhMetaFile to delete the bitmap.
+  syntax:
+    content: TYMED_ENHMF = 64
+- uid: System.Runtime.InteropServices.ComTypes.TYMED.TYMED_NULL
+  id: TYMED_NULL
+  parent: System.Runtime.InteropServices.ComTypes.TYMED
+  href: System.Runtime.InteropServices.ComTypes.TYMED.yml
+  name: TYMED_NULL
+  fullName: System.Runtime.InteropServices.ComTypes.TYMED.TYMED_NULL
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Runtime.InteropServices/src/System/Runtime/InteropServices/ComTypes/tymed.cs
+    startLine: 15
+  assemblies:
+  - System.Runtime.InteropServices.CoreCLR
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: No data is being passed.
+  syntax:
+    content: TYMED_NULL = 0
+references:
+- uid: System.Runtime.InteropServices.ComTypes
+  isExternal: false
+  name: System.Runtime.InteropServices.ComTypes
+  fullName: System.Runtime.InteropServices.ComTypes
+  type: Namespace

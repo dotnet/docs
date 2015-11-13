@@ -1,0 +1,689 @@
+items:
+- uid: System.Collections.Stack
+  id: Stack
+  parent: System.Collections
+  children:
+  - System.Collections.Stack.#ctor
+  - System.Collections.Stack.#ctor(System.Collections.ICollection)
+  - System.Collections.Stack.#ctor(System.Int32)
+  - System.Collections.Stack.Clear
+  - System.Collections.Stack.Clone
+  - System.Collections.Stack.Contains(System.Object)
+  - System.Collections.Stack.CopyTo(System.Array,System.Int32)
+  - System.Collections.Stack.Count
+  - System.Collections.Stack.GetEnumerator
+  - System.Collections.Stack.IsSynchronized
+  - System.Collections.Stack.Peek
+  - System.Collections.Stack.Pop
+  - System.Collections.Stack.Push(System.Object)
+  - System.Collections.Stack.Synchronized(System.Collections.Stack)
+  - System.Collections.Stack.SyncRoot
+  - System.Collections.Stack.ToArray
+  href: System.Collections.Stack.yml
+  name: Stack
+  fullName: System.Collections.Stack
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Collections.NonGeneric/src/System/Collections/Stack.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Collections.NonGeneric/src/System/Collections/Stack.cs
+    startLine: 22
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Represents a simple last-in-first-out (LIFO) non-generic collection of objects.
+  syntax:
+    content: 'public class Stack : ICollection, IEnumerable'
+    content.vb: Public Class Stack Implements ICollection, IEnumerable
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.ICollection
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Collections.Stack.#ctor
+  id: '#ctor'
+  parent: System.Collections.Stack
+  href: System.Collections.Stack.yml
+  name: Stack()
+  fullName: System.Collections.Stack.Stack()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/Stack.cs
+    startLine: 34
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Initializes a new instance of the @'System.Collections.Stack' class that is empty and has the default initial capacity.
+  syntax:
+    content: public Stack()
+    content.vb: Public Sub New
+- uid: System.Collections.Stack.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: System.Collections.Stack
+  href: System.Collections.Stack.yml
+  name: Stack(Int32)
+  fullName: System.Collections.Stack.Stack(System.Int32)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/Stack.cs
+    startLine: 43
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Initializes a new instance of the @'System.Collections.Stack' class that is empty and has the specified initial capacity or the default initial capacity, whichever is greater.
+  syntax:
+    content: public Stack(int initialCapacity)
+    content.vb: Public Sub New(initialCapacity As Integer)
+    parameters:
+    - id: initialCapacity
+      type: System.Int32
+      description: The initial number of elements that the @'System.Collections.Stack' can contain.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*initialCapacity* is less than zero.'
+- uid: System.Collections.Stack.#ctor(System.Collections.ICollection)
+  id: '#ctor(System.Collections.ICollection)'
+  parent: System.Collections.Stack
+  href: System.Collections.Stack.yml
+  name: Stack(ICollection)
+  fullName: System.Collections.Stack.Stack(System.Collections.ICollection)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/Stack.cs
+    startLine: 58
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Initializes a new instance of the @'System.Collections.Stack' class that contains elements copied from the specified collection and has the same initial capacity as the number of elements copied.
+  syntax:
+    content: public Stack(ICollection col)
+    content.vb: Public Sub New(col As ICollection)
+    parameters:
+    - id: col
+      type: System.Collections.ICollection
+      description: The @'System.Collections.ICollection' to copy elements from.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*col* is null.'
+- uid: System.Collections.Stack.Count
+  id: Count
+  parent: System.Collections.Stack
+  href: System.Collections.Stack.yml
+  name: Count
+  fullName: System.Collections.Stack.Count
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/Stack.cs
+    startLine: 68
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Gets the number of elements contained in the @'System.Collections.Stack'.
+  syntax:
+    content: public virtual int Count { get; }
+    content.vb: Public Overridable ReadOnly Property Count As Integer
+    parameters: []
+    return:
+      type: System.Int32
+- uid: System.Collections.Stack.IsSynchronized
+  id: IsSynchronized
+  parent: System.Collections.Stack
+  href: System.Collections.Stack.yml
+  name: IsSynchronized
+  fullName: System.Collections.Stack.IsSynchronized
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/Stack.cs
+    startLine: 77
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Gets a value indicating whether access to the @'System.Collections.Stack' is synchronized (thread safe).
+  syntax:
+    content: public virtual bool IsSynchronized { get; }
+    content.vb: Public Overridable ReadOnly Property IsSynchronized As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Collections.Stack.SyncRoot
+  id: SyncRoot
+  parent: System.Collections.Stack
+  href: System.Collections.Stack.yml
+  name: SyncRoot
+  fullName: System.Collections.Stack.SyncRoot
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/Stack.cs
+    startLine: 82
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Gets an object that can be used to synchronize access to the @'System.Collections.Stack'.
+  syntax:
+    content: public virtual object SyncRoot { get; }
+    content.vb: Public Overridable ReadOnly Property SyncRoot As Object
+    parameters: []
+    return:
+      type: System.Object
+- uid: System.Collections.Stack.Clear
+  id: Clear
+  parent: System.Collections.Stack
+  href: System.Collections.Stack.yml
+  name: Clear()
+  fullName: System.Collections.Stack.Clear()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/Stack.cs
+    startLine: 95
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Removes all objects from the @'System.Collections.Stack'.
+  syntax:
+    content: public virtual void Clear()
+    content.vb: Public Overridable Sub Clear
+- uid: System.Collections.Stack.Clone
+  id: Clone
+  parent: System.Collections.Stack
+  href: System.Collections.Stack.yml
+  name: Clone()
+  fullName: System.Collections.Stack.Clone()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/Stack.cs
+    startLine: 102
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Creates a shallow copy of the @'System.Collections.Stack'.
+  syntax:
+    content: public virtual object Clone()
+    content.vb: Public Overridable Function Clone As Object
+    return:
+      type: System.Object
+- uid: System.Collections.Stack.Contains(System.Object)
+  id: Contains(System.Object)
+  parent: System.Collections.Stack
+  href: System.Collections.Stack.yml
+  name: Contains(Object)
+  fullName: System.Collections.Stack.Contains(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/Stack.cs
+    startLine: 113
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Determines whether an element is in the @'System.Collections.Stack'.
+  syntax:
+    content: public virtual bool Contains(object obj)
+    content.vb: Public Overridable Function Contains(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The @'System.Object' to locate in the @'System.Collections.Stack'. The value can be null.
+    return:
+      type: System.Boolean
+- uid: System.Collections.Stack.CopyTo(System.Array,System.Int32)
+  id: CopyTo(System.Array,System.Int32)
+  parent: System.Collections.Stack
+  href: System.Collections.Stack.yml
+  name: CopyTo(Array, Int32)
+  fullName: System.Collections.Stack.CopyTo(System.Array, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/Stack.cs
+    startLine: 133
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Copies the @'System.Collections.Stack' to an existing one-dimensional @'System.Array', starting at the specified array index.
+  syntax:
+    content: public virtual void CopyTo(Array array, int index)
+    content.vb: Public Overridable Sub CopyTo(array As Array, index As Integer)
+    parameters:
+    - id: array
+      type: System.Array
+      description: The one-dimensional @'System.Array' that is the destination of the elements copied from @'System.Collections.Stack'. The @'System.Array' must have zero-based indexing.
+    - id: index
+      type: System.Int32
+      description: The zero-based index in *array* at which copying begins.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero.'
+  - type: System.ArgumentException
+    description: '*array* is multidimensional.-or- The number of elements in the source @''System.Collections.Stack'' is greater than the available space from *index* to the end of the destination *array*.'
+  - type: System.InvalidCastException
+    description: The type of the source @'System.Collections.Stack' cannot be cast automatically to the type of the destination *array*.
+- uid: System.Collections.Stack.GetEnumerator
+  id: GetEnumerator
+  parent: System.Collections.Stack
+  href: System.Collections.Stack.yml
+  name: GetEnumerator()
+  fullName: System.Collections.Stack.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/Stack.cs
+    startLine: 166
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Returns an @'System.Collections.IEnumerator' for the @'System.Collections.Stack'.
+  syntax:
+    content: public virtual IEnumerator GetEnumerator()
+    content.vb: Public Overridable Function GetEnumerator As IEnumerator
+    return:
+      type: System.Collections.IEnumerator
+- uid: System.Collections.Stack.Peek
+  id: Peek
+  parent: System.Collections.Stack
+  href: System.Collections.Stack.yml
+  name: Peek()
+  fullName: System.Collections.Stack.Peek()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/Stack.cs
+    startLine: 174
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Returns the object at the top of the @'System.Collections.Stack' without removing it.
+  syntax:
+    content: public virtual object Peek()
+    content.vb: Public Overridable Function Peek As Object
+    return:
+      type: System.Object
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The @'System.Collections.Stack' is empty.
+- uid: System.Collections.Stack.Pop
+  id: Pop
+  parent: System.Collections.Stack
+  href: System.Collections.Stack.yml
+  name: Pop()
+  fullName: System.Collections.Stack.Pop()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/Stack.cs
+    startLine: 184
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Removes and returns the object at the top of the @'System.Collections.Stack'.
+  syntax:
+    content: public virtual object Pop()
+    content.vb: Public Overridable Function Pop As Object
+    return:
+      type: System.Object
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The @'System.Collections.Stack' is empty.
+- uid: System.Collections.Stack.Push(System.Object)
+  id: Push(System.Object)
+  parent: System.Collections.Stack
+  href: System.Collections.Stack.yml
+  name: Push(Object)
+  fullName: System.Collections.Stack.Push(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/Stack.cs
+    startLine: 198
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Inserts an object at the top of the @'System.Collections.Stack'.
+  syntax:
+    content: public virtual void Push(object obj)
+    content.vb: Public Overridable Sub Push(obj As Object)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The @'System.Object' to push onto the @'System.Collections.Stack'. The value can be null.
+- uid: System.Collections.Stack.Synchronized(System.Collections.Stack)
+  id: Synchronized(System.Collections.Stack)
+  parent: System.Collections.Stack
+  href: System.Collections.Stack.yml
+  name: Synchronized(Stack)
+  fullName: System.Collections.Stack.Synchronized(System.Collections.Stack)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/Stack.cs
+    startLine: 213
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Returns a synchronized (thread safe) wrapper for the @'System.Collections.Stack'.
+  syntax:
+    content: public static Stack Synchronized(Stack stack)
+    content.vb: Public Shared Function Synchronized(stack As Stack) As Stack
+    parameters:
+    - id: stack
+      type: System.Collections.Stack
+      description: The @'System.Collections.Stack' to synchronize.
+    return:
+      type: System.Collections.Stack
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*stack* is null.'
+- uid: System.Collections.Stack.ToArray
+  id: ToArray
+  parent: System.Collections.Stack
+  href: System.Collections.Stack.yml
+  name: ToArray()
+  fullName: System.Collections.Stack.ToArray()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/Stack.cs
+    startLine: 224
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Copies the @'System.Collections.Stack' to a new array.
+  syntax:
+    content: public virtual object[] ToArray()
+    content.vb: Public Overridable Function ToArray As Object()
+    return:
+      type: System.Object[]
+references:
+- uid: System.Collections
+  isExternal: false
+  name: System.Collections
+  fullName: System.Collections
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Collections.ICollection
+  parent: System.Collections
+  isExternal: true
+  name: ICollection
+  fullName: System.Collections.ICollection
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Array
+  parent: System
+  isExternal: true
+  name: Array
+  fullName: System.Array
+- uid: System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections.Stack
+  parent: System.Collections
+  isExternal: false
+  href: System.Collections.Stack.yml
+  name: Stack
+  fullName: System.Collections.Stack
+  type: Class
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  name.vb: Object()
+  fullName: System.Object[]
+  fullName.vb: System.Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    fullName: ()

@@ -1,0 +1,109 @@
+items:
+- uid: System.IObserver`1
+  id: IObserver`1
+  parent: System
+  children:
+  - System.IObserver`1.OnCompleted
+  - System.IObserver`1.OnError(System.Exception)
+  - System.IObserver`1.OnNext(`0)
+  href: System.IObserver`1.yml
+  name: IObserver<T>
+  name.vb: IObserver(Of T)
+  fullName: System.IObserver<T>
+  fullName.vb: System.IObserver(Of T)
+  type: Interface
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/IObserver.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/IObserver.cs
+    startLine: 19
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Provides a mechanism for receiving push-based notifications.
+  syntax:
+    content: public interface IObserver<in T>
+    content.vb: Public Interface IObserver(Of In T)
+    typeParameters:
+    - id: T
+- uid: System.IObserver`1.OnNext(`0)
+  id: OnNext(`0)
+  parent: System.IObserver`1
+  href: System.IObserver`1.yml
+  name: OnNext(T)
+  fullName: System.IObserver<T>.OnNext(T)
+  fullName.vb: System.IObserver(Of T).OnNext(T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IObserver.cs
+    startLine: 21
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Provides the observer with new data.
+  syntax:
+    content: void OnNext(T value)
+    content.vb: Sub OnNext(value As T)
+    parameters:
+    - id: value
+      type: '{T}'
+      description: The current notification information.
+- uid: System.IObserver`1.OnError(System.Exception)
+  id: OnError(System.Exception)
+  parent: System.IObserver`1
+  href: System.IObserver`1.yml
+  name: OnError(Exception)
+  fullName: System.IObserver<T>.OnError(System.Exception)
+  fullName.vb: System.IObserver(Of T).OnError(System.Exception)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IObserver.cs
+    startLine: 22
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Notifies the observer that the provider has experienced an error condition.
+  syntax:
+    content: void OnError(Exception error)
+    content.vb: Sub OnError(error As Exception)
+    parameters:
+    - id: error
+      type: System.Exception
+      description: An object that provides additional information about the error.
+- uid: System.IObserver`1.OnCompleted
+  id: OnCompleted
+  parent: System.IObserver`1
+  href: System.IObserver`1.yml
+  name: OnCompleted()
+  fullName: System.IObserver<T>.OnCompleted()
+  fullName.vb: System.IObserver(Of T).OnCompleted()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IObserver.cs
+    startLine: 23
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Notifies the observer that the provider has finished sending push-based notifications.
+  syntax:
+    content: void OnCompleted()
+    content.vb: Sub OnCompleted
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: '{T}'
+  isExternal: false
+  name: T
+  fullName: T
+- uid: System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  fullName: System.Exception

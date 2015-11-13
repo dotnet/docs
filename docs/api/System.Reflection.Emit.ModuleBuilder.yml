@@ -1,0 +1,4480 @@
+items:
+- uid: System.Reflection.Emit.ModuleBuilder
+  id: ModuleBuilder
+  parent: System.Reflection.Emit
+  children:
+  - System.Reflection.Emit.ModuleBuilder.Assembly
+  - System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions
+  - System.Reflection.Emit.ModuleBuilder.DefineDocument(System.String,System.Guid,System.Guid,System.Guid)
+  - System.Reflection.Emit.ModuleBuilder.DefineEnum(System.String,System.Reflection.TypeAttributes,System.Type)
+  - System.Reflection.Emit.ModuleBuilder.DefineGlobalMethod(System.String,System.Reflection.MethodAttributes,System.Reflection.CallingConventions,System.Type,System.Type[])
+  - System.Reflection.Emit.ModuleBuilder.DefineGlobalMethod(System.String,System.Reflection.MethodAttributes,System.Reflection.CallingConventions,System.Type,System.Type[],System.Type[],System.Type[],System.Type[][],System.Type[][])
+  - System.Reflection.Emit.ModuleBuilder.DefineGlobalMethod(System.String,System.Reflection.MethodAttributes,System.Type,System.Type[])
+  - System.Reflection.Emit.ModuleBuilder.DefineInitializedData(System.String,System.Byte[],System.Reflection.FieldAttributes)
+  - System.Reflection.Emit.ModuleBuilder.DefineManifestResource(System.String,System.IO.Stream,System.Reflection.ResourceAttributes)
+  - System.Reflection.Emit.ModuleBuilder.DefinePInvokeMethod(System.String,System.String,System.Reflection.MethodAttributes,System.Reflection.CallingConventions,System.Type,System.Type[],System.Runtime.InteropServices.CallingConvention,System.Runtime.InteropServices.CharSet)
+  - System.Reflection.Emit.ModuleBuilder.DefinePInvokeMethod(System.String,System.String,System.String,System.Reflection.MethodAttributes,System.Reflection.CallingConventions,System.Type,System.Type[],System.Runtime.InteropServices.CallingConvention,System.Runtime.InteropServices.CharSet)
+  - System.Reflection.Emit.ModuleBuilder.DefineType(System.String)
+  - System.Reflection.Emit.ModuleBuilder.DefineType(System.String,System.Reflection.TypeAttributes)
+  - System.Reflection.Emit.ModuleBuilder.DefineType(System.String,System.Reflection.TypeAttributes,System.Type)
+  - System.Reflection.Emit.ModuleBuilder.DefineType(System.String,System.Reflection.TypeAttributes,System.Type,System.Int32)
+  - System.Reflection.Emit.ModuleBuilder.DefineType(System.String,System.Reflection.TypeAttributes,System.Type,System.Reflection.Emit.PackingSize)
+  - System.Reflection.Emit.ModuleBuilder.DefineType(System.String,System.Reflection.TypeAttributes,System.Type,System.Reflection.Emit.PackingSize,System.Int32)
+  - System.Reflection.Emit.ModuleBuilder.DefineType(System.String,System.Reflection.TypeAttributes,System.Type,System.Type[])
+  - System.Reflection.Emit.ModuleBuilder.DefineUninitializedData(System.String,System.Int32,System.Reflection.FieldAttributes)
+  - System.Reflection.Emit.ModuleBuilder.DefineUnmanagedResource(System.Byte[])
+  - System.Reflection.Emit.ModuleBuilder.DefineUnmanagedResource(System.String)
+  - System.Reflection.Emit.ModuleBuilder.Equals(System.Object)
+  - System.Reflection.Emit.ModuleBuilder.FullyQualifiedName
+  - System.Reflection.Emit.ModuleBuilder.GetArrayMethod(System.Type,System.String,System.Reflection.CallingConventions,System.Type,System.Type[])
+  - System.Reflection.Emit.ModuleBuilder.GetArrayMethodToken(System.Type,System.String,System.Reflection.CallingConventions,System.Type,System.Type[])
+  - System.Reflection.Emit.ModuleBuilder.GetConstructorToken(System.Reflection.ConstructorInfo)
+  - System.Reflection.Emit.ModuleBuilder.GetConstructorToken(System.Reflection.ConstructorInfo,System.Collections.Generic.IEnumerable{System.Type})
+  - System.Reflection.Emit.ModuleBuilder.GetCustomAttributes(System.Boolean)
+  - System.Reflection.Emit.ModuleBuilder.GetCustomAttributes(System.Type,System.Boolean)
+  - System.Reflection.Emit.ModuleBuilder.GetCustomAttributesData
+  - System.Reflection.Emit.ModuleBuilder.GetField(System.String,System.Reflection.BindingFlags)
+  - System.Reflection.Emit.ModuleBuilder.GetFields(System.Reflection.BindingFlags)
+  - System.Reflection.Emit.ModuleBuilder.GetFieldToken(System.Reflection.FieldInfo)
+  - System.Reflection.Emit.ModuleBuilder.GetHashCode
+  - System.Reflection.Emit.ModuleBuilder.GetMethodImpl(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])
+  - System.Reflection.Emit.ModuleBuilder.GetMethods(System.Reflection.BindingFlags)
+  - System.Reflection.Emit.ModuleBuilder.GetMethodToken(System.Reflection.MethodInfo)
+  - System.Reflection.Emit.ModuleBuilder.GetMethodToken(System.Reflection.MethodInfo,System.Collections.Generic.IEnumerable{System.Type})
+  - System.Reflection.Emit.ModuleBuilder.GetPEKind(System.Reflection.PortableExecutableKinds@,System.Reflection.ImageFileMachine@)
+  - System.Reflection.Emit.ModuleBuilder.GetSignatureToken(System.Byte[],System.Int32)
+  - System.Reflection.Emit.ModuleBuilder.GetSignatureToken(System.Reflection.Emit.SignatureHelper)
+  - System.Reflection.Emit.ModuleBuilder.GetStringConstant(System.String)
+  - System.Reflection.Emit.ModuleBuilder.GetSymWriter
+  - System.Reflection.Emit.ModuleBuilder.GetType(System.String)
+  - System.Reflection.Emit.ModuleBuilder.GetType(System.String,System.Boolean)
+  - System.Reflection.Emit.ModuleBuilder.GetType(System.String,System.Boolean,System.Boolean)
+  - System.Reflection.Emit.ModuleBuilder.GetTypes
+  - System.Reflection.Emit.ModuleBuilder.GetTypeToken(System.String)
+  - System.Reflection.Emit.ModuleBuilder.GetTypeToken(System.Type)
+  - System.Reflection.Emit.ModuleBuilder.IsDefined(System.Type,System.Boolean)
+  - System.Reflection.Emit.ModuleBuilder.IsResource
+  - System.Reflection.Emit.ModuleBuilder.IsTransient
+  - System.Reflection.Emit.ModuleBuilder.MDStreamVersion
+  - System.Reflection.Emit.ModuleBuilder.MetadataToken
+  - System.Reflection.Emit.ModuleBuilder.ModuleVersionId
+  - System.Reflection.Emit.ModuleBuilder.Name
+  - System.Reflection.Emit.ModuleBuilder.ResolveField(System.Int32,System.Type[],System.Type[])
+  - System.Reflection.Emit.ModuleBuilder.ResolveMember(System.Int32,System.Type[],System.Type[])
+  - System.Reflection.Emit.ModuleBuilder.ResolveMethod(System.Int32,System.Type[],System.Type[])
+  - System.Reflection.Emit.ModuleBuilder.ResolveSignature(System.Int32)
+  - System.Reflection.Emit.ModuleBuilder.ResolveString(System.Int32)
+  - System.Reflection.Emit.ModuleBuilder.ResolveType(System.Int32,System.Type[],System.Type[])
+  - System.Reflection.Emit.ModuleBuilder.ScopeName
+  - System.Reflection.Emit.ModuleBuilder.SetCustomAttribute(System.Reflection.ConstructorInfo,System.Byte[])
+  - System.Reflection.Emit.ModuleBuilder.SetCustomAttribute(System.Reflection.Emit.CustomAttributeBuilder)
+  - System.Reflection.Emit.ModuleBuilder.SetSymCustomAttribute(System.String,System.Byte[])
+  - System.Reflection.Emit.ModuleBuilder.SetUserEntryPoint(System.Reflection.MethodInfo)
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: ModuleBuilder
+  fullName: System.Reflection.Emit.ModuleBuilder
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 51
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Defines and represents a module in a dynamic assembly.
+  syntax:
+    content: 'public class ModuleBuilder : Module, _Module, ISerializable, ICustomAttributeProvider, _ModuleBuilder'
+    content.vb: Public Class ModuleBuilder Inherits Module Implements _Module, ISerializable, ICustomAttributeProvider, _ModuleBuilder
+  inheritance:
+  - System.Object
+  - System.Reflection.Module
+  implements:
+  - System.Runtime.InteropServices._Module
+  - System.Runtime.Serialization.ISerializable
+  - System.Reflection.ICustomAttributeProvider
+  - System.Runtime.InteropServices._ModuleBuilder
+  inheritedMembers:
+  - System.Reflection.Module.FilterTypeName
+  - System.Reflection.Module.FilterTypeNameIgnoreCase
+  - System.Reflection.Module.ToString
+  - System.Reflection.Module.CustomAttributes
+  - System.Reflection.Module.ResolveMethod(System.Int32)
+  - System.Reflection.Module.ResolveField(System.Int32)
+  - System.Reflection.Module.ResolveType(System.Int32)
+  - System.Reflection.Module.ResolveMember(System.Int32)
+  - System.Reflection.Module.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - System.Reflection.Module.FindTypes(System.Reflection.TypeFilter,System.Object)
+  - System.Reflection.Module.GetFields
+  - System.Reflection.Module.GetField(System.String)
+  - System.Reflection.Module.GetMethods
+  - System.Reflection.Module.GetMethod(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])
+  - System.Reflection.Module.GetMethod(System.String,System.Type[])
+  - System.Reflection.Module.GetMethod(System.String)
+  - System.Reflection.Module.ModuleHandle
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Reflection.Emit.ModuleBuilder.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: Equals(Object)
+  fullName: System.Reflection.Emit.ModuleBuilder.Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 763
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Returns a value that indicates whether this instance is equal to the specified object.
+  syntax:
+    content: public override bool Equals(object obj)
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: An object to compare with this instance, or null.
+    return:
+      type: System.Boolean
+  overridden: System.Reflection.Module.Equals(System.Object)
+- uid: System.Reflection.Emit.ModuleBuilder.GetHashCode
+  id: GetHashCode
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: GetHashCode()
+  fullName: System.Reflection.Emit.ModuleBuilder.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 768
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Returns the hash code for this instance.
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+  overridden: System.Reflection.Module.GetHashCode
+- uid: System.Reflection.Emit.ModuleBuilder.GetCustomAttributes(System.Boolean)
+  id: GetCustomAttributes(System.Boolean)
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: GetCustomAttributes(Boolean)
+  fullName: System.Reflection.Emit.ModuleBuilder.GetCustomAttributes(System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 772
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Returns all the custom attributes that have been applied to the current @'System.Reflection.Emit.ModuleBuilder'.
+  syntax:
+    content: public override object[] GetCustomAttributes(bool inherit)
+    content.vb: Public Overrides Function GetCustomAttributes(inherit As Boolean) As Object()
+    parameters:
+    - id: inherit
+      type: System.Boolean
+      description: This argument is ignored for objects of this type.
+    return:
+      type: System.Object[]
+  overridden: System.Reflection.Module.GetCustomAttributes(System.Boolean)
+- uid: System.Reflection.Emit.ModuleBuilder.GetCustomAttributes(System.Type,System.Boolean)
+  id: GetCustomAttributes(System.Type,System.Boolean)
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: GetCustomAttributes(Type, Boolean)
+  fullName: System.Reflection.Emit.ModuleBuilder.GetCustomAttributes(System.Type, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 777
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Returns all the custom attributes that have been applied to the current @'System.Reflection.Emit.ModuleBuilder', and that derive from a specified attribute type.
+  syntax:
+    content: public override object[] GetCustomAttributes(Type attributeType, bool inherit)
+    content.vb: Public Overrides Function GetCustomAttributes(attributeType As Type, inherit As Boolean) As Object()
+    parameters:
+    - id: attributeType
+      type: System.Type
+      description: The base type from which attributes derive.
+    - id: inherit
+      type: System.Boolean
+      description: This argument is ignored for objects of this type.
+    return:
+      type: System.Object[]
+  overridden: System.Reflection.Module.GetCustomAttributes(System.Type,System.Boolean)
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*attributeType* is null.'
+  - type: System.ArgumentException
+    description: '*attributeType* is not a @''System.Type'' object supplied by the runtime. For example, *attributeType* is a @''System.Reflection.Emit.TypeBuilder'' object.'
+- uid: System.Reflection.Emit.ModuleBuilder.IsDefined(System.Type,System.Boolean)
+  id: IsDefined(System.Type,System.Boolean)
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: IsDefined(Type, Boolean)
+  fullName: System.Reflection.Emit.ModuleBuilder.IsDefined(System.Type, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 782
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Returns a value that indicates whether the specified attribute type has been applied to this module.
+  syntax:
+    content: public override bool IsDefined(Type attributeType, bool inherit)
+    content.vb: Public Overrides Function IsDefined(attributeType As Type, inherit As Boolean) As Boolean
+    parameters:
+    - id: attributeType
+      type: System.Type
+      description: The type of custom attribute to test for.
+    - id: inherit
+      type: System.Boolean
+      description: This argument is ignored for objects of this type.
+    return:
+      type: System.Boolean
+  overridden: System.Reflection.Module.IsDefined(System.Type,System.Boolean)
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*attributeType* is null.'
+  - type: System.ArgumentException
+    description: '*attributeType* is not a @''System.Type'' object supplied by the runtime. For example, *attributeType* is a @''System.Reflection.Emit.TypeBuilder'' object.'
+- uid: System.Reflection.Emit.ModuleBuilder.GetCustomAttributesData
+  id: GetCustomAttributesData
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: GetCustomAttributesData()
+  fullName: System.Reflection.Emit.ModuleBuilder.GetCustomAttributesData()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 787
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Returns information about the attributes that have been applied to the current @'System.Reflection.Emit.ModuleBuilder', expressed as @'System.Reflection.CustomAttributeData' objects.
+  syntax:
+    content: public override IList<CustomAttributeData> GetCustomAttributesData()
+    content.vb: Public Overrides Function GetCustomAttributesData As IList(Of CustomAttributeData)
+    return:
+      type: System.Collections.Generic.IList{System.Reflection.CustomAttributeData}
+  overridden: System.Reflection.Module.GetCustomAttributesData
+- uid: System.Reflection.Emit.ModuleBuilder.GetTypes
+  id: GetTypes
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: GetTypes()
+  fullName: System.Reflection.Emit.ModuleBuilder.GetTypes()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 795
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Returns all the classes defined within this module.
+  syntax:
+    content: public override Type[] GetTypes()
+    content.vb: Public Overrides Function GetTypes As Type()
+    return:
+      type: System.Type[]
+  overridden: System.Reflection.Module.GetTypes
+  exceptions:
+  - type: System.Reflection.ReflectionTypeLoadException
+    description: One or more classes in a module could not be loaded.
+  - type: System.Security.SecurityException
+    description: The caller does not have the required permission.
+- uid: System.Reflection.Emit.ModuleBuilder.GetType(System.String)
+  id: GetType(System.String)
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: GetType(String)
+  fullName: System.Reflection.Emit.ModuleBuilder.GetType(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 830
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Gets the named type defined in the module.
+  syntax:
+    content: public override Type GetType(string className)
+    content.vb: Public Overrides Function GetType(className As String) As Type
+    parameters:
+    - id: className
+      type: System.String
+      description: The name of the @'System.Type' to get.
+    return:
+      type: System.Type
+  overridden: System.Reflection.Module.GetType(System.String)
+  exceptions:
+  - type: System.ArgumentException
+    description: Length of *className* is zero or is greater than 1023.
+  - type: System.ArgumentNullException
+    description: '*className* is null.'
+  - type: System.Security.SecurityException
+    description: The requested @'System.Type' is non-public and the caller does not have @'System.Security.Permissions.ReflectionPermission' to reflect non-public objects outside the current assembly.
+  - type: System.Reflection.TargetInvocationException
+    description: A class initializer is invoked and throws an exception.
+  - type: System.TypeLoadException
+    description: An error is encountered while loading the @'System.Type'.
+- uid: System.Reflection.Emit.ModuleBuilder.GetType(System.String,System.Boolean)
+  id: GetType(System.String,System.Boolean)
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: GetType(String, Boolean)
+  fullName: System.Reflection.Emit.ModuleBuilder.GetType(System.String, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 836
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Gets the named type defined in the module, optionally ignoring the case of the type name.
+  syntax:
+    content: public override Type GetType(string className, bool ignoreCase)
+    content.vb: Public Overrides Function GetType(className As String, ignoreCase As Boolean) As Type
+    parameters:
+    - id: className
+      type: System.String
+      description: The name of the @'System.Type' to get.
+    - id: ignoreCase
+      type: System.Boolean
+      description: If true, the search is case-insensitive. If false, the search is case-sensitive.
+    return:
+      type: System.Type
+  overridden: System.Reflection.Module.GetType(System.String,System.Boolean)
+  exceptions:
+  - type: System.ArgumentException
+    description: Length of *className* is zero or is greater than 1023.
+  - type: System.ArgumentNullException
+    description: '*className* is null.'
+  - type: System.Security.SecurityException
+    description: The requested @'System.Type' is non-public and the caller does not have @'System.Security.Permissions.ReflectionPermission' to reflect non-public objects outside the current assembly.
+  - type: System.Reflection.TargetInvocationException
+    description: A class initializer is invoked and throws an exception.
+- uid: System.Reflection.Emit.ModuleBuilder.GetType(System.String,System.Boolean,System.Boolean)
+  id: GetType(System.String,System.Boolean,System.Boolean)
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: GetType(String, Boolean, Boolean)
+  fullName: System.Reflection.Emit.ModuleBuilder.GetType(System.String, System.Boolean, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 842
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Gets the named type defined in the module, optionally ignoring the case of the type name. Optionally throws an exception if the type is not found.
+  syntax:
+    content: public override Type GetType(string className, bool throwOnError, bool ignoreCase)
+    content.vb: Public Overrides Function GetType(className As String, throwOnError As Boolean, ignoreCase As Boolean) As Type
+    parameters:
+    - id: className
+      type: System.String
+      description: The name of the @'System.Type' to get.
+    - id: throwOnError
+      type: System.Boolean
+      description: true to throw an exception if the type cannot be found; false to return null.
+    - id: ignoreCase
+      type: System.Boolean
+      description: If true, the search is case-insensitive. If false, the search is case-sensitive.
+    return:
+      type: System.Type
+  overridden: System.Reflection.Module.GetType(System.String,System.Boolean,System.Boolean)
+  exceptions:
+  - type: System.ArgumentException
+    description: Length of *className* is zero or is greater than 1023.
+  - type: System.ArgumentNullException
+    description: '*className* is null.'
+  - type: System.Security.SecurityException
+    description: The requested @'System.Type' is non-public and the caller does not have @'System.Security.Permissions.ReflectionPermission' to reflect non-public objects outside the current assembly.
+  - type: System.Reflection.TargetInvocationException
+    description: A class initializer is invoked and throws an exception.
+  - type: System.TypeLoadException
+    description: '*throwOnError* is true and the specified type is not found.'
+- uid: System.Reflection.Emit.ModuleBuilder.FullyQualifiedName
+  id: FullyQualifiedName
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: FullyQualifiedName
+  fullName: System.Reflection.Emit.ModuleBuilder.FullyQualifiedName
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 949
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Gets a String representing the fully qualified name and path to this module.
+  syntax:
+    content: public override string FullyQualifiedName { get; }
+    content.vb: Public Overrides ReadOnly Property FullyQualifiedName As String
+    parameters: []
+    return:
+      type: System.String
+  overridden: System.Reflection.Module.FullyQualifiedName
+- uid: System.Reflection.Emit.ModuleBuilder.ResolveSignature(System.Int32)
+  id: ResolveSignature(System.Int32)
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: ResolveSignature(Int32)
+  fullName: System.Reflection.Emit.ModuleBuilder.ResolveSignature(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 976
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Returns the signature blob identified by a metadata token.
+  syntax:
+    content: public override byte[] ResolveSignature(int metadataToken)
+    content.vb: Public Overrides Function ResolveSignature(metadataToken As Integer) As Byte()
+    parameters:
+    - id: metadataToken
+      type: System.Int32
+      description: A metadata token that identifies a signature in the module.
+    return:
+      type: System.Byte[]
+  overridden: System.Reflection.Module.ResolveSignature(System.Int32)
+  exceptions:
+  - type: System.ArgumentException
+    description: '*metadataToken* is not a valid MemberRef, MethodDef, TypeSpec, signature, or FieldDef token in the scope of the current module.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*metadataToken* is not a valid token in the scope of the current module.'
+- uid: System.Reflection.Emit.ModuleBuilder.ResolveMethod(System.Int32,System.Type[],System.Type[])
+  id: ResolveMethod(System.Int32,System.Type[],System.Type[])
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: ResolveMethod(Int32, Type[], Type[])
+  name.vb: ResolveMethod(Int32, Type(), Type())
+  fullName: System.Reflection.Emit.ModuleBuilder.ResolveMethod(System.Int32, System.Type[], System.Type[])
+  fullName.vb: System.Reflection.Emit.ModuleBuilder.ResolveMethod(System.Int32, System.Type(), System.Type())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 981
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Returns the method or constructor identified by the specified metadata token, in the context defined by the specified generic type parameters.
+  syntax:
+    content: public override MethodBase ResolveMethod(int metadataToken, Type[] genericTypeArguments, Type[] genericMethodArguments)
+    content.vb: Public Overrides Function ResolveMethod(metadataToken As Integer, genericTypeArguments As Type(), genericMethodArguments As Type()) As MethodBase
+    parameters:
+    - id: metadataToken
+      type: System.Int32
+      description: A metadata token that identifies a method or constructor in the module.
+    - id: genericTypeArguments
+      type: System.Type[]
+      description: An array of @'System.Type' objects representing the generic type arguments of the type where the token is in scope, or null if that type is not generic.
+    - id: genericMethodArguments
+      type: System.Type[]
+      description: An array of @'System.Type' objects representing the generic type arguments of the method where the token is in scope, or null if that method is not generic.
+    return:
+      type: System.Reflection.MethodBase
+  overridden: System.Reflection.Module.ResolveMethod(System.Int32,System.Type[],System.Type[])
+  exceptions:
+  - type: System.ArgumentException
+    description: '*metadataToken* is not a token for a method or constructor in the scope of the current module.-or-*metadataToken* is a MethodSpec whose signature contains element type var (a type parameter of a generic type) or mvar (a type parameter of a generic method), and the necessary generic type arguments were not supplied for either or both of *genericTypeArguments* and *genericMethodArguments*.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*metadataToken* is not a valid token in the scope of the current module.'
+- uid: System.Reflection.Emit.ModuleBuilder.ResolveField(System.Int32,System.Type[],System.Type[])
+  id: ResolveField(System.Int32,System.Type[],System.Type[])
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: ResolveField(Int32, Type[], Type[])
+  name.vb: ResolveField(Int32, Type(), Type())
+  fullName: System.Reflection.Emit.ModuleBuilder.ResolveField(System.Int32, System.Type[], System.Type[])
+  fullName.vb: System.Reflection.Emit.ModuleBuilder.ResolveField(System.Int32, System.Type(), System.Type())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 986
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Returns the field identified by the specified metadata token, in the context defined by the specified generic type parameters.
+  syntax:
+    content: public override FieldInfo ResolveField(int metadataToken, Type[] genericTypeArguments, Type[] genericMethodArguments)
+    content.vb: Public Overrides Function ResolveField(metadataToken As Integer, genericTypeArguments As Type(), genericMethodArguments As Type()) As FieldInfo
+    parameters:
+    - id: metadataToken
+      type: System.Int32
+      description: A metadata token that identifies a field in the module.
+    - id: genericTypeArguments
+      type: System.Type[]
+      description: An array of @'System.Type' objects representing the generic type arguments of the type where the token is in scope, or null if that type is not generic.
+    - id: genericMethodArguments
+      type: System.Type[]
+      description: An array of @'System.Type' objects representing the generic type arguments of the method where the token is in scope, or null if that method is not generic.
+    return:
+      type: System.Reflection.FieldInfo
+  overridden: System.Reflection.Module.ResolveField(System.Int32,System.Type[],System.Type[])
+  exceptions:
+  - type: System.ArgumentException
+    description: '*metadataToken* is not a token for a field in the scope of the current module.-or-*metadataToken* identifies a field whose parent TypeSpec has a signature containing element type var (a type parameter of a generic type) or mvar (a type parameter of a generic method), and the necessary generic type arguments were not supplied for either or both of *genericTypeArguments* and *genericMethodArguments*.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*metadataToken* is not a valid token in the scope of the current module.'
+- uid: System.Reflection.Emit.ModuleBuilder.ResolveType(System.Int32,System.Type[],System.Type[])
+  id: ResolveType(System.Int32,System.Type[],System.Type[])
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: ResolveType(Int32, Type[], Type[])
+  name.vb: ResolveType(Int32, Type(), Type())
+  fullName: System.Reflection.Emit.ModuleBuilder.ResolveType(System.Int32, System.Type[], System.Type[])
+  fullName.vb: System.Reflection.Emit.ModuleBuilder.ResolveType(System.Int32, System.Type(), System.Type())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 991
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Returns the type identified by the specified metadata token, in the context defined by the specified generic type parameters.
+  syntax:
+    content: public override Type ResolveType(int metadataToken, Type[] genericTypeArguments, Type[] genericMethodArguments)
+    content.vb: Public Overrides Function ResolveType(metadataToken As Integer, genericTypeArguments As Type(), genericMethodArguments As Type()) As Type
+    parameters:
+    - id: metadataToken
+      type: System.Int32
+      description: A metadata token that identifies a type in the module.
+    - id: genericTypeArguments
+      type: System.Type[]
+      description: An array of @'System.Type' objects representing the generic type arguments of the type where the token is in scope, or null if that type is not generic.
+    - id: genericMethodArguments
+      type: System.Type[]
+      description: An array of @'System.Type' objects representing the generic type arguments of the method where the token is in scope, or null if that method is not generic.
+    return:
+      type: System.Type
+  overridden: System.Reflection.Module.ResolveType(System.Int32,System.Type[],System.Type[])
+  exceptions:
+  - type: System.ArgumentException
+    description: '*metadataToken* is not a token for a type in the scope of the current module.-or-*metadataToken* is a TypeSpec whose signature contains element type var (a type parameter of a generic type) or mvar (a type parameter of a generic method), and the necessary generic type arguments were not supplied for either or both of *genericTypeArguments* and *genericMethodArguments*.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*metadataToken* is not a valid token in the scope of the current module.'
+- uid: System.Reflection.Emit.ModuleBuilder.ResolveMember(System.Int32,System.Type[],System.Type[])
+  id: ResolveMember(System.Int32,System.Type[],System.Type[])
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: ResolveMember(Int32, Type[], Type[])
+  name.vb: ResolveMember(Int32, Type(), Type())
+  fullName: System.Reflection.Emit.ModuleBuilder.ResolveMember(System.Int32, System.Type[], System.Type[])
+  fullName.vb: System.Reflection.Emit.ModuleBuilder.ResolveMember(System.Int32, System.Type(), System.Type())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 996
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Returns the type or member identified by the specified metadata token, in the context defined by the specified generic type parameters.
+  syntax:
+    content: public override MemberInfo ResolveMember(int metadataToken, Type[] genericTypeArguments, Type[] genericMethodArguments)
+    content.vb: Public Overrides Function ResolveMember(metadataToken As Integer, genericTypeArguments As Type(), genericMethodArguments As Type()) As MemberInfo
+    parameters:
+    - id: metadataToken
+      type: System.Int32
+      description: A metadata token that identifies a type or member in the module.
+    - id: genericTypeArguments
+      type: System.Type[]
+      description: An array of @'System.Type' objects representing the generic type arguments of the type where the token is in scope, or null if that type is not generic.
+    - id: genericMethodArguments
+      type: System.Type[]
+      description: An array of @'System.Type' objects representing the generic type arguments of the method where the token is in scope, or null if that method is not generic.
+    return:
+      type: System.Reflection.MemberInfo
+  overridden: System.Reflection.Module.ResolveMember(System.Int32,System.Type[],System.Type[])
+  exceptions:
+  - type: System.ArgumentException
+    description: '*metadataToken* is not a token for a type or member in the scope of the current module.-or-*metadataToken* is a MethodSpec or TypeSpec whose signature contains element type var (a type parameter of a generic type) or mvar (a type parameter of a generic method), and the necessary generic type arguments were not supplied for either or both of *genericTypeArguments* and *genericMethodArguments*.-or-*metadataToken* identifies a property or event.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*metadataToken* is not a valid token in the scope of the current module.'
+- uid: System.Reflection.Emit.ModuleBuilder.ResolveString(System.Int32)
+  id: ResolveString(System.Int32)
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: ResolveString(Int32)
+  fullName: System.Reflection.Emit.ModuleBuilder.ResolveString(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 1001
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Returns the string identified by the specified metadata token.
+  syntax:
+    content: public override string ResolveString(int metadataToken)
+    content.vb: Public Overrides Function ResolveString(metadataToken As Integer) As String
+    parameters:
+    - id: metadataToken
+      type: System.Int32
+      description: A metadata token that identifies a string in the string heap of the module.
+    return:
+      type: System.String
+  overridden: System.Reflection.Module.ResolveString(System.Int32)
+  exceptions:
+  - type: System.ArgumentException
+    description: '*metadataToken* is not a token for a string in the scope of the current module.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*metadataToken* is not a valid token in the scope of the current module.'
+- uid: System.Reflection.Emit.ModuleBuilder.GetPEKind(System.Reflection.PortableExecutableKinds@,System.Reflection.ImageFileMachine@)
+  id: GetPEKind(System.Reflection.PortableExecutableKinds@,System.Reflection.ImageFileMachine@)
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: GetPEKind(out PortableExecutableKinds, out ImageFileMachine)
+  name.vb: GetPEKind(ByRef PortableExecutableKinds, ByRef ImageFileMachine)
+  fullName: System.Reflection.Emit.ModuleBuilder.GetPEKind(out System.Reflection.PortableExecutableKinds, out System.Reflection.ImageFileMachine)
+  fullName.vb: System.Reflection.Emit.ModuleBuilder.GetPEKind(ByRef System.Reflection.PortableExecutableKinds, ByRef System.Reflection.ImageFileMachine)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 1006
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Gets a pair of values indicating the nature of the code in a module and the platform targeted by the module.
+  syntax:
+    content: public override void GetPEKind(out PortableExecutableKinds peKind, out ImageFileMachine machine)
+    content.vb: Public Overrides Sub GetPEKind(ByRef peKind As PortableExecutableKinds, ByRef machine As ImageFileMachine)
+    parameters:
+    - id: peKind
+      type: System.Reflection.PortableExecutableKinds
+      description: When this method returns, a combination of the @'System.Reflection.PortableExecutableKinds' values indicating the nature of the code in the module.
+    - id: machine
+      type: System.Reflection.ImageFileMachine
+      description: When this method returns, one of the @'System.Reflection.ImageFileMachine' values indicating the platform targeted by the module.
+  overridden: System.Reflection.Module.GetPEKind(System.Reflection.PortableExecutableKinds@,System.Reflection.ImageFileMachine@)
+- uid: System.Reflection.Emit.ModuleBuilder.MDStreamVersion
+  id: MDStreamVersion
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: MDStreamVersion
+  fullName: System.Reflection.Emit.ModuleBuilder.MDStreamVersion
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 1011
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Gets the metadata stream version.
+  syntax:
+    content: public override int MDStreamVersion { get; }
+    content.vb: Public Overrides ReadOnly Property MDStreamVersion As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  overridden: System.Reflection.Module.MDStreamVersion
+- uid: System.Reflection.Emit.ModuleBuilder.ModuleVersionId
+  id: ModuleVersionId
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: ModuleVersionId
+  fullName: System.Reflection.Emit.ModuleBuilder.ModuleVersionId
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 1019
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Gets a universally unique identifier (UUID) that can be used to distinguish between two versions of a module.
+  syntax:
+    content: public override Guid ModuleVersionId { get; }
+    content.vb: Public Overrides ReadOnly Property ModuleVersionId As Guid
+    parameters: []
+    return:
+      type: System.Guid
+  overridden: System.Reflection.Module.ModuleVersionId
+- uid: System.Reflection.Emit.ModuleBuilder.MetadataToken
+  id: MetadataToken
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: MetadataToken
+  fullName: System.Reflection.Emit.ModuleBuilder.MetadataToken
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 1027
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Gets a token that identifies the current dynamic module in metadata.
+  syntax:
+    content: public override int MetadataToken { get; }
+    content.vb: Public Overrides ReadOnly Property MetadataToken As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  overridden: System.Reflection.Module.MetadataToken
+- uid: System.Reflection.Emit.ModuleBuilder.IsResource
+  id: IsResource
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: IsResource()
+  fullName: System.Reflection.Emit.ModuleBuilder.IsResource()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 1035
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Gets a value indicating whether the object is a resource.
+  syntax:
+    content: public override bool IsResource()
+    content.vb: Public Overrides Function IsResource As Boolean
+    return:
+      type: System.Boolean
+  overridden: System.Reflection.Module.IsResource
+- uid: System.Reflection.Emit.ModuleBuilder.GetFields(System.Reflection.BindingFlags)
+  id: GetFields(System.Reflection.BindingFlags)
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: GetFields(BindingFlags)
+  fullName: System.Reflection.Emit.ModuleBuilder.GetFields(System.Reflection.BindingFlags)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 1040
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Returns all fields defined in the .sdata region of the portable executable (PE) file that match the specified binding flags.
+  syntax:
+    content: public override FieldInfo[] GetFields(BindingFlags bindingFlags)
+    content.vb: Public Overrides Function GetFields(bindingFlags As BindingFlags) As FieldInfo()
+    parameters:
+    - id: bindingFlags
+      type: System.Reflection.BindingFlags
+      description: A combination of the BindingFlags bit flags used to control the search.
+    return:
+      type: System.Reflection.FieldInfo[]
+  overridden: System.Reflection.Module.GetFields(System.Reflection.BindingFlags)
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *name* parameter is null.
+- uid: System.Reflection.Emit.ModuleBuilder.GetField(System.String,System.Reflection.BindingFlags)
+  id: GetField(System.String,System.Reflection.BindingFlags)
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: GetField(String, BindingFlags)
+  fullName: System.Reflection.Emit.ModuleBuilder.GetField(System.String, System.Reflection.BindingFlags)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 1045
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Returns a module-level field, defined in the .sdata region of the portable executable (PE) file, that has the specified name and binding attributes.
+  syntax:
+    content: public override FieldInfo GetField(string name, BindingFlags bindingAttr)
+    content.vb: Public Overrides Function GetField(name As String, bindingAttr As BindingFlags) As FieldInfo
+    parameters:
+    - id: name
+      type: System.String
+      description: The field name.
+    - id: bindingAttr
+      type: System.Reflection.BindingFlags
+      description: A combination of the BindingFlags bit flags used to control the search.
+    return:
+      type: System.Reflection.FieldInfo
+  overridden: System.Reflection.Module.GetField(System.String,System.Reflection.BindingFlags)
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *name* parameter is null.
+- uid: System.Reflection.Emit.ModuleBuilder.GetMethods(System.Reflection.BindingFlags)
+  id: GetMethods(System.Reflection.BindingFlags)
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: GetMethods(BindingFlags)
+  fullName: System.Reflection.Emit.ModuleBuilder.GetMethods(System.Reflection.BindingFlags)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 1050
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Returns all the methods that have been defined at the module level for the current @'System.Reflection.Emit.ModuleBuilder', and that match the specified binding flags.
+  syntax:
+    content: public override MethodInfo[] GetMethods(BindingFlags bindingFlags)
+    content.vb: Public Overrides Function GetMethods(bindingFlags As BindingFlags) As MethodInfo()
+    parameters:
+    - id: bindingFlags
+      type: System.Reflection.BindingFlags
+      description: A combination of BindingFlags bit flags used to control the search.
+    return:
+      type: System.Reflection.MethodInfo[]
+  overridden: System.Reflection.Module.GetMethods(System.Reflection.BindingFlags)
+- uid: System.Reflection.Emit.ModuleBuilder.GetMethodImpl(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])
+  id: GetMethodImpl(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: GetMethodImpl(String, BindingFlags, Binder, CallingConventions, Type[], ParameterModifier[])
+  name.vb: GetMethodImpl(String, BindingFlags, Binder, CallingConventions, Type(), ParameterModifier())
+  fullName: System.Reflection.Emit.ModuleBuilder.GetMethodImpl(System.String, System.Reflection.BindingFlags, System.Reflection.Binder, System.Reflection.CallingConventions, System.Type[], System.Reflection.ParameterModifier[])
+  fullName.vb: System.Reflection.Emit.ModuleBuilder.GetMethodImpl(System.String, System.Reflection.BindingFlags, System.Reflection.Binder, System.Reflection.CallingConventions, System.Type(), System.Reflection.ParameterModifier())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 1055
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Returns the module-level method that matches the specified criteria.
+  syntax:
+    content: protected override MethodInfo GetMethodImpl(string name, BindingFlags bindingAttr, Binder binder, CallingConventions callConvention, Type[] types, ParameterModifier[] modifiers)
+    content.vb: Protected Overrides Function GetMethodImpl(name As String, bindingAttr As BindingFlags, binder As Binder, callConvention As CallingConventions, types As Type(), modifiers As ParameterModifier()) As MethodInfo
+    parameters:
+    - id: name
+      type: System.String
+      description: The method name.
+    - id: bindingAttr
+      type: System.Reflection.BindingFlags
+      description: A combination of BindingFlags bit flags used to control the search.
+    - id: binder
+      type: System.Reflection.Binder
+      description: An object that implements Binder, containing properties related to this method.
+    - id: callConvention
+      type: System.Reflection.CallingConventions
+      description: The calling convention for the method.
+    - id: types
+      type: System.Type[]
+      description: The parameter types of the method.
+    - id: modifiers
+      type: System.Reflection.ParameterModifier[]
+      description: An array of parameter modifiers used to make binding work with parameter signatures in which the types have been modified.
+    return:
+      type: System.Reflection.MethodInfo
+  overridden: System.Reflection.Module.GetMethodImpl(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*name* is null, *types* is null, or an element of *types* is null.'
+- uid: System.Reflection.Emit.ModuleBuilder.ScopeName
+  id: ScopeName
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: ScopeName
+  fullName: System.Reflection.Emit.ModuleBuilder.ScopeName
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 1062
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Gets a string that represents the name of the dynamic module.
+  syntax:
+    content: public override string ScopeName { get; }
+    content.vb: Public Overrides ReadOnly Property ScopeName As String
+    parameters: []
+    return:
+      type: System.String
+  overridden: System.Reflection.Module.ScopeName
+- uid: System.Reflection.Emit.ModuleBuilder.Name
+  id: Name
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: Name
+  fullName: System.Reflection.Emit.ModuleBuilder.Name
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 1070
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: A string that indicates that this is an in-memory module.
+  syntax:
+    content: public override string Name { get; }
+    content.vb: Public Overrides ReadOnly Property Name As String
+    parameters: []
+    return:
+      type: System.String
+  overridden: System.Reflection.Module.Name
+- uid: System.Reflection.Emit.ModuleBuilder.Assembly
+  id: Assembly
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: Assembly
+  fullName: System.Reflection.Emit.ModuleBuilder.Assembly
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 1078
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Gets the dynamic assembly that defined this instance of @'System.Reflection.Emit.ModuleBuilder'.
+  syntax:
+    content: public override Assembly Assembly { get; }
+    content.vb: Public Overrides ReadOnly Property Assembly As Assembly
+    parameters: []
+    return:
+      type: System.Reflection.Assembly
+  overridden: System.Reflection.Module.Assembly
+- uid: System.Reflection.Emit.ModuleBuilder.DefineType(System.String)
+  id: DefineType(System.String)
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: DefineType(String)
+  fullName: System.Reflection.Emit.ModuleBuilder.DefineType(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 1098
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Constructs a TypeBuilder for a private type with the specified name in this module.
+  syntax:
+    content: public TypeBuilder DefineType(string name)
+    content.vb: Public Function DefineType(name As String) As TypeBuilder
+    parameters:
+    - id: name
+      type: System.String
+      description: The full path of the type, including the namespace. *name* cannot contain embedded nulls.
+    return:
+      type: System.Reflection.Emit.TypeBuilder
+  exceptions:
+  - type: System.ArgumentException
+    description: A type with the given name exists in the parent assembly of this module.-or- Nested type attributes are set on a type that is not nested.
+  - type: System.ArgumentNullException
+    description: '*name* is null.'
+- uid: System.Reflection.Emit.ModuleBuilder.DefineType(System.String,System.Reflection.TypeAttributes)
+  id: DefineType(System.String,System.Reflection.TypeAttributes)
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: DefineType(String, TypeAttributes)
+  fullName: System.Reflection.Emit.ModuleBuilder.DefineType(System.String, System.Reflection.TypeAttributes)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 1109
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Constructs a TypeBuilder given the type name and the type attributes.
+  syntax:
+    content: public TypeBuilder DefineType(string name, TypeAttributes attr)
+    content.vb: Public Function DefineType(name As String, attr As TypeAttributes) As TypeBuilder
+    parameters:
+    - id: name
+      type: System.String
+      description: The full path of the type. *name* cannot contain embedded nulls.
+    - id: attr
+      type: System.Reflection.TypeAttributes
+      description: The attributes of the defined type.
+    return:
+      type: System.Reflection.Emit.TypeBuilder
+  exceptions:
+  - type: System.ArgumentException
+    description: A type with the given name exists in the parent assembly of this module.-or- Nested type attributes are set on a type that is not nested.
+  - type: System.ArgumentNullException
+    description: '*name* is null.'
+- uid: System.Reflection.Emit.ModuleBuilder.DefineType(System.String,System.Reflection.TypeAttributes,System.Type)
+  id: DefineType(System.String,System.Reflection.TypeAttributes,System.Type)
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: DefineType(String, TypeAttributes, Type)
+  fullName: System.Reflection.Emit.ModuleBuilder.DefineType(System.String, System.Reflection.TypeAttributes, System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 1120
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Constructs a TypeBuilder given type name, its attributes, and the type that the defined type extends.
+  syntax:
+    content: public TypeBuilder DefineType(string name, TypeAttributes attr, Type parent)
+    content.vb: Public Function DefineType(name As String, attr As TypeAttributes, parent As Type) As TypeBuilder
+    parameters:
+    - id: name
+      type: System.String
+      description: The full path of the type. *name* cannot contain embedded nulls.
+    - id: attr
+      type: System.Reflection.TypeAttributes
+      description: The attribute to be associated with the type.
+    - id: parent
+      type: System.Type
+      description: The type that the defined type extends.
+    return:
+      type: System.Reflection.Emit.TypeBuilder
+  exceptions:
+  - type: System.ArgumentException
+    description: A type with the given name exists in the parent assembly of this module.-or- Nested type attributes are set on a type that is not nested.
+  - type: System.ArgumentNullException
+    description: '*name* is null.'
+- uid: System.Reflection.Emit.ModuleBuilder.DefineType(System.String,System.Reflection.TypeAttributes,System.Type,System.Int32)
+  id: DefineType(System.String,System.Reflection.TypeAttributes,System.Type,System.Int32)
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: DefineType(String, TypeAttributes, Type, Int32)
+  fullName: System.Reflection.Emit.ModuleBuilder.DefineType(System.String, System.Reflection.TypeAttributes, System.Type, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 1135
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Constructs a TypeBuilder given the type name, the attributes, the type that the defined type extends, and the total size of the type.
+  syntax:
+    content: public TypeBuilder DefineType(string name, TypeAttributes attr, Type parent, int typesize)
+    content.vb: Public Function DefineType(name As String, attr As TypeAttributes, parent As Type, typesize As Integer) As TypeBuilder
+    parameters:
+    - id: name
+      type: System.String
+      description: The full path of the type. *name* cannot contain embedded nulls.
+    - id: attr
+      type: System.Reflection.TypeAttributes
+      description: The attributes of the defined type.
+    - id: parent
+      type: System.Type
+      description: The type that the defined type extends.
+    - id: typesize
+      type: System.Int32
+      description: The total size of the type.
+    return:
+      type: System.Reflection.Emit.TypeBuilder
+  exceptions:
+  - type: System.ArgumentException
+    description: A type with the given name exists in the parent assembly of this module.-or- Nested type attributes are set on a type that is not nested.
+  - type: System.ArgumentNullException
+    description: '*name* is null.'
+- uid: System.Reflection.Emit.ModuleBuilder.DefineType(System.String,System.Reflection.TypeAttributes,System.Type,System.Reflection.Emit.PackingSize,System.Int32)
+  id: DefineType(System.String,System.Reflection.TypeAttributes,System.Type,System.Reflection.Emit.PackingSize,System.Int32)
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: DefineType(String, TypeAttributes, Type, PackingSize, Int32)
+  fullName: System.Reflection.Emit.ModuleBuilder.DefineType(System.String, System.Reflection.TypeAttributes, System.Type, System.Reflection.Emit.PackingSize, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 1150
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Constructs a TypeBuilder given the type name, attributes, the type that the defined type extends, the packing size of the defined type, and the total size of the defined type.
+  syntax:
+    content: public TypeBuilder DefineType(string name, TypeAttributes attr, Type parent, PackingSize packingSize, int typesize)
+    content.vb: Public Function DefineType(name As String, attr As TypeAttributes, parent As Type, packingSize As PackingSize, typesize As Integer) As TypeBuilder
+    parameters:
+    - id: name
+      type: System.String
+      description: The full path of the type. *name* cannot contain embedded nulls.
+    - id: attr
+      type: System.Reflection.TypeAttributes
+      description: The attributes of the defined type.
+    - id: parent
+      type: System.Type
+      description: The type that the defined type extends.
+    - id: packingSize
+      type: System.Reflection.Emit.PackingSize
+      description: The packing size of the type.
+    - id: typesize
+      type: System.Int32
+      description: The total size of the type.
+    return:
+      type: System.Reflection.Emit.TypeBuilder
+  exceptions:
+  - type: System.ArgumentException
+    description: A type with the given name exists in the parent assembly of this module.-or- Nested type attributes are set on a type that is not nested.
+  - type: System.ArgumentNullException
+    description: '*name* is null.'
+- uid: System.Reflection.Emit.ModuleBuilder.DefineType(System.String,System.Reflection.TypeAttributes,System.Type,System.Type[])
+  id: DefineType(System.String,System.Reflection.TypeAttributes,System.Type,System.Type[])
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: DefineType(String, TypeAttributes, Type, Type[])
+  name.vb: DefineType(String, TypeAttributes, Type, Type())
+  fullName: System.Reflection.Emit.ModuleBuilder.DefineType(System.String, System.Reflection.TypeAttributes, System.Type, System.Type[])
+  fullName.vb: System.Reflection.Emit.ModuleBuilder.DefineType(System.String, System.Reflection.TypeAttributes, System.Type, System.Type())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 1164
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Constructs a TypeBuilder given the type name, attributes, the type that the defined type extends, and the interfaces that the defined type implements.
+  syntax:
+    content: public TypeBuilder DefineType(string name, TypeAttributes attr, Type parent, Type[] interfaces)
+    content.vb: Public Function DefineType(name As String, attr As TypeAttributes, parent As Type, interfaces As Type()) As TypeBuilder
+    parameters:
+    - id: name
+      type: System.String
+      description: The full path of the type. *name* cannot contain embedded nulls.
+    - id: attr
+      type: System.Reflection.TypeAttributes
+      description: The attributes to be associated with the type.
+    - id: parent
+      type: System.Type
+      description: The type that the defined type extends.
+    - id: interfaces
+      type: System.Type[]
+      description: The list of interfaces that the type implements.
+    return:
+      type: System.Reflection.Emit.TypeBuilder
+  exceptions:
+  - type: System.ArgumentException
+    description: A type with the given name exists in the parent assembly of this module.-or- Nested type attributes are set on a type that is not nested.
+  - type: System.ArgumentNullException
+    description: '*name* is null.'
+- uid: System.Reflection.Emit.ModuleBuilder.DefineType(System.String,System.Reflection.TypeAttributes,System.Type,System.Reflection.Emit.PackingSize)
+  id: DefineType(System.String,System.Reflection.TypeAttributes,System.Type,System.Reflection.Emit.PackingSize)
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: DefineType(String, TypeAttributes, Type, PackingSize)
+  fullName: System.Reflection.Emit.ModuleBuilder.DefineType(System.String, System.Reflection.TypeAttributes, System.Type, System.Reflection.Emit.PackingSize)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 1185
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Constructs a TypeBuilder given the type name, the attributes, the type that the defined type extends, and the packing size of the type.
+  syntax:
+    content: public TypeBuilder DefineType(string name, TypeAttributes attr, Type parent, PackingSize packsize)
+    content.vb: Public Function DefineType(name As String, attr As TypeAttributes, parent As Type, packsize As PackingSize) As TypeBuilder
+    parameters:
+    - id: name
+      type: System.String
+      description: The full path of the type. *name* cannot contain embedded nulls.
+    - id: attr
+      type: System.Reflection.TypeAttributes
+      description: The attributes of the defined type.
+    - id: parent
+      type: System.Type
+      description: The type that the defined type extends.
+    - id: packsize
+      type: System.Reflection.Emit.PackingSize
+      description: The packing size of the type.
+    return:
+      type: System.Reflection.Emit.TypeBuilder
+  exceptions:
+  - type: System.ArgumentException
+    description: A type with the given name exists in the parent assembly of this module.-or- Nested type attributes are set on a type that is not nested.
+  - type: System.ArgumentNullException
+    description: '*name* is null.'
+- uid: System.Reflection.Emit.ModuleBuilder.DefineEnum(System.String,System.Reflection.TypeAttributes,System.Type)
+  id: DefineEnum(System.String,System.Reflection.TypeAttributes,System.Type)
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: DefineEnum(String, TypeAttributes, Type)
+  fullName: System.Reflection.Emit.ModuleBuilder.DefineEnum(System.String, System.Reflection.TypeAttributes, System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 1213
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Defines an enumeration type that is a value type with a single non-static field called *value__* of the specified type.
+  syntax:
+    content: public EnumBuilder DefineEnum(string name, TypeAttributes visibility, Type underlyingType)
+    content.vb: Public Function DefineEnum(name As String, visibility As TypeAttributes, underlyingType As Type) As EnumBuilder
+    parameters:
+    - id: name
+      type: System.String
+      description: The full path of the enumeration type. *name* cannot contain embedded nulls.
+    - id: visibility
+      type: System.Reflection.TypeAttributes
+      description: The type attributes for the enumeration. The attributes are any bits defined by @'System.Reflection.TypeAttributes.VisibilityMask'.
+    - id: underlyingType
+      type: System.Type
+      description: The underlying type for the enumeration. This must be a built-in integer type.
+    return:
+      type: System.Reflection.Emit.EnumBuilder
+  exceptions:
+  - type: System.ArgumentException
+    description: Attributes other than visibility attributes are provided.-or- An enumeration with the given name exists in the parent assembly of this module.-or- The visibility attributes do not match the scope of the enumeration. For example, @'System.Reflection.TypeAttributes.NestedPublic' is specified for *visibility*, but the enumeration is not a nested type.
+  - type: System.ArgumentNullException
+    description: '*name* is null.'
+- uid: System.Reflection.Emit.ModuleBuilder.DefineManifestResource(System.String,System.IO.Stream,System.Reflection.ResourceAttributes)
+  id: DefineManifestResource(System.String,System.IO.Stream,System.Reflection.ResourceAttributes)
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: DefineManifestResource(String, Stream, ResourceAttributes)
+  fullName: System.Reflection.Emit.ModuleBuilder.DefineManifestResource(System.String, System.IO.Stream, System.Reflection.ResourceAttributes)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 1300
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Defines a binary large object (BLOB) that represents a manifest resource to be embedded in the dynamic assembly.
+  syntax:
+    content: public void DefineManifestResource(string name, Stream stream, ResourceAttributes attribute)
+    content.vb: Public Sub DefineManifestResource(name As String, stream As Stream, attribute As ResourceAttributes)
+    parameters:
+    - id: name
+      type: System.String
+      description: The case-sensitive name for the resource.
+    - id: stream
+      type: System.IO.Stream
+      description: A stream that contains the bytes for the resource.
+    - id: attribute
+      type: System.Reflection.ResourceAttributes
+      description: An enumeration value that specifies whether the resource is public or private.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*name* is null.-or-*stream* is null.'
+  - type: System.ArgumentException
+    description: '*name* is a zero-length string.'
+  - type: System.InvalidOperationException
+    description: The dynamic assembly that contains the current module is transient; that is, no file name was specified when @'System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule(System.String,System.String)' was called.
+- uid: System.Reflection.Emit.ModuleBuilder.DefineUnmanagedResource(System.Byte[])
+  id: DefineUnmanagedResource(System.Byte[])
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: DefineUnmanagedResource(Byte[])
+  name.vb: DefineUnmanagedResource(Byte())
+  fullName: System.Reflection.Emit.ModuleBuilder.DefineUnmanagedResource(System.Byte[])
+  fullName.vb: System.Reflection.Emit.ModuleBuilder.DefineUnmanagedResource(System.Byte())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 1351
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Defines an unmanaged embedded resource given an opaque binary large object (BLOB) of bytes.
+  syntax:
+    content: public void DefineUnmanagedResource(byte[] resource)
+    content.vb: Public Sub DefineUnmanagedResource(resource As Byte())
+    parameters:
+    - id: resource
+      type: System.Byte[]
+      description: An opaque BLOB that represents an unmanaged resource
+  exceptions:
+  - type: System.ArgumentException
+    description: An unmanaged resource has already been defined in the module's assembly.
+  - type: System.ArgumentNullException
+    description: '*resource* is null.'
+- uid: System.Reflection.Emit.ModuleBuilder.DefineUnmanagedResource(System.String)
+  id: DefineUnmanagedResource(System.String)
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: DefineUnmanagedResource(String)
+  fullName: System.Reflection.Emit.ModuleBuilder.DefineUnmanagedResource(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 1375
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Defines an unmanaged resource given the name of Win32 resource file.
+  syntax:
+    content: public void DefineUnmanagedResource(string resourceFileName)
+    content.vb: Public Sub DefineUnmanagedResource(resourceFileName As String)
+    parameters:
+    - id: resourceFileName
+      type: System.String
+      description: The name of the unmanaged resource file.
+  exceptions:
+  - type: System.ArgumentException
+    description: An unmanaged resource has already been defined in the module's assembly.-or- *resourceFileName* is the empty string ("").
+  - type: System.ArgumentNullException
+    description: '*resourceFileName* is null.'
+  - type: System.IO.FileNotFoundException
+    description: '*resourceFileName* is not found. -or- *resourceFileName* is a directory.'
+- uid: System.Reflection.Emit.ModuleBuilder.DefineGlobalMethod(System.String,System.Reflection.MethodAttributes,System.Type,System.Type[])
+  id: DefineGlobalMethod(System.String,System.Reflection.MethodAttributes,System.Type,System.Type[])
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: DefineGlobalMethod(String, MethodAttributes, Type, Type[])
+  name.vb: DefineGlobalMethod(String, MethodAttributes, Type, Type())
+  fullName: System.Reflection.Emit.ModuleBuilder.DefineGlobalMethod(System.String, System.Reflection.MethodAttributes, System.Type, System.Type[])
+  fullName.vb: System.Reflection.Emit.ModuleBuilder.DefineGlobalMethod(System.String, System.Reflection.MethodAttributes, System.Type, System.Type())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 1420
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Defines a global method with the specified name, attributes, return type, and parameter types.
+  syntax:
+    content: public MethodBuilder DefineGlobalMethod(string name, MethodAttributes attributes, Type returnType, Type[] parameterTypes)
+    content.vb: Public Function DefineGlobalMethod(name As String, attributes As MethodAttributes, returnType As Type, parameterTypes As Type()) As MethodBuilder
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the method. *name* cannot contain embedded nulls.
+    - id: attributes
+      type: System.Reflection.MethodAttributes
+      description: The attributes of the method. *attributes* must include @'System.Reflection.MethodAttributes.Static'.
+    - id: returnType
+      type: System.Type
+      description: The return type of the method.
+    - id: parameterTypes
+      type: System.Type[]
+      description: The types of the method's parameters.
+    return:
+      type: System.Reflection.Emit.MethodBuilder
+  exceptions:
+  - type: System.ArgumentException
+    description: The method is not static. That is, *attributes* does not include @'System.Reflection.MethodAttributes.Static'.-or- The length of *name* is zero -or-An element in the @'System.Type' array is null.
+  - type: System.ArgumentNullException
+    description: '*name* is null.'
+  - type: System.InvalidOperationException
+    description: '@''System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions'' has been previously called.'
+- uid: System.Reflection.Emit.ModuleBuilder.DefineGlobalMethod(System.String,System.Reflection.MethodAttributes,System.Reflection.CallingConventions,System.Type,System.Type[])
+  id: DefineGlobalMethod(System.String,System.Reflection.MethodAttributes,System.Reflection.CallingConventions,System.Type,System.Type[])
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: DefineGlobalMethod(String, MethodAttributes, CallingConventions, Type, Type[])
+  name.vb: DefineGlobalMethod(String, MethodAttributes, CallingConventions, Type, Type())
+  fullName: System.Reflection.Emit.ModuleBuilder.DefineGlobalMethod(System.String, System.Reflection.MethodAttributes, System.Reflection.CallingConventions, System.Type, System.Type[])
+  fullName.vb: System.Reflection.Emit.ModuleBuilder.DefineGlobalMethod(System.String, System.Reflection.MethodAttributes, System.Reflection.CallingConventions, System.Type, System.Type())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 1427
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Defines a global method with the specified name, attributes, calling convention, return type, and parameter types.
+  syntax:
+    content: public MethodBuilder DefineGlobalMethod(string name, MethodAttributes attributes, CallingConventions callingConvention, Type returnType, Type[] parameterTypes)
+    content.vb: Public Function DefineGlobalMethod(name As String, attributes As MethodAttributes, callingConvention As CallingConventions, returnType As Type, parameterTypes As Type()) As MethodBuilder
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the method. *name* cannot contain embedded nulls.
+    - id: attributes
+      type: System.Reflection.MethodAttributes
+      description: The attributes of the method. *attributes* must include @'System.Reflection.MethodAttributes.Static'.
+    - id: callingConvention
+      type: System.Reflection.CallingConventions
+      description: The calling convention for the method.
+    - id: returnType
+      type: System.Type
+      description: The return type of the method.
+    - id: parameterTypes
+      type: System.Type[]
+      description: The types of the method's parameters.
+    return:
+      type: System.Reflection.Emit.MethodBuilder
+  exceptions:
+  - type: System.ArgumentException
+    description: The method is not static. That is, *attributes* does not include @'System.Reflection.MethodAttributes.Static'.-or-An element in the @'System.Type' array is null.
+  - type: System.ArgumentNullException
+    description: '*name* is null.'
+  - type: System.InvalidOperationException
+    description: '@''System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions'' has been previously called.'
+- uid: System.Reflection.Emit.ModuleBuilder.DefineGlobalMethod(System.String,System.Reflection.MethodAttributes,System.Reflection.CallingConventions,System.Type,System.Type[],System.Type[],System.Type[],System.Type[][],System.Type[][])
+  id: DefineGlobalMethod(System.String,System.Reflection.MethodAttributes,System.Reflection.CallingConventions,System.Type,System.Type[],System.Type[],System.Type[],System.Type[][],System.Type[][])
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: DefineGlobalMethod(String, MethodAttributes, CallingConventions, Type, Type[], Type[], Type[], Type[][], Type[][])
+  name.vb: DefineGlobalMethod(String, MethodAttributes, CallingConventions, Type, Type(), Type(), Type(), Type()(), Type()())
+  fullName: System.Reflection.Emit.ModuleBuilder.DefineGlobalMethod(System.String, System.Reflection.MethodAttributes, System.Reflection.CallingConventions, System.Type, System.Type[], System.Type[], System.Type[], System.Type[][], System.Type[][])
+  fullName.vb: System.Reflection.Emit.ModuleBuilder.DefineGlobalMethod(System.String, System.Reflection.MethodAttributes, System.Reflection.CallingConventions, System.Type, System.Type(), System.Type(), System.Type(), System.Type()(), System.Type()())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 1435
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Defines a global method with the specified name, attributes, calling convention, return type, custom modifiers for the return type, parameter types, and custom modifiers for the parameter types.
+  syntax:
+    content: public MethodBuilder DefineGlobalMethod(string name, MethodAttributes attributes, CallingConventions callingConvention, Type returnType, Type[] requiredReturnTypeCustomModifiers, Type[] optionalReturnTypeCustomModifiers, Type[] parameterTypes, Type[][] requiredParameterTypeCustomModifiers, Type[][] optionalParameterTypeCustomModifiers)
+    content.vb: Public Function DefineGlobalMethod(name As String, attributes As MethodAttributes, callingConvention As CallingConventions, returnType As Type, requiredReturnTypeCustomModifiers As Type(), optionalReturnTypeCustomModifiers As Type(), parameterTypes As Type(), requiredParameterTypeCustomModifiers As Type()(), optionalParameterTypeCustomModifiers As Type()()) As MethodBuilder
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the method. *name* cannot contain embedded null characters.
+    - id: attributes
+      type: System.Reflection.MethodAttributes
+      description: The attributes of the method. *attributes* must include @'System.Reflection.MethodAttributes.Static'.
+    - id: callingConvention
+      type: System.Reflection.CallingConventions
+      description: The calling convention for the method.
+    - id: returnType
+      type: System.Type
+      description: The return type of the method.
+    - id: requiredReturnTypeCustomModifiers
+      type: System.Type[]
+      description: An array of types representing the required custom modifiers for the return type, such as @'System.Runtime.CompilerServices.IsConst' or @'System.Runtime.CompilerServices.IsBoxed'. If the return type has no required custom modifiers, specify null.
+    - id: optionalReturnTypeCustomModifiers
+      type: System.Type[]
+      description: An array of types representing the optional custom modifiers for the return type, such as @'System.Runtime.CompilerServices.IsConst' or @'System.Runtime.CompilerServices.IsBoxed'. If the return type has no optional custom modifiers, specify null.
+    - id: parameterTypes
+      type: System.Type[]
+      description: The types of the method's parameters.
+    - id: requiredParameterTypeCustomModifiers
+      type: System.Type[][]
+      description: An array of arrays of types. Each array of types represents the required custom modifiers for the corresponding parameter of the global method. If a particular argument has no required custom modifiers, specify null instead of an array of types. If the global method has no arguments, or if none of the arguments have required custom modifiers, specify null instead of an array of arrays.
+    - id: optionalParameterTypeCustomModifiers
+      type: System.Type[][]
+      description: An array of arrays of types. Each array of types represents the optional custom modifiers for the corresponding parameter. If a particular argument has no optional custom modifiers, specify null instead of an array of types. If the global method has no arguments, or if none of the arguments have optional custom modifiers, specify null instead of an array of arrays.
+    return:
+      type: System.Reflection.Emit.MethodBuilder
+  exceptions:
+  - type: System.ArgumentException
+    description: The method is not static. That is, *attributes* does not include @'System.Reflection.MethodAttributes.Static'.-or-An element in the @'System.Type' array is null.
+  - type: System.ArgumentNullException
+    description: '*name* is null.'
+  - type: System.InvalidOperationException
+    description: The @'System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions' method has been previously called.
+- uid: System.Reflection.Emit.ModuleBuilder.DefinePInvokeMethod(System.String,System.String,System.Reflection.MethodAttributes,System.Reflection.CallingConventions,System.Type,System.Type[],System.Runtime.InteropServices.CallingConvention,System.Runtime.InteropServices.CharSet)
+  id: DefinePInvokeMethod(System.String,System.String,System.Reflection.MethodAttributes,System.Reflection.CallingConventions,System.Type,System.Type[],System.Runtime.InteropServices.CallingConvention,System.Runtime.InteropServices.CharSet)
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: DefinePInvokeMethod(String, String, MethodAttributes, CallingConventions, Type, Type[], CallingConvention, CharSet)
+  name.vb: DefinePInvokeMethod(String, String, MethodAttributes, CallingConventions, Type, Type(), CallingConvention, CharSet)
+  fullName: System.Reflection.Emit.ModuleBuilder.DefinePInvokeMethod(System.String, System.String, System.Reflection.MethodAttributes, System.Reflection.CallingConventions, System.Type, System.Type[], System.Runtime.InteropServices.CallingConvention, System.Runtime.InteropServices.CharSet)
+  fullName.vb: System.Reflection.Emit.ModuleBuilder.DefinePInvokeMethod(System.String, System.String, System.Reflection.MethodAttributes, System.Reflection.CallingConventions, System.Type, System.Type(), System.Runtime.InteropServices.CallingConvention, System.Runtime.InteropServices.CharSet)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 1478
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Defines a PInvoke method with the specified name, the name of the DLL in which the method is defined, the attributes of the method, the calling convention of the method, the return type of the method, the types of the parameters of the method, and the PInvoke flags.
+  syntax:
+    content: public MethodBuilder DefinePInvokeMethod(string name, string dllName, MethodAttributes attributes, CallingConventions callingConvention, Type returnType, Type[] parameterTypes, CallingConvention nativeCallConv, CharSet nativeCharSet)
+    content.vb: Public Function DefinePInvokeMethod(name As String, dllName As String, attributes As MethodAttributes, callingConvention As CallingConventions, returnType As Type, parameterTypes As Type(), nativeCallConv As CallingConvention, nativeCharSet As CharSet) As MethodBuilder
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the PInvoke method. *name* cannot contain embedded nulls.
+    - id: dllName
+      type: System.String
+      description: The name of the DLL in which the PInvoke method is defined.
+    - id: attributes
+      type: System.Reflection.MethodAttributes
+      description: The attributes of the method.
+    - id: callingConvention
+      type: System.Reflection.CallingConventions
+      description: The method's calling convention.
+    - id: returnType
+      type: System.Type
+      description: The method's return type.
+    - id: parameterTypes
+      type: System.Type[]
+      description: The types of the method's parameters.
+    - id: nativeCallConv
+      type: System.Runtime.InteropServices.CallingConvention
+      description: The native calling convention.
+    - id: nativeCharSet
+      type: System.Runtime.InteropServices.CharSet
+      description: The method's native character set.
+    return:
+      type: System.Reflection.Emit.MethodBuilder
+  exceptions:
+  - type: System.ArgumentException
+    description: The method is not static or if the containing type is an interface.-or- The method is abstract.-or- The method was previously defined.
+  - type: System.ArgumentNullException
+    description: '*name* or *dllName* is null.'
+  - type: System.InvalidOperationException
+    description: The containing type has been previously created using @'System.Reflection.Emit.TypeBuilder.CreateType'
+- uid: System.Reflection.Emit.ModuleBuilder.DefinePInvokeMethod(System.String,System.String,System.String,System.Reflection.MethodAttributes,System.Reflection.CallingConventions,System.Type,System.Type[],System.Runtime.InteropServices.CallingConvention,System.Runtime.InteropServices.CharSet)
+  id: DefinePInvokeMethod(System.String,System.String,System.String,System.Reflection.MethodAttributes,System.Reflection.CallingConventions,System.Type,System.Type[],System.Runtime.InteropServices.CallingConvention,System.Runtime.InteropServices.CharSet)
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: DefinePInvokeMethod(String, String, String, MethodAttributes, CallingConventions, Type, Type[], CallingConvention, CharSet)
+  name.vb: DefinePInvokeMethod(String, String, String, MethodAttributes, CallingConventions, Type, Type(), CallingConvention, CharSet)
+  fullName: System.Reflection.Emit.ModuleBuilder.DefinePInvokeMethod(System.String, System.String, System.String, System.Reflection.MethodAttributes, System.Reflection.CallingConventions, System.Type, System.Type[], System.Runtime.InteropServices.CallingConvention, System.Runtime.InteropServices.CharSet)
+  fullName.vb: System.Reflection.Emit.ModuleBuilder.DefinePInvokeMethod(System.String, System.String, System.String, System.Reflection.MethodAttributes, System.Reflection.CallingConventions, System.Type, System.Type(), System.Runtime.InteropServices.CallingConvention, System.Runtime.InteropServices.CharSet)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 1490
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Defines a PInvoke method with the specified name, the name of the DLL in which the method is defined, the attributes of the method, the calling convention of the method, the return type of the method, the types of the parameters of the method, and the PInvoke flags.
+  syntax:
+    content: public MethodBuilder DefinePInvokeMethod(string name, string dllName, string entryName, MethodAttributes attributes, CallingConventions callingConvention, Type returnType, Type[] parameterTypes, CallingConvention nativeCallConv, CharSet nativeCharSet)
+    content.vb: Public Function DefinePInvokeMethod(name As String, dllName As String, entryName As String, attributes As MethodAttributes, callingConvention As CallingConventions, returnType As Type, parameterTypes As Type(), nativeCallConv As CallingConvention, nativeCharSet As CharSet) As MethodBuilder
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the PInvoke method. *name* cannot contain embedded nulls.
+    - id: dllName
+      type: System.String
+      description: The name of the DLL in which the PInvoke method is defined.
+    - id: entryName
+      type: System.String
+      description: The name of the entry point in the DLL.
+    - id: attributes
+      type: System.Reflection.MethodAttributes
+      description: The attributes of the method.
+    - id: callingConvention
+      type: System.Reflection.CallingConventions
+      description: The method's calling convention.
+    - id: returnType
+      type: System.Type
+      description: The method's return type.
+    - id: parameterTypes
+      type: System.Type[]
+      description: The types of the method's parameters.
+    - id: nativeCallConv
+      type: System.Runtime.InteropServices.CallingConvention
+      description: The native calling convention.
+    - id: nativeCharSet
+      type: System.Runtime.InteropServices.CharSet
+      description: The method's native character set.
+    return:
+      type: System.Reflection.Emit.MethodBuilder
+  exceptions:
+  - type: System.ArgumentException
+    description: The method is not static or if the containing type is an interface or if the method is abstract of if the method was previously defined.
+  - type: System.ArgumentNullException
+    description: '*name* or *dllName* is null.'
+  - type: System.InvalidOperationException
+    description: The containing type has been previously created using @'System.Reflection.Emit.TypeBuilder.CreateType'
+- uid: System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions
+  id: CreateGlobalFunctions
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: CreateGlobalFunctions()
+  fullName: System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 1527
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Completes the global function definitions and global data definitions for this dynamic module.
+  syntax:
+    content: public void CreateGlobalFunctions()
+    content.vb: Public Sub CreateGlobalFunctions
+  exceptions:
+  - type: System.InvalidOperationException
+    description: This method was called previously.
+- uid: System.Reflection.Emit.ModuleBuilder.DefineInitializedData(System.String,System.Byte[],System.Reflection.FieldAttributes)
+  id: DefineInitializedData(System.String,System.Byte[],System.Reflection.FieldAttributes)
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: DefineInitializedData(String, Byte[], FieldAttributes)
+  name.vb: DefineInitializedData(String, Byte(), FieldAttributes)
+  fullName: System.Reflection.Emit.ModuleBuilder.DefineInitializedData(System.String, System.Byte[], System.Reflection.FieldAttributes)
+  fullName.vb: System.Reflection.Emit.ModuleBuilder.DefineInitializedData(System.String, System.Byte(), System.Reflection.FieldAttributes)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 1551
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Defines an initialized data field in the .sdata section of the portable executable (PE) file.
+  syntax:
+    content: public FieldBuilder DefineInitializedData(string name, byte[] data, FieldAttributes attributes)
+    content.vb: Public Function DefineInitializedData(name As String, data As Byte(), attributes As FieldAttributes) As FieldBuilder
+    parameters:
+    - id: name
+      type: System.String
+      description: The name used to refer to the data. *name* cannot contain embedded nulls.
+    - id: data
+      type: System.Byte[]
+      description: The binary large object (BLOB) of data.
+    - id: attributes
+      type: System.Reflection.FieldAttributes
+      description: The attributes for the field. The default is Static.
+    return:
+      type: System.Reflection.Emit.FieldBuilder
+  exceptions:
+  - type: System.ArgumentException
+    description: The length of *name* is zero.-or- The size of *data* is less than or equal to zero or greater than or equal to 0x3f0000.
+  - type: System.ArgumentNullException
+    description: '*name* or *data* is null.'
+  - type: System.InvalidOperationException
+    description: '@''System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions'' has been previously called.'
+- uid: System.Reflection.Emit.ModuleBuilder.DefineUninitializedData(System.String,System.Int32,System.Reflection.FieldAttributes)
+  id: DefineUninitializedData(System.String,System.Int32,System.Reflection.FieldAttributes)
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: DefineUninitializedData(String, Int32, FieldAttributes)
+  fullName: System.Reflection.Emit.ModuleBuilder.DefineUninitializedData(System.String, System.Int32, System.Reflection.FieldAttributes)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 1586
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Defines an uninitialized data field in the .sdata section of the portable executable (PE) file.
+  syntax:
+    content: public FieldBuilder DefineUninitializedData(string name, int size, FieldAttributes attributes)
+    content.vb: Public Function DefineUninitializedData(name As String, size As Integer, attributes As FieldAttributes) As FieldBuilder
+    parameters:
+    - id: name
+      type: System.String
+      description: The name used to refer to the data. *name* cannot contain embedded nulls.
+    - id: size
+      type: System.Int32
+      description: The size of the data field.
+    - id: attributes
+      type: System.Reflection.FieldAttributes
+      description: The attributes for the field.
+    return:
+      type: System.Reflection.Emit.FieldBuilder
+  exceptions:
+  - type: System.ArgumentException
+    description: The length of *name* is zero.-or- *size* is less than or equal to zero, or greater than or equal to 0x003f0000.
+  - type: System.ArgumentNullException
+    description: '*name* is null.'
+  - type: System.InvalidOperationException
+    description: '@''System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions'' has been previously called.'
+- uid: System.Reflection.Emit.ModuleBuilder.GetTypeToken(System.Type)
+  id: GetTypeToken(System.Type)
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: GetTypeToken(Type)
+  fullName: System.Reflection.Emit.ModuleBuilder.GetTypeToken(System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 1640
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Returns the token used to identify the specified type within this module.
+  syntax:
+    content: public TypeToken GetTypeToken(Type type)
+    content.vb: Public Function GetTypeToken(type As Type) As TypeToken
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type object that represents the class type.
+    return:
+      type: System.Reflection.Emit.TypeToken
+  exceptions:
+  - type: System.ArgumentException
+    description: '*type* is a ByRef type.'
+  - type: System.ArgumentNullException
+    description: '*type* is null.'
+  - type: System.InvalidOperationException
+    description: This is a non-transient module that references a transient module.
+- uid: System.Reflection.Emit.ModuleBuilder.GetTypeToken(System.String)
+  id: GetTypeToken(System.String)
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: GetTypeToken(String)
+  fullName: System.Reflection.Emit.ModuleBuilder.GetTypeToken(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 1744
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Returns the token used to identify the type with the specified name.
+  syntax:
+    content: public TypeToken GetTypeToken(string name)
+    content.vb: Public Function GetTypeToken(name As String) As TypeToken
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the class, including the namespace.
+    return:
+      type: System.Reflection.Emit.TypeToken
+  exceptions:
+  - type: System.ArgumentException
+    description: '*name* is the empty string ("").-or-*name* represents a ByRef type.'
+  - type: System.ArgumentNullException
+    description: '*name* is null. -or-The type specified by *name* could not be found.'
+  - type: System.InvalidOperationException
+    description: This is a non-transient module that references a transient module.
+- uid: System.Reflection.Emit.ModuleBuilder.GetMethodToken(System.Reflection.MethodInfo)
+  id: GetMethodToken(System.Reflection.MethodInfo)
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: GetMethodToken(MethodInfo)
+  fullName: System.Reflection.Emit.ModuleBuilder.GetMethodToken(System.Reflection.MethodInfo)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 1755
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Returns the token used to identify the specified method within this module.
+  syntax:
+    content: public MethodToken GetMethodToken(MethodInfo method)
+    content.vb: Public Function GetMethodToken(method As MethodInfo) As MethodToken
+    parameters:
+    - id: method
+      type: System.Reflection.MethodInfo
+      description: The method to get a token for.
+    return:
+      type: System.Reflection.Emit.MethodToken
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*method* is null.'
+  - type: System.InvalidOperationException
+    description: The declaring type for the method is not in this module.
+- uid: System.Reflection.Emit.ModuleBuilder.GetConstructorToken(System.Reflection.ConstructorInfo,System.Collections.Generic.IEnumerable{System.Type})
+  id: GetConstructorToken(System.Reflection.ConstructorInfo,System.Collections.Generic.IEnumerable{System.Type})
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: GetConstructorToken(ConstructorInfo, IEnumerable<Type>)
+  name.vb: GetConstructorToken(ConstructorInfo, IEnumerable(Of Type))
+  fullName: System.Reflection.Emit.ModuleBuilder.GetConstructorToken(System.Reflection.ConstructorInfo, System.Collections.Generic.IEnumerable<System.Type>)
+  fullName.vb: System.Reflection.Emit.ModuleBuilder.GetConstructorToken(System.Reflection.ConstructorInfo, System.Collections.Generic.IEnumerable(Of System.Type))
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 1887
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Returns the token used to identify the constructor that has the specified attributes and parameter types within this module.
+  syntax:
+    content: public MethodToken GetConstructorToken(ConstructorInfo constructor, IEnumerable<Type> optionalParameterTypes)
+    content.vb: Public Function GetConstructorToken(constructor As ConstructorInfo, optionalParameterTypes As IEnumerable(Of Type)) As MethodToken
+    parameters:
+    - id: constructor
+      type: System.Reflection.ConstructorInfo
+      description: The constructor to get a token for.
+    - id: optionalParameterTypes
+      type: System.Collections.Generic.IEnumerable{System.Type}
+      description: A collection of the types of the optional parameters to the constructor.
+    return:
+      type: System.Reflection.Emit.MethodToken
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*constructor* is null.'
+- uid: System.Reflection.Emit.ModuleBuilder.GetMethodToken(System.Reflection.MethodInfo,System.Collections.Generic.IEnumerable{System.Type})
+  id: GetMethodToken(System.Reflection.MethodInfo,System.Collections.Generic.IEnumerable{System.Type})
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: GetMethodToken(MethodInfo, IEnumerable<Type>)
+  name.vb: GetMethodToken(MethodInfo, IEnumerable(Of Type))
+  fullName: System.Reflection.Emit.ModuleBuilder.GetMethodToken(System.Reflection.MethodInfo, System.Collections.Generic.IEnumerable<System.Type>)
+  fullName.vb: System.Reflection.Emit.ModuleBuilder.GetMethodToken(System.Reflection.MethodInfo, System.Collections.Generic.IEnumerable(Of System.Type))
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 1902
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Returns the token used to identify the method that has the specified attributes and parameter types within this module.
+  syntax:
+    content: public MethodToken GetMethodToken(MethodInfo method, IEnumerable<Type> optionalParameterTypes)
+    content.vb: Public Function GetMethodToken(method As MethodInfo, optionalParameterTypes As IEnumerable(Of Type)) As MethodToken
+    parameters:
+    - id: method
+      type: System.Reflection.MethodInfo
+      description: The method to get a token for.
+    - id: optionalParameterTypes
+      type: System.Collections.Generic.IEnumerable{System.Type}
+      description: A collection of the types of the optional parameters to the method.
+    return:
+      type: System.Reflection.Emit.MethodToken
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*method* is null.'
+  - type: System.InvalidOperationException
+    description: The declaring type for the method is not in this module.
+- uid: System.Reflection.Emit.ModuleBuilder.GetArrayMethodToken(System.Type,System.String,System.Reflection.CallingConventions,System.Type,System.Type[])
+  id: GetArrayMethodToken(System.Type,System.String,System.Reflection.CallingConventions,System.Type,System.Type[])
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: GetArrayMethodToken(Type, String, CallingConventions, Type, Type[])
+  name.vb: GetArrayMethodToken(Type, String, CallingConventions, Type, Type())
+  fullName: System.Reflection.Emit.ModuleBuilder.GetArrayMethodToken(System.Type, System.String, System.Reflection.CallingConventions, System.Type, System.Type[])
+  fullName.vb: System.Reflection.Emit.ModuleBuilder.GetArrayMethodToken(System.Type, System.String, System.Reflection.CallingConventions, System.Type, System.Type())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 1991
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Returns the token for the named method on an array class.
+  syntax:
+    content: public MethodToken GetArrayMethodToken(Type arrayClass, string methodName, CallingConventions callingConvention, Type returnType, Type[] parameterTypes)
+    content.vb: Public Function GetArrayMethodToken(arrayClass As Type, methodName As String, callingConvention As CallingConventions, returnType As Type, parameterTypes As Type()) As MethodToken
+    parameters:
+    - id: arrayClass
+      type: System.Type
+      description: The object for the array.
+    - id: methodName
+      type: System.String
+      description: A string that contains the name of the method.
+    - id: callingConvention
+      type: System.Reflection.CallingConventions
+      description: The calling convention for the method.
+    - id: returnType
+      type: System.Type
+      description: The return type of the method.
+    - id: parameterTypes
+      type: System.Type[]
+      description: The types of the parameters of the method.
+    return:
+      type: System.Reflection.Emit.MethodToken
+  exceptions:
+  - type: System.ArgumentException
+    description: '*arrayClass* is not an array.-or- The length of *methodName* is zero.'
+  - type: System.ArgumentNullException
+    description: '*arrayClass* or *methodName* is null.'
+- uid: System.Reflection.Emit.ModuleBuilder.GetArrayMethod(System.Type,System.String,System.Reflection.CallingConventions,System.Type,System.Type[])
+  id: GetArrayMethod(System.Type,System.String,System.Reflection.CallingConventions,System.Type,System.Type[])
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: GetArrayMethod(Type, String, CallingConventions, Type, Type[])
+  name.vb: GetArrayMethod(Type, String, CallingConventions, Type, Type())
+  fullName: System.Reflection.Emit.ModuleBuilder.GetArrayMethod(System.Type, System.String, System.Reflection.CallingConventions, System.Type, System.Type[])
+  fullName.vb: System.Reflection.Emit.ModuleBuilder.GetArrayMethod(System.Type, System.String, System.Reflection.CallingConventions, System.Type, System.Type())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 2037
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Returns the named method on an array class.
+  syntax:
+    content: public MethodInfo GetArrayMethod(Type arrayClass, string methodName, CallingConventions callingConvention, Type returnType, Type[] parameterTypes)
+    content.vb: Public Function GetArrayMethod(arrayClass As Type, methodName As String, callingConvention As CallingConventions, returnType As Type, parameterTypes As Type()) As MethodInfo
+    parameters:
+    - id: arrayClass
+      type: System.Type
+      description: An array class.
+    - id: methodName
+      type: System.String
+      description: The name of a method on the array class.
+    - id: callingConvention
+      type: System.Reflection.CallingConventions
+      description: The method's calling convention.
+    - id: returnType
+      type: System.Type
+      description: The return type of the method.
+    - id: parameterTypes
+      type: System.Type[]
+      description: The types of the method's parameters.
+    return:
+      type: System.Reflection.MethodInfo
+  exceptions:
+  - type: System.ArgumentException
+    description: '*arrayClass* is not an array.'
+  - type: System.ArgumentNullException
+    description: '*arrayClass* or *methodName* is null.'
+- uid: System.Reflection.Emit.ModuleBuilder.GetConstructorToken(System.Reflection.ConstructorInfo)
+  id: GetConstructorToken(System.Reflection.ConstructorInfo)
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: GetConstructorToken(ConstructorInfo)
+  fullName: System.Reflection.Emit.ModuleBuilder.GetConstructorToken(System.Reflection.ConstructorInfo)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 2054
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Returns the token used to identify the specified constructor within this module.
+  syntax:
+    content: public MethodToken GetConstructorToken(ConstructorInfo con)
+    content.vb: Public Function GetConstructorToken(con As ConstructorInfo) As MethodToken
+    parameters:
+    - id: con
+      type: System.Reflection.ConstructorInfo
+      description: The constructor to get a token for.
+    return:
+      type: System.Reflection.Emit.MethodToken
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*con* is null.'
+- uid: System.Reflection.Emit.ModuleBuilder.GetFieldToken(System.Reflection.FieldInfo)
+  id: GetFieldToken(System.Reflection.FieldInfo)
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: GetFieldToken(FieldInfo)
+  fullName: System.Reflection.Emit.ModuleBuilder.GetFieldToken(System.Reflection.FieldInfo)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 2062
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Returns the token used to identify the specified field within this module.
+  syntax:
+    content: public FieldToken GetFieldToken(FieldInfo field)
+    content.vb: Public Function GetFieldToken(field As FieldInfo) As FieldToken
+    parameters:
+    - id: field
+      type: System.Reflection.FieldInfo
+      description: The field to get a token for.
+    return:
+      type: System.Reflection.Emit.FieldToken
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*field* is null.'
+- uid: System.Reflection.Emit.ModuleBuilder.GetStringConstant(System.String)
+  id: GetStringConstant(System.String)
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: GetStringConstant(String)
+  fullName: System.Reflection.Emit.ModuleBuilder.GetStringConstant(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 2160
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: "Returns the token of the given string in the module’s constant pool."
+  syntax:
+    content: public StringToken GetStringConstant(string str)
+    content.vb: Public Function GetStringConstant(str As String) As StringToken
+    parameters:
+    - id: str
+      type: System.String
+      description: The string to add to the module's constant pool.
+    return:
+      type: System.Reflection.Emit.StringToken
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*str* is null.'
+- uid: System.Reflection.Emit.ModuleBuilder.GetSignatureToken(System.Reflection.Emit.SignatureHelper)
+  id: GetSignatureToken(System.Reflection.Emit.SignatureHelper)
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: GetSignatureToken(SignatureHelper)
+  fullName: System.Reflection.Emit.ModuleBuilder.GetSignatureToken(System.Reflection.Emit.SignatureHelper)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 2174
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Defines a token for the signature that is defined by the specified @'System.Reflection.Emit.SignatureHelper'.
+  syntax:
+    content: public SignatureToken GetSignatureToken(SignatureHelper sigHelper)
+    content.vb: Public Function GetSignatureToken(sigHelper As SignatureHelper) As SignatureToken
+    parameters:
+    - id: sigHelper
+      type: System.Reflection.Emit.SignatureHelper
+      description: The signature.
+    return:
+      type: System.Reflection.Emit.SignatureToken
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*sigHelper* is null.'
+- uid: System.Reflection.Emit.ModuleBuilder.GetSignatureToken(System.Byte[],System.Int32)
+  id: GetSignatureToken(System.Byte[],System.Int32)
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: GetSignatureToken(Byte[], Int32)
+  name.vb: GetSignatureToken(Byte(), Int32)
+  fullName: System.Reflection.Emit.ModuleBuilder.GetSignatureToken(System.Byte[], System.Int32)
+  fullName.vb: System.Reflection.Emit.ModuleBuilder.GetSignatureToken(System.Byte(), System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 2193
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Defines a token for the signature that has the specified character array and signature length.
+  syntax:
+    content: public SignatureToken GetSignatureToken(byte[] sigBytes, int sigLength)
+    content.vb: Public Function GetSignatureToken(sigBytes As Byte(), sigLength As Integer) As SignatureToken
+    parameters:
+    - id: sigBytes
+      type: System.Byte[]
+      description: The signature binary large object (BLOB).
+    - id: sigLength
+      type: System.Int32
+      description: The length of the signature BLOB.
+    return:
+      type: System.Reflection.Emit.SignatureToken
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*sigBytes* is null.'
+- uid: System.Reflection.Emit.ModuleBuilder.SetCustomAttribute(System.Reflection.ConstructorInfo,System.Byte[])
+  id: SetCustomAttribute(System.Reflection.ConstructorInfo,System.Byte[])
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: SetCustomAttribute(ConstructorInfo, Byte[])
+  name.vb: SetCustomAttribute(ConstructorInfo, Byte())
+  fullName: System.Reflection.Emit.ModuleBuilder.SetCustomAttribute(System.Reflection.ConstructorInfo, System.Byte[])
+  fullName.vb: System.Reflection.Emit.ModuleBuilder.SetCustomAttribute(System.Reflection.ConstructorInfo, System.Byte())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 2211
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Applies a custom attribute to this module by using a specified binary large object (BLOB) that represents the attribute.
+  syntax:
+    content: public void SetCustomAttribute(ConstructorInfo con, byte[] binaryAttribute)
+    content.vb: Public Sub SetCustomAttribute(con As ConstructorInfo, binaryAttribute As Byte())
+    parameters:
+    - id: con
+      type: System.Reflection.ConstructorInfo
+      description: The constructor for the custom attribute.
+    - id: binaryAttribute
+      type: System.Byte[]
+      description: A byte BLOB representing the attribute.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*con* or *binaryAttribute* is null.'
+- uid: System.Reflection.Emit.ModuleBuilder.SetCustomAttribute(System.Reflection.Emit.CustomAttributeBuilder)
+  id: SetCustomAttribute(System.Reflection.Emit.CustomAttributeBuilder)
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: SetCustomAttribute(CustomAttributeBuilder)
+  fullName: System.Reflection.Emit.ModuleBuilder.SetCustomAttribute(System.Reflection.Emit.CustomAttributeBuilder)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 2232
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Applies a custom attribute to this module by using a custom attribute builder.
+  syntax:
+    content: public void SetCustomAttribute(CustomAttributeBuilder customBuilder)
+    content.vb: Public Sub SetCustomAttribute(customBuilder As CustomAttributeBuilder)
+    parameters:
+    - id: customBuilder
+      type: System.Reflection.Emit.CustomAttributeBuilder
+      description: An instance of a helper class that specifies the custom attribute to apply.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*customBuilder* is null.'
+- uid: System.Reflection.Emit.ModuleBuilder.GetSymWriter
+  id: GetSymWriter
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: GetSymWriter()
+  fullName: System.Reflection.Emit.ModuleBuilder.GetSymWriter()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 2273
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Returns the symbol writer associated with this dynamic module.
+  syntax:
+    content: public ISymbolWriter GetSymWriter()
+    content.vb: Public Function GetSymWriter As ISymbolWriter
+    return:
+      type: System.Diagnostics.SymbolStore.ISymbolWriter
+- uid: System.Reflection.Emit.ModuleBuilder.DefineDocument(System.String,System.Guid,System.Guid,System.Guid)
+  id: DefineDocument(System.String,System.Guid,System.Guid,System.Guid)
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: DefineDocument(String, Guid, Guid, Guid)
+  fullName: System.Reflection.Emit.ModuleBuilder.DefineDocument(System.String, System.Guid, System.Guid, System.Guid)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 2279
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Defines a document for source.
+  syntax:
+    content: public ISymbolDocumentWriter DefineDocument(string url, Guid language, Guid languageVendor, Guid documentType)
+    content.vb: Public Function DefineDocument(url As String, language As Guid, languageVendor As Guid, documentType As Guid) As ISymbolDocumentWriter
+    parameters:
+    - id: url
+      type: System.String
+      description: The URL for the document.
+    - id: language
+      type: System.Guid
+      description: The GUID that identifies the document language. This can be @'System.Guid.Empty'.
+    - id: languageVendor
+      type: System.Guid
+      description: The GUID that identifies the document language vendor. This can be @'System.Guid.Empty'.
+    - id: documentType
+      type: System.Guid
+      description: The GUID that identifies the document type. This can be @'System.Guid.Empty'.
+    return:
+      type: System.Diagnostics.SymbolStore.ISymbolDocumentWriter
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*url* is null. This is a change from earlier versions of the .NET Framework.'
+  - type: System.InvalidOperationException
+    description: This method is called on a dynamic module that is not a debug module.
+- uid: System.Reflection.Emit.ModuleBuilder.SetUserEntryPoint(System.Reflection.MethodInfo)
+  id: SetUserEntryPoint(System.Reflection.MethodInfo)
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: SetUserEntryPoint(MethodInfo)
+  fullName: System.Reflection.Emit.ModuleBuilder.SetUserEntryPoint(System.Reflection.MethodInfo)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 2309
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Sets the user entry point.
+  syntax:
+    content: public void SetUserEntryPoint(MethodInfo entryPoint)
+    content.vb: Public Sub SetUserEntryPoint(entryPoint As MethodInfo)
+    parameters:
+    - id: entryPoint
+      type: System.Reflection.MethodInfo
+      description: The user entry point.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*entryPoint* is null.'
+  - type: System.InvalidOperationException
+    description: This method is called on a dynamic module that is not a debug module.-or- *entryPoint* is not contained in this dynamic module.
+- uid: System.Reflection.Emit.ModuleBuilder.SetSymCustomAttribute(System.String,System.Byte[])
+  id: SetSymCustomAttribute(System.String,System.Byte[])
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: SetSymCustomAttribute(String, Byte[])
+  name.vb: SetSymCustomAttribute(String, Byte())
+  fullName: System.Reflection.Emit.ModuleBuilder.SetSymCustomAttribute(System.String, System.Byte[])
+  fullName.vb: System.Reflection.Emit.ModuleBuilder.SetSymCustomAttribute(System.String, System.Byte())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 2368
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: This method does nothing.
+  syntax:
+    content: public void SetSymCustomAttribute(string name, byte[] data)
+    content.vb: Public Sub SetSymCustomAttribute(name As String, data As Byte())
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the custom attribute
+    - id: data
+      type: System.Byte[]
+      description: An opaque binary large object (BLOB) of bytes that represents the value of the custom attribute.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*url* is null.'
+- uid: System.Reflection.Emit.ModuleBuilder.IsTransient
+  id: IsTransient
+  parent: System.Reflection.Emit.ModuleBuilder
+  href: System.Reflection.Emit.ModuleBuilder.yml
+  name: IsTransient()
+  fullName: System.Reflection.Emit.ModuleBuilder.IsTransient()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ModuleBuilder.cs
+    startLine: 2389
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Returns a value that indicates whether this dynamic module is transient.
+  syntax:
+    content: public bool IsTransient()
+    content.vb: Public Function IsTransient As Boolean
+    return:
+      type: System.Boolean
+references:
+- uid: System.Reflection.Emit
+  isExternal: false
+  name: System.Reflection.Emit
+  fullName: System.Reflection.Emit
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Reflection.Module
+  parent: System.Reflection
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: Module
+  fullName: System.Reflection.Module
+  type: Class
+- uid: System.Reflection.Module.FilterTypeName
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: FilterTypeName
+  fullName: System.Reflection.Module.FilterTypeName
+- uid: System.Reflection.Module.FilterTypeNameIgnoreCase
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: FilterTypeNameIgnoreCase
+  fullName: System.Reflection.Module.FilterTypeNameIgnoreCase
+- uid: System.Reflection.Module.ToString
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: ToString()
+  fullName: System.Reflection.Module.ToString()
+  spec.csharp:
+  - uid: System.Reflection.Module.ToString
+    name: ToString
+    fullName: System.Reflection.Module.ToString
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.Module.ToString
+    name: ToString
+    fullName: System.Reflection.Module.ToString
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Reflection.Module.CustomAttributes
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: CustomAttributes
+  fullName: System.Reflection.Module.CustomAttributes
+- uid: System.Reflection.Module.ResolveMethod(System.Int32)
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: ResolveMethod(Int32)
+  fullName: System.Reflection.Module.ResolveMethod(System.Int32)
+  spec.csharp:
+  - uid: System.Reflection.Module.ResolveMethod(System.Int32)
+    name: ResolveMethod
+    fullName: System.Reflection.Module.ResolveMethod
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.Module.ResolveMethod(System.Int32)
+    name: ResolveMethod
+    fullName: System.Reflection.Module.ResolveMethod
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Reflection.Module.ResolveField(System.Int32)
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: ResolveField(Int32)
+  fullName: System.Reflection.Module.ResolveField(System.Int32)
+  spec.csharp:
+  - uid: System.Reflection.Module.ResolveField(System.Int32)
+    name: ResolveField
+    fullName: System.Reflection.Module.ResolveField
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.Module.ResolveField(System.Int32)
+    name: ResolveField
+    fullName: System.Reflection.Module.ResolveField
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Reflection.Module.ResolveType(System.Int32)
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: ResolveType(Int32)
+  fullName: System.Reflection.Module.ResolveType(System.Int32)
+  spec.csharp:
+  - uid: System.Reflection.Module.ResolveType(System.Int32)
+    name: ResolveType
+    fullName: System.Reflection.Module.ResolveType
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.Module.ResolveType(System.Int32)
+    name: ResolveType
+    fullName: System.Reflection.Module.ResolveType
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Reflection.Module.ResolveMember(System.Int32)
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: ResolveMember(Int32)
+  fullName: System.Reflection.Module.ResolveMember(System.Int32)
+  spec.csharp:
+  - uid: System.Reflection.Module.ResolveMember(System.Int32)
+    name: ResolveMember
+    fullName: System.Reflection.Module.ResolveMember
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.Module.ResolveMember(System.Int32)
+    name: ResolveMember
+    fullName: System.Reflection.Module.ResolveMember
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Reflection.Module.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  fullName: System.Reflection.Module.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: System.Reflection.Module.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    fullName: System.Reflection.Module.GetObjectData
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    fullName: System.Runtime.Serialization.SerializationInfo
+    href: System.Runtime.Serialization.SerializationInfo.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    href: System.Runtime.Serialization.StreamingContext.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.Module.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    fullName: System.Reflection.Module.GetObjectData
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    fullName: System.Runtime.Serialization.SerializationInfo
+    href: System.Runtime.Serialization.SerializationInfo.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    href: System.Runtime.Serialization.StreamingContext.yml
+  - name: )
+    fullName: )
+- uid: System.Reflection.Module.FindTypes(System.Reflection.TypeFilter,System.Object)
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: FindTypes(TypeFilter, Object)
+  fullName: System.Reflection.Module.FindTypes(System.Reflection.TypeFilter, System.Object)
+  spec.csharp:
+  - uid: System.Reflection.Module.FindTypes(System.Reflection.TypeFilter,System.Object)
+    name: FindTypes
+    fullName: System.Reflection.Module.FindTypes
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.Reflection.TypeFilter
+    name: TypeFilter
+    fullName: System.Reflection.TypeFilter
+    href: System.Reflection.TypeFilter.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    href: System.Object.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.Module.FindTypes(System.Reflection.TypeFilter,System.Object)
+    name: FindTypes
+    fullName: System.Reflection.Module.FindTypes
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.Reflection.TypeFilter
+    name: TypeFilter
+    fullName: System.Reflection.TypeFilter
+    href: System.Reflection.TypeFilter.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    href: System.Object.yml
+  - name: )
+    fullName: )
+- uid: System.Reflection.Module.GetFields
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: GetFields()
+  fullName: System.Reflection.Module.GetFields()
+  spec.csharp:
+  - uid: System.Reflection.Module.GetFields
+    name: GetFields
+    fullName: System.Reflection.Module.GetFields
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.Module.GetFields
+    name: GetFields
+    fullName: System.Reflection.Module.GetFields
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Reflection.Module.GetField(System.String)
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: GetField(String)
+  fullName: System.Reflection.Module.GetField(System.String)
+  spec.csharp:
+  - uid: System.Reflection.Module.GetField(System.String)
+    name: GetField
+    fullName: System.Reflection.Module.GetField
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    href: System.String.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.Module.GetField(System.String)
+    name: GetField
+    fullName: System.Reflection.Module.GetField
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    href: System.String.yml
+  - name: )
+    fullName: )
+- uid: System.Reflection.Module.GetMethods
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: GetMethods()
+  fullName: System.Reflection.Module.GetMethods()
+  spec.csharp:
+  - uid: System.Reflection.Module.GetMethods
+    name: GetMethods
+    fullName: System.Reflection.Module.GetMethods
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.Module.GetMethods
+    name: GetMethods
+    fullName: System.Reflection.Module.GetMethods
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Reflection.Module.GetMethod(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: GetMethod(String, BindingFlags, Binder, CallingConventions, Type[], ParameterModifier[])
+  name.vb: GetMethod(String, BindingFlags, Binder, CallingConventions, Type(), ParameterModifier())
+  fullName: System.Reflection.Module.GetMethod(System.String, System.Reflection.BindingFlags, System.Reflection.Binder, System.Reflection.CallingConventions, System.Type[], System.Reflection.ParameterModifier[])
+  fullName.vb: System.Reflection.Module.GetMethod(System.String, System.Reflection.BindingFlags, System.Reflection.Binder, System.Reflection.CallingConventions, System.Type(), System.Reflection.ParameterModifier())
+  spec.csharp:
+  - uid: System.Reflection.Module.GetMethod(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])
+    name: GetMethod
+    fullName: System.Reflection.Module.GetMethod
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    href: System.String.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Reflection.BindingFlags
+    name: BindingFlags
+    fullName: System.Reflection.BindingFlags
+    href: System.Reflection.BindingFlags.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Reflection.Binder
+    name: Binder
+    fullName: System.Reflection.Binder
+    href: System.Reflection.Binder.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Reflection.CallingConventions
+    name: CallingConventions
+    fullName: System.Reflection.CallingConventions
+    href: System.Reflection.CallingConventions.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Reflection.ParameterModifier
+    name: ParameterModifier
+    fullName: System.Reflection.ParameterModifier
+    href: System.Reflection.ParameterModifier.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.Module.GetMethod(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])
+    name: GetMethod
+    fullName: System.Reflection.Module.GetMethod
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    href: System.String.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Reflection.BindingFlags
+    name: BindingFlags
+    fullName: System.Reflection.BindingFlags
+    href: System.Reflection.BindingFlags.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Reflection.Binder
+    name: Binder
+    fullName: System.Reflection.Binder
+    href: System.Reflection.Binder.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Reflection.CallingConventions
+    name: CallingConventions
+    fullName: System.Reflection.CallingConventions
+    href: System.Reflection.CallingConventions.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Reflection.ParameterModifier
+    name: ParameterModifier
+    fullName: System.Reflection.ParameterModifier
+    href: System.Reflection.ParameterModifier.yml
+  - name: ()
+    fullName: ()
+  - name: )
+    fullName: )
+- uid: System.Reflection.Module.GetMethod(System.String,System.Type[])
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: GetMethod(String, Type[])
+  name.vb: GetMethod(String, Type())
+  fullName: System.Reflection.Module.GetMethod(System.String, System.Type[])
+  fullName.vb: System.Reflection.Module.GetMethod(System.String, System.Type())
+  spec.csharp:
+  - uid: System.Reflection.Module.GetMethod(System.String,System.Type[])
+    name: GetMethod
+    fullName: System.Reflection.Module.GetMethod
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    href: System.String.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.Module.GetMethod(System.String,System.Type[])
+    name: GetMethod
+    fullName: System.Reflection.Module.GetMethod
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    href: System.String.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: ()
+    fullName: ()
+  - name: )
+    fullName: )
+- uid: System.Reflection.Module.GetMethod(System.String)
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: GetMethod(String)
+  fullName: System.Reflection.Module.GetMethod(System.String)
+  spec.csharp:
+  - uid: System.Reflection.Module.GetMethod(System.String)
+    name: GetMethod
+    fullName: System.Reflection.Module.GetMethod
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    href: System.String.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.Module.GetMethod(System.String)
+    name: GetMethod
+    fullName: System.Reflection.Module.GetMethod
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    href: System.String.yml
+  - name: )
+    fullName: )
+- uid: System.Reflection.Module.ModuleHandle
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: ModuleHandle
+  fullName: System.Reflection.Module.ModuleHandle
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace
+- uid: System.Reflection.Module.Equals(System.Object)
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: Equals(Object)
+  fullName: System.Reflection.Module.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Reflection.Module.Equals(System.Object)
+    name: Equals
+    fullName: System.Reflection.Module.Equals
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    href: System.Object.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.Module.Equals(System.Object)
+    name: Equals
+    fullName: System.Reflection.Module.Equals
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    href: System.Object.yml
+  - name: )
+    fullName: )
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Reflection.Module.GetHashCode
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: GetHashCode()
+  fullName: System.Reflection.Module.GetHashCode()
+  spec.csharp:
+  - uid: System.Reflection.Module.GetHashCode
+    name: GetHashCode
+    fullName: System.Reflection.Module.GetHashCode
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.Module.GetHashCode
+    name: GetHashCode
+    fullName: System.Reflection.Module.GetHashCode
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Reflection.Module.GetCustomAttributes(System.Boolean)
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: GetCustomAttributes(Boolean)
+  fullName: System.Reflection.Module.GetCustomAttributes(System.Boolean)
+  spec.csharp:
+  - uid: System.Reflection.Module.GetCustomAttributes(System.Boolean)
+    name: GetCustomAttributes
+    fullName: System.Reflection.Module.GetCustomAttributes
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.Module.GetCustomAttributes(System.Boolean)
+    name: GetCustomAttributes
+    fullName: System.Reflection.Module.GetCustomAttributes
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  name.vb: Object()
+  fullName: System.Object[]
+  fullName.vb: System.Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Reflection.Module.GetCustomAttributes(System.Type,System.Boolean)
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: GetCustomAttributes(Type, Boolean)
+  fullName: System.Reflection.Module.GetCustomAttributes(System.Type, System.Boolean)
+  spec.csharp:
+  - uid: System.Reflection.Module.GetCustomAttributes(System.Type,System.Boolean)
+    name: GetCustomAttributes
+    fullName: System.Reflection.Module.GetCustomAttributes
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.Module.GetCustomAttributes(System.Type,System.Boolean)
+    name: GetCustomAttributes
+    fullName: System.Reflection.Module.GetCustomAttributes
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  fullName: System.Type
+- uid: System.Reflection.Module.IsDefined(System.Type,System.Boolean)
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: IsDefined(Type, Boolean)
+  fullName: System.Reflection.Module.IsDefined(System.Type, System.Boolean)
+  spec.csharp:
+  - uid: System.Reflection.Module.IsDefined(System.Type,System.Boolean)
+    name: IsDefined
+    fullName: System.Reflection.Module.IsDefined
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.Module.IsDefined(System.Type,System.Boolean)
+    name: IsDefined
+    fullName: System.Reflection.Module.IsDefined
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+- uid: System.Reflection.Module.GetCustomAttributesData
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: GetCustomAttributesData()
+  fullName: System.Reflection.Module.GetCustomAttributesData()
+  spec.csharp:
+  - uid: System.Reflection.Module.GetCustomAttributesData
+    name: GetCustomAttributesData
+    fullName: System.Reflection.Module.GetCustomAttributesData
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.Module.GetCustomAttributesData
+    name: GetCustomAttributesData
+    fullName: System.Reflection.Module.GetCustomAttributesData
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IList{System.Reflection.CustomAttributeData}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: System.Collections.Generic.IList`1.yml
+  name: IList<CustomAttributeData>
+  name.vb: IList(Of CustomAttributeData)
+  fullName: System.Collections.Generic.IList<System.Reflection.CustomAttributeData>
+  fullName.vb: System.Collections.Generic.IList(Of System.Reflection.CustomAttributeData)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    href: System.Collections.Generic.IList`1.yml
+  - name: <
+    fullName: <
+  - uid: System.Reflection.CustomAttributeData
+    name: CustomAttributeData
+    fullName: System.Reflection.CustomAttributeData
+    href: System.Reflection.CustomAttributeData.yml
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    href: System.Collections.Generic.IList`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Reflection.CustomAttributeData
+    name: CustomAttributeData
+    fullName: System.Reflection.CustomAttributeData
+    href: System.Reflection.CustomAttributeData.yml
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IList`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IList<T>
+  name.vb: IList(Of T)
+  fullName: System.Collections.Generic.IList<T>
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Reflection.Module.GetTypes
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: GetTypes()
+  fullName: System.Reflection.Module.GetTypes()
+  spec.csharp:
+  - uid: System.Reflection.Module.GetTypes
+    name: GetTypes
+    fullName: System.Reflection.Module.GetTypes
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.Module.GetTypes
+    name: GetTypes
+    fullName: System.Reflection.Module.GetTypes
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Type[]
+  isExternal: true
+  name: Type[]
+  name.vb: Type()
+  fullName: System.Type[]
+  fullName.vb: System.Type()
+  spec.csharp:
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Reflection.Module.GetType(System.String)
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: GetType(String)
+  fullName: System.Reflection.Module.GetType(System.String)
+  spec.csharp:
+  - uid: System.Reflection.Module.GetType(System.String)
+    name: GetType
+    fullName: System.Reflection.Module.GetType
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    href: System.String.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.Module.GetType(System.String)
+    name: GetType
+    fullName: System.Reflection.Module.GetType
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    href: System.String.yml
+  - name: )
+    fullName: )
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Reflection.Module.GetType(System.String,System.Boolean)
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: GetType(String, Boolean)
+  fullName: System.Reflection.Module.GetType(System.String, System.Boolean)
+  spec.csharp:
+  - uid: System.Reflection.Module.GetType(System.String,System.Boolean)
+    name: GetType
+    fullName: System.Reflection.Module.GetType
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    href: System.String.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.Module.GetType(System.String,System.Boolean)
+    name: GetType
+    fullName: System.Reflection.Module.GetType
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    href: System.String.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+- uid: System.Reflection.Module.GetType(System.String,System.Boolean,System.Boolean)
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: GetType(String, Boolean, Boolean)
+  fullName: System.Reflection.Module.GetType(System.String, System.Boolean, System.Boolean)
+  spec.csharp:
+  - uid: System.Reflection.Module.GetType(System.String,System.Boolean,System.Boolean)
+    name: GetType
+    fullName: System.Reflection.Module.GetType
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    href: System.String.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.Module.GetType(System.String,System.Boolean,System.Boolean)
+    name: GetType
+    fullName: System.Reflection.Module.GetType
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    href: System.String.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+- uid: System.Reflection.Module.FullyQualifiedName
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: FullyQualifiedName
+  fullName: System.Reflection.Module.FullyQualifiedName
+- uid: System.Reflection.Module.ResolveSignature(System.Int32)
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: ResolveSignature(Int32)
+  fullName: System.Reflection.Module.ResolveSignature(System.Int32)
+  spec.csharp:
+  - uid: System.Reflection.Module.ResolveSignature(System.Int32)
+    name: ResolveSignature
+    fullName: System.Reflection.Module.ResolveSignature
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.Module.ResolveSignature(System.Int32)
+    name: ResolveSignature
+    fullName: System.Reflection.Module.ResolveSignature
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  name.vb: Byte()
+  fullName: System.Byte[]
+  fullName.vb: System.Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Reflection.Module.ResolveMethod(System.Int32,System.Type[],System.Type[])
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: ResolveMethod(Int32, Type[], Type[])
+  name.vb: ResolveMethod(Int32, Type(), Type())
+  fullName: System.Reflection.Module.ResolveMethod(System.Int32, System.Type[], System.Type[])
+  fullName.vb: System.Reflection.Module.ResolveMethod(System.Int32, System.Type(), System.Type())
+  spec.csharp:
+  - uid: System.Reflection.Module.ResolveMethod(System.Int32,System.Type[],System.Type[])
+    name: ResolveMethod
+    fullName: System.Reflection.Module.ResolveMethod
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.Module.ResolveMethod(System.Int32,System.Type[],System.Type[])
+    name: ResolveMethod
+    fullName: System.Reflection.Module.ResolveMethod
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: ()
+    fullName: ()
+  - name: )
+    fullName: )
+- uid: System.Reflection.MethodBase
+  parent: System.Reflection
+  isExternal: false
+  href: System.Reflection.MethodBase.yml
+  name: MethodBase
+  fullName: System.Reflection.MethodBase
+  type: Class
+- uid: System.Reflection.Module.ResolveField(System.Int32,System.Type[],System.Type[])
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: ResolveField(Int32, Type[], Type[])
+  name.vb: ResolveField(Int32, Type(), Type())
+  fullName: System.Reflection.Module.ResolveField(System.Int32, System.Type[], System.Type[])
+  fullName.vb: System.Reflection.Module.ResolveField(System.Int32, System.Type(), System.Type())
+  spec.csharp:
+  - uid: System.Reflection.Module.ResolveField(System.Int32,System.Type[],System.Type[])
+    name: ResolveField
+    fullName: System.Reflection.Module.ResolveField
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.Module.ResolveField(System.Int32,System.Type[],System.Type[])
+    name: ResolveField
+    fullName: System.Reflection.Module.ResolveField
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: ()
+    fullName: ()
+  - name: )
+    fullName: )
+- uid: System.Reflection.FieldInfo
+  parent: System.Reflection
+  isExternal: true
+  name: FieldInfo
+  fullName: System.Reflection.FieldInfo
+- uid: System.Reflection.Module.ResolveType(System.Int32,System.Type[],System.Type[])
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: ResolveType(Int32, Type[], Type[])
+  name.vb: ResolveType(Int32, Type(), Type())
+  fullName: System.Reflection.Module.ResolveType(System.Int32, System.Type[], System.Type[])
+  fullName.vb: System.Reflection.Module.ResolveType(System.Int32, System.Type(), System.Type())
+  spec.csharp:
+  - uid: System.Reflection.Module.ResolveType(System.Int32,System.Type[],System.Type[])
+    name: ResolveType
+    fullName: System.Reflection.Module.ResolveType
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.Module.ResolveType(System.Int32,System.Type[],System.Type[])
+    name: ResolveType
+    fullName: System.Reflection.Module.ResolveType
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: ()
+    fullName: ()
+  - name: )
+    fullName: )
+- uid: System.Reflection.Module.ResolveMember(System.Int32,System.Type[],System.Type[])
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: ResolveMember(Int32, Type[], Type[])
+  name.vb: ResolveMember(Int32, Type(), Type())
+  fullName: System.Reflection.Module.ResolveMember(System.Int32, System.Type[], System.Type[])
+  fullName.vb: System.Reflection.Module.ResolveMember(System.Int32, System.Type(), System.Type())
+  spec.csharp:
+  - uid: System.Reflection.Module.ResolveMember(System.Int32,System.Type[],System.Type[])
+    name: ResolveMember
+    fullName: System.Reflection.Module.ResolveMember
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.Module.ResolveMember(System.Int32,System.Type[],System.Type[])
+    name: ResolveMember
+    fullName: System.Reflection.Module.ResolveMember
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: ()
+    fullName: ()
+  - name: )
+    fullName: )
+- uid: System.Reflection.MemberInfo
+  parent: System.Reflection
+  isExternal: false
+  href: System.Reflection.MemberInfo.yml
+  name: MemberInfo
+  fullName: System.Reflection.MemberInfo
+  type: Class
+- uid: System.Reflection.Module.ResolveString(System.Int32)
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: ResolveString(Int32)
+  fullName: System.Reflection.Module.ResolveString(System.Int32)
+  spec.csharp:
+  - uid: System.Reflection.Module.ResolveString(System.Int32)
+    name: ResolveString
+    fullName: System.Reflection.Module.ResolveString
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.Module.ResolveString(System.Int32)
+    name: ResolveString
+    fullName: System.Reflection.Module.ResolveString
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Reflection.Module.GetPEKind(System.Reflection.PortableExecutableKinds@,System.Reflection.ImageFileMachine@)
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: GetPEKind(PortableExecutableKinds, ImageFileMachine)
+  fullName: System.Reflection.Module.GetPEKind(System.Reflection.PortableExecutableKinds, System.Reflection.ImageFileMachine)
+  spec.csharp:
+  - uid: System.Reflection.Module.GetPEKind(System.Reflection.PortableExecutableKinds@,System.Reflection.ImageFileMachine@)
+    name: GetPEKind
+    fullName: System.Reflection.Module.GetPEKind
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.Reflection.PortableExecutableKinds
+    name: PortableExecutableKinds
+    fullName: System.Reflection.PortableExecutableKinds
+    href: System.Reflection.PortableExecutableKinds.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Reflection.ImageFileMachine
+    name: ImageFileMachine
+    fullName: System.Reflection.ImageFileMachine
+    href: System.Reflection.ImageFileMachine.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.Module.GetPEKind(System.Reflection.PortableExecutableKinds@,System.Reflection.ImageFileMachine@)
+    name: GetPEKind
+    fullName: System.Reflection.Module.GetPEKind
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.Reflection.PortableExecutableKinds
+    name: PortableExecutableKinds
+    fullName: System.Reflection.PortableExecutableKinds
+    href: System.Reflection.PortableExecutableKinds.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Reflection.ImageFileMachine
+    name: ImageFileMachine
+    fullName: System.Reflection.ImageFileMachine
+    href: System.Reflection.ImageFileMachine.yml
+  - name: )
+    fullName: )
+- uid: System.Reflection.PortableExecutableKinds
+  parent: System.Reflection
+  isExternal: false
+  href: System.Reflection.PortableExecutableKinds.yml
+  name: PortableExecutableKinds
+  fullName: System.Reflection.PortableExecutableKinds
+  type: Enum
+- uid: System.Reflection.ImageFileMachine
+  parent: System.Reflection
+  isExternal: false
+  href: System.Reflection.ImageFileMachine.yml
+  name: ImageFileMachine
+  fullName: System.Reflection.ImageFileMachine
+  type: Enum
+- uid: System.Reflection.Module.MDStreamVersion
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: MDStreamVersion
+  fullName: System.Reflection.Module.MDStreamVersion
+- uid: System.Reflection.Module.ModuleVersionId
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: ModuleVersionId
+  fullName: System.Reflection.Module.ModuleVersionId
+- uid: System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  fullName: System.Guid
+- uid: System.Reflection.Module.MetadataToken
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: MetadataToken
+  fullName: System.Reflection.Module.MetadataToken
+- uid: System.Reflection.Module.IsResource
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: IsResource()
+  fullName: System.Reflection.Module.IsResource()
+  spec.csharp:
+  - uid: System.Reflection.Module.IsResource
+    name: IsResource
+    fullName: System.Reflection.Module.IsResource
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.Module.IsResource
+    name: IsResource
+    fullName: System.Reflection.Module.IsResource
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Reflection.Module.GetFields(System.Reflection.BindingFlags)
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: GetFields(BindingFlags)
+  fullName: System.Reflection.Module.GetFields(System.Reflection.BindingFlags)
+  spec.csharp:
+  - uid: System.Reflection.Module.GetFields(System.Reflection.BindingFlags)
+    name: GetFields
+    fullName: System.Reflection.Module.GetFields
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.Reflection.BindingFlags
+    name: BindingFlags
+    fullName: System.Reflection.BindingFlags
+    href: System.Reflection.BindingFlags.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.Module.GetFields(System.Reflection.BindingFlags)
+    name: GetFields
+    fullName: System.Reflection.Module.GetFields
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.Reflection.BindingFlags
+    name: BindingFlags
+    fullName: System.Reflection.BindingFlags
+    href: System.Reflection.BindingFlags.yml
+  - name: )
+    fullName: )
+- uid: System.Reflection.BindingFlags
+  parent: System.Reflection
+  isExternal: true
+  name: BindingFlags
+  fullName: System.Reflection.BindingFlags
+- uid: System.Reflection.FieldInfo[]
+  isExternal: true
+  name: FieldInfo[]
+  name.vb: FieldInfo()
+  fullName: System.Reflection.FieldInfo[]
+  fullName.vb: System.Reflection.FieldInfo()
+  spec.csharp:
+  - uid: System.Reflection.FieldInfo
+    name: FieldInfo
+    fullName: System.Reflection.FieldInfo
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Reflection.FieldInfo
+    name: FieldInfo
+    fullName: System.Reflection.FieldInfo
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Reflection.Module.GetField(System.String,System.Reflection.BindingFlags)
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: GetField(String, BindingFlags)
+  fullName: System.Reflection.Module.GetField(System.String, System.Reflection.BindingFlags)
+  spec.csharp:
+  - uid: System.Reflection.Module.GetField(System.String,System.Reflection.BindingFlags)
+    name: GetField
+    fullName: System.Reflection.Module.GetField
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    href: System.String.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Reflection.BindingFlags
+    name: BindingFlags
+    fullName: System.Reflection.BindingFlags
+    href: System.Reflection.BindingFlags.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.Module.GetField(System.String,System.Reflection.BindingFlags)
+    name: GetField
+    fullName: System.Reflection.Module.GetField
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    href: System.String.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Reflection.BindingFlags
+    name: BindingFlags
+    fullName: System.Reflection.BindingFlags
+    href: System.Reflection.BindingFlags.yml
+  - name: )
+    fullName: )
+- uid: System.Reflection.Module.GetMethods(System.Reflection.BindingFlags)
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: GetMethods(BindingFlags)
+  fullName: System.Reflection.Module.GetMethods(System.Reflection.BindingFlags)
+  spec.csharp:
+  - uid: System.Reflection.Module.GetMethods(System.Reflection.BindingFlags)
+    name: GetMethods
+    fullName: System.Reflection.Module.GetMethods
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.Reflection.BindingFlags
+    name: BindingFlags
+    fullName: System.Reflection.BindingFlags
+    href: System.Reflection.BindingFlags.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.Module.GetMethods(System.Reflection.BindingFlags)
+    name: GetMethods
+    fullName: System.Reflection.Module.GetMethods
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.Reflection.BindingFlags
+    name: BindingFlags
+    fullName: System.Reflection.BindingFlags
+    href: System.Reflection.BindingFlags.yml
+  - name: )
+    fullName: )
+- uid: System.Reflection.MethodInfo[]
+  isExternal: true
+  name: MethodInfo[]
+  name.vb: MethodInfo()
+  fullName: System.Reflection.MethodInfo[]
+  fullName.vb: System.Reflection.MethodInfo()
+  spec.csharp:
+  - uid: System.Reflection.MethodInfo
+    name: MethodInfo
+    fullName: System.Reflection.MethodInfo
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Reflection.MethodInfo
+    name: MethodInfo
+    fullName: System.Reflection.MethodInfo
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Reflection.Module.GetMethodImpl(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: GetMethodImpl(String, BindingFlags, Binder, CallingConventions, Type[], ParameterModifier[])
+  name.vb: GetMethodImpl(String, BindingFlags, Binder, CallingConventions, Type(), ParameterModifier())
+  fullName: System.Reflection.Module.GetMethodImpl(System.String, System.Reflection.BindingFlags, System.Reflection.Binder, System.Reflection.CallingConventions, System.Type[], System.Reflection.ParameterModifier[])
+  fullName.vb: System.Reflection.Module.GetMethodImpl(System.String, System.Reflection.BindingFlags, System.Reflection.Binder, System.Reflection.CallingConventions, System.Type(), System.Reflection.ParameterModifier())
+  spec.csharp:
+  - uid: System.Reflection.Module.GetMethodImpl(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])
+    name: GetMethodImpl
+    fullName: System.Reflection.Module.GetMethodImpl
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    href: System.String.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Reflection.BindingFlags
+    name: BindingFlags
+    fullName: System.Reflection.BindingFlags
+    href: System.Reflection.BindingFlags.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Reflection.Binder
+    name: Binder
+    fullName: System.Reflection.Binder
+    href: System.Reflection.Binder.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Reflection.CallingConventions
+    name: CallingConventions
+    fullName: System.Reflection.CallingConventions
+    href: System.Reflection.CallingConventions.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Reflection.ParameterModifier
+    name: ParameterModifier
+    fullName: System.Reflection.ParameterModifier
+    href: System.Reflection.ParameterModifier.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.Module.GetMethodImpl(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])
+    name: GetMethodImpl
+    fullName: System.Reflection.Module.GetMethodImpl
+    href: System.Reflection.Module.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    href: System.String.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Reflection.BindingFlags
+    name: BindingFlags
+    fullName: System.Reflection.BindingFlags
+    href: System.Reflection.BindingFlags.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Reflection.Binder
+    name: Binder
+    fullName: System.Reflection.Binder
+    href: System.Reflection.Binder.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Reflection.CallingConventions
+    name: CallingConventions
+    fullName: System.Reflection.CallingConventions
+    href: System.Reflection.CallingConventions.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Reflection.ParameterModifier
+    name: ParameterModifier
+    fullName: System.Reflection.ParameterModifier
+    href: System.Reflection.ParameterModifier.yml
+  - name: ()
+    fullName: ()
+  - name: )
+    fullName: )
+- uid: System.Reflection.Binder
+  parent: System.Reflection
+  isExternal: false
+  href: System.Reflection.Binder.yml
+  name: Binder
+  fullName: System.Reflection.Binder
+  type: Class
+- uid: System.Reflection.CallingConventions
+  parent: System.Reflection
+  isExternal: false
+  href: System.Reflection.CallingConventions.yml
+  name: CallingConventions
+  fullName: System.Reflection.CallingConventions
+  type: Enum
+- uid: System.Reflection.ParameterModifier[]
+  isExternal: false
+  href: System.Reflection.ParameterModifier.yml
+  name: ParameterModifier[]
+  name.vb: ParameterModifier()
+  fullName: System.Reflection.ParameterModifier[]
+  fullName.vb: System.Reflection.ParameterModifier()
+  spec.csharp:
+  - uid: System.Reflection.ParameterModifier
+    name: ParameterModifier
+    fullName: System.Reflection.ParameterModifier
+    href: System.Reflection.ParameterModifier.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Reflection.ParameterModifier
+    name: ParameterModifier
+    fullName: System.Reflection.ParameterModifier
+    href: System.Reflection.ParameterModifier.yml
+  - name: ()
+    fullName: ()
+- uid: System.Reflection.MethodInfo
+  parent: System.Reflection
+  isExternal: true
+  name: MethodInfo
+  fullName: System.Reflection.MethodInfo
+- uid: System.Reflection.Module.ScopeName
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: ScopeName
+  fullName: System.Reflection.Module.ScopeName
+- uid: System.Reflection.Module.Name
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: Name
+  fullName: System.Reflection.Module.Name
+- uid: System.Reflection.Module.Assembly
+  parent: System.Reflection.Module
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: Assembly
+  fullName: System.Reflection.Module.Assembly
+- uid: System.Reflection.Assembly
+  parent: System.Reflection
+  isExternal: true
+  name: Assembly
+  fullName: System.Reflection.Assembly
+- uid: System.Reflection.Emit.TypeBuilder
+  parent: System.Reflection.Emit
+  isExternal: false
+  href: System.Reflection.Emit.TypeBuilder.yml
+  name: TypeBuilder
+  fullName: System.Reflection.Emit.TypeBuilder
+  type: Class
+- uid: System.Reflection.TypeAttributes
+  parent: System.Reflection
+  isExternal: true
+  name: TypeAttributes
+  fullName: System.Reflection.TypeAttributes
+- uid: System.Reflection.Emit.PackingSize
+  parent: System.Reflection.Emit
+  isExternal: false
+  href: System.Reflection.Emit.PackingSize.yml
+  name: PackingSize
+  fullName: System.Reflection.Emit.PackingSize
+  type: Enum
+- uid: System.Reflection.Emit.EnumBuilder
+  parent: System.Reflection.Emit
+  isExternal: false
+  href: System.Reflection.Emit.EnumBuilder.yml
+  name: EnumBuilder
+  fullName: System.Reflection.Emit.EnumBuilder
+  type: Class
+- uid: System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  name: Stream
+  fullName: System.IO.Stream
+- uid: System.Reflection.ResourceAttributes
+  parent: System.Reflection
+  isExternal: false
+  href: System.Reflection.ResourceAttributes.yml
+  name: ResourceAttributes
+  fullName: System.Reflection.ResourceAttributes
+  type: Enum
+- uid: System.IO
+  isExternal: false
+  name: System.IO
+  fullName: System.IO
+- uid: System.Reflection.MethodAttributes
+  parent: System.Reflection
+  isExternal: true
+  name: MethodAttributes
+  fullName: System.Reflection.MethodAttributes
+- uid: System.Reflection.Emit.MethodBuilder
+  parent: System.Reflection.Emit
+  isExternal: false
+  href: System.Reflection.Emit.MethodBuilder.yml
+  name: MethodBuilder
+  fullName: System.Reflection.Emit.MethodBuilder
+  type: Class
+- uid: System.Type[][]
+  isExternal: false
+  href: System.Type.yml
+  name: Type[][]
+  name.vb: Type()()
+  fullName: System.Type[][]
+  fullName.vb: System.Type()()
+  spec.csharp:
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: ()
+    fullName: ()
+  - name: ()
+    fullName: ()
+- uid: System.Runtime.InteropServices.CallingConvention
+  parent: System.Runtime.InteropServices
+  isExternal: false
+  href: System.Runtime.InteropServices.CallingConvention.yml
+  name: CallingConvention
+  fullName: System.Runtime.InteropServices.CallingConvention
+  type: Enum
+- uid: System.Runtime.InteropServices.CharSet
+  parent: System.Runtime.InteropServices
+  isExternal: false
+  href: System.Runtime.InteropServices.CharSet.yml
+  name: CharSet
+  fullName: System.Runtime.InteropServices.CharSet
+  type: Enum
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace
+- uid: System.Reflection.FieldAttributes
+  parent: System.Reflection
+  isExternal: true
+  name: FieldAttributes
+  fullName: System.Reflection.FieldAttributes
+- uid: System.Reflection.Emit.FieldBuilder
+  isExternal: false
+  href: System.Reflection.Emit.FieldBuilder.yml
+  name: FieldBuilder
+  fullName: System.Reflection.Emit.FieldBuilder
+  type: Class
+- uid: System.Reflection.Emit.TypeToken
+  parent: System.Reflection.Emit
+  isExternal: false
+  href: System.Reflection.Emit.TypeToken.yml
+  name: TypeToken
+  fullName: System.Reflection.Emit.TypeToken
+  type: Struct
+- uid: System.Reflection.Emit.MethodToken
+  parent: System.Reflection.Emit
+  isExternal: false
+  href: System.Reflection.Emit.MethodToken.yml
+  name: MethodToken
+  fullName: System.Reflection.Emit.MethodToken
+  type: Struct
+- uid: System.Reflection.ConstructorInfo
+  parent: System.Reflection
+  isExternal: true
+  name: ConstructorInfo
+  fullName: System.Reflection.ConstructorInfo
+- uid: System.Collections.Generic.IEnumerable{System.Type}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: System.Collections.Generic.IEnumerable`1.yml
+  name: IEnumerable<Type>
+  name.vb: IEnumerable(Of Type)
+  fullName: System.Collections.Generic.IEnumerable<System.Type>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Type)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    href: System.Collections.Generic.IEnumerable`1.yml
+  - name: <
+    fullName: <
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    href: System.Collections.Generic.IEnumerable`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Reflection.Emit.FieldToken
+  parent: System.Reflection.Emit
+  isExternal: false
+  href: System.Reflection.Emit.FieldToken.yml
+  name: FieldToken
+  fullName: System.Reflection.Emit.FieldToken
+  type: Struct
+- uid: System.Reflection.Emit.StringToken
+  parent: System.Reflection.Emit
+  isExternal: false
+  href: System.Reflection.Emit.StringToken.yml
+  name: StringToken
+  fullName: System.Reflection.Emit.StringToken
+  type: Struct
+- uid: System.Reflection.Emit.SignatureHelper
+  parent: System.Reflection.Emit
+  isExternal: false
+  href: System.Reflection.Emit.SignatureHelper.yml
+  name: SignatureHelper
+  fullName: System.Reflection.Emit.SignatureHelper
+  type: Class
+- uid: System.Reflection.Emit.SignatureToken
+  parent: System.Reflection.Emit
+  isExternal: false
+  href: System.Reflection.Emit.SignatureToken.yml
+  name: SignatureToken
+  fullName: System.Reflection.Emit.SignatureToken
+  type: Struct
+- uid: System.Reflection.Emit.CustomAttributeBuilder
+  parent: System.Reflection.Emit
+  isExternal: false
+  href: System.Reflection.Emit.CustomAttributeBuilder.yml
+  name: CustomAttributeBuilder
+  fullName: System.Reflection.Emit.CustomAttributeBuilder
+  type: Class
+- uid: System.Diagnostics.SymbolStore.ISymbolWriter
+  parent: System.Diagnostics.SymbolStore
+  isExternal: false
+  href: System.Diagnostics.SymbolStore.ISymbolWriter.yml
+  name: ISymbolWriter
+  fullName: System.Diagnostics.SymbolStore.ISymbolWriter
+  type: Interface
+- uid: System.Diagnostics.SymbolStore
+  isExternal: false
+  name: System.Diagnostics.SymbolStore
+  fullName: System.Diagnostics.SymbolStore
+  type: Namespace
+- uid: System.Diagnostics.SymbolStore.ISymbolDocumentWriter
+  parent: System.Diagnostics.SymbolStore
+  isExternal: false
+  href: System.Diagnostics.SymbolStore.ISymbolDocumentWriter.yml
+  name: ISymbolDocumentWriter
+  fullName: System.Diagnostics.SymbolStore.ISymbolDocumentWriter
+  type: Interface

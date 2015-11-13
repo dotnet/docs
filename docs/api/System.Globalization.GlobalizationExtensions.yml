@@ -1,0 +1,302 @@
+items:
+- uid: System.Globalization.GlobalizationExtensions
+  id: GlobalizationExtensions
+  parent: System.Globalization
+  children:
+  - System.Globalization.GlobalizationExtensions.GetStringComparer(System.Globalization.CompareInfo,System.Globalization.CompareOptions)
+  href: System.Globalization.GlobalizationExtensions.yml
+  name: GlobalizationExtensions
+  fullName: System.Globalization.GlobalizationExtensions
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Globalization.Extensions/src/System/Globalization/Extensions.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Globalization.Extensions/src/System/Globalization/Extensions.cs
+    startLine: 9
+  assemblies:
+  - System.Globalization.Extensions
+  namespace: System.Globalization
+  syntax:
+    content: public class GlobalizationExtensions
+    content.vb: Public Class GlobalizationExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Globalization.GlobalizationExtensions.GetStringComparer(System.Globalization.CompareInfo,System.Globalization.CompareOptions)
+  id: GetStringComparer(System.Globalization.CompareInfo,System.Globalization.CompareOptions)
+  parent: System.Globalization.GlobalizationExtensions
+  href: System.Globalization.GlobalizationExtensions.yml
+  name: GetStringComparer(CompareInfo, CompareOptions)
+  fullName: System.Globalization.GlobalizationExtensions.GetStringComparer(System.Globalization.CompareInfo, System.Globalization.CompareOptions)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Globalization.Extensions/src/System/Globalization/Extensions.cs
+    startLine: 11
+  assemblies:
+  - System.Globalization.Extensions
+  namespace: System.Globalization
+  syntax:
+    content: public static StringComparer GetStringComparer(CompareInfo compareInfo, CompareOptions options)
+    content.vb: Public Shared Function GetStringComparer(compareInfo As CompareInfo, options As CompareOptions) As StringComparer
+    parameters:
+    - id: compareInfo
+      type: System.Globalization.CompareInfo
+    - id: options
+      type: System.Globalization.CompareOptions
+    return:
+      type: System.StringComparer
+      description: 
+references:
+- uid: System.Globalization
+  isExternal: false
+  name: System.Globalization
+  fullName: System.Globalization
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Globalization.CompareInfo
+  parent: System.Globalization
+  isExternal: false
+  href: System.Globalization.CompareInfo.yml
+  name: CompareInfo
+  fullName: System.Globalization.CompareInfo
+  type: Class
+- uid: System.Globalization.CompareOptions
+  parent: System.Globalization
+  isExternal: false
+  href: System.Globalization.CompareOptions.yml
+  name: CompareOptions
+  fullName: System.Globalization.CompareOptions
+  type: Enum
+- uid: System.StringComparer
+  parent: System
+  isExternal: false
+  href: System.StringComparer.yml
+  name: StringComparer
+  fullName: System.StringComparer
+  type: Class

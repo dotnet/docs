@@ -1,0 +1,1579 @@
+items:
+- uid: System.Collections.Generic.SortedSet`1
+  id: SortedSet`1
+  parent: System.Collections.Generic
+  children:
+  - System.Collections.Generic.SortedSet`1.#ctor
+  - System.Collections.Generic.SortedSet`1.#ctor(System.Collections.Generic.IComparer{`0})
+  - System.Collections.Generic.SortedSet`1.#ctor(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Generic.SortedSet`1.#ctor(System.Collections.Generic.IEnumerable{`0},System.Collections.Generic.IComparer{`0})
+  - System.Collections.Generic.SortedSet`1.Add(`0)
+  - System.Collections.Generic.SortedSet`1.Clear
+  - System.Collections.Generic.SortedSet`1.Comparer
+  - System.Collections.Generic.SortedSet`1.Contains(`0)
+  - System.Collections.Generic.SortedSet`1.CopyTo(`0[])
+  - System.Collections.Generic.SortedSet`1.CopyTo(`0[],System.Int32)
+  - System.Collections.Generic.SortedSet`1.CopyTo(`0[],System.Int32,System.Int32)
+  - System.Collections.Generic.SortedSet`1.Count
+  - System.Collections.Generic.SortedSet`1.ExceptWith(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Generic.SortedSet`1.GetEnumerator
+  - System.Collections.Generic.SortedSet`1.GetViewBetween(`0,`0)
+  - System.Collections.Generic.SortedSet`1.IntersectWith(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Generic.SortedSet`1.IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Generic.SortedSet`1.IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Generic.SortedSet`1.IsSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Generic.SortedSet`1.IsSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Generic.SortedSet`1.Max
+  - System.Collections.Generic.SortedSet`1.Min
+  - System.Collections.Generic.SortedSet`1.Overlaps(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Generic.SortedSet`1.Remove(`0)
+  - System.Collections.Generic.SortedSet`1.RemoveWhere(System.Predicate{`0})
+  - System.Collections.Generic.SortedSet`1.Reverse
+  - System.Collections.Generic.SortedSet`1.SetEquals(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Generic.SortedSet`1.SymmetricExceptWith(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Generic.SortedSet`1.System#Collections#Generic#ICollection{T}#Add(`0)
+  - System.Collections.Generic.SortedSet`1.System#Collections#Generic#ICollection{T}#IsReadOnly
+  - System.Collections.Generic.SortedSet`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator
+  - System.Collections.Generic.SortedSet`1.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  - System.Collections.Generic.SortedSet`1.System#Collections#ICollection#IsSynchronized
+  - System.Collections.Generic.SortedSet`1.System#Collections#ICollection#SyncRoot
+  - System.Collections.Generic.SortedSet`1.System#Collections#IEnumerable#GetEnumerator
+  - System.Collections.Generic.SortedSet`1.UnionWith(System.Collections.Generic.IEnumerable{`0})
+  href: System.Collections.Generic.SortedSet`1.yml
+  name: SortedSet<T>
+  name.vb: SortedSet(Of T)
+  fullName: System.Collections.Generic.SortedSet<T>
+  fullName.vb: System.Collections.Generic.SortedSet(Of T)
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Collections/src/System/Collections/Generic/SortedSet.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Collections/src/System/Collections/Generic/SortedSet.cs
+    startLine: 43
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Represents a collection of objects that is maintained in sorted order.
+  syntax:
+    content: 'public class SortedSet<T> : ISet<T>, ICollection<T>, ICollection, IReadOnlyCollection<T>, IEnumerable<T>, IEnumerable'
+    content.vb: Public Class SortedSet(Of T) Implements ISet(Of T), ICollection(Of T), ICollection, IReadOnlyCollection(Of T), IEnumerable(Of T), IEnumerable
+    typeParameters:
+    - id: T
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.Generic.ISet{{T}}
+  - System.Collections.Generic.ICollection{{T}}
+  - System.Collections.ICollection
+  - System.Collections.Generic.IReadOnlyCollection{{T}}
+  - System.Collections.Generic.IEnumerable{{T}}
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Collections.Generic.SortedSet`1.#ctor
+  id: '#ctor'
+  parent: System.Collections.Generic.SortedSet`1
+  href: System.Collections.Generic.SortedSet`1.yml
+  name: SortedSet()
+  fullName: System.Collections.Generic.SortedSet<T>.SortedSet()
+  fullName.vb: System.Collections.Generic.SortedSet(Of T).SortedSet()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedSet.cs
+    startLine: 60
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Initializes a new instance of the @'System.Collections.Generic.SortedSet`1' class.
+  syntax:
+    content: public SortedSet()
+    content.vb: Public Sub New
+- uid: System.Collections.Generic.SortedSet`1.#ctor(System.Collections.Generic.IComparer{`0})
+  id: '#ctor(System.Collections.Generic.IComparer{`0})'
+  parent: System.Collections.Generic.SortedSet`1
+  href: System.Collections.Generic.SortedSet`1.yml
+  name: SortedSet(IComparer<T>)
+  name.vb: SortedSet(IComparer(Of T))
+  fullName: System.Collections.Generic.SortedSet<T>.SortedSet(System.Collections.Generic.IComparer<T>)
+  fullName.vb: System.Collections.Generic.SortedSet(Of T).SortedSet(System.Collections.Generic.IComparer(Of T))
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedSet.cs
+    startLine: 65
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Initializes a new instance of the @'System.Collections.Generic.SortedSet`1' class that uses a specified comparer.
+  syntax:
+    content: public SortedSet(IComparer<T> comparer)
+    content.vb: Public Sub New(comparer As IComparer(Of T))
+    parameters:
+    - id: comparer
+      type: System.Collections.Generic.IComparer{{T}}
+      description: The default comparer to use for comparing objects.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*comparer* is null.'
+- uid: System.Collections.Generic.SortedSet`1.#ctor(System.Collections.Generic.IEnumerable{`0})
+  id: '#ctor(System.Collections.Generic.IEnumerable{`0})'
+  parent: System.Collections.Generic.SortedSet`1
+  href: System.Collections.Generic.SortedSet`1.yml
+  name: SortedSet(IEnumerable<T>)
+  name.vb: SortedSet(IEnumerable(Of T))
+  fullName: System.Collections.Generic.SortedSet<T>.SortedSet(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Generic.SortedSet(Of T).SortedSet(System.Collections.Generic.IEnumerable(Of T))
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedSet.cs
+    startLine: 78
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Initializes a new instance of the @'System.Collections.Generic.SortedSet`1' class that contains elements copied from a specified enumerable collection.
+  syntax:
+    content: public SortedSet(IEnumerable<T> collection)
+    content.vb: Public Sub New(collection As IEnumerable(Of T))
+    parameters:
+    - id: collection
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The enumerable collection to be copied.
+- uid: System.Collections.Generic.SortedSet`1.#ctor(System.Collections.Generic.IEnumerable{`0},System.Collections.Generic.IComparer{`0})
+  id: '#ctor(System.Collections.Generic.IEnumerable{`0},System.Collections.Generic.IComparer{`0})'
+  parent: System.Collections.Generic.SortedSet`1
+  href: System.Collections.Generic.SortedSet`1.yml
+  name: SortedSet(IEnumerable<T>, IComparer<T>)
+  name.vb: SortedSet(IEnumerable(Of T), IComparer(Of T))
+  fullName: System.Collections.Generic.SortedSet<T>.SortedSet(System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IComparer<T>)
+  fullName.vb: System.Collections.Generic.SortedSet(Of T).SortedSet(System.Collections.Generic.IEnumerable(Of T), System.Collections.Generic.IComparer(Of T))
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedSet.cs
+    startLine: 80
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Initializes a new instance of the @'System.Collections.Generic.SortedSet`1' class that contains elements copied from a specified enumerable collection and that uses a specified comparer.
+  syntax:
+    content: public SortedSet(IEnumerable<T> collection, IComparer<T> comparer)
+    content.vb: Public Sub New(collection As IEnumerable(Of T), comparer As IComparer(Of T))
+    parameters:
+    - id: collection
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The enumerable collection to be copied.
+    - id: comparer
+      type: System.Collections.Generic.IComparer{{T}}
+      description: The default comparer to use for comparing objects.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*collection* is null.'
+- uid: System.Collections.Generic.SortedSet`1.Count
+  id: Count
+  parent: System.Collections.Generic.SortedSet`1
+  href: System.Collections.Generic.SortedSet`1.yml
+  name: Count
+  fullName: System.Collections.Generic.SortedSet<T>.Count
+  fullName.vb: System.Collections.Generic.SortedSet(Of T).Count
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedSet.cs
+    startLine: 284
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Gets the number of elements in the @'System.Collections.Generic.SortedSet`1'.
+  syntax:
+    content: public int Count { get; }
+    content.vb: Public ReadOnly Property Count As Integer
+    parameters: []
+    return:
+      type: System.Int32
+- uid: System.Collections.Generic.SortedSet`1.Comparer
+  id: Comparer
+  parent: System.Collections.Generic.SortedSet`1
+  href: System.Collections.Generic.SortedSet`1.yml
+  name: Comparer
+  fullName: System.Collections.Generic.SortedSet<T>.Comparer
+  fullName.vb: System.Collections.Generic.SortedSet(Of T).Comparer
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedSet.cs
+    startLine: 293
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Gets the @'System.Collections.Generic.IEqualityComparer`1' object that is used to determine equality for the values in the @'System.Collections.Generic.SortedSet`1'.
+  syntax:
+    content: public IComparer<T> Comparer { get; }
+    content.vb: Public ReadOnly Property Comparer As IComparer(Of T)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IComparer{{T}}
+- uid: System.Collections.Generic.SortedSet`1.System#Collections#Generic#ICollection{T}#IsReadOnly
+  id: System#Collections#Generic#ICollection{T}#IsReadOnly
+  parent: System.Collections.Generic.SortedSet`1
+  href: System.Collections.Generic.SortedSet`1.yml
+  name: ICollection<T>.IsReadOnly
+  name.vb: System.Collections.Generic.ICollection<T>.IsReadOnly
+  fullName: System.Collections.Generic.SortedSet<T>.System.Collections.Generic.ICollection<T>.IsReadOnly
+  fullName.vb: System.Collections.Generic.SortedSet(Of T).System.Collections.Generic.ICollection<T>.IsReadOnly
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedSet.cs
+    startLine: 301
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Gets a value that indicates whether a @'System.Collections.ICollection' is read-only.
+  syntax:
+    content: bool ICollection<T>.IsReadOnly { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.Generic.ICollection<T>.IsReadOnly As Boolean Implements ICollection(Of T).IsReadOnly
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Collections.Generic.SortedSet`1.System#Collections#ICollection#IsSynchronized
+  id: System#Collections#ICollection#IsSynchronized
+  parent: System.Collections.Generic.SortedSet`1
+  href: System.Collections.Generic.SortedSet`1.yml
+  name: ICollection.IsSynchronized
+  name.vb: System.Collections.ICollection.IsSynchronized
+  fullName: System.Collections.Generic.SortedSet<T>.System.Collections.ICollection.IsSynchronized
+  fullName.vb: System.Collections.Generic.SortedSet(Of T).System.Collections.ICollection.IsSynchronized
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedSet.cs
+    startLine: 309
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Gets a value that indicates whether access to the @'System.Collections.ICollection' is synchronized (thread safe).
+  syntax:
+    content: bool ICollection.IsSynchronized { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.ICollection.IsSynchronized As Boolean Implements ICollection.IsSynchronized
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Collections.Generic.SortedSet`1.System#Collections#ICollection#SyncRoot
+  id: System#Collections#ICollection#SyncRoot
+  parent: System.Collections.Generic.SortedSet`1
+  href: System.Collections.Generic.SortedSet`1.yml
+  name: ICollection.SyncRoot
+  name.vb: System.Collections.ICollection.SyncRoot
+  fullName: System.Collections.Generic.SortedSet<T>.System.Collections.ICollection.SyncRoot
+  fullName.vb: System.Collections.Generic.SortedSet(Of T).System.Collections.ICollection.SyncRoot
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedSet.cs
+    startLine: 317
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Gets an object that can be used to synchronize access to the @'System.Collections.ICollection'.
+  syntax:
+    content: object ICollection.SyncRoot { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.ICollection.SyncRoot As Object Implements ICollection.SyncRoot
+    parameters: []
+    return:
+      type: System.Object
+- uid: System.Collections.Generic.SortedSet`1.Add(`0)
+  id: Add(`0)
+  parent: System.Collections.Generic.SortedSet`1
+  href: System.Collections.Generic.SortedSet`1.yml
+  name: Add(T)
+  fullName: System.Collections.Generic.SortedSet<T>.Add(T)
+  fullName.vb: System.Collections.Generic.SortedSet(Of T).Add(T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedSet.cs
+    startLine: 348
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Adds an element to the set and returns a value that indicates if it was successfully added.
+  syntax:
+    content: public bool Add(T item)
+    content.vb: Public Function Add(item As T) As Boolean
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The element to add to the set.
+    return:
+      type: System.Boolean
+- uid: System.Collections.Generic.SortedSet`1.System#Collections#Generic#ICollection{T}#Add(`0)
+  id: System#Collections#Generic#ICollection{T}#Add(`0)
+  parent: System.Collections.Generic.SortedSet`1
+  href: System.Collections.Generic.SortedSet`1.yml
+  name: ICollection<T>.Add(T)
+  name.vb: System.Collections.Generic.ICollection<T>.Add(T)
+  fullName: System.Collections.Generic.SortedSet<T>.System.Collections.Generic.ICollection<T>.Add(T)
+  fullName.vb: System.Collections.Generic.SortedSet(Of T).System.Collections.Generic.ICollection<T>.Add(T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedSet.cs
+    startLine: 353
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Adds an item to an @'System.Collections.Generic.ICollection`1' object.
+  syntax:
+    content: void ICollection<T>.Add(T item)
+    content.vb: Sub System.Collections.Generic.ICollection<T>.Add(item As T) Implements ICollection(Of T).Add
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The object to add to the @'System.Collections.Generic.ICollection`1' object.
+  exceptions:
+  - type: System.NotSupportedException
+    description: The @'System.Collections.Generic.ICollection`1' is read-only.
+- uid: System.Collections.Generic.SortedSet`1.Remove(`0)
+  id: Remove(`0)
+  parent: System.Collections.Generic.SortedSet`1
+  href: System.Collections.Generic.SortedSet`1.yml
+  name: Remove(T)
+  fullName: System.Collections.Generic.SortedSet<T>.Remove(T)
+  fullName.vb: System.Collections.Generic.SortedSet(Of T).Remove(T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedSet.cs
+    startLine: 445
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Removes a specified item from the @'System.Collections.Generic.SortedSet`1'.
+  syntax:
+    content: public bool Remove(T item)
+    content.vb: Public Function Remove(item As T) As Boolean
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The element to remove.
+    return:
+      type: System.Boolean
+- uid: System.Collections.Generic.SortedSet`1.Clear
+  id: Clear
+  parent: System.Collections.Generic.SortedSet`1
+  href: System.Collections.Generic.SortedSet`1.yml
+  name: Clear()
+  fullName: System.Collections.Generic.SortedSet<T>.Clear()
+  fullName.vb: System.Collections.Generic.SortedSet(Of T).Clear()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedSet.cs
+    startLine: 606
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Removes all elements from the set.
+  syntax:
+    content: public virtual void Clear()
+    content.vb: Public Overridable Sub Clear
+- uid: System.Collections.Generic.SortedSet`1.Contains(`0)
+  id: Contains(`0)
+  parent: System.Collections.Generic.SortedSet`1
+  href: System.Collections.Generic.SortedSet`1.yml
+  name: Contains(T)
+  fullName: System.Collections.Generic.SortedSet<T>.Contains(T)
+  fullName.vb: System.Collections.Generic.SortedSet(Of T).Contains(T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedSet.cs
+    startLine: 614
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Determines whether the set contains a specific element.
+  syntax:
+    content: public virtual bool Contains(T item)
+    content.vb: Public Overridable Function Contains(item As T) As Boolean
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The element to locate in the set.
+    return:
+      type: System.Boolean
+- uid: System.Collections.Generic.SortedSet`1.CopyTo(`0[])
+  id: CopyTo(`0[])
+  parent: System.Collections.Generic.SortedSet`1
+  href: System.Collections.Generic.SortedSet`1.yml
+  name: CopyTo(T[])
+  name.vb: CopyTo(T())
+  fullName: System.Collections.Generic.SortedSet<T>.CopyTo(T[])
+  fullName.vb: System.Collections.Generic.SortedSet(Of T).CopyTo(T())
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedSet.cs
+    startLine: 622
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Copies the complete @'System.Collections.Generic.SortedSet`1' to a compatible one-dimensional array, starting at the beginning of the target array.
+  syntax:
+    content: public void CopyTo(T[] array)
+    content.vb: Public Sub CopyTo(array As T())
+    parameters:
+    - id: array
+      type: '{T}[]'
+      description: A one-dimensional array that is the destination of the elements copied from the @'System.Collections.Generic.SortedSet`1'.
+  exceptions:
+  - type: System.ArgumentException
+    description: The number of elements in the source @'System.Collections.Generic.SortedSet`1' exceeds the number of elements that the destination array can contain.
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+- uid: System.Collections.Generic.SortedSet`1.CopyTo(`0[],System.Int32)
+  id: CopyTo(`0[],System.Int32)
+  parent: System.Collections.Generic.SortedSet`1
+  href: System.Collections.Generic.SortedSet`1.yml
+  name: CopyTo(T[], Int32)
+  name.vb: CopyTo(T(), Int32)
+  fullName: System.Collections.Generic.SortedSet<T>.CopyTo(T[], System.Int32)
+  fullName.vb: System.Collections.Generic.SortedSet(Of T).CopyTo(T(), System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedSet.cs
+    startLine: 624
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Copies the complete @'System.Collections.Generic.SortedSet`1' to a compatible one-dimensional array, starting at the specified array index.
+  syntax:
+    content: public void CopyTo(T[] array, int index)
+    content.vb: Public Sub CopyTo(array As T(), index As Integer)
+    parameters:
+    - id: array
+      type: '{T}[]'
+      description: A one-dimensional array that is the destination of the elements copied from the @'System.Collections.Generic.SortedSet`1'. The array must have zero-based indexing.
+    - id: index
+      type: System.Int32
+      description: The zero-based index in *array* at which copying begins.
+  exceptions:
+  - type: System.ArgumentException
+    description: The number of elements in the source array is greater than the available space from *index* to the end of the destination array.
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero.'
+- uid: System.Collections.Generic.SortedSet`1.CopyTo(`0[],System.Int32,System.Int32)
+  id: CopyTo(`0[],System.Int32,System.Int32)
+  parent: System.Collections.Generic.SortedSet`1
+  href: System.Collections.Generic.SortedSet`1.yml
+  name: CopyTo(T[], Int32, Int32)
+  name.vb: CopyTo(T(), Int32, Int32)
+  fullName: System.Collections.Generic.SortedSet<T>.CopyTo(T[], System.Int32, System.Int32)
+  fullName.vb: System.Collections.Generic.SortedSet(Of T).CopyTo(T(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedSet.cs
+    startLine: 626
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Copies a specified number of elements from @'System.Collections.Generic.SortedSet`1' to a compatible one-dimensional array, starting at the specified array index.
+  syntax:
+    content: public void CopyTo(T[] array, int index, int count)
+    content.vb: Public Sub CopyTo(array As T(), index As Integer, count As Integer)
+    parameters:
+    - id: array
+      type: '{T}[]'
+      description: A one-dimensional array that is the destination of the elements copied from the @'System.Collections.Generic.SortedSet`1'. The array must have zero-based indexing.
+    - id: index
+      type: System.Int32
+      description: The zero-based index in *array* at which copying begins.
+    - id: count
+      type: System.Int32
+      description: The number of elements to copy.
+  exceptions:
+  - type: System.ArgumentException
+    description: The number of elements in the source array is greater than the available space from *index* to the end of the destination array.
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero.-or-*count* is less than zero.'
+- uid: System.Collections.Generic.SortedSet`1.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  id: System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  parent: System.Collections.Generic.SortedSet`1
+  href: System.Collections.Generic.SortedSet`1.yml
+  name: ICollection.CopyTo(Array, Int32)
+  name.vb: System.Collections.ICollection.CopyTo(Array, Int32)
+  fullName: System.Collections.Generic.SortedSet<T>.System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  fullName.vb: System.Collections.Generic.SortedSet(Of T).System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedSet.cs
+    startLine: 667
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Copies the complete @'System.Collections.Generic.SortedSet`1' to a compatible one-dimensional array, starting at the specified array index.
+  syntax:
+    content: void ICollection.CopyTo(Array array, int index)
+    content.vb: Sub System.Collections.ICollection.CopyTo(array As Array, index As Integer) Implements ICollection.CopyTo
+    parameters:
+    - id: array
+      type: System.Array
+      description: A one-dimensional array that is the destination of the elements copied from the @'System.Collections.Generic.SortedSet`1'. The array must have zero-based indexing.
+    - id: index
+      type: System.Int32
+      description: The zero-based index in *array* at which copying begins.
+  exceptions:
+  - type: System.ArgumentException
+    description: The number of elements in the source array is greater than the available space from *index* to the end of the destination array.
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero.'
+- uid: System.Collections.Generic.SortedSet`1.GetEnumerator
+  id: GetEnumerator
+  parent: System.Collections.Generic.SortedSet`1
+  href: System.Collections.Generic.SortedSet`1.yml
+  name: GetEnumerator()
+  fullName: System.Collections.Generic.SortedSet<T>.GetEnumerator()
+  fullName.vb: System.Collections.Generic.SortedSet(Of T).GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedSet.cs
+    startLine: 721
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Returns an enumerator that iterates through the @'System.Collections.Generic.SortedSet`1'.
+  syntax:
+    content: public SortedSet<T>.Enumerator GetEnumerator()
+    content.vb: Public Function GetEnumerator As SortedSet(Of T).Enumerator
+    return:
+      type: System.Collections.Generic.SortedSet`1.Enumerator
+- uid: System.Collections.Generic.SortedSet`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator
+  id: System#Collections#Generic#IEnumerable{T}#GetEnumerator
+  parent: System.Collections.Generic.SortedSet`1
+  href: System.Collections.Generic.SortedSet`1.yml
+  name: IEnumerable<T>.GetEnumerator()
+  name.vb: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.SortedSet<T>.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  fullName.vb: System.Collections.Generic.SortedSet(Of T).System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedSet.cs
+    startLine: 729
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Returns an enumerator that iterates through a collection.
+  syntax:
+    content: IEnumerator<T> IEnumerable<T>.GetEnumerator()
+    content.vb: Function System.Collections.Generic.IEnumerable<T>.GetEnumerator As IEnumerator(Of T) Implements IEnumerable(Of T).GetEnumerator
+    return:
+      type: System.Collections.Generic.IEnumerator{{T}}
+- uid: System.Collections.Generic.SortedSet`1.System#Collections#IEnumerable#GetEnumerator
+  id: System#Collections#IEnumerable#GetEnumerator
+  parent: System.Collections.Generic.SortedSet`1
+  href: System.Collections.Generic.SortedSet`1.yml
+  name: IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: System.Collections.Generic.SortedSet<T>.System.Collections.IEnumerable.GetEnumerator()
+  fullName.vb: System.Collections.Generic.SortedSet(Of T).System.Collections.IEnumerable.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedSet.cs
+    startLine: 734
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Returns an enumerator that iterates through a collection.
+  syntax:
+    content: IEnumerator IEnumerable.GetEnumerator()
+    content.vb: Function System.Collections.IEnumerable.GetEnumerator As IEnumerator Implements IEnumerable.GetEnumerator
+    return:
+      type: System.Collections.IEnumerator
+- uid: System.Collections.Generic.SortedSet`1.UnionWith(System.Collections.Generic.IEnumerable{`0})
+  id: UnionWith(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Generic.SortedSet`1
+  href: System.Collections.Generic.SortedSet`1.yml
+  name: UnionWith(IEnumerable<T>)
+  name.vb: UnionWith(IEnumerable(Of T))
+  fullName: System.Collections.Generic.SortedSet<T>.UnionWith(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Generic.SortedSet(Of T).UnionWith(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedSet.cs
+    startLine: 1099
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Modifies the current @'System.Collections.Generic.SortedSet`1' object so that it contains all elements that are present in either the current object or the specified collection.
+  syntax:
+    content: public void UnionWith(IEnumerable<T> other)
+    content.vb: Public Sub UnionWith(other As IEnumerable(Of T))
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to compare to the current @'System.Collections.Generic.SortedSet`1' object.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*other* is null.'
+- uid: System.Collections.Generic.SortedSet`1.IntersectWith(System.Collections.Generic.IEnumerable{`0})
+  id: IntersectWith(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Generic.SortedSet`1
+  href: System.Collections.Generic.SortedSet`1.yml
+  name: IntersectWith(IEnumerable<T>)
+  name.vb: IntersectWith(IEnumerable(Of T))
+  fullName: System.Collections.Generic.SortedSet<T>.IntersectWith(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Generic.SortedSet(Of T).IntersectWith(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedSet.cs
+    startLine: 1259
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Modifies the current @'System.Collections.Generic.SortedSet`1' object so that it contains only elements that are also in a specified collection.
+  syntax:
+    content: public virtual void IntersectWith(IEnumerable<T> other)
+    content.vb: Public Overridable Sub IntersectWith(other As IEnumerable(Of T))
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to compare to the current @'System.Collections.Generic.SortedSet`1' object.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*other* is null.'
+- uid: System.Collections.Generic.SortedSet`1.ExceptWith(System.Collections.Generic.IEnumerable{`0})
+  id: ExceptWith(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Generic.SortedSet`1
+  href: System.Collections.Generic.SortedSet`1.yml
+  name: ExceptWith(IEnumerable<T>)
+  name.vb: ExceptWith(IEnumerable(Of T))
+  fullName: System.Collections.Generic.SortedSet<T>.ExceptWith(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Generic.SortedSet(Of T).ExceptWith(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedSet.cs
+    startLine: 1347
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Removes all elements that are in a specified collection from the current @'System.Collections.Generic.SortedSet`1' object.
+  syntax:
+    content: public void ExceptWith(IEnumerable<T> other)
+    content.vb: Public Sub ExceptWith(other As IEnumerable(Of T))
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection of items to remove from the @'System.Collections.Generic.SortedSet`1' object.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*other* is null.'
+- uid: System.Collections.Generic.SortedSet`1.SymmetricExceptWith(System.Collections.Generic.IEnumerable{`0})
+  id: SymmetricExceptWith(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Generic.SortedSet`1
+  href: System.Collections.Generic.SortedSet`1.yml
+  name: SymmetricExceptWith(IEnumerable<T>)
+  name.vb: SymmetricExceptWith(IEnumerable(Of T))
+  fullName: System.Collections.Generic.SortedSet<T>.SymmetricExceptWith(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Generic.SortedSet(Of T).SymmetricExceptWith(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedSet.cs
+    startLine: 1395
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Modifies the current @'System.Collections.Generic.SortedSet`1' object so that it contains only elements that are present either in the current object or in the specified collection, but not both.
+  syntax:
+    content: public void SymmetricExceptWith(IEnumerable<T> other)
+    content.vb: Public Sub SymmetricExceptWith(other As IEnumerable(Of T))
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to compare to the current @'System.Collections.Generic.SortedSet`1' object.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*other* is null.'
+- uid: System.Collections.Generic.SortedSet`1.IsSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  id: IsSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Generic.SortedSet`1
+  href: System.Collections.Generic.SortedSet`1.yml
+  name: IsSubsetOf(IEnumerable<T>)
+  name.vb: IsSubsetOf(IEnumerable(Of T))
+  fullName: System.Collections.Generic.SortedSet<T>.IsSubsetOf(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Generic.SortedSet(Of T).IsSubsetOf(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedSet.cs
+    startLine: 1481
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Determines whether a @'System.Collections.Generic.SortedSet`1' object is a subset of the specified collection.
+  syntax:
+    content: public bool IsSubsetOf(IEnumerable<T> other)
+    content.vb: Public Function IsSubsetOf(other As IEnumerable(Of T)) As Boolean
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to compare to the current @'System.Collections.Generic.SortedSet`1' object.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*other* is null.'
+- uid: System.Collections.Generic.SortedSet`1.IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  id: IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Generic.SortedSet`1
+  href: System.Collections.Generic.SortedSet`1.yml
+  name: IsProperSubsetOf(IEnumerable<T>)
+  name.vb: IsProperSubsetOf(IEnumerable(Of T))
+  fullName: System.Collections.Generic.SortedSet<T>.IsProperSubsetOf(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Generic.SortedSet(Of T).IsProperSubsetOf(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedSet.cs
+    startLine: 1526
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Determines whether a @'System.Collections.Generic.SortedSet`1' object is a proper subset of the specified collection.
+  syntax:
+    content: public bool IsProperSubsetOf(IEnumerable<T> other)
+    content.vb: Public Function IsProperSubsetOf(other As IEnumerable(Of T)) As Boolean
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to compare to the current @'System.Collections.Generic.SortedSet`1' object.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*other* is null.'
+- uid: System.Collections.Generic.SortedSet`1.IsSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  id: IsSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Generic.SortedSet`1
+  href: System.Collections.Generic.SortedSet`1.yml
+  name: IsSupersetOf(IEnumerable<T>)
+  name.vb: IsSupersetOf(IEnumerable(Of T))
+  fullName: System.Collections.Generic.SortedSet<T>.IsSupersetOf(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Generic.SortedSet(Of T).IsSupersetOf(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedSet.cs
+    startLine: 1562
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Determines whether a @'System.Collections.Generic.SortedSet`1' object is a superset of the specified collection.
+  syntax:
+    content: public bool IsSupersetOf(IEnumerable<T> other)
+    content.vb: Public Function IsSupersetOf(other As IEnumerable(Of T)) As Boolean
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to compare to the current @'System.Collections.Generic.SortedSet`1' object.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*other* is null.'
+- uid: System.Collections.Generic.SortedSet`1.IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  id: IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Generic.SortedSet`1
+  href: System.Collections.Generic.SortedSet`1.yml
+  name: IsProperSupersetOf(IEnumerable<T>)
+  name.vb: IsProperSupersetOf(IEnumerable(Of T))
+  fullName: System.Collections.Generic.SortedSet<T>.IsProperSupersetOf(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Generic.SortedSet(Of T).IsProperSupersetOf(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedSet.cs
+    startLine: 1596
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Determines whether a @'System.Collections.Generic.SortedSet`1' object is a proper superset of the specified collection.
+  syntax:
+    content: public bool IsProperSupersetOf(IEnumerable<T> other)
+    content.vb: Public Function IsProperSupersetOf(other As IEnumerable(Of T)) As Boolean
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to compare to the current @'System.Collections.Generic.SortedSet`1' object.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*other* is null.'
+- uid: System.Collections.Generic.SortedSet`1.SetEquals(System.Collections.Generic.IEnumerable{`0})
+  id: SetEquals(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Generic.SortedSet`1
+  href: System.Collections.Generic.SortedSet`1.yml
+  name: SetEquals(IEnumerable<T>)
+  name.vb: SetEquals(IEnumerable(Of T))
+  fullName: System.Collections.Generic.SortedSet<T>.SetEquals(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Generic.SortedSet(Of T).SetEquals(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedSet.cs
+    startLine: 1640
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Determines whether the current @'System.Collections.Generic.SortedSet`1' object and the specified collection contain the same elements.
+  syntax:
+    content: public bool SetEquals(IEnumerable<T> other)
+    content.vb: Public Function SetEquals(other As IEnumerable(Of T)) As Boolean
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to compare to the current @'System.Collections.Generic.SortedSet`1' object.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*other* is null.'
+- uid: System.Collections.Generic.SortedSet`1.Overlaps(System.Collections.Generic.IEnumerable{`0})
+  id: Overlaps(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Generic.SortedSet`1
+  href: System.Collections.Generic.SortedSet`1.yml
+  name: Overlaps(IEnumerable<T>)
+  name.vb: Overlaps(IEnumerable(Of T))
+  fullName: System.Collections.Generic.SortedSet<T>.Overlaps(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Generic.SortedSet(Of T).Overlaps(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedSet.cs
+    startLine: 1679
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Determines whether the current @'System.Collections.Generic.SortedSet`1' object and a specified collection share common elements.
+  syntax:
+    content: public bool Overlaps(IEnumerable<T> other)
+    content.vb: Public Function Overlaps(other As IEnumerable(Of T)) As Boolean
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to compare to the current @'System.Collections.Generic.SortedSet`1' object.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*other* is null.'
+- uid: System.Collections.Generic.SortedSet`1.RemoveWhere(System.Predicate{`0})
+  id: RemoveWhere(System.Predicate{`0})
+  parent: System.Collections.Generic.SortedSet`1
+  href: System.Collections.Generic.SortedSet`1.yml
+  name: RemoveWhere(Predicate<T>)
+  name.vb: RemoveWhere(Predicate(Of T))
+  fullName: System.Collections.Generic.SortedSet<T>.RemoveWhere(System.Predicate<T>)
+  fullName.vb: System.Collections.Generic.SortedSet(Of T).RemoveWhere(System.Predicate(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedSet.cs
+    startLine: 1806
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Removes all elements that match the conditions defined by the specified predicate from a @'System.Collections.Generic.SortedSet`1'.
+  syntax:
+    content: public int RemoveWhere(Predicate<T> match)
+    content.vb: Public Function RemoveWhere(match As Predicate(Of T)) As Integer
+    parameters:
+    - id: match
+      type: System.Predicate{{T}}
+      description: The delegate that defines the conditions of the elements to remove.
+    return:
+      type: System.Int32
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*match* is null.'
+- uid: System.Collections.Generic.SortedSet`1.Min
+  id: Min
+  parent: System.Collections.Generic.SortedSet`1
+  href: System.Collections.Generic.SortedSet`1.yml
+  name: Min
+  fullName: System.Collections.Generic.SortedSet<T>.Min
+  fullName.vb: System.Collections.Generic.SortedSet(Of T).Min
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedSet.cs
+    startLine: 1841
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Gets the minimum value in the @'System.Collections.Generic.SortedSet`1', as defined by the comparer.
+  syntax:
+    content: public T Min { get; }
+    content.vb: Public ReadOnly Property Min As T
+    parameters: []
+    return:
+      type: '{T}'
+- uid: System.Collections.Generic.SortedSet`1.Max
+  id: Max
+  parent: System.Collections.Generic.SortedSet`1
+  href: System.Collections.Generic.SortedSet`1.yml
+  name: Max
+  fullName: System.Collections.Generic.SortedSet<T>.Max
+  fullName.vb: System.Collections.Generic.SortedSet(Of T).Max
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedSet.cs
+    startLine: 1851
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Gets the maximum value in the @'System.Collections.Generic.SortedSet`1', as defined by the comparer.
+  syntax:
+    content: public T Max { get; }
+    content.vb: Public ReadOnly Property Max As T
+    parameters: []
+    return:
+      type: '{T}'
+- uid: System.Collections.Generic.SortedSet`1.Reverse
+  id: Reverse
+  parent: System.Collections.Generic.SortedSet`1
+  href: System.Collections.Generic.SortedSet`1.yml
+  name: Reverse()
+  fullName: System.Collections.Generic.SortedSet<T>.Reverse()
+  fullName.vb: System.Collections.Generic.SortedSet(Of T).Reverse()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedSet.cs
+    startLine: 1861
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Returns an @'System.Collections.Generic.IEnumerable`1' that iterates over the @'System.Collections.Generic.SortedSet`1' in reverse order.
+  syntax:
+    content: public IEnumerable<T> Reverse()
+    content.vb: Public Function Reverse As IEnumerable(Of T)
+    return:
+      type: System.Collections.Generic.IEnumerable{{T}}
+- uid: System.Collections.Generic.SortedSet`1.GetViewBetween(`0,`0)
+  id: GetViewBetween(`0,`0)
+  parent: System.Collections.Generic.SortedSet`1
+  href: System.Collections.Generic.SortedSet`1.yml
+  name: GetViewBetween(T, T)
+  fullName: System.Collections.Generic.SortedSet<T>.GetViewBetween(T, T)
+  fullName.vb: System.Collections.Generic.SortedSet(Of T).GetViewBetween(T, T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/SortedSet.cs
+    startLine: 1877
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Returns a view of a subset in a @'System.Collections.Generic.SortedSet`1'.
+  syntax:
+    content: public virtual SortedSet<T> GetViewBetween(T lowerValue, T upperValue)
+    content.vb: Public Overridable Function GetViewBetween(lowerValue As T, upperValue As T) As SortedSet(Of T)
+    parameters:
+    - id: lowerValue
+      type: '{T}'
+      description: The lowest desired value in the view.
+    - id: upperValue
+      type: '{T}'
+      description: The highest desired value in the view.
+    return:
+      type: System.Collections.Generic.SortedSet`1
+  exceptions:
+  - type: System.ArgumentException
+    description: '*lowerValue* is more than *upperValue* according to the comparer.'
+  - type: System.ArgumentOutOfRangeException
+    description: A tried operation on the view was outside the range specified by *lowerValue* and *upperValue*.
+references:
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Collections.Generic.IComparer{{T}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IComparer`1
+  name: IComparer<T>
+  name.vb: IComparer(Of T)
+  fullName: System.Collections.Generic.IComparer<T>
+  fullName.vb: System.Collections.Generic.IComparer(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    fullName: System.Collections.Generic.IComparer
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    fullName: System.Collections.Generic.IComparer
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IComparer`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IComparer<T>
+  name.vb: IComparer(Of T)
+  fullName: System.Collections.Generic.IComparer<T>
+  fullName.vb: System.Collections.Generic.IComparer(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    fullName: System.Collections.Generic.IComparer
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    fullName: System.Collections.Generic.IComparer
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: '{T}'
+  isExternal: false
+  name: T
+  fullName: T
+- uid: '{T}[]'
+  isExternal: false
+  name: T[]
+  name.vb: T()
+  fullName: T[]
+  fullName.vb: T()
+  spec.csharp:
+  - name: T
+    fullName: T
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - name: T
+    fullName: T
+  - name: ()
+    fullName: ()
+- uid: System.Array
+  parent: System
+  isExternal: true
+  name: Array
+  fullName: System.Array
+- uid: System.Collections.Generic.SortedSet`1.Enumerator
+  parent: System.Collections.Generic
+  isExternal: false
+  href: System.Collections.Generic.SortedSet`1.Enumerator.yml
+  name: SortedSet.Enumerator<>
+  name.vb: SortedSet.Enumerator(Of )
+  fullName: System.Collections.Generic.SortedSet.Enumerator<>
+  fullName.vb: System.Collections.Generic.SortedSet.Enumerator(Of )
+  type: Struct
+  spec.csharp:
+  - uid: System.Collections.Generic.SortedSet`1.Enumerator
+    name: SortedSet.Enumerator
+    fullName: System.Collections.Generic.SortedSet.Enumerator
+    href: System.Collections.Generic.SortedSet`1.Enumerator.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.SortedSet`1.Enumerator
+    name: SortedSet.Enumerator
+    fullName: System.Collections.Generic.SortedSet.Enumerator
+    href: System.Collections.Generic.SortedSet`1.Enumerator.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator{{T}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  name: IEnumerator<T>
+  name.vb: IEnumerator(Of T)
+  fullName: System.Collections.Generic.IEnumerator<T>
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerator<T>
+  name.vb: IEnumerator(Of T)
+  fullName: System.Collections.Generic.IEnumerator<T>
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  isExternal: false
+  name: System.Collections
+  fullName: System.Collections
+- uid: System.Predicate{{T}}
+  parent: System
+  definition: System.Predicate`1
+  name: Predicate<T>
+  name.vb: Predicate(Of T)
+  fullName: System.Predicate<T>
+  fullName.vb: System.Predicate(Of T)
+  spec.csharp:
+  - uid: System.Predicate`1
+    name: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Predicate`1
+    name: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Predicate`1
+  parent: System
+  isExternal: true
+  name: Predicate<T>
+  name.vb: Predicate(Of T)
+  fullName: System.Predicate<T>
+  fullName.vb: System.Predicate(Of T)
+  spec.csharp:
+  - uid: System.Predicate`1
+    name: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Predicate`1
+    name: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.SortedSet`1
+  parent: System.Collections.Generic
+  isExternal: false
+  href: System.Collections.Generic.SortedSet`1.yml
+  name: SortedSet<T>
+  name.vb: SortedSet(Of T)
+  fullName: System.Collections.Generic.SortedSet<T>
+  fullName.vb: System.Collections.Generic.SortedSet(Of T)
+  type: Class
+  spec.csharp:
+  - uid: System.Collections.Generic.SortedSet`1
+    name: SortedSet
+    fullName: System.Collections.Generic.SortedSet
+    href: System.Collections.Generic.SortedSet`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.SortedSet`1
+    name: SortedSet
+    fullName: System.Collections.Generic.SortedSet
+    href: System.Collections.Generic.SortedSet`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )

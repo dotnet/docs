@@ -1,0 +1,119 @@
+items:
+- uid: System.Security.Principal.TokenImpersonationLevel
+  id: TokenImpersonationLevel
+  parent: System.Security.Principal
+  children:
+  - System.Security.Principal.TokenImpersonationLevel.Anonymous
+  - System.Security.Principal.TokenImpersonationLevel.Delegation
+  - System.Security.Principal.TokenImpersonationLevel.Identification
+  - System.Security.Principal.TokenImpersonationLevel.Impersonation
+  - System.Security.Principal.TokenImpersonationLevel.None
+  href: System.Security.Principal.TokenImpersonationLevel.yml
+  name: TokenImpersonationLevel
+  fullName: System.Security.Principal.TokenImpersonationLevel
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Security/Principal/TokenImpersonationLevel.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Security/Principal/TokenImpersonationLevel.cs
+    startLine: 11
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Principal
+  summary: Defines security impersonation levels. Security impersonation levels govern the degree to which a server process can act on behalf of a client process.
+  syntax:
+    content: public enum TokenImpersonationLevel
+    content.vb: Public Enum TokenImpersonationLevel
+- uid: System.Security.Principal.TokenImpersonationLevel.None
+  id: None
+  parent: System.Security.Principal.TokenImpersonationLevel
+  href: System.Security.Principal.TokenImpersonationLevel.yml
+  name: None
+  fullName: System.Security.Principal.TokenImpersonationLevel.None
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Principal/TokenImpersonationLevel.cs
+    startLine: 12
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Principal
+  summary: An impersonation level is not assigned.
+  syntax:
+    content: None = 0
+- uid: System.Security.Principal.TokenImpersonationLevel.Anonymous
+  id: Anonymous
+  parent: System.Security.Principal.TokenImpersonationLevel
+  href: System.Security.Principal.TokenImpersonationLevel.yml
+  name: Anonymous
+  fullName: System.Security.Principal.TokenImpersonationLevel.Anonymous
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Principal/TokenImpersonationLevel.cs
+    startLine: 13
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Principal
+  summary: The server process cannot obtain identification information about the client, and it cannot impersonate the client.
+  syntax:
+    content: Anonymous = 1
+- uid: System.Security.Principal.TokenImpersonationLevel.Identification
+  id: Identification
+  parent: System.Security.Principal.TokenImpersonationLevel
+  href: System.Security.Principal.TokenImpersonationLevel.yml
+  name: Identification
+  fullName: System.Security.Principal.TokenImpersonationLevel.Identification
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Principal/TokenImpersonationLevel.cs
+    startLine: 14
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Principal
+  summary: The server process can obtain information about the client, such as security identifiers and privileges, but it cannot impersonate the client. This is useful for servers that export their own objects, for example, database products that export tables and views. Using the retrieved client-security information, the server can make access-validation decisions without being able to use other services that are using the client's security context.
+  syntax:
+    content: Identification = 2
+- uid: System.Security.Principal.TokenImpersonationLevel.Impersonation
+  id: Impersonation
+  parent: System.Security.Principal.TokenImpersonationLevel
+  href: System.Security.Principal.TokenImpersonationLevel.yml
+  name: Impersonation
+  fullName: System.Security.Principal.TokenImpersonationLevel.Impersonation
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Principal/TokenImpersonationLevel.cs
+    startLine: 15
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Principal
+  summary: The server process can impersonate the client's security context on its local system. The server cannot impersonate the client on remote systems.
+  syntax:
+    content: Impersonation = 3
+- uid: System.Security.Principal.TokenImpersonationLevel.Delegation
+  id: Delegation
+  parent: System.Security.Principal.TokenImpersonationLevel
+  href: System.Security.Principal.TokenImpersonationLevel.yml
+  name: Delegation
+  fullName: System.Security.Principal.TokenImpersonationLevel.Delegation
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Principal/TokenImpersonationLevel.cs
+    startLine: 16
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Principal
+  summary: The server process can impersonate the client's security context on remote systems.
+  syntax:
+    content: Delegation = 4
+references:
+- uid: System.Security.Principal
+  isExternal: false
+  name: System.Security.Principal
+  fullName: System.Security.Principal
+  type: Namespace

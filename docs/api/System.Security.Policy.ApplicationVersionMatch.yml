@@ -1,0 +1,65 @@
+items:
+- uid: System.Security.Policy.ApplicationVersionMatch
+  id: ApplicationVersionMatch
+  parent: System.Security.Policy
+  children:
+  - System.Security.Policy.ApplicationVersionMatch.MatchAllVersions
+  - System.Security.Policy.ApplicationVersionMatch.MatchExactVersion
+  href: System.Security.Policy.ApplicationVersionMatch.yml
+  name: ApplicationVersionMatch
+  fullName: System.Security.Policy.ApplicationVersionMatch
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Security/Policy/ApplicationTrust.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Security/Policy/ApplicationTrust.cs
+    startLine: 31
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Policy
+  summary: Specifies how to match versions when locating application trusts in a collection.
+  syntax:
+    content: public enum ApplicationVersionMatch
+    content.vb: Public Enum ApplicationVersionMatch
+- uid: System.Security.Policy.ApplicationVersionMatch.MatchExactVersion
+  id: MatchExactVersion
+  parent: System.Security.Policy.ApplicationVersionMatch
+  href: System.Security.Policy.ApplicationVersionMatch.yml
+  name: MatchExactVersion
+  fullName: System.Security.Policy.ApplicationVersionMatch.MatchExactVersion
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Policy/ApplicationTrust.cs
+    startLine: 33
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Policy
+  summary: Match on the exact version.
+  syntax:
+    content: MatchExactVersion = 0
+- uid: System.Security.Policy.ApplicationVersionMatch.MatchAllVersions
+  id: MatchAllVersions
+  parent: System.Security.Policy.ApplicationVersionMatch
+  href: System.Security.Policy.ApplicationVersionMatch.yml
+  name: MatchAllVersions
+  fullName: System.Security.Policy.ApplicationVersionMatch.MatchAllVersions
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Policy/ApplicationTrust.cs
+    startLine: 34
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Policy
+  summary: Match on all versions.
+  syntax:
+    content: MatchAllVersions = 1
+references:
+- uid: System.Security.Policy
+  isExternal: false
+  name: System.Security.Policy
+  fullName: System.Security.Policy
+  type: Namespace

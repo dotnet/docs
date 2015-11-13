@@ -1,0 +1,1105 @@
+items:
+- uid: System.Globalization.CultureInfo
+  id: CultureInfo
+  parent: System.Globalization
+  children:
+  - System.Globalization.CultureInfo.#ctor(System.String)
+  - System.Globalization.CultureInfo.#ctor(System.String,System.Boolean)
+  - System.Globalization.CultureInfo.Calendar
+  - System.Globalization.CultureInfo.ClearCachedData
+  - System.Globalization.CultureInfo.Clone
+  - System.Globalization.CultureInfo.CompareInfo
+  - System.Globalization.CultureInfo.CurrentCulture
+  - System.Globalization.CultureInfo.CurrentUICulture
+  - System.Globalization.CultureInfo.DateTimeFormat
+  - System.Globalization.CultureInfo.DefaultThreadCurrentCulture
+  - System.Globalization.CultureInfo.DefaultThreadCurrentUICulture
+  - System.Globalization.CultureInfo.DisplayName
+  - System.Globalization.CultureInfo.EnglishName
+  - System.Globalization.CultureInfo.Equals(System.Object)
+  - System.Globalization.CultureInfo.GetCultureInfo(System.String)
+  - System.Globalization.CultureInfo.GetCultureInfo(System.String,System.String)
+  - System.Globalization.CultureInfo.GetFormat(System.Type)
+  - System.Globalization.CultureInfo.GetHashCode
+  - System.Globalization.CultureInfo.InstalledUICulture
+  - System.Globalization.CultureInfo.InvariantCulture
+  - System.Globalization.CultureInfo.IsNeutralCulture
+  - System.Globalization.CultureInfo.IsReadOnly
+  - System.Globalization.CultureInfo.Name
+  - System.Globalization.CultureInfo.NativeName
+  - System.Globalization.CultureInfo.NumberFormat
+  - System.Globalization.CultureInfo.OptionalCalendars
+  - System.Globalization.CultureInfo.Parent
+  - System.Globalization.CultureInfo.ReadOnly(System.Globalization.CultureInfo)
+  - System.Globalization.CultureInfo.TextInfo
+  - System.Globalization.CultureInfo.ToString
+  - System.Globalization.CultureInfo.TwoLetterISOLanguageName
+  - System.Globalization.CultureInfo.UseUserOverride
+  href: System.Globalization.CultureInfo.yml
+  name: CultureInfo
+  fullName: System.Globalization.CultureInfo
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Globalization/CultureInfo.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Globalization/CultureInfo.cs
+    startLine: 43
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Provides information about a specific culture (called a locale for unmanaged code development). The information includes the names for the culture, the writing system, the calendar used, the sort order of strings, and formatting for dates and numbers.
+  syntax:
+    content: 'public class CultureInfo : ICloneable, IFormatProvider'
+    content.vb: Public Class CultureInfo Implements ICloneable, IFormatProvider
+  inheritance:
+  - System.Object
+  implements:
+  - System.ICloneable
+  - System.IFormatProvider
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Globalization.CultureInfo.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: System.Globalization.CultureInfo
+  href: System.Globalization.CultureInfo.yml
+  name: CultureInfo(String)
+  fullName: System.Globalization.CultureInfo.CultureInfo(System.String)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CultureInfo.cs
+    startLine: 320
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Initializes a new instance of the @'System.Globalization.CultureInfo' class based on the culture specified by name.
+  syntax:
+    content: public CultureInfo(string name)
+    content.vb: Public Sub New(name As String)
+    parameters:
+    - id: name
+      type: System.String
+      description: A predefined @'System.Globalization.CultureInfo' name, @'System.Globalization.CultureInfo.Name' of an existing @'System.Globalization.CultureInfo', or Windows-only culture name. *name* is not case-sensitive.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*name* is null.'
+  - type: System.Globalization.CultureNotFoundException
+    description: '*name* is not a valid culture name. For more information, see the Notes to Callers section.'
+- uid: System.Globalization.CultureInfo.#ctor(System.String,System.Boolean)
+  id: '#ctor(System.String,System.Boolean)'
+  parent: System.Globalization.CultureInfo
+  href: System.Globalization.CultureInfo.yml
+  name: CultureInfo(String, Boolean)
+  fullName: System.Globalization.CultureInfo.CultureInfo(System.String, System.Boolean)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CultureInfo.cs
+    startLine: 324
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Initializes a new instance of the @'System.Globalization.CultureInfo' class based on the culture specified by name and on the Boolean that specifies whether to use the user-selected culture settings from the system.
+  syntax:
+    content: public CultureInfo(string name, bool useUserOverride)
+    content.vb: Public Sub New(name As String, useUserOverride As Boolean)
+    parameters:
+    - id: name
+      type: System.String
+      description: A predefined @'System.Globalization.CultureInfo' name, @'System.Globalization.CultureInfo.Name' of an existing @'System.Globalization.CultureInfo', or Windows-only culture name. *name* is not case-sensitive.
+    - id: useUserOverride
+      type: System.Boolean
+      description: A Boolean that denotes whether to use the user-selected culture settings (true) or the default culture settings (false).
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*name* is null.'
+  - type: System.Globalization.CultureNotFoundException
+    description: '*name* is not a valid culture name. See the Notes to Callers section for more information.'
+- uid: System.Globalization.CultureInfo.CurrentCulture
+  id: CurrentCulture
+  parent: System.Globalization.CultureInfo
+  href: System.Globalization.CultureInfo.yml
+  name: CurrentCulture
+  fullName: System.Globalization.CultureInfo.CurrentCulture
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CultureInfo.cs
+    startLine: 686
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Gets or sets the @'System.Globalization.CultureInfo' object that represents the culture used by the current thread.
+  syntax:
+    content: public static CultureInfo CurrentCulture { get; set; }
+    content.vb: Public Shared Property CurrentCulture As CultureInfo
+    parameters: []
+    return:
+      type: System.Globalization.CultureInfo
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The property is set to null.
+- uid: System.Globalization.CultureInfo.CurrentUICulture
+  id: CurrentUICulture
+  parent: System.Globalization.CultureInfo
+  href: System.Globalization.CultureInfo.yml
+  name: CurrentUICulture
+  fullName: System.Globalization.CultureInfo.CurrentUICulture
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CultureInfo.cs
+    startLine: 785
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Gets or sets the @'System.Globalization.CultureInfo' object that represents the current user interface culture used by the Resource Manager to look up culture-specific resources at run time.
+  syntax:
+    content: public static CultureInfo CurrentUICulture { get; set; }
+    content.vb: Public Shared Property CurrentUICulture As CultureInfo
+    parameters: []
+    return:
+      type: System.Globalization.CultureInfo
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The property is set to null.
+  - type: System.ArgumentException
+    description: The property is set to a culture name that cannot be used to locate a resource file. Resource filenames can include only letters, numbers, hyphens, or underscores.
+- uid: System.Globalization.CultureInfo.InstalledUICulture
+  id: InstalledUICulture
+  parent: System.Globalization.CultureInfo
+  href: System.Globalization.CultureInfo.yml
+  name: InstalledUICulture
+  fullName: System.Globalization.CultureInfo.InstalledUICulture
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CultureInfo.cs
+    startLine: 836
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Gets the @'System.Globalization.CultureInfo' that represents the culture installed with the operating system.
+  syntax:
+    content: public static CultureInfo InstalledUICulture { get; }
+    content.vb: Public Shared ReadOnly Property InstalledUICulture As CultureInfo
+    parameters: []
+    return:
+      type: System.Globalization.CultureInfo
+- uid: System.Globalization.CultureInfo.DefaultThreadCurrentCulture
+  id: DefaultThreadCurrentCulture
+  parent: System.Globalization.CultureInfo
+  href: System.Globalization.CultureInfo.yml
+  name: DefaultThreadCurrentCulture
+  fullName: System.Globalization.CultureInfo.DefaultThreadCurrentCulture
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CultureInfo.cs
+    startLine: 857
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Gets or sets the default culture for threads in the current application domain.
+  syntax:
+    content: public static CultureInfo DefaultThreadCurrentCulture { get; set; }
+    content.vb: Public Shared Property DefaultThreadCurrentCulture As CultureInfo
+    parameters: []
+    return:
+      type: System.Globalization.CultureInfo
+- uid: System.Globalization.CultureInfo.DefaultThreadCurrentUICulture
+  id: DefaultThreadCurrentUICulture
+  parent: System.Globalization.CultureInfo
+  href: System.Globalization.CultureInfo.yml
+  name: DefaultThreadCurrentUICulture
+  fullName: System.Globalization.CultureInfo.DefaultThreadCurrentUICulture
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CultureInfo.cs
+    startLine: 875
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Gets or sets the default UI culture for threads in the current application domain.
+  syntax:
+    content: public static CultureInfo DefaultThreadCurrentUICulture { get; set; }
+    content.vb: Public Shared Property DefaultThreadCurrentUICulture As CultureInfo
+    parameters: []
+    return:
+      type: System.Globalization.CultureInfo
+  exceptions:
+  - type: System.ArgumentException
+    description: In a set operation, the @'System.Globalization.CultureInfo.Name' property value is invalid.
+- uid: System.Globalization.CultureInfo.InvariantCulture
+  id: InvariantCulture
+  parent: System.Globalization.CultureInfo
+  href: System.Globalization.CultureInfo.yml
+  name: InvariantCulture
+  fullName: System.Globalization.CultureInfo.InvariantCulture
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CultureInfo.cs
+    startLine: 930
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Gets the @'System.Globalization.CultureInfo' object that is culture-independent (invariant).
+  syntax:
+    content: public static CultureInfo InvariantCulture { get; }
+    content.vb: Public Shared ReadOnly Property InvariantCulture As CultureInfo
+    parameters: []
+    return:
+      type: System.Globalization.CultureInfo
+- uid: System.Globalization.CultureInfo.Parent
+  id: Parent
+  parent: System.Globalization.CultureInfo
+  href: System.Globalization.CultureInfo.yml
+  name: Parent
+  fullName: System.Globalization.CultureInfo.Parent
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CultureInfo.cs
+    startLine: 947
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Gets the @'System.Globalization.CultureInfo' that represents the parent culture of the current @'System.Globalization.CultureInfo'.
+  syntax:
+    content: public virtual CultureInfo Parent { get; }
+    content.vb: Public Overridable ReadOnly Property Parent As CultureInfo
+    parameters: []
+    return:
+      type: System.Globalization.CultureInfo
+- uid: System.Globalization.CultureInfo.Name
+  id: Name
+  parent: System.Globalization.CultureInfo
+  href: System.Globalization.CultureInfo.yml
+  name: Name
+  fullName: System.Globalization.CultureInfo.Name
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CultureInfo.cs
+    startLine: 1041
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Gets the culture name in the format languagecode2-country/regioncode2.
+  syntax:
+    content: public virtual string Name { get; }
+    content.vb: Public Overridable ReadOnly Property Name As String
+    parameters: []
+    return:
+      type: System.String
+- uid: System.Globalization.CultureInfo.DisplayName
+  id: DisplayName
+  parent: System.Globalization.CultureInfo
+  href: System.Globalization.CultureInfo.yml
+  name: DisplayName
+  fullName: System.Globalization.CultureInfo.DisplayName
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CultureInfo.cs
+    startLine: 1101
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Gets the full localized culture name.
+  syntax:
+    content: public virtual string DisplayName { get; }
+    content.vb: Public Overridable ReadOnly Property DisplayName As String
+    parameters: []
+    return:
+      type: System.String
+- uid: System.Globalization.CultureInfo.NativeName
+  id: NativeName
+  parent: System.Globalization.CultureInfo
+  href: System.Globalization.CultureInfo.yml
+  name: NativeName
+  fullName: System.Globalization.CultureInfo.NativeName
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CultureInfo.cs
+    startLine: 1122
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Gets the culture name, consisting of the language, the country/region, and the optional script, that the culture is set to display.
+  syntax:
+    content: public virtual string NativeName { get; }
+    content.vb: Public Overridable ReadOnly Property NativeName As String
+    parameters: []
+    return:
+      type: System.String
+- uid: System.Globalization.CultureInfo.EnglishName
+  id: EnglishName
+  parent: System.Globalization.CultureInfo
+  href: System.Globalization.CultureInfo.yml
+  name: EnglishName
+  fullName: System.Globalization.CultureInfo.EnglishName
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CultureInfo.cs
+    startLine: 1139
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Gets the culture name in the format languagefull [country/regionfull] in English.
+  syntax:
+    content: public virtual string EnglishName { get; }
+    content.vb: Public Overridable ReadOnly Property EnglishName As String
+    parameters: []
+    return:
+      type: System.String
+- uid: System.Globalization.CultureInfo.TwoLetterISOLanguageName
+  id: TwoLetterISOLanguageName
+  parent: System.Globalization.CultureInfo
+  href: System.Globalization.CultureInfo.yml
+  name: TwoLetterISOLanguageName
+  fullName: System.Globalization.CultureInfo.TwoLetterISOLanguageName
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CultureInfo.cs
+    startLine: 1148
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Gets the ISO 639-1 two-letter code for the language of the current @'System.Globalization.CultureInfo'.
+  syntax:
+    content: public virtual string TwoLetterISOLanguageName { get; }
+    content.vb: Public Overridable ReadOnly Property TwoLetterISOLanguageName As String
+    parameters: []
+    return:
+      type: System.String
+- uid: System.Globalization.CultureInfo.CompareInfo
+  id: CompareInfo
+  parent: System.Globalization.CultureInfo
+  href: System.Globalization.CultureInfo.yml
+  name: CompareInfo
+  fullName: System.Globalization.CultureInfo.CompareInfo
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CultureInfo.cs
+    startLine: 1190
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Gets the @'System.Globalization.CompareInfo' that defines how to compare strings for the culture.
+  syntax:
+    content: public virtual CompareInfo CompareInfo { get; }
+    content.vb: Public Overridable ReadOnly Property CompareInfo As CompareInfo
+    parameters: []
+    return:
+      type: System.Globalization.CompareInfo
+- uid: System.Globalization.CultureInfo.TextInfo
+  id: TextInfo
+  parent: System.Globalization.CultureInfo
+  href: System.Globalization.CultureInfo.yml
+  name: TextInfo
+  fullName: System.Globalization.CultureInfo.TextInfo
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CultureInfo.cs
+    startLine: 1250
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Gets the @'System.Globalization.TextInfo' that defines the writing system associated with the culture.
+  syntax:
+    content: public virtual TextInfo TextInfo { get; }
+    content.vb: Public Overridable ReadOnly Property TextInfo As TextInfo
+    parameters: []
+    return:
+      type: System.Globalization.TextInfo
+- uid: System.Globalization.CultureInfo.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Globalization.CultureInfo
+  href: System.Globalization.CultureInfo.yml
+  name: Equals(Object)
+  fullName: System.Globalization.CultureInfo.Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CultureInfo.cs
+    startLine: 1283
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Determines whether the specified object is the same culture as the current @'System.Globalization.CultureInfo'.
+  syntax:
+    content: public override bool Equals(object value)
+    content.vb: Public Overrides Function Equals(value As Object) As Boolean
+    parameters:
+    - id: value
+      type: System.Object
+      description: The object to compare with the current @'System.Globalization.CultureInfo'.
+    return:
+      type: System.Boolean
+  overridden: System.Object.Equals(System.Object)
+- uid: System.Globalization.CultureInfo.GetHashCode
+  id: GetHashCode
+  parent: System.Globalization.CultureInfo
+  href: System.Globalization.CultureInfo.yml
+  name: GetHashCode()
+  fullName: System.Globalization.CultureInfo.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CultureInfo.cs
+    startLine: 1312
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Serves as a hash function for the current @'System.Globalization.CultureInfo', suitable for hashing algorithms and data structures, such as a hash table.
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+  overridden: System.Object.GetHashCode
+- uid: System.Globalization.CultureInfo.ToString
+  id: ToString
+  parent: System.Globalization.CultureInfo
+  href: System.Globalization.CultureInfo.yml
+  name: ToString()
+  fullName: System.Globalization.CultureInfo.ToString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CultureInfo.cs
+    startLine: 1328
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Returns a string containing the name of the current @'System.Globalization.CultureInfo' in the format languagecode2-country/regioncode2.
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+  overridden: System.Object.ToString
+- uid: System.Globalization.CultureInfo.GetFormat(System.Type)
+  id: GetFormat(System.Type)
+  parent: System.Globalization.CultureInfo
+  href: System.Globalization.CultureInfo.yml
+  name: GetFormat(Type)
+  fullName: System.Globalization.CultureInfo.GetFormat(System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CultureInfo.cs
+    startLine: 1337
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Gets an object that defines how to format the specified type.
+  syntax:
+    content: public virtual object GetFormat(Type formatType)
+    content.vb: Public Overridable Function GetFormat(formatType As Type) As Object
+    parameters:
+    - id: formatType
+      type: System.Type
+      description: The @'System.Type' for which to get a formatting object. This method only supports the @'System.Globalization.NumberFormatInfo' and @'System.Globalization.DateTimeFormatInfo' types.
+    return:
+      type: System.Object
+- uid: System.Globalization.CultureInfo.IsNeutralCulture
+  id: IsNeutralCulture
+  parent: System.Globalization.CultureInfo
+  href: System.Globalization.CultureInfo.yml
+  name: IsNeutralCulture
+  fullName: System.Globalization.CultureInfo.IsNeutralCulture
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CultureInfo.cs
+    startLine: 1347
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Gets a value indicating whether the current @'System.Globalization.CultureInfo' represents a neutral culture.
+  syntax:
+    content: public virtual bool IsNeutralCulture { get; }
+    content.vb: Public Overridable ReadOnly Property IsNeutralCulture As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Globalization.CultureInfo.NumberFormat
+  id: NumberFormat
+  parent: System.Globalization.CultureInfo
+  href: System.Globalization.CultureInfo.yml
+  name: NumberFormat
+  fullName: System.Globalization.CultureInfo.NumberFormat
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CultureInfo.cs
+    startLine: 1381
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Gets or sets a @'System.Globalization.NumberFormatInfo' that defines the culturally appropriate format of displaying numbers, currency, and percentage.
+  syntax:
+    content: public virtual NumberFormatInfo NumberFormat { get; set; }
+    content.vb: Public Overridable Property NumberFormat As NumberFormatInfo
+    parameters: []
+    return:
+      type: System.Globalization.NumberFormatInfo
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The property is set to null.
+  - type: System.InvalidOperationException
+    description: The @'System.Globalization.CultureInfo.NumberFormat' property or any of the @'System.Globalization.NumberFormatInfo' properties is set, and the @'System.Globalization.CultureInfo' is read-only.
+- uid: System.Globalization.CultureInfo.DateTimeFormat
+  id: DateTimeFormat
+  parent: System.Globalization.CultureInfo
+  href: System.Globalization.CultureInfo.yml
+  name: DateTimeFormat
+  fullName: System.Globalization.CultureInfo.DateTimeFormat
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CultureInfo.cs
+    startLine: 1414
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Gets or sets a @'System.Globalization.DateTimeFormatInfo' that defines the culturally appropriate format of displaying dates and times.
+  syntax:
+    content: public virtual DateTimeFormatInfo DateTimeFormat { get; set; }
+    content.vb: Public Overridable Property DateTimeFormat As DateTimeFormatInfo
+    parameters: []
+    return:
+      type: System.Globalization.DateTimeFormatInfo
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The property is set to null.
+  - type: System.InvalidOperationException
+    description: The @'System.Globalization.CultureInfo.DateTimeFormat' property or any of the @'System.Globalization.DateTimeFormatInfo' properties is set, and the @'System.Globalization.CultureInfo' is read-only.
+- uid: System.Globalization.CultureInfo.ClearCachedData
+  id: ClearCachedData
+  parent: System.Globalization.CultureInfo
+  href: System.Globalization.CultureInfo.yml
+  name: ClearCachedData()
+  fullName: System.Globalization.CultureInfo.ClearCachedData()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CultureInfo.cs
+    startLine: 1442
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Refreshes cached culture-related information.
+  syntax:
+    content: public void ClearCachedData()
+    content.vb: Public Sub ClearCachedData
+- uid: System.Globalization.CultureInfo.Calendar
+  id: Calendar
+  parent: System.Globalization.CultureInfo
+  href: System.Globalization.CultureInfo.yml
+  name: Calendar
+  fullName: System.Globalization.CultureInfo.Calendar
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CultureInfo.cs
+    startLine: 1524
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Gets the default calendar used by the culture.
+  syntax:
+    content: public virtual Calendar Calendar { get; }
+    content.vb: Public Overridable ReadOnly Property Calendar As Calendar
+    parameters: []
+    return:
+      type: System.Globalization.Calendar
+- uid: System.Globalization.CultureInfo.OptionalCalendars
+  id: OptionalCalendars
+  parent: System.Globalization.CultureInfo
+  href: System.Globalization.CultureInfo.yml
+  name: OptionalCalendars
+  fullName: System.Globalization.CultureInfo.OptionalCalendars
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CultureInfo.cs
+    startLine: 1549
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Gets the list of calendars that can be used by the culture.
+  syntax:
+    content: public virtual Calendar[] OptionalCalendars { get; }
+    content.vb: Public Overridable ReadOnly Property OptionalCalendars As Calendar()
+    parameters: []
+    return:
+      type: System.Globalization.Calendar[]
+- uid: System.Globalization.CultureInfo.UseUserOverride
+  id: UseUserOverride
+  parent: System.Globalization.CultureInfo
+  href: System.Globalization.CultureInfo.yml
+  name: UseUserOverride
+  fullName: System.Globalization.CultureInfo.UseUserOverride
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CultureInfo.cs
+    startLine: 1566
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Gets a value indicating whether the current @'System.Globalization.CultureInfo' object uses the user-selected culture settings.
+  syntax:
+    content: public bool UseUserOverride { get; }
+    content.vb: Public ReadOnly Property UseUserOverride As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Globalization.CultureInfo.Clone
+  id: Clone
+  parent: System.Globalization.CultureInfo
+  href: System.Globalization.CultureInfo.yml
+  name: Clone()
+  fullName: System.Globalization.CultureInfo.Clone()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CultureInfo.cs
+    startLine: 1590
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Creates a copy of the current @'System.Globalization.CultureInfo'.
+  syntax:
+    content: public virtual object Clone()
+    content.vb: Public Overridable Function Clone As Object
+    return:
+      type: System.Object
+- uid: System.Globalization.CultureInfo.ReadOnly(System.Globalization.CultureInfo)
+  id: ReadOnly(System.Globalization.CultureInfo)
+  parent: System.Globalization.CultureInfo
+  href: System.Globalization.CultureInfo.yml
+  name: ReadOnly(CultureInfo)
+  fullName: System.Globalization.CultureInfo.ReadOnly(System.Globalization.CultureInfo)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CultureInfo.cs
+    startLine: 1631
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Returns a read-only wrapper around the specified @'System.Globalization.CultureInfo' object.
+  syntax:
+    content: public static CultureInfo ReadOnly(CultureInfo ci)
+    content.vb: Public Shared Function ReadOnly(ci As CultureInfo) As CultureInfo
+    parameters:
+    - id: ci
+      type: System.Globalization.CultureInfo
+      description: The @'System.Globalization.CultureInfo' object to wrap.
+    return:
+      type: System.Globalization.CultureInfo
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*ci* is null.'
+- uid: System.Globalization.CultureInfo.IsReadOnly
+  id: IsReadOnly
+  parent: System.Globalization.CultureInfo
+  href: System.Globalization.CultureInfo.yml
+  name: IsReadOnly
+  fullName: System.Globalization.CultureInfo.IsReadOnly
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CultureInfo.cs
+    startLine: 1679
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Gets a value indicating whether the current @'System.Globalization.CultureInfo' is read-only.
+  syntax:
+    content: public bool IsReadOnly { get; }
+    content.vb: Public ReadOnly Property IsReadOnly As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Globalization.CultureInfo.GetCultureInfo(System.String)
+  id: GetCultureInfo(System.String)
+  parent: System.Globalization.CultureInfo
+  href: System.Globalization.CultureInfo.yml
+  name: GetCultureInfo(String)
+  fullName: System.Globalization.CultureInfo.GetCultureInfo(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CultureInfo.cs
+    startLine: 1882
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Retrieves a cached, read-only instance of a culture using the specified culture name.
+  syntax:
+    content: public static CultureInfo GetCultureInfo(string name)
+    content.vb: Public Shared Function GetCultureInfo(name As String) As CultureInfo
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of a culture. *name* is not case-sensitive.
+    return:
+      type: System.Globalization.CultureInfo
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*name* is null.'
+  - type: System.Globalization.CultureNotFoundException
+    description: '*name* specifies a culture that is not supported. See the Notes to Callers section for more information.'
+- uid: System.Globalization.CultureInfo.GetCultureInfo(System.String,System.String)
+  id: GetCultureInfo(System.String,System.String)
+  parent: System.Globalization.CultureInfo
+  href: System.Globalization.CultureInfo.yml
+  name: GetCultureInfo(String, String)
+  fullName: System.Globalization.CultureInfo.GetCultureInfo(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CultureInfo.cs
+    startLine: 1904
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Retrieves a cached, read-only instance of a culture. Parameters specify a culture that is initialized with the @'System.Globalization.TextInfo' and @'System.Globalization.CompareInfo' objects specified by another culture.
+  syntax:
+    content: public static CultureInfo GetCultureInfo(string name, string altName)
+    content.vb: Public Shared Function GetCultureInfo(name As String, altName As String) As CultureInfo
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of a culture. *name* is not case-sensitive.
+    - id: altName
+      type: System.String
+      description: The name of a culture that supplies the @'System.Globalization.TextInfo' and @'System.Globalization.CompareInfo' objects used to initialize *name*. *altName* is not case-sensitive.
+    return:
+      type: System.Globalization.CultureInfo
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*name* or *altName* is null.'
+  - type: System.Globalization.CultureNotFoundException
+    description: '*name* or *altName* specifies a culture that is not supported. See the Notes to Callers section for more information.'
+references:
+- uid: System.Globalization
+  isExternal: false
+  name: System.Globalization
+  fullName: System.Globalization
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Globalization.CultureInfo
+  parent: System.Globalization
+  isExternal: true
+  name: CultureInfo
+  fullName: System.Globalization.CultureInfo
+- uid: System.Globalization.CompareInfo
+  parent: System.Globalization
+  isExternal: false
+  href: System.Globalization.CompareInfo.yml
+  name: CompareInfo
+  fullName: System.Globalization.CompareInfo
+  type: Class
+- uid: System.Globalization.TextInfo
+  parent: System.Globalization
+  isExternal: false
+  href: System.Globalization.TextInfo.yml
+  name: TextInfo
+  fullName: System.Globalization.TextInfo
+  type: Class
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  fullName: System.Type
+- uid: System.Globalization.NumberFormatInfo
+  parent: System.Globalization
+  isExternal: false
+  href: System.Globalization.NumberFormatInfo.yml
+  name: NumberFormatInfo
+  fullName: System.Globalization.NumberFormatInfo
+  type: Class
+- uid: System.Globalization.DateTimeFormatInfo
+  parent: System.Globalization
+  isExternal: false
+  href: System.Globalization.DateTimeFormatInfo.yml
+  name: DateTimeFormatInfo
+  fullName: System.Globalization.DateTimeFormatInfo
+  type: Class
+- uid: System.Globalization.Calendar
+  parent: System.Globalization
+  isExternal: false
+  href: System.Globalization.Calendar.yml
+  name: Calendar
+  fullName: System.Globalization.Calendar
+  type: Class
+- uid: System.Globalization.Calendar[]
+  isExternal: false
+  href: System.Globalization.Calendar.yml
+  name: Calendar[]
+  name.vb: Calendar()
+  fullName: System.Globalization.Calendar[]
+  fullName.vb: System.Globalization.Calendar()
+  spec.csharp:
+  - uid: System.Globalization.Calendar
+    name: Calendar
+    fullName: System.Globalization.Calendar
+    href: System.Globalization.Calendar.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Globalization.Calendar
+    name: Calendar
+    fullName: System.Globalization.Calendar
+    href: System.Globalization.Calendar.yml
+  - name: ()
+    fullName: ()

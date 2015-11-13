@@ -1,0 +1,149 @@
+items:
+- uid: System.Runtime.InteropServices.UCOMITypeComp
+  id: UCOMITypeComp
+  parent: System.Runtime.InteropServices
+  children:
+  - System.Runtime.InteropServices.UCOMITypeComp.Bind(System.String,System.Int32,System.Int16,System.Runtime.InteropServices.UCOMITypeInfo@,System.Runtime.InteropServices.DESCKIND@,System.Runtime.InteropServices.BINDPTR@)
+  - System.Runtime.InteropServices.UCOMITypeComp.BindType(System.String,System.Int32,System.Runtime.InteropServices.UCOMITypeInfo@,System.Runtime.InteropServices.UCOMITypeComp@)
+  href: System.Runtime.InteropServices.UCOMITypeComp.yml
+  name: UCOMITypeComp
+  fullName: System.Runtime.InteropServices.UCOMITypeComp
+  type: Interface
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeComp.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeComp.cs
+    startLine: 41
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Use @'System.Runtime.InteropServices.ComTypes.ITypeComp' instead.
+  syntax:
+    content: public interface UCOMITypeComp
+    content.vb: Public Interface UCOMITypeComp
+- uid: System.Runtime.InteropServices.UCOMITypeComp.Bind(System.String,System.Int32,System.Int16,System.Runtime.InteropServices.UCOMITypeInfo@,System.Runtime.InteropServices.DESCKIND@,System.Runtime.InteropServices.BINDPTR@)
+  id: Bind(System.String,System.Int32,System.Int16,System.Runtime.InteropServices.UCOMITypeInfo@,System.Runtime.InteropServices.DESCKIND@,System.Runtime.InteropServices.BINDPTR@)
+  parent: System.Runtime.InteropServices.UCOMITypeComp
+  href: System.Runtime.InteropServices.UCOMITypeComp.yml
+  name: Bind(String, Int32, Int16, out UCOMITypeInfo, out DESCKIND, out BINDPTR)
+  name.vb: Bind(String, Int32, Int16, ByRef UCOMITypeInfo, ByRef DESCKIND, ByRef BINDPTR)
+  fullName: System.Runtime.InteropServices.UCOMITypeComp.Bind(System.String, System.Int32, System.Int16, out System.Runtime.InteropServices.UCOMITypeInfo, out System.Runtime.InteropServices.DESCKIND, out System.Runtime.InteropServices.BINDPTR)
+  fullName.vb: System.Runtime.InteropServices.UCOMITypeComp.Bind(System.String, System.Int32, System.Int16, ByRef System.Runtime.InteropServices.UCOMITypeInfo, ByRef System.Runtime.InteropServices.DESCKIND, ByRef System.Runtime.InteropServices.BINDPTR)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeComp.cs
+    startLine: 47
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Maps a name to a member of a type, or binds global variables and functions contained in a type library.
+  syntax:
+    content: void Bind(string szName, int lHashVal, short wFlags, out UCOMITypeInfo ppTInfo, out DESCKIND pDescKind, out BINDPTR pBindPtr)
+    content.vb: Sub Bind(szName As String, lHashVal As Integer, wFlags As Short, ByRef ppTInfo As UCOMITypeInfo, ByRef pDescKind As DESCKIND, ByRef pBindPtr As BINDPTR)
+    parameters:
+    - id: szName
+      type: System.String
+      description: The name to bind.
+    - id: lHashVal
+      type: System.Int32
+      description: A hash value for *szName* computed by LHashValOfNameSys.
+    - id: wFlags
+      type: System.Int16
+      description: A flags word containing one or more of the invoke flags defined in the INVOKEKIND enumeration.
+    - id: ppTInfo
+      type: System.Runtime.InteropServices.UCOMITypeInfo
+      description: On successful return, a reference to the type description that contains the item to which it is bound, if a FUNCDESC or VARDESC was returned.
+    - id: pDescKind
+      type: System.Runtime.InteropServices.DESCKIND
+      description: A reference to a DESCKIND enumerator that indicates whether the name bound to is a VARDESC, FUNCDESC, or TYPECOMP.
+    - id: pBindPtr
+      type: System.Runtime.InteropServices.BINDPTR
+      description: A reference to the bound-to VARDESC, FUNCDESC, or ITypeComp interface.
+- uid: System.Runtime.InteropServices.UCOMITypeComp.BindType(System.String,System.Int32,System.Runtime.InteropServices.UCOMITypeInfo@,System.Runtime.InteropServices.UCOMITypeComp@)
+  id: BindType(System.String,System.Int32,System.Runtime.InteropServices.UCOMITypeInfo@,System.Runtime.InteropServices.UCOMITypeComp@)
+  parent: System.Runtime.InteropServices.UCOMITypeComp
+  href: System.Runtime.InteropServices.UCOMITypeComp.yml
+  name: BindType(String, Int32, out UCOMITypeInfo, out UCOMITypeComp)
+  name.vb: BindType(String, Int32, ByRef UCOMITypeInfo, ByRef UCOMITypeComp)
+  fullName: System.Runtime.InteropServices.UCOMITypeComp.BindType(System.String, System.Int32, out System.Runtime.InteropServices.UCOMITypeInfo, out System.Runtime.InteropServices.UCOMITypeComp)
+  fullName.vb: System.Runtime.InteropServices.UCOMITypeComp.BindType(System.String, System.Int32, ByRef System.Runtime.InteropServices.UCOMITypeInfo, ByRef System.Runtime.InteropServices.UCOMITypeComp)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeComp.cs
+    startLine: 48
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Binds to the type descriptions contained within a type library.
+  syntax:
+    content: void BindType(string szName, int lHashVal, out UCOMITypeInfo ppTInfo, out UCOMITypeComp ppTComp)
+    content.vb: Sub BindType(szName As String, lHashVal As Integer, ByRef ppTInfo As UCOMITypeInfo, ByRef ppTComp As UCOMITypeComp)
+    parameters:
+    - id: szName
+      type: System.String
+      description: The name to bind.
+    - id: lHashVal
+      type: System.Int32
+      description: A hash value for *szName* determined by LHashValOfNameSys.
+    - id: ppTInfo
+      type: System.Runtime.InteropServices.UCOMITypeInfo
+      description: On successful return, a reference to an ITypeInfo of the type to which *szName* was bound.
+    - id: ppTComp
+      type: System.Runtime.InteropServices.UCOMITypeComp
+      description: On successful return, a reference to an ITypeComp variable.
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Int16
+  parent: System
+  isExternal: true
+  name: Int16
+  fullName: System.Int16
+- uid: System.Runtime.InteropServices.UCOMITypeInfo
+  parent: System.Runtime.InteropServices
+  isExternal: false
+  href: System.Runtime.InteropServices.UCOMITypeInfo.yml
+  name: UCOMITypeInfo
+  fullName: System.Runtime.InteropServices.UCOMITypeInfo
+  type: Interface
+- uid: System.Runtime.InteropServices.DESCKIND
+  parent: System.Runtime.InteropServices
+  isExternal: false
+  href: System.Runtime.InteropServices.DESCKIND.yml
+  name: DESCKIND
+  fullName: System.Runtime.InteropServices.DESCKIND
+  type: Enum
+- uid: System.Runtime.InteropServices.BINDPTR
+  isExternal: false
+  href: System.Runtime.InteropServices.BINDPTR.yml
+  name: BINDPTR
+  fullName: System.Runtime.InteropServices.BINDPTR
+  type: Struct
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Runtime.InteropServices.UCOMITypeComp
+  parent: System.Runtime.InteropServices
+  isExternal: false
+  href: System.Runtime.InteropServices.UCOMITypeComp.yml
+  name: UCOMITypeComp
+  fullName: System.Runtime.InteropServices.UCOMITypeComp
+  type: Interface

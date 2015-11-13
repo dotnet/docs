@@ -1,0 +1,1171 @@
+items:
+- uid: System.Net.Http.Headers.HttpContentHeaders
+  id: HttpContentHeaders
+  parent: System.Net.Http.Headers
+  children:
+  - System.Net.Http.Headers.HttpContentHeaders.Allow
+  - System.Net.Http.Headers.HttpContentHeaders.ContentDisposition
+  - System.Net.Http.Headers.HttpContentHeaders.ContentEncoding
+  - System.Net.Http.Headers.HttpContentHeaders.ContentLanguage
+  - System.Net.Http.Headers.HttpContentHeaders.ContentLength
+  - System.Net.Http.Headers.HttpContentHeaders.ContentLocation
+  - System.Net.Http.Headers.HttpContentHeaders.ContentMD5
+  - System.Net.Http.Headers.HttpContentHeaders.ContentRange
+  - System.Net.Http.Headers.HttpContentHeaders.ContentType
+  - System.Net.Http.Headers.HttpContentHeaders.Expires
+  - System.Net.Http.Headers.HttpContentHeaders.LastModified
+  href: System.Net.Http.Headers.HttpContentHeaders.yml
+  name: HttpContentHeaders
+  fullName: System.Net.Http.Headers.HttpContentHeaders
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Net.Http/src/System/Net/Http/Headers/HttpContentHeaders.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Net.Http/src/System/Net/Http/Headers/HttpContentHeaders.cs
+    startLine: 9
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Represents the collection of Content Headers as defined in RFC 2616.
+  syntax:
+    content: 'public sealed class HttpContentHeaders : HttpHeaders, IEnumerable<KeyValuePair<string, IEnumerable<string>>>, IEnumerable'
+    content.vb: Public NotInheritable Class HttpContentHeaders Inherits HttpHeaders Implements IEnumerable(Of KeyValuePair(Of String, IEnumerable(Of String))), IEnumerable
+  inheritance:
+  - System.Object
+  - System.Net.Http.Headers.HttpHeaders
+  implements:
+  - System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Collections.Generic.IEnumerable{System.String}}}
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Net.Http.Headers.HttpHeaders.Add(System.String,System.String)
+  - System.Net.Http.Headers.HttpHeaders.Add(System.String,System.Collections.Generic.IEnumerable{System.String})
+  - System.Net.Http.Headers.HttpHeaders.TryAddWithoutValidation(System.String,System.String)
+  - System.Net.Http.Headers.HttpHeaders.TryAddWithoutValidation(System.String,System.Collections.Generic.IEnumerable{System.String})
+  - System.Net.Http.Headers.HttpHeaders.Clear
+  - System.Net.Http.Headers.HttpHeaders.Remove(System.String)
+  - System.Net.Http.Headers.HttpHeaders.GetValues(System.String)
+  - System.Net.Http.Headers.HttpHeaders.TryGetValues(System.String,System.Collections.Generic.IEnumerable{System.String}@)
+  - System.Net.Http.Headers.HttpHeaders.Contains(System.String)
+  - System.Net.Http.Headers.HttpHeaders.ToString
+  - System.Net.Http.Headers.HttpHeaders.GetEnumerator
+  - System.Net.Http.Headers.HttpHeaders.System#Collections#IEnumerable#GetEnumerator
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Net.Http.Headers.HttpContentHeaders.Allow
+  id: Allow
+  parent: System.Net.Http.Headers.HttpContentHeaders
+  href: System.Net.Http.Headers.HttpContentHeaders.yml
+  name: Allow
+  fullName: System.Net.Http.Headers.HttpContentHeaders.Allow
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/HttpContentHeaders.cs
+    startLine: 23
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Gets the value of the Allow content header on an HTTP response.
+  syntax:
+    content: public ICollection<string> Allow { get; }
+    content.vb: Public ReadOnly Property Allow As ICollection(Of String)
+    parameters: []
+    return:
+      type: System.Collections.Generic.ICollection{System.String}
+- uid: System.Net.Http.Headers.HttpContentHeaders.ContentDisposition
+  id: ContentDisposition
+  parent: System.Net.Http.Headers.HttpContentHeaders
+  href: System.Net.Http.Headers.HttpContentHeaders.yml
+  name: ContentDisposition
+  fullName: System.Net.Http.Headers.HttpContentHeaders.ContentDisposition
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/HttpContentHeaders.cs
+    startLine: 36
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Gets the value of the Content-Disposition content header on an HTTP response.
+  syntax:
+    content: public ContentDispositionHeaderValue ContentDisposition { get; set; }
+    content.vb: Public Property ContentDisposition As ContentDispositionHeaderValue
+    parameters: []
+    return:
+      type: System.Net.Http.Headers.ContentDispositionHeaderValue
+- uid: System.Net.Http.Headers.HttpContentHeaders.ContentEncoding
+  id: ContentEncoding
+  parent: System.Net.Http.Headers.HttpContentHeaders
+  href: System.Net.Http.Headers.HttpContentHeaders.yml
+  name: ContentEncoding
+  fullName: System.Net.Http.Headers.HttpContentHeaders.ContentEncoding
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/HttpContentHeaders.cs
+    startLine: 44
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Gets the value of the Content-Encoding content header on an HTTP response.
+  syntax:
+    content: public ICollection<string> ContentEncoding { get; }
+    content.vb: Public ReadOnly Property ContentEncoding As ICollection(Of String)
+    parameters: []
+    return:
+      type: System.Collections.Generic.ICollection{System.String}
+- uid: System.Net.Http.Headers.HttpContentHeaders.ContentLanguage
+  id: ContentLanguage
+  parent: System.Net.Http.Headers.HttpContentHeaders
+  href: System.Net.Http.Headers.HttpContentHeaders.yml
+  name: ContentLanguage
+  fullName: System.Net.Http.Headers.HttpContentHeaders.ContentLanguage
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/HttpContentHeaders.cs
+    startLine: 57
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Gets the value of the Content-Language content header on an HTTP response.
+  syntax:
+    content: public ICollection<string> ContentLanguage { get; }
+    content.vb: Public ReadOnly Property ContentLanguage As ICollection(Of String)
+    parameters: []
+    return:
+      type: System.Collections.Generic.ICollection{System.String}
+- uid: System.Net.Http.Headers.HttpContentHeaders.ContentLength
+  id: ContentLength
+  parent: System.Net.Http.Headers.HttpContentHeaders
+  href: System.Net.Http.Headers.HttpContentHeaders.yml
+  name: ContentLength
+  fullName: System.Net.Http.Headers.HttpContentHeaders.ContentLength
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/HttpContentHeaders.cs
+    startLine: 70
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Gets or sets the value of the Content-Length content header on an HTTP response.
+  syntax:
+    content: public long ? ContentLength { get; set; }
+    content.vb: Public Property ContentLength As Long?
+    parameters: []
+    return:
+      type: System.Nullable{System.Int64}
+- uid: System.Net.Http.Headers.HttpContentHeaders.ContentLocation
+  id: ContentLocation
+  parent: System.Net.Http.Headers.HttpContentHeaders
+  href: System.Net.Http.Headers.HttpContentHeaders.yml
+  name: ContentLocation
+  fullName: System.Net.Http.Headers.HttpContentHeaders.ContentLocation
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/HttpContentHeaders.cs
+    startLine: 109
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Gets or sets the value of the Content-Location content header on an HTTP response.
+  syntax:
+    content: public Uri ContentLocation { get; set; }
+    content.vb: Public Property ContentLocation As Uri
+    parameters: []
+    return:
+      type: Uri
+- uid: System.Net.Http.Headers.HttpContentHeaders.ContentMD5
+  id: ContentMD5
+  parent: System.Net.Http.Headers.HttpContentHeaders
+  href: System.Net.Http.Headers.HttpContentHeaders.yml
+  name: ContentMD5
+  fullName: System.Net.Http.Headers.HttpContentHeaders.ContentMD5
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/HttpContentHeaders.cs
+    startLine: 115
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Gets or sets the value of the Content-MD5 content header on an HTTP response.
+  syntax:
+    content: public byte[] ContentMD5 { get; set; }
+    content.vb: Public Property ContentMD5 As Byte()
+    parameters: []
+    return:
+      type: System.Byte[]
+- uid: System.Net.Http.Headers.HttpContentHeaders.ContentRange
+  id: ContentRange
+  parent: System.Net.Http.Headers.HttpContentHeaders
+  href: System.Net.Http.Headers.HttpContentHeaders.yml
+  name: ContentRange
+  fullName: System.Net.Http.Headers.HttpContentHeaders.ContentRange
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/HttpContentHeaders.cs
+    startLine: 123
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Gets or sets the value of the Content-Range content header on an HTTP response.
+  syntax:
+    content: public ContentRangeHeaderValue ContentRange { get; set; }
+    content.vb: Public Property ContentRange As ContentRangeHeaderValue
+    parameters: []
+    return:
+      type: System.Net.Http.Headers.ContentRangeHeaderValue
+- uid: System.Net.Http.Headers.HttpContentHeaders.ContentType
+  id: ContentType
+  parent: System.Net.Http.Headers.HttpContentHeaders
+  href: System.Net.Http.Headers.HttpContentHeaders.yml
+  name: ContentType
+  fullName: System.Net.Http.Headers.HttpContentHeaders.ContentType
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/HttpContentHeaders.cs
+    startLine: 129
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Gets or sets the value of the Content-Type content header on an HTTP response.
+  syntax:
+    content: public MediaTypeHeaderValue ContentType { get; set; }
+    content.vb: Public Property ContentType As MediaTypeHeaderValue
+    parameters: []
+    return:
+      type: System.Net.Http.Headers.MediaTypeHeaderValue
+- uid: System.Net.Http.Headers.HttpContentHeaders.Expires
+  id: Expires
+  parent: System.Net.Http.Headers.HttpContentHeaders
+  href: System.Net.Http.Headers.HttpContentHeaders.yml
+  name: Expires
+  fullName: System.Net.Http.Headers.HttpContentHeaders.Expires
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/HttpContentHeaders.cs
+    startLine: 135
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Gets or sets the value of the Expires content header on an HTTP response.
+  syntax:
+    content: public DateTimeOffset? Expires { get; set; }
+    content.vb: Public Property Expires As DateTimeOffset?
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+- uid: System.Net.Http.Headers.HttpContentHeaders.LastModified
+  id: LastModified
+  parent: System.Net.Http.Headers.HttpContentHeaders
+  href: System.Net.Http.Headers.HttpContentHeaders.yml
+  name: LastModified
+  fullName: System.Net.Http.Headers.HttpContentHeaders.LastModified
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/HttpContentHeaders.cs
+    startLine: 141
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Gets or sets the value of the Last-Modified content header on an HTTP response.
+  syntax:
+    content: public DateTimeOffset? LastModified { get; set; }
+    content.vb: Public Property LastModified As DateTimeOffset?
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+references:
+- uid: System.Net.Http.Headers
+  isExternal: false
+  name: System.Net.Http.Headers
+  fullName: System.Net.Http.Headers
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Net.Http.Headers.HttpHeaders
+  parent: System.Net.Http.Headers
+  isExternal: false
+  href: System.Net.Http.Headers.HttpHeaders.yml
+  name: HttpHeaders
+  fullName: System.Net.Http.Headers.HttpHeaders
+  type: Class
+- uid: System.Net.Http.Headers.HttpHeaders.Add(System.String,System.String)
+  parent: System.Net.Http.Headers.HttpHeaders
+  isExternal: true
+  href: System.Net.Http.Headers.HttpHeaders.yml
+  name: Add(String, String)
+  fullName: System.Net.Http.Headers.HttpHeaders.Add(System.String, System.String)
+  spec.csharp:
+  - uid: System.Net.Http.Headers.HttpHeaders.Add(System.String,System.String)
+    name: Add
+    fullName: System.Net.Http.Headers.HttpHeaders.Add
+    href: System.Net.Http.Headers.HttpHeaders.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.Headers.HttpHeaders.Add(System.String,System.String)
+    name: Add
+    fullName: System.Net.Http.Headers.HttpHeaders.Add
+    href: System.Net.Http.Headers.HttpHeaders.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Net.Http.Headers.HttpHeaders.Add(System.String,System.Collections.Generic.IEnumerable{System.String})
+  parent: System.Net.Http.Headers.HttpHeaders
+  isExternal: true
+  href: System.Net.Http.Headers.HttpHeaders.yml
+  name: Add(String, IEnumerable<String>)
+  name.vb: Add(String, IEnumerable(Of String))
+  fullName: System.Net.Http.Headers.HttpHeaders.Add(System.String, System.Collections.Generic.IEnumerable<System.String>)
+  fullName.vb: System.Net.Http.Headers.HttpHeaders.Add(System.String, System.Collections.Generic.IEnumerable(Of System.String))
+  spec.csharp:
+  - uid: System.Net.Http.Headers.HttpHeaders.Add(System.String,System.Collections.Generic.IEnumerable{System.String})
+    name: Add
+    fullName: System.Net.Http.Headers.HttpHeaders.Add
+    href: System.Net.Http.Headers.HttpHeaders.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.Headers.HttpHeaders.Add(System.String,System.Collections.Generic.IEnumerable{System.String})
+    name: Add
+    fullName: System.Net.Http.Headers.HttpHeaders.Add
+    href: System.Net.Http.Headers.HttpHeaders.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+  - name: )
+    fullName: )
+- uid: System.Net.Http.Headers.HttpHeaders.TryAddWithoutValidation(System.String,System.String)
+  parent: System.Net.Http.Headers.HttpHeaders
+  isExternal: true
+  href: System.Net.Http.Headers.HttpHeaders.yml
+  name: TryAddWithoutValidation(String, String)
+  fullName: System.Net.Http.Headers.HttpHeaders.TryAddWithoutValidation(System.String, System.String)
+  spec.csharp:
+  - uid: System.Net.Http.Headers.HttpHeaders.TryAddWithoutValidation(System.String,System.String)
+    name: TryAddWithoutValidation
+    fullName: System.Net.Http.Headers.HttpHeaders.TryAddWithoutValidation
+    href: System.Net.Http.Headers.HttpHeaders.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.Headers.HttpHeaders.TryAddWithoutValidation(System.String,System.String)
+    name: TryAddWithoutValidation
+    fullName: System.Net.Http.Headers.HttpHeaders.TryAddWithoutValidation
+    href: System.Net.Http.Headers.HttpHeaders.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Net.Http.Headers.HttpHeaders.TryAddWithoutValidation(System.String,System.Collections.Generic.IEnumerable{System.String})
+  parent: System.Net.Http.Headers.HttpHeaders
+  isExternal: true
+  href: System.Net.Http.Headers.HttpHeaders.yml
+  name: TryAddWithoutValidation(String, IEnumerable<String>)
+  name.vb: TryAddWithoutValidation(String, IEnumerable(Of String))
+  fullName: System.Net.Http.Headers.HttpHeaders.TryAddWithoutValidation(System.String, System.Collections.Generic.IEnumerable<System.String>)
+  fullName.vb: System.Net.Http.Headers.HttpHeaders.TryAddWithoutValidation(System.String, System.Collections.Generic.IEnumerable(Of System.String))
+  spec.csharp:
+  - uid: System.Net.Http.Headers.HttpHeaders.TryAddWithoutValidation(System.String,System.Collections.Generic.IEnumerable{System.String})
+    name: TryAddWithoutValidation
+    fullName: System.Net.Http.Headers.HttpHeaders.TryAddWithoutValidation
+    href: System.Net.Http.Headers.HttpHeaders.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.Headers.HttpHeaders.TryAddWithoutValidation(System.String,System.Collections.Generic.IEnumerable{System.String})
+    name: TryAddWithoutValidation
+    fullName: System.Net.Http.Headers.HttpHeaders.TryAddWithoutValidation
+    href: System.Net.Http.Headers.HttpHeaders.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+  - name: )
+    fullName: )
+- uid: System.Net.Http.Headers.HttpHeaders.Clear
+  parent: System.Net.Http.Headers.HttpHeaders
+  isExternal: false
+  href: System.Net.Http.Headers.HttpHeaders.yml
+  name: Clear()
+  fullName: System.Net.Http.Headers.HttpHeaders.Clear()
+  spec.csharp:
+  - uid: System.Net.Http.Headers.HttpHeaders.Clear
+    name: Clear
+    fullName: System.Net.Http.Headers.HttpHeaders.Clear
+    href: System.Net.Http.Headers.HttpHeaders.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.Headers.HttpHeaders.Clear
+    name: Clear
+    fullName: System.Net.Http.Headers.HttpHeaders.Clear
+    href: System.Net.Http.Headers.HttpHeaders.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Net.Http.Headers.HttpHeaders.Remove(System.String)
+  parent: System.Net.Http.Headers.HttpHeaders
+  isExternal: true
+  href: System.Net.Http.Headers.HttpHeaders.yml
+  name: Remove(String)
+  fullName: System.Net.Http.Headers.HttpHeaders.Remove(System.String)
+  spec.csharp:
+  - uid: System.Net.Http.Headers.HttpHeaders.Remove(System.String)
+    name: Remove
+    fullName: System.Net.Http.Headers.HttpHeaders.Remove
+    href: System.Net.Http.Headers.HttpHeaders.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.Headers.HttpHeaders.Remove(System.String)
+    name: Remove
+    fullName: System.Net.Http.Headers.HttpHeaders.Remove
+    href: System.Net.Http.Headers.HttpHeaders.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Net.Http.Headers.HttpHeaders.GetValues(System.String)
+  parent: System.Net.Http.Headers.HttpHeaders
+  isExternal: true
+  href: System.Net.Http.Headers.HttpHeaders.yml
+  name: GetValues(String)
+  fullName: System.Net.Http.Headers.HttpHeaders.GetValues(System.String)
+  spec.csharp:
+  - uid: System.Net.Http.Headers.HttpHeaders.GetValues(System.String)
+    name: GetValues
+    fullName: System.Net.Http.Headers.HttpHeaders.GetValues
+    href: System.Net.Http.Headers.HttpHeaders.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.Headers.HttpHeaders.GetValues(System.String)
+    name: GetValues
+    fullName: System.Net.Http.Headers.HttpHeaders.GetValues
+    href: System.Net.Http.Headers.HttpHeaders.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Net.Http.Headers.HttpHeaders.TryGetValues(System.String,System.Collections.Generic.IEnumerable{System.String}@)
+  parent: System.Net.Http.Headers.HttpHeaders
+  isExternal: true
+  href: System.Net.Http.Headers.HttpHeaders.yml
+  name: TryGetValues(String, IEnumerable<String>)
+  name.vb: TryGetValues(String, IEnumerable(Of String))
+  fullName: System.Net.Http.Headers.HttpHeaders.TryGetValues(System.String, System.Collections.Generic.IEnumerable<System.String>)
+  fullName.vb: System.Net.Http.Headers.HttpHeaders.TryGetValues(System.String, System.Collections.Generic.IEnumerable(Of System.String))
+  spec.csharp:
+  - uid: System.Net.Http.Headers.HttpHeaders.TryGetValues(System.String,System.Collections.Generic.IEnumerable{System.String}@)
+    name: TryGetValues
+    fullName: System.Net.Http.Headers.HttpHeaders.TryGetValues
+    href: System.Net.Http.Headers.HttpHeaders.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.Headers.HttpHeaders.TryGetValues(System.String,System.Collections.Generic.IEnumerable{System.String}@)
+    name: TryGetValues
+    fullName: System.Net.Http.Headers.HttpHeaders.TryGetValues
+    href: System.Net.Http.Headers.HttpHeaders.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+  - name: )
+    fullName: )
+- uid: System.Net.Http.Headers.HttpHeaders.Contains(System.String)
+  parent: System.Net.Http.Headers.HttpHeaders
+  isExternal: true
+  href: System.Net.Http.Headers.HttpHeaders.yml
+  name: Contains(String)
+  fullName: System.Net.Http.Headers.HttpHeaders.Contains(System.String)
+  spec.csharp:
+  - uid: System.Net.Http.Headers.HttpHeaders.Contains(System.String)
+    name: Contains
+    fullName: System.Net.Http.Headers.HttpHeaders.Contains
+    href: System.Net.Http.Headers.HttpHeaders.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.Headers.HttpHeaders.Contains(System.String)
+    name: Contains
+    fullName: System.Net.Http.Headers.HttpHeaders.Contains
+    href: System.Net.Http.Headers.HttpHeaders.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Net.Http.Headers.HttpHeaders.ToString
+  parent: System.Net.Http.Headers.HttpHeaders
+  isExternal: false
+  href: System.Net.Http.Headers.HttpHeaders.yml
+  name: ToString()
+  fullName: System.Net.Http.Headers.HttpHeaders.ToString()
+  spec.csharp:
+  - uid: System.Net.Http.Headers.HttpHeaders.ToString
+    name: ToString
+    fullName: System.Net.Http.Headers.HttpHeaders.ToString
+    href: System.Net.Http.Headers.HttpHeaders.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.Headers.HttpHeaders.ToString
+    name: ToString
+    fullName: System.Net.Http.Headers.HttpHeaders.ToString
+    href: System.Net.Http.Headers.HttpHeaders.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Net.Http.Headers.HttpHeaders.GetEnumerator
+  parent: System.Net.Http.Headers.HttpHeaders
+  isExternal: false
+  href: System.Net.Http.Headers.HttpHeaders.yml
+  name: GetEnumerator()
+  fullName: System.Net.Http.Headers.HttpHeaders.GetEnumerator()
+  spec.csharp:
+  - uid: System.Net.Http.Headers.HttpHeaders.GetEnumerator
+    name: GetEnumerator
+    fullName: System.Net.Http.Headers.HttpHeaders.GetEnumerator
+    href: System.Net.Http.Headers.HttpHeaders.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.Headers.HttpHeaders.GetEnumerator
+    name: GetEnumerator
+    fullName: System.Net.Http.Headers.HttpHeaders.GetEnumerator
+    href: System.Net.Http.Headers.HttpHeaders.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Net.Http.Headers.HttpHeaders.System#Collections#IEnumerable#GetEnumerator
+  parent: System.Net.Http.Headers.HttpHeaders
+  isExternal: false
+  href: System.Net.Http.Headers.HttpHeaders.yml
+  name: IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: System.Net.Http.Headers.HttpHeaders.System.Collections.IEnumerable.GetEnumerator()
+  spec.csharp:
+  - uid: System.Net.Http.Headers.HttpHeaders.System#Collections#IEnumerable#GetEnumerator
+    name: IEnumerable.GetEnumerator
+    fullName: System.Net.Http.Headers.HttpHeaders.System.Collections.IEnumerable.GetEnumerator
+    href: System.Net.Http.Headers.HttpHeaders.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.Headers.HttpHeaders.System#Collections#IEnumerable#GetEnumerator
+    name: System.Collections.IEnumerable.GetEnumerator
+    fullName: System.Net.Http.Headers.HttpHeaders.System.Collections.IEnumerable.GetEnumerator
+    href: System.Net.Http.Headers.HttpHeaders.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Collections.Generic.ICollection{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  name: ICollection<String>
+  name.vb: ICollection(Of String)
+  fullName: System.Collections.Generic.ICollection<System.String>
+  fullName.vb: System.Collections.Generic.ICollection(Of System.String)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: ICollection<T>
+  name.vb: ICollection(Of T)
+  fullName: System.Collections.Generic.ICollection<T>
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Net.Http.Headers.ContentDispositionHeaderValue
+  parent: System.Net.Http.Headers
+  isExternal: false
+  href: System.Net.Http.Headers.ContentDispositionHeaderValue.yml
+  name: ContentDispositionHeaderValue
+  fullName: System.Net.Http.Headers.ContentDispositionHeaderValue
+  type: Class
+- uid: System.Nullable{System.Int64}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Int64>
+  name.vb: Nullable(Of Int64)
+  fullName: System.Nullable<System.Int64>
+  fullName.vb: System.Nullable(Of System.Int64)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Int64
+    name: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Int64
+    name: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Nullable`1
+  parent: System
+  isExternal: true
+  name: Nullable<T>
+  name.vb: Nullable(Of T)
+  fullName: System.Nullable<T>
+  fullName.vb: System.Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: Uri
+  isExternal: true
+  name: Uri
+  fullName: Uri
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  name.vb: Byte()
+  fullName: System.Byte[]
+  fullName.vb: System.Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Net.Http.Headers.ContentRangeHeaderValue
+  parent: System.Net.Http.Headers
+  isExternal: false
+  href: System.Net.Http.Headers.ContentRangeHeaderValue.yml
+  name: ContentRangeHeaderValue
+  fullName: System.Net.Http.Headers.ContentRangeHeaderValue
+  type: Class
+- uid: System.Net.Http.Headers.MediaTypeHeaderValue
+  parent: System.Net.Http.Headers
+  isExternal: false
+  href: System.Net.Http.Headers.MediaTypeHeaderValue.yml
+  name: MediaTypeHeaderValue
+  fullName: System.Net.Http.Headers.MediaTypeHeaderValue
+  type: Class
+- uid: System.Nullable{System.DateTimeOffset}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<DateTimeOffset>
+  name.vb: Nullable(Of DateTimeOffset)
+  fullName: System.Nullable<System.DateTimeOffset>
+  fullName.vb: System.Nullable(Of System.DateTimeOffset)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    fullName: System.DateTimeOffset
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    fullName: System.DateTimeOffset
+    isExternal: true
+  - name: )
+    fullName: )

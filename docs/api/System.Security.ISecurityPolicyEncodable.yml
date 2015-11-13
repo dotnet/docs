@@ -1,0 +1,29 @@
+items:
+- uid: System.Security.ISecurityPolicyEncodable
+  id: ISecurityPolicyEncodable
+  parent: System.Security
+  children: []
+  href: System.Security.ISecurityPolicyEncodable.yml
+  name: ISecurityPolicyEncodable
+  fullName: System.Security.ISecurityPolicyEncodable
+  type: Interface
+  source:
+    remote:
+      path: src/mscorlib/src/System/Security/ISecurityPolicyEncodable.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Security/ISecurityPolicyEncodable.cs
+    startLine: 16
+  assemblies:
+  - mscorlib
+  namespace: System.Security
+  summary: Supports the methods that convert permission object state to and from an XML element representation.
+  syntax:
+    content: public interface ISecurityPolicyEncodable
+    content.vb: Public Interface ISecurityPolicyEncodable
+references:
+- uid: System.Security
+  isExternal: false
+  name: System.Security
+  fullName: System.Security
+  type: Namespace

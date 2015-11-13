@@ -1,0 +1,31 @@
+items:
+- uid: System.Runtime.Loader
+  id: System.Runtime.Loader
+  children:
+  - System.Runtime.Loader.AssemblyLoadContext
+  href: System.Runtime.Loader.yml
+  name: System.Runtime.Loader
+  fullName: System.Runtime.Loader
+  type: Namespace
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/Loader/AssemblyLoadContext.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/Loader/AssemblyLoadContext.cs
+    startLine: 16
+  assemblies:
+  - mscorlib
+references:
+- uid: System.Runtime.Loader.AssemblyLoadContext
+  parent: System.Runtime.Loader
+  isExternal: false
+  href: System.Runtime.Loader.AssemblyLoadContext.yml
+  name: AssemblyLoadContext
+  fullName: System.Runtime.Loader.AssemblyLoadContext
+  type: Class
+- uid: System.Runtime.Loader
+  isExternal: false
+  name: System.Runtime.Loader
+  fullName: System.Runtime.Loader
+  type: Namespace

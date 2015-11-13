@@ -1,0 +1,137 @@
+items:
+- uid: System.Reflection.ProcessorArchitecture
+  id: ProcessorArchitecture
+  parent: System.Reflection
+  children:
+  - System.Reflection.ProcessorArchitecture.Amd64
+  - System.Reflection.ProcessorArchitecture.Arm
+  - System.Reflection.ProcessorArchitecture.IA64
+  - System.Reflection.ProcessorArchitecture.MSIL
+  - System.Reflection.ProcessorArchitecture.None
+  - System.Reflection.ProcessorArchitecture.X86
+  href: System.Reflection.ProcessorArchitecture.yml
+  name: ProcessorArchitecture
+  fullName: System.Reflection.ProcessorArchitecture
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Reflection/AssemblyNameFlags.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Reflection/AssemblyNameFlags.cs
+    startLine: 43
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Identifies the processor and bits-per-word of the platform targeted by an executable.
+  syntax:
+    content: public enum ProcessorArchitecture
+    content.vb: Public Enum ProcessorArchitecture
+- uid: System.Reflection.ProcessorArchitecture.None
+  id: None
+  parent: System.Reflection.ProcessorArchitecture
+  href: System.Reflection.ProcessorArchitecture.yml
+  name: None
+  fullName: System.Reflection.ProcessorArchitecture.None
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/AssemblyNameFlags.cs
+    startLine: 47
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: An unknown or unspecified combination of processor and bits-per-word.
+  syntax:
+    content: None = 0
+- uid: System.Reflection.ProcessorArchitecture.MSIL
+  id: MSIL
+  parent: System.Reflection.ProcessorArchitecture
+  href: System.Reflection.ProcessorArchitecture.yml
+  name: MSIL
+  fullName: System.Reflection.ProcessorArchitecture.MSIL
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/AssemblyNameFlags.cs
+    startLine: 48
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Neutral with respect to processor and bits-per-word.
+  syntax:
+    content: MSIL = 1
+- uid: System.Reflection.ProcessorArchitecture.X86
+  id: X86
+  parent: System.Reflection.ProcessorArchitecture
+  href: System.Reflection.ProcessorArchitecture.yml
+  name: X86
+  fullName: System.Reflection.ProcessorArchitecture.X86
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/AssemblyNameFlags.cs
+    startLine: 49
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: A 32-bit Intel processor, either native or in the Windows on Windows environment on a 64-bit platform (WOW64).
+  syntax:
+    content: X86 = 2
+- uid: System.Reflection.ProcessorArchitecture.IA64
+  id: IA64
+  parent: System.Reflection.ProcessorArchitecture
+  href: System.Reflection.ProcessorArchitecture.yml
+  name: IA64
+  fullName: System.Reflection.ProcessorArchitecture.IA64
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/AssemblyNameFlags.cs
+    startLine: 50
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: A 64-bit Intel processor only.
+  syntax:
+    content: IA64 = 3
+- uid: System.Reflection.ProcessorArchitecture.Amd64
+  id: Amd64
+  parent: System.Reflection.ProcessorArchitecture
+  href: System.Reflection.ProcessorArchitecture.yml
+  name: Amd64
+  fullName: System.Reflection.ProcessorArchitecture.Amd64
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/AssemblyNameFlags.cs
+    startLine: 51
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: A 64-bit AMD processor only.
+  syntax:
+    content: Amd64 = 4
+- uid: System.Reflection.ProcessorArchitecture.Arm
+  id: Arm
+  parent: System.Reflection.ProcessorArchitecture
+  href: System.Reflection.ProcessorArchitecture.yml
+  name: Arm
+  fullName: System.Reflection.ProcessorArchitecture.Arm
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/AssemblyNameFlags.cs
+    startLine: 52
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: An ARM processor.
+  syntax:
+    content: Arm = 5
+references:
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace

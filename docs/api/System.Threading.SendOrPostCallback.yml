@@ -1,0 +1,41 @@
+items:
+- uid: System.Threading.SendOrPostCallback
+  id: SendOrPostCallback
+  parent: System.Threading
+  children: []
+  href: System.Threading.SendOrPostCallback.yml
+  name: SendOrPostCallback
+  fullName: System.Threading.SendOrPostCallback
+  type: Delegate
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/SendOrPostCallback.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Threading/SendOrPostCallback.cs
+    startLine: 13
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Represents a method to be called when a message is to be dispatched to a synchronization context.
+  syntax:
+    content: public delegate void SendOrPostCallback(object state);
+    content.vb: Public Delegate Sub SendOrPostCallback(state As Object)
+    parameters:
+    - id: state
+      type: System.Object
+      description: The object passed to the delegate.
+references:
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

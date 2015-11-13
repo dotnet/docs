@@ -1,0 +1,1218 @@
+items:
+- uid: System.IO.BinaryReader
+  id: BinaryReader
+  parent: System.IO
+  children:
+  - System.IO.BinaryReader.#ctor(System.IO.Stream)
+  - System.IO.BinaryReader.#ctor(System.IO.Stream,System.Text.Encoding)
+  - System.IO.BinaryReader.#ctor(System.IO.Stream,System.Text.Encoding,System.Boolean)
+  - System.IO.BinaryReader.BaseStream
+  - System.IO.BinaryReader.Close
+  - System.IO.BinaryReader.Dispose
+  - System.IO.BinaryReader.Dispose(System.Boolean)
+  - System.IO.BinaryReader.FillBuffer(System.Int32)
+  - System.IO.BinaryReader.PeekChar
+  - System.IO.BinaryReader.Read
+  - System.IO.BinaryReader.Read(System.Byte[],System.Int32,System.Int32)
+  - System.IO.BinaryReader.Read(System.Char[],System.Int32,System.Int32)
+  - System.IO.BinaryReader.Read7BitEncodedInt
+  - System.IO.BinaryReader.ReadBoolean
+  - System.IO.BinaryReader.ReadByte
+  - System.IO.BinaryReader.ReadBytes(System.Int32)
+  - System.IO.BinaryReader.ReadChar
+  - System.IO.BinaryReader.ReadChars(System.Int32)
+  - System.IO.BinaryReader.ReadDecimal
+  - System.IO.BinaryReader.ReadDouble
+  - System.IO.BinaryReader.ReadInt16
+  - System.IO.BinaryReader.ReadInt32
+  - System.IO.BinaryReader.ReadInt64
+  - System.IO.BinaryReader.ReadSByte
+  - System.IO.BinaryReader.ReadSingle
+  - System.IO.BinaryReader.ReadString
+  - System.IO.BinaryReader.ReadUInt16
+  - System.IO.BinaryReader.ReadUInt32
+  - System.IO.BinaryReader.ReadUInt64
+  href: System.IO.BinaryReader.yml
+  name: BinaryReader
+  fullName: System.IO.BinaryReader
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/IO/BinaryReader.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/IO/BinaryReader.cs
+    startLine: 23
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads primitive data types as binary values in a specific encoding.
+  syntax:
+    content: 'public class BinaryReader : IDisposable'
+    content.vb: Public Class BinaryReader Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.IO.BinaryReader.#ctor(System.IO.Stream)
+  id: '#ctor(System.IO.Stream)'
+  parent: System.IO.BinaryReader
+  href: System.IO.BinaryReader.yml
+  name: BinaryReader(Stream)
+  fullName: System.IO.BinaryReader.BinaryReader(System.IO.Stream)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/BinaryReader.cs
+    startLine: 41
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Initializes a new instance of the @'System.IO.BinaryReader' class based on the specified stream and using UTF-8 encoding.
+  syntax:
+    content: public BinaryReader(Stream input)
+    content.vb: Public Sub New(input As Stream)
+    parameters:
+    - id: input
+      type: System.IO.Stream
+      description: The input stream.
+  exceptions:
+  - type: System.ArgumentException
+    description: The stream does not support reading, is null, or is already closed.
+- uid: System.IO.BinaryReader.#ctor(System.IO.Stream,System.Text.Encoding)
+  id: '#ctor(System.IO.Stream,System.Text.Encoding)'
+  parent: System.IO.BinaryReader
+  href: System.IO.BinaryReader.yml
+  name: BinaryReader(Stream, Encoding)
+  fullName: System.IO.BinaryReader.BinaryReader(System.IO.Stream, System.Text.Encoding)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/BinaryReader.cs
+    startLine: 44
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Initializes a new instance of the @'System.IO.BinaryReader' class based on the specified stream and character encoding.
+  syntax:
+    content: public BinaryReader(Stream input, Encoding encoding)
+    content.vb: Public Sub New(input As Stream, encoding As Encoding)
+    parameters:
+    - id: input
+      type: System.IO.Stream
+      description: The input stream.
+    - id: encoding
+      type: System.Text.Encoding
+      description: The character encoding to use.
+  exceptions:
+  - type: System.ArgumentException
+    description: The stream does not support reading, is null, or is already closed.
+  - type: System.ArgumentNullException
+    description: '*encoding* is null.'
+- uid: System.IO.BinaryReader.#ctor(System.IO.Stream,System.Text.Encoding,System.Boolean)
+  id: '#ctor(System.IO.Stream,System.Text.Encoding,System.Boolean)'
+  parent: System.IO.BinaryReader
+  href: System.IO.BinaryReader.yml
+  name: BinaryReader(Stream, Encoding, Boolean)
+  fullName: System.IO.BinaryReader.BinaryReader(System.IO.Stream, System.Text.Encoding, System.Boolean)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/BinaryReader.cs
+    startLine: 47
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Initializes a new instance of the @'System.IO.BinaryReader' class based on the specified stream and character encoding, and optionally leaves the stream open.
+  syntax:
+    content: public BinaryReader(Stream input, Encoding encoding, bool leaveOpen)
+    content.vb: Public Sub New(input As Stream, encoding As Encoding, leaveOpen As Boolean)
+    parameters:
+    - id: input
+      type: System.IO.Stream
+      description: The input stream.
+    - id: encoding
+      type: System.Text.Encoding
+      description: The character encoding to use.
+    - id: leaveOpen
+      type: System.Boolean
+      description: true to leave the stream open after the @'System.IO.BinaryReader' object is disposed; otherwise, false.
+  exceptions:
+  - type: System.ArgumentException
+    description: The stream does not support reading, is null, or is already closed.
+  - type: System.ArgumentNullException
+    description: '*encoding* or *input* is null.'
+- uid: System.IO.BinaryReader.BaseStream
+  id: BaseStream
+  parent: System.IO.BinaryReader
+  href: System.IO.BinaryReader.yml
+  name: BaseStream
+  fullName: System.IO.BinaryReader.BaseStream
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/BinaryReader.cs
+    startLine: 77
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Exposes access to the underlying stream of the @'System.IO.BinaryReader'.
+  syntax:
+    content: public virtual Stream BaseStream { get; }
+    content.vb: Public Overridable ReadOnly Property BaseStream As Stream
+    parameters: []
+    return:
+      type: System.IO.Stream
+- uid: System.IO.BinaryReader.Close
+  id: Close
+  parent: System.IO.BinaryReader
+  href: System.IO.BinaryReader.yml
+  name: Close()
+  fullName: System.IO.BinaryReader.Close()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/BinaryReader.cs
+    startLine: 83
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Closes the current reader and the underlying stream.
+  syntax:
+    content: public virtual void Close()
+    content.vb: Public Overridable Sub Close
+- uid: System.IO.BinaryReader.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: System.IO.BinaryReader
+  href: System.IO.BinaryReader.yml
+  name: Dispose(Boolean)
+  fullName: System.IO.BinaryReader.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/BinaryReader.cs
+    startLine: 87
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Releases the unmanaged resources used by the @'System.IO.BinaryReader' class and optionally releases the managed resources.
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: true to release both managed and unmanaged resources; false to release only unmanaged resources.
+- uid: System.IO.BinaryReader.Dispose
+  id: Dispose
+  parent: System.IO.BinaryReader
+  href: System.IO.BinaryReader.yml
+  name: Dispose()
+  fullName: System.IO.BinaryReader.Dispose()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/BinaryReader.cs
+    startLine: 102
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Releases all resources used by the current instance of the @'System.IO.BinaryReader' class.
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+- uid: System.IO.BinaryReader.PeekChar
+  id: PeekChar
+  parent: System.IO.BinaryReader
+  href: System.IO.BinaryReader.yml
+  name: PeekChar()
+  fullName: System.IO.BinaryReader.PeekChar()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/BinaryReader.cs
+    startLine: 107
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Returns the next available character and does not advance the byte or character position.
+  syntax:
+    content: public virtual int PeekChar()
+    content.vb: Public Overridable Function PeekChar As Integer
+    return:
+      type: System.Int32
+  exceptions:
+  - type: System.IO.IOException
+    description: An I/O error occurs.
+  - type: System.ArgumentException
+    description: The current character cannot be decoded into the internal character buffer by using the @'System.Text.Encoding' selected for the stream.
+- uid: System.IO.BinaryReader.Read
+  id: Read
+  parent: System.IO.BinaryReader
+  href: System.IO.BinaryReader.yml
+  name: Read()
+  fullName: System.IO.BinaryReader.Read()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/BinaryReader.cs
+    startLine: 120
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads characters from the underlying stream and advances the current position of the stream in accordance with the Encoding used and the specific character being read from the stream.
+  syntax:
+    content: public virtual int Read()
+    content.vb: Public Overridable Function Read As Integer
+    return:
+      type: System.Int32
+  exceptions:
+  - type: System.IO.IOException
+    description: An I/O error occurs.
+  - type: System.ObjectDisposedException
+    description: The stream is closed.
+- uid: System.IO.BinaryReader.ReadBoolean
+  id: ReadBoolean
+  parent: System.IO.BinaryReader
+  href: System.IO.BinaryReader.yml
+  name: ReadBoolean()
+  fullName: System.IO.BinaryReader.ReadBoolean()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/BinaryReader.cs
+    startLine: 129
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads a Boolean value from the current stream and advances the current position of the stream by one byte.
+  syntax:
+    content: public virtual bool ReadBoolean()
+    content.vb: Public Overridable Function ReadBoolean As Boolean
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.IO.EndOfStreamException
+    description: The end of the stream is reached.
+  - type: System.ObjectDisposedException
+    description: The stream is closed.
+  - type: System.IO.IOException
+    description: An I/O error occurs.
+- uid: System.IO.BinaryReader.ReadByte
+  id: ReadByte
+  parent: System.IO.BinaryReader
+  href: System.IO.BinaryReader.yml
+  name: ReadByte()
+  fullName: System.IO.BinaryReader.ReadByte()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/BinaryReader.cs
+    startLine: 134
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads the next byte from the current stream and advances the current position of the stream by one byte.
+  syntax:
+    content: public virtual byte ReadByte()
+    content.vb: Public Overridable Function ReadByte As Byte
+    return:
+      type: System.Byte
+  exceptions:
+  - type: System.IO.EndOfStreamException
+    description: The end of the stream is reached.
+  - type: System.ObjectDisposedException
+    description: The stream is closed.
+  - type: System.IO.IOException
+    description: An I/O error occurs.
+- uid: System.IO.BinaryReader.ReadSByte
+  id: ReadSByte
+  parent: System.IO.BinaryReader
+  href: System.IO.BinaryReader.yml
+  name: ReadSByte()
+  fullName: System.IO.BinaryReader.ReadSByte()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/BinaryReader.cs
+    startLine: 144
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads a signed byte from this stream and advances the current position of the stream by one byte.
+  syntax:
+    content: public virtual sbyte ReadSByte()
+    content.vb: Public Overridable Function ReadSByte As SByte
+    return:
+      type: System.SByte
+  exceptions:
+  - type: System.IO.EndOfStreamException
+    description: The end of the stream is reached.
+  - type: System.ObjectDisposedException
+    description: The stream is closed.
+  - type: System.IO.IOException
+    description: An I/O error occurs.
+- uid: System.IO.BinaryReader.ReadChar
+  id: ReadChar
+  parent: System.IO.BinaryReader
+  href: System.IO.BinaryReader.yml
+  name: ReadChar()
+  fullName: System.IO.BinaryReader.ReadChar()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/BinaryReader.cs
+    startLine: 150
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads the next character from the current stream and advances the current position of the stream in accordance with the Encoding used and the specific character being read from the stream.
+  syntax:
+    content: public virtual char ReadChar()
+    content.vb: Public Overridable Function ReadChar As Char
+    return:
+      type: System.Char
+  exceptions:
+  - type: System.IO.EndOfStreamException
+    description: The end of the stream is reached.
+  - type: System.ObjectDisposedException
+    description: The stream is closed.
+  - type: System.IO.IOException
+    description: An I/O error occurs.
+  - type: System.ArgumentException
+    description: A surrogate character was read.
+- uid: System.IO.BinaryReader.ReadInt16
+  id: ReadInt16
+  parent: System.IO.BinaryReader
+  href: System.IO.BinaryReader.yml
+  name: ReadInt16()
+  fullName: System.IO.BinaryReader.ReadInt16()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/BinaryReader.cs
+    startLine: 158
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads a 2-byte signed integer from the current stream and advances the current position of the stream by two bytes.
+  syntax:
+    content: public virtual short ReadInt16()
+    content.vb: Public Overridable Function ReadInt16 As Short
+    return:
+      type: System.Int16
+  exceptions:
+  - type: System.IO.EndOfStreamException
+    description: The end of the stream is reached.
+  - type: System.ObjectDisposedException
+    description: The stream is closed.
+  - type: System.IO.IOException
+    description: An I/O error occurs.
+- uid: System.IO.BinaryReader.ReadUInt16
+  id: ReadUInt16
+  parent: System.IO.BinaryReader
+  href: System.IO.BinaryReader.yml
+  name: ReadUInt16()
+  fullName: System.IO.BinaryReader.ReadUInt16()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/BinaryReader.cs
+    startLine: 163
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads a 2-byte unsigned integer from the current stream using little-endian encoding and advances the position of the stream by two bytes.
+  syntax:
+    content: public virtual ushort ReadUInt16()
+    content.vb: Public Overridable Function ReadUInt16 As UShort
+    return:
+      type: System.UInt16
+  exceptions:
+  - type: System.IO.EndOfStreamException
+    description: The end of the stream is reached.
+  - type: System.ObjectDisposedException
+    description: The stream is closed.
+  - type: System.IO.IOException
+    description: An I/O error occurs.
+- uid: System.IO.BinaryReader.ReadInt32
+  id: ReadInt32
+  parent: System.IO.BinaryReader
+  href: System.IO.BinaryReader.yml
+  name: ReadInt32()
+  fullName: System.IO.BinaryReader.ReadInt32()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/BinaryReader.cs
+    startLine: 169
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads a 4-byte signed integer from the current stream and advances the current position of the stream by four bytes.
+  syntax:
+    content: public virtual int ReadInt32()
+    content.vb: Public Overridable Function ReadInt32 As Integer
+    return:
+      type: System.Int32
+  exceptions:
+  - type: System.IO.EndOfStreamException
+    description: The end of the stream is reached.
+  - type: System.ObjectDisposedException
+    description: The stream is closed.
+  - type: System.IO.IOException
+    description: An I/O error occurs.
+- uid: System.IO.BinaryReader.ReadUInt32
+  id: ReadUInt32
+  parent: System.IO.BinaryReader
+  href: System.IO.BinaryReader.yml
+  name: ReadUInt32()
+  fullName: System.IO.BinaryReader.ReadUInt32()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/BinaryReader.cs
+    startLine: 185
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads a 4-byte unsigned integer from the current stream and advances the position of the stream by four bytes.
+  syntax:
+    content: public virtual uint ReadUInt32()
+    content.vb: Public Overridable Function ReadUInt32 As UInteger
+    return:
+      type: System.UInt32
+  exceptions:
+  - type: System.IO.EndOfStreamException
+    description: The end of the stream is reached.
+  - type: System.ObjectDisposedException
+    description: The stream is closed.
+  - type: System.IO.IOException
+    description: An I/O error occurs.
+- uid: System.IO.BinaryReader.ReadInt64
+  id: ReadInt64
+  parent: System.IO.BinaryReader
+  href: System.IO.BinaryReader.yml
+  name: ReadInt64()
+  fullName: System.IO.BinaryReader.ReadInt64()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/BinaryReader.cs
+    startLine: 191
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads an 8-byte signed integer from the current stream and advances the current position of the stream by eight bytes.
+  syntax:
+    content: public virtual long ReadInt64()
+    content.vb: Public Overridable Function ReadInt64 As Long
+    return:
+      type: System.Int64
+  exceptions:
+  - type: System.IO.EndOfStreamException
+    description: The end of the stream is reached.
+  - type: System.ObjectDisposedException
+    description: The stream is closed.
+  - type: System.IO.IOException
+    description: An I/O error occurs.
+- uid: System.IO.BinaryReader.ReadUInt64
+  id: ReadUInt64
+  parent: System.IO.BinaryReader
+  href: System.IO.BinaryReader.yml
+  name: ReadUInt64()
+  fullName: System.IO.BinaryReader.ReadUInt64()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/BinaryReader.cs
+    startLine: 200
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads an 8-byte unsigned integer from the current stream and advances the position of the stream by eight bytes.
+  syntax:
+    content: public virtual ulong ReadUInt64()
+    content.vb: Public Overridable Function ReadUInt64 As ULong
+    return:
+      type: System.UInt64
+  exceptions:
+  - type: System.IO.EndOfStreamException
+    description: The end of the stream is reached.
+  - type: System.IO.IOException
+    description: An I/O error occurs.
+  - type: System.ObjectDisposedException
+    description: The stream is closed.
+- uid: System.IO.BinaryReader.ReadSingle
+  id: ReadSingle
+  parent: System.IO.BinaryReader
+  href: System.IO.BinaryReader.yml
+  name: ReadSingle()
+  fullName: System.IO.BinaryReader.ReadSingle()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/BinaryReader.cs
+    startLine: 210
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads a 4-byte floating point value from the current stream and advances the current position of the stream by four bytes.
+  syntax:
+    content: public virtual float ReadSingle()
+    content.vb: Public Overridable Function ReadSingle As Single
+    return:
+      type: System.Single
+  exceptions:
+  - type: System.IO.EndOfStreamException
+    description: The end of the stream is reached.
+  - type: System.ObjectDisposedException
+    description: The stream is closed.
+  - type: System.IO.IOException
+    description: An I/O error occurs.
+- uid: System.IO.BinaryReader.ReadDouble
+  id: ReadDouble
+  parent: System.IO.BinaryReader
+  href: System.IO.BinaryReader.yml
+  name: ReadDouble()
+  fullName: System.IO.BinaryReader.ReadDouble()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/BinaryReader.cs
+    startLine: 217
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads an 8-byte floating point value from the current stream and advances the current position of the stream by eight bytes.
+  syntax:
+    content: public virtual double ReadDouble()
+    content.vb: Public Overridable Function ReadDouble As Double
+    return:
+      type: System.Double
+  exceptions:
+  - type: System.IO.EndOfStreamException
+    description: The end of the stream is reached.
+  - type: System.ObjectDisposedException
+    description: The stream is closed.
+  - type: System.IO.IOException
+    description: An I/O error occurs.
+- uid: System.IO.BinaryReader.ReadDecimal
+  id: ReadDecimal
+  parent: System.IO.BinaryReader
+  href: System.IO.BinaryReader.yml
+  name: ReadDecimal()
+  fullName: System.IO.BinaryReader.ReadDecimal()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/BinaryReader.cs
+    startLine: 229
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads a decimal value from the current stream and advances the current position of the stream by sixteen bytes.
+  syntax:
+    content: public virtual decimal ReadDecimal()
+    content.vb: Public Overridable Function ReadDecimal As Decimal
+    return:
+      type: System.Decimal
+  exceptions:
+  - type: System.IO.EndOfStreamException
+    description: The end of the stream is reached.
+  - type: System.ObjectDisposedException
+    description: The stream is closed.
+  - type: System.IO.IOException
+    description: An I/O error occurs.
+- uid: System.IO.BinaryReader.ReadString
+  id: ReadString
+  parent: System.IO.BinaryReader
+  href: System.IO.BinaryReader.yml
+  name: ReadString()
+  fullName: System.IO.BinaryReader.ReadString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/BinaryReader.cs
+    startLine: 240
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads a string from the current stream. The string is prefixed with the length, encoded as an integer seven bits at a time.
+  syntax:
+    content: public virtual string ReadString()
+    content.vb: Public Overridable Function ReadString As String
+    return:
+      type: System.String
+  exceptions:
+  - type: System.IO.EndOfStreamException
+    description: The end of the stream is reached.
+  - type: System.ObjectDisposedException
+    description: The stream is closed.
+  - type: System.IO.IOException
+    description: An I/O error occurs.
+- uid: System.IO.BinaryReader.Read(System.Char[],System.Int32,System.Int32)
+  id: Read(System.Char[],System.Int32,System.Int32)
+  parent: System.IO.BinaryReader
+  href: System.IO.BinaryReader.yml
+  name: Read(Char[], Int32, Int32)
+  name.vb: Read(Char(), Int32, Int32)
+  fullName: System.IO.BinaryReader.Read(System.Char[], System.Int32, System.Int32)
+  fullName.vb: System.IO.BinaryReader.Read(System.Char(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/BinaryReader.cs
+    startLine: 295
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads the specified number of characters from the stream, starting from a specified point in the character array.
+  syntax:
+    content: public virtual int Read(char[] buffer, int index, int count)
+    content.vb: Public Overridable Function Read(buffer As Char(), index As Integer, count As Integer) As Integer
+    parameters:
+    - id: buffer
+      type: System.Char[]
+      description: The buffer to read data into.
+    - id: index
+      type: System.Int32
+      description: The starting point in the buffer at which to begin reading into the buffer.
+    - id: count
+      type: System.Int32
+      description: The number of characters to read.
+    return:
+      type: System.Int32
+  exceptions:
+  - type: System.ArgumentException
+    description: The buffer length minus *index* is less than *count*. -or-The number of decoded characters to read is greater than *count*. This can happen if a Unicode decoder returns fallback characters or a surrogate pair.
+  - type: System.ArgumentNullException
+    description: '*buffer* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* or *count* is negative.'
+  - type: System.ObjectDisposedException
+    description: The stream is closed.
+  - type: System.IO.IOException
+    description: An I/O error occurs.
+- uid: System.IO.BinaryReader.ReadChars(System.Int32)
+  id: ReadChars(System.Int32)
+  parent: System.IO.BinaryReader
+  href: System.IO.BinaryReader.yml
+  name: ReadChars(Int32)
+  fullName: System.IO.BinaryReader.ReadChars(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/BinaryReader.cs
+    startLine: 459
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads the specified number of characters from the current stream, returns the data in a character array, and advances the current position in accordance with the Encoding used and the specific character being read from the stream.
+  syntax:
+    content: public virtual char[] ReadChars(int count)
+    content.vb: Public Overridable Function ReadChars(count As Integer) As Char()
+    parameters:
+    - id: count
+      type: System.Int32
+      description: The number of characters to read.
+    return:
+      type: System.Char[]
+  exceptions:
+  - type: System.ArgumentException
+    description: The number of decoded characters to read is greater than *count*. This can happen if a Unicode decoder returns fallback characters or a surrogate pair.
+  - type: System.ObjectDisposedException
+    description: The stream is closed.
+  - type: System.IO.IOException
+    description: An I/O error occurs.
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is negative.'
+- uid: System.IO.BinaryReader.Read(System.Byte[],System.Int32,System.Int32)
+  id: Read(System.Byte[],System.Int32,System.Int32)
+  parent: System.IO.BinaryReader
+  href: System.IO.BinaryReader.yml
+  name: Read(Byte[], Int32, Int32)
+  name.vb: Read(Byte(), Int32, Int32)
+  fullName: System.IO.BinaryReader.Read(System.Byte[], System.Int32, System.Int32)
+  fullName.vb: System.IO.BinaryReader.Read(System.Byte(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/BinaryReader.cs
+    startLine: 487
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads the specified number of bytes from the stream, starting from a specified point in the byte array.
+  syntax:
+    content: public virtual int Read(byte[] buffer, int index, int count)
+    content.vb: Public Overridable Function Read(buffer As Byte(), index As Integer, count As Integer) As Integer
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+      description: The buffer to read data into.
+    - id: index
+      type: System.Int32
+      description: The starting point in the buffer at which to begin reading into the buffer.
+    - id: count
+      type: System.Int32
+      description: The number of bytes to read.
+    return:
+      type: System.Int32
+  exceptions:
+  - type: System.ArgumentException
+    description: The buffer length minus *index* is less than *count*. -or-The number of decoded characters to read is greater than *count*. This can happen if a Unicode decoder returns fallback characters or a surrogate pair.
+  - type: System.ArgumentNullException
+    description: '*buffer* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* or *count* is negative.'
+  - type: System.ObjectDisposedException
+    description: The stream is closed.
+  - type: System.IO.IOException
+    description: An I/O error occurs.
+- uid: System.IO.BinaryReader.ReadBytes(System.Int32)
+  id: ReadBytes(System.Int32)
+  parent: System.IO.BinaryReader
+  href: System.IO.BinaryReader.yml
+  name: ReadBytes(Int32)
+  fullName: System.IO.BinaryReader.ReadBytes(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/BinaryReader.cs
+    startLine: 504
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads the specified number of bytes from the current stream into a byte array and advances the current position by that number of bytes.
+  syntax:
+    content: public virtual byte[] ReadBytes(int count)
+    content.vb: Public Overridable Function ReadBytes(count As Integer) As Byte()
+    parameters:
+    - id: count
+      type: System.Int32
+      description: The number of bytes to read. This value must be 0 or a non-negative number or an exception will occur.
+    return:
+      type: System.Byte[]
+  exceptions:
+  - type: System.ArgumentException
+    description: The number of decoded characters to read is greater than *count*. This can happen if a Unicode decoder returns fallback characters or a surrogate pair.
+  - type: System.IO.IOException
+    description: An I/O error occurs.
+  - type: System.ObjectDisposedException
+    description: The stream is closed.
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is negative.'
+- uid: System.IO.BinaryReader.FillBuffer(System.Int32)
+  id: FillBuffer(System.Int32)
+  parent: System.IO.BinaryReader
+  href: System.IO.BinaryReader.yml
+  name: FillBuffer(Int32)
+  fullName: System.IO.BinaryReader.FillBuffer(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/BinaryReader.cs
+    startLine: 536
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Fills the internal buffer with the specified number of bytes read from the stream.
+  syntax:
+    content: protected virtual void FillBuffer(int numBytes)
+    content.vb: Protected Overridable Sub FillBuffer(numBytes As Integer)
+    parameters:
+    - id: numBytes
+      type: System.Int32
+      description: The number of bytes to be read.
+  exceptions:
+  - type: System.IO.EndOfStreamException
+    description: The end of the stream is reached before *numBytes* could be read.
+  - type: System.IO.IOException
+    description: An I/O error occurs.
+  - type: System.ArgumentOutOfRangeException
+    description: Requested *numBytes* is larger than the internal buffer size.
+- uid: System.IO.BinaryReader.Read7BitEncodedInt
+  id: Read7BitEncodedInt
+  parent: System.IO.BinaryReader
+  href: System.IO.BinaryReader.yml
+  name: Read7BitEncodedInt()
+  fullName: System.IO.BinaryReader.Read7BitEncodedInt()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/BinaryReader.cs
+    startLine: 565
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads in a 32-bit integer in compressed format.
+  syntax:
+    content: protected int Read7BitEncodedInt()
+    content.vb: Protected Function Read7BitEncodedInt As Integer
+    return:
+      type: System.Int32
+  exceptions:
+  - type: System.IO.EndOfStreamException
+    description: The end of the stream is reached.
+  - type: System.ObjectDisposedException
+    description: The stream is closed.
+  - type: System.IO.IOException
+    description: An I/O error occurs.
+  - type: System.FormatException
+    description: The stream is corrupted.
+references:
+- uid: System.IO
+  isExternal: false
+  name: System.IO
+  fullName: System.IO
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  name: Stream
+  fullName: System.IO.Stream
+- uid: System.Text.Encoding
+  parent: System.Text
+  isExternal: true
+  name: Encoding
+  fullName: System.Text.Encoding
+- uid: System.Text
+  isExternal: false
+  name: System.Text
+  fullName: System.Text
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Byte
+  parent: System
+  isExternal: true
+  name: Byte
+  fullName: System.Byte
+- uid: System.SByte
+  parent: System
+  isExternal: true
+  name: SByte
+  fullName: System.SByte
+- uid: System.Char
+  parent: System
+  isExternal: true
+  name: Char
+  fullName: System.Char
+- uid: System.Int16
+  parent: System
+  isExternal: true
+  name: Int16
+  fullName: System.Int16
+- uid: System.UInt16
+  parent: System
+  isExternal: true
+  name: UInt16
+  fullName: System.UInt16
+- uid: System.UInt32
+  parent: System
+  isExternal: true
+  name: UInt32
+  fullName: System.UInt32
+- uid: System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  fullName: System.Int64
+- uid: System.UInt64
+  parent: System
+  isExternal: true
+  name: UInt64
+  fullName: System.UInt64
+- uid: System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  fullName: System.Single
+- uid: System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  fullName: System.Double
+- uid: System.Decimal
+  parent: System
+  isExternal: true
+  name: Decimal
+  fullName: System.Decimal
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Char[]
+  isExternal: true
+  name: Char[]
+  name.vb: Char()
+  fullName: System.Char[]
+  fullName.vb: System.Char()
+  spec.csharp:
+  - uid: System.Char
+    name: Char
+    fullName: System.Char
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Char
+    name: Char
+    fullName: System.Char
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  name.vb: Byte()
+  fullName: System.Byte[]
+  fullName.vb: System.Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()

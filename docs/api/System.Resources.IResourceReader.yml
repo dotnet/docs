@@ -1,0 +1,113 @@
+items:
+- uid: System.Resources.IResourceReader
+  id: IResourceReader
+  parent: System.Resources
+  children:
+  - System.Resources.IResourceReader.Close
+  - System.Resources.IResourceReader.GetEnumerator
+  href: System.Resources.IResourceReader.yml
+  name: IResourceReader
+  fullName: System.Resources.IResourceReader
+  type: Interface
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Resources/IResourceReader.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Resources/IResourceReader.cs
+    startLine: 18
+  assemblies:
+  - mscorlib
+  namespace: System.Resources
+  summary: Provides the base functionality for reading data from resource files.
+  syntax:
+    content: 'public interface IResourceReader : IEnumerable, IDisposable'
+    content.vb: Public Interface IResourceReader Inherits IEnumerable, IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+- uid: System.Resources.IResourceReader.Close
+  id: Close
+  parent: System.Resources.IResourceReader
+  href: System.Resources.IResourceReader.yml
+  name: Close()
+  fullName: System.Resources.IResourceReader.Close()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Resources/IResourceReader.cs
+    startLine: 24
+  assemblies:
+  - mscorlib
+  namespace: System.Resources
+  summary: Closes the resource reader after releasing any resources associated with it.
+  syntax:
+    content: void Close()
+    content.vb: Sub Close
+- uid: System.Resources.IResourceReader.GetEnumerator
+  id: GetEnumerator
+  parent: System.Resources.IResourceReader
+  href: System.Resources.IResourceReader.yml
+  name: GetEnumerator()
+  fullName: System.Resources.IResourceReader.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Resources/IResourceReader.cs
+    startLine: 27
+  assemblies:
+  - mscorlib
+  namespace: System.Resources
+  summary: Returns a dictionary enumerator of the resources for this reader.
+  syntax:
+    content: IDictionaryEnumerator GetEnumerator()
+    content.vb: Function GetEnumerator As IDictionaryEnumerator
+    return:
+      type: System.Collections.IDictionaryEnumerator
+references:
+- uid: System.Resources
+  isExternal: false
+  name: System.Resources
+  fullName: System.Resources
+  type: Namespace
+- uid: System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: false
+  href: System.IDisposable.yml
+  name: Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    fullName: System.IDisposable.Dispose
+    href: System.IDisposable.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    fullName: System.IDisposable.Dispose
+    href: System.IDisposable.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Collections.IDictionaryEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IDictionaryEnumerator
+  fullName: System.Collections.IDictionaryEnumerator
+- uid: System.Collections
+  isExternal: false
+  name: System.Collections
+  fullName: System.Collections

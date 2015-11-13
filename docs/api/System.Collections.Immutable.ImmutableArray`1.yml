@@ -1,0 +1,3692 @@
+items:
+- uid: System.Collections.Immutable.ImmutableArray`1
+  id: ImmutableArray`1
+  parent: System.Collections.Immutable
+  children:
+  - System.Collections.Immutable.ImmutableArray`1.Add(`0)
+  - System.Collections.Immutable.ImmutableArray`1.AddRange(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Immutable.ImmutableArray`1.AddRange(System.Collections.Immutable.ImmutableArray{`0})
+  - System.Collections.Immutable.ImmutableArray`1.As``1
+  - System.Collections.Immutable.ImmutableArray`1.CastArray``1
+  - System.Collections.Immutable.ImmutableArray`1.CastUp``1(System.Collections.Immutable.ImmutableArray{``0})
+  - System.Collections.Immutable.ImmutableArray`1.Clear
+  - System.Collections.Immutable.ImmutableArray`1.Contains(`0)
+  - System.Collections.Immutable.ImmutableArray`1.CopyTo(`0[])
+  - System.Collections.Immutable.ImmutableArray`1.CopyTo(`0[],System.Int32)
+  - System.Collections.Immutable.ImmutableArray`1.CopyTo(System.Int32,`0[],System.Int32,System.Int32)
+  - System.Collections.Immutable.ImmutableArray`1.Empty
+  - System.Collections.Immutable.ImmutableArray`1.Equals(System.Collections.Immutable.ImmutableArray{`0})
+  - System.Collections.Immutable.ImmutableArray`1.Equals(System.Object)
+  - System.Collections.Immutable.ImmutableArray`1.GetEnumerator
+  - System.Collections.Immutable.ImmutableArray`1.GetHashCode
+  - System.Collections.Immutable.ImmutableArray`1.IndexOf(`0)
+  - System.Collections.Immutable.ImmutableArray`1.IndexOf(`0,System.Int32)
+  - System.Collections.Immutable.ImmutableArray`1.IndexOf(`0,System.Int32,System.Collections.Generic.IEqualityComparer{`0})
+  - System.Collections.Immutable.ImmutableArray`1.IndexOf(`0,System.Int32,System.Int32)
+  - System.Collections.Immutable.ImmutableArray`1.IndexOf(`0,System.Int32,System.Int32,System.Collections.Generic.IEqualityComparer{`0})
+  - System.Collections.Immutable.ImmutableArray`1.Insert(System.Int32,`0)
+  - System.Collections.Immutable.ImmutableArray`1.InsertRange(System.Int32,System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Immutable.ImmutableArray`1.InsertRange(System.Int32,System.Collections.Immutable.ImmutableArray{`0})
+  - System.Collections.Immutable.ImmutableArray`1.IsDefault
+  - System.Collections.Immutable.ImmutableArray`1.IsDefaultOrEmpty
+  - System.Collections.Immutable.ImmutableArray`1.IsEmpty
+  - System.Collections.Immutable.ImmutableArray`1.Item(System.Int32)
+  - System.Collections.Immutable.ImmutableArray`1.LastIndexOf(`0)
+  - System.Collections.Immutable.ImmutableArray`1.LastIndexOf(`0,System.Int32)
+  - System.Collections.Immutable.ImmutableArray`1.LastIndexOf(`0,System.Int32,System.Int32)
+  - System.Collections.Immutable.ImmutableArray`1.LastIndexOf(`0,System.Int32,System.Int32,System.Collections.Generic.IEqualityComparer{`0})
+  - System.Collections.Immutable.ImmutableArray`1.Length
+  - System.Collections.Immutable.ImmutableArray`1.OfType``1
+  - System.Collections.Immutable.ImmutableArray`1.op_Equality(System.Collections.Immutable.ImmutableArray{`0},System.Collections.Immutable.ImmutableArray{`0})
+  - System.Collections.Immutable.ImmutableArray`1.op_Equality(System.Nullable{System.Collections.Immutable.ImmutableArray{`0}},System.Nullable{System.Collections.Immutable.ImmutableArray{`0}})
+  - System.Collections.Immutable.ImmutableArray`1.op_Inequality(System.Collections.Immutable.ImmutableArray{`0},System.Collections.Immutable.ImmutableArray{`0})
+  - System.Collections.Immutable.ImmutableArray`1.op_Inequality(System.Nullable{System.Collections.Immutable.ImmutableArray{`0}},System.Nullable{System.Collections.Immutable.ImmutableArray{`0}})
+  - System.Collections.Immutable.ImmutableArray`1.Remove(`0)
+  - System.Collections.Immutable.ImmutableArray`1.Remove(`0,System.Collections.Generic.IEqualityComparer{`0})
+  - System.Collections.Immutable.ImmutableArray`1.RemoveAll(System.Predicate{`0})
+  - System.Collections.Immutable.ImmutableArray`1.RemoveAt(System.Int32)
+  - System.Collections.Immutable.ImmutableArray`1.RemoveRange(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Immutable.ImmutableArray`1.RemoveRange(System.Collections.Generic.IEnumerable{`0},System.Collections.Generic.IEqualityComparer{`0})
+  - System.Collections.Immutable.ImmutableArray`1.RemoveRange(System.Collections.Immutable.ImmutableArray{`0})
+  - System.Collections.Immutable.ImmutableArray`1.RemoveRange(System.Collections.Immutable.ImmutableArray{`0},System.Collections.Generic.IEqualityComparer{`0})
+  - System.Collections.Immutable.ImmutableArray`1.RemoveRange(System.Int32,System.Int32)
+  - System.Collections.Immutable.ImmutableArray`1.Replace(`0,`0)
+  - System.Collections.Immutable.ImmutableArray`1.Replace(`0,`0,System.Collections.Generic.IEqualityComparer{`0})
+  - System.Collections.Immutable.ImmutableArray`1.SetItem(System.Int32,`0)
+  - System.Collections.Immutable.ImmutableArray`1.Sort
+  - System.Collections.Immutable.ImmutableArray`1.Sort(System.Collections.Generic.IComparer{`0})
+  - System.Collections.Immutable.ImmutableArray`1.Sort(System.Int32,System.Int32,System.Collections.Generic.IComparer{`0})
+  - System.Collections.Immutable.ImmutableArray`1.System#Collections#Generic#ICollection{T}#Add(`0)
+  - System.Collections.Immutable.ImmutableArray`1.System#Collections#Generic#ICollection{T}#Clear
+  - System.Collections.Immutable.ImmutableArray`1.System#Collections#Generic#ICollection{T}#Count
+  - System.Collections.Immutable.ImmutableArray`1.System#Collections#Generic#ICollection{T}#IsReadOnly
+  - System.Collections.Immutable.ImmutableArray`1.System#Collections#Generic#ICollection{T}#Remove(`0)
+  - System.Collections.Immutable.ImmutableArray`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator
+  - System.Collections.Immutable.ImmutableArray`1.System#Collections#Generic#IList{T}#Insert(System.Int32,`0)
+  - System.Collections.Immutable.ImmutableArray`1.System#Collections#Generic#IList{T}#Item(System.Int32)
+  - System.Collections.Immutable.ImmutableArray`1.System#Collections#Generic#IList{T}#RemoveAt(System.Int32)
+  - System.Collections.Immutable.ImmutableArray`1.System#Collections#Generic#IReadOnlyCollection{T}#Count
+  - System.Collections.Immutable.ImmutableArray`1.System#Collections#Generic#IReadOnlyList{T}#Item(System.Int32)
+  - System.Collections.Immutable.ImmutableArray`1.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  - System.Collections.Immutable.ImmutableArray`1.System#Collections#ICollection#Count
+  - System.Collections.Immutable.ImmutableArray`1.System#Collections#ICollection#IsSynchronized
+  - System.Collections.Immutable.ImmutableArray`1.System#Collections#ICollection#SyncRoot
+  - System.Collections.Immutable.ImmutableArray`1.System#Collections#IEnumerable#GetEnumerator
+  - System.Collections.Immutable.ImmutableArray`1.System#Collections#IList#Add(System.Object)
+  - System.Collections.Immutable.ImmutableArray`1.System#Collections#IList#Clear
+  - System.Collections.Immutable.ImmutableArray`1.System#Collections#IList#Contains(System.Object)
+  - System.Collections.Immutable.ImmutableArray`1.System#Collections#IList#IndexOf(System.Object)
+  - System.Collections.Immutable.ImmutableArray`1.System#Collections#IList#Insert(System.Int32,System.Object)
+  - System.Collections.Immutable.ImmutableArray`1.System#Collections#IList#IsFixedSize
+  - System.Collections.Immutable.ImmutableArray`1.System#Collections#IList#IsReadOnly
+  - System.Collections.Immutable.ImmutableArray`1.System#Collections#IList#Item(System.Int32)
+  - System.Collections.Immutable.ImmutableArray`1.System#Collections#IList#Remove(System.Object)
+  - System.Collections.Immutable.ImmutableArray`1.System#Collections#IList#RemoveAt(System.Int32)
+  - System.Collections.Immutable.ImmutableArray`1.System#Collections#Immutable#IImmutableList{T}#Add(`0)
+  - System.Collections.Immutable.ImmutableArray`1.System#Collections#Immutable#IImmutableList{T}#AddRange(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Immutable.ImmutableArray`1.System#Collections#Immutable#IImmutableList{T}#Clear
+  - System.Collections.Immutable.ImmutableArray`1.System#Collections#Immutable#IImmutableList{T}#Insert(System.Int32,`0)
+  - System.Collections.Immutable.ImmutableArray`1.System#Collections#Immutable#IImmutableList{T}#InsertRange(System.Int32,System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Immutable.ImmutableArray`1.System#Collections#Immutable#IImmutableList{T}#Remove(`0,System.Collections.Generic.IEqualityComparer{`0})
+  - System.Collections.Immutable.ImmutableArray`1.System#Collections#Immutable#IImmutableList{T}#RemoveAll(System.Predicate{`0})
+  - System.Collections.Immutable.ImmutableArray`1.System#Collections#Immutable#IImmutableList{T}#RemoveAt(System.Int32)
+  - System.Collections.Immutable.ImmutableArray`1.System#Collections#Immutable#IImmutableList{T}#RemoveRange(System.Collections.Generic.IEnumerable{`0},System.Collections.Generic.IEqualityComparer{`0})
+  - System.Collections.Immutable.ImmutableArray`1.System#Collections#Immutable#IImmutableList{T}#RemoveRange(System.Int32,System.Int32)
+  - System.Collections.Immutable.ImmutableArray`1.System#Collections#Immutable#IImmutableList{T}#Replace(`0,`0,System.Collections.Generic.IEqualityComparer{`0})
+  - System.Collections.Immutable.ImmutableArray`1.System#Collections#Immutable#IImmutableList{T}#SetItem(System.Int32,`0)
+  - System.Collections.Immutable.ImmutableArray`1.System#Collections#IStructuralComparable#CompareTo(System.Object,System.Collections.IComparer)
+  - System.Collections.Immutable.ImmutableArray`1.System#Collections#IStructuralEquatable#Equals(System.Object,System.Collections.IEqualityComparer)
+  - System.Collections.Immutable.ImmutableArray`1.System#Collections#IStructuralEquatable#GetHashCode(System.Collections.IEqualityComparer)
+  - System.Collections.Immutable.ImmutableArray`1.ToBuilder
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: ImmutableArray<T>
+  name.vb: ImmutableArray(Of T)
+  fullName: System.Collections.Immutable.ImmutableArray<T>
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T)
+  type: Struct
+  source:
+    remote: &o0
+      path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 33
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: A readonly array with O(1) indexable lookup time.
+  syntax:
+    content: 'public struct ImmutableArray<T> : IList<T>, ICollection<T>, IEquatable<ImmutableArray<T>>, IImmutableList<T>, IReadOnlyList<T>, IReadOnlyCollection<T>, IEnumerable<T>, IList, ICollection, IEnumerable, IImmutableArray, IStructuralComparable, IStructuralEquatable'
+    content.vb: Public Structure ImmutableArray(Of T) Implements IList(Of T), ICollection(Of T), IEquatable(Of ImmutableArray(Of T)), IImmutableList(Of T), IReadOnlyList(Of T), IReadOnlyCollection(Of T), IEnumerable(Of T), IList, ICollection, IEnumerable, IImmutableArray, IStructuralComparable, IStructuralEquatable
+    typeParameters:
+    - id: T
+      description: The type of element stored by the array.
+  implements:
+  - System.Collections.Generic.IList{{T}}
+  - System.Collections.Generic.ICollection{{T}}
+  - System.IEquatable{System.Collections.Immutable.ImmutableArray`1}
+  - System.Collections.Immutable.IImmutableList{{T}}
+  - System.Collections.Generic.IReadOnlyList{{T}}
+  - System.Collections.Generic.IReadOnlyCollection{{T}}
+  - System.Collections.Generic.IEnumerable{{T}}
+  - System.Collections.IList
+  - System.Collections.ICollection
+  - System.Collections.IEnumerable
+  - System.Collections.IStructuralComparable
+  - System.Collections.IStructuralEquatable
+  inheritedMembers:
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.Collections.Immutable.ImmutableArray`1.Empty
+  id: Empty
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: Empty
+  fullName: System.Collections.Immutable.ImmutableArray<T>.Empty
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).Empty
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 39
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: An empty (initialized) instance of @'System.Collections.Immutable.ImmutableArray`1'.
+  syntax:
+    content: public static readonly ImmutableArray<T> Empty
+    content.vb: Public Shared ReadOnly Empty As ImmutableArray(Of T)
+- uid: System.Collections.Immutable.ImmutableArray`1.op_Equality(System.Collections.Immutable.ImmutableArray{`0},System.Collections.Immutable.ImmutableArray{`0})
+  id: op_Equality(System.Collections.Immutable.ImmutableArray{`0},System.Collections.Immutable.ImmutableArray{`0})
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: Equality(ImmutableArray<T>, ImmutableArray<T>)
+  name.vb: Equality(ImmutableArray(Of T), ImmutableArray(Of T))
+  fullName: System.Collections.Immutable.ImmutableArray<T>.Equality(System.Collections.Immutable.ImmutableArray<T>, System.Collections.Immutable.ImmutableArray<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).Equality(System.Collections.Immutable.ImmutableArray(Of T), System.Collections.Immutable.ImmutableArray(Of T))
+  type: Operator
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 68
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Checks equality between two instances.
+  syntax:
+    content: public static bool operator ==(ImmutableArray<T> left, ImmutableArray<T> right)
+    content.vb: Public Shared Operator =(left As ImmutableArray(Of T), right As ImmutableArray(Of T)) As Boolean
+    parameters:
+    - id: left
+      type: System.Collections.Immutable.ImmutableArray`1
+      description: The instance to the left of the operator.
+    - id: right
+      type: System.Collections.Immutable.ImmutableArray`1
+      description: The instance to the right of the operator.
+    return:
+      type: System.Boolean
+      description: <c>true</c> if the values' underlying arrays are reference equal; <c>false</c> otherwise.
+- uid: System.Collections.Immutable.ImmutableArray`1.op_Inequality(System.Collections.Immutable.ImmutableArray{`0},System.Collections.Immutable.ImmutableArray{`0})
+  id: op_Inequality(System.Collections.Immutable.ImmutableArray{`0},System.Collections.Immutable.ImmutableArray{`0})
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: Inequality(ImmutableArray<T>, ImmutableArray<T>)
+  name.vb: Inequality(ImmutableArray(Of T), ImmutableArray(Of T))
+  fullName: System.Collections.Immutable.ImmutableArray<T>.Inequality(System.Collections.Immutable.ImmutableArray<T>, System.Collections.Immutable.ImmutableArray<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).Inequality(System.Collections.Immutable.ImmutableArray(Of T), System.Collections.Immutable.ImmutableArray(Of T))
+  type: Operator
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 79
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Checks inequality between two instances.
+  syntax:
+    content: public static bool operator !=(ImmutableArray<T> left, ImmutableArray<T> right)
+    content.vb: Public Shared Operator <>(left As ImmutableArray(Of T), right As ImmutableArray(Of T)) As Boolean
+    parameters:
+    - id: left
+      type: System.Collections.Immutable.ImmutableArray`1
+      description: The instance to the left of the operator.
+    - id: right
+      type: System.Collections.Immutable.ImmutableArray`1
+      description: The instance to the right of the operator.
+    return:
+      type: System.Boolean
+      description: <c>true</c> if the values' underlying arrays are reference not equal; <c>false</c> otherwise.
+- uid: System.Collections.Immutable.ImmutableArray`1.op_Equality(System.Nullable{System.Collections.Immutable.ImmutableArray{`0}},System.Nullable{System.Collections.Immutable.ImmutableArray{`0}})
+  id: op_Equality(System.Nullable{System.Collections.Immutable.ImmutableArray{`0}},System.Nullable{System.Collections.Immutable.ImmutableArray{`0}})
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: Equality(Nullable<ImmutableArray<T>>, Nullable<ImmutableArray<T>>)
+  name.vb: Equality(Nullable(Of ImmutableArray(Of T)), Nullable(Of ImmutableArray(Of T)))
+  fullName: System.Collections.Immutable.ImmutableArray<T>.Equality(System.Nullable<System.Collections.Immutable.ImmutableArray<T>>, System.Nullable<System.Collections.Immutable.ImmutableArray<T>>)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).Equality(System.Nullable(Of System.Collections.Immutable.ImmutableArray(Of T)), System.Nullable(Of System.Collections.Immutable.ImmutableArray(Of T)))
+  type: Operator
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 90
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Checks equality between two instances.
+  syntax:
+    content: public static bool operator ==(ImmutableArray<T>? left, ImmutableArray<T>? right)
+    content.vb: Public Shared Operator =(left As ImmutableArray(Of T)?, right As ImmutableArray(Of T)?) As Boolean
+    parameters:
+    - id: left
+      type: System.Nullable{System.Collections.Immutable.ImmutableArray`1}
+      description: The instance to the left of the operator.
+    - id: right
+      type: System.Nullable{System.Collections.Immutable.ImmutableArray`1}
+      description: The instance to the right of the operator.
+    return:
+      type: System.Boolean
+      description: <c>true</c> if the values' underlying arrays are reference equal; <c>false</c> otherwise.
+- uid: System.Collections.Immutable.ImmutableArray`1.op_Inequality(System.Nullable{System.Collections.Immutable.ImmutableArray{`0}},System.Nullable{System.Collections.Immutable.ImmutableArray{`0}})
+  id: op_Inequality(System.Nullable{System.Collections.Immutable.ImmutableArray{`0}},System.Nullable{System.Collections.Immutable.ImmutableArray{`0}})
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: Inequality(Nullable<ImmutableArray<T>>, Nullable<ImmutableArray<T>>)
+  name.vb: Inequality(Nullable(Of ImmutableArray(Of T)), Nullable(Of ImmutableArray(Of T)))
+  fullName: System.Collections.Immutable.ImmutableArray<T>.Inequality(System.Nullable<System.Collections.Immutable.ImmutableArray<T>>, System.Nullable<System.Collections.Immutable.ImmutableArray<T>>)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).Inequality(System.Nullable(Of System.Collections.Immutable.ImmutableArray(Of T)), System.Nullable(Of System.Collections.Immutable.ImmutableArray(Of T)))
+  type: Operator
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 101
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Checks inequality between two instances.
+  syntax:
+    content: public static bool operator !=(ImmutableArray<T>? left, ImmutableArray<T>? right)
+    content.vb: Public Shared Operator <>(left As ImmutableArray(Of T)?, right As ImmutableArray(Of T)?) As Boolean
+    parameters:
+    - id: left
+      type: System.Nullable{System.Collections.Immutable.ImmutableArray`1}
+      description: The instance to the left of the operator.
+    - id: right
+      type: System.Nullable{System.Collections.Immutable.ImmutableArray`1}
+      description: The instance to the right of the operator.
+    return:
+      type: System.Boolean
+      description: <c>true</c> if the values' underlying arrays are reference not equal; <c>false</c> otherwise.
+- uid: System.Collections.Immutable.ImmutableArray`1.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: Item[Int32]
+  name.vb: Item(Int32)
+  fullName: System.Collections.Immutable.ImmutableArray<T>.Item[System.Int32]
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).Item(System.Int32)
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 113
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Gets the element at the specified index in the read-only list.
+  syntax:
+    content: public T this[int index] { get; }
+    content.vb: Public ReadOnly Property Item(index As Integer) As T
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the element to get.
+    return:
+      type: '{T}'
+      description: The element at the specified index in the read-only list.
+- uid: System.Collections.Immutable.ImmutableArray`1.System#Collections#Generic#IList{T}#Item(System.Int32)
+  id: System#Collections#Generic#IList{T}#Item(System.Int32)
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: IList<T>.Item[Int32]
+  name.vb: System.Collections.Generic.IList<T>.Item(Int32)
+  fullName: System.Collections.Immutable.ImmutableArray<T>.System.Collections.Generic.IList<T>.Item[System.Int32]
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).System.Collections.Generic.IList<T>.Item(System.Int32)
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 133
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Gets or sets the element at the specified index in the read-only list.
+  syntax:
+    content: T IList<T>.this[int index] { get; set; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.Generic.IList<T>.Item(index As Integer) As T Implements IList(Of T).this
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the element to get.
+    return:
+      type: '{T}'
+      description: The element at the specified index in the read-only list.
+  exceptions:
+  - type: System.NotSupportedException
+    description: Always thrown from the setter.
+  - type: System.InvalidOperationException
+    description: Thrown if the  property returns true.
+- uid: System.Collections.Immutable.ImmutableArray`1.System#Collections#Generic#ICollection{T}#IsReadOnly
+  id: System#Collections#Generic#ICollection{T}#IsReadOnly
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: ICollection<T>.IsReadOnly
+  name.vb: System.Collections.Generic.ICollection<T>.IsReadOnly
+  fullName: System.Collections.Immutable.ImmutableArray<T>.System.Collections.Generic.ICollection<T>.IsReadOnly
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).System.Collections.Generic.ICollection<T>.IsReadOnly
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 150
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Gets a value indicating whether this instance is read only.
+  syntax:
+    content: bool ICollection<T>.IsReadOnly { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.Generic.ICollection<T>.IsReadOnly As Boolean Implements ICollection(Of T).IsReadOnly
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Collections.Immutable.ImmutableArray`1.IsEmpty
+  id: IsEmpty
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: IsEmpty
+  fullName: System.Collections.Immutable.ImmutableArray<T>.IsEmpty
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).IsEmpty
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 159
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Gets a value indicating whether this collection is empty.
+  syntax:
+    content: public bool IsEmpty { get; }
+    content.vb: Public ReadOnly Property IsEmpty As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Collections.Immutable.ImmutableArray`1.Length
+  id: Length
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: Length
+  fullName: System.Collections.Immutable.ImmutableArray<T>.Length
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).Length
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 168
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Gets the number of array in the collection.
+  syntax:
+    content: public int Length { get; }
+    content.vb: Public ReadOnly Property Length As Integer
+    parameters: []
+    return:
+      type: System.Int32
+- uid: System.Collections.Immutable.ImmutableArray`1.System#Collections#Generic#ICollection{T}#Count
+  id: System#Collections#Generic#ICollection{T}#Count
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: ICollection<T>.Count
+  name.vb: System.Collections.Generic.ICollection<T>.Count
+  fullName: System.Collections.Immutable.ImmutableArray<T>.System.Collections.Generic.ICollection<T>.Count
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).System.Collections.Generic.ICollection<T>.Count
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 186
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Gets the number of array in the collection.
+  syntax:
+    content: int ICollection<T>.Count { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.Generic.ICollection<T>.Count As Integer Implements ICollection(Of T).Count
+    parameters: []
+    return:
+      type: System.Int32
+  exceptions:
+  - type: System.InvalidOperationException
+    description: Thrown if the  property returns true.
+- uid: System.Collections.Immutable.ImmutableArray`1.System#Collections#Generic#IReadOnlyCollection{T}#Count
+  id: System#Collections#Generic#IReadOnlyCollection{T}#Count
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: IReadOnlyCollection<T>.Count
+  name.vb: System.Collections.Generic.IReadOnlyCollection<T>.Count
+  fullName: System.Collections.Immutable.ImmutableArray<T>.System.Collections.Generic.IReadOnlyCollection<T>.Count
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).System.Collections.Generic.IReadOnlyCollection<T>.Count
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 201
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Gets the number of array in the collection.
+  syntax:
+    content: int IReadOnlyCollection<T>.Count { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.Generic.IReadOnlyCollection<T>.Count As Integer Implements IReadOnlyCollection(Of T).Count
+    parameters: []
+    return:
+      type: System.Int32
+  exceptions:
+  - type: System.InvalidOperationException
+    description: Thrown if the  property returns true.
+- uid: System.Collections.Immutable.ImmutableArray`1.System#Collections#Generic#IReadOnlyList{T}#Item(System.Int32)
+  id: System#Collections#Generic#IReadOnlyList{T}#Item(System.Int32)
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: IReadOnlyList<T>.Item[Int32]
+  name.vb: System.Collections.Generic.IReadOnlyList<T>.Item(Int32)
+  fullName: System.Collections.Immutable.ImmutableArray<T>.System.Collections.Generic.IReadOnlyList<T>.Item[System.Int32]
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).System.Collections.Generic.IReadOnlyList<T>.Item(System.Int32)
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 220
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Gets the element at the specified index.
+  syntax:
+    content: T IReadOnlyList<T>.this[int index] { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.Generic.IReadOnlyList<T>.Item(index As Integer) As T Implements IReadOnlyList(Of T).this
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The index.
+    return:
+      type: '{T}'
+      description: The element.
+  exceptions:
+  - type: System.InvalidOperationException
+    description: Thrown if the  property returns true.
+- uid: System.Collections.Immutable.ImmutableArray`1.IsDefault
+  id: IsDefault
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: IsDefault
+  fullName: System.Collections.Immutable.ImmutableArray<T>.IsDefault
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).IsDefault
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 233
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Gets a value indicating whether this struct was initialized without an actual array instance.
+  syntax:
+    content: public bool IsDefault { get; }
+    content.vb: Public ReadOnly Property IsDefault As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Collections.Immutable.ImmutableArray`1.IsDefaultOrEmpty
+  id: IsDefaultOrEmpty
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: IsDefaultOrEmpty
+  fullName: System.Collections.Immutable.ImmutableArray<T>.IsDefaultOrEmpty
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).IsDefaultOrEmpty
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 242
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Gets a value indicating whether this struct is empty or uninitialized.
+  syntax:
+    content: public bool IsDefaultOrEmpty { get; }
+    content.vb: Public ReadOnly Property IsDefaultOrEmpty As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Collections.Immutable.ImmutableArray`1.IndexOf(`0)
+  id: IndexOf(`0)
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: IndexOf(T)
+  fullName: System.Collections.Immutable.ImmutableArray<T>.IndexOf(T)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).IndexOf(T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 279
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Searches the array for the specified item.
+  syntax:
+    content: public int IndexOf(T item)
+    content.vb: Public Function IndexOf(item As T) As Integer
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The item to search for.
+    return:
+      type: System.Int32
+      description: The 0-based index into the array where the item was found; or -1 if it could not be found.
+- uid: System.Collections.Immutable.ImmutableArray`1.IndexOf(`0,System.Int32,System.Collections.Generic.IEqualityComparer{`0})
+  id: IndexOf(`0,System.Int32,System.Collections.Generic.IEqualityComparer{`0})
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: IndexOf(T, Int32, IEqualityComparer<T>)
+  name.vb: IndexOf(T, Int32, IEqualityComparer(Of T))
+  fullName: System.Collections.Immutable.ImmutableArray<T>.IndexOf(T, System.Int32, System.Collections.Generic.IEqualityComparer<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).IndexOf(T, System.Int32, System.Collections.Generic.IEqualityComparer(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 293
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Searches the array for the specified item.
+  syntax:
+    content: public int IndexOf(T item, int startIndex, IEqualityComparer<T> equalityComparer)
+    content.vb: Public Function IndexOf(item As T, startIndex As Integer, equalityComparer As IEqualityComparer(Of T)) As Integer
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The item to search for.
+    - id: startIndex
+      type: System.Int32
+      description: The index at which to begin the search.
+    - id: equalityComparer
+      type: System.Collections.Generic.IEqualityComparer{{T}}
+      description: The equality comparer to use in the search.
+    return:
+      type: System.Int32
+      description: The 0-based index into the array where the item was found; or -1 if it could not be found.
+- uid: System.Collections.Immutable.ImmutableArray`1.IndexOf(`0,System.Int32)
+  id: IndexOf(`0,System.Int32)
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: IndexOf(T, Int32)
+  fullName: System.Collections.Immutable.ImmutableArray<T>.IndexOf(T, System.Int32)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).IndexOf(T, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 306
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Searches the array for the specified item.
+  syntax:
+    content: public int IndexOf(T item, int startIndex)
+    content.vb: Public Function IndexOf(item As T, startIndex As Integer) As Integer
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The item to search for.
+    - id: startIndex
+      type: System.Int32
+      description: The index at which to begin the search.
+    return:
+      type: System.Int32
+      description: The 0-based index into the array where the item was found; or -1 if it could not be found.
+- uid: System.Collections.Immutable.ImmutableArray`1.IndexOf(`0,System.Int32,System.Int32)
+  id: IndexOf(`0,System.Int32,System.Int32)
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: IndexOf(T, Int32, Int32)
+  fullName: System.Collections.Immutable.ImmutableArray<T>.IndexOf(T, System.Int32, System.Int32)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).IndexOf(T, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 320
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Searches the array for the specified item.
+  syntax:
+    content: public int IndexOf(T item, int startIndex, int count)
+    content.vb: Public Function IndexOf(item As T, startIndex As Integer, count As Integer) As Integer
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The item to search for.
+    - id: startIndex
+      type: System.Int32
+      description: The index at which to begin the search.
+    - id: count
+      type: System.Int32
+      description: The number of elements to search.
+    return:
+      type: System.Int32
+      description: The 0-based index into the array where the item was found; or -1 if it could not be found.
+- uid: System.Collections.Immutable.ImmutableArray`1.IndexOf(`0,System.Int32,System.Int32,System.Collections.Generic.IEqualityComparer{`0})
+  id: IndexOf(`0,System.Int32,System.Int32,System.Collections.Generic.IEqualityComparer{`0})
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: IndexOf(T, Int32, Int32, IEqualityComparer<T>)
+  name.vb: IndexOf(T, Int32, Int32, IEqualityComparer(Of T))
+  fullName: System.Collections.Immutable.ImmutableArray<T>.IndexOf(T, System.Int32, System.Int32, System.Collections.Generic.IEqualityComparer<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).IndexOf(T, System.Int32, System.Int32, System.Collections.Generic.IEqualityComparer(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 334
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Searches the array for the specified item.
+  syntax:
+    content: public int IndexOf(T item, int startIndex, int count, IEqualityComparer<T> equalityComparer)
+    content.vb: Public Function IndexOf(item As T, startIndex As Integer, count As Integer, equalityComparer As IEqualityComparer(Of T)) As Integer
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The item to search for.
+    - id: startIndex
+      type: System.Int32
+      description: The index at which to begin the search.
+    - id: count
+      type: System.Int32
+      description: The number of elements to search.
+    - id: equalityComparer
+      type: System.Collections.Generic.IEqualityComparer{{T}}
+      description: The equality comparer to use in the search.
+    return:
+      type: System.Int32
+      description: The 0-based index into the array where the item was found; or -1 if it could not be found.
+- uid: System.Collections.Immutable.ImmutableArray`1.LastIndexOf(`0)
+  id: LastIndexOf(`0)
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: LastIndexOf(T)
+  fullName: System.Collections.Immutable.ImmutableArray<T>.LastIndexOf(T)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).LastIndexOf(T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 372
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Searches the array for the specified item in reverse.
+  syntax:
+    content: public int LastIndexOf(T item)
+    content.vb: Public Function LastIndexOf(item As T) As Integer
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The item to search for.
+    return:
+      type: System.Int32
+      description: The 0-based index into the array where the item was found; or -1 if it could not be found.
+- uid: System.Collections.Immutable.ImmutableArray`1.LastIndexOf(`0,System.Int32)
+  id: LastIndexOf(`0,System.Int32)
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: LastIndexOf(T, Int32)
+  fullName: System.Collections.Immutable.ImmutableArray<T>.LastIndexOf(T, System.Int32)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).LastIndexOf(T, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 390
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Searches the array for the specified item in reverse.
+  syntax:
+    content: public int LastIndexOf(T item, int startIndex)
+    content.vb: Public Function LastIndexOf(item As T, startIndex As Integer) As Integer
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The item to search for.
+    - id: startIndex
+      type: System.Int32
+      description: The index at which to begin the search.
+    return:
+      type: System.Int32
+      description: The 0-based index into the array where the item was found; or -1 if it could not be found.
+- uid: System.Collections.Immutable.ImmutableArray`1.LastIndexOf(`0,System.Int32,System.Int32)
+  id: LastIndexOf(`0,System.Int32,System.Int32)
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: LastIndexOf(T, Int32, Int32)
+  fullName: System.Collections.Immutable.ImmutableArray<T>.LastIndexOf(T, System.Int32, System.Int32)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).LastIndexOf(T, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 409
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Searches the array for the specified item in reverse.
+  syntax:
+    content: public int LastIndexOf(T item, int startIndex, int count)
+    content.vb: Public Function LastIndexOf(item As T, startIndex As Integer, count As Integer) As Integer
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The item to search for.
+    - id: startIndex
+      type: System.Int32
+      description: The index at which to begin the search.
+    - id: count
+      type: System.Int32
+      description: The number of elements to search.
+    return:
+      type: System.Int32
+      description: The 0-based index into the array where the item was found; or -1 if it could not be found.
+- uid: System.Collections.Immutable.ImmutableArray`1.LastIndexOf(`0,System.Int32,System.Int32,System.Collections.Generic.IEqualityComparer{`0})
+  id: LastIndexOf(`0,System.Int32,System.Int32,System.Collections.Generic.IEqualityComparer{`0})
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: LastIndexOf(T, Int32, Int32, IEqualityComparer<T>)
+  name.vb: LastIndexOf(T, Int32, Int32, IEqualityComparer(Of T))
+  fullName: System.Collections.Immutable.ImmutableArray<T>.LastIndexOf(T, System.Int32, System.Int32, System.Collections.Generic.IEqualityComparer<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).LastIndexOf(T, System.Int32, System.Int32, System.Collections.Generic.IEqualityComparer(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 423
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Searches the array for the specified item in reverse.
+  syntax:
+    content: public int LastIndexOf(T item, int startIndex, int count, IEqualityComparer<T> equalityComparer)
+    content.vb: Public Function LastIndexOf(item As T, startIndex As Integer, count As Integer, equalityComparer As IEqualityComparer(Of T)) As Integer
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The item to search for.
+    - id: startIndex
+      type: System.Int32
+      description: The index at which to begin the search.
+    - id: count
+      type: System.Int32
+      description: The number of elements to search.
+    - id: equalityComparer
+      type: System.Collections.Generic.IEqualityComparer{{T}}
+      description: The equality comparer to use in the search.
+    return:
+      type: System.Int32
+      description: The 0-based index into the array where the item was found; or -1 if it could not be found.
+- uid: System.Collections.Immutable.ImmutableArray`1.Contains(`0)
+  id: Contains(`0)
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: Contains(T)
+  fullName: System.Collections.Immutable.ImmutableArray<T>.Contains(T)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).Contains(T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 461
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Determines whether the specified item exists in the array.
+  syntax:
+    content: public bool Contains(T item)
+    content.vb: Public Function Contains(item As T) As Boolean
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The item to search for.
+    return:
+      type: System.Boolean
+      description: <c>true</c> if an equal value was found in the array; <c>false</c> otherwise.
+- uid: System.Collections.Immutable.ImmutableArray`1.CopyTo(`0[])
+  id: CopyTo(`0[])
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: CopyTo(T[])
+  name.vb: CopyTo(T())
+  fullName: System.Collections.Immutable.ImmutableArray<T>.CopyTo(T[])
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).CopyTo(T())
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 471
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Copies the contents of this array to the specified array.
+  syntax:
+    content: public void CopyTo(T[] destination)
+    content.vb: Public Sub CopyTo(destination As T())
+    parameters:
+    - id: destination
+      type: '{T}[]'
+      description: The array to copy to.
+- uid: System.Collections.Immutable.ImmutableArray`1.CopyTo(`0[],System.Int32)
+  id: CopyTo(`0[],System.Int32)
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: CopyTo(T[], Int32)
+  name.vb: CopyTo(T(), Int32)
+  fullName: System.Collections.Immutable.ImmutableArray<T>.CopyTo(T[], System.Int32)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).CopyTo(T(), System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 484
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Copies the contents of this array to the specified array.
+  syntax:
+    content: public void CopyTo(T[] destination, int destinationIndex)
+    content.vb: Public Sub CopyTo(destination As T(), destinationIndex As Integer)
+    parameters:
+    - id: destination
+      type: '{T}[]'
+      description: The array to copy to.
+    - id: destinationIndex
+      type: System.Int32
+      description: The index into the destination array to which the first copied element is written.
+- uid: System.Collections.Immutable.ImmutableArray`1.CopyTo(System.Int32,`0[],System.Int32,System.Int32)
+  id: CopyTo(System.Int32,`0[],System.Int32,System.Int32)
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: CopyTo(Int32, T[], Int32, Int32)
+  name.vb: CopyTo(Int32, T(), Int32, Int32)
+  fullName: System.Collections.Immutable.ImmutableArray<T>.CopyTo(System.Int32, T[], System.Int32, System.Int32)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).CopyTo(System.Int32, T(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 499
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Copies the contents of this array to the specified array.
+  syntax:
+    content: public void CopyTo(int sourceIndex, T[] destination, int destinationIndex, int length)
+    content.vb: Public Sub CopyTo(sourceIndex As Integer, destination As T(), destinationIndex As Integer, length As Integer)
+    parameters:
+    - id: sourceIndex
+      type: System.Int32
+      description: The index into this collection of the first element to copy.
+    - id: destination
+      type: '{T}[]'
+      description: The array to copy to.
+    - id: destinationIndex
+      type: System.Int32
+      description: The index into the destination array to which the first copied element is written.
+    - id: length
+      type: System.Int32
+      description: The number of elements to copy.
+- uid: System.Collections.Immutable.ImmutableArray`1.Insert(System.Int32,`0)
+  id: Insert(System.Int32,`0)
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: Insert(Int32, T)
+  fullName: System.Collections.Immutable.ImmutableArray<T>.Insert(System.Int32, T)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).Insert(System.Int32, T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 513
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Returns a new array with the specified value inserted at the specified position.
+  syntax:
+    content: public ImmutableArray<T> Insert(int index, T item)
+    content.vb: Public Function Insert(index As Integer, item As T) As ImmutableArray(Of T)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The 0-based index into the array at which the new item should be added.
+    - id: item
+      type: '{T}'
+      description: The item to insert at the start of the array.
+    return:
+      type: System.Collections.Immutable.ImmutableArray`1
+      description: A new array.
+- uid: System.Collections.Immutable.ImmutableArray`1.InsertRange(System.Int32,System.Collections.Generic.IEnumerable{`0})
+  id: InsertRange(System.Int32,System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: InsertRange(Int32, IEnumerable<T>)
+  name.vb: InsertRange(Int32, IEnumerable(Of T))
+  fullName: System.Collections.Immutable.ImmutableArray<T>.InsertRange(System.Int32, System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).InsertRange(System.Int32, System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 538
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Inserts the specified values at the specified index.
+  syntax:
+    content: public ImmutableArray<T> InsertRange(int index, IEnumerable<T> items)
+    content.vb: Public Function InsertRange(index As Integer, items As IEnumerable(Of T)) As ImmutableArray(Of T)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The index at which to insert the value.
+    - id: items
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The elements to insert.
+    return:
+      type: System.Collections.Immutable.ImmutableArray`1
+      description: The new immutable collection.
+- uid: System.Collections.Immutable.ImmutableArray`1.InsertRange(System.Int32,System.Collections.Immutable.ImmutableArray{`0})
+  id: InsertRange(System.Int32,System.Collections.Immutable.ImmutableArray{`0})
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: InsertRange(Int32, ImmutableArray<T>)
+  name.vb: InsertRange(Int32, ImmutableArray(Of T))
+  fullName: System.Collections.Immutable.ImmutableArray<T>.InsertRange(System.Int32, System.Collections.Immutable.ImmutableArray<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).InsertRange(System.Int32, System.Collections.Immutable.ImmutableArray(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 575
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Inserts the specified values at the specified index.
+  syntax:
+    content: public ImmutableArray<T> InsertRange(int index, ImmutableArray<T> items)
+    content.vb: Public Function InsertRange(index As Integer, items As ImmutableArray(Of T)) As ImmutableArray(Of T)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The index at which to insert the value.
+    - id: items
+      type: System.Collections.Immutable.ImmutableArray`1
+      description: The elements to insert.
+    return:
+      type: System.Collections.Immutable.ImmutableArray`1
+      description: The new immutable collection.
+- uid: System.Collections.Immutable.ImmutableArray`1.Add(`0)
+  id: Add(`0)
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: Add(T)
+  fullName: System.Collections.Immutable.ImmutableArray<T>.Add(T)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).Add(T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 600
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Returns a new array with the specified value inserted at the end.
+  syntax:
+    content: public ImmutableArray<T> Add(T item)
+    content.vb: Public Function Add(item As T) As ImmutableArray(Of T)
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The item to insert at the end of the array.
+    return:
+      type: System.Collections.Immutable.ImmutableArray`1
+      description: A new array.
+- uid: System.Collections.Immutable.ImmutableArray`1.AddRange(System.Collections.Generic.IEnumerable{`0})
+  id: AddRange(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: AddRange(IEnumerable<T>)
+  name.vb: AddRange(IEnumerable(Of T))
+  fullName: System.Collections.Immutable.ImmutableArray<T>.AddRange(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).AddRange(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 617
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Adds the specified values to this list.
+  syntax:
+    content: public ImmutableArray<T> AddRange(IEnumerable<T> items)
+    content.vb: Public Function AddRange(items As IEnumerable(Of T)) As ImmutableArray(Of T)
+    parameters:
+    - id: items
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The values to add.
+    return:
+      type: System.Collections.Immutable.ImmutableArray`1
+      description: A new list with the elements added.
+- uid: System.Collections.Immutable.ImmutableArray`1.AddRange(System.Collections.Immutable.ImmutableArray{`0})
+  id: AddRange(System.Collections.Immutable.ImmutableArray{`0})
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: AddRange(ImmutableArray<T>)
+  name.vb: AddRange(ImmutableArray(Of T))
+  fullName: System.Collections.Immutable.ImmutableArray<T>.AddRange(System.Collections.Immutable.ImmutableArray<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).AddRange(System.Collections.Immutable.ImmutableArray(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 629
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Adds the specified values to this list.
+  syntax:
+    content: public ImmutableArray<T> AddRange(ImmutableArray<T> items)
+    content.vb: Public Function AddRange(items As ImmutableArray(Of T)) As ImmutableArray(Of T)
+    parameters:
+    - id: items
+      type: System.Collections.Immutable.ImmutableArray`1
+      description: The values to add.
+    return:
+      type: System.Collections.Immutable.ImmutableArray`1
+      description: A new list with the elements added.
+- uid: System.Collections.Immutable.ImmutableArray`1.SetItem(System.Int32,`0)
+  id: SetItem(System.Int32,`0)
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: SetItem(Int32, T)
+  fullName: System.Collections.Immutable.ImmutableArray<T>.SetItem(System.Int32, T)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).SetItem(System.Int32, T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 654
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Returns an array with the item at the specified position replaced.
+  syntax:
+    content: public ImmutableArray<T> SetItem(int index, T item)
+    content.vb: Public Function SetItem(index As Integer, item As T) As ImmutableArray(Of T)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The index of the item to replace.
+    - id: item
+      type: '{T}'
+      description: The new item.
+    return:
+      type: System.Collections.Immutable.ImmutableArray`1
+      description: The new array.
+- uid: System.Collections.Immutable.ImmutableArray`1.Replace(`0,`0)
+  id: Replace(`0,`0)
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: Replace(T, T)
+  fullName: System.Collections.Immutable.ImmutableArray<T>.Replace(T, T)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).Replace(T, T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 673
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Replaces the first equal element in the list with the specified element.
+  syntax:
+    content: public ImmutableArray<T> Replace(T oldValue, T newValue)
+    content.vb: Public Function Replace(oldValue As T, newValue As T) As ImmutableArray(Of T)
+    parameters:
+    - id: oldValue
+      type: '{T}'
+      description: The element to replace.
+    - id: newValue
+      type: '{T}'
+      description: The element to replace the old element with.
+    return:
+      type: System.Collections.Immutable.ImmutableArray`1
+      description: The new list -- even if the value being replaced is equal to the new value for that position.
+  exceptions:
+  - type: System.ArgumentException
+    description: Thrown when the old value does not exist in the list.
+- uid: System.Collections.Immutable.ImmutableArray`1.Replace(`0,`0,System.Collections.Generic.IEqualityComparer{`0})
+  id: Replace(`0,`0,System.Collections.Generic.IEqualityComparer{`0})
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: Replace(T, T, IEqualityComparer<T>)
+  name.vb: Replace(T, T, IEqualityComparer(Of T))
+  fullName: System.Collections.Immutable.ImmutableArray<T>.Replace(T, T, System.Collections.Generic.IEqualityComparer<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).Replace(T, T, System.Collections.Generic.IEqualityComparer(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 689
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Replaces the first equal element in the list with the specified element.
+  syntax:
+    content: public ImmutableArray<T> Replace(T oldValue, T newValue, IEqualityComparer<T> equalityComparer)
+    content.vb: Public Function Replace(oldValue As T, newValue As T, equalityComparer As IEqualityComparer(Of T)) As ImmutableArray(Of T)
+    parameters:
+    - id: oldValue
+      type: '{T}'
+      description: The element to replace.
+    - id: newValue
+      type: '{T}'
+      description: The element to replace the old element with.
+    - id: equalityComparer
+      type: System.Collections.Generic.IEqualityComparer{{T}}
+      description: The equality comparer to use in the search.
+    return:
+      type: System.Collections.Immutable.ImmutableArray`1
+      description: The new list -- even if the value being replaced is equal to the new value for that position.
+  exceptions:
+  - type: System.ArgumentException
+    description: Thrown when the old value does not exist in the list.
+- uid: System.Collections.Immutable.ImmutableArray`1.Remove(`0)
+  id: Remove(`0)
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: Remove(T)
+  fullName: System.Collections.Immutable.ImmutableArray<T>.Remove(T)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).Remove(T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 708
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: >-
+    Returns an array with the first occurrence of the specified element removed from the array.
+
+    If no match is found, the current array is returned.
+  syntax:
+    content: public ImmutableArray<T> Remove(T item)
+    content.vb: Public Function Remove(item As T) As ImmutableArray(Of T)
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The item to remove.
+    return:
+      type: System.Collections.Immutable.ImmutableArray`1
+      description: The new array.
+- uid: System.Collections.Immutable.ImmutableArray`1.Remove(`0,System.Collections.Generic.IEqualityComparer{`0})
+  id: Remove(`0,System.Collections.Generic.IEqualityComparer{`0})
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: Remove(T, IEqualityComparer<T>)
+  name.vb: Remove(T, IEqualityComparer(Of T))
+  fullName: System.Collections.Immutable.ImmutableArray<T>.Remove(T, System.Collections.Generic.IEqualityComparer<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).Remove(T, System.Collections.Generic.IEqualityComparer(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 723
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: >-
+    Returns an array with the first occurrence of the specified element removed from the array.
+
+    If no match is found, the current array is returned.
+  syntax:
+    content: public ImmutableArray<T> Remove(T item, IEqualityComparer<T> equalityComparer)
+    content.vb: Public Function Remove(item As T, equalityComparer As IEqualityComparer(Of T)) As ImmutableArray(Of T)
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The item to remove.
+    - id: equalityComparer
+      type: System.Collections.Generic.IEqualityComparer{{T}}
+      description: The equality comparer to use in the search.
+    return:
+      type: System.Collections.Immutable.ImmutableArray`1
+      description: The new array.
+- uid: System.Collections.Immutable.ImmutableArray`1.RemoveAt(System.Int32)
+  id: RemoveAt(System.Int32)
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: RemoveAt(Int32)
+  fullName: System.Collections.Immutable.ImmutableArray<T>.RemoveAt(System.Int32)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).RemoveAt(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 739
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Returns an array with the element at the specified position removed.
+  syntax:
+    content: public ImmutableArray<T> RemoveAt(int index)
+    content.vb: Public Function RemoveAt(index As Integer) As ImmutableArray(Of T)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The 0-based index into the array for the element to omit from the returned array.
+    return:
+      type: System.Collections.Immutable.ImmutableArray`1
+      description: The new array.
+- uid: System.Collections.Immutable.ImmutableArray`1.RemoveRange(System.Int32,System.Int32)
+  id: RemoveRange(System.Int32,System.Int32)
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: RemoveRange(Int32, Int32)
+  fullName: System.Collections.Immutable.ImmutableArray<T>.RemoveRange(System.Int32, System.Int32)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).RemoveRange(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 751
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Returns an array with the elements at the specified position removed.
+  syntax:
+    content: public ImmutableArray<T> RemoveRange(int index, int length)
+    content.vb: Public Function RemoveRange(index As Integer, length As Integer) As ImmutableArray(Of T)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The 0-based index into the array for the element to omit from the returned array.
+    - id: length
+      type: System.Int32
+      description: The number of elements to remove.
+    return:
+      type: System.Collections.Immutable.ImmutableArray`1
+      description: The new array.
+- uid: System.Collections.Immutable.ImmutableArray`1.RemoveRange(System.Collections.Generic.IEnumerable{`0})
+  id: RemoveRange(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: RemoveRange(IEnumerable<T>)
+  name.vb: RemoveRange(IEnumerable(Of T))
+  fullName: System.Collections.Immutable.ImmutableArray<T>.RemoveRange(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).RemoveRange(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 776
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Removes the specified values from this list.
+  syntax:
+    content: public ImmutableArray<T> RemoveRange(IEnumerable<T> items)
+    content.vb: Public Function RemoveRange(items As IEnumerable(Of T)) As ImmutableArray(Of T)
+    parameters:
+    - id: items
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The items to remove if matches are found in this list.
+    return:
+      type: System.Collections.Immutable.ImmutableArray`1
+      description: A new list with the elements removed.
+- uid: System.Collections.Immutable.ImmutableArray`1.RemoveRange(System.Collections.Generic.IEnumerable{`0},System.Collections.Generic.IEqualityComparer{`0})
+  id: RemoveRange(System.Collections.Generic.IEnumerable{`0},System.Collections.Generic.IEqualityComparer{`0})
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: RemoveRange(IEnumerable<T>, IEqualityComparer<T>)
+  name.vb: RemoveRange(IEnumerable(Of T), IEqualityComparer(Of T))
+  fullName: System.Collections.Immutable.ImmutableArray<T>.RemoveRange(System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IEqualityComparer<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).RemoveRange(System.Collections.Generic.IEnumerable(Of T), System.Collections.Generic.IEqualityComparer(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 792
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Removes the specified values from this list.
+  syntax:
+    content: public ImmutableArray<T> RemoveRange(IEnumerable<T> items, IEqualityComparer<T> equalityComparer)
+    content.vb: Public Function RemoveRange(items As IEnumerable(Of T), equalityComparer As IEqualityComparer(Of T)) As ImmutableArray(Of T)
+    parameters:
+    - id: items
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The items to remove if matches are found in this list.
+    - id: equalityComparer
+      type: System.Collections.Generic.IEqualityComparer{{T}}
+      description: The equality comparer to use in the search.
+    return:
+      type: System.Collections.Immutable.ImmutableArray`1
+      description: A new list with the elements removed.
+- uid: System.Collections.Immutable.ImmutableArray`1.RemoveRange(System.Collections.Immutable.ImmutableArray{`0})
+  id: RemoveRange(System.Collections.Immutable.ImmutableArray{`0})
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: RemoveRange(ImmutableArray<T>)
+  name.vb: RemoveRange(ImmutableArray(Of T))
+  fullName: System.Collections.Immutable.ImmutableArray<T>.RemoveRange(System.Collections.Immutable.ImmutableArray<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).RemoveRange(System.Collections.Immutable.ImmutableArray(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 821
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Removes the specified values from this list.
+  syntax:
+    content: public ImmutableArray<T> RemoveRange(ImmutableArray<T> items)
+    content.vb: Public Function RemoveRange(items As ImmutableArray(Of T)) As ImmutableArray(Of T)
+    parameters:
+    - id: items
+      type: System.Collections.Immutable.ImmutableArray`1
+      description: The items to remove if matches are found in this list.
+    return:
+      type: System.Collections.Immutable.ImmutableArray`1
+      description: A new list with the elements removed.
+- uid: System.Collections.Immutable.ImmutableArray`1.RemoveRange(System.Collections.Immutable.ImmutableArray{`0},System.Collections.Generic.IEqualityComparer{`0})
+  id: RemoveRange(System.Collections.Immutable.ImmutableArray{`0},System.Collections.Generic.IEqualityComparer{`0})
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: RemoveRange(ImmutableArray<T>, IEqualityComparer<T>)
+  name.vb: RemoveRange(ImmutableArray(Of T), IEqualityComparer(Of T))
+  fullName: System.Collections.Immutable.ImmutableArray<T>.RemoveRange(System.Collections.Immutable.ImmutableArray<T>, System.Collections.Generic.IEqualityComparer<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).RemoveRange(System.Collections.Immutable.ImmutableArray(Of T), System.Collections.Generic.IEqualityComparer(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 837
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Removes the specified values from this list.
+  syntax:
+    content: public ImmutableArray<T> RemoveRange(ImmutableArray<T> items, IEqualityComparer<T> equalityComparer)
+    content.vb: Public Function RemoveRange(items As ImmutableArray(Of T), equalityComparer As IEqualityComparer(Of T)) As ImmutableArray(Of T)
+    parameters:
+    - id: items
+      type: System.Collections.Immutable.ImmutableArray`1
+      description: The items to remove if matches are found in this list.
+    - id: equalityComparer
+      type: System.Collections.Generic.IEqualityComparer{{T}}
+      description: The equality comparer to use in the search.
+    return:
+      type: System.Collections.Immutable.ImmutableArray`1
+      description: A new list with the elements removed.
+- uid: System.Collections.Immutable.ImmutableArray`1.RemoveAll(System.Predicate{`0})
+  id: RemoveAll(System.Predicate{`0})
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: RemoveAll(Predicate<T>)
+  name.vb: RemoveAll(Predicate(Of T))
+  fullName: System.Collections.Immutable.ImmutableArray<T>.RemoveAll(System.Predicate<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).RemoveAll(System.Predicate(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 869
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: >-
+    Removes all the elements that match the conditions defined by the specified
+
+    predicate.
+  syntax:
+    content: public ImmutableArray<T> RemoveAll(Predicate<T> match)
+    content.vb: Public Function RemoveAll(match As Predicate(Of T)) As ImmutableArray(Of T)
+    parameters:
+    - id: match
+      type: System.Predicate{{T}}
+      description: >-
+        The @'System.Predicate`1' delegate that defines the conditions of the elements
+
+        to remove.
+    return:
+      type: System.Collections.Immutable.ImmutableArray`1
+      description: The new list.
+- uid: System.Collections.Immutable.ImmutableArray`1.Clear
+  id: Clear
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: Clear()
+  fullName: System.Collections.Immutable.ImmutableArray<T>.Clear()
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).Clear()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 903
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Returns an empty array.
+  syntax:
+    content: public ImmutableArray<T> Clear()
+    content.vb: Public Function Clear As ImmutableArray(Of T)
+    return:
+      type: System.Collections.Immutable.ImmutableArray`1
+- uid: System.Collections.Immutable.ImmutableArray`1.Sort
+  id: Sort
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: Sort()
+  fullName: System.Collections.Immutable.ImmutableArray<T>.Sort()
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).Sort()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 912
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Returns a sorted instance of this array.
+  syntax:
+    content: public ImmutableArray<T> Sort()
+    content.vb: Public Function Sort As ImmutableArray(Of T)
+    return:
+      type: System.Collections.Immutable.ImmutableArray`1
+- uid: System.Collections.Immutable.ImmutableArray`1.Sort(System.Collections.Generic.IComparer{`0})
+  id: Sort(System.Collections.Generic.IComparer{`0})
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: Sort(IComparer<T>)
+  name.vb: Sort(IComparer(Of T))
+  fullName: System.Collections.Immutable.ImmutableArray<T>.Sort(System.Collections.Generic.IComparer<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).Sort(System.Collections.Generic.IComparer(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 923
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Returns a sorted instance of this array.
+  syntax:
+    content: public ImmutableArray<T> Sort(IComparer<T> comparer)
+    content.vb: Public Function Sort(comparer As IComparer(Of T)) As ImmutableArray(Of T)
+    parameters:
+    - id: comparer
+      type: System.Collections.Generic.IComparer{{T}}
+      description: The comparer to use in sorting. If <c>null</c>, the default comparer is used.
+    return:
+      type: System.Collections.Immutable.ImmutableArray`1
+- uid: System.Collections.Immutable.ImmutableArray`1.Sort(System.Int32,System.Int32,System.Collections.Generic.IComparer{`0})
+  id: Sort(System.Int32,System.Int32,System.Collections.Generic.IComparer{`0})
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: Sort(Int32, Int32, IComparer<T>)
+  name.vb: Sort(Int32, Int32, IComparer(Of T))
+  fullName: System.Collections.Immutable.ImmutableArray<T>.Sort(System.Int32, System.Int32, System.Collections.Generic.IComparer<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).Sort(System.Int32, System.Int32, System.Collections.Generic.IComparer(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 936
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Returns a sorted instance of this array.
+  syntax:
+    content: public ImmutableArray<T> Sort(int index, int count, IComparer<T> comparer)
+    content.vb: Public Function Sort(index As Integer, count As Integer, comparer As IComparer(Of T)) As ImmutableArray(Of T)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The index of the first element to consider in the sort.
+    - id: count
+      type: System.Int32
+      description: The number of elements to include in the sort.
+    - id: comparer
+      type: System.Collections.Generic.IComparer{{T}}
+      description: The comparer to use in sorting. If <c>null</c>, the default comparer is used.
+    return:
+      type: System.Collections.Immutable.ImmutableArray`1
+- uid: System.Collections.Immutable.ImmutableArray`1.ToBuilder
+  id: ToBuilder
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: ToBuilder()
+  fullName: System.Collections.Immutable.ImmutableArray<T>.ToBuilder()
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).ToBuilder()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 979
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Returns a builder that is populated with the same contents as this array.
+  syntax:
+    content: public ImmutableArray<T>.Builder ToBuilder()
+    content.vb: Public Function ToBuilder As ImmutableArray(Of T).Builder
+    return:
+      type: System.Collections.Immutable.ImmutableArray`1.Builder
+      description: The new builder.
+- uid: System.Collections.Immutable.ImmutableArray`1.GetEnumerator
+  id: GetEnumerator
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: GetEnumerator()
+  fullName: System.Collections.Immutable.ImmutableArray<T>.GetEnumerator()
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 997
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Returns an enumerator for the contents of the array.
+  syntax:
+    content: public ImmutableArray<T>.Enumerator GetEnumerator()
+    content.vb: Public Function GetEnumerator As ImmutableArray(Of T).Enumerator
+    return:
+      type: System.Collections.Immutable.ImmutableArray`1.Enumerator
+      description: An enumerator.
+- uid: System.Collections.Immutable.ImmutableArray`1.GetHashCode
+  id: GetHashCode
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: GetHashCode()
+  fullName: System.Collections.Immutable.ImmutableArray<T>.GetHashCode()
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 1011
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Returns a hash code for this instance.
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table.
+  overridden: System.ValueType.GetHashCode
+- uid: System.Collections.Immutable.ImmutableArray`1.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: Equals(Object)
+  fullName: System.Collections.Immutable.ImmutableArray<T>.Equals(System.Object)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 1025
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Determines whether the specified @'System.Object' is equal to this instance.
+  syntax:
+    content: public override bool Equals(object obj)
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The @'System.Object' to compare with this instance.
+    return:
+      type: System.Boolean
+      description: <c>true</c> if the specified @'System.Object' is equal to this instance; otherwise, <c>false</c>.
+  overridden: System.ValueType.Equals(System.Object)
+- uid: System.Collections.Immutable.ImmutableArray`1.Equals(System.Collections.Immutable.ImmutableArray{`0})
+  id: Equals(System.Collections.Immutable.ImmutableArray{`0})
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: Equals(ImmutableArray<T>)
+  name.vb: Equals(ImmutableArray(Of T))
+  fullName: System.Collections.Immutable.ImmutableArray<T>.Equals(System.Collections.Immutable.ImmutableArray<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).Equals(System.Collections.Immutable.ImmutableArray(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 1044
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Indicates whether the current object is equal to another object of the same type.
+  syntax:
+    content: public bool Equals(ImmutableArray<T> other)
+    content.vb: Public Function Equals(other As ImmutableArray(Of T)) As Boolean
+    parameters:
+    - id: other
+      type: System.Collections.Immutable.ImmutableArray`1
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: true if the current object is equal to the <paramref name="other" /> parameter; otherwise, false.
+- uid: System.Collections.Immutable.ImmutableArray`1.CastUp``1(System.Collections.Immutable.ImmutableArray{``0})
+  id: CastUp``1(System.Collections.Immutable.ImmutableArray{``0})
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: CastUp<TDerived>(ImmutableArray<TDerived>)
+  name.vb: CastUp(Of TDerived)(ImmutableArray(Of TDerived))
+  fullName: System.Collections.Immutable.ImmutableArray<T>.CastUp<TDerived>(System.Collections.Immutable.ImmutableArray<TDerived>)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).CastUp(Of TDerived)(System.Collections.Immutable.ImmutableArray(Of TDerived))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 1059
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: >-
+    Initializes a new instance of the @'System.Collections.Immutable.ImmutableArray`1' struct based on the contents
+
+    of an existing instance, allowing a covariant static cast to efficiently reuse the existing array.
+  remarks: >-
+    Covariant upcasts from this method may be reversed by calling the
+
+    @'System.Collections.Immutable.ImmutableArray`1.As``1'  or @'System.Collections.Immutable.ImmutableArray`1.CastArray``1'method.
+  syntax:
+    content: 'public static ImmutableArray<T> CastUp<TDerived>(ImmutableArray<TDerived> items)where TDerived : class, T'
+    content.vb: Public Shared Function CastUp(Of TDerived As {Class, T})(items As ImmutableArray(Of TDerived)) As ImmutableArray(Of T)
+    parameters:
+    - id: items
+      type: System.Collections.Immutable.ImmutableArray{{TDerived}}
+      description: The array to initialize the array with. No copy is made.
+    typeParameters:
+    - id: TDerived
+    return:
+      type: System.Collections.Immutable.ImmutableArray`1
+- uid: System.Collections.Immutable.ImmutableArray`1.CastArray``1
+  id: CastArray``1
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: CastArray<TOther>()
+  name.vb: CastArray(Of TOther)()
+  fullName: System.Collections.Immutable.ImmutableArray<T>.CastArray<TOther>()
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).CastArray(Of TOther)()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 1071
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: >-
+    Initializes a new instance of the @'System.Collections.Immutable.ImmutableArray`1' struct by casting the underlying
+
+    array to an array of type <typeparam name="TOther" />.
+  syntax:
+    content: 'public ImmutableArray<TOther> CastArray<TOther>()where TOther : class'
+    content.vb: Public Function CastArray(Of TOther As Class) As ImmutableArray(Of TOther)
+    typeParameters:
+    - id: TOther
+    return:
+      type: System.Collections.Immutable.ImmutableArray{{TOther}}
+  exceptions:
+  - type: System.InvalidCastException
+    description: Thrown if the cast is illegal.
+- uid: System.Collections.Immutable.ImmutableArray`1.As``1
+  id: As``1
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: As<TOther>()
+  name.vb: As(Of TOther)()
+  fullName: System.Collections.Immutable.ImmutableArray<T>.As<TOther>()
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).As(Of TOther)()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 1092
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Creates an immutable array for this array, cast to a different element type.
+  remarks: >-
+    Arrays of derived elements types can be cast to arrays of base element types
+
+    without reallocating the array.
+
+    These upcasts can be reversed via this same method, casting an array of base
+
+    element types to their derived types. However, downcasting is only successful
+
+    when it reverses a prior upcasting operation.
+  syntax:
+    content: 'public ImmutableArray<TOther> As<TOther>()where TOther : class'
+    content.vb: Public Function As(Of TOther As Class) As ImmutableArray(Of TOther)
+    typeParameters:
+    - id: TOther
+      description: The type of array element to return.
+    return:
+      type: System.Collections.Immutable.ImmutableArray{{TOther}}
+      description: >-
+        A struct typed for the base element type. If the cast fails, an instance
+
+        is returned whose @'System.Collections.Immutable.ImmutableArray`1.IsDefault' property returns <c>true</c>.
+- uid: System.Collections.Immutable.ImmutableArray`1.OfType``1
+  id: OfType``1
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: OfType<TResult>()
+  name.vb: OfType(Of TResult)()
+  fullName: System.Collections.Immutable.ImmutableArray<T>.OfType<TResult>()
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).OfType(Of TResult)()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 1106
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Filters the elements of this array to those assignable to the specified type.
+  syntax:
+    content: public IEnumerable<TResult> OfType<TResult>()
+    content.vb: Public Function OfType(Of TResult) As IEnumerable(Of TResult)
+    typeParameters:
+    - id: TResult
+      description: The type to filter the elements of the sequence on.
+    return:
+      type: System.Collections.Generic.IEnumerable{{TResult}}
+      description: >-
+        An @'System.Collections.Generic.IEnumerable`1' that contains elements from
+
+        the input sequence of type <typeparamref name="TResult" />.
+- uid: System.Collections.Immutable.ImmutableArray`1.System#Collections#Generic#IList{T}#Insert(System.Int32,`0)
+  id: System#Collections#Generic#IList{T}#Insert(System.Int32,`0)
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: IList<T>.Insert(Int32, T)
+  name.vb: System.Collections.Generic.IList<T>.Insert(Int32, T)
+  fullName: System.Collections.Immutable.ImmutableArray<T>.System.Collections.Generic.IList<T>.Insert(System.Int32, T)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).System.Collections.Generic.IList<T>.Insert(System.Int32, T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 1120
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  syntax:
+    content: void IList<T>.Insert(int index, T item)
+    content.vb: Sub System.Collections.Generic.IList<T>.Insert(index As Integer, item As T) Implements IList(Of T).Insert
+    parameters:
+    - id: index
+      type: System.Int32
+    - id: item
+      type: '{T}'
+- uid: System.Collections.Immutable.ImmutableArray`1.System#Collections#Generic#IList{T}#RemoveAt(System.Int32)
+  id: System#Collections#Generic#IList{T}#RemoveAt(System.Int32)
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: IList<T>.RemoveAt(Int32)
+  name.vb: System.Collections.Generic.IList<T>.RemoveAt(Int32)
+  fullName: System.Collections.Immutable.ImmutableArray<T>.System.Collections.Generic.IList<T>.RemoveAt(System.Int32)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).System.Collections.Generic.IList<T>.RemoveAt(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 1126
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  syntax:
+    content: void IList<T>.RemoveAt(int index)
+    content.vb: Sub System.Collections.Generic.IList<T>.RemoveAt(index As Integer) Implements IList(Of T).RemoveAt
+    parameters:
+    - id: index
+      type: System.Int32
+- uid: System.Collections.Immutable.ImmutableArray`1.System#Collections#Generic#ICollection{T}#Add(`0)
+  id: System#Collections#Generic#ICollection{T}#Add(`0)
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: ICollection<T>.Add(T)
+  name.vb: System.Collections.Generic.ICollection<T>.Add(T)
+  fullName: System.Collections.Immutable.ImmutableArray<T>.System.Collections.Generic.ICollection<T>.Add(T)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).System.Collections.Generic.ICollection<T>.Add(T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 1132
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  syntax:
+    content: void ICollection<T>.Add(T item)
+    content.vb: Sub System.Collections.Generic.ICollection<T>.Add(item As T) Implements ICollection(Of T).Add
+    parameters:
+    - id: item
+      type: '{T}'
+- uid: System.Collections.Immutable.ImmutableArray`1.System#Collections#Generic#ICollection{T}#Clear
+  id: System#Collections#Generic#ICollection{T}#Clear
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: ICollection<T>.Clear()
+  name.vb: System.Collections.Generic.ICollection<T>.Clear()
+  fullName: System.Collections.Immutable.ImmutableArray<T>.System.Collections.Generic.ICollection<T>.Clear()
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).System.Collections.Generic.ICollection<T>.Clear()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 1138
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  syntax:
+    content: void ICollection<T>.Clear()
+    content.vb: Sub System.Collections.Generic.ICollection<T>.Clear Implements ICollection(Of T).Clear
+- uid: System.Collections.Immutable.ImmutableArray`1.System#Collections#Generic#ICollection{T}#Remove(`0)
+  id: System#Collections#Generic#ICollection{T}#Remove(`0)
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: ICollection<T>.Remove(T)
+  name.vb: System.Collections.Generic.ICollection<T>.Remove(T)
+  fullName: System.Collections.Immutable.ImmutableArray<T>.System.Collections.Generic.ICollection<T>.Remove(T)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).System.Collections.Generic.ICollection<T>.Remove(T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 1144
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  syntax:
+    content: bool ICollection<T>.Remove(T item)
+    content.vb: Function System.Collections.Generic.ICollection<T>.Remove(item As T) As Boolean Implements ICollection(Of T).Remove
+    parameters:
+    - id: item
+      type: '{T}'
+    return:
+      type: System.Boolean
+      description: 
+- uid: System.Collections.Immutable.ImmutableArray`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator
+  id: System#Collections#Generic#IEnumerable{T}#GetEnumerator
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: IEnumerable<T>.GetEnumerator()
+  name.vb: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Immutable.ImmutableArray<T>.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 1155
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Returns an enumerator for the contents of the array.
+  syntax:
+    content: IEnumerator<T> IEnumerable<T>.GetEnumerator()
+    content.vb: Function System.Collections.Generic.IEnumerable<T>.GetEnumerator As IEnumerator(Of T) Implements IEnumerable(Of T).GetEnumerator
+    return:
+      type: System.Collections.Generic.IEnumerator{{T}}
+      description: An enumerator.
+  exceptions:
+  - type: System.InvalidOperationException
+    description: Thrown if the  property returns true.
+- uid: System.Collections.Immutable.ImmutableArray`1.System#Collections#IEnumerable#GetEnumerator
+  id: System#Collections#IEnumerable#GetEnumerator
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: System.Collections.Immutable.ImmutableArray<T>.System.Collections.IEnumerable.GetEnumerator()
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).System.Collections.IEnumerable.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 1168
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Returns an enumerator for the contents of the array.
+  syntax:
+    content: IEnumerator IEnumerable.GetEnumerator()
+    content.vb: Function System.Collections.IEnumerable.GetEnumerator As IEnumerator Implements IEnumerable.GetEnumerator
+    return:
+      type: System.Collections.IEnumerator
+      description: An enumerator.
+  exceptions:
+  - type: System.InvalidOperationException
+    description: Thrown if the  property returns true.
+- uid: System.Collections.Immutable.ImmutableArray`1.System#Collections#Immutable#IImmutableList{T}#Clear
+  id: System#Collections#Immutable#IImmutableList{T}#Clear
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: IImmutableList<T>.Clear()
+  name.vb: System.Collections.Immutable.IImmutableList<T>.Clear()
+  fullName: System.Collections.Immutable.ImmutableArray<T>.System.Collections.Immutable.IImmutableList<T>.Clear()
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).System.Collections.Immutable.IImmutableList<T>.Clear()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 1179
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: See @'System.Collections.Immutable.IImmutableList`1'
+  syntax:
+    content: IImmutableList<T> IImmutableList<T>.Clear()
+    content.vb: Function System.Collections.Immutable.IImmutableList<T>.Clear As IImmutableList(Of T) Implements IImmutableList(Of T).Clear
+    return:
+      type: System.Collections.Immutable.IImmutableList{{T}}
+- uid: System.Collections.Immutable.ImmutableArray`1.System#Collections#Immutable#IImmutableList{T}#Add(`0)
+  id: System#Collections#Immutable#IImmutableList{T}#Add(`0)
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: IImmutableList<T>.Add(T)
+  name.vb: System.Collections.Immutable.IImmutableList<T>.Add(T)
+  fullName: System.Collections.Immutable.ImmutableArray<T>.System.Collections.Immutable.IImmutableList<T>.Add(T)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).System.Collections.Immutable.IImmutableList<T>.Add(T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 1190
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: See @'System.Collections.Immutable.IImmutableList`1'
+  syntax:
+    content: IImmutableList<T> IImmutableList<T>.Add(T value)
+    content.vb: Function System.Collections.Immutable.IImmutableList<T>.Add(value As T) As IImmutableList(Of T) Implements IImmutableList(Of T).Add
+    parameters:
+    - id: value
+      type: '{T}'
+    return:
+      type: System.Collections.Immutable.IImmutableList{{T}}
+- uid: System.Collections.Immutable.ImmutableArray`1.System#Collections#Immutable#IImmutableList{T}#AddRange(System.Collections.Generic.IEnumerable{`0})
+  id: System#Collections#Immutable#IImmutableList{T}#AddRange(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: IImmutableList<T>.AddRange(IEnumerable<T>)
+  name.vb: System.Collections.Immutable.IImmutableList<T>.AddRange(IEnumerable(Of T))
+  fullName: System.Collections.Immutable.ImmutableArray<T>.System.Collections.Immutable.IImmutableList<T>.AddRange(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).System.Collections.Immutable.IImmutableList<T>.AddRange(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 1201
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: See @'System.Collections.Immutable.IImmutableList`1'
+  syntax:
+    content: IImmutableList<T> IImmutableList<T>.AddRange(IEnumerable<T> items)
+    content.vb: Function System.Collections.Immutable.IImmutableList<T>.AddRange(items As IEnumerable(Of T)) As IImmutableList(Of T) Implements IImmutableList(Of T).AddRange
+    parameters:
+    - id: items
+      type: System.Collections.Generic.IEnumerable{{T}}
+    return:
+      type: System.Collections.Immutable.IImmutableList{{T}}
+- uid: System.Collections.Immutable.ImmutableArray`1.System#Collections#Immutable#IImmutableList{T}#Insert(System.Int32,`0)
+  id: System#Collections#Immutable#IImmutableList{T}#Insert(System.Int32,`0)
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: IImmutableList<T>.Insert(Int32, T)
+  name.vb: System.Collections.Immutable.IImmutableList<T>.Insert(Int32, T)
+  fullName: System.Collections.Immutable.ImmutableArray<T>.System.Collections.Immutable.IImmutableList<T>.Insert(System.Int32, T)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).System.Collections.Immutable.IImmutableList<T>.Insert(System.Int32, T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 1212
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: See @'System.Collections.Immutable.IImmutableList`1'
+  syntax:
+    content: IImmutableList<T> IImmutableList<T>.Insert(int index, T element)
+    content.vb: Function System.Collections.Immutable.IImmutableList<T>.Insert(index As Integer, element As T) As IImmutableList(Of T) Implements IImmutableList(Of T).Insert
+    parameters:
+    - id: index
+      type: System.Int32
+    - id: element
+      type: '{T}'
+    return:
+      type: System.Collections.Immutable.IImmutableList{{T}}
+- uid: System.Collections.Immutable.ImmutableArray`1.System#Collections#Immutable#IImmutableList{T}#InsertRange(System.Int32,System.Collections.Generic.IEnumerable{`0})
+  id: System#Collections#Immutable#IImmutableList{T}#InsertRange(System.Int32,System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: IImmutableList<T>.InsertRange(Int32, IEnumerable<T>)
+  name.vb: System.Collections.Immutable.IImmutableList<T>.InsertRange(Int32, IEnumerable(Of T))
+  fullName: System.Collections.Immutable.ImmutableArray<T>.System.Collections.Immutable.IImmutableList<T>.InsertRange(System.Int32, System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).System.Collections.Immutable.IImmutableList<T>.InsertRange(System.Int32, System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 1223
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: See @'System.Collections.Immutable.IImmutableList`1'
+  syntax:
+    content: IImmutableList<T> IImmutableList<T>.InsertRange(int index, IEnumerable<T> items)
+    content.vb: Function System.Collections.Immutable.IImmutableList<T>.InsertRange(index As Integer, items As IEnumerable(Of T)) As IImmutableList(Of T) Implements IImmutableList(Of T).InsertRange
+    parameters:
+    - id: index
+      type: System.Int32
+    - id: items
+      type: System.Collections.Generic.IEnumerable{{T}}
+    return:
+      type: System.Collections.Immutable.IImmutableList{{T}}
+- uid: System.Collections.Immutable.ImmutableArray`1.System#Collections#Immutable#IImmutableList{T}#Remove(`0,System.Collections.Generic.IEqualityComparer{`0})
+  id: System#Collections#Immutable#IImmutableList{T}#Remove(`0,System.Collections.Generic.IEqualityComparer{`0})
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: IImmutableList<T>.Remove(T, IEqualityComparer<T>)
+  name.vb: System.Collections.Immutable.IImmutableList<T>.Remove(T, IEqualityComparer(Of T))
+  fullName: System.Collections.Immutable.ImmutableArray<T>.System.Collections.Immutable.IImmutableList<T>.Remove(T, System.Collections.Generic.IEqualityComparer<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).System.Collections.Immutable.IImmutableList<T>.Remove(T, System.Collections.Generic.IEqualityComparer(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 1234
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: See @'System.Collections.Immutable.IImmutableList`1'
+  syntax:
+    content: IImmutableList<T> IImmutableList<T>.Remove(T value, IEqualityComparer<T> equalityComparer)
+    content.vb: Function System.Collections.Immutable.IImmutableList<T>.Remove(value As T, equalityComparer As IEqualityComparer(Of T)) As IImmutableList(Of T) Implements IImmutableList(Of T).Remove
+    parameters:
+    - id: value
+      type: '{T}'
+    - id: equalityComparer
+      type: System.Collections.Generic.IEqualityComparer{{T}}
+    return:
+      type: System.Collections.Immutable.IImmutableList{{T}}
+- uid: System.Collections.Immutable.ImmutableArray`1.System#Collections#Immutable#IImmutableList{T}#RemoveAll(System.Predicate{`0})
+  id: System#Collections#Immutable#IImmutableList{T}#RemoveAll(System.Predicate{`0})
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: IImmutableList<T>.RemoveAll(Predicate<T>)
+  name.vb: System.Collections.Immutable.IImmutableList<T>.RemoveAll(Predicate(Of T))
+  fullName: System.Collections.Immutable.ImmutableArray<T>.System.Collections.Immutable.IImmutableList<T>.RemoveAll(System.Predicate<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).System.Collections.Immutable.IImmutableList<T>.RemoveAll(System.Predicate(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 1245
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: See @'System.Collections.Immutable.IImmutableList`1'
+  syntax:
+    content: IImmutableList<T> IImmutableList<T>.RemoveAll(Predicate<T> match)
+    content.vb: Function System.Collections.Immutable.IImmutableList<T>.RemoveAll(match As Predicate(Of T)) As IImmutableList(Of T) Implements IImmutableList(Of T).RemoveAll
+    parameters:
+    - id: match
+      type: System.Predicate{{T}}
+    return:
+      type: System.Collections.Immutable.IImmutableList{{T}}
+- uid: System.Collections.Immutable.ImmutableArray`1.System#Collections#Immutable#IImmutableList{T}#RemoveRange(System.Collections.Generic.IEnumerable{`0},System.Collections.Generic.IEqualityComparer{`0})
+  id: System#Collections#Immutable#IImmutableList{T}#RemoveRange(System.Collections.Generic.IEnumerable{`0},System.Collections.Generic.IEqualityComparer{`0})
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: IImmutableList<T>.RemoveRange(IEnumerable<T>, IEqualityComparer<T>)
+  name.vb: System.Collections.Immutable.IImmutableList<T>.RemoveRange(IEnumerable(Of T), IEqualityComparer(Of T))
+  fullName: System.Collections.Immutable.ImmutableArray<T>.System.Collections.Immutable.IImmutableList<T>.RemoveRange(System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IEqualityComparer<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).System.Collections.Immutable.IImmutableList<T>.RemoveRange(System.Collections.Generic.IEnumerable(Of T), System.Collections.Generic.IEqualityComparer(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 1256
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: See @'System.Collections.Immutable.IImmutableList`1'
+  syntax:
+    content: IImmutableList<T> IImmutableList<T>.RemoveRange(IEnumerable<T> items, IEqualityComparer<T> equalityComparer)
+    content.vb: Function System.Collections.Immutable.IImmutableList<T>.RemoveRange(items As IEnumerable(Of T), equalityComparer As IEqualityComparer(Of T)) As IImmutableList(Of T) Implements IImmutableList(Of T).RemoveRange
+    parameters:
+    - id: items
+      type: System.Collections.Generic.IEnumerable{{T}}
+    - id: equalityComparer
+      type: System.Collections.Generic.IEqualityComparer{{T}}
+    return:
+      type: System.Collections.Immutable.IImmutableList{{T}}
+- uid: System.Collections.Immutable.ImmutableArray`1.System#Collections#Immutable#IImmutableList{T}#RemoveRange(System.Int32,System.Int32)
+  id: System#Collections#Immutable#IImmutableList{T}#RemoveRange(System.Int32,System.Int32)
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: IImmutableList<T>.RemoveRange(Int32, Int32)
+  name.vb: System.Collections.Immutable.IImmutableList<T>.RemoveRange(Int32, Int32)
+  fullName: System.Collections.Immutable.ImmutableArray<T>.System.Collections.Immutable.IImmutableList<T>.RemoveRange(System.Int32, System.Int32)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).System.Collections.Immutable.IImmutableList<T>.RemoveRange(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 1267
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: See @'System.Collections.Immutable.IImmutableList`1'
+  syntax:
+    content: IImmutableList<T> IImmutableList<T>.RemoveRange(int index, int count)
+    content.vb: Function System.Collections.Immutable.IImmutableList<T>.RemoveRange(index As Integer, count As Integer) As IImmutableList(Of T) Implements IImmutableList(Of T).RemoveRange
+    parameters:
+    - id: index
+      type: System.Int32
+    - id: count
+      type: System.Int32
+    return:
+      type: System.Collections.Immutable.IImmutableList{{T}}
+- uid: System.Collections.Immutable.ImmutableArray`1.System#Collections#Immutable#IImmutableList{T}#RemoveAt(System.Int32)
+  id: System#Collections#Immutable#IImmutableList{T}#RemoveAt(System.Int32)
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: IImmutableList<T>.RemoveAt(Int32)
+  name.vb: System.Collections.Immutable.IImmutableList<T>.RemoveAt(Int32)
+  fullName: System.Collections.Immutable.ImmutableArray<T>.System.Collections.Immutable.IImmutableList<T>.RemoveAt(System.Int32)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).System.Collections.Immutable.IImmutableList<T>.RemoveAt(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 1278
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: See @'System.Collections.Immutable.IImmutableList`1'
+  syntax:
+    content: IImmutableList<T> IImmutableList<T>.RemoveAt(int index)
+    content.vb: Function System.Collections.Immutable.IImmutableList<T>.RemoveAt(index As Integer) As IImmutableList(Of T) Implements IImmutableList(Of T).RemoveAt
+    parameters:
+    - id: index
+      type: System.Int32
+    return:
+      type: System.Collections.Immutable.IImmutableList{{T}}
+- uid: System.Collections.Immutable.ImmutableArray`1.System#Collections#Immutable#IImmutableList{T}#SetItem(System.Int32,`0)
+  id: System#Collections#Immutable#IImmutableList{T}#SetItem(System.Int32,`0)
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: IImmutableList<T>.SetItem(Int32, T)
+  name.vb: System.Collections.Immutable.IImmutableList<T>.SetItem(Int32, T)
+  fullName: System.Collections.Immutable.ImmutableArray<T>.System.Collections.Immutable.IImmutableList<T>.SetItem(System.Int32, T)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).System.Collections.Immutable.IImmutableList<T>.SetItem(System.Int32, T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 1289
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: See @'System.Collections.Immutable.IImmutableList`1'
+  syntax:
+    content: IImmutableList<T> IImmutableList<T>.SetItem(int index, T value)
+    content.vb: Function System.Collections.Immutable.IImmutableList<T>.SetItem(index As Integer, value As T) As IImmutableList(Of T) Implements IImmutableList(Of T).SetItem
+    parameters:
+    - id: index
+      type: System.Int32
+    - id: value
+      type: '{T}'
+    return:
+      type: System.Collections.Immutable.IImmutableList{{T}}
+- uid: System.Collections.Immutable.ImmutableArray`1.System#Collections#Immutable#IImmutableList{T}#Replace(`0,`0,System.Collections.Generic.IEqualityComparer{`0})
+  id: System#Collections#Immutable#IImmutableList{T}#Replace(`0,`0,System.Collections.Generic.IEqualityComparer{`0})
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: IImmutableList<T>.Replace(T, T, IEqualityComparer<T>)
+  name.vb: System.Collections.Immutable.IImmutableList<T>.Replace(T, T, IEqualityComparer(Of T))
+  fullName: System.Collections.Immutable.ImmutableArray<T>.System.Collections.Immutable.IImmutableList<T>.Replace(T, T, System.Collections.Generic.IEqualityComparer<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).System.Collections.Immutable.IImmutableList<T>.Replace(T, T, System.Collections.Generic.IEqualityComparer(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 1300
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: See @'System.Collections.Immutable.IImmutableList`1'
+  syntax:
+    content: IImmutableList<T> IImmutableList<T>.Replace(T oldValue, T newValue, IEqualityComparer<T> equalityComparer)
+    content.vb: Function System.Collections.Immutable.IImmutableList<T>.Replace(oldValue As T, newValue As T, equalityComparer As IEqualityComparer(Of T)) As IImmutableList(Of T) Implements IImmutableList(Of T).Replace
+    parameters:
+    - id: oldValue
+      type: '{T}'
+    - id: newValue
+      type: '{T}'
+    - id: equalityComparer
+      type: System.Collections.Generic.IEqualityComparer{{T}}
+    return:
+      type: System.Collections.Immutable.IImmutableList{{T}}
+- uid: System.Collections.Immutable.ImmutableArray`1.System#Collections#IList#Add(System.Object)
+  id: System#Collections#IList#Add(System.Object)
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: IList.Add(Object)
+  name.vb: System.Collections.IList.Add(Object)
+  fullName: System.Collections.Immutable.ImmutableArray<T>.System.Collections.IList.Add(System.Object)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).System.Collections.IList.Add(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 1316
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Adds an item to the @'System.Collections.IList'.
+  syntax:
+    content: int IList.Add(object value)
+    content.vb: Function System.Collections.IList.Add(value As Object) As Integer Implements IList.Add
+    parameters:
+    - id: value
+      type: System.Object
+      description: The object to add to the @'System.Collections.IList'.
+    return:
+      type: System.Int32
+      description: The position into which the new element was inserted, or -1 to indicate that the item was not inserted into the collection,
+  exceptions:
+  - type: System.NotSupportedException
+- uid: System.Collections.Immutable.ImmutableArray`1.System#Collections#IList#Clear
+  id: System#Collections#IList#Clear
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: IList.Clear()
+  name.vb: System.Collections.IList.Clear()
+  fullName: System.Collections.Immutable.ImmutableArray<T>.System.Collections.IList.Clear()
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).System.Collections.IList.Clear()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 1326
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Removes all items from the @'System.Collections.Generic.ICollection`1'.
+  syntax:
+    content: void IList.Clear()
+    content.vb: Sub System.Collections.IList.Clear Implements IList.Clear
+  exceptions:
+  - type: System.NotSupportedException
+- uid: System.Collections.Immutable.ImmutableArray`1.System#Collections#IList#Contains(System.Object)
+  id: System#Collections#IList#Contains(System.Object)
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: IList.Contains(Object)
+  name.vb: System.Collections.IList.Contains(Object)
+  fullName: System.Collections.Immutable.ImmutableArray<T>.System.Collections.IList.Contains(System.Object)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).System.Collections.IList.Contains(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 1339
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Determines whether the @'System.Collections.IList' contains a specific value.
+  syntax:
+    content: bool IList.Contains(object value)
+    content.vb: Function System.Collections.IList.Contains(value As Object) As Boolean Implements IList.Contains
+    parameters:
+    - id: value
+      type: System.Object
+      description: The object to locate in the @'System.Collections.IList'.
+    return:
+      type: System.Boolean
+      description: true if the @'System.Object' is found in the @'System.Collections.IList'; otherwise, false.
+- uid: System.Collections.Immutable.ImmutableArray`1.System#Collections#IList#IndexOf(System.Object)
+  id: System#Collections#IList#IndexOf(System.Object)
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: IList.IndexOf(Object)
+  name.vb: System.Collections.IList.IndexOf(Object)
+  fullName: System.Collections.Immutable.ImmutableArray<T>.System.Collections.IList.IndexOf(System.Object)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).System.Collections.IList.IndexOf(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 1354
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Determines the index of a specific item in the @'System.Collections.IList'.
+  syntax:
+    content: int IList.IndexOf(object value)
+    content.vb: Function System.Collections.IList.IndexOf(value As Object) As Integer Implements IList.IndexOf
+    parameters:
+    - id: value
+      type: System.Object
+      description: The object to locate in the @'System.Collections.IList'.
+    return:
+      type: System.Int32
+      description: The index of <paramref name="value" /> if found in the list; otherwise, -1.
+- uid: System.Collections.Immutable.ImmutableArray`1.System#Collections#IList#Insert(System.Int32,System.Object)
+  id: System#Collections#IList#Insert(System.Int32,System.Object)
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: IList.Insert(Int32, Object)
+  name.vb: System.Collections.IList.Insert(Int32, Object)
+  fullName: System.Collections.Immutable.ImmutableArray<T>.System.Collections.IList.Insert(System.Int32, System.Object)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).System.Collections.IList.Insert(System.Int32, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 1368
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Inserts an item to the @'System.Collections.IList' at the specified index.
+  syntax:
+    content: void IList.Insert(int index, object value)
+    content.vb: Sub System.Collections.IList.Insert(index As Integer, value As Object) Implements IList.Insert
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index at which <paramref name="value" /> should be inserted.
+    - id: value
+      type: System.Object
+      description: The object to insert into the @'System.Collections.IList'.
+  exceptions:
+  - type: System.NotSupportedException
+- uid: System.Collections.Immutable.ImmutableArray`1.System#Collections#IList#IsFixedSize
+  id: System#Collections#IList#IsFixedSize
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: IList.IsFixedSize
+  name.vb: System.Collections.IList.IsFixedSize
+  fullName: System.Collections.Immutable.ImmutableArray<T>.System.Collections.IList.IsFixedSize
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).System.Collections.IList.IsFixedSize
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 1380
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Gets a value indicating whether this instance is fixed size.
+  syntax:
+    content: bool IList.IsFixedSize { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.IList.IsFixedSize As Boolean Implements IList.IsFixedSize
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Collections.Immutable.ImmutableArray`1.System#Collections#IList#IsReadOnly
+  id: System#Collections#IList#IsReadOnly
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: IList.IsReadOnly
+  name.vb: System.Collections.IList.IsReadOnly
+  fullName: System.Collections.Immutable.ImmutableArray<T>.System.Collections.IList.IsReadOnly
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).System.Collections.IList.IsReadOnly
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 1393
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Gets a value indicating whether this instance is read only.
+  syntax:
+    content: bool IList.IsReadOnly { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.IList.IsReadOnly As Boolean Implements IList.IsReadOnly
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Collections.Immutable.ImmutableArray`1.System#Collections#ICollection#Count
+  id: System#Collections#ICollection#Count
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: ICollection.Count
+  name.vb: System.Collections.ICollection.Count
+  fullName: System.Collections.Immutable.ImmutableArray<T>.System.Collections.ICollection.Count
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).System.Collections.ICollection.Count
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 1404
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Gets the size of the array.
+  syntax:
+    content: int ICollection.Count { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.ICollection.Count As Integer Implements ICollection.Count
+    parameters: []
+    return:
+      type: System.Int32
+  exceptions:
+  - type: System.InvalidOperationException
+    description: Thrown if the  property returns true.
+- uid: System.Collections.Immutable.ImmutableArray`1.System#Collections#ICollection#IsSynchronized
+  id: System#Collections#ICollection#IsSynchronized
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: ICollection.IsSynchronized
+  name.vb: System.Collections.ICollection.IsSynchronized
+  fullName: System.Collections.Immutable.ImmutableArray<T>.System.Collections.ICollection.IsSynchronized
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).System.Collections.ICollection.IsSynchronized
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 1419
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: See the @'System.Collections.ICollection' interface.
+  syntax:
+    content: bool ICollection.IsSynchronized { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.ICollection.IsSynchronized As Boolean Implements ICollection.IsSynchronized
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Collections.Immutable.ImmutableArray`1.System#Collections#ICollection#SyncRoot
+  id: System#Collections#ICollection#SyncRoot
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: ICollection.SyncRoot
+  name.vb: System.Collections.ICollection.SyncRoot
+  fullName: System.Collections.Immutable.ImmutableArray<T>.System.Collections.ICollection.SyncRoot
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).System.Collections.ICollection.SyncRoot
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 1433
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Gets the sync root.
+  syntax:
+    content: object ICollection.SyncRoot { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.ICollection.SyncRoot As Object Implements ICollection.SyncRoot
+    parameters: []
+    return:
+      type: System.Object
+- uid: System.Collections.Immutable.ImmutableArray`1.System#Collections#IList#Remove(System.Object)
+  id: System#Collections#IList#Remove(System.Object)
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: IList.Remove(Object)
+  name.vb: System.Collections.IList.Remove(Object)
+  fullName: System.Collections.Immutable.ImmutableArray<T>.System.Collections.IList.Remove(System.Object)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).System.Collections.IList.Remove(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 1445
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Removes the first occurrence of a specific object from the @'System.Collections.IList'.
+  syntax:
+    content: void IList.Remove(object value)
+    content.vb: Sub System.Collections.IList.Remove(value As Object) Implements IList.Remove
+    parameters:
+    - id: value
+      type: System.Object
+      description: The object to remove from the @'System.Collections.IList'.
+  exceptions:
+  - type: System.NotSupportedException
+- uid: System.Collections.Immutable.ImmutableArray`1.System#Collections#IList#RemoveAt(System.Int32)
+  id: System#Collections#IList#RemoveAt(System.Int32)
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: IList.RemoveAt(Int32)
+  name.vb: System.Collections.IList.RemoveAt(Int32)
+  fullName: System.Collections.Immutable.ImmutableArray<T>.System.Collections.IList.RemoveAt(System.Int32)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).System.Collections.IList.RemoveAt(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 1456
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Removes the @'System.Collections.Generic.IList`1' item at the specified index.
+  syntax:
+    content: void IList.RemoveAt(int index)
+    content.vb: Sub System.Collections.IList.RemoveAt(index As Integer) Implements IList.RemoveAt
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the item to remove.
+  exceptions:
+  - type: System.NotSupportedException
+- uid: System.Collections.Immutable.ImmutableArray`1.System#Collections#IList#Item(System.Int32)
+  id: System#Collections#IList#Item(System.Int32)
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: IList.Item[Int32]
+  name.vb: System.Collections.IList.Item(Int32)
+  fullName: System.Collections.Immutable.ImmutableArray<T>.System.Collections.IList.Item[System.Int32]
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).System.Collections.IList.Item(System.Int32)
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 1472
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Gets or sets the @'System.Object' at the specified index.
+  syntax:
+    content: object IList.this[int index] { get; set; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.IList.Item(index As Integer) As Object Implements IList.this
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The index.
+    return:
+      type: System.Object
+      description: 
+  exceptions:
+  - type: System.NotSupportedException
+    description: Always thrown from the setter.
+  - type: System.InvalidOperationException
+    description: Thrown if the  property returns true.
+- uid: System.Collections.Immutable.ImmutableArray`1.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  id: System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: ICollection.CopyTo(Array, Int32)
+  name.vb: System.Collections.ICollection.CopyTo(Array, Int32)
+  fullName: System.Collections.Immutable.ImmutableArray<T>.System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 1489
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Copies the elements of the @'System.Collections.ICollection' to an @'System.Array', starting at a particular @'System.Array' index.
+  syntax:
+    content: void ICollection.CopyTo(Array array, int index)
+    content.vb: Sub System.Collections.ICollection.CopyTo(array As Array, index As Integer) Implements ICollection.CopyTo
+    parameters:
+    - id: array
+      type: System.Array
+      description: The one-dimensional @'System.Array' that is the destination of the elements copied from @'System.Collections.ICollection'. The @'System.Array' must have zero-based indexing.
+    - id: index
+      type: System.Int32
+      description: The zero-based index in <paramref name="array" /> at which copying begins.
+- uid: System.Collections.Immutable.ImmutableArray`1.System#Collections#IStructuralEquatable#Equals(System.Object,System.Collections.IEqualityComparer)
+  id: System#Collections#IStructuralEquatable#Equals(System.Object,System.Collections.IEqualityComparer)
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: IStructuralEquatable.Equals(Object, IEqualityComparer)
+  name.vb: System.Collections.IStructuralEquatable.Equals(Object, IEqualityComparer)
+  fullName: System.Collections.Immutable.ImmutableArray<T>.System.Collections.IStructuralEquatable.Equals(System.Object, System.Collections.IEqualityComparer)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).System.Collections.IStructuralEquatable.Equals(System.Object, System.Collections.IEqualityComparer)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 1503
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Determines whether an object is structurally equal to the current instance.
+  syntax:
+    content: bool IStructuralEquatable.Equals(object other, IEqualityComparer comparer)
+    content.vb: Function System.Collections.IStructuralEquatable.Equals(other As Object, comparer As IEqualityComparer) As Boolean Implements IStructuralEquatable.Equals
+    parameters:
+    - id: other
+      type: System.Object
+      description: The object to compare with the current instance.
+    - id: comparer
+      type: System.Collections.IEqualityComparer
+      description: An object that determines whether the current instance and other are equal.
+    return:
+      type: System.Boolean
+      description: true if the two objects are equal; otherwise, false.
+- uid: System.Collections.Immutable.ImmutableArray`1.System#Collections#IStructuralEquatable#GetHashCode(System.Collections.IEqualityComparer)
+  id: System#Collections#IStructuralEquatable#GetHashCode(System.Collections.IEqualityComparer)
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: IStructuralEquatable.GetHashCode(IEqualityComparer)
+  name.vb: System.Collections.IStructuralEquatable.GetHashCode(IEqualityComparer)
+  fullName: System.Collections.Immutable.ImmutableArray<T>.System.Collections.IStructuralEquatable.GetHashCode(System.Collections.IEqualityComparer)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).System.Collections.IStructuralEquatable.GetHashCode(System.Collections.IEqualityComparer)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 1534
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Returns a hash code for the current instance.
+  syntax:
+    content: int IStructuralEquatable.GetHashCode(IEqualityComparer comparer)
+    content.vb: Function System.Collections.IStructuralEquatable.GetHashCode(comparer As IEqualityComparer) As Integer Implements IStructuralEquatable.GetHashCode
+    parameters:
+    - id: comparer
+      type: System.Collections.IEqualityComparer
+      description: An object that computes the hash code of the current object.
+    return:
+      type: System.Int32
+      description: The hash code for the current instance.
+- uid: System.Collections.Immutable.ImmutableArray`1.System#Collections#IStructuralComparable#CompareTo(System.Object,System.Collections.IComparer)
+  id: System#Collections#IStructuralComparable#CompareTo(System.Object,System.Collections.IComparer)
+  parent: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: IStructuralComparable.CompareTo(Object, IComparer)
+  name.vb: System.Collections.IStructuralComparable.CompareTo(Object, IComparer)
+  fullName: System.Collections.Immutable.ImmutableArray<T>.System.Collections.IStructuralComparable.CompareTo(System.Object, System.Collections.IComparer)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T).System.Collections.IStructuralComparable.CompareTo(System.Object, System.Collections.IComparer)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
+    startLine: 1554
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: >-
+    Determines whether the current collection object precedes, occurs in the
+
+    same position as, or follows another object in the sort order.
+  syntax:
+    content: int IStructuralComparable.CompareTo(object other, IComparer comparer)
+    content.vb: Function System.Collections.IStructuralComparable.CompareTo(other As Object, comparer As IComparer) As Integer Implements IStructuralComparable.CompareTo
+    parameters:
+    - id: other
+      type: System.Object
+      description: The object to compare with the current instance.
+    - id: comparer
+      type: System.Collections.IComparer
+      description: >-
+        An object that compares members of the current collection object with the
+
+        corresponding members of other.
+    return:
+      type: System.Int32
+      description: >-
+        An integer that indicates the relationship of the current collection object
+
+        to other.
+references:
+- uid: System.Collections.Immutable
+  isExternal: false
+  name: System.Collections.Immutable
+  fullName: System.Collections.Immutable
+  type: Namespace
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Collections.Immutable.ImmutableArray`1
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: ImmutableArray<T>
+  name.vb: ImmutableArray(Of T)
+  fullName: System.Collections.Immutable.ImmutableArray<T>
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T)
+  type: Struct
+  summary: A readonly array with O(1) indexable lookup time.
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    fullName: System.Collections.Immutable.ImmutableArray
+    href: System.Collections.Immutable.ImmutableArray`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    fullName: System.Collections.Immutable.ImmutableArray
+    href: System.Collections.Immutable.ImmutableArray`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Nullable{System.Collections.Immutable.ImmutableArray`1}
+  parent: System
+  definition: System.Nullable`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: Nullable<ImmutableArray<T>>
+  name.vb: Nullable(Of ImmutableArray(Of T))
+  fullName: System.Nullable<System.Collections.Immutable.ImmutableArray<T>>
+  fullName.vb: System.Nullable(Of System.Collections.Immutable.ImmutableArray(Of T))
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    fullName: System.Collections.Immutable.ImmutableArray
+    href: System.Collections.Immutable.ImmutableArray`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    fullName: System.Collections.Immutable.ImmutableArray
+    href: System.Collections.Immutable.ImmutableArray`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+  - name: )
+    fullName: )
+- uid: System.Nullable`1
+  parent: System
+  isExternal: true
+  name: Nullable<T>
+  name.vb: Nullable(Of T)
+  fullName: System.Nullable<T>
+  fullName.vb: System.Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: '{T}'
+  isExternal: false
+  name: T
+  fullName: T
+- uid: System.NotSupportedException
+- uid: System.InvalidOperationException
+- uid: System.Collections.Generic.IEqualityComparer{{T}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEqualityComparer`1
+  name: IEqualityComparer<T>
+  name.vb: IEqualityComparer(Of T)
+  fullName: System.Collections.Generic.IEqualityComparer<T>
+  fullName.vb: System.Collections.Generic.IEqualityComparer(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEqualityComparer`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEqualityComparer<T>
+  name.vb: IEqualityComparer(Of T)
+  fullName: System.Collections.Generic.IEqualityComparer<T>
+  fullName.vb: System.Collections.Generic.IEqualityComparer(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: '{T}[]'
+  isExternal: false
+  name: T[]
+  name.vb: T()
+  fullName: T[]
+  fullName.vb: T()
+  spec.csharp:
+  - name: T
+    fullName: T
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - name: T
+    fullName: T
+  - name: ()
+    fullName: ()
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.ArgumentException
+- uid: System.Predicate`1
+  parent: System
+  isExternal: true
+  name: Predicate<T>
+  name.vb: Predicate(Of T)
+  fullName: System.Predicate<T>
+  fullName.vb: System.Predicate(Of T)
+  spec.csharp:
+  - uid: System.Predicate`1
+    name: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Predicate`1
+    name: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Predicate{{T}}
+  parent: System
+  definition: System.Predicate`1
+  name: Predicate<T>
+  name.vb: Predicate(Of T)
+  fullName: System.Predicate<T>
+  fullName.vb: System.Predicate(Of T)
+  spec.csharp:
+  - uid: System.Predicate`1
+    name: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Predicate`1
+    name: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IComparer{{T}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IComparer`1
+  name: IComparer<T>
+  name.vb: IComparer(Of T)
+  fullName: System.Collections.Generic.IComparer<T>
+  fullName.vb: System.Collections.Generic.IComparer(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    fullName: System.Collections.Generic.IComparer
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    fullName: System.Collections.Generic.IComparer
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IComparer`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IComparer<T>
+  name.vb: IComparer(Of T)
+  fullName: System.Collections.Generic.IComparer<T>
+  fullName.vb: System.Collections.Generic.IComparer(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    fullName: System.Collections.Generic.IComparer
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    fullName: System.Collections.Generic.IComparer
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.ImmutableArray`1.Builder
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableArray`1.Builder.yml
+  name: ImmutableArray.Builder<>
+  name.vb: ImmutableArray.Builder(Of )
+  fullName: System.Collections.Immutable.ImmutableArray.Builder<>
+  fullName.vb: System.Collections.Immutable.ImmutableArray.Builder(Of )
+  type: Class
+  summary: >-
+    A writable array accessor that can be converted into an @'System.Collections.Immutable.ImmutableArray`1'
+
+    instance without allocating memory.
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableArray`1.Builder
+    name: ImmutableArray.Builder
+    fullName: System.Collections.Immutable.ImmutableArray.Builder
+    href: System.Collections.Immutable.ImmutableArray`1.Builder.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableArray`1.Builder
+    name: ImmutableArray.Builder
+    fullName: System.Collections.Immutable.ImmutableArray.Builder
+    href: System.Collections.Immutable.ImmutableArray`1.Builder.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.ImmutableArray`1.Enumerator
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableArray`1.Enumerator.yml
+  name: ImmutableArray.Enumerator<>
+  name.vb: ImmutableArray.Enumerator(Of )
+  fullName: System.Collections.Immutable.ImmutableArray.Enumerator<>
+  fullName.vb: System.Collections.Immutable.ImmutableArray.Enumerator(Of )
+  type: Struct
+  summary: An array enumerator.
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableArray`1.Enumerator
+    name: ImmutableArray.Enumerator
+    fullName: System.Collections.Immutable.ImmutableArray.Enumerator
+    href: System.Collections.Immutable.ImmutableArray`1.Enumerator.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableArray`1.Enumerator
+    name: ImmutableArray.Enumerator
+    fullName: System.Collections.Immutable.ImmutableArray.Enumerator
+    href: System.Collections.Immutable.ImmutableArray`1.Enumerator.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.ImmutableArray`1.As``1
+- uid: System.Collections.Immutable.ImmutableArray`1.CastArray``1
+- uid: System.Collections.Immutable.ImmutableArray{{TDerived}}
+  parent: System.Collections.Immutable
+  definition: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: ImmutableArray<TDerived>
+  name.vb: ImmutableArray(Of TDerived)
+  fullName: System.Collections.Immutable.ImmutableArray<TDerived>
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of TDerived)
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    fullName: System.Collections.Immutable.ImmutableArray
+    href: System.Collections.Immutable.ImmutableArray`1.yml
+  - name: <
+    fullName: <
+  - name: TDerived
+    fullName: TDerived
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    fullName: System.Collections.Immutable.ImmutableArray
+    href: System.Collections.Immutable.ImmutableArray`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TDerived
+    fullName: TDerived
+  - name: )
+    fullName: )
+- uid: System.InvalidCastException
+  isExternal: false
+  href: System.InvalidCastException.yml
+  name: InvalidCastException
+  fullName: System.InvalidCastException
+  type: Class
+- uid: System.Collections.Immutable.ImmutableArray{{TOther}}
+  parent: System.Collections.Immutable
+  definition: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: ImmutableArray<TOther>
+  name.vb: ImmutableArray(Of TOther)
+  fullName: System.Collections.Immutable.ImmutableArray<TOther>
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of TOther)
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    fullName: System.Collections.Immutable.ImmutableArray
+    href: System.Collections.Immutable.ImmutableArray`1.yml
+  - name: <
+    fullName: <
+  - name: TOther
+    fullName: TOther
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    fullName: System.Collections.Immutable.ImmutableArray
+    href: System.Collections.Immutable.ImmutableArray`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TOther
+    fullName: TOther
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.ImmutableArray`1.IsDefault
+- uid: System.Collections.Generic.IEnumerable{{TResult}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<TResult>
+  name.vb: IEnumerable(Of TResult)
+  fullName: System.Collections.Generic.IEnumerable<TResult>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of TResult)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator{{T}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  name: IEnumerator<T>
+  name.vb: IEnumerator(Of T)
+  fullName: System.Collections.Generic.IEnumerator<T>
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerator<T>
+  name.vb: IEnumerator(Of T)
+  fullName: System.Collections.Generic.IEnumerator<T>
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  isExternal: false
+  name: System.Collections
+  fullName: System.Collections
+- uid: System.Collections.Immutable.IImmutableList`1
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.IImmutableList`1.yml
+  name: IImmutableList<T>
+  name.vb: IImmutableList(Of T)
+  fullName: System.Collections.Immutable.IImmutableList<T>
+  fullName.vb: System.Collections.Immutable.IImmutableList(Of T)
+  type: Interface
+  summary: A list of elements that can only be modified by creating a new instance of the list.
+  spec.csharp:
+  - uid: System.Collections.Immutable.IImmutableList`1
+    name: IImmutableList
+    fullName: System.Collections.Immutable.IImmutableList
+    href: System.Collections.Immutable.IImmutableList`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.IImmutableList`1
+    name: IImmutableList
+    fullName: System.Collections.Immutable.IImmutableList
+    href: System.Collections.Immutable.IImmutableList`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.IImmutableList{{T}}
+  parent: System.Collections.Immutable
+  definition: System.Collections.Immutable.IImmutableList`1
+  href: System.Collections.Immutable.IImmutableList`1.yml
+  name: IImmutableList<T>
+  name.vb: IImmutableList(Of T)
+  fullName: System.Collections.Immutable.IImmutableList<T>
+  fullName.vb: System.Collections.Immutable.IImmutableList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Immutable.IImmutableList`1
+    name: IImmutableList
+    fullName: System.Collections.Immutable.IImmutableList
+    href: System.Collections.Immutable.IImmutableList`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.IImmutableList`1
+    name: IImmutableList
+    fullName: System.Collections.Immutable.IImmutableList
+    href: System.Collections.Immutable.IImmutableList`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.IList
+  parent: System.Collections
+  isExternal: true
+  name: IList
+  fullName: System.Collections.IList
+- uid: System.Collections.Generic.ICollection`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: ICollection<T>
+  name.vb: ICollection(Of T)
+  fullName: System.Collections.Generic.ICollection<T>
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.ICollection
+  parent: System.Collections
+  isExternal: true
+  name: ICollection
+  fullName: System.Collections.ICollection
+- uid: System.Collections.Generic.IList`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IList<T>
+  name.vb: IList(Of T)
+  fullName: System.Collections.Generic.IList<T>
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Array
+  parent: System
+  isExternal: true
+  name: Array
+  fullName: System.Array
+- uid: System.Collections.IEqualityComparer
+  parent: System.Collections
+  isExternal: true
+  name: IEqualityComparer
+  fullName: System.Collections.IEqualityComparer
+- uid: System.Collections.IComparer
+  parent: System.Collections
+  isExternal: true
+  name: IComparer
+  fullName: System.Collections.IComparer

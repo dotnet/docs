@@ -1,0 +1,29 @@
+items:
+- uid: System.Runtime.InteropServices._CustomAttributeBuilder
+  id: _CustomAttributeBuilder
+  parent: System.Runtime.InteropServices
+  children: []
+  href: System.Runtime.InteropServices._CustomAttributeBuilder.yml
+  name: _CustomAttributeBuilder
+  fullName: System.Runtime.InteropServices._CustomAttributeBuilder
+  type: Interface
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/Emit/ComInterfaces.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Reflection/Emit/ComInterfaces.cs
+    startLine: 50
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Exposes the @'System.Reflection.Emit.CustomAttributeBuilder' class to unmanaged code.
+  syntax:
+    content: public interface _CustomAttributeBuilder
+    content.vb: Public Interface _CustomAttributeBuilder
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace

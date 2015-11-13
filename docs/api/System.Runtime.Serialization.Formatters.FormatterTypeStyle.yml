@@ -1,0 +1,83 @@
+items:
+- uid: System.Runtime.Serialization.Formatters.FormatterTypeStyle
+  id: FormatterTypeStyle
+  parent: System.Runtime.Serialization.Formatters
+  children:
+  - System.Runtime.Serialization.Formatters.FormatterTypeStyle.TypesAlways
+  - System.Runtime.Serialization.Formatters.FormatterTypeStyle.TypesWhenNeeded
+  - System.Runtime.Serialization.Formatters.FormatterTypeStyle.XsdString
+  href: System.Runtime.Serialization.Formatters.FormatterTypeStyle.yml
+  name: FormatterTypeStyle
+  fullName: System.Runtime.Serialization.Formatters.FormatterTypeStyle
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/Serialization/Formatters/CommonEnums.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/Serialization/Formatters/CommonEnums.cs
+    startLine: 19
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization.Formatters
+  summary: Indicates the format in which type descriptions are laid out in the serialized stream.
+  syntax:
+    content: public enum FormatterTypeStyle
+    content.vb: Public Enum FormatterTypeStyle
+- uid: System.Runtime.Serialization.Formatters.FormatterTypeStyle.TypesWhenNeeded
+  id: TypesWhenNeeded
+  parent: System.Runtime.Serialization.Formatters.FormatterTypeStyle
+  href: System.Runtime.Serialization.Formatters.FormatterTypeStyle.yml
+  name: TypesWhenNeeded
+  fullName: System.Runtime.Serialization.Formatters.FormatterTypeStyle.TypesWhenNeeded
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/Formatters/CommonEnums.cs
+    startLine: 23
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization.Formatters
+  summary: Indicates that types can be stated only for arrays of objects, object members of type @'System.Object', and @'System.Runtime.Serialization.ISerializable' non-primitive value types.
+  syntax:
+    content: TypesWhenNeeded = 0
+- uid: System.Runtime.Serialization.Formatters.FormatterTypeStyle.TypesAlways
+  id: TypesAlways
+  parent: System.Runtime.Serialization.Formatters.FormatterTypeStyle
+  href: System.Runtime.Serialization.Formatters.FormatterTypeStyle.yml
+  name: TypesAlways
+  fullName: System.Runtime.Serialization.Formatters.FormatterTypeStyle.TypesAlways
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/Formatters/CommonEnums.cs
+    startLine: 24
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization.Formatters
+  summary: Indicates that types can be given to all object members and @'System.Runtime.Serialization.ISerializable' object members.
+  syntax:
+    content: TypesAlways = 1
+- uid: System.Runtime.Serialization.Formatters.FormatterTypeStyle.XsdString
+  id: XsdString
+  parent: System.Runtime.Serialization.Formatters.FormatterTypeStyle
+  href: System.Runtime.Serialization.Formatters.FormatterTypeStyle.yml
+  name: XsdString
+  fullName: System.Runtime.Serialization.Formatters.FormatterTypeStyle.XsdString
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/Formatters/CommonEnums.cs
+    startLine: 25
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization.Formatters
+  summary: Indicates that strings can be given in the XSD format rather than SOAP. No string IDs are transmitted.
+  syntax:
+    content: XsdString = 2
+references:
+- uid: System.Runtime.Serialization.Formatters
+  isExternal: false
+  name: System.Runtime.Serialization.Formatters
+  fullName: System.Runtime.Serialization.Formatters
+  type: Namespace

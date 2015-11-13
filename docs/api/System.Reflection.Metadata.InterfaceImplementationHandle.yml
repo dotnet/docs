@@ -1,0 +1,517 @@
+items:
+- uid: System.Reflection.Metadata.InterfaceImplementationHandle
+  id: InterfaceImplementationHandle
+  parent: System.Reflection.Metadata
+  children:
+  - System.Reflection.Metadata.InterfaceImplementationHandle.Equals(System.Object)
+  - System.Reflection.Metadata.InterfaceImplementationHandle.Equals(System.Reflection.Metadata.InterfaceImplementationHandle)
+  - System.Reflection.Metadata.InterfaceImplementationHandle.GetHashCode
+  - System.Reflection.Metadata.InterfaceImplementationHandle.IsNil
+  - System.Reflection.Metadata.InterfaceImplementationHandle.op_Equality(System.Reflection.Metadata.InterfaceImplementationHandle,System.Reflection.Metadata.InterfaceImplementationHandle)
+  - System.Reflection.Metadata.InterfaceImplementationHandle.op_Explicit(System.Reflection.Metadata.EntityHandle)~System.Reflection.Metadata.InterfaceImplementationHandle
+  - System.Reflection.Metadata.InterfaceImplementationHandle.op_Explicit(System.Reflection.Metadata.Handle)~System.Reflection.Metadata.InterfaceImplementationHandle
+  - System.Reflection.Metadata.InterfaceImplementationHandle.op_Implicit(System.Reflection.Metadata.InterfaceImplementationHandle)~System.Reflection.Metadata.EntityHandle
+  - System.Reflection.Metadata.InterfaceImplementationHandle.op_Implicit(System.Reflection.Metadata.InterfaceImplementationHandle)~System.Reflection.Metadata.Handle
+  - System.Reflection.Metadata.InterfaceImplementationHandle.op_Inequality(System.Reflection.Metadata.InterfaceImplementationHandle,System.Reflection.Metadata.InterfaceImplementationHandle)
+  href: System.Reflection.Metadata.InterfaceImplementationHandle.yml
+  name: InterfaceImplementationHandle
+  fullName: System.Reflection.Metadata.InterfaceImplementationHandle
+  type: Struct
+  source:
+    remote: &o0
+      path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/Handles.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/Handles.cs
+    startLine: 474
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: 'public struct InterfaceImplementationHandle : IEquatable<InterfaceImplementationHandle>'
+    content.vb: Public Structure InterfaceImplementationHandle Implements IEquatable(Of InterfaceImplementationHandle)
+  implements:
+  - System.IEquatable{System.Reflection.Metadata.InterfaceImplementationHandle}
+  inheritedMembers:
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.Reflection.Metadata.InterfaceImplementationHandle.op_Implicit(System.Reflection.Metadata.InterfaceImplementationHandle)~System.Reflection.Metadata.Handle
+  id: op_Implicit(System.Reflection.Metadata.InterfaceImplementationHandle)~System.Reflection.Metadata.Handle
+  parent: System.Reflection.Metadata.InterfaceImplementationHandle
+  href: System.Reflection.Metadata.InterfaceImplementationHandle.yml
+  name: Implicit(InterfaceImplementationHandle to Handle)
+  name.vb: Widening(InterfaceImplementationHandle to Handle)
+  fullName: System.Reflection.Metadata.InterfaceImplementationHandle.Implicit(System.Reflection.Metadata.InterfaceImplementationHandle to System.Reflection.Metadata.Handle)
+  fullName.vb: System.Reflection.Metadata.InterfaceImplementationHandle.Widening(System.Reflection.Metadata.InterfaceImplementationHandle to System.Reflection.Metadata.Handle)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/Handles.cs
+    startLine: 491
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public static implicit operator Handle(InterfaceImplementationHandle handle)
+    content.vb: Public Shared Widening Operator CType(handle As InterfaceImplementationHandle) As Handle
+    parameters:
+    - id: handle
+      type: System.Reflection.Metadata.InterfaceImplementationHandle
+    return:
+      type: System.Reflection.Metadata.Handle
+      description: 
+- uid: System.Reflection.Metadata.InterfaceImplementationHandle.op_Implicit(System.Reflection.Metadata.InterfaceImplementationHandle)~System.Reflection.Metadata.EntityHandle
+  id: op_Implicit(System.Reflection.Metadata.InterfaceImplementationHandle)~System.Reflection.Metadata.EntityHandle
+  parent: System.Reflection.Metadata.InterfaceImplementationHandle
+  href: System.Reflection.Metadata.InterfaceImplementationHandle.yml
+  name: Implicit(InterfaceImplementationHandle to EntityHandle)
+  name.vb: Widening(InterfaceImplementationHandle to EntityHandle)
+  fullName: System.Reflection.Metadata.InterfaceImplementationHandle.Implicit(System.Reflection.Metadata.InterfaceImplementationHandle to System.Reflection.Metadata.EntityHandle)
+  fullName.vb: System.Reflection.Metadata.InterfaceImplementationHandle.Widening(System.Reflection.Metadata.InterfaceImplementationHandle to System.Reflection.Metadata.EntityHandle)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/Handles.cs
+    startLine: 496
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public static implicit operator EntityHandle(InterfaceImplementationHandle handle)
+    content.vb: Public Shared Widening Operator CType(handle As InterfaceImplementationHandle) As EntityHandle
+    parameters:
+    - id: handle
+      type: System.Reflection.Metadata.InterfaceImplementationHandle
+    return:
+      type: System.Reflection.Metadata.EntityHandle
+      description: 
+- uid: System.Reflection.Metadata.InterfaceImplementationHandle.op_Explicit(System.Reflection.Metadata.Handle)~System.Reflection.Metadata.InterfaceImplementationHandle
+  id: op_Explicit(System.Reflection.Metadata.Handle)~System.Reflection.Metadata.InterfaceImplementationHandle
+  parent: System.Reflection.Metadata.InterfaceImplementationHandle
+  href: System.Reflection.Metadata.InterfaceImplementationHandle.yml
+  name: Explicit(Handle to InterfaceImplementationHandle)
+  name.vb: Narrowing(Handle to InterfaceImplementationHandle)
+  fullName: System.Reflection.Metadata.InterfaceImplementationHandle.Explicit(System.Reflection.Metadata.Handle to System.Reflection.Metadata.InterfaceImplementationHandle)
+  fullName.vb: System.Reflection.Metadata.InterfaceImplementationHandle.Narrowing(System.Reflection.Metadata.Handle to System.Reflection.Metadata.InterfaceImplementationHandle)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/Handles.cs
+    startLine: 501
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public static explicit operator InterfaceImplementationHandle(Handle handle)
+    content.vb: Public Shared Narrowing Operator CType(handle As Handle) As InterfaceImplementationHandle
+    parameters:
+    - id: handle
+      type: System.Reflection.Metadata.Handle
+    return:
+      type: System.Reflection.Metadata.InterfaceImplementationHandle
+      description: 
+- uid: System.Reflection.Metadata.InterfaceImplementationHandle.op_Explicit(System.Reflection.Metadata.EntityHandle)~System.Reflection.Metadata.InterfaceImplementationHandle
+  id: op_Explicit(System.Reflection.Metadata.EntityHandle)~System.Reflection.Metadata.InterfaceImplementationHandle
+  parent: System.Reflection.Metadata.InterfaceImplementationHandle
+  href: System.Reflection.Metadata.InterfaceImplementationHandle.yml
+  name: Explicit(EntityHandle to InterfaceImplementationHandle)
+  name.vb: Narrowing(EntityHandle to InterfaceImplementationHandle)
+  fullName: System.Reflection.Metadata.InterfaceImplementationHandle.Explicit(System.Reflection.Metadata.EntityHandle to System.Reflection.Metadata.InterfaceImplementationHandle)
+  fullName.vb: System.Reflection.Metadata.InterfaceImplementationHandle.Narrowing(System.Reflection.Metadata.EntityHandle to System.Reflection.Metadata.InterfaceImplementationHandle)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/Handles.cs
+    startLine: 511
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public static explicit operator InterfaceImplementationHandle(EntityHandle handle)
+    content.vb: Public Shared Narrowing Operator CType(handle As EntityHandle) As InterfaceImplementationHandle
+    parameters:
+    - id: handle
+      type: System.Reflection.Metadata.EntityHandle
+    return:
+      type: System.Reflection.Metadata.InterfaceImplementationHandle
+      description: 
+- uid: System.Reflection.Metadata.InterfaceImplementationHandle.IsNil
+  id: IsNil
+  parent: System.Reflection.Metadata.InterfaceImplementationHandle
+  href: System.Reflection.Metadata.InterfaceImplementationHandle.yml
+  name: IsNil
+  fullName: System.Reflection.Metadata.InterfaceImplementationHandle.IsNil
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/Handles.cs
+    startLine: 521
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public bool IsNil { get; }
+    content.vb: Public ReadOnly Property IsNil As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: 
+- uid: System.Reflection.Metadata.InterfaceImplementationHandle.op_Equality(System.Reflection.Metadata.InterfaceImplementationHandle,System.Reflection.Metadata.InterfaceImplementationHandle)
+  id: op_Equality(System.Reflection.Metadata.InterfaceImplementationHandle,System.Reflection.Metadata.InterfaceImplementationHandle)
+  parent: System.Reflection.Metadata.InterfaceImplementationHandle
+  href: System.Reflection.Metadata.InterfaceImplementationHandle.yml
+  name: Equality(InterfaceImplementationHandle, InterfaceImplementationHandle)
+  fullName: System.Reflection.Metadata.InterfaceImplementationHandle.Equality(System.Reflection.Metadata.InterfaceImplementationHandle, System.Reflection.Metadata.InterfaceImplementationHandle)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/Handles.cs
+    startLine: 531
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public static bool operator ==(InterfaceImplementationHandle left, InterfaceImplementationHandle right)
+    content.vb: Public Shared Operator =(left As InterfaceImplementationHandle, right As InterfaceImplementationHandle) As Boolean
+    parameters:
+    - id: left
+      type: System.Reflection.Metadata.InterfaceImplementationHandle
+    - id: right
+      type: System.Reflection.Metadata.InterfaceImplementationHandle
+    return:
+      type: System.Boolean
+      description: 
+- uid: System.Reflection.Metadata.InterfaceImplementationHandle.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Reflection.Metadata.InterfaceImplementationHandle
+  href: System.Reflection.Metadata.InterfaceImplementationHandle.yml
+  name: Equals(Object)
+  fullName: System.Reflection.Metadata.InterfaceImplementationHandle.Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/Handles.cs
+    startLine: 536
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public override bool Equals(object obj)
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+      description: 
+  overridden: System.ValueType.Equals(System.Object)
+- uid: System.Reflection.Metadata.InterfaceImplementationHandle.Equals(System.Reflection.Metadata.InterfaceImplementationHandle)
+  id: Equals(System.Reflection.Metadata.InterfaceImplementationHandle)
+  parent: System.Reflection.Metadata.InterfaceImplementationHandle
+  href: System.Reflection.Metadata.InterfaceImplementationHandle.yml
+  name: Equals(InterfaceImplementationHandle)
+  fullName: System.Reflection.Metadata.InterfaceImplementationHandle.Equals(System.Reflection.Metadata.InterfaceImplementationHandle)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/Handles.cs
+    startLine: 541
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public bool Equals(InterfaceImplementationHandle other)
+    content.vb: Public Function Equals(other As InterfaceImplementationHandle) As Boolean
+    parameters:
+    - id: other
+      type: System.Reflection.Metadata.InterfaceImplementationHandle
+    return:
+      type: System.Boolean
+      description: 
+- uid: System.Reflection.Metadata.InterfaceImplementationHandle.GetHashCode
+  id: GetHashCode
+  parent: System.Reflection.Metadata.InterfaceImplementationHandle
+  href: System.Reflection.Metadata.InterfaceImplementationHandle.yml
+  name: GetHashCode()
+  fullName: System.Reflection.Metadata.InterfaceImplementationHandle.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/Handles.cs
+    startLine: 546
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: 
+  overridden: System.ValueType.GetHashCode
+- uid: System.Reflection.Metadata.InterfaceImplementationHandle.op_Inequality(System.Reflection.Metadata.InterfaceImplementationHandle,System.Reflection.Metadata.InterfaceImplementationHandle)
+  id: op_Inequality(System.Reflection.Metadata.InterfaceImplementationHandle,System.Reflection.Metadata.InterfaceImplementationHandle)
+  parent: System.Reflection.Metadata.InterfaceImplementationHandle
+  href: System.Reflection.Metadata.InterfaceImplementationHandle.yml
+  name: Inequality(InterfaceImplementationHandle, InterfaceImplementationHandle)
+  fullName: System.Reflection.Metadata.InterfaceImplementationHandle.Inequality(System.Reflection.Metadata.InterfaceImplementationHandle, System.Reflection.Metadata.InterfaceImplementationHandle)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/Handles.cs
+    startLine: 551
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public static bool operator !=(InterfaceImplementationHandle left, InterfaceImplementationHandle right)
+    content.vb: Public Shared Operator <>(left As InterfaceImplementationHandle, right As InterfaceImplementationHandle) As Boolean
+    parameters:
+    - id: left
+      type: System.Reflection.Metadata.InterfaceImplementationHandle
+    - id: right
+      type: System.Reflection.Metadata.InterfaceImplementationHandle
+    return:
+      type: System.Boolean
+      description: 
+references:
+- uid: System.Reflection.Metadata
+  isExternal: false
+  name: System.Reflection.Metadata
+  fullName: System.Reflection.Metadata
+  type: Namespace
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Reflection.Metadata.InterfaceImplementationHandle
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.InterfaceImplementationHandle.yml
+  name: InterfaceImplementationHandle
+  fullName: System.Reflection.Metadata.InterfaceImplementationHandle
+  type: Struct
+- uid: System.Reflection.Metadata.Handle
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.Handle.yml
+  name: Handle
+  fullName: System.Reflection.Metadata.Handle
+  type: Struct
+  summary: Represents any metadata entity (type reference/definition/specification, method definition, custom attribute, etc.) or value (string, blob, guid, user string).
+- uid: System.Reflection.Metadata.EntityHandle
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.EntityHandle.yml
+  name: EntityHandle
+  fullName: System.Reflection.Metadata.EntityHandle
+  type: Struct
+  summary: Represents a metadata entity (type reference/definition/specification, method definition, custom attribute, etc.).
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32

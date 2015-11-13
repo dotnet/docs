@@ -1,0 +1,226 @@
+items:
+- uid: System.Security.Cryptography.OidGroup
+  id: OidGroup
+  parent: System.Security.Cryptography
+  children:
+  - System.Security.Cryptography.OidGroup.All
+  - System.Security.Cryptography.OidGroup.Attribute
+  - System.Security.Cryptography.OidGroup.EncryptionAlgorithm
+  - System.Security.Cryptography.OidGroup.EnhancedKeyUsage
+  - System.Security.Cryptography.OidGroup.ExtensionOrAttribute
+  - System.Security.Cryptography.OidGroup.HashAlgorithm
+  - System.Security.Cryptography.OidGroup.KeyDerivationFunction
+  - System.Security.Cryptography.OidGroup.Policy
+  - System.Security.Cryptography.OidGroup.PublicKeyAlgorithm
+  - System.Security.Cryptography.OidGroup.SignatureAlgorithm
+  - System.Security.Cryptography.OidGroup.Template
+  href: System.Security.Cryptography.OidGroup.yml
+  name: OidGroup
+  fullName: System.Security.Cryptography.OidGroup
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Security.Cryptography.Encoding/src/System/Security/Cryptography/OidGroup.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Security.Cryptography.Encoding/src/System/Security/Cryptography/OidGroup.cs
+    startLine: 9
+  assemblies:
+  - System.Security.Cryptography.Encoding
+  namespace: System.Security.Cryptography
+  summary: Identifies Windows cryptographic object identifier (OID) groups.
+  syntax:
+    content: public enum OidGroup
+    content.vb: Public Enum OidGroup
+- uid: System.Security.Cryptography.OidGroup.All
+  id: All
+  parent: System.Security.Cryptography.OidGroup
+  href: System.Security.Cryptography.OidGroup.yml
+  name: All
+  fullName: System.Security.Cryptography.OidGroup.All
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.Encoding/src/System/Security/Cryptography/OidGroup.cs
+    startLine: 11
+  assemblies:
+  - System.Security.Cryptography.Encoding
+  namespace: System.Security.Cryptography
+  summary: All the groups.
+  syntax:
+    content: All = 0
+- uid: System.Security.Cryptography.OidGroup.HashAlgorithm
+  id: HashAlgorithm
+  parent: System.Security.Cryptography.OidGroup
+  href: System.Security.Cryptography.OidGroup.yml
+  name: HashAlgorithm
+  fullName: System.Security.Cryptography.OidGroup.HashAlgorithm
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.Encoding/src/System/Security/Cryptography/OidGroup.cs
+    startLine: 12
+  assemblies:
+  - System.Security.Cryptography.Encoding
+  namespace: System.Security.Cryptography
+  summary: The Windows group that is represented by CRYPT_HASH_ALG_OID_GROUP_ID.
+  syntax:
+    content: HashAlgorithm = 1
+- uid: System.Security.Cryptography.OidGroup.EncryptionAlgorithm
+  id: EncryptionAlgorithm
+  parent: System.Security.Cryptography.OidGroup
+  href: System.Security.Cryptography.OidGroup.yml
+  name: EncryptionAlgorithm
+  fullName: System.Security.Cryptography.OidGroup.EncryptionAlgorithm
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.Encoding/src/System/Security/Cryptography/OidGroup.cs
+    startLine: 13
+  assemblies:
+  - System.Security.Cryptography.Encoding
+  namespace: System.Security.Cryptography
+  summary: The Windows group that is represented by CRYPT_ENCRYPT_ALG_OID_GROUP_ID.
+  syntax:
+    content: EncryptionAlgorithm = 2
+- uid: System.Security.Cryptography.OidGroup.PublicKeyAlgorithm
+  id: PublicKeyAlgorithm
+  parent: System.Security.Cryptography.OidGroup
+  href: System.Security.Cryptography.OidGroup.yml
+  name: PublicKeyAlgorithm
+  fullName: System.Security.Cryptography.OidGroup.PublicKeyAlgorithm
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.Encoding/src/System/Security/Cryptography/OidGroup.cs
+    startLine: 14
+  assemblies:
+  - System.Security.Cryptography.Encoding
+  namespace: System.Security.Cryptography
+  summary: The Windows group that is represented by CRYPT_PUBKEY_ALG_OID_GROUP_ID.
+  syntax:
+    content: PublicKeyAlgorithm = 3
+- uid: System.Security.Cryptography.OidGroup.SignatureAlgorithm
+  id: SignatureAlgorithm
+  parent: System.Security.Cryptography.OidGroup
+  href: System.Security.Cryptography.OidGroup.yml
+  name: SignatureAlgorithm
+  fullName: System.Security.Cryptography.OidGroup.SignatureAlgorithm
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.Encoding/src/System/Security/Cryptography/OidGroup.cs
+    startLine: 15
+  assemblies:
+  - System.Security.Cryptography.Encoding
+  namespace: System.Security.Cryptography
+  summary: The Windows group that is represented by CRYPT_SIGN_ALG_OID_GROUP_ID.
+  syntax:
+    content: SignatureAlgorithm = 4
+- uid: System.Security.Cryptography.OidGroup.Attribute
+  id: Attribute
+  parent: System.Security.Cryptography.OidGroup
+  href: System.Security.Cryptography.OidGroup.yml
+  name: Attribute
+  fullName: System.Security.Cryptography.OidGroup.Attribute
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.Encoding/src/System/Security/Cryptography/OidGroup.cs
+    startLine: 16
+  assemblies:
+  - System.Security.Cryptography.Encoding
+  namespace: System.Security.Cryptography
+  summary: The Windows group that is represented by CRYPT_RDN_ATTR_OID_GROUP_ID.
+  syntax:
+    content: Attribute = 5
+- uid: System.Security.Cryptography.OidGroup.ExtensionOrAttribute
+  id: ExtensionOrAttribute
+  parent: System.Security.Cryptography.OidGroup
+  href: System.Security.Cryptography.OidGroup.yml
+  name: ExtensionOrAttribute
+  fullName: System.Security.Cryptography.OidGroup.ExtensionOrAttribute
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.Encoding/src/System/Security/Cryptography/OidGroup.cs
+    startLine: 17
+  assemblies:
+  - System.Security.Cryptography.Encoding
+  namespace: System.Security.Cryptography
+  summary: The Windows group that is represented by CRYPT_EXT_OR_ATTR_OID_GROUP_ID.
+  syntax:
+    content: ExtensionOrAttribute = 6
+- uid: System.Security.Cryptography.OidGroup.EnhancedKeyUsage
+  id: EnhancedKeyUsage
+  parent: System.Security.Cryptography.OidGroup
+  href: System.Security.Cryptography.OidGroup.yml
+  name: EnhancedKeyUsage
+  fullName: System.Security.Cryptography.OidGroup.EnhancedKeyUsage
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.Encoding/src/System/Security/Cryptography/OidGroup.cs
+    startLine: 18
+  assemblies:
+  - System.Security.Cryptography.Encoding
+  namespace: System.Security.Cryptography
+  summary: The Windows group that is represented by CRYPT_ENHKEY_USAGE_OID_GROUP_ID.
+  syntax:
+    content: EnhancedKeyUsage = 7
+- uid: System.Security.Cryptography.OidGroup.Policy
+  id: Policy
+  parent: System.Security.Cryptography.OidGroup
+  href: System.Security.Cryptography.OidGroup.yml
+  name: Policy
+  fullName: System.Security.Cryptography.OidGroup.Policy
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.Encoding/src/System/Security/Cryptography/OidGroup.cs
+    startLine: 19
+  assemblies:
+  - System.Security.Cryptography.Encoding
+  namespace: System.Security.Cryptography
+  summary: The Windows group that is represented by CRYPT_POLICY_OID_GROUP_ID.
+  syntax:
+    content: Policy = 8
+- uid: System.Security.Cryptography.OidGroup.Template
+  id: Template
+  parent: System.Security.Cryptography.OidGroup
+  href: System.Security.Cryptography.OidGroup.yml
+  name: Template
+  fullName: System.Security.Cryptography.OidGroup.Template
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.Encoding/src/System/Security/Cryptography/OidGroup.cs
+    startLine: 20
+  assemblies:
+  - System.Security.Cryptography.Encoding
+  namespace: System.Security.Cryptography
+  summary: The Windows group that is represented by CRYPT_TEMPLATE_OID_GROUP_ID.
+  syntax:
+    content: Template = 9
+- uid: System.Security.Cryptography.OidGroup.KeyDerivationFunction
+  id: KeyDerivationFunction
+  parent: System.Security.Cryptography.OidGroup
+  href: System.Security.Cryptography.OidGroup.yml
+  name: KeyDerivationFunction
+  fullName: System.Security.Cryptography.OidGroup.KeyDerivationFunction
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.Encoding/src/System/Security/Cryptography/OidGroup.cs
+    startLine: 21
+  assemblies:
+  - System.Security.Cryptography.Encoding
+  namespace: System.Security.Cryptography
+  summary: The Windows group that is represented by CRYPT_KDF_OID_GROUP_ID.
+  syntax:
+    content: KeyDerivationFunction = 10
+references:
+- uid: System.Security.Cryptography
+  isExternal: false
+  name: System.Security.Cryptography
+  fullName: System.Security.Cryptography

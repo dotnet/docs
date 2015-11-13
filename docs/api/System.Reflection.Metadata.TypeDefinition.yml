@@ -1,0 +1,779 @@
+items:
+- uid: System.Reflection.Metadata.TypeDefinition
+  id: TypeDefinition
+  parent: System.Reflection.Metadata
+  children:
+  - System.Reflection.Metadata.TypeDefinition.Attributes
+  - System.Reflection.Metadata.TypeDefinition.BaseType
+  - System.Reflection.Metadata.TypeDefinition.GetCustomAttributes
+  - System.Reflection.Metadata.TypeDefinition.GetDeclarativeSecurityAttributes
+  - System.Reflection.Metadata.TypeDefinition.GetDeclaringType
+  - System.Reflection.Metadata.TypeDefinition.GetEvents
+  - System.Reflection.Metadata.TypeDefinition.GetFields
+  - System.Reflection.Metadata.TypeDefinition.GetGenericParameters
+  - System.Reflection.Metadata.TypeDefinition.GetInterfaceImplementations
+  - System.Reflection.Metadata.TypeDefinition.GetLayout
+  - System.Reflection.Metadata.TypeDefinition.GetMethodImplementations
+  - System.Reflection.Metadata.TypeDefinition.GetMethods
+  - System.Reflection.Metadata.TypeDefinition.GetNestedTypes
+  - System.Reflection.Metadata.TypeDefinition.GetProperties
+  - System.Reflection.Metadata.TypeDefinition.Name
+  - System.Reflection.Metadata.TypeDefinition.Namespace
+  - System.Reflection.Metadata.TypeDefinition.NamespaceDefinition
+  href: System.Reflection.Metadata.TypeDefinition.yml
+  name: TypeDefinition
+  fullName: System.Reflection.Metadata.TypeDefinition
+  type: Struct
+  source:
+    remote: &o0
+      path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeDefinition.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeDefinition.cs
+    startLine: 9
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public struct TypeDefinition
+    content.vb: Public Structure TypeDefinition
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.Reflection.Metadata.TypeDefinition.Attributes
+  id: Attributes
+  parent: System.Reflection.Metadata.TypeDefinition
+  href: System.Reflection.Metadata.TypeDefinition.yml
+  name: Attributes
+  fullName: System.Reflection.Metadata.TypeDefinition.Attributes
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeDefinition.cs
+    startLine: 40
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public TypeAttributes Attributes { get; }
+    content.vb: Public ReadOnly Property Attributes As TypeAttributes
+    parameters: []
+    return:
+      type: System.Reflection.TypeAttributes
+      description: 
+- uid: System.Reflection.Metadata.TypeDefinition.Name
+  id: Name
+  parent: System.Reflection.Metadata.TypeDefinition
+  href: System.Reflection.Metadata.TypeDefinition.yml
+  name: Name
+  fullName: System.Reflection.Metadata.TypeDefinition.Name
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeDefinition.cs
+    startLine: 56
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Name of the type.
+  syntax:
+    content: public StringHandle Name { get; }
+    content.vb: Public ReadOnly Property Name As StringHandle
+    parameters: []
+    return:
+      type: System.Reflection.Metadata.StringHandle
+- uid: System.Reflection.Metadata.TypeDefinition.Namespace
+  id: Namespace
+  parent: System.Reflection.Metadata.TypeDefinition
+  href: System.Reflection.Metadata.TypeDefinition.yml
+  name: Namespace
+  fullName: System.Reflection.Metadata.TypeDefinition.Namespace
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeDefinition.cs
+    startLine: 72
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Full name of the namespace where the type is defined, or nil if the type is nested or defined in a root namespace.
+  syntax:
+    content: public StringHandle Namespace { get; }
+    content.vb: Public ReadOnly Property Namespace As StringHandle
+    parameters: []
+    return:
+      type: System.Reflection.Metadata.StringHandle
+- uid: System.Reflection.Metadata.TypeDefinition.NamespaceDefinition
+  id: NamespaceDefinition
+  parent: System.Reflection.Metadata.TypeDefinition
+  href: System.Reflection.Metadata.TypeDefinition.yml
+  name: NamespaceDefinition
+  fullName: System.Reflection.Metadata.TypeDefinition.NamespaceDefinition
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeDefinition.cs
+    startLine: 88
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: The definition handle of the namespace where the type is defined, or nil if the type is nested or defined in a root namespace.
+  syntax:
+    content: public NamespaceDefinitionHandle NamespaceDefinition { get; }
+    content.vb: Public ReadOnly Property NamespaceDefinition As NamespaceDefinitionHandle
+    parameters: []
+    return:
+      type: System.Reflection.Metadata.NamespaceDefinitionHandle
+- uid: System.Reflection.Metadata.TypeDefinition.BaseType
+  id: BaseType
+  parent: System.Reflection.Metadata.TypeDefinition
+  href: System.Reflection.Metadata.TypeDefinition.yml
+  name: BaseType
+  fullName: System.Reflection.Metadata.TypeDefinition.BaseType
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeDefinition.cs
+    startLine: 105
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: >-
+    The base type of the type definition: either
+
+    @'System.Reflection.Metadata.TypeSpecificationHandle', @'System.Reflection.Metadata.TypeReferenceHandle' or @'System.Reflection.Metadata.TypeDefinitionHandle'.
+  syntax:
+    content: public EntityHandle BaseType { get; }
+    content.vb: Public ReadOnly Property BaseType As EntityHandle
+    parameters: []
+    return:
+      type: System.Reflection.Metadata.EntityHandle
+- uid: System.Reflection.Metadata.TypeDefinition.GetLayout
+  id: GetLayout
+  parent: System.Reflection.Metadata.TypeDefinition
+  href: System.Reflection.Metadata.TypeDefinition.yml
+  name: GetLayout()
+  fullName: System.Reflection.Metadata.TypeDefinition.GetLayout()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeDefinition.cs
+    startLine: 118
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public TypeLayout GetLayout()
+    content.vb: Public Function GetLayout As TypeLayout
+    return:
+      type: System.Reflection.Metadata.TypeLayout
+      description: 
+- uid: System.Reflection.Metadata.TypeDefinition.GetDeclaringType
+  id: GetDeclaringType
+  parent: System.Reflection.Metadata.TypeDefinition
+  href: System.Reflection.Metadata.TypeDefinition.yml
+  name: GetDeclaringType()
+  fullName: System.Reflection.Metadata.TypeDefinition.GetDeclaringType()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeDefinition.cs
+    startLine: 154
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Returns the enclosing type of a specified nested type or nil handle if the type is not nested.
+  syntax:
+    content: public TypeDefinitionHandle GetDeclaringType()
+    content.vb: Public Function GetDeclaringType As TypeDefinitionHandle
+    return:
+      type: System.Reflection.Metadata.TypeDefinitionHandle
+- uid: System.Reflection.Metadata.TypeDefinition.GetGenericParameters
+  id: GetGenericParameters
+  parent: System.Reflection.Metadata.TypeDefinition
+  href: System.Reflection.Metadata.TypeDefinition.yml
+  name: GetGenericParameters()
+  fullName: System.Reflection.Metadata.TypeDefinition.GetGenericParameters()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeDefinition.cs
+    startLine: 159
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public GenericParameterHandleCollection GetGenericParameters()
+    content.vb: Public Function GetGenericParameters As GenericParameterHandleCollection
+    return:
+      type: System.Reflection.Metadata.GenericParameterHandleCollection
+      description: 
+- uid: System.Reflection.Metadata.TypeDefinition.GetMethods
+  id: GetMethods
+  parent: System.Reflection.Metadata.TypeDefinition
+  href: System.Reflection.Metadata.TypeDefinition.yml
+  name: GetMethods()
+  fullName: System.Reflection.Metadata.TypeDefinition.GetMethods()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeDefinition.cs
+    startLine: 164
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public MethodDefinitionHandleCollection GetMethods()
+    content.vb: Public Function GetMethods As MethodDefinitionHandleCollection
+    return:
+      type: System.Reflection.Metadata.MethodDefinitionHandleCollection
+      description: 
+- uid: System.Reflection.Metadata.TypeDefinition.GetFields
+  id: GetFields
+  parent: System.Reflection.Metadata.TypeDefinition
+  href: System.Reflection.Metadata.TypeDefinition.yml
+  name: GetFields()
+  fullName: System.Reflection.Metadata.TypeDefinition.GetFields()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeDefinition.cs
+    startLine: 169
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public FieldDefinitionHandleCollection GetFields()
+    content.vb: Public Function GetFields As FieldDefinitionHandleCollection
+    return:
+      type: System.Reflection.Metadata.FieldDefinitionHandleCollection
+      description: 
+- uid: System.Reflection.Metadata.TypeDefinition.GetProperties
+  id: GetProperties
+  parent: System.Reflection.Metadata.TypeDefinition
+  href: System.Reflection.Metadata.TypeDefinition.yml
+  name: GetProperties()
+  fullName: System.Reflection.Metadata.TypeDefinition.GetProperties()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeDefinition.cs
+    startLine: 174
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public PropertyDefinitionHandleCollection GetProperties()
+    content.vb: Public Function GetProperties As PropertyDefinitionHandleCollection
+    return:
+      type: System.Reflection.Metadata.PropertyDefinitionHandleCollection
+      description: 
+- uid: System.Reflection.Metadata.TypeDefinition.GetEvents
+  id: GetEvents
+  parent: System.Reflection.Metadata.TypeDefinition
+  href: System.Reflection.Metadata.TypeDefinition.yml
+  name: GetEvents()
+  fullName: System.Reflection.Metadata.TypeDefinition.GetEvents()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeDefinition.cs
+    startLine: 179
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public EventDefinitionHandleCollection GetEvents()
+    content.vb: Public Function GetEvents As EventDefinitionHandleCollection
+    return:
+      type: System.Reflection.Metadata.EventDefinitionHandleCollection
+      description: 
+- uid: System.Reflection.Metadata.TypeDefinition.GetNestedTypes
+  id: GetNestedTypes
+  parent: System.Reflection.Metadata.TypeDefinition
+  href: System.Reflection.Metadata.TypeDefinition.yml
+  name: GetNestedTypes()
+  fullName: System.Reflection.Metadata.TypeDefinition.GetNestedTypes()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeDefinition.cs
+    startLine: 187
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Returns an array of types nested in the specified type.
+  syntax:
+    content: public ImmutableArray<TypeDefinitionHandle> GetNestedTypes()
+    content.vb: Public Function GetNestedTypes As ImmutableArray(Of TypeDefinitionHandle)
+    return:
+      type: ImmutableArray{System.Reflection.Metadata.TypeDefinitionHandle}
+- uid: System.Reflection.Metadata.TypeDefinition.GetMethodImplementations
+  id: GetMethodImplementations
+  parent: System.Reflection.Metadata.TypeDefinition
+  href: System.Reflection.Metadata.TypeDefinition.yml
+  name: GetMethodImplementations()
+  fullName: System.Reflection.Metadata.TypeDefinition.GetMethodImplementations()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeDefinition.cs
+    startLine: 192
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public MethodImplementationHandleCollection GetMethodImplementations()
+    content.vb: Public Function GetMethodImplementations As MethodImplementationHandleCollection
+    return:
+      type: System.Reflection.Metadata.MethodImplementationHandleCollection
+      description: 
+- uid: System.Reflection.Metadata.TypeDefinition.GetInterfaceImplementations
+  id: GetInterfaceImplementations
+  parent: System.Reflection.Metadata.TypeDefinition
+  href: System.Reflection.Metadata.TypeDefinition.yml
+  name: GetInterfaceImplementations()
+  fullName: System.Reflection.Metadata.TypeDefinition.GetInterfaceImplementations()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeDefinition.cs
+    startLine: 197
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public InterfaceImplementationHandleCollection GetInterfaceImplementations()
+    content.vb: Public Function GetInterfaceImplementations As InterfaceImplementationHandleCollection
+    return:
+      type: System.Reflection.Metadata.InterfaceImplementationHandleCollection
+      description: 
+- uid: System.Reflection.Metadata.TypeDefinition.GetCustomAttributes
+  id: GetCustomAttributes
+  parent: System.Reflection.Metadata.TypeDefinition
+  href: System.Reflection.Metadata.TypeDefinition.yml
+  name: GetCustomAttributes()
+  fullName: System.Reflection.Metadata.TypeDefinition.GetCustomAttributes()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeDefinition.cs
+    startLine: 202
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public CustomAttributeHandleCollection GetCustomAttributes()
+    content.vb: Public Function GetCustomAttributes As CustomAttributeHandleCollection
+    return:
+      type: System.Reflection.Metadata.CustomAttributeHandleCollection
+      description: 
+- uid: System.Reflection.Metadata.TypeDefinition.GetDeclarativeSecurityAttributes
+  id: GetDeclarativeSecurityAttributes
+  parent: System.Reflection.Metadata.TypeDefinition
+  href: System.Reflection.Metadata.TypeDefinition.yml
+  name: GetDeclarativeSecurityAttributes()
+  fullName: System.Reflection.Metadata.TypeDefinition.GetDeclarativeSecurityAttributes()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeDefinition.cs
+    startLine: 207
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public DeclarativeSecurityAttributeHandleCollection GetDeclarativeSecurityAttributes()
+    content.vb: Public Function GetDeclarativeSecurityAttributes As DeclarativeSecurityAttributeHandleCollection
+    return:
+      type: System.Reflection.Metadata.DeclarativeSecurityAttributeHandleCollection
+      description: 
+references:
+- uid: System.Reflection.Metadata
+  isExternal: false
+  name: System.Reflection.Metadata
+  fullName: System.Reflection.Metadata
+  type: Namespace
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Reflection.TypeAttributes
+  parent: System.Reflection
+  isExternal: true
+  name: TypeAttributes
+  fullName: System.Reflection.TypeAttributes
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace
+- uid: System.Reflection.Metadata.StringHandle
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.StringHandle.yml
+  name: StringHandle
+  fullName: System.Reflection.Metadata.StringHandle
+  type: Struct
+- uid: System.Reflection.Metadata.NamespaceDefinitionHandle
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.NamespaceDefinitionHandle.yml
+  name: NamespaceDefinitionHandle
+  fullName: System.Reflection.Metadata.NamespaceDefinitionHandle
+  type: Struct
+  summary: A handle that represents a namespace definition.
+- uid: System.Reflection.Metadata.TypeSpecificationHandle
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.TypeSpecificationHandle.yml
+  name: TypeSpecificationHandle
+  fullName: System.Reflection.Metadata.TypeSpecificationHandle
+  type: Struct
+- uid: System.Reflection.Metadata.TypeReferenceHandle
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.TypeReferenceHandle.yml
+  name: TypeReferenceHandle
+  fullName: System.Reflection.Metadata.TypeReferenceHandle
+  type: Struct
+- uid: System.Reflection.Metadata.TypeDefinitionHandle
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.TypeDefinitionHandle.yml
+  name: TypeDefinitionHandle
+  fullName: System.Reflection.Metadata.TypeDefinitionHandle
+  type: Struct
+- uid: System.Reflection.Metadata.EntityHandle
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.EntityHandle.yml
+  name: EntityHandle
+  fullName: System.Reflection.Metadata.EntityHandle
+  type: Struct
+  summary: Represents a metadata entity (type reference/definition/specification, method definition, custom attribute, etc.).
+- uid: System.Reflection.Metadata.TypeLayout
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.TypeLayout.yml
+  name: TypeLayout
+  fullName: System.Reflection.Metadata.TypeLayout
+  type: Struct
+- uid: System.Reflection.Metadata.GenericParameterHandleCollection
+  isExternal: false
+  href: System.Reflection.Metadata.GenericParameterHandleCollection.yml
+  name: GenericParameterHandleCollection
+  fullName: System.Reflection.Metadata.GenericParameterHandleCollection
+  type: Struct
+  summary: Represents generic type parameters of a method or type.
+- uid: System.Reflection.Metadata.MethodDefinitionHandleCollection
+  isExternal: false
+  href: System.Reflection.Metadata.MethodDefinitionHandleCollection.yml
+  name: MethodDefinitionHandleCollection
+  fullName: System.Reflection.Metadata.MethodDefinitionHandleCollection
+  type: Struct
+- uid: System.Reflection.Metadata.FieldDefinitionHandleCollection
+  isExternal: false
+  href: System.Reflection.Metadata.FieldDefinitionHandleCollection.yml
+  name: FieldDefinitionHandleCollection
+  fullName: System.Reflection.Metadata.FieldDefinitionHandleCollection
+  type: Struct
+- uid: System.Reflection.Metadata.PropertyDefinitionHandleCollection
+  isExternal: false
+  href: System.Reflection.Metadata.PropertyDefinitionHandleCollection.yml
+  name: PropertyDefinitionHandleCollection
+  fullName: System.Reflection.Metadata.PropertyDefinitionHandleCollection
+  type: Struct
+- uid: System.Reflection.Metadata.EventDefinitionHandleCollection
+  isExternal: false
+  href: System.Reflection.Metadata.EventDefinitionHandleCollection.yml
+  name: EventDefinitionHandleCollection
+  fullName: System.Reflection.Metadata.EventDefinitionHandleCollection
+  type: Struct
+- uid: ImmutableArray{System.Reflection.Metadata.TypeDefinitionHandle}
+  definition: ImmutableArray`1
+  href: System.Reflection.Metadata.TypeDefinitionHandle.yml
+  name: ImmutableArray<TypeDefinitionHandle>
+  name.vb: ImmutableArray(Of TypeDefinitionHandle)
+  fullName: ImmutableArray<System.Reflection.Metadata.TypeDefinitionHandle>
+  fullName.vb: ImmutableArray(Of System.Reflection.Metadata.TypeDefinitionHandle)
+  spec.csharp:
+  - uid: ImmutableArray`1
+    name: ImmutableArray
+    fullName: ImmutableArray
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Reflection.Metadata.TypeDefinitionHandle
+    name: TypeDefinitionHandle
+    fullName: System.Reflection.Metadata.TypeDefinitionHandle
+    href: System.Reflection.Metadata.TypeDefinitionHandle.yml
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ImmutableArray`1
+    name: ImmutableArray
+    fullName: ImmutableArray
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Reflection.Metadata.TypeDefinitionHandle
+    name: TypeDefinitionHandle
+    fullName: System.Reflection.Metadata.TypeDefinitionHandle
+    href: System.Reflection.Metadata.TypeDefinitionHandle.yml
+  - name: )
+    fullName: )
+- uid: ImmutableArray`1
+  isExternal: true
+  name: ImmutableArray<>
+  name.vb: ImmutableArray(Of )
+  fullName: ImmutableArray<>
+  fullName.vb: ImmutableArray(Of )
+  spec.csharp:
+  - uid: ImmutableArray`1
+    name: ImmutableArray
+    fullName: ImmutableArray
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: 
+    fullName: 
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ImmutableArray`1
+    name: ImmutableArray
+    fullName: ImmutableArray
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: 
+    fullName: 
+  - name: )
+    fullName: )
+- uid: System.Reflection.Metadata.MethodImplementationHandleCollection
+  isExternal: false
+  href: System.Reflection.Metadata.MethodImplementationHandleCollection.yml
+  name: MethodImplementationHandleCollection
+  fullName: System.Reflection.Metadata.MethodImplementationHandleCollection
+  type: Struct
+- uid: System.Reflection.Metadata.InterfaceImplementationHandleCollection
+  isExternal: false
+  href: System.Reflection.Metadata.InterfaceImplementationHandleCollection.yml
+  name: InterfaceImplementationHandleCollection
+  fullName: System.Reflection.Metadata.InterfaceImplementationHandleCollection
+  type: Struct
+- uid: System.Reflection.Metadata.CustomAttributeHandleCollection
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.CustomAttributeHandleCollection.yml
+  name: CustomAttributeHandleCollection
+  fullName: System.Reflection.Metadata.CustomAttributeHandleCollection
+  type: Struct
+- uid: System.Reflection.Metadata.DeclarativeSecurityAttributeHandleCollection
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.DeclarativeSecurityAttributeHandleCollection.yml
+  name: DeclarativeSecurityAttributeHandleCollection
+  fullName: System.Reflection.Metadata.DeclarativeSecurityAttributeHandleCollection
+  type: Struct

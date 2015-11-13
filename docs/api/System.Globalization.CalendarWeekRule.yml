@@ -1,0 +1,82 @@
+items:
+- uid: System.Globalization.CalendarWeekRule
+  id: CalendarWeekRule
+  parent: System.Globalization
+  children:
+  - System.Globalization.CalendarWeekRule.FirstDay
+  - System.Globalization.CalendarWeekRule.FirstFourDayWeek
+  - System.Globalization.CalendarWeekRule.FirstFullWeek
+  href: System.Globalization.CalendarWeekRule.yml
+  name: CalendarWeekRule
+  fullName: System.Globalization.CalendarWeekRule
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Globalization/CalendarWeekRule.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Globalization/CalendarWeekRule.cs
+    startLine: 7
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Defines different rules for determining the first week of the year.
+  syntax:
+    content: public enum CalendarWeekRule
+    content.vb: Public Enum CalendarWeekRule
+- uid: System.Globalization.CalendarWeekRule.FirstDay
+  id: FirstDay
+  parent: System.Globalization.CalendarWeekRule
+  href: System.Globalization.CalendarWeekRule.yml
+  name: FirstDay
+  fullName: System.Globalization.CalendarWeekRule.FirstDay
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CalendarWeekRule.cs
+    startLine: 12
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Indicates that the first week of the year starts on the first day of the year and ends before the following designated first day of the week. The value is 0.
+  syntax:
+    content: FirstDay = 0
+- uid: System.Globalization.CalendarWeekRule.FirstFullWeek
+  id: FirstFullWeek
+  parent: System.Globalization.CalendarWeekRule
+  href: System.Globalization.CalendarWeekRule.yml
+  name: FirstFullWeek
+  fullName: System.Globalization.CalendarWeekRule.FirstFullWeek
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CalendarWeekRule.cs
+    startLine: 14
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Indicates that the first week of the year begins on the first occurrence of the designated first day of the week on or after the first day of the year. The value is 1.
+  syntax:
+    content: FirstFullWeek = 1
+- uid: System.Globalization.CalendarWeekRule.FirstFourDayWeek
+  id: FirstFourDayWeek
+  parent: System.Globalization.CalendarWeekRule
+  href: System.Globalization.CalendarWeekRule.yml
+  name: FirstFourDayWeek
+  fullName: System.Globalization.CalendarWeekRule.FirstFourDayWeek
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/CalendarWeekRule.cs
+    startLine: 16
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Indicates that the first week of the year is the first week with four or more days before the designated first day of the week. The value is 2.
+  syntax:
+    content: FirstFourDayWeek = 2
+references:
+- uid: System.Globalization
+  isExternal: false
+  name: System.Globalization
+  fullName: System.Globalization

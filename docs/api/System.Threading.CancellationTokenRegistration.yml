@@ -1,0 +1,427 @@
+items:
+- uid: System.Threading.CancellationTokenRegistration
+  id: CancellationTokenRegistration
+  parent: System.Threading
+  children:
+  - System.Threading.CancellationTokenRegistration.Dispose
+  - System.Threading.CancellationTokenRegistration.Equals(System.Object)
+  - System.Threading.CancellationTokenRegistration.Equals(System.Threading.CancellationTokenRegistration)
+  - System.Threading.CancellationTokenRegistration.GetHashCode
+  - System.Threading.CancellationTokenRegistration.op_Equality(System.Threading.CancellationTokenRegistration,System.Threading.CancellationTokenRegistration)
+  - System.Threading.CancellationTokenRegistration.op_Inequality(System.Threading.CancellationTokenRegistration,System.Threading.CancellationTokenRegistration)
+  href: System.Threading.CancellationTokenRegistration.yml
+  name: CancellationTokenRegistration
+  fullName: System.Threading.CancellationTokenRegistration
+  type: Struct
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Threading/CancellationTokenRegistration.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Threading/CancellationTokenRegistration.cs
+    startLine: 18
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Represents a callback delegate that has been registered with a @'System.Threading.CancellationToken'.
+  remarks: To unregister a callback, dispose the corresponding Registration instance.
+  syntax:
+    content: 'public struct CancellationTokenRegistration : IEquatable<CancellationTokenRegistration>, IDisposable'
+    content.vb: Public Structure CancellationTokenRegistration Implements IEquatable(Of CancellationTokenRegistration), IDisposable
+  implements:
+  - System.IEquatable{System.Threading.CancellationTokenRegistration}
+  - System.IDisposable
+  inheritedMembers:
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.Threading.CancellationTokenRegistration.Dispose
+  id: Dispose
+  parent: System.Threading.CancellationTokenRegistration
+  href: System.Threading.CancellationTokenRegistration.yml
+  name: Dispose()
+  fullName: System.Threading.CancellationTokenRegistration.Dispose()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/CancellationTokenRegistration.cs
+    startLine: 60
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Releases all resources used by the current instance of the @'System.Threading.CancellationTokenRegistration' class.
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+- uid: System.Threading.CancellationTokenRegistration.op_Equality(System.Threading.CancellationTokenRegistration,System.Threading.CancellationTokenRegistration)
+  id: op_Equality(System.Threading.CancellationTokenRegistration,System.Threading.CancellationTokenRegistration)
+  parent: System.Threading.CancellationTokenRegistration
+  href: System.Threading.CancellationTokenRegistration.yml
+  name: Equality(CancellationTokenRegistration, CancellationTokenRegistration)
+  fullName: System.Threading.CancellationTokenRegistration.Equality(System.Threading.CancellationTokenRegistration, System.Threading.CancellationTokenRegistration)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/CancellationTokenRegistration.cs
+    startLine: 99
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Determines whether two @'System.Threading.CancellationTokenRegistration' instances are equal.
+  syntax:
+    content: public static bool operator ==(CancellationTokenRegistration left, CancellationTokenRegistration right)
+    content.vb: Public Shared Operator =(left As CancellationTokenRegistration, right As CancellationTokenRegistration) As Boolean
+    parameters:
+    - id: left
+      type: System.Threading.CancellationTokenRegistration
+      description: The first instance.
+    - id: right
+      type: System.Threading.CancellationTokenRegistration
+      description: The second instance.
+    return:
+      type: System.Boolean
+      description: True if the instances are equal; otherwise, false.
+- uid: System.Threading.CancellationTokenRegistration.op_Inequality(System.Threading.CancellationTokenRegistration,System.Threading.CancellationTokenRegistration)
+  id: op_Inequality(System.Threading.CancellationTokenRegistration,System.Threading.CancellationTokenRegistration)
+  parent: System.Threading.CancellationTokenRegistration
+  href: System.Threading.CancellationTokenRegistration.yml
+  name: Inequality(CancellationTokenRegistration, CancellationTokenRegistration)
+  fullName: System.Threading.CancellationTokenRegistration.Inequality(System.Threading.CancellationTokenRegistration, System.Threading.CancellationTokenRegistration)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/CancellationTokenRegistration.cs
+    startLine: 110
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Determines whether two @'System.Threading.CancellationTokenRegistration' instances are not equal.
+  syntax:
+    content: public static bool operator !=(CancellationTokenRegistration left, CancellationTokenRegistration right)
+    content.vb: Public Shared Operator <>(left As CancellationTokenRegistration, right As CancellationTokenRegistration) As Boolean
+    parameters:
+    - id: left
+      type: System.Threading.CancellationTokenRegistration
+      description: The first instance.
+    - id: right
+      type: System.Threading.CancellationTokenRegistration
+      description: The second instance.
+    return:
+      type: System.Boolean
+      description: True if the instances are not equal; otherwise, false.
+- uid: System.Threading.CancellationTokenRegistration.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Threading.CancellationTokenRegistration
+  href: System.Threading.CancellationTokenRegistration.yml
+  name: Equals(Object)
+  fullName: System.Threading.CancellationTokenRegistration.Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/CancellationTokenRegistration.cs
+    startLine: 125
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Determines whether the current @'System.Threading.CancellationTokenRegistration' instance is equal to the specified @'System.Threading.CancellationTokenRegistration'.
+  syntax:
+    content: public override bool Equals(object obj)
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The other object to which to compare this instance.
+    return:
+      type: System.Boolean
+      description: >-
+        True, if both this and <paramref name="obj" /> are equal. False, otherwise.
+
+        Two @'System.Threading.CancellationTokenRegistration' instances are equal if
+
+        they both refer to the output of a single call to the same Register method of a
+
+        @'System.Threading.CancellationToken'.
+  overridden: System.ValueType.Equals(System.Object)
+- uid: System.Threading.CancellationTokenRegistration.Equals(System.Threading.CancellationTokenRegistration)
+  id: Equals(System.Threading.CancellationTokenRegistration)
+  parent: System.Threading.CancellationTokenRegistration
+  href: System.Threading.CancellationTokenRegistration.yml
+  name: Equals(CancellationTokenRegistration)
+  fullName: System.Threading.CancellationTokenRegistration.Equals(System.Threading.CancellationTokenRegistration)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/CancellationTokenRegistration.cs
+    startLine: 140
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Determines whether the current @'System.Threading.CancellationTokenRegistration' instance is equal to the specified @'System.Threading.CancellationTokenRegistration'.
+  syntax:
+    content: public bool Equals(CancellationTokenRegistration other)
+    content.vb: Public Function Equals(other As CancellationTokenRegistration) As Boolean
+    parameters:
+    - id: other
+      type: System.Threading.CancellationTokenRegistration
+      description: The other @'System.Threading.CancellationTokenRegistration' to which to compare this instance.
+    return:
+      type: System.Boolean
+      description: >-
+        True, if both this and <paramref name="other" /> are equal. False, otherwise.
+
+        Two @'System.Threading.CancellationTokenRegistration' instances are equal if
+
+        they both refer to the output of a single call to the same Register method of a
+
+        @'System.Threading.CancellationToken'.
+- uid: System.Threading.CancellationTokenRegistration.GetHashCode
+  id: GetHashCode
+  parent: System.Threading.CancellationTokenRegistration
+  href: System.Threading.CancellationTokenRegistration.yml
+  name: GetHashCode()
+  fullName: System.Threading.CancellationTokenRegistration.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/CancellationTokenRegistration.cs
+    startLine: 151
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Serves as a hash function for a @'System.Threading.CancellationTokenRegistration'.
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: A hash code for the current @'System.Threading.CancellationTokenRegistration' instance.
+  overridden: System.ValueType.GetHashCode
+references:
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Threading.CancellationTokenRegistration
+  parent: System.Threading
+  isExternal: false
+  href: System.Threading.CancellationTokenRegistration.yml
+  name: CancellationTokenRegistration
+  fullName: System.Threading.CancellationTokenRegistration
+  type: Struct
+  summary: Represents a callback delegate that has been registered with a @'System.Threading.CancellationToken'.
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32

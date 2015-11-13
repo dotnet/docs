@@ -1,0 +1,530 @@
+items:
+- uid: System.Net.WebHeaderCollection
+  id: WebHeaderCollection
+  parent: System.Net
+  children:
+  - System.Net.WebHeaderCollection.#ctor
+  - System.Net.WebHeaderCollection.Add(System.String,System.String)
+  - System.Net.WebHeaderCollection.AllKeys
+  - System.Net.WebHeaderCollection.Clear
+  - System.Net.WebHeaderCollection.Count
+  - System.Net.WebHeaderCollection.Get(System.Int32)
+  - System.Net.WebHeaderCollection.Get(System.String)
+  - System.Net.WebHeaderCollection.GetKey(System.Int32)
+  - System.Net.WebHeaderCollection.GetValues(System.Int32)
+  - System.Net.WebHeaderCollection.GetValues(System.String)
+  - System.Net.WebHeaderCollection.Item(System.Net.HttpRequestHeader)
+  - System.Net.WebHeaderCollection.Item(System.Net.HttpResponseHeader)
+  - System.Net.WebHeaderCollection.Keys
+  - System.Net.WebHeaderCollection.Remove(System.String)
+  - System.Net.WebHeaderCollection.Set(System.String,System.String)
+  - System.Net.WebHeaderCollection.System#Collections#IEnumerable#GetEnumerator
+  - System.Net.WebHeaderCollection.ToString
+  href: System.Net.WebHeaderCollection.yml
+  name: WebHeaderCollection
+  fullName: System.Net.WebHeaderCollection
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Net.WebHeaderCollection/src/System/Net/WebHeaderCollection.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Net.WebHeaderCollection/src/System/Net/WebHeaderCollection.cs
+    startLine: 33
+  assemblies:
+  - System.Net.WebHeaderCollection
+  namespace: System.Net
+  summary: Contains protocol headers associated with a request or response.
+  syntax:
+    content: 'public class WebHeaderCollection : NameValueCollection, IEnumerable'
+    content.vb: Public Class WebHeaderCollection Inherits NameValueCollection Implements IEnumerable
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.IEnumerable
+- uid: System.Net.WebHeaderCollection.Item(System.Net.HttpRequestHeader)
+  id: Item(System.Net.HttpRequestHeader)
+  parent: System.Net.WebHeaderCollection
+  href: System.Net.WebHeaderCollection.yml
+  name: Item[HttpRequestHeader]
+  name.vb: Item(HttpRequestHeader)
+  fullName: System.Net.WebHeaderCollection.Item[System.Net.HttpRequestHeader]
+  fullName.vb: System.Net.WebHeaderCollection.Item(System.Net.HttpRequestHeader)
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.WebHeaderCollection/src/System/Net/WebHeaderCollection.cs
+    startLine: 116
+  assemblies:
+  - System.Net.WebHeaderCollection
+  namespace: System.Net
+  summary: Gets or sets the specified request header.
+  syntax:
+    content: public string this[HttpRequestHeader header] { get; set; }
+    content.vb: Public Property Item(header As HttpRequestHeader) As String
+    parameters:
+    - id: header
+      type: System.Net.HttpRequestHeader
+      description: The request header value.
+    return:
+      type: System.String
+  exceptions:
+  - type: System.InvalidOperationException
+    description: This @'System.Net.WebHeaderCollection' instance does not allow instances of @'System.Net.HttpRequestHeader'.
+- uid: System.Net.WebHeaderCollection.Item(System.Net.HttpResponseHeader)
+  id: Item(System.Net.HttpResponseHeader)
+  parent: System.Net.WebHeaderCollection
+  href: System.Net.WebHeaderCollection.yml
+  name: Item[HttpResponseHeader]
+  name.vb: Item(HttpResponseHeader)
+  fullName: System.Net.WebHeaderCollection.Item[System.Net.HttpResponseHeader]
+  fullName.vb: System.Net.WebHeaderCollection.Item(System.Net.HttpResponseHeader)
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.WebHeaderCollection/src/System/Net/WebHeaderCollection.cs
+    startLine: 136
+  assemblies:
+  - System.Net.WebHeaderCollection
+  namespace: System.Net
+  summary: Gets or sets the specified response header.
+  syntax:
+    content: public string this[HttpResponseHeader header] { get; set; }
+    content.vb: Public Property Item(header As HttpResponseHeader) As String
+    parameters:
+    - id: header
+      type: System.Net.HttpResponseHeader
+      description: The response header value.
+    return:
+      type: System.String
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: The length of *value* is greater than 65535.
+  - type: System.InvalidOperationException
+    description: This @'System.Net.WebHeaderCollection' instance does not allow instances of @'System.Net.HttpResponseHeader'.
+- uid: System.Net.WebHeaderCollection.Add(System.String,System.String)
+  id: Add(System.String,System.String)
+  parent: System.Net.WebHeaderCollection
+  href: System.Net.WebHeaderCollection.yml
+  name: Add(String, String)
+  fullName: System.Net.WebHeaderCollection.Add(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.WebHeaderCollection/src/System/Net/WebHeaderCollection.cs
+    startLine: 314
+  assemblies:
+  - System.Net.WebHeaderCollection
+  namespace: System.Net
+  summary: Inserts a header with the specified name and value into the collection.
+  syntax:
+    content: public override void Add(string name, string value)
+    content.vb: Public Overrides Sub Add(name As String, value As String)
+    parameters:
+    - id: name
+      type: System.String
+      description: The header to add to the collection.
+    - id: value
+      type: System.String
+      description: The content of the header.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*name* is null, @''System.String.Empty'', or contains invalid characters.-or- *name* is a restricted header that must be set with a property setting.-or- *value* contains invalid characters.'
+  - type: System.ArgumentOutOfRangeException
+    description: The length of *value* is greater than 65535.
+- uid: System.Net.WebHeaderCollection.Set(System.String,System.String)
+  id: Set(System.String,System.String)
+  parent: System.Net.WebHeaderCollection
+  href: System.Net.WebHeaderCollection.yml
+  name: Set(String, String)
+  fullName: System.Net.WebHeaderCollection.Set(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.WebHeaderCollection/src/System/Net/WebHeaderCollection.cs
+    startLine: 346
+  assemblies:
+  - System.Net.WebHeaderCollection
+  namespace: System.Net
+  summary: Sets the specified header to the specified value.
+  syntax:
+    content: public override void Set(string name, string value)
+    content.vb: Public Overrides Sub Set(name As String, value As String)
+    parameters:
+    - id: name
+      type: System.String
+      description: The header to set.
+    - id: value
+      type: System.String
+      description: The content of the header to set.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*name* is null or @''System.String.Empty''.'
+  - type: System.ArgumentOutOfRangeException
+    description: The length of *value* is greater than 65535.
+  - type: System.ArgumentException
+    description: '*name* is a restricted header.-or- *name* or *value* contain invalid characters.'
+- uid: System.Net.WebHeaderCollection.Remove(System.String)
+  id: Remove(System.String)
+  parent: System.Net.WebHeaderCollection
+  href: System.Net.WebHeaderCollection.yml
+  name: Remove(String)
+  fullName: System.Net.WebHeaderCollection.Remove(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.WebHeaderCollection/src/System/Net/WebHeaderCollection.cs
+    startLine: 379
+  assemblies:
+  - System.Net.WebHeaderCollection
+  namespace: System.Net
+  summary: Removes the specified header from the collection.
+  syntax:
+    content: public override void Remove(string name)
+    content.vb: Public Overrides Sub Remove(name As String)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the header to remove from the collection.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*name* is null@''System.String.Empty''.'
+  - type: System.ArgumentException
+    description: '*name* is a restricted header.-or- *name* contains invalid characters.'
+- uid: System.Net.WebHeaderCollection.GetValues(System.String)
+  id: GetValues(System.String)
+  parent: System.Net.WebHeaderCollection
+  href: System.Net.WebHeaderCollection.yml
+  name: GetValues(String)
+  fullName: System.Net.WebHeaderCollection.GetValues(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.WebHeaderCollection/src/System/Net/WebHeaderCollection.cs
+    startLine: 413
+  assemblies:
+  - System.Net.WebHeaderCollection
+  namespace: System.Net
+  summary: Gets an array of header values stored in a header.
+  syntax:
+    content: public override string[] GetValues(string header)
+    content.vb: Public Overrides Function GetValues(header As String) As String()
+    parameters:
+    - id: header
+      type: System.String
+      description: The header to return.
+    return:
+      type: System.String[]
+- uid: System.Net.WebHeaderCollection.ToString
+  id: ToString
+  parent: System.Net.WebHeaderCollection
+  href: System.Net.WebHeaderCollection.yml
+  name: ToString()
+  fullName: System.Net.WebHeaderCollection.ToString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.WebHeaderCollection/src/System/Net/WebHeaderCollection.cs
+    startLine: 494
+  assemblies:
+  - System.Net.WebHeaderCollection
+  namespace: System.Net
+  summary: This method is obsolete.
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+- uid: System.Net.WebHeaderCollection.#ctor
+  id: '#ctor'
+  parent: System.Net.WebHeaderCollection
+  href: System.Net.WebHeaderCollection.yml
+  name: WebHeaderCollection()
+  fullName: System.Net.WebHeaderCollection.WebHeaderCollection()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Net.WebHeaderCollection/src/System/Net/WebHeaderCollection.cs
+    startLine: 536
+  assemblies:
+  - System.Net.WebHeaderCollection
+  namespace: System.Net
+  summary: Initializes a new instance of the @'System.Net.WebHeaderCollection' class.
+  syntax:
+    content: public WebHeaderCollection()
+    content.vb: Public Sub New
+- uid: System.Net.WebHeaderCollection.Get(System.String)
+  id: Get(System.String)
+  parent: System.Net.WebHeaderCollection
+  href: System.Net.WebHeaderCollection.yml
+  name: Get(String)
+  fullName: System.Net.WebHeaderCollection.Get(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.WebHeaderCollection/src/System/Net/WebHeaderCollection.cs
+    startLine: 541
+  assemblies:
+  - System.Net.WebHeaderCollection
+  namespace: System.Net
+  summary: Gets the value of a particular header in the collection, specified by the name of the header.
+  syntax:
+    content: public override string Get(string name)
+    content.vb: Public Overrides Function Get(name As String) As String
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the Web header.
+    return:
+      type: System.String
+- uid: System.Net.WebHeaderCollection.Count
+  id: Count
+  parent: System.Net.WebHeaderCollection
+  href: System.Net.WebHeaderCollection.yml
+  name: Count
+  fullName: System.Net.WebHeaderCollection.Count
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.WebHeaderCollection/src/System/Net/WebHeaderCollection.cs
+    startLine: 551
+  assemblies:
+  - System.Net.WebHeaderCollection
+  namespace: System.Net
+  summary: Gets the number of headers in the collection.
+  syntax:
+    content: public override int Count { get; }
+    content.vb: Public Overrides ReadOnly Property Count As Integer
+    parameters: []
+    return:
+      type: System.Int32
+- uid: System.Net.WebHeaderCollection.Keys
+  id: Keys
+  parent: System.Net.WebHeaderCollection
+  href: System.Net.WebHeaderCollection.yml
+  name: Keys
+  fullName: System.Net.WebHeaderCollection.Keys
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.WebHeaderCollection/src/System/Net/WebHeaderCollection.cs
+    startLine: 559
+  assemblies:
+  - System.Net.WebHeaderCollection
+  namespace: System.Net
+  summary: Gets the collection of header names (keys) in the collection.
+  syntax:
+    content: public override KeysCollection Keys { get; }
+    content.vb: Public Overrides ReadOnly Property Keys As KeysCollection
+    parameters: []
+    return:
+      type: KeysCollection
+- uid: System.Net.WebHeaderCollection.Get(System.Int32)
+  id: Get(System.Int32)
+  parent: System.Net.WebHeaderCollection
+  href: System.Net.WebHeaderCollection.yml
+  name: Get(Int32)
+  fullName: System.Net.WebHeaderCollection.Get(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.WebHeaderCollection/src/System/Net/WebHeaderCollection.cs
+    startLine: 567
+  assemblies:
+  - System.Net.WebHeaderCollection
+  namespace: System.Net
+  summary: Gets the value of a particular header in the collection, specified by an index into the collection.
+  syntax:
+    content: public override string Get(int index)
+    content.vb: Public Overrides Function Get(index As Integer) As String
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the key to get from the collection.
+    return:
+      type: System.String
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is negative. -or-*index* exceeds the size of the collection.'
+- uid: System.Net.WebHeaderCollection.GetValues(System.Int32)
+  id: GetValues(System.Int32)
+  parent: System.Net.WebHeaderCollection
+  href: System.Net.WebHeaderCollection.yml
+  name: GetValues(Int32)
+  fullName: System.Net.WebHeaderCollection.GetValues(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.WebHeaderCollection/src/System/Net/WebHeaderCollection.cs
+    startLine: 572
+  assemblies:
+  - System.Net.WebHeaderCollection
+  namespace: System.Net
+  summary: Gets an array of header values stored in the *index* position of the header collection.
+  syntax:
+    content: public override string[] GetValues(int index)
+    content.vb: Public Overrides Function GetValues(index As Integer) As String()
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The header index to return.
+    return:
+      type: System.String[]
+- uid: System.Net.WebHeaderCollection.GetKey(System.Int32)
+  id: GetKey(System.Int32)
+  parent: System.Net.WebHeaderCollection
+  href: System.Net.WebHeaderCollection.yml
+  name: GetKey(Int32)
+  fullName: System.Net.WebHeaderCollection.GetKey(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.WebHeaderCollection/src/System/Net/WebHeaderCollection.cs
+    startLine: 577
+  assemblies:
+  - System.Net.WebHeaderCollection
+  namespace: System.Net
+  summary: Gets the header name at the specified position in the collection.
+  syntax:
+    content: public override string GetKey(int index)
+    content.vb: Public Overrides Function GetKey(index As Integer) As String
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the key to get from the collection.
+    return:
+      type: System.String
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is negative. -or-*index* exceeds the size of the collection.'
+- uid: System.Net.WebHeaderCollection.AllKeys
+  id: AllKeys
+  parent: System.Net.WebHeaderCollection
+  href: System.Net.WebHeaderCollection.yml
+  name: AllKeys
+  fullName: System.Net.WebHeaderCollection.AllKeys
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.WebHeaderCollection/src/System/Net/WebHeaderCollection.cs
+    startLine: 582
+  assemblies:
+  - System.Net.WebHeaderCollection
+  namespace: System.Net
+  summary: Gets all header names (keys) in the collection.
+  syntax:
+    content: public override string[] AllKeys { get; }
+    content.vb: Public Overrides ReadOnly Property AllKeys As String()
+    parameters: []
+    return:
+      type: System.String[]
+- uid: System.Net.WebHeaderCollection.System#Collections#IEnumerable#GetEnumerator
+  id: System#Collections#IEnumerable#GetEnumerator
+  parent: System.Net.WebHeaderCollection
+  href: System.Net.WebHeaderCollection.yml
+  name: IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: System.Net.WebHeaderCollection.System.Collections.IEnumerable.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.WebHeaderCollection/src/System/Net/WebHeaderCollection.cs
+    startLine: 590
+  assemblies:
+  - System.Net.WebHeaderCollection
+  namespace: System.Net
+  syntax:
+    content: IEnumerator IEnumerable.GetEnumerator()
+    content.vb: Function System.Collections.IEnumerable.GetEnumerator As IEnumerator Implements IEnumerable.GetEnumerator
+    return:
+      type: System.Collections.IEnumerator
+- uid: System.Net.WebHeaderCollection.Clear
+  id: Clear
+  parent: System.Net.WebHeaderCollection
+  href: System.Net.WebHeaderCollection.yml
+  name: Clear()
+  fullName: System.Net.WebHeaderCollection.Clear()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.WebHeaderCollection/src/System/Net/WebHeaderCollection.cs
+    startLine: 595
+  assemblies:
+  - System.Net.WebHeaderCollection
+  namespace: System.Net
+  summary: Removes all headers from the collection.
+  syntax:
+    content: public override void Clear()
+    content.vb: Public Overrides Sub Clear
+references:
+- uid: System.Net
+  isExternal: false
+  name: System.Net
+  fullName: System.Net
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Net.HttpRequestHeader
+  parent: System.Net
+  isExternal: false
+  href: System.Net.HttpRequestHeader.yml
+  name: HttpRequestHeader
+  fullName: System.Net.HttpRequestHeader
+  type: Enum
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Net.HttpResponseHeader
+  parent: System.Net
+  isExternal: false
+  href: System.Net.HttpResponseHeader.yml
+  name: HttpResponseHeader
+  fullName: System.Net.HttpResponseHeader
+  type: Enum
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  name.vb: String()
+  fullName: System.String[]
+  fullName.vb: System.String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: KeysCollection
+  isExternal: true
+  name: KeysCollection
+  fullName: KeysCollection
+- uid: System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  isExternal: false
+  name: System.Collections
+  fullName: System.Collections

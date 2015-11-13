@@ -1,0 +1,64 @@
+items:
+- uid: System.IO.HandleInheritability
+  id: HandleInheritability
+  parent: System.IO
+  children:
+  - System.IO.HandleInheritability.Inheritable
+  - System.IO.HandleInheritability.None
+  href: System.IO.HandleInheritability.yml
+  name: HandleInheritability
+  fullName: System.IO.HandleInheritability
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Runtime.Handles/src/System/IO/HandleInheritability.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Runtime.Handles/src/System/IO/HandleInheritability.cs
+    startLine: 5
+  assemblies:
+  - System.Runtime.Handles.CoreCLR
+  namespace: System.IO
+  summary: Specifies whether the underlying handle is inheritable by child processes.
+  syntax:
+    content: public enum HandleInheritability
+    content.vb: Public Enum HandleInheritability
+- uid: System.IO.HandleInheritability.None
+  id: None
+  parent: System.IO.HandleInheritability
+  href: System.IO.HandleInheritability.yml
+  name: None
+  fullName: System.IO.HandleInheritability.None
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Runtime.Handles/src/System/IO/HandleInheritability.cs
+    startLine: 7
+  assemblies:
+  - System.Runtime.Handles.CoreCLR
+  namespace: System.IO
+  summary: Specifies that the handle is not inheritable by child processes.
+  syntax:
+    content: None = 0
+- uid: System.IO.HandleInheritability.Inheritable
+  id: Inheritable
+  parent: System.IO.HandleInheritability
+  href: System.IO.HandleInheritability.yml
+  name: Inheritable
+  fullName: System.IO.HandleInheritability.Inheritable
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Runtime.Handles/src/System/IO/HandleInheritability.cs
+    startLine: 8
+  assemblies:
+  - System.Runtime.Handles.CoreCLR
+  namespace: System.IO
+  summary: Specifies that the handle is inheritable by child processes.
+  syntax:
+    content: Inheritable = 1
+references:
+- uid: System.IO
+  isExternal: false
+  name: System.IO
+  fullName: System.IO

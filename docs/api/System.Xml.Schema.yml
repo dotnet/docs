@@ -1,0 +1,39 @@
+items:
+- uid: System.Xml.Schema
+  id: System.Xml.Schema
+  children:
+  - System.Xml.Schema.XmlSchema
+  - System.Xml.Schema.XmlSchemaForm
+  href: System.Xml.Schema.yml
+  name: System.Xml.Schema
+  fullName: System.Xml.Schema
+  type: Namespace
+  source:
+    remote:
+      path: src/System.Xml.ReaderWriter/src/System/Xml/Schema/XsdDuration.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Xml.ReaderWriter/src/System/Xml/Schema/XsdDuration.cs
+    startLine: 7
+  assemblies:
+  - System.Xml.ReaderWriter
+  summary: The @'System.Xml.Schema' namespace contains the XML classes that provide standards-based support for XML schema definition language (XSD) schemas.
+references:
+- uid: System.Xml.Schema.XmlSchema
+  isExternal: false
+  href: System.Xml.Schema.XmlSchema.yml
+  name: XmlSchema
+  fullName: System.Xml.Schema.XmlSchema
+  type: Class
+- uid: System.Xml.Schema.XmlSchemaForm
+  parent: System.Xml.Schema
+  isExternal: false
+  href: System.Xml.Schema.XmlSchemaForm.yml
+  name: XmlSchemaForm
+  fullName: System.Xml.Schema.XmlSchemaForm
+  type: Enum
+- uid: System.Xml.Schema
+  isExternal: false
+  name: System.Xml.Schema
+  fullName: System.Xml.Schema
+  type: Namespace

@@ -1,0 +1,65 @@
+items:
+- uid: System.IO.MemoryMappedFiles.MemoryMappedFileOptions
+  id: MemoryMappedFileOptions
+  parent: System.IO.MemoryMappedFiles
+  children:
+  - System.IO.MemoryMappedFiles.MemoryMappedFileOptions.DelayAllocatePages
+  - System.IO.MemoryMappedFiles.MemoryMappedFileOptions.None
+  href: System.IO.MemoryMappedFiles.MemoryMappedFileOptions.yml
+  name: MemoryMappedFileOptions
+  fullName: System.IO.MemoryMappedFiles.MemoryMappedFileOptions
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.IO.MemoryMappedFiles/src/System/IO/MemoryMappedFiles/MemoryMappedFileOptions.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.IO.MemoryMappedFiles/src/System/IO/MemoryMappedFiles/MemoryMappedFileOptions.cs
+    startLine: 5
+  assemblies:
+  - System.IO.MemoryMappedFiles
+  namespace: System.IO.MemoryMappedFiles
+  summary: Provides memory allocation options for memory-mapped files.
+  syntax:
+    content: public enum MemoryMappedFileOptions
+    content.vb: Public Enum MemoryMappedFileOptions
+- uid: System.IO.MemoryMappedFiles.MemoryMappedFileOptions.None
+  id: None
+  parent: System.IO.MemoryMappedFiles.MemoryMappedFileOptions
+  href: System.IO.MemoryMappedFiles.MemoryMappedFileOptions.yml
+  name: None
+  fullName: System.IO.MemoryMappedFiles.MemoryMappedFileOptions.None
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.MemoryMappedFiles/src/System/IO/MemoryMappedFiles/MemoryMappedFileOptions.cs
+    startLine: 8
+  assemblies:
+  - System.IO.MemoryMappedFiles
+  namespace: System.IO.MemoryMappedFiles
+  summary: No memory allocation options are applied.
+  syntax:
+    content: None = 0
+- uid: System.IO.MemoryMappedFiles.MemoryMappedFileOptions.DelayAllocatePages
+  id: DelayAllocatePages
+  parent: System.IO.MemoryMappedFiles.MemoryMappedFileOptions
+  href: System.IO.MemoryMappedFiles.MemoryMappedFileOptions.yml
+  name: DelayAllocatePages
+  fullName: System.IO.MemoryMappedFiles.MemoryMappedFileOptions.DelayAllocatePages
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.MemoryMappedFiles/src/System/IO/MemoryMappedFiles/MemoryMappedFileOptions.cs
+    startLine: 9
+  assemblies:
+  - System.IO.MemoryMappedFiles
+  namespace: System.IO.MemoryMappedFiles
+  summary: Memory allocation is delayed until a view is created with either the @'System.IO.MemoryMappedFiles.MemoryMappedFile.CreateViewAccessor' or @'System.IO.MemoryMappedFiles.MemoryMappedFile.CreateViewStream' method.
+  syntax:
+    content: DelayAllocatePages = 67108864
+references:
+- uid: System.IO.MemoryMappedFiles
+  isExternal: false
+  name: System.IO.MemoryMappedFiles
+  fullName: System.IO.MemoryMappedFiles
+  type: Namespace

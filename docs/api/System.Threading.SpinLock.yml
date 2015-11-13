@@ -1,0 +1,635 @@
+items:
+- uid: System.Threading.SpinLock
+  id: SpinLock
+  parent: System.Threading
+  children:
+  - System.Threading.SpinLock.#ctor(System.Boolean)
+  - System.Threading.SpinLock.Enter(System.Boolean@)
+  - System.Threading.SpinLock.Exit
+  - System.Threading.SpinLock.Exit(System.Boolean)
+  - System.Threading.SpinLock.IsHeld
+  - System.Threading.SpinLock.IsHeldByCurrentThread
+  - System.Threading.SpinLock.IsThreadOwnerTrackingEnabled
+  - System.Threading.SpinLock.TryEnter(System.Boolean@)
+  - System.Threading.SpinLock.TryEnter(System.Int32,System.Boolean@)
+  - System.Threading.SpinLock.TryEnter(System.TimeSpan,System.Boolean@)
+  href: System.Threading.SpinLock.yml
+  name: SpinLock
+  fullName: System.Threading.SpinLock
+  type: Struct
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Threading/SpinLock.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Threading/SpinLock.cs
+    startLine: 55
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Provides a mutual exclusion lock primitive where a thread trying to acquire the lock waits in a loop repeatedly checking until the lock becomes available.
+  remarks: >-
+    <para>
+
+    Spin locks can be used for leaf-level locks where the object allocation implied by using a @'System.Threading.Monitor', in size or due to garbage collection pressure, is overly
+
+    expensive. Avoiding blocking is another reason that a spin lock can be useful, however if you expect
+
+    any significant amount of blocking, you are probably best not using spin locks due to excessive
+
+    spinning. Spinning can be beneficial when locks are fine grained and large in number (for example, a
+
+    lock per node in a linked list) as well as when lock hold times are always extremely short. In
+
+    general, while holding a spin lock, one should avoid blocking, calling anything that itself may
+
+    block, holding more than one spin lock at once, making dynamically dispatched calls (interface and
+
+    virtuals), making statically dispatched calls into any code one doesn't own, or allocating memory.
+
+    </para>
+
+    <para>@'System.Threading.SpinLock' should only be used when it's been determined that doing so will improve an
+
+    application's performance. It's also important to note that @'System.Threading.SpinLock' is a value type,
+
+    for performance reasons. As such, one must be very careful not to accidentally copy a SpinLock
+
+    instance, as the two instances (the original and the copy) would then be completely independent of
+
+    one another, which would likely lead to erroneous behavior of the application. If a SpinLock instance
+
+    must be passed around, it should be passed by reference rather than by value.
+
+    </para>
+
+    <para>
+
+    Do not store @'System.Threading.SpinLock' instances in readonly fields.
+
+    </para>
+
+    <para>
+
+    All members of @'System.Threading.SpinLock' are thread-safe and may be used from multiple threads
+
+    concurrently.
+
+    </para>
+  syntax:
+    content: public struct SpinLock
+    content.vb: Public Structure SpinLock
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.Threading.SpinLock.#ctor(System.Boolean)
+  id: '#ctor(System.Boolean)'
+  parent: System.Threading.SpinLock
+  href: System.Threading.SpinLock.yml
+  name: SpinLock(Boolean)
+  fullName: System.Threading.SpinLock.SpinLock(System.Boolean)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/SpinLock.cs
+    startLine: 118
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Initializes a new instance of the @'System.Threading.SpinLock' structure with the option to track thread IDs to improve debugging.
+  remarks: The default constructor for @'System.Threading.SpinLock' tracks thread ownership.
+  syntax:
+    content: public SpinLock(bool enableThreadOwnerTracking)
+    content.vb: Public Sub New(enableThreadOwnerTracking As Boolean)
+    parameters:
+    - id: enableThreadOwnerTracking
+      type: System.Boolean
+      description: Whether to capture and use thread IDs for debugging purposes.
+- uid: System.Threading.SpinLock.Enter(System.Boolean@)
+  id: Enter(System.Boolean@)
+  parent: System.Threading.SpinLock
+  href: System.Threading.SpinLock.yml
+  name: Enter(ref Boolean)
+  name.vb: Enter(ByRef Boolean)
+  fullName: System.Threading.SpinLock.Enter(ref System.Boolean)
+  fullName.vb: System.Threading.SpinLock.Enter(ByRef System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/SpinLock.cs
+    startLine: 156
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Acquires the lock in a reliable manner, such that even if an exception occurs within the method call, *lockTaken* can be examined reliably to determine whether the lock was acquired.
+  remarks: The default constructor for @'System.Threading.SpinLock' tracks thread ownership.
+  syntax:
+    content: public void Enter(ref bool lockTaken)
+    content.vb: Public Sub Enter(ByRef lockTaken As Boolean)
+    parameters:
+    - id: lockTaken
+      type: System.Boolean
+      description: True if the lock is acquired; otherwise, false. *lockTaken* must be initialized to false prior to calling this method.
+  exceptions:
+  - type: System.ArgumentException
+    description: The *lockTaken* argument must be initialized to false prior to calling Enter.
+  - type: System.Threading.LockRecursionException
+    description: Thread ownership tracking is enabled, and the current thread has already acquired this lock.
+- uid: System.Threading.SpinLock.TryEnter(System.Boolean@)
+  id: TryEnter(System.Boolean@)
+  parent: System.Threading.SpinLock
+  href: System.Threading.SpinLock.yml
+  name: TryEnter(ref Boolean)
+  name.vb: TryEnter(ByRef Boolean)
+  fullName: System.Threading.SpinLock.TryEnter(ref System.Boolean)
+  fullName.vb: System.Threading.SpinLock.TryEnter(ByRef System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/SpinLock.cs
+    startLine: 188
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Attempts to acquire the lock in a reliable manner, such that even if an exception occurs within the method call, *lockTaken* can be examined reliably to determine whether the lock was acquired.
+  remarks: >-
+    Unlike @'System.Threading.SpinLock.Enter(System.Boolean@)', TryEnter will not block waiting for the lock to be available. If the
+
+    lock is not available when TryEnter is called, it will return immediately without any further
+
+    spinning.
+  syntax:
+    content: public void TryEnter(ref bool lockTaken)
+    content.vb: Public Sub TryEnter(ByRef lockTaken As Boolean)
+    parameters:
+    - id: lockTaken
+      type: System.Boolean
+      description: True if the lock is acquired; otherwise, false. *lockTaken* must be initialized to false prior to calling this method.
+  exceptions:
+  - type: System.ArgumentException
+    description: The *lockTaken* argument must be initialized to false prior to calling TryEnter.
+  - type: System.Threading.LockRecursionException
+    description: Thread ownership tracking is enabled, and the current thread has already acquired this lock.
+- uid: System.Threading.SpinLock.TryEnter(System.TimeSpan,System.Boolean@)
+  id: TryEnter(System.TimeSpan,System.Boolean@)
+  parent: System.Threading.SpinLock
+  href: System.Threading.SpinLock.yml
+  name: TryEnter(TimeSpan, ref Boolean)
+  name.vb: TryEnter(TimeSpan, ByRef Boolean)
+  fullName: System.Threading.SpinLock.TryEnter(System.TimeSpan, ref System.Boolean)
+  fullName.vb: System.Threading.SpinLock.TryEnter(System.TimeSpan, ByRef System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/SpinLock.cs
+    startLine: 219
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Attempts to acquire the lock in a reliable manner, such that even if an exception occurs within the method call, *lockTaken* can be examined reliably to determine whether the lock was acquired.
+  remarks: >-
+    Unlike @'System.Threading.SpinLock.Enter(System.Boolean@)', TryEnter will not block indefinitely waiting for the lock to be
+
+    available. It will block until either the lock is available or until the <paramref name="timeout" />
+
+    has expired.
+  syntax:
+    content: public void TryEnter(TimeSpan timeout, ref bool lockTaken)
+    content.vb: Public Sub TryEnter(timeout As TimeSpan, ByRef lockTaken As Boolean)
+    parameters:
+    - id: timeout
+      type: System.TimeSpan
+      description: A @'System.TimeSpan' that represents the number of milliseconds to wait, or a @'System.TimeSpan' that represents -1 milliseconds to wait indefinitely.
+    - id: lockTaken
+      type: System.Boolean
+      description: True if the lock is acquired; otherwise, false. *lockTaken* must be initialized to false prior to calling this method.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*timeout* is a negative number other than -1 milliseconds, which represents an infinite time-out -or- timeout is greater than @''System.Int32.MaxValue'' milliseconds.'
+  - type: System.ArgumentException
+    description: The *lockTaken* argument must be initialized to false prior to calling TryEnter.
+  - type: System.Threading.LockRecursionException
+    description: Thread ownership tracking is enabled, and the current thread has already acquired this lock.
+- uid: System.Threading.SpinLock.TryEnter(System.Int32,System.Boolean@)
+  id: TryEnter(System.Int32,System.Boolean@)
+  parent: System.Threading.SpinLock
+  href: System.Threading.SpinLock.yml
+  name: TryEnter(Int32, ref Boolean)
+  name.vb: TryEnter(Int32, ByRef Boolean)
+  fullName: System.Threading.SpinLock.TryEnter(System.Int32, ref System.Boolean)
+  fullName.vb: System.Threading.SpinLock.TryEnter(System.Int32, ByRef System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/SpinLock.cs
+    startLine: 255
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Attempts to acquire the lock in a reliable manner, such that even if an exception occurs within the method call, *lockTaken* can be examined reliably to determine whether the lock was acquired.
+  remarks: >-
+    Unlike @'System.Threading.SpinLock.Enter(System.Boolean@)', TryEnter will not block indefinitely waiting for the lock to be
+
+    available. It will block until either the lock is available or until the <paramref name="millisecondsTimeout" /> has expired.
+  syntax:
+    content: public void TryEnter(int millisecondsTimeout, ref bool lockTaken)
+    content.vb: Public Sub TryEnter(millisecondsTimeout As Integer, ByRef lockTaken As Boolean)
+    parameters:
+    - id: millisecondsTimeout
+      type: System.Int32
+      description: The number of milliseconds to wait, or @'System.Threading.Timeout.Infinite' (-1) to wait indefinitely.
+    - id: lockTaken
+      type: System.Boolean
+      description: True if the lock is acquired; otherwise, false. *lockTaken* must be initialized to false prior to calling this method.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*millisecondsTimeout* is a negative number other than -1, which represents an infinite time-out.'
+  - type: System.ArgumentException
+    description: The *lockTaken* argument must be initialized to false prior to calling TryEnter.
+  - type: System.Threading.LockRecursionException
+    description: Thread ownership tracking is enabled, and the current thread has already acquired this lock.
+- uid: System.Threading.SpinLock.Exit
+  id: Exit
+  parent: System.Threading.SpinLock
+  href: System.Threading.SpinLock.yml
+  name: Exit()
+  fullName: System.Threading.SpinLock.Exit()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/SpinLock.cs
+    startLine: 543
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Releases the lock.
+  remarks: The default overload of @'System.Threading.SpinLock.Exit' provides the same behavior as if calling @'System.Threading.SpinLock.Exit(System.Boolean)' using true as the argument, but Exit() could be slightly faster than Exit(true).
+  syntax:
+    content: public void Exit()
+    content.vb: Public Sub Exit
+  exceptions:
+  - type: System.Threading.SynchronizationLockException
+    description: Thread ownership tracking is enabled, and the current thread is not the owner of this lock.
+- uid: System.Threading.SpinLock.Exit(System.Boolean)
+  id: Exit(System.Boolean)
+  parent: System.Threading.SpinLock
+  href: System.Threading.SpinLock.yml
+  name: Exit(Boolean)
+  fullName: System.Threading.SpinLock.Exit(System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/SpinLock.cs
+    startLine: 574
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Releases the lock.
+  remarks: >-
+    Calling @'System.Threading.SpinLock.Exit(System.Boolean)' with the <paramref name="useMemoryBarrier" /> argument set to
+
+    true will improve the fairness of the lock at the expense of some performance. The default @'System.Threading.SpinLock.Enter(System.Boolean@)'
+
+    overload behaves as if specifying true for <paramref name="useMemoryBarrier" />.
+  syntax:
+    content: public void Exit(bool useMemoryBarrier)
+    content.vb: Public Sub Exit(useMemoryBarrier As Boolean)
+    parameters:
+    - id: useMemoryBarrier
+      type: System.Boolean
+      description: A Boolean value that indicates whether a memory fence should be issued in order to immediately publish the exit operation to other threads.
+  exceptions:
+  - type: System.Threading.SynchronizationLockException
+    description: Thread ownership tracking is enabled, and the current thread is not the owner of this lock.
+- uid: System.Threading.SpinLock.IsHeld
+  id: IsHeld
+  parent: System.Threading.SpinLock
+  href: System.Threading.SpinLock.yml
+  name: IsHeld
+  fullName: System.Threading.SpinLock.IsHeld
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/SpinLock.cs
+    startLine: 634
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Gets whether the lock is currently held by any thread.
+  syntax:
+    content: public bool IsHeld { get; }
+    content.vb: Public ReadOnly Property IsHeld As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Threading.SpinLock.IsHeldByCurrentThread
+  id: IsHeldByCurrentThread
+  parent: System.Threading.SpinLock
+  href: System.Threading.SpinLock.yml
+  name: IsHeldByCurrentThread
+  fullName: System.Threading.SpinLock.IsHeldByCurrentThread
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/SpinLock.cs
+    startLine: 660
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Gets whether the lock is held by the current thread.
+  remarks: >-
+    If the lock was initialized to track owner threads, this will return whether the lock is acquired
+
+    by the current thread. It is invalid to use this property when the lock was initialized to not
+
+    track thread ownership.
+  syntax:
+    content: public bool IsHeldByCurrentThread { get; }
+    content.vb: Public ReadOnly Property IsHeldByCurrentThread As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.InvalidOperationException
+    description: Thread ownership tracking is disabled.
+- uid: System.Threading.SpinLock.IsThreadOwnerTrackingEnabled
+  id: IsThreadOwnerTrackingEnabled
+  parent: System.Threading.SpinLock
+  href: System.Threading.SpinLock.yml
+  name: IsThreadOwnerTrackingEnabled
+  fullName: System.Threading.SpinLock.IsThreadOwnerTrackingEnabled
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/SpinLock.cs
+    startLine: 674
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Gets whether thread ownership tracking is enabled for this instance.
+  syntax:
+    content: public bool IsThreadOwnerTrackingEnabled { get; }
+    content.vb: Public ReadOnly Property IsThreadOwnerTrackingEnabled As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+references:
+- uid: System.Threading.Monitor
+  isExternal: false
+  href: System.Threading.Monitor.yml
+  name: Monitor
+  fullName: System.Threading.Monitor
+  type: Class
+- uid: System.Threading.SpinLock
+  isExternal: false
+  href: System.Threading.SpinLock.yml
+  name: SpinLock
+  fullName: System.Threading.SpinLock
+  type: Struct
+  summary: >-
+    Provides a mutual exclusion lock primitive where a thread trying to acquire the lock waits in a loop
+
+    repeatedly checking until the lock becomes available.
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Threading.SpinLock.IsThreadOwnerTrackingEnabled
+- uid: System.Threading.LockRecursionException
+  isExternal: false
+  href: System.Threading.LockRecursionException.yml
+  name: LockRecursionException
+  fullName: System.Threading.LockRecursionException
+  type: Class
+- uid: System.ArgumentException
+- uid: System.Threading.SpinLock.Enter(System.Boolean@)
+- uid: System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  fullName: System.TimeSpan
+- uid: System.ArgumentOutOfRangeException
+- uid: System.Threading.Timeout.Infinite
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Threading.SpinLock.Exit
+- uid: System.Threading.SpinLock.Exit(System.Boolean)
+- uid: System.Threading.SynchronizationLockException
+  isExternal: false
+  href: System.Threading.SynchronizationLockException.yml
+  name: SynchronizationLockException
+  fullName: System.Threading.SynchronizationLockException
+  type: Class
+- uid: System.InvalidOperationException

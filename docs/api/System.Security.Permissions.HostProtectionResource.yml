@@ -1,0 +1,227 @@
+items:
+- uid: System.Security.Permissions.HostProtectionResource
+  id: HostProtectionResource
+  parent: System.Security.Permissions
+  children:
+  - System.Security.Permissions.HostProtectionResource.All
+  - System.Security.Permissions.HostProtectionResource.ExternalProcessMgmt
+  - System.Security.Permissions.HostProtectionResource.ExternalThreading
+  - System.Security.Permissions.HostProtectionResource.MayLeakOnAbort
+  - System.Security.Permissions.HostProtectionResource.None
+  - System.Security.Permissions.HostProtectionResource.SecurityInfrastructure
+  - System.Security.Permissions.HostProtectionResource.SelfAffectingProcessMgmt
+  - System.Security.Permissions.HostProtectionResource.SelfAffectingThreading
+  - System.Security.Permissions.HostProtectionResource.SharedState
+  - System.Security.Permissions.HostProtectionResource.Synchronization
+  - System.Security.Permissions.HostProtectionResource.UI
+  href: System.Security.Permissions.HostProtectionResource.yml
+  name: HostProtectionResource
+  fullName: System.Security.Permissions.HostProtectionResource
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Security/Permissions/HostProtectionPermission.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Security/Permissions/HostProtectionPermission.cs
+    startLine: 19
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Specifies categories of functionality potentially harmful to the host if invoked by a method or class.
+  syntax:
+    content: public enum HostProtectionResource
+    content.vb: Public Enum HostProtectionResource
+- uid: System.Security.Permissions.HostProtectionResource.None
+  id: None
+  parent: System.Security.Permissions.HostProtectionResource
+  href: System.Security.Permissions.HostProtectionResource.yml
+  name: None
+  fullName: System.Security.Permissions.HostProtectionResource.None
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/HostProtectionPermission.cs
+    startLine: 24
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Exposes no host resources.
+  syntax:
+    content: None = 0
+- uid: System.Security.Permissions.HostProtectionResource.Synchronization
+  id: Synchronization
+  parent: System.Security.Permissions.HostProtectionResource
+  href: System.Security.Permissions.HostProtectionResource.yml
+  name: Synchronization
+  fullName: System.Security.Permissions.HostProtectionResource.Synchronization
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/HostProtectionPermission.cs
+    startLine: 26
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Exposes synchronization.
+  syntax:
+    content: Synchronization = 1
+- uid: System.Security.Permissions.HostProtectionResource.SharedState
+  id: SharedState
+  parent: System.Security.Permissions.HostProtectionResource
+  href: System.Security.Permissions.HostProtectionResource.yml
+  name: SharedState
+  fullName: System.Security.Permissions.HostProtectionResource.SharedState
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/HostProtectionPermission.cs
+    startLine: 27
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Exposes state that might be shared between threads.
+  syntax:
+    content: SharedState = 2
+- uid: System.Security.Permissions.HostProtectionResource.ExternalProcessMgmt
+  id: ExternalProcessMgmt
+  parent: System.Security.Permissions.HostProtectionResource
+  href: System.Security.Permissions.HostProtectionResource.yml
+  name: ExternalProcessMgmt
+  fullName: System.Security.Permissions.HostProtectionResource.ExternalProcessMgmt
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/HostProtectionPermission.cs
+    startLine: 28
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Might create or destroy other processes.
+  syntax:
+    content: ExternalProcessMgmt = 4
+- uid: System.Security.Permissions.HostProtectionResource.SelfAffectingProcessMgmt
+  id: SelfAffectingProcessMgmt
+  parent: System.Security.Permissions.HostProtectionResource
+  href: System.Security.Permissions.HostProtectionResource.yml
+  name: SelfAffectingProcessMgmt
+  fullName: System.Security.Permissions.HostProtectionResource.SelfAffectingProcessMgmt
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/HostProtectionPermission.cs
+    startLine: 29
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Might exit the current process, terminating the server.
+  syntax:
+    content: SelfAffectingProcessMgmt = 8
+- uid: System.Security.Permissions.HostProtectionResource.ExternalThreading
+  id: ExternalThreading
+  parent: System.Security.Permissions.HostProtectionResource
+  href: System.Security.Permissions.HostProtectionResource.yml
+  name: ExternalThreading
+  fullName: System.Security.Permissions.HostProtectionResource.ExternalThreading
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/HostProtectionPermission.cs
+    startLine: 30
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Creates or manipulates threads other than its own, which might be harmful to the host.
+  syntax:
+    content: ExternalThreading = 16
+- uid: System.Security.Permissions.HostProtectionResource.SelfAffectingThreading
+  id: SelfAffectingThreading
+  parent: System.Security.Permissions.HostProtectionResource
+  href: System.Security.Permissions.HostProtectionResource.yml
+  name: SelfAffectingThreading
+  fullName: System.Security.Permissions.HostProtectionResource.SelfAffectingThreading
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/HostProtectionPermission.cs
+    startLine: 31
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Manipulates threads in a way that only affects user code.
+  syntax:
+    content: SelfAffectingThreading = 32
+- uid: System.Security.Permissions.HostProtectionResource.SecurityInfrastructure
+  id: SecurityInfrastructure
+  parent: System.Security.Permissions.HostProtectionResource
+  href: System.Security.Permissions.HostProtectionResource.yml
+  name: SecurityInfrastructure
+  fullName: System.Security.Permissions.HostProtectionResource.SecurityInfrastructure
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/HostProtectionPermission.cs
+    startLine: 32
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Exposes the security infrastructure.
+  syntax:
+    content: SecurityInfrastructure = 64
+- uid: System.Security.Permissions.HostProtectionResource.UI
+  id: UI
+  parent: System.Security.Permissions.HostProtectionResource
+  href: System.Security.Permissions.HostProtectionResource.yml
+  name: UI
+  fullName: System.Security.Permissions.HostProtectionResource.UI
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/HostProtectionPermission.cs
+    startLine: 33
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Exposes the user interface.
+  syntax:
+    content: UI = 128
+- uid: System.Security.Permissions.HostProtectionResource.MayLeakOnAbort
+  id: MayLeakOnAbort
+  parent: System.Security.Permissions.HostProtectionResource
+  href: System.Security.Permissions.HostProtectionResource.yml
+  name: MayLeakOnAbort
+  fullName: System.Security.Permissions.HostProtectionResource.MayLeakOnAbort
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/HostProtectionPermission.cs
+    startLine: 34
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Might cause a resource leak on termination, if not protected by a safe handle or some other means of ensuring the release of resources.
+  syntax:
+    content: MayLeakOnAbort = 256
+- uid: System.Security.Permissions.HostProtectionResource.All
+  id: All
+  parent: System.Security.Permissions.HostProtectionResource
+  href: System.Security.Permissions.HostProtectionResource.yml
+  name: All
+  fullName: System.Security.Permissions.HostProtectionResource.All
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/HostProtectionPermission.cs
+    startLine: 36
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Exposes all host resources.
+  syntax:
+    content: All = 511
+references:
+- uid: System.Security.Permissions
+  isExternal: false
+  name: System.Security.Permissions
+  fullName: System.Security.Permissions
+  type: Namespace

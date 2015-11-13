@@ -1,0 +1,40 @@
+items:
+- uid: System.Action`1
+  id: Action`1
+  parent: System
+  children: []
+  href: System.Action`1.yml
+  name: Action<T>
+  name.vb: Action(Of T)
+  fullName: System.Action<T>
+  fullName.vb: System.Action(Of T)
+  type: Delegate
+  source:
+    remote:
+      path: src/mscorlib/src/System/Action.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Action.cs
+    startLine: 8
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Encapsulates a method that has a single parameter and does not return a value.To browse the .NET Framework source code for this type, see the Reference Source.
+  syntax:
+    content: public delegate void Action<in T>(T obj);
+    content.vb: Public Delegate Sub Action(Of In T)(obj As T)
+    parameters:
+    - id: obj
+      type: '{T}'
+      description: The parameter of the method that this delegate encapsulates.
+    typeParameters:
+    - id: T
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: '{T}'
+  isExternal: false
+  name: T
+  fullName: T

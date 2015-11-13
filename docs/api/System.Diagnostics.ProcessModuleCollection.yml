@@ -1,0 +1,658 @@
+items:
+- uid: System.Diagnostics.ProcessModuleCollection
+  id: ProcessModuleCollection
+  parent: System.Diagnostics
+  children:
+  - System.Diagnostics.ProcessModuleCollection.#ctor
+  - System.Diagnostics.ProcessModuleCollection.#ctor(System.Diagnostics.ProcessModule[])
+  - System.Diagnostics.ProcessModuleCollection.Contains(System.Diagnostics.ProcessModule)
+  - System.Diagnostics.ProcessModuleCollection.CopyTo(System.Diagnostics.ProcessModule[],System.Int32)
+  - System.Diagnostics.ProcessModuleCollection.Count
+  - System.Diagnostics.ProcessModuleCollection.GetEnumerator
+  - System.Diagnostics.ProcessModuleCollection.IndexOf(System.Diagnostics.ProcessModule)
+  - System.Diagnostics.ProcessModuleCollection.InnerList
+  - System.Diagnostics.ProcessModuleCollection.Item(System.Int32)
+  - System.Diagnostics.ProcessModuleCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  - System.Diagnostics.ProcessModuleCollection.System#Collections#ICollection#IsSynchronized
+  - System.Diagnostics.ProcessModuleCollection.System#Collections#ICollection#SyncRoot
+  href: System.Diagnostics.ProcessModuleCollection.yml
+  name: ProcessModuleCollection
+  fullName: System.Diagnostics.ProcessModuleCollection
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Diagnostics.Process/src/System/Diagnostics/ProcessModuleCollection.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/ProcessModuleCollection.cs
+    startLine: 11
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Provides a strongly typed collection of @'System.Diagnostics.ProcessModule' objects.
+  syntax:
+    content: 'public class ProcessModuleCollection : ICollection, IEnumerable'
+    content.vb: Public Class ProcessModuleCollection Implements ICollection, IEnumerable
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.ICollection
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Diagnostics.ProcessModuleCollection.#ctor
+  id: '#ctor'
+  parent: System.Diagnostics.ProcessModuleCollection
+  href: System.Diagnostics.ProcessModuleCollection.yml
+  name: ProcessModuleCollection()
+  fullName: System.Diagnostics.ProcessModuleCollection.ProcessModuleCollection()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/ProcessModuleCollection.cs
+    startLine: 18
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Initializes a new instance of the @'System.Diagnostics.ProcessModuleCollection' class, with no associated @'System.Diagnostics.ProcessModule' instances.
+  syntax:
+    content: protected ProcessModuleCollection()
+    content.vb: Protected Sub New
+- uid: System.Diagnostics.ProcessModuleCollection.#ctor(System.Diagnostics.ProcessModule[])
+  id: '#ctor(System.Diagnostics.ProcessModule[])'
+  parent: System.Diagnostics.ProcessModuleCollection
+  href: System.Diagnostics.ProcessModuleCollection.yml
+  name: ProcessModuleCollection(ProcessModule[])
+  name.vb: ProcessModuleCollection(ProcessModule())
+  fullName: System.Diagnostics.ProcessModuleCollection.ProcessModuleCollection(System.Diagnostics.ProcessModule[])
+  fullName.vb: System.Diagnostics.ProcessModuleCollection.ProcessModuleCollection(System.Diagnostics.ProcessModule())
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/ProcessModuleCollection.cs
+    startLine: 25
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Initializes a new instance of the @'System.Diagnostics.ProcessModuleCollection' class, using the specified array of @'System.Diagnostics.ProcessModule' instances.
+  syntax:
+    content: public ProcessModuleCollection(ProcessModule[] processModules)
+    content.vb: Public Sub New(processModules As ProcessModule())
+    parameters:
+    - id: processModules
+      type: System.Diagnostics.ProcessModule[]
+      description: An array of @'System.Diagnostics.ProcessModule' instances with which to initialize this @'System.Diagnostics.ProcessModuleCollection' instance.
+- uid: System.Diagnostics.ProcessModuleCollection.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: System.Diagnostics.ProcessModuleCollection
+  href: System.Diagnostics.ProcessModuleCollection.yml
+  name: Item[Int32]
+  name.vb: Item(Int32)
+  fullName: System.Diagnostics.ProcessModuleCollection.Item[System.Int32]
+  fullName.vb: System.Diagnostics.ProcessModuleCollection.Item(System.Int32)
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/ProcessModuleCollection.cs
+    startLine: 33
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets an index for iterating over the set of process modules.
+  syntax:
+    content: public ProcessModule this[int index] { get; }
+    content.vb: Public ReadOnly Property Item(index As Integer) As ProcessModule
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index value of the module in the collection.
+    return:
+      type: System.Diagnostics.ProcessModule
+- uid: System.Diagnostics.ProcessModuleCollection.InnerList
+  id: InnerList
+  parent: System.Diagnostics.ProcessModuleCollection
+  href: System.Diagnostics.ProcessModuleCollection.yml
+  name: InnerList
+  fullName: System.Diagnostics.ProcessModuleCollection.InnerList
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/ProcessModuleCollection.cs
+    startLine: 38
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  syntax:
+    content: protected List<ProcessModule> InnerList { get; }
+    content.vb: Protected ReadOnly Property InnerList As List(Of ProcessModule)
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.Diagnostics.ProcessModule}
+- uid: System.Diagnostics.ProcessModuleCollection.Count
+  id: Count
+  parent: System.Diagnostics.ProcessModuleCollection
+  href: System.Diagnostics.ProcessModuleCollection.yml
+  name: Count
+  fullName: System.Diagnostics.ProcessModuleCollection.Count
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/ProcessModuleCollection.cs
+    startLine: 48
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  syntax:
+    content: public virtual int Count { get; }
+    content.vb: Public Overridable ReadOnly Property Count As Integer
+    parameters: []
+    return:
+      type: System.Int32
+- uid: System.Diagnostics.ProcessModuleCollection.System#Collections#ICollection#IsSynchronized
+  id: System#Collections#ICollection#IsSynchronized
+  parent: System.Diagnostics.ProcessModuleCollection
+  href: System.Diagnostics.ProcessModuleCollection.yml
+  name: ICollection.IsSynchronized
+  name.vb: System.Collections.ICollection.IsSynchronized
+  fullName: System.Diagnostics.ProcessModuleCollection.System.Collections.ICollection.IsSynchronized
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/ProcessModuleCollection.cs
+    startLine: 53
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  syntax:
+    content: bool ICollection.IsSynchronized { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.ICollection.IsSynchronized As Boolean Implements ICollection.IsSynchronized
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Diagnostics.ProcessModuleCollection.System#Collections#ICollection#SyncRoot
+  id: System#Collections#ICollection#SyncRoot
+  parent: System.Diagnostics.ProcessModuleCollection
+  href: System.Diagnostics.ProcessModuleCollection.yml
+  name: ICollection.SyncRoot
+  name.vb: System.Collections.ICollection.SyncRoot
+  fullName: System.Diagnostics.ProcessModuleCollection.System.Collections.ICollection.SyncRoot
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/ProcessModuleCollection.cs
+    startLine: 58
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  syntax:
+    content: object ICollection.SyncRoot { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.ICollection.SyncRoot As Object Implements ICollection.SyncRoot
+    parameters: []
+    return:
+      type: System.Object
+- uid: System.Diagnostics.ProcessModuleCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  id: System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  parent: System.Diagnostics.ProcessModuleCollection
+  href: System.Diagnostics.ProcessModuleCollection.yml
+  name: ICollection.CopyTo(Array, Int32)
+  name.vb: System.Collections.ICollection.CopyTo(Array, Int32)
+  fullName: System.Diagnostics.ProcessModuleCollection.System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/ProcessModuleCollection.cs
+    startLine: 63
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  syntax:
+    content: void ICollection.CopyTo(Array array, int index)
+    content.vb: Sub System.Collections.ICollection.CopyTo(array As Array, index As Integer) Implements ICollection.CopyTo
+    parameters:
+    - id: array
+      type: System.Array
+    - id: index
+      type: System.Int32
+- uid: System.Diagnostics.ProcessModuleCollection.GetEnumerator
+  id: GetEnumerator
+  parent: System.Diagnostics.ProcessModuleCollection
+  href: System.Diagnostics.ProcessModuleCollection.yml
+  name: GetEnumerator()
+  fullName: System.Diagnostics.ProcessModuleCollection.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/ProcessModuleCollection.cs
+    startLine: 68
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  syntax:
+    content: public virtual IEnumerator GetEnumerator()
+    content.vb: Public Overridable Function GetEnumerator As IEnumerator
+    return:
+      type: System.Collections.IEnumerator
+- uid: System.Diagnostics.ProcessModuleCollection.IndexOf(System.Diagnostics.ProcessModule)
+  id: IndexOf(System.Diagnostics.ProcessModule)
+  parent: System.Diagnostics.ProcessModuleCollection
+  href: System.Diagnostics.ProcessModuleCollection.yml
+  name: IndexOf(ProcessModule)
+  fullName: System.Diagnostics.ProcessModuleCollection.IndexOf(System.Diagnostics.ProcessModule)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/ProcessModuleCollection.cs
+    startLine: 76
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Provides the location of a specified module within the collection.
+  syntax:
+    content: public int IndexOf(ProcessModule module)
+    content.vb: Public Function IndexOf(module As ProcessModule) As Integer
+    parameters:
+    - id: module
+      type: System.Diagnostics.ProcessModule
+      description: The @'System.Diagnostics.ProcessModule' whose index is retrieved.
+    return:
+      type: System.Int32
+- uid: System.Diagnostics.ProcessModuleCollection.Contains(System.Diagnostics.ProcessModule)
+  id: Contains(System.Diagnostics.ProcessModule)
+  parent: System.Diagnostics.ProcessModuleCollection
+  href: System.Diagnostics.ProcessModuleCollection.yml
+  name: Contains(ProcessModule)
+  fullName: System.Diagnostics.ProcessModuleCollection.Contains(System.Diagnostics.ProcessModule)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/ProcessModuleCollection.cs
+    startLine: 84
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Determines whether the specified process module exists in the collection.
+  syntax:
+    content: public bool Contains(ProcessModule module)
+    content.vb: Public Function Contains(module As ProcessModule) As Boolean
+    parameters:
+    - id: module
+      type: System.Diagnostics.ProcessModule
+      description: A @'System.Diagnostics.ProcessModule' instance that indicates the module to find in this collection.
+    return:
+      type: System.Boolean
+- uid: System.Diagnostics.ProcessModuleCollection.CopyTo(System.Diagnostics.ProcessModule[],System.Int32)
+  id: CopyTo(System.Diagnostics.ProcessModule[],System.Int32)
+  parent: System.Diagnostics.ProcessModuleCollection
+  href: System.Diagnostics.ProcessModuleCollection.yml
+  name: CopyTo(ProcessModule[], Int32)
+  name.vb: CopyTo(ProcessModule(), Int32)
+  fullName: System.Diagnostics.ProcessModuleCollection.CopyTo(System.Diagnostics.ProcessModule[], System.Int32)
+  fullName.vb: System.Diagnostics.ProcessModuleCollection.CopyTo(System.Diagnostics.ProcessModule(), System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/ProcessModuleCollection.cs
+    startLine: 92
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Copies an array of @'System.Diagnostics.ProcessModule' instances to the collection, at the specified index.
+  syntax:
+    content: public void CopyTo(ProcessModule[] array, int index)
+    content.vb: Public Sub CopyTo(array As ProcessModule(), index As Integer)
+    parameters:
+    - id: array
+      type: System.Diagnostics.ProcessModule[]
+      description: An array of @'System.Diagnostics.ProcessModule' instances to add to the collection.
+    - id: index
+      type: System.Int32
+      description: The location at which to add the new instances.
+references:
+- uid: System.Diagnostics
+  isExternal: false
+  name: System.Diagnostics
+  fullName: System.Diagnostics
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Diagnostics.ProcessModule[]
+  isExternal: false
+  href: System.Diagnostics.ProcessModule.yml
+  name: ProcessModule[]
+  name.vb: ProcessModule()
+  fullName: System.Diagnostics.ProcessModule[]
+  fullName.vb: System.Diagnostics.ProcessModule()
+  spec.csharp:
+  - uid: System.Diagnostics.ProcessModule
+    name: ProcessModule
+    fullName: System.Diagnostics.ProcessModule
+    href: System.Diagnostics.ProcessModule.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Diagnostics.ProcessModule
+    name: ProcessModule
+    fullName: System.Diagnostics.ProcessModule
+    href: System.Diagnostics.ProcessModule.yml
+  - name: ()
+    fullName: ()
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Diagnostics.ProcessModule
+  parent: System.Diagnostics
+  isExternal: false
+  href: System.Diagnostics.ProcessModule.yml
+  name: ProcessModule
+  fullName: System.Diagnostics.ProcessModule
+  type: Class
+- uid: System.Collections.Generic.List{System.Diagnostics.ProcessModule}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: System.Diagnostics.ProcessModule.yml
+  name: List<ProcessModule>
+  name.vb: List(Of ProcessModule)
+  fullName: System.Collections.Generic.List<System.Diagnostics.ProcessModule>
+  fullName.vb: System.Collections.Generic.List(Of System.Diagnostics.ProcessModule)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Diagnostics.ProcessModule
+    name: ProcessModule
+    fullName: System.Diagnostics.ProcessModule
+    href: System.Diagnostics.ProcessModule.yml
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Diagnostics.ProcessModule
+    name: ProcessModule
+    fullName: System.Diagnostics.ProcessModule
+    href: System.Diagnostics.ProcessModule.yml
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: List<T>
+  name.vb: List(Of T)
+  fullName: System.Collections.Generic.List<T>
+  fullName.vb: System.Collections.Generic.List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Array
+  parent: System
+  isExternal: true
+  name: Array
+  fullName: System.Array
+- uid: System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  isExternal: false
+  name: System.Collections
+  fullName: System.Collections

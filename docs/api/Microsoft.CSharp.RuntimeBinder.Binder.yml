@@ -1,0 +1,786 @@
+items:
+- uid: Microsoft.CSharp.RuntimeBinder.Binder
+  id: Binder
+  parent: Microsoft.CSharp.RuntimeBinder
+  children:
+  - Microsoft.CSharp.RuntimeBinder.Binder.BinaryOperation(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,ExpressionType,System.Type,System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo})
+  - Microsoft.CSharp.RuntimeBinder.Binder.Convert(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,System.Type,System.Type)
+  - Microsoft.CSharp.RuntimeBinder.Binder.GetIndex(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,System.Type,System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo})
+  - Microsoft.CSharp.RuntimeBinder.Binder.GetMember(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,System.String,System.Type,System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo})
+  - Microsoft.CSharp.RuntimeBinder.Binder.Invoke(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,System.Type,System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo})
+  - Microsoft.CSharp.RuntimeBinder.Binder.InvokeConstructor(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,System.Type,System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo})
+  - Microsoft.CSharp.RuntimeBinder.Binder.InvokeMember(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,System.String,System.Collections.Generic.IEnumerable{System.Type},System.Type,System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo})
+  - Microsoft.CSharp.RuntimeBinder.Binder.IsEvent(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,System.String,System.Type)
+  - Microsoft.CSharp.RuntimeBinder.Binder.SetIndex(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,System.Type,System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo})
+  - Microsoft.CSharp.RuntimeBinder.Binder.SetMember(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,System.String,System.Type,System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo})
+  - Microsoft.CSharp.RuntimeBinder.Binder.UnaryOperation(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,ExpressionType,System.Type,System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo})
+  href: Microsoft.CSharp.RuntimeBinder.Binder.yml
+  name: Binder
+  fullName: Microsoft.CSharp.RuntimeBinder.Binder
+  type: Class
+  source:
+    remote: &o0
+      path: src/Microsoft.CSharp/src/Microsoft/CSharp/RuntimeBinder/Binder.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/Microsoft.CSharp/src/Microsoft/CSharp/RuntimeBinder/Binder.cs
+    startLine: 14
+  assemblies:
+  - Microsoft.CSharp
+  namespace: Microsoft.CSharp.RuntimeBinder
+  summary: Contains factory methods to create dynamic call site binders for CSharp.
+  syntax:
+    content: public class Binder
+    content.vb: Public Class Binder
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Microsoft.CSharp.RuntimeBinder.Binder.BinaryOperation(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,ExpressionType,System.Type,System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo})
+  id: BinaryOperation(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,ExpressionType,System.Type,System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo})
+  parent: Microsoft.CSharp.RuntimeBinder.Binder
+  href: Microsoft.CSharp.RuntimeBinder.Binder.yml
+  name: BinaryOperation(CSharpBinderFlags, ExpressionType, Type, IEnumerable<CSharpArgumentInfo>)
+  name.vb: BinaryOperation(CSharpBinderFlags, ExpressionType, Type, IEnumerable(Of CSharpArgumentInfo))
+  fullName: Microsoft.CSharp.RuntimeBinder.Binder.BinaryOperation(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags, ExpressionType, System.Type, System.Collections.Generic.IEnumerable<Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo>)
+  fullName.vb: Microsoft.CSharp.RuntimeBinder.Binder.BinaryOperation(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags, ExpressionType, System.Type, System.Collections.Generic.IEnumerable(Of Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo))
+  type: Method
+  source:
+    remote: *o0
+    path: src/Microsoft.CSharp/src/Microsoft/CSharp/RuntimeBinder/Binder.cs
+    startLine: 27
+  assemblies:
+  - Microsoft.CSharp
+  namespace: Microsoft.CSharp.RuntimeBinder
+  summary: Initializes a new CSharp binary operation binder.
+  syntax:
+    content: public static CallSiteBinder BinaryOperation(CSharpBinderFlags flags, ExpressionType operation, Type context, IEnumerable<CSharpArgumentInfo> argumentInfo)
+    content.vb: Public Shared Function BinaryOperation(flags As CSharpBinderFlags, operation As ExpressionType, context As Type, argumentInfo As IEnumerable(Of CSharpArgumentInfo)) As CallSiteBinder
+    parameters:
+    - id: flags
+      type: Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags
+      description: The flags with which to initialize the binder.
+    - id: operation
+      type: ExpressionType
+      description: The binary operation kind.
+    - id: context
+      type: System.Type
+      description: The @'System.Type' that indicates where this operation is used.
+    - id: argumentInfo
+      type: System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo}
+      description: The sequence of @'Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo' instances for the arguments to this operation.
+    return:
+      type: CallSiteBinder
+      description: Returns a new CSharp binary operation binder.
+- uid: Microsoft.CSharp.RuntimeBinder.Binder.Convert(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,System.Type,System.Type)
+  id: Convert(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,System.Type,System.Type)
+  parent: Microsoft.CSharp.RuntimeBinder.Binder
+  href: Microsoft.CSharp.RuntimeBinder.Binder.yml
+  name: Convert(CSharpBinderFlags, Type, Type)
+  fullName: Microsoft.CSharp.RuntimeBinder.Binder.Convert(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags, System.Type, System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/Microsoft.CSharp/src/Microsoft/CSharp/RuntimeBinder/Binder.cs
+    startLine: 55
+  assemblies:
+  - Microsoft.CSharp
+  namespace: Microsoft.CSharp.RuntimeBinder
+  summary: Initializes a new CSharp convert binder.
+  syntax:
+    content: public static CallSiteBinder Convert(CSharpBinderFlags flags, Type type, Type context)
+    content.vb: Public Shared Function Convert(flags As CSharpBinderFlags, type As Type, context As Type) As CallSiteBinder
+    parameters:
+    - id: flags
+      type: Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags
+      description: The flags with which to initialize the binder.
+    - id: type
+      type: System.Type
+      description: The type to convert to.
+    - id: context
+      type: System.Type
+      description: The @'System.Type' that indicates where this operation is used.
+    return:
+      type: CallSiteBinder
+      description: Returns a new CSharp convert binder.
+- uid: Microsoft.CSharp.RuntimeBinder.Binder.GetIndex(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,System.Type,System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo})
+  id: GetIndex(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,System.Type,System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo})
+  parent: Microsoft.CSharp.RuntimeBinder.Binder
+  href: Microsoft.CSharp.RuntimeBinder.Binder.yml
+  name: GetIndex(CSharpBinderFlags, Type, IEnumerable<CSharpArgumentInfo>)
+  name.vb: GetIndex(CSharpBinderFlags, Type, IEnumerable(Of CSharpArgumentInfo))
+  fullName: Microsoft.CSharp.RuntimeBinder.Binder.GetIndex(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags, System.Type, System.Collections.Generic.IEnumerable<Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo>)
+  fullName.vb: Microsoft.CSharp.RuntimeBinder.Binder.GetIndex(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags, System.Type, System.Collections.Generic.IEnumerable(Of Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo))
+  type: Method
+  source:
+    remote: *o0
+    path: src/Microsoft.CSharp/src/Microsoft/CSharp/RuntimeBinder/Binder.cs
+    startLine: 81
+  assemblies:
+  - Microsoft.CSharp
+  namespace: Microsoft.CSharp.RuntimeBinder
+  summary: Initializes a new CSharp get index binder.
+  syntax:
+    content: public static CallSiteBinder GetIndex(CSharpBinderFlags flags, Type context, IEnumerable<CSharpArgumentInfo> argumentInfo)
+    content.vb: Public Shared Function GetIndex(flags As CSharpBinderFlags, context As Type, argumentInfo As IEnumerable(Of CSharpArgumentInfo)) As CallSiteBinder
+    parameters:
+    - id: flags
+      type: Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags
+      description: The flags with which to initialize the binder.
+    - id: context
+      type: System.Type
+      description: The @'System.Type' that indicates where this operation is used.
+    - id: argumentInfo
+      type: System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo}
+      description: The sequence of @'Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo' instances for the arguments to this operation.
+    return:
+      type: CallSiteBinder
+      description: Returns a new CSharp get index binder.
+- uid: Microsoft.CSharp.RuntimeBinder.Binder.GetMember(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,System.String,System.Type,System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo})
+  id: GetMember(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,System.String,System.Type,System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo})
+  parent: Microsoft.CSharp.RuntimeBinder.Binder
+  href: Microsoft.CSharp.RuntimeBinder.Binder.yml
+  name: GetMember(CSharpBinderFlags, String, Type, IEnumerable<CSharpArgumentInfo>)
+  name.vb: GetMember(CSharpBinderFlags, String, Type, IEnumerable(Of CSharpArgumentInfo))
+  fullName: Microsoft.CSharp.RuntimeBinder.Binder.GetMember(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags, System.String, System.Type, System.Collections.Generic.IEnumerable<Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo>)
+  fullName.vb: Microsoft.CSharp.RuntimeBinder.Binder.GetMember(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags, System.String, System.Type, System.Collections.Generic.IEnumerable(Of Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo))
+  type: Method
+  source:
+    remote: *o0
+    path: src/Microsoft.CSharp/src/Microsoft/CSharp/RuntimeBinder/Binder.cs
+    startLine: 99
+  assemblies:
+  - Microsoft.CSharp
+  namespace: Microsoft.CSharp.RuntimeBinder
+  summary: Initializes a new CSharp get member binder.
+  syntax:
+    content: public static CallSiteBinder GetMember(CSharpBinderFlags flags, string name, Type context, IEnumerable<CSharpArgumentInfo> argumentInfo)
+    content.vb: Public Shared Function GetMember(flags As CSharpBinderFlags, name As String, context As Type, argumentInfo As IEnumerable(Of CSharpArgumentInfo)) As CallSiteBinder
+    parameters:
+    - id: flags
+      type: Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags
+      description: The flags with which to initialize the binder.
+    - id: name
+      type: System.String
+      description: The name of the member to get.
+    - id: context
+      type: System.Type
+      description: The @'System.Type' that indicates where this operation is used.
+    - id: argumentInfo
+      type: System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo}
+      description: The sequence of @'Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo' instances for the arguments to this operation.
+    return:
+      type: CallSiteBinder
+      description: Returns a new CSharp get member binder.
+- uid: Microsoft.CSharp.RuntimeBinder.Binder.Invoke(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,System.Type,System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo})
+  id: Invoke(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,System.Type,System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo})
+  parent: Microsoft.CSharp.RuntimeBinder.Binder
+  href: Microsoft.CSharp.RuntimeBinder.Binder.yml
+  name: Invoke(CSharpBinderFlags, Type, IEnumerable<CSharpArgumentInfo>)
+  name.vb: Invoke(CSharpBinderFlags, Type, IEnumerable(Of CSharpArgumentInfo))
+  fullName: Microsoft.CSharp.RuntimeBinder.Binder.Invoke(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags, System.Type, System.Collections.Generic.IEnumerable<Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo>)
+  fullName.vb: Microsoft.CSharp.RuntimeBinder.Binder.Invoke(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags, System.Type, System.Collections.Generic.IEnumerable(Of Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo))
+  type: Method
+  source:
+    remote: *o0
+    path: src/Microsoft.CSharp/src/Microsoft/CSharp/RuntimeBinder/Binder.cs
+    startLine: 118
+  assemblies:
+  - Microsoft.CSharp
+  namespace: Microsoft.CSharp.RuntimeBinder
+  summary: Initializes a new CSharp invoke binder.
+  syntax:
+    content: public static CallSiteBinder Invoke(CSharpBinderFlags flags, Type context, IEnumerable<CSharpArgumentInfo> argumentInfo)
+    content.vb: Public Shared Function Invoke(flags As CSharpBinderFlags, context As Type, argumentInfo As IEnumerable(Of CSharpArgumentInfo)) As CallSiteBinder
+    parameters:
+    - id: flags
+      type: Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags
+      description: The flags with which to initialize the binder.
+    - id: context
+      type: System.Type
+      description: The @'System.Type' that indicates where this operation is used.
+    - id: argumentInfo
+      type: System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo}
+      description: The sequence of @'Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo' instances for the arguments to this operation.
+    return:
+      type: CallSiteBinder
+      description: Returns a new CSharp invoke binder.
+- uid: Microsoft.CSharp.RuntimeBinder.Binder.InvokeMember(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,System.String,System.Collections.Generic.IEnumerable{System.Type},System.Type,System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo})
+  id: InvokeMember(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,System.String,System.Collections.Generic.IEnumerable{System.Type},System.Type,System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo})
+  parent: Microsoft.CSharp.RuntimeBinder.Binder
+  href: Microsoft.CSharp.RuntimeBinder.Binder.yml
+  name: InvokeMember(CSharpBinderFlags, String, IEnumerable<Type>, Type, IEnumerable<CSharpArgumentInfo>)
+  name.vb: InvokeMember(CSharpBinderFlags, String, IEnumerable(Of Type), Type, IEnumerable(Of CSharpArgumentInfo))
+  fullName: Microsoft.CSharp.RuntimeBinder.Binder.InvokeMember(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags, System.String, System.Collections.Generic.IEnumerable<System.Type>, System.Type, System.Collections.Generic.IEnumerable<Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo>)
+  fullName.vb: Microsoft.CSharp.RuntimeBinder.Binder.InvokeMember(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags, System.String, System.Collections.Generic.IEnumerable(Of System.Type), System.Type, System.Collections.Generic.IEnumerable(Of Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo))
+  type: Method
+  source:
+    remote: *o0
+    path: src/Microsoft.CSharp/src/Microsoft/CSharp/RuntimeBinder/Binder.cs
+    startLine: 145
+  assemblies:
+  - Microsoft.CSharp
+  namespace: Microsoft.CSharp.RuntimeBinder
+  summary: Initializes a new CSharp invoke member binder.
+  syntax:
+    content: public static CallSiteBinder InvokeMember(CSharpBinderFlags flags, string name, IEnumerable<Type> typeArguments, Type context, IEnumerable<CSharpArgumentInfo> argumentInfo)
+    content.vb: Public Shared Function InvokeMember(flags As CSharpBinderFlags, name As String, typeArguments As IEnumerable(Of Type), context As Type, argumentInfo As IEnumerable(Of CSharpArgumentInfo)) As CallSiteBinder
+    parameters:
+    - id: flags
+      type: Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags
+      description: The flags with which to initialize the binder.
+    - id: name
+      type: System.String
+      description: The name of the member to invoke.
+    - id: typeArguments
+      type: System.Collections.Generic.IEnumerable{System.Type}
+      description: The list of type arguments specified for this invoke.
+    - id: context
+      type: System.Type
+      description: The @'System.Type' that indicates where this operation is used.
+    - id: argumentInfo
+      type: System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo}
+      description: The sequence of @'Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo' instances for the arguments to this operation.
+    return:
+      type: CallSiteBinder
+      description: Returns a new CSharp invoke member binder.
+- uid: Microsoft.CSharp.RuntimeBinder.Binder.InvokeConstructor(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,System.Type,System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo})
+  id: InvokeConstructor(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,System.Type,System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo})
+  parent: Microsoft.CSharp.RuntimeBinder.Binder
+  href: Microsoft.CSharp.RuntimeBinder.Binder.yml
+  name: InvokeConstructor(CSharpBinderFlags, Type, IEnumerable<CSharpArgumentInfo>)
+  name.vb: InvokeConstructor(CSharpBinderFlags, Type, IEnumerable(Of CSharpArgumentInfo))
+  fullName: Microsoft.CSharp.RuntimeBinder.Binder.InvokeConstructor(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags, System.Type, System.Collections.Generic.IEnumerable<Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo>)
+  fullName.vb: Microsoft.CSharp.RuntimeBinder.Binder.InvokeConstructor(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags, System.Type, System.Collections.Generic.IEnumerable(Of Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo))
+  type: Method
+  source:
+    remote: *o0
+    path: src/Microsoft.CSharp/src/Microsoft/CSharp/RuntimeBinder/Binder.cs
+    startLine: 182
+  assemblies:
+  - Microsoft.CSharp
+  namespace: Microsoft.CSharp.RuntimeBinder
+  summary: Initializes a new CSharp invoke constructor binder.
+  syntax:
+    content: public static CallSiteBinder InvokeConstructor(CSharpBinderFlags flags, Type context, IEnumerable<CSharpArgumentInfo> argumentInfo)
+    content.vb: Public Shared Function InvokeConstructor(flags As CSharpBinderFlags, context As Type, argumentInfo As IEnumerable(Of CSharpArgumentInfo)) As CallSiteBinder
+    parameters:
+    - id: flags
+      type: Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags
+      description: The flags with which to initialize the binder.
+    - id: context
+      type: System.Type
+      description: The @'System.Type' that indicates where this operation is used.
+    - id: argumentInfo
+      type: System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo}
+      description: The sequence of @'Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo' instances for the arguments to this operation.
+    return:
+      type: CallSiteBinder
+      description: Returns a new CSharp invoke constructor binder.
+- uid: Microsoft.CSharp.RuntimeBinder.Binder.IsEvent(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,System.String,System.Type)
+  id: IsEvent(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,System.String,System.Type)
+  parent: Microsoft.CSharp.RuntimeBinder.Binder
+  href: Microsoft.CSharp.RuntimeBinder.Binder.yml
+  name: IsEvent(CSharpBinderFlags, String, Type)
+  fullName: Microsoft.CSharp.RuntimeBinder.Binder.IsEvent(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags, System.String, System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/Microsoft.CSharp/src/Microsoft/CSharp/RuntimeBinder/Binder.cs
+    startLine: 199
+  assemblies:
+  - Microsoft.CSharp
+  namespace: Microsoft.CSharp.RuntimeBinder
+  summary: Initializes a new CSharp is event binder.
+  syntax:
+    content: public static CallSiteBinder IsEvent(CSharpBinderFlags flags, string name, Type context)
+    content.vb: Public Shared Function IsEvent(flags As CSharpBinderFlags, name As String, context As Type) As CallSiteBinder
+    parameters:
+    - id: flags
+      type: Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags
+      description: The flags with which to initialize the binder.
+    - id: name
+      type: System.String
+      description: The name of the event to look for.
+    - id: context
+      type: System.Type
+      description: The @'System.Type' that indicates where this operation is used.
+    return:
+      type: CallSiteBinder
+      description: Returns a new CSharp is event binder.
+- uid: Microsoft.CSharp.RuntimeBinder.Binder.SetIndex(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,System.Type,System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo})
+  id: SetIndex(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,System.Type,System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo})
+  parent: Microsoft.CSharp.RuntimeBinder.Binder
+  href: Microsoft.CSharp.RuntimeBinder.Binder.yml
+  name: SetIndex(CSharpBinderFlags, Type, IEnumerable<CSharpArgumentInfo>)
+  name.vb: SetIndex(CSharpBinderFlags, Type, IEnumerable(Of CSharpArgumentInfo))
+  fullName: Microsoft.CSharp.RuntimeBinder.Binder.SetIndex(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags, System.Type, System.Collections.Generic.IEnumerable<Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo>)
+  fullName.vb: Microsoft.CSharp.RuntimeBinder.Binder.SetIndex(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags, System.Type, System.Collections.Generic.IEnumerable(Of Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo))
+  type: Method
+  source:
+    remote: *o0
+    path: src/Microsoft.CSharp/src/Microsoft/CSharp/RuntimeBinder/Binder.cs
+    startLine: 216
+  assemblies:
+  - Microsoft.CSharp
+  namespace: Microsoft.CSharp.RuntimeBinder
+  summary: Initializes a new CSharp set index binder.
+  syntax:
+    content: public static CallSiteBinder SetIndex(CSharpBinderFlags flags, Type context, IEnumerable<CSharpArgumentInfo> argumentInfo)
+    content.vb: Public Shared Function SetIndex(flags As CSharpBinderFlags, context As Type, argumentInfo As IEnumerable(Of CSharpArgumentInfo)) As CallSiteBinder
+    parameters:
+    - id: flags
+      type: Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags
+      description: The flags with which to initialize the binder.
+    - id: context
+      type: System.Type
+      description: The @'System.Type' that indicates where this operation is used.
+    - id: argumentInfo
+      type: System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo}
+      description: The sequence of @'Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo' instances for the arguments to this operation.
+    return:
+      type: CallSiteBinder
+      description: Returns a new CSharp set index binder.
+- uid: Microsoft.CSharp.RuntimeBinder.Binder.SetMember(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,System.String,System.Type,System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo})
+  id: SetMember(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,System.String,System.Type,System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo})
+  parent: Microsoft.CSharp.RuntimeBinder.Binder
+  href: Microsoft.CSharp.RuntimeBinder.Binder.yml
+  name: SetMember(CSharpBinderFlags, String, Type, IEnumerable<CSharpArgumentInfo>)
+  name.vb: SetMember(CSharpBinderFlags, String, Type, IEnumerable(Of CSharpArgumentInfo))
+  fullName: Microsoft.CSharp.RuntimeBinder.Binder.SetMember(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags, System.String, System.Type, System.Collections.Generic.IEnumerable<Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo>)
+  fullName.vb: Microsoft.CSharp.RuntimeBinder.Binder.SetMember(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags, System.String, System.Type, System.Collections.Generic.IEnumerable(Of Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo))
+  type: Method
+  source:
+    remote: *o0
+    path: src/Microsoft.CSharp/src/Microsoft/CSharp/RuntimeBinder/Binder.cs
+    startLine: 236
+  assemblies:
+  - Microsoft.CSharp
+  namespace: Microsoft.CSharp.RuntimeBinder
+  summary: Initializes a new CSharp set member binder.
+  syntax:
+    content: public static CallSiteBinder SetMember(CSharpBinderFlags flags, string name, Type context, IEnumerable<CSharpArgumentInfo> argumentInfo)
+    content.vb: Public Shared Function SetMember(flags As CSharpBinderFlags, name As String, context As Type, argumentInfo As IEnumerable(Of CSharpArgumentInfo)) As CallSiteBinder
+    parameters:
+    - id: flags
+      type: Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags
+      description: The flags with which to initialize the binder.
+    - id: name
+      type: System.String
+      description: The name of the member to set.
+    - id: context
+      type: System.Type
+      description: The @'System.Type' that indicates where this operation is used.
+    - id: argumentInfo
+      type: System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo}
+      description: The sequence of @'Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo' instances for the arguments to this operation.
+    return:
+      type: CallSiteBinder
+      description: Returns a new CSharp set member binder.
+- uid: Microsoft.CSharp.RuntimeBinder.Binder.UnaryOperation(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,ExpressionType,System.Type,System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo})
+  id: UnaryOperation(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags,ExpressionType,System.Type,System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo})
+  parent: Microsoft.CSharp.RuntimeBinder.Binder
+  href: Microsoft.CSharp.RuntimeBinder.Binder.yml
+  name: UnaryOperation(CSharpBinderFlags, ExpressionType, Type, IEnumerable<CSharpArgumentInfo>)
+  name.vb: UnaryOperation(CSharpBinderFlags, ExpressionType, Type, IEnumerable(Of CSharpArgumentInfo))
+  fullName: Microsoft.CSharp.RuntimeBinder.Binder.UnaryOperation(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags, ExpressionType, System.Type, System.Collections.Generic.IEnumerable<Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo>)
+  fullName.vb: Microsoft.CSharp.RuntimeBinder.Binder.UnaryOperation(Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags, ExpressionType, System.Type, System.Collections.Generic.IEnumerable(Of Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo))
+  type: Method
+  source:
+    remote: *o0
+    path: src/Microsoft.CSharp/src/Microsoft/CSharp/RuntimeBinder/Binder.cs
+    startLine: 257
+  assemblies:
+  - Microsoft.CSharp
+  namespace: Microsoft.CSharp.RuntimeBinder
+  summary: Initializes a new CSharp unary operation binder.
+  syntax:
+    content: public static CallSiteBinder UnaryOperation(CSharpBinderFlags flags, ExpressionType operation, Type context, IEnumerable<CSharpArgumentInfo> argumentInfo)
+    content.vb: Public Shared Function UnaryOperation(flags As CSharpBinderFlags, operation As ExpressionType, context As Type, argumentInfo As IEnumerable(Of CSharpArgumentInfo)) As CallSiteBinder
+    parameters:
+    - id: flags
+      type: Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags
+      description: The flags with which to initialize the binder.
+    - id: operation
+      type: ExpressionType
+      description: The unary operation kind.
+    - id: context
+      type: System.Type
+      description: The @'System.Type' that indicates where this operation is used.
+    - id: argumentInfo
+      type: System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo}
+      description: The sequence of @'Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo' instances for the arguments to this operation.
+    return:
+      type: CallSiteBinder
+      description: Returns a new CSharp unary operation binder.
+references:
+- uid: Microsoft.CSharp.RuntimeBinder
+  isExternal: false
+  name: Microsoft.CSharp.RuntimeBinder
+  fullName: Microsoft.CSharp.RuntimeBinder
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  fullName: System.Type
+- uid: Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo
+  parent: Microsoft.CSharp.RuntimeBinder
+  isExternal: false
+  href: Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo.yml
+  name: CSharpArgumentInfo
+  fullName: Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo
+  type: Class
+  summary: >-
+    Represents information about C# dynamic operations that are specific to particular arguments at a call site.
+
+    Instances of this class are generated by the C# compiler.
+- uid: Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags
+  parent: Microsoft.CSharp.RuntimeBinder
+  isExternal: false
+  href: Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.yml
+  name: CSharpBinderFlags
+  fullName: Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags
+  type: Enum
+  summary: >-
+    Represents information about C# dynamic operations that are not specific to particular arguments at a call site.
+
+    Instances of this class are generated by the C# compiler.
+- uid: ExpressionType
+  isExternal: true
+  name: ExpressionType
+  fullName: ExpressionType
+- uid: System.Collections.Generic.IEnumerable{Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo.yml
+  name: IEnumerable<CSharpArgumentInfo>
+  name.vb: IEnumerable(Of CSharpArgumentInfo)
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo
+    name: CSharpArgumentInfo
+    fullName: Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo
+    href: Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo.yml
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo
+    name: CSharpArgumentInfo
+    fullName: Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo
+    href: Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo.yml
+  - name: )
+    fullName: )
+- uid: CallSiteBinder
+  isExternal: true
+  name: CallSiteBinder
+  fullName: CallSiteBinder
+- uid: System.Collections.Generic.IEnumerable`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Collections.Generic.IEnumerable{System.Type}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: System.Collections.Generic.IEnumerable`1.yml
+  name: IEnumerable<Type>
+  name.vb: IEnumerable(Of Type)
+  fullName: System.Collections.Generic.IEnumerable<System.Type>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Type)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    href: System.Collections.Generic.IEnumerable`1.yml
+  - name: <
+    fullName: <
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    href: System.Collections.Generic.IEnumerable`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: )
+    fullName: )

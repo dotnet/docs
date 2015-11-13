@@ -1,0 +1,48 @@
+items:
+- uid: System.EventHandler`1
+  id: EventHandler`1
+  parent: System
+  children: []
+  href: System.EventHandler`1.yml
+  name: EventHandler<TEventArgs>
+  name.vb: EventHandler(Of TEventArgs)
+  fullName: System.EventHandler<TEventArgs>
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  type: Delegate
+  source:
+    remote:
+      path: src/mscorlib/src/System/EventHandler.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/EventHandler.cs
+    startLine: 10
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Represents the method that will handle an event when the event provides data.
+  syntax:
+    content: public delegate void EventHandler<TEventArgs>(object sender, TEventArgs e);
+    content.vb: Public Delegate Sub EventHandler(Of TEventArgs)(sender As Object, e As TEventArgs)
+    parameters:
+    - id: sender
+      type: System.Object
+      description: The source of the event.
+    - id: e
+      type: '{TEventArgs}'
+      description: An object that contains the event data.
+    typeParameters:
+    - id: TEventArgs
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: '{TEventArgs}'
+  isExternal: false
+  name: TEventArgs
+  fullName: TEventArgs

@@ -1,0 +1,2160 @@
+items:
+- uid: System.Diagnostics.Process
+  id: Process
+  parent: System.Diagnostics
+  children:
+  - System.Diagnostics.Process.#ctor
+  - System.Diagnostics.Process.BasePriority
+  - System.Diagnostics.Process.BeginErrorReadLine
+  - System.Diagnostics.Process.BeginOutputReadLine
+  - System.Diagnostics.Process.CancelErrorRead
+  - System.Diagnostics.Process.CancelOutputRead
+  - System.Diagnostics.Process.Dispose
+  - System.Diagnostics.Process.Dispose(System.Boolean)
+  - System.Diagnostics.Process.EnableRaisingEvents
+  - System.Diagnostics.Process.EnterDebugMode
+  - System.Diagnostics.Process.ErrorDataReceived
+  - System.Diagnostics.Process.ExitCode
+  - System.Diagnostics.Process.Exited
+  - System.Diagnostics.Process.ExitTime
+  - System.Diagnostics.Process.GetCurrentProcess
+  - System.Diagnostics.Process.GetProcessById(System.Int32)
+  - System.Diagnostics.Process.GetProcessById(System.Int32,System.String)
+  - System.Diagnostics.Process.GetProcesses
+  - System.Diagnostics.Process.GetProcesses(System.String)
+  - System.Diagnostics.Process.GetProcessesByName(System.String)
+  - System.Diagnostics.Process.GetProcessesByName(System.String,System.String)
+  - System.Diagnostics.Process.HasExited
+  - System.Diagnostics.Process.Id
+  - System.Diagnostics.Process.Kill
+  - System.Diagnostics.Process.LeaveDebugMode
+  - System.Diagnostics.Process.MachineName
+  - System.Diagnostics.Process.MainModule
+  - System.Diagnostics.Process.MaxWorkingSet
+  - System.Diagnostics.Process.MinWorkingSet
+  - System.Diagnostics.Process.Modules
+  - System.Diagnostics.Process.NonpagedSystemMemorySize64
+  - System.Diagnostics.Process.OnExited
+  - System.Diagnostics.Process.OutputDataReceived
+  - System.Diagnostics.Process.PagedMemorySize64
+  - System.Diagnostics.Process.PagedSystemMemorySize64
+  - System.Diagnostics.Process.PeakPagedMemorySize64
+  - System.Diagnostics.Process.PeakVirtualMemorySize64
+  - System.Diagnostics.Process.PeakWorkingSet64
+  - System.Diagnostics.Process.PriorityBoostEnabled
+  - System.Diagnostics.Process.PriorityClass
+  - System.Diagnostics.Process.PrivateMemorySize64
+  - System.Diagnostics.Process.PrivilegedProcessorTime
+  - System.Diagnostics.Process.ProcessName
+  - System.Diagnostics.Process.ProcessorAffinity
+  - System.Diagnostics.Process.Refresh
+  - System.Diagnostics.Process.SafeHandle
+  - System.Diagnostics.Process.SessionId
+  - System.Diagnostics.Process.StandardError
+  - System.Diagnostics.Process.StandardInput
+  - System.Diagnostics.Process.StandardOutput
+  - System.Diagnostics.Process.Start
+  - System.Diagnostics.Process.Start(System.Diagnostics.ProcessStartInfo)
+  - System.Diagnostics.Process.Start(System.String)
+  - System.Diagnostics.Process.Start(System.String,System.String)
+  - System.Diagnostics.Process.Start(System.String,System.String,System.Security.SecureString,System.String)
+  - System.Diagnostics.Process.Start(System.String,System.String,System.String,System.Security.SecureString,System.String)
+  - System.Diagnostics.Process.StartInfo
+  - System.Diagnostics.Process.StartTime
+  - System.Diagnostics.Process.Threads
+  - System.Diagnostics.Process.ToString
+  - System.Diagnostics.Process.TotalProcessorTime
+  - System.Diagnostics.Process.UserProcessorTime
+  - System.Diagnostics.Process.VirtualMemorySize64
+  - System.Diagnostics.Process.WaitForExit
+  - System.Diagnostics.Process.WaitForExit(System.Int32)
+  - System.Diagnostics.Process.WorkingSet64
+  href: System.Diagnostics.Process.yml
+  name: Process
+  fullName: System.Diagnostics.Process
+  type: Class
+  source:
+    remote: &o1
+      path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.Windows.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.Windows.cs
+    startLine: 15
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Provides access to local and remote processes and enables you to start and stop local system processes.To browse the .NET Framework source code for this type, see the Reference Source.
+  syntax:
+    content: 'public class Process : IDisposable'
+    content.vb: Public Class Process Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Diagnostics.Process.OutputDataReceived
+  id: OutputDataReceived
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: OutputDataReceived
+  fullName: System.Diagnostics.Process.OutputDataReceived
+  type: Event
+  source:
+    remote: &o0
+      path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 70
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Occurs each time an application writes a line to its redirected @'System.Diagnostics.Process.StandardOutput' stream.
+  syntax:
+    content: public event DataReceivedEventHandler OutputDataReceived
+    content.vb: Public Event OutputDataReceived As DataReceivedEventHandler
+- uid: System.Diagnostics.Process.ErrorDataReceived
+  id: ErrorDataReceived
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: ErrorDataReceived
+  fullName: System.Diagnostics.Process.ErrorDataReceived
+  type: Event
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 71
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Occurs when an application writes to its redirected @'System.Diagnostics.Process.StandardError' stream.
+  syntax:
+    content: public event DataReceivedEventHandler ErrorDataReceived
+    content.vb: Public Event ErrorDataReceived As DataReceivedEventHandler
+- uid: System.Diagnostics.Process.#ctor
+  id: '#ctor'
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: Process()
+  fullName: System.Diagnostics.Process.Process()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 92
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Initializes a new instance of the @'System.Diagnostics.Process' class.
+  syntax:
+    content: public Process()
+    content.vb: Public Sub New
+- uid: System.Diagnostics.Process.SafeHandle
+  id: SafeHandle
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: SafeHandle
+  fullName: System.Diagnostics.Process.SafeHandle
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 110
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets the native handle to this process.
+  syntax:
+    content: public SafeProcessHandle SafeHandle { get; }
+    content.vb: Public ReadOnly Property SafeHandle As SafeProcessHandle
+    parameters: []
+    return:
+      type: Microsoft.Win32.SafeHandles.SafeProcessHandle
+- uid: System.Diagnostics.Process.BasePriority
+  id: BasePriority
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: BasePriority
+  fullName: System.Diagnostics.Process.BasePriority
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 134
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets the base priority of the associated process.
+  syntax:
+    content: public int BasePriority { get; }
+    content.vb: Public ReadOnly Property BasePriority As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  exceptions:
+  - type: System.PlatformNotSupportedException
+    description: The platform is Windows 98 or Windows Millennium Edition (Windows Me); set the @'System.Diagnostics.ProcessStartInfo.UseShellExecute' property to false to access this property on Windows 98 and Windows Me.
+  - type: System.InvalidOperationException
+    description: The process has exited.-or- The process has not started, so there is no process ID.
+- uid: System.Diagnostics.Process.ExitCode
+  id: ExitCode
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: ExitCode
+  fullName: System.Diagnostics.Process.ExitCode
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 150
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets the value that the associated process specified when it terminated.
+  syntax:
+    content: public int ExitCode { get; }
+    content.vb: Public ReadOnly Property ExitCode As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The process has not exited.-or- The process @'System.Diagnostics.Process.Handle' is not valid.
+  - type: System.NotSupportedException
+    description: You are trying to access the @'System.Diagnostics.Process.ExitCode' property for a process that is running on a remote computer. This property is available only for processes that are running on the local computer.
+- uid: System.Diagnostics.Process.HasExited
+  id: HasExited
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: HasExited
+  fullName: System.Diagnostics.Process.HasExited
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 165
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets a value indicating whether the associated process has been terminated.
+  syntax:
+    content: public bool HasExited { get; }
+    content.vb: Public ReadOnly Property HasExited As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.InvalidOperationException
+    description: There is no process associated with the object.
+  - type: System.ComponentModel.Win32Exception
+    description: The exit code for the process could not be retrieved.
+  - type: System.NotSupportedException
+    description: You are trying to access the @'System.Diagnostics.Process.HasExited' property for a process that is running on a remote computer. This property is available only for processes that are running on the local computer.
+- uid: System.Diagnostics.Process.ExitTime
+  id: ExitTime
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: ExitTime
+  fullName: System.Diagnostics.Process.ExitTime
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 187
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets the time that the associated process exited.
+  syntax:
+    content: public DateTime ExitTime { get; }
+    content.vb: Public ReadOnly Property ExitTime As Date
+    parameters: []
+    return:
+      type: System.DateTime
+  exceptions:
+  - type: System.PlatformNotSupportedException
+    description: The platform is Windows 98 or Windows Millennium Edition (Windows Me), which does not support this property.
+  - type: System.NotSupportedException
+    description: You are trying to access the @'System.Diagnostics.Process.ExitTime' property for a process that is running on a remote computer. This property is available only for processes that are running on the local computer.
+- uid: System.Diagnostics.Process.Id
+  id: Id
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: Id
+  fullName: System.Diagnostics.Process.Id
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 207
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets the unique identifier for the associated process.
+  syntax:
+    content: public int Id { get; }
+    content.vb: Public ReadOnly Property Id As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The process's @'System.Diagnostics.Process.Id' property has not been set.-or- There is no process associated with this @'System.Diagnostics.Process' object.
+  - type: System.PlatformNotSupportedException
+    description: The platform is Windows 98 or Windows Millennium Edition (Windows Me); set the @'System.Diagnostics.ProcessStartInfo.UseShellExecute' property to false to access this property on Windows 98 and Windows Me.
+- uid: System.Diagnostics.Process.MachineName
+  id: MachineName
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: MachineName
+  fullName: System.Diagnostics.Process.MachineName
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 222
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets the name of the computer the associated process is running on.
+  syntax:
+    content: public string MachineName { get; }
+    content.vb: Public ReadOnly Property MachineName As String
+    parameters: []
+    return:
+      type: System.String
+  exceptions:
+  - type: System.InvalidOperationException
+    description: There is no process associated with this @'System.Diagnostics.Process' object.
+- uid: System.Diagnostics.Process.MaxWorkingSet
+  id: MaxWorkingSet
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: MaxWorkingSet
+  fullName: System.Diagnostics.Process.MaxWorkingSet
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 237
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets or sets the maximum allowable working set size, in bytes, for the associated process.
+  syntax:
+    content: public IntPtr MaxWorkingSet { get; set; }
+    content.vb: Public Property MaxWorkingSet As IntPtr
+    parameters: []
+    return:
+      type: System.IntPtr
+  exceptions:
+  - type: System.ArgumentException
+    description: The maximum working set size is invalid. It must be greater than or equal to the minimum working set size.
+  - type: System.ComponentModel.Win32Exception
+    description: Working set information cannot be retrieved from the associated process resource.-or- The process identifier or process handle is zero because the process has not been started.
+  - type: System.NotSupportedException
+    description: You are trying to access the @'System.Diagnostics.Process.MaxWorkingSet' property for a process that is running on a remote computer. This property is available only for processes that are running on the local computer.
+  - type: System.InvalidOperationException
+    description: The process @'System.Diagnostics.Process.Id' is not available.-or- The process has exited.
+  - type: System.PlatformNotSupportedException
+    description: The platform is Windows 98 or Windows Millennium Edition (Windows Me), which does not support this property.
+- uid: System.Diagnostics.Process.MinWorkingSet
+  id: MinWorkingSet
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: MinWorkingSet
+  fullName: System.Diagnostics.Process.MinWorkingSet
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 256
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets or sets the minimum allowable working set size, in bytes, for the associated process.
+  syntax:
+    content: public IntPtr MinWorkingSet { get; set; }
+    content.vb: Public Property MinWorkingSet As IntPtr
+    parameters: []
+    return:
+      type: System.IntPtr
+  exceptions:
+  - type: System.ArgumentException
+    description: The minimum working set size is invalid. It must be less than or equal to the maximum working set size.
+  - type: System.ComponentModel.Win32Exception
+    description: Working set information cannot be retrieved from the associated process resource.-or- The process identifier or process handle is zero because the process has not been started.
+  - type: System.NotSupportedException
+    description: You are trying to access the @'System.Diagnostics.Process.MinWorkingSet' property for a process that is running on a remote computer. This property is available only for processes that are running on the local computer.
+  - type: System.InvalidOperationException
+    description: The process @'System.Diagnostics.Process.Id' is not available.-or- The process has exited.
+  - type: System.PlatformNotSupportedException
+    description: The platform is Windows 98 or Windows Millennium Edition (Windows Me), which does not support this property.
+- uid: System.Diagnostics.Process.Modules
+  id: Modules
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: Modules
+  fullName: System.Diagnostics.Process.Modules
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 269
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets the modules that have been loaded by the associated process.
+  syntax:
+    content: public ProcessModuleCollection Modules { get; }
+    content.vb: Public ReadOnly Property Modules As ProcessModuleCollection
+    parameters: []
+    return:
+      type: System.Diagnostics.ProcessModuleCollection
+  exceptions:
+  - type: System.NotSupportedException
+    description: You are attempting to access the @'System.Diagnostics.Process.Modules' property for a process that is running on a remote computer. This property is available only for processes that are running on the local computer.
+  - type: System.InvalidOperationException
+    description: The process @'System.Diagnostics.Process.Id' is not available.
+  - type: System.PlatformNotSupportedException
+    description: "The platform is Windows 98 or Windows Millennium Edition (Windows Me); set @'System.Diagnostics.ProcessStartInfo.UseShellExecute' to false to access this property on Windows 98 and Windows Me."
+  - type: System.ComponentModel.Win32Exception
+    description: You are attempting to access the @'System.Diagnostics.Process.Modules' property for either the system process or the idle process. These processes do not have modules.
+- uid: System.Diagnostics.Process.NonpagedSystemMemorySize64
+  id: NonpagedSystemMemorySize64
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: NonpagedSystemMemorySize64
+  fullName: System.Diagnostics.Process.NonpagedSystemMemorySize64
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 289
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets the amount of nonpaged system memory, in bytes, allocated for the associated process.
+  syntax:
+    content: public long NonpagedSystemMemorySize64 { get; }
+    content.vb: Public ReadOnly Property NonpagedSystemMemorySize64 As Long
+    parameters: []
+    return:
+      type: System.Int64
+  exceptions:
+  - type: System.PlatformNotSupportedException
+    description: The platform is Windows 98 or Windows Millennium Edition (Windows Me), which does not support this property.
+- uid: System.Diagnostics.Process.PagedMemorySize64
+  id: PagedMemorySize64
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: PagedMemorySize64
+  fullName: System.Diagnostics.Process.PagedMemorySize64
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 298
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets the amount of paged memory, in bytes, allocated for the associated process.
+  syntax:
+    content: public long PagedMemorySize64 { get; }
+    content.vb: Public ReadOnly Property PagedMemorySize64 As Long
+    parameters: []
+    return:
+      type: System.Int64
+  exceptions:
+  - type: System.PlatformNotSupportedException
+    description: The platform is Windows 98 or Windows Millennium Edition (Windows Me), which does not support this property.
+- uid: System.Diagnostics.Process.PagedSystemMemorySize64
+  id: PagedSystemMemorySize64
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: PagedSystemMemorySize64
+  fullName: System.Diagnostics.Process.PagedSystemMemorySize64
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 307
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets the amount of pageable system memory, in bytes, allocated for the associated process.
+  syntax:
+    content: public long PagedSystemMemorySize64 { get; }
+    content.vb: Public ReadOnly Property PagedSystemMemorySize64 As Long
+    parameters: []
+    return:
+      type: System.Int64
+  exceptions:
+  - type: System.PlatformNotSupportedException
+    description: The platform is Windows 98 or Windows Millennium Edition (Windows Me), which does not support this property.
+- uid: System.Diagnostics.Process.PeakPagedMemorySize64
+  id: PeakPagedMemorySize64
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: PeakPagedMemorySize64
+  fullName: System.Diagnostics.Process.PeakPagedMemorySize64
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 316
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets the maximum amount of memory in the virtual memory paging file, in bytes, used by the associated process.
+  syntax:
+    content: public long PeakPagedMemorySize64 { get; }
+    content.vb: Public ReadOnly Property PeakPagedMemorySize64 As Long
+    parameters: []
+    return:
+      type: System.Int64
+  exceptions:
+  - type: System.PlatformNotSupportedException
+    description: The platform is Windows 98 or Windows Millennium Edition (Windows Me), which does not support this property.
+- uid: System.Diagnostics.Process.PeakWorkingSet64
+  id: PeakWorkingSet64
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: PeakWorkingSet64
+  fullName: System.Diagnostics.Process.PeakWorkingSet64
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 325
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets the maximum amount of physical memory, in bytes, used by the associated process.
+  syntax:
+    content: public long PeakWorkingSet64 { get; }
+    content.vb: Public ReadOnly Property PeakWorkingSet64 As Long
+    parameters: []
+    return:
+      type: System.Int64
+  exceptions:
+  - type: System.PlatformNotSupportedException
+    description: The platform is Windows 98 or Windows Millennium Edition (Windows Me), which does not support this property.
+- uid: System.Diagnostics.Process.PeakVirtualMemorySize64
+  id: PeakVirtualMemorySize64
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: PeakVirtualMemorySize64
+  fullName: System.Diagnostics.Process.PeakVirtualMemorySize64
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 334
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets the maximum amount of virtual memory, in bytes, used by the associated process.
+  syntax:
+    content: public long PeakVirtualMemorySize64 { get; }
+    content.vb: Public ReadOnly Property PeakVirtualMemorySize64 As Long
+    parameters: []
+    return:
+      type: System.Int64
+  exceptions:
+  - type: System.PlatformNotSupportedException
+    description: The platform is Windows 98 or Windows Millennium Edition (Windows Me), which does not support this property.
+- uid: System.Diagnostics.Process.PriorityBoostEnabled
+  id: PriorityBoostEnabled
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: PriorityBoostEnabled
+  fullName: System.Diagnostics.Process.PriorityBoostEnabled
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 350
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets or sets a value indicating whether the associated process priority should temporarily be boosted by the operating system when the main window has the focus.
+  syntax:
+    content: public bool PriorityBoostEnabled { get; set; }
+    content.vb: Public Property PriorityBoostEnabled As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ComponentModel.Win32Exception
+    description: Priority boost information could not be retrieved from the associated process resource.
+  - type: System.PlatformNotSupportedException
+    description: The platform is Windows 98 or Windows Millennium Edition (Windows Me), which does not support this property.-or- The process identifier or process handle is zero. (The process has not been started.)
+  - type: System.NotSupportedException
+    description: You are attempting to access the @'System.Diagnostics.Process.PriorityBoostEnabled' property for a process that is running on a remote computer. This property is available only for processes that are running on the local computer.
+  - type: System.InvalidOperationException
+    description: The process @'System.Diagnostics.Process.Id' is not available.
+- uid: System.Diagnostics.Process.PriorityClass
+  id: PriorityClass
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: PriorityClass
+  fullName: System.Diagnostics.Process.PriorityClass
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 375
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets or sets the overall priority category for the associated process.
+  syntax:
+    content: public ProcessPriorityClass PriorityClass { get; set; }
+    content.vb: Public Property PriorityClass As ProcessPriorityClass
+    parameters: []
+    return:
+      type: System.Diagnostics.ProcessPriorityClass
+  exceptions:
+  - type: System.ComponentModel.Win32Exception
+    description: Process priority information could not be set or retrieved from the associated process resource.-or- The process identifier or process handle is zero. (The process has not been started.)
+  - type: System.NotSupportedException
+    description: You are attempting to access the @'System.Diagnostics.Process.PriorityClass' property for a process that is running on a remote computer. This property is available only for processes that are running on the local computer.
+  - type: System.InvalidOperationException
+    description: The process @'System.Diagnostics.Process.Id' is not available.
+  - type: System.PlatformNotSupportedException
+    description: You have set the @'System.Diagnostics.Process.PriorityClass' to AboveNormal or BelowNormal when using Windows 98 or Windows Millennium Edition (Windows Me). These platforms do not support those values for the priority class.
+  - type: System.ComponentModel.InvalidEnumArgumentException
+    description: Priority class cannot be set because it does not use a valid value, as defined in the @'System.Diagnostics.ProcessPriorityClass' enumeration.
+- uid: System.Diagnostics.Process.PrivateMemorySize64
+  id: PrivateMemorySize64
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: PrivateMemorySize64
+  fullName: System.Diagnostics.Process.PrivateMemorySize64
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 399
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets the amount of private memory, in bytes, allocated for the associated process.
+  syntax:
+    content: public long PrivateMemorySize64 { get; }
+    content.vb: Public ReadOnly Property PrivateMemorySize64 As Long
+    parameters: []
+    return:
+      type: System.Int64
+  exceptions:
+  - type: System.PlatformNotSupportedException
+    description: The platform is Windows 98 or Windows Millennium Edition (Windows Me), which does not support this property.
+- uid: System.Diagnostics.Process.ProcessName
+  id: ProcessName
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: ProcessName
+  fullName: System.Diagnostics.Process.ProcessName
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 414
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets the name of the process.
+  syntax:
+    content: public string ProcessName { get; }
+    content.vb: Public ReadOnly Property ProcessName As String
+    parameters: []
+    return:
+      type: System.String
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The process does not have an identifier, or no process is associated with the @'System.Diagnostics.Process'.-or- The associated process has exited.
+  - type: System.PlatformNotSupportedException
+    description: The platform is Windows 98 or Windows Millennium Edition (Windows Me); set @'System.Diagnostics.ProcessStartInfo.UseShellExecute' to false to access this property on Windows 98 and Windows Me.
+  - type: System.NotSupportedException
+    description: The process is not on this computer.
+- uid: System.Diagnostics.Process.ProcessorAffinity
+  id: ProcessorAffinity
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: ProcessorAffinity
+  fullName: System.Diagnostics.Process.ProcessorAffinity
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 429
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets or sets the processors on which the threads in this process can be scheduled to run.
+  syntax:
+    content: public IntPtr ProcessorAffinity { get; set; }
+    content.vb: Public Property ProcessorAffinity As IntPtr
+    parameters: []
+    return:
+      type: System.IntPtr
+  exceptions:
+  - type: System.ComponentModel.Win32Exception
+    description: '@''System.Diagnostics.Process.ProcessorAffinity'' information could not be set or retrieved from the associated process resource.-or- The process identifier or process handle is zero. (The process has not been started.)'
+  - type: System.NotSupportedException
+    description: You are attempting to access the @'System.Diagnostics.Process.ProcessorAffinity' property for a process that is running on a remote computer. This property is available only for processes that are running on the local computer.
+  - type: System.InvalidOperationException
+    description: The process @'System.Diagnostics.Process.Id' was not available.-or- The process has exited.
+- uid: System.Diagnostics.Process.SessionId
+  id: SessionId
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: SessionId
+  fullName: System.Diagnostics.Process.SessionId
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 448
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets the Terminal Services session identifier for the associated process.
+  syntax:
+    content: public int SessionId { get; }
+    content.vb: Public ReadOnly Property SessionId As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  exceptions:
+  - type: System.NullReferenceException
+    description: There is no session associated with this process.
+  - type: System.InvalidOperationException
+    description: There is no process associated with this session identifier.-or-The associated process is not on this machine.
+  - type: System.PlatformNotSupportedException
+    description: "The @'System.Diagnostics.Process.SessionId' property is not supported on Windows 98."
+- uid: System.Diagnostics.Process.StartInfo
+  id: StartInfo
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: StartInfo
+  fullName: System.Diagnostics.Process.StartInfo
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 463
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets or sets the properties to pass to the @'System.Diagnostics.Process.Start' method of the @'System.Diagnostics.Process'.
+  syntax:
+    content: public ProcessStartInfo StartInfo { get; set; }
+    content.vb: Public Property StartInfo As ProcessStartInfo
+    parameters: []
+    return:
+      type: System.Diagnostics.ProcessStartInfo
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The value that specifies the @'System.Diagnostics.Process.StartInfo' is null.
+- uid: System.Diagnostics.Process.Threads
+  id: Threads
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: Threads
+  fullName: System.Diagnostics.Process.Threads
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 500
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets the set of threads that are running in the associated process.
+  syntax:
+    content: public ProcessThreadCollection Threads { get; }
+    content.vb: Public ReadOnly Property Threads As ProcessThreadCollection
+    parameters: []
+    return:
+      type: System.Diagnostics.ProcessThreadCollection
+  exceptions:
+  - type: System.SystemException
+    description: The process does not have an @'System.Diagnostics.Process.Id', or no process is associated with the @'System.Diagnostics.Process' instance.-or- The associated process has exited.
+  - type: System.PlatformNotSupportedException
+    description: The platform is Windows 98 or Windows Millennium Edition (Windows Me); set @'System.Diagnostics.ProcessStartInfo.UseShellExecute' to false to access this property on Windows 98 and Windows Me.
+- uid: System.Diagnostics.Process.VirtualMemorySize64
+  id: VirtualMemorySize64
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: VirtualMemorySize64
+  fullName: System.Diagnostics.Process.VirtualMemorySize64
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 520
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets the amount of the virtual memory, in bytes, allocated for the associated process.
+  syntax:
+    content: public long VirtualMemorySize64 { get; }
+    content.vb: Public ReadOnly Property VirtualMemorySize64 As Long
+    parameters: []
+    return:
+      type: System.Int64
+  exceptions:
+  - type: System.PlatformNotSupportedException
+    description: The platform is Windows 98 or Windows Millennium Edition (Windows Me), which does not support this property.
+- uid: System.Diagnostics.Process.EnableRaisingEvents
+  id: EnableRaisingEvents
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: EnableRaisingEvents
+  fullName: System.Diagnostics.Process.EnableRaisingEvents
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 536
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets or sets whether the @'System.Diagnostics.Process.Exited' event should be raised when the process terminates.
+  syntax:
+    content: public bool EnableRaisingEvents { get; set; }
+    content.vb: Public Property EnableRaisingEvents As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Diagnostics.Process.StandardInput
+  id: StandardInput
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: StandardInput
+  fullName: System.Diagnostics.Process.StandardInput
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 567
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets a stream used to write the input of the application.
+  syntax:
+    content: public StreamWriter StandardInput { get; }
+    content.vb: Public ReadOnly Property StandardInput As StreamWriter
+    parameters: []
+    return:
+      type: System.IO.StreamWriter
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The @'System.Diagnostics.Process.StandardInput' stream has not been defined because @'System.Diagnostics.ProcessStartInfo.RedirectStandardInput' is set to false.
+- uid: System.Diagnostics.Process.StandardOutput
+  id: StandardOutput
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: StandardOutput
+  fullName: System.Diagnostics.Process.StandardOutput
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 583
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets a stream used to read the textual output of the application.
+  syntax:
+    content: public StreamReader StandardOutput { get; }
+    content.vb: Public ReadOnly Property StandardOutput As StreamReader
+    parameters: []
+    return:
+      type: System.IO.StreamReader
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The @'System.Diagnostics.Process.StandardOutput' stream has not been defined for redirection; ensure @'System.Diagnostics.ProcessStartInfo.RedirectStandardOutput' is set to true and @'System.Diagnostics.ProcessStartInfo.UseShellExecute' is set to false.- or - The @'System.Diagnostics.Process.StandardOutput' stream has been opened for asynchronous read operations with @'System.Diagnostics.Process.BeginOutputReadLine'.
+- uid: System.Diagnostics.Process.StandardError
+  id: StandardError
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: StandardError
+  fullName: System.Diagnostics.Process.StandardError
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 608
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets a stream used to read the error output of the application.
+  syntax:
+    content: public StreamReader StandardError { get; }
+    content.vb: Public ReadOnly Property StandardError As StreamReader
+    parameters: []
+    return:
+      type: System.IO.StreamReader
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The @'System.Diagnostics.Process.StandardError' stream has not been defined for redirection; ensure @'System.Diagnostics.ProcessStartInfo.RedirectStandardError' is set to true and @'System.Diagnostics.ProcessStartInfo.UseShellExecute' is set to false.- or - The @'System.Diagnostics.Process.StandardError' stream has been opened for asynchronous read operations with @'System.Diagnostics.Process.BeginErrorReadLine'.
+- uid: System.Diagnostics.Process.WorkingSet64
+  id: WorkingSet64
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: WorkingSet64
+  fullName: System.Diagnostics.Process.WorkingSet64
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 630
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets the amount of physical memory, in bytes, allocated for the associated process.
+  syntax:
+    content: public long WorkingSet64 { get; }
+    content.vb: Public ReadOnly Property WorkingSet64 As Long
+    parameters: []
+    return:
+      type: System.Int64
+  exceptions:
+  - type: System.PlatformNotSupportedException
+    description: The platform is Windows 98 or Windows Millennium Edition (Windows Me), which does not support this property.
+- uid: System.Diagnostics.Process.Exited
+  id: Exited
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: Exited
+  fullName: System.Diagnostics.Process.Exited
+  type: Event
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 639
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Occurs when a process exits.
+  syntax:
+    content: public event EventHandler Exited
+    content.vb: Public Event Exited As EventHandler
+- uid: System.Diagnostics.Process.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: Dispose(Boolean)
+  fullName: System.Diagnostics.Process.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 689
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Release all resources used by this process.
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: true to release both managed and unmanaged resources; false to release only unmanaged resources.
+- uid: System.Diagnostics.Process.GetProcessById(System.Int32,System.String)
+  id: GetProcessById(System.Int32,System.String)
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: GetProcessById(Int32, String)
+  fullName: System.Diagnostics.Process.GetProcessById(System.Int32, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 859
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Returns a new @'System.Diagnostics.Process' component, given a process identifier and the name of a computer on the network.
+  syntax:
+    content: public static Process GetProcessById(int processId, string machineName)
+    content.vb: Public Shared Function GetProcessById(processId As Integer, machineName As String) As Process
+    parameters:
+    - id: processId
+      type: System.Int32
+      description: The system-unique identifier of a process resource.
+    - id: machineName
+      type: System.String
+      description: The name of a computer on the network.
+    return:
+      type: System.Diagnostics.Process
+  exceptions:
+  - type: System.ArgumentException
+    description: The process specified by the *processId* parameter is not running. The identifier might be expired.-or- The *machineName* parameter syntax is invalid. The name might have length zero (0).
+  - type: System.ArgumentNullException
+    description: The *machineName* parameter is null.
+  - type: System.InvalidOperationException
+    description: The process was not started by this object.
+- uid: System.Diagnostics.Process.GetProcessById(System.Int32)
+  id: GetProcessById(System.Int32)
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: GetProcessById(Int32)
+  fullName: System.Diagnostics.Process.GetProcessById(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 875
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Returns a new @'System.Diagnostics.Process' component, given the identifier of a process on the local computer.
+  syntax:
+    content: public static Process GetProcessById(int processId)
+    content.vb: Public Shared Function GetProcessById(processId As Integer) As Process
+    parameters:
+    - id: processId
+      type: System.Int32
+      description: The system-unique identifier of a process resource.
+    return:
+      type: System.Diagnostics.Process
+  exceptions:
+  - type: System.ArgumentException
+    description: The process specified by the *processId* parameter is not running. The identifier might be expired.
+  - type: System.InvalidOperationException
+    description: The process was not started by this object.
+- uid: System.Diagnostics.Process.GetProcessesByName(System.String)
+  id: GetProcessesByName(System.String)
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: GetProcessesByName(String)
+  fullName: System.Diagnostics.Process.GetProcessesByName(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 888
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Creates an array of new @'System.Diagnostics.Process' components and associates them with all the process resources on the local computer that share the specified process name.
+  syntax:
+    content: public static Process[] GetProcessesByName(string processName)
+    content.vb: Public Shared Function GetProcessesByName(processName As String) As Process()
+    parameters:
+    - id: processName
+      type: System.String
+      description: The friendly name of the process.
+    return:
+      type: System.Diagnostics.Process[]
+  exceptions:
+  - type: System.InvalidOperationException
+    description: There are problems accessing the performance counter API's used to get process information. This exception is specific to Windows NT, Windows 2000, and Windows XP.
+- uid: System.Diagnostics.Process.GetProcessesByName(System.String,System.String)
+  id: GetProcessesByName(System.String,System.String)
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: GetProcessesByName(String, String)
+  fullName: System.Diagnostics.Process.GetProcessesByName(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 899
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Creates an array of new @'System.Diagnostics.Process' components and associates them with all the process resources on a remote computer that share the specified process name.
+  syntax:
+    content: public static Process[] GetProcessesByName(string processName, string machineName)
+    content.vb: Public Shared Function GetProcessesByName(processName As String, machineName As String) As Process()
+    parameters:
+    - id: processName
+      type: System.String
+      description: The friendly name of the process.
+    - id: machineName
+      type: System.String
+      description: The name of a computer on the network.
+    return:
+      type: System.Diagnostics.Process[]
+  exceptions:
+  - type: System.ArgumentException
+    description: The *machineName* parameter syntax is invalid. It might have length zero (0).
+  - type: System.ArgumentNullException
+    description: The *machineName* parameter is null.
+  - type: System.PlatformNotSupportedException
+    description: The operating system platform does not support this operation on remote computers.
+  - type: System.InvalidOperationException
+    description: There are problems accessing the performance counter API's used to get process information. This exception is specific to Windows NT, Windows 2000, and Windows XP.
+  - type: System.ComponentModel.Win32Exception
+    description: A problem occurred accessing an underlying system API.
+- uid: System.Diagnostics.Process.GetProcesses
+  id: GetProcesses
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: GetProcesses()
+  fullName: System.Diagnostics.Process.GetProcesses()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 928
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Creates a new @'System.Diagnostics.Process' component for each process resource on the local computer.
+  syntax:
+    content: public static Process[] GetProcesses()
+    content.vb: Public Shared Function GetProcesses As Process()
+    return:
+      type: System.Diagnostics.Process[]
+- uid: System.Diagnostics.Process.GetProcesses(System.String)
+  id: GetProcesses(System.String)
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: GetProcesses(String)
+  fullName: System.Diagnostics.Process.GetProcesses(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 940
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Creates a new @'System.Diagnostics.Process' component for each process resource on the specified computer.
+  syntax:
+    content: public static Process[] GetProcesses(string machineName)
+    content.vb: Public Shared Function GetProcesses(machineName As String) As Process()
+    parameters:
+    - id: machineName
+      type: System.String
+      description: The computer from which to read the list of processes.
+    return:
+      type: System.Diagnostics.Process[]
+  exceptions:
+  - type: System.ArgumentException
+    description: The *machineName* parameter syntax is invalid. It might have length zero (0).
+  - type: System.ArgumentNullException
+    description: The *machineName* parameter is null.
+  - type: System.PlatformNotSupportedException
+    description: The operating system platform does not support this operation on remote computers.
+  - type: System.InvalidOperationException
+    description: There are problems accessing the performance counter API's used to get process information. This exception is specific to Windows NT, Windows 2000, and Windows XP.
+  - type: System.ComponentModel.Win32Exception
+    description: A problem occurred accessing an underlying system API.
+- uid: System.Diagnostics.Process.GetCurrentProcess
+  id: GetCurrentProcess
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: GetCurrentProcess()
+  fullName: System.Diagnostics.Process.GetCurrentProcess()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 971
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets a new @'System.Diagnostics.Process' component and associates it with the currently active process.
+  syntax:
+    content: public static Process GetCurrentProcess()
+    content.vb: Public Shared Function GetCurrentProcess As Process
+    return:
+      type: System.Diagnostics.Process
+- uid: System.Diagnostics.Process.OnExited
+  id: OnExited
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: OnExited()
+  fullName: System.Diagnostics.Process.OnExited()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 981
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Raises the @'System.Diagnostics.Process.Exited' event.
+  syntax:
+    content: protected void OnExited()
+    content.vb: Protected Sub OnExited
+- uid: System.Diagnostics.Process.Refresh
+  id: Refresh
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: Refresh()
+  fullName: System.Diagnostics.Process.Refresh()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 1017
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Discards any information about the associated process that has been cached inside the process component.
+  syntax:
+    content: public void Refresh()
+    content.vb: Public Sub Refresh
+- uid: System.Diagnostics.Process.Start
+  id: Start
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: Start()
+  fullName: System.Diagnostics.Process.Start()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 1083
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Starts (or reuses) the process resource that is specified by the @'System.Diagnostics.Process.StartInfo' property of this @'System.Diagnostics.Process' component and associates it with the component.
+  syntax:
+    content: public bool Start()
+    content.vb: Public Function Start As Boolean
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.InvalidOperationException
+    description: No file name was specified in the @'System.Diagnostics.Process' component's @'System.Diagnostics.Process.StartInfo'.-or- The @'System.Diagnostics.ProcessStartInfo.UseShellExecute' member of the @'System.Diagnostics.Process.StartInfo' property is true while @'System.Diagnostics.ProcessStartInfo.RedirectStandardInput', @'System.Diagnostics.ProcessStartInfo.RedirectStandardOutput', or @'System.Diagnostics.ProcessStartInfo.RedirectStandardError' is true.
+  - type: System.ComponentModel.Win32Exception
+    description: There was an error in opening the associated file.
+  - type: System.ObjectDisposedException
+    description: The process object has already been disposed.
+- uid: System.Diagnostics.Process.Start(System.String,System.String,System.Security.SecureString,System.String)
+  id: Start(System.String,System.String,System.Security.SecureString,System.String)
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: Start(String, String, SecureString, String)
+  fullName: System.Diagnostics.Process.Start(System.String, System.String, System.Security.SecureString, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 1115
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Starts a process resource by specifying the name of an application, a user name, a password, and a domain and associates the resource with a new @'System.Diagnostics.Process' component.
+  syntax:
+    content: public static Process Start(string fileName, string userName, SecureString password, string domain)
+    content.vb: Public Shared Function Start(fileName As String, userName As String, password As SecureString, domain As String) As Process
+    parameters:
+    - id: fileName
+      type: System.String
+      description: The name of an application file to run in the process.
+    - id: userName
+      type: System.String
+      description: The user name to use when starting the process.
+    - id: password
+      type: System.Security.SecureString
+      description: A @'System.Security.SecureString' that contains the password to use when starting the process.
+    - id: domain
+      type: System.String
+      description: The domain to use when starting the process.
+    return:
+      type: System.Diagnostics.Process
+  exceptions:
+  - type: System.InvalidOperationException
+    description: No file name was specified.
+  - type: System.ComponentModel.Win32Exception
+    description: '*fileName* is not an executable (.exe) file.'
+  - type: System.ComponentModel.Win32Exception
+    description: There was an error in opening the associated file.
+  - type: System.ObjectDisposedException
+    description: The process object has already been disposed.
+- uid: System.Diagnostics.Process.Start(System.String,System.String,System.String,System.Security.SecureString,System.String)
+  id: Start(System.String,System.String,System.String,System.Security.SecureString,System.String)
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: Start(String, String, String, SecureString, String)
+  fullName: System.Diagnostics.Process.Start(System.String, System.String, System.String, System.Security.SecureString, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 1124
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Starts a process resource by specifying the name of an application, a set of command-line arguments, a user name, a password, and a domain and associates the resource with a new @'System.Diagnostics.Process' component.
+  syntax:
+    content: public static Process Start(string fileName, string arguments, string userName, SecureString password, string domain)
+    content.vb: Public Shared Function Start(fileName As String, arguments As String, userName As String, password As SecureString, domain As String) As Process
+    parameters:
+    - id: fileName
+      type: System.String
+      description: The name of an application file to run in the process.
+    - id: arguments
+      type: System.String
+      description: Command-line arguments to pass when starting the process.
+    - id: userName
+      type: System.String
+      description: The user name to use when starting the process.
+    - id: password
+      type: System.Security.SecureString
+      description: A @'System.Security.SecureString' that contains the password to use when starting the process.
+    - id: domain
+      type: System.String
+      description: The domain to use when starting the process.
+    return:
+      type: System.Diagnostics.Process
+  exceptions:
+  - type: System.InvalidOperationException
+    description: No file name was specified.
+  - type: System.ComponentModel.Win32Exception
+    description: '*fileName* is not an executable (.exe) file.'
+  - type: System.ComponentModel.Win32Exception
+    description: 'An error occurred when opening the associated file. -or-The sum of the length of the arguments and the length of the full path to the associated file exceeds 2080. The error message associated with this exception can be one of the following: "The data area passed to a system call is too small." or "Access is denied."'
+  - type: System.ObjectDisposedException
+    description: The process object has already been disposed.
+- uid: System.Diagnostics.Process.Start(System.String)
+  id: Start(System.String)
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: Start(String)
+  fullName: System.Diagnostics.Process.Start(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 1140
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Starts a process resource by specifying the name of a document or application file and associates the resource with a new @'System.Diagnostics.Process' component.
+  syntax:
+    content: public static Process Start(string fileName)
+    content.vb: Public Shared Function Start(fileName As String) As Process
+    parameters:
+    - id: fileName
+      type: System.String
+      description: The name of a document or application file to run in the process.
+    return:
+      type: System.Diagnostics.Process
+  exceptions:
+  - type: System.ComponentModel.Win32Exception
+    description: An error occurred when opening the associated file.
+  - type: System.ObjectDisposedException
+    description: The process object has already been disposed.
+  - type: System.IO.FileNotFoundException
+    description: The PATH environment variable has a string containing quotes.
+- uid: System.Diagnostics.Process.Start(System.String,System.String)
+  id: Start(System.String,System.String)
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: Start(String, String)
+  fullName: System.Diagnostics.Process.Start(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 1153
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Starts a process resource by specifying the name of an application and a set of command-line arguments, and associates the resource with a new @'System.Diagnostics.Process' component.
+  syntax:
+    content: public static Process Start(string fileName, string arguments)
+    content.vb: Public Shared Function Start(fileName As String, arguments As String) As Process
+    parameters:
+    - id: fileName
+      type: System.String
+      description: The name of an application file to run in the process.
+    - id: arguments
+      type: System.String
+      description: Command-line arguments to pass when starting the process.
+    return:
+      type: System.Diagnostics.Process
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The *fileName* or *arguments* parameter is null.
+  - type: System.ComponentModel.Win32Exception
+    description: 'An error occurred when opening the associated file. -or-The sum of the length of the arguments and the length of the full path to the process exceeds 2080. The error message associated with this exception can be one of the following: "The data area passed to a system call is too small." or "Access is denied."'
+  - type: System.ObjectDisposedException
+    description: The process object has already been disposed.
+  - type: System.IO.FileNotFoundException
+    description: The PATH environment variable has a string containing quotes.
+- uid: System.Diagnostics.Process.Start(System.Diagnostics.ProcessStartInfo)
+  id: Start(System.Diagnostics.ProcessStartInfo)
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: Start(ProcessStartInfo)
+  fullName: System.Diagnostics.Process.Start(System.Diagnostics.ProcessStartInfo)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 1166
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Starts the process resource that is specified by the parameter containing process start information (for example, the file name of the process to start) and associates the resource with a new @'System.Diagnostics.Process' component.
+  syntax:
+    content: public static Process Start(ProcessStartInfo startInfo)
+    content.vb: Public Shared Function Start(startInfo As ProcessStartInfo) As Process
+    parameters:
+    - id: startInfo
+      type: System.Diagnostics.ProcessStartInfo
+      description: The @'System.Diagnostics.ProcessStartInfo' that contains the information that is used to start the process, including the file name and any command-line arguments.
+    return:
+      type: System.Diagnostics.Process
+  exceptions:
+  - type: System.InvalidOperationException
+    description: No file name was specified in the *startInfo* parameter's @'System.Diagnostics.ProcessStartInfo.FileName' property.-or- The @'System.Diagnostics.ProcessStartInfo.UseShellExecute' property of the *startInfo* parameter is true and the @'System.Diagnostics.ProcessStartInfo.RedirectStandardInput', @'System.Diagnostics.ProcessStartInfo.RedirectStandardOutput', or @'System.Diagnostics.ProcessStartInfo.RedirectStandardError' property is also true.-or-The @'System.Diagnostics.ProcessStartInfo.UseShellExecute' property of the *startInfo* parameter is true and the @'System.Diagnostics.ProcessStartInfo.UserName' property is not null or empty or the @'System.Diagnostics.ProcessStartInfo.Password' property is not null.
+  - type: System.ArgumentNullException
+    description: The *startInfo* parameter is null.
+  - type: System.ObjectDisposedException
+    description: The process object has already been disposed.
+  - type: System.IO.FileNotFoundException
+    description: The file specified in the *startInfo* parameter's @'System.Diagnostics.ProcessStartInfo.FileName' property could not be found.
+  - type: System.ComponentModel.Win32Exception
+    description: 'An error occurred when opening the associated file. -or-The sum of the length of the arguments and the length of the full path to the process exceeds 2080. The error message associated with this exception can be one of the following: "The data area passed to a system call is too small." or "Access is denied."'
+- uid: System.Diagnostics.Process.ToString
+  id: ToString
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: ToString()
+  fullName: System.Diagnostics.Process.ToString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 1200
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Formats the process's name as a string, combined with the parent component type, if applicable.
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+  overridden: System.Object.ToString
+  exceptions:
+  - type: System.PlatformNotSupportedException
+    description: "@'System.Diagnostics.Process.ToString' is not supported on Windows 98."
+- uid: System.Diagnostics.Process.WaitForExit
+  id: WaitForExit
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: WaitForExit()
+  fullName: System.Diagnostics.Process.WaitForExit()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 1219
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Instructs the @'System.Diagnostics.Process' component to wait indefinitely for the associated process to exit.
+  syntax:
+    content: public void WaitForExit()
+    content.vb: Public Sub WaitForExit
+  exceptions:
+  - type: System.ComponentModel.Win32Exception
+    description: The wait setting could not be accessed.
+  - type: System.SystemException
+    description: No process @'System.Diagnostics.Process.Id' has been set, and a @'System.Diagnostics.Process.Handle' from which the @'System.Diagnostics.Process.Id' property can be determined does not exist.-or- There is no process associated with this @'System.Diagnostics.Process' object.-or- You are attempting to call @'System.Diagnostics.Process.WaitForExit' for a process that is running on a remote computer. This method is available only for processes that are running on the local computer.
+- uid: System.Diagnostics.Process.WaitForExit(System.Int32)
+  id: WaitForExit(System.Int32)
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: WaitForExit(Int32)
+  fullName: System.Diagnostics.Process.WaitForExit(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 1228
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Instructs the @'System.Diagnostics.Process' component to wait the specified number of milliseconds for the associated process to exit.
+  syntax:
+    content: public bool WaitForExit(int milliseconds)
+    content.vb: Public Function WaitForExit(milliseconds As Integer) As Boolean
+    parameters:
+    - id: milliseconds
+      type: System.Int32
+      description: The amount of time, in milliseconds, to wait for the associated process to exit. The maximum is the largest possible value of a 32-bit integer, which represents infinity to the operating system.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ComponentModel.Win32Exception
+    description: The wait setting could not be accessed.
+  - type: System.SystemException
+    description: No process @'System.Diagnostics.Process.Id' has been set, and a @'System.Diagnostics.Process.Handle' from which the @'System.Diagnostics.Process.Id' property can be determined does not exist.-or- There is no process associated with this @'System.Diagnostics.Process' object.-or- You are attempting to call @'System.Diagnostics.Process.WaitForExit(System.Int32)' for a process that is running on a remote computer. This method is available only for processes that are running on the local computer.
+- uid: System.Diagnostics.Process.BeginOutputReadLine
+  id: BeginOutputReadLine
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: BeginOutputReadLine()
+  fullName: System.Diagnostics.Process.BeginOutputReadLine()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 1246
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Begins asynchronous read operations on the redirected @'System.Diagnostics.Process.StandardOutput' stream of the application.
+  syntax:
+    content: public void BeginOutputReadLine()
+    content.vb: Public Sub BeginOutputReadLine
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The @'System.Diagnostics.ProcessStartInfo.RedirectStandardOutput' property is false.- or - An asynchronous read operation is already in progress on the @'System.Diagnostics.Process.StandardOutput' stream.- or - The @'System.Diagnostics.Process.StandardOutput' stream has been used by a synchronous read operation.
+- uid: System.Diagnostics.Process.BeginErrorReadLine
+  id: BeginErrorReadLine
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: BeginErrorReadLine()
+  fullName: System.Diagnostics.Process.BeginErrorReadLine()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 1284
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Begins asynchronous read operations on the redirected @'System.Diagnostics.Process.StandardError' stream of the application.
+  syntax:
+    content: public void BeginErrorReadLine()
+    content.vb: Public Sub BeginErrorReadLine
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The @'System.Diagnostics.ProcessStartInfo.RedirectStandardError' property is false.- or - An asynchronous read operation is already in progress on the @'System.Diagnostics.Process.StandardError' stream.- or - The @'System.Diagnostics.Process.StandardError' stream has been used by a synchronous read operation.
+- uid: System.Diagnostics.Process.CancelOutputRead
+  id: CancelOutputRead
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: CancelOutputRead()
+  fullName: System.Diagnostics.Process.CancelOutputRead()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 1321
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Cancels the asynchronous read operation on the redirected @'System.Diagnostics.Process.StandardOutput' stream of an application.
+  syntax:
+    content: public void CancelOutputRead()
+    content.vb: Public Sub CancelOutputRead
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The @'System.Diagnostics.Process.StandardOutput' stream is not enabled for asynchronous read operations.
+- uid: System.Diagnostics.Process.CancelErrorRead
+  id: CancelErrorRead
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: CancelErrorRead()
+  fullName: System.Diagnostics.Process.CancelErrorRead()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 1341
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Cancels the asynchronous read operation on the redirected @'System.Diagnostics.Process.StandardError' stream of an application.
+  syntax:
+    content: public void CancelErrorRead()
+    content.vb: Public Sub CancelErrorRead
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The @'System.Diagnostics.Process.StandardError' stream is not enabled for asynchronous read operations.
+- uid: System.Diagnostics.Process.Dispose
+  id: Dispose
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: Dispose()
+  fullName: System.Diagnostics.Process.Dispose()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.cs
+    startLine: 1377
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+- uid: System.Diagnostics.Process.EnterDebugMode
+  id: EnterDebugMode
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: EnterDebugMode()
+  fullName: System.Diagnostics.Process.EnterDebugMode()
+  type: Method
+  source:
+    remote: *o1
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.Windows.cs
+    startLine: 21
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Puts a @'System.Diagnostics.Process' component in state to interact with operating system processes that run in a special mode by enabling the native property SeDebugPrivilege on the current thread.
+  syntax:
+    content: public static void EnterDebugMode()
+    content.vb: Public Shared Sub EnterDebugMode
+- uid: System.Diagnostics.Process.LeaveDebugMode
+  id: LeaveDebugMode
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: LeaveDebugMode()
+  fullName: System.Diagnostics.Process.LeaveDebugMode()
+  type: Method
+  source:
+    remote: *o1
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.Windows.cs
+    startLine: 30
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Takes a @'System.Diagnostics.Process' component out of the state that lets it interact with operating system processes that run in a special mode.
+  syntax:
+    content: public static void LeaveDebugMode()
+    content.vb: Public Shared Sub LeaveDebugMode
+- uid: System.Diagnostics.Process.Kill
+  id: Kill
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: Kill()
+  fullName: System.Diagnostics.Process.Kill()
+  type: Method
+  source:
+    remote: *o1
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.Windows.cs
+    startLine: 36
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Immediately stops the associated process.
+  syntax:
+    content: public void Kill()
+    content.vb: Public Sub Kill
+  exceptions:
+  - type: System.ComponentModel.Win32Exception
+    description: The associated process could not be terminated. -or-The process is terminating.-or- The associated process is a Win16 executable.
+  - type: System.NotSupportedException
+    description: You are attempting to call @'System.Diagnostics.Process.Kill' for a process that is running on a remote computer. The method is available only for processes running on the local computer.
+  - type: System.InvalidOperationException
+    description: The process has already exited. -or-There is no process associated with this @'System.Diagnostics.Process' object.
+- uid: System.Diagnostics.Process.MainModule
+  id: MainModule
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: MainModule
+  fullName: System.Diagnostics.Process.MainModule
+  type: Property
+  source:
+    remote: *o1
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.Windows.cs
+    startLine: 118
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets the main module for the associated process.
+  syntax:
+    content: public ProcessModule MainModule { get; }
+    content.vb: Public ReadOnly Property MainModule As ProcessModule
+    parameters: []
+    return:
+      type: System.Diagnostics.ProcessModule
+  exceptions:
+  - type: System.NotSupportedException
+    description: You are trying to access the @'System.Diagnostics.Process.MainModule' property for a process that is running on a remote computer. This property is available only for processes that are running on the local computer.
+  - type: System.ComponentModel.Win32Exception
+    description: A 32-bit process is trying to access the modules of a 64-bit process.
+  - type: System.PlatformNotSupportedException
+    description: The platform is Windows 98 or Windows Millennium Edition (Windows Me); set @'System.Diagnostics.ProcessStartInfo.UseShellExecute' to false to access this property on Windows 98 and Windows Me.
+  - type: System.InvalidOperationException
+    description: The process @'System.Diagnostics.Process.Id' is not available.-or- The process has exited.
+- uid: System.Diagnostics.Process.PrivilegedProcessorTime
+  id: PrivilegedProcessorTime
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: PrivilegedProcessorTime
+  fullName: System.Diagnostics.Process.PrivilegedProcessorTime
+  type: Property
+  source:
+    remote: *o1
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.Windows.cs
+    startLine: 195
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets the privileged processor time for this process.
+  syntax:
+    content: public TimeSpan PrivilegedProcessorTime { get; }
+    content.vb: Public ReadOnly Property PrivilegedProcessorTime As TimeSpan
+    parameters: []
+    return:
+      type: System.TimeSpan
+  exceptions:
+  - type: System.PlatformNotSupportedException
+    description: The platform is Windows 98 or Windows Millennium Edition (Windows Me), which does not support this property.
+  - type: System.NotSupportedException
+    description: You are attempting to access the @'System.Diagnostics.Process.PrivilegedProcessorTime' property for a process that is running on a remote computer. This property is available only for processes that are running on the local computer.
+- uid: System.Diagnostics.Process.StartTime
+  id: StartTime
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: StartTime
+  fullName: System.Diagnostics.Process.StartTime
+  type: Property
+  source:
+    remote: *o1
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.Windows.cs
+    startLine: 201
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets the time that the associated process was started.
+  syntax:
+    content: public DateTime StartTime { get; }
+    content.vb: Public ReadOnly Property StartTime As Date
+    parameters: []
+    return:
+      type: System.DateTime
+  exceptions:
+  - type: System.PlatformNotSupportedException
+    description: The platform is Windows 98 or Windows Millennium Edition (Windows Me), which does not support this property.
+  - type: System.NotSupportedException
+    description: You are attempting to access the @'System.Diagnostics.Process.StartTime' property for a process that is running on a remote computer. This property is available only for processes that are running on the local computer.
+  - type: System.InvalidOperationException
+    description: The process has exited.-or-The process has not been started.
+  - type: System.ComponentModel.Win32Exception
+    description: An error occurred in the call to the Windows function.
+- uid: System.Diagnostics.Process.TotalProcessorTime
+  id: TotalProcessorTime
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: TotalProcessorTime
+  fullName: System.Diagnostics.Process.TotalProcessorTime
+  type: Property
+  source:
+    remote: *o1
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.Windows.cs
+    startLine: 211
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets the total processor time for this process.
+  syntax:
+    content: public TimeSpan TotalProcessorTime { get; }
+    content.vb: Public ReadOnly Property TotalProcessorTime As TimeSpan
+    parameters: []
+    return:
+      type: System.TimeSpan
+  exceptions:
+  - type: System.PlatformNotSupportedException
+    description: The platform is Windows 98 or Windows Millennium Edition (Windows Me), which does not support this property.
+  - type: System.NotSupportedException
+    description: You are attempting to access the @'System.Diagnostics.Process.TotalProcessorTime' property for a process that is running on a remote computer. This property is available only for processes that are running on the local computer.
+- uid: System.Diagnostics.Process.UserProcessorTime
+  id: UserProcessorTime
+  parent: System.Diagnostics.Process
+  href: System.Diagnostics.Process.yml
+  name: UserProcessorTime
+  fullName: System.Diagnostics.Process.UserProcessorTime
+  type: Property
+  source:
+    remote: *o1
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/Process.Windows.cs
+    startLine: 220
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets the user processor time for this process.
+  syntax:
+    content: public TimeSpan UserProcessorTime { get; }
+    content.vb: Public ReadOnly Property UserProcessorTime As TimeSpan
+    parameters: []
+    return:
+      type: System.TimeSpan
+  exceptions:
+  - type: System.PlatformNotSupportedException
+    description: The platform is Windows 98 or Windows Millennium Edition (Windows Me), which does not support this property.
+  - type: System.NotSupportedException
+    description: You are attempting to access the @'System.Diagnostics.Process.UserProcessorTime' property for a process that is running on a remote computer. This property is available only for processes that are running on the local computer.
+references:
+- uid: System.Diagnostics
+  isExternal: false
+  name: System.Diagnostics
+  fullName: System.Diagnostics
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: Microsoft.Win32.SafeHandles.SafeProcessHandle
+  isExternal: false
+  href: Microsoft.Win32.SafeHandles.SafeProcessHandle.yml
+  name: SafeProcessHandle
+  fullName: Microsoft.Win32.SafeHandles.SafeProcessHandle
+  type: Class
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  fullName: System.DateTime
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.IntPtr
+  parent: System
+  isExternal: true
+  name: IntPtr
+  fullName: System.IntPtr
+- uid: System.Diagnostics.ProcessModuleCollection
+  parent: System.Diagnostics
+  isExternal: false
+  href: System.Diagnostics.ProcessModuleCollection.yml
+  name: ProcessModuleCollection
+  fullName: System.Diagnostics.ProcessModuleCollection
+  type: Class
+- uid: System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  fullName: System.Int64
+- uid: System.Diagnostics.ProcessPriorityClass
+  parent: System.Diagnostics
+  isExternal: false
+  href: System.Diagnostics.ProcessPriorityClass.yml
+  name: ProcessPriorityClass
+  fullName: System.Diagnostics.ProcessPriorityClass
+  type: Enum
+- uid: System.Diagnostics.ProcessStartInfo
+  parent: System.Diagnostics
+  isExternal: false
+  href: System.Diagnostics.ProcessStartInfo.yml
+  name: ProcessStartInfo
+  fullName: System.Diagnostics.ProcessStartInfo
+  type: Class
+- uid: System.Diagnostics.ProcessThreadCollection
+  parent: System.Diagnostics
+  isExternal: false
+  href: System.Diagnostics.ProcessThreadCollection.yml
+  name: ProcessThreadCollection
+  fullName: System.Diagnostics.ProcessThreadCollection
+  type: Class
+- uid: System.IO.StreamWriter
+  parent: System.IO
+  isExternal: true
+  name: StreamWriter
+  fullName: System.IO.StreamWriter
+- uid: System.IO
+  isExternal: false
+  name: System.IO
+  fullName: System.IO
+- uid: System.IO.StreamReader
+  parent: System.IO
+  isExternal: true
+  name: StreamReader
+  fullName: System.IO.StreamReader
+- uid: System.Diagnostics.Process
+  parent: System.Diagnostics
+  isExternal: false
+  href: System.Diagnostics.Process.yml
+  name: Process
+  fullName: System.Diagnostics.Process
+  type: Class
+- uid: System.Diagnostics.Process[]
+  isExternal: false
+  href: System.Diagnostics.Process.yml
+  name: Process[]
+  name.vb: Process()
+  fullName: System.Diagnostics.Process[]
+  fullName.vb: System.Diagnostics.Process()
+  spec.csharp:
+  - uid: System.Diagnostics.Process
+    name: Process
+    fullName: System.Diagnostics.Process
+    href: System.Diagnostics.Process.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Diagnostics.Process
+    name: Process
+    fullName: System.Diagnostics.Process
+    href: System.Diagnostics.Process.yml
+  - name: ()
+    fullName: ()
+- uid: System.Security.SecureString
+  parent: System.Security
+  isExternal: false
+  href: System.Security.SecureString.yml
+  name: SecureString
+  fullName: System.Security.SecureString
+  type: Class
+- uid: System.Security
+  isExternal: false
+  name: System.Security
+  fullName: System.Security
+  type: Namespace
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Diagnostics.ProcessModule
+  parent: System.Diagnostics
+  isExternal: false
+  href: System.Diagnostics.ProcessModule.yml
+  name: ProcessModule
+  fullName: System.Diagnostics.ProcessModule
+  type: Class
+- uid: System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  fullName: System.TimeSpan
+- uid: System.Diagnostics.Process.UserProcessorTime
+- uid: System.Diagnostics.Process.PrivilegedProcessorTime

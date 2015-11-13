@@ -1,0 +1,875 @@
+items:
+- uid: System.Security.Cryptography.MD5
+  id: MD5
+  parent: System.Security.Cryptography
+  children:
+  - System.Security.Cryptography.MD5.#ctor
+  - System.Security.Cryptography.MD5.Create
+  href: System.Security.Cryptography.MD5.yml
+  name: MD5
+  fullName: System.Security.Cryptography.MD5
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Security.Cryptography.Hashing.Algorithms/src/System/Security/Cryptography/MD5.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Security.Cryptography.Hashing.Algorithms/src/System/Security/Cryptography/MD5.cs
+    startLine: 16
+  assemblies:
+  - System.Security.Cryptography.Hashing.Algorithms
+  namespace: System.Security.Cryptography
+  summary: Represents the abstract class from which all implementations of the @'System.Security.Cryptography.MD5' hash algorithm inherit.
+  syntax:
+    content: 'public abstract class MD5 : HashAlgorithm, ICryptoTransform, IDisposable'
+    content.vb: Public MustInherit Class MD5 Inherits HashAlgorithm Implements ICryptoTransform, IDisposable
+  inheritance:
+  - System.Object
+  - System.Security.Cryptography.HashAlgorithm
+  implements:
+  - System.Security.Cryptography.ICryptoTransform
+  - System.IDisposable
+  inheritedMembers:
+  - System.Security.Cryptography.HashAlgorithm.HashSizeValue
+  - System.Security.Cryptography.HashAlgorithm.HashValue
+  - System.Security.Cryptography.HashAlgorithm.State
+  - System.Security.Cryptography.HashAlgorithm.Create(System.String)
+  - System.Security.Cryptography.HashAlgorithm.ComputeHash(System.IO.Stream)
+  - System.Security.Cryptography.HashAlgorithm.ComputeHash(System.Byte[])
+  - System.Security.Cryptography.HashAlgorithm.ComputeHash(System.Byte[],System.Int32,System.Int32)
+  - System.Security.Cryptography.HashAlgorithm.TransformBlock(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)
+  - System.Security.Cryptography.HashAlgorithm.TransformFinalBlock(System.Byte[],System.Int32,System.Int32)
+  - System.Security.Cryptography.HashAlgorithm.Dispose
+  - System.Security.Cryptography.HashAlgorithm.Clear
+  - System.Security.Cryptography.HashAlgorithm.Dispose(System.Boolean)
+  - System.Security.Cryptography.HashAlgorithm.Initialize
+  - System.Security.Cryptography.HashAlgorithm.HashCore(System.Byte[],System.Int32,System.Int32)
+  - System.Security.Cryptography.HashAlgorithm.HashFinal
+  - System.Security.Cryptography.HashAlgorithm.HashSize
+  - System.Security.Cryptography.HashAlgorithm.Hash
+  - System.Security.Cryptography.HashAlgorithm.InputBlockSize
+  - System.Security.Cryptography.HashAlgorithm.OutputBlockSize
+  - System.Security.Cryptography.HashAlgorithm.CanTransformMultipleBlocks
+  - System.Security.Cryptography.HashAlgorithm.CanReuseTransform
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Security.Cryptography.MD5.#ctor
+  id: '#ctor'
+  parent: System.Security.Cryptography.MD5
+  href: System.Security.Cryptography.MD5.yml
+  name: MD5()
+  fullName: System.Security.Cryptography.MD5.MD5()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.Hashing.Algorithms/src/System/Security/Cryptography/MD5.cs
+    startLine: 18
+  assemblies:
+  - System.Security.Cryptography.Hashing.Algorithms
+  namespace: System.Security.Cryptography
+  summary: Initializes a new instance of @'System.Security.Cryptography.MD5'.
+  syntax:
+    content: protected MD5()
+    content.vb: Protected Sub New
+- uid: System.Security.Cryptography.MD5.Create
+  id: Create
+  parent: System.Security.Cryptography.MD5
+  href: System.Security.Cryptography.MD5.yml
+  name: Create()
+  fullName: System.Security.Cryptography.MD5.Create()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.Hashing.Algorithms/src/System/Security/Cryptography/MD5.cs
+    startLine: 22
+  assemblies:
+  - System.Security.Cryptography.Hashing.Algorithms
+  namespace: System.Security.Cryptography
+  summary: Creates an instance of the default implementation of the @'System.Security.Cryptography.MD5' hash algorithm.
+  syntax:
+    content: public static MD5 Create()
+    content.vb: Public Shared Function Create As MD5
+    return:
+      type: System.Security.Cryptography.MD5
+  exceptions:
+  - type: System.Reflection.TargetInvocationException
+    description: The algorithm was used with Federal Information Processing Standards (FIPS) mode enabled, but is not FIPS compatible.
+references:
+- uid: System.Security.Cryptography
+  isExternal: false
+  name: System.Security.Cryptography
+  fullName: System.Security.Cryptography
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Security.Cryptography.HashAlgorithm
+  parent: System.Security.Cryptography
+  isExternal: true
+  name: HashAlgorithm
+  fullName: System.Security.Cryptography.HashAlgorithm
+- uid: System.Security.Cryptography.HashAlgorithm.HashSizeValue
+  parent: System.Security.Cryptography.HashAlgorithm
+  isExternal: true
+  name: HashSizeValue
+  fullName: System.Security.Cryptography.HashAlgorithm.HashSizeValue
+- uid: System.Security.Cryptography.HashAlgorithm.HashValue
+  parent: System.Security.Cryptography.HashAlgorithm
+  isExternal: true
+  name: HashValue
+  fullName: System.Security.Cryptography.HashAlgorithm.HashValue
+- uid: System.Security.Cryptography.HashAlgorithm.State
+  parent: System.Security.Cryptography.HashAlgorithm
+  isExternal: true
+  name: State
+  fullName: System.Security.Cryptography.HashAlgorithm.State
+- uid: System.Security.Cryptography.HashAlgorithm.Create(System.String)
+  parent: System.Security.Cryptography.HashAlgorithm
+  isExternal: true
+  name: Create(String)
+  fullName: System.Security.Cryptography.HashAlgorithm.Create(System.String)
+  spec.csharp:
+  - uid: System.Security.Cryptography.HashAlgorithm.Create(System.String)
+    name: Create
+    fullName: System.Security.Cryptography.HashAlgorithm.Create
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.HashAlgorithm.Create(System.String)
+    name: Create
+    fullName: System.Security.Cryptography.HashAlgorithm.Create
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Security.Cryptography.HashAlgorithm.ComputeHash(System.IO.Stream)
+  parent: System.Security.Cryptography.HashAlgorithm
+  isExternal: true
+  name: ComputeHash(Stream)
+  fullName: System.Security.Cryptography.HashAlgorithm.ComputeHash(System.IO.Stream)
+  spec.csharp:
+  - uid: System.Security.Cryptography.HashAlgorithm.ComputeHash(System.IO.Stream)
+    name: ComputeHash
+    fullName: System.Security.Cryptography.HashAlgorithm.ComputeHash
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IO.Stream
+    name: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.HashAlgorithm.ComputeHash(System.IO.Stream)
+    name: ComputeHash
+    fullName: System.Security.Cryptography.HashAlgorithm.ComputeHash
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IO.Stream
+    name: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Security.Cryptography.HashAlgorithm.ComputeHash(System.Byte[])
+  parent: System.Security.Cryptography.HashAlgorithm
+  isExternal: true
+  name: ComputeHash(Byte[])
+  name.vb: ComputeHash(Byte())
+  fullName: System.Security.Cryptography.HashAlgorithm.ComputeHash(System.Byte[])
+  fullName.vb: System.Security.Cryptography.HashAlgorithm.ComputeHash(System.Byte())
+  spec.csharp:
+  - uid: System.Security.Cryptography.HashAlgorithm.ComputeHash(System.Byte[])
+    name: ComputeHash
+    fullName: System.Security.Cryptography.HashAlgorithm.ComputeHash
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.HashAlgorithm.ComputeHash(System.Byte[])
+    name: ComputeHash
+    fullName: System.Security.Cryptography.HashAlgorithm.ComputeHash
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+  - name: )
+    fullName: )
+- uid: System.Security.Cryptography.HashAlgorithm.ComputeHash(System.Byte[],System.Int32,System.Int32)
+  parent: System.Security.Cryptography.HashAlgorithm
+  isExternal: true
+  name: ComputeHash(Byte[], Int32, Int32)
+  name.vb: ComputeHash(Byte(), Int32, Int32)
+  fullName: System.Security.Cryptography.HashAlgorithm.ComputeHash(System.Byte[], System.Int32, System.Int32)
+  fullName.vb: System.Security.Cryptography.HashAlgorithm.ComputeHash(System.Byte(), System.Int32, System.Int32)
+  spec.csharp:
+  - uid: System.Security.Cryptography.HashAlgorithm.ComputeHash(System.Byte[],System.Int32,System.Int32)
+    name: ComputeHash
+    fullName: System.Security.Cryptography.HashAlgorithm.ComputeHash
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.HashAlgorithm.ComputeHash(System.Byte[],System.Int32,System.Int32)
+    name: ComputeHash
+    fullName: System.Security.Cryptography.HashAlgorithm.ComputeHash
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Security.Cryptography.HashAlgorithm.TransformBlock(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)
+  parent: System.Security.Cryptography.HashAlgorithm
+  isExternal: true
+  name: TransformBlock(Byte[], Int32, Int32, Byte[], Int32)
+  name.vb: TransformBlock(Byte(), Int32, Int32, Byte(), Int32)
+  fullName: System.Security.Cryptography.HashAlgorithm.TransformBlock(System.Byte[], System.Int32, System.Int32, System.Byte[], System.Int32)
+  fullName.vb: System.Security.Cryptography.HashAlgorithm.TransformBlock(System.Byte(), System.Int32, System.Int32, System.Byte(), System.Int32)
+  spec.csharp:
+  - uid: System.Security.Cryptography.HashAlgorithm.TransformBlock(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)
+    name: TransformBlock
+    fullName: System.Security.Cryptography.HashAlgorithm.TransformBlock
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.HashAlgorithm.TransformBlock(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)
+    name: TransformBlock
+    fullName: System.Security.Cryptography.HashAlgorithm.TransformBlock
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Security.Cryptography.HashAlgorithm.TransformFinalBlock(System.Byte[],System.Int32,System.Int32)
+  parent: System.Security.Cryptography.HashAlgorithm
+  isExternal: true
+  name: TransformFinalBlock(Byte[], Int32, Int32)
+  name.vb: TransformFinalBlock(Byte(), Int32, Int32)
+  fullName: System.Security.Cryptography.HashAlgorithm.TransformFinalBlock(System.Byte[], System.Int32, System.Int32)
+  fullName.vb: System.Security.Cryptography.HashAlgorithm.TransformFinalBlock(System.Byte(), System.Int32, System.Int32)
+  spec.csharp:
+  - uid: System.Security.Cryptography.HashAlgorithm.TransformFinalBlock(System.Byte[],System.Int32,System.Int32)
+    name: TransformFinalBlock
+    fullName: System.Security.Cryptography.HashAlgorithm.TransformFinalBlock
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.HashAlgorithm.TransformFinalBlock(System.Byte[],System.Int32,System.Int32)
+    name: TransformFinalBlock
+    fullName: System.Security.Cryptography.HashAlgorithm.TransformFinalBlock
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Security.Cryptography.HashAlgorithm.Dispose
+  parent: System.Security.Cryptography.HashAlgorithm
+  isExternal: true
+  name: Dispose()
+  fullName: System.Security.Cryptography.HashAlgorithm.Dispose()
+  spec.csharp:
+  - uid: System.Security.Cryptography.HashAlgorithm.Dispose
+    name: Dispose
+    fullName: System.Security.Cryptography.HashAlgorithm.Dispose
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.HashAlgorithm.Dispose
+    name: Dispose
+    fullName: System.Security.Cryptography.HashAlgorithm.Dispose
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Security.Cryptography.HashAlgorithm.Clear
+  parent: System.Security.Cryptography.HashAlgorithm
+  isExternal: true
+  name: Clear()
+  fullName: System.Security.Cryptography.HashAlgorithm.Clear()
+  spec.csharp:
+  - uid: System.Security.Cryptography.HashAlgorithm.Clear
+    name: Clear
+    fullName: System.Security.Cryptography.HashAlgorithm.Clear
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.HashAlgorithm.Clear
+    name: Clear
+    fullName: System.Security.Cryptography.HashAlgorithm.Clear
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Security.Cryptography.HashAlgorithm.Dispose(System.Boolean)
+  parent: System.Security.Cryptography.HashAlgorithm
+  isExternal: true
+  name: Dispose(Boolean)
+  fullName: System.Security.Cryptography.HashAlgorithm.Dispose(System.Boolean)
+  spec.csharp:
+  - uid: System.Security.Cryptography.HashAlgorithm.Dispose(System.Boolean)
+    name: Dispose
+    fullName: System.Security.Cryptography.HashAlgorithm.Dispose
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.HashAlgorithm.Dispose(System.Boolean)
+    name: Dispose
+    fullName: System.Security.Cryptography.HashAlgorithm.Dispose
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Security.Cryptography.HashAlgorithm.Initialize
+  parent: System.Security.Cryptography.HashAlgorithm
+  isExternal: true
+  name: Initialize()
+  fullName: System.Security.Cryptography.HashAlgorithm.Initialize()
+  spec.csharp:
+  - uid: System.Security.Cryptography.HashAlgorithm.Initialize
+    name: Initialize
+    fullName: System.Security.Cryptography.HashAlgorithm.Initialize
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.HashAlgorithm.Initialize
+    name: Initialize
+    fullName: System.Security.Cryptography.HashAlgorithm.Initialize
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Security.Cryptography.HashAlgorithm.HashCore(System.Byte[],System.Int32,System.Int32)
+  parent: System.Security.Cryptography.HashAlgorithm
+  isExternal: true
+  name: HashCore(Byte[], Int32, Int32)
+  name.vb: HashCore(Byte(), Int32, Int32)
+  fullName: System.Security.Cryptography.HashAlgorithm.HashCore(System.Byte[], System.Int32, System.Int32)
+  fullName.vb: System.Security.Cryptography.HashAlgorithm.HashCore(System.Byte(), System.Int32, System.Int32)
+  spec.csharp:
+  - uid: System.Security.Cryptography.HashAlgorithm.HashCore(System.Byte[],System.Int32,System.Int32)
+    name: HashCore
+    fullName: System.Security.Cryptography.HashAlgorithm.HashCore
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.HashAlgorithm.HashCore(System.Byte[],System.Int32,System.Int32)
+    name: HashCore
+    fullName: System.Security.Cryptography.HashAlgorithm.HashCore
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Security.Cryptography.HashAlgorithm.HashFinal
+  parent: System.Security.Cryptography.HashAlgorithm
+  isExternal: true
+  name: HashFinal()
+  fullName: System.Security.Cryptography.HashAlgorithm.HashFinal()
+  spec.csharp:
+  - uid: System.Security.Cryptography.HashAlgorithm.HashFinal
+    name: HashFinal
+    fullName: System.Security.Cryptography.HashAlgorithm.HashFinal
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.HashAlgorithm.HashFinal
+    name: HashFinal
+    fullName: System.Security.Cryptography.HashAlgorithm.HashFinal
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Security.Cryptography.HashAlgorithm.HashSize
+  parent: System.Security.Cryptography.HashAlgorithm
+  isExternal: true
+  name: HashSize
+  fullName: System.Security.Cryptography.HashAlgorithm.HashSize
+- uid: System.Security.Cryptography.HashAlgorithm.Hash
+  parent: System.Security.Cryptography.HashAlgorithm
+  isExternal: true
+  name: Hash
+  fullName: System.Security.Cryptography.HashAlgorithm.Hash
+- uid: System.Security.Cryptography.HashAlgorithm.InputBlockSize
+  parent: System.Security.Cryptography.HashAlgorithm
+  isExternal: true
+  name: InputBlockSize
+  fullName: System.Security.Cryptography.HashAlgorithm.InputBlockSize
+- uid: System.Security.Cryptography.HashAlgorithm.OutputBlockSize
+  parent: System.Security.Cryptography.HashAlgorithm
+  isExternal: true
+  name: OutputBlockSize
+  fullName: System.Security.Cryptography.HashAlgorithm.OutputBlockSize
+- uid: System.Security.Cryptography.HashAlgorithm.CanTransformMultipleBlocks
+  parent: System.Security.Cryptography.HashAlgorithm
+  isExternal: true
+  name: CanTransformMultipleBlocks
+  fullName: System.Security.Cryptography.HashAlgorithm.CanTransformMultipleBlocks
+- uid: System.Security.Cryptography.HashAlgorithm.CanReuseTransform
+  parent: System.Security.Cryptography.HashAlgorithm
+  isExternal: true
+  name: CanReuseTransform
+  fullName: System.Security.Cryptography.HashAlgorithm.CanReuseTransform
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Security.Cryptography.MD5
+  parent: System.Security.Cryptography
+  isExternal: false
+  href: System.Security.Cryptography.MD5.yml
+  name: MD5
+  fullName: System.Security.Cryptography.MD5
+  type: Class

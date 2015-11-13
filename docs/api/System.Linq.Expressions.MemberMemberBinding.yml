@@ -1,0 +1,481 @@
+items:
+- uid: System.Linq.Expressions.MemberMemberBinding
+  id: MemberMemberBinding
+  parent: System.Linq.Expressions
+  children:
+  - System.Linq.Expressions.MemberMemberBinding.Bindings
+  - System.Linq.Expressions.MemberMemberBinding.Update(System.Collections.Generic.IEnumerable{System.Linq.Expressions.MemberBinding})
+  href: System.Linq.Expressions.MemberMemberBinding.yml
+  name: MemberMemberBinding
+  fullName: System.Linq.Expressions.MemberMemberBinding
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Linq.Expressions/src/System/Linq/Expressions/MemberMemberBinding.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Linq.Expressions/src/System/Linq/Expressions/MemberMemberBinding.cs
+    startLine: 18
+  assemblies:
+  - System.Linq.Expressions
+  namespace: System.Linq.Expressions
+  summary: Represents initializing members of a member of a newly created object.
+  remarks: >-
+    Use the @'MemberBind' factory methods to create a @'System.Linq.Expressions.MemberMemberBinding'.
+
+    The value of the @'MemberBinding.BindingType' property of a @'System.Linq.Expressions.MemberMemberBinding' object is @'System.Linq.Expressions.MemberBinding'.
+  syntax:
+    content: 'public sealed class MemberMemberBinding : MemberBinding'
+    content.vb: Public NotInheritable Class MemberMemberBinding Inherits MemberBinding
+  inheritance:
+  - System.Object
+  - System.Linq.Expressions.MemberBinding
+  inheritedMembers:
+  - System.Linq.Expressions.MemberBinding.BindingType
+  - System.Linq.Expressions.MemberBinding.Member
+  - System.Linq.Expressions.MemberBinding.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Linq.Expressions.MemberMemberBinding.Bindings
+  id: Bindings
+  parent: System.Linq.Expressions.MemberMemberBinding
+  href: System.Linq.Expressions.MemberMemberBinding.yml
+  name: Bindings
+  fullName: System.Linq.Expressions.MemberMemberBinding.Bindings
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Linq.Expressions/src/System/Linq/Expressions/MemberMemberBinding.cs
+    startLine: 32
+  assemblies:
+  - System.Linq.Expressions
+  namespace: System.Linq.Expressions
+  summary: Gets the bindings that describe how to initialize the members of a member.
+  syntax:
+    content: public ReadOnlyCollection<MemberBinding> Bindings { get; }
+    content.vb: Public ReadOnly Property Bindings As ReadOnlyCollection(Of MemberBinding)
+    parameters: []
+    return:
+      type: System.Collections.ObjectModel.ReadOnlyCollection{System.Linq.Expressions.MemberBinding}
+- uid: System.Linq.Expressions.MemberMemberBinding.Update(System.Collections.Generic.IEnumerable{System.Linq.Expressions.MemberBinding})
+  id: Update(System.Collections.Generic.IEnumerable{System.Linq.Expressions.MemberBinding})
+  parent: System.Linq.Expressions.MemberMemberBinding
+  href: System.Linq.Expressions.MemberMemberBinding.yml
+  name: Update(IEnumerable<MemberBinding>)
+  name.vb: Update(IEnumerable(Of MemberBinding))
+  fullName: System.Linq.Expressions.MemberMemberBinding.Update(System.Collections.Generic.IEnumerable<System.Linq.Expressions.MemberBinding>)
+  fullName.vb: System.Linq.Expressions.MemberMemberBinding.Update(System.Collections.Generic.IEnumerable(Of System.Linq.Expressions.MemberBinding))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Linq.Expressions/src/System/Linq/Expressions/MemberMemberBinding.cs
+    startLine: 44
+  assemblies:
+  - System.Linq.Expressions
+  namespace: System.Linq.Expressions
+  summary: Creates a new expression that is like this one, but using the supplied children. If all of the children are the same, it will return this expression.
+  syntax:
+    content: public MemberMemberBinding Update(IEnumerable<MemberBinding> bindings)
+    content.vb: Public Function Update(bindings As IEnumerable(Of MemberBinding)) As MemberMemberBinding
+    parameters:
+    - id: bindings
+      type: System.Collections.Generic.IEnumerable{System.Linq.Expressions.MemberBinding}
+      description: The @'System.Linq.Expressions.MemberMemberBinding.Bindings' property of the result.
+    return:
+      type: System.Linq.Expressions.MemberMemberBinding
+      description: This expression if no children changed, or an expression with the updated children.
+references:
+- uid: MemberBind
+- uid: System.Linq.Expressions.MemberMemberBinding
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.MemberMemberBinding.yml
+  name: MemberMemberBinding
+  fullName: System.Linq.Expressions.MemberMemberBinding
+  type: Class
+  summary: Represents initializing members of a member of a newly created object.
+- uid: MemberBinding.BindingType
+- uid: System.Linq.Expressions.MemberBinding
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.MemberBinding.yml
+  name: MemberBinding
+  fullName: System.Linq.Expressions.MemberBinding
+  type: Class
+  summary: Provides the base class from which the classes that represent bindings that are used to initialize members of a newly created object derive.
+- uid: System.Linq.Expressions
+  isExternal: false
+  name: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Linq.Expressions.MemberBinding.BindingType
+  parent: System.Linq.Expressions.MemberBinding
+  isExternal: false
+  href: System.Linq.Expressions.MemberBinding.yml
+  name: BindingType
+  fullName: System.Linq.Expressions.MemberBinding.BindingType
+- uid: System.Linq.Expressions.MemberBinding.Member
+  parent: System.Linq.Expressions.MemberBinding
+  isExternal: false
+  href: System.Linq.Expressions.MemberBinding.yml
+  name: Member
+  fullName: System.Linq.Expressions.MemberBinding.Member
+- uid: System.Linq.Expressions.MemberBinding.ToString
+  parent: System.Linq.Expressions.MemberBinding
+  isExternal: false
+  href: System.Linq.Expressions.MemberBinding.yml
+  name: ToString()
+  fullName: System.Linq.Expressions.MemberBinding.ToString()
+  spec.csharp:
+  - uid: System.Linq.Expressions.MemberBinding.ToString
+    name: ToString
+    fullName: System.Linq.Expressions.MemberBinding.ToString
+    href: System.Linq.Expressions.MemberBinding.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.Expressions.MemberBinding.ToString
+    name: ToString
+    fullName: System.Linq.Expressions.MemberBinding.ToString
+    href: System.Linq.Expressions.MemberBinding.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{System.Linq.Expressions.MemberBinding}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1
+  href: System.Linq.Expressions.MemberBinding.yml
+  name: ReadOnlyCollection<MemberBinding>
+  name.vb: ReadOnlyCollection(Of MemberBinding)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<System.Linq.Expressions.MemberBinding>
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of System.Linq.Expressions.MemberBinding)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Linq.Expressions.MemberBinding
+    name: MemberBinding
+    fullName: System.Linq.Expressions.MemberBinding
+    href: System.Linq.Expressions.MemberBinding.yml
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Linq.Expressions.MemberBinding
+    name: MemberBinding
+    fullName: System.Linq.Expressions.MemberBinding
+    href: System.Linq.Expressions.MemberBinding.yml
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+  parent: System.Collections.ObjectModel
+  isExternal: true
+  name: ReadOnlyCollection<T>
+  name.vb: ReadOnlyCollection(Of T)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel
+  isExternal: false
+  name: System.Collections.ObjectModel
+  fullName: System.Collections.ObjectModel
+  type: Namespace
+- uid: System.Linq.Expressions.MemberMemberBinding.Bindings
+- uid: System.Collections.Generic.IEnumerable{System.Linq.Expressions.MemberBinding}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: System.Linq.Expressions.MemberBinding.yml
+  name: IEnumerable<MemberBinding>
+  name.vb: IEnumerable(Of MemberBinding)
+  fullName: System.Collections.Generic.IEnumerable<System.Linq.Expressions.MemberBinding>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Linq.Expressions.MemberBinding)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Linq.Expressions.MemberBinding
+    name: MemberBinding
+    fullName: System.Linq.Expressions.MemberBinding
+    href: System.Linq.Expressions.MemberBinding.yml
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Linq.Expressions.MemberBinding
+    name: MemberBinding
+    fullName: System.Linq.Expressions.MemberBinding
+    href: System.Linq.Expressions.MemberBinding.yml
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic

@@ -1,0 +1,100 @@
+items:
+- uid: System.LoaderOptimization
+  id: LoaderOptimization
+  parent: System
+  children:
+  - System.LoaderOptimization.MultiDomain
+  - System.LoaderOptimization.MultiDomainHost
+  - System.LoaderOptimization.NotSpecified
+  - System.LoaderOptimization.SingleDomain
+  href: System.LoaderOptimization.yml
+  name: LoaderOptimization
+  fullName: System.LoaderOptimization
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/AppDomainAttributes.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/AppDomainAttributes.cs
+    startLine: 14
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: An enumeration used with the @'System.LoaderOptimizationAttribute' class to specify loader optimizations for an executable.
+  syntax:
+    content: public enum LoaderOptimization
+    content.vb: Public Enum LoaderOptimization
+- uid: System.LoaderOptimization.NotSpecified
+  id: NotSpecified
+  parent: System.LoaderOptimization
+  href: System.LoaderOptimization.yml
+  name: NotSpecified
+  fullName: System.LoaderOptimization.NotSpecified
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AppDomainAttributes.cs
+    startLine: 18
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates that no optimizations for sharing internal resources are specified. If the default domain or hosting interface specified an optimization, then the loader uses that; otherwise, the loader uses @'System.LoaderOptimization.SingleDomain'.
+  syntax:
+    content: NotSpecified = 0
+- uid: System.LoaderOptimization.SingleDomain
+  id: SingleDomain
+  parent: System.LoaderOptimization
+  href: System.LoaderOptimization.yml
+  name: SingleDomain
+  fullName: System.LoaderOptimization.SingleDomain
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AppDomainAttributes.cs
+    startLine: 19
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates that the application will probably have a single domain, and loader must not share internal resources across application domains.
+  syntax:
+    content: SingleDomain = 1
+- uid: System.LoaderOptimization.MultiDomain
+  id: MultiDomain
+  parent: System.LoaderOptimization
+  href: System.LoaderOptimization.yml
+  name: MultiDomain
+  fullName: System.LoaderOptimization.MultiDomain
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AppDomainAttributes.cs
+    startLine: 20
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates that the application will probably have many domains that use the same code, and the loader must share maximal internal resources across application domains.
+  syntax:
+    content: MultiDomain = 2
+- uid: System.LoaderOptimization.MultiDomainHost
+  id: MultiDomainHost
+  parent: System.LoaderOptimization
+  href: System.LoaderOptimization.yml
+  name: MultiDomainHost
+  fullName: System.LoaderOptimization.MultiDomainHost
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AppDomainAttributes.cs
+    startLine: 21
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates that the application will probably host unique code in multiple domains, and the loader must share resources across application domains only for globally available (strong-named) assemblies that have been added to the global assembly cache.
+  syntax:
+    content: MultiDomainHost = 3
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

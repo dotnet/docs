@@ -1,0 +1,83 @@
+items:
+- uid: System.Runtime.InteropServices.ExporterEventKind
+  id: ExporterEventKind
+  parent: System.Runtime.InteropServices
+  children:
+  - System.Runtime.InteropServices.ExporterEventKind.ERROR_REFTOINVALIDASSEMBLY
+  - System.Runtime.InteropServices.ExporterEventKind.NOTIF_CONVERTWARNING
+  - System.Runtime.InteropServices.ExporterEventKind.NOTIF_TYPECONVERTED
+  href: System.Runtime.InteropServices.ExporterEventKind.yml
+  name: ExporterEventKind
+  fullName: System.Runtime.InteropServices.ExporterEventKind
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/InteropServices/ITypeLibConverter.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/InteropServices/ITypeLibConverter.cs
+    startLine: 66
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Describes the callbacks that the type library exporter makes when exporting a type library.
+  syntax:
+    content: public enum ExporterEventKind
+    content.vb: Public Enum ExporterEventKind
+- uid: System.Runtime.InteropServices.ExporterEventKind.NOTIF_TYPECONVERTED
+  id: NOTIF_TYPECONVERTED
+  parent: System.Runtime.InteropServices.ExporterEventKind
+  href: System.Runtime.InteropServices.ExporterEventKind.yml
+  name: NOTIF_TYPECONVERTED
+  fullName: System.Runtime.InteropServices.ExporterEventKind.NOTIF_TYPECONVERTED
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ITypeLibConverter.cs
+    startLine: 70
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Specifies that the event is invoked when a type has been exported.
+  syntax:
+    content: NOTIF_TYPECONVERTED = 0
+- uid: System.Runtime.InteropServices.ExporterEventKind.NOTIF_CONVERTWARNING
+  id: NOTIF_CONVERTWARNING
+  parent: System.Runtime.InteropServices.ExporterEventKind
+  href: System.Runtime.InteropServices.ExporterEventKind.yml
+  name: NOTIF_CONVERTWARNING
+  fullName: System.Runtime.InteropServices.ExporterEventKind.NOTIF_CONVERTWARNING
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ITypeLibConverter.cs
+    startLine: 71
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Specifies that the event is invoked when a warning occurs during conversion.
+  syntax:
+    content: NOTIF_CONVERTWARNING = 1
+- uid: System.Runtime.InteropServices.ExporterEventKind.ERROR_REFTOINVALIDASSEMBLY
+  id: ERROR_REFTOINVALIDASSEMBLY
+  parent: System.Runtime.InteropServices.ExporterEventKind
+  href: System.Runtime.InteropServices.ExporterEventKind.yml
+  name: ERROR_REFTOINVALIDASSEMBLY
+  fullName: System.Runtime.InteropServices.ExporterEventKind.ERROR_REFTOINVALIDASSEMBLY
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ITypeLibConverter.cs
+    startLine: 72
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: This value is not supported in this version of the .NET Framework.
+  syntax:
+    content: ERROR_REFTOINVALIDASSEMBLY = 2
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace

@@ -1,0 +1,576 @@
+items:
+- uid: System.Threading
+  id: System.Threading
+  children:
+  - System.Threading.AbandonedMutexException
+  - System.Threading.ApartmentState
+  - System.Threading.AsyncLocal`1
+  - System.Threading.AsyncLocalValueChangedArgs`1
+  - System.Threading.AutoResetEvent
+  - System.Threading.Barrier
+  - System.Threading.BarrierPostPhaseException
+  - System.Threading.CancellationToken
+  - System.Threading.CancellationTokenRegistration
+  - System.Threading.CancellationTokenSource
+  - System.Threading.ContextCallback
+  - System.Threading.CountdownEvent
+  - System.Threading.EventResetMode
+  - System.Threading.EventWaitHandle
+  - System.Threading.ExecutionContext
+  - System.Threading.Interlocked
+  - System.Threading.IOCompletionCallback
+  - System.Threading.LazyInitializer
+  - System.Threading.LazyThreadSafetyMode
+  - System.Threading.LockCookie
+  - System.Threading.LockRecursionException
+  - System.Threading.LockRecursionPolicy
+  - System.Threading.ManualResetEvent
+  - System.Threading.ManualResetEventSlim
+  - System.Threading.Monitor
+  - System.Threading.Mutex
+  - System.Threading.Mutex.MutexRights
+  - System.Threading.Mutex.MutexSecurity
+  - System.Threading.NativeOverlapped
+  - System.Threading.Overlapped
+  - System.Threading.ParameterizedThreadStart
+  - System.Threading.PreAllocatedOverlapped
+  - System.Threading.ReaderWriterLockSlim
+  - System.Threading.RegisteredWaitHandle
+  - System.Threading.Semaphore
+  - System.Threading.SemaphoreFullException
+  - System.Threading.SemaphoreSlim
+  - System.Threading.SendOrPostCallback
+  - System.Threading.SpinLock
+  - System.Threading.SpinWait
+  - System.Threading.SynchronizationContext
+  - System.Threading.SynchronizationLockException
+  - System.Threading.Thread
+  - System.Threading.ThreadAbortException
+  - System.Threading.ThreadInterruptedException
+  - System.Threading.ThreadLocal`1
+  - System.Threading.ThreadPool
+  - System.Threading.ThreadPoolBoundHandle
+  - System.Threading.ThreadPriority
+  - System.Threading.ThreadStart
+  - System.Threading.ThreadStartException
+  - System.Threading.ThreadState
+  - System.Threading.ThreadStateException
+  - System.Threading.Timeout
+  - System.Threading.Timer
+  - System.Threading.TimerCallback
+  - System.Threading.Volatile
+  - System.Threading.WaitCallback
+  - System.Threading.WaitHandle
+  - System.Threading.WaitHandleCannotBeOpenedException
+  - System.Threading.WaitHandleExtensions
+  - System.Threading.WaitOrTimerCallback
+  href: System.Threading.yml
+  name: System.Threading
+  fullName: System.Threading
+  type: Namespace
+  source:
+    remote:
+      path: src/System.Runtime.Handles/src/System/Threading/WaitHandleExtensions.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Runtime.Handles/src/System/Threading/WaitHandleExtensions.cs
+    startLine: 6
+  assemblies:
+  - System.Runtime.Handles.CoreCLR
+  summary: The @'System.Threading' namespace provides classes and interfaces that enable multithreaded programming. In addition to classes for synchronizing thread activities and access to data (@'System.Threading.Mutex', @'System.Threading.Monitor', @'System.Threading.Interlocked', @'System.Threading.AutoResetEvent', and so on), this namespace includes a @'System.Threading.ThreadPool' class that allows you to use a pool of system-supplied threads, and a @'System.Threading.Timer' class that executes callback methods on thread pool threads.
+references:
+- uid: System.Threading.WaitHandleExtensions
+  isExternal: false
+  href: System.Threading.WaitHandleExtensions.yml
+  name: WaitHandleExtensions
+  fullName: System.Threading.WaitHandleExtensions
+  type: Class
+- uid: System.Threading.AbandonedMutexException
+  isExternal: false
+  href: System.Threading.AbandonedMutexException.yml
+  name: AbandonedMutexException
+  fullName: System.Threading.AbandonedMutexException
+  type: Class
+- uid: System.Threading.AsyncLocal`1
+  isExternal: false
+  href: System.Threading.AsyncLocal`1.yml
+  name: AsyncLocal<T>
+  name.vb: AsyncLocal(Of T)
+  fullName: System.Threading.AsyncLocal<T>
+  fullName.vb: System.Threading.AsyncLocal(Of T)
+  type: Class
+  spec.csharp:
+  - uid: System.Threading.AsyncLocal`1
+    name: AsyncLocal
+    fullName: System.Threading.AsyncLocal
+    href: System.Threading.AsyncLocal`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.AsyncLocal`1
+    name: AsyncLocal
+    fullName: System.Threading.AsyncLocal
+    href: System.Threading.AsyncLocal`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Threading.AsyncLocalValueChangedArgs`1
+  isExternal: false
+  href: System.Threading.AsyncLocalValueChangedArgs`1.yml
+  name: AsyncLocalValueChangedArgs<T>
+  name.vb: AsyncLocalValueChangedArgs(Of T)
+  fullName: System.Threading.AsyncLocalValueChangedArgs<T>
+  fullName.vb: System.Threading.AsyncLocalValueChangedArgs(Of T)
+  type: Struct
+  spec.csharp:
+  - uid: System.Threading.AsyncLocalValueChangedArgs`1
+    name: AsyncLocalValueChangedArgs
+    fullName: System.Threading.AsyncLocalValueChangedArgs
+    href: System.Threading.AsyncLocalValueChangedArgs`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.AsyncLocalValueChangedArgs`1
+    name: AsyncLocalValueChangedArgs
+    fullName: System.Threading.AsyncLocalValueChangedArgs
+    href: System.Threading.AsyncLocalValueChangedArgs`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Threading.AutoResetEvent
+  isExternal: false
+  href: System.Threading.AutoResetEvent.yml
+  name: AutoResetEvent
+  fullName: System.Threading.AutoResetEvent
+  type: Class
+- uid: System.Threading.SendOrPostCallback
+  isExternal: false
+  href: System.Threading.SendOrPostCallback.yml
+  name: SendOrPostCallback
+  fullName: System.Threading.SendOrPostCallback
+  type: Delegate
+- uid: System.Threading.SynchronizationContext
+  parent: System.Threading
+  isExternal: false
+  href: System.Threading.SynchronizationContext.yml
+  name: SynchronizationContext
+  fullName: System.Threading.SynchronizationContext
+  type: Class
+- uid: System.Threading.EventResetMode
+  parent: System.Threading
+  isExternal: false
+  href: System.Threading.EventResetMode.yml
+  name: EventResetMode
+  fullName: System.Threading.EventResetMode
+  type: Enum
+- uid: System.Threading.EventWaitHandle
+  parent: System.Threading
+  isExternal: false
+  href: System.Threading.EventWaitHandle.yml
+  name: EventWaitHandle
+  fullName: System.Threading.EventWaitHandle
+  type: Class
+- uid: System.Threading.ContextCallback
+  isExternal: false
+  href: System.Threading.ContextCallback.yml
+  name: ContextCallback
+  fullName: System.Threading.ContextCallback
+  type: Delegate
+- uid: System.Threading.ExecutionContext
+  parent: System.Threading
+  isExternal: false
+  href: System.Threading.ExecutionContext.yml
+  name: ExecutionContext
+  fullName: System.Threading.ExecutionContext
+  type: Class
+- uid: System.Threading.Interlocked
+  isExternal: false
+  href: System.Threading.Interlocked.yml
+  name: Interlocked
+  fullName: System.Threading.Interlocked
+  type: Class
+- uid: System.Threading.LockCookie
+  parent: System.Threading
+  isExternal: false
+  href: System.Threading.LockCookie.yml
+  name: LockCookie
+  fullName: System.Threading.LockCookie
+  type: Struct
+- uid: System.Threading.LockRecursionException
+  isExternal: false
+  href: System.Threading.LockRecursionException.yml
+  name: LockRecursionException
+  fullName: System.Threading.LockRecursionException
+  type: Class
+- uid: System.Threading.ManualResetEvent
+  isExternal: false
+  href: System.Threading.ManualResetEvent.yml
+  name: ManualResetEvent
+  fullName: System.Threading.ManualResetEvent
+  type: Class
+- uid: System.Threading.Monitor
+  isExternal: false
+  href: System.Threading.Monitor.yml
+  name: Monitor
+  fullName: System.Threading.Monitor
+  type: Class
+- uid: System.Threading.Mutex
+  parent: System.Threading
+  isExternal: false
+  href: System.Threading.Mutex.yml
+  name: Mutex
+  fullName: System.Threading.Mutex
+  type: Class
+- uid: System.Threading.Mutex.MutexSecurity
+  parent: System.Threading
+  isExternal: false
+  href: System.Threading.Mutex.MutexSecurity.yml
+  name: Mutex.MutexSecurity
+  fullName: System.Threading.Mutex.MutexSecurity
+  type: Class
+- uid: System.Threading.Mutex.MutexRights
+  parent: System.Threading
+  isExternal: false
+  href: System.Threading.Mutex.MutexRights.yml
+  name: Mutex.MutexRights
+  fullName: System.Threading.Mutex.MutexRights
+  type: Enum
+- uid: System.Threading.NativeOverlapped
+  isExternal: false
+  href: System.Threading.NativeOverlapped.yml
+  name: NativeOverlapped
+  fullName: System.Threading.NativeOverlapped
+  type: Struct
+- uid: System.Threading.Overlapped
+  parent: System.Threading
+  isExternal: false
+  href: System.Threading.Overlapped.yml
+  name: Overlapped
+  fullName: System.Threading.Overlapped
+  type: Class
+- uid: System.Threading.ParameterizedThreadStart
+  isExternal: false
+  href: System.Threading.ParameterizedThreadStart.yml
+  name: ParameterizedThreadStart
+  fullName: System.Threading.ParameterizedThreadStart
+  type: Delegate
+- uid: System.Threading.SemaphoreFullException
+  isExternal: false
+  href: System.Threading.SemaphoreFullException.yml
+  name: SemaphoreFullException
+  fullName: System.Threading.SemaphoreFullException
+  type: Class
+- uid: System.Threading.SynchronizationLockException
+  isExternal: false
+  href: System.Threading.SynchronizationLockException.yml
+  name: SynchronizationLockException
+  fullName: System.Threading.SynchronizationLockException
+  type: Class
+- uid: System.Threading.Thread
+  parent: System.Threading
+  isExternal: false
+  href: System.Threading.Thread.yml
+  name: Thread
+  fullName: System.Threading.Thread
+  type: Class
+- uid: System.Threading.ThreadAbortException
+  isExternal: false
+  href: System.Threading.ThreadAbortException.yml
+  name: ThreadAbortException
+  fullName: System.Threading.ThreadAbortException
+  type: Class
+- uid: System.Threading.ThreadInterruptedException
+  isExternal: false
+  href: System.Threading.ThreadInterruptedException.yml
+  name: ThreadInterruptedException
+  fullName: System.Threading.ThreadInterruptedException
+  type: Class
+- uid: System.Threading.RegisteredWaitHandle
+  isExternal: false
+  href: System.Threading.RegisteredWaitHandle.yml
+  name: RegisteredWaitHandle
+  fullName: System.Threading.RegisteredWaitHandle
+  type: Class
+- uid: System.Threading.WaitCallback
+  isExternal: false
+  href: System.Threading.WaitCallback.yml
+  name: WaitCallback
+  fullName: System.Threading.WaitCallback
+  type: Delegate
+- uid: System.Threading.WaitOrTimerCallback
+  isExternal: false
+  href: System.Threading.WaitOrTimerCallback.yml
+  name: WaitOrTimerCallback
+  fullName: System.Threading.WaitOrTimerCallback
+  type: Delegate
+- uid: System.Threading.IOCompletionCallback
+  parent: System.Threading
+  isExternal: false
+  href: System.Threading.IOCompletionCallback.yml
+  name: IOCompletionCallback
+  fullName: System.Threading.IOCompletionCallback
+  type: Delegate
+- uid: System.Threading.ThreadPool
+  isExternal: false
+  href: System.Threading.ThreadPool.yml
+  name: ThreadPool
+  fullName: System.Threading.ThreadPool
+  type: Class
+- uid: System.Threading.ThreadPriority
+  parent: System.Threading
+  isExternal: false
+  href: System.Threading.ThreadPriority.yml
+  name: ThreadPriority
+  fullName: System.Threading.ThreadPriority
+  type: Enum
+- uid: System.Threading.ThreadStart
+  parent: System.Threading
+  isExternal: false
+  href: System.Threading.ThreadStart.yml
+  name: ThreadStart
+  fullName: System.Threading.ThreadStart
+  type: Delegate
+- uid: System.Threading.ThreadState
+  parent: System.Threading
+  isExternal: false
+  href: System.Threading.ThreadState.yml
+  name: ThreadState
+  fullName: System.Threading.ThreadState
+  type: Enum
+- uid: System.Threading.ThreadStateException
+  isExternal: false
+  href: System.Threading.ThreadStateException.yml
+  name: ThreadStateException
+  fullName: System.Threading.ThreadStateException
+  type: Class
+- uid: System.Threading.ThreadStartException
+  isExternal: false
+  href: System.Threading.ThreadStartException.yml
+  name: ThreadStartException
+  fullName: System.Threading.ThreadStartException
+  type: Class
+- uid: System.Threading.Timeout
+  isExternal: false
+  href: System.Threading.Timeout.yml
+  name: Timeout
+  fullName: System.Threading.Timeout
+  type: Class
+- uid: System.Threading.TimerCallback
+  isExternal: false
+  href: System.Threading.TimerCallback.yml
+  name: TimerCallback
+  fullName: System.Threading.TimerCallback
+  type: Delegate
+- uid: System.Threading.Timer
+  isExternal: false
+  href: System.Threading.Timer.yml
+  name: Timer
+  fullName: System.Threading.Timer
+  type: Class
+- uid: System.Threading.Volatile
+  isExternal: false
+  href: System.Threading.Volatile.yml
+  name: Volatile
+  fullName: System.Threading.Volatile
+  type: Class
+- uid: System.Threading.WaitHandle
+  parent: System.Threading
+  isExternal: true
+  name: WaitHandle
+  fullName: System.Threading.WaitHandle
+- uid: System.Threading.WaitHandleCannotBeOpenedException
+  isExternal: false
+  href: System.Threading.WaitHandleCannotBeOpenedException.yml
+  name: WaitHandleCannotBeOpenedException
+  fullName: System.Threading.WaitHandleCannotBeOpenedException
+  type: Class
+- uid: System.Threading.ApartmentState
+  parent: System.Threading
+  isExternal: false
+  href: System.Threading.ApartmentState.yml
+  name: ApartmentState
+  fullName: System.Threading.ApartmentState
+  type: Enum
+- uid: System.Threading.SpinLock
+  isExternal: false
+  href: System.Threading.SpinLock.yml
+  name: SpinLock
+  fullName: System.Threading.SpinLock
+  type: Struct
+  summary: >-
+    Provides a mutual exclusion lock primitive where a thread trying to acquire the lock waits in a loop
+
+    repeatedly checking until the lock becomes available.
+- uid: System.Threading.SpinWait
+  isExternal: false
+  href: System.Threading.SpinWait.yml
+  name: SpinWait
+  fullName: System.Threading.SpinWait
+  type: Struct
+  summary: Provides support for spin-based waiting.
+- uid: System.Threading.CountdownEvent
+  isExternal: false
+  href: System.Threading.CountdownEvent.yml
+  name: CountdownEvent
+  fullName: System.Threading.CountdownEvent
+  type: Class
+  summary: Represents a synchronization primitive that is signaled when its count reaches zero.
+- uid: System.Threading.LazyThreadSafetyMode
+  parent: System.Threading
+  isExternal: true
+  name: LazyThreadSafetyMode
+  fullName: System.Threading.LazyThreadSafetyMode
+- uid: System.Threading.LazyInitializer
+  isExternal: false
+  href: System.Threading.LazyInitializer.yml
+  name: LazyInitializer
+  fullName: System.Threading.LazyInitializer
+  type: Class
+  summary: Provides lazy initialization routines.
+- uid: System.Threading.ThreadLocal`1
+  isExternal: false
+  href: System.Threading.ThreadLocal`1.yml
+  name: ThreadLocal<T>
+  name.vb: ThreadLocal(Of T)
+  fullName: System.Threading.ThreadLocal<T>
+  fullName.vb: System.Threading.ThreadLocal(Of T)
+  type: Class
+  summary: Provides thread-local storage of data.
+  spec.csharp:
+  - uid: System.Threading.ThreadLocal`1
+    name: ThreadLocal
+    fullName: System.Threading.ThreadLocal
+    href: System.Threading.ThreadLocal`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.ThreadLocal`1
+    name: ThreadLocal
+    fullName: System.Threading.ThreadLocal
+    href: System.Threading.ThreadLocal`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Threading.SemaphoreSlim
+  isExternal: false
+  href: System.Threading.SemaphoreSlim.yml
+  name: SemaphoreSlim
+  fullName: System.Threading.SemaphoreSlim
+  type: Class
+  summary: Limits the number of threads that can access a resource or pool of resources concurrently.
+- uid: System.Threading.ManualResetEventSlim
+  isExternal: false
+  href: System.Threading.ManualResetEventSlim.yml
+  name: ManualResetEventSlim
+  fullName: System.Threading.ManualResetEventSlim
+  type: Class
+  summary: Provides a slimmed down version of @'System.Threading.ManualResetEvent'.
+- uid: System.Threading.CancellationTokenRegistration
+  parent: System.Threading
+  isExternal: false
+  href: System.Threading.CancellationTokenRegistration.yml
+  name: CancellationTokenRegistration
+  fullName: System.Threading.CancellationTokenRegistration
+  type: Struct
+  summary: Represents a callback delegate that has been registered with a @'System.Threading.CancellationToken'.
+- uid: System.Threading.CancellationTokenSource
+  parent: System.Threading
+  isExternal: false
+  href: System.Threading.CancellationTokenSource.yml
+  name: CancellationTokenSource
+  fullName: System.Threading.CancellationTokenSource
+  type: Class
+  summary: Signals to a @'System.Threading.CancellationToken' that it should be canceled.
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.ThreadPoolBoundHandle
+  parent: System.Threading
+  isExternal: false
+  href: System.Threading.ThreadPoolBoundHandle.yml
+  name: ThreadPoolBoundHandle
+  fullName: System.Threading.ThreadPoolBoundHandle
+  type: Class
+  summary: >-
+    Represents an I/O handle that is bound to the system thread pool and enables low-level
+
+    components to receive notifications for asynchronous I/O operations.
+- uid: System.Threading.PreAllocatedOverlapped
+  parent: System.Threading
+  isExternal: false
+  href: System.Threading.PreAllocatedOverlapped.yml
+  name: PreAllocatedOverlapped
+  fullName: System.Threading.PreAllocatedOverlapped
+  type: Class
+  summary: Represents pre-allocated state for native overlapped I/O operations.
+- uid: System.Threading.Semaphore
+  parent: System.Threading
+  isExternal: false
+  href: System.Threading.Semaphore.yml
+  name: Semaphore
+  fullName: System.Threading.Semaphore
+  type: Class
+- uid: System.Threading.BarrierPostPhaseException
+  isExternal: false
+  href: System.Threading.BarrierPostPhaseException.yml
+  name: BarrierPostPhaseException
+  fullName: System.Threading.BarrierPostPhaseException
+  type: Class
+  summary: The exception that is thrown when the post-phase action of a @'System.Threading.Barrier' fails.
+- uid: System.Threading.Barrier
+  isExternal: false
+  href: System.Threading.Barrier.yml
+  name: Barrier
+  fullName: System.Threading.Barrier
+  type: Class
+  summary: Enables multiple tasks to cooperatively work on an algorithm in parallel through multiple phases.
+- uid: System.Threading.LockRecursionPolicy
+  parent: System.Threading
+  isExternal: false
+  href: System.Threading.LockRecursionPolicy.yml
+  name: LockRecursionPolicy
+  fullName: System.Threading.LockRecursionPolicy
+  type: Enum
+- uid: System.Threading.ReaderWriterLockSlim
+  isExternal: false
+  href: System.Threading.ReaderWriterLockSlim.yml
+  name: ReaderWriterLockSlim
+  fullName: System.Threading.ReaderWriterLockSlim
+  type: Class
+  summary: >-
+    A reader-writer lock implementation that is intended to be simple, yet very
+
+    efficient.  In particular only 1 interlocked operation is taken for any lock
+
+    operation (we use spin locks to achieve this).  The spin lock is never held
+
+    for more than a few instructions (in particular, we never call event APIs
+
+    or in fact any non-trivial API while holding the spin lock).
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading

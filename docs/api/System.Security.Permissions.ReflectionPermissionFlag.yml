@@ -1,0 +1,137 @@
+items:
+- uid: System.Security.Permissions.ReflectionPermissionFlag
+  id: ReflectionPermissionFlag
+  parent: System.Security.Permissions
+  children:
+  - System.Security.Permissions.ReflectionPermissionFlag.AllFlags
+  - System.Security.Permissions.ReflectionPermissionFlag.MemberAccess
+  - System.Security.Permissions.ReflectionPermissionFlag.NoFlags
+  - System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit
+  - System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess
+  - System.Security.Permissions.ReflectionPermissionFlag.TypeInformation
+  href: System.Security.Permissions.ReflectionPermissionFlag.yml
+  name: ReflectionPermissionFlag
+  fullName: System.Security.Permissions.ReflectionPermissionFlag
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Security/Permissions/ReflectionPermission.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Security/Permissions/ReflectionPermission.cs
+    startLine: 16
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Specifies the permitted use of the @'System.Reflection' and @'System.Reflection.Emit' namespaces.
+  syntax:
+    content: public enum ReflectionPermissionFlag
+    content.vb: Public Enum ReflectionPermissionFlag
+- uid: System.Security.Permissions.ReflectionPermissionFlag.NoFlags
+  id: NoFlags
+  parent: System.Security.Permissions.ReflectionPermissionFlag
+  href: System.Security.Permissions.ReflectionPermissionFlag.yml
+  name: NoFlags
+  fullName: System.Security.Permissions.ReflectionPermissionFlag.NoFlags
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/ReflectionPermission.cs
+    startLine: 21
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Enumeration of types and members is allowed. Invocation operations are allowed on visible types and members.
+  syntax:
+    content: NoFlags = 0
+- uid: System.Security.Permissions.ReflectionPermissionFlag.TypeInformation
+  id: TypeInformation
+  parent: System.Security.Permissions.ReflectionPermissionFlag
+  href: System.Security.Permissions.ReflectionPermissionFlag.yml
+  name: TypeInformation
+  fullName: System.Security.Permissions.ReflectionPermissionFlag.TypeInformation
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/ReflectionPermission.cs
+    startLine: 22
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: This flag is obsolete. No flags are necessary to enumerate types and members and to examine their metadata. Use @'System.Security.Permissions.ReflectionPermissionFlag.NoFlags' instead.
+  syntax:
+    content: TypeInformation = 1
+- uid: System.Security.Permissions.ReflectionPermissionFlag.MemberAccess
+  id: MemberAccess
+  parent: System.Security.Permissions.ReflectionPermissionFlag
+  href: System.Security.Permissions.ReflectionPermissionFlag.yml
+  name: MemberAccess
+  fullName: System.Security.Permissions.ReflectionPermissionFlag.MemberAccess
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/ReflectionPermission.cs
+    startLine: 24
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Invocation operations on all members are allowed, regardless of grant set. If this flag is not set, invocation operations are allowed only on visible members.
+  syntax:
+    content: MemberAccess = 2
+- uid: System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit
+  id: ReflectionEmit
+  parent: System.Security.Permissions.ReflectionPermissionFlag
+  href: System.Security.Permissions.ReflectionPermissionFlag.yml
+  name: ReflectionEmit
+  fullName: System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/ReflectionPermission.cs
+    startLine: 25
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: "Emitting debug symbols is allowed. Beginning with the .NET Framework 2.0 Service Pack 1, this flag is no longer required to emit code."
+  syntax:
+    content: ReflectionEmit = 4
+- uid: System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess
+  id: RestrictedMemberAccess
+  parent: System.Security.Permissions.ReflectionPermissionFlag
+  href: System.Security.Permissions.ReflectionPermissionFlag.yml
+  name: RestrictedMemberAccess
+  fullName: System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/ReflectionPermission.cs
+    startLine: 27
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Restricted member access is provided for partially trusted code. Partially trusted code can access nonpublic types and members, but only if the grant set of the partially trusted code includes all permissions in the grant set of the assembly that contains the nonpublic types and members being accessed. This flag is new in the .NET Framework 2.0 SP1.
+  syntax:
+    content: RestrictedMemberAccess = 8
+- uid: System.Security.Permissions.ReflectionPermissionFlag.AllFlags
+  id: AllFlags
+  parent: System.Security.Permissions.ReflectionPermissionFlag
+  href: System.Security.Permissions.ReflectionPermissionFlag.yml
+  name: AllFlags
+  fullName: System.Security.Permissions.ReflectionPermissionFlag.AllFlags
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/ReflectionPermission.cs
+    startLine: 29
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: TypeInformation, MemberAccess, and ReflectionEmit are set. @'System.Security.Permissions.ReflectionPermissionFlag.AllFlags' does not include @'System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess'.
+  syntax:
+    content: AllFlags = 7
+references:
+- uid: System.Security.Permissions
+  isExternal: false
+  name: System.Security.Permissions
+  fullName: System.Security.Permissions
+  type: Namespace

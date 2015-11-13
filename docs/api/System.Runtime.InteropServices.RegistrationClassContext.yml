@@ -1,0 +1,353 @@
+items:
+- uid: System.Runtime.InteropServices.RegistrationClassContext
+  id: RegistrationClassContext
+  parent: System.Runtime.InteropServices
+  children:
+  - System.Runtime.InteropServices.RegistrationClassContext.DisableActivateAsActivator
+  - System.Runtime.InteropServices.RegistrationClassContext.EnableActivateAsActivator
+  - System.Runtime.InteropServices.RegistrationClassContext.EnableCodeDownload
+  - System.Runtime.InteropServices.RegistrationClassContext.FromDefaultContext
+  - System.Runtime.InteropServices.RegistrationClassContext.InProcessHandler
+  - System.Runtime.InteropServices.RegistrationClassContext.InProcessHandler16
+  - System.Runtime.InteropServices.RegistrationClassContext.InProcessServer
+  - System.Runtime.InteropServices.RegistrationClassContext.InProcessServer16
+  - System.Runtime.InteropServices.RegistrationClassContext.LocalServer
+  - System.Runtime.InteropServices.RegistrationClassContext.NoCodeDownload
+  - System.Runtime.InteropServices.RegistrationClassContext.NoCustomMarshal
+  - System.Runtime.InteropServices.RegistrationClassContext.NoFailureLog
+  - System.Runtime.InteropServices.RegistrationClassContext.RemoteServer
+  - System.Runtime.InteropServices.RegistrationClassContext.Reserved1
+  - System.Runtime.InteropServices.RegistrationClassContext.Reserved2
+  - System.Runtime.InteropServices.RegistrationClassContext.Reserved3
+  - System.Runtime.InteropServices.RegistrationClassContext.Reserved4
+  - System.Runtime.InteropServices.RegistrationClassContext.Reserved5
+  href: System.Runtime.InteropServices.RegistrationClassContext.yml
+  name: RegistrationClassContext
+  fullName: System.Runtime.InteropServices.RegistrationClassContext
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/InteropServices/RegistrationServices.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/InteropServices/RegistrationServices.cs
+    startLine: 32
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Specifies the set of execution contexts in which a class object will be made available for requests to construct instances.
+  syntax:
+    content: public enum RegistrationClassContext
+    content.vb: Public Enum RegistrationClassContext
+- uid: System.Runtime.InteropServices.RegistrationClassContext.InProcessServer
+  id: InProcessServer
+  parent: System.Runtime.InteropServices.RegistrationClassContext
+  href: System.Runtime.InteropServices.RegistrationClassContext.yml
+  name: InProcessServer
+  fullName: System.Runtime.InteropServices.RegistrationClassContext.InProcessServer
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/RegistrationServices.cs
+    startLine: 37
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: The code that creates and manages objects of this class is a DLL that runs in the same process as the caller of the function specifying the class context.
+  syntax:
+    content: InProcessServer = 1
+- uid: System.Runtime.InteropServices.RegistrationClassContext.InProcessHandler
+  id: InProcessHandler
+  parent: System.Runtime.InteropServices.RegistrationClassContext
+  href: System.Runtime.InteropServices.RegistrationClassContext.yml
+  name: InProcessHandler
+  fullName: System.Runtime.InteropServices.RegistrationClassContext.InProcessHandler
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/RegistrationServices.cs
+    startLine: 38
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: The code that manages objects of this class is an in-process handler.
+  syntax:
+    content: InProcessHandler = 2
+- uid: System.Runtime.InteropServices.RegistrationClassContext.LocalServer
+  id: LocalServer
+  parent: System.Runtime.InteropServices.RegistrationClassContext
+  href: System.Runtime.InteropServices.RegistrationClassContext.yml
+  name: LocalServer
+  fullName: System.Runtime.InteropServices.RegistrationClassContext.LocalServer
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/RegistrationServices.cs
+    startLine: 39
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: The EXE code that creates and manages objects of this class runs on same machine but is loaded in a separate process space.
+  syntax:
+    content: LocalServer = 4
+- uid: System.Runtime.InteropServices.RegistrationClassContext.InProcessServer16
+  id: InProcessServer16
+  parent: System.Runtime.InteropServices.RegistrationClassContext
+  href: System.Runtime.InteropServices.RegistrationClassContext.yml
+  name: InProcessServer16
+  fullName: System.Runtime.InteropServices.RegistrationClassContext.InProcessServer16
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/RegistrationServices.cs
+    startLine: 40
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Not used.
+  syntax:
+    content: InProcessServer16 = 8
+- uid: System.Runtime.InteropServices.RegistrationClassContext.RemoteServer
+  id: RemoteServer
+  parent: System.Runtime.InteropServices.RegistrationClassContext
+  href: System.Runtime.InteropServices.RegistrationClassContext.yml
+  name: RemoteServer
+  fullName: System.Runtime.InteropServices.RegistrationClassContext.RemoteServer
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/RegistrationServices.cs
+    startLine: 41
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: A remote machine context.
+  syntax:
+    content: RemoteServer = 16
+- uid: System.Runtime.InteropServices.RegistrationClassContext.InProcessHandler16
+  id: InProcessHandler16
+  parent: System.Runtime.InteropServices.RegistrationClassContext
+  href: System.Runtime.InteropServices.RegistrationClassContext.yml
+  name: InProcessHandler16
+  fullName: System.Runtime.InteropServices.RegistrationClassContext.InProcessHandler16
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/RegistrationServices.cs
+    startLine: 42
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Not used.
+  syntax:
+    content: InProcessHandler16 = 32
+- uid: System.Runtime.InteropServices.RegistrationClassContext.Reserved1
+  id: Reserved1
+  parent: System.Runtime.InteropServices.RegistrationClassContext
+  href: System.Runtime.InteropServices.RegistrationClassContext.yml
+  name: Reserved1
+  fullName: System.Runtime.InteropServices.RegistrationClassContext.Reserved1
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/RegistrationServices.cs
+    startLine: 43
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Not used.
+  syntax:
+    content: Reserved1 = 64
+- uid: System.Runtime.InteropServices.RegistrationClassContext.Reserved2
+  id: Reserved2
+  parent: System.Runtime.InteropServices.RegistrationClassContext
+  href: System.Runtime.InteropServices.RegistrationClassContext.yml
+  name: Reserved2
+  fullName: System.Runtime.InteropServices.RegistrationClassContext.Reserved2
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/RegistrationServices.cs
+    startLine: 44
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Not used.
+  syntax:
+    content: Reserved2 = 128
+- uid: System.Runtime.InteropServices.RegistrationClassContext.Reserved3
+  id: Reserved3
+  parent: System.Runtime.InteropServices.RegistrationClassContext
+  href: System.Runtime.InteropServices.RegistrationClassContext.yml
+  name: Reserved3
+  fullName: System.Runtime.InteropServices.RegistrationClassContext.Reserved3
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/RegistrationServices.cs
+    startLine: 45
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Not used.
+  syntax:
+    content: Reserved3 = 256
+- uid: System.Runtime.InteropServices.RegistrationClassContext.Reserved4
+  id: Reserved4
+  parent: System.Runtime.InteropServices.RegistrationClassContext
+  href: System.Runtime.InteropServices.RegistrationClassContext.yml
+  name: Reserved4
+  fullName: System.Runtime.InteropServices.RegistrationClassContext.Reserved4
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/RegistrationServices.cs
+    startLine: 46
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Not used.
+  syntax:
+    content: Reserved4 = 512
+- uid: System.Runtime.InteropServices.RegistrationClassContext.NoCodeDownload
+  id: NoCodeDownload
+  parent: System.Runtime.InteropServices.RegistrationClassContext
+  href: System.Runtime.InteropServices.RegistrationClassContext.yml
+  name: NoCodeDownload
+  fullName: System.Runtime.InteropServices.RegistrationClassContext.NoCodeDownload
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/RegistrationServices.cs
+    startLine: 47
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Disallows the downloading of code from the Directory Service or the Internet.
+  syntax:
+    content: NoCodeDownload = 1024
+- uid: System.Runtime.InteropServices.RegistrationClassContext.Reserved5
+  id: Reserved5
+  parent: System.Runtime.InteropServices.RegistrationClassContext
+  href: System.Runtime.InteropServices.RegistrationClassContext.yml
+  name: Reserved5
+  fullName: System.Runtime.InteropServices.RegistrationClassContext.Reserved5
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/RegistrationServices.cs
+    startLine: 48
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Not used.
+  syntax:
+    content: Reserved5 = 2048
+- uid: System.Runtime.InteropServices.RegistrationClassContext.NoCustomMarshal
+  id: NoCustomMarshal
+  parent: System.Runtime.InteropServices.RegistrationClassContext
+  href: System.Runtime.InteropServices.RegistrationClassContext.yml
+  name: NoCustomMarshal
+  fullName: System.Runtime.InteropServices.RegistrationClassContext.NoCustomMarshal
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/RegistrationServices.cs
+    startLine: 49
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Specifies whether activation fails if it uses custom marshaling.
+  syntax:
+    content: NoCustomMarshal = 4096
+- uid: System.Runtime.InteropServices.RegistrationClassContext.EnableCodeDownload
+  id: EnableCodeDownload
+  parent: System.Runtime.InteropServices.RegistrationClassContext
+  href: System.Runtime.InteropServices.RegistrationClassContext.yml
+  name: EnableCodeDownload
+  fullName: System.Runtime.InteropServices.RegistrationClassContext.EnableCodeDownload
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/RegistrationServices.cs
+    startLine: 50
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Allows the downloading of code from the Directory Service or the Internet.
+  syntax:
+    content: EnableCodeDownload = 8192
+- uid: System.Runtime.InteropServices.RegistrationClassContext.NoFailureLog
+  id: NoFailureLog
+  parent: System.Runtime.InteropServices.RegistrationClassContext
+  href: System.Runtime.InteropServices.RegistrationClassContext.yml
+  name: NoFailureLog
+  fullName: System.Runtime.InteropServices.RegistrationClassContext.NoFailureLog
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/RegistrationServices.cs
+    startLine: 51
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Overrides the logging of failures.
+  syntax:
+    content: NoFailureLog = 16384
+- uid: System.Runtime.InteropServices.RegistrationClassContext.DisableActivateAsActivator
+  id: DisableActivateAsActivator
+  parent: System.Runtime.InteropServices.RegistrationClassContext
+  href: System.Runtime.InteropServices.RegistrationClassContext.yml
+  name: DisableActivateAsActivator
+  fullName: System.Runtime.InteropServices.RegistrationClassContext.DisableActivateAsActivator
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/RegistrationServices.cs
+    startLine: 52
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Disables activate-as-activator (AAA) activations for this activation only.
+  syntax:
+    content: DisableActivateAsActivator = 32768
+- uid: System.Runtime.InteropServices.RegistrationClassContext.EnableActivateAsActivator
+  id: EnableActivateAsActivator
+  parent: System.Runtime.InteropServices.RegistrationClassContext
+  href: System.Runtime.InteropServices.RegistrationClassContext.yml
+  name: EnableActivateAsActivator
+  fullName: System.Runtime.InteropServices.RegistrationClassContext.EnableActivateAsActivator
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/RegistrationServices.cs
+    startLine: 53
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Enables activate-as-activator (AAA) activations for this activation only.
+  syntax:
+    content: EnableActivateAsActivator = 65536
+- uid: System.Runtime.InteropServices.RegistrationClassContext.FromDefaultContext
+  id: FromDefaultContext
+  parent: System.Runtime.InteropServices.RegistrationClassContext
+  href: System.Runtime.InteropServices.RegistrationClassContext.yml
+  name: FromDefaultContext
+  fullName: System.Runtime.InteropServices.RegistrationClassContext.FromDefaultContext
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/RegistrationServices.cs
+    startLine: 54
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Begin this activation from the default context of the current apartment.
+  syntax:
+    content: FromDefaultContext = 131072
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace

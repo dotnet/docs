@@ -1,0 +1,52 @@
+items:
+- uid: System.ComponentModel.ProgressChangedEventHandler
+  id: ProgressChangedEventHandler
+  parent: System.ComponentModel
+  children: []
+  href: System.ComponentModel.ProgressChangedEventHandler.yml
+  name: ProgressChangedEventHandler
+  fullName: System.ComponentModel.ProgressChangedEventHandler
+  type: Delegate
+  source:
+    remote:
+      path: src/System.ComponentModel.EventBasedAsync/src/System/ComponentModel/ProgressChangedEvent.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.ComponentModel.EventBasedAsync/src/System/ComponentModel/ProgressChangedEvent.cs
+    startLine: 5
+  assemblies:
+  - System.ComponentModel.EventBasedAsync
+  namespace: System.ComponentModel
+  summary: Represents the method that will handle the @'System.ComponentModel.BackgroundWorker.ProgressChanged' event of the @'System.ComponentModel.BackgroundWorker' class. This class cannot be inherited.
+  syntax:
+    content: public delegate void ProgressChangedEventHandler(object sender, ProgressChangedEventArgs e);
+    content.vb: Public Delegate Sub ProgressChangedEventHandler(sender As Object, e As ProgressChangedEventArgs)
+    parameters:
+    - id: sender
+      type: System.Object
+      description: The source of the event.
+    - id: e
+      type: System.ComponentModel.ProgressChangedEventArgs
+      description: A @'System.ComponentModel.ProgressChangedEventArgs'   that contains the event data.
+references:
+- uid: System.ComponentModel
+  isExternal: false
+  name: System.ComponentModel
+  fullName: System.ComponentModel
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.ComponentModel.ProgressChangedEventArgs
+  parent: System.ComponentModel
+  isExternal: false
+  href: System.ComponentModel.ProgressChangedEventArgs.yml
+  name: ProgressChangedEventArgs
+  fullName: System.ComponentModel.ProgressChangedEventArgs
+  type: Class
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

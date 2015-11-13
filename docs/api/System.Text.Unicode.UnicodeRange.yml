@@ -1,0 +1,375 @@
+items:
+- uid: System.Text.Unicode.UnicodeRange
+  id: UnicodeRange
+  parent: System.Text.Unicode
+  children:
+  - System.Text.Unicode.UnicodeRange.#ctor(System.Int32,System.Int32)
+  - System.Text.Unicode.UnicodeRange.Create(System.Char,System.Char)
+  - System.Text.Unicode.UnicodeRange.FirstCodePoint
+  - System.Text.Unicode.UnicodeRange.Length
+  href: System.Text.Unicode.UnicodeRange.yml
+  name: UnicodeRange
+  fullName: System.Text.Unicode.UnicodeRange
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Text.Encodings.Web/src/System/Text/Encodings/Web/UnicodeRange.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Text.Encodings.Web/src/System/Text/Encodings/Web/UnicodeRange.cs
+    startLine: 13
+  assemblies:
+  - System.Text.Encodings.Web
+  namespace: System.Text.Unicode
+  summary: Represents a contiguous range of Unicode code points.
+  remarks: Currently only the Basic Multilingual Plane is supported.
+  syntax:
+    content: public sealed class UnicodeRange
+    content.vb: Public NotInheritable Class UnicodeRange
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Text.Unicode.UnicodeRange.#ctor(System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32)'
+  parent: System.Text.Unicode.UnicodeRange
+  href: System.Text.Unicode.UnicodeRange.yml
+  name: UnicodeRange(Int32, Int32)
+  fullName: System.Text.Unicode.UnicodeRange.UnicodeRange(System.Int32, System.Int32)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Text.Encodings.Web/src/System/Text/Encodings/Web/UnicodeRange.cs
+    startLine: 20
+  assemblies:
+  - System.Text.Encodings.Web
+  namespace: System.Text.Unicode
+  summary: Creates a new @'System.Text.Unicode.UnicodeRange'.
+  syntax:
+    content: public UnicodeRange(int firstCodePoint, int length)
+    content.vb: Public Sub New(firstCodePoint As Integer, length As Integer)
+    parameters:
+    - id: firstCodePoint
+      type: System.Int32
+      description: The first code point in the range.
+    - id: length
+      type: System.Int32
+      description: The number of code points in the range.
+- uid: System.Text.Unicode.UnicodeRange.FirstCodePoint
+  id: FirstCodePoint
+  parent: System.Text.Unicode.UnicodeRange
+  href: System.Text.Unicode.UnicodeRange.yml
+  name: FirstCodePoint
+  fullName: System.Text.Unicode.UnicodeRange.FirstCodePoint
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Text.Encodings.Web/src/System/Text/Encodings/Web/UnicodeRange.cs
+    startLine: 40
+  assemblies:
+  - System.Text.Encodings.Web
+  namespace: System.Text.Unicode
+  summary: The first code point in this range.
+  syntax:
+    content: public int FirstCodePoint { get; }
+    content.vb: Public ReadOnly Property FirstCodePoint As Integer
+    parameters: []
+    return:
+      type: System.Int32
+- uid: System.Text.Unicode.UnicodeRange.Length
+  id: Length
+  parent: System.Text.Unicode.UnicodeRange
+  href: System.Text.Unicode.UnicodeRange.yml
+  name: Length
+  fullName: System.Text.Unicode.UnicodeRange.Length
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Text.Encodings.Web/src/System/Text/Encodings/Web/UnicodeRange.cs
+    startLine: 45
+  assemblies:
+  - System.Text.Encodings.Web
+  namespace: System.Text.Unicode
+  summary: The number of code points in this range.
+  syntax:
+    content: public int Length { get; }
+    content.vb: Public ReadOnly Property Length As Integer
+    parameters: []
+    return:
+      type: System.Int32
+- uid: System.Text.Unicode.UnicodeRange.Create(System.Char,System.Char)
+  id: Create(System.Char,System.Char)
+  parent: System.Text.Unicode.UnicodeRange
+  href: System.Text.Unicode.UnicodeRange.yml
+  name: Create(Char, Char)
+  fullName: System.Text.Unicode.UnicodeRange.Create(System.Char, System.Char)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.Encodings.Web/src/System/Text/Encodings/Web/UnicodeRange.cs
+    startLine: 53
+  assemblies:
+  - System.Text.Encodings.Web
+  namespace: System.Text.Unicode
+  summary: Creates a new @'System.Text.Unicode.UnicodeRange' from a span of characters.
+  syntax:
+    content: public static UnicodeRange Create(char firstCharacter, char lastCharacter)
+    content.vb: Public Shared Function Create(firstCharacter As Char, lastCharacter As Char) As UnicodeRange
+    parameters:
+    - id: firstCharacter
+      type: System.Char
+      description: The first character in the range.
+    - id: lastCharacter
+      type: System.Char
+      description: The last character in the range.
+    return:
+      type: System.Text.Unicode.UnicodeRange
+      description: The @'System.Text.Unicode.UnicodeRange' representing this span.
+references:
+- uid: System.Text.Unicode
+  isExternal: false
+  name: System.Text.Unicode
+  fullName: System.Text.Unicode
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Text.Unicode.UnicodeRange
+  parent: System.Text.Unicode
+  isExternal: false
+  href: System.Text.Unicode.UnicodeRange.yml
+  name: UnicodeRange
+  fullName: System.Text.Unicode.UnicodeRange
+  type: Class
+  summary: Represents a contiguous range of Unicode code points.
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Char
+  parent: System
+  isExternal: true
+  name: Char
+  fullName: System.Char

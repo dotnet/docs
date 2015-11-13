@@ -1,0 +1,130 @@
+items:
+- uid: System.Reflection.Metadata.Ecma335.EditAndContinueOperation
+  id: EditAndContinueOperation
+  parent: System.Reflection.Metadata.Ecma335
+  children:
+  - System.Reflection.Metadata.Ecma335.EditAndContinueOperation.AddEvent
+  - System.Reflection.Metadata.Ecma335.EditAndContinueOperation.AddField
+  - System.Reflection.Metadata.Ecma335.EditAndContinueOperation.AddMethod
+  - System.Reflection.Metadata.Ecma335.EditAndContinueOperation.AddParameter
+  - System.Reflection.Metadata.Ecma335.EditAndContinueOperation.AddProperty
+  - System.Reflection.Metadata.Ecma335.EditAndContinueOperation.Default
+  href: System.Reflection.Metadata.Ecma335.EditAndContinueOperation.yml
+  name: EditAndContinueOperation
+  fullName: System.Reflection.Metadata.Ecma335.EditAndContinueOperation
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/EditAndContinueOperation.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/EditAndContinueOperation.cs
+    startLine: 5
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata.Ecma335
+  syntax:
+    content: public enum EditAndContinueOperation
+    content.vb: Public Enum EditAndContinueOperation
+- uid: System.Reflection.Metadata.Ecma335.EditAndContinueOperation.Default
+  id: Default
+  parent: System.Reflection.Metadata.Ecma335.EditAndContinueOperation
+  href: System.Reflection.Metadata.Ecma335.EditAndContinueOperation.yml
+  name: Default
+  fullName: System.Reflection.Metadata.Ecma335.EditAndContinueOperation.Default
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/EditAndContinueOperation.cs
+    startLine: 7
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata.Ecma335
+  syntax:
+    content: Default = 0
+- uid: System.Reflection.Metadata.Ecma335.EditAndContinueOperation.AddMethod
+  id: AddMethod
+  parent: System.Reflection.Metadata.Ecma335.EditAndContinueOperation
+  href: System.Reflection.Metadata.Ecma335.EditAndContinueOperation.yml
+  name: AddMethod
+  fullName: System.Reflection.Metadata.Ecma335.EditAndContinueOperation.AddMethod
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/EditAndContinueOperation.cs
+    startLine: 8
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata.Ecma335
+  syntax:
+    content: AddMethod = 1
+- uid: System.Reflection.Metadata.Ecma335.EditAndContinueOperation.AddField
+  id: AddField
+  parent: System.Reflection.Metadata.Ecma335.EditAndContinueOperation
+  href: System.Reflection.Metadata.Ecma335.EditAndContinueOperation.yml
+  name: AddField
+  fullName: System.Reflection.Metadata.Ecma335.EditAndContinueOperation.AddField
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/EditAndContinueOperation.cs
+    startLine: 9
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata.Ecma335
+  syntax:
+    content: AddField = 2
+- uid: System.Reflection.Metadata.Ecma335.EditAndContinueOperation.AddParameter
+  id: AddParameter
+  parent: System.Reflection.Metadata.Ecma335.EditAndContinueOperation
+  href: System.Reflection.Metadata.Ecma335.EditAndContinueOperation.yml
+  name: AddParameter
+  fullName: System.Reflection.Metadata.Ecma335.EditAndContinueOperation.AddParameter
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/EditAndContinueOperation.cs
+    startLine: 10
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata.Ecma335
+  syntax:
+    content: AddParameter = 3
+- uid: System.Reflection.Metadata.Ecma335.EditAndContinueOperation.AddProperty
+  id: AddProperty
+  parent: System.Reflection.Metadata.Ecma335.EditAndContinueOperation
+  href: System.Reflection.Metadata.Ecma335.EditAndContinueOperation.yml
+  name: AddProperty
+  fullName: System.Reflection.Metadata.Ecma335.EditAndContinueOperation.AddProperty
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/EditAndContinueOperation.cs
+    startLine: 11
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata.Ecma335
+  syntax:
+    content: AddProperty = 4
+- uid: System.Reflection.Metadata.Ecma335.EditAndContinueOperation.AddEvent
+  id: AddEvent
+  parent: System.Reflection.Metadata.Ecma335.EditAndContinueOperation
+  href: System.Reflection.Metadata.Ecma335.EditAndContinueOperation.yml
+  name: AddEvent
+  fullName: System.Reflection.Metadata.Ecma335.EditAndContinueOperation.AddEvent
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/EditAndContinueOperation.cs
+    startLine: 12
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata.Ecma335
+  syntax:
+    content: AddEvent = 5
+references:
+- uid: System.Reflection.Metadata.Ecma335
+  isExternal: false
+  name: System.Reflection.Metadata.Ecma335
+  fullName: System.Reflection.Metadata.Ecma335
+  type: Namespace

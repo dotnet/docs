@@ -1,0 +1,500 @@
+items:
+- uid: System.Runtime.CompilerServices.ConditionalWeakTable`2
+  id: ConditionalWeakTable`2
+  parent: System.Runtime.CompilerServices
+  children:
+  - System.Runtime.CompilerServices.ConditionalWeakTable`2.#ctor
+  - System.Runtime.CompilerServices.ConditionalWeakTable`2.Add(`0,`1)
+  - System.Runtime.CompilerServices.ConditionalWeakTable`2.Finalize
+  - System.Runtime.CompilerServices.ConditionalWeakTable`2.GetOrCreateValue(`0)
+  - System.Runtime.CompilerServices.ConditionalWeakTable`2.GetValue(`0,System.Runtime.CompilerServices.ConditionalWeakTable{`0,`1}.CreateValueCallback)
+  - System.Runtime.CompilerServices.ConditionalWeakTable`2.Remove(`0)
+  - System.Runtime.CompilerServices.ConditionalWeakTable`2.TryGetValue(`0,`1@)
+  href: System.Runtime.CompilerServices.ConditionalWeakTable`2.yml
+  name: ConditionalWeakTable<TKey, TValue>
+  name.vb: ConditionalWeakTable(Of TKey, TValue)
+  fullName: System.Runtime.CompilerServices.ConditionalWeakTable<TKey, TValue>
+  fullName.vb: System.Runtime.CompilerServices.ConditionalWeakTable(Of TKey, TValue)
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/CompilerServices/ConditionalWeakTable.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/CompilerServices/ConditionalWeakTable.cs
+    startLine: 70
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.CompilerServices
+  summary: Enables compilers to dynamically attach object fields to managed objects.
+  syntax:
+    content: 'public sealed class ConditionalWeakTable<TKey, TValue> where TKey : class where TValue : class'
+    content.vb: Public NotInheritable Class ConditionalWeakTable(Of TKey As Class, TValue As Class)
+    typeParameters:
+    - id: TKey
+    - id: TValue
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Runtime.CompilerServices.ConditionalWeakTable`2.#ctor
+  id: '#ctor'
+  parent: System.Runtime.CompilerServices.ConditionalWeakTable`2
+  href: System.Runtime.CompilerServices.ConditionalWeakTable`2.yml
+  name: ConditionalWeakTable()
+  fullName: System.Runtime.CompilerServices.ConditionalWeakTable<TKey, TValue>.ConditionalWeakTable()
+  fullName.vb: System.Runtime.CompilerServices.ConditionalWeakTable(Of TKey, TValue).ConditionalWeakTable()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/CompilerServices/ConditionalWeakTable.cs
+    startLine: 77
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.CompilerServices
+  summary: Initializes a new instance of the @'System.Runtime.CompilerServices.ConditionalWeakTable`2' class.
+  syntax:
+    content: public ConditionalWeakTable()
+    content.vb: Public Sub New
+- uid: System.Runtime.CompilerServices.ConditionalWeakTable`2.TryGetValue(`0,`1@)
+  id: TryGetValue(`0,`1@)
+  parent: System.Runtime.CompilerServices.ConditionalWeakTable`2
+  href: System.Runtime.CompilerServices.ConditionalWeakTable`2.yml
+  name: TryGetValue(TKey, out TValue)
+  name.vb: TryGetValue(TKey, ByRef TValue)
+  fullName: System.Runtime.CompilerServices.ConditionalWeakTable<TKey, TValue>.TryGetValue(TKey, out TValue)
+  fullName.vb: System.Runtime.CompilerServices.ConditionalWeakTable(Of TKey, TValue).TryGetValue(TKey, ByRef TValue)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/CompilerServices/ConditionalWeakTable.cs
+    startLine: 100
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.CompilerServices
+  summary: Gets the value of the specified key.
+  syntax:
+    content: public bool TryGetValue(TKey key, out TValue value)
+    content.vb: Public Function TryGetValue(key As TKey, ByRef value As TValue) As Boolean
+    parameters:
+    - id: key
+      type: '{TKey}'
+      description: The key that represents an object with an attached property.
+    - id: value
+      type: '{TValue}'
+      description: When this method returns, contains the attached property value. If *key* is not found, *value* contains the default value.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*key* is null.'
+- uid: System.Runtime.CompilerServices.ConditionalWeakTable`2.Add(`0,`1)
+  id: Add(`0,`1)
+  parent: System.Runtime.CompilerServices.ConditionalWeakTable`2
+  href: System.Runtime.CompilerServices.ConditionalWeakTable`2.yml
+  name: Add(TKey, TValue)
+  fullName: System.Runtime.CompilerServices.ConditionalWeakTable<TKey, TValue>.Add(TKey, TValue)
+  fullName.vb: System.Runtime.CompilerServices.ConditionalWeakTable(Of TKey, TValue).Add(TKey, TValue)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/CompilerServices/ConditionalWeakTable.cs
+    startLine: 124
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.CompilerServices
+  summary: Adds a key to the table.
+  syntax:
+    content: public void Add(TKey key, TValue value)
+    content.vb: Public Sub Add(key As TKey, value As TValue)
+    parameters:
+    - id: key
+      type: '{TKey}'
+      description: The key to add. *key* represents the object to which the property is attached.
+    - id: value
+      type: '{TValue}'
+      description: The key's property value.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*key* is null.'
+  - type: System.ArgumentException
+    description: '*key* already exists.'
+- uid: System.Runtime.CompilerServices.ConditionalWeakTable`2.Remove(`0)
+  id: Remove(`0)
+  parent: System.Runtime.CompilerServices.ConditionalWeakTable`2
+  href: System.Runtime.CompilerServices.ConditionalWeakTable`2.yml
+  name: Remove(TKey)
+  fullName: System.Runtime.CompilerServices.ConditionalWeakTable<TKey, TValue>.Remove(TKey)
+  fullName.vb: System.Runtime.CompilerServices.ConditionalWeakTable(Of TKey, TValue).Remove(TKey)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/CompilerServices/ConditionalWeakTable.cs
+    startLine: 159
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.CompilerServices
+  summary: Removes a key and its value from the table.
+  syntax:
+    content: public bool Remove(TKey key)
+    content.vb: Public Function Remove(key As TKey) As Boolean
+    parameters:
+    - id: key
+      type: '{TKey}'
+      description: The key to remove.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*key* is null.'
+- uid: System.Runtime.CompilerServices.ConditionalWeakTable`2.GetValue(`0,System.Runtime.CompilerServices.ConditionalWeakTable{`0,`1}.CreateValueCallback)
+  id: GetValue(`0,System.Runtime.CompilerServices.ConditionalWeakTable{`0,`1}.CreateValueCallback)
+  parent: System.Runtime.CompilerServices.ConditionalWeakTable`2
+  href: System.Runtime.CompilerServices.ConditionalWeakTable`2.yml
+  name: GetValue(TKey, ConditionalWeakTable<TKey, TValue>.CreateValueCallback)
+  name.vb: GetValue(TKey, ConditionalWeakTable(Of TKey, TValue).CreateValueCallback)
+  fullName: System.Runtime.CompilerServices.ConditionalWeakTable<TKey, TValue>.GetValue(TKey, System.Runtime.CompilerServices.ConditionalWeakTable<TKey, TValue>.CreateValueCallback)
+  fullName.vb: System.Runtime.CompilerServices.ConditionalWeakTable(Of TKey, TValue).GetValue(TKey, System.Runtime.CompilerServices.ConditionalWeakTable(Of TKey, TValue).CreateValueCallback)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/CompilerServices/ConditionalWeakTable.cs
+    startLine: 220
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.CompilerServices
+  summary: Atomically searches for a specified key in the table and returns the corresponding value. If the key does not exist in the table, the method invokes a callback method to create a value that is bound to the specified key.
+  syntax:
+    content: public TValue GetValue(TKey key, ConditionalWeakTable<TKey, TValue>.CreateValueCallback createValueCallback)
+    content.vb: Public Function GetValue(key As TKey, createValueCallback As ConditionalWeakTable(Of TKey, TValue).CreateValueCallback) As TValue
+    parameters:
+    - id: key
+      type: '{TKey}'
+      description: The key to search for. *key* represents the object to which the property is attached.
+    - id: createValueCallback
+      type: System.Runtime.CompilerServices.ConditionalWeakTable`2.CreateValueCallback
+      description: A delegate to a method that can create a value for the given *key*. It has a single parameter of type *TKey*, and returns a value of type *TValue*.
+    return:
+      type: '{TValue}'
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*key* or *createValueCallback* is null.'
+- uid: System.Runtime.CompilerServices.ConditionalWeakTable`2.GetOrCreateValue(`0)
+  id: GetOrCreateValue(`0)
+  parent: System.Runtime.CompilerServices.ConditionalWeakTable`2
+  href: System.Runtime.CompilerServices.ConditionalWeakTable`2.yml
+  name: GetOrCreateValue(TKey)
+  fullName: System.Runtime.CompilerServices.ConditionalWeakTable<TKey, TValue>.GetOrCreateValue(TKey)
+  fullName.vb: System.Runtime.CompilerServices.ConditionalWeakTable(Of TKey, TValue).GetOrCreateValue(TKey)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/CompilerServices/ConditionalWeakTable.cs
+    startLine: 272
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.CompilerServices
+  summary: Atomically searches for a specified key in the table and returns the corresponding value. If the key does not exist in the table, the method invokes the default constructor of the class that represents the table's value to create a value that is bound to the specified key.
+  syntax:
+    content: public TValue GetOrCreateValue(TKey key)
+    content.vb: Public Function GetOrCreateValue(key As TKey) As TValue
+    parameters:
+    - id: key
+      type: '{TKey}'
+      description: The key to search for. *key* represents the object to which the property is attached.
+    return:
+      type: '{TValue}'
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*key* is null.'
+  - type: System.MissingMethodException
+    description: In the .NET for Windows Store apps or the Portable Class Library, catch the base class exception, @'System.MissingMemberException', instead.The class that represents the table's value does not define a default constructor.
+- uid: System.Runtime.CompilerServices.ConditionalWeakTable`2.Finalize
+  id: Finalize
+  parent: System.Runtime.CompilerServices.ConditionalWeakTable`2
+  href: System.Runtime.CompilerServices.ConditionalWeakTable`2.yml
+  name: Finalize()
+  fullName: System.Runtime.CompilerServices.ConditionalWeakTable<TKey, TValue>.Finalize()
+  fullName.vb: System.Runtime.CompilerServices.ConditionalWeakTable(Of TKey, TValue).Finalize()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/CompilerServices/ConditionalWeakTable.cs
+    startLine: 589
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.CompilerServices
+  summary: Ensures that resources are freed and other cleanup operations are performed when the garbage collector reclaims the @'System.Runtime.CompilerServices.ConditionalWeakTable`2' object.
+  syntax:
+    content: protected void Finalize()
+    content.vb: Protected Sub Finalize
+references:
+- uid: System.Runtime.CompilerServices
+  isExternal: false
+  name: System.Runtime.CompilerServices
+  fullName: System.Runtime.CompilerServices
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: '{TKey}'
+  isExternal: false
+  name: TKey
+  fullName: TKey
+- uid: '{TValue}'
+  isExternal: false
+  name: TValue
+  fullName: TValue
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Runtime.CompilerServices.ConditionalWeakTable`2.CreateValueCallback
+  parent: System.Runtime.CompilerServices
+  isExternal: false
+  href: System.Runtime.CompilerServices.ConditionalWeakTable`2.CreateValueCallback.yml
+  name: ConditionalWeakTable.CreateValueCallback<>
+  name.vb: ConditionalWeakTable.CreateValueCallback(Of )
+  fullName: System.Runtime.CompilerServices.ConditionalWeakTable.CreateValueCallback<>
+  fullName.vb: System.Runtime.CompilerServices.ConditionalWeakTable.CreateValueCallback(Of )
+  type: Delegate
+  spec.csharp:
+  - uid: System.Runtime.CompilerServices.ConditionalWeakTable`2.CreateValueCallback
+    name: ConditionalWeakTable.CreateValueCallback
+    fullName: System.Runtime.CompilerServices.ConditionalWeakTable.CreateValueCallback
+    href: System.Runtime.CompilerServices.ConditionalWeakTable`2.CreateValueCallback.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Runtime.CompilerServices.ConditionalWeakTable`2.CreateValueCallback
+    name: ConditionalWeakTable.CreateValueCallback
+    fullName: System.Runtime.CompilerServices.ConditionalWeakTable.CreateValueCallback
+    href: System.Runtime.CompilerServices.ConditionalWeakTable`2.CreateValueCallback.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )

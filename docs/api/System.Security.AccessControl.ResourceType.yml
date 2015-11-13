@@ -1,0 +1,263 @@
+items:
+- uid: System.Security.AccessControl.ResourceType
+  id: ResourceType
+  parent: System.Security.AccessControl
+  children:
+  - System.Security.AccessControl.ResourceType.DSObject
+  - System.Security.AccessControl.ResourceType.DSObjectAll
+  - System.Security.AccessControl.ResourceType.FileObject
+  - System.Security.AccessControl.ResourceType.KernelObject
+  - System.Security.AccessControl.ResourceType.LMShare
+  - System.Security.AccessControl.ResourceType.Printer
+  - System.Security.AccessControl.ResourceType.ProviderDefined
+  - System.Security.AccessControl.ResourceType.RegistryKey
+  - System.Security.AccessControl.ResourceType.RegistryWow6432Key
+  - System.Security.AccessControl.ResourceType.Service
+  - System.Security.AccessControl.ResourceType.Unknown
+  - System.Security.AccessControl.ResourceType.WindowObject
+  - System.Security.AccessControl.ResourceType.WmiGuidObject
+  href: System.Security.AccessControl.ResourceType.yml
+  name: ResourceType
+  fullName: System.Security.AccessControl.ResourceType
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Security/AccessControl/Enums.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Security/AccessControl/Enums.cs
+    startLine: 42
+  assemblies:
+  - mscorlib
+  namespace: System.Security.AccessControl
+  summary: Specifies the defined native object types.
+  syntax:
+    content: public enum ResourceType
+    content.vb: Public Enum ResourceType
+- uid: System.Security.AccessControl.ResourceType.Unknown
+  id: Unknown
+  parent: System.Security.AccessControl.ResourceType
+  href: System.Security.AccessControl.ResourceType.yml
+  name: Unknown
+  fullName: System.Security.AccessControl.ResourceType.Unknown
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/AccessControl/Enums.cs
+    startLine: 44
+  assemblies:
+  - mscorlib
+  namespace: System.Security.AccessControl
+  summary: An unknown object type.
+  syntax:
+    content: Unknown = 0
+- uid: System.Security.AccessControl.ResourceType.FileObject
+  id: FileObject
+  parent: System.Security.AccessControl.ResourceType
+  href: System.Security.AccessControl.ResourceType.yml
+  name: FileObject
+  fullName: System.Security.AccessControl.ResourceType.FileObject
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/AccessControl/Enums.cs
+    startLine: 45
+  assemblies:
+  - mscorlib
+  namespace: System.Security.AccessControl
+  summary: A file or directory.
+  syntax:
+    content: FileObject = 1
+- uid: System.Security.AccessControl.ResourceType.Service
+  id: Service
+  parent: System.Security.AccessControl.ResourceType
+  href: System.Security.AccessControl.ResourceType.yml
+  name: Service
+  fullName: System.Security.AccessControl.ResourceType.Service
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/AccessControl/Enums.cs
+    startLine: 46
+  assemblies:
+  - mscorlib
+  namespace: System.Security.AccessControl
+  summary: A Windows service.
+  syntax:
+    content: Service = 2
+- uid: System.Security.AccessControl.ResourceType.Printer
+  id: Printer
+  parent: System.Security.AccessControl.ResourceType
+  href: System.Security.AccessControl.ResourceType.yml
+  name: Printer
+  fullName: System.Security.AccessControl.ResourceType.Printer
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/AccessControl/Enums.cs
+    startLine: 47
+  assemblies:
+  - mscorlib
+  namespace: System.Security.AccessControl
+  summary: A printer.
+  syntax:
+    content: Printer = 3
+- uid: System.Security.AccessControl.ResourceType.RegistryKey
+  id: RegistryKey
+  parent: System.Security.AccessControl.ResourceType
+  href: System.Security.AccessControl.ResourceType.yml
+  name: RegistryKey
+  fullName: System.Security.AccessControl.ResourceType.RegistryKey
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/AccessControl/Enums.cs
+    startLine: 48
+  assemblies:
+  - mscorlib
+  namespace: System.Security.AccessControl
+  summary: A registry key.
+  syntax:
+    content: RegistryKey = 4
+- uid: System.Security.AccessControl.ResourceType.LMShare
+  id: LMShare
+  parent: System.Security.AccessControl.ResourceType
+  href: System.Security.AccessControl.ResourceType.yml
+  name: LMShare
+  fullName: System.Security.AccessControl.ResourceType.LMShare
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/AccessControl/Enums.cs
+    startLine: 49
+  assemblies:
+  - mscorlib
+  namespace: System.Security.AccessControl
+  summary: A network share.
+  syntax:
+    content: LMShare = 5
+- uid: System.Security.AccessControl.ResourceType.KernelObject
+  id: KernelObject
+  parent: System.Security.AccessControl.ResourceType
+  href: System.Security.AccessControl.ResourceType.yml
+  name: KernelObject
+  fullName: System.Security.AccessControl.ResourceType.KernelObject
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/AccessControl/Enums.cs
+    startLine: 50
+  assemblies:
+  - mscorlib
+  namespace: System.Security.AccessControl
+  summary: A local kernel object.
+  syntax:
+    content: KernelObject = 6
+- uid: System.Security.AccessControl.ResourceType.WindowObject
+  id: WindowObject
+  parent: System.Security.AccessControl.ResourceType
+  href: System.Security.AccessControl.ResourceType.yml
+  name: WindowObject
+  fullName: System.Security.AccessControl.ResourceType.WindowObject
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/AccessControl/Enums.cs
+    startLine: 51
+  assemblies:
+  - mscorlib
+  namespace: System.Security.AccessControl
+  summary: A window station or desktop object on the local computer.
+  syntax:
+    content: WindowObject = 7
+- uid: System.Security.AccessControl.ResourceType.DSObject
+  id: DSObject
+  parent: System.Security.AccessControl.ResourceType
+  href: System.Security.AccessControl.ResourceType.yml
+  name: DSObject
+  fullName: System.Security.AccessControl.ResourceType.DSObject
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/AccessControl/Enums.cs
+    startLine: 52
+  assemblies:
+  - mscorlib
+  namespace: System.Security.AccessControl
+  summary: A directory service (DS) object or a property set or property of a directory service object.
+  syntax:
+    content: DSObject = 8
+- uid: System.Security.AccessControl.ResourceType.DSObjectAll
+  id: DSObjectAll
+  parent: System.Security.AccessControl.ResourceType
+  href: System.Security.AccessControl.ResourceType.yml
+  name: DSObjectAll
+  fullName: System.Security.AccessControl.ResourceType.DSObjectAll
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/AccessControl/Enums.cs
+    startLine: 53
+  assemblies:
+  - mscorlib
+  namespace: System.Security.AccessControl
+  summary: A directory service object and all of its property sets and properties.
+  syntax:
+    content: DSObjectAll = 9
+- uid: System.Security.AccessControl.ResourceType.ProviderDefined
+  id: ProviderDefined
+  parent: System.Security.AccessControl.ResourceType
+  href: System.Security.AccessControl.ResourceType.yml
+  name: ProviderDefined
+  fullName: System.Security.AccessControl.ResourceType.ProviderDefined
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/AccessControl/Enums.cs
+    startLine: 54
+  assemblies:
+  - mscorlib
+  namespace: System.Security.AccessControl
+  summary: An object defined by a provider.
+  syntax:
+    content: ProviderDefined = 10
+- uid: System.Security.AccessControl.ResourceType.WmiGuidObject
+  id: WmiGuidObject
+  parent: System.Security.AccessControl.ResourceType
+  href: System.Security.AccessControl.ResourceType.yml
+  name: WmiGuidObject
+  fullName: System.Security.AccessControl.ResourceType.WmiGuidObject
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/AccessControl/Enums.cs
+    startLine: 55
+  assemblies:
+  - mscorlib
+  namespace: System.Security.AccessControl
+  summary: A Windows Management Instrumentation (WMI) object.
+  syntax:
+    content: WmiGuidObject = 11
+- uid: System.Security.AccessControl.ResourceType.RegistryWow6432Key
+  id: RegistryWow6432Key
+  parent: System.Security.AccessControl.ResourceType
+  href: System.Security.AccessControl.ResourceType.yml
+  name: RegistryWow6432Key
+  fullName: System.Security.AccessControl.ResourceType.RegistryWow6432Key
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/AccessControl/Enums.cs
+    startLine: 56
+  assemblies:
+  - mscorlib
+  namespace: System.Security.AccessControl
+  summary: An object for a registry entry under WOW64.
+  syntax:
+    content: RegistryWow6432Key = 12
+references:
+- uid: System.Security.AccessControl
+  isExternal: false
+  name: System.Security.AccessControl
+  fullName: System.Security.AccessControl
+  type: Namespace

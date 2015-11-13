@@ -1,0 +1,690 @@
+items:
+- uid: System.Collections.Immutable.IImmutableSet`1
+  id: IImmutableSet`1
+  parent: System.Collections.Immutable
+  children:
+  - System.Collections.Immutable.IImmutableSet`1.Add(`0)
+  - System.Collections.Immutable.IImmutableSet`1.Clear
+  - System.Collections.Immutable.IImmutableSet`1.Contains(`0)
+  - System.Collections.Immutable.IImmutableSet`1.Except(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Immutable.IImmutableSet`1.Intersect(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Immutable.IImmutableSet`1.IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Immutable.IImmutableSet`1.IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Immutable.IImmutableSet`1.IsSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Immutable.IImmutableSet`1.IsSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Immutable.IImmutableSet`1.Overlaps(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Immutable.IImmutableSet`1.Remove(`0)
+  - System.Collections.Immutable.IImmutableSet`1.SetEquals(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Immutable.IImmutableSet`1.SymmetricExcept(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Immutable.IImmutableSet`1.TryGetValue(`0,`0@)
+  - System.Collections.Immutable.IImmutableSet`1.Union(System.Collections.Generic.IEnumerable{`0})
+  href: System.Collections.Immutable.IImmutableSet`1.yml
+  name: IImmutableSet<T>
+  name.vb: IImmutableSet(Of T)
+  fullName: System.Collections.Immutable.IImmutableSet<T>
+  fullName.vb: System.Collections.Immutable.IImmutableSet(Of T)
+  type: Interface
+  source:
+    remote: &o0
+      path: src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableSet.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableSet.cs
+    startLine: 17
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: A set of elements that can only be modified by creating a new instance of the set.
+  remarks: >-
+    Mutations on this set generate new sets.  Incremental changes to a set share as much memory as possible with the prior versions of a set,
+
+    while allowing garbage collection to clean up any unique set data that is no longer being referenced.
+  syntax:
+    content: 'public interface IImmutableSet<T> : IReadOnlyCollection<T>, IEnumerable<T>, IEnumerable'
+    content.vb: Public Interface IImmutableSet(Of T) Inherits IReadOnlyCollection(Of T)
+    typeParameters:
+    - id: T
+      description: The type of element stored in the set.
+  inheritedMembers:
+  - System.Collections.Generic.IReadOnlyCollection{{T}}.Count
+  - System.Collections.Generic.IEnumerable{{T}}.GetEnumerator
+- uid: System.Collections.Immutable.IImmutableSet`1.Clear
+  id: Clear
+  parent: System.Collections.Immutable.IImmutableSet`1
+  href: System.Collections.Immutable.IImmutableSet`1.yml
+  name: Clear()
+  fullName: System.Collections.Immutable.IImmutableSet<T>.Clear()
+  fullName.vb: System.Collections.Immutable.IImmutableSet(Of T).Clear()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableSet.cs
+    startLine: 24
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Gets an empty set that retains the same sort or unordered semantics that this instance has.
+  syntax:
+    content: IImmutableSet<T> Clear()
+    content.vb: Function Clear As IImmutableSet(Of T)
+    return:
+      type: System.Collections.Immutable.IImmutableSet`1
+- uid: System.Collections.Immutable.IImmutableSet`1.Contains(`0)
+  id: Contains(`0)
+  parent: System.Collections.Immutable.IImmutableSet`1
+  href: System.Collections.Immutable.IImmutableSet`1.yml
+  name: Contains(T)
+  fullName: System.Collections.Immutable.IImmutableSet<T>.Contains(T)
+  fullName.vb: System.Collections.Immutable.IImmutableSet(Of T).Contains(T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableSet.cs
+    startLine: 34
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Determines whether this set contains the specified value.
+  syntax:
+    content: bool Contains(T value)
+    content.vb: Function Contains(value As T) As Boolean
+    parameters:
+    - id: value
+      type: '{T}'
+      description: The value.
+    return:
+      type: System.Boolean
+      description: <c>true</c> if the set contains the specified value; otherwise, <c>false</c>.
+- uid: System.Collections.Immutable.IImmutableSet`1.Add(`0)
+  id: Add(`0)
+  parent: System.Collections.Immutable.IImmutableSet`1
+  href: System.Collections.Immutable.IImmutableSet`1.yml
+  name: Add(T)
+  fullName: System.Collections.Immutable.IImmutableSet<T>.Add(T)
+  fullName.vb: System.Collections.Immutable.IImmutableSet(Of T).Add(T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableSet.cs
+    startLine: 42
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Adds the specified value to this set.
+  syntax:
+    content: IImmutableSet<T> Add(T value)
+    content.vb: Function Add(value As T) As IImmutableSet(Of T)
+    parameters:
+    - id: value
+      type: '{T}'
+      description: The value to add.
+    return:
+      type: System.Collections.Immutable.IImmutableSet`1
+      description: A new set with the element added, or this set if the element is already in this set.
+- uid: System.Collections.Immutable.IImmutableSet`1.Remove(`0)
+  id: Remove(`0)
+  parent: System.Collections.Immutable.IImmutableSet`1
+  href: System.Collections.Immutable.IImmutableSet`1.yml
+  name: Remove(T)
+  fullName: System.Collections.Immutable.IImmutableSet<T>.Remove(T)
+  fullName.vb: System.Collections.Immutable.IImmutableSet(Of T).Remove(T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableSet.cs
+    startLine: 50
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Removes the specified value from this set.
+  syntax:
+    content: IImmutableSet<T> Remove(T value)
+    content.vb: Function Remove(value As T) As IImmutableSet(Of T)
+    parameters:
+    - id: value
+      type: '{T}'
+      description: The value to remove.
+    return:
+      type: System.Collections.Immutable.IImmutableSet`1
+      description: A new set with the element removed, or this set if the element is not in this set.
+- uid: System.Collections.Immutable.IImmutableSet`1.TryGetValue(`0,`0@)
+  id: TryGetValue(`0,`0@)
+  parent: System.Collections.Immutable.IImmutableSet`1
+  href: System.Collections.Immutable.IImmutableSet`1.yml
+  name: TryGetValue(T, out T)
+  name.vb: TryGetValue(T, ByRef T)
+  fullName: System.Collections.Immutable.IImmutableSet<T>.TryGetValue(T, out T)
+  fullName.vb: System.Collections.Immutable.IImmutableSet(Of T).TryGetValue(T, ByRef T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableSet.cs
+    startLine: 65
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Searches the set for a given value and returns the equal value it finds, if any.
+  remarks: >-
+    This can be useful when you want to reuse a previously stored reference instead of
+
+    a newly constructed one (so that more sharing of references can occur) or to look up
+
+    a value that has more complete data than the value you currently have, although their
+
+    comparer functions indicate they are equal.
+  syntax:
+    content: bool TryGetValue(T equalValue, out T actualValue)
+    content.vb: Function TryGetValue(equalValue As T, ByRef actualValue As T) As Boolean
+    parameters:
+    - id: equalValue
+      type: '{T}'
+      description: The value to search for.
+    - id: actualValue
+      type: '{T}'
+      description: The value from the set that the search found, or <paramref name="equalValue" /> if the search yielded no match.
+    return:
+      type: System.Boolean
+      description: A value indicating whether the search was successful.
+- uid: System.Collections.Immutable.IImmutableSet`1.Intersect(System.Collections.Generic.IEnumerable{`0})
+  id: Intersect(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Immutable.IImmutableSet`1
+  href: System.Collections.Immutable.IImmutableSet`1.yml
+  name: Intersect(IEnumerable<T>)
+  name.vb: Intersect(IEnumerable(Of T))
+  fullName: System.Collections.Immutable.IImmutableSet<T>.Intersect(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Immutable.IImmutableSet(Of T).Intersect(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableSet.cs
+    startLine: 73
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Produces a set that contains elements that exist in both this set and the specified set.
+  syntax:
+    content: IImmutableSet<T> Intersect(IEnumerable<T> other)
+    content.vb: Function Intersect(other As IEnumerable(Of T)) As IImmutableSet(Of T)
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The set to intersect with this one.
+    return:
+      type: System.Collections.Immutable.IImmutableSet`1
+      description: A new set that contains any elements that exist in both sets.
+- uid: System.Collections.Immutable.IImmutableSet`1.Except(System.Collections.Generic.IEnumerable{`0})
+  id: Except(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Immutable.IImmutableSet`1
+  href: System.Collections.Immutable.IImmutableSet`1.yml
+  name: Except(IEnumerable<T>)
+  name.vb: Except(IEnumerable(Of T))
+  fullName: System.Collections.Immutable.IImmutableSet<T>.Except(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Immutable.IImmutableSet(Of T).Except(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableSet.cs
+    startLine: 81
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Removes a given set of items from this set.
+  syntax:
+    content: IImmutableSet<T> Except(IEnumerable<T> other)
+    content.vb: Function Except(other As IEnumerable(Of T)) As IImmutableSet(Of T)
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The items to remove from this set.
+    return:
+      type: System.Collections.Immutable.IImmutableSet`1
+      description: The new set with the items removed; or the original set if none of the items were in the set.
+- uid: System.Collections.Immutable.IImmutableSet`1.SymmetricExcept(System.Collections.Generic.IEnumerable{`0})
+  id: SymmetricExcept(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Immutable.IImmutableSet`1
+  href: System.Collections.Immutable.IImmutableSet`1.yml
+  name: SymmetricExcept(IEnumerable<T>)
+  name.vb: SymmetricExcept(IEnumerable(Of T))
+  fullName: System.Collections.Immutable.IImmutableSet<T>.SymmetricExcept(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Immutable.IImmutableSet(Of T).SymmetricExcept(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableSet.cs
+    startLine: 89
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Produces a set that contains elements either in this set or a given sequence, but not both.
+  syntax:
+    content: IImmutableSet<T> SymmetricExcept(IEnumerable<T> other)
+    content.vb: Function SymmetricExcept(other As IEnumerable(Of T)) As IImmutableSet(Of T)
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The other sequence of items.
+    return:
+      type: System.Collections.Immutable.IImmutableSet`1
+      description: The new set.
+- uid: System.Collections.Immutable.IImmutableSet`1.Union(System.Collections.Generic.IEnumerable{`0})
+  id: Union(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Immutable.IImmutableSet`1
+  href: System.Collections.Immutable.IImmutableSet`1.yml
+  name: Union(IEnumerable<T>)
+  name.vb: Union(IEnumerable(Of T))
+  fullName: System.Collections.Immutable.IImmutableSet<T>.Union(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Immutable.IImmutableSet(Of T).Union(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableSet.cs
+    startLine: 97
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Adds a given set of items to this set.
+  syntax:
+    content: IImmutableSet<T> Union(IEnumerable<T> other)
+    content.vb: Function Union(other As IEnumerable(Of T)) As IImmutableSet(Of T)
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The items to add.
+    return:
+      type: System.Collections.Immutable.IImmutableSet`1
+      description: The new set with the items added; or the original set if all the items were already in the set.
+- uid: System.Collections.Immutable.IImmutableSet`1.SetEquals(System.Collections.Generic.IEnumerable{`0})
+  id: SetEquals(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Immutable.IImmutableSet`1
+  href: System.Collections.Immutable.IImmutableSet`1.yml
+  name: SetEquals(IEnumerable<T>)
+  name.vb: SetEquals(IEnumerable(Of T))
+  fullName: System.Collections.Immutable.IImmutableSet<T>.SetEquals(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Immutable.IImmutableSet(Of T).SetEquals(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableSet.cs
+    startLine: 105
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Checks whether a given sequence of items entirely describe the contents of this set.
+  syntax:
+    content: bool SetEquals(IEnumerable<T> other)
+    content.vb: Function SetEquals(other As IEnumerable(Of T)) As Boolean
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The sequence of items to check against this set.
+    return:
+      type: System.Boolean
+      description: A value indicating whether the sets are equal.
+- uid: System.Collections.Immutable.IImmutableSet`1.IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  id: IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Immutable.IImmutableSet`1
+  href: System.Collections.Immutable.IImmutableSet`1.yml
+  name: IsProperSubsetOf(IEnumerable<T>)
+  name.vb: IsProperSubsetOf(IEnumerable(Of T))
+  fullName: System.Collections.Immutable.IImmutableSet<T>.IsProperSubsetOf(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Immutable.IImmutableSet(Of T).IsProperSubsetOf(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableSet.cs
+    startLine: 113
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Determines whether the current set is a proper (strict) subset of a specified collection.
+  syntax:
+    content: bool IsProperSubsetOf(IEnumerable<T> other)
+    content.vb: Function IsProperSubsetOf(other As IEnumerable(Of T)) As Boolean
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to compare to the current set.
+    return:
+      type: System.Boolean
+      description: true if the current set is a correct subset of other; otherwise, false.
+- uid: System.Collections.Immutable.IImmutableSet`1.IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  id: IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Immutable.IImmutableSet`1
+  href: System.Collections.Immutable.IImmutableSet`1.yml
+  name: IsProperSupersetOf(IEnumerable<T>)
+  name.vb: IsProperSupersetOf(IEnumerable(Of T))
+  fullName: System.Collections.Immutable.IImmutableSet<T>.IsProperSupersetOf(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Immutable.IImmutableSet(Of T).IsProperSupersetOf(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableSet.cs
+    startLine: 121
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Determines whether the current set is a proper superset of a specified collection.
+  syntax:
+    content: bool IsProperSupersetOf(IEnumerable<T> other)
+    content.vb: Function IsProperSupersetOf(other As IEnumerable(Of T)) As Boolean
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to compare to the current set.
+    return:
+      type: System.Boolean
+      description: true if the current set is a correct superset of other; otherwise, false.
+- uid: System.Collections.Immutable.IImmutableSet`1.IsSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  id: IsSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Immutable.IImmutableSet`1
+  href: System.Collections.Immutable.IImmutableSet`1.yml
+  name: IsSubsetOf(IEnumerable<T>)
+  name.vb: IsSubsetOf(IEnumerable(Of T))
+  fullName: System.Collections.Immutable.IImmutableSet<T>.IsSubsetOf(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Immutable.IImmutableSet(Of T).IsSubsetOf(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableSet.cs
+    startLine: 129
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Determines whether a set is a subset of a specified collection.
+  syntax:
+    content: bool IsSubsetOf(IEnumerable<T> other)
+    content.vb: Function IsSubsetOf(other As IEnumerable(Of T)) As Boolean
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to compare to the current set.
+    return:
+      type: System.Boolean
+      description: true if the current set is a subset of other; otherwise, false.
+- uid: System.Collections.Immutable.IImmutableSet`1.IsSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  id: IsSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Immutable.IImmutableSet`1
+  href: System.Collections.Immutable.IImmutableSet`1.yml
+  name: IsSupersetOf(IEnumerable<T>)
+  name.vb: IsSupersetOf(IEnumerable(Of T))
+  fullName: System.Collections.Immutable.IImmutableSet<T>.IsSupersetOf(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Immutable.IImmutableSet(Of T).IsSupersetOf(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableSet.cs
+    startLine: 137
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Determines whether the current set is a superset of a specified collection.
+  syntax:
+    content: bool IsSupersetOf(IEnumerable<T> other)
+    content.vb: Function IsSupersetOf(other As IEnumerable(Of T)) As Boolean
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to compare to the current set.
+    return:
+      type: System.Boolean
+      description: true if the current set is a superset of other; otherwise, false.
+- uid: System.Collections.Immutable.IImmutableSet`1.Overlaps(System.Collections.Generic.IEnumerable{`0})
+  id: Overlaps(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Immutable.IImmutableSet`1
+  href: System.Collections.Immutable.IImmutableSet`1.yml
+  name: Overlaps(IEnumerable<T>)
+  name.vb: Overlaps(IEnumerable(Of T))
+  fullName: System.Collections.Immutable.IImmutableSet<T>.Overlaps(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Immutable.IImmutableSet(Of T).Overlaps(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableSet.cs
+    startLine: 145
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Determines whether the current set overlaps with the specified collection.
+  syntax:
+    content: bool Overlaps(IEnumerable<T> other)
+    content.vb: Function Overlaps(other As IEnumerable(Of T)) As Boolean
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to compare to the current set.
+    return:
+      type: System.Boolean
+      description: true if the current set and other share at least one common element; otherwise, false.
+references:
+- uid: System.Collections.Immutable
+  isExternal: false
+  name: System.Collections.Immutable
+  fullName: System.Collections.Immutable
+  type: Namespace
+- uid: System.Collections.Generic.IReadOnlyCollection{{T}}.Count
+  parent: System.Collections.Generic.IReadOnlyCollection{{T}}
+  definition: System.Collections.Generic.IReadOnlyCollection`1.Count
+  href: System.Collections.Generic.IReadOnlyCollection`1.yml
+  name: Count
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>.Count
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T).Count
+- uid: System.Collections.Generic.IEnumerable{{T}}.GetEnumerator
+  parent: System.Collections.Generic.IEnumerable{{T}}
+  definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  name: GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable(Of T).GetEnumerator
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IReadOnlyCollection`1.Count
+  parent: System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: false
+  href: System.Collections.Generic.IReadOnlyCollection`1.yml
+  name: Count
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>.Count
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T).Count
+- uid: System.Collections.Generic.IReadOnlyCollection{{T}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  name: IReadOnlyCollection<T>
+  name.vb: IReadOnlyCollection(Of T)
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    fullName: System.Collections.Generic.IReadOnlyCollection
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    fullName: System.Collections.Generic.IReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  parent: System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable(Of T).GetEnumerator
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IReadOnlyCollection<T>
+  name.vb: IReadOnlyCollection(Of T)
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    fullName: System.Collections.Generic.IReadOnlyCollection
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    fullName: System.Collections.Generic.IReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.Generic.IEnumerable`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.IImmutableSet`1
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.IImmutableSet`1.yml
+  name: IImmutableSet<T>
+  name.vb: IImmutableSet(Of T)
+  fullName: System.Collections.Immutable.IImmutableSet<T>
+  fullName.vb: System.Collections.Immutable.IImmutableSet(Of T)
+  type: Interface
+  summary: A set of elements that can only be modified by creating a new instance of the set.
+  spec.csharp:
+  - uid: System.Collections.Immutable.IImmutableSet`1
+    name: IImmutableSet
+    fullName: System.Collections.Immutable.IImmutableSet
+    href: System.Collections.Immutable.IImmutableSet`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.IImmutableSet`1
+    name: IImmutableSet
+    fullName: System.Collections.Immutable.IImmutableSet
+    href: System.Collections.Immutable.IImmutableSet`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: '{T}'
+  isExternal: false
+  name: T
+  fullName: T
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

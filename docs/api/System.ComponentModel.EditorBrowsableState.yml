@@ -1,0 +1,83 @@
+items:
+- uid: System.ComponentModel.EditorBrowsableState
+  id: EditorBrowsableState
+  parent: System.ComponentModel
+  children:
+  - System.ComponentModel.EditorBrowsableState.Advanced
+  - System.ComponentModel.EditorBrowsableState.Always
+  - System.ComponentModel.EditorBrowsableState.Never
+  href: System.ComponentModel.EditorBrowsableState.yml
+  name: EditorBrowsableState
+  fullName: System.ComponentModel.EditorBrowsableState
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Runtime/src/System/ComponentModel/EditorBrowsableAttribute.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Runtime/src/System/ComponentModel/EditorBrowsableAttribute.cs
+    startLine: 51
+  assemblies:
+  - System.Runtime.CoreCLR
+  namespace: System.ComponentModel
+  summary: Specifies the browsable state of a property or method from within an editor.
+  syntax:
+    content: public enum EditorBrowsableState
+    content.vb: Public Enum EditorBrowsableState
+- uid: System.ComponentModel.EditorBrowsableState.Always
+  id: Always
+  parent: System.ComponentModel.EditorBrowsableState
+  href: System.ComponentModel.EditorBrowsableState.yml
+  name: Always
+  fullName: System.ComponentModel.EditorBrowsableState.Always
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Runtime/src/System/ComponentModel/EditorBrowsableAttribute.cs
+    startLine: 56
+  assemblies:
+  - System.Runtime.CoreCLR
+  namespace: System.ComponentModel
+  summary: The property or method is always browsable from within an editor.
+  syntax:
+    content: Always = 0
+- uid: System.ComponentModel.EditorBrowsableState.Never
+  id: Never
+  parent: System.ComponentModel.EditorBrowsableState
+  href: System.ComponentModel.EditorBrowsableState.yml
+  name: Never
+  fullName: System.ComponentModel.EditorBrowsableState.Never
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Runtime/src/System/ComponentModel/EditorBrowsableAttribute.cs
+    startLine: 60
+  assemblies:
+  - System.Runtime.CoreCLR
+  namespace: System.ComponentModel
+  summary: The property or method is never browsable from within an editor.
+  syntax:
+    content: Never = 1
+- uid: System.ComponentModel.EditorBrowsableState.Advanced
+  id: Advanced
+  parent: System.ComponentModel.EditorBrowsableState
+  href: System.ComponentModel.EditorBrowsableState.yml
+  name: Advanced
+  fullName: System.ComponentModel.EditorBrowsableState.Advanced
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Runtime/src/System/ComponentModel/EditorBrowsableAttribute.cs
+    startLine: 64
+  assemblies:
+  - System.Runtime.CoreCLR
+  namespace: System.ComponentModel
+  summary: The property or method is a feature that only advanced users should see. An editor can either show or hide such properties.
+  syntax:
+    content: Advanced = 2
+references:
+- uid: System.ComponentModel
+  isExternal: false
+  name: System.ComponentModel
+  fullName: System.ComponentModel
+  type: Namespace

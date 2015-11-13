@@ -1,0 +1,173 @@
+items:
+- uid: System.Security.Cryptography.X509Certificates.StoreName
+  id: StoreName
+  parent: System.Security.Cryptography.X509Certificates
+  children:
+  - System.Security.Cryptography.X509Certificates.StoreName.AddressBook
+  - System.Security.Cryptography.X509Certificates.StoreName.AuthRoot
+  - System.Security.Cryptography.X509Certificates.StoreName.CertificateAuthority
+  - System.Security.Cryptography.X509Certificates.StoreName.Disallowed
+  - System.Security.Cryptography.X509Certificates.StoreName.My
+  - System.Security.Cryptography.X509Certificates.StoreName.Root
+  - System.Security.Cryptography.X509Certificates.StoreName.TrustedPeople
+  - System.Security.Cryptography.X509Certificates.StoreName.TrustedPublisher
+  href: System.Security.Cryptography.X509Certificates.StoreName.yml
+  name: StoreName
+  fullName: System.Security.Cryptography.X509Certificates.StoreName
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/StoreName.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/StoreName.cs
+    startLine: 8
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Specifies the name of the X.509 certificate store to open.
+  syntax:
+    content: public enum StoreName
+    content.vb: Public Enum StoreName
+- uid: System.Security.Cryptography.X509Certificates.StoreName.AddressBook
+  id: AddressBook
+  parent: System.Security.Cryptography.X509Certificates.StoreName
+  href: System.Security.Cryptography.X509Certificates.StoreName.yml
+  name: AddressBook
+  fullName: System.Security.Cryptography.X509Certificates.StoreName.AddressBook
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/StoreName.cs
+    startLine: 10
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The X.509 certificate store for other users.
+  syntax:
+    content: AddressBook = 1
+- uid: System.Security.Cryptography.X509Certificates.StoreName.AuthRoot
+  id: AuthRoot
+  parent: System.Security.Cryptography.X509Certificates.StoreName
+  href: System.Security.Cryptography.X509Certificates.StoreName.yml
+  name: AuthRoot
+  fullName: System.Security.Cryptography.X509Certificates.StoreName.AuthRoot
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/StoreName.cs
+    startLine: 11
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The X.509 certificate store for third-party certificate authorities (CAs).
+  syntax:
+    content: AuthRoot = 2
+- uid: System.Security.Cryptography.X509Certificates.StoreName.CertificateAuthority
+  id: CertificateAuthority
+  parent: System.Security.Cryptography.X509Certificates.StoreName
+  href: System.Security.Cryptography.X509Certificates.StoreName.yml
+  name: CertificateAuthority
+  fullName: System.Security.Cryptography.X509Certificates.StoreName.CertificateAuthority
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/StoreName.cs
+    startLine: 12
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The X.509 certificate store for intermediate certificate authorities (CAs).
+  syntax:
+    content: CertificateAuthority = 3
+- uid: System.Security.Cryptography.X509Certificates.StoreName.Disallowed
+  id: Disallowed
+  parent: System.Security.Cryptography.X509Certificates.StoreName
+  href: System.Security.Cryptography.X509Certificates.StoreName.yml
+  name: Disallowed
+  fullName: System.Security.Cryptography.X509Certificates.StoreName.Disallowed
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/StoreName.cs
+    startLine: 13
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The X.509 certificate store for revoked certificates.
+  syntax:
+    content: Disallowed = 4
+- uid: System.Security.Cryptography.X509Certificates.StoreName.My
+  id: My
+  parent: System.Security.Cryptography.X509Certificates.StoreName
+  href: System.Security.Cryptography.X509Certificates.StoreName.yml
+  name: My
+  fullName: System.Security.Cryptography.X509Certificates.StoreName.My
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/StoreName.cs
+    startLine: 14
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The X.509 certificate store for personal certificates.
+  syntax:
+    content: My = 5
+- uid: System.Security.Cryptography.X509Certificates.StoreName.Root
+  id: Root
+  parent: System.Security.Cryptography.X509Certificates.StoreName
+  href: System.Security.Cryptography.X509Certificates.StoreName.yml
+  name: Root
+  fullName: System.Security.Cryptography.X509Certificates.StoreName.Root
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/StoreName.cs
+    startLine: 15
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The X.509 certificate store for trusted root certificate authorities (CAs).
+  syntax:
+    content: Root = 6
+- uid: System.Security.Cryptography.X509Certificates.StoreName.TrustedPeople
+  id: TrustedPeople
+  parent: System.Security.Cryptography.X509Certificates.StoreName
+  href: System.Security.Cryptography.X509Certificates.StoreName.yml
+  name: TrustedPeople
+  fullName: System.Security.Cryptography.X509Certificates.StoreName.TrustedPeople
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/StoreName.cs
+    startLine: 16
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The X.509 certificate store for directly trusted people and resources.
+  syntax:
+    content: TrustedPeople = 7
+- uid: System.Security.Cryptography.X509Certificates.StoreName.TrustedPublisher
+  id: TrustedPublisher
+  parent: System.Security.Cryptography.X509Certificates.StoreName
+  href: System.Security.Cryptography.X509Certificates.StoreName.yml
+  name: TrustedPublisher
+  fullName: System.Security.Cryptography.X509Certificates.StoreName.TrustedPublisher
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/StoreName.cs
+    startLine: 17
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The X.509 certificate store for directly trusted publishers.
+  syntax:
+    content: TrustedPublisher = 8
+references:
+- uid: System.Security.Cryptography.X509Certificates
+  isExternal: false
+  name: System.Security.Cryptography.X509Certificates
+  fullName: System.Security.Cryptography.X509Certificates
+  type: Namespace

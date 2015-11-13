@@ -1,0 +1,41 @@
+items:
+- uid: System.Threading.WaitCallback
+  id: WaitCallback
+  parent: System.Threading
+  children: []
+  href: System.Threading.WaitCallback.yml
+  name: WaitCallback
+  fullName: System.Threading.WaitCallback
+  type: Delegate
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/ThreadPool.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Threading/ThreadPool.cs
+    startLine: 1130
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Represents a callback method to be executed by a thread pool thread.
+  syntax:
+    content: public delegate void WaitCallback(object state);
+    content.vb: Public Delegate Sub WaitCallback(state As Object)
+    parameters:
+    - id: state
+      type: System.Object
+      description: An object containing information to be used by the callback method.
+references:
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

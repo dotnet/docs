@@ -1,0 +1,83 @@
+items:
+- uid: System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption
+  id: DatabaseGeneratedOption
+  parent: System.ComponentModel.DataAnnotations.Schema
+  children:
+  - System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.Computed
+  - System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.Identity
+  - System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None
+  href: System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.yml
+  name: DatabaseGeneratedOption
+  fullName: System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/Schema/DatabaseGeneratedOption.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/Schema/DatabaseGeneratedOption.cs
+    startLine: 8
+  assemblies:
+  - System.ComponentModel.Annotations
+  namespace: System.ComponentModel.DataAnnotations.Schema
+  summary: Represents the pattern used to generate values for a property in the database.
+  syntax:
+    content: public enum DatabaseGeneratedOption
+    content.vb: Public Enum DatabaseGeneratedOption
+- uid: System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None
+  id: None
+  parent: System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption
+  href: System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.yml
+  name: None
+  fullName: System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/Schema/DatabaseGeneratedOption.cs
+    startLine: 13
+  assemblies:
+  - System.ComponentModel.Annotations
+  namespace: System.ComponentModel.DataAnnotations.Schema
+  summary: The database does not generate values.
+  syntax:
+    content: None = 0
+- uid: System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.Identity
+  id: Identity
+  parent: System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption
+  href: System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.yml
+  name: Identity
+  fullName: System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.Identity
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/Schema/DatabaseGeneratedOption.cs
+    startLine: 18
+  assemblies:
+  - System.ComponentModel.Annotations
+  namespace: System.ComponentModel.DataAnnotations.Schema
+  summary: The database generates a value when a row is inserted.
+  syntax:
+    content: Identity = 1
+- uid: System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.Computed
+  id: Computed
+  parent: System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption
+  href: System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.yml
+  name: Computed
+  fullName: System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.Computed
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/Schema/DatabaseGeneratedOption.cs
+    startLine: 23
+  assemblies:
+  - System.ComponentModel.Annotations
+  namespace: System.ComponentModel.DataAnnotations.Schema
+  summary: The database generates a value when a row is inserted or updated.
+  syntax:
+    content: Computed = 2
+references:
+- uid: System.ComponentModel.DataAnnotations.Schema
+  isExternal: false
+  name: System.ComponentModel.DataAnnotations.Schema
+  fullName: System.ComponentModel.DataAnnotations.Schema
+  type: Namespace

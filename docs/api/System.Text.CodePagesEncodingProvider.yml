@@ -1,0 +1,525 @@
+items:
+- uid: System.Text.CodePagesEncodingProvider
+  id: CodePagesEncodingProvider
+  parent: System.Text
+  children:
+  - System.Text.CodePagesEncodingProvider.GetEncoding(System.Int32)
+  - System.Text.CodePagesEncodingProvider.GetEncoding(System.String)
+  - System.Text.CodePagesEncodingProvider.Instance
+  href: System.Text.CodePagesEncodingProvider.yml
+  name: CodePagesEncodingProvider
+  fullName: System.Text.CodePagesEncodingProvider
+  type: Class
+  source:
+    remote:
+      path: src/System.Text.Encoding.CodePages/src/System/Text/CodePagesEncodingProvider.Windows.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Text.Encoding.CodePages/src/System/Text/CodePagesEncodingProvider.Windows.cs
+    startLine: 5
+  assemblies:
+  - System.Text.Encoding.CodePages
+  namespace: System.Text
+  syntax:
+    content: 'public sealed class CodePagesEncodingProvider : EncodingProvider'
+    content.vb: Public NotInheritable Class CodePagesEncodingProvider Inherits EncodingProvider
+  inheritance:
+  - System.Object
+  - System.Text.EncodingProvider
+  inheritedMembers:
+  - System.Text.EncodingProvider.GetEncoding(System.String,System.Text.EncoderFallback,System.Text.DecoderFallback)
+  - System.Text.EncodingProvider.GetEncoding(System.Int32,System.Text.EncoderFallback,System.Text.DecoderFallback)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Text.CodePagesEncodingProvider.Instance
+  id: Instance
+  parent: System.Text.CodePagesEncodingProvider
+  href: System.Text.CodePagesEncodingProvider.yml
+  name: Instance
+  fullName: System.Text.CodePagesEncodingProvider.Instance
+  type: Property
+  source:
+    remote: &o0
+      path: src/System.Text.Encoding.CodePages/src/System/Text/CodePagesEncodingProvider.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Text.Encoding.CodePages/src/System/Text/CodePagesEncodingProvider.cs
+    startLine: 17
+  assemblies:
+  - System.Text.Encoding.CodePages
+  namespace: System.Text
+  syntax:
+    content: public static EncodingProvider Instance { get; }
+    content.vb: Public Shared ReadOnly Property Instance As EncodingProvider
+    parameters: []
+    return:
+      type: System.Text.EncodingProvider
+      description: 
+- uid: System.Text.CodePagesEncodingProvider.GetEncoding(System.Int32)
+  id: GetEncoding(System.Int32)
+  parent: System.Text.CodePagesEncodingProvider
+  href: System.Text.CodePagesEncodingProvider.yml
+  name: GetEncoding(Int32)
+  fullName: System.Text.CodePagesEncodingProvider.GetEncoding(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.Encoding.CodePages/src/System/Text/CodePagesEncodingProvider.cs
+    startLine: 22
+  assemblies:
+  - System.Text.Encoding.CodePages
+  namespace: System.Text
+  syntax:
+    content: public override Encoding GetEncoding(int codepage)
+    content.vb: Public Overrides Function GetEncoding(codepage As Integer) As Encoding
+    parameters:
+    - id: codepage
+      type: System.Int32
+    return:
+      type: System.Text.Encoding
+      description: 
+  overridden: System.Text.EncodingProvider.GetEncoding(System.Int32)
+- uid: System.Text.CodePagesEncodingProvider.GetEncoding(System.String)
+  id: GetEncoding(System.String)
+  parent: System.Text.CodePagesEncodingProvider
+  href: System.Text.CodePagesEncodingProvider.yml
+  name: GetEncoding(String)
+  fullName: System.Text.CodePagesEncodingProvider.GetEncoding(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Text.Encoding.CodePages/src/System/Text/CodePagesEncodingProvider.cs
+    startLine: 84
+  assemblies:
+  - System.Text.Encoding.CodePages
+  namespace: System.Text
+  syntax:
+    content: public override Encoding GetEncoding(string name)
+    content.vb: Public Overrides Function GetEncoding(name As String) As Encoding
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: System.Text.Encoding
+      description: 
+  overridden: System.Text.EncodingProvider.GetEncoding(System.String)
+references:
+- uid: System.Text
+  isExternal: false
+  name: System.Text
+  fullName: System.Text
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Text.EncodingProvider
+  parent: System.Text
+  isExternal: true
+  name: EncodingProvider
+  fullName: System.Text.EncodingProvider
+- uid: System.Text.EncodingProvider.GetEncoding(System.String,System.Text.EncoderFallback,System.Text.DecoderFallback)
+  parent: System.Text.EncodingProvider
+  isExternal: true
+  name: GetEncoding(String, EncoderFallback, DecoderFallback)
+  fullName: System.Text.EncodingProvider.GetEncoding(System.String, System.Text.EncoderFallback, System.Text.DecoderFallback)
+  spec.csharp:
+  - uid: System.Text.EncodingProvider.GetEncoding(System.String,System.Text.EncoderFallback,System.Text.DecoderFallback)
+    name: GetEncoding
+    fullName: System.Text.EncodingProvider.GetEncoding
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Text.EncoderFallback
+    name: EncoderFallback
+    fullName: System.Text.EncoderFallback
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Text.DecoderFallback
+    name: DecoderFallback
+    fullName: System.Text.DecoderFallback
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.EncodingProvider.GetEncoding(System.String,System.Text.EncoderFallback,System.Text.DecoderFallback)
+    name: GetEncoding
+    fullName: System.Text.EncodingProvider.GetEncoding
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Text.EncoderFallback
+    name: EncoderFallback
+    fullName: System.Text.EncoderFallback
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Text.DecoderFallback
+    name: DecoderFallback
+    fullName: System.Text.DecoderFallback
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Text.EncodingProvider.GetEncoding(System.Int32,System.Text.EncoderFallback,System.Text.DecoderFallback)
+  parent: System.Text.EncodingProvider
+  isExternal: true
+  name: GetEncoding(Int32, EncoderFallback, DecoderFallback)
+  fullName: System.Text.EncodingProvider.GetEncoding(System.Int32, System.Text.EncoderFallback, System.Text.DecoderFallback)
+  spec.csharp:
+  - uid: System.Text.EncodingProvider.GetEncoding(System.Int32,System.Text.EncoderFallback,System.Text.DecoderFallback)
+    name: GetEncoding
+    fullName: System.Text.EncodingProvider.GetEncoding
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Text.EncoderFallback
+    name: EncoderFallback
+    fullName: System.Text.EncoderFallback
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Text.DecoderFallback
+    name: DecoderFallback
+    fullName: System.Text.DecoderFallback
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.EncodingProvider.GetEncoding(System.Int32,System.Text.EncoderFallback,System.Text.DecoderFallback)
+    name: GetEncoding
+    fullName: System.Text.EncodingProvider.GetEncoding
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Text.EncoderFallback
+    name: EncoderFallback
+    fullName: System.Text.EncoderFallback
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Text.DecoderFallback
+    name: DecoderFallback
+    fullName: System.Text.DecoderFallback
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Text.EncodingProvider.GetEncoding(System.Int32)
+  parent: System.Text.EncodingProvider
+  isExternal: true
+  name: GetEncoding(Int32)
+  fullName: System.Text.EncodingProvider.GetEncoding(System.Int32)
+  spec.csharp:
+  - uid: System.Text.EncodingProvider.GetEncoding(System.Int32)
+    name: GetEncoding
+    fullName: System.Text.EncodingProvider.GetEncoding
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.EncodingProvider.GetEncoding(System.Int32)
+    name: GetEncoding
+    fullName: System.Text.EncodingProvider.GetEncoding
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Text.Encoding
+  parent: System.Text
+  isExternal: true
+  name: Encoding
+  fullName: System.Text.Encoding
+- uid: System.Text.EncodingProvider.GetEncoding(System.String)
+  parent: System.Text.EncodingProvider
+  isExternal: true
+  name: GetEncoding(String)
+  fullName: System.Text.EncodingProvider.GetEncoding(System.String)
+  spec.csharp:
+  - uid: System.Text.EncodingProvider.GetEncoding(System.String)
+    name: GetEncoding
+    fullName: System.Text.EncodingProvider.GetEncoding
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Text.EncodingProvider.GetEncoding(System.String)
+    name: GetEncoding
+    fullName: System.Text.EncodingProvider.GetEncoding
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String

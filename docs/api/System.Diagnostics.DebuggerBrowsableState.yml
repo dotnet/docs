@@ -1,0 +1,83 @@
+items:
+- uid: System.Diagnostics.DebuggerBrowsableState
+  id: DebuggerBrowsableState
+  parent: System.Diagnostics
+  children:
+  - System.Diagnostics.DebuggerBrowsableState.Collapsed
+  - System.Diagnostics.DebuggerBrowsableState.Never
+  - System.Diagnostics.DebuggerBrowsableState.RootHidden
+  href: System.Diagnostics.DebuggerBrowsableState.yml
+  name: DebuggerBrowsableState
+  fullName: System.Diagnostics.DebuggerBrowsableState
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Diagnostics/DebuggerAttributes.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Diagnostics/DebuggerAttributes.cs
+    startLine: 122
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics
+  summary: Provides display instructions for the debugger.
+  syntax:
+    content: public enum DebuggerBrowsableState
+    content.vb: Public Enum DebuggerBrowsableState
+- uid: System.Diagnostics.DebuggerBrowsableState.Never
+  id: Never
+  parent: System.Diagnostics.DebuggerBrowsableState
+  href: System.Diagnostics.DebuggerBrowsableState.yml
+  name: Never
+  fullName: System.Diagnostics.DebuggerBrowsableState.Never
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/DebuggerAttributes.cs
+    startLine: 125
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics
+  summary: Never show the element.
+  syntax:
+    content: Never = 0
+- uid: System.Diagnostics.DebuggerBrowsableState.Collapsed
+  id: Collapsed
+  parent: System.Diagnostics.DebuggerBrowsableState
+  href: System.Diagnostics.DebuggerBrowsableState.yml
+  name: Collapsed
+  fullName: System.Diagnostics.DebuggerBrowsableState.Collapsed
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/DebuggerAttributes.cs
+    startLine: 128
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics
+  summary: Show the element as collapsed.
+  syntax:
+    content: Collapsed = 2
+- uid: System.Diagnostics.DebuggerBrowsableState.RootHidden
+  id: RootHidden
+  parent: System.Diagnostics.DebuggerBrowsableState
+  href: System.Diagnostics.DebuggerBrowsableState.yml
+  name: RootHidden
+  fullName: System.Diagnostics.DebuggerBrowsableState.RootHidden
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/DebuggerAttributes.cs
+    startLine: 129
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics
+  summary: Do not display the root element; display the child elements if the element is a collection or array of items.
+  syntax:
+    content: RootHidden = 3
+references:
+- uid: System.Diagnostics
+  isExternal: false
+  name: System.Diagnostics
+  fullName: System.Diagnostics
+  type: Namespace

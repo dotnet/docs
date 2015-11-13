@@ -1,0 +1,344 @@
+items:
+- uid: System.Reflection.Pointer
+  id: Pointer
+  parent: System.Reflection
+  children:
+  - System.Reflection.Pointer.Box(System.Void*,System.Type)
+  - System.Reflection.Pointer.Unbox(System.Object)
+  href: System.Reflection.Pointer.yml
+  name: Pointer
+  fullName: System.Reflection.Pointer
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Reflection/Pointer.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Reflection/Pointer.cs
+    startLine: 18
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Provides a wrapper class for pointers.
+  syntax:
+    content: 'public sealed class Pointer : ISerializable'
+    content.vb: Public NotInheritable Class Pointer Implements ISerializable
+  inheritance:
+  - System.Object
+  implements:
+  - System.Runtime.Serialization.ISerializable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Reflection.Pointer.Box(System.Void*,System.Type)
+  id: Box(System.Void*,System.Type)
+  parent: System.Reflection.Pointer
+  href: System.Reflection.Pointer.yml
+  name: Box(Void*, Type)
+  fullName: System.Reflection.Pointer.Box(System.Void*, System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Pointer.cs
+    startLine: 38
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Boxes the supplied unmanaged memory pointer and the type associated with that pointer into a managed @'System.Reflection.Pointer' wrapper object. The value and the type are saved so they can be accessed from the native code during an invocation.
+  syntax:
+    content: public static object Box(void *ptr, Type type)
+    content.vb: Public Shared Function Box(ptr As *, type As Type) As Object
+    parameters:
+    - id: ptr
+      type: System.Void*
+      description: The supplied unmanaged memory pointer.
+    - id: type
+      type: System.Type
+      description: The type associated with the *ptr* parameter.
+    return:
+      type: System.Object
+  exceptions:
+  - type: System.ArgumentException
+    description: '*type* is not a pointer.'
+  - type: System.ArgumentNullException
+    description: '*type* is null.'
+- uid: System.Reflection.Pointer.Unbox(System.Object)
+  id: Unbox(System.Object)
+  parent: System.Reflection.Pointer
+  href: System.Reflection.Pointer.yml
+  name: Unbox(Object)
+  fullName: System.Reflection.Pointer.Unbox(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Pointer.cs
+    startLine: 57
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Returns the stored pointer.
+  syntax:
+    content: public static void *Unbox(object ptr)
+    content.vb: Public Shared Function Unbox(ptr As Object) As
+    parameters:
+    - id: ptr
+      type: System.Object
+      description: The stored pointer.
+    return:
+      type: System.Void*
+  exceptions:
+  - type: System.ArgumentException
+    description: '*ptr* is not a pointer.'
+references:
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Void*
+  isExternal: false
+  href: System.Void.yml
+  name: Void*
+  fullName: System.Void*
+  spec.csharp:
+  - uid: System.Void
+    name: Void
+    fullName: System.Void
+    href: System.Void.yml
+  - name: '*'
+    fullName: '*'
+  spec.vb:
+  - uid: System.Void
+    name: Void
+    fullName: System.Void
+    href: System.Void.yml
+  - name: '*'
+    fullName: '*'
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  fullName: System.Type

@@ -1,0 +1,2443 @@
+items:
+- uid: System.IO.UnmanagedMemoryStream
+  id: UnmanagedMemoryStream
+  parent: System.IO
+  children:
+  - System.IO.UnmanagedMemoryStream.#ctor
+  - System.IO.UnmanagedMemoryStream.#ctor(System.Byte*,System.Int64)
+  - System.IO.UnmanagedMemoryStream.#ctor(System.Byte*,System.Int64,System.Int64,System.IO.FileAccess)
+  - System.IO.UnmanagedMemoryStream.#ctor(System.Runtime.InteropServices.SafeBuffer,System.Int64,System.Int64)
+  - System.IO.UnmanagedMemoryStream.#ctor(System.Runtime.InteropServices.SafeBuffer,System.Int64,System.Int64,System.IO.FileAccess)
+  - System.IO.UnmanagedMemoryStream.CanRead
+  - System.IO.UnmanagedMemoryStream.CanSeek
+  - System.IO.UnmanagedMemoryStream.CanWrite
+  - System.IO.UnmanagedMemoryStream.Capacity
+  - System.IO.UnmanagedMemoryStream.Dispose(System.Boolean)
+  - System.IO.UnmanagedMemoryStream.Flush
+  - System.IO.UnmanagedMemoryStream.FlushAsync(System.Threading.CancellationToken)
+  - System.IO.UnmanagedMemoryStream.Initialize(System.Byte*,System.Int64,System.Int64,System.IO.FileAccess)
+  - System.IO.UnmanagedMemoryStream.Initialize(System.Runtime.InteropServices.SafeBuffer,System.Int64,System.Int64,System.IO.FileAccess)
+  - System.IO.UnmanagedMemoryStream.Length
+  - System.IO.UnmanagedMemoryStream.Position
+  - System.IO.UnmanagedMemoryStream.PositionPointer
+  - System.IO.UnmanagedMemoryStream.Read(System.Byte[],System.Int32,System.Int32)
+  - System.IO.UnmanagedMemoryStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  - System.IO.UnmanagedMemoryStream.ReadByte
+  - System.IO.UnmanagedMemoryStream.Seek(System.Int64,System.IO.SeekOrigin)
+  - System.IO.UnmanagedMemoryStream.SetLength(System.Int64)
+  - System.IO.UnmanagedMemoryStream.Write(System.Byte[],System.Int32,System.Int32)
+  - System.IO.UnmanagedMemoryStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  - System.IO.UnmanagedMemoryStream.WriteByte(System.Byte)
+  href: System.IO.UnmanagedMemoryStream.yml
+  name: UnmanagedMemoryStream
+  fullName: System.IO.UnmanagedMemoryStream
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/IO/UnmanagedMemoryStream.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryStream.cs
+    startLine: 82
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Provides access to unmanaged blocks of memory from managed code.
+  syntax:
+    content: 'public class UnmanagedMemoryStream : Stream, IDisposable'
+    content.vb: Public Class UnmanagedMemoryStream Inherits Stream Implements IDisposable
+  inheritance:
+  - System.Object
+  - System.IO.Stream
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.IO.Stream.Null
+  - System.IO.Stream.CanTimeout
+  - System.IO.Stream.ReadTimeout
+  - System.IO.Stream.WriteTimeout
+  - System.IO.Stream.CopyToAsync(System.IO.Stream)
+  - System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32)
+  - System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)
+  - System.IO.Stream.CopyTo(System.IO.Stream)
+  - System.IO.Stream.CopyTo(System.IO.Stream,System.Int32)
+  - System.IO.Stream.Close
+  - System.IO.Stream.Dispose
+  - System.IO.Stream.FlushAsync
+  - System.IO.Stream.CreateWaitHandle
+  - System.IO.Stream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+  - System.IO.Stream.EndRead(System.IAsyncResult)
+  - System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)
+  - System.IO.Stream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+  - System.IO.Stream.EndWrite(System.IAsyncResult)
+  - System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)
+  - System.IO.Stream.Synchronized(System.IO.Stream)
+  - System.IO.Stream.ObjectInvariant
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.IO.UnmanagedMemoryStream.#ctor
+  id: '#ctor'
+  parent: System.IO.UnmanagedMemoryStream
+  href: System.IO.UnmanagedMemoryStream.yml
+  name: UnmanagedMemoryStream()
+  fullName: System.IO.UnmanagedMemoryStream.UnmanagedMemoryStream()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryStream.cs
+    startLine: 101
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Initializes a new instance of the @'System.IO.UnmanagedMemoryStream' class.
+  syntax:
+    content: protected UnmanagedMemoryStream()
+    content.vb: Protected Sub New
+  exceptions:
+  - type: System.Security.SecurityException
+    description: The user does not have the required permission.
+- uid: System.IO.UnmanagedMemoryStream.#ctor(System.Runtime.InteropServices.SafeBuffer,System.Int64,System.Int64)
+  id: '#ctor(System.Runtime.InteropServices.SafeBuffer,System.Int64,System.Int64)'
+  parent: System.IO.UnmanagedMemoryStream
+  href: System.IO.UnmanagedMemoryStream.yml
+  name: UnmanagedMemoryStream(SafeBuffer, Int64, Int64)
+  fullName: System.IO.UnmanagedMemoryStream.UnmanagedMemoryStream(System.Runtime.InteropServices.SafeBuffer, System.Int64, System.Int64)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryStream.cs
+    startLine: 110
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Initializes a new instance of the @'System.IO.UnmanagedMemoryStream' class in a safe buffer with a specified offset and length.
+  syntax:
+    content: public UnmanagedMemoryStream(SafeBuffer buffer, long offset, long length)
+    content.vb: Public Sub New(buffer As SafeBuffer, offset As Long, length As Long)
+    parameters:
+    - id: buffer
+      type: System.Runtime.InteropServices.SafeBuffer
+      description: The buffer to contain the unmanaged memory stream.
+    - id: offset
+      type: System.Int64
+      description: The byte position in the buffer at which to start the unmanaged memory stream.
+    - id: length
+      type: System.Int64
+      description: The length of the unmanaged memory stream.
+- uid: System.IO.UnmanagedMemoryStream.#ctor(System.Runtime.InteropServices.SafeBuffer,System.Int64,System.Int64,System.IO.FileAccess)
+  id: '#ctor(System.Runtime.InteropServices.SafeBuffer,System.Int64,System.Int64,System.IO.FileAccess)'
+  parent: System.IO.UnmanagedMemoryStream
+  href: System.IO.UnmanagedMemoryStream.yml
+  name: UnmanagedMemoryStream(SafeBuffer, Int64, Int64, FileAccess)
+  fullName: System.IO.UnmanagedMemoryStream.UnmanagedMemoryStream(System.Runtime.InteropServices.SafeBuffer, System.Int64, System.Int64, System.IO.FileAccess)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryStream.cs
+    startLine: 115
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Initializes a new instance of the @'System.IO.UnmanagedMemoryStream' class in a safe buffer with a specified offset, length, and file access.
+  syntax:
+    content: public UnmanagedMemoryStream(SafeBuffer buffer, long offset, long length, FileAccess access)
+    content.vb: Public Sub New(buffer As SafeBuffer, offset As Long, length As Long, access As FileAccess)
+    parameters:
+    - id: buffer
+      type: System.Runtime.InteropServices.SafeBuffer
+      description: The buffer to contain the unmanaged memory stream.
+    - id: offset
+      type: System.Int64
+      description: The byte position in the buffer at which to start the unmanaged memory stream.
+    - id: length
+      type: System.Int64
+      description: The length of the unmanaged memory stream.
+    - id: access
+      type: System.IO.FileAccess
+      description: The mode of file access to the unmanaged memory stream.
+- uid: System.IO.UnmanagedMemoryStream.Initialize(System.Runtime.InteropServices.SafeBuffer,System.Int64,System.Int64,System.IO.FileAccess)
+  id: Initialize(System.Runtime.InteropServices.SafeBuffer,System.Int64,System.Int64,System.IO.FileAccess)
+  parent: System.IO.UnmanagedMemoryStream
+  href: System.IO.UnmanagedMemoryStream.yml
+  name: Initialize(SafeBuffer, Int64, Int64, FileAccess)
+  fullName: System.IO.UnmanagedMemoryStream.Initialize(System.Runtime.InteropServices.SafeBuffer, System.Int64, System.Int64, System.IO.FileAccess)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryStream.cs
+    startLine: 128
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Initializes a new instance of the @'System.IO.UnmanagedMemoryStream' class in a safe buffer with a specified offset, length, and file access.
+  syntax:
+    content: protected void Initialize(SafeBuffer buffer, long offset, long length, FileAccess access)
+    content.vb: Protected Sub Initialize(buffer As SafeBuffer, offset As Long, length As Long, access As FileAccess)
+    parameters:
+    - id: buffer
+      type: System.Runtime.InteropServices.SafeBuffer
+      description: The buffer to contain the unmanaged memory stream.
+    - id: offset
+      type: System.Int64
+      description: The byte position in the buffer at which to start the unmanaged memory stream.
+    - id: length
+      type: System.Int64
+      description: The length of the unmanaged memory stream.
+    - id: access
+      type: System.IO.FileAccess
+      description: The mode of file access to the unmanaged memory stream.
+- uid: System.IO.UnmanagedMemoryStream.#ctor(System.Byte*,System.Int64)
+  id: '#ctor(System.Byte*,System.Int64)'
+  parent: System.IO.UnmanagedMemoryStream
+  href: System.IO.UnmanagedMemoryStream.yml
+  name: UnmanagedMemoryStream(Byte*, Int64)
+  fullName: System.IO.UnmanagedMemoryStream.UnmanagedMemoryStream(System.Byte*, System.Int64)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryStream.cs
+    startLine: 186
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Initializes a new instance of the @'System.IO.UnmanagedMemoryStream' class using the specified location and memory length.
+  syntax:
+    content: public UnmanagedMemoryStream(byte *pointer, long length)
+    content.vb: Public Sub New(pointer As Byte *, length As Long)
+    parameters:
+    - id: pointer
+      type: System.Byte*
+      description: A pointer to an unmanaged memory location.
+    - id: length
+      type: System.Int64
+      description: The length of the memory to use.
+  exceptions:
+  - type: System.Security.SecurityException
+    description: The user does not have the required permission.
+  - type: System.ArgumentNullException
+    description: The *pointer* value is null.
+  - type: System.ArgumentOutOfRangeException
+    description: The *length* value is less than zero.- or -The *length* is large enough to cause an overflow.
+- uid: System.IO.UnmanagedMemoryStream.#ctor(System.Byte*,System.Int64,System.Int64,System.IO.FileAccess)
+  id: '#ctor(System.Byte*,System.Int64,System.Int64,System.IO.FileAccess)'
+  parent: System.IO.UnmanagedMemoryStream
+  href: System.IO.UnmanagedMemoryStream.yml
+  name: UnmanagedMemoryStream(Byte*, Int64, Int64, FileAccess)
+  fullName: System.IO.UnmanagedMemoryStream.UnmanagedMemoryStream(System.Byte*, System.Int64, System.Int64, System.IO.FileAccess)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryStream.cs
+    startLine: 193
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Initializes a new instance of the @'System.IO.UnmanagedMemoryStream' class using the specified location, memory length, total amount of memory, and file access values.
+  syntax:
+    content: public UnmanagedMemoryStream(byte *pointer, long length, long capacity, FileAccess access)
+    content.vb: Public Sub New(pointer As Byte *, length As Long, capacity As Long, access As FileAccess)
+    parameters:
+    - id: pointer
+      type: System.Byte*
+      description: A pointer to an unmanaged memory location.
+    - id: length
+      type: System.Int64
+      description: The length of the memory to use.
+    - id: capacity
+      type: System.Int64
+      description: The total amount of memory assigned to the stream.
+    - id: access
+      type: System.IO.FileAccess
+      description: One of the @'System.IO.FileAccess' values.
+  exceptions:
+  - type: System.Security.SecurityException
+    description: The user does not have the required permission.
+  - type: System.ArgumentNullException
+    description: The *pointer* value is null.
+  - type: System.ArgumentOutOfRangeException
+    description: The *length* value is less than zero.- or - The *capacity* value is less than zero.- or -The *length* value is greater than the *capacity* value.
+- uid: System.IO.UnmanagedMemoryStream.Initialize(System.Byte*,System.Int64,System.Int64,System.IO.FileAccess)
+  id: Initialize(System.Byte*,System.Int64,System.Int64,System.IO.FileAccess)
+  parent: System.IO.UnmanagedMemoryStream
+  href: System.IO.UnmanagedMemoryStream.yml
+  name: Initialize(Byte*, Int64, Int64, FileAccess)
+  fullName: System.IO.UnmanagedMemoryStream.Initialize(System.Byte*, System.Int64, System.Int64, System.IO.FileAccess)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryStream.cs
+    startLine: 209
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Initializes a new instance of the @'System.IO.UnmanagedMemoryStream' class by using a pointer to an unmanaged memory location.
+  syntax:
+    content: protected void Initialize(byte *pointer, long length, long capacity, FileAccess access)
+    content.vb: Protected Sub Initialize(pointer As Byte *, length As Long, capacity As Long, access As FileAccess)
+    parameters:
+    - id: pointer
+      type: System.Byte*
+      description: A pointer to an unmanaged memory location.
+    - id: length
+      type: System.Int64
+      description: The length of the memory to use.
+    - id: capacity
+      type: System.Int64
+      description: The total amount of memory assigned to the stream.
+    - id: access
+      type: System.IO.FileAccess
+      description: One of the @'System.IO.FileAccess' values.
+  exceptions:
+  - type: System.Security.SecurityException
+    description: The user does not have the required permission.
+  - type: System.ArgumentNullException
+    description: The *pointer* value is null.
+  - type: System.ArgumentOutOfRangeException
+    description: The *length* value is less than zero.- or - The *capacity* value is less than zero.- or -The *length* value is large enough to cause an overflow.
+- uid: System.IO.UnmanagedMemoryStream.CanRead
+  id: CanRead
+  parent: System.IO.UnmanagedMemoryStream
+  href: System.IO.UnmanagedMemoryStream.yml
+  name: CanRead
+  fullName: System.IO.UnmanagedMemoryStream.CanRead
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryStream.cs
+    startLine: 247
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Gets a value indicating whether a stream supports reading.
+  syntax:
+    content: public override bool CanRead { get; }
+    content.vb: Public Overrides ReadOnly Property CanRead As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+  overridden: System.IO.Stream.CanRead
+- uid: System.IO.UnmanagedMemoryStream.CanSeek
+  id: CanSeek
+  parent: System.IO.UnmanagedMemoryStream
+  href: System.IO.UnmanagedMemoryStream.yml
+  name: CanSeek
+  fullName: System.IO.UnmanagedMemoryStream.CanSeek
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryStream.cs
+    startLine: 252
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Gets a value indicating whether a stream supports seeking.
+  syntax:
+    content: public override bool CanSeek { get; }
+    content.vb: Public Overrides ReadOnly Property CanSeek As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+  overridden: System.IO.Stream.CanSeek
+- uid: System.IO.UnmanagedMemoryStream.CanWrite
+  id: CanWrite
+  parent: System.IO.UnmanagedMemoryStream
+  href: System.IO.UnmanagedMemoryStream.yml
+  name: CanWrite
+  fullName: System.IO.UnmanagedMemoryStream.CanWrite
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryStream.cs
+    startLine: 257
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Gets a value indicating whether a stream supports writing.
+  syntax:
+    content: public override bool CanWrite { get; }
+    content.vb: Public Overrides ReadOnly Property CanWrite As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+  overridden: System.IO.Stream.CanWrite
+- uid: System.IO.UnmanagedMemoryStream.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: System.IO.UnmanagedMemoryStream
+  href: System.IO.UnmanagedMemoryStream.yml
+  name: Dispose(Boolean)
+  fullName: System.IO.UnmanagedMemoryStream.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryStream.cs
+    startLine: 262
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Releases the unmanaged resources used by the @'System.IO.UnmanagedMemoryStream' and optionally releases the managed resources.
+  syntax:
+    content: protected override void Dispose(bool disposing)
+    content.vb: Protected Overrides Sub Dispose(disposing As Boolean)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: true to release both managed and unmanaged resources; false to release only unmanaged resources.
+  overridden: System.IO.Stream.Dispose(System.Boolean)
+- uid: System.IO.UnmanagedMemoryStream.Flush
+  id: Flush
+  parent: System.IO.UnmanagedMemoryStream
+  href: System.IO.UnmanagedMemoryStream.yml
+  name: Flush()
+  fullName: System.IO.UnmanagedMemoryStream.Flush()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryStream.cs
+    startLine: 274
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Overrides the @'System.IO.Stream.Flush' method so that no action is performed.
+  syntax:
+    content: public override void Flush()
+    content.vb: Public Overrides Sub Flush
+  overridden: System.IO.Stream.Flush
+  exceptions:
+  - type: System.ObjectDisposedException
+    description: The stream is closed.
+- uid: System.IO.UnmanagedMemoryStream.FlushAsync(System.Threading.CancellationToken)
+  id: FlushAsync(System.Threading.CancellationToken)
+  parent: System.IO.UnmanagedMemoryStream
+  href: System.IO.UnmanagedMemoryStream.yml
+  name: FlushAsync(CancellationToken)
+  fullName: System.IO.UnmanagedMemoryStream.FlushAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryStream.cs
+    startLine: 278
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Overrides the @'System.IO.Stream.FlushAsync(System.Threading.CancellationToken)' method so that the operation is cancelled if specified, but no other action is performed.Available starting in .NET Framework 2015
+  syntax:
+    content: public override Task FlushAsync(CancellationToken cancellationToken)
+    content.vb: Public Overrides Function FlushAsync(cancellationToken As CancellationToken) As Task
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The token to monitor for cancellation requests. The default value is @'System.Threading.CancellationToken.None'.
+    return:
+      type: System.Threading.Tasks.Task
+  overridden: System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
+- uid: System.IO.UnmanagedMemoryStream.Length
+  id: Length
+  parent: System.IO.UnmanagedMemoryStream
+  href: System.IO.UnmanagedMemoryStream.yml
+  name: Length
+  fullName: System.IO.UnmanagedMemoryStream.Length
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryStream.cs
+    startLine: 297
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Gets the length of the data in a stream.
+  syntax:
+    content: public override long Length { get; }
+    content.vb: Public Overrides ReadOnly Property Length As Long
+    parameters: []
+    return:
+      type: System.Int64
+  overridden: System.IO.Stream.Length
+  exceptions:
+  - type: System.ObjectDisposedException
+    description: The stream is closed.
+- uid: System.IO.UnmanagedMemoryStream.Capacity
+  id: Capacity
+  parent: System.IO.UnmanagedMemoryStream
+  href: System.IO.UnmanagedMemoryStream.yml
+  name: Capacity
+  fullName: System.IO.UnmanagedMemoryStream.Capacity
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryStream.cs
+    startLine: 304
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Gets the stream length (size) or the total amount of memory assigned to a stream (capacity).
+  syntax:
+    content: public long Capacity { get; }
+    content.vb: Public ReadOnly Property Capacity As Long
+    parameters: []
+    return:
+      type: System.Int64
+  exceptions:
+  - type: System.ObjectDisposedException
+    description: The stream is closed.
+- uid: System.IO.UnmanagedMemoryStream.Position
+  id: Position
+  parent: System.IO.UnmanagedMemoryStream
+  href: System.IO.UnmanagedMemoryStream.yml
+  name: Position
+  fullName: System.IO.UnmanagedMemoryStream.Position
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryStream.cs
+    startLine: 311
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Gets or sets the current position in a stream.
+  syntax:
+    content: public override long Position { get; set; }
+    content.vb: Public Overrides Property Position As Long
+    parameters: []
+    return:
+      type: System.Int64
+  overridden: System.IO.Stream.Position
+  exceptions:
+  - type: System.ObjectDisposedException
+    description: The stream is closed.
+  - type: System.ArgumentOutOfRangeException
+    description: The position is set to a value that is less than zero, or the position is larger than @'System.Int32.MaxValue' or results in overflow when added to the current pointer.
+- uid: System.IO.UnmanagedMemoryStream.PositionPointer
+  id: PositionPointer
+  parent: System.IO.UnmanagedMemoryStream
+  href: System.IO.UnmanagedMemoryStream.yml
+  name: PositionPointer
+  fullName: System.IO.UnmanagedMemoryStream.PositionPointer
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryStream.cs
+    startLine: 335
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Gets or sets a byte pointer to a stream based on the current position in the stream.
+  syntax:
+    content: public byte *PositionPointer { get; set; }
+    content.vb: Public Property PositionPointer As Byte
+    parameters: []
+    return:
+      type: System.Byte*
+  exceptions:
+  - type: System.IndexOutOfRangeException
+    description: The current position is larger than the capacity of the stream.
+  - type: System.ArgumentOutOfRangeException
+    description: The position is being set is not a valid position in the current stream.
+  - type: System.IO.IOException
+    description: The pointer is being set to a lower value than the starting position of the stream.
+  - type: System.NotSupportedException
+    description: The stream was initialized for use with a @'System.Runtime.InteropServices.SafeBuffer'. The @'System.IO.UnmanagedMemoryStream.PositionPointer' property is valid only for streams that are initialized with a @'System.Byte' pointer.
+- uid: System.IO.UnmanagedMemoryStream.Read(System.Byte[],System.Int32,System.Int32)
+  id: Read(System.Byte[],System.Int32,System.Int32)
+  parent: System.IO.UnmanagedMemoryStream
+  href: System.IO.UnmanagedMemoryStream.yml
+  name: Read(Byte[], Int32, Int32)
+  name.vb: Read(Byte(), Int32, Int32)
+  fullName: System.IO.UnmanagedMemoryStream.Read(System.Byte[], System.Int32, System.Int32)
+  fullName.vb: System.IO.UnmanagedMemoryStream.Read(System.Byte(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryStream.cs
+    startLine: 378
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads the specified number of bytes into the specified array.
+  syntax:
+    content: public override int Read(byte[] buffer, int offset, int count)
+    content.vb: Public Overrides Function Read(buffer As Byte(), offset As Integer, count As Integer) As Integer
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+      description: When this method returns, contains the specified byte array with the values between *offset* and (*offset* + *count* - 1) replaced by the bytes read from the current source. This parameter is passed uninitialized.
+    - id: offset
+      type: System.Int32
+      description: The zero-based byte offset in *buffer* at which to begin storing the data read from the current stream.
+    - id: count
+      type: System.Int32
+      description: The maximum number of bytes to read from the current stream.
+    return:
+      type: System.Int32
+  overridden: System.IO.Stream.Read(System.Byte[],System.Int32,System.Int32)
+  exceptions:
+  - type: System.ObjectDisposedException
+    description: The stream is closed.
+  - type: System.NotSupportedException
+    description: The underlying memory does not support reading.- or - The @'System.IO.UnmanagedMemoryStream.CanRead' property is set to false.
+  - type: System.ArgumentNullException
+    description: The *buffer* parameter is set to null.
+  - type: System.ArgumentOutOfRangeException
+    description: The *offset* parameter is less than zero. - or - The *count* parameter is less than zero.
+  - type: System.ArgumentException
+    description: The length of the buffer array minus the *offset* parameter is less than the *count* parameter.
+- uid: System.IO.UnmanagedMemoryStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  id: ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  parent: System.IO.UnmanagedMemoryStream
+  href: System.IO.UnmanagedMemoryStream.yml
+  name: ReadAsync(Byte[], Int32, Int32, CancellationToken)
+  name.vb: ReadAsync(Byte(), Int32, Int32, CancellationToken)
+  fullName: System.IO.UnmanagedMemoryStream.ReadAsync(System.Byte[], System.Int32, System.Int32, System.Threading.CancellationToken)
+  fullName.vb: System.IO.UnmanagedMemoryStream.ReadAsync(System.Byte(), System.Int32, System.Int32, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryStream.cs
+    startLine: 432
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Asynchronously reads the specified number of bytes into the specified array.Available starting in .NET Framework 2015
+  syntax:
+    content: public override Task<int> ReadAsync(byte[] buffer, int offset, int count, CancellationToken cancellationToken)
+    content.vb: Public Overrides Function ReadAsync(buffer As Byte(), offset As Integer, count As Integer, cancellationToken As CancellationToken) As Task(Of Integer)
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+      description: The buffer to write the data into.
+    - id: offset
+      type: System.Int32
+      description: The byte offset in *buffer* at which to begin writing data from the stream.
+    - id: count
+      type: System.Int32
+      description: The maximum number of bytes to read.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The token to monitor for cancellation requests. The default value is @'System.Threading.CancellationToken.None'.
+    return:
+      type: System.Threading.Tasks.Task{System.Int32}
+  overridden: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+- uid: System.IO.UnmanagedMemoryStream.ReadByte
+  id: ReadByte
+  parent: System.IO.UnmanagedMemoryStream
+  href: System.IO.UnmanagedMemoryStream.yml
+  name: ReadByte()
+  fullName: System.IO.UnmanagedMemoryStream.ReadByte()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryStream.cs
+    startLine: 461
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads a byte from a stream and advances the position within the stream by one byte, or returns -1 if at the end of the stream.
+  syntax:
+    content: public override int ReadByte()
+    content.vb: Public Overrides Function ReadByte As Integer
+    return:
+      type: System.Int32
+  overridden: System.IO.Stream.ReadByte
+  exceptions:
+  - type: System.ObjectDisposedException
+    description: The stream is closed.
+  - type: System.NotSupportedException
+    description: The underlying memory does not support reading.- or -The current position is at the end of the stream.
+- uid: System.IO.UnmanagedMemoryStream.Seek(System.Int64,System.IO.SeekOrigin)
+  id: Seek(System.Int64,System.IO.SeekOrigin)
+  parent: System.IO.UnmanagedMemoryStream
+  href: System.IO.UnmanagedMemoryStream.yml
+  name: Seek(Int64, SeekOrigin)
+  fullName: System.IO.UnmanagedMemoryStream.Seek(System.Int64, System.IO.SeekOrigin)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryStream.cs
+    startLine: 495
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Sets the current position of the current stream to the given value.
+  syntax:
+    content: public override long Seek(long offset, SeekOrigin loc)
+    content.vb: Public Overrides Function Seek(offset As Long, loc As SeekOrigin) As Long
+    parameters:
+    - id: offset
+      type: System.Int64
+      description: The point relative to *origin* to begin seeking from.
+    - id: loc
+      type: System.IO.SeekOrigin
+      description: Specifies the beginning, the end, or the current position as a reference point for *origin*, using a value of type @'System.IO.SeekOrigin'.
+    return:
+      type: System.Int64
+  overridden: System.IO.Stream.Seek(System.Int64,System.IO.SeekOrigin)
+  exceptions:
+  - type: System.IO.IOException
+    description: An attempt was made to seek before the beginning of the stream.
+  - type: System.ArgumentOutOfRangeException
+    description: The *offset* value is larger than the maximum size of the stream.
+  - type: System.ArgumentException
+    description: '*loc* is invalid.'
+  - type: System.ObjectDisposedException
+    description: The stream is closed.
+- uid: System.IO.UnmanagedMemoryStream.SetLength(System.Int64)
+  id: SetLength(System.Int64)
+  parent: System.IO.UnmanagedMemoryStream
+  href: System.IO.UnmanagedMemoryStream.yml
+  name: SetLength(Int64)
+  fullName: System.IO.UnmanagedMemoryStream.SetLength(System.Int64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryStream.cs
+    startLine: 529
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Sets the length of a stream to a specified value.
+  syntax:
+    content: public override void SetLength(long value)
+    content.vb: Public Overrides Sub SetLength(value As Long)
+    parameters:
+    - id: value
+      type: System.Int64
+      description: The length of the stream.
+  overridden: System.IO.Stream.SetLength(System.Int64)
+  exceptions:
+  - type: System.IO.IOException
+    description: An I/O error has occurred.
+  - type: System.ObjectDisposedException
+    description: The stream is closed.
+  - type: System.NotSupportedException
+    description: The underlying memory does not support writing.- or -An attempt is made to write to the stream and the @'System.IO.UnmanagedMemoryStream.CanWrite' property is false.
+  - type: System.ArgumentOutOfRangeException
+    description: The specified *value* exceeds the capacity of the stream.- or -The specified *value* is negative.
+- uid: System.IO.UnmanagedMemoryStream.Write(System.Byte[],System.Int32,System.Int32)
+  id: Write(System.Byte[],System.Int32,System.Int32)
+  parent: System.IO.UnmanagedMemoryStream
+  href: System.IO.UnmanagedMemoryStream.yml
+  name: Write(Byte[], Int32, Int32)
+  name.vb: Write(Byte(), Int32, Int32)
+  fullName: System.IO.UnmanagedMemoryStream.Write(System.Byte[], System.Int32, System.Int32)
+  fullName.vb: System.IO.UnmanagedMemoryStream.Write(System.Byte(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryStream.cs
+    startLine: 555
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Writes a block of bytes to the current stream using data from a buffer.
+  syntax:
+    content: public override void Write(byte[] buffer, int offset, int count)
+    content.vb: Public Overrides Sub Write(buffer As Byte(), offset As Integer, count As Integer)
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+      description: The byte array from which to copy bytes to the current stream.
+    - id: offset
+      type: System.Int32
+      description: The offset in the buffer at which to begin copying bytes to the current stream.
+    - id: count
+      type: System.Int32
+      description: The number of bytes to write to the current stream.
+  overridden: System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)
+  exceptions:
+  - type: System.ObjectDisposedException
+    description: The stream is closed.
+  - type: System.NotSupportedException
+    description: The underlying memory does not support writing. - or -An attempt is made to write to the stream and the @'System.IO.UnmanagedMemoryStream.CanWrite' property is false.- or -The *count* value is greater than the capacity of the stream.- or -The position is at the end of the stream capacity.
+  - type: System.IO.IOException
+    description: An I/O error occurs.
+  - type: System.ArgumentOutOfRangeException
+    description: One of the specified parameters is less than zero.
+  - type: System.ArgumentException
+    description: The *offset* parameter minus the length of the *buffer* parameter is less than the *count* parameter.
+  - type: System.ArgumentNullException
+    description: The *buffer* parameter is null.
+- uid: System.IO.UnmanagedMemoryStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  id: WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  parent: System.IO.UnmanagedMemoryStream
+  href: System.IO.UnmanagedMemoryStream.yml
+  name: WriteAsync(Byte[], Int32, Int32, CancellationToken)
+  name.vb: WriteAsync(Byte(), Int32, Int32, CancellationToken)
+  fullName: System.IO.UnmanagedMemoryStream.WriteAsync(System.Byte[], System.Int32, System.Int32, System.Threading.CancellationToken)
+  fullName.vb: System.IO.UnmanagedMemoryStream.WriteAsync(System.Byte(), System.Int32, System.Int32, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryStream.cs
+    startLine: 626
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Asynchronously writes a sequence of bytes to the current stream, advances the current position within this stream by the number of bytes written, and monitors cancellation requests.Available starting in .NET Framework 2015
+  syntax:
+    content: public override Task WriteAsync(byte[] buffer, int offset, int count, CancellationToken cancellationToken)
+    content.vb: Public Overrides Function WriteAsync(buffer As Byte(), offset As Integer, count As Integer, cancellationToken As CancellationToken) As Task
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+      description: The buffer to write data from.
+    - id: offset
+      type: System.Int32
+      description: The zero-based byte offset in *buffer* from which to begin copying bytes to the stream.
+    - id: count
+      type: System.Int32
+      description: The maximum number of bytes to write.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The token to monitor for cancellation requests. The default value is @'System.Threading.CancellationToken.None'.
+    return:
+      type: System.Threading.Tasks.Task
+  overridden: System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+- uid: System.IO.UnmanagedMemoryStream.WriteByte(System.Byte)
+  id: WriteByte(System.Byte)
+  parent: System.IO.UnmanagedMemoryStream
+  href: System.IO.UnmanagedMemoryStream.yml
+  name: WriteByte(Byte)
+  fullName: System.IO.UnmanagedMemoryStream.WriteByte(System.Byte)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryStream.cs
+    startLine: 656
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Writes a byte to the current position in the file stream.
+  syntax:
+    content: public override void WriteByte(byte value)
+    content.vb: Public Overrides Sub WriteByte(value As Byte)
+    parameters:
+    - id: value
+      type: System.Byte
+      description: A byte value written to the stream.
+  overridden: System.IO.Stream.WriteByte(System.Byte)
+  exceptions:
+  - type: System.ObjectDisposedException
+    description: The stream is closed.
+  - type: System.NotSupportedException
+    description: The underlying memory does not support writing.- or -An attempt is made to write to the stream and the @'System.IO.UnmanagedMemoryStream.CanWrite' property is false.- or - The current position is at the end of the capacity of the stream.
+  - type: System.IO.IOException
+    description: The supplied *value* causes the stream exceed its maximum capacity.
+references:
+- uid: System.IO
+  isExternal: false
+  name: System.IO
+  fullName: System.IO
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  name: Stream
+  fullName: System.IO.Stream
+- uid: System.IO.Stream.Null
+  parent: System.IO.Stream
+  isExternal: true
+  fullName: System.IO.Stream.Null
+- uid: System.IO.Stream.CanTimeout
+  parent: System.IO.Stream
+  isExternal: true
+  name: CanTimeout
+  fullName: System.IO.Stream.CanTimeout
+- uid: System.IO.Stream.ReadTimeout
+  parent: System.IO.Stream
+  isExternal: true
+  name: ReadTimeout
+  fullName: System.IO.Stream.ReadTimeout
+- uid: System.IO.Stream.WriteTimeout
+  parent: System.IO.Stream
+  isExternal: true
+  name: WriteTimeout
+  fullName: System.IO.Stream.WriteTimeout
+- uid: System.IO.Stream.CopyToAsync(System.IO.Stream)
+  parent: System.IO.Stream
+  isExternal: true
+  name: CopyToAsync(Stream)
+  fullName: System.IO.Stream.CopyToAsync(System.IO.Stream)
+  spec.csharp:
+  - uid: System.IO.Stream.CopyToAsync(System.IO.Stream)
+    name: CopyToAsync
+    fullName: System.IO.Stream.CopyToAsync
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IO.Stream
+    name: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.CopyToAsync(System.IO.Stream)
+    name: CopyToAsync
+    fullName: System.IO.Stream.CopyToAsync
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IO.Stream
+    name: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32)
+  parent: System.IO.Stream
+  isExternal: true
+  name: CopyToAsync(Stream, Int32)
+  fullName: System.IO.Stream.CopyToAsync(System.IO.Stream, System.Int32)
+  spec.csharp:
+  - uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32)
+    name: CopyToAsync
+    fullName: System.IO.Stream.CopyToAsync
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IO.Stream
+    name: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32)
+    name: CopyToAsync
+    fullName: System.IO.Stream.CopyToAsync
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IO.Stream
+    name: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)
+  parent: System.IO.Stream
+  isExternal: true
+  name: CopyToAsync(Stream, Int32, CancellationToken)
+  fullName: System.IO.Stream.CopyToAsync(System.IO.Stream, System.Int32, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)
+    name: CopyToAsync
+    fullName: System.IO.Stream.CopyToAsync
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IO.Stream
+    name: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)
+    name: CopyToAsync
+    fullName: System.IO.Stream.CopyToAsync
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IO.Stream
+    name: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.CopyTo(System.IO.Stream)
+  parent: System.IO.Stream
+  isExternal: true
+  name: CopyTo(Stream)
+  fullName: System.IO.Stream.CopyTo(System.IO.Stream)
+  spec.csharp:
+  - uid: System.IO.Stream.CopyTo(System.IO.Stream)
+    name: CopyTo
+    fullName: System.IO.Stream.CopyTo
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IO.Stream
+    name: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.CopyTo(System.IO.Stream)
+    name: CopyTo
+    fullName: System.IO.Stream.CopyTo
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IO.Stream
+    name: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.CopyTo(System.IO.Stream,System.Int32)
+  parent: System.IO.Stream
+  isExternal: true
+  name: CopyTo(Stream, Int32)
+  fullName: System.IO.Stream.CopyTo(System.IO.Stream, System.Int32)
+  spec.csharp:
+  - uid: System.IO.Stream.CopyTo(System.IO.Stream,System.Int32)
+    name: CopyTo
+    fullName: System.IO.Stream.CopyTo
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IO.Stream
+    name: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.CopyTo(System.IO.Stream,System.Int32)
+    name: CopyTo
+    fullName: System.IO.Stream.CopyTo
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IO.Stream
+    name: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.Close
+  parent: System.IO.Stream
+  isExternal: true
+  name: Close()
+  fullName: System.IO.Stream.Close()
+  spec.csharp:
+  - uid: System.IO.Stream.Close
+    name: Close
+    fullName: System.IO.Stream.Close
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.Close
+    name: Close
+    fullName: System.IO.Stream.Close
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.Dispose
+  parent: System.IO.Stream
+  isExternal: true
+  name: Dispose()
+  fullName: System.IO.Stream.Dispose()
+  spec.csharp:
+  - uid: System.IO.Stream.Dispose
+    name: Dispose
+    fullName: System.IO.Stream.Dispose
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.Dispose
+    name: Dispose
+    fullName: System.IO.Stream.Dispose
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.FlushAsync
+  parent: System.IO.Stream
+  isExternal: true
+  name: FlushAsync()
+  fullName: System.IO.Stream.FlushAsync()
+  spec.csharp:
+  - uid: System.IO.Stream.FlushAsync
+    name: FlushAsync
+    fullName: System.IO.Stream.FlushAsync
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.FlushAsync
+    name: FlushAsync
+    fullName: System.IO.Stream.FlushAsync
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.CreateWaitHandle
+  parent: System.IO.Stream
+  isExternal: true
+  name: CreateWaitHandle()
+  fullName: System.IO.Stream.CreateWaitHandle()
+  spec.csharp:
+  - uid: System.IO.Stream.CreateWaitHandle
+    name: CreateWaitHandle
+    fullName: System.IO.Stream.CreateWaitHandle
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.CreateWaitHandle
+    name: CreateWaitHandle
+    fullName: System.IO.Stream.CreateWaitHandle
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+  parent: System.IO.Stream
+  isExternal: true
+  name: BeginRead(Byte[], Int32, Int32, AsyncCallback, Object)
+  name.vb: BeginRead(Byte(), Int32, Int32, AsyncCallback, Object)
+  fullName: System.IO.Stream.BeginRead(System.Byte[], System.Int32, System.Int32, System.AsyncCallback, System.Object)
+  fullName.vb: System.IO.Stream.BeginRead(System.Byte(), System.Int32, System.Int32, System.AsyncCallback, System.Object)
+  spec.csharp:
+  - uid: System.IO.Stream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+    name: BeginRead
+    fullName: System.IO.Stream.BeginRead
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    fullName: System.AsyncCallback
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+    name: BeginRead
+    fullName: System.IO.Stream.BeginRead
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    fullName: System.AsyncCallback
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.EndRead(System.IAsyncResult)
+  parent: System.IO.Stream
+  isExternal: true
+  name: EndRead(IAsyncResult)
+  fullName: System.IO.Stream.EndRead(System.IAsyncResult)
+  spec.csharp:
+  - uid: System.IO.Stream.EndRead(System.IAsyncResult)
+    name: EndRead
+    fullName: System.IO.Stream.EndRead
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IAsyncResult
+    name: IAsyncResult
+    fullName: System.IAsyncResult
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.EndRead(System.IAsyncResult)
+    name: EndRead
+    fullName: System.IO.Stream.EndRead
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IAsyncResult
+    name: IAsyncResult
+    fullName: System.IAsyncResult
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)
+  parent: System.IO.Stream
+  isExternal: true
+  name: ReadAsync(Byte[], Int32, Int32)
+  name.vb: ReadAsync(Byte(), Int32, Int32)
+  fullName: System.IO.Stream.ReadAsync(System.Byte[], System.Int32, System.Int32)
+  fullName.vb: System.IO.Stream.ReadAsync(System.Byte(), System.Int32, System.Int32)
+  spec.csharp:
+  - uid: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)
+    name: ReadAsync
+    fullName: System.IO.Stream.ReadAsync
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)
+    name: ReadAsync
+    fullName: System.IO.Stream.ReadAsync
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+  parent: System.IO.Stream
+  isExternal: true
+  name: BeginWrite(Byte[], Int32, Int32, AsyncCallback, Object)
+  name.vb: BeginWrite(Byte(), Int32, Int32, AsyncCallback, Object)
+  fullName: System.IO.Stream.BeginWrite(System.Byte[], System.Int32, System.Int32, System.AsyncCallback, System.Object)
+  fullName.vb: System.IO.Stream.BeginWrite(System.Byte(), System.Int32, System.Int32, System.AsyncCallback, System.Object)
+  spec.csharp:
+  - uid: System.IO.Stream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+    name: BeginWrite
+    fullName: System.IO.Stream.BeginWrite
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    fullName: System.AsyncCallback
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+    name: BeginWrite
+    fullName: System.IO.Stream.BeginWrite
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    fullName: System.AsyncCallback
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.EndWrite(System.IAsyncResult)
+  parent: System.IO.Stream
+  isExternal: true
+  name: EndWrite(IAsyncResult)
+  fullName: System.IO.Stream.EndWrite(System.IAsyncResult)
+  spec.csharp:
+  - uid: System.IO.Stream.EndWrite(System.IAsyncResult)
+    name: EndWrite
+    fullName: System.IO.Stream.EndWrite
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IAsyncResult
+    name: IAsyncResult
+    fullName: System.IAsyncResult
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.EndWrite(System.IAsyncResult)
+    name: EndWrite
+    fullName: System.IO.Stream.EndWrite
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IAsyncResult
+    name: IAsyncResult
+    fullName: System.IAsyncResult
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)
+  parent: System.IO.Stream
+  isExternal: true
+  name: WriteAsync(Byte[], Int32, Int32)
+  name.vb: WriteAsync(Byte(), Int32, Int32)
+  fullName: System.IO.Stream.WriteAsync(System.Byte[], System.Int32, System.Int32)
+  fullName.vb: System.IO.Stream.WriteAsync(System.Byte(), System.Int32, System.Int32)
+  spec.csharp:
+  - uid: System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)
+    name: WriteAsync
+    fullName: System.IO.Stream.WriteAsync
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)
+    name: WriteAsync
+    fullName: System.IO.Stream.WriteAsync
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.Synchronized(System.IO.Stream)
+  parent: System.IO.Stream
+  isExternal: true
+  name: Synchronized(Stream)
+  fullName: System.IO.Stream.Synchronized(System.IO.Stream)
+  spec.csharp:
+  - uid: System.IO.Stream.Synchronized(System.IO.Stream)
+    name: Synchronized
+    fullName: System.IO.Stream.Synchronized
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IO.Stream
+    name: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.Synchronized(System.IO.Stream)
+    name: Synchronized
+    fullName: System.IO.Stream.Synchronized
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IO.Stream
+    name: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.ObjectInvariant
+  parent: System.IO.Stream
+  isExternal: true
+  name: ObjectInvariant()
+  fullName: System.IO.Stream.ObjectInvariant()
+  spec.csharp:
+  - uid: System.IO.Stream.ObjectInvariant
+    name: ObjectInvariant
+    fullName: System.IO.Stream.ObjectInvariant
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.ObjectInvariant
+    name: ObjectInvariant
+    fullName: System.IO.Stream.ObjectInvariant
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Runtime.InteropServices.SafeBuffer
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  name: SafeBuffer
+  fullName: System.Runtime.InteropServices.SafeBuffer
+- uid: System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  fullName: System.Int64
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace
+- uid: System.IO.FileAccess
+  parent: System.IO
+  isExternal: true
+  name: FileAccess
+  fullName: System.IO.FileAccess
+- uid: System.Byte*
+  isExternal: true
+  name: Byte*
+  fullName: System.Byte*
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '*'
+    fullName: '*'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '*'
+    fullName: '*'
+- uid: System.IO.Stream.CanRead
+  parent: System.IO.Stream
+  isExternal: true
+  name: CanRead
+  fullName: System.IO.Stream.CanRead
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.IO.Stream.CanSeek
+  parent: System.IO.Stream
+  isExternal: true
+  name: CanSeek
+  fullName: System.IO.Stream.CanSeek
+- uid: System.IO.Stream.CanWrite
+  parent: System.IO.Stream
+  isExternal: true
+  name: CanWrite
+  fullName: System.IO.Stream.CanWrite
+- uid: System.IO.Stream.Dispose(System.Boolean)
+  parent: System.IO.Stream
+  isExternal: true
+  name: Dispose(Boolean)
+  fullName: System.IO.Stream.Dispose(System.Boolean)
+  spec.csharp:
+  - uid: System.IO.Stream.Dispose(System.Boolean)
+    name: Dispose
+    fullName: System.IO.Stream.Dispose
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.Dispose(System.Boolean)
+    name: Dispose
+    fullName: System.IO.Stream.Dispose
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.Flush
+  parent: System.IO.Stream
+  isExternal: true
+  name: Flush()
+  fullName: System.IO.Stream.Flush()
+  spec.csharp:
+  - uid: System.IO.Stream.Flush
+    name: Flush
+    fullName: System.IO.Stream.Flush
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.Flush
+    name: Flush
+    fullName: System.IO.Stream.Flush
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
+  parent: System.IO.Stream
+  isExternal: true
+  name: FlushAsync(CancellationToken)
+  fullName: System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
+    name: FlushAsync
+    fullName: System.IO.Stream.FlushAsync
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
+    name: FlushAsync
+    fullName: System.IO.Stream.FlushAsync
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  type: Namespace
+- uid: System.IO.Stream.Length
+  parent: System.IO.Stream
+  isExternal: true
+  name: Length
+  fullName: System.IO.Stream.Length
+- uid: System.IO.Stream.Position
+  parent: System.IO.Stream
+  isExternal: true
+  name: Position
+  fullName: System.IO.Stream.Position
+- uid: System.IO.Stream.Read(System.Byte[],System.Int32,System.Int32)
+  parent: System.IO.Stream
+  isExternal: true
+  name: Read(Byte[], Int32, Int32)
+  name.vb: Read(Byte(), Int32, Int32)
+  fullName: System.IO.Stream.Read(System.Byte[], System.Int32, System.Int32)
+  fullName.vb: System.IO.Stream.Read(System.Byte(), System.Int32, System.Int32)
+  spec.csharp:
+  - uid: System.IO.Stream.Read(System.Byte[],System.Int32,System.Int32)
+    name: Read
+    fullName: System.IO.Stream.Read
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.Read(System.Byte[],System.Int32,System.Int32)
+    name: Read
+    fullName: System.IO.Stream.Read
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  name.vb: Byte()
+  fullName: System.Byte[]
+  fullName.vb: System.Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  parent: System.IO.Stream
+  isExternal: true
+  name: ReadAsync(Byte[], Int32, Int32, CancellationToken)
+  name.vb: ReadAsync(Byte(), Int32, Int32, CancellationToken)
+  fullName: System.IO.Stream.ReadAsync(System.Byte[], System.Int32, System.Int32, System.Threading.CancellationToken)
+  fullName.vb: System.IO.Stream.ReadAsync(System.Byte(), System.Int32, System.Int32, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+    name: ReadAsync
+    fullName: System.IO.Stream.ReadAsync
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+    name: ReadAsync
+    fullName: System.IO.Stream.ReadAsync
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Int32}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Int32>
+  name.vb: Task(Of Int32)
+  fullName: System.Threading.Tasks.Task<System.Int32>
+  fullName.vb: System.Threading.Tasks.Task(Of System.Int32)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  name.vb: Task(Of TResult)
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.ReadByte
+  parent: System.IO.Stream
+  isExternal: true
+  name: ReadByte()
+  fullName: System.IO.Stream.ReadByte()
+  spec.csharp:
+  - uid: System.IO.Stream.ReadByte
+    name: ReadByte
+    fullName: System.IO.Stream.ReadByte
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.ReadByte
+    name: ReadByte
+    fullName: System.IO.Stream.ReadByte
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.Seek(System.Int64,System.IO.SeekOrigin)
+  parent: System.IO.Stream
+  isExternal: true
+  name: Seek(Int64, SeekOrigin)
+  fullName: System.IO.Stream.Seek(System.Int64, System.IO.SeekOrigin)
+  spec.csharp:
+  - uid: System.IO.Stream.Seek(System.Int64,System.IO.SeekOrigin)
+    name: Seek
+    fullName: System.IO.Stream.Seek
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.IO.SeekOrigin
+    name: SeekOrigin
+    fullName: System.IO.SeekOrigin
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.Seek(System.Int64,System.IO.SeekOrigin)
+    name: Seek
+    fullName: System.IO.Stream.Seek
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.IO.SeekOrigin
+    name: SeekOrigin
+    fullName: System.IO.SeekOrigin
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.IO.SeekOrigin
+  parent: System.IO
+  isExternal: true
+  name: SeekOrigin
+  fullName: System.IO.SeekOrigin
+- uid: System.IO.Stream.SetLength(System.Int64)
+  parent: System.IO.Stream
+  isExternal: true
+  name: SetLength(Int64)
+  fullName: System.IO.Stream.SetLength(System.Int64)
+  spec.csharp:
+  - uid: System.IO.Stream.SetLength(System.Int64)
+    name: SetLength
+    fullName: System.IO.Stream.SetLength
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.SetLength(System.Int64)
+    name: SetLength
+    fullName: System.IO.Stream.SetLength
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)
+  parent: System.IO.Stream
+  isExternal: true
+  name: Write(Byte[], Int32, Int32)
+  name.vb: Write(Byte(), Int32, Int32)
+  fullName: System.IO.Stream.Write(System.Byte[], System.Int32, System.Int32)
+  fullName.vb: System.IO.Stream.Write(System.Byte(), System.Int32, System.Int32)
+  spec.csharp:
+  - uid: System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)
+    name: Write
+    fullName: System.IO.Stream.Write
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)
+    name: Write
+    fullName: System.IO.Stream.Write
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  parent: System.IO.Stream
+  isExternal: true
+  name: WriteAsync(Byte[], Int32, Int32, CancellationToken)
+  name.vb: WriteAsync(Byte(), Int32, Int32, CancellationToken)
+  fullName: System.IO.Stream.WriteAsync(System.Byte[], System.Int32, System.Int32, System.Threading.CancellationToken)
+  fullName.vb: System.IO.Stream.WriteAsync(System.Byte(), System.Int32, System.Int32, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+    name: WriteAsync
+    fullName: System.IO.Stream.WriteAsync
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+    name: WriteAsync
+    fullName: System.IO.Stream.WriteAsync
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.WriteByte(System.Byte)
+  parent: System.IO.Stream
+  isExternal: true
+  name: WriteByte(Byte)
+  fullName: System.IO.Stream.WriteByte(System.Byte)
+  spec.csharp:
+  - uid: System.IO.Stream.WriteByte(System.Byte)
+    name: WriteByte
+    fullName: System.IO.Stream.WriteByte
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.WriteByte(System.Byte)
+    name: WriteByte
+    fullName: System.IO.Stream.WriteByte
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Byte
+  parent: System
+  isExternal: true
+  name: Byte
+  fullName: System.Byte

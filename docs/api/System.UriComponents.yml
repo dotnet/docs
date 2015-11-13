@@ -1,0 +1,334 @@
+items:
+- uid: System.UriComponents
+  id: UriComponents
+  parent: System
+  children:
+  - System.UriComponents.AbsoluteUri
+  - System.UriComponents.Fragment
+  - System.UriComponents.Host
+  - System.UriComponents.HostAndPort
+  - System.UriComponents.HttpRequestUrl
+  - System.UriComponents.KeepDelimiter
+  - System.UriComponents.NormalizedHost
+  - System.UriComponents.Path
+  - System.UriComponents.PathAndQuery
+  - System.UriComponents.Port
+  - System.UriComponents.Query
+  - System.UriComponents.Scheme
+  - System.UriComponents.SchemeAndServer
+  - System.UriComponents.SerializationInfoString
+  - System.UriComponents.StrongAuthority
+  - System.UriComponents.StrongPort
+  - System.UriComponents.UserInfo
+  href: System.UriComponents.yml
+  name: UriComponents
+  fullName: System.UriComponents
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Private.Uri/src/System/UriEnumTypes.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Private.Uri/src/System/UriEnumTypes.cs
+    startLine: 13
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: Specifies the parts of a @'System.Uri'.
+  syntax:
+    content: public enum UriComponents
+    content.vb: Public Enum UriComponents
+- uid: System.UriComponents.Scheme
+  id: Scheme
+  parent: System.UriComponents
+  href: System.UriComponents.yml
+  name: Scheme
+  fullName: System.UriComponents.Scheme
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Private.Uri/src/System/UriEnumTypes.cs
+    startLine: 18
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: The @'System.Uri.Scheme' data.
+  syntax:
+    content: Scheme = 1
+- uid: System.UriComponents.UserInfo
+  id: UserInfo
+  parent: System.UriComponents
+  href: System.UriComponents.yml
+  name: UserInfo
+  fullName: System.UriComponents.UserInfo
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Private.Uri/src/System/UriEnumTypes.cs
+    startLine: 19
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: The @'System.Uri.UserInfo' data.
+  syntax:
+    content: UserInfo = 2
+- uid: System.UriComponents.Host
+  id: Host
+  parent: System.UriComponents
+  href: System.UriComponents.yml
+  name: Host
+  fullName: System.UriComponents.Host
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Private.Uri/src/System/UriEnumTypes.cs
+    startLine: 20
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: The @'System.Uri.Host' data.
+  syntax:
+    content: Host = 4
+- uid: System.UriComponents.Port
+  id: Port
+  parent: System.UriComponents
+  href: System.UriComponents.yml
+  name: Port
+  fullName: System.UriComponents.Port
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Private.Uri/src/System/UriEnumTypes.cs
+    startLine: 21
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: The @'System.Uri.Port' data.
+  syntax:
+    content: Port = 8
+- uid: System.UriComponents.Path
+  id: Path
+  parent: System.UriComponents
+  href: System.UriComponents.yml
+  name: Path
+  fullName: System.UriComponents.Path
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Private.Uri/src/System/UriEnumTypes.cs
+    startLine: 22
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: The @'System.Uri.LocalPath' data.
+  syntax:
+    content: Path = 16
+- uid: System.UriComponents.Query
+  id: Query
+  parent: System.UriComponents
+  href: System.UriComponents.yml
+  name: Query
+  fullName: System.UriComponents.Query
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Private.Uri/src/System/UriEnumTypes.cs
+    startLine: 23
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: The @'System.Uri.Query' data.
+  syntax:
+    content: Query = 32
+- uid: System.UriComponents.Fragment
+  id: Fragment
+  parent: System.UriComponents
+  href: System.UriComponents.yml
+  name: Fragment
+  fullName: System.UriComponents.Fragment
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Private.Uri/src/System/UriEnumTypes.cs
+    startLine: 24
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: The @'System.Uri.Fragment' data.
+  syntax:
+    content: Fragment = 64
+- uid: System.UriComponents.StrongPort
+  id: StrongPort
+  parent: System.UriComponents
+  href: System.UriComponents.yml
+  name: StrongPort
+  fullName: System.UriComponents.StrongPort
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Private.Uri/src/System/UriEnumTypes.cs
+    startLine: 26
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: The @'System.Uri.Port' data. If no port data is in the @'System.Uri' and a default port has been assigned to the @'System.Uri.Scheme', the default port is returned. If there is no default port, -1 is returned.
+  syntax:
+    content: StrongPort = 128
+- uid: System.UriComponents.NormalizedHost
+  id: NormalizedHost
+  parent: System.UriComponents
+  href: System.UriComponents.yml
+  name: NormalizedHost
+  fullName: System.UriComponents.NormalizedHost
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Private.Uri/src/System/UriEnumTypes.cs
+    startLine: 27
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: The normalized form of the @'System.Uri.Host'.
+  syntax:
+    content: NormalizedHost = 256
+- uid: System.UriComponents.KeepDelimiter
+  id: KeepDelimiter
+  parent: System.UriComponents
+  href: System.UriComponents.yml
+  name: KeepDelimiter
+  fullName: System.UriComponents.KeepDelimiter
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Private.Uri/src/System/UriEnumTypes.cs
+    startLine: 31
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: Specifies that the delimiter should be included.
+  syntax:
+    content: KeepDelimiter = 1073741824
+- uid: System.UriComponents.SerializationInfoString
+  id: SerializationInfoString
+  parent: System.UriComponents
+  href: System.UriComponents.yml
+  name: SerializationInfoString
+  fullName: System.UriComponents.SerializationInfoString
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Private.Uri/src/System/UriEnumTypes.cs
+    startLine: 35
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: The complete @'System.Uri' context that is needed for Uri Serializers. The context includes the IPv6 scope.
+  syntax:
+    content: SerializationInfoString = -2147483648
+- uid: System.UriComponents.AbsoluteUri
+  id: AbsoluteUri
+  parent: System.UriComponents
+  href: System.UriComponents.yml
+  name: AbsoluteUri
+  fullName: System.UriComponents.AbsoluteUri
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Private.Uri/src/System/UriEnumTypes.cs
+    startLine: 38
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: The @'System.Uri.Scheme', @'System.Uri.UserInfo', @'System.Uri.Host', @'System.Uri.Port', @'System.Uri.LocalPath', @'System.Uri.Query', and @'System.Uri.Fragment' data.
+  syntax:
+    content: AbsoluteUri = 127
+- uid: System.UriComponents.HostAndPort
+  id: HostAndPort
+  parent: System.UriComponents
+  href: System.UriComponents.yml
+  name: HostAndPort
+  fullName: System.UriComponents.HostAndPort
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Private.Uri/src/System/UriEnumTypes.cs
+    startLine: 39
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: The @'System.Uri.Host' and @'System.Uri.Port' data. If no port data is in the Uri and a default port has been assigned to the @'System.Uri.Scheme', the default port is returned. If there is no default port, -1 is returned.
+  syntax:
+    content: HostAndPort = 132
+- uid: System.UriComponents.StrongAuthority
+  id: StrongAuthority
+  parent: System.UriComponents
+  href: System.UriComponents.yml
+  name: StrongAuthority
+  fullName: System.UriComponents.StrongAuthority
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Private.Uri/src/System/UriEnumTypes.cs
+    startLine: 40
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: The @'System.Uri.UserInfo', @'System.Uri.Host', and @'System.Uri.Port' data. If no port data is in the @'System.Uri' and a default port has been assigned to the @'System.Uri.Scheme', the default port is returned. If there is no default port, -1 is returned.
+  syntax:
+    content: StrongAuthority = 134
+- uid: System.UriComponents.SchemeAndServer
+  id: SchemeAndServer
+  parent: System.UriComponents
+  href: System.UriComponents.yml
+  name: SchemeAndServer
+  fullName: System.UriComponents.SchemeAndServer
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Private.Uri/src/System/UriEnumTypes.cs
+    startLine: 41
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: The @'System.Uri.Scheme', @'System.Uri.Host', and @'System.Uri.Port' data.
+  syntax:
+    content: SchemeAndServer = 13
+- uid: System.UriComponents.HttpRequestUrl
+  id: HttpRequestUrl
+  parent: System.UriComponents
+  href: System.UriComponents.yml
+  name: HttpRequestUrl
+  fullName: System.UriComponents.HttpRequestUrl
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Private.Uri/src/System/UriEnumTypes.cs
+    startLine: 42
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: The @'System.Uri.Scheme', @'System.Uri.Host', @'System.Uri.Port', @'System.Uri.LocalPath', and @'System.Uri.Query' data.
+  syntax:
+    content: HttpRequestUrl = 61
+- uid: System.UriComponents.PathAndQuery
+  id: PathAndQuery
+  parent: System.UriComponents
+  href: System.UriComponents.yml
+  name: PathAndQuery
+  fullName: System.UriComponents.PathAndQuery
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Private.Uri/src/System/UriEnumTypes.cs
+    startLine: 43
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: The @'System.Uri.LocalPath' and @'System.Uri.Query' data. Also see @'System.Uri.PathAndQuery'.
+  syntax:
+    content: PathAndQuery = 48
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

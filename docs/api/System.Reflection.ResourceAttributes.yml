@@ -1,0 +1,65 @@
+items:
+- uid: System.Reflection.ResourceAttributes
+  id: ResourceAttributes
+  parent: System.Reflection
+  children:
+  - System.Reflection.ResourceAttributes.Private
+  - System.Reflection.ResourceAttributes.Public
+  href: System.Reflection.ResourceAttributes.yml
+  name: ResourceAttributes
+  fullName: System.Reflection.ResourceAttributes
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Reflection/ResourceAttributes.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Reflection/ResourceAttributes.cs
+    startLine: 14
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies the attributes for a manifest resource.
+  syntax:
+    content: public enum ResourceAttributes
+    content.vb: Public Enum ResourceAttributes
+- uid: System.Reflection.ResourceAttributes.Public
+  id: Public
+  parent: System.Reflection.ResourceAttributes
+  href: System.Reflection.ResourceAttributes.yml
+  name: Public
+  fullName: System.Reflection.ResourceAttributes.Public
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/ResourceAttributes.cs
+    startLine: 19
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: A mask used to retrieve public manifest resources.
+  syntax:
+    content: Public = 1
+- uid: System.Reflection.ResourceAttributes.Private
+  id: Private
+  parent: System.Reflection.ResourceAttributes
+  href: System.Reflection.ResourceAttributes.yml
+  name: Private
+  fullName: System.Reflection.ResourceAttributes.Private
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/ResourceAttributes.cs
+    startLine: 20
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: A mask used to retrieve private manifest resources.
+  syntax:
+    content: Private = 2
+references:
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace

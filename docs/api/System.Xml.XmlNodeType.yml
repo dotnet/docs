@@ -1,0 +1,353 @@
+items:
+- uid: System.Xml.XmlNodeType
+  id: XmlNodeType
+  parent: System.Xml
+  children:
+  - System.Xml.XmlNodeType.Attribute
+  - System.Xml.XmlNodeType.CDATA
+  - System.Xml.XmlNodeType.Comment
+  - System.Xml.XmlNodeType.Document
+  - System.Xml.XmlNodeType.DocumentFragment
+  - System.Xml.XmlNodeType.DocumentType
+  - System.Xml.XmlNodeType.Element
+  - System.Xml.XmlNodeType.EndElement
+  - System.Xml.XmlNodeType.EndEntity
+  - System.Xml.XmlNodeType.Entity
+  - System.Xml.XmlNodeType.EntityReference
+  - System.Xml.XmlNodeType.None
+  - System.Xml.XmlNodeType.Notation
+  - System.Xml.XmlNodeType.ProcessingInstruction
+  - System.Xml.XmlNodeType.SignificantWhitespace
+  - System.Xml.XmlNodeType.Text
+  - System.Xml.XmlNodeType.Whitespace
+  - System.Xml.XmlNodeType.XmlDeclaration
+  href: System.Xml.XmlNodeType.yml
+  name: XmlNodeType
+  fullName: System.Xml.XmlNodeType
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Xml.ReaderWriter/src/System/Xml/XmlNodeType.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Xml.ReaderWriter/src/System/Xml/XmlNodeType.cs
+    startLine: 9
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: Specifies the type of node.
+  syntax:
+    content: public enum XmlNodeType
+    content.vb: Public Enum XmlNodeType
+- uid: System.Xml.XmlNodeType.None
+  id: None
+  parent: System.Xml.XmlNodeType
+  href: System.Xml.XmlNodeType.yml
+  name: None
+  fullName: System.Xml.XmlNodeType.None
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/XmlNodeType.cs
+    startLine: 16
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: This is returned by the @'System.Xml.XmlReader' if a Read method has not been called.
+  syntax:
+    content: None = 0
+- uid: System.Xml.XmlNodeType.Element
+  id: Element
+  parent: System.Xml.XmlNodeType
+  href: System.Xml.XmlNodeType.yml
+  name: Element
+  fullName: System.Xml.XmlNodeType.Element
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/XmlNodeType.cs
+    startLine: 30
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: An element (for example, &lt;item&gt; ).
+  syntax:
+    content: Element = 1
+- uid: System.Xml.XmlNodeType.Attribute
+  id: Attribute
+  parent: System.Xml.XmlNodeType
+  href: System.Xml.XmlNodeType.yml
+  name: Attribute
+  fullName: System.Xml.XmlNodeType.Attribute
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/XmlNodeType.cs
+    startLine: 46
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: An attribute (for example, id='123' ).
+  syntax:
+    content: Attribute = 2
+- uid: System.Xml.XmlNodeType.Text
+  id: Text
+  parent: System.Xml.XmlNodeType
+  href: System.Xml.XmlNodeType.yml
+  name: Text
+  fullName: System.Xml.XmlNodeType.Text
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/XmlNodeType.cs
+    startLine: 59
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: The text content of a node.
+  syntax:
+    content: Text = 3
+- uid: System.Xml.XmlNodeType.CDATA
+  id: CDATA
+  parent: System.Xml.XmlNodeType
+  href: System.Xml.XmlNodeType.yml
+  name: CDATA
+  fullName: System.Xml.XmlNodeType.CDATA
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/XmlNodeType.cs
+    startLine: 69
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: A CDATA section (for example, &lt;![CDATA[my escaped text]]&gt; ).
+  syntax:
+    content: CDATA = 4
+- uid: System.Xml.XmlNodeType.EntityReference
+  id: EntityReference
+  parent: System.Xml.XmlNodeType
+  href: System.Xml.XmlNodeType.yml
+  name: EntityReference
+  fullName: System.Xml.XmlNodeType.EntityReference
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/XmlNodeType.cs
+    startLine: 80
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: A reference to an entity (for example, &amp;num; ).
+  syntax:
+    content: EntityReference = 5
+- uid: System.Xml.XmlNodeType.Entity
+  id: Entity
+  parent: System.Xml.XmlNodeType
+  href: System.Xml.XmlNodeType.yml
+  name: Entity
+  fullName: System.Xml.XmlNodeType.Entity
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/XmlNodeType.cs
+    startLine: 89
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: An entity declaration (for example, &lt;!ENTITY...&gt; ).
+  syntax:
+    content: Entity = 6
+- uid: System.Xml.XmlNodeType.ProcessingInstruction
+  id: ProcessingInstruction
+  parent: System.Xml.XmlNodeType
+  href: System.Xml.XmlNodeType.yml
+  name: ProcessingInstruction
+  fullName: System.Xml.XmlNodeType.ProcessingInstruction
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/XmlNodeType.cs
+    startLine: 104
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: A processing instruction (for example, &lt;?pi test?&gt; ).
+  syntax:
+    content: ProcessingInstruction = 7
+- uid: System.Xml.XmlNodeType.Comment
+  id: Comment
+  parent: System.Xml.XmlNodeType
+  href: System.Xml.XmlNodeType.yml
+  name: Comment
+  fullName: System.Xml.XmlNodeType.Comment
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/XmlNodeType.cs
+    startLine: 119
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: A comment (for example, &lt;!-- my comment --&gt; ).
+  syntax:
+    content: Comment = 8
+- uid: System.Xml.XmlNodeType.Document
+  id: Document
+  parent: System.Xml.XmlNodeType
+  href: System.Xml.XmlNodeType.yml
+  name: Document
+  fullName: System.Xml.XmlNodeType.Document
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/XmlNodeType.cs
+    startLine: 132
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: A document object that, as the root of the document tree, provides access to the entire XML document.
+  syntax:
+    content: Document = 9
+- uid: System.Xml.XmlNodeType.DocumentType
+  id: DocumentType
+  parent: System.Xml.XmlNodeType
+  href: System.Xml.XmlNodeType.yml
+  name: DocumentType
+  fullName: System.Xml.XmlNodeType.DocumentType
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/XmlNodeType.cs
+    startLine: 146
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: The document type declaration, indicated by the following tag (for example, &lt;!DOCTYPE...&gt; ).
+  syntax:
+    content: DocumentType = 10
+- uid: System.Xml.XmlNodeType.DocumentFragment
+  id: DocumentFragment
+  parent: System.Xml.XmlNodeType
+  href: System.Xml.XmlNodeType.yml
+  name: DocumentFragment
+  fullName: System.Xml.XmlNodeType.DocumentFragment
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/XmlNodeType.cs
+    startLine: 160
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: A document fragment.
+  syntax:
+    content: DocumentFragment = 11
+- uid: System.Xml.XmlNodeType.Notation
+  id: Notation
+  parent: System.Xml.XmlNodeType
+  href: System.Xml.XmlNodeType.yml
+  name: Notation
+  fullName: System.Xml.XmlNodeType.Notation
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/XmlNodeType.cs
+    startLine: 174
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: A notation in the document type declaration (for example, &lt;!NOTATION...&gt; ).
+  syntax:
+    content: Notation = 12
+- uid: System.Xml.XmlNodeType.Whitespace
+  id: Whitespace
+  parent: System.Xml.XmlNodeType
+  href: System.Xml.XmlNodeType.yml
+  name: Whitespace
+  fullName: System.Xml.XmlNodeType.Whitespace
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/XmlNodeType.cs
+    startLine: 181
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: White space between markup.
+  syntax:
+    content: Whitespace = 13
+- uid: System.Xml.XmlNodeType.SignificantWhitespace
+  id: SignificantWhitespace
+  parent: System.Xml.XmlNodeType
+  href: System.Xml.XmlNodeType.yml
+  name: SignificantWhitespace
+  fullName: System.Xml.XmlNodeType.SignificantWhitespace
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/XmlNodeType.cs
+    startLine: 188
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: White space between markup in a mixed content model or white space within the xml:space="preserve" scope.
+  syntax:
+    content: SignificantWhitespace = 14
+- uid: System.Xml.XmlNodeType.EndElement
+  id: EndElement
+  parent: System.Xml.XmlNodeType
+  href: System.Xml.XmlNodeType.yml
+  name: EndElement
+  fullName: System.Xml.XmlNodeType.EndElement
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/XmlNodeType.cs
+    startLine: 194
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: An end element tag (for example, &lt;/item&gt; ).
+  syntax:
+    content: EndElement = 15
+- uid: System.Xml.XmlNodeType.EndEntity
+  id: EndEntity
+  parent: System.Xml.XmlNodeType
+  href: System.Xml.XmlNodeType.yml
+  name: EndEntity
+  fullName: System.Xml.XmlNodeType.EndEntity
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/XmlNodeType.cs
+    startLine: 201
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: Returned when XmlReader gets to the end of the entity replacement as a result of a call to @'System.Xml.XmlReader.ResolveEntity'.
+  syntax:
+    content: EndEntity = 16
+- uid: System.Xml.XmlNodeType.XmlDeclaration
+  id: XmlDeclaration
+  parent: System.Xml.XmlNodeType
+  href: System.Xml.XmlNodeType.yml
+  name: XmlDeclaration
+  fullName: System.Xml.XmlNodeType.XmlDeclaration
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/XmlNodeType.cs
+    startLine: 216
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: The XML declaration (for example, &lt;?xml version='1.0'?&gt; ).
+  syntax:
+    content: XmlDeclaration = 17
+references:
+- uid: System.Xml
+  isExternal: false
+  name: System.Xml
+  fullName: System.Xml
+  type: Namespace

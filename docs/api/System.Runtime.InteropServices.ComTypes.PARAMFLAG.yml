@@ -1,0 +1,173 @@
+items:
+- uid: System.Runtime.InteropServices.ComTypes.PARAMFLAG
+  id: PARAMFLAG
+  parent: System.Runtime.InteropServices.ComTypes
+  children:
+  - System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FHASCUSTDATA
+  - System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FHASDEFAULT
+  - System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FIN
+  - System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FLCID
+  - System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FOPT
+  - System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FOUT
+  - System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FRETVAL
+  - System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_NONE
+  href: System.Runtime.InteropServices.ComTypes.PARAMFLAG.yml
+  name: PARAMFLAG
+  fullName: System.Runtime.InteropServices.ComTypes.PARAMFLAG
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 126
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Describes how to transfer a structure element, parameter, or function return value between processes.
+  syntax:
+    content: 'public enum PARAMFLAG : short'
+    content.vb: Public Enum PARAMFLAG As Short
+- uid: System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_NONE
+  id: PARAMFLAG_NONE
+  parent: System.Runtime.InteropServices.ComTypes.PARAMFLAG
+  href: System.Runtime.InteropServices.ComTypes.PARAMFLAG.yml
+  name: PARAMFLAG_NONE
+  fullName: System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_NONE
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 130
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Does not specify whether the parameter passes or receives information.
+  syntax:
+    content: PARAMFLAG_NONE = 0
+- uid: System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FIN
+  id: PARAMFLAG_FIN
+  parent: System.Runtime.InteropServices.ComTypes.PARAMFLAG
+  href: System.Runtime.InteropServices.ComTypes.PARAMFLAG.yml
+  name: PARAMFLAG_FIN
+  fullName: System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FIN
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 131
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: The parameter passes information from the caller to the callee.
+  syntax:
+    content: PARAMFLAG_FIN = 1
+- uid: System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FOUT
+  id: PARAMFLAG_FOUT
+  parent: System.Runtime.InteropServices.ComTypes.PARAMFLAG
+  href: System.Runtime.InteropServices.ComTypes.PARAMFLAG.yml
+  name: PARAMFLAG_FOUT
+  fullName: System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FOUT
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 132
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: The parameter returns information from the callee to the caller.
+  syntax:
+    content: PARAMFLAG_FOUT = 2
+- uid: System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FLCID
+  id: PARAMFLAG_FLCID
+  parent: System.Runtime.InteropServices.ComTypes.PARAMFLAG
+  href: System.Runtime.InteropServices.ComTypes.PARAMFLAG.yml
+  name: PARAMFLAG_FLCID
+  fullName: System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FLCID
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 133
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: The parameter is the local identifier of a client application.
+  syntax:
+    content: PARAMFLAG_FLCID = 4
+- uid: System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FRETVAL
+  id: PARAMFLAG_FRETVAL
+  parent: System.Runtime.InteropServices.ComTypes.PARAMFLAG
+  href: System.Runtime.InteropServices.ComTypes.PARAMFLAG.yml
+  name: PARAMFLAG_FRETVAL
+  fullName: System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FRETVAL
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 134
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: The parameter is the return value of the member.
+  syntax:
+    content: PARAMFLAG_FRETVAL = 8
+- uid: System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FOPT
+  id: PARAMFLAG_FOPT
+  parent: System.Runtime.InteropServices.ComTypes.PARAMFLAG
+  href: System.Runtime.InteropServices.ComTypes.PARAMFLAG.yml
+  name: PARAMFLAG_FOPT
+  fullName: System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FOPT
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 135
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: The parameter is optional.
+  syntax:
+    content: PARAMFLAG_FOPT = 16
+- uid: System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FHASDEFAULT
+  id: PARAMFLAG_FHASDEFAULT
+  parent: System.Runtime.InteropServices.ComTypes.PARAMFLAG
+  href: System.Runtime.InteropServices.ComTypes.PARAMFLAG.yml
+  name: PARAMFLAG_FHASDEFAULT
+  fullName: System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FHASDEFAULT
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 136
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: The parameter has default behaviors defined.
+  syntax:
+    content: PARAMFLAG_FHASDEFAULT = 32
+- uid: System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FHASCUSTDATA
+  id: PARAMFLAG_FHASCUSTDATA
+  parent: System.Runtime.InteropServices.ComTypes.PARAMFLAG
+  href: System.Runtime.InteropServices.ComTypes.PARAMFLAG.yml
+  name: PARAMFLAG_FHASCUSTDATA
+  fullName: System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FHASCUSTDATA
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 137
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: The parameter has custom data.
+  syntax:
+    content: PARAMFLAG_FHASCUSTDATA = 64
+references:
+- uid: System.Runtime.InteropServices.ComTypes
+  isExternal: false
+  name: System.Runtime.InteropServices.ComTypes
+  fullName: System.Runtime.InteropServices.ComTypes
+  type: Namespace

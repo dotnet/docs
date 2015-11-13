@@ -1,0 +1,226 @@
+items:
+- uid: System.Text.RegularExpressions.RegexOptions
+  id: RegexOptions
+  parent: System.Text.RegularExpressions
+  children:
+  - System.Text.RegularExpressions.RegexOptions.Compiled
+  - System.Text.RegularExpressions.RegexOptions.CultureInvariant
+  - System.Text.RegularExpressions.RegexOptions.Debug
+  - System.Text.RegularExpressions.RegexOptions.ECMAScript
+  - System.Text.RegularExpressions.RegexOptions.ExplicitCapture
+  - System.Text.RegularExpressions.RegexOptions.IgnoreCase
+  - System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace
+  - System.Text.RegularExpressions.RegexOptions.Multiline
+  - System.Text.RegularExpressions.RegexOptions.None
+  - System.Text.RegularExpressions.RegexOptions.RightToLeft
+  - System.Text.RegularExpressions.RegexOptions.Singleline
+  href: System.Text.RegularExpressions.RegexOptions.yml
+  name: RegexOptions
+  fullName: System.Text.RegularExpressions.RegexOptions
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/RegexOptions.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/RegexOptions.cs
+    startLine: 5
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Provides enumerated values to use to set regular expression options.
+  syntax:
+    content: public enum RegexOptions
+    content.vb: Public Enum RegexOptions
+- uid: System.Text.RegularExpressions.RegexOptions.None
+  id: None
+  parent: System.Text.RegularExpressions.RegexOptions
+  href: System.Text.RegularExpressions.RegexOptions.yml
+  name: None
+  fullName: System.Text.RegularExpressions.RegexOptions.None
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/RegexOptions.cs
+    startLine: 8
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Specifies that no options are set. For more information about the default behavior of the regular expression engine, see the "Default Options" section in the Regular Expression Options topic.
+  syntax:
+    content: None = 0
+- uid: System.Text.RegularExpressions.RegexOptions.IgnoreCase
+  id: IgnoreCase
+  parent: System.Text.RegularExpressions.RegexOptions
+  href: System.Text.RegularExpressions.RegexOptions.yml
+  name: IgnoreCase
+  fullName: System.Text.RegularExpressions.RegexOptions.IgnoreCase
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/RegexOptions.cs
+    startLine: 9
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Specifies case-insensitive matching. For more information, see the "Case-Insensitive Matching " section in the Regular Expression Options topic.
+  syntax:
+    content: IgnoreCase = 1
+- uid: System.Text.RegularExpressions.RegexOptions.Multiline
+  id: Multiline
+  parent: System.Text.RegularExpressions.RegexOptions
+  href: System.Text.RegularExpressions.RegexOptions.yml
+  name: Multiline
+  fullName: System.Text.RegularExpressions.RegexOptions.Multiline
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/RegexOptions.cs
+    startLine: 10
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Multiline mode. Changes the meaning of ^ and $ so they match at the beginning and end, respectively, of any line, and not just the beginning and end of the entire string. For more information, see the "Multiline Mode" section in the Regular Expression Options topic.
+  syntax:
+    content: Multiline = 2
+- uid: System.Text.RegularExpressions.RegexOptions.ExplicitCapture
+  id: ExplicitCapture
+  parent: System.Text.RegularExpressions.RegexOptions
+  href: System.Text.RegularExpressions.RegexOptions.yml
+  name: ExplicitCapture
+  fullName: System.Text.RegularExpressions.RegexOptions.ExplicitCapture
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/RegexOptions.cs
+    startLine: 11
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: "Specifies that the only valid captures are explicitly named or numbered groups of the form (?&lt;name&gt;…). This allows unnamed parentheses to act as noncapturing groups without the syntactic clumsiness of the expression (?:…). For more information, see the \"Explicit Captures Only\" section in the Regular Expression Options topic."
+  syntax:
+    content: ExplicitCapture = 4
+- uid: System.Text.RegularExpressions.RegexOptions.Compiled
+  id: Compiled
+  parent: System.Text.RegularExpressions.RegexOptions
+  href: System.Text.RegularExpressions.RegexOptions.yml
+  name: Compiled
+  fullName: System.Text.RegularExpressions.RegexOptions.Compiled
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/RegexOptions.cs
+    startLine: 12
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Specifies that the regular expression is compiled to an assembly. This yields faster execution but increases startup time. This value should not be assigned to the @'System.Text.RegularExpressions.RegexCompilationInfo.Options' property when calling the @'System.Text.RegularExpressions.Regex.CompileToAssembly(System.Text.RegularExpressions.RegexCompilationInfo[],System.Reflection.AssemblyName)' method. For more information, see the "Compiled Regular Expressions" section in the Regular Expression Options topic.
+  syntax:
+    content: Compiled = 8
+- uid: System.Text.RegularExpressions.RegexOptions.Singleline
+  id: Singleline
+  parent: System.Text.RegularExpressions.RegexOptions
+  href: System.Text.RegularExpressions.RegexOptions.yml
+  name: Singleline
+  fullName: System.Text.RegularExpressions.RegexOptions.Singleline
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/RegexOptions.cs
+    startLine: 13
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Specifies single-line mode. Changes the meaning of the dot (.) so it matches every character (instead of every character except \n). For more information, see the "Single-line Mode" section in the Regular Expression Options topic.
+  syntax:
+    content: Singleline = 16
+- uid: System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace
+  id: IgnorePatternWhitespace
+  parent: System.Text.RegularExpressions.RegexOptions
+  href: System.Text.RegularExpressions.RegexOptions.yml
+  name: IgnorePatternWhitespace
+  fullName: System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/RegexOptions.cs
+    startLine: 14
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: 'Eliminates unescaped white space from the pattern and enables comments marked with #. However, this value does not affect or eliminate white space in character classes, numeric quantifiers, or tokens that mark the beginning of individual regular expression language elements. For more information, see the "Ignore White Space" section of the Regular Expression Options topic.'
+  syntax:
+    content: IgnorePatternWhitespace = 32
+- uid: System.Text.RegularExpressions.RegexOptions.RightToLeft
+  id: RightToLeft
+  parent: System.Text.RegularExpressions.RegexOptions
+  href: System.Text.RegularExpressions.RegexOptions.yml
+  name: RightToLeft
+  fullName: System.Text.RegularExpressions.RegexOptions.RightToLeft
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/RegexOptions.cs
+    startLine: 15
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Specifies that the search will be from right to left instead of from left to right. For more information, see the "Right-to-Left Mode" section in the Regular Expression Options topic.
+  syntax:
+    content: RightToLeft = 64
+- uid: System.Text.RegularExpressions.RegexOptions.Debug
+  id: Debug
+  parent: System.Text.RegularExpressions.RegexOptions
+  href: System.Text.RegularExpressions.RegexOptions.yml
+  name: Debug
+  fullName: System.Text.RegularExpressions.RegexOptions.Debug
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/RegexOptions.cs
+    startLine: 18
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  syntax:
+    content: Debug = 128
+- uid: System.Text.RegularExpressions.RegexOptions.ECMAScript
+  id: ECMAScript
+  parent: System.Text.RegularExpressions.RegexOptions
+  href: System.Text.RegularExpressions.RegexOptions.yml
+  name: ECMAScript
+  fullName: System.Text.RegularExpressions.RegexOptions.ECMAScript
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/RegexOptions.cs
+    startLine: 21
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Enables ECMAScript-compliant behavior for the expression. This value can be used only in conjunction with the @'System.Text.RegularExpressions.RegexOptions.IgnoreCase', @'System.Text.RegularExpressions.RegexOptions.Multiline', and @'System.Text.RegularExpressions.RegexOptions.Compiled' values. The use of this value with any other values results in an exception.For more information on the @'System.Text.RegularExpressions.RegexOptions.ECMAScript' option, see the "ECMAScript Matching Behavior" section in the Regular Expression Options topic.
+  syntax:
+    content: ECMAScript = 256
+- uid: System.Text.RegularExpressions.RegexOptions.CultureInvariant
+  id: CultureInvariant
+  parent: System.Text.RegularExpressions.RegexOptions
+  href: System.Text.RegularExpressions.RegexOptions.yml
+  name: CultureInvariant
+  fullName: System.Text.RegularExpressions.RegexOptions.CultureInvariant
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/RegexOptions.cs
+    startLine: 22
+  assemblies:
+  - System.Text.RegularExpressions
+  namespace: System.Text.RegularExpressions
+  summary: Specifies that cultural differences in language is ignored. For more information, see the "Comparison Using the Invariant Culture" section in the Regular Expression Options topic.
+  syntax:
+    content: CultureInvariant = 512
+references:
+- uid: System.Text.RegularExpressions
+  isExternal: false
+  name: System.Text.RegularExpressions
+  fullName: System.Text.RegularExpressions
+  type: Namespace

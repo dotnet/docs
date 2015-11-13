@@ -1,0 +1,29 @@
+items:
+- uid: System.Runtime.InteropServices._AssemblyBuilder
+  id: _AssemblyBuilder
+  parent: System.Runtime.InteropServices
+  children: []
+  href: System.Runtime.InteropServices._AssemblyBuilder.yml
+  name: _AssemblyBuilder
+  fullName: System.Runtime.InteropServices._AssemblyBuilder
+  type: Interface
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/Emit/ComInterfaces.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Reflection/Emit/ComInterfaces.cs
+    startLine: 14
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Exposes the @'System.Reflection.Emit.AssemblyBuilder' class to unmanaged code.
+  syntax:
+    content: public interface _AssemblyBuilder
+    content.vb: Public Interface _AssemblyBuilder
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace

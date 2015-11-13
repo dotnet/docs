@@ -1,0 +1,83 @@
+items:
+- uid: System.Runtime.InteropServices.ComMemberType
+  id: ComMemberType
+  parent: System.Runtime.InteropServices
+  children:
+  - System.Runtime.InteropServices.ComMemberType.Method
+  - System.Runtime.InteropServices.ComMemberType.PropGet
+  - System.Runtime.InteropServices.ComMemberType.PropSet
+  href: System.Runtime.InteropServices.ComMemberType.yml
+  name: ComMemberType
+  fullName: System.Runtime.InteropServices.ComMemberType
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/InteropServices/ComMemberType.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComMemberType.cs
+    startLine: 9
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Describes the type of a COM member.
+  syntax:
+    content: public enum ComMemberType
+    content.vb: Public Enum ComMemberType
+- uid: System.Runtime.InteropServices.ComMemberType.Method
+  id: Method
+  parent: System.Runtime.InteropServices.ComMemberType
+  href: System.Runtime.InteropServices.ComMemberType.yml
+  name: Method
+  fullName: System.Runtime.InteropServices.ComMemberType.Method
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComMemberType.cs
+    startLine: 13
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: The member is a normal method.
+  syntax:
+    content: Method = 0
+- uid: System.Runtime.InteropServices.ComMemberType.PropGet
+  id: PropGet
+  parent: System.Runtime.InteropServices.ComMemberType
+  href: System.Runtime.InteropServices.ComMemberType.yml
+  name: PropGet
+  fullName: System.Runtime.InteropServices.ComMemberType.PropGet
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComMemberType.cs
+    startLine: 14
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: The member gets properties.
+  syntax:
+    content: PropGet = 1
+- uid: System.Runtime.InteropServices.ComMemberType.PropSet
+  id: PropSet
+  parent: System.Runtime.InteropServices.ComMemberType
+  href: System.Runtime.InteropServices.ComMemberType.yml
+  name: PropSet
+  fullName: System.Runtime.InteropServices.ComMemberType.PropSet
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComMemberType.cs
+    startLine: 15
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: The member sets properties.
+  syntax:
+    content: PropSet = 2
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace

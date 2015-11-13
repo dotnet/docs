@@ -1,0 +1,119 @@
+items:
+- uid: System.Diagnostics.TraceOptions
+  id: TraceOptions
+  parent: System.Diagnostics
+  children:
+  - System.Diagnostics.TraceOptions.DateTime
+  - System.Diagnostics.TraceOptions.None
+  - System.Diagnostics.TraceOptions.ProcessId
+  - System.Diagnostics.TraceOptions.ThreadId
+  - System.Diagnostics.TraceOptions.Timestamp
+  href: System.Diagnostics.TraceOptions.yml
+  name: TraceOptions
+  fullName: System.Diagnostics.TraceOptions
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceOptions.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceOptions.cs
+    startLine: 5
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: Specifies trace data options to be written to the trace output.
+  syntax:
+    content: public enum TraceOptions
+    content.vb: Public Enum TraceOptions
+- uid: System.Diagnostics.TraceOptions.None
+  id: None
+  parent: System.Diagnostics.TraceOptions
+  href: System.Diagnostics.TraceOptions.yml
+  name: None
+  fullName: System.Diagnostics.TraceOptions.None
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceOptions.cs
+    startLine: 8
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: Do not write any elements.
+  syntax:
+    content: None = 0
+- uid: System.Diagnostics.TraceOptions.DateTime
+  id: DateTime
+  parent: System.Diagnostics.TraceOptions
+  href: System.Diagnostics.TraceOptions.yml
+  name: DateTime
+  fullName: System.Diagnostics.TraceOptions.DateTime
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceOptions.cs
+    startLine: 9
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: Write the date and time.
+  syntax:
+    content: DateTime = 2
+- uid: System.Diagnostics.TraceOptions.Timestamp
+  id: Timestamp
+  parent: System.Diagnostics.TraceOptions
+  href: System.Diagnostics.TraceOptions.yml
+  name: Timestamp
+  fullName: System.Diagnostics.TraceOptions.Timestamp
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceOptions.cs
+    startLine: 10
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: Write the timestamp, which is represented by the return value of the @'System.Diagnostics.Stopwatch.GetTimestamp' method.
+  syntax:
+    content: Timestamp = 4
+- uid: System.Diagnostics.TraceOptions.ProcessId
+  id: ProcessId
+  parent: System.Diagnostics.TraceOptions
+  href: System.Diagnostics.TraceOptions.yml
+  name: ProcessId
+  fullName: System.Diagnostics.TraceOptions.ProcessId
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceOptions.cs
+    startLine: 11
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: Write the process identity, which is represented by the return value of the @'System.Diagnostics.Process.Id' property.
+  syntax:
+    content: ProcessId = 8
+- uid: System.Diagnostics.TraceOptions.ThreadId
+  id: ThreadId
+  parent: System.Diagnostics.TraceOptions
+  href: System.Diagnostics.TraceOptions.yml
+  name: ThreadId
+  fullName: System.Diagnostics.TraceOptions.ThreadId
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceOptions.cs
+    startLine: 12
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: Write the thread identity, which is represented by the return value of the @'System.Threading.Thread.ManagedThreadId' property for the current thread.
+  syntax:
+    content: ThreadId = 16
+references:
+- uid: System.Diagnostics
+  isExternal: false
+  name: System.Diagnostics
+  fullName: System.Diagnostics
+  type: Namespace

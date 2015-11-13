@@ -1,0 +1,713 @@
+items:
+- uid: System.Diagnostics.ProcessThread
+  id: ProcessThread
+  parent: System.Diagnostics
+  children:
+  - System.Diagnostics.ProcessThread.BasePriority
+  - System.Diagnostics.ProcessThread.CurrentPriority
+  - System.Diagnostics.ProcessThread.Id
+  - System.Diagnostics.ProcessThread.IdealProcessor
+  - System.Diagnostics.ProcessThread.PriorityBoostEnabled
+  - System.Diagnostics.ProcessThread.PriorityLevel
+  - System.Diagnostics.ProcessThread.PrivilegedProcessorTime
+  - System.Diagnostics.ProcessThread.ProcessorAffinity
+  - System.Diagnostics.ProcessThread.ResetIdealProcessor
+  - System.Diagnostics.ProcessThread.StartAddress
+  - System.Diagnostics.ProcessThread.StartTime
+  - System.Diagnostics.ProcessThread.ThreadState
+  - System.Diagnostics.ProcessThread.TotalProcessorTime
+  - System.Diagnostics.ProcessThread.UserProcessorTime
+  - System.Diagnostics.ProcessThread.WaitReason
+  href: System.Diagnostics.ProcessThread.yml
+  name: ProcessThread
+  fullName: System.Diagnostics.ProcessThread
+  type: Class
+  source:
+    remote: &o1
+      path: src/System.Diagnostics.Process/src/System/Diagnostics/ProcessThread.Windows.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/ProcessThread.Windows.cs
+    startLine: 8
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Represents an operating system process thread.
+  syntax:
+    content: public class ProcessThread
+    content.vb: Public Class ProcessThread
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Diagnostics.ProcessThread.BasePriority
+  id: BasePriority
+  parent: System.Diagnostics.ProcessThread
+  href: System.Diagnostics.ProcessThread.yml
+  name: BasePriority
+  fullName: System.Diagnostics.ProcessThread.BasePriority
+  type: Property
+  source:
+    remote: &o0
+      path: src/System.Diagnostics.Process/src/System/Diagnostics/ProcessThread.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/ProcessThread.cs
+    startLine: 35
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets the base priority of the thread.
+  syntax:
+    content: public int BasePriority { get; }
+    content.vb: Public ReadOnly Property BasePriority As Integer
+    parameters: []
+    return:
+      type: System.Int32
+- uid: System.Diagnostics.ProcessThread.CurrentPriority
+  id: CurrentPriority
+  parent: System.Diagnostics.ProcessThread
+  href: System.Diagnostics.ProcessThread.yml
+  name: CurrentPriority
+  fullName: System.Diagnostics.ProcessThread.CurrentPriority
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/ProcessThread.cs
+    startLine: 45
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets the current priority of the thread.
+  syntax:
+    content: public int CurrentPriority { get; }
+    content.vb: Public ReadOnly Property CurrentPriority As Integer
+    parameters: []
+    return:
+      type: System.Int32
+- uid: System.Diagnostics.ProcessThread.Id
+  id: Id
+  parent: System.Diagnostics.ProcessThread
+  href: System.Diagnostics.ProcessThread.yml
+  name: Id
+  fullName: System.Diagnostics.ProcessThread.Id
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/ProcessThread.cs
+    startLine: 53
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets the unique identifier of the thread.
+  syntax:
+    content: public int Id { get; }
+    content.vb: Public ReadOnly Property Id As Integer
+    parameters: []
+    return:
+      type: System.Int32
+- uid: System.Diagnostics.ProcessThread.PriorityBoostEnabled
+  id: PriorityBoostEnabled
+  parent: System.Diagnostics.ProcessThread
+  href: System.Diagnostics.ProcessThread.yml
+  name: PriorityBoostEnabled
+  fullName: System.Diagnostics.ProcessThread.PriorityBoostEnabled
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/ProcessThread.cs
+    startLine: 62
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets or sets a value indicating whether the operating system should temporarily boost the priority of the associated thread whenever the main window of the thread's process receives the focus.
+  syntax:
+    content: public bool PriorityBoostEnabled { get; set; }
+    content.vb: Public Property PriorityBoostEnabled As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ComponentModel.Win32Exception
+    description: The priority boost information could not be retrieved.-or-The priority boost information could not be set.
+  - type: System.PlatformNotSupportedException
+    description: The platform is Windows 98 or Windows Millennium Edition.
+  - type: System.NotSupportedException
+    description: The process is on a remote computer.
+- uid: System.Diagnostics.ProcessThread.PriorityLevel
+  id: PriorityLevel
+  parent: System.Diagnostics.ProcessThread
+  href: System.Diagnostics.ProcessThread.yml
+  name: PriorityLevel
+  fullName: System.Diagnostics.ProcessThread.PriorityLevel
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/ProcessThread.cs
+    startLine: 84
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets or sets the priority level of the thread.
+  syntax:
+    content: public ThreadPriorityLevel PriorityLevel { get; set; }
+    content.vb: Public Property PriorityLevel As ThreadPriorityLevel
+    parameters: []
+    return:
+      type: System.Diagnostics.ThreadPriorityLevel
+  exceptions:
+  - type: System.ComponentModel.Win32Exception
+    description: The thread priority level information could not be retrieved. -or-The thread priority level could not be set.
+  - type: System.PlatformNotSupportedException
+    description: The platform is Windows 98 or Windows Millennium Edition.
+  - type: System.NotSupportedException
+    description: The process is on a remote computer.
+- uid: System.Diagnostics.ProcessThread.StartAddress
+  id: StartAddress
+  parent: System.Diagnostics.ProcessThread
+  href: System.Diagnostics.ProcessThread.yml
+  name: StartAddress
+  fullName: System.Diagnostics.ProcessThread.StartAddress
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/ProcessThread.cs
+    startLine: 105
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets the memory address of the function that the operating system called that started this thread.
+  syntax:
+    content: public IntPtr StartAddress { get; }
+    content.vb: Public ReadOnly Property StartAddress As IntPtr
+    parameters: []
+    return:
+      type: System.IntPtr
+  exceptions:
+  - type: System.PlatformNotSupportedException
+    description: The platform is Windows 98 or Windows Millennium Edition.
+  - type: System.NotSupportedException
+    description: The process is on a remote computer.
+- uid: System.Diagnostics.ProcessThread.ThreadState
+  id: ThreadState
+  parent: System.Diagnostics.ProcessThread
+  href: System.Diagnostics.ProcessThread.yml
+  name: ThreadState
+  fullName: System.Diagnostics.ProcessThread.ThreadState
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/ProcessThread.cs
+    startLine: 113
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets the current state of this thread.
+  syntax:
+    content: public ThreadState ThreadState { get; }
+    content.vb: Public ReadOnly Property ThreadState As ThreadState
+    parameters: []
+    return:
+      type: System.Diagnostics.ThreadState
+  exceptions:
+  - type: System.PlatformNotSupportedException
+    description: The platform is Windows 98 or Windows Millennium Edition.
+  - type: System.NotSupportedException
+    description: The process is on a remote computer.
+- uid: System.Diagnostics.ProcessThread.WaitReason
+  id: WaitReason
+  parent: System.Diagnostics.ProcessThread
+  href: System.Diagnostics.ProcessThread.yml
+  name: WaitReason
+  fullName: System.Diagnostics.ProcessThread.WaitReason
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/ProcessThread.cs
+    startLine: 121
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets the reason that the thread is waiting.
+  syntax:
+    content: public ThreadWaitReason WaitReason { get; }
+    content.vb: Public ReadOnly Property WaitReason As ThreadWaitReason
+    parameters: []
+    return:
+      type: System.Diagnostics.ThreadWaitReason
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The thread is not in the wait state.
+  - type: System.PlatformNotSupportedException
+    description: The platform is Windows 98 or Windows Millennium Edition.
+  - type: System.NotSupportedException
+    description: The process is on a remote computer.
+- uid: System.Diagnostics.ProcessThread.IdealProcessor
+  id: IdealProcessor
+  parent: System.Diagnostics.ProcessThread
+  href: System.Diagnostics.ProcessThread.yml
+  name: IdealProcessor
+  fullName: System.Diagnostics.ProcessThread.IdealProcessor
+  type: Property
+  source:
+    remote: *o1
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/ProcessThread.Windows.cs
+    startLine: 11
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Sets the preferred processor for this thread to run on.
+  syntax:
+    content: public int IdealProcessor { set; }
+    content.vb: Public WriteOnly Property IdealProcessor As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  exceptions:
+  - type: System.ComponentModel.Win32Exception
+    description: The system could not set the thread to start on the specified processor.
+  - type: System.PlatformNotSupportedException
+    description: The platform is Windows 98 or Windows Millennium Edition.
+  - type: System.NotSupportedException
+    description: The process is on a remote computer.
+- uid: System.Diagnostics.ProcessThread.ResetIdealProcessor
+  id: ResetIdealProcessor
+  parent: System.Diagnostics.ProcessThread
+  href: System.Diagnostics.ProcessThread.yml
+  name: ResetIdealProcessor()
+  fullName: System.Diagnostics.ProcessThread.ResetIdealProcessor()
+  type: Method
+  source:
+    remote: *o1
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/ProcessThread.Windows.cs
+    startLine: 29
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Resets the ideal processor for this thread to indicate that there is no single ideal processor. In other words, so that any processor is ideal.
+  syntax:
+    content: public void ResetIdealProcessor()
+    content.vb: Public Sub ResetIdealProcessor
+  exceptions:
+  - type: System.ComponentModel.Win32Exception
+    description: The ideal processor could not be reset.
+  - type: System.PlatformNotSupportedException
+    description: The platform is Windows 98 or Windows Millennium Edition.
+  - type: System.NotSupportedException
+    description: The process is on a remote computer.
+- uid: System.Diagnostics.ProcessThread.ProcessorAffinity
+  id: ProcessorAffinity
+  parent: System.Diagnostics.ProcessThread
+  href: System.Diagnostics.ProcessThread.yml
+  name: ProcessorAffinity
+  fullName: System.Diagnostics.ProcessThread.ProcessorAffinity
+  type: Property
+  source:
+    remote: *o1
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/ProcessThread.Windows.cs
+    startLine: 101
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Sets the processors on which the associated thread can run.
+  syntax:
+    content: public IntPtr ProcessorAffinity { set; }
+    content.vb: Public WriteOnly Property ProcessorAffinity As IntPtr
+    parameters: []
+    return:
+      type: System.IntPtr
+  exceptions:
+  - type: System.ComponentModel.Win32Exception
+    description: The processor affinity could not be set.
+  - type: System.PlatformNotSupportedException
+    description: The platform is Windows 98 or Windows Millennium Edition.
+  - type: System.NotSupportedException
+    description: The process is on a remote computer.
+- uid: System.Diagnostics.ProcessThread.PrivilegedProcessorTime
+  id: PrivilegedProcessorTime
+  parent: System.Diagnostics.ProcessThread
+  href: System.Diagnostics.ProcessThread.yml
+  name: PrivilegedProcessorTime
+  fullName: System.Diagnostics.ProcessThread.PrivilegedProcessorTime
+  type: Property
+  source:
+    remote: *o1
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/ProcessThread.Windows.cs
+    startLine: 119
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets the amount of time that the thread has spent running code inside the operating system core.
+  syntax:
+    content: public TimeSpan PrivilegedProcessorTime { get; }
+    content.vb: Public ReadOnly Property PrivilegedProcessorTime As TimeSpan
+    parameters: []
+    return:
+      type: System.TimeSpan
+  exceptions:
+  - type: System.ComponentModel.Win32Exception
+    description: The thread time could not be retrieved.
+  - type: System.PlatformNotSupportedException
+    description: The platform is Windows 98 or Windows Millennium Edition.
+  - type: System.NotSupportedException
+    description: The process is on a remote computer.
+- uid: System.Diagnostics.ProcessThread.StartTime
+  id: StartTime
+  parent: System.Diagnostics.ProcessThread
+  href: System.Diagnostics.ProcessThread.yml
+  name: StartTime
+  fullName: System.Diagnostics.ProcessThread.StartTime
+  type: Property
+  source:
+    remote: *o1
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/ProcessThread.Windows.cs
+    startLine: 125
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets the time that the operating system started the thread.
+  syntax:
+    content: public DateTime StartTime { get; }
+    content.vb: Public ReadOnly Property StartTime As Date
+    parameters: []
+    return:
+      type: System.DateTime
+  exceptions:
+  - type: System.ComponentModel.Win32Exception
+    description: The thread time could not be retrieved.
+  - type: System.PlatformNotSupportedException
+    description: The platform is Windows 98 or Windows Millennium Edition.
+  - type: System.NotSupportedException
+    description: The process is on a remote computer.
+- uid: System.Diagnostics.ProcessThread.TotalProcessorTime
+  id: TotalProcessorTime
+  parent: System.Diagnostics.ProcessThread
+  href: System.Diagnostics.ProcessThread.yml
+  name: TotalProcessorTime
+  fullName: System.Diagnostics.ProcessThread.TotalProcessorTime
+  type: Property
+  source:
+    remote: *o1
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/ProcessThread.Windows.cs
+    startLine: 135
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets the total amount of time that this thread has spent using the processor.
+  syntax:
+    content: public TimeSpan TotalProcessorTime { get; }
+    content.vb: Public ReadOnly Property TotalProcessorTime As TimeSpan
+    parameters: []
+    return:
+      type: System.TimeSpan
+  exceptions:
+  - type: System.ComponentModel.Win32Exception
+    description: The thread time could not be retrieved.
+  - type: System.PlatformNotSupportedException
+    description: The platform is Windows 98 or Windows Millennium Edition.
+  - type: System.NotSupportedException
+    description: The process is on a remote computer.
+- uid: System.Diagnostics.ProcessThread.UserProcessorTime
+  id: UserProcessorTime
+  parent: System.Diagnostics.ProcessThread
+  href: System.Diagnostics.ProcessThread.yml
+  name: UserProcessorTime
+  fullName: System.Diagnostics.ProcessThread.UserProcessorTime
+  type: Property
+  source:
+    remote: *o1
+    path: src/System.Diagnostics.Process/src/System/Diagnostics/ProcessThread.Windows.cs
+    startLine: 144
+  assemblies:
+  - System.Diagnostics.Process
+  namespace: System.Diagnostics
+  summary: Gets the amount of time that the associated thread has spent running code inside the application.
+  syntax:
+    content: public TimeSpan UserProcessorTime { get; }
+    content.vb: Public ReadOnly Property UserProcessorTime As TimeSpan
+    parameters: []
+    return:
+      type: System.TimeSpan
+  exceptions:
+  - type: System.ComponentModel.Win32Exception
+    description: The thread time could not be retrieved.
+  - type: System.PlatformNotSupportedException
+    description: The platform is Windows 98 or Windows Millennium Edition.
+  - type: System.NotSupportedException
+    description: The process is on a remote computer.
+references:
+- uid: System.Diagnostics
+  isExternal: false
+  name: System.Diagnostics
+  fullName: System.Diagnostics
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Diagnostics.ThreadPriorityLevel
+  parent: System.Diagnostics
+  isExternal: false
+  href: System.Diagnostics.ThreadPriorityLevel.yml
+  name: ThreadPriorityLevel
+  fullName: System.Diagnostics.ThreadPriorityLevel
+  type: Enum
+- uid: System.IntPtr
+  parent: System
+  isExternal: true
+  name: IntPtr
+  fullName: System.IntPtr
+- uid: System.Diagnostics.ThreadState
+  parent: System.Diagnostics
+  isExternal: false
+  href: System.Diagnostics.ThreadState.yml
+  name: ThreadState
+  fullName: System.Diagnostics.ThreadState
+  type: Enum
+- uid: System.Diagnostics.ThreadWaitReason
+  parent: System.Diagnostics
+  isExternal: false
+  href: System.Diagnostics.ThreadWaitReason.yml
+  name: ThreadWaitReason
+  fullName: System.Diagnostics.ThreadWaitReason
+  type: Enum
+- uid: System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  fullName: System.TimeSpan
+- uid: System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  fullName: System.DateTime

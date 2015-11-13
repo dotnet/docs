@@ -1,0 +1,316 @@
+items:
+- uid: System.ConsoleColor
+  id: ConsoleColor
+  parent: System
+  children:
+  - System.ConsoleColor.Black
+  - System.ConsoleColor.Blue
+  - System.ConsoleColor.Cyan
+  - System.ConsoleColor.DarkBlue
+  - System.ConsoleColor.DarkCyan
+  - System.ConsoleColor.DarkGray
+  - System.ConsoleColor.DarkGreen
+  - System.ConsoleColor.DarkMagenta
+  - System.ConsoleColor.DarkRed
+  - System.ConsoleColor.DarkYellow
+  - System.ConsoleColor.Gray
+  - System.ConsoleColor.Green
+  - System.ConsoleColor.Magenta
+  - System.ConsoleColor.Red
+  - System.ConsoleColor.White
+  - System.ConsoleColor.Yellow
+  href: System.ConsoleColor.yml
+  name: ConsoleColor
+  fullName: System.ConsoleColor
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/ConsoleColor.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/ConsoleColor.cs
+    startLine: 14
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Specifies constants that define foreground and background colors for the console.
+  syntax:
+    content: public enum ConsoleColor
+    content.vb: Public Enum ConsoleColor
+- uid: System.ConsoleColor.Black
+  id: Black
+  parent: System.ConsoleColor
+  href: System.ConsoleColor.yml
+  name: Black
+  fullName: System.ConsoleColor.Black
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleColor.cs
+    startLine: 17
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The color black.
+  syntax:
+    content: Black = 0
+- uid: System.ConsoleColor.DarkBlue
+  id: DarkBlue
+  parent: System.ConsoleColor
+  href: System.ConsoleColor.yml
+  name: DarkBlue
+  fullName: System.ConsoleColor.DarkBlue
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleColor.cs
+    startLine: 18
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The color dark blue.
+  syntax:
+    content: DarkBlue = 1
+- uid: System.ConsoleColor.DarkGreen
+  id: DarkGreen
+  parent: System.ConsoleColor
+  href: System.ConsoleColor.yml
+  name: DarkGreen
+  fullName: System.ConsoleColor.DarkGreen
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleColor.cs
+    startLine: 19
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The color dark green.
+  syntax:
+    content: DarkGreen = 2
+- uid: System.ConsoleColor.DarkCyan
+  id: DarkCyan
+  parent: System.ConsoleColor
+  href: System.ConsoleColor.yml
+  name: DarkCyan
+  fullName: System.ConsoleColor.DarkCyan
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleColor.cs
+    startLine: 20
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The color dark cyan (dark blue-green).
+  syntax:
+    content: DarkCyan = 3
+- uid: System.ConsoleColor.DarkRed
+  id: DarkRed
+  parent: System.ConsoleColor
+  href: System.ConsoleColor.yml
+  name: DarkRed
+  fullName: System.ConsoleColor.DarkRed
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleColor.cs
+    startLine: 21
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The color dark red.
+  syntax:
+    content: DarkRed = 4
+- uid: System.ConsoleColor.DarkMagenta
+  id: DarkMagenta
+  parent: System.ConsoleColor
+  href: System.ConsoleColor.yml
+  name: DarkMagenta
+  fullName: System.ConsoleColor.DarkMagenta
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleColor.cs
+    startLine: 22
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The color dark magenta (dark purplish-red).
+  syntax:
+    content: DarkMagenta = 5
+- uid: System.ConsoleColor.DarkYellow
+  id: DarkYellow
+  parent: System.ConsoleColor
+  href: System.ConsoleColor.yml
+  name: DarkYellow
+  fullName: System.ConsoleColor.DarkYellow
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleColor.cs
+    startLine: 23
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The color dark yellow (ochre).
+  syntax:
+    content: DarkYellow = 6
+- uid: System.ConsoleColor.Gray
+  id: Gray
+  parent: System.ConsoleColor
+  href: System.ConsoleColor.yml
+  name: Gray
+  fullName: System.ConsoleColor.Gray
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleColor.cs
+    startLine: 24
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The color gray.
+  syntax:
+    content: Gray = 7
+- uid: System.ConsoleColor.DarkGray
+  id: DarkGray
+  parent: System.ConsoleColor
+  href: System.ConsoleColor.yml
+  name: DarkGray
+  fullName: System.ConsoleColor.DarkGray
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleColor.cs
+    startLine: 25
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The color dark gray.
+  syntax:
+    content: DarkGray = 8
+- uid: System.ConsoleColor.Blue
+  id: Blue
+  parent: System.ConsoleColor
+  href: System.ConsoleColor.yml
+  name: Blue
+  fullName: System.ConsoleColor.Blue
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleColor.cs
+    startLine: 26
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The color blue.
+  syntax:
+    content: Blue = 9
+- uid: System.ConsoleColor.Green
+  id: Green
+  parent: System.ConsoleColor
+  href: System.ConsoleColor.yml
+  name: Green
+  fullName: System.ConsoleColor.Green
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleColor.cs
+    startLine: 27
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The color green.
+  syntax:
+    content: Green = 10
+- uid: System.ConsoleColor.Cyan
+  id: Cyan
+  parent: System.ConsoleColor
+  href: System.ConsoleColor.yml
+  name: Cyan
+  fullName: System.ConsoleColor.Cyan
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleColor.cs
+    startLine: 28
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The color cyan (blue-green).
+  syntax:
+    content: Cyan = 11
+- uid: System.ConsoleColor.Red
+  id: Red
+  parent: System.ConsoleColor
+  href: System.ConsoleColor.yml
+  name: Red
+  fullName: System.ConsoleColor.Red
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleColor.cs
+    startLine: 29
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The color red.
+  syntax:
+    content: Red = 12
+- uid: System.ConsoleColor.Magenta
+  id: Magenta
+  parent: System.ConsoleColor
+  href: System.ConsoleColor.yml
+  name: Magenta
+  fullName: System.ConsoleColor.Magenta
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleColor.cs
+    startLine: 30
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The color magenta (purplish-red).
+  syntax:
+    content: Magenta = 13
+- uid: System.ConsoleColor.Yellow
+  id: Yellow
+  parent: System.ConsoleColor
+  href: System.ConsoleColor.yml
+  name: Yellow
+  fullName: System.ConsoleColor.Yellow
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleColor.cs
+    startLine: 31
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The color yellow.
+  syntax:
+    content: Yellow = 14
+- uid: System.ConsoleColor.White
+  id: White
+  parent: System.ConsoleColor
+  href: System.ConsoleColor.yml
+  name: White
+  fullName: System.ConsoleColor.White
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleColor.cs
+    startLine: 32
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The color white.
+  syntax:
+    content: White = 15
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

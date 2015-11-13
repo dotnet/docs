@@ -1,0 +1,992 @@
+items:
+- uid: System.Threading.Interlocked
+  id: Interlocked
+  parent: System.Threading
+  children:
+  - System.Threading.Interlocked.Add(System.Int32@,System.Int32)
+  - System.Threading.Interlocked.Add(System.Int64@,System.Int64)
+  - System.Threading.Interlocked.CompareExchange(System.Double@,System.Double,System.Double)
+  - System.Threading.Interlocked.CompareExchange(System.Int32@,System.Int32,System.Int32)
+  - System.Threading.Interlocked.CompareExchange(System.Int64@,System.Int64,System.Int64)
+  - System.Threading.Interlocked.CompareExchange(System.IntPtr@,System.IntPtr,System.IntPtr)
+  - System.Threading.Interlocked.CompareExchange(System.Object@,System.Object,System.Object)
+  - System.Threading.Interlocked.CompareExchange(System.Single@,System.Single,System.Single)
+  - System.Threading.Interlocked.CompareExchange``1(``0@,``0,``0)
+  - System.Threading.Interlocked.Decrement(System.Int32@)
+  - System.Threading.Interlocked.Decrement(System.Int64@)
+  - System.Threading.Interlocked.Exchange(System.Double@,System.Double)
+  - System.Threading.Interlocked.Exchange(System.Int32@,System.Int32)
+  - System.Threading.Interlocked.Exchange(System.Int64@,System.Int64)
+  - System.Threading.Interlocked.Exchange(System.IntPtr@,System.IntPtr)
+  - System.Threading.Interlocked.Exchange(System.Object@,System.Object)
+  - System.Threading.Interlocked.Exchange(System.Single@,System.Single)
+  - System.Threading.Interlocked.Exchange``1(``0@,``0)
+  - System.Threading.Interlocked.Increment(System.Int32@)
+  - System.Threading.Interlocked.Increment(System.Int64@)
+  - System.Threading.Interlocked.MemoryBarrier
+  - System.Threading.Interlocked.Read(System.Int64@)
+  href: System.Threading.Interlocked.yml
+  name: Interlocked
+  fullName: System.Threading.Interlocked
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Threading/Interlocked.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Threading/Interlocked.cs
+    startLine: 18
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Provides atomic operations for variables that are shared by multiple threads.
+  syntax:
+    content: public class Interlocked
+    content.vb: Public Class Interlocked
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Threading.Interlocked.Increment(System.Int32@)
+  id: Increment(System.Int32@)
+  parent: System.Threading.Interlocked
+  href: System.Threading.Interlocked.yml
+  name: Increment(ref Int32)
+  name.vb: Increment(ByRef Int32)
+  fullName: System.Threading.Interlocked.Increment(ref System.Int32)
+  fullName.vb: System.Threading.Interlocked.Increment(ByRef System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Interlocked.cs
+    startLine: 26
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Increments a specified variable and stores the result, as an atomic operation.
+  syntax:
+    content: public static int Increment(ref int location)
+    content.vb: Public Shared Function Increment(ByRef location As Integer) As Integer
+    parameters:
+    - id: location
+      type: System.Int32
+      description: The variable whose value is to be incremented.
+    return:
+      type: System.Int32
+  exceptions:
+  - type: System.NullReferenceException
+    description: The address of *location* is a null pointer.
+- uid: System.Threading.Interlocked.Increment(System.Int64@)
+  id: Increment(System.Int64@)
+  parent: System.Threading.Interlocked
+  href: System.Threading.Interlocked.yml
+  name: Increment(ref Int64)
+  name.vb: Increment(ByRef Int64)
+  fullName: System.Threading.Interlocked.Increment(ref System.Int64)
+  fullName.vb: System.Threading.Interlocked.Increment(ByRef System.Int64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Interlocked.cs
+    startLine: 32
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Increments a specified variable and stores the result, as an atomic operation.
+  syntax:
+    content: public static long Increment(ref long location)
+    content.vb: Public Shared Function Increment(ByRef location As Long) As Long
+    parameters:
+    - id: location
+      type: System.Int64
+      description: The variable whose value is to be incremented.
+    return:
+      type: System.Int64
+  exceptions:
+  - type: System.NullReferenceException
+    description: The address of *location* is a null pointer.
+- uid: System.Threading.Interlocked.Decrement(System.Int32@)
+  id: Decrement(System.Int32@)
+  parent: System.Threading.Interlocked
+  href: System.Threading.Interlocked.yml
+  name: Decrement(ref Int32)
+  name.vb: Decrement(ByRef Int32)
+  fullName: System.Threading.Interlocked.Decrement(ref System.Int32)
+  fullName.vb: System.Threading.Interlocked.Decrement(ByRef System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Interlocked.cs
+    startLine: 44
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Decrements a specified variable and stores the result, as an atomic operation.
+  syntax:
+    content: public static int Decrement(ref int location)
+    content.vb: Public Shared Function Decrement(ByRef location As Integer) As Integer
+    parameters:
+    - id: location
+      type: System.Int32
+      description: The variable whose value is to be decremented.
+    return:
+      type: System.Int32
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The address of *location* is a null pointer.
+- uid: System.Threading.Interlocked.Decrement(System.Int64@)
+  id: Decrement(System.Int64@)
+  parent: System.Threading.Interlocked
+  href: System.Threading.Interlocked.yml
+  name: Decrement(ref Int64)
+  name.vb: Decrement(ByRef Int64)
+  fullName: System.Threading.Interlocked.Decrement(ref System.Int64)
+  fullName.vb: System.Threading.Interlocked.Decrement(ByRef System.Int64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Interlocked.cs
+    startLine: 50
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Decrements the specified variable and stores the result, as an atomic operation.
+  syntax:
+    content: public static long Decrement(ref long location)
+    content.vb: Public Shared Function Decrement(ByRef location As Long) As Long
+    parameters:
+    - id: location
+      type: System.Int64
+      description: The variable whose value is to be decremented.
+    return:
+      type: System.Int64
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The address of *location* is a null pointer.
+- uid: System.Threading.Interlocked.Exchange(System.Int32@,System.Int32)
+  id: Exchange(System.Int32@,System.Int32)
+  parent: System.Threading.Interlocked
+  href: System.Threading.Interlocked.yml
+  name: Exchange(ref Int32, Int32)
+  name.vb: Exchange(ByRef Int32, Int32)
+  fullName: System.Threading.Interlocked.Exchange(ref System.Int32, System.Int32)
+  fullName.vb: System.Threading.Interlocked.Exchange(ByRef System.Int32, System.Int32)
+  type: Method
+  source:
+    path: mscorlib
+    isExternal: true
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Sets a 32-bit signed integer to a specified value and returns the original value, as an atomic operation.
+  syntax:
+    content: public static int Exchange(ref int location1, int value)
+    content.vb: Public Shared Function Exchange(ByRef location1 As Integer, value As Integer) As Integer
+    parameters:
+    - id: location1
+      type: System.Int32
+      description: The variable to set to the specified value.
+    - id: value
+      type: System.Int32
+      description: The value to which the *location1* parameter is set.
+    return:
+      type: System.Int32
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The address of *location1* is a null pointer.
+- uid: System.Threading.Interlocked.Exchange(System.Int64@,System.Int64)
+  id: Exchange(System.Int64@,System.Int64)
+  parent: System.Threading.Interlocked
+  href: System.Threading.Interlocked.yml
+  name: Exchange(ref Int64, Int64)
+  name.vb: Exchange(ByRef Int64, Int64)
+  fullName: System.Threading.Interlocked.Exchange(ref System.Int64, System.Int64)
+  fullName.vb: System.Threading.Interlocked.Exchange(ByRef System.Int64, System.Int64)
+  type: Method
+  source:
+    path: mscorlib
+    isExternal: true
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Sets a 64-bit signed integer to a specified value and returns the original value, as an atomic operation.
+  syntax:
+    content: public static long Exchange(ref long location1, long value)
+    content.vb: Public Shared Function Exchange(ByRef location1 As Long, value As Long) As Long
+    parameters:
+    - id: location1
+      type: System.Int64
+      description: The variable to set to the specified value.
+    - id: value
+      type: System.Int64
+      description: The value to which the *location1* parameter is set.
+    return:
+      type: System.Int64
+  exceptions:
+  - type: System.NullReferenceException
+    description: The address of *location1* is a null pointer.
+- uid: System.Threading.Interlocked.Exchange(System.Single@,System.Single)
+  id: Exchange(System.Single@,System.Single)
+  parent: System.Threading.Interlocked
+  href: System.Threading.Interlocked.yml
+  name: Exchange(ref Single, Single)
+  name.vb: Exchange(ByRef Single, Single)
+  fullName: System.Threading.Interlocked.Exchange(ref System.Single, System.Single)
+  fullName.vb: System.Threading.Interlocked.Exchange(ByRef System.Single, System.Single)
+  type: Method
+  source:
+    path: mscorlib
+    isExternal: true
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Sets a single-precision floating point number to a specified value and returns the original value, as an atomic operation.
+  syntax:
+    content: public static float Exchange(ref float location1, float value)
+    content.vb: Public Shared Function Exchange(ByRef location1 As Single, value As Single) As Single
+    parameters:
+    - id: location1
+      type: System.Single
+      description: The variable to set to the specified value.
+    - id: value
+      type: System.Single
+      description: The value to which the *location1* parameter is set.
+    return:
+      type: System.Single
+  exceptions:
+  - type: System.NullReferenceException
+    description: The address of *location1* is a null pointer.
+- uid: System.Threading.Interlocked.Exchange(System.Double@,System.Double)
+  id: Exchange(System.Double@,System.Double)
+  parent: System.Threading.Interlocked
+  href: System.Threading.Interlocked.yml
+  name: Exchange(ref Double, Double)
+  name.vb: Exchange(ByRef Double, Double)
+  fullName: System.Threading.Interlocked.Exchange(ref System.Double, System.Double)
+  fullName.vb: System.Threading.Interlocked.Exchange(ByRef System.Double, System.Double)
+  type: Method
+  source:
+    path: mscorlib
+    isExternal: true
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Sets a double-precision floating point number to a specified value and returns the original value, as an atomic operation.
+  syntax:
+    content: public static double Exchange(ref double location1, double value)
+    content.vb: Public Shared Function Exchange(ByRef location1 As Double, value As Double) As Double
+    parameters:
+    - id: location1
+      type: System.Double
+      description: The variable to set to the specified value.
+    - id: value
+      type: System.Double
+      description: The value to which the *location1* parameter is set.
+    return:
+      type: System.Double
+  exceptions:
+  - type: System.NullReferenceException
+    description: The address of *location1* is a null pointer.
+- uid: System.Threading.Interlocked.Exchange(System.Object@,System.Object)
+  id: Exchange(System.Object@,System.Object)
+  parent: System.Threading.Interlocked
+  href: System.Threading.Interlocked.yml
+  name: Exchange(ref Object, Object)
+  name.vb: Exchange(ByRef Object, Object)
+  fullName: System.Threading.Interlocked.Exchange(ref System.Object, System.Object)
+  fullName.vb: System.Threading.Interlocked.Exchange(ByRef System.Object, System.Object)
+  type: Method
+  source:
+    path: mscorlib
+    isExternal: true
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Sets an object to a specified value and returns a reference to the original object, as an atomic operation.
+  syntax:
+    content: public static object Exchange(ref object location1, object value)
+    content.vb: Public Shared Function Exchange(ByRef location1 As Object, value As Object) As Object
+    parameters:
+    - id: location1
+      type: System.Object
+      description: The variable to set to the specified value.
+    - id: value
+      type: System.Object
+      description: The value to which the *location1* parameter is set.
+    return:
+      type: System.Object
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The address of *location1* is a null pointer.
+- uid: System.Threading.Interlocked.Exchange(System.IntPtr@,System.IntPtr)
+  id: Exchange(System.IntPtr@,System.IntPtr)
+  parent: System.Threading.Interlocked
+  href: System.Threading.Interlocked.yml
+  name: Exchange(ref IntPtr, IntPtr)
+  name.vb: Exchange(ByRef IntPtr, IntPtr)
+  fullName: System.Threading.Interlocked.Exchange(ref System.IntPtr, System.IntPtr)
+  fullName.vb: System.Threading.Interlocked.Exchange(ByRef System.IntPtr, System.IntPtr)
+  type: Method
+  source:
+    path: mscorlib
+    isExternal: true
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Sets a platform-specific handle or pointer to a specified value and returns the original value, as an atomic operation.
+  syntax:
+    content: public static IntPtr Exchange(ref IntPtr location1, IntPtr value)
+    content.vb: Public Shared Function Exchange(ByRef location1 As IntPtr, value As IntPtr) As IntPtr
+    parameters:
+    - id: location1
+      type: System.IntPtr
+      description: The variable to set to the specified value.
+    - id: value
+      type: System.IntPtr
+      description: The value to which the *location1* parameter is set.
+    return:
+      type: System.IntPtr
+  exceptions:
+  - type: System.NullReferenceException
+    description: The address of *location1* is a null pointer.
+- uid: System.Threading.Interlocked.Exchange``1(``0@,``0)
+  id: Exchange``1(``0@,``0)
+  parent: System.Threading.Interlocked
+  href: System.Threading.Interlocked.yml
+  name: Exchange<T>(ref T, T)
+  name.vb: Exchange(Of T)(ByRef T, T)
+  fullName: System.Threading.Interlocked.Exchange<T>(ref T, T)
+  fullName.vb: System.Threading.Interlocked.Exchange(Of T)(ByRef T, T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Interlocked.cs
+    startLine: 92
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Sets a variable of the specified type *T* to a specified value and returns the original value, as an atomic operation.
+  syntax:
+    content: 'public static T Exchange<T>(ref T location1, T value)where T : class'
+    content.vb: Public Shared Function Exchange(Of T As Class)(ByRef location1 As T, value As T) As T
+    parameters:
+    - id: location1
+      type: '{T}'
+      description: The variable to set to the specified value. This is a reference parameter (ref in C#, ByRef in Visual Basic).
+    - id: value
+      type: '{T}'
+      description: The value to which the *location1* parameter is set.
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+  exceptions:
+  - type: System.NullReferenceException
+    description: The address of *location1* is a null pointer.
+- uid: System.Threading.Interlocked.CompareExchange(System.Int32@,System.Int32,System.Int32)
+  id: CompareExchange(System.Int32@,System.Int32,System.Int32)
+  parent: System.Threading.Interlocked
+  href: System.Threading.Interlocked.yml
+  name: CompareExchange(ref Int32, Int32, Int32)
+  name.vb: CompareExchange(ByRef Int32, Int32, Int32)
+  fullName: System.Threading.Interlocked.CompareExchange(ref System.Int32, System.Int32, System.Int32)
+  fullName.vb: System.Threading.Interlocked.CompareExchange(ByRef System.Int32, System.Int32, System.Int32)
+  type: Method
+  source:
+    path: mscorlib
+    isExternal: true
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Compares two 32-bit signed integers for equality and, if they are equal, replaces the first value.
+  syntax:
+    content: public static int CompareExchange(ref int location1, int value, int comparand)
+    content.vb: Public Shared Function CompareExchange(ByRef location1 As Integer, value As Integer, comparand As Integer) As Integer
+    parameters:
+    - id: location1
+      type: System.Int32
+      description: The destination, whose value is compared with *comparand* and possibly replaced.
+    - id: value
+      type: System.Int32
+      description: The value that replaces the destination value if the comparison results in equality.
+    - id: comparand
+      type: System.Int32
+      description: The value that is compared to the value at *location1*.
+    return:
+      type: System.Int32
+  exceptions:
+  - type: System.NullReferenceException
+    description: The address of *location1* is a null pointer.
+- uid: System.Threading.Interlocked.CompareExchange(System.Int64@,System.Int64,System.Int64)
+  id: CompareExchange(System.Int64@,System.Int64,System.Int64)
+  parent: System.Threading.Interlocked
+  href: System.Threading.Interlocked.yml
+  name: CompareExchange(ref Int64, Int64, Int64)
+  name.vb: CompareExchange(ByRef Int64, Int64, Int64)
+  fullName: System.Threading.Interlocked.CompareExchange(ref System.Int64, System.Int64, System.Int64)
+  fullName.vb: System.Threading.Interlocked.CompareExchange(ByRef System.Int64, System.Int64, System.Int64)
+  type: Method
+  source:
+    path: mscorlib
+    isExternal: true
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Compares two 64-bit signed integers for equality and, if they are equal, replaces the first value.
+  syntax:
+    content: public static long CompareExchange(ref long location1, long value, long comparand)
+    content.vb: Public Shared Function CompareExchange(ByRef location1 As Long, value As Long, comparand As Long) As Long
+    parameters:
+    - id: location1
+      type: System.Int64
+      description: The destination, whose value is compared with *comparand* and possibly replaced.
+    - id: value
+      type: System.Int64
+      description: The value that replaces the destination value if the comparison results in equality.
+    - id: comparand
+      type: System.Int64
+      description: The value that is compared to the value at *location1*.
+    return:
+      type: System.Int64
+  exceptions:
+  - type: System.NullReferenceException
+    description: The address of *location1* is a null pointer.
+- uid: System.Threading.Interlocked.CompareExchange(System.Single@,System.Single,System.Single)
+  id: CompareExchange(System.Single@,System.Single,System.Single)
+  parent: System.Threading.Interlocked
+  href: System.Threading.Interlocked.yml
+  name: CompareExchange(ref Single, Single, Single)
+  name.vb: CompareExchange(ByRef Single, Single, Single)
+  fullName: System.Threading.Interlocked.CompareExchange(ref System.Single, System.Single, System.Single)
+  fullName.vb: System.Threading.Interlocked.CompareExchange(ByRef System.Single, System.Single, System.Single)
+  type: Method
+  source:
+    path: mscorlib
+    isExternal: true
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Compares two single-precision floating point numbers for equality and, if they are equal, replaces the first value.
+  syntax:
+    content: public static float CompareExchange(ref float location1, float value, float comparand)
+    content.vb: Public Shared Function CompareExchange(ByRef location1 As Single, value As Single, comparand As Single) As Single
+    parameters:
+    - id: location1
+      type: System.Single
+      description: The destination, whose value is compared with *comparand* and possibly replaced.
+    - id: value
+      type: System.Single
+      description: The value that replaces the destination value if the comparison results in equality.
+    - id: comparand
+      type: System.Single
+      description: The value that is compared to the value at *location1*.
+    return:
+      type: System.Single
+  exceptions:
+  - type: System.NullReferenceException
+    description: The address of *location1* is a null pointer.
+- uid: System.Threading.Interlocked.CompareExchange(System.Double@,System.Double,System.Double)
+  id: CompareExchange(System.Double@,System.Double,System.Double)
+  parent: System.Threading.Interlocked
+  href: System.Threading.Interlocked.yml
+  name: CompareExchange(ref Double, Double, Double)
+  name.vb: CompareExchange(ByRef Double, Double, Double)
+  fullName: System.Threading.Interlocked.CompareExchange(ref System.Double, System.Double, System.Double)
+  fullName.vb: System.Threading.Interlocked.CompareExchange(ByRef System.Double, System.Double, System.Double)
+  type: Method
+  source:
+    path: mscorlib
+    isExternal: true
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Compares two double-precision floating point numbers for equality and, if they are equal, replaces the first value.
+  syntax:
+    content: public static double CompareExchange(ref double location1, double value, double comparand)
+    content.vb: Public Shared Function CompareExchange(ByRef location1 As Double, value As Double, comparand As Double) As Double
+    parameters:
+    - id: location1
+      type: System.Double
+      description: The destination, whose value is compared with *comparand* and possibly replaced.
+    - id: value
+      type: System.Double
+      description: The value that replaces the destination value if the comparison results in equality.
+    - id: comparand
+      type: System.Double
+      description: The value that is compared to the value at *location1*.
+    return:
+      type: System.Double
+  exceptions:
+  - type: System.NullReferenceException
+    description: The address of *location1* is a null pointer.
+- uid: System.Threading.Interlocked.CompareExchange(System.Object@,System.Object,System.Object)
+  id: CompareExchange(System.Object@,System.Object,System.Object)
+  parent: System.Threading.Interlocked
+  href: System.Threading.Interlocked.yml
+  name: CompareExchange(ref Object, Object, Object)
+  name.vb: CompareExchange(ByRef Object, Object, Object)
+  fullName: System.Threading.Interlocked.CompareExchange(ref System.Object, System.Object, System.Object)
+  fullName.vb: System.Threading.Interlocked.CompareExchange(ByRef System.Object, System.Object, System.Object)
+  type: Method
+  source:
+    path: mscorlib
+    isExternal: true
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Compares two objects for reference equality and, if they are equal, replaces the first object.
+  syntax:
+    content: public static object CompareExchange(ref object location1, object value, object comparand)
+    content.vb: Public Shared Function CompareExchange(ByRef location1 As Object, value As Object, comparand As Object) As Object
+    parameters:
+    - id: location1
+      type: System.Object
+      description: The destination object that is compared with *comparand* and possibly replaced.
+    - id: value
+      type: System.Object
+      description: The object that replaces the destination object if the comparison results in equality.
+    - id: comparand
+      type: System.Object
+      description: The object that is compared to the object at *location1*.
+    return:
+      type: System.Object
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The address of *location1* is a null pointer.
+- uid: System.Threading.Interlocked.CompareExchange(System.IntPtr@,System.IntPtr,System.IntPtr)
+  id: CompareExchange(System.IntPtr@,System.IntPtr,System.IntPtr)
+  parent: System.Threading.Interlocked
+  href: System.Threading.Interlocked.yml
+  name: CompareExchange(ref IntPtr, IntPtr, IntPtr)
+  name.vb: CompareExchange(ByRef IntPtr, IntPtr, IntPtr)
+  fullName: System.Threading.Interlocked.CompareExchange(ref System.IntPtr, System.IntPtr, System.IntPtr)
+  fullName.vb: System.Threading.Interlocked.CompareExchange(ByRef System.IntPtr, System.IntPtr, System.IntPtr)
+  type: Method
+  source:
+    path: mscorlib
+    isExternal: true
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Compares two platform-specific handles or pointers for equality and, if they are equal, replaces the first one.
+  syntax:
+    content: public static IntPtr CompareExchange(ref IntPtr location1, IntPtr value, IntPtr comparand)
+    content.vb: Public Shared Function CompareExchange(ByRef location1 As IntPtr, value As IntPtr, comparand As IntPtr) As IntPtr
+    parameters:
+    - id: location1
+      type: System.IntPtr
+      description: The destination @'System.IntPtr', whose value is compared with the value of *comparand* and possibly replaced by *value*.
+    - id: value
+      type: System.IntPtr
+      description: The @'System.IntPtr' that replaces the destination value if the comparison results in equality.
+    - id: comparand
+      type: System.IntPtr
+      description: The @'System.IntPtr' that is compared to the value at *location1*.
+    return:
+      type: System.IntPtr
+  exceptions:
+  - type: System.NullReferenceException
+    description: The address of *location1* is a null pointer.
+- uid: System.Threading.Interlocked.CompareExchange``1(``0@,``0,``0)
+  id: CompareExchange``1(``0@,``0,``0)
+  parent: System.Threading.Interlocked
+  href: System.Threading.Interlocked.yml
+  name: CompareExchange<T>(ref T, T, T)
+  name.vb: CompareExchange(Of T)(ByRef T, T, T)
+  fullName: System.Threading.Interlocked.CompareExchange<T>(ref T, T, T)
+  fullName.vb: System.Threading.Interlocked.CompareExchange(Of T)(ByRef T, T, T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Interlocked.cs
+    startLine: 171
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Compares two instances of the specified reference type *T* for equality and, if they are equal, replaces the first one.
+  syntax:
+    content: 'public static T CompareExchange<T>(ref T location1, T value, T comparand)where T : class'
+    content.vb: Public Shared Function CompareExchange(Of T As Class)(ByRef location1 As T, value As T, comparand As T) As T
+    parameters:
+    - id: location1
+      type: '{T}'
+      description: The destination, whose value is compared with *comparand* and possibly replaced. This is a reference parameter (ref in C#, ByRef in Visual Basic).
+    - id: value
+      type: '{T}'
+      description: The value that replaces the destination value if the comparison results in equality.
+    - id: comparand
+      type: '{T}'
+      description: The value that is compared to the value at *location1*.
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+  exceptions:
+  - type: System.NullReferenceException
+    description: The address of *location1* is a null pointer.
+- uid: System.Threading.Interlocked.Add(System.Int32@,System.Int32)
+  id: Add(System.Int32@,System.Int32)
+  parent: System.Threading.Interlocked
+  href: System.Threading.Interlocked.yml
+  name: Add(ref Int32, Int32)
+  name.vb: Add(ByRef Int32, Int32)
+  fullName: System.Threading.Interlocked.Add(ref System.Int32, System.Int32)
+  fullName.vb: System.Threading.Interlocked.Add(ByRef System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Interlocked.cs
+    startLine: 205
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Adds two 32-bit integers and replaces the first integer with the sum, as an atomic operation.
+  syntax:
+    content: public static int Add(ref int location1, int value)
+    content.vb: Public Shared Function Add(ByRef location1 As Integer, value As Integer) As Integer
+    parameters:
+    - id: location1
+      type: System.Int32
+      description: A variable containing the first value to be added. The sum of the two values is stored in *location1*.
+    - id: value
+      type: System.Int32
+      description: The value to be added to the integer at *location1*.
+    return:
+      type: System.Int32
+  exceptions:
+  - type: System.NullReferenceException
+    description: The address of *location1* is a null pointer.
+- uid: System.Threading.Interlocked.Add(System.Int64@,System.Int64)
+  id: Add(System.Int64@,System.Int64)
+  parent: System.Threading.Interlocked
+  href: System.Threading.Interlocked.yml
+  name: Add(ref Int64, Int64)
+  name.vb: Add(ByRef Int64, Int64)
+  fullName: System.Threading.Interlocked.Add(ref System.Int64, System.Int64)
+  fullName.vb: System.Threading.Interlocked.Add(ByRef System.Int64, System.Int64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Interlocked.cs
+    startLine: 211
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Adds two 64-bit integers and replaces the first integer with the sum, as an atomic operation.
+  syntax:
+    content: public static long Add(ref long location1, long value)
+    content.vb: Public Shared Function Add(ByRef location1 As Long, value As Long) As Long
+    parameters:
+    - id: location1
+      type: System.Int64
+      description: A variable containing the first value to be added. The sum of the two values is stored in *location1*.
+    - id: value
+      type: System.Int64
+      description: The value to be added to the integer at *location1*.
+    return:
+      type: System.Int64
+  exceptions:
+  - type: System.NullReferenceException
+    description: The address of *location1* is a null pointer.
+- uid: System.Threading.Interlocked.Read(System.Int64@)
+  id: Read(System.Int64@)
+  parent: System.Threading.Interlocked
+  href: System.Threading.Interlocked.yml
+  name: Read(ref Int64)
+  name.vb: Read(ByRef Int64)
+  fullName: System.Threading.Interlocked.Read(ref System.Int64)
+  fullName.vb: System.Threading.Interlocked.Read(ByRef System.Int64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Interlocked.cs
+    startLine: 220
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Returns a 64-bit value, loaded as an atomic operation.
+  syntax:
+    content: public static long Read(ref long location)
+    content.vb: Public Shared Function Read(ByRef location As Long) As Long
+    parameters:
+    - id: location
+      type: System.Int64
+      description: The 64-bit value to be loaded.
+    return:
+      type: System.Int64
+- uid: System.Threading.Interlocked.MemoryBarrier
+  id: MemoryBarrier
+  parent: System.Threading.Interlocked
+  href: System.Threading.Interlocked.yml
+  name: MemoryBarrier()
+  fullName: System.Threading.Interlocked.MemoryBarrier()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Interlocked.cs
+    startLine: 226
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: 'Synchronizes memory access as follows: The processor that executes the current thread cannot reorder instructions in such a way that memory accesses before the call to @''System.Threading.Interlocked.MemoryBarrier'' execute after memory accesses that follow the call to @''System.Threading.Interlocked.MemoryBarrier''.'
+  syntax:
+    content: public static void MemoryBarrier()
+    content.vb: Public Shared Sub MemoryBarrier
+references:
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  fullName: System.Int64
+- uid: System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  fullName: System.Single
+- uid: System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  fullName: System.Double
+- uid: System.IntPtr
+  parent: System
+  isExternal: true
+  name: IntPtr
+  fullName: System.IntPtr
+- uid: '{T}'
+  isExternal: false
+  name: T
+  fullName: T

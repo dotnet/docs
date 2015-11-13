@@ -1,0 +1,119 @@
+items:
+- uid: System.Reflection.Emit.OpCodeType
+  id: OpCodeType
+  parent: System.Reflection.Emit
+  children:
+  - System.Reflection.Emit.OpCodeType.Macro
+  - System.Reflection.Emit.OpCodeType.Nternal
+  - System.Reflection.Emit.OpCodeType.Objmodel
+  - System.Reflection.Emit.OpCodeType.Prefix
+  - System.Reflection.Emit.OpCodeType.Primitive
+  href: System.Reflection.Emit.OpCodeType.yml
+  name: OpCodeType
+  fullName: System.Reflection.Emit.OpCodeType
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Reflection/Emit/OpcodeType.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Reflection/Emit/OpcodeType.cs
+    startLine: 17
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Describes the types of the Microsoft intermediate language (MSIL) instructions.
+  syntax:
+    content: public enum OpCodeType
+    content.vb: Public Enum OpCodeType
+- uid: System.Reflection.Emit.OpCodeType.Macro
+  id: Macro
+  parent: System.Reflection.Emit.OpCodeType
+  href: System.Reflection.Emit.OpCodeType.yml
+  name: Macro
+  fullName: System.Reflection.Emit.OpCodeType.Macro
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpcodeType.cs
+    startLine: 27
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: These are Microsoft intermediate language (MSIL) instructions that are used as a synonym for other MSIL instructions. For example, ldarg.0 represents the ldarg instruction with an argument of 0.
+  syntax:
+    content: Macro = 1
+- uid: System.Reflection.Emit.OpCodeType.Nternal
+  id: Nternal
+  parent: System.Reflection.Emit.OpCodeType
+  href: System.Reflection.Emit.OpCodeType.yml
+  name: Nternal
+  fullName: System.Reflection.Emit.OpCodeType.Nternal
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpcodeType.cs
+    startLine: 28
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Describes a reserved Microsoft intermediate language (MSIL) instruction.
+  syntax:
+    content: Nternal = 2
+- uid: System.Reflection.Emit.OpCodeType.Objmodel
+  id: Objmodel
+  parent: System.Reflection.Emit.OpCodeType
+  href: System.Reflection.Emit.OpCodeType.yml
+  name: Objmodel
+  fullName: System.Reflection.Emit.OpCodeType.Objmodel
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpcodeType.cs
+    startLine: 29
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Describes a Microsoft intermediate language (MSIL) instruction that applies to objects.
+  syntax:
+    content: Objmodel = 3
+- uid: System.Reflection.Emit.OpCodeType.Prefix
+  id: Prefix
+  parent: System.Reflection.Emit.OpCodeType
+  href: System.Reflection.Emit.OpCodeType.yml
+  name: Prefix
+  fullName: System.Reflection.Emit.OpCodeType.Prefix
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpcodeType.cs
+    startLine: 30
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Describes a prefix instruction that modifies the behavior of the following instruction.
+  syntax:
+    content: Prefix = 4
+- uid: System.Reflection.Emit.OpCodeType.Primitive
+  id: Primitive
+  parent: System.Reflection.Emit.OpCodeType
+  href: System.Reflection.Emit.OpCodeType.yml
+  name: Primitive
+  fullName: System.Reflection.Emit.OpCodeType.Primitive
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpcodeType.cs
+    startLine: 31
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Describes a built-in instruction.
+  syntax:
+    content: Primitive = 5
+references:
+- uid: System.Reflection.Emit
+  isExternal: false
+  name: System.Reflection.Emit
+  fullName: System.Reflection.Emit
+  type: Namespace

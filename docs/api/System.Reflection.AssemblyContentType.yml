@@ -1,0 +1,65 @@
+items:
+- uid: System.Reflection.AssemblyContentType
+  id: AssemblyContentType
+  parent: System.Reflection
+  children:
+  - System.Reflection.AssemblyContentType.Default
+  - System.Reflection.AssemblyContentType.WindowsRuntime
+  href: System.Reflection.AssemblyContentType.yml
+  name: AssemblyContentType
+  fullName: System.Reflection.AssemblyContentType
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Reflection/AssemblyNameFlags.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Reflection/AssemblyNameFlags.cs
+    startLine: 35
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Provides information about the type of code contained in an assembly.
+  syntax:
+    content: public enum AssemblyContentType
+    content.vb: Public Enum AssemblyContentType
+- uid: System.Reflection.AssemblyContentType.Default
+  id: Default
+  parent: System.Reflection.AssemblyContentType
+  href: System.Reflection.AssemblyContentType.yml
+  name: Default
+  fullName: System.Reflection.AssemblyContentType.Default
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/AssemblyNameFlags.cs
+    startLine: 39
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: The assembly contains .NET Framework code.
+  syntax:
+    content: Default = 0
+- uid: System.Reflection.AssemblyContentType.WindowsRuntime
+  id: WindowsRuntime
+  parent: System.Reflection.AssemblyContentType
+  href: System.Reflection.AssemblyContentType.yml
+  name: WindowsRuntime
+  fullName: System.Reflection.AssemblyContentType.WindowsRuntime
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/AssemblyNameFlags.cs
+    startLine: 40
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: The assembly contains Windows Runtime code.
+  syntax:
+    content: WindowsRuntime = 1
+references:
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace

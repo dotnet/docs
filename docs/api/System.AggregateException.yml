@@ -1,0 +1,1049 @@
+items:
+- uid: System.AggregateException
+  id: AggregateException
+  parent: System
+  children:
+  - System.AggregateException.#ctor
+  - System.AggregateException.#ctor(System.Collections.Generic.IEnumerable{System.Exception})
+  - System.AggregateException.#ctor(System.Exception[])
+  - System.AggregateException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - System.AggregateException.#ctor(System.String)
+  - System.AggregateException.#ctor(System.String,System.Collections.Generic.IEnumerable{System.Exception})
+  - System.AggregateException.#ctor(System.String,System.Exception)
+  - System.AggregateException.#ctor(System.String,System.Exception[])
+  - System.AggregateException.Flatten
+  - System.AggregateException.GetBaseException
+  - System.AggregateException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - System.AggregateException.Handle(System.Func{System.Exception,System.Boolean})
+  - System.AggregateException.InnerExceptions
+  - System.AggregateException.ToString
+  href: System.AggregateException.yml
+  name: AggregateException
+  fullName: System.AggregateException
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/AggregateException.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/AggregateException.cs
+    startLine: 29
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Represents one or more errors that occur during application execution.
+  remarks: >-
+    @'System.AggregateException' is used to consolidate multiple failures into a single, throwable
+
+    exception object.
+  syntax:
+    content: 'public class AggregateException : Exception, ISerializable, _Exception'
+    content.vb: Public Class AggregateException Inherits Exception Implements ISerializable, _Exception
+  inheritance:
+  - System.Object
+  - System.Exception
+  implements:
+  - System.Runtime.Serialization.ISerializable
+  - System.Runtime.InteropServices._Exception
+  inheritedMembers:
+  - System.Exception.Message
+  - System.Exception.Data
+  - System.Exception.InnerException
+  - System.Exception.TargetSite
+  - System.Exception.StackTrace
+  - System.Exception.HelpLink
+  - System.Exception.Source
+  - System.Exception.HResult
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.AggregateException.#ctor
+  id: '#ctor'
+  parent: System.AggregateException
+  href: System.AggregateException.yml
+  name: AggregateException()
+  fullName: System.AggregateException.AggregateException()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AggregateException.cs
+    startLine: 39
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of the @'System.AggregateException' class with a system-supplied message that describes the error.
+  syntax:
+    content: public AggregateException()
+    content.vb: Public Sub New
+- uid: System.AggregateException.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: System.AggregateException
+  href: System.AggregateException.yml
+  name: AggregateException(String)
+  fullName: System.AggregateException.AggregateException(System.String)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AggregateException.cs
+    startLine: 50
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of the @'System.AggregateException' class with a specified message that describes the error.
+  syntax:
+    content: public AggregateException(string message)
+    content.vb: Public Sub New(message As String)
+    parameters:
+    - id: message
+      type: System.String
+      description: The message that describes the exception. The caller of this constructor is required to ensure that this string has been localized for the current system culture.
+- uid: System.AggregateException.#ctor(System.String,System.Exception)
+  id: '#ctor(System.String,System.Exception)'
+  parent: System.AggregateException
+  href: System.AggregateException.yml
+  name: AggregateException(String, Exception)
+  fullName: System.AggregateException.AggregateException(System.String, System.Exception)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AggregateException.cs
+    startLine: 64
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of the @'System.AggregateException' class with a specified error message and a reference to the inner exception that is the cause of this exception.
+  syntax:
+    content: public AggregateException(string message, Exception innerException)
+    content.vb: Public Sub New(message As String, innerException As Exception)
+    parameters:
+    - id: message
+      type: System.String
+      description: The message that describes the exception. The caller of this constructor is required to ensure that this string has been localized for the current system culture.
+    - id: innerException
+      type: System.Exception
+      description: The exception that is the cause of the current exception. If the *innerException* parameter is not null, the current exception is raised in a catch block that handles the inner exception.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *innerException* argument is null.
+- uid: System.AggregateException.#ctor(System.Collections.Generic.IEnumerable{System.Exception})
+  id: '#ctor(System.Collections.Generic.IEnumerable{System.Exception})'
+  parent: System.AggregateException
+  href: System.AggregateException.yml
+  name: AggregateException(IEnumerable<Exception>)
+  name.vb: AggregateException(IEnumerable(Of Exception))
+  fullName: System.AggregateException.AggregateException(System.Collections.Generic.IEnumerable<System.Exception>)
+  fullName.vb: System.AggregateException.AggregateException(System.Collections.Generic.IEnumerable(Of System.Exception))
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AggregateException.cs
+    startLine: 84
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of the @'System.AggregateException' class with references to the inner exceptions that are the cause of this exception.
+  syntax:
+    content: public AggregateException(IEnumerable<Exception> innerExceptions)
+    content.vb: Public Sub New(innerExceptions As IEnumerable(Of Exception))
+    parameters:
+    - id: innerExceptions
+      type: System.Collections.Generic.IEnumerable{System.Exception}
+      description: The exceptions that are the cause of the current exception.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *innerExceptions* argument is null.
+  - type: System.ArgumentException
+    description: An element of *innerExceptions* is null.
+- uid: System.AggregateException.#ctor(System.Exception[])
+  id: '#ctor(System.Exception[])'
+  parent: System.AggregateException
+  href: System.AggregateException.yml
+  name: AggregateException(Exception[])
+  name.vb: AggregateException(Exception())
+  fullName: System.AggregateException.AggregateException(System.Exception[])
+  fullName.vb: System.AggregateException.AggregateException(System.Exception())
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AggregateException.cs
+    startLine: 98
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of the @'System.AggregateException' class with references to the inner exceptions that are the cause of this exception.
+  syntax:
+    content: public AggregateException(params Exception[] innerExceptions)
+    content.vb: Public Sub New(ParamArray innerExceptions As Exception())
+    parameters:
+    - id: innerExceptions
+      type: System.Exception[]
+      description: The exceptions that are the cause of the current exception.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *innerExceptions* argument is null.
+  - type: System.ArgumentException
+    description: An element of *innerExceptions* is null.
+- uid: System.AggregateException.#ctor(System.String,System.Collections.Generic.IEnumerable{System.Exception})
+  id: '#ctor(System.String,System.Collections.Generic.IEnumerable{System.Exception})'
+  parent: System.AggregateException
+  href: System.AggregateException.yml
+  name: AggregateException(String, IEnumerable<Exception>)
+  name.vb: AggregateException(String, IEnumerable(Of Exception))
+  fullName: System.AggregateException.AggregateException(System.String, System.Collections.Generic.IEnumerable<System.Exception>)
+  fullName.vb: System.AggregateException.AggregateException(System.String, System.Collections.Generic.IEnumerable(Of System.Exception))
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AggregateException.cs
+    startLine: 113
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of the @'System.AggregateException' class with a specified error message and references to the inner exceptions that are the cause of this exception.
+  syntax:
+    content: public AggregateException(string message, IEnumerable<Exception> innerExceptions)
+    content.vb: Public Sub New(message As String, innerExceptions As IEnumerable(Of Exception))
+    parameters:
+    - id: message
+      type: System.String
+      description: The error message that explains the reason for the exception.
+    - id: innerExceptions
+      type: System.Collections.Generic.IEnumerable{System.Exception}
+      description: The exceptions that are the cause of the current exception.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *innerExceptions* argument is null.
+  - type: System.ArgumentException
+    description: An element of *innerExceptions* is null.
+- uid: System.AggregateException.#ctor(System.String,System.Exception[])
+  id: '#ctor(System.String,System.Exception[])'
+  parent: System.AggregateException
+  href: System.AggregateException.yml
+  name: AggregateException(String, Exception[])
+  name.vb: AggregateException(String, Exception())
+  fullName: System.AggregateException.AggregateException(System.String, System.Exception[])
+  fullName.vb: System.AggregateException.AggregateException(System.String, System.Exception())
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AggregateException.cs
+    startLine: 130
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of the @'System.AggregateException' class with a specified error message and references to the inner exceptions that are the cause of this exception.
+  syntax:
+    content: public AggregateException(string message, params Exception[] innerExceptions)
+    content.vb: Public Sub New(message As String, ParamArray innerExceptions As Exception())
+    parameters:
+    - id: message
+      type: System.String
+      description: The error message that explains the reason for the exception.
+    - id: innerExceptions
+      type: System.Exception[]
+      description: The exceptions that are the cause of the current exception.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *innerExceptions* argument is null.
+  - type: System.ArgumentException
+    description: An element of *innerExceptions* is null.
+- uid: System.AggregateException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  id: '#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)'
+  parent: System.AggregateException
+  href: System.AggregateException.yml
+  name: AggregateException(SerializationInfo, StreamingContext)
+  fullName: System.AggregateException.AggregateException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AggregateException.cs
+    startLine: 258
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of the @'System.AggregateException' class with serialized data.
+  syntax:
+    content: protected AggregateException(SerializationInfo info, StreamingContext context)
+    content.vb: Protected Sub New(info As SerializationInfo, context As StreamingContext)
+    parameters:
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+      description: The object that holds the serialized object data.
+    - id: context
+      type: System.Runtime.Serialization.StreamingContext
+      description: The contextual information about the source or destination.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *info* argument is null.
+  - type: System.Runtime.Serialization.SerializationException
+    description: The exception could not be deserialized correctly.
+- uid: System.AggregateException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  id: GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: System.AggregateException
+  href: System.AggregateException.yml
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  fullName: System.AggregateException.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AggregateException.cs
+    startLine: 285
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of the @'System.AggregateException' class with serialized data.
+  syntax:
+    content: public override void GetObjectData(SerializationInfo info, StreamingContext context)
+    content.vb: Public Overrides Sub GetObjectData(info As SerializationInfo, context As StreamingContext)
+    parameters:
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+      description: The object that holds the serialized object data.
+    - id: context
+      type: System.Runtime.Serialization.StreamingContext
+      description: The contextual information about the source or destination.
+  overridden: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *info* argument is null.
+- uid: System.AggregateException.GetBaseException
+  id: GetBaseException
+  parent: System.AggregateException
+  href: System.AggregateException.yml
+  name: GetBaseException()
+  fullName: System.AggregateException.GetBaseException()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AggregateException.cs
+    startLine: 303
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns the @'System.AggregateException' that is the root cause of this exception.
+  syntax:
+    content: public override Exception GetBaseException()
+    content.vb: Public Overrides Function GetBaseException As Exception
+    return:
+      type: System.Exception
+  overridden: System.Exception.GetBaseException
+- uid: System.AggregateException.InnerExceptions
+  id: InnerExceptions
+  parent: System.AggregateException
+  href: System.AggregateException.yml
+  name: InnerExceptions
+  fullName: System.AggregateException.InnerExceptions
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AggregateException.cs
+    startLine: 322
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets a read-only collection of the @'System.Exception' instances that caused the current exception.
+  syntax:
+    content: public ReadOnlyCollection<Exception> InnerExceptions { get; }
+    content.vb: Public ReadOnly Property InnerExceptions As ReadOnlyCollection(Of Exception)
+    parameters: []
+    return:
+      type: System.Collections.ObjectModel.ReadOnlyCollection{System.Exception}
+- uid: System.AggregateException.Handle(System.Func{System.Exception,System.Boolean})
+  id: Handle(System.Func{System.Exception,System.Boolean})
+  parent: System.AggregateException
+  href: System.AggregateException.yml
+  name: Handle(Func<Exception, Boolean>)
+  name.vb: Handle(Func(Of Exception, Boolean))
+  fullName: System.AggregateException.Handle(System.Func<System.Exception, System.Boolean>)
+  fullName.vb: System.AggregateException.Handle(System.Func(Of System.Exception, System.Boolean))
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AggregateException.cs
+    startLine: 347
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Invokes a handler on each @'System.Exception' contained by this @'System.AggregateException'.
+  remarks: >-
+    Each invocation of the <paramref name="predicate" /> returns true or false to indicate whether the
+
+    @'System.Exception' was handled. After all invocations, if any exceptions went
+
+    unhandled, all unhandled exceptions will be put into a new @'System.AggregateException'
+
+    which will be thrown. Otherwise, the @'System.AggregateException.Handle(System.Func{System.Exception,System.Boolean})' method simply returns. If any
+
+    invocations of the <paramref name="predicate" /> throws an exception, it will halt the processing
+
+    of any more exceptions and immediately propagate the thrown exception as-is.
+  syntax:
+    content: public void Handle(Func<Exception, bool> predicate)
+    content.vb: Public Sub Handle(predicate As Func(Of Exception, Boolean))
+    parameters:
+    - id: predicate
+      type: System.Func{System.Exception,System.Boolean}
+      description: The predicate to execute for each exception. The predicate accepts as an argument the @'System.Exception' to be processed and returns a Boolean to indicate whether the exception was handled.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *predicate* argument is null.
+  - type: System.AggregateException
+    description: An exception contained by this @'System.AggregateException' was not handled.
+- uid: System.AggregateException.Flatten
+  id: Flatten
+  parent: System.AggregateException
+  href: System.AggregateException.yml
+  name: Flatten()
+  fullName: System.AggregateException.Flatten()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AggregateException.cs
+    startLine: 389
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Flattens an @'System.AggregateException' instances into a single, new instance.
+  remarks: >-
+    If any inner exceptions are themselves instances of
+
+    @'System.AggregateException', this method will recursively flatten all of them. The
+
+    inner exceptions returned in the new @'System.AggregateException'
+
+    will be the union of all of the the inner exceptions from exception tree rooted at the provided
+
+    @'System.AggregateException' instance.
+  syntax:
+    content: public AggregateException Flatten()
+    content.vb: Public Function Flatten As AggregateException
+    return:
+      type: System.AggregateException
+      description: A new, flattened @'System.AggregateException'.
+- uid: System.AggregateException.ToString
+  id: ToString
+  parent: System.AggregateException
+  href: System.AggregateException.yml
+  name: ToString()
+  fullName: System.AggregateException.ToString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/AggregateException.cs
+    startLine: 437
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Creates and returns a string representation of the current @'System.AggregateException'.
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+      description: A string representation of the current exception.
+  overridden: System.Exception.ToString
+references:
+- uid: System.AggregateException
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  fullName: System.Exception
+- uid: System.Exception.Message
+  parent: System.Exception
+  isExternal: true
+  name: Message
+  fullName: System.Exception.Message
+- uid: System.Exception.Data
+  parent: System.Exception
+  isExternal: true
+  name: Data
+  fullName: System.Exception.Data
+- uid: System.Exception.InnerException
+  parent: System.Exception
+  isExternal: true
+  name: InnerException
+  fullName: System.Exception.InnerException
+- uid: System.Exception.TargetSite
+  parent: System.Exception
+  isExternal: true
+  name: TargetSite
+  fullName: System.Exception.TargetSite
+- uid: System.Exception.StackTrace
+  parent: System.Exception
+  isExternal: true
+  name: StackTrace
+  fullName: System.Exception.StackTrace
+- uid: System.Exception.HelpLink
+  parent: System.Exception
+  isExternal: true
+  name: HelpLink
+  fullName: System.Exception.HelpLink
+- uid: System.Exception.Source
+  parent: System.Exception
+  isExternal: true
+  name: Source
+  fullName: System.Exception.Source
+- uid: System.Exception.HResult
+  parent: System.Exception
+  isExternal: true
+  name: HResult
+  fullName: System.Exception.HResult
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.ArgumentNullException
+- uid: System.ArgumentException
+- uid: System.Collections.Generic.IEnumerable{System.Exception}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: System.Collections.Generic.IEnumerable`1.yml
+  name: IEnumerable<Exception>
+  name.vb: IEnumerable(Of Exception)
+  fullName: System.Collections.Generic.IEnumerable<System.Exception>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Exception)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    href: System.Collections.Generic.IEnumerable`1.yml
+  - name: <
+    fullName: <
+  - uid: System.Exception
+    name: Exception
+    fullName: System.Exception
+    href: System.Exception.yml
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    href: System.Collections.Generic.IEnumerable`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Exception
+    name: Exception
+    fullName: System.Exception
+    href: System.Exception.yml
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Exception[]
+  isExternal: false
+  href: System.Exception.yml
+  name: Exception[]
+  name.vb: Exception()
+  fullName: System.Exception[]
+  fullName.vb: System.Exception()
+  spec.csharp:
+  - uid: System.Exception
+    name: Exception
+    fullName: System.Exception
+    href: System.Exception.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Exception
+    name: Exception
+    fullName: System.Exception
+    href: System.Exception.yml
+  - name: ()
+    fullName: ()
+- uid: System.Runtime.Serialization.SerializationInfo
+  parent: System.Runtime.Serialization
+  isExternal: false
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: SerializationInfo
+  fullName: System.Runtime.Serialization.SerializationInfo
+  type: Class
+- uid: System.Runtime.Serialization.StreamingContext
+  isExternal: false
+  href: System.Runtime.Serialization.StreamingContext.yml
+  name: StreamingContext
+  fullName: System.Runtime.Serialization.StreamingContext
+  type: Struct
+- uid: System.Runtime.Serialization.SerializationException
+  isExternal: false
+  href: System.Runtime.Serialization.SerializationException.yml
+  name: SerializationException
+  fullName: System.Runtime.Serialization.SerializationException
+  type: Class
+- uid: System.Runtime.Serialization
+  isExternal: false
+  name: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+  type: Namespace
+- uid: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: System.Exception
+  isExternal: true
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  fullName: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    fullName: System.Exception.GetObjectData
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    fullName: System.Runtime.Serialization.SerializationInfo
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    fullName: System.Exception.GetObjectData
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    fullName: System.Runtime.Serialization.SerializationInfo
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Exception.GetBaseException
+  parent: System.Exception
+  isExternal: true
+  name: GetBaseException()
+  fullName: System.Exception.GetBaseException()
+  spec.csharp:
+  - uid: System.Exception.GetBaseException
+    name: GetBaseException
+    fullName: System.Exception.GetBaseException
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Exception.GetBaseException
+    name: GetBaseException
+    fullName: System.Exception.GetBaseException
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{System.Exception}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1
+  href: System.Collections.ObjectModel.ReadOnlyCollection`1.yml
+  name: ReadOnlyCollection<Exception>
+  name.vb: ReadOnlyCollection(Of Exception)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<System.Exception>
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of System.Exception)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    href: System.Collections.ObjectModel.ReadOnlyCollection`1.yml
+  - name: <
+    fullName: <
+  - uid: System.Exception
+    name: Exception
+    fullName: System.Exception
+    href: System.Exception.yml
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    href: System.Collections.ObjectModel.ReadOnlyCollection`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Exception
+    name: Exception
+    fullName: System.Exception
+    href: System.Exception.yml
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+  parent: System.Collections.ObjectModel
+  isExternal: true
+  name: ReadOnlyCollection<T>
+  name.vb: ReadOnlyCollection(Of T)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel
+  isExternal: false
+  name: System.Collections.ObjectModel
+  fullName: System.Collections.ObjectModel
+  type: Namespace
+- uid: System.AggregateException.Handle(System.Func{System.Exception,System.Boolean})
+- uid: System.Func{System.Exception,System.Boolean}
+  parent: System
+  definition: System.Func`2
+  href: System.Func`2.yml
+  name: Func<Exception, Boolean>
+  name.vb: Func(Of Exception, Boolean)
+  fullName: System.Func<System.Exception, System.Boolean>
+  fullName.vb: System.Func(Of System.Exception, System.Boolean)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    fullName: System.Func
+    href: System.Func`2.yml
+  - name: <
+    fullName: <
+  - uid: System.Exception
+    name: Exception
+    fullName: System.Exception
+    href: System.Exception.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    fullName: System.Func
+    href: System.Func`2.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Exception
+    name: Exception
+    fullName: System.Exception
+    href: System.Exception.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+- uid: System.Func`2
+  parent: System
+  isExternal: true
+  name: Func<T, TResult>
+  name.vb: Func(Of T, TResult)
+  fullName: System.Func<T, TResult>
+  fullName.vb: System.Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: ', '
+    fullName: ', '
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: ', '
+    fullName: ', '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Exception.ToString
+  parent: System.Exception
+  isExternal: true
+  name: ToString()
+  fullName: System.Exception.ToString()
+  spec.csharp:
+  - uid: System.Exception.ToString
+    name: ToString
+    fullName: System.Exception.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Exception.ToString
+    name: ToString
+    fullName: System.Exception.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )

@@ -1,0 +1,299 @@
+items:
+- uid: System.Security.Cryptography.X509Certificates.X509FindType
+  id: X509FindType
+  parent: System.Security.Cryptography.X509Certificates
+  children:
+  - System.Security.Cryptography.X509Certificates.X509FindType.FindByApplicationPolicy
+  - System.Security.Cryptography.X509Certificates.X509FindType.FindByCertificatePolicy
+  - System.Security.Cryptography.X509Certificates.X509FindType.FindByExtension
+  - System.Security.Cryptography.X509Certificates.X509FindType.FindByIssuerDistinguishedName
+  - System.Security.Cryptography.X509Certificates.X509FindType.FindByIssuerName
+  - System.Security.Cryptography.X509Certificates.X509FindType.FindByKeyUsage
+  - System.Security.Cryptography.X509Certificates.X509FindType.FindBySerialNumber
+  - System.Security.Cryptography.X509Certificates.X509FindType.FindBySubjectDistinguishedName
+  - System.Security.Cryptography.X509Certificates.X509FindType.FindBySubjectKeyIdentifier
+  - System.Security.Cryptography.X509Certificates.X509FindType.FindBySubjectName
+  - System.Security.Cryptography.X509Certificates.X509FindType.FindByTemplateName
+  - System.Security.Cryptography.X509Certificates.X509FindType.FindByThumbprint
+  - System.Security.Cryptography.X509Certificates.X509FindType.FindByTimeExpired
+  - System.Security.Cryptography.X509Certificates.X509FindType.FindByTimeNotYetValid
+  - System.Security.Cryptography.X509Certificates.X509FindType.FindByTimeValid
+  href: System.Security.Cryptography.X509Certificates.X509FindType.yml
+  name: X509FindType
+  fullName: System.Security.Cryptography.X509Certificates.X509FindType
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509FindType.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509FindType.cs
+    startLine: 8
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Specifies the type of value the @'System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find(System.Security.Cryptography.X509Certificates.X509FindType,System.Object,System.Boolean)' method searches for.
+  syntax:
+    content: public enum X509FindType
+    content.vb: Public Enum X509FindType
+- uid: System.Security.Cryptography.X509Certificates.X509FindType.FindByThumbprint
+  id: FindByThumbprint
+  parent: System.Security.Cryptography.X509Certificates.X509FindType
+  href: System.Security.Cryptography.X509Certificates.X509FindType.yml
+  name: FindByThumbprint
+  fullName: System.Security.Cryptography.X509Certificates.X509FindType.FindByThumbprint
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509FindType.cs
+    startLine: 10
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The *findValue* parameter for the @'System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find(System.Security.Cryptography.X509Certificates.X509FindType,System.Object,System.Boolean)' method must be a string representing the thumbprint of the certificate.
+  syntax:
+    content: FindByThumbprint = 0
+- uid: System.Security.Cryptography.X509Certificates.X509FindType.FindBySubjectName
+  id: FindBySubjectName
+  parent: System.Security.Cryptography.X509Certificates.X509FindType
+  href: System.Security.Cryptography.X509Certificates.X509FindType.yml
+  name: FindBySubjectName
+  fullName: System.Security.Cryptography.X509Certificates.X509FindType.FindBySubjectName
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509FindType.cs
+    startLine: 11
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The *findValue* parameter for the @'System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find(System.Security.Cryptography.X509Certificates.X509FindType,System.Object,System.Boolean)' method must be a string representing the subject name of the certificate. This is a less specific search than that provided by the @'System.Security.Cryptography.X509Certificates.X509FindType.FindBySubjectDistinguishedName' enumeration value. Using the @'System.Security.Cryptography.X509Certificates.X509FindType.FindBySubjectName' value, the @'System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find(System.Security.Cryptography.X509Certificates.X509FindType,System.Object,System.Boolean)' method performs a case-insensitive string comparison using the supplied value. For example, if you pass "MyCert" to the @'System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find(System.Security.Cryptography.X509Certificates.X509FindType,System.Object,System.Boolean)' method, it will find all certificates with the subject name containing that string, regardless of other subject values. Searching by distinguished name is a more precise search.
+  syntax:
+    content: FindBySubjectName = 1
+- uid: System.Security.Cryptography.X509Certificates.X509FindType.FindBySubjectDistinguishedName
+  id: FindBySubjectDistinguishedName
+  parent: System.Security.Cryptography.X509Certificates.X509FindType
+  href: System.Security.Cryptography.X509Certificates.X509FindType.yml
+  name: FindBySubjectDistinguishedName
+  fullName: System.Security.Cryptography.X509Certificates.X509FindType.FindBySubjectDistinguishedName
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509FindType.cs
+    startLine: 12
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The *findValue* parameter for the @'System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find(System.Security.Cryptography.X509Certificates.X509FindType,System.Object,System.Boolean)' method must be a string representing the subject distinguished name of the certificate. This is a more specific search than that provided by the @'System.Security.Cryptography.X509Certificates.X509FindType.FindBySubjectName' enumeration value. Using the @'System.Security.Cryptography.X509Certificates.X509FindType.FindBySubjectDistinguishedName' value, the @'System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find(System.Security.Cryptography.X509Certificates.X509FindType,System.Object,System.Boolean)' method performs a case-insensitive string comparison for the entire distinguished name. Searching by subject name is a less precise search.
+  syntax:
+    content: FindBySubjectDistinguishedName = 2
+- uid: System.Security.Cryptography.X509Certificates.X509FindType.FindByIssuerName
+  id: FindByIssuerName
+  parent: System.Security.Cryptography.X509Certificates.X509FindType
+  href: System.Security.Cryptography.X509Certificates.X509FindType.yml
+  name: FindByIssuerName
+  fullName: System.Security.Cryptography.X509Certificates.X509FindType.FindByIssuerName
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509FindType.cs
+    startLine: 13
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The *findValue* parameter for the @'System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find(System.Security.Cryptography.X509Certificates.X509FindType,System.Object,System.Boolean)' method must be a string representing the issuer name of the certificate. This is a less specific search than that provided by the @'System.Security.Cryptography.X509Certificates.X509FindType.FindByIssuerDistinguishedName' enumeration value. Using the @'System.Security.Cryptography.X509Certificates.X509FindType.FindByIssuerName' value, the @'System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find(System.Security.Cryptography.X509Certificates.X509FindType,System.Object,System.Boolean)' method performs a case-insensitive string comparison using the supplied value. For example, if you pass "MyCA" to the @'System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find(System.Security.Cryptography.X509Certificates.X509FindType,System.Object,System.Boolean)' method, it will find all certificates with the issuer name containing that string, regardless of other issuer values.
+  syntax:
+    content: FindByIssuerName = 3
+- uid: System.Security.Cryptography.X509Certificates.X509FindType.FindByIssuerDistinguishedName
+  id: FindByIssuerDistinguishedName
+  parent: System.Security.Cryptography.X509Certificates.X509FindType
+  href: System.Security.Cryptography.X509Certificates.X509FindType.yml
+  name: FindByIssuerDistinguishedName
+  fullName: System.Security.Cryptography.X509Certificates.X509FindType.FindByIssuerDistinguishedName
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509FindType.cs
+    startLine: 14
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The *findValue* parameter for the @'System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find(System.Security.Cryptography.X509Certificates.X509FindType,System.Object,System.Boolean)' method must be a string representing the issuer distinguished name of the certificate. This is a more specific search than that provided by the @'System.Security.Cryptography.X509Certificates.X509FindType.FindByIssuerName' enumeration value. Using the @'System.Security.Cryptography.X509Certificates.X509FindType.FindByIssuerDistinguishedName' value, the @'System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find(System.Security.Cryptography.X509Certificates.X509FindType,System.Object,System.Boolean)' method performs a case-insensitive string comparison for the entire distinguished name. Searching by issuer name is a less precise search.
+  syntax:
+    content: FindByIssuerDistinguishedName = 4
+- uid: System.Security.Cryptography.X509Certificates.X509FindType.FindBySerialNumber
+  id: FindBySerialNumber
+  parent: System.Security.Cryptography.X509Certificates.X509FindType
+  href: System.Security.Cryptography.X509Certificates.X509FindType.yml
+  name: FindBySerialNumber
+  fullName: System.Security.Cryptography.X509Certificates.X509FindType.FindBySerialNumber
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509FindType.cs
+    startLine: 15
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The *findValue* parameter for the @'System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find(System.Security.Cryptography.X509Certificates.X509FindType,System.Object,System.Boolean)' method must be a string that represents the serial number of the certificate as displayed by the certificate dialog box, but without the spaces, or as returned by the @'System.Security.Cryptography.X509Certificates.X509Certificate.GetSerialNumberString' method.
+  syntax:
+    content: FindBySerialNumber = 5
+- uid: System.Security.Cryptography.X509Certificates.X509FindType.FindByTimeValid
+  id: FindByTimeValid
+  parent: System.Security.Cryptography.X509Certificates.X509FindType
+  href: System.Security.Cryptography.X509Certificates.X509FindType.yml
+  name: FindByTimeValid
+  fullName: System.Security.Cryptography.X509Certificates.X509FindType.FindByTimeValid
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509FindType.cs
+    startLine: 16
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The *findValue* parameter for the @'System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find(System.Security.Cryptography.X509Certificates.X509FindType,System.Object,System.Boolean)' method must be a @'System.DateTime' value in local time. You can use @'System.DateTime.Now' to find all the currently valid certificates.
+  syntax:
+    content: FindByTimeValid = 6
+- uid: System.Security.Cryptography.X509Certificates.X509FindType.FindByTimeNotYetValid
+  id: FindByTimeNotYetValid
+  parent: System.Security.Cryptography.X509Certificates.X509FindType
+  href: System.Security.Cryptography.X509Certificates.X509FindType.yml
+  name: FindByTimeNotYetValid
+  fullName: System.Security.Cryptography.X509Certificates.X509FindType.FindByTimeNotYetValid
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509FindType.cs
+    startLine: 17
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The *findValue* parameter for the @'System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find(System.Security.Cryptography.X509Certificates.X509FindType,System.Object,System.Boolean)' method must be a @'System.DateTime' value in local time. The value does not have to be in the future. For example, you can use @'System.Security.Cryptography.X509Certificates.X509FindType.FindByTimeNotYetValid' to find certificates that became valid in the current year by taking the intersection of the results of a @'System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find(System.Security.Cryptography.X509Certificates.X509FindType,System.Object,System.Boolean)' operation for @'System.Security.Cryptography.X509Certificates.X509FindType.FindByTimeNotYetValid' for the last day of last year with the results of a @'System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find(System.Security.Cryptography.X509Certificates.X509FindType,System.Object,System.Boolean)' operation for @'System.Security.Cryptography.X509Certificates.X509FindType.FindByTimeValid' of @'System.DateTime.Now'.
+  syntax:
+    content: FindByTimeNotYetValid = 7
+- uid: System.Security.Cryptography.X509Certificates.X509FindType.FindByTimeExpired
+  id: FindByTimeExpired
+  parent: System.Security.Cryptography.X509Certificates.X509FindType
+  href: System.Security.Cryptography.X509Certificates.X509FindType.yml
+  name: FindByTimeExpired
+  fullName: System.Security.Cryptography.X509Certificates.X509FindType.FindByTimeExpired
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509FindType.cs
+    startLine: 18
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The *findValue* parameter for the @'System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find(System.Security.Cryptography.X509Certificates.X509FindType,System.Object,System.Boolean)' method must be a @'System.DateTime' value in local time. For example, you can find all the certificates that will be valid until the end of the year by eliminating the results of a @'System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find(System.Security.Cryptography.X509Certificates.X509FindType,System.Object,System.Boolean)' operation for @'System.Security.Cryptography.X509Certificates.X509FindType.FindByTimeExpired' of the last day of the year from the results of a @'System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find(System.Security.Cryptography.X509Certificates.X509FindType,System.Object,System.Boolean)' operation for @'System.DateTime.Now'.
+  syntax:
+    content: FindByTimeExpired = 8
+- uid: System.Security.Cryptography.X509Certificates.X509FindType.FindByTemplateName
+  id: FindByTemplateName
+  parent: System.Security.Cryptography.X509Certificates.X509FindType
+  href: System.Security.Cryptography.X509Certificates.X509FindType.yml
+  name: FindByTemplateName
+  fullName: System.Security.Cryptography.X509Certificates.X509FindType.FindByTemplateName
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509FindType.cs
+    startLine: 19
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The *findValue* parameter for the @'System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find(System.Security.Cryptography.X509Certificates.X509FindType,System.Object,System.Boolean)' method must be a string representing the template name of the certificate, such as "ClientAuth". A template name is an X509 version 3 extension that specifies the uses of the certificate.
+  syntax:
+    content: FindByTemplateName = 9
+- uid: System.Security.Cryptography.X509Certificates.X509FindType.FindByApplicationPolicy
+  id: FindByApplicationPolicy
+  parent: System.Security.Cryptography.X509Certificates.X509FindType
+  href: System.Security.Cryptography.X509Certificates.X509FindType.yml
+  name: FindByApplicationPolicy
+  fullName: System.Security.Cryptography.X509Certificates.X509FindType.FindByApplicationPolicy
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509FindType.cs
+    startLine: 20
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The *findValue* parameter for the @'System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find(System.Security.Cryptography.X509Certificates.X509FindType,System.Object,System.Boolean)' method must be a string representing either the application policy friendly name or the object identifier (OID, or @'System.Security.Cryptography.Oid') of the certificate. For example, "Encrypting File System" or "1.3.6.1.4.1.311.10.3.4" can be used. For an application that will be localized, the OID value must be used, because the friendly name is localized.
+  syntax:
+    content: FindByApplicationPolicy = 10
+- uid: System.Security.Cryptography.X509Certificates.X509FindType.FindByCertificatePolicy
+  id: FindByCertificatePolicy
+  parent: System.Security.Cryptography.X509Certificates.X509FindType
+  href: System.Security.Cryptography.X509Certificates.X509FindType.yml
+  name: FindByCertificatePolicy
+  fullName: System.Security.Cryptography.X509Certificates.X509FindType.FindByCertificatePolicy
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509FindType.cs
+    startLine: 21
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The *findValue* parameter for the @'System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find(System.Security.Cryptography.X509Certificates.X509FindType,System.Object,System.Boolean)' method must be a string representing either the friendly name or the object identifier (OID, or @'System.Security.Cryptography.Oid') of the certificate policy. The best practice is to use the OID, such as "1.3.6.1.4.1.311.10.3.4". For an application that will be localized, the OID must be used, because the friendly name is localized.
+  syntax:
+    content: FindByCertificatePolicy = 11
+- uid: System.Security.Cryptography.X509Certificates.X509FindType.FindByExtension
+  id: FindByExtension
+  parent: System.Security.Cryptography.X509Certificates.X509FindType
+  href: System.Security.Cryptography.X509Certificates.X509FindType.yml
+  name: FindByExtension
+  fullName: System.Security.Cryptography.X509Certificates.X509FindType.FindByExtension
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509FindType.cs
+    startLine: 22
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The *findValue* parameter for the @'System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find(System.Security.Cryptography.X509Certificates.X509FindType,System.Object,System.Boolean)' method must be a string describing the extension to find. The object identifier (OID) is most commonly used to direct the @'System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find(System.Security.Cryptography.X509Certificates.X509FindType,System.Object,System.Boolean)' method to search for all certificates that have an extension matching that OID value.
+  syntax:
+    content: FindByExtension = 12
+- uid: System.Security.Cryptography.X509Certificates.X509FindType.FindByKeyUsage
+  id: FindByKeyUsage
+  parent: System.Security.Cryptography.X509Certificates.X509FindType
+  href: System.Security.Cryptography.X509Certificates.X509FindType.yml
+  name: FindByKeyUsage
+  fullName: System.Security.Cryptography.X509Certificates.X509FindType.FindByKeyUsage
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509FindType.cs
+    startLine: 23
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The *findValue* parameter for the @'System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find(System.Security.Cryptography.X509Certificates.X509FindType,System.Object,System.Boolean)' method must be either a string representing the key usage or an integer representing a bit mask containing all the requested key usages. For the string value, only one key usage at a time can be specified, but the @'System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find(System.Security.Cryptography.X509Certificates.X509FindType,System.Object,System.Boolean)' method can be used in a cascading sequence to get the intersection of the requested usages. For example, the *findValue* parameter can be set to "KeyEncipherment" or an integer (0x30 indicates "KeyEncipherment" and "DataEncipherment"). Values of the @'System.Security.Cryptography.X509Certificates.X509KeyUsageFlags' enumeration can also be used.
+  syntax:
+    content: FindByKeyUsage = 13
+- uid: System.Security.Cryptography.X509Certificates.X509FindType.FindBySubjectKeyIdentifier
+  id: FindBySubjectKeyIdentifier
+  parent: System.Security.Cryptography.X509Certificates.X509FindType
+  href: System.Security.Cryptography.X509Certificates.X509FindType.yml
+  name: FindBySubjectKeyIdentifier
+  fullName: System.Security.Cryptography.X509Certificates.X509FindType.FindBySubjectKeyIdentifier
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509FindType.cs
+    startLine: 24
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The *findValue* parameter for the @'System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find(System.Security.Cryptography.X509Certificates.X509FindType,System.Object,System.Boolean)' method must be a string representing the subject key identifier in hexadecimal, such as "F3E815D45E83B8477B9284113C64EF208E897112", as displayed in the UI.
+  syntax:
+    content: FindBySubjectKeyIdentifier = 14
+references:
+- uid: System.Security.Cryptography.X509Certificates
+  isExternal: false
+  name: System.Security.Cryptography.X509Certificates
+  fullName: System.Security.Cryptography.X509Certificates
+  type: Namespace

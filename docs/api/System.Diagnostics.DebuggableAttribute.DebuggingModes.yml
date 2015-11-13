@@ -1,0 +1,119 @@
+items:
+- uid: System.Diagnostics.DebuggableAttribute.DebuggingModes
+  id: DebuggableAttribute.DebuggingModes
+  parent: System.Diagnostics
+  children:
+  - System.Diagnostics.DebuggableAttribute.DebuggingModes.Default
+  - System.Diagnostics.DebuggableAttribute.DebuggingModes.DisableOptimizations
+  - System.Diagnostics.DebuggableAttribute.DebuggingModes.EnableEditAndContinue
+  - System.Diagnostics.DebuggableAttribute.DebuggingModes.IgnoreSymbolStoreSequencePoints
+  - System.Diagnostics.DebuggableAttribute.DebuggingModes.None
+  href: System.Diagnostics.DebuggableAttribute.DebuggingModes.yml
+  name: DebuggableAttribute.DebuggingModes
+  fullName: System.Diagnostics.DebuggableAttribute.DebuggingModes
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Diagnostics/DebuggerAttributes.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Diagnostics/DebuggerAttributes.cs
+    startLine: 62
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics
+  summary: Specifies the debugging mode for the just-in-time (JIT) compiler.
+  syntax:
+    content: public enum DebuggingModes
+    content.vb: Public Enum DebuggingModes
+- uid: System.Diagnostics.DebuggableAttribute.DebuggingModes.None
+  id: None
+  parent: System.Diagnostics.DebuggableAttribute.DebuggingModes
+  href: System.Diagnostics.DebuggableAttribute.DebuggingModes.yml
+  name: None
+  fullName: System.Diagnostics.DebuggableAttribute.DebuggingModes.None
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/DebuggerAttributes.cs
+    startLine: 66
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics
+  summary: Starting with the .NET Framework version 2.0, JIT tracking information is always generated, and this flag has the same effect as @'System.Diagnostics.DebuggableAttribute.DebuggingModes.Default', except that it sets the @'System.Diagnostics.DebuggableAttribute.IsJITTrackingEnabled' property to false. However, because JIT tracking is always enabled, the property value is ignored in version 2.0 or later. Note that, unlike the @'System.Diagnostics.DebuggableAttribute.DebuggingModes.None' flag, the @'System.Diagnostics.DebuggableAttribute.DebuggingModes.None' flag cannot be used to disable JIT optimizations.
+  syntax:
+    content: None = 0
+- uid: System.Diagnostics.DebuggableAttribute.DebuggingModes.Default
+  id: Default
+  parent: System.Diagnostics.DebuggableAttribute.DebuggingModes
+  href: System.Diagnostics.DebuggableAttribute.DebuggingModes.yml
+  name: Default
+  fullName: System.Diagnostics.DebuggableAttribute.DebuggingModes.Default
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/DebuggerAttributes.cs
+    startLine: 67
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics
+  summary: Instructs the just-in-time (JIT) compiler to use its default behavior, which includes enabling optimizations, disabling Edit and Continue support, and using symbol store sequence points if present. Starting with the .NET Framework version 2.0, JIT tracking information, the Microsoft intermediate language (MSIL) offset to the native-code offset within a method, is always generated.
+  syntax:
+    content: Default = 1
+- uid: System.Diagnostics.DebuggableAttribute.DebuggingModes.DisableOptimizations
+  id: DisableOptimizations
+  parent: System.Diagnostics.DebuggableAttribute.DebuggingModes
+  href: System.Diagnostics.DebuggableAttribute.DebuggingModes.yml
+  name: DisableOptimizations
+  fullName: System.Diagnostics.DebuggableAttribute.DebuggingModes.DisableOptimizations
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/DebuggerAttributes.cs
+    startLine: 68
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics
+  summary: Disable optimizations performed by the compiler to make your output file smaller, faster, and more efficient. Optimizations result in code rearrangement in the output file, which can make debugging difficult. Typically optimization should be disabled while debugging. In versions 2.0 or later, combine this value with Default (Default | DisableOptimizations) to enable JIT tracking and disable optimizations.
+  syntax:
+    content: DisableOptimizations = 256
+- uid: System.Diagnostics.DebuggableAttribute.DebuggingModes.IgnoreSymbolStoreSequencePoints
+  id: IgnoreSymbolStoreSequencePoints
+  parent: System.Diagnostics.DebuggableAttribute.DebuggingModes
+  href: System.Diagnostics.DebuggableAttribute.DebuggingModes.yml
+  name: IgnoreSymbolStoreSequencePoints
+  fullName: System.Diagnostics.DebuggableAttribute.DebuggingModes.IgnoreSymbolStoreSequencePoints
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/DebuggerAttributes.cs
+    startLine: 69
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics
+  summary: Use the implicit MSIL sequence points, not the program database (PDB) sequence points. The symbolic information normally includes at least one Microsoft intermediate language (MSIL) offset for each source line. When the just-in-time (JIT) compiler is about to compile a method, it asks the profiling services for a list of MSIL offsets that should be preserved. These MSIL offsets are called sequence points.
+  syntax:
+    content: IgnoreSymbolStoreSequencePoints = 2
+- uid: System.Diagnostics.DebuggableAttribute.DebuggingModes.EnableEditAndContinue
+  id: EnableEditAndContinue
+  parent: System.Diagnostics.DebuggableAttribute.DebuggingModes
+  href: System.Diagnostics.DebuggableAttribute.DebuggingModes.yml
+  name: EnableEditAndContinue
+  fullName: System.Diagnostics.DebuggableAttribute.DebuggingModes.EnableEditAndContinue
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/DebuggerAttributes.cs
+    startLine: 70
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics
+  summary: Enable edit and continue. Edit and continue enables you to make changes to your source code while your program is in break mode. The ability to edit and continue is compiler dependent.
+  syntax:
+    content: EnableEditAndContinue = 4
+references:
+- uid: System.Diagnostics
+  isExternal: false
+  name: System.Diagnostics
+  fullName: System.Diagnostics
+  type: Namespace

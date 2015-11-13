@@ -1,0 +1,412 @@
+items:
+- uid: System.Security.Cryptography.AsymmetricKeyExchangeFormatter
+  id: AsymmetricKeyExchangeFormatter
+  parent: System.Security.Cryptography
+  children:
+  - System.Security.Cryptography.AsymmetricKeyExchangeFormatter.#ctor
+  - System.Security.Cryptography.AsymmetricKeyExchangeFormatter.CreateKeyExchange(System.Byte[])
+  - System.Security.Cryptography.AsymmetricKeyExchangeFormatter.CreateKeyExchange(System.Byte[],System.Type)
+  - System.Security.Cryptography.AsymmetricKeyExchangeFormatter.Parameters
+  - System.Security.Cryptography.AsymmetricKeyExchangeFormatter.SetKey(System.Security.Cryptography.AsymmetricAlgorithm)
+  href: System.Security.Cryptography.AsymmetricKeyExchangeFormatter.yml
+  name: AsymmetricKeyExchangeFormatter
+  fullName: System.Security.Cryptography.AsymmetricKeyExchangeFormatter
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Security/Cryptography/AsymmetricKeyExchangeFormatter.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Security/Cryptography/AsymmetricKeyExchangeFormatter.cs
+    startLine: 6
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: Represents the base class from which all asymmetric key exchange formatters derive.
+  syntax:
+    content: public abstract class AsymmetricKeyExchangeFormatter
+    content.vb: Public MustInherit Class AsymmetricKeyExchangeFormatter
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Security.Cryptography.AsymmetricKeyExchangeFormatter.#ctor
+  id: '#ctor'
+  parent: System.Security.Cryptography.AsymmetricKeyExchangeFormatter
+  href: System.Security.Cryptography.AsymmetricKeyExchangeFormatter.yml
+  name: AsymmetricKeyExchangeFormatter()
+  fullName: System.Security.Cryptography.AsymmetricKeyExchangeFormatter.AsymmetricKeyExchangeFormatter()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/AsymmetricKeyExchangeFormatter.cs
+    startLine: 12
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: Initializes a new instance of @'System.Security.Cryptography.AsymmetricKeyExchangeFormatter'.
+  syntax:
+    content: protected AsymmetricKeyExchangeFormatter()
+    content.vb: Protected Sub New
+- uid: System.Security.Cryptography.AsymmetricKeyExchangeFormatter.Parameters
+  id: Parameters
+  parent: System.Security.Cryptography.AsymmetricKeyExchangeFormatter
+  href: System.Security.Cryptography.AsymmetricKeyExchangeFormatter.yml
+  name: Parameters
+  fullName: System.Security.Cryptography.AsymmetricKeyExchangeFormatter.Parameters
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/AsymmetricKeyExchangeFormatter.cs
+    startLine: 19
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: When overridden in a derived class, gets the parameters for the asymmetric key exchange.
+  syntax:
+    content: public abstract string Parameters { get; }
+    content.vb: Public MustOverride ReadOnly Property Parameters As String
+    parameters: []
+    return:
+      type: System.String
+- uid: System.Security.Cryptography.AsymmetricKeyExchangeFormatter.SetKey(System.Security.Cryptography.AsymmetricAlgorithm)
+  id: SetKey(System.Security.Cryptography.AsymmetricAlgorithm)
+  parent: System.Security.Cryptography.AsymmetricKeyExchangeFormatter
+  href: System.Security.Cryptography.AsymmetricKeyExchangeFormatter.yml
+  name: SetKey(AsymmetricAlgorithm)
+  fullName: System.Security.Cryptography.AsymmetricKeyExchangeFormatter.SetKey(System.Security.Cryptography.AsymmetricAlgorithm)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/AsymmetricKeyExchangeFormatter.cs
+    startLine: 27
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: When overridden in a derived class, sets the public key to use for encrypting the secret information.
+  syntax:
+    content: public abstract void SetKey(AsymmetricAlgorithm key)
+    content.vb: Public MustOverride Sub SetKey(key As AsymmetricAlgorithm)
+    parameters:
+    - id: key
+      type: System.Security.Cryptography.AsymmetricAlgorithm
+      description: The instance of the implementation of @'System.Security.Cryptography.AsymmetricAlgorithm' that holds the public key.
+- uid: System.Security.Cryptography.AsymmetricKeyExchangeFormatter.CreateKeyExchange(System.Byte[])
+  id: CreateKeyExchange(System.Byte[])
+  parent: System.Security.Cryptography.AsymmetricKeyExchangeFormatter
+  href: System.Security.Cryptography.AsymmetricKeyExchangeFormatter.yml
+  name: CreateKeyExchange(Byte[])
+  name.vb: CreateKeyExchange(Byte())
+  fullName: System.Security.Cryptography.AsymmetricKeyExchangeFormatter.CreateKeyExchange(System.Byte[])
+  fullName.vb: System.Security.Cryptography.AsymmetricKeyExchangeFormatter.CreateKeyExchange(System.Byte())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/AsymmetricKeyExchangeFormatter.cs
+    startLine: 28
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: When overridden in a derived class, creates the encrypted key exchange data from the specified input data.
+  syntax:
+    content: public abstract byte[] CreateKeyExchange(byte[] data)
+    content.vb: Public MustOverride Function CreateKeyExchange(data As Byte()) As Byte()
+    parameters:
+    - id: data
+      type: System.Byte[]
+      description: The secret information to be passed in the key exchange.
+    return:
+      type: System.Byte[]
+- uid: System.Security.Cryptography.AsymmetricKeyExchangeFormatter.CreateKeyExchange(System.Byte[],System.Type)
+  id: CreateKeyExchange(System.Byte[],System.Type)
+  parent: System.Security.Cryptography.AsymmetricKeyExchangeFormatter
+  href: System.Security.Cryptography.AsymmetricKeyExchangeFormatter.yml
+  name: CreateKeyExchange(Byte[], Type)
+  name.vb: CreateKeyExchange(Byte(), Type)
+  fullName: System.Security.Cryptography.AsymmetricKeyExchangeFormatter.CreateKeyExchange(System.Byte[], System.Type)
+  fullName.vb: System.Security.Cryptography.AsymmetricKeyExchangeFormatter.CreateKeyExchange(System.Byte(), System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/AsymmetricKeyExchangeFormatter.cs
+    startLine: 29
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: When overridden in a derived class, creates the encrypted key exchange data from the specified input data.
+  syntax:
+    content: public abstract byte[] CreateKeyExchange(byte[] data, Type symAlgType)
+    content.vb: Public MustOverride Function CreateKeyExchange(data As Byte(), symAlgType As Type) As Byte()
+    parameters:
+    - id: data
+      type: System.Byte[]
+      description: The secret information to be passed in the key exchange.
+    - id: symAlgType
+      type: System.Type
+      description: This parameter is not used in the current version.
+    return:
+      type: System.Byte[]
+references:
+- uid: System.Security.Cryptography
+  isExternal: false
+  name: System.Security.Cryptography
+  fullName: System.Security.Cryptography
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Security.Cryptography.AsymmetricAlgorithm
+  parent: System.Security.Cryptography
+  isExternal: true
+  name: AsymmetricAlgorithm
+  fullName: System.Security.Cryptography.AsymmetricAlgorithm
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  name.vb: Byte()
+  fullName: System.Byte[]
+  fullName.vb: System.Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  fullName: System.Type

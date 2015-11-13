@@ -1,0 +1,1136 @@
+items:
+- uid: System.Runtime.InteropServices.ComTypes.ITypeInfo2
+  id: ITypeInfo2
+  parent: System.Runtime.InteropServices.ComTypes
+  children:
+  - System.Runtime.InteropServices.ComTypes.ITypeInfo2.AddressOfMember(System.Int32,System.Runtime.InteropServices.ComTypes.INVOKEKIND,System.IntPtr@)
+  - System.Runtime.InteropServices.ComTypes.ITypeInfo2.CreateInstance(System.Object,System.Guid@,System.Object@)
+  - System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetAllCustData(System.IntPtr)
+  - System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetAllFuncCustData(System.Int32,System.IntPtr)
+  - System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetAllImplTypeCustData(System.Int32,System.IntPtr)
+  - System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetAllParamCustData(System.Int32,System.Int32,System.IntPtr)
+  - System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetAllVarCustData(System.Int32,System.IntPtr)
+  - System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetContainingTypeLib(System.Runtime.InteropServices.ComTypes.ITypeLib@,System.Int32@)
+  - System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetCustData(System.Guid@,System.Object@)
+  - System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetDllEntry(System.Int32,System.Runtime.InteropServices.ComTypes.INVOKEKIND,System.IntPtr,System.IntPtr,System.IntPtr)
+  - System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetDocumentation(System.Int32,System.String@,System.String@,System.Int32@,System.String@)
+  - System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetDocumentation2(System.Int32,System.String@,System.Int32@,System.String@)
+  - System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetFuncCustData(System.Int32,System.Guid@,System.Object@)
+  - System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetFuncDesc(System.Int32,System.IntPtr@)
+  - System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetFuncIndexOfMemId(System.Int32,System.Runtime.InteropServices.ComTypes.INVOKEKIND,System.Int32@)
+  - System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetIDsOfNames(System.String[],System.Int32,System.Int32[])
+  - System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetImplTypeCustData(System.Int32,System.Guid@,System.Object@)
+  - System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetImplTypeFlags(System.Int32,System.Runtime.InteropServices.ComTypes.IMPLTYPEFLAGS@)
+  - System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetMops(System.Int32,System.String@)
+  - System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetNames(System.Int32,System.String[],System.Int32,System.Int32@)
+  - System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetParamCustData(System.Int32,System.Int32,System.Guid@,System.Object@)
+  - System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetRefTypeInfo(System.Int32,System.Runtime.InteropServices.ComTypes.ITypeInfo@)
+  - System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetRefTypeOfImplType(System.Int32,System.Int32@)
+  - System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetTypeAttr(System.IntPtr@)
+  - System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetTypeComp(System.Runtime.InteropServices.ComTypes.ITypeComp@)
+  - System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetTypeFlags(System.Int32@)
+  - System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetTypeKind(System.Runtime.InteropServices.ComTypes.TYPEKIND@)
+  - System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetVarCustData(System.Int32,System.Guid@,System.Object@)
+  - System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetVarDesc(System.Int32,System.IntPtr@)
+  - System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetVarIndexOfMemId(System.Int32,System.Int32@)
+  - System.Runtime.InteropServices.ComTypes.ITypeInfo2.Invoke(System.Object,System.Int32,System.Int16,System.Runtime.InteropServices.ComTypes.DISPPARAMS@,System.IntPtr,System.IntPtr,System.Int32@)
+  - System.Runtime.InteropServices.ComTypes.ITypeInfo2.ReleaseFuncDesc(System.IntPtr)
+  - System.Runtime.InteropServices.ComTypes.ITypeInfo2.ReleaseTypeAttr(System.IntPtr)
+  - System.Runtime.InteropServices.ComTypes.ITypeInfo2.ReleaseVarDesc(System.IntPtr)
+  href: System.Runtime.InteropServices.ComTypes.ITypeInfo2.yml
+  name: ITypeInfo2
+  fullName: System.Runtime.InteropServices.ComTypes.ITypeInfo2
+  type: Interface
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo2.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo2.cs
+    startLine: 16
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Provides the managed definition of the ITypeInfo2 interface.
+  syntax:
+    content: 'public interface ITypeInfo2 : ITypeInfo'
+    content.vb: Public Interface ITypeInfo2 Inherits ITypeInfo
+- uid: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetTypeAttr(System.IntPtr@)
+  id: GetTypeAttr(System.IntPtr@)
+  parent: System.Runtime.InteropServices.ComTypes.ITypeInfo2
+  href: System.Runtime.InteropServices.ComTypes.ITypeInfo2.yml
+  name: GetTypeAttr(out IntPtr)
+  name.vb: GetTypeAttr(ByRef IntPtr)
+  fullName: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetTypeAttr(out System.IntPtr)
+  fullName.vb: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetTypeAttr(ByRef System.IntPtr)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo2.cs
+    startLine: 21
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Retrieves a @'System.Runtime.InteropServices.TYPEATTR' structure that contains the attributes of the type description.
+  syntax:
+    content: void GetTypeAttr(out IntPtr ppTypeAttr)
+    content.vb: Sub GetTypeAttr(ByRef ppTypeAttr As IntPtr)
+    parameters:
+    - id: ppTypeAttr
+      type: System.IntPtr
+      description: When this method returns, contains a reference to the structure that contains the attributes of this type description. This parameter is passed uninitialized.
+- uid: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetTypeComp(System.Runtime.InteropServices.ComTypes.ITypeComp@)
+  id: GetTypeComp(System.Runtime.InteropServices.ComTypes.ITypeComp@)
+  parent: System.Runtime.InteropServices.ComTypes.ITypeInfo2
+  href: System.Runtime.InteropServices.ComTypes.ITypeInfo2.yml
+  name: GetTypeComp(out ITypeComp)
+  name.vb: GetTypeComp(ByRef ITypeComp)
+  fullName: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetTypeComp(out System.Runtime.InteropServices.ComTypes.ITypeComp)
+  fullName.vb: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetTypeComp(ByRef System.Runtime.InteropServices.ComTypes.ITypeComp)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo2.cs
+    startLine: 22
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Retrieves the ITypeComp interface for the type description, which enables a client compiler to bind to the type description's members.
+  syntax:
+    content: void GetTypeComp(out ITypeComp ppTComp)
+    content.vb: Sub GetTypeComp(ByRef ppTComp As ITypeComp)
+    parameters:
+    - id: ppTComp
+      type: System.Runtime.InteropServices.ComTypes.ITypeComp
+      description: When this method returns, contains a reference to the ITypeComp of the containing type library. This parameter is passed uninitialized.
+- uid: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetFuncDesc(System.Int32,System.IntPtr@)
+  id: GetFuncDesc(System.Int32,System.IntPtr@)
+  parent: System.Runtime.InteropServices.ComTypes.ITypeInfo2
+  href: System.Runtime.InteropServices.ComTypes.ITypeInfo2.yml
+  name: GetFuncDesc(Int32, out IntPtr)
+  name.vb: GetFuncDesc(Int32, ByRef IntPtr)
+  fullName: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetFuncDesc(System.Int32, out System.IntPtr)
+  fullName.vb: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetFuncDesc(System.Int32, ByRef System.IntPtr)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo2.cs
+    startLine: 23
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Retrieves the @'System.Runtime.InteropServices.FUNCDESC' structure that contains information about a specified function.
+  syntax:
+    content: void GetFuncDesc(int index, out IntPtr ppFuncDesc)
+    content.vb: Sub GetFuncDesc(index As Integer, ByRef ppFuncDesc As IntPtr)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The index of the function description to return.
+    - id: ppFuncDesc
+      type: System.IntPtr
+      description: When this method returns, contains a reference to a FUNCDESC structure that describes the specified function. This parameter is passed uninitialized.
+- uid: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetVarDesc(System.Int32,System.IntPtr@)
+  id: GetVarDesc(System.Int32,System.IntPtr@)
+  parent: System.Runtime.InteropServices.ComTypes.ITypeInfo2
+  href: System.Runtime.InteropServices.ComTypes.ITypeInfo2.yml
+  name: GetVarDesc(Int32, out IntPtr)
+  name.vb: GetVarDesc(Int32, ByRef IntPtr)
+  fullName: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetVarDesc(System.Int32, out System.IntPtr)
+  fullName.vb: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetVarDesc(System.Int32, ByRef System.IntPtr)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo2.cs
+    startLine: 24
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Retrieves a VARDESC structure that describes the specified variable.
+  syntax:
+    content: void GetVarDesc(int index, out IntPtr ppVarDesc)
+    content.vb: Sub GetVarDesc(index As Integer, ByRef ppVarDesc As IntPtr)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The index of the variable description to return.
+    - id: ppVarDesc
+      type: System.IntPtr
+      description: When this method returns, contains a reference to the VARDESC structure that describes the specified variable. This parameter is passed uninitialized.
+- uid: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetNames(System.Int32,System.String[],System.Int32,System.Int32@)
+  id: GetNames(System.Int32,System.String[],System.Int32,System.Int32@)
+  parent: System.Runtime.InteropServices.ComTypes.ITypeInfo2
+  href: System.Runtime.InteropServices.ComTypes.ITypeInfo2.yml
+  name: GetNames(Int32, String[], Int32, out Int32)
+  name.vb: GetNames(Int32, String(), Int32, ByRef Int32)
+  fullName: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetNames(System.Int32, System.String[], System.Int32, out System.Int32)
+  fullName.vb: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetNames(System.Int32, System.String(), System.Int32, ByRef System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo2.cs
+    startLine: 25
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Retrieves the variable with the specified member ID (or the name of the property or method and its parameters) that corresponds to the specified function ID.
+  syntax:
+    content: void GetNames(int memid, string[] rgBstrNames, int cMaxNames, out int pcNames)
+    content.vb: Sub GetNames(memid As Integer, rgBstrNames As String(), cMaxNames As Integer, ByRef pcNames As Integer)
+    parameters:
+    - id: memid
+      type: System.Int32
+      description: The ID of the member whose name (or names) is to be returned.
+    - id: rgBstrNames
+      type: System.String[]
+      description: When this method returns, contains the name (or names) associated with the member. This parameter is passed uninitialized.
+    - id: cMaxNames
+      type: System.Int32
+      description: The length of the *rgBstrNames* array.
+    - id: pcNames
+      type: System.Int32
+      description: When this method returns, contains the number of names in the *rgBstrNames* array. This parameter is passed uninitialized.
+- uid: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetRefTypeOfImplType(System.Int32,System.Int32@)
+  id: GetRefTypeOfImplType(System.Int32,System.Int32@)
+  parent: System.Runtime.InteropServices.ComTypes.ITypeInfo2
+  href: System.Runtime.InteropServices.ComTypes.ITypeInfo2.yml
+  name: GetRefTypeOfImplType(Int32, out Int32)
+  name.vb: GetRefTypeOfImplType(Int32, ByRef Int32)
+  fullName: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetRefTypeOfImplType(System.Int32, out System.Int32)
+  fullName.vb: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetRefTypeOfImplType(System.Int32, ByRef System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo2.cs
+    startLine: 26
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Retrieves the type description of the implemented interface types, if a type description describes a COM class.
+  syntax:
+    content: void GetRefTypeOfImplType(int index, out int href)
+    content.vb: Sub GetRefTypeOfImplType(index As Integer, ByRef href As Integer)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The index of the implemented type whose handle is returned.
+    - id: href
+      type: System.Int32
+      description: When this method returns, contains a reference to a handle for the implemented interface. This parameter is passed uninitialized.
+- uid: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetImplTypeFlags(System.Int32,System.Runtime.InteropServices.ComTypes.IMPLTYPEFLAGS@)
+  id: GetImplTypeFlags(System.Int32,System.Runtime.InteropServices.ComTypes.IMPLTYPEFLAGS@)
+  parent: System.Runtime.InteropServices.ComTypes.ITypeInfo2
+  href: System.Runtime.InteropServices.ComTypes.ITypeInfo2.yml
+  name: GetImplTypeFlags(Int32, out IMPLTYPEFLAGS)
+  name.vb: GetImplTypeFlags(Int32, ByRef IMPLTYPEFLAGS)
+  fullName: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetImplTypeFlags(System.Int32, out System.Runtime.InteropServices.ComTypes.IMPLTYPEFLAGS)
+  fullName.vb: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetImplTypeFlags(System.Int32, ByRef System.Runtime.InteropServices.ComTypes.IMPLTYPEFLAGS)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo2.cs
+    startLine: 27
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Retrieves the @'System.Runtime.InteropServices.IMPLTYPEFLAGS' value for one implemented interface or base interface in a type description.
+  syntax:
+    content: void GetImplTypeFlags(int index, out IMPLTYPEFLAGS pImplTypeFlags)
+    content.vb: Sub GetImplTypeFlags(index As Integer, ByRef pImplTypeFlags As IMPLTYPEFLAGS)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The index of the implemented interface or base interface.
+    - id: pImplTypeFlags
+      type: System.Runtime.InteropServices.ComTypes.IMPLTYPEFLAGS
+      description: When this method returns, contains a reference to the IMPLTYPEFLAGS enumeration. This parameter is passed uninitialized.
+- uid: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetIDsOfNames(System.String[],System.Int32,System.Int32[])
+  id: GetIDsOfNames(System.String[],System.Int32,System.Int32[])
+  parent: System.Runtime.InteropServices.ComTypes.ITypeInfo2
+  href: System.Runtime.InteropServices.ComTypes.ITypeInfo2.yml
+  name: GetIDsOfNames(String[], Int32, Int32[])
+  name.vb: GetIDsOfNames(String(), Int32, Int32())
+  fullName: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetIDsOfNames(System.String[], System.Int32, System.Int32[])
+  fullName.vb: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetIDsOfNames(System.String(), System.Int32, System.Int32())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo2.cs
+    startLine: 28
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Maps between member names and member IDs, and parameter names and parameter IDs.
+  syntax:
+    content: void GetIDsOfNames(string[] rgszNames, int cNames, int[] pMemId)
+    content.vb: Sub GetIDsOfNames(rgszNames As String(), cNames As Integer, pMemId As Integer())
+    parameters:
+    - id: rgszNames
+      type: System.String[]
+      description: An array of names to map.
+    - id: cNames
+      type: System.Int32
+      description: The count of names to map.
+    - id: pMemId
+      type: System.Int32[]
+      description: When this method returns, contains a reference to an array in which name mappings are placed. This parameter is passed uninitialized.
+- uid: System.Runtime.InteropServices.ComTypes.ITypeInfo2.Invoke(System.Object,System.Int32,System.Int16,System.Runtime.InteropServices.ComTypes.DISPPARAMS@,System.IntPtr,System.IntPtr,System.Int32@)
+  id: Invoke(System.Object,System.Int32,System.Int16,System.Runtime.InteropServices.ComTypes.DISPPARAMS@,System.IntPtr,System.IntPtr,System.Int32@)
+  parent: System.Runtime.InteropServices.ComTypes.ITypeInfo2
+  href: System.Runtime.InteropServices.ComTypes.ITypeInfo2.yml
+  name: Invoke(Object, Int32, Int16, ref DISPPARAMS, IntPtr, IntPtr, out Int32)
+  name.vb: Invoke(Object, Int32, Int16, ByRef DISPPARAMS, IntPtr, IntPtr, ByRef Int32)
+  fullName: System.Runtime.InteropServices.ComTypes.ITypeInfo2.Invoke(System.Object, System.Int32, System.Int16, ref System.Runtime.InteropServices.ComTypes.DISPPARAMS, System.IntPtr, System.IntPtr, out System.Int32)
+  fullName.vb: System.Runtime.InteropServices.ComTypes.ITypeInfo2.Invoke(System.Object, System.Int32, System.Int16, ByRef System.Runtime.InteropServices.ComTypes.DISPPARAMS, System.IntPtr, System.IntPtr, ByRef System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo2.cs
+    startLine: 29
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Invokes a method, or accesses a property of an object, that implements the interface described by the type description.
+  syntax:
+    content: void Invoke(object pvInstance, int memid, short wFlags, ref DISPPARAMS pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, out int puArgErr)
+    content.vb: Sub Invoke(pvInstance As Object, memid As Integer, wFlags As Short, ByRef pDispParams As DISPPARAMS, pVarResult As IntPtr, pExcepInfo As IntPtr, ByRef puArgErr As Integer)
+    parameters:
+    - id: pvInstance
+      type: System.Object
+      description: A reference to the interface described by this type description.
+    - id: memid
+      type: System.Int32
+      description: Identifier of the interface member.
+    - id: wFlags
+      type: System.Int16
+      description: Flags describing the context of the invoke call.
+    - id: pDispParams
+      type: System.Runtime.InteropServices.ComTypes.DISPPARAMS
+      description: A reference to a structure that contains an array of arguments, an array of DISPIDs for named arguments, and counts of the number of elements in each array.
+    - id: pVarResult
+      type: System.IntPtr
+      description: A reference to the location at which the result is to be stored. If *wFlags* specifies DISPATCH_PROPERTYPUT or DISPATCH_PROPERTYPUTREF, *pVarResult* is ignored. Set to null if no result is desired.
+    - id: pExcepInfo
+      type: System.IntPtr
+      description: A pointer to an exception information structure, which is filled in only if DISP_E_EXCEPTION is returned.
+    - id: puArgErr
+      type: System.Int32
+      description: If Invoke returns DISP_E_TYPEMISMATCH, *puArgErr* indicates the index of the argument with incorrect type. If more than one argument returns an error, *puArgErr* indicates only the first argument with an error.
+- uid: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetDocumentation(System.Int32,System.String@,System.String@,System.Int32@,System.String@)
+  id: GetDocumentation(System.Int32,System.String@,System.String@,System.Int32@,System.String@)
+  parent: System.Runtime.InteropServices.ComTypes.ITypeInfo2
+  href: System.Runtime.InteropServices.ComTypes.ITypeInfo2.yml
+  name: GetDocumentation(Int32, out String, out String, out Int32, out String)
+  name.vb: GetDocumentation(Int32, ByRef String, ByRef String, ByRef Int32, ByRef String)
+  fullName: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetDocumentation(System.Int32, out System.String, out System.String, out System.Int32, out System.String)
+  fullName.vb: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetDocumentation(System.Int32, ByRef System.String, ByRef System.String, ByRef System.Int32, ByRef System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo2.cs
+    startLine: 30
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Retrieves the documentation string, the complete Help file name and path, and the context ID for the Help topic for a specified type description.
+  syntax:
+    content: void GetDocumentation(int index, out string strName, out string strDocString, out int dwHelpContext, out string strHelpFile)
+    content.vb: Sub GetDocumentation(index As Integer, ByRef strName As String, ByRef strDocString As String, ByRef dwHelpContext As Integer, ByRef strHelpFile As String)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The ID of the member whose documentation is to be returned.
+    - id: strName
+      type: System.String
+      description: When this method returns, contains the name of the item method. This parameter is passed uninitialized.
+    - id: strDocString
+      type: System.String
+      description: When this method returns, contains the documentation string for the specified item. This parameter is passed uninitialized.
+    - id: dwHelpContext
+      type: System.Int32
+      description: When this method returns, contains a reference to the Help context associated with the specified item. This parameter is passed uninitialized.
+    - id: strHelpFile
+      type: System.String
+      description: When this method returns, contains the fully qualified name of the Help file. This parameter is passed uninitialized.
+- uid: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetDllEntry(System.Int32,System.Runtime.InteropServices.ComTypes.INVOKEKIND,System.IntPtr,System.IntPtr,System.IntPtr)
+  id: GetDllEntry(System.Int32,System.Runtime.InteropServices.ComTypes.INVOKEKIND,System.IntPtr,System.IntPtr,System.IntPtr)
+  parent: System.Runtime.InteropServices.ComTypes.ITypeInfo2
+  href: System.Runtime.InteropServices.ComTypes.ITypeInfo2.yml
+  name: GetDllEntry(Int32, INVOKEKIND, IntPtr, IntPtr, IntPtr)
+  fullName: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetDllEntry(System.Int32, System.Runtime.InteropServices.ComTypes.INVOKEKIND, System.IntPtr, System.IntPtr, System.IntPtr)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo2.cs
+    startLine: 31
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Retrieves a description or specification of an entry point for a function in a DLL.
+  syntax:
+    content: void GetDllEntry(int memid, INVOKEKIND invKind, IntPtr pBstrDllName, IntPtr pBstrName, IntPtr pwOrdinal)
+    content.vb: Sub GetDllEntry(memid As Integer, invKind As INVOKEKIND, pBstrDllName As IntPtr, pBstrName As IntPtr, pwOrdinal As IntPtr)
+    parameters:
+    - id: memid
+      type: System.Int32
+      description: The ID of the member function whose DLL entry description is to be returned.
+    - id: invKind
+      type: System.Runtime.InteropServices.ComTypes.INVOKEKIND
+      description: One of the @'System.Runtime.InteropServices.ComTypes.INVOKEKIND' values that specifies the kind of member identified by *memid*.
+    - id: pBstrDllName
+      type: System.IntPtr
+      description: If not null, the function sets *pBstrDllName* to a BSTR that contains the name of the DLL.
+    - id: pBstrName
+      type: System.IntPtr
+      description: If not null, the function sets *lpbstrName* to a BSTR that contains the name of the entry point.
+    - id: pwOrdinal
+      type: System.IntPtr
+      description: If not null, and the function is defined by an ordinal, then *lpwOrdinal* is set to point to the ordinal.
+- uid: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetRefTypeInfo(System.Int32,System.Runtime.InteropServices.ComTypes.ITypeInfo@)
+  id: GetRefTypeInfo(System.Int32,System.Runtime.InteropServices.ComTypes.ITypeInfo@)
+  parent: System.Runtime.InteropServices.ComTypes.ITypeInfo2
+  href: System.Runtime.InteropServices.ComTypes.ITypeInfo2.yml
+  name: GetRefTypeInfo(Int32, out ITypeInfo)
+  name.vb: GetRefTypeInfo(Int32, ByRef ITypeInfo)
+  fullName: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetRefTypeInfo(System.Int32, out System.Runtime.InteropServices.ComTypes.ITypeInfo)
+  fullName.vb: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetRefTypeInfo(System.Int32, ByRef System.Runtime.InteropServices.ComTypes.ITypeInfo)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo2.cs
+    startLine: 32
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Retrieves the referenced type descriptions, if a type description references other type descriptions.
+  syntax:
+    content: void GetRefTypeInfo(int hRef, out ITypeInfo ppTI)
+    content.vb: Sub GetRefTypeInfo(hRef As Integer, ByRef ppTI As ITypeInfo)
+    parameters:
+    - id: hRef
+      type: System.Int32
+      description: A handle to the referenced type description to return.
+    - id: ppTI
+      type: System.Runtime.InteropServices.ComTypes.ITypeInfo
+      description: When this method returns, contains the referenced type description. This parameter is passed uninitialized.
+- uid: System.Runtime.InteropServices.ComTypes.ITypeInfo2.AddressOfMember(System.Int32,System.Runtime.InteropServices.ComTypes.INVOKEKIND,System.IntPtr@)
+  id: AddressOfMember(System.Int32,System.Runtime.InteropServices.ComTypes.INVOKEKIND,System.IntPtr@)
+  parent: System.Runtime.InteropServices.ComTypes.ITypeInfo2
+  href: System.Runtime.InteropServices.ComTypes.ITypeInfo2.yml
+  name: AddressOfMember(Int32, INVOKEKIND, out IntPtr)
+  name.vb: AddressOfMember(Int32, INVOKEKIND, ByRef IntPtr)
+  fullName: System.Runtime.InteropServices.ComTypes.ITypeInfo2.AddressOfMember(System.Int32, System.Runtime.InteropServices.ComTypes.INVOKEKIND, out System.IntPtr)
+  fullName.vb: System.Runtime.InteropServices.ComTypes.ITypeInfo2.AddressOfMember(System.Int32, System.Runtime.InteropServices.ComTypes.INVOKEKIND, ByRef System.IntPtr)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo2.cs
+    startLine: 33
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Retrieves the addresses of static functions or variables, such as those defined in a DLL.
+  syntax:
+    content: void AddressOfMember(int memid, INVOKEKIND invKind, out IntPtr ppv)
+    content.vb: Sub AddressOfMember(memid As Integer, invKind As INVOKEKIND, ByRef ppv As IntPtr)
+    parameters:
+    - id: memid
+      type: System.Int32
+      description: The member ID of the static member's address to retrieve.
+    - id: invKind
+      type: System.Runtime.InteropServices.ComTypes.INVOKEKIND
+      description: One of the @'System.Runtime.InteropServices.ComTypes.INVOKEKIND'  values that specifies whether the member is a property, and if so, what kind.
+    - id: ppv
+      type: System.IntPtr
+      description: When this method returns, contains a reference to the static member. This parameter is passed uninitialized.
+- uid: System.Runtime.InteropServices.ComTypes.ITypeInfo2.CreateInstance(System.Object,System.Guid@,System.Object@)
+  id: CreateInstance(System.Object,System.Guid@,System.Object@)
+  parent: System.Runtime.InteropServices.ComTypes.ITypeInfo2
+  href: System.Runtime.InteropServices.ComTypes.ITypeInfo2.yml
+  name: CreateInstance(Object, ref Guid, out Object)
+  name.vb: CreateInstance(Object, ByRef Guid, ByRef Object)
+  fullName: System.Runtime.InteropServices.ComTypes.ITypeInfo2.CreateInstance(System.Object, ref System.Guid, out System.Object)
+  fullName.vb: System.Runtime.InteropServices.ComTypes.ITypeInfo2.CreateInstance(System.Object, ByRef System.Guid, ByRef System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo2.cs
+    startLine: 34
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Creates a new instance of a type that describes a component class (coclass).
+  syntax:
+    content: void CreateInstance(object pUnkOuter, ref Guid riid, out object ppvObj)
+    content.vb: Sub CreateInstance(pUnkOuter As Object, ByRef riid As Guid, ByRef ppvObj As Object)
+    parameters:
+    - id: pUnkOuter
+      type: System.Object
+      description: An object that acts as the controlling IUnknown.
+    - id: riid
+      type: System.Guid
+      description: The IID of the interface that the caller uses to communicate with the resulting object.
+    - id: ppvObj
+      type: System.Object
+      description: When this method returns, contains a reference to the created object. This parameter is passed uninitialized.
+- uid: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetMops(System.Int32,System.String@)
+  id: GetMops(System.Int32,System.String@)
+  parent: System.Runtime.InteropServices.ComTypes.ITypeInfo2
+  href: System.Runtime.InteropServices.ComTypes.ITypeInfo2.yml
+  name: GetMops(Int32, out String)
+  name.vb: GetMops(Int32, ByRef String)
+  fullName: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetMops(System.Int32, out System.String)
+  fullName.vb: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetMops(System.Int32, ByRef System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo2.cs
+    startLine: 35
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Retrieves marshaling information.
+  syntax:
+    content: void GetMops(int memid, out string pBstrMops)
+    content.vb: Sub GetMops(memid As Integer, ByRef pBstrMops As String)
+    parameters:
+    - id: memid
+      type: System.Int32
+      description: The member ID that indicates which marshaling information is needed.
+    - id: pBstrMops
+      type: System.String
+      description: When this method returns, contains a reference to the opcode string used in marshaling the fields of the structure described by the referenced type description, or returns null if there is no information to return. This parameter is passed uninitialized.
+- uid: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetContainingTypeLib(System.Runtime.InteropServices.ComTypes.ITypeLib@,System.Int32@)
+  id: GetContainingTypeLib(System.Runtime.InteropServices.ComTypes.ITypeLib@,System.Int32@)
+  parent: System.Runtime.InteropServices.ComTypes.ITypeInfo2
+  href: System.Runtime.InteropServices.ComTypes.ITypeInfo2.yml
+  name: GetContainingTypeLib(out ITypeLib, out Int32)
+  name.vb: GetContainingTypeLib(ByRef ITypeLib, ByRef Int32)
+  fullName: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetContainingTypeLib(out System.Runtime.InteropServices.ComTypes.ITypeLib, out System.Int32)
+  fullName.vb: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetContainingTypeLib(ByRef System.Runtime.InteropServices.ComTypes.ITypeLib, ByRef System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo2.cs
+    startLine: 36
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Retrieves the type library that contains this type description and its index within that type library.
+  syntax:
+    content: void GetContainingTypeLib(out ITypeLib ppTLB, out int pIndex)
+    content.vb: Sub GetContainingTypeLib(ByRef ppTLB As ITypeLib, ByRef pIndex As Integer)
+    parameters:
+    - id: ppTLB
+      type: System.Runtime.InteropServices.ComTypes.ITypeLib
+      description: When this method returns, contains a reference to the containing type library. This parameter is passed uninitialized.
+    - id: pIndex
+      type: System.Int32
+      description: When this method returns, contains a reference to the index of the type description within the containing type library. This parameter is passed uninitialized.
+- uid: System.Runtime.InteropServices.ComTypes.ITypeInfo2.ReleaseTypeAttr(System.IntPtr)
+  id: ReleaseTypeAttr(System.IntPtr)
+  parent: System.Runtime.InteropServices.ComTypes.ITypeInfo2
+  href: System.Runtime.InteropServices.ComTypes.ITypeInfo2.yml
+  name: ReleaseTypeAttr(IntPtr)
+  fullName: System.Runtime.InteropServices.ComTypes.ITypeInfo2.ReleaseTypeAttr(System.IntPtr)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo2.cs
+    startLine: 37
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Releases a @'System.Runtime.InteropServices.TYPEATTR' structure previously returned by the @'System.Runtime.InteropServices.ComTypes.ITypeInfo.GetTypeAttr(System.IntPtr@)' method.
+  syntax:
+    content: void ReleaseTypeAttr(IntPtr pTypeAttr)
+    content.vb: Sub ReleaseTypeAttr(pTypeAttr As IntPtr)
+    parameters:
+    - id: pTypeAttr
+      type: System.IntPtr
+      description: A reference to the TYPEATTR structure to release.
+- uid: System.Runtime.InteropServices.ComTypes.ITypeInfo2.ReleaseFuncDesc(System.IntPtr)
+  id: ReleaseFuncDesc(System.IntPtr)
+  parent: System.Runtime.InteropServices.ComTypes.ITypeInfo2
+  href: System.Runtime.InteropServices.ComTypes.ITypeInfo2.yml
+  name: ReleaseFuncDesc(IntPtr)
+  fullName: System.Runtime.InteropServices.ComTypes.ITypeInfo2.ReleaseFuncDesc(System.IntPtr)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo2.cs
+    startLine: 39
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Releases a @'System.Runtime.InteropServices.FUNCDESC' structure previously returned by the @'System.Runtime.InteropServices.ComTypes.ITypeInfo.GetFuncDesc(System.Int32,System.IntPtr@)' method.
+  syntax:
+    content: void ReleaseFuncDesc(IntPtr pFuncDesc)
+    content.vb: Sub ReleaseFuncDesc(pFuncDesc As IntPtr)
+    parameters:
+    - id: pFuncDesc
+      type: System.IntPtr
+      description: A reference to the FUNCDESC structure to release.
+- uid: System.Runtime.InteropServices.ComTypes.ITypeInfo2.ReleaseVarDesc(System.IntPtr)
+  id: ReleaseVarDesc(System.IntPtr)
+  parent: System.Runtime.InteropServices.ComTypes.ITypeInfo2
+  href: System.Runtime.InteropServices.ComTypes.ITypeInfo2.yml
+  name: ReleaseVarDesc(IntPtr)
+  fullName: System.Runtime.InteropServices.ComTypes.ITypeInfo2.ReleaseVarDesc(System.IntPtr)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo2.cs
+    startLine: 41
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Releases a VARDESC structure previously returned by the @'System.Runtime.InteropServices.ComTypes.ITypeInfo.GetVarDesc(System.Int32,System.IntPtr@)' method.
+  syntax:
+    content: void ReleaseVarDesc(IntPtr pVarDesc)
+    content.vb: Sub ReleaseVarDesc(pVarDesc As IntPtr)
+    parameters:
+    - id: pVarDesc
+      type: System.IntPtr
+      description: A reference to the VARDESC structure to release.
+- uid: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetTypeKind(System.Runtime.InteropServices.ComTypes.TYPEKIND@)
+  id: GetTypeKind(System.Runtime.InteropServices.ComTypes.TYPEKIND@)
+  parent: System.Runtime.InteropServices.ComTypes.ITypeInfo2
+  href: System.Runtime.InteropServices.ComTypes.ITypeInfo2.yml
+  name: GetTypeKind(out TYPEKIND)
+  name.vb: GetTypeKind(ByRef TYPEKIND)
+  fullName: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetTypeKind(out System.Runtime.InteropServices.ComTypes.TYPEKIND)
+  fullName.vb: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetTypeKind(ByRef System.Runtime.InteropServices.ComTypes.TYPEKIND)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo2.cs
+    startLine: 43
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Returns the TYPEKIND enumeration quickly, without doing any allocations.
+  syntax:
+    content: void GetTypeKind(out TYPEKIND pTypeKind)
+    content.vb: Sub GetTypeKind(ByRef pTypeKind As TYPEKIND)
+    parameters:
+    - id: pTypeKind
+      type: System.Runtime.InteropServices.ComTypes.TYPEKIND
+      description: When this method returns, contains a reference to a TYPEKIND enumeration. This parameter is passed uninitialized.
+- uid: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetTypeFlags(System.Int32@)
+  id: GetTypeFlags(System.Int32@)
+  parent: System.Runtime.InteropServices.ComTypes.ITypeInfo2
+  href: System.Runtime.InteropServices.ComTypes.ITypeInfo2.yml
+  name: GetTypeFlags(out Int32)
+  name.vb: GetTypeFlags(ByRef Int32)
+  fullName: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetTypeFlags(out System.Int32)
+  fullName.vb: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetTypeFlags(ByRef System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo2.cs
+    startLine: 44
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Returns the type flags without any allocations. This method returns a DWORD type flag, which expands the type flags without growing the TYPEATTR (type attribute).
+  syntax:
+    content: void GetTypeFlags(out int pTypeFlags)
+    content.vb: Sub GetTypeFlags(ByRef pTypeFlags As Integer)
+    parameters:
+    - id: pTypeFlags
+      type: System.Int32
+      description: When this method returns, contains a DWORD reference to a TYPEFLAG. This parameter is passed uninitialized.
+- uid: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetFuncIndexOfMemId(System.Int32,System.Runtime.InteropServices.ComTypes.INVOKEKIND,System.Int32@)
+  id: GetFuncIndexOfMemId(System.Int32,System.Runtime.InteropServices.ComTypes.INVOKEKIND,System.Int32@)
+  parent: System.Runtime.InteropServices.ComTypes.ITypeInfo2
+  href: System.Runtime.InteropServices.ComTypes.ITypeInfo2.yml
+  name: GetFuncIndexOfMemId(Int32, INVOKEKIND, out Int32)
+  name.vb: GetFuncIndexOfMemId(Int32, INVOKEKIND, ByRef Int32)
+  fullName: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetFuncIndexOfMemId(System.Int32, System.Runtime.InteropServices.ComTypes.INVOKEKIND, out System.Int32)
+  fullName.vb: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetFuncIndexOfMemId(System.Int32, System.Runtime.InteropServices.ComTypes.INVOKEKIND, ByRef System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo2.cs
+    startLine: 45
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Binds to a specific member based on a known DISPID, where the member name is not known (for example, when binding to a default member).
+  syntax:
+    content: void GetFuncIndexOfMemId(int memid, INVOKEKIND invKind, out int pFuncIndex)
+    content.vb: Sub GetFuncIndexOfMemId(memid As Integer, invKind As INVOKEKIND, ByRef pFuncIndex As Integer)
+    parameters:
+    - id: memid
+      type: System.Int32
+      description: The member identifier.
+    - id: invKind
+      type: System.Runtime.InteropServices.ComTypes.INVOKEKIND
+      description: One of the @'System.Runtime.InteropServices.ComTypes.INVOKEKIND' values that specifies the kind of member identified by memid.
+    - id: pFuncIndex
+      type: System.Int32
+      description: When this method returns, contains an index into the function. This parameter is passed uninitialized.
+- uid: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetVarIndexOfMemId(System.Int32,System.Int32@)
+  id: GetVarIndexOfMemId(System.Int32,System.Int32@)
+  parent: System.Runtime.InteropServices.ComTypes.ITypeInfo2
+  href: System.Runtime.InteropServices.ComTypes.ITypeInfo2.yml
+  name: GetVarIndexOfMemId(Int32, out Int32)
+  name.vb: GetVarIndexOfMemId(Int32, ByRef Int32)
+  fullName: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetVarIndexOfMemId(System.Int32, out System.Int32)
+  fullName.vb: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetVarIndexOfMemId(System.Int32, ByRef System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo2.cs
+    startLine: 46
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Binds to a specific member based on a known DISPID, where the member name is not known (for example, when binding to a default member).
+  syntax:
+    content: void GetVarIndexOfMemId(int memid, out int pVarIndex)
+    content.vb: Sub GetVarIndexOfMemId(memid As Integer, ByRef pVarIndex As Integer)
+    parameters:
+    - id: memid
+      type: System.Int32
+      description: The member identifier.
+    - id: pVarIndex
+      type: System.Int32
+      description: When this method returns, contains an index of *memid*. This parameter is passed uninitialized.
+- uid: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetCustData(System.Guid@,System.Object@)
+  id: GetCustData(System.Guid@,System.Object@)
+  parent: System.Runtime.InteropServices.ComTypes.ITypeInfo2
+  href: System.Runtime.InteropServices.ComTypes.ITypeInfo2.yml
+  name: GetCustData(ref Guid, out Object)
+  name.vb: GetCustData(ByRef Guid, ByRef Object)
+  fullName: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetCustData(ref System.Guid, out System.Object)
+  fullName.vb: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetCustData(ByRef System.Guid, ByRef System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo2.cs
+    startLine: 47
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Gets the custom data.
+  syntax:
+    content: void GetCustData(ref Guid guid, out object pVarVal)
+    content.vb: Sub GetCustData(ByRef guid As Guid, ByRef pVarVal As Object)
+    parameters:
+    - id: guid
+      type: System.Guid
+      description: The GUID used to identify the data.
+    - id: pVarVal
+      type: System.Object
+      description: When this method returns, contains an Object that specifies where to put the retrieved data. This parameter is passed uninitialized.
+- uid: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetFuncCustData(System.Int32,System.Guid@,System.Object@)
+  id: GetFuncCustData(System.Int32,System.Guid@,System.Object@)
+  parent: System.Runtime.InteropServices.ComTypes.ITypeInfo2
+  href: System.Runtime.InteropServices.ComTypes.ITypeInfo2.yml
+  name: GetFuncCustData(Int32, ref Guid, out Object)
+  name.vb: GetFuncCustData(Int32, ByRef Guid, ByRef Object)
+  fullName: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetFuncCustData(System.Int32, ref System.Guid, out System.Object)
+  fullName.vb: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetFuncCustData(System.Int32, ByRef System.Guid, ByRef System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo2.cs
+    startLine: 48
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Gets the custom data from the specified function.
+  syntax:
+    content: void GetFuncCustData(int index, ref Guid guid, out object pVarVal)
+    content.vb: Sub GetFuncCustData(index As Integer, ByRef guid As Guid, ByRef pVarVal As Object)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The index of the function to get the custom data for.
+    - id: guid
+      type: System.Guid
+      description: The GUID used to identify the data.
+    - id: pVarVal
+      type: System.Object
+      description: When this method returns, contains an Object that specified where to put the data. This parameter is passed uninitialized.
+- uid: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetParamCustData(System.Int32,System.Int32,System.Guid@,System.Object@)
+  id: GetParamCustData(System.Int32,System.Int32,System.Guid@,System.Object@)
+  parent: System.Runtime.InteropServices.ComTypes.ITypeInfo2
+  href: System.Runtime.InteropServices.ComTypes.ITypeInfo2.yml
+  name: GetParamCustData(Int32, Int32, ref Guid, out Object)
+  name.vb: GetParamCustData(Int32, Int32, ByRef Guid, ByRef Object)
+  fullName: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetParamCustData(System.Int32, System.Int32, ref System.Guid, out System.Object)
+  fullName.vb: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetParamCustData(System.Int32, System.Int32, ByRef System.Guid, ByRef System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo2.cs
+    startLine: 49
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Gets the specified custom data parameter.
+  syntax:
+    content: void GetParamCustData(int indexFunc, int indexParam, ref Guid guid, out object pVarVal)
+    content.vb: Sub GetParamCustData(indexFunc As Integer, indexParam As Integer, ByRef guid As Guid, ByRef pVarVal As Object)
+    parameters:
+    - id: indexFunc
+      type: System.Int32
+      description: The index of the function to get the custom data for.
+    - id: indexParam
+      type: System.Int32
+      description: The index of the parameter of this function to get the custom data for.
+    - id: guid
+      type: System.Guid
+      description: The GUID used to identify the data.
+    - id: pVarVal
+      type: System.Object
+      description: When this method returns, contains an Object that specifies where to put the retrieved data. This parameter is passed uninitialized.
+- uid: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetVarCustData(System.Int32,System.Guid@,System.Object@)
+  id: GetVarCustData(System.Int32,System.Guid@,System.Object@)
+  parent: System.Runtime.InteropServices.ComTypes.ITypeInfo2
+  href: System.Runtime.InteropServices.ComTypes.ITypeInfo2.yml
+  name: GetVarCustData(Int32, ref Guid, out Object)
+  name.vb: GetVarCustData(Int32, ByRef Guid, ByRef Object)
+  fullName: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetVarCustData(System.Int32, ref System.Guid, out System.Object)
+  fullName.vb: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetVarCustData(System.Int32, ByRef System.Guid, ByRef System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo2.cs
+    startLine: 50
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Gets the variable for the custom data.
+  syntax:
+    content: void GetVarCustData(int index, ref Guid guid, out object pVarVal)
+    content.vb: Sub GetVarCustData(index As Integer, ByRef guid As Guid, ByRef pVarVal As Object)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The index of the variable to get the custom data for.
+    - id: guid
+      type: System.Guid
+      description: The GUID used to identify the data.
+    - id: pVarVal
+      type: System.Object
+      description: When this method returns, contains an Object that specifies where to put the retrieved data. This parameter is passed uninitialized.
+- uid: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetImplTypeCustData(System.Int32,System.Guid@,System.Object@)
+  id: GetImplTypeCustData(System.Int32,System.Guid@,System.Object@)
+  parent: System.Runtime.InteropServices.ComTypes.ITypeInfo2
+  href: System.Runtime.InteropServices.ComTypes.ITypeInfo2.yml
+  name: GetImplTypeCustData(Int32, ref Guid, out Object)
+  name.vb: GetImplTypeCustData(Int32, ByRef Guid, ByRef Object)
+  fullName: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetImplTypeCustData(System.Int32, ref System.Guid, out System.Object)
+  fullName.vb: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetImplTypeCustData(System.Int32, ByRef System.Guid, ByRef System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo2.cs
+    startLine: 51
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Gets the implementation type of the custom data.
+  syntax:
+    content: void GetImplTypeCustData(int index, ref Guid guid, out object pVarVal)
+    content.vb: Sub GetImplTypeCustData(index As Integer, ByRef guid As Guid, ByRef pVarVal As Object)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The index of the implementation type for the custom data.
+    - id: guid
+      type: System.Guid
+      description: The GUID used to identify the data.
+    - id: pVarVal
+      type: System.Object
+      description: When this method returns, contains an Object that specifies where to put the retrieved data. This parameter is passed uninitialized.
+- uid: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetDocumentation2(System.Int32,System.String@,System.Int32@,System.String@)
+  id: GetDocumentation2(System.Int32,System.String@,System.Int32@,System.String@)
+  parent: System.Runtime.InteropServices.ComTypes.ITypeInfo2
+  href: System.Runtime.InteropServices.ComTypes.ITypeInfo2.yml
+  name: GetDocumentation2(Int32, out String, out Int32, out String)
+  name.vb: GetDocumentation2(Int32, ByRef String, ByRef Int32, ByRef String)
+  fullName: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetDocumentation2(System.Int32, out System.String, out System.Int32, out System.String)
+  fullName.vb: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetDocumentation2(System.Int32, ByRef System.String, ByRef System.Int32, ByRef System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo2.cs
+    startLine: 52
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Retrieves the documentation string, the complete Help file name and path, the localization context to use, and the context ID for the library Help topic in the Help file.
+  syntax:
+    content: void GetDocumentation2(int memid, out string pbstrHelpString, out int pdwHelpStringContext, out string pbstrHelpStringDll)
+    content.vb: Sub GetDocumentation2(memid As Integer, ByRef pbstrHelpString As String, ByRef pdwHelpStringContext As Integer, ByRef pbstrHelpStringDll As String)
+    parameters:
+    - id: memid
+      type: System.Int32
+      description: The member identifier for the type description.
+    - id: pbstrHelpString
+      type: System.String
+      description: When this method returns, contains a BSTR that contains the name of the specified item. If the caller does not need the item name, *pbstrHelpString* can be null. This parameter is passed uninitialized.
+    - id: pdwHelpStringContext
+      type: System.Int32
+      description: When this method returns, contains the Help localization context. If the caller does not need the Help context, *pdwHelpStringContext* can be null. This parameter is passed uninitialized.
+    - id: pbstrHelpStringDll
+      type: System.String
+      description: When this method returns, contains a BSTR that contains the fully qualified name of the file containing the DLL used for the Help file. If the caller does not need the file name, *pbstrHelpStringDll* can be null. This parameter is passed uninitialized.
+- uid: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetAllCustData(System.IntPtr)
+  id: GetAllCustData(System.IntPtr)
+  parent: System.Runtime.InteropServices.ComTypes.ITypeInfo2
+  href: System.Runtime.InteropServices.ComTypes.ITypeInfo2.yml
+  name: GetAllCustData(IntPtr)
+  fullName: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetAllCustData(System.IntPtr)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo2.cs
+    startLine: 54
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Gets all custom data items for the library.
+  syntax:
+    content: void GetAllCustData(IntPtr pCustData)
+    content.vb: Sub GetAllCustData(pCustData As IntPtr)
+    parameters:
+    - id: pCustData
+      type: System.IntPtr
+      description: A pointer to CUSTDATA, which holds all custom data items.
+- uid: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetAllFuncCustData(System.Int32,System.IntPtr)
+  id: GetAllFuncCustData(System.Int32,System.IntPtr)
+  parent: System.Runtime.InteropServices.ComTypes.ITypeInfo2
+  href: System.Runtime.InteropServices.ComTypes.ITypeInfo2.yml
+  name: GetAllFuncCustData(Int32, IntPtr)
+  fullName: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetAllFuncCustData(System.Int32, System.IntPtr)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo2.cs
+    startLine: 55
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Gets all custom data from the specified function.
+  syntax:
+    content: void GetAllFuncCustData(int index, IntPtr pCustData)
+    content.vb: Sub GetAllFuncCustData(index As Integer, pCustData As IntPtr)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The index of the function to get the custom data for.
+    - id: pCustData
+      type: System.IntPtr
+      description: A pointer to CUSTDATA, which holds all custom data items.
+- uid: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetAllParamCustData(System.Int32,System.Int32,System.IntPtr)
+  id: GetAllParamCustData(System.Int32,System.Int32,System.IntPtr)
+  parent: System.Runtime.InteropServices.ComTypes.ITypeInfo2
+  href: System.Runtime.InteropServices.ComTypes.ITypeInfo2.yml
+  name: GetAllParamCustData(Int32, Int32, IntPtr)
+  fullName: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetAllParamCustData(System.Int32, System.Int32, System.IntPtr)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo2.cs
+    startLine: 56
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Gets all of the custom data for the specified function parameter.
+  syntax:
+    content: void GetAllParamCustData(int indexFunc, int indexParam, IntPtr pCustData)
+    content.vb: Sub GetAllParamCustData(indexFunc As Integer, indexParam As Integer, pCustData As IntPtr)
+    parameters:
+    - id: indexFunc
+      type: System.Int32
+      description: The index of the function to get the custom data for.
+    - id: indexParam
+      type: System.Int32
+      description: The index of the parameter of this function to get the custom data for.
+    - id: pCustData
+      type: System.IntPtr
+      description: A pointer to CUSTDATA, which holds all custom data items.
+- uid: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetAllVarCustData(System.Int32,System.IntPtr)
+  id: GetAllVarCustData(System.Int32,System.IntPtr)
+  parent: System.Runtime.InteropServices.ComTypes.ITypeInfo2
+  href: System.Runtime.InteropServices.ComTypes.ITypeInfo2.yml
+  name: GetAllVarCustData(Int32, IntPtr)
+  fullName: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetAllVarCustData(System.Int32, System.IntPtr)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo2.cs
+    startLine: 57
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Gets the variable for the custom data.
+  syntax:
+    content: void GetAllVarCustData(int index, IntPtr pCustData)
+    content.vb: Sub GetAllVarCustData(index As Integer, pCustData As IntPtr)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The index of the variable to get the custom data for.
+    - id: pCustData
+      type: System.IntPtr
+      description: A pointer to CUSTDATA, which holds all custom data items.
+- uid: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetAllImplTypeCustData(System.Int32,System.IntPtr)
+  id: GetAllImplTypeCustData(System.Int32,System.IntPtr)
+  parent: System.Runtime.InteropServices.ComTypes.ITypeInfo2
+  href: System.Runtime.InteropServices.ComTypes.ITypeInfo2.yml
+  name: GetAllImplTypeCustData(Int32, IntPtr)
+  fullName: System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetAllImplTypeCustData(System.Int32, System.IntPtr)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo2.cs
+    startLine: 58
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Gets all custom data for the specified implementation type.
+  syntax:
+    content: void GetAllImplTypeCustData(int index, IntPtr pCustData)
+    content.vb: Sub GetAllImplTypeCustData(index As Integer, pCustData As IntPtr)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The index of the implementation type for the custom data.
+    - id: pCustData
+      type: System.IntPtr
+      description: A pointer to CUSTDATA which holds all custom data items.
+references:
+- uid: System.Runtime.InteropServices.ComTypes
+  isExternal: false
+  name: System.Runtime.InteropServices.ComTypes
+  fullName: System.Runtime.InteropServices.ComTypes
+  type: Namespace
+- uid: System.IntPtr
+  parent: System
+  isExternal: true
+  name: IntPtr
+  fullName: System.IntPtr
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Runtime.InteropServices.ComTypes.ITypeComp
+  parent: System.Runtime.InteropServices.ComTypes
+  isExternal: false
+  href: System.Runtime.InteropServices.ComTypes.ITypeComp.yml
+  name: ITypeComp
+  fullName: System.Runtime.InteropServices.ComTypes.ITypeComp
+  type: Interface
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  name.vb: String()
+  fullName: System.String[]
+  fullName.vb: System.String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Runtime.InteropServices.ComTypes.IMPLTYPEFLAGS
+  parent: System.Runtime.InteropServices.ComTypes
+  isExternal: false
+  href: System.Runtime.InteropServices.ComTypes.IMPLTYPEFLAGS.yml
+  name: IMPLTYPEFLAGS
+  fullName: System.Runtime.InteropServices.ComTypes.IMPLTYPEFLAGS
+  type: Enum
+- uid: System.Int32[]
+  isExternal: true
+  name: Int32[]
+  name.vb: Int32()
+  fullName: System.Int32[]
+  fullName.vb: System.Int32()
+  spec.csharp:
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Int16
+  parent: System
+  isExternal: true
+  name: Int16
+  fullName: System.Int16
+- uid: System.Runtime.InteropServices.ComTypes.DISPPARAMS
+  isExternal: false
+  href: System.Runtime.InteropServices.ComTypes.DISPPARAMS.yml
+  name: DISPPARAMS
+  fullName: System.Runtime.InteropServices.ComTypes.DISPPARAMS
+  type: Struct
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Runtime.InteropServices.ComTypes.INVOKEKIND
+  parent: System.Runtime.InteropServices.ComTypes
+  isExternal: false
+  href: System.Runtime.InteropServices.ComTypes.INVOKEKIND.yml
+  name: INVOKEKIND
+  fullName: System.Runtime.InteropServices.ComTypes.INVOKEKIND
+  type: Enum
+- uid: System.Runtime.InteropServices.ComTypes.ITypeInfo
+  parent: System.Runtime.InteropServices.ComTypes
+  isExternal: false
+  href: System.Runtime.InteropServices.ComTypes.ITypeInfo.yml
+  name: ITypeInfo
+  fullName: System.Runtime.InteropServices.ComTypes.ITypeInfo
+  type: Interface
+- uid: System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  fullName: System.Guid
+- uid: System.Runtime.InteropServices.ComTypes.ITypeLib
+  parent: System.Runtime.InteropServices.ComTypes
+  isExternal: false
+  href: System.Runtime.InteropServices.ComTypes.ITypeLib.yml
+  name: ITypeLib
+  fullName: System.Runtime.InteropServices.ComTypes.ITypeLib
+  type: Interface
+- uid: System.Runtime.InteropServices.ComTypes.TYPEKIND
+  parent: System.Runtime.InteropServices.ComTypes
+  isExternal: false
+  href: System.Runtime.InteropServices.ComTypes.TYPEKIND.yml
+  name: TYPEKIND
+  fullName: System.Runtime.InteropServices.ComTypes.TYPEKIND
+  type: Enum

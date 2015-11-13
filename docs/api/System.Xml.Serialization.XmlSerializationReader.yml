@@ -1,0 +1,1745 @@
+items:
+- uid: System.Xml.Serialization.XmlSerializationReader
+  id: XmlSerializationReader
+  parent: System.Xml.Serialization
+  children:
+  - System.Xml.Serialization.XmlSerializationReader.CheckReaderCount(System.Int32@,System.Int32@)
+  - System.Xml.Serialization.XmlSerializationReader.CollapseWhitespace(System.String)
+  - System.Xml.Serialization.XmlSerializationReader.CreateAbstractTypeException(System.String,System.String)
+  - System.Xml.Serialization.XmlSerializationReader.CreateBadDerivationException(System.String,System.String,System.String,System.String,System.String,System.String)
+  - System.Xml.Serialization.XmlSerializationReader.CreateCtorHasSecurityException(System.String)
+  - System.Xml.Serialization.XmlSerializationReader.CreateInaccessibleConstructorException(System.String)
+  - System.Xml.Serialization.XmlSerializationReader.CreateInvalidCastException(System.Type,System.Object)
+  - System.Xml.Serialization.XmlSerializationReader.CreateInvalidCastException(System.Type,System.Object,System.String)
+  - System.Xml.Serialization.XmlSerializationReader.CreateMissingIXmlSerializableType(System.String,System.String,System.String)
+  - System.Xml.Serialization.XmlSerializationReader.CreateReadOnlyCollectionException(System.String)
+  - System.Xml.Serialization.XmlSerializationReader.CreateUnknownConstantException(System.String,System.Type)
+  - System.Xml.Serialization.XmlSerializationReader.CreateUnknownNodeException
+  - System.Xml.Serialization.XmlSerializationReader.CreateUnknownTypeException(XmlQualifiedName)
+  - System.Xml.Serialization.XmlSerializationReader.DecodeName
+  - System.Xml.Serialization.XmlSerializationReader.Document
+  - System.Xml.Serialization.XmlSerializationReader.EnsureArrayIndex(System.Array,System.Int32,System.Type)
+  - System.Xml.Serialization.XmlSerializationReader.GetNullAttr
+  - System.Xml.Serialization.XmlSerializationReader.GetXsiType
+  - System.Xml.Serialization.XmlSerializationReader.InitCallbacks
+  - System.Xml.Serialization.XmlSerializationReader.InitIDs
+  - System.Xml.Serialization.XmlSerializationReader.IsReturnValue
+  - System.Xml.Serialization.XmlSerializationReader.IsXmlnsAttribute(System.String)
+  - System.Xml.Serialization.XmlSerializationReader.ParseWsdlArrayType(XmlAttribute)
+  - System.Xml.Serialization.XmlSerializationReader.ReadElementQualifiedName
+  - System.Xml.Serialization.XmlSerializationReader.ReadEndElement
+  - System.Xml.Serialization.XmlSerializationReader.Reader
+  - System.Xml.Serialization.XmlSerializationReader.ReaderCount
+  - System.Xml.Serialization.XmlSerializationReader.ReadNull
+  - System.Xml.Serialization.XmlSerializationReader.ReadNullableQualifiedName
+  - System.Xml.Serialization.XmlSerializationReader.ReadNullableString
+  - System.Xml.Serialization.XmlSerializationReader.ReadSerializable(IXmlSerializable)
+  - System.Xml.Serialization.XmlSerializationReader.ReadSerializable(IXmlSerializable,System.Boolean)
+  - System.Xml.Serialization.XmlSerializationReader.ReadString
+  - System.Xml.Serialization.XmlSerializationReader.ReadString(System.String)
+  - System.Xml.Serialization.XmlSerializationReader.ReadString(System.String,System.Boolean)
+  - System.Xml.Serialization.XmlSerializationReader.ReadTypedNull(XmlQualifiedName)
+  - System.Xml.Serialization.XmlSerializationReader.ReadTypedPrimitive(XmlQualifiedName)
+  - System.Xml.Serialization.XmlSerializationReader.ReadXmlDocument(System.Boolean)
+  - System.Xml.Serialization.XmlSerializationReader.ReadXmlNode(System.Boolean)
+  - System.Xml.Serialization.XmlSerializationReader.ShrinkArray(System.Array,System.Int32,System.Type,System.Boolean)
+  - System.Xml.Serialization.XmlSerializationReader.ToByteArrayBase64(System.Boolean)
+  - System.Xml.Serialization.XmlSerializationReader.ToByteArrayBase64(System.String)
+  - System.Xml.Serialization.XmlSerializationReader.ToByteArrayHex(System.Boolean)
+  - System.Xml.Serialization.XmlSerializationReader.ToByteArrayHex(System.String)
+  - System.Xml.Serialization.XmlSerializationReader.ToChar(System.String)
+  - System.Xml.Serialization.XmlSerializationReader.ToDate(System.String)
+  - System.Xml.Serialization.XmlSerializationReader.ToDateTime(System.String)
+  - System.Xml.Serialization.XmlSerializationReader.ToEnum(System.String,System.Collections.IDictionary,System.String)
+  - System.Xml.Serialization.XmlSerializationReader.ToTime(System.String)
+  - System.Xml.Serialization.XmlSerializationReader.ToXmlName(System.String)
+  - System.Xml.Serialization.XmlSerializationReader.ToXmlNCName(System.String)
+  - System.Xml.Serialization.XmlSerializationReader.ToXmlNmToken(System.String)
+  - System.Xml.Serialization.XmlSerializationReader.ToXmlNmTokens(System.String)
+  - System.Xml.Serialization.XmlSerializationReader.ToXmlQualifiedName(System.String)
+  - System.Xml.Serialization.XmlSerializationReader.UnknownNode(System.Object)
+  - System.Xml.Serialization.XmlSerializationReader.UnknownNode(System.Object,System.String)
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: XmlSerializationReader
+  fullName: System.Xml.Serialization.XmlSerializationReader
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 32
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Controls deserialization by the @'System.Xml.Serialization.XmlSerializer' class.
+  syntax:
+    content: 'public abstract class XmlSerializationReader : XmlSerializationGeneratedCode'
+    content.vb: Public MustInherit Class XmlSerializationReader Inherits XmlSerializationGeneratedCode
+  inheritance:
+  - System.Object
+  - System.Xml.Serialization.XmlSerializationGeneratedCode
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Xml.Serialization.XmlSerializationReader.InitIDs
+  id: InitIDs
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: InitIDs()
+  fullName: System.Xml.Serialization.XmlSerializationReader.InitIDs()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 116
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Stores element and attribute names in a @'System.Xml.NameTable' object.
+  syntax:
+    content: protected abstract void InitIDs()
+    content.vb: Protected MustOverride Sub InitIDs
+- uid: System.Xml.Serialization.XmlSerializationReader.DecodeName
+  id: DecodeName
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: DecodeName
+  fullName: System.Xml.Serialization.XmlSerializationReader.DecodeName
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 156
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Gets or sets a value that determines whether XML strings are translated into valid .NET Framework type names.
+  syntax:
+    content: protected bool DecodeName { get; set; }
+    content.vb: Protected Property DecodeName As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Xml.Serialization.XmlSerializationReader.Reader
+  id: Reader
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: Reader
+  fullName: System.Xml.Serialization.XmlSerializationReader.Reader
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 169
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Gets the @'System.Xml.XmlReader' object that is being used by @'System.Xml.Serialization.XmlSerializationReader'.
+  syntax:
+    content: protected XmlReader Reader { get; }
+    content.vb: Protected ReadOnly Property Reader As XmlReader
+    parameters: []
+    return:
+      type: XmlReader
+- uid: System.Xml.Serialization.XmlSerializationReader.Document
+  id: Document
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: Document
+  fullName: System.Xml.Serialization.XmlSerializationReader.Document
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 178
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Gets the XML document object into which the XML document is being deserialized.
+  syntax:
+    content: protected XmlDocument Document { get; }
+    content.vb: Protected ReadOnly Property Document As XmlDocument
+    parameters: []
+    return:
+      type: XmlDocument
+- uid: System.Xml.Serialization.XmlSerializationReader.ReaderCount
+  id: ReaderCount
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: ReaderCount
+  fullName: System.Xml.Serialization.XmlSerializationReader.ReaderCount
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 191
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Gets the current count of the @'System.Xml.XmlReader'.
+  syntax:
+    content: protected int ReaderCount { get; }
+    content.vb: Protected ReadOnly Property ReaderCount As Integer
+    parameters: []
+    return:
+      type: System.Int32
+- uid: System.Xml.Serialization.XmlSerializationReader.GetXsiType
+  id: GetXsiType
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: GetXsiType()
+  fullName: System.Xml.Serialization.XmlSerializationReader.GetXsiType()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 261
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Gets the value of the xsi:type attribute for the XML element at the current location of the @'System.Xml.XmlReader'.
+  syntax:
+    content: protected XmlQualifiedName GetXsiType()
+    content.vb: Protected Function GetXsiType As XmlQualifiedName
+    return:
+      type: XmlQualifiedName
+- uid: System.Xml.Serialization.XmlSerializationReader.ReadTypedPrimitive(XmlQualifiedName)
+  id: ReadTypedPrimitive(XmlQualifiedName)
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: ReadTypedPrimitive(XmlQualifiedName)
+  fullName: System.Xml.Serialization.XmlSerializationReader.ReadTypedPrimitive(XmlQualifiedName)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 378
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: protected object ReadTypedPrimitive(XmlQualifiedName type)
+    content.vb: Protected Function ReadTypedPrimitive(type As XmlQualifiedName) As Object
+    parameters:
+    - id: type
+      type: XmlQualifiedName
+    return:
+      type: System.Object
+- uid: System.Xml.Serialization.XmlSerializationReader.ReadTypedNull(XmlQualifiedName)
+  id: ReadTypedNull(XmlQualifiedName)
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: ReadTypedNull(XmlQualifiedName)
+  fullName: System.Xml.Serialization.XmlSerializationReader.ReadTypedNull(XmlQualifiedName)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 542
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: protected object ReadTypedNull(XmlQualifiedName type)
+    content.vb: Protected Function ReadTypedNull(type As XmlQualifiedName) As Object
+    parameters:
+    - id: type
+      type: XmlQualifiedName
+    return:
+      type: System.Object
+- uid: System.Xml.Serialization.XmlSerializationReader.IsXmlnsAttribute(System.String)
+  id: IsXmlnsAttribute(System.String)
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: IsXmlnsAttribute(String)
+  fullName: System.Xml.Serialization.XmlSerializationReader.IsXmlnsAttribute(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 638
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Determines whether an XML attribute name indicates an XML namespace.
+  syntax:
+    content: protected bool IsXmlnsAttribute(string name)
+    content.vb: Protected Function IsXmlnsAttribute(name As String) As Boolean
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of an XML attribute.
+    return:
+      type: System.Boolean
+- uid: System.Xml.Serialization.XmlSerializationReader.ParseWsdlArrayType(XmlAttribute)
+  id: ParseWsdlArrayType(XmlAttribute)
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: ParseWsdlArrayType(XmlAttribute)
+  fullName: System.Xml.Serialization.XmlSerializationReader.ParseWsdlArrayType(XmlAttribute)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 646
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: protected void ParseWsdlArrayType(XmlAttribute attr)
+    content.vb: Protected Sub ParseWsdlArrayType(attr As XmlAttribute)
+    parameters:
+    - id: attr
+      type: XmlAttribute
+- uid: System.Xml.Serialization.XmlSerializationReader.IsReturnValue
+  id: IsReturnValue
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: IsReturnValue
+  fullName: System.Xml.Serialization.XmlSerializationReader.IsReturnValue
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 665
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Gets or sets a value that should be true for a SOAP 1.1 return value.
+  syntax:
+    content: protected bool IsReturnValue { get; set; }
+    content.vb: Protected Property IsReturnValue As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Xml.Serialization.XmlSerializationReader.ReadNull
+  id: ReadNull
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: ReadNull()
+  fullName: System.Xml.Serialization.XmlSerializationReader.ReadNull()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 673
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Instructs the @'System.Xml.XmlReader' to read the current XML element if the element has a null attribute with the value true.
+  syntax:
+    content: protected bool ReadNull()
+    content.vb: Protected Function ReadNull As Boolean
+    return:
+      type: System.Boolean
+- uid: System.Xml.Serialization.XmlSerializationReader.GetNullAttr
+  id: GetNullAttr
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: GetNullAttr()
+  fullName: System.Xml.Serialization.XmlSerializationReader.GetNullAttr()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 694
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Determines whether the XML element where the @'System.Xml.XmlReader' is currently positioned has a null attribute set to the value true.
+  syntax:
+    content: protected bool GetNullAttr()
+    content.vb: Protected Function GetNullAttr As Boolean
+    return:
+      type: System.Boolean
+- uid: System.Xml.Serialization.XmlSerializationReader.ReadNullableString
+  id: ReadNullableString
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: ReadNullableString()
+  fullName: System.Xml.Serialization.XmlSerializationReader.ReadNullableString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 710
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Instructs the @'System.Xml.XmlReader' to read a simple, text-only XML element that could be null.
+  syntax:
+    content: protected string ReadNullableString()
+    content.vb: Protected Function ReadNullableString As String
+    return:
+      type: System.String
+- uid: System.Xml.Serialization.XmlSerializationReader.ReadNullableQualifiedName
+  id: ReadNullableQualifiedName
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: ReadNullableQualifiedName()
+  fullName: System.Xml.Serialization.XmlSerializationReader.ReadNullableQualifiedName()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 720
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Instructs the @'System.Xml.XmlReader' to read the fully qualified name of the element where it is currently positioned.
+  syntax:
+    content: protected XmlQualifiedName ReadNullableQualifiedName()
+    content.vb: Protected Function ReadNullableQualifiedName As XmlQualifiedName
+    return:
+      type: XmlQualifiedName
+- uid: System.Xml.Serialization.XmlSerializationReader.ReadElementQualifiedName
+  id: ReadElementQualifiedName
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: ReadElementQualifiedName()
+  fullName: System.Xml.Serialization.XmlSerializationReader.ReadElementQualifiedName()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 730
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Makes the @'System.Xml.XmlReader' read the fully qualified name of the element where it is currently positioned.
+  syntax:
+    content: protected XmlQualifiedName ReadElementQualifiedName()
+    content.vb: Protected Function ReadElementQualifiedName As XmlQualifiedName
+    return:
+      type: XmlQualifiedName
+- uid: System.Xml.Serialization.XmlSerializationReader.ReadXmlDocument(System.Boolean)
+  id: ReadXmlDocument(System.Boolean)
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: ReadXmlDocument(Boolean)
+  fullName: System.Xml.Serialization.XmlSerializationReader.ReadXmlDocument(System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 743
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Instructs the @'System.Xml.XmlReader' to read an XML document root element at its current position.
+  syntax:
+    content: protected XmlDocument ReadXmlDocument(bool wrapped)
+    content.vb: Protected Function ReadXmlDocument(wrapped As Boolean) As XmlDocument
+    parameters:
+    - id: wrapped
+      type: System.Boolean
+      description: true if the method should read content only after reading the element's start element; otherwise, false.
+    return:
+      type: XmlDocument
+- uid: System.Xml.Serialization.XmlSerializationReader.CollapseWhitespace(System.String)
+  id: CollapseWhitespace(System.String)
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: CollapseWhitespace(String)
+  fullName: System.Xml.Serialization.XmlSerializationReader.CollapseWhitespace(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 754
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Removes all occurrences of white space characters from the beginning and end of the specified string.
+  syntax:
+    content: protected string CollapseWhitespace(string value)
+    content.vb: Protected Function CollapseWhitespace(value As String) As String
+    parameters:
+    - id: value
+      type: System.String
+      description: The string that will have its white space trimmed.
+    return:
+      type: System.String
+- uid: System.Xml.Serialization.XmlSerializationReader.ReadXmlNode(System.Boolean)
+  id: ReadXmlNode(System.Boolean)
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: ReadXmlNode(Boolean)
+  fullName: System.Xml.Serialization.XmlSerializationReader.ReadXmlNode(System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 761
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Instructs the @'System.Xml.XmlReader' to read the XML node at its current position.
+  syntax:
+    content: protected XmlNode ReadXmlNode(bool wrapped)
+    content.vb: Protected Function ReadXmlNode(wrapped As Boolean) As XmlNode
+    parameters:
+    - id: wrapped
+      type: System.Boolean
+      description: true to read content only after reading the element's start element; otherwise, false.
+    return:
+      type: XmlNode
+- uid: System.Xml.Serialization.XmlSerializationReader.ToByteArrayBase64(System.String)
+  id: ToByteArrayBase64(System.String)
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: ToByteArrayBase64(String)
+  fullName: System.Xml.Serialization.XmlSerializationReader.ToByteArrayBase64(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 788
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Produces a base-64 byte array from an input string.
+  syntax:
+    content: protected static byte[] ToByteArrayBase64(string value)
+    content.vb: Protected Shared Function ToByteArrayBase64(value As String) As Byte()
+    parameters:
+    - id: value
+      type: System.String
+      description: A string to translate into a base-64 byte array.
+    return:
+      type: System.Byte[]
+- uid: System.Xml.Serialization.XmlSerializationReader.ToByteArrayBase64(System.Boolean)
+  id: ToByteArrayBase64(System.Boolean)
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: ToByteArrayBase64(Boolean)
+  fullName: System.Xml.Serialization.XmlSerializationReader.ToByteArrayBase64(System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 794
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Instructs the @'System.Xml.XmlReader' to read the string value at its current position and return it as a base-64 byte array.
+  syntax:
+    content: protected byte[] ToByteArrayBase64(bool isNull)
+    content.vb: Protected Function ToByteArrayBase64(isNull As Boolean) As Byte()
+    parameters:
+    - id: isNull
+      type: System.Boolean
+      description: true to return null; false to return a base-64 byte array.
+    return:
+      type: System.Byte[]
+- uid: System.Xml.Serialization.XmlSerializationReader.ToByteArrayHex(System.String)
+  id: ToByteArrayHex(System.String)
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: ToByteArrayHex(String)
+  fullName: System.Xml.Serialization.XmlSerializationReader.ToByteArrayHex(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 804
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Produces a hexadecimal byte array from an input string.
+  syntax:
+    content: protected static byte[] ToByteArrayHex(string value)
+    content.vb: Protected Shared Function ToByteArrayHex(value As String) As Byte()
+    parameters:
+    - id: value
+      type: System.String
+      description: A string to translate into a hexadecimal byte array.
+    return:
+      type: System.Byte[]
+- uid: System.Xml.Serialization.XmlSerializationReader.ToByteArrayHex(System.Boolean)
+  id: ToByteArrayHex(System.Boolean)
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: ToByteArrayHex(Boolean)
+  fullName: System.Xml.Serialization.XmlSerializationReader.ToByteArrayHex(System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 810
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Instructs the @'System.Xml.XmlReader' to read the string value at its current position and return it as a hexadecimal byte array.
+  syntax:
+    content: protected byte[] ToByteArrayHex(bool isNull)
+    content.vb: Protected Function ToByteArrayHex(isNull As Boolean) As Byte()
+    parameters:
+    - id: isNull
+      type: System.Boolean
+      description: true to return null; false to return a hexadecimal byte array.
+    return:
+      type: System.Byte[]
+- uid: System.Xml.Serialization.XmlSerializationReader.ToDateTime(System.String)
+  id: ToDateTime(System.String)
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: ToDateTime(String)
+  fullName: System.Xml.Serialization.XmlSerializationReader.ToDateTime(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 824
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Produces a @'System.DateTime' object from an input string.
+  syntax:
+    content: protected static DateTime ToDateTime(string value)
+    content.vb: Protected Shared Function ToDateTime(value As String) As Date
+    parameters:
+    - id: value
+      type: System.String
+      description: A string to translate into a @'System.DateTime' object.
+    return:
+      type: System.DateTime
+- uid: System.Xml.Serialization.XmlSerializationReader.ToDate(System.String)
+  id: ToDate(System.String)
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: ToDate(String)
+  fullName: System.Xml.Serialization.XmlSerializationReader.ToDate(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 830
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Produces a @'System.DateTime' object from an input string.
+  syntax:
+    content: protected static DateTime ToDate(string value)
+    content.vb: Protected Shared Function ToDate(value As String) As Date
+    parameters:
+    - id: value
+      type: System.String
+      description: A string to translate into a @'System.DateTime' class object.
+    return:
+      type: System.DateTime
+- uid: System.Xml.Serialization.XmlSerializationReader.ToTime(System.String)
+  id: ToTime(System.String)
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: ToTime(String)
+  fullName: System.Xml.Serialization.XmlSerializationReader.ToTime(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 836
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Produces a @'System.DateTime' from a string that represents the time.
+  syntax:
+    content: protected static DateTime ToTime(string value)
+    content.vb: Protected Shared Function ToTime(value As String) As Date
+    parameters:
+    - id: value
+      type: System.String
+      description: A string to translate into a @'System.DateTime' object.
+    return:
+      type: System.DateTime
+- uid: System.Xml.Serialization.XmlSerializationReader.ToChar(System.String)
+  id: ToChar(System.String)
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: ToChar(String)
+  fullName: System.Xml.Serialization.XmlSerializationReader.ToChar(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 842
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Produces a @'System.Char' object from an input string.
+  syntax:
+    content: protected static char ToChar(string value)
+    content.vb: Protected Shared Function ToChar(value As String) As Char
+    parameters:
+    - id: value
+      type: System.String
+      description: A string to translate into a @'System.Char' object.
+    return:
+      type: System.Char
+- uid: System.Xml.Serialization.XmlSerializationReader.ToEnum(System.String,System.Collections.IDictionary,System.String)
+  id: ToEnum(System.String,System.Collections.IDictionary,System.String)
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: ToEnum(String, IDictionary, String)
+  fullName: System.Xml.Serialization.XmlSerializationReader.ToEnum(System.String, System.Collections.IDictionary, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 848
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: protected static long ToEnum(string value, IDictionary h, string typeName)
+    content.vb: Protected Shared Function ToEnum(value As String, h As IDictionary, typeName As String) As Long
+    parameters:
+    - id: value
+      type: System.String
+    - id: h
+      type: System.Collections.IDictionary
+    - id: typeName
+      type: System.String
+    return:
+      type: System.Int64
+- uid: System.Xml.Serialization.XmlSerializationReader.ToXmlName(System.String)
+  id: ToXmlName(System.String)
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: ToXmlName(String)
+  fullName: System.Xml.Serialization.XmlSerializationReader.ToXmlName(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 854
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Decodes an XML name.
+  syntax:
+    content: protected static string ToXmlName(string value)
+    content.vb: Protected Shared Function ToXmlName(value As String) As String
+    parameters:
+    - id: value
+      type: System.String
+      description: An XML name to be decoded.
+    return:
+      type: System.String
+- uid: System.Xml.Serialization.XmlSerializationReader.ToXmlNCName(System.String)
+  id: ToXmlNCName(System.String)
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: ToXmlNCName(String)
+  fullName: System.Xml.Serialization.XmlSerializationReader.ToXmlNCName(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 860
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Decodes an XML name.
+  syntax:
+    content: protected static string ToXmlNCName(string value)
+    content.vb: Protected Shared Function ToXmlNCName(value As String) As String
+    parameters:
+    - id: value
+      type: System.String
+      description: An XML name to be decoded.
+    return:
+      type: System.String
+- uid: System.Xml.Serialization.XmlSerializationReader.ToXmlNmToken(System.String)
+  id: ToXmlNmToken(System.String)
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: ToXmlNmToken(String)
+  fullName: System.Xml.Serialization.XmlSerializationReader.ToXmlNmToken(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 866
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Decodes an XML name.
+  syntax:
+    content: protected static string ToXmlNmToken(string value)
+    content.vb: Protected Shared Function ToXmlNmToken(value As String) As String
+    parameters:
+    - id: value
+      type: System.String
+      description: An XML name to be decoded.
+    return:
+      type: System.String
+- uid: System.Xml.Serialization.XmlSerializationReader.ToXmlNmTokens(System.String)
+  id: ToXmlNmTokens(System.String)
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: ToXmlNmTokens(String)
+  fullName: System.Xml.Serialization.XmlSerializationReader.ToXmlNmTokens(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 872
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Decodes an XML name.
+  syntax:
+    content: protected static string ToXmlNmTokens(string value)
+    content.vb: Protected Shared Function ToXmlNmTokens(value As String) As String
+    parameters:
+    - id: value
+      type: System.String
+      description: An XML name to be decoded.
+    return:
+      type: System.String
+- uid: System.Xml.Serialization.XmlSerializationReader.ToXmlQualifiedName(System.String)
+  id: ToXmlQualifiedName(System.String)
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: ToXmlQualifiedName(String)
+  fullName: System.Xml.Serialization.XmlSerializationReader.ToXmlQualifiedName(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 878
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Obtains an @'System.Xml.XmlQualifiedName' from a name that may contain a prefix.
+  syntax:
+    content: protected XmlQualifiedName ToXmlQualifiedName(string value)
+    content.vb: Protected Function ToXmlQualifiedName(value As String) As XmlQualifiedName
+    parameters:
+    - id: value
+      type: System.String
+      description: A name that may contain a prefix.
+    return:
+      type: XmlQualifiedName
+- uid: System.Xml.Serialization.XmlSerializationReader.UnknownNode(System.Object)
+  id: UnknownNode(System.Object)
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: UnknownNode(Object)
+  fullName: System.Xml.Serialization.XmlSerializationReader.UnknownNode(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 911
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Raises an @'System.Xml.Serialization.XmlSerializer.UnknownNode' event for the current position of the @'System.Xml.XmlReader'.
+  syntax:
+    content: protected void UnknownNode(object o)
+    content.vb: Protected Sub UnknownNode(o As Object)
+    parameters:
+    - id: o
+      type: System.Object
+      description: The object that is being deserialized.
+- uid: System.Xml.Serialization.XmlSerializationReader.UnknownNode(System.Object,System.String)
+  id: UnknownNode(System.Object,System.String)
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: UnknownNode(Object, String)
+  fullName: System.Xml.Serialization.XmlSerializationReader.UnknownNode(System.Object, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 917
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Raises an @'System.Xml.Serialization.XmlSerializer.UnknownNode' event for the current position of the @'System.Xml.XmlReader'.
+  syntax:
+    content: protected void UnknownNode(object o, string qnames)
+    content.vb: Protected Sub UnknownNode(o As Object, qnames As String)
+    parameters:
+    - id: o
+      type: System.Object
+      description: The object being deserialized.
+    - id: qnames
+      type: System.String
+      description: A comma-delimited list of XML qualified names.
+- uid: System.Xml.Serialization.XmlSerializationReader.CreateUnknownTypeException(XmlQualifiedName)
+  id: CreateUnknownTypeException(XmlQualifiedName)
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: CreateUnknownTypeException(XmlQualifiedName)
+  fullName: System.Xml.Serialization.XmlSerializationReader.CreateUnknownTypeException(XmlQualifiedName)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 978
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: protected Exception CreateUnknownTypeException(XmlQualifiedName type)
+    content.vb: Protected Function CreateUnknownTypeException(type As XmlQualifiedName) As Exception
+    parameters:
+    - id: type
+      type: XmlQualifiedName
+    return:
+      type: System.Exception
+- uid: System.Xml.Serialization.XmlSerializationReader.CreateReadOnlyCollectionException(System.String)
+  id: CreateReadOnlyCollectionException(System.String)
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: CreateReadOnlyCollectionException(String)
+  fullName: System.Xml.Serialization.XmlSerializationReader.CreateReadOnlyCollectionException(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 984
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Creates an @'System.InvalidOperationException' that indicates that a SOAP-encoded collection type cannot be modified and its values cannot be filled in.
+  syntax:
+    content: protected Exception CreateReadOnlyCollectionException(string name)
+    content.vb: Protected Function CreateReadOnlyCollectionException(name As String) As Exception
+    parameters:
+    - id: name
+      type: System.String
+      description: The fully qualified name of the .NET Framework type for which there is a mapping.
+    return:
+      type: System.Exception
+- uid: System.Xml.Serialization.XmlSerializationReader.CreateAbstractTypeException(System.String,System.String)
+  id: CreateAbstractTypeException(System.String,System.String)
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: CreateAbstractTypeException(String, String)
+  fullName: System.Xml.Serialization.XmlSerializationReader.CreateAbstractTypeException(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 990
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Creates an @'System.InvalidOperationException' that indicates that an object being deserialized should be abstract.
+  syntax:
+    content: protected Exception CreateAbstractTypeException(string name, string ns)
+    content.vb: Protected Function CreateAbstractTypeException(name As String, ns As String) As Exception
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the abstract type.
+    - id: ns
+      type: System.String
+      description: The .NET Framework namespace of the abstract type.
+    return:
+      type: System.Exception
+- uid: System.Xml.Serialization.XmlSerializationReader.CreateInaccessibleConstructorException(System.String)
+  id: CreateInaccessibleConstructorException(System.String)
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: CreateInaccessibleConstructorException(String)
+  fullName: System.Xml.Serialization.XmlSerializationReader.CreateInaccessibleConstructorException(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 996
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Creates an @'System.InvalidOperationException' that indicates that an object being deserialized cannot be instantiated because there is no constructor available.
+  syntax:
+    content: protected Exception CreateInaccessibleConstructorException(string typeName)
+    content.vb: Protected Function CreateInaccessibleConstructorException(typeName As String) As Exception
+    parameters:
+    - id: typeName
+      type: System.String
+      description: The name of the type.
+    return:
+      type: System.Exception
+- uid: System.Xml.Serialization.XmlSerializationReader.CreateCtorHasSecurityException(System.String)
+  id: CreateCtorHasSecurityException(System.String)
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: CreateCtorHasSecurityException(String)
+  fullName: System.Xml.Serialization.XmlSerializationReader.CreateCtorHasSecurityException(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 1002
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Creates an @'System.InvalidOperationException' that indicates that an object being deserialized cannot be instantiated because the constructor throws a security exception.
+  syntax:
+    content: protected Exception CreateCtorHasSecurityException(string typeName)
+    content.vb: Protected Function CreateCtorHasSecurityException(typeName As String) As Exception
+    parameters:
+    - id: typeName
+      type: System.String
+      description: The name of the type.
+    return:
+      type: System.Exception
+- uid: System.Xml.Serialization.XmlSerializationReader.CreateUnknownNodeException
+  id: CreateUnknownNodeException
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: CreateUnknownNodeException()
+  fullName: System.Xml.Serialization.XmlSerializationReader.CreateUnknownNodeException()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 1008
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Creates an @'System.InvalidOperationException' that indicates that the current position of @'System.Xml.XmlReader' represents an unknown XML node.
+  syntax:
+    content: protected Exception CreateUnknownNodeException()
+    content.vb: Protected Function CreateUnknownNodeException As Exception
+    return:
+      type: System.Exception
+- uid: System.Xml.Serialization.XmlSerializationReader.CreateUnknownConstantException(System.String,System.Type)
+  id: CreateUnknownConstantException(System.String,System.Type)
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: CreateUnknownConstantException(String, Type)
+  fullName: System.Xml.Serialization.XmlSerializationReader.CreateUnknownConstantException(System.String, System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 1014
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Creates an @'System.InvalidOperationException' that indicates that an enumeration value is not valid.
+  syntax:
+    content: protected Exception CreateUnknownConstantException(string value, Type enumType)
+    content.vb: Protected Function CreateUnknownConstantException(value As String, enumType As Type) As Exception
+    parameters:
+    - id: value
+      type: System.String
+      description: The enumeration value that is not valid.
+    - id: enumType
+      type: System.Type
+      description: The enumeration type.
+    return:
+      type: System.Exception
+- uid: System.Xml.Serialization.XmlSerializationReader.CreateInvalidCastException(System.Type,System.Object)
+  id: CreateInvalidCastException(System.Type,System.Object)
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: CreateInvalidCastException(Type, Object)
+  fullName: System.Xml.Serialization.XmlSerializationReader.CreateInvalidCastException(System.Type, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 1020
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Creates an @'System.InvalidCastException' that indicates that an explicit reference conversion failed.
+  syntax:
+    content: protected Exception CreateInvalidCastException(Type type, object value)
+    content.vb: Protected Function CreateInvalidCastException(type As Type, value As Object) As Exception
+    parameters:
+    - id: type
+      type: System.Type
+      description: The @'System.Type' that an object cannot be cast to. This type is incorporated into the exception message.
+    - id: value
+      type: System.Object
+      description: The object that cannot be cast. This object is incorporated into the exception message.
+    return:
+      type: System.Exception
+- uid: System.Xml.Serialization.XmlSerializationReader.CreateInvalidCastException(System.Type,System.Object,System.String)
+  id: CreateInvalidCastException(System.Type,System.Object,System.String)
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: CreateInvalidCastException(Type, Object, String)
+  fullName: System.Xml.Serialization.XmlSerializationReader.CreateInvalidCastException(System.Type, System.Object, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 1026
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Creates an @'System.InvalidCastException' that indicates that an explicit reference conversion failed.
+  syntax:
+    content: protected Exception CreateInvalidCastException(Type type, object value, string id)
+    content.vb: Protected Function CreateInvalidCastException(type As Type, value As Object, id As String) As Exception
+    parameters:
+    - id: type
+      type: System.Type
+      description: The @'System.Type' that an object cannot be cast to. This type is incorporated into the exception message.
+    - id: value
+      type: System.Object
+      description: The object that cannot be cast. This object is incorporated into the exception message.
+    - id: id
+      type: System.String
+      description: A string identifier.
+    return:
+      type: System.Exception
+- uid: System.Xml.Serialization.XmlSerializationReader.CreateBadDerivationException(System.String,System.String,System.String,System.String,System.String,System.String)
+  id: CreateBadDerivationException(System.String,System.String,System.String,System.String,System.String,System.String)
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: CreateBadDerivationException(String, String, String, String, String, String)
+  fullName: System.Xml.Serialization.XmlSerializationReader.CreateBadDerivationException(System.String, System.String, System.String, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 1037
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Populates an object from its XML representation at the current location of the @'System.Xml.XmlReader', with an option to read the inner element.
+  syntax:
+    content: protected Exception CreateBadDerivationException(string xsdDerived, string nsDerived, string xsdBase, string nsBase, string clrDerived, string clrBase)
+    content.vb: Protected Function CreateBadDerivationException(xsdDerived As String, nsDerived As String, xsdBase As String, nsBase As String, clrDerived As String, clrBase As String) As Exception
+    parameters:
+    - id: xsdDerived
+      type: System.String
+      description: The local name of the derived XML Schema data type.
+    - id: nsDerived
+      type: System.String
+      description: The namespace of the derived XML Schema data type.
+    - id: xsdBase
+      type: System.String
+      description: The local name of the base XML Schema data type.
+    - id: nsBase
+      type: System.String
+      description: The namespace of the base XML Schema data type.
+    - id: clrDerived
+      type: System.String
+      description: The namespace of the derived .NET Framework type.
+    - id: clrBase
+      type: System.String
+      description: The name of the base .NET Framework type.
+    return:
+      type: System.Exception
+- uid: System.Xml.Serialization.XmlSerializationReader.CreateMissingIXmlSerializableType(System.String,System.String,System.String)
+  id: CreateMissingIXmlSerializableType(System.String,System.String,System.String)
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: CreateMissingIXmlSerializableType(String, String, String)
+  fullName: System.Xml.Serialization.XmlSerializationReader.CreateMissingIXmlSerializableType(System.String, System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 1043
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Creates an @'System.InvalidOperationException' that indicates that a derived type that is mapped to an XML Schema data type cannot be located.
+  syntax:
+    content: protected Exception CreateMissingIXmlSerializableType(string name, string ns, string clrType)
+    content.vb: Protected Function CreateMissingIXmlSerializableType(name As String, ns As String, clrType As String) As Exception
+    parameters:
+    - id: name
+      type: System.String
+      description: The local name of the XML Schema data type that is mapped to the unavailable derived type.
+    - id: ns
+      type: System.String
+      description: The namespace of the XML Schema data type that is mapped to the unavailable derived type.
+    - id: clrType
+      type: System.String
+      description: The full name of the .NET Framework base type for which a derived type cannot be located.
+    return:
+      type: System.Exception
+- uid: System.Xml.Serialization.XmlSerializationReader.EnsureArrayIndex(System.Array,System.Int32,System.Type)
+  id: EnsureArrayIndex(System.Array,System.Int32,System.Type)
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: EnsureArrayIndex(Array, Int32, Type)
+  fullName: System.Xml.Serialization.XmlSerializationReader.EnsureArrayIndex(System.Array, System.Int32, System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 1050
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Ensures that a given array, or a copy, is large enough to contain a specified index.
+  syntax:
+    content: protected Array EnsureArrayIndex(Array a, int index, Type elementType)
+    content.vb: Protected Function EnsureArrayIndex(a As Array, index As Integer, elementType As Type) As Array
+    parameters:
+    - id: a
+      type: System.Array
+      description: The @'System.Array' that is being checked.
+    - id: index
+      type: System.Int32
+      description: The required index.
+    - id: elementType
+      type: System.Type
+      description: The @'System.Type' of the array's elements.
+    return:
+      type: System.Array
+- uid: System.Xml.Serialization.XmlSerializationReader.ShrinkArray(System.Array,System.Int32,System.Type,System.Boolean)
+  id: ShrinkArray(System.Array,System.Int32,System.Type,System.Boolean)
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: ShrinkArray(Array, Int32, Type, Boolean)
+  fullName: System.Xml.Serialization.XmlSerializationReader.ShrinkArray(System.Array, System.Int32, System.Type, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 1060
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Ensures that a given array, or a copy, is no larger than a specified length.
+  syntax:
+    content: protected Array ShrinkArray(Array a, int length, Type elementType, bool isNullable)
+    content.vb: Protected Function ShrinkArray(a As Array, length As Integer, elementType As Type, isNullable As Boolean) As Array
+    parameters:
+    - id: a
+      type: System.Array
+      description: The array that is being checked.
+    - id: length
+      type: System.Int32
+      description: The maximum length of the array.
+    - id: elementType
+      type: System.Type
+      description: The @'System.Type' of the array's elements.
+    - id: isNullable
+      type: System.Boolean
+      description: true if null for the array, if present for the input array, can be returned; otherwise, a new, smaller array.
+    return:
+      type: System.Array
+- uid: System.Xml.Serialization.XmlSerializationReader.ReadString
+  id: ReadString
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: ReadString()
+  fullName: System.Xml.Serialization.XmlSerializationReader.ReadString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 1074
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: protected virtual string ReadString()
+    content.vb: Protected Overridable Function ReadString As String
+    return:
+      type: System.String
+- uid: System.Xml.Serialization.XmlSerializationReader.ReadString(System.String)
+  id: ReadString(System.String)
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: ReadString(String)
+  fullName: System.Xml.Serialization.XmlSerializationReader.ReadString(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 1117
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Produces the result of a call to the @'System.Xml.XmlReader.ReadString' method appended to the input value.
+  syntax:
+    content: protected string ReadString(string value)
+    content.vb: Protected Function ReadString(value As String) As String
+    parameters:
+    - id: value
+      type: System.String
+      description: A string to prefix to the result of a call to the @'System.Xml.XmlReader.ReadString' method.
+    return:
+      type: System.String
+- uid: System.Xml.Serialization.XmlSerializationReader.ReadString(System.String,System.Boolean)
+  id: ReadString(System.String,System.Boolean)
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: ReadString(String, Boolean)
+  fullName: System.Xml.Serialization.XmlSerializationReader.ReadString(System.String, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 1123
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Returns the result of a call to the @'System.Xml.XmlReader.ReadString' method of the @'System.Xml.XmlReader' class, trimmed of white space if needed, and appended to the input value.
+  syntax:
+    content: protected string ReadString(string value, bool trim)
+    content.vb: Protected Function ReadString(value As String, trim As Boolean) As String
+    parameters:
+    - id: value
+      type: System.String
+      description: A string that will be appended to.
+    - id: trim
+      type: System.Boolean
+      description: true if the result of the read operation should be trimmed; otherwise, false.
+    return:
+      type: System.String
+- uid: System.Xml.Serialization.XmlSerializationReader.ReadSerializable(IXmlSerializable)
+  id: ReadSerializable(IXmlSerializable)
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: ReadSerializable(IXmlSerializable)
+  fullName: System.Xml.Serialization.XmlSerializationReader.ReadSerializable(IXmlSerializable)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 1134
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: protected IXmlSerializable ReadSerializable(IXmlSerializable serializable)
+    content.vb: Protected Function ReadSerializable(serializable As IXmlSerializable) As IXmlSerializable
+    parameters:
+    - id: serializable
+      type: IXmlSerializable
+    return:
+      type: IXmlSerializable
+- uid: System.Xml.Serialization.XmlSerializationReader.ReadSerializable(IXmlSerializable,System.Boolean)
+  id: ReadSerializable(IXmlSerializable,System.Boolean)
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: ReadSerializable(IXmlSerializable, Boolean)
+  fullName: System.Xml.Serialization.XmlSerializationReader.ReadSerializable(IXmlSerializable, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 1140
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: protected IXmlSerializable ReadSerializable(IXmlSerializable serializable, bool wrappedAny)
+    content.vb: Protected Function ReadSerializable(serializable As IXmlSerializable, wrappedAny As Boolean) As IXmlSerializable
+    parameters:
+    - id: serializable
+      type: IXmlSerializable
+    - id: wrappedAny
+      type: System.Boolean
+    return:
+      type: IXmlSerializable
+- uid: System.Xml.Serialization.XmlSerializationReader.InitCallbacks
+  id: InitCallbacks
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: InitCallbacks()
+  fullName: System.Xml.Serialization.XmlSerializationReader.InitCallbacks()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 1179
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Initializes callback methods that populate objects that map to SOAP-encoded XML data.
+  syntax:
+    content: protected abstract void InitCallbacks()
+    content.vb: Protected MustOverride Sub InitCallbacks
+- uid: System.Xml.Serialization.XmlSerializationReader.ReadEndElement
+  id: ReadEndElement
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: ReadEndElement()
+  fullName: System.Xml.Serialization.XmlSerializationReader.ReadEndElement()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 1189
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Makes the @'System.Xml.XmlReader' read an XML end tag.
+  syntax:
+    content: protected void ReadEndElement()
+    content.vb: Protected Sub ReadEndElement
+- uid: System.Xml.Serialization.XmlSerializationReader.CheckReaderCount(System.Int32@,System.Int32@)
+  id: CheckReaderCount(System.Int32@,System.Int32@)
+  parent: System.Xml.Serialization.XmlSerializationReader
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: CheckReaderCount(ref Int32, ref Int32)
+  name.vb: CheckReaderCount(ByRef Int32, ByRef Int32)
+  fullName: System.Xml.Serialization.XmlSerializationReader.CheckReaderCount(ref System.Int32, ref System.Int32)
+  fullName.vb: System.Xml.Serialization.XmlSerializationReader.CheckReaderCount(ByRef System.Int32, ByRef System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationReader.cs
+    startLine: 1292
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Checks whether the deserializer has advanced.
+  syntax:
+    content: protected void CheckReaderCount(ref int whileIterations, ref int readerCount)
+    content.vb: Protected Sub CheckReaderCount(ByRef whileIterations As Integer, ByRef readerCount As Integer)
+    parameters:
+    - id: whileIterations
+      type: System.Int32
+      description: The current count in a while loop.
+    - id: readerCount
+      type: System.Int32
+      description: The current @'System.Xml.Serialization.XmlSerializationReader.ReaderCount'.
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The @'System.Xml.Serialization.XmlSerializationReader.ReaderCount' has not advanced.
+references:
+- uid: System.Xml.Serialization
+  isExternal: false
+  name: System.Xml.Serialization
+  fullName: System.Xml.Serialization
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Xml.Serialization.XmlSerializationGeneratedCode
+  isExternal: false
+  href: System.Xml.Serialization.XmlSerializationGeneratedCode.yml
+  name: XmlSerializationGeneratedCode
+  fullName: System.Xml.Serialization.XmlSerializationGeneratedCode
+  type: Class
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: XmlReader
+  isExternal: true
+  name: XmlReader
+  fullName: XmlReader
+- uid: XmlDocument
+  isExternal: true
+  name: XmlDocument
+  fullName: XmlDocument
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: XmlQualifiedName
+  isExternal: true
+  name: XmlQualifiedName
+  fullName: XmlQualifiedName
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: XmlAttribute
+  isExternal: true
+  name: XmlAttribute
+  fullName: XmlAttribute
+- uid: XmlNode
+  isExternal: true
+  name: XmlNode
+  fullName: XmlNode
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  name.vb: Byte()
+  fullName: System.Byte[]
+  fullName.vb: System.Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  fullName: System.DateTime
+- uid: System.Char
+  parent: System
+  isExternal: true
+  name: Char
+  fullName: System.Char
+- uid: System.Collections.IDictionary
+  parent: System.Collections
+  isExternal: true
+  name: IDictionary
+  fullName: System.Collections.IDictionary
+- uid: System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  fullName: System.Int64
+- uid: System.Collections
+  isExternal: false
+  name: System.Collections
+  fullName: System.Collections
+- uid: System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  fullName: System.Exception
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  fullName: System.Type
+- uid: System.Array
+  parent: System
+  isExternal: true
+  name: Array
+  fullName: System.Array
+- uid: IXmlSerializable
+  isExternal: true
+  name: IXmlSerializable
+  fullName: IXmlSerializable

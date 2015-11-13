@@ -1,0 +1,154 @@
+items:
+- uid: System.DayOfWeek
+  id: DayOfWeek
+  parent: System
+  children:
+  - System.DayOfWeek.Friday
+  - System.DayOfWeek.Monday
+  - System.DayOfWeek.Saturday
+  - System.DayOfWeek.Sunday
+  - System.DayOfWeek.Thursday
+  - System.DayOfWeek.Tuesday
+  - System.DayOfWeek.Wednesday
+  href: System.DayOfWeek.yml
+  name: DayOfWeek
+  fullName: System.DayOfWeek
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/DayOfWeek.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/DayOfWeek.cs
+    startLine: 13
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Specifies the day of the week.
+  syntax:
+    content: public enum DayOfWeek
+    content.vb: Public Enum DayOfWeek
+- uid: System.DayOfWeek.Sunday
+  id: Sunday
+  parent: System.DayOfWeek
+  href: System.DayOfWeek.yml
+  name: Sunday
+  fullName: System.DayOfWeek.Sunday
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DayOfWeek.cs
+    startLine: 16
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates Sunday.
+  syntax:
+    content: Sunday = 0
+- uid: System.DayOfWeek.Monday
+  id: Monday
+  parent: System.DayOfWeek
+  href: System.DayOfWeek.yml
+  name: Monday
+  fullName: System.DayOfWeek.Monday
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DayOfWeek.cs
+    startLine: 17
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates Monday.
+  syntax:
+    content: Monday = 1
+- uid: System.DayOfWeek.Tuesday
+  id: Tuesday
+  parent: System.DayOfWeek
+  href: System.DayOfWeek.yml
+  name: Tuesday
+  fullName: System.DayOfWeek.Tuesday
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DayOfWeek.cs
+    startLine: 18
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates Tuesday.
+  syntax:
+    content: Tuesday = 2
+- uid: System.DayOfWeek.Wednesday
+  id: Wednesday
+  parent: System.DayOfWeek
+  href: System.DayOfWeek.yml
+  name: Wednesday
+  fullName: System.DayOfWeek.Wednesday
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DayOfWeek.cs
+    startLine: 19
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates Wednesday.
+  syntax:
+    content: Wednesday = 3
+- uid: System.DayOfWeek.Thursday
+  id: Thursday
+  parent: System.DayOfWeek
+  href: System.DayOfWeek.yml
+  name: Thursday
+  fullName: System.DayOfWeek.Thursday
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DayOfWeek.cs
+    startLine: 20
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates Thursday.
+  syntax:
+    content: Thursday = 4
+- uid: System.DayOfWeek.Friday
+  id: Friday
+  parent: System.DayOfWeek
+  href: System.DayOfWeek.yml
+  name: Friday
+  fullName: System.DayOfWeek.Friday
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DayOfWeek.cs
+    startLine: 21
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates Friday.
+  syntax:
+    content: Friday = 5
+- uid: System.DayOfWeek.Saturday
+  id: Saturday
+  parent: System.DayOfWeek
+  href: System.DayOfWeek.yml
+  name: Saturday
+  fullName: System.DayOfWeek.Saturday
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DayOfWeek.cs
+    startLine: 22
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates Saturday.
+  syntax:
+    content: Saturday = 6
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

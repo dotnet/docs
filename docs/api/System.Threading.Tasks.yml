@@ -1,0 +1,267 @@
+items:
+- uid: System.Threading.Tasks
+  id: System.Threading.Tasks
+  children:
+  - System.Threading.Tasks.ConcurrentExclusiveSchedulerPair
+  - System.Threading.Tasks.Parallel
+  - System.Threading.Tasks.ParallelLoopResult
+  - System.Threading.Tasks.ParallelLoopState
+  - System.Threading.Tasks.ParallelOptions
+  - System.Threading.Tasks.Task
+  - System.Threading.Tasks.Task`1
+  - System.Threading.Tasks.TaskCanceledException
+  - System.Threading.Tasks.TaskCompletionSource`1
+  - System.Threading.Tasks.TaskContinuationOptions
+  - System.Threading.Tasks.TaskCreationOptions
+  - System.Threading.Tasks.TaskExtensions
+  - System.Threading.Tasks.TaskFactory
+  - System.Threading.Tasks.TaskFactory`1
+  - System.Threading.Tasks.TaskScheduler
+  - System.Threading.Tasks.TaskSchedulerException
+  - System.Threading.Tasks.TaskStatus
+  - System.Threading.Tasks.UnobservedTaskExceptionEventArgs
+  href: System.Threading.Tasks.yml
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  type: Namespace
+  source:
+    remote:
+      path: src/System.Threading.Tasks.Parallel/src/System/Threading/Tasks/TaskReplicator.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Threading.Tasks.Parallel/src/System/Threading/Tasks/TaskReplicator.cs
+    startLine: 7
+  assemblies:
+  - System.Threading.Tasks.Parallel
+  summary: The System.Threading.Tasks namespace provides types that simplify the work of writing concurrent and asynchronous code. The main types are @'System.Threading.Tasks.Task' which represents an asynchronous operation that can be waited on and cancelled, and @'System.Threading.Tasks.Task`1', which is a task that can return a value. The @'System.Threading.Tasks.TaskFactory' class provides static methods for creating and starting tasks, and the @'System.Threading.Tasks.TaskScheduler' class provides the default thread scheduling infrastructure.
+references:
+- uid: System.Threading.Tasks.ParallelOptions
+  isExternal: false
+  href: System.Threading.Tasks.ParallelOptions.yml
+  name: ParallelOptions
+  fullName: System.Threading.Tasks.ParallelOptions
+  type: Class
+  summary: >-
+    Stores options that configure the operation of methods on the
+
+    @'System.Threading.Tasks.Parallel' class.
+- uid: System.Threading.Tasks.Parallel
+  isExternal: false
+  href: System.Threading.Tasks.Parallel.yml
+  name: Parallel
+  fullName: System.Threading.Tasks.Parallel
+  type: Class
+  summary: Provides support for parallel loops and regions.
+- uid: System.Threading.Tasks.ParallelLoopState
+  isExternal: false
+  href: System.Threading.Tasks.ParallelLoopState.yml
+  name: ParallelLoopState
+  fullName: System.Threading.Tasks.ParallelLoopState
+  type: Class
+  summary: >-
+    Enables iterations of @'System.Threading.Tasks.Parallel' loops to interact with
+
+    other iterations.
+- uid: System.Threading.Tasks.ParallelLoopResult
+  parent: System.Threading.Tasks
+  isExternal: false
+  href: System.Threading.Tasks.ParallelLoopResult.yml
+  name: ParallelLoopResult
+  fullName: System.Threading.Tasks.ParallelLoopResult
+  type: Struct
+  summary: Provides completion status on the execution of a @'System.Threading.Tasks.Parallel' loop.
+- uid: System.Threading.Tasks.TaskExtensions
+  isExternal: false
+  href: System.Threading.Tasks.TaskExtensions.yml
+  name: TaskExtensions
+  fullName: System.Threading.Tasks.TaskExtensions
+  type: Class
+  summary: >-
+    Provides a set of static (Shared in Visual Basic) methods for working with specific kinds of
+
+    @'System.Threading.Tasks.Task' instances.
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  name.vb: Task(Of TResult)
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.TaskFactory`1
+  parent: System.Threading.Tasks
+  isExternal: false
+  href: System.Threading.Tasks.TaskFactory`1.yml
+  name: TaskFactory<TResult>
+  name.vb: TaskFactory(Of TResult)
+  fullName: System.Threading.Tasks.TaskFactory<TResult>
+  fullName.vb: System.Threading.Tasks.TaskFactory(Of TResult)
+  type: Class
+  summary: >-
+    Provides support for creating and scheduling
+
+    @'System.Threading.Tasks.Task{TResult}' objects.
+  spec.csharp:
+  - uid: System.Threading.Tasks.TaskFactory`1
+    name: TaskFactory
+    fullName: System.Threading.Tasks.TaskFactory
+    href: System.Threading.Tasks.TaskFactory`1.yml
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.TaskFactory`1
+    name: TaskFactory
+    fullName: System.Threading.Tasks.TaskFactory
+    href: System.Threading.Tasks.TaskFactory`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.TaskStatus
+  parent: System.Threading.Tasks
+  isExternal: false
+  href: System.Threading.Tasks.TaskStatus.yml
+  name: TaskStatus
+  fullName: System.Threading.Tasks.TaskStatus
+  type: Enum
+  summary: Represents the current stage in the lifecycle of a @'System.Threading.Tasks.Task'.
+- uid: System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks.TaskCreationOptions
+  parent: System.Threading.Tasks
+  isExternal: false
+  href: System.Threading.Tasks.TaskCreationOptions.yml
+  name: TaskCreationOptions
+  fullName: System.Threading.Tasks.TaskCreationOptions
+  type: Enum
+  summary: Specifies flags that control optional behavior for the creation and execution of tasks.
+- uid: System.Threading.Tasks.TaskContinuationOptions
+  parent: System.Threading.Tasks
+  isExternal: false
+  href: System.Threading.Tasks.TaskContinuationOptions.yml
+  name: TaskContinuationOptions
+  fullName: System.Threading.Tasks.TaskContinuationOptions
+  type: Enum
+  summary: Specifies flags that control optional behavior for the creation and execution of continuation tasks.
+- uid: System.Threading.Tasks.TaskCanceledException
+  isExternal: false
+  href: System.Threading.Tasks.TaskCanceledException.yml
+  name: TaskCanceledException
+  fullName: System.Threading.Tasks.TaskCanceledException
+  type: Class
+  summary: Represents an exception used to communicate task cancellation.
+- uid: System.Threading.Tasks.TaskSchedulerException
+  isExternal: false
+  href: System.Threading.Tasks.TaskSchedulerException.yml
+  name: TaskSchedulerException
+  fullName: System.Threading.Tasks.TaskSchedulerException
+  type: Class
+  summary: >-
+    Represents an exception used to communicate an invalid operation by a
+
+    @'System.Threading.Tasks.TaskScheduler'.
+- uid: System.Threading.Tasks.TaskFactory
+  parent: System.Threading.Tasks
+  isExternal: false
+  href: System.Threading.Tasks.TaskFactory.yml
+  name: TaskFactory
+  fullName: System.Threading.Tasks.TaskFactory
+  type: Class
+  summary: >-
+    Provides support for creating and scheduling
+
+    @'System.Threading.Tasks.Task'.
+- uid: System.Threading.Tasks.TaskScheduler
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: TaskScheduler
+  fullName: System.Threading.Tasks.TaskScheduler
+- uid: System.Threading.Tasks.UnobservedTaskExceptionEventArgs
+  isExternal: false
+  href: System.Threading.Tasks.UnobservedTaskExceptionEventArgs.yml
+  name: UnobservedTaskExceptionEventArgs
+  fullName: System.Threading.Tasks.UnobservedTaskExceptionEventArgs
+  type: Class
+  summary: >-
+    Provides data for the event that is raised when a faulted @'System.Threading.Tasks.Task''s
+
+    exception goes unobserved.
+- uid: System.Threading.Tasks.TaskCompletionSource`1
+  isExternal: false
+  href: System.Threading.Tasks.TaskCompletionSource`1.yml
+  name: TaskCompletionSource<TResult>
+  name.vb: TaskCompletionSource(Of TResult)
+  fullName: System.Threading.Tasks.TaskCompletionSource<TResult>
+  fullName.vb: System.Threading.Tasks.TaskCompletionSource(Of TResult)
+  type: Class
+  summary: >-
+    Represents the producer side of a @'System.Threading.Tasks.Task{TResult}' unbound to a
+
+    delegate, providing access to the consumer side through the @'System.Threading.Tasks.TaskCompletionSource`1.Task' property.
+  spec.csharp:
+  - uid: System.Threading.Tasks.TaskCompletionSource`1
+    name: TaskCompletionSource
+    fullName: System.Threading.Tasks.TaskCompletionSource
+    href: System.Threading.Tasks.TaskCompletionSource`1.yml
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.TaskCompletionSource`1
+    name: TaskCompletionSource
+    fullName: System.Threading.Tasks.TaskCompletionSource
+    href: System.Threading.Tasks.TaskCompletionSource`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.ConcurrentExclusiveSchedulerPair
+  isExternal: false
+  href: System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.yml
+  name: ConcurrentExclusiveSchedulerPair
+  fullName: System.Threading.Tasks.ConcurrentExclusiveSchedulerPair
+  type: Class
+  summary: >-
+    Provides concurrent and exclusive task schedulers that coordinate to execute
+
+    tasks while ensuring that concurrent tasks may run concurrently and exclusive tasks never do.
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  type: Namespace

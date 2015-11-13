@@ -1,0 +1,316 @@
+items:
+- uid: System.IO.FileAttributes
+  id: FileAttributes
+  parent: System.IO
+  children:
+  - System.IO.FileAttributes.Archive
+  - System.IO.FileAttributes.Compressed
+  - System.IO.FileAttributes.Device
+  - System.IO.FileAttributes.Directory
+  - System.IO.FileAttributes.Encrypted
+  - System.IO.FileAttributes.Hidden
+  - System.IO.FileAttributes.IntegrityStream
+  - System.IO.FileAttributes.Normal
+  - System.IO.FileAttributes.NoScrubData
+  - System.IO.FileAttributes.NotContentIndexed
+  - System.IO.FileAttributes.Offline
+  - System.IO.FileAttributes.ReadOnly
+  - System.IO.FileAttributes.ReparsePoint
+  - System.IO.FileAttributes.SparseFile
+  - System.IO.FileAttributes.System
+  - System.IO.FileAttributes.Temporary
+  href: System.IO.FileAttributes.yml
+  name: FileAttributes
+  fullName: System.IO.FileAttributes
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.IO.FileSystem.Primitives/src/System/IO/FileAttributes.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.IO.FileSystem.Primitives/src/System/IO/FileAttributes.cs
+    startLine: 7
+  assemblies:
+  - System.IO.FileSystem.Primitives
+  namespace: System.IO
+  summary: Provides attributes for files and directories.
+  syntax:
+    content: public enum FileAttributes
+    content.vb: Public Enum FileAttributes
+- uid: System.IO.FileAttributes.ReadOnly
+  id: ReadOnly
+  parent: System.IO.FileAttributes
+  href: System.IO.FileAttributes.yml
+  name: ReadOnly
+  fullName: System.IO.FileAttributes.ReadOnly
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem.Primitives/src/System/IO/FileAttributes.cs
+    startLine: 10
+  assemblies:
+  - System.IO.FileSystem.Primitives
+  namespace: System.IO
+  summary: The file is read-only.
+  syntax:
+    content: ReadOnly = 1
+- uid: System.IO.FileAttributes.Hidden
+  id: Hidden
+  parent: System.IO.FileAttributes
+  href: System.IO.FileAttributes.yml
+  name: Hidden
+  fullName: System.IO.FileAttributes.Hidden
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem.Primitives/src/System/IO/FileAttributes.cs
+    startLine: 11
+  assemblies:
+  - System.IO.FileSystem.Primitives
+  namespace: System.IO
+  summary: The file is hidden, and thus is not included in an ordinary directory listing.
+  syntax:
+    content: Hidden = 2
+- uid: System.IO.FileAttributes.System
+  id: System
+  parent: System.IO.FileAttributes
+  href: System.IO.FileAttributes.yml
+  name: System
+  fullName: System.IO.FileAttributes.System
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem.Primitives/src/System/IO/FileAttributes.cs
+    startLine: 12
+  assemblies:
+  - System.IO.FileSystem.Primitives
+  namespace: System.IO
+  summary: The file is a system file. That is, the file is part of the operating system or is used exclusively by the operating system.
+  syntax:
+    content: System = 4
+- uid: System.IO.FileAttributes.Directory
+  id: Directory
+  parent: System.IO.FileAttributes
+  href: System.IO.FileAttributes.yml
+  name: Directory
+  fullName: System.IO.FileAttributes.Directory
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem.Primitives/src/System/IO/FileAttributes.cs
+    startLine: 13
+  assemblies:
+  - System.IO.FileSystem.Primitives
+  namespace: System.IO
+  summary: The file is a directory.
+  syntax:
+    content: Directory = 16
+- uid: System.IO.FileAttributes.Archive
+  id: Archive
+  parent: System.IO.FileAttributes
+  href: System.IO.FileAttributes.yml
+  name: Archive
+  fullName: System.IO.FileAttributes.Archive
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem.Primitives/src/System/IO/FileAttributes.cs
+    startLine: 14
+  assemblies:
+  - System.IO.FileSystem.Primitives
+  namespace: System.IO
+  summary: The file is a candidate for backup or removal.
+  syntax:
+    content: Archive = 32
+- uid: System.IO.FileAttributes.Device
+  id: Device
+  parent: System.IO.FileAttributes
+  href: System.IO.FileAttributes.yml
+  name: Device
+  fullName: System.IO.FileAttributes.Device
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem.Primitives/src/System/IO/FileAttributes.cs
+    startLine: 15
+  assemblies:
+  - System.IO.FileSystem.Primitives
+  namespace: System.IO
+  summary: Reserved for future use.
+  syntax:
+    content: Device = 64
+- uid: System.IO.FileAttributes.Normal
+  id: Normal
+  parent: System.IO.FileAttributes
+  href: System.IO.FileAttributes.yml
+  name: Normal
+  fullName: System.IO.FileAttributes.Normal
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem.Primitives/src/System/IO/FileAttributes.cs
+    startLine: 16
+  assemblies:
+  - System.IO.FileSystem.Primitives
+  namespace: System.IO
+  summary: The file is a standard file that has no special attributes. This attribute is valid only if it is used alone.
+  syntax:
+    content: Normal = 128
+- uid: System.IO.FileAttributes.Temporary
+  id: Temporary
+  parent: System.IO.FileAttributes
+  href: System.IO.FileAttributes.yml
+  name: Temporary
+  fullName: System.IO.FileAttributes.Temporary
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem.Primitives/src/System/IO/FileAttributes.cs
+    startLine: 17
+  assemblies:
+  - System.IO.FileSystem.Primitives
+  namespace: System.IO
+  summary: The file is temporary. A temporary file contains data that is needed while an application is executing but is not needed after the application is finished. File systems try to keep all the data in memory for quicker access rather than flushing the data back to mass storage. A temporary file should be deleted by the application as soon as it is no longer needed.
+  syntax:
+    content: Temporary = 256
+- uid: System.IO.FileAttributes.SparseFile
+  id: SparseFile
+  parent: System.IO.FileAttributes
+  href: System.IO.FileAttributes.yml
+  name: SparseFile
+  fullName: System.IO.FileAttributes.SparseFile
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem.Primitives/src/System/IO/FileAttributes.cs
+    startLine: 18
+  assemblies:
+  - System.IO.FileSystem.Primitives
+  namespace: System.IO
+  summary: The file is a sparse file. Sparse files are typically large files whose data consists of mostly zeros.
+  syntax:
+    content: SparseFile = 512
+- uid: System.IO.FileAttributes.ReparsePoint
+  id: ReparsePoint
+  parent: System.IO.FileAttributes
+  href: System.IO.FileAttributes.yml
+  name: ReparsePoint
+  fullName: System.IO.FileAttributes.ReparsePoint
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem.Primitives/src/System/IO/FileAttributes.cs
+    startLine: 19
+  assemblies:
+  - System.IO.FileSystem.Primitives
+  namespace: System.IO
+  summary: The file contains a reparse point, which is a block of user-defined data associated with a file or a directory.
+  syntax:
+    content: ReparsePoint = 1024
+- uid: System.IO.FileAttributes.Compressed
+  id: Compressed
+  parent: System.IO.FileAttributes
+  href: System.IO.FileAttributes.yml
+  name: Compressed
+  fullName: System.IO.FileAttributes.Compressed
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem.Primitives/src/System/IO/FileAttributes.cs
+    startLine: 20
+  assemblies:
+  - System.IO.FileSystem.Primitives
+  namespace: System.IO
+  summary: The file is compressed.
+  syntax:
+    content: Compressed = 2048
+- uid: System.IO.FileAttributes.Offline
+  id: Offline
+  parent: System.IO.FileAttributes
+  href: System.IO.FileAttributes.yml
+  name: Offline
+  fullName: System.IO.FileAttributes.Offline
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem.Primitives/src/System/IO/FileAttributes.cs
+    startLine: 21
+  assemblies:
+  - System.IO.FileSystem.Primitives
+  namespace: System.IO
+  summary: The file is offline. The data of the file is not immediately available.
+  syntax:
+    content: Offline = 4096
+- uid: System.IO.FileAttributes.NotContentIndexed
+  id: NotContentIndexed
+  parent: System.IO.FileAttributes
+  href: System.IO.FileAttributes.yml
+  name: NotContentIndexed
+  fullName: System.IO.FileAttributes.NotContentIndexed
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem.Primitives/src/System/IO/FileAttributes.cs
+    startLine: 22
+  assemblies:
+  - System.IO.FileSystem.Primitives
+  namespace: System.IO
+  summary: The file will not be indexed by the operating system's content indexing service.
+  syntax:
+    content: NotContentIndexed = 8192
+- uid: System.IO.FileAttributes.Encrypted
+  id: Encrypted
+  parent: System.IO.FileAttributes
+  href: System.IO.FileAttributes.yml
+  name: Encrypted
+  fullName: System.IO.FileAttributes.Encrypted
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem.Primitives/src/System/IO/FileAttributes.cs
+    startLine: 23
+  assemblies:
+  - System.IO.FileSystem.Primitives
+  namespace: System.IO
+  summary: The file or directory is encrypted. For a file, this means that all data in the file is encrypted. For a directory, this means that encryption is the default for newly created files and directories.
+  syntax:
+    content: Encrypted = 16384
+- uid: System.IO.FileAttributes.IntegrityStream
+  id: IntegrityStream
+  parent: System.IO.FileAttributes
+  href: System.IO.FileAttributes.yml
+  name: IntegrityStream
+  fullName: System.IO.FileAttributes.IntegrityStream
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem.Primitives/src/System/IO/FileAttributes.cs
+    startLine: 24
+  assemblies:
+  - System.IO.FileSystem.Primitives
+  namespace: System.IO
+  summary: The file or directory includes data integrity support. When this value is applied to a file, all data streams in the file have integrity support. When this value is applied to a directory, all new files and subdirectories within that directory, by default, include integrity support.
+  syntax:
+    content: IntegrityStream = 32768
+- uid: System.IO.FileAttributes.NoScrubData
+  id: NoScrubData
+  parent: System.IO.FileAttributes
+  href: System.IO.FileAttributes.yml
+  name: NoScrubData
+  fullName: System.IO.FileAttributes.NoScrubData
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem.Primitives/src/System/IO/FileAttributes.cs
+    startLine: 25
+  assemblies:
+  - System.IO.FileSystem.Primitives
+  namespace: System.IO
+  summary: The file or directory is excluded from the data integrity scan. When this value is applied to a directory, by default, all new files and subdirectories within that directory are excluded from data integrity.
+  syntax:
+    content: NoScrubData = 131072
+references:
+- uid: System.IO
+  isExternal: false
+  name: System.IO
+  fullName: System.IO

@@ -1,0 +1,1270 @@
+items:
+- uid: System.Xml.XmlNode
+  id: XmlNode
+  parent: System.Xml
+  children:
+  - System.Xml.XmlNode.AppendChild(System.Xml.XmlNode)
+  - System.Xml.XmlNode.Attributes
+  - System.Xml.XmlNode.BaseURI
+  - System.Xml.XmlNode.ChildNodes
+  - System.Xml.XmlNode.CloneNode(System.Boolean)
+  - System.Xml.XmlNode.FirstChild
+  - System.Xml.XmlNode.GetEnumerator
+  - System.Xml.XmlNode.GetNamespaceOfPrefix(System.String)
+  - System.Xml.XmlNode.GetPrefixOfNamespace(System.String)
+  - System.Xml.XmlNode.HasChildNodes
+  - System.Xml.XmlNode.InnerText
+  - System.Xml.XmlNode.InnerXml
+  - System.Xml.XmlNode.InsertAfter(System.Xml.XmlNode,System.Xml.XmlNode)
+  - System.Xml.XmlNode.InsertBefore(System.Xml.XmlNode,System.Xml.XmlNode)
+  - System.Xml.XmlNode.IsReadOnly
+  - System.Xml.XmlNode.Item(System.String)
+  - System.Xml.XmlNode.Item(System.String,System.String)
+  - System.Xml.XmlNode.LastChild
+  - System.Xml.XmlNode.LocalName
+  - System.Xml.XmlNode.Name
+  - System.Xml.XmlNode.NamespaceURI
+  - System.Xml.XmlNode.NextSibling
+  - System.Xml.XmlNode.NodeType
+  - System.Xml.XmlNode.Normalize
+  - System.Xml.XmlNode.OuterXml
+  - System.Xml.XmlNode.OwnerDocument
+  - System.Xml.XmlNode.ParentNode
+  - System.Xml.XmlNode.Prefix
+  - System.Xml.XmlNode.PrependChild(System.Xml.XmlNode)
+  - System.Xml.XmlNode.PreviousSibling
+  - System.Xml.XmlNode.PreviousText
+  - System.Xml.XmlNode.RemoveAll
+  - System.Xml.XmlNode.RemoveChild(System.Xml.XmlNode)
+  - System.Xml.XmlNode.ReplaceChild(System.Xml.XmlNode,System.Xml.XmlNode)
+  - System.Xml.XmlNode.Supports(System.String,System.String)
+  - System.Xml.XmlNode.System#Collections#IEnumerable#GetEnumerator
+  - System.Xml.XmlNode.Value
+  - System.Xml.XmlNode.WriteContentTo(XmlWriter)
+  - System.Xml.XmlNode.WriteTo(XmlWriter)
+  href: System.Xml.XmlNode.yml
+  name: XmlNode
+  fullName: System.Xml.XmlNode
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNode.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNode.cs
+    startLine: 12
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Represents a single node in the XML document.
+  syntax:
+    content: 'public abstract class XmlNode : IEnumerable'
+    content.vb: Public MustInherit Class XmlNode Implements IEnumerable
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Xml.XmlNode.Name
+  id: Name
+  parent: System.Xml.XmlNode
+  href: System.Xml.XmlNode.yml
+  name: Name
+  fullName: System.Xml.XmlNode.Name
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNode.cs
+    startLine: 29
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets the qualified name of the node, when overridden in a derived class.
+  syntax:
+    content: public abstract string Name { get; }
+    content.vb: Public MustOverride ReadOnly Property Name As String
+    parameters: []
+    return:
+      type: System.String
+- uid: System.Xml.XmlNode.Value
+  id: Value
+  parent: System.Xml.XmlNode
+  href: System.Xml.XmlNode.yml
+  name: Value
+  fullName: System.Xml.XmlNode.Value
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNode.cs
+    startLine: 35
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets or sets the value of the node.
+  syntax:
+    content: public virtual string Value { get; set; }
+    content.vb: Public Overridable Property Value As String
+    parameters: []
+    return:
+      type: System.String
+  exceptions:
+  - type: System.ArgumentException
+    description: Setting the value of a node that is read-only.
+  - type: System.InvalidOperationException
+    description: Setting the value of a node that is not supposed to have a value (for example, an Element node).
+- uid: System.Xml.XmlNode.NodeType
+  id: NodeType
+  parent: System.Xml.XmlNode
+  href: System.Xml.XmlNode.yml
+  name: NodeType
+  fullName: System.Xml.XmlNode.NodeType
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNode.cs
+    startLine: 42
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets the type of the current node, when overridden in a derived class.
+  syntax:
+    content: public abstract XmlNodeType NodeType { get; }
+    content.vb: Public MustOverride ReadOnly Property NodeType As XmlNodeType
+    parameters: []
+    return:
+      type: XmlNodeType
+- uid: System.Xml.XmlNode.ParentNode
+  id: ParentNode
+  parent: System.Xml.XmlNode
+  href: System.Xml.XmlNode.yml
+  name: ParentNode
+  fullName: System.Xml.XmlNode.ParentNode
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNode.cs
+    startLine: 48
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets the parent of this node (for nodes that can have parents).
+  syntax:
+    content: public virtual XmlNode ParentNode { get; }
+    content.vb: Public Overridable ReadOnly Property ParentNode As XmlNode
+    parameters: []
+    return:
+      type: System.Xml.XmlNode
+- uid: System.Xml.XmlNode.ChildNodes
+  id: ChildNodes
+  parent: System.Xml.XmlNode
+  href: System.Xml.XmlNode.yml
+  name: ChildNodes
+  fullName: System.Xml.XmlNode.ChildNodes
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNode.cs
+    startLine: 80
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets all the child nodes of the node.
+  syntax:
+    content: public virtual XmlNodeList ChildNodes { get; }
+    content.vb: Public Overridable ReadOnly Property ChildNodes As XmlNodeList
+    parameters: []
+    return:
+      type: System.Xml.XmlNodeList
+- uid: System.Xml.XmlNode.PreviousSibling
+  id: PreviousSibling
+  parent: System.Xml.XmlNode
+  href: System.Xml.XmlNode.yml
+  name: PreviousSibling
+  fullName: System.Xml.XmlNode.PreviousSibling
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNode.cs
+    startLine: 86
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets the node immediately preceding this node.
+  syntax:
+    content: public virtual XmlNode PreviousSibling { get; }
+    content.vb: Public Overridable ReadOnly Property PreviousSibling As XmlNode
+    parameters: []
+    return:
+      type: System.Xml.XmlNode
+- uid: System.Xml.XmlNode.NextSibling
+  id: NextSibling
+  parent: System.Xml.XmlNode
+  href: System.Xml.XmlNode.yml
+  name: NextSibling
+  fullName: System.Xml.XmlNode.NextSibling
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNode.cs
+    startLine: 92
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets the node immediately following this node.
+  syntax:
+    content: public virtual XmlNode NextSibling { get; }
+    content.vb: Public Overridable ReadOnly Property NextSibling As XmlNode
+    parameters: []
+    return:
+      type: System.Xml.XmlNode
+- uid: System.Xml.XmlNode.Attributes
+  id: Attributes
+  parent: System.Xml.XmlNode
+  href: System.Xml.XmlNode.yml
+  name: Attributes
+  fullName: System.Xml.XmlNode.Attributes
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNode.cs
+    startLine: 99
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets an @'System.Xml.XmlAttributeCollection' containing the attributes of this node.
+  syntax:
+    content: public virtual XmlAttributeCollection Attributes { get; }
+    content.vb: Public Overridable ReadOnly Property Attributes As XmlAttributeCollection
+    parameters: []
+    return:
+      type: System.Xml.XmlAttributeCollection
+- uid: System.Xml.XmlNode.OwnerDocument
+  id: OwnerDocument
+  parent: System.Xml.XmlNode
+  href: System.Xml.XmlNode.yml
+  name: OwnerDocument
+  fullName: System.Xml.XmlNode.OwnerDocument
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNode.cs
+    startLine: 105
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets the @'System.Xml.XmlDocument' to which this node belongs.
+  syntax:
+    content: public virtual XmlDocument OwnerDocument { get; }
+    content.vb: Public Overridable ReadOnly Property OwnerDocument As XmlDocument
+    parameters: []
+    return:
+      type: System.Xml.XmlDocument
+- uid: System.Xml.XmlNode.FirstChild
+  id: FirstChild
+  parent: System.Xml.XmlNode
+  href: System.Xml.XmlNode.yml
+  name: FirstChild
+  fullName: System.Xml.XmlNode.FirstChild
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNode.cs
+    startLine: 117
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets the first child of the node.
+  syntax:
+    content: public virtual XmlNode FirstChild { get; }
+    content.vb: Public Overridable ReadOnly Property FirstChild As XmlNode
+    parameters: []
+    return:
+      type: System.Xml.XmlNode
+- uid: System.Xml.XmlNode.LastChild
+  id: LastChild
+  parent: System.Xml.XmlNode
+  href: System.Xml.XmlNode.yml
+  name: LastChild
+  fullName: System.Xml.XmlNode.LastChild
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNode.cs
+    startLine: 130
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets the last child of the node.
+  syntax:
+    content: public virtual XmlNode LastChild { get; }
+    content.vb: Public Overridable ReadOnly Property LastChild As XmlNode
+    parameters: []
+    return:
+      type: System.Xml.XmlNode
+- uid: System.Xml.XmlNode.InsertBefore(System.Xml.XmlNode,System.Xml.XmlNode)
+  id: InsertBefore(System.Xml.XmlNode,System.Xml.XmlNode)
+  parent: System.Xml.XmlNode
+  href: System.Xml.XmlNode.yml
+  name: InsertBefore(XmlNode, XmlNode)
+  fullName: System.Xml.XmlNode.InsertBefore(System.Xml.XmlNode, System.Xml.XmlNode)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNode.cs
+    startLine: 170
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Inserts the specified node immediately before the specified reference node.
+  syntax:
+    content: public virtual XmlNode InsertBefore(XmlNode newChild, XmlNode refChild)
+    content.vb: Public Overridable Function InsertBefore(newChild As XmlNode, refChild As XmlNode) As XmlNode
+    parameters:
+    - id: newChild
+      type: System.Xml.XmlNode
+      description: The XmlNode to insert.
+    - id: refChild
+      type: System.Xml.XmlNode
+      description: The XmlNode that is the reference node. The *newChild* is placed before this node.
+    return:
+      type: System.Xml.XmlNode
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The current node is of a type that does not allow child nodes of the type of the *newChild* node.The *newChild* is an ancestor of this node.
+  - type: System.ArgumentException
+    description: The *newChild* was created from a different document than the one that created this node.The *refChild* is not a child of this node.This node is read-only.
+- uid: System.Xml.XmlNode.InsertAfter(System.Xml.XmlNode,System.Xml.XmlNode)
+  id: InsertAfter(System.Xml.XmlNode,System.Xml.XmlNode)
+  parent: System.Xml.XmlNode
+  href: System.Xml.XmlNode.yml
+  name: InsertAfter(XmlNode, XmlNode)
+  fullName: System.Xml.XmlNode.InsertAfter(System.Xml.XmlNode, System.Xml.XmlNode)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNode.cs
+    startLine: 284
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Inserts the specified node immediately after the specified reference node.
+  syntax:
+    content: public virtual XmlNode InsertAfter(XmlNode newChild, XmlNode refChild)
+    content.vb: Public Overridable Function InsertAfter(newChild As XmlNode, refChild As XmlNode) As XmlNode
+    parameters:
+    - id: newChild
+      type: System.Xml.XmlNode
+      description: The XmlNode to insert.
+    - id: refChild
+      type: System.Xml.XmlNode
+      description: The XmlNode that is the reference node. The *newNode* is placed after the *refNode*.
+    return:
+      type: System.Xml.XmlNode
+  exceptions:
+  - type: System.InvalidOperationException
+    description: This node is of a type that does not allow child nodes of the type of the *newChild* node.The *newChild* is an ancestor of this node.
+  - type: System.ArgumentException
+    description: The *newChild* was created from a different document than the one that created this node.The *refChild* is not a child of this node.This node is read-only.
+- uid: System.Xml.XmlNode.ReplaceChild(System.Xml.XmlNode,System.Xml.XmlNode)
+  id: ReplaceChild(System.Xml.XmlNode,System.Xml.XmlNode)
+  parent: System.Xml.XmlNode
+  href: System.Xml.XmlNode.yml
+  name: ReplaceChild(XmlNode, XmlNode)
+  fullName: System.Xml.XmlNode.ReplaceChild(System.Xml.XmlNode, System.Xml.XmlNode)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNode.cs
+    startLine: 402
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Replaces the child node *oldChild* with *newChild* node.
+  syntax:
+    content: public virtual XmlNode ReplaceChild(XmlNode newChild, XmlNode oldChild)
+    content.vb: Public Overridable Function ReplaceChild(newChild As XmlNode, oldChild As XmlNode) As XmlNode
+    parameters:
+    - id: newChild
+      type: System.Xml.XmlNode
+      description: The new node to put in the child list.
+    - id: oldChild
+      type: System.Xml.XmlNode
+      description: The node being replaced in the list.
+    return:
+      type: System.Xml.XmlNode
+  exceptions:
+  - type: System.InvalidOperationException
+    description: This node is of a type that does not allow child nodes of the type of the *newChild* node.The *newChild* is an ancestor of this node.
+  - type: System.ArgumentException
+    description: The *newChild* was created from a different document than the one that created this node.This node is read-only.The *oldChild* is not a child of this node.
+- uid: System.Xml.XmlNode.RemoveChild(System.Xml.XmlNode)
+  id: RemoveChild(System.Xml.XmlNode)
+  parent: System.Xml.XmlNode
+  href: System.Xml.XmlNode.yml
+  name: RemoveChild(XmlNode)
+  fullName: System.Xml.XmlNode.RemoveChild(System.Xml.XmlNode)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNode.cs
+    startLine: 411
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Removes specified child node.
+  syntax:
+    content: public virtual XmlNode RemoveChild(XmlNode oldChild)
+    content.vb: Public Overridable Function RemoveChild(oldChild As XmlNode) As XmlNode
+    parameters:
+    - id: oldChild
+      type: System.Xml.XmlNode
+      description: The node being removed.
+    return:
+      type: System.Xml.XmlNode
+  exceptions:
+  - type: System.ArgumentException
+    description: The *oldChild* is not a child of this node. Or this node is read-only.
+- uid: System.Xml.XmlNode.PrependChild(System.Xml.XmlNode)
+  id: PrependChild(System.Xml.XmlNode)
+  parent: System.Xml.XmlNode
+  href: System.Xml.XmlNode.yml
+  name: PrependChild(XmlNode)
+  fullName: System.Xml.XmlNode.PrependChild(System.Xml.XmlNode)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNode.cs
+    startLine: 497
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Adds the specified node to the beginning of the list of child nodes for this node.
+  syntax:
+    content: public virtual XmlNode PrependChild(XmlNode newChild)
+    content.vb: Public Overridable Function PrependChild(newChild As XmlNode) As XmlNode
+    parameters:
+    - id: newChild
+      type: System.Xml.XmlNode
+      description: The node to add. All the contents of the node to be added are moved into the specified location.
+    return:
+      type: System.Xml.XmlNode
+  exceptions:
+  - type: System.InvalidOperationException
+    description: This node is of a type that does not allow child nodes of the type of the *newChild* node.The *newChild* is an ancestor of this node.
+  - type: System.ArgumentException
+    description: The *newChild* was created from a different document than the one that created this node.This node is read-only.
+- uid: System.Xml.XmlNode.AppendChild(System.Xml.XmlNode)
+  id: AppendChild(System.Xml.XmlNode)
+  parent: System.Xml.XmlNode
+  href: System.Xml.XmlNode.yml
+  name: AppendChild(XmlNode)
+  fullName: System.Xml.XmlNode.AppendChild(System.Xml.XmlNode)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNode.cs
+    startLine: 503
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Adds the specified node to the end of the list of child nodes, of this node.
+  syntax:
+    content: public virtual XmlNode AppendChild(XmlNode newChild)
+    content.vb: Public Overridable Function AppendChild(newChild As XmlNode) As XmlNode
+    parameters:
+    - id: newChild
+      type: System.Xml.XmlNode
+      description: The node to add. All the contents of the node to be added are moved into the specified location.
+    return:
+      type: System.Xml.XmlNode
+  exceptions:
+  - type: System.InvalidOperationException
+    description: This node is of a type that does not allow child nodes of the type of the *newChild* node.The *newChild* is an ancestor of this node.
+  - type: System.ArgumentException
+    description: The *newChild* was created from a different document than the one that created this node.This node is read-only.
+- uid: System.Xml.XmlNode.HasChildNodes
+  id: HasChildNodes
+  parent: System.Xml.XmlNode
+  href: System.Xml.XmlNode.yml
+  name: HasChildNodes
+  fullName: System.Xml.XmlNode.HasChildNodes
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNode.cs
+    startLine: 637
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets a value indicating whether this node has any child nodes.
+  syntax:
+    content: public virtual bool HasChildNodes { get; }
+    content.vb: Public Overridable ReadOnly Property HasChildNodes As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Xml.XmlNode.CloneNode(System.Boolean)
+  id: CloneNode(System.Boolean)
+  parent: System.Xml.XmlNode
+  href: System.Xml.XmlNode.yml
+  name: CloneNode(Boolean)
+  fullName: System.Xml.XmlNode.CloneNode(System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNode.cs
+    startLine: 643
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Creates a duplicate of the node, when overridden in a derived class.
+  syntax:
+    content: public abstract XmlNode CloneNode(bool deep)
+    content.vb: Public MustOverride Function CloneNode(deep As Boolean) As XmlNode
+    parameters:
+    - id: deep
+      type: System.Boolean
+      description: true to recursively clone the subtree under the specified node; false to clone only the node itself.
+    return:
+      type: System.Xml.XmlNode
+  exceptions:
+  - type: System.InvalidOperationException
+    description: Calling this method on a node type that cannot be cloned.
+- uid: System.Xml.XmlNode.Normalize
+  id: Normalize
+  parent: System.Xml.XmlNode
+  href: System.Xml.XmlNode.yml
+  name: Normalize()
+  fullName: System.Xml.XmlNode.Normalize()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNode.cs
+    startLine: 660
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Puts all XmlText nodes in the full depth of the sub-tree underneath this XmlNode into a "normal" form where only markup (that is, tags, comments, processing instructions, CDATA sections, and entity references) separates XmlText nodes, that is, there are no adjacent XmlText nodes.
+  syntax:
+    content: public virtual void Normalize()
+    content.vb: Public Overridable Sub Normalize
+- uid: System.Xml.XmlNode.Supports(System.String,System.String)
+  id: Supports(System.String,System.String)
+  parent: System.Xml.XmlNode
+  href: System.Xml.XmlNode.yml
+  name: Supports(String, String)
+  fullName: System.Xml.XmlNode.Supports(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNode.cs
+    startLine: 739
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Tests if the DOM implementation implements a specific feature.
+  syntax:
+    content: public virtual bool Supports(string feature, string version)
+    content.vb: Public Overridable Function Supports(feature As String, version As String) As Boolean
+    parameters:
+    - id: feature
+      type: System.String
+      description: The package name of the feature to test. This name is not case-sensitive.
+    - id: version
+      type: System.String
+      description: The version number of the package name to test. If the version is not specified (null), supporting any version of the feature causes the method to return true.
+    return:
+      type: System.Boolean
+- uid: System.Xml.XmlNode.NamespaceURI
+  id: NamespaceURI
+  parent: System.Xml.XmlNode
+  href: System.Xml.XmlNode.yml
+  name: NamespaceURI
+  fullName: System.Xml.XmlNode.NamespaceURI
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNode.cs
+    startLine: 750
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets the namespace URI of this node.
+  syntax:
+    content: public virtual string NamespaceURI { get; }
+    content.vb: Public Overridable ReadOnly Property NamespaceURI As String
+    parameters: []
+    return:
+      type: System.String
+- uid: System.Xml.XmlNode.Prefix
+  id: Prefix
+  parent: System.Xml.XmlNode
+  href: System.Xml.XmlNode.yml
+  name: Prefix
+  fullName: System.Xml.XmlNode.Prefix
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNode.cs
+    startLine: 756
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets or sets the namespace prefix of this node.
+  syntax:
+    content: public virtual string Prefix { get; set; }
+    content.vb: Public Overridable Property Prefix As String
+    parameters: []
+    return:
+      type: System.String
+  exceptions:
+  - type: System.ArgumentException
+    description: This node is read-only.
+  - type: System.Xml.XmlException
+    description: The specified prefix contains an invalid character.The specified prefix is malformed.The specified prefix is "xml" and the namespaceURI of this node is different from "http://www.w3.org/XML/1998/namespace".This node is an attribute and the specified prefix is "xmlns" and the namespaceURI of this node is different from "http://www.w3.org/2000/xmlns/ ".This node is an attribute and the qualifiedName of this node is "xmlns".
+- uid: System.Xml.XmlNode.LocalName
+  id: LocalName
+  parent: System.Xml.XmlNode
+  href: System.Xml.XmlNode.yml
+  name: LocalName
+  fullName: System.Xml.XmlNode.LocalName
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNode.cs
+    startLine: 763
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets the local name of the node, when overridden in a derived class.
+  syntax:
+    content: public abstract string LocalName { get; }
+    content.vb: Public MustOverride ReadOnly Property LocalName As String
+    parameters: []
+    return:
+      type: System.String
+- uid: System.Xml.XmlNode.IsReadOnly
+  id: IsReadOnly
+  parent: System.Xml.XmlNode
+  href: System.Xml.XmlNode.yml
+  name: IsReadOnly
+  fullName: System.Xml.XmlNode.IsReadOnly
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNode.cs
+    startLine: 771
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets a value indicating whether the node is read-only.
+  syntax:
+    content: public virtual bool IsReadOnly { get; }
+    content.vb: Public Overridable ReadOnly Property IsReadOnly As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Xml.XmlNode.System#Collections#IEnumerable#GetEnumerator
+  id: System#Collections#IEnumerable#GetEnumerator
+  parent: System.Xml.XmlNode
+  href: System.Xml.XmlNode.yml
+  name: IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: System.Xml.XmlNode.System.Collections.IEnumerable.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNode.cs
+    startLine: 804
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: For a description of this member, see @'System.Xml.XmlNode.GetEnumerator'.
+  syntax:
+    content: IEnumerator IEnumerable.GetEnumerator()
+    content.vb: Function System.Collections.IEnumerable.GetEnumerator As IEnumerator Implements IEnumerable.GetEnumerator
+    return:
+      type: System.Collections.IEnumerator
+- uid: System.Xml.XmlNode.GetEnumerator
+  id: GetEnumerator
+  parent: System.Xml.XmlNode
+  href: System.Xml.XmlNode.yml
+  name: GetEnumerator()
+  fullName: System.Xml.XmlNode.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNode.cs
+    startLine: 809
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Get an enumerator that iterates through the child nodes in the current node.
+  syntax:
+    content: public IEnumerator GetEnumerator()
+    content.vb: Public Function GetEnumerator As IEnumerator
+    return:
+      type: System.Collections.IEnumerator
+- uid: System.Xml.XmlNode.InnerText
+  id: InnerText
+  parent: System.Xml.XmlNode
+  href: System.Xml.XmlNode.yml
+  name: InnerText
+  fullName: System.Xml.XmlNode.InnerText
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNode.cs
+    startLine: 833
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets or sets the concatenated values of the node and all its child nodes.
+  syntax:
+    content: public virtual string InnerText { get; set; }
+    content.vb: Public Overridable Property InnerText As String
+    parameters: []
+    return:
+      type: System.String
+- uid: System.Xml.XmlNode.OuterXml
+  id: OuterXml
+  parent: System.Xml.XmlNode
+  href: System.Xml.XmlNode.yml
+  name: OuterXml
+  fullName: System.Xml.XmlNode.OuterXml
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNode.cs
+    startLine: 878
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets the markup containing this node and all its child nodes.
+  syntax:
+    content: public virtual string OuterXml { get; }
+    content.vb: Public Overridable ReadOnly Property OuterXml As String
+    parameters: []
+    return:
+      type: System.String
+- uid: System.Xml.XmlNode.InnerXml
+  id: InnerXml
+  parent: System.Xml.XmlNode
+  href: System.Xml.XmlNode.yml
+  name: InnerXml
+  fullName: System.Xml.XmlNode.InnerXml
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNode.cs
+    startLine: 897
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets or sets the markup representing only the child nodes of this node.
+  syntax:
+    content: public virtual string InnerXml { get; set; }
+    content.vb: Public Overridable Property InnerXml As String
+    parameters: []
+    return:
+      type: System.String
+  exceptions:
+  - type: System.InvalidOperationException
+    description: Setting this property on a node that cannot have child nodes.
+  - type: System.Xml.XmlException
+    description: The XML specified when setting this property is not well-formed.
+- uid: System.Xml.XmlNode.BaseURI
+  id: BaseURI
+  parent: System.Xml.XmlNode
+  href: System.Xml.XmlNode.yml
+  name: BaseURI
+  fullName: System.Xml.XmlNode.BaseURI
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNode.cs
+    startLine: 920
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets the base URI of the current node.
+  syntax:
+    content: public virtual string BaseURI { get; }
+    content.vb: Public Overridable ReadOnly Property BaseURI As String
+    parameters: []
+    return:
+      type: System.String
+- uid: System.Xml.XmlNode.WriteTo(XmlWriter)
+  id: WriteTo(XmlWriter)
+  parent: System.Xml.XmlNode
+  href: System.Xml.XmlNode.yml
+  name: WriteTo(XmlWriter)
+  fullName: System.Xml.XmlNode.WriteTo(XmlWriter)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNode.cs
+    startLine: 943
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  syntax:
+    content: public abstract void WriteTo(XmlWriter w)
+    content.vb: Public MustOverride Sub WriteTo(w As XmlWriter)
+    parameters:
+    - id: w
+      type: XmlWriter
+- uid: System.Xml.XmlNode.WriteContentTo(XmlWriter)
+  id: WriteContentTo(XmlWriter)
+  parent: System.Xml.XmlNode
+  href: System.Xml.XmlNode.yml
+  name: WriteContentTo(XmlWriter)
+  fullName: System.Xml.XmlNode.WriteContentTo(XmlWriter)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNode.cs
+    startLine: 946
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  syntax:
+    content: public abstract void WriteContentTo(XmlWriter w)
+    content.vb: Public MustOverride Sub WriteContentTo(w As XmlWriter)
+    parameters:
+    - id: w
+      type: XmlWriter
+- uid: System.Xml.XmlNode.RemoveAll
+  id: RemoveAll
+  parent: System.Xml.XmlNode
+  href: System.Xml.XmlNode.yml
+  name: RemoveAll()
+  fullName: System.Xml.XmlNode.RemoveAll()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNode.cs
+    startLine: 950
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Removes all the child nodes and/or attributes of the current node.
+  syntax:
+    content: public virtual void RemoveAll()
+    content.vb: Public Overridable Sub RemoveAll
+- uid: System.Xml.XmlNode.GetNamespaceOfPrefix(System.String)
+  id: GetNamespaceOfPrefix(System.String)
+  parent: System.Xml.XmlNode
+  href: System.Xml.XmlNode.yml
+  name: GetNamespaceOfPrefix(String)
+  fullName: System.Xml.XmlNode.GetNamespaceOfPrefix(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNode.cs
+    startLine: 976
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Looks up the closest xmlns declaration for the given prefix that is in scope for the current node and returns the namespace URI in the declaration.
+  syntax:
+    content: public virtual string GetNamespaceOfPrefix(string prefix)
+    content.vb: Public Overridable Function GetNamespaceOfPrefix(prefix As String) As String
+    parameters:
+    - id: prefix
+      type: System.String
+      description: The prefix whose namespace URI you want to find.
+    return:
+      type: System.String
+- uid: System.Xml.XmlNode.GetPrefixOfNamespace(System.String)
+  id: GetPrefixOfNamespace(System.String)
+  parent: System.Xml.XmlNode
+  href: System.Xml.XmlNode.yml
+  name: GetPrefixOfNamespace(String)
+  fullName: System.Xml.XmlNode.GetPrefixOfNamespace(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNode.cs
+    startLine: 1063
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Looks up the closest xmlns declaration for the given namespace URI that is in scope for the current node and returns the prefix defined in that declaration.
+  syntax:
+    content: public virtual string GetPrefixOfNamespace(string namespaceURI)
+    content.vb: Public Overridable Function GetPrefixOfNamespace(namespaceURI As String) As String
+    parameters:
+    - id: namespaceURI
+      type: System.String
+      description: The namespace URI whose prefix you want to find.
+    return:
+      type: System.String
+- uid: System.Xml.XmlNode.Item(System.String)
+  id: Item(System.String)
+  parent: System.Xml.XmlNode
+  href: System.Xml.XmlNode.yml
+  name: Item[String]
+  name.vb: Item(String)
+  fullName: System.Xml.XmlNode.Item[System.String]
+  fullName.vb: System.Xml.XmlNode.Item(System.String)
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNode.cs
+    startLine: 1140
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets the first child element with the specified @'System.Xml.XmlNode.Name'.
+  syntax:
+    content: public virtual XmlElement this[string name] { get; }
+    content.vb: Public Overridable ReadOnly Property Item(name As String) As XmlElement
+    parameters:
+    - id: name
+      type: System.String
+      description: The qualified name of the element to retrieve.
+    return:
+      type: System.Xml.XmlElement
+- uid: System.Xml.XmlNode.Item(System.String,System.String)
+  id: Item(System.String,System.String)
+  parent: System.Xml.XmlNode
+  href: System.Xml.XmlNode.yml
+  name: Item[String, String]
+  name.vb: Item(String, String)
+  fullName: System.Xml.XmlNode.Item[System.String, System.String]
+  fullName.vb: System.Xml.XmlNode.Item(System.String, System.String)
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNode.cs
+    startLine: 1155
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets the first child element with the specified @'System.Xml.XmlNode.LocalName' and @'System.Xml.XmlNode.NamespaceURI'.
+  syntax:
+    content: public virtual XmlElement this[string localname, string ns] { get; }
+    content.vb: Public Overridable ReadOnly Property Item(localname As String, ns As String) As XmlElement
+    parameters:
+    - id: localname
+      type: System.String
+      description: The local name of the element.
+    - id: ns
+      type: System.String
+      description: The namespace URI of the element.
+    return:
+      type: System.Xml.XmlElement
+- uid: System.Xml.XmlNode.PreviousText
+  id: PreviousText
+  parent: System.Xml.XmlNode
+  href: System.Xml.XmlNode.yml
+  name: PreviousText
+  fullName: System.Xml.XmlNode.PreviousText
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNode.cs
+    startLine: 1301
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets the text node that immediately precedes this node.
+  syntax:
+    content: public virtual XmlNode PreviousText { get; }
+    content.vb: Public Overridable ReadOnly Property PreviousText As XmlNode
+    parameters: []
+    return:
+      type: System.Xml.XmlNode
+references:
+- uid: System.Xml
+  isExternal: false
+  name: System.Xml
+  fullName: System.Xml
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: XmlNodeType
+  isExternal: true
+  name: XmlNodeType
+  fullName: XmlNodeType
+- uid: System.Xml.XmlNode
+  parent: System.Xml
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: XmlNode
+  fullName: System.Xml.XmlNode
+  type: Class
+- uid: System.Xml.XmlNodeList
+  parent: System.Xml
+  isExternal: false
+  href: System.Xml.XmlNodeList.yml
+  name: XmlNodeList
+  fullName: System.Xml.XmlNodeList
+  type: Class
+- uid: System.Xml.XmlAttributeCollection
+  isExternal: false
+  href: System.Xml.XmlAttributeCollection.yml
+  name: XmlAttributeCollection
+  fullName: System.Xml.XmlAttributeCollection
+  type: Class
+- uid: System.Xml.XmlDocument
+  parent: System.Xml
+  isExternal: false
+  href: System.Xml.XmlDocument.yml
+  name: XmlDocument
+  fullName: System.Xml.XmlDocument
+  type: Class
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  isExternal: false
+  name: System.Collections
+  fullName: System.Collections
+- uid: XmlWriter
+  isExternal: true
+  name: XmlWriter
+  fullName: XmlWriter
+- uid: System.Xml.XmlElement
+  parent: System.Xml
+  isExternal: false
+  href: System.Xml.XmlElement.yml
+  name: XmlElement
+  fullName: System.Xml.XmlElement
+  type: Class

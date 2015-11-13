@@ -1,0 +1,646 @@
+items:
+- uid: System.Runtime.Loader.AssemblyLoadContext
+  id: AssemblyLoadContext
+  parent: System.Runtime.Loader
+  children:
+  - System.Runtime.Loader.AssemblyLoadContext.#ctor
+  - System.Runtime.Loader.AssemblyLoadContext.Default
+  - System.Runtime.Loader.AssemblyLoadContext.GetAssemblyName(System.String)
+  - System.Runtime.Loader.AssemblyLoadContext.GetLoadContext(System.Reflection.Assembly)
+  - System.Runtime.Loader.AssemblyLoadContext.InitializeDefaultContext(System.Runtime.Loader.AssemblyLoadContext)
+  - System.Runtime.Loader.AssemblyLoadContext.Load(System.Reflection.AssemblyName)
+  - System.Runtime.Loader.AssemblyLoadContext.LoadFromAssemblyName(System.Reflection.AssemblyName)
+  - System.Runtime.Loader.AssemblyLoadContext.LoadFromAssemblyPath(System.String)
+  - System.Runtime.Loader.AssemblyLoadContext.LoadFromNativeImagePath(System.String,System.String)
+  - System.Runtime.Loader.AssemblyLoadContext.LoadFromStream(System.IO.Stream)
+  - System.Runtime.Loader.AssemblyLoadContext.LoadFromStream(System.IO.Stream,System.IO.Stream)
+  - System.Runtime.Loader.AssemblyLoadContext.LoadUnmanagedDll(System.String)
+  - System.Runtime.Loader.AssemblyLoadContext.LoadUnmanagedDllFromPath(System.String)
+  - System.Runtime.Loader.AssemblyLoadContext.SetProfileOptimizationRoot(System.String)
+  - System.Runtime.Loader.AssemblyLoadContext.StartProfileOptimization(System.String)
+  href: System.Runtime.Loader.AssemblyLoadContext.yml
+  name: AssemblyLoadContext
+  fullName: System.Runtime.Loader.AssemblyLoadContext
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/Loader/AssemblyLoadContext.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/Loader/AssemblyLoadContext.cs
+    startLine: 18
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Loader
+  syntax:
+    content: public abstract class AssemblyLoadContext
+    content.vb: Public MustInherit Class AssemblyLoadContext
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Runtime.Loader.AssemblyLoadContext.#ctor
+  id: '#ctor'
+  parent: System.Runtime.Loader.AssemblyLoadContext
+  href: System.Runtime.Loader.AssemblyLoadContext.yml
+  name: AssemblyLoadContext()
+  fullName: System.Runtime.Loader.AssemblyLoadContext.AssemblyLoadContext()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Loader/AssemblyLoadContext.cs
+    startLine: 47
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Loader
+  syntax:
+    content: protected AssemblyLoadContext()
+    content.vb: Protected Sub New
+- uid: System.Runtime.Loader.AssemblyLoadContext.LoadFromAssemblyPath(System.String)
+  id: LoadFromAssemblyPath(System.String)
+  parent: System.Runtime.Loader.AssemblyLoadContext
+  href: System.Runtime.Loader.AssemblyLoadContext.yml
+  name: LoadFromAssemblyPath(String)
+  fullName: System.Runtime.Loader.AssemblyLoadContext.LoadFromAssemblyPath(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Loader/AssemblyLoadContext.cs
+    startLine: 66
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Loader
+  syntax:
+    content: protected Assembly LoadFromAssemblyPath(string assemblyPath)
+    content.vb: Protected Function LoadFromAssemblyPath(assemblyPath As String) As Assembly
+    parameters:
+    - id: assemblyPath
+      type: System.String
+    return:
+      type: System.Reflection.Assembly
+      description: 
+- uid: System.Runtime.Loader.AssemblyLoadContext.LoadFromNativeImagePath(System.String,System.String)
+  id: LoadFromNativeImagePath(System.String,System.String)
+  parent: System.Runtime.Loader.AssemblyLoadContext
+  href: System.Runtime.Loader.AssemblyLoadContext.yml
+  name: LoadFromNativeImagePath(String, String)
+  fullName: System.Runtime.Loader.AssemblyLoadContext.LoadFromNativeImagePath(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Loader/AssemblyLoadContext.cs
+    startLine: 83
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Loader
+  syntax:
+    content: protected Assembly LoadFromNativeImagePath(string nativeImagePath, string assemblyPath)
+    content.vb: Protected Function LoadFromNativeImagePath(nativeImagePath As String, assemblyPath As String) As Assembly
+    parameters:
+    - id: nativeImagePath
+      type: System.String
+    - id: assemblyPath
+      type: System.String
+    return:
+      type: System.Reflection.Assembly
+      description: 
+- uid: System.Runtime.Loader.AssemblyLoadContext.LoadFromStream(System.IO.Stream)
+  id: LoadFromStream(System.IO.Stream)
+  parent: System.Runtime.Loader.AssemblyLoadContext
+  href: System.Runtime.Loader.AssemblyLoadContext.yml
+  name: LoadFromStream(Stream)
+  fullName: System.Runtime.Loader.AssemblyLoadContext.LoadFromStream(System.IO.Stream)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Loader/AssemblyLoadContext.cs
+    startLine: 114
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Loader
+  syntax:
+    content: protected Assembly LoadFromStream(Stream assembly)
+    content.vb: Protected Function LoadFromStream(assembly As Stream) As Assembly
+    parameters:
+    - id: assembly
+      type: System.IO.Stream
+    return:
+      type: System.Reflection.Assembly
+      description: 
+- uid: System.Runtime.Loader.AssemblyLoadContext.LoadFromStream(System.IO.Stream,System.IO.Stream)
+  id: LoadFromStream(System.IO.Stream,System.IO.Stream)
+  parent: System.Runtime.Loader.AssemblyLoadContext
+  href: System.Runtime.Loader.AssemblyLoadContext.yml
+  name: LoadFromStream(Stream, Stream)
+  fullName: System.Runtime.Loader.AssemblyLoadContext.LoadFromStream(System.IO.Stream, System.IO.Stream)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Loader/AssemblyLoadContext.cs
+    startLine: 119
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Loader
+  syntax:
+    content: protected Assembly LoadFromStream(Stream assembly, Stream assemblySymbols)
+    content.vb: Protected Function LoadFromStream(assembly As Stream, assemblySymbols As Stream) As Assembly
+    parameters:
+    - id: assembly
+      type: System.IO.Stream
+    - id: assemblySymbols
+      type: System.IO.Stream
+    return:
+      type: System.Reflection.Assembly
+      description: 
+- uid: System.Runtime.Loader.AssemblyLoadContext.Load(System.Reflection.AssemblyName)
+  id: Load(System.Reflection.AssemblyName)
+  parent: System.Runtime.Loader.AssemblyLoadContext
+  href: System.Runtime.Loader.AssemblyLoadContext.yml
+  name: Load(AssemblyName)
+  fullName: System.Runtime.Loader.AssemblyLoadContext.Load(System.Reflection.AssemblyName)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Loader/AssemblyLoadContext.cs
+    startLine: 160
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Loader
+  syntax:
+    content: protected abstract Assembly Load(AssemblyName assemblyName)
+    content.vb: Protected MustOverride Function Load(assemblyName As AssemblyName) As Assembly
+    parameters:
+    - id: assemblyName
+      type: System.Reflection.AssemblyName
+    return:
+      type: System.Reflection.Assembly
+      description: 
+- uid: System.Runtime.Loader.AssemblyLoadContext.LoadFromAssemblyName(System.Reflection.AssemblyName)
+  id: LoadFromAssemblyName(System.Reflection.AssemblyName)
+  parent: System.Runtime.Loader.AssemblyLoadContext
+  href: System.Runtime.Loader.AssemblyLoadContext.yml
+  name: LoadFromAssemblyName(AssemblyName)
+  fullName: System.Runtime.Loader.AssemblyLoadContext.LoadFromAssemblyName(System.Reflection.AssemblyName)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Loader/AssemblyLoadContext.cs
+    startLine: 171
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Loader
+  syntax:
+    content: public Assembly LoadFromAssemblyName(AssemblyName assemblyName)
+    content.vb: Public Function LoadFromAssemblyName(assemblyName As AssemblyName) As Assembly
+    parameters:
+    - id: assemblyName
+      type: System.Reflection.AssemblyName
+    return:
+      type: System.Reflection.Assembly
+      description: 
+- uid: System.Runtime.Loader.AssemblyLoadContext.LoadUnmanagedDllFromPath(System.String)
+  id: LoadUnmanagedDllFromPath(System.String)
+  parent: System.Runtime.Loader.AssemblyLoadContext
+  href: System.Runtime.Loader.AssemblyLoadContext.yml
+  name: LoadUnmanagedDllFromPath(String)
+  fullName: System.Runtime.Loader.AssemblyLoadContext.LoadUnmanagedDllFromPath(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Loader/AssemblyLoadContext.cs
+    startLine: 208
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Loader
+  syntax:
+    content: protected IntPtr LoadUnmanagedDllFromPath(string unmanagedDllPath)
+    content.vb: Protected Function LoadUnmanagedDllFromPath(unmanagedDllPath As String) As IntPtr
+    parameters:
+    - id: unmanagedDllPath
+      type: System.String
+    return:
+      type: System.IntPtr
+      description: 
+- uid: System.Runtime.Loader.AssemblyLoadContext.LoadUnmanagedDll(System.String)
+  id: LoadUnmanagedDll(System.String)
+  parent: System.Runtime.Loader.AssemblyLoadContext
+  href: System.Runtime.Loader.AssemblyLoadContext.yml
+  name: LoadUnmanagedDll(String)
+  fullName: System.Runtime.Loader.AssemblyLoadContext.LoadUnmanagedDll(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Loader/AssemblyLoadContext.cs
+    startLine: 229
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Loader
+  syntax:
+    content: protected virtual IntPtr LoadUnmanagedDll(string unmanagedDllName)
+    content.vb: Protected Overridable Function LoadUnmanagedDll(unmanagedDllName As String) As IntPtr
+    parameters:
+    - id: unmanagedDllName
+      type: System.String
+    return:
+      type: System.IntPtr
+      description: 
+- uid: System.Runtime.Loader.AssemblyLoadContext.Default
+  id: Default
+  parent: System.Runtime.Loader.AssemblyLoadContext
+  href: System.Runtime.Loader.AssemblyLoadContext.yml
+  name: Default
+  fullName: System.Runtime.Loader.AssemblyLoadContext.Default
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Loader/AssemblyLoadContext.cs
+    startLine: 243
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Loader
+  syntax:
+    content: public static AssemblyLoadContext Default { get; }
+    content.vb: Public Shared ReadOnly Property Default As AssemblyLoadContext
+    parameters: []
+    return:
+      type: System.Runtime.Loader.AssemblyLoadContext
+      description: 
+- uid: System.Runtime.Loader.AssemblyLoadContext.InitializeDefaultContext(System.Runtime.Loader.AssemblyLoadContext)
+  id: InitializeDefaultContext(System.Runtime.Loader.AssemblyLoadContext)
+  parent: System.Runtime.Loader.AssemblyLoadContext
+  href: System.Runtime.Loader.AssemblyLoadContext.yml
+  name: InitializeDefaultContext(AssemblyLoadContext)
+  fullName: System.Runtime.Loader.AssemblyLoadContext.InitializeDefaultContext(System.Runtime.Loader.AssemblyLoadContext)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Loader/AssemblyLoadContext.cs
+    startLine: 270
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Loader
+  syntax:
+    content: public static void InitializeDefaultContext(AssemblyLoadContext context)
+    content.vb: Public Shared Sub InitializeDefaultContext(context As AssemblyLoadContext)
+    parameters:
+    - id: context
+      type: System.Runtime.Loader.AssemblyLoadContext
+- uid: System.Runtime.Loader.AssemblyLoadContext.GetAssemblyName(System.String)
+  id: GetAssemblyName(System.String)
+  parent: System.Runtime.Loader.AssemblyLoadContext
+  href: System.Runtime.Loader.AssemblyLoadContext.yml
+  name: GetAssemblyName(String)
+  fullName: System.Runtime.Loader.AssemblyLoadContext.GetAssemblyName(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Loader/AssemblyLoadContext.cs
+    startLine: 293
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Loader
+  syntax:
+    content: public static AssemblyName GetAssemblyName(string assemblyPath)
+    content.vb: Public Shared Function GetAssemblyName(assemblyPath As String) As AssemblyName
+    parameters:
+    - id: assemblyPath
+      type: System.String
+    return:
+      type: System.Reflection.AssemblyName
+      description: 
+- uid: System.Runtime.Loader.AssemblyLoadContext.GetLoadContext(System.Reflection.Assembly)
+  id: GetLoadContext(System.Reflection.Assembly)
+  parent: System.Runtime.Loader.AssemblyLoadContext
+  href: System.Runtime.Loader.AssemblyLoadContext.yml
+  name: GetLoadContext(Assembly)
+  fullName: System.Runtime.Loader.AssemblyLoadContext.GetLoadContext(System.Reflection.Assembly)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Loader/AssemblyLoadContext.cs
+    startLine: 309
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Loader
+  syntax:
+    content: public static AssemblyLoadContext GetLoadContext(Assembly assembly)
+    content.vb: Public Shared Function GetLoadContext(assembly As Assembly) As AssemblyLoadContext
+    parameters:
+    - id: assembly
+      type: System.Reflection.Assembly
+    return:
+      type: System.Runtime.Loader.AssemblyLoadContext
+      description: 
+- uid: System.Runtime.Loader.AssemblyLoadContext.SetProfileOptimizationRoot(System.String)
+  id: SetProfileOptimizationRoot(System.String)
+  parent: System.Runtime.Loader.AssemblyLoadContext
+  href: System.Runtime.Loader.AssemblyLoadContext.yml
+  name: SetProfileOptimizationRoot(String)
+  fullName: System.Runtime.Loader.AssemblyLoadContext.SetProfileOptimizationRoot(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Loader/AssemblyLoadContext.cs
+    startLine: 334
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Loader
+  syntax:
+    content: public void SetProfileOptimizationRoot(string directoryPath)
+    content.vb: Public Sub SetProfileOptimizationRoot(directoryPath As String)
+    parameters:
+    - id: directoryPath
+      type: System.String
+- uid: System.Runtime.Loader.AssemblyLoadContext.StartProfileOptimization(System.String)
+  id: StartProfileOptimization(System.String)
+  parent: System.Runtime.Loader.AssemblyLoadContext
+  href: System.Runtime.Loader.AssemblyLoadContext.yml
+  name: StartProfileOptimization(String)
+  fullName: System.Runtime.Loader.AssemblyLoadContext.StartProfileOptimization(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Loader/AssemblyLoadContext.cs
+    startLine: 342
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Loader
+  syntax:
+    content: public void StartProfileOptimization(string profile)
+    content.vb: Public Sub StartProfileOptimization(profile As String)
+    parameters:
+    - id: profile
+      type: System.String
+references:
+- uid: System.Runtime.Loader
+  isExternal: false
+  name: System.Runtime.Loader
+  fullName: System.Runtime.Loader
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Reflection.Assembly
+  parent: System.Reflection
+  isExternal: true
+  name: Assembly
+  fullName: System.Reflection.Assembly
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace
+- uid: System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  name: Stream
+  fullName: System.IO.Stream
+- uid: System.IO
+  isExternal: false
+  name: System.IO
+  fullName: System.IO
+- uid: System.Reflection.AssemblyName
+  parent: System.Reflection
+  isExternal: false
+  href: System.Reflection.AssemblyName.yml
+  name: AssemblyName
+  fullName: System.Reflection.AssemblyName
+  type: Class
+- uid: System.IntPtr
+  parent: System
+  isExternal: true
+  name: IntPtr
+  fullName: System.IntPtr
+- uid: System.Runtime.Loader.AssemblyLoadContext
+  parent: System.Runtime.Loader
+  isExternal: false
+  href: System.Runtime.Loader.AssemblyLoadContext.yml
+  name: AssemblyLoadContext
+  fullName: System.Runtime.Loader.AssemblyLoadContext
+  type: Class

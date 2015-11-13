@@ -1,0 +1,821 @@
+items:
+- uid: System.Runtime.InteropServices.VarEnum
+  id: VarEnum
+  parent: System.Runtime.InteropServices
+  children:
+  - System.Runtime.InteropServices.VarEnum.VT_ARRAY
+  - System.Runtime.InteropServices.VarEnum.VT_BLOB
+  - System.Runtime.InteropServices.VarEnum.VT_BLOB_OBJECT
+  - System.Runtime.InteropServices.VarEnum.VT_BOOL
+  - System.Runtime.InteropServices.VarEnum.VT_BSTR
+  - System.Runtime.InteropServices.VarEnum.VT_BYREF
+  - System.Runtime.InteropServices.VarEnum.VT_CARRAY
+  - System.Runtime.InteropServices.VarEnum.VT_CF
+  - System.Runtime.InteropServices.VarEnum.VT_CLSID
+  - System.Runtime.InteropServices.VarEnum.VT_CY
+  - System.Runtime.InteropServices.VarEnum.VT_DATE
+  - System.Runtime.InteropServices.VarEnum.VT_DECIMAL
+  - System.Runtime.InteropServices.VarEnum.VT_DISPATCH
+  - System.Runtime.InteropServices.VarEnum.VT_EMPTY
+  - System.Runtime.InteropServices.VarEnum.VT_ERROR
+  - System.Runtime.InteropServices.VarEnum.VT_FILETIME
+  - System.Runtime.InteropServices.VarEnum.VT_HRESULT
+  - System.Runtime.InteropServices.VarEnum.VT_I1
+  - System.Runtime.InteropServices.VarEnum.VT_I2
+  - System.Runtime.InteropServices.VarEnum.VT_I4
+  - System.Runtime.InteropServices.VarEnum.VT_I8
+  - System.Runtime.InteropServices.VarEnum.VT_INT
+  - System.Runtime.InteropServices.VarEnum.VT_LPSTR
+  - System.Runtime.InteropServices.VarEnum.VT_LPWSTR
+  - System.Runtime.InteropServices.VarEnum.VT_NULL
+  - System.Runtime.InteropServices.VarEnum.VT_PTR
+  - System.Runtime.InteropServices.VarEnum.VT_R4
+  - System.Runtime.InteropServices.VarEnum.VT_R8
+  - System.Runtime.InteropServices.VarEnum.VT_RECORD
+  - System.Runtime.InteropServices.VarEnum.VT_SAFEARRAY
+  - System.Runtime.InteropServices.VarEnum.VT_STORAGE
+  - System.Runtime.InteropServices.VarEnum.VT_STORED_OBJECT
+  - System.Runtime.InteropServices.VarEnum.VT_STREAM
+  - System.Runtime.InteropServices.VarEnum.VT_STREAMED_OBJECT
+  - System.Runtime.InteropServices.VarEnum.VT_UI1
+  - System.Runtime.InteropServices.VarEnum.VT_UI2
+  - System.Runtime.InteropServices.VarEnum.VT_UI4
+  - System.Runtime.InteropServices.VarEnum.VT_UI8
+  - System.Runtime.InteropServices.VarEnum.VT_UINT
+  - System.Runtime.InteropServices.VarEnum.VT_UNKNOWN
+  - System.Runtime.InteropServices.VarEnum.VT_USERDEFINED
+  - System.Runtime.InteropServices.VarEnum.VT_VARIANT
+  - System.Runtime.InteropServices.VarEnum.VT_VECTOR
+  - System.Runtime.InteropServices.VarEnum.VT_VOID
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VarEnum
+  fullName: System.Runtime.InteropServices.VarEnum
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 387
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates how to marshal the array elements when an array is marshaled from managed to unmanaged code as a @'System.Runtime.InteropServices.UnmanagedType.SafeArray'.
+  syntax:
+    content: public enum VarEnum
+    content.vb: Public Enum VarEnum
+- uid: System.Runtime.InteropServices.VarEnum.VT_EMPTY
+  id: VT_EMPTY
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_EMPTY
+  fullName: System.Runtime.InteropServices.VarEnum.VT_EMPTY
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 391
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates that a value was not specified.
+  syntax:
+    content: VT_EMPTY = 0
+- uid: System.Runtime.InteropServices.VarEnum.VT_NULL
+  id: VT_NULL
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_NULL
+  fullName: System.Runtime.InteropServices.VarEnum.VT_NULL
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 392
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates a null value, similar to a null value in SQL.
+  syntax:
+    content: VT_NULL = 1
+- uid: System.Runtime.InteropServices.VarEnum.VT_I2
+  id: VT_I2
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_I2
+  fullName: System.Runtime.InteropServices.VarEnum.VT_I2
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 393
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates a short integer.
+  syntax:
+    content: VT_I2 = 2
+- uid: System.Runtime.InteropServices.VarEnum.VT_I4
+  id: VT_I4
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_I4
+  fullName: System.Runtime.InteropServices.VarEnum.VT_I4
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 394
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates a long integer.
+  syntax:
+    content: VT_I4 = 3
+- uid: System.Runtime.InteropServices.VarEnum.VT_R4
+  id: VT_R4
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_R4
+  fullName: System.Runtime.InteropServices.VarEnum.VT_R4
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 395
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates a float value.
+  syntax:
+    content: VT_R4 = 4
+- uid: System.Runtime.InteropServices.VarEnum.VT_R8
+  id: VT_R8
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_R8
+  fullName: System.Runtime.InteropServices.VarEnum.VT_R8
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 396
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates a double value.
+  syntax:
+    content: VT_R8 = 5
+- uid: System.Runtime.InteropServices.VarEnum.VT_CY
+  id: VT_CY
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_CY
+  fullName: System.Runtime.InteropServices.VarEnum.VT_CY
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 397
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates a currency value.
+  syntax:
+    content: VT_CY = 6
+- uid: System.Runtime.InteropServices.VarEnum.VT_DATE
+  id: VT_DATE
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_DATE
+  fullName: System.Runtime.InteropServices.VarEnum.VT_DATE
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 398
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates a DATE value.
+  syntax:
+    content: VT_DATE = 7
+- uid: System.Runtime.InteropServices.VarEnum.VT_BSTR
+  id: VT_BSTR
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_BSTR
+  fullName: System.Runtime.InteropServices.VarEnum.VT_BSTR
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 399
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates a BSTR string.
+  syntax:
+    content: VT_BSTR = 8
+- uid: System.Runtime.InteropServices.VarEnum.VT_DISPATCH
+  id: VT_DISPATCH
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_DISPATCH
+  fullName: System.Runtime.InteropServices.VarEnum.VT_DISPATCH
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 400
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates an IDispatch pointer.
+  syntax:
+    content: VT_DISPATCH = 9
+- uid: System.Runtime.InteropServices.VarEnum.VT_ERROR
+  id: VT_ERROR
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_ERROR
+  fullName: System.Runtime.InteropServices.VarEnum.VT_ERROR
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 401
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates an SCODE.
+  syntax:
+    content: VT_ERROR = 10
+- uid: System.Runtime.InteropServices.VarEnum.VT_BOOL
+  id: VT_BOOL
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_BOOL
+  fullName: System.Runtime.InteropServices.VarEnum.VT_BOOL
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 402
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates a Boolean value.
+  syntax:
+    content: VT_BOOL = 11
+- uid: System.Runtime.InteropServices.VarEnum.VT_VARIANT
+  id: VT_VARIANT
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_VARIANT
+  fullName: System.Runtime.InteropServices.VarEnum.VT_VARIANT
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 403
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates a VARIANT far pointer.
+  syntax:
+    content: VT_VARIANT = 12
+- uid: System.Runtime.InteropServices.VarEnum.VT_UNKNOWN
+  id: VT_UNKNOWN
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_UNKNOWN
+  fullName: System.Runtime.InteropServices.VarEnum.VT_UNKNOWN
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 404
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates an IUnknown pointer.
+  syntax:
+    content: VT_UNKNOWN = 13
+- uid: System.Runtime.InteropServices.VarEnum.VT_DECIMAL
+  id: VT_DECIMAL
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_DECIMAL
+  fullName: System.Runtime.InteropServices.VarEnum.VT_DECIMAL
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 405
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates a decimal value.
+  syntax:
+    content: VT_DECIMAL = 14
+- uid: System.Runtime.InteropServices.VarEnum.VT_I1
+  id: VT_I1
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_I1
+  fullName: System.Runtime.InteropServices.VarEnum.VT_I1
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 406
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates a char value.
+  syntax:
+    content: VT_I1 = 16
+- uid: System.Runtime.InteropServices.VarEnum.VT_UI1
+  id: VT_UI1
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_UI1
+  fullName: System.Runtime.InteropServices.VarEnum.VT_UI1
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 407
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates a byte.
+  syntax:
+    content: VT_UI1 = 17
+- uid: System.Runtime.InteropServices.VarEnum.VT_UI2
+  id: VT_UI2
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_UI2
+  fullName: System.Runtime.InteropServices.VarEnum.VT_UI2
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 408
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates an unsignedshort.
+  syntax:
+    content: VT_UI2 = 18
+- uid: System.Runtime.InteropServices.VarEnum.VT_UI4
+  id: VT_UI4
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_UI4
+  fullName: System.Runtime.InteropServices.VarEnum.VT_UI4
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 409
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates an unsignedlong.
+  syntax:
+    content: VT_UI4 = 19
+- uid: System.Runtime.InteropServices.VarEnum.VT_I8
+  id: VT_I8
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_I8
+  fullName: System.Runtime.InteropServices.VarEnum.VT_I8
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 410
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates a 64-bit integer.
+  syntax:
+    content: VT_I8 = 20
+- uid: System.Runtime.InteropServices.VarEnum.VT_UI8
+  id: VT_UI8
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_UI8
+  fullName: System.Runtime.InteropServices.VarEnum.VT_UI8
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 411
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates an 64-bit unsigned integer.
+  syntax:
+    content: VT_UI8 = 21
+- uid: System.Runtime.InteropServices.VarEnum.VT_INT
+  id: VT_INT
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_INT
+  fullName: System.Runtime.InteropServices.VarEnum.VT_INT
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 412
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates an integer value.
+  syntax:
+    content: VT_INT = 22
+- uid: System.Runtime.InteropServices.VarEnum.VT_UINT
+  id: VT_UINT
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_UINT
+  fullName: System.Runtime.InteropServices.VarEnum.VT_UINT
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 413
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates an unsigned integer value.
+  syntax:
+    content: VT_UINT = 23
+- uid: System.Runtime.InteropServices.VarEnum.VT_VOID
+  id: VT_VOID
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_VOID
+  fullName: System.Runtime.InteropServices.VarEnum.VT_VOID
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 414
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates a C style void.
+  syntax:
+    content: VT_VOID = 24
+- uid: System.Runtime.InteropServices.VarEnum.VT_HRESULT
+  id: VT_HRESULT
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_HRESULT
+  fullName: System.Runtime.InteropServices.VarEnum.VT_HRESULT
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 415
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates an HRESULT.
+  syntax:
+    content: VT_HRESULT = 25
+- uid: System.Runtime.InteropServices.VarEnum.VT_PTR
+  id: VT_PTR
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_PTR
+  fullName: System.Runtime.InteropServices.VarEnum.VT_PTR
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 416
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates a pointer type.
+  syntax:
+    content: VT_PTR = 26
+- uid: System.Runtime.InteropServices.VarEnum.VT_SAFEARRAY
+  id: VT_SAFEARRAY
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_SAFEARRAY
+  fullName: System.Runtime.InteropServices.VarEnum.VT_SAFEARRAY
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 417
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates a SAFEARRAY. Not valid in a VARIANT.
+  syntax:
+    content: VT_SAFEARRAY = 27
+- uid: System.Runtime.InteropServices.VarEnum.VT_CARRAY
+  id: VT_CARRAY
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_CARRAY
+  fullName: System.Runtime.InteropServices.VarEnum.VT_CARRAY
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 418
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates a C style array.
+  syntax:
+    content: VT_CARRAY = 28
+- uid: System.Runtime.InteropServices.VarEnum.VT_USERDEFINED
+  id: VT_USERDEFINED
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_USERDEFINED
+  fullName: System.Runtime.InteropServices.VarEnum.VT_USERDEFINED
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 419
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates a user defined type.
+  syntax:
+    content: VT_USERDEFINED = 29
+- uid: System.Runtime.InteropServices.VarEnum.VT_LPSTR
+  id: VT_LPSTR
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_LPSTR
+  fullName: System.Runtime.InteropServices.VarEnum.VT_LPSTR
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 420
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates a null-terminated string.
+  syntax:
+    content: VT_LPSTR = 30
+- uid: System.Runtime.InteropServices.VarEnum.VT_LPWSTR
+  id: VT_LPWSTR
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_LPWSTR
+  fullName: System.Runtime.InteropServices.VarEnum.VT_LPWSTR
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 421
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates a wide string terminated by null.
+  syntax:
+    content: VT_LPWSTR = 31
+- uid: System.Runtime.InteropServices.VarEnum.VT_RECORD
+  id: VT_RECORD
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_RECORD
+  fullName: System.Runtime.InteropServices.VarEnum.VT_RECORD
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 422
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates a user defined type.
+  syntax:
+    content: VT_RECORD = 36
+- uid: System.Runtime.InteropServices.VarEnum.VT_FILETIME
+  id: VT_FILETIME
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_FILETIME
+  fullName: System.Runtime.InteropServices.VarEnum.VT_FILETIME
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 423
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates a FILETIME value.
+  syntax:
+    content: VT_FILETIME = 64
+- uid: System.Runtime.InteropServices.VarEnum.VT_BLOB
+  id: VT_BLOB
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_BLOB
+  fullName: System.Runtime.InteropServices.VarEnum.VT_BLOB
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 424
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates length prefixed bytes.
+  syntax:
+    content: VT_BLOB = 65
+- uid: System.Runtime.InteropServices.VarEnum.VT_STREAM
+  id: VT_STREAM
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_STREAM
+  fullName: System.Runtime.InteropServices.VarEnum.VT_STREAM
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 425
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates that the name of a stream follows.
+  syntax:
+    content: VT_STREAM = 66
+- uid: System.Runtime.InteropServices.VarEnum.VT_STORAGE
+  id: VT_STORAGE
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_STORAGE
+  fullName: System.Runtime.InteropServices.VarEnum.VT_STORAGE
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 426
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates that the name of a storage follows.
+  syntax:
+    content: VT_STORAGE = 67
+- uid: System.Runtime.InteropServices.VarEnum.VT_STREAMED_OBJECT
+  id: VT_STREAMED_OBJECT
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_STREAMED_OBJECT
+  fullName: System.Runtime.InteropServices.VarEnum.VT_STREAMED_OBJECT
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 427
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates that a stream contains an object.
+  syntax:
+    content: VT_STREAMED_OBJECT = 68
+- uid: System.Runtime.InteropServices.VarEnum.VT_STORED_OBJECT
+  id: VT_STORED_OBJECT
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_STORED_OBJECT
+  fullName: System.Runtime.InteropServices.VarEnum.VT_STORED_OBJECT
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 428
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates that a storage contains an object.
+  syntax:
+    content: VT_STORED_OBJECT = 69
+- uid: System.Runtime.InteropServices.VarEnum.VT_BLOB_OBJECT
+  id: VT_BLOB_OBJECT
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_BLOB_OBJECT
+  fullName: System.Runtime.InteropServices.VarEnum.VT_BLOB_OBJECT
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 429
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates that a blob contains an object.
+  syntax:
+    content: VT_BLOB_OBJECT = 70
+- uid: System.Runtime.InteropServices.VarEnum.VT_CF
+  id: VT_CF
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_CF
+  fullName: System.Runtime.InteropServices.VarEnum.VT_CF
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 430
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates the clipboard format.
+  syntax:
+    content: VT_CF = 71
+- uid: System.Runtime.InteropServices.VarEnum.VT_CLSID
+  id: VT_CLSID
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_CLSID
+  fullName: System.Runtime.InteropServices.VarEnum.VT_CLSID
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 431
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates a class ID.
+  syntax:
+    content: VT_CLSID = 72
+- uid: System.Runtime.InteropServices.VarEnum.VT_VECTOR
+  id: VT_VECTOR
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_VECTOR
+  fullName: System.Runtime.InteropServices.VarEnum.VT_VECTOR
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 432
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates a simple, counted array.
+  syntax:
+    content: VT_VECTOR = 4096
+- uid: System.Runtime.InteropServices.VarEnum.VT_ARRAY
+  id: VT_ARRAY
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_ARRAY
+  fullName: System.Runtime.InteropServices.VarEnum.VT_ARRAY
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 433
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates a SAFEARRAY pointer.
+  syntax:
+    content: VT_ARRAY = 8192
+- uid: System.Runtime.InteropServices.VarEnum.VT_BYREF
+  id: VT_BYREF
+  parent: System.Runtime.InteropServices.VarEnum
+  href: System.Runtime.InteropServices.VarEnum.yml
+  name: VT_BYREF
+  fullName: System.Runtime.InteropServices.VarEnum.VT_BYREF
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 434
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates that a value is a reference.
+  syntax:
+    content: VT_BYREF = 16384
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace

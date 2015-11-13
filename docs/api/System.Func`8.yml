@@ -1,0 +1,95 @@
+items:
+- uid: System.Func`8
+  id: Func`8
+  parent: System
+  children: []
+  href: System.Func`8.yml
+  name: Func<T1, T2, T3, T4, T5, T6, T7, TResult>
+  name.vb: Func(Of T1, T2, T3, T4, T5, T6, T7, TResult)
+  fullName: System.Func<T1, T2, T3, T4, T5, T6, T7, TResult>
+  fullName.vb: System.Func(Of T1, T2, T3, T4, T5, T6, T7, TResult)
+  type: Delegate
+  source:
+    remote:
+      path: src/mscorlib/src/System/Action.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Action.cs
+    startLine: 84
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Encapsulates a method that has seven parameters and returns a value of the type specified by the *TResult* parameter.
+  syntax:
+    content: public delegate TResult Func<in T1, in T2, in T3, in T4, in T5, in T6, in T7, out TResult>(T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6, T7 arg7);
+    content.vb: Public Delegate Function Func(Of In T1, In T2, In T3, In T4, In T5, In T6, In T7, Out TResult)(arg1 As T1, arg2 As T2, arg3 As T3, arg4 As T4, arg5 As T5, arg6 As T6, arg7 As T7) As TResult
+    parameters:
+    - id: arg1
+      type: '{T1}'
+      description: The first parameter of the method that this delegate encapsulates.
+    - id: arg2
+      type: '{T2}'
+      description: The second parameter of the method that this delegate encapsulates.
+    - id: arg3
+      type: '{T3}'
+      description: The third parameter of the method that this delegate encapsulates.
+    - id: arg4
+      type: '{T4}'
+      description: The fourth parameter of the method that this delegate encapsulates.
+    - id: arg5
+      type: '{T5}'
+      description: The fifth parameter of the method that this delegate encapsulates.
+    - id: arg6
+      type: '{T6}'
+      description: The sixth parameter of the method that this delegate encapsulates.
+    - id: arg7
+      type: '{T7}'
+      description: The seventh parameter of the method that this delegate encapsulates.
+    typeParameters:
+    - id: T1
+    - id: T2
+    - id: T3
+    - id: T4
+    - id: T5
+    - id: T6
+    - id: T7
+    - id: TResult
+    return:
+      type: '{TResult}'
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: '{T1}'
+  isExternal: false
+  name: T1
+  fullName: T1
+- uid: '{T2}'
+  isExternal: false
+  name: T2
+  fullName: T2
+- uid: '{T3}'
+  isExternal: false
+  name: T3
+  fullName: T3
+- uid: '{T4}'
+  isExternal: false
+  name: T4
+  fullName: T4
+- uid: '{T5}'
+  isExternal: false
+  name: T5
+  fullName: T5
+- uid: '{T6}'
+  isExternal: false
+  name: T6
+  fullName: T6
+- uid: '{T7}'
+  isExternal: false
+  name: T7
+  fullName: T7
+- uid: '{TResult}'
+  isExternal: false
+  name: TResult
+  fullName: TResult

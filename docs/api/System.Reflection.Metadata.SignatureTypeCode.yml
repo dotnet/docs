@@ -1,0 +1,713 @@
+items:
+- uid: System.Reflection.Metadata.SignatureTypeCode
+  id: SignatureTypeCode
+  parent: System.Reflection.Metadata
+  children:
+  - System.Reflection.Metadata.SignatureTypeCode.Array
+  - System.Reflection.Metadata.SignatureTypeCode.Boolean
+  - System.Reflection.Metadata.SignatureTypeCode.ByReference
+  - System.Reflection.Metadata.SignatureTypeCode.Byte
+  - System.Reflection.Metadata.SignatureTypeCode.Char
+  - System.Reflection.Metadata.SignatureTypeCode.Double
+  - System.Reflection.Metadata.SignatureTypeCode.FunctionPointer
+  - System.Reflection.Metadata.SignatureTypeCode.GenericMethodParameter
+  - System.Reflection.Metadata.SignatureTypeCode.GenericTypeInstance
+  - System.Reflection.Metadata.SignatureTypeCode.GenericTypeParameter
+  - System.Reflection.Metadata.SignatureTypeCode.Int16
+  - System.Reflection.Metadata.SignatureTypeCode.Int32
+  - System.Reflection.Metadata.SignatureTypeCode.Int64
+  - System.Reflection.Metadata.SignatureTypeCode.IntPtr
+  - System.Reflection.Metadata.SignatureTypeCode.Invalid
+  - System.Reflection.Metadata.SignatureTypeCode.Object
+  - System.Reflection.Metadata.SignatureTypeCode.OptionalModifier
+  - System.Reflection.Metadata.SignatureTypeCode.Pinned
+  - System.Reflection.Metadata.SignatureTypeCode.Pointer
+  - System.Reflection.Metadata.SignatureTypeCode.RequiredModifier
+  - System.Reflection.Metadata.SignatureTypeCode.SByte
+  - System.Reflection.Metadata.SignatureTypeCode.Sentinel
+  - System.Reflection.Metadata.SignatureTypeCode.Single
+  - System.Reflection.Metadata.SignatureTypeCode.String
+  - System.Reflection.Metadata.SignatureTypeCode.SZArray
+  - System.Reflection.Metadata.SignatureTypeCode.TypedReference
+  - System.Reflection.Metadata.SignatureTypeCode.TypeHandle
+  - System.Reflection.Metadata.SignatureTypeCode.UInt16
+  - System.Reflection.Metadata.SignatureTypeCode.UInt32
+  - System.Reflection.Metadata.SignatureTypeCode.UInt64
+  - System.Reflection.Metadata.SignatureTypeCode.UIntPtr
+  - System.Reflection.Metadata.SignatureTypeCode.Void
+  href: System.Reflection.Metadata.SignatureTypeCode.yml
+  name: SignatureTypeCode
+  fullName: System.Reflection.Metadata.SignatureTypeCode
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureTypeCode.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureTypeCode.cs
+    startLine: 10
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Represents the type codes that are used in signature encoding.
+  syntax:
+    content: 'public enum SignatureTypeCode : byte'
+    content.vb: Public Enum SignatureTypeCode As Byte
+- uid: System.Reflection.Metadata.SignatureTypeCode.Invalid
+  id: Invalid
+  parent: System.Reflection.Metadata.SignatureTypeCode
+  href: System.Reflection.Metadata.SignatureTypeCode.yml
+  name: Invalid
+  fullName: System.Reflection.Metadata.SignatureTypeCode.Invalid
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureTypeCode.cs
+    startLine: 15
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Represents an invalid or uninitialized type code. It will not appear in valid signatures.
+  syntax:
+    content: Invalid = 0
+- uid: System.Reflection.Metadata.SignatureTypeCode.Void
+  id: Void
+  parent: System.Reflection.Metadata.SignatureTypeCode
+  href: System.Reflection.Metadata.SignatureTypeCode.yml
+  name: Void
+  fullName: System.Reflection.Metadata.SignatureTypeCode.Void
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureTypeCode.cs
+    startLine: 20
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Represents @'System.Void' in signatures.
+  syntax:
+    content: Void = 1
+- uid: System.Reflection.Metadata.SignatureTypeCode.Boolean
+  id: Boolean
+  parent: System.Reflection.Metadata.SignatureTypeCode
+  href: System.Reflection.Metadata.SignatureTypeCode.yml
+  name: Boolean
+  fullName: System.Reflection.Metadata.SignatureTypeCode.Boolean
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureTypeCode.cs
+    startLine: 25
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Represents @'System.Boolean' in signatures.
+  syntax:
+    content: Boolean = 2
+- uid: System.Reflection.Metadata.SignatureTypeCode.Char
+  id: Char
+  parent: System.Reflection.Metadata.SignatureTypeCode
+  href: System.Reflection.Metadata.SignatureTypeCode.yml
+  name: Char
+  fullName: System.Reflection.Metadata.SignatureTypeCode.Char
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureTypeCode.cs
+    startLine: 30
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Represents @'System.Char' in signatures.
+  syntax:
+    content: Char = 3
+- uid: System.Reflection.Metadata.SignatureTypeCode.SByte
+  id: SByte
+  parent: System.Reflection.Metadata.SignatureTypeCode
+  href: System.Reflection.Metadata.SignatureTypeCode.yml
+  name: SByte
+  fullName: System.Reflection.Metadata.SignatureTypeCode.SByte
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureTypeCode.cs
+    startLine: 35
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Represents @'System.SByte' in signatures.
+  syntax:
+    content: SByte = 4
+- uid: System.Reflection.Metadata.SignatureTypeCode.Byte
+  id: Byte
+  parent: System.Reflection.Metadata.SignatureTypeCode
+  href: System.Reflection.Metadata.SignatureTypeCode.yml
+  name: Byte
+  fullName: System.Reflection.Metadata.SignatureTypeCode.Byte
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureTypeCode.cs
+    startLine: 40
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Represents @'System.Byte' in signatures.
+  syntax:
+    content: Byte = 5
+- uid: System.Reflection.Metadata.SignatureTypeCode.Int16
+  id: Int16
+  parent: System.Reflection.Metadata.SignatureTypeCode
+  href: System.Reflection.Metadata.SignatureTypeCode.yml
+  name: Int16
+  fullName: System.Reflection.Metadata.SignatureTypeCode.Int16
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureTypeCode.cs
+    startLine: 45
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Represents @'System.Int16' in signatures.
+  syntax:
+    content: Int16 = 6
+- uid: System.Reflection.Metadata.SignatureTypeCode.UInt16
+  id: UInt16
+  parent: System.Reflection.Metadata.SignatureTypeCode
+  href: System.Reflection.Metadata.SignatureTypeCode.yml
+  name: UInt16
+  fullName: System.Reflection.Metadata.SignatureTypeCode.UInt16
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureTypeCode.cs
+    startLine: 50
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Represents @'System.UInt16' in signatures.
+  syntax:
+    content: UInt16 = 7
+- uid: System.Reflection.Metadata.SignatureTypeCode.Int32
+  id: Int32
+  parent: System.Reflection.Metadata.SignatureTypeCode
+  href: System.Reflection.Metadata.SignatureTypeCode.yml
+  name: Int32
+  fullName: System.Reflection.Metadata.SignatureTypeCode.Int32
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureTypeCode.cs
+    startLine: 55
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Represents @'System.Int32' in signatures.
+  syntax:
+    content: Int32 = 8
+- uid: System.Reflection.Metadata.SignatureTypeCode.UInt32
+  id: UInt32
+  parent: System.Reflection.Metadata.SignatureTypeCode
+  href: System.Reflection.Metadata.SignatureTypeCode.yml
+  name: UInt32
+  fullName: System.Reflection.Metadata.SignatureTypeCode.UInt32
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureTypeCode.cs
+    startLine: 60
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Represents @'System.UInt32' in signatures.
+  syntax:
+    content: UInt32 = 9
+- uid: System.Reflection.Metadata.SignatureTypeCode.Int64
+  id: Int64
+  parent: System.Reflection.Metadata.SignatureTypeCode
+  href: System.Reflection.Metadata.SignatureTypeCode.yml
+  name: Int64
+  fullName: System.Reflection.Metadata.SignatureTypeCode.Int64
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureTypeCode.cs
+    startLine: 65
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Represents @'System.Int64' in signatures.
+  syntax:
+    content: Int64 = 10
+- uid: System.Reflection.Metadata.SignatureTypeCode.UInt64
+  id: UInt64
+  parent: System.Reflection.Metadata.SignatureTypeCode
+  href: System.Reflection.Metadata.SignatureTypeCode.yml
+  name: UInt64
+  fullName: System.Reflection.Metadata.SignatureTypeCode.UInt64
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureTypeCode.cs
+    startLine: 70
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Represents @'System.UInt64' in signatures.
+  syntax:
+    content: UInt64 = 11
+- uid: System.Reflection.Metadata.SignatureTypeCode.Single
+  id: Single
+  parent: System.Reflection.Metadata.SignatureTypeCode
+  href: System.Reflection.Metadata.SignatureTypeCode.yml
+  name: Single
+  fullName: System.Reflection.Metadata.SignatureTypeCode.Single
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureTypeCode.cs
+    startLine: 75
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Represents @'System.Single' in signatures.
+  syntax:
+    content: Single = 12
+- uid: System.Reflection.Metadata.SignatureTypeCode.Double
+  id: Double
+  parent: System.Reflection.Metadata.SignatureTypeCode
+  href: System.Reflection.Metadata.SignatureTypeCode.yml
+  name: Double
+  fullName: System.Reflection.Metadata.SignatureTypeCode.Double
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureTypeCode.cs
+    startLine: 80
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Represents @'System.Double' in signatures.
+  syntax:
+    content: Double = 13
+- uid: System.Reflection.Metadata.SignatureTypeCode.String
+  id: String
+  parent: System.Reflection.Metadata.SignatureTypeCode
+  href: System.Reflection.Metadata.SignatureTypeCode.yml
+  name: String
+  fullName: System.Reflection.Metadata.SignatureTypeCode.String
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureTypeCode.cs
+    startLine: 85
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Represents @'System.String' in signatures.
+  syntax:
+    content: String = 14
+- uid: System.Reflection.Metadata.SignatureTypeCode.Pointer
+  id: Pointer
+  parent: System.Reflection.Metadata.SignatureTypeCode
+  href: System.Reflection.Metadata.SignatureTypeCode.yml
+  name: Pointer
+  fullName: System.Reflection.Metadata.SignatureTypeCode.Pointer
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureTypeCode.cs
+    startLine: 93
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: >-
+    Represents a unmanaged pointers in signatures.
+
+    It is followed in the blob by the signature encoding of the underlying type.
+  syntax:
+    content: Pointer = 15
+- uid: System.Reflection.Metadata.SignatureTypeCode.ByReference
+  id: ByReference
+  parent: System.Reflection.Metadata.SignatureTypeCode
+  href: System.Reflection.Metadata.SignatureTypeCode.yml
+  name: ByReference
+  fullName: System.Reflection.Metadata.SignatureTypeCode.ByReference
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureTypeCode.cs
+    startLine: 99
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: >-
+    Represents managed pointers (byref return values and parameters) in signatures.
+
+    It is followed in the blob by the signature encoding of the underlying type.
+  syntax:
+    content: ByReference = 16
+- uid: System.Reflection.Metadata.SignatureTypeCode.GenericTypeParameter
+  id: GenericTypeParameter
+  parent: System.Reflection.Metadata.SignatureTypeCode
+  href: System.Reflection.Metadata.SignatureTypeCode.yml
+  name: GenericTypeParameter
+  fullName: System.Reflection.Metadata.SignatureTypeCode.GenericTypeParameter
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureTypeCode.cs
+    startLine: 106
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Represents a generic type parameter used within a signature.
+  syntax:
+    content: GenericTypeParameter = 19
+- uid: System.Reflection.Metadata.SignatureTypeCode.Array
+  id: Array
+  parent: System.Reflection.Metadata.SignatureTypeCode
+  href: System.Reflection.Metadata.SignatureTypeCode.yml
+  name: Array
+  fullName: System.Reflection.Metadata.SignatureTypeCode.Array
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureTypeCode.cs
+    startLine: 111
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Represents a generalized @'System.Array' in signatures.
+  syntax:
+    content: Array = 20
+- uid: System.Reflection.Metadata.SignatureTypeCode.GenericTypeInstance
+  id: GenericTypeInstance
+  parent: System.Reflection.Metadata.SignatureTypeCode
+  href: System.Reflection.Metadata.SignatureTypeCode.yml
+  name: GenericTypeInstance
+  fullName: System.Reflection.Metadata.SignatureTypeCode.GenericTypeInstance
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureTypeCode.cs
+    startLine: 115
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Represents the instantiation of a generic type in signatures.
+  syntax:
+    content: GenericTypeInstance = 21
+- uid: System.Reflection.Metadata.SignatureTypeCode.TypedReference
+  id: TypedReference
+  parent: System.Reflection.Metadata.SignatureTypeCode
+  href: System.Reflection.Metadata.SignatureTypeCode.yml
+  name: TypedReference
+  fullName: System.Reflection.Metadata.SignatureTypeCode.TypedReference
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureTypeCode.cs
+    startLine: 121
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Represents a System.TypedReference in signatures.
+  syntax:
+    content: TypedReference = 22
+- uid: System.Reflection.Metadata.SignatureTypeCode.IntPtr
+  id: IntPtr
+  parent: System.Reflection.Metadata.SignatureTypeCode
+  href: System.Reflection.Metadata.SignatureTypeCode.yml
+  name: IntPtr
+  fullName: System.Reflection.Metadata.SignatureTypeCode.IntPtr
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureTypeCode.cs
+    startLine: 126
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Represents a @'System.IntPtr' in signatures.
+  syntax:
+    content: IntPtr = 24
+- uid: System.Reflection.Metadata.SignatureTypeCode.UIntPtr
+  id: UIntPtr
+  parent: System.Reflection.Metadata.SignatureTypeCode
+  href: System.Reflection.Metadata.SignatureTypeCode.yml
+  name: UIntPtr
+  fullName: System.Reflection.Metadata.SignatureTypeCode.UIntPtr
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureTypeCode.cs
+    startLine: 131
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Represents a @'System.UIntPtr' in signatures.
+  syntax:
+    content: UIntPtr = 25
+- uid: System.Reflection.Metadata.SignatureTypeCode.FunctionPointer
+  id: FunctionPointer
+  parent: System.Reflection.Metadata.SignatureTypeCode
+  href: System.Reflection.Metadata.SignatureTypeCode.yml
+  name: FunctionPointer
+  fullName: System.Reflection.Metadata.SignatureTypeCode.FunctionPointer
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureTypeCode.cs
+    startLine: 136
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Represents function pointer types in signatures.
+  syntax:
+    content: FunctionPointer = 27
+- uid: System.Reflection.Metadata.SignatureTypeCode.Object
+  id: Object
+  parent: System.Reflection.Metadata.SignatureTypeCode
+  href: System.Reflection.Metadata.SignatureTypeCode.yml
+  name: Object
+  fullName: System.Reflection.Metadata.SignatureTypeCode.Object
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureTypeCode.cs
+    startLine: 141
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Represents @'System.Object'
+  syntax:
+    content: Object = 28
+- uid: System.Reflection.Metadata.SignatureTypeCode.SZArray
+  id: SZArray
+  parent: System.Reflection.Metadata.SignatureTypeCode
+  href: System.Reflection.Metadata.SignatureTypeCode.yml
+  name: SZArray
+  fullName: System.Reflection.Metadata.SignatureTypeCode.SZArray
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureTypeCode.cs
+    startLine: 146
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Represents a single dimensional @'System.Array' with 0 lower bound.
+  syntax:
+    content: SZArray = 29
+- uid: System.Reflection.Metadata.SignatureTypeCode.GenericMethodParameter
+  id: GenericMethodParameter
+  parent: System.Reflection.Metadata.SignatureTypeCode
+  href: System.Reflection.Metadata.SignatureTypeCode.yml
+  name: GenericMethodParameter
+  fullName: System.Reflection.Metadata.SignatureTypeCode.GenericMethodParameter
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureTypeCode.cs
+    startLine: 153
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Represents a generic method parameter used within a signature.
+  syntax:
+    content: GenericMethodParameter = 30
+- uid: System.Reflection.Metadata.SignatureTypeCode.RequiredModifier
+  id: RequiredModifier
+  parent: System.Reflection.Metadata.SignatureTypeCode
+  href: System.Reflection.Metadata.SignatureTypeCode.yml
+  name: RequiredModifier
+  fullName: System.Reflection.Metadata.SignatureTypeCode.RequiredModifier
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureTypeCode.cs
+    startLine: 159
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Represents a custom modifier applied to a type within a signature that the caller must understand.
+  syntax:
+    content: RequiredModifier = 31
+- uid: System.Reflection.Metadata.SignatureTypeCode.OptionalModifier
+  id: OptionalModifier
+  parent: System.Reflection.Metadata.SignatureTypeCode
+  href: System.Reflection.Metadata.SignatureTypeCode.yml
+  name: OptionalModifier
+  fullName: System.Reflection.Metadata.SignatureTypeCode.OptionalModifier
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureTypeCode.cs
+    startLine: 164
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Represents a custom modifier applied to a type within a signature that the caller can ignore.
+  syntax:
+    content: OptionalModifier = 32
+- uid: System.Reflection.Metadata.SignatureTypeCode.TypeHandle
+  id: TypeHandle
+  parent: System.Reflection.Metadata.SignatureTypeCode
+  href: System.Reflection.Metadata.SignatureTypeCode.yml
+  name: TypeHandle
+  fullName: System.Reflection.Metadata.SignatureTypeCode.TypeHandle
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureTypeCode.cs
+    startLine: 175
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Precedes a type @'System.Reflection.Metadata.EntityHandle' in signatures.
+  remarks: >-
+    In raw metadata, this will be encoded as either ELEMENT_TYPE_CLASS (0x12) for reference
+
+    types and ELEMENT_TYPE_VALUETYPE (0x11) for value types. This is collapsed to a single
+
+    code because Windows Runtime projections can project from class to value type or vice-versa
+
+    and the raw code is misleading in those cases.
+  syntax:
+    content: TypeHandle = 64
+- uid: System.Reflection.Metadata.SignatureTypeCode.Sentinel
+  id: Sentinel
+  parent: System.Reflection.Metadata.SignatureTypeCode
+  href: System.Reflection.Metadata.SignatureTypeCode.yml
+  name: Sentinel
+  fullName: System.Reflection.Metadata.SignatureTypeCode.Sentinel
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureTypeCode.cs
+    startLine: 180
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Represents a marker to indicate the end of fixed arguments and the beginning of variable arguments.
+  syntax:
+    content: Sentinel = 65
+- uid: System.Reflection.Metadata.SignatureTypeCode.Pinned
+  id: Pinned
+  parent: System.Reflection.Metadata.SignatureTypeCode
+  href: System.Reflection.Metadata.SignatureTypeCode.yml
+  name: Pinned
+  fullName: System.Reflection.Metadata.SignatureTypeCode.Pinned
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureTypeCode.cs
+    startLine: 185
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Represents a local variable that is pinned by garbage collector
+  syntax:
+    content: Pinned = 69
+references:
+- uid: System.Reflection.Metadata
+  isExternal: false
+  name: System.Reflection.Metadata
+  fullName: System.Reflection.Metadata
+  type: Namespace
+- uid: System.Void
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Char
+  parent: System
+  isExternal: true
+  name: Char
+  fullName: System.Char
+- uid: System.SByte
+  parent: System
+  isExternal: true
+  name: SByte
+  fullName: System.SByte
+- uid: System.Byte
+  parent: System
+  isExternal: true
+  name: Byte
+  fullName: System.Byte
+- uid: System.Int16
+  parent: System
+  isExternal: true
+  name: Int16
+  fullName: System.Int16
+- uid: System.UInt16
+  parent: System
+  isExternal: true
+  name: UInt16
+  fullName: System.UInt16
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.UInt32
+  parent: System
+  isExternal: true
+  name: UInt32
+  fullName: System.UInt32
+- uid: System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  fullName: System.Int64
+- uid: System.UInt64
+  parent: System
+  isExternal: true
+  name: UInt64
+  fullName: System.UInt64
+- uid: System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  fullName: System.Single
+- uid: System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  fullName: System.Double
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Array
+  parent: System
+  isExternal: true
+  name: Array
+  fullName: System.Array
+- uid: System.IntPtr
+  parent: System
+  isExternal: true
+  name: IntPtr
+  fullName: System.IntPtr
+- uid: System.UIntPtr
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Reflection.Metadata.EntityHandle
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.EntityHandle.yml
+  name: EntityHandle
+  fullName: System.Reflection.Metadata.EntityHandle
+  type: Struct
+  summary: Represents a metadata entity (type reference/definition/specification, method definition, custom attribute, etc.).

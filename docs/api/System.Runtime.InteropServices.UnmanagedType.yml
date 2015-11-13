@@ -1,0 +1,695 @@
+items:
+- uid: System.Runtime.InteropServices.UnmanagedType
+  id: UnmanagedType
+  parent: System.Runtime.InteropServices
+  children:
+  - System.Runtime.InteropServices.UnmanagedType.AnsiBStr
+  - System.Runtime.InteropServices.UnmanagedType.AsAny
+  - System.Runtime.InteropServices.UnmanagedType.Bool
+  - System.Runtime.InteropServices.UnmanagedType.BStr
+  - System.Runtime.InteropServices.UnmanagedType.ByValArray
+  - System.Runtime.InteropServices.UnmanagedType.ByValTStr
+  - System.Runtime.InteropServices.UnmanagedType.Currency
+  - System.Runtime.InteropServices.UnmanagedType.CustomMarshaler
+  - System.Runtime.InteropServices.UnmanagedType.Error
+  - System.Runtime.InteropServices.UnmanagedType.FunctionPtr
+  - System.Runtime.InteropServices.UnmanagedType.HString
+  - System.Runtime.InteropServices.UnmanagedType.I1
+  - System.Runtime.InteropServices.UnmanagedType.I2
+  - System.Runtime.InteropServices.UnmanagedType.I4
+  - System.Runtime.InteropServices.UnmanagedType.I8
+  - System.Runtime.InteropServices.UnmanagedType.IDispatch
+  - System.Runtime.InteropServices.UnmanagedType.IInspectable
+  - System.Runtime.InteropServices.UnmanagedType.Interface
+  - System.Runtime.InteropServices.UnmanagedType.IUnknown
+  - System.Runtime.InteropServices.UnmanagedType.LPArray
+  - System.Runtime.InteropServices.UnmanagedType.LPStr
+  - System.Runtime.InteropServices.UnmanagedType.LPStruct
+  - System.Runtime.InteropServices.UnmanagedType.LPTStr
+  - System.Runtime.InteropServices.UnmanagedType.LPWStr
+  - System.Runtime.InteropServices.UnmanagedType.R4
+  - System.Runtime.InteropServices.UnmanagedType.R8
+  - System.Runtime.InteropServices.UnmanagedType.SafeArray
+  - System.Runtime.InteropServices.UnmanagedType.Struct
+  - System.Runtime.InteropServices.UnmanagedType.SysInt
+  - System.Runtime.InteropServices.UnmanagedType.SysUInt
+  - System.Runtime.InteropServices.UnmanagedType.TBStr
+  - System.Runtime.InteropServices.UnmanagedType.U1
+  - System.Runtime.InteropServices.UnmanagedType.U2
+  - System.Runtime.InteropServices.UnmanagedType.U4
+  - System.Runtime.InteropServices.UnmanagedType.U8
+  - System.Runtime.InteropServices.UnmanagedType.VariantBool
+  - System.Runtime.InteropServices.UnmanagedType.VBByRefStr
+  href: System.Runtime.InteropServices.UnmanagedType.yml
+  name: UnmanagedType
+  fullName: System.Runtime.InteropServices.UnmanagedType
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 437
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Identifies how to marshal parameters or fields to unmanaged code.
+  syntax:
+    content: public enum UnmanagedType
+    content.vb: Public Enum UnmanagedType
+- uid: System.Runtime.InteropServices.UnmanagedType.Bool
+  id: Bool
+  parent: System.Runtime.InteropServices.UnmanagedType
+  href: System.Runtime.InteropServices.UnmanagedType.yml
+  name: Bool
+  fullName: System.Runtime.InteropServices.UnmanagedType.Bool
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 442
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: A 4-byte Boolean value (true != 0, false = 0). This is the Win32 BOOL type.
+  syntax:
+    content: Bool = 2
+- uid: System.Runtime.InteropServices.UnmanagedType.I1
+  id: I1
+  parent: System.Runtime.InteropServices.UnmanagedType
+  href: System.Runtime.InteropServices.UnmanagedType.yml
+  name: I1
+  fullName: System.Runtime.InteropServices.UnmanagedType.I1
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 444
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: A 1-byte signed integer. You can use this member to transform a Boolean value into a 1-byte, C-style bool (true = 1, false = 0).
+  syntax:
+    content: I1 = 3
+- uid: System.Runtime.InteropServices.UnmanagedType.U1
+  id: U1
+  parent: System.Runtime.InteropServices.UnmanagedType
+  href: System.Runtime.InteropServices.UnmanagedType.yml
+  name: U1
+  fullName: System.Runtime.InteropServices.UnmanagedType.U1
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 446
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: A 1-byte unsigned integer.
+  syntax:
+    content: U1 = 4
+- uid: System.Runtime.InteropServices.UnmanagedType.I2
+  id: I2
+  parent: System.Runtime.InteropServices.UnmanagedType
+  href: System.Runtime.InteropServices.UnmanagedType.yml
+  name: I2
+  fullName: System.Runtime.InteropServices.UnmanagedType.I2
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 448
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: A 2-byte signed integer.
+  syntax:
+    content: I2 = 5
+- uid: System.Runtime.InteropServices.UnmanagedType.U2
+  id: U2
+  parent: System.Runtime.InteropServices.UnmanagedType
+  href: System.Runtime.InteropServices.UnmanagedType.yml
+  name: U2
+  fullName: System.Runtime.InteropServices.UnmanagedType.U2
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 450
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: A 2-byte unsigned integer.
+  syntax:
+    content: U2 = 6
+- uid: System.Runtime.InteropServices.UnmanagedType.I4
+  id: I4
+  parent: System.Runtime.InteropServices.UnmanagedType
+  href: System.Runtime.InteropServices.UnmanagedType.yml
+  name: I4
+  fullName: System.Runtime.InteropServices.UnmanagedType.I4
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 452
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: A 4-byte signed integer.
+  syntax:
+    content: I4 = 7
+- uid: System.Runtime.InteropServices.UnmanagedType.U4
+  id: U4
+  parent: System.Runtime.InteropServices.UnmanagedType
+  href: System.Runtime.InteropServices.UnmanagedType.yml
+  name: U4
+  fullName: System.Runtime.InteropServices.UnmanagedType.U4
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 454
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: A 4-byte unsigned integer.
+  syntax:
+    content: U4 = 8
+- uid: System.Runtime.InteropServices.UnmanagedType.I8
+  id: I8
+  parent: System.Runtime.InteropServices.UnmanagedType
+  href: System.Runtime.InteropServices.UnmanagedType.yml
+  name: I8
+  fullName: System.Runtime.InteropServices.UnmanagedType.I8
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 456
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: An 8-byte signed integer.
+  syntax:
+    content: I8 = 9
+- uid: System.Runtime.InteropServices.UnmanagedType.U8
+  id: U8
+  parent: System.Runtime.InteropServices.UnmanagedType
+  href: System.Runtime.InteropServices.UnmanagedType.yml
+  name: U8
+  fullName: System.Runtime.InteropServices.UnmanagedType.U8
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 458
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: An 8-byte unsigned integer.
+  syntax:
+    content: U8 = 10
+- uid: System.Runtime.InteropServices.UnmanagedType.R4
+  id: R4
+  parent: System.Runtime.InteropServices.UnmanagedType
+  href: System.Runtime.InteropServices.UnmanagedType.yml
+  name: R4
+  fullName: System.Runtime.InteropServices.UnmanagedType.R4
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 460
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: A 4-byte floating-point number.
+  syntax:
+    content: R4 = 11
+- uid: System.Runtime.InteropServices.UnmanagedType.R8
+  id: R8
+  parent: System.Runtime.InteropServices.UnmanagedType
+  href: System.Runtime.InteropServices.UnmanagedType.yml
+  name: R8
+  fullName: System.Runtime.InteropServices.UnmanagedType.R8
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 462
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: An 8-byte floating-point number.
+  syntax:
+    content: R8 = 12
+- uid: System.Runtime.InteropServices.UnmanagedType.Currency
+  id: Currency
+  parent: System.Runtime.InteropServices.UnmanagedType
+  href: System.Runtime.InteropServices.UnmanagedType.yml
+  name: Currency
+  fullName: System.Runtime.InteropServices.UnmanagedType.Currency
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 464
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: A currency type. Used on a @'System.Decimal' to marshal the decimal value as a COM currency type instead of as a Decimal.
+  syntax:
+    content: Currency = 15
+- uid: System.Runtime.InteropServices.UnmanagedType.BStr
+  id: BStr
+  parent: System.Runtime.InteropServices.UnmanagedType
+  href: System.Runtime.InteropServices.UnmanagedType.yml
+  name: BStr
+  fullName: System.Runtime.InteropServices.UnmanagedType.BStr
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 466
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: A Unicode character string that is a length-prefixed double byte. You can use this member, which is the default string in COM, on the @'System.String' data type.
+  syntax:
+    content: BStr = 19
+- uid: System.Runtime.InteropServices.UnmanagedType.LPStr
+  id: LPStr
+  parent: System.Runtime.InteropServices.UnmanagedType
+  href: System.Runtime.InteropServices.UnmanagedType.yml
+  name: LPStr
+  fullName: System.Runtime.InteropServices.UnmanagedType.LPStr
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 468
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: A single byte, null-terminated ANSI character string. You can use this member on the @'System.String' and @'System.Text.StringBuilder' data types.
+  syntax:
+    content: LPStr = 20
+- uid: System.Runtime.InteropServices.UnmanagedType.LPWStr
+  id: LPWStr
+  parent: System.Runtime.InteropServices.UnmanagedType
+  href: System.Runtime.InteropServices.UnmanagedType.yml
+  name: LPWStr
+  fullName: System.Runtime.InteropServices.UnmanagedType.LPWStr
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 470
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: A 2-byte, null-terminated Unicode character string.
+  syntax:
+    content: LPWStr = 21
+- uid: System.Runtime.InteropServices.UnmanagedType.LPTStr
+  id: LPTStr
+  parent: System.Runtime.InteropServices.UnmanagedType
+  href: System.Runtime.InteropServices.UnmanagedType.yml
+  name: LPTStr
+  fullName: System.Runtime.InteropServices.UnmanagedType.LPTStr
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 472
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: 'A platform-dependent character string: ANSI on Windows 98, and Unicode on Windows NT and Windows XP. This value is supported only for platform invoke and not for COM interop, because exporting a string of type LPTStr is not supported.'
+  syntax:
+    content: LPTStr = 22
+- uid: System.Runtime.InteropServices.UnmanagedType.ByValTStr
+  id: ByValTStr
+  parent: System.Runtime.InteropServices.UnmanagedType
+  href: System.Runtime.InteropServices.UnmanagedType.yml
+  name: ByValTStr
+  fullName: System.Runtime.InteropServices.UnmanagedType.ByValTStr
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 474
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Used for in-line, fixed-length character arrays that appear within a structure. The character type used with @'System.Runtime.InteropServices.UnmanagedType.ByValTStr' is determined by the @'System.Runtime.InteropServices.CharSet' argument of the @'System.Runtime.InteropServices.StructLayoutAttribute' attribute applied to the containing structure. Always use the @'System.Runtime.InteropServices.MarshalAsAttribute.SizeConst' field to indicate the size of the array.
+  syntax:
+    content: ByValTStr = 23
+- uid: System.Runtime.InteropServices.UnmanagedType.IUnknown
+  id: IUnknown
+  parent: System.Runtime.InteropServices.UnmanagedType
+  href: System.Runtime.InteropServices.UnmanagedType.yml
+  name: IUnknown
+  fullName: System.Runtime.InteropServices.UnmanagedType.IUnknown
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 476
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: A COM IUnknown pointer. You can use this member on the @'System.Object' data type.
+  syntax:
+    content: IUnknown = 25
+- uid: System.Runtime.InteropServices.UnmanagedType.IDispatch
+  id: IDispatch
+  parent: System.Runtime.InteropServices.UnmanagedType
+  href: System.Runtime.InteropServices.UnmanagedType.yml
+  name: IDispatch
+  fullName: System.Runtime.InteropServices.UnmanagedType.IDispatch
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 478
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: A COM IDispatch pointer (Object in Microsoft Visual Basic 6.0).
+  syntax:
+    content: IDispatch = 26
+- uid: System.Runtime.InteropServices.UnmanagedType.Struct
+  id: Struct
+  parent: System.Runtime.InteropServices.UnmanagedType
+  href: System.Runtime.InteropServices.UnmanagedType.yml
+  name: Struct
+  fullName: System.Runtime.InteropServices.UnmanagedType.Struct
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 480
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: A VARIANT, which is used to marshal managed formatted classes and value types.
+  syntax:
+    content: Struct = 27
+- uid: System.Runtime.InteropServices.UnmanagedType.Interface
+  id: Interface
+  parent: System.Runtime.InteropServices.UnmanagedType
+  href: System.Runtime.InteropServices.UnmanagedType.yml
+  name: Interface
+  fullName: System.Runtime.InteropServices.UnmanagedType.Interface
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 482
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: A COM interface pointer. The @'System.Guid' of the interface is obtained from the class metadata. Use this member to specify the exact interface type or the default interface type if you apply it to a class. This member produces the same behavior as @'System.Runtime.InteropServices.UnmanagedType.IUnknown' when you apply it to the @'System.Object' data type.
+  syntax:
+    content: Interface = 28
+- uid: System.Runtime.InteropServices.UnmanagedType.SafeArray
+  id: SafeArray
+  parent: System.Runtime.InteropServices.UnmanagedType
+  href: System.Runtime.InteropServices.UnmanagedType.yml
+  name: SafeArray
+  fullName: System.Runtime.InteropServices.UnmanagedType.SafeArray
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 484
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: A SafeArray, which is a self-describing array that carries the type, rank, and bounds of the associated array data. You can use this member with the @'System.Runtime.InteropServices.MarshalAsAttribute.SafeArraySubType' field to override the default element type.
+  syntax:
+    content: SafeArray = 29
+- uid: System.Runtime.InteropServices.UnmanagedType.ByValArray
+  id: ByValArray
+  parent: System.Runtime.InteropServices.UnmanagedType
+  href: System.Runtime.InteropServices.UnmanagedType.yml
+  name: ByValArray
+  fullName: System.Runtime.InteropServices.UnmanagedType.ByValArray
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 486
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: When the @'System.Runtime.InteropServices.MarshalAsAttribute.Value' property is set to ByValArray, the @'System.Runtime.InteropServices.MarshalAsAttribute.SizeConst' field must be set to indicate the number of elements in the array. The @'System.Runtime.InteropServices.MarshalAsAttribute.ArraySubType' field can optionally contain the @'System.Runtime.InteropServices.UnmanagedType' of the array elements when it is necessary to differentiate among string types. You can use this @'System.Runtime.InteropServices.UnmanagedType' only on an array that whose elements appear as fields in a structure.
+  syntax:
+    content: ByValArray = 30
+- uid: System.Runtime.InteropServices.UnmanagedType.SysInt
+  id: SysInt
+  parent: System.Runtime.InteropServices.UnmanagedType
+  href: System.Runtime.InteropServices.UnmanagedType.yml
+  name: SysInt
+  fullName: System.Runtime.InteropServices.UnmanagedType.SysInt
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 488
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: 'A platform-dependent, signed integer: 4 bytes on 32-bit Windows, 8 bytes on 64-bit Windows.'
+  syntax:
+    content: SysInt = 31
+- uid: System.Runtime.InteropServices.UnmanagedType.SysUInt
+  id: SysUInt
+  parent: System.Runtime.InteropServices.UnmanagedType
+  href: System.Runtime.InteropServices.UnmanagedType.yml
+  name: SysUInt
+  fullName: System.Runtime.InteropServices.UnmanagedType.SysUInt
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 490
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: 'A platform-dependent, unsigned integer: 4 bytes on 32-bit Windows, 8 bytes on 64-bit Windows.'
+  syntax:
+    content: SysUInt = 32
+- uid: System.Runtime.InteropServices.UnmanagedType.VBByRefStr
+  id: VBByRefStr
+  parent: System.Runtime.InteropServices.UnmanagedType
+  href: System.Runtime.InteropServices.UnmanagedType.yml
+  name: VBByRefStr
+  fullName: System.Runtime.InteropServices.UnmanagedType.VBByRefStr
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 492
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: A value that enables Visual Basic to change a string in unmanaged code and have the results reflected in managed code. This value is only supported for platform invoke.
+  syntax:
+    content: VBByRefStr = 34
+- uid: System.Runtime.InteropServices.UnmanagedType.AnsiBStr
+  id: AnsiBStr
+  parent: System.Runtime.InteropServices.UnmanagedType
+  href: System.Runtime.InteropServices.UnmanagedType.yml
+  name: AnsiBStr
+  fullName: System.Runtime.InteropServices.UnmanagedType.AnsiBStr
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 494
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: An ANSI character string that is a length-prefixed single byte. You can use this member on the @'System.String' data type.
+  syntax:
+    content: AnsiBStr = 35
+- uid: System.Runtime.InteropServices.UnmanagedType.TBStr
+  id: TBStr
+  parent: System.Runtime.InteropServices.UnmanagedType
+  href: System.Runtime.InteropServices.UnmanagedType.yml
+  name: TBStr
+  fullName: System.Runtime.InteropServices.UnmanagedType.TBStr
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 496
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: 'A length-prefixed, platform-dependent char string: ANSI on Windows 98, Unicode on Windows NT. You rarely use this BSTR-like member.'
+  syntax:
+    content: TBStr = 36
+- uid: System.Runtime.InteropServices.UnmanagedType.VariantBool
+  id: VariantBool
+  parent: System.Runtime.InteropServices.UnmanagedType
+  href: System.Runtime.InteropServices.UnmanagedType.yml
+  name: VariantBool
+  fullName: System.Runtime.InteropServices.UnmanagedType.VariantBool
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 498
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: A 2-byte, OLE-defined VARIANT_BOOL type (true = -1, false = 0).
+  syntax:
+    content: VariantBool = 37
+- uid: System.Runtime.InteropServices.UnmanagedType.FunctionPtr
+  id: FunctionPtr
+  parent: System.Runtime.InteropServices.UnmanagedType
+  href: System.Runtime.InteropServices.UnmanagedType.yml
+  name: FunctionPtr
+  fullName: System.Runtime.InteropServices.UnmanagedType.FunctionPtr
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 500
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: An integer that can be used as a C-style function pointer. You can use this member on a @'System.Delegate' data type or on a type that inherits from a @'System.Delegate'.
+  syntax:
+    content: FunctionPtr = 38
+- uid: System.Runtime.InteropServices.UnmanagedType.AsAny
+  id: AsAny
+  parent: System.Runtime.InteropServices.UnmanagedType
+  href: System.Runtime.InteropServices.UnmanagedType.yml
+  name: AsAny
+  fullName: System.Runtime.InteropServices.UnmanagedType.AsAny
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 502
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: A dynamic type that determines the type of an object at run time and marshals the object as that type. This member is valid for platform invoke methods only.
+  syntax:
+    content: AsAny = 40
+- uid: System.Runtime.InteropServices.UnmanagedType.LPArray
+  id: LPArray
+  parent: System.Runtime.InteropServices.UnmanagedType
+  href: System.Runtime.InteropServices.UnmanagedType.yml
+  name: LPArray
+  fullName: System.Runtime.InteropServices.UnmanagedType.LPArray
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 504
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: A pointer to the first element of a C-style array. When marshaling from managed to unmanaged code, the length of the array is determined by the length of the managed array. When marshaling from unmanaged to managed code, the length of the array is determined from the @'System.Runtime.InteropServices.MarshalAsAttribute.SizeConst' and @'System.Runtime.InteropServices.MarshalAsAttribute.SizeParamIndex' fields, optionally followed by the unmanaged type of the elements within the array when it is necessary to differentiate among string types.
+  syntax:
+    content: LPArray = 42
+- uid: System.Runtime.InteropServices.UnmanagedType.LPStruct
+  id: LPStruct
+  parent: System.Runtime.InteropServices.UnmanagedType
+  href: System.Runtime.InteropServices.UnmanagedType.yml
+  name: LPStruct
+  fullName: System.Runtime.InteropServices.UnmanagedType.LPStruct
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 506
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: A pointer to a C-style structure that you use to marshal managed formatted classes. This member is valid for platform invoke methods only.
+  syntax:
+    content: LPStruct = 43
+- uid: System.Runtime.InteropServices.UnmanagedType.CustomMarshaler
+  id: CustomMarshaler
+  parent: System.Runtime.InteropServices.UnmanagedType
+  href: System.Runtime.InteropServices.UnmanagedType.yml
+  name: CustomMarshaler
+  fullName: System.Runtime.InteropServices.UnmanagedType.CustomMarshaler
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 508
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Specifies the custom marshaler class when used with the @'System.Runtime.InteropServices.MarshalAsAttribute.MarshalType' or @'System.Runtime.InteropServices.MarshalAsAttribute.MarshalTypeRef' field. The @'System.Runtime.InteropServices.MarshalAsAttribute.MarshalCookie' field can be used to pass additional information to the custom marshaler. You can use this member on any reference type.
+  syntax:
+    content: CustomMarshaler = 44
+- uid: System.Runtime.InteropServices.UnmanagedType.Error
+  id: Error
+  parent: System.Runtime.InteropServices.UnmanagedType
+  href: System.Runtime.InteropServices.UnmanagedType.yml
+  name: Error
+  fullName: System.Runtime.InteropServices.UnmanagedType.Error
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 510
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: A native type that is associated with an @'System.Runtime.InteropServices.UnmanagedType.I4' or an @'System.Runtime.InteropServices.UnmanagedType.U4' and that causes the parameter to be exported as an HRESULT in the exported type library.
+  syntax:
+    content: Error = 45
+- uid: System.Runtime.InteropServices.UnmanagedType.IInspectable
+  id: IInspectable
+  parent: System.Runtime.InteropServices.UnmanagedType
+  href: System.Runtime.InteropServices.UnmanagedType.yml
+  name: IInspectable
+  fullName: System.Runtime.InteropServices.UnmanagedType.IInspectable
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 512
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: A Windows Runtime interface pointer. You can use this member on the @'System.Object' data type.
+  syntax:
+    content: IInspectable = 46
+- uid: System.Runtime.InteropServices.UnmanagedType.HString
+  id: HString
+  parent: System.Runtime.InteropServices.UnmanagedType
+  href: System.Runtime.InteropServices.UnmanagedType.yml
+  name: HString
+  fullName: System.Runtime.InteropServices.UnmanagedType.HString
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 515
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: A Windows Runtime string. You can use this member on the @'System.String' data type.
+  syntax:
+    content: HString = 47
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace

@@ -1,0 +1,96 @@
+items:
+- uid: System.Reflection.Metadata.Ecma335.HeapIndex
+  id: HeapIndex
+  parent: System.Reflection.Metadata.Ecma335
+  children:
+  - System.Reflection.Metadata.Ecma335.HeapIndex.Blob
+  - System.Reflection.Metadata.Ecma335.HeapIndex.Guid
+  - System.Reflection.Metadata.Ecma335.HeapIndex.String
+  - System.Reflection.Metadata.Ecma335.HeapIndex.UserString
+  href: System.Reflection.Metadata.Ecma335.HeapIndex.yml
+  name: HeapIndex
+  fullName: System.Reflection.Metadata.Ecma335.HeapIndex
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/HeapIndex.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/HeapIndex.cs
+    startLine: 5
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata.Ecma335
+  syntax:
+    content: public enum HeapIndex
+    content.vb: Public Enum HeapIndex
+- uid: System.Reflection.Metadata.Ecma335.HeapIndex.UserString
+  id: UserString
+  parent: System.Reflection.Metadata.Ecma335.HeapIndex
+  href: System.Reflection.Metadata.Ecma335.HeapIndex.yml
+  name: UserString
+  fullName: System.Reflection.Metadata.Ecma335.HeapIndex.UserString
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/HeapIndex.cs
+    startLine: 7
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata.Ecma335
+  syntax:
+    content: UserString = 0
+- uid: System.Reflection.Metadata.Ecma335.HeapIndex.String
+  id: String
+  parent: System.Reflection.Metadata.Ecma335.HeapIndex
+  href: System.Reflection.Metadata.Ecma335.HeapIndex.yml
+  name: String
+  fullName: System.Reflection.Metadata.Ecma335.HeapIndex.String
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/HeapIndex.cs
+    startLine: 8
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata.Ecma335
+  syntax:
+    content: String = 1
+- uid: System.Reflection.Metadata.Ecma335.HeapIndex.Blob
+  id: Blob
+  parent: System.Reflection.Metadata.Ecma335.HeapIndex
+  href: System.Reflection.Metadata.Ecma335.HeapIndex.yml
+  name: Blob
+  fullName: System.Reflection.Metadata.Ecma335.HeapIndex.Blob
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/HeapIndex.cs
+    startLine: 9
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata.Ecma335
+  syntax:
+    content: Blob = 2
+- uid: System.Reflection.Metadata.Ecma335.HeapIndex.Guid
+  id: Guid
+  parent: System.Reflection.Metadata.Ecma335.HeapIndex
+  href: System.Reflection.Metadata.Ecma335.HeapIndex.yml
+  name: Guid
+  fullName: System.Reflection.Metadata.Ecma335.HeapIndex.Guid
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/HeapIndex.cs
+    startLine: 10
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata.Ecma335
+  syntax:
+    content: Guid = 3
+references:
+- uid: System.Reflection.Metadata.Ecma335
+  isExternal: false
+  name: System.Reflection.Metadata.Ecma335
+  fullName: System.Reflection.Metadata.Ecma335
+  type: Namespace

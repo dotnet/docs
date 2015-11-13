@@ -1,0 +1,27 @@
+items:
+- uid: System.Threading.Mutex.MutexRights
+  id: Mutex.MutexRights
+  parent: System.Threading
+  children: []
+  href: System.Threading.Mutex.MutexRights.yml
+  name: Mutex.MutexRights
+  fullName: System.Threading.Mutex.MutexRights
+  type: Enum
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/Mutex.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Threading/Mutex.cs
+    startLine: 292
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  syntax:
+    content: public enum MutexRights
+    content.vb: Public Enum MutexRights
+references:
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading

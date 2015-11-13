@@ -1,0 +1,101 @@
+items:
+- uid: System.Runtime.InteropServices.ComTypes.VARKIND
+  id: VARKIND
+  parent: System.Runtime.InteropServices.ComTypes
+  children:
+  - System.Runtime.InteropServices.ComTypes.VARKIND.VAR_CONST
+  - System.Runtime.InteropServices.ComTypes.VARKIND.VAR_DISPATCH
+  - System.Runtime.InteropServices.ComTypes.VARKIND.VAR_PERINSTANCE
+  - System.Runtime.InteropServices.ComTypes.VARKIND.VAR_STATIC
+  href: System.Runtime.InteropServices.ComTypes.VARKIND.yml
+  name: VARKIND
+  fullName: System.Runtime.InteropServices.ComTypes.VARKIND
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 174
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: Defines the kind of variable.
+  syntax:
+    content: public enum VARKIND
+    content.vb: Public Enum VARKIND
+- uid: System.Runtime.InteropServices.ComTypes.VARKIND.VAR_PERINSTANCE
+  id: VAR_PERINSTANCE
+  parent: System.Runtime.InteropServices.ComTypes.VARKIND
+  href: System.Runtime.InteropServices.ComTypes.VARKIND.yml
+  name: VAR_PERINSTANCE
+  fullName: System.Runtime.InteropServices.ComTypes.VARKIND.VAR_PERINSTANCE
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 177
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: The variable is a field or member of the type. It exists at a fixed offset within each instance of the type.
+  syntax:
+    content: VAR_PERINSTANCE = 0
+- uid: System.Runtime.InteropServices.ComTypes.VARKIND.VAR_STATIC
+  id: VAR_STATIC
+  parent: System.Runtime.InteropServices.ComTypes.VARKIND
+  href: System.Runtime.InteropServices.ComTypes.VARKIND.yml
+  name: VAR_STATIC
+  fullName: System.Runtime.InteropServices.ComTypes.VARKIND.VAR_STATIC
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 178
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: There is only one instance of the variable.
+  syntax:
+    content: VAR_STATIC = 1
+- uid: System.Runtime.InteropServices.ComTypes.VARKIND.VAR_CONST
+  id: VAR_CONST
+  parent: System.Runtime.InteropServices.ComTypes.VARKIND
+  href: System.Runtime.InteropServices.ComTypes.VARKIND.yml
+  name: VAR_CONST
+  fullName: System.Runtime.InteropServices.ComTypes.VARKIND.VAR_CONST
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 179
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: The VARDESC structure describes a symbolic constant. There is no memory associated with it.
+  syntax:
+    content: VAR_CONST = 2
+- uid: System.Runtime.InteropServices.ComTypes.VARKIND.VAR_DISPATCH
+  id: VAR_DISPATCH
+  parent: System.Runtime.InteropServices.ComTypes.VARKIND
+  href: System.Runtime.InteropServices.ComTypes.VARKIND.yml
+  name: VAR_DISPATCH
+  fullName: System.Runtime.InteropServices.ComTypes.VARKIND.VAR_DISPATCH
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeInfo.cs
+    startLine: 180
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: The variable can be accessed only through IDispatch::Invoke.
+  syntax:
+    content: VAR_DISPATCH = 3
+references:
+- uid: System.Runtime.InteropServices.ComTypes
+  isExternal: false
+  name: System.Runtime.InteropServices.ComTypes
+  fullName: System.Runtime.InteropServices.ComTypes
+  type: Namespace

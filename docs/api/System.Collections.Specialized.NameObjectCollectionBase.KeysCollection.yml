@@ -1,0 +1,472 @@
+items:
+- uid: System.Collections.Specialized.NameObjectCollectionBase.KeysCollection
+  id: NameObjectCollectionBase.KeysCollection
+  parent: System.Collections.Specialized
+  children:
+  - System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.Count
+  - System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.Get(System.Int32)
+  - System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.GetEnumerator
+  - System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.Item(System.Int32)
+  - System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  - System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.System#Collections#ICollection#IsSynchronized
+  - System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.System#Collections#ICollection#SyncRoot
+  href: System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.yml
+  name: NameObjectCollectionBase.KeysCollection
+  fullName: System.Collections.Specialized.NameObjectCollectionBase.KeysCollection
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Collections.Specialized/src/System/Collections/Specialized/NameObjectCollectionBase.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/NameObjectCollectionBase.cs
+    startLine: 527
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Represents a collection of the @'System.String' keys of a collection.
+  syntax:
+    content: 'public class KeysCollection : ICollection, IEnumerable'
+    content.vb: Public Class KeysCollection Implements ICollection, IEnumerable
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.ICollection
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.Get(System.Int32)
+  id: Get(System.Int32)
+  parent: System.Collections.Specialized.NameObjectCollectionBase.KeysCollection
+  href: System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.yml
+  name: Get(Int32)
+  fullName: System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.Get(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/NameObjectCollectionBase.cs
+    startLine: 541
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Gets the key at the specified index of the collection.
+  syntax:
+    content: public virtual string Get(int index)
+    content.vb: Public Overridable Function Get(index As Integer) As String
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the key to get from the collection.
+    return:
+      type: System.String
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is outside the valid range of indexes for the collection.'
+- uid: System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: System.Collections.Specialized.NameObjectCollectionBase.KeysCollection
+  href: System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.yml
+  name: Item[Int32]
+  name.vb: Item(Int32)
+  fullName: System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.Item[System.Int32]
+  fullName.vb: System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.Item(System.Int32)
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/NameObjectCollectionBase.cs
+    startLine: 549
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Gets the entry at the specified index of the collection.
+  syntax:
+    content: public string this[int index] { get; }
+    content.vb: Public ReadOnly Property Item(index As Integer) As String
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the entry to locate in the collection.
+    return:
+      type: System.String
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is outside the valid range of indexes for the collection.'
+- uid: System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.GetEnumerator
+  id: GetEnumerator
+  parent: System.Collections.Specialized.NameObjectCollectionBase.KeysCollection
+  href: System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.yml
+  name: GetEnumerator()
+  fullName: System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/NameObjectCollectionBase.cs
+    startLine: 563
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Returns an enumerator that iterates through the @'System.Collections.Specialized.NameObjectCollectionBase.KeysCollection'.
+  syntax:
+    content: public IEnumerator GetEnumerator()
+    content.vb: Public Function GetEnumerator As IEnumerator
+    return:
+      type: System.Collections.IEnumerator
+- uid: System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.Count
+  id: Count
+  parent: System.Collections.Specialized.NameObjectCollectionBase.KeysCollection
+  href: System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.yml
+  name: Count
+  fullName: System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.Count
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/NameObjectCollectionBase.cs
+    startLine: 571
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Gets the number of keys in the @'System.Collections.Specialized.NameObjectCollectionBase.KeysCollection'.
+  syntax:
+    content: public int Count { get; }
+    content.vb: Public ReadOnly Property Count As Integer
+    parameters: []
+    return:
+      type: System.Int32
+- uid: System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  id: System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  parent: System.Collections.Specialized.NameObjectCollectionBase.KeysCollection
+  href: System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.yml
+  name: ICollection.CopyTo(Array, Int32)
+  name.vb: System.Collections.ICollection.CopyTo(Array, Int32)
+  fullName: System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/NameObjectCollectionBase.cs
+    startLine: 579
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Copies the entire @'System.Collections.Specialized.NameObjectCollectionBase.KeysCollection' to a compatible one-dimensional @'System.Array', starting at the specified index of the target array.
+  syntax:
+    content: void ICollection.CopyTo(Array array, int index)
+    content.vb: Sub System.Collections.ICollection.CopyTo(array As Array, index As Integer) Implements ICollection.CopyTo
+    parameters:
+    - id: array
+      type: System.Array
+      description: The one-dimensional @'System.Array' that is the destination of the elements copied from @'System.Collections.Specialized.NameObjectCollectionBase.KeysCollection'. The @'System.Array' must have zero-based indexing.
+    - id: index
+      type: System.Int32
+      description: The zero-based index in *array* at which copying begins.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero.'
+  - type: System.ArgumentException
+    description: '*array* is multidimensional.-or- The number of elements in the source @''System.Collections.Specialized.NameObjectCollectionBase.KeysCollection'' is greater than the available space from *index* to the end of the destination *array*.'
+  - type: System.InvalidCastException
+    description: The type of the source @'System.Collections.Specialized.NameObjectCollectionBase.KeysCollection' cannot be cast automatically to the type of the destination *array*.
+- uid: System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.System#Collections#ICollection#SyncRoot
+  id: System#Collections#ICollection#SyncRoot
+  parent: System.Collections.Specialized.NameObjectCollectionBase.KeysCollection
+  href: System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.yml
+  name: ICollection.SyncRoot
+  name.vb: System.Collections.ICollection.SyncRoot
+  fullName: System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.System.Collections.ICollection.SyncRoot
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/NameObjectCollectionBase.cs
+    startLine: 605
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Gets an object that can be used to synchronize access to the @'System.Collections.Specialized.NameObjectCollectionBase.KeysCollection'.
+  syntax:
+    content: object ICollection.SyncRoot { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.ICollection.SyncRoot As Object Implements ICollection.SyncRoot
+    parameters: []
+    return:
+      type: System.Object
+- uid: System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.System#Collections#ICollection#IsSynchronized
+  id: System#Collections#ICollection#IsSynchronized
+  parent: System.Collections.Specialized.NameObjectCollectionBase.KeysCollection
+  href: System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.yml
+  name: ICollection.IsSynchronized
+  name.vb: System.Collections.ICollection.IsSynchronized
+  fullName: System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.System.Collections.ICollection.IsSynchronized
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/NameObjectCollectionBase.cs
+    startLine: 611
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Gets a value indicating whether access to the @'System.Collections.Specialized.NameObjectCollectionBase.KeysCollection' is synchronized (thread safe).
+  syntax:
+    content: bool ICollection.IsSynchronized { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.ICollection.IsSynchronized As Boolean Implements ICollection.IsSynchronized
+    parameters: []
+    return:
+      type: System.Boolean
+references:
+- uid: System.Collections.Specialized
+  isExternal: false
+  name: System.Collections.Specialized
+  fullName: System.Collections.Specialized
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  isExternal: false
+  name: System.Collections
+  fullName: System.Collections
+- uid: System.Array
+  parent: System
+  isExternal: true
+  name: Array
+  fullName: System.Array
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean

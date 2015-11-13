@@ -1,0 +1,97 @@
+items:
+- uid: System.Security.Principal.IPrincipal
+  id: IPrincipal
+  parent: System.Security.Principal
+  children:
+  - System.Security.Principal.IPrincipal.Identity
+  - System.Security.Principal.IPrincipal.IsInRole(System.String)
+  href: System.Security.Principal.IPrincipal.yml
+  name: IPrincipal
+  fullName: System.Security.Principal.IPrincipal
+  type: Interface
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Security/Principal/IPrincipal.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Security/Principal/IPrincipal.cs
+    startLine: 16
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Principal
+  summary: Defines the basic functionality of a principal object.
+  syntax:
+    content: public interface IPrincipal
+    content.vb: Public Interface IPrincipal
+- uid: System.Security.Principal.IPrincipal.Identity
+  id: Identity
+  parent: System.Security.Principal.IPrincipal
+  href: System.Security.Principal.IPrincipal.yml
+  name: Identity
+  fullName: System.Security.Principal.IPrincipal.Identity
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Principal/IPrincipal.cs
+    startLine: 19
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Principal
+  summary: Gets the identity of the current principal.
+  syntax:
+    content: IIdentity Identity { get; }
+    content.vb: ReadOnly Property Identity As IIdentity
+    parameters: []
+    return:
+      type: System.Security.Principal.IIdentity
+- uid: System.Security.Principal.IPrincipal.IsInRole(System.String)
+  id: IsInRole(System.String)
+  parent: System.Security.Principal.IPrincipal
+  href: System.Security.Principal.IPrincipal.yml
+  name: IsInRole(String)
+  fullName: System.Security.Principal.IPrincipal.IsInRole(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Principal/IPrincipal.cs
+    startLine: 22
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Principal
+  summary: Determines whether the current principal belongs to the specified role.
+  syntax:
+    content: bool IsInRole(string role)
+    content.vb: Function IsInRole(role As String) As Boolean
+    parameters:
+    - id: role
+      type: System.String
+      description: The name of the role for which to check membership.
+    return:
+      type: System.Boolean
+references:
+- uid: System.Security.Principal
+  isExternal: false
+  name: System.Security.Principal
+  fullName: System.Security.Principal
+  type: Namespace
+- uid: System.Security.Principal.IIdentity
+  parent: System.Security.Principal
+  isExternal: false
+  href: System.Security.Principal.IIdentity.yml
+  name: IIdentity
+  fullName: System.Security.Principal.IIdentity
+  type: Interface
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

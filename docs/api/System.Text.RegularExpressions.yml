@@ -1,0 +1,128 @@
+items:
+- uid: System.Text.RegularExpressions
+  id: System.Text.RegularExpressions
+  children:
+  - System.Text.RegularExpressions.Capture
+  - System.Text.RegularExpressions.CaptureCollection
+  - System.Text.RegularExpressions.Group
+  - System.Text.RegularExpressions.GroupCollection
+  - System.Text.RegularExpressions.Match
+  - System.Text.RegularExpressions.MatchCollection
+  - System.Text.RegularExpressions.MatchEvaluator
+  - System.Text.RegularExpressions.Regex
+  - System.Text.RegularExpressions.RegexMatchTimeoutException
+  - System.Text.RegularExpressions.RegexOptions
+  href: System.Text.RegularExpressions.yml
+  name: System.Text.RegularExpressions
+  fullName: System.Text.RegularExpressions
+  type: Namespace
+  source:
+    remote:
+      path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/RegexWriter.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Text.RegularExpressions/src/System/Text/RegularExpressions/RegexWriter.cs
+    startLine: 16
+  assemblies:
+  - System.Text.RegularExpressions
+  summary: The @'System.Text.RegularExpressions' namespace contains classes that provide access to the .NET Framework regular expression engine. The namespace provides regular expression functionality that may be used from any platform or language that runs within the Microsoft .NET Framework. In addition to the types contained in this namespace, the @'System.Configuration.RegexStringValidator' class enables you to determine whether a particular string conforms to a regular expression pattern.
+references:
+- uid: System.Text.RegularExpressions.Regex
+  isExternal: false
+  href: System.Text.RegularExpressions.Regex.yml
+  name: Regex
+  fullName: System.Text.RegularExpressions.Regex
+  type: Class
+  summary: >-
+    Represents an immutable, compiled regular expression. Also
+
+    contains static methods that allow use of regular expressions without instantiating
+
+    a Regex explicitly.
+- uid: System.Text.RegularExpressions.MatchEvaluator
+  parent: System.Text.RegularExpressions
+  isExternal: false
+  href: System.Text.RegularExpressions.MatchEvaluator.yml
+  name: MatchEvaluator
+  fullName: System.Text.RegularExpressions.MatchEvaluator
+  type: Delegate
+- uid: System.Text.RegularExpressions.Capture
+  isExternal: false
+  href: System.Text.RegularExpressions.Capture.yml
+  name: Capture
+  fullName: System.Text.RegularExpressions.Capture
+  type: Class
+  summary: >-
+    Represents the results from a single subexpression capture. The object represents
+
+    one substring for a single successful capture.
+- uid: System.Text.RegularExpressions.CaptureCollection
+  isExternal: false
+  href: System.Text.RegularExpressions.CaptureCollection.yml
+  name: CaptureCollection
+  fullName: System.Text.RegularExpressions.CaptureCollection
+  type: Class
+  summary: >-
+    Represents a sequence of capture substrings. The object is used
+
+    to return the set of captures done by a single capturing group.
+- uid: System.Text.RegularExpressions.Group
+  isExternal: false
+  href: System.Text.RegularExpressions.Group.yml
+  name: Group
+  fullName: System.Text.RegularExpressions.Group
+  type: Class
+  summary: >-
+    Represents the results from a single capturing group. A capturing group can
+
+    capture zero, one, or more strings in a single match because of quantifiers, so
+
+    Group supplies a collection of Capture objects.
+- uid: System.Text.RegularExpressions.GroupCollection
+  isExternal: false
+  href: System.Text.RegularExpressions.GroupCollection.yml
+  name: GroupCollection
+  fullName: System.Text.RegularExpressions.GroupCollection
+  type: Class
+  summary: >-
+    Represents a sequence of capture substrings. The object is used
+
+    to return the set of captures done by a single capturing group.
+- uid: System.Text.RegularExpressions.Match
+  parent: System.Text.RegularExpressions
+  isExternal: false
+  href: System.Text.RegularExpressions.Match.yml
+  name: Match
+  fullName: System.Text.RegularExpressions.Match
+  type: Class
+  summary: Represents the results from a single regular expression match.
+- uid: System.Text.RegularExpressions.MatchCollection
+  parent: System.Text.RegularExpressions
+  isExternal: false
+  href: System.Text.RegularExpressions.MatchCollection.yml
+  name: MatchCollection
+  fullName: System.Text.RegularExpressions.MatchCollection
+  type: Class
+  summary: >-
+    Represents the set of names appearing as capturing group
+
+    names in a regular expression.
+- uid: System.Text.RegularExpressions.RegexMatchTimeoutException
+  isExternal: false
+  href: System.Text.RegularExpressions.RegexMatchTimeoutException.yml
+  name: RegexMatchTimeoutException
+  fullName: System.Text.RegularExpressions.RegexMatchTimeoutException
+  type: Class
+  summary: This is the exception that is thrown when a RegEx matching timeout occurs.
+- uid: System.Text.RegularExpressions.RegexOptions
+  parent: System.Text.RegularExpressions
+  isExternal: false
+  href: System.Text.RegularExpressions.RegexOptions.yml
+  name: RegexOptions
+  fullName: System.Text.RegularExpressions.RegexOptions
+  type: Enum
+- uid: System.Text.RegularExpressions
+  isExternal: false
+  name: System.Text.RegularExpressions
+  fullName: System.Text.RegularExpressions
+  type: Namespace

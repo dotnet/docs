@@ -1,0 +1,729 @@
+items:
+- uid: System.Runtime.Serialization.XmlObjectSerializer
+  id: XmlObjectSerializer
+  parent: System.Runtime.Serialization
+  children:
+  - System.Runtime.Serialization.XmlObjectSerializer.IsStartObject(System.Xml.XmlDictionaryReader)
+  - System.Runtime.Serialization.XmlObjectSerializer.IsStartObject(XmlReader)
+  - System.Runtime.Serialization.XmlObjectSerializer.ReadObject(System.IO.Stream)
+  - System.Runtime.Serialization.XmlObjectSerializer.ReadObject(System.Xml.XmlDictionaryReader)
+  - System.Runtime.Serialization.XmlObjectSerializer.ReadObject(System.Xml.XmlDictionaryReader,System.Boolean)
+  - System.Runtime.Serialization.XmlObjectSerializer.ReadObject(XmlReader)
+  - System.Runtime.Serialization.XmlObjectSerializer.ReadObject(XmlReader,System.Boolean)
+  - System.Runtime.Serialization.XmlObjectSerializer.WriteEndObject(System.Xml.XmlDictionaryWriter)
+  - System.Runtime.Serialization.XmlObjectSerializer.WriteEndObject(XmlWriter)
+  - System.Runtime.Serialization.XmlObjectSerializer.WriteObject(System.IO.Stream,System.Object)
+  - System.Runtime.Serialization.XmlObjectSerializer.WriteObject(System.Xml.XmlDictionaryWriter,System.Object)
+  - System.Runtime.Serialization.XmlObjectSerializer.WriteObject(XmlWriter,System.Object)
+  - System.Runtime.Serialization.XmlObjectSerializer.WriteObjectContent(System.Xml.XmlDictionaryWriter,System.Object)
+  - System.Runtime.Serialization.XmlObjectSerializer.WriteObjectContent(XmlWriter,System.Object)
+  - System.Runtime.Serialization.XmlObjectSerializer.WriteStartObject(System.Xml.XmlDictionaryWriter,System.Object)
+  - System.Runtime.Serialization.XmlObjectSerializer.WriteStartObject(XmlWriter,System.Object)
+  href: System.Runtime.Serialization.XmlObjectSerializer.yml
+  name: XmlObjectSerializer
+  fullName: System.Runtime.Serialization.XmlObjectSerializer
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Private.DataContractSerialization/src/System/Runtime/Serialization/XmlObjectSerializer.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Private.DataContractSerialization/src/System/Runtime/Serialization/XmlObjectSerializer.cs
+    startLine: 15
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Runtime.Serialization
+  summary: Provides the base class used to serialize objects as XML streams or documents. This class is abstract.
+  syntax:
+    content: public abstract class XmlObjectSerializer
+    content.vb: Public MustInherit Class XmlObjectSerializer
+  exceptions:
+  - type: System.Runtime.Serialization.InvalidDataContractException
+    description: the type being serialized does not conform to data contract rules. For example, the @'System.Runtime.Serialization.DataContractAttribute' attribute has not been applied to the type.
+  - type: System.Runtime.Serialization.SerializationException
+    description: there is a problem with the instance being serialized.
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Runtime.Serialization.XmlObjectSerializer.WriteStartObject(System.Xml.XmlDictionaryWriter,System.Object)
+  id: WriteStartObject(System.Xml.XmlDictionaryWriter,System.Object)
+  parent: System.Runtime.Serialization.XmlObjectSerializer
+  href: System.Runtime.Serialization.XmlObjectSerializer.yml
+  name: WriteStartObject(XmlDictionaryWriter, Object)
+  fullName: System.Runtime.Serialization.XmlObjectSerializer.WriteStartObject(System.Xml.XmlDictionaryWriter, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Runtime/Serialization/XmlObjectSerializer.cs
+    startLine: 17
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Runtime.Serialization
+  summary: Writes the start of the object's data as an opening XML element using the specified @'System.Xml.XmlDictionaryWriter'.
+  syntax:
+    content: public abstract void WriteStartObject(XmlDictionaryWriter writer, object graph)
+    content.vb: Public MustOverride Sub WriteStartObject(writer As XmlDictionaryWriter, graph As Object)
+    parameters:
+    - id: writer
+      type: System.Xml.XmlDictionaryWriter
+      description: An @'System.Xml.XmlDictionaryWriter' used to write the XML document.
+    - id: graph
+      type: System.Object
+      description: The object to serialize.
+  exceptions:
+  - type: System.Runtime.Serialization.InvalidDataContractException
+    description: the type being serialized does not conform to data contract rules. For example, the @'System.Runtime.Serialization.DataContractAttribute' attribute has not been applied to the type.
+  - type: System.Runtime.Serialization.SerializationException
+    description: there is a problem with the instance being serialized.
+  - type: System.ServiceModel.QuotaExceededException
+    description: the maximum number of objects to serialize has been exceeded. Check the @'System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph' property.
+- uid: System.Runtime.Serialization.XmlObjectSerializer.WriteObjectContent(System.Xml.XmlDictionaryWriter,System.Object)
+  id: WriteObjectContent(System.Xml.XmlDictionaryWriter,System.Object)
+  parent: System.Runtime.Serialization.XmlObjectSerializer
+  href: System.Runtime.Serialization.XmlObjectSerializer.yml
+  name: WriteObjectContent(XmlDictionaryWriter, Object)
+  fullName: System.Runtime.Serialization.XmlObjectSerializer.WriteObjectContent(System.Xml.XmlDictionaryWriter, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Runtime/Serialization/XmlObjectSerializer.cs
+    startLine: 18
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Runtime.Serialization
+  summary: Writes only the content of the object to the XML document or stream using the specified @'System.Xml.XmlDictionaryWriter'.
+  syntax:
+    content: public abstract void WriteObjectContent(XmlDictionaryWriter writer, object graph)
+    content.vb: Public MustOverride Sub WriteObjectContent(writer As XmlDictionaryWriter, graph As Object)
+    parameters:
+    - id: writer
+      type: System.Xml.XmlDictionaryWriter
+      description: An @'System.Xml.XmlDictionaryWriter' used to write the XML document or stream.
+    - id: graph
+      type: System.Object
+      description: The object that contains the content to write.
+  exceptions:
+  - type: System.Runtime.Serialization.InvalidDataContractException
+    description: the type being serialized does not conform to data contract rules. For example, the @'System.Runtime.Serialization.DataContractAttribute' attribute has not been applied to the type.
+  - type: System.Runtime.Serialization.SerializationException
+    description: there is a problem with the instance being serialized.
+  - type: System.ServiceModel.QuotaExceededException
+    description: the maximum number of objects to serialize has been exceeded. Check the @'System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph' property.
+- uid: System.Runtime.Serialization.XmlObjectSerializer.WriteEndObject(System.Xml.XmlDictionaryWriter)
+  id: WriteEndObject(System.Xml.XmlDictionaryWriter)
+  parent: System.Runtime.Serialization.XmlObjectSerializer
+  href: System.Runtime.Serialization.XmlObjectSerializer.yml
+  name: WriteEndObject(XmlDictionaryWriter)
+  fullName: System.Runtime.Serialization.XmlObjectSerializer.WriteEndObject(System.Xml.XmlDictionaryWriter)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Runtime/Serialization/XmlObjectSerializer.cs
+    startLine: 19
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Runtime.Serialization
+  summary: Writes the end of the object data as a closing XML element to the XML document or stream with an @'System.Xml.XmlDictionaryWriter'.
+  syntax:
+    content: public abstract void WriteEndObject(XmlDictionaryWriter writer)
+    content.vb: Public MustOverride Sub WriteEndObject(writer As XmlDictionaryWriter)
+    parameters:
+    - id: writer
+      type: System.Xml.XmlDictionaryWriter
+      description: An @'System.Xml.XmlDictionaryWriter' used to write the XML document or stream.
+  exceptions:
+  - type: System.Runtime.Serialization.InvalidDataContractException
+    description: the type being serialized does not conform to data contract rules. For example, the @'System.Runtime.Serialization.DataContractAttribute' attribute has not been applied to the type.
+  - type: System.Runtime.Serialization.SerializationException
+    description: there is a problem with the instance being serialized.
+  - type: System.ServiceModel.QuotaExceededException
+    description: the maximum number of objects to serialize has been exceeded. Check the @'System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph' property.
+- uid: System.Runtime.Serialization.XmlObjectSerializer.WriteObject(System.IO.Stream,System.Object)
+  id: WriteObject(System.IO.Stream,System.Object)
+  parent: System.Runtime.Serialization.XmlObjectSerializer
+  href: System.Runtime.Serialization.XmlObjectSerializer.yml
+  name: WriteObject(Stream, Object)
+  fullName: System.Runtime.Serialization.XmlObjectSerializer.WriteObject(System.IO.Stream, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Runtime/Serialization/XmlObjectSerializer.cs
+    startLine: 21
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Runtime.Serialization
+  summary: Writes the complete content (start, content, and end) of the object to the XML document or stream with the specified @'System.IO.Stream'.
+  syntax:
+    content: public virtual void WriteObject(Stream stream, object graph)
+    content.vb: Public Overridable Sub WriteObject(stream As Stream, graph As Object)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: A @'System.IO.Stream' used to write the XML document or stream.
+    - id: graph
+      type: System.Object
+      description: The object that contains the data to write to the stream.
+  exceptions:
+  - type: System.Runtime.Serialization.InvalidDataContractException
+    description: the type being serialized does not conform to data contract rules. For example, the @'System.Runtime.Serialization.DataContractAttribute' attribute has not been applied to the type.
+  - type: System.Runtime.Serialization.SerializationException
+    description: there is a problem with the instance being serialized.
+  - type: System.ServiceModel.QuotaExceededException
+    description: the maximum number of objects to serialize has been exceeded. Check the @'System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph' property.
+- uid: System.Runtime.Serialization.XmlObjectSerializer.WriteObject(XmlWriter,System.Object)
+  id: WriteObject(XmlWriter,System.Object)
+  parent: System.Runtime.Serialization.XmlObjectSerializer
+  href: System.Runtime.Serialization.XmlObjectSerializer.yml
+  name: WriteObject(XmlWriter, Object)
+  fullName: System.Runtime.Serialization.XmlObjectSerializer.WriteObject(XmlWriter, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Runtime/Serialization/XmlObjectSerializer.cs
+    startLine: 29
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Runtime.Serialization
+  syntax:
+    content: public virtual void WriteObject(XmlWriter writer, object graph)
+    content.vb: Public Overridable Sub WriteObject(writer As XmlWriter, graph As Object)
+    parameters:
+    - id: writer
+      type: XmlWriter
+    - id: graph
+      type: System.Object
+- uid: System.Runtime.Serialization.XmlObjectSerializer.WriteStartObject(XmlWriter,System.Object)
+  id: WriteStartObject(XmlWriter,System.Object)
+  parent: System.Runtime.Serialization.XmlObjectSerializer
+  href: System.Runtime.Serialization.XmlObjectSerializer.yml
+  name: WriteStartObject(XmlWriter, Object)
+  fullName: System.Runtime.Serialization.XmlObjectSerializer.WriteStartObject(XmlWriter, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Runtime/Serialization/XmlObjectSerializer.cs
+    startLine: 35
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Runtime.Serialization
+  syntax:
+    content: public virtual void WriteStartObject(XmlWriter writer, object graph)
+    content.vb: Public Overridable Sub WriteStartObject(writer As XmlWriter, graph As Object)
+    parameters:
+    - id: writer
+      type: XmlWriter
+    - id: graph
+      type: System.Object
+- uid: System.Runtime.Serialization.XmlObjectSerializer.WriteObjectContent(XmlWriter,System.Object)
+  id: WriteObjectContent(XmlWriter,System.Object)
+  parent: System.Runtime.Serialization.XmlObjectSerializer
+  href: System.Runtime.Serialization.XmlObjectSerializer.yml
+  name: WriteObjectContent(XmlWriter, Object)
+  fullName: System.Runtime.Serialization.XmlObjectSerializer.WriteObjectContent(XmlWriter, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Runtime/Serialization/XmlObjectSerializer.cs
+    startLine: 41
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Runtime.Serialization
+  syntax:
+    content: public virtual void WriteObjectContent(XmlWriter writer, object graph)
+    content.vb: Public Overridable Sub WriteObjectContent(writer As XmlWriter, graph As Object)
+    parameters:
+    - id: writer
+      type: XmlWriter
+    - id: graph
+      type: System.Object
+- uid: System.Runtime.Serialization.XmlObjectSerializer.WriteEndObject(XmlWriter)
+  id: WriteEndObject(XmlWriter)
+  parent: System.Runtime.Serialization.XmlObjectSerializer
+  href: System.Runtime.Serialization.XmlObjectSerializer.yml
+  name: WriteEndObject(XmlWriter)
+  fullName: System.Runtime.Serialization.XmlObjectSerializer.WriteEndObject(XmlWriter)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Runtime/Serialization/XmlObjectSerializer.cs
+    startLine: 47
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Runtime.Serialization
+  syntax:
+    content: public virtual void WriteEndObject(XmlWriter writer)
+    content.vb: Public Overridable Sub WriteEndObject(writer As XmlWriter)
+    parameters:
+    - id: writer
+      type: XmlWriter
+- uid: System.Runtime.Serialization.XmlObjectSerializer.WriteObject(System.Xml.XmlDictionaryWriter,System.Object)
+  id: WriteObject(System.Xml.XmlDictionaryWriter,System.Object)
+  parent: System.Runtime.Serialization.XmlObjectSerializer
+  href: System.Runtime.Serialization.XmlObjectSerializer.yml
+  name: WriteObject(XmlDictionaryWriter, Object)
+  fullName: System.Runtime.Serialization.XmlObjectSerializer.WriteObject(System.Xml.XmlDictionaryWriter, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Runtime/Serialization/XmlObjectSerializer.cs
+    startLine: 53
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Runtime.Serialization
+  summary: Writes the complete content (start, content, and end) of the object to the XML document or stream with the specified @'System.Xml.XmlDictionaryWriter'.
+  syntax:
+    content: public virtual void WriteObject(XmlDictionaryWriter writer, object graph)
+    content.vb: Public Overridable Sub WriteObject(writer As XmlDictionaryWriter, graph As Object)
+    parameters:
+    - id: writer
+      type: System.Xml.XmlDictionaryWriter
+      description: An @'System.Xml.XmlDictionaryWriter' used to write the content to the XML document or stream.
+    - id: graph
+      type: System.Object
+      description: The object that contains the content to write.
+  exceptions:
+  - type: System.Runtime.Serialization.InvalidDataContractException
+    description: the type being serialized does not conform to data contract rules. For example, the @'System.Runtime.Serialization.DataContractAttribute' attribute has not been applied to the type.
+  - type: System.Runtime.Serialization.SerializationException
+    description: there is a problem with the instance being serialized.
+  - type: System.ServiceModel.QuotaExceededException
+    description: the maximum number of objects to serialize has been exceeded. Check the @'System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph' property.
+- uid: System.Runtime.Serialization.XmlObjectSerializer.ReadObject(System.IO.Stream)
+  id: ReadObject(System.IO.Stream)
+  parent: System.Runtime.Serialization.XmlObjectSerializer
+  href: System.Runtime.Serialization.XmlObjectSerializer.yml
+  name: ReadObject(Stream)
+  fullName: System.Runtime.Serialization.XmlObjectSerializer.ReadObject(System.IO.Stream)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Runtime/Serialization/XmlObjectSerializer.cs
+    startLine: 219
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Runtime.Serialization
+  summary: Reads the XML stream or document with a @'System.IO.Stream' and returns the deserialized object.
+  syntax:
+    content: public virtual object ReadObject(Stream stream)
+    content.vb: Public Overridable Function ReadObject(stream As Stream) As Object
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: A @'System.IO.Stream' used to read the XML stream or document.
+    return:
+      type: System.Object
+- uid: System.Runtime.Serialization.XmlObjectSerializer.ReadObject(XmlReader)
+  id: ReadObject(XmlReader)
+  parent: System.Runtime.Serialization.XmlObjectSerializer
+  href: System.Runtime.Serialization.XmlObjectSerializer.yml
+  name: ReadObject(XmlReader)
+  fullName: System.Runtime.Serialization.XmlObjectSerializer.ReadObject(XmlReader)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Runtime/Serialization/XmlObjectSerializer.cs
+    startLine: 225
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Runtime.Serialization
+  syntax:
+    content: public virtual object ReadObject(XmlReader reader)
+    content.vb: Public Overridable Function ReadObject(reader As XmlReader) As Object
+    parameters:
+    - id: reader
+      type: XmlReader
+    return:
+      type: System.Object
+- uid: System.Runtime.Serialization.XmlObjectSerializer.ReadObject(System.Xml.XmlDictionaryReader)
+  id: ReadObject(System.Xml.XmlDictionaryReader)
+  parent: System.Runtime.Serialization.XmlObjectSerializer
+  href: System.Runtime.Serialization.XmlObjectSerializer.yml
+  name: ReadObject(XmlDictionaryReader)
+  fullName: System.Runtime.Serialization.XmlObjectSerializer.ReadObject(System.Xml.XmlDictionaryReader)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Runtime/Serialization/XmlObjectSerializer.cs
+    startLine: 231
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Runtime.Serialization
+  summary: Reads the XML document or stream with an @'System.Xml.XmlDictionaryReader' and returns the deserialized object.
+  syntax:
+    content: public virtual object ReadObject(XmlDictionaryReader reader)
+    content.vb: Public Overridable Function ReadObject(reader As XmlDictionaryReader) As Object
+    parameters:
+    - id: reader
+      type: System.Xml.XmlDictionaryReader
+      description: An @'System.Xml.XmlDictionaryReader' used to read the XML document.
+    return:
+      type: System.Object
+- uid: System.Runtime.Serialization.XmlObjectSerializer.ReadObject(XmlReader,System.Boolean)
+  id: ReadObject(XmlReader,System.Boolean)
+  parent: System.Runtime.Serialization.XmlObjectSerializer
+  href: System.Runtime.Serialization.XmlObjectSerializer.yml
+  name: ReadObject(XmlReader, Boolean)
+  fullName: System.Runtime.Serialization.XmlObjectSerializer.ReadObject(XmlReader, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Runtime/Serialization/XmlObjectSerializer.cs
+    startLine: 236
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Runtime.Serialization
+  syntax:
+    content: public virtual object ReadObject(XmlReader reader, bool verifyObjectName)
+    content.vb: Public Overridable Function ReadObject(reader As XmlReader, verifyObjectName As Boolean) As Object
+    parameters:
+    - id: reader
+      type: XmlReader
+    - id: verifyObjectName
+      type: System.Boolean
+    return:
+      type: System.Object
+- uid: System.Runtime.Serialization.XmlObjectSerializer.ReadObject(System.Xml.XmlDictionaryReader,System.Boolean)
+  id: ReadObject(System.Xml.XmlDictionaryReader,System.Boolean)
+  parent: System.Runtime.Serialization.XmlObjectSerializer
+  href: System.Runtime.Serialization.XmlObjectSerializer.yml
+  name: ReadObject(XmlDictionaryReader, Boolean)
+  fullName: System.Runtime.Serialization.XmlObjectSerializer.ReadObject(System.Xml.XmlDictionaryReader, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Runtime/Serialization/XmlObjectSerializer.cs
+    startLine: 242
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Runtime.Serialization
+  summary: Reads the XML stream or document with an @'System.Xml.XmlDictionaryReader' and returns the deserialized object; it also enables you to specify whether the serializer can read the data before attempting to read it.
+  syntax:
+    content: public abstract object ReadObject(XmlDictionaryReader reader, bool verifyObjectName)
+    content.vb: Public MustOverride Function ReadObject(reader As XmlDictionaryReader, verifyObjectName As Boolean) As Object
+    parameters:
+    - id: reader
+      type: System.Xml.XmlDictionaryReader
+      description: An @'System.Xml.XmlDictionaryReader' used to read the XML document.
+    - id: verifyObjectName
+      type: System.Boolean
+      description: true to check whether the enclosing XML element name and namespace correspond to the root name and root namespace; otherwise, false to skip the verification.
+    return:
+      type: System.Object
+- uid: System.Runtime.Serialization.XmlObjectSerializer.IsStartObject(XmlReader)
+  id: IsStartObject(XmlReader)
+  parent: System.Runtime.Serialization.XmlObjectSerializer
+  href: System.Runtime.Serialization.XmlObjectSerializer.yml
+  name: IsStartObject(XmlReader)
+  fullName: System.Runtime.Serialization.XmlObjectSerializer.IsStartObject(XmlReader)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Runtime/Serialization/XmlObjectSerializer.cs
+    startLine: 244
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Runtime.Serialization
+  syntax:
+    content: public virtual bool IsStartObject(XmlReader reader)
+    content.vb: Public Overridable Function IsStartObject(reader As XmlReader) As Boolean
+    parameters:
+    - id: reader
+      type: XmlReader
+    return:
+      type: System.Boolean
+- uid: System.Runtime.Serialization.XmlObjectSerializer.IsStartObject(System.Xml.XmlDictionaryReader)
+  id: IsStartObject(System.Xml.XmlDictionaryReader)
+  parent: System.Runtime.Serialization.XmlObjectSerializer
+  href: System.Runtime.Serialization.XmlObjectSerializer.yml
+  name: IsStartObject(XmlDictionaryReader)
+  fullName: System.Runtime.Serialization.XmlObjectSerializer.IsStartObject(System.Xml.XmlDictionaryReader)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Runtime/Serialization/XmlObjectSerializer.cs
+    startLine: 250
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Runtime.Serialization
+  summary: Gets a value that specifies whether the @'System.Xml.XmlDictionaryReader' is positioned over an XML element that can be read.
+  syntax:
+    content: public abstract bool IsStartObject(XmlDictionaryReader reader)
+    content.vb: Public MustOverride Function IsStartObject(reader As XmlDictionaryReader) As Boolean
+    parameters:
+    - id: reader
+      type: System.Xml.XmlDictionaryReader
+      description: An @'System.Xml.XmlDictionaryReader' used to read the XML stream or document.
+    return:
+      type: System.Boolean
+references:
+- uid: System.Runtime.Serialization
+  isExternal: false
+  name: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Xml.XmlDictionaryWriter
+  parent: System.Xml
+  isExternal: false
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: XmlDictionaryWriter
+  fullName: System.Xml.XmlDictionaryWriter
+  type: Class
+- uid: System.Xml
+  isExternal: false
+  name: System.Xml
+  fullName: System.Xml
+  type: Namespace
+- uid: System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  name: Stream
+  fullName: System.IO.Stream
+- uid: System.IO
+  isExternal: false
+  name: System.IO
+  fullName: System.IO
+- uid: XmlWriter
+  isExternal: true
+  name: XmlWriter
+  fullName: XmlWriter
+- uid: XmlReader
+  isExternal: true
+  name: XmlReader
+  fullName: XmlReader
+- uid: System.Xml.XmlDictionaryReader
+  parent: System.Xml
+  isExternal: false
+  href: System.Xml.XmlDictionaryReader.yml
+  name: XmlDictionaryReader
+  fullName: System.Xml.XmlDictionaryReader
+  type: Class
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean

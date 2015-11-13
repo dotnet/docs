@@ -1,0 +1,101 @@
+items:
+- uid: System.Reflection.ImageFileMachine
+  id: ImageFileMachine
+  parent: System.Reflection
+  children:
+  - System.Reflection.ImageFileMachine.AMD64
+  - System.Reflection.ImageFileMachine.ARM
+  - System.Reflection.ImageFileMachine.I386
+  - System.Reflection.ImageFileMachine.IA64
+  href: System.Reflection.ImageFileMachine.yml
+  name: ImageFileMachine
+  fullName: System.Reflection.ImageFileMachine
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Reflection/Module.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Reflection/Module.cs
+    startLine: 43
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Identifies the platform targeted by an executable.
+  syntax:
+    content: public enum ImageFileMachine
+    content.vb: Public Enum ImageFileMachine
+- uid: System.Reflection.ImageFileMachine.I386
+  id: I386
+  parent: System.Reflection.ImageFileMachine
+  href: System.Reflection.ImageFileMachine.yml
+  name: I386
+  fullName: System.Reflection.ImageFileMachine.I386
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Module.cs
+    startLine: 47
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Targets a 32-bit Intel processor.
+  syntax:
+    content: I386 = 332
+- uid: System.Reflection.ImageFileMachine.IA64
+  id: IA64
+  parent: System.Reflection.ImageFileMachine
+  href: System.Reflection.ImageFileMachine.yml
+  name: IA64
+  fullName: System.Reflection.ImageFileMachine.IA64
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Module.cs
+    startLine: 49
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Targets a 64-bit Intel processor.
+  syntax:
+    content: IA64 = 512
+- uid: System.Reflection.ImageFileMachine.AMD64
+  id: AMD64
+  parent: System.Reflection.ImageFileMachine
+  href: System.Reflection.ImageFileMachine.yml
+  name: AMD64
+  fullName: System.Reflection.ImageFileMachine.AMD64
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Module.cs
+    startLine: 51
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Targets a 64-bit AMD processor.
+  syntax:
+    content: AMD64 = 34404
+- uid: System.Reflection.ImageFileMachine.ARM
+  id: ARM
+  parent: System.Reflection.ImageFileMachine
+  href: System.Reflection.ImageFileMachine.yml
+  name: ARM
+  fullName: System.Reflection.ImageFileMachine.ARM
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Module.cs
+    startLine: 53
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Targets an ARM processor.
+  syntax:
+    content: ARM = 452
+references:
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace

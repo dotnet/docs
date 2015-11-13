@@ -1,0 +1,330 @@
+items:
+- uid: System.Threading.NativeOverlapped
+  id: NativeOverlapped
+  parent: System.Threading
+  children:
+  - System.Threading.NativeOverlapped.EventHandle
+  - System.Threading.NativeOverlapped.InternalHigh
+  - System.Threading.NativeOverlapped.InternalLow
+  - System.Threading.NativeOverlapped.OffsetHigh
+  - System.Threading.NativeOverlapped.OffsetLow
+  href: System.Threading.NativeOverlapped.yml
+  name: NativeOverlapped
+  fullName: System.Threading.NativeOverlapped
+  type: Struct
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Threading/Overlapped.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Threading/Overlapped.cs
+    startLine: 43
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Provides an explicit layout that is visible from unmanaged code and that will have the same layout as the Win32 OVERLAPPED structure with additional reserved fields at the end.
+  syntax:
+    content: public struct NativeOverlapped
+    content.vb: Public Structure NativeOverlapped
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.Threading.NativeOverlapped.InternalLow
+  id: InternalLow
+  parent: System.Threading.NativeOverlapped
+  href: System.Threading.NativeOverlapped.yml
+  name: InternalLow
+  fullName: System.Threading.NativeOverlapped.InternalLow
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Overlapped.cs
+    startLine: 47
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Specifies a system-dependent status. Reserved for operating system use.
+  syntax:
+    content: public IntPtr InternalLow
+    content.vb: Public InternalLow As IntPtr
+- uid: System.Threading.NativeOverlapped.InternalHigh
+  id: InternalHigh
+  parent: System.Threading.NativeOverlapped
+  href: System.Threading.NativeOverlapped.yml
+  name: InternalHigh
+  fullName: System.Threading.NativeOverlapped.InternalHigh
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Overlapped.cs
+    startLine: 48
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Specifies the length of the data transferred. Reserved for operating system use.
+  syntax:
+    content: public IntPtr InternalHigh
+    content.vb: Public InternalHigh As IntPtr
+- uid: System.Threading.NativeOverlapped.OffsetLow
+  id: OffsetLow
+  parent: System.Threading.NativeOverlapped
+  href: System.Threading.NativeOverlapped.yml
+  name: OffsetLow
+  fullName: System.Threading.NativeOverlapped.OffsetLow
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Overlapped.cs
+    startLine: 49
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Specifies a file position at which to start the transfer.
+  syntax:
+    content: public int OffsetLow
+    content.vb: Public OffsetLow As Integer
+- uid: System.Threading.NativeOverlapped.OffsetHigh
+  id: OffsetHigh
+  parent: System.Threading.NativeOverlapped
+  href: System.Threading.NativeOverlapped.yml
+  name: OffsetHigh
+  fullName: System.Threading.NativeOverlapped.OffsetHigh
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Overlapped.cs
+    startLine: 50
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Specifies the high word of the byte offset at which to start the transfer.
+  syntax:
+    content: public int OffsetHigh
+    content.vb: Public OffsetHigh As Integer
+- uid: System.Threading.NativeOverlapped.EventHandle
+  id: EventHandle
+  parent: System.Threading.NativeOverlapped
+  href: System.Threading.NativeOverlapped.yml
+  name: EventHandle
+  fullName: System.Threading.NativeOverlapped.EventHandle
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Overlapped.cs
+    startLine: 51
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Specifies the handle to an event set to the signaled state when the operation is complete. The calling process must set this member either to zero or to a valid event handle before calling any overlapped functions.
+  syntax:
+    content: public IntPtr EventHandle
+    content.vb: Public EventHandle As IntPtr
+references:
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

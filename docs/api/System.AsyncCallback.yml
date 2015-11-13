@@ -1,0 +1,39 @@
+items:
+- uid: System.AsyncCallback
+  id: AsyncCallback
+  parent: System
+  children: []
+  href: System.AsyncCallback.yml
+  name: AsyncCallback
+  fullName: System.AsyncCallback
+  type: Delegate
+  source:
+    remote:
+      path: src/mscorlib/src/System/AsyncCallback.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/AsyncCallback.cs
+    startLine: 11
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: References a method to be called when a corresponding asynchronous operation completes.
+  syntax:
+    content: public delegate void AsyncCallback(IAsyncResult ar);
+    content.vb: Public Delegate Sub AsyncCallback(ar As IAsyncResult)
+    parameters:
+    - id: ar
+      type: System.IAsyncResult
+      description: The result of the asynchronous operation.
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.IAsyncResult
+  parent: System
+  isExternal: false
+  href: System.IAsyncResult.yml
+  name: IAsyncResult
+  fullName: System.IAsyncResult
+  type: Interface

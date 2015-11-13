@@ -1,0 +1,227 @@
+items:
+- uid: System.Reflection.ParameterAttributes
+  id: ParameterAttributes
+  parent: System.Reflection
+  children:
+  - System.Reflection.ParameterAttributes.HasDefault
+  - System.Reflection.ParameterAttributes.HasFieldMarshal
+  - System.Reflection.ParameterAttributes.In
+  - System.Reflection.ParameterAttributes.Lcid
+  - System.Reflection.ParameterAttributes.None
+  - System.Reflection.ParameterAttributes.Optional
+  - System.Reflection.ParameterAttributes.Out
+  - System.Reflection.ParameterAttributes.Reserved3
+  - System.Reflection.ParameterAttributes.Reserved4
+  - System.Reflection.ParameterAttributes.ReservedMask
+  - System.Reflection.ParameterAttributes.Retval
+  href: System.Reflection.ParameterAttributes.yml
+  name: ParameterAttributes
+  fullName: System.Reflection.ParameterAttributes
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Reflection/ParameterAttributes.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Reflection/ParameterAttributes.cs
+    startLine: 15
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Defines the attributes that can be associated with a parameter. These are defined in CorHdr.h.
+  syntax:
+    content: public enum ParameterAttributes
+    content.vb: Public Enum ParameterAttributes
+- uid: System.Reflection.ParameterAttributes.None
+  id: None
+  parent: System.Reflection.ParameterAttributes
+  href: System.Reflection.ParameterAttributes.yml
+  name: None
+  fullName: System.Reflection.ParameterAttributes.None
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/ParameterAttributes.cs
+    startLine: 20
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that there is no parameter attribute.
+  syntax:
+    content: None = 0
+- uid: System.Reflection.ParameterAttributes.In
+  id: In
+  parent: System.Reflection.ParameterAttributes
+  href: System.Reflection.ParameterAttributes.yml
+  name: In
+  fullName: System.Reflection.ParameterAttributes.In
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/ParameterAttributes.cs
+    startLine: 21
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the parameter is an input parameter.
+  syntax:
+    content: In = 1
+- uid: System.Reflection.ParameterAttributes.Out
+  id: Out
+  parent: System.Reflection.ParameterAttributes
+  href: System.Reflection.ParameterAttributes.yml
+  name: Out
+  fullName: System.Reflection.ParameterAttributes.Out
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/ParameterAttributes.cs
+    startLine: 22
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the parameter is an output parameter.
+  syntax:
+    content: Out = 2
+- uid: System.Reflection.ParameterAttributes.Lcid
+  id: Lcid
+  parent: System.Reflection.ParameterAttributes
+  href: System.Reflection.ParameterAttributes.yml
+  name: Lcid
+  fullName: System.Reflection.ParameterAttributes.Lcid
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/ParameterAttributes.cs
+    startLine: 24
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the parameter is a locale identifier (lcid).
+  syntax:
+    content: Lcid = 4
+- uid: System.Reflection.ParameterAttributes.Retval
+  id: Retval
+  parent: System.Reflection.ParameterAttributes
+  href: System.Reflection.ParameterAttributes.yml
+  name: Retval
+  fullName: System.Reflection.ParameterAttributes.Retval
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/ParameterAttributes.cs
+    startLine: 26
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the parameter is a return value.
+  syntax:
+    content: Retval = 8
+- uid: System.Reflection.ParameterAttributes.Optional
+  id: Optional
+  parent: System.Reflection.ParameterAttributes
+  href: System.Reflection.ParameterAttributes.yml
+  name: Optional
+  fullName: System.Reflection.ParameterAttributes.Optional
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/ParameterAttributes.cs
+    startLine: 27
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the parameter is optional.
+  syntax:
+    content: Optional = 16
+- uid: System.Reflection.ParameterAttributes.ReservedMask
+  id: ReservedMask
+  parent: System.Reflection.ParameterAttributes
+  href: System.Reflection.ParameterAttributes.yml
+  name: ReservedMask
+  fullName: System.Reflection.ParameterAttributes.ReservedMask
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/ParameterAttributes.cs
+    startLine: 30
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the parameter is reserved.
+  syntax:
+    content: ReservedMask = 61440
+- uid: System.Reflection.ParameterAttributes.HasDefault
+  id: HasDefault
+  parent: System.Reflection.ParameterAttributes
+  href: System.Reflection.ParameterAttributes.yml
+  name: HasDefault
+  fullName: System.Reflection.ParameterAttributes.HasDefault
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/ParameterAttributes.cs
+    startLine: 31
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the parameter has a default value.
+  syntax:
+    content: HasDefault = 4096
+- uid: System.Reflection.ParameterAttributes.HasFieldMarshal
+  id: HasFieldMarshal
+  parent: System.Reflection.ParameterAttributes
+  href: System.Reflection.ParameterAttributes.yml
+  name: HasFieldMarshal
+  fullName: System.Reflection.ParameterAttributes.HasFieldMarshal
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/ParameterAttributes.cs
+    startLine: 32
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the parameter has field marshaling information.
+  syntax:
+    content: HasFieldMarshal = 8192
+- uid: System.Reflection.ParameterAttributes.Reserved3
+  id: Reserved3
+  parent: System.Reflection.ParameterAttributes
+  href: System.Reflection.ParameterAttributes.yml
+  name: Reserved3
+  fullName: System.Reflection.ParameterAttributes.Reserved3
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/ParameterAttributes.cs
+    startLine: 33
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Reserved.
+  syntax:
+    content: Reserved3 = 16384
+- uid: System.Reflection.ParameterAttributes.Reserved4
+  id: Reserved4
+  parent: System.Reflection.ParameterAttributes
+  href: System.Reflection.ParameterAttributes.yml
+  name: Reserved4
+  fullName: System.Reflection.ParameterAttributes.Reserved4
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/ParameterAttributes.cs
+    startLine: 34
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Reserved.
+  syntax:
+    content: Reserved4 = 32768
+references:
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace

@@ -1,0 +1,119 @@
+items:
+- uid: System.Security.Permissions.RegistryPermissionAccess
+  id: RegistryPermissionAccess
+  parent: System.Security.Permissions
+  children:
+  - System.Security.Permissions.RegistryPermissionAccess.AllAccess
+  - System.Security.Permissions.RegistryPermissionAccess.Create
+  - System.Security.Permissions.RegistryPermissionAccess.NoAccess
+  - System.Security.Permissions.RegistryPermissionAccess.Read
+  - System.Security.Permissions.RegistryPermissionAccess.Write
+  href: System.Security.Permissions.RegistryPermissionAccess.yml
+  name: RegistryPermissionAccess
+  fullName: System.Security.Permissions.RegistryPermissionAccess
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Security/Permissions/RegistryPermission.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Security/Permissions/RegistryPermission.cs
+    startLine: 13
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Specifies the permitted access to registry keys and values.
+  syntax:
+    content: public enum RegistryPermissionAccess
+    content.vb: Public Enum RegistryPermissionAccess
+- uid: System.Security.Permissions.RegistryPermissionAccess.NoAccess
+  id: NoAccess
+  parent: System.Security.Permissions.RegistryPermissionAccess
+  href: System.Security.Permissions.RegistryPermissionAccess.yml
+  name: NoAccess
+  fullName: System.Security.Permissions.RegistryPermissionAccess.NoAccess
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/RegistryPermission.cs
+    startLine: 18
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: No access to registry variables. @'System.Security.Permissions.RegistryPermissionAccess.NoAccess' represents no valid @'System.Security.Permissions.RegistryPermissionAccess' values and causes an @'System.ArgumentException' when used as the parameter for @'System.Security.Permissions.RegistryPermission.GetPathList(System.Security.Permissions.RegistryPermissionAccess)', which expects a single value.
+  syntax:
+    content: NoAccess = 0
+- uid: System.Security.Permissions.RegistryPermissionAccess.Read
+  id: Read
+  parent: System.Security.Permissions.RegistryPermissionAccess
+  href: System.Security.Permissions.RegistryPermissionAccess.yml
+  name: Read
+  fullName: System.Security.Permissions.RegistryPermissionAccess.Read
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/RegistryPermission.cs
+    startLine: 19
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Read access to registry variables.
+  syntax:
+    content: Read = 1
+- uid: System.Security.Permissions.RegistryPermissionAccess.Write
+  id: Write
+  parent: System.Security.Permissions.RegistryPermissionAccess
+  href: System.Security.Permissions.RegistryPermissionAccess.yml
+  name: Write
+  fullName: System.Security.Permissions.RegistryPermissionAccess.Write
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/RegistryPermission.cs
+    startLine: 20
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Write access to registry variables.
+  syntax:
+    content: Write = 2
+- uid: System.Security.Permissions.RegistryPermissionAccess.Create
+  id: Create
+  parent: System.Security.Permissions.RegistryPermissionAccess
+  href: System.Security.Permissions.RegistryPermissionAccess.yml
+  name: Create
+  fullName: System.Security.Permissions.RegistryPermissionAccess.Create
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/RegistryPermission.cs
+    startLine: 21
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Create access to registry variables.
+  syntax:
+    content: Create = 4
+- uid: System.Security.Permissions.RegistryPermissionAccess.AllAccess
+  id: AllAccess
+  parent: System.Security.Permissions.RegistryPermissionAccess
+  href: System.Security.Permissions.RegistryPermissionAccess.yml
+  name: AllAccess
+  fullName: System.Security.Permissions.RegistryPermissionAccess.AllAccess
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/RegistryPermission.cs
+    startLine: 22
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: '@''System.Security.Permissions.RegistryPermissionAccess.Create'', @''System.Security.Permissions.RegistryPermissionAccess.Read'', and @''System.Security.Permissions.RegistryPermissionAccess.Write'' access to registry variables. @''System.Security.Permissions.RegistryPermissionAccess.AllAccess'' represents multiple @''System.Security.Permissions.RegistryPermissionAccess'' values and causes an @''System.ArgumentException'' when used as the *access* parameter for the @''System.Security.Permissions.RegistryPermission.GetPathList(System.Security.Permissions.RegistryPermissionAccess)'' method, which expects a single value.'
+  syntax:
+    content: AllAccess = 7
+references:
+- uid: System.Security.Permissions
+  isExternal: false
+  name: System.Security.Permissions
+  fullName: System.Security.Permissions
+  type: Namespace

@@ -1,0 +1,1698 @@
+items:
+- uid: System.IO.UnmanagedMemoryAccessor
+  id: UnmanagedMemoryAccessor
+  parent: System.IO
+  children:
+  - System.IO.UnmanagedMemoryAccessor.#ctor
+  - System.IO.UnmanagedMemoryAccessor.#ctor(System.Runtime.InteropServices.SafeBuffer,System.Int64,System.Int64)
+  - System.IO.UnmanagedMemoryAccessor.#ctor(System.Runtime.InteropServices.SafeBuffer,System.Int64,System.Int64,System.IO.FileAccess)
+  - System.IO.UnmanagedMemoryAccessor.CanRead
+  - System.IO.UnmanagedMemoryAccessor.CanWrite
+  - System.IO.UnmanagedMemoryAccessor.Capacity
+  - System.IO.UnmanagedMemoryAccessor.Dispose
+  - System.IO.UnmanagedMemoryAccessor.Dispose(System.Boolean)
+  - System.IO.UnmanagedMemoryAccessor.Initialize(System.Runtime.InteropServices.SafeBuffer,System.Int64,System.Int64,System.IO.FileAccess)
+  - System.IO.UnmanagedMemoryAccessor.IsOpen
+  - System.IO.UnmanagedMemoryAccessor.Read``1(System.Int64,``0@)
+  - System.IO.UnmanagedMemoryAccessor.ReadArray``1(System.Int64,``0[],System.Int32,System.Int32)
+  - System.IO.UnmanagedMemoryAccessor.ReadBoolean(System.Int64)
+  - System.IO.UnmanagedMemoryAccessor.ReadByte(System.Int64)
+  - System.IO.UnmanagedMemoryAccessor.ReadChar(System.Int64)
+  - System.IO.UnmanagedMemoryAccessor.ReadDecimal(System.Int64)
+  - System.IO.UnmanagedMemoryAccessor.ReadDouble(System.Int64)
+  - System.IO.UnmanagedMemoryAccessor.ReadInt16(System.Int64)
+  - System.IO.UnmanagedMemoryAccessor.ReadInt32(System.Int64)
+  - System.IO.UnmanagedMemoryAccessor.ReadInt64(System.Int64)
+  - System.IO.UnmanagedMemoryAccessor.ReadSByte(System.Int64)
+  - System.IO.UnmanagedMemoryAccessor.ReadSingle(System.Int64)
+  - System.IO.UnmanagedMemoryAccessor.ReadUInt16(System.Int64)
+  - System.IO.UnmanagedMemoryAccessor.ReadUInt32(System.Int64)
+  - System.IO.UnmanagedMemoryAccessor.ReadUInt64(System.Int64)
+  - System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Boolean)
+  - System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Byte)
+  - System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Char)
+  - System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Decimal)
+  - System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Double)
+  - System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Int16)
+  - System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Int32)
+  - System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Int64)
+  - System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.SByte)
+  - System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Single)
+  - System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.UInt16)
+  - System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.UInt32)
+  - System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.UInt64)
+  - System.IO.UnmanagedMemoryAccessor.Write``1(System.Int64,``0@)
+  - System.IO.UnmanagedMemoryAccessor.WriteArray``1(System.Int64,``0[],System.Int32,System.Int32)
+  href: System.IO.UnmanagedMemoryAccessor.yml
+  name: UnmanagedMemoryAccessor
+  fullName: System.IO.UnmanagedMemoryAccessor
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 27
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Provides random access to unmanaged blocks of memory from managed code.
+  syntax:
+    content: 'public class UnmanagedMemoryAccessor : IDisposable'
+    content.vb: Public Class UnmanagedMemoryAccessor Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.IO.UnmanagedMemoryAccessor.#ctor
+  id: '#ctor'
+  parent: System.IO.UnmanagedMemoryAccessor
+  href: System.IO.UnmanagedMemoryAccessor.yml
+  name: UnmanagedMemoryAccessor()
+  fullName: System.IO.UnmanagedMemoryAccessor.UnmanagedMemoryAccessor()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 39
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Initializes a new instance of the @'System.IO.UnmanagedMemoryAccessor' class.
+  syntax:
+    content: protected UnmanagedMemoryAccessor()
+    content.vb: Protected Sub New
+- uid: System.IO.UnmanagedMemoryAccessor.#ctor(System.Runtime.InteropServices.SafeBuffer,System.Int64,System.Int64)
+  id: '#ctor(System.Runtime.InteropServices.SafeBuffer,System.Int64,System.Int64)'
+  parent: System.IO.UnmanagedMemoryAccessor
+  href: System.IO.UnmanagedMemoryAccessor.yml
+  name: UnmanagedMemoryAccessor(SafeBuffer, Int64, Int64)
+  fullName: System.IO.UnmanagedMemoryAccessor.UnmanagedMemoryAccessor(System.Runtime.InteropServices.SafeBuffer, System.Int64, System.Int64)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 47
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Initializes a new instance of the @'System.IO.UnmanagedMemoryAccessor' class with a specified buffer, offset, and capacity.
+  syntax:
+    content: public UnmanagedMemoryAccessor(SafeBuffer buffer, long offset, long capacity)
+    content.vb: Public Sub New(buffer As SafeBuffer, offset As Long, capacity As Long)
+    parameters:
+    - id: buffer
+      type: System.Runtime.InteropServices.SafeBuffer
+      description: The buffer to contain the accessor.
+    - id: offset
+      type: System.Int64
+      description: The byte at which to start the accessor.
+    - id: capacity
+      type: System.Int64
+      description: The size, in bytes, of memory to allocate.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*offset* plus *capacity* is greater than *buffer*.'
+  - type: System.ArgumentNullException
+    description: '*buffer* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* or *capacity* is less than zero.'
+  - type: System.InvalidOperationException
+    description: '*offset* plus *capacity* would wrap around the high end of the address space.'
+- uid: System.IO.UnmanagedMemoryAccessor.#ctor(System.Runtime.InteropServices.SafeBuffer,System.Int64,System.Int64,System.IO.FileAccess)
+  id: '#ctor(System.Runtime.InteropServices.SafeBuffer,System.Int64,System.Int64,System.IO.FileAccess)'
+  parent: System.IO.UnmanagedMemoryAccessor
+  href: System.IO.UnmanagedMemoryAccessor.yml
+  name: UnmanagedMemoryAccessor(SafeBuffer, Int64, Int64, FileAccess)
+  fullName: System.IO.UnmanagedMemoryAccessor.UnmanagedMemoryAccessor(System.Runtime.InteropServices.SafeBuffer, System.Int64, System.Int64, System.IO.FileAccess)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 52
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Initializes a new instance of the @'System.IO.UnmanagedMemoryAccessor' class with a specified buffer, offset, capacity, and access right.
+  syntax:
+    content: public UnmanagedMemoryAccessor(SafeBuffer buffer, long offset, long capacity, FileAccess access)
+    content.vb: Public Sub New(buffer As SafeBuffer, offset As Long, capacity As Long, access As FileAccess)
+    parameters:
+    - id: buffer
+      type: System.Runtime.InteropServices.SafeBuffer
+      description: The buffer to contain the accessor.
+    - id: offset
+      type: System.Int64
+      description: The byte at which to start the accessor.
+    - id: capacity
+      type: System.Int64
+      description: The size, in bytes, of memory to allocate.
+    - id: access
+      type: System.IO.FileAccess
+      description: The type of access allowed to the memory. The default is @'System.IO.MemoryMappedFiles.MemoryMappedFileAccess.ReadWrite'.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*offset* plus *capacity* is greater than *buffer*.'
+  - type: System.ArgumentNullException
+    description: '*buffer* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* or *capacity* is less than zero.-or-*access* is not a valid @''System.IO.MemoryMappedFiles.MemoryMappedFileAccess'' enumeration value.'
+  - type: System.InvalidOperationException
+    description: '*offset* plus *capacity* would wrap around the high end of the address space.'
+- uid: System.IO.UnmanagedMemoryAccessor.Initialize(System.Runtime.InteropServices.SafeBuffer,System.Int64,System.Int64,System.IO.FileAccess)
+  id: Initialize(System.Runtime.InteropServices.SafeBuffer,System.Int64,System.Int64,System.IO.FileAccess)
+  parent: System.IO.UnmanagedMemoryAccessor
+  href: System.IO.UnmanagedMemoryAccessor.yml
+  name: Initialize(SafeBuffer, Int64, Int64, FileAccess)
+  fullName: System.IO.UnmanagedMemoryAccessor.Initialize(System.Runtime.InteropServices.SafeBuffer, System.Int64, System.Int64, System.IO.FileAccess)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 57
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Sets the initial values for the accessor.
+  syntax:
+    content: protected void Initialize(SafeBuffer buffer, long offset, long capacity, FileAccess access)
+    content.vb: Protected Sub Initialize(buffer As SafeBuffer, offset As Long, capacity As Long, access As FileAccess)
+    parameters:
+    - id: buffer
+      type: System.Runtime.InteropServices.SafeBuffer
+      description: The buffer to contain the accessor.
+    - id: offset
+      type: System.Int64
+      description: The byte at which to start the accessor.
+    - id: capacity
+      type: System.Int64
+      description: The size, in bytes, of memory to allocate.
+    - id: access
+      type: System.IO.FileAccess
+      description: The type of access allowed to the memory. The default is @'System.IO.MemoryMappedFiles.MemoryMappedFileAccess.ReadWrite'.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*offset* plus *capacity* is greater than *buffer*.'
+  - type: System.ArgumentNullException
+    description: '*buffer* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* or *capacity* is less than zero.-or-*access* is not a valid @''System.IO.MemoryMappedFiles.MemoryMappedFileAccess'' enumeration value.'
+  - type: System.InvalidOperationException
+    description: '*offset* plus *capacity* would wrap around the high end of the address space.'
+- uid: System.IO.UnmanagedMemoryAccessor.Capacity
+  id: Capacity
+  parent: System.IO.UnmanagedMemoryAccessor
+  href: System.IO.UnmanagedMemoryAccessor.yml
+  name: Capacity
+  fullName: System.IO.UnmanagedMemoryAccessor.Capacity
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 110
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Gets the capacity of the accessor.
+  syntax:
+    content: public long Capacity { get; }
+    content.vb: Public ReadOnly Property Capacity As Long
+    parameters: []
+    return:
+      type: System.Int64
+- uid: System.IO.UnmanagedMemoryAccessor.CanRead
+  id: CanRead
+  parent: System.IO.UnmanagedMemoryAccessor
+  href: System.IO.UnmanagedMemoryAccessor.yml
+  name: CanRead
+  fullName: System.IO.UnmanagedMemoryAccessor.CanRead
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 116
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Determines whether the accessor is readable.
+  syntax:
+    content: public bool CanRead { get; }
+    content.vb: Public ReadOnly Property CanRead As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.IO.UnmanagedMemoryAccessor.CanWrite
+  id: CanWrite
+  parent: System.IO.UnmanagedMemoryAccessor
+  href: System.IO.UnmanagedMemoryAccessor.yml
+  name: CanWrite
+  fullName: System.IO.UnmanagedMemoryAccessor.CanWrite
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 122
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Determines whether the accessory is writable.
+  syntax:
+    content: public bool CanWrite { get; }
+    content.vb: Public ReadOnly Property CanWrite As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.IO.UnmanagedMemoryAccessor.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: System.IO.UnmanagedMemoryAccessor
+  href: System.IO.UnmanagedMemoryAccessor.yml
+  name: Dispose(Boolean)
+  fullName: System.IO.UnmanagedMemoryAccessor.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 128
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Releases the unmanaged resources used by the @'System.IO.UnmanagedMemoryAccessor' and optionally releases the managed resources.
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: true to release both managed and unmanaged resources; false to release only unmanaged resources.
+- uid: System.IO.UnmanagedMemoryAccessor.Dispose
+  id: Dispose
+  parent: System.IO.UnmanagedMemoryAccessor
+  href: System.IO.UnmanagedMemoryAccessor.yml
+  name: Dispose()
+  fullName: System.IO.UnmanagedMemoryAccessor.Dispose()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 132
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Releases all resources used by the @'System.IO.UnmanagedMemoryAccessor'.
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+- uid: System.IO.UnmanagedMemoryAccessor.IsOpen
+  id: IsOpen
+  parent: System.IO.UnmanagedMemoryAccessor
+  href: System.IO.UnmanagedMemoryAccessor.yml
+  name: IsOpen
+  fullName: System.IO.UnmanagedMemoryAccessor.IsOpen
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 137
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Determines whether the accessor is currently open by a process.
+  syntax:
+    content: protected bool IsOpen { get; }
+    content.vb: Protected ReadOnly Property IsOpen As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.IO.UnmanagedMemoryAccessor.ReadBoolean(System.Int64)
+  id: ReadBoolean(System.Int64)
+  parent: System.IO.UnmanagedMemoryAccessor
+  href: System.IO.UnmanagedMemoryAccessor.yml
+  name: ReadBoolean(Int64)
+  fullName: System.IO.UnmanagedMemoryAccessor.ReadBoolean(System.Int64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 141
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads a Boolean value from the accessor.
+  syntax:
+    content: public bool ReadBoolean(long position)
+    content.vb: Public Function ReadBoolean(position As Long) As Boolean
+    parameters:
+    - id: position
+      type: System.Int64
+      description: The number of bytes into the accessor at which to begin reading.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentException
+    description: There are not enough bytes after *position* to read a value.
+  - type: System.ArgumentOutOfRangeException
+    description: '*position* is less than zero or greater than the capacity of the accessor.'
+  - type: System.NotSupportedException
+    description: The accessor does not support reading.
+  - type: System.ObjectDisposedException
+    description: The accessor has been disposed.
+- uid: System.IO.UnmanagedMemoryAccessor.ReadByte(System.Int64)
+  id: ReadByte(System.Int64)
+  parent: System.IO.UnmanagedMemoryAccessor
+  href: System.IO.UnmanagedMemoryAccessor.yml
+  name: ReadByte(Int64)
+  fullName: System.IO.UnmanagedMemoryAccessor.ReadByte(System.Int64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 149
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads a byte value from the accessor.
+  syntax:
+    content: public byte ReadByte(long position)
+    content.vb: Public Function ReadByte(position As Long) As Byte
+    parameters:
+    - id: position
+      type: System.Int64
+      description: The number of bytes into the accessor at which to begin reading.
+    return:
+      type: System.Byte
+  exceptions:
+  - type: System.ArgumentException
+    description: There are not enough bytes after *position* to read a value.
+  - type: System.ArgumentOutOfRangeException
+    description: '*position* is less than zero or greater than the capacity of the accessor.'
+  - type: System.NotSupportedException
+    description: The accessor does not support reading.
+  - type: System.ObjectDisposedException
+    description: The accessor has been disposed.
+- uid: System.IO.UnmanagedMemoryAccessor.ReadChar(System.Int64)
+  id: ReadChar(System.Int64)
+  parent: System.IO.UnmanagedMemoryAccessor
+  href: System.IO.UnmanagedMemoryAccessor.yml
+  name: ReadChar(Int64)
+  fullName: System.IO.UnmanagedMemoryAccessor.ReadChar(System.Int64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 156
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads a character from the accessor.
+  syntax:
+    content: public char ReadChar(long position)
+    content.vb: Public Function ReadChar(position As Long) As Char
+    parameters:
+    - id: position
+      type: System.Int64
+      description: The number of bytes into the accessor at which to begin reading.
+    return:
+      type: System.Char
+  exceptions:
+  - type: System.ArgumentException
+    description: There are not enough bytes after *position* to read a value.
+  - type: System.ArgumentOutOfRangeException
+    description: '*position* is less than zero or greater than the capacity of the accessor.'
+  - type: System.NotSupportedException
+    description: The accessor does not support reading.
+  - type: System.ObjectDisposedException
+    description: The accessor has been disposed.
+- uid: System.IO.UnmanagedMemoryAccessor.ReadInt16(System.Int64)
+  id: ReadInt16(System.Int64)
+  parent: System.IO.UnmanagedMemoryAccessor
+  href: System.IO.UnmanagedMemoryAccessor.yml
+  name: ReadInt16(Int64)
+  fullName: System.IO.UnmanagedMemoryAccessor.ReadInt16(System.Int64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 193
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads a 16-bit integer from the accessor.
+  syntax:
+    content: public short ReadInt16(long position)
+    content.vb: Public Function ReadInt16(position As Long) As Short
+    parameters:
+    - id: position
+      type: System.Int64
+      description: The number of bytes into the accessor at which to begin reading.
+    return:
+      type: System.Int16
+  exceptions:
+  - type: System.ArgumentException
+    description: There are not enough bytes after *position* to read a value.
+  - type: System.ArgumentOutOfRangeException
+    description: '*position* is less than zero or greater than the capacity of the accessor.'
+  - type: System.NotSupportedException
+    description: The accessor does not support reading.
+  - type: System.ObjectDisposedException
+    description: The accessor has been disposed.
+- uid: System.IO.UnmanagedMemoryAccessor.ReadInt32(System.Int64)
+  id: ReadInt32(System.Int64)
+  parent: System.IO.UnmanagedMemoryAccessor
+  href: System.IO.UnmanagedMemoryAccessor.yml
+  name: ReadInt32(Int64)
+  fullName: System.IO.UnmanagedMemoryAccessor.ReadInt32(System.Int64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 230
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads a 32-bit integer from the accessor.
+  syntax:
+    content: public int ReadInt32(long position)
+    content.vb: Public Function ReadInt32(position As Long) As Integer
+    parameters:
+    - id: position
+      type: System.Int64
+      description: The number of bytes into the accessor at which to begin reading.
+    return:
+      type: System.Int32
+  exceptions:
+  - type: System.ArgumentException
+    description: There are not enough bytes after *position* to read a value.
+  - type: System.ArgumentOutOfRangeException
+    description: '*position* is less than zero or greater than the capacity of the accessor.'
+  - type: System.NotSupportedException
+    description: The accessor does not support reading.
+  - type: System.ObjectDisposedException
+    description: The accessor has been disposed.
+- uid: System.IO.UnmanagedMemoryAccessor.ReadInt64(System.Int64)
+  id: ReadInt64(System.Int64)
+  parent: System.IO.UnmanagedMemoryAccessor
+  href: System.IO.UnmanagedMemoryAccessor.yml
+  name: ReadInt64(Int64)
+  fullName: System.IO.UnmanagedMemoryAccessor.ReadInt64(System.Int64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 265
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads a 64-bit integer from the accessor.
+  syntax:
+    content: public long ReadInt64(long position)
+    content.vb: Public Function ReadInt64(position As Long) As Long
+    parameters:
+    - id: position
+      type: System.Int64
+      description: The number of bytes into the accessor at which to begin reading.
+    return:
+      type: System.Int64
+  exceptions:
+  - type: System.ArgumentException
+    description: There are not enough bytes after *position* to read a value.
+  - type: System.ArgumentOutOfRangeException
+    description: '*position* is less than zero or greater than the capacity of the accessor.'
+  - type: System.NotSupportedException
+    description: The accessor does not support reading.
+  - type: System.ObjectDisposedException
+    description: The accessor has been disposed.
+- uid: System.IO.UnmanagedMemoryAccessor.ReadDecimal(System.Int64)
+  id: ReadDecimal(System.Int64)
+  parent: System.IO.UnmanagedMemoryAccessor
+  href: System.IO.UnmanagedMemoryAccessor.yml
+  name: ReadDecimal(Int64)
+  fullName: System.IO.UnmanagedMemoryAccessor.ReadDecimal(System.Int64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 302
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads a decimal value from the accessor.
+  syntax:
+    content: public decimal ReadDecimal(long position)
+    content.vb: Public Function ReadDecimal(position As Long) As Decimal
+    parameters:
+    - id: position
+      type: System.Int64
+      description: The number of bytes into the accessor at which to begin reading.
+    return:
+      type: System.Decimal
+  exceptions:
+  - type: System.ArgumentException
+    description: There are not enough bytes after *position* to read a value.-or-The decimal to read is invalid.
+  - type: System.ArgumentOutOfRangeException
+    description: '*position* is less than zero or greater than the capacity of the accessor.'
+  - type: System.NotSupportedException
+    description: The accessor does not support reading.
+  - type: System.ObjectDisposedException
+    description: The accessor has been disposed.
+- uid: System.IO.UnmanagedMemoryAccessor.ReadSingle(System.Int64)
+  id: ReadSingle(System.Int64)
+  parent: System.IO.UnmanagedMemoryAccessor
+  href: System.IO.UnmanagedMemoryAccessor.yml
+  name: ReadSingle(Int64)
+  fullName: System.IO.UnmanagedMemoryAccessor.ReadSingle(System.Int64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 313
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads a single-precision floating-point value from the accessor.
+  syntax:
+    content: public float ReadSingle(long position)
+    content.vb: Public Function ReadSingle(position As Long) As Single
+    parameters:
+    - id: position
+      type: System.Int64
+      description: The number of bytes into the accessor at which to begin reading.
+    return:
+      type: System.Single
+  exceptions:
+  - type: System.ArgumentException
+    description: There are not enough bytes after *position* to read a value.
+  - type: System.ArgumentOutOfRangeException
+    description: '*position* is less than zero or greater than the capacity of the accessor.'
+  - type: System.NotSupportedException
+    description: The accessor does not support reading.
+  - type: System.ObjectDisposedException
+    description: The accessor has been disposed.
+- uid: System.IO.UnmanagedMemoryAccessor.ReadDouble(System.Int64)
+  id: ReadDouble(System.Int64)
+  parent: System.IO.UnmanagedMemoryAccessor
+  href: System.IO.UnmanagedMemoryAccessor.yml
+  name: ReadDouble(Int64)
+  fullName: System.IO.UnmanagedMemoryAccessor.ReadDouble(System.Int64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 349
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads a double-precision floating-point value from the accessor.
+  syntax:
+    content: public double ReadDouble(long position)
+    content.vb: Public Function ReadDouble(position As Long) As Double
+    parameters:
+    - id: position
+      type: System.Int64
+      description: The number of bytes into the accessor at which to begin reading.
+    return:
+      type: System.Double
+  exceptions:
+  - type: System.ArgumentException
+    description: There are not enough bytes after *position* to read a value.
+  - type: System.ArgumentOutOfRangeException
+    description: '*position* is less than zero or greater than the capacity of the accessor.'
+  - type: System.NotSupportedException
+    description: The accessor does not support reading.
+  - type: System.ObjectDisposedException
+    description: The accessor has been disposed.
+- uid: System.IO.UnmanagedMemoryAccessor.ReadSByte(System.Int64)
+  id: ReadSByte(System.Int64)
+  parent: System.IO.UnmanagedMemoryAccessor
+  href: System.IO.UnmanagedMemoryAccessor.yml
+  name: ReadSByte(Int64)
+  fullName: System.IO.UnmanagedMemoryAccessor.ReadSByte(System.Int64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 389
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads an 8-bit signed integer from the accessor.
+  syntax:
+    content: public sbyte ReadSByte(long position)
+    content.vb: Public Function ReadSByte(position As Long) As SByte
+    parameters:
+    - id: position
+      type: System.Int64
+      description: The number of bytes into the accessor at which to begin reading.
+    return:
+      type: System.SByte
+  exceptions:
+  - type: System.ArgumentException
+    description: There are not enough bytes after *position* to read a value.
+  - type: System.ArgumentOutOfRangeException
+    description: '*position* is less than zero or greater than the capacity of the accessor.'
+  - type: System.NotSupportedException
+    description: The accessor does not support reading.
+  - type: System.ObjectDisposedException
+    description: The accessor has been disposed.
+- uid: System.IO.UnmanagedMemoryAccessor.ReadUInt16(System.Int64)
+  id: ReadUInt16(System.Int64)
+  parent: System.IO.UnmanagedMemoryAccessor
+  href: System.IO.UnmanagedMemoryAccessor.yml
+  name: ReadUInt16(Int64)
+  fullName: System.IO.UnmanagedMemoryAccessor.ReadUInt16(System.Int64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 414
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads an unsigned 16-bit integer from the accessor.
+  syntax:
+    content: public ushort ReadUInt16(long position)
+    content.vb: Public Function ReadUInt16(position As Long) As UShort
+    parameters:
+    - id: position
+      type: System.Int64
+      description: The number of bytes into the accessor at which to begin reading.
+    return:
+      type: System.UInt16
+  exceptions:
+  - type: System.ArgumentException
+    description: There are not enough bytes after *position* to read a value.
+  - type: System.ArgumentOutOfRangeException
+    description: '*position* is less than zero or greater than the capacity of the accessor.'
+  - type: System.NotSupportedException
+    description: The accessor does not support reading.
+  - type: System.ObjectDisposedException
+    description: The accessor has been disposed.
+- uid: System.IO.UnmanagedMemoryAccessor.ReadUInt32(System.Int64)
+  id: ReadUInt32(System.Int64)
+  parent: System.IO.UnmanagedMemoryAccessor
+  href: System.IO.UnmanagedMemoryAccessor.yml
+  name: ReadUInt32(Int64)
+  fullName: System.IO.UnmanagedMemoryAccessor.ReadUInt32(System.Int64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 451
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads an unsigned 32-bit integer from the accessor.
+  syntax:
+    content: public uint ReadUInt32(long position)
+    content.vb: Public Function ReadUInt32(position As Long) As UInteger
+    parameters:
+    - id: position
+      type: System.Int64
+      description: The number of bytes into the accessor at which to begin reading.
+    return:
+      type: System.UInt32
+  exceptions:
+  - type: System.ArgumentException
+    description: There are not enough bytes after *position* to read a value.
+  - type: System.ArgumentOutOfRangeException
+    description: '*position* is less than zero or greater than the capacity of the accessor.'
+  - type: System.NotSupportedException
+    description: The accessor does not support reading.
+  - type: System.ObjectDisposedException
+    description: The accessor has been disposed.
+- uid: System.IO.UnmanagedMemoryAccessor.ReadUInt64(System.Int64)
+  id: ReadUInt64(System.Int64)
+  parent: System.IO.UnmanagedMemoryAccessor
+  href: System.IO.UnmanagedMemoryAccessor.yml
+  name: ReadUInt64(Int64)
+  fullName: System.IO.UnmanagedMemoryAccessor.ReadUInt64(System.Int64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 488
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads an unsigned 64-bit integer from the accessor.
+  syntax:
+    content: public ulong ReadUInt64(long position)
+    content.vb: Public Function ReadUInt64(position As Long) As ULong
+    parameters:
+    - id: position
+      type: System.Int64
+      description: The number of bytes into the accessor at which to begin reading.
+    return:
+      type: System.UInt64
+  exceptions:
+  - type: System.ArgumentException
+    description: There are not enough bytes after *position* to read a value.
+  - type: System.ArgumentOutOfRangeException
+    description: '*position* is less than zero or greater than the capacity of the accessor.'
+  - type: System.NotSupportedException
+    description: The accessor does not support reading.
+  - type: System.ObjectDisposedException
+    description: The accessor has been disposed.
+- uid: System.IO.UnmanagedMemoryAccessor.Read``1(System.Int64,``0@)
+  id: Read``1(System.Int64,``0@)
+  parent: System.IO.UnmanagedMemoryAccessor
+  href: System.IO.UnmanagedMemoryAccessor.yml
+  name: Read<T>(Int64, out T)
+  name.vb: Read(Of T)(Int64, ByRef T)
+  fullName: System.IO.UnmanagedMemoryAccessor.Read<T>(System.Int64, out T)
+  fullName.vb: System.IO.UnmanagedMemoryAccessor.Read(Of T)(System.Int64, ByRef T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 541
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads a structure of type *T* from the accessor into a provided reference.
+  syntax:
+    content: 'public void Read<T>(long position, out T structure)where T : struct'
+    content.vb: Public Sub Read(Of T As Structure)(position As Long, ByRef structure As T)
+    parameters:
+    - id: position
+      type: System.Int64
+      description: The position in the accessor at which to begin reading.
+    - id: structure
+      type: '{T}'
+      description: The structure to contain the read data.
+    typeParameters:
+    - id: T
+  exceptions:
+  - type: System.ArgumentException
+    description: There are not enough bytes after *position* to read in a structure of type *T*.-or-T is a value type that contains one or more reference types.
+  - type: System.ArgumentOutOfRangeException
+    description: '*position* is less than zero or greater than the capacity of the accessor.'
+  - type: System.NotSupportedException
+    description: The accessor does not support reading.
+  - type: System.ObjectDisposedException
+    description: The accessor has been disposed.
+- uid: System.IO.UnmanagedMemoryAccessor.ReadArray``1(System.Int64,``0[],System.Int32,System.Int32)
+  id: ReadArray``1(System.Int64,``0[],System.Int32,System.Int32)
+  parent: System.IO.UnmanagedMemoryAccessor
+  href: System.IO.UnmanagedMemoryAccessor.yml
+  name: ReadArray<T>(Int64, T[], Int32, Int32)
+  name.vb: ReadArray(Of T)(Int64, T(), Int32, Int32)
+  fullName: System.IO.UnmanagedMemoryAccessor.ReadArray<T>(System.Int64, T[], System.Int32, System.Int32)
+  fullName.vb: System.IO.UnmanagedMemoryAccessor.ReadArray(Of T)(System.Int64, T(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 574
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads structures of type *T* from the accessor into an array of type *T*.
+  syntax:
+    content: 'public int ReadArray<T>(long position, T[] array, int offset, int count)where T : struct'
+    content.vb: Public Function ReadArray(Of T As Structure)(position As Long, array As T(), offset As Integer, count As Integer) As Integer
+    parameters:
+    - id: position
+      type: System.Int64
+      description: The number of bytes in the accessor at which to begin reading.
+    - id: array
+      type: '{T}[]'
+      description: The array to contain the structures read from the accessor.
+    - id: offset
+      type: System.Int32
+      description: The index in *array* in which to place the first copied structure.
+    - id: count
+      type: System.Int32
+      description: The number of structures of type *T* to read from the accessor.
+    typeParameters:
+    - id: T
+    return:
+      type: System.Int32
+  exceptions:
+  - type: System.ArgumentException
+    description: '*array* is not large enough to contain *count* of structures (starting from *position*).'
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*position* is less than zero or greater than the capacity of the accessor.'
+  - type: System.NotSupportedException
+    description: The accessor does not support reading.
+  - type: System.ObjectDisposedException
+    description: The accessor has been disposed.
+- uid: System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Boolean)
+  id: Write(System.Int64,System.Boolean)
+  parent: System.IO.UnmanagedMemoryAccessor
+  href: System.IO.UnmanagedMemoryAccessor.yml
+  name: Write(Int64, Boolean)
+  fullName: System.IO.UnmanagedMemoryAccessor.Write(System.Int64, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 633
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Writes a Boolean value into the accessor.
+  syntax:
+    content: public void Write(long position, bool value)
+    content.vb: Public Sub Write(position As Long, value As Boolean)
+    parameters:
+    - id: position
+      type: System.Int64
+      description: The number of bytes into the accessor at which to begin writing.
+    - id: value
+      type: System.Boolean
+      description: The value to write.
+  exceptions:
+  - type: System.ArgumentException
+    description: There are not enough bytes after *position* to write a value.
+  - type: System.ArgumentOutOfRangeException
+    description: '*position* is less than zero or greater than the capacity of the accessor.'
+  - type: System.NotSupportedException
+    description: The accessor does not support writing.
+  - type: System.ObjectDisposedException
+    description: The accessor has been disposed.
+- uid: System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Byte)
+  id: Write(System.Int64,System.Byte)
+  parent: System.IO.UnmanagedMemoryAccessor
+  href: System.IO.UnmanagedMemoryAccessor.yml
+  name: Write(Int64, Byte)
+  fullName: System.IO.UnmanagedMemoryAccessor.Write(System.Int64, System.Byte)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 641
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Writes a byte value into the accessor.
+  syntax:
+    content: public void Write(long position, byte value)
+    content.vb: Public Sub Write(position As Long, value As Byte)
+    parameters:
+    - id: position
+      type: System.Int64
+      description: The number of bytes into the accessor at which to begin writing.
+    - id: value
+      type: System.Byte
+      description: The value to write.
+  exceptions:
+  - type: System.ArgumentException
+    description: There are not enough bytes after *position* to write a value.
+  - type: System.ArgumentOutOfRangeException
+    description: '*position* is less than zero or greater than the capacity of the accessor.'
+  - type: System.NotSupportedException
+    description: The accessor does not support writing.
+  - type: System.ObjectDisposedException
+    description: The accessor has been disposed.
+- uid: System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Char)
+  id: Write(System.Int64,System.Char)
+  parent: System.IO.UnmanagedMemoryAccessor
+  href: System.IO.UnmanagedMemoryAccessor.yml
+  name: Write(Int64, Char)
+  fullName: System.IO.UnmanagedMemoryAccessor.Write(System.Int64, System.Char)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 648
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Writes a character into the accessor.
+  syntax:
+    content: public void Write(long position, char value)
+    content.vb: Public Sub Write(position As Long, value As Char)
+    parameters:
+    - id: position
+      type: System.Int64
+      description: The number of bytes into the accessor at which to begin writing.
+    - id: value
+      type: System.Char
+      description: The value to write.
+  exceptions:
+  - type: System.ArgumentException
+    description: There are not enough bytes after *position* to write a value.
+  - type: System.ArgumentOutOfRangeException
+    description: '*position* is less than zero or greater than the capacity of the accessor.'
+  - type: System.NotSupportedException
+    description: The accessor does not support writing.
+  - type: System.ObjectDisposedException
+    description: The accessor has been disposed.
+- uid: System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Int16)
+  id: Write(System.Int64,System.Int16)
+  parent: System.IO.UnmanagedMemoryAccessor
+  href: System.IO.UnmanagedMemoryAccessor.yml
+  name: Write(Int64, Int16)
+  fullName: System.IO.UnmanagedMemoryAccessor.Write(System.Int64, System.Int16)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 683
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Writes a 16-bit integer into the accessor.
+  syntax:
+    content: public void Write(long position, short value)
+    content.vb: Public Sub Write(position As Long, value As Short)
+    parameters:
+    - id: position
+      type: System.Int64
+      description: The number of bytes into the accessor at which to begin writing.
+    - id: value
+      type: System.Int16
+      description: The value to write.
+  exceptions:
+  - type: System.ArgumentException
+    description: There are not enough bytes after *position* to write a value.
+  - type: System.ArgumentOutOfRangeException
+    description: '*position* is less than zero or greater than the capacity of the accessor.'
+  - type: System.NotSupportedException
+    description: The accessor does not support writing.
+  - type: System.ObjectDisposedException
+    description: The accessor has been disposed.
+- uid: System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Int32)
+  id: Write(System.Int64,System.Int32)
+  parent: System.IO.UnmanagedMemoryAccessor
+  href: System.IO.UnmanagedMemoryAccessor.yml
+  name: Write(Int64, Int32)
+  fullName: System.IO.UnmanagedMemoryAccessor.Write(System.Int64, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 717
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Writes a 32-bit integer into the accessor.
+  syntax:
+    content: public void Write(long position, int value)
+    content.vb: Public Sub Write(position As Long, value As Integer)
+    parameters:
+    - id: position
+      type: System.Int64
+      description: The number of bytes into the accessor at which to begin writing.
+    - id: value
+      type: System.Int32
+      description: The value to write.
+  exceptions:
+  - type: System.ArgumentException
+    description: There are not enough bytes after *position* to write a value.
+  - type: System.ArgumentOutOfRangeException
+    description: '*position* is less than zero or greater than the capacity of the accessor.'
+  - type: System.NotSupportedException
+    description: The accessor does not support writing.
+  - type: System.ObjectDisposedException
+    description: The accessor has been disposed.
+- uid: System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Int64)
+  id: Write(System.Int64,System.Int64)
+  parent: System.IO.UnmanagedMemoryAccessor
+  href: System.IO.UnmanagedMemoryAccessor.yml
+  name: Write(Int64, Int64)
+  fullName: System.IO.UnmanagedMemoryAccessor.Write(System.Int64, System.Int64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 752
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Writes a 64-bit integer into the accessor.
+  syntax:
+    content: public void Write(long position, long value)
+    content.vb: Public Sub Write(position As Long, value As Long)
+    parameters:
+    - id: position
+      type: System.Int64
+      description: The number of bytes into the accessor at which to begin writing.
+    - id: value
+      type: System.Int64
+      description: The value to write.
+  exceptions:
+  - type: System.ArgumentException
+    description: There are not enough bytes after position to write a value.
+  - type: System.ArgumentOutOfRangeException
+    description: '*position* is less than zero or greater than the capacity of the accessor.'
+  - type: System.NotSupportedException
+    description: The accessor does not support writing.
+  - type: System.ObjectDisposedException
+    description: The accessor has been disposed.
+- uid: System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Decimal)
+  id: Write(System.Int64,System.Decimal)
+  parent: System.IO.UnmanagedMemoryAccessor
+  href: System.IO.UnmanagedMemoryAccessor.yml
+  name: Write(Int64, Decimal)
+  fullName: System.IO.UnmanagedMemoryAccessor.Write(System.Int64, System.Decimal)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 790
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Writes a decimal value into the accessor.
+  syntax:
+    content: public void Write(long position, decimal value)
+    content.vb: Public Sub Write(position As Long, value As Decimal)
+    parameters:
+    - id: position
+      type: System.Int64
+      description: The number of bytes into the accessor at which to begin writing.
+    - id: value
+      type: System.Decimal
+      description: The value to write.
+  exceptions:
+  - type: System.ArgumentException
+    description: There are not enough bytes after *position* to write a value.-or-The decimal is invalid.
+  - type: System.ArgumentOutOfRangeException
+    description: '*position* is less than zero or greater than the capacity of the accessor.'
+  - type: System.NotSupportedException
+    description: The accessor does not support writing.
+  - type: System.ObjectDisposedException
+    description: The accessor has been disposed.
+- uid: System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Single)
+  id: Write(System.Int64,System.Single)
+  parent: System.IO.UnmanagedMemoryAccessor
+  href: System.IO.UnmanagedMemoryAccessor.yml
+  name: Write(Int64, Single)
+  fullName: System.IO.UnmanagedMemoryAccessor.Write(System.Int64, System.Single)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 811
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Writes a Single into the accessor.
+  syntax:
+    content: public void Write(long position, float value)
+    content.vb: Public Sub Write(position As Long, value As Single)
+    parameters:
+    - id: position
+      type: System.Int64
+      description: The number of bytes into the accessor at which to begin writing.
+    - id: value
+      type: System.Single
+      description: The value to write.
+  exceptions:
+  - type: System.ArgumentException
+    description: There are not enough bytes after *position* to write a value.
+  - type: System.ArgumentOutOfRangeException
+    description: '*position* is less than zero or greater than the capacity of the accessor.'
+  - type: System.NotSupportedException
+    description: The accessor does not support writing.
+  - type: System.ObjectDisposedException
+    description: The accessor has been disposed.
+- uid: System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Double)
+  id: Write(System.Int64,System.Double)
+  parent: System.IO.UnmanagedMemoryAccessor
+  href: System.IO.UnmanagedMemoryAccessor.yml
+  name: Write(Int64, Double)
+  fullName: System.IO.UnmanagedMemoryAccessor.Write(System.Int64, System.Double)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 847
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Writes a Double value into the accessor.
+  syntax:
+    content: public void Write(long position, double value)
+    content.vb: Public Sub Write(position As Long, value As Double)
+    parameters:
+    - id: position
+      type: System.Int64
+      description: The number of bytes into the accessor at which to begin writing.
+    - id: value
+      type: System.Double
+      description: The value to write.
+  exceptions:
+  - type: System.ArgumentException
+    description: There are not enough bytes after *position* to write a value.
+  - type: System.ArgumentOutOfRangeException
+    description: '*position* is less than zero or greater than the capacity of the accessor.'
+  - type: System.NotSupportedException
+    description: The accessor does not support writing.
+  - type: System.ObjectDisposedException
+    description: The accessor has been disposed.
+- uid: System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.SByte)
+  id: Write(System.Int64,System.SByte)
+  parent: System.IO.UnmanagedMemoryAccessor
+  href: System.IO.UnmanagedMemoryAccessor.yml
+  name: Write(Int64, SByte)
+  fullName: System.IO.UnmanagedMemoryAccessor.Write(System.Int64, System.SByte)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 887
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Writes an 8-bit integer into the accessor.
+  syntax:
+    content: public void Write(long position, sbyte value)
+    content.vb: Public Sub Write(position As Long, value As SByte)
+    parameters:
+    - id: position
+      type: System.Int64
+      description: The number of bytes into the accessor at which to begin writing.
+    - id: value
+      type: System.SByte
+      description: The value to write.
+  exceptions:
+  - type: System.ArgumentException
+    description: There are not enough bytes after *position* to write a value.
+  - type: System.ArgumentOutOfRangeException
+    description: '*position* is less than zero or greater than the capacity of the accessor.'
+  - type: System.NotSupportedException
+    description: The accessor does not support writing.
+  - type: System.ObjectDisposedException
+    description: The accessor has been disposed.
+- uid: System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.UInt16)
+  id: Write(System.Int64,System.UInt16)
+  parent: System.IO.UnmanagedMemoryAccessor
+  href: System.IO.UnmanagedMemoryAccessor.yml
+  name: Write(Int64, UInt16)
+  fullName: System.IO.UnmanagedMemoryAccessor.Write(System.Int64, System.UInt16)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 909
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Writes an unsigned 16-bit integer into the accessor.
+  syntax:
+    content: public void Write(long position, ushort value)
+    content.vb: Public Sub Write(position As Long, value As UShort)
+    parameters:
+    - id: position
+      type: System.Int64
+      description: The number of bytes into the accessor at which to begin writing.
+    - id: value
+      type: System.UInt16
+      description: The value to write.
+  exceptions:
+  - type: System.ArgumentException
+    description: There are not enough bytes after *position* to write a value.
+  - type: System.ArgumentOutOfRangeException
+    description: '*position* is less than zero or greater than the capacity of the accessor.'
+  - type: System.NotSupportedException
+    description: The accessor does not support writing.
+  - type: System.ObjectDisposedException
+    description: The accessor has been disposed.
+- uid: System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.UInt32)
+  id: Write(System.Int64,System.UInt32)
+  parent: System.IO.UnmanagedMemoryAccessor
+  href: System.IO.UnmanagedMemoryAccessor.yml
+  name: Write(Int64, UInt32)
+  fullName: System.IO.UnmanagedMemoryAccessor.Write(System.Int64, System.UInt32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 943
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Writes an unsigned 32-bit integer into the accessor.
+  syntax:
+    content: public void Write(long position, uint value)
+    content.vb: Public Sub Write(position As Long, value As UInteger)
+    parameters:
+    - id: position
+      type: System.Int64
+      description: The number of bytes into the accessor at which to begin writing.
+    - id: value
+      type: System.UInt32
+      description: The value to write.
+  exceptions:
+  - type: System.ArgumentException
+    description: There are not enough bytes after *position* to write a value.
+  - type: System.ArgumentOutOfRangeException
+    description: '*position* is less than zero or greater than the capacity of the accessor.'
+  - type: System.NotSupportedException
+    description: The accessor does not support writing.
+  - type: System.ObjectDisposedException
+    description: The accessor has been disposed.
+- uid: System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.UInt64)
+  id: Write(System.Int64,System.UInt64)
+  parent: System.IO.UnmanagedMemoryAccessor
+  href: System.IO.UnmanagedMemoryAccessor.yml
+  name: Write(Int64, UInt64)
+  fullName: System.IO.UnmanagedMemoryAccessor.Write(System.Int64, System.UInt64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 980
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Writes an unsigned 64-bit integer into the accessor.
+  syntax:
+    content: public void Write(long position, ulong value)
+    content.vb: Public Sub Write(position As Long, value As ULong)
+    parameters:
+    - id: position
+      type: System.Int64
+      description: The number of bytes into the accessor at which to begin writing.
+    - id: value
+      type: System.UInt64
+      description: The value to write.
+  exceptions:
+  - type: System.ArgumentException
+    description: There are not enough bytes after *position* to write a value.
+  - type: System.ArgumentOutOfRangeException
+    description: '*position* is less than zero or greater than the capacity of the accessor.'
+  - type: System.NotSupportedException
+    description: The accessor does not support writing.
+  - type: System.ObjectDisposedException
+    description: The accessor has been disposed.
+- uid: System.IO.UnmanagedMemoryAccessor.Write``1(System.Int64,``0@)
+  id: Write``1(System.Int64,``0@)
+  parent: System.IO.UnmanagedMemoryAccessor
+  href: System.IO.UnmanagedMemoryAccessor.yml
+  name: Write<T>(Int64, ref T)
+  name.vb: Write(Of T)(Int64, ByRef T)
+  fullName: System.IO.UnmanagedMemoryAccessor.Write<T>(System.Int64, ref T)
+  fullName.vb: System.IO.UnmanagedMemoryAccessor.Write(Of T)(System.Int64, ByRef T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 1025
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Writes a structure into the accessor.
+  syntax:
+    content: 'public void Write<T>(long position, ref T structure)where T : struct'
+    content.vb: Public Sub Write(Of T As Structure)(position As Long, ByRef structure As T)
+    parameters:
+    - id: position
+      type: System.Int64
+      description: The number of bytes into the accessor at which to begin writing.
+    - id: structure
+      type: '{T}'
+      description: The structure to write.
+    typeParameters:
+    - id: T
+  exceptions:
+  - type: System.ArgumentException
+    description: There are not enough bytes in the accessor after *position* to write a structure of type *T*.
+  - type: System.ArgumentOutOfRangeException
+    description: '*position* is less than zero or greater than the capacity of the accessor.'
+  - type: System.NotSupportedException
+    description: The accessor does not support writing.
+  - type: System.ObjectDisposedException
+    description: The accessor has been disposed.
+- uid: System.IO.UnmanagedMemoryAccessor.WriteArray``1(System.Int64,``0[],System.Int32,System.Int32)
+  id: WriteArray``1(System.Int64,``0[],System.Int32,System.Int32)
+  parent: System.IO.UnmanagedMemoryAccessor
+  href: System.IO.UnmanagedMemoryAccessor.yml
+  name: WriteArray<T>(Int64, T[], Int32, Int32)
+  name.vb: WriteArray(Of T)(Int64, T(), Int32, Int32)
+  fullName: System.IO.UnmanagedMemoryAccessor.WriteArray<T>(System.Int64, T[], System.Int32, System.Int32)
+  fullName.vb: System.IO.UnmanagedMemoryAccessor.WriteArray(Of T)(System.Int64, T(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 1055
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Writes structures from an array of type *T* into the accessor.
+  syntax:
+    content: 'public void WriteArray<T>(long position, T[] array, int offset, int count)where T : struct'
+    content.vb: Public Sub WriteArray(Of T As Structure)(position As Long, array As T(), offset As Integer, count As Integer)
+    parameters:
+    - id: position
+      type: System.Int64
+      description: The number of bytes into the accessor at which to begin writing.
+    - id: array
+      type: '{T}[]'
+      description: The array to write into the accessor.
+    - id: offset
+      type: System.Int32
+      description: The index in *array* to start writing from.
+    - id: count
+      type: System.Int32
+      description: The number of structures in *array* to write.
+    typeParameters:
+    - id: T
+  exceptions:
+  - type: System.ArgumentException
+    description: There are not enough bytes in the accessor after *position* to write the number of structures specified by *count*.
+  - type: System.ArgumentOutOfRangeException
+    description: '*position* is less than zero or greater than the capacity of the accessor.-or-*offset* or *count* is less than zero.'
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.NotSupportedException
+    description: The accessor does not support writing.
+  - type: System.ObjectDisposedException
+    description: The accessor has been disposed.
+references:
+- uid: System.IO
+  isExternal: false
+  name: System.IO
+  fullName: System.IO
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Runtime.InteropServices.SafeBuffer
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  name: SafeBuffer
+  fullName: System.Runtime.InteropServices.SafeBuffer
+- uid: System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  fullName: System.Int64
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace
+- uid: System.IO.FileAccess
+  parent: System.IO
+  isExternal: true
+  name: FileAccess
+  fullName: System.IO.FileAccess
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Byte
+  parent: System
+  isExternal: true
+  name: Byte
+  fullName: System.Byte
+- uid: System.Char
+  parent: System
+  isExternal: true
+  name: Char
+  fullName: System.Char
+- uid: System.Int16
+  parent: System
+  isExternal: true
+  name: Int16
+  fullName: System.Int16
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Decimal
+  parent: System
+  isExternal: true
+  name: Decimal
+  fullName: System.Decimal
+- uid: System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  fullName: System.Single
+- uid: System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  fullName: System.Double
+- uid: System.SByte
+  parent: System
+  isExternal: true
+  name: SByte
+  fullName: System.SByte
+- uid: System.UInt16
+  parent: System
+  isExternal: true
+  name: UInt16
+  fullName: System.UInt16
+- uid: System.UInt32
+  parent: System
+  isExternal: true
+  name: UInt32
+  fullName: System.UInt32
+- uid: System.UInt64
+  parent: System
+  isExternal: true
+  name: UInt64
+  fullName: System.UInt64
+- uid: '{T}'
+  isExternal: false
+  name: T
+  fullName: T
+- uid: '{T}[]'
+  isExternal: false
+  name: T[]
+  name.vb: T()
+  fullName: T[]
+  fullName.vb: T()
+  spec.csharp:
+  - name: T
+    fullName: T
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - name: T
+    fullName: T
+  - name: ()
+    fullName: ()

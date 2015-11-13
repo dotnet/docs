@@ -1,0 +1,937 @@
+items:
+- uid: System.Security.Principal.SecurityIdentifier
+  id: SecurityIdentifier
+  parent: System.Security.Principal
+  children:
+  - System.Security.Principal.SecurityIdentifier.#ctor(System.Byte[],System.Int32)
+  - System.Security.Principal.SecurityIdentifier.#ctor(System.IntPtr)
+  - System.Security.Principal.SecurityIdentifier.#ctor(System.Security.Principal.WellKnownSidType,System.Security.Principal.SecurityIdentifier)
+  - System.Security.Principal.SecurityIdentifier.#ctor(System.String)
+  - System.Security.Principal.SecurityIdentifier.AccountDomainSid
+  - System.Security.Principal.SecurityIdentifier.BinaryLength
+  - System.Security.Principal.SecurityIdentifier.CompareTo(System.Security.Principal.SecurityIdentifier)
+  - System.Security.Principal.SecurityIdentifier.Equals(System.Object)
+  - System.Security.Principal.SecurityIdentifier.Equals(System.Security.Principal.SecurityIdentifier)
+  - System.Security.Principal.SecurityIdentifier.GetBinaryForm(System.Byte[],System.Int32)
+  - System.Security.Principal.SecurityIdentifier.GetHashCode
+  - System.Security.Principal.SecurityIdentifier.IsAccountSid
+  - System.Security.Principal.SecurityIdentifier.IsEqualDomainSid(System.Security.Principal.SecurityIdentifier)
+  - System.Security.Principal.SecurityIdentifier.IsValidTargetType(System.Type)
+  - System.Security.Principal.SecurityIdentifier.IsWellKnown(System.Security.Principal.WellKnownSidType)
+  - System.Security.Principal.SecurityIdentifier.MaxBinaryLength
+  - System.Security.Principal.SecurityIdentifier.MinBinaryLength
+  - System.Security.Principal.SecurityIdentifier.op_Equality(System.Security.Principal.SecurityIdentifier,System.Security.Principal.SecurityIdentifier)
+  - System.Security.Principal.SecurityIdentifier.op_Inequality(System.Security.Principal.SecurityIdentifier,System.Security.Principal.SecurityIdentifier)
+  - System.Security.Principal.SecurityIdentifier.ToString
+  - System.Security.Principal.SecurityIdentifier.Translate(System.Type)
+  - System.Security.Principal.SecurityIdentifier.Value
+  href: System.Security.Principal.SecurityIdentifier.yml
+  name: SecurityIdentifier
+  fullName: System.Security.Principal.SecurityIdentifier
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Security.Principal.Windows/src/System/Security/Principal/SID.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/SID.cs
+    startLine: 119
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Represents a security identifier (SID) and provides marshaling and comparison operations for SIDs.
+  syntax:
+    content: 'public sealed class SecurityIdentifier : IdentityReference, IComparable<SecurityIdentifier>'
+    content.vb: Public NotInheritable Class SecurityIdentifier Inherits IdentityReference Implements IComparable(Of SecurityIdentifier)
+  inheritance:
+  - System.Object
+  - System.Security.Principal.IdentityReference
+  implements:
+  - System.IComparable{System.Security.Principal.SecurityIdentifier}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Security.Principal.SecurityIdentifier.MinBinaryLength
+  id: MinBinaryLength
+  parent: System.Security.Principal.SecurityIdentifier
+  href: System.Security.Principal.SecurityIdentifier.yml
+  name: MinBinaryLength
+  fullName: System.Security.Principal.SecurityIdentifier.MinBinaryLength
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/SID.cs
+    startLine: 139
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Returns the minimum size, in bytes, of the binary representation of the security identifier.
+  syntax:
+    content: public static readonly int MinBinaryLength
+    content.vb: Public Shared ReadOnly MinBinaryLength As Integer
+- uid: System.Security.Principal.SecurityIdentifier.MaxBinaryLength
+  id: MaxBinaryLength
+  parent: System.Security.Principal.SecurityIdentifier
+  href: System.Security.Principal.SecurityIdentifier.yml
+  name: MaxBinaryLength
+  fullName: System.Security.Principal.SecurityIdentifier.MaxBinaryLength
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/SID.cs
+    startLine: 145
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Returns the maximum size, in bytes, of the binary representation of the security identifier.
+  syntax:
+    content: public static readonly int MaxBinaryLength
+    content.vb: Public Shared ReadOnly MaxBinaryLength As Integer
+- uid: System.Security.Principal.SecurityIdentifier.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: System.Security.Principal.SecurityIdentifier
+  href: System.Security.Principal.SecurityIdentifier.yml
+  name: SecurityIdentifier(String)
+  fullName: System.Security.Principal.SecurityIdentifier.SecurityIdentifier(System.String)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/SID.cs
+    startLine: 379
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Initializes a new instance of the @'System.Security.Principal.SecurityIdentifier' class by using the specified security identifier (SID) in Security Descriptor Definition Language (SDDL) format.
+  syntax:
+    content: public SecurityIdentifier(string sddlForm)
+    content.vb: Public Sub New(sddlForm As String)
+    parameters:
+    - id: sddlForm
+      type: System.String
+      description: SDDL string for the SID used to create the @'System.Security.Principal.SecurityIdentifier' object.
+- uid: System.Security.Principal.SecurityIdentifier.#ctor(System.Byte[],System.Int32)
+  id: '#ctor(System.Byte[],System.Int32)'
+  parent: System.Security.Principal.SecurityIdentifier
+  href: System.Security.Principal.SecurityIdentifier.yml
+  name: SecurityIdentifier(Byte[], Int32)
+  name.vb: SecurityIdentifier(Byte(), Int32)
+  fullName: System.Security.Principal.SecurityIdentifier.SecurityIdentifier(System.Byte[], System.Int32)
+  fullName.vb: System.Security.Principal.SecurityIdentifier.SecurityIdentifier(System.Byte(), System.Int32)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/SID.cs
+    startLine: 420
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Initializes a new instance of the @'System.Security.Principal.SecurityIdentifier' class by using a specified binary representation of a security identifier (SID).
+  syntax:
+    content: public SecurityIdentifier(byte[] binaryForm, int offset)
+    content.vb: Public Sub New(binaryForm As Byte(), offset As Integer)
+    parameters:
+    - id: binaryForm
+      type: System.Byte[]
+      description: The byte array that represents the SID.
+    - id: offset
+      type: System.Int32
+      description: The byte offset to use as the starting index in *binaryForm*.
+- uid: System.Security.Principal.SecurityIdentifier.#ctor(System.IntPtr)
+  id: '#ctor(System.IntPtr)'
+  parent: System.Security.Principal.SecurityIdentifier
+  href: System.Security.Principal.SecurityIdentifier.yml
+  name: SecurityIdentifier(IntPtr)
+  fullName: System.Security.Principal.SecurityIdentifier.SecurityIdentifier(System.IntPtr)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/SID.cs
+    startLine: 429
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Initializes a new instance of the @'System.Security.Principal.SecurityIdentifier' class by using an integer that represents the binary form of a security identifier (SID).
+  syntax:
+    content: public SecurityIdentifier(IntPtr binaryForm)
+    content.vb: Public Sub New(binaryForm As IntPtr)
+    parameters:
+    - id: binaryForm
+      type: System.IntPtr
+      description: An integer that represents the binary form of a SID.
+- uid: System.Security.Principal.SecurityIdentifier.#ctor(System.Security.Principal.WellKnownSidType,System.Security.Principal.SecurityIdentifier)
+  id: '#ctor(System.Security.Principal.WellKnownSidType,System.Security.Principal.SecurityIdentifier)'
+  parent: System.Security.Principal.SecurityIdentifier
+  href: System.Security.Principal.SecurityIdentifier.yml
+  name: SecurityIdentifier(WellKnownSidType, SecurityIdentifier)
+  fullName: System.Security.Principal.SecurityIdentifier.SecurityIdentifier(System.Security.Principal.WellKnownSidType, System.Security.Principal.SecurityIdentifier)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/SID.cs
+    startLine: 449
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Initializes a new instance of the @'System.Security.Principal.SecurityIdentifier' class by using the specified well known security identifier (SID) type and domain SID.
+  syntax:
+    content: public SecurityIdentifier(WellKnownSidType sidType, SecurityIdentifier domainSid)
+    content.vb: Public Sub New(sidType As WellKnownSidType, domainSid As SecurityIdentifier)
+    parameters:
+    - id: sidType
+      type: System.Security.Principal.WellKnownSidType
+      description: One of the enumeration values. This value must not be @'System.Security.Principal.WellKnownSidType.LogonIdsSid'.
+    - id: domainSid
+      type: System.Security.Principal.SecurityIdentifier
+      description: The domain SID. This value is required for the following @'System.Security.Principal.WellKnownSidType' values. This parameter is ignored for any other @'System.Security.Principal.WellKnownSidType' values.- @'System.Security.Principal.WellKnownSidType.AccountAdministratorSid'- @'System.Security.Principal.WellKnownSidType.AccountGuestSid'- @'System.Security.Principal.WellKnownSidType.AccountKrbtgtSid'- @'System.Security.Principal.WellKnownSidType.AccountDomainAdminsSid'- @'System.Security.Principal.WellKnownSidType.AccountDomainUsersSid'- @'System.Security.Principal.WellKnownSidType.AccountDomainGuestsSid'- @'System.Security.Principal.WellKnownSidType.AccountComputersSid'- @'System.Security.Principal.WellKnownSidType.AccountControllersSid'- @'System.Security.Principal.WellKnownSidType.AccountCertAdminsSid'- @'System.Security.Principal.WellKnownSidType.AccountSchemaAdminsSid'- @'System.Security.Principal.WellKnownSidType.AccountEnterpriseAdminsSid'- @'System.Security.Principal.WellKnownSidType.AccountPolicyAdminsSid'- @'System.Security.Principal.WellKnownSidType.AccountRasAndIasServersSid'
+- uid: System.Security.Principal.SecurityIdentifier.BinaryLength
+  id: BinaryLength
+  parent: System.Security.Principal.SecurityIdentifier
+  href: System.Security.Principal.SecurityIdentifier.yml
+  name: BinaryLength
+  fullName: System.Security.Principal.SecurityIdentifier.BinaryLength
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/SID.cs
+    startLine: 605
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Returns the length, in bytes, of the security identifier (SID) represented by the @'System.Security.Principal.SecurityIdentifier' object.
+  syntax:
+    content: public int BinaryLength { get; }
+    content.vb: Public ReadOnly Property BinaryLength As Integer
+    parameters: []
+    return:
+      type: System.Int32
+- uid: System.Security.Principal.SecurityIdentifier.AccountDomainSid
+  id: AccountDomainSid
+  parent: System.Security.Principal.SecurityIdentifier
+  href: System.Security.Principal.SecurityIdentifier.yml
+  name: AccountDomainSid
+  fullName: System.Security.Principal.SecurityIdentifier.AccountDomainSid
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/SID.cs
+    startLine: 620
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Returns the account domain security identifier (SID) portion from the SID represented by the @'System.Security.Principal.SecurityIdentifier' object if the SID represents a Windows account SID. If the SID does not represent a Windows account SID, this property returns @'System.ArgumentNullException'.
+  syntax:
+    content: public SecurityIdentifier AccountDomainSid { get; }
+    content.vb: Public ReadOnly Property AccountDomainSid As SecurityIdentifier
+    parameters: []
+    return:
+      type: System.Security.Principal.SecurityIdentifier
+- uid: System.Security.Principal.SecurityIdentifier.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Security.Principal.SecurityIdentifier
+  href: System.Security.Principal.SecurityIdentifier.yml
+  name: Equals(Object)
+  fullName: System.Security.Principal.SecurityIdentifier.Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/SID.cs
+    startLine: 638
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Returns a value that indicates whether this @'System.Security.Principal.SecurityIdentifier' object is equal to a specified object.
+  syntax:
+    content: public override bool Equals(object o)
+    content.vb: Public Overrides Function Equals(o As Object) As Boolean
+    parameters:
+    - id: o
+      type: System.Object
+      description: An object to compare with this @'System.Security.Principal.SecurityIdentifier' object, or null.
+    return:
+      type: System.Boolean
+  overridden: System.Security.Principal.IdentityReference.Equals(System.Object)
+- uid: System.Security.Principal.SecurityIdentifier.Equals(System.Security.Principal.SecurityIdentifier)
+  id: Equals(System.Security.Principal.SecurityIdentifier)
+  parent: System.Security.Principal.SecurityIdentifier
+  href: System.Security.Principal.SecurityIdentifier.yml
+  name: Equals(SecurityIdentifier)
+  fullName: System.Security.Principal.SecurityIdentifier.Equals(System.Security.Principal.SecurityIdentifier)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/SID.cs
+    startLine: 655
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Indicates whether the specified @'System.Security.Principal.SecurityIdentifier' object is equal to the current @'System.Security.Principal.SecurityIdentifier' object.
+  syntax:
+    content: public bool Equals(SecurityIdentifier sid)
+    content.vb: Public Function Equals(sid As SecurityIdentifier) As Boolean
+    parameters:
+    - id: sid
+      type: System.Security.Principal.SecurityIdentifier
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+- uid: System.Security.Principal.SecurityIdentifier.GetHashCode
+  id: GetHashCode
+  parent: System.Security.Principal.SecurityIdentifier
+  href: System.Security.Principal.SecurityIdentifier.yml
+  name: GetHashCode()
+  fullName: System.Security.Principal.SecurityIdentifier.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/SID.cs
+    startLine: 665
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Serves as a hash function for the current @'System.Security.Principal.SecurityIdentifier' object. The @'System.Security.Principal.SecurityIdentifier.GetHashCode' method is suitable for hashing algorithms and data structures like a hash table.
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+  overridden: System.Security.Principal.IdentityReference.GetHashCode
+- uid: System.Security.Principal.SecurityIdentifier.ToString
+  id: ToString
+  parent: System.Security.Principal.SecurityIdentifier
+  href: System.Security.Principal.SecurityIdentifier.yml
+  name: ToString()
+  fullName: System.Security.Principal.SecurityIdentifier.ToString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/SID.cs
+    startLine: 675
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Returns the security identifier (SID), in Security Descriptor Definition Language (SDDL) format, for the account represented by the @'System.Security.Principal.SecurityIdentifier' object. An example of the SDDL format is S-1-5-9.
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+  overridden: System.Security.Principal.IdentityReference.ToString
+- uid: System.Security.Principal.SecurityIdentifier.Value
+  id: Value
+  parent: System.Security.Principal.SecurityIdentifier
+  href: System.Security.Principal.SecurityIdentifier.yml
+  name: Value
+  fullName: System.Security.Principal.SecurityIdentifier.Value
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/SID.cs
+    startLine: 699
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Returns an uppercase Security Descriptor Definition Language (SDDL) string for the security identifier (SID) represented by this @'System.Security.Principal.SecurityIdentifier' object.
+  syntax:
+    content: public override string Value { get; }
+    content.vb: Public Overrides ReadOnly Property Value As String
+    parameters: []
+    return:
+      type: System.String
+  overridden: System.Security.Principal.IdentityReference.Value
+- uid: System.Security.Principal.SecurityIdentifier.IsValidTargetType(System.Type)
+  id: IsValidTargetType(System.Type)
+  parent: System.Security.Principal.SecurityIdentifier
+  href: System.Security.Principal.SecurityIdentifier.yml
+  name: IsValidTargetType(Type)
+  fullName: System.Security.Principal.SecurityIdentifier.IsValidTargetType(System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/SID.cs
+    startLine: 723
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Returns a value that indicates whether the specified type is a valid translation type for the @'System.Security.Principal.SecurityIdentifier' class.
+  syntax:
+    content: public override bool IsValidTargetType(Type targetType)
+    content.vb: Public Overrides Function IsValidTargetType(targetType As Type) As Boolean
+    parameters:
+    - id: targetType
+      type: System.Type
+      description: The type being queried for validity to serve as a conversion from @'System.Security.Principal.SecurityIdentifier'. The following target types are valid:- @'System.Security.Principal.NTAccount'- @'System.Security.Principal.SecurityIdentifier'
+    return:
+      type: System.Boolean
+  overridden: System.Security.Principal.IdentityReference.IsValidTargetType(System.Type)
+- uid: System.Security.Principal.SecurityIdentifier.IsAccountSid
+  id: IsAccountSid
+  parent: System.Security.Principal.SecurityIdentifier
+  href: System.Security.Principal.SecurityIdentifier.yml
+  name: IsAccountSid()
+  fullName: System.Security.Principal.SecurityIdentifier.IsAccountSid()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/SID.cs
+    startLine: 753
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Returns a value that indicates whether the security identifier (SID) represented by this @'System.Security.Principal.SecurityIdentifier' object is a valid Windows account SID.
+  syntax:
+    content: public bool IsAccountSid()
+    content.vb: Public Function IsAccountSid As Boolean
+    return:
+      type: System.Boolean
+- uid: System.Security.Principal.SecurityIdentifier.Translate(System.Type)
+  id: Translate(System.Type)
+  parent: System.Security.Principal.SecurityIdentifier
+  href: System.Security.Principal.SecurityIdentifier.yml
+  name: Translate(Type)
+  fullName: System.Security.Principal.SecurityIdentifier.Translate(System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/SID.cs
+    startLine: 770
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Translates the account name represented by the @'System.Security.Principal.SecurityIdentifier' object into another @'System.Security.Principal.IdentityReference'-derived type.
+  syntax:
+    content: public override IdentityReference Translate(Type targetType)
+    content.vb: Public Overrides Function Translate(targetType As Type) As IdentityReference
+    parameters:
+    - id: targetType
+      type: System.Type
+      description: The target type for the conversion from @'System.Security.Principal.SecurityIdentifier'. The target type must be a type that is considered valid by the @'System.Security.Principal.SecurityIdentifier.IsValidTargetType(System.Type)' method.
+    return:
+      type: System.Security.Principal.IdentityReference
+  overridden: System.Security.Principal.IdentityReference.Translate(System.Type)
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*targetType *is null.'
+  - type: System.ArgumentException
+    description: '*targetType *is not an @''System.Security.Principal.IdentityReference'' type.'
+  - type: System.Security.Principal.IdentityNotMappedException
+    description: Some or all identity references could not be translated.
+  - type: System.SystemException
+    description: A Win32 error code was returned.
+- uid: System.Security.Principal.SecurityIdentifier.op_Equality(System.Security.Principal.SecurityIdentifier,System.Security.Principal.SecurityIdentifier)
+  id: op_Equality(System.Security.Principal.SecurityIdentifier,System.Security.Principal.SecurityIdentifier)
+  parent: System.Security.Principal.SecurityIdentifier
+  href: System.Security.Principal.SecurityIdentifier.yml
+  name: Equality(SecurityIdentifier, SecurityIdentifier)
+  fullName: System.Security.Principal.SecurityIdentifier.Equality(System.Security.Principal.SecurityIdentifier, System.Security.Principal.SecurityIdentifier)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/SID.cs
+    startLine: 802
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Compares two @'System.Security.Principal.SecurityIdentifier' objects to determine whether they are equal. They are considered equal if they have the same canonical representation as the one returned by the @'System.Security.Principal.SecurityIdentifier.Value' property or if they are both null.
+  syntax:
+    content: public static bool operator ==(SecurityIdentifier left, SecurityIdentifier right)
+    content.vb: Public Shared Operator =(left As SecurityIdentifier, right As SecurityIdentifier) As Boolean
+    parameters:
+    - id: left
+      type: System.Security.Principal.SecurityIdentifier
+      description: The left operand to use for the equality comparison. This parameter can be null.
+    - id: right
+      type: System.Security.Principal.SecurityIdentifier
+      description: The right operand to use for the equality comparison. This parameter can be null.
+    return:
+      type: System.Boolean
+- uid: System.Security.Principal.SecurityIdentifier.op_Inequality(System.Security.Principal.SecurityIdentifier,System.Security.Principal.SecurityIdentifier)
+  id: op_Inequality(System.Security.Principal.SecurityIdentifier,System.Security.Principal.SecurityIdentifier)
+  parent: System.Security.Principal.SecurityIdentifier
+  href: System.Security.Principal.SecurityIdentifier.yml
+  name: Inequality(SecurityIdentifier, SecurityIdentifier)
+  fullName: System.Security.Principal.SecurityIdentifier.Inequality(System.Security.Principal.SecurityIdentifier, System.Security.Principal.SecurityIdentifier)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/SID.cs
+    startLine: 821
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Compares two @'System.Security.Principal.SecurityIdentifier' objects to determine whether they are not equal. They are considered not equal if they have different canonical name representations than the one returned by the @'System.Security.Principal.SecurityIdentifier.Value' property or if one of the objects is null and the other is not.
+  syntax:
+    content: public static bool operator !=(SecurityIdentifier left, SecurityIdentifier right)
+    content.vb: Public Shared Operator <>(left As SecurityIdentifier, right As SecurityIdentifier) As Boolean
+    parameters:
+    - id: left
+      type: System.Security.Principal.SecurityIdentifier
+      description: The left operand to use for the inequality comparison. This parameter can be null.
+    - id: right
+      type: System.Security.Principal.SecurityIdentifier
+      description: The right operand to use for the inequality comparison. This parameter can be null.
+    return:
+      type: System.Boolean
+- uid: System.Security.Principal.SecurityIdentifier.CompareTo(System.Security.Principal.SecurityIdentifier)
+  id: CompareTo(System.Security.Principal.SecurityIdentifier)
+  parent: System.Security.Principal.SecurityIdentifier
+  href: System.Security.Principal.SecurityIdentifier.yml
+  name: CompareTo(SecurityIdentifier)
+  fullName: System.Security.Principal.SecurityIdentifier.CompareTo(System.Security.Principal.SecurityIdentifier)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/SID.cs
+    startLine: 830
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Compares the current @'System.Security.Principal.SecurityIdentifier' object with the specified @'System.Security.Principal.SecurityIdentifier' object.
+  syntax:
+    content: public int CompareTo(SecurityIdentifier sid)
+    content.vb: Public Function CompareTo(sid As SecurityIdentifier) As Integer
+    parameters:
+    - id: sid
+      type: System.Security.Principal.SecurityIdentifier
+      description: The object to compare with the current object.
+    return:
+      type: System.Int32
+- uid: System.Security.Principal.SecurityIdentifier.IsWellKnown(System.Security.Principal.WellKnownSidType)
+  id: IsWellKnown(System.Security.Principal.WellKnownSidType)
+  parent: System.Security.Principal.SecurityIdentifier
+  href: System.Security.Principal.SecurityIdentifier.yml
+  name: IsWellKnown(WellKnownSidType)
+  fullName: System.Security.Principal.SecurityIdentifier.IsWellKnown(System.Security.Principal.WellKnownSidType)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/SID.cs
+    startLine: 888
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Returns a value that indicates whether the @'System.Security.Principal.SecurityIdentifier' object matches the specified well known security identifier (SID) type.
+  syntax:
+    content: public bool IsWellKnown(WellKnownSidType type)
+    content.vb: Public Function IsWellKnown(type As WellKnownSidType) As Boolean
+    parameters:
+    - id: type
+      type: System.Security.Principal.WellKnownSidType
+      description: A value to compare with the @'System.Security.Principal.SecurityIdentifier' object.
+    return:
+      type: System.Boolean
+- uid: System.Security.Principal.SecurityIdentifier.GetBinaryForm(System.Byte[],System.Int32)
+  id: GetBinaryForm(System.Byte[],System.Int32)
+  parent: System.Security.Principal.SecurityIdentifier
+  href: System.Security.Principal.SecurityIdentifier.yml
+  name: GetBinaryForm(Byte[], Int32)
+  name.vb: GetBinaryForm(Byte(), Int32)
+  fullName: System.Security.Principal.SecurityIdentifier.GetBinaryForm(System.Byte[], System.Int32)
+  fullName.vb: System.Security.Principal.SecurityIdentifier.GetBinaryForm(System.Byte(), System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/SID.cs
+    startLine: 893
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Copies the binary representation of the specified security identifier (SID) represented by the @'System.Security.Principal.SecurityIdentifier' class to a byte array.
+  syntax:
+    content: public void GetBinaryForm(byte[] binaryForm, int offset)
+    content.vb: Public Sub GetBinaryForm(binaryForm As Byte(), offset As Integer)
+    parameters:
+    - id: binaryForm
+      type: System.Byte[]
+      description: The byte array to receive the copied SID.
+    - id: offset
+      type: System.Int32
+      description: The byte offset to use as the starting index in *binaryForm*.
+- uid: System.Security.Principal.SecurityIdentifier.IsEqualDomainSid(System.Security.Principal.SecurityIdentifier)
+  id: IsEqualDomainSid(System.Security.Principal.SecurityIdentifier)
+  parent: System.Security.Principal.SecurityIdentifier
+  href: System.Security.Principal.SecurityIdentifier.yml
+  name: IsEqualDomainSid(SecurityIdentifier)
+  fullName: System.Security.Principal.SecurityIdentifier.IsEqualDomainSid(System.Security.Principal.SecurityIdentifier)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/SID.cs
+    startLine: 904
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Returns a value that indicates whether the security identifier (SID) represented by this @'System.Security.Principal.SecurityIdentifier' object is from the same domain as the specified SID.
+  syntax:
+    content: public bool IsEqualDomainSid(SecurityIdentifier sid)
+    content.vb: Public Function IsEqualDomainSid(sid As SecurityIdentifier) As Boolean
+    parameters:
+    - id: sid
+      type: System.Security.Principal.SecurityIdentifier
+      description: The SID to compare with this @'System.Security.Principal.SecurityIdentifier' object.
+    return:
+      type: System.Boolean
+references:
+- uid: System.Security.Principal
+  isExternal: false
+  name: System.Security.Principal
+  fullName: System.Security.Principal
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Security.Principal.IdentityReference
+  parent: System.Security.Principal
+  isExternal: false
+  href: System.Security.Principal.IdentityReference.yml
+  name: IdentityReference
+  fullName: System.Security.Principal.IdentityReference
+  type: Class
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  name.vb: Byte()
+  fullName: System.Byte[]
+  fullName.vb: System.Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.IntPtr
+  parent: System
+  isExternal: true
+  name: IntPtr
+  fullName: System.IntPtr
+- uid: System.Security.Principal.WellKnownSidType
+  parent: System.Security.Principal
+  isExternal: false
+  href: System.Security.Principal.WellKnownSidType.yml
+  name: WellKnownSidType
+  fullName: System.Security.Principal.WellKnownSidType
+  type: Enum
+- uid: System.Security.Principal.SecurityIdentifier
+  parent: System.Security.Principal
+  isExternal: false
+  href: System.Security.Principal.SecurityIdentifier.yml
+  name: SecurityIdentifier
+  fullName: System.Security.Principal.SecurityIdentifier
+  type: Class
+- uid: System.Security.Principal.IdentityReference.Equals(System.Object)
+  parent: System.Security.Principal.IdentityReference
+  isExternal: true
+  href: System.Security.Principal.IdentityReference.yml
+  name: Equals(Object)
+  fullName: System.Security.Principal.IdentityReference.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Security.Principal.IdentityReference.Equals(System.Object)
+    name: Equals
+    fullName: System.Security.Principal.IdentityReference.Equals
+    href: System.Security.Principal.IdentityReference.yml
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Principal.IdentityReference.Equals(System.Object)
+    name: Equals
+    fullName: System.Security.Principal.IdentityReference.Equals
+    href: System.Security.Principal.IdentityReference.yml
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Security.Principal.IdentityReference.GetHashCode
+  parent: System.Security.Principal.IdentityReference
+  isExternal: false
+  href: System.Security.Principal.IdentityReference.yml
+  name: GetHashCode()
+  fullName: System.Security.Principal.IdentityReference.GetHashCode()
+  spec.csharp:
+  - uid: System.Security.Principal.IdentityReference.GetHashCode
+    name: GetHashCode
+    fullName: System.Security.Principal.IdentityReference.GetHashCode
+    href: System.Security.Principal.IdentityReference.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Principal.IdentityReference.GetHashCode
+    name: GetHashCode
+    fullName: System.Security.Principal.IdentityReference.GetHashCode
+    href: System.Security.Principal.IdentityReference.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Security.Principal.IdentityReference.ToString
+  parent: System.Security.Principal.IdentityReference
+  isExternal: false
+  href: System.Security.Principal.IdentityReference.yml
+  name: ToString()
+  fullName: System.Security.Principal.IdentityReference.ToString()
+  spec.csharp:
+  - uid: System.Security.Principal.IdentityReference.ToString
+    name: ToString
+    fullName: System.Security.Principal.IdentityReference.ToString
+    href: System.Security.Principal.IdentityReference.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Principal.IdentityReference.ToString
+    name: ToString
+    fullName: System.Security.Principal.IdentityReference.ToString
+    href: System.Security.Principal.IdentityReference.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Security.Principal.IdentityReference.Value
+  parent: System.Security.Principal.IdentityReference
+  isExternal: false
+  href: System.Security.Principal.IdentityReference.yml
+  name: Value
+  fullName: System.Security.Principal.IdentityReference.Value
+- uid: System.Security.Principal.IdentityReference.IsValidTargetType(System.Type)
+  parent: System.Security.Principal.IdentityReference
+  isExternal: true
+  href: System.Security.Principal.IdentityReference.yml
+  name: IsValidTargetType(Type)
+  fullName: System.Security.Principal.IdentityReference.IsValidTargetType(System.Type)
+  spec.csharp:
+  - uid: System.Security.Principal.IdentityReference.IsValidTargetType(System.Type)
+    name: IsValidTargetType
+    fullName: System.Security.Principal.IdentityReference.IsValidTargetType
+    href: System.Security.Principal.IdentityReference.yml
+  - name: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Principal.IdentityReference.IsValidTargetType(System.Type)
+    name: IsValidTargetType
+    fullName: System.Security.Principal.IdentityReference.IsValidTargetType
+    href: System.Security.Principal.IdentityReference.yml
+  - name: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  fullName: System.Type
+- uid: System.Security.Principal.IdentityReference.Translate(System.Type)
+  parent: System.Security.Principal.IdentityReference
+  isExternal: true
+  href: System.Security.Principal.IdentityReference.yml
+  name: Translate(Type)
+  fullName: System.Security.Principal.IdentityReference.Translate(System.Type)
+  spec.csharp:
+  - uid: System.Security.Principal.IdentityReference.Translate(System.Type)
+    name: Translate
+    fullName: System.Security.Principal.IdentityReference.Translate
+    href: System.Security.Principal.IdentityReference.yml
+  - name: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Principal.IdentityReference.Translate(System.Type)
+    name: Translate
+    fullName: System.Security.Principal.IdentityReference.Translate
+    href: System.Security.Principal.IdentityReference.yml
+  - name: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    fullName: )

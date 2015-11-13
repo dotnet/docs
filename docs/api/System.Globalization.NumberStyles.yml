@@ -1,0 +1,334 @@
+items:
+- uid: System.Globalization.NumberStyles
+  id: NumberStyles
+  parent: System.Globalization
+  children:
+  - System.Globalization.NumberStyles.AllowCurrencySymbol
+  - System.Globalization.NumberStyles.AllowDecimalPoint
+  - System.Globalization.NumberStyles.AllowExponent
+  - System.Globalization.NumberStyles.AllowHexSpecifier
+  - System.Globalization.NumberStyles.AllowLeadingSign
+  - System.Globalization.NumberStyles.AllowLeadingWhite
+  - System.Globalization.NumberStyles.AllowParentheses
+  - System.Globalization.NumberStyles.AllowThousands
+  - System.Globalization.NumberStyles.AllowTrailingSign
+  - System.Globalization.NumberStyles.AllowTrailingWhite
+  - System.Globalization.NumberStyles.Any
+  - System.Globalization.NumberStyles.Currency
+  - System.Globalization.NumberStyles.Float
+  - System.Globalization.NumberStyles.HexNumber
+  - System.Globalization.NumberStyles.Integer
+  - System.Globalization.NumberStyles.None
+  - System.Globalization.NumberStyles.Number
+  href: System.Globalization.NumberStyles.yml
+  name: NumberStyles
+  fullName: System.Globalization.NumberStyles
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Globalization/NumberStyles.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Globalization/NumberStyles.cs
+    startLine: 15
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Determines the styles permitted in numeric string arguments that are passed to the Parse and TryParse methods of the integral and floating-point numeric types.
+  syntax:
+    content: public enum NumberStyles
+    content.vb: Public Enum NumberStyles
+- uid: System.Globalization.NumberStyles.None
+  id: None
+  parent: System.Globalization.NumberStyles
+  href: System.Globalization.NumberStyles.yml
+  name: None
+  fullName: System.Globalization.NumberStyles.None
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/NumberStyles.cs
+    startLine: 23
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Indicates that no style elements, such as leading or trailing white space, thousands separators, or a decimal separator, can be present in the parsed string. The string to be parsed must consist of integral decimal digits only.
+  syntax:
+    content: None = 0
+- uid: System.Globalization.NumberStyles.AllowLeadingWhite
+  id: AllowLeadingWhite
+  parent: System.Globalization.NumberStyles
+  href: System.Globalization.NumberStyles.yml
+  name: AllowLeadingWhite
+  fullName: System.Globalization.NumberStyles.AllowLeadingWhite
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/NumberStyles.cs
+    startLine: 25
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Indicates that leading white-space characters can be present in the parsed string. Valid white-space characters have the Unicode values U+0009, U+000A, U+000B, U+000C, U+000D, and U+0020. Note that this is a subset of the characters for which the @'System.Char.IsWhiteSpace(System.Char)' method returns true.
+  syntax:
+    content: AllowLeadingWhite = 1
+- uid: System.Globalization.NumberStyles.AllowTrailingWhite
+  id: AllowTrailingWhite
+  parent: System.Globalization.NumberStyles
+  href: System.Globalization.NumberStyles.yml
+  name: AllowTrailingWhite
+  fullName: System.Globalization.NumberStyles.AllowTrailingWhite
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/NumberStyles.cs
+    startLine: 27
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Indicates that trailing white-space characters can be present in the parsed string. Valid white-space characters have the Unicode values U+0009, U+000A, U+000B, U+000C, U+000D, and U+0020. Note that this is a subset of the characters for which the @'System.Char.IsWhiteSpace(System.Char)' method returns true.
+  syntax:
+    content: AllowTrailingWhite = 2
+- uid: System.Globalization.NumberStyles.AllowLeadingSign
+  id: AllowLeadingSign
+  parent: System.Globalization.NumberStyles
+  href: System.Globalization.NumberStyles.yml
+  name: AllowLeadingSign
+  fullName: System.Globalization.NumberStyles.AllowLeadingSign
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/NumberStyles.cs
+    startLine: 29
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Indicates that the numeric string can have a leading sign. Valid leading sign characters are determined by the @'System.Globalization.NumberFormatInfo.PositiveSign' and @'System.Globalization.NumberFormatInfo.NegativeSign' properties.
+  syntax:
+    content: AllowLeadingSign = 4
+- uid: System.Globalization.NumberStyles.AllowTrailingSign
+  id: AllowTrailingSign
+  parent: System.Globalization.NumberStyles
+  href: System.Globalization.NumberStyles.yml
+  name: AllowTrailingSign
+  fullName: System.Globalization.NumberStyles.AllowTrailingSign
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/NumberStyles.cs
+    startLine: 32
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Indicates that the numeric string can have a trailing sign. Valid trailing sign characters are determined by the @'System.Globalization.NumberFormatInfo.PositiveSign' and @'System.Globalization.NumberFormatInfo.NegativeSign' properties.
+  syntax:
+    content: AllowTrailingSign = 8
+- uid: System.Globalization.NumberStyles.AllowParentheses
+  id: AllowParentheses
+  parent: System.Globalization.NumberStyles
+  href: System.Globalization.NumberStyles.yml
+  name: AllowParentheses
+  fullName: System.Globalization.NumberStyles.AllowParentheses
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/NumberStyles.cs
+    startLine: 34
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Indicates that the numeric string can have one pair of parentheses enclosing the number. The parentheses indicate that the string to be parsed represents a negative number.
+  syntax:
+    content: AllowParentheses = 16
+- uid: System.Globalization.NumberStyles.AllowDecimalPoint
+  id: AllowDecimalPoint
+  parent: System.Globalization.NumberStyles
+  href: System.Globalization.NumberStyles.yml
+  name: AllowDecimalPoint
+  fullName: System.Globalization.NumberStyles.AllowDecimalPoint
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/NumberStyles.cs
+    startLine: 36
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Indicates that the numeric string can have a decimal point. If the @'System.Globalization.NumberStyles' value includes the @'System.Globalization.NumberStyles.AllowCurrencySymbol' flag and the parsed string includes a currency symbol, the decimal separator character is determined by the @'System.Globalization.NumberFormatInfo.CurrencyDecimalSeparator' property. Otherwise, the decimal separator character is determined by the @'System.Globalization.NumberFormatInfo.NumberDecimalSeparator' property.
+  syntax:
+    content: AllowDecimalPoint = 32
+- uid: System.Globalization.NumberStyles.AllowThousands
+  id: AllowThousands
+  parent: System.Globalization.NumberStyles
+  href: System.Globalization.NumberStyles.yml
+  name: AllowThousands
+  fullName: System.Globalization.NumberStyles.AllowThousands
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/NumberStyles.cs
+    startLine: 38
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Indicates that the numeric string can have group separators, such as symbols that separate hundreds from thousands. If the @'System.Globalization.NumberStyles' value includes the @'System.Globalization.NumberStyles.AllowCurrencySymbol' flag and the string to be parsed includes a currency symbol, the valid group separator character is determined by the @'System.Globalization.NumberFormatInfo.CurrencyGroupSeparator' property,  and the number of digits in each group is determined by the @'System.Globalization.NumberFormatInfo.CurrencyGroupSizes' property. Otherwise, the valid group separator character is determined by the @'System.Globalization.NumberFormatInfo.NumberGroupSeparator' property, and the number of digits in each group is determined by the @'System.Globalization.NumberFormatInfo.NumberGroupSizes' property.
+  syntax:
+    content: AllowThousands = 64
+- uid: System.Globalization.NumberStyles.AllowExponent
+  id: AllowExponent
+  parent: System.Globalization.NumberStyles
+  href: System.Globalization.NumberStyles.yml
+  name: AllowExponent
+  fullName: System.Globalization.NumberStyles.AllowExponent
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/NumberStyles.cs
+    startLine: 40
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Indicates that the numeric string can be in exponential notation. The @'System.Globalization.NumberStyles.AllowExponent' flag allows the parsed string to contain an exponent that begins with the "E" or "e" character and that is followed by an optional positive or negative sign and an integer. In other words, it successfully parses strings in the form nnnExx, nnnE+xx, and nnnE-xx. It does not allow a decimal separator or sign in the significand or mantissa; to allow these elements in the string to be parsed, use the @'System.Globalization.NumberStyles.AllowDecimalPoint' and @'System.Globalization.NumberStyles.AllowLeadingSign' flags, or use a composite style that includes these individual flags.
+  syntax:
+    content: AllowExponent = 128
+- uid: System.Globalization.NumberStyles.AllowCurrencySymbol
+  id: AllowCurrencySymbol
+  parent: System.Globalization.NumberStyles
+  href: System.Globalization.NumberStyles.yml
+  name: AllowCurrencySymbol
+  fullName: System.Globalization.NumberStyles.AllowCurrencySymbol
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/NumberStyles.cs
+    startLine: 42
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Indicates that the numeric string can contain a currency symbol. Valid currency symbols are determined by the @'System.Globalization.NumberFormatInfo.CurrencySymbol' property.
+  syntax:
+    content: AllowCurrencySymbol = 256
+- uid: System.Globalization.NumberStyles.AllowHexSpecifier
+  id: AllowHexSpecifier
+  parent: System.Globalization.NumberStyles
+  href: System.Globalization.NumberStyles.yml
+  name: AllowHexSpecifier
+  fullName: System.Globalization.NumberStyles.AllowHexSpecifier
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/NumberStyles.cs
+    startLine: 44
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Indicates that the numeric string represents a hexadecimal value. Valid hexadecimal values include the numeric digits 0-9 and the hexadecimal digits A-F and a-f. Strings that are parsed using this style cannot be prefixed with "0x" or "&amp;h". A string that is parsed with the @'System.Globalization.NumberStyles.AllowHexSpecifier' style will always be interpreted as a hexadecimal value. The only flags that can be combined with @'System.Globalization.NumberStyles.AllowHexSpecifier' are @'System.Globalization.NumberStyles.AllowLeadingWhite' and @'System.Globalization.NumberStyles.AllowTrailingWhite'. The @'System.Globalization.NumberStyles' enumeration includes a composite style, @'System.Globalization.NumberStyles.HexNumber', that consists of these three flags.
+  syntax:
+    content: AllowHexSpecifier = 512
+- uid: System.Globalization.NumberStyles.Integer
+  id: Integer
+  parent: System.Globalization.NumberStyles
+  href: System.Globalization.NumberStyles.yml
+  name: Integer
+  fullName: System.Globalization.NumberStyles.Integer
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/NumberStyles.cs
+    startLine: 48
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Indicates that the @'System.Globalization.NumberStyles.AllowLeadingWhite', @'System.Globalization.NumberStyles.AllowTrailingWhite', and @'System.Globalization.NumberStyles.AllowLeadingSign' styles are used. This is a composite number style.
+  syntax:
+    content: Integer = 7
+- uid: System.Globalization.NumberStyles.HexNumber
+  id: HexNumber
+  parent: System.Globalization.NumberStyles
+  href: System.Globalization.NumberStyles.yml
+  name: HexNumber
+  fullName: System.Globalization.NumberStyles.HexNumber
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/NumberStyles.cs
+    startLine: 50
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Indicates that the @'System.Globalization.NumberStyles.AllowLeadingWhite', @'System.Globalization.NumberStyles.AllowTrailingWhite', and @'System.Globalization.NumberStyles.AllowHexSpecifier' styles are used. This is a composite number style.
+  syntax:
+    content: HexNumber = 515
+- uid: System.Globalization.NumberStyles.Number
+  id: Number
+  parent: System.Globalization.NumberStyles
+  href: System.Globalization.NumberStyles.yml
+  name: Number
+  fullName: System.Globalization.NumberStyles.Number
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/NumberStyles.cs
+    startLine: 52
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Indicates that the @'System.Globalization.NumberStyles.AllowLeadingWhite', @'System.Globalization.NumberStyles.AllowTrailingWhite', @'System.Globalization.NumberStyles.AllowLeadingSign', @'System.Globalization.NumberStyles.AllowTrailingSign', @'System.Globalization.NumberStyles.AllowDecimalPoint', and @'System.Globalization.NumberStyles.AllowThousands' styles are used. This is a composite number style.
+  syntax:
+    content: Number = 111
+- uid: System.Globalization.NumberStyles.Float
+  id: Float
+  parent: System.Globalization.NumberStyles
+  href: System.Globalization.NumberStyles.yml
+  name: Float
+  fullName: System.Globalization.NumberStyles.Float
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/NumberStyles.cs
+    startLine: 55
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Indicates that the @'System.Globalization.NumberStyles.AllowLeadingWhite', @'System.Globalization.NumberStyles.AllowTrailingWhite', @'System.Globalization.NumberStyles.AllowLeadingSign', @'System.Globalization.NumberStyles.AllowDecimalPoint', and @'System.Globalization.NumberStyles.AllowExponent' styles are used. This is a composite number style.
+  syntax:
+    content: Float = 167
+- uid: System.Globalization.NumberStyles.Currency
+  id: Currency
+  parent: System.Globalization.NumberStyles
+  href: System.Globalization.NumberStyles.yml
+  name: Currency
+  fullName: System.Globalization.NumberStyles.Currency
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/NumberStyles.cs
+    startLine: 58
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Indicates that all styles except @'System.Globalization.NumberStyles.AllowExponent' and @'System.Globalization.NumberStyles.AllowHexSpecifier' are used. This is a composite number style.
+  syntax:
+    content: Currency = 383
+- uid: System.Globalization.NumberStyles.Any
+  id: Any
+  parent: System.Globalization.NumberStyles
+  href: System.Globalization.NumberStyles.yml
+  name: Any
+  fullName: System.Globalization.NumberStyles.Any
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/NumberStyles.cs
+    startLine: 61
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Indicates that all styles except @'System.Globalization.NumberStyles.AllowHexSpecifier' are used. This is a composite number style.
+  syntax:
+    content: Any = 511
+references:
+- uid: System.Globalization
+  isExternal: false
+  name: System.Globalization
+  fullName: System.Globalization

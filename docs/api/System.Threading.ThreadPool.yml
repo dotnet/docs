@@ -1,0 +1,956 @@
+items:
+- uid: System.Threading.ThreadPool
+  id: ThreadPool
+  parent: System.Threading
+  children:
+  - System.Threading.ThreadPool.BindHandle(System.Runtime.InteropServices.SafeHandle)
+  - System.Threading.ThreadPool.GetAvailableThreads(System.Int32@,System.Int32@)
+  - System.Threading.ThreadPool.GetMaxThreads(System.Int32@,System.Int32@)
+  - System.Threading.ThreadPool.GetMinThreads(System.Int32@,System.Int32@)
+  - System.Threading.ThreadPool.QueueUserWorkItem(System.Threading.WaitCallback)
+  - System.Threading.ThreadPool.QueueUserWorkItem(System.Threading.WaitCallback,System.Object)
+  - System.Threading.ThreadPool.RegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.Int32,System.Boolean)
+  - System.Threading.ThreadPool.RegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.Int64,System.Boolean)
+  - System.Threading.ThreadPool.RegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.TimeSpan,System.Boolean)
+  - System.Threading.ThreadPool.RegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.UInt32,System.Boolean)
+  - System.Threading.ThreadPool.SetMaxThreads(System.Int32,System.Int32)
+  - System.Threading.ThreadPool.SetMinThreads(System.Int32,System.Int32)
+  - System.Threading.ThreadPool.UnsafeQueueNativeOverlapped(System.Threading.NativeOverlapped*)
+  - System.Threading.ThreadPool.UnsafeQueueUserWorkItem(System.Threading.WaitCallback,System.Object)
+  - System.Threading.ThreadPool.UnsafeRegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.Int32,System.Boolean)
+  - System.Threading.ThreadPool.UnsafeRegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.Int64,System.Boolean)
+  - System.Threading.ThreadPool.UnsafeRegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.TimeSpan,System.Boolean)
+  - System.Threading.ThreadPool.UnsafeRegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.UInt32,System.Boolean)
+  href: System.Threading.ThreadPool.yml
+  name: ThreadPool
+  fullName: System.Threading.ThreadPool
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Threading/ThreadPool.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Threading/ThreadPool.cs
+    startLine: 1343
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Provides a pool of threads that can be used to execute tasks, post work items, process asynchronous I/O, wait on behalf of other threads, and process timers.
+  syntax:
+    content: public class ThreadPool
+    content.vb: Public Class ThreadPool
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Threading.ThreadPool.SetMaxThreads(System.Int32,System.Int32)
+  id: SetMaxThreads(System.Int32,System.Int32)
+  parent: System.Threading.ThreadPool
+  href: System.Threading.ThreadPool.yml
+  name: SetMaxThreads(Int32, Int32)
+  fullName: System.Threading.ThreadPool.SetMaxThreads(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadPool.cs
+    startLine: 1348
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Sets the number of requests to the thread pool that can be active concurrently. All requests above that number remain queued until thread pool threads become available.
+  syntax:
+    content: public static bool SetMaxThreads(int workerThreads, int completionPortThreads)
+    content.vb: Public Shared Function SetMaxThreads(workerThreads As Integer, completionPortThreads As Integer) As Boolean
+    parameters:
+    - id: workerThreads
+      type: System.Int32
+      description: The maximum number of worker threads in the thread pool.
+    - id: completionPortThreads
+      type: System.Int32
+      description: The maximum number of asynchronous I/O threads in the thread pool.
+    return:
+      type: System.Boolean
+- uid: System.Threading.ThreadPool.GetMaxThreads(System.Int32@,System.Int32@)
+  id: GetMaxThreads(System.Int32@,System.Int32@)
+  parent: System.Threading.ThreadPool
+  href: System.Threading.ThreadPool.yml
+  name: GetMaxThreads(out Int32, out Int32)
+  name.vb: GetMaxThreads(ByRef Int32, ByRef Int32)
+  fullName: System.Threading.ThreadPool.GetMaxThreads(out System.Int32, out System.Int32)
+  fullName.vb: System.Threading.ThreadPool.GetMaxThreads(ByRef System.Int32, ByRef System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadPool.cs
+    startLine: 1360
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Retrieves the number of requests to the thread pool that can be active concurrently. All requests above that number remain queued until thread pool threads become available.
+  syntax:
+    content: public static void GetMaxThreads(out int workerThreads, out int completionPortThreads)
+    content.vb: Public Shared Sub GetMaxThreads(ByRef workerThreads As Integer, ByRef completionPortThreads As Integer)
+    parameters:
+    - id: workerThreads
+      type: System.Int32
+      description: The maximum number of worker threads in the thread pool.
+    - id: completionPortThreads
+      type: System.Int32
+      description: The maximum number of asynchronous I/O threads in the thread pool.
+- uid: System.Threading.ThreadPool.SetMinThreads(System.Int32,System.Int32)
+  id: SetMinThreads(System.Int32,System.Int32)
+  parent: System.Threading.ThreadPool
+  href: System.Threading.ThreadPool.yml
+  name: SetMinThreads(Int32, Int32)
+  fullName: System.Threading.ThreadPool.SetMinThreads(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadPool.cs
+    startLine: 1367
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Sets the minimum number of threads the thread pool creates on demand, as new requests are made, before switching to an algorithm for managing thread creation and destruction.
+  syntax:
+    content: public static bool SetMinThreads(int workerThreads, int completionPortThreads)
+    content.vb: Public Shared Function SetMinThreads(workerThreads As Integer, completionPortThreads As Integer) As Boolean
+    parameters:
+    - id: workerThreads
+      type: System.Int32
+      description: The minimum number of worker threads that the thread pool creates on demand.
+    - id: completionPortThreads
+      type: System.Int32
+      description: The minimum number of asynchronous I/O threads that the thread pool creates on demand.
+    return:
+      type: System.Boolean
+- uid: System.Threading.ThreadPool.GetMinThreads(System.Int32@,System.Int32@)
+  id: GetMinThreads(System.Int32@,System.Int32@)
+  parent: System.Threading.ThreadPool
+  href: System.Threading.ThreadPool.yml
+  name: GetMinThreads(out Int32, out Int32)
+  name.vb: GetMinThreads(ByRef Int32, ByRef Int32)
+  fullName: System.Threading.ThreadPool.GetMinThreads(out System.Int32, out System.Int32)
+  fullName.vb: System.Threading.ThreadPool.GetMinThreads(ByRef System.Int32, ByRef System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadPool.cs
+    startLine: 1379
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Retrieves the minimum number of threads the thread pool creates on demand, as new requests are made, before switching to an algorithm for managing thread creation and destruction.
+  syntax:
+    content: public static void GetMinThreads(out int workerThreads, out int completionPortThreads)
+    content.vb: Public Shared Sub GetMinThreads(ByRef workerThreads As Integer, ByRef completionPortThreads As Integer)
+    parameters:
+    - id: workerThreads
+      type: System.Int32
+      description: When this method returns, contains the minimum number of worker threads that the thread pool creates on demand.
+    - id: completionPortThreads
+      type: System.Int32
+      description: When this method returns, contains the minimum number of asynchronous I/O threads that the thread pool creates on demand.
+- uid: System.Threading.ThreadPool.GetAvailableThreads(System.Int32@,System.Int32@)
+  id: GetAvailableThreads(System.Int32@,System.Int32@)
+  parent: System.Threading.ThreadPool
+  href: System.Threading.ThreadPool.yml
+  name: GetAvailableThreads(out Int32, out Int32)
+  name.vb: GetAvailableThreads(ByRef Int32, ByRef Int32)
+  fullName: System.Threading.ThreadPool.GetAvailableThreads(out System.Int32, out System.Int32)
+  fullName.vb: System.Threading.ThreadPool.GetAvailableThreads(ByRef System.Int32, ByRef System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadPool.cs
+    startLine: 1385
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Retrieves the difference between the maximum number of thread pool threads returned by the @'System.Threading.ThreadPool.GetMaxThreads(System.Int32@,System.Int32@)' method, and the number currently active.
+  syntax:
+    content: public static void GetAvailableThreads(out int workerThreads, out int completionPortThreads)
+    content.vb: Public Shared Sub GetAvailableThreads(ByRef workerThreads As Integer, ByRef completionPortThreads As Integer)
+    parameters:
+    - id: workerThreads
+      type: System.Int32
+      description: The number of available worker threads.
+    - id: completionPortThreads
+      type: System.Int32
+      description: The number of available asynchronous I/O threads.
+- uid: System.Threading.ThreadPool.RegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.UInt32,System.Boolean)
+  id: RegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.UInt32,System.Boolean)
+  parent: System.Threading.ThreadPool
+  href: System.Threading.ThreadPool.yml
+  name: RegisterWaitForSingleObject(WaitHandle, WaitOrTimerCallback, Object, UInt32, Boolean)
+  fullName: System.Threading.ThreadPool.RegisterWaitForSingleObject(System.Threading.WaitHandle, System.Threading.WaitOrTimerCallback, System.Object, System.UInt32, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadPool.cs
+    startLine: 1391
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Registers a delegate to wait for a @'System.Threading.WaitHandle', specifying a 32-bit unsigned integer for the time-out in milliseconds.
+  syntax:
+    content: public static RegisteredWaitHandle RegisterWaitForSingleObject(WaitHandle waitObject, WaitOrTimerCallback callBack, object state, uint millisecondsTimeOutInterval, bool executeOnlyOnce)
+    content.vb: Public Shared Function RegisterWaitForSingleObject(waitObject As WaitHandle, callBack As WaitOrTimerCallback, state As Object, millisecondsTimeOutInterval As UInteger, executeOnlyOnce As Boolean) As RegisteredWaitHandle
+    parameters:
+    - id: waitObject
+      type: System.Threading.WaitHandle
+      description: The @'System.Threading.WaitHandle' to register. Use a @'System.Threading.WaitHandle' other than @'System.Threading.Mutex'.
+    - id: callBack
+      type: System.Threading.WaitOrTimerCallback
+      description: The @'System.Threading.WaitOrTimerCallback' delegate to call when the *waitObject* parameter is signaled.
+    - id: state
+      type: System.Object
+      description: The object passed to the delegate.
+    - id: millisecondsTimeOutInterval
+      type: System.UInt32
+      description: The time-out in milliseconds. If the *millisecondsTimeOutInterval* parameter is 0 (zero), the function tests the object's state and returns immediately. If *millisecondsTimeOutInterval* is -1, the function's time-out interval never elapses.
+    - id: executeOnlyOnce
+      type: System.Boolean
+      description: true to indicate that the thread will no longer wait on the *waitObject* parameter after the delegate has been called; false to indicate that the timer is reset every time the wait operation completes until the wait is unregistered.
+    return:
+      type: System.Threading.RegisteredWaitHandle
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: The *millisecondsTimeOutInterval* parameter is less than -1.
+- uid: System.Threading.ThreadPool.UnsafeRegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.UInt32,System.Boolean)
+  id: UnsafeRegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.UInt32,System.Boolean)
+  parent: System.Threading.ThreadPool
+  href: System.Threading.ThreadPool.yml
+  name: UnsafeRegisterWaitForSingleObject(WaitHandle, WaitOrTimerCallback, Object, UInt32, Boolean)
+  fullName: System.Threading.ThreadPool.UnsafeRegisterWaitForSingleObject(System.Threading.WaitHandle, System.Threading.WaitOrTimerCallback, System.Object, System.UInt32, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadPool.cs
+    startLine: 1406
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Registers a delegate to wait for a @'System.Threading.WaitHandle', specifying a 32-bit unsigned integer for the time-out in milliseconds. This method does not propagate the calling stack to the worker thread.
+  syntax:
+    content: public static RegisteredWaitHandle UnsafeRegisterWaitForSingleObject(WaitHandle waitObject, WaitOrTimerCallback callBack, object state, uint millisecondsTimeOutInterval, bool executeOnlyOnce)
+    content.vb: Public Shared Function UnsafeRegisterWaitForSingleObject(waitObject As WaitHandle, callBack As WaitOrTimerCallback, state As Object, millisecondsTimeOutInterval As UInteger, executeOnlyOnce As Boolean) As RegisteredWaitHandle
+    parameters:
+    - id: waitObject
+      type: System.Threading.WaitHandle
+      description: The @'System.Threading.WaitHandle' to register. Use a @'System.Threading.WaitHandle' other than @'System.Threading.Mutex'.
+    - id: callBack
+      type: System.Threading.WaitOrTimerCallback
+      description: The delegate to call when the *waitObject* parameter is signaled.
+    - id: state
+      type: System.Object
+      description: The object that is passed to the delegate.
+    - id: millisecondsTimeOutInterval
+      type: System.UInt32
+      description: The time-out in milliseconds. If the *millisecondsTimeOutInterval* parameter is 0 (zero), the function tests the object's state and returns immediately. If *millisecondsTimeOutInterval* is -1, the function's time-out interval never elapses.
+    - id: executeOnlyOnce
+      type: System.Boolean
+      description: true to indicate that the thread will no longer wait on the *waitObject* parameter after the delegate has been called; false to indicate that the timer is reset every time the wait operation completes until the wait is unregistered.
+    return:
+      type: System.Threading.RegisteredWaitHandle
+  exceptions:
+  - type: System.Security.SecurityException
+    description: The caller does not have the required permission.
+- uid: System.Threading.ThreadPool.RegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.Int32,System.Boolean)
+  id: RegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.Int32,System.Boolean)
+  parent: System.Threading.ThreadPool
+  href: System.Threading.ThreadPool.yml
+  name: RegisterWaitForSingleObject(WaitHandle, WaitOrTimerCallback, Object, Int32, Boolean)
+  fullName: System.Threading.ThreadPool.RegisterWaitForSingleObject(System.Threading.WaitHandle, System.Threading.WaitOrTimerCallback, System.Object, System.Int32, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadPool.cs
+    startLine: 1465
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Registers a delegate to wait for a @'System.Threading.WaitHandle', specifying a 32-bit signed integer for the time-out in milliseconds.
+  syntax:
+    content: public static RegisteredWaitHandle RegisterWaitForSingleObject(WaitHandle waitObject, WaitOrTimerCallback callBack, object state, int millisecondsTimeOutInterval, bool executeOnlyOnce)
+    content.vb: Public Shared Function RegisterWaitForSingleObject(waitObject As WaitHandle, callBack As WaitOrTimerCallback, state As Object, millisecondsTimeOutInterval As Integer, executeOnlyOnce As Boolean) As RegisteredWaitHandle
+    parameters:
+    - id: waitObject
+      type: System.Threading.WaitHandle
+      description: The @'System.Threading.WaitHandle' to register. Use a @'System.Threading.WaitHandle' other than @'System.Threading.Mutex'.
+    - id: callBack
+      type: System.Threading.WaitOrTimerCallback
+      description: The @'System.Threading.WaitOrTimerCallback' delegate to call when the *waitObject* parameter is signaled.
+    - id: state
+      type: System.Object
+      description: The object that is passed to the delegate.
+    - id: millisecondsTimeOutInterval
+      type: System.Int32
+      description: The time-out in milliseconds. If the *millisecondsTimeOutInterval* parameter is 0 (zero), the function tests the object's state and returns immediately. If *millisecondsTimeOutInterval* is -1, the function's time-out interval never elapses.
+    - id: executeOnlyOnce
+      type: System.Boolean
+      description: true to indicate that the thread will no longer wait on the *waitObject* parameter after the delegate has been called; false to indicate that the timer is reset every time the wait operation completes until the wait is unregistered.
+    return:
+      type: System.Threading.RegisteredWaitHandle
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: The *millisecondsTimeOutInterval* parameter is less than -1.
+- uid: System.Threading.ThreadPool.UnsafeRegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.Int32,System.Boolean)
+  id: UnsafeRegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.Int32,System.Boolean)
+  parent: System.Threading.ThreadPool
+  href: System.Threading.ThreadPool.yml
+  name: UnsafeRegisterWaitForSingleObject(WaitHandle, WaitOrTimerCallback, Object, Int32, Boolean)
+  fullName: System.Threading.ThreadPool.UnsafeRegisterWaitForSingleObject(System.Threading.WaitHandle, System.Threading.WaitOrTimerCallback, System.Object, System.Int32, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadPool.cs
+    startLine: 1482
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Registers a delegate to wait for a @'System.Threading.WaitHandle', using a 32-bit signed integer for the time-out in milliseconds. This method does not propagate the calling stack to the worker thread.
+  syntax:
+    content: public static RegisteredWaitHandle UnsafeRegisterWaitForSingleObject(WaitHandle waitObject, WaitOrTimerCallback callBack, object state, int millisecondsTimeOutInterval, bool executeOnlyOnce)
+    content.vb: Public Shared Function UnsafeRegisterWaitForSingleObject(waitObject As WaitHandle, callBack As WaitOrTimerCallback, state As Object, millisecondsTimeOutInterval As Integer, executeOnlyOnce As Boolean) As RegisteredWaitHandle
+    parameters:
+    - id: waitObject
+      type: System.Threading.WaitHandle
+      description: The @'System.Threading.WaitHandle' to register. Use a @'System.Threading.WaitHandle' other than @'System.Threading.Mutex'.
+    - id: callBack
+      type: System.Threading.WaitOrTimerCallback
+      description: The delegate to call when the *waitObject* parameter is signaled.
+    - id: state
+      type: System.Object
+      description: The object that is passed to the delegate.
+    - id: millisecondsTimeOutInterval
+      type: System.Int32
+      description: The time-out in milliseconds. If the *millisecondsTimeOutInterval* parameter is 0 (zero), the function tests the object's state and returns immediately. If *millisecondsTimeOutInterval* is -1, the function's time-out interval never elapses.
+    - id: executeOnlyOnce
+      type: System.Boolean
+      description: true to indicate that the thread will no longer wait on the *waitObject* parameter after the delegate has been called; false to indicate that the timer is reset every time the wait operation completes until the wait is unregistered.
+    return:
+      type: System.Threading.RegisteredWaitHandle
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: The *millisecondsTimeOutInterval* parameter is less than -1.
+  - type: System.Security.SecurityException
+    description: The caller does not have the required permission.
+- uid: System.Threading.ThreadPool.RegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.Int64,System.Boolean)
+  id: RegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.Int64,System.Boolean)
+  parent: System.Threading.ThreadPool
+  href: System.Threading.ThreadPool.yml
+  name: RegisterWaitForSingleObject(WaitHandle, WaitOrTimerCallback, Object, Int64, Boolean)
+  fullName: System.Threading.ThreadPool.RegisterWaitForSingleObject(System.Threading.WaitHandle, System.Threading.WaitOrTimerCallback, System.Object, System.Int64, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadPool.cs
+    startLine: 1499
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Registers a delegate to wait for a @'System.Threading.WaitHandle', specifying a 64-bit signed integer for the time-out in milliseconds.
+  syntax:
+    content: public static RegisteredWaitHandle RegisterWaitForSingleObject(WaitHandle waitObject, WaitOrTimerCallback callBack, object state, long millisecondsTimeOutInterval, bool executeOnlyOnce)
+    content.vb: Public Shared Function RegisterWaitForSingleObject(waitObject As WaitHandle, callBack As WaitOrTimerCallback, state As Object, millisecondsTimeOutInterval As Long, executeOnlyOnce As Boolean) As RegisteredWaitHandle
+    parameters:
+    - id: waitObject
+      type: System.Threading.WaitHandle
+      description: The @'System.Threading.WaitHandle' to register. Use a @'System.Threading.WaitHandle' other than @'System.Threading.Mutex'.
+    - id: callBack
+      type: System.Threading.WaitOrTimerCallback
+      description: The @'System.Threading.WaitOrTimerCallback' delegate to call when the *waitObject* parameter is signaled.
+    - id: state
+      type: System.Object
+      description: The object passed to the delegate.
+    - id: millisecondsTimeOutInterval
+      type: System.Int64
+      description: The time-out in milliseconds. If the *millisecondsTimeOutInterval* parameter is 0 (zero), the function tests the object's state and returns immediately. If *millisecondsTimeOutInterval* is -1, the function's time-out interval never elapses.
+    - id: executeOnlyOnce
+      type: System.Boolean
+      description: true to indicate that the thread will no longer wait on the *waitObject* parameter after the delegate has been called; false to indicate that the timer is reset every time the wait operation completes until the wait is unregistered.
+    return:
+      type: System.Threading.RegisteredWaitHandle
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: The *millisecondsTimeOutInterval* parameter is less than -1.
+- uid: System.Threading.ThreadPool.UnsafeRegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.Int64,System.Boolean)
+  id: UnsafeRegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.Int64,System.Boolean)
+  parent: System.Threading.ThreadPool
+  href: System.Threading.ThreadPool.yml
+  name: UnsafeRegisterWaitForSingleObject(WaitHandle, WaitOrTimerCallback, Object, Int64, Boolean)
+  fullName: System.Threading.ThreadPool.UnsafeRegisterWaitForSingleObject(System.Threading.WaitHandle, System.Threading.WaitOrTimerCallback, System.Object, System.Int64, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadPool.cs
+    startLine: 1516
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Registers a delegate to wait for a @'System.Threading.WaitHandle', specifying a 64-bit signed integer for the time-out in milliseconds. This method does not propagate the calling stack to the worker thread.
+  syntax:
+    content: public static RegisteredWaitHandle UnsafeRegisterWaitForSingleObject(WaitHandle waitObject, WaitOrTimerCallback callBack, object state, long millisecondsTimeOutInterval, bool executeOnlyOnce)
+    content.vb: Public Shared Function UnsafeRegisterWaitForSingleObject(waitObject As WaitHandle, callBack As WaitOrTimerCallback, state As Object, millisecondsTimeOutInterval As Long, executeOnlyOnce As Boolean) As RegisteredWaitHandle
+    parameters:
+    - id: waitObject
+      type: System.Threading.WaitHandle
+      description: The @'System.Threading.WaitHandle' to register. Use a @'System.Threading.WaitHandle' other than @'System.Threading.Mutex'.
+    - id: callBack
+      type: System.Threading.WaitOrTimerCallback
+      description: The delegate to call when the *waitObject* parameter is signaled.
+    - id: state
+      type: System.Object
+      description: The object that is passed to the delegate.
+    - id: millisecondsTimeOutInterval
+      type: System.Int64
+      description: The time-out in milliseconds. If the *millisecondsTimeOutInterval* parameter is 0 (zero), the function tests the object's state and returns immediately. If *millisecondsTimeOutInterval* is -1, the function's time-out interval never elapses.
+    - id: executeOnlyOnce
+      type: System.Boolean
+      description: true to indicate that the thread will no longer wait on the *waitObject* parameter after the delegate has been called; false to indicate that the timer is reset every time the wait operation completes until the wait is unregistered.
+    return:
+      type: System.Threading.RegisteredWaitHandle
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: The *millisecondsTimeOutInterval* parameter is less than -1.
+  - type: System.Security.SecurityException
+    description: The caller does not have the required permission.
+- uid: System.Threading.ThreadPool.RegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.TimeSpan,System.Boolean)
+  id: RegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.TimeSpan,System.Boolean)
+  parent: System.Threading.ThreadPool
+  href: System.Threading.ThreadPool.yml
+  name: RegisterWaitForSingleObject(WaitHandle, WaitOrTimerCallback, Object, TimeSpan, Boolean)
+  fullName: System.Threading.ThreadPool.RegisterWaitForSingleObject(System.Threading.WaitHandle, System.Threading.WaitOrTimerCallback, System.Object, System.TimeSpan, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadPool.cs
+    startLine: 1533
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Registers a delegate to wait for a @'System.Threading.WaitHandle', specifying a @'System.TimeSpan' value for the time-out.
+  syntax:
+    content: public static RegisteredWaitHandle RegisterWaitForSingleObject(WaitHandle waitObject, WaitOrTimerCallback callBack, object state, TimeSpan timeout, bool executeOnlyOnce)
+    content.vb: Public Shared Function RegisterWaitForSingleObject(waitObject As WaitHandle, callBack As WaitOrTimerCallback, state As Object, timeout As TimeSpan, executeOnlyOnce As Boolean) As RegisteredWaitHandle
+    parameters:
+    - id: waitObject
+      type: System.Threading.WaitHandle
+      description: The @'System.Threading.WaitHandle' to register. Use a @'System.Threading.WaitHandle' other than @'System.Threading.Mutex'.
+    - id: callBack
+      type: System.Threading.WaitOrTimerCallback
+      description: The @'System.Threading.WaitOrTimerCallback' delegate to call when the *waitObject* parameter is signaled.
+    - id: state
+      type: System.Object
+      description: The object passed to the delegate.
+    - id: timeout
+      type: System.TimeSpan
+      description: The time-out represented by a @'System.TimeSpan'. If *timeout* is 0 (zero), the function tests the object's state and returns immediately. If *timeout* is -1, the function's time-out interval never elapses.
+    - id: executeOnlyOnce
+      type: System.Boolean
+      description: true to indicate that the thread will no longer wait on the *waitObject* parameter after the delegate has been called; false to indicate that the timer is reset every time the wait operation completes until the wait is unregistered.
+    return:
+      type: System.Threading.RegisteredWaitHandle
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: The *timeout* parameter is less than -1.
+  - type: System.NotSupportedException
+    description: The *timeout* parameter is greater than @'System.Int32.MaxValue'.
+- uid: System.Threading.ThreadPool.UnsafeRegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.TimeSpan,System.Boolean)
+  id: UnsafeRegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.TimeSpan,System.Boolean)
+  parent: System.Threading.ThreadPool
+  href: System.Threading.ThreadPool.yml
+  name: UnsafeRegisterWaitForSingleObject(WaitHandle, WaitOrTimerCallback, Object, TimeSpan, Boolean)
+  fullName: System.Threading.ThreadPool.UnsafeRegisterWaitForSingleObject(System.Threading.WaitHandle, System.Threading.WaitOrTimerCallback, System.Object, System.TimeSpan, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadPool.cs
+    startLine: 1552
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Registers a delegate to wait for a @'System.Threading.WaitHandle', specifying a @'System.TimeSpan' value for the time-out. This method does not propagate the calling stack to the worker thread.
+  syntax:
+    content: public static RegisteredWaitHandle UnsafeRegisterWaitForSingleObject(WaitHandle waitObject, WaitOrTimerCallback callBack, object state, TimeSpan timeout, bool executeOnlyOnce)
+    content.vb: Public Shared Function UnsafeRegisterWaitForSingleObject(waitObject As WaitHandle, callBack As WaitOrTimerCallback, state As Object, timeout As TimeSpan, executeOnlyOnce As Boolean) As RegisteredWaitHandle
+    parameters:
+    - id: waitObject
+      type: System.Threading.WaitHandle
+      description: The @'System.Threading.WaitHandle' to register. Use a @'System.Threading.WaitHandle' other than @'System.Threading.Mutex'.
+    - id: callBack
+      type: System.Threading.WaitOrTimerCallback
+      description: The delegate to call when the *waitObject* parameter is signaled.
+    - id: state
+      type: System.Object
+      description: The object that is passed to the delegate.
+    - id: timeout
+      type: System.TimeSpan
+      description: The time-out represented by a @'System.TimeSpan'. If *timeout* is 0 (zero), the function tests the object's state and returns immediately. If *timeout* is -1, the function's time-out interval never elapses.
+    - id: executeOnlyOnce
+      type: System.Boolean
+      description: true to indicate that the thread will no longer wait on the *waitObject* parameter after the delegate has been called; false to indicate that the timer is reset every time the wait operation completes until the wait is unregistered.
+    return:
+      type: System.Threading.RegisteredWaitHandle
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: The *timeout* parameter is less than -1.
+  - type: System.NotSupportedException
+    description: The *timeout* parameter is greater than @'System.Int32.MaxValue'.
+  - type: System.Security.SecurityException
+    description: The caller does not have the required permission.
+- uid: System.Threading.ThreadPool.QueueUserWorkItem(System.Threading.WaitCallback,System.Object)
+  id: QueueUserWorkItem(System.Threading.WaitCallback,System.Object)
+  parent: System.Threading.ThreadPool
+  href: System.Threading.ThreadPool.yml
+  name: QueueUserWorkItem(WaitCallback, Object)
+  fullName: System.Threading.ThreadPool.QueueUserWorkItem(System.Threading.WaitCallback, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadPool.cs
+    startLine: 1571
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Queues a method for execution, and specifies an object containing data to be used by the method. The method executes when a thread pool thread becomes available.
+  syntax:
+    content: public static bool QueueUserWorkItem(WaitCallback callBack, object state)
+    content.vb: Public Shared Function QueueUserWorkItem(callBack As WaitCallback, state As Object) As Boolean
+    parameters:
+    - id: callBack
+      type: System.Threading.WaitCallback
+      description: A @'System.Threading.WaitCallback' representing the method to execute.
+    - id: state
+      type: System.Object
+      description: An object containing data to be used by the method.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.NotSupportedException
+    description: The common language runtime (CLR) is hosted, and the host does not support this action.
+  - type: System.ArgumentNullException
+    description: '*callBack* is null.'
+- uid: System.Threading.ThreadPool.QueueUserWorkItem(System.Threading.WaitCallback)
+  id: QueueUserWorkItem(System.Threading.WaitCallback)
+  parent: System.Threading.ThreadPool
+  href: System.Threading.ThreadPool.yml
+  name: QueueUserWorkItem(WaitCallback)
+  fullName: System.Threading.ThreadPool.QueueUserWorkItem(System.Threading.WaitCallback)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadPool.cs
+    startLine: 1582
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Queues a method for execution. The method executes when a thread pool thread becomes available.
+  syntax:
+    content: public static bool QueueUserWorkItem(WaitCallback callBack)
+    content.vb: Public Shared Function QueueUserWorkItem(callBack As WaitCallback) As Boolean
+    parameters:
+    - id: callBack
+      type: System.Threading.WaitCallback
+      description: A @'System.Threading.WaitCallback' that represents the method to be executed.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*callBack* is null.'
+  - type: System.NotSupportedException
+    description: The common language runtime (CLR) is hosted, and the host does not support this action.
+- uid: System.Threading.ThreadPool.UnsafeQueueUserWorkItem(System.Threading.WaitCallback,System.Object)
+  id: UnsafeQueueUserWorkItem(System.Threading.WaitCallback,System.Object)
+  parent: System.Threading.ThreadPool
+  href: System.Threading.ThreadPool.yml
+  name: UnsafeQueueUserWorkItem(WaitCallback, Object)
+  fullName: System.Threading.ThreadPool.UnsafeQueueUserWorkItem(System.Threading.WaitCallback, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadPool.cs
+    startLine: 1592
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Queues the specified delegate to the thread pool, but does not propagate the calling stack to the worker thread.
+  syntax:
+    content: public static bool UnsafeQueueUserWorkItem(WaitCallback callBack, object state)
+    content.vb: Public Shared Function UnsafeQueueUserWorkItem(callBack As WaitCallback, state As Object) As Boolean
+    parameters:
+    - id: callBack
+      type: System.Threading.WaitCallback
+      description: A @'System.Threading.WaitCallback' that represents the delegate to invoke when a thread in the thread pool picks up the work item.
+    - id: state
+      type: System.Object
+      description: The object that is passed to the delegate when serviced from the thread pool.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.Security.SecurityException
+    description: The caller does not have the required permission.
+  - type: System.ApplicationException
+    description: An out-of-memory condition was encountered.
+  - type: System.OutOfMemoryException
+    description: The work item could not be queued.
+  - type: System.ArgumentNullException
+    description: '*callBack* is null.'
+- uid: System.Threading.ThreadPool.UnsafeQueueNativeOverlapped(System.Threading.NativeOverlapped*)
+  id: UnsafeQueueNativeOverlapped(System.Threading.NativeOverlapped*)
+  parent: System.Threading.ThreadPool
+  href: System.Threading.ThreadPool.yml
+  name: UnsafeQueueNativeOverlapped(NativeOverlapped*)
+  fullName: System.Threading.ThreadPool.UnsafeQueueNativeOverlapped(System.Threading.NativeOverlapped*)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadPool.cs
+    startLine: 1771
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Queues an overlapped I/O operation for execution.
+  syntax:
+    content: public static bool UnsafeQueueNativeOverlapped(NativeOverlapped*overlapped)
+    content.vb: Public Shared Function UnsafeQueueNativeOverlapped(overlapped As NativeOverlapped *) As Boolean
+    parameters:
+    - id: overlapped
+      type: System.Threading.NativeOverlapped*
+      description: The @'System.Threading.NativeOverlapped' structure to queue.
+    return:
+      type: System.Boolean
+- uid: System.Threading.ThreadPool.BindHandle(System.Runtime.InteropServices.SafeHandle)
+  id: BindHandle(System.Runtime.InteropServices.SafeHandle)
+  parent: System.Threading.ThreadPool
+  href: System.Threading.ThreadPool.yml
+  name: BindHandle(SafeHandle)
+  fullName: System.Threading.ThreadPool.BindHandle(System.Runtime.InteropServices.SafeHandle)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadPool.cs
+    startLine: 1870
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Binds an operating system handle to the @'System.Threading.ThreadPool'.
+  syntax:
+    content: public static bool BindHandle(SafeHandle osHandle)
+    content.vb: Public Shared Function BindHandle(osHandle As SafeHandle) As Boolean
+    parameters:
+    - id: osHandle
+      type: System.Runtime.InteropServices.SafeHandle
+      description: A @'System.Runtime.InteropServices.SafeHandle'  that holds the operating system handle. The handle must have been opened for overlapped I/O on the unmanaged side.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*osHandle* is null.'
+references:
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Threading.WaitHandle
+  parent: System.Threading
+  isExternal: true
+  name: WaitHandle
+  fullName: System.Threading.WaitHandle
+- uid: System.Threading.WaitOrTimerCallback
+  isExternal: false
+  href: System.Threading.WaitOrTimerCallback.yml
+  name: WaitOrTimerCallback
+  fullName: System.Threading.WaitOrTimerCallback
+  type: Delegate
+- uid: System.UInt32
+  parent: System
+  isExternal: true
+  name: UInt32
+  fullName: System.UInt32
+- uid: System.Threading.RegisteredWaitHandle
+  isExternal: false
+  href: System.Threading.RegisteredWaitHandle.yml
+  name: RegisteredWaitHandle
+  fullName: System.Threading.RegisteredWaitHandle
+  type: Class
+- uid: System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  fullName: System.Int64
+- uid: System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  fullName: System.TimeSpan
+- uid: System.Threading.WaitCallback
+  isExternal: false
+  href: System.Threading.WaitCallback.yml
+  name: WaitCallback
+  fullName: System.Threading.WaitCallback
+  type: Delegate
+- uid: System.Threading.NativeOverlapped*
+  isExternal: false
+  href: System.Threading.NativeOverlapped.yml
+  name: NativeOverlapped*
+  fullName: System.Threading.NativeOverlapped*
+  spec.csharp:
+  - uid: System.Threading.NativeOverlapped
+    name: NativeOverlapped
+    fullName: System.Threading.NativeOverlapped
+    href: System.Threading.NativeOverlapped.yml
+  - name: '*'
+    fullName: '*'
+  spec.vb:
+  - uid: System.Threading.NativeOverlapped
+    name: NativeOverlapped
+    fullName: System.Threading.NativeOverlapped
+    href: System.Threading.NativeOverlapped.yml
+  - name: '*'
+    fullName: '*'
+- uid: System.Runtime.InteropServices.SafeHandle
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  name: SafeHandle
+  fullName: System.Runtime.InteropServices.SafeHandle
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace

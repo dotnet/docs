@@ -1,0 +1,82 @@
+items:
+- uid: System.Environment.SpecialFolderOption
+  id: Environment.SpecialFolderOption
+  parent: System
+  children:
+  - System.Environment.SpecialFolderOption.Create
+  - System.Environment.SpecialFolderOption.DoNotVerify
+  - System.Environment.SpecialFolderOption.None
+  href: System.Environment.SpecialFolderOption.yml
+  name: Environment.SpecialFolderOption
+  fullName: System.Environment.SpecialFolderOption
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Environment.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Environment.cs
+    startLine: 1544
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Specifies options to use for getting the path to a special folder.
+  syntax:
+    content: public enum SpecialFolderOption
+    content.vb: Public Enum SpecialFolderOption
+- uid: System.Environment.SpecialFolderOption.None
+  id: None
+  parent: System.Environment.SpecialFolderOption
+  href: System.Environment.SpecialFolderOption.yml
+  name: None
+  fullName: System.Environment.SpecialFolderOption.None
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Environment.cs
+    startLine: 1545
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The path to the folder is verified. If the folder exists, the path is returned. If the folder does not exist, an empty string is returned. This is the default behavior.
+  syntax:
+    content: None = 0
+- uid: System.Environment.SpecialFolderOption.Create
+  id: Create
+  parent: System.Environment.SpecialFolderOption
+  href: System.Environment.SpecialFolderOption.yml
+  name: Create
+  fullName: System.Environment.SpecialFolderOption.Create
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Environment.cs
+    startLine: 1546
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The path to the folder is created if it does not already exist.
+  syntax:
+    content: Create = 32768
+- uid: System.Environment.SpecialFolderOption.DoNotVerify
+  id: DoNotVerify
+  parent: System.Environment.SpecialFolderOption
+  href: System.Environment.SpecialFolderOption.yml
+  name: DoNotVerify
+  fullName: System.Environment.SpecialFolderOption.DoNotVerify
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Environment.cs
+    startLine: 1547
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The path to the folder is returned without verifying whether the path exists. If the folder is located on a network, specifying this option can reduce lag time.
+  syntax:
+    content: DoNotVerify = 16384
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

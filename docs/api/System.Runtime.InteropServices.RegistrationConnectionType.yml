@@ -1,0 +1,119 @@
+items:
+- uid: System.Runtime.InteropServices.RegistrationConnectionType
+  id: RegistrationConnectionType
+  parent: System.Runtime.InteropServices
+  children:
+  - System.Runtime.InteropServices.RegistrationConnectionType.MultipleUse
+  - System.Runtime.InteropServices.RegistrationConnectionType.MultiSeparate
+  - System.Runtime.InteropServices.RegistrationConnectionType.SingleUse
+  - System.Runtime.InteropServices.RegistrationConnectionType.Surrogate
+  - System.Runtime.InteropServices.RegistrationConnectionType.Suspended
+  href: System.Runtime.InteropServices.RegistrationConnectionType.yml
+  name: RegistrationConnectionType
+  fullName: System.Runtime.InteropServices.RegistrationConnectionType
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/InteropServices/RegistrationServices.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/InteropServices/RegistrationServices.cs
+    startLine: 58
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Defines the types of connections to a class object.
+  syntax:
+    content: public enum RegistrationConnectionType
+    content.vb: Public Enum RegistrationConnectionType
+- uid: System.Runtime.InteropServices.RegistrationConnectionType.SingleUse
+  id: SingleUse
+  parent: System.Runtime.InteropServices.RegistrationConnectionType
+  href: System.Runtime.InteropServices.RegistrationConnectionType.yml
+  name: SingleUse
+  fullName: System.Runtime.InteropServices.RegistrationConnectionType.SingleUse
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/RegistrationServices.cs
+    startLine: 61
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Once an application is connected to a class object with CoGetClassObject, the class object is removed from public view so that no other applications can connect to it. This value is commonly used for single document interface (SDI) applications.
+  syntax:
+    content: SingleUse = 0
+- uid: System.Runtime.InteropServices.RegistrationConnectionType.MultipleUse
+  id: MultipleUse
+  parent: System.Runtime.InteropServices.RegistrationConnectionType
+  href: System.Runtime.InteropServices.RegistrationConnectionType.yml
+  name: MultipleUse
+  fullName: System.Runtime.InteropServices.RegistrationConnectionType.MultipleUse
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/RegistrationServices.cs
+    startLine: 62
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Multiple applications can connect to the class object through calls to CoGetClassObject.
+  syntax:
+    content: MultipleUse = 1
+- uid: System.Runtime.InteropServices.RegistrationConnectionType.MultiSeparate
+  id: MultiSeparate
+  parent: System.Runtime.InteropServices.RegistrationConnectionType
+  href: System.Runtime.InteropServices.RegistrationConnectionType.yml
+  name: MultiSeparate
+  fullName: System.Runtime.InteropServices.RegistrationConnectionType.MultiSeparate
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/RegistrationServices.cs
+    startLine: 63
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Registers separate CLSCTX_LOCAL_SERVER and CLSCTX_INPROC_SERVER class factories.
+  syntax:
+    content: MultiSeparate = 2
+- uid: System.Runtime.InteropServices.RegistrationConnectionType.Suspended
+  id: Suspended
+  parent: System.Runtime.InteropServices.RegistrationConnectionType
+  href: System.Runtime.InteropServices.RegistrationConnectionType.yml
+  name: Suspended
+  fullName: System.Runtime.InteropServices.RegistrationConnectionType.Suspended
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/RegistrationServices.cs
+    startLine: 64
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Suspends registration and activation requests for the specified CLSID until there is a call to CoResumeClassObjects.
+  syntax:
+    content: Suspended = 4
+- uid: System.Runtime.InteropServices.RegistrationConnectionType.Surrogate
+  id: Surrogate
+  parent: System.Runtime.InteropServices.RegistrationConnectionType
+  href: System.Runtime.InteropServices.RegistrationConnectionType.yml
+  name: Surrogate
+  fullName: System.Runtime.InteropServices.RegistrationConnectionType.Surrogate
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/RegistrationServices.cs
+    startLine: 65
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: The class object is a surrogate process used to run DLL servers.
+  syntax:
+    content: Surrogate = 8
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace

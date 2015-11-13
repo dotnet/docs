@@ -1,0 +1,457 @@
+items:
+- uid: System.Reflection.Metadata.StringHandle
+  id: StringHandle
+  parent: System.Reflection.Metadata
+  children:
+  - System.Reflection.Metadata.StringHandle.Equals(System.Object)
+  - System.Reflection.Metadata.StringHandle.Equals(System.Reflection.Metadata.StringHandle)
+  - System.Reflection.Metadata.StringHandle.GetHashCode
+  - System.Reflection.Metadata.StringHandle.IsNil
+  - System.Reflection.Metadata.StringHandle.op_Equality(System.Reflection.Metadata.StringHandle,System.Reflection.Metadata.StringHandle)
+  - System.Reflection.Metadata.StringHandle.op_Explicit(System.Reflection.Metadata.Handle)~System.Reflection.Metadata.StringHandle
+  - System.Reflection.Metadata.StringHandle.op_Implicit(System.Reflection.Metadata.StringHandle)~System.Reflection.Metadata.Handle
+  - System.Reflection.Metadata.StringHandle.op_Inequality(System.Reflection.Metadata.StringHandle,System.Reflection.Metadata.StringHandle)
+  href: System.Reflection.Metadata.StringHandle.yml
+  name: StringHandle
+  fullName: System.Reflection.Metadata.StringHandle
+  type: Struct
+  source:
+    remote: &o0
+      path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/Handles.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/Handles.cs
+    startLine: 2491
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: 'public struct StringHandle : IEquatable<StringHandle>'
+    content.vb: Public Structure StringHandle Implements IEquatable(Of StringHandle)
+  implements:
+  - System.IEquatable{System.Reflection.Metadata.StringHandle}
+  inheritedMembers:
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.Reflection.Metadata.StringHandle.op_Implicit(System.Reflection.Metadata.StringHandle)~System.Reflection.Metadata.Handle
+  id: op_Implicit(System.Reflection.Metadata.StringHandle)~System.Reflection.Metadata.Handle
+  parent: System.Reflection.Metadata.StringHandle
+  href: System.Reflection.Metadata.StringHandle.yml
+  name: Implicit(StringHandle to Handle)
+  name.vb: Widening(StringHandle to Handle)
+  fullName: System.Reflection.Metadata.StringHandle.Implicit(System.Reflection.Metadata.StringHandle to System.Reflection.Metadata.Handle)
+  fullName.vb: System.Reflection.Metadata.StringHandle.Widening(System.Reflection.Metadata.StringHandle to System.Reflection.Metadata.Handle)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/Handles.cs
+    startLine: 2618
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public static implicit operator Handle(StringHandle handle)
+    content.vb: Public Shared Widening Operator CType(handle As StringHandle) As Handle
+    parameters:
+    - id: handle
+      type: System.Reflection.Metadata.StringHandle
+    return:
+      type: System.Reflection.Metadata.Handle
+      description: 
+- uid: System.Reflection.Metadata.StringHandle.op_Explicit(System.Reflection.Metadata.Handle)~System.Reflection.Metadata.StringHandle
+  id: op_Explicit(System.Reflection.Metadata.Handle)~System.Reflection.Metadata.StringHandle
+  parent: System.Reflection.Metadata.StringHandle
+  href: System.Reflection.Metadata.StringHandle.yml
+  name: Explicit(Handle to StringHandle)
+  name.vb: Narrowing(Handle to StringHandle)
+  fullName: System.Reflection.Metadata.StringHandle.Explicit(System.Reflection.Metadata.Handle to System.Reflection.Metadata.StringHandle)
+  fullName.vb: System.Reflection.Metadata.StringHandle.Narrowing(System.Reflection.Metadata.Handle to System.Reflection.Metadata.StringHandle)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/Handles.cs
+    startLine: 2626
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public static explicit operator StringHandle(Handle handle)
+    content.vb: Public Shared Narrowing Operator CType(handle As Handle) As StringHandle
+    parameters:
+    - id: handle
+      type: System.Reflection.Metadata.Handle
+    return:
+      type: System.Reflection.Metadata.StringHandle
+      description: 
+- uid: System.Reflection.Metadata.StringHandle.IsNil
+  id: IsNil
+  parent: System.Reflection.Metadata.StringHandle
+  href: System.Reflection.Metadata.StringHandle.yml
+  name: IsNil
+  fullName: System.Reflection.Metadata.StringHandle.IsNil
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/Handles.cs
+    startLine: 2645
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public bool IsNil { get; }
+    content.vb: Public ReadOnly Property IsNil As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: 
+- uid: System.Reflection.Metadata.StringHandle.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Reflection.Metadata.StringHandle
+  href: System.Reflection.Metadata.StringHandle.yml
+  name: Equals(Object)
+  fullName: System.Reflection.Metadata.StringHandle.Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/Handles.cs
+    startLine: 2672
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public override bool Equals(object obj)
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+      description: 
+  overridden: System.ValueType.Equals(System.Object)
+- uid: System.Reflection.Metadata.StringHandle.Equals(System.Reflection.Metadata.StringHandle)
+  id: Equals(System.Reflection.Metadata.StringHandle)
+  parent: System.Reflection.Metadata.StringHandle
+  href: System.Reflection.Metadata.StringHandle.yml
+  name: Equals(StringHandle)
+  fullName: System.Reflection.Metadata.StringHandle.Equals(System.Reflection.Metadata.StringHandle)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/Handles.cs
+    startLine: 2677
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public bool Equals(StringHandle other)
+    content.vb: Public Function Equals(other As StringHandle) As Boolean
+    parameters:
+    - id: other
+      type: System.Reflection.Metadata.StringHandle
+    return:
+      type: System.Boolean
+      description: 
+- uid: System.Reflection.Metadata.StringHandle.GetHashCode
+  id: GetHashCode
+  parent: System.Reflection.Metadata.StringHandle
+  href: System.Reflection.Metadata.StringHandle.yml
+  name: GetHashCode()
+  fullName: System.Reflection.Metadata.StringHandle.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/Handles.cs
+    startLine: 2682
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: 
+  overridden: System.ValueType.GetHashCode
+- uid: System.Reflection.Metadata.StringHandle.op_Equality(System.Reflection.Metadata.StringHandle,System.Reflection.Metadata.StringHandle)
+  id: op_Equality(System.Reflection.Metadata.StringHandle,System.Reflection.Metadata.StringHandle)
+  parent: System.Reflection.Metadata.StringHandle
+  href: System.Reflection.Metadata.StringHandle.yml
+  name: Equality(StringHandle, StringHandle)
+  fullName: System.Reflection.Metadata.StringHandle.Equality(System.Reflection.Metadata.StringHandle, System.Reflection.Metadata.StringHandle)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/Handles.cs
+    startLine: 2687
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public static bool operator ==(StringHandle left, StringHandle right)
+    content.vb: Public Shared Operator =(left As StringHandle, right As StringHandle) As Boolean
+    parameters:
+    - id: left
+      type: System.Reflection.Metadata.StringHandle
+    - id: right
+      type: System.Reflection.Metadata.StringHandle
+    return:
+      type: System.Boolean
+      description: 
+- uid: System.Reflection.Metadata.StringHandle.op_Inequality(System.Reflection.Metadata.StringHandle,System.Reflection.Metadata.StringHandle)
+  id: op_Inequality(System.Reflection.Metadata.StringHandle,System.Reflection.Metadata.StringHandle)
+  parent: System.Reflection.Metadata.StringHandle
+  href: System.Reflection.Metadata.StringHandle.yml
+  name: Inequality(StringHandle, StringHandle)
+  fullName: System.Reflection.Metadata.StringHandle.Inequality(System.Reflection.Metadata.StringHandle, System.Reflection.Metadata.StringHandle)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/Handles.cs
+    startLine: 2692
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public static bool operator !=(StringHandle left, StringHandle right)
+    content.vb: Public Shared Operator <>(left As StringHandle, right As StringHandle) As Boolean
+    parameters:
+    - id: left
+      type: System.Reflection.Metadata.StringHandle
+    - id: right
+      type: System.Reflection.Metadata.StringHandle
+    return:
+      type: System.Boolean
+      description: 
+references:
+- uid: System.Reflection.Metadata
+  isExternal: false
+  name: System.Reflection.Metadata
+  fullName: System.Reflection.Metadata
+  type: Namespace
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Reflection.Metadata.StringHandle
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.StringHandle.yml
+  name: StringHandle
+  fullName: System.Reflection.Metadata.StringHandle
+  type: Struct
+- uid: System.Reflection.Metadata.Handle
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.Handle.yml
+  name: Handle
+  fullName: System.Reflection.Metadata.Handle
+  type: Struct
+  summary: Represents any metadata entity (type reference/definition/specification, method definition, custom attribute, etc.) or value (string, blob, guid, user string).
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32

@@ -1,0 +1,281 @@
+items:
+- uid: System.Security.AccessControl.RegistryRights
+  id: RegistryRights
+  parent: System.Security.AccessControl
+  children:
+  - System.Security.AccessControl.RegistryRights.ChangePermissions
+  - System.Security.AccessControl.RegistryRights.CreateLink
+  - System.Security.AccessControl.RegistryRights.CreateSubKey
+  - System.Security.AccessControl.RegistryRights.Delete
+  - System.Security.AccessControl.RegistryRights.EnumerateSubKeys
+  - System.Security.AccessControl.RegistryRights.ExecuteKey
+  - System.Security.AccessControl.RegistryRights.FullControl
+  - System.Security.AccessControl.RegistryRights.Notify
+  - System.Security.AccessControl.RegistryRights.QueryValues
+  - System.Security.AccessControl.RegistryRights.ReadKey
+  - System.Security.AccessControl.RegistryRights.ReadPermissions
+  - System.Security.AccessControl.RegistryRights.SetValue
+  - System.Security.AccessControl.RegistryRights.TakeOwnership
+  - System.Security.AccessControl.RegistryRights.WriteKey
+  href: System.Security.AccessControl.RegistryRights.yml
+  name: RegistryRights
+  fullName: System.Security.AccessControl.RegistryRights
+  type: Enum
+  source:
+    remote: &o0
+      path: src/Microsoft.Win32.Registry/src/System/Security/AccessControl/RegistryRights.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/Microsoft.Win32.Registry/src/System/Security/AccessControl/RegistryRights.cs
+    startLine: 10
+  assemblies:
+  - Microsoft.Win32.Registry
+  namespace: System.Security.AccessControl
+  summary: Specifies the access control rights that can be applied to registry objects.
+  syntax:
+    content: public enum RegistryRights
+    content.vb: Public Enum RegistryRights
+- uid: System.Security.AccessControl.RegistryRights.QueryValues
+  id: QueryValues
+  parent: System.Security.AccessControl.RegistryRights
+  href: System.Security.AccessControl.RegistryRights.yml
+  name: QueryValues
+  fullName: System.Security.AccessControl.RegistryRights.QueryValues
+  type: Field
+  source:
+    remote: *o0
+    path: src/Microsoft.Win32.Registry/src/System/Security/AccessControl/RegistryRights.cs
+    startLine: 14
+  assemblies:
+  - Microsoft.Win32.Registry
+  namespace: System.Security.AccessControl
+  summary: The right to query the name/value pairs in a registry key.
+  syntax:
+    content: QueryValues = 1
+- uid: System.Security.AccessControl.RegistryRights.SetValue
+  id: SetValue
+  parent: System.Security.AccessControl.RegistryRights
+  href: System.Security.AccessControl.RegistryRights.yml
+  name: SetValue
+  fullName: System.Security.AccessControl.RegistryRights.SetValue
+  type: Field
+  source:
+    remote: *o0
+    path: src/Microsoft.Win32.Registry/src/System/Security/AccessControl/RegistryRights.cs
+    startLine: 15
+  assemblies:
+  - Microsoft.Win32.Registry
+  namespace: System.Security.AccessControl
+  summary: The right to create, delete, or set name/value pairs in a registry key.
+  syntax:
+    content: SetValue = 2
+- uid: System.Security.AccessControl.RegistryRights.CreateSubKey
+  id: CreateSubKey
+  parent: System.Security.AccessControl.RegistryRights
+  href: System.Security.AccessControl.RegistryRights.yml
+  name: CreateSubKey
+  fullName: System.Security.AccessControl.RegistryRights.CreateSubKey
+  type: Field
+  source:
+    remote: *o0
+    path: src/Microsoft.Win32.Registry/src/System/Security/AccessControl/RegistryRights.cs
+    startLine: 16
+  assemblies:
+  - Microsoft.Win32.Registry
+  namespace: System.Security.AccessControl
+  summary: The right to create subkeys of a registry key.
+  syntax:
+    content: CreateSubKey = 4
+- uid: System.Security.AccessControl.RegistryRights.EnumerateSubKeys
+  id: EnumerateSubKeys
+  parent: System.Security.AccessControl.RegistryRights
+  href: System.Security.AccessControl.RegistryRights.yml
+  name: EnumerateSubKeys
+  fullName: System.Security.AccessControl.RegistryRights.EnumerateSubKeys
+  type: Field
+  source:
+    remote: *o0
+    path: src/Microsoft.Win32.Registry/src/System/Security/AccessControl/RegistryRights.cs
+    startLine: 17
+  assemblies:
+  - Microsoft.Win32.Registry
+  namespace: System.Security.AccessControl
+  summary: The right to list the subkeys of a registry key.
+  syntax:
+    content: EnumerateSubKeys = 8
+- uid: System.Security.AccessControl.RegistryRights.Notify
+  id: Notify
+  parent: System.Security.AccessControl.RegistryRights
+  href: System.Security.AccessControl.RegistryRights.yml
+  name: Notify
+  fullName: System.Security.AccessControl.RegistryRights.Notify
+  type: Field
+  source:
+    remote: *o0
+    path: src/Microsoft.Win32.Registry/src/System/Security/AccessControl/RegistryRights.cs
+    startLine: 18
+  assemblies:
+  - Microsoft.Win32.Registry
+  namespace: System.Security.AccessControl
+  summary: The right to request notification of changes on a registry key.
+  syntax:
+    content: Notify = 16
+- uid: System.Security.AccessControl.RegistryRights.CreateLink
+  id: CreateLink
+  parent: System.Security.AccessControl.RegistryRights
+  href: System.Security.AccessControl.RegistryRights.yml
+  name: CreateLink
+  fullName: System.Security.AccessControl.RegistryRights.CreateLink
+  type: Field
+  source:
+    remote: *o0
+    path: src/Microsoft.Win32.Registry/src/System/Security/AccessControl/RegistryRights.cs
+    startLine: 19
+  assemblies:
+  - Microsoft.Win32.Registry
+  namespace: System.Security.AccessControl
+  summary: Reserved for system use.
+  syntax:
+    content: CreateLink = 32
+- uid: System.Security.AccessControl.RegistryRights.ExecuteKey
+  id: ExecuteKey
+  parent: System.Security.AccessControl.RegistryRights
+  href: System.Security.AccessControl.RegistryRights.yml
+  name: ExecuteKey
+  fullName: System.Security.AccessControl.RegistryRights.ExecuteKey
+  type: Field
+  source:
+    remote: *o0
+    path: src/Microsoft.Win32.Registry/src/System/Security/AccessControl/RegistryRights.cs
+    startLine: 26
+  assemblies:
+  - Microsoft.Win32.Registry
+  namespace: System.Security.AccessControl
+  summary: Same as @'System.Security.AccessControl.RegistryRights.ReadKey'.
+  syntax:
+    content: ExecuteKey = 131097
+- uid: System.Security.AccessControl.RegistryRights.ReadKey
+  id: ReadKey
+  parent: System.Security.AccessControl.RegistryRights
+  href: System.Security.AccessControl.RegistryRights.yml
+  name: ReadKey
+  fullName: System.Security.AccessControl.RegistryRights.ReadKey
+  type: Field
+  source:
+    remote: *o0
+    path: src/Microsoft.Win32.Registry/src/System/Security/AccessControl/RegistryRights.cs
+    startLine: 27
+  assemblies:
+  - Microsoft.Win32.Registry
+  namespace: System.Security.AccessControl
+  summary: The right to query the name/value pairs in a registry key, to request notification of changes, to enumerate its subkeys, and to read its access rules and audit rules.
+  syntax:
+    content: ReadKey = 131097
+- uid: System.Security.AccessControl.RegistryRights.WriteKey
+  id: WriteKey
+  parent: System.Security.AccessControl.RegistryRights
+  href: System.Security.AccessControl.RegistryRights.yml
+  name: WriteKey
+  fullName: System.Security.AccessControl.RegistryRights.WriteKey
+  type: Field
+  source:
+    remote: *o0
+    path: src/Microsoft.Win32.Registry/src/System/Security/AccessControl/RegistryRights.cs
+    startLine: 28
+  assemblies:
+  - Microsoft.Win32.Registry
+  namespace: System.Security.AccessControl
+  summary: The right to create, delete, and set the name/value pairs in a registry key, to create or delete subkeys, to request notification of changes, to enumerate its subkeys, and to read its access rules and audit rules.
+  syntax:
+    content: WriteKey = 131078
+- uid: System.Security.AccessControl.RegistryRights.Delete
+  id: Delete
+  parent: System.Security.AccessControl.RegistryRights
+  href: System.Security.AccessControl.RegistryRights.yml
+  name: Delete
+  fullName: System.Security.AccessControl.RegistryRights.Delete
+  type: Field
+  source:
+    remote: *o0
+    path: src/Microsoft.Win32.Registry/src/System/Security/AccessControl/RegistryRights.cs
+    startLine: 29
+  assemblies:
+  - Microsoft.Win32.Registry
+  namespace: System.Security.AccessControl
+  summary: The right to delete a registry key.
+  syntax:
+    content: Delete = 65536
+- uid: System.Security.AccessControl.RegistryRights.ReadPermissions
+  id: ReadPermissions
+  parent: System.Security.AccessControl.RegistryRights
+  href: System.Security.AccessControl.RegistryRights.yml
+  name: ReadPermissions
+  fullName: System.Security.AccessControl.RegistryRights.ReadPermissions
+  type: Field
+  source:
+    remote: *o0
+    path: src/Microsoft.Win32.Registry/src/System/Security/AccessControl/RegistryRights.cs
+    startLine: 30
+  assemblies:
+  - Microsoft.Win32.Registry
+  namespace: System.Security.AccessControl
+  summary: The right to open and copy the access rules and audit rules for a registry key.
+  syntax:
+    content: ReadPermissions = 131072
+- uid: System.Security.AccessControl.RegistryRights.ChangePermissions
+  id: ChangePermissions
+  parent: System.Security.AccessControl.RegistryRights
+  href: System.Security.AccessControl.RegistryRights.yml
+  name: ChangePermissions
+  fullName: System.Security.AccessControl.RegistryRights.ChangePermissions
+  type: Field
+  source:
+    remote: *o0
+    path: src/Microsoft.Win32.Registry/src/System/Security/AccessControl/RegistryRights.cs
+    startLine: 31
+  assemblies:
+  - Microsoft.Win32.Registry
+  namespace: System.Security.AccessControl
+  summary: The right to change the access rules and audit rules associated with a registry key.
+  syntax:
+    content: ChangePermissions = 262144
+- uid: System.Security.AccessControl.RegistryRights.TakeOwnership
+  id: TakeOwnership
+  parent: System.Security.AccessControl.RegistryRights
+  href: System.Security.AccessControl.RegistryRights.yml
+  name: TakeOwnership
+  fullName: System.Security.AccessControl.RegistryRights.TakeOwnership
+  type: Field
+  source:
+    remote: *o0
+    path: src/Microsoft.Win32.Registry/src/System/Security/AccessControl/RegistryRights.cs
+    startLine: 32
+  assemblies:
+  - Microsoft.Win32.Registry
+  namespace: System.Security.AccessControl
+  summary: The right to change the owner of a registry key.
+  syntax:
+    content: TakeOwnership = 524288
+- uid: System.Security.AccessControl.RegistryRights.FullControl
+  id: FullControl
+  parent: System.Security.AccessControl.RegistryRights
+  href: System.Security.AccessControl.RegistryRights.yml
+  name: FullControl
+  fullName: System.Security.AccessControl.RegistryRights.FullControl
+  type: Field
+  source:
+    remote: *o0
+    path: src/Microsoft.Win32.Registry/src/System/Security/AccessControl/RegistryRights.cs
+    startLine: 33
+  assemblies:
+  - Microsoft.Win32.Registry
+  namespace: System.Security.AccessControl
+  summary: The right to exert full control over a registry key, and to modify its access rules and audit rules.
+  syntax:
+    content: FullControl = 983103
+references:
+- uid: System.Security.AccessControl
+  isExternal: false
+  name: System.Security.AccessControl
+  fullName: System.Security.AccessControl
+  type: Namespace

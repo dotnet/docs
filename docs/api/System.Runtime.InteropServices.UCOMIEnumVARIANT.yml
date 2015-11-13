@@ -1,0 +1,138 @@
+items:
+- uid: System.Runtime.InteropServices.UCOMIEnumVARIANT
+  id: UCOMIEnumVARIANT
+  parent: System.Runtime.InteropServices
+  children:
+  - System.Runtime.InteropServices.UCOMIEnumVARIANT.Clone(System.Int32)
+  - System.Runtime.InteropServices.UCOMIEnumVARIANT.Next(System.Int32,System.Int32,System.Int32)
+  - System.Runtime.InteropServices.UCOMIEnumVARIANT.Reset
+  - System.Runtime.InteropServices.UCOMIEnumVARIANT.Skip(System.Int32)
+  href: System.Runtime.InteropServices.UCOMIEnumVARIANT.yml
+  name: UCOMIEnumVARIANT
+  fullName: System.Runtime.InteropServices.UCOMIEnumVARIANT
+  type: Interface
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIEnumVARIANT.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIEnumVARIANT.cs
+    startLine: 16
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Use @'System.Runtime.InteropServices.ComTypes.IEnumVARIANT' instead.
+  syntax:
+    content: public interface UCOMIEnumVARIANT
+    content.vb: Public Interface UCOMIEnumVARIANT
+- uid: System.Runtime.InteropServices.UCOMIEnumVARIANT.Next(System.Int32,System.Int32,System.Int32)
+  id: Next(System.Int32,System.Int32,System.Int32)
+  parent: System.Runtime.InteropServices.UCOMIEnumVARIANT
+  href: System.Runtime.InteropServices.UCOMIEnumVARIANT.yml
+  name: Next(Int32, Int32, Int32)
+  fullName: System.Runtime.InteropServices.UCOMIEnumVARIANT.Next(System.Int32, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIEnumVARIANT.cs
+    startLine: 22
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Retrieves a specified number of items in the enumeration sequence.
+  syntax:
+    content: int Next(int celt, int rgvar, int pceltFetched)
+    content.vb: Function Next(celt As Integer, rgvar As Integer, pceltFetched As Integer) As Integer
+    parameters:
+    - id: celt
+      type: System.Int32
+      description: The number of elements to return in *rgelt*.
+    - id: rgvar
+      type: System.Int32
+      description: On successful return, a reference to the enumerated elements.
+    - id: pceltFetched
+      type: System.Int32
+      description: On successful return, a reference to the actual number of elements enumerated in *rgelt*.
+    return:
+      type: System.Int32
+- uid: System.Runtime.InteropServices.UCOMIEnumVARIANT.Skip(System.Int32)
+  id: Skip(System.Int32)
+  parent: System.Runtime.InteropServices.UCOMIEnumVARIANT
+  href: System.Runtime.InteropServices.UCOMIEnumVARIANT.yml
+  name: Skip(Int32)
+  fullName: System.Runtime.InteropServices.UCOMIEnumVARIANT.Skip(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIEnumVARIANT.cs
+    startLine: 25
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Skips over a specified number of items in the enumeration sequence.
+  syntax:
+    content: int Skip(int celt)
+    content.vb: Function Skip(celt As Integer) As Integer
+    parameters:
+    - id: celt
+      type: System.Int32
+      description: The number of elements to skip in the enumeration.
+    return:
+      type: System.Int32
+- uid: System.Runtime.InteropServices.UCOMIEnumVARIANT.Reset
+  id: Reset
+  parent: System.Runtime.InteropServices.UCOMIEnumVARIANT
+  href: System.Runtime.InteropServices.UCOMIEnumVARIANT.yml
+  name: Reset()
+  fullName: System.Runtime.InteropServices.UCOMIEnumVARIANT.Reset()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIEnumVARIANT.cs
+    startLine: 28
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Resets the enumeration sequence to the beginning.
+  syntax:
+    content: int Reset()
+    content.vb: Function Reset As Integer
+    return:
+      type: System.Int32
+- uid: System.Runtime.InteropServices.UCOMIEnumVARIANT.Clone(System.Int32)
+  id: Clone(System.Int32)
+  parent: System.Runtime.InteropServices.UCOMIEnumVARIANT
+  href: System.Runtime.InteropServices.UCOMIEnumVARIANT.yml
+  name: Clone(Int32)
+  fullName: System.Runtime.InteropServices.UCOMIEnumVARIANT.Clone(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIEnumVARIANT.cs
+    startLine: 31
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Creates another enumerator that contains the same enumeration state as the current one.
+  syntax:
+    content: void Clone(int ppenum)
+    content.vb: Sub Clone(ppenum As Integer)
+    parameters:
+    - id: ppenum
+      type: System.Int32
+      description: On successful return, a reference to the newly created enumerator.
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

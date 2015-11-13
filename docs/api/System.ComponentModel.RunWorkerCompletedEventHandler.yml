@@ -1,0 +1,52 @@
+items:
+- uid: System.ComponentModel.RunWorkerCompletedEventHandler
+  id: RunWorkerCompletedEventHandler
+  parent: System.ComponentModel
+  children: []
+  href: System.ComponentModel.RunWorkerCompletedEventHandler.yml
+  name: RunWorkerCompletedEventHandler
+  fullName: System.ComponentModel.RunWorkerCompletedEventHandler
+  type: Delegate
+  source:
+    remote:
+      path: src/System.ComponentModel.EventBasedAsync/src/System/ComponentModel/RunWorkerCompletedEvent.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.ComponentModel.EventBasedAsync/src/System/ComponentModel/RunWorkerCompletedEvent.cs
+    startLine: 5
+  assemblies:
+  - System.ComponentModel.EventBasedAsync
+  namespace: System.ComponentModel
+  summary: Represents the method that will handle the @'System.ComponentModel.BackgroundWorker.RunWorkerCompleted' event of a @'System.ComponentModel.BackgroundWorker' class.
+  syntax:
+    content: public delegate void RunWorkerCompletedEventHandler(object sender, RunWorkerCompletedEventArgs e);
+    content.vb: Public Delegate Sub RunWorkerCompletedEventHandler(sender As Object, e As RunWorkerCompletedEventArgs)
+    parameters:
+    - id: sender
+      type: System.Object
+      description: The source of the event.
+    - id: e
+      type: System.ComponentModel.RunWorkerCompletedEventArgs
+      description: A @'System.ComponentModel.RunWorkerCompletedEventArgs'   that contains the event data.
+references:
+- uid: System.ComponentModel
+  isExternal: false
+  name: System.ComponentModel
+  fullName: System.ComponentModel
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.ComponentModel.RunWorkerCompletedEventArgs
+  parent: System.ComponentModel
+  isExternal: false
+  href: System.ComponentModel.RunWorkerCompletedEventArgs.yml
+  name: RunWorkerCompletedEventArgs
+  fullName: System.ComponentModel.RunWorkerCompletedEventArgs
+  type: Class
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

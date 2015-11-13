@@ -1,0 +1,964 @@
+items:
+- uid: System.Runtime.CompilerServices
+  id: System.Runtime.CompilerServices
+  children:
+  - System.Runtime.CompilerServices.AccessedThroughPropertyAttribute
+  - System.Runtime.CompilerServices.AsyncStateMachineAttribute
+  - System.Runtime.CompilerServices.AsyncTaskMethodBuilder
+  - System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1
+  - System.Runtime.CompilerServices.AsyncVoidMethodBuilder
+  - System.Runtime.CompilerServices.CallConvCdecl
+  - System.Runtime.CompilerServices.CallConvFastcall
+  - System.Runtime.CompilerServices.CallConvStdcall
+  - System.Runtime.CompilerServices.CallConvThiscall
+  - System.Runtime.CompilerServices.CallerFilePathAttribute
+  - System.Runtime.CompilerServices.CallerLineNumberAttribute
+  - System.Runtime.CompilerServices.CallerMemberNameAttribute
+  - System.Runtime.CompilerServices.CallSite
+  - System.Runtime.CompilerServices.CallSite`1
+  - System.Runtime.CompilerServices.CallSiteBinder
+  - System.Runtime.CompilerServices.CallSiteHelpers
+  - System.Runtime.CompilerServices.CallSiteOps
+  - System.Runtime.CompilerServices.Closure
+  - System.Runtime.CompilerServices.CompilationRelaxations
+  - System.Runtime.CompilerServices.CompilationRelaxationsAttribute
+  - System.Runtime.CompilerServices.CompilerGeneratedAttribute
+  - System.Runtime.CompilerServices.CompilerGlobalScopeAttribute
+  - System.Runtime.CompilerServices.CompilerMarshalOverride
+  - System.Runtime.CompilerServices.ConditionalWeakTable`2
+  - System.Runtime.CompilerServices.ConditionalWeakTable`2.CreateValueCallback
+  - System.Runtime.CompilerServices.ConfiguredTaskAwaitable
+  - System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter
+  - System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1
+  - System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter
+  - System.Runtime.CompilerServices.ContractHelper
+  - System.Runtime.CompilerServices.CustomConstantAttribute
+  - System.Runtime.CompilerServices.DateTimeConstantAttribute
+  - System.Runtime.CompilerServices.DecimalConstantAttribute
+  - System.Runtime.CompilerServices.DefaultDependencyAttribute
+  - System.Runtime.CompilerServices.DependencyAttribute
+  - System.Runtime.CompilerServices.DisablePrivateReflectionAttribute
+  - System.Runtime.CompilerServices.DiscardableAttribute
+  - System.Runtime.CompilerServices.DynamicAttribute
+  - System.Runtime.CompilerServices.ExtensionAttribute
+  - System.Runtime.CompilerServices.FixedAddressValueTypeAttribute
+  - System.Runtime.CompilerServices.FixedBufferAttribute
+  - System.Runtime.CompilerServices.FormattableStringFactory
+  - System.Runtime.CompilerServices.HasCopySemanticsAttribute
+  - System.Runtime.CompilerServices.IAsyncStateMachine
+  - System.Runtime.CompilerServices.ICastable
+  - System.Runtime.CompilerServices.ICriticalNotifyCompletion
+  - System.Runtime.CompilerServices.IDispatchConstantAttribute
+  - System.Runtime.CompilerServices.IndexerNameAttribute
+  - System.Runtime.CompilerServices.INotifyCompletion
+  - System.Runtime.CompilerServices.InternalsVisibleToAttribute
+  - System.Runtime.CompilerServices.IRuntimeVariables
+  - System.Runtime.CompilerServices.IsBoxed
+  - System.Runtime.CompilerServices.IsByValue
+  - System.Runtime.CompilerServices.IsConst
+  - System.Runtime.CompilerServices.IsCopyConstructed
+  - System.Runtime.CompilerServices.IsExplicitlyDereferenced
+  - System.Runtime.CompilerServices.IsImplicitlyDereferenced
+  - System.Runtime.CompilerServices.IsJitIntrinsic
+  - System.Runtime.CompilerServices.IsLong
+  - System.Runtime.CompilerServices.IsPinned
+  - System.Runtime.CompilerServices.IsSignUnspecifiedByte
+  - System.Runtime.CompilerServices.IStrongBox
+  - System.Runtime.CompilerServices.IsUdtReturn
+  - System.Runtime.CompilerServices.IsVolatile
+  - System.Runtime.CompilerServices.IteratorStateMachineAttribute
+  - System.Runtime.CompilerServices.IUnknownConstantAttribute
+  - System.Runtime.CompilerServices.LoadHint
+  - System.Runtime.CompilerServices.MethodCodeType
+  - System.Runtime.CompilerServices.MethodImplAttribute
+  - System.Runtime.CompilerServices.MethodImplOptions
+  - System.Runtime.CompilerServices.NativeCppClassAttribute
+  - System.Runtime.CompilerServices.ReferenceAssemblyAttribute
+  - System.Runtime.CompilerServices.RequiredAttributeAttribute
+  - System.Runtime.CompilerServices.RuleCache`1
+  - System.Runtime.CompilerServices.RuntimeCompatibilityAttribute
+  - System.Runtime.CompilerServices.RuntimeHelpers
+  - System.Runtime.CompilerServices.RuntimeHelpers.CleanupCode
+  - System.Runtime.CompilerServices.RuntimeHelpers.TryCode
+  - System.Runtime.CompilerServices.RuntimeOps
+  - System.Runtime.CompilerServices.RuntimeWrappedException
+  - System.Runtime.CompilerServices.ScopelessEnumAttribute
+  - System.Runtime.CompilerServices.SpecialNameAttribute
+  - System.Runtime.CompilerServices.StateMachineAttribute
+  - System.Runtime.CompilerServices.StringFreezingAttribute
+  - System.Runtime.CompilerServices.StrongBox`1
+  - System.Runtime.CompilerServices.SuppressIldasmAttribute
+  - System.Runtime.CompilerServices.TaskAwaiter
+  - System.Runtime.CompilerServices.TaskAwaiter`1
+  - System.Runtime.CompilerServices.TypeForwardedFromAttribute
+  - System.Runtime.CompilerServices.TypeForwardedToAttribute
+  - System.Runtime.CompilerServices.UnsafeValueTypeAttribute
+  - System.Runtime.CompilerServices.YieldAwaitable
+  - System.Runtime.CompilerServices.YieldAwaitable.YieldAwaiter
+  href: System.Runtime.CompilerServices.yml
+  name: System.Runtime.CompilerServices
+  fullName: System.Runtime.CompilerServices
+  type: Namespace
+  source:
+    remote:
+      path: src/System.Runtime/src/System/Runtime/CompilerServices/StrongBox.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Runtime/src/System/Runtime/CompilerServices/StrongBox.cs
+    startLine: 3
+  assemblies:
+  - System.Runtime.CoreCLR
+  summary: The @'System.Runtime.CompilerServices' namespace provides functionality for compiler writers who use managed code to specify attributes in metadata that affect the run-time behavior of the common language runtime.
+references:
+- uid: System.Runtime.CompilerServices.StrongBox`1
+  isExternal: false
+  href: System.Runtime.CompilerServices.StrongBox`1.yml
+  name: StrongBox<T>
+  name.vb: StrongBox(Of T)
+  fullName: System.Runtime.CompilerServices.StrongBox<T>
+  fullName.vb: System.Runtime.CompilerServices.StrongBox(Of T)
+  type: Class
+  summary: Holds a reference to a value.
+  spec.csharp:
+  - uid: System.Runtime.CompilerServices.StrongBox`1
+    name: StrongBox
+    fullName: System.Runtime.CompilerServices.StrongBox
+    href: System.Runtime.CompilerServices.StrongBox`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Runtime.CompilerServices.StrongBox`1
+    name: StrongBox
+    fullName: System.Runtime.CompilerServices.StrongBox
+    href: System.Runtime.CompilerServices.StrongBox`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Runtime.CompilerServices.IStrongBox
+  parent: System.Runtime.CompilerServices
+  isExternal: false
+  href: System.Runtime.CompilerServices.IStrongBox.yml
+  name: IStrongBox
+  fullName: System.Runtime.CompilerServices.IStrongBox
+  type: Interface
+  summary: Defines a property for accessing the value that an object references.
+- uid: System.Runtime.CompilerServices.StringFreezingAttribute
+  isExternal: false
+  href: System.Runtime.CompilerServices.StringFreezingAttribute.yml
+  name: StringFreezingAttribute
+  fullName: System.Runtime.CompilerServices.StringFreezingAttribute
+  type: Class
+- uid: System.Runtime.CompilerServices.ContractHelper
+  isExternal: false
+  href: System.Runtime.CompilerServices.ContractHelper.yml
+  name: ContractHelper
+  fullName: System.Runtime.CompilerServices.ContractHelper
+  type: Class
+- uid: System.Runtime.CompilerServices.AccessedThroughPropertyAttribute
+  isExternal: false
+  href: System.Runtime.CompilerServices.AccessedThroughPropertyAttribute.yml
+  name: AccessedThroughPropertyAttribute
+  fullName: System.Runtime.CompilerServices.AccessedThroughPropertyAttribute
+  type: Class
+- uid: System.Runtime.CompilerServices.CallConvCdecl
+  isExternal: false
+  href: System.Runtime.CompilerServices.CallConvCdecl.yml
+  name: CallConvCdecl
+  fullName: System.Runtime.CompilerServices.CallConvCdecl
+  type: Class
+- uid: System.Runtime.CompilerServices.CallConvStdcall
+  isExternal: false
+  href: System.Runtime.CompilerServices.CallConvStdcall.yml
+  name: CallConvStdcall
+  fullName: System.Runtime.CompilerServices.CallConvStdcall
+  type: Class
+- uid: System.Runtime.CompilerServices.CallConvThiscall
+  isExternal: false
+  href: System.Runtime.CompilerServices.CallConvThiscall.yml
+  name: CallConvThiscall
+  fullName: System.Runtime.CompilerServices.CallConvThiscall
+  type: Class
+- uid: System.Runtime.CompilerServices.CallConvFastcall
+  isExternal: false
+  href: System.Runtime.CompilerServices.CallConvFastcall.yml
+  name: CallConvFastcall
+  fullName: System.Runtime.CompilerServices.CallConvFastcall
+  type: Class
+- uid: System.Runtime.CompilerServices.RuntimeHelpers
+  isExternal: false
+  href: System.Runtime.CompilerServices.RuntimeHelpers.yml
+  name: RuntimeHelpers
+  fullName: System.Runtime.CompilerServices.RuntimeHelpers
+  type: Class
+- uid: System.Runtime.CompilerServices.RuntimeHelpers.TryCode
+  parent: System.Runtime.CompilerServices
+  isExternal: false
+  href: System.Runtime.CompilerServices.RuntimeHelpers.TryCode.yml
+  name: RuntimeHelpers.TryCode
+  fullName: System.Runtime.CompilerServices.RuntimeHelpers.TryCode
+  type: Delegate
+- uid: System.Runtime.CompilerServices.RuntimeHelpers.CleanupCode
+  parent: System.Runtime.CompilerServices
+  isExternal: false
+  href: System.Runtime.CompilerServices.RuntimeHelpers.CleanupCode.yml
+  name: RuntimeHelpers.CleanupCode
+  fullName: System.Runtime.CompilerServices.RuntimeHelpers.CleanupCode
+  type: Delegate
+- uid: System.Runtime.CompilerServices.CompilerGeneratedAttribute
+  isExternal: false
+  href: System.Runtime.CompilerServices.CompilerGeneratedAttribute.yml
+  name: CompilerGeneratedAttribute
+  fullName: System.Runtime.CompilerServices.CompilerGeneratedAttribute
+  type: Class
+- uid: System.Runtime.CompilerServices.CustomConstantAttribute
+  isExternal: false
+  href: System.Runtime.CompilerServices.CustomConstantAttribute.yml
+  name: CustomConstantAttribute
+  fullName: System.Runtime.CompilerServices.CustomConstantAttribute
+  type: Class
+- uid: System.Runtime.CompilerServices.DateTimeConstantAttribute
+  isExternal: false
+  href: System.Runtime.CompilerServices.DateTimeConstantAttribute.yml
+  name: DateTimeConstantAttribute
+  fullName: System.Runtime.CompilerServices.DateTimeConstantAttribute
+  type: Class
+- uid: System.Runtime.CompilerServices.DiscardableAttribute
+  isExternal: false
+  href: System.Runtime.CompilerServices.DiscardableAttribute.yml
+  name: DiscardableAttribute
+  fullName: System.Runtime.CompilerServices.DiscardableAttribute
+  type: Class
+- uid: System.Runtime.CompilerServices.DecimalConstantAttribute
+  isExternal: false
+  href: System.Runtime.CompilerServices.DecimalConstantAttribute.yml
+  name: DecimalConstantAttribute
+  fullName: System.Runtime.CompilerServices.DecimalConstantAttribute
+  type: Class
+- uid: System.Runtime.CompilerServices.DisablePrivateReflectionAttribute
+  isExternal: false
+  href: System.Runtime.CompilerServices.DisablePrivateReflectionAttribute.yml
+  name: DisablePrivateReflectionAttribute
+  fullName: System.Runtime.CompilerServices.DisablePrivateReflectionAttribute
+  type: Class
+- uid: System.Runtime.CompilerServices.CompilationRelaxations
+  parent: System.Runtime.CompilerServices
+  isExternal: false
+  href: System.Runtime.CompilerServices.CompilationRelaxations.yml
+  name: CompilationRelaxations
+  fullName: System.Runtime.CompilerServices.CompilationRelaxations
+  type: Enum
+- uid: System.Runtime.CompilerServices.CompilationRelaxationsAttribute
+  isExternal: false
+  href: System.Runtime.CompilerServices.CompilationRelaxationsAttribute.yml
+  name: CompilationRelaxationsAttribute
+  fullName: System.Runtime.CompilerServices.CompilationRelaxationsAttribute
+  type: Class
+- uid: System.Runtime.CompilerServices.CompilerGlobalScopeAttribute
+  isExternal: false
+  href: System.Runtime.CompilerServices.CompilerGlobalScopeAttribute.yml
+  name: CompilerGlobalScopeAttribute
+  fullName: System.Runtime.CompilerServices.CompilerGlobalScopeAttribute
+  type: Class
+- uid: System.Runtime.CompilerServices.ExtensionAttribute
+  isExternal: false
+  href: System.Runtime.CompilerServices.ExtensionAttribute.yml
+  name: ExtensionAttribute
+  fullName: System.Runtime.CompilerServices.ExtensionAttribute
+  type: Class
+  summary: Indicates that a method is an extension method, or that a class or assembly contains extension methods.
+- uid: System.Runtime.CompilerServices.FormattableStringFactory
+  isExternal: false
+  href: System.Runtime.CompilerServices.FormattableStringFactory.yml
+  name: FormattableStringFactory
+  fullName: System.Runtime.CompilerServices.FormattableStringFactory
+  type: Class
+  summary: A factory type used by compilers to create instances of the type @'System.FormattableString'.
+- uid: System.Runtime.CompilerServices.FixedBufferAttribute
+  isExternal: false
+  href: System.Runtime.CompilerServices.FixedBufferAttribute.yml
+  name: FixedBufferAttribute
+  fullName: System.Runtime.CompilerServices.FixedBufferAttribute
+  type: Class
+- uid: System.Runtime.CompilerServices.IndexerNameAttribute
+  isExternal: false
+  href: System.Runtime.CompilerServices.IndexerNameAttribute.yml
+  name: IndexerNameAttribute
+  fullName: System.Runtime.CompilerServices.IndexerNameAttribute
+  type: Class
+- uid: System.Runtime.CompilerServices.InternalsVisibleToAttribute
+  isExternal: false
+  href: System.Runtime.CompilerServices.InternalsVisibleToAttribute.yml
+  name: InternalsVisibleToAttribute
+  fullName: System.Runtime.CompilerServices.InternalsVisibleToAttribute
+  type: Class
+- uid: System.Runtime.CompilerServices.IsVolatile
+  isExternal: false
+  href: System.Runtime.CompilerServices.IsVolatile.yml
+  name: IsVolatile
+  fullName: System.Runtime.CompilerServices.IsVolatile
+  type: Class
+- uid: System.Runtime.CompilerServices.MethodImplOptions
+  parent: System.Runtime.CompilerServices
+  isExternal: false
+  href: System.Runtime.CompilerServices.MethodImplOptions.yml
+  name: MethodImplOptions
+  fullName: System.Runtime.CompilerServices.MethodImplOptions
+  type: Enum
+- uid: System.Runtime.CompilerServices.MethodCodeType
+  parent: System.Runtime.CompilerServices
+  isExternal: false
+  href: System.Runtime.CompilerServices.MethodCodeType.yml
+  name: MethodCodeType
+  fullName: System.Runtime.CompilerServices.MethodCodeType
+  type: Enum
+- uid: System.Runtime.CompilerServices.MethodImplAttribute
+  isExternal: false
+  href: System.Runtime.CompilerServices.MethodImplAttribute.yml
+  name: MethodImplAttribute
+  fullName: System.Runtime.CompilerServices.MethodImplAttribute
+  type: Class
+- uid: System.Runtime.CompilerServices.FixedAddressValueTypeAttribute
+  isExternal: false
+  href: System.Runtime.CompilerServices.FixedAddressValueTypeAttribute.yml
+  name: FixedAddressValueTypeAttribute
+  fullName: System.Runtime.CompilerServices.FixedAddressValueTypeAttribute
+  type: Class
+- uid: System.Runtime.CompilerServices.UnsafeValueTypeAttribute
+  isExternal: false
+  href: System.Runtime.CompilerServices.UnsafeValueTypeAttribute.yml
+  name: UnsafeValueTypeAttribute
+  fullName: System.Runtime.CompilerServices.UnsafeValueTypeAttribute
+  type: Class
+- uid: System.Runtime.CompilerServices.RequiredAttributeAttribute
+  isExternal: false
+  href: System.Runtime.CompilerServices.RequiredAttributeAttribute.yml
+  name: RequiredAttributeAttribute
+  fullName: System.Runtime.CompilerServices.RequiredAttributeAttribute
+  type: Class
+- uid: System.Runtime.CompilerServices.LoadHint
+  parent: System.Runtime.CompilerServices
+  isExternal: false
+  href: System.Runtime.CompilerServices.LoadHint.yml
+  name: LoadHint
+  fullName: System.Runtime.CompilerServices.LoadHint
+  type: Enum
+- uid: System.Runtime.CompilerServices.DefaultDependencyAttribute
+  isExternal: false
+  href: System.Runtime.CompilerServices.DefaultDependencyAttribute.yml
+  name: DefaultDependencyAttribute
+  fullName: System.Runtime.CompilerServices.DefaultDependencyAttribute
+  type: Class
+- uid: System.Runtime.CompilerServices.DependencyAttribute
+  isExternal: false
+  href: System.Runtime.CompilerServices.DependencyAttribute.yml
+  name: DependencyAttribute
+  fullName: System.Runtime.CompilerServices.DependencyAttribute
+  type: Class
+- uid: System.Runtime.CompilerServices.CompilerMarshalOverride
+  isExternal: false
+  href: System.Runtime.CompilerServices.CompilerMarshalOverride.yml
+  name: CompilerMarshalOverride
+  fullName: System.Runtime.CompilerServices.CompilerMarshalOverride
+  type: Class
+- uid: System.Runtime.CompilerServices.HasCopySemanticsAttribute
+  isExternal: false
+  href: System.Runtime.CompilerServices.HasCopySemanticsAttribute.yml
+  name: HasCopySemanticsAttribute
+  fullName: System.Runtime.CompilerServices.HasCopySemanticsAttribute
+  type: Class
+- uid: System.Runtime.CompilerServices.IsBoxed
+  isExternal: false
+  href: System.Runtime.CompilerServices.IsBoxed.yml
+  name: IsBoxed
+  fullName: System.Runtime.CompilerServices.IsBoxed
+  type: Class
+- uid: System.Runtime.CompilerServices.IsByValue
+  isExternal: false
+  href: System.Runtime.CompilerServices.IsByValue.yml
+  name: IsByValue
+  fullName: System.Runtime.CompilerServices.IsByValue
+  type: Class
+- uid: System.Runtime.CompilerServices.IsConst
+  isExternal: false
+  href: System.Runtime.CompilerServices.IsConst.yml
+  name: IsConst
+  fullName: System.Runtime.CompilerServices.IsConst
+  type: Class
+- uid: System.Runtime.CompilerServices.IsExplicitlyDereferenced
+  isExternal: false
+  href: System.Runtime.CompilerServices.IsExplicitlyDereferenced.yml
+  name: IsExplicitlyDereferenced
+  fullName: System.Runtime.CompilerServices.IsExplicitlyDereferenced
+  type: Class
+- uid: System.Runtime.CompilerServices.IsImplicitlyDereferenced
+  isExternal: false
+  href: System.Runtime.CompilerServices.IsImplicitlyDereferenced.yml
+  name: IsImplicitlyDereferenced
+  fullName: System.Runtime.CompilerServices.IsImplicitlyDereferenced
+  type: Class
+- uid: System.Runtime.CompilerServices.IsJitIntrinsic
+  isExternal: false
+  href: System.Runtime.CompilerServices.IsJitIntrinsic.yml
+  name: IsJitIntrinsic
+  fullName: System.Runtime.CompilerServices.IsJitIntrinsic
+  type: Class
+- uid: System.Runtime.CompilerServices.IsLong
+  isExternal: false
+  href: System.Runtime.CompilerServices.IsLong.yml
+  name: IsLong
+  fullName: System.Runtime.CompilerServices.IsLong
+  type: Class
+- uid: System.Runtime.CompilerServices.IsPinned
+  isExternal: false
+  href: System.Runtime.CompilerServices.IsPinned.yml
+  name: IsPinned
+  fullName: System.Runtime.CompilerServices.IsPinned
+  type: Class
+- uid: System.Runtime.CompilerServices.IsSignUnspecifiedByte
+  isExternal: false
+  href: System.Runtime.CompilerServices.IsSignUnspecifiedByte.yml
+  name: IsSignUnspecifiedByte
+  fullName: System.Runtime.CompilerServices.IsSignUnspecifiedByte
+  type: Class
+- uid: System.Runtime.CompilerServices.IsUdtReturn
+  isExternal: false
+  href: System.Runtime.CompilerServices.IsUdtReturn.yml
+  name: IsUdtReturn
+  fullName: System.Runtime.CompilerServices.IsUdtReturn
+  type: Class
+- uid: System.Runtime.CompilerServices.ScopelessEnumAttribute
+  isExternal: false
+  href: System.Runtime.CompilerServices.ScopelessEnumAttribute.yml
+  name: ScopelessEnumAttribute
+  fullName: System.Runtime.CompilerServices.ScopelessEnumAttribute
+  type: Class
+- uid: System.Runtime.CompilerServices.SpecialNameAttribute
+  isExternal: false
+  href: System.Runtime.CompilerServices.SpecialNameAttribute.yml
+  name: SpecialNameAttribute
+  fullName: System.Runtime.CompilerServices.SpecialNameAttribute
+  type: Class
+- uid: System.Runtime.CompilerServices.IsCopyConstructed
+  isExternal: false
+  href: System.Runtime.CompilerServices.IsCopyConstructed.yml
+  name: IsCopyConstructed
+  fullName: System.Runtime.CompilerServices.IsCopyConstructed
+  type: Class
+- uid: System.Runtime.CompilerServices.ICastable
+  isExternal: false
+  href: System.Runtime.CompilerServices.ICastable.yml
+  name: ICastable
+  fullName: System.Runtime.CompilerServices.ICastable
+  type: Interface
+- uid: System.Runtime.CompilerServices.SuppressIldasmAttribute
+  isExternal: false
+  href: System.Runtime.CompilerServices.SuppressIldasmAttribute.yml
+  name: SuppressIldasmAttribute
+  fullName: System.Runtime.CompilerServices.SuppressIldasmAttribute
+  type: Class
+- uid: System.Runtime.CompilerServices.NativeCppClassAttribute
+  isExternal: false
+  href: System.Runtime.CompilerServices.NativeCppClassAttribute.yml
+  name: NativeCppClassAttribute
+  fullName: System.Runtime.CompilerServices.NativeCppClassAttribute
+  type: Class
+- uid: System.Runtime.CompilerServices.TypeForwardedToAttribute
+  isExternal: false
+  href: System.Runtime.CompilerServices.TypeForwardedToAttribute.yml
+  name: TypeForwardedToAttribute
+  fullName: System.Runtime.CompilerServices.TypeForwardedToAttribute
+  type: Class
+- uid: System.Runtime.CompilerServices.TypeForwardedFromAttribute
+  isExternal: false
+  href: System.Runtime.CompilerServices.TypeForwardedFromAttribute.yml
+  name: TypeForwardedFromAttribute
+  fullName: System.Runtime.CompilerServices.TypeForwardedFromAttribute
+  type: Class
+- uid: System.Runtime.CompilerServices.ReferenceAssemblyAttribute
+  isExternal: false
+  href: System.Runtime.CompilerServices.ReferenceAssemblyAttribute.yml
+  name: ReferenceAssemblyAttribute
+  fullName: System.Runtime.CompilerServices.ReferenceAssemblyAttribute
+  type: Class
+- uid: System.Runtime.CompilerServices.RuntimeCompatibilityAttribute
+  isExternal: false
+  href: System.Runtime.CompilerServices.RuntimeCompatibilityAttribute.yml
+  name: RuntimeCompatibilityAttribute
+  fullName: System.Runtime.CompilerServices.RuntimeCompatibilityAttribute
+  type: Class
+- uid: System.Runtime.CompilerServices.RuntimeWrappedException
+  isExternal: false
+  href: System.Runtime.CompilerServices.RuntimeWrappedException.yml
+  name: RuntimeWrappedException
+  fullName: System.Runtime.CompilerServices.RuntimeWrappedException
+  type: Class
+- uid: System.Runtime.CompilerServices.ConditionalWeakTable`2
+  isExternal: false
+  href: System.Runtime.CompilerServices.ConditionalWeakTable`2.yml
+  name: ConditionalWeakTable<TKey, TValue>
+  name.vb: ConditionalWeakTable(Of TKey, TValue)
+  fullName: System.Runtime.CompilerServices.ConditionalWeakTable<TKey, TValue>
+  fullName.vb: System.Runtime.CompilerServices.ConditionalWeakTable(Of TKey, TValue)
+  type: Class
+  spec.csharp:
+  - uid: System.Runtime.CompilerServices.ConditionalWeakTable`2
+    name: ConditionalWeakTable
+    fullName: System.Runtime.CompilerServices.ConditionalWeakTable
+    href: System.Runtime.CompilerServices.ConditionalWeakTable`2.yml
+  - name: <
+    fullName: <
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Runtime.CompilerServices.ConditionalWeakTable`2
+    name: ConditionalWeakTable
+    fullName: System.Runtime.CompilerServices.ConditionalWeakTable
+    href: System.Runtime.CompilerServices.ConditionalWeakTable`2.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: )
+    fullName: )
+- uid: System.Runtime.CompilerServices.ConditionalWeakTable`2.CreateValueCallback
+  parent: System.Runtime.CompilerServices
+  isExternal: false
+  href: System.Runtime.CompilerServices.ConditionalWeakTable`2.CreateValueCallback.yml
+  name: ConditionalWeakTable.CreateValueCallback<>
+  name.vb: ConditionalWeakTable.CreateValueCallback(Of )
+  fullName: System.Runtime.CompilerServices.ConditionalWeakTable.CreateValueCallback<>
+  fullName.vb: System.Runtime.CompilerServices.ConditionalWeakTable.CreateValueCallback(Of )
+  type: Delegate
+  spec.csharp:
+  - uid: System.Runtime.CompilerServices.ConditionalWeakTable`2.CreateValueCallback
+    name: ConditionalWeakTable.CreateValueCallback
+    fullName: System.Runtime.CompilerServices.ConditionalWeakTable.CreateValueCallback
+    href: System.Runtime.CompilerServices.ConditionalWeakTable`2.CreateValueCallback.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Runtime.CompilerServices.ConditionalWeakTable`2.CreateValueCallback
+    name: ConditionalWeakTable.CreateValueCallback
+    fullName: System.Runtime.CompilerServices.ConditionalWeakTable.CreateValueCallback
+    href: System.Runtime.CompilerServices.ConditionalWeakTable`2.CreateValueCallback.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Runtime.CompilerServices.CallerFilePathAttribute
+  isExternal: false
+  href: System.Runtime.CompilerServices.CallerFilePathAttribute.yml
+  name: CallerFilePathAttribute
+  fullName: System.Runtime.CompilerServices.CallerFilePathAttribute
+  type: Class
+- uid: System.Runtime.CompilerServices.CallerLineNumberAttribute
+  isExternal: false
+  href: System.Runtime.CompilerServices.CallerLineNumberAttribute.yml
+  name: CallerLineNumberAttribute
+  fullName: System.Runtime.CompilerServices.CallerLineNumberAttribute
+  type: Class
+- uid: System.Runtime.CompilerServices.CallerMemberNameAttribute
+  isExternal: false
+  href: System.Runtime.CompilerServices.CallerMemberNameAttribute.yml
+  name: CallerMemberNameAttribute
+  fullName: System.Runtime.CompilerServices.CallerMemberNameAttribute
+  type: Class
+- uid: System.Runtime.CompilerServices.StateMachineAttribute
+  isExternal: false
+  href: System.Runtime.CompilerServices.StateMachineAttribute.yml
+  name: StateMachineAttribute
+  fullName: System.Runtime.CompilerServices.StateMachineAttribute
+  type: Class
+- uid: System.Runtime.CompilerServices.IteratorStateMachineAttribute
+  isExternal: false
+  href: System.Runtime.CompilerServices.IteratorStateMachineAttribute.yml
+  name: IteratorStateMachineAttribute
+  fullName: System.Runtime.CompilerServices.IteratorStateMachineAttribute
+  type: Class
+- uid: System.Runtime.CompilerServices.AsyncStateMachineAttribute
+  isExternal: false
+  href: System.Runtime.CompilerServices.AsyncStateMachineAttribute.yml
+  name: AsyncStateMachineAttribute
+  fullName: System.Runtime.CompilerServices.AsyncStateMachineAttribute
+  type: Class
+- uid: System.Runtime.CompilerServices.AsyncVoidMethodBuilder
+  parent: System.Runtime.CompilerServices
+  isExternal: false
+  href: System.Runtime.CompilerServices.AsyncVoidMethodBuilder.yml
+  name: AsyncVoidMethodBuilder
+  fullName: System.Runtime.CompilerServices.AsyncVoidMethodBuilder
+  type: Struct
+  summary: >-
+    Provides a builder for asynchronous methods that return void.
+
+    This type is intended for compiler use only.
+- uid: System.Runtime.CompilerServices.AsyncTaskMethodBuilder
+  parent: System.Runtime.CompilerServices
+  isExternal: false
+  href: System.Runtime.CompilerServices.AsyncTaskMethodBuilder.yml
+  name: AsyncTaskMethodBuilder
+  fullName: System.Runtime.CompilerServices.AsyncTaskMethodBuilder
+  type: Struct
+  summary: >-
+    Provides a builder for asynchronous methods that return @'System.Threading.Tasks.Task'.
+
+    This type is intended for compiler use only.
+- uid: System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1
+  parent: System.Runtime.CompilerServices
+  isExternal: false
+  href: System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.yml
+  name: AsyncTaskMethodBuilder<TResult>
+  name.vb: AsyncTaskMethodBuilder(Of TResult)
+  fullName: System.Runtime.CompilerServices.AsyncTaskMethodBuilder<TResult>
+  fullName.vb: System.Runtime.CompilerServices.AsyncTaskMethodBuilder(Of TResult)
+  type: Struct
+  summary: >-
+    Provides a builder for asynchronous methods that return @'System.Threading.Tasks.Task`1'.
+
+    This type is intended for compiler use only.
+  spec.csharp:
+  - uid: System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1
+    name: AsyncTaskMethodBuilder
+    fullName: System.Runtime.CompilerServices.AsyncTaskMethodBuilder
+    href: System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.yml
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1
+    name: AsyncTaskMethodBuilder
+    fullName: System.Runtime.CompilerServices.AsyncTaskMethodBuilder
+    href: System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Runtime.CompilerServices.IAsyncStateMachine
+  parent: System.Runtime.CompilerServices
+  isExternal: false
+  href: System.Runtime.CompilerServices.IAsyncStateMachine.yml
+  name: IAsyncStateMachine
+  fullName: System.Runtime.CompilerServices.IAsyncStateMachine
+  type: Interface
+  summary: >-
+    Represents state machines generated for asynchronous methods.
+
+    This type is intended for compiler use only.
+- uid: System.Runtime.CompilerServices.INotifyCompletion
+  isExternal: false
+  href: System.Runtime.CompilerServices.INotifyCompletion.yml
+  name: INotifyCompletion
+  fullName: System.Runtime.CompilerServices.INotifyCompletion
+  type: Interface
+  summary: Represents an operation that will schedule continuations when the operation completes.
+- uid: System.Runtime.CompilerServices.ICriticalNotifyCompletion
+  isExternal: false
+  href: System.Runtime.CompilerServices.ICriticalNotifyCompletion.yml
+  name: ICriticalNotifyCompletion
+  fullName: System.Runtime.CompilerServices.ICriticalNotifyCompletion
+  type: Interface
+  summary: Represents an awaiter used to schedule continuations when an await operation completes.
+- uid: System.Runtime.CompilerServices.TaskAwaiter
+  isExternal: false
+  href: System.Runtime.CompilerServices.TaskAwaiter.yml
+  name: TaskAwaiter
+  fullName: System.Runtime.CompilerServices.TaskAwaiter
+  type: Struct
+  summary: Provides an awaiter for awaiting a @'System.Threading.Tasks.Task'.
+- uid: System.Runtime.CompilerServices.TaskAwaiter`1
+  isExternal: false
+  href: System.Runtime.CompilerServices.TaskAwaiter`1.yml
+  name: TaskAwaiter<TResult>
+  name.vb: TaskAwaiter(Of TResult)
+  fullName: System.Runtime.CompilerServices.TaskAwaiter<TResult>
+  fullName.vb: System.Runtime.CompilerServices.TaskAwaiter(Of TResult)
+  type: Struct
+  summary: Provides an awaiter for awaiting a @'System.Threading.Tasks.Task`1'.
+  spec.csharp:
+  - uid: System.Runtime.CompilerServices.TaskAwaiter`1
+    name: TaskAwaiter
+    fullName: System.Runtime.CompilerServices.TaskAwaiter
+    href: System.Runtime.CompilerServices.TaskAwaiter`1.yml
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Runtime.CompilerServices.TaskAwaiter`1
+    name: TaskAwaiter
+    fullName: System.Runtime.CompilerServices.TaskAwaiter
+    href: System.Runtime.CompilerServices.TaskAwaiter`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Runtime.CompilerServices.ConfiguredTaskAwaitable
+  isExternal: false
+  href: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.yml
+  name: ConfiguredTaskAwaitable
+  fullName: System.Runtime.CompilerServices.ConfiguredTaskAwaitable
+  type: Struct
+  summary: Provides an awaitable object that allows for configured awaits on @'System.Threading.Tasks.Task'.
+- uid: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter
+  parent: System.Runtime.CompilerServices
+  isExternal: false
+  href: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.yml
+  name: ConfiguredTaskAwaitable.ConfiguredTaskAwaiter
+  fullName: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter
+  type: Struct
+  summary: Provides an awaiter for a @'System.Runtime.CompilerServices.ConfiguredTaskAwaitable'.
+- uid: System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1
+  isExternal: false
+  href: System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.yml
+  name: ConfiguredTaskAwaitable<TResult>
+  name.vb: ConfiguredTaskAwaitable(Of TResult)
+  fullName: System.Runtime.CompilerServices.ConfiguredTaskAwaitable<TResult>
+  fullName.vb: System.Runtime.CompilerServices.ConfiguredTaskAwaitable(Of TResult)
+  type: Struct
+  summary: Provides an awaitable object that allows for configured awaits on @'System.Threading.Tasks.Task`1'.
+  spec.csharp:
+  - uid: System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1
+    name: ConfiguredTaskAwaitable
+    fullName: System.Runtime.CompilerServices.ConfiguredTaskAwaitable
+    href: System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.yml
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1
+    name: ConfiguredTaskAwaitable
+    fullName: System.Runtime.CompilerServices.ConfiguredTaskAwaitable
+    href: System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter
+  parent: System.Runtime.CompilerServices
+  isExternal: false
+  href: System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.yml
+  name: ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<>
+  name.vb: ConfiguredTaskAwaitable.ConfiguredTaskAwaiter(Of )
+  fullName: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<>
+  fullName.vb: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter(Of )
+  type: Struct
+  summary: Provides an awaiter for a @'System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1'.
+  spec.csharp:
+  - uid: System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter
+    name: ConfiguredTaskAwaitable.ConfiguredTaskAwaiter
+    fullName: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter
+    href: System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter
+    name: ConfiguredTaskAwaitable.ConfiguredTaskAwaiter
+    fullName: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter
+    href: System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Runtime.CompilerServices.YieldAwaitable
+  isExternal: false
+  href: System.Runtime.CompilerServices.YieldAwaitable.yml
+  name: YieldAwaitable
+  fullName: System.Runtime.CompilerServices.YieldAwaitable
+  type: Struct
+  summary: Provides an awaitable context for switching into a target environment.
+- uid: System.Runtime.CompilerServices.YieldAwaitable.YieldAwaiter
+  parent: System.Runtime.CompilerServices
+  isExternal: false
+  href: System.Runtime.CompilerServices.YieldAwaitable.YieldAwaiter.yml
+  name: YieldAwaitable.YieldAwaiter
+  fullName: System.Runtime.CompilerServices.YieldAwaitable.YieldAwaiter
+  type: Struct
+  summary: Provides an awaiter that switches into a target environment.
+- uid: System.Runtime.CompilerServices.IDispatchConstantAttribute
+  isExternal: false
+  href: System.Runtime.CompilerServices.IDispatchConstantAttribute.yml
+  name: IDispatchConstantAttribute
+  fullName: System.Runtime.CompilerServices.IDispatchConstantAttribute
+  type: Class
+- uid: System.Runtime.CompilerServices.IUnknownConstantAttribute
+  isExternal: false
+  href: System.Runtime.CompilerServices.IUnknownConstantAttribute.yml
+  name: IUnknownConstantAttribute
+  fullName: System.Runtime.CompilerServices.IUnknownConstantAttribute
+  type: Class
+- uid: System.Runtime.CompilerServices.IRuntimeVariables
+  isExternal: false
+  href: System.Runtime.CompilerServices.IRuntimeVariables.yml
+  name: IRuntimeVariables
+  fullName: System.Runtime.CompilerServices.IRuntimeVariables
+  type: Interface
+  summary: An interface to represent values of runtime variables.
+- uid: System.Runtime.CompilerServices.Closure
+  isExternal: false
+  href: System.Runtime.CompilerServices.Closure.yml
+  name: Closure
+  fullName: System.Runtime.CompilerServices.Closure
+  type: Class
+  summary: >-
+    This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.
+
+    Represents the runtime state of a dynamically generated method.
+- uid: System.Runtime.CompilerServices.RuntimeOps
+  isExternal: false
+  href: System.Runtime.CompilerServices.RuntimeOps.yml
+  name: RuntimeOps
+  fullName: System.Runtime.CompilerServices.RuntimeOps
+  type: Class
+  summary: >-
+    This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.
+
+    Contains helper methods called from dynamically generated methods.
+- uid: System.Runtime.CompilerServices.CallSite
+  parent: System.Runtime.CompilerServices
+  isExternal: false
+  href: System.Runtime.CompilerServices.CallSite.yml
+  name: CallSite
+  fullName: System.Runtime.CompilerServices.CallSite
+  type: Class
+  summary: >-
+    A Dynamic Call Site base class. This type is used as a parameter type to the
+
+    dynamic site targets. The first parameter of the delegate (T) below must be
+
+    of this type.
+- uid: System.Runtime.CompilerServices.CallSite`1
+  parent: System.Runtime.CompilerServices
+  isExternal: false
+  href: System.Runtime.CompilerServices.CallSite`1.yml
+  name: CallSite<T>
+  name.vb: CallSite(Of T)
+  fullName: System.Runtime.CompilerServices.CallSite<T>
+  fullName.vb: System.Runtime.CompilerServices.CallSite(Of T)
+  type: Class
+  summary: Dynamic site type.
+  spec.csharp:
+  - uid: System.Runtime.CompilerServices.CallSite`1
+    name: CallSite
+    fullName: System.Runtime.CompilerServices.CallSite
+    href: System.Runtime.CompilerServices.CallSite`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Runtime.CompilerServices.CallSite`1
+    name: CallSite
+    fullName: System.Runtime.CompilerServices.CallSite
+    href: System.Runtime.CompilerServices.CallSite`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Runtime.CompilerServices.CallSiteBinder
+  parent: System.Runtime.CompilerServices
+  isExternal: false
+  href: System.Runtime.CompilerServices.CallSiteBinder.yml
+  name: CallSiteBinder
+  fullName: System.Runtime.CompilerServices.CallSiteBinder
+  type: Class
+  summary: Class responsible for runtime binding of the dynamic operations on the dynamic call site.
+- uid: System.Runtime.CompilerServices.CallSiteOps
+  isExternal: false
+  href: System.Runtime.CompilerServices.CallSiteOps.yml
+  name: CallSiteOps
+  fullName: System.Runtime.CompilerServices.CallSiteOps
+  type: Class
+  summary: This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.
+- uid: System.Runtime.CompilerServices.CallSiteHelpers
+  isExternal: false
+  href: System.Runtime.CompilerServices.CallSiteHelpers.yml
+  name: CallSiteHelpers
+  fullName: System.Runtime.CompilerServices.CallSiteHelpers
+  type: Class
+  summary: Class that contains helper methods for DLR CallSites.
+- uid: System.Runtime.CompilerServices.DynamicAttribute
+  isExternal: false
+  href: System.Runtime.CompilerServices.DynamicAttribute.yml
+  name: DynamicAttribute
+  fullName: System.Runtime.CompilerServices.DynamicAttribute
+  type: Class
+  summary: Indicates that the use of @'System.Object' on a member is meant to be treated as a dynamically dispatched type.
+- uid: System.Runtime.CompilerServices.RuleCache`1
+  parent: System.Runtime.CompilerServices
+  isExternal: false
+  href: System.Runtime.CompilerServices.RuleCache`1.yml
+  name: RuleCache<T>
+  name.vb: RuleCache(Of T)
+  fullName: System.Runtime.CompilerServices.RuleCache<T>
+  fullName.vb: System.Runtime.CompilerServices.RuleCache(Of T)
+  type: Class
+  summary: >-
+    This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.
+
+    Represents a cache of runtime binding rules.
+  spec.csharp:
+  - uid: System.Runtime.CompilerServices.RuleCache`1
+    name: RuleCache
+    fullName: System.Runtime.CompilerServices.RuleCache
+    href: System.Runtime.CompilerServices.RuleCache`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Runtime.CompilerServices.RuleCache`1
+    name: RuleCache
+    fullName: System.Runtime.CompilerServices.RuleCache
+    href: System.Runtime.CompilerServices.RuleCache`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Runtime.CompilerServices
+  isExternal: false
+  name: System.Runtime.CompilerServices
+  fullName: System.Runtime.CompilerServices
+  type: Namespace

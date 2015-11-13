@@ -1,0 +1,1508 @@
+items:
+- uid: System.Collections.Immutable.ImmutableInterlocked
+  id: ImmutableInterlocked
+  parent: System.Collections.Immutable
+  children:
+  - System.Collections.Immutable.ImmutableInterlocked.AddOrUpdate``2(System.Collections.Immutable.ImmutableDictionary{``0,``1}@,``0,``1,System.Func{``0,``1,``1})
+  - System.Collections.Immutable.ImmutableInterlocked.AddOrUpdate``2(System.Collections.Immutable.ImmutableDictionary{``0,``1}@,``0,System.Func{``0,``1},System.Func{``0,``1,``1})
+  - System.Collections.Immutable.ImmutableInterlocked.Enqueue``1(System.Collections.Immutable.ImmutableQueue{``0}@,``0)
+  - System.Collections.Immutable.ImmutableInterlocked.GetOrAdd``2(System.Collections.Immutable.ImmutableDictionary{``0,``1}@,``0,``1)
+  - System.Collections.Immutable.ImmutableInterlocked.GetOrAdd``2(System.Collections.Immutable.ImmutableDictionary{``0,``1}@,``0,System.Func{``0,``1})
+  - System.Collections.Immutable.ImmutableInterlocked.GetOrAdd``3(System.Collections.Immutable.ImmutableDictionary{``0,``1}@,``0,System.Func{``0,``2,``1},``2)
+  - System.Collections.Immutable.ImmutableInterlocked.InterlockedCompareExchange``1(System.Collections.Immutable.ImmutableArray{``0}@,System.Collections.Immutable.ImmutableArray{``0},System.Collections.Immutable.ImmutableArray{``0})
+  - System.Collections.Immutable.ImmutableInterlocked.InterlockedExchange``1(System.Collections.Immutable.ImmutableArray{``0}@,System.Collections.Immutable.ImmutableArray{``0})
+  - System.Collections.Immutable.ImmutableInterlocked.InterlockedInitialize``1(System.Collections.Immutable.ImmutableArray{``0}@,System.Collections.Immutable.ImmutableArray{``0})
+  - System.Collections.Immutable.ImmutableInterlocked.Push``1(System.Collections.Immutable.ImmutableStack{``0}@,``0)
+  - System.Collections.Immutable.ImmutableInterlocked.TryAdd``2(System.Collections.Immutable.ImmutableDictionary{``0,``1}@,``0,``1)
+  - System.Collections.Immutable.ImmutableInterlocked.TryDequeue``1(System.Collections.Immutable.ImmutableQueue{``0}@,``0@)
+  - System.Collections.Immutable.ImmutableInterlocked.TryPop``1(System.Collections.Immutable.ImmutableStack{``0}@,``0@)
+  - System.Collections.Immutable.ImmutableInterlocked.TryRemove``2(System.Collections.Immutable.ImmutableDictionary{``0,``1}@,``0,``1@)
+  - System.Collections.Immutable.ImmutableInterlocked.TryUpdate``2(System.Collections.Immutable.ImmutableDictionary{``0,``1}@,``0,``1,``1)
+  - System.Collections.Immutable.ImmutableInterlocked.Update``1(``0@,System.Func{``0,``0})
+  - System.Collections.Immutable.ImmutableInterlocked.Update``2(``0@,System.Func{``0,``1,``0},``1)
+  href: System.Collections.Immutable.ImmutableInterlocked.yml
+  name: ImmutableInterlocked
+  fullName: System.Collections.Immutable.ImmutableInterlocked
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableInterlocked.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableInterlocked.cs
+    startLine: 12
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Contains interlocked exchange mechanisms for immutable collections.
+  syntax:
+    content: public class ImmutableInterlocked
+    content.vb: Public Class ImmutableInterlocked
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Collections.Immutable.ImmutableInterlocked.Update``1(``0@,System.Func{``0,``0})
+  id: Update``1(``0@,System.Func{``0,``0})
+  parent: System.Collections.Immutable.ImmutableInterlocked
+  href: System.Collections.Immutable.ImmutableInterlocked.yml
+  name: Update<T>(ref T, Func<T, T>)
+  name.vb: Update(Of T)(ByRef T, Func(Of T, T))
+  fullName: System.Collections.Immutable.ImmutableInterlocked.Update<T>(ref T, System.Func<T, T>)
+  fullName.vb: System.Collections.Immutable.ImmutableInterlocked.Update(Of T)(ByRef T, System.Func(Of T, T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableInterlocked.cs
+    startLine: 32
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: >-
+    Mutates a value in-place with optimistic locking transaction semantics
+
+    via a specified transformation function.
+
+    The transformation is retried as many times as necessary to win the optimistic locking race.
+  syntax:
+    content: 'public static bool Update<T>(ref T location, Func<T, T> transformer)where T : class'
+    content.vb: Public Shared Function Update(Of T As Class)(ByRef location As T, transformer As Func(Of T, T)) As Boolean
+    parameters:
+    - id: location
+      type: '{T}'
+      description: The variable or field to be changed, which may be accessed by multiple threads.
+    - id: transformer
+      type: System.Func{{T},{T}}
+      description: >-
+        A function that mutates the value. This function should be side-effect free,
+
+        as it may run multiple times when races occur with other threads.
+    typeParameters:
+    - id: T
+      description: The type of data.
+    return:
+      type: System.Boolean
+      description: >-
+        <c>true</c> if the location's value is changed by applying the result of the
+
+        <paramref name="transformer" /> function;
+
+        <c>false</c> if the location's value remained the same because the last
+
+        invocation of <paramref name="transformer" /> returned the existing value.
+- uid: System.Collections.Immutable.ImmutableInterlocked.Update``2(``0@,System.Func{``0,``1,``0},``1)
+  id: Update``2(``0@,System.Func{``0,``1,``0},``1)
+  parent: System.Collections.Immutable.ImmutableInterlocked
+  href: System.Collections.Immutable.ImmutableInterlocked.yml
+  name: Update<T, TArg>(ref T, Func<T, TArg, T>, TArg)
+  name.vb: Update(Of T, TArg)(ByRef T, Func(Of T, TArg, T), TArg)
+  fullName: System.Collections.Immutable.ImmutableInterlocked.Update<T, TArg>(ref T, System.Func<T, TArg, T>, TArg)
+  fullName.vb: System.Collections.Immutable.ImmutableInterlocked.Update(Of T, TArg)(ByRef T, System.Func(Of T, TArg, T), TArg)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableInterlocked.cs
+    startLine: 76
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: >-
+    Mutates a value in-place with optimistic locking transaction semantics
+
+    via a specified transformation function.
+
+    The transformation is retried as many times as necessary to win the optimistic locking race.
+  syntax:
+    content: 'public static bool Update<T, TArg>(ref T location, Func<T, TArg, T> transformer, TArg transformerArgument)where T : class'
+    content.vb: Public Shared Function Update(Of T As Class, TArg)(ByRef location As T, transformer As Func(Of T, TArg, T), transformerArgument As TArg) As Boolean
+    parameters:
+    - id: location
+      type: '{T}'
+      description: The variable or field to be changed, which may be accessed by multiple threads.
+    - id: transformer
+      type: System.Func{{T},{TArg},{T}}
+      description: >-
+        A function that mutates the value. This function should be side-effect free,
+
+        as it may run multiple times when races occur with other threads.
+    - id: transformerArgument
+      type: '{TArg}'
+      description: The argument to pass to <paramref name="transformer" />.
+    typeParameters:
+    - id: T
+      description: The type of data.
+    - id: TArg
+      description: The type of argument passed to the <paramref name="transformer" />.
+    return:
+      type: System.Boolean
+      description: >-
+        <c>true</c> if the location's value is changed by applying the result of the
+
+        <paramref name="transformer" /> function;
+
+        <c>false</c> if the location's value remained the same because the last
+
+        invocation of <paramref name="transformer" /> returned the existing value.
+- uid: System.Collections.Immutable.ImmutableInterlocked.InterlockedExchange``1(System.Collections.Immutable.ImmutableArray{``0}@,System.Collections.Immutable.ImmutableArray{``0})
+  id: InterlockedExchange``1(System.Collections.Immutable.ImmutableArray{``0}@,System.Collections.Immutable.ImmutableArray{``0})
+  parent: System.Collections.Immutable.ImmutableInterlocked
+  href: System.Collections.Immutable.ImmutableInterlocked.yml
+  name: InterlockedExchange<T>(ref ImmutableArray<T>, ImmutableArray<T>)
+  name.vb: InterlockedExchange(Of T)(ByRef ImmutableArray(Of T), ImmutableArray(Of T))
+  fullName: System.Collections.Immutable.ImmutableInterlocked.InterlockedExchange<T>(ref System.Collections.Immutable.ImmutableArray<T>, System.Collections.Immutable.ImmutableArray<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableInterlocked.InterlockedExchange(Of T)(ByRef System.Collections.Immutable.ImmutableArray(Of T), System.Collections.Immutable.ImmutableArray(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableInterlocked.cs
+    startLine: 109
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Assigns a field or variable containing an immutable array to the specified value and returns the previous value.
+  syntax:
+    content: public static ImmutableArray<T> InterlockedExchange<T>(ref ImmutableArray<T> location, ImmutableArray<T> value)
+    content.vb: Public Shared Function InterlockedExchange(Of T)(ByRef location As ImmutableArray(Of T), value As ImmutableArray(Of T)) As ImmutableArray(Of T)
+    parameters:
+    - id: location
+      type: System.Collections.Immutable.ImmutableArray{{T}}
+      description: The field or local variable to change.
+    - id: value
+      type: System.Collections.Immutable.ImmutableArray{{T}}
+      description: The new value to assign.
+    typeParameters:
+    - id: T
+      description: The type of element stored by the array.
+    return:
+      type: System.Collections.Immutable.ImmutableArray{{T}}
+      description: The prior value at the specified <paramref name="location" />.
+- uid: System.Collections.Immutable.ImmutableInterlocked.InterlockedCompareExchange``1(System.Collections.Immutable.ImmutableArray{``0}@,System.Collections.Immutable.ImmutableArray{``0},System.Collections.Immutable.ImmutableArray{``0})
+  id: InterlockedCompareExchange``1(System.Collections.Immutable.ImmutableArray{``0}@,System.Collections.Immutable.ImmutableArray{``0},System.Collections.Immutable.ImmutableArray{``0})
+  parent: System.Collections.Immutable.ImmutableInterlocked
+  href: System.Collections.Immutable.ImmutableInterlocked.yml
+  name: InterlockedCompareExchange<T>(ref ImmutableArray<T>, ImmutableArray<T>, ImmutableArray<T>)
+  name.vb: InterlockedCompareExchange(Of T)(ByRef ImmutableArray(Of T), ImmutableArray(Of T), ImmutableArray(Of T))
+  fullName: System.Collections.Immutable.ImmutableInterlocked.InterlockedCompareExchange<T>(ref System.Collections.Immutable.ImmutableArray<T>, System.Collections.Immutable.ImmutableArray<T>, System.Collections.Immutable.ImmutableArray<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableInterlocked.InterlockedCompareExchange(Of T)(ByRef System.Collections.Immutable.ImmutableArray(Of T), System.Collections.Immutable.ImmutableArray(Of T), System.Collections.Immutable.ImmutableArray(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableInterlocked.cs
+    startLine: 123
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: >-
+    Assigns a field or variable containing an immutable array to the specified value
+
+    if it is currently equal to another specified value. Returns the previous value.
+  syntax:
+    content: public static ImmutableArray<T> InterlockedCompareExchange<T>(ref ImmutableArray<T> location, ImmutableArray<T> value, ImmutableArray<T> comparand)
+    content.vb: Public Shared Function InterlockedCompareExchange(Of T)(ByRef location As ImmutableArray(Of T), value As ImmutableArray(Of T), comparand As ImmutableArray(Of T)) As ImmutableArray(Of T)
+    parameters:
+    - id: location
+      type: System.Collections.Immutable.ImmutableArray{{T}}
+      description: The field or local variable to change.
+    - id: value
+      type: System.Collections.Immutable.ImmutableArray{{T}}
+      description: The new value to assign.
+    - id: comparand
+      type: System.Collections.Immutable.ImmutableArray{{T}}
+      description: The value to check equality for before assigning.
+    typeParameters:
+    - id: T
+      description: The type of element stored by the array.
+    return:
+      type: System.Collections.Immutable.ImmutableArray{{T}}
+      description: The prior value at the specified <paramref name="location" />.
+- uid: System.Collections.Immutable.ImmutableInterlocked.InterlockedInitialize``1(System.Collections.Immutable.ImmutableArray{``0}@,System.Collections.Immutable.ImmutableArray{``0})
+  id: InterlockedInitialize``1(System.Collections.Immutable.ImmutableArray{``0}@,System.Collections.Immutable.ImmutableArray{``0})
+  parent: System.Collections.Immutable.ImmutableInterlocked
+  href: System.Collections.Immutable.ImmutableInterlocked.yml
+  name: InterlockedInitialize<T>(ref ImmutableArray<T>, ImmutableArray<T>)
+  name.vb: InterlockedInitialize(Of T)(ByRef ImmutableArray(Of T), ImmutableArray(Of T))
+  fullName: System.Collections.Immutable.ImmutableInterlocked.InterlockedInitialize<T>(ref System.Collections.Immutable.ImmutableArray<T>, System.Collections.Immutable.ImmutableArray<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableInterlocked.InterlockedInitialize(Of T)(ByRef System.Collections.Immutable.ImmutableArray(Of T), System.Collections.Immutable.ImmutableArray(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableInterlocked.cs
+    startLine: 136
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: >-
+    Assigns a field or variable containing an immutable array to the specified value
+
+    if it is has not yet been initialized.
+  syntax:
+    content: public static bool InterlockedInitialize<T>(ref ImmutableArray<T> location, ImmutableArray<T> value)
+    content.vb: Public Shared Function InterlockedInitialize(Of T)(ByRef location As ImmutableArray(Of T), value As ImmutableArray(Of T)) As Boolean
+    parameters:
+    - id: location
+      type: System.Collections.Immutable.ImmutableArray{{T}}
+      description: The field or local variable to change.
+    - id: value
+      type: System.Collections.Immutable.ImmutableArray{{T}}
+      description: The new value to assign.
+    typeParameters:
+    - id: T
+      description: The type of element stored by the array.
+    return:
+      type: System.Boolean
+      description: True if the field was assigned the specified value; <c>false</c> if it was previously initialized.
+- uid: System.Collections.Immutable.ImmutableInterlocked.GetOrAdd``3(System.Collections.Immutable.ImmutableDictionary{``0,``1}@,``0,System.Func{``0,``2,``1},``2)
+  id: GetOrAdd``3(System.Collections.Immutable.ImmutableDictionary{``0,``1}@,``0,System.Func{``0,``2,``1},``2)
+  parent: System.Collections.Immutable.ImmutableInterlocked
+  href: System.Collections.Immutable.ImmutableInterlocked.yml
+  name: GetOrAdd<TKey, TValue, TArg>(ref ImmutableDictionary<TKey, TValue>, TKey, Func<TKey, TArg, TValue>, TArg)
+  name.vb: GetOrAdd(Of TKey, TValue, TArg)(ByRef ImmutableDictionary(Of TKey, TValue), TKey, Func(Of TKey, TArg, TValue), TArg)
+  fullName: System.Collections.Immutable.ImmutableInterlocked.GetOrAdd<TKey, TValue, TArg>(ref System.Collections.Immutable.ImmutableDictionary<TKey, TValue>, TKey, System.Func<TKey, TArg, TValue>, TArg)
+  fullName.vb: System.Collections.Immutable.ImmutableInterlocked.GetOrAdd(Of TKey, TValue, TArg)(ByRef System.Collections.Immutable.ImmutableDictionary(Of TKey, TValue), TKey, System.Func(Of TKey, TArg, TValue), TArg)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableInterlocked.cs
+    startLine: 156
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Obtains the value for the specified key from a dictionary, or adds a new value to the dictionary where the key did not previously exist.
+  syntax:
+    content: public static TValue GetOrAdd<TKey, TValue, TArg>(ref ImmutableDictionary<TKey, TValue> location, TKey key, Func<TKey, TArg, TValue> valueFactory, TArg factoryArgument)
+    content.vb: Public Shared Function GetOrAdd(Of TKey, TValue, TArg)(ByRef location As ImmutableDictionary(Of TKey, TValue), key As TKey, valueFactory As Func(Of TKey, TArg, TValue), factoryArgument As TArg) As TValue
+    parameters:
+    - id: location
+      type: System.Collections.Immutable.ImmutableDictionary{{TKey},{TValue}}
+      description: The variable or field to atomically update if the specified <paramref name="key" /> is not in the dictionary.
+    - id: key
+      type: '{TKey}'
+      description: The key for the value to retrieve or add.
+    - id: valueFactory
+      type: System.Func{{TKey},{TArg},{TValue}}
+      description: The function to execute to obtain the value to insert into the dictionary if the key is not found.
+    - id: factoryArgument
+      type: '{TArg}'
+      description: The argument to pass to the value factory.
+    typeParameters:
+    - id: TKey
+      description: The type of key stored by the dictionary.
+    - id: TValue
+      description: The type of value stored by the dictionary.
+    - id: TArg
+      description: The type of argument supplied to the value factory.
+    return:
+      type: '{TValue}'
+      description: The value obtained from the dictionary or <paramref name="valueFactory" /> if it was not present.
+- uid: System.Collections.Immutable.ImmutableInterlocked.GetOrAdd``2(System.Collections.Immutable.ImmutableDictionary{``0,``1}@,``0,System.Func{``0,``1})
+  id: GetOrAdd``2(System.Collections.Immutable.ImmutableDictionary{``0,``1}@,``0,System.Func{``0,``1})
+  parent: System.Collections.Immutable.ImmutableInterlocked
+  href: System.Collections.Immutable.ImmutableInterlocked.yml
+  name: GetOrAdd<TKey, TValue>(ref ImmutableDictionary<TKey, TValue>, TKey, Func<TKey, TValue>)
+  name.vb: GetOrAdd(Of TKey, TValue)(ByRef ImmutableDictionary(Of TKey, TValue), TKey, Func(Of TKey, TValue))
+  fullName: System.Collections.Immutable.ImmutableInterlocked.GetOrAdd<TKey, TValue>(ref System.Collections.Immutable.ImmutableDictionary<TKey, TValue>, TKey, System.Func<TKey, TValue>)
+  fullName.vb: System.Collections.Immutable.ImmutableInterlocked.GetOrAdd(Of TKey, TValue)(ByRef System.Collections.Immutable.ImmutableDictionary(Of TKey, TValue), TKey, System.Func(Of TKey, TValue))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableInterlocked.cs
+    startLine: 185
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Obtains the value for the specified key from a dictionary, or adds a new value to the dictionary where the key did not previously exist.
+  syntax:
+    content: public static TValue GetOrAdd<TKey, TValue>(ref ImmutableDictionary<TKey, TValue> location, TKey key, Func<TKey, TValue> valueFactory)
+    content.vb: Public Shared Function GetOrAdd(Of TKey, TValue)(ByRef location As ImmutableDictionary(Of TKey, TValue), key As TKey, valueFactory As Func(Of TKey, TValue)) As TValue
+    parameters:
+    - id: location
+      type: System.Collections.Immutable.ImmutableDictionary{{TKey},{TValue}}
+      description: The variable or field to atomically update if the specified <paramref name="key" /> is not in the dictionary.
+    - id: key
+      type: '{TKey}'
+      description: The key for the value to retrieve or add.
+    - id: valueFactory
+      type: System.Func{{TKey},{TValue}}
+      description: >-
+        The function to execute to obtain the value to insert into the dictionary if the key is not found.
+
+        This delegate will not be invoked more than once.
+    typeParameters:
+    - id: TKey
+      description: The type of key stored by the dictionary.
+    - id: TValue
+      description: The type of value stored by the dictionary.
+    return:
+      type: '{TValue}'
+      description: The value obtained from the dictionary or <paramref name="valueFactory" /> if it was not present.
+- uid: System.Collections.Immutable.ImmutableInterlocked.GetOrAdd``2(System.Collections.Immutable.ImmutableDictionary{``0,``1}@,``0,``1)
+  id: GetOrAdd``2(System.Collections.Immutable.ImmutableDictionary{``0,``1}@,``0,``1)
+  parent: System.Collections.Immutable.ImmutableInterlocked
+  href: System.Collections.Immutable.ImmutableInterlocked.yml
+  name: GetOrAdd<TKey, TValue>(ref ImmutableDictionary<TKey, TValue>, TKey, TValue)
+  name.vb: GetOrAdd(Of TKey, TValue)(ByRef ImmutableDictionary(Of TKey, TValue), TKey, TValue)
+  fullName: System.Collections.Immutable.ImmutableInterlocked.GetOrAdd<TKey, TValue>(ref System.Collections.Immutable.ImmutableDictionary<TKey, TValue>, TKey, TValue)
+  fullName.vb: System.Collections.Immutable.ImmutableInterlocked.GetOrAdd(Of TKey, TValue)(ByRef System.Collections.Immutable.ImmutableDictionary(Of TKey, TValue), TKey, TValue)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableInterlocked.cs
+    startLine: 211
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Obtains the value for the specified key from a dictionary, or adds a new value to the dictionary where the key did not previously exist.
+  syntax:
+    content: public static TValue GetOrAdd<TKey, TValue>(ref ImmutableDictionary<TKey, TValue> location, TKey key, TValue value)
+    content.vb: Public Shared Function GetOrAdd(Of TKey, TValue)(ByRef location As ImmutableDictionary(Of TKey, TValue), key As TKey, value As TValue) As TValue
+    parameters:
+    - id: location
+      type: System.Collections.Immutable.ImmutableDictionary{{TKey},{TValue}}
+      description: The variable or field to atomically update if the specified <paramref name="key" /> is not in the dictionary.
+    - id: key
+      type: '{TKey}'
+      description: The key for the value to retrieve or add.
+    - id: value
+      type: '{TValue}'
+      description: The value to add to the dictionary if one is not already present.
+    typeParameters:
+    - id: TKey
+      description: The type of key stored by the dictionary.
+    - id: TValue
+      description: The type of value stored by the dictionary.
+    return:
+      type: '{TValue}'
+      description: The value obtained from the dictionary or <paramref name="value" /> if it was not present.
+- uid: System.Collections.Immutable.ImmutableInterlocked.AddOrUpdate``2(System.Collections.Immutable.ImmutableDictionary{``0,``1}@,``0,System.Func{``0,``1},System.Func{``0,``1,``1})
+  id: AddOrUpdate``2(System.Collections.Immutable.ImmutableDictionary{``0,``1}@,``0,System.Func{``0,``1},System.Func{``0,``1,``1})
+  parent: System.Collections.Immutable.ImmutableInterlocked
+  href: System.Collections.Immutable.ImmutableInterlocked.yml
+  name: AddOrUpdate<TKey, TValue>(ref ImmutableDictionary<TKey, TValue>, TKey, Func<TKey, TValue>, Func<TKey, TValue, TValue>)
+  name.vb: AddOrUpdate(Of TKey, TValue)(ByRef ImmutableDictionary(Of TKey, TValue), TKey, Func(Of TKey, TValue), Func(Of TKey, TValue, TValue))
+  fullName: System.Collections.Immutable.ImmutableInterlocked.AddOrUpdate<TKey, TValue>(ref System.Collections.Immutable.ImmutableDictionary<TKey, TValue>, TKey, System.Func<TKey, TValue>, System.Func<TKey, TValue, TValue>)
+  fullName.vb: System.Collections.Immutable.ImmutableInterlocked.AddOrUpdate(Of TKey, TValue)(ByRef System.Collections.Immutable.ImmutableDictionary(Of TKey, TValue), TKey, System.Func(Of TKey, TValue), System.Func(Of TKey, TValue, TValue))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableInterlocked.cs
+    startLine: 246
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Obtains the value from a dictionary after having added it or updated an existing entry.
+  syntax:
+    content: public static TValue AddOrUpdate<TKey, TValue>(ref ImmutableDictionary<TKey, TValue> location, TKey key, Func<TKey, TValue> addValueFactory, Func<TKey, TValue, TValue> updateValueFactory)
+    content.vb: Public Shared Function AddOrUpdate(Of TKey, TValue)(ByRef location As ImmutableDictionary(Of TKey, TValue), key As TKey, addValueFactory As Func(Of TKey, TValue), updateValueFactory As Func(Of TKey, TValue, TValue)) As TValue
+    parameters:
+    - id: location
+      type: System.Collections.Immutable.ImmutableDictionary{{TKey},{TValue}}
+      description: The variable or field to atomically update if the specified <paramref name="key" /> is not in the dictionary.
+    - id: key
+      type: '{TKey}'
+      description: The key for the value to add or update.
+    - id: addValueFactory
+      type: System.Func{{TKey},{TValue}}
+      description: The function that receives the key and returns a new value to add to the dictionary when no value previously exists.
+    - id: updateValueFactory
+      type: System.Func{{TKey},{TValue},{TValue}}
+      description: The function that receives the key and prior value and returns the new value with which to update the dictionary.
+    typeParameters:
+    - id: TKey
+      description: The type of key stored by the dictionary.
+    - id: TValue
+      description: The type of value stored by the dictionary.
+    return:
+      type: '{TValue}'
+      description: The added or updated value.
+- uid: System.Collections.Immutable.ImmutableInterlocked.AddOrUpdate``2(System.Collections.Immutable.ImmutableDictionary{``0,``1}@,``0,``1,System.Func{``0,``1,``1})
+  id: AddOrUpdate``2(System.Collections.Immutable.ImmutableDictionary{``0,``1}@,``0,``1,System.Func{``0,``1,``1})
+  parent: System.Collections.Immutable.ImmutableInterlocked
+  href: System.Collections.Immutable.ImmutableInterlocked.yml
+  name: AddOrUpdate<TKey, TValue>(ref ImmutableDictionary<TKey, TValue>, TKey, TValue, Func<TKey, TValue, TValue>)
+  name.vb: AddOrUpdate(Of TKey, TValue)(ByRef ImmutableDictionary(Of TKey, TValue), TKey, TValue, Func(Of TKey, TValue, TValue))
+  fullName: System.Collections.Immutable.ImmutableInterlocked.AddOrUpdate<TKey, TValue>(ref System.Collections.Immutable.ImmutableDictionary<TKey, TValue>, TKey, TValue, System.Func<TKey, TValue, TValue>)
+  fullName.vb: System.Collections.Immutable.ImmutableInterlocked.AddOrUpdate(Of TKey, TValue)(ByRef System.Collections.Immutable.ImmutableDictionary(Of TKey, TValue), TKey, TValue, System.Func(Of TKey, TValue, TValue))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableInterlocked.cs
+    startLine: 290
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Obtains the value from a dictionary after having added it or updated an existing entry.
+  syntax:
+    content: public static TValue AddOrUpdate<TKey, TValue>(ref ImmutableDictionary<TKey, TValue> location, TKey key, TValue addValue, Func<TKey, TValue, TValue> updateValueFactory)
+    content.vb: Public Shared Function AddOrUpdate(Of TKey, TValue)(ByRef location As ImmutableDictionary(Of TKey, TValue), key As TKey, addValue As TValue, updateValueFactory As Func(Of TKey, TValue, TValue)) As TValue
+    parameters:
+    - id: location
+      type: System.Collections.Immutable.ImmutableDictionary{{TKey},{TValue}}
+      description: The variable or field to atomically update if the specified <paramref name="key" /> is not in the dictionary.
+    - id: key
+      type: '{TKey}'
+      description: The key for the value to add or update.
+    - id: addValue
+      type: '{TValue}'
+      description: The value to use if no previous value exists.
+    - id: updateValueFactory
+      type: System.Func{{TKey},{TValue},{TValue}}
+      description: The function that receives the key and prior value and returns the new value with which to update the dictionary.
+    typeParameters:
+    - id: TKey
+      description: The type of key stored by the dictionary.
+    - id: TValue
+      description: The type of value stored by the dictionary.
+    return:
+      type: '{TValue}'
+      description: The added or updated value.
+- uid: System.Collections.Immutable.ImmutableInterlocked.TryAdd``2(System.Collections.Immutable.ImmutableDictionary{``0,``1}@,``0,``1)
+  id: TryAdd``2(System.Collections.Immutable.ImmutableDictionary{``0,``1}@,``0,``1)
+  parent: System.Collections.Immutable.ImmutableInterlocked
+  href: System.Collections.Immutable.ImmutableInterlocked.yml
+  name: TryAdd<TKey, TValue>(ref ImmutableDictionary<TKey, TValue>, TKey, TValue)
+  name.vb: TryAdd(Of TKey, TValue)(ByRef ImmutableDictionary(Of TKey, TValue), TKey, TValue)
+  fullName: System.Collections.Immutable.ImmutableInterlocked.TryAdd<TKey, TValue>(ref System.Collections.Immutable.ImmutableDictionary<TKey, TValue>, TKey, TValue)
+  fullName.vb: System.Collections.Immutable.ImmutableInterlocked.TryAdd(Of TKey, TValue)(ByRef System.Collections.Immutable.ImmutableDictionary(Of TKey, TValue), TKey, TValue)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableInterlocked.cs
+    startLine: 332
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Adds the specified key and value to the dictionary if no colliding key already exists in the dictionary.
+  syntax:
+    content: public static bool TryAdd<TKey, TValue>(ref ImmutableDictionary<TKey, TValue> location, TKey key, TValue value)
+    content.vb: Public Shared Function TryAdd(Of TKey, TValue)(ByRef location As ImmutableDictionary(Of TKey, TValue), key As TKey, value As TValue) As Boolean
+    parameters:
+    - id: location
+      type: System.Collections.Immutable.ImmutableDictionary{{TKey},{TValue}}
+      description: The variable or field to atomically update if the specified <paramref name="key" /> is not in the dictionary.
+    - id: key
+      type: '{TKey}'
+      description: The key to add, if is not already defined in the dictionary.
+    - id: value
+      type: '{TValue}'
+      description: The value to add.
+    typeParameters:
+    - id: TKey
+      description: The type of key stored by the dictionary.
+    - id: TValue
+      description: The type of value stored by the dictionary.
+    return:
+      type: System.Boolean
+      description: <c>true</c> if the key was not previously set in the dictionary and the value was set; <c>false</c> otherwise.
+- uid: System.Collections.Immutable.ImmutableInterlocked.TryUpdate``2(System.Collections.Immutable.ImmutableDictionary{``0,``1}@,``0,``1,``1)
+  id: TryUpdate``2(System.Collections.Immutable.ImmutableDictionary{``0,``1}@,``0,``1,``1)
+  parent: System.Collections.Immutable.ImmutableInterlocked
+  href: System.Collections.Immutable.ImmutableInterlocked.yml
+  name: TryUpdate<TKey, TValue>(ref ImmutableDictionary<TKey, TValue>, TKey, TValue, TValue)
+  name.vb: TryUpdate(Of TKey, TValue)(ByRef ImmutableDictionary(Of TKey, TValue), TKey, TValue, TValue)
+  fullName: System.Collections.Immutable.ImmutableInterlocked.TryUpdate<TKey, TValue>(ref System.Collections.Immutable.ImmutableDictionary<TKey, TValue>, TKey, TValue, TValue)
+  fullName.vb: System.Collections.Immutable.ImmutableInterlocked.TryUpdate(Of TKey, TValue)(ByRef System.Collections.Immutable.ImmutableDictionary(Of TKey, TValue), TKey, TValue, TValue)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableInterlocked.cs
+    startLine: 364
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Sets the specified key to the given value if the key already is set to a specific value.
+  syntax:
+    content: public static bool TryUpdate<TKey, TValue>(ref ImmutableDictionary<TKey, TValue> location, TKey key, TValue newValue, TValue comparisonValue)
+    content.vb: Public Shared Function TryUpdate(Of TKey, TValue)(ByRef location As ImmutableDictionary(Of TKey, TValue), key As TKey, newValue As TValue, comparisonValue As TValue) As Boolean
+    parameters:
+    - id: location
+      type: System.Collections.Immutable.ImmutableDictionary{{TKey},{TValue}}
+      description: The variable or field to atomically update if the specified <paramref name="key" /> is not in the dictionary.
+    - id: key
+      type: '{TKey}'
+      description: The key to update.
+    - id: newValue
+      type: '{TValue}'
+      description: The new value to set.
+    - id: comparisonValue
+      type: '{TValue}'
+      description: The value that must already be set in the dictionary in order for the update to succeed.
+    typeParameters:
+    - id: TKey
+      description: The type of key stored by the dictionary.
+    - id: TValue
+      description: The type of value stored by the dictionary.
+    return:
+      type: System.Boolean
+      description: <c>true</c> if the key and comparison value were present in the dictionary and the update was made; <c>false</c> otherwise.
+- uid: System.Collections.Immutable.ImmutableInterlocked.TryRemove``2(System.Collections.Immutable.ImmutableDictionary{``0,``1}@,``0,``1@)
+  id: TryRemove``2(System.Collections.Immutable.ImmutableDictionary{``0,``1}@,``0,``1@)
+  parent: System.Collections.Immutable.ImmutableInterlocked
+  href: System.Collections.Immutable.ImmutableInterlocked.yml
+  name: TryRemove<TKey, TValue>(ref ImmutableDictionary<TKey, TValue>, TKey, out TValue)
+  name.vb: TryRemove(Of TKey, TValue)(ByRef ImmutableDictionary(Of TKey, TValue), TKey, ByRef TValue)
+  fullName: System.Collections.Immutable.ImmutableInterlocked.TryRemove<TKey, TValue>(ref System.Collections.Immutable.ImmutableDictionary<TKey, TValue>, TKey, out TValue)
+  fullName.vb: System.Collections.Immutable.ImmutableInterlocked.TryRemove(Of TKey, TValue)(ByRef System.Collections.Immutable.ImmutableDictionary(Of TKey, TValue), TKey, ByRef TValue)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableInterlocked.cs
+    startLine: 398
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Removes an entry from the dictionary with the specified key if it is defined and returns its value.
+  syntax:
+    content: public static bool TryRemove<TKey, TValue>(ref ImmutableDictionary<TKey, TValue> location, TKey key, out TValue value)
+    content.vb: Public Shared Function TryRemove(Of TKey, TValue)(ByRef location As ImmutableDictionary(Of TKey, TValue), key As TKey, ByRef value As TValue) As Boolean
+    parameters:
+    - id: location
+      type: System.Collections.Immutable.ImmutableDictionary{{TKey},{TValue}}
+      description: The variable or field to atomically update if the specified <paramref name="key" /> is not in the dictionary.
+    - id: key
+      type: '{TKey}'
+      description: The key to remove.
+    - id: value
+      type: '{TValue}'
+      description: Receives the value from the pre-existing entry, if one exists.
+    typeParameters:
+    - id: TKey
+      description: The type of key stored by the dictionary.
+    - id: TValue
+      description: The type of value stored by the dictionary.
+    return:
+      type: System.Boolean
+      description: <c>true</c> if the key was found and removed; <c>false</c> otherwise.
+- uid: System.Collections.Immutable.ImmutableInterlocked.TryPop``1(System.Collections.Immutable.ImmutableStack{``0}@,``0@)
+  id: TryPop``1(System.Collections.Immutable.ImmutableStack{``0}@,``0@)
+  parent: System.Collections.Immutable.ImmutableInterlocked
+  href: System.Collections.Immutable.ImmutableInterlocked.yml
+  name: TryPop<T>(ref ImmutableStack<T>, out T)
+  name.vb: TryPop(Of T)(ByRef ImmutableStack(Of T), ByRef T)
+  fullName: System.Collections.Immutable.ImmutableInterlocked.TryPop<T>(ref System.Collections.Immutable.ImmutableStack<T>, out T)
+  fullName.vb: System.Collections.Immutable.ImmutableInterlocked.TryPop(Of T)(ByRef System.Collections.Immutable.ImmutableStack(Of T), ByRef T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableInterlocked.cs
+    startLine: 431
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Pushes a new element onto a stack.
+  syntax:
+    content: public static bool TryPop<T>(ref ImmutableStack<T> location, out T value)
+    content.vb: Public Shared Function TryPop(Of T)(ByRef location As ImmutableStack(Of T), ByRef value As T) As Boolean
+    parameters:
+    - id: location
+      type: System.Collections.Immutable.ImmutableStack{{T}}
+      description: The variable or field to atomically update.
+    - id: value
+      type: '{T}'
+      description: The value popped from the stack, if it was non-empty.
+    typeParameters:
+    - id: T
+      description: The type of elements stored in the stack.
+    return:
+      type: System.Boolean
+      description: <c>true</c> if an element was removed from the stack; <c>false</c> otherwise.
+- uid: System.Collections.Immutable.ImmutableInterlocked.Push``1(System.Collections.Immutable.ImmutableStack{``0}@,``0)
+  id: Push``1(System.Collections.Immutable.ImmutableStack{``0}@,``0)
+  parent: System.Collections.Immutable.ImmutableInterlocked
+  href: System.Collections.Immutable.ImmutableInterlocked.yml
+  name: Push<T>(ref ImmutableStack<T>, T)
+  name.vb: Push(Of T)(ByRef ImmutableStack(Of T), T)
+  fullName: System.Collections.Immutable.ImmutableInterlocked.Push<T>(ref System.Collections.Immutable.ImmutableStack<T>, T)
+  fullName.vb: System.Collections.Immutable.ImmutableInterlocked.Push(Of T)(ByRef System.Collections.Immutable.ImmutableStack(Of T), T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableInterlocked.cs
+    startLine: 460
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Pushes a new element onto a stack.
+  syntax:
+    content: public static void Push<T>(ref ImmutableStack<T> location, T value)
+    content.vb: Public Shared Sub Push(Of T)(ByRef location As ImmutableStack(Of T), value As T)
+    parameters:
+    - id: location
+      type: System.Collections.Immutable.ImmutableStack{{T}}
+      description: The variable or field to atomically update.
+    - id: value
+      type: '{T}'
+      description: The value to push.
+    typeParameters:
+    - id: T
+      description: The type of elements stored in the stack.
+- uid: System.Collections.Immutable.ImmutableInterlocked.TryDequeue``1(System.Collections.Immutable.ImmutableQueue{``0}@,``0@)
+  id: TryDequeue``1(System.Collections.Immutable.ImmutableQueue{``0}@,``0@)
+  parent: System.Collections.Immutable.ImmutableInterlocked
+  href: System.Collections.Immutable.ImmutableInterlocked.yml
+  name: TryDequeue<T>(ref ImmutableQueue<T>, out T)
+  name.vb: TryDequeue(Of T)(ByRef ImmutableQueue(Of T), ByRef T)
+  fullName: System.Collections.Immutable.ImmutableInterlocked.TryDequeue<T>(ref System.Collections.Immutable.ImmutableQueue<T>, out T)
+  fullName.vb: System.Collections.Immutable.ImmutableInterlocked.TryDequeue(Of T)(ByRef System.Collections.Immutable.ImmutableQueue(Of T), ByRef T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableInterlocked.cs
+    startLine: 486
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Atomically removes the element at the head of a queue and returns it to the caller, if the queue is not empty.
+  syntax:
+    content: public static bool TryDequeue<T>(ref ImmutableQueue<T> location, out T value)
+    content.vb: Public Shared Function TryDequeue(Of T)(ByRef location As ImmutableQueue(Of T), ByRef value As T) As Boolean
+    parameters:
+    - id: location
+      type: System.Collections.Immutable.ImmutableQueue{{T}}
+      description: The variable or field to atomically update.
+    - id: value
+      type: '{T}'
+      description: Receives the value from the head of the queue, if the queue is non-empty.
+    typeParameters:
+    - id: T
+      description: The type of element stored in the queue.
+    return:
+      type: System.Boolean
+      description: <c>true</c> if the queue was not empty and the head element was removed; <c>false</c> otherwise.
+- uid: System.Collections.Immutable.ImmutableInterlocked.Enqueue``1(System.Collections.Immutable.ImmutableQueue{``0}@,``0)
+  id: Enqueue``1(System.Collections.Immutable.ImmutableQueue{``0}@,``0)
+  parent: System.Collections.Immutable.ImmutableInterlocked
+  href: System.Collections.Immutable.ImmutableInterlocked.yml
+  name: Enqueue<T>(ref ImmutableQueue<T>, T)
+  name.vb: Enqueue(Of T)(ByRef ImmutableQueue(Of T), T)
+  fullName: System.Collections.Immutable.ImmutableInterlocked.Enqueue<T>(ref System.Collections.Immutable.ImmutableQueue<T>, T)
+  fullName.vb: System.Collections.Immutable.ImmutableInterlocked.Enqueue(Of T)(ByRef System.Collections.Immutable.ImmutableQueue(Of T), T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableInterlocked.cs
+    startLine: 515
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Atomically enqueues an element to the tail of a queue.
+  syntax:
+    content: public static void Enqueue<T>(ref ImmutableQueue<T> location, T value)
+    content.vb: Public Shared Sub Enqueue(Of T)(ByRef location As ImmutableQueue(Of T), value As T)
+    parameters:
+    - id: location
+      type: System.Collections.Immutable.ImmutableQueue{{T}}
+      description: The variable or field to atomically update.
+    - id: value
+      type: '{T}'
+      description: The value to enqueue.
+    typeParameters:
+    - id: T
+      description: The type of element stored in the queue.
+references:
+- uid: System.Collections.Immutable
+  isExternal: false
+  name: System.Collections.Immutable
+  fullName: System.Collections.Immutable
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: '{T}'
+  isExternal: false
+  name: T
+  fullName: T
+- uid: System.Func{{T},{T}}
+  parent: System
+  definition: System.Func`2
+  name: Func<T, T>
+  name.vb: Func(Of T, T)
+  fullName: System.Func<T, T>
+  fullName.vb: System.Func(Of T, T)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: ', '
+    fullName: ', '
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: ', '
+    fullName: ', '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Func`2
+  parent: System
+  isExternal: true
+  name: Func<T, TResult>
+  name.vb: Func(Of T, TResult)
+  fullName: System.Func<T, TResult>
+  fullName.vb: System.Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: ', '
+    fullName: ', '
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: ', '
+    fullName: ', '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Func{{T},{TArg},{T}}
+  parent: System
+  definition: System.Func`3
+  name: Func<T, TArg, T>
+  name.vb: Func(Of T, TArg, T)
+  fullName: System.Func<T, TArg, T>
+  fullName.vb: System.Func(Of T, TArg, T)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: ', '
+    fullName: ', '
+  - name: TArg
+    fullName: TArg
+  - name: ', '
+    fullName: ', '
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: ', '
+    fullName: ', '
+  - name: TArg
+    fullName: TArg
+  - name: ', '
+    fullName: ', '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: '{TArg}'
+  isExternal: false
+  name: TArg
+  fullName: TArg
+- uid: System.Func`3
+  parent: System
+  isExternal: true
+  name: Func<T1, T2, TResult>
+  name.vb: Func(Of T1, T2, TResult)
+  fullName: System.Func<T1, T2, TResult>
+  fullName.vb: System.Func(Of T1, T2, TResult)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T1
+    fullName: T1
+  - name: ', '
+    fullName: ', '
+  - name: T2
+    fullName: T2
+  - name: ', '
+    fullName: ', '
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T1
+    fullName: T1
+  - name: ', '
+    fullName: ', '
+  - name: T2
+    fullName: T2
+  - name: ', '
+    fullName: ', '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.ImmutableArray{{T}}
+  parent: System.Collections.Immutable
+  definition: System.Collections.Immutable.ImmutableArray`1
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: ImmutableArray<T>
+  name.vb: ImmutableArray(Of T)
+  fullName: System.Collections.Immutable.ImmutableArray<T>
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T)
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    fullName: System.Collections.Immutable.ImmutableArray
+    href: System.Collections.Immutable.ImmutableArray`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    fullName: System.Collections.Immutable.ImmutableArray
+    href: System.Collections.Immutable.ImmutableArray`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.ImmutableArray`1
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: ImmutableArray<T>
+  name.vb: ImmutableArray(Of T)
+  fullName: System.Collections.Immutable.ImmutableArray<T>
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T)
+  type: Struct
+  summary: A readonly array with O(1) indexable lookup time.
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    fullName: System.Collections.Immutable.ImmutableArray
+    href: System.Collections.Immutable.ImmutableArray`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    fullName: System.Collections.Immutable.ImmutableArray
+    href: System.Collections.Immutable.ImmutableArray`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.ImmutableDictionary{{TKey},{TValue}}
+  parent: System.Collections.Immutable
+  definition: System.Collections.Immutable.ImmutableDictionary`2
+  href: System.Collections.Immutable.ImmutableDictionary`2.yml
+  name: ImmutableDictionary<TKey, TValue>
+  name.vb: ImmutableDictionary(Of TKey, TValue)
+  fullName: System.Collections.Immutable.ImmutableDictionary<TKey, TValue>
+  fullName.vb: System.Collections.Immutable.ImmutableDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableDictionary`2
+    name: ImmutableDictionary
+    fullName: System.Collections.Immutable.ImmutableDictionary
+    href: System.Collections.Immutable.ImmutableDictionary`2.yml
+  - name: <
+    fullName: <
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableDictionary`2
+    name: ImmutableDictionary
+    fullName: System.Collections.Immutable.ImmutableDictionary
+    href: System.Collections.Immutable.ImmutableDictionary`2.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: )
+    fullName: )
+- uid: '{TKey}'
+  isExternal: false
+  name: TKey
+  fullName: TKey
+- uid: System.Func{{TKey},{TArg},{TValue}}
+  parent: System
+  definition: System.Func`3
+  name: Func<TKey, TArg, TValue>
+  name.vb: Func(Of TKey, TArg, TValue)
+  fullName: System.Func<TKey, TArg, TValue>
+  fullName.vb: System.Func(Of TKey, TArg, TValue)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TArg
+    fullName: TArg
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TArg
+    fullName: TArg
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: )
+    fullName: )
+- uid: '{TValue}'
+  isExternal: false
+  name: TValue
+  fullName: TValue
+- uid: System.Collections.Immutable.ImmutableDictionary`2
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableDictionary`2.yml
+  name: ImmutableDictionary<TKey, TValue>
+  name.vb: ImmutableDictionary(Of TKey, TValue)
+  fullName: System.Collections.Immutable.ImmutableDictionary<TKey, TValue>
+  fullName.vb: System.Collections.Immutable.ImmutableDictionary(Of TKey, TValue)
+  type: Class
+  summary: An immutable unordered dictionary implementation.
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableDictionary`2
+    name: ImmutableDictionary
+    fullName: System.Collections.Immutable.ImmutableDictionary
+    href: System.Collections.Immutable.ImmutableDictionary`2.yml
+  - name: <
+    fullName: <
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableDictionary`2
+    name: ImmutableDictionary
+    fullName: System.Collections.Immutable.ImmutableDictionary
+    href: System.Collections.Immutable.ImmutableDictionary`2.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: )
+    fullName: )
+- uid: System.Func{{TKey},{TValue}}
+  parent: System
+  definition: System.Func`2
+  href: System.Func`2.yml
+  name: Func<TKey, TValue>
+  name.vb: Func(Of TKey, TValue)
+  fullName: System.Func<TKey, TValue>
+  fullName.vb: System.Func(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    fullName: System.Func
+    href: System.Func`2.yml
+  - name: <
+    fullName: <
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    fullName: System.Func
+    href: System.Func`2.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: )
+    fullName: )
+- uid: System.Func{{TKey},{TValue},{TValue}}
+  parent: System
+  definition: System.Func`3
+  href: System.Func`3.yml
+  name: Func<TKey, TValue, TValue>
+  name.vb: Func(Of TKey, TValue, TValue)
+  fullName: System.Func<TKey, TValue, TValue>
+  fullName.vb: System.Func(Of TKey, TValue, TValue)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    fullName: System.Func
+    href: System.Func`3.yml
+  - name: <
+    fullName: <
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    fullName: System.Func
+    href: System.Func`3.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.ImmutableStack{{T}}
+  parent: System.Collections.Immutable
+  definition: System.Collections.Immutable.ImmutableStack`1
+  href: System.Collections.Immutable.ImmutableStack`1.yml
+  name: ImmutableStack<T>
+  name.vb: ImmutableStack(Of T)
+  fullName: System.Collections.Immutable.ImmutableStack<T>
+  fullName.vb: System.Collections.Immutable.ImmutableStack(Of T)
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableStack`1
+    name: ImmutableStack
+    fullName: System.Collections.Immutable.ImmutableStack
+    href: System.Collections.Immutable.ImmutableStack`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableStack`1
+    name: ImmutableStack
+    fullName: System.Collections.Immutable.ImmutableStack
+    href: System.Collections.Immutable.ImmutableStack`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.ImmutableStack`1
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableStack`1.yml
+  name: ImmutableStack<T>
+  name.vb: ImmutableStack(Of T)
+  fullName: System.Collections.Immutable.ImmutableStack<T>
+  fullName.vb: System.Collections.Immutable.ImmutableStack(Of T)
+  type: Class
+  summary: An immutable stack.
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableStack`1
+    name: ImmutableStack
+    fullName: System.Collections.Immutable.ImmutableStack
+    href: System.Collections.Immutable.ImmutableStack`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableStack`1
+    name: ImmutableStack
+    fullName: System.Collections.Immutable.ImmutableStack
+    href: System.Collections.Immutable.ImmutableStack`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.ImmutableQueue{{T}}
+  parent: System.Collections.Immutable
+  definition: System.Collections.Immutable.ImmutableQueue`1
+  href: System.Collections.Immutable.ImmutableQueue`1.yml
+  name: ImmutableQueue<T>
+  name.vb: ImmutableQueue(Of T)
+  fullName: System.Collections.Immutable.ImmutableQueue<T>
+  fullName.vb: System.Collections.Immutable.ImmutableQueue(Of T)
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableQueue`1
+    name: ImmutableQueue
+    fullName: System.Collections.Immutable.ImmutableQueue
+    href: System.Collections.Immutable.ImmutableQueue`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableQueue`1
+    name: ImmutableQueue
+    fullName: System.Collections.Immutable.ImmutableQueue
+    href: System.Collections.Immutable.ImmutableQueue`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.ImmutableQueue`1
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableQueue`1.yml
+  name: ImmutableQueue<T>
+  name.vb: ImmutableQueue(Of T)
+  fullName: System.Collections.Immutable.ImmutableQueue<T>
+  fullName.vb: System.Collections.Immutable.ImmutableQueue(Of T)
+  type: Class
+  summary: An immutable queue.
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableQueue`1
+    name: ImmutableQueue
+    fullName: System.Collections.Immutable.ImmutableQueue
+    href: System.Collections.Immutable.ImmutableQueue`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableQueue`1
+    name: ImmutableQueue
+    fullName: System.Collections.Immutable.ImmutableQueue
+    href: System.Collections.Immutable.ImmutableQueue`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )

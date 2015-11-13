@@ -1,0 +1,65 @@
+items:
+- uid: System.Runtime.InteropServices.CustomQueryInterfaceMode
+  id: CustomQueryInterfaceMode
+  parent: System.Runtime.InteropServices
+  children:
+  - System.Runtime.InteropServices.CustomQueryInterfaceMode.Allow
+  - System.Runtime.InteropServices.CustomQueryInterfaceMode.Ignore
+  href: System.Runtime.InteropServices.CustomQueryInterfaceMode.yml
+  name: CustomQueryInterfaceMode
+  fullName: System.Runtime.InteropServices.CustomQueryInterfaceMode
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/InteropServices/Marshal.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/InteropServices/Marshal.cs
+    startLine: 33
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates whether the @'System.Runtime.InteropServices.Marshal.GetComInterfaceForObject(System.Object,System.Type,System.Runtime.InteropServices.CustomQueryInterfaceMode)' method's IUnknown::QueryInterface calls can use the @'System.Runtime.InteropServices.ICustomQueryInterface' interface.
+  syntax:
+    content: public enum CustomQueryInterfaceMode
+    content.vb: Public Enum CustomQueryInterfaceMode
+- uid: System.Runtime.InteropServices.CustomQueryInterfaceMode.Ignore
+  id: Ignore
+  parent: System.Runtime.InteropServices.CustomQueryInterfaceMode
+  href: System.Runtime.InteropServices.CustomQueryInterfaceMode.yml
+  name: Ignore
+  fullName: System.Runtime.InteropServices.CustomQueryInterfaceMode.Ignore
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Marshal.cs
+    startLine: 36
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: IUnknown::QueryInterface method calls should ignore the @'System.Runtime.InteropServices.ICustomQueryInterface' interface.
+  syntax:
+    content: Ignore = 0
+- uid: System.Runtime.InteropServices.CustomQueryInterfaceMode.Allow
+  id: Allow
+  parent: System.Runtime.InteropServices.CustomQueryInterfaceMode
+  href: System.Runtime.InteropServices.CustomQueryInterfaceMode.yml
+  name: Allow
+  fullName: System.Runtime.InteropServices.CustomQueryInterfaceMode.Allow
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Marshal.cs
+    startLine: 37
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: IUnknown::QueryInterface method calls can use the @'System.Runtime.InteropServices.ICustomQueryInterface' interface. When you use this value, the @'System.Runtime.InteropServices.Marshal.GetComInterfaceForObject(System.Object,System.Type,System.Runtime.InteropServices.CustomQueryInterfaceMode)' method overload functions like the @'System.Runtime.InteropServices.Marshal.GetComInterfaceForObject(System.Object,System.Type)' overload.
+  syntax:
+    content: Allow = 1
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace

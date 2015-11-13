@@ -1,0 +1,307 @@
+items:
+- uid: System.Runtime.InteropServices.ITypeLibConverter
+  id: ITypeLibConverter
+  parent: System.Runtime.InteropServices
+  children:
+  - System.Runtime.InteropServices.ITypeLibConverter.ConvertAssemblyToTypeLib(System.Reflection.Assembly,System.String,System.Runtime.InteropServices.TypeLibExporterFlags,System.Runtime.InteropServices.ITypeLibExporterNotifySink)
+  - System.Runtime.InteropServices.ITypeLibConverter.ConvertTypeLibToAssembly(System.Object,System.String,System.Int32,System.Runtime.InteropServices.ITypeLibImporterNotifySink,System.Byte[],System.Reflection.StrongNameKeyPair,System.Boolean)
+  - System.Runtime.InteropServices.ITypeLibConverter.ConvertTypeLibToAssembly(System.Object,System.String,System.Runtime.InteropServices.TypeLibImporterFlags,System.Runtime.InteropServices.ITypeLibImporterNotifySink,System.Byte[],System.Reflection.StrongNameKeyPair,System.String,System.Version)
+  - System.Runtime.InteropServices.ITypeLibConverter.GetPrimaryInteropAssembly(System.Guid,System.Int32,System.Int32,System.Int32,System.String@,System.String@)
+  href: System.Runtime.InteropServices.ITypeLibConverter.yml
+  name: ITypeLibConverter
+  fullName: System.Runtime.InteropServices.ITypeLibConverter
+  type: Interface
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/InteropServices/ITypeLibConverter.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/InteropServices/ITypeLibConverter.cs
+    startLine: 103
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Provides a set of services that convert a managed assembly to a COM type library and vice versa.
+  syntax:
+    content: public interface ITypeLibConverter
+    content.vb: Public Interface ITypeLibConverter
+- uid: System.Runtime.InteropServices.ITypeLibConverter.ConvertTypeLibToAssembly(System.Object,System.String,System.Runtime.InteropServices.TypeLibImporterFlags,System.Runtime.InteropServices.ITypeLibImporterNotifySink,System.Byte[],System.Reflection.StrongNameKeyPair,System.String,System.Version)
+  id: ConvertTypeLibToAssembly(System.Object,System.String,System.Runtime.InteropServices.TypeLibImporterFlags,System.Runtime.InteropServices.ITypeLibImporterNotifySink,System.Byte[],System.Reflection.StrongNameKeyPair,System.String,System.Version)
+  parent: System.Runtime.InteropServices.ITypeLibConverter
+  href: System.Runtime.InteropServices.ITypeLibConverter.yml
+  name: ConvertTypeLibToAssembly(Object, String, TypeLibImporterFlags, ITypeLibImporterNotifySink, Byte[], StrongNameKeyPair, String, Version)
+  name.vb: ConvertTypeLibToAssembly(Object, String, TypeLibImporterFlags, ITypeLibImporterNotifySink, Byte(), StrongNameKeyPair, String, Version)
+  fullName: System.Runtime.InteropServices.ITypeLibConverter.ConvertTypeLibToAssembly(System.Object, System.String, System.Runtime.InteropServices.TypeLibImporterFlags, System.Runtime.InteropServices.ITypeLibImporterNotifySink, System.Byte[], System.Reflection.StrongNameKeyPair, System.String, System.Version)
+  fullName.vb: System.Runtime.InteropServices.ITypeLibConverter.ConvertTypeLibToAssembly(System.Object, System.String, System.Runtime.InteropServices.TypeLibImporterFlags, System.Runtime.InteropServices.ITypeLibImporterNotifySink, System.Byte(), System.Reflection.StrongNameKeyPair, System.String, System.Version)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ITypeLibConverter.cs
+    startLine: 108
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Converts a COM type library to an assembly.
+  syntax:
+    content: AssemblyBuilder ConvertTypeLibToAssembly(object typeLib, string asmFileName, TypeLibImporterFlags flags, ITypeLibImporterNotifySink notifySink, byte[] publicKey, StrongNameKeyPair keyPair, string asmNamespace, Version asmVersion)
+    content.vb: Function ConvertTypeLibToAssembly(typeLib As Object, asmFileName As String, flags As TypeLibImporterFlags, notifySink As ITypeLibImporterNotifySink, publicKey As Byte(), keyPair As StrongNameKeyPair, asmNamespace As String, asmVersion As Version) As AssemblyBuilder
+    parameters:
+    - id: typeLib
+      type: System.Object
+      description: The object that implements the ITypeLib interface.
+    - id: asmFileName
+      type: System.String
+      description: The file name of the resulting assembly.
+    - id: flags
+      type: System.Runtime.InteropServices.TypeLibImporterFlags
+      description: A @'System.Runtime.InteropServices.TypeLibImporterFlags' value indicating any special settings.
+    - id: notifySink
+      type: System.Runtime.InteropServices.ITypeLibImporterNotifySink
+      description: '@''System.Runtime.InteropServices.ITypeLibImporterNotifySink'' interface implemented by the caller.'
+    - id: publicKey
+      type: System.Byte[]
+      description: A byte array containing the public key.
+    - id: keyPair
+      type: System.Reflection.StrongNameKeyPair
+      description: A @'System.Reflection.StrongNameKeyPair' object containing the public and private cryptographic key pair.
+    - id: asmNamespace
+      type: System.String
+      description: The namespace for the resulting assembly.
+    - id: asmVersion
+      type: System.Version
+      description: The version of the resulting assembly. If null, the version of the type library is used.
+    return:
+      type: System.Reflection.Emit.AssemblyBuilder
+- uid: System.Runtime.InteropServices.ITypeLibConverter.ConvertAssemblyToTypeLib(System.Reflection.Assembly,System.String,System.Runtime.InteropServices.TypeLibExporterFlags,System.Runtime.InteropServices.ITypeLibExporterNotifySink)
+  id: ConvertAssemblyToTypeLib(System.Reflection.Assembly,System.String,System.Runtime.InteropServices.TypeLibExporterFlags,System.Runtime.InteropServices.ITypeLibExporterNotifySink)
+  parent: System.Runtime.InteropServices.ITypeLibConverter
+  href: System.Runtime.InteropServices.ITypeLibConverter.yml
+  name: ConvertAssemblyToTypeLib(Assembly, String, TypeLibExporterFlags, ITypeLibExporterNotifySink)
+  fullName: System.Runtime.InteropServices.ITypeLibConverter.ConvertAssemblyToTypeLib(System.Reflection.Assembly, System.String, System.Runtime.InteropServices.TypeLibExporterFlags, System.Runtime.InteropServices.ITypeLibExporterNotifySink)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ITypeLibConverter.cs
+    startLine: 118
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Converts an assembly to a COM type library.
+  syntax:
+    content: object ConvertAssemblyToTypeLib(Assembly assembly, string typeLibName, TypeLibExporterFlags flags, ITypeLibExporterNotifySink notifySink)
+    content.vb: Function ConvertAssemblyToTypeLib(assembly As Assembly, typeLibName As String, flags As TypeLibExporterFlags, notifySink As ITypeLibExporterNotifySink) As Object
+    parameters:
+    - id: assembly
+      type: System.Reflection.Assembly
+      description: The assembly to convert.
+    - id: typeLibName
+      type: System.String
+      description: The file name of the resulting type library.
+    - id: flags
+      type: System.Runtime.InteropServices.TypeLibExporterFlags
+      description: A @'System.Runtime.InteropServices.TypeLibExporterFlags' value indicating any special settings.
+    - id: notifySink
+      type: System.Runtime.InteropServices.ITypeLibExporterNotifySink
+      description: The @'System.Runtime.InteropServices.ITypeLibExporterNotifySink' interface implemented by the caller.
+    return:
+      type: System.Object
+- uid: System.Runtime.InteropServices.ITypeLibConverter.GetPrimaryInteropAssembly(System.Guid,System.Int32,System.Int32,System.Int32,System.String@,System.String@)
+  id: GetPrimaryInteropAssembly(System.Guid,System.Int32,System.Int32,System.Int32,System.String@,System.String@)
+  parent: System.Runtime.InteropServices.ITypeLibConverter
+  href: System.Runtime.InteropServices.ITypeLibConverter.yml
+  name: GetPrimaryInteropAssembly(Guid, Int32, Int32, Int32, out String, out String)
+  name.vb: GetPrimaryInteropAssembly(Guid, Int32, Int32, Int32, ByRef String, ByRef String)
+  fullName: System.Runtime.InteropServices.ITypeLibConverter.GetPrimaryInteropAssembly(System.Guid, System.Int32, System.Int32, System.Int32, out System.String, out System.String)
+  fullName.vb: System.Runtime.InteropServices.ITypeLibConverter.GetPrimaryInteropAssembly(System.Guid, System.Int32, System.Int32, System.Int32, ByRef System.String, ByRef System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ITypeLibConverter.cs
+    startLine: 125
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Gets the name and code base of a primary interop assembly for a specified type library.
+  syntax:
+    content: bool GetPrimaryInteropAssembly(Guid g, int major, int minor, int lcid, out string asmName, out string asmCodeBase)
+    content.vb: Function GetPrimaryInteropAssembly(g As Guid, major As Integer, minor As Integer, lcid As Integer, ByRef asmName As String, ByRef asmCodeBase As String) As Boolean
+    parameters:
+    - id: g
+      type: System.Guid
+      description: The GUID of the type library.
+    - id: major
+      type: System.Int32
+      description: The major version number of the type library.
+    - id: minor
+      type: System.Int32
+      description: The minor version number of the type library.
+    - id: lcid
+      type: System.Int32
+      description: The LCID of the type library.
+    - id: asmName
+      type: System.String
+      description: On successful return, the name of the primary interop assembly associated with *g*.
+    - id: asmCodeBase
+      type: System.String
+      description: On successful return, the code base of the primary interop assembly associated with *g*.
+    return:
+      type: System.Boolean
+- uid: System.Runtime.InteropServices.ITypeLibConverter.ConvertTypeLibToAssembly(System.Object,System.String,System.Int32,System.Runtime.InteropServices.ITypeLibImporterNotifySink,System.Byte[],System.Reflection.StrongNameKeyPair,System.Boolean)
+  id: ConvertTypeLibToAssembly(System.Object,System.String,System.Int32,System.Runtime.InteropServices.ITypeLibImporterNotifySink,System.Byte[],System.Reflection.StrongNameKeyPair,System.Boolean)
+  parent: System.Runtime.InteropServices.ITypeLibConverter
+  href: System.Runtime.InteropServices.ITypeLibConverter.yml
+  name: ConvertTypeLibToAssembly(Object, String, Int32, ITypeLibImporterNotifySink, Byte[], StrongNameKeyPair, Boolean)
+  name.vb: ConvertTypeLibToAssembly(Object, String, Int32, ITypeLibImporterNotifySink, Byte(), StrongNameKeyPair, Boolean)
+  fullName: System.Runtime.InteropServices.ITypeLibConverter.ConvertTypeLibToAssembly(System.Object, System.String, System.Int32, System.Runtime.InteropServices.ITypeLibImporterNotifySink, System.Byte[], System.Reflection.StrongNameKeyPair, System.Boolean)
+  fullName.vb: System.Runtime.InteropServices.ITypeLibConverter.ConvertTypeLibToAssembly(System.Object, System.String, System.Int32, System.Runtime.InteropServices.ITypeLibImporterNotifySink, System.Byte(), System.Reflection.StrongNameKeyPair, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ITypeLibConverter.cs
+    startLine: 127
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Converts a COM type library to an assembly.
+  syntax:
+    content: AssemblyBuilder ConvertTypeLibToAssembly(object typeLib, string asmFileName, int flags, ITypeLibImporterNotifySink notifySink, byte[] publicKey, StrongNameKeyPair keyPair, bool unsafeInterfaces)
+    content.vb: Function ConvertTypeLibToAssembly(typeLib As Object, asmFileName As String, flags As Integer, notifySink As ITypeLibImporterNotifySink, publicKey As Byte(), keyPair As StrongNameKeyPair, unsafeInterfaces As Boolean) As AssemblyBuilder
+    parameters:
+    - id: typeLib
+      type: System.Object
+      description: The object that implements the ITypeLib interface.
+    - id: asmFileName
+      type: System.String
+      description: The file name of the resulting assembly.
+    - id: flags
+      type: System.Int32
+      description: A @'System.Runtime.InteropServices.TypeLibImporterFlags' value indicating any special settings.
+    - id: notifySink
+      type: System.Runtime.InteropServices.ITypeLibImporterNotifySink
+      description: '@''System.Runtime.InteropServices.ITypeLibImporterNotifySink'' interface implemented by the caller.'
+    - id: publicKey
+      type: System.Byte[]
+      description: A byte array containing the public key.
+    - id: keyPair
+      type: System.Reflection.StrongNameKeyPair
+      description: A @'System.Reflection.StrongNameKeyPair' object containing the public and private cryptographic key pair.
+    - id: unsafeInterfaces
+      type: System.Boolean
+      description: If true, the interfaces require link time checks for @'System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode' permission. If false, the interfaces require run time checks that require a stack walk and are more expensive, but help provide greater protection.
+    return:
+      type: System.Reflection.Emit.AssemblyBuilder
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Runtime.InteropServices.TypeLibImporterFlags
+  parent: System.Runtime.InteropServices
+  isExternal: false
+  href: System.Runtime.InteropServices.TypeLibImporterFlags.yml
+  name: TypeLibImporterFlags
+  fullName: System.Runtime.InteropServices.TypeLibImporterFlags
+  type: Enum
+- uid: System.Runtime.InteropServices.ITypeLibImporterNotifySink
+  isExternal: false
+  href: System.Runtime.InteropServices.ITypeLibImporterNotifySink.yml
+  name: ITypeLibImporterNotifySink
+  fullName: System.Runtime.InteropServices.ITypeLibImporterNotifySink
+  type: Interface
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  name.vb: Byte()
+  fullName: System.Byte[]
+  fullName.vb: System.Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Reflection.StrongNameKeyPair
+  parent: System.Reflection
+  isExternal: false
+  href: System.Reflection.StrongNameKeyPair.yml
+  name: StrongNameKeyPair
+  fullName: System.Reflection.StrongNameKeyPair
+  type: Class
+- uid: System.Version
+  parent: System
+  isExternal: true
+  name: Version
+  fullName: System.Version
+- uid: System.Reflection.Emit.AssemblyBuilder
+  parent: System.Reflection.Emit
+  isExternal: false
+  href: System.Reflection.Emit.AssemblyBuilder.yml
+  name: AssemblyBuilder
+  fullName: System.Reflection.Emit.AssemblyBuilder
+  type: Class
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace
+- uid: System.Reflection.Emit
+  isExternal: false
+  name: System.Reflection.Emit
+  fullName: System.Reflection.Emit
+  type: Namespace
+- uid: System.Reflection.Assembly
+  parent: System.Reflection
+  isExternal: true
+  name: Assembly
+  fullName: System.Reflection.Assembly
+- uid: System.Runtime.InteropServices.TypeLibExporterFlags
+  parent: System.Runtime.InteropServices
+  isExternal: false
+  href: System.Runtime.InteropServices.TypeLibExporterFlags.yml
+  name: TypeLibExporterFlags
+  fullName: System.Runtime.InteropServices.TypeLibExporterFlags
+  type: Enum
+- uid: System.Runtime.InteropServices.ITypeLibExporterNotifySink
+  isExternal: false
+  href: System.Runtime.InteropServices.ITypeLibExporterNotifySink.yml
+  name: ITypeLibExporterNotifySink
+  fullName: System.Runtime.InteropServices.ITypeLibExporterNotifySink
+  type: Interface
+- uid: System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  fullName: System.Guid
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean

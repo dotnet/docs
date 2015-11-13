@@ -1,0 +1,81 @@
+items:
+- uid: System.Diagnostics.SymbolStore.ISymbolBinder1
+  id: ISymbolBinder1
+  parent: System.Diagnostics.SymbolStore
+  children:
+  - System.Diagnostics.SymbolStore.ISymbolBinder1.GetReader(System.IntPtr,System.String,System.String)
+  href: System.Diagnostics.SymbolStore.ISymbolBinder1.yml
+  name: ISymbolBinder1
+  fullName: System.Diagnostics.SymbolStore.ISymbolBinder1
+  type: Interface
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymBinder.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymBinder.cs
+    startLine: 32
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Represents a symbol binder for managed code.
+  syntax:
+    content: public interface ISymbolBinder1
+    content.vb: Public Interface ISymbolBinder1
+- uid: System.Diagnostics.SymbolStore.ISymbolBinder1.GetReader(System.IntPtr,System.String,System.String)
+  id: GetReader(System.IntPtr,System.String,System.String)
+  parent: System.Diagnostics.SymbolStore.ISymbolBinder1
+  href: System.Diagnostics.SymbolStore.ISymbolBinder1.yml
+  name: GetReader(IntPtr, String, String)
+  fullName: System.Diagnostics.SymbolStore.ISymbolBinder1.GetReader(System.IntPtr, System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymBinder.cs
+    startLine: 36
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Gets the interface of the symbol reader for the current file.
+  syntax:
+    content: ISymbolReader GetReader(IntPtr importer, string filename, string searchPath)
+    content.vb: Function GetReader(importer As IntPtr, filename As String, searchPath As String) As ISymbolReader
+    parameters:
+    - id: importer
+      type: System.IntPtr
+      description: An @'System.IntPtr' that refers to the metadata import interface.
+    - id: filename
+      type: System.String
+      description: The name of the file for which the reader interface is required.
+    - id: searchPath
+      type: System.String
+      description: The search path used to locate the symbol file.
+    return:
+      type: System.Diagnostics.SymbolStore.ISymbolReader
+references:
+- uid: System.Diagnostics.SymbolStore
+  isExternal: false
+  name: System.Diagnostics.SymbolStore
+  fullName: System.Diagnostics.SymbolStore
+  type: Namespace
+- uid: System.IntPtr
+  parent: System
+  isExternal: true
+  name: IntPtr
+  fullName: System.IntPtr
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Diagnostics.SymbolStore.ISymbolReader
+  parent: System.Diagnostics.SymbolStore
+  isExternal: false
+  href: System.Diagnostics.SymbolStore.ISymbolReader.yml
+  name: ISymbolReader
+  fullName: System.Diagnostics.SymbolStore.ISymbolReader
+  type: Interface
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

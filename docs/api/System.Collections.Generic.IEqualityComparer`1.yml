@@ -1,0 +1,108 @@
+items:
+- uid: System.Collections.Generic.IEqualityComparer`1
+  id: IEqualityComparer`1
+  parent: System.Collections.Generic
+  children:
+  - System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)
+  - System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)
+  href: System.Collections.Generic.IEqualityComparer`1.yml
+  name: IEqualityComparer<T>
+  name.vb: IEqualityComparer(Of T)
+  fullName: System.Collections.Generic.IEqualityComparer<T>
+  fullName.vb: System.Collections.Generic.IEqualityComparer(Of T)
+  type: Interface
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Collections/Generic/IEqualityComparer.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Collections/Generic/IEqualityComparer.cs
+    startLine: 11
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Defines methods to support the comparison of objects for equality.
+  syntax:
+    content: public interface IEqualityComparer<in T>
+    content.vb: Public Interface IEqualityComparer(Of In T)
+    typeParameters:
+    - id: T
+- uid: System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)
+  id: Equals(`0,`0)
+  parent: System.Collections.Generic.IEqualityComparer`1
+  href: System.Collections.Generic.IEqualityComparer`1.yml
+  name: Equals(T, T)
+  fullName: System.Collections.Generic.IEqualityComparer<T>.Equals(T, T)
+  fullName.vb: System.Collections.Generic.IEqualityComparer(Of T).Equals(T, T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/IEqualityComparer.cs
+    startLine: 13
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Determines whether the specified objects are equal.
+  syntax:
+    content: bool Equals(T x, T y)
+    content.vb: Function Equals(x As T, y As T) As Boolean
+    parameters:
+    - id: x
+      type: '{T}'
+      description: The first object of type *T* to compare.
+    - id: y
+      type: '{T}'
+      description: The second object of type *T* to compare.
+    return:
+      type: System.Boolean
+- uid: System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)
+  id: GetHashCode(`0)
+  parent: System.Collections.Generic.IEqualityComparer`1
+  href: System.Collections.Generic.IEqualityComparer`1.yml
+  name: GetHashCode(T)
+  fullName: System.Collections.Generic.IEqualityComparer<T>.GetHashCode(T)
+  fullName.vb: System.Collections.Generic.IEqualityComparer(Of T).GetHashCode(T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/IEqualityComparer.cs
+    startLine: 14
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Returns a hash code for the specified object.
+  syntax:
+    content: int GetHashCode(T obj)
+    content.vb: Function GetHashCode(obj As T) As Integer
+    parameters:
+    - id: obj
+      type: '{T}'
+      description: The @'System.Object' for which a hash code is to be returned.
+    return:
+      type: System.Int32
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The type of *obj* is a reference type and *obj* is null.
+references:
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: '{T}'
+  isExternal: false
+  name: T
+  fullName: T
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32

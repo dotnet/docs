@@ -1,0 +1,422 @@
+items:
+- uid: System.Reflection.Metadata.ManifestResourceHandleCollection
+  id: ManifestResourceHandleCollection
+  parent: System.Reflection.Metadata
+  children:
+  - System.Reflection.Metadata.ManifestResourceHandleCollection.Count
+  - System.Reflection.Metadata.ManifestResourceHandleCollection.GetEnumerator
+  - System.Reflection.Metadata.ManifestResourceHandleCollection.System#Collections#Generic#IEnumerable{System#Reflection#Metadata#ManifestResourceHandle}#GetEnumerator
+  - System.Reflection.Metadata.ManifestResourceHandleCollection.System#Collections#IEnumerable#GetEnumerator
+  href: System.Reflection.Metadata.ManifestResourceHandleCollection.yml
+  name: ManifestResourceHandleCollection
+  fullName: System.Reflection.Metadata.ManifestResourceHandleCollection
+  type: Struct
+  source:
+    remote: &o0
+      path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/HandleCollections.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/HandleCollections.cs
+    startLine: 1758
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Represents a collection of @'System.Reflection.Metadata.ManifestResourceHandle'.
+  syntax:
+    content: 'public struct ManifestResourceHandleCollection : IReadOnlyCollection<ManifestResourceHandle>, IEnumerable<ManifestResourceHandle>, IEnumerable'
+    content.vb: Public Structure ManifestResourceHandleCollection Implements IReadOnlyCollection(Of ManifestResourceHandle), IEnumerable(Of ManifestResourceHandle), IEnumerable
+  implements:
+  - System.Collections.Generic.IReadOnlyCollection{System.Reflection.Metadata.ManifestResourceHandle}
+  - System.Collections.Generic.IEnumerable{System.Reflection.Metadata.ManifestResourceHandle}
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.Reflection.Metadata.ManifestResourceHandleCollection.Count
+  id: Count
+  parent: System.Reflection.Metadata.ManifestResourceHandleCollection
+  href: System.Reflection.Metadata.ManifestResourceHandleCollection.yml
+  name: Count
+  fullName: System.Reflection.Metadata.ManifestResourceHandleCollection.Count
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/HandleCollections.cs
+    startLine: 1768
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public int Count { get; }
+    content.vb: Public ReadOnly Property Count As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: 
+- uid: System.Reflection.Metadata.ManifestResourceHandleCollection.GetEnumerator
+  id: GetEnumerator
+  parent: System.Reflection.Metadata.ManifestResourceHandleCollection
+  href: System.Reflection.Metadata.ManifestResourceHandleCollection.yml
+  name: GetEnumerator()
+  fullName: System.Reflection.Metadata.ManifestResourceHandleCollection.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/HandleCollections.cs
+    startLine: 1773
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public ManifestResourceHandleCollection.Enumerator GetEnumerator()
+    content.vb: Public Function GetEnumerator As ManifestResourceHandleCollection.Enumerator
+    return:
+      type: System.Reflection.Metadata.ManifestResourceHandleCollection.Enumerator
+      description: 
+- uid: System.Reflection.Metadata.ManifestResourceHandleCollection.System#Collections#Generic#IEnumerable{System#Reflection#Metadata#ManifestResourceHandle}#GetEnumerator
+  id: System#Collections#Generic#IEnumerable{System#Reflection#Metadata#ManifestResourceHandle}#GetEnumerator
+  parent: System.Reflection.Metadata.ManifestResourceHandleCollection
+  href: System.Reflection.Metadata.ManifestResourceHandleCollection.yml
+  name: IEnumerable<ManifestResourceHandle>.GetEnumerator()
+  name.vb: System.Collections.Generic.IEnumerable<System.Reflection.Metadata.ManifestResourceHandle>.GetEnumerator()
+  fullName: System.Reflection.Metadata.ManifestResourceHandleCollection.System.Collections.Generic.IEnumerable<System.Reflection.Metadata.ManifestResourceHandle>.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/HandleCollections.cs
+    startLine: 1778
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: IEnumerator<ManifestResourceHandle> IEnumerable<ManifestResourceHandle>.GetEnumerator()
+    content.vb: Function System.Collections.Generic.IEnumerable<System.Reflection.Metadata.ManifestResourceHandle>.GetEnumerator As IEnumerator(Of ManifestResourceHandle) Implements IEnumerable(Of ManifestResourceHandle).GetEnumerator
+    return:
+      type: System.Collections.Generic.IEnumerator{System.Reflection.Metadata.ManifestResourceHandle}
+      description: 
+- uid: System.Reflection.Metadata.ManifestResourceHandleCollection.System#Collections#IEnumerable#GetEnumerator
+  id: System#Collections#IEnumerable#GetEnumerator
+  parent: System.Reflection.Metadata.ManifestResourceHandleCollection
+  href: System.Reflection.Metadata.ManifestResourceHandleCollection.yml
+  name: IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: System.Reflection.Metadata.ManifestResourceHandleCollection.System.Collections.IEnumerable.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/HandleCollections.cs
+    startLine: 1783
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: IEnumerator IEnumerable.GetEnumerator()
+    content.vb: Function System.Collections.IEnumerable.GetEnumerator As IEnumerator Implements IEnumerable.GetEnumerator
+    return:
+      type: System.Collections.IEnumerator
+      description: 
+references:
+- uid: System.Reflection.Metadata.ManifestResourceHandle
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.ManifestResourceHandle.yml
+  name: ManifestResourceHandle
+  fullName: System.Reflection.Metadata.ManifestResourceHandle
+  type: Struct
+- uid: System.Reflection.Metadata
+  isExternal: false
+  name: System.Reflection.Metadata
+  fullName: System.Reflection.Metadata
+  type: Namespace
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Reflection.Metadata.ManifestResourceHandleCollection.Enumerator
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.ManifestResourceHandleCollection.Enumerator.yml
+  name: ManifestResourceHandleCollection.Enumerator
+  fullName: System.Reflection.Metadata.ManifestResourceHandleCollection.Enumerator
+  type: Struct
+- uid: System.Collections.Generic.IEnumerator{System.Reflection.Metadata.ManifestResourceHandle}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  href: System.Reflection.Metadata.ManifestResourceHandle.yml
+  name: IEnumerator<ManifestResourceHandle>
+  name.vb: IEnumerator(Of ManifestResourceHandle)
+  fullName: System.Collections.Generic.IEnumerator<System.Reflection.Metadata.ManifestResourceHandle>
+  fullName.vb: System.Collections.Generic.IEnumerator(Of System.Reflection.Metadata.ManifestResourceHandle)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Reflection.Metadata.ManifestResourceHandle
+    name: ManifestResourceHandle
+    fullName: System.Reflection.Metadata.ManifestResourceHandle
+    href: System.Reflection.Metadata.ManifestResourceHandle.yml
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Reflection.Metadata.ManifestResourceHandle
+    name: ManifestResourceHandle
+    fullName: System.Reflection.Metadata.ManifestResourceHandle
+    href: System.Reflection.Metadata.ManifestResourceHandle.yml
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerator<T>
+  name.vb: IEnumerator(Of T)
+  fullName: System.Collections.Generic.IEnumerator<T>
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  isExternal: false
+  name: System.Collections
+  fullName: System.Collections

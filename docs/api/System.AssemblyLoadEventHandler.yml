@@ -1,0 +1,46 @@
+items:
+- uid: System.AssemblyLoadEventHandler
+  id: AssemblyLoadEventHandler
+  parent: System
+  children: []
+  href: System.AssemblyLoadEventHandler.yml
+  name: AssemblyLoadEventHandler
+  fullName: System.AssemblyLoadEventHandler
+  type: Delegate
+  source:
+    remote:
+      path: src/mscorlib/src/System/AppDomain.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/AppDomain.cs
+    startLine: 114
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Represents the method that handles the @'System.AppDomain.AssemblyLoad' event of an @'System.AppDomain'.
+  syntax:
+    content: public delegate void AssemblyLoadEventHandler(object sender, AssemblyLoadEventArgs args);
+    content.vb: Public Delegate Sub AssemblyLoadEventHandler(sender As Object, args As AssemblyLoadEventArgs)
+    parameters:
+    - id: sender
+      type: System.Object
+      description: The source of the event.
+    - id: args
+      type: System.AssemblyLoadEventArgs
+      description: An @'System.AssemblyLoadEventArgs' that contains the event data.
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.AssemblyLoadEventArgs
+  isExternal: false
+  href: System.AssemblyLoadEventArgs.yml
+  name: AssemblyLoadEventArgs
+  fullName: System.AssemblyLoadEventArgs
+  type: Class

@@ -1,0 +1,191 @@
+items:
+- uid: System.Reflection.Emit.PackingSize
+  id: PackingSize
+  parent: System.Reflection.Emit
+  children:
+  - System.Reflection.Emit.PackingSize.Size1
+  - System.Reflection.Emit.PackingSize.Size128
+  - System.Reflection.Emit.PackingSize.Size16
+  - System.Reflection.Emit.PackingSize.Size2
+  - System.Reflection.Emit.PackingSize.Size32
+  - System.Reflection.Emit.PackingSize.Size4
+  - System.Reflection.Emit.PackingSize.Size64
+  - System.Reflection.Emit.PackingSize.Size8
+  - System.Reflection.Emit.PackingSize.Unspecified
+  href: System.Reflection.Emit.PackingSize.yml
+  name: PackingSize
+  fullName: System.Reflection.Emit.PackingSize
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Reflection/Emit/TypeBuilder.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Reflection/Emit/TypeBuilder.cs
+    startLine: 21
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Specifies one of two factors that determine the memory alignment of fields when a type is marshaled.
+  syntax:
+    content: public enum PackingSize
+    content.vb: Public Enum PackingSize
+- uid: System.Reflection.Emit.PackingSize.Unspecified
+  id: Unspecified
+  parent: System.Reflection.Emit.PackingSize
+  href: System.Reflection.Emit.PackingSize.yml
+  name: Unspecified
+  fullName: System.Reflection.Emit.PackingSize.Unspecified
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/TypeBuilder.cs
+    startLine: 25
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: The packing size is not specified.
+  syntax:
+    content: Unspecified = 0
+- uid: System.Reflection.Emit.PackingSize.Size1
+  id: Size1
+  parent: System.Reflection.Emit.PackingSize
+  href: System.Reflection.Emit.PackingSize.yml
+  name: Size1
+  fullName: System.Reflection.Emit.PackingSize.Size1
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/TypeBuilder.cs
+    startLine: 26
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: The packing size is 1 byte.
+  syntax:
+    content: Size1 = 1
+- uid: System.Reflection.Emit.PackingSize.Size2
+  id: Size2
+  parent: System.Reflection.Emit.PackingSize
+  href: System.Reflection.Emit.PackingSize.yml
+  name: Size2
+  fullName: System.Reflection.Emit.PackingSize.Size2
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/TypeBuilder.cs
+    startLine: 27
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: The packing size is 2 bytes.
+  syntax:
+    content: Size2 = 2
+- uid: System.Reflection.Emit.PackingSize.Size4
+  id: Size4
+  parent: System.Reflection.Emit.PackingSize
+  href: System.Reflection.Emit.PackingSize.yml
+  name: Size4
+  fullName: System.Reflection.Emit.PackingSize.Size4
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/TypeBuilder.cs
+    startLine: 28
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: The packing size is 4 bytes.
+  syntax:
+    content: Size4 = 4
+- uid: System.Reflection.Emit.PackingSize.Size8
+  id: Size8
+  parent: System.Reflection.Emit.PackingSize
+  href: System.Reflection.Emit.PackingSize.yml
+  name: Size8
+  fullName: System.Reflection.Emit.PackingSize.Size8
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/TypeBuilder.cs
+    startLine: 29
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: The packing size is 8 bytes.
+  syntax:
+    content: Size8 = 8
+- uid: System.Reflection.Emit.PackingSize.Size16
+  id: Size16
+  parent: System.Reflection.Emit.PackingSize
+  href: System.Reflection.Emit.PackingSize.yml
+  name: Size16
+  fullName: System.Reflection.Emit.PackingSize.Size16
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/TypeBuilder.cs
+    startLine: 30
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: The packing size is 16 bytes.
+  syntax:
+    content: Size16 = 16
+- uid: System.Reflection.Emit.PackingSize.Size32
+  id: Size32
+  parent: System.Reflection.Emit.PackingSize
+  href: System.Reflection.Emit.PackingSize.yml
+  name: Size32
+  fullName: System.Reflection.Emit.PackingSize.Size32
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/TypeBuilder.cs
+    startLine: 31
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: The packing size is 32 bytes.
+  syntax:
+    content: Size32 = 32
+- uid: System.Reflection.Emit.PackingSize.Size64
+  id: Size64
+  parent: System.Reflection.Emit.PackingSize
+  href: System.Reflection.Emit.PackingSize.yml
+  name: Size64
+  fullName: System.Reflection.Emit.PackingSize.Size64
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/TypeBuilder.cs
+    startLine: 32
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: The packing size is 64 bytes.
+  syntax:
+    content: Size64 = 64
+- uid: System.Reflection.Emit.PackingSize.Size128
+  id: Size128
+  parent: System.Reflection.Emit.PackingSize
+  href: System.Reflection.Emit.PackingSize.yml
+  name: Size128
+  fullName: System.Reflection.Emit.PackingSize.Size128
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/TypeBuilder.cs
+    startLine: 33
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: The packing size is 128 bytes.
+  syntax:
+    content: Size128 = 128
+references:
+- uid: System.Reflection.Emit
+  isExternal: false
+  name: System.Reflection.Emit
+  fullName: System.Reflection.Emit
+  type: Namespace

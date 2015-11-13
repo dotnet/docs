@@ -1,0 +1,160 @@
+items:
+- uid: System.Numerics
+  id: System.Numerics
+  children:
+  - System.Numerics.BigInteger
+  - System.Numerics.Complex
+  - System.Numerics.Matrix3x2
+  - System.Numerics.Matrix4x4
+  - System.Numerics.Plane
+  - System.Numerics.Quaternion
+  - System.Numerics.Vector
+  - System.Numerics.Vector`1
+  - System.Numerics.Vector2
+  - System.Numerics.Vector3
+  - System.Numerics.Vector4
+  - System.Numerics.VectorExtensions
+  href: System.Numerics.yml
+  name: System.Numerics
+  fullName: System.Numerics
+  type: Namespace
+  source:
+    remote:
+      path: src/System.Runtime.Numerics/src/System/Numerics/Complex.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Runtime.Numerics/src/System/Numerics/Complex.cs
+    startLine: 16
+  assemblies:
+  - System.Runtime.Numerics
+  summary: The @'System.Numerics' namespace contains numeric types that complement the numeric primitives, such as @'System.Byte', @'System.Double', and @'System.Int32', that are defined by the .NET Framework.
+references:
+- uid: System.Numerics.BigInteger
+  parent: System.Numerics
+  isExternal: false
+  href: System.Numerics.BigInteger.yml
+  name: BigInteger
+  fullName: System.Numerics.BigInteger
+  type: Struct
+- uid: System.Numerics.Complex
+  parent: System.Numerics
+  isExternal: false
+  href: System.Numerics.Complex.yml
+  name: Complex
+  fullName: System.Numerics.Complex
+  type: Struct
+- uid: System.Numerics.VectorExtensions
+  isExternal: false
+  href: System.Numerics.VectorExtensions.yml
+  name: VectorExtensions
+  fullName: System.Numerics.VectorExtensions
+  type: Class
+  summary: Contains conversions from Vector2 to Windows.Foundation.Point and Size, which are all structurally identical.
+- uid: System.Numerics.Matrix3x2
+  parent: System.Numerics
+  isExternal: false
+  href: System.Numerics.Matrix3x2.yml
+  name: Matrix3x2
+  fullName: System.Numerics.Matrix3x2
+  type: Struct
+  summary: A structure encapsulating a 3x2 matrix.
+- uid: System.Numerics.Matrix4x4
+  parent: System.Numerics
+  isExternal: false
+  href: System.Numerics.Matrix4x4.yml
+  name: Matrix4x4
+  fullName: System.Numerics.Matrix4x4
+  type: Struct
+  summary: A structure encapsulating a 4x4 matrix.
+- uid: System.Numerics.Plane
+  parent: System.Numerics
+  isExternal: false
+  href: System.Numerics.Plane.yml
+  name: Plane
+  fullName: System.Numerics.Plane
+  type: Struct
+  summary: A structure encapsulating a 3D Plane
+- uid: System.Numerics.Quaternion
+  parent: System.Numerics
+  isExternal: false
+  href: System.Numerics.Quaternion.yml
+  name: Quaternion
+  fullName: System.Numerics.Quaternion
+  type: Struct
+  summary: >-
+    A structure encapsulating a four-dimensional vector (x,y,z,w),
+
+    which is used to efficiently rotate an object about the (x,y,z) vector by the angle theta, where w = cos(theta/2).
+- uid: System.Numerics.Vector`1
+  parent: System.Numerics
+  isExternal: false
+  href: System.Numerics.Vector`1.yml
+  name: Vector<T>
+  name.vb: Vector(Of T)
+  fullName: System.Numerics.Vector<T>
+  fullName.vb: System.Numerics.Vector(Of T)
+  type: Struct
+  summary: >-
+    A structure that represents a single Vector. The count of this Vector is fixed but CPU register dependent.
+
+    This struct only supports numerical types. This type is intended to be used as a building block for vectorizing
+
+    large algorithms. This type is immutable, individual elements cannot be modified.
+  spec.csharp:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    fullName: System.Numerics.Vector
+    href: System.Numerics.Vector`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Numerics.Vector`1
+    name: Vector
+    fullName: System.Numerics.Vector
+    href: System.Numerics.Vector`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Numerics.Vector2
+  parent: System.Numerics
+  isExternal: false
+  href: System.Numerics.Vector2.yml
+  name: Vector2
+  fullName: System.Numerics.Vector2
+  type: Struct
+  summary: A structure encapsulating two single precision floating point values and provides hardware accelerated methods.
+- uid: System.Numerics.Vector3
+  parent: System.Numerics
+  isExternal: false
+  href: System.Numerics.Vector3.yml
+  name: Vector3
+  fullName: System.Numerics.Vector3
+  type: Struct
+  summary: A structure encapsulating three single precision floating point values and provides hardware accelerated methods.
+- uid: System.Numerics.Vector4
+  parent: System.Numerics
+  isExternal: false
+  href: System.Numerics.Vector4.yml
+  name: Vector4
+  fullName: System.Numerics.Vector4
+  type: Struct
+  summary: A structure encapsulating four single precision floating point values and provides hardware accelerated methods.
+- uid: System.Numerics.Vector
+  isExternal: false
+  href: System.Numerics.Vector.yml
+  name: Vector
+  fullName: System.Numerics.Vector
+  type: Class
+  summary: Contains various methods useful for creating, manipulating, combining, and converting generic vectors with one another.
+- uid: System.Numerics
+  isExternal: false
+  name: System.Numerics
+  fullName: System.Numerics
+  type: Namespace

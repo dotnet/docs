@@ -1,0 +1,68 @@
+items:
+- uid: System.Collections.Specialized.INotifyCollectionChanged
+  id: INotifyCollectionChanged
+  parent: System.Collections.Specialized
+  children:
+  - System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged
+  href: System.Collections.Specialized.INotifyCollectionChanged.yml
+  name: INotifyCollectionChanged
+  fullName: System.Collections.Specialized.INotifyCollectionChanged
+  type: Interface
+  source:
+    remote: &o0
+      path: src/System.ObjectModel/src/System/Collections/Specialized/INotifyCollectionChanged.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.ObjectModel/src/System/Collections/Specialized/INotifyCollectionChanged.cs
+    startLine: 12
+  assemblies:
+  - System.ObjectModel
+  namespace: System.Collections.Specialized
+  summary: Notifies listeners of dynamic changes, such as when an item is added and removed or the whole list is cleared.
+  syntax:
+    content: public interface INotifyCollectionChanged
+    content.vb: Public Interface INotifyCollectionChanged
+- uid: System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged
+  id: CollectionChanged
+  parent: System.Collections.Specialized.INotifyCollectionChanged
+  href: System.Collections.Specialized.INotifyCollectionChanged.yml
+  name: CollectionChanged
+  fullName: System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged
+  type: Event
+  source:
+    remote: *o0
+    path: src/System.ObjectModel/src/System/Collections/Specialized/INotifyCollectionChanged.cs
+    startLine: 22
+  assemblies:
+  - System.ObjectModel
+  namespace: System.Collections.Specialized
+  summary: Occurs when the collection changes.
+  remarks: >-
+    The event handler receives an argument of type
+
+    @'System.Collections.Specialized.NotifyCollectionChangedEventArgs'
+
+    containing data related to this event.
+  syntax:
+    content: event NotifyCollectionChangedEventHandler CollectionChanged
+    content.vb: Event CollectionChanged As NotifyCollectionChangedEventHandler
+references:
+- uid: System.Collections.Specialized
+  isExternal: false
+  name: System.Collections.Specialized
+  fullName: System.Collections.Specialized
+  type: Namespace
+- uid: System.Collections.Specialized.NotifyCollectionChangedEventArgs
+  isExternal: false
+  href: System.Collections.Specialized.NotifyCollectionChangedEventArgs.yml
+  name: NotifyCollectionChangedEventArgs
+  fullName: System.Collections.Specialized.NotifyCollectionChangedEventArgs
+  type: Class
+  summary: >-
+    Arguments for the CollectionChanged event.
+
+    A collection that supports INotifyCollectionChangedThis raises this event
+
+    whenever an item is added or removed, or when the contents of the collection
+
+    changes dramatically.

@@ -1,0 +1,1422 @@
+items:
+- uid: System.Collections.Immutable.ImmutableSortedSet`1.Builder
+  id: ImmutableSortedSet`1.Builder
+  parent: System.Collections.Immutable
+  children:
+  - System.Collections.Immutable.ImmutableSortedSet`1.Builder.Add(`0)
+  - System.Collections.Immutable.ImmutableSortedSet`1.Builder.Clear
+  - System.Collections.Immutable.ImmutableSortedSet`1.Builder.Contains(`0)
+  - System.Collections.Immutable.ImmutableSortedSet`1.Builder.Count
+  - System.Collections.Immutable.ImmutableSortedSet`1.Builder.ExceptWith(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Immutable.ImmutableSortedSet`1.Builder.GetEnumerator
+  - System.Collections.Immutable.ImmutableSortedSet`1.Builder.IntersectWith(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Immutable.ImmutableSortedSet`1.Builder.IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Immutable.ImmutableSortedSet`1.Builder.IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Immutable.ImmutableSortedSet`1.Builder.IsSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Immutable.ImmutableSortedSet`1.Builder.IsSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Immutable.ImmutableSortedSet`1.Builder.Item(System.Int32)
+  - System.Collections.Immutable.ImmutableSortedSet`1.Builder.KeyComparer
+  - System.Collections.Immutable.ImmutableSortedSet`1.Builder.Max
+  - System.Collections.Immutable.ImmutableSortedSet`1.Builder.Min
+  - System.Collections.Immutable.ImmutableSortedSet`1.Builder.Overlaps(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Immutable.ImmutableSortedSet`1.Builder.Remove(`0)
+  - System.Collections.Immutable.ImmutableSortedSet`1.Builder.Reverse
+  - System.Collections.Immutable.ImmutableSortedSet`1.Builder.SetEquals(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Immutable.ImmutableSortedSet`1.Builder.SymmetricExceptWith(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Immutable.ImmutableSortedSet`1.Builder.System#Collections#Generic#ICollection{T}#Add(`0)
+  - System.Collections.Immutable.ImmutableSortedSet`1.Builder.System#Collections#Generic#ICollection{T}#CopyTo(`0[],System.Int32)
+  - System.Collections.Immutable.ImmutableSortedSet`1.Builder.System#Collections#Generic#ICollection{T}#IsReadOnly
+  - System.Collections.Immutable.ImmutableSortedSet`1.Builder.System#Collections#Generic#IEnumerable{T}#GetEnumerator
+  - System.Collections.Immutable.ImmutableSortedSet`1.Builder.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  - System.Collections.Immutable.ImmutableSortedSet`1.Builder.System#Collections#ICollection#IsSynchronized
+  - System.Collections.Immutable.ImmutableSortedSet`1.Builder.System#Collections#ICollection#SyncRoot
+  - System.Collections.Immutable.ImmutableSortedSet`1.Builder.System#Collections#IEnumerable#GetEnumerator
+  - System.Collections.Immutable.ImmutableSortedSet`1.Builder.ToImmutable
+  - System.Collections.Immutable.ImmutableSortedSet`1.Builder.UnionWith(System.Collections.Generic.IEnumerable{`0})
+  href: System.Collections.Immutable.ImmutableSortedSet`1.Builder.yml
+  name: ImmutableSortedSet<T>.Builder
+  name.vb: ImmutableSortedSet(Of T).Builder
+  fullName: System.Collections.Immutable.ImmutableSortedSet<T>.Builder
+  fullName.vb: System.Collections.Immutable.ImmutableSortedSet(Of T).Builder
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableSortedSet`1+Builder.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableSortedSet`1+Builder.cs
+    startLine: 31
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: >-
+    A sorted set that mutates with little or no memory allocations,
+
+    can produce and/or build on immutable sorted set instances very efficiently.
+  remarks: >-
+    <para>
+
+    While @'System.Collections.Immutable.ImmutableSortedSet`1.Union(System.Collections.Generic.IEnumerable{`0})' and other bulk change methods
+
+    already provide fast bulk change operations on the collection, this class allows
+
+    multiple combinations of changes to be made to a set with equal efficiency.
+
+    </para>
+
+    <para>
+
+    Instance members of this class are <em>not</em> thread-safe.
+
+    </para>
+  syntax:
+    content: 'public sealed class Builder : ISortKeyCollection<T>, IReadOnlyCollection<T>, IEnumerable<T>, ISet<T>, ICollection, IEnumerable'
+    content.vb: Public NotInheritable Class Builder Implements ISortKeyCollection(Of T), IReadOnlyCollection(Of T), IEnumerable(Of T), ISet(Of T), ICollection, IEnumerable
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.Generic.IReadOnlyCollection{{T}}
+  - System.Collections.Generic.IEnumerable{{T}}
+  - ISet{{T}}
+  - System.Collections.ICollection
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Collections.Immutable.ImmutableSortedSet`1.Builder.Count
+  id: Count
+  parent: System.Collections.Immutable.ImmutableSortedSet`1.Builder
+  href: System.Collections.Immutable.ImmutableSortedSet`1.Builder.yml
+  name: Count
+  fullName: System.Collections.Immutable.ImmutableSortedSet<T>.Builder.Count
+  fullName.vb: System.Collections.Immutable.ImmutableSortedSet(Of T).Builder.Count
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableSortedSet`1+Builder.cs
+    startLine: 80
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Gets the number of elements in this set.
+  syntax:
+    content: public int Count { get; }
+    content.vb: Public ReadOnly Property Count As Integer
+    parameters: []
+    return:
+      type: System.Int32
+- uid: System.Collections.Immutable.ImmutableSortedSet`1.Builder.System#Collections#Generic#ICollection{T}#IsReadOnly
+  id: System#Collections#Generic#ICollection{T}#IsReadOnly
+  parent: System.Collections.Immutable.ImmutableSortedSet`1.Builder
+  href: System.Collections.Immutable.ImmutableSortedSet`1.Builder.yml
+  name: ICollection<T>.IsReadOnly
+  name.vb: System.Collections.Generic.ICollection<T>.IsReadOnly
+  fullName: System.Collections.Immutable.ImmutableSortedSet<T>.Builder.System.Collections.Generic.ICollection<T>.IsReadOnly
+  fullName.vb: System.Collections.Immutable.ImmutableSortedSet(Of T).Builder.System.Collections.Generic.ICollection<T>.IsReadOnly
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableSortedSet`1+Builder.cs
+    startLine: 89
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Gets a value indicating whether this instance is read-only.
+  syntax:
+    content: bool ICollection<T>.IsReadOnly { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.Generic.ICollection<T>.IsReadOnly As Boolean Implements ICollection(Of T).IsReadOnly
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Collections.Immutable.ImmutableSortedSet`1.Builder.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: System.Collections.Immutable.ImmutableSortedSet`1.Builder
+  href: System.Collections.Immutable.ImmutableSortedSet`1.Builder.yml
+  name: Item[Int32]
+  name.vb: Item(Int32)
+  fullName: System.Collections.Immutable.ImmutableSortedSet<T>.Builder.Item[System.Int32]
+  fullName.vb: System.Collections.Immutable.ImmutableSortedSet(Of T).Builder.Item(System.Int32)
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableSortedSet`1+Builder.cs
+    startLine: 105
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Gets the element of the set at the given index.
+  remarks: >-
+    No index setter is offered because the element being replaced may not sort
+
+    to the same position in the sorted collection as the replacing element.
+  syntax:
+    content: public T this[int index] { get; }
+    content.vb: Public ReadOnly Property Item(index As Integer) As T
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The 0-based index of the element in the set to return.
+    return:
+      type: '{T}'
+      description: The element at the given position.
+- uid: System.Collections.Immutable.ImmutableSortedSet`1.Builder.Max
+  id: Max
+  parent: System.Collections.Immutable.ImmutableSortedSet`1.Builder
+  href: System.Collections.Immutable.ImmutableSortedSet`1.Builder.yml
+  name: Max
+  fullName: System.Collections.Immutable.ImmutableSortedSet<T>.Builder.Max
+  fullName.vb: System.Collections.Immutable.ImmutableSortedSet(Of T).Builder.Max
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableSortedSet`1+Builder.cs
+    startLine: 114
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Gets the maximum value in the collection, as defined by the comparer.
+  syntax:
+    content: public T Max { get; }
+    content.vb: Public ReadOnly Property Max As T
+    parameters: []
+    return:
+      type: '{T}'
+- uid: System.Collections.Immutable.ImmutableSortedSet`1.Builder.Min
+  id: Min
+  parent: System.Collections.Immutable.ImmutableSortedSet`1.Builder
+  href: System.Collections.Immutable.ImmutableSortedSet`1.Builder.yml
+  name: Min
+  fullName: System.Collections.Immutable.ImmutableSortedSet<T>.Builder.Min
+  fullName.vb: System.Collections.Immutable.ImmutableSortedSet(Of T).Builder.Min
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableSortedSet`1+Builder.cs
+    startLine: 123
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Gets the minimum value in the collection, as defined by the comparer.
+  syntax:
+    content: public T Min { get; }
+    content.vb: Public ReadOnly Property Min As T
+    parameters: []
+    return:
+      type: '{T}'
+- uid: System.Collections.Immutable.ImmutableSortedSet`1.Builder.KeyComparer
+  id: KeyComparer
+  parent: System.Collections.Immutable.ImmutableSortedSet`1.Builder
+  href: System.Collections.Immutable.ImmutableSortedSet`1.Builder.yml
+  name: KeyComparer
+  fullName: System.Collections.Immutable.ImmutableSortedSet<T>.Builder.KeyComparer
+  fullName.vb: System.Collections.Immutable.ImmutableSortedSet(Of T).Builder.KeyComparer
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableSortedSet`1+Builder.cs
+    startLine: 136
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Gets or sets the @'System.Collections.Generic.IComparer`1' object that is used to determine equality for the values in the @'System.Collections.Immutable.ImmutableSortedSet`1'.
+  remarks: >-
+    When changing the comparer in such a way as would introduce collisions, the conflicting elements are dropped,
+
+    leaving only one of each matching pair in the collection.
+  syntax:
+    content: public IComparer<T> KeyComparer { get; set; }
+    content.vb: Public Property KeyComparer As IComparer(Of T)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IComparer{{T}}
+- uid: System.Collections.Immutable.ImmutableSortedSet`1.Builder.Add(`0)
+  id: Add(`0)
+  parent: System.Collections.Immutable.ImmutableSortedSet`1.Builder
+  href: System.Collections.Immutable.ImmutableSortedSet`1.Builder.yml
+  name: Add(T)
+  fullName: System.Collections.Immutable.ImmutableSortedSet<T>.Builder.Add(T)
+  fullName.vb: System.Collections.Immutable.ImmutableSortedSet(Of T).Builder.Add(T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableSortedSet`1+Builder.cs
+    startLine: 206
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: >-
+    Adds an element to the current set and returns a value to indicate if the
+
+    element was successfully added.
+  syntax:
+    content: public bool Add(T item)
+    content.vb: Public Function Add(item As T) As Boolean
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The element to add to the set.
+    return:
+      type: System.Boolean
+      description: true if the element is added to the set; false if the element is already in the set.
+- uid: System.Collections.Immutable.ImmutableSortedSet`1.Builder.ExceptWith(System.Collections.Generic.IEnumerable{`0})
+  id: ExceptWith(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Immutable.ImmutableSortedSet`1.Builder
+  href: System.Collections.Immutable.ImmutableSortedSet`1.Builder.yml
+  name: ExceptWith(IEnumerable<T>)
+  name.vb: ExceptWith(IEnumerable(Of T))
+  fullName: System.Collections.Immutable.ImmutableSortedSet<T>.Builder.ExceptWith(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableSortedSet(Of T).Builder.ExceptWith(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableSortedSet`1+Builder.cs
+    startLine: 217
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Removes all elements in the specified collection from the current set.
+  syntax:
+    content: public void ExceptWith(IEnumerable<T> other)
+    content.vb: Public Sub ExceptWith(other As IEnumerable(Of T))
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection of items to remove from the set.
+- uid: System.Collections.Immutable.ImmutableSortedSet`1.Builder.IntersectWith(System.Collections.Generic.IEnumerable{`0})
+  id: IntersectWith(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Immutable.ImmutableSortedSet`1.Builder
+  href: System.Collections.Immutable.ImmutableSortedSet`1.Builder.yml
+  name: IntersectWith(IEnumerable<T>)
+  name.vb: IntersectWith(IEnumerable(Of T))
+  fullName: System.Collections.Immutable.ImmutableSortedSet<T>.Builder.IntersectWith(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableSortedSet(Of T).Builder.IntersectWith(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableSortedSet`1+Builder.cs
+    startLine: 232
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Modifies the current set so that it contains only elements that are also in a specified collection.
+  syntax:
+    content: public void IntersectWith(IEnumerable<T> other)
+    content.vb: Public Sub IntersectWith(other As IEnumerable(Of T))
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to compare to the current set.
+- uid: System.Collections.Immutable.ImmutableSortedSet`1.Builder.IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  id: IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Immutable.ImmutableSortedSet`1.Builder
+  href: System.Collections.Immutable.ImmutableSortedSet`1.Builder.yml
+  name: IsProperSubsetOf(IEnumerable<T>)
+  name.vb: IsProperSubsetOf(IEnumerable(Of T))
+  fullName: System.Collections.Immutable.ImmutableSortedSet<T>.Builder.IsProperSubsetOf(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableSortedSet(Of T).Builder.IsProperSubsetOf(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableSortedSet`1+Builder.cs
+    startLine: 254
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Determines whether the current set is a proper (strict) subset of a specified collection.
+  syntax:
+    content: public bool IsProperSubsetOf(IEnumerable<T> other)
+    content.vb: Public Function IsProperSubsetOf(other As IEnumerable(Of T)) As Boolean
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to compare to the current set.
+    return:
+      type: System.Boolean
+      description: true if the current set is a correct subset of other; otherwise, false.
+- uid: System.Collections.Immutable.ImmutableSortedSet`1.Builder.IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  id: IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Immutable.ImmutableSortedSet`1.Builder
+  href: System.Collections.Immutable.ImmutableSortedSet`1.Builder.yml
+  name: IsProperSupersetOf(IEnumerable<T>)
+  name.vb: IsProperSupersetOf(IEnumerable(Of T))
+  fullName: System.Collections.Immutable.ImmutableSortedSet<T>.Builder.IsProperSupersetOf(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableSortedSet(Of T).Builder.IsProperSupersetOf(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableSortedSet`1+Builder.cs
+    startLine: 264
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Determines whether the current set is a proper (strict) superset of a specified collection.
+  syntax:
+    content: public bool IsProperSupersetOf(IEnumerable<T> other)
+    content.vb: Public Function IsProperSupersetOf(other As IEnumerable(Of T)) As Boolean
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to compare to the current set.
+    return:
+      type: System.Boolean
+      description: true if the current set is a superset of other; otherwise, false.
+- uid: System.Collections.Immutable.ImmutableSortedSet`1.Builder.IsSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  id: IsSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Immutable.ImmutableSortedSet`1.Builder
+  href: System.Collections.Immutable.ImmutableSortedSet`1.Builder.yml
+  name: IsSubsetOf(IEnumerable<T>)
+  name.vb: IsSubsetOf(IEnumerable(Of T))
+  fullName: System.Collections.Immutable.ImmutableSortedSet<T>.Builder.IsSubsetOf(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableSortedSet(Of T).Builder.IsSubsetOf(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableSortedSet`1+Builder.cs
+    startLine: 274
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Determines whether the current set is a subset of a specified collection.
+  syntax:
+    content: public bool IsSubsetOf(IEnumerable<T> other)
+    content.vb: Public Function IsSubsetOf(other As IEnumerable(Of T)) As Boolean
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to compare to the current set.
+    return:
+      type: System.Boolean
+      description: true if the current set is a subset of other; otherwise, false.
+- uid: System.Collections.Immutable.ImmutableSortedSet`1.Builder.IsSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  id: IsSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Immutable.ImmutableSortedSet`1.Builder
+  href: System.Collections.Immutable.ImmutableSortedSet`1.Builder.yml
+  name: IsSupersetOf(IEnumerable<T>)
+  name.vb: IsSupersetOf(IEnumerable(Of T))
+  fullName: System.Collections.Immutable.ImmutableSortedSet<T>.Builder.IsSupersetOf(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableSortedSet(Of T).Builder.IsSupersetOf(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableSortedSet`1+Builder.cs
+    startLine: 284
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Determines whether the current set is a superset of a specified collection.
+  syntax:
+    content: public bool IsSupersetOf(IEnumerable<T> other)
+    content.vb: Public Function IsSupersetOf(other As IEnumerable(Of T)) As Boolean
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to compare to the current set.
+    return:
+      type: System.Boolean
+      description: true if the current set is a superset of other; otherwise, false.
+- uid: System.Collections.Immutable.ImmutableSortedSet`1.Builder.Overlaps(System.Collections.Generic.IEnumerable{`0})
+  id: Overlaps(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Immutable.ImmutableSortedSet`1.Builder
+  href: System.Collections.Immutable.ImmutableSortedSet`1.Builder.yml
+  name: Overlaps(IEnumerable<T>)
+  name.vb: Overlaps(IEnumerable(Of T))
+  fullName: System.Collections.Immutable.ImmutableSortedSet<T>.Builder.Overlaps(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableSortedSet(Of T).Builder.Overlaps(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableSortedSet`1+Builder.cs
+    startLine: 294
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Determines whether the current set overlaps with the specified collection.
+  syntax:
+    content: public bool Overlaps(IEnumerable<T> other)
+    content.vb: Public Function Overlaps(other As IEnumerable(Of T)) As Boolean
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to compare to the current set.
+    return:
+      type: System.Boolean
+      description: true if the current set and other share at least one common element; otherwise, false.
+- uid: System.Collections.Immutable.ImmutableSortedSet`1.Builder.SetEquals(System.Collections.Generic.IEnumerable{`0})
+  id: SetEquals(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Immutable.ImmutableSortedSet`1.Builder
+  href: System.Collections.Immutable.ImmutableSortedSet`1.Builder.yml
+  name: SetEquals(IEnumerable<T>)
+  name.vb: SetEquals(IEnumerable(Of T))
+  fullName: System.Collections.Immutable.ImmutableSortedSet<T>.Builder.SetEquals(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableSortedSet(Of T).Builder.SetEquals(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableSortedSet`1+Builder.cs
+    startLine: 304
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Determines whether the current set and the specified collection contain the same elements.
+  syntax:
+    content: public bool SetEquals(IEnumerable<T> other)
+    content.vb: Public Function SetEquals(other As IEnumerable(Of T)) As Boolean
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to compare to the current set.
+    return:
+      type: System.Boolean
+      description: true if the current set is equal to other; otherwise, false.
+- uid: System.Collections.Immutable.ImmutableSortedSet`1.Builder.SymmetricExceptWith(System.Collections.Generic.IEnumerable{`0})
+  id: SymmetricExceptWith(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Immutable.ImmutableSortedSet`1.Builder
+  href: System.Collections.Immutable.ImmutableSortedSet`1.Builder.yml
+  name: SymmetricExceptWith(IEnumerable<T>)
+  name.vb: SymmetricExceptWith(IEnumerable(Of T))
+  fullName: System.Collections.Immutable.ImmutableSortedSet<T>.Builder.SymmetricExceptWith(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableSortedSet(Of T).Builder.SymmetricExceptWith(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableSortedSet`1+Builder.cs
+    startLine: 313
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Modifies the current set so that it contains only elements that are present either in the current set or in the specified collection, but not both.
+  syntax:
+    content: public void SymmetricExceptWith(IEnumerable<T> other)
+    content.vb: Public Sub SymmetricExceptWith(other As IEnumerable(Of T))
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to compare to the current set.
+- uid: System.Collections.Immutable.ImmutableSortedSet`1.Builder.UnionWith(System.Collections.Generic.IEnumerable{`0})
+  id: UnionWith(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Immutable.ImmutableSortedSet`1.Builder
+  href: System.Collections.Immutable.ImmutableSortedSet`1.Builder.yml
+  name: UnionWith(IEnumerable<T>)
+  name.vb: UnionWith(IEnumerable(Of T))
+  fullName: System.Collections.Immutable.ImmutableSortedSet<T>.Builder.UnionWith(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableSortedSet(Of T).Builder.UnionWith(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableSortedSet`1+Builder.cs
+    startLine: 322
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Modifies the current set so that it contains all elements that are present in both the current set and in the specified collection.
+  syntax:
+    content: public void UnionWith(IEnumerable<T> other)
+    content.vb: Public Sub UnionWith(other As IEnumerable(Of T))
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to compare to the current set.
+- uid: System.Collections.Immutable.ImmutableSortedSet`1.Builder.System#Collections#Generic#ICollection{T}#Add(`0)
+  id: System#Collections#Generic#ICollection{T}#Add(`0)
+  parent: System.Collections.Immutable.ImmutableSortedSet`1.Builder
+  href: System.Collections.Immutable.ImmutableSortedSet`1.Builder.yml
+  name: ICollection<T>.Add(T)
+  name.vb: System.Collections.Generic.ICollection<T>.Add(T)
+  fullName: System.Collections.Immutable.ImmutableSortedSet<T>.Builder.System.Collections.Generic.ICollection<T>.Add(T)
+  fullName.vb: System.Collections.Immutable.ImmutableSortedSet(Of T).Builder.System.Collections.Generic.ICollection<T>.Add(T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableSortedSet`1+Builder.cs
+    startLine: 338
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: >-
+    Adds an element to the current set and returns a value to indicate if the
+
+    element was successfully added.
+  syntax:
+    content: void ICollection<T>.Add(T item)
+    content.vb: Sub System.Collections.Generic.ICollection<T>.Add(item As T) Implements ICollection(Of T).Add
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The element to add to the set.
+- uid: System.Collections.Immutable.ImmutableSortedSet`1.Builder.Clear
+  id: Clear
+  parent: System.Collections.Immutable.ImmutableSortedSet`1.Builder
+  href: System.Collections.Immutable.ImmutableSortedSet`1.Builder.yml
+  name: Clear()
+  fullName: System.Collections.Immutable.ImmutableSortedSet<T>.Builder.Clear()
+  fullName.vb: System.Collections.Immutable.ImmutableSortedSet(Of T).Builder.Clear()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableSortedSet`1+Builder.cs
+    startLine: 346
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Removes all elements from this set.
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear
+- uid: System.Collections.Immutable.ImmutableSortedSet`1.Builder.Contains(`0)
+  id: Contains(`0)
+  parent: System.Collections.Immutable.ImmutableSortedSet`1.Builder
+  href: System.Collections.Immutable.ImmutableSortedSet`1.Builder.yml
+  name: Contains(T)
+  fullName: System.Collections.Immutable.ImmutableSortedSet<T>.Builder.Contains(T)
+  fullName.vb: System.Collections.Immutable.ImmutableSortedSet(Of T).Builder.Contains(T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableSortedSet`1+Builder.cs
+    startLine: 356
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Determines whether the set contains a specific value.
+  syntax:
+    content: public bool Contains(T item)
+    content.vb: Public Function Contains(item As T) As Boolean
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The object to locate in the set.
+    return:
+      type: System.Boolean
+      description: true if item is found in the set; false otherwise.
+- uid: System.Collections.Immutable.ImmutableSortedSet`1.Builder.System#Collections#Generic#ICollection{T}#CopyTo(`0[],System.Int32)
+  id: System#Collections#Generic#ICollection{T}#CopyTo(`0[],System.Int32)
+  parent: System.Collections.Immutable.ImmutableSortedSet`1.Builder
+  href: System.Collections.Immutable.ImmutableSortedSet`1.Builder.yml
+  name: ICollection<T>.CopyTo(T[], Int32)
+  name.vb: System.Collections.Generic.ICollection<T>.CopyTo(T(), Int32)
+  fullName: System.Collections.Immutable.ImmutableSortedSet<T>.Builder.System.Collections.Generic.ICollection<T>.CopyTo(T[], System.Int32)
+  fullName.vb: System.Collections.Immutable.ImmutableSortedSet(Of T).Builder.System.Collections.Generic.ICollection<T>.CopyTo(T(), System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableSortedSet`1+Builder.cs
+    startLine: 364
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: See @'System.Collections.Generic.ICollection`1'
+  syntax:
+    content: void ICollection<T>.CopyTo(T[] array, int arrayIndex)
+    content.vb: Sub System.Collections.Generic.ICollection<T>.CopyTo(array As T(), arrayIndex As Integer) Implements ICollection(Of T).CopyTo
+    parameters:
+    - id: array
+      type: '{T}[]'
+    - id: arrayIndex
+      type: System.Int32
+- uid: System.Collections.Immutable.ImmutableSortedSet`1.Builder.Remove(`0)
+  id: Remove(`0)
+  parent: System.Collections.Immutable.ImmutableSortedSet`1.Builder
+  href: System.Collections.Immutable.ImmutableSortedSet`1.Builder.yml
+  name: Remove(T)
+  fullName: System.Collections.Immutable.ImmutableSortedSet<T>.Builder.Remove(T)
+  fullName.vb: System.Collections.Immutable.ImmutableSortedSet(Of T).Builder.Remove(T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableSortedSet`1+Builder.cs
+    startLine: 374
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Removes the first occurrence of a specific object from the set.
+  syntax:
+    content: public bool Remove(T item)
+    content.vb: Public Function Remove(item As T) As Boolean
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The object to remove from the set.
+    return:
+      type: System.Boolean
+      description: <c>true</c> if the item was removed from the set; <c>false</c> if the item was not found in the set.
+- uid: System.Collections.Immutable.ImmutableSortedSet`1.Builder.GetEnumerator
+  id: GetEnumerator
+  parent: System.Collections.Immutable.ImmutableSortedSet`1.Builder
+  href: System.Collections.Immutable.ImmutableSortedSet`1.Builder.yml
+  name: GetEnumerator()
+  fullName: System.Collections.Immutable.ImmutableSortedSet<T>.Builder.GetEnumerator()
+  fullName.vb: System.Collections.Immutable.ImmutableSortedSet(Of T).Builder.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableSortedSet`1+Builder.cs
+    startLine: 385
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Returns an enumerator that iterates through the collection.
+  syntax:
+    content: public ImmutableSortedSet<T>.Enumerator GetEnumerator()
+    content.vb: Public Function GetEnumerator As ImmutableSortedSet(Of T).Enumerator
+    return:
+      type: System.Collections.Immutable.ImmutableSortedSet`1.Enumerator
+      description: A enumerator that can be used to iterate through the collection.
+- uid: System.Collections.Immutable.ImmutableSortedSet`1.Builder.System#Collections#Generic#IEnumerable{T}#GetEnumerator
+  id: System#Collections#Generic#IEnumerable{T}#GetEnumerator
+  parent: System.Collections.Immutable.ImmutableSortedSet`1.Builder
+  href: System.Collections.Immutable.ImmutableSortedSet`1.Builder.yml
+  name: IEnumerable<T>.GetEnumerator()
+  name.vb: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Immutable.ImmutableSortedSet<T>.Builder.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  fullName.vb: System.Collections.Immutable.ImmutableSortedSet(Of T).Builder.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableSortedSet`1+Builder.cs
+    startLine: 394
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Returns an enumerator that iterates through the collection.
+  syntax:
+    content: IEnumerator<T> IEnumerable<T>.GetEnumerator()
+    content.vb: Function System.Collections.Generic.IEnumerable<T>.GetEnumerator As IEnumerator(Of T) Implements IEnumerable(Of T).GetEnumerator
+    return:
+      type: System.Collections.Generic.IEnumerator{{T}}
+      description: A enumerator that can be used to iterate through the collection.
+- uid: System.Collections.Immutable.ImmutableSortedSet`1.Builder.System#Collections#IEnumerable#GetEnumerator
+  id: System#Collections#IEnumerable#GetEnumerator
+  parent: System.Collections.Immutable.ImmutableSortedSet`1.Builder
+  href: System.Collections.Immutable.ImmutableSortedSet`1.Builder.yml
+  name: IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: System.Collections.Immutable.ImmutableSortedSet<T>.Builder.System.Collections.IEnumerable.GetEnumerator()
+  fullName.vb: System.Collections.Immutable.ImmutableSortedSet(Of T).Builder.System.Collections.IEnumerable.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableSortedSet`1+Builder.cs
+    startLine: 403
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Returns an enumerator that iterates through the collection.
+  syntax:
+    content: IEnumerator IEnumerable.GetEnumerator()
+    content.vb: Function System.Collections.IEnumerable.GetEnumerator As IEnumerator Implements IEnumerable.GetEnumerator
+    return:
+      type: System.Collections.IEnumerator
+      description: A enumerator that can be used to iterate through the collection.
+- uid: System.Collections.Immutable.ImmutableSortedSet`1.Builder.Reverse
+  id: Reverse
+  parent: System.Collections.Immutable.ImmutableSortedSet`1.Builder
+  href: System.Collections.Immutable.ImmutableSortedSet`1.Builder.yml
+  name: Reverse()
+  fullName: System.Collections.Immutable.ImmutableSortedSet<T>.Builder.Reverse()
+  fullName.vb: System.Collections.Immutable.ImmutableSortedSet(Of T).Builder.Reverse()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableSortedSet`1+Builder.cs
+    startLine: 418
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: >-
+    Returns an @'System.Collections.Generic.IEnumerable`1' that iterates over this
+
+    collection in reverse order.
+  syntax:
+    content: public IEnumerable<T> Reverse()
+    content.vb: Public Function Reverse As IEnumerable(Of T)
+    return:
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: >-
+        An enumerator that iterates over the @'System.Collections.Immutable.ImmutableSortedSet`1.Builder'
+
+        in reverse order.
+- uid: System.Collections.Immutable.ImmutableSortedSet`1.Builder.ToImmutable
+  id: ToImmutable
+  parent: System.Collections.Immutable.ImmutableSortedSet`1.Builder
+  href: System.Collections.Immutable.ImmutableSortedSet`1.Builder.yml
+  name: ToImmutable()
+  fullName: System.Collections.Immutable.ImmutableSortedSet<T>.Builder.ToImmutable()
+  fullName.vb: System.Collections.Immutable.ImmutableSortedSet(Of T).Builder.ToImmutable()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableSortedSet`1+Builder.cs
+    startLine: 432
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Creates an immutable sorted set based on the contents of this instance.
+  remarks: >-
+    This method is an O(n) operation, and approaches O(1) time as the number of
+
+    actual mutations to the set since the last call to this method approaches 0.
+  syntax:
+    content: public ImmutableSortedSet<T> ToImmutable()
+    content.vb: Public Function ToImmutable As ImmutableSortedSet(Of T)
+    return:
+      type: System.Collections.Immutable.ImmutableSortedSet`1
+      description: An immutable set.
+- uid: System.Collections.Immutable.ImmutableSortedSet`1.Builder.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  id: System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  parent: System.Collections.Immutable.ImmutableSortedSet`1.Builder
+  href: System.Collections.Immutable.ImmutableSortedSet`1.Builder.yml
+  name: ICollection.CopyTo(Array, Int32)
+  name.vb: System.Collections.ICollection.CopyTo(Array, Int32)
+  fullName: System.Collections.Immutable.ImmutableSortedSet<T>.Builder.System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  fullName.vb: System.Collections.Immutable.ImmutableSortedSet(Of T).Builder.System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableSortedSet`1+Builder.cs
+    startLine: 453
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Copies the elements of the @'System.Collections.ICollection' to an @'System.Array', starting at a particular @'System.Array' index.
+  syntax:
+    content: void ICollection.CopyTo(Array array, int arrayIndex)
+    content.vb: Sub System.Collections.ICollection.CopyTo(array As Array, arrayIndex As Integer) Implements ICollection.CopyTo
+    parameters:
+    - id: array
+      type: System.Array
+      description: The one-dimensional @'System.Array' that is the destination of the elements copied from @'System.Collections.ICollection'. The @'System.Array' must have zero-based indexing.
+    - id: arrayIndex
+      type: System.Int32
+      description: The zero-based index in <paramref name="array" /> at which copying begins.
+  exceptions:
+  - type: System.NotImplementedException
+- uid: System.Collections.Immutable.ImmutableSortedSet`1.Builder.System#Collections#ICollection#IsSynchronized
+  id: System#Collections#ICollection#IsSynchronized
+  parent: System.Collections.Immutable.ImmutableSortedSet`1.Builder
+  href: System.Collections.Immutable.ImmutableSortedSet`1.Builder.yml
+  name: ICollection.IsSynchronized
+  name.vb: System.Collections.ICollection.IsSynchronized
+  fullName: System.Collections.Immutable.ImmutableSortedSet<T>.Builder.System.Collections.ICollection.IsSynchronized
+  fullName.vb: System.Collections.Immutable.ImmutableSortedSet(Of T).Builder.System.Collections.ICollection.IsSynchronized
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableSortedSet`1+Builder.cs
+    startLine: 463
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Gets a value indicating whether access to the @'System.Collections.ICollection' is synchronized (thread safe).
+  syntax:
+    content: bool ICollection.IsSynchronized { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.ICollection.IsSynchronized As Boolean Implements ICollection.IsSynchronized
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if access to the @'System.Collections.ICollection' is synchronized (thread safe); otherwise, false.
+  exceptions:
+  - type: System.NotImplementedException
+- uid: System.Collections.Immutable.ImmutableSortedSet`1.Builder.System#Collections#ICollection#SyncRoot
+  id: System#Collections#ICollection#SyncRoot
+  parent: System.Collections.Immutable.ImmutableSortedSet`1.Builder
+  href: System.Collections.Immutable.ImmutableSortedSet`1.Builder.yml
+  name: ICollection.SyncRoot
+  name.vb: System.Collections.ICollection.SyncRoot
+  fullName: System.Collections.Immutable.ImmutableSortedSet<T>.Builder.System.Collections.ICollection.SyncRoot
+  fullName.vb: System.Collections.Immutable.ImmutableSortedSet(Of T).Builder.System.Collections.ICollection.SyncRoot
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableSortedSet`1+Builder.cs
+    startLine: 474
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Gets an object that can be used to synchronize access to the @'System.Collections.ICollection'.
+  syntax:
+    content: object ICollection.SyncRoot { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.ICollection.SyncRoot As Object Implements ICollection.SyncRoot
+    parameters: []
+    return:
+      type: System.Object
+      description: An object that can be used to synchronize access to the @'System.Collections.ICollection'.
+  exceptions:
+  - type: System.NotImplementedException
+references:
+- uid: System.Collections.Immutable.ImmutableSortedSet`1.Union(System.Collections.Generic.IEnumerable{`0})
+- uid: System.Collections.Immutable
+  isExternal: false
+  name: System.Collections.Immutable
+  fullName: System.Collections.Immutable
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: '{T}'
+  isExternal: false
+  name: T
+  fullName: T
+- uid: System.Collections.Generic.IComparer`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IComparer<T>
+  name.vb: IComparer(Of T)
+  fullName: System.Collections.Generic.IComparer<T>
+  fullName.vb: System.Collections.Generic.IComparer(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    fullName: System.Collections.Generic.IComparer
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    fullName: System.Collections.Generic.IComparer
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.ImmutableSortedSet`1
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableSortedSet`1.yml
+  name: ImmutableSortedSet<T>
+  name.vb: ImmutableSortedSet(Of T)
+  fullName: System.Collections.Immutable.ImmutableSortedSet<T>
+  fullName.vb: System.Collections.Immutable.ImmutableSortedSet(Of T)
+  type: Class
+  summary: An immutable sorted set implementation.
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableSortedSet`1
+    name: ImmutableSortedSet
+    fullName: System.Collections.Immutable.ImmutableSortedSet
+    href: System.Collections.Immutable.ImmutableSortedSet`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableSortedSet`1
+    name: ImmutableSortedSet
+    fullName: System.Collections.Immutable.ImmutableSortedSet
+    href: System.Collections.Immutable.ImmutableSortedSet`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IComparer{{T}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IComparer`1
+  name: IComparer<T>
+  name.vb: IComparer(Of T)
+  fullName: System.Collections.Generic.IComparer<T>
+  fullName.vb: System.Collections.Generic.IComparer(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    fullName: System.Collections.Generic.IComparer
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    fullName: System.Collections.Generic.IComparer
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: ICollection<T>
+  name.vb: ICollection(Of T)
+  fullName: System.Collections.Generic.ICollection<T>
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: '{T}[]'
+  isExternal: false
+  name: T[]
+  name.vb: T()
+  fullName: T[]
+  fullName.vb: T()
+  spec.csharp:
+  - name: T
+    fullName: T
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - name: T
+    fullName: T
+  - name: ()
+    fullName: ()
+- uid: System.Collections.Immutable.ImmutableSortedSet`1.Enumerator
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableSortedSet`1.Enumerator.yml
+  name: ImmutableSortedSet.Enumerator<>
+  name.vb: ImmutableSortedSet.Enumerator(Of )
+  fullName: System.Collections.Immutable.ImmutableSortedSet.Enumerator<>
+  fullName.vb: System.Collections.Immutable.ImmutableSortedSet.Enumerator(Of )
+  type: Struct
+  summary: Enumerates the contents of a binary tree.
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableSortedSet`1.Enumerator
+    name: ImmutableSortedSet.Enumerator
+    fullName: System.Collections.Immutable.ImmutableSortedSet.Enumerator
+    href: System.Collections.Immutable.ImmutableSortedSet`1.Enumerator.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableSortedSet`1.Enumerator
+    name: ImmutableSortedSet.Enumerator
+    fullName: System.Collections.Immutable.ImmutableSortedSet.Enumerator
+    href: System.Collections.Immutable.ImmutableSortedSet`1.Enumerator.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator{{T}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  name: IEnumerator<T>
+  name.vb: IEnumerator(Of T)
+  fullName: System.Collections.Generic.IEnumerator<T>
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerator<T>
+  name.vb: IEnumerator(Of T)
+  fullName: System.Collections.Generic.IEnumerator<T>
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  isExternal: false
+  name: System.Collections
+  fullName: System.Collections
+- uid: System.Collections.Immutable.ImmutableSortedSet`1.Builder
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableSortedSet`1.Builder.yml
+  name: ImmutableSortedSet.Builder<>
+  name.vb: ImmutableSortedSet.Builder(Of )
+  fullName: System.Collections.Immutable.ImmutableSortedSet.Builder<>
+  fullName.vb: System.Collections.Immutable.ImmutableSortedSet.Builder(Of )
+  type: Class
+  summary: >-
+    A sorted set that mutates with little or no memory allocations,
+
+    can produce and/or build on immutable sorted set instances very efficiently.
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableSortedSet`1.Builder
+    name: ImmutableSortedSet.Builder
+    fullName: System.Collections.Immutable.ImmutableSortedSet.Builder
+    href: System.Collections.Immutable.ImmutableSortedSet`1.Builder.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableSortedSet`1.Builder
+    name: ImmutableSortedSet.Builder
+    fullName: System.Collections.Immutable.ImmutableSortedSet.Builder
+    href: System.Collections.Immutable.ImmutableSortedSet`1.Builder.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Collections.ICollection
+  parent: System.Collections
+  isExternal: true
+  name: ICollection
+  fullName: System.Collections.ICollection
+- uid: System.Array
+  parent: System
+  isExternal: true
+  name: Array
+  fullName: System.Array
+- uid: System.NotImplementedException

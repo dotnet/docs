@@ -1,0 +1,29 @@
+items:
+- uid: System.Runtime.InteropServices._MethodInfo
+  id: _MethodInfo
+  parent: System.Runtime.InteropServices
+  children: []
+  href: System.Runtime.InteropServices._MethodInfo.yml
+  name: _MethodInfo
+  fullName: System.Runtime.InteropServices._MethodInfo
+  type: Interface
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/ComInterfaces.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Reflection/ComInterfaces.cs
+    startLine: 338
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Exposes the public members of the @'System.Reflection.MethodInfo' class to unmanaged code.
+  syntax:
+    content: public interface _MethodInfo
+    content.vb: Public Interface _MethodInfo
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace

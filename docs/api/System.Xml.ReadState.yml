@@ -1,0 +1,119 @@
+items:
+- uid: System.Xml.ReadState
+  id: ReadState
+  parent: System.Xml
+  children:
+  - System.Xml.ReadState.Closed
+  - System.Xml.ReadState.EndOfFile
+  - System.Xml.ReadState.Error
+  - System.Xml.ReadState.Initial
+  - System.Xml.ReadState.Interactive
+  href: System.Xml.ReadState.yml
+  name: ReadState
+  fullName: System.Xml.ReadState
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Xml.ReaderWriter/src/System/Xml/Core/ReadState.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Xml.ReaderWriter/src/System/Xml/Core/ReadState.cs
+    startLine: 6
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: Specifies the state of the reader.
+  syntax:
+    content: public enum ReadState
+    content.vb: Public Enum ReadState
+- uid: System.Xml.ReadState.Initial
+  id: Initial
+  parent: System.Xml.ReadState
+  href: System.Xml.ReadState.yml
+  name: Initial
+  fullName: System.Xml.ReadState.Initial
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/Core/ReadState.cs
+    startLine: 9
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: The Read method has not been called.
+  syntax:
+    content: Initial = 0
+- uid: System.Xml.ReadState.Interactive
+  id: Interactive
+  parent: System.Xml.ReadState
+  href: System.Xml.ReadState.yml
+  name: Interactive
+  fullName: System.Xml.ReadState.Interactive
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/Core/ReadState.cs
+    startLine: 12
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: The Read method has been called. Additional methods may be called on the reader.
+  syntax:
+    content: Interactive = 1
+- uid: System.Xml.ReadState.Error
+  id: Error
+  parent: System.Xml.ReadState
+  href: System.Xml.ReadState.yml
+  name: Error
+  fullName: System.Xml.ReadState.Error
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/Core/ReadState.cs
+    startLine: 15
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: An error occurred that prevents the read operation from continuing.
+  syntax:
+    content: Error = 2
+- uid: System.Xml.ReadState.EndOfFile
+  id: EndOfFile
+  parent: System.Xml.ReadState
+  href: System.Xml.ReadState.yml
+  name: EndOfFile
+  fullName: System.Xml.ReadState.EndOfFile
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/Core/ReadState.cs
+    startLine: 18
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: The end of the file has been reached successfully.
+  syntax:
+    content: EndOfFile = 3
+- uid: System.Xml.ReadState.Closed
+  id: Closed
+  parent: System.Xml.ReadState
+  href: System.Xml.ReadState.yml
+  name: Closed
+  fullName: System.Xml.ReadState.Closed
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/Core/ReadState.cs
+    startLine: 21
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: The @'System.Xml.XmlReader.Close' method has been called.
+  syntax:
+    content: Closed = 4
+references:
+- uid: System.Xml
+  isExternal: false
+  name: System.Xml
+  fullName: System.Xml
+  type: Namespace

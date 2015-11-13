@@ -1,0 +1,308 @@
+items:
+- uid: System.Collections.DictionaryEntry
+  id: DictionaryEntry
+  parent: System.Collections
+  children:
+  - System.Collections.DictionaryEntry.#ctor(System.Object,System.Object)
+  - System.Collections.DictionaryEntry.Key
+  - System.Collections.DictionaryEntry.Value
+  href: System.Collections.DictionaryEntry.yml
+  name: DictionaryEntry
+  fullName: System.Collections.DictionaryEntry
+  type: Struct
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Collections/DictionaryEntry.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Collections/DictionaryEntry.cs
+    startLine: 19
+  assemblies:
+  - mscorlib
+  namespace: System.Collections
+  summary: Defines a dictionary key/value pair that can be set or retrieved.
+  syntax:
+    content: public struct DictionaryEntry
+    content.vb: Public Structure DictionaryEntry
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.Collections.DictionaryEntry.#ctor(System.Object,System.Object)
+  id: '#ctor(System.Object,System.Object)'
+  parent: System.Collections.DictionaryEntry
+  href: System.Collections.DictionaryEntry.yml
+  name: DictionaryEntry(Object, Object)
+  fullName: System.Collections.DictionaryEntry.DictionaryEntry(System.Object, System.Object)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/DictionaryEntry.cs
+    startLine: 28
+  assemblies:
+  - mscorlib
+  namespace: System.Collections
+  summary: Initializes an instance of the @'System.Collections.DictionaryEntry' type with the specified key and value.
+  syntax:
+    content: public DictionaryEntry(object key, object value)
+    content.vb: Public Sub New(key As Object, value As Object)
+    parameters:
+    - id: key
+      type: System.Object
+      description: The object defined in each key/value pair.
+    - id: value
+      type: System.Object
+      description: The definition associated with *key*.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*key* is null and the .NET Framework version is 1.0 or 1.1.'
+- uid: System.Collections.DictionaryEntry.Key
+  id: Key
+  parent: System.Collections.DictionaryEntry
+  href: System.Collections.DictionaryEntry.yml
+  name: Key
+  fullName: System.Collections.DictionaryEntry.Key
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/DictionaryEntry.cs
+    startLine: 33
+  assemblies:
+  - mscorlib
+  namespace: System.Collections
+  summary: Gets or sets the key in the key/value pair.
+  syntax:
+    content: public object Key { get; set; }
+    content.vb: Public Property Key As Object
+    parameters: []
+    return:
+      type: System.Object
+- uid: System.Collections.DictionaryEntry.Value
+  id: Value
+  parent: System.Collections.DictionaryEntry
+  href: System.Collections.DictionaryEntry.yml
+  name: Value
+  fullName: System.Collections.DictionaryEntry.Value
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/DictionaryEntry.cs
+    startLine: 43
+  assemblies:
+  - mscorlib
+  namespace: System.Collections
+  summary: Gets or sets the value in the key/value pair.
+  syntax:
+    content: public object Value { get; set; }
+    content.vb: Public Property Value As Object
+    parameters: []
+    return:
+      type: System.Object
+references:
+- uid: System.Collections
+  isExternal: false
+  name: System.Collections
+  fullName: System.Collections
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

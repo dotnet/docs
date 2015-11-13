@@ -1,0 +1,953 @@
+items:
+- uid: System.Guid
+  id: Guid
+  parent: System
+  children:
+  - System.Guid.#ctor(System.Byte[])
+  - System.Guid.#ctor(System.Int32,System.Int16,System.Int16,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte)
+  - System.Guid.#ctor(System.Int32,System.Int16,System.Int16,System.Byte[])
+  - System.Guid.#ctor(System.String)
+  - System.Guid.#ctor(System.UInt32,System.UInt16,System.UInt16,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte)
+  - System.Guid.CompareTo(System.Guid)
+  - System.Guid.CompareTo(System.Object)
+  - System.Guid.Empty
+  - System.Guid.Equals(System.Guid)
+  - System.Guid.Equals(System.Object)
+  - System.Guid.GetHashCode
+  - System.Guid.NewGuid
+  - System.Guid.op_Equality(System.Guid,System.Guid)
+  - System.Guid.op_Inequality(System.Guid,System.Guid)
+  - System.Guid.Parse(System.String)
+  - System.Guid.ParseExact(System.String,System.String)
+  - System.Guid.ToByteArray
+  - System.Guid.ToString
+  - System.Guid.ToString(System.String)
+  - System.Guid.ToString(System.String,System.IFormatProvider)
+  - System.Guid.TryParse(System.String,System.Guid@)
+  - System.Guid.TryParseExact(System.String,System.String,System.Guid@)
+  href: System.Guid.yml
+  name: Guid
+  fullName: System.Guid
+  type: Struct
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Guid.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Guid.cs
+    startLine: 14
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Represents a globally unique identifier (GUID).To browse the .NET Framework source code for this type, see the Reference Source.
+  syntax:
+    content: 'public struct Guid : IFormattable, IComparable, IComparable<Guid>, IEquatable<Guid>'
+    content.vb: Public Structure Guid Implements IFormattable, IComparable, IComparable(Of Guid), IEquatable(Of Guid)
+  implements:
+  - System.IFormattable
+  - System.IComparable
+  - System.IComparable{System.Guid}
+  - System.IEquatable{System.Guid}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.Guid.Empty
+  id: Empty
+  parent: System.Guid
+  href: System.Guid.yml
+  name: Empty
+  fullName: System.Guid.Empty
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Guid.cs
+    startLine: 21
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: A read-only instance of the @'System.Guid' structure whose value is all zeros.
+  syntax:
+    content: public static readonly Guid Empty
+    content.vb: Public Shared ReadOnly Empty As Guid
+- uid: System.Guid.#ctor(System.Byte[])
+  id: '#ctor(System.Byte[])'
+  parent: System.Guid
+  href: System.Guid.yml
+  name: Guid(Byte[])
+  name.vb: Guid(Byte())
+  fullName: System.Guid.Guid(System.Byte[])
+  fullName.vb: System.Guid.Guid(System.Byte())
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Guid.cs
+    startLine: 45
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of the @'System.Guid' structure by using the specified array of bytes.
+  syntax:
+    content: public Guid(byte[] b)
+    content.vb: Public Sub New(b As Byte())
+    parameters:
+    - id: b
+      type: System.Byte[]
+      description: A 16-element byte array containing values with which to initialize the GUID.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*b* is null.'
+  - type: System.ArgumentException
+    description: '*b* is not 16 bytes long.'
+- uid: System.Guid.#ctor(System.UInt32,System.UInt16,System.UInt16,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte)
+  id: '#ctor(System.UInt32,System.UInt16,System.UInt16,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte)'
+  parent: System.Guid
+  href: System.Guid.yml
+  name: Guid(UInt32, UInt16, UInt16, Byte, Byte, Byte, Byte, Byte, Byte, Byte, Byte)
+  fullName: System.Guid.Guid(System.UInt32, System.UInt16, System.UInt16, System.Byte, System.Byte, System.Byte, System.Byte, System.Byte, System.Byte, System.Byte, System.Byte)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Guid.cs
+    startLine: 66
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of the @'System.Guid' structure by using the specified unsigned integers and bytes.
+  syntax:
+    content: public Guid(uint a, ushort b, ushort c, byte d, byte e, byte f, byte g, byte h, byte i, byte j, byte k)
+    content.vb: Public Sub New(a As UInteger, b As UShort, c As UShort, d As Byte, e As Byte, f As Byte, g As Byte, h As Byte, i As Byte, j As Byte, k As Byte)
+    parameters:
+    - id: a
+      type: System.UInt32
+      description: The first 4 bytes of the GUID.
+    - id: b
+      type: System.UInt16
+      description: The next 2 bytes of the GUID.
+    - id: c
+      type: System.UInt16
+      description: The next 2 bytes of the GUID.
+    - id: d
+      type: System.Byte
+      description: The next byte of the GUID.
+    - id: e
+      type: System.Byte
+      description: The next byte of the GUID.
+    - id: f
+      type: System.Byte
+      description: The next byte of the GUID.
+    - id: g
+      type: System.Byte
+      description: The next byte of the GUID.
+    - id: h
+      type: System.Byte
+      description: The next byte of the GUID.
+    - id: i
+      type: System.Byte
+      description: The next byte of the GUID.
+    - id: j
+      type: System.Byte
+      description: The next byte of the GUID.
+    - id: k
+      type: System.Byte
+      description: The next byte of the GUID.
+- uid: System.Guid.#ctor(System.Int32,System.Int16,System.Int16,System.Byte[])
+  id: '#ctor(System.Int32,System.Int16,System.Int16,System.Byte[])'
+  parent: System.Guid
+  href: System.Guid.yml
+  name: Guid(Int32, Int16, Int16, Byte[])
+  name.vb: Guid(Int32, Int16, Int16, Byte())
+  fullName: System.Guid.Guid(System.Int32, System.Int16, System.Int16, System.Byte[])
+  fullName.vb: System.Guid.Guid(System.Int32, System.Int16, System.Int16, System.Byte())
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Guid.cs
+    startLine: 85
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of the @'System.Guid' structure by using the specified integers and byte array.
+  syntax:
+    content: public Guid(int a, short b, short c, byte[] d)
+    content.vb: Public Sub New(a As Integer, b As Short, c As Short, d As Byte())
+    parameters:
+    - id: a
+      type: System.Int32
+      description: The first 4 bytes of the GUID.
+    - id: b
+      type: System.Int16
+      description: The next 2 bytes of the GUID.
+    - id: c
+      type: System.Int16
+      description: The next 2 bytes of the GUID.
+    - id: d
+      type: System.Byte[]
+      description: The remaining 8 bytes of the GUID.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*d* is null.'
+  - type: System.ArgumentException
+    description: '*d* is not 8 bytes long.'
+- uid: System.Guid.#ctor(System.Int32,System.Int16,System.Int16,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte)
+  id: '#ctor(System.Int32,System.Int16,System.Int16,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte)'
+  parent: System.Guid
+  href: System.Guid.yml
+  name: Guid(Int32, Int16, Int16, Byte, Byte, Byte, Byte, Byte, Byte, Byte, Byte)
+  fullName: System.Guid.Guid(System.Int32, System.Int16, System.Int16, System.Byte, System.Byte, System.Byte, System.Byte, System.Byte, System.Byte, System.Byte, System.Byte)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Guid.cs
+    startLine: 110
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of the @'System.Guid' structure by using the specified integers and bytes.
+  syntax:
+    content: public Guid(int a, short b, short c, byte d, byte e, byte f, byte g, byte h, byte i, byte j, byte k)
+    content.vb: Public Sub New(a As Integer, b As Short, c As Short, d As Byte, e As Byte, f As Byte, g As Byte, h As Byte, i As Byte, j As Byte, k As Byte)
+    parameters:
+    - id: a
+      type: System.Int32
+      description: The first 4 bytes of the GUID.
+    - id: b
+      type: System.Int16
+      description: The next 2 bytes of the GUID.
+    - id: c
+      type: System.Int16
+      description: The next 2 bytes of the GUID.
+    - id: d
+      type: System.Byte
+      description: The next byte of the GUID.
+    - id: e
+      type: System.Byte
+      description: The next byte of the GUID.
+    - id: f
+      type: System.Byte
+      description: The next byte of the GUID.
+    - id: g
+      type: System.Byte
+      description: The next byte of the GUID.
+    - id: h
+      type: System.Byte
+      description: The next byte of the GUID.
+    - id: i
+      type: System.Byte
+      description: The next byte of the GUID.
+    - id: j
+      type: System.Byte
+      description: The next byte of the GUID.
+    - id: k
+      type: System.Byte
+      description: The next byte of the GUID.
+- uid: System.Guid.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: System.Guid
+  href: System.Guid.yml
+  name: Guid(String)
+  fullName: System.Guid.Guid(System.String)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Guid.cs
+    startLine: 229
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of the @'System.Guid' structure by using the value represented by the specified string.
+  syntax:
+    content: public Guid(string g)
+    content.vb: Public Sub New(g As String)
+    parameters:
+    - id: g
+      type: System.String
+      description: 'A string that contains a GUID in one of the following formats ("d" represents a hexadecimal digit whose case is ignored): 32 contiguous digits: dddddddddddddddddddddddddddddddd -or- Groups of 8, 4, 4, 4, and 12 digits with hyphens between the groups. The entire GUID can optionally be enclosed in matching braces or parentheses: dddddddd-dddd-dddd-dddd-dddddddddddd -or- {dddddddd-dddd-dddd-dddd-dddddddddddd} -or- (dddddddd-dddd-dddd-dddd-dddddddddddd) -or- Groups of 8, 4, and 4 digits, and a subset of eight groups of 2 digits, with each group prefixed by "0x" or "0X", and separated by commas. The entire GUID, as well as the subset, is enclosed in matching braces: {0xdddddddd, 0xdddd, 0xdddd,{0xdd,0xdd,0xdd,0xdd,0xdd,0xdd,0xdd,0xdd}} All braces, commas, and "0x" prefixes are required. All embedded spaces are ignored. All leading zeros in a group are ignored.The digits shown in a group are the maximum number of meaningful digits that can appear in that group. You can specify from 1 to the number of digits shown for a group. The specified digits are assumed to be the low-order digits of the group.'
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*g* is null.'
+  - type: System.FormatException
+    description: The format of *g* is invalid.
+  - type: System.OverflowException
+    description: The format of *g* is invalid.
+- uid: System.Guid.Parse(System.String)
+  id: Parse(System.String)
+  parent: System.Guid
+  href: System.Guid.yml
+  name: Parse(String)
+  fullName: System.Guid.Parse(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Guid.cs
+    startLine: 248
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the string representation of a GUID to the equivalent @'System.Guid' structure.
+  syntax:
+    content: public static Guid Parse(string input)
+    content.vb: Public Shared Function Parse(input As String) As Guid
+    parameters:
+    - id: input
+      type: System.String
+      description: The string to convert.
+    return:
+      type: System.Guid
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*input* is null.'
+  - type: System.FormatException
+    description: '*input* is not in a recognized format.'
+- uid: System.Guid.TryParse(System.String,System.Guid@)
+  id: TryParse(System.String,System.Guid@)
+  parent: System.Guid
+  href: System.Guid.yml
+  name: TryParse(String, out Guid)
+  name.vb: TryParse(String, ByRef Guid)
+  fullName: System.Guid.TryParse(System.String, out System.Guid)
+  fullName.vb: System.Guid.TryParse(System.String, ByRef System.Guid)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Guid.cs
+    startLine: 265
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the string representation of a GUID to the equivalent @'System.Guid' structure.
+  syntax:
+    content: public static bool TryParse(string input, out Guid result)
+    content.vb: Public Shared Function TryParse(input As String, ByRef result As Guid) As Boolean
+    parameters:
+    - id: input
+      type: System.String
+      description: The GUID to convert.
+    - id: result
+      type: System.Guid
+      description: The structure that will contain the parsed value. If the method returns true, *result* contains a valid @'System.Guid'. If the method returns false, *result* equals @'System.Guid.Empty'.
+    return:
+      type: System.Boolean
+- uid: System.Guid.ParseExact(System.String,System.String)
+  id: ParseExact(System.String,System.String)
+  parent: System.Guid
+  href: System.Guid.yml
+  name: ParseExact(String, String)
+  fullName: System.Guid.ParseExact(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Guid.cs
+    startLine: 279
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the string representation of a GUID to the equivalent @'System.Guid' structure, provided that the string is in the specified format.
+  syntax:
+    content: public static Guid ParseExact(string input, string format)
+    content.vb: Public Shared Function ParseExact(input As String, format As String) As Guid
+    parameters:
+    - id: input
+      type: System.String
+      description: The GUID to convert.
+    - id: format
+      type: System.String
+      description: 'One of the following specifiers that indicates the exact format to use when interpreting *input*: "N", "D", "B", "P", or "X".'
+    return:
+      type: System.Guid
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*input* or *format* is null.'
+  - type: System.FormatException
+    description: '*input* is not in the format specified by *format*.'
+- uid: System.Guid.TryParseExact(System.String,System.String,System.Guid@)
+  id: TryParseExact(System.String,System.String,System.Guid@)
+  parent: System.Guid
+  href: System.Guid.yml
+  name: TryParseExact(String, String, out Guid)
+  name.vb: TryParseExact(String, String, ByRef Guid)
+  fullName: System.Guid.TryParseExact(System.String, System.String, out System.Guid)
+  fullName.vb: System.Guid.TryParseExact(System.String, System.String, ByRef System.Guid)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Guid.cs
+    startLine: 323
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the string representation of a GUID to the equivalent @'System.Guid' structure, provided that the string is in the specified format.
+  syntax:
+    content: public static bool TryParseExact(string input, string format, out Guid result)
+    content.vb: Public Shared Function TryParseExact(input As String, format As String, ByRef result As Guid) As Boolean
+    parameters:
+    - id: input
+      type: System.String
+      description: The GUID to convert.
+    - id: format
+      type: System.String
+      description: 'One of the following specifiers that indicates the exact format to use when interpreting *input*: "N", "D", "B", "P", or "X".'
+    - id: result
+      type: System.Guid
+      description: The structure that will contain the parsed value. If the method returns true, *result* contains a valid @'System.Guid'. If the method returns false, *result* equals @'System.Guid.Empty'.
+    return:
+      type: System.Boolean
+- uid: System.Guid.ToByteArray
+  id: ToByteArray
+  parent: System.Guid
+  href: System.Guid.yml
+  name: ToByteArray()
+  fullName: System.Guid.ToByteArray()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Guid.cs
+    startLine: 886
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns a 16-element byte array that contains the value of this instance.
+  syntax:
+    content: public byte[] ToByteArray()
+    content.vb: Public Function ToByteArray As Byte()
+    return:
+      type: System.Byte[]
+- uid: System.Guid.ToString
+  id: ToString
+  parent: System.Guid
+  href: System.Guid.yml
+  name: ToString()
+  fullName: System.Guid.ToString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Guid.cs
+    startLine: 912
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns a string representation of the value of this instance in registry format.
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+  overridden: System.ValueType.ToString
+- uid: System.Guid.GetHashCode
+  id: GetHashCode
+  parent: System.Guid
+  href: System.Guid.yml
+  name: GetHashCode()
+  fullName: System.Guid.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Guid.cs
+    startLine: 917
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns the hash code for this instance.
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+  overridden: System.ValueType.GetHashCode
+- uid: System.Guid.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Guid
+  href: System.Guid.yml
+  name: Equals(Object)
+  fullName: System.Guid.Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Guid.cs
+    startLine: 924
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns a value that indicates whether this instance is equal to a specified object.
+  syntax:
+    content: public override bool Equals(object o)
+    content.vb: Public Overrides Function Equals(o As Object) As Boolean
+    parameters:
+    - id: o
+      type: System.Object
+      description: The object to compare with this instance.
+    return:
+      type: System.Boolean
+  overridden: System.ValueType.Equals(System.Object)
+- uid: System.Guid.Equals(System.Guid)
+  id: Equals(System.Guid)
+  parent: System.Guid
+  href: System.Guid.yml
+  name: Equals(Guid)
+  fullName: System.Guid.Equals(System.Guid)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Guid.cs
+    startLine: 959
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns a value indicating whether this instance and a specified @'System.Guid' object represent the same value.
+  syntax:
+    content: public bool Equals(Guid g)
+    content.vb: Public Function Equals(g As Guid) As Boolean
+    parameters:
+    - id: g
+      type: System.Guid
+      description: An object to compare to this instance.
+    return:
+      type: System.Boolean
+- uid: System.Guid.CompareTo(System.Object)
+  id: CompareTo(System.Object)
+  parent: System.Guid
+  href: System.Guid.yml
+  name: CompareTo(Object)
+  fullName: System.Guid.CompareTo(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Guid.cs
+    startLine: 995
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Compares this instance to a specified object and returns an indication of their relative values.
+  syntax:
+    content: public int CompareTo(object value)
+    content.vb: Public Function CompareTo(value As Object) As Integer
+    parameters:
+    - id: value
+      type: System.Object
+      description: An object to compare, or null.
+    return:
+      type: System.Int32
+  exceptions:
+  - type: System.ArgumentException
+    description: '*value* is not a @''System.Guid''.'
+- uid: System.Guid.CompareTo(System.Guid)
+  id: CompareTo(System.Guid)
+  parent: System.Guid
+  href: System.Guid.yml
+  name: CompareTo(Guid)
+  fullName: System.Guid.CompareTo(System.Guid)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Guid.cs
+    startLine: 1051
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Compares this instance to a specified @'System.Guid' object and returns an indication of their relative values.
+  syntax:
+    content: public int CompareTo(Guid value)
+    content.vb: Public Function CompareTo(value As Guid) As Integer
+    parameters:
+    - id: value
+      type: System.Guid
+      description: An object to compare to this instance.
+    return:
+      type: System.Int32
+- uid: System.Guid.op_Equality(System.Guid,System.Guid)
+  id: op_Equality(System.Guid,System.Guid)
+  parent: System.Guid
+  href: System.Guid.yml
+  name: Equality(Guid, Guid)
+  fullName: System.Guid.Equality(System.Guid, System.Guid)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Guid.cs
+    startLine: 1100
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether the values of two specified @'System.Guid' objects are equal.
+  syntax:
+    content: public static bool operator ==(Guid a, Guid b)
+    content.vb: Public Shared Operator =(a As Guid, b As Guid) As Boolean
+    parameters:
+    - id: a
+      type: System.Guid
+      description: The first object to compare.
+    - id: b
+      type: System.Guid
+      description: The second object to compare.
+    return:
+      type: System.Boolean
+- uid: System.Guid.op_Inequality(System.Guid,System.Guid)
+  id: op_Inequality(System.Guid,System.Guid)
+  parent: System.Guid
+  href: System.Guid.yml
+  name: Inequality(Guid, Guid)
+  fullName: System.Guid.Inequality(System.Guid, System.Guid)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Guid.cs
+    startLine: 1129
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether the values of two specified @'System.Guid' objects are not equal.
+  syntax:
+    content: public static bool operator !=(Guid a, Guid b)
+    content.vb: Public Shared Operator <>(a As Guid, b As Guid) As Boolean
+    parameters:
+    - id: a
+      type: System.Guid
+      description: The first object to compare.
+    - id: b
+      type: System.Guid
+      description: The second object to compare.
+    return:
+      type: System.Boolean
+- uid: System.Guid.NewGuid
+  id: NewGuid
+  parent: System.Guid
+  href: System.Guid.yml
+  name: NewGuid()
+  fullName: System.Guid.NewGuid()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Guid.cs
+    startLine: 1136
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of the @'System.Guid' structure.
+  syntax:
+    content: public static Guid NewGuid()
+    content.vb: Public Shared Function NewGuid As Guid
+    return:
+      type: System.Guid
+- uid: System.Guid.ToString(System.String)
+  id: ToString(System.String)
+  parent: System.Guid
+  href: System.Guid.yml
+  name: ToString(String)
+  fullName: System.Guid.ToString(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Guid.cs
+    startLine: 1148
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns a string representation of the value of this @'System.Guid' instance, according to the provided format specifier.
+  syntax:
+    content: public string ToString(string format)
+    content.vb: Public Function ToString(format As String) As String
+    parameters:
+    - id: format
+      type: System.String
+      description: A single format specifier that indicates how to format the value of this @'System.Guid'. The *format* parameter can be "N", "D", "B", "P", or "X". If *format* is null or an empty string (""), "D" is used.
+    return:
+      type: System.String
+  exceptions:
+  - type: System.FormatException
+    description: The value of *format* is not null, an empty string (""), "N", "D", "B", "P", or "X".
+- uid: System.Guid.ToString(System.String,System.IFormatProvider)
+  id: ToString(System.String,System.IFormatProvider)
+  parent: System.Guid
+  href: System.Guid.yml
+  name: ToString(String, IFormatProvider)
+  fullName: System.Guid.ToString(System.String, System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Guid.cs
+    startLine: 1185
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns a string representation of the value of this instance of the @'System.Guid' class, according to the provided format specifier and culture-specific format information.
+  syntax:
+    content: public string ToString(string format, IFormatProvider provider)
+    content.vb: Public Function ToString(format As String, provider As IFormatProvider) As String
+    parameters:
+    - id: format
+      type: System.String
+      description: A single format specifier that indicates how to format the value of this @'System.Guid'. The *format* parameter can be "N", "D", "B", "P", or "X". If *format* is null or an empty string (""), "D" is used.
+    - id: provider
+      type: System.IFormatProvider
+      description: (Reserved) An object that supplies culture-specific formatting information.
+    return:
+      type: System.String
+  exceptions:
+  - type: System.FormatException
+    description: The value of *format* is not null, an empty string (""), "N", "D", "B", "P", or "X".
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  name.vb: Byte()
+  fullName: System.Byte[]
+  fullName.vb: System.Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.UInt32
+  parent: System
+  isExternal: true
+  name: UInt32
+  fullName: System.UInt32
+- uid: System.UInt16
+  parent: System
+  isExternal: true
+  name: UInt16
+  fullName: System.UInt16
+- uid: System.Byte
+  parent: System
+  isExternal: true
+  name: Byte
+  fullName: System.Byte
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Int16
+  parent: System
+  isExternal: true
+  name: Int16
+  fullName: System.Int16
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  fullName: System.Guid
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.IFormatProvider
+  parent: System
+  isExternal: true
+  name: IFormatProvider
+  fullName: System.IFormatProvider

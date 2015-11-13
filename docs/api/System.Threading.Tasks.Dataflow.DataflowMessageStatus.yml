@@ -1,0 +1,191 @@
+items:
+- uid: System.Threading.Tasks.Dataflow.DataflowMessageStatus
+  id: DataflowMessageStatus
+  parent: System.Threading.Tasks.Dataflow
+  children:
+  - System.Threading.Tasks.Dataflow.DataflowMessageStatus.Accepted
+  - System.Threading.Tasks.Dataflow.DataflowMessageStatus.Declined
+  - System.Threading.Tasks.Dataflow.DataflowMessageStatus.DecliningPermanently
+  - System.Threading.Tasks.Dataflow.DataflowMessageStatus.NotAvailable
+  - System.Threading.Tasks.Dataflow.DataflowMessageStatus.Postponed
+  href: System.Threading.Tasks.Dataflow.DataflowMessageStatus.yml
+  name: DataflowMessageStatus
+  fullName: System.Threading.Tasks.Dataflow.DataflowMessageStatus
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowMessageStatus.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowMessageStatus.cs
+    startLine: 15
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Represents the status of a @'System.Threading.Tasks.Dataflow.DataflowMessageHeader' when passed between dataflow blocks.
+  syntax:
+    content: public enum DataflowMessageStatus
+    content.vb: Public Enum DataflowMessageStatus
+- uid: System.Threading.Tasks.Dataflow.DataflowMessageStatus.Accepted
+  id: Accepted
+  parent: System.Threading.Tasks.Dataflow.DataflowMessageStatus
+  href: System.Threading.Tasks.Dataflow.DataflowMessageStatus.yml
+  name: Accepted
+  fullName: System.Threading.Tasks.Dataflow.DataflowMessageStatus.Accepted
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowMessageStatus.cs
+    startLine: 21
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Indicates that the @'System.Threading.Tasks.Dataflow.ITargetBlock`1' accepted the message. Once a target has accepted a message, it is wholly owned by the target.
+  syntax:
+    content: Accepted = 0
+- uid: System.Threading.Tasks.Dataflow.DataflowMessageStatus.Declined
+  id: Declined
+  parent: System.Threading.Tasks.Dataflow.DataflowMessageStatus
+  href: System.Threading.Tasks.Dataflow.DataflowMessageStatus.yml
+  name: Declined
+  fullName: System.Threading.Tasks.Dataflow.DataflowMessageStatus.Declined
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowMessageStatus.cs
+    startLine: 26
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Indicates that the @'System.Threading.Tasks.Dataflow.ITargetBlock`1' declined the message. The @'System.Threading.Tasks.Dataflow.ISourceBlock`1' still owns the message.
+  syntax:
+    content: Declined = 1
+- uid: System.Threading.Tasks.Dataflow.DataflowMessageStatus.Postponed
+  id: Postponed
+  parent: System.Threading.Tasks.Dataflow.DataflowMessageStatus
+  href: System.Threading.Tasks.Dataflow.DataflowMessageStatus.yml
+  name: Postponed
+  fullName: System.Threading.Tasks.Dataflow.DataflowMessageStatus.Postponed
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowMessageStatus.cs
+    startLine: 32
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Indicates that the @'System.Threading.Tasks.Dataflow.ITargetBlock`1' postponed the message for potential consumption at a later time.  The @'System.Threading.Tasks.Dataflow.ISourceBlock`1' still owns the message.
+  syntax:
+    content: Postponed = 2
+- uid: System.Threading.Tasks.Dataflow.DataflowMessageStatus.NotAvailable
+  id: NotAvailable
+  parent: System.Threading.Tasks.Dataflow.DataflowMessageStatus
+  href: System.Threading.Tasks.Dataflow.DataflowMessageStatus.yml
+  name: NotAvailable
+  fullName: System.Threading.Tasks.Dataflow.DataflowMessageStatus.NotAvailable
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowMessageStatus.cs
+    startLine: 38
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Indicates that the @'System.Threading.Tasks.Dataflow.ITargetBlock`1' tried to accept the message from the @'System.Threading.Tasks.Dataflow.ISourceBlock`1', but the message was no longer available.
+  syntax:
+    content: NotAvailable = 3
+- uid: System.Threading.Tasks.Dataflow.DataflowMessageStatus.DecliningPermanently
+  id: DecliningPermanently
+  parent: System.Threading.Tasks.Dataflow.DataflowMessageStatus
+  href: System.Threading.Tasks.Dataflow.DataflowMessageStatus.yml
+  name: DecliningPermanently
+  fullName: System.Threading.Tasks.Dataflow.DataflowMessageStatus.DecliningPermanently
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowMessageStatus.cs
+    startLine: 44
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Indicates that the @'System.Threading.Tasks.Dataflow.ITargetBlock`1' declined the message. The @'System.Threading.Tasks.Dataflow.ISourceBlock`1' still owns the message.  Additionally, the @'System.Threading.Tasks.Dataflow.ITargetBlock`1' will decline all future messages sent by the source.
+  syntax:
+    content: DecliningPermanently = 4
+references:
+- uid: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+  parent: System.Threading.Tasks.Dataflow
+  isExternal: false
+  href: System.Threading.Tasks.Dataflow.DataflowMessageHeader.yml
+  name: DataflowMessageHeader
+  fullName: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+  type: Struct
+  summary: Provides a container of data attributes for passing between dataflow blocks.
+- uid: System.Threading.Tasks.Dataflow
+  isExternal: false
+  name: System.Threading.Tasks.Dataflow
+  fullName: System.Threading.Tasks.Dataflow
+  type: Namespace
+- uid: System.Threading.Tasks.Dataflow.ITargetBlock`1
+  parent: System.Threading.Tasks.Dataflow
+  isExternal: false
+  href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  name: ITargetBlock<TInput>
+  name.vb: ITargetBlock(Of TInput)
+  fullName: System.Threading.Tasks.Dataflow.ITargetBlock<TInput>
+  fullName.vb: System.Threading.Tasks.Dataflow.ITargetBlock(Of TInput)
+  type: Interface
+  summary: Represents a dataflow block that is a target for data.
+  spec.csharp:
+  - uid: System.Threading.Tasks.Dataflow.ITargetBlock`1
+    name: ITargetBlock
+    fullName: System.Threading.Tasks.Dataflow.ITargetBlock
+    href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  - name: <
+    fullName: <
+  - name: TInput
+    fullName: TInput
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Dataflow.ITargetBlock`1
+    name: ITargetBlock
+    fullName: System.Threading.Tasks.Dataflow.ITargetBlock
+    href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TInput
+    fullName: TInput
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Dataflow.ISourceBlock`1
+  parent: System.Threading.Tasks.Dataflow
+  isExternal: false
+  href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  name: ISourceBlock<TOutput>
+  name.vb: ISourceBlock(Of TOutput)
+  fullName: System.Threading.Tasks.Dataflow.ISourceBlock<TOutput>
+  fullName.vb: System.Threading.Tasks.Dataflow.ISourceBlock(Of TOutput)
+  type: Interface
+  summary: Represents a dataflow block that is a source of data.
+  spec.csharp:
+  - uid: System.Threading.Tasks.Dataflow.ISourceBlock`1
+    name: ISourceBlock
+    fullName: System.Threading.Tasks.Dataflow.ISourceBlock
+    href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  - name: <
+    fullName: <
+  - name: TOutput
+    fullName: TOutput
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Dataflow.ISourceBlock`1
+    name: ISourceBlock
+    fullName: System.Threading.Tasks.Dataflow.ISourceBlock
+    href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TOutput
+    fullName: TOutput
+  - name: )
+    fullName: )

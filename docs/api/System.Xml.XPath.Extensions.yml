@@ -1,0 +1,606 @@
+items:
+- uid: System.Xml.XPath.Extensions
+  id: Extensions
+  parent: System.Xml.XPath
+  children:
+  - System.Xml.XPath.Extensions.CreateNavigator(XNode)
+  - System.Xml.XPath.Extensions.CreateNavigator(XNode,XmlNameTable)
+  - System.Xml.XPath.Extensions.XPathEvaluate(XNode,System.String)
+  - System.Xml.XPath.Extensions.XPathEvaluate(XNode,System.String,IXmlNamespaceResolver)
+  - System.Xml.XPath.Extensions.XPathSelectElement(XNode,System.String)
+  - System.Xml.XPath.Extensions.XPathSelectElement(XNode,System.String,IXmlNamespaceResolver)
+  - System.Xml.XPath.Extensions.XPathSelectElements(XNode,System.String)
+  - System.Xml.XPath.Extensions.XPathSelectElements(XNode,System.String,IXmlNamespaceResolver)
+  href: System.Xml.XPath.Extensions.yml
+  name: Extensions
+  fullName: System.Xml.XPath.Extensions
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Xml.XPath.XDocument/src/System/Xml/XPath/XNodeNavigator.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Xml.XPath.XDocument/src/System/Xml/XPath/XNodeNavigator.cs
+    startLine: 893
+  assemblies:
+  - System.Xml.XPath.XDocument
+  namespace: System.Xml.XPath
+  summary: This class contains the LINQ to XML extension methods that enable you to evaluate XPath expressions.
+  syntax:
+    content: public class Extensions
+    content.vb: Public Class Extensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Xml.XPath.Extensions.CreateNavigator(XNode)
+  id: CreateNavigator(XNode)
+  parent: System.Xml.XPath.Extensions
+  href: System.Xml.XPath.Extensions.yml
+  name: CreateNavigator(XNode)
+  fullName: System.Xml.XPath.Extensions.CreateNavigator(XNode)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XPath.XDocument/src/System/Xml/XPath/XNodeNavigator.cs
+    startLine: 900
+  assemblies:
+  - System.Xml.XPath.XDocument
+  namespace: System.Xml.XPath
+  summary: Creates an @'System.Xml.XPath.XPathNavigator' for a given <see cref="!:XNode" />
+  syntax:
+    content: public static XPathNavigator CreateNavigator(XNode node)
+    content.vb: Public Shared Function CreateNavigator(node As XNode) As XPathNavigator
+    parameters:
+    - id: node
+      type: XNode
+      description: Extension point <see cref="!:XNode" />
+    return:
+      type: System.Xml.XPath.XPathNavigator
+      description: An @'System.Xml.XPath.XPathNavigator'
+- uid: System.Xml.XPath.Extensions.CreateNavigator(XNode,XmlNameTable)
+  id: CreateNavigator(XNode,XmlNameTable)
+  parent: System.Xml.XPath.Extensions
+  href: System.Xml.XPath.Extensions.yml
+  name: CreateNavigator(XNode, XmlNameTable)
+  fullName: System.Xml.XPath.Extensions.CreateNavigator(XNode, XmlNameTable)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XPath.XDocument/src/System/Xml/XPath/XNodeNavigator.cs
+    startLine: 912
+  assemblies:
+  - System.Xml.XPath.XDocument
+  namespace: System.Xml.XPath
+  summary: Creates an @'System.Xml.XPath.XPathNavigator' for a given <see cref="!:XNode" />
+  syntax:
+    content: public static XPathNavigator CreateNavigator(XNode node, XmlNameTable nameTable)
+    content.vb: Public Shared Function CreateNavigator(node As XNode, nameTable As XmlNameTable) As XPathNavigator
+    parameters:
+    - id: node
+      type: XNode
+      description: Extension point <see cref="!:XNode" />
+    - id: nameTable
+      type: XmlNameTable
+      description: >-
+        The <see cref="!:XmlNameTable" /> to be used by
+
+        the @'System.Xml.XPath.XPathNavigator'
+    return:
+      type: System.Xml.XPath.XPathNavigator
+      description: An @'System.Xml.XPath.XPathNavigator'
+- uid: System.Xml.XPath.Extensions.XPathEvaluate(XNode,System.String)
+  id: XPathEvaluate(XNode,System.String)
+  parent: System.Xml.XPath.Extensions
+  href: System.Xml.XPath.Extensions.yml
+  name: XPathEvaluate(XNode, String)
+  fullName: System.Xml.XPath.Extensions.XPathEvaluate(XNode, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XPath.XDocument/src/System/Xml/XPath/XNodeNavigator.cs
+    startLine: 932
+  assemblies:
+  - System.Xml.XPath.XDocument
+  namespace: System.Xml.XPath
+  summary: Evaluates an XPath expression
+  syntax:
+    content: public static object XPathEvaluate(XNode node, string expression)
+    content.vb: Public Shared Function XPathEvaluate(node As XNode, expression As String) As Object
+    parameters:
+    - id: node
+      type: XNode
+      description: Extension point <see cref="!:XNode" />
+    - id: expression
+      type: System.String
+      description: The XPath expression
+    return:
+      type: System.Object
+      description: >-
+        The result of evaluating the expression which can be typed as bool, double, string or
+
+        IEnumerable
+- uid: System.Xml.XPath.Extensions.XPathEvaluate(XNode,System.String,IXmlNamespaceResolver)
+  id: XPathEvaluate(XNode,System.String,IXmlNamespaceResolver)
+  parent: System.Xml.XPath.Extensions
+  href: System.Xml.XPath.Extensions.yml
+  name: XPathEvaluate(XNode, String, IXmlNamespaceResolver)
+  fullName: System.Xml.XPath.Extensions.XPathEvaluate(XNode, System.String, IXmlNamespaceResolver)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XPath.XDocument/src/System/Xml/XPath/XNodeNavigator.cs
+    startLine: 946
+  assemblies:
+  - System.Xml.XPath.XDocument
+  namespace: System.Xml.XPath
+  summary: Evaluates an XPath expression
+  syntax:
+    content: public static object XPathEvaluate(XNode node, string expression, IXmlNamespaceResolver resolver)
+    content.vb: Public Shared Function XPathEvaluate(node As XNode, expression As String, resolver As IXmlNamespaceResolver) As Object
+    parameters:
+    - id: node
+      type: XNode
+      description: Extension point <see cref="!:XNode" />
+    - id: expression
+      type: System.String
+      description: The XPath expression
+    - id: resolver
+      type: IXmlNamespaceResolver
+      description: >-
+        A <see cref="!:IXmlNamespaceResolver"> for the namespace
+
+        prefixes used in the XPath expression</see>
+    return:
+      type: System.Object
+      description: >-
+        The result of evaluating the expression which can be typed as bool, double, string or
+
+        IEnumerable
+- uid: System.Xml.XPath.Extensions.XPathSelectElement(XNode,System.String)
+  id: XPathSelectElement(XNode,System.String)
+  parent: System.Xml.XPath.Extensions
+  href: System.Xml.XPath.Extensions.yml
+  name: XPathSelectElement(XNode, String)
+  fullName: System.Xml.XPath.Extensions.XPathSelectElement(XNode, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XPath.XDocument/src/System/Xml/XPath/XNodeNavigator.cs
+    startLine: 958
+  assemblies:
+  - System.Xml.XPath.XDocument
+  namespace: System.Xml.XPath
+  summary: Select an <see cref="!:XElement" /> using a XPath expression
+  syntax:
+    content: public static XElement XPathSelectElement(XNode node, string expression)
+    content.vb: Public Shared Function XPathSelectElement(node As XNode, expression As String) As XElement
+    parameters:
+    - id: node
+      type: XNode
+      description: Extension point <see cref="!:XNode" />
+    - id: expression
+      type: System.String
+      description: The XPath expression
+    return:
+      type: XElement
+      description: An <see cref="!:XElement"> or null</see>
+- uid: System.Xml.XPath.Extensions.XPathSelectElement(XNode,System.String,IXmlNamespaceResolver)
+  id: XPathSelectElement(XNode,System.String,IXmlNamespaceResolver)
+  parent: System.Xml.XPath.Extensions
+  href: System.Xml.XPath.Extensions.yml
+  name: XPathSelectElement(XNode, String, IXmlNamespaceResolver)
+  fullName: System.Xml.XPath.Extensions.XPathSelectElement(XNode, System.String, IXmlNamespaceResolver)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XPath.XDocument/src/System/Xml/XPath/XNodeNavigator.cs
+    startLine: 971
+  assemblies:
+  - System.Xml.XPath.XDocument
+  namespace: System.Xml.XPath
+  summary: Select an <see cref="!:XElement" /> using a XPath expression
+  syntax:
+    content: public static XElement XPathSelectElement(XNode node, string expression, IXmlNamespaceResolver resolver)
+    content.vb: Public Shared Function XPathSelectElement(node As XNode, expression As String, resolver As IXmlNamespaceResolver) As XElement
+    parameters:
+    - id: node
+      type: XNode
+      description: Extension point <see cref="!:XNode" />
+    - id: expression
+      type: System.String
+      description: The XPath expression
+    - id: resolver
+      type: IXmlNamespaceResolver
+      description: >-
+        A <see cref="!:IXmlNamespaceResolver" /> for the namespace
+
+        prefixes used in the XPath expression
+    return:
+      type: XElement
+      description: An <see cref="!:XElement"> or null</see>
+- uid: System.Xml.XPath.Extensions.XPathSelectElements(XNode,System.String)
+  id: XPathSelectElements(XNode,System.String)
+  parent: System.Xml.XPath.Extensions
+  href: System.Xml.XPath.Extensions.yml
+  name: XPathSelectElements(XNode, String)
+  fullName: System.Xml.XPath.Extensions.XPathSelectElements(XNode, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XPath.XDocument/src/System/Xml/XPath/XNodeNavigator.cs
+    startLine: 982
+  assemblies:
+  - System.Xml.XPath.XDocument
+  namespace: System.Xml.XPath
+  summary: Select a set of <see cref="!:XElement" /> using a XPath expression
+  syntax:
+    content: public static IEnumerable<XElement> XPathSelectElements(XNode node, string expression)
+    content.vb: Public Shared Function XPathSelectElements(node As XNode, expression As String) As IEnumerable(Of XElement)
+    parameters:
+    - id: node
+      type: XNode
+      description: Extension point <see cref="!:XNode" />
+    - id: expression
+      type: System.String
+      description: The XPath expression
+    return:
+      type: System.Collections.Generic.IEnumerable{XElement}
+      description: An @'System.Collections.Generic.IEnumerable`1' corresponding to the resulting set of elements
+- uid: System.Xml.XPath.Extensions.XPathSelectElements(XNode,System.String,IXmlNamespaceResolver)
+  id: XPathSelectElements(XNode,System.String,IXmlNamespaceResolver)
+  parent: System.Xml.XPath.Extensions
+  href: System.Xml.XPath.Extensions.yml
+  name: XPathSelectElements(XNode, String, IXmlNamespaceResolver)
+  fullName: System.Xml.XPath.Extensions.XPathSelectElements(XNode, System.String, IXmlNamespaceResolver)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XPath.XDocument/src/System/Xml/XPath/XNodeNavigator.cs
+    startLine: 995
+  assemblies:
+  - System.Xml.XPath.XDocument
+  namespace: System.Xml.XPath
+  summary: Select a set of <see cref="!:XElement" /> using a XPath expression
+  syntax:
+    content: public static IEnumerable<XElement> XPathSelectElements(XNode node, string expression, IXmlNamespaceResolver resolver)
+    content.vb: Public Shared Function XPathSelectElements(node As XNode, expression As String, resolver As IXmlNamespaceResolver) As IEnumerable(Of XElement)
+    parameters:
+    - id: node
+      type: XNode
+      description: Extension point <see cref="!:XNode" />
+    - id: expression
+      type: System.String
+      description: The XPath expression
+    - id: resolver
+      type: IXmlNamespaceResolver
+      description: >-
+        A <see cref="!:IXmlNamespaceResolver" /> for the namespace
+
+        prefixes used in the XPath expression
+    return:
+      type: System.Collections.Generic.IEnumerable{XElement}
+      description: An @'System.Collections.Generic.IEnumerable`1' corresponding to the resulting set of elements
+references:
+- uid: System.Xml.XPath
+  isExternal: false
+  name: System.Xml.XPath
+  fullName: System.Xml.XPath
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Xml.XPath.XPathNavigator
+  parent: System.Xml.XPath
+  isExternal: false
+  href: System.Xml.XPath.XPathNavigator.yml
+  name: XPathNavigator
+  fullName: System.Xml.XPath.XPathNavigator
+- uid: XNode
+  isExternal: true
+  name: XNode
+  fullName: XNode
+- uid: XmlNameTable
+  isExternal: true
+  name: XmlNameTable
+  fullName: XmlNameTable
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: IXmlNamespaceResolver
+  isExternal: true
+  name: IXmlNamespaceResolver
+  fullName: IXmlNamespaceResolver
+- uid: XElement
+  isExternal: true
+  name: XElement
+  fullName: XElement
+- uid: System.Collections.Generic.IEnumerable`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{XElement}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<XElement>
+  name.vb: IEnumerable(Of XElement)
+  fullName: System.Collections.Generic.IEnumerable<XElement>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of XElement)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: XElement
+    name: XElement
+    fullName: XElement
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: XElement
+    name: XElement
+    fullName: XElement
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic

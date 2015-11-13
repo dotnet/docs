@@ -1,0 +1,410 @@
+items:
+- uid: System.Runtime.Serialization.DateTimeFormat
+  id: DateTimeFormat
+  parent: System.Runtime.Serialization
+  children:
+  - System.Runtime.Serialization.DateTimeFormat.#ctor(System.String)
+  - System.Runtime.Serialization.DateTimeFormat.#ctor(System.String,System.IFormatProvider)
+  - System.Runtime.Serialization.DateTimeFormat.DateTimeStyles
+  - System.Runtime.Serialization.DateTimeFormat.FormatProvider
+  - System.Runtime.Serialization.DateTimeFormat.FormatString
+  href: System.Runtime.Serialization.DateTimeFormat.yml
+  name: DateTimeFormat
+  fullName: System.Runtime.Serialization.DateTimeFormat
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Private.DataContractSerialization/src/System/Runtime/Serialization/Json/DateTimeFormat.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Private.DataContractSerialization/src/System/Runtime/Serialization/Json/DateTimeFormat.cs
+    startLine: 14
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Runtime.Serialization
+  summary: Specifies date-time format options.
+  syntax:
+    content: public class DateTimeFormat
+    content.vb: Public Class DateTimeFormat
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Runtime.Serialization.DateTimeFormat.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: System.Runtime.Serialization.DateTimeFormat
+  href: System.Runtime.Serialization.DateTimeFormat.yml
+  name: DateTimeFormat(String)
+  fullName: System.Runtime.Serialization.DateTimeFormat.DateTimeFormat(System.String)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Runtime/Serialization/Json/DateTimeFormat.cs
+    startLine: 26
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Runtime.Serialization
+  summary: Initializes a new instance of the @'System.Runtime.Serialization.DateTimeFormat' class using the format string.
+  syntax:
+    content: public DateTimeFormat(string formatString)
+    content.vb: Public Sub New(formatString As String)
+    parameters:
+    - id: formatString
+      type: System.String
+      description: The format string.
+- uid: System.Runtime.Serialization.DateTimeFormat.#ctor(System.String,System.IFormatProvider)
+  id: '#ctor(System.String,System.IFormatProvider)'
+  parent: System.Runtime.Serialization.DateTimeFormat
+  href: System.Runtime.Serialization.DateTimeFormat.yml
+  name: DateTimeFormat(String, IFormatProvider)
+  fullName: System.Runtime.Serialization.DateTimeFormat.DateTimeFormat(System.String, System.IFormatProvider)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Runtime/Serialization/Json/DateTimeFormat.cs
+    startLine: 36
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Runtime.Serialization
+  summary: Initializes a new instance of the @'System.Runtime.Serialization.DateTimeFormat' class using the format string and format provider.
+  syntax:
+    content: public DateTimeFormat(string formatString, IFormatProvider formatProvider)
+    content.vb: Public Sub New(formatString As String, formatProvider As IFormatProvider)
+    parameters:
+    - id: formatString
+      type: System.String
+      description: The format sting.
+    - id: formatProvider
+      type: System.IFormatProvider
+      description: The format provider.
+- uid: System.Runtime.Serialization.DateTimeFormat.FormatString
+  id: FormatString
+  parent: System.Runtime.Serialization.DateTimeFormat
+  href: System.Runtime.Serialization.DateTimeFormat.yml
+  name: FormatString
+  fullName: System.Runtime.Serialization.DateTimeFormat.FormatString
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Runtime/Serialization/Json/DateTimeFormat.cs
+    startLine: 56
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Runtime.Serialization
+  summary: Gets the format strings to control the formatting produced when a date or time is represented as a string.
+  syntax:
+    content: public string FormatString { get; }
+    content.vb: Public ReadOnly Property FormatString As String
+    parameters: []
+    return:
+      type: System.String
+- uid: System.Runtime.Serialization.DateTimeFormat.FormatProvider
+  id: FormatProvider
+  parent: System.Runtime.Serialization.DateTimeFormat
+  href: System.Runtime.Serialization.DateTimeFormat.yml
+  name: FormatProvider
+  fullName: System.Runtime.Serialization.DateTimeFormat.FormatProvider
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Runtime/Serialization/Json/DateTimeFormat.cs
+    startLine: 67
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Runtime.Serialization
+  summary: Gets an object that controls formatting.
+  syntax:
+    content: public IFormatProvider FormatProvider { get; }
+    content.vb: Public ReadOnly Property FormatProvider As IFormatProvider
+    parameters: []
+    return:
+      type: System.IFormatProvider
+- uid: System.Runtime.Serialization.DateTimeFormat.DateTimeStyles
+  id: DateTimeStyles
+  parent: System.Runtime.Serialization.DateTimeFormat
+  href: System.Runtime.Serialization.DateTimeFormat.yml
+  name: DateTimeStyles
+  fullName: System.Runtime.Serialization.DateTimeFormat.DateTimeStyles
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Runtime/Serialization/Json/DateTimeFormat.cs
+    startLine: 78
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Runtime.Serialization
+  summary: Gets or sets the formatting options that customize string parsing for some date and time parsing methods.
+  syntax:
+    content: public DateTimeStyles DateTimeStyles { get; set; }
+    content.vb: Public Property DateTimeStyles As DateTimeStyles
+    parameters: []
+    return:
+      type: System.Globalization.DateTimeStyles
+references:
+- uid: System.Runtime.Serialization.Json.DataContractJsonSerializer
+  isExternal: false
+  href: System.Runtime.Serialization.Json.DataContractJsonSerializer.yml
+  name: DataContractJsonSerializer
+  fullName: System.Runtime.Serialization.Json.DataContractJsonSerializer
+  type: Class
+- uid: System.Runtime.Serialization
+  isExternal: false
+  name: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Runtime.Serialization.DateTimeFormat
+  isExternal: false
+  href: System.Runtime.Serialization.DateTimeFormat.yml
+  name: DateTimeFormat
+  fullName: System.Runtime.Serialization.DateTimeFormat
+  type: Class
+  summary: >-
+    This class is used to customize the way DateTime is
+
+    serialized or deserialized by @'System.Runtime.Serialization.Json.DataContractJsonSerializer'
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.IFormatProvider
+  parent: System
+  isExternal: true
+  name: IFormatProvider
+  fullName: System.IFormatProvider
+- uid: System.Runtime.Serialization.DateTimeFormat.DateTimeStyles
+- uid: System.Globalization.DateTimeStyles
+  parent: System.Globalization
+  isExternal: false
+  href: System.Globalization.DateTimeStyles.yml
+  name: DateTimeStyles
+  fullName: System.Globalization.DateTimeStyles
+  type: Enum
+- uid: System.Globalization
+  isExternal: false
+  name: System.Globalization
+  fullName: System.Globalization

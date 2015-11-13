@@ -1,0 +1,687 @@
+items:
+- uid: System.Xml.XmlParserContext
+  id: XmlParserContext
+  parent: System.Xml
+  children:
+  - System.Xml.XmlParserContext.#ctor(System.Xml.XmlNameTable,System.Xml.XmlNamespaceManager,System.String,System.String,System.String,System.String,System.String,System.String,System.Xml.XmlSpace)
+  - System.Xml.XmlParserContext.#ctor(System.Xml.XmlNameTable,System.Xml.XmlNamespaceManager,System.String,System.String,System.String,System.String,System.String,System.String,System.Xml.XmlSpace,System.Text.Encoding)
+  - System.Xml.XmlParserContext.#ctor(System.Xml.XmlNameTable,System.Xml.XmlNamespaceManager,System.String,System.Xml.XmlSpace)
+  - System.Xml.XmlParserContext.#ctor(System.Xml.XmlNameTable,System.Xml.XmlNamespaceManager,System.String,System.Xml.XmlSpace,System.Text.Encoding)
+  - System.Xml.XmlParserContext.BaseURI
+  - System.Xml.XmlParserContext.DocTypeName
+  - System.Xml.XmlParserContext.Encoding
+  - System.Xml.XmlParserContext.InternalSubset
+  - System.Xml.XmlParserContext.NamespaceManager
+  - System.Xml.XmlParserContext.NameTable
+  - System.Xml.XmlParserContext.PublicId
+  - System.Xml.XmlParserContext.SystemId
+  - System.Xml.XmlParserContext.XmlLang
+  - System.Xml.XmlParserContext.XmlSpace
+  href: System.Xml.XmlParserContext.yml
+  name: XmlParserContext
+  fullName: System.Xml.XmlParserContext
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Xml.ReaderWriter/src/System/Xml/Core/XmlParserContext.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Xml.ReaderWriter/src/System/Xml/Core/XmlParserContext.cs
+    startLine: 10
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: Provides all the context information required by the @'System.Xml.XmlReader' to parse an XML fragment.
+  syntax:
+    content: public class XmlParserContext
+    content.vb: Public Class XmlParserContext
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Xml.XmlParserContext.#ctor(System.Xml.XmlNameTable,System.Xml.XmlNamespaceManager,System.String,System.Xml.XmlSpace)
+  id: '#ctor(System.Xml.XmlNameTable,System.Xml.XmlNamespaceManager,System.String,System.Xml.XmlSpace)'
+  parent: System.Xml.XmlParserContext
+  href: System.Xml.XmlParserContext.yml
+  name: XmlParserContext(XmlNameTable, XmlNamespaceManager, String, XmlSpace)
+  fullName: System.Xml.XmlParserContext.XmlParserContext(System.Xml.XmlNameTable, System.Xml.XmlNamespaceManager, System.String, System.Xml.XmlSpace)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/Core/XmlParserContext.cs
+    startLine: 23
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: Initializes a new instance of the XmlParserContext class with the specified @'System.Xml.XmlNameTable', @'System.Xml.XmlNamespaceManager', xml:lang, and xml:space values.
+  syntax:
+    content: public XmlParserContext(XmlNameTable nt, XmlNamespaceManager nsMgr, string xmlLang, XmlSpace xmlSpace)
+    content.vb: Public Sub New(nt As XmlNameTable, nsMgr As XmlNamespaceManager, xmlLang As String, xmlSpace As XmlSpace)
+    parameters:
+    - id: nt
+      type: System.Xml.XmlNameTable
+      description: The @'System.Xml.XmlNameTable' to use to atomize strings. If this is null, the name table used to construct the *nsMgr* is used instead. For more information about atomized strings, see @'System.Xml.XmlNameTable'.
+    - id: nsMgr
+      type: System.Xml.XmlNamespaceManager
+      description: The @'System.Xml.XmlNamespaceManager' to use for looking up namespace information, or null.
+    - id: xmlLang
+      type: System.String
+      description: The xml:lang scope.
+    - id: xmlSpace
+      type: System.Xml.XmlSpace
+      description: An @'System.Xml.XmlSpace' value indicating the xml:space scope.
+  exceptions:
+  - type: System.Xml.XmlException
+    description: '*nt* is not the same XmlNameTable used to construct *nsMgr*.'
+- uid: System.Xml.XmlParserContext.#ctor(System.Xml.XmlNameTable,System.Xml.XmlNamespaceManager,System.String,System.Xml.XmlSpace,System.Text.Encoding)
+  id: '#ctor(System.Xml.XmlNameTable,System.Xml.XmlNamespaceManager,System.String,System.Xml.XmlSpace,System.Text.Encoding)'
+  parent: System.Xml.XmlParserContext
+  href: System.Xml.XmlParserContext.yml
+  name: XmlParserContext(XmlNameTable, XmlNamespaceManager, String, XmlSpace, Encoding)
+  fullName: System.Xml.XmlParserContext.XmlParserContext(System.Xml.XmlNameTable, System.Xml.XmlNamespaceManager, System.String, System.Xml.XmlSpace, System.Text.Encoding)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/Core/XmlParserContext.cs
+    startLine: 29
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: Initializes a new instance of the XmlParserContext class with the specified @'System.Xml.XmlNameTable', @'System.Xml.XmlNamespaceManager', xml:lang, xml:space, and encoding.
+  syntax:
+    content: public XmlParserContext(XmlNameTable nt, XmlNamespaceManager nsMgr, string xmlLang, XmlSpace xmlSpace, Encoding enc)
+    content.vb: Public Sub New(nt As XmlNameTable, nsMgr As XmlNamespaceManager, xmlLang As String, xmlSpace As XmlSpace, enc As Encoding)
+    parameters:
+    - id: nt
+      type: System.Xml.XmlNameTable
+      description: The @'System.Xml.XmlNameTable' to use to atomize strings. If this is null, the name table used to construct the *nsMgr* is used instead. For more information on atomized strings, see @'System.Xml.XmlNameTable'.
+    - id: nsMgr
+      type: System.Xml.XmlNamespaceManager
+      description: The @'System.Xml.XmlNamespaceManager' to use for looking up namespace information, or null.
+    - id: xmlLang
+      type: System.String
+      description: The xml:lang scope.
+    - id: xmlSpace
+      type: System.Xml.XmlSpace
+      description: An @'System.Xml.XmlSpace' value indicating the xml:space scope.
+    - id: enc
+      type: System.Text.Encoding
+      description: An @'System.Text.Encoding' object indicating the encoding setting.
+  exceptions:
+  - type: System.Xml.XmlException
+    description: '*nt* is not the same XmlNameTable used to construct *nsMgr*.'
+- uid: System.Xml.XmlParserContext.#ctor(System.Xml.XmlNameTable,System.Xml.XmlNamespaceManager,System.String,System.String,System.String,System.String,System.String,System.String,System.Xml.XmlSpace)
+  id: '#ctor(System.Xml.XmlNameTable,System.Xml.XmlNamespaceManager,System.String,System.String,System.String,System.String,System.String,System.String,System.Xml.XmlSpace)'
+  parent: System.Xml.XmlParserContext
+  href: System.Xml.XmlParserContext.yml
+  name: XmlParserContext(XmlNameTable, XmlNamespaceManager, String, String, String, String, String, String, XmlSpace)
+  fullName: System.Xml.XmlParserContext.XmlParserContext(System.Xml.XmlNameTable, System.Xml.XmlNamespaceManager, System.String, System.String, System.String, System.String, System.String, System.String, System.Xml.XmlSpace)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/Core/XmlParserContext.cs
+    startLine: 35
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: Initializes a new instance of the XmlParserContext class with the specified @'System.Xml.XmlNameTable', @'System.Xml.XmlNamespaceManager', base URI, xml:lang, xml:space, and document type values.
+  syntax:
+    content: public XmlParserContext(XmlNameTable nt, XmlNamespaceManager nsMgr, string docTypeName, string pubId, string sysId, string internalSubset, string baseURI, string xmlLang, XmlSpace xmlSpace)
+    content.vb: Public Sub New(nt As XmlNameTable, nsMgr As XmlNamespaceManager, docTypeName As String, pubId As String, sysId As String, internalSubset As String, baseURI As String, xmlLang As String, xmlSpace As XmlSpace)
+    parameters:
+    - id: nt
+      type: System.Xml.XmlNameTable
+      description: The @'System.Xml.XmlNameTable' to use to atomize strings. If this is null, the name table used to construct the *nsMgr* is used instead. For more information about atomized strings, see @'System.Xml.XmlNameTable'.
+    - id: nsMgr
+      type: System.Xml.XmlNamespaceManager
+      description: The @'System.Xml.XmlNamespaceManager' to use for looking up namespace information, or null.
+    - id: docTypeName
+      type: System.String
+      description: The name of the document type declaration.
+    - id: pubId
+      type: System.String
+      description: The public identifier.
+    - id: sysId
+      type: System.String
+      description: The system identifier.
+    - id: internalSubset
+      type: System.String
+      description: The internal DTD subset. The DTD subset is used for entity resolution, not for document validation.
+    - id: baseURI
+      type: System.String
+      description: The base URI for the XML fragment (the location from which the fragment was loaded).
+    - id: xmlLang
+      type: System.String
+      description: The xml:lang scope.
+    - id: xmlSpace
+      type: System.Xml.XmlSpace
+      description: An @'System.Xml.XmlSpace' value indicating the xml:space scope.
+  exceptions:
+  - type: System.Xml.XmlException
+    description: '*nt* is not the same XmlNameTable used to construct *nsMgr*.'
+- uid: System.Xml.XmlParserContext.#ctor(System.Xml.XmlNameTable,System.Xml.XmlNamespaceManager,System.String,System.String,System.String,System.String,System.String,System.String,System.Xml.XmlSpace,System.Text.Encoding)
+  id: '#ctor(System.Xml.XmlNameTable,System.Xml.XmlNamespaceManager,System.String,System.String,System.String,System.String,System.String,System.String,System.Xml.XmlSpace,System.Text.Encoding)'
+  parent: System.Xml.XmlParserContext
+  href: System.Xml.XmlParserContext.yml
+  name: XmlParserContext(XmlNameTable, XmlNamespaceManager, String, String, String, String, String, String, XmlSpace, Encoding)
+  fullName: System.Xml.XmlParserContext.XmlParserContext(System.Xml.XmlNameTable, System.Xml.XmlNamespaceManager, System.String, System.String, System.String, System.String, System.String, System.String, System.Xml.XmlSpace, System.Text.Encoding)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/Core/XmlParserContext.cs
+    startLine: 43
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: Initializes a new instance of the XmlParserContext class with the specified @'System.Xml.XmlNameTable', @'System.Xml.XmlNamespaceManager', base URI, xml:lang, xml:space, encoding, and document type values.
+  syntax:
+    content: public XmlParserContext(XmlNameTable nt, XmlNamespaceManager nsMgr, string docTypeName, string pubId, string sysId, string internalSubset, string baseURI, string xmlLang, XmlSpace xmlSpace, Encoding enc)
+    content.vb: Public Sub New(nt As XmlNameTable, nsMgr As XmlNamespaceManager, docTypeName As String, pubId As String, sysId As String, internalSubset As String, baseURI As String, xmlLang As String, xmlSpace As XmlSpace, enc As Encoding)
+    parameters:
+    - id: nt
+      type: System.Xml.XmlNameTable
+      description: The @'System.Xml.XmlNameTable' to use to atomize strings. If this is null, the name table used to construct the *nsMgr* is used instead. For more information about atomized strings, see @'System.Xml.XmlNameTable'.
+    - id: nsMgr
+      type: System.Xml.XmlNamespaceManager
+      description: The @'System.Xml.XmlNamespaceManager' to use for looking up namespace information, or null.
+    - id: docTypeName
+      type: System.String
+      description: The name of the document type declaration.
+    - id: pubId
+      type: System.String
+      description: The public identifier.
+    - id: sysId
+      type: System.String
+      description: The system identifier.
+    - id: internalSubset
+      type: System.String
+      description: The internal DTD subset. The DTD is used for entity resolution, not for document validation.
+    - id: baseURI
+      type: System.String
+      description: The base URI for the XML fragment (the location from which the fragment was loaded).
+    - id: xmlLang
+      type: System.String
+      description: The xml:lang scope.
+    - id: xmlSpace
+      type: System.Xml.XmlSpace
+      description: An @'System.Xml.XmlSpace' value indicating the xml:space scope.
+    - id: enc
+      type: System.Text.Encoding
+      description: An @'System.Text.Encoding' object indicating the encoding setting.
+  exceptions:
+  - type: System.Xml.XmlException
+    description: '*nt* is not the same XmlNameTable used to construct *nsMgr*.'
+- uid: System.Xml.XmlParserContext.NameTable
+  id: NameTable
+  parent: System.Xml.XmlParserContext
+  href: System.Xml.XmlParserContext.yml
+  name: NameTable
+  fullName: System.Xml.XmlParserContext.NameTable
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/Core/XmlParserContext.cs
+    startLine: 78
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: Gets the @'System.Xml.XmlNameTable' used to atomize strings. For more information on atomized strings, see @'System.Xml.XmlNameTable'.
+  syntax:
+    content: public XmlNameTable NameTable { get; set; }
+    content.vb: Public Property NameTable As XmlNameTable
+    parameters: []
+    return:
+      type: System.Xml.XmlNameTable
+- uid: System.Xml.XmlParserContext.NamespaceManager
+  id: NamespaceManager
+  parent: System.Xml.XmlParserContext
+  href: System.Xml.XmlParserContext.yml
+  name: NamespaceManager
+  fullName: System.Xml.XmlParserContext.NamespaceManager
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/Core/XmlParserContext.cs
+    startLine: 90
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: Gets or sets the @'System.Xml.XmlNamespaceManager'.
+  syntax:
+    content: public XmlNamespaceManager NamespaceManager { get; set; }
+    content.vb: Public Property NamespaceManager As XmlNamespaceManager
+    parameters: []
+    return:
+      type: System.Xml.XmlNamespaceManager
+- uid: System.Xml.XmlParserContext.DocTypeName
+  id: DocTypeName
+  parent: System.Xml.XmlParserContext
+  href: System.Xml.XmlParserContext.yml
+  name: DocTypeName
+  fullName: System.Xml.XmlParserContext.DocTypeName
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/Core/XmlParserContext.cs
+    startLine: 102
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: Gets or sets the name of the document type declaration.
+  syntax:
+    content: public string DocTypeName { get; set; }
+    content.vb: Public Property DocTypeName As String
+    parameters: []
+    return:
+      type: System.String
+- uid: System.Xml.XmlParserContext.PublicId
+  id: PublicId
+  parent: System.Xml.XmlParserContext
+  href: System.Xml.XmlParserContext.yml
+  name: PublicId
+  fullName: System.Xml.XmlParserContext.PublicId
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/Core/XmlParserContext.cs
+    startLine: 114
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: Gets or sets the public identifier.
+  syntax:
+    content: public string PublicId { get; set; }
+    content.vb: Public Property PublicId As String
+    parameters: []
+    return:
+      type: System.String
+- uid: System.Xml.XmlParserContext.SystemId
+  id: SystemId
+  parent: System.Xml.XmlParserContext
+  href: System.Xml.XmlParserContext.yml
+  name: SystemId
+  fullName: System.Xml.XmlParserContext.SystemId
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/Core/XmlParserContext.cs
+    startLine: 126
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: Gets or sets the system identifier.
+  syntax:
+    content: public string SystemId { get; set; }
+    content.vb: Public Property SystemId As String
+    parameters: []
+    return:
+      type: System.String
+- uid: System.Xml.XmlParserContext.BaseURI
+  id: BaseURI
+  parent: System.Xml.XmlParserContext
+  href: System.Xml.XmlParserContext.yml
+  name: BaseURI
+  fullName: System.Xml.XmlParserContext.BaseURI
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/Core/XmlParserContext.cs
+    startLine: 138
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: Gets or sets the base URI.
+  syntax:
+    content: public string BaseURI { get; set; }
+    content.vb: Public Property BaseURI As String
+    parameters: []
+    return:
+      type: System.String
+- uid: System.Xml.XmlParserContext.InternalSubset
+  id: InternalSubset
+  parent: System.Xml.XmlParserContext
+  href: System.Xml.XmlParserContext.yml
+  name: InternalSubset
+  fullName: System.Xml.XmlParserContext.InternalSubset
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/Core/XmlParserContext.cs
+    startLine: 150
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: Gets or sets the internal DTD subset.
+  syntax:
+    content: public string InternalSubset { get; set; }
+    content.vb: Public Property InternalSubset As String
+    parameters: []
+    return:
+      type: System.String
+- uid: System.Xml.XmlParserContext.XmlLang
+  id: XmlLang
+  parent: System.Xml.XmlParserContext
+  href: System.Xml.XmlParserContext.yml
+  name: XmlLang
+  fullName: System.Xml.XmlParserContext.XmlLang
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/Core/XmlParserContext.cs
+    startLine: 162
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: Gets or sets the current xml:lang scope.
+  syntax:
+    content: public string XmlLang { get; set; }
+    content.vb: Public Property XmlLang As String
+    parameters: []
+    return:
+      type: System.String
+- uid: System.Xml.XmlParserContext.XmlSpace
+  id: XmlSpace
+  parent: System.Xml.XmlParserContext
+  href: System.Xml.XmlParserContext.yml
+  name: XmlSpace
+  fullName: System.Xml.XmlParserContext.XmlSpace
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/Core/XmlParserContext.cs
+    startLine: 174
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: Gets or sets the current xml:space scope.
+  syntax:
+    content: public XmlSpace XmlSpace { get; set; }
+    content.vb: Public Property XmlSpace As XmlSpace
+    parameters: []
+    return:
+      type: System.Xml.XmlSpace
+- uid: System.Xml.XmlParserContext.Encoding
+  id: Encoding
+  parent: System.Xml.XmlParserContext
+  href: System.Xml.XmlParserContext.yml
+  name: Encoding
+  fullName: System.Xml.XmlParserContext.Encoding
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/Core/XmlParserContext.cs
+    startLine: 186
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: Gets or sets the encoding type.
+  syntax:
+    content: public Encoding Encoding { get; set; }
+    content.vb: Public Property Encoding As Encoding
+    parameters: []
+    return:
+      type: System.Text.Encoding
+references:
+- uid: System.Xml
+  isExternal: false
+  name: System.Xml
+  fullName: System.Xml
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Xml.XmlNameTable
+  parent: System.Xml
+  isExternal: false
+  href: System.Xml.XmlNameTable.yml
+  name: XmlNameTable
+  fullName: System.Xml.XmlNameTable
+  type: Class
+- uid: System.Xml.XmlNamespaceManager
+  isExternal: false
+  href: System.Xml.XmlNamespaceManager.yml
+  name: XmlNamespaceManager
+  fullName: System.Xml.XmlNamespaceManager
+  type: Class
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Xml.XmlSpace
+  parent: System.Xml
+  isExternal: false
+  href: System.Xml.XmlSpace.yml
+  name: XmlSpace
+  fullName: System.Xml.XmlSpace
+  type: Enum
+- uid: System.Text.Encoding
+  parent: System.Text
+  isExternal: true
+  name: Encoding
+  fullName: System.Text.Encoding
+- uid: System.Text
+  isExternal: false
+  name: System.Text
+  fullName: System.Text

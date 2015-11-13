@@ -1,0 +1,537 @@
+items:
+- uid: System.IO.IsolatedStorage.IsolatedStorageGroup
+  id: IsolatedStorageGroup
+  parent: System.IO.IsolatedStorage
+  children:
+  - System.IO.IsolatedStorage.IsolatedStorageGroup.Enabled
+  - System.IO.IsolatedStorage.IsolatedStorageGroup.GetGroups
+  - System.IO.IsolatedStorage.IsolatedStorageGroup.Group
+  - System.IO.IsolatedStorage.IsolatedStorageGroup.m_Group
+  - System.IO.IsolatedStorage.IsolatedStorageGroup.m_Quota
+  - System.IO.IsolatedStorage.IsolatedStorageGroup.m_UsedSize
+  - System.IO.IsolatedStorage.IsolatedStorageGroup.Quota
+  - System.IO.IsolatedStorage.IsolatedStorageGroup.Remove
+  - System.IO.IsolatedStorage.IsolatedStorageGroup.RemoveAll
+  - System.IO.IsolatedStorage.IsolatedStorageGroup.UsedSize
+  href: System.IO.IsolatedStorage.IsolatedStorageGroup.yml
+  name: IsolatedStorageGroup
+  fullName: System.IO.IsolatedStorage.IsolatedStorageGroup
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/IO/IsolatedStorage/IsolatedStorageGroup.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/IO/IsolatedStorage/IsolatedStorageGroup.cs
+    startLine: 8
+  assemblies:
+  - mscorlib
+  namespace: System.IO.IsolatedStorage
+  syntax:
+    content: public class IsolatedStorageGroup
+    content.vb: Public Class IsolatedStorageGroup
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.IO.IsolatedStorage.IsolatedStorageGroup.m_Group
+  id: m_Group
+  parent: System.IO.IsolatedStorage.IsolatedStorageGroup
+  href: System.IO.IsolatedStorage.IsolatedStorageGroup.yml
+  name: m_Group
+  fullName: System.IO.IsolatedStorage.IsolatedStorageGroup.m_Group
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/IsolatedStorage/IsolatedStorageGroup.cs
+    startLine: 9
+  assemblies:
+  - mscorlib
+  namespace: System.IO.IsolatedStorage
+  syntax:
+    content: public string m_Group
+    content.vb: Public m_Group As String
+- uid: System.IO.IsolatedStorage.IsolatedStorageGroup.m_Quota
+  id: m_Quota
+  parent: System.IO.IsolatedStorage.IsolatedStorageGroup
+  href: System.IO.IsolatedStorage.IsolatedStorageGroup.yml
+  name: m_Quota
+  fullName: System.IO.IsolatedStorage.IsolatedStorageGroup.m_Quota
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/IsolatedStorage/IsolatedStorageGroup.cs
+    startLine: 10
+  assemblies:
+  - mscorlib
+  namespace: System.IO.IsolatedStorage
+  syntax:
+    content: public long m_Quota
+    content.vb: Public m_Quota As Long
+- uid: System.IO.IsolatedStorage.IsolatedStorageGroup.m_UsedSize
+  id: m_UsedSize
+  parent: System.IO.IsolatedStorage.IsolatedStorageGroup
+  href: System.IO.IsolatedStorage.IsolatedStorageGroup.yml
+  name: m_UsedSize
+  fullName: System.IO.IsolatedStorage.IsolatedStorageGroup.m_UsedSize
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/IsolatedStorage/IsolatedStorageGroup.cs
+    startLine: 11
+  assemblies:
+  - mscorlib
+  namespace: System.IO.IsolatedStorage
+  syntax:
+    content: public long m_UsedSize
+    content.vb: Public m_UsedSize As Long
+- uid: System.IO.IsolatedStorage.IsolatedStorageGroup.Group
+  id: Group
+  parent: System.IO.IsolatedStorage.IsolatedStorageGroup
+  href: System.IO.IsolatedStorage.IsolatedStorageGroup.yml
+  name: Group
+  fullName: System.IO.IsolatedStorage.IsolatedStorageGroup.Group
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/IsolatedStorage/IsolatedStorageGroup.cs
+    startLine: 26
+  assemblies:
+  - mscorlib
+  namespace: System.IO.IsolatedStorage
+  syntax:
+    content: public string Group { get; }
+    content.vb: Public ReadOnly Property Group As String
+    parameters: []
+    return:
+      type: System.String
+      description: 
+- uid: System.IO.IsolatedStorage.IsolatedStorageGroup.Quota
+  id: Quota
+  parent: System.IO.IsolatedStorage.IsolatedStorageGroup
+  href: System.IO.IsolatedStorage.IsolatedStorageGroup.yml
+  name: Quota
+  fullName: System.IO.IsolatedStorage.IsolatedStorageGroup.Quota
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/IsolatedStorage/IsolatedStorageGroup.cs
+    startLine: 32
+  assemblies:
+  - mscorlib
+  namespace: System.IO.IsolatedStorage
+  syntax:
+    content: public long Quota { get; }
+    content.vb: Public ReadOnly Property Quota As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: 
+- uid: System.IO.IsolatedStorage.IsolatedStorageGroup.UsedSize
+  id: UsedSize
+  parent: System.IO.IsolatedStorage.IsolatedStorageGroup
+  href: System.IO.IsolatedStorage.IsolatedStorageGroup.yml
+  name: UsedSize
+  fullName: System.IO.IsolatedStorage.IsolatedStorageGroup.UsedSize
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/IsolatedStorage/IsolatedStorageGroup.cs
+    startLine: 38
+  assemblies:
+  - mscorlib
+  namespace: System.IO.IsolatedStorage
+  syntax:
+    content: public long UsedSize { get; }
+    content.vb: Public ReadOnly Property UsedSize As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: 
+- uid: System.IO.IsolatedStorage.IsolatedStorageGroup.Enabled
+  id: Enabled
+  parent: System.IO.IsolatedStorage.IsolatedStorageGroup
+  href: System.IO.IsolatedStorage.IsolatedStorageGroup.yml
+  name: Enabled
+  fullName: System.IO.IsolatedStorage.IsolatedStorageGroup.Enabled
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/IsolatedStorage/IsolatedStorageGroup.cs
+    startLine: 44
+  assemblies:
+  - mscorlib
+  namespace: System.IO.IsolatedStorage
+  syntax:
+    content: public static bool Enabled { get; set; }
+    content.vb: Public Shared Property Enabled As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: 
+- uid: System.IO.IsolatedStorage.IsolatedStorageGroup.Remove
+  id: Remove
+  parent: System.IO.IsolatedStorage.IsolatedStorageGroup
+  href: System.IO.IsolatedStorage.IsolatedStorageGroup.yml
+  name: Remove()
+  fullName: System.IO.IsolatedStorage.IsolatedStorageGroup.Remove()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/IsolatedStorage/IsolatedStorageGroup.cs
+    startLine: 74
+  assemblies:
+  - mscorlib
+  namespace: System.IO.IsolatedStorage
+  syntax:
+    content: public void Remove()
+    content.vb: Public Sub Remove
+- uid: System.IO.IsolatedStorage.IsolatedStorageGroup.GetGroups
+  id: GetGroups
+  parent: System.IO.IsolatedStorage.IsolatedStorageGroup
+  href: System.IO.IsolatedStorage.IsolatedStorageGroup.yml
+  name: GetGroups()
+  fullName: System.IO.IsolatedStorage.IsolatedStorageGroup.GetGroups()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/IsolatedStorage/IsolatedStorageGroup.cs
+    startLine: 122
+  assemblies:
+  - mscorlib
+  namespace: System.IO.IsolatedStorage
+  syntax:
+    content: public static IEnumerable<IsolatedStorageGroup> GetGroups()
+    content.vb: Public Shared Function GetGroups As IEnumerable(Of IsolatedStorageGroup)
+    return:
+      type: System.Collections.Generic.IEnumerable{System.IO.IsolatedStorage.IsolatedStorageGroup}
+      description: 
+- uid: System.IO.IsolatedStorage.IsolatedStorageGroup.RemoveAll
+  id: RemoveAll
+  parent: System.IO.IsolatedStorage.IsolatedStorageGroup
+  href: System.IO.IsolatedStorage.IsolatedStorageGroup.yml
+  name: RemoveAll()
+  fullName: System.IO.IsolatedStorage.IsolatedStorageGroup.RemoveAll()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/IsolatedStorage/IsolatedStorageGroup.cs
+    startLine: 185
+  assemblies:
+  - mscorlib
+  namespace: System.IO.IsolatedStorage
+  syntax:
+    content: public static void RemoveAll()
+    content.vb: Public Shared Sub RemoveAll
+references:
+- uid: System.IO.IsolatedStorage
+  isExternal: false
+  name: System.IO.IsolatedStorage
+  fullName: System.IO.IsolatedStorage
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  fullName: System.Int64
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Collections.Generic.IEnumerable{System.IO.IsolatedStorage.IsolatedStorageGroup}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: System.Collections.Generic.IEnumerable`1.yml
+  name: IEnumerable<IsolatedStorageGroup>
+  name.vb: IEnumerable(Of IsolatedStorageGroup)
+  fullName: System.Collections.Generic.IEnumerable<System.IO.IsolatedStorage.IsolatedStorageGroup>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.IO.IsolatedStorage.IsolatedStorageGroup)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    href: System.Collections.Generic.IEnumerable`1.yml
+  - name: <
+    fullName: <
+  - uid: System.IO.IsolatedStorage.IsolatedStorageGroup
+    name: IsolatedStorageGroup
+    fullName: System.IO.IsolatedStorage.IsolatedStorageGroup
+    href: System.IO.IsolatedStorage.IsolatedStorageGroup.yml
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    href: System.Collections.Generic.IEnumerable`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.IO.IsolatedStorage.IsolatedStorageGroup
+    name: IsolatedStorageGroup
+    fullName: System.IO.IsolatedStorage.IsolatedStorageGroup
+    href: System.IO.IsolatedStorage.IsolatedStorageGroup.yml
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic

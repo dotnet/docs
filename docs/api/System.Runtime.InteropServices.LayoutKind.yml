@@ -1,0 +1,83 @@
+items:
+- uid: System.Runtime.InteropServices.LayoutKind
+  id: LayoutKind
+  parent: System.Runtime.InteropServices
+  children:
+  - System.Runtime.InteropServices.LayoutKind.Auto
+  - System.Runtime.InteropServices.LayoutKind.Explicit
+  - System.Runtime.InteropServices.LayoutKind.Sequential
+  href: System.Runtime.InteropServices.LayoutKind.yml
+  name: LayoutKind
+  fullName: System.Runtime.InteropServices.LayoutKind
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/InteropServices/LayoutKind.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/InteropServices/LayoutKind.cs
+    startLine: 8
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Controls the layout of an object when exported to unmanaged code.
+  syntax:
+    content: public enum LayoutKind
+    content.vb: Public Enum LayoutKind
+- uid: System.Runtime.InteropServices.LayoutKind.Sequential
+  id: Sequential
+  parent: System.Runtime.InteropServices.LayoutKind
+  href: System.Runtime.InteropServices.LayoutKind.yml
+  name: Sequential
+  fullName: System.Runtime.InteropServices.LayoutKind.Sequential
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/LayoutKind.cs
+    startLine: 12
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: The members of the object are laid out sequentially, in the order in which they appear when exported to unmanaged memory. The members are laid out according to the packing specified in @'System.Runtime.InteropServices.StructLayoutAttribute.Pack', and can be noncontiguous.
+  syntax:
+    content: Sequential = 0
+- uid: System.Runtime.InteropServices.LayoutKind.Explicit
+  id: Explicit
+  parent: System.Runtime.InteropServices.LayoutKind
+  href: System.Runtime.InteropServices.LayoutKind.yml
+  name: Explicit
+  fullName: System.Runtime.InteropServices.LayoutKind.Explicit
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/LayoutKind.cs
+    startLine: 13
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: The precise position of each member of an object in unmanaged memory is explicitly controlled, subject to the setting of the @'System.Runtime.InteropServices.StructLayoutAttribute.Pack' field. Each member must use the @'System.Runtime.InteropServices.FieldOffsetAttribute' to indicate the position of that field within the type.
+  syntax:
+    content: Explicit = 2
+- uid: System.Runtime.InteropServices.LayoutKind.Auto
+  id: Auto
+  parent: System.Runtime.InteropServices.LayoutKind
+  href: System.Runtime.InteropServices.LayoutKind.yml
+  name: Auto
+  fullName: System.Runtime.InteropServices.LayoutKind.Auto
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/LayoutKind.cs
+    startLine: 14
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: The runtime automatically chooses an appropriate layout for the members of an object in unmanaged memory. Objects defined with this enumeration member cannot be exposed outside of managed code. Attempting to do so generates an exception.
+  syntax:
+    content: Auto = 3
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace

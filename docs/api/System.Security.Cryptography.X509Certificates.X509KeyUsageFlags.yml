@@ -1,0 +1,209 @@
+items:
+- uid: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags
+  id: X509KeyUsageFlags
+  parent: System.Security.Cryptography.X509Certificates
+  children:
+  - System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.CrlSign
+  - System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.DataEncipherment
+  - System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.DecipherOnly
+  - System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.DigitalSignature
+  - System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.EncipherOnly
+  - System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.KeyAgreement
+  - System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.KeyCertSign
+  - System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.KeyEncipherment
+  - System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.None
+  - System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.NonRepudiation
+  href: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.yml
+  name: X509KeyUsageFlags
+  fullName: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509KeyUsageFlags.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509KeyUsageFlags.cs
+    startLine: 12
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Defines how the certificate key can be used. If this value is not defined, the key can be used for any purpose.
+  syntax:
+    content: public enum X509KeyUsageFlags
+    content.vb: Public Enum X509KeyUsageFlags
+- uid: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.None
+  id: None
+  parent: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags
+  href: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.yml
+  name: None
+  fullName: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.None
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509KeyUsageFlags.cs
+    startLine: 15
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: No key usage parameters.
+  syntax:
+    content: None = 0
+- uid: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.EncipherOnly
+  id: EncipherOnly
+  parent: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags
+  href: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.yml
+  name: EncipherOnly
+  fullName: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.EncipherOnly
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509KeyUsageFlags.cs
+    startLine: 16
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The key can be used for encryption only.
+  syntax:
+    content: EncipherOnly = 1
+- uid: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.CrlSign
+  id: CrlSign
+  parent: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags
+  href: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.yml
+  name: CrlSign
+  fullName: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.CrlSign
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509KeyUsageFlags.cs
+    startLine: 17
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The key can be used to sign a certificate revocation list (CRL).
+  syntax:
+    content: CrlSign = 2
+- uid: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.KeyCertSign
+  id: KeyCertSign
+  parent: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags
+  href: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.yml
+  name: KeyCertSign
+  fullName: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.KeyCertSign
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509KeyUsageFlags.cs
+    startLine: 18
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The key can be used to sign certificates.
+  syntax:
+    content: KeyCertSign = 4
+- uid: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.KeyAgreement
+  id: KeyAgreement
+  parent: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags
+  href: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.yml
+  name: KeyAgreement
+  fullName: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.KeyAgreement
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509KeyUsageFlags.cs
+    startLine: 19
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The key can be used to determine key agreement, such as a key created using the Diffie-Hellman key agreement algorithm.
+  syntax:
+    content: KeyAgreement = 8
+- uid: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.DataEncipherment
+  id: DataEncipherment
+  parent: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags
+  href: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.yml
+  name: DataEncipherment
+  fullName: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.DataEncipherment
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509KeyUsageFlags.cs
+    startLine: 20
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The key can be used for data encryption.
+  syntax:
+    content: DataEncipherment = 16
+- uid: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.KeyEncipherment
+  id: KeyEncipherment
+  parent: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags
+  href: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.yml
+  name: KeyEncipherment
+  fullName: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.KeyEncipherment
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509KeyUsageFlags.cs
+    startLine: 21
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The key can be used for key encryption.
+  syntax:
+    content: KeyEncipherment = 32
+- uid: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.NonRepudiation
+  id: NonRepudiation
+  parent: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags
+  href: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.yml
+  name: NonRepudiation
+  fullName: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.NonRepudiation
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509KeyUsageFlags.cs
+    startLine: 22
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The key can be used for authentication.
+  syntax:
+    content: NonRepudiation = 64
+- uid: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.DigitalSignature
+  id: DigitalSignature
+  parent: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags
+  href: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.yml
+  name: DigitalSignature
+  fullName: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.DigitalSignature
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509KeyUsageFlags.cs
+    startLine: 23
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The key can be used as a digital signature.
+  syntax:
+    content: DigitalSignature = 128
+- uid: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.DecipherOnly
+  id: DecipherOnly
+  parent: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags
+  href: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.yml
+  name: DecipherOnly
+  fullName: System.Security.Cryptography.X509Certificates.X509KeyUsageFlags.DecipherOnly
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509KeyUsageFlags.cs
+    startLine: 24
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The key can be used for decryption only.
+  syntax:
+    content: DecipherOnly = 32768
+references:
+- uid: System.Security.Cryptography.X509Certificates
+  isExternal: false
+  name: System.Security.Cryptography.X509Certificates
+  fullName: System.Security.Cryptography.X509Certificates
+  type: Namespace

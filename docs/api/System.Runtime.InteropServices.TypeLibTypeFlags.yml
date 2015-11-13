@@ -1,0 +1,281 @@
+items:
+- uid: System.Runtime.InteropServices.TypeLibTypeFlags
+  id: TypeLibTypeFlags
+  parent: System.Runtime.InteropServices
+  children:
+  - System.Runtime.InteropServices.TypeLibTypeFlags.FAggregatable
+  - System.Runtime.InteropServices.TypeLibTypeFlags.FAppObject
+  - System.Runtime.InteropServices.TypeLibTypeFlags.FCanCreate
+  - System.Runtime.InteropServices.TypeLibTypeFlags.FControl
+  - System.Runtime.InteropServices.TypeLibTypeFlags.FDispatchable
+  - System.Runtime.InteropServices.TypeLibTypeFlags.FDual
+  - System.Runtime.InteropServices.TypeLibTypeFlags.FHidden
+  - System.Runtime.InteropServices.TypeLibTypeFlags.FLicensed
+  - System.Runtime.InteropServices.TypeLibTypeFlags.FNonExtensible
+  - System.Runtime.InteropServices.TypeLibTypeFlags.FOleAutomation
+  - System.Runtime.InteropServices.TypeLibTypeFlags.FPreDeclId
+  - System.Runtime.InteropServices.TypeLibTypeFlags.FReplaceable
+  - System.Runtime.InteropServices.TypeLibTypeFlags.FRestricted
+  - System.Runtime.InteropServices.TypeLibTypeFlags.FReverseBind
+  href: System.Runtime.InteropServices.TypeLibTypeFlags.yml
+  name: TypeLibTypeFlags
+  fullName: System.Runtime.InteropServices.TypeLibTypeFlags
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 278
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Describes the original settings of the @'System.Runtime.InteropServices.TYPEFLAGS' in the COM type library from which the type was imported.
+  syntax:
+    content: public enum TypeLibTypeFlags
+    content.vb: Public Enum TypeLibTypeFlags
+- uid: System.Runtime.InteropServices.TypeLibTypeFlags.FAppObject
+  id: FAppObject
+  parent: System.Runtime.InteropServices.TypeLibTypeFlags
+  href: System.Runtime.InteropServices.TypeLibTypeFlags.yml
+  name: FAppObject
+  fullName: System.Runtime.InteropServices.TypeLibTypeFlags.FAppObject
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 283
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: A type description that describes an Application object.
+  syntax:
+    content: FAppObject = 1
+- uid: System.Runtime.InteropServices.TypeLibTypeFlags.FCanCreate
+  id: FCanCreate
+  parent: System.Runtime.InteropServices.TypeLibTypeFlags
+  href: System.Runtime.InteropServices.TypeLibTypeFlags.yml
+  name: FCanCreate
+  fullName: System.Runtime.InteropServices.TypeLibTypeFlags.FCanCreate
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 284
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Instances of the type can be created by ITypeInfo::CreateInstance.
+  syntax:
+    content: FCanCreate = 2
+- uid: System.Runtime.InteropServices.TypeLibTypeFlags.FLicensed
+  id: FLicensed
+  parent: System.Runtime.InteropServices.TypeLibTypeFlags
+  href: System.Runtime.InteropServices.TypeLibTypeFlags.yml
+  name: FLicensed
+  fullName: System.Runtime.InteropServices.TypeLibTypeFlags.FLicensed
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 285
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: The type is licensed.
+  syntax:
+    content: FLicensed = 4
+- uid: System.Runtime.InteropServices.TypeLibTypeFlags.FPreDeclId
+  id: FPreDeclId
+  parent: System.Runtime.InteropServices.TypeLibTypeFlags
+  href: System.Runtime.InteropServices.TypeLibTypeFlags.yml
+  name: FPreDeclId
+  fullName: System.Runtime.InteropServices.TypeLibTypeFlags.FPreDeclId
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 286
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: The type is predefined. The client application should automatically create a single instance of the object that has this attribute. The name of the variable that points to the object is the same as the class name of the object.
+  syntax:
+    content: FPreDeclId = 8
+- uid: System.Runtime.InteropServices.TypeLibTypeFlags.FHidden
+  id: FHidden
+  parent: System.Runtime.InteropServices.TypeLibTypeFlags
+  href: System.Runtime.InteropServices.TypeLibTypeFlags.yml
+  name: FHidden
+  fullName: System.Runtime.InteropServices.TypeLibTypeFlags.FHidden
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 287
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: The type should not be displayed to browsers.
+  syntax:
+    content: FHidden = 16
+- uid: System.Runtime.InteropServices.TypeLibTypeFlags.FControl
+  id: FControl
+  parent: System.Runtime.InteropServices.TypeLibTypeFlags
+  href: System.Runtime.InteropServices.TypeLibTypeFlags.yml
+  name: FControl
+  fullName: System.Runtime.InteropServices.TypeLibTypeFlags.FControl
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 288
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: The type is a control from which other types will be derived, and should not be displayed to users.
+  syntax:
+    content: FControl = 32
+- uid: System.Runtime.InteropServices.TypeLibTypeFlags.FDual
+  id: FDual
+  parent: System.Runtime.InteropServices.TypeLibTypeFlags
+  href: System.Runtime.InteropServices.TypeLibTypeFlags.yml
+  name: FDual
+  fullName: System.Runtime.InteropServices.TypeLibTypeFlags.FDual
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 289
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: The interface supplies both IDispatch and V-table binding.
+  syntax:
+    content: FDual = 64
+- uid: System.Runtime.InteropServices.TypeLibTypeFlags.FNonExtensible
+  id: FNonExtensible
+  parent: System.Runtime.InteropServices.TypeLibTypeFlags
+  href: System.Runtime.InteropServices.TypeLibTypeFlags.yml
+  name: FNonExtensible
+  fullName: System.Runtime.InteropServices.TypeLibTypeFlags.FNonExtensible
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 290
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: The interface cannot add members at run time.
+  syntax:
+    content: FNonExtensible = 128
+- uid: System.Runtime.InteropServices.TypeLibTypeFlags.FOleAutomation
+  id: FOleAutomation
+  parent: System.Runtime.InteropServices.TypeLibTypeFlags
+  href: System.Runtime.InteropServices.TypeLibTypeFlags.yml
+  name: FOleAutomation
+  fullName: System.Runtime.InteropServices.TypeLibTypeFlags.FOleAutomation
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 291
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: The types used in the interface are fully compatible with Automation, including vtable binding support.
+  syntax:
+    content: FOleAutomation = 256
+- uid: System.Runtime.InteropServices.TypeLibTypeFlags.FRestricted
+  id: FRestricted
+  parent: System.Runtime.InteropServices.TypeLibTypeFlags
+  href: System.Runtime.InteropServices.TypeLibTypeFlags.yml
+  name: FRestricted
+  fullName: System.Runtime.InteropServices.TypeLibTypeFlags.FRestricted
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 292
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: This flag is intended for system-level types or types that type browsers should not display.
+  syntax:
+    content: FRestricted = 512
+- uid: System.Runtime.InteropServices.TypeLibTypeFlags.FAggregatable
+  id: FAggregatable
+  parent: System.Runtime.InteropServices.TypeLibTypeFlags
+  href: System.Runtime.InteropServices.TypeLibTypeFlags.yml
+  name: FAggregatable
+  fullName: System.Runtime.InteropServices.TypeLibTypeFlags.FAggregatable
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 293
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: The class supports aggregation.
+  syntax:
+    content: FAggregatable = 1024
+- uid: System.Runtime.InteropServices.TypeLibTypeFlags.FReplaceable
+  id: FReplaceable
+  parent: System.Runtime.InteropServices.TypeLibTypeFlags
+  href: System.Runtime.InteropServices.TypeLibTypeFlags.yml
+  name: FReplaceable
+  fullName: System.Runtime.InteropServices.TypeLibTypeFlags.FReplaceable
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 294
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: The object supports IConnectionPointWithDefault, and has default behaviors.
+  syntax:
+    content: FReplaceable = 2048
+- uid: System.Runtime.InteropServices.TypeLibTypeFlags.FDispatchable
+  id: FDispatchable
+  parent: System.Runtime.InteropServices.TypeLibTypeFlags
+  href: System.Runtime.InteropServices.TypeLibTypeFlags.yml
+  name: FDispatchable
+  fullName: System.Runtime.InteropServices.TypeLibTypeFlags.FDispatchable
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 295
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates that the interface derives from IDispatch, either directly or indirectly.
+  syntax:
+    content: FDispatchable = 4096
+- uid: System.Runtime.InteropServices.TypeLibTypeFlags.FReverseBind
+  id: FReverseBind
+  parent: System.Runtime.InteropServices.TypeLibTypeFlags
+  href: System.Runtime.InteropServices.TypeLibTypeFlags.yml
+  name: FReverseBind
+  fullName: System.Runtime.InteropServices.TypeLibTypeFlags.FReverseBind
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 296
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates base interfaces should be checked for name resolution before checking child interfaces. This is the reverse of the default behavior.
+  syntax:
+    content: FReverseBind = 8192
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace

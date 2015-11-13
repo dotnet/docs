@@ -1,0 +1,47 @@
+items:
+- uid: System.Diagnostics.Tracing.EventTask
+  id: EventTask
+  parent: System.Diagnostics.Tracing
+  children:
+  - System.Diagnostics.Tracing.EventTask.None
+  href: System.Diagnostics.Tracing.EventTask.yml
+  name: EventTask
+  fullName: System.Diagnostics.Tracing.EventTask
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Diagnostics/Eventing/Winmeta.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Diagnostics/Eventing/Winmeta.cs
+    startLine: 56
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Defines the tasks that apply to events.
+  syntax:
+    content: public enum EventTask
+    content.vb: Public Enum EventTask
+- uid: System.Diagnostics.Tracing.EventTask.None
+  id: None
+  parent: System.Diagnostics.Tracing.EventTask
+  href: System.Diagnostics.Tracing.EventTask.yml
+  name: None
+  fullName: System.Diagnostics.Tracing.EventTask.None
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/Winmeta.cs
+    startLine: 62
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Undefined task.
+  syntax:
+    content: None = 0
+references:
+- uid: System.Diagnostics.Tracing
+  isExternal: false
+  name: System.Diagnostics.Tracing
+  fullName: System.Diagnostics.Tracing
+  type: Namespace

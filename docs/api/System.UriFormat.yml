@@ -1,0 +1,82 @@
+items:
+- uid: System.UriFormat
+  id: UriFormat
+  parent: System
+  children:
+  - System.UriFormat.SafeUnescaped
+  - System.UriFormat.Unescaped
+  - System.UriFormat.UriEscaped
+  href: System.UriFormat.yml
+  name: UriFormat
+  fullName: System.UriFormat
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Private.Uri/src/System/UriEnumTypes.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Private.Uri/src/System/UriEnumTypes.cs
+    startLine: 45
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: Controls how URI information is escaped.
+  syntax:
+    content: public enum UriFormat
+    content.vb: Public Enum UriFormat
+- uid: System.UriFormat.UriEscaped
+  id: UriEscaped
+  parent: System.UriFormat
+  href: System.UriFormat.yml
+  name: UriEscaped
+  fullName: System.UriFormat.UriEscaped
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Private.Uri/src/System/UriEnumTypes.cs
+    startLine: 47
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: Escaping is performed according to the rules in RFC 2396.
+  syntax:
+    content: UriEscaped = 1
+- uid: System.UriFormat.Unescaped
+  id: Unescaped
+  parent: System.UriFormat
+  href: System.UriFormat.yml
+  name: Unescaped
+  fullName: System.UriFormat.Unescaped
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Private.Uri/src/System/UriEnumTypes.cs
+    startLine: 48
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: No escaping is performed.
+  syntax:
+    content: Unescaped = 2
+- uid: System.UriFormat.SafeUnescaped
+  id: SafeUnescaped
+  parent: System.UriFormat
+  href: System.UriFormat.yml
+  name: SafeUnescaped
+  fullName: System.UriFormat.SafeUnescaped
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Private.Uri/src/System/UriEnumTypes.cs
+    startLine: 49
+  assemblies:
+  - System.Private.Uri.CoreCLR
+  namespace: System
+  summary: Characters that have a reserved meaning in the requested URI components remain escaped. All others are not escaped. See Remarks.
+  syntax:
+    content: SafeUnescaped = 3
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

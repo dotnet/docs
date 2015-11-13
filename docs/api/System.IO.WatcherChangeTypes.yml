@@ -1,0 +1,118 @@
+items:
+- uid: System.IO.WatcherChangeTypes
+  id: WatcherChangeTypes
+  parent: System.IO
+  children:
+  - System.IO.WatcherChangeTypes.All
+  - System.IO.WatcherChangeTypes.Changed
+  - System.IO.WatcherChangeTypes.Created
+  - System.IO.WatcherChangeTypes.Deleted
+  - System.IO.WatcherChangeTypes.Renamed
+  href: System.IO.WatcherChangeTypes.yml
+  name: WatcherChangeTypes
+  fullName: System.IO.WatcherChangeTypes
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.IO.FileSystem.Watcher/src/System/IO/WatcherChangeTypes.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.IO.FileSystem.Watcher/src/System/IO/WatcherChangeTypes.cs
+    startLine: 8
+  assemblies:
+  - System.IO.FileSystem.Watcher
+  namespace: System.IO
+  summary: Changes that might occur to a file or directory.
+  syntax:
+    content: public enum WatcherChangeTypes
+    content.vb: Public Enum WatcherChangeTypes
+- uid: System.IO.WatcherChangeTypes.Created
+  id: Created
+  parent: System.IO.WatcherChangeTypes
+  href: System.IO.WatcherChangeTypes.yml
+  name: Created
+  fullName: System.IO.WatcherChangeTypes.Created
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem.Watcher/src/System/IO/WatcherChangeTypes.cs
+    startLine: 14
+  assemblies:
+  - System.IO.FileSystem.Watcher
+  namespace: System.IO
+  summary: The creation of a file or folder.
+  syntax:
+    content: Created = 1
+- uid: System.IO.WatcherChangeTypes.Deleted
+  id: Deleted
+  parent: System.IO.WatcherChangeTypes
+  href: System.IO.WatcherChangeTypes.yml
+  name: Deleted
+  fullName: System.IO.WatcherChangeTypes.Deleted
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem.Watcher/src/System/IO/WatcherChangeTypes.cs
+    startLine: 18
+  assemblies:
+  - System.IO.FileSystem.Watcher
+  namespace: System.IO
+  summary: The deletion of a file or folder.
+  syntax:
+    content: Deleted = 2
+- uid: System.IO.WatcherChangeTypes.Changed
+  id: Changed
+  parent: System.IO.WatcherChangeTypes
+  href: System.IO.WatcherChangeTypes.yml
+  name: Changed
+  fullName: System.IO.WatcherChangeTypes.Changed
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem.Watcher/src/System/IO/WatcherChangeTypes.cs
+    startLine: 22
+  assemblies:
+  - System.IO.FileSystem.Watcher
+  namespace: System.IO
+  summary: 'The change of a file or folder. The types of changes include: changes to size, attributes, security settings, last write, and last access time.'
+  syntax:
+    content: Changed = 4
+- uid: System.IO.WatcherChangeTypes.Renamed
+  id: Renamed
+  parent: System.IO.WatcherChangeTypes
+  href: System.IO.WatcherChangeTypes.yml
+  name: Renamed
+  fullName: System.IO.WatcherChangeTypes.Renamed
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem.Watcher/src/System/IO/WatcherChangeTypes.cs
+    startLine: 26
+  assemblies:
+  - System.IO.FileSystem.Watcher
+  namespace: System.IO
+  summary: The renaming of a file or folder.
+  syntax:
+    content: Renamed = 8
+- uid: System.IO.WatcherChangeTypes.All
+  id: All
+  parent: System.IO.WatcherChangeTypes
+  href: System.IO.WatcherChangeTypes.yml
+  name: All
+  fullName: System.IO.WatcherChangeTypes.All
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.IO.FileSystem.Watcher/src/System/IO/WatcherChangeTypes.cs
+    startLine: 31
+  assemblies:
+  - System.IO.FileSystem.Watcher
+  namespace: System.IO
+  summary: The creation, deletion, change, or renaming of a file or folder.
+  syntax:
+    content: All = 15
+references:
+- uid: System.IO
+  isExternal: false
+  name: System.IO
+  fullName: System.IO

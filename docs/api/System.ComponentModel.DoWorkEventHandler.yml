@@ -1,0 +1,52 @@
+items:
+- uid: System.ComponentModel.DoWorkEventHandler
+  id: DoWorkEventHandler
+  parent: System.ComponentModel
+  children: []
+  href: System.ComponentModel.DoWorkEventHandler.yml
+  name: DoWorkEventHandler
+  fullName: System.ComponentModel.DoWorkEventHandler
+  type: Delegate
+  source:
+    remote:
+      path: src/System.ComponentModel.EventBasedAsync/src/System/ComponentModel/DoWorkEvent.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.ComponentModel.EventBasedAsync/src/System/ComponentModel/DoWorkEvent.cs
+    startLine: 5
+  assemblies:
+  - System.ComponentModel.EventBasedAsync
+  namespace: System.ComponentModel
+  summary: Represents the method that will handle the @'System.ComponentModel.BackgroundWorker.DoWork' event. This class cannot be inherited.
+  syntax:
+    content: public delegate void DoWorkEventHandler(object sender, DoWorkEventArgs e);
+    content.vb: Public Delegate Sub DoWorkEventHandler(sender As Object, e As DoWorkEventArgs)
+    parameters:
+    - id: sender
+      type: System.Object
+      description: The source of the event.
+    - id: e
+      type: System.ComponentModel.DoWorkEventArgs
+      description: A @'System.ComponentModel.DoWorkEventArgs'    that contains the event data.
+references:
+- uid: System.ComponentModel
+  isExternal: false
+  name: System.ComponentModel
+  fullName: System.ComponentModel
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.ComponentModel.DoWorkEventArgs
+  parent: System.ComponentModel
+  isExternal: false
+  href: System.ComponentModel.DoWorkEventArgs.yml
+  name: DoWorkEventArgs
+  fullName: System.ComponentModel.DoWorkEventArgs
+  type: Class
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

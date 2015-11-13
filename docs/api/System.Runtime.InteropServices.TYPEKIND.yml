@@ -1,0 +1,191 @@
+items:
+- uid: System.Runtime.InteropServices.TYPEKIND
+  id: TYPEKIND
+  parent: System.Runtime.InteropServices
+  children:
+  - System.Runtime.InteropServices.TYPEKIND.TKIND_ALIAS
+  - System.Runtime.InteropServices.TYPEKIND.TKIND_COCLASS
+  - System.Runtime.InteropServices.TYPEKIND.TKIND_DISPATCH
+  - System.Runtime.InteropServices.TYPEKIND.TKIND_ENUM
+  - System.Runtime.InteropServices.TYPEKIND.TKIND_INTERFACE
+  - System.Runtime.InteropServices.TYPEKIND.TKIND_MAX
+  - System.Runtime.InteropServices.TYPEKIND.TKIND_MODULE
+  - System.Runtime.InteropServices.TYPEKIND.TKIND_RECORD
+  - System.Runtime.InteropServices.TYPEKIND.TKIND_UNION
+  href: System.Runtime.InteropServices.TYPEKIND.yml
+  name: TYPEKIND
+  fullName: System.Runtime.InteropServices.TYPEKIND
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeInfo.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeInfo.cs
+    startLine: 16
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Use @'System.Runtime.InteropServices.ComTypes.TYPEKIND' instead.
+  syntax:
+    content: public enum TYPEKIND
+    content.vb: Public Enum TYPEKIND
+- uid: System.Runtime.InteropServices.TYPEKIND.TKIND_ENUM
+  id: TKIND_ENUM
+  parent: System.Runtime.InteropServices.TYPEKIND
+  href: System.Runtime.InteropServices.TYPEKIND.yml
+  name: TKIND_ENUM
+  fullName: System.Runtime.InteropServices.TYPEKIND.TKIND_ENUM
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeInfo.cs
+    startLine: 20
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: A set of enumerators.
+  syntax:
+    content: TKIND_ENUM = 0
+- uid: System.Runtime.InteropServices.TYPEKIND.TKIND_RECORD
+  id: TKIND_RECORD
+  parent: System.Runtime.InteropServices.TYPEKIND
+  href: System.Runtime.InteropServices.TYPEKIND.yml
+  name: TKIND_RECORD
+  fullName: System.Runtime.InteropServices.TYPEKIND.TKIND_RECORD
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeInfo.cs
+    startLine: 21
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: A structure with no methods.
+  syntax:
+    content: TKIND_RECORD = 1
+- uid: System.Runtime.InteropServices.TYPEKIND.TKIND_MODULE
+  id: TKIND_MODULE
+  parent: System.Runtime.InteropServices.TYPEKIND
+  href: System.Runtime.InteropServices.TYPEKIND.yml
+  name: TKIND_MODULE
+  fullName: System.Runtime.InteropServices.TYPEKIND.TKIND_MODULE
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeInfo.cs
+    startLine: 22
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: A module that can only have static functions and data (for example, a DLL).
+  syntax:
+    content: TKIND_MODULE = 2
+- uid: System.Runtime.InteropServices.TYPEKIND.TKIND_INTERFACE
+  id: TKIND_INTERFACE
+  parent: System.Runtime.InteropServices.TYPEKIND
+  href: System.Runtime.InteropServices.TYPEKIND.yml
+  name: TKIND_INTERFACE
+  fullName: System.Runtime.InteropServices.TYPEKIND.TKIND_INTERFACE
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeInfo.cs
+    startLine: 23
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: A type that has virtual functions, all of which are pure.
+  syntax:
+    content: TKIND_INTERFACE = 3
+- uid: System.Runtime.InteropServices.TYPEKIND.TKIND_DISPATCH
+  id: TKIND_DISPATCH
+  parent: System.Runtime.InteropServices.TYPEKIND
+  href: System.Runtime.InteropServices.TYPEKIND.yml
+  name: TKIND_DISPATCH
+  fullName: System.Runtime.InteropServices.TYPEKIND.TKIND_DISPATCH
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeInfo.cs
+    startLine: 24
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: A set of methods and properties that are accessible through IDispatch::Invoke. By default, dual interfaces return TKIND_DISPATCH.
+  syntax:
+    content: TKIND_DISPATCH = 4
+- uid: System.Runtime.InteropServices.TYPEKIND.TKIND_COCLASS
+  id: TKIND_COCLASS
+  parent: System.Runtime.InteropServices.TYPEKIND
+  href: System.Runtime.InteropServices.TYPEKIND.yml
+  name: TKIND_COCLASS
+  fullName: System.Runtime.InteropServices.TYPEKIND.TKIND_COCLASS
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeInfo.cs
+    startLine: 25
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: A set of implemented components interfaces.
+  syntax:
+    content: TKIND_COCLASS = 5
+- uid: System.Runtime.InteropServices.TYPEKIND.TKIND_ALIAS
+  id: TKIND_ALIAS
+  parent: System.Runtime.InteropServices.TYPEKIND
+  href: System.Runtime.InteropServices.TYPEKIND.yml
+  name: TKIND_ALIAS
+  fullName: System.Runtime.InteropServices.TYPEKIND.TKIND_ALIAS
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeInfo.cs
+    startLine: 26
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: A type that is an alias for another type.
+  syntax:
+    content: TKIND_ALIAS = 6
+- uid: System.Runtime.InteropServices.TYPEKIND.TKIND_UNION
+  id: TKIND_UNION
+  parent: System.Runtime.InteropServices.TYPEKIND
+  href: System.Runtime.InteropServices.TYPEKIND.yml
+  name: TKIND_UNION
+  fullName: System.Runtime.InteropServices.TYPEKIND.TKIND_UNION
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeInfo.cs
+    startLine: 27
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: A union of all members that have an offset of zero.
+  syntax:
+    content: TKIND_UNION = 7
+- uid: System.Runtime.InteropServices.TYPEKIND.TKIND_MAX
+  id: TKIND_MAX
+  parent: System.Runtime.InteropServices.TYPEKIND
+  href: System.Runtime.InteropServices.TYPEKIND.yml
+  name: TKIND_MAX
+  fullName: System.Runtime.InteropServices.TYPEKIND.TKIND_MAX
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeInfo.cs
+    startLine: 28
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: End of enumeration marker.
+  syntax:
+    content: TKIND_MAX = 8
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace

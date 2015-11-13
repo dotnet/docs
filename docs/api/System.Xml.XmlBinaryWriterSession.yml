@@ -1,0 +1,347 @@
+items:
+- uid: System.Xml.XmlBinaryWriterSession
+  id: XmlBinaryWriterSession
+  parent: System.Xml
+  children:
+  - System.Xml.XmlBinaryWriterSession.#ctor
+  - System.Xml.XmlBinaryWriterSession.Reset
+  - System.Xml.XmlBinaryWriterSession.TryAdd(System.Xml.XmlDictionaryString,System.Int32@)
+  href: System.Xml.XmlBinaryWriterSession.yml
+  name: XmlBinaryWriterSession
+  fullName: System.Xml.XmlBinaryWriterSession
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Private.DataContractSerialization/src/System/Xml/XmlBinaryWriterSession.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlBinaryWriterSession.cs
+    startLine: 16
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Enables using a dynamic dictionary to compress common strings that appear in a message and maintain state.
+  syntax:
+    content: public class XmlBinaryWriterSession
+    content.vb: Public Class XmlBinaryWriterSession
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Xml.XmlBinaryWriterSession.#ctor
+  id: '#ctor'
+  parent: System.Xml.XmlBinaryWriterSession
+  href: System.Xml.XmlBinaryWriterSession.yml
+  name: XmlBinaryWriterSession()
+  fullName: System.Xml.XmlBinaryWriterSession.XmlBinaryWriterSession()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlBinaryWriterSession.cs
+    startLine: 22
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Creates an instance of this class.
+  syntax:
+    content: public XmlBinaryWriterSession()
+    content.vb: Public Sub New
+- uid: System.Xml.XmlBinaryWriterSession.TryAdd(System.Xml.XmlDictionaryString,System.Int32@)
+  id: TryAdd(System.Xml.XmlDictionaryString,System.Int32@)
+  parent: System.Xml.XmlBinaryWriterSession
+  href: System.Xml.XmlBinaryWriterSession.yml
+  name: TryAdd(XmlDictionaryString, out Int32)
+  name.vb: TryAdd(XmlDictionaryString, ByRef Int32)
+  fullName: System.Xml.XmlBinaryWriterSession.TryAdd(System.Xml.XmlDictionaryString, out System.Int32)
+  fullName.vb: System.Xml.XmlBinaryWriterSession.TryAdd(System.Xml.XmlDictionaryString, ByRef System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlBinaryWriterSession.cs
+    startLine: 29
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Tries to add an @'System.Xml.XmlDictionaryString' to the internal collection.
+  syntax:
+    content: public virtual bool TryAdd(XmlDictionaryString value, out int key)
+    content.vb: Public Overridable Function TryAdd(value As XmlDictionaryString, ByRef key As Integer) As Boolean
+    parameters:
+    - id: value
+      type: System.Xml.XmlDictionaryString
+      description: The @'System.Xml.XmlDictionaryString' to add.
+    - id: key
+      type: System.Int32
+      description: The key of the @'System.Xml.XmlDictionaryString' that was successfully added.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*value* is null.'
+  - type: System.InvalidOperationException
+    description: An entry with key = *key* already exists.
+- uid: System.Xml.XmlBinaryWriterSession.Reset
+  id: Reset
+  parent: System.Xml.XmlBinaryWriterSession
+  href: System.Xml.XmlBinaryWriterSession.yml
+  name: Reset()
+  fullName: System.Xml.XmlBinaryWriterSession.Reset()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlBinaryWriterSession.cs
+    startLine: 70
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Clears out the internal collections.
+  syntax:
+    content: public void Reset()
+    content.vb: Public Sub Reset
+references:
+- uid: System.Xml
+  isExternal: false
+  name: System.Xml
+  fullName: System.Xml
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Xml.XmlDictionaryString
+  parent: System.Xml
+  isExternal: false
+  href: System.Xml.XmlDictionaryString.yml
+  name: XmlDictionaryString
+  fullName: System.Xml.XmlDictionaryString
+  type: Class
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean

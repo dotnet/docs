@@ -1,0 +1,920 @@
+items:
+- uid: System.DBNull
+  id: DBNull
+  parent: System
+  children:
+  - System.DBNull.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - System.DBNull.GetTypeCode
+  - System.DBNull.System#IConvertible#ToBoolean(System.IFormatProvider)
+  - System.DBNull.System#IConvertible#ToByte(System.IFormatProvider)
+  - System.DBNull.System#IConvertible#ToChar(System.IFormatProvider)
+  - System.DBNull.System#IConvertible#ToDateTime(System.IFormatProvider)
+  - System.DBNull.System#IConvertible#ToDecimal(System.IFormatProvider)
+  - System.DBNull.System#IConvertible#ToDouble(System.IFormatProvider)
+  - System.DBNull.System#IConvertible#ToInt16(System.IFormatProvider)
+  - System.DBNull.System#IConvertible#ToInt32(System.IFormatProvider)
+  - System.DBNull.System#IConvertible#ToInt64(System.IFormatProvider)
+  - System.DBNull.System#IConvertible#ToSByte(System.IFormatProvider)
+  - System.DBNull.System#IConvertible#ToSingle(System.IFormatProvider)
+  - System.DBNull.System#IConvertible#ToType(System.Type,System.IFormatProvider)
+  - System.DBNull.System#IConvertible#ToUInt16(System.IFormatProvider)
+  - System.DBNull.System#IConvertible#ToUInt32(System.IFormatProvider)
+  - System.DBNull.System#IConvertible#ToUInt64(System.IFormatProvider)
+  - System.DBNull.ToString
+  - System.DBNull.ToString(System.IFormatProvider)
+  - System.DBNull.Value
+  href: System.DBNull.yml
+  name: DBNull
+  fullName: System.DBNull
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/DBNull.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/DBNull.cs
+    startLine: 13
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Represents a nonexistent value. This class cannot be inherited.
+  syntax:
+    content: 'public sealed class DBNull : ISerializable, IConvertible'
+    content.vb: Public NotInheritable Class DBNull Implements ISerializable, IConvertible
+  inheritance:
+  - System.Object
+  implements:
+  - System.Runtime.Serialization.ISerializable
+  - System.IConvertible
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.DBNull.Value
+  id: Value
+  parent: System.DBNull
+  href: System.DBNull.yml
+  name: Value
+  fullName: System.DBNull.Value
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DBNull.cs
+    startLine: 25
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Represents the sole instance of the @'System.DBNull' class.
+  syntax:
+    content: public static readonly DBNull Value
+    content.vb: Public Shared ReadOnly Value As DBNull
+- uid: System.DBNull.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  id: GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: System.DBNull
+  href: System.DBNull.yml
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  fullName: System.DBNull.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DBNull.cs
+    startLine: 27
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Implements the @'System.Runtime.Serialization.ISerializable' interface and returns the data needed to serialize the @'System.DBNull' object.
+  syntax:
+    content: public void GetObjectData(SerializationInfo info, StreamingContext context)
+    content.vb: Public Sub GetObjectData(info As SerializationInfo, context As StreamingContext)
+    parameters:
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+      description: A @'System.Runtime.Serialization.SerializationInfo' object containing information required to serialize the @'System.DBNull' object.
+    - id: context
+      type: System.Runtime.Serialization.StreamingContext
+      description: A @'System.Runtime.Serialization.StreamingContext' object containing the source and destination of the serialized stream associated with the @'System.DBNull' object.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*info* is null.'
+- uid: System.DBNull.ToString
+  id: ToString
+  parent: System.DBNull
+  href: System.DBNull.yml
+  name: ToString()
+  fullName: System.DBNull.ToString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DBNull.cs
+    startLine: 32
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns an empty string (@'System.String.Empty').
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+  overridden: System.Object.ToString
+- uid: System.DBNull.ToString(System.IFormatProvider)
+  id: ToString(System.IFormatProvider)
+  parent: System.DBNull
+  href: System.DBNull.yml
+  name: ToString(IFormatProvider)
+  fullName: System.DBNull.ToString(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DBNull.cs
+    startLine: 36
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns an empty string using the specified @'System.IFormatProvider'.
+  syntax:
+    content: public string ToString(IFormatProvider provider)
+    content.vb: Public Function ToString(provider As IFormatProvider) As String
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: The @'System.IFormatProvider' to be used to format the return value.-or- null to obtain the format information from the current locale setting of the operating system.
+    return:
+      type: System.String
+- uid: System.DBNull.GetTypeCode
+  id: GetTypeCode
+  parent: System.DBNull
+  href: System.DBNull.yml
+  name: GetTypeCode()
+  fullName: System.DBNull.GetTypeCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DBNull.cs
+    startLine: 40
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the @'System.TypeCode' value for @'System.DBNull'.
+  syntax:
+    content: public TypeCode GetTypeCode()
+    content.vb: Public Function GetTypeCode As TypeCode
+    return:
+      type: System.TypeCode
+- uid: System.DBNull.System#IConvertible#ToBoolean(System.IFormatProvider)
+  id: System#IConvertible#ToBoolean(System.IFormatProvider)
+  parent: System.DBNull
+  href: System.DBNull.yml
+  name: IConvertible.ToBoolean(IFormatProvider)
+  name.vb: System.IConvertible.ToBoolean(IFormatProvider)
+  fullName: System.DBNull.System.IConvertible.ToBoolean(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DBNull.cs
+    startLine: 45
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: This conversion is not supported. Attempting to make this conversion throws an @'System.InvalidCastException'.
+  syntax:
+    content: bool IConvertible.ToBoolean(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToBoolean(provider As IFormatProvider) As Boolean Implements IConvertible.ToBoolean
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: An object that implements the @'System.IFormatProvider' interface. (This parameter is not used; specify null.)
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.InvalidCastException
+    description: This conversion is not supported for the @'System.DBNull' type.
+- uid: System.DBNull.System#IConvertible#ToChar(System.IFormatProvider)
+  id: System#IConvertible#ToChar(System.IFormatProvider)
+  parent: System.DBNull
+  href: System.DBNull.yml
+  name: IConvertible.ToChar(IFormatProvider)
+  name.vb: System.IConvertible.ToChar(IFormatProvider)
+  fullName: System.DBNull.System.IConvertible.ToChar(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DBNull.cs
+    startLine: 50
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: This conversion is not supported. Attempting to make this conversion throws an @'System.InvalidCastException'.
+  syntax:
+    content: char IConvertible.ToChar(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToChar(provider As IFormatProvider) As Char Implements IConvertible.ToChar
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: An object that implements the @'System.IFormatProvider' interface. (This parameter is not used; specify null.)
+    return:
+      type: System.Char
+  exceptions:
+  - type: System.InvalidCastException
+    description: This conversion is not supported for the @'System.DBNull' type.
+- uid: System.DBNull.System#IConvertible#ToSByte(System.IFormatProvider)
+  id: System#IConvertible#ToSByte(System.IFormatProvider)
+  parent: System.DBNull
+  href: System.DBNull.yml
+  name: IConvertible.ToSByte(IFormatProvider)
+  name.vb: System.IConvertible.ToSByte(IFormatProvider)
+  fullName: System.DBNull.System.IConvertible.ToSByte(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DBNull.cs
+    startLine: 55
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: This conversion is not supported. Attempting to make this conversion throws an @'System.InvalidCastException'.
+  syntax:
+    content: sbyte IConvertible.ToSByte(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToSByte(provider As IFormatProvider) As SByte Implements IConvertible.ToSByte
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: An object that implements the @'System.IFormatProvider' interface. (This parameter is not used; specify null.)
+    return:
+      type: System.SByte
+  exceptions:
+  - type: System.InvalidCastException
+    description: This conversion is not supported for the @'System.DBNull' type.
+- uid: System.DBNull.System#IConvertible#ToByte(System.IFormatProvider)
+  id: System#IConvertible#ToByte(System.IFormatProvider)
+  parent: System.DBNull
+  href: System.DBNull.yml
+  name: IConvertible.ToByte(IFormatProvider)
+  name.vb: System.IConvertible.ToByte(IFormatProvider)
+  fullName: System.DBNull.System.IConvertible.ToByte(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DBNull.cs
+    startLine: 60
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: This conversion is not supported. Attempting to make this conversion throws an @'System.InvalidCastException'.
+  syntax:
+    content: byte IConvertible.ToByte(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToByte(provider As IFormatProvider) As Byte Implements IConvertible.ToByte
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: An object that implements the @'System.IFormatProvider' interface. (This parameter is not used; specify null.)
+    return:
+      type: System.Byte
+  exceptions:
+  - type: System.InvalidCastException
+    description: This conversion is not supported for the @'System.DBNull' type.
+- uid: System.DBNull.System#IConvertible#ToInt16(System.IFormatProvider)
+  id: System#IConvertible#ToInt16(System.IFormatProvider)
+  parent: System.DBNull
+  href: System.DBNull.yml
+  name: IConvertible.ToInt16(IFormatProvider)
+  name.vb: System.IConvertible.ToInt16(IFormatProvider)
+  fullName: System.DBNull.System.IConvertible.ToInt16(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DBNull.cs
+    startLine: 65
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: This conversion is not supported. Attempting to make this conversion throws an @'System.InvalidCastException'.
+  syntax:
+    content: short IConvertible.ToInt16(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToInt16(provider As IFormatProvider) As Short Implements IConvertible.ToInt16
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: An object that implements the @'System.IFormatProvider' interface. (This parameter is not used; specify null.)
+    return:
+      type: System.Int16
+  exceptions:
+  - type: System.InvalidCastException
+    description: This conversion is not supported for the @'System.DBNull' type.
+- uid: System.DBNull.System#IConvertible#ToUInt16(System.IFormatProvider)
+  id: System#IConvertible#ToUInt16(System.IFormatProvider)
+  parent: System.DBNull
+  href: System.DBNull.yml
+  name: IConvertible.ToUInt16(IFormatProvider)
+  name.vb: System.IConvertible.ToUInt16(IFormatProvider)
+  fullName: System.DBNull.System.IConvertible.ToUInt16(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DBNull.cs
+    startLine: 70
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: This conversion is not supported. Attempting to make this conversion throws an @'System.InvalidCastException'.
+  syntax:
+    content: ushort IConvertible.ToUInt16(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToUInt16(provider As IFormatProvider) As UShort Implements IConvertible.ToUInt16
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: An object that implements the @'System.IFormatProvider' interface. (This parameter is not used; specify null.)
+    return:
+      type: System.UInt16
+  exceptions:
+  - type: System.InvalidCastException
+    description: This conversion is not supported for the @'System.DBNull' type.
+- uid: System.DBNull.System#IConvertible#ToInt32(System.IFormatProvider)
+  id: System#IConvertible#ToInt32(System.IFormatProvider)
+  parent: System.DBNull
+  href: System.DBNull.yml
+  name: IConvertible.ToInt32(IFormatProvider)
+  name.vb: System.IConvertible.ToInt32(IFormatProvider)
+  fullName: System.DBNull.System.IConvertible.ToInt32(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DBNull.cs
+    startLine: 75
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: This conversion is not supported. Attempting to make this conversion throws an @'System.InvalidCastException'.
+  syntax:
+    content: int IConvertible.ToInt32(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToInt32(provider As IFormatProvider) As Integer Implements IConvertible.ToInt32
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: An object that implements the @'System.IFormatProvider' interface. (This parameter is not used; specify null.)
+    return:
+      type: System.Int32
+  exceptions:
+  - type: System.InvalidCastException
+    description: This conversion is not supported for the @'System.DBNull' type.
+- uid: System.DBNull.System#IConvertible#ToUInt32(System.IFormatProvider)
+  id: System#IConvertible#ToUInt32(System.IFormatProvider)
+  parent: System.DBNull
+  href: System.DBNull.yml
+  name: IConvertible.ToUInt32(IFormatProvider)
+  name.vb: System.IConvertible.ToUInt32(IFormatProvider)
+  fullName: System.DBNull.System.IConvertible.ToUInt32(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DBNull.cs
+    startLine: 80
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: This conversion is not supported. Attempting to make this conversion throws an @'System.InvalidCastException'.
+  syntax:
+    content: uint IConvertible.ToUInt32(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToUInt32(provider As IFormatProvider) As UInteger Implements IConvertible.ToUInt32
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: An object that implements the @'System.IFormatProvider' interface. (This parameter is not used; specify null.)
+    return:
+      type: System.UInt32
+  exceptions:
+  - type: System.InvalidCastException
+    description: This conversion is not supported for the @'System.DBNull' type.
+- uid: System.DBNull.System#IConvertible#ToInt64(System.IFormatProvider)
+  id: System#IConvertible#ToInt64(System.IFormatProvider)
+  parent: System.DBNull
+  href: System.DBNull.yml
+  name: IConvertible.ToInt64(IFormatProvider)
+  name.vb: System.IConvertible.ToInt64(IFormatProvider)
+  fullName: System.DBNull.System.IConvertible.ToInt64(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DBNull.cs
+    startLine: 85
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: This conversion is not supported. Attempting to make this conversion throws an @'System.InvalidCastException'.
+  syntax:
+    content: long IConvertible.ToInt64(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToInt64(provider As IFormatProvider) As Long Implements IConvertible.ToInt64
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: An object that implements the @'System.IFormatProvider' interface. (This parameter is not used; specify null.)
+    return:
+      type: System.Int64
+  exceptions:
+  - type: System.InvalidCastException
+    description: This conversion is not supported for the @'System.DBNull' type.
+- uid: System.DBNull.System#IConvertible#ToUInt64(System.IFormatProvider)
+  id: System#IConvertible#ToUInt64(System.IFormatProvider)
+  parent: System.DBNull
+  href: System.DBNull.yml
+  name: IConvertible.ToUInt64(IFormatProvider)
+  name.vb: System.IConvertible.ToUInt64(IFormatProvider)
+  fullName: System.DBNull.System.IConvertible.ToUInt64(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DBNull.cs
+    startLine: 90
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: This conversion is not supported. Attempting to make this conversion throws an @'System.InvalidCastException'.
+  syntax:
+    content: ulong IConvertible.ToUInt64(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToUInt64(provider As IFormatProvider) As ULong Implements IConvertible.ToUInt64
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: An object that implements the @'System.IFormatProvider' interface. (This parameter is not used; specify null.)
+    return:
+      type: System.UInt64
+  exceptions:
+  - type: System.InvalidCastException
+    description: This conversion is not supported for the @'System.DBNull' type.
+- uid: System.DBNull.System#IConvertible#ToSingle(System.IFormatProvider)
+  id: System#IConvertible#ToSingle(System.IFormatProvider)
+  parent: System.DBNull
+  href: System.DBNull.yml
+  name: IConvertible.ToSingle(IFormatProvider)
+  name.vb: System.IConvertible.ToSingle(IFormatProvider)
+  fullName: System.DBNull.System.IConvertible.ToSingle(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DBNull.cs
+    startLine: 95
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: This conversion is not supported. Attempting to make this conversion throws an @'System.InvalidCastException'.
+  syntax:
+    content: float IConvertible.ToSingle(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToSingle(provider As IFormatProvider) As Single Implements IConvertible.ToSingle
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: An object that implements the @'System.IFormatProvider' interface. (This parameter is not used; specify null.)
+    return:
+      type: System.Single
+  exceptions:
+  - type: System.InvalidCastException
+    description: This conversion is not supported for the @'System.DBNull' type.
+- uid: System.DBNull.System#IConvertible#ToDouble(System.IFormatProvider)
+  id: System#IConvertible#ToDouble(System.IFormatProvider)
+  parent: System.DBNull
+  href: System.DBNull.yml
+  name: IConvertible.ToDouble(IFormatProvider)
+  name.vb: System.IConvertible.ToDouble(IFormatProvider)
+  fullName: System.DBNull.System.IConvertible.ToDouble(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DBNull.cs
+    startLine: 100
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: This conversion is not supported. Attempting to make this conversion throws an @'System.InvalidCastException'.
+  syntax:
+    content: double IConvertible.ToDouble(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToDouble(provider As IFormatProvider) As Double Implements IConvertible.ToDouble
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: An object that implements the @'System.IFormatProvider' interface. (This parameter is not used; specify null.)
+    return:
+      type: System.Double
+  exceptions:
+  - type: System.InvalidCastException
+    description: This conversion is not supported for the @'System.DBNull' type.
+- uid: System.DBNull.System#IConvertible#ToDecimal(System.IFormatProvider)
+  id: System#IConvertible#ToDecimal(System.IFormatProvider)
+  parent: System.DBNull
+  href: System.DBNull.yml
+  name: IConvertible.ToDecimal(IFormatProvider)
+  name.vb: System.IConvertible.ToDecimal(IFormatProvider)
+  fullName: System.DBNull.System.IConvertible.ToDecimal(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DBNull.cs
+    startLine: 105
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: This conversion is not supported. Attempting to make this conversion throws an @'System.InvalidCastException'.
+  syntax:
+    content: decimal IConvertible.ToDecimal(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToDecimal(provider As IFormatProvider) As Decimal Implements IConvertible.ToDecimal
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: An object that implements the @'System.IFormatProvider' interface. (This parameter is not used; specify null.)
+    return:
+      type: System.Decimal
+  exceptions:
+  - type: System.InvalidCastException
+    description: This conversion is not supported for the @'System.DBNull' type.
+- uid: System.DBNull.System#IConvertible#ToDateTime(System.IFormatProvider)
+  id: System#IConvertible#ToDateTime(System.IFormatProvider)
+  parent: System.DBNull
+  href: System.DBNull.yml
+  name: IConvertible.ToDateTime(IFormatProvider)
+  name.vb: System.IConvertible.ToDateTime(IFormatProvider)
+  fullName: System.DBNull.System.IConvertible.ToDateTime(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DBNull.cs
+    startLine: 110
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: This conversion is not supported. Attempting to make this conversion throws an @'System.InvalidCastException'.
+  syntax:
+    content: DateTime IConvertible.ToDateTime(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToDateTime(provider As IFormatProvider) As Date Implements IConvertible.ToDateTime
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: An object that implements the @'System.IFormatProvider' interface. (This parameter is not used; specify null.)
+    return:
+      type: System.DateTime
+  exceptions:
+  - type: System.InvalidCastException
+    description: This conversion is not supported for the @'System.DBNull' type.
+- uid: System.DBNull.System#IConvertible#ToType(System.Type,System.IFormatProvider)
+  id: System#IConvertible#ToType(System.Type,System.IFormatProvider)
+  parent: System.DBNull
+  href: System.DBNull.yml
+  name: IConvertible.ToType(Type, IFormatProvider)
+  name.vb: System.IConvertible.ToType(Type, IFormatProvider)
+  fullName: System.DBNull.System.IConvertible.ToType(System.Type, System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DBNull.cs
+    startLine: 115
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the current @'System.DBNull' object to the specified type.
+  syntax:
+    content: object IConvertible.ToType(Type type, IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToType(type As Type, provider As IFormatProvider) As Object Implements IConvertible.ToType
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type to convert the current @'System.DBNull' object to.
+    - id: provider
+      type: System.IFormatProvider
+      description: An object that implements the @'System.IFormatProvider' interface and is used to augment the conversion. If null is specified, format information is obtained from the current culture.
+    return:
+      type: System.Object
+  exceptions:
+  - type: System.InvalidCastException
+    description: This conversion is not supported for the @'System.DBNull' type.
+  - type: System.ArgumentNullException
+    description: '*type* is null.'
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Runtime.Serialization.SerializationInfo
+  parent: System.Runtime.Serialization
+  isExternal: false
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: SerializationInfo
+  fullName: System.Runtime.Serialization.SerializationInfo
+  type: Class
+- uid: System.Runtime.Serialization.StreamingContext
+  isExternal: false
+  href: System.Runtime.Serialization.StreamingContext.yml
+  name: StreamingContext
+  fullName: System.Runtime.Serialization.StreamingContext
+  type: Struct
+- uid: System.Runtime.Serialization
+  isExternal: false
+  name: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+  type: Namespace
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.IFormatProvider
+  parent: System
+  isExternal: true
+  name: IFormatProvider
+  fullName: System.IFormatProvider
+- uid: System.TypeCode
+  parent: System
+  isExternal: false
+  href: System.TypeCode.yml
+  name: TypeCode
+  fullName: System.TypeCode
+  type: Enum
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Char
+  parent: System
+  isExternal: true
+  name: Char
+  fullName: System.Char
+- uid: System.SByte
+  parent: System
+  isExternal: true
+  name: SByte
+  fullName: System.SByte
+- uid: System.Byte
+  parent: System
+  isExternal: true
+  name: Byte
+  fullName: System.Byte
+- uid: System.Int16
+  parent: System
+  isExternal: true
+  name: Int16
+  fullName: System.Int16
+- uid: System.UInt16
+  parent: System
+  isExternal: true
+  name: UInt16
+  fullName: System.UInt16
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.UInt32
+  parent: System
+  isExternal: true
+  name: UInt32
+  fullName: System.UInt32
+- uid: System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  fullName: System.Int64
+- uid: System.UInt64
+  parent: System
+  isExternal: true
+  name: UInt64
+  fullName: System.UInt64
+- uid: System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  fullName: System.Single
+- uid: System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  fullName: System.Double
+- uid: System.Decimal
+  parent: System
+  isExternal: true
+  name: Decimal
+  fullName: System.Decimal
+- uid: System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  fullName: System.DateTime
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  fullName: System.Type

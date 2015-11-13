@@ -1,0 +1,155 @@
+items:
+- uid: System.Xml.XPath.XPathResultType
+  id: XPathResultType
+  parent: System.Xml.XPath
+  children:
+  - System.Xml.XPath.XPathResultType.Any
+  - System.Xml.XPath.XPathResultType.Boolean
+  - System.Xml.XPath.XPathResultType.Error
+  - System.Xml.XPath.XPathResultType.Navigator
+  - System.Xml.XPath.XPathResultType.NodeSet
+  - System.Xml.XPath.XPathResultType.Number
+  - System.Xml.XPath.XPathResultType.String
+  href: System.Xml.XPath.XPathResultType.yml
+  name: XPathResultType
+  fullName: System.Xml.XPath.XPathResultType
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Xml.XPath/src/System/Xml/XPath/XPathExpr.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Xml.XPath/src/System/Xml/XPath/XPathExpr.cs
+    startLine: 27
+  assemblies:
+  - System.Xml.XPath
+  namespace: System.Xml.XPath
+  summary: Specifies the return type of the XPath expression.
+  syntax:
+    content: public enum XPathResultType
+    content.vb: Public Enum XPathResultType
+- uid: System.Xml.XPath.XPathResultType.Number
+  id: Number
+  parent: System.Xml.XPath.XPathResultType
+  href: System.Xml.XPath.XPathResultType.yml
+  name: Number
+  fullName: System.Xml.XPath.XPathResultType.Number
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Xml.XPath/src/System/Xml/XPath/XPathExpr.cs
+    startLine: 29
+  assemblies:
+  - System.Xml.XPath
+  namespace: System.Xml.XPath
+  summary: A numeric value.
+  syntax:
+    content: Number = 0
+- uid: System.Xml.XPath.XPathResultType.String
+  id: String
+  parent: System.Xml.XPath.XPathResultType
+  href: System.Xml.XPath.XPathResultType.yml
+  name: String
+  fullName: System.Xml.XPath.XPathResultType.String
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Xml.XPath/src/System/Xml/XPath/XPathExpr.cs
+    startLine: 30
+  assemblies:
+  - System.Xml.XPath
+  namespace: System.Xml.XPath
+  summary: A @'System.String' value.
+  syntax:
+    content: String = 1
+- uid: System.Xml.XPath.XPathResultType.Boolean
+  id: Boolean
+  parent: System.Xml.XPath.XPathResultType
+  href: System.Xml.XPath.XPathResultType.yml
+  name: Boolean
+  fullName: System.Xml.XPath.XPathResultType.Boolean
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Xml.XPath/src/System/Xml/XPath/XPathExpr.cs
+    startLine: 31
+  assemblies:
+  - System.Xml.XPath
+  namespace: System.Xml.XPath
+  summary: A @'System.Boolean'true or false value.
+  syntax:
+    content: Boolean = 2
+- uid: System.Xml.XPath.XPathResultType.NodeSet
+  id: NodeSet
+  parent: System.Xml.XPath.XPathResultType
+  href: System.Xml.XPath.XPathResultType.yml
+  name: NodeSet
+  fullName: System.Xml.XPath.XPathResultType.NodeSet
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Xml.XPath/src/System/Xml/XPath/XPathExpr.cs
+    startLine: 32
+  assemblies:
+  - System.Xml.XPath
+  namespace: System.Xml.XPath
+  summary: A node collection.
+  syntax:
+    content: NodeSet = 3
+- uid: System.Xml.XPath.XPathResultType.Navigator
+  id: Navigator
+  parent: System.Xml.XPath.XPathResultType
+  href: System.Xml.XPath.XPathResultType.yml
+  name: Navigator
+  fullName: System.Xml.XPath.XPathResultType.Navigator
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Xml.XPath/src/System/Xml/XPath/XPathExpr.cs
+    startLine: 33
+  assemblies:
+  - System.Xml.XPath
+  namespace: System.Xml.XPath
+  summary: A tree fragment.
+  syntax:
+    content: Navigator = 1
+- uid: System.Xml.XPath.XPathResultType.Any
+  id: Any
+  parent: System.Xml.XPath.XPathResultType
+  href: System.Xml.XPath.XPathResultType.yml
+  name: Any
+  fullName: System.Xml.XPath.XPathResultType.Any
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Xml.XPath/src/System/Xml/XPath/XPathExpr.cs
+    startLine: 34
+  assemblies:
+  - System.Xml.XPath
+  namespace: System.Xml.XPath
+  summary: Any of the XPath node types.
+  syntax:
+    content: Any = 5
+- uid: System.Xml.XPath.XPathResultType.Error
+  id: Error
+  parent: System.Xml.XPath.XPathResultType
+  href: System.Xml.XPath.XPathResultType.yml
+  name: Error
+  fullName: System.Xml.XPath.XPathResultType.Error
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Xml.XPath/src/System/Xml/XPath/XPathExpr.cs
+    startLine: 35
+  assemblies:
+  - System.Xml.XPath
+  namespace: System.Xml.XPath
+  summary: The expression does not evaluate to the correct XPath type.
+  syntax:
+    content: Error = 6
+references:
+- uid: System.Xml.XPath
+  isExternal: false
+  name: System.Xml.XPath
+  fullName: System.Xml.XPath
+  type: Namespace

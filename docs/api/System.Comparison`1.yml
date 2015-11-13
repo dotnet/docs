@@ -1,0 +1,50 @@
+items:
+- uid: System.Comparison`1
+  id: Comparison`1
+  parent: System
+  children: []
+  href: System.Comparison`1.yml
+  name: Comparison<T>
+  name.vb: Comparison(Of T)
+  fullName: System.Comparison<T>
+  fullName.vb: System.Comparison(Of T)
+  type: Delegate
+  source:
+    remote:
+      path: src/mscorlib/src/System/Action.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Action.cs
+    startLine: 87
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Represents the method that compares two objects of the same type.
+  syntax:
+    content: public delegate int Comparison<in T>(T x, T y);
+    content.vb: Public Delegate Function Comparison(Of In T)(x As T, y As T) As Integer
+    parameters:
+    - id: x
+      type: '{T}'
+      description: The first object to compare.
+    - id: y
+      type: '{T}'
+      description: The second object to compare.
+    typeParameters:
+    - id: T
+    return:
+      type: System.Int32
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: '{T}'
+  isExternal: false
+  name: T
+  fullName: T
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32

@@ -1,0 +1,1583 @@
+items:
+- uid: System.Attribute
+  id: Attribute
+  parent: System
+  children:
+  - System.Attribute.#ctor
+  - System.Attribute.Equals(System.Object)
+  - System.Attribute.GetCustomAttribute(System.Reflection.Assembly,System.Type)
+  - System.Attribute.GetCustomAttribute(System.Reflection.Assembly,System.Type,System.Boolean)
+  - System.Attribute.GetCustomAttribute(System.Reflection.MemberInfo,System.Type)
+  - System.Attribute.GetCustomAttribute(System.Reflection.MemberInfo,System.Type,System.Boolean)
+  - System.Attribute.GetCustomAttribute(System.Reflection.Module,System.Type)
+  - System.Attribute.GetCustomAttribute(System.Reflection.Module,System.Type,System.Boolean)
+  - System.Attribute.GetCustomAttribute(System.Reflection.ParameterInfo,System.Type)
+  - System.Attribute.GetCustomAttribute(System.Reflection.ParameterInfo,System.Type,System.Boolean)
+  - System.Attribute.GetCustomAttributes(System.Reflection.Assembly)
+  - System.Attribute.GetCustomAttributes(System.Reflection.Assembly,System.Boolean)
+  - System.Attribute.GetCustomAttributes(System.Reflection.Assembly,System.Type)
+  - System.Attribute.GetCustomAttributes(System.Reflection.Assembly,System.Type,System.Boolean)
+  - System.Attribute.GetCustomAttributes(System.Reflection.MemberInfo)
+  - System.Attribute.GetCustomAttributes(System.Reflection.MemberInfo,System.Boolean)
+  - System.Attribute.GetCustomAttributes(System.Reflection.MemberInfo,System.Type)
+  - System.Attribute.GetCustomAttributes(System.Reflection.MemberInfo,System.Type,System.Boolean)
+  - System.Attribute.GetCustomAttributes(System.Reflection.Module)
+  - System.Attribute.GetCustomAttributes(System.Reflection.Module,System.Boolean)
+  - System.Attribute.GetCustomAttributes(System.Reflection.Module,System.Type)
+  - System.Attribute.GetCustomAttributes(System.Reflection.Module,System.Type,System.Boolean)
+  - System.Attribute.GetCustomAttributes(System.Reflection.ParameterInfo)
+  - System.Attribute.GetCustomAttributes(System.Reflection.ParameterInfo,System.Boolean)
+  - System.Attribute.GetCustomAttributes(System.Reflection.ParameterInfo,System.Type)
+  - System.Attribute.GetCustomAttributes(System.Reflection.ParameterInfo,System.Type,System.Boolean)
+  - System.Attribute.GetHashCode
+  - System.Attribute.IsDefaultAttribute
+  - System.Attribute.IsDefined(System.Reflection.Assembly,System.Type)
+  - System.Attribute.IsDefined(System.Reflection.Assembly,System.Type,System.Boolean)
+  - System.Attribute.IsDefined(System.Reflection.MemberInfo,System.Type)
+  - System.Attribute.IsDefined(System.Reflection.MemberInfo,System.Type,System.Boolean)
+  - System.Attribute.IsDefined(System.Reflection.Module,System.Type)
+  - System.Attribute.IsDefined(System.Reflection.Module,System.Type,System.Boolean)
+  - System.Attribute.IsDefined(System.Reflection.ParameterInfo,System.Type)
+  - System.Attribute.IsDefined(System.Reflection.ParameterInfo,System.Type,System.Boolean)
+  - System.Attribute.Match(System.Object)
+  - System.Attribute.TypeId
+  href: System.Attribute.yml
+  name: Attribute
+  fullName: System.Attribute
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Attribute.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Attribute.cs
+    startLine: 15
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Represents the base class for custom attributes.
+  syntax:
+    content: 'public abstract class Attribute : _Attribute'
+    content.vb: Public MustInherit Class Attribute Implements _Attribute
+  inheritance:
+  - System.Object
+  implements:
+  - System.Runtime.InteropServices._Attribute
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Attribute.GetCustomAttributes(System.Reflection.MemberInfo,System.Type)
+  id: GetCustomAttributes(System.Reflection.MemberInfo,System.Type)
+  parent: System.Attribute
+  href: System.Attribute.yml
+  name: GetCustomAttributes(MemberInfo, Type)
+  fullName: System.Attribute.GetCustomAttributes(System.Reflection.MemberInfo, System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Attribute.cs
+    startLine: 447
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Retrieves an array of the custom attributes applied to a member of a type. Parameters specify the member, and the type of the custom attribute to search for.
+  syntax:
+    content: public static Attribute[] GetCustomAttributes(MemberInfo element, Type type)
+    content.vb: Public Shared Function GetCustomAttributes(element As MemberInfo, type As Type) As Attribute()
+    parameters:
+    - id: element
+      type: System.Reflection.MemberInfo
+      description: An object derived from the @'System.Reflection.MemberInfo' class that describes a constructor, event, field, method, or property member of a class.
+    - id: type
+      type: System.Type
+      description: The type, or a base type, of the custom attribute to search for.
+    return:
+      type: System.Attribute[]
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*element* or *type* is null.'
+  - type: System.ArgumentException
+    description: '*type* is not derived from @''System.Attribute''.'
+  - type: System.NotSupportedException
+    description: '*element* is not a constructor, method, property, event, type, or field.'
+  - type: System.TypeLoadException
+    description: A custom attribute type cannot be loaded.
+- uid: System.Attribute.GetCustomAttributes(System.Reflection.MemberInfo,System.Type,System.Boolean)
+  id: GetCustomAttributes(System.Reflection.MemberInfo,System.Type,System.Boolean)
+  parent: System.Attribute
+  href: System.Attribute.yml
+  name: GetCustomAttributes(MemberInfo, Type, Boolean)
+  fullName: System.Attribute.GetCustomAttributes(System.Reflection.MemberInfo, System.Type, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Attribute.cs
+    startLine: 452
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Retrieves an array of the custom attributes applied to a member of a type. Parameters specify the member, the type of the custom attribute to search for, and whether to search ancestors of the member.
+  syntax:
+    content: public static Attribute[] GetCustomAttributes(MemberInfo element, Type type, bool inherit)
+    content.vb: Public Shared Function GetCustomAttributes(element As MemberInfo, type As Type, inherit As Boolean) As Attribute()
+    parameters:
+    - id: element
+      type: System.Reflection.MemberInfo
+      description: An object derived from the @'System.Reflection.MemberInfo' class that describes a constructor, event, field, method, or property member of a class.
+    - id: type
+      type: System.Type
+      description: The type, or a base type, of the custom attribute to search for.
+    - id: inherit
+      type: System.Boolean
+      description: If true, specifies to also search the ancestors of *element* for custom attributes.
+    return:
+      type: System.Attribute[]
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*element* or *type* is null.'
+  - type: System.ArgumentException
+    description: '*type* is not derived from @''System.Attribute''.'
+  - type: System.NotSupportedException
+    description: '*element* is not a constructor, method, property, event, type, or field.'
+  - type: System.TypeLoadException
+    description: A custom attribute type cannot be loaded.
+- uid: System.Attribute.GetCustomAttributes(System.Reflection.MemberInfo)
+  id: GetCustomAttributes(System.Reflection.MemberInfo)
+  parent: System.Attribute
+  href: System.Attribute.yml
+  name: GetCustomAttributes(MemberInfo)
+  fullName: System.Attribute.GetCustomAttributes(System.Reflection.MemberInfo)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Attribute.cs
+    startLine: 477
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Retrieves an array of the custom attributes applied to a member of a type. A parameter specifies the member.
+  syntax:
+    content: public static Attribute[] GetCustomAttributes(MemberInfo element)
+    content.vb: Public Shared Function GetCustomAttributes(element As MemberInfo) As Attribute()
+    parameters:
+    - id: element
+      type: System.Reflection.MemberInfo
+      description: An object derived from the @'System.Reflection.MemberInfo' class that describes a constructor, event, field, method, or property member of a class.
+    return:
+      type: System.Attribute[]
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*element* is null.'
+  - type: System.NotSupportedException
+    description: '*element* is not a constructor, method, property, event, type, or field.'
+  - type: System.TypeLoadException
+    description: A custom attribute type cannot be loaded.
+- uid: System.Attribute.GetCustomAttributes(System.Reflection.MemberInfo,System.Boolean)
+  id: GetCustomAttributes(System.Reflection.MemberInfo,System.Boolean)
+  parent: System.Attribute
+  href: System.Attribute.yml
+  name: GetCustomAttributes(MemberInfo, Boolean)
+  fullName: System.Attribute.GetCustomAttributes(System.Reflection.MemberInfo, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Attribute.cs
+    startLine: 482
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Retrieves an array of the custom attributes applied to a member of a type. Parameters specify the member, the type of the custom attribute to search for, and whether to search ancestors of the member.
+  syntax:
+    content: public static Attribute[] GetCustomAttributes(MemberInfo element, bool inherit)
+    content.vb: Public Shared Function GetCustomAttributes(element As MemberInfo, inherit As Boolean) As Attribute()
+    parameters:
+    - id: element
+      type: System.Reflection.MemberInfo
+      description: An object derived from the @'System.Reflection.MemberInfo' class that describes a constructor, event, field, method, or property member of a class.
+    - id: inherit
+      type: System.Boolean
+      description: If true, specifies to also search the ancestors of *element* for custom attributes.
+    return:
+      type: System.Attribute[]
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*element* is null.'
+  - type: System.NotSupportedException
+    description: '*element* is not a constructor, method, property, event, type, or field.'
+  - type: System.TypeLoadException
+    description: A custom attribute type cannot be loaded.
+- uid: System.Attribute.IsDefined(System.Reflection.MemberInfo,System.Type)
+  id: IsDefined(System.Reflection.MemberInfo,System.Type)
+  parent: System.Attribute
+  href: System.Attribute.yml
+  name: IsDefined(MemberInfo, Type)
+  fullName: System.Attribute.IsDefined(System.Reflection.MemberInfo, System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Attribute.cs
+    startLine: 501
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Determines whether any custom attributes are applied to a member of a type. Parameters specify the member, and the type of the custom attribute to search for.
+  syntax:
+    content: public static bool IsDefined(MemberInfo element, Type attributeType)
+    content.vb: Public Shared Function IsDefined(element As MemberInfo, attributeType As Type) As Boolean
+    parameters:
+    - id: element
+      type: System.Reflection.MemberInfo
+      description: An object derived from the @'System.Reflection.MemberInfo' class that describes a constructor, event, field, method, type, or property member of a class.
+    - id: attributeType
+      type: System.Type
+      description: The type, or a base type, of the custom attribute to search for.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*element* or *attributeType* is null.'
+  - type: System.ArgumentException
+    description: '*attributeType* is not derived from @''System.Attribute''.'
+  - type: System.NotSupportedException
+    description: '*element* is not a constructor, method, property, event, type, or field.'
+- uid: System.Attribute.IsDefined(System.Reflection.MemberInfo,System.Type,System.Boolean)
+  id: IsDefined(System.Reflection.MemberInfo,System.Type,System.Boolean)
+  parent: System.Attribute
+  href: System.Attribute.yml
+  name: IsDefined(MemberInfo, Type, Boolean)
+  fullName: System.Attribute.IsDefined(System.Reflection.MemberInfo, System.Type, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Attribute.cs
+    startLine: 506
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Determines whether any custom attributes are applied to a member of a type. Parameters specify the member, the type of the custom attribute to search for, and whether to search ancestors of the member.
+  syntax:
+    content: public static bool IsDefined(MemberInfo element, Type attributeType, bool inherit)
+    content.vb: Public Shared Function IsDefined(element As MemberInfo, attributeType As Type, inherit As Boolean) As Boolean
+    parameters:
+    - id: element
+      type: System.Reflection.MemberInfo
+      description: An object derived from the @'System.Reflection.MemberInfo' class that describes a constructor, event, field, method, type, or property member of a class.
+    - id: attributeType
+      type: System.Type
+      description: The type, or a base type, of the custom attribute to search for.
+    - id: inherit
+      type: System.Boolean
+      description: If true, specifies to also search the ancestors of *element* for custom attributes.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*element* or *attributeType* is null.'
+  - type: System.ArgumentException
+    description: '*attributeType* is not derived from @''System.Attribute''.'
+  - type: System.NotSupportedException
+    description: '*element* is not a constructor, method, property, event, type, or field.'
+- uid: System.Attribute.GetCustomAttribute(System.Reflection.MemberInfo,System.Type)
+  id: GetCustomAttribute(System.Reflection.MemberInfo,System.Type)
+  parent: System.Attribute
+  href: System.Attribute.yml
+  name: GetCustomAttribute(MemberInfo, Type)
+  fullName: System.Attribute.GetCustomAttribute(System.Reflection.MemberInfo, System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Attribute.cs
+    startLine: 533
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Retrieves a custom attribute applied to a member of a type. Parameters specify the member, and the type of the custom attribute to search for.
+  syntax:
+    content: public static Attribute GetCustomAttribute(MemberInfo element, Type attributeType)
+    content.vb: Public Shared Function GetCustomAttribute(element As MemberInfo, attributeType As Type) As Attribute
+    parameters:
+    - id: element
+      type: System.Reflection.MemberInfo
+      description: An object derived from the @'System.Reflection.MemberInfo' class that describes a constructor, event, field, method, or property member of a class.
+    - id: attributeType
+      type: System.Type
+      description: The type, or a base type, of the custom attribute to search for.
+    return:
+      type: System.Attribute
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*element* or *attributeType* is null.'
+  - type: System.ArgumentException
+    description: '*attributeType* is not derived from @''System.Attribute''.'
+  - type: System.NotSupportedException
+    description: '*element* is not a constructor, method, property, event, type, or field.'
+  - type: System.Reflection.AmbiguousMatchException
+    description: More than one of the requested attributes was found.
+  - type: System.TypeLoadException
+    description: A custom attribute type cannot be loaded.
+- uid: System.Attribute.GetCustomAttribute(System.Reflection.MemberInfo,System.Type,System.Boolean)
+  id: GetCustomAttribute(System.Reflection.MemberInfo,System.Type,System.Boolean)
+  parent: System.Attribute
+  href: System.Attribute.yml
+  name: GetCustomAttribute(MemberInfo, Type, Boolean)
+  fullName: System.Attribute.GetCustomAttribute(System.Reflection.MemberInfo, System.Type, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Attribute.cs
+    startLine: 538
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Retrieves a custom attribute applied to a member of a type. Parameters specify the member, the type of the custom attribute to search for, and whether to search ancestors of the member.
+  syntax:
+    content: public static Attribute GetCustomAttribute(MemberInfo element, Type attributeType, bool inherit)
+    content.vb: Public Shared Function GetCustomAttribute(element As MemberInfo, attributeType As Type, inherit As Boolean) As Attribute
+    parameters:
+    - id: element
+      type: System.Reflection.MemberInfo
+      description: An object derived from the @'System.Reflection.MemberInfo' class that describes a constructor, event, field, method, or property member of a class.
+    - id: attributeType
+      type: System.Type
+      description: The type, or a base type, of the custom attribute to search for.
+    - id: inherit
+      type: System.Boolean
+      description: If true, specifies to also search the ancestors of *element* for custom attributes.
+    return:
+      type: System.Attribute
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*element* or *attributeType* is null.'
+  - type: System.ArgumentException
+    description: '*attributeType* is not derived from @''System.Attribute''.'
+  - type: System.NotSupportedException
+    description: '*element* is not a constructor, method, property, event, type, or field.'
+  - type: System.Reflection.AmbiguousMatchException
+    description: More than one of the requested attributes was found.
+  - type: System.TypeLoadException
+    description: A custom attribute type cannot be loaded.
+- uid: System.Attribute.GetCustomAttributes(System.Reflection.ParameterInfo)
+  id: GetCustomAttributes(System.Reflection.ParameterInfo)
+  parent: System.Attribute
+  href: System.Attribute.yml
+  name: GetCustomAttributes(ParameterInfo)
+  fullName: System.Attribute.GetCustomAttributes(System.Reflection.ParameterInfo)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Attribute.cs
+    startLine: 554
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Retrieves an array of the custom attributes applied to a method parameter. A parameter specifies the method parameter.
+  syntax:
+    content: public static Attribute[] GetCustomAttributes(ParameterInfo element)
+    content.vb: Public Shared Function GetCustomAttributes(element As ParameterInfo) As Attribute()
+    parameters:
+    - id: element
+      type: System.Reflection.ParameterInfo
+      description: An object derived from the @'System.Reflection.ParameterInfo' class that describes a parameter of a member of a class.
+    return:
+      type: System.Attribute[]
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*element* is null.'
+  - type: System.TypeLoadException
+    description: A custom attribute type cannot be loaded.
+- uid: System.Attribute.GetCustomAttributes(System.Reflection.ParameterInfo,System.Type)
+  id: GetCustomAttributes(System.Reflection.ParameterInfo,System.Type)
+  parent: System.Attribute
+  href: System.Attribute.yml
+  name: GetCustomAttributes(ParameterInfo, Type)
+  fullName: System.Attribute.GetCustomAttributes(System.Reflection.ParameterInfo, System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Attribute.cs
+    startLine: 559
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Retrieves an array of the custom attributes applied to a method parameter. Parameters specify the method parameter, and the type of the custom attribute to search for.
+  syntax:
+    content: public static Attribute[] GetCustomAttributes(ParameterInfo element, Type attributeType)
+    content.vb: Public Shared Function GetCustomAttributes(element As ParameterInfo, attributeType As Type) As Attribute()
+    parameters:
+    - id: element
+      type: System.Reflection.ParameterInfo
+      description: An object derived from the @'System.Reflection.ParameterInfo' class that describes a parameter of a member of a class.
+    - id: attributeType
+      type: System.Type
+      description: The type, or a base type, of the custom attribute to search for.
+    return:
+      type: System.Attribute[]
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*element* or *attributeType* is null.'
+  - type: System.ArgumentException
+    description: '*attributeType* is not derived from @''System.Attribute''.'
+  - type: System.TypeLoadException
+    description: A custom attribute type cannot be loaded.
+- uid: System.Attribute.GetCustomAttributes(System.Reflection.ParameterInfo,System.Type,System.Boolean)
+  id: GetCustomAttributes(System.Reflection.ParameterInfo,System.Type,System.Boolean)
+  parent: System.Attribute
+  href: System.Attribute.yml
+  name: GetCustomAttributes(ParameterInfo, Type, Boolean)
+  fullName: System.Attribute.GetCustomAttributes(System.Reflection.ParameterInfo, System.Type, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Attribute.cs
+    startLine: 564
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Retrieves an array of the custom attributes applied to a method parameter. Parameters specify the method parameter, the type of the custom attribute to search for, and whether to search ancestors of the method parameter.
+  syntax:
+    content: public static Attribute[] GetCustomAttributes(ParameterInfo element, Type attributeType, bool inherit)
+    content.vb: Public Shared Function GetCustomAttributes(element As ParameterInfo, attributeType As Type, inherit As Boolean) As Attribute()
+    parameters:
+    - id: element
+      type: System.Reflection.ParameterInfo
+      description: An object derived from the @'System.Reflection.ParameterInfo' class that describes a parameter of a member of a class.
+    - id: attributeType
+      type: System.Type
+      description: The type, or a base type, of the custom attribute to search for.
+    - id: inherit
+      type: System.Boolean
+      description: If true, specifies to also search the ancestors of *element* for custom attributes.
+    return:
+      type: System.Attribute[]
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*element* or *attributeType* is null.'
+  - type: System.ArgumentException
+    description: '*attributeType* is not derived from @''System.Attribute''.'
+  - type: System.TypeLoadException
+    description: A custom attribute type cannot be loaded.
+- uid: System.Attribute.GetCustomAttributes(System.Reflection.ParameterInfo,System.Boolean)
+  id: GetCustomAttributes(System.Reflection.ParameterInfo,System.Boolean)
+  parent: System.Attribute
+  href: System.Attribute.yml
+  name: GetCustomAttributes(ParameterInfo, Boolean)
+  fullName: System.Attribute.GetCustomAttributes(System.Reflection.ParameterInfo, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Attribute.cs
+    startLine: 587
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Retrieves an array of the custom attributes applied to a method parameter. Parameters specify the method parameter, and whether to search ancestors of the method parameter.
+  syntax:
+    content: public static Attribute[] GetCustomAttributes(ParameterInfo element, bool inherit)
+    content.vb: Public Shared Function GetCustomAttributes(element As ParameterInfo, inherit As Boolean) As Attribute()
+    parameters:
+    - id: element
+      type: System.Reflection.ParameterInfo
+      description: An object derived from the @'System.Reflection.ParameterInfo' class that describes a parameter of a member of a class.
+    - id: inherit
+      type: System.Boolean
+      description: If true, specifies to also search the ancestors of *element* for custom attributes.
+    return:
+      type: System.Attribute[]
+  exceptions:
+  - type: System.ArgumentException
+    description: The @'System.Reflection.ParameterInfo.Member' property of *element* is null.
+  - type: System.ArgumentNullException
+    description: '*element* is null.'
+  - type: System.TypeLoadException
+    description: A custom attribute type cannot be loaded.
+- uid: System.Attribute.IsDefined(System.Reflection.ParameterInfo,System.Type)
+  id: IsDefined(System.Reflection.ParameterInfo,System.Type)
+  parent: System.Attribute
+  href: System.Attribute.yml
+  name: IsDefined(ParameterInfo, Type)
+  fullName: System.Attribute.IsDefined(System.Reflection.ParameterInfo, System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Attribute.cs
+    startLine: 604
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Determines whether any custom attributes are applied to a method parameter. Parameters specify the method parameter, and the type of the custom attribute to search for.
+  syntax:
+    content: public static bool IsDefined(ParameterInfo element, Type attributeType)
+    content.vb: Public Shared Function IsDefined(element As ParameterInfo, attributeType As Type) As Boolean
+    parameters:
+    - id: element
+      type: System.Reflection.ParameterInfo
+      description: An object derived from the @'System.Reflection.ParameterInfo' class that describes a parameter of a member of a class.
+    - id: attributeType
+      type: System.Type
+      description: The type, or a base type, of the custom attribute to search for.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*element* or *attributeType* is null.'
+  - type: System.ArgumentException
+    description: '*attributeType* is not derived from @''System.Attribute''.'
+- uid: System.Attribute.IsDefined(System.Reflection.ParameterInfo,System.Type,System.Boolean)
+  id: IsDefined(System.Reflection.ParameterInfo,System.Type,System.Boolean)
+  parent: System.Attribute
+  href: System.Attribute.yml
+  name: IsDefined(ParameterInfo, Type, Boolean)
+  fullName: System.Attribute.IsDefined(System.Reflection.ParameterInfo, System.Type, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Attribute.cs
+    startLine: 609
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Determines whether any custom attributes are applied to a method parameter. Parameters specify the method parameter, the type of the custom attribute to search for, and whether to search ancestors of the method parameter.
+  syntax:
+    content: public static bool IsDefined(ParameterInfo element, Type attributeType, bool inherit)
+    content.vb: Public Shared Function IsDefined(element As ParameterInfo, attributeType As Type, inherit As Boolean) As Boolean
+    parameters:
+    - id: element
+      type: System.Reflection.ParameterInfo
+      description: An object derived from the @'System.Reflection.ParameterInfo' class that describes a parameter of a member of a class.
+    - id: attributeType
+      type: System.Type
+      description: The type, or a base type, of the custom attribute to search for.
+    - id: inherit
+      type: System.Boolean
+      description: If true, specifies to also search the ancestors of *element* for custom attributes.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*element* or *attributeType* is null.'
+  - type: System.ArgumentException
+    description: '*attributeType* is not derived from @''System.Attribute''.'
+  - type: System.ExecutionEngineException
+    description: '*element* is not a method, constructor, or type.'
+- uid: System.Attribute.GetCustomAttribute(System.Reflection.ParameterInfo,System.Type)
+  id: GetCustomAttribute(System.Reflection.ParameterInfo,System.Type)
+  parent: System.Attribute
+  href: System.Attribute.yml
+  name: GetCustomAttribute(ParameterInfo, Type)
+  fullName: System.Attribute.GetCustomAttribute(System.Reflection.ParameterInfo, System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Attribute.cs
+    startLine: 641
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Retrieves a custom attribute applied to a method parameter. Parameters specify the method parameter, and the type of the custom attribute to search for.
+  syntax:
+    content: public static Attribute GetCustomAttribute(ParameterInfo element, Type attributeType)
+    content.vb: Public Shared Function GetCustomAttribute(element As ParameterInfo, attributeType As Type) As Attribute
+    parameters:
+    - id: element
+      type: System.Reflection.ParameterInfo
+      description: An object derived from the @'System.Reflection.ParameterInfo' class that describes a parameter of a member of a class.
+    - id: attributeType
+      type: System.Type
+      description: The type, or a base type, of the custom attribute to search for.
+    return:
+      type: System.Attribute
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*element* or *attributeType* is null.'
+  - type: System.ArgumentException
+    description: '*attributeType* is not derived from @''System.Attribute''.'
+  - type: System.Reflection.AmbiguousMatchException
+    description: More than one of the requested attributes was found.
+  - type: System.TypeLoadException
+    description: A custom attribute type cannot be loaded.
+- uid: System.Attribute.GetCustomAttribute(System.Reflection.ParameterInfo,System.Type,System.Boolean)
+  id: GetCustomAttribute(System.Reflection.ParameterInfo,System.Type,System.Boolean)
+  parent: System.Attribute
+  href: System.Attribute.yml
+  name: GetCustomAttribute(ParameterInfo, Type, Boolean)
+  fullName: System.Attribute.GetCustomAttribute(System.Reflection.ParameterInfo, System.Type, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Attribute.cs
+    startLine: 646
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Retrieves a custom attribute applied to a method parameter. Parameters specify the method parameter, the type of the custom attribute to search for, and whether to search ancestors of the method parameter.
+  syntax:
+    content: public static Attribute GetCustomAttribute(ParameterInfo element, Type attributeType, bool inherit)
+    content.vb: Public Shared Function GetCustomAttribute(element As ParameterInfo, attributeType As Type, inherit As Boolean) As Attribute
+    parameters:
+    - id: element
+      type: System.Reflection.ParameterInfo
+      description: An object derived from the @'System.Reflection.ParameterInfo' class that describes a parameter of a member of a class.
+    - id: attributeType
+      type: System.Type
+      description: The type, or a base type, of the custom attribute to search for.
+    - id: inherit
+      type: System.Boolean
+      description: If true, specifies to also search the ancestors of *element* for custom attributes.
+    return:
+      type: System.Attribute
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*element* or *attributeType* is null.'
+  - type: System.ArgumentException
+    description: '*attributeType* is not derived from @''System.Attribute''.'
+  - type: System.Reflection.AmbiguousMatchException
+    description: More than one of the requested attributes was found.
+  - type: System.TypeLoadException
+    description: A custom attribute type cannot be loaded.
+- uid: System.Attribute.GetCustomAttributes(System.Reflection.Module,System.Type)
+  id: GetCustomAttributes(System.Reflection.Module,System.Type)
+  parent: System.Attribute
+  href: System.Attribute.yml
+  name: GetCustomAttributes(Module, Type)
+  fullName: System.Attribute.GetCustomAttributes(System.Reflection.Module, System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Attribute.cs
+    startLine: 667
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Retrieves an array of the custom attributes applied to a module. Parameters specify the module, and the type of the custom attribute to search for.
+  syntax:
+    content: public static Attribute[] GetCustomAttributes(Module element, Type attributeType)
+    content.vb: Public Shared Function GetCustomAttributes(element As Module, attributeType As Type) As Attribute()
+    parameters:
+    - id: element
+      type: System.Reflection.Module
+      description: An object derived from the @'System.Reflection.Module' class that describes a portable executable file.
+    - id: attributeType
+      type: System.Type
+      description: The type, or a base type, of the custom attribute to search for.
+    return:
+      type: System.Attribute[]
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*element* or *attributeType* is null.'
+  - type: System.ArgumentException
+    description: '*attributeType* is not derived from @''System.Attribute''.'
+- uid: System.Attribute.GetCustomAttributes(System.Reflection.Module)
+  id: GetCustomAttributes(System.Reflection.Module)
+  parent: System.Attribute
+  href: System.Attribute.yml
+  name: GetCustomAttributes(Module)
+  fullName: System.Attribute.GetCustomAttributes(System.Reflection.Module)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Attribute.cs
+    startLine: 672
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Retrieves an array of the custom attributes applied to a module. A parameter specifies the module.
+  syntax:
+    content: public static Attribute[] GetCustomAttributes(Module element)
+    content.vb: Public Shared Function GetCustomAttributes(element As Module) As Attribute()
+    parameters:
+    - id: element
+      type: System.Reflection.Module
+      description: An object derived from the @'System.Reflection.Module' class that describes a portable executable file.
+    return:
+      type: System.Attribute[]
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*element* is null.'
+- uid: System.Attribute.GetCustomAttributes(System.Reflection.Module,System.Boolean)
+  id: GetCustomAttributes(System.Reflection.Module,System.Boolean)
+  parent: System.Attribute
+  href: System.Attribute.yml
+  name: GetCustomAttributes(Module, Boolean)
+  fullName: System.Attribute.GetCustomAttributes(System.Reflection.Module, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Attribute.cs
+    startLine: 677
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Retrieves an array of the custom attributes applied to a module. Parameters specify the module, and an ignored search option.
+  syntax:
+    content: public static Attribute[] GetCustomAttributes(Module element, bool inherit)
+    content.vb: Public Shared Function GetCustomAttributes(element As Module, inherit As Boolean) As Attribute()
+    parameters:
+    - id: element
+      type: System.Reflection.Module
+      description: An object derived from the @'System.Reflection.Module' class that describes a portable executable file.
+    - id: inherit
+      type: System.Boolean
+      description: This parameter is ignored, and does not affect the operation of this method.
+    return:
+      type: System.Attribute[]
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*element* or *attributeType* is null.'
+- uid: System.Attribute.GetCustomAttributes(System.Reflection.Module,System.Type,System.Boolean)
+  id: GetCustomAttributes(System.Reflection.Module,System.Type,System.Boolean)
+  parent: System.Attribute
+  href: System.Attribute.yml
+  name: GetCustomAttributes(Module, Type, Boolean)
+  fullName: System.Attribute.GetCustomAttributes(System.Reflection.Module, System.Type, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Attribute.cs
+    startLine: 686
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Retrieves an array of the custom attributes applied to a module. Parameters specify the module, the type of the custom attribute to search for, and an ignored search option.
+  syntax:
+    content: public static Attribute[] GetCustomAttributes(Module element, Type attributeType, bool inherit)
+    content.vb: Public Shared Function GetCustomAttributes(element As Module, attributeType As Type, inherit As Boolean) As Attribute()
+    parameters:
+    - id: element
+      type: System.Reflection.Module
+      description: An object derived from the @'System.Reflection.Module' class that describes a portable executable file.
+    - id: attributeType
+      type: System.Type
+      description: The type, or a base type, of the custom attribute to search for.
+    - id: inherit
+      type: System.Boolean
+      description: This parameter is ignored, and does not affect the operation of this method.
+    return:
+      type: System.Attribute[]
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*element* or *attributeType* is null.'
+  - type: System.ArgumentException
+    description: '*attributeType* is not derived from @''System.Attribute''.'
+- uid: System.Attribute.IsDefined(System.Reflection.Module,System.Type)
+  id: IsDefined(System.Reflection.Module,System.Type)
+  parent: System.Attribute
+  href: System.Attribute.yml
+  name: IsDefined(Module, Type)
+  fullName: System.Attribute.IsDefined(System.Reflection.Module, System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Attribute.cs
+    startLine: 701
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Determines whether any custom attributes of a specified type are applied to a module. Parameters specify the module, and the type of the custom attribute to search for.
+  syntax:
+    content: public static bool IsDefined(Module element, Type attributeType)
+    content.vb: Public Shared Function IsDefined(element As Module, attributeType As Type) As Boolean
+    parameters:
+    - id: element
+      type: System.Reflection.Module
+      description: An object derived from the @'System.Reflection.Module' class that describes a portable executable file.
+    - id: attributeType
+      type: System.Type
+      description: The type, or a base type, of the custom attribute to search for.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*element* or *attributeType* is null.'
+  - type: System.ArgumentException
+    description: '*attributeType* is not derived from @''System.Attribute''.'
+- uid: System.Attribute.IsDefined(System.Reflection.Module,System.Type,System.Boolean)
+  id: IsDefined(System.Reflection.Module,System.Type,System.Boolean)
+  parent: System.Attribute
+  href: System.Attribute.yml
+  name: IsDefined(Module, Type, Boolean)
+  fullName: System.Attribute.IsDefined(System.Reflection.Module, System.Type, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Attribute.cs
+    startLine: 706
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Determines whether any custom attributes are applied to a module. Parameters specify the module, the type of the custom attribute to search for, and an ignored search option.
+  syntax:
+    content: public static bool IsDefined(Module element, Type attributeType, bool inherit)
+    content.vb: Public Shared Function IsDefined(element As Module, attributeType As Type, inherit As Boolean) As Boolean
+    parameters:
+    - id: element
+      type: System.Reflection.Module
+      description: An object derived from the @'System.Reflection.Module' class that describes a portable executable file.
+    - id: attributeType
+      type: System.Type
+      description: The type, or a base type, of the custom attribute to search for.
+    - id: inherit
+      type: System.Boolean
+      description: This parameter is ignored, and does not affect the operation of this method.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*element* or *attributeType* is null.'
+  - type: System.ArgumentException
+    description: '*attributeType* is not derived from @''System.Attribute''.'
+- uid: System.Attribute.GetCustomAttribute(System.Reflection.Module,System.Type)
+  id: GetCustomAttribute(System.Reflection.Module,System.Type)
+  parent: System.Attribute
+  href: System.Attribute.yml
+  name: GetCustomAttribute(Module, Type)
+  fullName: System.Attribute.GetCustomAttribute(System.Reflection.Module, System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Attribute.cs
+    startLine: 722
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Retrieves a custom attribute applied to a module. Parameters specify the module, and the type of the custom attribute to search for.
+  syntax:
+    content: public static Attribute GetCustomAttribute(Module element, Type attributeType)
+    content.vb: Public Shared Function GetCustomAttribute(element As Module, attributeType As Type) As Attribute
+    parameters:
+    - id: element
+      type: System.Reflection.Module
+      description: An object derived from the @'System.Reflection.Module' class that describes a portable executable file.
+    - id: attributeType
+      type: System.Type
+      description: The type, or a base type, of the custom attribute to search for.
+    return:
+      type: System.Attribute
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*element* or *attributeType* is null.'
+  - type: System.ArgumentException
+    description: '*attributeType* is not derived from @''System.Attribute''.'
+  - type: System.Reflection.AmbiguousMatchException
+    description: More than one of the requested attributes was found.
+- uid: System.Attribute.GetCustomAttribute(System.Reflection.Module,System.Type,System.Boolean)
+  id: GetCustomAttribute(System.Reflection.Module,System.Type,System.Boolean)
+  parent: System.Attribute
+  href: System.Attribute.yml
+  name: GetCustomAttribute(Module, Type, Boolean)
+  fullName: System.Attribute.GetCustomAttribute(System.Reflection.Module, System.Type, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Attribute.cs
+    startLine: 727
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Retrieves a custom attribute applied to a module. Parameters specify the module, the type of the custom attribute to search for, and an ignored search option.
+  syntax:
+    content: public static Attribute GetCustomAttribute(Module element, Type attributeType, bool inherit)
+    content.vb: Public Shared Function GetCustomAttribute(element As Module, attributeType As Type, inherit As Boolean) As Attribute
+    parameters:
+    - id: element
+      type: System.Reflection.Module
+      description: An object derived from the @'System.Reflection.Module' class that describes a portable executable file.
+    - id: attributeType
+      type: System.Type
+      description: The type, or a base type, of the custom attribute to search for.
+    - id: inherit
+      type: System.Boolean
+      description: This parameter is ignored, and does not affect the operation of this method.
+    return:
+      type: System.Attribute
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*element* or *attributeType* is null.'
+  - type: System.ArgumentException
+    description: '*attributeType* is not derived from @''System.Attribute''.'
+  - type: System.Reflection.AmbiguousMatchException
+    description: More than one of the requested attributes was found.
+- uid: System.Attribute.GetCustomAttributes(System.Reflection.Assembly,System.Type)
+  id: GetCustomAttributes(System.Reflection.Assembly,System.Type)
+  parent: System.Attribute
+  href: System.Attribute.yml
+  name: GetCustomAttributes(Assembly, Type)
+  fullName: System.Attribute.GetCustomAttributes(System.Reflection.Assembly, System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Attribute.cs
+    startLine: 745
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Retrieves an array of the custom attributes applied to an assembly. Parameters specify the assembly, and the type of the custom attribute to search for.
+  syntax:
+    content: public static Attribute[] GetCustomAttributes(Assembly element, Type attributeType)
+    content.vb: Public Shared Function GetCustomAttributes(element As Assembly, attributeType As Type) As Attribute()
+    parameters:
+    - id: element
+      type: System.Reflection.Assembly
+      description: An object derived from the @'System.Reflection.Assembly' class that describes a reusable collection of modules.
+    - id: attributeType
+      type: System.Type
+      description: The type, or a base type, of the custom attribute to search for.
+    return:
+      type: System.Attribute[]
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*element* or *attributeType* is null.'
+  - type: System.ArgumentException
+    description: '*attributeType* is not derived from @''System.Attribute''.'
+- uid: System.Attribute.GetCustomAttributes(System.Reflection.Assembly,System.Type,System.Boolean)
+  id: GetCustomAttributes(System.Reflection.Assembly,System.Type,System.Boolean)
+  parent: System.Attribute
+  href: System.Attribute.yml
+  name: GetCustomAttributes(Assembly, Type, Boolean)
+  fullName: System.Attribute.GetCustomAttributes(System.Reflection.Assembly, System.Type, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Attribute.cs
+    startLine: 750
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Retrieves an array of the custom attributes applied to an assembly. Parameters specify the assembly, the type of the custom attribute to search for, and an ignored search option.
+  syntax:
+    content: public static Attribute[] GetCustomAttributes(Assembly element, Type attributeType, bool inherit)
+    content.vb: Public Shared Function GetCustomAttributes(element As Assembly, attributeType As Type, inherit As Boolean) As Attribute()
+    parameters:
+    - id: element
+      type: System.Reflection.Assembly
+      description: An object derived from the @'System.Reflection.Assembly' class that describes a reusable collection of modules.
+    - id: attributeType
+      type: System.Type
+      description: The type, or a base type, of the custom attribute to search for.
+    - id: inherit
+      type: System.Boolean
+      description: This parameter is ignored, and does not affect the operation of this method.
+    return:
+      type: System.Attribute[]
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*element* or *attributeType* is null.'
+  - type: System.ArgumentException
+    description: '*attributeType* is not derived from @''System.Attribute''.'
+- uid: System.Attribute.GetCustomAttributes(System.Reflection.Assembly)
+  id: GetCustomAttributes(System.Reflection.Assembly)
+  parent: System.Attribute
+  href: System.Attribute.yml
+  name: GetCustomAttributes(Assembly)
+  fullName: System.Attribute.GetCustomAttributes(System.Reflection.Assembly)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Attribute.cs
+    startLine: 765
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Retrieves an array of the custom attributes applied to an assembly. A parameter specifies the assembly.
+  syntax:
+    content: public static Attribute[] GetCustomAttributes(Assembly element)
+    content.vb: Public Shared Function GetCustomAttributes(element As Assembly) As Attribute()
+    parameters:
+    - id: element
+      type: System.Reflection.Assembly
+      description: An object derived from the @'System.Reflection.Assembly' class that describes a reusable collection of modules.
+    return:
+      type: System.Attribute[]
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*element* is null.'
+- uid: System.Attribute.GetCustomAttributes(System.Reflection.Assembly,System.Boolean)
+  id: GetCustomAttributes(System.Reflection.Assembly,System.Boolean)
+  parent: System.Attribute
+  href: System.Attribute.yml
+  name: GetCustomAttributes(Assembly, Boolean)
+  fullName: System.Attribute.GetCustomAttributes(System.Reflection.Assembly, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Attribute.cs
+    startLine: 770
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Retrieves an array of the custom attributes applied to an assembly. Parameters specify the assembly, and an ignored search option.
+  syntax:
+    content: public static Attribute[] GetCustomAttributes(Assembly element, bool inherit)
+    content.vb: Public Shared Function GetCustomAttributes(element As Assembly, inherit As Boolean) As Attribute()
+    parameters:
+    - id: element
+      type: System.Reflection.Assembly
+      description: An object derived from the @'System.Reflection.Assembly' class that describes a reusable collection of modules.
+    - id: inherit
+      type: System.Boolean
+      description: This parameter is ignored, and does not affect the operation of this method.
+    return:
+      type: System.Attribute[]
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*element* or *attributeType* is null.'
+- uid: System.Attribute.IsDefined(System.Reflection.Assembly,System.Type)
+  id: IsDefined(System.Reflection.Assembly,System.Type)
+  parent: System.Attribute
+  href: System.Attribute.yml
+  name: IsDefined(Assembly, Type)
+  fullName: System.Attribute.IsDefined(System.Reflection.Assembly, System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Attribute.cs
+    startLine: 779
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Determines whether any custom attributes are applied to an assembly. Parameters specify the assembly, and the type of the custom attribute to search for.
+  syntax:
+    content: public static bool IsDefined(Assembly element, Type attributeType)
+    content.vb: Public Shared Function IsDefined(element As Assembly, attributeType As Type) As Boolean
+    parameters:
+    - id: element
+      type: System.Reflection.Assembly
+      description: An object derived from the @'System.Reflection.Assembly' class that describes a reusable collection of modules.
+    - id: attributeType
+      type: System.Type
+      description: The type, or a base type, of the custom attribute to search for.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*element* or *attributeType* is null.'
+  - type: System.ArgumentException
+    description: '*attributeType* is not derived from @''System.Attribute''.'
+- uid: System.Attribute.IsDefined(System.Reflection.Assembly,System.Type,System.Boolean)
+  id: IsDefined(System.Reflection.Assembly,System.Type,System.Boolean)
+  parent: System.Attribute
+  href: System.Attribute.yml
+  name: IsDefined(Assembly, Type, Boolean)
+  fullName: System.Attribute.IsDefined(System.Reflection.Assembly, System.Type, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Attribute.cs
+    startLine: 784
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Determines whether any custom attributes are applied to an assembly. Parameters specify the assembly, the type of the custom attribute to search for, and an ignored search option.
+  syntax:
+    content: public static bool IsDefined(Assembly element, Type attributeType, bool inherit)
+    content.vb: Public Shared Function IsDefined(element As Assembly, attributeType As Type, inherit As Boolean) As Boolean
+    parameters:
+    - id: element
+      type: System.Reflection.Assembly
+      description: An object derived from the @'System.Reflection.Assembly' class that describes a reusable collection of modules.
+    - id: attributeType
+      type: System.Type
+      description: The type, or a base type, of the custom attribute to search for.
+    - id: inherit
+      type: System.Boolean
+      description: This parameter is ignored, and does not affect the operation of this method.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*element* or *attributeType* is null.'
+  - type: System.ArgumentException
+    description: '*attributeType* is not derived from @''System.Attribute''.'
+- uid: System.Attribute.GetCustomAttribute(System.Reflection.Assembly,System.Type)
+  id: GetCustomAttribute(System.Reflection.Assembly,System.Type)
+  parent: System.Attribute
+  href: System.Attribute.yml
+  name: GetCustomAttribute(Assembly, Type)
+  fullName: System.Attribute.GetCustomAttribute(System.Reflection.Assembly, System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Attribute.cs
+    startLine: 800
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Retrieves a custom attribute applied to a specified assembly. Parameters specify the assembly and the type of the custom attribute to search for.
+  syntax:
+    content: public static Attribute GetCustomAttribute(Assembly element, Type attributeType)
+    content.vb: Public Shared Function GetCustomAttribute(element As Assembly, attributeType As Type) As Attribute
+    parameters:
+    - id: element
+      type: System.Reflection.Assembly
+      description: An object derived from the @'System.Reflection.Assembly' class that describes a reusable collection of modules.
+    - id: attributeType
+      type: System.Type
+      description: The type, or a base type, of the custom attribute to search for.
+    return:
+      type: System.Attribute
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*element* or *attributeType* is null.'
+  - type: System.ArgumentException
+    description: '*attributeType* is not derived from @''System.Attribute''.'
+  - type: System.Reflection.AmbiguousMatchException
+    description: More than one of the requested attributes was found.
+- uid: System.Attribute.GetCustomAttribute(System.Reflection.Assembly,System.Type,System.Boolean)
+  id: GetCustomAttribute(System.Reflection.Assembly,System.Type,System.Boolean)
+  parent: System.Attribute
+  href: System.Attribute.yml
+  name: GetCustomAttribute(Assembly, Type, Boolean)
+  fullName: System.Attribute.GetCustomAttribute(System.Reflection.Assembly, System.Type, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Attribute.cs
+    startLine: 805
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Retrieves a custom attribute applied to an assembly. Parameters specify the assembly, the type of the custom attribute to search for, and an ignored search option.
+  syntax:
+    content: public static Attribute GetCustomAttribute(Assembly element, Type attributeType, bool inherit)
+    content.vb: Public Shared Function GetCustomAttribute(element As Assembly, attributeType As Type, inherit As Boolean) As Attribute
+    parameters:
+    - id: element
+      type: System.Reflection.Assembly
+      description: An object derived from the @'System.Reflection.Assembly' class that describes a reusable collection of modules.
+    - id: attributeType
+      type: System.Type
+      description: The type, or a base type, of the custom attribute to search for.
+    - id: inherit
+      type: System.Boolean
+      description: This parameter is ignored, and does not affect the operation of this method.
+    return:
+      type: System.Attribute
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*element* or *attributeType* is null.'
+  - type: System.ArgumentException
+    description: '*attributeType* is not derived from @''System.Attribute''.'
+  - type: System.Reflection.AmbiguousMatchException
+    description: More than one of the requested attributes was found.
+- uid: System.Attribute.#ctor
+  id: '#ctor'
+  parent: System.Attribute
+  href: System.Attribute.yml
+  name: Attribute()
+  fullName: System.Attribute.Attribute()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Attribute.cs
+    startLine: 825
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of the @'System.Attribute' class.
+  syntax:
+    content: protected Attribute()
+    content.vb: Protected Sub New
+- uid: System.Attribute.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Attribute
+  href: System.Attribute.yml
+  name: Equals(Object)
+  fullName: System.Attribute.Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Attribute.cs
+    startLine: 829
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns a value that indicates whether this instance is equal to a specified object.
+  syntax:
+    content: public override bool Equals(object obj)
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: An @'System.Object' to compare with this instance or null.
+    return:
+      type: System.Boolean
+  overridden: System.Object.Equals(System.Object)
+- uid: System.Attribute.GetHashCode
+  id: GetHashCode
+  parent: System.Attribute
+  href: System.Attribute.yml
+  name: GetHashCode()
+  fullName: System.Attribute.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Attribute.cs
+    startLine: 908
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns the hash code for this instance.
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+  overridden: System.Object.GetHashCode
+- uid: System.Attribute.TypeId
+  id: TypeId
+  parent: System.Attribute
+  href: System.Attribute.yml
+  name: TypeId
+  fullName: System.Attribute.TypeId
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Attribute.cs
+    startLine: 940
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: When implemented in a derived class, gets a unique identifier for this @'System.Attribute'.
+  syntax:
+    content: public virtual object TypeId { get; }
+    content.vb: Public Overridable ReadOnly Property TypeId As Object
+    parameters: []
+    return:
+      type: System.Object
+- uid: System.Attribute.Match(System.Object)
+  id: Match(System.Object)
+  parent: System.Attribute
+  href: System.Attribute.yml
+  name: Match(Object)
+  fullName: System.Attribute.Match(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Attribute.cs
+    startLine: 942
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: When overridden in a derived class, returns a value that indicates whether this instance equals a specified object.
+  syntax:
+    content: public virtual bool Match(object obj)
+    content.vb: Public Overridable Function Match(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: An @'System.Object' to compare with this instance of @'System.Attribute'.
+    return:
+      type: System.Boolean
+- uid: System.Attribute.IsDefaultAttribute
+  id: IsDefaultAttribute
+  parent: System.Attribute
+  href: System.Attribute.yml
+  name: IsDefaultAttribute()
+  fullName: System.Attribute.IsDefaultAttribute()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Attribute.cs
+    startLine: 946
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: When overridden in a derived class, indicates whether the value of this instance is the default value for the derived class.
+  syntax:
+    content: public virtual bool IsDefaultAttribute()
+    content.vb: Public Overridable Function IsDefaultAttribute As Boolean
+    return:
+      type: System.Boolean
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Reflection.MemberInfo
+  parent: System.Reflection
+  isExternal: false
+  href: System.Reflection.MemberInfo.yml
+  name: MemberInfo
+  fullName: System.Reflection.MemberInfo
+  type: Class
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  fullName: System.Type
+- uid: System.Attribute[]
+  isExternal: false
+  href: System.Attribute.yml
+  name: Attribute[]
+  name.vb: Attribute()
+  fullName: System.Attribute[]
+  fullName.vb: System.Attribute()
+  spec.csharp:
+  - uid: System.Attribute
+    name: Attribute
+    fullName: System.Attribute
+    href: System.Attribute.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Attribute
+    name: Attribute
+    fullName: System.Attribute
+    href: System.Attribute.yml
+  - name: ()
+    fullName: ()
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Attribute
+  parent: System
+  isExternal: true
+  name: Attribute
+  fullName: System.Attribute
+- uid: System.Reflection.ParameterInfo
+  parent: System.Reflection
+  isExternal: false
+  href: System.Reflection.ParameterInfo.yml
+  name: ParameterInfo
+  fullName: System.Reflection.ParameterInfo
+  type: Class
+- uid: System.Reflection.Module
+  parent: System.Reflection
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: Module
+  fullName: System.Reflection.Module
+  type: Class
+- uid: System.Reflection.Assembly
+  parent: System.Reflection
+  isExternal: true
+  name: Assembly
+  fullName: System.Reflection.Assembly
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32

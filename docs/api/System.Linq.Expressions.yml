@@ -1,0 +1,536 @@
+items:
+- uid: System.Linq.Expressions
+  id: System.Linq.Expressions
+  children:
+  - System.Linq.Expressions.BinaryExpression
+  - System.Linq.Expressions.BlockExpression
+  - System.Linq.Expressions.CatchBlock
+  - System.Linq.Expressions.ConditionalExpression
+  - System.Linq.Expressions.ConstantExpression
+  - System.Linq.Expressions.DebugInfoExpression
+  - System.Linq.Expressions.DefaultExpression
+  - System.Linq.Expressions.DynamicExpression
+  - System.Linq.Expressions.DynamicExpressionVisitor
+  - System.Linq.Expressions.ElementInit
+  - System.Linq.Expressions.Expression
+  - System.Linq.Expressions.Expression`1
+  - System.Linq.Expressions.ExpressionType
+  - System.Linq.Expressions.ExpressionVisitor
+  - System.Linq.Expressions.GotoExpression
+  - System.Linq.Expressions.GotoExpressionKind
+  - System.Linq.Expressions.IArgumentProvider
+  - System.Linq.Expressions.IDynamicExpression
+  - System.Linq.Expressions.IndexExpression
+  - System.Linq.Expressions.InvocationExpression
+  - System.Linq.Expressions.LabelExpression
+  - System.Linq.Expressions.LabelTarget
+  - System.Linq.Expressions.LambdaExpression
+  - System.Linq.Expressions.ListInitExpression
+  - System.Linq.Expressions.LoopExpression
+  - System.Linq.Expressions.MemberAssignment
+  - System.Linq.Expressions.MemberBinding
+  - System.Linq.Expressions.MemberBindingType
+  - System.Linq.Expressions.MemberExpression
+  - System.Linq.Expressions.MemberInitExpression
+  - System.Linq.Expressions.MemberListBinding
+  - System.Linq.Expressions.MemberMemberBinding
+  - System.Linq.Expressions.MethodCallExpression
+  - System.Linq.Expressions.NewArrayExpression
+  - System.Linq.Expressions.NewExpression
+  - System.Linq.Expressions.ParameterExpression
+  - System.Linq.Expressions.RuntimeVariablesExpression
+  - System.Linq.Expressions.SwitchCase
+  - System.Linq.Expressions.SwitchExpression
+  - System.Linq.Expressions.SymbolDocumentInfo
+  - System.Linq.Expressions.TryExpression
+  - System.Linq.Expressions.TypeBinaryExpression
+  - System.Linq.Expressions.UnaryExpression
+  href: System.Linq.Expressions.yml
+  name: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  type: Namespace
+  source:
+    remote:
+      path: src/System.Linq.Expressions/src/System/Linq/Expressions/Compiler/VariableBinder.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Linq.Expressions/src/System/Linq/Expressions/Compiler/VariableBinder.cs
+    startLine: 8
+  assemblies:
+  - System.Linq.Expressions
+  summary: The @'System.Linq.Expressions' namespace contains classes, interfaces and enumerations that enable language-level code expressions to be represented as objects in the form of expression trees.
+references:
+- uid: System.Linq.Expressions.BinaryExpression
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.BinaryExpression.yml
+  name: BinaryExpression
+  fullName: System.Linq.Expressions.BinaryExpression
+  type: Class
+  summary: Represents an expression that has a binary operator.
+- uid: System.Linq.Expressions.Expression
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.Expression.yml
+  name: Expression
+  fullName: System.Linq.Expressions.Expression
+  type: Class
+  summary: The base type for all nodes in Expression Trees.
+- uid: System.Linq.Expressions.BlockExpression
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.BlockExpression.yml
+  name: BlockExpression
+  fullName: System.Linq.Expressions.BlockExpression
+  type: Class
+  summary: Represents a block that contains a sequence of expressions where variables can be defined.
+- uid: System.Linq.Expressions.CatchBlock
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.CatchBlock.yml
+  name: CatchBlock
+  fullName: System.Linq.Expressions.CatchBlock
+  type: Class
+  summary: >-
+    Represents a catch statement in a try block.
+
+    This must have the same return type (i.e., the type of @'CatchBlock.Body') as the try block it is associated with.
+- uid: System.Linq.Expressions.ConditionalExpression
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.ConditionalExpression.yml
+  name: ConditionalExpression
+  fullName: System.Linq.Expressions.ConditionalExpression
+  type: Class
+  summary: Represents an expression that has a conditional operator.
+- uid: System.Linq.Expressions.ConstantExpression
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.ConstantExpression.yml
+  name: ConstantExpression
+  fullName: System.Linq.Expressions.ConstantExpression
+  type: Class
+  summary: Represents an expression that has a constant value.
+- uid: System.Linq.Expressions.DebugInfoExpression
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.DebugInfoExpression.yml
+  name: DebugInfoExpression
+  fullName: System.Linq.Expressions.DebugInfoExpression
+  type: Class
+  summary: >-
+    Emits or clears a sequence point for debug information.
+
+
+
+    This allows the debugger to highlight the correct source code when
+
+    debugging.
+- uid: System.Linq.Expressions.DefaultExpression
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.DefaultExpression.yml
+  name: DefaultExpression
+  fullName: System.Linq.Expressions.DefaultExpression
+  type: Class
+  summary: Represents the default value of a type or an empty expression.
+- uid: System.Linq.Expressions.ElementInit
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.ElementInit.yml
+  name: ElementInit
+  fullName: System.Linq.Expressions.ElementInit
+  type: Class
+  summary: Represents the initialization of a list.
+- uid: System.Linq.Expressions.ExpressionType
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.ExpressionType.yml
+  name: ExpressionType
+  fullName: System.Linq.Expressions.ExpressionType
+  type: Enum
+  summary: Describes the node types for the nodes of an expression tree.
+- uid: System.Linq.Expressions.ExpressionVisitor
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.ExpressionVisitor.yml
+  name: ExpressionVisitor
+  fullName: System.Linq.Expressions.ExpressionVisitor
+  type: Class
+  summary: Represents a visitor or rewriter for expression trees.
+- uid: System.Linq.Expressions.GotoExpressionKind
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.GotoExpressionKind.yml
+  name: GotoExpressionKind
+  fullName: System.Linq.Expressions.GotoExpressionKind
+  type: Enum
+  summary: Specifies what kind of jump this @'System.Linq.Expressions.GotoExpression' represents.
+- uid: System.Linq.Expressions.GotoExpression
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.GotoExpression.yml
+  name: GotoExpression
+  fullName: System.Linq.Expressions.GotoExpression
+  type: Class
+  summary: Represents an unconditional jump. This includes return statements, break and continue statements, and other jumps.
+- uid: System.Linq.Expressions.IArgumentProvider
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.IArgumentProvider.yml
+  name: IArgumentProvider
+  fullName: System.Linq.Expressions.IArgumentProvider
+  type: Interface
+  summary: >-
+    Provides an internal interface for accessing the arguments that multiple tree
+
+    nodes (DynamicExpression, ElementInit, MethodCallExpression, InvocationExpression, NewExpression,
+
+    and InexExpression).
+
+
+
+    This enables two optimizations which reduce the size of the trees.  The first is it enables
+
+    the nodes to hold onto an IList of T instead of a ReadOnlyCollection.  This saves the cost
+
+    of allocating the ReadOnlyCollection for each node.  The second is that it enables specialized
+
+    subclasses to be created which hold onto a specific number of arguments.  For example Block2,
+
+    Block3, Block4.  These nodes can therefore avoid allocating both a ReadOnlyCollection and an
+
+    array for storing their elements saving 32 bytes per node.
+
+
+
+    Meanwhile the nodes can continue to expose the original LINQ properties of ReadOnlyCollections.  They
+
+    do this by re-using 1 field for storing both the array or an element that would normally be stored
+
+    in the array.
+
+
+
+    For the array case the collection is typed to IList of T instead of ReadOnlyCollection of T.
+
+    When the node is initially constructed it is an array.  When the compiler accesses the members it
+
+    uses this interface.  If a user accesses the members the array is promoted to a ReadOnlyCollection.
+
+
+
+    For the object case we store the 1st argument in a field typed to object and when the node is initially
+
+    constructed this holds directly onto the Expression.  When the compiler accesses the members
+
+    it again uses this interface and the accessor for the 1st argument uses Expression.ReturnObject to
+
+    return the object which handles the Expression or ReadOnlyCollection case.  When the user accesses
+
+    the ReadOnlyCollection then the object field is updated to hold directly onto the ReadOnlyCollection.
+
+
+
+    It is important that the Expressions consistently return the same ReadOnlyCollection otherwise the
+
+    re-writer will be broken and it would be a breaking change from LINQ v1.  The problem is that currently
+
+    users can rely on object identity to tell if the node has changed.  Storing the readonly collection in
+
+    an overloaded field enables us to both reduce memory usage as well as maintain compatibility and an
+
+    easy to use external API.
+- uid: System.Linq.Expressions.IDynamicExpression
+  isExternal: false
+  href: System.Linq.Expressions.IDynamicExpression.yml
+  name: IDynamicExpression
+  fullName: System.Linq.Expressions.IDynamicExpression
+  type: Interface
+- uid: System.Linq.Expressions.IndexExpression
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.IndexExpression.yml
+  name: IndexExpression
+  fullName: System.Linq.Expressions.IndexExpression
+  type: Class
+  summary: Represents indexing a property or array.
+- uid: System.Linq.Expressions.InvocationExpression
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.InvocationExpression.yml
+  name: InvocationExpression
+  fullName: System.Linq.Expressions.InvocationExpression
+  type: Class
+  summary: Represents an expression that applies a delegate or lambda expression to a list of argument expressions.
+- uid: System.Linq.Expressions.LabelExpression
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.LabelExpression.yml
+  name: LabelExpression
+  fullName: System.Linq.Expressions.LabelExpression
+  type: Class
+  summary: >-
+    Represents a label, which can be placed in any @'System.Linq.Expressions.Expression' context. If
+
+    it is jumped to, it will get the value provided by the corresponding
+
+    @'System.Linq.Expressions.GotoExpression'. Otherwise, it gets the value in @'System.Linq.Expressions.LabelExpression.DefaultValue'. If the
+
+    @'System.Linq.Expressions.LabelExpression.Type' equals System.Void, no value should be provided.
+- uid: System.Linq.Expressions.LabelTarget
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.LabelTarget.yml
+  name: LabelTarget
+  fullName: System.Linq.Expressions.LabelTarget
+  type: Class
+  summary: Used to denote the target of a @'System.Linq.Expressions.GotoExpression'.
+- uid: System.Linq.Expressions.LambdaExpression
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.LambdaExpression.yml
+  name: LambdaExpression
+  fullName: System.Linq.Expressions.LambdaExpression
+  type: Class
+  summary: >-
+    Creates a @'System.Linq.Expressions.LambdaExpression' node.
+
+    This captures a block of code that is similar to a .NET method body.
+- uid: System.Linq.Expressions.Expression`1
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.Expression`1.yml
+  name: Expression<TDelegate>
+  name.vb: Expression(Of TDelegate)
+  fullName: System.Linq.Expressions.Expression<TDelegate>
+  fullName.vb: System.Linq.Expressions.Expression(Of TDelegate)
+  type: Class
+  summary: >-
+    Defines a @'System.Linq.Expressions.Expression`1' node.
+
+    This captures a block of code that is similar to a .NET method body.
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    fullName: System.Linq.Expressions.Expression
+    href: System.Linq.Expressions.Expression`1.yml
+  - name: <
+    fullName: <
+  - name: TDelegate
+    fullName: TDelegate
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    fullName: System.Linq.Expressions.Expression
+    href: System.Linq.Expressions.Expression`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TDelegate
+    fullName: TDelegate
+  - name: )
+    fullName: )
+- uid: System.Linq.Expressions.ListInitExpression
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.ListInitExpression.yml
+  name: ListInitExpression
+  fullName: System.Linq.Expressions.ListInitExpression
+  type: Class
+  summary: Represents a constructor call that has a collection initializer.
+- uid: System.Linq.Expressions.LoopExpression
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.LoopExpression.yml
+  name: LoopExpression
+  fullName: System.Linq.Expressions.LoopExpression
+  type: Class
+  summary: Represents an infinite loop. It can be exited with "break".
+- uid: System.Linq.Expressions.MemberAssignment
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.MemberAssignment.yml
+  name: MemberAssignment
+  fullName: System.Linq.Expressions.MemberAssignment
+  type: Class
+  summary: Represents assignment to a member of an object.
+- uid: System.Linq.Expressions.MemberBindingType
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.MemberBindingType.yml
+  name: MemberBindingType
+  fullName: System.Linq.Expressions.MemberBindingType
+  type: Enum
+  summary: Describes the binding types that are used in MemberInitExpression objects.
+- uid: System.Linq.Expressions.MemberBinding
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.MemberBinding.yml
+  name: MemberBinding
+  fullName: System.Linq.Expressions.MemberBinding
+  type: Class
+  summary: Provides the base class from which the classes that represent bindings that are used to initialize members of a newly created object derive.
+- uid: System.Linq.Expressions.MemberExpression
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.MemberExpression.yml
+  name: MemberExpression
+  fullName: System.Linq.Expressions.MemberExpression
+  type: Class
+  summary: Represents accessing a field or property.
+- uid: System.Linq.Expressions.MemberInitExpression
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.MemberInitExpression.yml
+  name: MemberInitExpression
+  fullName: System.Linq.Expressions.MemberInitExpression
+  type: Class
+  summary: Represents calling a constructor and initializing one or more members of the new object.
+- uid: System.Linq.Expressions.MemberListBinding
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.MemberListBinding.yml
+  name: MemberListBinding
+  fullName: System.Linq.Expressions.MemberListBinding
+  type: Class
+  summary: Represents initializing the elements of a collection member of a newly created object.
+- uid: System.Linq.Expressions.MemberMemberBinding
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.MemberMemberBinding.yml
+  name: MemberMemberBinding
+  fullName: System.Linq.Expressions.MemberMemberBinding
+  type: Class
+  summary: Represents initializing members of a member of a newly created object.
+- uid: System.Linq.Expressions.MethodCallExpression
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.MethodCallExpression.yml
+  name: MethodCallExpression
+  fullName: System.Linq.Expressions.MethodCallExpression
+  type: Class
+  summary: Represents a call to either static or an instance method.
+- uid: System.Linq.Expressions.NewArrayExpression
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.NewArrayExpression.yml
+  name: NewArrayExpression
+  fullName: System.Linq.Expressions.NewArrayExpression
+  type: Class
+  summary: Represents creating a new array and possibly initializing the elements of the new array.
+- uid: System.Linq.Expressions.NewExpression
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.NewExpression.yml
+  name: NewExpression
+  fullName: System.Linq.Expressions.NewExpression
+  type: Class
+  summary: Represents a constructor call.
+- uid: System.Linq.Expressions.ParameterExpression
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.ParameterExpression.yml
+  name: ParameterExpression
+  fullName: System.Linq.Expressions.ParameterExpression
+  type: Class
+  summary: Represents a named parameter expression.
+- uid: System.Linq.Expressions.RuntimeVariablesExpression
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.RuntimeVariablesExpression.yml
+  name: RuntimeVariablesExpression
+  fullName: System.Linq.Expressions.RuntimeVariablesExpression
+  type: Class
+  summary: >-
+    An expression that provides runtime read/write access to variables.
+
+    Needed to implement "eval" in some dynamic languages.
+
+    Evaluates to an instance of @'System.Collections.Generic.IList`1' when executed.
+- uid: System.Linq.Expressions.SwitchCase
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.SwitchCase.yml
+  name: SwitchCase
+  fullName: System.Linq.Expressions.SwitchCase
+  type: Class
+  summary: Represents one case of a @'System.Linq.Expressions.SwitchExpression'.
+- uid: System.Linq.Expressions.SwitchExpression
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.SwitchExpression.yml
+  name: SwitchExpression
+  fullName: System.Linq.Expressions.SwitchExpression
+  type: Class
+  summary: Represents a control expression that handles multiple selections by passing control to a @'System.Linq.Expressions.SwitchCase'.
+- uid: System.Linq.Expressions.SymbolDocumentInfo
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.SymbolDocumentInfo.yml
+  name: SymbolDocumentInfo
+  fullName: System.Linq.Expressions.SymbolDocumentInfo
+  type: Class
+  summary: >-
+    Stores information needed to emit debugging symbol information for a
+
+    source file, in particular the file name and unique language identifier.
+- uid: System.Linq.Expressions.TryExpression
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.TryExpression.yml
+  name: TryExpression
+  fullName: System.Linq.Expressions.TryExpression
+  type: Class
+  summary: >-
+    Represents a try/catch/finally/fault block.
+
+
+
+    The body is protected by the try block.
+
+    The handlers consist of a set of @'System.Linq.Expressions.CatchBlock's that can either be catch or filters.
+
+    The fault runs if an exception is thrown.
+
+    The finally runs regardless of how control exits the body.
+
+    Only one of fault or finally can be supplied.
+
+    The return type of the try block must match the return type of any associated catch statements.
+- uid: System.Linq.Expressions.TypeBinaryExpression
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.TypeBinaryExpression.yml
+  name: TypeBinaryExpression
+  fullName: System.Linq.Expressions.TypeBinaryExpression
+  type: Class
+  summary: Represents an operation between an expression and a type.
+- uid: System.Linq.Expressions.UnaryExpression
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.UnaryExpression.yml
+  name: UnaryExpression
+  fullName: System.Linq.Expressions.UnaryExpression
+  type: Class
+  summary: Represents an expression that has a unary operator.
+- uid: System.Linq.Expressions.DynamicExpression
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.DynamicExpression.yml
+  name: DynamicExpression
+  fullName: System.Linq.Expressions.DynamicExpression
+  type: Class
+  summary: Represents a dynamic operation.
+- uid: System.Linq.Expressions.DynamicExpressionVisitor
+  isExternal: false
+  href: System.Linq.Expressions.DynamicExpressionVisitor.yml
+  name: DynamicExpressionVisitor
+  fullName: System.Linq.Expressions.DynamicExpressionVisitor
+  type: Class
+- uid: System.Linq.Expressions
+  isExternal: false
+  name: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  type: Namespace

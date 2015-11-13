@@ -1,0 +1,65 @@
+items:
+- uid: System.Xml.NamespaceHandling
+  id: NamespaceHandling
+  parent: System.Xml
+  children:
+  - System.Xml.NamespaceHandling.Default
+  - System.Xml.NamespaceHandling.OmitDuplicates
+  href: System.Xml.NamespaceHandling.yml
+  name: NamespaceHandling
+  fullName: System.Xml.NamespaceHandling
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Xml.ReaderWriter/src/System/Xml/Core/NamespaceHandling.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Xml.ReaderWriter/src/System/Xml/Core/NamespaceHandling.cs
+    startLine: 9
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: Specifies whether to remove duplicate namespace declarations in the @'System.Xml.XmlWriter'.
+  syntax:
+    content: public enum NamespaceHandling
+    content.vb: Public Enum NamespaceHandling
+- uid: System.Xml.NamespaceHandling.Default
+  id: Default
+  parent: System.Xml.NamespaceHandling
+  href: System.Xml.NamespaceHandling.yml
+  name: Default
+  fullName: System.Xml.NamespaceHandling.Default
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/Core/NamespaceHandling.cs
+    startLine: 15
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: Specifies that duplicate namespace declarations will not be removed.
+  syntax:
+    content: Default = 0
+- uid: System.Xml.NamespaceHandling.OmitDuplicates
+  id: OmitDuplicates
+  parent: System.Xml.NamespaceHandling
+  href: System.Xml.NamespaceHandling.yml
+  name: OmitDuplicates
+  fullName: System.Xml.NamespaceHandling.OmitDuplicates
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/Core/NamespaceHandling.cs
+    startLine: 20
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: Specifies that duplicate namespace declarations will be removed. For the duplicate namespace to be removed, the prefix and the namespace must match.
+  syntax:
+    content: OmitDuplicates = 1
+references:
+- uid: System.Xml
+  isExternal: false
+  name: System.Xml
+  fullName: System.Xml
+  type: Namespace

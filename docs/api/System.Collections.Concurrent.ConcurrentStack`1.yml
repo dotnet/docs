@@ -1,0 +1,1155 @@
+items:
+- uid: System.Collections.Concurrent.ConcurrentStack`1
+  id: ConcurrentStack`1
+  parent: System.Collections.Concurrent
+  children:
+  - System.Collections.Concurrent.ConcurrentStack`1.#ctor
+  - System.Collections.Concurrent.ConcurrentStack`1.#ctor(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Concurrent.ConcurrentStack`1.Clear
+  - System.Collections.Concurrent.ConcurrentStack`1.CopyTo(`0[],System.Int32)
+  - System.Collections.Concurrent.ConcurrentStack`1.Count
+  - System.Collections.Concurrent.ConcurrentStack`1.GetEnumerator
+  - System.Collections.Concurrent.ConcurrentStack`1.IsEmpty
+  - System.Collections.Concurrent.ConcurrentStack`1.Push(`0)
+  - System.Collections.Concurrent.ConcurrentStack`1.PushRange(`0[])
+  - System.Collections.Concurrent.ConcurrentStack`1.PushRange(`0[],System.Int32,System.Int32)
+  - System.Collections.Concurrent.ConcurrentStack`1.System#Collections#Concurrent#IProducerConsumerCollection{T}#TryAdd(`0)
+  - System.Collections.Concurrent.ConcurrentStack`1.System#Collections#Concurrent#IProducerConsumerCollection{T}#TryTake(`0@)
+  - System.Collections.Concurrent.ConcurrentStack`1.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  - System.Collections.Concurrent.ConcurrentStack`1.System#Collections#ICollection#IsSynchronized
+  - System.Collections.Concurrent.ConcurrentStack`1.System#Collections#ICollection#SyncRoot
+  - System.Collections.Concurrent.ConcurrentStack`1.System#Collections#IEnumerable#GetEnumerator
+  - System.Collections.Concurrent.ConcurrentStack`1.ToArray
+  - System.Collections.Concurrent.ConcurrentStack`1.TryPeek(`0@)
+  - System.Collections.Concurrent.ConcurrentStack`1.TryPop(`0@)
+  - System.Collections.Concurrent.ConcurrentStack`1.TryPopRange(`0[])
+  - System.Collections.Concurrent.ConcurrentStack`1.TryPopRange(`0[],System.Int32,System.Int32)
+  href: System.Collections.Concurrent.ConcurrentStack`1.yml
+  name: ConcurrentStack<T>
+  name.vb: ConcurrentStack(Of T)
+  fullName: System.Collections.Concurrent.ConcurrentStack<T>
+  fullName.vb: System.Collections.Concurrent.ConcurrentStack(Of T)
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Collections/Concurrent/ConcurrentStack.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Collections/Concurrent/ConcurrentStack.cs
+    startLine: 44
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Concurrent
+  summary: Represents a thread-safe last in-first out (LIFO) collection.
+  remarks: >-
+    All public and protected members of @'System.Collections.Concurrent.ConcurrentStack`1' are thread-safe and may be used
+
+    concurrently from multiple threads.
+  syntax:
+    content: 'public class ConcurrentStack<T> : IProducerConsumerCollection<T>, ICollection, IReadOnlyCollection<T>, IEnumerable<T>, IEnumerable'
+    content.vb: Public Class ConcurrentStack(Of T) Implements IProducerConsumerCollection(Of T), ICollection, IReadOnlyCollection(Of T), IEnumerable(Of T), IEnumerable
+    typeParameters:
+    - id: T
+      description: Specifies the type of elements in the stack.
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.Concurrent.IProducerConsumerCollection{{T}}
+  - System.Collections.ICollection
+  - System.Collections.Generic.IReadOnlyCollection{{T}}
+  - System.Collections.Generic.IEnumerable{{T}}
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Collections.Concurrent.ConcurrentStack`1.#ctor
+  id: '#ctor'
+  parent: System.Collections.Concurrent.ConcurrentStack`1
+  href: System.Collections.Concurrent.ConcurrentStack`1.yml
+  name: ConcurrentStack()
+  fullName: System.Collections.Concurrent.ConcurrentStack<T>.ConcurrentStack()
+  fullName.vb: System.Collections.Concurrent.ConcurrentStack(Of T).ConcurrentStack()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Concurrent/ConcurrentStack.cs
+    startLine: 86
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Concurrent
+  summary: Initializes a new instance of the @'System.Collections.Concurrent.ConcurrentStack`1' class.
+  syntax:
+    content: public ConcurrentStack()
+    content.vb: Public Sub New
+- uid: System.Collections.Concurrent.ConcurrentStack`1.#ctor(System.Collections.Generic.IEnumerable{`0})
+  id: '#ctor(System.Collections.Generic.IEnumerable{`0})'
+  parent: System.Collections.Concurrent.ConcurrentStack`1
+  href: System.Collections.Concurrent.ConcurrentStack`1.yml
+  name: ConcurrentStack(IEnumerable<T>)
+  name.vb: ConcurrentStack(IEnumerable(Of T))
+  fullName: System.Collections.Concurrent.ConcurrentStack<T>.ConcurrentStack(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Concurrent.ConcurrentStack(Of T).ConcurrentStack(System.Collections.Generic.IEnumerable(Of T))
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Concurrent/ConcurrentStack.cs
+    startLine: 98
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Concurrent
+  summary: Initializes a new instance of the @'System.Collections.Concurrent.ConcurrentStack`1' class that contains elements copied from the specified collection
+  syntax:
+    content: public ConcurrentStack(IEnumerable<T> collection)
+    content.vb: Public Sub New(collection As IEnumerable(Of T))
+    parameters:
+    - id: collection
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection whose elements are copied to the new @'System.Collections.Concurrent.ConcurrentStack`1'.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *collection* argument is null.
+- uid: System.Collections.Concurrent.ConcurrentStack`1.IsEmpty
+  id: IsEmpty
+  parent: System.Collections.Concurrent.ConcurrentStack`1
+  href: System.Collections.Concurrent.ConcurrentStack`1.yml
+  name: IsEmpty
+  fullName: System.Collections.Concurrent.ConcurrentStack<T>.IsEmpty
+  fullName.vb: System.Collections.Concurrent.ConcurrentStack(Of T).IsEmpty
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Concurrent/ConcurrentStack.cs
+    startLine: 180
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Concurrent
+  summary: Gets a value that indicates whether the @'System.Collections.Concurrent.ConcurrentStack`1' is empty.
+  remarks: >-
+    For determining whether the collection contains any items, use of this property is recommended
+
+    rather than retrieving the number of items from the @'System.Collections.Concurrent.ConcurrentStack`1.Count' property and comparing it
+
+    to 0.  However, as this collection is intended to be accessed concurrently, it may be the case
+
+    that another thread will modify the collection after @'System.Collections.Concurrent.ConcurrentStack`1.IsEmpty' returns, thus invalidating
+
+    the result.
+  syntax:
+    content: public bool IsEmpty { get; }
+    content.vb: Public ReadOnly Property IsEmpty As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Collections.Concurrent.ConcurrentStack`1.Count
+  id: Count
+  parent: System.Collections.Concurrent.ConcurrentStack`1
+  href: System.Collections.Concurrent.ConcurrentStack`1.yml
+  name: Count
+  fullName: System.Collections.Concurrent.ConcurrentStack<T>.Count
+  fullName.vb: System.Collections.Concurrent.ConcurrentStack(Of T).Count
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Concurrent/ConcurrentStack.cs
+    startLine: 198
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Concurrent
+  summary: Gets the number of elements contained in the @'System.Collections.Concurrent.ConcurrentStack`1'.
+  remarks: >-
+    For determining whether the collection contains any items, use of the @'System.Collections.Concurrent.ConcurrentStack`1.IsEmpty'
+
+    property is recommended rather than retrieving the number of items from the @'System.Collections.Concurrent.ConcurrentStack`1.Count'
+
+    property and comparing it to 0.
+  syntax:
+    content: public int Count { get; }
+    content.vb: Public ReadOnly Property Count As Integer
+    parameters: []
+    return:
+      type: System.Int32
+- uid: System.Collections.Concurrent.ConcurrentStack`1.System#Collections#ICollection#IsSynchronized
+  id: System#Collections#ICollection#IsSynchronized
+  parent: System.Collections.Concurrent.ConcurrentStack`1
+  href: System.Collections.Concurrent.ConcurrentStack`1.yml
+  name: ICollection.IsSynchronized
+  name.vb: System.Collections.ICollection.IsSynchronized
+  fullName: System.Collections.Concurrent.ConcurrentStack<T>.System.Collections.ICollection.IsSynchronized
+  fullName.vb: System.Collections.Concurrent.ConcurrentStack(Of T).System.Collections.ICollection.IsSynchronized
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Concurrent/ConcurrentStack.cs
+    startLine: 230
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Concurrent
+  summary: Gets a value indicating whether access to the @'System.Collections.ICollection' is synchronized with the SyncRoot.
+  syntax:
+    content: bool ICollection.IsSynchronized { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.ICollection.IsSynchronized As Boolean Implements ICollection.IsSynchronized
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Collections.Concurrent.ConcurrentStack`1.System#Collections#ICollection#SyncRoot
+  id: System#Collections#ICollection#SyncRoot
+  parent: System.Collections.Concurrent.ConcurrentStack`1
+  href: System.Collections.Concurrent.ConcurrentStack`1.yml
+  name: ICollection.SyncRoot
+  name.vb: System.Collections.ICollection.SyncRoot
+  fullName: System.Collections.Concurrent.ConcurrentStack<T>.System.Collections.ICollection.SyncRoot
+  fullName.vb: System.Collections.Concurrent.ConcurrentStack(Of T).System.Collections.ICollection.SyncRoot
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Concurrent/ConcurrentStack.cs
+    startLine: 244
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Concurrent
+  summary: Gets an object that can be used to synchronize access to the @'System.Collections.ICollection'. This property is not supported.
+  syntax:
+    content: object ICollection.SyncRoot { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.ICollection.SyncRoot As Object Implements ICollection.SyncRoot
+    parameters: []
+    return:
+      type: System.Object
+  exceptions:
+  - type: System.NotSupportedException
+    description: The SyncRoot property is not supported
+- uid: System.Collections.Concurrent.ConcurrentStack`1.Clear
+  id: Clear
+  parent: System.Collections.Concurrent.ConcurrentStack`1
+  href: System.Collections.Concurrent.ConcurrentStack`1.yml
+  name: Clear()
+  fullName: System.Collections.Concurrent.ConcurrentStack<T>.Clear()
+  fullName.vb: System.Collections.Concurrent.ConcurrentStack(Of T).Clear()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Concurrent/ConcurrentStack.cs
+    startLine: 255
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Concurrent
+  summary: Removes all objects from the @'System.Collections.Concurrent.ConcurrentStack`1'.
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear
+- uid: System.Collections.Concurrent.ConcurrentStack`1.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  id: System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  parent: System.Collections.Concurrent.ConcurrentStack`1
+  href: System.Collections.Concurrent.ConcurrentStack`1.yml
+  name: ICollection.CopyTo(Array, Int32)
+  name.vb: System.Collections.ICollection.CopyTo(Array, Int32)
+  fullName: System.Collections.Concurrent.ConcurrentStack<T>.System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  fullName.vb: System.Collections.Concurrent.ConcurrentStack(Of T).System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Concurrent/ConcurrentStack.cs
+    startLine: 289
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Concurrent
+  summary: Copies the elements of the @'System.Collections.ICollection' to an @'System.Array', starting at a particular @'System.Array' index.
+  syntax:
+    content: void ICollection.CopyTo(Array array, int index)
+    content.vb: Sub System.Collections.ICollection.CopyTo(array As Array, index As Integer) Implements ICollection.CopyTo
+    parameters:
+    - id: array
+      type: System.Array
+      description: The one-dimensional @'System.Array' that is the destination of the elements copied from the @'System.Collections.Concurrent.ConcurrentStack`1'. The @'System.Array' must have zero-based indexing.
+    - id: index
+      type: System.Int32
+      description: The zero-based index in *array* at which copying begins.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is a null reference (Nothing in Visual Basic).'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero.'
+  - type: System.ArgumentException
+    description: '*array* is multidimensional. -or- *array* does not have zero-based indexing. -or- *index* is equal to or greater than the length of the *array* -or- The number of elements in the source @''System.Collections.ICollection'' is greater than the available space from *index* to the end of the destination *array*. -or- The type of the source @''System.Collections.ICollection'' cannot be cast automatically to the type of the destination *array*.'
+- uid: System.Collections.Concurrent.ConcurrentStack`1.CopyTo(`0[],System.Int32)
+  id: CopyTo(`0[],System.Int32)
+  parent: System.Collections.Concurrent.ConcurrentStack`1
+  href: System.Collections.Concurrent.ConcurrentStack`1.yml
+  name: CopyTo(T[], Int32)
+  name.vb: CopyTo(T(), Int32)
+  fullName: System.Collections.Concurrent.ConcurrentStack<T>.CopyTo(T[], System.Int32)
+  fullName.vb: System.Collections.Concurrent.ConcurrentStack(Of T).CopyTo(T(), System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Concurrent/ConcurrentStack.cs
+    startLine: 324
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Concurrent
+  summary: Copies the @'System.Collections.Concurrent.ConcurrentStack`1' elements to an existing one-dimensional @'System.Array', starting at the specified array index.
+  syntax:
+    content: public void CopyTo(T[] array, int index)
+    content.vb: Public Sub CopyTo(array As T(), index As Integer)
+    parameters:
+    - id: array
+      type: '{T}[]'
+      description: The one-dimensional @'System.Array' that is the destination of the elements copied from the @'System.Collections.Concurrent.ConcurrentStack`1'. The @'System.Array' must have zero-based indexing.
+    - id: index
+      type: System.Int32
+      description: The zero-based index in *array* at which copying begins.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is a null reference (Nothing in Visual Basic).'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero.'
+  - type: System.ArgumentException
+    description: '*index* is equal to or greater than the length of the *array* -or- The number of elements in the source @''System.Collections.Concurrent.ConcurrentStack`1'' is greater than the available space from *index* to the end of the destination *array*.'
+- uid: System.Collections.Concurrent.ConcurrentStack`1.Push(`0)
+  id: Push(`0)
+  parent: System.Collections.Concurrent.ConcurrentStack`1
+  href: System.Collections.Concurrent.ConcurrentStack`1.yml
+  name: Push(T)
+  fullName: System.Collections.Concurrent.ConcurrentStack<T>.Push(T)
+  fullName.vb: System.Collections.Concurrent.ConcurrentStack(Of T).Push(T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Concurrent/ConcurrentStack.cs
+    startLine: 345
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Concurrent
+  summary: Inserts an object at the top of the @'System.Collections.Concurrent.ConcurrentStack`1'.
+  syntax:
+    content: public void Push(T item)
+    content.vb: Public Sub Push(item As T)
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The object to push onto the @'System.Collections.Concurrent.ConcurrentStack`1'. The value can be a null reference (Nothing in Visual Basic) for reference types.
+- uid: System.Collections.Concurrent.ConcurrentStack`1.PushRange(`0[])
+  id: PushRange(`0[])
+  parent: System.Collections.Concurrent.ConcurrentStack`1
+  href: System.Collections.Concurrent.ConcurrentStack`1.yml
+  name: PushRange(T[])
+  name.vb: PushRange(T())
+  fullName: System.Collections.Concurrent.ConcurrentStack<T>.PushRange(T[])
+  fullName.vb: System.Collections.Concurrent.ConcurrentStack(Of T).PushRange(T())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Concurrent/ConcurrentStack.cs
+    startLine: 376
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Concurrent
+  summary: Inserts multiple objects at the top of the @'System.Collections.Concurrent.ConcurrentStack`1' atomically.
+  remarks: >-
+    When adding multiple items to the stack, using PushRange is a more efficient
+
+    mechanism than using @'System.Collections.Concurrent.ConcurrentStack`1.Push(`0)' one item at a time.  Additionally, PushRange
+
+    guarantees that all of the elements will be added atomically, meaning that no other threads will
+
+    be able to inject elements between the elements being pushed.  Items at lower indices in
+
+    the <paramref name="items" /> array will be pushed before items at higher indices.
+  syntax:
+    content: public void PushRange(T[] items)
+    content.vb: Public Sub PushRange(items As T())
+    parameters:
+    - id: items
+      type: '{T}[]'
+      description: The objects to push onto the @'System.Collections.Concurrent.ConcurrentStack`1'.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*items* is a null reference (Nothing in Visual Basic).'
+- uid: System.Collections.Concurrent.ConcurrentStack`1.PushRange(`0[],System.Int32,System.Int32)
+  id: PushRange(`0[],System.Int32,System.Int32)
+  parent: System.Collections.Concurrent.ConcurrentStack`1
+  href: System.Collections.Concurrent.ConcurrentStack`1.yml
+  name: PushRange(T[], Int32, Int32)
+  name.vb: PushRange(T(), Int32, Int32)
+  fullName: System.Collections.Concurrent.ConcurrentStack<T>.PushRange(T[], System.Int32, System.Int32)
+  fullName.vb: System.Collections.Concurrent.ConcurrentStack(Of T).PushRange(T(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Concurrent/ConcurrentStack.cs
+    startLine: 407
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Concurrent
+  summary: Inserts multiple objects at the top of the @'System.Collections.Concurrent.ConcurrentStack`1' atomically.
+  remarks: >-
+    When adding multiple items to the stack, using PushRange is a more efficient
+
+    mechanism than using @'System.Collections.Concurrent.ConcurrentStack`1.Push(`0)' one item at a time. Additionally, PushRange
+
+    guarantees that all of the elements will be added atomically, meaning that no other threads will
+
+    be able to inject elements between the elements being pushed. Items at lower indices in the
+
+    <paramref name="items" /> array will be pushed before items at higher indices.
+  syntax:
+    content: public void PushRange(T[] items, int startIndex, int count)
+    content.vb: Public Sub PushRange(items As T(), startIndex As Integer, count As Integer)
+    parameters:
+    - id: items
+      type: '{T}[]'
+      description: The objects to push onto the @'System.Collections.Concurrent.ConcurrentStack`1'.
+    - id: startIndex
+      type: System.Int32
+      description: The zero-based offset in *items* at which to begin inserting elements onto the top of the @'System.Collections.Concurrent.ConcurrentStack`1'.
+    - id: count
+      type: System.Int32
+      description: The number of elements to be inserted onto the top of the @'System.Collections.Concurrent.ConcurrentStack`1'.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*items* is a null reference (Nothing in Visual Basic).'
+  - type: System.ArgumentOutOfRangeException
+    description: '*startIndex* or *count* is negative. Or *startIndex* is greater than or equal to the length of *items*.'
+  - type: System.ArgumentException
+    description: '*startIndex* + *count* is greater than the length of *items*.'
+- uid: System.Collections.Concurrent.ConcurrentStack`1.System#Collections#Concurrent#IProducerConsumerCollection{T}#TryAdd(`0)
+  id: System#Collections#Concurrent#IProducerConsumerCollection{T}#TryAdd(`0)
+  parent: System.Collections.Concurrent.ConcurrentStack`1
+  href: System.Collections.Concurrent.ConcurrentStack`1.yml
+  name: IProducerConsumerCollection<T>.TryAdd(T)
+  name.vb: System.Collections.Concurrent.IProducerConsumerCollection<T>.TryAdd(T)
+  fullName: System.Collections.Concurrent.ConcurrentStack<T>.System.Collections.Concurrent.IProducerConsumerCollection<T>.TryAdd(T)
+  fullName.vb: System.Collections.Concurrent.ConcurrentStack(Of T).System.Collections.Concurrent.IProducerConsumerCollection<T>.TryAdd(T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Concurrent/ConcurrentStack.cs
+    startLine: 501
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Concurrent
+  summary: Attempts to add an object to the @'System.Collections.Concurrent.IProducerConsumerCollection`1'.
+  remarks: >-
+    For @'System.Collections.Concurrent.ConcurrentStack`1', this operation
+
+    will always insert the object onto the top of the @'System.Collections.Concurrent.ConcurrentStack`1'
+
+    and return true.
+  syntax:
+    content: bool IProducerConsumerCollection<T>.TryAdd(T item)
+    content.vb: Function System.Collections.Concurrent.IProducerConsumerCollection<T>.TryAdd(item As T) As Boolean Implements IProducerConsumerCollection(Of T).TryAdd
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The object to add to the @'System.Collections.Concurrent.IProducerConsumerCollection`1'. The value can be a null reference (Nothing in Visual Basic) for reference types.
+    return:
+      type: System.Boolean
+      description: true if the object was added successfully; otherwise, false.
+- uid: System.Collections.Concurrent.ConcurrentStack`1.TryPeek(`0@)
+  id: TryPeek(`0@)
+  parent: System.Collections.Concurrent.ConcurrentStack`1
+  href: System.Collections.Concurrent.ConcurrentStack`1.yml
+  name: TryPeek(out T)
+  name.vb: TryPeek(ByRef T)
+  fullName: System.Collections.Concurrent.ConcurrentStack<T>.TryPeek(out T)
+  fullName.vb: System.Collections.Concurrent.ConcurrentStack(Of T).TryPeek(ByRef T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Concurrent/ConcurrentStack.cs
+    startLine: 515
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Concurrent
+  summary: Attempts to return an object from the top of the @'System.Collections.Concurrent.ConcurrentStack`1' without removing it.
+  syntax:
+    content: public bool TryPeek(out T result)
+    content.vb: Public Function TryPeek(ByRef result As T) As Boolean
+    parameters:
+    - id: result
+      type: '{T}'
+      description: When this method returns, *result* contains an object from the top of the @'System.Collections.Concurrent.ConcurrentStack`1'or an unspecified value if the operation failed.
+    return:
+      type: System.Boolean
+      description: true if and object was returned successfully; otherwise, false.
+- uid: System.Collections.Concurrent.ConcurrentStack`1.TryPop(`0@)
+  id: TryPop(`0@)
+  parent: System.Collections.Concurrent.ConcurrentStack`1
+  href: System.Collections.Concurrent.ConcurrentStack`1.yml
+  name: TryPop(out T)
+  name.vb: TryPop(ByRef T)
+  fullName: System.Collections.Concurrent.ConcurrentStack<T>.TryPop(out T)
+  fullName.vb: System.Collections.Concurrent.ConcurrentStack(Of T).TryPop(ByRef T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Concurrent/ConcurrentStack.cs
+    startLine: 542
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Concurrent
+  summary: Attempts to pop and return the object at the top of the @'System.Collections.Concurrent.ConcurrentStack`1'.
+  syntax:
+    content: public bool TryPop(out T result)
+    content.vb: Public Function TryPop(ByRef result As T) As Boolean
+    parameters:
+    - id: result
+      type: '{T}'
+      description: When this method returns, if the operation was successful, *result* contains the object removed. If no object was available to be removed, the value is unspecified.
+    return:
+      type: System.Boolean
+      description: >-
+        true if an element was removed and returned from the top of the @'System.Collections.Concurrent.ConcurrentStack`1'
+
+        succesfully; otherwise, false.
+- uid: System.Collections.Concurrent.ConcurrentStack`1.TryPopRange(`0[])
+  id: TryPopRange(`0[])
+  parent: System.Collections.Concurrent.ConcurrentStack`1
+  href: System.Collections.Concurrent.ConcurrentStack`1.yml
+  name: TryPopRange(T[])
+  name.vb: TryPopRange(T())
+  fullName: System.Collections.Concurrent.ConcurrentStack<T>.TryPopRange(T[])
+  fullName.vb: System.Collections.Concurrent.ConcurrentStack(Of T).TryPopRange(T())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Concurrent/ConcurrentStack.cs
+    startLine: 581
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Concurrent
+  summary: Attempts to pop and return multiple objects from the top of the @'System.Collections.Concurrent.ConcurrentStack`1' atomically.
+  remarks: >-
+    When popping multiple items, if there is little contention on the stack, using
+
+    TryPopRange can be more efficient than using @'System.Collections.Concurrent.ConcurrentStack`1.TryPop(`0@)'
+
+    once per item to be removed.  Nodes fill the <paramref name="items" />
+
+    with the first node to be popped at the startIndex, the second node to be popped
+
+    at startIndex + 1, and so on.
+  syntax:
+    content: public int TryPopRange(T[] items)
+    content.vb: Public Function TryPopRange(items As T()) As Integer
+    parameters:
+    - id: items
+      type: '{T}[]'
+      description: The @'System.Array' to which objects popped from the top of the @'System.Collections.Concurrent.ConcurrentStack`1' will be added.
+    return:
+      type: System.Int32
+      description: >-
+        The number of objects successfully popped from the top of the @'System.Collections.Concurrent.ConcurrentStack`1' and inserted in
+
+        <paramref name="items" />.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*items* is a null argument (Nothing in Visual Basic).'
+- uid: System.Collections.Concurrent.ConcurrentStack`1.TryPopRange(`0[],System.Int32,System.Int32)
+  id: TryPopRange(`0[],System.Int32,System.Int32)
+  parent: System.Collections.Concurrent.ConcurrentStack`1
+  href: System.Collections.Concurrent.ConcurrentStack`1.yml
+  name: TryPopRange(T[], Int32, Int32)
+  name.vb: TryPopRange(T(), Int32, Int32)
+  fullName: System.Collections.Concurrent.ConcurrentStack<T>.TryPopRange(T[], System.Int32, System.Int32)
+  fullName.vb: System.Collections.Concurrent.ConcurrentStack(Of T).TryPopRange(T(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Concurrent/ConcurrentStack.cs
+    startLine: 619
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Concurrent
+  summary: Attempts to pop and return multiple objects from the top of the @'System.Collections.Concurrent.ConcurrentStack`1' atomically.
+  remarks: >-
+    When popping multiple items, if there is little contention on the stack, using
+
+    TryPopRange can be more efficient than using @'System.Collections.Concurrent.ConcurrentStack`1.TryPop(`0@)'
+
+    once per item to be removed.  Nodes fill the <paramref name="items" />
+
+    with the first node to be popped at the startIndex, the second node to be popped
+
+    at startIndex + 1, and so on.
+  syntax:
+    content: public int TryPopRange(T[] items, int startIndex, int count)
+    content.vb: Public Function TryPopRange(items As T(), startIndex As Integer, count As Integer) As Integer
+    parameters:
+    - id: items
+      type: '{T}[]'
+      description: The @'System.Array' to which objects popped from the top of the @'System.Collections.Concurrent.ConcurrentStack`1' will be added.
+    - id: startIndex
+      type: System.Int32
+      description: The zero-based offset in *items* at which to begin inserting elements from the top of the @'System.Collections.Concurrent.ConcurrentStack`1'.
+    - id: count
+      type: System.Int32
+      description: The number of elements to be popped from top of the @'System.Collections.Concurrent.ConcurrentStack`1' and inserted into *items*.
+    return:
+      type: System.Int32
+      description: >-
+        The number of objects successfully popped from the top of
+
+        the @'System.Collections.Concurrent.ConcurrentStack`1' and inserted in <paramref name="items" />.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*items* is a null reference (Nothing in Visual Basic).'
+  - type: System.ArgumentOutOfRangeException
+    description: '*startIndex* or *count* is negative. Or *startIndex* is greater than or equal to the length of *items*.'
+  - type: System.ArgumentException
+    description: '*startIndex* + *count* is greater than the length of *items*.'
+- uid: System.Collections.Concurrent.ConcurrentStack`1.System#Collections#Concurrent#IProducerConsumerCollection{T}#TryTake(`0@)
+  id: System#Collections#Concurrent#IProducerConsumerCollection{T}#TryTake(`0@)
+  parent: System.Collections.Concurrent.ConcurrentStack`1
+  href: System.Collections.Concurrent.ConcurrentStack`1.yml
+  name: IProducerConsumerCollection<T>.TryTake(out T)
+  name.vb: System.Collections.Concurrent.IProducerConsumerCollection<T>.TryTake(ByRef T)
+  fullName: System.Collections.Concurrent.ConcurrentStack<T>.System.Collections.Concurrent.IProducerConsumerCollection<T>.TryTake(out T)
+  fullName.vb: System.Collections.Concurrent.ConcurrentStack(Of T).System.Collections.Concurrent.IProducerConsumerCollection<T>.TryTake(ByRef T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Concurrent/ConcurrentStack.cs
+    startLine: 755
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Concurrent
+  summary: Attempts to remove and return an object from the @'System.Collections.Concurrent.IProducerConsumerCollection`1'.
+  remarks: >-
+    For @'System.Collections.Concurrent.ConcurrentStack`1', this operation will attempt to pope the object at
+
+    the top of the @'System.Collections.Concurrent.ConcurrentStack`1'.
+  syntax:
+    content: bool IProducerConsumerCollection<T>.TryTake(out T item)
+    content.vb: Function System.Collections.Concurrent.IProducerConsumerCollection<T>.TryTake(ByRef item As T) As Boolean Implements IProducerConsumerCollection(Of T).TryTake
+    parameters:
+    - id: item
+      type: '{T}'
+      description: When this method returns, if the operation was successful, *item* contains the object removed. If no object was available to be removed, the value is unspecified.
+    return:
+      type: System.Boolean
+      description: true if an element was removed and returned succesfully; otherwise, false.
+- uid: System.Collections.Concurrent.ConcurrentStack`1.ToArray
+  id: ToArray
+  parent: System.Collections.Concurrent.ConcurrentStack`1
+  href: System.Collections.Concurrent.ConcurrentStack`1.yml
+  name: ToArray()
+  fullName: System.Collections.Concurrent.ConcurrentStack<T>.ToArray()
+  fullName.vb: System.Collections.Concurrent.ConcurrentStack(Of T).ToArray()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Concurrent/ConcurrentStack.cs
+    startLine: 765
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Concurrent
+  summary: Copies the items stored in the @'System.Collections.Concurrent.ConcurrentStack`1' to a new array.
+  syntax:
+    content: public T[] ToArray()
+    content.vb: Public Function ToArray As T()
+    return:
+      type: '{T}[]'
+      description: A new array containing a snapshot of elements copied from the @'System.Collections.Concurrent.ConcurrentStack`1'.
+- uid: System.Collections.Concurrent.ConcurrentStack`1.GetEnumerator
+  id: GetEnumerator
+  parent: System.Collections.Concurrent.ConcurrentStack`1
+  href: System.Collections.Concurrent.ConcurrentStack`1.yml
+  name: GetEnumerator()
+  fullName: System.Collections.Concurrent.ConcurrentStack<T>.GetEnumerator()
+  fullName.vb: System.Collections.Concurrent.ConcurrentStack(Of T).GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Concurrent/ConcurrentStack.cs
+    startLine: 799
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Concurrent
+  summary: Returns an enumerator that iterates through the @'System.Collections.Concurrent.ConcurrentStack`1'.
+  remarks: >-
+    The enumeration represents a moment-in-time snapshot of the contents
+
+    of the stack.  It does not reflect any updates to the collection after
+
+    @'System.Collections.Concurrent.ConcurrentStack`1.GetEnumerator' was called.  The enumerator is safe to use
+
+    concurrently with reads from and writes to the stack.
+  syntax:
+    content: public IEnumerator<T> GetEnumerator()
+    content.vb: Public Function GetEnumerator As IEnumerator(Of T)
+    return:
+      type: System.Collections.Generic.IEnumerator{{T}}
+      description: An enumerator for the @'System.Collections.Concurrent.ConcurrentStack`1'.
+- uid: System.Collections.Concurrent.ConcurrentStack`1.System#Collections#IEnumerable#GetEnumerator
+  id: System#Collections#IEnumerable#GetEnumerator
+  parent: System.Collections.Concurrent.ConcurrentStack`1
+  href: System.Collections.Concurrent.ConcurrentStack`1.yml
+  name: IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: System.Collections.Concurrent.ConcurrentStack<T>.System.Collections.IEnumerable.GetEnumerator()
+  fullName.vb: System.Collections.Concurrent.ConcurrentStack(Of T).System.Collections.IEnumerable.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Concurrent/ConcurrentStack.cs
+    startLine: 833
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Concurrent
+  summary: Returns an enumerator that iterates through a collection.
+  remarks: >-
+    The enumeration represents a moment-in-time snapshot of the contents of the stack. It does not
+
+    reflect any updates to the collection after
+
+    @'System.Collections.Concurrent.ConcurrentStack`1.GetEnumerator' was called. The enumerator is safe to use concurrently with reads
+
+    from and writes to the stack.
+  syntax:
+    content: IEnumerator IEnumerable.GetEnumerator()
+    content.vb: Function System.Collections.IEnumerable.GetEnumerator As IEnumerator Implements IEnumerable.GetEnumerator
+    return:
+      type: System.Collections.IEnumerator
+      description: >-
+        An @'System.Collections.IEnumerator' that can be used to iterate through
+
+        the collection.
+references:
+- uid: System.Collections.Concurrent.ConcurrentStack`1
+  isExternal: false
+  href: System.Collections.Concurrent.ConcurrentStack`1.yml
+  name: ConcurrentStack<T>
+  name.vb: ConcurrentStack(Of T)
+  fullName: System.Collections.Concurrent.ConcurrentStack<T>
+  fullName.vb: System.Collections.Concurrent.ConcurrentStack(Of T)
+  type: Class
+  summary: Represents a thread-safe last-in, first-out collection of objects.
+  spec.csharp:
+  - uid: System.Collections.Concurrent.ConcurrentStack`1
+    name: ConcurrentStack
+    fullName: System.Collections.Concurrent.ConcurrentStack
+    href: System.Collections.Concurrent.ConcurrentStack`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Concurrent.ConcurrentStack`1
+    name: ConcurrentStack
+    fullName: System.Collections.Concurrent.ConcurrentStack
+    href: System.Collections.Concurrent.ConcurrentStack`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Concurrent
+  isExternal: false
+  name: System.Collections.Concurrent
+  fullName: System.Collections.Concurrent
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.ArgumentNullException
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.Concurrent.ConcurrentStack`1.Count
+- uid: System.Collections.Concurrent.ConcurrentStack`1.IsEmpty
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Collections.ICollection
+  parent: System.Collections
+  isExternal: true
+  name: ICollection
+  fullName: System.Collections.ICollection
+- uid: System.Collections
+  isExternal: false
+  name: System.Collections
+  fullName: System.Collections
+- uid: System.NotSupportedException
+- uid: System.Array
+  parent: System
+  isExternal: true
+  name: Array
+  fullName: System.Array
+- uid: System.ArgumentOutOfRangeException
+- uid: System.ArgumentException
+- uid: '{T}[]'
+  isExternal: false
+  name: T[]
+  name.vb: T()
+  fullName: T[]
+  fullName.vb: T()
+  spec.csharp:
+  - name: T
+    fullName: T
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - name: T
+    fullName: T
+  - name: ()
+    fullName: ()
+- uid: '{T}'
+  isExternal: false
+  name: T
+  fullName: T
+- uid: System.Collections.Concurrent.ConcurrentStack`1.Push(`0)
+- uid: System.Collections.Concurrent.IProducerConsumerCollection{T}
+- uid: System.Collections.Concurrent.ConccurrentStack{T}
+- uid: System.Collections.Concurrent.ConcurrentStack`1.TryPop(`0@)
+- uid: System.Collections.Concurrent.ConcurrentStack`1.GetEnumerator
+- uid: System.Collections.Generic.IEnumerator{{T}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  name: IEnumerator<T>
+  name.vb: IEnumerator(Of T)
+  fullName: System.Collections.Generic.IEnumerator<T>
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerator<T>
+  name.vb: IEnumerator(Of T)
+  fullName: System.Collections.Generic.IEnumerator<T>
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  fullName: System.Collections.IEnumerator

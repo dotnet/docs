@@ -1,0 +1,82 @@
+items:
+- uid: System.Reflection.ManifestResourceAttributes
+  id: ManifestResourceAttributes
+  parent: System.Reflection
+  children:
+  - System.Reflection.ManifestResourceAttributes.Private
+  - System.Reflection.ManifestResourceAttributes.Public
+  - System.Reflection.ManifestResourceAttributes.VisibilityMask
+  href: System.Reflection.ManifestResourceAttributes.yml
+  name: ManifestResourceAttributes
+  fullName: System.Reflection.ManifestResourceAttributes
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+    startLine: 135
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection
+  syntax:
+    content: public enum ManifestResourceAttributes
+    content.vb: Public Enum ManifestResourceAttributes
+- uid: System.Reflection.ManifestResourceAttributes.Public
+  id: Public
+  parent: System.Reflection.ManifestResourceAttributes
+  href: System.Reflection.ManifestResourceAttributes.yml
+  name: Public
+  fullName: System.Reflection.ManifestResourceAttributes.Public
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+    startLine: 141
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection
+  summary: The Resource is exported from the Assembly
+  syntax:
+    content: Public = 1
+- uid: System.Reflection.ManifestResourceAttributes.Private
+  id: Private
+  parent: System.Reflection.ManifestResourceAttributes
+  href: System.Reflection.ManifestResourceAttributes.yml
+  name: Private
+  fullName: System.Reflection.ManifestResourceAttributes.Private
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+    startLine: 146
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection
+  summary: The Resource is not exported from the Assembly
+  syntax:
+    content: Private = 2
+- uid: System.Reflection.ManifestResourceAttributes.VisibilityMask
+  id: VisibilityMask
+  parent: System.Reflection.ManifestResourceAttributes
+  href: System.Reflection.ManifestResourceAttributes.yml
+  name: VisibilityMask
+  fullName: System.Reflection.ManifestResourceAttributes.VisibilityMask
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
+    startLine: 151
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection
+  summary: Masks just the visibility-related attributes.
+  syntax:
+    content: VisibilityMask = 7
+references:
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace

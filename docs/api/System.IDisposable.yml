@@ -1,0 +1,47 @@
+items:
+- uid: System.IDisposable
+  id: IDisposable
+  parent: System
+  children:
+  - System.IDisposable.Dispose
+  href: System.IDisposable.yml
+  name: IDisposable
+  fullName: System.IDisposable
+  type: Interface
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/IDisposable.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/IDisposable.cs
+    startLine: 52
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Provides a mechanism for releasing unmanaged resources.To browse the .NET Framework source code for this type, see the Reference Source.
+  syntax:
+    content: public interface IDisposable
+    content.vb: Public Interface IDisposable
+- uid: System.IDisposable.Dispose
+  id: Dispose
+  parent: System.IDisposable
+  href: System.IDisposable.yml
+  name: Dispose()
+  fullName: System.IDisposable.Dispose()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IDisposable.cs
+    startLine: 54
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  syntax:
+    content: void Dispose()
+    content.vb: Sub Dispose
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

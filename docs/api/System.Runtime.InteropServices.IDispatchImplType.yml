@@ -1,0 +1,83 @@
+items:
+- uid: System.Runtime.InteropServices.IDispatchImplType
+  id: IDispatchImplType
+  parent: System.Runtime.InteropServices
+  children:
+  - System.Runtime.InteropServices.IDispatchImplType.CompatibleImpl
+  - System.Runtime.InteropServices.IDispatchImplType.InternalImpl
+  - System.Runtime.InteropServices.IDispatchImplType.SystemDefinedImpl
+  href: System.Runtime.InteropServices.IDispatchImplType.yml
+  name: IDispatchImplType
+  fullName: System.Runtime.InteropServices.IDispatchImplType
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 214
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates which IDispatch implementation to use for a particular class.
+  syntax:
+    content: public enum IDispatchImplType
+    content.vb: Public Enum IDispatchImplType
+- uid: System.Runtime.InteropServices.IDispatchImplType.SystemDefinedImpl
+  id: SystemDefinedImpl
+  parent: System.Runtime.InteropServices.IDispatchImplType
+  href: System.Runtime.InteropServices.IDispatchImplType.yml
+  name: SystemDefinedImpl
+  fullName: System.Runtime.InteropServices.IDispatchImplType.SystemDefinedImpl
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 219
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Specifies that the common language runtime decides which IDispatch implementation to use.
+  syntax:
+    content: SystemDefinedImpl = 0
+- uid: System.Runtime.InteropServices.IDispatchImplType.InternalImpl
+  id: InternalImpl
+  parent: System.Runtime.InteropServices.IDispatchImplType
+  href: System.Runtime.InteropServices.IDispatchImplType.yml
+  name: InternalImpl
+  fullName: System.Runtime.InteropServices.IDispatchImplType.InternalImpl
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 220
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Specifies that the IDispatch implemenation is supplied by the runtime.
+  syntax:
+    content: InternalImpl = 1
+- uid: System.Runtime.InteropServices.IDispatchImplType.CompatibleImpl
+  id: CompatibleImpl
+  parent: System.Runtime.InteropServices.IDispatchImplType
+  href: System.Runtime.InteropServices.IDispatchImplType.yml
+  name: CompatibleImpl
+  fullName: System.Runtime.InteropServices.IDispatchImplType.CompatibleImpl
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 221
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Specifies that the IDispatch implementation is supplied by passing the type information for the object to the COM CreateStdDispatch API method.
+  syntax:
+    content: CompatibleImpl = 2
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace

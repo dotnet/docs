@@ -1,0 +1,317 @@
+items:
+- uid: System.Reflection.MethodImplAttributes
+  id: MethodImplAttributes
+  parent: System.Reflection
+  children:
+  - System.Reflection.MethodImplAttributes.AggressiveInlining
+  - System.Reflection.MethodImplAttributes.CodeTypeMask
+  - System.Reflection.MethodImplAttributes.ForwardRef
+  - System.Reflection.MethodImplAttributes.IL
+  - System.Reflection.MethodImplAttributes.InternalCall
+  - System.Reflection.MethodImplAttributes.Managed
+  - System.Reflection.MethodImplAttributes.ManagedMask
+  - System.Reflection.MethodImplAttributes.MaxMethodImplVal
+  - System.Reflection.MethodImplAttributes.Native
+  - System.Reflection.MethodImplAttributes.NoInlining
+  - System.Reflection.MethodImplAttributes.NoOptimization
+  - System.Reflection.MethodImplAttributes.OPTIL
+  - System.Reflection.MethodImplAttributes.PreserveSig
+  - System.Reflection.MethodImplAttributes.Runtime
+  - System.Reflection.MethodImplAttributes.Synchronized
+  - System.Reflection.MethodImplAttributes.Unmanaged
+  href: System.Reflection.MethodImplAttributes.yml
+  name: MethodImplAttributes
+  fullName: System.Reflection.MethodImplAttributes
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Reflection/MethodImplAttributes.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Reflection/MethodImplAttributes.cs
+    startLine: 10
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies flags for the attributes of a method implementation.
+  syntax:
+    content: public enum MethodImplAttributes
+    content.vb: Public Enum MethodImplAttributes
+- uid: System.Reflection.MethodImplAttributes.CodeTypeMask
+  id: CodeTypeMask
+  parent: System.Reflection.MethodImplAttributes
+  href: System.Reflection.MethodImplAttributes.yml
+  name: CodeTypeMask
+  fullName: System.Reflection.MethodImplAttributes.CodeTypeMask
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodImplAttributes.cs
+    startLine: 15
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies flags about code type.
+  syntax:
+    content: CodeTypeMask = 3
+- uid: System.Reflection.MethodImplAttributes.IL
+  id: IL
+  parent: System.Reflection.MethodImplAttributes
+  href: System.Reflection.MethodImplAttributes.yml
+  name: IL
+  fullName: System.Reflection.MethodImplAttributes.IL
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodImplAttributes.cs
+    startLine: 16
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the method implementation is in Microsoft intermediate language (MSIL).
+  syntax:
+    content: IL = 0
+- uid: System.Reflection.MethodImplAttributes.Native
+  id: Native
+  parent: System.Reflection.MethodImplAttributes
+  href: System.Reflection.MethodImplAttributes.yml
+  name: Native
+  fullName: System.Reflection.MethodImplAttributes.Native
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodImplAttributes.cs
+    startLine: 17
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the method implementation is native.
+  syntax:
+    content: Native = 1
+- uid: System.Reflection.MethodImplAttributes.OPTIL
+  id: OPTIL
+  parent: System.Reflection.MethodImplAttributes
+  href: System.Reflection.MethodImplAttributes.yml
+  name: OPTIL
+  fullName: System.Reflection.MethodImplAttributes.OPTIL
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodImplAttributes.cs
+    startLine: 19
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the method implementation is in Optimized Intermediate Language (OPTIL).
+  syntax:
+    content: OPTIL = 2
+- uid: System.Reflection.MethodImplAttributes.Runtime
+  id: Runtime
+  parent: System.Reflection.MethodImplAttributes
+  href: System.Reflection.MethodImplAttributes.yml
+  name: Runtime
+  fullName: System.Reflection.MethodImplAttributes.Runtime
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodImplAttributes.cs
+    startLine: 20
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the method implementation is provided by the runtime.
+  syntax:
+    content: Runtime = 3
+- uid: System.Reflection.MethodImplAttributes.ManagedMask
+  id: ManagedMask
+  parent: System.Reflection.MethodImplAttributes
+  href: System.Reflection.MethodImplAttributes.yml
+  name: ManagedMask
+  fullName: System.Reflection.MethodImplAttributes.ManagedMask
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodImplAttributes.cs
+    startLine: 24
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies whether the method is implemented in managed or unmanaged code.
+  syntax:
+    content: ManagedMask = 4
+- uid: System.Reflection.MethodImplAttributes.Unmanaged
+  id: Unmanaged
+  parent: System.Reflection.MethodImplAttributes
+  href: System.Reflection.MethodImplAttributes.yml
+  name: Unmanaged
+  fullName: System.Reflection.MethodImplAttributes.Unmanaged
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodImplAttributes.cs
+    startLine: 25
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the method is implemented in unmanaged code.
+  syntax:
+    content: Unmanaged = 4
+- uid: System.Reflection.MethodImplAttributes.Managed
+  id: Managed
+  parent: System.Reflection.MethodImplAttributes
+  href: System.Reflection.MethodImplAttributes.yml
+  name: Managed
+  fullName: System.Reflection.MethodImplAttributes.Managed
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodImplAttributes.cs
+    startLine: 26
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the method is implemented in managed code.
+  syntax:
+    content: Managed = 0
+- uid: System.Reflection.MethodImplAttributes.ForwardRef
+  id: ForwardRef
+  parent: System.Reflection.MethodImplAttributes
+  href: System.Reflection.MethodImplAttributes.yml
+  name: ForwardRef
+  fullName: System.Reflection.MethodImplAttributes.ForwardRef
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodImplAttributes.cs
+    startLine: 30
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the method is not defined.
+  syntax:
+    content: ForwardRef = 16
+- uid: System.Reflection.MethodImplAttributes.PreserveSig
+  id: PreserveSig
+  parent: System.Reflection.MethodImplAttributes
+  href: System.Reflection.MethodImplAttributes.yml
+  name: PreserveSig
+  fullName: System.Reflection.MethodImplAttributes.PreserveSig
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodImplAttributes.cs
+    startLine: 31
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the method signature is exported exactly as declared.
+  syntax:
+    content: PreserveSig = 128
+- uid: System.Reflection.MethodImplAttributes.InternalCall
+  id: InternalCall
+  parent: System.Reflection.MethodImplAttributes
+  href: System.Reflection.MethodImplAttributes.yml
+  name: InternalCall
+  fullName: System.Reflection.MethodImplAttributes.InternalCall
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodImplAttributes.cs
+    startLine: 33
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies an internal call.
+  syntax:
+    content: InternalCall = 4096
+- uid: System.Reflection.MethodImplAttributes.Synchronized
+  id: Synchronized
+  parent: System.Reflection.MethodImplAttributes
+  href: System.Reflection.MethodImplAttributes.yml
+  name: Synchronized
+  fullName: System.Reflection.MethodImplAttributes.Synchronized
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodImplAttributes.cs
+    startLine: 35
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the method is single-threaded through the body. Static methods (Shared in Visual Basic) lock on the type, whereas instance methods lock on the instance. You can also use the C# lock statement or the Visual Basic SyncLock statement for this purpose.
+  syntax:
+    content: Synchronized = 32
+- uid: System.Reflection.MethodImplAttributes.NoInlining
+  id: NoInlining
+  parent: System.Reflection.MethodImplAttributes
+  href: System.Reflection.MethodImplAttributes.yml
+  name: NoInlining
+  fullName: System.Reflection.MethodImplAttributes.NoInlining
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodImplAttributes.cs
+    startLine: 36
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the method cannot be inlined.
+  syntax:
+    content: NoInlining = 8
+- uid: System.Reflection.MethodImplAttributes.AggressiveInlining
+  id: AggressiveInlining
+  parent: System.Reflection.MethodImplAttributes
+  href: System.Reflection.MethodImplAttributes.yml
+  name: AggressiveInlining
+  fullName: System.Reflection.MethodImplAttributes.AggressiveInlining
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodImplAttributes.cs
+    startLine: 37
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the method should be inlined wherever possible.
+  syntax:
+    content: AggressiveInlining = 256
+- uid: System.Reflection.MethodImplAttributes.NoOptimization
+  id: NoOptimization
+  parent: System.Reflection.MethodImplAttributes
+  href: System.Reflection.MethodImplAttributes.yml
+  name: NoOptimization
+  fullName: System.Reflection.MethodImplAttributes.NoOptimization
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodImplAttributes.cs
+    startLine: 39
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the method is not optimized by the just-in-time (JIT) compiler or by native code generation (see Ngen.exe) when debugging possible code generation problems.
+  syntax:
+    content: NoOptimization = 64
+- uid: System.Reflection.MethodImplAttributes.MaxMethodImplVal
+  id: MaxMethodImplVal
+  parent: System.Reflection.MethodImplAttributes
+  href: System.Reflection.MethodImplAttributes.yml
+  name: MaxMethodImplVal
+  fullName: System.Reflection.MethodImplAttributes.MaxMethodImplVal
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/MethodImplAttributes.cs
+    startLine: 41
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies a range check value.
+  syntax:
+    content: MaxMethodImplVal = 65535
+references:
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace

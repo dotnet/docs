@@ -1,0 +1,155 @@
+items:
+- uid: System.ServiceProcess.ServiceControllerStatus
+  id: ServiceControllerStatus
+  parent: System.ServiceProcess
+  children:
+  - System.ServiceProcess.ServiceControllerStatus.ContinuePending
+  - System.ServiceProcess.ServiceControllerStatus.Paused
+  - System.ServiceProcess.ServiceControllerStatus.PausePending
+  - System.ServiceProcess.ServiceControllerStatus.Running
+  - System.ServiceProcess.ServiceControllerStatus.StartPending
+  - System.ServiceProcess.ServiceControllerStatus.Stopped
+  - System.ServiceProcess.ServiceControllerStatus.StopPending
+  href: System.ServiceProcess.ServiceControllerStatus.yml
+  name: ServiceControllerStatus
+  fullName: System.ServiceProcess.ServiceControllerStatus
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.ServiceProcess.ServiceController/src/System/ServiceProcess/ServiceControllerStatus.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.ServiceProcess.ServiceController/src/System/ServiceProcess/ServiceControllerStatus.cs
+    startLine: 5
+  assemblies:
+  - System.ServiceProcess.ServiceController
+  namespace: System.ServiceProcess
+  summary: Indicates the current state of the service.
+  syntax:
+    content: public enum ServiceControllerStatus
+    content.vb: Public Enum ServiceControllerStatus
+- uid: System.ServiceProcess.ServiceControllerStatus.ContinuePending
+  id: ContinuePending
+  parent: System.ServiceProcess.ServiceControllerStatus
+  href: System.ServiceProcess.ServiceControllerStatus.yml
+  name: ContinuePending
+  fullName: System.ServiceProcess.ServiceControllerStatus.ContinuePending
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.ServiceProcess.ServiceController/src/System/ServiceProcess/ServiceControllerStatus.cs
+    startLine: 7
+  assemblies:
+  - System.ServiceProcess.ServiceController
+  namespace: System.ServiceProcess
+  summary: The service continue is pending. This corresponds to the Win32 SERVICE_CONTINUE_PENDING constant, which is defined as 0x00000005.
+  syntax:
+    content: ContinuePending = 5
+- uid: System.ServiceProcess.ServiceControllerStatus.Paused
+  id: Paused
+  parent: System.ServiceProcess.ServiceControllerStatus
+  href: System.ServiceProcess.ServiceControllerStatus.yml
+  name: Paused
+  fullName: System.ServiceProcess.ServiceControllerStatus.Paused
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.ServiceProcess.ServiceController/src/System/ServiceProcess/ServiceControllerStatus.cs
+    startLine: 8
+  assemblies:
+  - System.ServiceProcess.ServiceController
+  namespace: System.ServiceProcess
+  summary: The service is paused. This corresponds to the Win32 SERVICE_PAUSED constant, which is defined as 0x00000007.
+  syntax:
+    content: Paused = 7
+- uid: System.ServiceProcess.ServiceControllerStatus.PausePending
+  id: PausePending
+  parent: System.ServiceProcess.ServiceControllerStatus
+  href: System.ServiceProcess.ServiceControllerStatus.yml
+  name: PausePending
+  fullName: System.ServiceProcess.ServiceControllerStatus.PausePending
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.ServiceProcess.ServiceController/src/System/ServiceProcess/ServiceControllerStatus.cs
+    startLine: 9
+  assemblies:
+  - System.ServiceProcess.ServiceController
+  namespace: System.ServiceProcess
+  summary: The service pause is pending. This corresponds to the Win32 SERVICE_PAUSE_PENDING constant, which is defined as 0x00000006.
+  syntax:
+    content: PausePending = 6
+- uid: System.ServiceProcess.ServiceControllerStatus.Running
+  id: Running
+  parent: System.ServiceProcess.ServiceControllerStatus
+  href: System.ServiceProcess.ServiceControllerStatus.yml
+  name: Running
+  fullName: System.ServiceProcess.ServiceControllerStatus.Running
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.ServiceProcess.ServiceController/src/System/ServiceProcess/ServiceControllerStatus.cs
+    startLine: 10
+  assemblies:
+  - System.ServiceProcess.ServiceController
+  namespace: System.ServiceProcess
+  summary: The service is running. This corresponds to the Win32 SERVICE_RUNNING constant, which is defined as 0x00000004.
+  syntax:
+    content: Running = 4
+- uid: System.ServiceProcess.ServiceControllerStatus.StartPending
+  id: StartPending
+  parent: System.ServiceProcess.ServiceControllerStatus
+  href: System.ServiceProcess.ServiceControllerStatus.yml
+  name: StartPending
+  fullName: System.ServiceProcess.ServiceControllerStatus.StartPending
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.ServiceProcess.ServiceController/src/System/ServiceProcess/ServiceControllerStatus.cs
+    startLine: 11
+  assemblies:
+  - System.ServiceProcess.ServiceController
+  namespace: System.ServiceProcess
+  summary: The service is starting. This corresponds to the Win32 SERVICE_START_PENDING constant, which is defined as 0x00000002.
+  syntax:
+    content: StartPending = 2
+- uid: System.ServiceProcess.ServiceControllerStatus.Stopped
+  id: Stopped
+  parent: System.ServiceProcess.ServiceControllerStatus
+  href: System.ServiceProcess.ServiceControllerStatus.yml
+  name: Stopped
+  fullName: System.ServiceProcess.ServiceControllerStatus.Stopped
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.ServiceProcess.ServiceController/src/System/ServiceProcess/ServiceControllerStatus.cs
+    startLine: 12
+  assemblies:
+  - System.ServiceProcess.ServiceController
+  namespace: System.ServiceProcess
+  summary: The service is not running. This corresponds to the Win32 SERVICE_STOPPED constant, which is defined as 0x00000001.
+  syntax:
+    content: Stopped = 1
+- uid: System.ServiceProcess.ServiceControllerStatus.StopPending
+  id: StopPending
+  parent: System.ServiceProcess.ServiceControllerStatus
+  href: System.ServiceProcess.ServiceControllerStatus.yml
+  name: StopPending
+  fullName: System.ServiceProcess.ServiceControllerStatus.StopPending
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.ServiceProcess.ServiceController/src/System/ServiceProcess/ServiceControllerStatus.cs
+    startLine: 13
+  assemblies:
+  - System.ServiceProcess.ServiceController
+  namespace: System.ServiceProcess
+  summary: The service is stopping. This corresponds to the Win32 SERVICE_STOP_PENDING constant, which is defined as 0x00000003.
+  syntax:
+    content: StopPending = 3
+references:
+- uid: System.ServiceProcess
+  isExternal: false
+  name: System.ServiceProcess
+  fullName: System.ServiceProcess
+  type: Namespace

@@ -1,0 +1,135 @@
+items:
+- uid: System.IAsyncResult
+  id: IAsyncResult
+  parent: System
+  children:
+  - System.IAsyncResult.AsyncState
+  - System.IAsyncResult.AsyncWaitHandle
+  - System.IAsyncResult.CompletedSynchronously
+  - System.IAsyncResult.IsCompleted
+  href: System.IAsyncResult.yml
+  name: IAsyncResult
+  fullName: System.IAsyncResult
+  type: Interface
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/IAsyncResult.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/IAsyncResult.cs
+    startLine: 15
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Represents the status of an asynchronous operation.
+  syntax:
+    content: public interface IAsyncResult
+    content.vb: Public Interface IAsyncResult
+- uid: System.IAsyncResult.IsCompleted
+  id: IsCompleted
+  parent: System.IAsyncResult
+  href: System.IAsyncResult.yml
+  name: IsCompleted
+  fullName: System.IAsyncResult.IsCompleted
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IAsyncResult.cs
+    startLine: 18
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets a value that indicates whether the asynchronous operation has completed.
+  syntax:
+    content: bool IsCompleted { get; }
+    content.vb: ReadOnly Property IsCompleted As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.IAsyncResult.AsyncWaitHandle
+  id: AsyncWaitHandle
+  parent: System.IAsyncResult
+  href: System.IAsyncResult.yml
+  name: AsyncWaitHandle
+  fullName: System.IAsyncResult.AsyncWaitHandle
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IAsyncResult.cs
+    startLine: 20
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets a @'System.Threading.WaitHandle' that is used to wait for an asynchronous operation to complete.
+  syntax:
+    content: WaitHandle AsyncWaitHandle { get; }
+    content.vb: ReadOnly Property AsyncWaitHandle As WaitHandle
+    parameters: []
+    return:
+      type: System.Threading.WaitHandle
+- uid: System.IAsyncResult.AsyncState
+  id: AsyncState
+  parent: System.IAsyncResult
+  href: System.IAsyncResult.yml
+  name: AsyncState
+  fullName: System.IAsyncResult.AsyncState
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IAsyncResult.cs
+    startLine: 23
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets a user-defined object that qualifies or contains information about an asynchronous operation.
+  syntax:
+    content: object AsyncState { get; }
+    content.vb: ReadOnly Property AsyncState As Object
+    parameters: []
+    return:
+      type: System.Object
+- uid: System.IAsyncResult.CompletedSynchronously
+  id: CompletedSynchronously
+  parent: System.IAsyncResult
+  href: System.IAsyncResult.yml
+  name: CompletedSynchronously
+  fullName: System.IAsyncResult.CompletedSynchronously
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IAsyncResult.cs
+    startLine: 25
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets a value that indicates whether the asynchronous operation completed synchronously.
+  syntax:
+    content: bool CompletedSynchronously { get; }
+    content.vb: ReadOnly Property CompletedSynchronously As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Threading.WaitHandle
+  parent: System.Threading
+  isExternal: true
+  name: WaitHandle
+  fullName: System.Threading.WaitHandle
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object

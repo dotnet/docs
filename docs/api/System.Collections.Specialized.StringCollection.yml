@@ -1,0 +1,967 @@
+items:
+- uid: System.Collections.Specialized.StringCollection
+  id: StringCollection
+  parent: System.Collections.Specialized
+  children:
+  - System.Collections.Specialized.StringCollection.Add(System.String)
+  - System.Collections.Specialized.StringCollection.AddRange(System.String[])
+  - System.Collections.Specialized.StringCollection.Clear
+  - System.Collections.Specialized.StringCollection.Contains(System.String)
+  - System.Collections.Specialized.StringCollection.CopyTo(System.String[],System.Int32)
+  - System.Collections.Specialized.StringCollection.Count
+  - System.Collections.Specialized.StringCollection.GetEnumerator
+  - System.Collections.Specialized.StringCollection.IndexOf(System.String)
+  - System.Collections.Specialized.StringCollection.Insert(System.Int32,System.String)
+  - System.Collections.Specialized.StringCollection.IsReadOnly
+  - System.Collections.Specialized.StringCollection.IsSynchronized
+  - System.Collections.Specialized.StringCollection.Item(System.Int32)
+  - System.Collections.Specialized.StringCollection.Remove(System.String)
+  - System.Collections.Specialized.StringCollection.RemoveAt(System.Int32)
+  - System.Collections.Specialized.StringCollection.SyncRoot
+  - System.Collections.Specialized.StringCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  - System.Collections.Specialized.StringCollection.System#Collections#IEnumerable#GetEnumerator
+  - System.Collections.Specialized.StringCollection.System#Collections#IList#Add(System.Object)
+  - System.Collections.Specialized.StringCollection.System#Collections#IList#Contains(System.Object)
+  - System.Collections.Specialized.StringCollection.System#Collections#IList#IndexOf(System.Object)
+  - System.Collections.Specialized.StringCollection.System#Collections#IList#Insert(System.Int32,System.Object)
+  - System.Collections.Specialized.StringCollection.System#Collections#IList#IsFixedSize
+  - System.Collections.Specialized.StringCollection.System#Collections#IList#IsReadOnly
+  - System.Collections.Specialized.StringCollection.System#Collections#IList#Item(System.Int32)
+  - System.Collections.Specialized.StringCollection.System#Collections#IList#Remove(System.Object)
+  href: System.Collections.Specialized.StringCollection.yml
+  name: StringCollection
+  fullName: System.Collections.Specialized.StringCollection
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Collections.Specialized/src/System/Collections/Specialized/StringCollection.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/StringCollection.cs
+    startLine: 11
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Represents a collection of strings.
+  syntax:
+    content: 'public class StringCollection : IList, ICollection, IEnumerable'
+    content.vb: Public Class StringCollection Implements IList, ICollection, IEnumerable
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.IList
+  - System.Collections.ICollection
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Collections.Specialized.StringCollection.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: System.Collections.Specialized.StringCollection
+  href: System.Collections.Specialized.StringCollection.yml
+  name: Item[Int32]
+  name.vb: Item(Int32)
+  fullName: System.Collections.Specialized.StringCollection.Item[System.Int32]
+  fullName.vb: System.Collections.Specialized.StringCollection.Item(System.Int32)
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/StringCollection.cs
+    startLine: 18
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Gets or sets the element at the specified index.
+  syntax:
+    content: public string this[int index] { get; set; }
+    content.vb: Public Property Item(index As Integer) As String
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the entry to get or set.
+    return:
+      type: System.String
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero.-or- *index* is equal to or greater than @''System.Collections.Specialized.StringCollection.Count''.'
+- uid: System.Collections.Specialized.StringCollection.Count
+  id: Count
+  parent: System.Collections.Specialized.StringCollection
+  href: System.Collections.Specialized.StringCollection.yml
+  name: Count
+  fullName: System.Collections.Specialized.StringCollection.Count
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/StringCollection.cs
+    startLine: 34
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Gets the number of strings contained in the @'System.Collections.Specialized.StringCollection'.
+  syntax:
+    content: public int Count { get; }
+    content.vb: Public ReadOnly Property Count As Integer
+    parameters: []
+    return:
+      type: System.Int32
+- uid: System.Collections.Specialized.StringCollection.System#Collections#IList#IsReadOnly
+  id: System#Collections#IList#IsReadOnly
+  parent: System.Collections.Specialized.StringCollection
+  href: System.Collections.Specialized.StringCollection.yml
+  name: IList.IsReadOnly
+  name.vb: System.Collections.IList.IsReadOnly
+  fullName: System.Collections.Specialized.StringCollection.System.Collections.IList.IsReadOnly
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/StringCollection.cs
+    startLine: 42
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Gets a value indicating whether the @'System.Collections.Specialized.StringCollection' object is read-only.
+  syntax:
+    content: bool IList.IsReadOnly { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.IList.IsReadOnly As Boolean Implements IList.IsReadOnly
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Collections.Specialized.StringCollection.System#Collections#IList#IsFixedSize
+  id: System#Collections#IList#IsFixedSize
+  parent: System.Collections.Specialized.StringCollection
+  href: System.Collections.Specialized.StringCollection.yml
+  name: IList.IsFixedSize
+  name.vb: System.Collections.IList.IsFixedSize
+  fullName: System.Collections.Specialized.StringCollection.System.Collections.IList.IsFixedSize
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/StringCollection.cs
+    startLine: 50
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Gets a value indicating whether the @'System.Collections.Specialized.StringCollection' object has a fixed size.
+  syntax:
+    content: bool IList.IsFixedSize { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.IList.IsFixedSize As Boolean Implements IList.IsFixedSize
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Collections.Specialized.StringCollection.Add(System.String)
+  id: Add(System.String)
+  parent: System.Collections.Specialized.StringCollection
+  href: System.Collections.Specialized.StringCollection.yml
+  name: Add(String)
+  fullName: System.Collections.Specialized.StringCollection.Add(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/StringCollection.cs
+    startLine: 63
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Adds a string to the end of the @'System.Collections.Specialized.StringCollection'.
+  syntax:
+    content: public int Add(string value)
+    content.vb: Public Function Add(value As String) As Integer
+    parameters:
+    - id: value
+      type: System.String
+      description: The string to add to the end of the @'System.Collections.Specialized.StringCollection'. The value can be null.
+    return:
+      type: System.Int32
+- uid: System.Collections.Specialized.StringCollection.AddRange(System.String[])
+  id: AddRange(System.String[])
+  parent: System.Collections.Specialized.StringCollection
+  href: System.Collections.Specialized.StringCollection.yml
+  name: AddRange(String[])
+  name.vb: AddRange(String())
+  fullName: System.Collections.Specialized.StringCollection.AddRange(System.String[])
+  fullName.vb: System.Collections.Specialized.StringCollection.AddRange(System.String())
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/StringCollection.cs
+    startLine: 71
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Copies the elements of a string array to the end of the @'System.Collections.Specialized.StringCollection'.
+  syntax:
+    content: public void AddRange(string[] value)
+    content.vb: Public Sub AddRange(value As String())
+    parameters:
+    - id: value
+      type: System.String[]
+      description: An array of strings to add to the end of the @'System.Collections.Specialized.StringCollection'. The array itself can not be null but it can contain elements that are null.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*value* is null.'
+- uid: System.Collections.Specialized.StringCollection.Clear
+  id: Clear
+  parent: System.Collections.Specialized.StringCollection
+  href: System.Collections.Specialized.StringCollection.yml
+  name: Clear()
+  fullName: System.Collections.Specialized.StringCollection.Clear()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/StringCollection.cs
+    startLine: 84
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Removes all the strings from the @'System.Collections.Specialized.StringCollection'.
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear
+- uid: System.Collections.Specialized.StringCollection.Contains(System.String)
+  id: Contains(System.String)
+  parent: System.Collections.Specialized.StringCollection
+  href: System.Collections.Specialized.StringCollection.yml
+  name: Contains(String)
+  fullName: System.Collections.Specialized.StringCollection.Contains(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/StringCollection.cs
+    startLine: 94
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Determines whether the specified string is in the @'System.Collections.Specialized.StringCollection'.
+  syntax:
+    content: public bool Contains(string value)
+    content.vb: Public Function Contains(value As String) As Boolean
+    parameters:
+    - id: value
+      type: System.String
+      description: The string to locate in the @'System.Collections.Specialized.StringCollection'. The value can be null.
+    return:
+      type: System.Boolean
+- uid: System.Collections.Specialized.StringCollection.CopyTo(System.String[],System.Int32)
+  id: CopyTo(System.String[],System.Int32)
+  parent: System.Collections.Specialized.StringCollection
+  href: System.Collections.Specialized.StringCollection.yml
+  name: CopyTo(String[], Int32)
+  name.vb: CopyTo(String(), Int32)
+  fullName: System.Collections.Specialized.StringCollection.CopyTo(System.String[], System.Int32)
+  fullName.vb: System.Collections.Specialized.StringCollection.CopyTo(System.String(), System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/StringCollection.cs
+    startLine: 103
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Copies the entire @'System.Collections.Specialized.StringCollection' values to a one-dimensional array of strings, starting at the specified index of the target array.
+  syntax:
+    content: public void CopyTo(string[] array, int index)
+    content.vb: Public Sub CopyTo(array As String(), index As Integer)
+    parameters:
+    - id: array
+      type: System.String[]
+      description: The one-dimensional array of strings that is the destination of the elements copied from @'System.Collections.Specialized.StringCollection'. The @'System.Array' must have zero-based indexing.
+    - id: index
+      type: System.Int32
+      description: The zero-based index in *array* at which copying begins.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero.'
+  - type: System.ArgumentException
+    description: '*array* is multidimensional.-or- The number of elements in the source @''System.Collections.Specialized.StringCollection'' is greater than the available space from *index* to the end of the destination *array*.'
+  - type: System.InvalidCastException
+    description: The type of the source @'System.Collections.Specialized.StringCollection' cannot be cast automatically to the type of the destination *array*.
+- uid: System.Collections.Specialized.StringCollection.GetEnumerator
+  id: GetEnumerator
+  parent: System.Collections.Specialized.StringCollection
+  href: System.Collections.Specialized.StringCollection.yml
+  name: GetEnumerator()
+  fullName: System.Collections.Specialized.StringCollection.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/StringCollection.cs
+    startLine: 112
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Returns a @'System.Collections.Specialized.StringEnumerator' that iterates through the @'System.Collections.Specialized.StringCollection'.
+  syntax:
+    content: public StringEnumerator GetEnumerator()
+    content.vb: Public Function GetEnumerator As StringEnumerator
+    return:
+      type: System.Collections.Specialized.StringEnumerator
+- uid: System.Collections.Specialized.StringCollection.IndexOf(System.String)
+  id: IndexOf(System.String)
+  parent: System.Collections.Specialized.StringCollection
+  href: System.Collections.Specialized.StringCollection.yml
+  name: IndexOf(String)
+  fullName: System.Collections.Specialized.StringCollection.IndexOf(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/StringCollection.cs
+    startLine: 121
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Searches for the specified string and returns the zero-based index of the first occurrence within the @'System.Collections.Specialized.StringCollection'.
+  syntax:
+    content: public int IndexOf(string value)
+    content.vb: Public Function IndexOf(value As String) As Integer
+    parameters:
+    - id: value
+      type: System.String
+      description: The string to locate. The value can be null.
+    return:
+      type: System.Int32
+- uid: System.Collections.Specialized.StringCollection.Insert(System.Int32,System.String)
+  id: Insert(System.Int32,System.String)
+  parent: System.Collections.Specialized.StringCollection
+  href: System.Collections.Specialized.StringCollection.yml
+  name: Insert(Int32, String)
+  fullName: System.Collections.Specialized.StringCollection.Insert(System.Int32, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/StringCollection.cs
+    startLine: 130
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Inserts a string into the @'System.Collections.Specialized.StringCollection' at the specified index.
+  syntax:
+    content: public void Insert(int index, string value)
+    content.vb: Public Sub Insert(index As Integer, value As String)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index at which *value* is inserted.
+    - id: value
+      type: System.String
+      description: The string to insert. The value can be null.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero.-or- *index* greater than @''System.Collections.Specialized.StringCollection.Count''.'
+- uid: System.Collections.Specialized.StringCollection.IsReadOnly
+  id: IsReadOnly
+  parent: System.Collections.Specialized.StringCollection
+  href: System.Collections.Specialized.StringCollection.yml
+  name: IsReadOnly
+  fullName: System.Collections.Specialized.StringCollection.IsReadOnly
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/StringCollection.cs
+    startLine: 138
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Gets a value indicating whether the @'System.Collections.Specialized.StringCollection' is read-only.
+  syntax:
+    content: public bool IsReadOnly { get; }
+    content.vb: Public ReadOnly Property IsReadOnly As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Collections.Specialized.StringCollection.IsSynchronized
+  id: IsSynchronized
+  parent: System.Collections.Specialized.StringCollection
+  href: System.Collections.Specialized.StringCollection.yml
+  name: IsSynchronized
+  fullName: System.Collections.Specialized.StringCollection.IsSynchronized
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/StringCollection.cs
+    startLine: 151
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Gets a value indicating whether access to the @'System.Collections.Specialized.StringCollection' is synchronized (thread safe).
+  syntax:
+    content: public bool IsSynchronized { get; }
+    content.vb: Public ReadOnly Property IsSynchronized As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Collections.Specialized.StringCollection.Remove(System.String)
+  id: Remove(System.String)
+  parent: System.Collections.Specialized.StringCollection
+  href: System.Collections.Specialized.StringCollection.yml
+  name: Remove(String)
+  fullName: System.Collections.Specialized.StringCollection.Remove(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/StringCollection.cs
+    startLine: 163
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Removes the first occurrence of a specific string from the @'System.Collections.Specialized.StringCollection'.
+  syntax:
+    content: public void Remove(string value)
+    content.vb: Public Sub Remove(value As String)
+    parameters:
+    - id: value
+      type: System.String
+      description: The string to remove from the @'System.Collections.Specialized.StringCollection'. The value can be null.
+- uid: System.Collections.Specialized.StringCollection.RemoveAt(System.Int32)
+  id: RemoveAt(System.Int32)
+  parent: System.Collections.Specialized.StringCollection
+  href: System.Collections.Specialized.StringCollection.yml
+  name: RemoveAt(Int32)
+  fullName: System.Collections.Specialized.StringCollection.RemoveAt(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/StringCollection.cs
+    startLine: 171
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Removes the string at the specified index of the @'System.Collections.Specialized.StringCollection'.
+  syntax:
+    content: public void RemoveAt(int index)
+    content.vb: Public Sub RemoveAt(index As Integer)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the string to remove.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero.-or- *index* is equal to or greater than @''System.Collections.Specialized.StringCollection.Count''.'
+- uid: System.Collections.Specialized.StringCollection.SyncRoot
+  id: SyncRoot
+  parent: System.Collections.Specialized.StringCollection
+  href: System.Collections.Specialized.StringCollection.yml
+  name: SyncRoot
+  fullName: System.Collections.Specialized.StringCollection.SyncRoot
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/StringCollection.cs
+    startLine: 179
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Gets an object that can be used to synchronize access to the @'System.Collections.Specialized.StringCollection'.
+  syntax:
+    content: public object SyncRoot { get; }
+    content.vb: Public ReadOnly Property SyncRoot As Object
+    parameters: []
+    return:
+      type: System.Object
+- uid: System.Collections.Specialized.StringCollection.System#Collections#IList#Item(System.Int32)
+  id: System#Collections#IList#Item(System.Int32)
+  parent: System.Collections.Specialized.StringCollection
+  href: System.Collections.Specialized.StringCollection.yml
+  name: IList.Item[Int32]
+  name.vb: System.Collections.IList.Item(Int32)
+  fullName: System.Collections.Specialized.StringCollection.System.Collections.IList.Item[System.Int32]
+  fullName.vb: System.Collections.Specialized.StringCollection.System.Collections.IList.Item(System.Int32)
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/StringCollection.cs
+    startLine: 187
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Gets or sets the element at the specified index.
+  syntax:
+    content: object IList.this[int index] { get; set; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.IList.Item(index As Integer) As Object Implements IList.this
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the element to get or set.
+    return:
+      type: System.Object
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero.-or- *index* is equal to or greater than @''System.Collections.Specialized.StringCollection.Count''.'
+- uid: System.Collections.Specialized.StringCollection.System#Collections#IList#Add(System.Object)
+  id: System#Collections#IList#Add(System.Object)
+  parent: System.Collections.Specialized.StringCollection
+  href: System.Collections.Specialized.StringCollection.yml
+  name: IList.Add(Object)
+  name.vb: System.Collections.IList.Add(Object)
+  fullName: System.Collections.Specialized.StringCollection.System.Collections.IList.Add(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/StringCollection.cs
+    startLine: 199
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Adds an object to the end of the @'System.Collections.Specialized.StringCollection'.
+  syntax:
+    content: int IList.Add(object value)
+    content.vb: Function System.Collections.IList.Add(value As Object) As Integer Implements IList.Add
+    parameters:
+    - id: value
+      type: System.Object
+      description: The @'System.Object' to be added to the end of the @'System.Collections.Specialized.StringCollection'. The value can be null.
+    return:
+      type: System.Int32
+  exceptions:
+  - type: System.NotSupportedException
+    description: The @'System.Collections.Specialized.StringCollection' is read-only.-or- The @'System.Collections.Specialized.StringCollection' has a fixed size.
+- uid: System.Collections.Specialized.StringCollection.System#Collections#IList#Contains(System.Object)
+  id: System#Collections#IList#Contains(System.Object)
+  parent: System.Collections.Specialized.StringCollection
+  href: System.Collections.Specialized.StringCollection.yml
+  name: IList.Contains(Object)
+  name.vb: System.Collections.IList.Contains(Object)
+  fullName: System.Collections.Specialized.StringCollection.System.Collections.IList.Contains(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/StringCollection.cs
+    startLine: 204
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Determines whether an element is in the @'System.Collections.Specialized.StringCollection'.
+  syntax:
+    content: bool IList.Contains(object value)
+    content.vb: Function System.Collections.IList.Contains(value As Object) As Boolean Implements IList.Contains
+    parameters:
+    - id: value
+      type: System.Object
+      description: The @'System.Object' to locate in the @'System.Collections.Specialized.StringCollection'. The value can be null.
+    return:
+      type: System.Boolean
+- uid: System.Collections.Specialized.StringCollection.System#Collections#IList#IndexOf(System.Object)
+  id: System#Collections#IList#IndexOf(System.Object)
+  parent: System.Collections.Specialized.StringCollection
+  href: System.Collections.Specialized.StringCollection.yml
+  name: IList.IndexOf(Object)
+  name.vb: System.Collections.IList.IndexOf(Object)
+  fullName: System.Collections.Specialized.StringCollection.System.Collections.IList.IndexOf(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/StringCollection.cs
+    startLine: 210
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Searches for the specified @'System.Object' and returns the zero-based index of the first occurrence within the entire @'System.Collections.Specialized.StringCollection'.
+  syntax:
+    content: int IList.IndexOf(object value)
+    content.vb: Function System.Collections.IList.IndexOf(value As Object) As Integer Implements IList.IndexOf
+    parameters:
+    - id: value
+      type: System.Object
+      description: The @'System.Object' to locate in the @'System.Collections.Specialized.StringCollection'. The value can be null.
+    return:
+      type: System.Int32
+- uid: System.Collections.Specialized.StringCollection.System#Collections#IList#Insert(System.Int32,System.Object)
+  id: System#Collections#IList#Insert(System.Int32,System.Object)
+  parent: System.Collections.Specialized.StringCollection
+  href: System.Collections.Specialized.StringCollection.yml
+  name: IList.Insert(Int32, Object)
+  name.vb: System.Collections.IList.Insert(Int32, Object)
+  fullName: System.Collections.Specialized.StringCollection.System.Collections.IList.Insert(System.Int32, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/StringCollection.cs
+    startLine: 215
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Inserts an element into the @'System.Collections.Specialized.StringCollection' at the specified index.
+  syntax:
+    content: void IList.Insert(int index, object value)
+    content.vb: Sub System.Collections.IList.Insert(index As Integer, value As Object) Implements IList.Insert
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index at which *value* should be inserted.
+    - id: value
+      type: System.Object
+      description: The @'System.Object' to insert. The value can be null.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero.-or- *index* is greater than @''System.Collections.Specialized.StringCollection.Count''.'
+  - type: System.NotSupportedException
+    description: The @'System.Collections.Specialized.StringCollection' is read-only.-or- The @'System.Collections.Specialized.StringCollection' has a fixed size.
+- uid: System.Collections.Specialized.StringCollection.System#Collections#IList#Remove(System.Object)
+  id: System#Collections#IList#Remove(System.Object)
+  parent: System.Collections.Specialized.StringCollection
+  href: System.Collections.Specialized.StringCollection.yml
+  name: IList.Remove(Object)
+  name.vb: System.Collections.IList.Remove(Object)
+  fullName: System.Collections.Specialized.StringCollection.System.Collections.IList.Remove(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/StringCollection.cs
+    startLine: 220
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Removes the first occurrence of a specific object from the @'System.Collections.Specialized.StringCollection'.
+  syntax:
+    content: void IList.Remove(object value)
+    content.vb: Sub System.Collections.IList.Remove(value As Object) Implements IList.Remove
+    parameters:
+    - id: value
+      type: System.Object
+      description: The @'System.Object' to remove from the @'System.Collections.Specialized.StringCollection'. The value can be null.
+  exceptions:
+  - type: System.NotSupportedException
+    description: The @'System.Collections.Specialized.StringCollection' is read-only.-or- The @'System.Collections.Specialized.StringCollection' has a fixed size.
+- uid: System.Collections.Specialized.StringCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  id: System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  parent: System.Collections.Specialized.StringCollection
+  href: System.Collections.Specialized.StringCollection.yml
+  name: ICollection.CopyTo(Array, Int32)
+  name.vb: System.Collections.ICollection.CopyTo(Array, Int32)
+  fullName: System.Collections.Specialized.StringCollection.System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/StringCollection.cs
+    startLine: 225
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Copies the entire @'System.Collections.Specialized.StringCollection' to a compatible one-dimensional @'System.Array', starting at the specified index of the target array.
+  syntax:
+    content: void ICollection.CopyTo(Array array, int index)
+    content.vb: Sub System.Collections.ICollection.CopyTo(array As Array, index As Integer) Implements ICollection.CopyTo
+    parameters:
+    - id: array
+      type: System.Array
+      description: The one-dimensional @'System.Array' that is the destination of the elements copied from @'System.Collections.Specialized.StringCollection'. The @'System.Array' must have zero-based indexing.
+    - id: index
+      type: System.Int32
+      description: The zero-based index in *array* at which copying begins.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero.'
+  - type: System.ArgumentException
+    description: '*array* is multidimensional.-or- The number of elements in the source @''System.Collections.Specialized.StringCollection'' is greater than the available space from *index* to the end of the destination *array*.'
+  - type: System.InvalidCastException
+    description: The type of the source @'System.Collections.Specialized.StringCollection' cannot be cast automatically to the type of the destination *array*.
+- uid: System.Collections.Specialized.StringCollection.System#Collections#IEnumerable#GetEnumerator
+  id: System#Collections#IEnumerable#GetEnumerator
+  parent: System.Collections.Specialized.StringCollection
+  href: System.Collections.Specialized.StringCollection.yml
+  name: IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: System.Collections.Specialized.StringCollection.System.Collections.IEnumerable.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/StringCollection.cs
+    startLine: 230
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Returns a @'System.Collections.IEnumerator' that iterates through the @'System.Collections.Specialized.StringCollection'.
+  syntax:
+    content: IEnumerator IEnumerable.GetEnumerator()
+    content.vb: Function System.Collections.IEnumerable.GetEnumerator As IEnumerator Implements IEnumerable.GetEnumerator
+    return:
+      type: System.Collections.IEnumerator
+references:
+- uid: System.Collections.Specialized
+  isExternal: false
+  name: System.Collections.Specialized
+  fullName: System.Collections.Specialized
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  name.vb: String()
+  fullName: System.String[]
+  fullName.vb: System.String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Collections.Specialized.StringEnumerator
+  parent: System.Collections.Specialized
+  isExternal: false
+  href: System.Collections.Specialized.StringEnumerator.yml
+  name: StringEnumerator
+  fullName: System.Collections.Specialized.StringEnumerator
+  type: Class
+- uid: System.Array
+  parent: System
+  isExternal: true
+  name: Array
+  fullName: System.Array
+- uid: System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  isExternal: false
+  name: System.Collections
+  fullName: System.Collections

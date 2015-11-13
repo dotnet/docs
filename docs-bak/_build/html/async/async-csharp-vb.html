@@ -1,0 +1,443 @@
+
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Async Programming in C#/VB &mdash; .NET Core Documentation 0.0.1 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+
+  
+    <link rel="top" title=".NET Core Documentation 0.0.1 documentation" href="../index.html"/>
+        <link rel="up" title="Asynchronous Programming with .NET" href="async-index.html"/>
+        <link rel="next" title="Async Programming in F#" href="async-fsharp.html"/>
+        <link rel="prev" title="Async Overview" href="async-overview.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> .NET Core Documentation
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/index.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../concepts/index.html">The .NET Primer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials-samples/index.html">Tutorials &amp; Samples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development/index.html">Developing using .NET Core</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../porting/index.html">Porting applications &amp; existing code to .NET Core</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../packaging/index.html">Packaging .NET Core Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deployment/index.html">Deploying .NET Core applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nuget/index.html">.NET Package Manager (NuGet)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../languages/index.html">Programming languages on the .NET Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bcl/index.html">Base Class Library</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="async-index.html">Asynchronous Programming with .NET</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="async-overview.html">Async Overview</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Async Programming in C#/VB</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="async-fsharp.html">Async Programming in F#</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">Advanced topics</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">.NET Core Documentation</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="async-index.html">Asynchronous Programming with .NET</a> &raquo;</li>
+      
+    <li>Async Programming in C#/VB</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/async/async-csharp-vb.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <noscript><img alt="" width="1" height="1" src="https://c.microsoft.com/trans_pixel.aspx"/></noscript><div class="section" id="async-programming-in-c-vb">
+<h1>Async Programming in C#/VB<a class="headerlink" href="#async-programming-in-c-vb" title="Permalink to this headline">¶</a></h1>
+<p>By <a class="reference external" href="https://github.com/cartermp">Phillip Carter</a></p>
+<p>Async programming in C# and VB share a language-level asynchronous programming model which allows for easily writing asynchronous code without having to juggle callbacks or conform to a library which supports asynchrony.  It follows what is known as the <a class="reference external" href="https://msdn.microsoft.com/en-us/library/hh873175(v=vs.110).aspx">Task-based Asynchronous Pattern (TAP)</a>.</p>
+<p>The core of TAP are the <code class="docutils literal"><span class="pre">Task</span></code> and <code class="docutils literal"><span class="pre">Task&lt;T&gt;</span></code> objects, which model asynchronous operations, supported by the <code class="docutils literal"><span class="pre">async</span></code> and <code class="docutils literal"><span class="pre">await</span></code> keywords (<code class="docutils literal"><span class="pre">Async</span></code> and <code class="docutils literal"><span class="pre">Await</span></code> in VB), which provide a natural developer experience for interacting with Tasks.  The result is the ability to write asynchronous code which cleanly expresses intent, as opposed to callbacks which express intent far less cleanly.  There are other ways to approach async code than <code class="docutils literal"><span class="pre">async</span></code> and <code class="docutils literal"><span class="pre">await</span></code> outlined in the TAP article linked above, but this document will focus on the language-level constructs from this point forward.</p>
+<p>For example, you may need to download some data from a web service when a button is pressed, but don&#8217;t want to block the UI thread.  It can be accomplished simply like this:</p>
+<div class="highlight-c#"><div class="highlight"><pre><span class="k">private</span> <span class="k">readonly</span> <span class="n">HttpClient</span> <span class="n">_httpClient</span> <span class="p">=</span> <span class="k">new</span> <span class="n">HttpClient</span><span class="p">();</span>
+
+<span class="p">...</span>
+
+<span class="n">button</span><span class="p">.</span><span class="n">Clicked</span> <span class="p">+=</span> <span class="k">async</span> <span class="p">(</span><span class="n">o</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span> <span class="p">=&gt;</span>
+<span class="p">{</span>
+    <span class="kt">var</span> <span class="n">stringData</span> <span class="p">=</span> <span class="k">await</span> <span class="n">_httpClient</span><span class="p">.</span><span class="n">DownloadStringAsync</span><span class="p">(</span><span class="n">URL</span><span class="p">);</span>
+    <span class="n">DoStuff</span><span class="p">(</span><span class="n">stringData</span><span class="p">);</span>
+<span class="p">};</span>
+</pre></div>
+</div>
+<p>And that&#8217;s it!  The code expresses the intent (downloading some data asynchronously) without getting bogged down in interacting with Task objects.</p>
+<p>For those who are more theoretically-inclined, this is an implementation of the <a class="reference external" href="https://en.wikipedia.org/wiki/Futures_and_promises">Future/Promise concurrency model</a>.</p>
+<p>A few important things to know before continuing:</p>
+<ul class="simple">
+<li>Async code uses <code class="docutils literal"><span class="pre">Task&lt;T&gt;</span></code> and <code class="docutils literal"><span class="pre">Task</span></code>, which are constructs used to model the work being done in an asynchronous context.  <a class="reference internal" href="#more-on-task-and-task-t">More on Task and Task&lt;T&gt;</a></li>
+<li>When the <code class="docutils literal"><span class="pre">await</span></code> keyword is applied, it suspends the calling method and yields control back to its caller until the awaited task is complete.  This is what allows a UI to be responsive and a service to be elastic.</li>
+<li><code class="docutils literal"><span class="pre">await</span></code> can only be used inside an async method.</li>
+<li>Unless an async method has an <code class="docutils literal"><span class="pre">await</span></code> inside its body, it will never yield!</li>
+<li><code class="docutils literal"><span class="pre">async</span> <span class="pre">void</span></code> should <strong>only</strong> be used on Event Handlers (where it is required).</li>
+</ul>
+<div class="section" id="example-c">
+<h2>Example (C#)<a class="headerlink" href="#example-c" title="Permalink to this headline">¶</a></h2>
+<p>The following example shows how to write basic async code for both a client app and a web service.  The code, in both cases, will count the number of times &#8221;.NET&#8221; appears in the HTML of &#8220;dotnetfoundation.org&#8221;.</p>
+<p>Client app snippet (Universal Windows App):</p>
+<div class="highlight-c#"><div class="highlight"><pre>private readonly HttpClient _httpClient = new HttpClient();
+
+private async void SeeTheDotNets_Click(object sender, RoutedEventArgs e)
+{
+    // Capture the task handle here so we can await the background task later.
+    var getDotNetFoundationHtmlTask = _httpClient.GetStringAsync(&quot;http://www.dotnetfoundation.org&quot;);
+
+    // Any other work on the UI thread can be done here, such as enabling a Progress Bar.
+    // This is important to do here, before the &quot;await&quot; call, so that the user
+    // sees the progress bar before execution of this method is yielded.
+    NetworkProgressBar.IsEnabled = true;
+    NetworkProgressBar.Visibility = Visibility.Visible;
+
+    // The await operator suspends SeeTheDotNets_Click, returning control to its caller.
+    // This is what allows the app to be responsive and not hang on the UI thread.
+    var html = await getDotNetFoundationHtmlTask;
+    int count = Regex.Matches(html, &quot;.NET&quot;).Count;
+
+    DotNetCountLabel.Text = $&quot;Number of .NETs on dotnetfoundation.org: {count}&quot;;
+
+    NetworkProgressBar.IsEnabled = false;
+    NetworkProgressBar.Visbility = Visibility.Collapsed;
+}
+</pre></div>
+</div>
+<p>Web service snippet (ASP.NET MVC):</p>
+<div class="highlight-c#"><div class="highlight"><pre><span class="k">private</span> <span class="k">readonly</span> <span class="n">HttpClient</span> <span class="n">_httpClient</span> <span class="p">=</span> <span class="k">new</span> <span class="n">HttpClient</span><span class="p">();</span>
+
+<span class="na">[HttpGet]</span>
+<span class="na">[Route(&quot;DotNetCount&quot;)]</span>
+<span class="k">public</span> <span class="k">async</span> <span class="n">Task</span><span class="p">&lt;</span><span class="kt">int</span><span class="p">&gt;</span> <span class="n">GetDotNetCountAsync</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="c1">// Suspends GetDotNetCountAsync() to allow the caller (the web server)</span>
+    <span class="c1">// to accept another request, rather than blocking on this one.</span>
+    <span class="kt">var</span> <span class="n">html</span> <span class="p">=</span> <span class="k">await</span> <span class="n">_httpClient</span><span class="p">.</span><span class="n">DownloadStringAsync</span><span class="p">(</span><span class="s">&quot;http://dotnetfoundation.org&quot;</span><span class="p">);</span>
+
+    <span class="k">return</span> <span class="n">Regex</span><span class="p">.</span><span class="n">Matches</span><span class="p">(</span><span class="n">html</span><span class="p">,</span> <span class="s">&quot;.NET&quot;</span><span class="p">).</span><span class="n">Count</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="example-vb">
+<h2>Example (VB)<a class="headerlink" href="#example-vb" title="Permalink to this headline">¶</a></h2>
+<p>These are the VB-equivalent code snippets from above.</p>
+<p>Client app snippet (Universal Windows App):</p>
+<div class="highlight-vb.net"><div class="highlight"><pre>Private Readonly Dim _httpClient As HttpClient = new HttpClient()
+
+Private Async Sub SeeTheDotNets_Click(sender As Object, e As RoutedEventArgs)
+
+    &#39; Capture the task handle here so we can await it later.
+    Dim getDotNetFoundationHtmlTask As Task(Of String) =
+            _httpClient.GetStringAsync(&quot;http://dotnetfoundation.org&quot;)
+
+    &#39; Any other work on the UI thread can be done here, such as enabling a Progress Bar.
+    NetworkProgressBar.IsEnabled = true
+    NetworkProgressBar.Visibility = Visibility.Visible
+
+    &#39; The await operator suspends SeeTheDotNets_Click, returning control to its caller.
+    &#39; This is what allows the app to be responsive and not hang on the UI thread.
+    Dim html As String = Await getDotNetFoundationHtmlTask
+    Dim count As Integer = Regex.Matches(html, &quot;.NET&quot;).Count
+
+    DotNetCountLabel.Text = $&quot;Number of .NETs on dotnetfoundation.org: {count}&quot;
+
+    NetworkProgressBar.IsEnabled = false
+    NetworkProgressBar.Visbility = Visibility.Collapsed
+End Sub
+</pre></div>
+</div>
+<p>Web Service snippet (ASP.NET MVC):</p>
+<div class="highlight-vb.net"><div class="highlight"><pre>Private Readonly Dim _httpClient As HttpClient = new HttpClient()
+
+&lt;HttpGet&gt;
+&lt;Route(&quot;MicrosoftCount&quot;)&gt;
+Public Async Function GetDotNetCountAsync() As Task(Of String)
+
+    &#39; Suspends GetDotNetCountAsync() to allow the caller (the web server) to accept another request,
+    &#39; rather than blocking on this one.
+    Dim html As String = Await _httpClient.GetStringAsync(&quot;https://dotnetfoundation.org&quot;);
+
+    Return Regex.Matches(html, &quot;.NET&quot;).Count
+End Function
+</pre></div>
+</div>
+</div>
+<div class="section" id="more-on-task-and-task-t">
+<h2>More on Task and Task&lt;T&gt;<a class="headerlink" href="#more-on-task-and-task-t" title="Permalink to this headline">¶</a></h2>
+<p>As mentioned before, Tasks are constructs used to represent operations working in the background.</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">Task</span></code> represents a single operation which does not return a value.</li>
+<li><code class="docutils literal"><span class="pre">Task&lt;T&gt;</span></code> represents a single operation which returns a value of type <code class="docutils literal"><span class="pre">T</span></code>.</li>
+</ul>
+<p>Tasks are awaitable, meaning that the use <code class="docutils literal"><span class="pre">await</span></code> will allow your application or service to perform useful work while the task is running by yielding control to its caller until the task is done.  If you&#8217;re using <code class="docutils literal"><span class="pre">Task&lt;T&gt;</span></code>, the <code class="docutils literal"><span class="pre">await</span></code> keyword will additionally &#8220;unwrap&#8221; the value returned when the Task is complete.</p>
+<p>It&#8217;s important to reason about Tasks of simply being abstractions of work happening in the background, and <em>not</em> allocate a new thread under the covers.  In fact, unless explicitly started on a new thread via <code class="docutils literal"><span class="pre">Task.Run</span></code>, a Task will start on the current thread and delegate work to the Operating System.</p>
+<p>Here&#8217;s a 10,000 foot view of what happens with a typical async call:</p>
+<p>The call (such as <code class="docutils literal"><span class="pre">GetStringAsync</span></code> from <code class="docutils literal"><span class="pre">HttpClient</span></code>) makes its way through the .NET libraries until it reaches a system interop call (such as <code class="docutils literal"><span class="pre">P/Invoke</span></code> on Windows).  This eventually makes the proper System API call (such as <code class="docutils literal"><span class="pre">write</span></code> to a socket file descriptor on Linux).  That System API call is then dealt with in the kernel, where the I/O request is sent to the proper subsystem.  Although details about scheduling the work on the appropriate device driver are different for each OS, eventually an &#8220;incomplete task&#8221; signal will be sent from the device driver, bubbling its way back up to the .NET runtime.  This will be converted into a <code class="docutils literal"><span class="pre">Task</span></code> or <code class="docutils literal"><span class="pre">Task&lt;T&gt;</span></code> by the runtime and returned to the calling method.  When <code class="docutils literal"><span class="pre">await</span></code> is encountered, execuction is yielded and the system can go do something else useful while the Task is running.</p>
+<p>When the device driver has the data, it sends an interrupt which eventually allows the OS to bubble the result back up to the runtime, which will the queue up the result of the Task.  Eventually execution will return to the method which called <code class="docutils literal"><span class="pre">GetStringAsync</span></code> at the <code class="docutils literal"><span class="pre">await</span></code>, and will &#8220;unwrap&#8221; the return value from the <code class="docutils literal"><span class="pre">Task&lt;string&gt;</span></code> which was being awaited.  The method now has the result!</p>
+<p>Although many details were glossed over (such as how &#8220;borrowing&#8221; compute time on a thread pool is coordinated), the important thing to recognize here is that <strong>no thread is 100% dedicated to running the initiated task</strong>.  This allows threads in the thread pool of a system to handle a larger volume of work rather than having to wait for I/O to finish.</p>
+<p>Although the above may seem like a lot of work to be done, when measured in terms of wall clock time, it&#8217;s miniscule compared to the time it takes to do the actual I/O work.  Although not at all precise, a potential timeline for such a call would look like this:</p>
+<p>0-1&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211;2-3</p>
+<ul class="simple">
+<li>Time spent from points <code class="docutils literal"><span class="pre">0</span></code> to <code class="docutils literal"><span class="pre">1</span></code> is everything up until an async method yields control to its caller.</li>
+<li>Time spent from points <code class="docutils literal"><span class="pre">1</span></code> to <code class="docutils literal"><span class="pre">2</span></code> is the time spend on I/O.</li>
+<li>Finally, time spent from <code class="docutils literal"><span class="pre">2</span></code> to <code class="docutils literal"><span class="pre">3</span></code> is passing control back (and potentially a value) to the async method, at which point it is executing again.</li>
+</ul>
+<p>Tasks are also used outside of the async programming model.  They are the foundation of the Task Parallel Library, which supports the parallelization of CPU-bound work via <a class="reference external" href="https://msdn.microsoft.com/en-us/library/dd537608(v=vs.110).aspx">Data Parallelism</a> and <a class="reference external" href="https://msdn.microsoft.com/en-us/library/dd537609(v=vs.110).aspx">Task Parallelism</a>.</p>
+</div>
+<div class="section" id="important-info-and-advice">
+<h2>Important Info and Advice<a class="headerlink" href="#important-info-and-advice" title="Permalink to this headline">¶</a></h2>
+<p>Although async programming is relatively straightforward, there are some details to keep in mind which can prevent unexpected behavior.</p>
+<ul class="simple">
+<li><strong>You should add &#8220;Async&#8221; as the suffix of every async method name you write.</strong></li>
+</ul>
+<p>This is the convention used in .NET to more-easily differentiate synchronous and asynchronous methods.  Note that certain methods which aren&#8217;t explicitly called by your code (such as event handlers or web controller methods) don&#8217;t necessarily apply.  Because these are not explicitly called by your code, being explicit about their naming isn&#8217;t as important.</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">async</span> <span class="pre">void</span></code> <strong>should only be used for event handlers.</strong></li>
+</ul>
+<p>It&#8217;s the only way to allow asynchronous event handlers to work because events do not have return types (thus cannot make use of <code class="docutils literal"><span class="pre">Task</span></code> and <code class="docutils literal"><span class="pre">Task&lt;T&gt;</span></code>).  Any other use of <a href="#id1"><span class="problematic" id="id2">``</span></a>async void``does not follow the Task-based model and can be challenging to use, such as:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Exceptions thrown in an <code class="docutils literal"><span class="pre">async</span> <span class="pre">void</span></code> method can&#8217;t be caught outside of that method.</li>
+<li><code class="docutils literal"><span class="pre">async</span> <span class="pre">void</span></code> methods are very difficult to test.</li>
+<li><code class="docutils literal"><span class="pre">async</span> <span class="pre">void</span></code> methods can cause bad side effects if the caller isn&#8217;t expecting them to be async.</li>
+</ul>
+</div></blockquote>
+<ul class="simple">
+<li><strong>Tread carefully when using async lambdas in LINQ expressions</strong></li>
+</ul>
+<p>Lambda expressions in LINQ use deferred execution, meaning code could end up executing at a time when you&#8217;re not expecting it to.  The introduction of blocking tasks into this can easily result in a deadlock if not written correctly.  Additionally, the nesting of asynchronous code like this can also make it more difficult to reason about the execution of the code.  Async and LINQ are powerful, but should be used together as carefully and clearly as possible.</p>
+<ul class="simple">
+<li><strong>Write code that awaits Tasks in a non-blocking manner</strong></li>
+</ul>
+<p>Blocking the current thread as a means to wait for a Task to complete can result in deadlocks and blocked context threads, and can require significantly more complex error-handling.  The following table provides guidance on how to deal with waiting for Tasks in a non-blocking way:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="23%" />
+<col width="34%" />
+<col width="43%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Use this...</th>
+<th class="head">Instead of this...</th>
+<th class="head">When wishing to do this</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">await</span></code></td>
+<td><code class="docutils literal"><span class="pre">Task.Wait</span></code> or <code class="docutils literal"><span class="pre">Task.Result</span></code></td>
+<td>Retrieving the result of a background task</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">await</span> <span class="pre">Task.WhenAny</span></code></td>
+<td><code class="docutils literal"><span class="pre">Task.WaitAny</span></code></td>
+<td>Waiting for any task to complete</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">await</span> <span class="pre">Task.WhenAll</span></code></td>
+<td><code class="docutils literal"><span class="pre">Task.WaitAll</span></code></td>
+<td>Waiting for all tasks to complete</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">await</span> <span class="pre">Task.Delay</span></code></td>
+<td><code class="docutils literal"><span class="pre">Thread.Sleep</span></code></td>
+<td>Waiting for a period of time</td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><strong>Write less stateful code</strong></li>
+</ul>
+<p>Don&#8217;t depend on the state of global objects or the execution of certain methods.  Instead, depend only on the return values of methods.  Why?</p>
+<blockquote>
+<div><ul class="simple">
+<li>Code will be easier to reason about.</li>
+<li>Code will be easier to test.</li>
+<li>Mixing async and synchronous code is far simpler.</li>
+<li>Race conditions can typically be avoided altogether.</li>
+<li>Depending on return values makes coordinating async code simple.</li>
+<li>(Bonus) it works really well with dependency injection.</li>
+</ul>
+</div></blockquote>
+<p>A recommended goal is to achieve complete or near-complete <a class="reference external" href="https://en.wikipedia.org/wiki/Referential_transparency_(computer_science)">Referential Transparency</a> in your code.  Doing so will result in an extremely predictable, testable, and maintainable codebase.</p>
+</div>
+<div class="section" id="more-information">
+<h2>More Information<a class="headerlink" href="#more-information" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://msdn.microsoft.com/en-us/library/hh191443.aspx">Async/Await Reference Docs</a></li>
+<li><a class="reference external" href="https://msdn.microsoft.com/en-us/library/dd460717(v=vs.110).aspx">Tasks and the Task Parallel Library</a></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="async-fsharp.html" class="btn btn-neutral float-right" title="Async Programming in F#" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="async-overview.html" class="btn btn-neutral" title="Async Overview" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Microsoft.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

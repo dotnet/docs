@@ -1,0 +1,40 @@
+items:
+- uid: System.Runtime.Serialization.Json
+  id: System.Runtime.Serialization.Json
+  children:
+  - System.Runtime.Serialization.Json.DataContractJsonSerializer
+  - System.Runtime.Serialization.Json.DataContractJsonSerializerSettings
+  href: System.Runtime.Serialization.Json.yml
+  name: System.Runtime.Serialization.Json
+  fullName: System.Runtime.Serialization.Json
+  type: Namespace
+  source:
+    remote:
+      path: src/System.Private.DataContractSerialization/src/System/Runtime/Serialization/Json/JsonEncodingStreamWrapper.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Private.DataContractSerialization/src/System/Runtime/Serialization/Json/JsonEncodingStreamWrapper.cs
+    startLine: 10
+  assemblies:
+  - System.Private.DataContractSerialization
+  summary: Provides classes related to Json serialization.
+references:
+- uid: System.Runtime.Serialization.Json.DataContractJsonSerializer
+  isExternal: false
+  href: System.Runtime.Serialization.Json.DataContractJsonSerializer.yml
+  name: DataContractJsonSerializer
+  fullName: System.Runtime.Serialization.Json.DataContractJsonSerializer
+  type: Class
+- uid: System.Runtime.Serialization.Json.DataContractJsonSerializerSettings
+  parent: System.Runtime.Serialization.Json
+  isExternal: false
+  href: System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.yml
+  name: DataContractJsonSerializerSettings
+  fullName: System.Runtime.Serialization.Json.DataContractJsonSerializerSettings
+  type: Class
+  summary: Dummy documentation
+- uid: System.Runtime.Serialization.Json
+  isExternal: false
+  name: System.Runtime.Serialization.Json
+  fullName: System.Runtime.Serialization.Json
+  type: Namespace

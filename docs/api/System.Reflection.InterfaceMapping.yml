@@ -1,0 +1,312 @@
+items:
+- uid: System.Reflection.InterfaceMapping
+  id: InterfaceMapping
+  parent: System.Reflection
+  children:
+  - System.Reflection.InterfaceMapping.InterfaceMethods
+  - System.Reflection.InterfaceMapping.InterfaceType
+  - System.Reflection.InterfaceMapping.TargetMethods
+  - System.Reflection.InterfaceMapping.TargetType
+  href: System.Reflection.InterfaceMapping.yml
+  name: InterfaceMapping
+  fullName: System.Reflection.InterfaceMapping
+  type: Struct
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Reflection/InterfaceMapping.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Reflection/InterfaceMapping.cs
+    startLine: 14
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Retrieves the mapping of an interface into the actual methods on a class that implements that interface.
+  syntax:
+    content: public struct InterfaceMapping
+    content.vb: Public Structure InterfaceMapping
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.Reflection.InterfaceMapping.TargetType
+  id: TargetType
+  parent: System.Reflection.InterfaceMapping
+  href: System.Reflection.InterfaceMapping.yml
+  name: TargetType
+  fullName: System.Reflection.InterfaceMapping.TargetType
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/InterfaceMapping.cs
+    startLine: 17
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Represents the type that was used to create the interface mapping.
+  syntax:
+    content: public Type TargetType
+    content.vb: Public TargetType As Type
+- uid: System.Reflection.InterfaceMapping.InterfaceType
+  id: InterfaceType
+  parent: System.Reflection.InterfaceMapping
+  href: System.Reflection.InterfaceMapping.yml
+  name: InterfaceType
+  fullName: System.Reflection.InterfaceMapping.InterfaceType
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/InterfaceMapping.cs
+    startLine: 19
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Shows the type that represents the interface.
+  syntax:
+    content: public Type InterfaceType
+    content.vb: Public InterfaceType As Type
+- uid: System.Reflection.InterfaceMapping.TargetMethods
+  id: TargetMethods
+  parent: System.Reflection.InterfaceMapping
+  href: System.Reflection.InterfaceMapping.yml
+  name: TargetMethods
+  fullName: System.Reflection.InterfaceMapping.TargetMethods
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/InterfaceMapping.cs
+    startLine: 21
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Shows the methods that implement the interface.
+  syntax:
+    content: public MethodInfo[] TargetMethods
+    content.vb: Public TargetMethods As MethodInfo()
+- uid: System.Reflection.InterfaceMapping.InterfaceMethods
+  id: InterfaceMethods
+  parent: System.Reflection.InterfaceMapping
+  href: System.Reflection.InterfaceMapping.yml
+  name: InterfaceMethods
+  fullName: System.Reflection.InterfaceMapping.InterfaceMethods
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/InterfaceMapping.cs
+    startLine: 23
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Shows the methods that are defined on the interface.
+  syntax:
+    content: public MethodInfo[] InterfaceMethods
+    content.vb: Public InterfaceMethods As MethodInfo()
+references:
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

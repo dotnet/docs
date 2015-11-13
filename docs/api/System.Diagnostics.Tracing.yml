@@ -1,0 +1,431 @@
+items:
+- uid: System.Diagnostics.Tracing
+  id: System.Diagnostics.Tracing
+  children:
+  - System.Diagnostics.Tracing.EventActivityOptions
+  - System.Diagnostics.Tracing.EventAttribute
+  - System.Diagnostics.Tracing.EventChannel
+  - System.Diagnostics.Tracing.EventCommand
+  - System.Diagnostics.Tracing.EventCommandEventArgs
+  - System.Diagnostics.Tracing.EventDataAttribute
+  - System.Diagnostics.Tracing.EventFieldAttribute
+  - System.Diagnostics.Tracing.EventFieldFormat
+  - System.Diagnostics.Tracing.EventFieldTags
+  - System.Diagnostics.Tracing.EventIgnoreAttribute
+  - System.Diagnostics.Tracing.EventKeywords
+  - System.Diagnostics.Tracing.EventLevel
+  - System.Diagnostics.Tracing.EventListener
+  - System.Diagnostics.Tracing.EventManifestOptions
+  - System.Diagnostics.Tracing.EventOpcode
+  - System.Diagnostics.Tracing.EventSource
+  - System.Diagnostics.Tracing.EventSource.EventData
+  - System.Diagnostics.Tracing.EventSourceAttribute
+  - System.Diagnostics.Tracing.EventSourceException
+  - System.Diagnostics.Tracing.EventSourceOptions
+  - System.Diagnostics.Tracing.EventSourceSettings
+  - System.Diagnostics.Tracing.EventTags
+  - System.Diagnostics.Tracing.EventTask
+  - System.Diagnostics.Tracing.EventWrittenEventArgs
+  - System.Diagnostics.Tracing.NonEventAttribute
+  href: System.Diagnostics.Tracing.yml
+  name: System.Diagnostics.Tracing
+  fullName: System.Diagnostics.Tracing
+  type: Namespace
+  source:
+    remote:
+      path: src/mscorlib/src/System/Diagnostics/Eventing/TraceLogging/TypeAnalysis.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Diagnostics/Eventing/TraceLogging/TypeAnalysis.cs
+    startLine: 11
+  assemblies:
+  - mscorlib
+  summary: The @'System.Diagnostics.Tracing' namespace provides types and members that enable you to create strongly typed events to be captured by event tracing for Windows (ETW).
+references:
+- uid: System.Diagnostics.Tracing.EventActivityOptions
+  parent: System.Diagnostics.Tracing
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventActivityOptions.yml
+  name: EventActivityOptions
+  fullName: System.Diagnostics.Tracing.EventActivityOptions
+  type: Enum
+  summary: EventActivityOptions flags allow to specify different activity related characteristics.
+- uid: System.Diagnostics.Tracing.EventSource
+  parent: System.Diagnostics.Tracing
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: EventSource
+  fullName: System.Diagnostics.Tracing.EventSource
+  type: Class
+  summary: >-
+    This class is meant to be inherited by a user-defined event source in order to define a managed
+
+    ETW provider.   Please See DESIGN NOTES above for the internal architecture.
+
+    The minimal definition of an EventSource simply specifies a number of ETW event methods that
+
+    call one of the EventSource.WriteEvent overloads, @'System.Diagnostics.Tracing.EventSource.WriteEventCore(System.Int32,System.Int32,System.Diagnostics.Tracing.EventSource.EventData*)',
+
+    or @'System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityIdCore(System.Int32,System.Guid*,System.Int32,System.Diagnostics.Tracing.EventSource.EventData*)' to log them. This functionality
+
+    is sufficient for many users.
+
+    <para>
+
+    To achieve more control over the ETW provider manifest exposed by the event source type, the
+
+    [@'System.Diagnostics.Tracing.EventAttribute'] attributes can be specified for the ETW event methods.
+
+    </para><para>
+
+    For very advanced EventSources, it is possible to intercept the commands being given to the
+
+    eventSource and change what filtering is done (see EventListener.EnableEvents and
+
+    @'System.Diagnostics.Tracing.EventListener.DisableEvents(System.Diagnostics.Tracing.EventSource)') or cause actions to be performed by the eventSource,
+
+    e.g. dumping a data structure (see EventSource.SendCommand and
+
+    @'System.Diagnostics.Tracing.EventSource.OnEventCommand(System.Diagnostics.Tracing.EventCommandEventArgs)').
+
+    </para><para>
+
+    The eventSources can be turned on with Windows ETW controllers (e.g. logman), immediately.
+
+    It is also possible to control and intercept the data dispatcher programmatically.  See
+
+    @'System.Diagnostics.Tracing.EventListener' for more.
+
+    </para>
+- uid: System.Diagnostics.Tracing.EventSource.EventData
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventSource.EventData.yml
+  name: EventSource.EventData
+  fullName: System.Diagnostics.Tracing.EventSource.EventData
+  type: Struct
+  summary: Used to construct the data structure to be passed to the native ETW APIs - EventWrite and EventWriteTransfer.
+- uid: System.Diagnostics.Tracing.EventSourceSettings
+  parent: System.Diagnostics.Tracing
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventSourceSettings.yml
+  name: EventSourceSettings
+  fullName: System.Diagnostics.Tracing.EventSourceSettings
+  type: Enum
+  summary: Enables specifying event source configuration options to be used in the EventSource constructor.
+- uid: System.Diagnostics.Tracing.EventListener
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventListener.yml
+  name: EventListener
+  fullName: System.Diagnostics.Tracing.EventListener
+  type: Class
+  summary: >-
+    An EventListener represents a target for the events generated by EventSources (that is subclasses
+
+    of @'System.Diagnostics.Tracing.EventSource'), in the current appdomain. When a new EventListener is created
+
+    it is logically attached to all eventSources in that appdomain. When the EventListener is Disposed, then
+
+    it is disconnected from the event eventSources. Note that there is a internal list of STRONG references
+
+    to EventListeners, which means that relying on the lack of references to EventListeners to clean up
+
+    EventListeners will NOT work. You must call EventListener.Dispose explicitly when a dispatcher is no
+
+    longer needed.
+
+    <para>
+
+    Once created, EventListeners can enable or disable on a per-eventSource basis using verbosity levels
+
+    (@'System.Diagnostics.Tracing.EventLevel') and bitfields (@'System.Diagnostics.Tracing.EventKeywords') to further restrict the set of
+
+    events to be sent to the dispatcher. The dispatcher can also send arbitrary commands to a particular
+
+    eventSource using the 'SendCommand' method. The meaning of the commands are eventSource specific.
+
+    </para><para>
+
+    The Null Guid (that is (new Guid()) has special meaning as a wildcard for 'all current eventSources in
+
+    the appdomain'. Thus it is relatively easy to turn on all events in the appdomain if desired.
+
+    </para><para>
+
+    It is possible for there to be many EventListener's defined in a single appdomain. Each dispatcher is
+
+    logically independent of the other listeners. Thus when one dispatcher enables or disables events, it
+
+    affects only that dispatcher (other listeners get the events they asked for). It is possible that
+
+    commands sent with 'SendCommand' would do a semantic operation that would affect the other listeners
+
+    (like doing a GC, or flushing data ...), but this is the exception rather than the rule.
+
+    </para><para>
+
+    Thus the model is that each EventSource keeps a list of EventListeners that it is sending events
+
+    to. Associated with each EventSource-dispatcher pair is a set of filtering criteria that determine for
+
+    that eventSource what events that dispatcher will receive.
+
+    </para><para>
+
+    Listeners receive the events on their 'OnEventWritten' method. Thus subclasses of EventListener must
+
+    override this method to do something useful with the data.
+
+    </para><para>
+
+    In addition, when new eventSources are created, the 'OnEventSourceCreate' method is called. The
+
+    invariant associated with this callback is that every eventSource gets exactly one
+
+    'OnEventSourceCreate' call for ever eventSource that can potentially send it log messages. In
+
+    particular when a EventListener is created, typically a series of OnEventSourceCreate' calls are
+
+    made to notify the new dispatcher of all the eventSources that existed before the EventListener was
+
+    created.
+
+    </para>
+- uid: System.Diagnostics.Tracing.EventCommandEventArgs
+  parent: System.Diagnostics.Tracing
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventCommandEventArgs.yml
+  name: EventCommandEventArgs
+  fullName: System.Diagnostics.Tracing.EventCommandEventArgs
+  type: Class
+  summary: Passed to the code:EventSource.OnEventCommand callback
+- uid: System.Diagnostics.Tracing.EventWrittenEventArgs
+  parent: System.Diagnostics.Tracing
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventWrittenEventArgs.yml
+  name: EventWrittenEventArgs
+  fullName: System.Diagnostics.Tracing.EventWrittenEventArgs
+  type: Class
+  summary: >-
+    EventWrittenEventArgs is passed to the user-provided override for
+
+    @'System.Diagnostics.Tracing.EventListener.OnEventWritten(System.Diagnostics.Tracing.EventWrittenEventArgs)' when an event is fired.
+- uid: System.Diagnostics.Tracing.EventSourceAttribute
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventSourceAttribute.yml
+  name: EventSourceAttribute
+  fullName: System.Diagnostics.Tracing.EventSourceAttribute
+  type: Class
+  summary: Allows customizing defaults and specifying localization support for the event source class to which it is applied.
+- uid: System.Diagnostics.Tracing.EventAttribute
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventAttribute.yml
+  name: EventAttribute
+  fullName: System.Diagnostics.Tracing.EventAttribute
+  type: Class
+  summary: >-
+    Any instance methods in a class that subclasses @'System.Diagnostics.Tracing.EventSource' and that return void are
+
+    assumed by default to be methods that generate an ETW event. Enough information can be deduced from the
+
+    name of the method and its signature to generate basic schema information for the event. The
+
+    @'System.Diagnostics.Tracing.EventAttribute' class allows you to specify additional event schema information for an event if
+
+    desired.
+- uid: System.Diagnostics.Tracing.NonEventAttribute
+  isExternal: false
+  href: System.Diagnostics.Tracing.NonEventAttribute.yml
+  name: NonEventAttribute
+  fullName: System.Diagnostics.Tracing.NonEventAttribute
+  type: Class
+  summary: >-
+    By default all instance methods in a class that subclasses code:EventSource that and return
+
+    void are assumed to be methods that generate an event. This default can be overridden by specifying
+
+    the code:NonEventAttribute
+- uid: System.Diagnostics.Tracing.EventCommand
+  parent: System.Diagnostics.Tracing
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventCommand.yml
+  name: EventCommand
+  fullName: System.Diagnostics.Tracing.EventCommand
+  type: Enum
+  summary: Describes the pre-defined command (EventCommandEventArgs.Command property) that is passed to the OnEventCommand callback.
+- uid: System.Diagnostics.Tracing.EventManifestOptions
+  parent: System.Diagnostics.Tracing
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventManifestOptions.yml
+  name: EventManifestOptions
+  fullName: System.Diagnostics.Tracing.EventManifestOptions
+  type: Enum
+  summary: >-
+    Flags that can be used with EventSource.GenerateManifest to control how the ETW manifest for the EventSource is
+
+    generated.
+- uid: System.Diagnostics.Tracing.EventSourceException
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventSourceException.yml
+  name: EventSourceException
+  fullName: System.Diagnostics.Tracing.EventSourceException
+  type: Class
+  summary: Exception that is thrown when an error occurs during EventSource operation.
+- uid: System.Diagnostics.Tracing.EventLevel
+  parent: System.Diagnostics.Tracing
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventLevel.yml
+  name: EventLevel
+  fullName: System.Diagnostics.Tracing.EventLevel
+  type: Enum
+  summary: WindowsEventLevel. Custom values must be in the range from 16 through 255
+- uid: System.Diagnostics.Tracing.EventTask
+  parent: System.Diagnostics.Tracing
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventTask.yml
+  name: EventTask
+  fullName: System.Diagnostics.Tracing.EventTask
+  type: Enum
+  summary: WindowsEventTask. Custom values must be in the range from 1 through 65534
+- uid: System.Diagnostics.Tracing.EventOpcode
+  parent: System.Diagnostics.Tracing
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventOpcode.yml
+  name: EventOpcode
+  fullName: System.Diagnostics.Tracing.EventOpcode
+  type: Enum
+  summary: EventOpcode. Custom values must be in the range from 11 through 239
+- uid: System.Diagnostics.Tracing.EventChannel
+  parent: System.Diagnostics.Tracing
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventChannel.yml
+  name: EventChannel
+  fullName: System.Diagnostics.Tracing.EventChannel
+  type: Enum
+  summary: EventChannel. Custom values must be in the range from 16 through 255. Currently only predefined values allowed.
+- uid: System.Diagnostics.Tracing.EventKeywords
+  parent: System.Diagnostics.Tracing
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventKeywords.yml
+  name: EventKeywords
+  fullName: System.Diagnostics.Tracing.EventKeywords
+  type: Enum
+  summary: EventOpcode
+- uid: System.Diagnostics.Tracing.EventDataAttribute
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventDataAttribute.yml
+  name: EventDataAttribute
+  fullName: System.Diagnostics.Tracing.EventDataAttribute
+  type: Class
+  summary: >-
+    Used when authoring types that will be passed to EventSource.Write.
+
+    EventSource.Write&lt;T&gt; only works when T is either an anonymous type
+
+    or a type with an [EventData] attribute. In addition, the properties
+
+    of T must be supported property types. Supported property types include
+
+    simple built-in types (int, string, Guid, DateTime, DateTimeOffset,
+
+    KeyValuePair, etc.), anonymous types that only contain supported types,
+
+    types with an [EventData] attribute, arrays of the above, and IEnumerable
+
+    of the above.
+- uid: System.Diagnostics.Tracing.EventFieldTags
+  parent: System.Diagnostics.Tracing
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventFieldTags.yml
+  name: EventFieldTags
+  fullName: System.Diagnostics.Tracing.EventFieldTags
+  type: Enum
+  summary: >-
+    Tags are flags that are not interpreted by EventSource but are passed along
+
+    to the EventListener. The EventListener determines the semantics of the flags.
+- uid: System.Diagnostics.Tracing.EventFieldAttribute
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventFieldAttribute.yml
+  name: EventFieldAttribute
+  fullName: System.Diagnostics.Tracing.EventFieldAttribute
+  type: Class
+  summary: >-
+    TraceLogging: used when authoring types that will be passed to EventSource.Write.
+
+    Controls how a field or property is handled when it is written as a
+
+    field in a TraceLogging event. Apply this attribute to a field or
+
+    property if the default handling is not correct. (Apply the
+
+    TraceLoggingIgnore attribute if the property should not be
+
+    included as a field in the event.)
+
+    The default for Name is null, which means that the name of the
+
+    underlying field or property will be used as the event field's name.
+
+    The default for PiiTag is 0, which means that the event field does not
+
+    contain personally-identifiable information.
+- uid: System.Diagnostics.Tracing.EventFieldFormat
+  parent: System.Diagnostics.Tracing
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventFieldFormat.yml
+  name: EventFieldFormat
+  fullName: System.Diagnostics.Tracing.EventFieldFormat
+  type: Enum
+  summary: >-
+    Provides a hint that may be used by an event listener when formatting
+
+    an event field for display. Note that the event listener may ignore the
+
+    hint if it does not recognize a particular combination of type and format.
+
+    Similar to TDH_OUTTYPE.
+- uid: System.Diagnostics.Tracing.EventIgnoreAttribute
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventIgnoreAttribute.yml
+  name: EventIgnoreAttribute
+  fullName: System.Diagnostics.Tracing.EventIgnoreAttribute
+  type: Class
+  summary: >-
+    Used when authoring types that will be passed to EventSource.Write.
+
+    By default, EventSource.Write will write all of an object's public
+
+    properties to the event payload. Apply [EventIgnore] to a public
+
+    property to prevent EventSource.Write from including the property in
+
+    the event.
+- uid: System.Diagnostics.Tracing.EventSourceOptions
+  parent: System.Diagnostics.Tracing
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventSourceOptions.yml
+  name: EventSourceOptions
+  fullName: System.Diagnostics.Tracing.EventSourceOptions
+  type: Struct
+  summary: >-
+    Used when calling EventSource.Write.
+
+    Optional overrides for event settings such as Level, Keywords, or Opcode.
+
+    If overrides are not provided for a setting, default values will be used.
+- uid: System.Diagnostics.Tracing.EventTags
+  parent: System.Diagnostics.Tracing
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventTags.yml
+  name: EventTags
+  fullName: System.Diagnostics.Tracing.EventTags
+  type: Enum
+  summary: >-
+    Tags are flags that are not interpreted by EventSource but are passed along
+
+    to the EventListener. The EventListener determines the semantics of the flags.
+- uid: System.Diagnostics.Tracing
+  isExternal: false
+  name: System.Diagnostics.Tracing
+  fullName: System.Diagnostics.Tracing
+  type: Namespace

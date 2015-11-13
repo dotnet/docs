@@ -1,0 +1,47 @@
+items:
+- uid: System.Security.AccessControl.AccessControlActions
+  id: AccessControlActions
+  parent: System.Security.AccessControl
+  children:
+  - System.Security.AccessControl.AccessControlActions.None
+  href: System.Security.AccessControl.AccessControlActions.yml
+  name: AccessControlActions
+  fullName: System.Security.AccessControl.AccessControlActions
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Security/AccessControl/Enums.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Security/AccessControl/Enums.cs
+    startLine: 69
+  assemblies:
+  - mscorlib
+  namespace: System.Security.AccessControl
+  summary: Specifies the actions that are permitted for securable objects.
+  syntax:
+    content: public enum AccessControlActions
+    content.vb: Public Enum AccessControlActions
+- uid: System.Security.AccessControl.AccessControlActions.None
+  id: None
+  parent: System.Security.AccessControl.AccessControlActions
+  href: System.Security.AccessControl.AccessControlActions.yml
+  name: None
+  fullName: System.Security.AccessControl.AccessControlActions.None
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/AccessControl/Enums.cs
+    startLine: 76
+  assemblies:
+  - mscorlib
+  namespace: System.Security.AccessControl
+  summary: Specifies no access.
+  syntax:
+    content: None = 0
+references:
+- uid: System.Security.AccessControl
+  isExternal: false
+  name: System.Security.AccessControl
+  fullName: System.Security.AccessControl
+  type: Namespace

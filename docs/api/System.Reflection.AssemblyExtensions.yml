@@ -1,0 +1,373 @@
+items:
+- uid: System.Reflection.AssemblyExtensions
+  id: AssemblyExtensions
+  parent: System.Reflection
+  children:
+  - System.Reflection.AssemblyExtensions.GetExportedTypes(System.Reflection.Assembly)
+  - System.Reflection.AssemblyExtensions.GetModules(System.Reflection.Assembly)
+  - System.Reflection.AssemblyExtensions.GetTypes(System.Reflection.Assembly)
+  href: System.Reflection.AssemblyExtensions.yml
+  name: AssemblyExtensions
+  fullName: System.Reflection.AssemblyExtensions
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Reflection.TypeExtensions/src/System/Reflection/TypeExtensions.CoreCLR.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Reflection.TypeExtensions/src/System/Reflection/TypeExtensions.CoreCLR.cs
+    startLine: 212
+  assemblies:
+  - System.Reflection.TypeExtensions.CoreCLR
+  namespace: System.Reflection
+  syntax:
+    content: public class AssemblyExtensions
+    content.vb: Public Class AssemblyExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Reflection.AssemblyExtensions.GetExportedTypes(System.Reflection.Assembly)
+  id: GetExportedTypes(System.Reflection.Assembly)
+  parent: System.Reflection.AssemblyExtensions
+  href: System.Reflection.AssemblyExtensions.yml
+  name: GetExportedTypes(Assembly)
+  fullName: System.Reflection.AssemblyExtensions.GetExportedTypes(System.Reflection.Assembly)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.TypeExtensions/src/System/Reflection/TypeExtensions.CoreCLR.cs
+    startLine: 214
+  assemblies:
+  - System.Reflection.TypeExtensions.CoreCLR
+  namespace: System.Reflection
+  syntax:
+    content: public static Type[] GetExportedTypes(Assembly assembly)
+    content.vb: Public Shared Function GetExportedTypes(assembly As Assembly) As Type()
+    parameters:
+    - id: assembly
+      type: System.Reflection.Assembly
+    return:
+      type: System.Type[]
+      description: 
+- uid: System.Reflection.AssemblyExtensions.GetModules(System.Reflection.Assembly)
+  id: GetModules(System.Reflection.Assembly)
+  parent: System.Reflection.AssemblyExtensions
+  href: System.Reflection.AssemblyExtensions.yml
+  name: GetModules(Assembly)
+  fullName: System.Reflection.AssemblyExtensions.GetModules(System.Reflection.Assembly)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.TypeExtensions/src/System/Reflection/TypeExtensions.CoreCLR.cs
+    startLine: 220
+  assemblies:
+  - System.Reflection.TypeExtensions.CoreCLR
+  namespace: System.Reflection
+  syntax:
+    content: public static Module[] GetModules(Assembly assembly)
+    content.vb: Public Shared Function GetModules(assembly As Assembly) As
+    parameters:
+    - id: assembly
+      type: System.Reflection.Assembly
+    return:
+      type: System.Reflection.Module[]
+      description: 
+- uid: System.Reflection.AssemblyExtensions.GetTypes(System.Reflection.Assembly)
+  id: GetTypes(System.Reflection.Assembly)
+  parent: System.Reflection.AssemblyExtensions
+  href: System.Reflection.AssemblyExtensions.yml
+  name: GetTypes(Assembly)
+  fullName: System.Reflection.AssemblyExtensions.GetTypes(System.Reflection.Assembly)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.TypeExtensions/src/System/Reflection/TypeExtensions.CoreCLR.cs
+    startLine: 226
+  assemblies:
+  - System.Reflection.TypeExtensions.CoreCLR
+  namespace: System.Reflection
+  syntax:
+    content: public static Type[] GetTypes(Assembly assembly)
+    content.vb: Public Shared Function GetTypes(assembly As Assembly) As Type()
+    parameters:
+    - id: assembly
+      type: System.Reflection.Assembly
+    return:
+      type: System.Type[]
+      description: 
+references:
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Reflection.Assembly
+  parent: System.Reflection
+  isExternal: true
+  name: Assembly
+  fullName: System.Reflection.Assembly
+- uid: System.Type[]
+  isExternal: true
+  name: Type[]
+  name.vb: Type()
+  fullName: System.Type[]
+  fullName.vb: System.Type()
+  spec.csharp:
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Reflection.Module[]
+  isExternal: true
+  name: Module[]
+  name.vb: Module()
+  fullName: System.Reflection.Module[]
+  fullName.vb: System.Reflection.Module()
+  spec.csharp:
+  - uid: System.Reflection.Module
+    name: Module
+    fullName: System.Reflection.Module
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Reflection.Module
+    name: Module
+    fullName: System.Reflection.Module
+    isExternal: true
+  - name: ()
+    fullName: ()

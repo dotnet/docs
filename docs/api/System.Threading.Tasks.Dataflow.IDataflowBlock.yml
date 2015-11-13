@@ -1,0 +1,115 @@
+items:
+- uid: System.Threading.Tasks.Dataflow.IDataflowBlock
+  id: IDataflowBlock
+  parent: System.Threading.Tasks.Dataflow
+  children:
+  - System.Threading.Tasks.Dataflow.IDataflowBlock.Complete
+  - System.Threading.Tasks.Dataflow.IDataflowBlock.Completion
+  - System.Threading.Tasks.Dataflow.IDataflowBlock.Fault(System.Exception)
+  href: System.Threading.Tasks.Dataflow.IDataflowBlock.yml
+  name: IDataflowBlock
+  fullName: System.Threading.Tasks.Dataflow.IDataflowBlock
+  type: Interface
+  source:
+    remote: &o0
+      path: src/System.Threading.Tasks.Dataflow/src/Base/IDataflowBlock.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Threading.Tasks.Dataflow/src/Base/IDataflowBlock.cs
+    startLine: 15
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Represents a dataflow block.
+  syntax:
+    content: public interface IDataflowBlock
+    content.vb: Public Interface IDataflowBlock
+- uid: System.Threading.Tasks.Dataflow.IDataflowBlock.Completion
+  id: Completion
+  parent: System.Threading.Tasks.Dataflow.IDataflowBlock
+  href: System.Threading.Tasks.Dataflow.IDataflowBlock.yml
+  name: Completion
+  fullName: System.Threading.Tasks.Dataflow.IDataflowBlock.Completion
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/IDataflowBlock.cs
+    startLine: 20
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Gets a @'System.Threading.Tasks.Task' that represents the asynchronous operation and completion of the dataflow block.
+  syntax:
+    content: Task Completion { get; }
+    content.vb: ReadOnly Property Completion As Task
+    parameters: []
+    return:
+      type: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks.Dataflow.IDataflowBlock.Complete
+  id: Complete
+  parent: System.Threading.Tasks.Dataflow.IDataflowBlock
+  href: System.Threading.Tasks.Dataflow.IDataflowBlock.yml
+  name: Complete()
+  fullName: System.Threading.Tasks.Dataflow.IDataflowBlock.Complete()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/IDataflowBlock.cs
+    startLine: 23
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Signals to the @'System.Threading.Tasks.Dataflow.IDataflowBlock' that it should not accept nor produce any more messages nor consume any more postponed messages.
+  syntax:
+    content: void Complete()
+    content.vb: Sub Complete
+- uid: System.Threading.Tasks.Dataflow.IDataflowBlock.Fault(System.Exception)
+  id: Fault(System.Exception)
+  parent: System.Threading.Tasks.Dataflow.IDataflowBlock
+  href: System.Threading.Tasks.Dataflow.IDataflowBlock.yml
+  name: Fault(Exception)
+  fullName: System.Threading.Tasks.Dataflow.IDataflowBlock.Fault(System.Exception)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/IDataflowBlock.cs
+    startLine: 28
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Causes the @'System.Threading.Tasks.Dataflow.IDataflowBlock' to complete in a @'System.Threading.Tasks.TaskStatus.Faulted' state.
+  syntax:
+    content: void Fault(Exception exception)
+    content.vb: Sub Fault(exception As Exception)
+    parameters:
+    - id: exception
+      type: System.Exception
+      description: The @'System.Exception' that caused the faulting.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *exception* is null.
+references:
+- uid: System.Threading.Tasks.Dataflow
+  isExternal: false
+  name: System.Threading.Tasks.Dataflow
+  fullName: System.Threading.Tasks.Dataflow
+  type: Namespace
+- uid: System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  type: Namespace
+- uid: System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  fullName: System.Exception
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

@@ -1,0 +1,29 @@
+items:
+- uid: System.Runtime.InteropServices._ParameterInfo
+  id: _ParameterInfo
+  parent: System.Runtime.InteropServices
+  children: []
+  href: System.Runtime.InteropServices._ParameterInfo.yml
+  name: _ParameterInfo
+  fullName: System.Runtime.InteropServices._ParameterInfo
+  type: Interface
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/ComInterfaces.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Reflection/ComInterfaces.cs
+    startLine: 626
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Exposes the @'System.Reflection.ParameterInfo' class to unmanaged code.
+  syntax:
+    content: public interface _ParameterInfo
+    content.vb: Public Interface _ParameterInfo
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace

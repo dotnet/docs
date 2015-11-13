@@ -1,0 +1,497 @@
+items:
+- uid: System.Progress`1
+  id: Progress`1
+  parent: System
+  children:
+  - System.Progress`1.#ctor
+  - System.Progress`1.#ctor(System.Action{`0})
+  - System.Progress`1.OnReport(`0)
+  - System.Progress`1.ProgressChanged
+  - System.Progress`1.System#IProgress{T}#Report(`0)
+  href: System.Progress`1.yml
+  name: Progress<T>
+  name.vb: Progress(Of T)
+  fullName: System.Progress<T>
+  fullName.vb: System.Progress(Of T)
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Progress.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Progress.cs
+    startLine: 32
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Provides an @'System.IProgress`1' that invokes callbacks for each reported progress value.
+  remarks: >-
+    Any handler provided to the constructor or event handlers registered with
+
+    the @'System.Progress`1.ProgressChanged' event are invoked through a
+
+    @'System.Threading.SynchronizationContext' instance captured
+
+    when the instance is constructed.  If there is no current SynchronizationContext
+
+    at the time of construction, the callbacks will be invoked on the ThreadPool.
+  syntax:
+    content: 'public class Progress<T> : IProgress<T>'
+    content.vb: Public Class Progress(Of T) Implements IProgress(Of T)
+    typeParameters:
+    - id: T
+      description: Specifies the type of the progress report value.
+  inheritance:
+  - System.Object
+  implements:
+  - System.IProgress{{T}}
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Progress`1.#ctor
+  id: '#ctor'
+  parent: System.Progress`1
+  href: System.Progress`1.yml
+  name: Progress()
+  fullName: System.Progress<T>.Progress()
+  fullName.vb: System.Progress(Of T).Progress()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Progress.cs
+    startLine: 42
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes the @'System.Progress`1' object.
+  syntax:
+    content: public Progress()
+    content.vb: Public Sub New
+- uid: System.Progress`1.#ctor(System.Action{`0})
+  id: '#ctor(System.Action{`0})'
+  parent: System.Progress`1
+  href: System.Progress`1.yml
+  name: Progress(Action<T>)
+  name.vb: Progress(Action(Of T))
+  fullName: System.Progress<T>.Progress(System.Action<T>)
+  fullName.vb: System.Progress(Of T).Progress(System.Action(Of T))
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Progress.cs
+    startLine: 62
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes the @'System.Progress`1' object with the specified callback.
+  syntax:
+    content: public Progress(Action<T> handler)
+    content.vb: Public Sub New(handler As Action(Of T))
+    parameters:
+    - id: handler
+      type: System.Action{{T}}
+      description: A handler to invoke for each reported progress value. This handler will be invoked in addition to any delegates registered with the @'System.Progress`1.ProgressChanged' event. Depending on the @'System.Threading.SynchronizationContext' instance captured by the @'System.Progress`1' at construction, it is possible that this handler instance could be invoked concurrently with itself.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The  is null (Nothing in Visual Basic).
+- uid: System.Progress`1.ProgressChanged
+  id: ProgressChanged
+  parent: System.Progress`1
+  href: System.Progress`1.yml
+  name: ProgressChanged
+  fullName: System.Progress<T>.ProgressChanged
+  fullName.vb: System.Progress(Of T).ProgressChanged
+  type: Event
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Progress.cs
+    startLine: 73
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Raised for each reported progress value.
+  remarks: >-
+    Handlers registered with this event will be invoked on the
+
+    @'System.Threading.SynchronizationContext' captured when the instance was constructed.
+  syntax:
+    content: public event EventHandler<T> ProgressChanged
+    content.vb: Public Event ProgressChanged As EventHandler(Of T)
+- uid: System.Progress`1.OnReport(`0)
+  id: OnReport(`0)
+  parent: System.Progress`1
+  href: System.Progress`1.yml
+  name: OnReport(T)
+  fullName: System.Progress<T>.OnReport(T)
+  fullName.vb: System.Progress(Of T).OnReport(T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Progress.cs
+    startLine: 77
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Reports a progress change.
+  syntax:
+    content: protected virtual void OnReport(T value)
+    content.vb: Protected Overridable Sub OnReport(value As T)
+    parameters:
+    - id: value
+      type: '{T}'
+      description: The value of the updated progress.
+- uid: System.Progress`1.System#IProgress{T}#Report(`0)
+  id: System#IProgress{T}#Report(`0)
+  parent: System.Progress`1
+  href: System.Progress`1.yml
+  name: IProgress<T>.Report(T)
+  name.vb: System.IProgress<T>.Report(T)
+  fullName: System.Progress<T>.System.IProgress<T>.Report(T)
+  fullName.vb: System.Progress(Of T).System.IProgress<T>.Report(T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Progress.cs
+    startLine: 94
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Reports a progress change.
+  syntax:
+    content: void IProgress<T>.Report(T value)
+    content.vb: Sub System.IProgress<T>.Report(value As T) Implements IProgress(Of T).Report
+    parameters:
+    - id: value
+      type: '{T}'
+      description: The value of the updated progress.
+references:
+- uid: System.Progress`1.ProgressChanged
+- uid: System.Threading.SynchronizationContext
+  parent: System.Threading
+  isExternal: false
+  href: System.Threading.SynchronizationContext.yml
+  name: SynchronizationContext
+  fullName: System.Threading.SynchronizationContext
+  type: Class
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Progress`1
+  isExternal: false
+  href: System.Progress`1.yml
+  name: Progress<T>
+  name.vb: Progress(Of T)
+  fullName: System.Progress<T>
+  fullName.vb: System.Progress(Of T)
+  type: Class
+  summary: Provides an IProgress{T} that invokes callbacks for each reported progress value.
+  spec.csharp:
+  - uid: System.Progress`1
+    name: Progress
+    fullName: System.Progress
+    href: System.Progress`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Progress`1
+    name: Progress
+    fullName: System.Progress
+    href: System.Progress`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.ArgumentNullException
+- uid: System.Action{{T}}
+  parent: System
+  definition: System.Action`1
+  href: System.Action`1.yml
+  name: Action<T>
+  name.vb: Action(Of T)
+  fullName: System.Action<T>
+  fullName.vb: System.Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    fullName: System.Action
+    href: System.Action`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    fullName: System.Action
+    href: System.Action`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Action`1
+  parent: System
+  isExternal: true
+  name: Action<T>
+  name.vb: Action(Of T)
+  fullName: System.Action<T>
+  fullName.vb: System.Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: '{T}'
+  isExternal: false
+  name: T
+  fullName: T

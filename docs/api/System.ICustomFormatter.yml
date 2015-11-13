@@ -1,0 +1,74 @@
+items:
+- uid: System.ICustomFormatter
+  id: ICustomFormatter
+  parent: System
+  children:
+  - System.ICustomFormatter.Format(System.String,System.Object,System.IFormatProvider)
+  href: System.ICustomFormatter.yml
+  name: ICustomFormatter
+  fullName: System.ICustomFormatter
+  type: Interface
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/ICustomFormatter.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/ICustomFormatter.cs
+    startLine: 17
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Defines a method that supports custom formatting of the value of an object.
+  syntax:
+    content: public interface ICustomFormatter
+    content.vb: Public Interface ICustomFormatter
+- uid: System.ICustomFormatter.Format(System.String,System.Object,System.IFormatProvider)
+  id: Format(System.String,System.Object,System.IFormatProvider)
+  parent: System.ICustomFormatter
+  href: System.ICustomFormatter.yml
+  name: Format(String, Object, IFormatProvider)
+  fullName: System.ICustomFormatter.Format(System.String, System.Object, System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ICustomFormatter.cs
+    startLine: 21
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the value of a specified object to an equivalent string representation using specified format and culture-specific formatting information.
+  syntax:
+    content: string Format(string format, object arg, IFormatProvider formatProvider)
+    content.vb: Function Format(format As String, arg As Object, formatProvider As IFormatProvider) As String
+    parameters:
+    - id: format
+      type: System.String
+      description: A format string containing formatting specifications.
+    - id: arg
+      type: System.Object
+      description: An object to format.
+    - id: formatProvider
+      type: System.IFormatProvider
+      description: An object that supplies format information about the current instance.
+    return:
+      type: System.String
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.IFormatProvider
+  parent: System
+  isExternal: true
+  name: IFormatProvider
+  fullName: System.IFormatProvider

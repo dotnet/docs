@@ -1,0 +1,65 @@
+items:
+- uid: Microsoft.Win32.RegistryOptions
+  id: RegistryOptions
+  parent: Microsoft.Win32
+  children:
+  - Microsoft.Win32.RegistryOptions.None
+  - Microsoft.Win32.RegistryOptions.Volatile
+  href: Microsoft.Win32.RegistryOptions.yml
+  name: RegistryOptions
+  fullName: Microsoft.Win32.RegistryOptions
+  type: Enum
+  source:
+    remote: &o0
+      path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryOptions.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryOptions.cs
+    startLine: 7
+  assemblies:
+  - Microsoft.Win32.Registry
+  namespace: Microsoft.Win32
+  summary: Specifies options to use when creating a registry key.
+  syntax:
+    content: public enum RegistryOptions
+    content.vb: Public Enum RegistryOptions
+- uid: Microsoft.Win32.RegistryOptions.None
+  id: None
+  parent: Microsoft.Win32.RegistryOptions
+  href: Microsoft.Win32.RegistryOptions.yml
+  name: None
+  fullName: Microsoft.Win32.RegistryOptions.None
+  type: Field
+  source:
+    remote: *o0
+    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryOptions.cs
+    startLine: 10
+  assemblies:
+  - Microsoft.Win32.Registry
+  namespace: Microsoft.Win32
+  summary: A non-volatile key. This is the default.
+  syntax:
+    content: None = 0
+- uid: Microsoft.Win32.RegistryOptions.Volatile
+  id: Volatile
+  parent: Microsoft.Win32.RegistryOptions
+  href: Microsoft.Win32.RegistryOptions.yml
+  name: Volatile
+  fullName: Microsoft.Win32.RegistryOptions.Volatile
+  type: Field
+  source:
+    remote: *o0
+    path: src/Microsoft.Win32.Registry/src/Microsoft/Win32/RegistryOptions.cs
+    startLine: 11
+  assemblies:
+  - Microsoft.Win32.Registry
+  namespace: Microsoft.Win32
+  summary: A volatile key. The information is stored in memory and is not preserved when the corresponding registry hive is unloaded.
+  syntax:
+    content: Volatile = 1
+references:
+- uid: Microsoft.Win32
+  isExternal: false
+  name: Microsoft.Win32
+  fullName: Microsoft.Win32
+  type: Namespace

@@ -1,0 +1,972 @@
+items:
+- uid: System.Collections.Immutable
+  id: System.Collections.Immutable
+  children:
+  - System.Collections.Immutable.IImmutableDictionary`2
+  - System.Collections.Immutable.IImmutableList`1
+  - System.Collections.Immutable.IImmutableQueue`1
+  - System.Collections.Immutable.IImmutableSet`1
+  - System.Collections.Immutable.IImmutableStack`1
+  - System.Collections.Immutable.ImmutableArray
+  - System.Collections.Immutable.ImmutableArray`1
+  - System.Collections.Immutable.ImmutableArray`1.Builder
+  - System.Collections.Immutable.ImmutableArray`1.Enumerator
+  - System.Collections.Immutable.ImmutableDictionary
+  - System.Collections.Immutable.ImmutableDictionary`2
+  - System.Collections.Immutable.ImmutableDictionary`2.Builder
+  - System.Collections.Immutable.ImmutableDictionary`2.Enumerator
+  - System.Collections.Immutable.ImmutableHashSet
+  - System.Collections.Immutable.ImmutableHashSet`1
+  - System.Collections.Immutable.ImmutableHashSet`1.Builder
+  - System.Collections.Immutable.ImmutableHashSet`1.Enumerator
+  - System.Collections.Immutable.ImmutableInterlocked
+  - System.Collections.Immutable.ImmutableList
+  - System.Collections.Immutable.ImmutableList`1
+  - System.Collections.Immutable.ImmutableList`1.Builder
+  - System.Collections.Immutable.ImmutableList`1.Enumerator
+  - System.Collections.Immutable.ImmutableQueue
+  - System.Collections.Immutable.ImmutableQueue`1
+  - System.Collections.Immutable.ImmutableQueue`1.Enumerator
+  - System.Collections.Immutable.ImmutableSortedDictionary
+  - System.Collections.Immutable.ImmutableSortedDictionary`2
+  - System.Collections.Immutable.ImmutableSortedDictionary`2.Builder
+  - System.Collections.Immutable.ImmutableSortedDictionary`2.Enumerator
+  - System.Collections.Immutable.ImmutableSortedSet
+  - System.Collections.Immutable.ImmutableSortedSet`1
+  - System.Collections.Immutable.ImmutableSortedSet`1.Builder
+  - System.Collections.Immutable.ImmutableSortedSet`1.Enumerator
+  - System.Collections.Immutable.ImmutableStack
+  - System.Collections.Immutable.ImmutableStack`1
+  - System.Collections.Immutable.ImmutableStack`1.Enumerator
+  href: System.Collections.Immutable.yml
+  name: System.Collections.Immutable
+  fullName: System.Collections.Immutable
+  type: Namespace
+  source:
+    remote:
+      path: src/System.Collections.Immutable/src/System/Collections/Immutable/SecureObjectPool.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/SecureObjectPool.cs
+    startLine: 7
+  assemblies:
+  - System.Collections.Immutable
+references:
+- uid: System.Collections.Immutable.IImmutableDictionary`2
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.IImmutableDictionary`2.yml
+  name: IImmutableDictionary<TKey, TValue>
+  name.vb: IImmutableDictionary(Of TKey, TValue)
+  fullName: System.Collections.Immutable.IImmutableDictionary<TKey, TValue>
+  fullName.vb: System.Collections.Immutable.IImmutableDictionary(Of TKey, TValue)
+  type: Interface
+  summary: An immutable key-value dictionary.
+  spec.csharp:
+  - uid: System.Collections.Immutable.IImmutableDictionary`2
+    name: IImmutableDictionary
+    fullName: System.Collections.Immutable.IImmutableDictionary
+    href: System.Collections.Immutable.IImmutableDictionary`2.yml
+  - name: <
+    fullName: <
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.IImmutableDictionary`2
+    name: IImmutableDictionary
+    fullName: System.Collections.Immutable.IImmutableDictionary
+    href: System.Collections.Immutable.IImmutableDictionary`2.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.IImmutableList`1
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.IImmutableList`1.yml
+  name: IImmutableList<T>
+  name.vb: IImmutableList(Of T)
+  fullName: System.Collections.Immutable.IImmutableList<T>
+  fullName.vb: System.Collections.Immutable.IImmutableList(Of T)
+  type: Interface
+  summary: A list of elements that can only be modified by creating a new instance of the list.
+  spec.csharp:
+  - uid: System.Collections.Immutable.IImmutableList`1
+    name: IImmutableList
+    fullName: System.Collections.Immutable.IImmutableList
+    href: System.Collections.Immutable.IImmutableList`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.IImmutableList`1
+    name: IImmutableList
+    fullName: System.Collections.Immutable.IImmutableList
+    href: System.Collections.Immutable.IImmutableList`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.IImmutableQueue`1
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.IImmutableQueue`1.yml
+  name: IImmutableQueue<T>
+  name.vb: IImmutableQueue(Of T)
+  fullName: System.Collections.Immutable.IImmutableQueue<T>
+  fullName.vb: System.Collections.Immutable.IImmutableQueue(Of T)
+  type: Interface
+  summary: An immutable queue.
+  spec.csharp:
+  - uid: System.Collections.Immutable.IImmutableQueue`1
+    name: IImmutableQueue
+    fullName: System.Collections.Immutable.IImmutableQueue
+    href: System.Collections.Immutable.IImmutableQueue`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.IImmutableQueue`1
+    name: IImmutableQueue
+    fullName: System.Collections.Immutable.IImmutableQueue
+    href: System.Collections.Immutable.IImmutableQueue`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.IImmutableSet`1
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.IImmutableSet`1.yml
+  name: IImmutableSet<T>
+  name.vb: IImmutableSet(Of T)
+  fullName: System.Collections.Immutable.IImmutableSet<T>
+  fullName.vb: System.Collections.Immutable.IImmutableSet(Of T)
+  type: Interface
+  summary: A set of elements that can only be modified by creating a new instance of the set.
+  spec.csharp:
+  - uid: System.Collections.Immutable.IImmutableSet`1
+    name: IImmutableSet
+    fullName: System.Collections.Immutable.IImmutableSet
+    href: System.Collections.Immutable.IImmutableSet`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.IImmutableSet`1
+    name: IImmutableSet
+    fullName: System.Collections.Immutable.IImmutableSet
+    href: System.Collections.Immutable.IImmutableSet`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.IImmutableStack`1
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.IImmutableStack`1.yml
+  name: IImmutableStack<T>
+  name.vb: IImmutableStack(Of T)
+  fullName: System.Collections.Immutable.IImmutableStack<T>
+  fullName.vb: System.Collections.Immutable.IImmutableStack(Of T)
+  type: Interface
+  summary: An immutable stack.
+  spec.csharp:
+  - uid: System.Collections.Immutable.IImmutableStack`1
+    name: IImmutableStack
+    fullName: System.Collections.Immutable.IImmutableStack
+    href: System.Collections.Immutable.IImmutableStack`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.IImmutableStack`1
+    name: IImmutableStack
+    fullName: System.Collections.Immutable.IImmutableStack
+    href: System.Collections.Immutable.IImmutableStack`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.ImmutableArray
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableArray.yml
+  name: ImmutableArray
+  fullName: System.Collections.Immutable.ImmutableArray
+  type: Class
+  summary: A set of initialization methods for instances of @'System.Collections.Immutable.ImmutableArray`1'.
+- uid: System.Collections.Immutable.ImmutableArray`1
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableArray`1.yml
+  name: ImmutableArray<T>
+  name.vb: ImmutableArray(Of T)
+  fullName: System.Collections.Immutable.ImmutableArray<T>
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T)
+  type: Struct
+  summary: A readonly array with O(1) indexable lookup time.
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    fullName: System.Collections.Immutable.ImmutableArray
+    href: System.Collections.Immutable.ImmutableArray`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    fullName: System.Collections.Immutable.ImmutableArray
+    href: System.Collections.Immutable.ImmutableArray`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.ImmutableArray`1.Builder
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableArray`1.Builder.yml
+  name: ImmutableArray.Builder<>
+  name.vb: ImmutableArray.Builder(Of )
+  fullName: System.Collections.Immutable.ImmutableArray.Builder<>
+  fullName.vb: System.Collections.Immutable.ImmutableArray.Builder(Of )
+  type: Class
+  summary: >-
+    A writable array accessor that can be converted into an @'System.Collections.Immutable.ImmutableArray`1'
+
+    instance without allocating memory.
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableArray`1.Builder
+    name: ImmutableArray.Builder
+    fullName: System.Collections.Immutable.ImmutableArray.Builder
+    href: System.Collections.Immutable.ImmutableArray`1.Builder.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableArray`1.Builder
+    name: ImmutableArray.Builder
+    fullName: System.Collections.Immutable.ImmutableArray.Builder
+    href: System.Collections.Immutable.ImmutableArray`1.Builder.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.ImmutableArray`1.Enumerator
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableArray`1.Enumerator.yml
+  name: ImmutableArray.Enumerator<>
+  name.vb: ImmutableArray.Enumerator(Of )
+  fullName: System.Collections.Immutable.ImmutableArray.Enumerator<>
+  fullName.vb: System.Collections.Immutable.ImmutableArray.Enumerator(Of )
+  type: Struct
+  summary: An array enumerator.
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableArray`1.Enumerator
+    name: ImmutableArray.Enumerator
+    fullName: System.Collections.Immutable.ImmutableArray.Enumerator
+    href: System.Collections.Immutable.ImmutableArray`1.Enumerator.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableArray`1.Enumerator
+    name: ImmutableArray.Enumerator
+    fullName: System.Collections.Immutable.ImmutableArray.Enumerator
+    href: System.Collections.Immutable.ImmutableArray`1.Enumerator.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.ImmutableDictionary
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableDictionary.yml
+  name: ImmutableDictionary
+  fullName: System.Collections.Immutable.ImmutableDictionary
+  type: Class
+  summary: A set of initialization methods for instances of @'System.Collections.Immutable.ImmutableDictionary`2'.
+- uid: System.Collections.Immutable.ImmutableDictionary`2
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableDictionary`2.yml
+  name: ImmutableDictionary<TKey, TValue>
+  name.vb: ImmutableDictionary(Of TKey, TValue)
+  fullName: System.Collections.Immutable.ImmutableDictionary<TKey, TValue>
+  fullName.vb: System.Collections.Immutable.ImmutableDictionary(Of TKey, TValue)
+  type: Class
+  summary: An immutable unordered dictionary implementation.
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableDictionary`2
+    name: ImmutableDictionary
+    fullName: System.Collections.Immutable.ImmutableDictionary
+    href: System.Collections.Immutable.ImmutableDictionary`2.yml
+  - name: <
+    fullName: <
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableDictionary`2
+    name: ImmutableDictionary
+    fullName: System.Collections.Immutable.ImmutableDictionary
+    href: System.Collections.Immutable.ImmutableDictionary`2.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.ImmutableDictionary`2.Builder
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableDictionary`2.Builder.yml
+  name: ImmutableDictionary.Builder<>
+  name.vb: ImmutableDictionary.Builder(Of )
+  fullName: System.Collections.Immutable.ImmutableDictionary.Builder<>
+  fullName.vb: System.Collections.Immutable.ImmutableDictionary.Builder(Of )
+  type: Class
+  summary: >-
+    A dictionary that mutates with little or no memory allocations,
+
+    can produce and/or build on immutable dictionary instances very efficiently.
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableDictionary`2.Builder
+    name: ImmutableDictionary.Builder
+    fullName: System.Collections.Immutable.ImmutableDictionary.Builder
+    href: System.Collections.Immutable.ImmutableDictionary`2.Builder.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableDictionary`2.Builder
+    name: ImmutableDictionary.Builder
+    fullName: System.Collections.Immutable.ImmutableDictionary.Builder
+    href: System.Collections.Immutable.ImmutableDictionary`2.Builder.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.ImmutableDictionary`2.Enumerator
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableDictionary`2.Enumerator.yml
+  name: ImmutableDictionary.Enumerator<>
+  name.vb: ImmutableDictionary.Enumerator(Of )
+  fullName: System.Collections.Immutable.ImmutableDictionary.Enumerator<>
+  fullName.vb: System.Collections.Immutable.ImmutableDictionary.Enumerator(Of )
+  type: Struct
+  summary: Enumerates the contents of the collection in an allocation-free manner.
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableDictionary`2.Enumerator
+    name: ImmutableDictionary.Enumerator
+    fullName: System.Collections.Immutable.ImmutableDictionary.Enumerator
+    href: System.Collections.Immutable.ImmutableDictionary`2.Enumerator.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableDictionary`2.Enumerator
+    name: ImmutableDictionary.Enumerator
+    fullName: System.Collections.Immutable.ImmutableDictionary.Enumerator
+    href: System.Collections.Immutable.ImmutableDictionary`2.Enumerator.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.ImmutableHashSet
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableHashSet.yml
+  name: ImmutableHashSet
+  fullName: System.Collections.Immutable.ImmutableHashSet
+  type: Class
+  summary: A set of initialization methods for instances of @'System.Collections.Immutable.ImmutableHashSet`1'.
+- uid: System.Collections.Immutable.ImmutableHashSet`1
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableHashSet`1.yml
+  name: ImmutableHashSet<T>
+  name.vb: ImmutableHashSet(Of T)
+  fullName: System.Collections.Immutable.ImmutableHashSet<T>
+  fullName.vb: System.Collections.Immutable.ImmutableHashSet(Of T)
+  type: Class
+  summary: An immutable unordered hash set implementation.
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableHashSet`1
+    name: ImmutableHashSet
+    fullName: System.Collections.Immutable.ImmutableHashSet
+    href: System.Collections.Immutable.ImmutableHashSet`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableHashSet`1
+    name: ImmutableHashSet
+    fullName: System.Collections.Immutable.ImmutableHashSet
+    href: System.Collections.Immutable.ImmutableHashSet`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.ImmutableHashSet`1.Builder
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableHashSet`1.Builder.yml
+  name: ImmutableHashSet.Builder<>
+  name.vb: ImmutableHashSet.Builder(Of )
+  fullName: System.Collections.Immutable.ImmutableHashSet.Builder<>
+  fullName.vb: System.Collections.Immutable.ImmutableHashSet.Builder(Of )
+  type: Class
+  summary: >-
+    A hash set that mutates with little or no memory allocations,
+
+    can produce and/or build on immutable hash set instances very efficiently.
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableHashSet`1.Builder
+    name: ImmutableHashSet.Builder
+    fullName: System.Collections.Immutable.ImmutableHashSet.Builder
+    href: System.Collections.Immutable.ImmutableHashSet`1.Builder.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableHashSet`1.Builder
+    name: ImmutableHashSet.Builder
+    fullName: System.Collections.Immutable.ImmutableHashSet.Builder
+    href: System.Collections.Immutable.ImmutableHashSet`1.Builder.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.ImmutableHashSet`1.Enumerator
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableHashSet`1.Enumerator.yml
+  name: ImmutableHashSet.Enumerator<>
+  name.vb: ImmutableHashSet.Enumerator(Of )
+  fullName: System.Collections.Immutable.ImmutableHashSet.Enumerator<>
+  fullName.vb: System.Collections.Immutable.ImmutableHashSet.Enumerator(Of )
+  type: Struct
+  summary: Enumerates the contents of the collection in an allocation-free manner.
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableHashSet`1.Enumerator
+    name: ImmutableHashSet.Enumerator
+    fullName: System.Collections.Immutable.ImmutableHashSet.Enumerator
+    href: System.Collections.Immutable.ImmutableHashSet`1.Enumerator.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableHashSet`1.Enumerator
+    name: ImmutableHashSet.Enumerator
+    fullName: System.Collections.Immutable.ImmutableHashSet.Enumerator
+    href: System.Collections.Immutable.ImmutableHashSet`1.Enumerator.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.ImmutableInterlocked
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableInterlocked.yml
+  name: ImmutableInterlocked
+  fullName: System.Collections.Immutable.ImmutableInterlocked
+  type: Class
+  summary: Contains interlocked exchange mechanisms for immutable collections.
+- uid: System.Collections.Immutable.ImmutableList
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableList.yml
+  name: ImmutableList
+  fullName: System.Collections.Immutable.ImmutableList
+  type: Class
+  summary: A set of initialization methods for instances of @'System.Collections.Immutable.ImmutableList`1'.
+- uid: System.Collections.Immutable.ImmutableList`1
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableList`1.yml
+  name: ImmutableList<T>
+  name.vb: ImmutableList(Of T)
+  fullName: System.Collections.Immutable.ImmutableList<T>
+  fullName.vb: System.Collections.Immutable.ImmutableList(Of T)
+  type: Class
+  summary: An immutable list implementation.
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableList`1
+    name: ImmutableList
+    fullName: System.Collections.Immutable.ImmutableList
+    href: System.Collections.Immutable.ImmutableList`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableList`1
+    name: ImmutableList
+    fullName: System.Collections.Immutable.ImmutableList
+    href: System.Collections.Immutable.ImmutableList`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.ImmutableList`1.Builder
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableList`1.Builder.yml
+  name: ImmutableList.Builder<>
+  name.vb: ImmutableList.Builder(Of )
+  fullName: System.Collections.Immutable.ImmutableList.Builder<>
+  fullName.vb: System.Collections.Immutable.ImmutableList.Builder(Of )
+  type: Class
+  summary: >-
+    A list that mutates with little or no memory allocations,
+
+    can produce and/or build on immutable list instances very efficiently.
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableList`1.Builder
+    name: ImmutableList.Builder
+    fullName: System.Collections.Immutable.ImmutableList.Builder
+    href: System.Collections.Immutable.ImmutableList`1.Builder.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableList`1.Builder
+    name: ImmutableList.Builder
+    fullName: System.Collections.Immutable.ImmutableList.Builder
+    href: System.Collections.Immutable.ImmutableList`1.Builder.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.ImmutableList`1.Enumerator
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableList`1.Enumerator.yml
+  name: ImmutableList.Enumerator<>
+  name.vb: ImmutableList.Enumerator(Of )
+  fullName: System.Collections.Immutable.ImmutableList.Enumerator<>
+  fullName.vb: System.Collections.Immutable.ImmutableList.Enumerator(Of )
+  type: Struct
+  summary: Enumerates the contents of a binary tree.
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableList`1.Enumerator
+    name: ImmutableList.Enumerator
+    fullName: System.Collections.Immutable.ImmutableList.Enumerator
+    href: System.Collections.Immutable.ImmutableList`1.Enumerator.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableList`1.Enumerator
+    name: ImmutableList.Enumerator
+    fullName: System.Collections.Immutable.ImmutableList.Enumerator
+    href: System.Collections.Immutable.ImmutableList`1.Enumerator.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.ImmutableQueue
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableQueue.yml
+  name: ImmutableQueue
+  fullName: System.Collections.Immutable.ImmutableQueue
+  type: Class
+  summary: A set of initialization methods for instances of @'System.Collections.Immutable.ImmutableQueue`1'.
+- uid: System.Collections.Immutable.ImmutableQueue`1
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableQueue`1.yml
+  name: ImmutableQueue<T>
+  name.vb: ImmutableQueue(Of T)
+  fullName: System.Collections.Immutable.ImmutableQueue<T>
+  fullName.vb: System.Collections.Immutable.ImmutableQueue(Of T)
+  type: Class
+  summary: An immutable queue.
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableQueue`1
+    name: ImmutableQueue
+    fullName: System.Collections.Immutable.ImmutableQueue
+    href: System.Collections.Immutable.ImmutableQueue`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableQueue`1
+    name: ImmutableQueue
+    fullName: System.Collections.Immutable.ImmutableQueue
+    href: System.Collections.Immutable.ImmutableQueue`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.ImmutableQueue`1.Enumerator
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableQueue`1.Enumerator.yml
+  name: ImmutableQueue.Enumerator<>
+  name.vb: ImmutableQueue.Enumerator(Of )
+  fullName: System.Collections.Immutable.ImmutableQueue.Enumerator<>
+  fullName.vb: System.Collections.Immutable.ImmutableQueue.Enumerator(Of )
+  type: Struct
+  summary: A memory allocation-free enumerator of @'System.Collections.Immutable.ImmutableQueue`1'.
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableQueue`1.Enumerator
+    name: ImmutableQueue.Enumerator
+    fullName: System.Collections.Immutable.ImmutableQueue.Enumerator
+    href: System.Collections.Immutable.ImmutableQueue`1.Enumerator.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableQueue`1.Enumerator
+    name: ImmutableQueue.Enumerator
+    fullName: System.Collections.Immutable.ImmutableQueue.Enumerator
+    href: System.Collections.Immutable.ImmutableQueue`1.Enumerator.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.ImmutableSortedDictionary
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableSortedDictionary.yml
+  name: ImmutableSortedDictionary
+  fullName: System.Collections.Immutable.ImmutableSortedDictionary
+  type: Class
+  summary: A set of initialization methods for instances of @'System.Collections.Immutable.ImmutableSortedDictionary`2'.
+- uid: System.Collections.Immutable.ImmutableSortedDictionary`2
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableSortedDictionary`2.yml
+  name: ImmutableSortedDictionary<TKey, TValue>
+  name.vb: ImmutableSortedDictionary(Of TKey, TValue)
+  fullName: System.Collections.Immutable.ImmutableSortedDictionary<TKey, TValue>
+  fullName.vb: System.Collections.Immutable.ImmutableSortedDictionary(Of TKey, TValue)
+  type: Class
+  summary: An immutable sorted dictionary implementation.
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableSortedDictionary`2
+    name: ImmutableSortedDictionary
+    fullName: System.Collections.Immutable.ImmutableSortedDictionary
+    href: System.Collections.Immutable.ImmutableSortedDictionary`2.yml
+  - name: <
+    fullName: <
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableSortedDictionary`2
+    name: ImmutableSortedDictionary
+    fullName: System.Collections.Immutable.ImmutableSortedDictionary
+    href: System.Collections.Immutable.ImmutableSortedDictionary`2.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.ImmutableSortedDictionary`2.Builder
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableSortedDictionary`2.Builder.yml
+  name: ImmutableSortedDictionary.Builder<>
+  name.vb: ImmutableSortedDictionary.Builder(Of )
+  fullName: System.Collections.Immutable.ImmutableSortedDictionary.Builder<>
+  fullName.vb: System.Collections.Immutable.ImmutableSortedDictionary.Builder(Of )
+  type: Class
+  summary: >-
+    A sorted dictionary that mutates with little or no memory allocations,
+
+    can produce and/or build on immutable sorted dictionary instances very efficiently.
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableSortedDictionary`2.Builder
+    name: ImmutableSortedDictionary.Builder
+    fullName: System.Collections.Immutable.ImmutableSortedDictionary.Builder
+    href: System.Collections.Immutable.ImmutableSortedDictionary`2.Builder.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableSortedDictionary`2.Builder
+    name: ImmutableSortedDictionary.Builder
+    fullName: System.Collections.Immutable.ImmutableSortedDictionary.Builder
+    href: System.Collections.Immutable.ImmutableSortedDictionary`2.Builder.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.ImmutableSortedDictionary`2.Enumerator
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableSortedDictionary`2.Enumerator.yml
+  name: ImmutableSortedDictionary.Enumerator<>
+  name.vb: ImmutableSortedDictionary.Enumerator(Of )
+  fullName: System.Collections.Immutable.ImmutableSortedDictionary.Enumerator<>
+  fullName.vb: System.Collections.Immutable.ImmutableSortedDictionary.Enumerator(Of )
+  type: Struct
+  summary: Enumerates the contents of a binary tree.
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableSortedDictionary`2.Enumerator
+    name: ImmutableSortedDictionary.Enumerator
+    fullName: System.Collections.Immutable.ImmutableSortedDictionary.Enumerator
+    href: System.Collections.Immutable.ImmutableSortedDictionary`2.Enumerator.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableSortedDictionary`2.Enumerator
+    name: ImmutableSortedDictionary.Enumerator
+    fullName: System.Collections.Immutable.ImmutableSortedDictionary.Enumerator
+    href: System.Collections.Immutable.ImmutableSortedDictionary`2.Enumerator.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.ImmutableSortedSet
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableSortedSet.yml
+  name: ImmutableSortedSet
+  fullName: System.Collections.Immutable.ImmutableSortedSet
+  type: Class
+  summary: A set of initialization methods for instances of @'System.Collections.Immutable.ImmutableSortedSet`1'.
+- uid: System.Collections.Immutable.ImmutableSortedSet`1
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableSortedSet`1.yml
+  name: ImmutableSortedSet<T>
+  name.vb: ImmutableSortedSet(Of T)
+  fullName: System.Collections.Immutable.ImmutableSortedSet<T>
+  fullName.vb: System.Collections.Immutable.ImmutableSortedSet(Of T)
+  type: Class
+  summary: An immutable sorted set implementation.
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableSortedSet`1
+    name: ImmutableSortedSet
+    fullName: System.Collections.Immutable.ImmutableSortedSet
+    href: System.Collections.Immutable.ImmutableSortedSet`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableSortedSet`1
+    name: ImmutableSortedSet
+    fullName: System.Collections.Immutable.ImmutableSortedSet
+    href: System.Collections.Immutable.ImmutableSortedSet`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.ImmutableSortedSet`1.Builder
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableSortedSet`1.Builder.yml
+  name: ImmutableSortedSet.Builder<>
+  name.vb: ImmutableSortedSet.Builder(Of )
+  fullName: System.Collections.Immutable.ImmutableSortedSet.Builder<>
+  fullName.vb: System.Collections.Immutable.ImmutableSortedSet.Builder(Of )
+  type: Class
+  summary: >-
+    A sorted set that mutates with little or no memory allocations,
+
+    can produce and/or build on immutable sorted set instances very efficiently.
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableSortedSet`1.Builder
+    name: ImmutableSortedSet.Builder
+    fullName: System.Collections.Immutable.ImmutableSortedSet.Builder
+    href: System.Collections.Immutable.ImmutableSortedSet`1.Builder.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableSortedSet`1.Builder
+    name: ImmutableSortedSet.Builder
+    fullName: System.Collections.Immutable.ImmutableSortedSet.Builder
+    href: System.Collections.Immutable.ImmutableSortedSet`1.Builder.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.ImmutableSortedSet`1.Enumerator
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableSortedSet`1.Enumerator.yml
+  name: ImmutableSortedSet.Enumerator<>
+  name.vb: ImmutableSortedSet.Enumerator(Of )
+  fullName: System.Collections.Immutable.ImmutableSortedSet.Enumerator<>
+  fullName.vb: System.Collections.Immutable.ImmutableSortedSet.Enumerator(Of )
+  type: Struct
+  summary: Enumerates the contents of a binary tree.
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableSortedSet`1.Enumerator
+    name: ImmutableSortedSet.Enumerator
+    fullName: System.Collections.Immutable.ImmutableSortedSet.Enumerator
+    href: System.Collections.Immutable.ImmutableSortedSet`1.Enumerator.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableSortedSet`1.Enumerator
+    name: ImmutableSortedSet.Enumerator
+    fullName: System.Collections.Immutable.ImmutableSortedSet.Enumerator
+    href: System.Collections.Immutable.ImmutableSortedSet`1.Enumerator.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.ImmutableStack
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableStack.yml
+  name: ImmutableStack
+  fullName: System.Collections.Immutable.ImmutableStack
+  type: Class
+  summary: A set of initialization methods for instances of @'System.Collections.Immutable.ImmutableStack`1'.
+- uid: System.Collections.Immutable.ImmutableStack`1
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableStack`1.yml
+  name: ImmutableStack<T>
+  name.vb: ImmutableStack(Of T)
+  fullName: System.Collections.Immutable.ImmutableStack<T>
+  fullName.vb: System.Collections.Immutable.ImmutableStack(Of T)
+  type: Class
+  summary: An immutable stack.
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableStack`1
+    name: ImmutableStack
+    fullName: System.Collections.Immutable.ImmutableStack
+    href: System.Collections.Immutable.ImmutableStack`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableStack`1
+    name: ImmutableStack
+    fullName: System.Collections.Immutable.ImmutableStack
+    href: System.Collections.Immutable.ImmutableStack`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.ImmutableStack`1.Enumerator
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableStack`1.Enumerator.yml
+  name: ImmutableStack.Enumerator<>
+  name.vb: ImmutableStack.Enumerator(Of )
+  fullName: System.Collections.Immutable.ImmutableStack.Enumerator<>
+  fullName.vb: System.Collections.Immutable.ImmutableStack.Enumerator(Of )
+  type: Struct
+  summary: Enumerates a stack with no memory allocations.
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableStack`1.Enumerator
+    name: ImmutableStack.Enumerator
+    fullName: System.Collections.Immutable.ImmutableStack.Enumerator
+    href: System.Collections.Immutable.ImmutableStack`1.Enumerator.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableStack`1.Enumerator
+    name: ImmutableStack.Enumerator
+    fullName: System.Collections.Immutable.ImmutableStack.Enumerator
+    href: System.Collections.Immutable.ImmutableStack`1.Enumerator.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable
+  isExternal: false
+  name: System.Collections.Immutable
+  fullName: System.Collections.Immutable
+  type: Namespace

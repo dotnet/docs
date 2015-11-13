@@ -1,0 +1,283 @@
+items:
+- uid: System.Reflection.Metadata.ConstantTypeCode
+  id: ConstantTypeCode
+  parent: System.Reflection.Metadata
+  children:
+  - System.Reflection.Metadata.ConstantTypeCode.Boolean
+  - System.Reflection.Metadata.ConstantTypeCode.Byte
+  - System.Reflection.Metadata.ConstantTypeCode.Char
+  - System.Reflection.Metadata.ConstantTypeCode.Double
+  - System.Reflection.Metadata.ConstantTypeCode.Int16
+  - System.Reflection.Metadata.ConstantTypeCode.Int32
+  - System.Reflection.Metadata.ConstantTypeCode.Int64
+  - System.Reflection.Metadata.ConstantTypeCode.Invalid
+  - System.Reflection.Metadata.ConstantTypeCode.NullReference
+  - System.Reflection.Metadata.ConstantTypeCode.SByte
+  - System.Reflection.Metadata.ConstantTypeCode.Single
+  - System.Reflection.Metadata.ConstantTypeCode.String
+  - System.Reflection.Metadata.ConstantTypeCode.UInt16
+  - System.Reflection.Metadata.ConstantTypeCode.UInt32
+  - System.Reflection.Metadata.ConstantTypeCode.UInt64
+  href: System.Reflection.Metadata.ConstantTypeCode.yml
+  name: ConstantTypeCode
+  fullName: System.Reflection.Metadata.ConstantTypeCode
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/ConstantTypeCode.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/ConstantTypeCode.cs
+    startLine: 7
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: 'public enum ConstantTypeCode : byte'
+    content.vb: Public Enum ConstantTypeCode As Byte
+- uid: System.Reflection.Metadata.ConstantTypeCode.Invalid
+  id: Invalid
+  parent: System.Reflection.Metadata.ConstantTypeCode
+  href: System.Reflection.Metadata.ConstantTypeCode.yml
+  name: Invalid
+  fullName: System.Reflection.Metadata.ConstantTypeCode.Invalid
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/ConstantTypeCode.cs
+    startLine: 15
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: Invalid = 0
+- uid: System.Reflection.Metadata.ConstantTypeCode.Boolean
+  id: Boolean
+  parent: System.Reflection.Metadata.ConstantTypeCode
+  href: System.Reflection.Metadata.ConstantTypeCode.yml
+  name: Boolean
+  fullName: System.Reflection.Metadata.ConstantTypeCode.Boolean
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/ConstantTypeCode.cs
+    startLine: 17
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: Boolean = 2
+- uid: System.Reflection.Metadata.ConstantTypeCode.Char
+  id: Char
+  parent: System.Reflection.Metadata.ConstantTypeCode
+  href: System.Reflection.Metadata.ConstantTypeCode.yml
+  name: Char
+  fullName: System.Reflection.Metadata.ConstantTypeCode.Char
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/ConstantTypeCode.cs
+    startLine: 18
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: Char = 3
+- uid: System.Reflection.Metadata.ConstantTypeCode.SByte
+  id: SByte
+  parent: System.Reflection.Metadata.ConstantTypeCode
+  href: System.Reflection.Metadata.ConstantTypeCode.yml
+  name: SByte
+  fullName: System.Reflection.Metadata.ConstantTypeCode.SByte
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/ConstantTypeCode.cs
+    startLine: 19
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: SByte = 4
+- uid: System.Reflection.Metadata.ConstantTypeCode.Byte
+  id: Byte
+  parent: System.Reflection.Metadata.ConstantTypeCode
+  href: System.Reflection.Metadata.ConstantTypeCode.yml
+  name: Byte
+  fullName: System.Reflection.Metadata.ConstantTypeCode.Byte
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/ConstantTypeCode.cs
+    startLine: 20
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: Byte = 5
+- uid: System.Reflection.Metadata.ConstantTypeCode.Int16
+  id: Int16
+  parent: System.Reflection.Metadata.ConstantTypeCode
+  href: System.Reflection.Metadata.ConstantTypeCode.yml
+  name: Int16
+  fullName: System.Reflection.Metadata.ConstantTypeCode.Int16
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/ConstantTypeCode.cs
+    startLine: 21
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: Int16 = 6
+- uid: System.Reflection.Metadata.ConstantTypeCode.UInt16
+  id: UInt16
+  parent: System.Reflection.Metadata.ConstantTypeCode
+  href: System.Reflection.Metadata.ConstantTypeCode.yml
+  name: UInt16
+  fullName: System.Reflection.Metadata.ConstantTypeCode.UInt16
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/ConstantTypeCode.cs
+    startLine: 22
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: UInt16 = 7
+- uid: System.Reflection.Metadata.ConstantTypeCode.Int32
+  id: Int32
+  parent: System.Reflection.Metadata.ConstantTypeCode
+  href: System.Reflection.Metadata.ConstantTypeCode.yml
+  name: Int32
+  fullName: System.Reflection.Metadata.ConstantTypeCode.Int32
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/ConstantTypeCode.cs
+    startLine: 23
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: Int32 = 8
+- uid: System.Reflection.Metadata.ConstantTypeCode.UInt32
+  id: UInt32
+  parent: System.Reflection.Metadata.ConstantTypeCode
+  href: System.Reflection.Metadata.ConstantTypeCode.yml
+  name: UInt32
+  fullName: System.Reflection.Metadata.ConstantTypeCode.UInt32
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/ConstantTypeCode.cs
+    startLine: 24
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: UInt32 = 9
+- uid: System.Reflection.Metadata.ConstantTypeCode.Int64
+  id: Int64
+  parent: System.Reflection.Metadata.ConstantTypeCode
+  href: System.Reflection.Metadata.ConstantTypeCode.yml
+  name: Int64
+  fullName: System.Reflection.Metadata.ConstantTypeCode.Int64
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/ConstantTypeCode.cs
+    startLine: 25
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: Int64 = 10
+- uid: System.Reflection.Metadata.ConstantTypeCode.UInt64
+  id: UInt64
+  parent: System.Reflection.Metadata.ConstantTypeCode
+  href: System.Reflection.Metadata.ConstantTypeCode.yml
+  name: UInt64
+  fullName: System.Reflection.Metadata.ConstantTypeCode.UInt64
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/ConstantTypeCode.cs
+    startLine: 26
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: UInt64 = 11
+- uid: System.Reflection.Metadata.ConstantTypeCode.Single
+  id: Single
+  parent: System.Reflection.Metadata.ConstantTypeCode
+  href: System.Reflection.Metadata.ConstantTypeCode.yml
+  name: Single
+  fullName: System.Reflection.Metadata.ConstantTypeCode.Single
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/ConstantTypeCode.cs
+    startLine: 27
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: Single = 12
+- uid: System.Reflection.Metadata.ConstantTypeCode.Double
+  id: Double
+  parent: System.Reflection.Metadata.ConstantTypeCode
+  href: System.Reflection.Metadata.ConstantTypeCode.yml
+  name: Double
+  fullName: System.Reflection.Metadata.ConstantTypeCode.Double
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/ConstantTypeCode.cs
+    startLine: 28
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: Double = 13
+- uid: System.Reflection.Metadata.ConstantTypeCode.String
+  id: String
+  parent: System.Reflection.Metadata.ConstantTypeCode
+  href: System.Reflection.Metadata.ConstantTypeCode.yml
+  name: String
+  fullName: System.Reflection.Metadata.ConstantTypeCode.String
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/ConstantTypeCode.cs
+    startLine: 29
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: String = 14
+- uid: System.Reflection.Metadata.ConstantTypeCode.NullReference
+  id: NullReference
+  parent: System.Reflection.Metadata.ConstantTypeCode
+  href: System.Reflection.Metadata.ConstantTypeCode.yml
+  name: NullReference
+  fullName: System.Reflection.Metadata.ConstantTypeCode.NullReference
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/ConstantTypeCode.cs
+    startLine: 30
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: NullReference = 18
+references:
+- uid: System.Reflection.Metadata
+  isExternal: false
+  name: System.Reflection.Metadata
+  fullName: System.Reflection.Metadata
+  type: Namespace

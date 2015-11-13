@@ -1,0 +1,101 @@
+items:
+- uid: System.Runtime.Versioning.ComponentGuaranteesOptions
+  id: ComponentGuaranteesOptions
+  parent: System.Runtime.Versioning
+  children:
+  - System.Runtime.Versioning.ComponentGuaranteesOptions.Exchange
+  - System.Runtime.Versioning.ComponentGuaranteesOptions.None
+  - System.Runtime.Versioning.ComponentGuaranteesOptions.SideBySide
+  - System.Runtime.Versioning.ComponentGuaranteesOptions.Stable
+  href: System.Runtime.Versioning.ComponentGuaranteesOptions.yml
+  name: ComponentGuaranteesOptions
+  fullName: System.Runtime.Versioning.ComponentGuaranteesOptions
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/Versioning/ComponentGuaranteesAttribute.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/Versioning/ComponentGuaranteesAttribute.cs
+    startLine: 15
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Versioning
+  summary: Describes the compatibility guarantee of a component, type, or type member that may span multiple versions.
+  syntax:
+    content: public enum ComponentGuaranteesOptions
+    content.vb: Public Enum ComponentGuaranteesOptions
+- uid: System.Runtime.Versioning.ComponentGuaranteesOptions.None
+  id: None
+  parent: System.Runtime.Versioning.ComponentGuaranteesOptions
+  href: System.Runtime.Versioning.ComponentGuaranteesOptions.yml
+  name: None
+  fullName: System.Runtime.Versioning.ComponentGuaranteesOptions.None
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Versioning/ComponentGuaranteesAttribute.cs
+    startLine: 19
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Versioning
+  summary: The developer does not guarantee compatibility across versions. Consumers of the component, type, or member can expect future versions to break the existing client.
+  syntax:
+    content: None = 0
+- uid: System.Runtime.Versioning.ComponentGuaranteesOptions.Exchange
+  id: Exchange
+  parent: System.Runtime.Versioning.ComponentGuaranteesOptions
+  href: System.Runtime.Versioning.ComponentGuaranteesOptions.yml
+  name: Exchange
+  fullName: System.Runtime.Versioning.ComponentGuaranteesOptions.Exchange
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Versioning/ComponentGuaranteesAttribute.cs
+    startLine: 20
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Versioning
+  summary: The developer promises multi-version exchange compatibility for the type. Consumers of the type can expect compatibility across future versions and can use the type in all their interfaces. Versioning problems cannot be fixed by side-by-side execution.
+  syntax:
+    content: Exchange = 1
+- uid: System.Runtime.Versioning.ComponentGuaranteesOptions.Stable
+  id: Stable
+  parent: System.Runtime.Versioning.ComponentGuaranteesOptions
+  href: System.Runtime.Versioning.ComponentGuaranteesOptions.yml
+  name: Stable
+  fullName: System.Runtime.Versioning.ComponentGuaranteesOptions.Stable
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Versioning/ComponentGuaranteesAttribute.cs
+    startLine: 21
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Versioning
+  summary: The developer promises stable compatibility across versions. Consumers of the type can expect that future versions will not break the existing client. However, if they do and if the client has not used the type in its interfaces, side-by-side execution may fix the problem.
+  syntax:
+    content: Stable = 2
+- uid: System.Runtime.Versioning.ComponentGuaranteesOptions.SideBySide
+  id: SideBySide
+  parent: System.Runtime.Versioning.ComponentGuaranteesOptions
+  href: System.Runtime.Versioning.ComponentGuaranteesOptions.yml
+  name: SideBySide
+  fullName: System.Runtime.Versioning.ComponentGuaranteesOptions.SideBySide
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Versioning/ComponentGuaranteesAttribute.cs
+    startLine: 22
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Versioning
+  summary: The component has been tested to work when more than one version of the assembly is loaded into the same application domain. Future versions can break compatibility. However, when such breaking changes are made, the old version is not modified but continues to exist alongside the new version.
+  syntax:
+    content: SideBySide = 4
+references:
+- uid: System.Runtime.Versioning
+  isExternal: false
+  name: System.Runtime.Versioning
+  fullName: System.Runtime.Versioning
+  type: Namespace

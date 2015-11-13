@@ -1,0 +1,148 @@
+items:
+- uid: System.IO.IsolatedStorage.IsolatedStorageSecurityOptions
+  id: IsolatedStorageSecurityOptions
+  parent: System.IO.IsolatedStorage
+  children:
+  - System.IO.IsolatedStorage.IsolatedStorageSecurityOptions.AvailableFreeSpace
+  - System.IO.IsolatedStorage.IsolatedStorageSecurityOptions.DefaultQuotaForGroup
+  - System.IO.IsolatedStorage.IsolatedStorageSecurityOptions.GetGroupAndIdForApplication
+  - System.IO.IsolatedStorage.IsolatedStorageSecurityOptions.GetGroupAndIdForSite
+  - System.IO.IsolatedStorage.IsolatedStorageSecurityOptions.GetRootUserDirectory
+  - System.IO.IsolatedStorage.IsolatedStorageSecurityOptions.IncreaseQuotaForGroup
+  - System.IO.IsolatedStorage.IsolatedStorageSecurityOptions.IsolatedStorageFolderName
+  href: System.IO.IsolatedStorage.IsolatedStorageSecurityOptions.yml
+  name: IsolatedStorageSecurityOptions
+  fullName: System.IO.IsolatedStorage.IsolatedStorageSecurityOptions
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/IO/IsolatedStorage/IsolatedStorageSecurityState.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/IO/IsolatedStorage/IsolatedStorageSecurityState.cs
+    startLine: 17
+  assemblies:
+  - mscorlib
+  namespace: System.IO.IsolatedStorage
+  summary: Specifies options that affect security in isolated storage.
+  syntax:
+    content: public enum IsolatedStorageSecurityOptions
+    content.vb: Public Enum IsolatedStorageSecurityOptions
+- uid: System.IO.IsolatedStorage.IsolatedStorageSecurityOptions.GetRootUserDirectory
+  id: GetRootUserDirectory
+  parent: System.IO.IsolatedStorage.IsolatedStorageSecurityOptions
+  href: System.IO.IsolatedStorage.IsolatedStorageSecurityOptions.yml
+  name: GetRootUserDirectory
+  fullName: System.IO.IsolatedStorage.IsolatedStorageSecurityOptions.GetRootUserDirectory
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/IsolatedStorage/IsolatedStorageSecurityState.cs
+    startLine: 18
+  assemblies:
+  - mscorlib
+  namespace: System.IO.IsolatedStorage
+  syntax:
+    content: GetRootUserDirectory = 0
+- uid: System.IO.IsolatedStorage.IsolatedStorageSecurityOptions.GetGroupAndIdForApplication
+  id: GetGroupAndIdForApplication
+  parent: System.IO.IsolatedStorage.IsolatedStorageSecurityOptions
+  href: System.IO.IsolatedStorage.IsolatedStorageSecurityOptions.yml
+  name: GetGroupAndIdForApplication
+  fullName: System.IO.IsolatedStorage.IsolatedStorageSecurityOptions.GetGroupAndIdForApplication
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/IsolatedStorage/IsolatedStorageSecurityState.cs
+    startLine: 19
+  assemblies:
+  - mscorlib
+  namespace: System.IO.IsolatedStorage
+  syntax:
+    content: GetGroupAndIdForApplication = 1
+- uid: System.IO.IsolatedStorage.IsolatedStorageSecurityOptions.GetGroupAndIdForSite
+  id: GetGroupAndIdForSite
+  parent: System.IO.IsolatedStorage.IsolatedStorageSecurityOptions
+  href: System.IO.IsolatedStorage.IsolatedStorageSecurityOptions.yml
+  name: GetGroupAndIdForSite
+  fullName: System.IO.IsolatedStorage.IsolatedStorageSecurityOptions.GetGroupAndIdForSite
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/IsolatedStorage/IsolatedStorageSecurityState.cs
+    startLine: 20
+  assemblies:
+  - mscorlib
+  namespace: System.IO.IsolatedStorage
+  syntax:
+    content: GetGroupAndIdForSite = 2
+- uid: System.IO.IsolatedStorage.IsolatedStorageSecurityOptions.IncreaseQuotaForGroup
+  id: IncreaseQuotaForGroup
+  parent: System.IO.IsolatedStorage.IsolatedStorageSecurityOptions
+  href: System.IO.IsolatedStorage.IsolatedStorageSecurityOptions.yml
+  name: IncreaseQuotaForGroup
+  fullName: System.IO.IsolatedStorage.IsolatedStorageSecurityOptions.IncreaseQuotaForGroup
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/IsolatedStorage/IsolatedStorageSecurityState.cs
+    startLine: 21
+  assemblies:
+  - mscorlib
+  namespace: System.IO.IsolatedStorage
+  syntax:
+    content: IncreaseQuotaForGroup = 3
+- uid: System.IO.IsolatedStorage.IsolatedStorageSecurityOptions.DefaultQuotaForGroup
+  id: DefaultQuotaForGroup
+  parent: System.IO.IsolatedStorage.IsolatedStorageSecurityOptions
+  href: System.IO.IsolatedStorage.IsolatedStorageSecurityOptions.yml
+  name: DefaultQuotaForGroup
+  fullName: System.IO.IsolatedStorage.IsolatedStorageSecurityOptions.DefaultQuotaForGroup
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/IsolatedStorage/IsolatedStorageSecurityState.cs
+    startLine: 22
+  assemblies:
+  - mscorlib
+  namespace: System.IO.IsolatedStorage
+  syntax:
+    content: DefaultQuotaForGroup = 4
+- uid: System.IO.IsolatedStorage.IsolatedStorageSecurityOptions.AvailableFreeSpace
+  id: AvailableFreeSpace
+  parent: System.IO.IsolatedStorage.IsolatedStorageSecurityOptions
+  href: System.IO.IsolatedStorage.IsolatedStorageSecurityOptions.yml
+  name: AvailableFreeSpace
+  fullName: System.IO.IsolatedStorage.IsolatedStorageSecurityOptions.AvailableFreeSpace
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/IsolatedStorage/IsolatedStorageSecurityState.cs
+    startLine: 23
+  assemblies:
+  - mscorlib
+  namespace: System.IO.IsolatedStorage
+  syntax:
+    content: AvailableFreeSpace = 5
+- uid: System.IO.IsolatedStorage.IsolatedStorageSecurityOptions.IsolatedStorageFolderName
+  id: IsolatedStorageFolderName
+  parent: System.IO.IsolatedStorage.IsolatedStorageSecurityOptions
+  href: System.IO.IsolatedStorage.IsolatedStorageSecurityOptions.yml
+  name: IsolatedStorageFolderName
+  fullName: System.IO.IsolatedStorage.IsolatedStorageSecurityOptions.IsolatedStorageFolderName
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/IsolatedStorage/IsolatedStorageSecurityState.cs
+    startLine: 24
+  assemblies:
+  - mscorlib
+  namespace: System.IO.IsolatedStorage
+  syntax:
+    content: IsolatedStorageFolderName = 6
+references:
+- uid: System.IO.IsolatedStorage
+  isExternal: false
+  name: System.IO.IsolatedStorage
+  fullName: System.IO.IsolatedStorage
+  type: Namespace

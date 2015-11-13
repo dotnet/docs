@@ -1,0 +1,118 @@
+items:
+- uid: System.Security.Cryptography.CipherMode
+  id: CipherMode
+  parent: System.Security.Cryptography
+  children:
+  - System.Security.Cryptography.CipherMode.CBC
+  - System.Security.Cryptography.CipherMode.CFB
+  - System.Security.Cryptography.CipherMode.CTS
+  - System.Security.Cryptography.CipherMode.ECB
+  - System.Security.Cryptography.CipherMode.OFB
+  href: System.Security.Cryptography.CipherMode.yml
+  name: CipherMode
+  fullName: System.Security.Cryptography.CipherMode
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Security/Cryptography/Crypto.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Security/Cryptography/Crypto.cs
+    startLine: 11
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: Specifies the block cipher mode to use for encryption.
+  syntax:
+    content: public enum CipherMode
+    content.vb: Public Enum CipherMode
+- uid: System.Security.Cryptography.CipherMode.CBC
+  id: CBC
+  parent: System.Security.Cryptography.CipherMode
+  href: System.Security.Cryptography.CipherMode.yml
+  name: CBC
+  fullName: System.Security.Cryptography.CipherMode.CBC
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/Crypto.cs
+    startLine: 14
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: The Cipher Block Chaining (CBC) mode introduces feedback. Before each plain text block is encrypted, it is combined with the cipher text of the previous block by a bitwise exclusive OR operation. This ensures that even if the plain text contains many identical blocks, they will each encrypt to a different cipher text block. The initialization vector is combined with the first plain text block by a bitwise exclusive OR operation before the block is encrypted. If a single bit of the cipher text block is mangled, the corresponding plain text block will also be mangled. In addition, a bit in the subsequent block, in the same position as the original mangled bit, will be mangled.
+  syntax:
+    content: CBC = 1
+- uid: System.Security.Cryptography.CipherMode.ECB
+  id: ECB
+  parent: System.Security.Cryptography.CipherMode
+  href: System.Security.Cryptography.CipherMode.yml
+  name: ECB
+  fullName: System.Security.Cryptography.CipherMode.ECB
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/Crypto.cs
+    startLine: 15
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: "The Electronic Codebook (ECB) mode encrypts each block individually. Any blocks of plain text that are identical and in the same message, or that are in a different message encrypted with the same key, will be transformed into identical cipher text blocks. Important:  This mode is not recommended because it opens the door for multiple security exploits. If the plain text to be encrypted contains substantial repetition, it is feasible for the cipher text to be broken one block at a time. It is also possible to use block analysis to determine the encryption key. Also, an active adversary can substitute and exchange individual blocks without detection, which allows blocks to be saved and inserted into the stream at other points without detection."
+  syntax:
+    content: ECB = 2
+- uid: System.Security.Cryptography.CipherMode.OFB
+  id: OFB
+  parent: System.Security.Cryptography.CipherMode
+  href: System.Security.Cryptography.CipherMode.yml
+  name: OFB
+  fullName: System.Security.Cryptography.CipherMode.OFB
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/Crypto.cs
+    startLine: 16
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: The Output Feedback (OFB) mode processes small increments of plain text into cipher text instead of processing an entire block at a time. This mode is similar to CFB; the only difference between the two modes is the way that the shift register is filled. If a bit in the cipher text is mangled, the corresponding bit of plain text will be mangled. However, if there are extra or missing bits from the cipher text, the plain text will be mangled from that point on.
+  syntax:
+    content: OFB = 3
+- uid: System.Security.Cryptography.CipherMode.CFB
+  id: CFB
+  parent: System.Security.Cryptography.CipherMode
+  href: System.Security.Cryptography.CipherMode.yml
+  name: CFB
+  fullName: System.Security.Cryptography.CipherMode.CFB
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/Crypto.cs
+    startLine: 17
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: The Cipher Feedback (CFB) mode processes small increments of plain text into cipher text, instead of processing an entire block at a time. This mode uses a shift register that is one block in length and is divided into sections. For example, if the block size is 8 bytes, with one byte processed at a time, the shift register is divided into eight sections. If a bit in the cipher text is mangled, one plain text bit is mangled and the shift register is corrupted. This results in the next several plain text increments being mangled until the bad bit is shifted out of the shift register. The default feedback size can vary by algorithm, but is typically either 8 bits or the number of bits of the block size. You can alter the number of feedback bits by using the @'System.Security.Cryptography.SymmetricAlgorithm.FeedbackSize' property. Algorithms that support CFB use this property to set the feedback.
+  syntax:
+    content: CFB = 4
+- uid: System.Security.Cryptography.CipherMode.CTS
+  id: CTS
+  parent: System.Security.Cryptography.CipherMode
+  href: System.Security.Cryptography.CipherMode.yml
+  name: CTS
+  fullName: System.Security.Cryptography.CipherMode.CTS
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/Crypto.cs
+    startLine: 18
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: The Cipher Text Stealing (CTS) mode handles any length of plain text and produces cipher text whose length matches the plain text length. This mode behaves like the CBC mode for all but the last two blocks of the plain text.
+  syntax:
+    content: CTS = 5
+references:
+- uid: System.Security.Cryptography
+  isExternal: false
+  name: System.Security.Cryptography
+  fullName: System.Security.Cryptography

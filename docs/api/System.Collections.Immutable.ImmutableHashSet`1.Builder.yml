@@ -1,0 +1,1190 @@
+items:
+- uid: System.Collections.Immutable.ImmutableHashSet`1.Builder
+  id: ImmutableHashSet`1.Builder
+  parent: System.Collections.Immutable
+  children:
+  - System.Collections.Immutable.ImmutableHashSet`1.Builder.Add(`0)
+  - System.Collections.Immutable.ImmutableHashSet`1.Builder.Clear
+  - System.Collections.Immutable.ImmutableHashSet`1.Builder.Contains(`0)
+  - System.Collections.Immutable.ImmutableHashSet`1.Builder.Count
+  - System.Collections.Immutable.ImmutableHashSet`1.Builder.ExceptWith(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Immutable.ImmutableHashSet`1.Builder.GetEnumerator
+  - System.Collections.Immutable.ImmutableHashSet`1.Builder.IntersectWith(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Immutable.ImmutableHashSet`1.Builder.IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Immutable.ImmutableHashSet`1.Builder.IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Immutable.ImmutableHashSet`1.Builder.IsSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Immutable.ImmutableHashSet`1.Builder.IsSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Immutable.ImmutableHashSet`1.Builder.KeyComparer
+  - System.Collections.Immutable.ImmutableHashSet`1.Builder.Overlaps(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Immutable.ImmutableHashSet`1.Builder.Remove(`0)
+  - System.Collections.Immutable.ImmutableHashSet`1.Builder.SetEquals(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Immutable.ImmutableHashSet`1.Builder.SymmetricExceptWith(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Immutable.ImmutableHashSet`1.Builder.System#Collections#Generic#ICollection{T}#Add(`0)
+  - System.Collections.Immutable.ImmutableHashSet`1.Builder.System#Collections#Generic#ICollection{T}#CopyTo(`0[],System.Int32)
+  - System.Collections.Immutable.ImmutableHashSet`1.Builder.System#Collections#Generic#ICollection{T}#IsReadOnly
+  - System.Collections.Immutable.ImmutableHashSet`1.Builder.System#Collections#Generic#IEnumerable{T}#GetEnumerator
+  - System.Collections.Immutable.ImmutableHashSet`1.Builder.System#Collections#IEnumerable#GetEnumerator
+  - System.Collections.Immutable.ImmutableHashSet`1.Builder.ToImmutable
+  - System.Collections.Immutable.ImmutableHashSet`1.Builder.UnionWith(System.Collections.Generic.IEnumerable{`0})
+  href: System.Collections.Immutable.ImmutableHashSet`1.Builder.yml
+  name: ImmutableHashSet<T>.Builder
+  name.vb: ImmutableHashSet(Of T).Builder
+  fullName: System.Collections.Immutable.ImmutableHashSet<T>.Builder
+  fullName.vb: System.Collections.Immutable.ImmutableHashSet(Of T).Builder
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1+Builder.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1+Builder.cs
+    startLine: 30
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: >-
+    A hash set that mutates with little or no memory allocations,
+
+    can produce and/or build on immutable hash set instances very efficiently.
+  remarks: >-
+    <para>
+
+    While @'System.Collections.Immutable.ImmutableHashSet`1.Union(System.Collections.Generic.IEnumerable{`0})' and other bulk change methods
+
+    already provide fast bulk change operations on the collection, this class allows
+
+    multiple combinations of changes to be made to a set with equal efficiency.
+
+    </para>
+
+    <para>
+
+    Instance members of this class are <em>not</em> thread-safe.
+
+    </para>
+  syntax:
+    content: 'public sealed class Builder : IReadOnlyCollection<T>, IEnumerable<T>, IEnumerable, ISet<T>'
+    content.vb: Public NotInheritable Class Builder Implements IReadOnlyCollection(Of T), IEnumerable(Of T), IEnumerable, ISet(Of T)
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.Generic.IReadOnlyCollection{{T}}
+  - System.Collections.Generic.IEnumerable{{T}}
+  - System.Collections.IEnumerable
+  - ISet{{T}}
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Collections.Immutable.ImmutableHashSet`1.Builder.Count
+  id: Count
+  parent: System.Collections.Immutable.ImmutableHashSet`1.Builder
+  href: System.Collections.Immutable.ImmutableHashSet`1.Builder.yml
+  name: Count
+  fullName: System.Collections.Immutable.ImmutableHashSet<T>.Builder.Count
+  fullName.vb: System.Collections.Immutable.ImmutableHashSet(Of T).Builder.Count
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1+Builder.cs
+    startLine: 80
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Gets the number of elements contained in the @'System.Collections.Generic.ICollection`1'.
+  syntax:
+    content: public int Count { get; }
+    content.vb: Public ReadOnly Property Count As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: The number of elements contained in the @'System.Collections.Generic.ICollection`1'.
+- uid: System.Collections.Immutable.ImmutableHashSet`1.Builder.System#Collections#Generic#ICollection{T}#IsReadOnly
+  id: System#Collections#Generic#ICollection{T}#IsReadOnly
+  parent: System.Collections.Immutable.ImmutableHashSet`1.Builder
+  href: System.Collections.Immutable.ImmutableHashSet`1.Builder.yml
+  name: ICollection<T>.IsReadOnly
+  name.vb: System.Collections.Generic.ICollection<T>.IsReadOnly
+  fullName: System.Collections.Immutable.ImmutableHashSet<T>.Builder.System.Collections.Generic.ICollection<T>.IsReadOnly
+  fullName.vb: System.Collections.Immutable.ImmutableHashSet(Of T).Builder.System.Collections.Generic.ICollection<T>.IsReadOnly
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1+Builder.cs
+    startLine: 89
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Gets a value indicating whether the @'System.Collections.Generic.ICollection`1' is read-only.
+  syntax:
+    content: bool ICollection<T>.IsReadOnly { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.Generic.ICollection<T>.IsReadOnly As Boolean Implements ICollection(Of T).IsReadOnly
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the @'System.Collections.Generic.ICollection`1' is read-only; otherwise, false.
+- uid: System.Collections.Immutable.ImmutableHashSet`1.Builder.KeyComparer
+  id: KeyComparer
+  parent: System.Collections.Immutable.ImmutableHashSet`1.Builder
+  href: System.Collections.Immutable.ImmutableHashSet`1.Builder.yml
+  name: KeyComparer
+  fullName: System.Collections.Immutable.ImmutableHashSet<T>.Builder.KeyComparer
+  fullName.vb: System.Collections.Immutable.ImmutableHashSet(Of T).Builder.KeyComparer
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1+Builder.cs
+    startLine: 102
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Gets or sets the key comparer.
+  syntax:
+    content: public IEqualityComparer<T> KeyComparer { get; set; }
+    content.vb: Public Property KeyComparer As IEqualityComparer(Of T)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEqualityComparer{{T}}
+- uid: System.Collections.Immutable.ImmutableHashSet`1.Builder.GetEnumerator
+  id: GetEnumerator
+  parent: System.Collections.Immutable.ImmutableHashSet`1.Builder
+  href: System.Collections.Immutable.ImmutableHashSet`1.Builder.yml
+  name: GetEnumerator()
+  fullName: System.Collections.Immutable.ImmutableHashSet<T>.Builder.GetEnumerator()
+  fullName.vb: System.Collections.Immutable.ImmutableHashSet(Of T).Builder.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1+Builder.cs
+    startLine: 176
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Returns an enumerator that iterates through the collection.
+  syntax:
+    content: public ImmutableHashSet<T>.Enumerator GetEnumerator()
+    content.vb: Public Function GetEnumerator As ImmutableHashSet(Of T).Enumerator
+    return:
+      type: System.Collections.Immutable.ImmutableHashSet`1.Enumerator
+      description: A @'System.Collections.Generic.IEnumerator`1' that can be used to iterate through the collection.
+- uid: System.Collections.Immutable.ImmutableHashSet`1.Builder.ToImmutable
+  id: ToImmutable
+  parent: System.Collections.Immutable.ImmutableHashSet`1.Builder
+  href: System.Collections.Immutable.ImmutableHashSet`1.Builder.yml
+  name: ToImmutable()
+  fullName: System.Collections.Immutable.ImmutableHashSet<T>.Builder.ToImmutable()
+  fullName.vb: System.Collections.Immutable.ImmutableHashSet(Of T).Builder.ToImmutable()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1+Builder.cs
+    startLine: 189
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Creates an immutable hash set based on the contents of this instance.
+  remarks: >-
+    This method is an O(n) operation, and approaches O(1) time as the number of
+
+    actual mutations to the set since the last call to this method approaches 0.
+  syntax:
+    content: public ImmutableHashSet<T> ToImmutable()
+    content.vb: Public Function ToImmutable As ImmutableHashSet(Of T)
+    return:
+      type: System.Collections.Immutable.ImmutableHashSet`1
+      description: An immutable set.
+- uid: System.Collections.Immutable.ImmutableHashSet`1.Builder.Add(`0)
+  id: Add(`0)
+  parent: System.Collections.Immutable.ImmutableHashSet`1.Builder
+  href: System.Collections.Immutable.ImmutableHashSet`1.Builder.yml
+  name: Add(T)
+  fullName: System.Collections.Immutable.ImmutableHashSet<T>.Builder.Add(T)
+  fullName.vb: System.Collections.Immutable.ImmutableHashSet(Of T).Builder.Add(T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1+Builder.cs
+    startLine: 211
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Adds the specified item.
+  syntax:
+    content: public bool Add(T item)
+    content.vb: Public Function Add(item As T) As Boolean
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The item.
+    return:
+      type: System.Boolean
+      description: True if the item did not already belong to the collection.
+- uid: System.Collections.Immutable.ImmutableHashSet`1.Builder.Remove(`0)
+  id: Remove(`0)
+  parent: System.Collections.Immutable.ImmutableHashSet`1.Builder
+  href: System.Collections.Immutable.ImmutableHashSet`1.Builder.yml
+  name: Remove(T)
+  fullName: System.Collections.Immutable.ImmutableHashSet<T>.Builder.Remove(T)
+  fullName.vb: System.Collections.Immutable.ImmutableHashSet(Of T).Builder.Remove(T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1+Builder.cs
+    startLine: 226
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Removes the first occurrence of a specific object from the @'System.Collections.Generic.ICollection`1'.
+  syntax:
+    content: public bool Remove(T item)
+    content.vb: Public Function Remove(item As T) As Boolean
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The object to remove from the @'System.Collections.Generic.ICollection`1'.
+    return:
+      type: System.Boolean
+      description: true if <paramref name="item" /> was successfully removed from the @'System.Collections.Generic.ICollection`1'; otherwise, false. This method also returns false if <paramref name="item" /> is not found in the original @'System.Collections.Generic.ICollection`1'.
+  exceptions:
+  - type: System.NotSupportedException
+    description: The  is read-only.
+- uid: System.Collections.Immutable.ImmutableHashSet`1.Builder.Contains(`0)
+  id: Contains(`0)
+  parent: System.Collections.Immutable.ImmutableHashSet`1.Builder
+  href: System.Collections.Immutable.ImmutableHashSet`1.Builder.yml
+  name: Contains(T)
+  fullName: System.Collections.Immutable.ImmutableHashSet<T>.Builder.Contains(T)
+  fullName.vb: System.Collections.Immutable.ImmutableHashSet(Of T).Builder.Contains(T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1+Builder.cs
+    startLine: 240
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Determines whether the @'System.Collections.Generic.ICollection`1' contains a specific value.
+  syntax:
+    content: public bool Contains(T item)
+    content.vb: Public Function Contains(item As T) As Boolean
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The object to locate in the @'System.Collections.Generic.ICollection`1'.
+    return:
+      type: System.Boolean
+      description: true if <paramref name="item" /> is found in the @'System.Collections.Generic.ICollection`1'; otherwise, false.
+- uid: System.Collections.Immutable.ImmutableHashSet`1.Builder.Clear
+  id: Clear
+  parent: System.Collections.Immutable.ImmutableHashSet`1.Builder
+  href: System.Collections.Immutable.ImmutableHashSet`1.Builder.yml
+  name: Clear()
+  fullName: System.Collections.Immutable.ImmutableHashSet<T>.Builder.Clear()
+  fullName.vb: System.Collections.Immutable.ImmutableHashSet(Of T).Builder.Clear()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1+Builder.cs
+    startLine: 249
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Removes all items from the @'System.Collections.Generic.ICollection`1'.
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear
+  exceptions:
+  - type: System.NotSupportedException
+    description: The  is read-only.
+- uid: System.Collections.Immutable.ImmutableHashSet`1.Builder.ExceptWith(System.Collections.Generic.IEnumerable{`0})
+  id: ExceptWith(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Immutable.ImmutableHashSet`1.Builder
+  href: System.Collections.Immutable.ImmutableHashSet`1.Builder.yml
+  name: ExceptWith(IEnumerable<T>)
+  name.vb: ExceptWith(IEnumerable(Of T))
+  fullName: System.Collections.Immutable.ImmutableHashSet<T>.Builder.ExceptWith(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableHashSet(Of T).Builder.ExceptWith(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1+Builder.cs
+    startLine: 259
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Removes all elements in the specified collection from the current set.
+  syntax:
+    content: public void ExceptWith(IEnumerable<T> other)
+    content.vb: Public Sub ExceptWith(other As IEnumerable(Of T))
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection of items to remove from the set.
+- uid: System.Collections.Immutable.ImmutableHashSet`1.Builder.IntersectWith(System.Collections.Generic.IEnumerable{`0})
+  id: IntersectWith(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Immutable.ImmutableHashSet`1.Builder
+  href: System.Collections.Immutable.ImmutableHashSet`1.Builder.yml
+  name: IntersectWith(IEnumerable<T>)
+  name.vb: IntersectWith(IEnumerable(Of T))
+  fullName: System.Collections.Immutable.ImmutableHashSet<T>.Builder.IntersectWith(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableHashSet(Of T).Builder.IntersectWith(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1+Builder.cs
+    startLine: 269
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Modifies the current set so that it contains only elements that are also in a specified collection.
+  syntax:
+    content: public void IntersectWith(IEnumerable<T> other)
+    content.vb: Public Sub IntersectWith(other As IEnumerable(Of T))
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to compare to the current set.
+- uid: System.Collections.Immutable.ImmutableHashSet`1.Builder.IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  id: IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Immutable.ImmutableHashSet`1.Builder
+  href: System.Collections.Immutable.ImmutableHashSet`1.Builder.yml
+  name: IsProperSubsetOf(IEnumerable<T>)
+  name.vb: IsProperSubsetOf(IEnumerable(Of T))
+  fullName: System.Collections.Immutable.ImmutableHashSet<T>.Builder.IsProperSubsetOf(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableHashSet(Of T).Builder.IsProperSubsetOf(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1+Builder.cs
+    startLine: 280
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Determines whether the current set is a proper (strict) subset of a specified collection.
+  syntax:
+    content: public bool IsProperSubsetOf(IEnumerable<T> other)
+    content.vb: Public Function IsProperSubsetOf(other As IEnumerable(Of T)) As Boolean
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to compare to the current set.
+    return:
+      type: System.Boolean
+      description: true if the current set is a correct subset of other; otherwise, false.
+- uid: System.Collections.Immutable.ImmutableHashSet`1.Builder.IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  id: IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Immutable.ImmutableHashSet`1.Builder
+  href: System.Collections.Immutable.ImmutableHashSet`1.Builder.yml
+  name: IsProperSupersetOf(IEnumerable<T>)
+  name.vb: IsProperSupersetOf(IEnumerable(Of T))
+  fullName: System.Collections.Immutable.ImmutableHashSet<T>.Builder.IsProperSupersetOf(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableHashSet(Of T).Builder.IsProperSupersetOf(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1+Builder.cs
+    startLine: 290
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Determines whether the current set is a proper (strict) superset of a specified collection.
+  syntax:
+    content: public bool IsProperSupersetOf(IEnumerable<T> other)
+    content.vb: Public Function IsProperSupersetOf(other As IEnumerable(Of T)) As Boolean
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to compare to the current set.
+    return:
+      type: System.Boolean
+      description: true if the current set is a superset of other; otherwise, false.
+- uid: System.Collections.Immutable.ImmutableHashSet`1.Builder.IsSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  id: IsSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Immutable.ImmutableHashSet`1.Builder
+  href: System.Collections.Immutable.ImmutableHashSet`1.Builder.yml
+  name: IsSubsetOf(IEnumerable<T>)
+  name.vb: IsSubsetOf(IEnumerable(Of T))
+  fullName: System.Collections.Immutable.ImmutableHashSet<T>.Builder.IsSubsetOf(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableHashSet(Of T).Builder.IsSubsetOf(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1+Builder.cs
+    startLine: 300
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Determines whether the current set is a subset of a specified collection.
+  syntax:
+    content: public bool IsSubsetOf(IEnumerable<T> other)
+    content.vb: Public Function IsSubsetOf(other As IEnumerable(Of T)) As Boolean
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to compare to the current set.
+    return:
+      type: System.Boolean
+      description: true if the current set is a subset of other; otherwise, false.
+- uid: System.Collections.Immutable.ImmutableHashSet`1.Builder.IsSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  id: IsSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Immutable.ImmutableHashSet`1.Builder
+  href: System.Collections.Immutable.ImmutableHashSet`1.Builder.yml
+  name: IsSupersetOf(IEnumerable<T>)
+  name.vb: IsSupersetOf(IEnumerable(Of T))
+  fullName: System.Collections.Immutable.ImmutableHashSet<T>.Builder.IsSupersetOf(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableHashSet(Of T).Builder.IsSupersetOf(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1+Builder.cs
+    startLine: 310
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Determines whether the current set is a superset of a specified collection.
+  syntax:
+    content: public bool IsSupersetOf(IEnumerable<T> other)
+    content.vb: Public Function IsSupersetOf(other As IEnumerable(Of T)) As Boolean
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to compare to the current set.
+    return:
+      type: System.Boolean
+      description: true if the current set is a superset of other; otherwise, false.
+- uid: System.Collections.Immutable.ImmutableHashSet`1.Builder.Overlaps(System.Collections.Generic.IEnumerable{`0})
+  id: Overlaps(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Immutable.ImmutableHashSet`1.Builder
+  href: System.Collections.Immutable.ImmutableHashSet`1.Builder.yml
+  name: Overlaps(IEnumerable<T>)
+  name.vb: Overlaps(IEnumerable(Of T))
+  fullName: System.Collections.Immutable.ImmutableHashSet<T>.Builder.Overlaps(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableHashSet(Of T).Builder.Overlaps(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1+Builder.cs
+    startLine: 320
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Determines whether the current set overlaps with the specified collection.
+  syntax:
+    content: public bool Overlaps(IEnumerable<T> other)
+    content.vb: Public Function Overlaps(other As IEnumerable(Of T)) As Boolean
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to compare to the current set.
+    return:
+      type: System.Boolean
+      description: true if the current set and other share at least one common element; otherwise, false.
+- uid: System.Collections.Immutable.ImmutableHashSet`1.Builder.SetEquals(System.Collections.Generic.IEnumerable{`0})
+  id: SetEquals(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Immutable.ImmutableHashSet`1.Builder
+  href: System.Collections.Immutable.ImmutableHashSet`1.Builder.yml
+  name: SetEquals(IEnumerable<T>)
+  name.vb: SetEquals(IEnumerable(Of T))
+  fullName: System.Collections.Immutable.ImmutableHashSet<T>.Builder.SetEquals(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableHashSet(Of T).Builder.SetEquals(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1+Builder.cs
+    startLine: 330
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Determines whether the current set and the specified collection contain the same elements.
+  syntax:
+    content: public bool SetEquals(IEnumerable<T> other)
+    content.vb: Public Function SetEquals(other As IEnumerable(Of T)) As Boolean
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to compare to the current set.
+    return:
+      type: System.Boolean
+      description: true if the current set is equal to other; otherwise, false.
+- uid: System.Collections.Immutable.ImmutableHashSet`1.Builder.SymmetricExceptWith(System.Collections.Generic.IEnumerable{`0})
+  id: SymmetricExceptWith(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Immutable.ImmutableHashSet`1.Builder
+  href: System.Collections.Immutable.ImmutableHashSet`1.Builder.yml
+  name: SymmetricExceptWith(IEnumerable<T>)
+  name.vb: SymmetricExceptWith(IEnumerable(Of T))
+  fullName: System.Collections.Immutable.ImmutableHashSet<T>.Builder.SymmetricExceptWith(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableHashSet(Of T).Builder.SymmetricExceptWith(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1+Builder.cs
+    startLine: 344
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Modifies the current set so that it contains only elements that are present either in the current set or in the specified collection, but not both.
+  syntax:
+    content: public void SymmetricExceptWith(IEnumerable<T> other)
+    content.vb: Public Sub SymmetricExceptWith(other As IEnumerable(Of T))
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to compare to the current set.
+- uid: System.Collections.Immutable.ImmutableHashSet`1.Builder.UnionWith(System.Collections.Generic.IEnumerable{`0})
+  id: UnionWith(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Immutable.ImmutableHashSet`1.Builder
+  href: System.Collections.Immutable.ImmutableHashSet`1.Builder.yml
+  name: UnionWith(IEnumerable<T>)
+  name.vb: UnionWith(IEnumerable(Of T))
+  fullName: System.Collections.Immutable.ImmutableHashSet<T>.Builder.UnionWith(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Immutable.ImmutableHashSet(Of T).Builder.UnionWith(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1+Builder.cs
+    startLine: 354
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Modifies the current set so that it contains all elements that are present in both the current set and in the specified collection.
+  syntax:
+    content: public void UnionWith(IEnumerable<T> other)
+    content.vb: Public Sub UnionWith(other As IEnumerable(Of T))
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to compare to the current set.
+- uid: System.Collections.Immutable.ImmutableHashSet`1.Builder.System#Collections#Generic#ICollection{T}#Add(`0)
+  id: System#Collections#Generic#ICollection{T}#Add(`0)
+  parent: System.Collections.Immutable.ImmutableHashSet`1.Builder
+  href: System.Collections.Immutable.ImmutableHashSet`1.Builder.yml
+  name: ICollection<T>.Add(T)
+  name.vb: System.Collections.Generic.ICollection<T>.Add(T)
+  fullName: System.Collections.Immutable.ImmutableHashSet<T>.Builder.System.Collections.Generic.ICollection<T>.Add(T)
+  fullName.vb: System.Collections.Immutable.ImmutableHashSet(Of T).Builder.System.Collections.Generic.ICollection<T>.Add(T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1+Builder.cs
+    startLine: 369
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Adds an item to the @'System.Collections.Generic.ICollection`1'.
+  syntax:
+    content: void ICollection<T>.Add(T item)
+    content.vb: Sub System.Collections.Generic.ICollection<T>.Add(item As T) Implements ICollection(Of T).Add
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The object to add to the @'System.Collections.Generic.ICollection`1'.
+  exceptions:
+  - type: System.NotSupportedException
+    description: The  is read-only.
+- uid: System.Collections.Immutable.ImmutableHashSet`1.Builder.System#Collections#Generic#ICollection{T}#CopyTo(`0[],System.Int32)
+  id: System#Collections#Generic#ICollection{T}#CopyTo(`0[],System.Int32)
+  parent: System.Collections.Immutable.ImmutableHashSet`1.Builder
+  href: System.Collections.Immutable.ImmutableHashSet`1.Builder.yml
+  name: ICollection<T>.CopyTo(T[], Int32)
+  name.vb: System.Collections.Generic.ICollection<T>.CopyTo(T(), Int32)
+  fullName: System.Collections.Immutable.ImmutableHashSet<T>.Builder.System.Collections.Generic.ICollection<T>.CopyTo(T[], System.Int32)
+  fullName.vb: System.Collections.Immutable.ImmutableHashSet(Of T).Builder.System.Collections.Generic.ICollection<T>.CopyTo(T(), System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1+Builder.cs
+    startLine: 377
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: See the @'System.Collections.Generic.ICollection`1' interface.
+  syntax:
+    content: void ICollection<T>.CopyTo(T[] array, int arrayIndex)
+    content.vb: Sub System.Collections.Generic.ICollection<T>.CopyTo(array As T(), arrayIndex As Integer) Implements ICollection(Of T).CopyTo
+    parameters:
+    - id: array
+      type: '{T}[]'
+    - id: arrayIndex
+      type: System.Int32
+- uid: System.Collections.Immutable.ImmutableHashSet`1.Builder.System#Collections#Generic#IEnumerable{T}#GetEnumerator
+  id: System#Collections#Generic#IEnumerable{T}#GetEnumerator
+  parent: System.Collections.Immutable.ImmutableHashSet`1.Builder
+  href: System.Collections.Immutable.ImmutableHashSet`1.Builder.yml
+  name: IEnumerable<T>.GetEnumerator()
+  name.vb: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Immutable.ImmutableHashSet<T>.Builder.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  fullName.vb: System.Collections.Immutable.ImmutableHashSet(Of T).Builder.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1+Builder.cs
+    startLine: 399
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Returns an enumerator that iterates through the collection.
+  syntax:
+    content: IEnumerator<T> IEnumerable<T>.GetEnumerator()
+    content.vb: Function System.Collections.Generic.IEnumerable<T>.GetEnumerator As IEnumerator(Of T) Implements IEnumerable(Of T).GetEnumerator
+    return:
+      type: System.Collections.Generic.IEnumerator{{T}}
+      description: A @'System.Collections.Generic.IEnumerator`1' that can be used to iterate through the collection.
+- uid: System.Collections.Immutable.ImmutableHashSet`1.Builder.System#Collections#IEnumerable#GetEnumerator
+  id: System#Collections#IEnumerable#GetEnumerator
+  parent: System.Collections.Immutable.ImmutableHashSet`1.Builder
+  href: System.Collections.Immutable.ImmutableHashSet`1.Builder.yml
+  name: IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: System.Collections.Immutable.ImmutableHashSet<T>.Builder.System.Collections.IEnumerable.GetEnumerator()
+  fullName.vb: System.Collections.Immutable.ImmutableHashSet(Of T).Builder.System.Collections.IEnumerable.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1+Builder.cs
+    startLine: 410
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Returns an enumerator that iterates through a collection.
+  syntax:
+    content: IEnumerator IEnumerable.GetEnumerator()
+    content.vb: Function System.Collections.IEnumerable.GetEnumerator As IEnumerator Implements IEnumerable.GetEnumerator
+    return:
+      type: System.Collections.IEnumerator
+      description: An @'System.Collections.IEnumerator' object that can be used to iterate through the collection.
+references:
+- uid: System.Collections.Immutable.ImmutableHashSet`1.Union(System.Collections.Generic.IEnumerable{`0})
+- uid: System.Collections.Immutable
+  isExternal: false
+  name: System.Collections.Immutable
+  fullName: System.Collections.Immutable
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Collections.Generic.ICollection`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: ICollection<T>
+  name.vb: ICollection(Of T)
+  fullName: System.Collections.Generic.ICollection<T>
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Collections.Generic.IEqualityComparer{{T}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEqualityComparer`1
+  name: IEqualityComparer<T>
+  name.vb: IEqualityComparer(Of T)
+  fullName: System.Collections.Generic.IEqualityComparer<T>
+  fullName.vb: System.Collections.Generic.IEqualityComparer(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEqualityComparer`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEqualityComparer<T>
+  name.vb: IEqualityComparer(Of T)
+  fullName: System.Collections.Generic.IEqualityComparer<T>
+  fullName.vb: System.Collections.Generic.IEqualityComparer(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerator<T>
+  name.vb: IEnumerator(Of T)
+  fullName: System.Collections.Generic.IEnumerator<T>
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.ImmutableHashSet`1.Enumerator
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableHashSet`1.Enumerator.yml
+  name: ImmutableHashSet.Enumerator<>
+  name.vb: ImmutableHashSet.Enumerator(Of )
+  fullName: System.Collections.Immutable.ImmutableHashSet.Enumerator<>
+  fullName.vb: System.Collections.Immutable.ImmutableHashSet.Enumerator(Of )
+  type: Struct
+  summary: Enumerates the contents of the collection in an allocation-free manner.
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableHashSet`1.Enumerator
+    name: ImmutableHashSet.Enumerator
+    fullName: System.Collections.Immutable.ImmutableHashSet.Enumerator
+    href: System.Collections.Immutable.ImmutableHashSet`1.Enumerator.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableHashSet`1.Enumerator
+    name: ImmutableHashSet.Enumerator
+    fullName: System.Collections.Immutable.ImmutableHashSet.Enumerator
+    href: System.Collections.Immutable.ImmutableHashSet`1.Enumerator.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.ImmutableHashSet`1
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableHashSet`1.yml
+  name: ImmutableHashSet<T>
+  name.vb: ImmutableHashSet(Of T)
+  fullName: System.Collections.Immutable.ImmutableHashSet<T>
+  fullName.vb: System.Collections.Immutable.ImmutableHashSet(Of T)
+  type: Class
+  summary: An immutable unordered hash set implementation.
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableHashSet`1
+    name: ImmutableHashSet
+    fullName: System.Collections.Immutable.ImmutableHashSet
+    href: System.Collections.Immutable.ImmutableHashSet`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableHashSet`1
+    name: ImmutableHashSet
+    fullName: System.Collections.Immutable.ImmutableHashSet
+    href: System.Collections.Immutable.ImmutableHashSet`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: '{T}'
+  isExternal: false
+  name: T
+  fullName: T
+- uid: System.NotSupportedException
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: '{T}[]'
+  isExternal: false
+  name: T[]
+  name.vb: T()
+  fullName: T[]
+  fullName.vb: T()
+  spec.csharp:
+  - name: T
+    fullName: T
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - name: T
+    fullName: T
+  - name: ()
+    fullName: ()
+- uid: System.Collections.Generic.IEnumerator{{T}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  name: IEnumerator<T>
+  name.vb: IEnumerator(Of T)
+  fullName: System.Collections.Generic.IEnumerator<T>
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  isExternal: false
+  name: System.Collections
+  fullName: System.Collections

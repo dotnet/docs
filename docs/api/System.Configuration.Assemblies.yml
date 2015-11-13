@@ -1,0 +1,48 @@
+items:
+- uid: System.Configuration.Assemblies
+  id: System.Configuration.Assemblies
+  children:
+  - System.Configuration.Assemblies.AssemblyHash
+  - System.Configuration.Assemblies.AssemblyHashAlgorithm
+  - System.Configuration.Assemblies.AssemblyVersionCompatibility
+  href: System.Configuration.Assemblies.yml
+  name: System.Configuration.Assemblies
+  fullName: System.Configuration.Assemblies
+  type: Namespace
+  source:
+    remote:
+      path: src/mscorlib/src/System/Configuration/Assemblies/AssemblyVersionCompatibility.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Configuration/Assemblies/AssemblyVersionCompatibility.cs
+    startLine: 11
+  assemblies:
+  - mscorlib
+  summary: The @'System.Configuration.Assemblies' namespace contains classes that are used to configure an assembly.
+references:
+- uid: System.Configuration.Assemblies.AssemblyHash
+  parent: System.Configuration.Assemblies
+  isExternal: false
+  href: System.Configuration.Assemblies.AssemblyHash.yml
+  name: AssemblyHash
+  fullName: System.Configuration.Assemblies.AssemblyHash
+  type: Struct
+- uid: System.Configuration.Assemblies.AssemblyHashAlgorithm
+  parent: System.Configuration.Assemblies
+  isExternal: false
+  href: System.Configuration.Assemblies.AssemblyHashAlgorithm.yml
+  name: AssemblyHashAlgorithm
+  fullName: System.Configuration.Assemblies.AssemblyHashAlgorithm
+  type: Enum
+- uid: System.Configuration.Assemblies.AssemblyVersionCompatibility
+  parent: System.Configuration.Assemblies
+  isExternal: false
+  href: System.Configuration.Assemblies.AssemblyVersionCompatibility.yml
+  name: AssemblyVersionCompatibility
+  fullName: System.Configuration.Assemblies.AssemblyVersionCompatibility
+  type: Enum
+- uid: System.Configuration.Assemblies
+  isExternal: false
+  name: System.Configuration.Assemblies
+  fullName: System.Configuration.Assemblies
+  type: Namespace

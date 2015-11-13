@@ -1,0 +1,2316 @@
+items:
+- uid: System.Char
+  id: Char
+  parent: System
+  children:
+  - System.Char.CompareTo(System.Char)
+  - System.Char.CompareTo(System.Object)
+  - System.Char.ConvertFromUtf32(System.Int32)
+  - System.Char.ConvertToUtf32(System.Char,System.Char)
+  - System.Char.ConvertToUtf32(System.String,System.Int32)
+  - System.Char.Equals(System.Char)
+  - System.Char.Equals(System.Object)
+  - System.Char.GetHashCode
+  - System.Char.GetNumericValue(System.Char)
+  - System.Char.GetNumericValue(System.String,System.Int32)
+  - System.Char.GetTypeCode
+  - System.Char.GetUnicodeCategory(System.Char)
+  - System.Char.GetUnicodeCategory(System.String,System.Int32)
+  - System.Char.IsControl(System.Char)
+  - System.Char.IsControl(System.String,System.Int32)
+  - System.Char.IsDigit(System.Char)
+  - System.Char.IsDigit(System.String,System.Int32)
+  - System.Char.IsHighSurrogate(System.Char)
+  - System.Char.IsHighSurrogate(System.String,System.Int32)
+  - System.Char.IsLetter(System.Char)
+  - System.Char.IsLetter(System.String,System.Int32)
+  - System.Char.IsLetterOrDigit(System.Char)
+  - System.Char.IsLetterOrDigit(System.String,System.Int32)
+  - System.Char.IsLower(System.Char)
+  - System.Char.IsLower(System.String,System.Int32)
+  - System.Char.IsLowSurrogate(System.Char)
+  - System.Char.IsLowSurrogate(System.String,System.Int32)
+  - System.Char.IsNumber(System.Char)
+  - System.Char.IsNumber(System.String,System.Int32)
+  - System.Char.IsPunctuation(System.Char)
+  - System.Char.IsPunctuation(System.String,System.Int32)
+  - System.Char.IsSeparator(System.Char)
+  - System.Char.IsSeparator(System.String,System.Int32)
+  - System.Char.IsSurrogate(System.Char)
+  - System.Char.IsSurrogate(System.String,System.Int32)
+  - System.Char.IsSurrogatePair(System.Char,System.Char)
+  - System.Char.IsSurrogatePair(System.String,System.Int32)
+  - System.Char.IsSymbol(System.Char)
+  - System.Char.IsSymbol(System.String,System.Int32)
+  - System.Char.IsUpper(System.Char)
+  - System.Char.IsUpper(System.String,System.Int32)
+  - System.Char.IsWhiteSpace(System.Char)
+  - System.Char.IsWhiteSpace(System.String,System.Int32)
+  - System.Char.MaxValue
+  - System.Char.MinValue
+  - System.Char.Parse(System.String)
+  - System.Char.System#IConvertible#ToBoolean(System.IFormatProvider)
+  - System.Char.System#IConvertible#ToByte(System.IFormatProvider)
+  - System.Char.System#IConvertible#ToChar(System.IFormatProvider)
+  - System.Char.System#IConvertible#ToDateTime(System.IFormatProvider)
+  - System.Char.System#IConvertible#ToDecimal(System.IFormatProvider)
+  - System.Char.System#IConvertible#ToDouble(System.IFormatProvider)
+  - System.Char.System#IConvertible#ToInt16(System.IFormatProvider)
+  - System.Char.System#IConvertible#ToInt32(System.IFormatProvider)
+  - System.Char.System#IConvertible#ToInt64(System.IFormatProvider)
+  - System.Char.System#IConvertible#ToSByte(System.IFormatProvider)
+  - System.Char.System#IConvertible#ToSingle(System.IFormatProvider)
+  - System.Char.System#IConvertible#ToType(System.Type,System.IFormatProvider)
+  - System.Char.System#IConvertible#ToUInt16(System.IFormatProvider)
+  - System.Char.System#IConvertible#ToUInt32(System.IFormatProvider)
+  - System.Char.System#IConvertible#ToUInt64(System.IFormatProvider)
+  - System.Char.ToLower(System.Char)
+  - System.Char.ToLower(System.Char,System.Globalization.CultureInfo)
+  - System.Char.ToLowerInvariant(System.Char)
+  - System.Char.ToString
+  - System.Char.ToString(System.Char)
+  - System.Char.ToString(System.IFormatProvider)
+  - System.Char.ToUpper(System.Char)
+  - System.Char.ToUpper(System.Char,System.Globalization.CultureInfo)
+  - System.Char.ToUpperInvariant(System.Char)
+  - System.Char.TryParse(System.String,System.Char@)
+  href: System.Char.yml
+  name: Char
+  fullName: System.Char
+  type: Struct
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Char.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 21
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Represents a character as a UTF-16 code unit.
+  syntax:
+    content: 'public struct Char : IComparable, IConvertible, IComparable<char>, IEquatable<char>'
+    content.vb: Public Structure Char Implements IComparable, IConvertible, IComparable(Of Char), IEquatable(Of Char)
+  implements:
+  - System.IComparable
+  - System.IConvertible
+  - System.IComparable{System.Char}
+  - System.IEquatable{System.Char}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.Char.MaxValue
+  id: MaxValue
+  parent: System.Char
+  href: System.Char.yml
+  name: MaxValue
+  fullName: System.Char.MaxValue
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 35
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Represents the largest possible value of a @'System.Char'. This field is constant.
+  syntax:
+    content: public const char MaxValue
+    content.vb: Public Const MaxValue As Char = ChrW(65535)
+- uid: System.Char.MinValue
+  id: MinValue
+  parent: System.Char
+  href: System.Char.yml
+  name: MinValue
+  fullName: System.Char.MinValue
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 37
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Represents the smallest possible value of a @'System.Char'. This field is constant.
+  syntax:
+    content: public const char MinValue
+    content.vb: Public Const MinValue As Char = vbNullChar
+- uid: System.Char.GetHashCode
+  id: GetHashCode
+  parent: System.Char
+  href: System.Char.yml
+  name: GetHashCode()
+  fullName: System.Char.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 100
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns the hash code for this instance.
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+  overridden: System.ValueType.GetHashCode
+- uid: System.Char.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Char
+  href: System.Char.yml
+  name: Equals(Object)
+  fullName: System.Char.Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 106
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns a value that indicates whether this instance is equal to a specified object.
+  syntax:
+    content: public override bool Equals(object obj)
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: An object to compare with this instance or null.
+    return:
+      type: System.Boolean
+  overridden: System.ValueType.Equals(System.Object)
+- uid: System.Char.Equals(System.Char)
+  id: Equals(System.Char)
+  parent: System.Char
+  href: System.Char.yml
+  name: Equals(Char)
+  fullName: System.Char.Equals(System.Char)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 113
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns a value that indicates whether this instance is equal to the specified @'System.Char' object.
+  syntax:
+    content: public bool Equals(char obj)
+    content.vb: Public Function Equals(obj As Char) As Boolean
+    parameters:
+    - id: obj
+      type: System.Char
+      description: An object to compare to this instance.
+    return:
+      type: System.Boolean
+- uid: System.Char.CompareTo(System.Object)
+  id: CompareTo(System.Object)
+  parent: System.Char
+  href: System.Char.yml
+  name: CompareTo(Object)
+  fullName: System.Char.CompareTo(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 125
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Compares this instance to a specified object and indicates whether this instance precedes, follows, or appears in the same position in the sort order as the specified @'System.Object'.
+  syntax:
+    content: public int CompareTo(object value)
+    content.vb: Public Function CompareTo(value As Object) As Integer
+    parameters:
+    - id: value
+      type: System.Object
+      description: An object to compare this instance to, or null.
+    return:
+      type: System.Int32
+  exceptions:
+  - type: System.ArgumentException
+    description: '*value* is not a @''System.Char'' object.'
+- uid: System.Char.CompareTo(System.Char)
+  id: CompareTo(System.Char)
+  parent: System.Char
+  href: System.Char.yml
+  name: CompareTo(Char)
+  fullName: System.Char.CompareTo(System.Char)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 137
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Compares this instance to a specified @'System.Char' object and indicates whether this instance precedes, follows, or appears in the same position in the sort order as the specified @'System.Char' object.
+  syntax:
+    content: public int CompareTo(char value)
+    content.vb: Public Function CompareTo(value As Char) As Integer
+    parameters:
+    - id: value
+      type: System.Char
+      description: A @'System.Char' object to compare.
+    return:
+      type: System.Int32
+- uid: System.Char.ToString
+  id: ToString
+  parent: System.Char
+  href: System.Char.yml
+  name: ToString()
+  fullName: System.Char.ToString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 143
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the value of this instance to its equivalent string representation.
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+  overridden: System.ValueType.ToString
+- uid: System.Char.ToString(System.IFormatProvider)
+  id: ToString(System.IFormatProvider)
+  parent: System.Char
+  href: System.Char.yml
+  name: ToString(IFormatProvider)
+  fullName: System.Char.ToString(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 149
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the value of this instance to its equivalent string representation using the specified culture-specific format information.
+  syntax:
+    content: public string ToString(IFormatProvider provider)
+    content.vb: Public Function ToString(provider As IFormatProvider) As String
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: (Reserved) An object that supplies culture-specific formatting information.
+    return:
+      type: System.String
+- uid: System.Char.ToString(System.Char)
+  id: ToString(System.Char)
+  parent: System.Char
+  href: System.Char.yml
+  name: ToString(Char)
+  fullName: System.Char.ToString(System.Char)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 163
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the specified Unicode character to its equivalent string representation.
+  syntax:
+    content: public static string ToString(char c)
+    content.vb: Public Shared Function ToString(c As Char) As String
+    parameters:
+    - id: c
+      type: System.Char
+      description: The Unicode character to convert.
+    return:
+      type: System.String
+- uid: System.Char.Parse(System.String)
+  id: Parse(System.String)
+  parent: System.Char
+  href: System.Char.yml
+  name: Parse(String)
+  fullName: System.Char.Parse(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 169
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the value of the specified string to its equivalent Unicode character.
+  syntax:
+    content: public static char Parse(string s)
+    content.vb: Public Shared Function Parse(s As String) As Char
+    parameters:
+    - id: s
+      type: System.String
+      description: A string that contains a single character, or null.
+    return:
+      type: System.Char
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*s* is null.'
+  - type: System.FormatException
+    description: The length of *s* is not 1.
+- uid: System.Char.TryParse(System.String,System.Char@)
+  id: TryParse(System.String,System.Char@)
+  parent: System.Char
+  href: System.Char.yml
+  name: TryParse(String, out Char)
+  name.vb: TryParse(String, ByRef Char)
+  fullName: System.Char.TryParse(System.String, out System.Char)
+  fullName.vb: System.Char.TryParse(System.String, ByRef System.Char)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 181
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the value of the specified string to its equivalent Unicode character. A return code indicates whether the conversion succeeded or failed.
+  syntax:
+    content: public static bool TryParse(string s, out char result)
+    content.vb: Public Shared Function TryParse(s As String, ByRef result As Char) As Boolean
+    parameters:
+    - id: s
+      type: System.String
+      description: A string that contains a single character, or null.
+    - id: result
+      type: System.Char
+      description: When this method returns, contains a Unicode character equivalent to the sole character in *s*, if the conversion succeeded, or an undefined value if the conversion failed. The conversion fails if the *s* parameter is null or the length of *s* is not 1. This parameter is passed uninitialized.
+    return:
+      type: System.Boolean
+- uid: System.Char.IsDigit(System.Char)
+  id: IsDigit(System.Char)
+  parent: System.Char
+  href: System.Char.yml
+  name: IsDigit(Char)
+  fullName: System.Char.IsDigit(System.Char)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 201
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether the specified Unicode character is categorized as a decimal digit.
+  syntax:
+    content: public static bool IsDigit(char c)
+    content.vb: Public Shared Function IsDigit(c As Char) As Boolean
+    parameters:
+    - id: c
+      type: System.Char
+      description: The Unicode character to evaluate.
+    return:
+      type: System.Boolean
+- uid: System.Char.IsLetter(System.Char)
+  id: IsLetter(System.Char)
+  parent: System.Char
+  href: System.Char.yml
+  name: IsLetter(Char)
+  fullName: System.Char.IsLetter(System.Char)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 230
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether the specified Unicode character is categorized as a Unicode letter.
+  syntax:
+    content: public static bool IsLetter(char c)
+    content.vb: Public Shared Function IsLetter(c As Char) As Boolean
+    parameters:
+    - id: c
+      type: System.Char
+      description: The Unicode character to evaluate.
+    return:
+      type: System.Boolean
+- uid: System.Char.IsWhiteSpace(System.Char)
+  id: IsWhiteSpace(System.Char)
+  parent: System.Char
+  href: System.Char.yml
+  name: IsWhiteSpace(Char)
+  fullName: System.Char.IsWhiteSpace(System.Char)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 265
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether the specified Unicode character is categorized as white space.
+  syntax:
+    content: public static bool IsWhiteSpace(char c)
+    content.vb: Public Shared Function IsWhiteSpace(c As Char) As Boolean
+    parameters:
+    - id: c
+      type: System.Char
+      description: The Unicode character to evaluate.
+    return:
+      type: System.Boolean
+- uid: System.Char.IsUpper(System.Char)
+  id: IsUpper(System.Char)
+  parent: System.Char
+  href: System.Char.yml
+  name: IsUpper(Char)
+  fullName: System.Char.IsUpper(System.Char)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 280
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether the specified Unicode character is categorized as an uppercase letter.
+  syntax:
+    content: public static bool IsUpper(char c)
+    content.vb: Public Shared Function IsUpper(c As Char) As Boolean
+    parameters:
+    - id: c
+      type: System.Char
+      description: The Unicode character to evaluate.
+    return:
+      type: System.Boolean
+- uid: System.Char.IsLower(System.Char)
+  id: IsLower(System.Char)
+  parent: System.Char
+  href: System.Char.yml
+  name: IsLower(Char)
+  fullName: System.Char.IsLower(System.Char)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 296
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether the specified Unicode character is categorized as a lowercase letter.
+  syntax:
+    content: public static bool IsLower(char c)
+    content.vb: Public Shared Function IsLower(c As Char) As Boolean
+    parameters:
+    - id: c
+      type: System.Char
+      description: The Unicode character to evaluate.
+    return:
+      type: System.Boolean
+- uid: System.Char.IsPunctuation(System.Char)
+  id: IsPunctuation(System.Char)
+  parent: System.Char
+  href: System.Char.yml
+  name: IsPunctuation(Char)
+  fullName: System.Char.IsPunctuation(System.Char)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 328
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether the specified Unicode character is categorized as a punctuation mark.
+  syntax:
+    content: public static bool IsPunctuation(char c)
+    content.vb: Public Shared Function IsPunctuation(c As Char) As Boolean
+    parameters:
+    - id: c
+      type: System.Char
+      description: The Unicode character to evaluate.
+    return:
+      type: System.Boolean
+- uid: System.Char.IsLetterOrDigit(System.Char)
+  id: IsLetterOrDigit(System.Char)
+  parent: System.Char
+  href: System.Char.yml
+  name: IsLetterOrDigit(Char)
+  fullName: System.Char.IsLetterOrDigit(System.Char)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 353
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether the specified Unicode character is categorized as a letter or a decimal digit.
+  syntax:
+    content: public static bool IsLetterOrDigit(char c)
+    content.vb: Public Shared Function IsLetterOrDigit(c As Char) As Boolean
+    parameters:
+    - id: c
+      type: System.Char
+      description: The Unicode character to evaluate.
+    return:
+      type: System.Boolean
+- uid: System.Char.ToUpper(System.Char,System.Globalization.CultureInfo)
+  id: ToUpper(System.Char,System.Globalization.CultureInfo)
+  parent: System.Char
+  href: System.Char.yml
+  name: ToUpper(Char, CultureInfo)
+  fullName: System.Char.ToUpper(System.Char, System.Globalization.CultureInfo)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 366
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the value of a specified Unicode character to its uppercase equivalent using specified culture-specific formatting information.
+  syntax:
+    content: public static char ToUpper(char c, CultureInfo culture)
+    content.vb: Public Shared Function ToUpper(c As Char, culture As CultureInfo) As Char
+    parameters:
+    - id: c
+      type: System.Char
+      description: The Unicode character to convert.
+    - id: culture
+      type: System.Globalization.CultureInfo
+      description: An object that supplies culture-specific casing rules.
+    return:
+      type: System.Char
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*culture* is null.'
+- uid: System.Char.ToUpper(System.Char)
+  id: ToUpper(System.Char)
+  parent: System.Char
+  href: System.Char.yml
+  name: ToUpper(Char)
+  fullName: System.Char.ToUpper(System.Char)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 380
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the value of a Unicode character to its uppercase equivalent.
+  syntax:
+    content: public static char ToUpper(char c)
+    content.vb: Public Shared Function ToUpper(c As Char) As Char
+    parameters:
+    - id: c
+      type: System.Char
+      description: The Unicode character to convert.
+    return:
+      type: System.Char
+- uid: System.Char.ToUpperInvariant(System.Char)
+  id: ToUpperInvariant(System.Char)
+  parent: System.Char
+  href: System.Char.yml
+  name: ToUpperInvariant(Char)
+  fullName: System.Char.ToUpperInvariant(System.Char)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 386
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the value of a Unicode character to its uppercase equivalent using the casing rules of the invariant culture.
+  syntax:
+    content: public static char ToUpperInvariant(char c)
+    content.vb: Public Shared Function ToUpperInvariant(c As Char) As Char
+    parameters:
+    - id: c
+      type: System.Char
+      description: The Unicode character to convert.
+    return:
+      type: System.Char
+- uid: System.Char.ToLower(System.Char,System.Globalization.CultureInfo)
+  id: ToLower(System.Char,System.Globalization.CultureInfo)
+  parent: System.Char
+  href: System.Char.yml
+  name: ToLower(Char, CultureInfo)
+  fullName: System.Char.ToLower(System.Char, System.Globalization.CultureInfo)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 395
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the value of a specified Unicode character to its lowercase equivalent using specified culture-specific formatting information.
+  syntax:
+    content: public static char ToLower(char c, CultureInfo culture)
+    content.vb: Public Shared Function ToLower(c As Char, culture As CultureInfo) As Char
+    parameters:
+    - id: c
+      type: System.Char
+      description: The Unicode character to convert.
+    - id: culture
+      type: System.Globalization.CultureInfo
+      description: An object that supplies culture-specific casing rules.
+    return:
+      type: System.Char
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*culture* is null.'
+- uid: System.Char.ToLower(System.Char)
+  id: ToLower(System.Char)
+  parent: System.Char
+  href: System.Char.yml
+  name: ToLower(Char)
+  fullName: System.Char.ToLower(System.Char)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 408
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the value of a Unicode character to its lowercase equivalent.
+  syntax:
+    content: public static char ToLower(char c)
+    content.vb: Public Shared Function ToLower(c As Char) As Char
+    parameters:
+    - id: c
+      type: System.Char
+      description: The Unicode character to convert.
+    return:
+      type: System.Char
+- uid: System.Char.ToLowerInvariant(System.Char)
+  id: ToLowerInvariant(System.Char)
+  parent: System.Char
+  href: System.Char.yml
+  name: ToLowerInvariant(Char)
+  fullName: System.Char.ToLowerInvariant(System.Char)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 414
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the value of a Unicode character to its lowercase equivalent using the casing rules of the invariant culture.
+  syntax:
+    content: public static char ToLowerInvariant(char c)
+    content.vb: Public Shared Function ToLowerInvariant(c As Char) As Char
+    parameters:
+    - id: c
+      type: System.Char
+      description: The Unicode character to convert.
+    return:
+      type: System.Char
+- uid: System.Char.GetTypeCode
+  id: GetTypeCode
+  parent: System.Char
+  href: System.Char.yml
+  name: GetTypeCode()
+  fullName: System.Char.GetTypeCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 421
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns the @'System.TypeCode' for value type @'System.Char'.
+  syntax:
+    content: public TypeCode GetTypeCode()
+    content.vb: Public Function GetTypeCode As TypeCode
+    return:
+      type: System.TypeCode
+- uid: System.Char.System#IConvertible#ToBoolean(System.IFormatProvider)
+  id: System#IConvertible#ToBoolean(System.IFormatProvider)
+  parent: System.Char
+  href: System.Char.yml
+  name: IConvertible.ToBoolean(IFormatProvider)
+  name.vb: System.IConvertible.ToBoolean(IFormatProvider)
+  fullName: System.Char.System.IConvertible.ToBoolean(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 428
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: "Note   This conversion is not supported. Attempting to do so throws an @'System.InvalidCastException'."
+  syntax:
+    content: bool IConvertible.ToBoolean(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToBoolean(provider As IFormatProvider) As Boolean Implements IConvertible.ToBoolean
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: This parameter is ignored.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.InvalidCastException
+    description: This conversion is not supported.
+- uid: System.Char.System#IConvertible#ToChar(System.IFormatProvider)
+  id: System#IConvertible#ToChar(System.IFormatProvider)
+  parent: System.Char
+  href: System.Char.yml
+  name: IConvertible.ToChar(IFormatProvider)
+  name.vb: System.IConvertible.ToChar(IFormatProvider)
+  fullName: System.Char.System.IConvertible.ToChar(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 433
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: For a description of this member, see @'System.IConvertible.ToChar(System.IFormatProvider)'.
+  syntax:
+    content: char IConvertible.ToChar(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToChar(provider As IFormatProvider) As Char Implements IConvertible.ToChar
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: This parameter is ignored.
+    return:
+      type: System.Char
+- uid: System.Char.System#IConvertible#ToSByte(System.IFormatProvider)
+  id: System#IConvertible#ToSByte(System.IFormatProvider)
+  parent: System.Char
+  href: System.Char.yml
+  name: IConvertible.ToSByte(IFormatProvider)
+  name.vb: System.IConvertible.ToSByte(IFormatProvider)
+  fullName: System.Char.System.IConvertible.ToSByte(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 438
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: For a description of this member, see @'System.IConvertible.ToSByte(System.IFormatProvider)'.
+  syntax:
+    content: sbyte IConvertible.ToSByte(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToSByte(provider As IFormatProvider) As SByte Implements IConvertible.ToSByte
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: This parameter is ignored.
+    return:
+      type: System.SByte
+- uid: System.Char.System#IConvertible#ToByte(System.IFormatProvider)
+  id: System#IConvertible#ToByte(System.IFormatProvider)
+  parent: System.Char
+  href: System.Char.yml
+  name: IConvertible.ToByte(IFormatProvider)
+  name.vb: System.IConvertible.ToByte(IFormatProvider)
+  fullName: System.Char.System.IConvertible.ToByte(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 443
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: For a description of this member, see @'System.IConvertible.ToByte(System.IFormatProvider)'.
+  syntax:
+    content: byte IConvertible.ToByte(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToByte(provider As IFormatProvider) As Byte Implements IConvertible.ToByte
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: This parameter is ignored.
+    return:
+      type: System.Byte
+- uid: System.Char.System#IConvertible#ToInt16(System.IFormatProvider)
+  id: System#IConvertible#ToInt16(System.IFormatProvider)
+  parent: System.Char
+  href: System.Char.yml
+  name: IConvertible.ToInt16(IFormatProvider)
+  name.vb: System.IConvertible.ToInt16(IFormatProvider)
+  fullName: System.Char.System.IConvertible.ToInt16(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 448
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: For a description of this member, see @'System.IConvertible.ToInt16(System.IFormatProvider)'.
+  syntax:
+    content: short IConvertible.ToInt16(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToInt16(provider As IFormatProvider) As Short Implements IConvertible.ToInt16
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: This parameter is ignored.
+    return:
+      type: System.Int16
+- uid: System.Char.System#IConvertible#ToUInt16(System.IFormatProvider)
+  id: System#IConvertible#ToUInt16(System.IFormatProvider)
+  parent: System.Char
+  href: System.Char.yml
+  name: IConvertible.ToUInt16(IFormatProvider)
+  name.vb: System.IConvertible.ToUInt16(IFormatProvider)
+  fullName: System.Char.System.IConvertible.ToUInt16(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 453
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: For a description of this member, see @'System.IConvertible.ToUInt16(System.IFormatProvider)'.
+  syntax:
+    content: ushort IConvertible.ToUInt16(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToUInt16(provider As IFormatProvider) As UShort Implements IConvertible.ToUInt16
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: An @'System.IFormatProvider' object. (Specify null because the *provider* parameter is ignored.)
+    return:
+      type: System.UInt16
+- uid: System.Char.System#IConvertible#ToInt32(System.IFormatProvider)
+  id: System#IConvertible#ToInt32(System.IFormatProvider)
+  parent: System.Char
+  href: System.Char.yml
+  name: IConvertible.ToInt32(IFormatProvider)
+  name.vb: System.IConvertible.ToInt32(IFormatProvider)
+  fullName: System.Char.System.IConvertible.ToInt32(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 458
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: For a description of this member, see @'System.IConvertible.ToInt32(System.IFormatProvider)'.
+  syntax:
+    content: int IConvertible.ToInt32(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToInt32(provider As IFormatProvider) As Integer Implements IConvertible.ToInt32
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: This parameter is ignored.
+    return:
+      type: System.Int32
+- uid: System.Char.System#IConvertible#ToUInt32(System.IFormatProvider)
+  id: System#IConvertible#ToUInt32(System.IFormatProvider)
+  parent: System.Char
+  href: System.Char.yml
+  name: IConvertible.ToUInt32(IFormatProvider)
+  name.vb: System.IConvertible.ToUInt32(IFormatProvider)
+  fullName: System.Char.System.IConvertible.ToUInt32(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 463
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: For a description of this member, see @'System.IConvertible.ToUInt32(System.IFormatProvider)'.
+  syntax:
+    content: uint IConvertible.ToUInt32(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToUInt32(provider As IFormatProvider) As UInteger Implements IConvertible.ToUInt32
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: An @'System.IFormatProvider' object. (Specify null because the *provider* parameter is ignored.)
+    return:
+      type: System.UInt32
+- uid: System.Char.System#IConvertible#ToInt64(System.IFormatProvider)
+  id: System#IConvertible#ToInt64(System.IFormatProvider)
+  parent: System.Char
+  href: System.Char.yml
+  name: IConvertible.ToInt64(IFormatProvider)
+  name.vb: System.IConvertible.ToInt64(IFormatProvider)
+  fullName: System.Char.System.IConvertible.ToInt64(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 468
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: For a description of this member, see @'System.IConvertible.ToInt64(System.IFormatProvider)'.
+  syntax:
+    content: long IConvertible.ToInt64(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToInt64(provider As IFormatProvider) As Long Implements IConvertible.ToInt64
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: This parameter is ignored.
+    return:
+      type: System.Int64
+- uid: System.Char.System#IConvertible#ToUInt64(System.IFormatProvider)
+  id: System#IConvertible#ToUInt64(System.IFormatProvider)
+  parent: System.Char
+  href: System.Char.yml
+  name: IConvertible.ToUInt64(IFormatProvider)
+  name.vb: System.IConvertible.ToUInt64(IFormatProvider)
+  fullName: System.Char.System.IConvertible.ToUInt64(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 473
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: For a description of this member, see @'System.IConvertible.ToUInt64(System.IFormatProvider)'.
+  syntax:
+    content: ulong IConvertible.ToUInt64(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToUInt64(provider As IFormatProvider) As ULong Implements IConvertible.ToUInt64
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: An @'System.IFormatProvider' object. (Specify null because the *provider* parameter is ignored.)
+    return:
+      type: System.UInt64
+- uid: System.Char.System#IConvertible#ToSingle(System.IFormatProvider)
+  id: System#IConvertible#ToSingle(System.IFormatProvider)
+  parent: System.Char
+  href: System.Char.yml
+  name: IConvertible.ToSingle(IFormatProvider)
+  name.vb: System.IConvertible.ToSingle(IFormatProvider)
+  fullName: System.Char.System.IConvertible.ToSingle(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 478
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: "Note   This conversion is not supported. Attempting to do so throws an @'System.InvalidCastException'."
+  syntax:
+    content: float IConvertible.ToSingle(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToSingle(provider As IFormatProvider) As Single Implements IConvertible.ToSingle
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: This parameter is ignored.
+    return:
+      type: System.Single
+  exceptions:
+  - type: System.InvalidCastException
+    description: This conversion is not supported.
+- uid: System.Char.System#IConvertible#ToDouble(System.IFormatProvider)
+  id: System#IConvertible#ToDouble(System.IFormatProvider)
+  parent: System.Char
+  href: System.Char.yml
+  name: IConvertible.ToDouble(IFormatProvider)
+  name.vb: System.IConvertible.ToDouble(IFormatProvider)
+  fullName: System.Char.System.IConvertible.ToDouble(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 483
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: "Note   This conversion is not supported. Attempting to do so throws an @'System.InvalidCastException'."
+  syntax:
+    content: double IConvertible.ToDouble(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToDouble(provider As IFormatProvider) As Double Implements IConvertible.ToDouble
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: This parameter is ignored.
+    return:
+      type: System.Double
+  exceptions:
+  - type: System.InvalidCastException
+    description: This conversion is not supported.
+- uid: System.Char.System#IConvertible#ToDecimal(System.IFormatProvider)
+  id: System#IConvertible#ToDecimal(System.IFormatProvider)
+  parent: System.Char
+  href: System.Char.yml
+  name: IConvertible.ToDecimal(IFormatProvider)
+  name.vb: System.IConvertible.ToDecimal(IFormatProvider)
+  fullName: System.Char.System.IConvertible.ToDecimal(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 488
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: "Note   This conversion is not supported. Attempting to do so throws an @'System.InvalidCastException'."
+  syntax:
+    content: decimal IConvertible.ToDecimal(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToDecimal(provider As IFormatProvider) As Decimal Implements IConvertible.ToDecimal
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: This parameter is ignored.
+    return:
+      type: System.Decimal
+  exceptions:
+  - type: System.InvalidCastException
+    description: This conversion is not supported.
+- uid: System.Char.System#IConvertible#ToDateTime(System.IFormatProvider)
+  id: System#IConvertible#ToDateTime(System.IFormatProvider)
+  parent: System.Char
+  href: System.Char.yml
+  name: IConvertible.ToDateTime(IFormatProvider)
+  name.vb: System.IConvertible.ToDateTime(IFormatProvider)
+  fullName: System.Char.System.IConvertible.ToDateTime(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 493
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: "Note   This conversion is not supported. Attempting to do so throws an @'System.InvalidCastException'."
+  syntax:
+    content: DateTime IConvertible.ToDateTime(IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToDateTime(provider As IFormatProvider) As Date Implements IConvertible.ToDateTime
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: This parameter is ignored.
+    return:
+      type: System.DateTime
+  exceptions:
+  - type: System.InvalidCastException
+    description: This conversion is not supported.
+- uid: System.Char.System#IConvertible#ToType(System.Type,System.IFormatProvider)
+  id: System#IConvertible#ToType(System.Type,System.IFormatProvider)
+  parent: System.Char
+  href: System.Char.yml
+  name: IConvertible.ToType(Type, IFormatProvider)
+  name.vb: System.IConvertible.ToType(Type, IFormatProvider)
+  fullName: System.Char.System.IConvertible.ToType(System.Type, System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 498
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: For a description of this member, see @'System.IConvertible.ToType(System.Type,System.IFormatProvider)'.
+  syntax:
+    content: object IConvertible.ToType(Type type, IFormatProvider provider)
+    content.vb: Function System.IConvertible.ToType(type As Type, provider As IFormatProvider) As Object Implements IConvertible.ToType
+    parameters:
+    - id: type
+      type: System.Type
+      description: A @'System.Type' object.
+    - id: provider
+      type: System.IFormatProvider
+      description: An @'System.IFormatProvider' object.
+    return:
+      type: System.Object
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*type* is null.'
+  - type: System.InvalidCastException
+    description: The value of the current @'System.Char' object cannot be converted to the type specified by the *type* parameter.
+- uid: System.Char.IsControl(System.Char)
+  id: IsControl(System.Char)
+  parent: System.Char
+  href: System.Char.yml
+  name: IsControl(Char)
+  fullName: System.Char.IsControl(System.Char)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 502
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether the specified Unicode character is categorized as a control character.
+  syntax:
+    content: public static bool IsControl(char c)
+    content.vb: Public Shared Function IsControl(c As Char) As Boolean
+    parameters:
+    - id: c
+      type: System.Char
+      description: The Unicode character to evaluate.
+    return:
+      type: System.Boolean
+- uid: System.Char.IsControl(System.String,System.Int32)
+  id: IsControl(System.String,System.Int32)
+  parent: System.Char
+  href: System.Char.yml
+  name: IsControl(String, Int32)
+  fullName: System.Char.IsControl(System.String, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 510
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether the character at the specified position in a specified string is categorized as a control character.
+  syntax:
+    content: public static bool IsControl(string s, int index)
+    content.vb: Public Shared Function IsControl(s As String, index As Integer) As Boolean
+    parameters:
+    - id: s
+      type: System.String
+      description: A string.
+    - id: index
+      type: System.Int32
+      description: The position of the character to evaluate in *s*.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*s* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero or greater than the last position in *s*.'
+- uid: System.Char.IsDigit(System.String,System.Int32)
+  id: IsDigit(System.String,System.Int32)
+  parent: System.Char
+  href: System.Char.yml
+  name: IsDigit(String, Int32)
+  fullName: System.Char.IsDigit(System.String, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 525
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether the character at the specified position in a specified string is categorized as a decimal digit.
+  syntax:
+    content: public static bool IsDigit(string s, int index)
+    content.vb: Public Shared Function IsDigit(s As String, index As Integer) As Boolean
+    parameters:
+    - id: s
+      type: System.String
+      description: A string.
+    - id: index
+      type: System.Int32
+      description: The position of the character to evaluate in *s*.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*s* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero or greater than the last position in *s*.'
+- uid: System.Char.IsLetter(System.String,System.Int32)
+  id: IsLetter(System.String,System.Int32)
+  parent: System.Char
+  href: System.Char.yml
+  name: IsLetter(String, Int32)
+  fullName: System.Char.IsLetter(System.String, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 540
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether the character at the specified position in a specified string is categorized as a Unicode letter.
+  syntax:
+    content: public static bool IsLetter(string s, int index)
+    content.vb: Public Shared Function IsLetter(s As String, index As Integer) As Boolean
+    parameters:
+    - id: s
+      type: System.String
+      description: A string.
+    - id: index
+      type: System.Int32
+      description: The position of the character to evaluate in *s*.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*s* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero or greater than the last position in *s*.'
+- uid: System.Char.IsLetterOrDigit(System.String,System.Int32)
+  id: IsLetterOrDigit(System.String,System.Int32)
+  parent: System.Char
+  href: System.Char.yml
+  name: IsLetterOrDigit(String, Int32)
+  fullName: System.Char.IsLetterOrDigit(System.String, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 559
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether the character at the specified position in a specified string is categorized as a letter or a decimal digit.
+  syntax:
+    content: public static bool IsLetterOrDigit(string s, int index)
+    content.vb: Public Shared Function IsLetterOrDigit(s As String, index As Integer) As Boolean
+    parameters:
+    - id: s
+      type: System.String
+      description: A string.
+    - id: index
+      type: System.Int32
+      description: The position of the character to evaluate in *s*.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*s* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero or greater than the last position in *s*.'
+- uid: System.Char.IsLower(System.String,System.Int32)
+  id: IsLower(System.String,System.Int32)
+  parent: System.Char
+  href: System.Char.yml
+  name: IsLower(String, Int32)
+  fullName: System.Char.IsLower(System.String, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 574
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether the character at the specified position in a specified string is categorized as a lowercase letter.
+  syntax:
+    content: public static bool IsLower(string s, int index)
+    content.vb: Public Shared Function IsLower(s As String, index As Integer) As Boolean
+    parameters:
+    - id: s
+      type: System.String
+      description: A string.
+    - id: index
+      type: System.Int32
+      description: The position of the character to evaluate in *s*.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*s* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero or greater than the last position in *s*.'
+- uid: System.Char.IsNumber(System.Char)
+  id: IsNumber(System.Char)
+  parent: System.Char
+  href: System.Char.yml
+  name: IsNumber(Char)
+  fullName: System.Char.IsNumber(System.Char)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 607
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether the specified Unicode character is categorized as a number.
+  syntax:
+    content: public static bool IsNumber(char c)
+    content.vb: Public Shared Function IsNumber(c As Char) As Boolean
+    parameters:
+    - id: c
+      type: System.Char
+      description: The Unicode character to evaluate.
+    return:
+      type: System.Boolean
+- uid: System.Char.IsNumber(System.String,System.Int32)
+  id: IsNumber(System.String,System.Int32)
+  parent: System.Char
+  href: System.Char.yml
+  name: IsNumber(String, Int32)
+  fullName: System.Char.IsNumber(System.String, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 618
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether the character at the specified position in a specified string is categorized as a number.
+  syntax:
+    content: public static bool IsNumber(string s, int index)
+    content.vb: Public Shared Function IsNumber(s As String, index As Integer) As Boolean
+    parameters:
+    - id: s
+      type: System.String
+      description: A string.
+    - id: index
+      type: System.Int32
+      description: The position of the character to evaluate in *s*.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*s* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero or greater than the last position in *s*.'
+- uid: System.Char.IsPunctuation(System.String,System.Int32)
+  id: IsPunctuation(System.String,System.Int32)
+  parent: System.Char
+  href: System.Char.yml
+  name: IsPunctuation(String, Int32)
+  fullName: System.Char.IsPunctuation(System.String, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 644
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether the character at the specified position in a specified string is categorized as a punctuation mark.
+  syntax:
+    content: public static bool IsPunctuation(string s, int index)
+    content.vb: Public Shared Function IsPunctuation(s As String, index As Integer) As Boolean
+    parameters:
+    - id: s
+      type: System.String
+      description: A string.
+    - id: index
+      type: System.Int32
+      description: The position of the character to evaluate in *s*.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*s* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero or greater than the last position in *s*.'
+- uid: System.Char.IsSeparator(System.Char)
+  id: IsSeparator(System.Char)
+  parent: System.Char
+  href: System.Char.yml
+  name: IsSeparator(Char)
+  fullName: System.Char.IsSeparator(System.Char)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 681
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether the specified Unicode character is categorized as a separator character.
+  syntax:
+    content: public static bool IsSeparator(char c)
+    content.vb: Public Shared Function IsSeparator(c As Char) As Boolean
+    parameters:
+    - id: c
+      type: System.Char
+      description: The Unicode character to evaluate.
+    return:
+      type: System.Boolean
+- uid: System.Char.IsSeparator(System.String,System.Int32)
+  id: IsSeparator(System.String,System.Int32)
+  parent: System.Char
+  href: System.Char.yml
+  name: IsSeparator(String, Int32)
+  fullName: System.Char.IsSeparator(System.String, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 689
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether the character at the specified position in a specified string is categorized as a separator character.
+  syntax:
+    content: public static bool IsSeparator(string s, int index)
+    content.vb: Public Shared Function IsSeparator(s As String, index As Integer) As Boolean
+    parameters:
+    - id: s
+      type: System.String
+      description: A string.
+    - id: index
+      type: System.Int32
+      description: The position of the character to evaluate in *s*.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*s* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero or greater than the last position in *s*.'
+- uid: System.Char.IsSurrogate(System.Char)
+  id: IsSurrogate(System.Char)
+  parent: System.Char
+  href: System.Char.yml
+  name: IsSurrogate(Char)
+  fullName: System.Char.IsSurrogate(System.Char)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 704
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether the specified character has a surrogate code unit.
+  syntax:
+    content: public static bool IsSurrogate(char c)
+    content.vb: Public Shared Function IsSurrogate(c As Char) As Boolean
+    parameters:
+    - id: c
+      type: System.Char
+      description: The Unicode character to evaluate.
+    return:
+      type: System.Boolean
+- uid: System.Char.IsSurrogate(System.String,System.Int32)
+  id: IsSurrogate(System.String,System.Int32)
+  parent: System.Char
+  href: System.Char.yml
+  name: IsSurrogate(String, Int32)
+  fullName: System.Char.IsSurrogate(System.String, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 710
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether the character at the specified position in a specified string has a surrogate code unit.
+  syntax:
+    content: public static bool IsSurrogate(string s, int index)
+    content.vb: Public Shared Function IsSurrogate(s As String, index As Integer) As Boolean
+    parameters:
+    - id: s
+      type: System.String
+      description: A string.
+    - id: index
+      type: System.Int32
+      description: The position of the character to evaluate in *s*.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*s* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero or greater than the last position in *s*.'
+- uid: System.Char.IsSymbol(System.Char)
+  id: IsSymbol(System.Char)
+  parent: System.Char
+  href: System.Char.yml
+  name: IsSymbol(Char)
+  fullName: System.Char.IsSymbol(System.Char)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 738
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether the specified Unicode character is categorized as a symbol character.
+  syntax:
+    content: public static bool IsSymbol(char c)
+    content.vb: Public Shared Function IsSymbol(c As Char) As Boolean
+    parameters:
+    - id: c
+      type: System.Char
+      description: The Unicode character to evaluate.
+    return:
+      type: System.Boolean
+- uid: System.Char.IsSymbol(System.String,System.Int32)
+  id: IsSymbol(System.String,System.Int32)
+  parent: System.Char
+  href: System.Char.yml
+  name: IsSymbol(String, Int32)
+  fullName: System.Char.IsSymbol(System.String, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 746
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether the character at the specified position in a specified string is categorized as a symbol character.
+  syntax:
+    content: public static bool IsSymbol(string s, int index)
+    content.vb: Public Shared Function IsSymbol(s As String, index As Integer) As Boolean
+    parameters:
+    - id: s
+      type: System.String
+      description: A string.
+    - id: index
+      type: System.Int32
+      description: The position of the character to evaluate in *s*.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*s* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero or greater than the last position in *s*.'
+- uid: System.Char.IsUpper(System.String,System.Int32)
+  id: IsUpper(System.String,System.Int32)
+  parent: System.Char
+  href: System.Char.yml
+  name: IsUpper(String, Int32)
+  fullName: System.Char.IsUpper(System.String, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 761
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether the character at the specified position in a specified string is categorized as an uppercase letter.
+  syntax:
+    content: public static bool IsUpper(string s, int index)
+    content.vb: Public Shared Function IsUpper(s As String, index As Integer) As Boolean
+    parameters:
+    - id: s
+      type: System.String
+      description: A string.
+    - id: index
+      type: System.Int32
+      description: The position of the character to evaluate in *s*.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*s* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero or greater than the last position in *s*.'
+- uid: System.Char.IsWhiteSpace(System.String,System.Int32)
+  id: IsWhiteSpace(System.String,System.Int32)
+  parent: System.Char
+  href: System.Char.yml
+  name: IsWhiteSpace(String, Int32)
+  fullName: System.Char.IsWhiteSpace(System.String, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 780
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether the character at the specified position in a specified string is categorized as white space.
+  syntax:
+    content: public static bool IsWhiteSpace(string s, int index)
+    content.vb: Public Shared Function IsWhiteSpace(s As String, index As Integer) As Boolean
+    parameters:
+    - id: s
+      type: System.String
+      description: A string.
+    - id: index
+      type: System.Int32
+      description: The position of the character to evaluate in *s*.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*s* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero or greater than the last position in *s*.'
+- uid: System.Char.GetUnicodeCategory(System.Char)
+  id: GetUnicodeCategory(System.Char)
+  parent: System.Char
+  href: System.Char.yml
+  name: GetUnicodeCategory(Char)
+  fullName: System.Char.GetUnicodeCategory(System.Char)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 796
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Categorizes a specified Unicode character into a group identified by one of the @'System.Globalization.UnicodeCategory' values.
+  syntax:
+    content: public static UnicodeCategory GetUnicodeCategory(char c)
+    content.vb: Public Shared Function GetUnicodeCategory(c As Char) As UnicodeCategory
+    parameters:
+    - id: c
+      type: System.Char
+      description: The Unicode character to categorize.
+    return:
+      type: System.Globalization.UnicodeCategory
+- uid: System.Char.GetUnicodeCategory(System.String,System.Int32)
+  id: GetUnicodeCategory(System.String,System.Int32)
+  parent: System.Char
+  href: System.Char.yml
+  name: GetUnicodeCategory(String, Int32)
+  fullName: System.Char.GetUnicodeCategory(System.String, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 804
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Categorizes the character at the specified position in a specified string into a group identified by one of the @'System.Globalization.UnicodeCategory' values.
+  syntax:
+    content: public static UnicodeCategory GetUnicodeCategory(string s, int index)
+    content.vb: Public Shared Function GetUnicodeCategory(s As String, index As Integer) As UnicodeCategory
+    parameters:
+    - id: s
+      type: System.String
+      description: A @'System.String'.
+    - id: index
+      type: System.Int32
+      description: The character position in *s*.
+    return:
+      type: System.Globalization.UnicodeCategory
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*s* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero or greater than the last position in *s*.'
+- uid: System.Char.GetNumericValue(System.Char)
+  id: GetNumericValue(System.Char)
+  parent: System.Char
+  href: System.Char.yml
+  name: GetNumericValue(Char)
+  fullName: System.Char.GetNumericValue(System.Char)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 818
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the specified numeric Unicode character to a double-precision floating point number.
+  syntax:
+    content: public static double GetNumericValue(char c)
+    content.vb: Public Shared Function GetNumericValue(c As Char) As Double
+    parameters:
+    - id: c
+      type: System.Char
+      description: The Unicode character to convert.
+    return:
+      type: System.Double
+- uid: System.Char.GetNumericValue(System.String,System.Int32)
+  id: GetNumericValue(System.String,System.Int32)
+  parent: System.Char
+  href: System.Char.yml
+  name: GetNumericValue(String, Int32)
+  fullName: System.Char.GetNumericValue(System.String, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 823
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the numeric Unicode character at the specified position in a specified string to a double-precision floating point number.
+  syntax:
+    content: public static double GetNumericValue(string s, int index)
+    content.vb: Public Shared Function GetNumericValue(s As String, index As Integer) As Double
+    parameters:
+    - id: s
+      type: System.String
+      description: A @'System.String'.
+    - id: index
+      type: System.Int32
+      description: The character position in *s*.
+    return:
+      type: System.Double
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*s* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero or greater than the last position in *s*.'
+- uid: System.Char.IsHighSurrogate(System.Char)
+  id: IsHighSurrogate(System.Char)
+  parent: System.Char
+  href: System.Char.yml
+  name: IsHighSurrogate(Char)
+  fullName: System.Char.IsHighSurrogate(System.Char)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 838
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether the specified @'System.Char' object is a high surrogate.
+  syntax:
+    content: public static bool IsHighSurrogate(char c)
+    content.vb: Public Shared Function IsHighSurrogate(c As Char) As Boolean
+    parameters:
+    - id: c
+      type: System.Char
+      description: The Unicode character to evaluate.
+    return:
+      type: System.Boolean
+- uid: System.Char.IsHighSurrogate(System.String,System.Int32)
+  id: IsHighSurrogate(System.String,System.Int32)
+  parent: System.Char
+  href: System.Char.yml
+  name: IsHighSurrogate(String, Int32)
+  fullName: System.Char.IsHighSurrogate(System.String, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 843
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether the @'System.Char' object at the specified position in a string is a high surrogate.
+  syntax:
+    content: public static bool IsHighSurrogate(string s, int index)
+    content.vb: Public Shared Function IsHighSurrogate(s As String, index As Integer) As Boolean
+    parameters:
+    - id: s
+      type: System.String
+      description: A string.
+    - id: index
+      type: System.Int32
+      description: The position of the character to evaluate in *s*.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*s* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is not a position within *s*.'
+- uid: System.Char.IsLowSurrogate(System.Char)
+  id: IsLowSurrogate(System.Char)
+  parent: System.Char
+  href: System.Char.yml
+  name: IsLowSurrogate(Char)
+  fullName: System.Char.IsLowSurrogate(System.Char)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 858
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether the specified @'System.Char' object is a low surrogate.
+  syntax:
+    content: public static bool IsLowSurrogate(char c)
+    content.vb: Public Shared Function IsLowSurrogate(c As Char) As Boolean
+    parameters:
+    - id: c
+      type: System.Char
+      description: The character to evaluate.
+    return:
+      type: System.Boolean
+- uid: System.Char.IsLowSurrogate(System.String,System.Int32)
+  id: IsLowSurrogate(System.String,System.Int32)
+  parent: System.Char
+  href: System.Char.yml
+  name: IsLowSurrogate(String, Int32)
+  fullName: System.Char.IsLowSurrogate(System.String, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 863
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether the @'System.Char' object at the specified position in a string is a low surrogate.
+  syntax:
+    content: public static bool IsLowSurrogate(string s, int index)
+    content.vb: Public Shared Function IsLowSurrogate(s As String, index As Integer) As Boolean
+    parameters:
+    - id: s
+      type: System.String
+      description: A string.
+    - id: index
+      type: System.Int32
+      description: The position of the character to evaluate in *s*.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*s* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is not a position within *s*.'
+- uid: System.Char.IsSurrogatePair(System.String,System.Int32)
+  id: IsSurrogatePair(System.String,System.Int32)
+  parent: System.Char
+  href: System.Char.yml
+  name: IsSurrogatePair(String, Int32)
+  fullName: System.Char.IsSurrogatePair(System.String, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 878
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether two adjacent @'System.Char' objects at a specified position in a string form a surrogate pair.
+  syntax:
+    content: public static bool IsSurrogatePair(string s, int index)
+    content.vb: Public Shared Function IsSurrogatePair(s As String, index As Integer) As Boolean
+    parameters:
+    - id: s
+      type: System.String
+      description: A string.
+    - id: index
+      type: System.Int32
+      description: The starting position of the pair of characters to evaluate within *s*.
+    return:
+      type: System.Boolean
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*s* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is not a position within *s*.'
+- uid: System.Char.IsSurrogatePair(System.Char,System.Char)
+  id: IsSurrogatePair(System.Char,System.Char)
+  parent: System.Char
+  href: System.Char.yml
+  name: IsSurrogatePair(Char, Char)
+  fullName: System.Char.IsSurrogatePair(System.Char, System.Char)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 893
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether the two specified @'System.Char' objects form a surrogate pair.
+  syntax:
+    content: public static bool IsSurrogatePair(char highSurrogate, char lowSurrogate)
+    content.vb: Public Shared Function IsSurrogatePair(highSurrogate As Char, lowSurrogate As Char) As Boolean
+    parameters:
+    - id: highSurrogate
+      type: System.Char
+      description: The character to evaluate as the high surrogate of a surrogate pair.
+    - id: lowSurrogate
+      type: System.Char
+      description: The character to evaluate as the low surrogate of a surrogate pair.
+    return:
+      type: System.Boolean
+- uid: System.Char.ConvertFromUtf32(System.Int32)
+  id: ConvertFromUtf32(System.Int32)
+  parent: System.Char
+  href: System.Char.yml
+  name: ConvertFromUtf32(Int32)
+  fullName: System.Char.ConvertFromUtf32(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 915
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the specified Unicode code point into a UTF-16 encoded string.
+  syntax:
+    content: public static string ConvertFromUtf32(int utf32)
+    content.vb: Public Shared Function ConvertFromUtf32(utf32 As Integer) As String
+    parameters:
+    - id: utf32
+      type: System.Int32
+      description: A 21-bit Unicode code point.
+    return:
+      type: System.String
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*utf32* is not a valid 21-bit Unicode code point ranging from U+0 through U+10FFFF, excluding the surrogate pair range from U+D800 through U+DFFF.'
+- uid: System.Char.ConvertToUtf32(System.Char,System.Char)
+  id: ConvertToUtf32(System.Char,System.Char)
+  parent: System.Char
+  href: System.Char.yml
+  name: ConvertToUtf32(Char, Char)
+  fullName: System.Char.ConvertToUtf32(System.Char, System.Char)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 941
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the value of a UTF-16 encoded surrogate pair into a Unicode code point.
+  syntax:
+    content: public static int ConvertToUtf32(char highSurrogate, char lowSurrogate)
+    content.vb: Public Shared Function ConvertToUtf32(highSurrogate As Char, lowSurrogate As Char) As Integer
+    parameters:
+    - id: highSurrogate
+      type: System.Char
+      description: A high surrogate code unit (that is, a code unit ranging from U+D800 through U+DBFF).
+    - id: lowSurrogate
+      type: System.Char
+      description: A low surrogate code unit (that is, a code unit ranging from U+DC00 through U+DFFF).
+    return:
+      type: System.Int32
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*highSurrogate* is not in the range U+D800 through U+DBFF, or *lowSurrogate* is not in the range U+DC00 through U+DFFF.'
+- uid: System.Char.ConvertToUtf32(System.String,System.Int32)
+  id: ConvertToUtf32(System.String,System.Int32)
+  parent: System.Char
+  href: System.Char.yml
+  name: ConvertToUtf32(String, Int32)
+  fullName: System.Char.ConvertToUtf32(System.String, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Char.cs
+    startLine: 960
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the value of a UTF-16 encoded character or surrogate pair at a specified position in a string into a Unicode code point.
+  syntax:
+    content: public static int ConvertToUtf32(string s, int index)
+    content.vb: Public Shared Function ConvertToUtf32(s As String, index As Integer) As Integer
+    parameters:
+    - id: s
+      type: System.String
+      description: A string that contains a character or surrogate pair.
+    - id: index
+      type: System.Int32
+      description: The index position of the character or surrogate pair in *s*.
+    return:
+      type: System.Int32
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*s* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is not a position within *s*.'
+  - type: System.ArgumentException
+    description: The specified index position contains a surrogate pair, and either the first character in the pair is not a valid high surrogate or the second character in the pair is not a valid low surrogate.
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Char
+  parent: System
+  isExternal: true
+  name: Char
+  fullName: System.Char
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.IFormatProvider
+  parent: System
+  isExternal: true
+  name: IFormatProvider
+  fullName: System.IFormatProvider
+- uid: System.Globalization.CultureInfo
+  parent: System.Globalization
+  isExternal: true
+  name: CultureInfo
+  fullName: System.Globalization.CultureInfo
+- uid: System.Globalization
+  isExternal: false
+  name: System.Globalization
+  fullName: System.Globalization
+- uid: System.TypeCode
+  parent: System
+  isExternal: false
+  href: System.TypeCode.yml
+  name: TypeCode
+  fullName: System.TypeCode
+  type: Enum
+- uid: System.SByte
+  parent: System
+  isExternal: true
+  name: SByte
+  fullName: System.SByte
+- uid: System.Byte
+  parent: System
+  isExternal: true
+  name: Byte
+  fullName: System.Byte
+- uid: System.Int16
+  parent: System
+  isExternal: true
+  name: Int16
+  fullName: System.Int16
+- uid: System.UInt16
+  parent: System
+  isExternal: true
+  name: UInt16
+  fullName: System.UInt16
+- uid: System.UInt32
+  parent: System
+  isExternal: true
+  name: UInt32
+  fullName: System.UInt32
+- uid: System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  fullName: System.Int64
+- uid: System.UInt64
+  parent: System
+  isExternal: true
+  name: UInt64
+  fullName: System.UInt64
+- uid: System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  fullName: System.Single
+- uid: System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  fullName: System.Double
+- uid: System.Decimal
+  parent: System
+  isExternal: true
+  name: Decimal
+  fullName: System.Decimal
+- uid: System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  fullName: System.DateTime
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  fullName: System.Type
+- uid: System.Globalization.UnicodeCategory
+  parent: System.Globalization
+  isExternal: false
+  href: System.Globalization.UnicodeCategory.yml
+  name: UnicodeCategory
+  fullName: System.Globalization.UnicodeCategory
+  type: Enum

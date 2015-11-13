@@ -1,0 +1,155 @@
+items:
+- uid: System.Net.WebSockets.WebSocketState
+  id: WebSocketState
+  parent: System.Net.WebSockets
+  children:
+  - System.Net.WebSockets.WebSocketState.Aborted
+  - System.Net.WebSockets.WebSocketState.Closed
+  - System.Net.WebSockets.WebSocketState.CloseReceived
+  - System.Net.WebSockets.WebSocketState.CloseSent
+  - System.Net.WebSockets.WebSocketState.Connecting
+  - System.Net.WebSockets.WebSocketState.None
+  - System.Net.WebSockets.WebSocketState.Open
+  href: System.Net.WebSockets.WebSocketState.yml
+  name: WebSocketState
+  fullName: System.Net.WebSockets.WebSocketState
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Net.WebSockets/src/System/Net/WebSockets/WebSocketState.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Net.WebSockets/src/System/Net/WebSockets/WebSocketState.cs
+    startLine: 5
+  assemblies:
+  - System.Net.WebSockets
+  namespace: System.Net.WebSockets
+  summary: Defines the different states a WebSockets instance can be in.
+  syntax:
+    content: public enum WebSocketState
+    content.vb: Public Enum WebSocketState
+- uid: System.Net.WebSockets.WebSocketState.None
+  id: None
+  parent: System.Net.WebSockets.WebSocketState
+  href: System.Net.WebSockets.WebSocketState.yml
+  name: None
+  fullName: System.Net.WebSockets.WebSocketState.None
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Net.WebSockets/src/System/Net/WebSockets/WebSocketState.cs
+    startLine: 7
+  assemblies:
+  - System.Net.WebSockets
+  namespace: System.Net.WebSockets
+  summary: Reserved for future use.
+  syntax:
+    content: None = 0
+- uid: System.Net.WebSockets.WebSocketState.Connecting
+  id: Connecting
+  parent: System.Net.WebSockets.WebSocketState
+  href: System.Net.WebSockets.WebSocketState.yml
+  name: Connecting
+  fullName: System.Net.WebSockets.WebSocketState.Connecting
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Net.WebSockets/src/System/Net/WebSockets/WebSocketState.cs
+    startLine: 8
+  assemblies:
+  - System.Net.WebSockets
+  namespace: System.Net.WebSockets
+  summary: The connection is negotiating the handshake with the remote endpoint.
+  syntax:
+    content: Connecting = 1
+- uid: System.Net.WebSockets.WebSocketState.Open
+  id: Open
+  parent: System.Net.WebSockets.WebSocketState
+  href: System.Net.WebSockets.WebSocketState.yml
+  name: Open
+  fullName: System.Net.WebSockets.WebSocketState.Open
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Net.WebSockets/src/System/Net/WebSockets/WebSocketState.cs
+    startLine: 9
+  assemblies:
+  - System.Net.WebSockets
+  namespace: System.Net.WebSockets
+  summary: The initial state after the HTTP handshake has been completed.
+  syntax:
+    content: Open = 2
+- uid: System.Net.WebSockets.WebSocketState.CloseSent
+  id: CloseSent
+  parent: System.Net.WebSockets.WebSocketState
+  href: System.Net.WebSockets.WebSocketState.yml
+  name: CloseSent
+  fullName: System.Net.WebSockets.WebSocketState.CloseSent
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Net.WebSockets/src/System/Net/WebSockets/WebSocketState.cs
+    startLine: 10
+  assemblies:
+  - System.Net.WebSockets
+  namespace: System.Net.WebSockets
+  summary: A close message was sent to the remote endpoint.
+  syntax:
+    content: CloseSent = 3
+- uid: System.Net.WebSockets.WebSocketState.CloseReceived
+  id: CloseReceived
+  parent: System.Net.WebSockets.WebSocketState
+  href: System.Net.WebSockets.WebSocketState.yml
+  name: CloseReceived
+  fullName: System.Net.WebSockets.WebSocketState.CloseReceived
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Net.WebSockets/src/System/Net/WebSockets/WebSocketState.cs
+    startLine: 11
+  assemblies:
+  - System.Net.WebSockets
+  namespace: System.Net.WebSockets
+  summary: A close message was received from the remote endpoint.
+  syntax:
+    content: CloseReceived = 4
+- uid: System.Net.WebSockets.WebSocketState.Closed
+  id: Closed
+  parent: System.Net.WebSockets.WebSocketState
+  href: System.Net.WebSockets.WebSocketState.yml
+  name: Closed
+  fullName: System.Net.WebSockets.WebSocketState.Closed
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Net.WebSockets/src/System/Net/WebSockets/WebSocketState.cs
+    startLine: 12
+  assemblies:
+  - System.Net.WebSockets
+  namespace: System.Net.WebSockets
+  summary: Indicates the WebSocket close handshake completed gracefully.
+  syntax:
+    content: Closed = 5
+- uid: System.Net.WebSockets.WebSocketState.Aborted
+  id: Aborted
+  parent: System.Net.WebSockets.WebSocketState
+  href: System.Net.WebSockets.WebSocketState.yml
+  name: Aborted
+  fullName: System.Net.WebSockets.WebSocketState.Aborted
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Net.WebSockets/src/System/Net/WebSockets/WebSocketState.cs
+    startLine: 13
+  assemblies:
+  - System.Net.WebSockets
+  namespace: System.Net.WebSockets
+  summary: Reserved for future use.
+  syntax:
+    content: Aborted = 6
+references:
+- uid: System.Net.WebSockets
+  isExternal: false
+  name: System.Net.WebSockets
+  fullName: System.Net.WebSockets
+  type: Namespace

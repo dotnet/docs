@@ -1,0 +1,101 @@
+items:
+- uid: System.Security.Permissions.UIPermissionWindow
+  id: UIPermissionWindow
+  parent: System.Security.Permissions
+  children:
+  - System.Security.Permissions.UIPermissionWindow.AllWindows
+  - System.Security.Permissions.UIPermissionWindow.NoWindows
+  - System.Security.Permissions.UIPermissionWindow.SafeSubWindows
+  - System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows
+  href: System.Security.Permissions.UIPermissionWindow.yml
+  name: UIPermissionWindow
+  fullName: System.Security.Permissions.UIPermissionWindow
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Security/Permissions/UIPermission.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Security/Permissions/UIPermission.cs
+    startLine: 15
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Specifies the type of windows that code is allowed to use.
+  syntax:
+    content: public enum UIPermissionWindow
+    content.vb: Public Enum UIPermissionWindow
+- uid: System.Security.Permissions.UIPermissionWindow.NoWindows
+  id: NoWindows
+  parent: System.Security.Permissions.UIPermissionWindow
+  href: System.Security.Permissions.UIPermissionWindow.yml
+  name: NoWindows
+  fullName: System.Security.Permissions.UIPermissionWindow.NoWindows
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/UIPermission.cs
+    startLine: 20
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Users cannot use any windows or user interface events. No user interface can be used.
+  syntax:
+    content: NoWindows = 0
+- uid: System.Security.Permissions.UIPermissionWindow.SafeSubWindows
+  id: SafeSubWindows
+  parent: System.Security.Permissions.UIPermissionWindow
+  href: System.Security.Permissions.UIPermissionWindow.yml
+  name: SafeSubWindows
+  fullName: System.Security.Permissions.UIPermissionWindow.SafeSubWindows
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/UIPermission.cs
+    startLine: 23
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Users can only use @'System.Security.Permissions.UIPermissionWindow.SafeSubWindows' for drawing, and can only use user input events for user interface within that subwindow. Examples of @'System.Security.Permissions.UIPermissionWindow.SafeSubWindows' are a @'System.Windows.Forms.MessageBox', common dialog controls, and a control displayed within a browser.
+  syntax:
+    content: SafeSubWindows = 1
+- uid: System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows
+  id: SafeTopLevelWindows
+  parent: System.Security.Permissions.UIPermissionWindow
+  href: System.Security.Permissions.UIPermissionWindow.yml
+  name: SafeTopLevelWindows
+  fullName: System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/UIPermission.cs
+    startLine: 26
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Users can only use @'System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows' and @'System.Security.Permissions.UIPermissionWindow.SafeSubWindows' for drawing, and can only use user input events for the user interface within those top-level windows and subwindows.
+  syntax:
+    content: SafeTopLevelWindows = 2
+- uid: System.Security.Permissions.UIPermissionWindow.AllWindows
+  id: AllWindows
+  parent: System.Security.Permissions.UIPermissionWindow
+  href: System.Security.Permissions.UIPermissionWindow.yml
+  name: AllWindows
+  fullName: System.Security.Permissions.UIPermissionWindow.AllWindows
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/UIPermission.cs
+    startLine: 29
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Users can use all windows and user input events without restriction.
+  syntax:
+    content: AllWindows = 3
+references:
+- uid: System.Security.Permissions
+  isExternal: false
+  name: System.Security.Permissions
+  fullName: System.Security.Permissions
+  type: Namespace

@@ -1,0 +1,367 @@
+items:
+- uid: System.Reflection.Metadata.SerializationTypeCode
+  id: SerializationTypeCode
+  parent: System.Reflection.Metadata
+  children:
+  - System.Reflection.Metadata.SerializationTypeCode.Boolean
+  - System.Reflection.Metadata.SerializationTypeCode.Byte
+  - System.Reflection.Metadata.SerializationTypeCode.Char
+  - System.Reflection.Metadata.SerializationTypeCode.Double
+  - System.Reflection.Metadata.SerializationTypeCode.Enum
+  - System.Reflection.Metadata.SerializationTypeCode.Int16
+  - System.Reflection.Metadata.SerializationTypeCode.Int32
+  - System.Reflection.Metadata.SerializationTypeCode.Int64
+  - System.Reflection.Metadata.SerializationTypeCode.Invalid
+  - System.Reflection.Metadata.SerializationTypeCode.SByte
+  - System.Reflection.Metadata.SerializationTypeCode.Single
+  - System.Reflection.Metadata.SerializationTypeCode.String
+  - System.Reflection.Metadata.SerializationTypeCode.SZArray
+  - System.Reflection.Metadata.SerializationTypeCode.TaggedObject
+  - System.Reflection.Metadata.SerializationTypeCode.Type
+  - System.Reflection.Metadata.SerializationTypeCode.UInt16
+  - System.Reflection.Metadata.SerializationTypeCode.UInt32
+  - System.Reflection.Metadata.SerializationTypeCode.UInt64
+  href: System.Reflection.Metadata.SerializationTypeCode.yml
+  name: SerializationTypeCode
+  fullName: System.Reflection.Metadata.SerializationTypeCode
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SerializationTypeCode.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SerializationTypeCode.cs
+    startLine: 5
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: 'public enum SerializationTypeCode : byte'
+    content.vb: Public Enum SerializationTypeCode As Byte
+- uid: System.Reflection.Metadata.SerializationTypeCode.Invalid
+  id: Invalid
+  parent: System.Reflection.Metadata.SerializationTypeCode
+  href: System.Reflection.Metadata.SerializationTypeCode.yml
+  name: Invalid
+  fullName: System.Reflection.Metadata.SerializationTypeCode.Invalid
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SerializationTypeCode.cs
+    startLine: 10
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Equivalent to @'System.Reflection.Metadata.SignatureTypeCode.Invalid'.
+  syntax:
+    content: Invalid = 0
+- uid: System.Reflection.Metadata.SerializationTypeCode.Boolean
+  id: Boolean
+  parent: System.Reflection.Metadata.SerializationTypeCode
+  href: System.Reflection.Metadata.SerializationTypeCode.yml
+  name: Boolean
+  fullName: System.Reflection.Metadata.SerializationTypeCode.Boolean
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SerializationTypeCode.cs
+    startLine: 15
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Equivalent to @'System.Reflection.Metadata.SignatureTypeCode.Boolean'.
+  syntax:
+    content: Boolean = 2
+- uid: System.Reflection.Metadata.SerializationTypeCode.Char
+  id: Char
+  parent: System.Reflection.Metadata.SerializationTypeCode
+  href: System.Reflection.Metadata.SerializationTypeCode.yml
+  name: Char
+  fullName: System.Reflection.Metadata.SerializationTypeCode.Char
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SerializationTypeCode.cs
+    startLine: 20
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Equivalent to @'System.Reflection.Metadata.SignatureTypeCode.Char'.
+  syntax:
+    content: Char = 3
+- uid: System.Reflection.Metadata.SerializationTypeCode.SByte
+  id: SByte
+  parent: System.Reflection.Metadata.SerializationTypeCode
+  href: System.Reflection.Metadata.SerializationTypeCode.yml
+  name: SByte
+  fullName: System.Reflection.Metadata.SerializationTypeCode.SByte
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SerializationTypeCode.cs
+    startLine: 25
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Equivalent to @'System.Reflection.Metadata.SignatureTypeCode.SByte'.
+  syntax:
+    content: SByte = 4
+- uid: System.Reflection.Metadata.SerializationTypeCode.Byte
+  id: Byte
+  parent: System.Reflection.Metadata.SerializationTypeCode
+  href: System.Reflection.Metadata.SerializationTypeCode.yml
+  name: Byte
+  fullName: System.Reflection.Metadata.SerializationTypeCode.Byte
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SerializationTypeCode.cs
+    startLine: 30
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Equivalent to @'System.Reflection.Metadata.SignatureTypeCode.Byte'.
+  syntax:
+    content: Byte = 5
+- uid: System.Reflection.Metadata.SerializationTypeCode.Int16
+  id: Int16
+  parent: System.Reflection.Metadata.SerializationTypeCode
+  href: System.Reflection.Metadata.SerializationTypeCode.yml
+  name: Int16
+  fullName: System.Reflection.Metadata.SerializationTypeCode.Int16
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SerializationTypeCode.cs
+    startLine: 35
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Equivalent to @'System.Reflection.Metadata.SignatureTypeCode.Int16'.
+  syntax:
+    content: Int16 = 6
+- uid: System.Reflection.Metadata.SerializationTypeCode.UInt16
+  id: UInt16
+  parent: System.Reflection.Metadata.SerializationTypeCode
+  href: System.Reflection.Metadata.SerializationTypeCode.yml
+  name: UInt16
+  fullName: System.Reflection.Metadata.SerializationTypeCode.UInt16
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SerializationTypeCode.cs
+    startLine: 40
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Equivalent to @'System.Reflection.Metadata.SignatureTypeCode.UInt16'.
+  syntax:
+    content: UInt16 = 7
+- uid: System.Reflection.Metadata.SerializationTypeCode.Int32
+  id: Int32
+  parent: System.Reflection.Metadata.SerializationTypeCode
+  href: System.Reflection.Metadata.SerializationTypeCode.yml
+  name: Int32
+  fullName: System.Reflection.Metadata.SerializationTypeCode.Int32
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SerializationTypeCode.cs
+    startLine: 45
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Equivalent to @'System.Reflection.Metadata.SignatureTypeCode.Int32'.
+  syntax:
+    content: Int32 = 8
+- uid: System.Reflection.Metadata.SerializationTypeCode.UInt32
+  id: UInt32
+  parent: System.Reflection.Metadata.SerializationTypeCode
+  href: System.Reflection.Metadata.SerializationTypeCode.yml
+  name: UInt32
+  fullName: System.Reflection.Metadata.SerializationTypeCode.UInt32
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SerializationTypeCode.cs
+    startLine: 50
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Equivalent to @'System.Reflection.Metadata.SignatureTypeCode.UInt32'.
+  syntax:
+    content: UInt32 = 9
+- uid: System.Reflection.Metadata.SerializationTypeCode.Int64
+  id: Int64
+  parent: System.Reflection.Metadata.SerializationTypeCode
+  href: System.Reflection.Metadata.SerializationTypeCode.yml
+  name: Int64
+  fullName: System.Reflection.Metadata.SerializationTypeCode.Int64
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SerializationTypeCode.cs
+    startLine: 55
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Equivalent to @'System.Reflection.Metadata.SignatureTypeCode.Int64'.
+  syntax:
+    content: Int64 = 10
+- uid: System.Reflection.Metadata.SerializationTypeCode.UInt64
+  id: UInt64
+  parent: System.Reflection.Metadata.SerializationTypeCode
+  href: System.Reflection.Metadata.SerializationTypeCode.yml
+  name: UInt64
+  fullName: System.Reflection.Metadata.SerializationTypeCode.UInt64
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SerializationTypeCode.cs
+    startLine: 60
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Equivalent to @'System.Reflection.Metadata.SignatureTypeCode.UInt64'.
+  syntax:
+    content: UInt64 = 11
+- uid: System.Reflection.Metadata.SerializationTypeCode.Single
+  id: Single
+  parent: System.Reflection.Metadata.SerializationTypeCode
+  href: System.Reflection.Metadata.SerializationTypeCode.yml
+  name: Single
+  fullName: System.Reflection.Metadata.SerializationTypeCode.Single
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SerializationTypeCode.cs
+    startLine: 65
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Equivalent to @'System.Reflection.Metadata.SignatureTypeCode.Single'.
+  syntax:
+    content: Single = 12
+- uid: System.Reflection.Metadata.SerializationTypeCode.Double
+  id: Double
+  parent: System.Reflection.Metadata.SerializationTypeCode
+  href: System.Reflection.Metadata.SerializationTypeCode.yml
+  name: Double
+  fullName: System.Reflection.Metadata.SerializationTypeCode.Double
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SerializationTypeCode.cs
+    startLine: 70
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Equivalent to @'System.Reflection.Metadata.SignatureTypeCode.Double'.
+  syntax:
+    content: Double = 13
+- uid: System.Reflection.Metadata.SerializationTypeCode.String
+  id: String
+  parent: System.Reflection.Metadata.SerializationTypeCode
+  href: System.Reflection.Metadata.SerializationTypeCode.yml
+  name: String
+  fullName: System.Reflection.Metadata.SerializationTypeCode.String
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SerializationTypeCode.cs
+    startLine: 75
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Equivalent to @'System.Reflection.Metadata.SignatureTypeCode.String'.
+  syntax:
+    content: String = 14
+- uid: System.Reflection.Metadata.SerializationTypeCode.SZArray
+  id: SZArray
+  parent: System.Reflection.Metadata.SerializationTypeCode
+  href: System.Reflection.Metadata.SerializationTypeCode.yml
+  name: SZArray
+  fullName: System.Reflection.Metadata.SerializationTypeCode.SZArray
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SerializationTypeCode.cs
+    startLine: 80
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Equivalent to @'System.Reflection.Metadata.SignatureTypeCode.SZArray'.
+  syntax:
+    content: SZArray = 29
+- uid: System.Reflection.Metadata.SerializationTypeCode.Type
+  id: Type
+  parent: System.Reflection.Metadata.SerializationTypeCode
+  href: System.Reflection.Metadata.SerializationTypeCode.yml
+  name: Type
+  fullName: System.Reflection.Metadata.SerializationTypeCode.Type
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SerializationTypeCode.cs
+    startLine: 85
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: The attribute argument is a System.Type instance.
+  syntax:
+    content: Type = 80
+- uid: System.Reflection.Metadata.SerializationTypeCode.TaggedObject
+  id: TaggedObject
+  parent: System.Reflection.Metadata.SerializationTypeCode
+  href: System.Reflection.Metadata.SerializationTypeCode.yml
+  name: TaggedObject
+  fullName: System.Reflection.Metadata.SerializationTypeCode.TaggedObject
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SerializationTypeCode.cs
+    startLine: 90
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: The attribute argument is "boxed" (passed to a parameter, field, or property of type object) and carries type information in the attribute blob.
+  syntax:
+    content: TaggedObject = 81
+- uid: System.Reflection.Metadata.SerializationTypeCode.Enum
+  id: Enum
+  parent: System.Reflection.Metadata.SerializationTypeCode
+  href: System.Reflection.Metadata.SerializationTypeCode.yml
+  name: Enum
+  fullName: System.Reflection.Metadata.SerializationTypeCode.Enum
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/SerializationTypeCode.cs
+    startLine: 95
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: The attribute argument is an Enum instance.
+  syntax:
+    content: Enum = 85
+references:
+- uid: System.Reflection.Metadata
+  isExternal: false
+  name: System.Reflection.Metadata
+  fullName: System.Reflection.Metadata
+  type: Namespace
+- uid: System.Reflection.Metadata.SignatureTypeCode.Invalid
+- uid: System.Reflection.Metadata.SignatureTypeCode.Boolean
+- uid: System.Reflection.Metadata.SignatureTypeCode.Char
+- uid: System.Reflection.Metadata.SignatureTypeCode.SByte
+- uid: System.Reflection.Metadata.SignatureTypeCode.Byte
+- uid: System.Reflection.Metadata.SignatureTypeCode.Int16
+- uid: System.Reflection.Metadata.SignatureTypeCode.UInt16
+- uid: System.Reflection.Metadata.SignatureTypeCode.Int32
+- uid: System.Reflection.Metadata.SignatureTypeCode.UInt32
+- uid: System.Reflection.Metadata.SignatureTypeCode.Int64
+- uid: System.Reflection.Metadata.SignatureTypeCode.UInt64
+- uid: System.Reflection.Metadata.SignatureTypeCode.Single
+- uid: System.Reflection.Metadata.SignatureTypeCode.Double
+- uid: System.Reflection.Metadata.SignatureTypeCode.String
+- uid: System.Reflection.Metadata.SignatureTypeCode.SZArray

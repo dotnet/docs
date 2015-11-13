@@ -1,0 +1,64 @@
+items:
+- uid: System.MidpointRounding
+  id: MidpointRounding
+  parent: System
+  children:
+  - System.MidpointRounding.AwayFromZero
+  - System.MidpointRounding.ToEven
+  href: System.MidpointRounding.yml
+  name: MidpointRounding
+  fullName: System.MidpointRounding
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/MidpointRounding.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/MidpointRounding.cs
+    startLine: 6
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Specifies how mathematical rounding methods should process a number that is midway between two numbers.
+  syntax:
+    content: public enum MidpointRounding
+    content.vb: Public Enum MidpointRounding
+- uid: System.MidpointRounding.ToEven
+  id: ToEven
+  parent: System.MidpointRounding
+  href: System.MidpointRounding.yml
+  name: ToEven
+  fullName: System.MidpointRounding.ToEven
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/MidpointRounding.cs
+    startLine: 8
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: When a number is halfway between two others, it is rounded toward the nearest even number.
+  syntax:
+    content: ToEven = 0
+- uid: System.MidpointRounding.AwayFromZero
+  id: AwayFromZero
+  parent: System.MidpointRounding
+  href: System.MidpointRounding.yml
+  name: AwayFromZero
+  fullName: System.MidpointRounding.AwayFromZero
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/MidpointRounding.cs
+    startLine: 9
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: When a number is halfway between two others, it is rounded toward the nearest number that is away from zero.
+  syntax:
+    content: AwayFromZero = 1
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

@@ -1,0 +1,2557 @@
+items:
+- uid: System.Text.StringBuilder
+  id: StringBuilder
+  parent: System.Text
+  children:
+  - System.Text.StringBuilder.#ctor
+  - System.Text.StringBuilder.#ctor(System.Int32)
+  - System.Text.StringBuilder.#ctor(System.Int32,System.Int32)
+  - System.Text.StringBuilder.#ctor(System.String)
+  - System.Text.StringBuilder.#ctor(System.String,System.Int32)
+  - System.Text.StringBuilder.#ctor(System.String,System.Int32,System.Int32,System.Int32)
+  - System.Text.StringBuilder.Append(System.Boolean)
+  - System.Text.StringBuilder.Append(System.Byte)
+  - System.Text.StringBuilder.Append(System.Char)
+  - System.Text.StringBuilder.Append(System.Char*,System.Int32)
+  - System.Text.StringBuilder.Append(System.Char,System.Int32)
+  - System.Text.StringBuilder.Append(System.Char[])
+  - System.Text.StringBuilder.Append(System.Char[],System.Int32,System.Int32)
+  - System.Text.StringBuilder.Append(System.Decimal)
+  - System.Text.StringBuilder.Append(System.Double)
+  - System.Text.StringBuilder.Append(System.Int16)
+  - System.Text.StringBuilder.Append(System.Int32)
+  - System.Text.StringBuilder.Append(System.Int64)
+  - System.Text.StringBuilder.Append(System.Object)
+  - System.Text.StringBuilder.Append(System.SByte)
+  - System.Text.StringBuilder.Append(System.Single)
+  - System.Text.StringBuilder.Append(System.String)
+  - System.Text.StringBuilder.Append(System.String,System.Int32,System.Int32)
+  - System.Text.StringBuilder.Append(System.UInt16)
+  - System.Text.StringBuilder.Append(System.UInt32)
+  - System.Text.StringBuilder.Append(System.UInt64)
+  - System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object)
+  - System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object,System.Object)
+  - System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object,System.Object,System.Object)
+  - System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object[])
+  - System.Text.StringBuilder.AppendFormat(System.String,System.Object)
+  - System.Text.StringBuilder.AppendFormat(System.String,System.Object,System.Object)
+  - System.Text.StringBuilder.AppendFormat(System.String,System.Object,System.Object,System.Object)
+  - System.Text.StringBuilder.AppendFormat(System.String,System.Object[])
+  - System.Text.StringBuilder.AppendLine
+  - System.Text.StringBuilder.AppendLine(System.String)
+  - System.Text.StringBuilder.Capacity
+  - System.Text.StringBuilder.Chars(System.Int32)
+  - System.Text.StringBuilder.Clear
+  - System.Text.StringBuilder.CopyTo(System.Int32,System.Char[],System.Int32,System.Int32)
+  - System.Text.StringBuilder.EnsureCapacity(System.Int32)
+  - System.Text.StringBuilder.Equals(System.Text.StringBuilder)
+  - System.Text.StringBuilder.Insert(System.Int32,System.Boolean)
+  - System.Text.StringBuilder.Insert(System.Int32,System.Byte)
+  - System.Text.StringBuilder.Insert(System.Int32,System.Char)
+  - System.Text.StringBuilder.Insert(System.Int32,System.Char[])
+  - System.Text.StringBuilder.Insert(System.Int32,System.Char[],System.Int32,System.Int32)
+  - System.Text.StringBuilder.Insert(System.Int32,System.Decimal)
+  - System.Text.StringBuilder.Insert(System.Int32,System.Double)
+  - System.Text.StringBuilder.Insert(System.Int32,System.Int16)
+  - System.Text.StringBuilder.Insert(System.Int32,System.Int32)
+  - System.Text.StringBuilder.Insert(System.Int32,System.Int64)
+  - System.Text.StringBuilder.Insert(System.Int32,System.Object)
+  - System.Text.StringBuilder.Insert(System.Int32,System.SByte)
+  - System.Text.StringBuilder.Insert(System.Int32,System.Single)
+  - System.Text.StringBuilder.Insert(System.Int32,System.String)
+  - System.Text.StringBuilder.Insert(System.Int32,System.String,System.Int32)
+  - System.Text.StringBuilder.Insert(System.Int32,System.UInt16)
+  - System.Text.StringBuilder.Insert(System.Int32,System.UInt32)
+  - System.Text.StringBuilder.Insert(System.Int32,System.UInt64)
+  - System.Text.StringBuilder.Length
+  - System.Text.StringBuilder.MaxCapacity
+  - System.Text.StringBuilder.Remove(System.Int32,System.Int32)
+  - System.Text.StringBuilder.Replace(System.Char,System.Char)
+  - System.Text.StringBuilder.Replace(System.Char,System.Char,System.Int32,System.Int32)
+  - System.Text.StringBuilder.Replace(System.String,System.String)
+  - System.Text.StringBuilder.Replace(System.String,System.String,System.Int32,System.Int32)
+  - System.Text.StringBuilder.ToString
+  - System.Text.StringBuilder.ToString(System.Int32,System.Int32)
+  href: System.Text.StringBuilder.yml
+  name: StringBuilder
+  fullName: System.Text.StringBuilder
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Text/StringBuilder.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 40
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Represents a mutable string of characters. This class cannot be inherited.To browse the .NET Framework source code for this type, see the Reference Source.
+  syntax:
+    content: 'public sealed class StringBuilder : ISerializable'
+    content.vb: Public NotInheritable Class StringBuilder Implements ISerializable
+  inheritance:
+  - System.Object
+  implements:
+  - System.Runtime.Serialization.ISerializable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Text.StringBuilder.#ctor
+  id: '#ctor'
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: StringBuilder()
+  fullName: System.Text.StringBuilder.StringBuilder()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 82
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Initializes a new instance of the @'System.Text.StringBuilder' class.
+  syntax:
+    content: public StringBuilder()
+    content.vb: Public Sub New
+- uid: System.Text.StringBuilder.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: StringBuilder(Int32)
+  fullName: System.Text.StringBuilder.StringBuilder(System.Int32)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 88
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Initializes a new instance of the @'System.Text.StringBuilder' class using the specified capacity.
+  syntax:
+    content: public StringBuilder(int capacity)
+    content.vb: Public Sub New(capacity As Integer)
+    parameters:
+    - id: capacity
+      type: System.Int32
+      description: The suggested starting size of this instance.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*capacity* is less than zero.'
+- uid: System.Text.StringBuilder.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: StringBuilder(String)
+  fullName: System.Text.StringBuilder.StringBuilder(System.String)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 97
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Initializes a new instance of the @'System.Text.StringBuilder' class using the specified string.
+  syntax:
+    content: public StringBuilder(string value)
+    content.vb: Public Sub New(value As String)
+    parameters:
+    - id: value
+      type: System.String
+      description: The string used to initialize the value of the instance. If *value* is null, the new @'System.Text.StringBuilder' will contain the empty string (that is, it contains @'System.String.Empty').
+- uid: System.Text.StringBuilder.#ctor(System.String,System.Int32)
+  id: '#ctor(System.String,System.Int32)'
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: StringBuilder(String, Int32)
+  fullName: System.Text.StringBuilder.StringBuilder(System.String, System.Int32)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 107
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Initializes a new instance of the @'System.Text.StringBuilder' class using the specified string and capacity.
+  syntax:
+    content: public StringBuilder(string value, int capacity)
+    content.vb: Public Sub New(value As String, capacity As Integer)
+    parameters:
+    - id: value
+      type: System.String
+      description: The string used to initialize the value of the instance. If *value* is null, the new @'System.Text.StringBuilder' will contain the empty string (that is, it contains @'System.String.Empty').
+    - id: capacity
+      type: System.Int32
+      description: The suggested starting size of the @'System.Text.StringBuilder'.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*capacity* is less than zero.'
+- uid: System.Text.StringBuilder.#ctor(System.String,System.Int32,System.Int32,System.Int32)
+  id: '#ctor(System.String,System.Int32,System.Int32,System.Int32)'
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: StringBuilder(String, Int32, Int32, Int32)
+  fullName: System.Text.StringBuilder.StringBuilder(System.String, System.Int32, System.Int32, System.Int32)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 114
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Initializes a new instance of the @'System.Text.StringBuilder' class from the specified substring and capacity.
+  syntax:
+    content: public StringBuilder(string value, int startIndex, int length, int capacity)
+    content.vb: Public Sub New(value As String, startIndex As Integer, length As Integer, capacity As Integer)
+    parameters:
+    - id: value
+      type: System.String
+      description: The string that contains the substring used to initialize the value of this instance. If *value* is null, the new @'System.Text.StringBuilder' will contain the empty string (that is, it contains @'System.String.Empty').
+    - id: startIndex
+      type: System.Int32
+      description: The position within *value* where the substring begins.
+    - id: length
+      type: System.Int32
+      description: The number of characters in the substring.
+    - id: capacity
+      type: System.Int32
+      description: The suggested starting size of the @'System.Text.StringBuilder'.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*capacity* is less than zero.-or- *startIndex* plus *length* is not a position within *value*.'
+- uid: System.Text.StringBuilder.#ctor(System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32)'
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: StringBuilder(Int32, Int32)
+  fullName: System.Text.StringBuilder.StringBuilder(System.Int32, System.Int32)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 153
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Initializes a new instance of the @'System.Text.StringBuilder' class that starts with a specified capacity and can grow to a specified maximum.
+  syntax:
+    content: public StringBuilder(int capacity, int maxCapacity)
+    content.vb: Public Sub New(capacity As Integer, maxCapacity As Integer)
+    parameters:
+    - id: capacity
+      type: System.Int32
+      description: The suggested starting size of the @'System.Text.StringBuilder'.
+    - id: maxCapacity
+      type: System.Int32
+      description: The maximum number of characters the current string can contain.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*maxCapacity* is less than one, *capacity* is less than zero, or *capacity* is greater than *maxCapacity*.'
+- uid: System.Text.StringBuilder.Capacity
+  id: Capacity
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Capacity
+  fullName: System.Text.StringBuilder.Capacity
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 282
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Gets or sets the maximum number of characters that can be contained in the memory allocated by the current instance.
+  syntax:
+    content: public int Capacity { get; set; }
+    content.vb: Public Property Capacity As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: The value specified for a set operation is less than the current length of this instance.-or- The value specified for a set operation is greater than the maximum capacity.
+- uid: System.Text.StringBuilder.MaxCapacity
+  id: MaxCapacity
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: MaxCapacity
+  fullName: System.Text.StringBuilder.MaxCapacity
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 305
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Gets the maximum capacity of this instance.
+  syntax:
+    content: public int MaxCapacity { get; }
+    content.vb: Public ReadOnly Property MaxCapacity As Integer
+    parameters: []
+    return:
+      type: System.Int32
+- uid: System.Text.StringBuilder.EnsureCapacity(System.Int32)
+  id: EnsureCapacity(System.Int32)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: EnsureCapacity(Int32)
+  fullName: System.Text.StringBuilder.EnsureCapacity(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 314
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Ensures that the capacity of this instance of @'System.Text.StringBuilder' is at least the specified value.
+  syntax:
+    content: public int EnsureCapacity(int capacity)
+    content.vb: Public Function EnsureCapacity(capacity As Integer) As Integer
+    parameters:
+    - id: capacity
+      type: System.Int32
+      description: The minimum capacity to ensure.
+    return:
+      type: System.Int32
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*capacity* is less than zero.-or- Enlarging the value of this instance would exceed @''System.Text.StringBuilder.MaxCapacity''.'
+- uid: System.Text.StringBuilder.ToString
+  id: ToString
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: ToString()
+  fullName: System.Text.StringBuilder.ToString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 325
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Converts the value of this instance to a @'System.String'.
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+  overridden: System.Object.ToString
+- uid: System.Text.StringBuilder.ToString(System.Int32,System.Int32)
+  id: ToString(System.Int32,System.Int32)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: ToString(Int32, Int32)
+  fullName: System.Text.StringBuilder.ToString(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 368
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Converts the value of a substring of this instance to a @'System.String'.
+  syntax:
+    content: public string ToString(int startIndex, int length)
+    content.vb: Public Function ToString(startIndex As Integer, length As Integer) As String
+    parameters:
+    - id: startIndex
+      type: System.Int32
+      description: The starting position of the substring in this instance.
+    - id: length
+      type: System.Int32
+      description: The length of the substring.
+    return:
+      type: System.String
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*startIndex* or *length* is less than zero.-or- The sum of *startIndex* and *length* is greater than the length of the current instance.'
+- uid: System.Text.StringBuilder.Clear
+  id: Clear
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Clear()
+  fullName: System.Text.StringBuilder.Clear()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 443
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Removes all characters from the current @'System.Text.StringBuilder' instance.
+  syntax:
+    content: public StringBuilder Clear()
+    content.vb: Public Function Clear As StringBuilder
+    return:
+      type: System.Text.StringBuilder
+- uid: System.Text.StringBuilder.Length
+  id: Length
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Length
+  fullName: System.Text.StringBuilder.Length
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 452
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Gets or sets the length of the current @'System.Text.StringBuilder' object.
+  syntax:
+    content: public int Length { get; set; }
+    content.vb: Public Property Length As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: The value specified for a set operation is less than zero or greater than @'System.Text.StringBuilder.MaxCapacity'.
+- uid: System.Text.StringBuilder.Chars(System.Int32)
+  id: Chars(System.Int32)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Chars[Int32]
+  name.vb: Chars(Int32)
+  fullName: System.Text.StringBuilder.Chars[System.Int32]
+  fullName.vb: System.Text.StringBuilder.Chars(System.Int32)
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 510
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Gets or sets the character at the specified character position in this instance.
+  syntax:
+    content: public char this[int index] { get; set; }
+    content.vb: Public Property Chars(index As Integer) As Char
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The position of the character.
+    return:
+      type: System.Char
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is outside the bounds of this instance while setting a character.'
+  - type: System.IndexOutOfRangeException
+    description: '*index* is outside the bounds of this instance while getting a character.'
+- uid: System.Text.StringBuilder.Append(System.Char,System.Int32)
+  id: Append(System.Char,System.Int32)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Append(Char, Int32)
+  fullName: System.Text.StringBuilder.Append(System.Char, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 548
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Appends a specified number of copies of the string representation of a Unicode character to this instance.
+  syntax:
+    content: public StringBuilder Append(char value, int repeatCount)
+    content.vb: Public Function Append(value As Char, repeatCount As Integer) As StringBuilder
+    parameters:
+    - id: value
+      type: System.Char
+      description: The character to append.
+    - id: repeatCount
+      type: System.Int32
+      description: The number of times to append *value*.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*repeatCount* is less than zero.-or- Enlarging the value of this instance would exceed @''System.Text.StringBuilder.MaxCapacity''.'
+  - type: System.OutOfMemoryException
+    description: Out of memory.
+- uid: System.Text.StringBuilder.Append(System.Char[],System.Int32,System.Int32)
+  id: Append(System.Char[],System.Int32,System.Int32)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Append(Char[], Int32, Int32)
+  name.vb: Append(Char(), Int32, Int32)
+  fullName: System.Text.StringBuilder.Append(System.Char[], System.Int32, System.Int32)
+  fullName.vb: System.Text.StringBuilder.Append(System.Char(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 580
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Appends the string representation of a specified subarray of Unicode characters to this instance.
+  syntax:
+    content: public StringBuilder Append(char[] value, int startIndex, int charCount)
+    content.vb: Public Function Append(value As Char(), startIndex As Integer, charCount As Integer) As StringBuilder
+    parameters:
+    - id: value
+      type: System.Char[]
+      description: A character array.
+    - id: startIndex
+      type: System.Int32
+      description: The starting position in *value*.
+    - id: charCount
+      type: System.Int32
+      description: The number of characters to append.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*value* is null, and *startIndex* and *charCount* are not zero.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*charCount* is less than zero.-or- *startIndex* is less than zero.-or- *startIndex* + *charCount* is greater than the length of *value*.-or- Enlarging the value of this instance would exceed @''System.Text.StringBuilder.MaxCapacity''.'
+- uid: System.Text.StringBuilder.Append(System.String)
+  id: Append(System.String)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Append(String)
+  fullName: System.Text.StringBuilder.Append(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 627
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Appends a copy of the specified string to this instance.
+  syntax:
+    content: public StringBuilder Append(string value)
+    content.vb: Public Function Append(value As String) As StringBuilder
+    parameters:
+    - id: value
+      type: System.String
+      description: The string to append.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: Enlarging the value of this instance would exceed @'System.Text.StringBuilder.MaxCapacity'.
+- uid: System.Text.StringBuilder.Append(System.String,System.Int32,System.Int32)
+  id: Append(System.String,System.Int32,System.Int32)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Append(String, Int32, Int32)
+  fullName: System.Text.StringBuilder.Append(System.String, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 684
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Appends a copy of a specified substring to this instance.
+  syntax:
+    content: public StringBuilder Append(string value, int startIndex, int count)
+    content.vb: Public Function Append(value As String, startIndex As Integer, count As Integer) As StringBuilder
+    parameters:
+    - id: value
+      type: System.String
+      description: The string that contains the substring to append.
+    - id: startIndex
+      type: System.Int32
+      description: The starting position of the substring within *value*.
+    - id: count
+      type: System.Int32
+      description: The number of characters in *value* to append.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*value* is null, and *startIndex* and *count* are not zero.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* less than zero.-or- *startIndex* less than zero.-or- *startIndex* + *count* is greater than the length of *value*.-or- Enlarging the value of this instance would exceed @''System.Text.StringBuilder.MaxCapacity''.'
+- uid: System.Text.StringBuilder.AppendLine
+  id: AppendLine
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: AppendLine()
+  fullName: System.Text.StringBuilder.AppendLine()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 733
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Appends the default line terminator to the end of the current @'System.Text.StringBuilder' object.
+  syntax:
+    content: public StringBuilder AppendLine()
+    content.vb: Public Function AppendLine As StringBuilder
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: Enlarging the value of this instance would exceed @'System.Text.StringBuilder.MaxCapacity'.
+- uid: System.Text.StringBuilder.AppendLine(System.String)
+  id: AppendLine(System.String)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: AppendLine(String)
+  fullName: System.Text.StringBuilder.AppendLine(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 739
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Appends a copy of the specified string followed by the default line terminator to the end of the current @'System.Text.StringBuilder' object.
+  syntax:
+    content: public StringBuilder AppendLine(string value)
+    content.vb: Public Function AppendLine(value As String) As StringBuilder
+    parameters:
+    - id: value
+      type: System.String
+      description: The string to append.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: Enlarging the value of this instance would exceed @'System.Text.StringBuilder.MaxCapacity'.
+- uid: System.Text.StringBuilder.CopyTo(System.Int32,System.Char[],System.Int32,System.Int32)
+  id: CopyTo(System.Int32,System.Char[],System.Int32,System.Int32)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: CopyTo(Int32, Char[], Int32, Int32)
+  name.vb: CopyTo(Int32, Char(), Int32, Int32)
+  fullName: System.Text.StringBuilder.CopyTo(System.Int32, System.Char[], System.Int32, System.Int32)
+  fullName.vb: System.Text.StringBuilder.CopyTo(System.Int32, System.Char(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 746
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Copies the characters from a specified segment of this instance to a specified segment of a destination @'System.Char' array.
+  syntax:
+    content: public void CopyTo(int sourceIndex, char[] destination, int destinationIndex, int count)
+    content.vb: Public Sub CopyTo(sourceIndex As Integer, destination As Char(), destinationIndex As Integer, count As Integer)
+    parameters:
+    - id: sourceIndex
+      type: System.Int32
+      description: The starting position in this instance where characters will be copied from. The index is zero-based.
+    - id: destination
+      type: System.Char[]
+      description: The array where characters will be copied.
+    - id: destinationIndex
+      type: System.Int32
+      description: The starting position in *destination* where characters will be copied. The index is zero-based.
+    - id: count
+      type: System.Int32
+      description: The number of characters to be copied.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*destination* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*sourceIndex*, *destinationIndex*, or *count*, is less than zero.-or-*sourceIndex* is greater than the length of this instance.'
+  - type: System.ArgumentException
+    description: '*sourceIndex* + *count* is greater than the length of this instance.-or-*destinationIndex* + *count* is greater than the length of *destination*.'
+- uid: System.Text.StringBuilder.Insert(System.Int32,System.String,System.Int32)
+  id: Insert(System.Int32,System.String,System.Int32)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Insert(Int32, String, Int32)
+  fullName: System.Text.StringBuilder.Insert(System.Int32, System.String, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 811
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Inserts one or more copies of a specified string into this instance at the specified character position.
+  syntax:
+    content: public StringBuilder Insert(int index, string value, int count)
+    content.vb: Public Function Insert(index As Integer, value As String, count As Integer) As StringBuilder
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The position in this instance where insertion begins.
+    - id: value
+      type: System.String
+      description: The string to insert.
+    - id: count
+      type: System.Int32
+      description: The number of times to insert *value*.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero or greater than the current length of this instance.-or- *count* is less than zero.'
+  - type: System.OutOfMemoryException
+    description: The current length of this @'System.Text.StringBuilder' object plus the length of *value* times *count* exceeds @'System.Text.StringBuilder.MaxCapacity'.
+- uid: System.Text.StringBuilder.Remove(System.Int32,System.Int32)
+  id: Remove(System.Int32,System.Int32)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Remove(Int32, Int32)
+  fullName: System.Text.StringBuilder.Remove(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 857
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Removes the specified range of characters from this instance.
+  syntax:
+    content: public StringBuilder Remove(int startIndex, int length)
+    content.vb: Public Function Remove(startIndex As Integer, length As Integer) As StringBuilder
+    parameters:
+    - id: startIndex
+      type: System.Int32
+      description: The zero-based position in this instance where removal begins.
+    - id: length
+      type: System.Int32
+      description: The number of characters to remove.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: If *startIndex* or *length* is less than zero, or *startIndex* + *length* is greater than the length of this instance.
+- uid: System.Text.StringBuilder.Append(System.Boolean)
+  id: Append(System.Boolean)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Append(Boolean)
+  fullName: System.Text.StringBuilder.Append(System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 897
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Appends the string representation of a specified Boolean value to this instance.
+  syntax:
+    content: public StringBuilder Append(bool value)
+    content.vb: Public Function Append(value As Boolean) As StringBuilder
+    parameters:
+    - id: value
+      type: System.Boolean
+      description: The Boolean value to append.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: Enlarging the value of this instance would exceed @'System.Text.StringBuilder.MaxCapacity'.
+- uid: System.Text.StringBuilder.Append(System.SByte)
+  id: Append(System.SByte)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Append(SByte)
+  fullName: System.Text.StringBuilder.Append(System.SByte)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 904
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Appends the string representation of a specified 8-bit signed integer to this instance.
+  syntax:
+    content: public StringBuilder Append(sbyte value)
+    content.vb: Public Function Append(value As SByte) As StringBuilder
+    parameters:
+    - id: value
+      type: System.SByte
+      description: The value to append.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: Enlarging the value of this instance would exceed @'System.Text.StringBuilder.MaxCapacity'.
+- uid: System.Text.StringBuilder.Append(System.Byte)
+  id: Append(System.Byte)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Append(Byte)
+  fullName: System.Text.StringBuilder.Append(System.Byte)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 912
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Appends the string representation of a specified 8-bit unsigned integer to this instance.
+  syntax:
+    content: public StringBuilder Append(byte value)
+    content.vb: Public Function Append(value As Byte) As StringBuilder
+    parameters:
+    - id: value
+      type: System.Byte
+      description: The value to append.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: Enlarging the value of this instance would exceed @'System.Text.StringBuilder.MaxCapacity'.
+- uid: System.Text.StringBuilder.Append(System.Char)
+  id: Append(System.Char)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Append(Char)
+  fullName: System.Text.StringBuilder.Append(System.Char)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 918
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Appends the string representation of a specified Unicode character to this instance.
+  syntax:
+    content: public StringBuilder Append(char value)
+    content.vb: Public Function Append(value As Char) As StringBuilder
+    parameters:
+    - id: value
+      type: System.Char
+      description: The Unicode character to append.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: Enlarging the value of this instance would exceed @'System.Text.StringBuilder.MaxCapacity'.
+- uid: System.Text.StringBuilder.Append(System.Int16)
+  id: Append(System.Int16)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Append(Int16)
+  fullName: System.Text.StringBuilder.Append(System.Int16)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 930
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Appends the string representation of a specified 16-bit signed integer to this instance.
+  syntax:
+    content: public StringBuilder Append(short value)
+    content.vb: Public Function Append(value As Short) As StringBuilder
+    parameters:
+    - id: value
+      type: System.Int16
+      description: The value to append.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: Enlarging the value of this instance would exceed @'System.Text.StringBuilder.MaxCapacity'.
+- uid: System.Text.StringBuilder.Append(System.Int32)
+  id: Append(System.Int32)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Append(Int32)
+  fullName: System.Text.StringBuilder.Append(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 937
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Appends the string representation of a specified 32-bit signed integer to this instance.
+  syntax:
+    content: public StringBuilder Append(int value)
+    content.vb: Public Function Append(value As Integer) As StringBuilder
+    parameters:
+    - id: value
+      type: System.Int32
+      description: The value to append.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: Enlarging the value of this instance would exceed @'System.Text.StringBuilder.MaxCapacity'.
+- uid: System.Text.StringBuilder.Append(System.Int64)
+  id: Append(System.Int64)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Append(Int64)
+  fullName: System.Text.StringBuilder.Append(System.Int64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 944
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Appends the string representation of a specified 64-bit signed integer to this instance.
+  syntax:
+    content: public StringBuilder Append(long value)
+    content.vb: Public Function Append(value As Long) As StringBuilder
+    parameters:
+    - id: value
+      type: System.Int64
+      description: The value to append.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: Enlarging the value of this instance would exceed @'System.Text.StringBuilder.MaxCapacity'.
+- uid: System.Text.StringBuilder.Append(System.Single)
+  id: Append(System.Single)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Append(Single)
+  fullName: System.Text.StringBuilder.Append(System.Single)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 951
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Appends the string representation of a specified single-precision floating-point number to this instance.
+  syntax:
+    content: public StringBuilder Append(float value)
+    content.vb: Public Function Append(value As Single) As StringBuilder
+    parameters:
+    - id: value
+      type: System.Single
+      description: The value to append.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: Enlarging the value of this instance would exceed @'System.Text.StringBuilder.MaxCapacity'.
+- uid: System.Text.StringBuilder.Append(System.Double)
+  id: Append(System.Double)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Append(Double)
+  fullName: System.Text.StringBuilder.Append(System.Double)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 958
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Appends the string representation of a specified double-precision floating-point number to this instance.
+  syntax:
+    content: public StringBuilder Append(double value)
+    content.vb: Public Function Append(value As Double) As StringBuilder
+    parameters:
+    - id: value
+      type: System.Double
+      description: The value to append.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: Enlarging the value of this instance would exceed @'System.Text.StringBuilder.MaxCapacity'.
+- uid: System.Text.StringBuilder.Append(System.Decimal)
+  id: Append(System.Decimal)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Append(Decimal)
+  fullName: System.Text.StringBuilder.Append(System.Decimal)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 963
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Appends the string representation of a specified decimal number to this instance.
+  syntax:
+    content: public StringBuilder Append(decimal value)
+    content.vb: Public Function Append(value As Decimal) As StringBuilder
+    parameters:
+    - id: value
+      type: System.Decimal
+      description: The value to append.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: Enlarging the value of this instance would exceed @'System.Text.StringBuilder.MaxCapacity'.
+- uid: System.Text.StringBuilder.Append(System.UInt16)
+  id: Append(System.UInt16)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Append(UInt16)
+  fullName: System.Text.StringBuilder.Append(System.UInt16)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 970
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Appends the string representation of a specified 16-bit unsigned integer to this instance.
+  syntax:
+    content: public StringBuilder Append(ushort value)
+    content.vb: Public Function Append(value As UShort) As StringBuilder
+    parameters:
+    - id: value
+      type: System.UInt16
+      description: The value to append.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: Enlarging the value of this instance would exceed @'System.Text.StringBuilder.MaxCapacity'.
+- uid: System.Text.StringBuilder.Append(System.UInt32)
+  id: Append(System.UInt32)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Append(UInt32)
+  fullName: System.Text.StringBuilder.Append(System.UInt32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 978
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Appends the string representation of a specified 32-bit unsigned integer to this instance.
+  syntax:
+    content: public StringBuilder Append(uint value)
+    content.vb: Public Function Append(value As UInteger) As StringBuilder
+    parameters:
+    - id: value
+      type: System.UInt32
+      description: The value to append.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: Enlarging the value of this instance would exceed @'System.Text.StringBuilder.MaxCapacity'.
+- uid: System.Text.StringBuilder.Append(System.UInt64)
+  id: Append(System.UInt64)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Append(UInt64)
+  fullName: System.Text.StringBuilder.Append(System.UInt64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 986
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Appends the string representation of a specified 64-bit unsigned integer to this instance.
+  syntax:
+    content: public StringBuilder Append(ulong value)
+    content.vb: Public Function Append(value As ULong) As StringBuilder
+    parameters:
+    - id: value
+      type: System.UInt64
+      description: The value to append.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: Enlarging the value of this instance would exceed @'System.Text.StringBuilder.MaxCapacity'.
+- uid: System.Text.StringBuilder.Append(System.Object)
+  id: Append(System.Object)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Append(Object)
+  fullName: System.Text.StringBuilder.Append(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 994
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Appends the string representation of a specified object to this instance.
+  syntax:
+    content: public StringBuilder Append(object value)
+    content.vb: Public Function Append(value As Object) As StringBuilder
+    parameters:
+    - id: value
+      type: System.Object
+      description: The object to append.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: Enlarging the value of this instance would exceed @'System.Text.StringBuilder.MaxCapacity'.
+- uid: System.Text.StringBuilder.Append(System.Char[])
+  id: Append(System.Char[])
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Append(Char[])
+  name.vb: Append(Char())
+  fullName: System.Text.StringBuilder.Append(System.Char[])
+  fullName.vb: System.Text.StringBuilder.Append(System.Char())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 1005
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Appends the string representation of the Unicode characters in a specified array to this instance.
+  syntax:
+    content: public StringBuilder Append(char[] value)
+    content.vb: Public Function Append(value As Char()) As StringBuilder
+    parameters:
+    - id: value
+      type: System.Char[]
+      description: The array of characters to append.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: Enlarging the value of this instance would exceed @'System.Text.StringBuilder.MaxCapacity'.
+- uid: System.Text.StringBuilder.Insert(System.Int32,System.String)
+  id: Insert(System.Int32,System.String)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Insert(Int32, String)
+  fullName: System.Text.StringBuilder.Insert(System.Int32, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 1028
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Inserts a string into this instance at the specified character position.
+  syntax:
+    content: public StringBuilder Insert(int index, string value)
+    content.vb: Public Function Insert(index As Integer, value As String) As StringBuilder
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The position in this instance where insertion begins.
+    - id: value
+      type: System.String
+      description: The string to insert.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero or greater than the current length of this instance. -or-The current length of this @''System.Text.StringBuilder'' object plus the length of *value* exceeds @''System.Text.StringBuilder.MaxCapacity''.'
+- uid: System.Text.StringBuilder.Insert(System.Int32,System.Boolean)
+  id: Insert(System.Int32,System.Boolean)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Insert(Int32, Boolean)
+  fullName: System.Text.StringBuilder.Insert(System.Int32, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 1051
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Inserts the string representation of a Boolean value into this instance at the specified character position.
+  syntax:
+    content: public StringBuilder Insert(int index, bool value)
+    content.vb: Public Function Insert(index As Integer, value As Boolean) As StringBuilder
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The position in this instance where insertion begins.
+    - id: value
+      type: System.Boolean
+      description: The value to insert.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero or greater than the length of this instance.'
+  - type: System.OutOfMemoryException
+    description: Enlarging the value of this instance would exceed @'System.Text.StringBuilder.MaxCapacity'.
+- uid: System.Text.StringBuilder.Insert(System.Int32,System.SByte)
+  id: Insert(System.Int32,System.SByte)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Insert(Int32, SByte)
+  fullName: System.Text.StringBuilder.Insert(System.Int32, System.SByte)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 1061
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Inserts the string representation of a specified 8-bit signed integer into this instance at the specified character position.
+  syntax:
+    content: public StringBuilder Insert(int index, sbyte value)
+    content.vb: Public Function Insert(index As Integer, value As SByte) As StringBuilder
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The position in this instance where insertion begins.
+    - id: value
+      type: System.SByte
+      description: The value to insert.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero or greater than the length of this instance.'
+  - type: System.OutOfMemoryException
+    description: Enlarging the value of this instance would exceed @'System.Text.StringBuilder.MaxCapacity'.
+- uid: System.Text.StringBuilder.Insert(System.Int32,System.Byte)
+  id: Insert(System.Int32,System.Byte)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Insert(Int32, Byte)
+  fullName: System.Text.StringBuilder.Insert(System.Int32, System.Byte)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 1072
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Inserts the string representation of a specified 8-bit unsigned integer into this instance at the specified character position.
+  syntax:
+    content: public StringBuilder Insert(int index, byte value)
+    content.vb: Public Function Insert(index As Integer, value As Byte) As StringBuilder
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The position in this instance where insertion begins.
+    - id: value
+      type: System.Byte
+      description: The value to insert.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero or greater than the length of this instance.'
+  - type: System.OutOfMemoryException
+    description: Enlarging the value of this instance would exceed @'System.Text.StringBuilder.MaxCapacity'.
+- uid: System.Text.StringBuilder.Insert(System.Int32,System.Int16)
+  id: Insert(System.Int32,System.Int16)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Insert(Int32, Int16)
+  fullName: System.Text.StringBuilder.Insert(System.Int32, System.Int16)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 1082
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Inserts the string representation of a specified 16-bit signed integer into this instance at the specified character position.
+  syntax:
+    content: public StringBuilder Insert(int index, short value)
+    content.vb: Public Function Insert(index As Integer, value As Short) As StringBuilder
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The position in this instance where insertion begins.
+    - id: value
+      type: System.Int16
+      description: The value to insert.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero or greater than the length of this instance.'
+  - type: System.OutOfMemoryException
+    description: Enlarging the value of this instance would exceed @'System.Text.StringBuilder.MaxCapacity'.
+- uid: System.Text.StringBuilder.Insert(System.Int32,System.Char)
+  id: Insert(System.Int32,System.Char)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Insert(Int32, Char)
+  fullName: System.Text.StringBuilder.Insert(System.Int32, System.Char)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 1091
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Inserts the string representation of a specified Unicode character into this instance at the specified character position.
+  syntax:
+    content: public StringBuilder Insert(int index, char value)
+    content.vb: Public Function Insert(index As Integer, value As Char) As StringBuilder
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The position in this instance where insertion begins.
+    - id: value
+      type: System.Char
+      description: The value to insert.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero or greater than the length of this instance.-or- Enlarging the value of this instance would exceed @''System.Text.StringBuilder.MaxCapacity''.'
+- uid: System.Text.StringBuilder.Insert(System.Int32,System.Char[])
+  id: Insert(System.Int32,System.Char[])
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Insert(Int32, Char[])
+  name.vb: Insert(Int32, Char())
+  fullName: System.Text.StringBuilder.Insert(System.Int32, System.Char[])
+  fullName.vb: System.Text.StringBuilder.Insert(System.Int32, System.Char())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 1106
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Inserts the string representation of a specified array of Unicode characters into this instance at the specified character position.
+  syntax:
+    content: public StringBuilder Insert(int index, char[] value)
+    content.vb: Public Function Insert(index As Integer, value As Char()) As StringBuilder
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The position in this instance where insertion begins.
+    - id: value
+      type: System.Char[]
+      description: The character array to insert.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero or greater than the length of this instance.-or- Enlarging the value of this instance would exceed @''System.Text.StringBuilder.MaxCapacity''.'
+- uid: System.Text.StringBuilder.Insert(System.Int32,System.Char[],System.Int32,System.Int32)
+  id: Insert(System.Int32,System.Char[],System.Int32,System.Int32)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Insert(Int32, Char[], Int32, Int32)
+  name.vb: Insert(Int32, Char(), Int32, Int32)
+  fullName: System.Text.StringBuilder.Insert(System.Int32, System.Char[], System.Int32, System.Int32)
+  fullName.vb: System.Text.StringBuilder.Insert(System.Int32, System.Char(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 1122
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Inserts the string representation of a specified subarray of Unicode characters into this instance at the specified character position.
+  syntax:
+    content: public StringBuilder Insert(int index, char[] value, int startIndex, int charCount)
+    content.vb: Public Function Insert(index As Integer, value As Char(), startIndex As Integer, charCount As Integer) As StringBuilder
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The position in this instance where insertion begins.
+    - id: value
+      type: System.Char[]
+      description: A character array.
+    - id: startIndex
+      type: System.Int32
+      description: The starting index within *value*.
+    - id: charCount
+      type: System.Int32
+      description: The number of characters to insert.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*value* is null, and *startIndex* and *charCount* are not zero.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index*, *startIndex*, or *charCount* is less than zero.-or- *index* is greater than the length of this instance.-or- *startIndex* plus *charCount* is not a position within *value*.-or- Enlarging the value of this instance would exceed @''System.Text.StringBuilder.MaxCapacity''.'
+- uid: System.Text.StringBuilder.Insert(System.Int32,System.Int32)
+  id: Insert(System.Int32,System.Int32)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Insert(Int32, Int32)
+  fullName: System.Text.StringBuilder.Insert(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 1168
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Inserts the string representation of a specified 32-bit signed integer into this instance at the specified character position.
+  syntax:
+    content: public StringBuilder Insert(int index, int value)
+    content.vb: Public Function Insert(index As Integer, value As Integer) As StringBuilder
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The position in this instance where insertion begins.
+    - id: value
+      type: System.Int32
+      description: The value to insert.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero or greater than the length of this instance.'
+  - type: System.OutOfMemoryException
+    description: Enlarging the value of this instance would exceed @'System.Text.StringBuilder.MaxCapacity'.
+- uid: System.Text.StringBuilder.Insert(System.Int32,System.Int64)
+  id: Insert(System.Int32,System.Int64)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Insert(Int32, Int64)
+  fullName: System.Text.StringBuilder.Insert(System.Int32, System.Int64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 1178
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Inserts the string representation of a 64-bit signed integer into this instance at the specified character position.
+  syntax:
+    content: public StringBuilder Insert(int index, long value)
+    content.vb: Public Function Insert(index As Integer, value As Long) As StringBuilder
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The position in this instance where insertion begins.
+    - id: value
+      type: System.Int64
+      description: The value to insert.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero or greater than the length of this instance.'
+  - type: System.OutOfMemoryException
+    description: Enlarging the value of this instance would exceed @'System.Text.StringBuilder.MaxCapacity'.
+- uid: System.Text.StringBuilder.Insert(System.Int32,System.Single)
+  id: Insert(System.Int32,System.Single)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Insert(Int32, Single)
+  fullName: System.Text.StringBuilder.Insert(System.Int32, System.Single)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 1188
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Inserts the string representation of a single-precision floating point number into this instance at the specified character position.
+  syntax:
+    content: public StringBuilder Insert(int index, float value)
+    content.vb: Public Function Insert(index As Integer, value As Single) As StringBuilder
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The position in this instance where insertion begins.
+    - id: value
+      type: System.Single
+      description: The value to insert.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero or greater than the length of this instance.'
+  - type: System.OutOfMemoryException
+    description: Enlarging the value of this instance would exceed @'System.Text.StringBuilder.MaxCapacity'.
+- uid: System.Text.StringBuilder.Insert(System.Int32,System.Double)
+  id: Insert(System.Int32,System.Double)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Insert(Int32, Double)
+  fullName: System.Text.StringBuilder.Insert(System.Int32, System.Double)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 1198
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Inserts the string representation of a double-precision floating-point number into this instance at the specified character position.
+  syntax:
+    content: public StringBuilder Insert(int index, double value)
+    content.vb: Public Function Insert(index As Integer, value As Double) As StringBuilder
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The position in this instance where insertion begins.
+    - id: value
+      type: System.Double
+      description: The value to insert.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero or greater than the length of this instance.'
+  - type: System.OutOfMemoryException
+    description: Enlarging the value of this instance would exceed @'System.Text.StringBuilder.MaxCapacity'.
+- uid: System.Text.StringBuilder.Insert(System.Int32,System.Decimal)
+  id: Insert(System.Int32,System.Decimal)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Insert(Int32, Decimal)
+  fullName: System.Text.StringBuilder.Insert(System.Int32, System.Decimal)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 1203
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Inserts the string representation of a decimal number into this instance at the specified character position.
+  syntax:
+    content: public StringBuilder Insert(int index, decimal value)
+    content.vb: Public Function Insert(index As Integer, value As Decimal) As StringBuilder
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The position in this instance where insertion begins.
+    - id: value
+      type: System.Decimal
+      description: The value to insert.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero or greater than the length of this instance.'
+  - type: System.OutOfMemoryException
+    description: Enlarging the value of this instance would exceed @'System.Text.StringBuilder.MaxCapacity'.
+- uid: System.Text.StringBuilder.Insert(System.Int32,System.UInt16)
+  id: Insert(System.Int32,System.UInt16)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Insert(Int32, UInt16)
+  fullName: System.Text.StringBuilder.Insert(System.Int32, System.UInt16)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 1212
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Inserts the string representation of a 16-bit unsigned integer into this instance at the specified character position.
+  syntax:
+    content: public StringBuilder Insert(int index, ushort value)
+    content.vb: Public Function Insert(index As Integer, value As UShort) As StringBuilder
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The position in this instance where insertion begins.
+    - id: value
+      type: System.UInt16
+      description: The value to insert.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero or greater than the length of this instance.'
+  - type: System.OutOfMemoryException
+    description: Enlarging the value of this instance would exceed @'System.Text.StringBuilder.MaxCapacity'.
+- uid: System.Text.StringBuilder.Insert(System.Int32,System.UInt32)
+  id: Insert(System.Int32,System.UInt32)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Insert(Int32, UInt32)
+  fullName: System.Text.StringBuilder.Insert(System.Int32, System.UInt32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 1222
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Inserts the string representation of a 32-bit unsigned integer into this instance at the specified character position.
+  syntax:
+    content: public StringBuilder Insert(int index, uint value)
+    content.vb: Public Function Insert(index As Integer, value As UInteger) As StringBuilder
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The position in this instance where insertion begins.
+    - id: value
+      type: System.UInt32
+      description: The value to insert.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero or greater than the length of this instance.'
+  - type: System.OutOfMemoryException
+    description: Enlarging the value of this instance would exceed @'System.Text.StringBuilder.MaxCapacity'.
+- uid: System.Text.StringBuilder.Insert(System.Int32,System.UInt64)
+  id: Insert(System.Int32,System.UInt64)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Insert(Int32, UInt64)
+  fullName: System.Text.StringBuilder.Insert(System.Int32, System.UInt64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 1232
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Inserts the string representation of a 64-bit unsigned integer into this instance at the specified character position.
+  syntax:
+    content: public StringBuilder Insert(int index, ulong value)
+    content.vb: Public Function Insert(index As Integer, value As ULong) As StringBuilder
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The position in this instance where insertion begins.
+    - id: value
+      type: System.UInt64
+      description: The value to insert.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero or greater than the length of this instance.'
+  - type: System.OutOfMemoryException
+    description: Enlarging the value of this instance would exceed @'System.Text.StringBuilder.MaxCapacity'.
+- uid: System.Text.StringBuilder.Insert(System.Int32,System.Object)
+  id: Insert(System.Int32,System.Object)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Insert(Int32, Object)
+  fullName: System.Text.StringBuilder.Insert(System.Int32, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 1243
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Inserts the string representation of an object into this instance at the specified character position.
+  syntax:
+    content: public StringBuilder Insert(int index, object value)
+    content.vb: Public Function Insert(index As Integer, value As Object) As StringBuilder
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The position in this instance where insertion begins.
+    - id: value
+      type: System.Object
+      description: The object to insert, or null.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero or greater than the length of this instance.'
+  - type: System.OutOfMemoryException
+    description: Enlarging the value of this instance would exceed @'System.Text.StringBuilder.MaxCapacity'.
+- uid: System.Text.StringBuilder.AppendFormat(System.String,System.Object)
+  id: AppendFormat(System.String,System.Object)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: AppendFormat(String, Object)
+  fullName: System.Text.StringBuilder.AppendFormat(System.String, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 1251
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Appends the string returned by processing a composite format string, which contains zero or more format items, to this instance. Each format item is replaced by the string representation of a single argument.
+  syntax:
+    content: public StringBuilder AppendFormat(string format, object arg0)
+    content.vb: Public Function AppendFormat(format As String, arg0 As Object) As StringBuilder
+    parameters:
+    - id: format
+      type: System.String
+      description: A composite format string (see Remarks).
+    - id: arg0
+      type: System.Object
+      description: An object to format.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*format* is null.'
+  - type: System.FormatException
+    description: '*format* is invalid. -or-The index of a format item is less than 0 (zero), or greater than or equal to 1.'
+  - type: System.ArgumentOutOfRangeException
+    description: The length of the expanded string would exceed @'System.Text.StringBuilder.MaxCapacity'.
+- uid: System.Text.StringBuilder.AppendFormat(System.String,System.Object,System.Object)
+  id: AppendFormat(System.String,System.Object,System.Object)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: AppendFormat(String, Object, Object)
+  fullName: System.Text.StringBuilder.AppendFormat(System.String, System.Object, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 1256
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Appends the string returned by processing a composite format string, which contains zero or more format items, to this instance. Each format item is replaced by the string representation of either of two arguments.
+  syntax:
+    content: public StringBuilder AppendFormat(string format, object arg0, object arg1)
+    content.vb: Public Function AppendFormat(format As String, arg0 As Object, arg1 As Object) As StringBuilder
+    parameters:
+    - id: format
+      type: System.String
+      description: A composite format string (see Remarks).
+    - id: arg0
+      type: System.Object
+      description: The first object to format.
+    - id: arg1
+      type: System.Object
+      description: The second object to format.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*format* is null.'
+  - type: System.FormatException
+    description: '*format* is invalid.-or-The index of a format item is less than 0 (zero), or greater than or equal to 2.'
+  - type: System.ArgumentOutOfRangeException
+    description: The length of the expanded string would exceed @'System.Text.StringBuilder.MaxCapacity'.
+- uid: System.Text.StringBuilder.AppendFormat(System.String,System.Object,System.Object,System.Object)
+  id: AppendFormat(System.String,System.Object,System.Object,System.Object)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: AppendFormat(String, Object, Object, Object)
+  fullName: System.Text.StringBuilder.AppendFormat(System.String, System.Object, System.Object, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 1261
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Appends the string returned by processing a composite format string, which contains zero or more format items, to this instance. Each format item is replaced by the string representation of either of three arguments.
+  syntax:
+    content: public StringBuilder AppendFormat(string format, object arg0, object arg1, object arg2)
+    content.vb: Public Function AppendFormat(format As String, arg0 As Object, arg1 As Object, arg2 As Object) As StringBuilder
+    parameters:
+    - id: format
+      type: System.String
+      description: A composite format string (see Remarks).
+    - id: arg0
+      type: System.Object
+      description: The first object to format.
+    - id: arg1
+      type: System.Object
+      description: The second object to format.
+    - id: arg2
+      type: System.Object
+      description: The third object to format.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*format* is null.'
+  - type: System.FormatException
+    description: '*format* is invalid.-or-The index of a format item is less than 0 (zero), or greater than or equal to 3.'
+  - type: System.ArgumentOutOfRangeException
+    description: The length of the expanded string would exceed @'System.Text.StringBuilder.MaxCapacity'.
+- uid: System.Text.StringBuilder.AppendFormat(System.String,System.Object[])
+  id: AppendFormat(System.String,System.Object[])
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: AppendFormat(String, Object[])
+  name.vb: AppendFormat(String, Object())
+  fullName: System.Text.StringBuilder.AppendFormat(System.String, System.Object[])
+  fullName.vb: System.Text.StringBuilder.AppendFormat(System.String, System.Object())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 1266
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Appends the string returned by processing a composite format string, which contains zero or more format items, to this instance. Each format item is replaced by the string representation of a corresponding argument in a parameter array.
+  syntax:
+    content: public StringBuilder AppendFormat(string format, params object[] args)
+    content.vb: Public Function AppendFormat(format As String, ParamArray args As Object()) As StringBuilder
+    parameters:
+    - id: format
+      type: System.String
+      description: A composite format string (see Remarks).
+    - id: args
+      type: System.Object[]
+      description: An array of objects to format.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*format* or *args* is null.'
+  - type: System.FormatException
+    description: '*format* is invalid. -or-The index of a format item is less than 0 (zero), or greater than or equal to the length of the *args* array.'
+  - type: System.ArgumentOutOfRangeException
+    description: The length of the expanded string would exceed @'System.Text.StringBuilder.MaxCapacity'.
+- uid: System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object)
+  id: AppendFormat(System.IFormatProvider,System.String,System.Object)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: AppendFormat(IFormatProvider, String, Object)
+  fullName: System.Text.StringBuilder.AppendFormat(System.IFormatProvider, System.String, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 1279
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Appends the string returned by processing a composite format string, which contains zero or more format items, to this instance. Each format item is replaced by the string representation of a single argument using a specified format provider.
+  syntax:
+    content: public StringBuilder AppendFormat(IFormatProvider provider, string format, object arg0)
+    content.vb: Public Function AppendFormat(provider As IFormatProvider, format As String, arg0 As Object) As StringBuilder
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: An object that supplies culture-specific formatting information.
+    - id: format
+      type: System.String
+      description: A composite format string (see Remarks).
+    - id: arg0
+      type: System.Object
+      description: The object to format.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*format* is null.'
+  - type: System.FormatException
+    description: '*format* is invalid. -or-The index of a format item is less than 0 (zero), or greater than or equal to one (1).'
+  - type: System.ArgumentOutOfRangeException
+    description: The length of the expanded string would exceed @'System.Text.StringBuilder.MaxCapacity'.
+- uid: System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object,System.Object)
+  id: AppendFormat(System.IFormatProvider,System.String,System.Object,System.Object)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: AppendFormat(IFormatProvider, String, Object, Object)
+  fullName: System.Text.StringBuilder.AppendFormat(System.IFormatProvider, System.String, System.Object, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 1284
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Appends the string returned by processing a composite format string, which contains zero or more format items, to this instance. Each format item is replaced by the string representation of either of two arguments using a specified format provider.
+  syntax:
+    content: public StringBuilder AppendFormat(IFormatProvider provider, string format, object arg0, object arg1)
+    content.vb: Public Function AppendFormat(provider As IFormatProvider, format As String, arg0 As Object, arg1 As Object) As StringBuilder
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: An object that supplies culture-specific formatting information.
+    - id: format
+      type: System.String
+      description: A composite format string (see Remarks).
+    - id: arg0
+      type: System.Object
+      description: The first object to format.
+    - id: arg1
+      type: System.Object
+      description: The second object to format.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*format* is null.'
+  - type: System.FormatException
+    description: '*format* is invalid. -or-The index of a format item is less than 0 (zero), or greater than or equal to 2 (two).'
+  - type: System.ArgumentOutOfRangeException
+    description: The length of the expanded string would exceed @'System.Text.StringBuilder.MaxCapacity'.
+- uid: System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object,System.Object,System.Object)
+  id: AppendFormat(System.IFormatProvider,System.String,System.Object,System.Object,System.Object)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: AppendFormat(IFormatProvider, String, Object, Object, Object)
+  fullName: System.Text.StringBuilder.AppendFormat(System.IFormatProvider, System.String, System.Object, System.Object, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 1289
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Appends the string returned by processing a composite format string, which contains zero or more format items, to this instance. Each format item is replaced by the string representation of either of three arguments using a specified format provider.
+  syntax:
+    content: public StringBuilder AppendFormat(IFormatProvider provider, string format, object arg0, object arg1, object arg2)
+    content.vb: Public Function AppendFormat(provider As IFormatProvider, format As String, arg0 As Object, arg1 As Object, arg2 As Object) As StringBuilder
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: An object that supplies culture-specific formatting information.
+    - id: format
+      type: System.String
+      description: A composite format string (see Remarks).
+    - id: arg0
+      type: System.Object
+      description: The first object to format.
+    - id: arg1
+      type: System.Object
+      description: The second object to format.
+    - id: arg2
+      type: System.Object
+      description: The third object to format.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*format* is null.'
+  - type: System.FormatException
+    description: '*format* is invalid. -or-The index of a format item is less than 0 (zero), or greater than or equal to 3 (three).'
+  - type: System.ArgumentOutOfRangeException
+    description: The length of the expanded string would exceed @'System.Text.StringBuilder.MaxCapacity'.
+- uid: System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object[])
+  id: AppendFormat(System.IFormatProvider,System.String,System.Object[])
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: AppendFormat(IFormatProvider, String, Object[])
+  name.vb: AppendFormat(IFormatProvider, String, Object())
+  fullName: System.Text.StringBuilder.AppendFormat(System.IFormatProvider, System.String, System.Object[])
+  fullName.vb: System.Text.StringBuilder.AppendFormat(System.IFormatProvider, System.String, System.Object())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 1294
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Appends the string returned by processing a composite format string, which contains zero or more format items, to this instance. Each format item is replaced by the string representation of a corresponding argument in a parameter array using a specified format provider.
+  syntax:
+    content: public StringBuilder AppendFormat(IFormatProvider provider, string format, params object[] args)
+    content.vb: Public Function AppendFormat(provider As IFormatProvider, format As String, ParamArray args As Object()) As StringBuilder
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: An object that supplies culture-specific formatting information.
+    - id: format
+      type: System.String
+      description: A composite format string (see Remarks).
+    - id: args
+      type: System.Object[]
+      description: An array of objects to format.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*format* is null.'
+  - type: System.FormatException
+    description: '*format* is invalid. -or-The index of a format item is less than 0 (zero), or greater than or equal to the length of the *args* array.'
+  - type: System.ArgumentOutOfRangeException
+    description: The length of the expanded string would exceed @'System.Text.StringBuilder.MaxCapacity'.
+- uid: System.Text.StringBuilder.Replace(System.String,System.String)
+  id: Replace(System.String,System.String)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Replace(String, String)
+  fullName: System.Text.StringBuilder.Replace(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 1470
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Replaces all occurrences of a specified string in this instance with another specified string.
+  syntax:
+    content: public StringBuilder Replace(string oldValue, string newValue)
+    content.vb: Public Function Replace(oldValue As String, newValue As String) As StringBuilder
+    parameters:
+    - id: oldValue
+      type: System.String
+      description: The string to replace.
+    - id: newValue
+      type: System.String
+      description: The string that replaces *oldValue*, or null.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*oldValue* is null.'
+  - type: System.ArgumentException
+    description: The length of *oldValue* is zero.
+  - type: System.ArgumentOutOfRangeException
+    description: Enlarging the value of this instance would exceed @'System.Text.StringBuilder.MaxCapacity'.
+- uid: System.Text.StringBuilder.Equals(System.Text.StringBuilder)
+  id: Equals(System.Text.StringBuilder)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Equals(StringBuilder)
+  fullName: System.Text.StringBuilder.Equals(System.Text.StringBuilder)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 1475
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Returns a value indicating whether this instance is equal to a specified object.
+  syntax:
+    content: public bool Equals(StringBuilder sb)
+    content.vb: Public Function Equals(sb As StringBuilder) As Boolean
+    parameters:
+    - id: sb
+      type: System.Text.StringBuilder
+      description: An object to compare with this instance, or null.
+    return:
+      type: System.Boolean
+- uid: System.Text.StringBuilder.Replace(System.String,System.String,System.Int32,System.Int32)
+  id: Replace(System.String,System.String,System.Int32,System.Int32)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Replace(String, String, Int32, Int32)
+  fullName: System.Text.StringBuilder.Replace(System.String, System.String, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 1520
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Replaces, within a substring of this instance, all occurrences of a specified string with another specified string.
+  syntax:
+    content: public StringBuilder Replace(string oldValue, string newValue, int startIndex, int count)
+    content.vb: Public Function Replace(oldValue As String, newValue As String, startIndex As Integer, count As Integer) As StringBuilder
+    parameters:
+    - id: oldValue
+      type: System.String
+      description: The string to replace.
+    - id: newValue
+      type: System.String
+      description: The string that replaces *oldValue*, or null.
+    - id: startIndex
+      type: System.Int32
+      description: The position in this instance where the substring begins.
+    - id: count
+      type: System.Int32
+      description: The length of the substring.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*oldValue* is null.'
+  - type: System.ArgumentException
+    description: The length of *oldValue* is zero.
+  - type: System.ArgumentOutOfRangeException
+    description: '*startIndex* or *count* is less than zero.-or- *startIndex* plus *count* indicates a character position not within this instance.-or- Enlarging the value of this instance would exceed @''System.Text.StringBuilder.MaxCapacity''.'
+- uid: System.Text.StringBuilder.Replace(System.Char,System.Char)
+  id: Replace(System.Char,System.Char)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Replace(Char, Char)
+  fullName: System.Text.StringBuilder.Replace(System.Char, System.Char)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 1605
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Replaces all occurrences of a specified character in this instance with another specified character.
+  syntax:
+    content: public StringBuilder Replace(char oldChar, char newChar)
+    content.vb: Public Function Replace(oldChar As Char, newChar As Char) As StringBuilder
+    parameters:
+    - id: oldChar
+      type: System.Char
+      description: The character to replace.
+    - id: newChar
+      type: System.Char
+      description: The character that replaces *oldChar*.
+    return:
+      type: System.Text.StringBuilder
+- uid: System.Text.StringBuilder.Replace(System.Char,System.Char,System.Int32,System.Int32)
+  id: Replace(System.Char,System.Char,System.Int32,System.Int32)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Replace(Char, Char, Int32, Int32)
+  fullName: System.Text.StringBuilder.Replace(System.Char, System.Char, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 1608
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Replaces, within a substring of this instance, all occurrences of a specified character with another specified character.
+  syntax:
+    content: public StringBuilder Replace(char oldChar, char newChar, int startIndex, int count)
+    content.vb: Public Function Replace(oldChar As Char, newChar As Char, startIndex As Integer, count As Integer) As StringBuilder
+    parameters:
+    - id: oldChar
+      type: System.Char
+      description: The character to replace.
+    - id: newChar
+      type: System.Char
+      description: The character that replaces *oldChar*.
+    - id: startIndex
+      type: System.Int32
+      description: The position in this instance where the substring begins.
+    - id: count
+      type: System.Int32
+      description: The length of the substring.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*startIndex* + *count* is greater than the length of the value of this instance.-or- *startIndex* or *count* is less than zero.'
+- uid: System.Text.StringBuilder.Append(System.Char*,System.Int32)
+  id: Append(System.Char*,System.Int32)
+  parent: System.Text.StringBuilder
+  href: System.Text.StringBuilder.yml
+  name: Append(Char*, Int32)
+  fullName: System.Text.StringBuilder.Append(System.Char*, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Text/StringBuilder.cs
+    startLine: 1647
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Appends an array of Unicode characters starting at a specified address to this instance.
+  syntax:
+    content: public StringBuilder Append(char *value, int valueCount)
+    content.vb: Public Function Append(value As Char *, valueCount As Integer) As StringBuilder
+    parameters:
+    - id: value
+      type: System.Char*
+      description: A pointer to an array of characters.
+    - id: valueCount
+      type: System.Int32
+      description: The number of characters in the array.
+    return:
+      type: System.Text.StringBuilder
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*valueCount* is less than zero. -or-Enlarging the value of this instance would exceed @''System.Text.StringBuilder.MaxCapacity''.'
+  - type: System.NullReferenceException
+    description: '*value* is a null pointer.'
+references:
+- uid: System.Text
+  isExternal: false
+  name: System.Text
+  fullName: System.Text
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Text.StringBuilder
+  parent: System.Text
+  isExternal: true
+  name: StringBuilder
+  fullName: System.Text.StringBuilder
+- uid: System.Char
+  parent: System
+  isExternal: true
+  name: Char
+  fullName: System.Char
+- uid: System.Char[]
+  isExternal: true
+  name: Char[]
+  name.vb: Char()
+  fullName: System.Char[]
+  fullName.vb: System.Char()
+  spec.csharp:
+  - uid: System.Char
+    name: Char
+    fullName: System.Char
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Char
+    name: Char
+    fullName: System.Char
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.SByte
+  parent: System
+  isExternal: true
+  name: SByte
+  fullName: System.SByte
+- uid: System.Byte
+  parent: System
+  isExternal: true
+  name: Byte
+  fullName: System.Byte
+- uid: System.Int16
+  parent: System
+  isExternal: true
+  name: Int16
+  fullName: System.Int16
+- uid: System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  fullName: System.Int64
+- uid: System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  fullName: System.Single
+- uid: System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  fullName: System.Double
+- uid: System.Decimal
+  parent: System
+  isExternal: true
+  name: Decimal
+  fullName: System.Decimal
+- uid: System.UInt16
+  parent: System
+  isExternal: true
+  name: UInt16
+  fullName: System.UInt16
+- uid: System.UInt32
+  parent: System
+  isExternal: true
+  name: UInt32
+  fullName: System.UInt32
+- uid: System.UInt64
+  parent: System
+  isExternal: true
+  name: UInt64
+  fullName: System.UInt64
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  name.vb: Object()
+  fullName: System.Object[]
+  fullName.vb: System.Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.IFormatProvider
+  parent: System
+  isExternal: true
+  name: IFormatProvider
+  fullName: System.IFormatProvider
+- uid: System.Char*
+  isExternal: true
+  name: Char*
+  fullName: System.Char*
+  spec.csharp:
+  - uid: System.Char
+    name: Char
+    fullName: System.Char
+    isExternal: true
+  - name: '*'
+    fullName: '*'
+  spec.vb:
+  - uid: System.Char
+    name: Char
+    fullName: System.Char
+    isExternal: true
+  - name: '*'
+    fullName: '*'

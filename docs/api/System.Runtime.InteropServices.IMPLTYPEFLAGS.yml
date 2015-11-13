@@ -1,0 +1,101 @@
+items:
+- uid: System.Runtime.InteropServices.IMPLTYPEFLAGS
+  id: IMPLTYPEFLAGS
+  parent: System.Runtime.InteropServices
+  children:
+  - System.Runtime.InteropServices.IMPLTYPEFLAGS.IMPLTYPEFLAG_FDEFAULT
+  - System.Runtime.InteropServices.IMPLTYPEFLAGS.IMPLTYPEFLAG_FDEFAULTVTABLE
+  - System.Runtime.InteropServices.IMPLTYPEFLAGS.IMPLTYPEFLAG_FRESTRICTED
+  - System.Runtime.InteropServices.IMPLTYPEFLAGS.IMPLTYPEFLAG_FSOURCE
+  href: System.Runtime.InteropServices.IMPLTYPEFLAGS.yml
+  name: IMPLTYPEFLAGS
+  fullName: System.Runtime.InteropServices.IMPLTYPEFLAGS
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeInfo.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeInfo.cs
+    startLine: 53
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Use @'System.Runtime.InteropServices.ComTypes.IMPLTYPEFLAGS' instead.
+  syntax:
+    content: public enum IMPLTYPEFLAGS
+    content.vb: Public Enum IMPLTYPEFLAGS
+- uid: System.Runtime.InteropServices.IMPLTYPEFLAGS.IMPLTYPEFLAG_FDEFAULT
+  id: IMPLTYPEFLAG_FDEFAULT
+  parent: System.Runtime.InteropServices.IMPLTYPEFLAGS
+  href: System.Runtime.InteropServices.IMPLTYPEFLAGS.yml
+  name: IMPLTYPEFLAG_FDEFAULT
+  fullName: System.Runtime.InteropServices.IMPLTYPEFLAGS.IMPLTYPEFLAG_FDEFAULT
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeInfo.cs
+    startLine: 58
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: The interface or dispinterface represents the default for the source or sink.
+  syntax:
+    content: IMPLTYPEFLAG_FDEFAULT = 1
+- uid: System.Runtime.InteropServices.IMPLTYPEFLAGS.IMPLTYPEFLAG_FSOURCE
+  id: IMPLTYPEFLAG_FSOURCE
+  parent: System.Runtime.InteropServices.IMPLTYPEFLAGS
+  href: System.Runtime.InteropServices.IMPLTYPEFLAGS.yml
+  name: IMPLTYPEFLAG_FSOURCE
+  fullName: System.Runtime.InteropServices.IMPLTYPEFLAGS.IMPLTYPEFLAG_FSOURCE
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeInfo.cs
+    startLine: 59
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: This member of a coclass is called rather than implemented.
+  syntax:
+    content: IMPLTYPEFLAG_FSOURCE = 2
+- uid: System.Runtime.InteropServices.IMPLTYPEFLAGS.IMPLTYPEFLAG_FRESTRICTED
+  id: IMPLTYPEFLAG_FRESTRICTED
+  parent: System.Runtime.InteropServices.IMPLTYPEFLAGS
+  href: System.Runtime.InteropServices.IMPLTYPEFLAGS.yml
+  name: IMPLTYPEFLAG_FRESTRICTED
+  fullName: System.Runtime.InteropServices.IMPLTYPEFLAGS.IMPLTYPEFLAG_FRESTRICTED
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeInfo.cs
+    startLine: 60
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: The member should not be displayed or programmable by users.
+  syntax:
+    content: IMPLTYPEFLAG_FRESTRICTED = 4
+- uid: System.Runtime.InteropServices.IMPLTYPEFLAGS.IMPLTYPEFLAG_FDEFAULTVTABLE
+  id: IMPLTYPEFLAG_FDEFAULTVTABLE
+  parent: System.Runtime.InteropServices.IMPLTYPEFLAGS
+  href: System.Runtime.InteropServices.IMPLTYPEFLAGS.yml
+  name: IMPLTYPEFLAG_FDEFAULTVTABLE
+  fullName: System.Runtime.InteropServices.IMPLTYPEFLAGS.IMPLTYPEFLAG_FDEFAULTVTABLE
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMITypeInfo.cs
+    startLine: 61
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Sinks receive events through the virtual function table (VTBL).
+  syntax:
+    content: IMPLTYPEFLAG_FDEFAULTVTABLE = 8
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace

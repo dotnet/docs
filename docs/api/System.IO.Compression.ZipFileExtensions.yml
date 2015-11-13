@@ -1,0 +1,662 @@
+items:
+- uid: System.IO.Compression.ZipFileExtensions
+  id: ZipFileExtensions
+  parent: System.IO.Compression
+  children:
+  - System.IO.Compression.ZipFileExtensions.CreateEntryFromFile(ZipArchive,System.String,System.String)
+  - System.IO.Compression.ZipFileExtensions.CreateEntryFromFile(ZipArchive,System.String,System.String,CompressionLevel)
+  - System.IO.Compression.ZipFileExtensions.ExtractToDirectory(ZipArchive,System.String)
+  - System.IO.Compression.ZipFileExtensions.ExtractToFile(ZipArchiveEntry,System.String)
+  - System.IO.Compression.ZipFileExtensions.ExtractToFile(ZipArchiveEntry,System.String,System.Boolean)
+  href: System.IO.Compression.ZipFileExtensions.yml
+  name: ZipFileExtensions
+  fullName: System.IO.Compression.ZipFileExtensions
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.IO.Compression.ZipFile/src/System/IO/Compression/ZipFileExtensions.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.IO.Compression.ZipFile/src/System/IO/Compression/ZipFileExtensions.cs
+    startLine: 8
+  assemblies:
+  - System.IO.Compression.ZipFile
+  namespace: System.IO.Compression
+  summary: Provides extension methods for the @'System.IO.Compression.ZipArchive' and @'System.IO.Compression.ZipArchiveEntry' classes.
+  syntax:
+    content: public class ZipFileExtensions
+    content.vb: Public Class ZipFileExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.IO.Compression.ZipFileExtensions.CreateEntryFromFile(ZipArchive,System.String,System.String)
+  id: CreateEntryFromFile(ZipArchive,System.String,System.String)
+  parent: System.IO.Compression.ZipFileExtensions
+  href: System.IO.Compression.ZipFileExtensions.yml
+  name: CreateEntryFromFile(ZipArchive, String, String)
+  fullName: System.IO.Compression.ZipFileExtensions.CreateEntryFromFile(ZipArchive, System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.Compression.ZipFile/src/System/IO/Compression/ZipFileExtensions.cs
+    startLine: 46
+  assemblies:
+  - System.IO.Compression.ZipFile
+  namespace: System.IO.Compression
+  summary: >-
+    <p>Adds a file from the file system to the archive under the specified entry name.
+
+    The new entry in the archive will contain the contents of the file.
+
+    The last write time of the archive entry is set to the last write time of the file on the file system.
+
+    If an entry with the specified name already exists in the archive, a second entry will be created that has an identical name.
+
+    If the specified source file has an invalid last modified time, the first datetime representable in the Zip timestamp format
+
+    (midnight on January 1, 1980) will be used.</p>
+
+    <p>If an entry with the specified name already exists in the archive, a second entry will be created that has an identical name.</p>
+
+    <p>Since no <code>CompressionLevel</code> is specified, the default provided by the implementation of the underlying compression
+
+    algorithm will be used; the <code>ZipArchive</code> will not impose its own default.
+
+    (Currently, the underlying compression algorithm is provided by the <code>System.IO.Compression.DeflateStream</code> class.)</p>
+  syntax:
+    content: public static ZipArchiveEntry CreateEntryFromFile(ZipArchive destination, string sourceFileName, string entryName)
+    content.vb: Public Shared Function CreateEntryFromFile(destination As ZipArchive, sourceFileName As String, entryName As String) As ZipArchiveEntry
+    parameters:
+    - id: destination
+      type: ZipArchive
+    - id: sourceFileName
+      type: System.String
+      description: >-
+        The path to the file on the file system to be copied from. The path is permitted to specify
+
+        relative or absolute path information. Relative path information is interpreted as relative to the current working directory.
+    - id: entryName
+      type: System.String
+      description: The name of the entry to be created.
+    return:
+      type: ZipArchiveEntry
+      description: A wrapper for the newly created entry.
+  exceptions:
+  - type: System.ArgumentException
+    description: >-
+      sourceFileName is a zero-length string, contains only white space, or contains one or more
+
+      invalid characters as defined by InvalidPathChars. -or- entryName is a zero-length string.
+  - type: System.ArgumentNullException
+    description: sourceFileName or entryName is null.
+  - type: System.IO.PathTooLongException
+    description: >-
+      In sourceFileName, the specified path, file name, or both exceed the system-defined maximum length.
+
+      For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.IO.DirectoryNotFoundException
+    description: The specified sourceFileName is invalid, (for example, it is on an unmapped drive).
+  - type: System.IO.IOException
+    description: An I/O error occurred while opening the file specified by sourceFileName.
+  - type: System.UnauthorizedAccessException
+    description: >-
+      sourceFileName specified a directory. -or- The caller does not have the
+
+      required permission.
+  - type: System.IO.FileNotFoundException
+    description: The file specified in sourceFileName was not found.
+  - type: System.NotSupportedException
+    description: sourceFileName is in an invalid format or the ZipArchive does not support writing.
+  - type: System.ObjectDisposedException
+    description: The ZipArchive has already been closed.
+- uid: System.IO.Compression.ZipFileExtensions.CreateEntryFromFile(ZipArchive,System.String,System.String,CompressionLevel)
+  id: CreateEntryFromFile(ZipArchive,System.String,System.String,CompressionLevel)
+  parent: System.IO.Compression.ZipFileExtensions
+  href: System.IO.Compression.ZipFileExtensions.yml
+  name: CreateEntryFromFile(ZipArchive, String, String, CompressionLevel)
+  fullName: System.IO.Compression.ZipFileExtensions.CreateEntryFromFile(ZipArchive, System.String, System.String, CompressionLevel)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.Compression.ZipFile/src/System/IO/Compression/ZipFileExtensions.cs
+    startLine: 82
+  assemblies:
+  - System.IO.Compression.ZipFile
+  namespace: System.IO.Compression
+  summary: >-
+    <p>Adds a file from the file system to the archive under the specified entry name.
+
+    The new entry in the archive will contain the contents of the file.
+
+    The last write time of the archive entry is set to the last write time of the file on the file system.
+
+    If an entry with the specified name already exists in the archive, a second entry will be created that has an identical name.
+
+    If the specified source file has an invalid last modified time, the first datetime representable in the Zip timestamp format
+
+    (midnight on January 1, 1980) will be used.</p>
+
+    <p>If an entry with the specified name already exists in the archive, a second entry will be created that has an identical name.</p>
+  syntax:
+    content: public static ZipArchiveEntry CreateEntryFromFile(ZipArchive destination, string sourceFileName, string entryName, CompressionLevel compressionLevel)
+    content.vb: Public Shared Function CreateEntryFromFile(destination As ZipArchive, sourceFileName As String, entryName As String, compressionLevel As CompressionLevel) As ZipArchiveEntry
+    parameters:
+    - id: destination
+      type: ZipArchive
+    - id: sourceFileName
+      type: System.String
+      description: >-
+        The path to the file on the file system to be copied from. The path is permitted to specify relative
+
+        or absolute path information. Relative path information is interpreted as relative to the current working directory.
+    - id: entryName
+      type: System.String
+      description: The name of the entry to be created.
+    - id: compressionLevel
+      type: CompressionLevel
+      description: The level of the compression (speed/memory vs. compressed size trade-off).
+    return:
+      type: ZipArchiveEntry
+      description: A wrapper for the newly created entry.
+  exceptions:
+  - type: System.ArgumentException
+    description: >-
+      sourceFileName is a zero-length string, contains only white space, or contains one or more
+
+      invalid characters as defined by InvalidPathChars. -or- entryName is a zero-length string.
+  - type: System.ArgumentNullException
+    description: sourceFileName or entryName is null.
+  - type: System.IO.PathTooLongException
+    description: >-
+      In sourceFileName, the specified path, file name, or both exceed the system-defined maximum length.
+
+      For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.IO.DirectoryNotFoundException
+    description: The specified sourceFileName is invalid, (for example, it is on an unmapped drive).
+  - type: System.IO.IOException
+    description: An I/O error occurred while opening the file specified by sourceFileName.
+  - type: System.UnauthorizedAccessException
+    description: >-
+      sourceFileName specified a directory.
+
+      -or- The caller does not have the required permission.
+  - type: System.IO.FileNotFoundException
+    description: The file specified in sourceFileName was not found.
+  - type: System.NotSupportedException
+    description: sourceFileName is in an invalid format or the ZipArchive does not support writing.
+  - type: System.ObjectDisposedException
+    description: The ZipArchive has already been closed.
+- uid: System.IO.Compression.ZipFileExtensions.ExtractToDirectory(ZipArchive,System.String)
+  id: ExtractToDirectory(ZipArchive,System.String)
+  parent: System.IO.Compression.ZipFileExtensions
+  href: System.IO.Compression.ZipFileExtensions.yml
+  name: ExtractToDirectory(ZipArchive, String)
+  fullName: System.IO.Compression.ZipFileExtensions.ExtractToDirectory(ZipArchive, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.Compression.ZipFile/src/System/IO/Compression/ZipFileExtensions.cs
+    startLine: 122
+  assemblies:
+  - System.IO.Compression.ZipFile
+  namespace: System.IO.Compression
+  summary: >-
+    Extracts all of the files in the archive to a directory on the file system. The specified directory may already exist.
+
+    This method will create all subdirectories and the specified directory if necessary.
+
+    If there is an error while extracting the archive, the archive will remain partially extracted.
+
+    Each entry will be extracted such that the extracted file has the same relative path to destinationDirectoryName as the
+
+    entry has to the root of the archive. If a file to be archived has an invalid last modified time, the first datetime
+
+    representable in the Zip timestamp format (midnight on January 1, 1980) will be used.
+  syntax:
+    content: public static void ExtractToDirectory(ZipArchive source, string destinationDirectoryName)
+    content.vb: Public Shared Sub ExtractToDirectory(source As ZipArchive, destinationDirectoryName As String)
+    parameters:
+    - id: source
+      type: ZipArchive
+    - id: destinationDirectoryName
+      type: System.String
+      description: >-
+        The path to the directory on the file system.
+
+        The directory specified must not exist. The path is permitted to specify relative or absolute path information.
+
+        Relative path information is interpreted as relative to the current working directory.
+  exceptions:
+  - type: System.ArgumentException
+    description: >-
+      destinationDirectoryName is a zero-length string, contains only white space,
+
+      or contains one or more invalid characters as defined by InvalidPathChars.
+  - type: System.ArgumentNullException
+    description: destinationDirectoryName is null.
+  - type: System.IO.PathTooLongException
+    description: >-
+      The specified path, file name, or both exceed the system-defined maximum length.
+
+      For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.IO.DirectoryNotFoundException
+    description: The specified path is invalid, (for example, it is on an unmapped drive).
+  - type: System.IO.IOException
+    description: "An archive entry’s name is zero-length, contains only white space, or contains one or more invalid\r\ncharacters as defined by InvalidPathChars. -or- Extracting an archive entry would have resulted in a destination\r\nfile that is outside destinationDirectoryName (for example, if the entry name contains parent directory accessors).\r\n-or- An archive entry has the same name as an already extracted entry from the same archive."
+  - type: System.UnauthorizedAccessException
+    description: The caller does not have the required permission.
+  - type: System.NotSupportedException
+    description: destinationDirectoryName is in an invalid format.
+- uid: System.IO.Compression.ZipFileExtensions.ExtractToFile(ZipArchiveEntry,System.String)
+  id: ExtractToFile(ZipArchiveEntry,System.String)
+  parent: System.IO.Compression.ZipFileExtensions
+  href: System.IO.Compression.ZipFileExtensions.yml
+  name: ExtractToFile(ZipArchiveEntry, String)
+  fullName: System.IO.Compression.ZipFileExtensions.ExtractToFile(ZipArchiveEntry, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.Compression.ZipFile/src/System/IO/Compression/ZipFileExtensions.cs
+    startLine: 237
+  assemblies:
+  - System.IO.Compression.ZipFile
+  namespace: System.IO.Compression
+  summary: "Creates a file on the file system with the entry’s contents and the specified name. The last write time of the file is set to the\r\nentry’s last write time. This method does not allow overwriting of an existing file with the same name. Attempting to extract explicit\r\ndirectories (entries with names that end in directory separator characters) will not result in the creation of a directory."
+  syntax:
+    content: public static void ExtractToFile(ZipArchiveEntry source, string destinationFileName)
+    content.vb: Public Shared Sub ExtractToFile(source As ZipArchiveEntry, destinationFileName As String)
+    parameters:
+    - id: source
+      type: ZipArchiveEntry
+    - id: destinationFileName
+      type: System.String
+      description: >-
+        The name of the file that will hold the contents of the entry.
+
+        The path is permitted to specify relative or absolute path information.
+
+        Relative path information is interpreted as relative to the current working directory.
+  exceptions:
+  - type: System.UnauthorizedAccessException
+    description: The caller does not have the required permission.
+  - type: System.ArgumentException
+    description: >-
+      destinationFileName is a zero-length string, contains only white space, or contains one or more
+
+      invalid characters as defined by InvalidPathChars. -or- destinationFileName specifies a directory.
+  - type: System.ArgumentNullException
+    description: destinationFileName is null.
+  - type: System.IO.PathTooLongException
+    description: >-
+      The specified path, file name, or both exceed the system-defined maximum length.
+
+      For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.IO.DirectoryNotFoundException
+    description: >-
+      The path specified in destinationFileName is invalid (for example, it is on
+
+      an unmapped drive).
+  - type: System.IO.IOException
+    description: >-
+      destinationFileName already exists.
+
+      -or- An I/O error has occurred. -or- The entry is currently open for writing.
+
+      -or- The entry has been deleted from the archive.
+  - type: System.NotSupportedException
+    description: >-
+      destinationFileName is in an invalid format
+
+      -or- The ZipArchive that this entry belongs to was opened in a write-only mode.
+  - type: System.ObjectDisposedException
+    description: The ZipArchive that this entry belongs to has been disposed.
+- uid: System.IO.Compression.ZipFileExtensions.ExtractToFile(ZipArchiveEntry,System.String,System.Boolean)
+  id: ExtractToFile(ZipArchiveEntry,System.String,System.Boolean)
+  parent: System.IO.Compression.ZipFileExtensions
+  href: System.IO.Compression.ZipFileExtensions.yml
+  name: ExtractToFile(ZipArchiveEntry, String, Boolean)
+  fullName: System.IO.Compression.ZipFileExtensions.ExtractToFile(ZipArchiveEntry, System.String, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.Compression.ZipFile/src/System/IO/Compression/ZipFileExtensions.cs
+    startLine: 270
+  assemblies:
+  - System.IO.Compression.ZipFile
+  namespace: System.IO.Compression
+  summary: "Creates a file on the file system with the entry’s contents and the specified name.\r\nThe last write time of the file is set to the entry’s last write time.\r\nThis method does allows overwriting of an existing file with the same name."
+  syntax:
+    content: public static void ExtractToFile(ZipArchiveEntry source, string destinationFileName, bool overwrite)
+    content.vb: Public Shared Sub ExtractToFile(source As ZipArchiveEntry, destinationFileName As String, overwrite As Boolean)
+    parameters:
+    - id: source
+      type: ZipArchiveEntry
+    - id: destinationFileName
+      type: System.String
+      description: >-
+        The name of the file that will hold the contents of the entry.
+
+        The path is permitted to specify relative or absolute path information.
+
+        Relative path information is interpreted as relative to the current working directory.
+    - id: overwrite
+      type: System.Boolean
+      description: True to indicate overwrite.
+  exceptions:
+  - type: System.UnauthorizedAccessException
+    description: The caller does not have the required permission.
+  - type: System.ArgumentException
+    description: >-
+      destinationFileName is a zero-length string, contains only white space,
+
+      or contains one or more invalid characters as defined by InvalidPathChars. -or- destinationFileName specifies a directory.
+  - type: System.ArgumentNullException
+    description: destinationFileName is null.
+  - type: System.IO.PathTooLongException
+    description: >-
+      The specified path, file name, or both exceed the system-defined maximum length.
+
+      For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.
+  - type: System.IO.DirectoryNotFoundException
+    description: >-
+      The path specified in destinationFileName is invalid
+
+      (for example, it is on an unmapped drive).
+  - type: System.IO.IOException
+    description: >-
+      destinationFileName exists and overwrite is false.
+
+      -or- An I/O error has occurred.
+
+      -or- The entry is currently open for writing.
+
+      -or- The entry has been deleted from the archive.
+  - type: System.NotSupportedException
+    description: >-
+      destinationFileName is in an invalid format
+
+      -or- The ZipArchive that this entry belongs to was opened in a write-only mode.
+  - type: System.ObjectDisposedException
+    description: The ZipArchive that this entry belongs to has been disposed.
+references:
+- uid: System.IO.Compression
+  isExternal: false
+  name: System.IO.Compression
+  fullName: System.IO.Compression
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.ArgumentException
+- uid: System.ArgumentNullException
+- uid: System.IO.PathTooLongException
+  isExternal: false
+  href: System.IO.PathTooLongException.yml
+  name: PathTooLongException
+  fullName: System.IO.PathTooLongException
+  type: Class
+- uid: System.IO.DirectoryNotFoundException
+  isExternal: false
+  href: System.IO.DirectoryNotFoundException.yml
+  name: DirectoryNotFoundException
+  fullName: System.IO.DirectoryNotFoundException
+  type: Class
+- uid: System.IO.IOException
+- uid: System.UnauthorizedAccessException
+  isExternal: false
+  href: System.UnauthorizedAccessException.yml
+  name: UnauthorizedAccessException
+  fullName: System.UnauthorizedAccessException
+  type: Class
+- uid: System.IO.FileNotFoundException
+  isExternal: false
+  href: System.IO.FileNotFoundException.yml
+  name: FileNotFoundException
+  fullName: System.IO.FileNotFoundException
+  type: Class
+- uid: System.NotSupportedException
+- uid: System.ObjectDisposedException
+- uid: ZipArchive
+  isExternal: true
+  name: ZipArchive
+  fullName: ZipArchive
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: ZipArchiveEntry
+  isExternal: true
+  name: ZipArchiveEntry
+  fullName: ZipArchiveEntry
+- uid: CompressionLevel
+  isExternal: true
+  name: CompressionLevel
+  fullName: CompressionLevel
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean

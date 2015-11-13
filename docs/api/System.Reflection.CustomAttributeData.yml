@@ -1,0 +1,728 @@
+items:
+- uid: System.Reflection.CustomAttributeData
+  id: CustomAttributeData
+  parent: System.Reflection
+  children:
+  - System.Reflection.CustomAttributeData.#ctor
+  - System.Reflection.CustomAttributeData.AttributeType
+  - System.Reflection.CustomAttributeData.Constructor
+  - System.Reflection.CustomAttributeData.ConstructorArguments
+  - System.Reflection.CustomAttributeData.Equals(System.Object)
+  - System.Reflection.CustomAttributeData.GetCustomAttributes(System.Reflection.Assembly)
+  - System.Reflection.CustomAttributeData.GetCustomAttributes(System.Reflection.MemberInfo)
+  - System.Reflection.CustomAttributeData.GetCustomAttributes(System.Reflection.Module)
+  - System.Reflection.CustomAttributeData.GetCustomAttributes(System.Reflection.ParameterInfo)
+  - System.Reflection.CustomAttributeData.GetHashCode
+  - System.Reflection.CustomAttributeData.NamedArguments
+  - System.Reflection.CustomAttributeData.ToString
+  href: System.Reflection.CustomAttributeData.yml
+  name: CustomAttributeData
+  fullName: System.Reflection.CustomAttributeData
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Reflection/CustomAttribute.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Reflection/CustomAttribute.cs
+    startLine: 22
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Provides access to custom attribute data for assemblies, modules, types, members and parameters that are loaded into the reflection-only context.
+  syntax:
+    content: public class CustomAttributeData
+    content.vb: Public Class CustomAttributeData
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Reflection.CustomAttributeData.GetCustomAttributes(System.Reflection.MemberInfo)
+  id: GetCustomAttributes(System.Reflection.MemberInfo)
+  parent: System.Reflection.CustomAttributeData
+  href: System.Reflection.CustomAttributeData.yml
+  name: GetCustomAttributes(MemberInfo)
+  fullName: System.Reflection.CustomAttributeData.GetCustomAttributes(System.Reflection.MemberInfo)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/CustomAttribute.cs
+    startLine: 27
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Returns a list of @'System.Reflection.CustomAttributeData' objects representing data about the attributes that have been applied to the target member.
+  syntax:
+    content: public static IList<CustomAttributeData> GetCustomAttributes(MemberInfo target)
+    content.vb: Public Shared Function GetCustomAttributes(target As MemberInfo) As IList(Of CustomAttributeData)
+    parameters:
+    - id: target
+      type: System.Reflection.MemberInfo
+      description: The member whose attribute data is to be retrieved.
+    return:
+      type: System.Collections.Generic.IList{System.Reflection.CustomAttributeData}
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*target* is null.'
+- uid: System.Reflection.CustomAttributeData.GetCustomAttributes(System.Reflection.Module)
+  id: GetCustomAttributes(System.Reflection.Module)
+  parent: System.Reflection.CustomAttributeData
+  href: System.Reflection.CustomAttributeData.yml
+  name: GetCustomAttributes(Module)
+  fullName: System.Reflection.CustomAttributeData.GetCustomAttributes(System.Reflection.Module)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/CustomAttribute.cs
+    startLine: 35
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Returns a list of @'System.Reflection.CustomAttributeData' objects representing data about the attributes that have been applied to the target module.
+  syntax:
+    content: public static IList<CustomAttributeData> GetCustomAttributes(Module target)
+    content.vb: Public Shared Function GetCustomAttributes(target As Module) As IList(Of CustomAttributeData)
+    parameters:
+    - id: target
+      type: System.Reflection.Module
+      description: The module whose custom attribute data is to be retrieved.
+    return:
+      type: System.Collections.Generic.IList{System.Reflection.CustomAttributeData}
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*target* is null.'
+- uid: System.Reflection.CustomAttributeData.GetCustomAttributes(System.Reflection.Assembly)
+  id: GetCustomAttributes(System.Reflection.Assembly)
+  parent: System.Reflection.CustomAttributeData
+  href: System.Reflection.CustomAttributeData.yml
+  name: GetCustomAttributes(Assembly)
+  fullName: System.Reflection.CustomAttributeData.GetCustomAttributes(System.Reflection.Assembly)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/CustomAttribute.cs
+    startLine: 44
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Returns a list of @'System.Reflection.CustomAttributeData' objects representing data about the attributes that have been applied to the target assembly.
+  syntax:
+    content: public static IList<CustomAttributeData> GetCustomAttributes(Assembly target)
+    content.vb: Public Shared Function GetCustomAttributes(target As Assembly) As IList(Of CustomAttributeData)
+    parameters:
+    - id: target
+      type: System.Reflection.Assembly
+      description: The assembly whose custom attribute data is to be retrieved.
+    return:
+      type: System.Collections.Generic.IList{System.Reflection.CustomAttributeData}
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*target* is null.'
+- uid: System.Reflection.CustomAttributeData.GetCustomAttributes(System.Reflection.ParameterInfo)
+  id: GetCustomAttributes(System.Reflection.ParameterInfo)
+  parent: System.Reflection.CustomAttributeData
+  href: System.Reflection.CustomAttributeData.yml
+  name: GetCustomAttributes(ParameterInfo)
+  fullName: System.Reflection.CustomAttributeData.GetCustomAttributes(System.Reflection.ParameterInfo)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/CustomAttribute.cs
+    startLine: 53
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Returns a list of @'System.Reflection.CustomAttributeData' objects representing data about the attributes that have been applied to the target parameter.
+  syntax:
+    content: public static IList<CustomAttributeData> GetCustomAttributes(ParameterInfo target)
+    content.vb: Public Shared Function GetCustomAttributes(target As ParameterInfo) As IList(Of CustomAttributeData)
+    parameters:
+    - id: target
+      type: System.Reflection.ParameterInfo
+      description: The parameter whose attribute data is to be retrieved.
+    return:
+      type: System.Collections.Generic.IList{System.Reflection.CustomAttributeData}
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*target* is null.'
+- uid: System.Reflection.CustomAttributeData.#ctor
+  id: '#ctor'
+  parent: System.Reflection.CustomAttributeData
+  href: System.Reflection.CustomAttributeData.yml
+  name: CustomAttributeData()
+  fullName: System.Reflection.CustomAttributeData.CustomAttributeData()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/CustomAttribute.cs
+    startLine: 361
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Initializes a new instance of the @'System.Reflection.CustomAttributeData' class.
+  syntax:
+    content: protected CustomAttributeData()
+    content.vb: Protected Sub New
+- uid: System.Reflection.CustomAttributeData.ToString
+  id: ToString
+  parent: System.Reflection.CustomAttributeData
+  href: System.Reflection.CustomAttributeData.yml
+  name: ToString()
+  fullName: System.Reflection.CustomAttributeData.ToString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/CustomAttribute.cs
+    startLine: 498
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Returns a string representation of the custom attribute.
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+  overridden: System.Object.ToString
+- uid: System.Reflection.CustomAttributeData.GetHashCode
+  id: GetHashCode
+  parent: System.Reflection.CustomAttributeData
+  href: System.Reflection.CustomAttributeData.yml
+  name: GetHashCode()
+  fullName: System.Reflection.CustomAttributeData.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/CustomAttribute.cs
+    startLine: 510
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+  overridden: System.Object.GetHashCode
+- uid: System.Reflection.CustomAttributeData.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Reflection.CustomAttributeData
+  href: System.Reflection.CustomAttributeData.yml
+  name: Equals(Object)
+  fullName: System.Reflection.CustomAttributeData.Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/CustomAttribute.cs
+    startLine: 514
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Returns a value that indicates whether this instance is equal to a specified object.
+  syntax:
+    content: public override bool Equals(object obj)
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: An object to compare with this instance, or null.
+    return:
+      type: System.Boolean
+  overridden: System.Object.Equals(System.Object)
+- uid: System.Reflection.CustomAttributeData.AttributeType
+  id: AttributeType
+  parent: System.Reflection.CustomAttributeData
+  href: System.Reflection.CustomAttributeData.yml
+  name: AttributeType
+  fullName: System.Reflection.CustomAttributeData.AttributeType
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/CustomAttribute.cs
+    startLine: 521
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Gets the type of the attribute.
+  syntax:
+    content: public Type AttributeType { get; }
+    content.vb: Public ReadOnly Property AttributeType As Type
+    parameters: []
+    return:
+      type: System.Type
+- uid: System.Reflection.CustomAttributeData.Constructor
+  id: Constructor
+  parent: System.Reflection.CustomAttributeData
+  href: System.Reflection.CustomAttributeData.yml
+  name: Constructor
+  fullName: System.Reflection.CustomAttributeData.Constructor
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/CustomAttribute.cs
+    startLine: 523
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Gets a @'System.Reflection.ConstructorInfo' object that represents the constructor that would have initialized the custom attribute.
+  syntax:
+    content: public virtual ConstructorInfo Constructor { get; }
+    content.vb: Public Overridable ReadOnly Property Constructor As ConstructorInfo
+    parameters: []
+    return:
+      type: System.Reflection.ConstructorInfo
+- uid: System.Reflection.CustomAttributeData.ConstructorArguments
+  id: ConstructorArguments
+  parent: System.Reflection.CustomAttributeData
+  href: System.Reflection.CustomAttributeData.yml
+  name: ConstructorArguments
+  fullName: System.Reflection.CustomAttributeData.ConstructorArguments
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/CustomAttribute.cs
+    startLine: 526
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Gets the list of positional arguments specified for the attribute instance represented by the @'System.Reflection.CustomAttributeData' object.
+  syntax:
+    content: public virtual IList<CustomAttributeTypedArgument> ConstructorArguments { get; }
+    content.vb: Public Overridable ReadOnly Property ConstructorArguments As IList(Of CustomAttributeTypedArgument)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{System.Reflection.CustomAttributeTypedArgument}
+- uid: System.Reflection.CustomAttributeData.NamedArguments
+  id: NamedArguments
+  parent: System.Reflection.CustomAttributeData
+  href: System.Reflection.CustomAttributeData.yml
+  name: NamedArguments
+  fullName: System.Reflection.CustomAttributeData.NamedArguments
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/CustomAttribute.cs
+    startLine: 549
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Gets the list of named arguments specified for the attribute instance represented by the @'System.Reflection.CustomAttributeData' object.
+  syntax:
+    content: public virtual IList<CustomAttributeNamedArgument> NamedArguments { get; }
+    content.vb: Public Overridable ReadOnly Property NamedArguments As IList(Of CustomAttributeNamedArgument)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{System.Reflection.CustomAttributeNamedArgument}
+references:
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Reflection.MemberInfo
+  parent: System.Reflection
+  isExternal: false
+  href: System.Reflection.MemberInfo.yml
+  name: MemberInfo
+  fullName: System.Reflection.MemberInfo
+  type: Class
+- uid: System.Collections.Generic.IList{System.Reflection.CustomAttributeData}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: System.Collections.Generic.IList`1.yml
+  name: IList<CustomAttributeData>
+  name.vb: IList(Of CustomAttributeData)
+  fullName: System.Collections.Generic.IList<System.Reflection.CustomAttributeData>
+  fullName.vb: System.Collections.Generic.IList(Of System.Reflection.CustomAttributeData)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    href: System.Collections.Generic.IList`1.yml
+  - name: <
+    fullName: <
+  - uid: System.Reflection.CustomAttributeData
+    name: CustomAttributeData
+    fullName: System.Reflection.CustomAttributeData
+    href: System.Reflection.CustomAttributeData.yml
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    href: System.Collections.Generic.IList`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Reflection.CustomAttributeData
+    name: CustomAttributeData
+    fullName: System.Reflection.CustomAttributeData
+    href: System.Reflection.CustomAttributeData.yml
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IList`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IList<T>
+  name.vb: IList(Of T)
+  fullName: System.Collections.Generic.IList<T>
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Reflection.Module
+  parent: System.Reflection
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: Module
+  fullName: System.Reflection.Module
+  type: Class
+- uid: System.Reflection.Assembly
+  parent: System.Reflection
+  isExternal: true
+  name: Assembly
+  fullName: System.Reflection.Assembly
+- uid: System.Reflection.ParameterInfo
+  parent: System.Reflection
+  isExternal: false
+  href: System.Reflection.ParameterInfo.yml
+  name: ParameterInfo
+  fullName: System.Reflection.ParameterInfo
+  type: Class
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  fullName: System.Type
+- uid: System.Reflection.ConstructorInfo
+  parent: System.Reflection
+  isExternal: true
+  name: ConstructorInfo
+  fullName: System.Reflection.ConstructorInfo
+- uid: System.Collections.Generic.IList{System.Reflection.CustomAttributeTypedArgument}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: System.Collections.Generic.IList`1.yml
+  name: IList<CustomAttributeTypedArgument>
+  name.vb: IList(Of CustomAttributeTypedArgument)
+  fullName: System.Collections.Generic.IList<System.Reflection.CustomAttributeTypedArgument>
+  fullName.vb: System.Collections.Generic.IList(Of System.Reflection.CustomAttributeTypedArgument)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    href: System.Collections.Generic.IList`1.yml
+  - name: <
+    fullName: <
+  - uid: System.Reflection.CustomAttributeTypedArgument
+    name: CustomAttributeTypedArgument
+    fullName: System.Reflection.CustomAttributeTypedArgument
+    href: System.Reflection.CustomAttributeTypedArgument.yml
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    href: System.Collections.Generic.IList`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Reflection.CustomAttributeTypedArgument
+    name: CustomAttributeTypedArgument
+    fullName: System.Reflection.CustomAttributeTypedArgument
+    href: System.Reflection.CustomAttributeTypedArgument.yml
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IList{System.Reflection.CustomAttributeNamedArgument}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: System.Collections.Generic.IList`1.yml
+  name: IList<CustomAttributeNamedArgument>
+  name.vb: IList(Of CustomAttributeNamedArgument)
+  fullName: System.Collections.Generic.IList<System.Reflection.CustomAttributeNamedArgument>
+  fullName.vb: System.Collections.Generic.IList(Of System.Reflection.CustomAttributeNamedArgument)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    href: System.Collections.Generic.IList`1.yml
+  - name: <
+    fullName: <
+  - uid: System.Reflection.CustomAttributeNamedArgument
+    name: CustomAttributeNamedArgument
+    fullName: System.Reflection.CustomAttributeNamedArgument
+    href: System.Reflection.CustomAttributeNamedArgument.yml
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    href: System.Collections.Generic.IList`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Reflection.CustomAttributeNamedArgument
+    name: CustomAttributeNamedArgument
+    fullName: System.Reflection.CustomAttributeNamedArgument
+    href: System.Reflection.CustomAttributeNamedArgument.yml
+  - name: )
+    fullName: )

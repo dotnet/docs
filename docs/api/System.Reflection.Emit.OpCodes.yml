@@ -1,0 +1,4588 @@
+items:
+- uid: System.Reflection.Emit.OpCodes
+  id: OpCodes
+  parent: System.Reflection.Emit
+  children:
+  - System.Reflection.Emit.OpCodes.Add
+  - System.Reflection.Emit.OpCodes.Add_Ovf
+  - System.Reflection.Emit.OpCodes.Add_Ovf_Un
+  - System.Reflection.Emit.OpCodes.And
+  - System.Reflection.Emit.OpCodes.Arglist
+  - System.Reflection.Emit.OpCodes.Beq
+  - System.Reflection.Emit.OpCodes.Beq_S
+  - System.Reflection.Emit.OpCodes.Bge
+  - System.Reflection.Emit.OpCodes.Bge_S
+  - System.Reflection.Emit.OpCodes.Bge_Un
+  - System.Reflection.Emit.OpCodes.Bge_Un_S
+  - System.Reflection.Emit.OpCodes.Bgt
+  - System.Reflection.Emit.OpCodes.Bgt_S
+  - System.Reflection.Emit.OpCodes.Bgt_Un
+  - System.Reflection.Emit.OpCodes.Bgt_Un_S
+  - System.Reflection.Emit.OpCodes.Ble
+  - System.Reflection.Emit.OpCodes.Ble_S
+  - System.Reflection.Emit.OpCodes.Ble_Un
+  - System.Reflection.Emit.OpCodes.Ble_Un_S
+  - System.Reflection.Emit.OpCodes.Blt
+  - System.Reflection.Emit.OpCodes.Blt_S
+  - System.Reflection.Emit.OpCodes.Blt_Un
+  - System.Reflection.Emit.OpCodes.Blt_Un_S
+  - System.Reflection.Emit.OpCodes.Bne_Un
+  - System.Reflection.Emit.OpCodes.Bne_Un_S
+  - System.Reflection.Emit.OpCodes.Box
+  - System.Reflection.Emit.OpCodes.Br
+  - System.Reflection.Emit.OpCodes.Br_S
+  - System.Reflection.Emit.OpCodes.Break
+  - System.Reflection.Emit.OpCodes.Brfalse
+  - System.Reflection.Emit.OpCodes.Brfalse_S
+  - System.Reflection.Emit.OpCodes.Brtrue
+  - System.Reflection.Emit.OpCodes.Brtrue_S
+  - System.Reflection.Emit.OpCodes.Call
+  - System.Reflection.Emit.OpCodes.Calli
+  - System.Reflection.Emit.OpCodes.Callvirt
+  - System.Reflection.Emit.OpCodes.Castclass
+  - System.Reflection.Emit.OpCodes.Ceq
+  - System.Reflection.Emit.OpCodes.Cgt
+  - System.Reflection.Emit.OpCodes.Cgt_Un
+  - System.Reflection.Emit.OpCodes.Ckfinite
+  - System.Reflection.Emit.OpCodes.Clt
+  - System.Reflection.Emit.OpCodes.Clt_Un
+  - System.Reflection.Emit.OpCodes.Constrained
+  - System.Reflection.Emit.OpCodes.Conv_I
+  - System.Reflection.Emit.OpCodes.Conv_I1
+  - System.Reflection.Emit.OpCodes.Conv_I2
+  - System.Reflection.Emit.OpCodes.Conv_I4
+  - System.Reflection.Emit.OpCodes.Conv_I8
+  - System.Reflection.Emit.OpCodes.Conv_Ovf_I
+  - System.Reflection.Emit.OpCodes.Conv_Ovf_I_Un
+  - System.Reflection.Emit.OpCodes.Conv_Ovf_I1
+  - System.Reflection.Emit.OpCodes.Conv_Ovf_I1_Un
+  - System.Reflection.Emit.OpCodes.Conv_Ovf_I2
+  - System.Reflection.Emit.OpCodes.Conv_Ovf_I2_Un
+  - System.Reflection.Emit.OpCodes.Conv_Ovf_I4
+  - System.Reflection.Emit.OpCodes.Conv_Ovf_I4_Un
+  - System.Reflection.Emit.OpCodes.Conv_Ovf_I8
+  - System.Reflection.Emit.OpCodes.Conv_Ovf_I8_Un
+  - System.Reflection.Emit.OpCodes.Conv_Ovf_U
+  - System.Reflection.Emit.OpCodes.Conv_Ovf_U_Un
+  - System.Reflection.Emit.OpCodes.Conv_Ovf_U1
+  - System.Reflection.Emit.OpCodes.Conv_Ovf_U1_Un
+  - System.Reflection.Emit.OpCodes.Conv_Ovf_U2
+  - System.Reflection.Emit.OpCodes.Conv_Ovf_U2_Un
+  - System.Reflection.Emit.OpCodes.Conv_Ovf_U4
+  - System.Reflection.Emit.OpCodes.Conv_Ovf_U4_Un
+  - System.Reflection.Emit.OpCodes.Conv_Ovf_U8
+  - System.Reflection.Emit.OpCodes.Conv_Ovf_U8_Un
+  - System.Reflection.Emit.OpCodes.Conv_R_Un
+  - System.Reflection.Emit.OpCodes.Conv_R4
+  - System.Reflection.Emit.OpCodes.Conv_R8
+  - System.Reflection.Emit.OpCodes.Conv_U
+  - System.Reflection.Emit.OpCodes.Conv_U1
+  - System.Reflection.Emit.OpCodes.Conv_U2
+  - System.Reflection.Emit.OpCodes.Conv_U4
+  - System.Reflection.Emit.OpCodes.Conv_U8
+  - System.Reflection.Emit.OpCodes.Cpblk
+  - System.Reflection.Emit.OpCodes.Cpobj
+  - System.Reflection.Emit.OpCodes.Div
+  - System.Reflection.Emit.OpCodes.Div_Un
+  - System.Reflection.Emit.OpCodes.Dup
+  - System.Reflection.Emit.OpCodes.Endfilter
+  - System.Reflection.Emit.OpCodes.Endfinally
+  - System.Reflection.Emit.OpCodes.Initblk
+  - System.Reflection.Emit.OpCodes.Initobj
+  - System.Reflection.Emit.OpCodes.Isinst
+  - System.Reflection.Emit.OpCodes.Jmp
+  - System.Reflection.Emit.OpCodes.Ldarg
+  - System.Reflection.Emit.OpCodes.Ldarg_0
+  - System.Reflection.Emit.OpCodes.Ldarg_1
+  - System.Reflection.Emit.OpCodes.Ldarg_2
+  - System.Reflection.Emit.OpCodes.Ldarg_3
+  - System.Reflection.Emit.OpCodes.Ldarg_S
+  - System.Reflection.Emit.OpCodes.Ldarga
+  - System.Reflection.Emit.OpCodes.Ldarga_S
+  - System.Reflection.Emit.OpCodes.Ldc_I4
+  - System.Reflection.Emit.OpCodes.Ldc_I4_0
+  - System.Reflection.Emit.OpCodes.Ldc_I4_1
+  - System.Reflection.Emit.OpCodes.Ldc_I4_2
+  - System.Reflection.Emit.OpCodes.Ldc_I4_3
+  - System.Reflection.Emit.OpCodes.Ldc_I4_4
+  - System.Reflection.Emit.OpCodes.Ldc_I4_5
+  - System.Reflection.Emit.OpCodes.Ldc_I4_6
+  - System.Reflection.Emit.OpCodes.Ldc_I4_7
+  - System.Reflection.Emit.OpCodes.Ldc_I4_8
+  - System.Reflection.Emit.OpCodes.Ldc_I4_M1
+  - System.Reflection.Emit.OpCodes.Ldc_I4_S
+  - System.Reflection.Emit.OpCodes.Ldc_I8
+  - System.Reflection.Emit.OpCodes.Ldc_R4
+  - System.Reflection.Emit.OpCodes.Ldc_R8
+  - System.Reflection.Emit.OpCodes.Ldelem
+  - System.Reflection.Emit.OpCodes.Ldelem_I
+  - System.Reflection.Emit.OpCodes.Ldelem_I1
+  - System.Reflection.Emit.OpCodes.Ldelem_I2
+  - System.Reflection.Emit.OpCodes.Ldelem_I4
+  - System.Reflection.Emit.OpCodes.Ldelem_I8
+  - System.Reflection.Emit.OpCodes.Ldelem_R4
+  - System.Reflection.Emit.OpCodes.Ldelem_R8
+  - System.Reflection.Emit.OpCodes.Ldelem_Ref
+  - System.Reflection.Emit.OpCodes.Ldelem_U1
+  - System.Reflection.Emit.OpCodes.Ldelem_U2
+  - System.Reflection.Emit.OpCodes.Ldelem_U4
+  - System.Reflection.Emit.OpCodes.Ldelema
+  - System.Reflection.Emit.OpCodes.Ldfld
+  - System.Reflection.Emit.OpCodes.Ldflda
+  - System.Reflection.Emit.OpCodes.Ldftn
+  - System.Reflection.Emit.OpCodes.Ldind_I
+  - System.Reflection.Emit.OpCodes.Ldind_I1
+  - System.Reflection.Emit.OpCodes.Ldind_I2
+  - System.Reflection.Emit.OpCodes.Ldind_I4
+  - System.Reflection.Emit.OpCodes.Ldind_I8
+  - System.Reflection.Emit.OpCodes.Ldind_R4
+  - System.Reflection.Emit.OpCodes.Ldind_R8
+  - System.Reflection.Emit.OpCodes.Ldind_Ref
+  - System.Reflection.Emit.OpCodes.Ldind_U1
+  - System.Reflection.Emit.OpCodes.Ldind_U2
+  - System.Reflection.Emit.OpCodes.Ldind_U4
+  - System.Reflection.Emit.OpCodes.Ldlen
+  - System.Reflection.Emit.OpCodes.Ldloc
+  - System.Reflection.Emit.OpCodes.Ldloc_0
+  - System.Reflection.Emit.OpCodes.Ldloc_1
+  - System.Reflection.Emit.OpCodes.Ldloc_2
+  - System.Reflection.Emit.OpCodes.Ldloc_3
+  - System.Reflection.Emit.OpCodes.Ldloc_S
+  - System.Reflection.Emit.OpCodes.Ldloca
+  - System.Reflection.Emit.OpCodes.Ldloca_S
+  - System.Reflection.Emit.OpCodes.Ldnull
+  - System.Reflection.Emit.OpCodes.Ldobj
+  - System.Reflection.Emit.OpCodes.Ldsfld
+  - System.Reflection.Emit.OpCodes.Ldsflda
+  - System.Reflection.Emit.OpCodes.Ldstr
+  - System.Reflection.Emit.OpCodes.Ldtoken
+  - System.Reflection.Emit.OpCodes.Ldvirtftn
+  - System.Reflection.Emit.OpCodes.Leave
+  - System.Reflection.Emit.OpCodes.Leave_S
+  - System.Reflection.Emit.OpCodes.Localloc
+  - System.Reflection.Emit.OpCodes.Mkrefany
+  - System.Reflection.Emit.OpCodes.Mul
+  - System.Reflection.Emit.OpCodes.Mul_Ovf
+  - System.Reflection.Emit.OpCodes.Mul_Ovf_Un
+  - System.Reflection.Emit.OpCodes.Neg
+  - System.Reflection.Emit.OpCodes.Newarr
+  - System.Reflection.Emit.OpCodes.Newobj
+  - System.Reflection.Emit.OpCodes.Nop
+  - System.Reflection.Emit.OpCodes.Not
+  - System.Reflection.Emit.OpCodes.Or
+  - System.Reflection.Emit.OpCodes.Pop
+  - System.Reflection.Emit.OpCodes.Prefix1
+  - System.Reflection.Emit.OpCodes.Prefix2
+  - System.Reflection.Emit.OpCodes.Prefix3
+  - System.Reflection.Emit.OpCodes.Prefix4
+  - System.Reflection.Emit.OpCodes.Prefix5
+  - System.Reflection.Emit.OpCodes.Prefix6
+  - System.Reflection.Emit.OpCodes.Prefix7
+  - System.Reflection.Emit.OpCodes.Prefixref
+  - System.Reflection.Emit.OpCodes.Readonly
+  - System.Reflection.Emit.OpCodes.Refanytype
+  - System.Reflection.Emit.OpCodes.Refanyval
+  - System.Reflection.Emit.OpCodes.Rem
+  - System.Reflection.Emit.OpCodes.Rem_Un
+  - System.Reflection.Emit.OpCodes.Ret
+  - System.Reflection.Emit.OpCodes.Rethrow
+  - System.Reflection.Emit.OpCodes.Shl
+  - System.Reflection.Emit.OpCodes.Shr
+  - System.Reflection.Emit.OpCodes.Shr_Un
+  - System.Reflection.Emit.OpCodes.Sizeof
+  - System.Reflection.Emit.OpCodes.Starg
+  - System.Reflection.Emit.OpCodes.Starg_S
+  - System.Reflection.Emit.OpCodes.Stelem
+  - System.Reflection.Emit.OpCodes.Stelem_I
+  - System.Reflection.Emit.OpCodes.Stelem_I1
+  - System.Reflection.Emit.OpCodes.Stelem_I2
+  - System.Reflection.Emit.OpCodes.Stelem_I4
+  - System.Reflection.Emit.OpCodes.Stelem_I8
+  - System.Reflection.Emit.OpCodes.Stelem_R4
+  - System.Reflection.Emit.OpCodes.Stelem_R8
+  - System.Reflection.Emit.OpCodes.Stelem_Ref
+  - System.Reflection.Emit.OpCodes.Stfld
+  - System.Reflection.Emit.OpCodes.Stind_I
+  - System.Reflection.Emit.OpCodes.Stind_I1
+  - System.Reflection.Emit.OpCodes.Stind_I2
+  - System.Reflection.Emit.OpCodes.Stind_I4
+  - System.Reflection.Emit.OpCodes.Stind_I8
+  - System.Reflection.Emit.OpCodes.Stind_R4
+  - System.Reflection.Emit.OpCodes.Stind_R8
+  - System.Reflection.Emit.OpCodes.Stind_Ref
+  - System.Reflection.Emit.OpCodes.Stloc
+  - System.Reflection.Emit.OpCodes.Stloc_0
+  - System.Reflection.Emit.OpCodes.Stloc_1
+  - System.Reflection.Emit.OpCodes.Stloc_2
+  - System.Reflection.Emit.OpCodes.Stloc_3
+  - System.Reflection.Emit.OpCodes.Stloc_S
+  - System.Reflection.Emit.OpCodes.Stobj
+  - System.Reflection.Emit.OpCodes.Stsfld
+  - System.Reflection.Emit.OpCodes.Sub
+  - System.Reflection.Emit.OpCodes.Sub_Ovf
+  - System.Reflection.Emit.OpCodes.Sub_Ovf_Un
+  - System.Reflection.Emit.OpCodes.Switch
+  - System.Reflection.Emit.OpCodes.Tailcall
+  - System.Reflection.Emit.OpCodes.TakesSingleByteArgument(System.Reflection.Emit.OpCode)
+  - System.Reflection.Emit.OpCodes.Throw
+  - System.Reflection.Emit.OpCodes.Unaligned
+  - System.Reflection.Emit.OpCodes.Unbox
+  - System.Reflection.Emit.OpCodes.Unbox_Any
+  - System.Reflection.Emit.OpCodes.Volatile
+  - System.Reflection.Emit.OpCodes.Xor
+  href: System.Reflection.Emit.OpCodes.yml
+  name: OpCodes
+  fullName: System.Reflection.Emit.OpCodes
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 251
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Provides field representations of the Microsoft Intermediate Language (MSIL) instructions for emission by the @'System.Reflection.Emit.ILGenerator' class members (such as @'System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode)').
+  syntax:
+    content: public class OpCodes
+    content.vb: Public Class OpCodes
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Reflection.Emit.OpCodes.Nop
+  id: Nop
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Nop
+  fullName: System.Reflection.Emit.OpCodes.Nop
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 266
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Fills space if opcodes are patched. No meaningful operation is performed although a processing cycle can be consumed.
+  syntax:
+    content: public static readonly OpCode Nop
+    content.vb: Public Shared ReadOnly Nop As OpCode
+- uid: System.Reflection.Emit.OpCodes.Break
+  id: Break
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Break
+  fullName: System.Reflection.Emit.OpCodes.Break
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 276
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Signals the Common Language Infrastructure (CLI) to inform the debugger that a break point has been tripped.
+  syntax:
+    content: public static readonly OpCode Break
+    content.vb: Public Shared ReadOnly Break As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldarg_0
+  id: Ldarg_0
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldarg_0
+  fullName: System.Reflection.Emit.OpCodes.Ldarg_0
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 286
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Loads the argument at index 0 onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Ldarg_0
+    content.vb: Public Shared ReadOnly Ldarg_0 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldarg_1
+  id: Ldarg_1
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldarg_1
+  fullName: System.Reflection.Emit.OpCodes.Ldarg_1
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 296
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Loads the argument at index 1 onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Ldarg_1
+    content.vb: Public Shared ReadOnly Ldarg_1 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldarg_2
+  id: Ldarg_2
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldarg_2
+  fullName: System.Reflection.Emit.OpCodes.Ldarg_2
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 306
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Loads the argument at index 2 onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Ldarg_2
+    content.vb: Public Shared ReadOnly Ldarg_2 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldarg_3
+  id: Ldarg_3
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldarg_3
+  fullName: System.Reflection.Emit.OpCodes.Ldarg_3
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 316
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Loads the argument at index 3 onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Ldarg_3
+    content.vb: Public Shared ReadOnly Ldarg_3 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldloc_0
+  id: Ldloc_0
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldloc_0
+  fullName: System.Reflection.Emit.OpCodes.Ldloc_0
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 326
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Loads the local variable at index 0 onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Ldloc_0
+    content.vb: Public Shared ReadOnly Ldloc_0 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldloc_1
+  id: Ldloc_1
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldloc_1
+  fullName: System.Reflection.Emit.OpCodes.Ldloc_1
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 336
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Loads the local variable at index 1 onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Ldloc_1
+    content.vb: Public Shared ReadOnly Ldloc_1 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldloc_2
+  id: Ldloc_2
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldloc_2
+  fullName: System.Reflection.Emit.OpCodes.Ldloc_2
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 346
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Loads the local variable at index 2 onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Ldloc_2
+    content.vb: Public Shared ReadOnly Ldloc_2 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldloc_3
+  id: Ldloc_3
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldloc_3
+  fullName: System.Reflection.Emit.OpCodes.Ldloc_3
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 356
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Loads the local variable at index 3 onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Ldloc_3
+    content.vb: Public Shared ReadOnly Ldloc_3 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Stloc_0
+  id: Stloc_0
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Stloc_0
+  fullName: System.Reflection.Emit.OpCodes.Stloc_0
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 366
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Pops the current value from the top of the evaluation stack and stores it in a the local variable list at index 0.
+  syntax:
+    content: public static readonly OpCode Stloc_0
+    content.vb: Public Shared ReadOnly Stloc_0 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Stloc_1
+  id: Stloc_1
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Stloc_1
+  fullName: System.Reflection.Emit.OpCodes.Stloc_1
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 376
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Pops the current value from the top of the evaluation stack and stores it in a the local variable list at index 1.
+  syntax:
+    content: public static readonly OpCode Stloc_1
+    content.vb: Public Shared ReadOnly Stloc_1 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Stloc_2
+  id: Stloc_2
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Stloc_2
+  fullName: System.Reflection.Emit.OpCodes.Stloc_2
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 386
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Pops the current value from the top of the evaluation stack and stores it in a the local variable list at index 2.
+  syntax:
+    content: public static readonly OpCode Stloc_2
+    content.vb: Public Shared ReadOnly Stloc_2 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Stloc_3
+  id: Stloc_3
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Stloc_3
+  fullName: System.Reflection.Emit.OpCodes.Stloc_3
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 396
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Pops the current value from the top of the evaluation stack and stores it in a the local variable list at index 3.
+  syntax:
+    content: public static readonly OpCode Stloc_3
+    content.vb: Public Shared ReadOnly Stloc_3 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldarg_S
+  id: Ldarg_S
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldarg_S
+  fullName: System.Reflection.Emit.OpCodes.Ldarg_S
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 406
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Loads the argument (referenced by a specified short form index) onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Ldarg_S
+    content.vb: Public Shared ReadOnly Ldarg_S As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldarga_S
+  id: Ldarga_S
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldarga_S
+  fullName: System.Reflection.Emit.OpCodes.Ldarga_S
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 416
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Load an argument address, in short form, onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Ldarga_S
+    content.vb: Public Shared ReadOnly Ldarga_S As OpCode
+- uid: System.Reflection.Emit.OpCodes.Starg_S
+  id: Starg_S
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Starg_S
+  fullName: System.Reflection.Emit.OpCodes.Starg_S
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 426
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Stores the value on top of the evaluation stack in the argument slot at a specified index, short form.
+  syntax:
+    content: public static readonly OpCode Starg_S
+    content.vb: Public Shared ReadOnly Starg_S As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldloc_S
+  id: Ldloc_S
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldloc_S
+  fullName: System.Reflection.Emit.OpCodes.Ldloc_S
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 436
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Loads the local variable at a specific index onto the evaluation stack, short form.
+  syntax:
+    content: public static readonly OpCode Ldloc_S
+    content.vb: Public Shared ReadOnly Ldloc_S As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldloca_S
+  id: Ldloca_S
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldloca_S
+  fullName: System.Reflection.Emit.OpCodes.Ldloca_S
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 446
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Loads the address of the local variable at a specific index onto the evaluation stack, short form.
+  syntax:
+    content: public static readonly OpCode Ldloca_S
+    content.vb: Public Shared ReadOnly Ldloca_S As OpCode
+- uid: System.Reflection.Emit.OpCodes.Stloc_S
+  id: Stloc_S
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Stloc_S
+  fullName: System.Reflection.Emit.OpCodes.Stloc_S
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 456
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Pops the current value from the top of the evaluation stack and stores it in a the local variable list at *index* (short form).
+  syntax:
+    content: public static readonly OpCode Stloc_S
+    content.vb: Public Shared ReadOnly Stloc_S As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldnull
+  id: Ldnull
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldnull
+  fullName: System.Reflection.Emit.OpCodes.Ldnull
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 466
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Pushes a null reference (type O) onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Ldnull
+    content.vb: Public Shared ReadOnly Ldnull As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldc_I4_M1
+  id: Ldc_I4_M1
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldc_I4_M1
+  fullName: System.Reflection.Emit.OpCodes.Ldc_I4_M1
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 476
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Pushes the integer value of -1 onto the evaluation stack as an int32.
+  syntax:
+    content: public static readonly OpCode Ldc_I4_M1
+    content.vb: Public Shared ReadOnly Ldc_I4_M1 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldc_I4_0
+  id: Ldc_I4_0
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldc_I4_0
+  fullName: System.Reflection.Emit.OpCodes.Ldc_I4_0
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 486
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Pushes the integer value of 0 onto the evaluation stack as an int32.
+  syntax:
+    content: public static readonly OpCode Ldc_I4_0
+    content.vb: Public Shared ReadOnly Ldc_I4_0 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldc_I4_1
+  id: Ldc_I4_1
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldc_I4_1
+  fullName: System.Reflection.Emit.OpCodes.Ldc_I4_1
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 496
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Pushes the integer value of 1 onto the evaluation stack as an int32.
+  syntax:
+    content: public static readonly OpCode Ldc_I4_1
+    content.vb: Public Shared ReadOnly Ldc_I4_1 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldc_I4_2
+  id: Ldc_I4_2
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldc_I4_2
+  fullName: System.Reflection.Emit.OpCodes.Ldc_I4_2
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 506
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Pushes the integer value of 2 onto the evaluation stack as an int32.
+  syntax:
+    content: public static readonly OpCode Ldc_I4_2
+    content.vb: Public Shared ReadOnly Ldc_I4_2 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldc_I4_3
+  id: Ldc_I4_3
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldc_I4_3
+  fullName: System.Reflection.Emit.OpCodes.Ldc_I4_3
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 516
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Pushes the integer value of 3 onto the evaluation stack as an int32.
+  syntax:
+    content: public static readonly OpCode Ldc_I4_3
+    content.vb: Public Shared ReadOnly Ldc_I4_3 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldc_I4_4
+  id: Ldc_I4_4
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldc_I4_4
+  fullName: System.Reflection.Emit.OpCodes.Ldc_I4_4
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 526
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Pushes the integer value of 4 onto the evaluation stack as an int32.
+  syntax:
+    content: public static readonly OpCode Ldc_I4_4
+    content.vb: Public Shared ReadOnly Ldc_I4_4 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldc_I4_5
+  id: Ldc_I4_5
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldc_I4_5
+  fullName: System.Reflection.Emit.OpCodes.Ldc_I4_5
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 536
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Pushes the integer value of 5 onto the evaluation stack as an int32.
+  syntax:
+    content: public static readonly OpCode Ldc_I4_5
+    content.vb: Public Shared ReadOnly Ldc_I4_5 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldc_I4_6
+  id: Ldc_I4_6
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldc_I4_6
+  fullName: System.Reflection.Emit.OpCodes.Ldc_I4_6
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 546
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Pushes the integer value of 6 onto the evaluation stack as an int32.
+  syntax:
+    content: public static readonly OpCode Ldc_I4_6
+    content.vb: Public Shared ReadOnly Ldc_I4_6 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldc_I4_7
+  id: Ldc_I4_7
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldc_I4_7
+  fullName: System.Reflection.Emit.OpCodes.Ldc_I4_7
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 556
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Pushes the integer value of 7 onto the evaluation stack as an int32.
+  syntax:
+    content: public static readonly OpCode Ldc_I4_7
+    content.vb: Public Shared ReadOnly Ldc_I4_7 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldc_I4_8
+  id: Ldc_I4_8
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldc_I4_8
+  fullName: System.Reflection.Emit.OpCodes.Ldc_I4_8
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 566
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Pushes the integer value of 8 onto the evaluation stack as an int32.
+  syntax:
+    content: public static readonly OpCode Ldc_I4_8
+    content.vb: Public Shared ReadOnly Ldc_I4_8 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldc_I4_S
+  id: Ldc_I4_S
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldc_I4_S
+  fullName: System.Reflection.Emit.OpCodes.Ldc_I4_S
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 576
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Pushes the supplied int8 value onto the evaluation stack as an int32, short form.
+  syntax:
+    content: public static readonly OpCode Ldc_I4_S
+    content.vb: Public Shared ReadOnly Ldc_I4_S As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldc_I4
+  id: Ldc_I4
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldc_I4
+  fullName: System.Reflection.Emit.OpCodes.Ldc_I4
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 586
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Pushes a supplied value of type int32 onto the evaluation stack as an int32.
+  syntax:
+    content: public static readonly OpCode Ldc_I4
+    content.vb: Public Shared ReadOnly Ldc_I4 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldc_I8
+  id: Ldc_I8
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldc_I8
+  fullName: System.Reflection.Emit.OpCodes.Ldc_I8
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 596
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Pushes a supplied value of type int64 onto the evaluation stack as an int64.
+  syntax:
+    content: public static readonly OpCode Ldc_I8
+    content.vb: Public Shared ReadOnly Ldc_I8 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldc_R4
+  id: Ldc_R4
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldc_R4
+  fullName: System.Reflection.Emit.OpCodes.Ldc_R4
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 606
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Pushes a supplied value of type float32 onto the evaluation stack as type F (float).
+  syntax:
+    content: public static readonly OpCode Ldc_R4
+    content.vb: Public Shared ReadOnly Ldc_R4 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldc_R8
+  id: Ldc_R8
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldc_R8
+  fullName: System.Reflection.Emit.OpCodes.Ldc_R8
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 616
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Pushes a supplied value of type float64 onto the evaluation stack as type F (float).
+  syntax:
+    content: public static readonly OpCode Ldc_R8
+    content.vb: Public Shared ReadOnly Ldc_R8 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Dup
+  id: Dup
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Dup
+  fullName: System.Reflection.Emit.OpCodes.Dup
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 626
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Copies the current topmost value on the evaluation stack, and then pushes the copy onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Dup
+    content.vb: Public Shared ReadOnly Dup As OpCode
+- uid: System.Reflection.Emit.OpCodes.Pop
+  id: Pop
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Pop
+  fullName: System.Reflection.Emit.OpCodes.Pop
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 636
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Removes the value currently on top of the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Pop
+    content.vb: Public Shared ReadOnly Pop As OpCode
+- uid: System.Reflection.Emit.OpCodes.Jmp
+  id: Jmp
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Jmp
+  fullName: System.Reflection.Emit.OpCodes.Jmp
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 646
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Exits current method and jumps to specified method.
+  syntax:
+    content: public static readonly OpCode Jmp
+    content.vb: Public Shared ReadOnly Jmp As OpCode
+- uid: System.Reflection.Emit.OpCodes.Call
+  id: Call
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Call
+  fullName: System.Reflection.Emit.OpCodes.Call
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 657
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Calls the method indicated by the passed method descriptor.
+  syntax:
+    content: public static readonly OpCode Call
+    content.vb: Public Shared ReadOnly Call As OpCode
+- uid: System.Reflection.Emit.OpCodes.Calli
+  id: Calli
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Calli
+  fullName: System.Reflection.Emit.OpCodes.Calli
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 667
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Calls the method indicated on the evaluation stack (as a pointer to an entry point) with arguments described by a calling convention.
+  syntax:
+    content: public static readonly OpCode Calli
+    content.vb: Public Shared ReadOnly Calli As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ret
+  id: Ret
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ret
+  fullName: System.Reflection.Emit.OpCodes.Ret
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 677
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Returns from the current method, pushing a return value (if present) from the callee's evaluation stack onto the caller's evaluation stack.
+  syntax:
+    content: public static readonly OpCode Ret
+    content.vb: Public Shared ReadOnly Ret As OpCode
+- uid: System.Reflection.Emit.OpCodes.Br_S
+  id: Br_S
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Br_S
+  fullName: System.Reflection.Emit.OpCodes.Br_S
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 688
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Unconditionally transfers control to a target instruction (short form).
+  syntax:
+    content: public static readonly OpCode Br_S
+    content.vb: Public Shared ReadOnly Br_S As OpCode
+- uid: System.Reflection.Emit.OpCodes.Brfalse_S
+  id: Brfalse_S
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Brfalse_S
+  fullName: System.Reflection.Emit.OpCodes.Brfalse_S
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 699
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Transfers control to a target instruction if *value* is false, a null reference, or zero.
+  syntax:
+    content: public static readonly OpCode Brfalse_S
+    content.vb: Public Shared ReadOnly Brfalse_S As OpCode
+- uid: System.Reflection.Emit.OpCodes.Brtrue_S
+  id: Brtrue_S
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Brtrue_S
+  fullName: System.Reflection.Emit.OpCodes.Brtrue_S
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 709
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Transfers control to a target instruction (short form) if *value* is true, not null, or non-zero.
+  syntax:
+    content: public static readonly OpCode Brtrue_S
+    content.vb: Public Shared ReadOnly Brtrue_S As OpCode
+- uid: System.Reflection.Emit.OpCodes.Beq_S
+  id: Beq_S
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Beq_S
+  fullName: System.Reflection.Emit.OpCodes.Beq_S
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 719
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Transfers control to a target instruction (short form) if two values are equal.
+  syntax:
+    content: public static readonly OpCode Beq_S
+    content.vb: Public Shared ReadOnly Beq_S As OpCode
+- uid: System.Reflection.Emit.OpCodes.Bge_S
+  id: Bge_S
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Bge_S
+  fullName: System.Reflection.Emit.OpCodes.Bge_S
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 729
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Transfers control to a target instruction (short form) if the first value is greater than or equal to the second value.
+  syntax:
+    content: public static readonly OpCode Bge_S
+    content.vb: Public Shared ReadOnly Bge_S As OpCode
+- uid: System.Reflection.Emit.OpCodes.Bgt_S
+  id: Bgt_S
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Bgt_S
+  fullName: System.Reflection.Emit.OpCodes.Bgt_S
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 739
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Transfers control to a target instruction (short form) if the first value is greater than the second value.
+  syntax:
+    content: public static readonly OpCode Bgt_S
+    content.vb: Public Shared ReadOnly Bgt_S As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ble_S
+  id: Ble_S
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ble_S
+  fullName: System.Reflection.Emit.OpCodes.Ble_S
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 749
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Transfers control to a target instruction (short form) if the first value is less than or equal to the second value.
+  syntax:
+    content: public static readonly OpCode Ble_S
+    content.vb: Public Shared ReadOnly Ble_S As OpCode
+- uid: System.Reflection.Emit.OpCodes.Blt_S
+  id: Blt_S
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Blt_S
+  fullName: System.Reflection.Emit.OpCodes.Blt_S
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 759
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Transfers control to a target instruction (short form) if the first value is less than the second value.
+  syntax:
+    content: public static readonly OpCode Blt_S
+    content.vb: Public Shared ReadOnly Blt_S As OpCode
+- uid: System.Reflection.Emit.OpCodes.Bne_Un_S
+  id: Bne_Un_S
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Bne_Un_S
+  fullName: System.Reflection.Emit.OpCodes.Bne_Un_S
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 769
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Transfers control to a target instruction (short form) when two unsigned integer values or unordered float values are not equal.
+  syntax:
+    content: public static readonly OpCode Bne_Un_S
+    content.vb: Public Shared ReadOnly Bne_Un_S As OpCode
+- uid: System.Reflection.Emit.OpCodes.Bge_Un_S
+  id: Bge_Un_S
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Bge_Un_S
+  fullName: System.Reflection.Emit.OpCodes.Bge_Un_S
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 779
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Transfers control to a target instruction (short form) if the first value is greater than the second value, when comparing unsigned integer values or unordered float values.
+  syntax:
+    content: public static readonly OpCode Bge_Un_S
+    content.vb: Public Shared ReadOnly Bge_Un_S As OpCode
+- uid: System.Reflection.Emit.OpCodes.Bgt_Un_S
+  id: Bgt_Un_S
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Bgt_Un_S
+  fullName: System.Reflection.Emit.OpCodes.Bgt_Un_S
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 789
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Transfers control to a target instruction (short form) if the first value is greater than the second value, when comparing unsigned integer values or unordered float values.
+  syntax:
+    content: public static readonly OpCode Bgt_Un_S
+    content.vb: Public Shared ReadOnly Bgt_Un_S As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ble_Un_S
+  id: Ble_Un_S
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ble_Un_S
+  fullName: System.Reflection.Emit.OpCodes.Ble_Un_S
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 799
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Transfers control to a target instruction (short form) if the first value is less than or equal to the second value, when comparing unsigned integer values or unordered float values.
+  syntax:
+    content: public static readonly OpCode Ble_Un_S
+    content.vb: Public Shared ReadOnly Ble_Un_S As OpCode
+- uid: System.Reflection.Emit.OpCodes.Blt_Un_S
+  id: Blt_Un_S
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Blt_Un_S
+  fullName: System.Reflection.Emit.OpCodes.Blt_Un_S
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 809
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Transfers control to a target instruction (short form) if the first value is less than the second value, when comparing unsigned integer values or unordered float values.
+  syntax:
+    content: public static readonly OpCode Blt_Un_S
+    content.vb: Public Shared ReadOnly Blt_Un_S As OpCode
+- uid: System.Reflection.Emit.OpCodes.Br
+  id: Br
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Br
+  fullName: System.Reflection.Emit.OpCodes.Br
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 819
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Unconditionally transfers control to a target instruction.
+  syntax:
+    content: public static readonly OpCode Br
+    content.vb: Public Shared ReadOnly Br As OpCode
+- uid: System.Reflection.Emit.OpCodes.Brfalse
+  id: Brfalse
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Brfalse
+  fullName: System.Reflection.Emit.OpCodes.Brfalse
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 830
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Transfers control to a target instruction if *value* is false, a null reference (Nothing in Visual Basic), or zero.
+  syntax:
+    content: public static readonly OpCode Brfalse
+    content.vb: Public Shared ReadOnly Brfalse As OpCode
+- uid: System.Reflection.Emit.OpCodes.Brtrue
+  id: Brtrue
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Brtrue
+  fullName: System.Reflection.Emit.OpCodes.Brtrue
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 840
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Transfers control to a target instruction if *value* is true, not null, or non-zero.
+  syntax:
+    content: public static readonly OpCode Brtrue
+    content.vb: Public Shared ReadOnly Brtrue As OpCode
+- uid: System.Reflection.Emit.OpCodes.Beq
+  id: Beq
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Beq
+  fullName: System.Reflection.Emit.OpCodes.Beq
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 850
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Transfers control to a target instruction if two values are equal.
+  syntax:
+    content: public static readonly OpCode Beq
+    content.vb: Public Shared ReadOnly Beq As OpCode
+- uid: System.Reflection.Emit.OpCodes.Bge
+  id: Bge
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Bge
+  fullName: System.Reflection.Emit.OpCodes.Bge
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 860
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Transfers control to a target instruction if the first value is greater than or equal to the second value.
+  syntax:
+    content: public static readonly OpCode Bge
+    content.vb: Public Shared ReadOnly Bge As OpCode
+- uid: System.Reflection.Emit.OpCodes.Bgt
+  id: Bgt
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Bgt
+  fullName: System.Reflection.Emit.OpCodes.Bgt
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 870
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Transfers control to a target instruction if the first value is greater than the second value.
+  syntax:
+    content: public static readonly OpCode Bgt
+    content.vb: Public Shared ReadOnly Bgt As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ble
+  id: Ble
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ble
+  fullName: System.Reflection.Emit.OpCodes.Ble
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 880
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Transfers control to a target instruction if the first value is less than or equal to the second value.
+  syntax:
+    content: public static readonly OpCode Ble
+    content.vb: Public Shared ReadOnly Ble As OpCode
+- uid: System.Reflection.Emit.OpCodes.Blt
+  id: Blt
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Blt
+  fullName: System.Reflection.Emit.OpCodes.Blt
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 890
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Transfers control to a target instruction if the first value is less than the second value.
+  syntax:
+    content: public static readonly OpCode Blt
+    content.vb: Public Shared ReadOnly Blt As OpCode
+- uid: System.Reflection.Emit.OpCodes.Bne_Un
+  id: Bne_Un
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Bne_Un
+  fullName: System.Reflection.Emit.OpCodes.Bne_Un
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 900
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Transfers control to a target instruction when two unsigned integer values or unordered float values are not equal.
+  syntax:
+    content: public static readonly OpCode Bne_Un
+    content.vb: Public Shared ReadOnly Bne_Un As OpCode
+- uid: System.Reflection.Emit.OpCodes.Bge_Un
+  id: Bge_Un
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Bge_Un
+  fullName: System.Reflection.Emit.OpCodes.Bge_Un
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 910
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Transfers control to a target instruction if the first value is greater than the second value, when comparing unsigned integer values or unordered float values.
+  syntax:
+    content: public static readonly OpCode Bge_Un
+    content.vb: Public Shared ReadOnly Bge_Un As OpCode
+- uid: System.Reflection.Emit.OpCodes.Bgt_Un
+  id: Bgt_Un
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Bgt_Un
+  fullName: System.Reflection.Emit.OpCodes.Bgt_Un
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 920
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Transfers control to a target instruction if the first value is greater than the second value, when comparing unsigned integer values or unordered float values.
+  syntax:
+    content: public static readonly OpCode Bgt_Un
+    content.vb: Public Shared ReadOnly Bgt_Un As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ble_Un
+  id: Ble_Un
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ble_Un
+  fullName: System.Reflection.Emit.OpCodes.Ble_Un
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 930
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Transfers control to a target instruction if the first value is less than or equal to the second value, when comparing unsigned integer values or unordered float values.
+  syntax:
+    content: public static readonly OpCode Ble_Un
+    content.vb: Public Shared ReadOnly Ble_Un As OpCode
+- uid: System.Reflection.Emit.OpCodes.Blt_Un
+  id: Blt_Un
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Blt_Un
+  fullName: System.Reflection.Emit.OpCodes.Blt_Un
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 940
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Transfers control to a target instruction if the first value is less than the second value, when comparing unsigned integer values or unordered float values.
+  syntax:
+    content: public static readonly OpCode Blt_Un
+    content.vb: Public Shared ReadOnly Blt_Un As OpCode
+- uid: System.Reflection.Emit.OpCodes.Switch
+  id: Switch
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Switch
+  fullName: System.Reflection.Emit.OpCodes.Switch
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 950
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Implements a jump table.
+  syntax:
+    content: public static readonly OpCode Switch
+    content.vb: Public Shared ReadOnly Switch As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldind_I1
+  id: Ldind_I1
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldind_I1
+  fullName: System.Reflection.Emit.OpCodes.Ldind_I1
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 960
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Loads a value of type int8 as an int32 onto the evaluation stack indirectly.
+  syntax:
+    content: public static readonly OpCode Ldind_I1
+    content.vb: Public Shared ReadOnly Ldind_I1 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldind_U1
+  id: Ldind_U1
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldind_U1
+  fullName: System.Reflection.Emit.OpCodes.Ldind_U1
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 970
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Loads a value of type unsigned int8 as an int32 onto the evaluation stack indirectly.
+  syntax:
+    content: public static readonly OpCode Ldind_U1
+    content.vb: Public Shared ReadOnly Ldind_U1 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldind_I2
+  id: Ldind_I2
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldind_I2
+  fullName: System.Reflection.Emit.OpCodes.Ldind_I2
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 980
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Loads a value of type int16 as an int32 onto the evaluation stack indirectly.
+  syntax:
+    content: public static readonly OpCode Ldind_I2
+    content.vb: Public Shared ReadOnly Ldind_I2 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldind_U2
+  id: Ldind_U2
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldind_U2
+  fullName: System.Reflection.Emit.OpCodes.Ldind_U2
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 990
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Loads a value of type unsigned int16 as an int32 onto the evaluation stack indirectly.
+  syntax:
+    content: public static readonly OpCode Ldind_U2
+    content.vb: Public Shared ReadOnly Ldind_U2 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldind_I4
+  id: Ldind_I4
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldind_I4
+  fullName: System.Reflection.Emit.OpCodes.Ldind_I4
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1000
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Loads a value of type int32 as an int32 onto the evaluation stack indirectly.
+  syntax:
+    content: public static readonly OpCode Ldind_I4
+    content.vb: Public Shared ReadOnly Ldind_I4 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldind_U4
+  id: Ldind_U4
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldind_U4
+  fullName: System.Reflection.Emit.OpCodes.Ldind_U4
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1010
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Loads a value of type unsigned int32 as an int32 onto the evaluation stack indirectly.
+  syntax:
+    content: public static readonly OpCode Ldind_U4
+    content.vb: Public Shared ReadOnly Ldind_U4 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldind_I8
+  id: Ldind_I8
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldind_I8
+  fullName: System.Reflection.Emit.OpCodes.Ldind_I8
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1020
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Loads a value of type int64 as an int64 onto the evaluation stack indirectly.
+  syntax:
+    content: public static readonly OpCode Ldind_I8
+    content.vb: Public Shared ReadOnly Ldind_I8 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldind_I
+  id: Ldind_I
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldind_I
+  fullName: System.Reflection.Emit.OpCodes.Ldind_I
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1030
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Loads a value of type native int as a native int onto the evaluation stack indirectly.
+  syntax:
+    content: public static readonly OpCode Ldind_I
+    content.vb: Public Shared ReadOnly Ldind_I As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldind_R4
+  id: Ldind_R4
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldind_R4
+  fullName: System.Reflection.Emit.OpCodes.Ldind_R4
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1040
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Loads a value of type float32 as a type F (float) onto the evaluation stack indirectly.
+  syntax:
+    content: public static readonly OpCode Ldind_R4
+    content.vb: Public Shared ReadOnly Ldind_R4 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldind_R8
+  id: Ldind_R8
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldind_R8
+  fullName: System.Reflection.Emit.OpCodes.Ldind_R8
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1050
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Loads a value of type float64 as a type F (float) onto the evaluation stack indirectly.
+  syntax:
+    content: public static readonly OpCode Ldind_R8
+    content.vb: Public Shared ReadOnly Ldind_R8 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldind_Ref
+  id: Ldind_Ref
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldind_Ref
+  fullName: System.Reflection.Emit.OpCodes.Ldind_Ref
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1060
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Loads an object reference as a type O (object reference) onto the evaluation stack indirectly.
+  syntax:
+    content: public static readonly OpCode Ldind_Ref
+    content.vb: Public Shared ReadOnly Ldind_Ref As OpCode
+- uid: System.Reflection.Emit.OpCodes.Stind_Ref
+  id: Stind_Ref
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Stind_Ref
+  fullName: System.Reflection.Emit.OpCodes.Stind_Ref
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1070
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Stores a object reference value at a supplied address.
+  syntax:
+    content: public static readonly OpCode Stind_Ref
+    content.vb: Public Shared ReadOnly Stind_Ref As OpCode
+- uid: System.Reflection.Emit.OpCodes.Stind_I1
+  id: Stind_I1
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Stind_I1
+  fullName: System.Reflection.Emit.OpCodes.Stind_I1
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1080
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Stores a value of type int8 at a supplied address.
+  syntax:
+    content: public static readonly OpCode Stind_I1
+    content.vb: Public Shared ReadOnly Stind_I1 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Stind_I2
+  id: Stind_I2
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Stind_I2
+  fullName: System.Reflection.Emit.OpCodes.Stind_I2
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1090
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Stores a value of type int16 at a supplied address.
+  syntax:
+    content: public static readonly OpCode Stind_I2
+    content.vb: Public Shared ReadOnly Stind_I2 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Stind_I4
+  id: Stind_I4
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Stind_I4
+  fullName: System.Reflection.Emit.OpCodes.Stind_I4
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1100
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Stores a value of type int32 at a supplied address.
+  syntax:
+    content: public static readonly OpCode Stind_I4
+    content.vb: Public Shared ReadOnly Stind_I4 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Stind_I8
+  id: Stind_I8
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Stind_I8
+  fullName: System.Reflection.Emit.OpCodes.Stind_I8
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1110
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Stores a value of type int64 at a supplied address.
+  syntax:
+    content: public static readonly OpCode Stind_I8
+    content.vb: Public Shared ReadOnly Stind_I8 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Stind_R4
+  id: Stind_R4
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Stind_R4
+  fullName: System.Reflection.Emit.OpCodes.Stind_R4
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1120
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Stores a value of type float32 at a supplied address.
+  syntax:
+    content: public static readonly OpCode Stind_R4
+    content.vb: Public Shared ReadOnly Stind_R4 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Stind_R8
+  id: Stind_R8
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Stind_R8
+  fullName: System.Reflection.Emit.OpCodes.Stind_R8
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1130
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Stores a value of type float64 at a supplied address.
+  syntax:
+    content: public static readonly OpCode Stind_R8
+    content.vb: Public Shared ReadOnly Stind_R8 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Add
+  id: Add
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Add
+  fullName: System.Reflection.Emit.OpCodes.Add
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1140
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Adds two values and pushes the result onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Add
+    content.vb: Public Shared ReadOnly Add As OpCode
+- uid: System.Reflection.Emit.OpCodes.Sub
+  id: Sub
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Sub
+  fullName: System.Reflection.Emit.OpCodes.Sub
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1150
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Subtracts one value from another and pushes the result onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Sub
+    content.vb: Public Shared ReadOnly Sub As OpCode
+- uid: System.Reflection.Emit.OpCodes.Mul
+  id: Mul
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Mul
+  fullName: System.Reflection.Emit.OpCodes.Mul
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1160
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Multiplies two values and pushes the result on the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Mul
+    content.vb: Public Shared ReadOnly Mul As OpCode
+- uid: System.Reflection.Emit.OpCodes.Div
+  id: Div
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Div
+  fullName: System.Reflection.Emit.OpCodes.Div
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1170
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Divides two values and pushes the result as a floating-point (type F) or quotient (type int32) onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Div
+    content.vb: Public Shared ReadOnly Div As OpCode
+- uid: System.Reflection.Emit.OpCodes.Div_Un
+  id: Div_Un
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Div_Un
+  fullName: System.Reflection.Emit.OpCodes.Div_Un
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1180
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Divides two unsigned integer values and pushes the result (int32) onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Div_Un
+    content.vb: Public Shared ReadOnly Div_Un As OpCode
+- uid: System.Reflection.Emit.OpCodes.Rem
+  id: Rem
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Rem
+  fullName: System.Reflection.Emit.OpCodes.Rem
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1190
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Divides two values and pushes the remainder onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Rem
+    content.vb: Public Shared ReadOnly Rem As OpCode
+- uid: System.Reflection.Emit.OpCodes.Rem_Un
+  id: Rem_Un
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Rem_Un
+  fullName: System.Reflection.Emit.OpCodes.Rem_Un
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1200
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Divides two unsigned values and pushes the remainder onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Rem_Un
+    content.vb: Public Shared ReadOnly Rem_Un As OpCode
+- uid: System.Reflection.Emit.OpCodes.And
+  id: And
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: And
+  fullName: System.Reflection.Emit.OpCodes.And
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1210
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Computes the bitwise AND of two values and pushes the result onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode And
+    content.vb: Public Shared ReadOnly And As OpCode
+- uid: System.Reflection.Emit.OpCodes.Or
+  id: Or
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Or
+  fullName: System.Reflection.Emit.OpCodes.Or
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1220
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Compute the bitwise complement of the two integer values on top of the stack and pushes the result onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Or
+    content.vb: Public Shared ReadOnly Or As OpCode
+- uid: System.Reflection.Emit.OpCodes.Xor
+  id: Xor
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Xor
+  fullName: System.Reflection.Emit.OpCodes.Xor
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1230
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Computes the bitwise XOR of the top two values on the evaluation stack, pushing the result onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Xor
+    content.vb: Public Shared ReadOnly Xor As OpCode
+- uid: System.Reflection.Emit.OpCodes.Shl
+  id: Shl
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Shl
+  fullName: System.Reflection.Emit.OpCodes.Shl
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1240
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Shifts an integer value to the left (in zeroes) by a specified number of bits, pushing the result onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Shl
+    content.vb: Public Shared ReadOnly Shl As OpCode
+- uid: System.Reflection.Emit.OpCodes.Shr
+  id: Shr
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Shr
+  fullName: System.Reflection.Emit.OpCodes.Shr
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1250
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Shifts an integer value (in sign) to the right by a specified number of bits, pushing the result onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Shr
+    content.vb: Public Shared ReadOnly Shr As OpCode
+- uid: System.Reflection.Emit.OpCodes.Shr_Un
+  id: Shr_Un
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Shr_Un
+  fullName: System.Reflection.Emit.OpCodes.Shr_Un
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1260
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Shifts an unsigned integer value (in zeroes) to the right by a specified number of bits, pushing the result onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Shr_Un
+    content.vb: Public Shared ReadOnly Shr_Un As OpCode
+- uid: System.Reflection.Emit.OpCodes.Neg
+  id: Neg
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Neg
+  fullName: System.Reflection.Emit.OpCodes.Neg
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1270
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Negates a value and pushes the result onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Neg
+    content.vb: Public Shared ReadOnly Neg As OpCode
+- uid: System.Reflection.Emit.OpCodes.Not
+  id: Not
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Not
+  fullName: System.Reflection.Emit.OpCodes.Not
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1280
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Computes the bitwise complement of the integer value on top of the stack and pushes the result onto the evaluation stack as the same type.
+  syntax:
+    content: public static readonly OpCode Not
+    content.vb: Public Shared ReadOnly Not As OpCode
+- uid: System.Reflection.Emit.OpCodes.Conv_I1
+  id: Conv_I1
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Conv_I1
+  fullName: System.Reflection.Emit.OpCodes.Conv_I1
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1290
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Converts the value on top of the evaluation stack to int8, then extends (pads) it to int32.
+  syntax:
+    content: public static readonly OpCode Conv_I1
+    content.vb: Public Shared ReadOnly Conv_I1 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Conv_I2
+  id: Conv_I2
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Conv_I2
+  fullName: System.Reflection.Emit.OpCodes.Conv_I2
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1300
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Converts the value on top of the evaluation stack to int16, then extends (pads) it to int32.
+  syntax:
+    content: public static readonly OpCode Conv_I2
+    content.vb: Public Shared ReadOnly Conv_I2 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Conv_I4
+  id: Conv_I4
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Conv_I4
+  fullName: System.Reflection.Emit.OpCodes.Conv_I4
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1310
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Converts the value on top of the evaluation stack to int32.
+  syntax:
+    content: public static readonly OpCode Conv_I4
+    content.vb: Public Shared ReadOnly Conv_I4 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Conv_I8
+  id: Conv_I8
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Conv_I8
+  fullName: System.Reflection.Emit.OpCodes.Conv_I8
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1320
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Converts the value on top of the evaluation stack to int64.
+  syntax:
+    content: public static readonly OpCode Conv_I8
+    content.vb: Public Shared ReadOnly Conv_I8 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Conv_R4
+  id: Conv_R4
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Conv_R4
+  fullName: System.Reflection.Emit.OpCodes.Conv_R4
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1330
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Converts the value on top of the evaluation stack to float32.
+  syntax:
+    content: public static readonly OpCode Conv_R4
+    content.vb: Public Shared ReadOnly Conv_R4 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Conv_R8
+  id: Conv_R8
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Conv_R8
+  fullName: System.Reflection.Emit.OpCodes.Conv_R8
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1340
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Converts the value on top of the evaluation stack to float64.
+  syntax:
+    content: public static readonly OpCode Conv_R8
+    content.vb: Public Shared ReadOnly Conv_R8 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Conv_U4
+  id: Conv_U4
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Conv_U4
+  fullName: System.Reflection.Emit.OpCodes.Conv_U4
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1350
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Converts the value on top of the evaluation stack to unsigned int32, and extends it to int32.
+  syntax:
+    content: public static readonly OpCode Conv_U4
+    content.vb: Public Shared ReadOnly Conv_U4 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Conv_U8
+  id: Conv_U8
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Conv_U8
+  fullName: System.Reflection.Emit.OpCodes.Conv_U8
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1360
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Converts the value on top of the evaluation stack to unsigned int64, and extends it to int64.
+  syntax:
+    content: public static readonly OpCode Conv_U8
+    content.vb: Public Shared ReadOnly Conv_U8 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Callvirt
+  id: Callvirt
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Callvirt
+  fullName: System.Reflection.Emit.OpCodes.Callvirt
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1370
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Calls a late-bound method on an object, pushing the return value onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Callvirt
+    content.vb: Public Shared ReadOnly Callvirt As OpCode
+- uid: System.Reflection.Emit.OpCodes.Cpobj
+  id: Cpobj
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Cpobj
+  fullName: System.Reflection.Emit.OpCodes.Cpobj
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1380
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Copies the value type located at the address of an object (type &amp;, * or native int) to the address of the destination object (type &amp;, * or native int).
+  syntax:
+    content: public static readonly OpCode Cpobj
+    content.vb: Public Shared ReadOnly Cpobj As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldobj
+  id: Ldobj
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldobj
+  fullName: System.Reflection.Emit.OpCodes.Ldobj
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1390
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Copies the value type object pointed to by an address to the top of the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Ldobj
+    content.vb: Public Shared ReadOnly Ldobj As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldstr
+  id: Ldstr
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldstr
+  fullName: System.Reflection.Emit.OpCodes.Ldstr
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1400
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Pushes a new object reference to a string literal stored in the metadata.
+  syntax:
+    content: public static readonly OpCode Ldstr
+    content.vb: Public Shared ReadOnly Ldstr As OpCode
+- uid: System.Reflection.Emit.OpCodes.Newobj
+  id: Newobj
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Newobj
+  fullName: System.Reflection.Emit.OpCodes.Newobj
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1410
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Creates a new object or a new instance of a value type, pushing an object reference (type O) onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Newobj
+    content.vb: Public Shared ReadOnly Newobj As OpCode
+- uid: System.Reflection.Emit.OpCodes.Castclass
+  id: Castclass
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Castclass
+  fullName: System.Reflection.Emit.OpCodes.Castclass
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1421
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Attempts to cast an object passed by reference to the specified class.
+  syntax:
+    content: public static readonly OpCode Castclass
+    content.vb: Public Shared ReadOnly Castclass As OpCode
+- uid: System.Reflection.Emit.OpCodes.Isinst
+  id: Isinst
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Isinst
+  fullName: System.Reflection.Emit.OpCodes.Isinst
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1431
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Tests whether an object reference (type O) is an instance of a particular class.
+  syntax:
+    content: public static readonly OpCode Isinst
+    content.vb: Public Shared ReadOnly Isinst As OpCode
+- uid: System.Reflection.Emit.OpCodes.Conv_R_Un
+  id: Conv_R_Un
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Conv_R_Un
+  fullName: System.Reflection.Emit.OpCodes.Conv_R_Un
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1441
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Converts the unsigned integer value on top of the evaluation stack to float32.
+  syntax:
+    content: public static readonly OpCode Conv_R_Un
+    content.vb: Public Shared ReadOnly Conv_R_Un As OpCode
+- uid: System.Reflection.Emit.OpCodes.Unbox
+  id: Unbox
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Unbox
+  fullName: System.Reflection.Emit.OpCodes.Unbox
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1451
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Converts the boxed representation of a value type to its unboxed form.
+  syntax:
+    content: public static readonly OpCode Unbox
+    content.vb: Public Shared ReadOnly Unbox As OpCode
+- uid: System.Reflection.Emit.OpCodes.Throw
+  id: Throw
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Throw
+  fullName: System.Reflection.Emit.OpCodes.Throw
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1461
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Throws the exception object currently on the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Throw
+    content.vb: Public Shared ReadOnly Throw As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldfld
+  id: Ldfld
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldfld
+  fullName: System.Reflection.Emit.OpCodes.Ldfld
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1472
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Finds the value of a field in the object whose reference is currently on the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Ldfld
+    content.vb: Public Shared ReadOnly Ldfld As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldflda
+  id: Ldflda
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldflda
+  fullName: System.Reflection.Emit.OpCodes.Ldflda
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1482
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Finds the address of a field in the object whose reference is currently on the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Ldflda
+    content.vb: Public Shared ReadOnly Ldflda As OpCode
+- uid: System.Reflection.Emit.OpCodes.Stfld
+  id: Stfld
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Stfld
+  fullName: System.Reflection.Emit.OpCodes.Stfld
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1492
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Replaces the value stored in the field of an object reference or pointer with a new value.
+  syntax:
+    content: public static readonly OpCode Stfld
+    content.vb: Public Shared ReadOnly Stfld As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldsfld
+  id: Ldsfld
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldsfld
+  fullName: System.Reflection.Emit.OpCodes.Ldsfld
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1502
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Pushes the value of a static field onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Ldsfld
+    content.vb: Public Shared ReadOnly Ldsfld As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldsflda
+  id: Ldsflda
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldsflda
+  fullName: System.Reflection.Emit.OpCodes.Ldsflda
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1512
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Pushes the address of a static field onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Ldsflda
+    content.vb: Public Shared ReadOnly Ldsflda As OpCode
+- uid: System.Reflection.Emit.OpCodes.Stsfld
+  id: Stsfld
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Stsfld
+  fullName: System.Reflection.Emit.OpCodes.Stsfld
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1522
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Replaces the value of a static field with a value from the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Stsfld
+    content.vb: Public Shared ReadOnly Stsfld As OpCode
+- uid: System.Reflection.Emit.OpCodes.Stobj
+  id: Stobj
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Stobj
+  fullName: System.Reflection.Emit.OpCodes.Stobj
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1532
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Copies a value of a specified type from the evaluation stack into a supplied memory address.
+  syntax:
+    content: public static readonly OpCode Stobj
+    content.vb: Public Shared ReadOnly Stobj As OpCode
+- uid: System.Reflection.Emit.OpCodes.Conv_Ovf_I1_Un
+  id: Conv_Ovf_I1_Un
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Conv_Ovf_I1_Un
+  fullName: System.Reflection.Emit.OpCodes.Conv_Ovf_I1_Un
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1542
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Converts the unsigned value on top of the evaluation stack to signed int8 and extends it to int32, throwing @'System.OverflowException' on overflow.
+  syntax:
+    content: public static readonly OpCode Conv_Ovf_I1_Un
+    content.vb: Public Shared ReadOnly Conv_Ovf_I1_Un As OpCode
+- uid: System.Reflection.Emit.OpCodes.Conv_Ovf_I2_Un
+  id: Conv_Ovf_I2_Un
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Conv_Ovf_I2_Un
+  fullName: System.Reflection.Emit.OpCodes.Conv_Ovf_I2_Un
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1552
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Converts the unsigned value on top of the evaluation stack to signed int16 and extends it to int32, throwing @'System.OverflowException' on overflow.
+  syntax:
+    content: public static readonly OpCode Conv_Ovf_I2_Un
+    content.vb: Public Shared ReadOnly Conv_Ovf_I2_Un As OpCode
+- uid: System.Reflection.Emit.OpCodes.Conv_Ovf_I4_Un
+  id: Conv_Ovf_I4_Un
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Conv_Ovf_I4_Un
+  fullName: System.Reflection.Emit.OpCodes.Conv_Ovf_I4_Un
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1562
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Converts the unsigned value on top of the evaluation stack to signed int32, throwing @'System.OverflowException' on overflow.
+  syntax:
+    content: public static readonly OpCode Conv_Ovf_I4_Un
+    content.vb: Public Shared ReadOnly Conv_Ovf_I4_Un As OpCode
+- uid: System.Reflection.Emit.OpCodes.Conv_Ovf_I8_Un
+  id: Conv_Ovf_I8_Un
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Conv_Ovf_I8_Un
+  fullName: System.Reflection.Emit.OpCodes.Conv_Ovf_I8_Un
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1572
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Converts the unsigned value on top of the evaluation stack to signed int64, throwing @'System.OverflowException' on overflow.
+  syntax:
+    content: public static readonly OpCode Conv_Ovf_I8_Un
+    content.vb: Public Shared ReadOnly Conv_Ovf_I8_Un As OpCode
+- uid: System.Reflection.Emit.OpCodes.Conv_Ovf_U1_Un
+  id: Conv_Ovf_U1_Un
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Conv_Ovf_U1_Un
+  fullName: System.Reflection.Emit.OpCodes.Conv_Ovf_U1_Un
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1582
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Converts the unsigned value on top of the evaluation stack to unsigned int8 and extends it to int32, throwing @'System.OverflowException' on overflow.
+  syntax:
+    content: public static readonly OpCode Conv_Ovf_U1_Un
+    content.vb: Public Shared ReadOnly Conv_Ovf_U1_Un As OpCode
+- uid: System.Reflection.Emit.OpCodes.Conv_Ovf_U2_Un
+  id: Conv_Ovf_U2_Un
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Conv_Ovf_U2_Un
+  fullName: System.Reflection.Emit.OpCodes.Conv_Ovf_U2_Un
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1592
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Converts the unsigned value on top of the evaluation stack to unsigned int16 and extends it to int32, throwing @'System.OverflowException' on overflow.
+  syntax:
+    content: public static readonly OpCode Conv_Ovf_U2_Un
+    content.vb: Public Shared ReadOnly Conv_Ovf_U2_Un As OpCode
+- uid: System.Reflection.Emit.OpCodes.Conv_Ovf_U4_Un
+  id: Conv_Ovf_U4_Un
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Conv_Ovf_U4_Un
+  fullName: System.Reflection.Emit.OpCodes.Conv_Ovf_U4_Un
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1602
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Converts the unsigned value on top of the evaluation stack to unsigned int32, throwing @'System.OverflowException' on overflow.
+  syntax:
+    content: public static readonly OpCode Conv_Ovf_U4_Un
+    content.vb: Public Shared ReadOnly Conv_Ovf_U4_Un As OpCode
+- uid: System.Reflection.Emit.OpCodes.Conv_Ovf_U8_Un
+  id: Conv_Ovf_U8_Un
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Conv_Ovf_U8_Un
+  fullName: System.Reflection.Emit.OpCodes.Conv_Ovf_U8_Un
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1612
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Converts the unsigned value on top of the evaluation stack to unsigned int64, throwing @'System.OverflowException' on overflow.
+  syntax:
+    content: public static readonly OpCode Conv_Ovf_U8_Un
+    content.vb: Public Shared ReadOnly Conv_Ovf_U8_Un As OpCode
+- uid: System.Reflection.Emit.OpCodes.Conv_Ovf_I_Un
+  id: Conv_Ovf_I_Un
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Conv_Ovf_I_Un
+  fullName: System.Reflection.Emit.OpCodes.Conv_Ovf_I_Un
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1622
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Converts the unsigned value on top of the evaluation stack to signed native int, throwing @'System.OverflowException' on overflow.
+  syntax:
+    content: public static readonly OpCode Conv_Ovf_I_Un
+    content.vb: Public Shared ReadOnly Conv_Ovf_I_Un As OpCode
+- uid: System.Reflection.Emit.OpCodes.Conv_Ovf_U_Un
+  id: Conv_Ovf_U_Un
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Conv_Ovf_U_Un
+  fullName: System.Reflection.Emit.OpCodes.Conv_Ovf_U_Un
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1632
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Converts the unsigned value on top of the evaluation stack to unsigned native int, throwing @'System.OverflowException' on overflow.
+  syntax:
+    content: public static readonly OpCode Conv_Ovf_U_Un
+    content.vb: Public Shared ReadOnly Conv_Ovf_U_Un As OpCode
+- uid: System.Reflection.Emit.OpCodes.Box
+  id: Box
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Box
+  fullName: System.Reflection.Emit.OpCodes.Box
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1642
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Converts a value type to an object reference (type O).
+  syntax:
+    content: public static readonly OpCode Box
+    content.vb: Public Shared ReadOnly Box As OpCode
+- uid: System.Reflection.Emit.OpCodes.Newarr
+  id: Newarr
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Newarr
+  fullName: System.Reflection.Emit.OpCodes.Newarr
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1652
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Pushes an object reference to a new zero-based, one-dimensional array whose elements are of a specific type onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Newarr
+    content.vb: Public Shared ReadOnly Newarr As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldlen
+  id: Ldlen
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldlen
+  fullName: System.Reflection.Emit.OpCodes.Ldlen
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1662
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Pushes the number of elements of a zero-based, one-dimensional array onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Ldlen
+    content.vb: Public Shared ReadOnly Ldlen As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldelema
+  id: Ldelema
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldelema
+  fullName: System.Reflection.Emit.OpCodes.Ldelema
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1672
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Loads the address of the array element at a specified array index onto the top of the evaluation stack as type &amp; (managed pointer).
+  syntax:
+    content: public static readonly OpCode Ldelema
+    content.vb: Public Shared ReadOnly Ldelema As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldelem_I1
+  id: Ldelem_I1
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldelem_I1
+  fullName: System.Reflection.Emit.OpCodes.Ldelem_I1
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1682
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Loads the element with type int8 at a specified array index onto the top of the evaluation stack as an int32.
+  syntax:
+    content: public static readonly OpCode Ldelem_I1
+    content.vb: Public Shared ReadOnly Ldelem_I1 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldelem_U1
+  id: Ldelem_U1
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldelem_U1
+  fullName: System.Reflection.Emit.OpCodes.Ldelem_U1
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1692
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Loads the element with type unsigned int8 at a specified array index onto the top of the evaluation stack as an int32.
+  syntax:
+    content: public static readonly OpCode Ldelem_U1
+    content.vb: Public Shared ReadOnly Ldelem_U1 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldelem_I2
+  id: Ldelem_I2
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldelem_I2
+  fullName: System.Reflection.Emit.OpCodes.Ldelem_I2
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1702
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Loads the element with type int16 at a specified array index onto the top of the evaluation stack as an int32.
+  syntax:
+    content: public static readonly OpCode Ldelem_I2
+    content.vb: Public Shared ReadOnly Ldelem_I2 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldelem_U2
+  id: Ldelem_U2
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldelem_U2
+  fullName: System.Reflection.Emit.OpCodes.Ldelem_U2
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1712
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Loads the element with type unsigned int16 at a specified array index onto the top of the evaluation stack as an int32.
+  syntax:
+    content: public static readonly OpCode Ldelem_U2
+    content.vb: Public Shared ReadOnly Ldelem_U2 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldelem_I4
+  id: Ldelem_I4
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldelem_I4
+  fullName: System.Reflection.Emit.OpCodes.Ldelem_I4
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1722
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Loads the element with type int32 at a specified array index onto the top of the evaluation stack as an int32.
+  syntax:
+    content: public static readonly OpCode Ldelem_I4
+    content.vb: Public Shared ReadOnly Ldelem_I4 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldelem_U4
+  id: Ldelem_U4
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldelem_U4
+  fullName: System.Reflection.Emit.OpCodes.Ldelem_U4
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1732
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Loads the element with type unsigned int32 at a specified array index onto the top of the evaluation stack as an int32.
+  syntax:
+    content: public static readonly OpCode Ldelem_U4
+    content.vb: Public Shared ReadOnly Ldelem_U4 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldelem_I8
+  id: Ldelem_I8
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldelem_I8
+  fullName: System.Reflection.Emit.OpCodes.Ldelem_I8
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1742
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Loads the element with type int64 at a specified array index onto the top of the evaluation stack as an int64.
+  syntax:
+    content: public static readonly OpCode Ldelem_I8
+    content.vb: Public Shared ReadOnly Ldelem_I8 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldelem_I
+  id: Ldelem_I
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldelem_I
+  fullName: System.Reflection.Emit.OpCodes.Ldelem_I
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1752
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Loads the element with type native int at a specified array index onto the top of the evaluation stack as a native int.
+  syntax:
+    content: public static readonly OpCode Ldelem_I
+    content.vb: Public Shared ReadOnly Ldelem_I As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldelem_R4
+  id: Ldelem_R4
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldelem_R4
+  fullName: System.Reflection.Emit.OpCodes.Ldelem_R4
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1762
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Loads the element with type float32 at a specified array index onto the top of the evaluation stack as type F (float).
+  syntax:
+    content: public static readonly OpCode Ldelem_R4
+    content.vb: Public Shared ReadOnly Ldelem_R4 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldelem_R8
+  id: Ldelem_R8
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldelem_R8
+  fullName: System.Reflection.Emit.OpCodes.Ldelem_R8
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1772
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Loads the element with type float64 at a specified array index onto the top of the evaluation stack as type F (float).
+  syntax:
+    content: public static readonly OpCode Ldelem_R8
+    content.vb: Public Shared ReadOnly Ldelem_R8 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldelem_Ref
+  id: Ldelem_Ref
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldelem_Ref
+  fullName: System.Reflection.Emit.OpCodes.Ldelem_Ref
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1782
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Loads the element containing an object reference at a specified array index onto the top of the evaluation stack as type O (object reference).
+  syntax:
+    content: public static readonly OpCode Ldelem_Ref
+    content.vb: Public Shared ReadOnly Ldelem_Ref As OpCode
+- uid: System.Reflection.Emit.OpCodes.Stelem_I
+  id: Stelem_I
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Stelem_I
+  fullName: System.Reflection.Emit.OpCodes.Stelem_I
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1792
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Replaces the array element at a given index with the native int value on the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Stelem_I
+    content.vb: Public Shared ReadOnly Stelem_I As OpCode
+- uid: System.Reflection.Emit.OpCodes.Stelem_I1
+  id: Stelem_I1
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Stelem_I1
+  fullName: System.Reflection.Emit.OpCodes.Stelem_I1
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1802
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Replaces the array element at a given index with the int8 value on the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Stelem_I1
+    content.vb: Public Shared ReadOnly Stelem_I1 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Stelem_I2
+  id: Stelem_I2
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Stelem_I2
+  fullName: System.Reflection.Emit.OpCodes.Stelem_I2
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1812
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Replaces the array element at a given index with the int16 value on the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Stelem_I2
+    content.vb: Public Shared ReadOnly Stelem_I2 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Stelem_I4
+  id: Stelem_I4
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Stelem_I4
+  fullName: System.Reflection.Emit.OpCodes.Stelem_I4
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1822
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Replaces the array element at a given index with the int32 value on the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Stelem_I4
+    content.vb: Public Shared ReadOnly Stelem_I4 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Stelem_I8
+  id: Stelem_I8
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Stelem_I8
+  fullName: System.Reflection.Emit.OpCodes.Stelem_I8
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1832
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Replaces the array element at a given index with the int64 value on the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Stelem_I8
+    content.vb: Public Shared ReadOnly Stelem_I8 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Stelem_R4
+  id: Stelem_R4
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Stelem_R4
+  fullName: System.Reflection.Emit.OpCodes.Stelem_R4
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1842
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Replaces the array element at a given index with the float32 value on the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Stelem_R4
+    content.vb: Public Shared ReadOnly Stelem_R4 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Stelem_R8
+  id: Stelem_R8
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Stelem_R8
+  fullName: System.Reflection.Emit.OpCodes.Stelem_R8
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1852
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Replaces the array element at a given index with the float64 value on the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Stelem_R8
+    content.vb: Public Shared ReadOnly Stelem_R8 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Stelem_Ref
+  id: Stelem_Ref
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Stelem_Ref
+  fullName: System.Reflection.Emit.OpCodes.Stelem_Ref
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1862
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Replaces the array element at a given index with the object ref value (type O) on the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Stelem_Ref
+    content.vb: Public Shared ReadOnly Stelem_Ref As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldelem
+  id: Ldelem
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldelem
+  fullName: System.Reflection.Emit.OpCodes.Ldelem
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1872
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Loads the element at a specified array index onto the top of the evaluation stack as the type specified in the instruction.
+  syntax:
+    content: public static readonly OpCode Ldelem
+    content.vb: Public Shared ReadOnly Ldelem As OpCode
+- uid: System.Reflection.Emit.OpCodes.Stelem
+  id: Stelem
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Stelem
+  fullName: System.Reflection.Emit.OpCodes.Stelem
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1882
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Replaces the array element at a given index with the value on the evaluation stack, whose type is specified in the instruction.
+  syntax:
+    content: public static readonly OpCode Stelem
+    content.vb: Public Shared ReadOnly Stelem As OpCode
+- uid: System.Reflection.Emit.OpCodes.Unbox_Any
+  id: Unbox_Any
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Unbox_Any
+  fullName: System.Reflection.Emit.OpCodes.Unbox_Any
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1892
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Converts the boxed representation of a type specified in the instruction to its unboxed form.
+  syntax:
+    content: public static readonly OpCode Unbox_Any
+    content.vb: Public Shared ReadOnly Unbox_Any As OpCode
+- uid: System.Reflection.Emit.OpCodes.Conv_Ovf_I1
+  id: Conv_Ovf_I1
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Conv_Ovf_I1
+  fullName: System.Reflection.Emit.OpCodes.Conv_Ovf_I1
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1902
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Converts the signed value on top of the evaluation stack to signed int8 and extends it to int32, throwing @'System.OverflowException' on overflow.
+  syntax:
+    content: public static readonly OpCode Conv_Ovf_I1
+    content.vb: Public Shared ReadOnly Conv_Ovf_I1 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Conv_Ovf_U1
+  id: Conv_Ovf_U1
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Conv_Ovf_U1
+  fullName: System.Reflection.Emit.OpCodes.Conv_Ovf_U1
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1912
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Converts the signed value on top of the evaluation stack to unsigned int8 and extends it to int32, throwing @'System.OverflowException' on overflow.
+  syntax:
+    content: public static readonly OpCode Conv_Ovf_U1
+    content.vb: Public Shared ReadOnly Conv_Ovf_U1 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Conv_Ovf_I2
+  id: Conv_Ovf_I2
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Conv_Ovf_I2
+  fullName: System.Reflection.Emit.OpCodes.Conv_Ovf_I2
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1922
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Converts the signed value on top of the evaluation stack to signed int16 and extending it to int32, throwing @'System.OverflowException' on overflow.
+  syntax:
+    content: public static readonly OpCode Conv_Ovf_I2
+    content.vb: Public Shared ReadOnly Conv_Ovf_I2 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Conv_Ovf_U2
+  id: Conv_Ovf_U2
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Conv_Ovf_U2
+  fullName: System.Reflection.Emit.OpCodes.Conv_Ovf_U2
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1932
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Converts the signed value on top of the evaluation stack to unsigned int16 and extends it to int32, throwing @'System.OverflowException' on overflow.
+  syntax:
+    content: public static readonly OpCode Conv_Ovf_U2
+    content.vb: Public Shared ReadOnly Conv_Ovf_U2 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Conv_Ovf_I4
+  id: Conv_Ovf_I4
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Conv_Ovf_I4
+  fullName: System.Reflection.Emit.OpCodes.Conv_Ovf_I4
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1942
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Converts the signed value on top of the evaluation stack to signed int32, throwing @'System.OverflowException' on overflow.
+  syntax:
+    content: public static readonly OpCode Conv_Ovf_I4
+    content.vb: Public Shared ReadOnly Conv_Ovf_I4 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Conv_Ovf_U4
+  id: Conv_Ovf_U4
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Conv_Ovf_U4
+  fullName: System.Reflection.Emit.OpCodes.Conv_Ovf_U4
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1952
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Converts the signed value on top of the evaluation stack to unsigned int32, throwing @'System.OverflowException' on overflow.
+  syntax:
+    content: public static readonly OpCode Conv_Ovf_U4
+    content.vb: Public Shared ReadOnly Conv_Ovf_U4 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Conv_Ovf_I8
+  id: Conv_Ovf_I8
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Conv_Ovf_I8
+  fullName: System.Reflection.Emit.OpCodes.Conv_Ovf_I8
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1962
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Converts the signed value on top of the evaluation stack to signed int64, throwing @'System.OverflowException' on overflow.
+  syntax:
+    content: public static readonly OpCode Conv_Ovf_I8
+    content.vb: Public Shared ReadOnly Conv_Ovf_I8 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Conv_Ovf_U8
+  id: Conv_Ovf_U8
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Conv_Ovf_U8
+  fullName: System.Reflection.Emit.OpCodes.Conv_Ovf_U8
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1972
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Converts the signed value on top of the evaluation stack to unsigned int64, throwing @'System.OverflowException' on overflow.
+  syntax:
+    content: public static readonly OpCode Conv_Ovf_U8
+    content.vb: Public Shared ReadOnly Conv_Ovf_U8 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Refanyval
+  id: Refanyval
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Refanyval
+  fullName: System.Reflection.Emit.OpCodes.Refanyval
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1982
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Retrieves the address (type &amp;) embedded in a typed reference.
+  syntax:
+    content: public static readonly OpCode Refanyval
+    content.vb: Public Shared ReadOnly Refanyval As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ckfinite
+  id: Ckfinite
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ckfinite
+  fullName: System.Reflection.Emit.OpCodes.Ckfinite
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 1992
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Throws @'System.ArithmeticException' if value is not a finite number.
+  syntax:
+    content: public static readonly OpCode Ckfinite
+    content.vb: Public Shared ReadOnly Ckfinite As OpCode
+- uid: System.Reflection.Emit.OpCodes.Mkrefany
+  id: Mkrefany
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Mkrefany
+  fullName: System.Reflection.Emit.OpCodes.Mkrefany
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2002
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Pushes a typed reference to an instance of a specific type onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Mkrefany
+    content.vb: Public Shared ReadOnly Mkrefany As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldtoken
+  id: Ldtoken
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldtoken
+  fullName: System.Reflection.Emit.OpCodes.Ldtoken
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2012
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Converts a metadata token to its runtime representation, pushing it onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Ldtoken
+    content.vb: Public Shared ReadOnly Ldtoken As OpCode
+- uid: System.Reflection.Emit.OpCodes.Conv_U2
+  id: Conv_U2
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Conv_U2
+  fullName: System.Reflection.Emit.OpCodes.Conv_U2
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2022
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Converts the value on top of the evaluation stack to unsigned int16, and extends it to int32.
+  syntax:
+    content: public static readonly OpCode Conv_U2
+    content.vb: Public Shared ReadOnly Conv_U2 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Conv_U1
+  id: Conv_U1
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Conv_U1
+  fullName: System.Reflection.Emit.OpCodes.Conv_U1
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2032
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Converts the value on top of the evaluation stack to unsigned int8, and extends it to int32.
+  syntax:
+    content: public static readonly OpCode Conv_U1
+    content.vb: Public Shared ReadOnly Conv_U1 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Conv_I
+  id: Conv_I
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Conv_I
+  fullName: System.Reflection.Emit.OpCodes.Conv_I
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2042
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Converts the value on top of the evaluation stack to native int.
+  syntax:
+    content: public static readonly OpCode Conv_I
+    content.vb: Public Shared ReadOnly Conv_I As OpCode
+- uid: System.Reflection.Emit.OpCodes.Conv_Ovf_I
+  id: Conv_Ovf_I
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Conv_Ovf_I
+  fullName: System.Reflection.Emit.OpCodes.Conv_Ovf_I
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2052
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Converts the signed value on top of the evaluation stack to signed native int, throwing @'System.OverflowException' on overflow.
+  syntax:
+    content: public static readonly OpCode Conv_Ovf_I
+    content.vb: Public Shared ReadOnly Conv_Ovf_I As OpCode
+- uid: System.Reflection.Emit.OpCodes.Conv_Ovf_U
+  id: Conv_Ovf_U
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Conv_Ovf_U
+  fullName: System.Reflection.Emit.OpCodes.Conv_Ovf_U
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2062
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Converts the signed value on top of the evaluation stack to unsigned native int, throwing @'System.OverflowException' on overflow.
+  syntax:
+    content: public static readonly OpCode Conv_Ovf_U
+    content.vb: Public Shared ReadOnly Conv_Ovf_U As OpCode
+- uid: System.Reflection.Emit.OpCodes.Add_Ovf
+  id: Add_Ovf
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Add_Ovf
+  fullName: System.Reflection.Emit.OpCodes.Add_Ovf
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2072
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Adds two integers, performs an overflow check, and pushes the result onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Add_Ovf
+    content.vb: Public Shared ReadOnly Add_Ovf As OpCode
+- uid: System.Reflection.Emit.OpCodes.Add_Ovf_Un
+  id: Add_Ovf_Un
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Add_Ovf_Un
+  fullName: System.Reflection.Emit.OpCodes.Add_Ovf_Un
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2082
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Adds two unsigned integer values, performs an overflow check, and pushes the result onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Add_Ovf_Un
+    content.vb: Public Shared ReadOnly Add_Ovf_Un As OpCode
+- uid: System.Reflection.Emit.OpCodes.Mul_Ovf
+  id: Mul_Ovf
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Mul_Ovf
+  fullName: System.Reflection.Emit.OpCodes.Mul_Ovf
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2092
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Multiplies two integer values, performs an overflow check, and pushes the result onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Mul_Ovf
+    content.vb: Public Shared ReadOnly Mul_Ovf As OpCode
+- uid: System.Reflection.Emit.OpCodes.Mul_Ovf_Un
+  id: Mul_Ovf_Un
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Mul_Ovf_Un
+  fullName: System.Reflection.Emit.OpCodes.Mul_Ovf_Un
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2102
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Multiplies two unsigned integer values, performs an overflow check, and pushes the result onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Mul_Ovf_Un
+    content.vb: Public Shared ReadOnly Mul_Ovf_Un As OpCode
+- uid: System.Reflection.Emit.OpCodes.Sub_Ovf
+  id: Sub_Ovf
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Sub_Ovf
+  fullName: System.Reflection.Emit.OpCodes.Sub_Ovf
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2112
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Subtracts one integer value from another, performs an overflow check, and pushes the result onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Sub_Ovf
+    content.vb: Public Shared ReadOnly Sub_Ovf As OpCode
+- uid: System.Reflection.Emit.OpCodes.Sub_Ovf_Un
+  id: Sub_Ovf_Un
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Sub_Ovf_Un
+  fullName: System.Reflection.Emit.OpCodes.Sub_Ovf_Un
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2122
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Subtracts one unsigned integer value from another, performs an overflow check, and pushes the result onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Sub_Ovf_Un
+    content.vb: Public Shared ReadOnly Sub_Ovf_Un As OpCode
+- uid: System.Reflection.Emit.OpCodes.Endfinally
+  id: Endfinally
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Endfinally
+  fullName: System.Reflection.Emit.OpCodes.Endfinally
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2132
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Transfers control from the fault or finally clause of an exception block back to the Common Language Infrastructure (CLI) exception handler.
+  syntax:
+    content: public static readonly OpCode Endfinally
+    content.vb: Public Shared ReadOnly Endfinally As OpCode
+- uid: System.Reflection.Emit.OpCodes.Leave
+  id: Leave
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Leave
+  fullName: System.Reflection.Emit.OpCodes.Leave
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2143
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Exits a protected region of code, unconditionally transferring control to a specific target instruction.
+  syntax:
+    content: public static readonly OpCode Leave
+    content.vb: Public Shared ReadOnly Leave As OpCode
+- uid: System.Reflection.Emit.OpCodes.Leave_S
+  id: Leave_S
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Leave_S
+  fullName: System.Reflection.Emit.OpCodes.Leave_S
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2154
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Exits a protected region of code, unconditionally transferring control to a target instruction (short form).
+  syntax:
+    content: public static readonly OpCode Leave_S
+    content.vb: Public Shared ReadOnly Leave_S As OpCode
+- uid: System.Reflection.Emit.OpCodes.Stind_I
+  id: Stind_I
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Stind_I
+  fullName: System.Reflection.Emit.OpCodes.Stind_I
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2165
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Stores a value of type native int at a supplied address.
+  syntax:
+    content: public static readonly OpCode Stind_I
+    content.vb: Public Shared ReadOnly Stind_I As OpCode
+- uid: System.Reflection.Emit.OpCodes.Conv_U
+  id: Conv_U
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Conv_U
+  fullName: System.Reflection.Emit.OpCodes.Conv_U
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2175
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Converts the value on top of the evaluation stack to unsigned native int, and extends it to native int.
+  syntax:
+    content: public static readonly OpCode Conv_U
+    content.vb: Public Shared ReadOnly Conv_U As OpCode
+- uid: System.Reflection.Emit.OpCodes.Prefix7
+  id: Prefix7
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Prefix7
+  fullName: System.Reflection.Emit.OpCodes.Prefix7
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2185
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: This is a reserved instruction.
+  syntax:
+    content: public static readonly OpCode Prefix7
+    content.vb: Public Shared ReadOnly Prefix7 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Prefix6
+  id: Prefix6
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Prefix6
+  fullName: System.Reflection.Emit.OpCodes.Prefix6
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2195
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: This is a reserved instruction.
+  syntax:
+    content: public static readonly OpCode Prefix6
+    content.vb: Public Shared ReadOnly Prefix6 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Prefix5
+  id: Prefix5
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Prefix5
+  fullName: System.Reflection.Emit.OpCodes.Prefix5
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2205
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: This is a reserved instruction.
+  syntax:
+    content: public static readonly OpCode Prefix5
+    content.vb: Public Shared ReadOnly Prefix5 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Prefix4
+  id: Prefix4
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Prefix4
+  fullName: System.Reflection.Emit.OpCodes.Prefix4
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2215
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: This is a reserved instruction.
+  syntax:
+    content: public static readonly OpCode Prefix4
+    content.vb: Public Shared ReadOnly Prefix4 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Prefix3
+  id: Prefix3
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Prefix3
+  fullName: System.Reflection.Emit.OpCodes.Prefix3
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2225
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: This is a reserved instruction.
+  syntax:
+    content: public static readonly OpCode Prefix3
+    content.vb: Public Shared ReadOnly Prefix3 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Prefix2
+  id: Prefix2
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Prefix2
+  fullName: System.Reflection.Emit.OpCodes.Prefix2
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2235
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: This is a reserved instruction.
+  syntax:
+    content: public static readonly OpCode Prefix2
+    content.vb: Public Shared ReadOnly Prefix2 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Prefix1
+  id: Prefix1
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Prefix1
+  fullName: System.Reflection.Emit.OpCodes.Prefix1
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2245
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: This is a reserved instruction.
+  syntax:
+    content: public static readonly OpCode Prefix1
+    content.vb: Public Shared ReadOnly Prefix1 As OpCode
+- uid: System.Reflection.Emit.OpCodes.Prefixref
+  id: Prefixref
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Prefixref
+  fullName: System.Reflection.Emit.OpCodes.Prefixref
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2255
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: This is a reserved instruction.
+  syntax:
+    content: public static readonly OpCode Prefixref
+    content.vb: Public Shared ReadOnly Prefixref As OpCode
+- uid: System.Reflection.Emit.OpCodes.Arglist
+  id: Arglist
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Arglist
+  fullName: System.Reflection.Emit.OpCodes.Arglist
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2265
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Returns an unmanaged pointer to the argument list of the current method.
+  syntax:
+    content: public static readonly OpCode Arglist
+    content.vb: Public Shared ReadOnly Arglist As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ceq
+  id: Ceq
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ceq
+  fullName: System.Reflection.Emit.OpCodes.Ceq
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2275
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Compares two values. If they are equal, the integer value 1 (int32) is pushed onto the evaluation stack; otherwise 0 (int32) is pushed onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Ceq
+    content.vb: Public Shared ReadOnly Ceq As OpCode
+- uid: System.Reflection.Emit.OpCodes.Cgt
+  id: Cgt
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Cgt
+  fullName: System.Reflection.Emit.OpCodes.Cgt
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2285
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Compares two values. If the first value is greater than the second, the integer value 1 (int32) is pushed onto the evaluation stack; otherwise 0 (int32) is pushed onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Cgt
+    content.vb: Public Shared ReadOnly Cgt As OpCode
+- uid: System.Reflection.Emit.OpCodes.Cgt_Un
+  id: Cgt_Un
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Cgt_Un
+  fullName: System.Reflection.Emit.OpCodes.Cgt_Un
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2295
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Compares two unsigned or unordered values. If the first value is greater than the second, the integer value 1 (int32) is pushed onto the evaluation stack; otherwise 0 (int32) is pushed onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Cgt_Un
+    content.vb: Public Shared ReadOnly Cgt_Un As OpCode
+- uid: System.Reflection.Emit.OpCodes.Clt
+  id: Clt
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Clt
+  fullName: System.Reflection.Emit.OpCodes.Clt
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2305
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Compares two values. If the first value is less than the second, the integer value 1 (int32) is pushed onto the evaluation stack; otherwise 0 (int32) is pushed onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Clt
+    content.vb: Public Shared ReadOnly Clt As OpCode
+- uid: System.Reflection.Emit.OpCodes.Clt_Un
+  id: Clt_Un
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Clt_Un
+  fullName: System.Reflection.Emit.OpCodes.Clt_Un
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2315
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Compares the unsigned or unordered values *value1* and *value2*. If *value1* is less than *value2*, then the integer value 1 (int32) is pushed onto the evaluation stack; otherwise 0 (int32) is pushed onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Clt_Un
+    content.vb: Public Shared ReadOnly Clt_Un As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldftn
+  id: Ldftn
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldftn
+  fullName: System.Reflection.Emit.OpCodes.Ldftn
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2325
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Pushes an unmanaged pointer (type native int) to the native code implementing a specific method onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Ldftn
+    content.vb: Public Shared ReadOnly Ldftn As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldvirtftn
+  id: Ldvirtftn
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldvirtftn
+  fullName: System.Reflection.Emit.OpCodes.Ldvirtftn
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2335
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Pushes an unmanaged pointer (type native int) to the native code implementing a particular virtual method associated with a specified object onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Ldvirtftn
+    content.vb: Public Shared ReadOnly Ldvirtftn As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldarg
+  id: Ldarg
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldarg
+  fullName: System.Reflection.Emit.OpCodes.Ldarg
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2345
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Loads an argument (referenced by a specified index value) onto the stack.
+  syntax:
+    content: public static readonly OpCode Ldarg
+    content.vb: Public Shared ReadOnly Ldarg As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldarga
+  id: Ldarga
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldarga
+  fullName: System.Reflection.Emit.OpCodes.Ldarga
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2355
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Load an argument address onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Ldarga
+    content.vb: Public Shared ReadOnly Ldarga As OpCode
+- uid: System.Reflection.Emit.OpCodes.Starg
+  id: Starg
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Starg
+  fullName: System.Reflection.Emit.OpCodes.Starg
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2365
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Stores the value on top of the evaluation stack in the argument slot at a specified index.
+  syntax:
+    content: public static readonly OpCode Starg
+    content.vb: Public Shared ReadOnly Starg As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldloc
+  id: Ldloc
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldloc
+  fullName: System.Reflection.Emit.OpCodes.Ldloc
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2375
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Loads the local variable at a specific index onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Ldloc
+    content.vb: Public Shared ReadOnly Ldloc As OpCode
+- uid: System.Reflection.Emit.OpCodes.Ldloca
+  id: Ldloca
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Ldloca
+  fullName: System.Reflection.Emit.OpCodes.Ldloca
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2385
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Loads the address of the local variable at a specific index onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Ldloca
+    content.vb: Public Shared ReadOnly Ldloca As OpCode
+- uid: System.Reflection.Emit.OpCodes.Stloc
+  id: Stloc
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Stloc
+  fullName: System.Reflection.Emit.OpCodes.Stloc
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2395
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Pops the current value from the top of the evaluation stack and stores it in a the local variable list at a specified index.
+  syntax:
+    content: public static readonly OpCode Stloc
+    content.vb: Public Shared ReadOnly Stloc As OpCode
+- uid: System.Reflection.Emit.OpCodes.Localloc
+  id: Localloc
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Localloc
+  fullName: System.Reflection.Emit.OpCodes.Localloc
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2405
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Allocates a certain number of bytes from the local dynamic memory pool and pushes the address (a transient pointer, type *) of the first allocated byte onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Localloc
+    content.vb: Public Shared ReadOnly Localloc As OpCode
+- uid: System.Reflection.Emit.OpCodes.Endfilter
+  id: Endfilter
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Endfilter
+  fullName: System.Reflection.Emit.OpCodes.Endfilter
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2415
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Transfers control from the filter clause of an exception back to the Common Language Infrastructure (CLI) exception handler.
+  syntax:
+    content: public static readonly OpCode Endfilter
+    content.vb: Public Shared ReadOnly Endfilter As OpCode
+- uid: System.Reflection.Emit.OpCodes.Unaligned
+  id: Unaligned
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Unaligned
+  fullName: System.Reflection.Emit.OpCodes.Unaligned
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2426
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Indicates that an address currently atop the evaluation stack might not be aligned to the natural size of the immediately following ldind, stind, ldfld, stfld, ldobj, stobj, initblk, or cpblk instruction.
+  syntax:
+    content: public static readonly OpCode Unaligned
+    content.vb: Public Shared ReadOnly Unaligned As OpCode
+- uid: System.Reflection.Emit.OpCodes.Volatile
+  id: Volatile
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Volatile
+  fullName: System.Reflection.Emit.OpCodes.Volatile
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2436
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Specifies that an address currently atop the evaluation stack might be volatile, and the results of reading that location cannot be cached or that multiple stores to that location cannot be suppressed.
+  syntax:
+    content: public static readonly OpCode Volatile
+    content.vb: Public Shared ReadOnly Volatile As OpCode
+- uid: System.Reflection.Emit.OpCodes.Tailcall
+  id: Tailcall
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Tailcall
+  fullName: System.Reflection.Emit.OpCodes.Tailcall
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2446
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Performs a postfixed method call instruction such that the current method's stack frame is removed before the actual call instruction is executed.
+  syntax:
+    content: public static readonly OpCode Tailcall
+    content.vb: Public Shared ReadOnly Tailcall As OpCode
+- uid: System.Reflection.Emit.OpCodes.Initobj
+  id: Initobj
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Initobj
+  fullName: System.Reflection.Emit.OpCodes.Initobj
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2456
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Initializes each field of the value type at a specified address to a null reference or a 0 of the appropriate primitive type.
+  syntax:
+    content: public static readonly OpCode Initobj
+    content.vb: Public Shared ReadOnly Initobj As OpCode
+- uid: System.Reflection.Emit.OpCodes.Constrained
+  id: Constrained
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Constrained
+  fullName: System.Reflection.Emit.OpCodes.Constrained
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2466
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Constrains the type on which a virtual method call is made.
+  syntax:
+    content: public static readonly OpCode Constrained
+    content.vb: Public Shared ReadOnly Constrained As OpCode
+- uid: System.Reflection.Emit.OpCodes.Cpblk
+  id: Cpblk
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Cpblk
+  fullName: System.Reflection.Emit.OpCodes.Cpblk
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2476
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Copies a specified number bytes from a source address to a destination address.
+  syntax:
+    content: public static readonly OpCode Cpblk
+    content.vb: Public Shared ReadOnly Cpblk As OpCode
+- uid: System.Reflection.Emit.OpCodes.Initblk
+  id: Initblk
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Initblk
+  fullName: System.Reflection.Emit.OpCodes.Initblk
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2486
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Initializes a specified block of memory at a specific address to a given size and initial value.
+  syntax:
+    content: public static readonly OpCode Initblk
+    content.vb: Public Shared ReadOnly Initblk As OpCode
+- uid: System.Reflection.Emit.OpCodes.Rethrow
+  id: Rethrow
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Rethrow
+  fullName: System.Reflection.Emit.OpCodes.Rethrow
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2496
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Rethrows the current exception.
+  syntax:
+    content: public static readonly OpCode Rethrow
+    content.vb: Public Shared ReadOnly Rethrow As OpCode
+- uid: System.Reflection.Emit.OpCodes.Sizeof
+  id: Sizeof
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Sizeof
+  fullName: System.Reflection.Emit.OpCodes.Sizeof
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2507
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Pushes the size, in bytes, of a supplied value type onto the evaluation stack.
+  syntax:
+    content: public static readonly OpCode Sizeof
+    content.vb: Public Shared ReadOnly Sizeof As OpCode
+- uid: System.Reflection.Emit.OpCodes.Refanytype
+  id: Refanytype
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Refanytype
+  fullName: System.Reflection.Emit.OpCodes.Refanytype
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2517
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Retrieves the type token embedded in a typed reference.
+  syntax:
+    content: public static readonly OpCode Refanytype
+    content.vb: Public Shared ReadOnly Refanytype As OpCode
+- uid: System.Reflection.Emit.OpCodes.Readonly
+  id: Readonly
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: Readonly
+  fullName: System.Reflection.Emit.OpCodes.Readonly
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2527
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Specifies that the subsequent array address operation performs no type check at run time, and that it returns a managed pointer whose mutability is restricted.
+  syntax:
+    content: public static readonly OpCode Readonly
+    content.vb: Public Shared ReadOnly Readonly As OpCode
+- uid: System.Reflection.Emit.OpCodes.TakesSingleByteArgument(System.Reflection.Emit.OpCode)
+  id: TakesSingleByteArgument(System.Reflection.Emit.OpCode)
+  parent: System.Reflection.Emit.OpCodes
+  href: System.Reflection.Emit.OpCodes.yml
+  name: TakesSingleByteArgument(OpCode)
+  fullName: System.Reflection.Emit.OpCodes.TakesSingleByteArgument(System.Reflection.Emit.OpCode)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/OpCodes.cs
+    startLine: 2538
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Returns true or false if the supplied opcode takes a single byte argument.
+  syntax:
+    content: public static bool TakesSingleByteArgument(OpCode inst)
+    content.vb: Public Shared Function TakesSingleByteArgument(inst As OpCode) As Boolean
+    parameters:
+    - id: inst
+      type: System.Reflection.Emit.OpCode
+      description: An instance of an Opcode object.
+    return:
+      type: System.Boolean
+references:
+- uid: System.Reflection.Emit
+  isExternal: false
+  name: System.Reflection.Emit
+  fullName: System.Reflection.Emit
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Reflection.Emit.OpCode
+  parent: System.Reflection.Emit
+  isExternal: false
+  href: System.Reflection.Emit.OpCode.yml
+  name: OpCode
+  fullName: System.Reflection.Emit.OpCode
+  type: Struct
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean

@@ -1,0 +1,542 @@
+items:
+- uid: System.Security.Cryptography.CryptoConfig
+  id: CryptoConfig
+  parent: System.Security.Cryptography
+  children:
+  - System.Security.Cryptography.CryptoConfig.AddAlgorithm(System.Type,System.String[])
+  - System.Security.Cryptography.CryptoConfig.AddOID(System.String,System.String[])
+  - System.Security.Cryptography.CryptoConfig.AllowOnlyFipsAlgorithms
+  - System.Security.Cryptography.CryptoConfig.CreateFromName(System.String)
+  - System.Security.Cryptography.CryptoConfig.CreateFromName(System.String,System.Object[])
+  - System.Security.Cryptography.CryptoConfig.EncodeOID(System.String)
+  - System.Security.Cryptography.CryptoConfig.MapNameToOID(System.String)
+  href: System.Security.Cryptography.CryptoConfig.yml
+  name: CryptoConfig
+  fullName: System.Security.Cryptography.CryptoConfig
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Security/Cryptography/CryptoConfig.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Security/Cryptography/CryptoConfig.cs
+    startLine: 17
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: Accesses the cryptography configuration information.
+  syntax:
+    content: public class CryptoConfig
+    content.vb: Public Class CryptoConfig
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Security.Cryptography.CryptoConfig.AllowOnlyFipsAlgorithms
+  id: AllowOnlyFipsAlgorithms
+  parent: System.Security.Cryptography.CryptoConfig
+  href: System.Security.Cryptography.CryptoConfig.yml
+  name: AllowOnlyFipsAlgorithms
+  fullName: System.Security.Cryptography.CryptoConfig.AllowOnlyFipsAlgorithms
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/CryptoConfig.cs
+    startLine: 38
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: Indicates whether the runtime should enforce the policy to create only Federal Information Processing Standard (FIPS) certified algorithms.
+  syntax:
+    content: public static bool AllowOnlyFipsAlgorithms { get; }
+    content.vb: Public Shared ReadOnly Property AllowOnlyFipsAlgorithms As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Security.Cryptography.CryptoConfig.AddAlgorithm(System.Type,System.String[])
+  id: AddAlgorithm(System.Type,System.String[])
+  parent: System.Security.Cryptography.CryptoConfig
+  href: System.Security.Cryptography.CryptoConfig.yml
+  name: AddAlgorithm(Type, String[])
+  name.vb: AddAlgorithm(Type, String())
+  fullName: System.Security.Cryptography.CryptoConfig.AddAlgorithm(System.Type, System.String[])
+  fullName.vb: System.Security.Cryptography.CryptoConfig.AddAlgorithm(System.Type, System.String())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/CryptoConfig.cs
+    startLine: 510
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: Adds a set of names to algorithm mappings to be used for the current application domain.
+  syntax:
+    content: public static void AddAlgorithm(Type algorithm, params string[] names)
+    content.vb: Public Shared Sub AddAlgorithm(algorithm As Type, ParamArray names As String())
+    parameters:
+    - id: algorithm
+      type: System.Type
+      description: The algorithm to map to.
+    - id: names
+      type: System.String[]
+      description: An array of names to map to the algorithm.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The* algorithm* or *names* parameter is null.
+  - type: System.ArgumentException
+    description: '*algorithm* cannot be accessed from outside the assembly.-or-One of the entries in the *names* parameter is empty or null.'
+- uid: System.Security.Cryptography.CryptoConfig.CreateFromName(System.String,System.Object[])
+  id: CreateFromName(System.String,System.Object[])
+  parent: System.Security.Cryptography.CryptoConfig
+  href: System.Security.Cryptography.CryptoConfig.yml
+  name: CreateFromName(String, Object[])
+  name.vb: CreateFromName(String, Object())
+  fullName: System.Security.Cryptography.CryptoConfig.CreateFromName(System.String, System.Object[])
+  fullName.vb: System.Security.Cryptography.CryptoConfig.CreateFromName(System.String, System.Object())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/CryptoConfig.cs
+    startLine: 539
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: Creates a new instance of the specified cryptographic object with the specified arguments.
+  syntax:
+    content: public static object CreateFromName(string name, params object[] args)
+    content.vb: Public Shared Function CreateFromName(name As String, ParamArray args As Object()) As Object
+    parameters:
+    - id: name
+      type: System.String
+      description: The simple name of the cryptographic object of which to create an instance.
+    - id: args
+      type: System.Object[]
+      description: The arguments used to create the specified cryptographic object.
+    return:
+      type: System.Object
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *name* parameter is null.
+  - type: System.Reflection.TargetInvocationException
+    description: The algorithm described by the *name* parameter was used with Federal Information Processing Standards (FIPS) mode enabled, but is not FIPS compatible.
+- uid: System.Security.Cryptography.CryptoConfig.CreateFromName(System.String)
+  id: CreateFromName(System.String)
+  parent: System.Security.Cryptography.CryptoConfig
+  href: System.Security.Cryptography.CryptoConfig.yml
+  name: CreateFromName(String)
+  fullName: System.Security.Cryptography.CryptoConfig.CreateFromName(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/CryptoConfig.cs
+    startLine: 648
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: Creates a new instance of the specified cryptographic object.
+  syntax:
+    content: public static object CreateFromName(string name)
+    content.vb: Public Shared Function CreateFromName(name As String) As Object
+    parameters:
+    - id: name
+      type: System.String
+      description: The simple name of the cryptographic object of which to create an instance.
+    return:
+      type: System.Object
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *name* parameter is null.
+  - type: System.Reflection.TargetInvocationException
+    description: The algorithm described by the *name* parameter was used with Federal Information Processing Standards (FIPS) mode enabled, but is not FIPS compatible.
+- uid: System.Security.Cryptography.CryptoConfig.AddOID(System.String,System.String[])
+  id: AddOID(System.String,System.String[])
+  parent: System.Security.Cryptography.CryptoConfig
+  href: System.Security.Cryptography.CryptoConfig.yml
+  name: AddOID(String, String[])
+  name.vb: AddOID(String, String())
+  fullName: System.Security.Cryptography.CryptoConfig.AddOID(System.String, System.String[])
+  fullName.vb: System.Security.Cryptography.CryptoConfig.AddOID(System.String, System.String())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/CryptoConfig.cs
+    startLine: 657
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: Adds a set of names to object identifier (OID) mappings to be used for the current application domain.
+  syntax:
+    content: public static void AddOID(string oid, params string[] names)
+    content.vb: Public Shared Sub AddOID(oid As String, ParamArray names As String())
+    parameters:
+    - id: oid
+      type: System.String
+      description: The object identifier (OID) to map to.
+    - id: names
+      type: System.String[]
+      description: An array of names to map to the OID.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The* oid* or *names* parameter is null.
+  - type: System.ArgumentException
+    description: One of the entries in the *names* parameter is empty or null.
+- uid: System.Security.Cryptography.CryptoConfig.MapNameToOID(System.String)
+  id: MapNameToOID(System.String)
+  parent: System.Security.Cryptography.CryptoConfig
+  href: System.Security.Cryptography.CryptoConfig.yml
+  name: MapNameToOID(String)
+  fullName: System.Security.Cryptography.CryptoConfig.MapNameToOID(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/CryptoConfig.cs
+    startLine: 684
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: Gets the object identifier (OID) of the algorithm corresponding to the specified simple name.
+  syntax:
+    content: public static string MapNameToOID(string name)
+    content.vb: Public Shared Function MapNameToOID(name As String) As String
+    parameters:
+    - id: name
+      type: System.String
+      description: The simple name of the algorithm for which to get the OID.
+    return:
+      type: System.String
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *name* parameter is null.
+- uid: System.Security.Cryptography.CryptoConfig.EncodeOID(System.String)
+  id: EncodeOID(System.String)
+  parent: System.Security.Cryptography.CryptoConfig
+  href: System.Security.Cryptography.CryptoConfig.yml
+  name: EncodeOID(String)
+  fullName: System.Security.Cryptography.CryptoConfig.EncodeOID(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/CryptoConfig.cs
+    startLine: 721
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: Encodes the specified object identifier (OID).
+  syntax:
+    content: public static byte[] EncodeOID(string str)
+    content.vb: Public Shared Function EncodeOID(str As String) As Byte()
+    parameters:
+    - id: str
+      type: System.String
+      description: The OID to encode.
+    return:
+      type: System.Byte[]
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *str* parameter is null.
+  - type: System.Security.Cryptography.CryptographicUnexpectedOperationException
+    description: An error occurred while encoding the OID.
+references:
+- uid: System.Security.Cryptography
+  isExternal: false
+  name: System.Security.Cryptography
+  fullName: System.Security.Cryptography
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  fullName: System.Type
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  name.vb: String()
+  fullName: System.String[]
+  fullName.vb: System.String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  name.vb: Object()
+  fullName: System.Object[]
+  fullName.vb: System.Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  name.vb: Byte()
+  fullName: System.Byte[]
+  fullName.vb: System.Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()

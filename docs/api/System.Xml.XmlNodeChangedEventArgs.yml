@@ -1,0 +1,458 @@
+items:
+- uid: System.Xml.XmlNodeChangedEventArgs
+  id: XmlNodeChangedEventArgs
+  parent: System.Xml
+  children:
+  - System.Xml.XmlNodeChangedEventArgs.#ctor(System.Xml.XmlNode,System.Xml.XmlNode,System.Xml.XmlNode,System.String,System.String,System.Xml.XmlNodeChangedAction)
+  - System.Xml.XmlNodeChangedEventArgs.Action
+  - System.Xml.XmlNodeChangedEventArgs.NewParent
+  - System.Xml.XmlNodeChangedEventArgs.NewValue
+  - System.Xml.XmlNodeChangedEventArgs.Node
+  - System.Xml.XmlNodeChangedEventArgs.OldParent
+  - System.Xml.XmlNodeChangedEventArgs.OldValue
+  href: System.Xml.XmlNodeChangedEventArgs.yml
+  name: XmlNodeChangedEventArgs
+  fullName: System.Xml.XmlNodeChangedEventArgs
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNodeChangedEventArgs.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNodeChangedEventArgs.cs
+    startLine: 5
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Provides data for the @'System.Xml.XmlDocument.NodeChanged', @'System.Xml.XmlDocument.NodeChanging', @'System.Xml.XmlDocument.NodeInserted', @'System.Xml.XmlDocument.NodeInserting', @'System.Xml.XmlDocument.NodeRemoved' and @'System.Xml.XmlDocument.NodeRemoving' events.
+  syntax:
+    content: 'public class XmlNodeChangedEventArgs : EventArgs'
+    content.vb: Public Class XmlNodeChangedEventArgs Inherits EventArgs
+  inheritance:
+  - System.Object
+  - System.EventArgs
+  inheritedMembers:
+  - System.EventArgs.Empty
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Xml.XmlNodeChangedEventArgs.#ctor(System.Xml.XmlNode,System.Xml.XmlNode,System.Xml.XmlNode,System.String,System.String,System.Xml.XmlNodeChangedAction)
+  id: '#ctor(System.Xml.XmlNode,System.Xml.XmlNode,System.Xml.XmlNode,System.String,System.String,System.Xml.XmlNodeChangedAction)'
+  parent: System.Xml.XmlNodeChangedEventArgs
+  href: System.Xml.XmlNodeChangedEventArgs.yml
+  name: XmlNodeChangedEventArgs(XmlNode, XmlNode, XmlNode, String, String, XmlNodeChangedAction)
+  fullName: System.Xml.XmlNodeChangedEventArgs.XmlNodeChangedEventArgs(System.Xml.XmlNode, System.Xml.XmlNode, System.Xml.XmlNode, System.String, System.String, System.Xml.XmlNodeChangedAction)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNodeChangedEventArgs.cs
+    startLine: 14
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Initializes a new instance of the @'System.Xml.XmlNodeChangedEventArgs' class.
+  syntax:
+    content: public XmlNodeChangedEventArgs(XmlNode node, XmlNode oldParent, XmlNode newParent, string oldValue, string newValue, XmlNodeChangedAction action)
+    content.vb: Public Sub New(node As XmlNode, oldParent As XmlNode, newParent As XmlNode, oldValue As String, newValue As String, action As XmlNodeChangedAction)
+    parameters:
+    - id: node
+      type: System.Xml.XmlNode
+      description: The @'System.Xml.XmlNode' that generated the event.
+    - id: oldParent
+      type: System.Xml.XmlNode
+      description: The old parent @'System.Xml.XmlNode' of the @'System.Xml.XmlNode' that generated the event.
+    - id: newParent
+      type: System.Xml.XmlNode
+      description: The new parent @'System.Xml.XmlNode' of the @'System.Xml.XmlNode' that generated the event.
+    - id: oldValue
+      type: System.String
+      description: The old value of the @'System.Xml.XmlNode' that generated the event.
+    - id: newValue
+      type: System.String
+      description: The new value of the @'System.Xml.XmlNode' that generated the event.
+    - id: action
+      type: System.Xml.XmlNodeChangedAction
+      description: The @'System.Xml.XmlNodeChangedAction'.
+- uid: System.Xml.XmlNodeChangedEventArgs.Action
+  id: Action
+  parent: System.Xml.XmlNodeChangedEventArgs
+  href: System.Xml.XmlNodeChangedEventArgs.yml
+  name: Action
+  fullName: System.Xml.XmlNodeChangedEventArgs.Action
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNodeChangedEventArgs.cs
+    startLine: 24
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets a value indicating what type of node change event is occurring.
+  syntax:
+    content: public XmlNodeChangedAction Action { get; }
+    content.vb: Public ReadOnly Property Action As XmlNodeChangedAction
+    parameters: []
+    return:
+      type: System.Xml.XmlNodeChangedAction
+- uid: System.Xml.XmlNodeChangedEventArgs.Node
+  id: Node
+  parent: System.Xml.XmlNodeChangedEventArgs
+  href: System.Xml.XmlNodeChangedEventArgs.yml
+  name: Node
+  fullName: System.Xml.XmlNodeChangedEventArgs.Node
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNodeChangedEventArgs.cs
+    startLine: 26
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets the @'System.Xml.XmlNode' that is being added, removed or changed.
+  syntax:
+    content: public XmlNode Node { get; }
+    content.vb: Public ReadOnly Property Node As XmlNode
+    parameters: []
+    return:
+      type: System.Xml.XmlNode
+- uid: System.Xml.XmlNodeChangedEventArgs.OldParent
+  id: OldParent
+  parent: System.Xml.XmlNodeChangedEventArgs
+  href: System.Xml.XmlNodeChangedEventArgs.yml
+  name: OldParent
+  fullName: System.Xml.XmlNodeChangedEventArgs.OldParent
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNodeChangedEventArgs.cs
+    startLine: 28
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets the value of the @'System.Xml.XmlNode.ParentNode' before the operation began.
+  syntax:
+    content: public XmlNode OldParent { get; }
+    content.vb: Public ReadOnly Property OldParent As XmlNode
+    parameters: []
+    return:
+      type: System.Xml.XmlNode
+- uid: System.Xml.XmlNodeChangedEventArgs.NewParent
+  id: NewParent
+  parent: System.Xml.XmlNodeChangedEventArgs
+  href: System.Xml.XmlNodeChangedEventArgs.yml
+  name: NewParent
+  fullName: System.Xml.XmlNodeChangedEventArgs.NewParent
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNodeChangedEventArgs.cs
+    startLine: 30
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets the value of the @'System.Xml.XmlNode.ParentNode' after the operation completes.
+  syntax:
+    content: public XmlNode NewParent { get; }
+    content.vb: Public ReadOnly Property NewParent As XmlNode
+    parameters: []
+    return:
+      type: System.Xml.XmlNode
+- uid: System.Xml.XmlNodeChangedEventArgs.OldValue
+  id: OldValue
+  parent: System.Xml.XmlNodeChangedEventArgs
+  href: System.Xml.XmlNodeChangedEventArgs.yml
+  name: OldValue
+  fullName: System.Xml.XmlNodeChangedEventArgs.OldValue
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNodeChangedEventArgs.cs
+    startLine: 32
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets the original value of the node.
+  syntax:
+    content: public string OldValue { get; }
+    content.vb: Public ReadOnly Property OldValue As String
+    parameters: []
+    return:
+      type: System.String
+- uid: System.Xml.XmlNodeChangedEventArgs.NewValue
+  id: NewValue
+  parent: System.Xml.XmlNodeChangedEventArgs
+  href: System.Xml.XmlNodeChangedEventArgs.yml
+  name: NewValue
+  fullName: System.Xml.XmlNodeChangedEventArgs.NewValue
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNodeChangedEventArgs.cs
+    startLine: 34
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets the new value of the node.
+  syntax:
+    content: public string NewValue { get; }
+    content.vb: Public ReadOnly Property NewValue As String
+    parameters: []
+    return:
+      type: System.String
+references:
+- uid: System.Xml
+  isExternal: false
+  name: System.Xml
+  fullName: System.Xml
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.EventArgs
+  parent: System
+  isExternal: true
+  name: EventArgs
+  fullName: System.EventArgs
+- uid: System.EventArgs.Empty
+  parent: System.EventArgs
+  isExternal: true
+  name: Empty
+  fullName: System.EventArgs.Empty
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Xml.XmlNode
+  parent: System.Xml
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: XmlNode
+  fullName: System.Xml.XmlNode
+  type: Class
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Xml.XmlNodeChangedAction
+  parent: System.Xml
+  isExternal: false
+  href: System.Xml.XmlNodeChangedAction.yml
+  name: XmlNodeChangedAction
+  fullName: System.Xml.XmlNodeChangedAction
+  type: Enum

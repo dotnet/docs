@@ -1,0 +1,154 @@
+items:
+- uid: System.IO.DriveType
+  id: DriveType
+  parent: System.IO
+  children:
+  - System.IO.DriveType.CDRom
+  - System.IO.DriveType.Fixed
+  - System.IO.DriveType.Network
+  - System.IO.DriveType.NoRootDirectory
+  - System.IO.DriveType.Ram
+  - System.IO.DriveType.Removable
+  - System.IO.DriveType.Unknown
+  href: System.IO.DriveType.yml
+  name: DriveType
+  fullName: System.IO.DriveType
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/IO/DriveInfo.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/IO/DriveInfo.cs
+    startLine: 26
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Defines constants for drive types, including CDRom, Fixed, Network, NoRootDirectory, Ram, Removable, and Unknown.
+  syntax:
+    content: public enum DriveType
+    content.vb: Public Enum DriveType
+- uid: System.IO.DriveType.Unknown
+  id: Unknown
+  parent: System.IO.DriveType
+  href: System.IO.DriveType.yml
+  name: Unknown
+  fullName: System.IO.DriveType.Unknown
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/DriveInfo.cs
+    startLine: 30
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: The type of drive is unknown.
+  syntax:
+    content: Unknown = 0
+- uid: System.IO.DriveType.NoRootDirectory
+  id: NoRootDirectory
+  parent: System.IO.DriveType
+  href: System.IO.DriveType.yml
+  name: NoRootDirectory
+  fullName: System.IO.DriveType.NoRootDirectory
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/DriveInfo.cs
+    startLine: 31
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: The drive does not have a root directory.
+  syntax:
+    content: NoRootDirectory = 1
+- uid: System.IO.DriveType.Removable
+  id: Removable
+  parent: System.IO.DriveType
+  href: System.IO.DriveType.yml
+  name: Removable
+  fullName: System.IO.DriveType.Removable
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/DriveInfo.cs
+    startLine: 32
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: The drive is a removable storage device, such as a floppy disk drive or a USB flash drive.
+  syntax:
+    content: Removable = 2
+- uid: System.IO.DriveType.Fixed
+  id: Fixed
+  parent: System.IO.DriveType
+  href: System.IO.DriveType.yml
+  name: Fixed
+  fullName: System.IO.DriveType.Fixed
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/DriveInfo.cs
+    startLine: 33
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: The drive is a fixed disk.
+  syntax:
+    content: Fixed = 3
+- uid: System.IO.DriveType.Network
+  id: Network
+  parent: System.IO.DriveType
+  href: System.IO.DriveType.yml
+  name: Network
+  fullName: System.IO.DriveType.Network
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/DriveInfo.cs
+    startLine: 34
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: The drive is a network drive.
+  syntax:
+    content: Network = 4
+- uid: System.IO.DriveType.CDRom
+  id: CDRom
+  parent: System.IO.DriveType
+  href: System.IO.DriveType.yml
+  name: CDRom
+  fullName: System.IO.DriveType.CDRom
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/DriveInfo.cs
+    startLine: 35
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: The drive is an optical disc device, such as a CD or DVD-ROM.
+  syntax:
+    content: CDRom = 5
+- uid: System.IO.DriveType.Ram
+  id: Ram
+  parent: System.IO.DriveType
+  href: System.IO.DriveType.yml
+  name: Ram
+  fullName: System.IO.DriveType.Ram
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/DriveInfo.cs
+    startLine: 36
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: The drive is a RAM disk.
+  syntax:
+    content: Ram = 6
+references:
+- uid: System.IO
+  isExternal: false
+  name: System.IO
+  fullName: System.IO

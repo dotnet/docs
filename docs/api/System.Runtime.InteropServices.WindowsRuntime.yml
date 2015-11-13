@@ -1,0 +1,127 @@
+items:
+- uid: System.Runtime.InteropServices.WindowsRuntime
+  id: System.Runtime.InteropServices.WindowsRuntime
+  children:
+  - System.Runtime.InteropServices.WindowsRuntime.DefaultInterfaceAttribute
+  - System.Runtime.InteropServices.WindowsRuntime.DesignerNamespaceResolveEventArgs
+  - System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken
+  - System.Runtime.InteropServices.WindowsRuntime.EventRegistrationTokenTable`1
+  - System.Runtime.InteropServices.WindowsRuntime.IActivationFactory
+  - System.Runtime.InteropServices.WindowsRuntime.InterfaceImplementedInVersionAttribute
+  - System.Runtime.InteropServices.WindowsRuntime.ReadOnlyArrayAttribute
+  - System.Runtime.InteropServices.WindowsRuntime.ReturnValueNameAttribute
+  - System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal
+  - System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMetadata
+  - System.Runtime.InteropServices.WindowsRuntime.WriteOnlyArrayAttribute
+  href: System.Runtime.InteropServices.WindowsRuntime.yml
+  name: System.Runtime.InteropServices.WindowsRuntime
+  fullName: System.Runtime.InteropServices.WindowsRuntime
+  type: Namespace
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/WindowsRuntime/CLRIKeyValuePairImpl.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/InteropServices/WindowsRuntime/CLRIKeyValuePairImpl.cs
+    startLine: 9
+  assemblies:
+  - mscorlib
+  summary: The @'System.Runtime.InteropServices.WindowsRuntime' namespace contains classes that support interoperation between managed code and the Windows Runtime, and that enable the creation of Windows Runtime types with managed code.
+references:
+- uid: System.Runtime.InteropServices.WindowsRuntime.DefaultInterfaceAttribute
+  isExternal: false
+  href: System.Runtime.InteropServices.WindowsRuntime.DefaultInterfaceAttribute.yml
+  name: DefaultInterfaceAttribute
+  fullName: System.Runtime.InteropServices.WindowsRuntime.DefaultInterfaceAttribute
+  type: Class
+- uid: System.Runtime.InteropServices.WindowsRuntime.InterfaceImplementedInVersionAttribute
+  isExternal: false
+  href: System.Runtime.InteropServices.WindowsRuntime.InterfaceImplementedInVersionAttribute.yml
+  name: InterfaceImplementedInVersionAttribute
+  fullName: System.Runtime.InteropServices.WindowsRuntime.InterfaceImplementedInVersionAttribute
+  type: Class
+- uid: System.Runtime.InteropServices.WindowsRuntime.ReadOnlyArrayAttribute
+  isExternal: false
+  href: System.Runtime.InteropServices.WindowsRuntime.ReadOnlyArrayAttribute.yml
+  name: ReadOnlyArrayAttribute
+  fullName: System.Runtime.InteropServices.WindowsRuntime.ReadOnlyArrayAttribute
+  type: Class
+- uid: System.Runtime.InteropServices.WindowsRuntime.WriteOnlyArrayAttribute
+  isExternal: false
+  href: System.Runtime.InteropServices.WindowsRuntime.WriteOnlyArrayAttribute.yml
+  name: WriteOnlyArrayAttribute
+  fullName: System.Runtime.InteropServices.WindowsRuntime.WriteOnlyArrayAttribute
+  type: Class
+- uid: System.Runtime.InteropServices.WindowsRuntime.ReturnValueNameAttribute
+  isExternal: false
+  href: System.Runtime.InteropServices.WindowsRuntime.ReturnValueNameAttribute.yml
+  name: ReturnValueNameAttribute
+  fullName: System.Runtime.InteropServices.WindowsRuntime.ReturnValueNameAttribute
+  type: Class
+- uid: System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken
+  parent: System.Runtime.InteropServices.WindowsRuntime
+  isExternal: false
+  href: System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken.yml
+  name: EventRegistrationToken
+  fullName: System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken
+  type: Struct
+- uid: System.Runtime.InteropServices.WindowsRuntime.EventRegistrationTokenTable`1
+  parent: System.Runtime.InteropServices.WindowsRuntime
+  isExternal: false
+  href: System.Runtime.InteropServices.WindowsRuntime.EventRegistrationTokenTable`1.yml
+  name: EventRegistrationTokenTable<T>
+  name.vb: EventRegistrationTokenTable(Of T)
+  fullName: System.Runtime.InteropServices.WindowsRuntime.EventRegistrationTokenTable<T>
+  fullName.vb: System.Runtime.InteropServices.WindowsRuntime.EventRegistrationTokenTable(Of T)
+  type: Class
+  spec.csharp:
+  - uid: System.Runtime.InteropServices.WindowsRuntime.EventRegistrationTokenTable`1
+    name: EventRegistrationTokenTable
+    fullName: System.Runtime.InteropServices.WindowsRuntime.EventRegistrationTokenTable
+    href: System.Runtime.InteropServices.WindowsRuntime.EventRegistrationTokenTable`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Runtime.InteropServices.WindowsRuntime.EventRegistrationTokenTable`1
+    name: EventRegistrationTokenTable
+    fullName: System.Runtime.InteropServices.WindowsRuntime.EventRegistrationTokenTable
+    href: System.Runtime.InteropServices.WindowsRuntime.EventRegistrationTokenTable`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Runtime.InteropServices.WindowsRuntime.IActivationFactory
+  isExternal: false
+  href: System.Runtime.InteropServices.WindowsRuntime.IActivationFactory.yml
+  name: IActivationFactory
+  fullName: System.Runtime.InteropServices.WindowsRuntime.IActivationFactory
+  type: Interface
+- uid: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal
+  isExternal: false
+  href: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.yml
+  name: WindowsRuntimeMarshal
+  fullName: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal
+  type: Class
+- uid: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMetadata
+  isExternal: false
+  href: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMetadata.yml
+  name: WindowsRuntimeMetadata
+  fullName: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMetadata
+  type: Class
+- uid: System.Runtime.InteropServices.WindowsRuntime.DesignerNamespaceResolveEventArgs
+  isExternal: false
+  href: System.Runtime.InteropServices.WindowsRuntime.DesignerNamespaceResolveEventArgs.yml
+  name: DesignerNamespaceResolveEventArgs
+  fullName: System.Runtime.InteropServices.WindowsRuntime.DesignerNamespaceResolveEventArgs
+  type: Class
+- uid: System.Runtime.InteropServices.WindowsRuntime
+  isExternal: false
+  name: System.Runtime.InteropServices.WindowsRuntime
+  fullName: System.Runtime.InteropServices.WindowsRuntime
+  type: Namespace

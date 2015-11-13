@@ -1,0 +1,483 @@
+items:
+- uid: System.Security.Policy.PolicyStatement
+  id: PolicyStatement
+  parent: System.Security.Policy
+  children:
+  - System.Security.Policy.PolicyStatement.#ctor(System.Security.PermissionSet)
+  - System.Security.Policy.PolicyStatement.#ctor(System.Security.PermissionSet,System.Security.Policy.PolicyStatementAttribute)
+  - System.Security.Policy.PolicyStatement.Attributes
+  - System.Security.Policy.PolicyStatement.AttributeString
+  - System.Security.Policy.PolicyStatement.Copy
+  - System.Security.Policy.PolicyStatement.Equals(System.Object)
+  - System.Security.Policy.PolicyStatement.GetHashCode
+  - System.Security.Policy.PolicyStatement.PermissionSet
+  href: System.Security.Policy.PolicyStatement.yml
+  name: PolicyStatement
+  fullName: System.Security.Policy.PolicyStatement
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Security/Policy/PolicyStatement.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Security/Policy/PolicyStatement.cs
+    startLine: 29
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Policy
+  summary: Represents the statement of a @'System.Security.Policy.CodeGroup' describing the permissions and other information that apply to code with a particular set of evidence. This class cannot be inherited.
+  syntax:
+    content: 'public sealed class PolicyStatement : ISecurityPolicyEncodable, ISecurityEncodable'
+    content.vb: Public NotInheritable Class PolicyStatement Implements ISecurityPolicyEncodable, ISecurityEncodable
+  inheritance:
+  - System.Object
+  implements:
+  - System.Security.ISecurityPolicyEncodable
+  - System.Security.ISecurityEncodable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Security.Policy.PolicyStatement.#ctor(System.Security.PermissionSet)
+  id: '#ctor(System.Security.PermissionSet)'
+  parent: System.Security.Policy.PolicyStatement
+  href: System.Security.Policy.PolicyStatement.yml
+  name: PolicyStatement(PermissionSet)
+  fullName: System.Security.Policy.PolicyStatement.PolicyStatement(System.Security.PermissionSet)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Policy/PolicyStatement.cs
+    startLine: 53
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Policy
+  summary: Initializes a new instance of the @'System.Security.Policy.PolicyStatement' class with the specified @'System.Security.PermissionSet'.
+  syntax:
+    content: public PolicyStatement(PermissionSet permSet)
+    content.vb: Public Sub New(permSet As PermissionSet)
+    parameters:
+    - id: permSet
+      type: System.Security.PermissionSet
+      description: The @'System.Security.PermissionSet' with which to initialize the new instance.
+- uid: System.Security.Policy.PolicyStatement.#ctor(System.Security.PermissionSet,System.Security.Policy.PolicyStatementAttribute)
+  id: '#ctor(System.Security.PermissionSet,System.Security.Policy.PolicyStatementAttribute)'
+  parent: System.Security.Policy.PolicyStatement
+  href: System.Security.Policy.PolicyStatement.yml
+  name: PolicyStatement(PermissionSet, PolicyStatementAttribute)
+  fullName: System.Security.Policy.PolicyStatement.PolicyStatement(System.Security.PermissionSet, System.Security.Policy.PolicyStatementAttribute)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Policy/PolicyStatement.cs
+    startLine: 58
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Policy
+  summary: Initializes a new instance of the @'System.Security.Policy.PolicyStatement' class with the specified @'System.Security.PermissionSet' and attributes.
+  syntax:
+    content: public PolicyStatement(PermissionSet permSet, PolicyStatementAttribute attributes)
+    content.vb: Public Sub New(permSet As PermissionSet, attributes As PolicyStatementAttribute)
+    parameters:
+    - id: permSet
+      type: System.Security.PermissionSet
+      description: The @'System.Security.PermissionSet' with which to initialize the new instance.
+    - id: attributes
+      type: System.Security.Policy.PolicyStatementAttribute
+      description: A bitwise combination of the @'System.Security.Policy.PolicyStatementAttribute' values.
+- uid: System.Security.Policy.PolicyStatement.PermissionSet
+  id: PermissionSet
+  parent: System.Security.Policy.PolicyStatement
+  href: System.Security.Policy.PolicyStatement.yml
+  name: PermissionSet
+  fullName: System.Security.Policy.PolicyStatement.PermissionSet
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Policy/PolicyStatement.cs
+    startLine: 91
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Policy
+  summary: Gets or sets the @'System.Security.PermissionSet' of the policy statement.
+  syntax:
+    content: public PermissionSet PermissionSet { get; set; }
+    content.vb: Public Property PermissionSet As PermissionSet
+    parameters: []
+    return:
+      type: System.Security.PermissionSet
+- uid: System.Security.Policy.PolicyStatement.Attributes
+  id: Attributes
+  parent: System.Security.Policy.PolicyStatement
+  href: System.Security.Policy.PolicyStatement.yml
+  name: Attributes
+  fullName: System.Security.Policy.PolicyStatement.Attributes
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Policy/PolicyStatement.cs
+    startLine: 130
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Policy
+  summary: Gets or sets the attributes of the policy statement.
+  syntax:
+    content: public PolicyStatementAttribute Attributes { get; set; }
+    content.vb: Public Property Attributes As PolicyStatementAttribute
+    parameters: []
+    return:
+      type: System.Security.Policy.PolicyStatementAttribute
+- uid: System.Security.Policy.PolicyStatement.Copy
+  id: Copy
+  parent: System.Security.Policy.PolicyStatement
+  href: System.Security.Policy.PolicyStatement.yml
+  name: Copy()
+  fullName: System.Security.Policy.PolicyStatement.Copy()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Policy/PolicyStatement.cs
+    startLine: 146
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Policy
+  summary: Creates an equivalent copy of the current policy statement.
+  syntax:
+    content: public PolicyStatement Copy()
+    content.vb: Public Function Copy As PolicyStatement
+    return:
+      type: System.Security.Policy.PolicyStatement
+- uid: System.Security.Policy.PolicyStatement.AttributeString
+  id: AttributeString
+  parent: System.Security.Policy.PolicyStatement
+  href: System.Security.Policy.PolicyStatement.yml
+  name: AttributeString
+  fullName: System.Security.Policy.PolicyStatement.AttributeString
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Policy/PolicyStatement.cs
+    startLine: 159
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Policy
+  summary: Gets a string representation of the attributes of the policy statement.
+  syntax:
+    content: public string AttributeString { get; }
+    content.vb: Public ReadOnly Property AttributeString As String
+    parameters: []
+    return:
+      type: System.String
+- uid: System.Security.Policy.PolicyStatement.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Security.Policy.PolicyStatement
+  href: System.Security.Policy.PolicyStatement.yml
+  name: Equals(Object)
+  fullName: System.Security.Policy.PolicyStatement.Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Policy/PolicyStatement.cs
+    startLine: 508
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Policy
+  summary: Determines whether the specified @'System.Security.Policy.PolicyStatement' object is equal to the current @'System.Security.Policy.PolicyStatement'.
+  syntax:
+    content: public override bool Equals(object obj)
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The @'System.Security.Policy.PolicyStatement' object to compare with the current @'System.Security.Policy.PolicyStatement'.
+    return:
+      type: System.Boolean
+  overridden: System.Object.Equals(System.Object)
+- uid: System.Security.Policy.PolicyStatement.GetHashCode
+  id: GetHashCode
+  parent: System.Security.Policy.PolicyStatement
+  href: System.Security.Policy.PolicyStatement.yml
+  name: GetHashCode()
+  fullName: System.Security.Policy.PolicyStatement.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Policy/PolicyStatement.cs
+    startLine: 525
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Policy
+  summary: Gets a hash code for the @'System.Security.Policy.PolicyStatement' object that is suitable for use in hashing algorithms and data structures such as a hash table.
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+  overridden: System.Object.GetHashCode
+references:
+- uid: System.Security.Policy
+  isExternal: false
+  name: System.Security.Policy
+  fullName: System.Security.Policy
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Security.PermissionSet
+  parent: System.Security
+  isExternal: false
+  href: System.Security.PermissionSet.yml
+  name: PermissionSet
+  fullName: System.Security.PermissionSet
+  type: Class
+- uid: System.Security
+  isExternal: false
+  name: System.Security
+  fullName: System.Security
+  type: Namespace
+- uid: System.Security.Policy.PolicyStatementAttribute
+  parent: System.Security.Policy
+  isExternal: false
+  href: System.Security.Policy.PolicyStatementAttribute.yml
+  name: PolicyStatementAttribute
+  fullName: System.Security.Policy.PolicyStatementAttribute
+  type: Enum
+- uid: System.Security.Policy.PolicyStatement
+  parent: System.Security.Policy
+  isExternal: false
+  href: System.Security.Policy.PolicyStatement.yml
+  name: PolicyStatement
+  fullName: System.Security.Policy.PolicyStatement
+  type: Class
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32

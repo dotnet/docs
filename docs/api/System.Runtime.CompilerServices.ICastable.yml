@@ -1,0 +1,101 @@
+items:
+- uid: System.Runtime.CompilerServices.ICastable
+  id: ICastable
+  parent: System.Runtime.CompilerServices
+  children:
+  - System.Runtime.CompilerServices.ICastable.GetImplType(System.RuntimeTypeHandle)
+  - System.Runtime.CompilerServices.ICastable.IsInstanceOfInterface(System.RuntimeTypeHandle,System.Exception@)
+  href: System.Runtime.CompilerServices.ICastable.yml
+  name: ICastable
+  fullName: System.Runtime.CompilerServices.ICastable
+  type: Interface
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/CompilerServices/ICastable.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/CompilerServices/ICastable.cs
+    startLine: 15
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.CompilerServices
+  syntax:
+    content: public interface ICastable
+    content.vb: Public Interface ICastable
+- uid: System.Runtime.CompilerServices.ICastable.IsInstanceOfInterface(System.RuntimeTypeHandle,System.Exception@)
+  id: IsInstanceOfInterface(System.RuntimeTypeHandle,System.Exception@)
+  parent: System.Runtime.CompilerServices.ICastable
+  href: System.Runtime.CompilerServices.ICastable.yml
+  name: IsInstanceOfInterface(RuntimeTypeHandle, out Exception)
+  name.vb: IsInstanceOfInterface(RuntimeTypeHandle, ByRef Exception)
+  fullName: System.Runtime.CompilerServices.ICastable.IsInstanceOfInterface(System.RuntimeTypeHandle, out System.Exception)
+  fullName.vb: System.Runtime.CompilerServices.ICastable.IsInstanceOfInterface(System.RuntimeTypeHandle, ByRef System.Exception)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/CompilerServices/ICastable.cs
+    startLine: 37
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.CompilerServices
+  syntax:
+    content: bool IsInstanceOfInterface(RuntimeTypeHandle interfaceType, out Exception castError)
+    content.vb: Function IsInstanceOfInterface(interfaceType As RuntimeTypeHandle, ByRef castError As Exception) As Boolean
+    parameters:
+    - id: interfaceType
+      type: System.RuntimeTypeHandle
+    - id: castError
+      type: System.Exception
+    return:
+      type: System.Boolean
+      description: 
+- uid: System.Runtime.CompilerServices.ICastable.GetImplType(System.RuntimeTypeHandle)
+  id: GetImplType(System.RuntimeTypeHandle)
+  parent: System.Runtime.CompilerServices.ICastable
+  href: System.Runtime.CompilerServices.ICastable.yml
+  name: GetImplType(RuntimeTypeHandle)
+  fullName: System.Runtime.CompilerServices.ICastable.GetImplType(System.RuntimeTypeHandle)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/CompilerServices/ICastable.cs
+    startLine: 60
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.CompilerServices
+  syntax:
+    content: RuntimeTypeHandle GetImplType(RuntimeTypeHandle interfaceType)
+    content.vb: Function GetImplType(interfaceType As RuntimeTypeHandle) As RuntimeTypeHandle
+    parameters:
+    - id: interfaceType
+      type: System.RuntimeTypeHandle
+    return:
+      type: System.RuntimeTypeHandle
+      description: 
+references:
+- uid: System.Runtime.CompilerServices
+  isExternal: false
+  name: System.Runtime.CompilerServices
+  fullName: System.Runtime.CompilerServices
+  type: Namespace
+- uid: System.RuntimeTypeHandle
+  parent: System
+  isExternal: false
+  href: System.RuntimeTypeHandle.yml
+  name: RuntimeTypeHandle
+  fullName: System.RuntimeTypeHandle
+  type: Struct
+- uid: System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  fullName: System.Exception
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

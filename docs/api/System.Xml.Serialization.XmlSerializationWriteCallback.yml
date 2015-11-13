@@ -1,0 +1,42 @@
+items:
+- uid: System.Xml.Serialization.XmlSerializationWriteCallback
+  id: XmlSerializationWriteCallback
+  parent: System.Xml.Serialization
+  children: []
+  href: System.Xml.Serialization.XmlSerializationWriteCallback.yml
+  name: XmlSerializationWriteCallback
+  fullName: System.Xml.Serialization.XmlSerializationWriteCallback
+  type: Delegate
+  source:
+    remote:
+      path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 1190
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Delegate that is used by the @'System.Xml.Serialization.XmlSerializer' class for serialization of types from SOAP-encoded, non-root XML data.
+  syntax:
+    content: public delegate void XmlSerializationWriteCallback(object o);
+    content.vb: Public Delegate Sub XmlSerializationWriteCallback(o As Object)
+    parameters:
+    - id: o
+      type: System.Object
+      description: The object being serialized.
+references:
+- uid: System.Xml.Serialization
+  isExternal: false
+  name: System.Xml.Serialization
+  fullName: System.Xml.Serialization
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

@@ -1,0 +1,1267 @@
+items:
+- uid: System.Collections.Generic
+  id: System.Collections.Generic
+  children:
+  - System.Collections.Generic.Comparer`1
+  - System.Collections.Generic.Dictionary`2
+  - System.Collections.Generic.Dictionary`2.Enumerator
+  - System.Collections.Generic.Dictionary`2.KeyCollection
+  - System.Collections.Generic.Dictionary`2.KeyCollection.Enumerator
+  - System.Collections.Generic.Dictionary`2.ValueCollection
+  - System.Collections.Generic.Dictionary`2.ValueCollection.Enumerator
+  - System.Collections.Generic.EqualityComparer`1
+  - System.Collections.Generic.HashSet`1
+  - System.Collections.Generic.HashSet`1.Enumerator
+  - System.Collections.Generic.ICollection`1
+  - System.Collections.Generic.IComparer`1
+  - System.Collections.Generic.IDictionary`2
+  - System.Collections.Generic.IEnumerable`1
+  - System.Collections.Generic.IEnumerator`1
+  - System.Collections.Generic.IEqualityComparer`1
+  - System.Collections.Generic.IList`1
+  - System.Collections.Generic.IReadOnlyCollection`1
+  - System.Collections.Generic.IReadOnlyDictionary`2
+  - System.Collections.Generic.IReadOnlyList`1
+  - System.Collections.Generic.ISet`1
+  - System.Collections.Generic.KeyNotFoundException
+  - System.Collections.Generic.KeyValuePair`2
+  - System.Collections.Generic.LinkedList`1
+  - System.Collections.Generic.LinkedList`1.Enumerator
+  - System.Collections.Generic.LinkedListNode`1
+  - System.Collections.Generic.List`1
+  - System.Collections.Generic.List`1.Enumerator
+  - System.Collections.Generic.Queue`1
+  - System.Collections.Generic.Queue`1.Enumerator
+  - System.Collections.Generic.SortedDictionary`2
+  - System.Collections.Generic.SortedDictionary`2.Enumerator
+  - System.Collections.Generic.SortedDictionary`2.KeyCollection
+  - System.Collections.Generic.SortedDictionary`2.KeyCollection.Enumerator
+  - System.Collections.Generic.SortedDictionary`2.ValueCollection
+  - System.Collections.Generic.SortedDictionary`2.ValueCollection.Enumerator
+  - System.Collections.Generic.SortedList`2
+  - System.Collections.Generic.SortedSet`1
+  - System.Collections.Generic.SortedSet`1.Enumerator
+  - System.Collections.Generic.Stack`1
+  - System.Collections.Generic.Stack`1.Enumerator
+  href: System.Collections.Generic.yml
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+  type: Namespace
+  source:
+    remote:
+      path: src/System.Runtime/src/System/Collections/Generic/ISet.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Runtime/src/System/Collections/Generic/ISet.cs
+    startLine: 5
+  assemblies:
+  - System.Runtime.CoreCLR
+  summary: The @'System.Collections.Generic' namespace contains interfaces and classes that define generic collections, which allow users to create strongly typed collections that provide better type safety and performance than non-generic strongly typed collections.
+references:
+- uid: System.Collections.Generic.ISet`1
+  isExternal: false
+  href: System.Collections.Generic.ISet`1.yml
+  name: ISet<T>
+  name.vb: ISet(Of T)
+  fullName: System.Collections.Generic.ISet<T>
+  fullName.vb: System.Collections.Generic.ISet(Of T)
+  type: Interface
+  summary: >-
+    Generic collection that guarantees the uniqueness of its elements, as defined
+
+    by some comparer. It also supports basic set operations such as Union, Intersection,
+
+    Complement and Exclusive Complement.
+  spec.csharp:
+  - uid: System.Collections.Generic.ISet`1
+    name: ISet
+    fullName: System.Collections.Generic.ISet
+    href: System.Collections.Generic.ISet`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ISet`1
+    name: ISet
+    fullName: System.Collections.Generic.ISet
+    href: System.Collections.Generic.ISet`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.HashSet`1
+  isExternal: false
+  href: System.Collections.Generic.HashSet`1.yml
+  name: HashSet<T>
+  name.vb: HashSet(Of T)
+  fullName: System.Collections.Generic.HashSet<T>
+  fullName.vb: System.Collections.Generic.HashSet(Of T)
+  type: Class
+  spec.csharp:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    fullName: System.Collections.Generic.HashSet
+    href: System.Collections.Generic.HashSet`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    fullName: System.Collections.Generic.HashSet
+    href: System.Collections.Generic.HashSet`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.HashSet`1.Enumerator
+  parent: System.Collections.Generic
+  isExternal: false
+  href: System.Collections.Generic.HashSet`1.Enumerator.yml
+  name: HashSet.Enumerator<>
+  name.vb: HashSet.Enumerator(Of )
+  fullName: System.Collections.Generic.HashSet.Enumerator<>
+  fullName.vb: System.Collections.Generic.HashSet.Enumerator(Of )
+  type: Struct
+  spec.csharp:
+  - uid: System.Collections.Generic.HashSet`1.Enumerator
+    name: HashSet.Enumerator
+    fullName: System.Collections.Generic.HashSet.Enumerator
+    href: System.Collections.Generic.HashSet`1.Enumerator.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.HashSet`1.Enumerator
+    name: HashSet.Enumerator
+    fullName: System.Collections.Generic.HashSet.Enumerator
+    href: System.Collections.Generic.HashSet`1.Enumerator.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.LinkedList`1
+  isExternal: false
+  href: System.Collections.Generic.LinkedList`1.yml
+  name: LinkedList<T>
+  name.vb: LinkedList(Of T)
+  fullName: System.Collections.Generic.LinkedList<T>
+  fullName.vb: System.Collections.Generic.LinkedList(Of T)
+  type: Class
+  spec.csharp:
+  - uid: System.Collections.Generic.LinkedList`1
+    name: LinkedList
+    fullName: System.Collections.Generic.LinkedList
+    href: System.Collections.Generic.LinkedList`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.LinkedList`1
+    name: LinkedList
+    fullName: System.Collections.Generic.LinkedList
+    href: System.Collections.Generic.LinkedList`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.LinkedList`1.Enumerator
+  parent: System.Collections.Generic
+  isExternal: false
+  href: System.Collections.Generic.LinkedList`1.Enumerator.yml
+  name: LinkedList.Enumerator<>
+  name.vb: LinkedList.Enumerator(Of )
+  fullName: System.Collections.Generic.LinkedList.Enumerator<>
+  fullName.vb: System.Collections.Generic.LinkedList.Enumerator(Of )
+  type: Struct
+  spec.csharp:
+  - uid: System.Collections.Generic.LinkedList`1.Enumerator
+    name: LinkedList.Enumerator
+    fullName: System.Collections.Generic.LinkedList.Enumerator
+    href: System.Collections.Generic.LinkedList`1.Enumerator.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.LinkedList`1.Enumerator
+    name: LinkedList.Enumerator
+    fullName: System.Collections.Generic.LinkedList.Enumerator
+    href: System.Collections.Generic.LinkedList`1.Enumerator.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.LinkedListNode`1
+  parent: System.Collections.Generic
+  isExternal: false
+  href: System.Collections.Generic.LinkedListNode`1.yml
+  name: LinkedListNode<T>
+  name.vb: LinkedListNode(Of T)
+  fullName: System.Collections.Generic.LinkedListNode<T>
+  fullName.vb: System.Collections.Generic.LinkedListNode(Of T)
+  type: Class
+  spec.csharp:
+  - uid: System.Collections.Generic.LinkedListNode`1
+    name: LinkedListNode
+    fullName: System.Collections.Generic.LinkedListNode
+    href: System.Collections.Generic.LinkedListNode`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.LinkedListNode`1
+    name: LinkedListNode
+    fullName: System.Collections.Generic.LinkedListNode
+    href: System.Collections.Generic.LinkedListNode`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.Queue`1
+  isExternal: false
+  href: System.Collections.Generic.Queue`1.yml
+  name: Queue<T>
+  name.vb: Queue(Of T)
+  fullName: System.Collections.Generic.Queue<T>
+  fullName.vb: System.Collections.Generic.Queue(Of T)
+  type: Class
+  spec.csharp:
+  - uid: System.Collections.Generic.Queue`1
+    name: Queue
+    fullName: System.Collections.Generic.Queue
+    href: System.Collections.Generic.Queue`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Queue`1
+    name: Queue
+    fullName: System.Collections.Generic.Queue
+    href: System.Collections.Generic.Queue`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.Queue`1.Enumerator
+  parent: System.Collections.Generic
+  isExternal: false
+  href: System.Collections.Generic.Queue`1.Enumerator.yml
+  name: Queue.Enumerator<>
+  name.vb: Queue.Enumerator(Of )
+  fullName: System.Collections.Generic.Queue.Enumerator<>
+  fullName.vb: System.Collections.Generic.Queue.Enumerator(Of )
+  type: Struct
+  spec.csharp:
+  - uid: System.Collections.Generic.Queue`1.Enumerator
+    name: Queue.Enumerator
+    fullName: System.Collections.Generic.Queue.Enumerator
+    href: System.Collections.Generic.Queue`1.Enumerator.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Queue`1.Enumerator
+    name: Queue.Enumerator
+    fullName: System.Collections.Generic.Queue.Enumerator
+    href: System.Collections.Generic.Queue`1.Enumerator.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.SortedDictionary`2
+  isExternal: false
+  href: System.Collections.Generic.SortedDictionary`2.yml
+  name: SortedDictionary<TKey, TValue>
+  name.vb: SortedDictionary(Of TKey, TValue)
+  fullName: System.Collections.Generic.SortedDictionary<TKey, TValue>
+  fullName.vb: System.Collections.Generic.SortedDictionary(Of TKey, TValue)
+  type: Class
+  spec.csharp:
+  - uid: System.Collections.Generic.SortedDictionary`2
+    name: SortedDictionary
+    fullName: System.Collections.Generic.SortedDictionary
+    href: System.Collections.Generic.SortedDictionary`2.yml
+  - name: <
+    fullName: <
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.SortedDictionary`2
+    name: SortedDictionary
+    fullName: System.Collections.Generic.SortedDictionary
+    href: System.Collections.Generic.SortedDictionary`2.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.SortedDictionary`2.Enumerator
+  parent: System.Collections.Generic
+  isExternal: false
+  href: System.Collections.Generic.SortedDictionary`2.Enumerator.yml
+  name: SortedDictionary.Enumerator<>
+  name.vb: SortedDictionary.Enumerator(Of )
+  fullName: System.Collections.Generic.SortedDictionary.Enumerator<>
+  fullName.vb: System.Collections.Generic.SortedDictionary.Enumerator(Of )
+  type: Struct
+  spec.csharp:
+  - uid: System.Collections.Generic.SortedDictionary`2.Enumerator
+    name: SortedDictionary.Enumerator
+    fullName: System.Collections.Generic.SortedDictionary.Enumerator
+    href: System.Collections.Generic.SortedDictionary`2.Enumerator.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.SortedDictionary`2.Enumerator
+    name: SortedDictionary.Enumerator
+    fullName: System.Collections.Generic.SortedDictionary.Enumerator
+    href: System.Collections.Generic.SortedDictionary`2.Enumerator.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.SortedDictionary`2.KeyCollection
+  parent: System.Collections.Generic
+  isExternal: false
+  href: System.Collections.Generic.SortedDictionary`2.KeyCollection.yml
+  name: SortedDictionary.KeyCollection<>
+  name.vb: SortedDictionary.KeyCollection(Of )
+  fullName: System.Collections.Generic.SortedDictionary.KeyCollection<>
+  fullName.vb: System.Collections.Generic.SortedDictionary.KeyCollection(Of )
+  type: Class
+  spec.csharp:
+  - uid: System.Collections.Generic.SortedDictionary`2.KeyCollection
+    name: SortedDictionary.KeyCollection
+    fullName: System.Collections.Generic.SortedDictionary.KeyCollection
+    href: System.Collections.Generic.SortedDictionary`2.KeyCollection.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.SortedDictionary`2.KeyCollection
+    name: SortedDictionary.KeyCollection
+    fullName: System.Collections.Generic.SortedDictionary.KeyCollection
+    href: System.Collections.Generic.SortedDictionary`2.KeyCollection.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.SortedDictionary`2.KeyCollection.Enumerator
+  parent: System.Collections.Generic
+  isExternal: false
+  href: System.Collections.Generic.SortedDictionary`2.KeyCollection.Enumerator.yml
+  name: SortedDictionary.KeyCollection.Enumerator<>
+  name.vb: SortedDictionary.KeyCollection.Enumerator(Of )
+  fullName: System.Collections.Generic.SortedDictionary.KeyCollection.Enumerator<>
+  fullName.vb: System.Collections.Generic.SortedDictionary.KeyCollection.Enumerator(Of )
+  type: Struct
+  spec.csharp:
+  - uid: System.Collections.Generic.SortedDictionary`2.KeyCollection.Enumerator
+    name: SortedDictionary.KeyCollection.Enumerator
+    fullName: System.Collections.Generic.SortedDictionary.KeyCollection.Enumerator
+    href: System.Collections.Generic.SortedDictionary`2.KeyCollection.Enumerator.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.SortedDictionary`2.KeyCollection.Enumerator
+    name: SortedDictionary.KeyCollection.Enumerator
+    fullName: System.Collections.Generic.SortedDictionary.KeyCollection.Enumerator
+    href: System.Collections.Generic.SortedDictionary`2.KeyCollection.Enumerator.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.SortedDictionary`2.ValueCollection
+  parent: System.Collections.Generic
+  isExternal: false
+  href: System.Collections.Generic.SortedDictionary`2.ValueCollection.yml
+  name: SortedDictionary.ValueCollection<>
+  name.vb: SortedDictionary.ValueCollection(Of )
+  fullName: System.Collections.Generic.SortedDictionary.ValueCollection<>
+  fullName.vb: System.Collections.Generic.SortedDictionary.ValueCollection(Of )
+  type: Class
+  spec.csharp:
+  - uid: System.Collections.Generic.SortedDictionary`2.ValueCollection
+    name: SortedDictionary.ValueCollection
+    fullName: System.Collections.Generic.SortedDictionary.ValueCollection
+    href: System.Collections.Generic.SortedDictionary`2.ValueCollection.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.SortedDictionary`2.ValueCollection
+    name: SortedDictionary.ValueCollection
+    fullName: System.Collections.Generic.SortedDictionary.ValueCollection
+    href: System.Collections.Generic.SortedDictionary`2.ValueCollection.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.SortedDictionary`2.ValueCollection.Enumerator
+  parent: System.Collections.Generic
+  isExternal: false
+  href: System.Collections.Generic.SortedDictionary`2.ValueCollection.Enumerator.yml
+  name: SortedDictionary.ValueCollection.Enumerator<>
+  name.vb: SortedDictionary.ValueCollection.Enumerator(Of )
+  fullName: System.Collections.Generic.SortedDictionary.ValueCollection.Enumerator<>
+  fullName.vb: System.Collections.Generic.SortedDictionary.ValueCollection.Enumerator(Of )
+  type: Struct
+  spec.csharp:
+  - uid: System.Collections.Generic.SortedDictionary`2.ValueCollection.Enumerator
+    name: SortedDictionary.ValueCollection.Enumerator
+    fullName: System.Collections.Generic.SortedDictionary.ValueCollection.Enumerator
+    href: System.Collections.Generic.SortedDictionary`2.ValueCollection.Enumerator.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.SortedDictionary`2.ValueCollection.Enumerator
+    name: SortedDictionary.ValueCollection.Enumerator
+    fullName: System.Collections.Generic.SortedDictionary.ValueCollection.Enumerator
+    href: System.Collections.Generic.SortedDictionary`2.ValueCollection.Enumerator.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.SortedList`2
+  isExternal: false
+  href: System.Collections.Generic.SortedList`2.yml
+  name: SortedList<TKey, TValue>
+  name.vb: SortedList(Of TKey, TValue)
+  fullName: System.Collections.Generic.SortedList<TKey, TValue>
+  fullName.vb: System.Collections.Generic.SortedList(Of TKey, TValue)
+  type: Class
+  spec.csharp:
+  - uid: System.Collections.Generic.SortedList`2
+    name: SortedList
+    fullName: System.Collections.Generic.SortedList
+    href: System.Collections.Generic.SortedList`2.yml
+  - name: <
+    fullName: <
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.SortedList`2
+    name: SortedList
+    fullName: System.Collections.Generic.SortedList
+    href: System.Collections.Generic.SortedList`2.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.SortedSet`1
+  parent: System.Collections.Generic
+  isExternal: false
+  href: System.Collections.Generic.SortedSet`1.yml
+  name: SortedSet<T>
+  name.vb: SortedSet(Of T)
+  fullName: System.Collections.Generic.SortedSet<T>
+  fullName.vb: System.Collections.Generic.SortedSet(Of T)
+  type: Class
+  spec.csharp:
+  - uid: System.Collections.Generic.SortedSet`1
+    name: SortedSet
+    fullName: System.Collections.Generic.SortedSet
+    href: System.Collections.Generic.SortedSet`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.SortedSet`1
+    name: SortedSet
+    fullName: System.Collections.Generic.SortedSet
+    href: System.Collections.Generic.SortedSet`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.SortedSet`1.Enumerator
+  parent: System.Collections.Generic
+  isExternal: false
+  href: System.Collections.Generic.SortedSet`1.Enumerator.yml
+  name: SortedSet.Enumerator<>
+  name.vb: SortedSet.Enumerator(Of )
+  fullName: System.Collections.Generic.SortedSet.Enumerator<>
+  fullName.vb: System.Collections.Generic.SortedSet.Enumerator(Of )
+  type: Struct
+  spec.csharp:
+  - uid: System.Collections.Generic.SortedSet`1.Enumerator
+    name: SortedSet.Enumerator
+    fullName: System.Collections.Generic.SortedSet.Enumerator
+    href: System.Collections.Generic.SortedSet`1.Enumerator.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.SortedSet`1.Enumerator
+    name: SortedSet.Enumerator
+    fullName: System.Collections.Generic.SortedSet.Enumerator
+    href: System.Collections.Generic.SortedSet`1.Enumerator.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.Stack`1
+  isExternal: false
+  href: System.Collections.Generic.Stack`1.yml
+  name: Stack<T>
+  name.vb: Stack(Of T)
+  fullName: System.Collections.Generic.Stack<T>
+  fullName.vb: System.Collections.Generic.Stack(Of T)
+  type: Class
+  spec.csharp:
+  - uid: System.Collections.Generic.Stack`1
+    name: Stack
+    fullName: System.Collections.Generic.Stack
+    href: System.Collections.Generic.Stack`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Stack`1
+    name: Stack
+    fullName: System.Collections.Generic.Stack
+    href: System.Collections.Generic.Stack`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.Stack`1.Enumerator
+  parent: System.Collections.Generic
+  isExternal: false
+  href: System.Collections.Generic.Stack`1.Enumerator.yml
+  name: Stack.Enumerator<>
+  name.vb: Stack.Enumerator(Of )
+  fullName: System.Collections.Generic.Stack.Enumerator<>
+  fullName.vb: System.Collections.Generic.Stack.Enumerator(Of )
+  type: Struct
+  spec.csharp:
+  - uid: System.Collections.Generic.Stack`1.Enumerator
+    name: Stack.Enumerator
+    fullName: System.Collections.Generic.Stack.Enumerator
+    href: System.Collections.Generic.Stack`1.Enumerator.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Stack`1.Enumerator
+    name: Stack.Enumerator
+    fullName: System.Collections.Generic.Stack.Enumerator
+    href: System.Collections.Generic.Stack`1.Enumerator.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.Comparer`1
+  parent: System.Collections.Generic
+  isExternal: false
+  href: System.Collections.Generic.Comparer`1.yml
+  name: Comparer<T>
+  name.vb: Comparer(Of T)
+  fullName: System.Collections.Generic.Comparer<T>
+  fullName.vb: System.Collections.Generic.Comparer(Of T)
+  type: Class
+  spec.csharp:
+  - uid: System.Collections.Generic.Comparer`1
+    name: Comparer
+    fullName: System.Collections.Generic.Comparer
+    href: System.Collections.Generic.Comparer`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Comparer`1
+    name: Comparer
+    fullName: System.Collections.Generic.Comparer
+    href: System.Collections.Generic.Comparer`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  parent: System.Collections.Generic
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  name.vb: Dictionary(Of TKey, TValue)
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2.Enumerator
+  parent: System.Collections.Generic
+  isExternal: false
+  href: System.Collections.Generic.Dictionary`2.Enumerator.yml
+  name: Dictionary.Enumerator<>
+  name.vb: Dictionary.Enumerator(Of )
+  fullName: System.Collections.Generic.Dictionary.Enumerator<>
+  fullName.vb: System.Collections.Generic.Dictionary.Enumerator(Of )
+  type: Struct
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2.Enumerator
+    name: Dictionary.Enumerator
+    fullName: System.Collections.Generic.Dictionary.Enumerator
+    href: System.Collections.Generic.Dictionary`2.Enumerator.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2.Enumerator
+    name: Dictionary.Enumerator
+    fullName: System.Collections.Generic.Dictionary.Enumerator
+    href: System.Collections.Generic.Dictionary`2.Enumerator.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2.KeyCollection
+  parent: System.Collections.Generic
+  isExternal: false
+  href: System.Collections.Generic.Dictionary`2.KeyCollection.yml
+  name: Dictionary.KeyCollection<>
+  name.vb: Dictionary.KeyCollection(Of )
+  fullName: System.Collections.Generic.Dictionary.KeyCollection<>
+  fullName.vb: System.Collections.Generic.Dictionary.KeyCollection(Of )
+  type: Class
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2.KeyCollection
+    name: Dictionary.KeyCollection
+    fullName: System.Collections.Generic.Dictionary.KeyCollection
+    href: System.Collections.Generic.Dictionary`2.KeyCollection.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2.KeyCollection
+    name: Dictionary.KeyCollection
+    fullName: System.Collections.Generic.Dictionary.KeyCollection
+    href: System.Collections.Generic.Dictionary`2.KeyCollection.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2.KeyCollection.Enumerator
+  parent: System.Collections.Generic
+  isExternal: false
+  href: System.Collections.Generic.Dictionary`2.KeyCollection.Enumerator.yml
+  name: Dictionary.KeyCollection.Enumerator<>
+  name.vb: Dictionary.KeyCollection.Enumerator(Of )
+  fullName: System.Collections.Generic.Dictionary.KeyCollection.Enumerator<>
+  fullName.vb: System.Collections.Generic.Dictionary.KeyCollection.Enumerator(Of )
+  type: Struct
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2.KeyCollection.Enumerator
+    name: Dictionary.KeyCollection.Enumerator
+    fullName: System.Collections.Generic.Dictionary.KeyCollection.Enumerator
+    href: System.Collections.Generic.Dictionary`2.KeyCollection.Enumerator.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2.KeyCollection.Enumerator
+    name: Dictionary.KeyCollection.Enumerator
+    fullName: System.Collections.Generic.Dictionary.KeyCollection.Enumerator
+    href: System.Collections.Generic.Dictionary`2.KeyCollection.Enumerator.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2.ValueCollection
+  parent: System.Collections.Generic
+  isExternal: false
+  href: System.Collections.Generic.Dictionary`2.ValueCollection.yml
+  name: Dictionary.ValueCollection<>
+  name.vb: Dictionary.ValueCollection(Of )
+  fullName: System.Collections.Generic.Dictionary.ValueCollection<>
+  fullName.vb: System.Collections.Generic.Dictionary.ValueCollection(Of )
+  type: Class
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2.ValueCollection
+    name: Dictionary.ValueCollection
+    fullName: System.Collections.Generic.Dictionary.ValueCollection
+    href: System.Collections.Generic.Dictionary`2.ValueCollection.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2.ValueCollection
+    name: Dictionary.ValueCollection
+    fullName: System.Collections.Generic.Dictionary.ValueCollection
+    href: System.Collections.Generic.Dictionary`2.ValueCollection.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2.ValueCollection.Enumerator
+  parent: System.Collections.Generic
+  isExternal: false
+  href: System.Collections.Generic.Dictionary`2.ValueCollection.Enumerator.yml
+  name: Dictionary.ValueCollection.Enumerator<>
+  name.vb: Dictionary.ValueCollection.Enumerator(Of )
+  fullName: System.Collections.Generic.Dictionary.ValueCollection.Enumerator<>
+  fullName.vb: System.Collections.Generic.Dictionary.ValueCollection.Enumerator(Of )
+  type: Struct
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2.ValueCollection.Enumerator
+    name: Dictionary.ValueCollection.Enumerator
+    fullName: System.Collections.Generic.Dictionary.ValueCollection.Enumerator
+    href: System.Collections.Generic.Dictionary`2.ValueCollection.Enumerator.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2.ValueCollection.Enumerator
+    name: Dictionary.ValueCollection.Enumerator
+    fullName: System.Collections.Generic.Dictionary.ValueCollection.Enumerator
+    href: System.Collections.Generic.Dictionary`2.ValueCollection.Enumerator.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.EqualityComparer`1
+  parent: System.Collections.Generic
+  isExternal: false
+  href: System.Collections.Generic.EqualityComparer`1.yml
+  name: EqualityComparer<T>
+  name.vb: EqualityComparer(Of T)
+  fullName: System.Collections.Generic.EqualityComparer<T>
+  fullName.vb: System.Collections.Generic.EqualityComparer(Of T)
+  type: Class
+  spec.csharp:
+  - uid: System.Collections.Generic.EqualityComparer`1
+    name: EqualityComparer
+    fullName: System.Collections.Generic.EqualityComparer
+    href: System.Collections.Generic.EqualityComparer`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.EqualityComparer`1
+    name: EqualityComparer
+    fullName: System.Collections.Generic.EqualityComparer
+    href: System.Collections.Generic.EqualityComparer`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: ICollection<T>
+  name.vb: ICollection(Of T)
+  fullName: System.Collections.Generic.ICollection<T>
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IComparer`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IComparer<T>
+  name.vb: IComparer(Of T)
+  fullName: System.Collections.Generic.IComparer<T>
+  fullName.vb: System.Collections.Generic.IComparer(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    fullName: System.Collections.Generic.IComparer
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    fullName: System.Collections.Generic.IComparer
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IDictionary`2
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IDictionary<TKey, TValue>
+  name.vb: IDictionary(Of TKey, TValue)
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerator<T>
+  name.vb: IEnumerator(Of T)
+  fullName: System.Collections.Generic.IEnumerator<T>
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEqualityComparer`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEqualityComparer<T>
+  name.vb: IEqualityComparer(Of T)
+  fullName: System.Collections.Generic.IEqualityComparer<T>
+  fullName.vb: System.Collections.Generic.IEqualityComparer(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IList`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IList<T>
+  name.vb: IList(Of T)
+  fullName: System.Collections.Generic.IList<T>
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IReadOnlyCollection<T>
+  name.vb: IReadOnlyCollection(Of T)
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    fullName: System.Collections.Generic.IReadOnlyCollection
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    fullName: System.Collections.Generic.IReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IReadOnlyList<T>
+  name.vb: IReadOnlyList(Of T)
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IReadOnlyDictionary`2
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IReadOnlyDictionary<TKey, TValue>
+  name.vb: IReadOnlyDictionary(Of TKey, TValue)
+  fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    fullName: System.Collections.Generic.IReadOnlyDictionary
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    fullName: System.Collections.Generic.IReadOnlyDictionary
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.KeyNotFoundException
+  isExternal: false
+  href: System.Collections.Generic.KeyNotFoundException.yml
+  name: KeyNotFoundException
+  fullName: System.Collections.Generic.KeyNotFoundException
+  type: Class
+- uid: System.Collections.Generic.KeyValuePair`2
+  parent: System.Collections.Generic
+  isExternal: true
+  name: KeyValuePair<TKey, TValue>
+  name.vb: KeyValuePair(Of TKey, TValue)
+  fullName: System.Collections.Generic.KeyValuePair<TKey, TValue>
+  fullName.vb: System.Collections.Generic.KeyValuePair(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: List<T>
+  name.vb: List(Of T)
+  fullName: System.Collections.Generic.List<T>
+  fullName.vb: System.Collections.Generic.List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.List`1.Enumerator
+  parent: System.Collections.Generic
+  isExternal: false
+  href: System.Collections.Generic.List`1.Enumerator.yml
+  name: List.Enumerator<>
+  name.vb: List.Enumerator(Of )
+  fullName: System.Collections.Generic.List.Enumerator<>
+  fullName.vb: System.Collections.Generic.List.Enumerator(Of )
+  type: Struct
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1.Enumerator
+    name: List.Enumerator
+    fullName: System.Collections.Generic.List.Enumerator
+    href: System.Collections.Generic.List`1.Enumerator.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1.Enumerator
+    name: List.Enumerator
+    fullName: System.Collections.Generic.List.Enumerator
+    href: System.Collections.Generic.List`1.Enumerator.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic

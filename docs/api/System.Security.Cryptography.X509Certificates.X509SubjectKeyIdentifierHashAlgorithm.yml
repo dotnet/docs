@@ -1,0 +1,83 @@
+items:
+- uid: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm
+  id: X509SubjectKeyIdentifierHashAlgorithm
+  parent: System.Security.Cryptography.X509Certificates
+  children:
+  - System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm.CapiSha1
+  - System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm.Sha1
+  - System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm.ShortSha1
+  href: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm.yml
+  name: X509SubjectKeyIdentifierHashAlgorithm
+  fullName: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509SubjectKeyIdentifierHashAlgorithm.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509SubjectKeyIdentifierHashAlgorithm.cs
+    startLine: 8
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Defines the type of hash algorithm to use with the @'System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension' class.
+  syntax:
+    content: public enum X509SubjectKeyIdentifierHashAlgorithm
+    content.vb: Public Enum X509SubjectKeyIdentifierHashAlgorithm
+- uid: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm.Sha1
+  id: Sha1
+  parent: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm
+  href: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm.yml
+  name: Sha1
+  fullName: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm.Sha1
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509SubjectKeyIdentifierHashAlgorithm.cs
+    startLine: 10
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The SKI is composed of the 160-bit SHA-1 hash of the value of the public key (excluding the tag, length, and number of unused bits).
+  syntax:
+    content: Sha1 = 0
+- uid: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm.ShortSha1
+  id: ShortSha1
+  parent: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm
+  href: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm.yml
+  name: ShortSha1
+  fullName: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm.ShortSha1
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509SubjectKeyIdentifierHashAlgorithm.cs
+    startLine: 11
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The SKI is composed of a four-bit type field with the value 0100, followed by the least significant 60 bits of the SHA-1 hash of the value of the public key (excluding the tag, length, and number of unused bit string bits)
+  syntax:
+    content: ShortSha1 = 1
+- uid: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm.CapiSha1
+  id: CapiSha1
+  parent: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm
+  href: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm.yml
+  name: CapiSha1
+  fullName: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm.CapiSha1
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509SubjectKeyIdentifierHashAlgorithm.cs
+    startLine: 12
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The subject key identifier (SKI) is composed of a 160-bit SHA-1 hash of the encoded public key (including the tag, length, and number of unused bits).
+  syntax:
+    content: CapiSha1 = 2
+references:
+- uid: System.Security.Cryptography.X509Certificates
+  isExternal: false
+  name: System.Security.Cryptography.X509Certificates
+  fullName: System.Security.Cryptography.X509Certificates
+  type: Namespace

@@ -1,0 +1,568 @@
+items:
+- uid: System.Globalization.UnicodeCategory
+  id: UnicodeCategory
+  parent: System.Globalization
+  children:
+  - System.Globalization.UnicodeCategory.ClosePunctuation
+  - System.Globalization.UnicodeCategory.ConnectorPunctuation
+  - System.Globalization.UnicodeCategory.Control
+  - System.Globalization.UnicodeCategory.CurrencySymbol
+  - System.Globalization.UnicodeCategory.DashPunctuation
+  - System.Globalization.UnicodeCategory.DecimalDigitNumber
+  - System.Globalization.UnicodeCategory.EnclosingMark
+  - System.Globalization.UnicodeCategory.FinalQuotePunctuation
+  - System.Globalization.UnicodeCategory.Format
+  - System.Globalization.UnicodeCategory.InitialQuotePunctuation
+  - System.Globalization.UnicodeCategory.LetterNumber
+  - System.Globalization.UnicodeCategory.LineSeparator
+  - System.Globalization.UnicodeCategory.LowercaseLetter
+  - System.Globalization.UnicodeCategory.MathSymbol
+  - System.Globalization.UnicodeCategory.ModifierLetter
+  - System.Globalization.UnicodeCategory.ModifierSymbol
+  - System.Globalization.UnicodeCategory.NonSpacingMark
+  - System.Globalization.UnicodeCategory.OpenPunctuation
+  - System.Globalization.UnicodeCategory.OtherLetter
+  - System.Globalization.UnicodeCategory.OtherNotAssigned
+  - System.Globalization.UnicodeCategory.OtherNumber
+  - System.Globalization.UnicodeCategory.OtherPunctuation
+  - System.Globalization.UnicodeCategory.OtherSymbol
+  - System.Globalization.UnicodeCategory.ParagraphSeparator
+  - System.Globalization.UnicodeCategory.PrivateUse
+  - System.Globalization.UnicodeCategory.SpaceSeparator
+  - System.Globalization.UnicodeCategory.SpacingCombiningMark
+  - System.Globalization.UnicodeCategory.Surrogate
+  - System.Globalization.UnicodeCategory.TitlecaseLetter
+  - System.Globalization.UnicodeCategory.UppercaseLetter
+  href: System.Globalization.UnicodeCategory.yml
+  name: UnicodeCategory
+  fullName: System.Globalization.UnicodeCategory
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Globalization/UnicodeCategory.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Globalization/UnicodeCategory.cs
+    startLine: 13
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Defines the Unicode category of a character.
+  syntax:
+    content: public enum UnicodeCategory
+    content.vb: Public Enum UnicodeCategory
+- uid: System.Globalization.UnicodeCategory.UppercaseLetter
+  id: UppercaseLetter
+  parent: System.Globalization.UnicodeCategory
+  href: System.Globalization.UnicodeCategory.yml
+  name: UppercaseLetter
+  fullName: System.Globalization.UnicodeCategory.UppercaseLetter
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/UnicodeCategory.cs
+    startLine: 17
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Uppercase letter. Signified by the Unicode designation "Lu" (letter, uppercase). The value is 0.
+  syntax:
+    content: UppercaseLetter = 0
+- uid: System.Globalization.UnicodeCategory.LowercaseLetter
+  id: LowercaseLetter
+  parent: System.Globalization.UnicodeCategory
+  href: System.Globalization.UnicodeCategory.yml
+  name: LowercaseLetter
+  fullName: System.Globalization.UnicodeCategory.LowercaseLetter
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/UnicodeCategory.cs
+    startLine: 19
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Lowercase letter. Signified by the Unicode designation "Ll" (letter, lowercase). The value is 1.
+  syntax:
+    content: LowercaseLetter = 1
+- uid: System.Globalization.UnicodeCategory.TitlecaseLetter
+  id: TitlecaseLetter
+  parent: System.Globalization.UnicodeCategory
+  href: System.Globalization.UnicodeCategory.yml
+  name: TitlecaseLetter
+  fullName: System.Globalization.UnicodeCategory.TitlecaseLetter
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/UnicodeCategory.cs
+    startLine: 21
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Titlecase letter. Signified by the Unicode designation "Lt" (letter, titlecase). The value is 2.
+  syntax:
+    content: TitlecaseLetter = 2
+- uid: System.Globalization.UnicodeCategory.ModifierLetter
+  id: ModifierLetter
+  parent: System.Globalization.UnicodeCategory
+  href: System.Globalization.UnicodeCategory.yml
+  name: ModifierLetter
+  fullName: System.Globalization.UnicodeCategory.ModifierLetter
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/UnicodeCategory.cs
+    startLine: 23
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Modifier letter character, which is free-standing spacing character that indicates modifications of a preceding letter. Signified by the Unicode designation "Lm" (letter, modifier). The value is 3.
+  syntax:
+    content: ModifierLetter = 3
+- uid: System.Globalization.UnicodeCategory.OtherLetter
+  id: OtherLetter
+  parent: System.Globalization.UnicodeCategory
+  href: System.Globalization.UnicodeCategory.yml
+  name: OtherLetter
+  fullName: System.Globalization.UnicodeCategory.OtherLetter
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/UnicodeCategory.cs
+    startLine: 25
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Letter that is not an uppercase letter, a lowercase letter, a titlecase letter, or a modifier letter. Signified by the Unicode designation "Lo" (letter, other). The value is 4.
+  syntax:
+    content: OtherLetter = 4
+- uid: System.Globalization.UnicodeCategory.NonSpacingMark
+  id: NonSpacingMark
+  parent: System.Globalization.UnicodeCategory
+  href: System.Globalization.UnicodeCategory.yml
+  name: NonSpacingMark
+  fullName: System.Globalization.UnicodeCategory.NonSpacingMark
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/UnicodeCategory.cs
+    startLine: 27
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Nonspacing character that indicates modifications of a base character. Signified by the Unicode designation "Mn" (mark, nonspacing). The value is 5.
+  syntax:
+    content: NonSpacingMark = 5
+- uid: System.Globalization.UnicodeCategory.SpacingCombiningMark
+  id: SpacingCombiningMark
+  parent: System.Globalization.UnicodeCategory
+  href: System.Globalization.UnicodeCategory.yml
+  name: SpacingCombiningMark
+  fullName: System.Globalization.UnicodeCategory.SpacingCombiningMark
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/UnicodeCategory.cs
+    startLine: 29
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Spacing character that indicates modifications of a base character and affects the width of the glyph for that base character. Signified by the Unicode designation "Mc" (mark, spacing combining). The value is 6.
+  syntax:
+    content: SpacingCombiningMark = 6
+- uid: System.Globalization.UnicodeCategory.EnclosingMark
+  id: EnclosingMark
+  parent: System.Globalization.UnicodeCategory
+  href: System.Globalization.UnicodeCategory.yml
+  name: EnclosingMark
+  fullName: System.Globalization.UnicodeCategory.EnclosingMark
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/UnicodeCategory.cs
+    startLine: 31
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Enclosing mark character, which is a nonspacing combining character that surrounds all previous characters up to and including a base character. Signified by the Unicode designation "Me" (mark, enclosing). The value is 7.
+  syntax:
+    content: EnclosingMark = 7
+- uid: System.Globalization.UnicodeCategory.DecimalDigitNumber
+  id: DecimalDigitNumber
+  parent: System.Globalization.UnicodeCategory
+  href: System.Globalization.UnicodeCategory.yml
+  name: DecimalDigitNumber
+  fullName: System.Globalization.UnicodeCategory.DecimalDigitNumber
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/UnicodeCategory.cs
+    startLine: 33
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Decimal digit character, that is, a character in the range 0 through 9. Signified by the Unicode designation "Nd" (number, decimal digit). The value is 8.
+  syntax:
+    content: DecimalDigitNumber = 8
+- uid: System.Globalization.UnicodeCategory.LetterNumber
+  id: LetterNumber
+  parent: System.Globalization.UnicodeCategory
+  href: System.Globalization.UnicodeCategory.yml
+  name: LetterNumber
+  fullName: System.Globalization.UnicodeCategory.LetterNumber
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/UnicodeCategory.cs
+    startLine: 35
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Number represented by a letter, instead of a decimal digit, for example, the Roman numeral for five, which is "V". The indicator is signified by the Unicode designation "Nl" (number, letter). The value is 9.
+  syntax:
+    content: LetterNumber = 9
+- uid: System.Globalization.UnicodeCategory.OtherNumber
+  id: OtherNumber
+  parent: System.Globalization.UnicodeCategory
+  href: System.Globalization.UnicodeCategory.yml
+  name: OtherNumber
+  fullName: System.Globalization.UnicodeCategory.OtherNumber
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/UnicodeCategory.cs
+    startLine: 37
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Number that is neither a decimal digit nor a letter number, for example, the fraction 1/2. The indicator is signified by the Unicode designation "No" (number, other). The value is 10.
+  syntax:
+    content: OtherNumber = 10
+- uid: System.Globalization.UnicodeCategory.SpaceSeparator
+  id: SpaceSeparator
+  parent: System.Globalization.UnicodeCategory
+  href: System.Globalization.UnicodeCategory.yml
+  name: SpaceSeparator
+  fullName: System.Globalization.UnicodeCategory.SpaceSeparator
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/UnicodeCategory.cs
+    startLine: 39
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Space character, which has no glyph but is not a control or format character. Signified by the Unicode designation "Zs" (separator, space). The value is 11.
+  syntax:
+    content: SpaceSeparator = 11
+- uid: System.Globalization.UnicodeCategory.LineSeparator
+  id: LineSeparator
+  parent: System.Globalization.UnicodeCategory
+  href: System.Globalization.UnicodeCategory.yml
+  name: LineSeparator
+  fullName: System.Globalization.UnicodeCategory.LineSeparator
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/UnicodeCategory.cs
+    startLine: 41
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Character that is used to separate lines of text. Signified by the Unicode designation "Zl" (separator, line). The value is 12.
+  syntax:
+    content: LineSeparator = 12
+- uid: System.Globalization.UnicodeCategory.ParagraphSeparator
+  id: ParagraphSeparator
+  parent: System.Globalization.UnicodeCategory
+  href: System.Globalization.UnicodeCategory.yml
+  name: ParagraphSeparator
+  fullName: System.Globalization.UnicodeCategory.ParagraphSeparator
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/UnicodeCategory.cs
+    startLine: 43
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Character used to separate paragraphs. Signified by the Unicode designation "Zp" (separator, paragraph). The value is 13.
+  syntax:
+    content: ParagraphSeparator = 13
+- uid: System.Globalization.UnicodeCategory.Control
+  id: Control
+  parent: System.Globalization.UnicodeCategory
+  href: System.Globalization.UnicodeCategory.yml
+  name: Control
+  fullName: System.Globalization.UnicodeCategory.Control
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/UnicodeCategory.cs
+    startLine: 45
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Control code character, with a Unicode value of U+007F or in the range U+0000 through U+001F or U+0080 through U+009F. Signified by the Unicode designation "Cc" (other, control). The value is 14.
+  syntax:
+    content: Control = 14
+- uid: System.Globalization.UnicodeCategory.Format
+  id: Format
+  parent: System.Globalization.UnicodeCategory
+  href: System.Globalization.UnicodeCategory.yml
+  name: Format
+  fullName: System.Globalization.UnicodeCategory.Format
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/UnicodeCategory.cs
+    startLine: 47
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Format character that affects the layout of text or the operation of text processes, but is not normally rendered. Signified by the Unicode designation "Cf" (other, format). The value is 15.
+  syntax:
+    content: Format = 15
+- uid: System.Globalization.UnicodeCategory.Surrogate
+  id: Surrogate
+  parent: System.Globalization.UnicodeCategory
+  href: System.Globalization.UnicodeCategory.yml
+  name: Surrogate
+  fullName: System.Globalization.UnicodeCategory.Surrogate
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/UnicodeCategory.cs
+    startLine: 49
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: High surrogate or a low surrogate character. Surrogate code values are in the range U+D800 through U+DFFF. Signified by the Unicode designation "Cs" (other, surrogate). The value is 16.
+  syntax:
+    content: Surrogate = 16
+- uid: System.Globalization.UnicodeCategory.PrivateUse
+  id: PrivateUse
+  parent: System.Globalization.UnicodeCategory
+  href: System.Globalization.UnicodeCategory.yml
+  name: PrivateUse
+  fullName: System.Globalization.UnicodeCategory.PrivateUse
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/UnicodeCategory.cs
+    startLine: 51
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Private-use character, with a Unicode value in the range U+E000 through U+F8FF. Signified by the Unicode designation "Co" (other, private use). The value is 17.
+  syntax:
+    content: PrivateUse = 17
+- uid: System.Globalization.UnicodeCategory.ConnectorPunctuation
+  id: ConnectorPunctuation
+  parent: System.Globalization.UnicodeCategory
+  href: System.Globalization.UnicodeCategory.yml
+  name: ConnectorPunctuation
+  fullName: System.Globalization.UnicodeCategory.ConnectorPunctuation
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/UnicodeCategory.cs
+    startLine: 53
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Connector punctuation character that connects two characters. Signified by the Unicode designation "Pc" (punctuation, connector). The value is 18.
+  syntax:
+    content: ConnectorPunctuation = 18
+- uid: System.Globalization.UnicodeCategory.DashPunctuation
+  id: DashPunctuation
+  parent: System.Globalization.UnicodeCategory
+  href: System.Globalization.UnicodeCategory.yml
+  name: DashPunctuation
+  fullName: System.Globalization.UnicodeCategory.DashPunctuation
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/UnicodeCategory.cs
+    startLine: 55
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Dash or hyphen character. Signified by the Unicode designation "Pd" (punctuation, dash). The value is 19.
+  syntax:
+    content: DashPunctuation = 19
+- uid: System.Globalization.UnicodeCategory.OpenPunctuation
+  id: OpenPunctuation
+  parent: System.Globalization.UnicodeCategory
+  href: System.Globalization.UnicodeCategory.yml
+  name: OpenPunctuation
+  fullName: System.Globalization.UnicodeCategory.OpenPunctuation
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/UnicodeCategory.cs
+    startLine: 57
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Opening character of one of the paired punctuation marks, such as parentheses, square brackets, and braces. Signified by the Unicode designation "Ps" (punctuation, open). The value is 20.
+  syntax:
+    content: OpenPunctuation = 20
+- uid: System.Globalization.UnicodeCategory.ClosePunctuation
+  id: ClosePunctuation
+  parent: System.Globalization.UnicodeCategory
+  href: System.Globalization.UnicodeCategory.yml
+  name: ClosePunctuation
+  fullName: System.Globalization.UnicodeCategory.ClosePunctuation
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/UnicodeCategory.cs
+    startLine: 59
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Closing character of one of the paired punctuation marks, such as parentheses, square brackets, and braces. Signified by the Unicode designation "Pe" (punctuation, close). The value is 21.
+  syntax:
+    content: ClosePunctuation = 21
+- uid: System.Globalization.UnicodeCategory.InitialQuotePunctuation
+  id: InitialQuotePunctuation
+  parent: System.Globalization.UnicodeCategory
+  href: System.Globalization.UnicodeCategory.yml
+  name: InitialQuotePunctuation
+  fullName: System.Globalization.UnicodeCategory.InitialQuotePunctuation
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/UnicodeCategory.cs
+    startLine: 61
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Opening or initial quotation mark character. Signified by the Unicode designation "Pi" (punctuation, initial quote). The value is 22.
+  syntax:
+    content: InitialQuotePunctuation = 22
+- uid: System.Globalization.UnicodeCategory.FinalQuotePunctuation
+  id: FinalQuotePunctuation
+  parent: System.Globalization.UnicodeCategory
+  href: System.Globalization.UnicodeCategory.yml
+  name: FinalQuotePunctuation
+  fullName: System.Globalization.UnicodeCategory.FinalQuotePunctuation
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/UnicodeCategory.cs
+    startLine: 63
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Closing or final quotation mark character. Signified by the Unicode designation "Pf" (punctuation, final quote). The value is 23.
+  syntax:
+    content: FinalQuotePunctuation = 23
+- uid: System.Globalization.UnicodeCategory.OtherPunctuation
+  id: OtherPunctuation
+  parent: System.Globalization.UnicodeCategory
+  href: System.Globalization.UnicodeCategory.yml
+  name: OtherPunctuation
+  fullName: System.Globalization.UnicodeCategory.OtherPunctuation
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/UnicodeCategory.cs
+    startLine: 65
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Punctuation character that is not a connector, a dash, open punctuation, close punctuation, an initial quote, or a final quote. Signified by the Unicode designation "Po" (punctuation, other). The value is 24.
+  syntax:
+    content: OtherPunctuation = 24
+- uid: System.Globalization.UnicodeCategory.MathSymbol
+  id: MathSymbol
+  parent: System.Globalization.UnicodeCategory
+  href: System.Globalization.UnicodeCategory.yml
+  name: MathSymbol
+  fullName: System.Globalization.UnicodeCategory.MathSymbol
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/UnicodeCategory.cs
+    startLine: 67
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Mathematical symbol character, such as "+" or "= ". Signified by the Unicode designation "Sm" (symbol, math). The value is 25.
+  syntax:
+    content: MathSymbol = 25
+- uid: System.Globalization.UnicodeCategory.CurrencySymbol
+  id: CurrencySymbol
+  parent: System.Globalization.UnicodeCategory
+  href: System.Globalization.UnicodeCategory.yml
+  name: CurrencySymbol
+  fullName: System.Globalization.UnicodeCategory.CurrencySymbol
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/UnicodeCategory.cs
+    startLine: 69
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Currency symbol character. Signified by the Unicode designation "Sc" (symbol, currency). The value is 26.
+  syntax:
+    content: CurrencySymbol = 26
+- uid: System.Globalization.UnicodeCategory.ModifierSymbol
+  id: ModifierSymbol
+  parent: System.Globalization.UnicodeCategory
+  href: System.Globalization.UnicodeCategory.yml
+  name: ModifierSymbol
+  fullName: System.Globalization.UnicodeCategory.ModifierSymbol
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/UnicodeCategory.cs
+    startLine: 71
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Modifier symbol character, which indicates modifications of surrounding characters. For example, the fraction slash indicates that the number to the left is the numerator and the number to the right is the denominator. The indicator is signified by the Unicode designation "Sk" (symbol, modifier). The value is 27.
+  syntax:
+    content: ModifierSymbol = 27
+- uid: System.Globalization.UnicodeCategory.OtherSymbol
+  id: OtherSymbol
+  parent: System.Globalization.UnicodeCategory
+  href: System.Globalization.UnicodeCategory.yml
+  name: OtherSymbol
+  fullName: System.Globalization.UnicodeCategory.OtherSymbol
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/UnicodeCategory.cs
+    startLine: 73
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Symbol character that is not a mathematical symbol, a currency symbol or a modifier symbol. Signified by the Unicode designation "So" (symbol, other). The value is 28.
+  syntax:
+    content: OtherSymbol = 28
+- uid: System.Globalization.UnicodeCategory.OtherNotAssigned
+  id: OtherNotAssigned
+  parent: System.Globalization.UnicodeCategory
+  href: System.Globalization.UnicodeCategory.yml
+  name: OtherNotAssigned
+  fullName: System.Globalization.UnicodeCategory.OtherNotAssigned
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/UnicodeCategory.cs
+    startLine: 75
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Character that is not assigned to any Unicode category. Signified by the Unicode designation "Cn" (other, not assigned). The value is 29.
+  syntax:
+    content: OtherNotAssigned = 29
+references:
+- uid: System.Globalization
+  isExternal: false
+  name: System.Globalization
+  fullName: System.Globalization

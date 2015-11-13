@@ -1,0 +1,388 @@
+items:
+- uid: System.Threading.PreAllocatedOverlapped
+  id: PreAllocatedOverlapped
+  parent: System.Threading
+  children:
+  - System.Threading.PreAllocatedOverlapped.#ctor(System.Threading.IOCompletionCallback,System.Object,System.Object)
+  - System.Threading.PreAllocatedOverlapped.Dispose
+  - System.Threading.PreAllocatedOverlapped.Finalize
+  href: System.Threading.PreAllocatedOverlapped.yml
+  name: PreAllocatedOverlapped
+  fullName: System.Threading.PreAllocatedOverlapped
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Threading.Overlapped/src/System/Threading/ClrThreadPoolPreAllocatedOverlapped.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Threading.Overlapped/src/System/Threading/ClrThreadPoolPreAllocatedOverlapped.cs
+    startLine: 9
+  assemblies:
+  - System.Threading.Overlapped.CoreCLR
+  namespace: System.Threading
+  summary: Represents pre-allocated state for native overlapped I/O operations.
+  syntax:
+    content: 'public sealed class PreAllocatedOverlapped : IDisposable, IDeferredDisposable'
+    content.vb: Public NotInheritable Class PreAllocatedOverlapped Implements IDisposable, IDeferredDisposable
+  seealso:
+  - type: System.Threading.ThreadPoolBoundHandle.AllocateNativeOverlapped(System.Threading.PreAllocatedOverlapped)
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Threading.PreAllocatedOverlapped.#ctor(System.Threading.IOCompletionCallback,System.Object,System.Object)
+  id: '#ctor(System.Threading.IOCompletionCallback,System.Object,System.Object)'
+  parent: System.Threading.PreAllocatedOverlapped
+  href: System.Threading.PreAllocatedOverlapped.yml
+  name: PreAllocatedOverlapped(IOCompletionCallback, Object, Object)
+  fullName: System.Threading.PreAllocatedOverlapped.PreAllocatedOverlapped(System.Threading.IOCompletionCallback, System.Object, System.Object)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Threading.Overlapped/src/System/Threading/ClrThreadPoolPreAllocatedOverlapped.cs
+    startLine: 48
+  assemblies:
+  - System.Threading.Overlapped.CoreCLR
+  namespace: System.Threading
+  summary: >-
+    Initializes a new instance of the @'System.Threading.PreAllocatedOverlapped' class, specifying
+
+    a delegate that is invoked when each asynchronous I/O operation is complete, a user-provided
+
+    object providing context, and managed objects that serve as buffers.
+  remarks: >-
+    The new @'System.Threading.PreAllocatedOverlapped' instance can be passed to
+
+    @'System.Threading.ThreadPoolBoundHandle.AllocateNativeOverlapped(System.Threading.PreAllocatedOverlapped)', to produce
+
+    a @'System.Threading.NativeOverlapped' instance that can be passed to the operating system in overlapped
+
+    I/O operations.  A single @'System.Threading.PreAllocatedOverlapped' instance can only be used for
+
+    a single native I/O operation at a time.  However, the state stored in the @'System.Threading.PreAllocatedOverlapped'
+
+    instance can be reused for subsequent native operations.
+
+    <note>
+
+    The buffers specified in <paramref name="pinData" /> are pinned until @'System.Threading.PreAllocatedOverlapped.Dispose' is called.
+
+    </note>
+  syntax:
+    content: public PreAllocatedOverlapped(IOCompletionCallback callback, object state, object pinData)
+    content.vb: Public Sub New(callback As IOCompletionCallback, state As Object, pinData As Object)
+    parameters:
+    - id: callback
+      type: System.Threading.IOCompletionCallback
+      description: >-
+        An @'System.Threading.IOCompletionCallback' delegate that represents the callback method
+
+        invoked when each asynchronous I/O operation completes.
+    - id: state
+      type: System.Object
+      description: >-
+        A user-provided object that distinguishes @'System.Threading.NativeOverlapped' instance produced from this
+
+        object from other @'System.Threading.NativeOverlapped' instances. Can be <see langword="null" />.
+    - id: pinData
+      type: System.Object
+      description: >-
+        An object or array of objects representing the input or output buffer for the operations. Each
+
+        object represents a buffer, for example an array of bytes.  Can be <see langword="null" />.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: is .
+  - type: System.ObjectDisposedException
+    description: This method was called after the  was disposed.
+- uid: System.Threading.PreAllocatedOverlapped.Dispose
+  id: Dispose
+  parent: System.Threading.PreAllocatedOverlapped
+  href: System.Threading.PreAllocatedOverlapped.yml
+  name: Dispose()
+  fullName: System.Threading.PreAllocatedOverlapped.Dispose()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Overlapped/src/System/Threading/ClrThreadPoolPreAllocatedOverlapped.cs
+    startLine: 70
+  assemblies:
+  - System.Threading.Overlapped.CoreCLR
+  namespace: System.Threading
+  summary: Frees the resources associated with this @'System.Threading.PreAllocatedOverlapped' instance.
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+- uid: System.Threading.PreAllocatedOverlapped.Finalize
+  id: Finalize
+  parent: System.Threading.PreAllocatedOverlapped
+  href: System.Threading.PreAllocatedOverlapped.yml
+  name: Finalize()
+  fullName: System.Threading.PreAllocatedOverlapped.Finalize()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Overlapped/src/System/Threading/ClrThreadPoolPreAllocatedOverlapped.cs
+    startLine: 76
+  assemblies:
+  - System.Threading.Overlapped.CoreCLR
+  namespace: System.Threading
+  syntax:
+    content: protected void Finalize()
+    content.vb: Protected Sub Finalize
+references:
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Threading.ThreadPoolBoundHandle.AllocateNativeOverlapped(System.Threading.PreAllocatedOverlapped)
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Threading.PreAllocatedOverlapped
+  parent: System.Threading
+  isExternal: false
+  href: System.Threading.PreAllocatedOverlapped.yml
+  name: PreAllocatedOverlapped
+  fullName: System.Threading.PreAllocatedOverlapped
+  type: Class
+  summary: Represents pre-allocated state for native overlapped I/O operations.
+- uid: System.Threading.NativeOverlapped
+  isExternal: false
+  href: System.Threading.NativeOverlapped.yml
+  name: NativeOverlapped
+  fullName: System.Threading.NativeOverlapped
+  type: Struct
+- uid: System.Threading.PreAllocatedOverlapped.Dispose
+- uid: System.Threading.IOCompletionCallback
+  parent: System.Threading
+  isExternal: false
+  href: System.Threading.IOCompletionCallback.yml
+  name: IOCompletionCallback
+  fullName: System.Threading.IOCompletionCallback
+  type: Delegate
+- uid: System.ArgumentNullException
+- uid: System.ObjectDisposedException

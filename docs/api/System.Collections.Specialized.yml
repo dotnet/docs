@@ -1,0 +1,165 @@
+items:
+- uid: System.Collections.Specialized
+  id: System.Collections.Specialized
+  children:
+  - System.Collections.Specialized.BitVector32
+  - System.Collections.Specialized.BitVector32.Section
+  - System.Collections.Specialized.CollectionsUtil
+  - System.Collections.Specialized.HybridDictionary
+  - System.Collections.Specialized.INotifyCollectionChanged
+  - System.Collections.Specialized.IOrderedDictionary
+  - System.Collections.Specialized.ListDictionary
+  - System.Collections.Specialized.NameObjectCollectionBase
+  - System.Collections.Specialized.NameObjectCollectionBase.KeysCollection
+  - System.Collections.Specialized.NameValueCollection
+  - System.Collections.Specialized.NotifyCollectionChangedAction
+  - System.Collections.Specialized.NotifyCollectionChangedEventArgs
+  - System.Collections.Specialized.NotifyCollectionChangedEventHandler
+  - System.Collections.Specialized.OrderedDictionary
+  - System.Collections.Specialized.StringCollection
+  - System.Collections.Specialized.StringDictionary
+  - System.Collections.Specialized.StringEnumerator
+  href: System.Collections.Specialized.yml
+  name: System.Collections.Specialized
+  fullName: System.Collections.Specialized
+  type: Namespace
+  source:
+    remote:
+      path: src/System.Collections.Specialized/src/System/Collections/Specialized/StringDictionary.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/StringDictionary.cs
+    startLine: 10
+  assemblies:
+  - System.Collections.Specialized
+  summary: The @'System.Collections.Specialized' namespace contains specialized and strongly-typed collections; for example, a linked list dictionary, a bit vector, and collections that contain only strings.
+references:
+- uid: System.Collections.Specialized.BitVector32
+  parent: System.Collections.Specialized
+  isExternal: false
+  href: System.Collections.Specialized.BitVector32.yml
+  name: BitVector32
+  fullName: System.Collections.Specialized.BitVector32
+  type: Struct
+- uid: System.Collections.Specialized.BitVector32.Section
+  parent: System.Collections.Specialized
+  isExternal: false
+  href: System.Collections.Specialized.BitVector32.Section.yml
+  name: BitVector32.Section
+  fullName: System.Collections.Specialized.BitVector32.Section
+  type: Struct
+- uid: System.Collections.Specialized.HybridDictionary
+  isExternal: false
+  href: System.Collections.Specialized.HybridDictionary.yml
+  name: HybridDictionary
+  fullName: System.Collections.Specialized.HybridDictionary
+  type: Class
+- uid: System.Collections.Specialized.IOrderedDictionary
+  isExternal: false
+  href: System.Collections.Specialized.IOrderedDictionary.yml
+  name: IOrderedDictionary
+  fullName: System.Collections.Specialized.IOrderedDictionary
+  type: Interface
+- uid: System.Collections.Specialized.ListDictionary
+  isExternal: false
+  href: System.Collections.Specialized.ListDictionary.yml
+  name: ListDictionary
+  fullName: System.Collections.Specialized.ListDictionary
+  type: Class
+- uid: System.Collections.Specialized.NameObjectCollectionBase
+  isExternal: false
+  href: System.Collections.Specialized.NameObjectCollectionBase.yml
+  name: NameObjectCollectionBase
+  fullName: System.Collections.Specialized.NameObjectCollectionBase
+  type: Class
+- uid: System.Collections.Specialized.NameObjectCollectionBase.KeysCollection
+  parent: System.Collections.Specialized
+  isExternal: false
+  href: System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.yml
+  name: NameObjectCollectionBase.KeysCollection
+  fullName: System.Collections.Specialized.NameObjectCollectionBase.KeysCollection
+  type: Class
+- uid: System.Collections.Specialized.NameValueCollection
+  parent: System.Collections.Specialized
+  isExternal: false
+  href: System.Collections.Specialized.NameValueCollection.yml
+  name: NameValueCollection
+  fullName: System.Collections.Specialized.NameValueCollection
+  type: Class
+- uid: System.Collections.Specialized.OrderedDictionary
+  parent: System.Collections.Specialized
+  isExternal: false
+  href: System.Collections.Specialized.OrderedDictionary.yml
+  name: OrderedDictionary
+  fullName: System.Collections.Specialized.OrderedDictionary
+  type: Class
+- uid: System.Collections.Specialized.StringCollection
+  isExternal: false
+  href: System.Collections.Specialized.StringCollection.yml
+  name: StringCollection
+  fullName: System.Collections.Specialized.StringCollection
+  type: Class
+- uid: System.Collections.Specialized.StringEnumerator
+  parent: System.Collections.Specialized
+  isExternal: false
+  href: System.Collections.Specialized.StringEnumerator.yml
+  name: StringEnumerator
+  fullName: System.Collections.Specialized.StringEnumerator
+  type: Class
+- uid: System.Collections.Specialized.StringDictionary
+  isExternal: false
+  href: System.Collections.Specialized.StringDictionary.yml
+  name: StringDictionary
+  fullName: System.Collections.Specialized.StringDictionary
+  type: Class
+- uid: System.Collections.Specialized.CollectionsUtil
+  isExternal: false
+  href: System.Collections.Specialized.CollectionsUtil.yml
+  name: CollectionsUtil
+  fullName: System.Collections.Specialized.CollectionsUtil
+  type: Class
+- uid: System.Collections.Specialized.INotifyCollectionChanged
+  isExternal: false
+  href: System.Collections.Specialized.INotifyCollectionChanged.yml
+  name: INotifyCollectionChanged
+  fullName: System.Collections.Specialized.INotifyCollectionChanged
+  type: Interface
+  summary: >-
+    A collection implementing this interface will notify listeners of dynamic changes,
+
+    e.g. when items get added and removed or the whole list is refreshed.
+- uid: System.Collections.Specialized.NotifyCollectionChangedAction
+  parent: System.Collections.Specialized
+  isExternal: false
+  href: System.Collections.Specialized.NotifyCollectionChangedAction.yml
+  name: NotifyCollectionChangedAction
+  fullName: System.Collections.Specialized.NotifyCollectionChangedAction
+  type: Enum
+  summary: This enum describes the action that caused a CollectionChanged event.
+- uid: System.Collections.Specialized.NotifyCollectionChangedEventArgs
+  isExternal: false
+  href: System.Collections.Specialized.NotifyCollectionChangedEventArgs.yml
+  name: NotifyCollectionChangedEventArgs
+  fullName: System.Collections.Specialized.NotifyCollectionChangedEventArgs
+  type: Class
+  summary: >-
+    Arguments for the CollectionChanged event.
+
+    A collection that supports INotifyCollectionChangedThis raises this event
+
+    whenever an item is added or removed, or when the contents of the collection
+
+    changes dramatically.
+- uid: System.Collections.Specialized.NotifyCollectionChangedEventHandler
+  parent: System.Collections.Specialized
+  isExternal: false
+  href: System.Collections.Specialized.NotifyCollectionChangedEventHandler.yml
+  name: NotifyCollectionChangedEventHandler
+  fullName: System.Collections.Specialized.NotifyCollectionChangedEventHandler
+  type: Delegate
+  summary: The delegate to use for handlers that receive the CollectionChanged event.
+- uid: System.Collections.Specialized
+  isExternal: false
+  name: System.Collections.Specialized
+  fullName: System.Collections.Specialized
+  type: Namespace

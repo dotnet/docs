@@ -1,0 +1,407 @@
+items:
+- uid: System.Net.WebExceptionStatus
+  id: WebExceptionStatus
+  parent: System.Net
+  children:
+  - System.Net.WebExceptionStatus.CacheEntryNotFound
+  - System.Net.WebExceptionStatus.ConnectFailure
+  - System.Net.WebExceptionStatus.ConnectionClosed
+  - System.Net.WebExceptionStatus.KeepAliveFailure
+  - System.Net.WebExceptionStatus.MessageLengthLimitExceeded
+  - System.Net.WebExceptionStatus.NameResolutionFailure
+  - System.Net.WebExceptionStatus.Pending
+  - System.Net.WebExceptionStatus.PipelineFailure
+  - System.Net.WebExceptionStatus.ProtocolError
+  - System.Net.WebExceptionStatus.ProxyNameResolutionFailure
+  - System.Net.WebExceptionStatus.ReceiveFailure
+  - System.Net.WebExceptionStatus.RequestCanceled
+  - System.Net.WebExceptionStatus.RequestProhibitedByCachePolicy
+  - System.Net.WebExceptionStatus.RequestProhibitedByProxy
+  - System.Net.WebExceptionStatus.SecureChannelFailure
+  - System.Net.WebExceptionStatus.SendFailure
+  - System.Net.WebExceptionStatus.ServerProtocolViolation
+  - System.Net.WebExceptionStatus.Success
+  - System.Net.WebExceptionStatus.Timeout
+  - System.Net.WebExceptionStatus.TrustFailure
+  - System.Net.WebExceptionStatus.UnknownError
+  href: System.Net.WebExceptionStatus.yml
+  name: WebExceptionStatus
+  fullName: System.Net.WebExceptionStatus
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Net.Requests/src/System/Net/WebExceptionStatus.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Net.Requests/src/System/Net/WebExceptionStatus.cs
+    startLine: 5
+  assemblies:
+  - System.Net.Requests
+  namespace: System.Net
+  summary: Defines status codes for the @'System.Net.WebException' class.
+  syntax:
+    content: public enum WebExceptionStatus
+    content.vb: Public Enum WebExceptionStatus
+- uid: System.Net.WebExceptionStatus.Success
+  id: Success
+  parent: System.Net.WebExceptionStatus
+  href: System.Net.WebExceptionStatus.yml
+  name: Success
+  fullName: System.Net.WebExceptionStatus.Success
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Net.Requests/src/System/Net/WebExceptionStatus.cs
+    startLine: 7
+  assemblies:
+  - System.Net.Requests
+  namespace: System.Net
+  summary: No error was encountered.
+  syntax:
+    content: Success = 0
+- uid: System.Net.WebExceptionStatus.NameResolutionFailure
+  id: NameResolutionFailure
+  parent: System.Net.WebExceptionStatus
+  href: System.Net.WebExceptionStatus.yml
+  name: NameResolutionFailure
+  fullName: System.Net.WebExceptionStatus.NameResolutionFailure
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Net.Requests/src/System/Net/WebExceptionStatus.cs
+    startLine: 8
+  assemblies:
+  - System.Net.Requests
+  namespace: System.Net
+  summary: The name resolver service could not resolve the host name.
+  syntax:
+    content: NameResolutionFailure = 1
+- uid: System.Net.WebExceptionStatus.ConnectFailure
+  id: ConnectFailure
+  parent: System.Net.WebExceptionStatus
+  href: System.Net.WebExceptionStatus.yml
+  name: ConnectFailure
+  fullName: System.Net.WebExceptionStatus.ConnectFailure
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Net.Requests/src/System/Net/WebExceptionStatus.cs
+    startLine: 9
+  assemblies:
+  - System.Net.Requests
+  namespace: System.Net
+  summary: The remote service point could not be contacted at the transport level.
+  syntax:
+    content: ConnectFailure = 2
+- uid: System.Net.WebExceptionStatus.ReceiveFailure
+  id: ReceiveFailure
+  parent: System.Net.WebExceptionStatus
+  href: System.Net.WebExceptionStatus.yml
+  name: ReceiveFailure
+  fullName: System.Net.WebExceptionStatus.ReceiveFailure
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Net.Requests/src/System/Net/WebExceptionStatus.cs
+    startLine: 10
+  assemblies:
+  - System.Net.Requests
+  namespace: System.Net
+  summary: A complete response was not received from the remote server.
+  syntax:
+    content: ReceiveFailure = 3
+- uid: System.Net.WebExceptionStatus.SendFailure
+  id: SendFailure
+  parent: System.Net.WebExceptionStatus
+  href: System.Net.WebExceptionStatus.yml
+  name: SendFailure
+  fullName: System.Net.WebExceptionStatus.SendFailure
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Net.Requests/src/System/Net/WebExceptionStatus.cs
+    startLine: 11
+  assemblies:
+  - System.Net.Requests
+  namespace: System.Net
+  summary: A complete request could not be sent to the remote server.
+  syntax:
+    content: SendFailure = 4
+- uid: System.Net.WebExceptionStatus.PipelineFailure
+  id: PipelineFailure
+  parent: System.Net.WebExceptionStatus
+  href: System.Net.WebExceptionStatus.yml
+  name: PipelineFailure
+  fullName: System.Net.WebExceptionStatus.PipelineFailure
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Net.Requests/src/System/Net/WebExceptionStatus.cs
+    startLine: 12
+  assemblies:
+  - System.Net.Requests
+  namespace: System.Net
+  summary: The request was a piplined request and the connection was closed before the response was received.
+  syntax:
+    content: PipelineFailure = 5
+- uid: System.Net.WebExceptionStatus.RequestCanceled
+  id: RequestCanceled
+  parent: System.Net.WebExceptionStatus
+  href: System.Net.WebExceptionStatus.yml
+  name: RequestCanceled
+  fullName: System.Net.WebExceptionStatus.RequestCanceled
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Net.Requests/src/System/Net/WebExceptionStatus.cs
+    startLine: 13
+  assemblies:
+  - System.Net.Requests
+  namespace: System.Net
+  summary: The request was canceled, the @'System.Net.WebRequest.Abort' method was called, or an unclassifiable error occurred. This is the default value for @'System.Net.WebException.Status'.
+  syntax:
+    content: RequestCanceled = 6
+- uid: System.Net.WebExceptionStatus.ProtocolError
+  id: ProtocolError
+  parent: System.Net.WebExceptionStatus
+  href: System.Net.WebExceptionStatus.yml
+  name: ProtocolError
+  fullName: System.Net.WebExceptionStatus.ProtocolError
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Net.Requests/src/System/Net/WebExceptionStatus.cs
+    startLine: 14
+  assemblies:
+  - System.Net.Requests
+  namespace: System.Net
+  summary: The response received from the server was complete but indicated a protocol-level error. For example, an HTTP protocol error such as 401 Access Denied would use this status.
+  syntax:
+    content: ProtocolError = 7
+- uid: System.Net.WebExceptionStatus.ConnectionClosed
+  id: ConnectionClosed
+  parent: System.Net.WebExceptionStatus
+  href: System.Net.WebExceptionStatus.yml
+  name: ConnectionClosed
+  fullName: System.Net.WebExceptionStatus.ConnectionClosed
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Net.Requests/src/System/Net/WebExceptionStatus.cs
+    startLine: 15
+  assemblies:
+  - System.Net.Requests
+  namespace: System.Net
+  summary: The connection was prematurely closed.
+  syntax:
+    content: ConnectionClosed = 8
+- uid: System.Net.WebExceptionStatus.TrustFailure
+  id: TrustFailure
+  parent: System.Net.WebExceptionStatus
+  href: System.Net.WebExceptionStatus.yml
+  name: TrustFailure
+  fullName: System.Net.WebExceptionStatus.TrustFailure
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Net.Requests/src/System/Net/WebExceptionStatus.cs
+    startLine: 16
+  assemblies:
+  - System.Net.Requests
+  namespace: System.Net
+  summary: A server certificate could not be validated.
+  syntax:
+    content: TrustFailure = 9
+- uid: System.Net.WebExceptionStatus.SecureChannelFailure
+  id: SecureChannelFailure
+  parent: System.Net.WebExceptionStatus
+  href: System.Net.WebExceptionStatus.yml
+  name: SecureChannelFailure
+  fullName: System.Net.WebExceptionStatus.SecureChannelFailure
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Net.Requests/src/System/Net/WebExceptionStatus.cs
+    startLine: 17
+  assemblies:
+  - System.Net.Requests
+  namespace: System.Net
+  summary: An error occurred while establishing a connection using SSL.
+  syntax:
+    content: SecureChannelFailure = 10
+- uid: System.Net.WebExceptionStatus.ServerProtocolViolation
+  id: ServerProtocolViolation
+  parent: System.Net.WebExceptionStatus
+  href: System.Net.WebExceptionStatus.yml
+  name: ServerProtocolViolation
+  fullName: System.Net.WebExceptionStatus.ServerProtocolViolation
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Net.Requests/src/System/Net/WebExceptionStatus.cs
+    startLine: 18
+  assemblies:
+  - System.Net.Requests
+  namespace: System.Net
+  summary: The server response was not a valid HTTP response.
+  syntax:
+    content: ServerProtocolViolation = 11
+- uid: System.Net.WebExceptionStatus.KeepAliveFailure
+  id: KeepAliveFailure
+  parent: System.Net.WebExceptionStatus
+  href: System.Net.WebExceptionStatus.yml
+  name: KeepAliveFailure
+  fullName: System.Net.WebExceptionStatus.KeepAliveFailure
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Net.Requests/src/System/Net/WebExceptionStatus.cs
+    startLine: 19
+  assemblies:
+  - System.Net.Requests
+  namespace: System.Net
+  summary: The connection for a request that specifies the Keep-alive header was closed unexpectedly.
+  syntax:
+    content: KeepAliveFailure = 12
+- uid: System.Net.WebExceptionStatus.Pending
+  id: Pending
+  parent: System.Net.WebExceptionStatus
+  href: System.Net.WebExceptionStatus.yml
+  name: Pending
+  fullName: System.Net.WebExceptionStatus.Pending
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Net.Requests/src/System/Net/WebExceptionStatus.cs
+    startLine: 20
+  assemblies:
+  - System.Net.Requests
+  namespace: System.Net
+  summary: An internal asynchronous request is pending.
+  syntax:
+    content: Pending = 13
+- uid: System.Net.WebExceptionStatus.Timeout
+  id: Timeout
+  parent: System.Net.WebExceptionStatus
+  href: System.Net.WebExceptionStatus.yml
+  name: Timeout
+  fullName: System.Net.WebExceptionStatus.Timeout
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Net.Requests/src/System/Net/WebExceptionStatus.cs
+    startLine: 21
+  assemblies:
+  - System.Net.Requests
+  namespace: System.Net
+  summary: No response was received during the time-out period for a request.
+  syntax:
+    content: Timeout = 14
+- uid: System.Net.WebExceptionStatus.ProxyNameResolutionFailure
+  id: ProxyNameResolutionFailure
+  parent: System.Net.WebExceptionStatus
+  href: System.Net.WebExceptionStatus.yml
+  name: ProxyNameResolutionFailure
+  fullName: System.Net.WebExceptionStatus.ProxyNameResolutionFailure
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Net.Requests/src/System/Net/WebExceptionStatus.cs
+    startLine: 22
+  assemblies:
+  - System.Net.Requests
+  namespace: System.Net
+  summary: The name resolver service could not resolve the proxy host name.
+  syntax:
+    content: ProxyNameResolutionFailure = 15
+- uid: System.Net.WebExceptionStatus.UnknownError
+  id: UnknownError
+  parent: System.Net.WebExceptionStatus
+  href: System.Net.WebExceptionStatus.yml
+  name: UnknownError
+  fullName: System.Net.WebExceptionStatus.UnknownError
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Net.Requests/src/System/Net/WebExceptionStatus.cs
+    startLine: 23
+  assemblies:
+  - System.Net.Requests
+  namespace: System.Net
+  summary: An exception of unknown type has occurred.
+  syntax:
+    content: UnknownError = 16
+- uid: System.Net.WebExceptionStatus.MessageLengthLimitExceeded
+  id: MessageLengthLimitExceeded
+  parent: System.Net.WebExceptionStatus
+  href: System.Net.WebExceptionStatus.yml
+  name: MessageLengthLimitExceeded
+  fullName: System.Net.WebExceptionStatus.MessageLengthLimitExceeded
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Net.Requests/src/System/Net/WebExceptionStatus.cs
+    startLine: 24
+  assemblies:
+  - System.Net.Requests
+  namespace: System.Net
+  summary: A message was received that exceeded the specified limit when sending a request or receiving a response from the server.
+  syntax:
+    content: MessageLengthLimitExceeded = 17
+- uid: System.Net.WebExceptionStatus.CacheEntryNotFound
+  id: CacheEntryNotFound
+  parent: System.Net.WebExceptionStatus
+  href: System.Net.WebExceptionStatus.yml
+  name: CacheEntryNotFound
+  fullName: System.Net.WebExceptionStatus.CacheEntryNotFound
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Net.Requests/src/System/Net/WebExceptionStatus.cs
+    startLine: 25
+  assemblies:
+  - System.Net.Requests
+  namespace: System.Net
+  summary: The specified cache entry was not found.
+  syntax:
+    content: CacheEntryNotFound = 18
+- uid: System.Net.WebExceptionStatus.RequestProhibitedByCachePolicy
+  id: RequestProhibitedByCachePolicy
+  parent: System.Net.WebExceptionStatus
+  href: System.Net.WebExceptionStatus.yml
+  name: RequestProhibitedByCachePolicy
+  fullName: System.Net.WebExceptionStatus.RequestProhibitedByCachePolicy
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Net.Requests/src/System/Net/WebExceptionStatus.cs
+    startLine: 26
+  assemblies:
+  - System.Net.Requests
+  namespace: System.Net
+  summary: The request was not permitted by the cache policy. In general, this occurs when a request is not cacheable and the effective policy prohibits sending the request to the server. You might receive this status if a request method implies the presence of a request body, a request method requires direct interaction with the server, or a request contains a conditional header.
+  syntax:
+    content: RequestProhibitedByCachePolicy = 19
+- uid: System.Net.WebExceptionStatus.RequestProhibitedByProxy
+  id: RequestProhibitedByProxy
+  parent: System.Net.WebExceptionStatus
+  href: System.Net.WebExceptionStatus.yml
+  name: RequestProhibitedByProxy
+  fullName: System.Net.WebExceptionStatus.RequestProhibitedByProxy
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Net.Requests/src/System/Net/WebExceptionStatus.cs
+    startLine: 27
+  assemblies:
+  - System.Net.Requests
+  namespace: System.Net
+  summary: This request was not permitted by the proxy.
+  syntax:
+    content: RequestProhibitedByProxy = 20
+references:
+- uid: System.Net
+  isExternal: false
+  name: System.Net
+  fullName: System.Net
+  type: Namespace

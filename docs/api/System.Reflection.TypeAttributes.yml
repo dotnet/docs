@@ -1,0 +1,605 @@
+items:
+- uid: System.Reflection.TypeAttributes
+  id: TypeAttributes
+  parent: System.Reflection
+  children:
+  - System.Reflection.TypeAttributes.Abstract
+  - System.Reflection.TypeAttributes.AnsiClass
+  - System.Reflection.TypeAttributes.AutoClass
+  - System.Reflection.TypeAttributes.AutoLayout
+  - System.Reflection.TypeAttributes.BeforeFieldInit
+  - System.Reflection.TypeAttributes.Class
+  - System.Reflection.TypeAttributes.ClassSemanticsMask
+  - System.Reflection.TypeAttributes.CustomFormatClass
+  - System.Reflection.TypeAttributes.CustomFormatMask
+  - System.Reflection.TypeAttributes.ExplicitLayout
+  - System.Reflection.TypeAttributes.HasSecurity
+  - System.Reflection.TypeAttributes.Import
+  - System.Reflection.TypeAttributes.Interface
+  - System.Reflection.TypeAttributes.LayoutMask
+  - System.Reflection.TypeAttributes.NestedAssembly
+  - System.Reflection.TypeAttributes.NestedFamANDAssem
+  - System.Reflection.TypeAttributes.NestedFamily
+  - System.Reflection.TypeAttributes.NestedFamORAssem
+  - System.Reflection.TypeAttributes.NestedPrivate
+  - System.Reflection.TypeAttributes.NestedPublic
+  - System.Reflection.TypeAttributes.NotPublic
+  - System.Reflection.TypeAttributes.Public
+  - System.Reflection.TypeAttributes.ReservedMask
+  - System.Reflection.TypeAttributes.RTSpecialName
+  - System.Reflection.TypeAttributes.Sealed
+  - System.Reflection.TypeAttributes.SequentialLayout
+  - System.Reflection.TypeAttributes.Serializable
+  - System.Reflection.TypeAttributes.SpecialName
+  - System.Reflection.TypeAttributes.StringFormatMask
+  - System.Reflection.TypeAttributes.UnicodeClass
+  - System.Reflection.TypeAttributes.VisibilityMask
+  - System.Reflection.TypeAttributes.WindowsRuntime
+  href: System.Reflection.TypeAttributes.yml
+  name: TypeAttributes
+  fullName: System.Reflection.TypeAttributes
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Reflection/TypeAttributes.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Reflection/TypeAttributes.cs
+    startLine: 7
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies type attributes.
+  syntax:
+    content: public enum TypeAttributes
+    content.vb: Public Enum TypeAttributes
+- uid: System.Reflection.TypeAttributes.VisibilityMask
+  id: VisibilityMask
+  parent: System.Reflection.TypeAttributes
+  href: System.Reflection.TypeAttributes.yml
+  name: VisibilityMask
+  fullName: System.Reflection.TypeAttributes.VisibilityMask
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/TypeAttributes.cs
+    startLine: 12
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies type visibility information.
+  syntax:
+    content: VisibilityMask = 7
+- uid: System.Reflection.TypeAttributes.NotPublic
+  id: NotPublic
+  parent: System.Reflection.TypeAttributes
+  href: System.Reflection.TypeAttributes.yml
+  name: NotPublic
+  fullName: System.Reflection.TypeAttributes.NotPublic
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/TypeAttributes.cs
+    startLine: 13
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the class is not public.
+  syntax:
+    content: NotPublic = 0
+- uid: System.Reflection.TypeAttributes.Public
+  id: Public
+  parent: System.Reflection.TypeAttributes
+  href: System.Reflection.TypeAttributes.yml
+  name: Public
+  fullName: System.Reflection.TypeAttributes.Public
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/TypeAttributes.cs
+    startLine: 14
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the class is public.
+  syntax:
+    content: Public = 1
+- uid: System.Reflection.TypeAttributes.NestedPublic
+  id: NestedPublic
+  parent: System.Reflection.TypeAttributes
+  href: System.Reflection.TypeAttributes.yml
+  name: NestedPublic
+  fullName: System.Reflection.TypeAttributes.NestedPublic
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/TypeAttributes.cs
+    startLine: 15
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the class is nested with public visibility.
+  syntax:
+    content: NestedPublic = 2
+- uid: System.Reflection.TypeAttributes.NestedPrivate
+  id: NestedPrivate
+  parent: System.Reflection.TypeAttributes
+  href: System.Reflection.TypeAttributes.yml
+  name: NestedPrivate
+  fullName: System.Reflection.TypeAttributes.NestedPrivate
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/TypeAttributes.cs
+    startLine: 16
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the class is nested with private visibility.
+  syntax:
+    content: NestedPrivate = 3
+- uid: System.Reflection.TypeAttributes.NestedFamily
+  id: NestedFamily
+  parent: System.Reflection.TypeAttributes
+  href: System.Reflection.TypeAttributes.yml
+  name: NestedFamily
+  fullName: System.Reflection.TypeAttributes.NestedFamily
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/TypeAttributes.cs
+    startLine: 17
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the class is nested with family visibility, and is thus accessible only by methods within its own type and any derived types.
+  syntax:
+    content: NestedFamily = 4
+- uid: System.Reflection.TypeAttributes.NestedAssembly
+  id: NestedAssembly
+  parent: System.Reflection.TypeAttributes
+  href: System.Reflection.TypeAttributes.yml
+  name: NestedAssembly
+  fullName: System.Reflection.TypeAttributes.NestedAssembly
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/TypeAttributes.cs
+    startLine: 18
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the class is nested with assembly visibility, and is thus accessible only by methods within its assembly.
+  syntax:
+    content: NestedAssembly = 5
+- uid: System.Reflection.TypeAttributes.NestedFamANDAssem
+  id: NestedFamANDAssem
+  parent: System.Reflection.TypeAttributes
+  href: System.Reflection.TypeAttributes.yml
+  name: NestedFamANDAssem
+  fullName: System.Reflection.TypeAttributes.NestedFamANDAssem
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/TypeAttributes.cs
+    startLine: 19
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the class is nested with assembly and family visibility, and is thus accessible only by methods lying in the intersection of its family and assembly.
+  syntax:
+    content: NestedFamANDAssem = 6
+- uid: System.Reflection.TypeAttributes.NestedFamORAssem
+  id: NestedFamORAssem
+  parent: System.Reflection.TypeAttributes
+  href: System.Reflection.TypeAttributes.yml
+  name: NestedFamORAssem
+  fullName: System.Reflection.TypeAttributes.NestedFamORAssem
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/TypeAttributes.cs
+    startLine: 20
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the class is nested with family or assembly visibility, and is thus accessible only by methods lying in the union of its family and assembly.
+  syntax:
+    content: NestedFamORAssem = 7
+- uid: System.Reflection.TypeAttributes.LayoutMask
+  id: LayoutMask
+  parent: System.Reflection.TypeAttributes
+  href: System.Reflection.TypeAttributes.yml
+  name: LayoutMask
+  fullName: System.Reflection.TypeAttributes.LayoutMask
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/TypeAttributes.cs
+    startLine: 24
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies class layout information.
+  syntax:
+    content: LayoutMask = 24
+- uid: System.Reflection.TypeAttributes.AutoLayout
+  id: AutoLayout
+  parent: System.Reflection.TypeAttributes
+  href: System.Reflection.TypeAttributes.yml
+  name: AutoLayout
+  fullName: System.Reflection.TypeAttributes.AutoLayout
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/TypeAttributes.cs
+    startLine: 25
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that class fields are automatically laid out by the common language runtime.
+  syntax:
+    content: AutoLayout = 0
+- uid: System.Reflection.TypeAttributes.SequentialLayout
+  id: SequentialLayout
+  parent: System.Reflection.TypeAttributes
+  href: System.Reflection.TypeAttributes.yml
+  name: SequentialLayout
+  fullName: System.Reflection.TypeAttributes.SequentialLayout
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/TypeAttributes.cs
+    startLine: 26
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that class fields are laid out sequentially, in the order that the fields were emitted to the metadata.
+  syntax:
+    content: SequentialLayout = 8
+- uid: System.Reflection.TypeAttributes.ExplicitLayout
+  id: ExplicitLayout
+  parent: System.Reflection.TypeAttributes
+  href: System.Reflection.TypeAttributes.yml
+  name: ExplicitLayout
+  fullName: System.Reflection.TypeAttributes.ExplicitLayout
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/TypeAttributes.cs
+    startLine: 27
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that class fields are laid out at the specified offsets.
+  syntax:
+    content: ExplicitLayout = 16
+- uid: System.Reflection.TypeAttributes.ClassSemanticsMask
+  id: ClassSemanticsMask
+  parent: System.Reflection.TypeAttributes
+  href: System.Reflection.TypeAttributes.yml
+  name: ClassSemanticsMask
+  fullName: System.Reflection.TypeAttributes.ClassSemanticsMask
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/TypeAttributes.cs
+    startLine: 31
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies class semantics information; the current class is contextful (else agile).
+  syntax:
+    content: ClassSemanticsMask = 32
+- uid: System.Reflection.TypeAttributes.Class
+  id: Class
+  parent: System.Reflection.TypeAttributes
+  href: System.Reflection.TypeAttributes.yml
+  name: Class
+  fullName: System.Reflection.TypeAttributes.Class
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/TypeAttributes.cs
+    startLine: 32
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the type is a class.
+  syntax:
+    content: Class = 0
+- uid: System.Reflection.TypeAttributes.Interface
+  id: Interface
+  parent: System.Reflection.TypeAttributes
+  href: System.Reflection.TypeAttributes.yml
+  name: Interface
+  fullName: System.Reflection.TypeAttributes.Interface
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/TypeAttributes.cs
+    startLine: 33
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the type is an interface.
+  syntax:
+    content: Interface = 32
+- uid: System.Reflection.TypeAttributes.Abstract
+  id: Abstract
+  parent: System.Reflection.TypeAttributes
+  href: System.Reflection.TypeAttributes.yml
+  name: Abstract
+  fullName: System.Reflection.TypeAttributes.Abstract
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/TypeAttributes.cs
+    startLine: 36
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the type is abstract.
+  syntax:
+    content: Abstract = 128
+- uid: System.Reflection.TypeAttributes.Sealed
+  id: Sealed
+  parent: System.Reflection.TypeAttributes
+  href: System.Reflection.TypeAttributes.yml
+  name: Sealed
+  fullName: System.Reflection.TypeAttributes.Sealed
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/TypeAttributes.cs
+    startLine: 37
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the class is concrete and cannot be extended.
+  syntax:
+    content: Sealed = 256
+- uid: System.Reflection.TypeAttributes.SpecialName
+  id: SpecialName
+  parent: System.Reflection.TypeAttributes
+  href: System.Reflection.TypeAttributes.yml
+  name: SpecialName
+  fullName: System.Reflection.TypeAttributes.SpecialName
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/TypeAttributes.cs
+    startLine: 38
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the class is special in a way denoted by the name.
+  syntax:
+    content: SpecialName = 1024
+- uid: System.Reflection.TypeAttributes.Import
+  id: Import
+  parent: System.Reflection.TypeAttributes
+  href: System.Reflection.TypeAttributes.yml
+  name: Import
+  fullName: System.Reflection.TypeAttributes.Import
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/TypeAttributes.cs
+    startLine: 41
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the class or interface is imported from another module.
+  syntax:
+    content: Import = 4096
+- uid: System.Reflection.TypeAttributes.Serializable
+  id: Serializable
+  parent: System.Reflection.TypeAttributes
+  href: System.Reflection.TypeAttributes.yml
+  name: Serializable
+  fullName: System.Reflection.TypeAttributes.Serializable
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/TypeAttributes.cs
+    startLine: 42
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that the class can be serialized.
+  syntax:
+    content: Serializable = 8192
+- uid: System.Reflection.TypeAttributes.WindowsRuntime
+  id: WindowsRuntime
+  parent: System.Reflection.TypeAttributes
+  href: System.Reflection.TypeAttributes.yml
+  name: WindowsRuntime
+  fullName: System.Reflection.TypeAttributes.WindowsRuntime
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/TypeAttributes.cs
+    startLine: 44
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies a Windows Runtime type.
+  syntax:
+    content: WindowsRuntime = 16384
+- uid: System.Reflection.TypeAttributes.StringFormatMask
+  id: StringFormatMask
+  parent: System.Reflection.TypeAttributes
+  href: System.Reflection.TypeAttributes.yml
+  name: StringFormatMask
+  fullName: System.Reflection.TypeAttributes.StringFormatMask
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/TypeAttributes.cs
+    startLine: 48
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Used to retrieve string information for native interoperability.
+  syntax:
+    content: StringFormatMask = 196608
+- uid: System.Reflection.TypeAttributes.AnsiClass
+  id: AnsiClass
+  parent: System.Reflection.TypeAttributes
+  href: System.Reflection.TypeAttributes.yml
+  name: AnsiClass
+  fullName: System.Reflection.TypeAttributes.AnsiClass
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/TypeAttributes.cs
+    startLine: 49
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: LPTSTR is interpreted as ANSI.
+  syntax:
+    content: AnsiClass = 0
+- uid: System.Reflection.TypeAttributes.UnicodeClass
+  id: UnicodeClass
+  parent: System.Reflection.TypeAttributes
+  href: System.Reflection.TypeAttributes.yml
+  name: UnicodeClass
+  fullName: System.Reflection.TypeAttributes.UnicodeClass
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/TypeAttributes.cs
+    startLine: 50
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: LPTSTR is interpreted as UNICODE.
+  syntax:
+    content: UnicodeClass = 65536
+- uid: System.Reflection.TypeAttributes.AutoClass
+  id: AutoClass
+  parent: System.Reflection.TypeAttributes
+  href: System.Reflection.TypeAttributes.yml
+  name: AutoClass
+  fullName: System.Reflection.TypeAttributes.AutoClass
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/TypeAttributes.cs
+    startLine: 51
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: LPTSTR is interpreted automatically.
+  syntax:
+    content: AutoClass = 131072
+- uid: System.Reflection.TypeAttributes.CustomFormatClass
+  id: CustomFormatClass
+  parent: System.Reflection.TypeAttributes
+  href: System.Reflection.TypeAttributes.yml
+  name: CustomFormatClass
+  fullName: System.Reflection.TypeAttributes.CustomFormatClass
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/TypeAttributes.cs
+    startLine: 52
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: LPSTR is interpreted by some implementation-specific means, which includes the possibility of throwing a @'System.NotSupportedException'. Not used in the Microsoft implementation of the .NET Framework.
+  syntax:
+    content: CustomFormatClass = 196608
+- uid: System.Reflection.TypeAttributes.CustomFormatMask
+  id: CustomFormatMask
+  parent: System.Reflection.TypeAttributes
+  href: System.Reflection.TypeAttributes.yml
+  name: CustomFormatMask
+  fullName: System.Reflection.TypeAttributes.CustomFormatMask
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/TypeAttributes.cs
+    startLine: 53
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Used to retrieve non-standard encoding information for native interop. The meaning of the values of these 2 bits is unspecified. Not used in the Microsoft implementation of the .NET Framework.
+  syntax:
+    content: CustomFormatMask = 12582912
+- uid: System.Reflection.TypeAttributes.BeforeFieldInit
+  id: BeforeFieldInit
+  parent: System.Reflection.TypeAttributes
+  href: System.Reflection.TypeAttributes.yml
+  name: BeforeFieldInit
+  fullName: System.Reflection.TypeAttributes.BeforeFieldInit
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/TypeAttributes.cs
+    startLine: 57
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Specifies that calling static methods of the type does not force the system to initialize the type.
+  syntax:
+    content: BeforeFieldInit = 1048576
+- uid: System.Reflection.TypeAttributes.ReservedMask
+  id: ReservedMask
+  parent: System.Reflection.TypeAttributes
+  href: System.Reflection.TypeAttributes.yml
+  name: ReservedMask
+  fullName: System.Reflection.TypeAttributes.ReservedMask
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/TypeAttributes.cs
+    startLine: 60
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Attributes reserved for runtime use.
+  syntax:
+    content: ReservedMask = 264192
+- uid: System.Reflection.TypeAttributes.RTSpecialName
+  id: RTSpecialName
+  parent: System.Reflection.TypeAttributes
+  href: System.Reflection.TypeAttributes.yml
+  name: RTSpecialName
+  fullName: System.Reflection.TypeAttributes.RTSpecialName
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/TypeAttributes.cs
+    startLine: 61
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Runtime should check name encoding.
+  syntax:
+    content: RTSpecialName = 2048
+- uid: System.Reflection.TypeAttributes.HasSecurity
+  id: HasSecurity
+  parent: System.Reflection.TypeAttributes
+  href: System.Reflection.TypeAttributes.yml
+  name: HasSecurity
+  fullName: System.Reflection.TypeAttributes.HasSecurity
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/TypeAttributes.cs
+    startLine: 62
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Type has security associate with it.
+  syntax:
+    content: HasSecurity = 262144
+references:
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace

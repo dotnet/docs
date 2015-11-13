@@ -1,0 +1,263 @@
+items:
+- uid: System.Runtime.InteropServices.TypeLibFuncFlags
+  id: TypeLibFuncFlags
+  parent: System.Runtime.InteropServices
+  children:
+  - System.Runtime.InteropServices.TypeLibFuncFlags.FBindable
+  - System.Runtime.InteropServices.TypeLibFuncFlags.FDefaultBind
+  - System.Runtime.InteropServices.TypeLibFuncFlags.FDefaultCollelem
+  - System.Runtime.InteropServices.TypeLibFuncFlags.FDisplayBind
+  - System.Runtime.InteropServices.TypeLibFuncFlags.FHidden
+  - System.Runtime.InteropServices.TypeLibFuncFlags.FImmediateBind
+  - System.Runtime.InteropServices.TypeLibFuncFlags.FNonBrowsable
+  - System.Runtime.InteropServices.TypeLibFuncFlags.FReplaceable
+  - System.Runtime.InteropServices.TypeLibFuncFlags.FRequestEdit
+  - System.Runtime.InteropServices.TypeLibFuncFlags.FRestricted
+  - System.Runtime.InteropServices.TypeLibFuncFlags.FSource
+  - System.Runtime.InteropServices.TypeLibFuncFlags.FUiDefault
+  - System.Runtime.InteropServices.TypeLibFuncFlags.FUsesGetLastError
+  href: System.Runtime.InteropServices.TypeLibFuncFlags.yml
+  name: TypeLibFuncFlags
+  fullName: System.Runtime.InteropServices.TypeLibFuncFlags
+  type: Enum
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 299
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Describes the original settings of the FUNCFLAGS in the COM type library from where this method was imported.
+  syntax:
+    content: public enum TypeLibFuncFlags
+    content.vb: Public Enum TypeLibFuncFlags
+- uid: System.Runtime.InteropServices.TypeLibFuncFlags.FRestricted
+  id: FRestricted
+  parent: System.Runtime.InteropServices.TypeLibFuncFlags
+  href: System.Runtime.InteropServices.TypeLibFuncFlags.yml
+  name: FRestricted
+  fullName: System.Runtime.InteropServices.TypeLibFuncFlags.FRestricted
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 304
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: This flag is intended for system-level functions or functions that type browsers should not display.
+  syntax:
+    content: FRestricted = 1
+- uid: System.Runtime.InteropServices.TypeLibFuncFlags.FSource
+  id: FSource
+  parent: System.Runtime.InteropServices.TypeLibFuncFlags
+  href: System.Runtime.InteropServices.TypeLibFuncFlags.yml
+  name: FSource
+  fullName: System.Runtime.InteropServices.TypeLibFuncFlags.FSource
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 305
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: The function returns an object that is a source of events.
+  syntax:
+    content: FSource = 2
+- uid: System.Runtime.InteropServices.TypeLibFuncFlags.FBindable
+  id: FBindable
+  parent: System.Runtime.InteropServices.TypeLibFuncFlags
+  href: System.Runtime.InteropServices.TypeLibFuncFlags.yml
+  name: FBindable
+  fullName: System.Runtime.InteropServices.TypeLibFuncFlags.FBindable
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 306
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: The function that supports data binding.
+  syntax:
+    content: FBindable = 4
+- uid: System.Runtime.InteropServices.TypeLibFuncFlags.FRequestEdit
+  id: FRequestEdit
+  parent: System.Runtime.InteropServices.TypeLibFuncFlags
+  href: System.Runtime.InteropServices.TypeLibFuncFlags.yml
+  name: FRequestEdit
+  fullName: System.Runtime.InteropServices.TypeLibFuncFlags.FRequestEdit
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 307
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: When set, any call to a method that sets the property results first in a call to IPropertyNotifySink::OnRequestEdit.
+  syntax:
+    content: FRequestEdit = 8
+- uid: System.Runtime.InteropServices.TypeLibFuncFlags.FDisplayBind
+  id: FDisplayBind
+  parent: System.Runtime.InteropServices.TypeLibFuncFlags
+  href: System.Runtime.InteropServices.TypeLibFuncFlags.yml
+  name: FDisplayBind
+  fullName: System.Runtime.InteropServices.TypeLibFuncFlags.FDisplayBind
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 308
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: The function that is displayed to the user as bindable. @'System.Runtime.InteropServices.TypeLibFuncFlags.FBindable' must also be set.
+  syntax:
+    content: FDisplayBind = 16
+- uid: System.Runtime.InteropServices.TypeLibFuncFlags.FDefaultBind
+  id: FDefaultBind
+  parent: System.Runtime.InteropServices.TypeLibFuncFlags
+  href: System.Runtime.InteropServices.TypeLibFuncFlags.yml
+  name: FDefaultBind
+  fullName: System.Runtime.InteropServices.TypeLibFuncFlags.FDefaultBind
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 309
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: The function that best represents the object. Only one function in a type information can have this attribute.
+  syntax:
+    content: FDefaultBind = 32
+- uid: System.Runtime.InteropServices.TypeLibFuncFlags.FHidden
+  id: FHidden
+  parent: System.Runtime.InteropServices.TypeLibFuncFlags
+  href: System.Runtime.InteropServices.TypeLibFuncFlags.yml
+  name: FHidden
+  fullName: System.Runtime.InteropServices.TypeLibFuncFlags.FHidden
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 310
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: The function should not be displayed to the user, although it exists and is bindable.
+  syntax:
+    content: FHidden = 64
+- uid: System.Runtime.InteropServices.TypeLibFuncFlags.FUsesGetLastError
+  id: FUsesGetLastError
+  parent: System.Runtime.InteropServices.TypeLibFuncFlags
+  href: System.Runtime.InteropServices.TypeLibFuncFlags.yml
+  name: FUsesGetLastError
+  fullName: System.Runtime.InteropServices.TypeLibFuncFlags.FUsesGetLastError
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 311
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: The function supports GetLastError.
+  syntax:
+    content: FUsesGetLastError = 128
+- uid: System.Runtime.InteropServices.TypeLibFuncFlags.FDefaultCollelem
+  id: FDefaultCollelem
+  parent: System.Runtime.InteropServices.TypeLibFuncFlags
+  href: System.Runtime.InteropServices.TypeLibFuncFlags.yml
+  name: FDefaultCollelem
+  fullName: System.Runtime.InteropServices.TypeLibFuncFlags.FDefaultCollelem
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 312
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Permits an optimization in which the compiler looks for a member named "xyz" on the type "abc". If such a member is found and is flagged as an accessor function for an element of the default collection, then a call is generated to that member function.
+  syntax:
+    content: FDefaultCollelem = 256
+- uid: System.Runtime.InteropServices.TypeLibFuncFlags.FUiDefault
+  id: FUiDefault
+  parent: System.Runtime.InteropServices.TypeLibFuncFlags
+  href: System.Runtime.InteropServices.TypeLibFuncFlags.yml
+  name: FUiDefault
+  fullName: System.Runtime.InteropServices.TypeLibFuncFlags.FUiDefault
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 313
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: The type information member is the default member for display in the user interface.
+  syntax:
+    content: FUiDefault = 512
+- uid: System.Runtime.InteropServices.TypeLibFuncFlags.FNonBrowsable
+  id: FNonBrowsable
+  parent: System.Runtime.InteropServices.TypeLibFuncFlags
+  href: System.Runtime.InteropServices.TypeLibFuncFlags.yml
+  name: FNonBrowsable
+  fullName: System.Runtime.InteropServices.TypeLibFuncFlags.FNonBrowsable
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 314
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: The property appears in an object browser, but not in a properties browser.
+  syntax:
+    content: FNonBrowsable = 1024
+- uid: System.Runtime.InteropServices.TypeLibFuncFlags.FReplaceable
+  id: FReplaceable
+  parent: System.Runtime.InteropServices.TypeLibFuncFlags
+  href: System.Runtime.InteropServices.TypeLibFuncFlags.yml
+  name: FReplaceable
+  fullName: System.Runtime.InteropServices.TypeLibFuncFlags.FReplaceable
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 315
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Tags the interface as having default behaviors.
+  syntax:
+    content: FReplaceable = 2048
+- uid: System.Runtime.InteropServices.TypeLibFuncFlags.FImmediateBind
+  id: FImmediateBind
+  parent: System.Runtime.InteropServices.TypeLibFuncFlags
+  href: System.Runtime.InteropServices.TypeLibFuncFlags.yml
+  name: FImmediateBind
+  fullName: System.Runtime.InteropServices.TypeLibFuncFlags.FImmediateBind
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 316
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: The function is mapped as individual bindable properties.
+  syntax:
+    content: FImmediateBind = 4096
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace

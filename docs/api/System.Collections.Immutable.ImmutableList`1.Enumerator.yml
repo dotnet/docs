@@ -1,0 +1,461 @@
+items:
+- uid: System.Collections.Immutable.ImmutableList`1.Enumerator
+  id: ImmutableList`1.Enumerator
+  parent: System.Collections.Immutable
+  children:
+  - System.Collections.Immutable.ImmutableList`1.Enumerator.Current
+  - System.Collections.Immutable.ImmutableList`1.Enumerator.Dispose
+  - System.Collections.Immutable.ImmutableList`1.Enumerator.MoveNext
+  - System.Collections.Immutable.ImmutableList`1.Enumerator.Reset
+  - System.Collections.Immutable.ImmutableList`1.Enumerator.System#Collections#IEnumerator#Current
+  href: System.Collections.Immutable.ImmutableList`1.Enumerator.yml
+  name: ImmutableList<T>.Enumerator
+  name.vb: ImmutableList(Of T).Enumerator
+  fullName: System.Collections.Immutable.ImmutableList<T>.Enumerator
+  fullName.vb: System.Collections.Immutable.ImmutableList(Of T).Enumerator
+  type: Struct
+  source:
+    remote: &o0
+      path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableList`1.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableList`1.cs
+    startLine: 1482
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Enumerates the contents of a binary tree.
+  remarks: >-
+    This struct can and should be kept in exact sync with the other binary tree enumerators:
+
+    @'System.Collections.Immutable.ImmutableList`1.Enumerator', @'System.Collections.Immutable.ImmutableSortedDictionary`2.Enumerator', and @'System.Collections.Immutable.ImmutableSortedSet`1.Enumerator'.
+
+
+
+    CAUTION: when this enumerator is actually used as a valuetype (not boxed) do NOT copy it by assigning to a second variable
+
+    or by passing it to another method.  When this enumerator is disposed of it returns a mutable reference type stack to a resource pool,
+
+    and if the value type enumerator is copied (which can easily happen unintentionally if you pass the value around) there is a risk
+
+    that a stack that has already been returned to the resource pool may still be in use by one of the enumerator copies, leading to data
+
+    corruption and/or exceptions.
+  syntax:
+    content: 'public struct Enumerator : IEnumerator<T>, IDisposable, IEnumerator, ISecurePooledObjectUser, IStrongEnumerator<T>'
+    content.vb: Public Structure Enumerator Implements IEnumerator(Of T), IDisposable, IEnumerator, ISecurePooledObjectUser, IStrongEnumerator(Of T)
+  implements:
+  - System.Collections.Generic.IEnumerator{{T}}
+  - System.IDisposable
+  - System.Collections.IEnumerator
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.Collections.Immutable.ImmutableList`1.Enumerator.Current
+  id: Current
+  parent: System.Collections.Immutable.ImmutableList`1.Enumerator
+  href: System.Collections.Immutable.ImmutableList`1.Enumerator.yml
+  name: Current
+  fullName: System.Collections.Immutable.ImmutableList<T>.Enumerator.Current
+  fullName.vb: System.Collections.Immutable.ImmutableList(Of T).Enumerator.Current
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableList`1.cs
+    startLine: 1591
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: The current element.
+  syntax:
+    content: public T Current { get; }
+    content.vb: Public ReadOnly Property Current As T
+    parameters: []
+    return:
+      type: '{T}'
+- uid: System.Collections.Immutable.ImmutableList`1.Enumerator.System#Collections#IEnumerator#Current
+  id: System#Collections#IEnumerator#Current
+  parent: System.Collections.Immutable.ImmutableList`1.Enumerator
+  href: System.Collections.Immutable.ImmutableList`1.Enumerator.yml
+  name: IEnumerator.Current
+  name.vb: System.Collections.IEnumerator.Current
+  fullName: System.Collections.Immutable.ImmutableList<T>.Enumerator.System.Collections.IEnumerator.Current
+  fullName.vb: System.Collections.Immutable.ImmutableList(Of T).Enumerator.System.Collections.IEnumerator.Current
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableList`1.cs
+    startLine: 1608
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: The current element.
+  syntax:
+    content: object IEnumerator.Current { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.IEnumerator.Current As Object Implements IEnumerator.Current
+    parameters: []
+    return:
+      type: System.Object
+- uid: System.Collections.Immutable.ImmutableList`1.Enumerator.Dispose
+  id: Dispose
+  parent: System.Collections.Immutable.ImmutableList`1.Enumerator
+  href: System.Collections.Immutable.ImmutableList`1.Enumerator.yml
+  name: Dispose()
+  fullName: System.Collections.Immutable.ImmutableList<T>.Enumerator.Dispose()
+  fullName.vb: System.Collections.Immutable.ImmutableList(Of T).Enumerator.Dispose()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableList`1.cs
+    startLine: 1616
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Disposes of this enumerator and returns the stack reference to the resource pool.
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+- uid: System.Collections.Immutable.ImmutableList`1.Enumerator.MoveNext
+  id: MoveNext
+  parent: System.Collections.Immutable.ImmutableList`1.Enumerator
+  href: System.Collections.Immutable.ImmutableList`1.Enumerator.yml
+  name: MoveNext()
+  fullName: System.Collections.Immutable.ImmutableList<T>.Enumerator.MoveNext()
+  fullName.vb: System.Collections.Immutable.ImmutableList(Of T).Enumerator.MoveNext()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableList`1.cs
+    startLine: 1634
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Advances enumeration to the next element.
+  syntax:
+    content: public bool MoveNext()
+    content.vb: Public Function MoveNext As Boolean
+    return:
+      type: System.Boolean
+      description: A value indicating whether there is another element in the enumeration.
+- uid: System.Collections.Immutable.ImmutableList`1.Enumerator.Reset
+  id: Reset
+  parent: System.Collections.Immutable.ImmutableList`1.Enumerator
+  href: System.Collections.Immutable.ImmutableList`1.Enumerator.yml
+  name: Reset()
+  fullName: System.Collections.Immutable.ImmutableList<T>.Enumerator.Reset()
+  fullName.vb: System.Collections.Immutable.ImmutableList(Of T).Enumerator.Reset()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableList`1.cs
+    startLine: 1659
+  assemblies:
+  - System.Collections.Immutable
+  namespace: System.Collections.Immutable
+  summary: Restarts enumeration.
+  syntax:
+    content: public void Reset()
+    content.vb: Public Sub Reset
+references:
+- uid: System.Collections.Immutable.ImmutableList`1.Enumerator
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableList`1.Enumerator.yml
+  name: ImmutableList.Enumerator<>
+  name.vb: ImmutableList.Enumerator(Of )
+  fullName: System.Collections.Immutable.ImmutableList.Enumerator<>
+  fullName.vb: System.Collections.Immutable.ImmutableList.Enumerator(Of )
+  type: Struct
+  summary: Enumerates the contents of a binary tree.
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableList`1.Enumerator
+    name: ImmutableList.Enumerator
+    fullName: System.Collections.Immutable.ImmutableList.Enumerator
+    href: System.Collections.Immutable.ImmutableList`1.Enumerator.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableList`1.Enumerator
+    name: ImmutableList.Enumerator
+    fullName: System.Collections.Immutable.ImmutableList.Enumerator
+    href: System.Collections.Immutable.ImmutableList`1.Enumerator.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.ImmutableSortedDictionary`2.Enumerator
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableSortedDictionary`2.Enumerator.yml
+  name: ImmutableSortedDictionary.Enumerator<>
+  name.vb: ImmutableSortedDictionary.Enumerator(Of )
+  fullName: System.Collections.Immutable.ImmutableSortedDictionary.Enumerator<>
+  fullName.vb: System.Collections.Immutable.ImmutableSortedDictionary.Enumerator(Of )
+  type: Struct
+  summary: Enumerates the contents of a binary tree.
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableSortedDictionary`2.Enumerator
+    name: ImmutableSortedDictionary.Enumerator
+    fullName: System.Collections.Immutable.ImmutableSortedDictionary.Enumerator
+    href: System.Collections.Immutable.ImmutableSortedDictionary`2.Enumerator.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableSortedDictionary`2.Enumerator
+    name: ImmutableSortedDictionary.Enumerator
+    fullName: System.Collections.Immutable.ImmutableSortedDictionary.Enumerator
+    href: System.Collections.Immutable.ImmutableSortedDictionary`2.Enumerator.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable.ImmutableSortedSet`1.Enumerator
+  parent: System.Collections.Immutable
+  isExternal: false
+  href: System.Collections.Immutable.ImmutableSortedSet`1.Enumerator.yml
+  name: ImmutableSortedSet.Enumerator<>
+  name.vb: ImmutableSortedSet.Enumerator(Of )
+  fullName: System.Collections.Immutable.ImmutableSortedSet.Enumerator<>
+  fullName.vb: System.Collections.Immutable.ImmutableSortedSet.Enumerator(Of )
+  type: Struct
+  summary: Enumerates the contents of a binary tree.
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableSortedSet`1.Enumerator
+    name: ImmutableSortedSet.Enumerator
+    fullName: System.Collections.Immutable.ImmutableSortedSet.Enumerator
+    href: System.Collections.Immutable.ImmutableSortedSet`1.Enumerator.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableSortedSet`1.Enumerator
+    name: ImmutableSortedSet.Enumerator
+    fullName: System.Collections.Immutable.ImmutableSortedSet.Enumerator
+    href: System.Collections.Immutable.ImmutableSortedSet`1.Enumerator.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Collections.Immutable
+  isExternal: false
+  name: System.Collections.Immutable
+  fullName: System.Collections.Immutable
+  type: Namespace
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: '{T}'
+  isExternal: false
+  name: T
+  fullName: T
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean

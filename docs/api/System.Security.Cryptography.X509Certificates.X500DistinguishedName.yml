@@ -1,0 +1,281 @@
+items:
+- uid: System.Security.Cryptography.X509Certificates.X500DistinguishedName
+  id: X500DistinguishedName
+  parent: System.Security.Cryptography.X509Certificates
+  children:
+  - System.Security.Cryptography.X509Certificates.X500DistinguishedName.#ctor(AsnEncodedData)
+  - System.Security.Cryptography.X509Certificates.X500DistinguishedName.#ctor(System.Byte[])
+  - System.Security.Cryptography.X509Certificates.X500DistinguishedName.#ctor(System.Security.Cryptography.X509Certificates.X500DistinguishedName)
+  - System.Security.Cryptography.X509Certificates.X500DistinguishedName.#ctor(System.String)
+  - System.Security.Cryptography.X509Certificates.X500DistinguishedName.#ctor(System.String,System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags)
+  - System.Security.Cryptography.X509Certificates.X500DistinguishedName.Decode(System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags)
+  - System.Security.Cryptography.X509Certificates.X500DistinguishedName.Format(System.Boolean)
+  - System.Security.Cryptography.X509Certificates.X500DistinguishedName.Name
+  href: System.Security.Cryptography.X509Certificates.X500DistinguishedName.yml
+  name: X500DistinguishedName
+  fullName: System.Security.Cryptography.X509Certificates.X500DistinguishedName
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X500DistinguishedName.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X500DistinguishedName.cs
+    startLine: 15
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Represents the distinguished name of an X509 certificate. This class cannot be inherited.
+  syntax:
+    content: 'public sealed class X500DistinguishedName : AsnEncodedData'
+    content.vb: Public NotInheritable Class X500DistinguishedName Inherits AsnEncodedData
+  inheritance:
+  - System.Object
+- uid: System.Security.Cryptography.X509Certificates.X500DistinguishedName.#ctor(System.Byte[])
+  id: '#ctor(System.Byte[])'
+  parent: System.Security.Cryptography.X509Certificates.X500DistinguishedName
+  href: System.Security.Cryptography.X509Certificates.X500DistinguishedName.yml
+  name: X500DistinguishedName(Byte[])
+  name.vb: X500DistinguishedName(Byte())
+  fullName: System.Security.Cryptography.X509Certificates.X500DistinguishedName.X500DistinguishedName(System.Byte[])
+  fullName.vb: System.Security.Cryptography.X509Certificates.X500DistinguishedName.X500DistinguishedName(System.Byte())
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X500DistinguishedName.cs
+    startLine: 17
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Initializes a new instance of the @'System.Security.Cryptography.X509Certificates.X500DistinguishedName' class using information from the specified byte array.
+  syntax:
+    content: public X500DistinguishedName(byte[] encodedDistinguishedName)
+    content.vb: Public Sub New(encodedDistinguishedName As Byte())
+    parameters:
+    - id: encodedDistinguishedName
+      type: System.Byte[]
+      description: A byte array that contains distinguished name information.
+- uid: System.Security.Cryptography.X509Certificates.X500DistinguishedName.#ctor(AsnEncodedData)
+  id: '#ctor(AsnEncodedData)'
+  parent: System.Security.Cryptography.X509Certificates.X500DistinguishedName
+  href: System.Security.Cryptography.X509Certificates.X500DistinguishedName.yml
+  name: X500DistinguishedName(AsnEncodedData)
+  fullName: System.Security.Cryptography.X509Certificates.X500DistinguishedName.X500DistinguishedName(AsnEncodedData)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X500DistinguishedName.cs
+    startLine: 22
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  syntax:
+    content: public X500DistinguishedName(AsnEncodedData encodedDistinguishedName)
+    content.vb: Public Sub New(encodedDistinguishedName As AsnEncodedData)
+    parameters:
+    - id: encodedDistinguishedName
+      type: AsnEncodedData
+- uid: System.Security.Cryptography.X509Certificates.X500DistinguishedName.#ctor(System.Security.Cryptography.X509Certificates.X500DistinguishedName)
+  id: '#ctor(System.Security.Cryptography.X509Certificates.X500DistinguishedName)'
+  parent: System.Security.Cryptography.X509Certificates.X500DistinguishedName
+  href: System.Security.Cryptography.X509Certificates.X500DistinguishedName.yml
+  name: X500DistinguishedName(X500DistinguishedName)
+  fullName: System.Security.Cryptography.X509Certificates.X500DistinguishedName.X500DistinguishedName(System.Security.Cryptography.X509Certificates.X500DistinguishedName)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X500DistinguishedName.cs
+    startLine: 27
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Initializes a new instance of the @'System.Security.Cryptography.X509Certificates.X500DistinguishedName' class using the specified @'System.Security.Cryptography.X509Certificates.X500DistinguishedName' object.
+  syntax:
+    content: public X500DistinguishedName(X500DistinguishedName distinguishedName)
+    content.vb: Public Sub New(distinguishedName As X500DistinguishedName)
+    parameters:
+    - id: distinguishedName
+      type: System.Security.Cryptography.X509Certificates.X500DistinguishedName
+      description: An @'System.Security.Cryptography.X509Certificates.X500DistinguishedName' object.
+- uid: System.Security.Cryptography.X509Certificates.X500DistinguishedName.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: System.Security.Cryptography.X509Certificates.X500DistinguishedName
+  href: System.Security.Cryptography.X509Certificates.X500DistinguishedName.yml
+  name: X500DistinguishedName(String)
+  fullName: System.Security.Cryptography.X509Certificates.X500DistinguishedName.X500DistinguishedName(System.String)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X500DistinguishedName.cs
+    startLine: 33
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Initializes a new instance of the @'System.Security.Cryptography.X509Certificates.X500DistinguishedName' class using information from the specified string.
+  syntax:
+    content: public X500DistinguishedName(string distinguishedName)
+    content.vb: Public Sub New(distinguishedName As String)
+    parameters:
+    - id: distinguishedName
+      type: System.String
+      description: A string that represents the distinguished name.
+- uid: System.Security.Cryptography.X509Certificates.X500DistinguishedName.#ctor(System.String,System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags)
+  id: '#ctor(System.String,System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags)'
+  parent: System.Security.Cryptography.X509Certificates.X500DistinguishedName
+  href: System.Security.Cryptography.X509Certificates.X500DistinguishedName.yml
+  name: X500DistinguishedName(String, X500DistinguishedNameFlags)
+  fullName: System.Security.Cryptography.X509Certificates.X500DistinguishedName.X500DistinguishedName(System.String, System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X500DistinguishedName.cs
+    startLine: 38
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Initializes a new instance of the @'System.Security.Cryptography.X509Certificates.X500DistinguishedName' class using the specified string and @'System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags' flag.
+  syntax:
+    content: public X500DistinguishedName(string distinguishedName, X500DistinguishedNameFlags flag)
+    content.vb: Public Sub New(distinguishedName As String, flag As X500DistinguishedNameFlags)
+    parameters:
+    - id: distinguishedName
+      type: System.String
+      description: A string that represents the distinguished name.
+    - id: flag
+      type: System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags
+      description: A bitwise combination of the enumeration values that specify the characteristics of the distinguished name.
+- uid: System.Security.Cryptography.X509Certificates.X500DistinguishedName.Name
+  id: Name
+  parent: System.Security.Cryptography.X509Certificates.X500DistinguishedName
+  href: System.Security.Cryptography.X509Certificates.X500DistinguishedName.yml
+  name: Name
+  fullName: System.Security.Cryptography.X509Certificates.X500DistinguishedName.Name
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X500DistinguishedName.cs
+    startLine: 44
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Gets the comma-delimited distinguished name from an X500 certificate.
+  syntax:
+    content: public string Name { get; }
+    content.vb: Public ReadOnly Property Name As String
+    parameters: []
+    return:
+      type: System.String
+- uid: System.Security.Cryptography.X509Certificates.X500DistinguishedName.Decode(System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags)
+  id: Decode(System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags)
+  parent: System.Security.Cryptography.X509Certificates.X500DistinguishedName
+  href: System.Security.Cryptography.X509Certificates.X500DistinguishedName.yml
+  name: Decode(X500DistinguishedNameFlags)
+  fullName: System.Security.Cryptography.X509Certificates.X500DistinguishedName.Decode(System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X500DistinguishedName.cs
+    startLine: 57
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Decodes a distinguished name using the characteristics specified by the *flag* parameter.
+  syntax:
+    content: public string Decode(X500DistinguishedNameFlags flag)
+    content.vb: Public Function Decode(flag As X500DistinguishedNameFlags) As String
+    parameters:
+    - id: flag
+      type: System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags
+      description: A bitwise combination of the enumeration values that specify the characteristics of the distinguished name.
+    return:
+      type: System.String
+  exceptions:
+  - type: System.Security.Cryptography.CryptographicException
+    description: The certificate has an invalid name.
+- uid: System.Security.Cryptography.X509Certificates.X500DistinguishedName.Format(System.Boolean)
+  id: Format(System.Boolean)
+  parent: System.Security.Cryptography.X509Certificates.X500DistinguishedName
+  href: System.Security.Cryptography.X509Certificates.X500DistinguishedName.yml
+  name: Format(Boolean)
+  fullName: System.Security.Cryptography.X509Certificates.X500DistinguishedName.Format(System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X500DistinguishedName.cs
+    startLine: 63
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Returns a formatted version of an X500 distinguished name for printing or for output to a text window or to a console.
+  syntax:
+    content: public override string Format(bool multiLine)
+    content.vb: Public Overrides Function Format(multiLine As Boolean) As String
+    parameters:
+    - id: multiLine
+      type: System.Boolean
+      description: true if the return string should contain carriage returns; otherwise, false.
+    return:
+      type: System.String
+references:
+- uid: System.Security.Cryptography.X509Certificates
+  isExternal: false
+  name: System.Security.Cryptography.X509Certificates
+  fullName: System.Security.Cryptography.X509Certificates
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  name.vb: Byte()
+  fullName: System.Byte[]
+  fullName.vb: System.Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: AsnEncodedData
+  isExternal: true
+  name: AsnEncodedData
+  fullName: AsnEncodedData
+- uid: System.Security.Cryptography.X509Certificates.X500DistinguishedName
+  parent: System.Security.Cryptography.X509Certificates
+  isExternal: false
+  href: System.Security.Cryptography.X509Certificates.X500DistinguishedName.yml
+  name: X500DistinguishedName
+  fullName: System.Security.Cryptography.X509Certificates.X500DistinguishedName
+  type: Class
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags
+  parent: System.Security.Cryptography.X509Certificates
+  isExternal: false
+  href: System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags.yml
+  name: X500DistinguishedNameFlags
+  fullName: System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags
+  type: Enum
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean

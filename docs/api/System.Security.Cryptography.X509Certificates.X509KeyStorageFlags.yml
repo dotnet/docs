@@ -1,0 +1,137 @@
+items:
+- uid: System.Security.Cryptography.X509Certificates.X509KeyStorageFlags
+  id: X509KeyStorageFlags
+  parent: System.Security.Cryptography.X509Certificates
+  children:
+  - System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.DefaultKeySet
+  - System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.Exportable
+  - System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.MachineKeySet
+  - System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.PersistKeySet
+  - System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.UserKeySet
+  - System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.UserProtected
+  href: System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.yml
+  name: X509KeyStorageFlags
+  fullName: System.Security.Cryptography.X509Certificates.X509KeyStorageFlags
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509KeyStorageFlags.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509KeyStorageFlags.cs
+    startLine: 9
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Defines where and how to import the private key of an X.509 certificate.
+  syntax:
+    content: public enum X509KeyStorageFlags
+    content.vb: Public Enum X509KeyStorageFlags
+- uid: System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.DefaultKeySet
+  id: DefaultKeySet
+  parent: System.Security.Cryptography.X509Certificates.X509KeyStorageFlags
+  href: System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.yml
+  name: DefaultKeySet
+  fullName: System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.DefaultKeySet
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509KeyStorageFlags.cs
+    startLine: 12
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The default key set is used.  The user key set is usually the default.
+  syntax:
+    content: DefaultKeySet = 0
+- uid: System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.UserKeySet
+  id: UserKeySet
+  parent: System.Security.Cryptography.X509Certificates.X509KeyStorageFlags
+  href: System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.yml
+  name: UserKeySet
+  fullName: System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.UserKeySet
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509KeyStorageFlags.cs
+    startLine: 13
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Private keys are stored in the current user store rather than the local computer store. This occurs even if the certificate specifies that the keys should go in the local computer store.
+  syntax:
+    content: UserKeySet = 1
+- uid: System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.MachineKeySet
+  id: MachineKeySet
+  parent: System.Security.Cryptography.X509Certificates.X509KeyStorageFlags
+  href: System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.yml
+  name: MachineKeySet
+  fullName: System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.MachineKeySet
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509KeyStorageFlags.cs
+    startLine: 14
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Private keys are stored in the local computer store rather than the current user store.
+  syntax:
+    content: MachineKeySet = 2
+- uid: System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.Exportable
+  id: Exportable
+  parent: System.Security.Cryptography.X509Certificates.X509KeyStorageFlags
+  href: System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.yml
+  name: Exportable
+  fullName: System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.Exportable
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509KeyStorageFlags.cs
+    startLine: 15
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Imported keys are marked as exportable.
+  syntax:
+    content: Exportable = 4
+- uid: System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.UserProtected
+  id: UserProtected
+  parent: System.Security.Cryptography.X509Certificates.X509KeyStorageFlags
+  href: System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.yml
+  name: UserProtected
+  fullName: System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.UserProtected
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509KeyStorageFlags.cs
+    startLine: 16
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Notify the user through a dialog box or other method that the key is accessed.  The Cryptographic Service Provider (CSP) in use defines the precise behavior.
+  syntax:
+    content: UserProtected = 8
+- uid: System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.PersistKeySet
+  id: PersistKeySet
+  parent: System.Security.Cryptography.X509Certificates.X509KeyStorageFlags
+  href: System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.yml
+  name: PersistKeySet
+  fullName: System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.PersistKeySet
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509KeyStorageFlags.cs
+    startLine: 17
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: The key associated with a PFX file is persisted when importing a certificate.
+  syntax:
+    content: PersistKeySet = 16
+references:
+- uid: System.Security.Cryptography.X509Certificates
+  isExternal: false
+  name: System.Security.Cryptography.X509Certificates
+  fullName: System.Security.Cryptography.X509Certificates
+  type: Namespace

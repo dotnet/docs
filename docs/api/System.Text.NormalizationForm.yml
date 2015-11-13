@@ -1,0 +1,28 @@
+items:
+- uid: System.Text.NormalizationForm
+  id: NormalizationForm
+  parent: System.Text
+  children: []
+  href: System.Text.NormalizationForm.yml
+  name: NormalizationForm
+  fullName: System.Text.NormalizationForm
+  type: Enum
+  source:
+    remote:
+      path: src/mscorlib/src/System/Text/Normalization.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Text/Normalization.cs
+    startLine: 15
+  assemblies:
+  - mscorlib
+  namespace: System.Text
+  summary: Defines the type of normalization to perform.
+  syntax:
+    content: public enum NormalizationForm
+    content.vb: Public Enum NormalizationForm
+references:
+- uid: System.Text
+  isExternal: false
+  name: System.Text
+  fullName: System.Text

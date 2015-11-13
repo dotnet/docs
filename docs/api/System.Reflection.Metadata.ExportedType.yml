@@ -1,0 +1,477 @@
+items:
+- uid: System.Reflection.Metadata.ExportedType
+  id: ExportedType
+  parent: System.Reflection.Metadata
+  children:
+  - System.Reflection.Metadata.ExportedType.Attributes
+  - System.Reflection.Metadata.ExportedType.GetCustomAttributes
+  - System.Reflection.Metadata.ExportedType.Implementation
+  - System.Reflection.Metadata.ExportedType.IsForwarder
+  - System.Reflection.Metadata.ExportedType.Name
+  - System.Reflection.Metadata.ExportedType.Namespace
+  - System.Reflection.Metadata.ExportedType.NamespaceDefinition
+  href: System.Reflection.Metadata.ExportedType.yml
+  name: ExportedType
+  fullName: System.Reflection.Metadata.ExportedType
+  type: Struct
+  source:
+    remote: &o0
+      path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/ExportedType.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/ExportedType.cs
+    startLine: 7
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public struct ExportedType
+    content.vb: Public Structure ExportedType
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.Reflection.Metadata.ExportedType.Attributes
+  id: Attributes
+  parent: System.Reflection.Metadata.ExportedType
+  href: System.Reflection.Metadata.ExportedType.yml
+  name: Attributes
+  fullName: System.Reflection.Metadata.ExportedType.Attributes
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/ExportedType.cs
+    startLine: 28
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public TypeAttributes Attributes { get; }
+    content.vb: Public ReadOnly Property Attributes As TypeAttributes
+    parameters: []
+    return:
+      type: System.Reflection.TypeAttributes
+      description: 
+- uid: System.Reflection.Metadata.ExportedType.IsForwarder
+  id: IsForwarder
+  parent: System.Reflection.Metadata.ExportedType
+  href: System.Reflection.Metadata.ExportedType.yml
+  name: IsForwarder
+  fullName: System.Reflection.Metadata.ExportedType.IsForwarder
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/ExportedType.cs
+    startLine: 33
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public bool IsForwarder { get; }
+    content.vb: Public ReadOnly Property IsForwarder As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: 
+- uid: System.Reflection.Metadata.ExportedType.Name
+  id: Name
+  parent: System.Reflection.Metadata.ExportedType
+  href: System.Reflection.Metadata.ExportedType.yml
+  name: Name
+  fullName: System.Reflection.Metadata.ExportedType.Name
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/ExportedType.cs
+    startLine: 41
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Name of the target type, or nil if the type is nested or defined in a root namespace.
+  syntax:
+    content: public StringHandle Name { get; }
+    content.vb: Public ReadOnly Property Name As StringHandle
+    parameters: []
+    return:
+      type: System.Reflection.Metadata.StringHandle
+- uid: System.Reflection.Metadata.ExportedType.Namespace
+  id: Namespace
+  parent: System.Reflection.Metadata.ExportedType
+  href: System.Reflection.Metadata.ExportedType.yml
+  name: Namespace
+  fullName: System.Reflection.Metadata.ExportedType.Namespace
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/ExportedType.cs
+    startLine: 49
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Full name of the namespace where the target type, or nil if the type is nested or defined in a root namespace.
+  syntax:
+    content: public StringHandle Namespace { get; }
+    content.vb: Public ReadOnly Property Namespace As StringHandle
+    parameters: []
+    return:
+      type: System.Reflection.Metadata.StringHandle
+- uid: System.Reflection.Metadata.ExportedType.NamespaceDefinition
+  id: NamespaceDefinition
+  parent: System.Reflection.Metadata.ExportedType
+  href: System.Reflection.Metadata.ExportedType.yml
+  name: NamespaceDefinition
+  fullName: System.Reflection.Metadata.ExportedType.NamespaceDefinition
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/ExportedType.cs
+    startLine: 60
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: The definition handle of the namespace where the target type is defined, or nil if the type is nested or defined in a root namespace.
+  syntax:
+    content: public NamespaceDefinitionHandle NamespaceDefinition { get; }
+    content.vb: Public ReadOnly Property NamespaceDefinition As NamespaceDefinitionHandle
+    parameters: []
+    return:
+      type: System.Reflection.Metadata.NamespaceDefinitionHandle
+- uid: System.Reflection.Metadata.ExportedType.Implementation
+  id: Implementation
+  parent: System.Reflection.Metadata.ExportedType
+  href: System.Reflection.Metadata.ExportedType.yml
+  name: Implementation
+  fullName: System.Reflection.Metadata.ExportedType.Implementation
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/ExportedType.cs
+    startLine: 80
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Handle to resolve the implementation of the target type.
+  syntax:
+    content: public EntityHandle Implementation { get; }
+    content.vb: Public ReadOnly Property Implementation As EntityHandle
+    parameters: []
+    return:
+      type: System.Reflection.Metadata.EntityHandle
+      description: >-
+        <list type="bullet">
+
+        <item>
+
+        <description>@'System.Reflection.Metadata.AssemblyFileHandle' representing another module in the assembly.</description>
+
+        </item>
+
+        <item>
+
+        <description>@'System.Reflection.Metadata.AssemblyReferenceHandle' representing another assembly if @'System.Reflection.Metadata.ExportedType.IsForwarder' is true.</description>
+
+        </item>
+
+        <item>
+
+        <description>@'System.Reflection.Metadata.ExportedTypeHandle' representing the declaring exported type in which this was is nested.</description>
+
+        </item>
+
+        </list>
+- uid: System.Reflection.Metadata.ExportedType.GetCustomAttributes
+  id: GetCustomAttributes
+  parent: System.Reflection.Metadata.ExportedType
+  href: System.Reflection.Metadata.ExportedType.yml
+  name: GetCustomAttributes()
+  fullName: System.Reflection.Metadata.ExportedType.GetCustomAttributes()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/ExportedType.cs
+    startLine: 88
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public CustomAttributeHandleCollection GetCustomAttributes()
+    content.vb: Public Function GetCustomAttributes As CustomAttributeHandleCollection
+    return:
+      type: System.Reflection.Metadata.CustomAttributeHandleCollection
+      description: 
+references:
+- uid: System.Reflection.Metadata
+  isExternal: false
+  name: System.Reflection.Metadata
+  fullName: System.Reflection.Metadata
+  type: Namespace
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Reflection.TypeAttributes
+  parent: System.Reflection
+  isExternal: true
+  name: TypeAttributes
+  fullName: System.Reflection.TypeAttributes
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Reflection.Metadata.StringHandle
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.StringHandle.yml
+  name: StringHandle
+  fullName: System.Reflection.Metadata.StringHandle
+  type: Struct
+- uid: System.Reflection.Metadata.NamespaceDefinitionHandle
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.NamespaceDefinitionHandle.yml
+  name: NamespaceDefinitionHandle
+  fullName: System.Reflection.Metadata.NamespaceDefinitionHandle
+  type: Struct
+  summary: A handle that represents a namespace definition.
+- uid: System.Reflection.Metadata.AssemblyFileHandle
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.AssemblyFileHandle.yml
+  name: AssemblyFileHandle
+  fullName: System.Reflection.Metadata.AssemblyFileHandle
+  type: Struct
+- uid: System.Reflection.Metadata.AssemblyReferenceHandle
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.AssemblyReferenceHandle.yml
+  name: AssemblyReferenceHandle
+  fullName: System.Reflection.Metadata.AssemblyReferenceHandle
+  type: Struct
+- uid: System.Reflection.Metadata.ExportedType.IsForwarder
+- uid: System.Reflection.Metadata.ExportedTypeHandle
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.ExportedTypeHandle.yml
+  name: ExportedTypeHandle
+  fullName: System.Reflection.Metadata.ExportedTypeHandle
+  type: Struct
+- uid: System.Reflection.Metadata.EntityHandle
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.EntityHandle.yml
+  name: EntityHandle
+  fullName: System.Reflection.Metadata.EntityHandle
+  type: Struct
+  summary: Represents a metadata entity (type reference/definition/specification, method definition, custom attribute, etc.).
+- uid: System.Reflection.Metadata.CustomAttributeHandleCollection
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.CustomAttributeHandleCollection.yml
+  name: CustomAttributeHandleCollection
+  fullName: System.Reflection.Metadata.CustomAttributeHandleCollection
+  type: Struct

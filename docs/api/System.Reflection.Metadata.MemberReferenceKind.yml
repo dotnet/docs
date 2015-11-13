@@ -1,0 +1,65 @@
+items:
+- uid: System.Reflection.Metadata.MemberReferenceKind
+  id: MemberReferenceKind
+  parent: System.Reflection.Metadata
+  children:
+  - System.Reflection.Metadata.MemberReferenceKind.Field
+  - System.Reflection.Metadata.MemberReferenceKind.Method
+  href: System.Reflection.Metadata.MemberReferenceKind.yml
+  name: MemberReferenceKind
+  fullName: System.Reflection.Metadata.MemberReferenceKind
+  type: Enum
+  source:
+    remote: &o0
+      path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/MemberReferenceKind.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/MemberReferenceKind.cs
+    startLine: 8
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Indicates whether a MemberReference references a method or field.
+  syntax:
+    content: public enum MemberReferenceKind
+    content.vb: Public Enum MemberReferenceKind
+- uid: System.Reflection.Metadata.MemberReferenceKind.Method
+  id: Method
+  parent: System.Reflection.Metadata.MemberReferenceKind
+  href: System.Reflection.Metadata.MemberReferenceKind.yml
+  name: Method
+  fullName: System.Reflection.Metadata.MemberReferenceKind.Method
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/MemberReferenceKind.cs
+    startLine: 13
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: The MemberReference references a method.
+  syntax:
+    content: Method = 0
+- uid: System.Reflection.Metadata.MemberReferenceKind.Field
+  id: Field
+  parent: System.Reflection.Metadata.MemberReferenceKind
+  href: System.Reflection.Metadata.MemberReferenceKind.yml
+  name: Field
+  fullName: System.Reflection.Metadata.MemberReferenceKind.Field
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/MemberReferenceKind.cs
+    startLine: 18
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: The MemberReference references a field.
+  syntax:
+    content: Field = 1
+references:
+- uid: System.Reflection.Metadata
+  isExternal: false
+  name: System.Reflection.Metadata
+  fullName: System.Reflection.Metadata
+  type: Namespace

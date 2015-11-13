@@ -1,0 +1,1307 @@
+items:
+- uid: System.Reflection.TypeExtensions
+  id: TypeExtensions
+  parent: System.Reflection
+  children:
+  - System.Reflection.TypeExtensions.GetConstructor(System.Type,System.Type[])
+  - System.Reflection.TypeExtensions.GetConstructors(System.Type)
+  - System.Reflection.TypeExtensions.GetConstructors(System.Type,System.Reflection.BindingFlags)
+  - System.Reflection.TypeExtensions.GetDefaultMembers(System.Type)
+  - System.Reflection.TypeExtensions.GetEvent(System.Type,System.String)
+  - System.Reflection.TypeExtensions.GetEvent(System.Type,System.String,System.Reflection.BindingFlags)
+  - System.Reflection.TypeExtensions.GetEvents(System.Type)
+  - System.Reflection.TypeExtensions.GetEvents(System.Type,System.Reflection.BindingFlags)
+  - System.Reflection.TypeExtensions.GetField(System.Type,System.String)
+  - System.Reflection.TypeExtensions.GetField(System.Type,System.String,System.Reflection.BindingFlags)
+  - System.Reflection.TypeExtensions.GetFields(System.Type)
+  - System.Reflection.TypeExtensions.GetFields(System.Type,System.Reflection.BindingFlags)
+  - System.Reflection.TypeExtensions.GetGenericArguments(System.Type)
+  - System.Reflection.TypeExtensions.GetInterfaces(System.Type)
+  - System.Reflection.TypeExtensions.GetMember(System.Type,System.String)
+  - System.Reflection.TypeExtensions.GetMember(System.Type,System.String,System.Reflection.BindingFlags)
+  - System.Reflection.TypeExtensions.GetMembers(System.Type)
+  - System.Reflection.TypeExtensions.GetMembers(System.Type,System.Reflection.BindingFlags)
+  - System.Reflection.TypeExtensions.GetMethod(System.Type,System.String)
+  - System.Reflection.TypeExtensions.GetMethod(System.Type,System.String,System.Reflection.BindingFlags)
+  - System.Reflection.TypeExtensions.GetMethod(System.Type,System.String,System.Type[])
+  - System.Reflection.TypeExtensions.GetMethods(System.Type)
+  - System.Reflection.TypeExtensions.GetMethods(System.Type,System.Reflection.BindingFlags)
+  - System.Reflection.TypeExtensions.GetNestedType(System.Type,System.String,System.Reflection.BindingFlags)
+  - System.Reflection.TypeExtensions.GetNestedTypes(System.Type,System.Reflection.BindingFlags)
+  - System.Reflection.TypeExtensions.GetProperties(System.Type)
+  - System.Reflection.TypeExtensions.GetProperties(System.Type,System.Reflection.BindingFlags)
+  - System.Reflection.TypeExtensions.GetProperty(System.Type,System.String)
+  - System.Reflection.TypeExtensions.GetProperty(System.Type,System.String,System.Reflection.BindingFlags)
+  - System.Reflection.TypeExtensions.GetProperty(System.Type,System.String,System.Type)
+  - System.Reflection.TypeExtensions.GetProperty(System.Type,System.String,System.Type,System.Type[])
+  - System.Reflection.TypeExtensions.IsAssignableFrom(System.Type,System.Type)
+  - System.Reflection.TypeExtensions.IsInstanceOfType(System.Type,System.Object)
+  href: System.Reflection.TypeExtensions.yml
+  name: TypeExtensions
+  fullName: System.Reflection.TypeExtensions
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Reflection.TypeExtensions/src/System/Reflection/TypeExtensions.CoreCLR.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Reflection.TypeExtensions/src/System/Reflection/TypeExtensions.CoreCLR.cs
+    startLine: 11
+  assemblies:
+  - System.Reflection.TypeExtensions.CoreCLR
+  namespace: System.Reflection
+  syntax:
+    content: public class TypeExtensions
+    content.vb: Public Class TypeExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Reflection.TypeExtensions.GetConstructor(System.Type,System.Type[])
+  id: GetConstructor(System.Type,System.Type[])
+  parent: System.Reflection.TypeExtensions
+  href: System.Reflection.TypeExtensions.yml
+  name: GetConstructor(Type, Type[])
+  name.vb: GetConstructor(Type, Type())
+  fullName: System.Reflection.TypeExtensions.GetConstructor(System.Type, System.Type[])
+  fullName.vb: System.Reflection.TypeExtensions.GetConstructor(System.Type, System.Type())
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.TypeExtensions/src/System/Reflection/TypeExtensions.CoreCLR.cs
+    startLine: 13
+  assemblies:
+  - System.Reflection.TypeExtensions.CoreCLR
+  namespace: System.Reflection
+  syntax:
+    content: public static ConstructorInfo GetConstructor(Type type, Type[] types)
+    content.vb: Public Shared Function GetConstructor(type As Type, types As Type()) As ConstructorInfo
+    parameters:
+    - id: type
+      type: System.Type
+    - id: types
+      type: System.Type[]
+    return:
+      type: System.Reflection.ConstructorInfo
+      description: 
+- uid: System.Reflection.TypeExtensions.GetConstructors(System.Type)
+  id: GetConstructors(System.Type)
+  parent: System.Reflection.TypeExtensions
+  href: System.Reflection.TypeExtensions.yml
+  name: GetConstructors(Type)
+  fullName: System.Reflection.TypeExtensions.GetConstructors(System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.TypeExtensions/src/System/Reflection/TypeExtensions.CoreCLR.cs
+    startLine: 19
+  assemblies:
+  - System.Reflection.TypeExtensions.CoreCLR
+  namespace: System.Reflection
+  syntax:
+    content: public static ConstructorInfo[] GetConstructors(Type type)
+    content.vb: Public Shared Function GetConstructors(type As Type) As ConstructorInfo()
+    parameters:
+    - id: type
+      type: System.Type
+    return:
+      type: System.Reflection.ConstructorInfo[]
+      description: 
+- uid: System.Reflection.TypeExtensions.GetConstructors(System.Type,System.Reflection.BindingFlags)
+  id: GetConstructors(System.Type,System.Reflection.BindingFlags)
+  parent: System.Reflection.TypeExtensions
+  href: System.Reflection.TypeExtensions.yml
+  name: GetConstructors(Type, BindingFlags)
+  fullName: System.Reflection.TypeExtensions.GetConstructors(System.Type, System.Reflection.BindingFlags)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.TypeExtensions/src/System/Reflection/TypeExtensions.CoreCLR.cs
+    startLine: 25
+  assemblies:
+  - System.Reflection.TypeExtensions.CoreCLR
+  namespace: System.Reflection
+  syntax:
+    content: public static ConstructorInfo[] GetConstructors(Type type, BindingFlags bindingAttr)
+    content.vb: Public Shared Function GetConstructors(type As Type, bindingAttr As BindingFlags) As ConstructorInfo()
+    parameters:
+    - id: type
+      type: System.Type
+    - id: bindingAttr
+      type: System.Reflection.BindingFlags
+    return:
+      type: System.Reflection.ConstructorInfo[]
+      description: 
+- uid: System.Reflection.TypeExtensions.GetDefaultMembers(System.Type)
+  id: GetDefaultMembers(System.Type)
+  parent: System.Reflection.TypeExtensions
+  href: System.Reflection.TypeExtensions.yml
+  name: GetDefaultMembers(Type)
+  fullName: System.Reflection.TypeExtensions.GetDefaultMembers(System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.TypeExtensions/src/System/Reflection/TypeExtensions.CoreCLR.cs
+    startLine: 31
+  assemblies:
+  - System.Reflection.TypeExtensions.CoreCLR
+  namespace: System.Reflection
+  syntax:
+    content: public static MemberInfo[] GetDefaultMembers(Type type)
+    content.vb: Public Shared Function GetDefaultMembers(type As Type) As MemberInfo()
+    parameters:
+    - id: type
+      type: System.Type
+    return:
+      type: System.Reflection.MemberInfo[]
+      description: 
+- uid: System.Reflection.TypeExtensions.GetEvent(System.Type,System.String)
+  id: GetEvent(System.Type,System.String)
+  parent: System.Reflection.TypeExtensions
+  href: System.Reflection.TypeExtensions.yml
+  name: GetEvent(Type, String)
+  fullName: System.Reflection.TypeExtensions.GetEvent(System.Type, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.TypeExtensions/src/System/Reflection/TypeExtensions.CoreCLR.cs
+    startLine: 37
+  assemblies:
+  - System.Reflection.TypeExtensions.CoreCLR
+  namespace: System.Reflection
+  syntax:
+    content: public static EventInfo GetEvent(Type type, string name)
+    content.vb: Public Shared Function GetEvent(type As Type, name As String) As EventInfo
+    parameters:
+    - id: type
+      type: System.Type
+    - id: name
+      type: System.String
+    return:
+      type: System.Reflection.EventInfo
+      description: 
+- uid: System.Reflection.TypeExtensions.GetEvent(System.Type,System.String,System.Reflection.BindingFlags)
+  id: GetEvent(System.Type,System.String,System.Reflection.BindingFlags)
+  parent: System.Reflection.TypeExtensions
+  href: System.Reflection.TypeExtensions.yml
+  name: GetEvent(Type, String, BindingFlags)
+  fullName: System.Reflection.TypeExtensions.GetEvent(System.Type, System.String, System.Reflection.BindingFlags)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.TypeExtensions/src/System/Reflection/TypeExtensions.CoreCLR.cs
+    startLine: 43
+  assemblies:
+  - System.Reflection.TypeExtensions.CoreCLR
+  namespace: System.Reflection
+  syntax:
+    content: public static EventInfo GetEvent(Type type, string name, BindingFlags bindingAttr)
+    content.vb: Public Shared Function GetEvent(type As Type, name As String, bindingAttr As BindingFlags) As EventInfo
+    parameters:
+    - id: type
+      type: System.Type
+    - id: name
+      type: System.String
+    - id: bindingAttr
+      type: System.Reflection.BindingFlags
+    return:
+      type: System.Reflection.EventInfo
+      description: 
+- uid: System.Reflection.TypeExtensions.GetEvents(System.Type)
+  id: GetEvents(System.Type)
+  parent: System.Reflection.TypeExtensions
+  href: System.Reflection.TypeExtensions.yml
+  name: GetEvents(Type)
+  fullName: System.Reflection.TypeExtensions.GetEvents(System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.TypeExtensions/src/System/Reflection/TypeExtensions.CoreCLR.cs
+    startLine: 49
+  assemblies:
+  - System.Reflection.TypeExtensions.CoreCLR
+  namespace: System.Reflection
+  syntax:
+    content: public static EventInfo[] GetEvents(Type type)
+    content.vb: Public Shared Function GetEvents(type As Type) As EventInfo()
+    parameters:
+    - id: type
+      type: System.Type
+    return:
+      type: System.Reflection.EventInfo[]
+      description: 
+- uid: System.Reflection.TypeExtensions.GetEvents(System.Type,System.Reflection.BindingFlags)
+  id: GetEvents(System.Type,System.Reflection.BindingFlags)
+  parent: System.Reflection.TypeExtensions
+  href: System.Reflection.TypeExtensions.yml
+  name: GetEvents(Type, BindingFlags)
+  fullName: System.Reflection.TypeExtensions.GetEvents(System.Type, System.Reflection.BindingFlags)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.TypeExtensions/src/System/Reflection/TypeExtensions.CoreCLR.cs
+    startLine: 55
+  assemblies:
+  - System.Reflection.TypeExtensions.CoreCLR
+  namespace: System.Reflection
+  syntax:
+    content: public static EventInfo[] GetEvents(Type type, BindingFlags bindingAttr)
+    content.vb: Public Shared Function GetEvents(type As Type, bindingAttr As BindingFlags) As EventInfo()
+    parameters:
+    - id: type
+      type: System.Type
+    - id: bindingAttr
+      type: System.Reflection.BindingFlags
+    return:
+      type: System.Reflection.EventInfo[]
+      description: 
+- uid: System.Reflection.TypeExtensions.GetField(System.Type,System.String)
+  id: GetField(System.Type,System.String)
+  parent: System.Reflection.TypeExtensions
+  href: System.Reflection.TypeExtensions.yml
+  name: GetField(Type, String)
+  fullName: System.Reflection.TypeExtensions.GetField(System.Type, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.TypeExtensions/src/System/Reflection/TypeExtensions.CoreCLR.cs
+    startLine: 61
+  assemblies:
+  - System.Reflection.TypeExtensions.CoreCLR
+  namespace: System.Reflection
+  syntax:
+    content: public static FieldInfo GetField(Type type, string name)
+    content.vb: Public Shared Function GetField(type As Type, name As String) As FieldInfo
+    parameters:
+    - id: type
+      type: System.Type
+    - id: name
+      type: System.String
+    return:
+      type: System.Reflection.FieldInfo
+      description: 
+- uid: System.Reflection.TypeExtensions.GetField(System.Type,System.String,System.Reflection.BindingFlags)
+  id: GetField(System.Type,System.String,System.Reflection.BindingFlags)
+  parent: System.Reflection.TypeExtensions
+  href: System.Reflection.TypeExtensions.yml
+  name: GetField(Type, String, BindingFlags)
+  fullName: System.Reflection.TypeExtensions.GetField(System.Type, System.String, System.Reflection.BindingFlags)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.TypeExtensions/src/System/Reflection/TypeExtensions.CoreCLR.cs
+    startLine: 67
+  assemblies:
+  - System.Reflection.TypeExtensions.CoreCLR
+  namespace: System.Reflection
+  syntax:
+    content: public static FieldInfo GetField(Type type, string name, BindingFlags bindingAttr)
+    content.vb: Public Shared Function GetField(type As Type, name As String, bindingAttr As BindingFlags) As FieldInfo
+    parameters:
+    - id: type
+      type: System.Type
+    - id: name
+      type: System.String
+    - id: bindingAttr
+      type: System.Reflection.BindingFlags
+    return:
+      type: System.Reflection.FieldInfo
+      description: 
+- uid: System.Reflection.TypeExtensions.GetFields(System.Type)
+  id: GetFields(System.Type)
+  parent: System.Reflection.TypeExtensions
+  href: System.Reflection.TypeExtensions.yml
+  name: GetFields(Type)
+  fullName: System.Reflection.TypeExtensions.GetFields(System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.TypeExtensions/src/System/Reflection/TypeExtensions.CoreCLR.cs
+    startLine: 73
+  assemblies:
+  - System.Reflection.TypeExtensions.CoreCLR
+  namespace: System.Reflection
+  syntax:
+    content: public static FieldInfo[] GetFields(Type type)
+    content.vb: Public Shared Function GetFields(type As Type) As FieldInfo()
+    parameters:
+    - id: type
+      type: System.Type
+    return:
+      type: System.Reflection.FieldInfo[]
+      description: 
+- uid: System.Reflection.TypeExtensions.GetFields(System.Type,System.Reflection.BindingFlags)
+  id: GetFields(System.Type,System.Reflection.BindingFlags)
+  parent: System.Reflection.TypeExtensions
+  href: System.Reflection.TypeExtensions.yml
+  name: GetFields(Type, BindingFlags)
+  fullName: System.Reflection.TypeExtensions.GetFields(System.Type, System.Reflection.BindingFlags)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.TypeExtensions/src/System/Reflection/TypeExtensions.CoreCLR.cs
+    startLine: 79
+  assemblies:
+  - System.Reflection.TypeExtensions.CoreCLR
+  namespace: System.Reflection
+  syntax:
+    content: public static FieldInfo[] GetFields(Type type, BindingFlags bindingAttr)
+    content.vb: Public Shared Function GetFields(type As Type, bindingAttr As BindingFlags) As FieldInfo()
+    parameters:
+    - id: type
+      type: System.Type
+    - id: bindingAttr
+      type: System.Reflection.BindingFlags
+    return:
+      type: System.Reflection.FieldInfo[]
+      description: 
+- uid: System.Reflection.TypeExtensions.GetGenericArguments(System.Type)
+  id: GetGenericArguments(System.Type)
+  parent: System.Reflection.TypeExtensions
+  href: System.Reflection.TypeExtensions.yml
+  name: GetGenericArguments(Type)
+  fullName: System.Reflection.TypeExtensions.GetGenericArguments(System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.TypeExtensions/src/System/Reflection/TypeExtensions.CoreCLR.cs
+    startLine: 85
+  assemblies:
+  - System.Reflection.TypeExtensions.CoreCLR
+  namespace: System.Reflection
+  syntax:
+    content: public static Type[] GetGenericArguments(Type type)
+    content.vb: Public Shared Function GetGenericArguments(type As Type) As Type()
+    parameters:
+    - id: type
+      type: System.Type
+    return:
+      type: System.Type[]
+      description: 
+- uid: System.Reflection.TypeExtensions.GetInterfaces(System.Type)
+  id: GetInterfaces(System.Type)
+  parent: System.Reflection.TypeExtensions
+  href: System.Reflection.TypeExtensions.yml
+  name: GetInterfaces(Type)
+  fullName: System.Reflection.TypeExtensions.GetInterfaces(System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.TypeExtensions/src/System/Reflection/TypeExtensions.CoreCLR.cs
+    startLine: 91
+  assemblies:
+  - System.Reflection.TypeExtensions.CoreCLR
+  namespace: System.Reflection
+  syntax:
+    content: public static Type[] GetInterfaces(Type type)
+    content.vb: Public Shared Function GetInterfaces(type As Type) As Type()
+    parameters:
+    - id: type
+      type: System.Type
+    return:
+      type: System.Type[]
+      description: 
+- uid: System.Reflection.TypeExtensions.GetMember(System.Type,System.String)
+  id: GetMember(System.Type,System.String)
+  parent: System.Reflection.TypeExtensions
+  href: System.Reflection.TypeExtensions.yml
+  name: GetMember(Type, String)
+  fullName: System.Reflection.TypeExtensions.GetMember(System.Type, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.TypeExtensions/src/System/Reflection/TypeExtensions.CoreCLR.cs
+    startLine: 97
+  assemblies:
+  - System.Reflection.TypeExtensions.CoreCLR
+  namespace: System.Reflection
+  syntax:
+    content: public static MemberInfo[] GetMember(Type type, string name)
+    content.vb: Public Shared Function GetMember(type As Type, name As String) As MemberInfo()
+    parameters:
+    - id: type
+      type: System.Type
+    - id: name
+      type: System.String
+    return:
+      type: System.Reflection.MemberInfo[]
+      description: 
+- uid: System.Reflection.TypeExtensions.GetMember(System.Type,System.String,System.Reflection.BindingFlags)
+  id: GetMember(System.Type,System.String,System.Reflection.BindingFlags)
+  parent: System.Reflection.TypeExtensions
+  href: System.Reflection.TypeExtensions.yml
+  name: GetMember(Type, String, BindingFlags)
+  fullName: System.Reflection.TypeExtensions.GetMember(System.Type, System.String, System.Reflection.BindingFlags)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.TypeExtensions/src/System/Reflection/TypeExtensions.CoreCLR.cs
+    startLine: 103
+  assemblies:
+  - System.Reflection.TypeExtensions.CoreCLR
+  namespace: System.Reflection
+  syntax:
+    content: public static MemberInfo[] GetMember(Type type, string name, BindingFlags bindingAttr)
+    content.vb: Public Shared Function GetMember(type As Type, name As String, bindingAttr As BindingFlags) As MemberInfo()
+    parameters:
+    - id: type
+      type: System.Type
+    - id: name
+      type: System.String
+    - id: bindingAttr
+      type: System.Reflection.BindingFlags
+    return:
+      type: System.Reflection.MemberInfo[]
+      description: 
+- uid: System.Reflection.TypeExtensions.GetMembers(System.Type)
+  id: GetMembers(System.Type)
+  parent: System.Reflection.TypeExtensions
+  href: System.Reflection.TypeExtensions.yml
+  name: GetMembers(Type)
+  fullName: System.Reflection.TypeExtensions.GetMembers(System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.TypeExtensions/src/System/Reflection/TypeExtensions.CoreCLR.cs
+    startLine: 109
+  assemblies:
+  - System.Reflection.TypeExtensions.CoreCLR
+  namespace: System.Reflection
+  syntax:
+    content: public static MemberInfo[] GetMembers(Type type)
+    content.vb: Public Shared Function GetMembers(type As Type) As MemberInfo()
+    parameters:
+    - id: type
+      type: System.Type
+    return:
+      type: System.Reflection.MemberInfo[]
+      description: 
+- uid: System.Reflection.TypeExtensions.GetMembers(System.Type,System.Reflection.BindingFlags)
+  id: GetMembers(System.Type,System.Reflection.BindingFlags)
+  parent: System.Reflection.TypeExtensions
+  href: System.Reflection.TypeExtensions.yml
+  name: GetMembers(Type, BindingFlags)
+  fullName: System.Reflection.TypeExtensions.GetMembers(System.Type, System.Reflection.BindingFlags)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.TypeExtensions/src/System/Reflection/TypeExtensions.CoreCLR.cs
+    startLine: 115
+  assemblies:
+  - System.Reflection.TypeExtensions.CoreCLR
+  namespace: System.Reflection
+  syntax:
+    content: public static MemberInfo[] GetMembers(Type type, BindingFlags bindingAttr)
+    content.vb: Public Shared Function GetMembers(type As Type, bindingAttr As BindingFlags) As MemberInfo()
+    parameters:
+    - id: type
+      type: System.Type
+    - id: bindingAttr
+      type: System.Reflection.BindingFlags
+    return:
+      type: System.Reflection.MemberInfo[]
+      description: 
+- uid: System.Reflection.TypeExtensions.GetMethod(System.Type,System.String)
+  id: GetMethod(System.Type,System.String)
+  parent: System.Reflection.TypeExtensions
+  href: System.Reflection.TypeExtensions.yml
+  name: GetMethod(Type, String)
+  fullName: System.Reflection.TypeExtensions.GetMethod(System.Type, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.TypeExtensions/src/System/Reflection/TypeExtensions.CoreCLR.cs
+    startLine: 121
+  assemblies:
+  - System.Reflection.TypeExtensions.CoreCLR
+  namespace: System.Reflection
+  syntax:
+    content: public static MethodInfo GetMethod(Type type, string name)
+    content.vb: Public Shared Function GetMethod(type As Type, name As String) As MethodInfo
+    parameters:
+    - id: type
+      type: System.Type
+    - id: name
+      type: System.String
+    return:
+      type: System.Reflection.MethodInfo
+      description: 
+- uid: System.Reflection.TypeExtensions.GetMethod(System.Type,System.String,System.Reflection.BindingFlags)
+  id: GetMethod(System.Type,System.String,System.Reflection.BindingFlags)
+  parent: System.Reflection.TypeExtensions
+  href: System.Reflection.TypeExtensions.yml
+  name: GetMethod(Type, String, BindingFlags)
+  fullName: System.Reflection.TypeExtensions.GetMethod(System.Type, System.String, System.Reflection.BindingFlags)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.TypeExtensions/src/System/Reflection/TypeExtensions.CoreCLR.cs
+    startLine: 127
+  assemblies:
+  - System.Reflection.TypeExtensions.CoreCLR
+  namespace: System.Reflection
+  syntax:
+    content: public static MethodInfo GetMethod(Type type, string name, BindingFlags bindingAttr)
+    content.vb: Public Shared Function GetMethod(type As Type, name As String, bindingAttr As BindingFlags) As MethodInfo
+    parameters:
+    - id: type
+      type: System.Type
+    - id: name
+      type: System.String
+    - id: bindingAttr
+      type: System.Reflection.BindingFlags
+    return:
+      type: System.Reflection.MethodInfo
+      description: 
+- uid: System.Reflection.TypeExtensions.GetMethod(System.Type,System.String,System.Type[])
+  id: GetMethod(System.Type,System.String,System.Type[])
+  parent: System.Reflection.TypeExtensions
+  href: System.Reflection.TypeExtensions.yml
+  name: GetMethod(Type, String, Type[])
+  name.vb: GetMethod(Type, String, Type())
+  fullName: System.Reflection.TypeExtensions.GetMethod(System.Type, System.String, System.Type[])
+  fullName.vb: System.Reflection.TypeExtensions.GetMethod(System.Type, System.String, System.Type())
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.TypeExtensions/src/System/Reflection/TypeExtensions.CoreCLR.cs
+    startLine: 133
+  assemblies:
+  - System.Reflection.TypeExtensions.CoreCLR
+  namespace: System.Reflection
+  syntax:
+    content: public static MethodInfo GetMethod(Type type, string name, Type[] types)
+    content.vb: Public Shared Function GetMethod(type As Type, name As String, types As Type()) As MethodInfo
+    parameters:
+    - id: type
+      type: System.Type
+    - id: name
+      type: System.String
+    - id: types
+      type: System.Type[]
+    return:
+      type: System.Reflection.MethodInfo
+      description: 
+- uid: System.Reflection.TypeExtensions.GetMethods(System.Type)
+  id: GetMethods(System.Type)
+  parent: System.Reflection.TypeExtensions
+  href: System.Reflection.TypeExtensions.yml
+  name: GetMethods(Type)
+  fullName: System.Reflection.TypeExtensions.GetMethods(System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.TypeExtensions/src/System/Reflection/TypeExtensions.CoreCLR.cs
+    startLine: 139
+  assemblies:
+  - System.Reflection.TypeExtensions.CoreCLR
+  namespace: System.Reflection
+  syntax:
+    content: public static MethodInfo[] GetMethods(Type type)
+    content.vb: Public Shared Function GetMethods(type As Type) As MethodInfo()
+    parameters:
+    - id: type
+      type: System.Type
+    return:
+      type: System.Reflection.MethodInfo[]
+      description: 
+- uid: System.Reflection.TypeExtensions.GetMethods(System.Type,System.Reflection.BindingFlags)
+  id: GetMethods(System.Type,System.Reflection.BindingFlags)
+  parent: System.Reflection.TypeExtensions
+  href: System.Reflection.TypeExtensions.yml
+  name: GetMethods(Type, BindingFlags)
+  fullName: System.Reflection.TypeExtensions.GetMethods(System.Type, System.Reflection.BindingFlags)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.TypeExtensions/src/System/Reflection/TypeExtensions.CoreCLR.cs
+    startLine: 145
+  assemblies:
+  - System.Reflection.TypeExtensions.CoreCLR
+  namespace: System.Reflection
+  syntax:
+    content: public static MethodInfo[] GetMethods(Type type, BindingFlags bindingAttr)
+    content.vb: Public Shared Function GetMethods(type As Type, bindingAttr As BindingFlags) As MethodInfo()
+    parameters:
+    - id: type
+      type: System.Type
+    - id: bindingAttr
+      type: System.Reflection.BindingFlags
+    return:
+      type: System.Reflection.MethodInfo[]
+      description: 
+- uid: System.Reflection.TypeExtensions.GetNestedType(System.Type,System.String,System.Reflection.BindingFlags)
+  id: GetNestedType(System.Type,System.String,System.Reflection.BindingFlags)
+  parent: System.Reflection.TypeExtensions
+  href: System.Reflection.TypeExtensions.yml
+  name: GetNestedType(Type, String, BindingFlags)
+  fullName: System.Reflection.TypeExtensions.GetNestedType(System.Type, System.String, System.Reflection.BindingFlags)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.TypeExtensions/src/System/Reflection/TypeExtensions.CoreCLR.cs
+    startLine: 151
+  assemblies:
+  - System.Reflection.TypeExtensions.CoreCLR
+  namespace: System.Reflection
+  syntax:
+    content: public static Type GetNestedType(Type type, string name, BindingFlags bindingAttr)
+    content.vb: Public Shared Function GetNestedType(type As Type, name As String, bindingAttr As BindingFlags) As Type
+    parameters:
+    - id: type
+      type: System.Type
+    - id: name
+      type: System.String
+    - id: bindingAttr
+      type: System.Reflection.BindingFlags
+    return:
+      type: System.Type
+      description: 
+- uid: System.Reflection.TypeExtensions.GetNestedTypes(System.Type,System.Reflection.BindingFlags)
+  id: GetNestedTypes(System.Type,System.Reflection.BindingFlags)
+  parent: System.Reflection.TypeExtensions
+  href: System.Reflection.TypeExtensions.yml
+  name: GetNestedTypes(Type, BindingFlags)
+  fullName: System.Reflection.TypeExtensions.GetNestedTypes(System.Type, System.Reflection.BindingFlags)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.TypeExtensions/src/System/Reflection/TypeExtensions.CoreCLR.cs
+    startLine: 157
+  assemblies:
+  - System.Reflection.TypeExtensions.CoreCLR
+  namespace: System.Reflection
+  syntax:
+    content: public static Type[] GetNestedTypes(Type type, BindingFlags bindingAttr)
+    content.vb: Public Shared Function GetNestedTypes(type As Type, bindingAttr As BindingFlags) As Type()
+    parameters:
+    - id: type
+      type: System.Type
+    - id: bindingAttr
+      type: System.Reflection.BindingFlags
+    return:
+      type: System.Type[]
+      description: 
+- uid: System.Reflection.TypeExtensions.GetProperties(System.Type)
+  id: GetProperties(System.Type)
+  parent: System.Reflection.TypeExtensions
+  href: System.Reflection.TypeExtensions.yml
+  name: GetProperties(Type)
+  fullName: System.Reflection.TypeExtensions.GetProperties(System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.TypeExtensions/src/System/Reflection/TypeExtensions.CoreCLR.cs
+    startLine: 163
+  assemblies:
+  - System.Reflection.TypeExtensions.CoreCLR
+  namespace: System.Reflection
+  syntax:
+    content: public static PropertyInfo[] GetProperties(Type type)
+    content.vb: Public Shared Function GetProperties(type As Type) As PropertyInfo()
+    parameters:
+    - id: type
+      type: System.Type
+    return:
+      type: System.Reflection.PropertyInfo[]
+      description: 
+- uid: System.Reflection.TypeExtensions.GetProperties(System.Type,System.Reflection.BindingFlags)
+  id: GetProperties(System.Type,System.Reflection.BindingFlags)
+  parent: System.Reflection.TypeExtensions
+  href: System.Reflection.TypeExtensions.yml
+  name: GetProperties(Type, BindingFlags)
+  fullName: System.Reflection.TypeExtensions.GetProperties(System.Type, System.Reflection.BindingFlags)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.TypeExtensions/src/System/Reflection/TypeExtensions.CoreCLR.cs
+    startLine: 169
+  assemblies:
+  - System.Reflection.TypeExtensions.CoreCLR
+  namespace: System.Reflection
+  syntax:
+    content: public static PropertyInfo[] GetProperties(Type type, BindingFlags bindingAttr)
+    content.vb: Public Shared Function GetProperties(type As Type, bindingAttr As BindingFlags) As PropertyInfo()
+    parameters:
+    - id: type
+      type: System.Type
+    - id: bindingAttr
+      type: System.Reflection.BindingFlags
+    return:
+      type: System.Reflection.PropertyInfo[]
+      description: 
+- uid: System.Reflection.TypeExtensions.GetProperty(System.Type,System.String)
+  id: GetProperty(System.Type,System.String)
+  parent: System.Reflection.TypeExtensions
+  href: System.Reflection.TypeExtensions.yml
+  name: GetProperty(Type, String)
+  fullName: System.Reflection.TypeExtensions.GetProperty(System.Type, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.TypeExtensions/src/System/Reflection/TypeExtensions.CoreCLR.cs
+    startLine: 175
+  assemblies:
+  - System.Reflection.TypeExtensions.CoreCLR
+  namespace: System.Reflection
+  syntax:
+    content: public static PropertyInfo GetProperty(Type type, string name)
+    content.vb: Public Shared Function GetProperty(type As Type, name As String) As PropertyInfo
+    parameters:
+    - id: type
+      type: System.Type
+    - id: name
+      type: System.String
+    return:
+      type: System.Reflection.PropertyInfo
+      description: 
+- uid: System.Reflection.TypeExtensions.GetProperty(System.Type,System.String,System.Reflection.BindingFlags)
+  id: GetProperty(System.Type,System.String,System.Reflection.BindingFlags)
+  parent: System.Reflection.TypeExtensions
+  href: System.Reflection.TypeExtensions.yml
+  name: GetProperty(Type, String, BindingFlags)
+  fullName: System.Reflection.TypeExtensions.GetProperty(System.Type, System.String, System.Reflection.BindingFlags)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.TypeExtensions/src/System/Reflection/TypeExtensions.CoreCLR.cs
+    startLine: 181
+  assemblies:
+  - System.Reflection.TypeExtensions.CoreCLR
+  namespace: System.Reflection
+  syntax:
+    content: public static PropertyInfo GetProperty(Type type, string name, BindingFlags bindingAttr)
+    content.vb: Public Shared Function GetProperty(type As Type, name As String, bindingAttr As BindingFlags) As PropertyInfo
+    parameters:
+    - id: type
+      type: System.Type
+    - id: name
+      type: System.String
+    - id: bindingAttr
+      type: System.Reflection.BindingFlags
+    return:
+      type: System.Reflection.PropertyInfo
+      description: 
+- uid: System.Reflection.TypeExtensions.GetProperty(System.Type,System.String,System.Type)
+  id: GetProperty(System.Type,System.String,System.Type)
+  parent: System.Reflection.TypeExtensions
+  href: System.Reflection.TypeExtensions.yml
+  name: GetProperty(Type, String, Type)
+  fullName: System.Reflection.TypeExtensions.GetProperty(System.Type, System.String, System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.TypeExtensions/src/System/Reflection/TypeExtensions.CoreCLR.cs
+    startLine: 187
+  assemblies:
+  - System.Reflection.TypeExtensions.CoreCLR
+  namespace: System.Reflection
+  syntax:
+    content: public static PropertyInfo GetProperty(Type type, string name, Type returnType)
+    content.vb: Public Shared Function GetProperty(type As Type, name As String, returnType As Type) As PropertyInfo
+    parameters:
+    - id: type
+      type: System.Type
+    - id: name
+      type: System.String
+    - id: returnType
+      type: System.Type
+    return:
+      type: System.Reflection.PropertyInfo
+      description: 
+- uid: System.Reflection.TypeExtensions.GetProperty(System.Type,System.String,System.Type,System.Type[])
+  id: GetProperty(System.Type,System.String,System.Type,System.Type[])
+  parent: System.Reflection.TypeExtensions
+  href: System.Reflection.TypeExtensions.yml
+  name: GetProperty(Type, String, Type, Type[])
+  name.vb: GetProperty(Type, String, Type, Type())
+  fullName: System.Reflection.TypeExtensions.GetProperty(System.Type, System.String, System.Type, System.Type[])
+  fullName.vb: System.Reflection.TypeExtensions.GetProperty(System.Type, System.String, System.Type, System.Type())
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.TypeExtensions/src/System/Reflection/TypeExtensions.CoreCLR.cs
+    startLine: 193
+  assemblies:
+  - System.Reflection.TypeExtensions.CoreCLR
+  namespace: System.Reflection
+  syntax:
+    content: public static PropertyInfo GetProperty(Type type, string name, Type returnType, Type[] types)
+    content.vb: Public Shared Function GetProperty(type As Type, name As String, returnType As Type, types As Type()) As PropertyInfo
+    parameters:
+    - id: type
+      type: System.Type
+    - id: name
+      type: System.String
+    - id: returnType
+      type: System.Type
+    - id: types
+      type: System.Type[]
+    return:
+      type: System.Reflection.PropertyInfo
+      description: 
+- uid: System.Reflection.TypeExtensions.IsAssignableFrom(System.Type,System.Type)
+  id: IsAssignableFrom(System.Type,System.Type)
+  parent: System.Reflection.TypeExtensions
+  href: System.Reflection.TypeExtensions.yml
+  name: IsAssignableFrom(Type, Type)
+  fullName: System.Reflection.TypeExtensions.IsAssignableFrom(System.Type, System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.TypeExtensions/src/System/Reflection/TypeExtensions.CoreCLR.cs
+    startLine: 199
+  assemblies:
+  - System.Reflection.TypeExtensions.CoreCLR
+  namespace: System.Reflection
+  syntax:
+    content: public static bool IsAssignableFrom(Type type, Type c)
+    content.vb: Public Shared Function IsAssignableFrom(type As Type, c As Type) As Boolean
+    parameters:
+    - id: type
+      type: System.Type
+    - id: c
+      type: System.Type
+    return:
+      type: System.Boolean
+      description: 
+- uid: System.Reflection.TypeExtensions.IsInstanceOfType(System.Type,System.Object)
+  id: IsInstanceOfType(System.Type,System.Object)
+  parent: System.Reflection.TypeExtensions
+  href: System.Reflection.TypeExtensions.yml
+  name: IsInstanceOfType(Type, Object)
+  fullName: System.Reflection.TypeExtensions.IsInstanceOfType(System.Type, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.TypeExtensions/src/System/Reflection/TypeExtensions.CoreCLR.cs
+    startLine: 205
+  assemblies:
+  - System.Reflection.TypeExtensions.CoreCLR
+  namespace: System.Reflection
+  syntax:
+    content: public static bool IsInstanceOfType(Type type, object o)
+    content.vb: Public Shared Function IsInstanceOfType(type As Type, o As Object) As Boolean
+    parameters:
+    - id: type
+      type: System.Type
+    - id: o
+      type: System.Object
+    return:
+      type: System.Boolean
+      description: 
+references:
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  fullName: System.Type
+- uid: System.Type[]
+  isExternal: true
+  name: Type[]
+  name.vb: Type()
+  fullName: System.Type[]
+  fullName.vb: System.Type()
+  spec.csharp:
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Reflection.ConstructorInfo
+  parent: System.Reflection
+  isExternal: true
+  name: ConstructorInfo
+  fullName: System.Reflection.ConstructorInfo
+- uid: System.Reflection.ConstructorInfo[]
+  isExternal: true
+  name: ConstructorInfo[]
+  name.vb: ConstructorInfo()
+  fullName: System.Reflection.ConstructorInfo[]
+  fullName.vb: System.Reflection.ConstructorInfo()
+  spec.csharp:
+  - uid: System.Reflection.ConstructorInfo
+    name: ConstructorInfo
+    fullName: System.Reflection.ConstructorInfo
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Reflection.ConstructorInfo
+    name: ConstructorInfo
+    fullName: System.Reflection.ConstructorInfo
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Reflection.BindingFlags
+  parent: System.Reflection
+  isExternal: true
+  name: BindingFlags
+  fullName: System.Reflection.BindingFlags
+- uid: System.Reflection.MemberInfo[]
+  isExternal: true
+  name: MemberInfo[]
+  name.vb: MemberInfo()
+  fullName: System.Reflection.MemberInfo[]
+  fullName.vb: System.Reflection.MemberInfo()
+  spec.csharp:
+  - uid: System.Reflection.MemberInfo
+    name: MemberInfo
+    fullName: System.Reflection.MemberInfo
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Reflection.MemberInfo
+    name: MemberInfo
+    fullName: System.Reflection.MemberInfo
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Reflection.EventInfo
+  parent: System.Reflection
+  isExternal: true
+  name: EventInfo
+  fullName: System.Reflection.EventInfo
+- uid: System.Reflection.EventInfo[]
+  isExternal: true
+  name: EventInfo[]
+  name.vb: EventInfo()
+  fullName: System.Reflection.EventInfo[]
+  fullName.vb: System.Reflection.EventInfo()
+  spec.csharp:
+  - uid: System.Reflection.EventInfo
+    name: EventInfo
+    fullName: System.Reflection.EventInfo
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Reflection.EventInfo
+    name: EventInfo
+    fullName: System.Reflection.EventInfo
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Reflection.FieldInfo
+  parent: System.Reflection
+  isExternal: true
+  name: FieldInfo
+  fullName: System.Reflection.FieldInfo
+- uid: System.Reflection.FieldInfo[]
+  isExternal: true
+  name: FieldInfo[]
+  name.vb: FieldInfo()
+  fullName: System.Reflection.FieldInfo[]
+  fullName.vb: System.Reflection.FieldInfo()
+  spec.csharp:
+  - uid: System.Reflection.FieldInfo
+    name: FieldInfo
+    fullName: System.Reflection.FieldInfo
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Reflection.FieldInfo
+    name: FieldInfo
+    fullName: System.Reflection.FieldInfo
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Reflection.MethodInfo
+  parent: System.Reflection
+  isExternal: true
+  name: MethodInfo
+  fullName: System.Reflection.MethodInfo
+- uid: System.Reflection.MethodInfo[]
+  isExternal: true
+  name: MethodInfo[]
+  name.vb: MethodInfo()
+  fullName: System.Reflection.MethodInfo[]
+  fullName.vb: System.Reflection.MethodInfo()
+  spec.csharp:
+  - uid: System.Reflection.MethodInfo
+    name: MethodInfo
+    fullName: System.Reflection.MethodInfo
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Reflection.MethodInfo
+    name: MethodInfo
+    fullName: System.Reflection.MethodInfo
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Reflection.PropertyInfo[]
+  isExternal: true
+  name: PropertyInfo[]
+  name.vb: PropertyInfo()
+  fullName: System.Reflection.PropertyInfo[]
+  fullName.vb: System.Reflection.PropertyInfo()
+  spec.csharp:
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    fullName: System.Reflection.PropertyInfo
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    fullName: System.Reflection.PropertyInfo
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Reflection.PropertyInfo
+  parent: System.Reflection
+  isExternal: true
+  name: PropertyInfo
+  fullName: System.Reflection.PropertyInfo
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean

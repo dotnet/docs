@@ -1,0 +1,387 @@
+items:
+- uid: System.Globalization.TextElementEnumerator
+  id: TextElementEnumerator
+  parent: System.Globalization
+  children:
+  - System.Globalization.TextElementEnumerator.Current
+  - System.Globalization.TextElementEnumerator.ElementIndex
+  - System.Globalization.TextElementEnumerator.GetTextElement
+  - System.Globalization.TextElementEnumerator.MoveNext
+  - System.Globalization.TextElementEnumerator.Reset
+  href: System.Globalization.TextElementEnumerator.yml
+  name: TextElementEnumerator
+  fullName: System.Globalization.TextElementEnumerator
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Globalization/TextElementEnumerator.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Globalization/TextElementEnumerator.cs
+    startLine: 22
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Enumerates the text elements of a string.
+  syntax:
+    content: 'public class TextElementEnumerator : IEnumerator'
+    content.vb: Public Class TextElementEnumerator Implements IEnumerator
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.IEnumerator
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Globalization.TextElementEnumerator.MoveNext
+  id: MoveNext
+  parent: System.Globalization.TextElementEnumerator
+  href: System.Globalization.TextElementEnumerator.yml
+  name: MoveNext()
+  fullName: System.Globalization.TextElementEnumerator.MoveNext()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/TextElementEnumerator.cs
+    startLine: 88
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Advances the enumerator to the next text element of the string.
+  syntax:
+    content: public bool MoveNext()
+    content.vb: Public Function MoveNext As Boolean
+    return:
+      type: System.Boolean
+- uid: System.Globalization.TextElementEnumerator.Current
+  id: Current
+  parent: System.Globalization.TextElementEnumerator
+  href: System.Globalization.TextElementEnumerator.yml
+  name: Current
+  fullName: System.Globalization.TextElementEnumerator.Current
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/TextElementEnumerator.cs
+    startLine: 105
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Gets the current text element in the string.
+  syntax:
+    content: public object Current { get; }
+    content.vb: Public ReadOnly Property Current As Object
+    parameters: []
+    return:
+      type: System.Object
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The enumerator is positioned before the first text element of the string or after the last text element.
+- uid: System.Globalization.TextElementEnumerator.GetTextElement
+  id: GetTextElement
+  parent: System.Globalization.TextElementEnumerator
+  href: System.Globalization.TextElementEnumerator.yml
+  name: GetTextElement()
+  fullName: System.Globalization.TextElementEnumerator.GetTextElement()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/TextElementEnumerator.cs
+    startLine: 115
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Gets the current text element in the string.
+  syntax:
+    content: public string GetTextElement()
+    content.vb: Public Function GetTextElement As String
+    return:
+      type: System.String
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The enumerator is positioned before the first text element of the string or after the last text element.
+- uid: System.Globalization.TextElementEnumerator.ElementIndex
+  id: ElementIndex
+  parent: System.Globalization.TextElementEnumerator
+  href: System.Globalization.TextElementEnumerator.yml
+  name: ElementIndex
+  fullName: System.Globalization.TextElementEnumerator.ElementIndex
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/TextElementEnumerator.cs
+    startLine: 131
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Gets the index of the text element that the enumerator is currently positioned over.
+  syntax:
+    content: public int ElementIndex { get; }
+    content.vb: Public ReadOnly Property ElementIndex As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The enumerator is positioned before the first text element of the string or after the last text element.
+- uid: System.Globalization.TextElementEnumerator.Reset
+  id: Reset
+  parent: System.Globalization.TextElementEnumerator
+  href: System.Globalization.TextElementEnumerator.yml
+  name: Reset()
+  fullName: System.Globalization.TextElementEnumerator.Reset()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/TextElementEnumerator.cs
+    startLine: 144
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Sets the enumerator to its initial position, which is before the first text element in the string.
+  syntax:
+    content: public void Reset()
+    content.vb: Public Sub Reset
+references:
+- uid: System.Globalization
+  isExternal: false
+  name: System.Globalization
+  fullName: System.Globalization
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32

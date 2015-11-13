@@ -1,0 +1,1052 @@
+items:
+- uid: System.Reflection.Metadata.BlobReader
+  id: BlobReader
+  parent: System.Reflection.Metadata
+  children:
+  - System.Reflection.Metadata.BlobReader.#ctor(System.Byte*,System.Int32)
+  - System.Reflection.Metadata.BlobReader.Length
+  - System.Reflection.Metadata.BlobReader.Offset
+  - System.Reflection.Metadata.BlobReader.ReadBoolean
+  - System.Reflection.Metadata.BlobReader.ReadByte
+  - System.Reflection.Metadata.BlobReader.ReadBytes(System.Int32)
+  - System.Reflection.Metadata.BlobReader.ReadChar
+  - System.Reflection.Metadata.BlobReader.ReadCompressedInteger
+  - System.Reflection.Metadata.BlobReader.ReadCompressedSignedInteger
+  - System.Reflection.Metadata.BlobReader.ReadDouble
+  - System.Reflection.Metadata.BlobReader.ReadInt16
+  - System.Reflection.Metadata.BlobReader.ReadInt32
+  - System.Reflection.Metadata.BlobReader.ReadInt64
+  - System.Reflection.Metadata.BlobReader.ReadSByte
+  - System.Reflection.Metadata.BlobReader.ReadSerializationTypeCode
+  - System.Reflection.Metadata.BlobReader.ReadSerializedString
+  - System.Reflection.Metadata.BlobReader.ReadSignatureHeader
+  - System.Reflection.Metadata.BlobReader.ReadSignatureTypeCode
+  - System.Reflection.Metadata.BlobReader.ReadSingle
+  - System.Reflection.Metadata.BlobReader.ReadTypeHandle
+  - System.Reflection.Metadata.BlobReader.ReadUInt16
+  - System.Reflection.Metadata.BlobReader.ReadUInt32
+  - System.Reflection.Metadata.BlobReader.ReadUInt64
+  - System.Reflection.Metadata.BlobReader.ReadUTF16(System.Int32)
+  - System.Reflection.Metadata.BlobReader.ReadUTF8(System.Int32)
+  - System.Reflection.Metadata.BlobReader.RemainingBytes
+  - System.Reflection.Metadata.BlobReader.Reset
+  - System.Reflection.Metadata.BlobReader.TryReadCompressedInteger(System.Int32@)
+  - System.Reflection.Metadata.BlobReader.TryReadCompressedSignedInteger(System.Int32@)
+  href: System.Reflection.Metadata.BlobReader.yml
+  name: BlobReader
+  fullName: System.Reflection.Metadata.BlobReader
+  type: Struct
+  source:
+    remote: &o0
+      path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/BlobReader.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/BlobReader.cs
+    startLine: 10
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public struct BlobReader
+    content.vb: Public Structure BlobReader
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.Reflection.Metadata.BlobReader.#ctor(System.Byte*,System.Int32)
+  id: '#ctor(System.Byte*,System.Int32)'
+  parent: System.Reflection.Metadata.BlobReader
+  href: System.Reflection.Metadata.BlobReader.yml
+  name: BlobReader(Byte*, Int32)
+  fullName: System.Reflection.Metadata.BlobReader.BlobReader(System.Byte*, System.Int32)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/BlobReader.cs
+    startLine: 25
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public BlobReader(byte *buffer, int length)
+    content.vb: Public Sub New(buffer As Byte *, length As Integer)
+    parameters:
+    - id: buffer
+      type: System.Byte*
+    - id: length
+      type: System.Int32
+- uid: System.Reflection.Metadata.BlobReader.Length
+  id: Length
+  parent: System.Reflection.Metadata.BlobReader
+  href: System.Reflection.Metadata.BlobReader.yml
+  name: Length
+  fullName: System.Reflection.Metadata.BlobReader.Length
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/BlobReader.cs
+    startLine: 81
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public int Length { get; }
+    content.vb: Public ReadOnly Property Length As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: 
+- uid: System.Reflection.Metadata.BlobReader.Offset
+  id: Offset
+  parent: System.Reflection.Metadata.BlobReader
+  href: System.Reflection.Metadata.BlobReader.yml
+  name: Offset
+  fullName: System.Reflection.Metadata.BlobReader.Offset
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/BlobReader.cs
+    startLine: 89
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public int Offset { get; }
+    content.vb: Public ReadOnly Property Offset As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: 
+- uid: System.Reflection.Metadata.BlobReader.RemainingBytes
+  id: RemainingBytes
+  parent: System.Reflection.Metadata.BlobReader
+  href: System.Reflection.Metadata.BlobReader.yml
+  name: RemainingBytes
+  fullName: System.Reflection.Metadata.BlobReader.RemainingBytes
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/BlobReader.cs
+    startLine: 97
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public int RemainingBytes { get; }
+    content.vb: Public ReadOnly Property RemainingBytes As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: 
+- uid: System.Reflection.Metadata.BlobReader.Reset
+  id: Reset
+  parent: System.Reflection.Metadata.BlobReader
+  href: System.Reflection.Metadata.BlobReader.yml
+  name: Reset()
+  fullName: System.Reflection.Metadata.BlobReader.Reset()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/BlobReader.cs
+    startLine: 105
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public void Reset()
+    content.vb: Public Sub Reset
+- uid: System.Reflection.Metadata.BlobReader.ReadBoolean
+  id: ReadBoolean
+  parent: System.Reflection.Metadata.BlobReader
+  href: System.Reflection.Metadata.BlobReader.yml
+  name: ReadBoolean()
+  fullName: System.Reflection.Metadata.BlobReader.ReadBoolean()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/BlobReader.cs
+    startLine: 212
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public bool ReadBoolean()
+    content.vb: Public Function ReadBoolean As Boolean
+    return:
+      type: System.Boolean
+      description: 
+- uid: System.Reflection.Metadata.BlobReader.ReadSByte
+  id: ReadSByte
+  parent: System.Reflection.Metadata.BlobReader
+  href: System.Reflection.Metadata.BlobReader.yml
+  name: ReadSByte()
+  fullName: System.Reflection.Metadata.BlobReader.ReadSByte()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/BlobReader.cs
+    startLine: 217
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public sbyte ReadSByte()
+    content.vb: Public Function ReadSByte As SByte
+    return:
+      type: System.SByte
+      description: 
+- uid: System.Reflection.Metadata.BlobReader.ReadByte
+  id: ReadByte
+  parent: System.Reflection.Metadata.BlobReader
+  href: System.Reflection.Metadata.BlobReader.yml
+  name: ReadByte()
+  fullName: System.Reflection.Metadata.BlobReader.ReadByte()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/BlobReader.cs
+    startLine: 222
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public byte ReadByte()
+    content.vb: Public Function ReadByte As Byte
+    return:
+      type: System.Byte
+      description: 
+- uid: System.Reflection.Metadata.BlobReader.ReadChar
+  id: ReadChar
+  parent: System.Reflection.Metadata.BlobReader
+  href: System.Reflection.Metadata.BlobReader.yml
+  name: ReadChar()
+  fullName: System.Reflection.Metadata.BlobReader.ReadChar()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/BlobReader.cs
+    startLine: 227
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public char ReadChar()
+    content.vb: Public Function ReadChar As Char
+    return:
+      type: System.Char
+      description: 
+- uid: System.Reflection.Metadata.BlobReader.ReadInt16
+  id: ReadInt16
+  parent: System.Reflection.Metadata.BlobReader
+  href: System.Reflection.Metadata.BlobReader.yml
+  name: ReadInt16()
+  fullName: System.Reflection.Metadata.BlobReader.ReadInt16()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/BlobReader.cs
+    startLine: 232
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public short ReadInt16()
+    content.vb: Public Function ReadInt16 As Short
+    return:
+      type: System.Int16
+      description: 
+- uid: System.Reflection.Metadata.BlobReader.ReadUInt16
+  id: ReadUInt16
+  parent: System.Reflection.Metadata.BlobReader
+  href: System.Reflection.Metadata.BlobReader.yml
+  name: ReadUInt16()
+  fullName: System.Reflection.Metadata.BlobReader.ReadUInt16()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/BlobReader.cs
+    startLine: 237
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public ushort ReadUInt16()
+    content.vb: Public Function ReadUInt16 As UShort
+    return:
+      type: System.UInt16
+      description: 
+- uid: System.Reflection.Metadata.BlobReader.ReadInt32
+  id: ReadInt32
+  parent: System.Reflection.Metadata.BlobReader
+  href: System.Reflection.Metadata.BlobReader.yml
+  name: ReadInt32()
+  fullName: System.Reflection.Metadata.BlobReader.ReadInt32()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/BlobReader.cs
+    startLine: 242
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public int ReadInt32()
+    content.vb: Public Function ReadInt32 As Integer
+    return:
+      type: System.Int32
+      description: 
+- uid: System.Reflection.Metadata.BlobReader.ReadUInt32
+  id: ReadUInt32
+  parent: System.Reflection.Metadata.BlobReader
+  href: System.Reflection.Metadata.BlobReader.yml
+  name: ReadUInt32()
+  fullName: System.Reflection.Metadata.BlobReader.ReadUInt32()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/BlobReader.cs
+    startLine: 247
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public uint ReadUInt32()
+    content.vb: Public Function ReadUInt32 As UInteger
+    return:
+      type: System.UInt32
+      description: 
+- uid: System.Reflection.Metadata.BlobReader.ReadInt64
+  id: ReadInt64
+  parent: System.Reflection.Metadata.BlobReader
+  href: System.Reflection.Metadata.BlobReader.yml
+  name: ReadInt64()
+  fullName: System.Reflection.Metadata.BlobReader.ReadInt64()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/BlobReader.cs
+    startLine: 252
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public long ReadInt64()
+    content.vb: Public Function ReadInt64 As Long
+    return:
+      type: System.Int64
+      description: 
+- uid: System.Reflection.Metadata.BlobReader.ReadUInt64
+  id: ReadUInt64
+  parent: System.Reflection.Metadata.BlobReader
+  href: System.Reflection.Metadata.BlobReader.yml
+  name: ReadUInt64()
+  fullName: System.Reflection.Metadata.BlobReader.ReadUInt64()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/BlobReader.cs
+    startLine: 257
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public ulong ReadUInt64()
+    content.vb: Public Function ReadUInt64 As ULong
+    return:
+      type: System.UInt64
+      description: 
+- uid: System.Reflection.Metadata.BlobReader.ReadSingle
+  id: ReadSingle
+  parent: System.Reflection.Metadata.BlobReader
+  href: System.Reflection.Metadata.BlobReader.yml
+  name: ReadSingle()
+  fullName: System.Reflection.Metadata.BlobReader.ReadSingle()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/BlobReader.cs
+    startLine: 262
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public float ReadSingle()
+    content.vb: Public Function ReadSingle As Single
+    return:
+      type: System.Single
+      description: 
+- uid: System.Reflection.Metadata.BlobReader.ReadDouble
+  id: ReadDouble
+  parent: System.Reflection.Metadata.BlobReader
+  href: System.Reflection.Metadata.BlobReader.yml
+  name: ReadDouble()
+  fullName: System.Reflection.Metadata.BlobReader.ReadDouble()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/BlobReader.cs
+    startLine: 267
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public double ReadDouble()
+    content.vb: Public Function ReadDouble As Double
+    return:
+      type: System.Double
+      description: 
+- uid: System.Reflection.Metadata.BlobReader.ReadSignatureHeader
+  id: ReadSignatureHeader
+  parent: System.Reflection.Metadata.BlobReader
+  href: System.Reflection.Metadata.BlobReader.yml
+  name: ReadSignatureHeader()
+  fullName: System.Reflection.Metadata.BlobReader.ReadSignatureHeader()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/BlobReader.cs
+    startLine: 272
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  syntax:
+    content: public SignatureHeader ReadSignatureHeader()
+    content.vb: Public Function ReadSignatureHeader As SignatureHeader
+    return:
+      type: System.Reflection.Metadata.SignatureHeader
+      description: 
+- uid: System.Reflection.Metadata.BlobReader.ReadUTF8(System.Int32)
+  id: ReadUTF8(System.Int32)
+  parent: System.Reflection.Metadata.BlobReader
+  href: System.Reflection.Metadata.BlobReader.yml
+  name: ReadUTF8(Int32)
+  fullName: System.Reflection.Metadata.BlobReader.ReadUTF8(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/BlobReader.cs
+    startLine: 283
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Reads UTF8 encoded string starting at the current position.
+  syntax:
+    content: public string ReadUTF8(int byteCount)
+    content.vb: Public Function ReadUTF8(byteCount As Integer) As String
+    parameters:
+    - id: byteCount
+      type: System.Int32
+      description: The number of bytes to read.
+    return:
+      type: System.String
+      description: The string.
+  exceptions:
+  - type: System.BadImageFormatException
+    description: bytes not available.
+- uid: System.Reflection.Metadata.BlobReader.ReadUTF16(System.Int32)
+  id: ReadUTF16(System.Int32)
+  parent: System.Reflection.Metadata.BlobReader
+  href: System.Reflection.Metadata.BlobReader.yml
+  name: ReadUTF16(Int32)
+  fullName: System.Reflection.Metadata.BlobReader.ReadUTF16(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/BlobReader.cs
+    startLine: 296
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Reads UTF16 (little-endian) encoded string starting at the current position.
+  syntax:
+    content: public string ReadUTF16(int byteCount)
+    content.vb: Public Function ReadUTF16(byteCount As Integer) As String
+    parameters:
+    - id: byteCount
+      type: System.Int32
+      description: The number of bytes to read.
+    return:
+      type: System.String
+      description: The string.
+  exceptions:
+  - type: System.BadImageFormatException
+    description: bytes not available.
+- uid: System.Reflection.Metadata.BlobReader.ReadBytes(System.Int32)
+  id: ReadBytes(System.Int32)
+  parent: System.Reflection.Metadata.BlobReader
+  href: System.Reflection.Metadata.BlobReader.yml
+  name: ReadBytes(Int32)
+  fullName: System.Reflection.Metadata.BlobReader.ReadBytes(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/BlobReader.cs
+    startLine: 309
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Reads bytes starting at the current position.
+  syntax:
+    content: public byte[] ReadBytes(int byteCount)
+    content.vb: Public Function ReadBytes(byteCount As Integer) As Byte()
+    parameters:
+    - id: byteCount
+      type: System.Int32
+      description: The number of bytes to read.
+    return:
+      type: System.Byte[]
+      description: The byte array.
+  exceptions:
+  - type: System.BadImageFormatException
+    description: bytes not available.
+- uid: System.Reflection.Metadata.BlobReader.TryReadCompressedInteger(System.Int32@)
+  id: TryReadCompressedInteger(System.Int32@)
+  parent: System.Reflection.Metadata.BlobReader
+  href: System.Reflection.Metadata.BlobReader.yml
+  name: TryReadCompressedInteger(out Int32)
+  name.vb: TryReadCompressedInteger(ByRef Int32)
+  fullName: System.Reflection.Metadata.BlobReader.TryReadCompressedInteger(out System.Int32)
+  fullName.vb: System.Reflection.Metadata.BlobReader.TryReadCompressedInteger(ByRef System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/BlobReader.cs
+    startLine: 338
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: >-
+    Reads an unsigned compressed integer value.
+
+    See Metadata Specification section II.23.2: Blobs and signatures.
+  syntax:
+    content: public bool TryReadCompressedInteger(out int value)
+    content.vb: Public Function TryReadCompressedInteger(ByRef value As Integer) As Boolean
+    parameters:
+    - id: value
+      type: System.Int32
+      description: The value of the compressed integer that was read.
+    return:
+      type: System.Boolean
+      description: true if the value was read successfully. false if the data at the current position was not a valid compressed integer.
+- uid: System.Reflection.Metadata.BlobReader.ReadCompressedInteger
+  id: ReadCompressedInteger
+  parent: System.Reflection.Metadata.BlobReader
+  href: System.Reflection.Metadata.BlobReader.yml
+  name: ReadCompressedInteger()
+  fullName: System.Reflection.Metadata.BlobReader.ReadCompressedInteger()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/BlobReader.cs
+    startLine: 350
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: >-
+    Reads an unsigned compressed integer value.
+
+    See Metadata Specification section II.23.2: Blobs and signatures.
+  syntax:
+    content: public int ReadCompressedInteger()
+    content.vb: Public Function ReadCompressedInteger As Integer
+    return:
+      type: System.Int32
+      description: The value of the compressed integer that was read.
+  exceptions:
+  - type: System.BadImageFormatException
+    description: The data at the current position was not a valid compressed integer.
+- uid: System.Reflection.Metadata.BlobReader.TryReadCompressedSignedInteger(System.Int32@)
+  id: TryReadCompressedSignedInteger(System.Int32@)
+  parent: System.Reflection.Metadata.BlobReader
+  href: System.Reflection.Metadata.BlobReader.yml
+  name: TryReadCompressedSignedInteger(out Int32)
+  name.vb: TryReadCompressedSignedInteger(ByRef Int32)
+  fullName: System.Reflection.Metadata.BlobReader.TryReadCompressedSignedInteger(out System.Int32)
+  fullName.vb: System.Reflection.Metadata.BlobReader.TryReadCompressedSignedInteger(ByRef System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/BlobReader.cs
+    startLine: 366
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: >-
+    Reads a signed compressed integer value.
+
+    See Metadata Specification section II.23.2: Blobs and signatures.
+  syntax:
+    content: public bool TryReadCompressedSignedInteger(out int value)
+    content.vb: Public Function TryReadCompressedSignedInteger(ByRef value As Integer) As Boolean
+    parameters:
+    - id: value
+      type: System.Int32
+      description: The value of the compressed integer that was read.
+    return:
+      type: System.Boolean
+      description: true if the value was read successfully. false if the data at the current position was not a valid compressed integer.
+- uid: System.Reflection.Metadata.BlobReader.ReadCompressedSignedInteger
+  id: ReadCompressedSignedInteger
+  parent: System.Reflection.Metadata.BlobReader
+  href: System.Reflection.Metadata.BlobReader.yml
+  name: ReadCompressedSignedInteger()
+  fullName: System.Reflection.Metadata.BlobReader.ReadCompressedSignedInteger()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/BlobReader.cs
+    startLine: 406
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: >-
+    Reads a signed compressed integer value.
+
+    See Metadata Specification section II.23.2: Blobs and signatures.
+  syntax:
+    content: public int ReadCompressedSignedInteger()
+    content.vb: Public Function ReadCompressedSignedInteger As Integer
+    return:
+      type: System.Int32
+      description: The value of the compressed integer that was read.
+  exceptions:
+  - type: System.BadImageFormatException
+    description: The data at the current position was not a valid compressed integer.
+- uid: System.Reflection.Metadata.BlobReader.ReadSerializationTypeCode
+  id: ReadSerializationTypeCode
+  parent: System.Reflection.Metadata.BlobReader
+  href: System.Reflection.Metadata.BlobReader.yml
+  name: ReadSerializationTypeCode()
+  fullName: System.Reflection.Metadata.BlobReader.ReadSerializationTypeCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/BlobReader.cs
+    startLine: 420
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Reads type code encoded in a serialized custom attribute value.
+  syntax:
+    content: public SerializationTypeCode ReadSerializationTypeCode()
+    content.vb: Public Function ReadSerializationTypeCode As SerializationTypeCode
+    return:
+      type: System.Reflection.Metadata.SerializationTypeCode
+      description: '@''System.Reflection.Metadata.SerializationTypeCode.Invalid'' if the encoding is invalid.'
+- uid: System.Reflection.Metadata.BlobReader.ReadSignatureTypeCode
+  id: ReadSignatureTypeCode
+  parent: System.Reflection.Metadata.BlobReader
+  href: System.Reflection.Metadata.BlobReader.yml
+  name: ReadSignatureTypeCode()
+  fullName: System.Reflection.Metadata.BlobReader.ReadSignatureTypeCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/BlobReader.cs
+    startLine: 435
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Reads type code encoded in a signature.
+  syntax:
+    content: public SignatureTypeCode ReadSignatureTypeCode()
+    content.vb: Public Function ReadSignatureTypeCode As SignatureTypeCode
+    return:
+      type: System.Reflection.Metadata.SignatureTypeCode
+      description: '@''System.Reflection.Metadata.SignatureTypeCode.Invalid'' if the encoding is invalid.'
+- uid: System.Reflection.Metadata.BlobReader.ReadSerializedString
+  id: ReadSerializedString
+  parent: System.Reflection.Metadata.BlobReader
+  href: System.Reflection.Metadata.BlobReader.yml
+  name: ReadSerializedString()
+  fullName: System.Reflection.Metadata.BlobReader.ReadSerializedString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/BlobReader.cs
+    startLine: 462
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: >-
+    Reads a string encoded as a compressed integer containing its length followed by
+
+    its contents in UTF8. Null strings are encoded as a single 0xFF byte.
+  remarks: Defined as a 'SerString' in the Ecma CLI specification.
+  syntax:
+    content: public string ReadSerializedString()
+    content.vb: Public Function ReadSerializedString As String
+    return:
+      type: System.String
+      description: String value or null.
+  exceptions:
+  - type: System.BadImageFormatException
+    description: If the encoding is invalid.
+- uid: System.Reflection.Metadata.BlobReader.ReadTypeHandle
+  id: ReadTypeHandle
+  parent: System.Reflection.Metadata.BlobReader
+  href: System.Reflection.Metadata.BlobReader.yml
+  name: ReadTypeHandle()
+  fullName: System.Reflection.Metadata.BlobReader.ReadTypeHandle()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Reflection.Metadata/src/System/Reflection/Metadata/BlobReader.cs
+    startLine: 484
+  assemblies:
+  - System.Reflection.Metadata
+  namespace: System.Reflection.Metadata
+  summary: Reads a type handle encoded in a signature as TypeDefOrRefOrSpecEncoded (see ECMA-335 II.23.2.8).
+  syntax:
+    content: public EntityHandle ReadTypeHandle()
+    content.vb: Public Function ReadTypeHandle As EntityHandle
+    return:
+      type: System.Reflection.Metadata.EntityHandle
+      description: The handle or nil if the encoding is invalid.
+references:
+- uid: System.Reflection.Metadata
+  isExternal: false
+  name: System.Reflection.Metadata
+  fullName: System.Reflection.Metadata
+  type: Namespace
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Byte*
+  isExternal: true
+  name: Byte*
+  fullName: System.Byte*
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '*'
+    fullName: '*'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '*'
+    fullName: '*'
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.SByte
+  parent: System
+  isExternal: true
+  name: SByte
+  fullName: System.SByte
+- uid: System.Byte
+  parent: System
+  isExternal: true
+  name: Byte
+  fullName: System.Byte
+- uid: System.Char
+  parent: System
+  isExternal: true
+  name: Char
+  fullName: System.Char
+- uid: System.Int16
+  parent: System
+  isExternal: true
+  name: Int16
+  fullName: System.Int16
+- uid: System.UInt16
+  parent: System
+  isExternal: true
+  name: UInt16
+  fullName: System.UInt16
+- uid: System.UInt32
+  parent: System
+  isExternal: true
+  name: UInt32
+  fullName: System.UInt32
+- uid: System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  fullName: System.Int64
+- uid: System.UInt64
+  parent: System
+  isExternal: true
+  name: UInt64
+  fullName: System.UInt64
+- uid: System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  fullName: System.Single
+- uid: System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  fullName: System.Double
+- uid: System.Reflection.Metadata.SignatureHeader
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.SignatureHeader.yml
+  name: SignatureHeader
+  fullName: System.Reflection.Metadata.SignatureHeader
+  type: Struct
+  summary: Represents the signature characteristics specified by the leading byte of signature blobs.
+- uid: System.BadImageFormatException
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  name.vb: Byte()
+  fullName: System.Byte[]
+  fullName.vb: System.Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Reflection.Metadata.SerializationTypeCode.Invalid
+- uid: System.Reflection.Metadata.SerializationTypeCode
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.SerializationTypeCode.yml
+  name: SerializationTypeCode
+  fullName: System.Reflection.Metadata.SerializationTypeCode
+  type: Enum
+- uid: System.Reflection.Metadata.SignatureTypeCode.Invalid
+- uid: System.Reflection.Metadata.SignatureTypeCode
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.SignatureTypeCode.yml
+  name: SignatureTypeCode
+  fullName: System.Reflection.Metadata.SignatureTypeCode
+  type: Enum
+  summary: Represents the type codes that are used in signature encoding.
+- uid: System.Reflection.Metadata.EntityHandle
+  parent: System.Reflection.Metadata
+  isExternal: false
+  href: System.Reflection.Metadata.EntityHandle.yml
+  name: EntityHandle
+  fullName: System.Reflection.Metadata.EntityHandle
+  type: Struct
+  summary: Represents a metadata entity (type reference/definition/specification, method definition, custom attribute, etc.).

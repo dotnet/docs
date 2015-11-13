@@ -11,7 +11,7 @@
       <div class="fixed_header row">
         <form class="toc-filter">
           <span class="glyphicon glyphicon-filter filter-icon"></span>
-          <input type="text" id="toc_filter_input" placeholder="Enter here to filter...">
+          <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
         </form>
       </div>
       <div id="toc" class="toc row">
@@ -19,7 +19,7 @@
         {{#content}}
         <li>
           {{#href}}
-          <a href="{{href}}" name="{{originalHref}}">{{name}}</a>
+          <a href="{{href}}" name="{{originalHref}}" title="{{name}}">{{name}}</a>
           {{/href}}
           {{^href}}
           <a>{{{name}}}</a>
@@ -30,7 +30,7 @@
           {{#items}}
             <li>
               {{#href}}
-              <a href="{{href}}" name="{{originalHref}}">{{name}}</a>
+              <a href="{{href}}" name="{{originalHref}}" title="{{name}}">{{name}}</a>
               {{/href}}
               {{^href}}
               <a>{{name}}</a>
@@ -41,7 +41,7 @@
               {{#items}}
                 <li>
                   {{#href}}
-                  <a href="{{href}}" name="{{originalHref}}">{{name}}</a>
+                  <a href="{{href}}" name="{{originalHref}}" title="{{name}}">{{name}}</a>
                   {{/href}}
                   {{^href}}
                   <a>{{name}}</a>

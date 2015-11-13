@@ -8,6 +8,8 @@ public class Program
 
         Aggregate.CountSample1.MethodSyntaxExample();
 
-        Aggregate.CountSample1.QuerySyntaxExample();   
+        Aggregate.CountSample1.QuerySyntaxExample();
+        
+        Aggregate.CountSample2.Example();
     }
 }

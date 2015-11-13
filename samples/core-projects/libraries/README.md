@@ -1,6 +1,6 @@
 # .NET Core Library Samples
 
-These samples are buildable and runnable projects compatible with the .NET Core rc1 toolchain.
+These samples can be built and run using the .NET Core rc1 toolchain.
 
 They are small and intended to demonstrate how to target and build NuGet packages for different targets.
 

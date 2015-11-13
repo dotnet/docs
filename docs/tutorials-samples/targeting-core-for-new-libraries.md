@@ -10,7 +10,7 @@ You must have .NET Core installed on your machine.  [These instructions](http://
 
 The sections of this document dealing with .NET 4.5 Framework, .NET 4.0 Framework, or Portable Class Libraries (PCLs) require Windows and the .NET Framework installed.  The best way to do this is to [install Visual Studio](https://www.visualstudio.com/en-us/visual-studio-homepage-vs.aspx).  Alternatively, you can [install .NET Framework 4.6](https://www.microsoft.com/en-us/download/details.aspx?id=48130) as a standalone package.  This will contain all the depndencies required for .NET Framework 4.5, 4.0, and any PCLs you may wish to support.
 
-## How do I target .NET Core?
+## How to target .NET Core
 
 For the purposes of building a library, targeting ".NET Core" means targeting the .NET Standard Platform.  To see what that means exactly, see [.NET Platform Standard](https://github.com/dotnet/corefx/blob/master/Documentation/project-docs/standard-platform.md).
 
@@ -52,7 +52,7 @@ You need to pick a version of `dotnetXX` (where `XX` is a version number) to add
     ```
 3. If you care about compatibility with the .NET Framework versions 4.0 or below, or need to support [these .NET 4.5 libraries](LINK), skip to the next section.
 
-## How do I target both .NET Core and .NET Framework?
+## How to target both .NET Core and .NET Framework
 
 **NOTE:** This requires Windows and .NET Framework installed on your machine.  Refer to the [Prerequisites](#Prerequisites) to get dependencies installed.
 
@@ -102,7 +102,7 @@ And now you have the necessary files to publish a NuGet package!
 
 **NOTE:** This assumes your code will compile across *both* .NET Core and .NET Framework.  Read the section on cross-compiling with `#if`s on how to compile the same file differently for each target if you are using features which are unavailable in some of your targets.
 
-## How do I target a Portable Class Library (PCL)?
+## How to target a Portable Class Library (PCL)
 
 **NOTE:** This requires Windows and .NET Framework installed on your machine.  Refer to the [Prerequisites](#Prerequisites) to get dependencies installed.
 
@@ -164,7 +164,7 @@ And now you can publish a NuGet package!
 
 **NOTE:** This assumes your code will compile across *both* .NET Core and .NET Framework.  Read the section on cross-compiling with `#if`s on how to compile the same file differently for each target if you are using features which are unavailable in some of your targets.
 
-## How do I cross-compile for .NET Core and .NET Framework?
+## How to cross-compile for .NET Core and .NET Framework
 
 **NOTE:** This requires Windows and .NET Framework installed on your machine.  Refer to the [Prerequisites](#Prerequisites) to get dependencies installed.
 
@@ -316,3 +316,94 @@ using System.Threading.Tasks;
 ```
 
 And that's it! Because `PORTABLE328` is now recognized by the compiler, and the generated `.dll` which corresponds to PCL Profile 328 will not include `System.Net.Http` or `System.Threading.Tasks`.
+
+## How to test libraries on .NET Core
+
+It's important to be able to test across platforms.  You can do this using [Xunit](http://xunit.github.io/), which is also the testing tool used by .NET Core projects themselves.  Getting a test to work across platforms can be done like this:
+
+1. Create a folder for your test project to live in.  It's best to be consistent with your source folder:
+    
+    ```
+    /src
+       /Library
+    /test
+       /LibraryTests
+    ```
+    
+2. Add a `global.json` file to the root directory of your library.
+
+    ```
+    /src
+       /Library
+    /test
+       /LibraryTests
+    global.json
+    ```
+    
+    And put the name of the folder all of your test projects:
+    
+    ```javascript
+    {
+    	"projects": [
+    		"src", "test"
+    	]
+    }
+    ```
+
+3. Add a new `project.json` file under your test library folder.  Make sure you have the following:
+
+    * A reference to `xunit` version `2.1.0-*`.
+    * A version to `xunit.runner.dnx` version `2.1.0-rc1-*`.
+    * A reference to the library under test (e.g. "Library" if its namespace is `Library`).
+    * A new command called `test` which references `xunit.runner.dnx`.
+
+    An example `project.json` testing the library called "Library" might look like this:
+
+    ```javascript
+    {
+    	"commands": {
+    		"test":"xunit.runner.dnx"
+    	},
+    	"frameworks": {
+    		"dnxcore50":{
+    			"dependencies": {
+    				"Library":"",
+    				"System.Runtime":"4.0.0-rc1-*",
+    				"xunit":"2.1.0",
+    				"xunit.runner.dnx": "2.1.0-rc1-*"
+    			}
+    		}
+    	}
+    }
+    ```
+
+4. Grab the dependencies for the `rc1` version of `xunit.runner.dnx` by opening a command prompt, navigating to the root of your library, and typing the following:
+
+    ```$ dnu resotre -s "https://myget.org/F/xunit"```
+
+5. And then grab all other dependencies across the project:
+
+    ```$ dnu restore```
+
+6. A then navigate to your library project and build it:
+
+    ```
+    $ cd path-to-library-project
+    $ dnu build
+    ```
+
+7. A then navigate to your test project and run tests with `dnx test`:
+
+    ```
+    $ cd path-to-test-project
+    $ dnx test
+    ```
+
+And that's it!  You can now test your library across all platforms using nothing but the command line tools.  To continue testing now that you have everything set up, testing your library is very simple:
+
+1. Make changes to your library.
+2. Build from the command line with `$ dnu build`.
+3. Navigate to your test project.
+4. Run tests from the command line with `$ dnx test`.
+
+Just remember to run `$ dnu restore` from the command line any time you incorporate a new NuGet package and you'll be good to go!

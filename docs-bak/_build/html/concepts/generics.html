@@ -1,0 +1,295 @@
+
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Generic Types (Generics) Overview &mdash; .NET Core Documentation 0.0.1 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+
+  
+    <link rel="top" title=".NET Core Documentation 0.0.1 documentation" href="../index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> .NET Core Documentation
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/index.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">The .NET Primer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials-samples/index.html">Tutorials &amp; Samples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development/index.html">Developing using .NET Core</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../porting/index.html">Porting applications &amp; existing code to .NET Core</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../packaging/index.html">Packaging .NET Core Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deployment/index.html">Deploying .NET Core applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nuget/index.html">.NET Package Manager (NuGet)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../languages/index.html">Programming languages on the .NET Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bcl/index.html">Base Class Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../async/async-index.html">Asynchronous Programming with .NET</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">Advanced topics</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">.NET Core Documentation</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+    <li>Generic Types (Generics) Overview</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/concepts/generics.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <noscript><img alt="" width="1" height="1" src="https://c.microsoft.com/trans_pixel.aspx"/></noscript><div class="section" id="generic-types-generics-overview">
+<h1>Generic Types (Generics) Overview<a class="headerlink" href="#generic-types-generics-overview" title="Permalink to this headline">¶</a></h1>
+<p>By <a class="reference external" href="https://github.com/kuhlenh">Kasey Uhlenhuth</a></p>
+<p>We use generics all the time in C#, whether implicitly of explicitly. When you use LINQ in C#, did you ever notice that you are working with IEnumerable&lt;T&gt;? Or if you every saw an online sample of a &#8220;generic repository&#8221; for talking to databases using Entity Framework, did you see that most methods return IQueryable&lt;T&gt;? You may have wondered what the <strong>T</strong> is in these examples and why is it in there?</p>
+<p>First introduced to the .NET Framework 2.0, generics involved changes to both the C# language and the Common Language Runtime (CLR). <strong>Generics</strong> are essentially a &#8220;code template&#8221; that allows developers to define <a class="reference external" href="https://msdn.microsoft.com/en-us/library/hbzz1a9a%28v=vs.110%29.aspx">type-safe</a> data structures without committing to an actual data type. For example, <code class="docutils literal"><span class="pre">List&lt;T&gt;</span></code> is a <a class="reference external" href="https://msdn.microsoft.com/en-us/library/System.Collections.Generic(v=vs.110).aspx">Generic Collection</a> that can be declared and used with any type: <code class="docutils literal"><span class="pre">List&lt;int&gt;</span></code>, <code class="docutils literal"><span class="pre">List&lt;string&gt;</span></code>, <code class="docutils literal"><span class="pre">List&lt;Person&gt;</span></code>, etc.</p>
+<p>So, what&#8217;s the point? Why are generics useful? In order to understand this, we need to take a look at a specific class before and after adding generics. Let&#8217;s look at the <code class="docutils literal"><span class="pre">ArrayList</span></code>. In C# 1.0, the <code class="docutils literal"><span class="pre">ArrayList</span></code> elements were of type <code class="docutils literal"><span class="pre">object</span></code>. This meant that any element that was added was silently converted into an <code class="docutils literal"><span class="pre">object</span></code>; same thing happens on reading the elements from the list (this process is known as <a class="reference external" href="https://msdn.microsoft.com/en-us/library/yz2be5wk.aspx">boxing</a> and unboxing respectively). Boxing and unboxing have an impact of performance. More than that, however, there is no way to tell at compile time what is the actual type of the data in the list. This makes for some fragile code. Generics solve this problem by providing additional information the type of data each instance of list will contain. Put simply, you can only add integers to <code class="docutils literal"><span class="pre">List&lt;int&gt;</span></code> and only add Persons to <code class="docutils literal"><span class="pre">List&lt;Person&gt;</span></code>, etc.</p>
+<p>Generics are also available at runtime, or <strong>reified</strong>. This means the
+runtime knows what type of data structure you are using and can store it
+in memory more efficiently.</p>
+<p>Here is a small program that illustrates the efficiency of knowing the
+data structure type at runtime:</p>
+<div class="highlight-c#"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27</pre></div></td><td class="code"><div class="highlight"><pre>  using System;
+  using System.Collections;
+  using System.Collections.Generic;
+  using System.Diagnostics;
+
+  namespace GenericsExample {
+    class Program {
+      static void Main(string[] args) {
+        //generic list
+        List ListGeneric = new List { 5, 9, 1, 4 };
+        //non-generic list
+        ArrayList ListNonGeneric = new ArrayList { 5, 9, 1, 4 };
+        // timer for generic list sort
+        Stopwatch s = Stopwatch.StartNew();
+        ListGeneric.Sort();
+        s.Stop();
+        Console.WriteLine($&quot;Generic Sort: {ListGeneric}  \n Time taken: {s.Elapsed.TotalMilliseconds}ms&quot;);
+
+        //timer for non-generic list sort
+        Stopwatch s2 = Stopwatch.StartNew();
+        ListNonGeneric.Sort();
+        s2.Stop();
+        Console.WriteLine($&quot;Non-Generic Sort: {ListNonGeneric}  \n Time taken: {s2.Elapsed.TotalMilliseconds}ms&quot;);
+        Console.ReadLine();
+      }
+    }
+  }
+</pre></div>
+</td></tr></table></div>
+<p>This program yields the following output:</p>
+<div class="highlight-console"><div class="highlight"><pre><span class="go">Generic Sort: System.Collections.Generic.List\`1[System.Int32] Time taken: 0.0789ms</span>
+<span class="go">Non-Generic Sort: System.Collections.ArrayList Time taken: 2.4324ms</span>
+</pre></div>
+</div>
+<p>The first thing you notice here is that sorting the generic list is
+significantly faster than for the non-generic list. You might also
+notice that the type for the generic list is distinct ([System.Int32])
+whereas the type for the non-generic list is generalized. Because the
+runtime knows the generic <code class="docutils literal"><span class="pre">List&lt;int&gt;</span></code> is of type int, it can store the
+list elements in an underlying integer array in memory while the
+non-generic <code class="docutils literal"><span class="pre">ArrayList</span></code> has to cast each list element as an object as
+stored in an object array in memory. As shown through this example, the
+extra castings take up time and slow down the list sort.</p>
+<p>The last useful thing about the runtime knowing the type of your generic
+is a better debugging experience. When you are debugging a generic in
+C#, you know what type each element is in your data structure. Without
+generics, you would have no idea what type each element was.</p>
+<div class="section" id="further-reading-and-resources">
+<h2>Further reading and resources<a class="headerlink" href="#further-reading-and-resources" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://msdn.microsoft.com/en-us/library/ms379564(v=vs.80).aspx">An Introduction to C# Generics</a></li>
+<li><a class="reference external" href="https://msdn.microsoft.com/en-us/library/512aeb7t.aspx">C# Programming Guide - Generics</a></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Microsoft.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

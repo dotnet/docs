@@ -1,0 +1,322 @@
+items:
+- uid: System.ConsoleCancelEventArgs
+  id: ConsoleCancelEventArgs
+  parent: System
+  children:
+  - System.ConsoleCancelEventArgs.Cancel
+  - System.ConsoleCancelEventArgs.SpecialKey
+  href: System.ConsoleCancelEventArgs.yml
+  name: ConsoleCancelEventArgs
+  fullName: System.ConsoleCancelEventArgs
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/ConsoleCancelEventArgs.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/ConsoleCancelEventArgs.cs
+    startLine: 20
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Provides data for the @'System.Console.CancelKeyPress' event. This class cannot be inherited.
+  syntax:
+    content: 'public sealed class ConsoleCancelEventArgs : EventArgs'
+    content.vb: Public NotInheritable Class ConsoleCancelEventArgs Inherits EventArgs
+  inheritance:
+  - System.Object
+  - System.EventArgs
+  inheritedMembers:
+  - System.EventArgs.Empty
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.ConsoleCancelEventArgs.Cancel
+  id: Cancel
+  parent: System.ConsoleCancelEventArgs
+  href: System.ConsoleCancelEventArgs.yml
+  name: Cancel
+  fullName: System.ConsoleCancelEventArgs.Cancel
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleCancelEventArgs.cs
+    startLine: 34
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets or sets a value that indicates whether simultaneously pressing the @'System.ConsoleModifiers.Control' modifier key and the @'System.ConsoleKey.C' console key (Ctrl+C) or the Ctrl+Break keys terminates the current process. The default is false, which terminates the current process.
+  syntax:
+    content: public bool Cancel { get; set; }
+    content.vb: Public Property Cancel As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the current process should resume when the event handler concludes; false if the current process should terminate. The default value is false; the current process terminates when the event handler returns. If true, the current process continues.
+- uid: System.ConsoleCancelEventArgs.SpecialKey
+  id: SpecialKey
+  parent: System.ConsoleCancelEventArgs
+  href: System.ConsoleCancelEventArgs.yml
+  name: SpecialKey
+  fullName: System.ConsoleCancelEventArgs.SpecialKey
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleCancelEventArgs.cs
+    startLine: 41
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the combination of modifier and console keys that interrupted the current process.
+  syntax:
+    content: public ConsoleSpecialKey SpecialKey { get; }
+    content.vb: Public ReadOnly Property SpecialKey As ConsoleSpecialKey
+    parameters: []
+    return:
+      type: System.ConsoleSpecialKey
+      description: One of the enumeration values that specifies the key combination that interrupted the current process. There is no default value.
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.EventArgs
+  parent: System
+  isExternal: true
+  name: EventArgs
+  fullName: System.EventArgs
+- uid: System.EventArgs.Empty
+  parent: System.EventArgs
+  isExternal: true
+  name: Empty
+  fullName: System.EventArgs.Empty
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.ConsoleSpecialKey
+  parent: System
+  isExternal: false
+  href: System.ConsoleSpecialKey.yml
+  name: ConsoleSpecialKey
+  fullName: System.ConsoleSpecialKey
+  type: Enum

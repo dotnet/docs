@@ -1,0 +1,449 @@
+items:
+- uid: System.Globalization.SortKey
+  id: SortKey
+  parent: System.Globalization
+  children:
+  - System.Globalization.SortKey.Compare(System.Globalization.SortKey,System.Globalization.SortKey)
+  - System.Globalization.SortKey.Equals(System.Object)
+  - System.Globalization.SortKey.GetHashCode
+  - System.Globalization.SortKey.KeyData
+  - System.Globalization.SortKey.OriginalString
+  - System.Globalization.SortKey.ToString
+  href: System.Globalization.SortKey.yml
+  name: SortKey
+  fullName: System.Globalization.SortKey
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Globalization/SortKey.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Globalization/SortKey.cs
+    startLine: 19
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Represents the result of mapping a string to its sort key.
+  syntax:
+    content: public class SortKey
+    content.vb: Public Class SortKey
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Globalization.SortKey.OriginalString
+  id: OriginalString
+  parent: System.Globalization.SortKey
+  href: System.Globalization.SortKey.yml
+  name: OriginalString
+  fullName: System.Globalization.SortKey.OriginalString
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/SortKey.cs
+    startLine: 83
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Gets the original string used to create the current @'System.Globalization.SortKey' object.
+  syntax:
+    content: public virtual string OriginalString { get; }
+    content.vb: Public Overridable ReadOnly Property OriginalString As String
+    parameters: []
+    return:
+      type: System.String
+      description: The original string used to create the current @'System.Globalization.SortKey' object.
+- uid: System.Globalization.SortKey.KeyData
+  id: KeyData
+  parent: System.Globalization.SortKey
+  href: System.Globalization.SortKey.yml
+  name: KeyData
+  fullName: System.Globalization.SortKey.KeyData
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/SortKey.cs
+    startLine: 99
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Gets the byte array representing the current @'System.Globalization.SortKey' object.
+  syntax:
+    content: public virtual byte[] KeyData { get; }
+    content.vb: Public Overridable ReadOnly Property KeyData As Byte()
+    parameters: []
+    return:
+      type: System.Byte[]
+      description: A byte array representing the current @'System.Globalization.SortKey' object.
+- uid: System.Globalization.SortKey.Compare(System.Globalization.SortKey,System.Globalization.SortKey)
+  id: Compare(System.Globalization.SortKey,System.Globalization.SortKey)
+  parent: System.Globalization.SortKey
+  href: System.Globalization.SortKey.yml
+  name: Compare(SortKey, SortKey)
+  fullName: System.Globalization.SortKey.Compare(System.Globalization.SortKey, System.Globalization.SortKey)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/SortKey.cs
+    startLine: 116
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Compares two sort keys.
+  syntax:
+    content: public static int Compare(SortKey sortkey1, SortKey sortkey2)
+    content.vb: Public Shared Function Compare(sortkey1 As SortKey, sortkey2 As SortKey) As Integer
+    parameters:
+    - id: sortkey1
+      type: System.Globalization.SortKey
+      description: The first sort key to compare.
+    - id: sortkey2
+      type: System.Globalization.SortKey
+      description: The second sort key to compare.
+    return:
+      type: System.Int32
+      description: A signed integer that indicates the relationship between *sortkey1* and *sortkey2*.Value Condition Less than zero *sortkey1* is less than *sortkey2*. Zero *sortkey1* is equal to *sortkey2*. Greater than zero *sortkey1* is greater than *sortkey2*.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*sortkey1* or *sortkey2* is null.'
+- uid: System.Globalization.SortKey.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Globalization.SortKey
+  href: System.Globalization.SortKey.yml
+  name: Equals(Object)
+  fullName: System.Globalization.SortKey.Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/SortKey.cs
+    startLine: 163
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Determines whether the specified object is equal to the current @'System.Globalization.SortKey' object.
+  syntax:
+    content: public override bool Equals(object value)
+    content.vb: Public Overrides Function Equals(value As Object) As Boolean
+    parameters:
+    - id: value
+      type: System.Object
+      description: The object to compare with the current @'System.Globalization.SortKey' object.
+    return:
+      type: System.Boolean
+      description: true if the *value* parameter is equal to the current @'System.Globalization.SortKey' object; otherwise, false.
+  overridden: System.Object.Equals(System.Object)
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*value* is null.'
+- uid: System.Globalization.SortKey.GetHashCode
+  id: GetHashCode
+  parent: System.Globalization.SortKey
+  href: System.Globalization.SortKey.yml
+  name: GetHashCode()
+  fullName: System.Globalization.SortKey.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/SortKey.cs
+    startLine: 185
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Serves as a hash function for the current @'System.Globalization.SortKey' object that is suitable for hashing algorithms and data structures such as a hash table.
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: A hash code for the current @'System.Globalization.SortKey' object.
+  overridden: System.Object.GetHashCode
+- uid: System.Globalization.SortKey.ToString
+  id: ToString
+  parent: System.Globalization.SortKey
+  href: System.Globalization.SortKey.yml
+  name: ToString()
+  fullName: System.Globalization.SortKey.ToString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Globalization/SortKey.cs
+    startLine: 200
+  assemblies:
+  - mscorlib
+  namespace: System.Globalization
+  summary: Returns a string that represents the current @'System.Globalization.SortKey' object.
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+      description: A string that represents the current @'System.Globalization.SortKey' object.
+  overridden: System.Object.ToString
+references:
+- uid: System.Globalization
+  isExternal: false
+  name: System.Globalization
+  fullName: System.Globalization
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  name.vb: Byte()
+  fullName: System.Byte[]
+  fullName.vb: System.Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Globalization.SortKey
+  parent: System.Globalization
+  isExternal: false
+  href: System.Globalization.SortKey.yml
+  name: SortKey
+  fullName: System.Globalization.SortKey
+  type: Class
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )

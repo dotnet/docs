@@ -1,0 +1,499 @@
+items:
+- uid: System.Diagnostics.Contracts.ContractFailedEventArgs
+  id: ContractFailedEventArgs
+  parent: System.Diagnostics.Contracts
+  children:
+  - System.Diagnostics.Contracts.ContractFailedEventArgs.#ctor(System.Diagnostics.Contracts.ContractFailureKind,System.String,System.String,System.Exception)
+  - System.Diagnostics.Contracts.ContractFailedEventArgs.Condition
+  - System.Diagnostics.Contracts.ContractFailedEventArgs.FailureKind
+  - System.Diagnostics.Contracts.ContractFailedEventArgs.Handled
+  - System.Diagnostics.Contracts.ContractFailedEventArgs.Message
+  - System.Diagnostics.Contracts.ContractFailedEventArgs.OriginalException
+  - System.Diagnostics.Contracts.ContractFailedEventArgs.SetHandled
+  - System.Diagnostics.Contracts.ContractFailedEventArgs.SetUnwind
+  - System.Diagnostics.Contracts.ContractFailedEventArgs.Unwind
+  href: System.Diagnostics.Contracts.ContractFailedEventArgs.yml
+  name: ContractFailedEventArgs
+  fullName: System.Diagnostics.Contracts.ContractFailedEventArgs
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Diagnostics/Contracts/ContractsBCL.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Diagnostics/Contracts/ContractsBCL.cs
+    startLine: 143
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Contracts
+  summary: Provides methods and data for the @'System.Diagnostics.Contracts.Contract.ContractFailed' event.
+  syntax:
+    content: 'public sealed class ContractFailedEventArgs : EventArgs'
+    content.vb: Public NotInheritable Class ContractFailedEventArgs Inherits EventArgs
+  inheritance:
+  - System.Object
+  - System.EventArgs
+  inheritedMembers:
+  - System.EventArgs.Empty
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Diagnostics.Contracts.ContractFailedEventArgs.#ctor(System.Diagnostics.Contracts.ContractFailureKind,System.String,System.String,System.Exception)
+  id: '#ctor(System.Diagnostics.Contracts.ContractFailureKind,System.String,System.String,System.Exception)'
+  parent: System.Diagnostics.Contracts.ContractFailedEventArgs
+  href: System.Diagnostics.Contracts.ContractFailedEventArgs.yml
+  name: ContractFailedEventArgs(ContractFailureKind, String, String, Exception)
+  fullName: System.Diagnostics.Contracts.ContractFailedEventArgs.ContractFailedEventArgs(System.Diagnostics.Contracts.ContractFailureKind, System.String, System.String, System.Exception)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Contracts/ContractsBCL.cs
+    startLine: 155
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Contracts
+  summary: Provides data for the @'System.Diagnostics.Contracts.Contract.ContractFailed' event.
+  syntax:
+    content: public ContractFailedEventArgs(ContractFailureKind failureKind, string message, string condition, Exception originalException)
+    content.vb: Public Sub New(failureKind As ContractFailureKind, message As String, condition As String, originalException As Exception)
+    parameters:
+    - id: failureKind
+      type: System.Diagnostics.Contracts.ContractFailureKind
+      description: One of the enumeration values that specifies the contract that failed.
+    - id: message
+      type: System.String
+      description: The message for the event.
+    - id: condition
+      type: System.String
+      description: The condition for the event.
+    - id: originalException
+      type: System.Exception
+      description: The exception that caused the event.
+- uid: System.Diagnostics.Contracts.ContractFailedEventArgs.Message
+  id: Message
+  parent: System.Diagnostics.Contracts.ContractFailedEventArgs
+  href: System.Diagnostics.Contracts.ContractFailedEventArgs.yml
+  name: Message
+  fullName: System.Diagnostics.Contracts.ContractFailedEventArgs.Message
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Contracts/ContractsBCL.cs
+    startLine: 166
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Contracts
+  summary: Gets the message that describes the @'System.Diagnostics.Contracts.Contract.ContractFailed' event.
+  syntax:
+    content: public string Message { get; }
+    content.vb: Public ReadOnly Property Message As String
+    parameters: []
+    return:
+      type: System.String
+      description: The message that describes the event.
+- uid: System.Diagnostics.Contracts.ContractFailedEventArgs.Condition
+  id: Condition
+  parent: System.Diagnostics.Contracts.ContractFailedEventArgs
+  href: System.Diagnostics.Contracts.ContractFailedEventArgs.yml
+  name: Condition
+  fullName: System.Diagnostics.Contracts.ContractFailedEventArgs.Condition
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Contracts/ContractsBCL.cs
+    startLine: 167
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Contracts
+  summary: Gets the condition for the failure of the contract.
+  syntax:
+    content: public string Condition { get; }
+    content.vb: Public ReadOnly Property Condition As String
+    parameters: []
+    return:
+      type: System.String
+      description: The condition for the failure.
+- uid: System.Diagnostics.Contracts.ContractFailedEventArgs.FailureKind
+  id: FailureKind
+  parent: System.Diagnostics.Contracts.ContractFailedEventArgs
+  href: System.Diagnostics.Contracts.ContractFailedEventArgs.yml
+  name: FailureKind
+  fullName: System.Diagnostics.Contracts.ContractFailedEventArgs.FailureKind
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Contracts/ContractsBCL.cs
+    startLine: 168
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Contracts
+  summary: Gets the type of contract that failed.
+  syntax:
+    content: public ContractFailureKind FailureKind { get; }
+    content.vb: Public ReadOnly Property FailureKind As ContractFailureKind
+    parameters: []
+    return:
+      type: System.Diagnostics.Contracts.ContractFailureKind
+      description: One of the enumeration values that specifies the type of contract that failed.
+- uid: System.Diagnostics.Contracts.ContractFailedEventArgs.OriginalException
+  id: OriginalException
+  parent: System.Diagnostics.Contracts.ContractFailedEventArgs
+  href: System.Diagnostics.Contracts.ContractFailedEventArgs.yml
+  name: OriginalException
+  fullName: System.Diagnostics.Contracts.ContractFailedEventArgs.OriginalException
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Contracts/ContractsBCL.cs
+    startLine: 169
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Contracts
+  summary: Gets the original exception that caused the @'System.Diagnostics.Contracts.Contract.ContractFailed' event.
+  syntax:
+    content: public Exception OriginalException { get; }
+    content.vb: Public ReadOnly Property OriginalException As Exception
+    parameters: []
+    return:
+      type: System.Exception
+      description: The exception that caused the event.
+- uid: System.Diagnostics.Contracts.ContractFailedEventArgs.Handled
+  id: Handled
+  parent: System.Diagnostics.Contracts.ContractFailedEventArgs
+  href: System.Diagnostics.Contracts.ContractFailedEventArgs.yml
+  name: Handled
+  fullName: System.Diagnostics.Contracts.ContractFailedEventArgs.Handled
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Contracts/ContractsBCL.cs
+    startLine: 172
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Contracts
+  summary: Indicates whether the @'System.Diagnostics.Contracts.Contract.ContractFailed' event has been handled.
+  syntax:
+    content: public bool Handled { get; }
+    content.vb: Public ReadOnly Property Handled As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the event has been handled; otherwise, false.
+- uid: System.Diagnostics.Contracts.ContractFailedEventArgs.SetHandled
+  id: SetHandled
+  parent: System.Diagnostics.Contracts.ContractFailedEventArgs
+  href: System.Diagnostics.Contracts.ContractFailedEventArgs.yml
+  name: SetHandled()
+  fullName: System.Diagnostics.Contracts.ContractFailedEventArgs.SetHandled()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Contracts/ContractsBCL.cs
+    startLine: 177
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Contracts
+  summary: Sets the @'System.Diagnostics.Contracts.ContractFailedEventArgs.Handled' property to true.
+  syntax:
+    content: public void SetHandled()
+    content.vb: Public Sub SetHandled
+- uid: System.Diagnostics.Contracts.ContractFailedEventArgs.Unwind
+  id: Unwind
+  parent: System.Diagnostics.Contracts.ContractFailedEventArgs
+  href: System.Diagnostics.Contracts.ContractFailedEventArgs.yml
+  name: Unwind
+  fullName: System.Diagnostics.Contracts.ContractFailedEventArgs.Unwind
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Contracts/ContractsBCL.cs
+    startLine: 187
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Contracts
+  summary: Indicates whether the code contract escalation policy should be applied.
+  syntax:
+    content: public bool Unwind { get; }
+    content.vb: Public ReadOnly Property Unwind As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true to apply the escalation policy; otherwise, false. The default is false.
+- uid: System.Diagnostics.Contracts.ContractFailedEventArgs.SetUnwind
+  id: SetUnwind
+  parent: System.Diagnostics.Contracts.ContractFailedEventArgs
+  href: System.Diagnostics.Contracts.ContractFailedEventArgs.yml
+  name: SetUnwind()
+  fullName: System.Diagnostics.Contracts.ContractFailedEventArgs.SetUnwind()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Contracts/ContractsBCL.cs
+    startLine: 192
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Contracts
+  summary: Sets the @'System.Diagnostics.Contracts.ContractFailedEventArgs.Unwind' property to true.
+  syntax:
+    content: public void SetUnwind()
+    content.vb: Public Sub SetUnwind
+references:
+- uid: System.Diagnostics.Contracts
+  isExternal: false
+  name: System.Diagnostics.Contracts
+  fullName: System.Diagnostics.Contracts
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.EventArgs
+  parent: System
+  isExternal: true
+  name: EventArgs
+  fullName: System.EventArgs
+- uid: System.EventArgs.Empty
+  parent: System.EventArgs
+  isExternal: true
+  name: Empty
+  fullName: System.EventArgs.Empty
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Diagnostics.Contracts.ContractFailureKind
+  parent: System.Diagnostics.Contracts
+  isExternal: false
+  href: System.Diagnostics.Contracts.ContractFailureKind.yml
+  name: ContractFailureKind
+  fullName: System.Diagnostics.Contracts.ContractFailureKind
+  type: Enum
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  fullName: System.Exception
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean

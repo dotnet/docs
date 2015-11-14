@@ -1,0 +1,2332 @@
+items:
+- uid: System.IO.Compression.DeflateStream
+  id: DeflateStream
+  parent: System.IO.Compression
+  children:
+  - System.IO.Compression.DeflateStream.#ctor(System.IO.Stream,System.IO.Compression.CompressionLevel)
+  - System.IO.Compression.DeflateStream.#ctor(System.IO.Stream,System.IO.Compression.CompressionLevel,System.Boolean)
+  - System.IO.Compression.DeflateStream.#ctor(System.IO.Stream,System.IO.Compression.CompressionMode)
+  - System.IO.Compression.DeflateStream.#ctor(System.IO.Stream,System.IO.Compression.CompressionMode,System.Boolean)
+  - System.IO.Compression.DeflateStream.BaseStream
+  - System.IO.Compression.DeflateStream.CanRead
+  - System.IO.Compression.DeflateStream.CanSeek
+  - System.IO.Compression.DeflateStream.CanWrite
+  - System.IO.Compression.DeflateStream.Dispose(System.Boolean)
+  - System.IO.Compression.DeflateStream.Flush
+  - System.IO.Compression.DeflateStream.FlushAsync(System.Threading.CancellationToken)
+  - System.IO.Compression.DeflateStream.Length
+  - System.IO.Compression.DeflateStream.Position
+  - System.IO.Compression.DeflateStream.Read(System.Byte[],System.Int32,System.Int32)
+  - System.IO.Compression.DeflateStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  - System.IO.Compression.DeflateStream.Seek(System.Int64,System.IO.SeekOrigin)
+  - System.IO.Compression.DeflateStream.SetLength(System.Int64)
+  - System.IO.Compression.DeflateStream.Write(System.Byte[],System.Int32,System.Int32)
+  - System.IO.Compression.DeflateStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  href: System.IO.Compression.DeflateStream.yml
+  name: DeflateStream
+  fullName: System.IO.Compression.DeflateStream
+  type: Class
+  source:
+    remote:
+      path: src/System.IO.Compression/src/System/IO/Compression/DeflateStream.Windows.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.IO.Compression/src/System/IO/Compression/DeflateStream.Windows.cs
+    startLine: 5
+  assemblies:
+  - System.IO.Compression
+  namespace: System.IO.Compression
+  summary: Provides methods and properties for compressing and decompressing streams by using the Deflate algorithm.
+  syntax:
+    content: 'public class DeflateStream : Stream, IDisposable'
+    content.vb: Public Class DeflateStream Inherits Stream Implements IDisposable
+  inheritance:
+  - System.Object
+  - System.MarshalByRefObject
+  - System.IO.Stream
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.IO.Stream.Null
+  - System.IO.Stream.CopyToAsync(System.IO.Stream)
+  - System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32)
+  - System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)
+  - System.IO.Stream.CopyTo(System.IO.Stream)
+  - System.IO.Stream.CopyTo(System.IO.Stream,System.Int32)
+  - System.IO.Stream.Close
+  - System.IO.Stream.Dispose
+  - System.IO.Stream.FlushAsync
+  - System.IO.Stream.CreateWaitHandle
+  - System.IO.Stream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+  - System.IO.Stream.EndRead(System.IAsyncResult)
+  - System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)
+  - System.IO.Stream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+  - System.IO.Stream.EndWrite(System.IAsyncResult)
+  - System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)
+  - System.IO.Stream.ReadByte
+  - System.IO.Stream.WriteByte(System.Byte)
+  - System.IO.Stream.Synchronized(System.IO.Stream)
+  - System.IO.Stream.ObjectInvariant
+  - System.IO.Stream.CanTimeout
+  - System.IO.Stream.ReadTimeout
+  - System.IO.Stream.WriteTimeout
+  - System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  - System.MarshalByRefObject.GetLifetimeService
+  - System.MarshalByRefObject.InitializeLifetimeService
+  - System.MarshalByRefObject.CreateObjRef(System.Type)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.IO.Compression.DeflateStream.#ctor(System.IO.Stream,System.IO.Compression.CompressionMode)
+  id: '#ctor(System.IO.Stream,System.IO.Compression.CompressionMode)'
+  parent: System.IO.Compression.DeflateStream
+  href: System.IO.Compression.DeflateStream.yml
+  name: DeflateStream(Stream, CompressionMode)
+  fullName: System.IO.Compression.DeflateStream.DeflateStream(System.IO.Stream, System.IO.Compression.CompressionMode)
+  type: Constructor
+  source:
+    remote: &o0
+      path: src/System.IO.Compression/src/System/IO/Compression/DeflateStream.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.IO.Compression/src/System/IO/Compression/DeflateStream.cs
+    startLine: 35
+  assemblies:
+  - System.IO.Compression
+  namespace: System.IO.Compression
+  summary: Initializes a new instance of the @'System.IO.Compression.DeflateStream' class by using the specified stream and compression mode.
+  syntax:
+    content: public DeflateStream(Stream stream, CompressionMode mode)
+    content.vb: Public Sub New(stream As Stream, mode As CompressionMode)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: The stream to compress or decompress.
+    - id: mode
+      type: System.IO.Compression.CompressionMode
+      description: One of the enumeration values that indicates whether to compress or decompress the stream.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*stream* is null.'
+  - type: System.ArgumentException
+    description: '*mode* is not a valid @''System.IO.Compression.CompressionMode'' value.-or-@''System.IO.Compression.CompressionMode'' is @''System.IO.Compression.CompressionMode.Compress''  and @''System.IO.Stream.CanWrite'' is false.-or-@''System.IO.Compression.CompressionMode'' is @''System.IO.Compression.CompressionMode.Decompress''  and @''System.IO.Stream.CanRead'' is false.'
+- uid: System.IO.Compression.DeflateStream.#ctor(System.IO.Stream,System.IO.Compression.CompressionMode,System.Boolean)
+  id: '#ctor(System.IO.Stream,System.IO.Compression.CompressionMode,System.Boolean)'
+  parent: System.IO.Compression.DeflateStream
+  href: System.IO.Compression.DeflateStream.yml
+  name: DeflateStream(Stream, CompressionMode, Boolean)
+  fullName: System.IO.Compression.DeflateStream.DeflateStream(System.IO.Stream, System.IO.Compression.CompressionMode, System.Boolean)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.IO.Compression/src/System/IO/Compression/DeflateStream.cs
+    startLine: 40
+  assemblies:
+  - System.IO.Compression
+  namespace: System.IO.Compression
+  summary: Initializes a new instance of the @'System.IO.Compression.DeflateStream' class by using the specified stream and compression mode, and optionally leaves the stream open.
+  syntax:
+    content: public DeflateStream(Stream stream, CompressionMode mode, bool leaveOpen)
+    content.vb: Public Sub New(stream As Stream, mode As CompressionMode, leaveOpen As Boolean)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: The stream to compress or decompress.
+    - id: mode
+      type: System.IO.Compression.CompressionMode
+      description: One of the enumeration values that indicates whether to compress or decompress the stream.
+    - id: leaveOpen
+      type: System.Boolean
+      description: true to leave the stream open after disposing the @'System.IO.Compression.DeflateStream' object; otherwise, false.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*stream* is null.'
+  - type: System.ArgumentException
+    description: '*mode* is not a valid @''System.IO.Compression.CompressionMode'' value.-or-@''System.IO.Compression.CompressionMode'' is @''System.IO.Compression.CompressionMode.Compress''  and @''System.IO.Stream.CanWrite'' is false.-or-@''System.IO.Compression.CompressionMode'' is @''System.IO.Compression.CompressionMode.Decompress''  and @''System.IO.Stream.CanRead'' is false.'
+- uid: System.IO.Compression.DeflateStream.#ctor(System.IO.Stream,System.IO.Compression.CompressionLevel)
+  id: '#ctor(System.IO.Stream,System.IO.Compression.CompressionLevel)'
+  parent: System.IO.Compression.DeflateStream
+  href: System.IO.Compression.DeflateStream.yml
+  name: DeflateStream(Stream, CompressionLevel)
+  fullName: System.IO.Compression.DeflateStream.DeflateStream(System.IO.Stream, System.IO.Compression.CompressionLevel)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.IO.Compression/src/System/IO/Compression/DeflateStream.cs
+    startLine: 74
+  assemblies:
+  - System.IO.Compression
+  namespace: System.IO.Compression
+  summary: Initializes a new instance of the @'System.IO.Compression.DeflateStream' class by using the specified stream and compression level.
+  syntax:
+    content: public DeflateStream(Stream stream, CompressionLevel compressionLevel)
+    content.vb: Public Sub New(stream As Stream, compressionLevel As CompressionLevel)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: The stream to compress.
+    - id: compressionLevel
+      type: System.IO.Compression.CompressionLevel
+      description: One of the enumeration values that indicates whether to emphasize speed or compression efficiency when compressing the stream.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*stream* is null.'
+  - type: System.ArgumentException
+    description: The stream does not support write operations such as compression. (The @'System.IO.Stream.CanWrite' property on the stream object is false.)
+- uid: System.IO.Compression.DeflateStream.#ctor(System.IO.Stream,System.IO.Compression.CompressionLevel,System.Boolean)
+  id: '#ctor(System.IO.Stream,System.IO.Compression.CompressionLevel,System.Boolean)'
+  parent: System.IO.Compression.DeflateStream
+  href: System.IO.Compression.DeflateStream.yml
+  name: DeflateStream(Stream, CompressionLevel, Boolean)
+  fullName: System.IO.Compression.DeflateStream.DeflateStream(System.IO.Stream, System.IO.Compression.CompressionLevel, System.Boolean)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.IO.Compression/src/System/IO/Compression/DeflateStream.cs
+    startLine: 81
+  assemblies:
+  - System.IO.Compression
+  namespace: System.IO.Compression
+  summary: Initializes a new instance of the @'System.IO.Compression.DeflateStream' class by using the specified stream and compression level, and optionally leaves the stream open.
+  syntax:
+    content: public DeflateStream(Stream stream, CompressionLevel compressionLevel, bool leaveOpen)
+    content.vb: Public Sub New(stream As Stream, compressionLevel As CompressionLevel, leaveOpen As Boolean)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: The stream to compress.
+    - id: compressionLevel
+      type: System.IO.Compression.CompressionLevel
+      description: One of the enumeration values that indicates whether to emphasize speed or compression efficiency when compressing the stream.
+    - id: leaveOpen
+      type: System.Boolean
+      description: true to leave the stream object open after disposing the @'System.IO.Compression.DeflateStream' object; otherwise, false.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*stream* is null.'
+  - type: System.ArgumentException
+    description: The stream does not support write operations such as compression. (The @'System.IO.Stream.CanWrite' property on the stream object is false.)
+- uid: System.IO.Compression.DeflateStream.BaseStream
+  id: BaseStream
+  parent: System.IO.Compression.DeflateStream
+  href: System.IO.Compression.DeflateStream.yml
+  name: BaseStream
+  fullName: System.IO.Compression.DeflateStream.BaseStream
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.IO.Compression/src/System/IO/Compression/DeflateStream.cs
+    startLine: 144
+  assemblies:
+  - System.IO.Compression
+  namespace: System.IO.Compression
+  summary: Gets a reference to the underlying stream.
+  syntax:
+    content: public Stream BaseStream { get; }
+    content.vb: Public ReadOnly Property BaseStream As Stream
+    parameters: []
+    return:
+      type: System.IO.Stream
+      description: A stream object that represents the underlying stream.
+  exceptions:
+  - type: System.ObjectDisposedException
+    description: The underlying stream is closed.
+- uid: System.IO.Compression.DeflateStream.CanRead
+  id: CanRead
+  parent: System.IO.Compression.DeflateStream
+  href: System.IO.Compression.DeflateStream.yml
+  name: CanRead
+  fullName: System.IO.Compression.DeflateStream.CanRead
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.IO.Compression/src/System/IO/Compression/DeflateStream.cs
+    startLine: 152
+  assemblies:
+  - System.IO.Compression
+  namespace: System.IO.Compression
+  summary: Gets a value indicating whether the stream supports reading while decompressing a file.
+  syntax:
+    content: public override bool CanRead { get; }
+    content.vb: Public Overrides ReadOnly Property CanRead As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the @'System.IO.Compression.CompressionMode' value is Decompress, and the underlying stream is opened and supports reading; otherwise, false.
+  overridden: System.IO.Stream.CanRead
+- uid: System.IO.Compression.DeflateStream.CanWrite
+  id: CanWrite
+  parent: System.IO.Compression.DeflateStream
+  href: System.IO.Compression.DeflateStream.yml
+  name: CanWrite
+  fullName: System.IO.Compression.DeflateStream.CanWrite
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.IO.Compression/src/System/IO/Compression/DeflateStream.cs
+    startLine: 165
+  assemblies:
+  - System.IO.Compression
+  namespace: System.IO.Compression
+  summary: Gets a value indicating whether the stream supports writing.
+  syntax:
+    content: public override bool CanWrite { get; }
+    content.vb: Public Overrides ReadOnly Property CanWrite As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the @'System.IO.Compression.CompressionMode' value is Compress, and the underlying stream supports writing and is not closed; otherwise, false.
+  overridden: System.IO.Stream.CanWrite
+- uid: System.IO.Compression.DeflateStream.CanSeek
+  id: CanSeek
+  parent: System.IO.Compression.DeflateStream
+  href: System.IO.Compression.DeflateStream.yml
+  name: CanSeek
+  fullName: System.IO.Compression.DeflateStream.CanSeek
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.IO.Compression/src/System/IO/Compression/DeflateStream.cs
+    startLine: 178
+  assemblies:
+  - System.IO.Compression
+  namespace: System.IO.Compression
+  summary: Gets a value indicating whether the stream supports seeking.
+  syntax:
+    content: public override bool CanSeek { get; }
+    content.vb: Public Overrides ReadOnly Property CanSeek As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: false in all cases.
+  overridden: System.IO.Stream.CanSeek
+- uid: System.IO.Compression.DeflateStream.Length
+  id: Length
+  parent: System.IO.Compression.DeflateStream
+  href: System.IO.Compression.DeflateStream.yml
+  name: Length
+  fullName: System.IO.Compression.DeflateStream.Length
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.IO.Compression/src/System/IO/Compression/DeflateStream.cs
+    startLine: 186
+  assemblies:
+  - System.IO.Compression
+  namespace: System.IO.Compression
+  summary: This property is not supported and always throws a @'System.NotSupportedException'.
+  syntax:
+    content: public override long Length { get; }
+    content.vb: Public Overrides ReadOnly Property Length As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: A long value.
+  overridden: System.IO.Stream.Length
+  exceptions:
+  - type: System.NotSupportedException
+    description: This property is not supported on this stream.
+- uid: System.IO.Compression.DeflateStream.Position
+  id: Position
+  parent: System.IO.Compression.DeflateStream
+  href: System.IO.Compression.DeflateStream.yml
+  name: Position
+  fullName: System.IO.Compression.DeflateStream.Position
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.IO.Compression/src/System/IO/Compression/DeflateStream.cs
+    startLine: 194
+  assemblies:
+  - System.IO.Compression
+  namespace: System.IO.Compression
+  summary: This property is not supported and always throws a @'System.NotSupportedException'.
+  syntax:
+    content: public override long Position { get; set; }
+    content.vb: Public Overrides Property Position As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: A long value.
+  overridden: System.IO.Stream.Position
+  exceptions:
+  - type: System.NotSupportedException
+    description: This property is not supported on this stream.
+- uid: System.IO.Compression.DeflateStream.Flush
+  id: Flush
+  parent: System.IO.Compression.DeflateStream
+  href: System.IO.Compression.DeflateStream.yml
+  name: Flush()
+  fullName: System.IO.Compression.DeflateStream.Flush()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.Compression/src/System/IO/Compression/DeflateStream.cs
+    startLine: 207
+  assemblies:
+  - System.IO.Compression
+  namespace: System.IO.Compression
+  summary: The current implementation of this method has no functionality.
+  syntax:
+    content: public override void Flush()
+    content.vb: Public Overrides Sub Flush
+  overridden: System.IO.Stream.Flush
+  exceptions:
+  - type: System.ObjectDisposedException
+    description: The stream is closed.
+- uid: System.IO.Compression.DeflateStream.FlushAsync(System.Threading.CancellationToken)
+  id: FlushAsync(System.Threading.CancellationToken)
+  parent: System.IO.Compression.DeflateStream
+  href: System.IO.Compression.DeflateStream.yml
+  name: FlushAsync(CancellationToken)
+  fullName: System.IO.Compression.DeflateStream.FlushAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.Compression/src/System/IO/Compression/DeflateStream.cs
+    startLine: 212
+  assemblies:
+  - System.IO.Compression
+  namespace: System.IO.Compression
+  syntax:
+    content: public override Task FlushAsync(CancellationToken cancellationToken)
+    content.vb: Public Overrides Function FlushAsync(cancellationToken As CancellationToken) As Task
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+  overridden: System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
+- uid: System.IO.Compression.DeflateStream.Seek(System.Int64,System.IO.SeekOrigin)
+  id: Seek(System.Int64,System.IO.SeekOrigin)
+  parent: System.IO.Compression.DeflateStream
+  href: System.IO.Compression.DeflateStream.yml
+  name: Seek(Int64, SeekOrigin)
+  fullName: System.IO.Compression.DeflateStream.Seek(System.Int64, System.IO.SeekOrigin)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.Compression/src/System/IO/Compression/DeflateStream.cs
+    startLine: 220
+  assemblies:
+  - System.IO.Compression
+  namespace: System.IO.Compression
+  summary: This operation is not supported and always throws a @'System.NotSupportedException'.
+  syntax:
+    content: public override long Seek(long offset, SeekOrigin origin)
+    content.vb: Public Overrides Function Seek(offset As Long, origin As SeekOrigin) As Long
+    parameters:
+    - id: offset
+      type: System.Int64
+      description: The location in the stream.
+    - id: origin
+      type: System.IO.SeekOrigin
+      description: One of the @'System.IO.SeekOrigin' values.
+    return:
+      type: System.Int64
+      description: A long value.
+  overridden: System.IO.Stream.Seek(System.Int64,System.IO.SeekOrigin)
+  exceptions:
+  - type: System.NotSupportedException
+    description: This property is not supported on this stream.
+- uid: System.IO.Compression.DeflateStream.SetLength(System.Int64)
+  id: SetLength(System.Int64)
+  parent: System.IO.Compression.DeflateStream
+  href: System.IO.Compression.DeflateStream.yml
+  name: SetLength(Int64)
+  fullName: System.IO.Compression.DeflateStream.SetLength(System.Int64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.Compression/src/System/IO/Compression/DeflateStream.cs
+    startLine: 225
+  assemblies:
+  - System.IO.Compression
+  namespace: System.IO.Compression
+  summary: This operation is not supported and always throws a @'System.NotSupportedException'.
+  syntax:
+    content: public override void SetLength(long value)
+    content.vb: Public Overrides Sub SetLength(value As Long)
+    parameters:
+    - id: value
+      type: System.Int64
+      description: The length of the stream.
+  overridden: System.IO.Stream.SetLength(System.Int64)
+  exceptions:
+  - type: System.NotSupportedException
+    description: This property is not supported on this stream.
+- uid: System.IO.Compression.DeflateStream.Read(System.Byte[],System.Int32,System.Int32)
+  id: Read(System.Byte[],System.Int32,System.Int32)
+  parent: System.IO.Compression.DeflateStream
+  href: System.IO.Compression.DeflateStream.yml
+  name: Read(Byte[], Int32, Int32)
+  name.vb: Read(Byte(), Int32, Int32)
+  fullName: System.IO.Compression.DeflateStream.Read(System.Byte[], System.Int32, System.Int32)
+  fullName.vb: System.IO.Compression.DeflateStream.Read(System.Byte(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.Compression/src/System/IO/Compression/DeflateStream.cs
+    startLine: 230
+  assemblies:
+  - System.IO.Compression
+  namespace: System.IO.Compression
+  summary: Reads a number of decompressed bytes into the specified byte array.
+  syntax:
+    content: public override int Read(byte[] array, int offset, int count)
+    content.vb: Public Overrides Function Read(array As Byte(), offset As Integer, count As Integer) As Integer
+    parameters:
+    - id: array
+      type: System.Byte[]
+      description: The array to store decompressed bytes.
+    - id: offset
+      type: System.Int32
+      description: The byte offset in *array* at which the read bytes will be placed.
+    - id: count
+      type: System.Int32
+      description: The maximum number of decompressed bytes to read.
+    return:
+      type: System.Int32
+      description: The number of bytes that were read into the byte array.
+  overridden: System.IO.Stream.Read(System.Byte[],System.Int32,System.Int32)
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.InvalidOperationException
+    description: The @'System.IO.Compression.CompressionMode' value was Compress when the object was created.- or - The underlying stream does not support reading.
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* or *count* is less than zero.-or-*array* length minus the index starting point is less than *count*.'
+  - type: System.IO.InvalidDataException
+    description: The data is in an invalid format.
+  - type: System.ObjectDisposedException
+    description: The stream is closed.
+- uid: System.IO.Compression.DeflateStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  id: ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  parent: System.IO.Compression.DeflateStream
+  href: System.IO.Compression.DeflateStream.yml
+  name: ReadAsync(Byte[], Int32, Int32, CancellationToken)
+  name.vb: ReadAsync(Byte(), Int32, Int32, CancellationToken)
+  fullName: System.IO.Compression.DeflateStream.ReadAsync(System.Byte[], System.Int32, System.Int32, System.Threading.CancellationToken)
+  fullName.vb: System.IO.Compression.DeflateStream.ReadAsync(System.Byte(), System.Int32, System.Int32, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.Compression/src/System/IO/Compression/DeflateStream.cs
+    startLine: 311
+  assemblies:
+  - System.IO.Compression
+  namespace: System.IO.Compression
+  syntax:
+    content: public override Task<int> ReadAsync(byte[] array, int offset, int count, CancellationToken cancellationToken)
+    content.vb: Public Overrides Function ReadAsync(array As Byte(), offset As Integer, count As Integer, cancellationToken As CancellationToken) As Task(Of Integer)
+    parameters:
+    - id: array
+      type: System.Byte[]
+    - id: offset
+      type: System.Int32
+    - id: count
+      type: System.Int32
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.Int32}
+  overridden: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+- uid: System.IO.Compression.DeflateStream.Write(System.Byte[],System.Int32,System.Int32)
+  id: Write(System.Byte[],System.Int32,System.Int32)
+  parent: System.IO.Compression.DeflateStream
+  href: System.IO.Compression.DeflateStream.yml
+  name: Write(Byte[], Int32, Int32)
+  name.vb: Write(Byte(), Int32, Int32)
+  fullName: System.IO.Compression.DeflateStream.Write(System.Byte[], System.Int32, System.Int32)
+  fullName.vb: System.IO.Compression.DeflateStream.Write(System.Byte(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.Compression/src/System/IO/Compression/DeflateStream.cs
+    startLine: 415
+  assemblies:
+  - System.IO.Compression
+  namespace: System.IO.Compression
+  summary: Writes compressed bytes to the underlying stream from the specified byte array.
+  syntax:
+    content: public override void Write(byte[] array, int offset, int count)
+    content.vb: Public Overrides Sub Write(array As Byte(), offset As Integer, count As Integer)
+    parameters:
+    - id: array
+      type: System.Byte[]
+      description: The buffer that contains the data to compress.
+    - id: offset
+      type: System.Int32
+      description: The byte offset in *array* from which the bytes will be read.
+    - id: count
+      type: System.Int32
+      description: The maximum number of bytes to write.
+  overridden: System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)
+- uid: System.IO.Compression.DeflateStream.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: System.IO.Compression.DeflateStream
+  href: System.IO.Compression.DeflateStream.yml
+  name: Dispose(Boolean)
+  fullName: System.IO.Compression.DeflateStream.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.Compression/src/System/IO/Compression/DeflateStream.cs
+    startLine: 542
+  assemblies:
+  - System.IO.Compression
+  namespace: System.IO.Compression
+  summary: Releases the unmanaged resources used by the @'System.IO.Compression.DeflateStream' and optionally releases the managed resources.
+  syntax:
+    content: protected override void Dispose(bool disposing)
+    content.vb: Protected Overrides Sub Dispose(disposing As Boolean)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: true to release both managed and unmanaged resources; false to release only unmanaged resources.
+  overridden: System.IO.Stream.Dispose(System.Boolean)
+- uid: System.IO.Compression.DeflateStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  id: WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  parent: System.IO.Compression.DeflateStream
+  href: System.IO.Compression.DeflateStream.yml
+  name: WriteAsync(Byte[], Int32, Int32, CancellationToken)
+  name.vb: WriteAsync(Byte(), Int32, Int32, CancellationToken)
+  fullName: System.IO.Compression.DeflateStream.WriteAsync(System.Byte[], System.Int32, System.Int32, System.Threading.CancellationToken)
+  fullName.vb: System.IO.Compression.DeflateStream.WriteAsync(System.Byte(), System.Int32, System.Int32, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.IO.Compression/src/System/IO/Compression/DeflateStream.cs
+    startLine: 576
+  assemblies:
+  - System.IO.Compression
+  namespace: System.IO.Compression
+  syntax:
+    content: public override Task WriteAsync(byte[] array, int offset, int count, CancellationToken cancellationToken)
+    content.vb: Public Overrides Function WriteAsync(array As Byte(), offset As Integer, count As Integer, cancellationToken As CancellationToken) As Task
+    parameters:
+    - id: array
+      type: System.Byte[]
+    - id: offset
+      type: System.Int32
+    - id: count
+      type: System.Int32
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+  overridden: System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+references:
+- uid: System.IO.Compression
+  isExternal: false
+  name: System.IO.Compression
+  fullName: System.IO.Compression
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.MarshalByRefObject
+  parent: System
+  isExternal: true
+  name: MarshalByRefObject
+  fullName: System.MarshalByRefObject
+- uid: System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  name: Stream
+  fullName: System.IO.Stream
+- uid: System.IO.Stream.Null
+  parent: System.IO.Stream
+  isExternal: true
+  fullName: System.IO.Stream.Null
+- uid: System.IO.Stream.CopyToAsync(System.IO.Stream)
+  parent: System.IO.Stream
+  isExternal: true
+  name: CopyToAsync(Stream)
+  fullName: System.IO.Stream.CopyToAsync(System.IO.Stream)
+  spec.csharp:
+  - uid: System.IO.Stream.CopyToAsync(System.IO.Stream)
+    name: CopyToAsync
+    fullName: System.IO.Stream.CopyToAsync
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IO.Stream
+    name: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.CopyToAsync(System.IO.Stream)
+    name: CopyToAsync
+    fullName: System.IO.Stream.CopyToAsync
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IO.Stream
+    name: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32)
+  parent: System.IO.Stream
+  isExternal: true
+  name: CopyToAsync(Stream, Int32)
+  fullName: System.IO.Stream.CopyToAsync(System.IO.Stream, System.Int32)
+  spec.csharp:
+  - uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32)
+    name: CopyToAsync
+    fullName: System.IO.Stream.CopyToAsync
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IO.Stream
+    name: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32)
+    name: CopyToAsync
+    fullName: System.IO.Stream.CopyToAsync
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IO.Stream
+    name: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)
+  parent: System.IO.Stream
+  isExternal: true
+  name: CopyToAsync(Stream, Int32, CancellationToken)
+  fullName: System.IO.Stream.CopyToAsync(System.IO.Stream, System.Int32, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)
+    name: CopyToAsync
+    fullName: System.IO.Stream.CopyToAsync
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IO.Stream
+    name: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)
+    name: CopyToAsync
+    fullName: System.IO.Stream.CopyToAsync
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IO.Stream
+    name: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.CopyTo(System.IO.Stream)
+  parent: System.IO.Stream
+  isExternal: true
+  name: CopyTo(Stream)
+  fullName: System.IO.Stream.CopyTo(System.IO.Stream)
+  spec.csharp:
+  - uid: System.IO.Stream.CopyTo(System.IO.Stream)
+    name: CopyTo
+    fullName: System.IO.Stream.CopyTo
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IO.Stream
+    name: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.CopyTo(System.IO.Stream)
+    name: CopyTo
+    fullName: System.IO.Stream.CopyTo
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IO.Stream
+    name: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.CopyTo(System.IO.Stream,System.Int32)
+  parent: System.IO.Stream
+  isExternal: true
+  name: CopyTo(Stream, Int32)
+  fullName: System.IO.Stream.CopyTo(System.IO.Stream, System.Int32)
+  spec.csharp:
+  - uid: System.IO.Stream.CopyTo(System.IO.Stream,System.Int32)
+    name: CopyTo
+    fullName: System.IO.Stream.CopyTo
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IO.Stream
+    name: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.CopyTo(System.IO.Stream,System.Int32)
+    name: CopyTo
+    fullName: System.IO.Stream.CopyTo
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IO.Stream
+    name: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.Close
+  parent: System.IO.Stream
+  isExternal: true
+  name: Close()
+  fullName: System.IO.Stream.Close()
+  spec.csharp:
+  - uid: System.IO.Stream.Close
+    name: Close
+    fullName: System.IO.Stream.Close
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.Close
+    name: Close
+    fullName: System.IO.Stream.Close
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.Dispose
+  parent: System.IO.Stream
+  isExternal: true
+  name: Dispose()
+  fullName: System.IO.Stream.Dispose()
+  spec.csharp:
+  - uid: System.IO.Stream.Dispose
+    name: Dispose
+    fullName: System.IO.Stream.Dispose
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.Dispose
+    name: Dispose
+    fullName: System.IO.Stream.Dispose
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.FlushAsync
+  parent: System.IO.Stream
+  isExternal: true
+  name: FlushAsync()
+  fullName: System.IO.Stream.FlushAsync()
+  spec.csharp:
+  - uid: System.IO.Stream.FlushAsync
+    name: FlushAsync
+    fullName: System.IO.Stream.FlushAsync
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.FlushAsync
+    name: FlushAsync
+    fullName: System.IO.Stream.FlushAsync
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.CreateWaitHandle
+  parent: System.IO.Stream
+  isExternal: true
+  name: CreateWaitHandle()
+  fullName: System.IO.Stream.CreateWaitHandle()
+  spec.csharp:
+  - uid: System.IO.Stream.CreateWaitHandle
+    name: CreateWaitHandle
+    fullName: System.IO.Stream.CreateWaitHandle
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.CreateWaitHandle
+    name: CreateWaitHandle
+    fullName: System.IO.Stream.CreateWaitHandle
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+  parent: System.IO.Stream
+  isExternal: true
+  name: BeginRead(Byte[], Int32, Int32, AsyncCallback, Object)
+  name.vb: BeginRead(Byte(), Int32, Int32, AsyncCallback, Object)
+  fullName: System.IO.Stream.BeginRead(System.Byte[], System.Int32, System.Int32, System.AsyncCallback, System.Object)
+  fullName.vb: System.IO.Stream.BeginRead(System.Byte(), System.Int32, System.Int32, System.AsyncCallback, System.Object)
+  spec.csharp:
+  - uid: System.IO.Stream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+    name: BeginRead
+    fullName: System.IO.Stream.BeginRead
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    fullName: System.AsyncCallback
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+    name: BeginRead
+    fullName: System.IO.Stream.BeginRead
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    fullName: System.AsyncCallback
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.EndRead(System.IAsyncResult)
+  parent: System.IO.Stream
+  isExternal: true
+  name: EndRead(IAsyncResult)
+  fullName: System.IO.Stream.EndRead(System.IAsyncResult)
+  spec.csharp:
+  - uid: System.IO.Stream.EndRead(System.IAsyncResult)
+    name: EndRead
+    fullName: System.IO.Stream.EndRead
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IAsyncResult
+    name: IAsyncResult
+    fullName: System.IAsyncResult
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.EndRead(System.IAsyncResult)
+    name: EndRead
+    fullName: System.IO.Stream.EndRead
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IAsyncResult
+    name: IAsyncResult
+    fullName: System.IAsyncResult
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)
+  parent: System.IO.Stream
+  isExternal: true
+  name: ReadAsync(Byte[], Int32, Int32)
+  name.vb: ReadAsync(Byte(), Int32, Int32)
+  fullName: System.IO.Stream.ReadAsync(System.Byte[], System.Int32, System.Int32)
+  fullName.vb: System.IO.Stream.ReadAsync(System.Byte(), System.Int32, System.Int32)
+  spec.csharp:
+  - uid: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)
+    name: ReadAsync
+    fullName: System.IO.Stream.ReadAsync
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)
+    name: ReadAsync
+    fullName: System.IO.Stream.ReadAsync
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+  parent: System.IO.Stream
+  isExternal: true
+  name: BeginWrite(Byte[], Int32, Int32, AsyncCallback, Object)
+  name.vb: BeginWrite(Byte(), Int32, Int32, AsyncCallback, Object)
+  fullName: System.IO.Stream.BeginWrite(System.Byte[], System.Int32, System.Int32, System.AsyncCallback, System.Object)
+  fullName.vb: System.IO.Stream.BeginWrite(System.Byte(), System.Int32, System.Int32, System.AsyncCallback, System.Object)
+  spec.csharp:
+  - uid: System.IO.Stream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+    name: BeginWrite
+    fullName: System.IO.Stream.BeginWrite
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    fullName: System.AsyncCallback
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+    name: BeginWrite
+    fullName: System.IO.Stream.BeginWrite
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.AsyncCallback
+    name: AsyncCallback
+    fullName: System.AsyncCallback
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.EndWrite(System.IAsyncResult)
+  parent: System.IO.Stream
+  isExternal: true
+  name: EndWrite(IAsyncResult)
+  fullName: System.IO.Stream.EndWrite(System.IAsyncResult)
+  spec.csharp:
+  - uid: System.IO.Stream.EndWrite(System.IAsyncResult)
+    name: EndWrite
+    fullName: System.IO.Stream.EndWrite
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IAsyncResult
+    name: IAsyncResult
+    fullName: System.IAsyncResult
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.EndWrite(System.IAsyncResult)
+    name: EndWrite
+    fullName: System.IO.Stream.EndWrite
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IAsyncResult
+    name: IAsyncResult
+    fullName: System.IAsyncResult
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)
+  parent: System.IO.Stream
+  isExternal: true
+  name: WriteAsync(Byte[], Int32, Int32)
+  name.vb: WriteAsync(Byte(), Int32, Int32)
+  fullName: System.IO.Stream.WriteAsync(System.Byte[], System.Int32, System.Int32)
+  fullName.vb: System.IO.Stream.WriteAsync(System.Byte(), System.Int32, System.Int32)
+  spec.csharp:
+  - uid: System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)
+    name: WriteAsync
+    fullName: System.IO.Stream.WriteAsync
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)
+    name: WriteAsync
+    fullName: System.IO.Stream.WriteAsync
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.ReadByte
+  parent: System.IO.Stream
+  isExternal: true
+  name: ReadByte()
+  fullName: System.IO.Stream.ReadByte()
+  spec.csharp:
+  - uid: System.IO.Stream.ReadByte
+    name: ReadByte
+    fullName: System.IO.Stream.ReadByte
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.ReadByte
+    name: ReadByte
+    fullName: System.IO.Stream.ReadByte
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.WriteByte(System.Byte)
+  parent: System.IO.Stream
+  isExternal: true
+  name: WriteByte(Byte)
+  fullName: System.IO.Stream.WriteByte(System.Byte)
+  spec.csharp:
+  - uid: System.IO.Stream.WriteByte(System.Byte)
+    name: WriteByte
+    fullName: System.IO.Stream.WriteByte
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.WriteByte(System.Byte)
+    name: WriteByte
+    fullName: System.IO.Stream.WriteByte
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.Synchronized(System.IO.Stream)
+  parent: System.IO.Stream
+  isExternal: true
+  name: Synchronized(Stream)
+  fullName: System.IO.Stream.Synchronized(System.IO.Stream)
+  spec.csharp:
+  - uid: System.IO.Stream.Synchronized(System.IO.Stream)
+    name: Synchronized
+    fullName: System.IO.Stream.Synchronized
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IO.Stream
+    name: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.Synchronized(System.IO.Stream)
+    name: Synchronized
+    fullName: System.IO.Stream.Synchronized
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IO.Stream
+    name: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.ObjectInvariant
+  parent: System.IO.Stream
+  isExternal: true
+  name: ObjectInvariant()
+  fullName: System.IO.Stream.ObjectInvariant()
+  spec.csharp:
+  - uid: System.IO.Stream.ObjectInvariant
+    name: ObjectInvariant
+    fullName: System.IO.Stream.ObjectInvariant
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.ObjectInvariant
+    name: ObjectInvariant
+    fullName: System.IO.Stream.ObjectInvariant
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.CanTimeout
+  parent: System.IO.Stream
+  isExternal: true
+  name: CanTimeout
+  fullName: System.IO.Stream.CanTimeout
+- uid: System.IO.Stream.ReadTimeout
+  parent: System.IO.Stream
+  isExternal: true
+  name: ReadTimeout
+  fullName: System.IO.Stream.ReadTimeout
+- uid: System.IO.Stream.WriteTimeout
+  parent: System.IO.Stream
+  isExternal: true
+  name: WriteTimeout
+  fullName: System.IO.Stream.WriteTimeout
+- uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  parent: System.MarshalByRefObject
+  isExternal: true
+  name: MemberwiseClone(Boolean)
+  fullName: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  spec.csharp:
+  - uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+    name: MemberwiseClone
+    fullName: System.MarshalByRefObject.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+    name: MemberwiseClone
+    fullName: System.MarshalByRefObject.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.MarshalByRefObject.GetLifetimeService
+  parent: System.MarshalByRefObject
+  isExternal: true
+  name: GetLifetimeService()
+  fullName: System.MarshalByRefObject.GetLifetimeService()
+  spec.csharp:
+  - uid: System.MarshalByRefObject.GetLifetimeService
+    name: GetLifetimeService
+    fullName: System.MarshalByRefObject.GetLifetimeService
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.GetLifetimeService
+    name: GetLifetimeService
+    fullName: System.MarshalByRefObject.GetLifetimeService
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.MarshalByRefObject.InitializeLifetimeService
+  parent: System.MarshalByRefObject
+  isExternal: true
+  name: InitializeLifetimeService()
+  fullName: System.MarshalByRefObject.InitializeLifetimeService()
+  spec.csharp:
+  - uid: System.MarshalByRefObject.InitializeLifetimeService
+    name: InitializeLifetimeService
+    fullName: System.MarshalByRefObject.InitializeLifetimeService
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.InitializeLifetimeService
+    name: InitializeLifetimeService
+    fullName: System.MarshalByRefObject.InitializeLifetimeService
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.MarshalByRefObject.CreateObjRef(System.Type)
+  parent: System.MarshalByRefObject
+  isExternal: true
+  name: CreateObjRef(Type)
+  fullName: System.MarshalByRefObject.CreateObjRef(System.Type)
+  spec.csharp:
+  - uid: System.MarshalByRefObject.CreateObjRef(System.Type)
+    name: CreateObjRef
+    fullName: System.MarshalByRefObject.CreateObjRef
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.CreateObjRef(System.Type)
+    name: CreateObjRef
+    fullName: System.MarshalByRefObject.CreateObjRef
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.IO
+  isExternal: false
+  name: System.IO
+  fullName: System.IO
+- uid: System.IO.Compression.CompressionMode
+  parent: System.IO.Compression
+  isExternal: false
+  href: System.IO.Compression.CompressionMode.yml
+  name: CompressionMode
+  fullName: System.IO.Compression.CompressionMode
+  type: Enum
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.IO.Compression.CompressionLevel
+  parent: System.IO.Compression
+  isExternal: false
+  href: System.IO.Compression.CompressionLevel.yml
+  name: CompressionLevel
+  fullName: System.IO.Compression.CompressionLevel
+  type: Enum
+  summary: Defines a tradeoff between fast vs. strong compression. The specific meaning depends of the Deflater implementation.
+- uid: System.IO.Stream.CanRead
+  parent: System.IO.Stream
+  isExternal: true
+  name: CanRead
+  fullName: System.IO.Stream.CanRead
+- uid: System.IO.Stream.CanWrite
+  parent: System.IO.Stream
+  isExternal: true
+  name: CanWrite
+  fullName: System.IO.Stream.CanWrite
+- uid: System.IO.Stream.CanSeek
+  parent: System.IO.Stream
+  isExternal: true
+  name: CanSeek
+  fullName: System.IO.Stream.CanSeek
+- uid: System.IO.Stream.Length
+  parent: System.IO.Stream
+  isExternal: true
+  name: Length
+  fullName: System.IO.Stream.Length
+- uid: System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  fullName: System.Int64
+- uid: System.IO.Stream.Position
+  parent: System.IO.Stream
+  isExternal: true
+  name: Position
+  fullName: System.IO.Stream.Position
+- uid: System.IO.Stream.Flush
+  parent: System.IO.Stream
+  isExternal: true
+  name: Flush()
+  fullName: System.IO.Stream.Flush()
+  spec.csharp:
+  - uid: System.IO.Stream.Flush
+    name: Flush
+    fullName: System.IO.Stream.Flush
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.Flush
+    name: Flush
+    fullName: System.IO.Stream.Flush
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
+  parent: System.IO.Stream
+  isExternal: true
+  name: FlushAsync(CancellationToken)
+  fullName: System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
+    name: FlushAsync
+    fullName: System.IO.Stream.FlushAsync
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
+    name: FlushAsync
+    fullName: System.IO.Stream.FlushAsync
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  type: Namespace
+- uid: System.IO.Stream.Seek(System.Int64,System.IO.SeekOrigin)
+  parent: System.IO.Stream
+  isExternal: true
+  name: Seek(Int64, SeekOrigin)
+  fullName: System.IO.Stream.Seek(System.Int64, System.IO.SeekOrigin)
+  spec.csharp:
+  - uid: System.IO.Stream.Seek(System.Int64,System.IO.SeekOrigin)
+    name: Seek
+    fullName: System.IO.Stream.Seek
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.IO.SeekOrigin
+    name: SeekOrigin
+    fullName: System.IO.SeekOrigin
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.Seek(System.Int64,System.IO.SeekOrigin)
+    name: Seek
+    fullName: System.IO.Stream.Seek
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.IO.SeekOrigin
+    name: SeekOrigin
+    fullName: System.IO.SeekOrigin
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.IO.SeekOrigin
+  parent: System.IO
+  isExternal: true
+  name: SeekOrigin
+  fullName: System.IO.SeekOrigin
+- uid: System.IO.Stream.SetLength(System.Int64)
+  parent: System.IO.Stream
+  isExternal: true
+  name: SetLength(Int64)
+  fullName: System.IO.Stream.SetLength(System.Int64)
+  spec.csharp:
+  - uid: System.IO.Stream.SetLength(System.Int64)
+    name: SetLength
+    fullName: System.IO.Stream.SetLength
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.SetLength(System.Int64)
+    name: SetLength
+    fullName: System.IO.Stream.SetLength
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.Read(System.Byte[],System.Int32,System.Int32)
+  parent: System.IO.Stream
+  isExternal: true
+  name: Read(Byte[], Int32, Int32)
+  name.vb: Read(Byte(), Int32, Int32)
+  fullName: System.IO.Stream.Read(System.Byte[], System.Int32, System.Int32)
+  fullName.vb: System.IO.Stream.Read(System.Byte(), System.Int32, System.Int32)
+  spec.csharp:
+  - uid: System.IO.Stream.Read(System.Byte[],System.Int32,System.Int32)
+    name: Read
+    fullName: System.IO.Stream.Read
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.Read(System.Byte[],System.Int32,System.Int32)
+    name: Read
+    fullName: System.IO.Stream.Read
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  name.vb: Byte()
+  fullName: System.Byte[]
+  fullName.vb: System.Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  parent: System.IO.Stream
+  isExternal: true
+  name: ReadAsync(Byte[], Int32, Int32, CancellationToken)
+  name.vb: ReadAsync(Byte(), Int32, Int32, CancellationToken)
+  fullName: System.IO.Stream.ReadAsync(System.Byte[], System.Int32, System.Int32, System.Threading.CancellationToken)
+  fullName.vb: System.IO.Stream.ReadAsync(System.Byte(), System.Int32, System.Int32, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+    name: ReadAsync
+    fullName: System.IO.Stream.ReadAsync
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+    name: ReadAsync
+    fullName: System.IO.Stream.ReadAsync
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Int32}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Int32>
+  name.vb: Task(Of Int32)
+  fullName: System.Threading.Tasks.Task<System.Int32>
+  fullName.vb: System.Threading.Tasks.Task(Of System.Int32)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  name.vb: Task(Of TResult)
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)
+  parent: System.IO.Stream
+  isExternal: true
+  name: Write(Byte[], Int32, Int32)
+  name.vb: Write(Byte(), Int32, Int32)
+  fullName: System.IO.Stream.Write(System.Byte[], System.Int32, System.Int32)
+  fullName.vb: System.IO.Stream.Write(System.Byte(), System.Int32, System.Int32)
+  spec.csharp:
+  - uid: System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)
+    name: Write
+    fullName: System.IO.Stream.Write
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)
+    name: Write
+    fullName: System.IO.Stream.Write
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.Dispose(System.Boolean)
+  parent: System.IO.Stream
+  isExternal: true
+  name: Dispose(Boolean)
+  fullName: System.IO.Stream.Dispose(System.Boolean)
+  spec.csharp:
+  - uid: System.IO.Stream.Dispose(System.Boolean)
+    name: Dispose
+    fullName: System.IO.Stream.Dispose
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.Dispose(System.Boolean)
+    name: Dispose
+    fullName: System.IO.Stream.Dispose
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  parent: System.IO.Stream
+  isExternal: true
+  name: WriteAsync(Byte[], Int32, Int32, CancellationToken)
+  name.vb: WriteAsync(Byte(), Int32, Int32, CancellationToken)
+  fullName: System.IO.Stream.WriteAsync(System.Byte[], System.Int32, System.Int32, System.Threading.CancellationToken)
+  fullName.vb: System.IO.Stream.WriteAsync(System.Byte(), System.Int32, System.Int32, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+    name: WriteAsync
+    fullName: System.IO.Stream.WriteAsync
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+    name: WriteAsync
+    fullName: System.IO.Stream.WriteAsync
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    fullName: )

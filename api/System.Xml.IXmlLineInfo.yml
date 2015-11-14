@@ -1,0 +1,111 @@
+items:
+- uid: System.Xml.IXmlLineInfo
+  id: IXmlLineInfo
+  parent: System.Xml
+  children:
+  - System.Xml.IXmlLineInfo.HasLineInfo
+  - System.Xml.IXmlLineInfo.LineNumber
+  - System.Xml.IXmlLineInfo.LinePosition
+  href: System.Xml.IXmlLineInfo.yml
+  name: IXmlLineInfo
+  fullName: System.Xml.IXmlLineInfo
+  type: Interface
+  source:
+    remote: &o0
+      path: src/System.Xml.ReaderWriter/src/System/Xml/IxmlLineInfo.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Xml.ReaderWriter/src/System/Xml/IxmlLineInfo.cs
+    startLine: 6
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: Provides an interface to enable a class to return line and position information.
+  syntax:
+    content: public interface IXmlLineInfo
+    content.vb: Public Interface IXmlLineInfo
+- uid: System.Xml.IXmlLineInfo.HasLineInfo
+  id: HasLineInfo
+  parent: System.Xml.IXmlLineInfo
+  href: System.Xml.IXmlLineInfo.yml
+  name: HasLineInfo()
+  fullName: System.Xml.IXmlLineInfo.HasLineInfo()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/IxmlLineInfo.cs
+    startLine: 9
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: Gets a value indicating whether the class can return line information.
+  syntax:
+    content: bool HasLineInfo()
+    content.vb: Function HasLineInfo As Boolean
+    return:
+      type: System.Boolean
+      description: true if @'System.Xml.IXmlLineInfo.LineNumber' and @'System.Xml.IXmlLineInfo.LinePosition' can be provided; otherwise, false.
+- uid: System.Xml.IXmlLineInfo.LineNumber
+  id: LineNumber
+  parent: System.Xml.IXmlLineInfo
+  href: System.Xml.IXmlLineInfo.yml
+  name: LineNumber
+  fullName: System.Xml.IXmlLineInfo.LineNumber
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/IxmlLineInfo.cs
+    startLine: 11
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: Gets the current line number.
+  syntax:
+    content: int LineNumber { get; }
+    content.vb: ReadOnly Property LineNumber As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: The current line number or 0 if no line information is available (for example, @'System.Xml.IXmlLineInfo.HasLineInfo' returns false).
+- uid: System.Xml.IXmlLineInfo.LinePosition
+  id: LinePosition
+  parent: System.Xml.IXmlLineInfo
+  href: System.Xml.IXmlLineInfo.yml
+  name: LinePosition
+  fullName: System.Xml.IXmlLineInfo.LinePosition
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/IxmlLineInfo.cs
+    startLine: 13
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: Gets the current line position.
+  syntax:
+    content: int LinePosition { get; }
+    content.vb: ReadOnly Property LinePosition As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: The current line position or 0 if no line information is available (for example, @'System.Xml.IXmlLineInfo.HasLineInfo' returns false).
+references:
+- uid: System.Xml
+  isExternal: false
+  name: System.Xml
+  fullName: System.Xml
+  type: Namespace
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32

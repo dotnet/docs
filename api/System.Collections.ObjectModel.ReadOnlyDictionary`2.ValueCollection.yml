@@ -1,0 +1,678 @@
+items:
+- uid: System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection
+  id: ReadOnlyDictionary`2.ValueCollection
+  parent: System.Collections.ObjectModel
+  children:
+  - System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.CopyTo(`1[],System.Int32)
+  - System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.Count
+  - System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.GetEnumerator
+  - System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#Generic#ICollection{TValue}#Add(`1)
+  - System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#Generic#ICollection{TValue}#Clear
+  - System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#Generic#ICollection{TValue}#Contains(`1)
+  - System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#Generic#ICollection{TValue}#IsReadOnly
+  - System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#Generic#ICollection{TValue}#Remove(`1)
+  - System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  - System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#ICollection#IsSynchronized
+  - System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#ICollection#SyncRoot
+  - System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#IEnumerable#GetEnumerator
+  href: System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.yml
+  name: ReadOnlyDictionary<TKey, TValue>.ValueCollection
+  name.vb: ReadOnlyDictionary(Of TKey, TValue).ValueCollection
+  fullName: System.Collections.ObjectModel.ReadOnlyDictionary<TKey, TValue>.ValueCollection
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyDictionary(Of TKey, TValue).ValueCollection
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.ObjectModel/src/System/Collections/ObjectModel/ReadOnlyDictionary.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.ObjectModel/src/System/Collections/ObjectModel/ReadOnlyDictionary.cs
+    startLine: 522
+  assemblies:
+  - System.ObjectModel
+  namespace: System.Collections.ObjectModel
+  summary: Represents a read-only collection of the values of a @'System.Collections.ObjectModel.ReadOnlyDictionary`2' object.
+  syntax:
+    content: 'public sealed class ValueCollection : ICollection<TValue>, ICollection, IReadOnlyCollection<TValue>, IEnumerable<TValue>, IEnumerable'
+    content.vb: Public NotInheritable Class ValueCollection Implements ICollection(Of TValue), ICollection, IReadOnlyCollection(Of TValue), IEnumerable(Of TValue), IEnumerable
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.Generic.ICollection{{TValue}}
+  - System.Collections.ICollection
+  - System.Collections.Generic.IReadOnlyCollection{{TValue}}
+  - System.Collections.Generic.IEnumerable{{TValue}}
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#Generic#ICollection{TValue}#Add(`1)
+  id: System#Collections#Generic#ICollection{TValue}#Add(`1)
+  parent: System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection
+  href: System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.yml
+  name: ICollection<TValue>.Add(TValue)
+  name.vb: System.Collections.Generic.ICollection<TValue>.Add(TValue)
+  fullName: System.Collections.ObjectModel.ReadOnlyDictionary<TKey, TValue>.ValueCollection.System.Collections.Generic.ICollection<TValue>.Add(TValue)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyDictionary(Of TKey, TValue).ValueCollection.System.Collections.Generic.ICollection<TValue>.Add(TValue)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.ObjectModel/src/System/Collections/ObjectModel/ReadOnlyDictionary.cs
+    startLine: 540
+  assemblies:
+  - System.ObjectModel
+  namespace: System.Collections.ObjectModel
+  syntax:
+    content: void ICollection<TValue>.Add(TValue item)
+    content.vb: Sub System.Collections.Generic.ICollection<TValue>.Add(item As TValue) Implements ICollection(Of TValue).Add
+    parameters:
+    - id: item
+      type: '{TValue}'
+- uid: System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#Generic#ICollection{TValue}#Clear
+  id: System#Collections#Generic#ICollection{TValue}#Clear
+  parent: System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection
+  href: System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.yml
+  name: ICollection<TValue>.Clear()
+  name.vb: System.Collections.Generic.ICollection<TValue>.Clear()
+  fullName: System.Collections.ObjectModel.ReadOnlyDictionary<TKey, TValue>.ValueCollection.System.Collections.Generic.ICollection<TValue>.Clear()
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyDictionary(Of TKey, TValue).ValueCollection.System.Collections.Generic.ICollection<TValue>.Clear()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.ObjectModel/src/System/Collections/ObjectModel/ReadOnlyDictionary.cs
+    startLine: 545
+  assemblies:
+  - System.ObjectModel
+  namespace: System.Collections.ObjectModel
+  syntax:
+    content: void ICollection<TValue>.Clear()
+    content.vb: Sub System.Collections.Generic.ICollection<TValue>.Clear Implements ICollection(Of TValue).Clear
+- uid: System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#Generic#ICollection{TValue}#Contains(`1)
+  id: System#Collections#Generic#ICollection{TValue}#Contains(`1)
+  parent: System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection
+  href: System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.yml
+  name: ICollection<TValue>.Contains(TValue)
+  name.vb: System.Collections.Generic.ICollection<TValue>.Contains(TValue)
+  fullName: System.Collections.ObjectModel.ReadOnlyDictionary<TKey, TValue>.ValueCollection.System.Collections.Generic.ICollection<TValue>.Contains(TValue)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyDictionary(Of TKey, TValue).ValueCollection.System.Collections.Generic.ICollection<TValue>.Contains(TValue)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.ObjectModel/src/System/Collections/ObjectModel/ReadOnlyDictionary.cs
+    startLine: 550
+  assemblies:
+  - System.ObjectModel
+  namespace: System.Collections.ObjectModel
+  syntax:
+    content: bool ICollection<TValue>.Contains(TValue item)
+    content.vb: Function System.Collections.Generic.ICollection<TValue>.Contains(item As TValue) As Boolean Implements ICollection(Of TValue).Contains
+    parameters:
+    - id: item
+      type: '{TValue}'
+    return:
+      type: System.Boolean
+- uid: System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.CopyTo(`1[],System.Int32)
+  id: CopyTo(`1[],System.Int32)
+  parent: System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection
+  href: System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.yml
+  name: CopyTo(TValue[], Int32)
+  name.vb: CopyTo(TValue(), Int32)
+  fullName: System.Collections.ObjectModel.ReadOnlyDictionary<TKey, TValue>.ValueCollection.CopyTo(TValue[], System.Int32)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyDictionary(Of TKey, TValue).ValueCollection.CopyTo(TValue(), System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.ObjectModel/src/System/Collections/ObjectModel/ReadOnlyDictionary.cs
+    startLine: 555
+  assemblies:
+  - System.ObjectModel
+  namespace: System.Collections.ObjectModel
+  summary: Copies the elements of the collection to an array, starting at a specific array index.
+  syntax:
+    content: public void CopyTo(TValue[] array, int arrayIndex)
+    content.vb: Public Sub CopyTo(array As TValue(), arrayIndex As Integer)
+    parameters:
+    - id: array
+      type: '{TValue}[]'
+      description: The one-dimensional array that is the destination of the elements copied from the collection. The array must have zero-based indexing.
+    - id: arrayIndex
+      type: System.Int32
+      description: The zero-based index in *array* at which copying begins.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*arrayIndex* is less than 0.'
+  - type: System.ArgumentException
+    description: '*array* is multidimensional.-or-The number of elements in the source collection is greater than the available space from *arrayIndex* to the end of the destination *array*.-or-Type *T* cannot be cast automatically to the type of the destination *array*.'
+- uid: System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.Count
+  id: Count
+  parent: System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection
+  href: System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.yml
+  name: Count
+  fullName: System.Collections.ObjectModel.ReadOnlyDictionary<TKey, TValue>.ValueCollection.Count
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyDictionary(Of TKey, TValue).ValueCollection.Count
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.ObjectModel/src/System/Collections/ObjectModel/ReadOnlyDictionary.cs
+    startLine: 560
+  assemblies:
+  - System.ObjectModel
+  namespace: System.Collections.ObjectModel
+  summary: Gets the number of elements in the collection.
+  syntax:
+    content: public int Count { get; }
+    content.vb: Public ReadOnly Property Count As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: The number of elements in the collection.
+- uid: System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#Generic#ICollection{TValue}#IsReadOnly
+  id: System#Collections#Generic#ICollection{TValue}#IsReadOnly
+  parent: System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection
+  href: System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.yml
+  name: ICollection<TValue>.IsReadOnly
+  name.vb: System.Collections.Generic.ICollection<TValue>.IsReadOnly
+  fullName: System.Collections.ObjectModel.ReadOnlyDictionary<TKey, TValue>.ValueCollection.System.Collections.Generic.ICollection<TValue>.IsReadOnly
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyDictionary(Of TKey, TValue).ValueCollection.System.Collections.Generic.ICollection<TValue>.IsReadOnly
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.ObjectModel/src/System/Collections/ObjectModel/ReadOnlyDictionary.cs
+    startLine: 565
+  assemblies:
+  - System.ObjectModel
+  namespace: System.Collections.ObjectModel
+  syntax:
+    content: bool ICollection<TValue>.IsReadOnly { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.Generic.ICollection<TValue>.IsReadOnly As Boolean Implements ICollection(Of TValue).IsReadOnly
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#Generic#ICollection{TValue}#Remove(`1)
+  id: System#Collections#Generic#ICollection{TValue}#Remove(`1)
+  parent: System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection
+  href: System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.yml
+  name: ICollection<TValue>.Remove(TValue)
+  name.vb: System.Collections.Generic.ICollection<TValue>.Remove(TValue)
+  fullName: System.Collections.ObjectModel.ReadOnlyDictionary<TKey, TValue>.ValueCollection.System.Collections.Generic.ICollection<TValue>.Remove(TValue)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyDictionary(Of TKey, TValue).ValueCollection.System.Collections.Generic.ICollection<TValue>.Remove(TValue)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.ObjectModel/src/System/Collections/ObjectModel/ReadOnlyDictionary.cs
+    startLine: 570
+  assemblies:
+  - System.ObjectModel
+  namespace: System.Collections.ObjectModel
+  syntax:
+    content: bool ICollection<TValue>.Remove(TValue item)
+    content.vb: Function System.Collections.Generic.ICollection<TValue>.Remove(item As TValue) As Boolean Implements ICollection(Of TValue).Remove
+    parameters:
+    - id: item
+      type: '{TValue}'
+    return:
+      type: System.Boolean
+- uid: System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.GetEnumerator
+  id: GetEnumerator
+  parent: System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection
+  href: System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.yml
+  name: GetEnumerator()
+  fullName: System.Collections.ObjectModel.ReadOnlyDictionary<TKey, TValue>.ValueCollection.GetEnumerator()
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyDictionary(Of TKey, TValue).ValueCollection.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.ObjectModel/src/System/Collections/ObjectModel/ReadOnlyDictionary.cs
+    startLine: 579
+  assemblies:
+  - System.ObjectModel
+  namespace: System.Collections.ObjectModel
+  summary: Returns an enumerator that iterates through the collection.
+  syntax:
+    content: public IEnumerator<TValue> GetEnumerator()
+    content.vb: Public Function GetEnumerator As IEnumerator(Of TValue)
+    return:
+      type: System.Collections.Generic.IEnumerator{{TValue}}
+      description: An enumerator that can be used to iterate through the collection.
+- uid: System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#IEnumerable#GetEnumerator
+  id: System#Collections#IEnumerable#GetEnumerator
+  parent: System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection
+  href: System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.yml
+  name: IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: System.Collections.ObjectModel.ReadOnlyDictionary<TKey, TValue>.ValueCollection.System.Collections.IEnumerable.GetEnumerator()
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyDictionary(Of TKey, TValue).ValueCollection.System.Collections.IEnumerable.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.ObjectModel/src/System/Collections/ObjectModel/ReadOnlyDictionary.cs
+    startLine: 588
+  assemblies:
+  - System.ObjectModel
+  namespace: System.Collections.ObjectModel
+  summary: Returns an enumerator that iterates through the collection.
+  syntax:
+    content: IEnumerator IEnumerable.GetEnumerator()
+    content.vb: Function System.Collections.IEnumerable.GetEnumerator As IEnumerator Implements IEnumerable.GetEnumerator
+    return:
+      type: System.Collections.IEnumerator
+      description: An enumerator that can be used to iterate through the collection.
+- uid: System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  id: System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  parent: System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection
+  href: System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.yml
+  name: ICollection.CopyTo(Array, Int32)
+  name.vb: System.Collections.ICollection.CopyTo(Array, Int32)
+  fullName: System.Collections.ObjectModel.ReadOnlyDictionary<TKey, TValue>.ValueCollection.System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyDictionary(Of TKey, TValue).ValueCollection.System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.ObjectModel/src/System/Collections/ObjectModel/ReadOnlyDictionary.cs
+    startLine: 597
+  assemblies:
+  - System.ObjectModel
+  namespace: System.Collections.ObjectModel
+  summary: Copies the elements of the collection to an array, starting at a specific array index.
+  syntax:
+    content: void ICollection.CopyTo(Array array, int index)
+    content.vb: Sub System.Collections.ICollection.CopyTo(array As Array, index As Integer) Implements ICollection.CopyTo
+    parameters:
+    - id: array
+      type: System.Array
+      description: The one-dimensional array that is the destination of the elements copied from the collection. The array must have zero-based indexing.
+    - id: index
+      type: System.Int32
+      description: The zero-based index in *array* at which copying begins.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than 0.'
+  - type: System.ArgumentException
+    description: '*array* is multidimensional.-or-The number of elements in the source collection is greater than the available space from *index* to the end of the destination *array*.'
+- uid: System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#ICollection#IsSynchronized
+  id: System#Collections#ICollection#IsSynchronized
+  parent: System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection
+  href: System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.yml
+  name: ICollection.IsSynchronized
+  name.vb: System.Collections.ICollection.IsSynchronized
+  fullName: System.Collections.ObjectModel.ReadOnlyDictionary<TKey, TValue>.ValueCollection.System.Collections.ICollection.IsSynchronized
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyDictionary(Of TKey, TValue).ValueCollection.System.Collections.ICollection.IsSynchronized
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.ObjectModel/src/System/Collections/ObjectModel/ReadOnlyDictionary.cs
+    startLine: 602
+  assemblies:
+  - System.ObjectModel
+  namespace: System.Collections.ObjectModel
+  summary: Gets a value that indicates whether access to the collection is synchronized (thread safe).
+  syntax:
+    content: bool ICollection.IsSynchronized { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.ICollection.IsSynchronized As Boolean Implements ICollection.IsSynchronized
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if access to the collection is synchronized (thread safe); otherwise, false.
+- uid: System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.System#Collections#ICollection#SyncRoot
+  id: System#Collections#ICollection#SyncRoot
+  parent: System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection
+  href: System.Collections.ObjectModel.ReadOnlyDictionary`2.ValueCollection.yml
+  name: ICollection.SyncRoot
+  name.vb: System.Collections.ICollection.SyncRoot
+  fullName: System.Collections.ObjectModel.ReadOnlyDictionary<TKey, TValue>.ValueCollection.System.Collections.ICollection.SyncRoot
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyDictionary(Of TKey, TValue).ValueCollection.System.Collections.ICollection.SyncRoot
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.ObjectModel/src/System/Collections/ObjectModel/ReadOnlyDictionary.cs
+    startLine: 607
+  assemblies:
+  - System.ObjectModel
+  namespace: System.Collections.ObjectModel
+  summary: Gets an object that can be used to synchronize access to the collection.
+  syntax:
+    content: object ICollection.SyncRoot { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.ICollection.SyncRoot As Object Implements ICollection.SyncRoot
+    parameters: []
+    return:
+      type: System.Object
+      description: An object that can be used to synchronize access to the collection.
+references:
+- uid: System.Collections.ObjectModel
+  isExternal: false
+  name: System.Collections.ObjectModel
+  fullName: System.Collections.ObjectModel
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: '{TValue}'
+  isExternal: false
+  name: TValue
+  fullName: TValue
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: '{TValue}[]'
+  isExternal: false
+  name: TValue[]
+  name.vb: TValue()
+  fullName: TValue[]
+  fullName.vb: TValue()
+  spec.csharp:
+  - name: TValue
+    fullName: TValue
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - name: TValue
+    fullName: TValue
+  - name: ()
+    fullName: ()
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Collections.Generic.IEnumerator{{TValue}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  name: IEnumerator<TValue>
+  name.vb: IEnumerator(Of TValue)
+  fullName: System.Collections.Generic.IEnumerator<TValue>
+  fullName.vb: System.Collections.Generic.IEnumerator(Of TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TValue
+    fullName: TValue
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TValue
+    fullName: TValue
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerator<T>
+  name.vb: IEnumerator(Of T)
+  fullName: System.Collections.Generic.IEnumerator<T>
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  isExternal: false
+  name: System.Collections
+  fullName: System.Collections
+- uid: System.Array
+  parent: System
+  isExternal: true
+  name: Array
+  fullName: System.Array

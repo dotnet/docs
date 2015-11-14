@@ -1,0 +1,546 @@
+items:
+- uid: System.Runtime.Serialization.Json.DataContractJsonSerializerSettings
+  id: DataContractJsonSerializerSettings
+  parent: System.Runtime.Serialization.Json
+  children:
+  - System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.DateTimeFormat
+  - System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.EmitTypeInformation
+  - System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.IgnoreExtensionDataObject
+  - System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.KnownTypes
+  - System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.MaxItemsInObjectGraph
+  - System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.RootName
+  - System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.SerializeReadOnlyTypes
+  - System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.UseSimpleDictionaryFormat
+  href: System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.yml
+  name: DataContractJsonSerializerSettings
+  fullName: System.Runtime.Serialization.Json.DataContractJsonSerializerSettings
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Private.DataContractSerialization/src/System/Runtime/Serialization/Json/DataContractJsonSerializerSettings.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Private.DataContractSerialization/src/System/Runtime/Serialization/Json/DataContractJsonSerializerSettings.cs
+    startLine: 14
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Runtime.Serialization.Json
+  summary: Specifies @'System.Runtime.Serialization.Json.DataContractJsonSerializer' settings.
+  syntax:
+    content: public class DataContractJsonSerializerSettings
+    content.vb: Public Class DataContractJsonSerializerSettings
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.RootName
+  id: RootName
+  parent: System.Runtime.Serialization.Json.DataContractJsonSerializerSettings
+  href: System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.yml
+  name: RootName
+  fullName: System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.RootName
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Runtime/Serialization/Json/DataContractJsonSerializerSettings.cs
+    startLine: 21
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Runtime.Serialization.Json
+  summary: Gets or sets the root name of the selected object.
+  syntax:
+    content: public string RootName { get; set; }
+    content.vb: Public Property RootName As String
+    parameters: []
+    return:
+      type: System.String
+      description: The root name of the selected object.
+- uid: System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.KnownTypes
+  id: KnownTypes
+  parent: System.Runtime.Serialization.Json.DataContractJsonSerializerSettings
+  href: System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.yml
+  name: KnownTypes
+  fullName: System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.KnownTypes
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Runtime/Serialization/Json/DataContractJsonSerializerSettings.cs
+    startLine: 26
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Runtime.Serialization.Json
+  summary: Gets or sets a collection of types that may be present in the object graph serialized using this instance the DataContractJsonSerializerSettings.
+  syntax:
+    content: public IEnumerable<Type> KnownTypes { get; set; }
+    content.vb: Public Property KnownTypes As IEnumerable(Of Type)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Type}
+      description: A collection of types that may be present in the object graph serialized using this instance the DataContractJsonSerializerSettings.
+- uid: System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.MaxItemsInObjectGraph
+  id: MaxItemsInObjectGraph
+  parent: System.Runtime.Serialization.Json.DataContractJsonSerializerSettings
+  href: System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.yml
+  name: MaxItemsInObjectGraph
+  fullName: System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.MaxItemsInObjectGraph
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Runtime/Serialization/Json/DataContractJsonSerializerSettings.cs
+    startLine: 31
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Runtime.Serialization.Json
+  summary: Gets or sets the maximum number of items in an object graph to serialize or deserialize.
+  syntax:
+    content: public int MaxItemsInObjectGraph { get; set; }
+    content.vb: Public Property MaxItemsInObjectGraph As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: The maximum number of items in an object graph to serialize or deserialize.
+- uid: System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.IgnoreExtensionDataObject
+  id: IgnoreExtensionDataObject
+  parent: System.Runtime.Serialization.Json.DataContractJsonSerializerSettings
+  href: System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.yml
+  name: IgnoreExtensionDataObject
+  fullName: System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.IgnoreExtensionDataObject
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Runtime/Serialization/Json/DataContractJsonSerializerSettings.cs
+    startLine: 47
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Runtime.Serialization.Json
+  summary: Gets or sets a value that specifies whether to ignore data supplied by an extension of the class when the class is being serialized or deserialized.
+  syntax:
+    content: public bool IgnoreExtensionDataObject { get; set; }
+    content.vb: Public Property IgnoreExtensionDataObject As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: True to ignore data supplied by an extension of the class when the class is being serialized or deserialized; otherwise, false.
+- uid: System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.EmitTypeInformation
+  id: EmitTypeInformation
+  parent: System.Runtime.Serialization.Json.DataContractJsonSerializerSettings
+  href: System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.yml
+  name: EmitTypeInformation
+  fullName: System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.EmitTypeInformation
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Runtime/Serialization/Json/DataContractJsonSerializerSettings.cs
+    startLine: 52
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Runtime.Serialization.Json
+  summary: Gets or sets the data contract JSON serializer settings to emit type information.
+  syntax:
+    content: public EmitTypeInformation EmitTypeInformation { get; set; }
+    content.vb: Public Property EmitTypeInformation As EmitTypeInformation
+    parameters: []
+    return:
+      type: System.Runtime.Serialization.EmitTypeInformation
+      description: The data contract JSON serializer settings to emit type information.
+- uid: System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.DateTimeFormat
+  id: DateTimeFormat
+  parent: System.Runtime.Serialization.Json.DataContractJsonSerializerSettings
+  href: System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.yml
+  name: DateTimeFormat
+  fullName: System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.DateTimeFormat
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Runtime/Serialization/Json/DataContractJsonSerializerSettings.cs
+    startLine: 57
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Runtime.Serialization.Json
+  summary: Gets or sets a DateTimeFormat that defines the culturally appropriate format of displaying dates and times.
+  syntax:
+    content: public DateTimeFormat DateTimeFormat { get; set; }
+    content.vb: Public Property DateTimeFormat As DateTimeFormat
+    parameters: []
+    return:
+      type: System.Runtime.Serialization.DateTimeFormat
+      description: The DateTimeFormat that defines the culturally appropriate format of displaying dates and times.
+- uid: System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.SerializeReadOnlyTypes
+  id: SerializeReadOnlyTypes
+  parent: System.Runtime.Serialization.Json.DataContractJsonSerializerSettings
+  href: System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.yml
+  name: SerializeReadOnlyTypes
+  fullName: System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.SerializeReadOnlyTypes
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Runtime/Serialization/Json/DataContractJsonSerializerSettings.cs
+    startLine: 62
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Runtime.Serialization.Json
+  summary: Gets or sets a value that specifies whether to serialize read only types.
+  syntax:
+    content: public bool SerializeReadOnlyTypes { get; set; }
+    content.vb: Public Property SerializeReadOnlyTypes As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: True to serialize read only types; otherwise false.
+- uid: System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.UseSimpleDictionaryFormat
+  id: UseSimpleDictionaryFormat
+  parent: System.Runtime.Serialization.Json.DataContractJsonSerializerSettings
+  href: System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.yml
+  name: UseSimpleDictionaryFormat
+  fullName: System.Runtime.Serialization.Json.DataContractJsonSerializerSettings.UseSimpleDictionaryFormat
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Runtime/Serialization/Json/DataContractJsonSerializerSettings.cs
+    startLine: 67
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Runtime.Serialization.Json
+  summary: Gets or sets a value that specifies whether to use a simple dictionary format.
+  syntax:
+    content: public bool UseSimpleDictionaryFormat { get; set; }
+    content.vb: Public Property UseSimpleDictionaryFormat As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: True to use a simple dictionary format; otherwise, false.
+references:
+- uid: System.Runtime.Serialization.Json
+  isExternal: false
+  name: System.Runtime.Serialization.Json
+  fullName: System.Runtime.Serialization.Json
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Collections.Generic.IEnumerable{System.Type}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: System.Collections.Generic.IEnumerable`1.yml
+  name: IEnumerable<Type>
+  name.vb: IEnumerable(Of Type)
+  fullName: System.Collections.Generic.IEnumerable<System.Type>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Type)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    href: System.Collections.Generic.IEnumerable`1.yml
+  - name: <
+    fullName: <
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    href: System.Collections.Generic.IEnumerable`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Runtime.Serialization.EmitTypeInformation
+  parent: System.Runtime.Serialization
+  isExternal: false
+  href: System.Runtime.Serialization.EmitTypeInformation.yml
+  name: EmitTypeInformation
+  fullName: System.Runtime.Serialization.EmitTypeInformation
+  type: Enum
+  summary: Dummy documentation
+- uid: System.Runtime.Serialization
+  isExternal: false
+  name: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+  type: Namespace
+- uid: System.Runtime.Serialization.DateTimeFormat
+  isExternal: false
+  href: System.Runtime.Serialization.DateTimeFormat.yml
+  name: DateTimeFormat
+  fullName: System.Runtime.Serialization.DateTimeFormat
+  type: Class
+  summary: >-
+    This class is used to customize the way DateTime is
+
+    serialized or deserialized by @'System.Runtime.Serialization.Json.DataContractJsonSerializer'

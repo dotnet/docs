@@ -1,0 +1,730 @@
+items:
+- uid: System.Tuple`7
+  id: Tuple`7
+  parent: System
+  children:
+  - System.Tuple`7.#ctor(`0,`1,`2,`3,`4,`5,`6)
+  - System.Tuple`7.Equals(System.Object)
+  - System.Tuple`7.GetHashCode
+  - System.Tuple`7.Item1
+  - System.Tuple`7.Item2
+  - System.Tuple`7.Item3
+  - System.Tuple`7.Item4
+  - System.Tuple`7.Item5
+  - System.Tuple`7.Item6
+  - System.Tuple`7.Item7
+  - System.Tuple`7.System#Collections#IStructuralComparable#CompareTo(System.Object,System.Collections.IComparer)
+  - System.Tuple`7.System#Collections#IStructuralEquatable#Equals(System.Object,System.Collections.IEqualityComparer)
+  - System.Tuple`7.System#Collections#IStructuralEquatable#GetHashCode(System.Collections.IEqualityComparer)
+  - System.Tuple`7.System#IComparable#CompareTo(System.Object)
+  - System.Tuple`7.ToString
+  href: System.Tuple`7.yml
+  name: Tuple<T1, T2, T3, T4, T5, T6, T7>
+  name.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7)
+  fullName: System.Tuple<T1, T2, T3, T4, T5, T6, T7>
+  fullName.vb: System.Tuple(Of T1, T2, T3, T4, T5, T6, T7)
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Tuple.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Tuple.cs
+    startLine: 666
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Represents a 7-tuple, or septuple.
+  syntax:
+    content: 'public class Tuple<T1, T2, T3, T4, T5, T6, T7> : IStructuralEquatable, IStructuralComparable, IComparable, ITuple'
+    content.vb: Public Class Tuple(Of T1, T2, T3, T4, T5, T6, T7) Implements IStructuralEquatable, IStructuralComparable, IComparable, ITuple
+    typeParameters:
+    - id: T1
+    - id: T2
+    - id: T3
+    - id: T4
+    - id: T5
+    - id: T6
+    - id: T7
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.IStructuralEquatable
+  - System.Collections.IStructuralComparable
+  - System.IComparable
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Tuple`7.Item1
+  id: Item1
+  parent: System.Tuple`7
+  href: System.Tuple`7.yml
+  name: Item1
+  fullName: System.Tuple<T1, T2, T3, T4, T5, T6, T7>.Item1
+  fullName.vb: System.Tuple(Of T1, T2, T3, T4, T5, T6, T7).Item1
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Tuple.cs
+    startLine: 677
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the value of the current @'System.Tuple`7' object's first component.
+  syntax:
+    content: public T1 Item1 { get; }
+    content.vb: Public ReadOnly Property Item1 As T1
+    parameters: []
+    return:
+      type: '{T1}'
+      description: The value of the current @'System.Tuple`7' object's first component.
+- uid: System.Tuple`7.Item2
+  id: Item2
+  parent: System.Tuple`7
+  href: System.Tuple`7.yml
+  name: Item2
+  fullName: System.Tuple<T1, T2, T3, T4, T5, T6, T7>.Item2
+  fullName.vb: System.Tuple(Of T1, T2, T3, T4, T5, T6, T7).Item2
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Tuple.cs
+    startLine: 678
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the value of the current @'System.Tuple`7' object's second component.
+  syntax:
+    content: public T2 Item2 { get; }
+    content.vb: Public ReadOnly Property Item2 As T2
+    parameters: []
+    return:
+      type: '{T2}'
+      description: The value of the current @'System.Tuple`7' object's second component.
+- uid: System.Tuple`7.Item3
+  id: Item3
+  parent: System.Tuple`7
+  href: System.Tuple`7.yml
+  name: Item3
+  fullName: System.Tuple<T1, T2, T3, T4, T5, T6, T7>.Item3
+  fullName.vb: System.Tuple(Of T1, T2, T3, T4, T5, T6, T7).Item3
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Tuple.cs
+    startLine: 679
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the value of the current @'System.Tuple`7' object's third component.
+  syntax:
+    content: public T3 Item3 { get; }
+    content.vb: Public ReadOnly Property Item3 As T3
+    parameters: []
+    return:
+      type: '{T3}'
+      description: The value of the current @'System.Tuple`7' object's third component.
+- uid: System.Tuple`7.Item4
+  id: Item4
+  parent: System.Tuple`7
+  href: System.Tuple`7.yml
+  name: Item4
+  fullName: System.Tuple<T1, T2, T3, T4, T5, T6, T7>.Item4
+  fullName.vb: System.Tuple(Of T1, T2, T3, T4, T5, T6, T7).Item4
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Tuple.cs
+    startLine: 680
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the value of the current @'System.Tuple`7' object's fourth component.
+  syntax:
+    content: public T4 Item4 { get; }
+    content.vb: Public ReadOnly Property Item4 As T4
+    parameters: []
+    return:
+      type: '{T4}'
+      description: The value of the current @'System.Tuple`7' object's fourth component.
+- uid: System.Tuple`7.Item5
+  id: Item5
+  parent: System.Tuple`7
+  href: System.Tuple`7.yml
+  name: Item5
+  fullName: System.Tuple<T1, T2, T3, T4, T5, T6, T7>.Item5
+  fullName.vb: System.Tuple(Of T1, T2, T3, T4, T5, T6, T7).Item5
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Tuple.cs
+    startLine: 681
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the value of the current @'System.Tuple`7' object's fifth component.
+  syntax:
+    content: public T5 Item5 { get; }
+    content.vb: Public ReadOnly Property Item5 As T5
+    parameters: []
+    return:
+      type: '{T5}'
+      description: The value of the current @'System.Tuple`7' object's fifth component.
+- uid: System.Tuple`7.Item6
+  id: Item6
+  parent: System.Tuple`7
+  href: System.Tuple`7.yml
+  name: Item6
+  fullName: System.Tuple<T1, T2, T3, T4, T5, T6, T7>.Item6
+  fullName.vb: System.Tuple(Of T1, T2, T3, T4, T5, T6, T7).Item6
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Tuple.cs
+    startLine: 682
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the value of the current @'System.Tuple`7' object's sixth component.
+  syntax:
+    content: public T6 Item6 { get; }
+    content.vb: Public ReadOnly Property Item6 As T6
+    parameters: []
+    return:
+      type: '{T6}'
+      description: The value of the current @'System.Tuple`7' object's sixth component.
+- uid: System.Tuple`7.Item7
+  id: Item7
+  parent: System.Tuple`7
+  href: System.Tuple`7.yml
+  name: Item7
+  fullName: System.Tuple<T1, T2, T3, T4, T5, T6, T7>.Item7
+  fullName.vb: System.Tuple(Of T1, T2, T3, T4, T5, T6, T7).Item7
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Tuple.cs
+    startLine: 683
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the value of the current @'System.Tuple`7' object's seventh component.
+  syntax:
+    content: public T7 Item7 { get; }
+    content.vb: Public ReadOnly Property Item7 As T7
+    parameters: []
+    return:
+      type: '{T7}'
+      description: The value of the current @'System.Tuple`7' object's seventh component.
+- uid: System.Tuple`7.#ctor(`0,`1,`2,`3,`4,`5,`6)
+  id: '#ctor(`0,`1,`2,`3,`4,`5,`6)'
+  parent: System.Tuple`7
+  href: System.Tuple`7.yml
+  name: Tuple(T1, T2, T3, T4, T5, T6, T7)
+  fullName: System.Tuple<T1, T2, T3, T4, T5, T6, T7>.Tuple(T1, T2, T3, T4, T5, T6, T7)
+  fullName.vb: System.Tuple(Of T1, T2, T3, T4, T5, T6, T7).Tuple(T1, T2, T3, T4, T5, T6, T7)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Tuple.cs
+    startLine: 685
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of the @'System.Tuple`7' class.
+  syntax:
+    content: public Tuple(T1 item1, T2 item2, T3 item3, T4 item4, T5 item5, T6 item6, T7 item7)
+    content.vb: Public Sub New(item1 As T1, item2 As T2, item3 As T3, item4 As T4, item5 As T5, item6 As T6, item7 As T7)
+    parameters:
+    - id: item1
+      type: '{T1}'
+      description: The value of the tuple's first component.
+    - id: item2
+      type: '{T2}'
+      description: The value of the tuple's second component.
+    - id: item3
+      type: '{T3}'
+      description: The value of the tuple's third component.
+    - id: item4
+      type: '{T4}'
+      description: The value of the tuple's fourth component
+    - id: item5
+      type: '{T5}'
+      description: The value of the tuple's fifth component.
+    - id: item6
+      type: '{T6}'
+      description: The value of the tuple's sixth component.
+    - id: item7
+      type: '{T7}'
+      description: The value of the tuple's seventh component.
+- uid: System.Tuple`7.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Tuple`7
+  href: System.Tuple`7.yml
+  name: Equals(Object)
+  fullName: System.Tuple<T1, T2, T3, T4, T5, T6, T7>.Equals(System.Object)
+  fullName.vb: System.Tuple(Of T1, T2, T3, T4, T5, T6, T7).Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Tuple.cs
+    startLine: 695
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns a value that indicates whether the current @'System.Tuple`7' object is equal to a specified object.
+  syntax:
+    content: public override bool Equals(object obj)
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with this instance.
+    return:
+      type: System.Boolean
+      description: true if the current instance is equal to the specified object; otherwise, false.
+  overridden: System.Object.Equals(System.Object)
+- uid: System.Tuple`7.System#Collections#IStructuralEquatable#Equals(System.Object,System.Collections.IEqualityComparer)
+  id: System#Collections#IStructuralEquatable#Equals(System.Object,System.Collections.IEqualityComparer)
+  parent: System.Tuple`7
+  href: System.Tuple`7.yml
+  name: IStructuralEquatable.Equals(Object, IEqualityComparer)
+  name.vb: System.Collections.IStructuralEquatable.Equals(Object, IEqualityComparer)
+  fullName: System.Tuple<T1, T2, T3, T4, T5, T6, T7>.System.Collections.IStructuralEquatable.Equals(System.Object, System.Collections.IEqualityComparer)
+  fullName.vb: System.Tuple(Of T1, T2, T3, T4, T5, T6, T7).System.Collections.IStructuralEquatable.Equals(System.Object, System.Collections.IEqualityComparer)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Tuple.cs
+    startLine: 699
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns a value that indicates whether the current @'System.Tuple`7' object is equal to a specified object based on a specified comparison method.
+  syntax:
+    content: bool IStructuralEquatable.Equals(object other, IEqualityComparer comparer)
+    content.vb: Function System.Collections.IStructuralEquatable.Equals(other As Object, comparer As IEqualityComparer) As Boolean Implements IStructuralEquatable.Equals
+    parameters:
+    - id: other
+      type: System.Object
+      description: The object to compare with this instance.
+    - id: comparer
+      type: System.Collections.IEqualityComparer
+      description: An object that defines the method to use to evaluate whether the two objects are equal.
+    return:
+      type: System.Boolean
+      description: true if the current instance is equal to the specified object; otherwise, false.
+- uid: System.Tuple`7.System#IComparable#CompareTo(System.Object)
+  id: System#IComparable#CompareTo(System.Object)
+  parent: System.Tuple`7
+  href: System.Tuple`7.yml
+  name: IComparable.CompareTo(Object)
+  name.vb: System.IComparable.CompareTo(Object)
+  fullName: System.Tuple<T1, T2, T3, T4, T5, T6, T7>.System.IComparable.CompareTo(System.Object)
+  fullName.vb: System.Tuple(Of T1, T2, T3, T4, T5, T6, T7).System.IComparable.CompareTo(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Tuple.cs
+    startLine: 711
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Compares the current @'System.Tuple`7' object to a specified object and returns an integer that indicates whether the current object is before, after, or in the same position as the specified object in the sort order.
+  syntax:
+    content: int IComparable.CompareTo(object obj)
+    content.vb: Function System.IComparable.CompareTo(obj As Object) As Integer Implements IComparable.CompareTo
+    parameters:
+    - id: obj
+      type: System.Object
+      description: An object to compare with the current instance.
+    return:
+      type: System.Int32
+      description: A signed integer that indicates the relative position of this instance and *obj* in the sort order, as shown in the following table.ValueDescriptionA negative integerThis instance precedes *obj*.ZeroThis instance and *obj* have the same position in the sort order.A positive integerThis instance follows *obj*.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*obj* is not a @''System.Tuple`7'' object.'
+- uid: System.Tuple`7.System#Collections#IStructuralComparable#CompareTo(System.Object,System.Collections.IComparer)
+  id: System#Collections#IStructuralComparable#CompareTo(System.Object,System.Collections.IComparer)
+  parent: System.Tuple`7
+  href: System.Tuple`7.yml
+  name: IStructuralComparable.CompareTo(Object, IComparer)
+  name.vb: System.Collections.IStructuralComparable.CompareTo(Object, IComparer)
+  fullName: System.Tuple<T1, T2, T3, T4, T5, T6, T7>.System.Collections.IStructuralComparable.CompareTo(System.Object, System.Collections.IComparer)
+  fullName.vb: System.Tuple(Of T1, T2, T3, T4, T5, T6, T7).System.Collections.IStructuralComparable.CompareTo(System.Object, System.Collections.IComparer)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Tuple.cs
+    startLine: 715
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Compares the current @'System.Tuple`7' object to a specified object by using a specified comparer, and returns an integer that indicates whether the current object is before, after, or in the same position as the specified object in the sort order.
+  syntax:
+    content: int IStructuralComparable.CompareTo(object other, IComparer comparer)
+    content.vb: Function System.Collections.IStructuralComparable.CompareTo(other As Object, comparer As IComparer) As Integer Implements IStructuralComparable.CompareTo
+    parameters:
+    - id: other
+      type: System.Object
+      description: An object to compare with the current instance.
+    - id: comparer
+      type: System.Collections.IComparer
+      description: An object that provides custom rules for comparison.
+    return:
+      type: System.Int32
+      description: A signed integer that indicates the relative position of this instance and *other* in the sort order, as shown in the following table.ValueDescriptionA negative integerThis instance precedes *other*.ZeroThis instance and *other* have the same position in the sort order.A positive integerThis instance follows *other*.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*other* is not a @''System.Tuple`7'' object.'
+- uid: System.Tuple`7.GetHashCode
+  id: GetHashCode
+  parent: System.Tuple`7
+  href: System.Tuple`7.yml
+  name: GetHashCode()
+  fullName: System.Tuple<T1, T2, T3, T4, T5, T6, T7>.GetHashCode()
+  fullName.vb: System.Tuple(Of T1, T2, T3, T4, T5, T6, T7).GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Tuple.cs
+    startLine: 753
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns the hash code for the current @'System.Tuple`7' object.
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: A 32-bit signed integer hash code.
+  overridden: System.Object.GetHashCode
+- uid: System.Tuple`7.System#Collections#IStructuralEquatable#GetHashCode(System.Collections.IEqualityComparer)
+  id: System#Collections#IStructuralEquatable#GetHashCode(System.Collections.IEqualityComparer)
+  parent: System.Tuple`7
+  href: System.Tuple`7.yml
+  name: IStructuralEquatable.GetHashCode(IEqualityComparer)
+  name.vb: System.Collections.IStructuralEquatable.GetHashCode(IEqualityComparer)
+  fullName: System.Tuple<T1, T2, T3, T4, T5, T6, T7>.System.Collections.IStructuralEquatable.GetHashCode(System.Collections.IEqualityComparer)
+  fullName.vb: System.Tuple(Of T1, T2, T3, T4, T5, T6, T7).System.Collections.IStructuralEquatable.GetHashCode(System.Collections.IEqualityComparer)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Tuple.cs
+    startLine: 757
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Calculates the hash code for the current @'System.Tuple`7' object by using a specified computation method.
+  syntax:
+    content: int IStructuralEquatable.GetHashCode(IEqualityComparer comparer)
+    content.vb: Function System.Collections.IStructuralEquatable.GetHashCode(comparer As IEqualityComparer) As Integer Implements IStructuralEquatable.GetHashCode
+    parameters:
+    - id: comparer
+      type: System.Collections.IEqualityComparer
+      description: An object whose @'System.Collections.IEqualityComparer.GetHashCode(System.Object)' method calculates the hash code of the current @'System.Tuple`7' object.
+    return:
+      type: System.Int32
+      description: A 32-bit signed integer hash code.
+- uid: System.Tuple`7.ToString
+  id: ToString
+  parent: System.Tuple`7
+  href: System.Tuple`7.yml
+  name: ToString()
+  fullName: System.Tuple<T1, T2, T3, T4, T5, T6, T7>.ToString()
+  fullName.vb: System.Tuple(Of T1, T2, T3, T4, T5, T6, T7).ToString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Tuple.cs
+    startLine: 764
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns a string that represents the value of this @'System.Tuple`7' instance.
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+      description: The string representation of this @'System.Tuple`7' object.
+  overridden: System.Object.ToString
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: '{T1}'
+  isExternal: false
+  name: T1
+  fullName: T1
+- uid: '{T2}'
+  isExternal: false
+  name: T2
+  fullName: T2
+- uid: '{T3}'
+  isExternal: false
+  name: T3
+  fullName: T3
+- uid: '{T4}'
+  isExternal: false
+  name: T4
+  fullName: T4
+- uid: '{T5}'
+  isExternal: false
+  name: T5
+  fullName: T5
+- uid: '{T6}'
+  isExternal: false
+  name: T6
+  fullName: T6
+- uid: '{T7}'
+  isExternal: false
+  name: T7
+  fullName: T7
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Collections.IEqualityComparer
+  parent: System.Collections
+  isExternal: true
+  name: IEqualityComparer
+  fullName: System.Collections.IEqualityComparer
+- uid: System.Collections
+  isExternal: false
+  name: System.Collections
+  fullName: System.Collections
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Collections.IComparer
+  parent: System.Collections
+  isExternal: true
+  name: IComparer
+  fullName: System.Collections.IComparer
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String

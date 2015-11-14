@@ -1,0 +1,944 @@
+items:
+- uid: System.Runtime.InteropServices.SafeBuffer
+  id: SafeBuffer
+  parent: System.Runtime.InteropServices
+  children:
+  - System.Runtime.InteropServices.SafeBuffer.#ctor(System.Boolean)
+  - System.Runtime.InteropServices.SafeBuffer.AcquirePointer(System.Byte*@)
+  - System.Runtime.InteropServices.SafeBuffer.ByteLength
+  - System.Runtime.InteropServices.SafeBuffer.Initialize(System.UInt32,System.UInt32)
+  - System.Runtime.InteropServices.SafeBuffer.Initialize(System.UInt64)
+  - System.Runtime.InteropServices.SafeBuffer.Initialize``1(System.UInt32)
+  - System.Runtime.InteropServices.SafeBuffer.Read``1(System.UInt64)
+  - System.Runtime.InteropServices.SafeBuffer.ReadArray``1(System.UInt64,``0[],System.Int32,System.Int32)
+  - System.Runtime.InteropServices.SafeBuffer.ReleasePointer
+  - System.Runtime.InteropServices.SafeBuffer.Write``1(System.UInt64,``0)
+  - System.Runtime.InteropServices.SafeBuffer.WriteArray``1(System.UInt64,``0[],System.Int32,System.Int32)
+  href: System.Runtime.InteropServices.SafeBuffer.yml
+  name: SafeBuffer
+  fullName: System.Runtime.InteropServices.SafeBuffer
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/InteropServices/SafeBuffer.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/InteropServices/SafeBuffer.cs
+    startLine: 79
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Provides a controlled memory buffer that can be used for reading and writing. Attempts to access memory outside the controlled buffer (underruns and overruns) raise exceptions.
+  syntax:
+    content: 'public abstract class SafeBuffer : SafeHandleZeroOrMinusOneIsInvalid, IDisposable'
+    content.vb: Public MustInherit Class SafeBuffer Inherits SafeHandleZeroOrMinusOneIsInvalid Implements IDisposable
+  inheritance:
+  - System.Object
+  - System.Runtime.ConstrainedExecution.CriticalFinalizerObject
+  - System.Runtime.InteropServices.SafeHandle
+  - Microsoft.Win32.SafeHandles.SafeHandleZeroOrMinusOneIsInvalid
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - Microsoft.Win32.SafeHandles.SafeHandleZeroOrMinusOneIsInvalid.IsInvalid
+  - System.Runtime.InteropServices.SafeHandle.handle
+  - System.Runtime.InteropServices.SafeHandle.SetHandle(System.IntPtr)
+  - System.Runtime.InteropServices.SafeHandle.DangerousGetHandle
+  - System.Runtime.InteropServices.SafeHandle.IsClosed
+  - System.Runtime.InteropServices.SafeHandle.Close
+  - System.Runtime.InteropServices.SafeHandle.Dispose
+  - System.Runtime.InteropServices.SafeHandle.Dispose(System.Boolean)
+  - System.Runtime.InteropServices.SafeHandle.SetHandleAsInvalid
+  - System.Runtime.InteropServices.SafeHandle.ReleaseHandle
+  - System.Runtime.InteropServices.SafeHandle.DangerousAddRef(System.Boolean@)
+  - System.Runtime.InteropServices.SafeHandle.DangerousRelease
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Runtime.InteropServices.SafeBuffer.#ctor(System.Boolean)
+  id: '#ctor(System.Boolean)'
+  parent: System.Runtime.InteropServices.SafeBuffer
+  href: System.Runtime.InteropServices.SafeBuffer.yml
+  name: SafeBuffer(Boolean)
+  fullName: System.Runtime.InteropServices.SafeBuffer.SafeBuffer(System.Boolean)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/SafeBuffer.cs
+    startLine: 88
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Creates a new instance of the @'System.Runtime.InteropServices.SafeBuffer' class, and specifies whether the buffer handle is to be reliably released.
+  syntax:
+    content: protected SafeBuffer(bool ownsHandle)
+    content.vb: Protected Sub New(ownsHandle As Boolean)
+    parameters:
+    - id: ownsHandle
+      type: System.Boolean
+      description: true to reliably release the handle during the finalization phase; false to prevent reliable release (not recommended).
+- uid: System.Runtime.InteropServices.SafeBuffer.Initialize(System.UInt64)
+  id: Initialize(System.UInt64)
+  parent: System.Runtime.InteropServices.SafeBuffer
+  href: System.Runtime.InteropServices.SafeBuffer.yml
+  name: Initialize(UInt64)
+  fullName: System.Runtime.InteropServices.SafeBuffer.Initialize(System.UInt64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/SafeBuffer.cs
+    startLine: 98
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Defines the allocation size of the memory region in bytes. You must call this method before you use the @'System.Runtime.InteropServices.SafeBuffer' instance.
+  syntax:
+    content: public void Initialize(ulong numBytes)
+    content.vb: Public Sub Initialize(numBytes As ULong)
+    parameters:
+    - id: numBytes
+      type: System.UInt64
+      description: The number of bytes in the buffer.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*numBytes* is less than zero.-or-*numBytes* is greater than the available address space.'
+- uid: System.Runtime.InteropServices.SafeBuffer.Initialize(System.UInt32,System.UInt32)
+  id: Initialize(System.UInt32,System.UInt32)
+  parent: System.Runtime.InteropServices.SafeBuffer
+  href: System.Runtime.InteropServices.SafeBuffer.yml
+  name: Initialize(UInt32, UInt32)
+  fullName: System.Runtime.InteropServices.SafeBuffer.Initialize(System.UInt32, System.UInt32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/SafeBuffer.cs
+    startLine: 117
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Specifies the allocation size of the memory buffer by using the specified number of elements and element size. You must call this method before you use the @'System.Runtime.InteropServices.SafeBuffer' instance.
+  syntax:
+    content: public void Initialize(uint numElements, uint sizeOfEachElement)
+    content.vb: Public Sub Initialize(numElements As UInteger, sizeOfEachElement As UInteger)
+    parameters:
+    - id: numElements
+      type: System.UInt32
+      description: The number of elements in the buffer.
+    - id: sizeOfEachElement
+      type: System.UInt32
+      description: The size of each element in the buffer.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*numElements* is less than zero. -or-*sizeOfEachElement* is less than zero.-or-*numElements* multiplied by *sizeOfEachElement* is greater than the available address space.'
+- uid: System.Runtime.InteropServices.SafeBuffer.Initialize``1(System.UInt32)
+  id: Initialize``1(System.UInt32)
+  parent: System.Runtime.InteropServices.SafeBuffer
+  href: System.Runtime.InteropServices.SafeBuffer.yml
+  name: Initialize<T>(UInt32)
+  name.vb: Initialize(Of T)(UInt32)
+  fullName: System.Runtime.InteropServices.SafeBuffer.Initialize<T>(System.UInt32)
+  fullName.vb: System.Runtime.InteropServices.SafeBuffer.Initialize(Of T)(System.UInt32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/SafeBuffer.cs
+    startLine: 139
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Defines the allocation size of the memory region by specifying the number of value types. You must call this method before you use the @'System.Runtime.InteropServices.SafeBuffer' instance.
+  syntax:
+    content: 'public void Initialize<T>(uint numElements)where T : struct'
+    content.vb: Public Sub Initialize(Of T As Structure)(numElements As UInteger)
+    parameters:
+    - id: numElements
+      type: System.UInt32
+      description: The number of elements of the value type to allocate memory for.
+    typeParameters:
+    - id: T
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*numElements* is less than zero.-or-*numElements* multiplied by the size of each element is greater than the available address space.'
+- uid: System.Runtime.InteropServices.SafeBuffer.AcquirePointer(System.Byte*@)
+  id: AcquirePointer(System.Byte*@)
+  parent: System.Runtime.InteropServices.SafeBuffer
+  href: System.Runtime.InteropServices.SafeBuffer.yml
+  name: AcquirePointer(ref Byte*)
+  name.vb: AcquirePointer(ByRef Byte*)
+  fullName: System.Runtime.InteropServices.SafeBuffer.AcquirePointer(ref System.Byte*)
+  fullName.vb: System.Runtime.InteropServices.SafeBuffer.AcquirePointer(ByRef System.Byte*)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/SafeBuffer.cs
+    startLine: 175
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Obtains a pointer from a @'System.Runtime.InteropServices.SafeBuffer' object for a block of memory.
+  syntax:
+    content: public void AcquirePointer(ref byte *pointer)
+    content.vb: Public Sub AcquirePointer(ByRef pointer As Byte *)
+    parameters:
+    - id: pointer
+      type: System.Byte*
+      description: A byte pointer, passed by reference, to receive the pointer from within the @'System.Runtime.InteropServices.SafeBuffer' object. You must set this pointer to null before you call this method.
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The  method has not been called.
+- uid: System.Runtime.InteropServices.SafeBuffer.ReleasePointer
+  id: ReleasePointer
+  parent: System.Runtime.InteropServices.SafeBuffer
+  href: System.Runtime.InteropServices.SafeBuffer.yml
+  name: ReleasePointer()
+  fullName: System.Runtime.InteropServices.SafeBuffer.ReleasePointer()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/SafeBuffer.cs
+    startLine: 195
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Releases a pointer that was obtained by the @'System.Runtime.InteropServices.SafeBuffer.AcquirePointer(System.Byte*@)' method.
+  syntax:
+    content: public void ReleasePointer()
+    content.vb: Public Sub ReleasePointer
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The  method has not been called.
+- uid: System.Runtime.InteropServices.SafeBuffer.Read``1(System.UInt64)
+  id: Read``1(System.UInt64)
+  parent: System.Runtime.InteropServices.SafeBuffer
+  href: System.Runtime.InteropServices.SafeBuffer.yml
+  name: Read<T>(UInt64)
+  name.vb: Read(Of T)(UInt64)
+  fullName: System.Runtime.InteropServices.SafeBuffer.Read<T>(System.UInt64)
+  fullName.vb: System.Runtime.InteropServices.SafeBuffer.Read(Of T)(System.UInt64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/SafeBuffer.cs
+    startLine: 212
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Reads a value type from memory at the specified offset.
+  syntax:
+    content: 'public T Read<T>(ulong byteOffset)where T : struct'
+    content.vb: Public Function Read(Of T As Structure)(byteOffset As ULong) As T
+    parameters:
+    - id: byteOffset
+      type: System.UInt64
+      description: The location from which to read the value type. You may have to consider alignment issues.
+    typeParameters:
+    - id: T
+      description: The value type to read
+    return:
+      type: '{T}'
+      description: The value type that was read from memory.
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The  method has not been called.
+- uid: System.Runtime.InteropServices.SafeBuffer.ReadArray``1(System.UInt64,``0[],System.Int32,System.Int32)
+  id: ReadArray``1(System.UInt64,``0[],System.Int32,System.Int32)
+  parent: System.Runtime.InteropServices.SafeBuffer
+  href: System.Runtime.InteropServices.SafeBuffer.yml
+  name: ReadArray<T>(UInt64, T[], Int32, Int32)
+  name.vb: ReadArray(Of T)(UInt64, T(), Int32, Int32)
+  fullName: System.Runtime.InteropServices.SafeBuffer.ReadArray<T>(System.UInt64, T[], System.Int32, System.Int32)
+  fullName.vb: System.Runtime.InteropServices.SafeBuffer.ReadArray(Of T)(System.UInt64, T(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/SafeBuffer.cs
+    startLine: 240
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Reads the specified number of value types from memory starting at the offset, and writes them into an array starting at the index.
+  syntax:
+    content: 'public void ReadArray<T>(ulong byteOffset, T[] array, int index, int count)where T : struct'
+    content.vb: Public Sub ReadArray(Of T As Structure)(byteOffset As ULong, array As T(), index As Integer, count As Integer)
+    parameters:
+    - id: byteOffset
+      type: System.UInt64
+      description: The location from which to start reading.
+    - id: array
+      type: '{T}[]'
+      description: The output array to write to.
+    - id: index
+      type: System.Int32
+      description: The location in the output array to begin writing to.
+    - id: count
+      type: System.Int32
+      description: The number of value types to read from the input array and to write to the output array.
+    typeParameters:
+    - id: T
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than zero.-or-*count* is less than zero.'
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentException
+    description: The length of the array minus the index is less than *count*.
+  - type: System.InvalidOperationException
+    description: The  method has not been called.
+- uid: System.Runtime.InteropServices.SafeBuffer.Write``1(System.UInt64,``0)
+  id: Write``1(System.UInt64,``0)
+  parent: System.Runtime.InteropServices.SafeBuffer
+  href: System.Runtime.InteropServices.SafeBuffer.yml
+  name: Write<T>(UInt64, T)
+  name.vb: Write(Of T)(UInt64, T)
+  fullName: System.Runtime.InteropServices.SafeBuffer.Write<T>(System.UInt64, T)
+  fullName.vb: System.Runtime.InteropServices.SafeBuffer.Write(Of T)(System.UInt64, T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/SafeBuffer.cs
+    startLine: 287
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Writes a value type to memory at the given location.
+  syntax:
+    content: 'public void Write<T>(ulong byteOffset, T value)where T : struct'
+    content.vb: Public Sub Write(Of T As Structure)(byteOffset As ULong, value As T)
+    parameters:
+    - id: byteOffset
+      type: System.UInt64
+      description: The location at which to start writing. You may have to consider alignment issues.
+    - id: value
+      type: '{T}'
+      description: The value to write.
+    typeParameters:
+    - id: T
+      description: The type of the value type to write to memory.
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The  method has not been called.
+- uid: System.Runtime.InteropServices.SafeBuffer.WriteArray``1(System.UInt64,``0[],System.Int32,System.Int32)
+  id: WriteArray``1(System.UInt64,``0[],System.Int32,System.Int32)
+  parent: System.Runtime.InteropServices.SafeBuffer
+  href: System.Runtime.InteropServices.SafeBuffer.yml
+  name: WriteArray<T>(UInt64, T[], Int32, Int32)
+  name.vb: WriteArray(Of T)(UInt64, T(), Int32, Int32)
+  fullName: System.Runtime.InteropServices.SafeBuffer.WriteArray<T>(System.UInt64, T[], System.Int32, System.Int32)
+  fullName.vb: System.Runtime.InteropServices.SafeBuffer.WriteArray(Of T)(System.UInt64, T(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/SafeBuffer.cs
+    startLine: 312
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Writes the specified number of value types to a memory location by reading bytes starting from the specified location in the input array.
+  syntax:
+    content: 'public void WriteArray<T>(ulong byteOffset, T[] array, int index, int count)where T : struct'
+    content.vb: Public Sub WriteArray(Of T As Structure)(byteOffset As ULong, array As T(), index As Integer, count As Integer)
+    parameters:
+    - id: byteOffset
+      type: System.UInt64
+      description: The location in memory to write to.
+    - id: array
+      type: '{T}[]'
+      description: The input array.
+    - id: index
+      type: System.Int32
+      description: The offset in the array to start reading from.
+    - id: count
+      type: System.Int32
+      description: The number of value types to write.
+    typeParameters:
+    - id: T
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* or *count* is less than zero.'
+  - type: System.ArgumentException
+    description: The length of the input array minus *index* is less than *count*.
+  - type: System.InvalidOperationException
+    description: The  method has not been called.
+- uid: System.Runtime.InteropServices.SafeBuffer.ByteLength
+  id: ByteLength
+  parent: System.Runtime.InteropServices.SafeBuffer
+  href: System.Runtime.InteropServices.SafeBuffer.yml
+  name: ByteLength
+  fullName: System.Runtime.InteropServices.SafeBuffer.ByteLength
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/SafeBuffer.cs
+    startLine: 354
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Gets the size of the buffer, in bytes.
+  syntax:
+    content: public ulong ByteLength { get; }
+    content.vb: Public ReadOnly Property ByteLength As ULong
+    parameters: []
+    return:
+      type: System.UInt64
+      description: The number of bytes in the memory buffer.
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The  method has not been called.
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Runtime.ConstrainedExecution.CriticalFinalizerObject
+  parent: System.Runtime.ConstrainedExecution
+  isExternal: true
+  name: CriticalFinalizerObject
+  fullName: System.Runtime.ConstrainedExecution.CriticalFinalizerObject
+- uid: System.Runtime.InteropServices.SafeHandle
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  name: SafeHandle
+  fullName: System.Runtime.InteropServices.SafeHandle
+- uid: Microsoft.Win32.SafeHandles.SafeHandleZeroOrMinusOneIsInvalid
+  parent: Microsoft.Win32.SafeHandles
+  isExternal: true
+  name: SafeHandleZeroOrMinusOneIsInvalid
+  fullName: Microsoft.Win32.SafeHandles.SafeHandleZeroOrMinusOneIsInvalid
+- uid: Microsoft.Win32.SafeHandles.SafeHandleZeroOrMinusOneIsInvalid.IsInvalid
+  parent: Microsoft.Win32.SafeHandles.SafeHandleZeroOrMinusOneIsInvalid
+  isExternal: true
+  name: IsInvalid
+  fullName: Microsoft.Win32.SafeHandles.SafeHandleZeroOrMinusOneIsInvalid.IsInvalid
+- uid: System.Runtime.InteropServices.SafeHandle.handle
+  parent: System.Runtime.InteropServices.SafeHandle
+  isExternal: true
+  name: handle
+  fullName: System.Runtime.InteropServices.SafeHandle.handle
+- uid: System.Runtime.InteropServices.SafeHandle.SetHandle(System.IntPtr)
+  parent: System.Runtime.InteropServices.SafeHandle
+  isExternal: true
+  name: SetHandle(IntPtr)
+  fullName: System.Runtime.InteropServices.SafeHandle.SetHandle(System.IntPtr)
+  spec.csharp:
+  - uid: System.Runtime.InteropServices.SafeHandle.SetHandle(System.IntPtr)
+    name: SetHandle
+    fullName: System.Runtime.InteropServices.SafeHandle.SetHandle
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IntPtr
+    name: IntPtr
+    fullName: System.IntPtr
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Runtime.InteropServices.SafeHandle.SetHandle(System.IntPtr)
+    name: SetHandle
+    fullName: System.Runtime.InteropServices.SafeHandle.SetHandle
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IntPtr
+    name: IntPtr
+    fullName: System.IntPtr
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Runtime.InteropServices.SafeHandle.DangerousGetHandle
+  parent: System.Runtime.InteropServices.SafeHandle
+  isExternal: true
+  name: DangerousGetHandle()
+  fullName: System.Runtime.InteropServices.SafeHandle.DangerousGetHandle()
+  spec.csharp:
+  - uid: System.Runtime.InteropServices.SafeHandle.DangerousGetHandle
+    name: DangerousGetHandle
+    fullName: System.Runtime.InteropServices.SafeHandle.DangerousGetHandle
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Runtime.InteropServices.SafeHandle.DangerousGetHandle
+    name: DangerousGetHandle
+    fullName: System.Runtime.InteropServices.SafeHandle.DangerousGetHandle
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Runtime.InteropServices.SafeHandle.IsClosed
+  parent: System.Runtime.InteropServices.SafeHandle
+  isExternal: true
+  name: IsClosed
+  fullName: System.Runtime.InteropServices.SafeHandle.IsClosed
+- uid: System.Runtime.InteropServices.SafeHandle.Close
+  parent: System.Runtime.InteropServices.SafeHandle
+  isExternal: true
+  name: Close()
+  fullName: System.Runtime.InteropServices.SafeHandle.Close()
+  spec.csharp:
+  - uid: System.Runtime.InteropServices.SafeHandle.Close
+    name: Close
+    fullName: System.Runtime.InteropServices.SafeHandle.Close
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Runtime.InteropServices.SafeHandle.Close
+    name: Close
+    fullName: System.Runtime.InteropServices.SafeHandle.Close
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Runtime.InteropServices.SafeHandle.Dispose
+  parent: System.Runtime.InteropServices.SafeHandle
+  isExternal: true
+  name: Dispose()
+  fullName: System.Runtime.InteropServices.SafeHandle.Dispose()
+  spec.csharp:
+  - uid: System.Runtime.InteropServices.SafeHandle.Dispose
+    name: Dispose
+    fullName: System.Runtime.InteropServices.SafeHandle.Dispose
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Runtime.InteropServices.SafeHandle.Dispose
+    name: Dispose
+    fullName: System.Runtime.InteropServices.SafeHandle.Dispose
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Runtime.InteropServices.SafeHandle.Dispose(System.Boolean)
+  parent: System.Runtime.InteropServices.SafeHandle
+  isExternal: true
+  name: Dispose(Boolean)
+  fullName: System.Runtime.InteropServices.SafeHandle.Dispose(System.Boolean)
+  spec.csharp:
+  - uid: System.Runtime.InteropServices.SafeHandle.Dispose(System.Boolean)
+    name: Dispose
+    fullName: System.Runtime.InteropServices.SafeHandle.Dispose
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Runtime.InteropServices.SafeHandle.Dispose(System.Boolean)
+    name: Dispose
+    fullName: System.Runtime.InteropServices.SafeHandle.Dispose
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Runtime.InteropServices.SafeHandle.SetHandleAsInvalid
+  parent: System.Runtime.InteropServices.SafeHandle
+  isExternal: true
+  name: SetHandleAsInvalid()
+  fullName: System.Runtime.InteropServices.SafeHandle.SetHandleAsInvalid()
+  spec.csharp:
+  - uid: System.Runtime.InteropServices.SafeHandle.SetHandleAsInvalid
+    name: SetHandleAsInvalid
+    fullName: System.Runtime.InteropServices.SafeHandle.SetHandleAsInvalid
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Runtime.InteropServices.SafeHandle.SetHandleAsInvalid
+    name: SetHandleAsInvalid
+    fullName: System.Runtime.InteropServices.SafeHandle.SetHandleAsInvalid
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Runtime.InteropServices.SafeHandle.ReleaseHandle
+  parent: System.Runtime.InteropServices.SafeHandle
+  isExternal: true
+  name: ReleaseHandle()
+  fullName: System.Runtime.InteropServices.SafeHandle.ReleaseHandle()
+  spec.csharp:
+  - uid: System.Runtime.InteropServices.SafeHandle.ReleaseHandle
+    name: ReleaseHandle
+    fullName: System.Runtime.InteropServices.SafeHandle.ReleaseHandle
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Runtime.InteropServices.SafeHandle.ReleaseHandle
+    name: ReleaseHandle
+    fullName: System.Runtime.InteropServices.SafeHandle.ReleaseHandle
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Runtime.InteropServices.SafeHandle.DangerousAddRef(System.Boolean@)
+  parent: System.Runtime.InteropServices.SafeHandle
+  isExternal: true
+  name: DangerousAddRef(Boolean)
+  fullName: System.Runtime.InteropServices.SafeHandle.DangerousAddRef(System.Boolean)
+  spec.csharp:
+  - uid: System.Runtime.InteropServices.SafeHandle.DangerousAddRef(System.Boolean@)
+    name: DangerousAddRef
+    fullName: System.Runtime.InteropServices.SafeHandle.DangerousAddRef
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Runtime.InteropServices.SafeHandle.DangerousAddRef(System.Boolean@)
+    name: DangerousAddRef
+    fullName: System.Runtime.InteropServices.SafeHandle.DangerousAddRef
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Runtime.InteropServices.SafeHandle.DangerousRelease
+  parent: System.Runtime.InteropServices.SafeHandle
+  isExternal: true
+  name: DangerousRelease()
+  fullName: System.Runtime.InteropServices.SafeHandle.DangerousRelease()
+  spec.csharp:
+  - uid: System.Runtime.InteropServices.SafeHandle.DangerousRelease
+    name: DangerousRelease
+    fullName: System.Runtime.InteropServices.SafeHandle.DangerousRelease
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Runtime.InteropServices.SafeHandle.DangerousRelease
+    name: DangerousRelease
+    fullName: System.Runtime.InteropServices.SafeHandle.DangerousRelease
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Runtime.ConstrainedExecution
+  isExternal: false
+  name: System.Runtime.ConstrainedExecution
+  fullName: System.Runtime.ConstrainedExecution
+- uid: Microsoft.Win32.SafeHandles
+  isExternal: false
+  name: Microsoft.Win32.SafeHandles
+  fullName: Microsoft.Win32.SafeHandles
+  type: Namespace
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.UInt64
+  parent: System
+  isExternal: true
+  name: UInt64
+  fullName: System.UInt64
+- uid: System.UInt32
+  parent: System
+  isExternal: true
+  name: UInt32
+  fullName: System.UInt32
+- uid: System.Byte*
+  isExternal: true
+  name: Byte*
+  fullName: System.Byte*
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '*'
+    fullName: '*'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '*'
+    fullName: '*'
+- uid: '{T}'
+  isExternal: false
+  name: T
+  fullName: T
+- uid: '{T}[]'
+  isExternal: false
+  name: T[]
+  name.vb: T()
+  fullName: T[]
+  fullName.vb: T()
+  spec.csharp:
+  - name: T
+    fullName: T
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - name: T
+    fullName: T
+  - name: ()
+    fullName: ()
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32

@@ -1,0 +1,379 @@
+items:
+- uid: System.Threading.Tasks.Dataflow.ISourceBlock`1
+  id: ISourceBlock`1
+  parent: System.Threading.Tasks.Dataflow
+  children:
+  - System.Threading.Tasks.Dataflow.ISourceBlock`1.ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0},System.Boolean@)
+  - System.Threading.Tasks.Dataflow.ISourceBlock`1.LinkTo(System.Threading.Tasks.Dataflow.ITargetBlock{`0},System.Threading.Tasks.Dataflow.DataflowLinkOptions)
+  - System.Threading.Tasks.Dataflow.ISourceBlock`1.ReleaseReservation(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0})
+  - System.Threading.Tasks.Dataflow.ISourceBlock`1.ReserveMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0})
+  href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  name: ISourceBlock<TOutput>
+  name.vb: ISourceBlock(Of TOutput)
+  fullName: System.Threading.Tasks.Dataflow.ISourceBlock<TOutput>
+  fullName.vb: System.Threading.Tasks.Dataflow.ISourceBlock(Of TOutput)
+  type: Interface
+  source:
+    remote: &o0
+      path: src/System.Threading.Tasks.Dataflow/src/Base/ISourceBlock.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Threading.Tasks.Dataflow/src/Base/ISourceBlock.cs
+    startLine: 19
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Represents a dataflow block that is a source of data.
+  syntax:
+    content: 'public interface ISourceBlock<out TOutput> : IDataflowBlock'
+    content.vb: Public Interface ISourceBlock(Of Out TOutput) Inherits IDataflowBlock
+    typeParameters:
+    - id: TOutput
+      description: Specifies the type of data supplied by the @'System.Threading.Tasks.Dataflow.ISourceBlock`1'.
+  inheritedMembers:
+  - System.Threading.Tasks.Dataflow.IDataflowBlock.Completion
+  - System.Threading.Tasks.Dataflow.IDataflowBlock.Complete
+  - System.Threading.Tasks.Dataflow.IDataflowBlock.Fault(System.Exception)
+- uid: System.Threading.Tasks.Dataflow.ISourceBlock`1.LinkTo(System.Threading.Tasks.Dataflow.ITargetBlock{`0},System.Threading.Tasks.Dataflow.DataflowLinkOptions)
+  id: LinkTo(System.Threading.Tasks.Dataflow.ITargetBlock{`0},System.Threading.Tasks.Dataflow.DataflowLinkOptions)
+  parent: System.Threading.Tasks.Dataflow.ISourceBlock`1
+  href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  name: LinkTo(ITargetBlock<TOutput>, DataflowLinkOptions)
+  name.vb: LinkTo(ITargetBlock(Of TOutput), DataflowLinkOptions)
+  fullName: System.Threading.Tasks.Dataflow.ISourceBlock<TOutput>.LinkTo(System.Threading.Tasks.Dataflow.ITargetBlock<TOutput>, System.Threading.Tasks.Dataflow.DataflowLinkOptions)
+  fullName.vb: System.Threading.Tasks.Dataflow.ISourceBlock(Of TOutput).LinkTo(System.Threading.Tasks.Dataflow.ITargetBlock(Of TOutput), System.Threading.Tasks.Dataflow.DataflowLinkOptions)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/ISourceBlock.cs
+    startLine: 24
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Links the @'System.Threading.Tasks.Dataflow.ISourceBlock`1' to the specified @'System.Threading.Tasks.Dataflow.ITargetBlock`1'.
+  syntax:
+    content: IDisposable LinkTo(ITargetBlock<TOutput> target, DataflowLinkOptions linkOptions)
+    content.vb: Function LinkTo(target As ITargetBlock(Of TOutput), linkOptions As DataflowLinkOptions) As IDisposable
+    parameters:
+    - id: target
+      type: System.Threading.Tasks.Dataflow.ITargetBlock{{TOutput}}
+      description: The @'System.Threading.Tasks.Dataflow.ITargetBlock`1' to which to connect this source.
+    - id: linkOptions
+      type: System.Threading.Tasks.Dataflow.DataflowLinkOptions
+      description: A @'System.Threading.Tasks.Dataflow.DataflowLinkOptions' instance that configures the link.
+    return:
+      type: System.IDisposable
+      description: An IDisposable that, upon calling Dispose, will unlink the source from the target.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*target* is null (Nothing in Visual Basic) or *linkOptions* is null (Nothing in Visual Basic).'
+- uid: System.Threading.Tasks.Dataflow.ISourceBlock`1.ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0},System.Boolean@)
+  id: ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0},System.Boolean@)
+  parent: System.Threading.Tasks.Dataflow.ISourceBlock`1
+  href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  name: ConsumeMessage(DataflowMessageHeader, ITargetBlock<TOutput>, out Boolean)
+  name.vb: ConsumeMessage(DataflowMessageHeader, ITargetBlock(Of TOutput), ByRef Boolean)
+  fullName: System.Threading.Tasks.Dataflow.ISourceBlock<TOutput>.ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader, System.Threading.Tasks.Dataflow.ITargetBlock<TOutput>, out System.Boolean)
+  fullName.vb: System.Threading.Tasks.Dataflow.ISourceBlock(Of TOutput).ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader, System.Threading.Tasks.Dataflow.ITargetBlock(Of TOutput), ByRef System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/ISourceBlock.cs
+    startLine: 29
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Called by a linked @'System.Threading.Tasks.Dataflow.ITargetBlock`1' to accept and consume a @'System.Threading.Tasks.Dataflow.DataflowMessageHeader' previously offered by this @'System.Threading.Tasks.Dataflow.ISourceBlock`1'.
+  syntax:
+    content: TOutput ConsumeMessage(DataflowMessageHeader messageHeader, ITargetBlock<TOutput> target, out bool messageConsumed)
+    content.vb: Function ConsumeMessage(messageHeader As DataflowMessageHeader, target As ITargetBlock(Of TOutput), ByRef messageConsumed As Boolean) As TOutput
+    parameters:
+    - id: messageHeader
+      type: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+      description: The @'System.Threading.Tasks.Dataflow.DataflowMessageHeader' of the message being consumed.
+    - id: target
+      type: System.Threading.Tasks.Dataflow.ITargetBlock{{TOutput}}
+      description: The @'System.Threading.Tasks.Dataflow.ITargetBlock`1' consuming the message.
+    - id: messageConsumed
+      type: System.Boolean
+      description: true if the message was successfully consumed; otherwise, false.
+    return:
+      type: '{TOutput}'
+      description: The value of the consumed message. This may correspond to a different @'System.Threading.Tasks.Dataflow.DataflowMessageHeader' instance than was previously reserved and passed as the *messageHeader* to @'System.Threading.Tasks.Dataflow.ISourceBlock`1.ConsumeMessage()'. The consuming @'System.Threading.Tasks.Dataflow.ITargetBlock`1' must use the returned value instead of the value passed as *messageValue* through @'System.Threading.Tasks.Dataflow.ITargetBlock`1.OfferMessage()'.If the message requested is not available, the return value will be null.
+  exceptions:
+  - type: System.ArgumentException
+    description: The *messageHeader* is not valid.
+  - type: System.ArgumentNullException
+    description: The *target* is null.
+- uid: System.Threading.Tasks.Dataflow.ISourceBlock`1.ReserveMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0})
+  id: ReserveMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0})
+  parent: System.Threading.Tasks.Dataflow.ISourceBlock`1
+  href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  name: ReserveMessage(DataflowMessageHeader, ITargetBlock<TOutput>)
+  name.vb: ReserveMessage(DataflowMessageHeader, ITargetBlock(Of TOutput))
+  fullName: System.Threading.Tasks.Dataflow.ISourceBlock<TOutput>.ReserveMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader, System.Threading.Tasks.Dataflow.ITargetBlock<TOutput>)
+  fullName.vb: System.Threading.Tasks.Dataflow.ISourceBlock(Of TOutput).ReserveMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader, System.Threading.Tasks.Dataflow.ITargetBlock(Of TOutput))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/ISourceBlock.cs
+    startLine: 33
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Called by a linked @'System.Threading.Tasks.Dataflow.ITargetBlock`1' to reserve a previously offered @'System.Threading.Tasks.Dataflow.DataflowMessageHeader' by this @'System.Threading.Tasks.Dataflow.ISourceBlock`1'.
+  syntax:
+    content: bool ReserveMessage(DataflowMessageHeader messageHeader, ITargetBlock<TOutput> target)
+    content.vb: Function ReserveMessage(messageHeader As DataflowMessageHeader, target As ITargetBlock(Of TOutput)) As Boolean
+    parameters:
+    - id: messageHeader
+      type: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+      description: The @'System.Threading.Tasks.Dataflow.DataflowMessageHeader' of the message being reserved.
+    - id: target
+      type: System.Threading.Tasks.Dataflow.ITargetBlock{{TOutput}}
+      description: The @'System.Threading.Tasks.Dataflow.ITargetBlock`1' reserving the message.
+    return:
+      type: System.Boolean
+      description: true if the message was successfully reserved; otherwise, false.
+  exceptions:
+  - type: System.ArgumentException
+    description: The *messageHeader* is not valid.
+  - type: System.ArgumentNullException
+    description: The *target* is null.
+- uid: System.Threading.Tasks.Dataflow.ISourceBlock`1.ReleaseReservation(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0})
+  id: ReleaseReservation(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0})
+  parent: System.Threading.Tasks.Dataflow.ISourceBlock`1
+  href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  name: ReleaseReservation(DataflowMessageHeader, ITargetBlock<TOutput>)
+  name.vb: ReleaseReservation(DataflowMessageHeader, ITargetBlock(Of TOutput))
+  fullName: System.Threading.Tasks.Dataflow.ISourceBlock<TOutput>.ReleaseReservation(System.Threading.Tasks.Dataflow.DataflowMessageHeader, System.Threading.Tasks.Dataflow.ITargetBlock<TOutput>)
+  fullName.vb: System.Threading.Tasks.Dataflow.ISourceBlock(Of TOutput).ReleaseReservation(System.Threading.Tasks.Dataflow.DataflowMessageHeader, System.Threading.Tasks.Dataflow.ITargetBlock(Of TOutput))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/ISourceBlock.cs
+    startLine: 36
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Called by a linked @'System.Threading.Tasks.Dataflow.ITargetBlock`1' to release a previously reserved @'System.Threading.Tasks.Dataflow.DataflowMessageHeader' by this @'System.Threading.Tasks.Dataflow.ISourceBlock`1'.
+  syntax:
+    content: void ReleaseReservation(DataflowMessageHeader messageHeader, ITargetBlock<TOutput> target)
+    content.vb: Sub ReleaseReservation(messageHeader As DataflowMessageHeader, target As ITargetBlock(Of TOutput))
+    parameters:
+    - id: messageHeader
+      type: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+      description: The @'System.Threading.Tasks.Dataflow.DataflowMessageHeader' of the reserved message being released.
+    - id: target
+      type: System.Threading.Tasks.Dataflow.ITargetBlock{{TOutput}}
+      description: The @'System.Threading.Tasks.Dataflow.ITargetBlock`1' releasing the message it previously reserved.
+  exceptions:
+  - type: System.ArgumentException
+    description: The *messageHeader* is not valid.
+  - type: System.ArgumentNullException
+    description: The *target* is null.
+  - type: System.InvalidOperationException
+    description: The *target* did not have the message reserved.
+references:
+- uid: System.Threading.Tasks.Dataflow.ISourceBlock`1
+  parent: System.Threading.Tasks.Dataflow
+  isExternal: false
+  href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  name: ISourceBlock<TOutput>
+  name.vb: ISourceBlock(Of TOutput)
+  fullName: System.Threading.Tasks.Dataflow.ISourceBlock<TOutput>
+  fullName.vb: System.Threading.Tasks.Dataflow.ISourceBlock(Of TOutput)
+  type: Interface
+  summary: Represents a dataflow block that is a source of data.
+  spec.csharp:
+  - uid: System.Threading.Tasks.Dataflow.ISourceBlock`1
+    name: ISourceBlock
+    fullName: System.Threading.Tasks.Dataflow.ISourceBlock
+    href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  - name: <
+    fullName: <
+  - name: TOutput
+    fullName: TOutput
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Dataflow.ISourceBlock`1
+    name: ISourceBlock
+    fullName: System.Threading.Tasks.Dataflow.ISourceBlock
+    href: System.Threading.Tasks.Dataflow.ISourceBlock`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TOutput
+    fullName: TOutput
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Dataflow
+  isExternal: false
+  name: System.Threading.Tasks.Dataflow
+  fullName: System.Threading.Tasks.Dataflow
+  type: Namespace
+- uid: System.Threading.Tasks.Dataflow.IDataflowBlock.Completion
+  parent: System.Threading.Tasks.Dataflow.IDataflowBlock
+  isExternal: false
+  href: System.Threading.Tasks.Dataflow.IDataflowBlock.yml
+  name: Completion
+  fullName: System.Threading.Tasks.Dataflow.IDataflowBlock.Completion
+- uid: System.Threading.Tasks.Dataflow.IDataflowBlock.Complete
+  parent: System.Threading.Tasks.Dataflow.IDataflowBlock
+  isExternal: false
+  href: System.Threading.Tasks.Dataflow.IDataflowBlock.yml
+  name: Complete()
+  fullName: System.Threading.Tasks.Dataflow.IDataflowBlock.Complete()
+  spec.csharp:
+  - uid: System.Threading.Tasks.Dataflow.IDataflowBlock.Complete
+    name: Complete
+    fullName: System.Threading.Tasks.Dataflow.IDataflowBlock.Complete
+    href: System.Threading.Tasks.Dataflow.IDataflowBlock.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.Tasks.Dataflow.IDataflowBlock.Complete
+    name: Complete
+    fullName: System.Threading.Tasks.Dataflow.IDataflowBlock.Complete
+    href: System.Threading.Tasks.Dataflow.IDataflowBlock.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Dataflow.IDataflowBlock.Fault(System.Exception)
+  parent: System.Threading.Tasks.Dataflow.IDataflowBlock
+  isExternal: true
+  href: System.Threading.Tasks.Dataflow.IDataflowBlock.yml
+  name: Fault(Exception)
+  fullName: System.Threading.Tasks.Dataflow.IDataflowBlock.Fault(System.Exception)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Dataflow.IDataflowBlock.Fault(System.Exception)
+    name: Fault
+    fullName: System.Threading.Tasks.Dataflow.IDataflowBlock.Fault
+    href: System.Threading.Tasks.Dataflow.IDataflowBlock.yml
+  - name: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.Tasks.Dataflow.IDataflowBlock.Fault(System.Exception)
+    name: Fault
+    fullName: System.Threading.Tasks.Dataflow.IDataflowBlock.Fault
+    href: System.Threading.Tasks.Dataflow.IDataflowBlock.yml
+  - name: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Dataflow.IDataflowBlock
+  isExternal: false
+  href: System.Threading.Tasks.Dataflow.IDataflowBlock.yml
+  name: IDataflowBlock
+  fullName: System.Threading.Tasks.Dataflow.IDataflowBlock
+  type: Interface
+  summary: Represents a dataflow block.
+- uid: System.Threading.Tasks.Dataflow.ITargetBlock{{TOutput}}
+  parent: System.Threading.Tasks.Dataflow
+  definition: System.Threading.Tasks.Dataflow.ITargetBlock`1
+  href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  name: ITargetBlock<TOutput>
+  name.vb: ITargetBlock(Of TOutput)
+  fullName: System.Threading.Tasks.Dataflow.ITargetBlock<TOutput>
+  fullName.vb: System.Threading.Tasks.Dataflow.ITargetBlock(Of TOutput)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Dataflow.ITargetBlock`1
+    name: ITargetBlock
+    fullName: System.Threading.Tasks.Dataflow.ITargetBlock
+    href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  - name: <
+    fullName: <
+  - name: TOutput
+    fullName: TOutput
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Dataflow.ITargetBlock`1
+    name: ITargetBlock
+    fullName: System.Threading.Tasks.Dataflow.ITargetBlock
+    href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TOutput
+    fullName: TOutput
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Dataflow.DataflowLinkOptions
+  parent: System.Threading.Tasks.Dataflow
+  isExternal: false
+  href: System.Threading.Tasks.Dataflow.DataflowLinkOptions.yml
+  name: DataflowLinkOptions
+  fullName: System.Threading.Tasks.Dataflow.DataflowLinkOptions
+  type: Class
+  summary: Provides options used to configure a link between dataflow blocks.
+- uid: System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  fullName: System.IDisposable
+- uid: System.Threading.Tasks.Dataflow.ITargetBlock`1
+  parent: System.Threading.Tasks.Dataflow
+  isExternal: false
+  href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  name: ITargetBlock<TInput>
+  name.vb: ITargetBlock(Of TInput)
+  fullName: System.Threading.Tasks.Dataflow.ITargetBlock<TInput>
+  fullName.vb: System.Threading.Tasks.Dataflow.ITargetBlock(Of TInput)
+  type: Interface
+  summary: Represents a dataflow block that is a target for data.
+  spec.csharp:
+  - uid: System.Threading.Tasks.Dataflow.ITargetBlock`1
+    name: ITargetBlock
+    fullName: System.Threading.Tasks.Dataflow.ITargetBlock
+    href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  - name: <
+    fullName: <
+  - name: TInput
+    fullName: TInput
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Dataflow.ITargetBlock`1
+    name: ITargetBlock
+    fullName: System.Threading.Tasks.Dataflow.ITargetBlock
+    href: System.Threading.Tasks.Dataflow.ITargetBlock`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TInput
+    fullName: TInput
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+  parent: System.Threading.Tasks.Dataflow
+  isExternal: false
+  href: System.Threading.Tasks.Dataflow.DataflowMessageHeader.yml
+  name: DataflowMessageHeader
+  fullName: System.Threading.Tasks.Dataflow.DataflowMessageHeader
+  type: Struct
+  summary: Provides a container of data attributes for passing between dataflow blocks.
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: '{TOutput}'
+  isExternal: false
+  name: TOutput
+  fullName: TOutput

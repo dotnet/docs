@@ -1,0 +1,80 @@
+items:
+- uid: System.ComponentModel.IChangeTracking
+  id: IChangeTracking
+  parent: System.ComponentModel
+  children:
+  - System.ComponentModel.IChangeTracking.AcceptChanges
+  - System.ComponentModel.IChangeTracking.IsChanged
+  href: System.ComponentModel.IChangeTracking.yml
+  name: IChangeTracking
+  fullName: System.ComponentModel.IChangeTracking
+  type: Interface
+  source:
+    remote: &o0
+      path: src/System.ComponentModel/src/System/ComponentModel/IChangeTracking.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.ComponentModel/src/System/ComponentModel/IChangeTracking.cs
+    startLine: 11
+  assemblies:
+  - System.ComponentModel
+  namespace: System.ComponentModel
+  summary: Defines the mechanism for querying the object for changes and resetting of the changed status.
+  syntax:
+    content: public interface IChangeTracking
+    content.vb: Public Interface IChangeTracking
+- uid: System.ComponentModel.IChangeTracking.IsChanged
+  id: IsChanged
+  parent: System.ComponentModel.IChangeTracking
+  href: System.ComponentModel.IChangeTracking.yml
+  name: IsChanged
+  fullName: System.ComponentModel.IChangeTracking.IsChanged
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.ComponentModel/src/System/ComponentModel/IChangeTracking.cs
+    startLine: 17
+  assemblies:
+  - System.ComponentModel
+  namespace: System.ComponentModel
+  summary: Gets the object's changed status.
+  syntax:
+    content: bool IsChanged { get; }
+    content.vb: ReadOnly Property IsChanged As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "true if the object’s content has changed since the last call to @'System.ComponentModel.IChangeTracking.AcceptChanges'; otherwise, false."
+- uid: System.ComponentModel.IChangeTracking.AcceptChanges
+  id: AcceptChanges
+  parent: System.ComponentModel.IChangeTracking
+  href: System.ComponentModel.IChangeTracking.yml
+  name: AcceptChanges()
+  fullName: System.ComponentModel.IChangeTracking.AcceptChanges()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.ComponentModel/src/System/ComponentModel/IChangeTracking.cs
+    startLine: 25
+  assemblies:
+  - System.ComponentModel
+  namespace: System.ComponentModel
+  summary: "Resets the object’s state to unchanged by accepting the modifications."
+  syntax:
+    content: void AcceptChanges()
+    content.vb: Sub AcceptChanges
+references:
+- uid: System.ComponentModel
+  isExternal: false
+  name: System.ComponentModel
+  fullName: System.ComponentModel
+  type: Namespace
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

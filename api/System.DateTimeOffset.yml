@@ -1,0 +1,2608 @@
+items:
+- uid: System.DateTimeOffset
+  id: DateTimeOffset
+  parent: System
+  children:
+  - System.DateTimeOffset.#ctor(System.DateTime)
+  - System.DateTimeOffset.#ctor(System.DateTime,System.TimeSpan)
+  - System.DateTimeOffset.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Globalization.Calendar,System.TimeSpan)
+  - System.DateTimeOffset.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.TimeSpan)
+  - System.DateTimeOffset.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.TimeSpan)
+  - System.DateTimeOffset.#ctor(System.Int64,System.TimeSpan)
+  - System.DateTimeOffset.Add(System.TimeSpan)
+  - System.DateTimeOffset.AddDays(System.Double)
+  - System.DateTimeOffset.AddHours(System.Double)
+  - System.DateTimeOffset.AddMilliseconds(System.Double)
+  - System.DateTimeOffset.AddMinutes(System.Double)
+  - System.DateTimeOffset.AddMonths(System.Int32)
+  - System.DateTimeOffset.AddSeconds(System.Double)
+  - System.DateTimeOffset.AddTicks(System.Int64)
+  - System.DateTimeOffset.AddYears(System.Int32)
+  - System.DateTimeOffset.Compare(System.DateTimeOffset,System.DateTimeOffset)
+  - System.DateTimeOffset.CompareTo(System.DateTimeOffset)
+  - System.DateTimeOffset.Date
+  - System.DateTimeOffset.DateTime
+  - System.DateTimeOffset.Day
+  - System.DateTimeOffset.DayOfWeek
+  - System.DateTimeOffset.DayOfYear
+  - System.DateTimeOffset.Equals(System.DateTimeOffset)
+  - System.DateTimeOffset.Equals(System.DateTimeOffset,System.DateTimeOffset)
+  - System.DateTimeOffset.Equals(System.Object)
+  - System.DateTimeOffset.EqualsExact(System.DateTimeOffset)
+  - System.DateTimeOffset.FromFileTime(System.Int64)
+  - System.DateTimeOffset.FromUnixTimeMilliseconds(System.Int64)
+  - System.DateTimeOffset.FromUnixTimeSeconds(System.Int64)
+  - System.DateTimeOffset.GetHashCode
+  - System.DateTimeOffset.Hour
+  - System.DateTimeOffset.LocalDateTime
+  - System.DateTimeOffset.MaxValue
+  - System.DateTimeOffset.Millisecond
+  - System.DateTimeOffset.Minute
+  - System.DateTimeOffset.MinValue
+  - System.DateTimeOffset.Month
+  - System.DateTimeOffset.Now
+  - System.DateTimeOffset.Offset
+  - System.DateTimeOffset.op_Addition(System.DateTimeOffset,System.TimeSpan)
+  - System.DateTimeOffset.op_Equality(System.DateTimeOffset,System.DateTimeOffset)
+  - System.DateTimeOffset.op_GreaterThan(System.DateTimeOffset,System.DateTimeOffset)
+  - System.DateTimeOffset.op_GreaterThanOrEqual(System.DateTimeOffset,System.DateTimeOffset)
+  - System.DateTimeOffset.op_Implicit(System.DateTime)~System.DateTimeOffset
+  - System.DateTimeOffset.op_Inequality(System.DateTimeOffset,System.DateTimeOffset)
+  - System.DateTimeOffset.op_LessThan(System.DateTimeOffset,System.DateTimeOffset)
+  - System.DateTimeOffset.op_LessThanOrEqual(System.DateTimeOffset,System.DateTimeOffset)
+  - System.DateTimeOffset.op_Subtraction(System.DateTimeOffset,System.DateTimeOffset)
+  - System.DateTimeOffset.op_Subtraction(System.DateTimeOffset,System.TimeSpan)
+  - System.DateTimeOffset.Parse(System.String)
+  - System.DateTimeOffset.Parse(System.String,System.IFormatProvider)
+  - System.DateTimeOffset.Parse(System.String,System.IFormatProvider,System.Globalization.DateTimeStyles)
+  - System.DateTimeOffset.ParseExact(System.String,System.String,System.IFormatProvider)
+  - System.DateTimeOffset.ParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles)
+  - System.DateTimeOffset.ParseExact(System.String,System.String[],System.IFormatProvider,System.Globalization.DateTimeStyles)
+  - System.DateTimeOffset.Second
+  - System.DateTimeOffset.Subtract(System.DateTimeOffset)
+  - System.DateTimeOffset.Subtract(System.TimeSpan)
+  - System.DateTimeOffset.System#IComparable#CompareTo(System.Object)
+  - System.DateTimeOffset.Ticks
+  - System.DateTimeOffset.TimeOfDay
+  - System.DateTimeOffset.ToFileTime
+  - System.DateTimeOffset.ToLocalTime
+  - System.DateTimeOffset.ToOffset(System.TimeSpan)
+  - System.DateTimeOffset.ToString
+  - System.DateTimeOffset.ToString(System.IFormatProvider)
+  - System.DateTimeOffset.ToString(System.String)
+  - System.DateTimeOffset.ToString(System.String,System.IFormatProvider)
+  - System.DateTimeOffset.ToUniversalTime
+  - System.DateTimeOffset.ToUnixTimeMilliseconds
+  - System.DateTimeOffset.ToUnixTimeSeconds
+  - System.DateTimeOffset.TryParse(System.String,System.DateTimeOffset@)
+  - System.DateTimeOffset.TryParse(System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTimeOffset@)
+  - System.DateTimeOffset.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTimeOffset@)
+  - System.DateTimeOffset.TryParseExact(System.String,System.String[],System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTimeOffset@)
+  - System.DateTimeOffset.UtcDateTime
+  - System.DateTimeOffset.UtcNow
+  - System.DateTimeOffset.UtcTicks
+  - System.DateTimeOffset.Year
+  href: System.DateTimeOffset.yml
+  name: DateTimeOffset
+  fullName: System.DateTimeOffset
+  type: Struct
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/DateTimeOffset.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 33
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Represents a point in time, typically expressed as a date and time of day, relative to Coordinated Universal Time (UTC).
+  syntax:
+    content: 'public struct DateTimeOffset : IComparable, IFormattable, ISerializable, IDeserializationCallback, IComparable<DateTimeOffset>, IEquatable<DateTimeOffset>'
+    content.vb: Public Structure DateTimeOffset Implements IComparable, IFormattable, ISerializable, IDeserializationCallback, IComparable(Of DateTimeOffset), IEquatable(Of DateTimeOffset)
+  implements:
+  - System.IComparable
+  - System.IFormattable
+  - System.Runtime.Serialization.ISerializable
+  - System.Runtime.Serialization.IDeserializationCallback
+  - System.IComparable{System.DateTimeOffset}
+  - System.IEquatable{System.DateTimeOffset}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.DateTimeOffset.MinValue
+  id: MinValue
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: MinValue
+  fullName: System.DateTimeOffset.MinValue
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 50
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Represents the earliest possible @'System.DateTimeOffset' value. This field is read-only.
+  syntax:
+    content: public static readonly DateTimeOffset MinValue
+    content.vb: Public Shared ReadOnly MinValue As DateTimeOffset
+- uid: System.DateTimeOffset.MaxValue
+  id: MaxValue
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: MaxValue
+  fullName: System.DateTimeOffset.MaxValue
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 51
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Represents the greatest possible value of @'System.DateTimeOffset'. This field is read-only.
+  syntax:
+    content: public static readonly DateTimeOffset MaxValue
+    content.vb: Public Shared ReadOnly MaxValue As DateTimeOffset
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '@''System.DateTime.MaxValue'' is outside the range of the current or specified culture''s default calendar.'
+- uid: System.DateTimeOffset.#ctor(System.Int64,System.TimeSpan)
+  id: '#ctor(System.Int64,System.TimeSpan)'
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: DateTimeOffset(Int64, TimeSpan)
+  fullName: System.DateTimeOffset.DateTimeOffset(System.Int64, System.TimeSpan)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 60
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of the @'System.DateTimeOffset' structure using the specified number of ticks and offset.
+  syntax:
+    content: public DateTimeOffset(long ticks, TimeSpan offset)
+    content.vb: Public Sub New(ticks As Long, offset As TimeSpan)
+    parameters:
+    - id: ticks
+      type: System.Int64
+      description: A date and time expressed as the number of 100-nanosecond intervals that have elapsed since 12:00:00 midnight on January 1, 0001.
+    - id: offset
+      type: System.TimeSpan
+      description: The time's offset from Coordinated Universal Time (UTC).
+  exceptions:
+  - type: System.ArgumentException
+    description: '*offset* is not specified in whole minutes.'
+  - type: System.ArgumentOutOfRangeException
+    description: The @'System.DateTimeOffset.UtcDateTime' property is earlier than @'System.DateTimeOffset.MinValue' or later than @'System.DateTimeOffset.MaxValue'.-or-*ticks* is less than DateTimeOffset.MinValue.Ticks or greater than DateTimeOffset.MaxValue.Ticks.-or-*Offset* s less than -14 hours or greater than 14 hours.
+- uid: System.DateTimeOffset.#ctor(System.DateTime)
+  id: '#ctor(System.DateTime)'
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: DateTimeOffset(DateTime)
+  fullName: System.DateTimeOffset.DateTimeOffset(System.DateTime)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 69
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of the @'System.DateTimeOffset' structure using the specified @'System.DateTime' value.
+  syntax:
+    content: public DateTimeOffset(DateTime dateTime)
+    content.vb: Public Sub New(dateTime As Date)
+    parameters:
+    - id: dateTime
+      type: System.DateTime
+      description: A date and time.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: The Coordinated Universal Time (UTC) date and time that results from applying the offset is earlier than @'System.DateTimeOffset.MinValue'.-or-The UTC date and time that results from applying the offset is later than @'System.DateTimeOffset.MaxValue'.
+- uid: System.DateTimeOffset.#ctor(System.DateTime,System.TimeSpan)
+  id: '#ctor(System.DateTime,System.TimeSpan)'
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: DateTimeOffset(DateTime, TimeSpan)
+  fullName: System.DateTimeOffset.DateTimeOffset(System.DateTime, System.TimeSpan)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 85
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of the @'System.DateTimeOffset' structure using the specified @'System.DateTime' value and offset.
+  syntax:
+    content: public DateTimeOffset(DateTime dateTime, TimeSpan offset)
+    content.vb: Public Sub New(dateTime As Date, offset As TimeSpan)
+    parameters:
+    - id: dateTime
+      type: System.DateTime
+      description: A date and time.
+    - id: offset
+      type: System.TimeSpan
+      description: The time's offset from Coordinated Universal Time (UTC).
+  exceptions:
+  - type: System.ArgumentException
+    description: '*dateTime.Kind* equals @''System.DateTimeKind.Utc'' and *offset* does not equal zero.-or-*dateTime.Kind* equals @''System.DateTimeKind.Local'' and *offset* does not equal the offset of the system''s local time zone.-or-*offset* is not specified in whole minutes.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is less than -14 hours or greater than 14 hours.-or-@''System.DateTimeOffset.UtcDateTime'' is less than @''System.DateTimeOffset.MinValue'' or greater than @''System.DateTimeOffset.MaxValue''.'
+- uid: System.DateTimeOffset.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.TimeSpan)
+  id: '#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.TimeSpan)'
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: DateTimeOffset(Int32, Int32, Int32, Int32, Int32, Int32, TimeSpan)
+  fullName: System.DateTimeOffset.DateTimeOffset(System.Int32, System.Int32, System.Int32, System.Int32, System.Int32, System.Int32, System.TimeSpan)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 102
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of the @'System.DateTimeOffset' structure using the specified year, month, day, hour, minute, second, and offset.
+  syntax:
+    content: public DateTimeOffset(int year, int month, int day, int hour, int minute, int second, TimeSpan offset)
+    content.vb: Public Sub New(year As Integer, month As Integer, day As Integer, hour As Integer, minute As Integer, second As Integer, offset As TimeSpan)
+    parameters:
+    - id: year
+      type: System.Int32
+      description: The year (1 through 9999).
+    - id: month
+      type: System.Int32
+      description: The month (1 through 12).
+    - id: day
+      type: System.Int32
+      description: The day (1 through the number of days in *month*).
+    - id: hour
+      type: System.Int32
+      description: The hours (0 through 23).
+    - id: minute
+      type: System.Int32
+      description: The minutes (0 through 59).
+    - id: second
+      type: System.Int32
+      description: The seconds (0 through 59).
+    - id: offset
+      type: System.TimeSpan
+      description: The time's offset from Coordinated Universal Time (UTC).
+  exceptions:
+  - type: System.ArgumentException
+    description: '*offset* does not represent whole minutes.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*year* is less than one or greater than 9999.-or-*month* is less than one or greater than 12.-or-*day* is less than one or greater than the number of days in *month*.-or-*hour* is less than zero or greater than 23.-or-*minute* is less than 0 or greater than 59.-or-*second* is less than 0 or greater than 59.-or-*offset* is less than -14 hours or greater than 14 hours.-or-The @''System.DateTimeOffset.UtcDateTime'' property is earlier than @''System.DateTimeOffset.MinValue'' or later than @''System.DateTimeOffset.MaxValue''.'
+- uid: System.DateTimeOffset.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.TimeSpan)
+  id: '#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.TimeSpan)'
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: DateTimeOffset(Int32, Int32, Int32, Int32, Int32, Int32, Int32, TimeSpan)
+  fullName: System.DateTimeOffset.DateTimeOffset(System.Int32, System.Int32, System.Int32, System.Int32, System.Int32, System.Int32, System.Int32, System.TimeSpan)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 109
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of the @'System.DateTimeOffset' structure using the specified year, month, day, hour, minute, second, millisecond, and offset.
+  syntax:
+    content: public DateTimeOffset(int year, int month, int day, int hour, int minute, int second, int millisecond, TimeSpan offset)
+    content.vb: Public Sub New(year As Integer, month As Integer, day As Integer, hour As Integer, minute As Integer, second As Integer, millisecond As Integer, offset As TimeSpan)
+    parameters:
+    - id: year
+      type: System.Int32
+      description: The year (1 through 9999).
+    - id: month
+      type: System.Int32
+      description: The month (1 through 12).
+    - id: day
+      type: System.Int32
+      description: The day (1 through the number of days in *month*).
+    - id: hour
+      type: System.Int32
+      description: The hours (0 through 23).
+    - id: minute
+      type: System.Int32
+      description: The minutes (0 through 59).
+    - id: second
+      type: System.Int32
+      description: The seconds (0 through 59).
+    - id: millisecond
+      type: System.Int32
+      description: The milliseconds (0 through 999).
+    - id: offset
+      type: System.TimeSpan
+      description: The time's offset from Coordinated Universal Time (UTC).
+  exceptions:
+  - type: System.ArgumentException
+    description: '*offset* does not represent whole minutes.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*year* is less than one or greater than 9999.-or-*month* is less than one or greater than 12.-or-*day* is less than one or greater than the number of days in *month*.-or-*hour* is less than zero or greater than 23.-or-*minute* is less than 0 or greater than 59.-or-*second* is less than 0 or greater than 59.-or-*millisecond* is less than 0 or greater than 999.-or-*offset* is less than -14 or greater than 14.-or-The @''System.DateTimeOffset.UtcDateTime'' property is earlier than @''System.DateTimeOffset.MinValue'' or later than @''System.DateTimeOffset.MaxValue''.'
+- uid: System.DateTimeOffset.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Globalization.Calendar,System.TimeSpan)
+  id: '#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Globalization.Calendar,System.TimeSpan)'
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: DateTimeOffset(Int32, Int32, Int32, Int32, Int32, Int32, Int32, Calendar, TimeSpan)
+  fullName: System.DateTimeOffset.DateTimeOffset(System.Int32, System.Int32, System.Int32, System.Int32, System.Int32, System.Int32, System.Int32, System.Globalization.Calendar, System.TimeSpan)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 117
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of the @'System.DateTimeOffset' structure using the specified year, month, day, hour, minute, second, millisecond, and offset of a specified calendar.
+  syntax:
+    content: public DateTimeOffset(int year, int month, int day, int hour, int minute, int second, int millisecond, Calendar calendar, TimeSpan offset)
+    content.vb: Public Sub New(year As Integer, month As Integer, day As Integer, hour As Integer, minute As Integer, second As Integer, millisecond As Integer, calendar As Calendar, offset As TimeSpan)
+    parameters:
+    - id: year
+      type: System.Int32
+      description: The year.
+    - id: month
+      type: System.Int32
+      description: The month (1 through 12).
+    - id: day
+      type: System.Int32
+      description: The day (1 through the number of days in *month*).
+    - id: hour
+      type: System.Int32
+      description: The hours (0 through 23).
+    - id: minute
+      type: System.Int32
+      description: The minutes (0 through 59).
+    - id: second
+      type: System.Int32
+      description: The seconds (0 through 59).
+    - id: millisecond
+      type: System.Int32
+      description: The milliseconds (0 through 999).
+    - id: calendar
+      type: System.Globalization.Calendar
+      description: The calendar that is used to interpret *year*, *month*, and *day*.
+    - id: offset
+      type: System.TimeSpan
+      description: The time's offset from Coordinated Universal Time (UTC).
+  exceptions:
+  - type: System.ArgumentException
+    description: '*offset* does not represent whole minutes.'
+  - type: System.ArgumentNullException
+    description: '*calendar* cannot be null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*year* is less than the *calendar* parameter''s MinSupportedDateTime.Year or greater than MaxSupportedDateTime.Year.-or-*month* is either less than or greater than the number of months in *year* in the *calendar*. -or-*day* is less than one or greater than the number of days in *month*.-or-*hour* is less than zero or greater than 23.-or-*minute* is less than 0 or greater than 59.-or-*second* is less than 0 or greater than 59.-or-*millisecond* is less than 0 or greater than 999.-or-*offset* is less than -14 hours or greater than 14 hours.-or-The *year*, *month*, and *day* parameters cannot be represented as a date and time value.-or-The @''System.DateTimeOffset.UtcDateTime'' property is earlier than @''System.DateTimeOffset.MinValue'' or later than @''System.DateTimeOffset.MaxValue''.'
+- uid: System.DateTimeOffset.Now
+  id: Now
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: Now
+  fullName: System.DateTimeOffset.Now
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 128
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets a @'System.DateTimeOffset' object that is set to the current date and time on the current computer, with the offset set to the local time's offset from Coordinated Universal Time (UTC).
+  syntax:
+    content: public static DateTimeOffset Now { get; }
+    content.vb: Public Shared ReadOnly Property Now As DateTimeOffset
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+      description: A @'System.DateTimeOffset' object whose date and time is the current local time and whose offset is the local time zone's offset from Coordinated Universal Time (UTC).
+- uid: System.DateTimeOffset.UtcNow
+  id: UtcNow
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: UtcNow
+  fullName: System.DateTimeOffset.UtcNow
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 134
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets a @'System.DateTimeOffset' object whose date and time are set to the current Coordinated Universal Time (UTC) date and time and whose offset is @'System.TimeSpan.Zero'.
+  syntax:
+    content: public static DateTimeOffset UtcNow { get; }
+    content.vb: Public Shared ReadOnly Property UtcNow As DateTimeOffset
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+      description: An object whose date and time is the current Coordinated Universal Time (UTC) and whose offset is @'System.TimeSpan.Zero'.
+- uid: System.DateTimeOffset.DateTime
+  id: DateTime
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: DateTime
+  fullName: System.DateTimeOffset.DateTime
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 140
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets a @'System.DateTime' value that represents the date and time of the current @'System.DateTimeOffset' object.
+  syntax:
+    content: public DateTime DateTime { get; }
+    content.vb: Public ReadOnly Property DateTime As Date
+    parameters: []
+    return:
+      type: System.DateTime
+      description: The date and time of the current @'System.DateTimeOffset' object.
+- uid: System.DateTimeOffset.UtcDateTime
+  id: UtcDateTime
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: UtcDateTime
+  fullName: System.DateTimeOffset.UtcDateTime
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 146
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets a @'System.DateTime' value that represents the Coordinated Universal Time (UTC) date and time of the current @'System.DateTimeOffset' object.
+  syntax:
+    content: public DateTime UtcDateTime { get; }
+    content.vb: Public ReadOnly Property UtcDateTime As Date
+    parameters: []
+    return:
+      type: System.DateTime
+      description: The Coordinated Universal Time (UTC) date and time of the current @'System.DateTimeOffset' object.
+- uid: System.DateTimeOffset.LocalDateTime
+  id: LocalDateTime
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: LocalDateTime
+  fullName: System.DateTimeOffset.LocalDateTime
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 154
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets a @'System.DateTime' value that represents the local date and time of the current @'System.DateTimeOffset' object.
+  syntax:
+    content: public DateTime LocalDateTime { get; }
+    content.vb: Public ReadOnly Property LocalDateTime As Date
+    parameters: []
+    return:
+      type: System.DateTime
+      description: The local date and time of the current @'System.DateTimeOffset' object.
+- uid: System.DateTimeOffset.ToOffset(System.TimeSpan)
+  id: ToOffset(System.TimeSpan)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: ToOffset(TimeSpan)
+  fullName: System.DateTimeOffset.ToOffset(System.TimeSpan)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 164
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the value of the current @'System.DateTimeOffset' object to the date and time specified by an offset value.
+  syntax:
+    content: public DateTimeOffset ToOffset(TimeSpan offset)
+    content.vb: Public Function ToOffset(offset As TimeSpan) As DateTimeOffset
+    parameters:
+    - id: offset
+      type: System.TimeSpan
+      description: The offset to convert the @'System.DateTimeOffset' value to.
+    return:
+      type: System.DateTimeOffset
+      description: An object that is equal to the original @'System.DateTimeOffset' object (that is, their @'System.DateTimeOffset.ToUniversalTime' methods return identical points in time) but whose @'System.DateTimeOffset.Offset' property is set to *offset*.
+  exceptions:
+  - type: System.ArgumentException
+    description: The resulting @'System.DateTimeOffset' object has a @'System.DateTimeOffset.DateTime' value earlier than @'System.DateTimeOffset.MinValue'.-or-The resulting @'System.DateTimeOffset' object has a @'System.DateTimeOffset.DateTime' value later than @'System.DateTimeOffset.MaxValue'.
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is less than -14 hours.-or-*offset* is greater than 14 hours.'
+- uid: System.DateTimeOffset.Date
+  id: Date
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: Date
+  fullName: System.DateTimeOffset.Date
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 184
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets a @'System.DateTime' value that represents the date component of the current @'System.DateTimeOffset' object.
+  syntax:
+    content: public DateTime Date { get; }
+    content.vb: Public ReadOnly Property Date As Date
+    parameters: []
+    return:
+      type: System.DateTime
+      description: A @'System.DateTime' value that represents the date component of the current @'System.DateTimeOffset' object.
+- uid: System.DateTimeOffset.Day
+  id: Day
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: Day
+  fullName: System.DateTimeOffset.Day
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 193
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the day of the month represented by the current @'System.DateTimeOffset' object.
+  syntax:
+    content: public int Day { get; }
+    content.vb: Public ReadOnly Property Day As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: The day component of the current @'System.DateTimeOffset' object, expressed as a value between 1 and 31.
+- uid: System.DateTimeOffset.DayOfWeek
+  id: DayOfWeek
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: DayOfWeek
+  fullName: System.DateTimeOffset.DayOfWeek
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 206
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the day of the week represented by the current @'System.DateTimeOffset' object.
+  syntax:
+    content: public DayOfWeek DayOfWeek { get; }
+    content.vb: Public ReadOnly Property DayOfWeek As DayOfWeek
+    parameters: []
+    return:
+      type: System.DayOfWeek
+      description: One of the enumeration values that indicates the day of the week of the current @'System.DateTimeOffset' object.
+- uid: System.DateTimeOffset.DayOfYear
+  id: DayOfYear
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: DayOfYear
+  fullName: System.DateTimeOffset.DayOfYear
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 217
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the day of the year represented by the current @'System.DateTimeOffset' object.
+  syntax:
+    content: public int DayOfYear { get; }
+    content.vb: Public ReadOnly Property DayOfYear As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: The day of the year of the current @'System.DateTimeOffset' object, expressed as a value between 1 and 366.
+- uid: System.DateTimeOffset.Hour
+  id: Hour
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: Hour
+  fullName: System.DateTimeOffset.Hour
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 228
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the hour component of the time represented by the current @'System.DateTimeOffset' object.
+  syntax:
+    content: public int Hour { get; }
+    content.vb: Public ReadOnly Property Hour As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: The hour component of the current @'System.DateTimeOffset' object. This property uses a 24-hour clock; the value ranges from 0 to 23.
+- uid: System.DateTimeOffset.Millisecond
+  id: Millisecond
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: Millisecond
+  fullName: System.DateTimeOffset.Millisecond
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 240
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the millisecond component of the time represented by the current @'System.DateTimeOffset' object.
+  syntax:
+    content: public int Millisecond { get; }
+    content.vb: Public ReadOnly Property Millisecond As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: The millisecond component of the current @'System.DateTimeOffset' object, expressed as an integer between 0 and 999.
+- uid: System.DateTimeOffset.Minute
+  id: Minute
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: Minute
+  fullName: System.DateTimeOffset.Minute
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 251
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the minute component of the time represented by the current @'System.DateTimeOffset' object.
+  syntax:
+    content: public int Minute { get; }
+    content.vb: Public ReadOnly Property Minute As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: The minute component of the current @'System.DateTimeOffset' object, expressed as an integer between 0 and 59.
+- uid: System.DateTimeOffset.Month
+  id: Month
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: Month
+  fullName: System.DateTimeOffset.Month
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 262
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the month component of the date represented by the current @'System.DateTimeOffset' object.
+  syntax:
+    content: public int Month { get; }
+    content.vb: Public ReadOnly Property Month As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: The month component of the current @'System.DateTimeOffset' object, expressed as an integer between 1 and 12.
+- uid: System.DateTimeOffset.Offset
+  id: Offset
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: Offset
+  fullName: System.DateTimeOffset.Offset
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 269
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the time's offset from Coordinated Universal Time (UTC).
+  syntax:
+    content: public TimeSpan Offset { get; }
+    content.vb: Public ReadOnly Property Offset As TimeSpan
+    parameters: []
+    return:
+      type: System.TimeSpan
+      description: The difference between the current @'System.DateTimeOffset' object's time value and Coordinated Universal Time (UTC).
+- uid: System.DateTimeOffset.Second
+  id: Second
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: Second
+  fullName: System.DateTimeOffset.Second
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 278
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the second component of the clock time represented by the current @'System.DateTimeOffset' object.
+  syntax:
+    content: public int Second { get; }
+    content.vb: Public ReadOnly Property Second As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: The second component of the @'System.DateTimeOffset' object, expressed as an integer value between 0 and 59.
+- uid: System.DateTimeOffset.Ticks
+  id: Ticks
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: Ticks
+  fullName: System.DateTimeOffset.Ticks
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 290
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the number of ticks that represents the date and time of the current @'System.DateTimeOffset' object in clock time.
+  syntax:
+    content: public long Ticks { get; }
+    content.vb: Public ReadOnly Property Ticks As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: The number of ticks in the @'System.DateTimeOffset' object's clock time.
+- uid: System.DateTimeOffset.UtcTicks
+  id: UtcTicks
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: UtcTicks
+  fullName: System.DateTimeOffset.UtcTicks
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 296
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the number of ticks that represents the date and time of the current @'System.DateTimeOffset' object in Coordinated Universal Time (UTC).
+  syntax:
+    content: public long UtcTicks { get; }
+    content.vb: Public ReadOnly Property UtcTicks As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: The number of ticks in the @'System.DateTimeOffset' object's Coordinated Universal Time (UTC).
+- uid: System.DateTimeOffset.TimeOfDay
+  id: TimeOfDay
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: TimeOfDay
+  fullName: System.DateTimeOffset.TimeOfDay
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 305
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the time of day for the current @'System.DateTimeOffset' object.
+  syntax:
+    content: public TimeSpan TimeOfDay { get; }
+    content.vb: Public ReadOnly Property TimeOfDay As TimeSpan
+    parameters: []
+    return:
+      type: System.TimeSpan
+      description: The time interval of the current date that has elapsed since midnight.
+- uid: System.DateTimeOffset.Year
+  id: Year
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: Year
+  fullName: System.DateTimeOffset.Year
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 314
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the year component of the date represented by the current @'System.DateTimeOffset' object.
+  syntax:
+    content: public int Year { get; }
+    content.vb: Public ReadOnly Property Year As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: The year component of the current @'System.DateTimeOffset' object, expressed as an integer value between 0 and 9999.
+- uid: System.DateTimeOffset.Add(System.TimeSpan)
+  id: Add(System.TimeSpan)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: Add(TimeSpan)
+  fullName: System.DateTimeOffset.Add(System.TimeSpan)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 324
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns a new @'System.DateTimeOffset' object that adds a specified time interval to the value of this instance.
+  syntax:
+    content: public DateTimeOffset Add(TimeSpan timeSpan)
+    content.vb: Public Function Add(timeSpan As TimeSpan) As DateTimeOffset
+    parameters:
+    - id: timeSpan
+      type: System.TimeSpan
+      description: A @'System.TimeSpan' object that represents a positive or a negative time interval.
+    return:
+      type: System.DateTimeOffset
+      description: An object whose value is the sum of the date and time represented by the current @'System.DateTimeOffset' object and the time interval represented by *timeSpan*.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: The resulting @'System.DateTimeOffset' value is less than @'System.DateTimeOffset.MinValue'.-or- The resulting @'System.DateTimeOffset' value is greater than @'System.DateTimeOffset.MaxValue'.
+- uid: System.DateTimeOffset.AddDays(System.Double)
+  id: AddDays(System.Double)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: AddDays(Double)
+  fullName: System.DateTimeOffset.AddDays(System.Double)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 334
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns a new @'System.DateTimeOffset' object that adds a specified number of whole and fractional days to the value of this instance.
+  syntax:
+    content: public DateTimeOffset AddDays(double days)
+    content.vb: Public Function AddDays(days As Double) As DateTimeOffset
+    parameters:
+    - id: days
+      type: System.Double
+      description: A number of whole and fractional days. The number can be negative or positive.
+    return:
+      type: System.DateTimeOffset
+      description: An object whose value is the sum of the date and time represented by the current @'System.DateTimeOffset' object and the number of days represented by *days*.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: The resulting @'System.DateTimeOffset' value is less than @'System.DateTimeOffset.MinValue'.-or- The resulting @'System.DateTimeOffset' value is greater than @'System.DateTimeOffset.MaxValue'.
+- uid: System.DateTimeOffset.AddHours(System.Double)
+  id: AddHours(System.Double)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: AddHours(Double)
+  fullName: System.DateTimeOffset.AddHours(System.Double)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 344
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns a new @'System.DateTimeOffset' object that adds a specified number of whole and fractional hours to the value of this instance.
+  syntax:
+    content: public DateTimeOffset AddHours(double hours)
+    content.vb: Public Function AddHours(hours As Double) As DateTimeOffset
+    parameters:
+    - id: hours
+      type: System.Double
+      description: A number of whole and fractional hours. The number can be negative or positive.
+    return:
+      type: System.DateTimeOffset
+      description: An object whose value is the sum of the date and time represented by the current @'System.DateTimeOffset' object and the number of hours represented by *hours*.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: The resulting @'System.DateTimeOffset' value is less than @'System.DateTimeOffset.MinValue'.-or- The resulting @'System.DateTimeOffset' value is greater than @'System.DateTimeOffset.MaxValue'.
+- uid: System.DateTimeOffset.AddMilliseconds(System.Double)
+  id: AddMilliseconds(System.Double)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: AddMilliseconds(Double)
+  fullName: System.DateTimeOffset.AddMilliseconds(System.Double)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 354
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns a new @'System.DateTimeOffset' object that adds a specified number of milliseconds to the value of this instance.
+  syntax:
+    content: public DateTimeOffset AddMilliseconds(double milliseconds)
+    content.vb: Public Function AddMilliseconds(milliseconds As Double) As DateTimeOffset
+    parameters:
+    - id: milliseconds
+      type: System.Double
+      description: A number of whole and fractional milliseconds. The number can be negative or positive.
+    return:
+      type: System.DateTimeOffset
+      description: An object whose value is the sum of the date and time represented by the current @'System.DateTimeOffset' object and the number of whole milliseconds represented by *milliseconds*.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: The resulting @'System.DateTimeOffset' value is less than @'System.DateTimeOffset.MinValue'.-or- The resulting @'System.DateTimeOffset' value is greater than @'System.DateTimeOffset.MaxValue'.
+- uid: System.DateTimeOffset.AddMinutes(System.Double)
+  id: AddMinutes(System.Double)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: AddMinutes(Double)
+  fullName: System.DateTimeOffset.AddMinutes(System.Double)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 364
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns a new @'System.DateTimeOffset' object that adds a specified number of whole and fractional minutes to the value of this instance.
+  syntax:
+    content: public DateTimeOffset AddMinutes(double minutes)
+    content.vb: Public Function AddMinutes(minutes As Double) As DateTimeOffset
+    parameters:
+    - id: minutes
+      type: System.Double
+      description: A number of whole and fractional minutes. The number can be negative or positive.
+    return:
+      type: System.DateTimeOffset
+      description: An object whose value is the sum of the date and time represented by the current @'System.DateTimeOffset' object and the number of minutes represented by *minutes*.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: The resulting @'System.DateTimeOffset' value is less than @'System.DateTimeOffset.MinValue'.-or- The resulting @'System.DateTimeOffset' value is greater than @'System.DateTimeOffset.MaxValue'.
+- uid: System.DateTimeOffset.AddMonths(System.Int32)
+  id: AddMonths(System.Int32)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: AddMonths(Int32)
+  fullName: System.DateTimeOffset.AddMonths(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 368
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns a new @'System.DateTimeOffset' object that adds a specified number of months to the value of this instance.
+  syntax:
+    content: public DateTimeOffset AddMonths(int months)
+    content.vb: Public Function AddMonths(months As Integer) As DateTimeOffset
+    parameters:
+    - id: months
+      type: System.Int32
+      description: A number of whole months. The number can be negative or positive.
+    return:
+      type: System.DateTimeOffset
+      description: An object whose value is the sum of the date and time represented by the current @'System.DateTimeOffset' object and the number of months represented by *months*.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: The resulting @'System.DateTimeOffset' value is less than @'System.DateTimeOffset.MinValue'.-or- The resulting @'System.DateTimeOffset' value is greater than @'System.DateTimeOffset.MaxValue'.
+- uid: System.DateTimeOffset.AddSeconds(System.Double)
+  id: AddSeconds(System.Double)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: AddSeconds(Double)
+  fullName: System.DateTimeOffset.AddSeconds(System.Double)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 378
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns a new @'System.DateTimeOffset' object that adds a specified number of whole and fractional seconds to the value of this instance.
+  syntax:
+    content: public DateTimeOffset AddSeconds(double seconds)
+    content.vb: Public Function AddSeconds(seconds As Double) As DateTimeOffset
+    parameters:
+    - id: seconds
+      type: System.Double
+      description: A number of whole and fractional seconds. The number can be negative or positive.
+    return:
+      type: System.DateTimeOffset
+      description: An object whose value is the sum of the date and time represented by the current @'System.DateTimeOffset' object and the number of seconds represented by *seconds*.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: The resulting @'System.DateTimeOffset' value is less than @'System.DateTimeOffset.MinValue'.-or- The resulting @'System.DateTimeOffset' value is greater than @'System.DateTimeOffset.MaxValue'.
+- uid: System.DateTimeOffset.AddTicks(System.Int64)
+  id: AddTicks(System.Int64)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: AddTicks(Int64)
+  fullName: System.DateTimeOffset.AddTicks(System.Int64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 386
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns a new @'System.DateTimeOffset' object that adds a specified number of ticks to the value of this instance.
+  syntax:
+    content: public DateTimeOffset AddTicks(long ticks)
+    content.vb: Public Function AddTicks(ticks As Long) As DateTimeOffset
+    parameters:
+    - id: ticks
+      type: System.Int64
+      description: A number of 100-nanosecond ticks. The number can be negative or positive.
+    return:
+      type: System.DateTimeOffset
+      description: An object whose value is the sum of the date and time represented by the current @'System.DateTimeOffset' object and the number of ticks represented by *ticks*.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: The resulting @'System.DateTimeOffset' value is less than @'System.DateTimeOffset.MinValue'.-or- The resulting @'System.DateTimeOffset' value is greater than @'System.DateTimeOffset.MaxValue'.
+- uid: System.DateTimeOffset.AddYears(System.Int32)
+  id: AddYears(System.Int32)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: AddYears(Int32)
+  fullName: System.DateTimeOffset.AddYears(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 398
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns a new @'System.DateTimeOffset' object that adds a specified number of years to the value of this instance.
+  syntax:
+    content: public DateTimeOffset AddYears(int years)
+    content.vb: Public Function AddYears(years As Integer) As DateTimeOffset
+    parameters:
+    - id: years
+      type: System.Int32
+      description: A number of years. The number can be negative or positive.
+    return:
+      type: System.DateTimeOffset
+      description: An object whose value is the sum of the date and time represented by the current @'System.DateTimeOffset' object and the number of years represented by *years*.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: The resulting @'System.DateTimeOffset' value is less than @'System.DateTimeOffset.MinValue'.-or- The resulting @'System.DateTimeOffset' value is greater than @'System.DateTimeOffset.MaxValue'.
+- uid: System.DateTimeOffset.Compare(System.DateTimeOffset,System.DateTimeOffset)
+  id: Compare(System.DateTimeOffset,System.DateTimeOffset)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: Compare(DateTimeOffset, DateTimeOffset)
+  fullName: System.DateTimeOffset.Compare(System.DateTimeOffset, System.DateTimeOffset)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 405
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Compares two @'System.DateTimeOffset' objects and indicates whether the first is earlier than the second, equal to the second, or later than the second.
+  syntax:
+    content: public static int Compare(DateTimeOffset first, DateTimeOffset second)
+    content.vb: Public Shared Function Compare(first As DateTimeOffset, second As DateTimeOffset) As Integer
+    parameters:
+    - id: first
+      type: System.DateTimeOffset
+      description: The first object to compare.
+    - id: second
+      type: System.DateTimeOffset
+      description: The second object to compare.
+    return:
+      type: System.Int32
+      description: A signed integer that indicates whether the value of the *first* parameter is earlier than, later than, or the same time as the value of the *second* parameter, as the following table shows.Return valueMeaningLess than zero*first* is earlier than *second*.Zero*first* is equal to *second*.Greater than zero*first* is later than *second*.
+- uid: System.DateTimeOffset.System#IComparable#CompareTo(System.Object)
+  id: System#IComparable#CompareTo(System.Object)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: IComparable.CompareTo(Object)
+  name.vb: System.IComparable.CompareTo(Object)
+  fullName: System.DateTimeOffset.System.IComparable.CompareTo(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 414
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Compares the value of the current @'System.DateTimeOffset' object with another object of the same type.
+  syntax:
+    content: int IComparable.CompareTo(object obj)
+    content.vb: Function System.IComparable.CompareTo(obj As Object) As Integer Implements IComparable.CompareTo
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current @'System.DateTimeOffset' object.
+    return:
+      type: System.Int32
+      description: A 32-bit signed integer that indicates whether the current @'System.DateTimeOffset' object is less than, equal to, or greater than *obj*. The return values of the method are interpreted as follows:Return ValueDescriptionLess than zeroThe current @'System.DateTimeOffset' object is less than (earlier than) *obj*.ZeroThe current @'System.DateTimeOffset' object is equal to (the same point in time as) *obj*.Greater than zeroThe current @'System.DateTimeOffset' object is greater than (later than) *obj*.
+- uid: System.DateTimeOffset.CompareTo(System.DateTimeOffset)
+  id: CompareTo(System.DateTimeOffset)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: CompareTo(DateTimeOffset)
+  fullName: System.DateTimeOffset.CompareTo(System.DateTimeOffset)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 427
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Compares the current @'System.DateTimeOffset' object to a specified @'System.DateTimeOffset' object and indicates whether the current object is earlier than, the same as, or later than the second @'System.DateTimeOffset' object.
+  syntax:
+    content: public int CompareTo(DateTimeOffset other)
+    content.vb: Public Function CompareTo(other As DateTimeOffset) As Integer
+    parameters:
+    - id: other
+      type: System.DateTimeOffset
+      description: An object to compare with the current @'System.DateTimeOffset' object.
+    return:
+      type: System.Int32
+      description: A signed integer that indicates the relationship between the current @'System.DateTimeOffset' object and *other*, as the following table shows.Return ValueDescriptionLess than zeroThe current @'System.DateTimeOffset' object is earlier than *other*.ZeroThe current @'System.DateTimeOffset' object is the same as *other*.Greater than zero.The current @'System.DateTimeOffset' object is later than *other*.
+- uid: System.DateTimeOffset.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: Equals(Object)
+  fullName: System.DateTimeOffset.Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 441
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Determines whether a @'System.DateTimeOffset' object represents the same point in time as a specified object.
+  syntax:
+    content: public override bool Equals(object obj)
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare to the current @'System.DateTimeOffset' object.
+    return:
+      type: System.Boolean
+      description: true if the *obj* parameter is a @'System.DateTimeOffset' object and represents the same point in time as the current @'System.DateTimeOffset' object; otherwise, false.
+  overridden: System.ValueType.Equals(System.Object)
+- uid: System.DateTimeOffset.Equals(System.DateTimeOffset)
+  id: Equals(System.DateTimeOffset)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: Equals(DateTimeOffset)
+  fullName: System.DateTimeOffset.Equals(System.DateTimeOffset)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 448
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Determines whether the current @'System.DateTimeOffset' object represents the same point in time as a specified @'System.DateTimeOffset' object.
+  syntax:
+    content: public bool Equals(DateTimeOffset other)
+    content.vb: Public Function Equals(other As DateTimeOffset) As Boolean
+    parameters:
+    - id: other
+      type: System.DateTimeOffset
+      description: An object to compare to the current @'System.DateTimeOffset' object.
+    return:
+      type: System.Boolean
+      description: true if both @'System.DateTimeOffset' objects have the same @'System.DateTimeOffset.UtcDateTime' value; otherwise, false.
+- uid: System.DateTimeOffset.EqualsExact(System.DateTimeOffset)
+  id: EqualsExact(System.DateTimeOffset)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: EqualsExact(DateTimeOffset)
+  fullName: System.DateTimeOffset.EqualsExact(System.DateTimeOffset)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 452
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Determines whether the current @'System.DateTimeOffset' object represents the same time and has the same offset as a specified @'System.DateTimeOffset' object.
+  syntax:
+    content: public bool EqualsExact(DateTimeOffset other)
+    content.vb: Public Function EqualsExact(other As DateTimeOffset) As Boolean
+    parameters:
+    - id: other
+      type: System.DateTimeOffset
+      description: The object to compare to the current @'System.DateTimeOffset' object.
+    return:
+      type: System.Boolean
+      description: true if the current @'System.DateTimeOffset' object and *other* have the same date and time value and the same @'System.DateTimeOffset.Offset' value; otherwise, false.
+- uid: System.DateTimeOffset.Equals(System.DateTimeOffset,System.DateTimeOffset)
+  id: Equals(System.DateTimeOffset,System.DateTimeOffset)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: Equals(DateTimeOffset, DateTimeOffset)
+  fullName: System.DateTimeOffset.Equals(System.DateTimeOffset, System.DateTimeOffset)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 466
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Determines whether two specified @'System.DateTimeOffset' objects represent the same point in time.
+  syntax:
+    content: public static bool Equals(DateTimeOffset first, DateTimeOffset second)
+    content.vb: Public Shared Function Equals(first As DateTimeOffset, second As DateTimeOffset) As Boolean
+    parameters:
+    - id: first
+      type: System.DateTimeOffset
+      description: The first object to compare.
+    - id: second
+      type: System.DateTimeOffset
+      description: The second object to compare.
+    return:
+      type: System.Boolean
+      description: true if the two @'System.DateTimeOffset' objects have the same @'System.DateTimeOffset.UtcDateTime' value; otherwise, false.
+- uid: System.DateTimeOffset.FromFileTime(System.Int64)
+  id: FromFileTime(System.Int64)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: FromFileTime(Int64)
+  fullName: System.DateTimeOffset.FromFileTime(System.Int64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 474
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the specified Windows file time to an equivalent local time.
+  syntax:
+    content: public static DateTimeOffset FromFileTime(long fileTime)
+    content.vb: Public Shared Function FromFileTime(fileTime As Long) As DateTimeOffset
+    parameters:
+    - id: fileTime
+      type: System.Int64
+      description: A Windows file time, expressed in ticks.
+    return:
+      type: System.DateTimeOffset
+      description: An object that represents the date and time of *fileTime* with the offset set to the local time offset.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*filetime* is less than zero.-or-*filetime* is greater than DateTimeOffset.MaxValue.Ticks.'
+- uid: System.DateTimeOffset.FromUnixTimeSeconds(System.Int64)
+  id: FromUnixTimeSeconds(System.Int64)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: FromUnixTimeSeconds(Int64)
+  fullName: System.DateTimeOffset.FromUnixTimeSeconds(System.Int64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 478
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts a Unix time expressed as the number of seconds that have elapsed since 1970-01-01T00:00:00Z to a @'System.DateTimeOffset' value.
+  syntax:
+    content: public static DateTimeOffset FromUnixTimeSeconds(long seconds)
+    content.vb: Public Shared Function FromUnixTimeSeconds(seconds As Long) As DateTimeOffset
+    parameters:
+    - id: seconds
+      type: System.Int64
+      description: A Unix time, expressed as the number of seconds that have elapsed since 1970-01-01T00:00:00Z (January 1, 1970, at 12:00 AM UTC). For Unix times before this date, its value is negative.
+    return:
+      type: System.DateTimeOffset
+      description: A date and time value that represents the same moment in time as the Unix time.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*seconds* is less than  -62,135,596,800. -or-*seconds* is greater than 253,402,300,799.'
+- uid: System.DateTimeOffset.FromUnixTimeMilliseconds(System.Int64)
+  id: FromUnixTimeMilliseconds(System.Int64)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: FromUnixTimeMilliseconds(Int64)
+  fullName: System.DateTimeOffset.FromUnixTimeMilliseconds(System.Int64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 488
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts a Unix time expressed as the number of milliseconds that have elapsed since 1970-01-01T00:00:00Z to a @'System.DateTimeOffset' value.
+  syntax:
+    content: public static DateTimeOffset FromUnixTimeMilliseconds(long milliseconds)
+    content.vb: Public Shared Function FromUnixTimeMilliseconds(milliseconds As Long) As DateTimeOffset
+    parameters:
+    - id: milliseconds
+      type: System.Int64
+      description: A Unix time, expressed as the number of milliseconds that have elapsed since 1970-01-01T00:00:00Z (January 1, 1970, at 12:00 AM UTC). For Unix times before this date, its value is negative.
+    return:
+      type: System.DateTimeOffset
+      description: A date and time value that represents the same moment in time as the Unix time.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*milliseconds* is less than  -62,135,596,800,000. -or-*milliseconds* is greater than 253,402,300,799,999.'
+- uid: System.DateTimeOffset.GetHashCode
+  id: GetHashCode
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: GetHashCode()
+  fullName: System.DateTimeOffset.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 540
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns the hash code for the current @'System.DateTimeOffset' object.
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: A 32-bit signed integer hash code.
+  overridden: System.ValueType.GetHashCode
+- uid: System.DateTimeOffset.Parse(System.String)
+  id: Parse(System.String)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: Parse(String)
+  fullName: System.DateTimeOffset.Parse(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 548
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the specified string representation of a date, time, and offset to its @'System.DateTimeOffset' equivalent.
+  syntax:
+    content: public static DateTimeOffset Parse(string input)
+    content.vb: Public Shared Function Parse(input As String) As DateTimeOffset
+    parameters:
+    - id: input
+      type: System.String
+      description: A string that contains a date and time to convert.
+    return:
+      type: System.DateTimeOffset
+      description: An object that is equivalent to the date and time that is contained in *input*.
+  exceptions:
+  - type: System.ArgumentException
+    description: The offset is greater than 14 hours or less than -14 hours.
+  - type: System.ArgumentNullException
+    description: '*input* is null.'
+  - type: System.FormatException
+    description: '*input* does not contain a valid string representation of a date and time.-or-*input* contains the string representation of an offset value without a date or time.'
+- uid: System.DateTimeOffset.Parse(System.String,System.IFormatProvider)
+  id: Parse(System.String,System.IFormatProvider)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: Parse(String, IFormatProvider)
+  fullName: System.DateTimeOffset.Parse(System.String, System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 561
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the specified string representation of a date and time to its @'System.DateTimeOffset' equivalent using the specified culture-specific format information.
+  syntax:
+    content: public static DateTimeOffset Parse(string input, IFormatProvider formatProvider)
+    content.vb: Public Shared Function Parse(input As String, formatProvider As IFormatProvider) As DateTimeOffset
+    parameters:
+    - id: input
+      type: System.String
+      description: A string that contains a date and time to convert.
+    - id: formatProvider
+      type: System.IFormatProvider
+      description: An object that provides culture-specific format information about *input*.
+    return:
+      type: System.DateTimeOffset
+      description: An object that is equivalent to the date and time that is contained in *input*, as specified by *formatProvider*.
+  exceptions:
+  - type: System.ArgumentException
+    description: The offset is greater than 14 hours or less than -14 hours.
+  - type: System.ArgumentNullException
+    description: '*input* is null.'
+  - type: System.FormatException
+    description: '*input* does not contain a valid string representation of a date and time.-or-*input* contains the string representation of an offset value without a date or time.'
+- uid: System.DateTimeOffset.Parse(System.String,System.IFormatProvider,System.Globalization.DateTimeStyles)
+  id: Parse(System.String,System.IFormatProvider,System.Globalization.DateTimeStyles)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: Parse(String, IFormatProvider, DateTimeStyles)
+  fullName: System.DateTimeOffset.Parse(System.String, System.IFormatProvider, System.Globalization.DateTimeStyles)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 565
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the specified string representation of a date and time to its @'System.DateTimeOffset' equivalent using the specified culture-specific format information and formatting style.
+  syntax:
+    content: public static DateTimeOffset Parse(string input, IFormatProvider formatProvider, DateTimeStyles styles)
+    content.vb: Public Shared Function Parse(input As String, formatProvider As IFormatProvider, styles As DateTimeStyles) As DateTimeOffset
+    parameters:
+    - id: input
+      type: System.String
+      description: A string that contains a date and time to convert.
+    - id: formatProvider
+      type: System.IFormatProvider
+      description: An object that provides culture-specific format information about *input*.
+    - id: styles
+      type: System.Globalization.DateTimeStyles
+      description: A bitwise combination of enumeration values that indicates the permitted format of *input*. A typical value to specify is @'System.Globalization.DateTimeStyles.None'.
+    return:
+      type: System.DateTimeOffset
+      description: An object that is equivalent to the date and time that is contained in *input* as specified by *formatProvider* and *styles*.
+  exceptions:
+  - type: System.ArgumentException
+    description: The offset is greater than 14 hours or less than -14 hours.-or-*styles* is not a valid @'System.Globalization.DateTimeStyles' value.-or-*styles* includes an unsupported @'System.Globalization.DateTimeStyles' value.-or-*styles* includes @'System.Globalization.DateTimeStyles' values that cannot be used together.
+  - type: System.ArgumentNullException
+    description: '*input* is null.'
+  - type: System.FormatException
+    description: '*input* does not contain a valid string representation of a date and time.-or-*input* contains the string representation of an offset value without a date or time.'
+- uid: System.DateTimeOffset.ParseExact(System.String,System.String,System.IFormatProvider)
+  id: ParseExact(System.String,System.String,System.IFormatProvider)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: ParseExact(String, String, IFormatProvider)
+  fullName: System.DateTimeOffset.ParseExact(System.String, System.String, System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 579
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the specified string representation of a date and time to its @'System.DateTimeOffset' equivalent using the specified format and culture-specific format information. The format of the string representation must match the specified format exactly.
+  syntax:
+    content: public static DateTimeOffset ParseExact(string input, string format, IFormatProvider formatProvider)
+    content.vb: Public Shared Function ParseExact(input As String, format As String, formatProvider As IFormatProvider) As DateTimeOffset
+    parameters:
+    - id: input
+      type: System.String
+      description: A string that contains a date and time to convert.
+    - id: format
+      type: System.String
+      description: A format specifier that defines the expected format of *input*.
+    - id: formatProvider
+      type: System.IFormatProvider
+      description: An object that supplies culture-specific formatting information about *input*.
+    return:
+      type: System.DateTimeOffset
+      description: An object that is equivalent to the date and time that is contained in *input* as specified by *format* and *formatProvider*.
+  exceptions:
+  - type: System.ArgumentException
+    description: The offset is greater than 14 hours or less than -14 hours.
+  - type: System.ArgumentNullException
+    description: '*input* is null.-or-*format* is null.'
+  - type: System.FormatException
+    description: '*input* is an empty string ("").-or-*input* does not contain a valid string representation of a date and time.-or-*format* is an empty string.-or-The hour component and the AM/PM designator in *input* do not agree.'
+- uid: System.DateTimeOffset.ParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles)
+  id: ParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: ParseExact(String, String, IFormatProvider, DateTimeStyles)
+  fullName: System.DateTimeOffset.ParseExact(System.String, System.String, System.IFormatProvider, System.Globalization.DateTimeStyles)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 587
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the specified string representation of a date and time to its @'System.DateTimeOffset' equivalent using the specified format, culture-specific format information, and style. The format of the string representation must match the specified format exactly.
+  syntax:
+    content: public static DateTimeOffset ParseExact(string input, string format, IFormatProvider formatProvider, DateTimeStyles styles)
+    content.vb: Public Shared Function ParseExact(input As String, format As String, formatProvider As IFormatProvider, styles As DateTimeStyles) As DateTimeOffset
+    parameters:
+    - id: input
+      type: System.String
+      description: A string that contains a date and time to convert.
+    - id: format
+      type: System.String
+      description: A format specifier that defines the expected format of *input*.
+    - id: formatProvider
+      type: System.IFormatProvider
+      description: An object that supplies culture-specific formatting information about *input*.
+    - id: styles
+      type: System.Globalization.DateTimeStyles
+      description: A bitwise combination of enumeration values that indicates the permitted format of *input*.
+    return:
+      type: System.DateTimeOffset
+      description: An object that is equivalent to the date and time that is contained in the *input* parameter, as specified by the *format*, *formatProvider*, and *styles* parameters.
+  exceptions:
+  - type: System.ArgumentException
+    description: The offset is greater than 14 hours or less than -14 hours.-or-The *styles* parameter includes an unsupported value.-or-The *styles* parameter contains @'System.Globalization.DateTimeStyles' values that cannot be used together.
+  - type: System.ArgumentNullException
+    description: '*input* is null.-or-*format* is null.'
+  - type: System.FormatException
+    description: '*input* is an empty string ("").-or-*input* does not contain a valid string representation of a date and time.-or-*format* is an empty string.-or-The hour component and the AM/PM designator in *input* do not agree.'
+- uid: System.DateTimeOffset.ParseExact(System.String,System.String[],System.IFormatProvider,System.Globalization.DateTimeStyles)
+  id: ParseExact(System.String,System.String[],System.IFormatProvider,System.Globalization.DateTimeStyles)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: ParseExact(String, String[], IFormatProvider, DateTimeStyles)
+  name.vb: ParseExact(String, String(), IFormatProvider, DateTimeStyles)
+  fullName: System.DateTimeOffset.ParseExact(System.String, System.String[], System.IFormatProvider, System.Globalization.DateTimeStyles)
+  fullName.vb: System.DateTimeOffset.ParseExact(System.String, System.String(), System.IFormatProvider, System.Globalization.DateTimeStyles)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 598
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the specified string representation of a date and time to its @'System.DateTimeOffset' equivalent using the specified formats, culture-specific format information, and style. The format of the string representation must match one of the specified formats exactly.
+  syntax:
+    content: public static DateTimeOffset ParseExact(string input, string[] formats, IFormatProvider formatProvider, DateTimeStyles styles)
+    content.vb: Public Shared Function ParseExact(input As String, formats As String(), formatProvider As IFormatProvider, styles As DateTimeStyles) As DateTimeOffset
+    parameters:
+    - id: input
+      type: System.String
+      description: A string that contains a date and time to convert.
+    - id: formats
+      type: System.String[]
+      description: An array of format specifiers that define the expected formats of *input*.
+    - id: formatProvider
+      type: System.IFormatProvider
+      description: An object that supplies culture-specific formatting information about *input*.
+    - id: styles
+      type: System.Globalization.DateTimeStyles
+      description: A bitwise combination of enumeration values that indicates the permitted format of *input*.
+    return:
+      type: System.DateTimeOffset
+      description: An object that is equivalent to the date and time that is contained in the *input* parameter, as specified by the *formats*, *formatProvider*, and *styles* parameters.
+  exceptions:
+  - type: System.ArgumentException
+    description: The offset is greater than 14 hours or less than -14 hours.-or-*styles* includes an unsupported value.-or-The *styles* parameter contains @'System.Globalization.DateTimeStyles' values that cannot be used together.
+  - type: System.ArgumentNullException
+    description: '*input* is null.'
+  - type: System.FormatException
+    description: '*input* is an empty string ("").-or-*input* does not contain a valid string representation of a date and time.-or-No element of *formats* contains a valid format specifier.-or-The hour component and the AM/PM designator in *input* do not agree.'
+- uid: System.DateTimeOffset.Subtract(System.DateTimeOffset)
+  id: Subtract(System.DateTimeOffset)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: Subtract(DateTimeOffset)
+  fullName: System.DateTimeOffset.Subtract(System.DateTimeOffset)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 609
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Subtracts a @'System.DateTimeOffset' value that represents a specific date and time from the current @'System.DateTimeOffset' object.
+  syntax:
+    content: public TimeSpan Subtract(DateTimeOffset value)
+    content.vb: Public Function Subtract(value As DateTimeOffset) As TimeSpan
+    parameters:
+    - id: value
+      type: System.DateTimeOffset
+      description: An object that represents the value to subtract.
+    return:
+      type: System.TimeSpan
+      description: An object that specifies the interval between the two @'System.DateTimeOffset' objects.
+- uid: System.DateTimeOffset.Subtract(System.TimeSpan)
+  id: Subtract(System.TimeSpan)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: Subtract(TimeSpan)
+  fullName: System.DateTimeOffset.Subtract(System.TimeSpan)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 613
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Subtracts a specified time interval from the current @'System.DateTimeOffset' object.
+  syntax:
+    content: public DateTimeOffset Subtract(TimeSpan value)
+    content.vb: Public Function Subtract(value As TimeSpan) As DateTimeOffset
+    parameters:
+    - id: value
+      type: System.TimeSpan
+      description: The time interval to subtract.
+    return:
+      type: System.DateTimeOffset
+      description: An object that is equal to the date and time represented by the current @'System.DateTimeOffset' object, minus the time interval represented by *value*.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: The resulting @'System.DateTimeOffset' value is less than @'System.DateTimeOffset.MinValue'.-or- The resulting @'System.DateTimeOffset' value is greater than @'System.DateTimeOffset.MaxValue'.
+- uid: System.DateTimeOffset.ToFileTime
+  id: ToFileTime
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: ToFileTime()
+  fullName: System.DateTimeOffset.ToFileTime()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 618
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the value of the current @'System.DateTimeOffset' object to a Windows file time.
+  syntax:
+    content: public long ToFileTime()
+    content.vb: Public Function ToFileTime As Long
+    return:
+      type: System.Int64
+      description: The value of the current @'System.DateTimeOffset' object, expressed as a Windows file time.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: The resulting file time would represent a date and time before midnight on January 1, 1601 C.E. Coordinated Universal Time (UTC).
+- uid: System.DateTimeOffset.ToUnixTimeSeconds
+  id: ToUnixTimeSeconds
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: ToUnixTimeSeconds()
+  fullName: System.DateTimeOffset.ToUnixTimeSeconds()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 622
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns the number of seconds that have elapsed since 1970-01-01T00:00:00Z.
+  syntax:
+    content: public long ToUnixTimeSeconds()
+    content.vb: Public Function ToUnixTimeSeconds As Long
+    return:
+      type: System.Int64
+      description: The number of seconds that have elapsed since 1970-01-01T00:00:00Z.
+- uid: System.DateTimeOffset.ToUnixTimeMilliseconds
+  id: ToUnixTimeMilliseconds
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: ToUnixTimeMilliseconds()
+  fullName: System.DateTimeOffset.ToUnixTimeMilliseconds()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 643
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns the number of milliseconds that have elapsed since 1970-01-01T00:00:00.000Z.
+  syntax:
+    content: public long ToUnixTimeMilliseconds()
+    content.vb: Public Function ToUnixTimeMilliseconds As Long
+    return:
+      type: System.Int64
+      description: The number of milliseconds that have elapsed since 1970-01-01T00:00:00.000Z.
+- uid: System.DateTimeOffset.ToLocalTime
+  id: ToLocalTime
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: ToLocalTime()
+  fullName: System.DateTimeOffset.ToLocalTime()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 650
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the current @'System.DateTimeOffset' object to a @'System.DateTimeOffset' object that represents the local time.
+  syntax:
+    content: public DateTimeOffset ToLocalTime()
+    content.vb: Public Function ToLocalTime As DateTimeOffset
+    return:
+      type: System.DateTimeOffset
+      description: An object that represents the date and time of the current @'System.DateTimeOffset' object converted to local time.
+- uid: System.DateTimeOffset.ToString
+  id: ToString
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: ToString()
+  fullName: System.DateTimeOffset.ToString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 659
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the value of the current @'System.DateTimeOffset' object to its equivalent string representation.
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+      description: A string representation of a @'System.DateTimeOffset' object that includes the offset appended at the end of the string.
+  overridden: System.ValueType.ToString
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: The date and time is outside the range of dates supported by the calendar used by the current culture.
+- uid: System.DateTimeOffset.ToString(System.String)
+  id: ToString(System.String)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: ToString(String)
+  fullName: System.DateTimeOffset.ToString(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 664
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the value of the current @'System.DateTimeOffset' object to its equivalent string representation using the specified format.
+  syntax:
+    content: public string ToString(string format)
+    content.vb: Public Function ToString(format As String) As String
+    parameters:
+    - id: format
+      type: System.String
+      description: A format string.
+    return:
+      type: System.String
+      description: A string representation of the value of the current @'System.DateTimeOffset' object, as specified by *format*.
+  exceptions:
+  - type: System.FormatException
+    description: The length of *format* is one, and it is not one of the standard format specifier characters defined for @'System.Globalization.DateTimeFormatInfo'. -or-*format* does not contain a valid custom format pattern.
+  - type: System.ArgumentOutOfRangeException
+    description: The date and time is outside the range of dates supported by the calendar used by the current culture.
+- uid: System.DateTimeOffset.ToString(System.IFormatProvider)
+  id: ToString(System.IFormatProvider)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: ToString(IFormatProvider)
+  fullName: System.DateTimeOffset.ToString(System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 669
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the value of the current @'System.DateTimeOffset' object to its equivalent string representation using the specified culture-specific formatting information.
+  syntax:
+    content: public string ToString(IFormatProvider formatProvider)
+    content.vb: Public Function ToString(formatProvider As IFormatProvider) As String
+    parameters:
+    - id: formatProvider
+      type: System.IFormatProvider
+      description: An object that supplies culture-specific formatting information.
+    return:
+      type: System.String
+      description: A string representation of the value of the current @'System.DateTimeOffset' object, as specified by *formatProvider*.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: The date and time is outside the range of dates supported by the calendar used by *formatProvider*.
+- uid: System.DateTimeOffset.ToString(System.String,System.IFormatProvider)
+  id: ToString(System.String,System.IFormatProvider)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: ToString(String, IFormatProvider)
+  fullName: System.DateTimeOffset.ToString(System.String, System.IFormatProvider)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 674
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the value of the current @'System.DateTimeOffset' object to its equivalent string representation using the specified format and culture-specific format information.
+  syntax:
+    content: public string ToString(string format, IFormatProvider formatProvider)
+    content.vb: Public Function ToString(format As String, formatProvider As IFormatProvider) As String
+    parameters:
+    - id: format
+      type: System.String
+      description: A format string.
+    - id: formatProvider
+      type: System.IFormatProvider
+      description: An object that supplies culture-specific formatting information.
+    return:
+      type: System.String
+      description: A string representation of the value of the current @'System.DateTimeOffset' object, as specified by *format* and *provider*.
+  exceptions:
+  - type: System.FormatException
+    description: The length of *format* is one, and it is not one of the standard format specifier characters defined for @'System.Globalization.DateTimeFormatInfo'.-or-*format* does not contain a valid custom format pattern.
+  - type: System.ArgumentOutOfRangeException
+    description: The date and time is outside the range of dates supported by the calendar used by *formatProvider*.
+- uid: System.DateTimeOffset.ToUniversalTime
+  id: ToUniversalTime
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: ToUniversalTime()
+  fullName: System.DateTimeOffset.ToUniversalTime()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 679
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the current @'System.DateTimeOffset' object to a @'System.DateTimeOffset' value that represents the Coordinated Universal Time (UTC).
+  syntax:
+    content: public DateTimeOffset ToUniversalTime()
+    content.vb: Public Function ToUniversalTime As DateTimeOffset
+    return:
+      type: System.DateTimeOffset
+      description: An object that represents the date and time of the current @'System.DateTimeOffset' object converted to Coordinated Universal Time (UTC).
+- uid: System.DateTimeOffset.TryParse(System.String,System.DateTimeOffset@)
+  id: TryParse(System.String,System.DateTimeOffset@)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: TryParse(String, out DateTimeOffset)
+  name.vb: TryParse(String, ByRef DateTimeOffset)
+  fullName: System.DateTimeOffset.TryParse(System.String, out System.DateTimeOffset)
+  fullName.vb: System.DateTimeOffset.TryParse(System.String, ByRef System.DateTimeOffset)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 683
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Tries to converts a specified string representation of a date and time to its @'System.DateTimeOffset' equivalent, and returns a value that indicates whether the conversion succeeded.
+  syntax:
+    content: public static bool TryParse(string input, out DateTimeOffset result)
+    content.vb: Public Shared Function TryParse(input As String, ByRef result As DateTimeOffset) As Boolean
+    parameters:
+    - id: input
+      type: System.String
+      description: A string that contains a date and time to convert.
+    - id: result
+      type: System.DateTimeOffset
+      description: When the method returns, contains the @'System.DateTimeOffset' equivalent to the date and time of *input*, if the conversion succeeded, or @'System.DateTimeOffset.MinValue', if the conversion failed. The conversion fails if the *input* parameter is null or does not contain a valid string representation of a date and time. This parameter is passed uninitialized.
+    return:
+      type: System.Boolean
+      description: true if the *input* parameter is successfully converted; otherwise, false.
+- uid: System.DateTimeOffset.TryParse(System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTimeOffset@)
+  id: TryParse(System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTimeOffset@)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: TryParse(String, IFormatProvider, DateTimeStyles, out DateTimeOffset)
+  name.vb: TryParse(String, IFormatProvider, DateTimeStyles, ByRef DateTimeOffset)
+  fullName: System.DateTimeOffset.TryParse(System.String, System.IFormatProvider, System.Globalization.DateTimeStyles, out System.DateTimeOffset)
+  fullName.vb: System.DateTimeOffset.TryParse(System.String, System.IFormatProvider, System.Globalization.DateTimeStyles, ByRef System.DateTimeOffset)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 695
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Tries to convert a specified string representation of a date and time to its @'System.DateTimeOffset' equivalent, and returns a value that indicates whether the conversion succeeded.
+  syntax:
+    content: public static bool TryParse(string input, IFormatProvider formatProvider, DateTimeStyles styles, out DateTimeOffset result)
+    content.vb: Public Shared Function TryParse(input As String, formatProvider As IFormatProvider, styles As DateTimeStyles, ByRef result As DateTimeOffset) As Boolean
+    parameters:
+    - id: input
+      type: System.String
+      description: A string that contains a date and time to convert.
+    - id: formatProvider
+      type: System.IFormatProvider
+      description: An object that provides culture-specific formatting information about *input*.
+    - id: styles
+      type: System.Globalization.DateTimeStyles
+      description: A bitwise combination of enumeration values that indicates the permitted format of *input*.
+    - id: result
+      type: System.DateTimeOffset
+      description: When the method returns, contains the @'System.DateTimeOffset' value equivalent to the date and time of *input*, if the conversion succeeded, or @'System.DateTimeOffset.MinValue', if the conversion failed. The conversion fails if the *input* parameter is null or does not contain a valid string representation of a date and time. This parameter is passed uninitialized.
+    return:
+      type: System.Boolean
+      description: true if the *input* parameter is successfully converted; otherwise, false.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*styles* includes an undefined @''System.Globalization.DateTimeStyles'' value.-or-@''System.Globalization.DateTimeStyles.NoCurrentDateDefault''  is not supported.-or-*styles* includes mutually exclusive @''System.Globalization.DateTimeStyles'' values.'
+- uid: System.DateTimeOffset.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTimeOffset@)
+  id: TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTimeOffset@)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: TryParseExact(String, String, IFormatProvider, DateTimeStyles, out DateTimeOffset)
+  name.vb: TryParseExact(String, String, IFormatProvider, DateTimeStyles, ByRef DateTimeOffset)
+  fullName: System.DateTimeOffset.TryParseExact(System.String, System.String, System.IFormatProvider, System.Globalization.DateTimeStyles, out System.DateTimeOffset)
+  fullName.vb: System.DateTimeOffset.TryParseExact(System.String, System.String, System.IFormatProvider, System.Globalization.DateTimeStyles, ByRef System.DateTimeOffset)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 708
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the specified string representation of a date and time to its @'System.DateTimeOffset' equivalent using the specified format, culture-specific format information, and style. The format of the string representation must match the specified format exactly.
+  syntax:
+    content: public static bool TryParseExact(string input, string format, IFormatProvider formatProvider, DateTimeStyles styles, out DateTimeOffset result)
+    content.vb: Public Shared Function TryParseExact(input As String, format As String, formatProvider As IFormatProvider, styles As DateTimeStyles, ByRef result As DateTimeOffset) As Boolean
+    parameters:
+    - id: input
+      type: System.String
+      description: A string that contains a date and time to convert.
+    - id: format
+      type: System.String
+      description: A format specifier that defines the required format of *input*.
+    - id: formatProvider
+      type: System.IFormatProvider
+      description: An object that supplies culture-specific formatting information about *input*.
+    - id: styles
+      type: System.Globalization.DateTimeStyles
+      description: A bitwise combination of enumeration values that indicates the permitted format of input. A typical value to specify is None.
+    - id: result
+      type: System.DateTimeOffset
+      description: When the method returns, contains the @'System.DateTimeOffset' equivalent to the date and time of *input*, if the conversion succeeded, or @'System.DateTimeOffset.MinValue', if the conversion failed. The conversion fails if the *input* parameter is null, or does not contain a valid string representation of a date and time in the expected format defined by *format* and *provider*. This parameter is passed uninitialized.
+    return:
+      type: System.Boolean
+      description: true if the *input* parameter is successfully converted; otherwise, false.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*styles* includes an undefined @''System.Globalization.DateTimeStyles'' value.-or-@''System.Globalization.DateTimeStyles.NoCurrentDateDefault''  is not supported.-or-*styles* includes mutually exclusive @''System.Globalization.DateTimeStyles'' values.'
+- uid: System.DateTimeOffset.TryParseExact(System.String,System.String[],System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTimeOffset@)
+  id: TryParseExact(System.String,System.String[],System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTimeOffset@)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: TryParseExact(String, String[], IFormatProvider, DateTimeStyles, out DateTimeOffset)
+  name.vb: TryParseExact(String, String(), IFormatProvider, DateTimeStyles, ByRef DateTimeOffset)
+  fullName: System.DateTimeOffset.TryParseExact(System.String, System.String[], System.IFormatProvider, System.Globalization.DateTimeStyles, out System.DateTimeOffset)
+  fullName.vb: System.DateTimeOffset.TryParseExact(System.String, System.String(), System.IFormatProvider, System.Globalization.DateTimeStyles, ByRef System.DateTimeOffset)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 723
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the specified string representation of a date and time to its @'System.DateTimeOffset' equivalent using the specified array of formats, culture-specific format information, and style. The format of the string representation must match one of the specified formats exactly.
+  syntax:
+    content: public static bool TryParseExact(string input, string[] formats, IFormatProvider formatProvider, DateTimeStyles styles, out DateTimeOffset result)
+    content.vb: Public Shared Function TryParseExact(input As String, formats As String(), formatProvider As IFormatProvider, styles As DateTimeStyles, ByRef result As DateTimeOffset) As Boolean
+    parameters:
+    - id: input
+      type: System.String
+      description: A string that contains a date and time to convert.
+    - id: formats
+      type: System.String[]
+      description: An array that defines the expected formats of *input*.
+    - id: formatProvider
+      type: System.IFormatProvider
+      description: An object that supplies culture-specific formatting information about *input*.
+    - id: styles
+      type: System.Globalization.DateTimeStyles
+      description: A bitwise combination of enumeration values that indicates the permitted format of input. A typical value to specify is None.
+    - id: result
+      type: System.DateTimeOffset
+      description: When the method returns, contains the @'System.DateTimeOffset' equivalent to the date and time of *input*, if the conversion succeeded, or @'System.DateTimeOffset.MinValue', if the conversion failed. The conversion fails if the *input* does not contain a valid string representation of a date and time, or does not contain the date and time in the expected format defined by *format*, or if *formats* is null. This parameter is passed uninitialized.
+    return:
+      type: System.Boolean
+      description: true if the *input* parameter is successfully converted; otherwise, false.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*styles* includes an undefined @''System.Globalization.DateTimeStyles'' value.-or-@''System.Globalization.DateTimeStyles.NoCurrentDateDefault''  is not supported.-or-*styles* includes mutually exclusive @''System.Globalization.DateTimeStyles'' values.'
+- uid: System.DateTimeOffset.op_Implicit(System.DateTime)~System.DateTimeOffset
+  id: op_Implicit(System.DateTime)~System.DateTimeOffset
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: Implicit(DateTime to DateTimeOffset)
+  name.vb: Widening(DateTime to DateTimeOffset)
+  fullName: System.DateTimeOffset.Implicit(System.DateTime to System.DateTimeOffset)
+  fullName.vb: System.DateTimeOffset.Widening(System.DateTime to System.DateTimeOffset)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 789
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Defines an implicit conversion of a @'System.DateTime' object to a @'System.DateTimeOffset' object.
+  syntax:
+    content: public static implicit operator DateTimeOffset(DateTime dateTime)
+    content.vb: Public Shared Widening Operator CType(dateTime As Date) As DateTimeOffset
+    parameters:
+    - id: dateTime
+      type: System.DateTime
+      description: The object to convert.
+    return:
+      type: System.DateTimeOffset
+      description: The converted object.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: The Coordinated Universal Time (UTC) date and time that results from applying the offset is earlier than @'System.DateTimeOffset.MinValue'.-or-The UTC date and time that results from applying the offset is later than @'System.DateTimeOffset.MaxValue'.
+- uid: System.DateTimeOffset.op_Addition(System.DateTimeOffset,System.TimeSpan)
+  id: op_Addition(System.DateTimeOffset,System.TimeSpan)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: Addition(DateTimeOffset, TimeSpan)
+  fullName: System.DateTimeOffset.Addition(System.DateTimeOffset, System.TimeSpan)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 793
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Adds a specified time interval to a @'System.DateTimeOffset' object that has a specified date and time, and yields a @'System.DateTimeOffset' object that has new a date and time.
+  syntax:
+    content: public static DateTimeOffset operator +(DateTimeOffset dateTimeOffset, TimeSpan timeSpan)
+    content.vb: Public Shared Operator +(dateTimeOffset As DateTimeOffset, timeSpan As TimeSpan) As DateTimeOffset
+    parameters:
+    - id: dateTimeOffset
+      type: System.DateTimeOffset
+      description: The object to add the time interval to.
+    - id: timeSpan
+      type: System.TimeSpan
+      description: The time interval to add.
+    return:
+      type: System.DateTimeOffset
+      description: An object whose value is the sum of the values of *dateTimeTz* and *timeSpan*.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: The resulting @'System.DateTimeOffset' value is less than @'System.DateTimeOffset.MinValue'.-or- The resulting @'System.DateTimeOffset' value is greater than @'System.DateTimeOffset.MaxValue'.
+- uid: System.DateTimeOffset.op_Subtraction(System.DateTimeOffset,System.TimeSpan)
+  id: op_Subtraction(System.DateTimeOffset,System.TimeSpan)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: Subtraction(DateTimeOffset, TimeSpan)
+  fullName: System.DateTimeOffset.Subtraction(System.DateTimeOffset, System.TimeSpan)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 798
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Subtracts a specified time interval from a specified date and time, and yields a new date and time.
+  syntax:
+    content: public static DateTimeOffset operator -(DateTimeOffset dateTimeOffset, TimeSpan timeSpan)
+    content.vb: Public Shared Operator -(dateTimeOffset As DateTimeOffset, timeSpan As TimeSpan) As DateTimeOffset
+    parameters:
+    - id: dateTimeOffset
+      type: System.DateTimeOffset
+      description: The date and time object to subtract from.
+    - id: timeSpan
+      type: System.TimeSpan
+      description: The time interval to subtract.
+    return:
+      type: System.DateTimeOffset
+      description: An object that is equal to the value of *dateTimeOffset* minus *timeSpan*.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: The resulting @'System.DateTimeOffset' value is less than @'System.DateTimeOffset.MinValue' or greater than @'System.DateTimeOffset.MaxValue'.
+- uid: System.DateTimeOffset.op_Subtraction(System.DateTimeOffset,System.DateTimeOffset)
+  id: op_Subtraction(System.DateTimeOffset,System.DateTimeOffset)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: Subtraction(DateTimeOffset, DateTimeOffset)
+  fullName: System.DateTimeOffset.Subtraction(System.DateTimeOffset, System.DateTimeOffset)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 802
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Subtracts one @'System.DateTimeOffset' object from another and yields a time interval.
+  syntax:
+    content: public static TimeSpan operator -(DateTimeOffset left, DateTimeOffset right)
+    content.vb: Public Shared Operator -(left As DateTimeOffset, right As DateTimeOffset) As TimeSpan
+    parameters:
+    - id: left
+      type: System.DateTimeOffset
+      description: The minuend.
+    - id: right
+      type: System.DateTimeOffset
+      description: The subtrahend.
+    return:
+      type: System.TimeSpan
+      description: An object that represents the difference between *left* and *right*.
+- uid: System.DateTimeOffset.op_Equality(System.DateTimeOffset,System.DateTimeOffset)
+  id: op_Equality(System.DateTimeOffset,System.DateTimeOffset)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: Equality(DateTimeOffset, DateTimeOffset)
+  fullName: System.DateTimeOffset.Equality(System.DateTimeOffset, System.DateTimeOffset)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 806
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Determines whether two specified @'System.DateTimeOffset' objects represent the same point in time.
+  syntax:
+    content: public static bool operator ==(DateTimeOffset left, DateTimeOffset right)
+    content.vb: Public Shared Operator =(left As DateTimeOffset, right As DateTimeOffset) As Boolean
+    parameters:
+    - id: left
+      type: System.DateTimeOffset
+      description: The first object to compare.
+    - id: right
+      type: System.DateTimeOffset
+      description: The second object to compare.
+    return:
+      type: System.Boolean
+      description: true if both @'System.DateTimeOffset' objects have the same @'System.DateTimeOffset.UtcDateTime' value; otherwise, false.
+- uid: System.DateTimeOffset.op_Inequality(System.DateTimeOffset,System.DateTimeOffset)
+  id: op_Inequality(System.DateTimeOffset,System.DateTimeOffset)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: Inequality(DateTimeOffset, DateTimeOffset)
+  fullName: System.DateTimeOffset.Inequality(System.DateTimeOffset, System.DateTimeOffset)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 810
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Determines whether two specified @'System.DateTimeOffset' objects refer to different points in time.
+  syntax:
+    content: public static bool operator !=(DateTimeOffset left, DateTimeOffset right)
+    content.vb: Public Shared Operator <>(left As DateTimeOffset, right As DateTimeOffset) As Boolean
+    parameters:
+    - id: left
+      type: System.DateTimeOffset
+      description: The first object to compare.
+    - id: right
+      type: System.DateTimeOffset
+      description: The second object to compare.
+    return:
+      type: System.Boolean
+      description: true if *left* and *right* do not have the same @'System.DateTimeOffset.UtcDateTime' value; otherwise, false.
+- uid: System.DateTimeOffset.op_LessThan(System.DateTimeOffset,System.DateTimeOffset)
+  id: op_LessThan(System.DateTimeOffset,System.DateTimeOffset)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: LessThan(DateTimeOffset, DateTimeOffset)
+  fullName: System.DateTimeOffset.LessThan(System.DateTimeOffset, System.DateTimeOffset)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 814
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Determines whether one specified @'System.DateTimeOffset' object is less than a second specified @'System.DateTimeOffset' object.
+  syntax:
+    content: public static bool operator <(DateTimeOffset left, DateTimeOffset right)
+    content.vb: Public Shared Operator <(left As DateTimeOffset, right As DateTimeOffset) As Boolean
+    parameters:
+    - id: left
+      type: System.DateTimeOffset
+      description: The first object to compare.
+    - id: right
+      type: System.DateTimeOffset
+      description: The second object to compare.
+    return:
+      type: System.Boolean
+      description: true if the @'System.DateTimeOffset.UtcDateTime' value of *left* is earlier than the @'System.DateTimeOffset.UtcDateTime' value of *right*; otherwise, false.
+- uid: System.DateTimeOffset.op_LessThanOrEqual(System.DateTimeOffset,System.DateTimeOffset)
+  id: op_LessThanOrEqual(System.DateTimeOffset,System.DateTimeOffset)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: LessThanOrEqual(DateTimeOffset, DateTimeOffset)
+  fullName: System.DateTimeOffset.LessThanOrEqual(System.DateTimeOffset, System.DateTimeOffset)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 818
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Determines whether one specified @'System.DateTimeOffset' object is less than a second specified @'System.DateTimeOffset' object.
+  syntax:
+    content: public static bool operator <=(DateTimeOffset left, DateTimeOffset right)
+    content.vb: Public Shared Operator <=(left As DateTimeOffset, right As DateTimeOffset) As Boolean
+    parameters:
+    - id: left
+      type: System.DateTimeOffset
+      description: The first object to compare.
+    - id: right
+      type: System.DateTimeOffset
+      description: The second object to compare.
+    return:
+      type: System.Boolean
+      description: true if the @'System.DateTimeOffset.UtcDateTime' value of *left* is earlier than the @'System.DateTimeOffset.UtcDateTime' value of *right*; otherwise, false.
+- uid: System.DateTimeOffset.op_GreaterThan(System.DateTimeOffset,System.DateTimeOffset)
+  id: op_GreaterThan(System.DateTimeOffset,System.DateTimeOffset)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: GreaterThan(DateTimeOffset, DateTimeOffset)
+  fullName: System.DateTimeOffset.GreaterThan(System.DateTimeOffset, System.DateTimeOffset)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 822
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Determines whether one specified @'System.DateTimeOffset' object is greater than (or later than) a second specified @'System.DateTimeOffset' object.
+  syntax:
+    content: public static bool operator>(DateTimeOffset left, DateTimeOffset right)
+    content.vb: Public Shared Operator>(left As DateTimeOffset, right As DateTimeOffset) As Boolean
+    parameters:
+    - id: left
+      type: System.DateTimeOffset
+      description: The first object to compare.
+    - id: right
+      type: System.DateTimeOffset
+      description: The second object to compare.
+    return:
+      type: System.Boolean
+      description: true if the @'System.DateTimeOffset.UtcDateTime' value of *left* is later than the @'System.DateTimeOffset.UtcDateTime' value of *right*; otherwise, false.
+- uid: System.DateTimeOffset.op_GreaterThanOrEqual(System.DateTimeOffset,System.DateTimeOffset)
+  id: op_GreaterThanOrEqual(System.DateTimeOffset,System.DateTimeOffset)
+  parent: System.DateTimeOffset
+  href: System.DateTimeOffset.yml
+  name: GreaterThanOrEqual(DateTimeOffset, DateTimeOffset)
+  fullName: System.DateTimeOffset.GreaterThanOrEqual(System.DateTimeOffset, System.DateTimeOffset)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/DateTimeOffset.cs
+    startLine: 826
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Determines whether one specified @'System.DateTimeOffset' object is greater than or equal to a second specified @'System.DateTimeOffset' object.
+  syntax:
+    content: public static bool operator >=(DateTimeOffset left, DateTimeOffset right)
+    content.vb: Public Shared Operator >=(left As DateTimeOffset, right As DateTimeOffset) As Boolean
+    parameters:
+    - id: left
+      type: System.DateTimeOffset
+      description: The first object to compare.
+    - id: right
+      type: System.DateTimeOffset
+      description: The second object to compare.
+    return:
+      type: System.Boolean
+      description: true if the @'System.DateTimeOffset.UtcDateTime' value of *left* is the same as or later than the @'System.DateTimeOffset.UtcDateTime' value of *right*; otherwise, false.
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  fullName: System.Int64
+- uid: System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  fullName: System.TimeSpan
+- uid: System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  fullName: System.DateTime
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Globalization.Calendar
+  parent: System.Globalization
+  isExternal: false
+  href: System.Globalization.Calendar.yml
+  name: Calendar
+  fullName: System.Globalization.Calendar
+  type: Class
+- uid: System.Globalization
+  isExternal: false
+  name: System.Globalization
+  fullName: System.Globalization
+- uid: System.DateTimeOffset
+  parent: System
+  isExternal: true
+  name: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: System.DayOfWeek
+  parent: System
+  isExternal: false
+  href: System.DayOfWeek.yml
+  name: DayOfWeek
+  fullName: System.DayOfWeek
+  type: Enum
+- uid: System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  fullName: System.Double
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.IFormatProvider
+  parent: System
+  isExternal: true
+  name: IFormatProvider
+  fullName: System.IFormatProvider
+- uid: System.Globalization.DateTimeStyles
+  parent: System.Globalization
+  isExternal: false
+  href: System.Globalization.DateTimeStyles.yml
+  name: DateTimeStyles
+  fullName: System.Globalization.DateTimeStyles
+  type: Enum
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  name.vb: String()
+  fullName: System.String[]
+  fullName.vb: System.String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )

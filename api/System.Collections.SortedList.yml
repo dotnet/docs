@@ -1,0 +1,1242 @@
+items:
+- uid: System.Collections.SortedList
+  id: SortedList
+  parent: System.Collections
+  children:
+  - System.Collections.SortedList.#ctor
+  - System.Collections.SortedList.#ctor(System.Collections.IComparer)
+  - System.Collections.SortedList.#ctor(System.Collections.IComparer,System.Int32)
+  - System.Collections.SortedList.#ctor(System.Collections.IDictionary)
+  - System.Collections.SortedList.#ctor(System.Collections.IDictionary,System.Collections.IComparer)
+  - System.Collections.SortedList.#ctor(System.Int32)
+  - System.Collections.SortedList.Add(System.Object,System.Object)
+  - System.Collections.SortedList.Capacity
+  - System.Collections.SortedList.Clear
+  - System.Collections.SortedList.Clone
+  - System.Collections.SortedList.Contains(System.Object)
+  - System.Collections.SortedList.ContainsKey(System.Object)
+  - System.Collections.SortedList.ContainsValue(System.Object)
+  - System.Collections.SortedList.CopyTo(System.Array,System.Int32)
+  - System.Collections.SortedList.Count
+  - System.Collections.SortedList.GetByIndex(System.Int32)
+  - System.Collections.SortedList.GetEnumerator
+  - System.Collections.SortedList.GetKey(System.Int32)
+  - System.Collections.SortedList.GetKeyList
+  - System.Collections.SortedList.GetValueList
+  - System.Collections.SortedList.IndexOfKey(System.Object)
+  - System.Collections.SortedList.IndexOfValue(System.Object)
+  - System.Collections.SortedList.IsFixedSize
+  - System.Collections.SortedList.IsReadOnly
+  - System.Collections.SortedList.IsSynchronized
+  - System.Collections.SortedList.Item(System.Object)
+  - System.Collections.SortedList.Keys
+  - System.Collections.SortedList.Remove(System.Object)
+  - System.Collections.SortedList.RemoveAt(System.Int32)
+  - System.Collections.SortedList.SetByIndex(System.Int32,System.Object)
+  - System.Collections.SortedList.Synchronized(System.Collections.SortedList)
+  - System.Collections.SortedList.SyncRoot
+  - System.Collections.SortedList.System#Collections#IEnumerable#GetEnumerator
+  - System.Collections.SortedList.TrimToSize
+  - System.Collections.SortedList.Values
+  href: System.Collections.SortedList.yml
+  name: SortedList
+  fullName: System.Collections.SortedList
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Collections.NonGeneric/src/System/Collections/SortedList.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Collections.NonGeneric/src/System/Collections/SortedList.cs
+    startLine: 60
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Represents a collection of key/value pairs that are sorted by the keys and are accessible by key and by index.
+  syntax:
+    content: 'public class SortedList : IDictionary, ICollection, IEnumerable'
+    content.vb: Public Class SortedList Implements IDictionary, ICollection, IEnumerable
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.IDictionary
+  - System.Collections.ICollection
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Collections.SortedList.#ctor
+  id: '#ctor'
+  parent: System.Collections.SortedList
+  href: System.Collections.SortedList.yml
+  name: SortedList()
+  fullName: System.Collections.SortedList.SortedList()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/SortedList.cs
+    startLine: 84
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Initializes a new instance of the @'System.Collections.SortedList' class that is empty, has the default initial capacity, and is sorted according to the @'System.IComparable' interface implemented by each key added to the @'System.Collections.SortedList' object.
+  syntax:
+    content: public SortedList()
+    content.vb: Public Sub New
+- uid: System.Collections.SortedList.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: System.Collections.SortedList
+  href: System.Collections.SortedList.yml
+  name: SortedList(Int32)
+  fullName: System.Collections.SortedList.SortedList(System.Int32)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/SortedList.cs
+    startLine: 103
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Initializes a new instance of the @'System.Collections.SortedList' class that is empty, has the specified initial capacity, and is sorted according to the @'System.IComparable' interface implemented by each key added to the @'System.Collections.SortedList' object.
+  syntax:
+    content: public SortedList(int initialCapacity)
+    content.vb: Public Sub New(initialCapacity As Integer)
+    parameters:
+    - id: initialCapacity
+      type: System.Int32
+      description: The initial number of elements that the @'System.Collections.SortedList' object can contain.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*initialCapacity* is less than zero.'
+  - type: System.OutOfMemoryException
+    description: There is not enough available memory to create a @'System.Collections.SortedList' object with the specified *initialCapacity*.
+- uid: System.Collections.SortedList.#ctor(System.Collections.IComparer)
+  id: '#ctor(System.Collections.IComparer)'
+  parent: System.Collections.SortedList
+  href: System.Collections.SortedList.yml
+  name: SortedList(IComparer)
+  fullName: System.Collections.SortedList.SortedList(System.Collections.IComparer)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/SortedList.cs
+    startLine: 123
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Initializes a new instance of the @'System.Collections.SortedList' class that is empty, has the default initial capacity, and is sorted according to the specified @'System.Collections.IComparer' interface.
+  syntax:
+    content: public SortedList(IComparer comparer)
+    content.vb: Public Sub New(comparer As IComparer)
+    parameters:
+    - id: comparer
+      type: System.Collections.IComparer
+      description: The @'System.Collections.IComparer' implementation to use when comparing keys.-or- null to use the @'System.IComparable' implementation of each key.
+- uid: System.Collections.SortedList.#ctor(System.Collections.IComparer,System.Int32)
+  id: '#ctor(System.Collections.IComparer,System.Int32)'
+  parent: System.Collections.SortedList
+  href: System.Collections.SortedList.yml
+  name: SortedList(IComparer, Int32)
+  fullName: System.Collections.SortedList.SortedList(System.Collections.IComparer, System.Int32)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/SortedList.cs
+    startLine: 138
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Initializes a new instance of the @'System.Collections.SortedList' class that is empty, has the specified initial capacity, and is sorted according to the specified @'System.Collections.IComparer' interface.
+  syntax:
+    content: public SortedList(IComparer comparer, int capacity)
+    content.vb: Public Sub New(comparer As IComparer, capacity As Integer)
+    parameters:
+    - id: comparer
+      type: System.Collections.IComparer
+      description: The @'System.Collections.IComparer' implementation to use when comparing keys.-or- null to use the @'System.IComparable' implementation of each key.
+    - id: capacity
+      type: System.Int32
+      description: The initial number of elements that the @'System.Collections.SortedList' object can contain.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*capacity* is less than zero.'
+  - type: System.OutOfMemoryException
+    description: There is not enough available memory to create a @'System.Collections.SortedList' object with the specified *capacity*.
+- uid: System.Collections.SortedList.#ctor(System.Collections.IDictionary)
+  id: '#ctor(System.Collections.IDictionary)'
+  parent: System.Collections.SortedList
+  href: System.Collections.SortedList.yml
+  name: SortedList(IDictionary)
+  fullName: System.Collections.SortedList.SortedList(System.Collections.IDictionary)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/SortedList.cs
+    startLine: 150
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Initializes a new instance of the @'System.Collections.SortedList' class that contains elements copied from the specified dictionary, has the same initial capacity as the number of elements copied, and is sorted according to the @'System.IComparable' interface implemented by each key.
+  syntax:
+    content: public SortedList(IDictionary d)
+    content.vb: Public Sub New(d As IDictionary)
+    parameters:
+    - id: d
+      type: System.Collections.IDictionary
+      description: The @'System.Collections.IDictionary' implementation to copy to a new @'System.Collections.SortedList' object.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*d* is null.'
+  - type: System.InvalidCastException
+    description: One or more elements in *d* do not implement the @'System.IComparable' interface.
+- uid: System.Collections.SortedList.#ctor(System.Collections.IDictionary,System.Collections.IComparer)
+  id: '#ctor(System.Collections.IDictionary,System.Collections.IComparer)'
+  parent: System.Collections.SortedList
+  href: System.Collections.SortedList.yml
+  name: SortedList(IDictionary, IComparer)
+  fullName: System.Collections.SortedList.SortedList(System.Collections.IDictionary, System.Collections.IComparer)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/SortedList.cs
+    startLine: 163
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Initializes a new instance of the @'System.Collections.SortedList' class that contains elements copied from the specified dictionary, has the same initial capacity as the number of elements copied, and is sorted according to the specified @'System.Collections.IComparer' interface.
+  syntax:
+    content: public SortedList(IDictionary d, IComparer comparer)
+    content.vb: Public Sub New(d As IDictionary, comparer As IComparer)
+    parameters:
+    - id: d
+      type: System.Collections.IDictionary
+      description: The @'System.Collections.IDictionary' implementation to copy to a new @'System.Collections.SortedList' object.
+    - id: comparer
+      type: System.Collections.IComparer
+      description: The @'System.Collections.IComparer' implementation to use when comparing keys.-or- null to use the @'System.IComparable' implementation of each key.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*d* is null.'
+  - type: System.InvalidCastException
+    description: '*comparer* is null, and one or more elements in *d* do not implement the @''System.IComparable'' interface.'
+- uid: System.Collections.SortedList.Add(System.Object,System.Object)
+  id: Add(System.Object,System.Object)
+  parent: System.Collections.SortedList
+  href: System.Collections.SortedList.yml
+  name: Add(Object, Object)
+  fullName: System.Collections.SortedList.Add(System.Object, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/SortedList.cs
+    startLine: 185
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Adds an element with the specified key and value to a @'System.Collections.SortedList' object.
+  syntax:
+    content: public virtual void Add(object key, object value)
+    content.vb: Public Overridable Sub Add(key As Object, value As Object)
+    parameters:
+    - id: key
+      type: System.Object
+      description: The key of the element to add.
+    - id: value
+      type: System.Object
+      description: The value of the element to add. The value can be null.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*key* is null.'
+  - type: System.ArgumentException
+    description: An element with the specified *key* already exists in the @'System.Collections.SortedList' object.-or- The @'System.Collections.SortedList' is set to use the @'System.IComparable' interface, and *key* does not implement the @'System.IComparable' interface.
+  - type: System.NotSupportedException
+    description: The @'System.Collections.SortedList' is read-only.-or- The @'System.Collections.SortedList' has a fixed size.
+  - type: System.OutOfMemoryException
+    description: There is not enough available memory to add the element to the @'System.Collections.SortedList'.
+  - type: System.InvalidOperationException
+    description: The comparer throws an exception.
+- uid: System.Collections.SortedList.Capacity
+  id: Capacity
+  parent: System.Collections.SortedList
+  href: System.Collections.SortedList.yml
+  name: Capacity
+  fullName: System.Collections.SortedList.Capacity
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/SortedList.cs
+    startLine: 201
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Gets or sets the capacity of a @'System.Collections.SortedList' object.
+  syntax:
+    content: public virtual int Capacity { get; set; }
+    content.vb: Public Overridable Property Capacity As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: The number of elements that the @'System.Collections.SortedList' object can contain.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: The value assigned is less than the current number of elements in the @'System.Collections.SortedList' object.
+  - type: System.OutOfMemoryException
+    description: There is not enough memory available on the system.
+- uid: System.Collections.SortedList.Count
+  id: Count
+  parent: System.Collections.SortedList
+  href: System.Collections.SortedList.yml
+  name: Count
+  fullName: System.Collections.SortedList.Count
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/SortedList.cs
+    startLine: 242
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Gets the number of elements contained in a @'System.Collections.SortedList' object.
+  syntax:
+    content: public virtual int Count { get; }
+    content.vb: Public Overridable ReadOnly Property Count As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: The number of elements contained in the @'System.Collections.SortedList' object.
+- uid: System.Collections.SortedList.Keys
+  id: Keys
+  parent: System.Collections.SortedList
+  href: System.Collections.SortedList.yml
+  name: Keys
+  fullName: System.Collections.SortedList.Keys
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/SortedList.cs
+    startLine: 254
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Gets the keys in a @'System.Collections.SortedList' object.
+  syntax:
+    content: public virtual ICollection Keys { get; }
+    content.vb: Public Overridable ReadOnly Property Keys As ICollection
+    parameters: []
+    return:
+      type: System.Collections.ICollection
+      description: An @'System.Collections.ICollection' object containing the keys in the @'System.Collections.SortedList' object.
+- uid: System.Collections.SortedList.Values
+  id: Values
+  parent: System.Collections.SortedList
+  href: System.Collections.SortedList.yml
+  name: Values
+  fullName: System.Collections.SortedList.Values
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/SortedList.cs
+    startLine: 266
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Gets the values in a @'System.Collections.SortedList' object.
+  syntax:
+    content: public virtual ICollection Values { get; }
+    content.vb: Public Overridable ReadOnly Property Values As ICollection
+    parameters: []
+    return:
+      type: System.Collections.ICollection
+      description: An @'System.Collections.ICollection' object containing the values in the @'System.Collections.SortedList' object.
+- uid: System.Collections.SortedList.IsReadOnly
+  id: IsReadOnly
+  parent: System.Collections.SortedList
+  href: System.Collections.SortedList.yml
+  name: IsReadOnly
+  fullName: System.Collections.SortedList.IsReadOnly
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/SortedList.cs
+    startLine: 275
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Gets a value indicating whether a @'System.Collections.SortedList' object is read-only.
+  syntax:
+    content: public virtual bool IsReadOnly { get; }
+    content.vb: Public Overridable ReadOnly Property IsReadOnly As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the @'System.Collections.SortedList' object is read-only; otherwise, false. The default is false.
+- uid: System.Collections.SortedList.IsFixedSize
+  id: IsFixedSize
+  parent: System.Collections.SortedList
+  href: System.Collections.SortedList.yml
+  name: IsFixedSize
+  fullName: System.Collections.SortedList.IsFixedSize
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/SortedList.cs
+    startLine: 280
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Gets a value indicating whether a @'System.Collections.SortedList' object has a fixed size.
+  syntax:
+    content: public virtual bool IsFixedSize { get; }
+    content.vb: Public Overridable ReadOnly Property IsFixedSize As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the @'System.Collections.SortedList' object has a fixed size; otherwise, false. The default is false.
+- uid: System.Collections.SortedList.IsSynchronized
+  id: IsSynchronized
+  parent: System.Collections.SortedList
+  href: System.Collections.SortedList.yml
+  name: IsSynchronized
+  fullName: System.Collections.SortedList.IsSynchronized
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/SortedList.cs
+    startLine: 286
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Gets a value indicating whether access to a @'System.Collections.SortedList' object is synchronized (thread safe).
+  syntax:
+    content: public virtual bool IsSynchronized { get; }
+    content.vb: Public Overridable ReadOnly Property IsSynchronized As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if access to the @'System.Collections.SortedList' object is synchronized (thread safe); otherwise, false. The default is false.
+- uid: System.Collections.SortedList.SyncRoot
+  id: SyncRoot
+  parent: System.Collections.SortedList
+  href: System.Collections.SortedList.yml
+  name: SyncRoot
+  fullName: System.Collections.SortedList.SyncRoot
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/SortedList.cs
+    startLine: 292
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Gets an object that can be used to synchronize access to a @'System.Collections.SortedList' object.
+  syntax:
+    content: public virtual object SyncRoot { get; }
+    content.vb: Public Overridable ReadOnly Property SyncRoot As Object
+    parameters: []
+    return:
+      type: System.Object
+      description: An object that can be used to synchronize access to the @'System.Collections.SortedList' object.
+- uid: System.Collections.SortedList.Clear
+  id: Clear
+  parent: System.Collections.SortedList
+  href: System.Collections.SortedList.yml
+  name: Clear()
+  fullName: System.Collections.SortedList.Clear()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/SortedList.cs
+    startLine: 305
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Removes all elements from a @'System.Collections.SortedList' object.
+  syntax:
+    content: public virtual void Clear()
+    content.vb: Public Overridable Sub Clear
+  exceptions:
+  - type: System.NotSupportedException
+    description: The @'System.Collections.SortedList' object is read-only.-or- The @'System.Collections.SortedList' has a fixed size.
+- uid: System.Collections.SortedList.Clone
+  id: Clone
+  parent: System.Collections.SortedList
+  href: System.Collections.SortedList.yml
+  name: Clone()
+  fullName: System.Collections.SortedList.Clone()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/SortedList.cs
+    startLine: 317
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Creates a shallow copy of a @'System.Collections.SortedList' object.
+  syntax:
+    content: public virtual object Clone()
+    content.vb: Public Overridable Function Clone As Object
+    return:
+      type: System.Object
+      description: A shallow copy of the @'System.Collections.SortedList' object.
+- uid: System.Collections.SortedList.Contains(System.Object)
+  id: Contains(System.Object)
+  parent: System.Collections.SortedList
+  href: System.Collections.SortedList.yml
+  name: Contains(Object)
+  fullName: System.Collections.SortedList.Contains(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/SortedList.cs
+    startLine: 332
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Determines whether a @'System.Collections.SortedList' object contains a specific key.
+  syntax:
+    content: public virtual bool Contains(object key)
+    content.vb: Public Overridable Function Contains(key As Object) As Boolean
+    parameters:
+    - id: key
+      type: System.Object
+      description: The key to locate in the @'System.Collections.SortedList' object.
+    return:
+      type: System.Boolean
+      description: true if the @'System.Collections.SortedList' object contains an element with the specified *key*; otherwise, false.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*key* is null.'
+  - type: System.InvalidOperationException
+    description: The comparer throws an exception.
+- uid: System.Collections.SortedList.ContainsKey(System.Object)
+  id: ContainsKey(System.Object)
+  parent: System.Collections.SortedList
+  href: System.Collections.SortedList.yml
+  name: ContainsKey(Object)
+  fullName: System.Collections.SortedList.ContainsKey(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/SortedList.cs
+    startLine: 339
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Determines whether a @'System.Collections.SortedList' object contains a specific key.
+  syntax:
+    content: public virtual bool ContainsKey(object key)
+    content.vb: Public Overridable Function ContainsKey(key As Object) As Boolean
+    parameters:
+    - id: key
+      type: System.Object
+      description: The key to locate in the @'System.Collections.SortedList' object.
+    return:
+      type: System.Boolean
+      description: true if the @'System.Collections.SortedList' object contains an element with the specified *key*; otherwise, false.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*key* is null.'
+  - type: System.InvalidOperationException
+    description: The comparer throws an exception.
+- uid: System.Collections.SortedList.ContainsValue(System.Object)
+  id: ContainsValue(System.Object)
+  parent: System.Collections.SortedList
+  href: System.Collections.SortedList.yml
+  name: ContainsValue(Object)
+  fullName: System.Collections.SortedList.ContainsValue(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/SortedList.cs
+    startLine: 351
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Determines whether a @'System.Collections.SortedList' object contains a specific value.
+  syntax:
+    content: public virtual bool ContainsValue(object value)
+    content.vb: Public Overridable Function ContainsValue(value As Object) As Boolean
+    parameters:
+    - id: value
+      type: System.Object
+      description: The value to locate in the @'System.Collections.SortedList' object. The value can be null.
+    return:
+      type: System.Boolean
+      description: true if the @'System.Collections.SortedList' object contains an element with the specified *value*; otherwise, false.
+- uid: System.Collections.SortedList.CopyTo(System.Array,System.Int32)
+  id: CopyTo(System.Array,System.Int32)
+  parent: System.Collections.SortedList
+  href: System.Collections.SortedList.yml
+  name: CopyTo(Array, Int32)
+  fullName: System.Collections.SortedList.CopyTo(System.Array, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/SortedList.cs
+    startLine: 357
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Copies @'System.Collections.SortedList' elements to a one-dimensional @'System.Array' object, starting at the specified index in the array.
+  syntax:
+    content: public virtual void CopyTo(Array array, int arrayIndex)
+    content.vb: Public Overridable Sub CopyTo(array As Array, arrayIndex As Integer)
+    parameters:
+    - id: array
+      type: System.Array
+      description: The one-dimensional @'System.Array' object that is the destination of the @'System.Collections.DictionaryEntry' objects copied from @'System.Collections.SortedList'. The @'System.Array' must have zero-based indexing.
+    - id: arrayIndex
+      type: System.Int32
+      description: The zero-based index in *array* at which copying begins.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*arrayIndex* is less than zero.'
+  - type: System.ArgumentException
+    description: '*array* is multidimensional.-or- The number of elements in the source @''System.Collections.SortedList'' object is greater than the available space from *arrayIndex* to the end of the destination *array*.'
+  - type: System.InvalidCastException
+    description: The type of the source @'System.Collections.SortedList' cannot be cast automatically to the type of the destination *array*.
+- uid: System.Collections.SortedList.GetByIndex(System.Int32)
+  id: GetByIndex(System.Int32)
+  parent: System.Collections.SortedList
+  href: System.Collections.SortedList.yml
+  name: GetByIndex(Int32)
+  fullName: System.Collections.SortedList.GetByIndex(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/SortedList.cs
+    startLine: 405
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Gets the value at the specified index of a @'System.Collections.SortedList' object.
+  syntax:
+    content: public virtual object GetByIndex(int index)
+    content.vb: Public Overridable Function GetByIndex(index As Integer) As Object
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the value to get.
+    return:
+      type: System.Object
+      description: The value at the specified index of the @'System.Collections.SortedList' object.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is outside the range of valid indexes for the @''System.Collections.SortedList'' object.'
+- uid: System.Collections.SortedList.System#Collections#IEnumerable#GetEnumerator
+  id: System#Collections#IEnumerable#GetEnumerator
+  parent: System.Collections.SortedList
+  href: System.Collections.SortedList.yml
+  name: IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: System.Collections.SortedList.System.Collections.IEnumerable.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/SortedList.cs
+    startLine: 418
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Returns an @'System.Collections.IEnumerator' that iterates through the @'System.Collections.SortedList'.
+  syntax:
+    content: IEnumerator IEnumerable.GetEnumerator()
+    content.vb: Function System.Collections.IEnumerable.GetEnumerator As IEnumerator Implements IEnumerable.GetEnumerator
+    return:
+      type: System.Collections.IEnumerator
+      description: An @'System.Collections.IEnumerator' for the @'System.Collections.SortedList'.
+- uid: System.Collections.SortedList.GetEnumerator
+  id: GetEnumerator
+  parent: System.Collections.SortedList
+  href: System.Collections.SortedList.yml
+  name: GetEnumerator()
+  fullName: System.Collections.SortedList.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/SortedList.cs
+    startLine: 428
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Returns an @'System.Collections.IDictionaryEnumerator' object that iterates through a @'System.Collections.SortedList' object.
+  syntax:
+    content: public virtual IDictionaryEnumerator GetEnumerator()
+    content.vb: Public Overridable Function GetEnumerator As IDictionaryEnumerator
+    return:
+      type: System.Collections.IDictionaryEnumerator
+      description: An @'System.Collections.IDictionaryEnumerator' object for the @'System.Collections.SortedList' object.
+- uid: System.Collections.SortedList.GetKey(System.Int32)
+  id: GetKey(System.Int32)
+  parent: System.Collections.SortedList
+  href: System.Collections.SortedList.yml
+  name: GetKey(Int32)
+  fullName: System.Collections.SortedList.GetKey(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/SortedList.cs
+    startLine: 435
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Gets the key at the specified index of a @'System.Collections.SortedList' object.
+  syntax:
+    content: public virtual object GetKey(int index)
+    content.vb: Public Overridable Function GetKey(index As Integer) As Object
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the key to get.
+    return:
+      type: System.Object
+      description: The key at the specified index of the @'System.Collections.SortedList' object.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is outside the range of valid indexes for the @''System.Collections.SortedList'' object.'
+- uid: System.Collections.SortedList.GetKeyList
+  id: GetKeyList
+  parent: System.Collections.SortedList
+  href: System.Collections.SortedList.yml
+  name: GetKeyList()
+  fullName: System.Collections.SortedList.GetKeyList()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/SortedList.cs
+    startLine: 454
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Gets the keys in a @'System.Collections.SortedList' object.
+  syntax:
+    content: public virtual IList GetKeyList()
+    content.vb: Public Overridable Function GetKeyList As IList
+    return:
+      type: System.Collections.IList
+      description: An @'System.Collections.IList' object containing the keys in the @'System.Collections.SortedList' object.
+- uid: System.Collections.SortedList.GetValueList
+  id: GetValueList
+  parent: System.Collections.SortedList
+  href: System.Collections.SortedList.yml
+  name: GetValueList()
+  fullName: System.Collections.SortedList.GetValueList()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/SortedList.cs
+    startLine: 471
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Gets the values in a @'System.Collections.SortedList' object.
+  syntax:
+    content: public virtual IList GetValueList()
+    content.vb: Public Overridable Function GetValueList As IList
+    return:
+      type: System.Collections.IList
+      description: An @'System.Collections.IList' object containing the values in the @'System.Collections.SortedList' object.
+- uid: System.Collections.SortedList.Item(System.Object)
+  id: Item(System.Object)
+  parent: System.Collections.SortedList
+  href: System.Collections.SortedList.yml
+  name: Item[Object]
+  name.vb: Item(Object)
+  fullName: System.Collections.SortedList.Item[System.Object]
+  fullName.vb: System.Collections.SortedList.Item(System.Object)
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/SortedList.cs
+    startLine: 480
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Gets and sets the value associated with a specific key in a @'System.Collections.SortedList' object.
+  syntax:
+    content: public virtual object this[object key] { get; set; }
+    content.vb: Public Overridable Property Item(key As Object) As Object
+    parameters:
+    - id: key
+      type: System.Object
+      description: The key associated with the value to get or set.
+    return:
+      type: System.Object
+      description: The value associated with the *key* parameter in the @'System.Collections.SortedList' object, if *key* is found; otherwise, null.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*key* is null.'
+  - type: System.NotSupportedException
+    description: The property is set and the @'System.Collections.SortedList' object is read-only.-or- The property is set, *key* does not exist in the collection, and the @'System.Collections.SortedList' has a fixed size.
+  - type: System.OutOfMemoryException
+    description: There is not enough available memory to add the element to the @'System.Collections.SortedList'.
+  - type: System.InvalidOperationException
+    description: The comparer throws an exception.
+- uid: System.Collections.SortedList.IndexOfKey(System.Object)
+  id: IndexOfKey(System.Object)
+  parent: System.Collections.SortedList
+  href: System.Collections.SortedList.yml
+  name: IndexOfKey(Object)
+  fullName: System.Collections.SortedList.IndexOfKey(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/SortedList.cs
+    startLine: 510
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Returns the zero-based index of the specified key in a @'System.Collections.SortedList' object.
+  syntax:
+    content: public virtual int IndexOfKey(object key)
+    content.vb: Public Overridable Function IndexOfKey(key As Object) As Integer
+    parameters:
+    - id: key
+      type: System.Object
+      description: The key to locate in the @'System.Collections.SortedList' object.
+    return:
+      type: System.Int32
+      description: The zero-based index of the *key* parameter, if *key* is found in the @'System.Collections.SortedList' object; otherwise, -1.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*key* is null.'
+  - type: System.InvalidOperationException
+    description: The comparer throws an exception.
+- uid: System.Collections.SortedList.IndexOfValue(System.Object)
+  id: IndexOfValue(System.Object)
+  parent: System.Collections.SortedList
+  href: System.Collections.SortedList.yml
+  name: IndexOfValue(Object)
+  fullName: System.Collections.SortedList.IndexOfValue(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/SortedList.cs
+    startLine: 525
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Returns the zero-based index of the first occurrence of the specified value in a @'System.Collections.SortedList' object.
+  syntax:
+    content: public virtual int IndexOfValue(object value)
+    content.vb: Public Overridable Function IndexOfValue(value As Object) As Integer
+    parameters:
+    - id: value
+      type: System.Object
+      description: The value to locate in the @'System.Collections.SortedList' object. The value can be null.
+    return:
+      type: System.Int32
+      description: The zero-based index of the first occurrence of the *value* parameter, if *value* is found in the @'System.Collections.SortedList' object; otherwise, -1.
+- uid: System.Collections.SortedList.RemoveAt(System.Int32)
+  id: RemoveAt(System.Int32)
+  parent: System.Collections.SortedList
+  href: System.Collections.SortedList.yml
+  name: RemoveAt(Int32)
+  fullName: System.Collections.SortedList.RemoveAt(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/SortedList.cs
+    startLine: 548
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Removes the element at the specified index of a @'System.Collections.SortedList' object.
+  syntax:
+    content: public virtual void RemoveAt(int index)
+    content.vb: Public Overridable Sub RemoveAt(index As Integer)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the element to remove.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is outside the range of valid indexes for the @''System.Collections.SortedList'' object.'
+  - type: System.NotSupportedException
+    description: The @'System.Collections.SortedList' is read-only.-or- The @'System.Collections.SortedList' has a fixed size.
+- uid: System.Collections.SortedList.Remove(System.Object)
+  id: Remove(System.Object)
+  parent: System.Collections.SortedList
+  href: System.Collections.SortedList.yml
+  name: Remove(Object)
+  fullName: System.Collections.SortedList.Remove(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/SortedList.cs
+    startLine: 567
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Removes the element with the specified key from a @'System.Collections.SortedList' object.
+  syntax:
+    content: public virtual void Remove(object key)
+    content.vb: Public Overridable Sub Remove(key As Object)
+    parameters:
+    - id: key
+      type: System.Object
+      description: The key of the element to remove.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*key* is null.'
+  - type: System.NotSupportedException
+    description: The @'System.Collections.SortedList' object is read-only.-or- The @'System.Collections.SortedList' has a fixed size.
+- uid: System.Collections.SortedList.SetByIndex(System.Int32,System.Object)
+  id: SetByIndex(System.Int32,System.Object)
+  parent: System.Collections.SortedList
+  href: System.Collections.SortedList.yml
+  name: SetByIndex(Int32, Object)
+  fullName: System.Collections.SortedList.SetByIndex(System.Int32, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/SortedList.cs
+    startLine: 577
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Replaces the value at a specific index in a @'System.Collections.SortedList' object.
+  syntax:
+    content: public virtual void SetByIndex(int index, object value)
+    content.vb: Public Overridable Sub SetByIndex(index As Integer, value As Object)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index at which to save *value*.
+    - id: value
+      type: System.Object
+      description: The @'System.Object' to save into the @'System.Collections.SortedList' object. The value can be null.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is outside the range of valid indexes for the @''System.Collections.SortedList'' object.'
+- uid: System.Collections.SortedList.Synchronized(System.Collections.SortedList)
+  id: Synchronized(System.Collections.SortedList)
+  parent: System.Collections.SortedList
+  href: System.Collections.SortedList.yml
+  name: Synchronized(SortedList)
+  fullName: System.Collections.SortedList.Synchronized(System.Collections.SortedList)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/SortedList.cs
+    startLine: 587
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Returns a synchronized (thread-safe) wrapper for a @'System.Collections.SortedList' object.
+  syntax:
+    content: public static SortedList Synchronized(SortedList list)
+    content.vb: Public Shared Function Synchronized(list As SortedList) As SortedList
+    parameters:
+    - id: list
+      type: System.Collections.SortedList
+      description: The @'System.Collections.SortedList' object to synchronize.
+    return:
+      type: System.Collections.SortedList
+      description: A synchronized (thread-safe) wrapper for the @'System.Collections.SortedList' object.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*list* is null.'
+- uid: System.Collections.SortedList.TrimToSize
+  id: TrimToSize
+  parent: System.Collections.SortedList
+  href: System.Collections.SortedList.yml
+  name: TrimToSize()
+  fullName: System.Collections.SortedList.TrimToSize()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.NonGeneric/src/System/Collections/SortedList.cs
+    startLine: 604
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: Sets the capacity to the actual number of elements in a @'System.Collections.SortedList' object.
+  syntax:
+    content: public virtual void TrimToSize()
+    content.vb: Public Overridable Sub TrimToSize
+  exceptions:
+  - type: System.NotSupportedException
+    description: The @'System.Collections.SortedList' object is read-only.-or- The @'System.Collections.SortedList' has a fixed size.
+references:
+- uid: System.Collections
+  isExternal: false
+  name: System.Collections
+  fullName: System.Collections
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Collections.IComparer
+  parent: System.Collections
+  isExternal: true
+  name: IComparer
+  fullName: System.Collections.IComparer
+- uid: System.Collections.IDictionary
+  parent: System.Collections
+  isExternal: true
+  name: IDictionary
+  fullName: System.Collections.IDictionary
+- uid: System.Collections.ICollection
+  parent: System.Collections
+  isExternal: true
+  name: ICollection
+  fullName: System.Collections.ICollection
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Array
+  parent: System
+  isExternal: true
+  name: Array
+  fullName: System.Array
+- uid: System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections.IDictionaryEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IDictionaryEnumerator
+  fullName: System.Collections.IDictionaryEnumerator
+- uid: System.Collections.IList
+  parent: System.Collections
+  isExternal: true
+  name: IList
+  fullName: System.Collections.IList
+- uid: System.Collections.SortedList
+  parent: System.Collections
+  isExternal: false
+  href: System.Collections.SortedList.yml
+  name: SortedList
+  fullName: System.Collections.SortedList
+  type: Class

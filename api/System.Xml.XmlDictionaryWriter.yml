@@ -1,0 +1,2220 @@
+items:
+- uid: System.Xml.XmlDictionaryWriter
+  id: XmlDictionaryWriter
+  parent: System.Xml
+  children:
+  - System.Xml.XmlDictionaryWriter.CanCanonicalize
+  - System.Xml.XmlDictionaryWriter.Close
+  - System.Xml.XmlDictionaryWriter.CreateBinaryWriter(System.IO.Stream)
+  - System.Xml.XmlDictionaryWriter.CreateBinaryWriter(System.IO.Stream,System.Xml.IXmlDictionary)
+  - System.Xml.XmlDictionaryWriter.CreateBinaryWriter(System.IO.Stream,System.Xml.IXmlDictionary,System.Xml.XmlBinaryWriterSession)
+  - System.Xml.XmlDictionaryWriter.CreateBinaryWriter(System.IO.Stream,System.Xml.IXmlDictionary,System.Xml.XmlBinaryWriterSession,System.Boolean)
+  - System.Xml.XmlDictionaryWriter.CreateDictionaryWriter(XmlWriter)
+  - System.Xml.XmlDictionaryWriter.CreateTextWriter(System.IO.Stream)
+  - System.Xml.XmlDictionaryWriter.CreateTextWriter(System.IO.Stream,System.Text.Encoding)
+  - System.Xml.XmlDictionaryWriter.CreateTextWriter(System.IO.Stream,System.Text.Encoding,System.Boolean)
+  - System.Xml.XmlDictionaryWriter.Dispose(System.Boolean)
+  - System.Xml.XmlDictionaryWriter.EndCanonicalization
+  - System.Xml.XmlDictionaryWriter.StartCanonicalization(System.IO.Stream,System.Boolean,System.String[])
+  - System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.String,System.String,System.Boolean[],System.Int32,System.Int32)
+  - System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.String,System.String,System.DateTime[],System.Int32,System.Int32)
+  - System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.String,System.String,System.Decimal[],System.Int32,System.Int32)
+  - System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.String,System.String,System.Double[],System.Int32,System.Int32)
+  - System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.String,System.String,System.Guid[],System.Int32,System.Int32)
+  - System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.String,System.String,System.Int16[],System.Int32,System.Int32)
+  - System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.String,System.String,System.Int32[],System.Int32,System.Int32)
+  - System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.String,System.String,System.Int64[],System.Int32,System.Int32)
+  - System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.String,System.String,System.Single[],System.Int32,System.Int32)
+  - System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.String,System.String,System.TimeSpan[],System.Int32,System.Int32)
+  - System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Boolean[],System.Int32,System.Int32)
+  - System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.DateTime[],System.Int32,System.Int32)
+  - System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Decimal[],System.Int32,System.Int32)
+  - System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Double[],System.Int32,System.Int32)
+  - System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Guid[],System.Int32,System.Int32)
+  - System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Int16[],System.Int32,System.Int32)
+  - System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Int32[],System.Int32,System.Int32)
+  - System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Int64[],System.Int32,System.Int32)
+  - System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Single[],System.Int32,System.Int32)
+  - System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.TimeSpan[],System.Int32,System.Int32)
+  - System.Xml.XmlDictionaryWriter.WriteAttributeString(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.String)
+  - System.Xml.XmlDictionaryWriter.WriteAttributeString(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.String)
+  - System.Xml.XmlDictionaryWriter.WriteElementString(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.String)
+  - System.Xml.XmlDictionaryWriter.WriteElementString(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.String)
+  - System.Xml.XmlDictionaryWriter.WriteNode(System.Xml.XmlDictionaryReader,System.Boolean)
+  - System.Xml.XmlDictionaryWriter.WriteNode(XmlReader,System.Boolean)
+  - System.Xml.XmlDictionaryWriter.WriteQualifiedName(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  - System.Xml.XmlDictionaryWriter.WriteStartAttribute(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  - System.Xml.XmlDictionaryWriter.WriteStartAttribute(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  - System.Xml.XmlDictionaryWriter.WriteStartElement(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  - System.Xml.XmlDictionaryWriter.WriteStartElement(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  - System.Xml.XmlDictionaryWriter.WriteString(System.Xml.XmlDictionaryString)
+  - System.Xml.XmlDictionaryWriter.WriteTextNode(System.Xml.XmlDictionaryReader,System.Boolean)
+  - System.Xml.XmlDictionaryWriter.WriteValue(System.Guid)
+  - System.Xml.XmlDictionaryWriter.WriteValue(System.TimeSpan)
+  - System.Xml.XmlDictionaryWriter.WriteValue(System.Xml.UniqueId)
+  - System.Xml.XmlDictionaryWriter.WriteValue(System.Xml.XmlDictionaryString)
+  - System.Xml.XmlDictionaryWriter.WriteXmlAttribute(System.String,System.String)
+  - System.Xml.XmlDictionaryWriter.WriteXmlAttribute(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  - System.Xml.XmlDictionaryWriter.WriteXmlnsAttribute(System.String,System.String)
+  - System.Xml.XmlDictionaryWriter.WriteXmlnsAttribute(System.String,System.Xml.XmlDictionaryString)
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: XmlDictionaryWriter
+  fullName: System.Xml.XmlDictionaryWriter
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 19
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Represents an abstract class that Windows Communication Foundation (WCF) derives from @'System.Xml.XmlWriter' to do serialization and deserialization.
+  syntax:
+    content: 'public abstract class XmlDictionaryWriter : XmlWriter'
+    content.vb: Public MustInherit Class XmlDictionaryWriter Inherits XmlWriter
+  inheritance:
+  - System.Object
+- uid: System.Xml.XmlDictionaryWriter.CreateBinaryWriter(System.IO.Stream)
+  id: CreateBinaryWriter(System.IO.Stream)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: CreateBinaryWriter(Stream)
+  fullName: System.Xml.XmlDictionaryWriter.CreateBinaryWriter(System.IO.Stream)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 21
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Creates an instance of @'System.Xml.XmlDictionaryWriter' that writes WCF binary XML format.
+  syntax:
+    content: public static XmlDictionaryWriter CreateBinaryWriter(Stream stream)
+    content.vb: Public Shared Function CreateBinaryWriter(stream As Stream) As XmlDictionaryWriter
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: The stream to write to.
+    return:
+      type: System.Xml.XmlDictionaryWriter
+      description: An instance of @'System.Xml.XmlDictionaryWriter'.
+- uid: System.Xml.XmlDictionaryWriter.CreateBinaryWriter(System.IO.Stream,System.Xml.IXmlDictionary)
+  id: CreateBinaryWriter(System.IO.Stream,System.Xml.IXmlDictionary)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: CreateBinaryWriter(Stream, IXmlDictionary)
+  fullName: System.Xml.XmlDictionaryWriter.CreateBinaryWriter(System.IO.Stream, System.Xml.IXmlDictionary)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 26
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Creates an instance of @'System.Xml.XmlDictionaryWriter' that writes WCF binary XML format.
+  syntax:
+    content: public static XmlDictionaryWriter CreateBinaryWriter(Stream stream, IXmlDictionary dictionary)
+    content.vb: Public Shared Function CreateBinaryWriter(stream As Stream, dictionary As IXmlDictionary) As XmlDictionaryWriter
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: The stream to write to.
+    - id: dictionary
+      type: System.Xml.IXmlDictionary
+      description: The @'System.Xml.XmlDictionary' to use as the shared dictionary.
+    return:
+      type: System.Xml.XmlDictionaryWriter
+      description: An instance of @'System.Xml.XmlDictionaryWriter'.
+- uid: System.Xml.XmlDictionaryWriter.CreateBinaryWriter(System.IO.Stream,System.Xml.IXmlDictionary,System.Xml.XmlBinaryWriterSession)
+  id: CreateBinaryWriter(System.IO.Stream,System.Xml.IXmlDictionary,System.Xml.XmlBinaryWriterSession)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: CreateBinaryWriter(Stream, IXmlDictionary, XmlBinaryWriterSession)
+  fullName: System.Xml.XmlDictionaryWriter.CreateBinaryWriter(System.IO.Stream, System.Xml.IXmlDictionary, System.Xml.XmlBinaryWriterSession)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 31
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Creates an instance of @'System.Xml.XmlDictionaryWriter' that writes WCF binary XML format.
+  syntax:
+    content: public static XmlDictionaryWriter CreateBinaryWriter(Stream stream, IXmlDictionary dictionary, XmlBinaryWriterSession session)
+    content.vb: Public Shared Function CreateBinaryWriter(stream As Stream, dictionary As IXmlDictionary, session As XmlBinaryWriterSession) As XmlDictionaryWriter
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: The stream to write to.
+    - id: dictionary
+      type: System.Xml.IXmlDictionary
+      description: The @'System.Xml.XmlDictionary' to use as the shared dictionary.
+    - id: session
+      type: System.Xml.XmlBinaryWriterSession
+      description: The @'System.Xml.XmlBinaryWriterSession' to use.
+    return:
+      type: System.Xml.XmlDictionaryWriter
+      description: An instance of @'System.Xml.XmlDictionaryWriter'.
+- uid: System.Xml.XmlDictionaryWriter.CreateBinaryWriter(System.IO.Stream,System.Xml.IXmlDictionary,System.Xml.XmlBinaryWriterSession,System.Boolean)
+  id: CreateBinaryWriter(System.IO.Stream,System.Xml.IXmlDictionary,System.Xml.XmlBinaryWriterSession,System.Boolean)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: CreateBinaryWriter(Stream, IXmlDictionary, XmlBinaryWriterSession, Boolean)
+  fullName: System.Xml.XmlDictionaryWriter.CreateBinaryWriter(System.IO.Stream, System.Xml.IXmlDictionary, System.Xml.XmlBinaryWriterSession, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 36
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Creates an instance of @'System.Xml.XmlDictionaryWriter' that writes WCF binary XML format.
+  syntax:
+    content: public static XmlDictionaryWriter CreateBinaryWriter(Stream stream, IXmlDictionary dictionary, XmlBinaryWriterSession session, bool ownsStream)
+    content.vb: Public Shared Function CreateBinaryWriter(stream As Stream, dictionary As IXmlDictionary, session As XmlBinaryWriterSession, ownsStream As Boolean) As XmlDictionaryWriter
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: The stream from which to read.
+    - id: dictionary
+      type: System.Xml.IXmlDictionary
+      description: The @'System.Xml.XmlDictionary' to use as the shared dictionary.
+    - id: session
+      type: System.Xml.XmlBinaryWriterSession
+      description: The @'System.Xml.XmlBinaryWriterSession' to use.
+    - id: ownsStream
+      type: System.Boolean
+      description: true to indicate that the stream is closed by the writer when done; otherwise false.
+    return:
+      type: System.Xml.XmlDictionaryWriter
+      description: An instance of @'System.Xml.XmlDictionaryWriter'.
+- uid: System.Xml.XmlDictionaryWriter.CreateTextWriter(System.IO.Stream)
+  id: CreateTextWriter(System.IO.Stream)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: CreateTextWriter(Stream)
+  fullName: System.Xml.XmlDictionaryWriter.CreateTextWriter(System.IO.Stream)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 44
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Creates an instance of @'System.Xml.XmlDictionaryWriter' that writes text XML.
+  syntax:
+    content: public static XmlDictionaryWriter CreateTextWriter(Stream stream)
+    content.vb: Public Shared Function CreateTextWriter(stream As Stream) As XmlDictionaryWriter
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: The stream to write to.
+    return:
+      type: System.Xml.XmlDictionaryWriter
+      description: An instance of @'System.Xml.XmlDictionaryWriter'.
+- uid: System.Xml.XmlDictionaryWriter.CreateTextWriter(System.IO.Stream,System.Text.Encoding)
+  id: CreateTextWriter(System.IO.Stream,System.Text.Encoding)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: CreateTextWriter(Stream, Encoding)
+  fullName: System.Xml.XmlDictionaryWriter.CreateTextWriter(System.IO.Stream, System.Text.Encoding)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 49
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Creates an instance of @'System.Xml.XmlDictionaryWriter' that writes text XML.
+  syntax:
+    content: public static XmlDictionaryWriter CreateTextWriter(Stream stream, Encoding encoding)
+    content.vb: Public Shared Function CreateTextWriter(stream As Stream, encoding As Encoding) As XmlDictionaryWriter
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: The stream to write to.
+    - id: encoding
+      type: System.Text.Encoding
+      description: The character encoding of the output.
+    return:
+      type: System.Xml.XmlDictionaryWriter
+      description: An instance of @'System.Xml.XmlDictionaryWriter'.
+- uid: System.Xml.XmlDictionaryWriter.CreateTextWriter(System.IO.Stream,System.Text.Encoding,System.Boolean)
+  id: CreateTextWriter(System.IO.Stream,System.Text.Encoding,System.Boolean)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: CreateTextWriter(Stream, Encoding, Boolean)
+  fullName: System.Xml.XmlDictionaryWriter.CreateTextWriter(System.IO.Stream, System.Text.Encoding, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 54
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Creates an instance of @'System.Xml.XmlDictionaryWriter' that writes text XML.
+  syntax:
+    content: public static XmlDictionaryWriter CreateTextWriter(Stream stream, Encoding encoding, bool ownsStream)
+    content.vb: Public Shared Function CreateTextWriter(stream As Stream, encoding As Encoding, ownsStream As Boolean) As XmlDictionaryWriter
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: The stream to write to.
+    - id: encoding
+      type: System.Text.Encoding
+      description: The character encoding of the stream.
+    - id: ownsStream
+      type: System.Boolean
+      description: true to indicate that the stream is closed by the writer when done; otherwise false.
+    return:
+      type: System.Xml.XmlDictionaryWriter
+      description: An instance of @'System.Xml.XmlDictionaryWriter'.
+- uid: System.Xml.XmlDictionaryWriter.CreateDictionaryWriter(XmlWriter)
+  id: CreateDictionaryWriter(XmlWriter)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: CreateDictionaryWriter(XmlWriter)
+  fullName: System.Xml.XmlDictionaryWriter.CreateDictionaryWriter(XmlWriter)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 79
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  syntax:
+    content: public static XmlDictionaryWriter CreateDictionaryWriter(XmlWriter writer)
+    content.vb: Public Shared Function CreateDictionaryWriter(writer As XmlWriter) As XmlDictionaryWriter
+    parameters:
+    - id: writer
+      type: XmlWriter
+    return:
+      type: System.Xml.XmlDictionaryWriter
+- uid: System.Xml.XmlDictionaryWriter.WriteStartElement(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  id: WriteStartElement(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: WriteStartElement(XmlDictionaryString, XmlDictionaryString)
+  fullName: System.Xml.XmlDictionaryWriter.WriteStartElement(System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 94
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Writes the specified start tag and associates it with the given namespace.
+  syntax:
+    content: public void WriteStartElement(XmlDictionaryString localName, XmlDictionaryString namespaceUri)
+    content.vb: Public Sub WriteStartElement(localName As XmlDictionaryString, namespaceUri As XmlDictionaryString)
+    parameters:
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace URI of the element.
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The writer is closed.
+- uid: System.Xml.XmlDictionaryWriter.WriteStartElement(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  id: WriteStartElement(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: WriteStartElement(String, XmlDictionaryString, XmlDictionaryString)
+  fullName: System.Xml.XmlDictionaryWriter.WriteStartElement(System.String, System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 99
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Writes the specified start tag and associates it with the given namespace and prefix.
+  syntax:
+    content: public virtual void WriteStartElement(string prefix, XmlDictionaryString localName, XmlDictionaryString namespaceUri)
+    content.vb: Public Overridable Sub WriteStartElement(prefix As String, localName As XmlDictionaryString, namespaceUri As XmlDictionaryString)
+    parameters:
+    - id: prefix
+      type: System.String
+      description: The prefix of the element.
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace URI of the element.
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The writer is closed.
+- uid: System.Xml.XmlDictionaryWriter.WriteStartAttribute(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  id: WriteStartAttribute(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: WriteStartAttribute(XmlDictionaryString, XmlDictionaryString)
+  fullName: System.Xml.XmlDictionaryWriter.WriteStartAttribute(System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 104
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Writes the start of an attribute with the specified local name, and namespace URI.
+  syntax:
+    content: public void WriteStartAttribute(XmlDictionaryString localName, XmlDictionaryString namespaceUri)
+    content.vb: Public Sub WriteStartAttribute(localName As XmlDictionaryString, namespaceUri As XmlDictionaryString)
+    parameters:
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: The local name of the attribute.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace URI of the attribute.
+- uid: System.Xml.XmlDictionaryWriter.WriteStartAttribute(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  id: WriteStartAttribute(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: WriteStartAttribute(String, XmlDictionaryString, XmlDictionaryString)
+  fullName: System.Xml.XmlDictionaryWriter.WriteStartAttribute(System.String, System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 109
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Writes the start of an attribute with the specified prefix, local name, and namespace URI.
+  syntax:
+    content: public virtual void WriteStartAttribute(string prefix, XmlDictionaryString localName, XmlDictionaryString namespaceUri)
+    content.vb: Public Overridable Sub WriteStartAttribute(prefix As String, localName As XmlDictionaryString, namespaceUri As XmlDictionaryString)
+    parameters:
+    - id: prefix
+      type: System.String
+      description: The namespace prefix.
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: The local name of the attribute.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace URI of the attribute.
+- uid: System.Xml.XmlDictionaryWriter.WriteAttributeString(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.String)
+  id: WriteAttributeString(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.String)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: WriteAttributeString(XmlDictionaryString, XmlDictionaryString, String)
+  fullName: System.Xml.XmlDictionaryWriter.WriteAttributeString(System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 114
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Writes an attribute qualified name and value.
+  syntax:
+    content: public void WriteAttributeString(XmlDictionaryString localName, XmlDictionaryString namespaceUri, string value)
+    content.vb: Public Sub WriteAttributeString(localName As XmlDictionaryString, namespaceUri As XmlDictionaryString, value As String)
+    parameters:
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: The local name of the attribute.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace URI of the attribute.
+    - id: value
+      type: System.String
+      description: The attribute.
+- uid: System.Xml.XmlDictionaryWriter.WriteXmlnsAttribute(System.String,System.String)
+  id: WriteXmlnsAttribute(System.String,System.String)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: WriteXmlnsAttribute(String, String)
+  fullName: System.Xml.XmlDictionaryWriter.WriteXmlnsAttribute(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 119
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Writes a namespace declaration attribute.
+  syntax:
+    content: public virtual void WriteXmlnsAttribute(string prefix, string namespaceUri)
+    content.vb: Public Overridable Sub WriteXmlnsAttribute(prefix As String, namespaceUri As String)
+    parameters:
+    - id: prefix
+      type: System.String
+      description: The prefix that is bound to the given namespace.
+    - id: namespaceUri
+      type: System.String
+      description: The namespace to which the prefix is bound.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*namespaceUri* is null.'
+- uid: System.Xml.XmlDictionaryWriter.WriteXmlnsAttribute(System.String,System.Xml.XmlDictionaryString)
+  id: WriteXmlnsAttribute(System.String,System.Xml.XmlDictionaryString)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: WriteXmlnsAttribute(String, XmlDictionaryString)
+  fullName: System.Xml.XmlDictionaryWriter.WriteXmlnsAttribute(System.String, System.Xml.XmlDictionaryString)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 133
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Writes a namespace declaration attribute.
+  syntax:
+    content: public virtual void WriteXmlnsAttribute(string prefix, XmlDictionaryString namespaceUri)
+    content.vb: Public Overridable Sub WriteXmlnsAttribute(prefix As String, namespaceUri As XmlDictionaryString)
+    parameters:
+    - id: prefix
+      type: System.String
+      description: The prefix that is bound to the given namespace.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace to which the prefix is bound.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*namespaceUri* is null.'
+- uid: System.Xml.XmlDictionaryWriter.WriteXmlAttribute(System.String,System.String)
+  id: WriteXmlAttribute(System.String,System.String)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: WriteXmlAttribute(String, String)
+  fullName: System.Xml.XmlDictionaryWriter.WriteXmlAttribute(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 138
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Writes a standard XML attribute in the current node.
+  syntax:
+    content: public virtual void WriteXmlAttribute(string localName, string value)
+    content.vb: Public Overridable Sub WriteXmlAttribute(localName As String, value As String)
+    parameters:
+    - id: localName
+      type: System.String
+      description: The local name of the attribute.
+    - id: value
+      type: System.String
+      description: The value of the attribute.
+- uid: System.Xml.XmlDictionaryWriter.WriteXmlAttribute(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  id: WriteXmlAttribute(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: WriteXmlAttribute(XmlDictionaryString, XmlDictionaryString)
+  fullName: System.Xml.XmlDictionaryWriter.WriteXmlAttribute(System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 143
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Writes an XML attribute in the current node.
+  syntax:
+    content: public virtual void WriteXmlAttribute(XmlDictionaryString localName, XmlDictionaryString value)
+    content.vb: Public Overridable Sub WriteXmlAttribute(localName As XmlDictionaryString, value As XmlDictionaryString)
+    parameters:
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: The local name of the attribute.
+    - id: value
+      type: System.Xml.XmlDictionaryString
+      description: The value of the attribute.
+- uid: System.Xml.XmlDictionaryWriter.WriteAttributeString(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.String)
+  id: WriteAttributeString(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.String)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: WriteAttributeString(String, XmlDictionaryString, XmlDictionaryString, String)
+  fullName: System.Xml.XmlDictionaryWriter.WriteAttributeString(System.String, System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 148
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Writes an attribute qualified name and value.
+  syntax:
+    content: public void WriteAttributeString(string prefix, XmlDictionaryString localName, XmlDictionaryString namespaceUri, string value)
+    content.vb: Public Sub WriteAttributeString(prefix As String, localName As XmlDictionaryString, namespaceUri As XmlDictionaryString, value As String)
+    parameters:
+    - id: prefix
+      type: System.String
+      description: The prefix of the attribute.
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: The local name of the attribute.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace URI of the attribute.
+    - id: value
+      type: System.String
+      description: The attribute.
+- uid: System.Xml.XmlDictionaryWriter.WriteElementString(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.String)
+  id: WriteElementString(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.String)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: WriteElementString(XmlDictionaryString, XmlDictionaryString, String)
+  fullName: System.Xml.XmlDictionaryWriter.WriteElementString(System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 155
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Writes an element with a text content.
+  syntax:
+    content: public void WriteElementString(XmlDictionaryString localName, XmlDictionaryString namespaceUri, string value)
+    content.vb: Public Sub WriteElementString(localName As XmlDictionaryString, namespaceUri As XmlDictionaryString, value As String)
+    parameters:
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace URI of the element.
+    - id: value
+      type: System.String
+      description: The element content.
+- uid: System.Xml.XmlDictionaryWriter.WriteElementString(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.String)
+  id: WriteElementString(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.String)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: WriteElementString(String, XmlDictionaryString, XmlDictionaryString, String)
+  fullName: System.Xml.XmlDictionaryWriter.WriteElementString(System.String, System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 160
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Writes an element with a text content.
+  syntax:
+    content: public void WriteElementString(string prefix, XmlDictionaryString localName, XmlDictionaryString namespaceUri, string value)
+    content.vb: Public Sub WriteElementString(prefix As String, localName As XmlDictionaryString, namespaceUri As XmlDictionaryString, value As String)
+    parameters:
+    - id: prefix
+      type: System.String
+      description: The prefix of the element.
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace URI of the element.
+    - id: value
+      type: System.String
+      description: The element content.
+- uid: System.Xml.XmlDictionaryWriter.WriteString(System.Xml.XmlDictionaryString)
+  id: WriteString(System.Xml.XmlDictionaryString)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: WriteString(XmlDictionaryString)
+  fullName: System.Xml.XmlDictionaryWriter.WriteString(System.Xml.XmlDictionaryString)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 167
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Writes the given text content.
+  syntax:
+    content: public virtual void WriteString(XmlDictionaryString value)
+    content.vb: Public Overridable Sub WriteString(value As XmlDictionaryString)
+    parameters:
+    - id: value
+      type: System.Xml.XmlDictionaryString
+      description: The text to write.
+- uid: System.Xml.XmlDictionaryWriter.WriteQualifiedName(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  id: WriteQualifiedName(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: WriteQualifiedName(XmlDictionaryString, XmlDictionaryString)
+  fullName: System.Xml.XmlDictionaryWriter.WriteQualifiedName(System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 172
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Writes out the namespace-qualified name. This method looks up the prefix that is in scope for the given namespace.
+  syntax:
+    content: public virtual void WriteQualifiedName(XmlDictionaryString localName, XmlDictionaryString namespaceUri)
+    content.vb: Public Overridable Sub WriteQualifiedName(localName As XmlDictionaryString, namespaceUri As XmlDictionaryString)
+    parameters:
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: The local name of the qualified name.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace URI of the qualified name.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*localName* is null.'
+- uid: System.Xml.XmlDictionaryWriter.WriteValue(System.Xml.XmlDictionaryString)
+  id: WriteValue(System.Xml.XmlDictionaryString)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: WriteValue(XmlDictionaryString)
+  fullName: System.Xml.XmlDictionaryWriter.WriteValue(System.Xml.XmlDictionaryString)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 182
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Writes a @'System.Xml.XmlDictionaryString' value.
+  syntax:
+    content: public virtual void WriteValue(XmlDictionaryString value)
+    content.vb: Public Overridable Sub WriteValue(value As XmlDictionaryString)
+    parameters:
+    - id: value
+      type: System.Xml.XmlDictionaryString
+      description: The @'System.Xml.XmlDictionaryString' value.
+- uid: System.Xml.XmlDictionaryWriter.WriteValue(System.Xml.UniqueId)
+  id: WriteValue(System.Xml.UniqueId)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: WriteValue(UniqueId)
+  fullName: System.Xml.XmlDictionaryWriter.WriteValue(System.Xml.UniqueId)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 188
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Writes a Unique Id value.
+  syntax:
+    content: public virtual void WriteValue(UniqueId value)
+    content.vb: Public Overridable Sub WriteValue(value As UniqueId)
+    parameters:
+    - id: value
+      type: System.Xml.UniqueId
+      description: The Unique Id value to write.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*value* is null.'
+- uid: System.Xml.XmlDictionaryWriter.WriteValue(System.Guid)
+  id: WriteValue(System.Guid)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: WriteValue(Guid)
+  fullName: System.Xml.XmlDictionaryWriter.WriteValue(System.Guid)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 196
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Writes a @'System.Guid' value.
+  syntax:
+    content: public virtual void WriteValue(Guid value)
+    content.vb: Public Overridable Sub WriteValue(value As Guid)
+    parameters:
+    - id: value
+      type: System.Guid
+      description: The @'System.Guid' value to write.
+- uid: System.Xml.XmlDictionaryWriter.WriteValue(System.TimeSpan)
+  id: WriteValue(System.TimeSpan)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: WriteValue(TimeSpan)
+  fullName: System.Xml.XmlDictionaryWriter.WriteValue(System.TimeSpan)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 201
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Writes a @'System.TimeSpan' value.
+  syntax:
+    content: public virtual void WriteValue(TimeSpan value)
+    content.vb: Public Overridable Sub WriteValue(value As TimeSpan)
+    parameters:
+    - id: value
+      type: System.TimeSpan
+      description: The @'System.TimeSpan' value to write.
+- uid: System.Xml.XmlDictionaryWriter.CanCanonicalize
+  id: CanCanonicalize
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: CanCanonicalize
+  fullName: System.Xml.XmlDictionaryWriter.CanCanonicalize
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 206
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: This property always returns false. Its derived classes can override to return true if they support canonicalization.
+  syntax:
+    content: public virtual bool CanCanonicalize { get; }
+    content.vb: Public Overridable ReadOnly Property CanCanonicalize As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: false in all cases.
+- uid: System.Xml.XmlDictionaryWriter.StartCanonicalization(System.IO.Stream,System.Boolean,System.String[])
+  id: StartCanonicalization(System.IO.Stream,System.Boolean,System.String[])
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: StartCanonicalization(Stream, Boolean, String[])
+  name.vb: StartCanonicalization(Stream, Boolean, String())
+  fullName: System.Xml.XmlDictionaryWriter.StartCanonicalization(System.IO.Stream, System.Boolean, System.String[])
+  fullName.vb: System.Xml.XmlDictionaryWriter.StartCanonicalization(System.IO.Stream, System.Boolean, System.String())
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 214
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: When implemented by a derived class, it starts the canonicalization.
+  syntax:
+    content: public virtual void StartCanonicalization(Stream stream, bool includeComments, string[] inclusivePrefixes)
+    content.vb: Public Overridable Sub StartCanonicalization(stream As Stream, includeComments As Boolean, inclusivePrefixes As String())
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: The stream to write to.
+    - id: includeComments
+      type: System.Boolean
+      description: true to include comments; otherwise, false.
+    - id: inclusivePrefixes
+      type: System.String[]
+      description: The prefixes to be included.
+  exceptions:
+  - type: System.NotSupportedException
+    description: Method is not implemented yet.
+- uid: System.Xml.XmlDictionaryWriter.EndCanonicalization
+  id: EndCanonicalization
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: EndCanonicalization()
+  fullName: System.Xml.XmlDictionaryWriter.EndCanonicalization()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 219
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: When implemented by a derived class, it stops the canonicalization started by the matching @'System.Xml.XmlDictionaryWriter.StartCanonicalization(System.IO.Stream,System.Boolean,System.String[])' call.
+  syntax:
+    content: public virtual void EndCanonicalization()
+    content.vb: Public Overridable Sub
+  exceptions:
+  - type: System.NotSupportedException
+    description: Method is not implemented yet.
+- uid: System.Xml.XmlDictionaryWriter.WriteTextNode(System.Xml.XmlDictionaryReader,System.Boolean)
+  id: WriteTextNode(System.Xml.XmlDictionaryReader,System.Boolean)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: WriteTextNode(XmlDictionaryReader, Boolean)
+  fullName: System.Xml.XmlDictionaryWriter.WriteTextNode(System.Xml.XmlDictionaryReader, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 341
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Writes the text node that an @'System.Xml.XmlDictionaryReader' is currently positioned on.
+  syntax:
+    content: protected virtual void WriteTextNode(XmlDictionaryReader reader, bool isAttribute)
+    content.vb: Protected Overridable Sub WriteTextNode(reader As XmlDictionaryReader, isAttribute As Boolean)
+    parameters:
+    - id: reader
+      type: System.Xml.XmlDictionaryReader
+      description: The @'System.Xml.XmlDictionaryReader' to get the text value from.
+    - id: isAttribute
+      type: System.Boolean
+      description: true to indicate that the reader is positioned on an attribute value or element content; otherwise, false.
+- uid: System.Xml.XmlDictionaryWriter.WriteNode(XmlReader,System.Boolean)
+  id: WriteNode(XmlReader,System.Boolean)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: WriteNode(XmlReader, Boolean)
+  fullName: System.Xml.XmlDictionaryWriter.WriteNode(XmlReader, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 358
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  syntax:
+    content: public override void WriteNode(XmlReader reader, bool defattr)
+    content.vb: Public Overrides Sub WriteNode(reader As XmlReader, defattr As Boolean)
+    parameters:
+    - id: reader
+      type: XmlReader
+    - id: defattr
+      type: System.Boolean
+- uid: System.Xml.XmlDictionaryWriter.WriteNode(System.Xml.XmlDictionaryReader,System.Boolean)
+  id: WriteNode(System.Xml.XmlDictionaryReader,System.Boolean)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: WriteNode(XmlDictionaryReader, Boolean)
+  fullName: System.Xml.XmlDictionaryWriter.WriteNode(System.Xml.XmlDictionaryReader, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 367
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Writes the current XML node from an @'System.Xml.XmlDictionaryReader'.
+  syntax:
+    content: public virtual void WriteNode(XmlDictionaryReader reader, bool defattr)
+    content.vb: Public Overridable Sub WriteNode(reader As XmlDictionaryReader, defattr As Boolean)
+    parameters:
+    - id: reader
+      type: System.Xml.XmlDictionaryReader
+      description: The @'System.Xml.XmlDictionaryReader'.
+    - id: defattr
+      type: System.Boolean
+      description: true to copy the default attributes from the XmlReader; otherwise, false.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*reader* is null.'
+- uid: System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.String,System.String,System.Boolean[],System.Int32,System.Int32)
+  id: WriteArray(System.String,System.String,System.String,System.Boolean[],System.Int32,System.Int32)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: WriteArray(String, String, String, Boolean[], Int32, Int32)
+  name.vb: WriteArray(String, String, String, Boolean(), Int32, Int32)
+  fullName: System.Xml.XmlDictionaryWriter.WriteArray(System.String, System.String, System.String, System.Boolean[], System.Int32, System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryWriter.WriteArray(System.String, System.String, System.String, System.Boolean(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 435
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Writes nodes from a @'System.Boolean' array.
+  syntax:
+    content: public virtual void WriteArray(string prefix, string localName, string namespaceUri, bool[] array, int offset, int count)
+    content.vb: Public Overridable Sub WriteArray(prefix As String, localName As String, namespaceUri As String, array As Boolean(), offset As Integer, count As Integer)
+    parameters:
+    - id: prefix
+      type: System.String
+      description: The namespace prefix.
+    - id: localName
+      type: System.String
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.String
+      description: The namespace URI of the element.
+    - id: array
+      type: System.Boolean[]
+      description: The array that contains the data.
+    - id: offset
+      type: System.Int32
+      description: The starting index in the array.
+    - id: count
+      type: System.Int32
+      description: The number of values to write from the array.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is < 0 or > *array* length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is < 0 or > *array* length minus *offset*.'
+- uid: System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Boolean[],System.Int32,System.Int32)
+  id: WriteArray(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Boolean[],System.Int32,System.Int32)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: WriteArray(String, XmlDictionaryString, XmlDictionaryString, Boolean[], Int32, Int32)
+  name.vb: WriteArray(String, XmlDictionaryString, XmlDictionaryString, Boolean(), Int32, Int32)
+  fullName: System.Xml.XmlDictionaryWriter.WriteArray(System.String, System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.Boolean[], System.Int32, System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryWriter.WriteArray(System.String, System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.Boolean(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 446
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Writes nodes from a @'System.Boolean' array.
+  syntax:
+    content: public virtual void WriteArray(string prefix, XmlDictionaryString localName, XmlDictionaryString namespaceUri, bool[] array, int offset, int count)
+    content.vb: Public Overridable Sub WriteArray(prefix As String, localName As XmlDictionaryString, namespaceUri As XmlDictionaryString, array As Boolean(), offset As Integer, count As Integer)
+    parameters:
+    - id: prefix
+      type: System.String
+      description: The namespace prefix.
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace URI of the element.
+    - id: array
+      type: System.Boolean[]
+      description: The array that contains the nodes.
+    - id: offset
+      type: System.Int32
+      description: The starting index in the array.
+    - id: count
+      type: System.Int32
+      description: The number of nodes to get from the array.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is < 0 or > *array* length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is < 0 or > *array* length minus *offset*.'
+- uid: System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.String,System.String,System.Int16[],System.Int32,System.Int32)
+  id: WriteArray(System.String,System.String,System.String,System.Int16[],System.Int32,System.Int32)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: WriteArray(String, String, String, Int16[], Int32, Int32)
+  name.vb: WriteArray(String, String, String, Int16(), Int32, Int32)
+  fullName: System.Xml.XmlDictionaryWriter.WriteArray(System.String, System.String, System.String, System.Int16[], System.Int32, System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryWriter.WriteArray(System.String, System.String, System.String, System.Int16(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 452
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Writes nodes from a @'System.Int16' array.
+  syntax:
+    content: public virtual void WriteArray(string prefix, string localName, string namespaceUri, short[] array, int offset, int count)
+    content.vb: Public Overridable Sub WriteArray(prefix As String, localName As String, namespaceUri As String, array As Short(), offset As Integer, count As Integer)
+    parameters:
+    - id: prefix
+      type: System.String
+      description: The namespace prefix.
+    - id: localName
+      type: System.String
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.String
+      description: The namespace URI of the element.
+    - id: array
+      type: System.Int16[]
+      description: The array that contains the nodes.
+    - id: offset
+      type: System.Int32
+      description: The starting index in the array.
+    - id: count
+      type: System.Int32
+      description: The number of nodes to get from the array.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is < 0 or > *array* length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is < 0 or > *array* length minus *offset*.'
+- uid: System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Int16[],System.Int32,System.Int32)
+  id: WriteArray(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Int16[],System.Int32,System.Int32)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: WriteArray(String, XmlDictionaryString, XmlDictionaryString, Int16[], Int32, Int32)
+  name.vb: WriteArray(String, XmlDictionaryString, XmlDictionaryString, Int16(), Int32, Int32)
+  fullName: System.Xml.XmlDictionaryWriter.WriteArray(System.String, System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.Int16[], System.Int32, System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryWriter.WriteArray(System.String, System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.Int16(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 463
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Writes nodes from a @'System.Int16' array.
+  syntax:
+    content: public virtual void WriteArray(string prefix, XmlDictionaryString localName, XmlDictionaryString namespaceUri, short[] array, int offset, int count)
+    content.vb: Public Overridable Sub WriteArray(prefix As String, localName As XmlDictionaryString, namespaceUri As XmlDictionaryString, array As Short(), offset As Integer, count As Integer)
+    parameters:
+    - id: prefix
+      type: System.String
+      description: The namespace prefix.
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace URI of the element.
+    - id: array
+      type: System.Int16[]
+      description: The array that contains the nodes.
+    - id: offset
+      type: System.Int32
+      description: The starting index in the array.
+    - id: count
+      type: System.Int32
+      description: The number of nodes to get from the array.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is < 0 or > *array* length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is < 0 or > *array* length minus *offset*.'
+- uid: System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.String,System.String,System.Int32[],System.Int32,System.Int32)
+  id: WriteArray(System.String,System.String,System.String,System.Int32[],System.Int32,System.Int32)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: WriteArray(String, String, String, Int32[], Int32, Int32)
+  name.vb: WriteArray(String, String, String, Int32(), Int32, Int32)
+  fullName: System.Xml.XmlDictionaryWriter.WriteArray(System.String, System.String, System.String, System.Int32[], System.Int32, System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryWriter.WriteArray(System.String, System.String, System.String, System.Int32(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 469
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Writes nodes from a @'System.Int32' array.
+  syntax:
+    content: public virtual void WriteArray(string prefix, string localName, string namespaceUri, int[] array, int offset, int count)
+    content.vb: Public Overridable Sub WriteArray(prefix As String, localName As String, namespaceUri As String, array As Integer(), offset As Integer, count As Integer)
+    parameters:
+    - id: prefix
+      type: System.String
+      description: The namespace prefix.
+    - id: localName
+      type: System.String
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.String
+      description: The namespace URI of the element.
+    - id: array
+      type: System.Int32[]
+      description: The array that contains the nodes.
+    - id: offset
+      type: System.Int32
+      description: The starting index in the array.
+    - id: count
+      type: System.Int32
+      description: The number of nodes to get from the array.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is < 0 or > *array* length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is < 0 or > *array* length minus *offset*.'
+- uid: System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Int32[],System.Int32,System.Int32)
+  id: WriteArray(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Int32[],System.Int32,System.Int32)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: WriteArray(String, XmlDictionaryString, XmlDictionaryString, Int32[], Int32, Int32)
+  name.vb: WriteArray(String, XmlDictionaryString, XmlDictionaryString, Int32(), Int32, Int32)
+  fullName: System.Xml.XmlDictionaryWriter.WriteArray(System.String, System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.Int32[], System.Int32, System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryWriter.WriteArray(System.String, System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.Int32(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 480
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Writes nodes from a @'System.Int32' array.
+  syntax:
+    content: public virtual void WriteArray(string prefix, XmlDictionaryString localName, XmlDictionaryString namespaceUri, int[] array, int offset, int count)
+    content.vb: Public Overridable Sub WriteArray(prefix As String, localName As XmlDictionaryString, namespaceUri As XmlDictionaryString, array As Integer(), offset As Integer, count As Integer)
+    parameters:
+    - id: prefix
+      type: System.String
+      description: The namespace prefix.
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace URI of the element.
+    - id: array
+      type: System.Int32[]
+      description: The array that contains the nodes.
+    - id: offset
+      type: System.Int32
+      description: The starting index in the array.
+    - id: count
+      type: System.Int32
+      description: The number of nodes to get from the array.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is < 0 or > *array* length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is < 0 or > *array* length minus *offset*.'
+- uid: System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.String,System.String,System.Int64[],System.Int32,System.Int32)
+  id: WriteArray(System.String,System.String,System.String,System.Int64[],System.Int32,System.Int32)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: WriteArray(String, String, String, Int64[], Int32, Int32)
+  name.vb: WriteArray(String, String, String, Int64(), Int32, Int32)
+  fullName: System.Xml.XmlDictionaryWriter.WriteArray(System.String, System.String, System.String, System.Int64[], System.Int32, System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryWriter.WriteArray(System.String, System.String, System.String, System.Int64(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 486
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Writes nodes from a @'System.Int64' array.
+  syntax:
+    content: public virtual void WriteArray(string prefix, string localName, string namespaceUri, long[] array, int offset, int count)
+    content.vb: Public Overridable Sub WriteArray(prefix As String, localName As String, namespaceUri As String, array As Long(), offset As Integer, count As Integer)
+    parameters:
+    - id: prefix
+      type: System.String
+      description: The namespace prefix.
+    - id: localName
+      type: System.String
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.String
+      description: The namespace URI of the element.
+    - id: array
+      type: System.Int64[]
+      description: The array that contains the nodes.
+    - id: offset
+      type: System.Int32
+      description: The starting index in the array.
+    - id: count
+      type: System.Int32
+      description: The number of nodes to get from the array.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is < 0 or > *array* length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is < 0 or > *array* length minus *offset*.'
+- uid: System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Int64[],System.Int32,System.Int32)
+  id: WriteArray(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Int64[],System.Int32,System.Int32)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: WriteArray(String, XmlDictionaryString, XmlDictionaryString, Int64[], Int32, Int32)
+  name.vb: WriteArray(String, XmlDictionaryString, XmlDictionaryString, Int64(), Int32, Int32)
+  fullName: System.Xml.XmlDictionaryWriter.WriteArray(System.String, System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.Int64[], System.Int32, System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryWriter.WriteArray(System.String, System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.Int64(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 497
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Writes nodes from a @'System.Int64' array.
+  syntax:
+    content: public virtual void WriteArray(string prefix, XmlDictionaryString localName, XmlDictionaryString namespaceUri, long[] array, int offset, int count)
+    content.vb: Public Overridable Sub WriteArray(prefix As String, localName As XmlDictionaryString, namespaceUri As XmlDictionaryString, array As Long(), offset As Integer, count As Integer)
+    parameters:
+    - id: prefix
+      type: System.String
+      description: The namespace prefix.
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace URI of the element.
+    - id: array
+      type: System.Int64[]
+      description: The array that contains the nodes.
+    - id: offset
+      type: System.Int32
+      description: The starting index in the array.
+    - id: count
+      type: System.Int32
+      description: The number of nodes to get from the array.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is < 0 or > *array* length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is < 0 or > *array* length minus *offset*.'
+- uid: System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.String,System.String,System.Single[],System.Int32,System.Int32)
+  id: WriteArray(System.String,System.String,System.String,System.Single[],System.Int32,System.Int32)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: WriteArray(String, String, String, Single[], Int32, Int32)
+  name.vb: WriteArray(String, String, String, Single(), Int32, Int32)
+  fullName: System.Xml.XmlDictionaryWriter.WriteArray(System.String, System.String, System.String, System.Single[], System.Int32, System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryWriter.WriteArray(System.String, System.String, System.String, System.Single(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 503
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Writes nodes from a @'System.Single' array.
+  syntax:
+    content: public virtual void WriteArray(string prefix, string localName, string namespaceUri, float[] array, int offset, int count)
+    content.vb: Public Overridable Sub WriteArray(prefix As String, localName As String, namespaceUri As String, array As Single(), offset As Integer, count As Integer)
+    parameters:
+    - id: prefix
+      type: System.String
+      description: The namespace prefix.
+    - id: localName
+      type: System.String
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.String
+      description: The namespace URI of the element.
+    - id: array
+      type: System.Single[]
+      description: The array that contains the nodes.
+    - id: offset
+      type: System.Int32
+      description: The starting index in the array.
+    - id: count
+      type: System.Int32
+      description: The number of nodes to get from the array.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is < 0 or > *array* length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is < 0 or > *array* length minus *offset*.'
+- uid: System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Single[],System.Int32,System.Int32)
+  id: WriteArray(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Single[],System.Int32,System.Int32)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: WriteArray(String, XmlDictionaryString, XmlDictionaryString, Single[], Int32, Int32)
+  name.vb: WriteArray(String, XmlDictionaryString, XmlDictionaryString, Single(), Int32, Int32)
+  fullName: System.Xml.XmlDictionaryWriter.WriteArray(System.String, System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.Single[], System.Int32, System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryWriter.WriteArray(System.String, System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.Single(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 514
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Writes nodes from a @'System.Single' array.
+  syntax:
+    content: public virtual void WriteArray(string prefix, XmlDictionaryString localName, XmlDictionaryString namespaceUri, float[] array, int offset, int count)
+    content.vb: Public Overridable Sub WriteArray(prefix As String, localName As XmlDictionaryString, namespaceUri As XmlDictionaryString, array As Single(), offset As Integer, count As Integer)
+    parameters:
+    - id: prefix
+      type: System.String
+      description: The namespace prefix.
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace URI of the element.
+    - id: array
+      type: System.Single[]
+      description: The array that contains the nodes.
+    - id: offset
+      type: System.Int32
+      description: The starting index in the array.
+    - id: count
+      type: System.Int32
+      description: The number of nodes to get from the array.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is < 0 or > *array* length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is < 0 or > *array* length minus *offset*.'
+- uid: System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.String,System.String,System.Double[],System.Int32,System.Int32)
+  id: WriteArray(System.String,System.String,System.String,System.Double[],System.Int32,System.Int32)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: WriteArray(String, String, String, Double[], Int32, Int32)
+  name.vb: WriteArray(String, String, String, Double(), Int32, Int32)
+  fullName: System.Xml.XmlDictionaryWriter.WriteArray(System.String, System.String, System.String, System.Double[], System.Int32, System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryWriter.WriteArray(System.String, System.String, System.String, System.Double(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 520
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Writes nodes from a @'System.Double' array.
+  syntax:
+    content: public virtual void WriteArray(string prefix, string localName, string namespaceUri, double[] array, int offset, int count)
+    content.vb: Public Overridable Sub WriteArray(prefix As String, localName As String, namespaceUri As String, array As Double(), offset As Integer, count As Integer)
+    parameters:
+    - id: prefix
+      type: System.String
+      description: The namespace prefix.
+    - id: localName
+      type: System.String
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.String
+      description: The namespace URI of the element.
+    - id: array
+      type: System.Double[]
+      description: The array that contains the nodes.
+    - id: offset
+      type: System.Int32
+      description: The starting index in the array.
+    - id: count
+      type: System.Int32
+      description: The number of nodes to get from the array.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is < 0 or > *array* length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is < 0 or > *array* length minus *offset*.'
+- uid: System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Double[],System.Int32,System.Int32)
+  id: WriteArray(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Double[],System.Int32,System.Int32)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: WriteArray(String, XmlDictionaryString, XmlDictionaryString, Double[], Int32, Int32)
+  name.vb: WriteArray(String, XmlDictionaryString, XmlDictionaryString, Double(), Int32, Int32)
+  fullName: System.Xml.XmlDictionaryWriter.WriteArray(System.String, System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.Double[], System.Int32, System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryWriter.WriteArray(System.String, System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.Double(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 531
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Writes nodes from a @'System.Double' array.
+  syntax:
+    content: public virtual void WriteArray(string prefix, XmlDictionaryString localName, XmlDictionaryString namespaceUri, double[] array, int offset, int count)
+    content.vb: Public Overridable Sub WriteArray(prefix As String, localName As XmlDictionaryString, namespaceUri As XmlDictionaryString, array As Double(), offset As Integer, count As Integer)
+    parameters:
+    - id: prefix
+      type: System.String
+      description: The namespace prefix.
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace URI of the element.
+    - id: array
+      type: System.Double[]
+      description: The array that contains the nodes.
+    - id: offset
+      type: System.Int32
+      description: The starting index in the array.
+    - id: count
+      type: System.Int32
+      description: The number of nodes to get from the array.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is < 0 or > *array* length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is < 0 or > *array* length minus *offset*.'
+- uid: System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.String,System.String,System.Decimal[],System.Int32,System.Int32)
+  id: WriteArray(System.String,System.String,System.String,System.Decimal[],System.Int32,System.Int32)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: WriteArray(String, String, String, Decimal[], Int32, Int32)
+  name.vb: WriteArray(String, String, String, Decimal(), Int32, Int32)
+  fullName: System.Xml.XmlDictionaryWriter.WriteArray(System.String, System.String, System.String, System.Decimal[], System.Int32, System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryWriter.WriteArray(System.String, System.String, System.String, System.Decimal(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 537
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Writes nodes from a @'System.Decimal' array.
+  syntax:
+    content: public virtual void WriteArray(string prefix, string localName, string namespaceUri, decimal[] array, int offset, int count)
+    content.vb: Public Overridable Sub WriteArray(prefix As String, localName As String, namespaceUri As String, array As Decimal(), offset As Integer, count As Integer)
+    parameters:
+    - id: prefix
+      type: System.String
+      description: The namespace prefix.
+    - id: localName
+      type: System.String
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.String
+      description: The namespace URI of the element.
+    - id: array
+      type: System.Decimal[]
+      description: The array that contains the nodes.
+    - id: offset
+      type: System.Int32
+      description: The starting index in the array.
+    - id: count
+      type: System.Int32
+      description: The number of nodes to get from the array.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is < 0 or > *array* length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is < 0 or > *array* length minus *offset*.'
+- uid: System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Decimal[],System.Int32,System.Int32)
+  id: WriteArray(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Decimal[],System.Int32,System.Int32)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: WriteArray(String, XmlDictionaryString, XmlDictionaryString, Decimal[], Int32, Int32)
+  name.vb: WriteArray(String, XmlDictionaryString, XmlDictionaryString, Decimal(), Int32, Int32)
+  fullName: System.Xml.XmlDictionaryWriter.WriteArray(System.String, System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.Decimal[], System.Int32, System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryWriter.WriteArray(System.String, System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.Decimal(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 548
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Writes nodes from a @'System.Decimal' array.
+  syntax:
+    content: public virtual void WriteArray(string prefix, XmlDictionaryString localName, XmlDictionaryString namespaceUri, decimal[] array, int offset, int count)
+    content.vb: Public Overridable Sub WriteArray(prefix As String, localName As XmlDictionaryString, namespaceUri As XmlDictionaryString, array As Decimal(), offset As Integer, count As Integer)
+    parameters:
+    - id: prefix
+      type: System.String
+      description: The namespace prefix.
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace URI of the element.
+    - id: array
+      type: System.Decimal[]
+      description: The array that contains the nodes.
+    - id: offset
+      type: System.Int32
+      description: The starting index in the array.
+    - id: count
+      type: System.Int32
+      description: The number of nodes to get from the array.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is < 0 or > *array* length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is < 0 or > *array* length minus *offset*.'
+- uid: System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.String,System.String,System.DateTime[],System.Int32,System.Int32)
+  id: WriteArray(System.String,System.String,System.String,System.DateTime[],System.Int32,System.Int32)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: WriteArray(String, String, String, DateTime[], Int32, Int32)
+  name.vb: WriteArray(String, String, String, DateTime(), Int32, Int32)
+  fullName: System.Xml.XmlDictionaryWriter.WriteArray(System.String, System.String, System.String, System.DateTime[], System.Int32, System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryWriter.WriteArray(System.String, System.String, System.String, System.DateTime(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 554
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Writes nodes from a @'System.DateTime' array.
+  syntax:
+    content: public virtual void WriteArray(string prefix, string localName, string namespaceUri, DateTime[] array, int offset, int count)
+    content.vb: Public Overridable Sub WriteArray(prefix As String, localName As String, namespaceUri As String, array As Date(), offset As Integer, count As Integer)
+    parameters:
+    - id: prefix
+      type: System.String
+      description: The namespace prefix.
+    - id: localName
+      type: System.String
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.String
+      description: The namespace URI of the element.
+    - id: array
+      type: System.DateTime[]
+      description: The array that contains the nodes.
+    - id: offset
+      type: System.Int32
+      description: The starting index in the array.
+    - id: count
+      type: System.Int32
+      description: The number of nodes to get from the array.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is < 0 or > *array* length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is < 0 or > *array* length minus *offset*.'
+- uid: System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.DateTime[],System.Int32,System.Int32)
+  id: WriteArray(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.DateTime[],System.Int32,System.Int32)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: WriteArray(String, XmlDictionaryString, XmlDictionaryString, DateTime[], Int32, Int32)
+  name.vb: WriteArray(String, XmlDictionaryString, XmlDictionaryString, DateTime(), Int32, Int32)
+  fullName: System.Xml.XmlDictionaryWriter.WriteArray(System.String, System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.DateTime[], System.Int32, System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryWriter.WriteArray(System.String, System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.DateTime(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 565
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Writes nodes from a @'System.DateTime' array.
+  syntax:
+    content: public virtual void WriteArray(string prefix, XmlDictionaryString localName, XmlDictionaryString namespaceUri, DateTime[] array, int offset, int count)
+    content.vb: Public Overridable Sub WriteArray(prefix As String, localName As XmlDictionaryString, namespaceUri As XmlDictionaryString, array As Date(), offset As Integer, count As Integer)
+    parameters:
+    - id: prefix
+      type: System.String
+      description: The namespace prefix.
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace URI of the element.
+    - id: array
+      type: System.DateTime[]
+      description: The array that contains the nodes.
+    - id: offset
+      type: System.Int32
+      description: The starting index in the array.
+    - id: count
+      type: System.Int32
+      description: The number of nodes to get from the array.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is < 0 or > *array* length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is < 0 or > *array* length minus *offset*.'
+- uid: System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.String,System.String,System.Guid[],System.Int32,System.Int32)
+  id: WriteArray(System.String,System.String,System.String,System.Guid[],System.Int32,System.Int32)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: WriteArray(String, String, String, Guid[], Int32, Int32)
+  name.vb: WriteArray(String, String, String, Guid(), Int32, Int32)
+  fullName: System.Xml.XmlDictionaryWriter.WriteArray(System.String, System.String, System.String, System.Guid[], System.Int32, System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryWriter.WriteArray(System.String, System.String, System.String, System.Guid(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 571
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Writes nodes from a @'System.Guid' array.
+  syntax:
+    content: public virtual void WriteArray(string prefix, string localName, string namespaceUri, Guid[] array, int offset, int count)
+    content.vb: Public Overridable Sub WriteArray(prefix As String, localName As String, namespaceUri As String, array As Guid(), offset As Integer, count As Integer)
+    parameters:
+    - id: prefix
+      type: System.String
+      description: The namespace prefix.
+    - id: localName
+      type: System.String
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.String
+      description: The namespace URI of the element.
+    - id: array
+      type: System.Guid[]
+      description: The array that contains the nodes.
+    - id: offset
+      type: System.Int32
+      description: The starting index in the array.
+    - id: count
+      type: System.Int32
+      description: The number of nodes to get from the array.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is < 0 or > *array* length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is < 0 or > *array* length minus *offset*.'
+- uid: System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Guid[],System.Int32,System.Int32)
+  id: WriteArray(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Guid[],System.Int32,System.Int32)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: WriteArray(String, XmlDictionaryString, XmlDictionaryString, Guid[], Int32, Int32)
+  name.vb: WriteArray(String, XmlDictionaryString, XmlDictionaryString, Guid(), Int32, Int32)
+  fullName: System.Xml.XmlDictionaryWriter.WriteArray(System.String, System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.Guid[], System.Int32, System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryWriter.WriteArray(System.String, System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.Guid(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 582
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Writes nodes from a @'System.Guid' array.
+  syntax:
+    content: public virtual void WriteArray(string prefix, XmlDictionaryString localName, XmlDictionaryString namespaceUri, Guid[] array, int offset, int count)
+    content.vb: Public Overridable Sub WriteArray(prefix As String, localName As XmlDictionaryString, namespaceUri As XmlDictionaryString, array As Guid(), offset As Integer, count As Integer)
+    parameters:
+    - id: prefix
+      type: System.String
+      description: The namespace prefix.
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace URI of the element.
+    - id: array
+      type: System.Guid[]
+      description: The array that contains the nodes.
+    - id: offset
+      type: System.Int32
+      description: The starting index in the array.
+    - id: count
+      type: System.Int32
+      description: The number of nodes to get from the array.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is < 0 or > *array* length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is < 0 or > *array* length minus *offset*.'
+- uid: System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.String,System.String,System.TimeSpan[],System.Int32,System.Int32)
+  id: WriteArray(System.String,System.String,System.String,System.TimeSpan[],System.Int32,System.Int32)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: WriteArray(String, String, String, TimeSpan[], Int32, Int32)
+  name.vb: WriteArray(String, String, String, TimeSpan(), Int32, Int32)
+  fullName: System.Xml.XmlDictionaryWriter.WriteArray(System.String, System.String, System.String, System.TimeSpan[], System.Int32, System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryWriter.WriteArray(System.String, System.String, System.String, System.TimeSpan(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 588
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Writes nodes from a @'System.TimeSpan' array.
+  syntax:
+    content: public virtual void WriteArray(string prefix, string localName, string namespaceUri, TimeSpan[] array, int offset, int count)
+    content.vb: Public Overridable Sub WriteArray(prefix As String, localName As String, namespaceUri As String, array As TimeSpan(), offset As Integer, count As Integer)
+    parameters:
+    - id: prefix
+      type: System.String
+      description: The namespace prefix.
+    - id: localName
+      type: System.String
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.String
+      description: The namespace URI of the element.
+    - id: array
+      type: System.TimeSpan[]
+      description: The array that contains the nodes.
+    - id: offset
+      type: System.Int32
+      description: The starting index in the array.
+    - id: count
+      type: System.Int32
+      description: The number of nodes to get from the array.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is < 0 or > *array* length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is < 0 or > *array* length minus *offset*.'
+- uid: System.Xml.XmlDictionaryWriter.WriteArray(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.TimeSpan[],System.Int32,System.Int32)
+  id: WriteArray(System.String,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.TimeSpan[],System.Int32,System.Int32)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: WriteArray(String, XmlDictionaryString, XmlDictionaryString, TimeSpan[], Int32, Int32)
+  name.vb: WriteArray(String, XmlDictionaryString, XmlDictionaryString, TimeSpan(), Int32, Int32)
+  fullName: System.Xml.XmlDictionaryWriter.WriteArray(System.String, System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.TimeSpan[], System.Int32, System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryWriter.WriteArray(System.String, System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.TimeSpan(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 599
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Writes nodes from a @'System.TimeSpan' array.
+  syntax:
+    content: public virtual void WriteArray(string prefix, XmlDictionaryString localName, XmlDictionaryString namespaceUri, TimeSpan[] array, int offset, int count)
+    content.vb: Public Overridable Sub WriteArray(prefix As String, localName As XmlDictionaryString, namespaceUri As XmlDictionaryString, array As TimeSpan(), offset As Integer, count As Integer)
+    parameters:
+    - id: prefix
+      type: System.String
+      description: The namespace prefix.
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace URI of the element.
+    - id: array
+      type: System.TimeSpan[]
+      description: The array that contains the nodes.
+    - id: offset
+      type: System.Int32
+      description: The starting index in the array.
+    - id: count
+      type: System.Int32
+      description: The number of nodes to get from the array.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is < 0 or > *array* length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is < 0 or > *array* length minus *offset*.'
+- uid: System.Xml.XmlDictionaryWriter.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: Dispose(Boolean)
+  fullName: System.Xml.XmlDictionaryWriter.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 604
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  syntax:
+    content: protected override void Dispose(bool disposing)
+    content.vb: Protected Overrides Sub Dispose(disposing As Boolean)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+- uid: System.Xml.XmlDictionaryWriter.Close
+  id: Close
+  parent: System.Xml.XmlDictionaryWriter
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: Close()
+  fullName: System.Xml.XmlDictionaryWriter.Close()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryWriter.cs
+    startLine: 612
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  syntax:
+    content: public virtual void Close()
+    content.vb: Public Overridable Sub Close
+references:
+- uid: System.Xml
+  isExternal: false
+  name: System.Xml
+  fullName: System.Xml
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  name: Stream
+  fullName: System.IO.Stream
+- uid: System.Xml.XmlDictionaryWriter
+  parent: System.Xml
+  isExternal: false
+  href: System.Xml.XmlDictionaryWriter.yml
+  name: XmlDictionaryWriter
+  fullName: System.Xml.XmlDictionaryWriter
+  type: Class
+- uid: System.IO
+  isExternal: false
+  name: System.IO
+  fullName: System.IO
+- uid: System.Xml.IXmlDictionary
+  isExternal: false
+  href: System.Xml.IXmlDictionary.yml
+  name: IXmlDictionary
+  fullName: System.Xml.IXmlDictionary
+  type: Interface
+- uid: System.Xml.XmlBinaryWriterSession
+  isExternal: false
+  href: System.Xml.XmlBinaryWriterSession.yml
+  name: XmlBinaryWriterSession
+  fullName: System.Xml.XmlBinaryWriterSession
+  type: Class
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Text.Encoding
+  parent: System.Text
+  isExternal: true
+  name: Encoding
+  fullName: System.Text.Encoding
+- uid: System.Text
+  isExternal: false
+  name: System.Text
+  fullName: System.Text
+- uid: XmlWriter
+  isExternal: true
+  name: XmlWriter
+  fullName: XmlWriter
+- uid: System.Xml.XmlDictionaryString
+  parent: System.Xml
+  isExternal: false
+  href: System.Xml.XmlDictionaryString.yml
+  name: XmlDictionaryString
+  fullName: System.Xml.XmlDictionaryString
+  type: Class
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Xml.UniqueId
+  parent: System.Xml
+  isExternal: false
+  href: System.Xml.UniqueId.yml
+  name: UniqueId
+  fullName: System.Xml.UniqueId
+  type: Class
+- uid: System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  fullName: System.Guid
+- uid: System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  fullName: System.TimeSpan
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  name.vb: String()
+  fullName: System.String[]
+  fullName.vb: System.String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Xml.XmlDictionaryReader
+  parent: System.Xml
+  isExternal: false
+  href: System.Xml.XmlDictionaryReader.yml
+  name: XmlDictionaryReader
+  fullName: System.Xml.XmlDictionaryReader
+  type: Class
+- uid: XmlReader
+  isExternal: true
+  name: XmlReader
+  fullName: XmlReader
+- uid: System.Boolean[]
+  isExternal: false
+  href: System.Boolean.yml
+  name: Boolean[]
+  name.vb: Boolean()
+  fullName: System.Boolean[]
+  fullName.vb: System.Boolean()
+  spec.csharp:
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: ()
+    fullName: ()
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Int16[]
+  isExternal: false
+  href: System.Int16.yml
+  name: Int16[]
+  name.vb: Int16()
+  fullName: System.Int16[]
+  fullName.vb: System.Int16()
+  spec.csharp:
+  - uid: System.Int16
+    name: Int16
+    fullName: System.Int16
+    href: System.Int16.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int16
+    name: Int16
+    fullName: System.Int16
+    href: System.Int16.yml
+  - name: ()
+    fullName: ()
+- uid: System.Int32[]
+  isExternal: true
+  name: Int32[]
+  name.vb: Int32()
+  fullName: System.Int32[]
+  fullName.vb: System.Int32()
+  spec.csharp:
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Int64[]
+  isExternal: false
+  href: System.Int64.yml
+  name: Int64[]
+  name.vb: Int64()
+  fullName: System.Int64[]
+  fullName.vb: System.Int64()
+  spec.csharp:
+  - uid: System.Int64
+    name: Int64
+    fullName: System.Int64
+    href: System.Int64.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int64
+    name: Int64
+    fullName: System.Int64
+    href: System.Int64.yml
+  - name: ()
+    fullName: ()
+- uid: System.Single[]
+  isExternal: false
+  href: System.Single.yml
+  name: Single[]
+  name.vb: Single()
+  fullName: System.Single[]
+  fullName.vb: System.Single()
+  spec.csharp:
+  - uid: System.Single
+    name: Single
+    fullName: System.Single
+    href: System.Single.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    fullName: System.Single
+    href: System.Single.yml
+  - name: ()
+    fullName: ()
+- uid: System.Double[]
+  isExternal: false
+  href: System.Double.yml
+  name: Double[]
+  name.vb: Double()
+  fullName: System.Double[]
+  fullName.vb: System.Double()
+  spec.csharp:
+  - uid: System.Double
+    name: Double
+    fullName: System.Double
+    href: System.Double.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    fullName: System.Double
+    href: System.Double.yml
+  - name: ()
+    fullName: ()
+- uid: System.Decimal[]
+  isExternal: true
+  name: Decimal[]
+  name.vb: Decimal()
+  fullName: System.Decimal[]
+  fullName.vb: System.Decimal()
+  spec.csharp:
+  - uid: System.Decimal
+    name: Decimal
+    fullName: System.Decimal
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Decimal
+    name: Decimal
+    fullName: System.Decimal
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.DateTime[]
+  isExternal: true
+  name: DateTime[]
+  name.vb: DateTime()
+  fullName: System.DateTime[]
+  fullName.vb: System.DateTime()
+  spec.csharp:
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Guid[]
+  isExternal: true
+  name: Guid[]
+  name.vb: Guid()
+  fullName: System.Guid[]
+  fullName.vb: System.Guid()
+  spec.csharp:
+  - uid: System.Guid
+    name: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Guid
+    name: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.TimeSpan[]
+  isExternal: false
+  href: System.TimeSpan.yml
+  name: TimeSpan[]
+  name.vb: TimeSpan()
+  fullName: System.TimeSpan[]
+  fullName.vb: System.TimeSpan()
+  spec.csharp:
+  - uid: System.TimeSpan
+    name: TimeSpan
+    fullName: System.TimeSpan
+    href: System.TimeSpan.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.TimeSpan
+    name: TimeSpan
+    fullName: System.TimeSpan
+    href: System.TimeSpan.yml
+  - name: ()
+    fullName: ()

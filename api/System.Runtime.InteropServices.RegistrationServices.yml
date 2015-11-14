@@ -1,0 +1,626 @@
+items:
+- uid: System.Runtime.InteropServices.RegistrationServices
+  id: RegistrationServices
+  parent: System.Runtime.InteropServices
+  children:
+  - System.Runtime.InteropServices.RegistrationServices.GetManagedCategoryGuid
+  - System.Runtime.InteropServices.RegistrationServices.GetProgIdForType(System.Type)
+  - System.Runtime.InteropServices.RegistrationServices.GetRegistrableTypesInAssembly(System.Reflection.Assembly)
+  - System.Runtime.InteropServices.RegistrationServices.RegisterAssembly(System.Reflection.Assembly,System.Runtime.InteropServices.AssemblyRegistrationFlags)
+  - System.Runtime.InteropServices.RegistrationServices.RegisterTypeForComClients(System.Type,System.Guid@)
+  - System.Runtime.InteropServices.RegistrationServices.RegisterTypeForComClients(System.Type,System.Runtime.InteropServices.RegistrationClassContext,System.Runtime.InteropServices.RegistrationConnectionType)
+  - System.Runtime.InteropServices.RegistrationServices.TypeRepresentsComType(System.Type)
+  - System.Runtime.InteropServices.RegistrationServices.TypeRequiresRegistration(System.Type)
+  - System.Runtime.InteropServices.RegistrationServices.UnregisterAssembly(System.Reflection.Assembly)
+  - System.Runtime.InteropServices.RegistrationServices.UnregisterTypeForComClients(System.Int32)
+  href: System.Runtime.InteropServices.RegistrationServices.yml
+  name: RegistrationServices
+  fullName: System.Runtime.InteropServices.RegistrationServices
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/InteropServices/RegistrationServices.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/InteropServices/RegistrationServices.cs
+    startLine: 68
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Provides a set of services for registering and unregistering managed assemblies for use from COM.
+  syntax:
+    content: 'public class RegistrationServices : IRegistrationServices'
+    content.vb: Public Class RegistrationServices Implements IRegistrationServices
+  inheritance:
+  - System.Object
+  implements:
+  - System.Runtime.InteropServices.IRegistrationServices
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Runtime.InteropServices.RegistrationServices.RegisterAssembly(System.Reflection.Assembly,System.Runtime.InteropServices.AssemblyRegistrationFlags)
+  id: RegisterAssembly(System.Reflection.Assembly,System.Runtime.InteropServices.AssemblyRegistrationFlags)
+  parent: System.Runtime.InteropServices.RegistrationServices
+  href: System.Runtime.InteropServices.RegistrationServices.yml
+  name: RegisterAssembly(Assembly, AssemblyRegistrationFlags)
+  fullName: System.Runtime.InteropServices.RegistrationServices.RegisterAssembly(System.Reflection.Assembly, System.Runtime.InteropServices.AssemblyRegistrationFlags)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/RegistrationServices.cs
+    startLine: 92
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Registers the classes in a managed assembly to enable creation from COM.
+  syntax:
+    content: public virtual bool RegisterAssembly(Assembly assembly, AssemblyRegistrationFlags flags)
+    content.vb: Public Overridable Function RegisterAssembly(assembly As Assembly, flags As AssemblyRegistrationFlags) As Boolean
+    parameters:
+    - id: assembly
+      type: System.Reflection.Assembly
+      description: The assembly to be registered.
+    - id: flags
+      type: System.Runtime.InteropServices.AssemblyRegistrationFlags
+      description: An @'System.Runtime.InteropServices.AssemblyRegistrationFlags' value indicating any special settings used when registering *assembly*.
+    return:
+      type: System.Boolean
+      description: true if *assembly* contains types that were successfully registered; otherwise false if the assembly contains no eligible types.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*assembly* is null.'
+  - type: System.InvalidOperationException
+    description: The full name of *assembly* is null.-or- A method marked with @'System.Runtime.InteropServices.ComRegisterFunctionAttribute' is not static.-or- There is more than one method marked with @'System.Runtime.InteropServices.ComRegisterFunctionAttribute' at a given level of the hierarchy.-or- The signature of the method marked with @'System.Runtime.InteropServices.ComRegisterFunctionAttribute' is not valid.
+  - type: System.Reflection.TargetInvocationException
+    description: A user-defined custom registration function (marked with the @'System.Runtime.InteropServices.ComRegisterFunctionAttribute' attribute) throws an exception.
+- uid: System.Runtime.InteropServices.RegistrationServices.UnregisterAssembly(System.Reflection.Assembly)
+  id: UnregisterAssembly(System.Reflection.Assembly)
+  parent: System.Runtime.InteropServices.RegistrationServices
+  href: System.Runtime.InteropServices.RegistrationServices.yml
+  name: UnregisterAssembly(Assembly)
+  fullName: System.Runtime.InteropServices.RegistrationServices.UnregisterAssembly(System.Reflection.Assembly)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/RegistrationServices.cs
+    startLine: 155
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Unregisters the classes in a managed assembly.
+  syntax:
+    content: public virtual bool UnregisterAssembly(Assembly assembly)
+    content.vb: Public Overridable Function UnregisterAssembly(assembly As Assembly) As Boolean
+    parameters:
+    - id: assembly
+      type: System.Reflection.Assembly
+      description: The assembly to be unregistered.
+    return:
+      type: System.Boolean
+      description: true if *assembly* contains types that were successfully unregistered; otherwise false if the assembly contains no eligible types.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*assembly* is null.'
+  - type: System.InvalidOperationException
+    description: The full name of *assembly* is null.-or- A method marked with @'System.Runtime.InteropServices.ComUnregisterFunctionAttribute' is not static.-or- There is more than one method marked with @'System.Runtime.InteropServices.ComUnregisterFunctionAttribute' at a given level of the hierarchy.-or- The signature of the method marked with @'System.Runtime.InteropServices.ComUnregisterFunctionAttribute' is not valid.
+  - type: System.Reflection.TargetInvocationException
+    description: A user-defined custom unregistration function (marked with the @'System.Runtime.InteropServices.ComUnregisterFunctionAttribute'  attribute) throws an exception.
+- uid: System.Runtime.InteropServices.RegistrationServices.GetRegistrableTypesInAssembly(System.Reflection.Assembly)
+  id: GetRegistrableTypesInAssembly(System.Reflection.Assembly)
+  parent: System.Runtime.InteropServices.RegistrationServices
+  href: System.Runtime.InteropServices.RegistrationServices.yml
+  name: GetRegistrableTypesInAssembly(Assembly)
+  fullName: System.Runtime.InteropServices.RegistrationServices.GetRegistrableTypesInAssembly(System.Reflection.Assembly)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/RegistrationServices.cs
+    startLine: 215
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Retrieves a list of classes in an assembly that would be registered by a call to @'System.Runtime.InteropServices.RegistrationServices.RegisterAssembly(System.Reflection.Assembly,System.Runtime.InteropServices.AssemblyRegistrationFlags)'.
+  syntax:
+    content: public virtual Type[] GetRegistrableTypesInAssembly(Assembly assembly)
+    content.vb: Public Overridable Function GetRegistrableTypesInAssembly(assembly As Assembly) As Type()
+    parameters:
+    - id: assembly
+      type: System.Reflection.Assembly
+      description: The assembly to search for classes.
+    return:
+      type: System.Type[]
+      description: A @'System.Type' array containing a list of classes in *assembly*.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *assembly* parameter is null.
+- uid: System.Runtime.InteropServices.RegistrationServices.GetProgIdForType(System.Type)
+  id: GetProgIdForType(System.Type)
+  parent: System.Runtime.InteropServices.RegistrationServices
+  href: System.Runtime.InteropServices.RegistrationServices.yml
+  name: GetProgIdForType(Type)
+  fullName: System.Runtime.InteropServices.RegistrationServices.GetProgIdForType(System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/RegistrationServices.cs
+    startLine: 247
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Retrieves the COM ProgID for the specified type.
+  syntax:
+    content: public virtual string GetProgIdForType(Type type)
+    content.vb: Public Overridable Function GetProgIdForType(type As Type) As String
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type corresponding to the ProgID that is being requested.
+    return:
+      type: System.String
+      description: The ProgID for the specified type.
+- uid: System.Runtime.InteropServices.RegistrationServices.RegisterTypeForComClients(System.Type,System.Guid@)
+  id: RegisterTypeForComClients(System.Type,System.Guid@)
+  parent: System.Runtime.InteropServices.RegistrationServices
+  href: System.Runtime.InteropServices.RegistrationServices.yml
+  name: RegisterTypeForComClients(Type, ref Guid)
+  name.vb: RegisterTypeForComClients(Type, ByRef Guid)
+  fullName: System.Runtime.InteropServices.RegistrationServices.RegisterTypeForComClients(System.Type, ref System.Guid)
+  fullName.vb: System.Runtime.InteropServices.RegistrationServices.RegisterTypeForComClients(System.Type, ByRef System.Guid)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/RegistrationServices.cs
+    startLine: 253
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Registers the specified type with COM using the specified GUID.
+  syntax:
+    content: public virtual void RegisterTypeForComClients(Type type, ref Guid g)
+    content.vb: Public Overridable Sub RegisterTypeForComClients(type As Type, ByRef g As Guid)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The @'System.Type' to be registered for use from COM.
+    - id: g
+      type: System.Guid
+      description: The @'System.Guid' used to register the specified type.
+  exceptions:
+  - type: System.ArgumentException
+    description: The *type* parameter is null.
+  - type: System.ArgumentNullException
+    description: The *type* parameter cannot be created.
+- uid: System.Runtime.InteropServices.RegistrationServices.GetManagedCategoryGuid
+  id: GetManagedCategoryGuid
+  parent: System.Runtime.InteropServices.RegistrationServices
+  href: System.Runtime.InteropServices.RegistrationServices.yml
+  name: GetManagedCategoryGuid()
+  fullName: System.Runtime.InteropServices.RegistrationServices.GetManagedCategoryGuid()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/RegistrationServices.cs
+    startLine: 272
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Returns the GUID of the COM category that contains the managed classes.
+  syntax:
+    content: public virtual Guid GetManagedCategoryGuid()
+    content.vb: Public Overridable Function GetManagedCategoryGuid As Guid
+    return:
+      type: System.Guid
+      description: The GUID of the COM category that contains the managed classes.
+- uid: System.Runtime.InteropServices.RegistrationServices.TypeRequiresRegistration(System.Type)
+  id: TypeRequiresRegistration(System.Type)
+  parent: System.Runtime.InteropServices.RegistrationServices
+  href: System.Runtime.InteropServices.RegistrationServices.yml
+  name: TypeRequiresRegistration(Type)
+  fullName: System.Runtime.InteropServices.RegistrationServices.TypeRequiresRegistration(System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/RegistrationServices.cs
+    startLine: 277
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Determines whether the specified type requires registration.
+  syntax:
+    content: public virtual bool TypeRequiresRegistration(Type type)
+    content.vb: Public Overridable Function TypeRequiresRegistration(type As Type) As Boolean
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type to check for COM registration requirements.
+    return:
+      type: System.Boolean
+      description: true if the type must be registered for use from COM; otherwise false.
+- uid: System.Runtime.InteropServices.RegistrationServices.TypeRepresentsComType(System.Type)
+  id: TypeRepresentsComType(System.Type)
+  parent: System.Runtime.InteropServices.RegistrationServices
+  href: System.Runtime.InteropServices.RegistrationServices.yml
+  name: TypeRepresentsComType(Type)
+  fullName: System.Runtime.InteropServices.RegistrationServices.TypeRepresentsComType(System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/RegistrationServices.cs
+    startLine: 283
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates whether a type is marked with the @'System.Runtime.InteropServices.ComImportAttribute', or derives from a type marked with the @'System.Runtime.InteropServices.ComImportAttribute' and shares the same GUID as the parent.
+  syntax:
+    content: public virtual bool TypeRepresentsComType(Type type)
+    content.vb: Public Overridable Function TypeRepresentsComType(type As Type) As Boolean
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type to check for being a COM type.
+    return:
+      type: System.Boolean
+      description: true if a type is marked with the @'System.Runtime.InteropServices.ComImportAttribute', or derives from a type marked with the @'System.Runtime.InteropServices.ComImportAttribute' and shares the same GUID as the parent; otherwise false.
+- uid: System.Runtime.InteropServices.RegistrationServices.RegisterTypeForComClients(System.Type,System.Runtime.InteropServices.RegistrationClassContext,System.Runtime.InteropServices.RegistrationConnectionType)
+  id: RegisterTypeForComClients(System.Type,System.Runtime.InteropServices.RegistrationClassContext,System.Runtime.InteropServices.RegistrationConnectionType)
+  parent: System.Runtime.InteropServices.RegistrationServices
+  href: System.Runtime.InteropServices.RegistrationServices.yml
+  name: RegisterTypeForComClients(Type, RegistrationClassContext, RegistrationConnectionType)
+  fullName: System.Runtime.InteropServices.RegistrationServices.RegisterTypeForComClients(System.Type, System.Runtime.InteropServices.RegistrationClassContext, System.Runtime.InteropServices.RegistrationConnectionType)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/RegistrationServices.cs
+    startLine: 308
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Registers the specified type with COM using the specified execution context and connection type.
+  syntax:
+    content: public virtual int RegisterTypeForComClients(Type type, RegistrationClassContext classContext, RegistrationConnectionType flags)
+    content.vb: Public Overridable Function RegisterTypeForComClients(type As Type, classContext As RegistrationClassContext, flags As RegistrationConnectionType) As Integer
+    parameters:
+    - id: type
+      type: System.Type
+      description: The @'System.Type' object to register for use from COM.
+    - id: classContext
+      type: System.Runtime.InteropServices.RegistrationClassContext
+      description: One of the @'System.Runtime.InteropServices.RegistrationClassContext' values that indicates the context in which the executable code will be run.
+    - id: flags
+      type: System.Runtime.InteropServices.RegistrationConnectionType
+      description: One of the @'System.Runtime.InteropServices.RegistrationConnectionType' values that specifies how connections are made to the class object.
+    return:
+      type: System.Int32
+      description: An integer that represents a cookie value.
+  exceptions:
+  - type: System.ArgumentException
+    description: The *type* parameter is null.
+  - type: System.ArgumentNullException
+    description: The *type* parameter cannot be created.
+- uid: System.Runtime.InteropServices.RegistrationServices.UnregisterTypeForComClients(System.Int32)
+  id: UnregisterTypeForComClients(System.Int32)
+  parent: System.Runtime.InteropServices.RegistrationServices
+  href: System.Runtime.InteropServices.RegistrationServices.yml
+  name: UnregisterTypeForComClients(Int32)
+  fullName: System.Runtime.InteropServices.RegistrationServices.UnregisterTypeForComClients(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/RegistrationServices.cs
+    startLine: 328
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Removes references to a type registered with the @'System.Runtime.InteropServices.RegistrationServices.RegisterTypeForComClients(System.Type,System.Runtime.InteropServices.RegistrationClassContext,System.Runtime.InteropServices.RegistrationConnectionType)' method.
+  syntax:
+    content: public virtual void UnregisterTypeForComClients(int cookie)
+    content.vb: Public Overridable Sub UnregisterTypeForComClients(cookie As Integer)
+    parameters:
+    - id: cookie
+      type: System.Int32
+      description: The cookie value returned by a previous call to the @'System.Runtime.InteropServices.RegistrationServices.RegisterTypeForComClients(System.Type,System.Runtime.InteropServices.RegistrationClassContext,System.Runtime.InteropServices.RegistrationConnectionType)' method overload.
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Reflection.Assembly
+  parent: System.Reflection
+  isExternal: true
+  name: Assembly
+  fullName: System.Reflection.Assembly
+- uid: System.Runtime.InteropServices.AssemblyRegistrationFlags
+  parent: System.Runtime.InteropServices
+  isExternal: false
+  href: System.Runtime.InteropServices.AssemblyRegistrationFlags.yml
+  name: AssemblyRegistrationFlags
+  fullName: System.Runtime.InteropServices.AssemblyRegistrationFlags
+  type: Enum
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace
+- uid: System.Type[]
+  isExternal: true
+  name: Type[]
+  name.vb: Type()
+  fullName: System.Type[]
+  fullName.vb: System.Type()
+  spec.csharp:
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  fullName: System.Type
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  fullName: System.Guid
+- uid: System.Runtime.InteropServices.RegistrationClassContext
+  parent: System.Runtime.InteropServices
+  isExternal: false
+  href: System.Runtime.InteropServices.RegistrationClassContext.yml
+  name: RegistrationClassContext
+  fullName: System.Runtime.InteropServices.RegistrationClassContext
+  type: Enum
+- uid: System.Runtime.InteropServices.RegistrationConnectionType
+  parent: System.Runtime.InteropServices
+  isExternal: false
+  href: System.Runtime.InteropServices.RegistrationConnectionType.yml
+  name: RegistrationConnectionType
+  fullName: System.Runtime.InteropServices.RegistrationConnectionType
+  type: Enum
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32

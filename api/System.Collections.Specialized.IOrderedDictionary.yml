@@ -1,0 +1,434 @@
+items:
+- uid: System.Collections.Specialized.IOrderedDictionary
+  id: IOrderedDictionary
+  parent: System.Collections.Specialized
+  children:
+  - System.Collections.Specialized.IOrderedDictionary.GetEnumerator
+  - System.Collections.Specialized.IOrderedDictionary.Insert(System.Int32,System.Object,System.Object)
+  - System.Collections.Specialized.IOrderedDictionary.Item(System.Int32)
+  - System.Collections.Specialized.IOrderedDictionary.RemoveAt(System.Int32)
+  href: System.Collections.Specialized.IOrderedDictionary.yml
+  name: IOrderedDictionary
+  fullName: System.Collections.Specialized.IOrderedDictionary
+  type: Interface
+  source:
+    remote: &o0
+      path: src/System.Collections.Specialized/src/System/Collections/Specialized/IOrderedDictionary.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/IOrderedDictionary.cs
+    startLine: 17
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Represents an indexed collection of key/value pairs.
+  syntax:
+    content: 'public interface IOrderedDictionary : IDictionary, ICollection, IEnumerable'
+    content.vb: Public Interface IOrderedDictionary Inherits IDictionary
+  inheritedMembers:
+  - System.Collections.IDictionary.Contains(System.Object)
+  - System.Collections.IDictionary.Add(System.Object,System.Object)
+  - System.Collections.IDictionary.Clear
+  - System.Collections.IDictionary.Remove(System.Object)
+  - System.Collections.IDictionary.Item(System.Object)
+  - System.Collections.IDictionary.Keys
+  - System.Collections.IDictionary.Values
+  - System.Collections.IDictionary.IsReadOnly
+  - System.Collections.IDictionary.IsFixedSize
+  - System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+  - System.Collections.ICollection.Count
+  - System.Collections.ICollection.SyncRoot
+  - System.Collections.ICollection.IsSynchronized
+- uid: System.Collections.Specialized.IOrderedDictionary.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: System.Collections.Specialized.IOrderedDictionary
+  href: System.Collections.Specialized.IOrderedDictionary.yml
+  name: Item[Int32]
+  name.vb: Item(Int32)
+  fullName: System.Collections.Specialized.IOrderedDictionary.Item[System.Int32]
+  fullName.vb: System.Collections.Specialized.IOrderedDictionary.Item(System.Int32)
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/IOrderedDictionary.cs
+    startLine: 23
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Gets or sets the element at the specified index.
+  syntax:
+    content: object this[int index] { get; set; }
+    content.vb: Property Item(index As Integer) As Object
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the element to get or set.
+    return:
+      type: System.Object
+      description: The element at the specified index.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than 0.-or- *index* is equal to or greater than @''System.Collections.ICollection.Count''.'
+- uid: System.Collections.Specialized.IOrderedDictionary.GetEnumerator
+  id: GetEnumerator
+  parent: System.Collections.Specialized.IOrderedDictionary
+  href: System.Collections.Specialized.IOrderedDictionary.yml
+  name: GetEnumerator()
+  fullName: System.Collections.Specialized.IOrderedDictionary.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/IOrderedDictionary.cs
+    startLine: 26
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Returns an enumerator that iterates through the @'System.Collections.Specialized.IOrderedDictionary' collection.
+  syntax:
+    content: IDictionaryEnumerator GetEnumerator()
+    content.vb: Function GetEnumerator As IDictionaryEnumerator
+    return:
+      type: System.Collections.IDictionaryEnumerator
+      description: An @'System.Collections.IDictionaryEnumerator' for the entire @'System.Collections.Specialized.IOrderedDictionary' collection.
+- uid: System.Collections.Specialized.IOrderedDictionary.Insert(System.Int32,System.Object,System.Object)
+  id: Insert(System.Int32,System.Object,System.Object)
+  parent: System.Collections.Specialized.IOrderedDictionary
+  href: System.Collections.Specialized.IOrderedDictionary.yml
+  name: Insert(Int32, Object, Object)
+  fullName: System.Collections.Specialized.IOrderedDictionary.Insert(System.Int32, System.Object, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/IOrderedDictionary.cs
+    startLine: 32
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Inserts a key/value pair into the collection at the specified index.
+  syntax:
+    content: void Insert(int index, object key, object value)
+    content.vb: Sub Insert(index As Integer, key As Object, value As Object)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index at which the key/value pair should be inserted.
+    - id: key
+      type: System.Object
+      description: The object to use as the key of the element to add.
+    - id: value
+      type: System.Object
+      description: The object to use as the value of the element to add.  The value can be null.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than 0.-or-*index* is greater than @''System.Collections.ICollection.Count''.'
+  - type: System.ArgumentNullException
+    description: '*key* is null.'
+  - type: System.ArgumentException
+    description: An element with the same key already exists in the @'System.Collections.Specialized.IOrderedDictionary' collection.
+  - type: System.NotSupportedException
+    description: The @'System.Collections.Specialized.IOrderedDictionary' collection is read-only.-or-The @'System.Collections.Specialized.IOrderedDictionary' collection has a fixed size.
+- uid: System.Collections.Specialized.IOrderedDictionary.RemoveAt(System.Int32)
+  id: RemoveAt(System.Int32)
+  parent: System.Collections.Specialized.IOrderedDictionary
+  href: System.Collections.Specialized.IOrderedDictionary.yml
+  name: RemoveAt(Int32)
+  fullName: System.Collections.Specialized.IOrderedDictionary.RemoveAt(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/IOrderedDictionary.cs
+    startLine: 37
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: Removes the element at the specified index.
+  syntax:
+    content: void RemoveAt(int index)
+    content.vb: Sub RemoveAt(index As Integer)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the element to remove.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than 0.-or- *index* is equal to or greater than @''System.Collections.ICollection.Count''.'
+  - type: System.NotSupportedException
+    description: The @'System.Collections.Specialized.IOrderedDictionary' collection is read-only.-or- The @'System.Collections.Specialized.IOrderedDictionary' collection has a fixed size.
+references:
+- uid: System.Collections.Specialized
+  isExternal: false
+  name: System.Collections.Specialized
+  fullName: System.Collections.Specialized
+  type: Namespace
+- uid: System.Collections.IDictionary.Contains(System.Object)
+  parent: System.Collections.IDictionary
+  isExternal: true
+  name: Contains(Object)
+  fullName: System.Collections.IDictionary.Contains(System.Object)
+  spec.csharp:
+  - uid: System.Collections.IDictionary.Contains(System.Object)
+    name: Contains
+    fullName: System.Collections.IDictionary.Contains
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IDictionary.Contains(System.Object)
+    name: Contains
+    fullName: System.Collections.IDictionary.Contains
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.IDictionary.Add(System.Object,System.Object)
+  parent: System.Collections.IDictionary
+  isExternal: true
+  name: Add(Object, Object)
+  fullName: System.Collections.IDictionary.Add(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Collections.IDictionary.Add(System.Object,System.Object)
+    name: Add
+    fullName: System.Collections.IDictionary.Add
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IDictionary.Add(System.Object,System.Object)
+    name: Add
+    fullName: System.Collections.IDictionary.Add
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.IDictionary.Clear
+  parent: System.Collections.IDictionary
+  isExternal: true
+  name: Clear()
+  fullName: System.Collections.IDictionary.Clear()
+  spec.csharp:
+  - uid: System.Collections.IDictionary.Clear
+    name: Clear
+    fullName: System.Collections.IDictionary.Clear
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IDictionary.Clear
+    name: Clear
+    fullName: System.Collections.IDictionary.Clear
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Collections.IDictionary.Remove(System.Object)
+  parent: System.Collections.IDictionary
+  isExternal: true
+  name: Remove(Object)
+  fullName: System.Collections.IDictionary.Remove(System.Object)
+  spec.csharp:
+  - uid: System.Collections.IDictionary.Remove(System.Object)
+    name: Remove
+    fullName: System.Collections.IDictionary.Remove
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IDictionary.Remove(System.Object)
+    name: Remove
+    fullName: System.Collections.IDictionary.Remove
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.IDictionary.Item(System.Object)
+  parent: System.Collections.IDictionary
+  isExternal: true
+  name: Item[Object]
+  name.vb: Item(Object)
+  fullName: System.Collections.IDictionary.Item[System.Object]
+  fullName.vb: System.Collections.IDictionary.Item(System.Object)
+  spec.csharp:
+  - uid: System.Collections.IDictionary.Item(System.Object)
+    name: Item
+    fullName: System.Collections.IDictionary.Item
+    isExternal: true
+  - name: '['
+    fullName: '['
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ']'
+    fullName: ']'
+  spec.vb:
+  - uid: System.Collections.IDictionary.Item(System.Object)
+    name: Item
+    fullName: System.Collections.IDictionary.Item
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.IDictionary.Keys
+  parent: System.Collections.IDictionary
+  isExternal: true
+  name: Keys
+  fullName: System.Collections.IDictionary.Keys
+- uid: System.Collections.IDictionary.Values
+  parent: System.Collections.IDictionary
+  isExternal: true
+  name: Values
+  fullName: System.Collections.IDictionary.Values
+- uid: System.Collections.IDictionary.IsReadOnly
+  parent: System.Collections.IDictionary
+  isExternal: true
+  name: IsReadOnly
+  fullName: System.Collections.IDictionary.IsReadOnly
+- uid: System.Collections.IDictionary.IsFixedSize
+  parent: System.Collections.IDictionary
+  isExternal: true
+  name: IsFixedSize
+  fullName: System.Collections.IDictionary.IsFixedSize
+- uid: System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+  parent: System.Collections.ICollection
+  isExternal: true
+  name: CopyTo(Array, Int32)
+  fullName: System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  spec.csharp:
+  - uid: System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+    name: CopyTo
+    fullName: System.Collections.ICollection.CopyTo
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Array
+    name: Array
+    fullName: System.Array
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+    name: CopyTo
+    fullName: System.Collections.ICollection.CopyTo
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Array
+    name: Array
+    fullName: System.Array
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.ICollection.Count
+  parent: System.Collections.ICollection
+  isExternal: true
+  name: Count
+  fullName: System.Collections.ICollection.Count
+- uid: System.Collections.ICollection.SyncRoot
+  parent: System.Collections.ICollection
+  isExternal: true
+  name: SyncRoot
+  fullName: System.Collections.ICollection.SyncRoot
+- uid: System.Collections.ICollection.IsSynchronized
+  parent: System.Collections.ICollection
+  isExternal: true
+  name: IsSynchronized
+  fullName: System.Collections.ICollection.IsSynchronized
+- uid: System.Collections.IDictionary
+  parent: System.Collections
+  isExternal: true
+  name: IDictionary
+  fullName: System.Collections.IDictionary
+- uid: System.Collections.ICollection
+  parent: System.Collections
+  isExternal: true
+  name: ICollection
+  fullName: System.Collections.ICollection
+- uid: System.Collections
+  isExternal: false
+  name: System.Collections
+  fullName: System.Collections
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Collections.IDictionaryEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IDictionaryEnumerator
+  fullName: System.Collections.IDictionaryEnumerator

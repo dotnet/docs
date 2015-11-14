@@ -1,0 +1,388 @@
+items:
+- uid: System.Xml.Serialization.XmlAttributeOverrides
+  id: XmlAttributeOverrides
+  parent: System.Xml.Serialization
+  children:
+  - System.Xml.Serialization.XmlAttributeOverrides.Add(System.Type,System.String,System.Xml.Serialization.XmlAttributes)
+  - System.Xml.Serialization.XmlAttributeOverrides.Add(System.Type,System.Xml.Serialization.XmlAttributes)
+  - System.Xml.Serialization.XmlAttributeOverrides.Item(System.Type)
+  - System.Xml.Serialization.XmlAttributeOverrides.Item(System.Type,System.String)
+  href: System.Xml.Serialization.XmlAttributeOverrides.yml
+  name: XmlAttributeOverrides
+  fullName: System.Xml.Serialization.XmlAttributeOverrides
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlAttributeOverrides.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlAttributeOverrides.cs
+    startLine: 21
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Allows you to override property, field, and class attributes when you use the @'System.Xml.Serialization.XmlSerializer' to serialize or deserialize an object.
+  syntax:
+    content: public class XmlAttributeOverrides
+    content.vb: Public Class XmlAttributeOverrides
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Xml.Serialization.XmlAttributeOverrides.Add(System.Type,System.Xml.Serialization.XmlAttributes)
+  id: Add(System.Type,System.Xml.Serialization.XmlAttributes)
+  parent: System.Xml.Serialization.XmlAttributeOverrides
+  href: System.Xml.Serialization.XmlAttributeOverrides.yml
+  name: Add(Type, XmlAttributes)
+  fullName: System.Xml.Serialization.XmlAttributeOverrides.Add(System.Type, System.Xml.Serialization.XmlAttributes)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlAttributeOverrides.cs
+    startLine: 29
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Adds an @'System.Xml.Serialization.XmlAttributes' object to the collection of @'System.Xml.Serialization.XmlAttributes' objects. The *type* parameter specifies an object to be overridden by the @'System.Xml.Serialization.XmlAttributes' object.
+  syntax:
+    content: public void Add(Type type, XmlAttributes attributes)
+    content.vb: Public Sub Add(type As Type, attributes As XmlAttributes)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The @'System.Type' of the object that is overridden.
+    - id: attributes
+      type: System.Xml.Serialization.XmlAttributes
+      description: An @'System.Xml.Serialization.XmlAttributes' object that represents the overriding attributes.
+- uid: System.Xml.Serialization.XmlAttributeOverrides.Add(System.Type,System.String,System.Xml.Serialization.XmlAttributes)
+  id: Add(System.Type,System.String,System.Xml.Serialization.XmlAttributes)
+  parent: System.Xml.Serialization.XmlAttributeOverrides
+  href: System.Xml.Serialization.XmlAttributeOverrides.yml
+  name: Add(Type, String, XmlAttributes)
+  fullName: System.Xml.Serialization.XmlAttributeOverrides.Add(System.Type, System.String, System.Xml.Serialization.XmlAttributes)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlAttributeOverrides.cs
+    startLine: 38
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Adds an @'System.Xml.Serialization.XmlAttributes' object to the collection of @'System.Xml.Serialization.XmlAttributes' objects. The *type* parameter specifies an object to be overridden. The *member* parameter specifies the name of a member that is overridden.
+  syntax:
+    content: public void Add(Type type, string member, XmlAttributes attributes)
+    content.vb: Public Sub Add(type As Type, member As String, attributes As XmlAttributes)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The @'System.Type' of the object to override.
+    - id: member
+      type: System.String
+      description: The name of the member to override.
+    - id: attributes
+      type: System.Xml.Serialization.XmlAttributes
+      description: An @'System.Xml.Serialization.XmlAttributes' object that represents the overriding attributes.
+- uid: System.Xml.Serialization.XmlAttributeOverrides.Item(System.Type)
+  id: Item(System.Type)
+  parent: System.Xml.Serialization.XmlAttributeOverrides
+  href: System.Xml.Serialization.XmlAttributeOverrides.yml
+  name: Item[Type]
+  name.vb: Item(Type)
+  fullName: System.Xml.Serialization.XmlAttributeOverrides.Item[System.Type]
+  fullName.vb: System.Xml.Serialization.XmlAttributeOverrides.Item(System.Type)
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlAttributeOverrides.cs
+    startLine: 57
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Gets the object associated with the specified, base-class, type.
+  syntax:
+    content: public XmlAttributes this[Type type] { get; }
+    content.vb: Public ReadOnly Property Item(type As Type) As XmlAttributes
+    parameters:
+    - id: type
+      type: System.Type
+      description: The base class @'System.Type' that is associated with the collection of attributes you want to retrieve.
+    return:
+      type: System.Xml.Serialization.XmlAttributes
+      description: An @'System.Xml.Serialization.XmlAttributes' that represents the collection of overriding attributes.
+- uid: System.Xml.Serialization.XmlAttributeOverrides.Item(System.Type,System.String)
+  id: Item(System.Type,System.String)
+  parent: System.Xml.Serialization.XmlAttributeOverrides
+  href: System.Xml.Serialization.XmlAttributeOverrides.yml
+  name: Item[Type, String]
+  name.vb: Item(Type, String)
+  fullName: System.Xml.Serialization.XmlAttributeOverrides.Item[System.Type, System.String]
+  fullName.vb: System.Xml.Serialization.XmlAttributeOverrides.Item(System.Type, System.String)
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlAttributeOverrides.cs
+    startLine: 69
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Gets the object associated with the specified (base-class) type. The member parameter specifies the base-class member that is overridden.
+  syntax:
+    content: public XmlAttributes this[Type type, string member] { get; }
+    content.vb: Public ReadOnly Property Item(type As Type, member As String) As XmlAttributes
+    parameters:
+    - id: type
+      type: System.Type
+      description: The base class @'System.Type' that is associated with the collection of attributes you want.
+    - id: member
+      type: System.String
+      description: The name of the overridden member that specifies the @'System.Xml.Serialization.XmlAttributes' to return.
+    return:
+      type: System.Xml.Serialization.XmlAttributes
+      description: An @'System.Xml.Serialization.XmlAttributes' that represents the collection of overriding attributes.
+references:
+- uid: System.Xml.Serialization
+  isExternal: false
+  name: System.Xml.Serialization
+  fullName: System.Xml.Serialization
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  fullName: System.Type
+- uid: System.Xml.Serialization.XmlAttributes
+  parent: System.Xml.Serialization
+  isExternal: false
+  href: System.Xml.Serialization.XmlAttributes.yml
+  name: XmlAttributes
+  fullName: System.Xml.Serialization.XmlAttributes
+  type: Class
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String

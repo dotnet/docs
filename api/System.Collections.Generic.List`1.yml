@@ -1,0 +1,2852 @@
+items:
+- uid: System.Collections.Generic.List`1
+  id: List`1
+  parent: System.Collections.Generic
+  children:
+  - System.Collections.Generic.List`1.#ctor
+  - System.Collections.Generic.List`1.#ctor(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Generic.List`1.#ctor(System.Int32)
+  - System.Collections.Generic.List`1.Add(`0)
+  - System.Collections.Generic.List`1.AddRange(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Generic.List`1.AsReadOnly
+  - System.Collections.Generic.List`1.BinarySearch(`0)
+  - System.Collections.Generic.List`1.BinarySearch(`0,System.Collections.Generic.IComparer{`0})
+  - System.Collections.Generic.List`1.BinarySearch(System.Int32,System.Int32,`0,System.Collections.Generic.IComparer{`0})
+  - System.Collections.Generic.List`1.Capacity
+  - System.Collections.Generic.List`1.Clear
+  - System.Collections.Generic.List`1.Contains(`0)
+  - System.Collections.Generic.List`1.ConvertAll``1(System.Converter{`0,``0})
+  - System.Collections.Generic.List`1.CopyTo(`0[])
+  - System.Collections.Generic.List`1.CopyTo(`0[],System.Int32)
+  - System.Collections.Generic.List`1.CopyTo(System.Int32,`0[],System.Int32,System.Int32)
+  - System.Collections.Generic.List`1.Count
+  - System.Collections.Generic.List`1.Exists(System.Predicate{`0})
+  - System.Collections.Generic.List`1.Find(System.Predicate{`0})
+  - System.Collections.Generic.List`1.FindAll(System.Predicate{`0})
+  - System.Collections.Generic.List`1.FindIndex(System.Int32,System.Int32,System.Predicate{`0})
+  - System.Collections.Generic.List`1.FindIndex(System.Int32,System.Predicate{`0})
+  - System.Collections.Generic.List`1.FindIndex(System.Predicate{`0})
+  - System.Collections.Generic.List`1.FindLast(System.Predicate{`0})
+  - System.Collections.Generic.List`1.FindLastIndex(System.Int32,System.Int32,System.Predicate{`0})
+  - System.Collections.Generic.List`1.FindLastIndex(System.Int32,System.Predicate{`0})
+  - System.Collections.Generic.List`1.FindLastIndex(System.Predicate{`0})
+  - System.Collections.Generic.List`1.ForEach(System.Action{`0})
+  - System.Collections.Generic.List`1.GetEnumerator
+  - System.Collections.Generic.List`1.GetRange(System.Int32,System.Int32)
+  - System.Collections.Generic.List`1.IndexOf(`0)
+  - System.Collections.Generic.List`1.IndexOf(`0,System.Int32)
+  - System.Collections.Generic.List`1.IndexOf(`0,System.Int32,System.Int32)
+  - System.Collections.Generic.List`1.Insert(System.Int32,`0)
+  - System.Collections.Generic.List`1.InsertRange(System.Int32,System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Generic.List`1.Item(System.Int32)
+  - System.Collections.Generic.List`1.LastIndexOf(`0)
+  - System.Collections.Generic.List`1.LastIndexOf(`0,System.Int32)
+  - System.Collections.Generic.List`1.LastIndexOf(`0,System.Int32,System.Int32)
+  - System.Collections.Generic.List`1.Remove(`0)
+  - System.Collections.Generic.List`1.RemoveAll(System.Predicate{`0})
+  - System.Collections.Generic.List`1.RemoveAt(System.Int32)
+  - System.Collections.Generic.List`1.RemoveRange(System.Int32,System.Int32)
+  - System.Collections.Generic.List`1.Reverse
+  - System.Collections.Generic.List`1.Reverse(System.Int32,System.Int32)
+  - System.Collections.Generic.List`1.Sort
+  - System.Collections.Generic.List`1.Sort(System.Collections.Generic.IComparer{`0})
+  - System.Collections.Generic.List`1.Sort(System.Comparison{`0})
+  - System.Collections.Generic.List`1.Sort(System.Int32,System.Int32,System.Collections.Generic.IComparer{`0})
+  - System.Collections.Generic.List`1.System#Collections#Generic#ICollection{T}#IsReadOnly
+  - System.Collections.Generic.List`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator
+  - System.Collections.Generic.List`1.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  - System.Collections.Generic.List`1.System#Collections#ICollection#IsSynchronized
+  - System.Collections.Generic.List`1.System#Collections#ICollection#SyncRoot
+  - System.Collections.Generic.List`1.System#Collections#IEnumerable#GetEnumerator
+  - System.Collections.Generic.List`1.System#Collections#IList#Add(System.Object)
+  - System.Collections.Generic.List`1.System#Collections#IList#Contains(System.Object)
+  - System.Collections.Generic.List`1.System#Collections#IList#IndexOf(System.Object)
+  - System.Collections.Generic.List`1.System#Collections#IList#Insert(System.Int32,System.Object)
+  - System.Collections.Generic.List`1.System#Collections#IList#IsFixedSize
+  - System.Collections.Generic.List`1.System#Collections#IList#IsReadOnly
+  - System.Collections.Generic.List`1.System#Collections#IList#Item(System.Int32)
+  - System.Collections.Generic.List`1.System#Collections#IList#Remove(System.Object)
+  - System.Collections.Generic.List`1.ToArray
+  - System.Collections.Generic.List`1.TrimExcess
+  - System.Collections.Generic.List`1.TrueForAll(System.Predicate{`0})
+  href: System.Collections.Generic.List`1.yml
+  name: List<T>
+  name.vb: List(Of T)
+  fullName: System.Collections.Generic.List<T>
+  fullName.vb: System.Collections.Generic.List(Of T)
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Collections/Generic/List.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 29
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Represents a strongly typed list of objects that can be accessed by index. Provides methods to search, sort, and manipulate lists.To browse the .NET Framework source code for this type, see the Reference Source.
+  syntax:
+    content: 'public class List<T> : IList<T>, ICollection<T>, IList, ICollection, IReadOnlyList<T>, IReadOnlyCollection<T>, IEnumerable<T>, IEnumerable'
+    content.vb: Public Class List(Of T) Implements IList(Of T), ICollection(Of T), IList, ICollection, IReadOnlyList(Of T), IReadOnlyCollection(Of T), IEnumerable(Of T), IEnumerable
+    typeParameters:
+    - id: T
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.Generic.IList{{T}}
+  - System.Collections.Generic.ICollection{{T}}
+  - System.Collections.IList
+  - System.Collections.ICollection
+  - System.Collections.Generic.IReadOnlyList{{T}}
+  - System.Collections.Generic.IReadOnlyCollection{{T}}
+  - System.Collections.Generic.IEnumerable{{T}}
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Collections.Generic.List`1.#ctor
+  id: '#ctor'
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: List()
+  fullName: System.Collections.Generic.List<T>.List()
+  fullName.vb: System.Collections.Generic.List(Of T).List()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 48
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Initializes a new instance of the @'System.Collections.Generic.List`1' class that is empty and has the default initial capacity.
+  syntax:
+    content: public List()
+    content.vb: Public Sub New
+- uid: System.Collections.Generic.List`1.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: List(Int32)
+  fullName: System.Collections.Generic.List<T>.List(System.Int32)
+  fullName.vb: System.Collections.Generic.List(Of T).List(System.Int32)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 56
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Initializes a new instance of the @'System.Collections.Generic.List`1' class that is empty and has the specified initial capacity.
+  syntax:
+    content: public List(int capacity)
+    content.vb: Public Sub New(capacity As Integer)
+    parameters:
+    - id: capacity
+      type: System.Int32
+      description: The number of elements that the new list can initially store.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*capacity* is less than 0.'
+- uid: System.Collections.Generic.List`1.#ctor(System.Collections.Generic.IEnumerable{`0})
+  id: '#ctor(System.Collections.Generic.IEnumerable{`0})'
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: List(IEnumerable<T>)
+  name.vb: List(IEnumerable(Of T))
+  fullName: System.Collections.Generic.List<T>.List(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Generic.List(Of T).List(System.Collections.Generic.IEnumerable(Of T))
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 70
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Initializes a new instance of the @'System.Collections.Generic.List`1' class that contains elements copied from the specified collection and has sufficient capacity to accommodate the number of elements copied.
+  syntax:
+    content: public List(IEnumerable<T> collection)
+    content.vb: Public Sub New(collection As IEnumerable(Of T))
+    parameters:
+    - id: collection
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection whose elements are copied to the new list.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*collection* is null.'
+- uid: System.Collections.Generic.List`1.Capacity
+  id: Capacity
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: Capacity
+  fullName: System.Collections.Generic.List<T>.Capacity
+  fullName.vb: System.Collections.Generic.List(Of T).Capacity
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 106
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Gets or sets the total number of elements the internal data structure can hold without resizing.
+  syntax:
+    content: public int Capacity { get; set; }
+    content.vb: Public Property Capacity As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: The number of elements that the @'System.Collections.Generic.List`1' can contain before resizing is required.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '@''System.Collections.Generic.List`1.Capacity'' is set to a value that is less than @''System.Collections.Generic.List`1.Count''.'
+  - type: System.OutOfMemoryException
+    description: There is not enough memory available on the system.
+- uid: System.Collections.Generic.List`1.Count
+  id: Count
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: Count
+  fullName: System.Collections.Generic.List<T>.Count
+  fullName.vb: System.Collections.Generic.List(Of T).Count
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 133
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Gets the number of elements contained in the @'System.Collections.Generic.List`1'.
+  syntax:
+    content: public int Count { get; }
+    content.vb: Public ReadOnly Property Count As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: The number of elements contained in the @'System.Collections.Generic.List`1'.
+- uid: System.Collections.Generic.List`1.System#Collections#IList#IsFixedSize
+  id: System#Collections#IList#IsFixedSize
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: IList.IsFixedSize
+  name.vb: System.Collections.IList.IsFixedSize
+  fullName: System.Collections.Generic.List<T>.System.Collections.IList.IsFixedSize
+  fullName.vb: System.Collections.Generic.List(Of T).System.Collections.IList.IsFixedSize
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 140
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Gets a value indicating whether the @'System.Collections.IList' has a fixed size.
+  syntax:
+    content: bool IList.IsFixedSize { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.IList.IsFixedSize As Boolean Implements IList.IsFixedSize
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the @'System.Collections.IList' has a fixed size; otherwise, false.  In the default implementation of @'System.Collections.Generic.List`1', this property always returns false.
+- uid: System.Collections.Generic.List`1.System#Collections#Generic#ICollection{T}#IsReadOnly
+  id: System#Collections#Generic#ICollection{T}#IsReadOnly
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: ICollection<T>.IsReadOnly
+  name.vb: System.Collections.Generic.ICollection<T>.IsReadOnly
+  fullName: System.Collections.Generic.List<T>.System.Collections.Generic.ICollection<T>.IsReadOnly
+  fullName.vb: System.Collections.Generic.List(Of T).System.Collections.Generic.ICollection<T>.IsReadOnly
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 146
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Gets a value indicating whether the @'System.Collections.Generic.ICollection`1' is read-only.
+  syntax:
+    content: bool ICollection<T>.IsReadOnly { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.Generic.ICollection<T>.IsReadOnly As Boolean Implements ICollection(Of T).IsReadOnly
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the @'System.Collections.Generic.ICollection`1' is read-only; otherwise, false.  In the default implementation of @'System.Collections.Generic.List`1', this property always returns false.
+- uid: System.Collections.Generic.List`1.System#Collections#IList#IsReadOnly
+  id: System#Collections#IList#IsReadOnly
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: IList.IsReadOnly
+  name.vb: System.Collections.IList.IsReadOnly
+  fullName: System.Collections.Generic.List<T>.System.Collections.IList.IsReadOnly
+  fullName.vb: System.Collections.Generic.List(Of T).System.Collections.IList.IsReadOnly
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 150
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Gets a value indicating whether the @'System.Collections.IList' is read-only.
+  syntax:
+    content: bool IList.IsReadOnly { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.IList.IsReadOnly As Boolean Implements IList.IsReadOnly
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the @'System.Collections.IList' is read-only; otherwise, false.  In the default implementation of @'System.Collections.Generic.List`1', this property always returns false.
+- uid: System.Collections.Generic.List`1.System#Collections#ICollection#IsSynchronized
+  id: System#Collections#ICollection#IsSynchronized
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: ICollection.IsSynchronized
+  name.vb: System.Collections.ICollection.IsSynchronized
+  fullName: System.Collections.Generic.List<T>.System.Collections.ICollection.IsSynchronized
+  fullName.vb: System.Collections.Generic.List(Of T).System.Collections.ICollection.IsSynchronized
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 155
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Gets a value indicating whether access to the @'System.Collections.ICollection' is synchronized (thread safe).
+  syntax:
+    content: bool ICollection.IsSynchronized { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.ICollection.IsSynchronized As Boolean Implements ICollection.IsSynchronized
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if access to the @'System.Collections.ICollection' is synchronized (thread safe); otherwise, false.  In the default implementation of @'System.Collections.Generic.List`1', this property always returns false.
+- uid: System.Collections.Generic.List`1.System#Collections#ICollection#SyncRoot
+  id: System#Collections#ICollection#SyncRoot
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: ICollection.SyncRoot
+  name.vb: System.Collections.ICollection.SyncRoot
+  fullName: System.Collections.Generic.List<T>.System.Collections.ICollection.SyncRoot
+  fullName.vb: System.Collections.Generic.List(Of T).System.Collections.ICollection.SyncRoot
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 160
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Gets an object that can be used to synchronize access to the @'System.Collections.ICollection'.
+  syntax:
+    content: object ICollection.SyncRoot { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.ICollection.SyncRoot As Object Implements ICollection.SyncRoot
+    parameters: []
+    return:
+      type: System.Object
+      description: An object that can be used to synchronize access to the @'System.Collections.ICollection'.  In the default implementation of @'System.Collections.Generic.List`1', this property always returns the current instance.
+- uid: System.Collections.Generic.List`1.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: Item[Int32]
+  name.vb: Item(Int32)
+  fullName: System.Collections.Generic.List<T>.Item[System.Int32]
+  fullName.vb: System.Collections.Generic.List(Of T).Item(System.Int32)
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 170
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Gets or sets the element at the specified index.
+  syntax:
+    content: public T this[int index] { get; set; }
+    content.vb: Public Property Item(index As Integer) As T
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the element to get or set.
+    return:
+      type: '{T}'
+      description: The element at the specified index.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than 0.-or-*index* is equal to or greater than @''System.Collections.Generic.List`1.Count''.'
+- uid: System.Collections.Generic.List`1.System#Collections#IList#Item(System.Int32)
+  id: System#Collections#IList#Item(System.Int32)
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: IList.Item[Int32]
+  name.vb: System.Collections.IList.Item(Int32)
+  fullName: System.Collections.Generic.List<T>.System.Collections.IList.Item[System.Int32]
+  fullName.vb: System.Collections.Generic.List(Of T).System.Collections.IList.Item(System.Int32)
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 196
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Gets or sets the element at the specified index.
+  syntax:
+    content: object IList.this[int index] { get; set; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.IList.Item(index As Integer) As Object Implements IList.this
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the element to get or set.
+    return:
+      type: System.Object
+      description: The element at the specified index.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is not a valid index in the @''System.Collections.IList''.'
+  - type: System.ArgumentException
+    description: The property is set and *value* is of a type that is not assignable to the @'System.Collections.IList'.
+- uid: System.Collections.Generic.List`1.Add(`0)
+  id: Add(`0)
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: Add(T)
+  fullName: System.Collections.Generic.List<T>.Add(T)
+  fullName.vb: System.Collections.Generic.List(Of T).Add(T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 216
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Adds an object to the end of the @'System.Collections.Generic.List`1'.
+  syntax:
+    content: public void Add(T item)
+    content.vb: Public Sub Add(item As T)
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The object to be added to the end of the @'System.Collections.Generic.List`1'. The value can be null for reference types.
+- uid: System.Collections.Generic.List`1.System#Collections#IList#Add(System.Object)
+  id: System#Collections#IList#Add(System.Object)
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: IList.Add(Object)
+  name.vb: System.Collections.IList.Add(Object)
+  fullName: System.Collections.Generic.List<T>.System.Collections.IList.Add(System.Object)
+  fullName.vb: System.Collections.Generic.List(Of T).System.Collections.IList.Add(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 222
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Adds an item to the @'System.Collections.IList'.
+  syntax:
+    content: int IList.Add(object item)
+    content.vb: Function System.Collections.IList.Add(item As Object) As Integer Implements IList.Add
+    parameters:
+    - id: item
+      type: System.Object
+      description: The @'System.Object' to add to the @'System.Collections.IList'.
+    return:
+      type: System.Int32
+      description: The position into which the new element was inserted.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*item* is of a type that is not assignable to the @''System.Collections.IList''.'
+- uid: System.Collections.Generic.List`1.AddRange(System.Collections.Generic.IEnumerable{`0})
+  id: AddRange(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: AddRange(IEnumerable<T>)
+  name.vb: AddRange(IEnumerable(Of T))
+  fullName: System.Collections.Generic.List<T>.AddRange(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Generic.List(Of T).AddRange(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 241
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Adds the elements of the specified collection to the end of the @'System.Collections.Generic.List`1'.
+  syntax:
+    content: public void AddRange(IEnumerable<T> collection)
+    content.vb: Public Sub AddRange(collection As IEnumerable(Of T))
+    parameters:
+    - id: collection
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection whose elements should be added to the end of the @'System.Collections.Generic.List`1'. The collection itself cannot be null, but it can contain elements that are null, if type *T* is a reference type.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*collection* is null.'
+- uid: System.Collections.Generic.List`1.AsReadOnly
+  id: AsReadOnly
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: AsReadOnly()
+  fullName: System.Collections.Generic.List<T>.AsReadOnly()
+  fullName.vb: System.Collections.Generic.List(Of T).AsReadOnly()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 247
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Returns a read-only @'System.Collections.Generic.IList`1' wrapper for the current collection.
+  syntax:
+    content: public ReadOnlyCollection<T> AsReadOnly()
+    content.vb: Public Function AsReadOnly As ReadOnlyCollection(Of T)
+    return:
+      type: System.Collections.ObjectModel.ReadOnlyCollection{{T}}
+      description: A @'System.Collections.ObjectModel.ReadOnlyCollection`1' that acts as a read-only wrapper around the current @'System.Collections.Generic.List`1'.
+- uid: System.Collections.Generic.List`1.BinarySearch(System.Int32,System.Int32,`0,System.Collections.Generic.IComparer{`0})
+  id: BinarySearch(System.Int32,System.Int32,`0,System.Collections.Generic.IComparer{`0})
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: BinarySearch(Int32, Int32, T, IComparer<T>)
+  name.vb: BinarySearch(Int32, Int32, T, IComparer(Of T))
+  fullName: System.Collections.Generic.List<T>.BinarySearch(System.Int32, System.Int32, T, System.Collections.Generic.IComparer<T>)
+  fullName.vb: System.Collections.Generic.List(Of T).BinarySearch(System.Int32, System.Int32, T, System.Collections.Generic.IComparer(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 272
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Searches a range of elements in the sorted @'System.Collections.Generic.List`1' for an element using the specified comparer and returns the zero-based index of the element.
+  syntax:
+    content: public int BinarySearch(int index, int count, T item, IComparer<T> comparer)
+    content.vb: Public Function BinarySearch(index As Integer, count As Integer, item As T, comparer As IComparer(Of T)) As Integer
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based starting index of the range to search.
+    - id: count
+      type: System.Int32
+      description: The length of the range to search.
+    - id: item
+      type: '{T}'
+      description: The object to locate. The value can be null for reference types.
+    - id: comparer
+      type: System.Collections.Generic.IComparer{{T}}
+      description: The @'System.Collections.Generic.IComparer`1' implementation to use when comparing elements, or null to use the default comparer @'System.Collections.Generic.Comparer`1.Default'.
+    return:
+      type: System.Int32
+      description: The zero-based index of *item* in the sorted @'System.Collections.Generic.List`1', if *item* is found; otherwise, a negative number that is the bitwise complement of the index of the next element that is larger than *item* or, if there is no larger element, the bitwise complement of @'System.Collections.Generic.List`1.Count'.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than 0.-or-*count* is less than 0.'
+  - type: System.ArgumentException
+    description: '*index* and *count* do not denote a valid range in the @''System.Collections.Generic.List`1''.'
+  - type: System.InvalidOperationException
+    description: '*comparer* is null, and the default comparer @''System.Collections.Generic.Comparer`1.Default'' cannot find an implementation of the @''System.IComparable`1'' generic interface or the @''System.IComparable'' interface for type *T*.'
+- uid: System.Collections.Generic.List`1.BinarySearch(`0)
+  id: BinarySearch(`0)
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: BinarySearch(T)
+  fullName: System.Collections.Generic.List<T>.BinarySearch(T)
+  fullName.vb: System.Collections.Generic.List(Of T).BinarySearch(T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 285
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Searches the entire sorted @'System.Collections.Generic.List`1' for an element using the default comparer and returns the zero-based index of the element.
+  syntax:
+    content: public int BinarySearch(T item)
+    content.vb: Public Function BinarySearch(item As T) As Integer
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The object to locate. The value can be null for reference types.
+    return:
+      type: System.Int32
+      description: The zero-based index of *item* in the sorted @'System.Collections.Generic.List`1', if *item* is found; otherwise, a negative number that is the bitwise complement of the index of the next element that is larger than *item* or, if there is no larger element, the bitwise complement of @'System.Collections.Generic.List`1.Count'.
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The default comparer @'System.Collections.Generic.Comparer`1.Default' cannot find an implementation of the @'System.IComparable`1' generic interface or the @'System.IComparable' interface for type *T*.
+- uid: System.Collections.Generic.List`1.BinarySearch(`0,System.Collections.Generic.IComparer{`0})
+  id: BinarySearch(`0,System.Collections.Generic.IComparer{`0})
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: BinarySearch(T, IComparer<T>)
+  name.vb: BinarySearch(T, IComparer(Of T))
+  fullName: System.Collections.Generic.List<T>.BinarySearch(T, System.Collections.Generic.IComparer<T>)
+  fullName.vb: System.Collections.Generic.List(Of T).BinarySearch(T, System.Collections.Generic.IComparer(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 291
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Searches the entire sorted @'System.Collections.Generic.List`1' for an element using the specified comparer and returns the zero-based index of the element.
+  syntax:
+    content: public int BinarySearch(T item, IComparer<T> comparer)
+    content.vb: Public Function BinarySearch(item As T, comparer As IComparer(Of T)) As Integer
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The object to locate. The value can be null for reference types.
+    - id: comparer
+      type: System.Collections.Generic.IComparer{{T}}
+      description: The @'System.Collections.Generic.IComparer`1' implementation to use when comparing elements.-or-null to use the default comparer @'System.Collections.Generic.Comparer`1.Default'.
+    return:
+      type: System.Int32
+      description: The zero-based index of *item* in the sorted @'System.Collections.Generic.List`1', if *item* is found; otherwise, a negative number that is the bitwise complement of the index of the next element that is larger than *item* or, if there is no larger element, the bitwise complement of @'System.Collections.Generic.List`1.Count'.
+  exceptions:
+  - type: System.InvalidOperationException
+    description: '*comparer* is null, and the default comparer @''System.Collections.Generic.Comparer`1.Default'' cannot find an implementation of the @''System.IComparable`1'' generic interface or the @''System.IComparable'' interface for type *T*.'
+- uid: System.Collections.Generic.List`1.Clear
+  id: Clear
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: Clear()
+  fullName: System.Collections.Generic.List<T>.Clear()
+  fullName.vb: System.Collections.Generic.List(Of T).Clear()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 299
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Removes all elements from the @'System.Collections.Generic.List`1'.
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear
+- uid: System.Collections.Generic.List`1.Contains(`0)
+  id: Contains(`0)
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: Contains(T)
+  fullName: System.Collections.Generic.List<T>.Contains(T)
+  fullName.vb: System.Collections.Generic.List(Of T).Contains(T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 312
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Determines whether an element is in the @'System.Collections.Generic.List`1'.
+  syntax:
+    content: public bool Contains(T item)
+    content.vb: Public Function Contains(item As T) As Boolean
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The object to locate in the @'System.Collections.Generic.List`1'. The value can be null for reference types.
+    return:
+      type: System.Boolean
+      description: true if *item* is found in the @'System.Collections.Generic.List`1'; otherwise, false.
+- uid: System.Collections.Generic.List`1.System#Collections#IList#Contains(System.Object)
+  id: System#Collections#IList#Contains(System.Object)
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: IList.Contains(Object)
+  name.vb: System.Collections.IList.Contains(Object)
+  fullName: System.Collections.Generic.List<T>.System.Collections.IList.Contains(System.Object)
+  fullName.vb: System.Collections.Generic.List(Of T).System.Collections.IList.Contains(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 328
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Determines whether the @'System.Collections.IList' contains a specific value.
+  syntax:
+    content: bool IList.Contains(object item)
+    content.vb: Function System.Collections.IList.Contains(item As Object) As Boolean Implements IList.Contains
+    parameters:
+    - id: item
+      type: System.Object
+      description: The @'System.Object' to locate in the @'System.Collections.IList'.
+    return:
+      type: System.Boolean
+      description: true if *item* is found in the @'System.Collections.IList'; otherwise, false.
+- uid: System.Collections.Generic.List`1.ConvertAll``1(System.Converter{`0,``0})
+  id: ConvertAll``1(System.Converter{`0,``0})
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: ConvertAll<TOutput>(Converter<T, TOutput>)
+  name.vb: ConvertAll(Of TOutput)(Converter(Of T, TOutput))
+  fullName: System.Collections.Generic.List<T>.ConvertAll<TOutput>(System.Converter<T, TOutput>)
+  fullName.vb: System.Collections.Generic.List(Of T).ConvertAll(Of TOutput)(System.Converter(Of T, TOutput))
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 336
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Converts the elements in the current @'System.Collections.Generic.List`1' to another type, and returns a list containing the converted elements.
+  syntax:
+    content: public List<TOutput> ConvertAll<TOutput>(Converter<T, TOutput> converter)
+    content.vb: Public Function ConvertAll(Of TOutput)(converter As Converter(Of T, TOutput)) As List(Of TOutput)
+    parameters:
+    - id: converter
+      type: System.Converter{{T},{TOutput}}
+      description: A @'System.Converter`2' delegate that converts each element from one type to another type.
+    typeParameters:
+    - id: TOutput
+    return:
+      type: System.Collections.Generic.List{{TOutput}}
+      description: A @'System.Collections.Generic.List`1' of the target type containing the converted elements from the current @'System.Collections.Generic.List`1'.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*converter* is null.'
+- uid: System.Collections.Generic.List`1.CopyTo(`0[])
+  id: CopyTo(`0[])
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: CopyTo(T[])
+  name.vb: CopyTo(T())
+  fullName: System.Collections.Generic.List<T>.CopyTo(T[])
+  fullName.vb: System.Collections.Generic.List(Of T).CopyTo(T())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 354
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Copies the entire @'System.Collections.Generic.List`1' to a compatible one-dimensional array, starting at the beginning of the target array.
+  syntax:
+    content: public void CopyTo(T[] array)
+    content.vb: Public Sub CopyTo(array As T())
+    parameters:
+    - id: array
+      type: '{T}[]'
+      description: The one-dimensional @'System.Array' that is the destination of the elements copied from @'System.Collections.Generic.List`1'. The @'System.Array' must have zero-based indexing.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentException
+    description: The number of elements in the source @'System.Collections.Generic.List`1' is greater than the number of elements that the destination *array* can contain.
+- uid: System.Collections.Generic.List`1.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  id: System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: ICollection.CopyTo(Array, Int32)
+  name.vb: System.Collections.ICollection.CopyTo(Array, Int32)
+  fullName: System.Collections.Generic.List<T>.System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  fullName.vb: System.Collections.Generic.List(Of T).System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 361
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Copies the elements of the @'System.Collections.ICollection' to an @'System.Array', starting at a particular @'System.Array' index.
+  syntax:
+    content: void ICollection.CopyTo(Array array, int arrayIndex)
+    content.vb: Sub System.Collections.ICollection.CopyTo(array As Array, arrayIndex As Integer) Implements ICollection.CopyTo
+    parameters:
+    - id: array
+      type: System.Array
+      description: The one-dimensional @'System.Array' that is the destination of the elements copied from @'System.Collections.ICollection'. The @'System.Array' must have zero-based indexing.
+    - id: arrayIndex
+      type: System.Int32
+      description: The zero-based index in *array* at which copying begins.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*arrayIndex* is less than 0.'
+  - type: System.ArgumentException
+    description: '*array* is multidimensional.-or-*array* does not have zero-based indexing.-or-The number of elements in the source @''System.Collections.ICollection'' is greater than the available space from *arrayIndex* to the end of the destination *array*.-or-The type of the source @''System.Collections.ICollection'' cannot be cast automatically to the type of the destination *array*.'
+- uid: System.Collections.Generic.List`1.CopyTo(System.Int32,`0[],System.Int32,System.Int32)
+  id: CopyTo(System.Int32,`0[],System.Int32,System.Int32)
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: CopyTo(Int32, T[], Int32, Int32)
+  name.vb: CopyTo(Int32, T(), Int32, Int32)
+  fullName: System.Collections.Generic.List<T>.CopyTo(System.Int32, T[], System.Int32, System.Int32)
+  fullName.vb: System.Collections.Generic.List(Of T).CopyTo(System.Int32, T(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 380
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Copies a range of elements from the @'System.Collections.Generic.List`1' to a compatible one-dimensional array, starting at the specified index of the target array.
+  syntax:
+    content: public void CopyTo(int index, T[] array, int arrayIndex, int count)
+    content.vb: Public Sub CopyTo(index As Integer, array As T(), arrayIndex As Integer, count As Integer)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index in the source @'System.Collections.Generic.List`1' at which copying begins.
+    - id: array
+      type: '{T}[]'
+      description: The one-dimensional @'System.Array' that is the destination of the elements copied from @'System.Collections.Generic.List`1'. The @'System.Array' must have zero-based indexing.
+    - id: arrayIndex
+      type: System.Int32
+      description: The zero-based index in *array* at which copying begins.
+    - id: count
+      type: System.Int32
+      description: The number of elements to copy.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than 0.-or-*arrayIndex* is less than 0.-or-*count* is less than 0.'
+  - type: System.ArgumentException
+    description: '*index* is equal to or greater than the @''System.Collections.Generic.List`1.Count'' of the source @''System.Collections.Generic.List`1''.-or-The number of elements from *index* to the end of the source @''System.Collections.Generic.List`1'' is greater than the available space from *arrayIndex* to the end of the destination *array*.'
+- uid: System.Collections.Generic.List`1.CopyTo(`0[],System.Int32)
+  id: CopyTo(`0[],System.Int32)
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: CopyTo(T[], Int32)
+  name.vb: CopyTo(T(), Int32)
+  fullName: System.Collections.Generic.List<T>.CopyTo(T[], System.Int32)
+  fullName.vb: System.Collections.Generic.List(Of T).CopyTo(T(), System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 390
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Copies the entire @'System.Collections.Generic.List`1' to a compatible one-dimensional array, starting at the specified index of the target array.
+  syntax:
+    content: public void CopyTo(T[] array, int arrayIndex)
+    content.vb: Public Sub CopyTo(array As T(), arrayIndex As Integer)
+    parameters:
+    - id: array
+      type: '{T}[]'
+      description: The one-dimensional @'System.Array' that is the destination of the elements copied from @'System.Collections.Generic.List`1'. The @'System.Array' must have zero-based indexing.
+    - id: arrayIndex
+      type: System.Int32
+      description: The zero-based index in *array* at which copying begins.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*arrayIndex* is less than 0.'
+  - type: System.ArgumentException
+    description: The number of elements in the source @'System.Collections.Generic.List`1' is greater than the available space from *arrayIndex* to the end of the destination *array*.
+- uid: System.Collections.Generic.List`1.Exists(System.Predicate{`0})
+  id: Exists(System.Predicate{`0})
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: Exists(Predicate<T>)
+  name.vb: Exists(Predicate(Of T))
+  fullName: System.Collections.Generic.List<T>.Exists(System.Predicate<T>)
+  fullName.vb: System.Collections.Generic.List(Of T).Exists(System.Predicate(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 410
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Determines whether the @'System.Collections.Generic.List`1' contains elements that match the conditions defined by the specified predicate.
+  syntax:
+    content: public bool Exists(Predicate<T> match)
+    content.vb: Public Function Exists(match As Predicate(Of T)) As Boolean
+    parameters:
+    - id: match
+      type: System.Predicate{{T}}
+      description: The @'System.Predicate`1' delegate that defines the conditions of the elements to search for.
+    return:
+      type: System.Boolean
+      description: true if the @'System.Collections.Generic.List`1' contains one or more elements that match the conditions defined by the specified predicate; otherwise, false.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*match* is null.'
+- uid: System.Collections.Generic.List`1.Find(System.Predicate{`0})
+  id: Find(System.Predicate{`0})
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: Find(Predicate<T>)
+  name.vb: Find(Predicate(Of T))
+  fullName: System.Collections.Generic.List<T>.Find(System.Predicate<T>)
+  fullName.vb: System.Collections.Generic.List(Of T).Find(System.Predicate(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 414
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Searches for an element that matches the conditions defined by the specified predicate, and returns the first occurrence within the entire @'System.Collections.Generic.List`1'.
+  syntax:
+    content: public T Find(Predicate<T> match)
+    content.vb: Public Function Find(match As Predicate(Of T)) As T
+    parameters:
+    - id: match
+      type: System.Predicate{{T}}
+      description: The @'System.Predicate`1' delegate that defines the conditions of the element to search for.
+    return:
+      type: '{T}'
+      description: The first element that matches the conditions defined by the specified predicate, if found; otherwise, the default value for type *T*.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*match* is null.'
+- uid: System.Collections.Generic.List`1.FindAll(System.Predicate{`0})
+  id: FindAll(System.Predicate{`0})
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: FindAll(Predicate<T>)
+  name.vb: FindAll(Predicate(Of T))
+  fullName: System.Collections.Generic.List<T>.FindAll(System.Predicate<T>)
+  fullName.vb: System.Collections.Generic.List(Of T).FindAll(System.Predicate(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 428
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Retrieves all the elements that match the conditions defined by the specified predicate.
+  syntax:
+    content: public List<T> FindAll(Predicate<T> match)
+    content.vb: Public Function FindAll(match As Predicate(Of T)) As List(Of T)
+    parameters:
+    - id: match
+      type: System.Predicate{{T}}
+      description: The @'System.Predicate`1' delegate that defines the conditions of the elements to search for.
+    return:
+      type: System.Collections.Generic.List`1
+      description: A @'System.Collections.Generic.List`1' containing all the elements that match the conditions defined by the specified predicate, if found; otherwise, an empty @'System.Collections.Generic.List`1'.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*match* is null.'
+- uid: System.Collections.Generic.List`1.FindIndex(System.Predicate{`0})
+  id: FindIndex(System.Predicate{`0})
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: FindIndex(Predicate<T>)
+  name.vb: FindIndex(Predicate(Of T))
+  fullName: System.Collections.Generic.List<T>.FindIndex(System.Predicate<T>)
+  fullName.vb: System.Collections.Generic.List(Of T).FindIndex(System.Predicate(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 443
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Searches for an element that matches the conditions defined by the specified predicate, and returns the zero-based index of the first occurrence within the entire @'System.Collections.Generic.List`1'.
+  syntax:
+    content: public int FindIndex(Predicate<T> match)
+    content.vb: Public Function FindIndex(match As Predicate(Of T)) As Integer
+    parameters:
+    - id: match
+      type: System.Predicate{{T}}
+      description: The @'System.Predicate`1' delegate that defines the conditions of the element to search for.
+    return:
+      type: System.Int32
+      description: "The zero-based index of the first occurrence of an element that matches the conditions defined by *match*, if found; otherwise, –1."
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*match* is null.'
+- uid: System.Collections.Generic.List`1.FindIndex(System.Int32,System.Predicate{`0})
+  id: FindIndex(System.Int32,System.Predicate{`0})
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: FindIndex(Int32, Predicate<T>)
+  name.vb: FindIndex(Int32, Predicate(Of T))
+  fullName: System.Collections.Generic.List<T>.FindIndex(System.Int32, System.Predicate<T>)
+  fullName.vb: System.Collections.Generic.List(Of T).FindIndex(System.Int32, System.Predicate(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 449
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Searches for an element that matches the conditions defined by the specified predicate, and returns the zero-based index of the first occurrence within the range of elements in the @'System.Collections.Generic.List`1' that extends from the specified index to the last element.
+  syntax:
+    content: public int FindIndex(int startIndex, Predicate<T> match)
+    content.vb: Public Function FindIndex(startIndex As Integer, match As Predicate(Of T)) As Integer
+    parameters:
+    - id: startIndex
+      type: System.Int32
+      description: The zero-based starting index of the search.
+    - id: match
+      type: System.Predicate{{T}}
+      description: The @'System.Predicate`1' delegate that defines the conditions of the element to search for.
+    return:
+      type: System.Int32
+      description: "The zero-based index of the first occurrence of an element that matches the conditions defined by *match*, if found; otherwise, –1."
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*match* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*startIndex* is outside the range of valid indexes for the @''System.Collections.Generic.List`1''.'
+- uid: System.Collections.Generic.List`1.FindIndex(System.Int32,System.Int32,System.Predicate{`0})
+  id: FindIndex(System.Int32,System.Int32,System.Predicate{`0})
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: FindIndex(Int32, Int32, Predicate<T>)
+  name.vb: FindIndex(Int32, Int32, Predicate(Of T))
+  fullName: System.Collections.Generic.List<T>.FindIndex(System.Int32, System.Int32, System.Predicate<T>)
+  fullName.vb: System.Collections.Generic.List(Of T).FindIndex(System.Int32, System.Int32, System.Predicate(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 455
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Searches for an element that matches the conditions defined by the specified predicate, and returns the zero-based index of the first occurrence within the range of elements in the @'System.Collections.Generic.List`1' that starts at the specified index and contains the specified number of elements.
+  syntax:
+    content: public int FindIndex(int startIndex, int count, Predicate<T> match)
+    content.vb: Public Function FindIndex(startIndex As Integer, count As Integer, match As Predicate(Of T)) As Integer
+    parameters:
+    - id: startIndex
+      type: System.Int32
+      description: The zero-based starting index of the search.
+    - id: count
+      type: System.Int32
+      description: The number of elements in the section to search.
+    - id: match
+      type: System.Predicate{{T}}
+      description: The @'System.Predicate`1' delegate that defines the conditions of the element to search for.
+    return:
+      type: System.Int32
+      description: "The zero-based index of the first occurrence of an element that matches the conditions defined by *match*, if found; otherwise, –1."
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*match* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*startIndex* is outside the range of valid indexes for the @''System.Collections.Generic.List`1''.-or-*count* is less than 0.-or-*startIndex* and *count* do not specify a valid section in the @''System.Collections.Generic.List`1''.'
+- uid: System.Collections.Generic.List`1.FindLast(System.Predicate{`0})
+  id: FindLast(System.Predicate{`0})
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: FindLast(Predicate<T>)
+  name.vb: FindLast(Predicate(Of T))
+  fullName: System.Collections.Generic.List<T>.FindLast(System.Predicate<T>)
+  fullName.vb: System.Collections.Generic.List(Of T).FindLast(System.Predicate(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 478
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Searches for an element that matches the conditions defined by the specified predicate, and returns the last occurrence within the entire @'System.Collections.Generic.List`1'.
+  syntax:
+    content: public T FindLast(Predicate<T> match)
+    content.vb: Public Function FindLast(match As Predicate(Of T)) As T
+    parameters:
+    - id: match
+      type: System.Predicate{{T}}
+      description: The @'System.Predicate`1' delegate that defines the conditions of the element to search for.
+    return:
+      type: '{T}'
+      description: The last element that matches the conditions defined by the specified predicate, if found; otherwise, the default value for type *T*.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*match* is null.'
+- uid: System.Collections.Generic.List`1.FindLastIndex(System.Predicate{`0})
+  id: FindLastIndex(System.Predicate{`0})
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: FindLastIndex(Predicate<T>)
+  name.vb: FindLastIndex(Predicate(Of T))
+  fullName: System.Collections.Generic.List<T>.FindLastIndex(System.Predicate<T>)
+  fullName.vb: System.Collections.Generic.List(Of T).FindLastIndex(System.Predicate(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 492
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Searches for an element that matches the conditions defined by the specified predicate, and returns the zero-based index of the last occurrence within the entire @'System.Collections.Generic.List`1'.
+  syntax:
+    content: public int FindLastIndex(Predicate<T> match)
+    content.vb: Public Function FindLastIndex(match As Predicate(Of T)) As Integer
+    parameters:
+    - id: match
+      type: System.Predicate{{T}}
+      description: The @'System.Predicate`1' delegate that defines the conditions of the element to search for.
+    return:
+      type: System.Int32
+      description: "The zero-based index of the last occurrence of an element that matches the conditions defined by *match*, if found; otherwise, –1."
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*match* is null.'
+- uid: System.Collections.Generic.List`1.FindLastIndex(System.Int32,System.Predicate{`0})
+  id: FindLastIndex(System.Int32,System.Predicate{`0})
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: FindLastIndex(Int32, Predicate<T>)
+  name.vb: FindLastIndex(Int32, Predicate(Of T))
+  fullName: System.Collections.Generic.List<T>.FindLastIndex(System.Int32, System.Predicate<T>)
+  fullName.vb: System.Collections.Generic.List(Of T).FindLastIndex(System.Int32, System.Predicate(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 498
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Searches for an element that matches the conditions defined by the specified predicate, and returns the zero-based index of the last occurrence within the range of elements in the @'System.Collections.Generic.List`1' that extends from the first element to the specified index.
+  syntax:
+    content: public int FindLastIndex(int startIndex, Predicate<T> match)
+    content.vb: Public Function FindLastIndex(startIndex As Integer, match As Predicate(Of T)) As Integer
+    parameters:
+    - id: startIndex
+      type: System.Int32
+      description: The zero-based starting index of the backward search.
+    - id: match
+      type: System.Predicate{{T}}
+      description: The @'System.Predicate`1' delegate that defines the conditions of the element to search for.
+    return:
+      type: System.Int32
+      description: "The zero-based index of the last occurrence of an element that matches the conditions defined by *match*, if found; otherwise, –1."
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*match* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*startIndex* is outside the range of valid indexes for the @''System.Collections.Generic.List`1''.'
+- uid: System.Collections.Generic.List`1.FindLastIndex(System.Int32,System.Int32,System.Predicate{`0})
+  id: FindLastIndex(System.Int32,System.Int32,System.Predicate{`0})
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: FindLastIndex(Int32, Int32, Predicate<T>)
+  name.vb: FindLastIndex(Int32, Int32, Predicate(Of T))
+  fullName: System.Collections.Generic.List<T>.FindLastIndex(System.Int32, System.Int32, System.Predicate<T>)
+  fullName.vb: System.Collections.Generic.List(Of T).FindLastIndex(System.Int32, System.Int32, System.Predicate(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 504
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Searches for an element that matches the conditions defined by the specified predicate, and returns the zero-based index of the last occurrence within the range of elements in the @'System.Collections.Generic.List`1' that contains the specified number of elements and ends at the specified index.
+  syntax:
+    content: public int FindLastIndex(int startIndex, int count, Predicate<T> match)
+    content.vb: Public Function FindLastIndex(startIndex As Integer, count As Integer, match As Predicate(Of T)) As Integer
+    parameters:
+    - id: startIndex
+      type: System.Int32
+      description: The zero-based starting index of the backward search.
+    - id: count
+      type: System.Int32
+      description: The number of elements in the section to search.
+    - id: match
+      type: System.Predicate{{T}}
+      description: The @'System.Predicate`1' delegate that defines the conditions of the element to search for.
+    return:
+      type: System.Int32
+      description: "The zero-based index of the last occurrence of an element that matches the conditions defined by *match*, if found; otherwise, –1."
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*match* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*startIndex* is outside the range of valid indexes for the @''System.Collections.Generic.List`1''.-or-*count* is less than 0.-or-*startIndex* and *count* do not specify a valid section in the @''System.Collections.Generic.List`1''.'
+- uid: System.Collections.Generic.List`1.ForEach(System.Action{`0})
+  id: ForEach(System.Action{`0})
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: ForEach(Action<T>)
+  name.vb: ForEach(Action(Of T))
+  fullName: System.Collections.Generic.List<T>.ForEach(System.Action<T>)
+  fullName.vb: System.Collections.Generic.List(Of T).ForEach(System.Action(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 539
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Performs the specified action on each element of the @'System.Collections.Generic.List`1'.
+  syntax:
+    content: public void ForEach(Action<T> action)
+    content.vb: Public Sub ForEach(action As Action(Of T))
+    parameters:
+    - id: action
+      type: System.Action{{T}}
+      description: The @'System.Action`1' delegate to perform on each element of the @'System.Collections.Generic.List`1'.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*action* is null.'
+  - type: System.InvalidOperationException
+    description: An element in the collection has been modified. CautionThis exception is thrown starting with the .NET Framework 4.5.
+- uid: System.Collections.Generic.List`1.GetEnumerator
+  id: GetEnumerator
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: GetEnumerator()
+  fullName: System.Collections.Generic.List<T>.GetEnumerator()
+  fullName.vb: System.Collections.Generic.List(Of T).GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 563
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Returns an enumerator that iterates through the @'System.Collections.Generic.List`1'.
+  syntax:
+    content: public List<T>.Enumerator GetEnumerator()
+    content.vb: Public Function GetEnumerator As List(Of T).Enumerator
+    return:
+      type: System.Collections.Generic.List`1.Enumerator
+      description: A @'System.Collections.Generic.List`1.Enumerator' for the @'System.Collections.Generic.List`1'.
+- uid: System.Collections.Generic.List`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator
+  id: System#Collections#Generic#IEnumerable{T}#GetEnumerator
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: IEnumerable<T>.GetEnumerator()
+  name.vb: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.List<T>.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  fullName.vb: System.Collections.Generic.List(Of T).System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 568
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Returns an enumerator that iterates through a collection.
+  syntax:
+    content: IEnumerator<T> IEnumerable<T>.GetEnumerator()
+    content.vb: Function System.Collections.Generic.IEnumerable<T>.GetEnumerator As IEnumerator(Of T) Implements IEnumerable(Of T).GetEnumerator
+    return:
+      type: System.Collections.Generic.IEnumerator{{T}}
+      description: An @'System.Collections.Generic.IEnumerator`1' that can be used to iterate through the collection.
+- uid: System.Collections.Generic.List`1.System#Collections#IEnumerable#GetEnumerator
+  id: System#Collections#IEnumerable#GetEnumerator
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: System.Collections.Generic.List<T>.System.Collections.IEnumerable.GetEnumerator()
+  fullName.vb: System.Collections.Generic.List(Of T).System.Collections.IEnumerable.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 572
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Returns an enumerator that iterates through a collection.
+  syntax:
+    content: IEnumerator IEnumerable.GetEnumerator()
+    content.vb: Function System.Collections.IEnumerable.GetEnumerator As IEnumerator Implements IEnumerable.GetEnumerator
+    return:
+      type: System.Collections.IEnumerator
+      description: An @'System.Collections.IEnumerator' that can be used to iterate through the collection.
+- uid: System.Collections.Generic.List`1.GetRange(System.Int32,System.Int32)
+  id: GetRange(System.Int32,System.Int32)
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: GetRange(Int32, Int32)
+  fullName: System.Collections.Generic.List<T>.GetRange(System.Int32, System.Int32)
+  fullName.vb: System.Collections.Generic.List(Of T).GetRange(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 576
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Creates a shallow copy of a range of elements in the source @'System.Collections.Generic.List`1'.
+  syntax:
+    content: public List<T> GetRange(int index, int count)
+    content.vb: Public Function GetRange(index As Integer, count As Integer) As List(Of T)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based @'System.Collections.Generic.List`1' index at which the range starts.
+    - id: count
+      type: System.Int32
+      description: The number of elements in the range.
+    return:
+      type: System.Collections.Generic.List`1
+      description: A shallow copy of a range of elements in the source @'System.Collections.Generic.List`1'.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than 0.-or-*count* is less than 0.'
+  - type: System.ArgumentException
+    description: '*index* and *count* do not denote a valid range of elements in the @''System.Collections.Generic.List`1''.'
+- uid: System.Collections.Generic.List`1.IndexOf(`0)
+  id: IndexOf(`0)
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: IndexOf(T)
+  fullName: System.Collections.Generic.List<T>.IndexOf(T)
+  fullName.vb: System.Collections.Generic.List(Of T).IndexOf(T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 606
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Searches for the specified object and returns the zero-based index of the first occurrence within the entire @'System.Collections.Generic.List`1'.
+  syntax:
+    content: public int IndexOf(T item)
+    content.vb: Public Function IndexOf(item As T) As Integer
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The object to locate in the @'System.Collections.Generic.List`1'. The value can be null for reference types.
+    return:
+      type: System.Int32
+      description: "The zero-based index of the first occurrence of *item* within the entire @'System.Collections.Generic.List`1', if found; otherwise, –1."
+- uid: System.Collections.Generic.List`1.System#Collections#IList#IndexOf(System.Object)
+  id: System#Collections#IList#IndexOf(System.Object)
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: IList.IndexOf(Object)
+  name.vb: System.Collections.IList.IndexOf(Object)
+  fullName: System.Collections.Generic.List<T>.System.Collections.IList.IndexOf(System.Object)
+  fullName.vb: System.Collections.Generic.List(Of T).System.Collections.IList.IndexOf(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 612
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Determines the index of a specific item in the @'System.Collections.IList'.
+  syntax:
+    content: int IList.IndexOf(object item)
+    content.vb: Function System.Collections.IList.IndexOf(item As Object) As Integer Implements IList.IndexOf
+    parameters:
+    - id: item
+      type: System.Object
+      description: The object to locate in the @'System.Collections.IList'.
+    return:
+      type: System.Int32
+      description: "The index of *item* if found in the list; otherwise, –1."
+  exceptions:
+  - type: System.ArgumentException
+    description: '*item* is of a type that is not assignable to the @''System.Collections.IList''.'
+- uid: System.Collections.Generic.List`1.IndexOf(`0,System.Int32)
+  id: IndexOf(`0,System.Int32)
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: IndexOf(T, Int32)
+  fullName: System.Collections.Generic.List<T>.IndexOf(T, System.Int32)
+  fullName.vb: System.Collections.Generic.List(Of T).IndexOf(T, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 629
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Searches for the specified object and returns the zero-based index of the first occurrence within the range of elements in the @'System.Collections.Generic.List`1' that extends from the specified index to the last element.
+  syntax:
+    content: public int IndexOf(T item, int index)
+    content.vb: Public Function IndexOf(item As T, index As Integer) As Integer
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The object to locate in the @'System.Collections.Generic.List`1'. The value can be null for reference types.
+    - id: index
+      type: System.Int32
+      description: The zero-based starting index of the search. 0 (zero) is valid in an empty list.
+    return:
+      type: System.Int32
+      description: "The zero-based index of the first occurrence of *item* within the range of elements in the @'System.Collections.Generic.List`1' that extends from *index* to the last element, if found; otherwise, –1."
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is outside the range of valid indexes for the @''System.Collections.Generic.List`1''.'
+- uid: System.Collections.Generic.List`1.IndexOf(`0,System.Int32,System.Int32)
+  id: IndexOf(`0,System.Int32,System.Int32)
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: IndexOf(T, Int32, Int32)
+  fullName: System.Collections.Generic.List<T>.IndexOf(T, System.Int32, System.Int32)
+  fullName.vb: System.Collections.Generic.List(Of T).IndexOf(T, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 647
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Searches for the specified object and returns the zero-based index of the first occurrence within the range of elements in the @'System.Collections.Generic.List`1' that starts at the specified index and contains the specified number of elements.
+  syntax:
+    content: public int IndexOf(T item, int index, int count)
+    content.vb: Public Function IndexOf(item As T, index As Integer, count As Integer) As Integer
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The object to locate in the @'System.Collections.Generic.List`1'. The value can be null for reference types.
+    - id: index
+      type: System.Int32
+      description: The zero-based starting index of the search. 0 (zero) is valid in an empty list.
+    - id: count
+      type: System.Int32
+      description: The number of elements in the section to search.
+    return:
+      type: System.Int32
+      description: "The zero-based index of the first occurrence of *item* within the range of elements in the @'System.Collections.Generic.List`1' that starts at *index* and contains *count* number of elements, if found; otherwise, –1."
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is outside the range of valid indexes for the @''System.Collections.Generic.List`1''.-or-*count* is less than 0.-or-*index* and *count* do not specify a valid section in the @''System.Collections.Generic.List`1''.'
+- uid: System.Collections.Generic.List`1.Insert(System.Int32,`0)
+  id: Insert(System.Int32,`0)
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: Insert(Int32, T)
+  fullName: System.Collections.Generic.List<T>.Insert(System.Int32, T)
+  fullName.vb: System.Collections.Generic.List(Of T).Insert(System.Int32, T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 663
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Inserts an element into the @'System.Collections.Generic.List`1' at the specified index.
+  syntax:
+    content: public void Insert(int index, T item)
+    content.vb: Public Sub Insert(index As Integer, item As T)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index at which *item* should be inserted.
+    - id: item
+      type: '{T}'
+      description: The object to insert. The value can be null for reference types.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than 0.-or-*index* is greater than @''System.Collections.Generic.List`1.Count''.'
+- uid: System.Collections.Generic.List`1.System#Collections#IList#Insert(System.Int32,System.Object)
+  id: System#Collections#IList#Insert(System.Int32,System.Object)
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: IList.Insert(Int32, Object)
+  name.vb: System.Collections.IList.Insert(Int32, Object)
+  fullName: System.Collections.Generic.List<T>.System.Collections.IList.Insert(System.Int32, System.Object)
+  fullName.vb: System.Collections.Generic.List(Of T).System.Collections.IList.Insert(System.Int32, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 678
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Inserts an item to the @'System.Collections.IList' at the specified index.
+  syntax:
+    content: void IList.Insert(int index, object item)
+    content.vb: Sub System.Collections.IList.Insert(index As Integer, item As Object) Implements IList.Insert
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index at which *item* should be inserted.
+    - id: item
+      type: System.Object
+      description: The object to insert into the @'System.Collections.IList'.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is not a valid index in the @''System.Collections.IList''.'
+  - type: System.ArgumentException
+    description: '*item* is of a type that is not assignable to the @''System.Collections.IList''.'
+- uid: System.Collections.Generic.List`1.InsertRange(System.Int32,System.Collections.Generic.IEnumerable{`0})
+  id: InsertRange(System.Int32,System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: InsertRange(Int32, IEnumerable<T>)
+  name.vb: InsertRange(Int32, IEnumerable(Of T))
+  fullName: System.Collections.Generic.List<T>.InsertRange(System.Int32, System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Generic.List(Of T).InsertRange(System.Int32, System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 695
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Inserts the elements of a collection into the @'System.Collections.Generic.List`1' at the specified index.
+  syntax:
+    content: public void InsertRange(int index, IEnumerable<T> collection)
+    content.vb: Public Sub InsertRange(index As Integer, collection As IEnumerable(Of T))
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index at which the new elements should be inserted.
+    - id: collection
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection whose elements should be inserted into the @'System.Collections.Generic.List`1'. The collection itself cannot be null, but it can contain elements that are null, if type *T* is a reference type.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*collection* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than 0.-or-*index* is greater than @''System.Collections.Generic.List`1.Count''.'
+- uid: System.Collections.Generic.List`1.LastIndexOf(`0)
+  id: LastIndexOf(`0)
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: LastIndexOf(T)
+  fullName: System.Collections.Generic.List<T>.LastIndexOf(T)
+  fullName.vb: System.Collections.Generic.List(Of T).LastIndexOf(T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 747
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Searches for the specified object and returns the zero-based index of the last occurrence within the entire @'System.Collections.Generic.List`1'.
+  syntax:
+    content: public int LastIndexOf(T item)
+    content.vb: Public Function LastIndexOf(item As T) As Integer
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The object to locate in the @'System.Collections.Generic.List`1'. The value can be null for reference types.
+    return:
+      type: System.Int32
+      description: "The zero-based index of the last occurrence of *item* within the entire the @'System.Collections.Generic.List`1', if found; otherwise, –1."
+- uid: System.Collections.Generic.List`1.LastIndexOf(`0,System.Int32)
+  id: LastIndexOf(`0,System.Int32)
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: LastIndexOf(T, Int32)
+  fullName: System.Collections.Generic.List<T>.LastIndexOf(T, System.Int32)
+  fullName.vb: System.Collections.Generic.List(Of T).LastIndexOf(T, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 768
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Searches for the specified object and returns the zero-based index of the last occurrence within the range of elements in the @'System.Collections.Generic.List`1' that extends from the first element to the specified index.
+  syntax:
+    content: public int LastIndexOf(T item, int index)
+    content.vb: Public Function LastIndexOf(item As T, index As Integer) As Integer
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The object to locate in the @'System.Collections.Generic.List`1'. The value can be null for reference types.
+    - id: index
+      type: System.Int32
+      description: The zero-based starting index of the backward search.
+    return:
+      type: System.Int32
+      description: "The zero-based index of the last occurrence of *item* within the range of elements in the @'System.Collections.Generic.List`1' that extends from the first element to *index*, if found; otherwise, –1."
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is outside the range of valid indexes for the @''System.Collections.Generic.List`1''.'
+- uid: System.Collections.Generic.List`1.LastIndexOf(`0,System.Int32,System.Int32)
+  id: LastIndexOf(`0,System.Int32,System.Int32)
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: LastIndexOf(T, Int32, Int32)
+  fullName: System.Collections.Generic.List<T>.LastIndexOf(T, System.Int32, System.Int32)
+  fullName.vb: System.Collections.Generic.List(Of T).LastIndexOf(T, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 787
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Searches for the specified object and returns the zero-based index of the last occurrence within the range of elements in the @'System.Collections.Generic.List`1' that contains the specified number of elements and ends at the specified index.
+  syntax:
+    content: public int LastIndexOf(T item, int index, int count)
+    content.vb: Public Function LastIndexOf(item As T, index As Integer, count As Integer) As Integer
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The object to locate in the @'System.Collections.Generic.List`1'. The value can be null for reference types.
+    - id: index
+      type: System.Int32
+      description: The zero-based starting index of the backward search.
+    - id: count
+      type: System.Int32
+      description: The number of elements in the section to search.
+    return:
+      type: System.Int32
+      description: "The zero-based index of the last occurrence of *item* within the range of elements in the @'System.Collections.Generic.List`1' that contains *count* number of elements and ends at *index*, if found; otherwise, –1."
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is outside the range of valid indexes for the @''System.Collections.Generic.List`1''.-or-*count* is less than 0.-or-*index* and *count* do not specify a valid section in the @''System.Collections.Generic.List`1''.'
+- uid: System.Collections.Generic.List`1.Remove(`0)
+  id: Remove(`0)
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: Remove(T)
+  fullName: System.Collections.Generic.List<T>.Remove(T)
+  fullName.vb: System.Collections.Generic.List(Of T).Remove(T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 817
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Removes the first occurrence of a specific object from the @'System.Collections.Generic.List`1'.
+  syntax:
+    content: public bool Remove(T item)
+    content.vb: Public Function Remove(item As T) As Boolean
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The object to remove from the @'System.Collections.Generic.List`1'. The value can be null for reference types.
+    return:
+      type: System.Boolean
+      description: true if *item* is successfully removed; otherwise, false.  This method also returns false if *item* was not found in the @'System.Collections.Generic.List`1'.
+- uid: System.Collections.Generic.List`1.System#Collections#IList#Remove(System.Object)
+  id: System#Collections#IList#Remove(System.Object)
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: IList.Remove(Object)
+  name.vb: System.Collections.IList.Remove(Object)
+  fullName: System.Collections.Generic.List<T>.System.Collections.IList.Remove(System.Object)
+  fullName.vb: System.Collections.Generic.List(Of T).System.Collections.IList.Remove(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 827
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Removes the first occurrence of a specific object from the @'System.Collections.IList'.
+  syntax:
+    content: void IList.Remove(object item)
+    content.vb: Sub System.Collections.IList.Remove(item As Object) Implements IList.Remove
+    parameters:
+    - id: item
+      type: System.Object
+      description: The object to remove from the @'System.Collections.IList'.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*item* is of a type that is not assignable to the @''System.Collections.IList''.'
+- uid: System.Collections.Generic.List`1.RemoveAll(System.Predicate{`0})
+  id: RemoveAll(System.Predicate{`0})
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: RemoveAll(Predicate<T>)
+  name.vb: RemoveAll(Predicate(Of T))
+  fullName: System.Collections.Generic.List<T>.RemoveAll(System.Predicate<T>)
+  fullName.vb: System.Collections.Generic.List(Of T).RemoveAll(System.Predicate(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 836
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Removes all the elements that match the conditions defined by the specified predicate.
+  syntax:
+    content: public int RemoveAll(Predicate<T> match)
+    content.vb: Public Function RemoveAll(match As Predicate(Of T)) As Integer
+    parameters:
+    - id: match
+      type: System.Predicate{{T}}
+      description: The @'System.Predicate`1' delegate that defines the conditions of the elements to remove.
+    return:
+      type: System.Int32
+      description: The number of elements removed from the @'System.Collections.Generic.List`1' .
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*match* is null.'
+- uid: System.Collections.Generic.List`1.RemoveAt(System.Int32)
+  id: RemoveAt(System.Int32)
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: RemoveAt(Int32)
+  fullName: System.Collections.Generic.List<T>.RemoveAt(System.Int32)
+  fullName.vb: System.Collections.Generic.List(Of T).RemoveAt(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 871
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Removes the element at the specified index of the @'System.Collections.Generic.List`1'.
+  syntax:
+    content: public void RemoveAt(int index)
+    content.vb: Public Sub RemoveAt(index As Integer)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the element to remove.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than 0.-or-*index* is equal to or greater than @''System.Collections.Generic.List`1.Count''.'
+- uid: System.Collections.Generic.List`1.RemoveRange(System.Int32,System.Int32)
+  id: RemoveRange(System.Int32,System.Int32)
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: RemoveRange(Int32, Int32)
+  fullName: System.Collections.Generic.List<T>.RemoveRange(System.Int32, System.Int32)
+  fullName.vb: System.Collections.Generic.List(Of T).RemoveRange(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 886
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Removes a range of elements from the @'System.Collections.Generic.List`1'.
+  syntax:
+    content: public void RemoveRange(int index, int count)
+    content.vb: Public Sub RemoveRange(index As Integer, count As Integer)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based starting index of the range of elements to remove.
+    - id: count
+      type: System.Int32
+      description: The number of elements to remove.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than 0.-or-*count* is less than 0.'
+  - type: System.ArgumentException
+    description: '*index* and *count* do not denote a valid range of elements in the @''System.Collections.Generic.List`1''.'
+- uid: System.Collections.Generic.List`1.Reverse
+  id: Reverse
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: Reverse()
+  fullName: System.Collections.Generic.List<T>.Reverse()
+  fullName.vb: System.Collections.Generic.List(Of T).Reverse()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 911
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Reverses the order of the elements in the entire @'System.Collections.Generic.List`1'.
+  syntax:
+    content: public void Reverse()
+    content.vb: Public Sub Reverse
+- uid: System.Collections.Generic.List`1.Reverse(System.Int32,System.Int32)
+  id: Reverse(System.Int32,System.Int32)
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: Reverse(Int32, Int32)
+  fullName: System.Collections.Generic.List<T>.Reverse(System.Int32, System.Int32)
+  fullName.vb: System.Collections.Generic.List(Of T).Reverse(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 920
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Reverses the order of the elements in the specified range.
+  syntax:
+    content: public void Reverse(int index, int count)
+    content.vb: Public Sub Reverse(index As Integer, count As Integer)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based starting index of the range to reverse.
+    - id: count
+      type: System.Int32
+      description: The number of elements in the range to reverse.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than 0.-or-*count* is less than 0.'
+  - type: System.ArgumentException
+    description: '*index* and *count* do not denote a valid range of elements in the @''System.Collections.Generic.List`1''.'
+- uid: System.Collections.Generic.List`1.Sort
+  id: Sort
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: Sort()
+  fullName: System.Collections.Generic.List<T>.Sort()
+  fullName.vb: System.Collections.Generic.List(Of T).Sort()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 954
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Sorts the elements in the entire @'System.Collections.Generic.List`1' using the default comparer.
+  syntax:
+    content: public void Sort()
+    content.vb: Public Sub Sort
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The default comparer @'System.Collections.Generic.Comparer`1.Default' cannot find an implementation of the @'System.IComparable`1' generic interface or the @'System.IComparable' interface for type *T*.
+- uid: System.Collections.Generic.List`1.Sort(System.Collections.Generic.IComparer{`0})
+  id: Sort(System.Collections.Generic.IComparer{`0})
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: Sort(IComparer<T>)
+  name.vb: Sort(IComparer(Of T))
+  fullName: System.Collections.Generic.List<T>.Sort(System.Collections.Generic.IComparer<T>)
+  fullName.vb: System.Collections.Generic.List(Of T).Sort(System.Collections.Generic.IComparer(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 961
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Sorts the elements in the entire @'System.Collections.Generic.List`1' using the specified comparer.
+  syntax:
+    content: public void Sort(IComparer<T> comparer)
+    content.vb: Public Sub Sort(comparer As IComparer(Of T))
+    parameters:
+    - id: comparer
+      type: System.Collections.Generic.IComparer{{T}}
+      description: The @'System.Collections.Generic.IComparer`1' implementation to use when comparing elements, or null to use the default comparer @'System.Collections.Generic.Comparer`1.Default'.
+  exceptions:
+  - type: System.InvalidOperationException
+    description: '*comparer* is null, and the default comparer @''System.Collections.Generic.Comparer`1.Default'' cannot find implementation of the @''System.IComparable`1'' generic interface or the @''System.IComparable'' interface for type *T*.'
+  - type: System.ArgumentException
+    description: The implementation of *comparer* caused an error during the sort. For example, *comparer* might not return 0 when comparing an item with itself.
+- uid: System.Collections.Generic.List`1.Sort(System.Int32,System.Int32,System.Collections.Generic.IComparer{`0})
+  id: Sort(System.Int32,System.Int32,System.Collections.Generic.IComparer{`0})
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: Sort(Int32, Int32, IComparer<T>)
+  name.vb: Sort(Int32, Int32, IComparer(Of T))
+  fullName: System.Collections.Generic.List<T>.Sort(System.Int32, System.Int32, System.Collections.Generic.IComparer<T>)
+  fullName.vb: System.Collections.Generic.List(Of T).Sort(System.Int32, System.Int32, System.Collections.Generic.IComparer(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 974
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Sorts the elements in a range of elements in @'System.Collections.Generic.List`1' using the specified comparer.
+  syntax:
+    content: public void Sort(int index, int count, IComparer<T> comparer)
+    content.vb: Public Sub Sort(index As Integer, count As Integer, comparer As IComparer(Of T))
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based starting index of the range to sort.
+    - id: count
+      type: System.Int32
+      description: The length of the range to sort.
+    - id: comparer
+      type: System.Collections.Generic.IComparer{{T}}
+      description: The @'System.Collections.Generic.IComparer`1' implementation to use when comparing elements, or null to use the default comparer @'System.Collections.Generic.Comparer`1.Default'.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than 0.-or-*count* is less than 0.'
+  - type: System.ArgumentException
+    description: '*index* and *count* do not specify a valid range in the @''System.Collections.Generic.List`1''.-or-The implementation of *comparer* caused an error during the sort. For example, *comparer* might not return 0 when comparing an item with itself.'
+  - type: System.InvalidOperationException
+    description: '*comparer* is null, and the default comparer @''System.Collections.Generic.Comparer`1.Default'' cannot find implementation of the @''System.IComparable`1'' generic interface or the @''System.IComparable'' interface for type *T*.'
+- uid: System.Collections.Generic.List`1.Sort(System.Comparison{`0})
+  id: Sort(System.Comparison{`0})
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: Sort(Comparison<T>)
+  name.vb: Sort(Comparison(Of T))
+  fullName: System.Collections.Generic.List<T>.Sort(System.Comparison<T>)
+  fullName.vb: System.Collections.Generic.List(Of T).Sort(System.Comparison(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 991
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Sorts the elements in the entire @'System.Collections.Generic.List`1' using the specified @'System.Comparison`1'.
+  syntax:
+    content: public void Sort(Comparison<T> comparison)
+    content.vb: Public Sub Sort(comparison As Comparison(Of T))
+    parameters:
+    - id: comparison
+      type: System.Comparison{{T}}
+      description: The @'System.Comparison`1' to use when comparing elements.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*comparison* is null.'
+  - type: System.ArgumentException
+    description: The implementation of *comparison* caused an error during the sort. For example, *comparison* might not return 0 when comparing an item with itself.
+- uid: System.Collections.Generic.List`1.ToArray
+  id: ToArray
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: ToArray()
+  fullName: System.Collections.Generic.List<T>.ToArray()
+  fullName.vb: System.Collections.Generic.List(Of T).ToArray()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 1005
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Copies the elements of the @'System.Collections.Generic.List`1' to a new array.
+  syntax:
+    content: public T[] ToArray()
+    content.vb: Public Function ToArray As T()
+    return:
+      type: '{T}[]'
+      description: An array containing copies of the elements of the @'System.Collections.Generic.List`1'.
+- uid: System.Collections.Generic.List`1.TrimExcess
+  id: TrimExcess
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: TrimExcess()
+  fullName: System.Collections.Generic.List<T>.TrimExcess()
+  fullName.vb: System.Collections.Generic.List(Of T).TrimExcess()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 1023
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Sets the capacity to the actual number of elements in the @'System.Collections.Generic.List`1', if that number is less than a threshold value.
+  syntax:
+    content: public void TrimExcess()
+    content.vb: Public Sub TrimExcess
+- uid: System.Collections.Generic.List`1.TrueForAll(System.Predicate{`0})
+  id: TrueForAll(System.Predicate{`0})
+  parent: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: TrueForAll(Predicate<T>)
+  name.vb: TrueForAll(Predicate(Of T))
+  fullName: System.Collections.Generic.List<T>.TrueForAll(System.Predicate<T>)
+  fullName.vb: System.Collections.Generic.List(Of T).TrueForAll(System.Predicate(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/Generic/List.cs
+    startLine: 1030
+  assemblies:
+  - mscorlib
+  namespace: System.Collections.Generic
+  summary: Determines whether every element in the @'System.Collections.Generic.List`1' matches the conditions defined by the specified predicate.
+  syntax:
+    content: public bool TrueForAll(Predicate<T> match)
+    content.vb: Public Function TrueForAll(match As Predicate(Of T)) As Boolean
+    parameters:
+    - id: match
+      type: System.Predicate{{T}}
+      description: The @'System.Predicate`1' delegate that defines the conditions to check against the elements.
+    return:
+      type: System.Boolean
+      description: true if every element in the @'System.Collections.Generic.List`1' matches the conditions defined by the specified predicate; otherwise, false. If the list has no elements, the return value is true.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*match* is null.'
+references:
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: '{T}'
+  isExternal: false
+  name: T
+  fullName: T
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{{T}}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1
+  name: ReadOnlyCollection<T>
+  name.vb: ReadOnlyCollection(Of T)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+  parent: System.Collections.ObjectModel
+  isExternal: true
+  name: ReadOnlyCollection<T>
+  name.vb: ReadOnlyCollection(Of T)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel
+  isExternal: false
+  name: System.Collections.ObjectModel
+  fullName: System.Collections.ObjectModel
+  type: Namespace
+- uid: System.Collections.Generic.IComparer{{T}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IComparer`1
+  name: IComparer<T>
+  name.vb: IComparer(Of T)
+  fullName: System.Collections.Generic.IComparer<T>
+  fullName.vb: System.Collections.Generic.IComparer(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    fullName: System.Collections.Generic.IComparer
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    fullName: System.Collections.Generic.IComparer
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IComparer`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IComparer<T>
+  name.vb: IComparer(Of T)
+  fullName: System.Collections.Generic.IComparer<T>
+  fullName.vb: System.Collections.Generic.IComparer(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    fullName: System.Collections.Generic.IComparer
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    fullName: System.Collections.Generic.IComparer
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Converter{{T},{TOutput}}
+  parent: System
+  definition: System.Converter`2
+  href: System.Converter`2.yml
+  name: Converter<T, TOutput>
+  name.vb: Converter(Of T, TOutput)
+  fullName: System.Converter<T, TOutput>
+  fullName.vb: System.Converter(Of T, TOutput)
+  spec.csharp:
+  - uid: System.Converter`2
+    name: Converter
+    fullName: System.Converter
+    href: System.Converter`2.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: ', '
+    fullName: ', '
+  - name: TOutput
+    fullName: TOutput
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Converter`2
+    name: Converter
+    fullName: System.Converter
+    href: System.Converter`2.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: ', '
+    fullName: ', '
+  - name: TOutput
+    fullName: TOutput
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.List{{TOutput}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: System.Collections.Generic.List`1.yml
+  name: List<TOutput>
+  name.vb: List(Of TOutput)
+  fullName: System.Collections.Generic.List<TOutput>
+  fullName.vb: System.Collections.Generic.List(Of TOutput)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    fullName: System.Collections.Generic.List
+    href: System.Collections.Generic.List`1.yml
+  - name: <
+    fullName: <
+  - name: TOutput
+    fullName: TOutput
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    fullName: System.Collections.Generic.List
+    href: System.Collections.Generic.List`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TOutput
+    fullName: TOutput
+  - name: )
+    fullName: )
+- uid: System.Converter`2
+  isExternal: false
+  href: System.Converter`2.yml
+  name: Converter<TInput, TOutput>
+  name.vb: Converter(Of TInput, TOutput)
+  fullName: System.Converter<TInput, TOutput>
+  fullName.vb: System.Converter(Of TInput, TOutput)
+  type: Delegate
+  spec.csharp:
+  - uid: System.Converter`2
+    name: Converter
+    fullName: System.Converter
+    href: System.Converter`2.yml
+  - name: <
+    fullName: <
+  - name: TInput
+    fullName: TInput
+  - name: ', '
+    fullName: ', '
+  - name: TOutput
+    fullName: TOutput
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Converter`2
+    name: Converter
+    fullName: System.Converter
+    href: System.Converter`2.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TInput
+    fullName: TInput
+  - name: ', '
+    fullName: ', '
+  - name: TOutput
+    fullName: TOutput
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: List<T>
+  name.vb: List(Of T)
+  fullName: System.Collections.Generic.List<T>
+  fullName.vb: System.Collections.Generic.List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: '{T}[]'
+  isExternal: false
+  name: T[]
+  name.vb: T()
+  fullName: T[]
+  fullName.vb: T()
+  spec.csharp:
+  - name: T
+    fullName: T
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - name: T
+    fullName: T
+  - name: ()
+    fullName: ()
+- uid: System.Array
+  parent: System
+  isExternal: true
+  name: Array
+  fullName: System.Array
+- uid: System.Predicate{{T}}
+  parent: System
+  definition: System.Predicate`1
+  name: Predicate<T>
+  name.vb: Predicate(Of T)
+  fullName: System.Predicate<T>
+  fullName.vb: System.Predicate(Of T)
+  spec.csharp:
+  - uid: System.Predicate`1
+    name: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Predicate`1
+    name: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Predicate`1
+  parent: System
+  isExternal: true
+  name: Predicate<T>
+  name.vb: Predicate(Of T)
+  fullName: System.Predicate<T>
+  fullName.vb: System.Predicate(Of T)
+  spec.csharp:
+  - uid: System.Predicate`1
+    name: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Predicate`1
+    name: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Action{{T}}
+  parent: System
+  definition: System.Action`1
+  href: System.Action`1.yml
+  name: Action<T>
+  name.vb: Action(Of T)
+  fullName: System.Action<T>
+  fullName.vb: System.Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    fullName: System.Action
+    href: System.Action`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    fullName: System.Action
+    href: System.Action`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Action`1
+  parent: System
+  isExternal: true
+  name: Action<T>
+  name.vb: Action(Of T)
+  fullName: System.Action<T>
+  fullName.vb: System.Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.List`1.Enumerator
+  parent: System.Collections.Generic
+  isExternal: false
+  href: System.Collections.Generic.List`1.Enumerator.yml
+  name: List.Enumerator<>
+  name.vb: List.Enumerator(Of )
+  fullName: System.Collections.Generic.List.Enumerator<>
+  fullName.vb: System.Collections.Generic.List.Enumerator(Of )
+  type: Struct
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1.Enumerator
+    name: List.Enumerator
+    fullName: System.Collections.Generic.List.Enumerator
+    href: System.Collections.Generic.List`1.Enumerator.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1.Enumerator
+    name: List.Enumerator
+    fullName: System.Collections.Generic.List.Enumerator
+    href: System.Collections.Generic.List`1.Enumerator.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator{{T}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  name: IEnumerator<T>
+  name.vb: IEnumerator(Of T)
+  fullName: System.Collections.Generic.IEnumerator<T>
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerator<T>
+  name.vb: IEnumerator(Of T)
+  fullName: System.Collections.Generic.IEnumerator<T>
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  isExternal: false
+  name: System.Collections
+  fullName: System.Collections
+- uid: System.Comparison{{T}}
+  parent: System
+  definition: System.Comparison`1
+  href: System.Comparison`1.yml
+  name: Comparison<T>
+  name.vb: Comparison(Of T)
+  fullName: System.Comparison<T>
+  fullName.vb: System.Comparison(Of T)
+  spec.csharp:
+  - uid: System.Comparison`1
+    name: Comparison
+    fullName: System.Comparison
+    href: System.Comparison`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Comparison`1
+    name: Comparison
+    fullName: System.Comparison
+    href: System.Comparison`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Comparison`1
+  isExternal: false
+  href: System.Comparison`1.yml
+  name: Comparison<T>
+  name.vb: Comparison(Of T)
+  fullName: System.Comparison<T>
+  fullName.vb: System.Comparison(Of T)
+  type: Delegate
+  spec.csharp:
+  - uid: System.Comparison`1
+    name: Comparison
+    fullName: System.Comparison
+    href: System.Comparison`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Comparison`1
+    name: Comparison
+    fullName: System.Comparison
+    href: System.Comparison`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )

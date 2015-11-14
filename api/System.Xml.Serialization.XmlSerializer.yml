@@ -1,0 +1,1071 @@
+items:
+- uid: System.Xml.Serialization.XmlSerializer
+  id: XmlSerializer
+  parent: System.Xml.Serialization
+  children:
+  - System.Xml.Serialization.XmlSerializer.#ctor
+  - System.Xml.Serialization.XmlSerializer.#ctor(System.Type)
+  - System.Xml.Serialization.XmlSerializer.#ctor(System.Type,System.String)
+  - System.Xml.Serialization.XmlSerializer.#ctor(System.Type,System.Type[])
+  - System.Xml.Serialization.XmlSerializer.#ctor(System.Type,System.Xml.Serialization.XmlAttributeOverrides)
+  - System.Xml.Serialization.XmlSerializer.#ctor(System.Type,System.Xml.Serialization.XmlAttributeOverrides,System.Type[],System.Xml.Serialization.XmlRootAttribute,System.String)
+  - System.Xml.Serialization.XmlSerializer.#ctor(System.Type,System.Xml.Serialization.XmlRootAttribute)
+  - System.Xml.Serialization.XmlSerializer.#ctor(System.Xml.Serialization.XmlTypeMapping)
+  - System.Xml.Serialization.XmlSerializer.CanDeserialize(XmlReader)
+  - System.Xml.Serialization.XmlSerializer.CreateReader
+  - System.Xml.Serialization.XmlSerializer.CreateWriter
+  - System.Xml.Serialization.XmlSerializer.Deserialize(System.IO.Stream)
+  - System.Xml.Serialization.XmlSerializer.Deserialize(System.IO.TextReader)
+  - System.Xml.Serialization.XmlSerializer.Deserialize(System.Xml.Serialization.XmlSerializationReader)
+  - System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader)
+  - System.Xml.Serialization.XmlSerializer.FromMappings(System.Xml.Serialization.XmlMapping[])
+  - System.Xml.Serialization.XmlSerializer.FromMappings(System.Xml.Serialization.XmlMapping[],System.Type)
+  - System.Xml.Serialization.XmlSerializer.FromTypes(System.Type[])
+  - System.Xml.Serialization.XmlSerializer.Serialize(System.IO.Stream,System.Object)
+  - System.Xml.Serialization.XmlSerializer.Serialize(System.IO.Stream,System.Object,System.Xml.Serialization.XmlSerializerNamespaces)
+  - System.Xml.Serialization.XmlSerializer.Serialize(System.IO.TextWriter,System.Object)
+  - System.Xml.Serialization.XmlSerializer.Serialize(System.IO.TextWriter,System.Object,System.Xml.Serialization.XmlSerializerNamespaces)
+  - System.Xml.Serialization.XmlSerializer.Serialize(System.Object,System.Xml.Serialization.XmlSerializationWriter)
+  - System.Xml.Serialization.XmlSerializer.Serialize(XmlWriter,System.Object)
+  - System.Xml.Serialization.XmlSerializer.Serialize(XmlWriter,System.Object,System.Xml.Serialization.XmlSerializerNamespaces)
+  href: System.Xml.Serialization.XmlSerializer.yml
+  name: XmlSerializer
+  fullName: System.Xml.Serialization.XmlSerializer
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializer.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializer.cs
+    startLine: 53
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Serializes and deserializes objects into and from XML documents. The @'System.Xml.Serialization.XmlSerializer' enables you to control how objects are encoded into XML.
+  syntax:
+    content: public class XmlSerializer
+    content.vb: Public Class XmlSerializer
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Xml.Serialization.XmlSerializer.#ctor
+  id: '#ctor'
+  parent: System.Xml.Serialization.XmlSerializer
+  href: System.Xml.Serialization.XmlSerializer.yml
+  name: XmlSerializer()
+  fullName: System.Xml.Serialization.XmlSerializer.XmlSerializer()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializer.cs
+    startLine: 90
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Initializes a new instance of the @'System.Xml.Serialization.XmlSerializer' class.
+  syntax:
+    content: protected XmlSerializer()
+    content.vb: Protected Sub New
+- uid: System.Xml.Serialization.XmlSerializer.#ctor(System.Type,System.Xml.Serialization.XmlAttributeOverrides,System.Type[],System.Xml.Serialization.XmlRootAttribute,System.String)
+  id: '#ctor(System.Type,System.Xml.Serialization.XmlAttributeOverrides,System.Type[],System.Xml.Serialization.XmlRootAttribute,System.String)'
+  parent: System.Xml.Serialization.XmlSerializer
+  href: System.Xml.Serialization.XmlSerializer.yml
+  name: XmlSerializer(Type, XmlAttributeOverrides, Type[], XmlRootAttribute, String)
+  name.vb: XmlSerializer(Type, XmlAttributeOverrides, Type(), XmlRootAttribute, String)
+  fullName: System.Xml.Serialization.XmlSerializer.XmlSerializer(System.Type, System.Xml.Serialization.XmlAttributeOverrides, System.Type[], System.Xml.Serialization.XmlRootAttribute, System.String)
+  fullName.vb: System.Xml.Serialization.XmlSerializer.XmlSerializer(System.Type, System.Xml.Serialization.XmlAttributeOverrides, System.Type(), System.Xml.Serialization.XmlRootAttribute, System.String)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializer.cs
+    startLine: 98
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Initializes a new instance of the @'System.Xml.Serialization.XmlSerializer' class that can serialize objects of type @'System.Object' into XML document instances, and deserialize XML document instances into objects of type @'System.Object'. Each object to be serialized can itself contain instances of classes, which this overload overrides with other classes. This overload also specifies the default namespace for all the XML elements and the class to use as the XML root element.
+  syntax:
+    content: public XmlSerializer(Type type, XmlAttributeOverrides overrides, Type[] extraTypes, XmlRootAttribute root, string defaultNamespace)
+    content.vb: Public Sub New(type As Type, overrides As XmlAttributeOverrides, extraTypes As Type(), root As XmlRootAttribute, defaultNamespace As String)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type of the object that this @'System.Xml.Serialization.XmlSerializer' can serialize.
+    - id: overrides
+      type: System.Xml.Serialization.XmlAttributeOverrides
+      description: An @'System.Xml.Serialization.XmlAttributeOverrides' that extends or overrides the behavior of the class specified in the *type* parameter.
+    - id: extraTypes
+      type: System.Type[]
+      description: A @'System.Type' array of additional object types to serialize.
+    - id: root
+      type: System.Xml.Serialization.XmlRootAttribute
+      description: An @'System.Xml.Serialization.XmlRootAttribute' that defines the XML root element properties.
+    - id: defaultNamespace
+      type: System.String
+      description: The default namespace of all XML elements in the XML document.
+- uid: System.Xml.Serialization.XmlSerializer.#ctor(System.Type,System.Xml.Serialization.XmlRootAttribute)
+  id: '#ctor(System.Type,System.Xml.Serialization.XmlRootAttribute)'
+  parent: System.Xml.Serialization.XmlSerializer
+  href: System.Xml.Serialization.XmlSerializer.yml
+  name: XmlSerializer(Type, XmlRootAttribute)
+  fullName: System.Xml.Serialization.XmlSerializer.XmlSerializer(System.Type, System.Xml.Serialization.XmlRootAttribute)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializer.cs
+    startLine: 107
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Initializes a new instance of the @'System.Xml.Serialization.XmlSerializer' class that can serialize objects of the specified type into XML documents, and deserialize an XML document into object of the specified type. It also specifies the class to use as the XML root element.
+  syntax:
+    content: public XmlSerializer(Type type, XmlRootAttribute root)
+    content.vb: Public Sub New(type As Type, root As XmlRootAttribute)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type of the object that this @'System.Xml.Serialization.XmlSerializer' can serialize.
+    - id: root
+      type: System.Xml.Serialization.XmlRootAttribute
+      description: An @'System.Xml.Serialization.XmlRootAttribute' that represents the XML root element.
+- uid: System.Xml.Serialization.XmlSerializer.#ctor(System.Type,System.Type[])
+  id: '#ctor(System.Type,System.Type[])'
+  parent: System.Xml.Serialization.XmlSerializer
+  href: System.Xml.Serialization.XmlSerializer.yml
+  name: XmlSerializer(Type, Type[])
+  name.vb: XmlSerializer(Type, Type())
+  fullName: System.Xml.Serialization.XmlSerializer.XmlSerializer(System.Type, System.Type[])
+  fullName.vb: System.Xml.Serialization.XmlSerializer.XmlSerializer(System.Type, System.Type())
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializer.cs
+    startLine: 116
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Initializes a new instance of the @'System.Xml.Serialization.XmlSerializer' class that can serialize objects of the specified type into XML documents, and deserialize XML documents into object of a specified type. If a property or field returns an array, the *extraTypes* parameter specifies objects that can be inserted into the array.
+  syntax:
+    content: public XmlSerializer(Type type, Type[] extraTypes)
+    content.vb: Public Sub New(type As Type, extraTypes As Type())
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type of the object that this @'System.Xml.Serialization.XmlSerializer' can serialize.
+    - id: extraTypes
+      type: System.Type[]
+      description: A @'System.Type' array of additional object types to serialize.
+- uid: System.Xml.Serialization.XmlSerializer.#ctor(System.Type,System.Xml.Serialization.XmlAttributeOverrides)
+  id: '#ctor(System.Type,System.Xml.Serialization.XmlAttributeOverrides)'
+  parent: System.Xml.Serialization.XmlSerializer
+  href: System.Xml.Serialization.XmlSerializer.yml
+  name: XmlSerializer(Type, XmlAttributeOverrides)
+  fullName: System.Xml.Serialization.XmlSerializer.XmlSerializer(System.Type, System.Xml.Serialization.XmlAttributeOverrides)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializer.cs
+    startLine: 127
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Initializes a new instance of the @'System.Xml.Serialization.XmlSerializer' class that can serialize objects of the specified type into XML documents, and deserialize XML documents into objects of the specified type. Each object to be serialized can itself contain instances of classes, which this overload can override with other classes.
+  syntax:
+    content: public XmlSerializer(Type type, XmlAttributeOverrides overrides)
+    content.vb: Public Sub New(type As Type, overrides As XmlAttributeOverrides)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type of the object to serialize.
+    - id: overrides
+      type: System.Xml.Serialization.XmlAttributeOverrides
+      description: An @'System.Xml.Serialization.XmlAttributeOverrides'.
+- uid: System.Xml.Serialization.XmlSerializer.#ctor(System.Xml.Serialization.XmlTypeMapping)
+  id: '#ctor(System.Xml.Serialization.XmlTypeMapping)'
+  parent: System.Xml.Serialization.XmlSerializer
+  href: System.Xml.Serialization.XmlSerializer.yml
+  name: XmlSerializer(XmlTypeMapping)
+  fullName: System.Xml.Serialization.XmlSerializer.XmlSerializer(System.Xml.Serialization.XmlTypeMapping)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializer.cs
+    startLine: 135
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Initializes an instance of the @'System.Xml.Serialization.XmlSerializer' class using an object that maps one type to another.
+  syntax:
+    content: public XmlSerializer(XmlTypeMapping xmlTypeMapping)
+    content.vb: Public Sub New(xmlTypeMapping As XmlTypeMapping)
+    parameters:
+    - id: xmlTypeMapping
+      type: System.Xml.Serialization.XmlTypeMapping
+      description: An @'System.Xml.Serialization.XmlTypeMapping' that maps one type to another.
+- uid: System.Xml.Serialization.XmlSerializer.#ctor(System.Type)
+  id: '#ctor(System.Type)'
+  parent: System.Xml.Serialization.XmlSerializer
+  href: System.Xml.Serialization.XmlSerializer.yml
+  name: XmlSerializer(Type)
+  fullName: System.Xml.Serialization.XmlSerializer.XmlSerializer(System.Type)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializer.cs
+    startLine: 145
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Initializes a new instance of the @'System.Xml.Serialization.XmlSerializer' class that can serialize objects of the specified type into XML documents, and deserialize XML documents into objects of the specified type.
+  syntax:
+    content: public XmlSerializer(Type type)
+    content.vb: Public Sub New(type As Type)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type of the object that this @'System.Xml.Serialization.XmlSerializer' can serialize.
+- uid: System.Xml.Serialization.XmlSerializer.#ctor(System.Type,System.String)
+  id: '#ctor(System.Type,System.String)'
+  parent: System.Xml.Serialization.XmlSerializer
+  href: System.Xml.Serialization.XmlSerializer.yml
+  name: XmlSerializer(Type, String)
+  fullName: System.Xml.Serialization.XmlSerializer.XmlSerializer(System.Type, System.String)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializer.cs
+    startLine: 153
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Initializes a new instance of the @'System.Xml.Serialization.XmlSerializer' class that can serialize objects of the specified type into XML documents, and deserialize XML documents into objects of the specified type. Specifies the default namespace for all the XML elements.
+  syntax:
+    content: public XmlSerializer(Type type, string defaultNamespace)
+    content.vb: Public Sub New(type As Type, defaultNamespace As String)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type of the object that this @'System.Xml.Serialization.XmlSerializer' can serialize.
+    - id: defaultNamespace
+      type: System.String
+      description: The default namespace to use for all the XML elements.
+- uid: System.Xml.Serialization.XmlSerializer.Serialize(System.IO.TextWriter,System.Object)
+  id: Serialize(System.IO.TextWriter,System.Object)
+  parent: System.Xml.Serialization.XmlSerializer
+  href: System.Xml.Serialization.XmlSerializer.yml
+  name: Serialize(TextWriter, Object)
+  fullName: System.Xml.Serialization.XmlSerializer.Serialize(System.IO.TextWriter, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializer.cs
+    startLine: 242
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Serializes the specified @'System.Object' and writes the XML document to a file using the specified @'System.IO.TextWriter'.
+  syntax:
+    content: public void Serialize(TextWriter textWriter, object o)
+    content.vb: Public Sub Serialize(textWriter As TextWriter, o As Object)
+    parameters:
+    - id: textWriter
+      type: System.IO.TextWriter
+      description: The @'System.IO.TextWriter' used to write the XML document.
+    - id: o
+      type: System.Object
+      description: The @'System.Object' to serialize.
+- uid: System.Xml.Serialization.XmlSerializer.Serialize(System.IO.TextWriter,System.Object,System.Xml.Serialization.XmlSerializerNamespaces)
+  id: Serialize(System.IO.TextWriter,System.Object,System.Xml.Serialization.XmlSerializerNamespaces)
+  parent: System.Xml.Serialization.XmlSerializer
+  href: System.Xml.Serialization.XmlSerializer.yml
+  name: Serialize(TextWriter, Object, XmlSerializerNamespaces)
+  fullName: System.Xml.Serialization.XmlSerializer.Serialize(System.IO.TextWriter, System.Object, System.Xml.Serialization.XmlSerializerNamespaces)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializer.cs
+    startLine: 251
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Serializes the specified @'System.Object' and writes the XML document to a file using the specified @'System.IO.TextWriter' and references the specified namespaces.
+  syntax:
+    content: public void Serialize(TextWriter textWriter, object o, XmlSerializerNamespaces namespaces)
+    content.vb: Public Sub Serialize(textWriter As TextWriter, o As Object, namespaces As XmlSerializerNamespaces)
+    parameters:
+    - id: textWriter
+      type: System.IO.TextWriter
+      description: The @'System.IO.TextWriter' used to write the XML document.
+    - id: o
+      type: System.Object
+      description: The @'System.Object' to serialize.
+    - id: namespaces
+      type: System.Xml.Serialization.XmlSerializerNamespaces
+      description: The @'System.Xml.Serialization.XmlSerializerNamespaces' that contains namespaces for the generated XML document.
+  exceptions:
+  - type: System.InvalidOperationException
+    description: An error occurred during serialization. The original exception is available using the @'System.Exception.InnerException' property.
+- uid: System.Xml.Serialization.XmlSerializer.Serialize(System.IO.Stream,System.Object)
+  id: Serialize(System.IO.Stream,System.Object)
+  parent: System.Xml.Serialization.XmlSerializer
+  href: System.Xml.Serialization.XmlSerializer.yml
+  name: Serialize(Stream, Object)
+  fullName: System.Xml.Serialization.XmlSerializer.Serialize(System.IO.Stream, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializer.cs
+    startLine: 264
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Serializes the specified @'System.Object' and writes the XML document to a file using the specified @'System.IO.Stream'.
+  syntax:
+    content: public void Serialize(Stream stream, object o)
+    content.vb: Public Sub Serialize(stream As Stream, o As Object)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: The @'System.IO.Stream' used to write the XML document.
+    - id: o
+      type: System.Object
+      description: The @'System.Object' to serialize.
+  exceptions:
+  - type: System.InvalidOperationException
+    description: An error occurred during serialization. The original exception is available using the @'System.Exception.InnerException' property.
+- uid: System.Xml.Serialization.XmlSerializer.Serialize(System.IO.Stream,System.Object,System.Xml.Serialization.XmlSerializerNamespaces)
+  id: Serialize(System.IO.Stream,System.Object,System.Xml.Serialization.XmlSerializerNamespaces)
+  parent: System.Xml.Serialization.XmlSerializer
+  href: System.Xml.Serialization.XmlSerializer.yml
+  name: Serialize(Stream, Object, XmlSerializerNamespaces)
+  fullName: System.Xml.Serialization.XmlSerializer.Serialize(System.IO.Stream, System.Object, System.Xml.Serialization.XmlSerializerNamespaces)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializer.cs
+    startLine: 273
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Serializes the specified @'System.Object' and writes the XML document to a file using the specified @'System.IO.Stream'that references the specified namespaces.
+  syntax:
+    content: public void Serialize(Stream stream, object o, XmlSerializerNamespaces namespaces)
+    content.vb: Public Sub Serialize(stream As Stream, o As Object, namespaces As XmlSerializerNamespaces)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: The @'System.IO.Stream' used to write the XML document.
+    - id: o
+      type: System.Object
+      description: The @'System.Object' to serialize.
+    - id: namespaces
+      type: System.Xml.Serialization.XmlSerializerNamespaces
+      description: The @'System.Xml.Serialization.XmlSerializerNamespaces' referenced by the object.
+  exceptions:
+  - type: System.InvalidOperationException
+    description: An error occurred during serialization. The original exception is available using the @'System.Exception.InnerException' property.
+- uid: System.Xml.Serialization.XmlSerializer.Serialize(XmlWriter,System.Object)
+  id: Serialize(XmlWriter,System.Object)
+  parent: System.Xml.Serialization.XmlSerializer
+  href: System.Xml.Serialization.XmlSerializer.yml
+  name: Serialize(XmlWriter, Object)
+  fullName: System.Xml.Serialization.XmlSerializer.Serialize(XmlWriter, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializer.cs
+    startLine: 289
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: public void Serialize(XmlWriter xmlWriter, object o)
+    content.vb: Public Sub Serialize(xmlWriter As XmlWriter, o As Object)
+    parameters:
+    - id: xmlWriter
+      type: XmlWriter
+    - id: o
+      type: System.Object
+- uid: System.Xml.Serialization.XmlSerializer.Serialize(XmlWriter,System.Object,System.Xml.Serialization.XmlSerializerNamespaces)
+  id: Serialize(XmlWriter,System.Object,System.Xml.Serialization.XmlSerializerNamespaces)
+  parent: System.Xml.Serialization.XmlSerializer
+  href: System.Xml.Serialization.XmlSerializer.yml
+  name: Serialize(XmlWriter, Object, XmlSerializerNamespaces)
+  fullName: System.Xml.Serialization.XmlSerializer.Serialize(XmlWriter, System.Object, System.Xml.Serialization.XmlSerializerNamespaces)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializer.cs
+    startLine: 298
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: public void Serialize(XmlWriter xmlWriter, object o, XmlSerializerNamespaces namespaces)
+    content.vb: Public Sub Serialize(xmlWriter As XmlWriter, o As Object, namespaces As XmlSerializerNamespaces)
+    parameters:
+    - id: xmlWriter
+      type: XmlWriter
+    - id: o
+      type: System.Object
+    - id: namespaces
+      type: System.Xml.Serialization.XmlSerializerNamespaces
+- uid: System.Xml.Serialization.XmlSerializer.Deserialize(System.IO.Stream)
+  id: Deserialize(System.IO.Stream)
+  parent: System.Xml.Serialization.XmlSerializer
+  href: System.Xml.Serialization.XmlSerializer.yml
+  name: Deserialize(Stream)
+  fullName: System.Xml.Serialization.XmlSerializer.Deserialize(System.IO.Stream)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializer.cs
+    startLine: 372
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Deserializes the XML document contained by the specified @'System.IO.Stream'.
+  syntax:
+    content: public object Deserialize(Stream stream)
+    content.vb: Public Function Deserialize(stream As Stream) As Object
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: The @'System.IO.Stream' that contains the XML document to deserialize.
+    return:
+      type: System.Object
+      description: The @'System.Object' being deserialized.
+- uid: System.Xml.Serialization.XmlSerializer.Deserialize(System.IO.TextReader)
+  id: Deserialize(System.IO.TextReader)
+  parent: System.Xml.Serialization.XmlSerializer
+  href: System.Xml.Serialization.XmlSerializer.yml
+  name: Deserialize(TextReader)
+  fullName: System.Xml.Serialization.XmlSerializer.Deserialize(System.IO.TextReader)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializer.cs
+    startLine: 393
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Deserializes the XML document contained by the specified @'System.IO.TextReader'.
+  syntax:
+    content: public object Deserialize(TextReader textReader)
+    content.vb: Public Function Deserialize(textReader As TextReader) As Object
+    parameters:
+    - id: textReader
+      type: System.IO.TextReader
+      description: The @'System.IO.TextReader' that contains the XML document to deserialize.
+    return:
+      type: System.Object
+      description: The @'System.Object' being deserialized.
+  exceptions:
+  - type: System.InvalidOperationException
+    description: An error occurred during deserialization. The original exception is available using the @'System.Exception.InnerException' property.
+- uid: System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader)
+  id: Deserialize(XmlReader)
+  parent: System.Xml.Serialization.XmlSerializer
+  href: System.Xml.Serialization.XmlSerializer.yml
+  name: Deserialize(XmlReader)
+  fullName: System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializer.cs
+    startLine: 414
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: public object Deserialize(XmlReader xmlReader)
+    content.vb: Public Function Deserialize(xmlReader As XmlReader) As Object
+    parameters:
+    - id: xmlReader
+      type: XmlReader
+    return:
+      type: System.Object
+- uid: System.Xml.Serialization.XmlSerializer.CanDeserialize(XmlReader)
+  id: CanDeserialize(XmlReader)
+  parent: System.Xml.Serialization.XmlSerializer
+  href: System.Xml.Serialization.XmlSerializer.yml
+  name: CanDeserialize(XmlReader)
+  fullName: System.Xml.Serialization.XmlSerializer.CanDeserialize(XmlReader)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializer.cs
+    startLine: 500
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: public virtual bool CanDeserialize(XmlReader xmlReader)
+    content.vb: Public Overridable Function CanDeserialize(xmlReader As XmlReader) As Boolean
+    parameters:
+    - id: xmlReader
+      type: XmlReader
+    return:
+      type: System.Boolean
+- uid: System.Xml.Serialization.XmlSerializer.FromMappings(System.Xml.Serialization.XmlMapping[])
+  id: FromMappings(System.Xml.Serialization.XmlMapping[])
+  parent: System.Xml.Serialization.XmlSerializer
+  href: System.Xml.Serialization.XmlSerializer.yml
+  name: FromMappings(XmlMapping[])
+  name.vb: FromMappings(XmlMapping())
+  fullName: System.Xml.Serialization.XmlSerializer.FromMappings(System.Xml.Serialization.XmlMapping[])
+  fullName.vb: System.Xml.Serialization.XmlSerializer.FromMappings(System.Xml.Serialization.XmlMapping())
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializer.cs
+    startLine: 521
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Returns an array of @'System.Xml.Serialization.XmlSerializer' objects created from an array of @'System.Xml.Serialization.XmlTypeMapping' objects.
+  syntax:
+    content: public static XmlSerializer[] FromMappings(XmlMapping[] mappings)
+    content.vb: Public Shared Function FromMappings(mappings As XmlMapping()) As XmlSerializer()
+    parameters:
+    - id: mappings
+      type: System.Xml.Serialization.XmlMapping[]
+      description: An array of @'System.Xml.Serialization.XmlTypeMapping' that maps one type to another.
+    return:
+      type: System.Xml.Serialization.XmlSerializer[]
+      description: An array of @'System.Xml.Serialization.XmlSerializer' objects.
+- uid: System.Xml.Serialization.XmlSerializer.FromMappings(System.Xml.Serialization.XmlMapping[],System.Type)
+  id: FromMappings(System.Xml.Serialization.XmlMapping[],System.Type)
+  parent: System.Xml.Serialization.XmlSerializer
+  href: System.Xml.Serialization.XmlSerializer.yml
+  name: FromMappings(XmlMapping[], Type)
+  name.vb: FromMappings(XmlMapping(), Type)
+  fullName: System.Xml.Serialization.XmlSerializer.FromMappings(System.Xml.Serialization.XmlMapping[], System.Type)
+  fullName.vb: System.Xml.Serialization.XmlSerializer.FromMappings(System.Xml.Serialization.XmlMapping(), System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializer.cs
+    startLine: 530
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Returns an instance of the @'System.Xml.Serialization.XmlSerializer' class from the specified mappings.
+  syntax:
+    content: public static XmlSerializer[] FromMappings(XmlMapping[] mappings, Type type)
+    content.vb: Public Shared Function FromMappings(mappings As XmlMapping(), type As Type) As XmlSerializer()
+    parameters:
+    - id: mappings
+      type: System.Xml.Serialization.XmlMapping[]
+      description: An array of @'System.Xml.Serialization.XmlMapping' objects.
+    - id: type
+      type: System.Type
+      description: The @'System.Type' of the deserialized object.
+    return:
+      type: System.Xml.Serialization.XmlSerializer[]
+      description: An instance of the @'System.Xml.Serialization.XmlSerializer' class.
+- uid: System.Xml.Serialization.XmlSerializer.FromTypes(System.Type[])
+  id: FromTypes(System.Type[])
+  parent: System.Xml.Serialization.XmlSerializer
+  href: System.Xml.Serialization.XmlSerializer.yml
+  name: FromTypes(Type[])
+  name.vb: FromTypes(Type())
+  fullName: System.Xml.Serialization.XmlSerializer.FromTypes(System.Type[])
+  fullName.vb: System.Xml.Serialization.XmlSerializer.FromTypes(System.Type())
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializer.cs
+    startLine: 626
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Returns an array of @'System.Xml.Serialization.XmlSerializer' objects created from an array of types.
+  syntax:
+    content: public static XmlSerializer[] FromTypes(Type[] types)
+    content.vb: Public Shared Function FromTypes(types As Type()) As XmlSerializer()
+    parameters:
+    - id: types
+      type: System.Type[]
+      description: An array of @'System.Type' objects.
+    return:
+      type: System.Xml.Serialization.XmlSerializer[]
+      description: An array of @'System.Xml.Serialization.XmlSerializer' objects.
+- uid: System.Xml.Serialization.XmlSerializer.CreateReader
+  id: CreateReader
+  parent: System.Xml.Serialization.XmlSerializer
+  href: System.Xml.Serialization.XmlSerializer.yml
+  name: CreateReader()
+  fullName: System.Xml.Serialization.XmlSerializer.CreateReader()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializer.cs
+    startLine: 665
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Returns an object used to read the XML document to be serialized.
+  syntax:
+    content: protected virtual XmlSerializationReader CreateReader()
+    content.vb: Protected Overridable Function CreateReader As XmlSerializationReader
+    return:
+      type: System.Xml.Serialization.XmlSerializationReader
+      description: An @'System.Xml.Serialization.XmlSerializationReader' used to read the XML document.
+  exceptions:
+  - type: System.NotImplementedException
+    description: Any attempt is made to access the method when the method is not overridden in a descendant class.
+- uid: System.Xml.Serialization.XmlSerializer.Deserialize(System.Xml.Serialization.XmlSerializationReader)
+  id: Deserialize(System.Xml.Serialization.XmlSerializationReader)
+  parent: System.Xml.Serialization.XmlSerializer
+  href: System.Xml.Serialization.XmlSerializer.yml
+  name: Deserialize(XmlSerializationReader)
+  fullName: System.Xml.Serialization.XmlSerializer.Deserialize(System.Xml.Serialization.XmlSerializationReader)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializer.cs
+    startLine: 668
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Deserializes the XML document contained by the specified @'System.Xml.Serialization.XmlSerializationReader'.
+  syntax:
+    content: protected virtual object Deserialize(XmlSerializationReader reader)
+    content.vb: Protected Overridable Function Deserialize(reader As XmlSerializationReader) As Object
+    parameters:
+    - id: reader
+      type: System.Xml.Serialization.XmlSerializationReader
+      description: The @'System.Xml.Serialization.XmlSerializationReader' that contains the XML document to deserialize.
+    return:
+      type: System.Object
+      description: The deserialized object.
+  exceptions:
+  - type: System.NotImplementedException
+    description: Any attempt is made to access the method when the method is not overridden in a descendant class.
+- uid: System.Xml.Serialization.XmlSerializer.CreateWriter
+  id: CreateWriter
+  parent: System.Xml.Serialization.XmlSerializer
+  href: System.Xml.Serialization.XmlSerializer.yml
+  name: CreateWriter()
+  fullName: System.Xml.Serialization.XmlSerializer.CreateWriter()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializer.cs
+    startLine: 671
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: When overridden in a derived class, returns a writer used to serialize the object.
+  syntax:
+    content: protected virtual XmlSerializationWriter CreateWriter()
+    content.vb: Protected Overridable Function CreateWriter As XmlSerializationWriter
+    return:
+      type: System.Xml.Serialization.XmlSerializationWriter
+      description: An instance that implements the @'System.Xml.Serialization.XmlSerializationWriter' class.
+  exceptions:
+  - type: System.NotImplementedException
+    description: Any attempt is made to access the method when the method is not overridden in a descendant class.
+- uid: System.Xml.Serialization.XmlSerializer.Serialize(System.Object,System.Xml.Serialization.XmlSerializationWriter)
+  id: Serialize(System.Object,System.Xml.Serialization.XmlSerializationWriter)
+  parent: System.Xml.Serialization.XmlSerializer
+  href: System.Xml.Serialization.XmlSerializer.yml
+  name: Serialize(Object, XmlSerializationWriter)
+  fullName: System.Xml.Serialization.XmlSerializer.Serialize(System.Object, System.Xml.Serialization.XmlSerializationWriter)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializer.cs
+    startLine: 674
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Serializes the specified @'System.Object' and writes the XML document to a file using the specified @'System.Xml.Serialization.XmlSerializationWriter'.
+  syntax:
+    content: protected virtual void Serialize(object o, XmlSerializationWriter writer)
+    content.vb: Protected Overridable Sub Serialize(o As Object, writer As XmlSerializationWriter)
+    parameters:
+    - id: o
+      type: System.Object
+      description: The @'System.Object' to serialize.
+    - id: writer
+      type: System.Xml.Serialization.XmlSerializationWriter
+      description: The @'System.Xml.Serialization.XmlSerializationWriter' used to write the XML document.
+  exceptions:
+  - type: System.NotImplementedException
+    description: Any attempt is made to access the method when the method is not overridden in a descendant class.
+references:
+- uid: System.Xml.Serialization
+  isExternal: false
+  name: System.Xml.Serialization
+  fullName: System.Xml.Serialization
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  fullName: System.Type
+- uid: System.Xml.Serialization.XmlAttributeOverrides
+  isExternal: false
+  href: System.Xml.Serialization.XmlAttributeOverrides.yml
+  name: XmlAttributeOverrides
+  fullName: System.Xml.Serialization.XmlAttributeOverrides
+  type: Class
+- uid: System.Type[]
+  isExternal: true
+  name: Type[]
+  name.vb: Type()
+  fullName: System.Type[]
+  fullName.vb: System.Type()
+  spec.csharp:
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Xml.Serialization.XmlRootAttribute
+  parent: System.Xml.Serialization
+  isExternal: false
+  href: System.Xml.Serialization.XmlRootAttribute.yml
+  name: XmlRootAttribute
+  fullName: System.Xml.Serialization.XmlRootAttribute
+  type: Class
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Xml.Serialization.XmlTypeMapping
+  parent: System.Xml.Serialization
+  isExternal: false
+  href: System.Xml.Serialization.XmlTypeMapping.yml
+  name: XmlTypeMapping
+  fullName: System.Xml.Serialization.XmlTypeMapping
+  type: Class
+- uid: System.IO.TextWriter
+  parent: System.IO
+  isExternal: true
+  name: TextWriter
+  fullName: System.IO.TextWriter
+- uid: System.IO
+  isExternal: false
+  name: System.IO
+  fullName: System.IO
+- uid: System.Xml.Serialization.XmlSerializerNamespaces
+  parent: System.Xml.Serialization
+  isExternal: false
+  href: System.Xml.Serialization.XmlSerializerNamespaces.yml
+  name: XmlSerializerNamespaces
+  fullName: System.Xml.Serialization.XmlSerializerNamespaces
+  type: Class
+- uid: System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  name: Stream
+  fullName: System.IO.Stream
+- uid: XmlWriter
+  isExternal: true
+  name: XmlWriter
+  fullName: XmlWriter
+- uid: System.IO.TextReader
+  parent: System.IO
+  isExternal: true
+  name: TextReader
+  fullName: System.IO.TextReader
+- uid: XmlReader
+  isExternal: true
+  name: XmlReader
+  fullName: XmlReader
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Xml.Serialization.XmlMapping[]
+  isExternal: false
+  href: System.Xml.Serialization.XmlMapping.yml
+  name: XmlMapping[]
+  name.vb: XmlMapping()
+  fullName: System.Xml.Serialization.XmlMapping[]
+  fullName.vb: System.Xml.Serialization.XmlMapping()
+  spec.csharp:
+  - uid: System.Xml.Serialization.XmlMapping
+    name: XmlMapping
+    fullName: System.Xml.Serialization.XmlMapping
+    href: System.Xml.Serialization.XmlMapping.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Xml.Serialization.XmlMapping
+    name: XmlMapping
+    fullName: System.Xml.Serialization.XmlMapping
+    href: System.Xml.Serialization.XmlMapping.yml
+  - name: ()
+    fullName: ()
+- uid: System.Xml.Serialization.XmlSerializer[]
+  isExternal: false
+  href: System.Xml.Serialization.XmlSerializer.yml
+  name: XmlSerializer[]
+  name.vb: XmlSerializer()
+  fullName: System.Xml.Serialization.XmlSerializer[]
+  fullName.vb: System.Xml.Serialization.XmlSerializer()
+  spec.csharp:
+  - uid: System.Xml.Serialization.XmlSerializer
+    name: XmlSerializer
+    fullName: System.Xml.Serialization.XmlSerializer
+    href: System.Xml.Serialization.XmlSerializer.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Xml.Serialization.XmlSerializer
+    name: XmlSerializer
+    fullName: System.Xml.Serialization.XmlSerializer
+    href: System.Xml.Serialization.XmlSerializer.yml
+  - name: ()
+    fullName: ()
+- uid: System.Xml.Serialization.XmlSerializationReader
+  isExternal: false
+  href: System.Xml.Serialization.XmlSerializationReader.yml
+  name: XmlSerializationReader
+  fullName: System.Xml.Serialization.XmlSerializationReader
+  type: Class
+- uid: System.Xml.Serialization.XmlSerializationWriter
+  isExternal: false
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: XmlSerializationWriter
+  fullName: System.Xml.Serialization.XmlSerializationWriter
+  type: Class

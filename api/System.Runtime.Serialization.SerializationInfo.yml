@@ -1,0 +1,1631 @@
+items:
+- uid: System.Runtime.Serialization.SerializationInfo
+  id: SerializationInfo
+  parent: System.Runtime.Serialization
+  children:
+  - System.Runtime.Serialization.SerializationInfo.#ctor(System.Type,System.Runtime.Serialization.IFormatterConverter)
+  - System.Runtime.Serialization.SerializationInfo.#ctor(System.Type,System.Runtime.Serialization.IFormatterConverter,System.Boolean)
+  - System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.Boolean)
+  - System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.Byte)
+  - System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.Char)
+  - System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.DateTime)
+  - System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.Decimal)
+  - System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.Double)
+  - System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.Int16)
+  - System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.Int32)
+  - System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.Int64)
+  - System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.Object)
+  - System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.Object,System.Type)
+  - System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.SByte)
+  - System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.Single)
+  - System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.UInt16)
+  - System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.UInt32)
+  - System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.UInt64)
+  - System.Runtime.Serialization.SerializationInfo.AssemblyName
+  - System.Runtime.Serialization.SerializationInfo.FullTypeName
+  - System.Runtime.Serialization.SerializationInfo.GetBoolean(System.String)
+  - System.Runtime.Serialization.SerializationInfo.GetByte(System.String)
+  - System.Runtime.Serialization.SerializationInfo.GetChar(System.String)
+  - System.Runtime.Serialization.SerializationInfo.GetDateTime(System.String)
+  - System.Runtime.Serialization.SerializationInfo.GetDecimal(System.String)
+  - System.Runtime.Serialization.SerializationInfo.GetDouble(System.String)
+  - System.Runtime.Serialization.SerializationInfo.GetEnumerator
+  - System.Runtime.Serialization.SerializationInfo.GetInt16(System.String)
+  - System.Runtime.Serialization.SerializationInfo.GetInt32(System.String)
+  - System.Runtime.Serialization.SerializationInfo.GetInt64(System.String)
+  - System.Runtime.Serialization.SerializationInfo.GetSByte(System.String)
+  - System.Runtime.Serialization.SerializationInfo.GetSingle(System.String)
+  - System.Runtime.Serialization.SerializationInfo.GetString(System.String)
+  - System.Runtime.Serialization.SerializationInfo.GetUInt16(System.String)
+  - System.Runtime.Serialization.SerializationInfo.GetUInt32(System.String)
+  - System.Runtime.Serialization.SerializationInfo.GetUInt64(System.String)
+  - System.Runtime.Serialization.SerializationInfo.GetValue(System.String,System.Type)
+  - System.Runtime.Serialization.SerializationInfo.IsAssemblyNameSetExplicit
+  - System.Runtime.Serialization.SerializationInfo.IsFullTypeNameSetExplicit
+  - System.Runtime.Serialization.SerializationInfo.MemberCount
+  - System.Runtime.Serialization.SerializationInfo.ObjectType
+  - System.Runtime.Serialization.SerializationInfo.SetType(System.Type)
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: SerializationInfo
+  fullName: System.Runtime.Serialization.SerializationInfo
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+    startLine: 29
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Stores all the data needed to serialize or deserialize an object. This class cannot be inherited.
+  syntax:
+    content: public sealed class SerializationInfo
+    content.vb: Public NotInheritable Class SerializationInfo
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Runtime.Serialization.SerializationInfo.#ctor(System.Type,System.Runtime.Serialization.IFormatterConverter)
+  id: '#ctor(System.Type,System.Runtime.Serialization.IFormatterConverter)'
+  parent: System.Runtime.Serialization.SerializationInfo
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: SerializationInfo(Type, IFormatterConverter)
+  fullName: System.Runtime.Serialization.SerializationInfo.SerializationInfo(System.Type, System.Runtime.Serialization.IFormatterConverter)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+    startLine: 51
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Creates a new instance of the @'System.Runtime.Serialization.SerializationInfo' class.
+  syntax:
+    content: public SerializationInfo(Type type, IFormatterConverter converter)
+    content.vb: Public Sub New(type As Type, converter As IFormatterConverter)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The @'System.Type' of the object to serialize.
+    - id: converter
+      type: System.Runtime.Serialization.IFormatterConverter
+      description: The @'System.Runtime.Serialization.IFormatterConverter' used during deserialization.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*type* or *converter* is null.'
+- uid: System.Runtime.Serialization.SerializationInfo.#ctor(System.Type,System.Runtime.Serialization.IFormatterConverter,System.Boolean)
+  id: '#ctor(System.Type,System.Runtime.Serialization.IFormatterConverter,System.Boolean)'
+  parent: System.Runtime.Serialization.SerializationInfo
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: SerializationInfo(Type, IFormatterConverter, Boolean)
+  fullName: System.Runtime.Serialization.SerializationInfo.SerializationInfo(System.Type, System.Runtime.Serialization.IFormatterConverter, System.Boolean)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+    startLine: 57
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Initializes a new instance of the @'System.Runtime.Serialization.SerializationInfo' class.
+  syntax:
+    content: public SerializationInfo(Type type, IFormatterConverter converter, bool requireSameTokenInPartialTrust)
+    content.vb: Public Sub New(type As Type, converter As IFormatterConverter, requireSameTokenInPartialTrust As Boolean)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The @'System.Type' of the object to serialize.
+    - id: converter
+      type: System.Runtime.Serialization.IFormatterConverter
+      description: The @'System.Runtime.Serialization.IFormatterConverter' used during deserialization.
+    - id: requireSameTokenInPartialTrust
+      type: System.Boolean
+      description: Indicates whether the object requires same token in partial trust.
+- uid: System.Runtime.Serialization.SerializationInfo.FullTypeName
+  id: FullTypeName
+  parent: System.Runtime.Serialization.SerializationInfo
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: FullTypeName
+  fullName: System.Runtime.Serialization.SerializationInfo.FullTypeName
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+    startLine: 87
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Gets or sets the full name of the @'System.Type' to serialize.
+  syntax:
+    content: public string FullTypeName { get; set; }
+    content.vb: Public Property FullTypeName As String
+    parameters: []
+    return:
+      type: System.String
+      description: The full name of the type to serialize.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The value this property is set to is null.
+- uid: System.Runtime.Serialization.SerializationInfo.AssemblyName
+  id: AssemblyName
+  parent: System.Runtime.Serialization.SerializationInfo
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: AssemblyName
+  fullName: System.Runtime.Serialization.SerializationInfo.AssemblyName
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+    startLine: 106
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Gets or sets the assembly name of the type to serialize during serialization only.
+  syntax:
+    content: public string AssemblyName { get; set; }
+    content.vb: Public Property AssemblyName As String
+    parameters: []
+    return:
+      type: System.String
+      description: The full name of the assembly of the type to serialize.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The value the property is set to is null.
+- uid: System.Runtime.Serialization.SerializationInfo.SetType(System.Type)
+  id: SetType(System.Type)
+  parent: System.Runtime.Serialization.SerializationInfo
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: SetType(Type)
+  fullName: System.Runtime.Serialization.SerializationInfo.SetType(System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+    startLine: 129
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Sets the @'System.Type' of the object to serialize.
+  syntax:
+    content: public void SetType(Type type)
+    content.vb: Public Sub SetType(type As Type)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The @'System.Type' of the object to serialize.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *type* parameter is null.
+- uid: System.Runtime.Serialization.SerializationInfo.MemberCount
+  id: MemberCount
+  parent: System.Runtime.Serialization.SerializationInfo
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: MemberCount
+  fullName: System.Runtime.Serialization.SerializationInfo.MemberCount
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+    startLine: 201
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Gets the number of members that have been added to the @'System.Runtime.Serialization.SerializationInfo' store.
+  syntax:
+    content: public int MemberCount { get; }
+    content.vb: Public ReadOnly Property MemberCount As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: The number of members that have been added to the current @'System.Runtime.Serialization.SerializationInfo'.
+- uid: System.Runtime.Serialization.SerializationInfo.ObjectType
+  id: ObjectType
+  parent: System.Runtime.Serialization.SerializationInfo
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: ObjectType
+  fullName: System.Runtime.Serialization.SerializationInfo.ObjectType
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+    startLine: 209
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Returns the type of the object to be serialized.
+  syntax:
+    content: public Type ObjectType { get; }
+    content.vb: Public ReadOnly Property ObjectType As Type
+    parameters: []
+    return:
+      type: System.Type
+      description: The type of the object being serialized.
+- uid: System.Runtime.Serialization.SerializationInfo.IsFullTypeNameSetExplicit
+  id: IsFullTypeNameSetExplicit
+  parent: System.Runtime.Serialization.SerializationInfo
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: IsFullTypeNameSetExplicit
+  fullName: System.Runtime.Serialization.SerializationInfo.IsFullTypeNameSetExplicit
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+    startLine: 217
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Gets whether the full type name has been explicitly set.
+  syntax:
+    content: public bool IsFullTypeNameSetExplicit { get; }
+    content.vb: Public ReadOnly Property IsFullTypeNameSetExplicit As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: True if the full type name has been explicitly set; otherwise false.
+- uid: System.Runtime.Serialization.SerializationInfo.IsAssemblyNameSetExplicit
+  id: IsAssemblyNameSetExplicit
+  parent: System.Runtime.Serialization.SerializationInfo
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: IsAssemblyNameSetExplicit
+  fullName: System.Runtime.Serialization.SerializationInfo.IsAssemblyNameSetExplicit
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+    startLine: 225
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Gets whether the assembly name has been explicitly set.
+  syntax:
+    content: public bool IsAssemblyNameSetExplicit { get; }
+    content.vb: Public ReadOnly Property IsAssemblyNameSetExplicit As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: True if the assembly name has been explicitly set; otherwise false.
+- uid: System.Runtime.Serialization.SerializationInfo.GetEnumerator
+  id: GetEnumerator
+  parent: System.Runtime.Serialization.SerializationInfo
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: GetEnumerator()
+  fullName: System.Runtime.Serialization.SerializationInfo.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+    startLine: 233
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Returns a @'System.Runtime.Serialization.SerializationInfoEnumerator' used to iterate through the name-value pairs in the @'System.Runtime.Serialization.SerializationInfo' store.
+  syntax:
+    content: public SerializationInfoEnumerator GetEnumerator()
+    content.vb: Public Function GetEnumerator As SerializationInfoEnumerator
+    return:
+      type: System.Runtime.Serialization.SerializationInfoEnumerator
+      description: A @'System.Runtime.Serialization.SerializationInfoEnumerator' for parsing the name-value pairs contained in the @'System.Runtime.Serialization.SerializationInfo' store.
+- uid: System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.Object,System.Type)
+  id: AddValue(System.String,System.Object,System.Type)
+  parent: System.Runtime.Serialization.SerializationInfo
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: AddValue(String, Object, Type)
+  fullName: System.Runtime.Serialization.SerializationInfo.AddValue(System.String, System.Object, System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+    startLine: 275
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Adds a value into the @'System.Runtime.Serialization.SerializationInfo' store, where *value* is associated with *name* and is serialized as being of @'System.Type'*type*.
+  syntax:
+    content: public void AddValue(string name, object value, Type type)
+    content.vb: Public Sub AddValue(name As String, value As Object, type As Type)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name to associate with the value, so it can be deserialized later.
+    - id: value
+      type: System.Object
+      description: The value to be serialized. Any children of this object will automatically be serialized.
+    - id: type
+      type: System.Type
+      description: The @'System.Type' to associate with the current object. This parameter must always be the type of the object itself or of one of its base classes.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: If *name* or *type* is null.
+  - type: System.Runtime.Serialization.SerializationException
+    description: A value has already been associated with *name*.
+- uid: System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.Object)
+  id: AddValue(System.String,System.Object)
+  parent: System.Runtime.Serialization.SerializationInfo
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: AddValue(String, Object)
+  fullName: System.Runtime.Serialization.SerializationInfo.AddValue(System.String, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+    startLine: 291
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Adds the specified object into the @'System.Runtime.Serialization.SerializationInfo' store, where it is associated with a specified name.
+  syntax:
+    content: public void AddValue(string name, object value)
+    content.vb: Public Sub AddValue(name As String, value As Object)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name to associate with the value, so it can be deserialized later.
+    - id: value
+      type: System.Object
+      description: The value to be serialized. Any children of this object will automatically be serialized.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*name* is null.'
+  - type: System.Runtime.Serialization.SerializationException
+    description: A value has already been associated with *name*.
+- uid: System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.Boolean)
+  id: AddValue(System.String,System.Boolean)
+  parent: System.Runtime.Serialization.SerializationInfo
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: AddValue(String, Boolean)
+  fullName: System.Runtime.Serialization.SerializationInfo.AddValue(System.String, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+    startLine: 303
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Adds a Boolean value into the @'System.Runtime.Serialization.SerializationInfo' store.
+  syntax:
+    content: public void AddValue(string name, bool value)
+    content.vb: Public Sub AddValue(name As String, value As Boolean)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name to associate with the value, so it can be deserialized later.
+    - id: value
+      type: System.Boolean
+      description: The Boolean value to serialize.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *name* parameter is null.
+  - type: System.Runtime.Serialization.SerializationException
+    description: A value has already been associated with *name*.
+- uid: System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.Char)
+  id: AddValue(System.String,System.Char)
+  parent: System.Runtime.Serialization.SerializationInfo
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: AddValue(String, Char)
+  fullName: System.Runtime.Serialization.SerializationInfo.AddValue(System.String, System.Char)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+    startLine: 308
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Adds a Unicode character value into the @'System.Runtime.Serialization.SerializationInfo' store.
+  syntax:
+    content: public void AddValue(string name, char value)
+    content.vb: Public Sub AddValue(name As String, value As Char)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name to associate with the value, so it can be deserialized later.
+    - id: value
+      type: System.Char
+      description: The character value to serialize.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *name* parameter is null.
+  - type: System.Runtime.Serialization.SerializationException
+    description: A value has already been associated with *name*.
+- uid: System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.SByte)
+  id: AddValue(System.String,System.SByte)
+  parent: System.Runtime.Serialization.SerializationInfo
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: AddValue(String, SByte)
+  fullName: System.Runtime.Serialization.SerializationInfo.AddValue(System.String, System.SByte)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+    startLine: 314
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Adds an 8-bit signed integer value into the @'System.Runtime.Serialization.SerializationInfo' store.
+  syntax:
+    content: public void AddValue(string name, sbyte value)
+    content.vb: Public Sub AddValue(name As String, value As SByte)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name to associate with the value, so it can be deserialized later.
+    - id: value
+      type: System.SByte
+      description: The Sbyte value to serialize.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *name* parameter is null.
+  - type: System.Runtime.Serialization.SerializationException
+    description: A value has already been associated with *name*.
+- uid: System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.Byte)
+  id: AddValue(System.String,System.Byte)
+  parent: System.Runtime.Serialization.SerializationInfo
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: AddValue(String, Byte)
+  fullName: System.Runtime.Serialization.SerializationInfo.AddValue(System.String, System.Byte)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+    startLine: 320
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Adds an 8-bit unsigned integer value into the @'System.Runtime.Serialization.SerializationInfo' store.
+  syntax:
+    content: public void AddValue(string name, byte value)
+    content.vb: Public Sub AddValue(name As String, value As Byte)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name to associate with the value, so it can be deserialized later.
+    - id: value
+      type: System.Byte
+      description: The byte value to serialize.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *name* parameter is null.
+  - type: System.Runtime.Serialization.SerializationException
+    description: A value has already been associated with *name*.
+- uid: System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.Int16)
+  id: AddValue(System.String,System.Int16)
+  parent: System.Runtime.Serialization.SerializationInfo
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: AddValue(String, Int16)
+  fullName: System.Runtime.Serialization.SerializationInfo.AddValue(System.String, System.Int16)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+    startLine: 325
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Adds a 16-bit signed integer value into the @'System.Runtime.Serialization.SerializationInfo' store.
+  syntax:
+    content: public void AddValue(string name, short value)
+    content.vb: Public Sub AddValue(name As String, value As Short)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name to associate with the value, so it can be deserialized later.
+    - id: value
+      type: System.Int16
+      description: The Int16 value to serialize.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *name* parameter is null.
+  - type: System.Runtime.Serialization.SerializationException
+    description: A value has already been associated with *name*.
+- uid: System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.UInt16)
+  id: AddValue(System.String,System.UInt16)
+  parent: System.Runtime.Serialization.SerializationInfo
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: AddValue(String, UInt16)
+  fullName: System.Runtime.Serialization.SerializationInfo.AddValue(System.String, System.UInt16)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+    startLine: 330
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Adds a 16-bit unsigned integer value into the @'System.Runtime.Serialization.SerializationInfo' store.
+  syntax:
+    content: public void AddValue(string name, ushort value)
+    content.vb: Public Sub AddValue(name As String, value As UShort)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name to associate with the value, so it can be deserialized later.
+    - id: value
+      type: System.UInt16
+      description: The UInt16 value to serialize.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *name* parameter is null.
+  - type: System.Runtime.Serialization.SerializationException
+    description: A value has already been associated with *name*.
+- uid: System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.Int32)
+  id: AddValue(System.String,System.Int32)
+  parent: System.Runtime.Serialization.SerializationInfo
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: AddValue(String, Int32)
+  fullName: System.Runtime.Serialization.SerializationInfo.AddValue(System.String, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+    startLine: 336
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Adds a 32-bit signed integer value into the @'System.Runtime.Serialization.SerializationInfo' store.
+  syntax:
+    content: public void AddValue(string name, int value)
+    content.vb: Public Sub AddValue(name As String, value As Integer)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name to associate with the value, so it can be deserialized later.
+    - id: value
+      type: System.Int32
+      description: The Int32 value to serialize.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *name* parameter is null.
+  - type: System.Runtime.Serialization.SerializationException
+    description: A value has already been associated with *name*.
+- uid: System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.UInt32)
+  id: AddValue(System.String,System.UInt32)
+  parent: System.Runtime.Serialization.SerializationInfo
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: AddValue(String, UInt32)
+  fullName: System.Runtime.Serialization.SerializationInfo.AddValue(System.String, System.UInt32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+    startLine: 341
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Adds a 32-bit unsigned integer value into the @'System.Runtime.Serialization.SerializationInfo' store.
+  syntax:
+    content: public void AddValue(string name, uint value)
+    content.vb: Public Sub AddValue(name As String, value As UInteger)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name to associate with the value, so it can be deserialized later.
+    - id: value
+      type: System.UInt32
+      description: The UInt32 value to serialize.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *name* parameter is null.
+  - type: System.Runtime.Serialization.SerializationException
+    description: A value has already been associated with *name*.
+- uid: System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.Int64)
+  id: AddValue(System.String,System.Int64)
+  parent: System.Runtime.Serialization.SerializationInfo
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: AddValue(String, Int64)
+  fullName: System.Runtime.Serialization.SerializationInfo.AddValue(System.String, System.Int64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+    startLine: 347
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Adds a 64-bit signed integer value into the @'System.Runtime.Serialization.SerializationInfo' store.
+  syntax:
+    content: public void AddValue(string name, long value)
+    content.vb: Public Sub AddValue(name As String, value As Long)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name to associate with the value, so it can be deserialized later.
+    - id: value
+      type: System.Int64
+      description: The Int64 value to serialize.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *name* parameter is null.
+  - type: System.Runtime.Serialization.SerializationException
+    description: A value has already been associated with *name*.
+- uid: System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.UInt64)
+  id: AddValue(System.String,System.UInt64)
+  parent: System.Runtime.Serialization.SerializationInfo
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: AddValue(String, UInt64)
+  fullName: System.Runtime.Serialization.SerializationInfo.AddValue(System.String, System.UInt64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+    startLine: 352
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Adds a 64-bit unsigned integer value into the @'System.Runtime.Serialization.SerializationInfo' store.
+  syntax:
+    content: public void AddValue(string name, ulong value)
+    content.vb: Public Sub AddValue(name As String, value As ULong)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name to associate with the value, so it can be deserialized later.
+    - id: value
+      type: System.UInt64
+      description: The UInt64 value to serialize.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *name* parameter is null.
+  - type: System.Runtime.Serialization.SerializationException
+    description: A value has already been associated with *name*.
+- uid: System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.Single)
+  id: AddValue(System.String,System.Single)
+  parent: System.Runtime.Serialization.SerializationInfo
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: AddValue(String, Single)
+  fullName: System.Runtime.Serialization.SerializationInfo.AddValue(System.String, System.Single)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+    startLine: 358
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Adds a single-precision floating-point value into the @'System.Runtime.Serialization.SerializationInfo' store.
+  syntax:
+    content: public void AddValue(string name, float value)
+    content.vb: Public Sub AddValue(name As String, value As Single)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name to associate with the value, so it can be deserialized later.
+    - id: value
+      type: System.Single
+      description: The single value to serialize.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *name* parameter is null.
+  - type: System.Runtime.Serialization.SerializationException
+    description: A value has already been associated with *name*.
+- uid: System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.Double)
+  id: AddValue(System.String,System.Double)
+  parent: System.Runtime.Serialization.SerializationInfo
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: AddValue(String, Double)
+  fullName: System.Runtime.Serialization.SerializationInfo.AddValue(System.String, System.Double)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+    startLine: 363
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Adds a double-precision floating-point value into the @'System.Runtime.Serialization.SerializationInfo' store.
+  syntax:
+    content: public void AddValue(string name, double value)
+    content.vb: Public Sub AddValue(name As String, value As Double)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name to associate with the value, so it can be deserialized later.
+    - id: value
+      type: System.Double
+      description: The double value to serialize.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *name* parameter is null.
+  - type: System.Runtime.Serialization.SerializationException
+    description: A value has already been associated with *name*.
+- uid: System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.Decimal)
+  id: AddValue(System.String,System.Decimal)
+  parent: System.Runtime.Serialization.SerializationInfo
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: AddValue(String, Decimal)
+  fullName: System.Runtime.Serialization.SerializationInfo.AddValue(System.String, System.Decimal)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+    startLine: 368
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Adds a decimal value into the @'System.Runtime.Serialization.SerializationInfo' store.
+  syntax:
+    content: public void AddValue(string name, decimal value)
+    content.vb: Public Sub AddValue(name As String, value As Decimal)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name to associate with the value, so it can be deserialized later.
+    - id: value
+      type: System.Decimal
+      description: The decimal value to serialize.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: If The *name* parameter is null.
+  - type: System.Runtime.Serialization.SerializationException
+    description: If a value has already been associated with *name*.
+- uid: System.Runtime.Serialization.SerializationInfo.AddValue(System.String,System.DateTime)
+  id: AddValue(System.String,System.DateTime)
+  parent: System.Runtime.Serialization.SerializationInfo
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: AddValue(String, DateTime)
+  fullName: System.Runtime.Serialization.SerializationInfo.AddValue(System.String, System.DateTime)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+    startLine: 373
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Adds a @'System.DateTime' value into the @'System.Runtime.Serialization.SerializationInfo' store.
+  syntax:
+    content: public void AddValue(string name, DateTime value)
+    content.vb: Public Sub AddValue(name As String, value As Date)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name to associate with the value, so it can be deserialized later.
+    - id: value
+      type: System.DateTime
+      description: The @'System.DateTime' value to serialize.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *name* parameter is null.
+  - type: System.Runtime.Serialization.SerializationException
+    description: A value has already been associated with *name*.
+- uid: System.Runtime.Serialization.SerializationInfo.GetValue(System.String,System.Type)
+  id: GetValue(System.String,System.Type)
+  parent: System.Runtime.Serialization.SerializationInfo
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: GetValue(String, Type)
+  fullName: System.Runtime.Serialization.SerializationInfo.GetValue(System.String, System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+    startLine: 500
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Retrieves a value from the @'System.Runtime.Serialization.SerializationInfo' store.
+  syntax:
+    content: public object GetValue(string name, Type type)
+    content.vb: Public Function GetValue(name As String, type As Type) As Object
+    parameters:
+    - id: name
+      type: System.String
+      description: The name associated with the value to retrieve.
+    - id: type
+      type: System.Type
+      description: The @'System.Type' of the value to retrieve. If the stored value cannot be converted to this type, the system will throw a @'System.InvalidCastException'.
+    return:
+      type: System.Object
+      description: The object of the specified @'System.Type' associated with *name*.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*name* or *type* is null.'
+  - type: System.InvalidCastException
+    description: The value associated with *name* cannot be converted to *type*.
+  - type: System.Runtime.Serialization.SerializationException
+    description: An element with the specified name is not found in the current instance.
+- uid: System.Runtime.Serialization.SerializationInfo.GetBoolean(System.String)
+  id: GetBoolean(System.String)
+  parent: System.Runtime.Serialization.SerializationInfo
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: GetBoolean(String)
+  fullName: System.Runtime.Serialization.SerializationInfo.GetBoolean(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+    startLine: 569
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Retrieves a Boolean value from the @'System.Runtime.Serialization.SerializationInfo' store.
+  syntax:
+    content: public bool GetBoolean(string name)
+    content.vb: Public Function GetBoolean(name As String) As Boolean
+    parameters:
+    - id: name
+      type: System.String
+      description: The name associated with the value to retrieve.
+    return:
+      type: System.Boolean
+      description: The Boolean value associated with *name*.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*name* is null.'
+  - type: System.InvalidCastException
+    description: The value associated with *name* cannot be converted to a Boolean value.
+  - type: System.Runtime.Serialization.SerializationException
+    description: An element with the specified name is not found in the current instance.
+- uid: System.Runtime.Serialization.SerializationInfo.GetChar(System.String)
+  id: GetChar(System.String)
+  parent: System.Runtime.Serialization.SerializationInfo
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: GetChar(String)
+  fullName: System.Runtime.Serialization.SerializationInfo.GetChar(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+    startLine: 582
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Retrieves a Unicode character value from the @'System.Runtime.Serialization.SerializationInfo' store.
+  syntax:
+    content: public char GetChar(string name)
+    content.vb: Public Function GetChar(name As String) As Char
+    parameters:
+    - id: name
+      type: System.String
+      description: The name associated with the value to retrieve.
+    return:
+      type: System.Char
+      description: The Unicode character associated with *name*.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*name* is null.'
+  - type: System.InvalidCastException
+    description: The value associated with *name* cannot be converted to a Unicode character.
+  - type: System.Runtime.Serialization.SerializationException
+    description: An element with the specified name is not found in the current instance.
+- uid: System.Runtime.Serialization.SerializationInfo.GetSByte(System.String)
+  id: GetSByte(System.String)
+  parent: System.Runtime.Serialization.SerializationInfo
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: GetSByte(String)
+  fullName: System.Runtime.Serialization.SerializationInfo.GetSByte(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+    startLine: 595
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Retrieves an 8-bit signed integer value from the @'System.Runtime.Serialization.SerializationInfo' store.
+  syntax:
+    content: public sbyte GetSByte(string name)
+    content.vb: Public Function GetSByte(name As String) As SByte
+    parameters:
+    - id: name
+      type: System.String
+      description: The name associated with the value to retrieve.
+    return:
+      type: System.SByte
+      description: The 8-bit signed integer associated with *name*.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*name* is null.'
+  - type: System.InvalidCastException
+    description: The value associated with *name* cannot be converted to an 8-bit signed integer.
+  - type: System.Runtime.Serialization.SerializationException
+    description: An element with the specified name is not found in the current instance.
+- uid: System.Runtime.Serialization.SerializationInfo.GetByte(System.String)
+  id: GetByte(System.String)
+  parent: System.Runtime.Serialization.SerializationInfo
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: GetByte(String)
+  fullName: System.Runtime.Serialization.SerializationInfo.GetByte(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+    startLine: 609
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Retrieves an 8-bit unsigned integer value from the @'System.Runtime.Serialization.SerializationInfo' store.
+  syntax:
+    content: public byte GetByte(string name)
+    content.vb: Public Function GetByte(name As String) As Byte
+    parameters:
+    - id: name
+      type: System.String
+      description: The name associated with the value to retrieve.
+    return:
+      type: System.Byte
+      description: The 8-bit unsigned integer associated with *name*.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*name* is null.'
+  - type: System.InvalidCastException
+    description: The value associated with *name* cannot be converted to an 8-bit unsigned integer.
+  - type: System.Runtime.Serialization.SerializationException
+    description: An element with the specified name is not found in the current instance.
+- uid: System.Runtime.Serialization.SerializationInfo.GetInt16(System.String)
+  id: GetInt16(System.String)
+  parent: System.Runtime.Serialization.SerializationInfo
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: GetInt16(String)
+  fullName: System.Runtime.Serialization.SerializationInfo.GetInt16(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+    startLine: 622
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Retrieves a 16-bit signed integer value from the @'System.Runtime.Serialization.SerializationInfo' store.
+  syntax:
+    content: public short GetInt16(string name)
+    content.vb: Public Function GetInt16(name As String) As Short
+    parameters:
+    - id: name
+      type: System.String
+      description: The name associated with the value to retrieve.
+    return:
+      type: System.Int16
+      description: The 16-bit signed integer associated with *name*.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*name* is null.'
+  - type: System.InvalidCastException
+    description: The value associated with *name* cannot be converted to a 16-bit signed integer.
+  - type: System.Runtime.Serialization.SerializationException
+    description: An element with the specified name is not found in the current instance.
+- uid: System.Runtime.Serialization.SerializationInfo.GetUInt16(System.String)
+  id: GetUInt16(System.String)
+  parent: System.Runtime.Serialization.SerializationInfo
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: GetUInt16(String)
+  fullName: System.Runtime.Serialization.SerializationInfo.GetUInt16(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+    startLine: 635
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Retrieves a 16-bit unsigned integer value from the @'System.Runtime.Serialization.SerializationInfo' store.
+  syntax:
+    content: public ushort GetUInt16(string name)
+    content.vb: Public Function GetUInt16(name As String) As UShort
+    parameters:
+    - id: name
+      type: System.String
+      description: The name associated with the value to retrieve.
+    return:
+      type: System.UInt16
+      description: The 16-bit unsigned integer associated with *name*.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*name* is null.'
+  - type: System.InvalidCastException
+    description: The value associated with *name* cannot be converted to a 16-bit unsigned integer.
+  - type: System.Runtime.Serialization.SerializationException
+    description: An element with the specified name is not found in the current instance.
+- uid: System.Runtime.Serialization.SerializationInfo.GetInt32(System.String)
+  id: GetInt32(System.String)
+  parent: System.Runtime.Serialization.SerializationInfo
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: GetInt32(String)
+  fullName: System.Runtime.Serialization.SerializationInfo.GetInt32(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+    startLine: 649
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Retrieves a 32-bit signed integer value from the @'System.Runtime.Serialization.SerializationInfo' store.
+  syntax:
+    content: public int GetInt32(string name)
+    content.vb: Public Function GetInt32(name As String) As Integer
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the value to retrieve.
+    return:
+      type: System.Int32
+      description: The 32-bit signed integer associated with *name*.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*name* is null.'
+  - type: System.InvalidCastException
+    description: The value associated with *name* cannot be converted to a 32-bit signed integer.
+  - type: System.Runtime.Serialization.SerializationException
+    description: An element with the specified name is not found in the current instance.
+- uid: System.Runtime.Serialization.SerializationInfo.GetUInt32(System.String)
+  id: GetUInt32(System.String)
+  parent: System.Runtime.Serialization.SerializationInfo
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: GetUInt32(String)
+  fullName: System.Runtime.Serialization.SerializationInfo.GetUInt32(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+    startLine: 662
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Retrieves a 32-bit unsigned integer value from the @'System.Runtime.Serialization.SerializationInfo' store.
+  syntax:
+    content: public uint GetUInt32(string name)
+    content.vb: Public Function GetUInt32(name As String) As UInteger
+    parameters:
+    - id: name
+      type: System.String
+      description: The name associated with the value to retrieve.
+    return:
+      type: System.UInt32
+      description: The 32-bit unsigned integer associated with *name*.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*name* is null.'
+  - type: System.InvalidCastException
+    description: The value associated with *name* cannot be converted to a 32-bit unsigned integer.
+  - type: System.Runtime.Serialization.SerializationException
+    description: An element with the specified name is not found in the current instance.
+- uid: System.Runtime.Serialization.SerializationInfo.GetInt64(System.String)
+  id: GetInt64(System.String)
+  parent: System.Runtime.Serialization.SerializationInfo
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: GetInt64(String)
+  fullName: System.Runtime.Serialization.SerializationInfo.GetInt64(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+    startLine: 676
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Retrieves a 64-bit signed integer value from the @'System.Runtime.Serialization.SerializationInfo' store.
+  syntax:
+    content: public long GetInt64(string name)
+    content.vb: Public Function GetInt64(name As String) As Long
+    parameters:
+    - id: name
+      type: System.String
+      description: The name associated with the value to retrieve.
+    return:
+      type: System.Int64
+      description: The 64-bit signed integer associated with *name*.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*name* is null.'
+  - type: System.InvalidCastException
+    description: The value associated with *name* cannot be converted to a 64-bit signed integer.
+  - type: System.Runtime.Serialization.SerializationException
+    description: An element with the specified name is not found in the current instance.
+- uid: System.Runtime.Serialization.SerializationInfo.GetUInt64(System.String)
+  id: GetUInt64(System.String)
+  parent: System.Runtime.Serialization.SerializationInfo
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: GetUInt64(String)
+  fullName: System.Runtime.Serialization.SerializationInfo.GetUInt64(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+    startLine: 689
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Retrieves a 64-bit unsigned integer value from the @'System.Runtime.Serialization.SerializationInfo' store.
+  syntax:
+    content: public ulong GetUInt64(string name)
+    content.vb: Public Function GetUInt64(name As String) As ULong
+    parameters:
+    - id: name
+      type: System.String
+      description: The name associated with the value to retrieve.
+    return:
+      type: System.UInt64
+      description: The 64-bit unsigned integer associated with *name*.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*name* is null.'
+  - type: System.InvalidCastException
+    description: The value associated with *name* cannot be converted to a 64-bit unsigned integer.
+  - type: System.Runtime.Serialization.SerializationException
+    description: An element with the specified name is not found in the current instance.
+- uid: System.Runtime.Serialization.SerializationInfo.GetSingle(System.String)
+  id: GetSingle(System.String)
+  parent: System.Runtime.Serialization.SerializationInfo
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: GetSingle(String)
+  fullName: System.Runtime.Serialization.SerializationInfo.GetSingle(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+    startLine: 703
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Retrieves a single-precision floating-point value from the @'System.Runtime.Serialization.SerializationInfo' store.
+  syntax:
+    content: public float GetSingle(string name)
+    content.vb: Public Function GetSingle(name As String) As Single
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the value to retrieve.
+    return:
+      type: System.Single
+      description: The single-precision floating-point value associated with *name*.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*name* is null.'
+  - type: System.InvalidCastException
+    description: The value associated with *name* cannot be converted to a single-precision floating-point value.
+  - type: System.Runtime.Serialization.SerializationException
+    description: An element with the specified name is not found in the current instance.
+- uid: System.Runtime.Serialization.SerializationInfo.GetDouble(System.String)
+  id: GetDouble(System.String)
+  parent: System.Runtime.Serialization.SerializationInfo
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: GetDouble(String)
+  fullName: System.Runtime.Serialization.SerializationInfo.GetDouble(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+    startLine: 717
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Retrieves a double-precision floating-point value from the @'System.Runtime.Serialization.SerializationInfo' store.
+  syntax:
+    content: public double GetDouble(string name)
+    content.vb: Public Function GetDouble(name As String) As Double
+    parameters:
+    - id: name
+      type: System.String
+      description: The name associated with the value to retrieve.
+    return:
+      type: System.Double
+      description: The double-precision floating-point value associated with *name*.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*name* is null.'
+  - type: System.InvalidCastException
+    description: The value associated with *name* cannot be converted to a double-precision floating-point value.
+  - type: System.Runtime.Serialization.SerializationException
+    description: An element with the specified name is not found in the current instance.
+- uid: System.Runtime.Serialization.SerializationInfo.GetDecimal(System.String)
+  id: GetDecimal(System.String)
+  parent: System.Runtime.Serialization.SerializationInfo
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: GetDecimal(String)
+  fullName: System.Runtime.Serialization.SerializationInfo.GetDecimal(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+    startLine: 730
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Retrieves a decimal value from the @'System.Runtime.Serialization.SerializationInfo' store.
+  syntax:
+    content: public decimal GetDecimal(string name)
+    content.vb: Public Function GetDecimal(name As String) As Decimal
+    parameters:
+    - id: name
+      type: System.String
+      description: The name associated with the value to retrieve.
+    return:
+      type: System.Decimal
+      description: A decimal value from the @'System.Runtime.Serialization.SerializationInfo'.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*name* is null.'
+  - type: System.InvalidCastException
+    description: The value associated with *name* cannot be converted to a decimal.
+  - type: System.Runtime.Serialization.SerializationException
+    description: An element with the specified name is not found in the current instance.
+- uid: System.Runtime.Serialization.SerializationInfo.GetDateTime(System.String)
+  id: GetDateTime(System.String)
+  parent: System.Runtime.Serialization.SerializationInfo
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: GetDateTime(String)
+  fullName: System.Runtime.Serialization.SerializationInfo.GetDateTime(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+    startLine: 743
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Retrieves a @'System.DateTime' value from the @'System.Runtime.Serialization.SerializationInfo' store.
+  syntax:
+    content: public DateTime GetDateTime(string name)
+    content.vb: Public Function GetDateTime(name As String) As Date
+    parameters:
+    - id: name
+      type: System.String
+      description: The name associated with the value to retrieve.
+    return:
+      type: System.DateTime
+      description: The @'System.DateTime' value associated with *name*.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*name* is null.'
+  - type: System.InvalidCastException
+    description: The value associated with *name* cannot be converted to a @'System.DateTime' value.
+  - type: System.Runtime.Serialization.SerializationException
+    description: An element with the specified name is not found in the current instance.
+- uid: System.Runtime.Serialization.SerializationInfo.GetString(System.String)
+  id: GetString(System.String)
+  parent: System.Runtime.Serialization.SerializationInfo
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: GetString(String)
+  fullName: System.Runtime.Serialization.SerializationInfo.GetString(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/SerializationInfo.cs
+    startLine: 756
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Retrieves a @'System.String' value from the @'System.Runtime.Serialization.SerializationInfo' store.
+  syntax:
+    content: public string GetString(string name)
+    content.vb: Public Function GetString(name As String) As String
+    parameters:
+    - id: name
+      type: System.String
+      description: The name associated with the value to retrieve.
+    return:
+      type: System.String
+      description: The @'System.String' associated with *name*.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*name* is null.'
+  - type: System.InvalidCastException
+    description: The value associated with *name* cannot be converted to a @'System.String'.
+  - type: System.Runtime.Serialization.SerializationException
+    description: An element with the specified name is not found in the current instance.
+references:
+- uid: System.Runtime.Serialization
+  isExternal: false
+  name: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  fullName: System.Type
+- uid: System.Runtime.Serialization.IFormatterConverter
+  parent: System.Runtime.Serialization
+  isExternal: false
+  href: System.Runtime.Serialization.IFormatterConverter.yml
+  name: IFormatterConverter
+  fullName: System.Runtime.Serialization.IFormatterConverter
+  type: Interface
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Runtime.Serialization.SerializationInfoEnumerator
+  parent: System.Runtime.Serialization
+  isExternal: false
+  href: System.Runtime.Serialization.SerializationInfoEnumerator.yml
+  name: SerializationInfoEnumerator
+  fullName: System.Runtime.Serialization.SerializationInfoEnumerator
+  type: Class
+- uid: System.Char
+  parent: System
+  isExternal: true
+  name: Char
+  fullName: System.Char
+- uid: System.SByte
+  parent: System
+  isExternal: true
+  name: SByte
+  fullName: System.SByte
+- uid: System.Byte
+  parent: System
+  isExternal: true
+  name: Byte
+  fullName: System.Byte
+- uid: System.Int16
+  parent: System
+  isExternal: true
+  name: Int16
+  fullName: System.Int16
+- uid: System.UInt16
+  parent: System
+  isExternal: true
+  name: UInt16
+  fullName: System.UInt16
+- uid: System.UInt32
+  parent: System
+  isExternal: true
+  name: UInt32
+  fullName: System.UInt32
+- uid: System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  fullName: System.Int64
+- uid: System.UInt64
+  parent: System
+  isExternal: true
+  name: UInt64
+  fullName: System.UInt64
+- uid: System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  fullName: System.Single
+- uid: System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  fullName: System.Double
+- uid: System.Decimal
+  parent: System
+  isExternal: true
+  name: Decimal
+  fullName: System.Decimal
+- uid: System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  fullName: System.DateTime

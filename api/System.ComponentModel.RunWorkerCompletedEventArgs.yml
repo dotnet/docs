@@ -1,0 +1,406 @@
+items:
+- uid: System.ComponentModel.RunWorkerCompletedEventArgs
+  id: RunWorkerCompletedEventArgs
+  parent: System.ComponentModel
+  children:
+  - System.ComponentModel.RunWorkerCompletedEventArgs.#ctor(System.Object,System.Exception,System.Boolean)
+  - System.ComponentModel.RunWorkerCompletedEventArgs.Result
+  - System.ComponentModel.RunWorkerCompletedEventArgs.UserState
+  href: System.ComponentModel.RunWorkerCompletedEventArgs.yml
+  name: RunWorkerCompletedEventArgs
+  fullName: System.ComponentModel.RunWorkerCompletedEventArgs
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.ComponentModel.EventBasedAsync/src/System/ComponentModel/RunWorkerCompletedEvent.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.ComponentModel.EventBasedAsync/src/System/ComponentModel/RunWorkerCompletedEvent.cs
+    startLine: 7
+  assemblies:
+  - System.ComponentModel.EventBasedAsync
+  namespace: System.ComponentModel
+  summary: Provides data for the MethodNameCompleted event.
+  syntax:
+    content: 'public class RunWorkerCompletedEventArgs : AsyncCompletedEventArgs'
+    content.vb: Public Class RunWorkerCompletedEventArgs Inherits AsyncCompletedEventArgs
+  inheritance:
+  - System.Object
+  - System.EventArgs
+  - System.ComponentModel.AsyncCompletedEventArgs
+  inheritedMembers:
+  - System.ComponentModel.AsyncCompletedEventArgs.RaiseExceptionIfNecessary
+  - System.ComponentModel.AsyncCompletedEventArgs.Cancelled
+  - System.ComponentModel.AsyncCompletedEventArgs.Error
+  - System.EventArgs.Empty
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.ComponentModel.RunWorkerCompletedEventArgs.#ctor(System.Object,System.Exception,System.Boolean)
+  id: '#ctor(System.Object,System.Exception,System.Boolean)'
+  parent: System.ComponentModel.RunWorkerCompletedEventArgs
+  href: System.ComponentModel.RunWorkerCompletedEventArgs.yml
+  name: RunWorkerCompletedEventArgs(Object, Exception, Boolean)
+  fullName: System.ComponentModel.RunWorkerCompletedEventArgs.RunWorkerCompletedEventArgs(System.Object, System.Exception, System.Boolean)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.ComponentModel.EventBasedAsync/src/System/ComponentModel/RunWorkerCompletedEvent.cs
+    startLine: 11
+  assemblies:
+  - System.ComponentModel.EventBasedAsync
+  namespace: System.ComponentModel
+  summary: Initializes a new instance of the @'System.ComponentModel.RunWorkerCompletedEventArgs' class.
+  syntax:
+    content: public RunWorkerCompletedEventArgs(object result, Exception error, bool cancelled)
+    content.vb: Public Sub New(result As Object, error As Exception, cancelled As Boolean)
+    parameters:
+    - id: result
+      type: System.Object
+      description: The result of an asynchronous operation.
+    - id: error
+      type: System.Exception
+      description: Any error that occurred during the asynchronous operation.
+    - id: cancelled
+      type: System.Boolean
+      description: A value indicating whether the asynchronous operation was canceled.
+- uid: System.ComponentModel.RunWorkerCompletedEventArgs.Result
+  id: Result
+  parent: System.ComponentModel.RunWorkerCompletedEventArgs
+  href: System.ComponentModel.RunWorkerCompletedEventArgs.yml
+  name: Result
+  fullName: System.ComponentModel.RunWorkerCompletedEventArgs.Result
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.ComponentModel.EventBasedAsync/src/System/ComponentModel/RunWorkerCompletedEvent.cs
+    startLine: 19
+  assemblies:
+  - System.ComponentModel.EventBasedAsync
+  namespace: System.ComponentModel
+  summary: Gets a value that represents the result of an asynchronous operation.
+  syntax:
+    content: public object Result { get; }
+    content.vb: Public ReadOnly Property Result As Object
+    parameters: []
+    return:
+      type: System.Object
+      description: An @'System.Object' representing the result of an asynchronous operation.
+  exceptions:
+  - type: System.Reflection.TargetInvocationException
+    description: '@''System.ComponentModel.AsyncCompletedEventArgs.Error'' is not null. The @''System.Exception.InnerException'' property holds a reference to @''System.ComponentModel.AsyncCompletedEventArgs.Error''.'
+  - type: System.InvalidOperationException
+    description: '@''System.ComponentModel.AsyncCompletedEventArgs.Cancelled'' is true.'
+- uid: System.ComponentModel.RunWorkerCompletedEventArgs.UserState
+  id: UserState
+  parent: System.ComponentModel.RunWorkerCompletedEventArgs
+  href: System.ComponentModel.RunWorkerCompletedEventArgs.yml
+  name: UserState
+  fullName: System.ComponentModel.RunWorkerCompletedEventArgs.UserState
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.ComponentModel.EventBasedAsync/src/System/ComponentModel/RunWorkerCompletedEvent.cs
+    startLine: 29
+  assemblies:
+  - System.ComponentModel.EventBasedAsync
+  namespace: System.ComponentModel
+  summary: Gets a value that represents the user state.
+  syntax:
+    content: public object UserState { get; }
+    content.vb: Public ReadOnly Property UserState As Object
+    parameters: []
+    return:
+      type: System.Object
+      description: An @'System.Object' representing the user state.
+references:
+- uid: System.ComponentModel
+  isExternal: false
+  name: System.ComponentModel
+  fullName: System.ComponentModel
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.EventArgs
+  parent: System
+  isExternal: true
+  name: EventArgs
+  fullName: System.EventArgs
+- uid: System.ComponentModel.AsyncCompletedEventArgs
+  parent: System.ComponentModel
+  isExternal: false
+  href: System.ComponentModel.AsyncCompletedEventArgs.yml
+  name: AsyncCompletedEventArgs
+  fullName: System.ComponentModel.AsyncCompletedEventArgs
+  type: Class
+- uid: System.ComponentModel.AsyncCompletedEventArgs.RaiseExceptionIfNecessary
+  parent: System.ComponentModel.AsyncCompletedEventArgs
+  isExternal: false
+  href: System.ComponentModel.AsyncCompletedEventArgs.yml
+  name: RaiseExceptionIfNecessary()
+  fullName: System.ComponentModel.AsyncCompletedEventArgs.RaiseExceptionIfNecessary()
+  spec.csharp:
+  - uid: System.ComponentModel.AsyncCompletedEventArgs.RaiseExceptionIfNecessary
+    name: RaiseExceptionIfNecessary
+    fullName: System.ComponentModel.AsyncCompletedEventArgs.RaiseExceptionIfNecessary
+    href: System.ComponentModel.AsyncCompletedEventArgs.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.AsyncCompletedEventArgs.RaiseExceptionIfNecessary
+    name: RaiseExceptionIfNecessary
+    fullName: System.ComponentModel.AsyncCompletedEventArgs.RaiseExceptionIfNecessary
+    href: System.ComponentModel.AsyncCompletedEventArgs.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ComponentModel.AsyncCompletedEventArgs.Cancelled
+  parent: System.ComponentModel.AsyncCompletedEventArgs
+  isExternal: false
+  href: System.ComponentModel.AsyncCompletedEventArgs.yml
+  name: Cancelled
+  fullName: System.ComponentModel.AsyncCompletedEventArgs.Cancelled
+- uid: System.ComponentModel.AsyncCompletedEventArgs.Error
+  parent: System.ComponentModel.AsyncCompletedEventArgs
+  isExternal: false
+  href: System.ComponentModel.AsyncCompletedEventArgs.yml
+  name: Error
+  fullName: System.ComponentModel.AsyncCompletedEventArgs.Error
+- uid: System.EventArgs.Empty
+  parent: System.EventArgs
+  isExternal: true
+  name: Empty
+  fullName: System.EventArgs.Empty
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  fullName: System.Exception
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean

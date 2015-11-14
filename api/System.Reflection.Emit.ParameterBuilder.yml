@@ -1,0 +1,594 @@
+items:
+- uid: System.Reflection.Emit.ParameterBuilder
+  id: ParameterBuilder
+  parent: System.Reflection.Emit
+  children:
+  - System.Reflection.Emit.ParameterBuilder.Attributes
+  - System.Reflection.Emit.ParameterBuilder.GetToken
+  - System.Reflection.Emit.ParameterBuilder.IsIn
+  - System.Reflection.Emit.ParameterBuilder.IsOptional
+  - System.Reflection.Emit.ParameterBuilder.IsOut
+  - System.Reflection.Emit.ParameterBuilder.Name
+  - System.Reflection.Emit.ParameterBuilder.Position
+  - System.Reflection.Emit.ParameterBuilder.SetConstant(System.Object)
+  - System.Reflection.Emit.ParameterBuilder.SetCustomAttribute(System.Reflection.ConstructorInfo,System.Byte[])
+  - System.Reflection.Emit.ParameterBuilder.SetCustomAttribute(System.Reflection.Emit.CustomAttributeBuilder)
+  - System.Reflection.Emit.ParameterBuilder.SetMarshal(System.Reflection.Emit.UnmanagedMarshal)
+  href: System.Reflection.Emit.ParameterBuilder.yml
+  name: ParameterBuilder
+  fullName: System.Reflection.Emit.ParameterBuilder
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Reflection/Emit/ParameterBuilder.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Reflection/Emit/ParameterBuilder.cs
+    startLine: 20
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Creates or associates parameter information.
+  syntax:
+    content: 'public class ParameterBuilder : _ParameterBuilder'
+    content.vb: Public Class ParameterBuilder Implements _ParameterBuilder
+  inheritance:
+  - System.Object
+  implements:
+  - System.Runtime.InteropServices._ParameterBuilder
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Reflection.Emit.ParameterBuilder.SetMarshal(System.Reflection.Emit.UnmanagedMarshal)
+  id: SetMarshal(System.Reflection.Emit.UnmanagedMarshal)
+  parent: System.Reflection.Emit.ParameterBuilder
+  href: System.Reflection.Emit.ParameterBuilder.yml
+  name: SetMarshal(UnmanagedMarshal)
+  fullName: System.Reflection.Emit.ParameterBuilder.SetMarshal(System.Reflection.Emit.UnmanagedMarshal)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ParameterBuilder.cs
+    startLine: 26
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Specifies the marshaling for this parameter.
+  syntax:
+    content: public virtual void SetMarshal(UnmanagedMarshal unmanagedMarshal)
+    content.vb: Public Overridable Sub SetMarshal(unmanagedMarshal As UnmanagedMarshal)
+    parameters:
+    - id: unmanagedMarshal
+      type: System.Reflection.Emit.UnmanagedMarshal
+      description: The marshaling information for this parameter.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*unmanagedMarshal* is null.'
+- uid: System.Reflection.Emit.ParameterBuilder.SetConstant(System.Object)
+  id: SetConstant(System.Object)
+  parent: System.Reflection.Emit.ParameterBuilder
+  href: System.Reflection.Emit.ParameterBuilder.yml
+  name: SetConstant(Object)
+  fullName: System.Reflection.Emit.ParameterBuilder.SetConstant(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ParameterBuilder.cs
+    startLine: 45
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Sets the default value of the parameter.
+  syntax:
+    content: public virtual void SetConstant(object defaultValue)
+    content.vb: Public Overridable Sub SetConstant(defaultValue As Object)
+    parameters:
+    - id: defaultValue
+      type: System.Object
+      description: The default value of this parameter.
+  exceptions:
+  - type: System.ArgumentException
+    description: The parameter is not one of the supported types.-or-The type of *defaultValue* does not match the type of the parameter.-or-The parameter is of type @'System.Object' or other reference type, *defaultValue* is not null, and the value cannot be assigned to the reference type.
+- uid: System.Reflection.Emit.ParameterBuilder.SetCustomAttribute(System.Reflection.ConstructorInfo,System.Byte[])
+  id: SetCustomAttribute(System.Reflection.ConstructorInfo,System.Byte[])
+  parent: System.Reflection.Emit.ParameterBuilder
+  href: System.Reflection.Emit.ParameterBuilder.yml
+  name: SetCustomAttribute(ConstructorInfo, Byte[])
+  name.vb: SetCustomAttribute(ConstructorInfo, Byte())
+  fullName: System.Reflection.Emit.ParameterBuilder.SetCustomAttribute(System.Reflection.ConstructorInfo, System.Byte[])
+  fullName.vb: System.Reflection.Emit.ParameterBuilder.SetCustomAttribute(System.Reflection.ConstructorInfo, System.Byte())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ParameterBuilder.cs
+    startLine: 60
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Set a custom attribute using a specified custom attribute blob.
+  syntax:
+    content: public void SetCustomAttribute(ConstructorInfo con, byte[] binaryAttribute)
+    content.vb: Public Sub SetCustomAttribute(con As ConstructorInfo, binaryAttribute As Byte())
+    parameters:
+    - id: con
+      type: System.Reflection.ConstructorInfo
+      description: The constructor for the custom attribute.
+    - id: binaryAttribute
+      type: System.Byte[]
+      description: A byte blob representing the attributes.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*con* or *binaryAttribute* is null.'
+- uid: System.Reflection.Emit.ParameterBuilder.SetCustomAttribute(System.Reflection.Emit.CustomAttributeBuilder)
+  id: SetCustomAttribute(System.Reflection.Emit.CustomAttributeBuilder)
+  parent: System.Reflection.Emit.ParameterBuilder
+  href: System.Reflection.Emit.ParameterBuilder.yml
+  name: SetCustomAttribute(CustomAttributeBuilder)
+  fullName: System.Reflection.Emit.ParameterBuilder.SetCustomAttribute(System.Reflection.Emit.CustomAttributeBuilder)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ParameterBuilder.cs
+    startLine: 80
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Set a custom attribute using a custom attribute builder.
+  syntax:
+    content: public void SetCustomAttribute(CustomAttributeBuilder customBuilder)
+    content.vb: Public Sub SetCustomAttribute(customBuilder As CustomAttributeBuilder)
+    parameters:
+    - id: customBuilder
+      type: System.Reflection.Emit.CustomAttributeBuilder
+      description: An instance of a helper class to define the custom attribute.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*con* is null.'
+- uid: System.Reflection.Emit.ParameterBuilder.GetToken
+  id: GetToken
+  parent: System.Reflection.Emit.ParameterBuilder
+  href: System.Reflection.Emit.ParameterBuilder.yml
+  name: GetToken()
+  fullName: System.Reflection.Emit.ParameterBuilder.GetToken()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ParameterBuilder.cs
+    startLine: 117
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Retrieves the token for this parameter.
+  syntax:
+    content: public virtual ParameterToken GetToken()
+    content.vb: Public Overridable Function GetToken As ParameterToken
+    return:
+      type: System.Reflection.Emit.ParameterToken
+      description: Returns the token for this parameter.
+- uid: System.Reflection.Emit.ParameterBuilder.Name
+  id: Name
+  parent: System.Reflection.Emit.ParameterBuilder
+  href: System.Reflection.Emit.ParameterBuilder.yml
+  name: Name
+  fullName: System.Reflection.Emit.ParameterBuilder.Name
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ParameterBuilder.cs
+    startLine: 146
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Retrieves the name of this parameter.
+  syntax:
+    content: public virtual string Name { get; }
+    content.vb: Public Overridable ReadOnly Property Name As String
+    parameters: []
+    return:
+      type: System.String
+      description: Read-only. Retrieves the name of this parameter.
+- uid: System.Reflection.Emit.ParameterBuilder.Position
+  id: Position
+  parent: System.Reflection.Emit.ParameterBuilder
+  href: System.Reflection.Emit.ParameterBuilder.yml
+  name: Position
+  fullName: System.Reflection.Emit.ParameterBuilder.Position
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ParameterBuilder.cs
+    startLine: 150
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Retrieves the signature position for this parameter.
+  syntax:
+    content: public virtual int Position { get; }
+    content.vb: Public Overridable ReadOnly Property Position As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: Read-only. Retrieves the signature position for this parameter.
+- uid: System.Reflection.Emit.ParameterBuilder.Attributes
+  id: Attributes
+  parent: System.Reflection.Emit.ParameterBuilder
+  href: System.Reflection.Emit.ParameterBuilder.yml
+  name: Attributes
+  fullName: System.Reflection.Emit.ParameterBuilder.Attributes
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ParameterBuilder.cs
+    startLine: 154
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Retrieves the attributes for this parameter.
+  syntax:
+    content: public virtual int Attributes { get; }
+    content.vb: Public Overridable ReadOnly Property Attributes As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: Read-only. Retrieves the attributes for this parameter.
+- uid: System.Reflection.Emit.ParameterBuilder.IsIn
+  id: IsIn
+  parent: System.Reflection.Emit.ParameterBuilder
+  href: System.Reflection.Emit.ParameterBuilder.yml
+  name: IsIn
+  fullName: System.Reflection.Emit.ParameterBuilder.IsIn
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ParameterBuilder.cs
+    startLine: 158
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Retrieves whether this is an input parameter.
+  syntax:
+    content: public bool IsIn { get; }
+    content.vb: Public ReadOnly Property IsIn As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: Read-only. Retrieves whether this is an input parameter.
+- uid: System.Reflection.Emit.ParameterBuilder.IsOut
+  id: IsOut
+  parent: System.Reflection.Emit.ParameterBuilder
+  href: System.Reflection.Emit.ParameterBuilder.yml
+  name: IsOut
+  fullName: System.Reflection.Emit.ParameterBuilder.IsOut
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ParameterBuilder.cs
+    startLine: 161
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Retrieves whether this parameter is an output parameter.
+  syntax:
+    content: public bool IsOut { get; }
+    content.vb: Public ReadOnly Property IsOut As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: Read-only. Retrieves whether this parameter is an output parameter.
+- uid: System.Reflection.Emit.ParameterBuilder.IsOptional
+  id: IsOptional
+  parent: System.Reflection.Emit.ParameterBuilder
+  href: System.Reflection.Emit.ParameterBuilder.yml
+  name: IsOptional
+  fullName: System.Reflection.Emit.ParameterBuilder.IsOptional
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/ParameterBuilder.cs
+    startLine: 164
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Retrieves whether this parameter is optional.
+  syntax:
+    content: public bool IsOptional { get; }
+    content.vb: Public ReadOnly Property IsOptional As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: Read-only. Specifies whether this parameter is optional.
+references:
+- uid: System.Reflection.Emit
+  isExternal: false
+  name: System.Reflection.Emit
+  fullName: System.Reflection.Emit
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Reflection.Emit.UnmanagedMarshal
+  parent: System.Reflection.Emit
+  isExternal: false
+  href: System.Reflection.Emit.UnmanagedMarshal.yml
+  name: UnmanagedMarshal
+  fullName: System.Reflection.Emit.UnmanagedMarshal
+  type: Class
+- uid: System.Reflection.ConstructorInfo
+  parent: System.Reflection
+  isExternal: true
+  name: ConstructorInfo
+  fullName: System.Reflection.ConstructorInfo
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  name.vb: Byte()
+  fullName: System.Byte[]
+  fullName.vb: System.Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace
+- uid: System.Reflection.Emit.CustomAttributeBuilder
+  parent: System.Reflection.Emit
+  isExternal: false
+  href: System.Reflection.Emit.CustomAttributeBuilder.yml
+  name: CustomAttributeBuilder
+  fullName: System.Reflection.Emit.CustomAttributeBuilder
+  type: Class
+- uid: System.Reflection.Emit.ParameterToken
+  parent: System.Reflection.Emit
+  isExternal: false
+  href: System.Reflection.Emit.ParameterToken.yml
+  name: ParameterToken
+  fullName: System.Reflection.Emit.ParameterToken
+  type: Struct
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean

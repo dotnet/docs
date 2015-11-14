@@ -1,0 +1,1144 @@
+items:
+- uid: System.BitConverter
+  id: BitConverter
+  parent: System
+  children:
+  - System.BitConverter.DoubleToInt64Bits(System.Double)
+  - System.BitConverter.GetBytes(System.Boolean)
+  - System.BitConverter.GetBytes(System.Char)
+  - System.BitConverter.GetBytes(System.Double)
+  - System.BitConverter.GetBytes(System.Int16)
+  - System.BitConverter.GetBytes(System.Int32)
+  - System.BitConverter.GetBytes(System.Int64)
+  - System.BitConverter.GetBytes(System.Single)
+  - System.BitConverter.GetBytes(System.UInt16)
+  - System.BitConverter.GetBytes(System.UInt32)
+  - System.BitConverter.GetBytes(System.UInt64)
+  - System.BitConverter.Int64BitsToDouble(System.Int64)
+  - System.BitConverter.IsLittleEndian
+  - System.BitConverter.ToBoolean(System.Byte[],System.Int32)
+  - System.BitConverter.ToChar(System.Byte[],System.Int32)
+  - System.BitConverter.ToDouble(System.Byte[],System.Int32)
+  - System.BitConverter.ToInt16(System.Byte[],System.Int32)
+  - System.BitConverter.ToInt32(System.Byte[],System.Int32)
+  - System.BitConverter.ToInt64(System.Byte[],System.Int32)
+  - System.BitConverter.ToSingle(System.Byte[],System.Int32)
+  - System.BitConverter.ToString(System.Byte[])
+  - System.BitConverter.ToString(System.Byte[],System.Int32)
+  - System.BitConverter.ToString(System.Byte[],System.Int32,System.Int32)
+  - System.BitConverter.ToUInt16(System.Byte[],System.Int32)
+  - System.BitConverter.ToUInt32(System.Byte[],System.Int32)
+  - System.BitConverter.ToUInt64(System.Byte[],System.Int32)
+  href: System.BitConverter.yml
+  name: BitConverter
+  fullName: System.BitConverter
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Runtime.Extensions/src/System/BitConverter.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
+    startLine: 13
+  assemblies:
+  - System.Runtime.Extensions.CoreCLR
+  namespace: System
+  summary: Converts base data types to an array of bytes, and an array of bytes to base data types.
+  syntax:
+    content: public class BitConverter
+    content.vb: Public Class BitConverter
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.BitConverter.IsLittleEndian
+  id: IsLittleEndian
+  parent: System.BitConverter
+  href: System.BitConverter.yml
+  name: IsLittleEndian
+  fullName: System.BitConverter.IsLittleEndian
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
+    startLine: 21
+  assemblies:
+  - System.Runtime.Extensions.CoreCLR
+  namespace: System
+  summary: Indicates the byte order ("endianness") in which data is stored in this computer architecture.
+  syntax:
+    content: public static readonly bool IsLittleEndian
+    content.vb: Public Shared ReadOnly IsLittleEndian As Boolean
+- uid: System.BitConverter.GetBytes(System.Boolean)
+  id: GetBytes(System.Boolean)
+  parent: System.BitConverter
+  href: System.BitConverter.yml
+  name: GetBytes(Boolean)
+  fullName: System.BitConverter.GetBytes(System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
+    startLine: 25
+  assemblies:
+  - System.Runtime.Extensions.CoreCLR
+  namespace: System
+  summary: Returns the specified Boolean value as an array of bytes.
+  syntax:
+    content: public static byte[] GetBytes(bool value)
+    content.vb: Public Shared Function GetBytes(value As Boolean) As Byte()
+    parameters:
+    - id: value
+      type: System.Boolean
+      description: A Boolean value.
+    return:
+      type: System.Byte[]
+      description: An array of bytes with length 1.
+- uid: System.BitConverter.GetBytes(System.Char)
+  id: GetBytes(System.Char)
+  parent: System.BitConverter
+  href: System.BitConverter.yml
+  name: GetBytes(Char)
+  fullName: System.BitConverter.GetBytes(System.Char)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
+    startLine: 36
+  assemblies:
+  - System.Runtime.Extensions.CoreCLR
+  namespace: System
+  summary: Returns the specified Unicode character value as an array of bytes.
+  syntax:
+    content: public static byte[] GetBytes(char value)
+    content.vb: Public Shared Function GetBytes(value As Char) As Byte()
+    parameters:
+    - id: value
+      type: System.Char
+      description: A character to convert.
+    return:
+      type: System.Byte[]
+      description: An array of bytes with length 2.
+- uid: System.BitConverter.GetBytes(System.Int16)
+  id: GetBytes(System.Int16)
+  parent: System.BitConverter
+  href: System.BitConverter.yml
+  name: GetBytes(Int16)
+  fullName: System.BitConverter.GetBytes(System.Int16)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
+    startLine: 46
+  assemblies:
+  - System.Runtime.Extensions.CoreCLR
+  namespace: System
+  summary: Returns the specified 16-bit signed integer value as an array of bytes.
+  syntax:
+    content: public static byte[] GetBytes(short value)
+    content.vb: Public Shared Function GetBytes(value As Short) As Byte()
+    parameters:
+    - id: value
+      type: System.Int16
+      description: The number to convert.
+    return:
+      type: System.Byte[]
+      description: An array of bytes with length 2.
+- uid: System.BitConverter.GetBytes(System.Int32)
+  id: GetBytes(System.Int32)
+  parent: System.BitConverter
+  href: System.BitConverter.yml
+  name: GetBytes(Int32)
+  fullName: System.BitConverter.GetBytes(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
+    startLine: 60
+  assemblies:
+  - System.Runtime.Extensions.CoreCLR
+  namespace: System
+  summary: Returns the specified 32-bit signed integer value as an array of bytes.
+  syntax:
+    content: public static byte[] GetBytes(int value)
+    content.vb: Public Shared Function GetBytes(value As Integer) As Byte()
+    parameters:
+    - id: value
+      type: System.Int32
+      description: The number to convert.
+    return:
+      type: System.Byte[]
+      description: An array of bytes with length 4.
+- uid: System.BitConverter.GetBytes(System.Int64)
+  id: GetBytes(System.Int64)
+  parent: System.BitConverter
+  href: System.BitConverter.yml
+  name: GetBytes(Int64)
+  fullName: System.BitConverter.GetBytes(System.Int64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
+    startLine: 74
+  assemblies:
+  - System.Runtime.Extensions.CoreCLR
+  namespace: System
+  summary: Returns the specified 64-bit signed integer value as an array of bytes.
+  syntax:
+    content: public static byte[] GetBytes(long value)
+    content.vb: Public Shared Function GetBytes(value As Long) As Byte()
+    parameters:
+    - id: value
+      type: System.Int64
+      description: The number to convert.
+    return:
+      type: System.Byte[]
+      description: An array of bytes with length 8.
+- uid: System.BitConverter.GetBytes(System.UInt16)
+  id: GetBytes(System.UInt16)
+  parent: System.BitConverter
+  href: System.BitConverter.yml
+  name: GetBytes(UInt16)
+  fullName: System.BitConverter.GetBytes(System.UInt16)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
+    startLine: 88
+  assemblies:
+  - System.Runtime.Extensions.CoreCLR
+  namespace: System
+  summary: Returns the specified 16-bit unsigned integer value as an array of bytes.
+  syntax:
+    content: public static byte[] GetBytes(ushort value)
+    content.vb: Public Shared Function GetBytes(value As UShort) As Byte()
+    parameters:
+    - id: value
+      type: System.UInt16
+      description: The number to convert.
+    return:
+      type: System.Byte[]
+      description: An array of bytes with length 2.
+- uid: System.BitConverter.GetBytes(System.UInt32)
+  id: GetBytes(System.UInt32)
+  parent: System.BitConverter
+  href: System.BitConverter.yml
+  name: GetBytes(UInt32)
+  fullName: System.BitConverter.GetBytes(System.UInt32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
+    startLine: 99
+  assemblies:
+  - System.Runtime.Extensions.CoreCLR
+  namespace: System
+  summary: Returns the specified 32-bit unsigned integer value as an array of bytes.
+  syntax:
+    content: public static byte[] GetBytes(uint value)
+    content.vb: Public Shared Function GetBytes(value As UInteger) As Byte()
+    parameters:
+    - id: value
+      type: System.UInt32
+      description: The number to convert.
+    return:
+      type: System.Byte[]
+      description: An array of bytes with length 4.
+- uid: System.BitConverter.GetBytes(System.UInt64)
+  id: GetBytes(System.UInt64)
+  parent: System.BitConverter
+  href: System.BitConverter.yml
+  name: GetBytes(UInt64)
+  fullName: System.BitConverter.GetBytes(System.UInt64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
+    startLine: 110
+  assemblies:
+  - System.Runtime.Extensions.CoreCLR
+  namespace: System
+  summary: Returns the specified 64-bit unsigned integer value as an array of bytes.
+  syntax:
+    content: public static byte[] GetBytes(ulong value)
+    content.vb: Public Shared Function GetBytes(value As ULong) As Byte()
+    parameters:
+    - id: value
+      type: System.UInt64
+      description: The number to convert.
+    return:
+      type: System.Byte[]
+      description: An array of bytes with length 8.
+- uid: System.BitConverter.GetBytes(System.Single)
+  id: GetBytes(System.Single)
+  parent: System.BitConverter
+  href: System.BitConverter.yml
+  name: GetBytes(Single)
+  fullName: System.BitConverter.GetBytes(System.Single)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
+    startLine: 121
+  assemblies:
+  - System.Runtime.Extensions.CoreCLR
+  namespace: System
+  summary: Returns the specified single-precision floating point value as an array of bytes.
+  syntax:
+    content: public static byte[] GetBytes(float value)
+    content.vb: Public Shared Function GetBytes(value As Single) As Byte()
+    parameters:
+    - id: value
+      type: System.Single
+      description: The number to convert.
+    return:
+      type: System.Byte[]
+      description: An array of bytes with length 4.
+- uid: System.BitConverter.GetBytes(System.Double)
+  id: GetBytes(System.Double)
+  parent: System.BitConverter
+  href: System.BitConverter.yml
+  name: GetBytes(Double)
+  fullName: System.BitConverter.GetBytes(System.Double)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
+    startLine: 132
+  assemblies:
+  - System.Runtime.Extensions.CoreCLR
+  namespace: System
+  summary: Returns the specified double-precision floating point value as an array of bytes.
+  syntax:
+    content: public static byte[] GetBytes(double value)
+    content.vb: Public Shared Function GetBytes(value As Double) As Byte()
+    parameters:
+    - id: value
+      type: System.Double
+      description: The number to convert.
+    return:
+      type: System.Byte[]
+      description: An array of bytes with length 8.
+- uid: System.BitConverter.ToChar(System.Byte[],System.Int32)
+  id: ToChar(System.Byte[],System.Int32)
+  parent: System.BitConverter
+  href: System.BitConverter.yml
+  name: ToChar(Byte[], Int32)
+  name.vb: ToChar(Byte(), Int32)
+  fullName: System.BitConverter.ToChar(System.Byte[], System.Int32)
+  fullName.vb: System.BitConverter.ToChar(System.Byte(), System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
+    startLine: 142
+  assemblies:
+  - System.Runtime.Extensions.CoreCLR
+  namespace: System
+  summary: Returns a Unicode character converted from two bytes at a specified position in a byte array.
+  syntax:
+    content: public static char ToChar(byte[] value, int startIndex)
+    content.vb: Public Shared Function ToChar(value As Byte(), startIndex As Integer) As Char
+    parameters:
+    - id: value
+      type: System.Byte[]
+      description: An array.
+    - id: startIndex
+      type: System.Int32
+      description: The starting position within *value*.
+    return:
+      type: System.Char
+      description: A character formed by two bytes beginning at *startIndex*.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*startIndex* equals the length of *value* minus 1.'
+  - type: System.ArgumentNullException
+    description: '*value* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*startIndex* is less than zero or greater than the length of *value* minus 1.'
+- uid: System.BitConverter.ToInt16(System.Byte[],System.Int32)
+  id: ToInt16(System.Byte[],System.Int32)
+  parent: System.BitConverter
+  href: System.BitConverter.yml
+  name: ToInt16(Byte[], Int32)
+  name.vb: ToInt16(Byte(), Int32)
+  fullName: System.BitConverter.ToInt16(System.Byte[], System.Int32)
+  fullName.vb: System.BitConverter.ToInt16(System.Byte(), System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
+    startLine: 156
+  assemblies:
+  - System.Runtime.Extensions.CoreCLR
+  namespace: System
+  summary: Returns a 16-bit signed integer converted from two bytes at a specified position in a byte array.
+  syntax:
+    content: public static short ToInt16(byte[] value, int startIndex)
+    content.vb: Public Shared Function ToInt16(value As Byte(), startIndex As Integer) As Short
+    parameters:
+    - id: value
+      type: System.Byte[]
+      description: An array of bytes.
+    - id: startIndex
+      type: System.Int32
+      description: The starting position within *value*.
+    return:
+      type: System.Int16
+      description: A 16-bit signed integer formed by two bytes beginning at *startIndex*.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*startIndex* equals the length of *value* minus 1.'
+  - type: System.ArgumentNullException
+    description: '*value* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*startIndex* is less than zero or greater than the length of *value* minus 1.'
+- uid: System.BitConverter.ToInt32(System.Byte[],System.Int32)
+  id: ToInt32(System.Byte[],System.Int32)
+  parent: System.BitConverter
+  href: System.BitConverter.yml
+  name: ToInt32(Byte[], Int32)
+  name.vb: ToInt32(Byte(), Int32)
+  fullName: System.BitConverter.ToInt32(System.Byte[], System.Int32)
+  fullName.vb: System.BitConverter.ToInt32(System.Byte(), System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
+    startLine: 186
+  assemblies:
+  - System.Runtime.Extensions.CoreCLR
+  namespace: System
+  summary: Returns a 32-bit signed integer converted from four bytes at a specified position in a byte array.
+  syntax:
+    content: public static int ToInt32(byte[] value, int startIndex)
+    content.vb: Public Shared Function ToInt32(value As Byte(), startIndex As Integer) As Integer
+    parameters:
+    - id: value
+      type: System.Byte[]
+      description: An array of bytes.
+    - id: startIndex
+      type: System.Int32
+      description: The starting position within *value*.
+    return:
+      type: System.Int32
+      description: A 32-bit signed integer formed by four bytes beginning at *startIndex*.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*startIndex* is greater than or equal to the length of *value* minus 3, and is less than or equal to the length of *value* minus 1.'
+  - type: System.ArgumentNullException
+    description: '*value* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*startIndex* is less than zero or greater than the length of *value* minus 1.'
+- uid: System.BitConverter.ToInt64(System.Byte[],System.Int32)
+  id: ToInt64(System.Byte[],System.Int32)
+  parent: System.BitConverter
+  href: System.BitConverter.yml
+  name: ToInt64(Byte[], Int32)
+  name.vb: ToInt64(Byte(), Int32)
+  fullName: System.BitConverter.ToInt64(System.Byte[], System.Int32)
+  fullName.vb: System.BitConverter.ToInt64(System.Byte(), System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
+    startLine: 216
+  assemblies:
+  - System.Runtime.Extensions.CoreCLR
+  namespace: System
+  summary: Returns a 64-bit signed integer converted from eight bytes at a specified position in a byte array.
+  syntax:
+    content: public static long ToInt64(byte[] value, int startIndex)
+    content.vb: Public Shared Function ToInt64(value As Byte(), startIndex As Integer) As Long
+    parameters:
+    - id: value
+      type: System.Byte[]
+      description: An array of bytes.
+    - id: startIndex
+      type: System.Int32
+      description: The starting position within *value*.
+    return:
+      type: System.Int64
+      description: A 64-bit signed integer formed by eight bytes beginning at *startIndex*.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*startIndex* is greater than or equal to the length of *value* minus 7, and is less than or equal to the length of *value* minus 1.'
+  - type: System.ArgumentNullException
+    description: '*value* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*startIndex* is less than zero or greater than the length of *value* minus 1.'
+- uid: System.BitConverter.ToUInt16(System.Byte[],System.Int32)
+  id: ToUInt16(System.Byte[],System.Int32)
+  parent: System.BitConverter
+  href: System.BitConverter.yml
+  name: ToUInt16(Byte[], Int32)
+  name.vb: ToUInt16(Byte(), Int32)
+  fullName: System.BitConverter.ToUInt16(System.Byte[], System.Int32)
+  fullName.vb: System.BitConverter.ToUInt16(System.Byte(), System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
+    startLine: 252
+  assemblies:
+  - System.Runtime.Extensions.CoreCLR
+  namespace: System
+  summary: Returns a 16-bit unsigned integer converted from two bytes at a specified position in a byte array.
+  syntax:
+    content: public static ushort ToUInt16(byte[] value, int startIndex)
+    content.vb: Public Shared Function ToUInt16(value As Byte(), startIndex As Integer) As UShort
+    parameters:
+    - id: value
+      type: System.Byte[]
+      description: The array of bytes.
+    - id: startIndex
+      type: System.Int32
+      description: The starting position within *value*.
+    return:
+      type: System.UInt16
+      description: A 16-bit unsigned integer formed by two bytes beginning at *startIndex*.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*startIndex* equals the length of *value* minus 1.'
+  - type: System.ArgumentNullException
+    description: '*value* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*startIndex* is less than zero or greater than the length of *value* minus 1.'
+- uid: System.BitConverter.ToUInt32(System.Byte[],System.Int32)
+  id: ToUInt32(System.Byte[],System.Int32)
+  parent: System.BitConverter
+  href: System.BitConverter.yml
+  name: ToUInt32(Byte[], Int32)
+  name.vb: ToUInt32(Byte(), Int32)
+  fullName: System.BitConverter.ToUInt32(System.Byte[], System.Int32)
+  fullName.vb: System.BitConverter.ToUInt32(System.Byte(), System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
+    startLine: 268
+  assemblies:
+  - System.Runtime.Extensions.CoreCLR
+  namespace: System
+  summary: Returns a 32-bit unsigned integer converted from four bytes at a specified position in a byte array.
+  syntax:
+    content: public static uint ToUInt32(byte[] value, int startIndex)
+    content.vb: Public Shared Function ToUInt32(value As Byte(), startIndex As Integer) As UInteger
+    parameters:
+    - id: value
+      type: System.Byte[]
+      description: An array of bytes.
+    - id: startIndex
+      type: System.Int32
+      description: The starting position within *value*.
+    return:
+      type: System.UInt32
+      description: A 32-bit unsigned integer formed by four bytes beginning at *startIndex*.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*startIndex* is greater than or equal to the length of *value* minus 3, and is less than or equal to the length of *value* minus 1.'
+  - type: System.ArgumentNullException
+    description: '*value* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*startIndex* is less than zero or greater than the length of *value* minus 1.'
+- uid: System.BitConverter.ToUInt64(System.Byte[],System.Int32)
+  id: ToUInt64(System.Byte[],System.Int32)
+  parent: System.BitConverter
+  href: System.BitConverter.yml
+  name: ToUInt64(Byte[], Int32)
+  name.vb: ToUInt64(Byte(), Int32)
+  fullName: System.BitConverter.ToUInt64(System.Byte[], System.Int32)
+  fullName.vb: System.BitConverter.ToUInt64(System.Byte(), System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
+    startLine: 284
+  assemblies:
+  - System.Runtime.Extensions.CoreCLR
+  namespace: System
+  summary: Returns a 64-bit unsigned integer converted from eight bytes at a specified position in a byte array.
+  syntax:
+    content: public static ulong ToUInt64(byte[] value, int startIndex)
+    content.vb: Public Shared Function ToUInt64(value As Byte(), startIndex As Integer) As ULong
+    parameters:
+    - id: value
+      type: System.Byte[]
+      description: An array of bytes.
+    - id: startIndex
+      type: System.Int32
+      description: The starting position within *value*.
+    return:
+      type: System.UInt64
+      description: A 64-bit unsigned integer formed by the eight bytes beginning at *startIndex*.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*startIndex* is greater than or equal to the length of *value* minus 7, and is less than or equal to the length of *value* minus 1.'
+  - type: System.ArgumentNullException
+    description: '*value* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*startIndex* is less than zero or greater than the length of *value* minus 1.'
+- uid: System.BitConverter.ToSingle(System.Byte[],System.Int32)
+  id: ToSingle(System.Byte[],System.Int32)
+  parent: System.BitConverter
+  href: System.BitConverter.yml
+  name: ToSingle(Byte[], Int32)
+  name.vb: ToSingle(Byte(), Int32)
+  fullName: System.BitConverter.ToSingle(System.Byte[], System.Int32)
+  fullName.vb: System.BitConverter.ToSingle(System.Byte(), System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
+    startLine: 299
+  assemblies:
+  - System.Runtime.Extensions.CoreCLR
+  namespace: System
+  summary: Returns a single-precision floating point number converted from four bytes at a specified position in a byte array.
+  syntax:
+    content: public static float ToSingle(byte[] value, int startIndex)
+    content.vb: Public Shared Function ToSingle(value As Byte(), startIndex As Integer) As Single
+    parameters:
+    - id: value
+      type: System.Byte[]
+      description: An array of bytes.
+    - id: startIndex
+      type: System.Int32
+      description: The starting position within *value*.
+    return:
+      type: System.Single
+      description: A single-precision floating point number formed by four bytes beginning at *startIndex*.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*startIndex* is greater than or equal to the length of *value* minus 3, and is less than or equal to the length of *value* minus 1.'
+  - type: System.ArgumentNullException
+    description: '*value* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*startIndex* is less than zero or greater than the length of *value* minus 1.'
+- uid: System.BitConverter.ToDouble(System.Byte[],System.Int32)
+  id: ToDouble(System.Byte[],System.Int32)
+  parent: System.BitConverter
+  href: System.BitConverter.yml
+  name: ToDouble(Byte[], Int32)
+  name.vb: ToDouble(Byte(), Int32)
+  fullName: System.BitConverter.ToDouble(System.Byte[], System.Int32)
+  fullName.vb: System.BitConverter.ToDouble(System.Byte(), System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
+    startLine: 315
+  assemblies:
+  - System.Runtime.Extensions.CoreCLR
+  namespace: System
+  summary: Returns a double-precision floating point number converted from eight bytes at a specified position in a byte array.
+  syntax:
+    content: public static double ToDouble(byte[] value, int startIndex)
+    content.vb: Public Shared Function ToDouble(value As Byte(), startIndex As Integer) As Double
+    parameters:
+    - id: value
+      type: System.Byte[]
+      description: An array of bytes.
+    - id: startIndex
+      type: System.Int32
+      description: The starting position within *value*.
+    return:
+      type: System.Double
+      description: A double precision floating point number formed by eight bytes beginning at *startIndex*.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*startIndex* is greater than or equal to the length of *value* minus 7, and is less than or equal to the length of *value* minus 1.'
+  - type: System.ArgumentNullException
+    description: '*value* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*startIndex* is less than zero or greater than the length of *value* minus 1.'
+- uid: System.BitConverter.ToString(System.Byte[],System.Int32,System.Int32)
+  id: ToString(System.Byte[],System.Int32,System.Int32)
+  parent: System.BitConverter
+  href: System.BitConverter.yml
+  name: ToString(Byte[], Int32, Int32)
+  name.vb: ToString(Byte(), Int32, Int32)
+  fullName: System.BitConverter.ToString(System.Byte[], System.Int32, System.Int32)
+  fullName.vb: System.BitConverter.ToString(System.Byte(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
+    startLine: 342
+  assemblies:
+  - System.Runtime.Extensions.CoreCLR
+  namespace: System
+  summary: Converts the numeric value of each element of a specified subarray of bytes to its equivalent hexadecimal string representation.
+  syntax:
+    content: public static string ToString(byte[] value, int startIndex, int length)
+    content.vb: Public Shared Function ToString(value As Byte(), startIndex As Integer, length As Integer) As String
+    parameters:
+    - id: value
+      type: System.Byte[]
+      description: An array of bytes.
+    - id: startIndex
+      type: System.Int32
+      description: The starting position within *value*.
+    - id: length
+      type: System.Int32
+      description: The number of array elements in *value* to convert.
+    return:
+      type: System.String
+      description: A string of hexadecimal pairs separated by hyphens, where each pair represents the corresponding element in a subarray of *value*; for example, "7F-2C-4A-00".
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*value* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*startIndex* or *length* is less than zero.-or-*startIndex* is greater than zero and is greater than or equal to the length of *value*.'
+  - type: System.ArgumentException
+    description: The combination of *startIndex* and *length* does not specify a position within *value*; that is, the *startIndex* parameter is greater than the length of *value* minus the *length* parameter.
+- uid: System.BitConverter.ToString(System.Byte[])
+  id: ToString(System.Byte[])
+  parent: System.BitConverter
+  href: System.BitConverter.yml
+  name: ToString(Byte[])
+  name.vb: ToString(Byte())
+  fullName: System.BitConverter.ToString(System.Byte[])
+  fullName.vb: System.BitConverter.ToString(System.Byte())
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
+    startLine: 383
+  assemblies:
+  - System.Runtime.Extensions.CoreCLR
+  namespace: System
+  summary: Converts the numeric value of each element of a specified array of bytes to its equivalent hexadecimal string representation.
+  syntax:
+    content: public static string ToString(byte[] value)
+    content.vb: Public Shared Function ToString(value As Byte()) As String
+    parameters:
+    - id: value
+      type: System.Byte[]
+      description: An array of bytes.
+    return:
+      type: System.String
+      description: A string of hexadecimal pairs separated by hyphens, where each pair represents the corresponding element in *value*; for example, "7F-2C-4A-00".
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*value* is null.'
+- uid: System.BitConverter.ToString(System.Byte[],System.Int32)
+  id: ToString(System.Byte[],System.Int32)
+  parent: System.BitConverter
+  href: System.BitConverter.yml
+  name: ToString(Byte[], Int32)
+  name.vb: ToString(Byte(), Int32)
+  fullName: System.BitConverter.ToString(System.Byte[], System.Int32)
+  fullName.vb: System.BitConverter.ToString(System.Byte(), System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
+    startLine: 393
+  assemblies:
+  - System.Runtime.Extensions.CoreCLR
+  namespace: System
+  summary: Converts the numeric value of each element of a specified subarray of bytes to its equivalent hexadecimal string representation.
+  syntax:
+    content: public static string ToString(byte[] value, int startIndex)
+    content.vb: Public Shared Function ToString(value As Byte(), startIndex As Integer) As String
+    parameters:
+    - id: value
+      type: System.Byte[]
+      description: An array of bytes.
+    - id: startIndex
+      type: System.Int32
+      description: The starting position within *value*.
+    return:
+      type: System.String
+      description: A string of hexadecimal pairs separated by hyphens, where each pair represents the corresponding element in a subarray of *value*; for example, "7F-2C-4A-00".
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*value* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*startIndex* is less than zero or greater than the length of *value* minus 1.'
+- uid: System.BitConverter.ToBoolean(System.Byte[],System.Int32)
+  id: ToBoolean(System.Byte[],System.Int32)
+  parent: System.BitConverter
+  href: System.BitConverter.yml
+  name: ToBoolean(Byte[], Int32)
+  name.vb: ToBoolean(Byte(), Int32)
+  fullName: System.BitConverter.ToBoolean(System.Byte[], System.Int32)
+  fullName.vb: System.BitConverter.ToBoolean(System.Byte(), System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
+    startLine: 411
+  assemblies:
+  - System.Runtime.Extensions.CoreCLR
+  namespace: System
+  summary: Returns a Boolean value converted from one byte at a specified position in a byte array.
+  syntax:
+    content: public static bool ToBoolean(byte[] value, int startIndex)
+    content.vb: Public Shared Function ToBoolean(value As Byte(), startIndex As Integer) As Boolean
+    parameters:
+    - id: value
+      type: System.Byte[]
+      description: An array of bytes.
+    - id: startIndex
+      type: System.Int32
+      description: The starting position within *value*.
+    return:
+      type: System.Boolean
+      description: true if the byte at *startIndex* in *value* is nonzero; otherwise, false.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*value* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*startIndex* is less than zero or greater than the length of *value* minus 1.'
+- uid: System.BitConverter.DoubleToInt64Bits(System.Double)
+  id: DoubleToInt64Bits(System.Double)
+  parent: System.BitConverter
+  href: System.BitConverter.yml
+  name: DoubleToInt64Bits(Double)
+  fullName: System.BitConverter.DoubleToInt64Bits(System.Double)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
+    startLine: 424
+  assemblies:
+  - System.Runtime.Extensions.CoreCLR
+  namespace: System
+  summary: Converts the specified double-precision floating point number to a 64-bit signed integer.
+  syntax:
+    content: public static long DoubleToInt64Bits(double value)
+    content.vb: Public Shared Function DoubleToInt64Bits(value As Double) As Long
+    parameters:
+    - id: value
+      type: System.Double
+      description: The number to convert.
+    return:
+      type: System.Int64
+      description: A 64-bit signed integer whose value is equivalent to *value*.
+- uid: System.BitConverter.Int64BitsToDouble(System.Int64)
+  id: Int64BitsToDouble(System.Int64)
+  parent: System.BitConverter
+  href: System.BitConverter.yml
+  name: Int64BitsToDouble(Int64)
+  fullName: System.BitConverter.Int64BitsToDouble(System.Int64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Runtime.Extensions/src/System/BitConverter.cs
+    startLine: 436
+  assemblies:
+  - System.Runtime.Extensions.CoreCLR
+  namespace: System
+  summary: Converts the specified 64-bit signed integer to a double-precision floating point number.
+  syntax:
+    content: public static double Int64BitsToDouble(long value)
+    content.vb: Public Shared Function Int64BitsToDouble(value As Long) As Double
+    parameters:
+    - id: value
+      type: System.Int64
+      description: The number to convert.
+    return:
+      type: System.Double
+      description: A double-precision floating point number whose value is equivalent to *value*.
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  name.vb: Byte()
+  fullName: System.Byte[]
+  fullName.vb: System.Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Char
+  parent: System
+  isExternal: true
+  name: Char
+  fullName: System.Char
+- uid: System.Int16
+  parent: System
+  isExternal: true
+  name: Int16
+  fullName: System.Int16
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  fullName: System.Int64
+- uid: System.UInt16
+  parent: System
+  isExternal: true
+  name: UInt16
+  fullName: System.UInt16
+- uid: System.UInt32
+  parent: System
+  isExternal: true
+  name: UInt32
+  fullName: System.UInt32
+- uid: System.UInt64
+  parent: System
+  isExternal: true
+  name: UInt64
+  fullName: System.UInt64
+- uid: System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  fullName: System.Single
+- uid: System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  fullName: System.Double
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String

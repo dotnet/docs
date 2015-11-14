@@ -1,0 +1,128 @@
+items:
+- uid: System.Runtime.Serialization.ISerializationSurrogate
+  id: ISerializationSurrogate
+  parent: System.Runtime.Serialization
+  children:
+  - System.Runtime.Serialization.ISerializationSurrogate.GetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - System.Runtime.Serialization.ISerializationSurrogate.SetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext,System.Runtime.Serialization.ISurrogateSelector)
+  href: System.Runtime.Serialization.ISerializationSurrogate.yml
+  name: ISerializationSurrogate
+  fullName: System.Runtime.Serialization.ISerializationSurrogate
+  type: Interface
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/Serialization/ISerializationSurrogate.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/Serialization/ISerializationSurrogate.cs
+    startLine: 19
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Implements a serialization surrogate selector that allows one object to perform serialization and deserialization of another.
+  syntax:
+    content: public interface ISerializationSurrogate
+    content.vb: Public Interface ISerializationSurrogate
+- uid: System.Runtime.Serialization.ISerializationSurrogate.GetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  id: GetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: System.Runtime.Serialization.ISerializationSurrogate
+  href: System.Runtime.Serialization.ISerializationSurrogate.yml
+  name: GetObjectData(Object, SerializationInfo, StreamingContext)
+  fullName: System.Runtime.Serialization.ISerializationSurrogate.GetObjectData(System.Object, System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/ISerializationSurrogate.cs
+    startLine: 25
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Populates the provided @'System.Runtime.Serialization.SerializationInfo' with the data needed to serialize the object.
+  syntax:
+    content: void GetObjectData(object obj, SerializationInfo info, StreamingContext context)
+    content.vb: Sub GetObjectData(obj As Object, info As SerializationInfo, context As StreamingContext)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to serialize.
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+      description: The @'System.Runtime.Serialization.SerializationInfo' to populate with data.
+    - id: context
+      type: System.Runtime.Serialization.StreamingContext
+      description: The destination (see @'System.Runtime.Serialization.StreamingContext') for this serialization.
+  exceptions:
+  - type: System.Security.SecurityException
+    description: The caller does not have the required permission.
+- uid: System.Runtime.Serialization.ISerializationSurrogate.SetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext,System.Runtime.Serialization.ISurrogateSelector)
+  id: SetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext,System.Runtime.Serialization.ISurrogateSelector)
+  parent: System.Runtime.Serialization.ISerializationSurrogate
+  href: System.Runtime.Serialization.ISerializationSurrogate.yml
+  name: SetObjectData(Object, SerializationInfo, StreamingContext, ISurrogateSelector)
+  fullName: System.Runtime.Serialization.ISerializationSurrogate.SetObjectData(System.Object, System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext, System.Runtime.Serialization.ISurrogateSelector)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/ISerializationSurrogate.cs
+    startLine: 31
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Populates the object using the information in the @'System.Runtime.Serialization.SerializationInfo'.
+  syntax:
+    content: object SetObjectData(object obj, SerializationInfo info, StreamingContext context, ISurrogateSelector selector)
+    content.vb: Function SetObjectData(obj As Object, info As SerializationInfo, context As StreamingContext, selector As ISurrogateSelector) As Object
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to populate.
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+      description: The information to populate the object.
+    - id: context
+      type: System.Runtime.Serialization.StreamingContext
+      description: The source from which the object is deserialized.
+    - id: selector
+      type: System.Runtime.Serialization.ISurrogateSelector
+      description: The surrogate selector where the search for a compatible surrogate begins.
+    return:
+      type: System.Object
+      description: The populated deserialized object.
+  exceptions:
+  - type: System.Security.SecurityException
+    description: The caller does not have the required permission.
+references:
+- uid: System.Runtime.Serialization
+  isExternal: false
+  name: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Runtime.Serialization.SerializationInfo
+  parent: System.Runtime.Serialization
+  isExternal: false
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: SerializationInfo
+  fullName: System.Runtime.Serialization.SerializationInfo
+  type: Class
+- uid: System.Runtime.Serialization.StreamingContext
+  isExternal: false
+  href: System.Runtime.Serialization.StreamingContext.yml
+  name: StreamingContext
+  fullName: System.Runtime.Serialization.StreamingContext
+  type: Struct
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Runtime.Serialization.ISurrogateSelector
+  parent: System.Runtime.Serialization
+  isExternal: false
+  href: System.Runtime.Serialization.ISurrogateSelector.yml
+  name: ISurrogateSelector
+  fullName: System.Runtime.Serialization.ISurrogateSelector
+  type: Interface

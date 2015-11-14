@@ -1,0 +1,2440 @@
+items:
+- uid: System.Diagnostics.Tracing.EventSource
+  id: EventSource
+  parent: System.Diagnostics.Tracing
+  children:
+  - System.Diagnostics.Tracing.EventSource.#ctor
+  - System.Diagnostics.Tracing.EventSource.#ctor(System.Boolean)
+  - System.Diagnostics.Tracing.EventSource.#ctor(System.Diagnostics.Tracing.EventSourceSettings)
+  - System.Diagnostics.Tracing.EventSource.#ctor(System.Diagnostics.Tracing.EventSourceSettings,System.String[])
+  - System.Diagnostics.Tracing.EventSource.#ctor(System.String)
+  - System.Diagnostics.Tracing.EventSource.#ctor(System.String,System.Diagnostics.Tracing.EventSourceSettings)
+  - System.Diagnostics.Tracing.EventSource.#ctor(System.String,System.Diagnostics.Tracing.EventSourceSettings,System.String[])
+  - System.Diagnostics.Tracing.EventSource.ConstructionException
+  - System.Diagnostics.Tracing.EventSource.CurrentThreadActivityId
+  - System.Diagnostics.Tracing.EventSource.Dispose
+  - System.Diagnostics.Tracing.EventSource.Dispose(System.Boolean)
+  - System.Diagnostics.Tracing.EventSource.EventCommandExecuted
+  - System.Diagnostics.Tracing.EventSource.Finalize
+  - System.Diagnostics.Tracing.EventSource.GenerateManifest(System.Type,System.String)
+  - System.Diagnostics.Tracing.EventSource.GenerateManifest(System.Type,System.String,System.Diagnostics.Tracing.EventManifestOptions)
+  - System.Diagnostics.Tracing.EventSource.GetGuid(System.Type)
+  - System.Diagnostics.Tracing.EventSource.GetName(System.Type)
+  - System.Diagnostics.Tracing.EventSource.GetSources
+  - System.Diagnostics.Tracing.EventSource.GetTrait(System.String)
+  - System.Diagnostics.Tracing.EventSource.Guid
+  - System.Diagnostics.Tracing.EventSource.IsEnabled
+  - System.Diagnostics.Tracing.EventSource.IsEnabled(System.Diagnostics.Tracing.EventLevel,System.Diagnostics.Tracing.EventKeywords)
+  - System.Diagnostics.Tracing.EventSource.IsEnabled(System.Diagnostics.Tracing.EventLevel,System.Diagnostics.Tracing.EventKeywords,System.Diagnostics.Tracing.EventChannel)
+  - System.Diagnostics.Tracing.EventSource.Name
+  - System.Diagnostics.Tracing.EventSource.OnEventCommand(System.Diagnostics.Tracing.EventCommandEventArgs)
+  - System.Diagnostics.Tracing.EventSource.SendCommand(System.Diagnostics.Tracing.EventSource,System.Diagnostics.Tracing.EventCommand,System.Collections.Generic.IDictionary{System.String,System.String})
+  - System.Diagnostics.Tracing.EventSource.SetCurrentThreadActivityId(System.Guid)
+  - System.Diagnostics.Tracing.EventSource.SetCurrentThreadActivityId(System.Guid,System.Guid@)
+  - System.Diagnostics.Tracing.EventSource.Settings
+  - System.Diagnostics.Tracing.EventSource.ToString
+  - System.Diagnostics.Tracing.EventSource.Write(System.String)
+  - System.Diagnostics.Tracing.EventSource.Write(System.String,System.Diagnostics.Tracing.EventSourceOptions)
+  - System.Diagnostics.Tracing.EventSource.Write``1(System.String,``0)
+  - System.Diagnostics.Tracing.EventSource.Write``1(System.String,System.Diagnostics.Tracing.EventSourceOptions,``0)
+  - System.Diagnostics.Tracing.EventSource.Write``1(System.String,System.Diagnostics.Tracing.EventSourceOptions@,``0@)
+  - System.Diagnostics.Tracing.EventSource.Write``1(System.String,System.Diagnostics.Tracing.EventSourceOptions@,System.Guid@,System.Guid@,``0@)
+  - System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32)
+  - System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Byte[])
+  - System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Int32)
+  - System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Int32,System.Int32)
+  - System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Int32,System.Int32,System.Int32)
+  - System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Int32,System.String)
+  - System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Int64)
+  - System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Int64,System.Byte[])
+  - System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Int64,System.Int64)
+  - System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Int64,System.Int64,System.Int64)
+  - System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Int64,System.String)
+  - System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Object[])
+  - System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.String)
+  - System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.String,System.Int32)
+  - System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.String,System.Int32,System.Int32)
+  - System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.String,System.Int64)
+  - System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.String,System.String)
+  - System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.String,System.String,System.String)
+  - System.Diagnostics.Tracing.EventSource.WriteEventCore(System.Int32,System.Int32,System.Diagnostics.Tracing.EventSource.EventData*)
+  - System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityId(System.Int32,System.Guid,System.Object[])
+  - System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityIdCore(System.Int32,System.Guid*,System.Int32,System.Diagnostics.Tracing.EventSource.EventData*)
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: EventSource
+  fullName: System.Diagnostics.Tracing.EventSource
+  type: Class
+  source:
+    remote: &o1
+      path: src/mscorlib/src/System/Diagnostics/Eventing/TraceLogging/TraceLoggingEventSource.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Diagnostics/Eventing/TraceLogging/TraceLoggingEventSource.cs
+    startLine: 42
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Provides the ability to create events for event tracing for Windows (ETW).
+  remarks: >-
+    This is a minimal definition for a custom event source:
+
+    <code>
+
+    [EventSource(Name="Samples-Demos-Minimal")]
+
+    sealed class MinimalEventSource : EventSource
+
+    {
+
+    public static MinimalEventSource Log = new MinimalEventSource();
+
+    public void Load(long ImageBase, string Name) { WriteEvent(1, ImageBase, Name); }
+
+    public void Unload(long ImageBase) { WriteEvent(2, ImageBase); }
+
+    private MinimalEventSource() {}
+
+    }
+
+    </code>
+  syntax:
+    content: 'public class EventSource : IDisposable'
+    content.vb: Public Class EventSource Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Diagnostics.Tracing.EventSource.Name
+  id: Name
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: Name
+  fullName: System.Diagnostics.Tracing.EventSource.Name
+  type: Property
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 260
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: The friendly name of the class that is derived from the event source.
+  syntax:
+    content: public string Name { get; }
+    content.vb: Public ReadOnly Property Name As String
+    parameters: []
+    return:
+      type: System.String
+      description: The friendly name of the derived class.  The default is the simple name of the class.
+- uid: System.Diagnostics.Tracing.EventSource.Guid
+  id: Guid
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: Guid
+  fullName: System.Diagnostics.Tracing.EventSource.Guid
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 264
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: The unique identifier for the event source.
+  syntax:
+    content: public Guid Guid { get; }
+    content.vb: Public ReadOnly Property Guid As Guid
+    parameters: []
+    return:
+      type: System.Guid
+      description: A unique identifier for the event source.
+- uid: System.Diagnostics.Tracing.EventSource.IsEnabled
+  id: IsEnabled
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: IsEnabled()
+  fullName: System.Diagnostics.Tracing.EventSource.IsEnabled()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 270
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Determines whether the current event source is enabled.
+  syntax:
+    content: public bool IsEnabled()
+    content.vb: Public Function IsEnabled As Boolean
+    return:
+      type: System.Boolean
+      description: true if the current event source is enabled; otherwise, false.
+- uid: System.Diagnostics.Tracing.EventSource.IsEnabled(System.Diagnostics.Tracing.EventLevel,System.Diagnostics.Tracing.EventKeywords)
+  id: IsEnabled(System.Diagnostics.Tracing.EventLevel,System.Diagnostics.Tracing.EventKeywords)
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: IsEnabled(EventLevel, EventKeywords)
+  fullName: System.Diagnostics.Tracing.EventSource.IsEnabled(System.Diagnostics.Tracing.EventLevel, System.Diagnostics.Tracing.EventKeywords)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 285
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Determines whether the current event source that has the specified level and keyword is enabled.
+  syntax:
+    content: public bool IsEnabled(EventLevel level, EventKeywords keywords)
+    content.vb: Public Function IsEnabled(level As EventLevel, keywords As EventKeywords) As Boolean
+    parameters:
+    - id: level
+      type: System.Diagnostics.Tracing.EventLevel
+      description: The level of the event source.
+    - id: keywords
+      type: System.Diagnostics.Tracing.EventKeywords
+      description: The keyword of the event source.
+    return:
+      type: System.Boolean
+      description: true if the event source is enabled; otherwise, false.
+- uid: System.Diagnostics.Tracing.EventSource.IsEnabled(System.Diagnostics.Tracing.EventLevel,System.Diagnostics.Tracing.EventKeywords,System.Diagnostics.Tracing.EventChannel)
+  id: IsEnabled(System.Diagnostics.Tracing.EventLevel,System.Diagnostics.Tracing.EventKeywords,System.Diagnostics.Tracing.EventChannel)
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: IsEnabled(EventLevel, EventKeywords, EventChannel)
+  fullName: System.Diagnostics.Tracing.EventSource.IsEnabled(System.Diagnostics.Tracing.EventLevel, System.Diagnostics.Tracing.EventKeywords, System.Diagnostics.Tracing.EventChannel)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 301
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Determines whether the current event source is enabled for events with the specified level, keywords and channel.
+  syntax:
+    content: public bool IsEnabled(EventLevel level, EventKeywords keywords, EventChannel channel)
+    content.vb: Public Function IsEnabled(level As EventLevel, keywords As EventKeywords, channel As EventChannel) As Boolean
+    parameters:
+    - id: level
+      type: System.Diagnostics.Tracing.EventLevel
+      description: The event level to check. An event source will be considered enabled when its level is greater than or equal to *level*.
+    - id: keywords
+      type: System.Diagnostics.Tracing.EventKeywords
+      description: The event keywords to check.
+    - id: channel
+      type: System.Diagnostics.Tracing.EventChannel
+      description: The event channel to check.
+    return:
+      type: System.Boolean
+      description: true if the event source is enabled for the specified event level, keywords and channel; otherwise, false.The result of this method is only an approximation of whether a particular event is active.  Use it to avoid expensive computation for logging when logging is disabled.   Event sources may have additional filtering that determines their activity..
+- uid: System.Diagnostics.Tracing.EventSource.Settings
+  id: Settings
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: Settings
+  fullName: System.Diagnostics.Tracing.EventSource.Settings
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 392
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Gets the settings applied to this event source.
+  syntax:
+    content: public EventSourceSettings Settings { get; }
+    content.vb: Public ReadOnly Property Settings As EventSourceSettings
+    parameters: []
+    return:
+      type: System.Diagnostics.Tracing.EventSourceSettings
+      description: The settings applied to this event source.
+- uid: System.Diagnostics.Tracing.EventSource.GetGuid(System.Type)
+  id: GetGuid(System.Type)
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: GetGuid(Type)
+  fullName: System.Diagnostics.Tracing.EventSource.GetGuid(System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 403
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Gets the unique identifier for this implementation of the event source.
+  syntax:
+    content: public static Guid GetGuid(Type eventSourceType)
+    content.vb: Public Shared Function GetGuid(eventSourceType As Type) As Guid
+    parameters:
+    - id: eventSourceType
+      type: System.Type
+      description: The type of the event source.
+    return:
+      type: System.Guid
+      description: A unique identifier for this event source type.
+- uid: System.Diagnostics.Tracing.EventSource.GetName(System.Type)
+  id: GetName(System.Type)
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: GetName(Type)
+  fullName: System.Diagnostics.Tracing.EventSource.GetName(System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 439
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Gets the friendly name of the event source.
+  syntax:
+    content: public static string GetName(Type eventSourceType)
+    content.vb: Public Shared Function GetName(eventSourceType As Type) As String
+    parameters:
+    - id: eventSourceType
+      type: System.Type
+      description: The type of the event source.
+    return:
+      type: System.String
+      description: The friendly name of the event source. The default is the simple name of the class.
+- uid: System.Diagnostics.Tracing.EventSource.GenerateManifest(System.Type,System.String)
+  id: GenerateManifest(System.Type,System.String)
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: GenerateManifest(Type, String)
+  fullName: System.Diagnostics.Tracing.EventSource.GenerateManifest(System.Type, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 454
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Returns a string of the XML manifest that is associated with the current event source.
+  syntax:
+    content: public static string GenerateManifest(Type eventSourceType, string assemblyPathToIncludeInManifest)
+    content.vb: Public Shared Function GenerateManifest(eventSourceType As Type, assemblyPathToIncludeInManifest As String) As String
+    parameters:
+    - id: eventSourceType
+      type: System.Type
+      description: The type of the event source.
+    - id: assemblyPathToIncludeInManifest
+      type: System.String
+      description: The path to the assembly file (.dll) to include in the provider element of the manifest.
+    return:
+      type: System.String
+      description: The XML data string.
+- uid: System.Diagnostics.Tracing.EventSource.GenerateManifest(System.Type,System.String,System.Diagnostics.Tracing.EventManifestOptions)
+  id: GenerateManifest(System.Type,System.String,System.Diagnostics.Tracing.EventManifestOptions)
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: GenerateManifest(Type, String, EventManifestOptions)
+  fullName: System.Diagnostics.Tracing.EventSource.GenerateManifest(System.Type, System.String, System.Diagnostics.Tracing.EventManifestOptions)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 470
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Returns a string of the XML manifest that is associated with the current event source.
+  syntax:
+    content: public static string GenerateManifest(Type eventSourceType, string assemblyPathToIncludeInManifest, EventManifestOptions flags)
+    content.vb: Public Shared Function GenerateManifest(eventSourceType As Type, assemblyPathToIncludeInManifest As String, flags As EventManifestOptions) As String
+    parameters:
+    - id: eventSourceType
+      type: System.Type
+      description: The type of the event source.
+    - id: assemblyPathToIncludeInManifest
+      type: System.String
+      description: The path to the assembly file (.dll) file to include in the provider element of the manifest.
+    - id: flags
+      type: System.Diagnostics.Tracing.EventManifestOptions
+      description: A bitwise combination of the enumeration values that specify how the manifest is generated.
+    return:
+      type: System.String
+      description: The XML data string or null (see remarks).
+- uid: System.Diagnostics.Tracing.EventSource.GetSources
+  id: GetSources
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: GetSources()
+  fullName: System.Diagnostics.Tracing.EventSource.GetSources()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 485
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Gets a snapshot of all the event sources for the application domain.
+  syntax:
+    content: public static IEnumerable<EventSource> GetSources()
+    content.vb: Public Shared Function GetSources As IEnumerable(Of EventSource)
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Diagnostics.Tracing.EventSource}
+      description: An enumeration of all the event sources in the application domain.
+- uid: System.Diagnostics.Tracing.EventSource.SendCommand(System.Diagnostics.Tracing.EventSource,System.Diagnostics.Tracing.EventCommand,System.Collections.Generic.IDictionary{System.String,System.String})
+  id: SendCommand(System.Diagnostics.Tracing.EventSource,System.Diagnostics.Tracing.EventCommand,System.Collections.Generic.IDictionary{System.String,System.String})
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: SendCommand(EventSource, EventCommand, IDictionary<String, String>)
+  name.vb: SendCommand(EventSource, EventCommand, IDictionary(Of String, String))
+  fullName: System.Diagnostics.Tracing.EventSource.SendCommand(System.Diagnostics.Tracing.EventSource, System.Diagnostics.Tracing.EventCommand, System.Collections.Generic.IDictionary<System.String, System.String>)
+  fullName.vb: System.Diagnostics.Tracing.EventSource.SendCommand(System.Diagnostics.Tracing.EventSource, System.Diagnostics.Tracing.EventCommand, System.Collections.Generic.IDictionary(Of System.String, System.String))
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 509
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Sends a command to a specified event source.
+  syntax:
+    content: public static void SendCommand(EventSource eventSource, EventCommand command, IDictionary<string, string> commandArguments)
+    content.vb: Public Shared Sub SendCommand(eventSource As EventSource, command As EventCommand, commandArguments As IDictionary(Of String, String))
+    parameters:
+    - id: eventSource
+      type: System.Diagnostics.Tracing.EventSource
+      description: The event source to send the command to.
+    - id: command
+      type: System.Diagnostics.Tracing.EventCommand
+      description: The event command to send.
+    - id: commandArguments
+      type: System.Collections.Generic.IDictionary{System.String,System.String}
+      description: The arguments for the event command.
+- uid: System.Diagnostics.Tracing.EventSource.SetCurrentThreadActivityId(System.Guid)
+  id: SetCurrentThreadActivityId(System.Guid)
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: SetCurrentThreadActivityId(Guid)
+  fullName: System.Diagnostics.Tracing.EventSource.SetCurrentThreadActivityId(System.Guid)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 539
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: '[Supported in the .NET Framework 4.5.1 and later versions] Sets the activity ID on the current thread.'
+  syntax:
+    content: public static void SetCurrentThreadActivityId(Guid activityId)
+    content.vb: Public Shared Sub SetCurrentThreadActivityId(activityId As Guid)
+    parameters:
+    - id: activityId
+      type: System.Guid
+      description: The current thread's new activity ID, or @'System.Guid.Empty' to indicate that work on the current thread is not associated with any activity.
+- uid: System.Diagnostics.Tracing.EventSource.SetCurrentThreadActivityId(System.Guid,System.Guid@)
+  id: SetCurrentThreadActivityId(System.Guid,System.Guid@)
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: SetCurrentThreadActivityId(Guid, out Guid)
+  name.vb: SetCurrentThreadActivityId(Guid, ByRef Guid)
+  fullName: System.Diagnostics.Tracing.EventSource.SetCurrentThreadActivityId(System.Guid, out System.Guid)
+  fullName.vb: System.Diagnostics.Tracing.EventSource.SetCurrentThreadActivityId(System.Guid, ByRef System.Guid)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 589
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: '[Supported in the .NET Framework 4.5.1 and later versions] Sets the activity ID on the current thread, and returns the previous activity ID.'
+  syntax:
+    content: public static void SetCurrentThreadActivityId(Guid activityId, out Guid oldActivityThatWillContinue)
+    content.vb: Public Shared Sub SetCurrentThreadActivityId(activityId As Guid, ByRef oldActivityThatWillContinue As Guid)
+    parameters:
+    - id: activityId
+      type: System.Guid
+      description: The current thread's new activity ID, or @'System.Guid.Empty' to indicate that work on the current thread is not associated with any activity.
+    - id: oldActivityThatWillContinue
+      type: System.Guid
+      description: When this method returns, contains the previous activity ID on the current thread.
+- uid: System.Diagnostics.Tracing.EventSource.CurrentThreadActivityId
+  id: CurrentThreadActivityId
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: CurrentThreadActivityId
+  fullName: System.Diagnostics.Tracing.EventSource.CurrentThreadActivityId
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 610
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: '[Supported in the .NET Framework 4.5.1 and later versions] Gets the activity ID of the current thread.'
+  syntax:
+    content: public static Guid CurrentThreadActivityId { get; }
+    content.vb: Public Shared ReadOnly Property CurrentThreadActivityId As Guid
+    parameters: []
+    return:
+      type: System.Guid
+      description: The activity ID of the current thread.
+- uid: System.Diagnostics.Tracing.EventSource.ConstructionException
+  id: ConstructionException
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: ConstructionException
+  fullName: System.Diagnostics.Tracing.EventSource.ConstructionException
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 672
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: '[Supported in the .NET Framework 4.5.1 and later versions] Gets any exception that was thrown during the construction of the event source.'
+  syntax:
+    content: public Exception ConstructionException { get; }
+    content.vb: Public ReadOnly Property ConstructionException As Exception
+    parameters: []
+    return:
+      type: System.Exception
+      description: The exception that was thrown during the construction of the event source, or null if no exception was thrown.
+- uid: System.Diagnostics.Tracing.EventSource.GetTrait(System.String)
+  id: GetTrait(System.String)
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: GetTrait(String)
+  fullName: System.Diagnostics.Tracing.EventSource.GetTrait(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 682
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Gets the trait value associated with the specified key.
+  syntax:
+    content: public string GetTrait(string key)
+    content.vb: Public Function GetTrait(key As String) As String
+    parameters:
+    - id: key
+      type: System.String
+      description: The key of the trait to get.
+    return:
+      type: System.String
+      description: The trait value associated with the specified key. If the key is not found, returns null.
+- uid: System.Diagnostics.Tracing.EventSource.ToString
+  id: ToString
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: ToString()
+  fullName: System.Diagnostics.Tracing.EventSource.ToString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 698
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Obtains a string representation of the current event source instance.
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+      description: The name and unique identifier that identify the current event source.
+  overridden: System.Object.ToString
+- uid: System.Diagnostics.Tracing.EventSource.EventCommandExecuted
+  id: EventCommandExecuted
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: EventCommandExecuted
+  fullName: System.Diagnostics.Tracing.EventSource.EventCommandExecuted
+  type: Event
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 703
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Fires when a Command (e.g. Enable) comes from a an EventListener.
+  syntax:
+    content: public event EventHandler<EventCommandEventArgs> EventCommandExecuted
+    content.vb: Public Event EventCommandExecuted As EventHandler(Of EventCommandEventArgs)
+- uid: System.Diagnostics.Tracing.EventSource.#ctor
+  id: '#ctor'
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: EventSource()
+  fullName: System.Diagnostics.Tracing.EventSource.EventSource()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 739
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Creates a new instance of the @'System.Diagnostics.Tracing.EventSource' class.
+  syntax:
+    content: protected EventSource()
+    content.vb: Protected Sub New
+- uid: System.Diagnostics.Tracing.EventSource.#ctor(System.Boolean)
+  id: '#ctor(System.Boolean)'
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: EventSource(Boolean)
+  fullName: System.Diagnostics.Tracing.EventSource.EventSource(System.Boolean)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 755
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Creates a new instance of the @'System.Diagnostics.Tracing.EventSource' class and specifies whether to throw an exception when an error occurs in the underlying Windows code.
+  syntax:
+    content: protected EventSource(bool throwOnEventWriteErrors)
+    content.vb: Protected Sub New(throwOnEventWriteErrors As Boolean)
+    parameters:
+    - id: throwOnEventWriteErrors
+      type: System.Boolean
+      description: true to throw an exception when an error occurs in the underlying Windows code; otherwise, false.
+- uid: System.Diagnostics.Tracing.EventSource.#ctor(System.Diagnostics.Tracing.EventSourceSettings)
+  id: '#ctor(System.Diagnostics.Tracing.EventSourceSettings)'
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: EventSource(EventSourceSettings)
+  fullName: System.Diagnostics.Tracing.EventSource.EventSource(System.Diagnostics.Tracing.EventSourceSettings)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 762
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Creates a new instance of the @'System.Diagnostics.Tracing.EventSource' class with the specified configuration settings.
+  syntax:
+    content: protected EventSource(EventSourceSettings settings)
+    content.vb: Protected Sub New(settings As EventSourceSettings)
+    parameters:
+    - id: settings
+      type: System.Diagnostics.Tracing.EventSourceSettings
+      description: A bitwise combination of the enumeration values that specify the configuration settings to apply to the event source.
+- uid: System.Diagnostics.Tracing.EventSource.#ctor(System.Diagnostics.Tracing.EventSourceSettings,System.String[])
+  id: '#ctor(System.Diagnostics.Tracing.EventSourceSettings,System.String[])'
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: EventSource(EventSourceSettings, String[])
+  name.vb: EventSource(EventSourceSettings, String())
+  fullName: System.Diagnostics.Tracing.EventSource.EventSource(System.Diagnostics.Tracing.EventSourceSettings, System.String[])
+  fullName.vb: System.Diagnostics.Tracing.EventSource.EventSource(System.Diagnostics.Tracing.EventSourceSettings, System.String())
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 773
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Initializes a new instance of the @'System.Diagnostics.Tracing.EventSource' to be used with non-contract events that contains the specified settings and traits.
+  syntax:
+    content: protected EventSource(EventSourceSettings settings, params string[] traits)
+    content.vb: Protected Sub New(settings As EventSourceSettings, ParamArray traits As String())
+    parameters:
+    - id: settings
+      type: System.Diagnostics.Tracing.EventSourceSettings
+      description: A bitwise combination of the enumeration values that specify the configuration settings to apply to the event source.
+    - id: traits
+      type: System.String[]
+      description: The key-value pairs that specify traits for the event source.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*traits* is not specified in key-value pairs.'
+- uid: System.Diagnostics.Tracing.EventSource.OnEventCommand(System.Diagnostics.Tracing.EventCommandEventArgs)
+  id: OnEventCommand(System.Diagnostics.Tracing.EventCommandEventArgs)
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: OnEventCommand(EventCommandEventArgs)
+  fullName: System.Diagnostics.Tracing.EventSource.OnEventCommand(System.Diagnostics.Tracing.EventCommandEventArgs)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 783
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Called when the current event source is updated by the controller.
+  syntax:
+    content: protected virtual void OnEventCommand(EventCommandEventArgs command)
+    content.vb: Protected Overridable Sub OnEventCommand(command As EventCommandEventArgs)
+    parameters:
+    - id: command
+      type: System.Diagnostics.Tracing.EventCommandEventArgs
+      description: The arguments for the event.
+- uid: System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32)
+  id: WriteEvent(System.Int32)
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: WriteEvent(Int32)
+  fullName: System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 787
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Writes an event by using the provided event identifier.
+  syntax:
+    content: protected void WriteEvent(int eventId)
+    content.vb: Protected Sub WriteEvent(eventId As Integer)
+    parameters:
+    - id: eventId
+      type: System.Int32
+      description: The event identifier. This value should be between 0 and 65535.
+- uid: System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Int32)
+  id: WriteEvent(System.Int32,System.Int32)
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: WriteEvent(Int32, Int32)
+  fullName: System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 795
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Writes an event by using the provided event identifier and 32-bit integer argument.
+  syntax:
+    content: protected void WriteEvent(int eventId, int arg1)
+    content.vb: Protected Sub WriteEvent(eventId As Integer, arg1 As Integer)
+    parameters:
+    - id: eventId
+      type: System.Int32
+      description: The event identifier.  This value should be between 0 and 65535.
+    - id: arg1
+      type: System.Int32
+      description: An integer argument.
+- uid: System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Int32,System.Int32)
+  id: WriteEvent(System.Int32,System.Int32,System.Int32)
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: WriteEvent(Int32, Int32, Int32)
+  fullName: System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 808
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Writes an event by using the provided event identifier and 32-bit integer arguments.
+  syntax:
+    content: protected void WriteEvent(int eventId, int arg1, int arg2)
+    content.vb: Protected Sub WriteEvent(eventId As Integer, arg1 As Integer, arg2 As Integer)
+    parameters:
+    - id: eventId
+      type: System.Int32
+      description: The event identifier.  This value should be between 0 and 65535.
+    - id: arg1
+      type: System.Int32
+      description: An integer argument.
+    - id: arg2
+      type: System.Int32
+      description: An integer argument.
+- uid: System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Int32,System.Int32,System.Int32)
+  id: WriteEvent(System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: WriteEvent(Int32, Int32, Int32, Int32)
+  fullName: System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32, System.Int32, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 823
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Writes an event by using the provided event identifier and 32-bit integer arguments.
+  syntax:
+    content: protected void WriteEvent(int eventId, int arg1, int arg2, int arg3)
+    content.vb: Protected Sub WriteEvent(eventId As Integer, arg1 As Integer, arg2 As Integer, arg3 As Integer)
+    parameters:
+    - id: eventId
+      type: System.Int32
+      description: The event identifier.  This value should be between 0 and 65535.
+    - id: arg1
+      type: System.Int32
+      description: An integer argument.
+    - id: arg2
+      type: System.Int32
+      description: An integer argument.
+    - id: arg3
+      type: System.Int32
+      description: An integer argument.
+- uid: System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Int64)
+  id: WriteEvent(System.Int32,System.Int64)
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: WriteEvent(Int32, Int64)
+  fullName: System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32, System.Int64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 841
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Writes an event by using the provided event identifier and 64-bit integer argument.
+  syntax:
+    content: protected void WriteEvent(int eventId, long arg1)
+    content.vb: Protected Sub WriteEvent(eventId As Integer, arg1 As Long)
+    parameters:
+    - id: eventId
+      type: System.Int32
+      description: The event identifier.  This value should be between 0 and 65535.
+    - id: arg1
+      type: System.Int64
+      description: A 64 bit integer argument.
+- uid: System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Int64,System.Int64)
+  id: WriteEvent(System.Int32,System.Int64,System.Int64)
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: WriteEvent(Int32, Int64, Int64)
+  fullName: System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32, System.Int64, System.Int64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 854
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Writes an event by using the provided event identifier and 64-bit arguments.
+  syntax:
+    content: protected void WriteEvent(int eventId, long arg1, long arg2)
+    content.vb: Protected Sub WriteEvent(eventId As Integer, arg1 As Long, arg2 As Long)
+    parameters:
+    - id: eventId
+      type: System.Int32
+      description: The event identifier.  This value should be between 0 and 65535.
+    - id: arg1
+      type: System.Int64
+      description: A 64 bit integer argument.
+    - id: arg2
+      type: System.Int64
+      description: A 64 bit integer argument.
+- uid: System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Int64,System.Int64,System.Int64)
+  id: WriteEvent(System.Int32,System.Int64,System.Int64,System.Int64)
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: WriteEvent(Int32, Int64, Int64, Int64)
+  fullName: System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32, System.Int64, System.Int64, System.Int64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 869
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Writes an event by using the provided event identifier and 64-bit arguments.
+  syntax:
+    content: protected void WriteEvent(int eventId, long arg1, long arg2, long arg3)
+    content.vb: Protected Sub WriteEvent(eventId As Integer, arg1 As Long, arg2 As Long, arg3 As Long)
+    parameters:
+    - id: eventId
+      type: System.Int32
+      description: The event identifier.  This value should be between 0 and 65535.
+    - id: arg1
+      type: System.Int64
+      description: A 64 bit integer argument.
+    - id: arg2
+      type: System.Int64
+      description: A 64 bit integer argument.
+    - id: arg3
+      type: System.Int64
+      description: A 64 bit integer argument.
+- uid: System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.String)
+  id: WriteEvent(System.Int32,System.String)
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: WriteEvent(Int32, String)
+  fullName: System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 887
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Writes an event by using the provided event identifier and string argument.
+  syntax:
+    content: protected void WriteEvent(int eventId, string arg1)
+    content.vb: Protected Sub WriteEvent(eventId As Integer, arg1 As String)
+    parameters:
+    - id: eventId
+      type: System.Int32
+      description: The event identifier.  This value should be between 0 and 65535.
+    - id: arg1
+      type: System.String
+      description: A string argument.
+- uid: System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.String,System.String)
+  id: WriteEvent(System.Int32,System.String,System.String)
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: WriteEvent(Int32, String, String)
+  fullName: System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32, System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 904
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Writes an event by using the provided event identifier and string arguments.
+  syntax:
+    content: protected void WriteEvent(int eventId, string arg1, string arg2)
+    content.vb: Protected Sub WriteEvent(eventId As Integer, arg1 As String, arg2 As String)
+    parameters:
+    - id: eventId
+      type: System.Int32
+      description: The event identifier.  This value should be between 0 and 65535.
+    - id: arg1
+      type: System.String
+      description: A string argument.
+    - id: arg2
+      type: System.String
+      description: A string argument.
+- uid: System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.String,System.String,System.String)
+  id: WriteEvent(System.Int32,System.String,System.String,System.String)
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: WriteEvent(Int32, String, String, String)
+  fullName: System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 925
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Writes an event by using the provided event identifier and string arguments.
+  syntax:
+    content: protected void WriteEvent(int eventId, string arg1, string arg2, string arg3)
+    content.vb: Protected Sub WriteEvent(eventId As Integer, arg1 As String, arg2 As String, arg3 As String)
+    parameters:
+    - id: eventId
+      type: System.Int32
+      description: The event identifier.  This value should be between 0 and 65535.
+    - id: arg1
+      type: System.String
+      description: A string argument.
+    - id: arg2
+      type: System.String
+      description: A string argument.
+    - id: arg3
+      type: System.String
+      description: A string argument.
+- uid: System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.String,System.Int32)
+  id: WriteEvent(System.Int32,System.String,System.Int32)
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: WriteEvent(Int32, String, Int32)
+  fullName: System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32, System.String, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 951
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Writes an event by using the provided event identifier and arguments.
+  syntax:
+    content: protected void WriteEvent(int eventId, string arg1, int arg2)
+    content.vb: Protected Sub WriteEvent(eventId As Integer, arg1 As String, arg2 As Integer)
+    parameters:
+    - id: eventId
+      type: System.Int32
+      description: The event identifier.  This value should be between 0 and 65535.
+    - id: arg1
+      type: System.String
+      description: A string argument.
+    - id: arg2
+      type: System.Int32
+      description: A 32 bit integer argument.
+- uid: System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.String,System.Int32,System.Int32)
+  id: WriteEvent(System.Int32,System.String,System.Int32,System.Int32)
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: WriteEvent(Int32, String, Int32, Int32)
+  fullName: System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32, System.String, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 970
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Writes an event by using the provided event identifier and arguments.
+  syntax:
+    content: protected void WriteEvent(int eventId, string arg1, int arg2, int arg3)
+    content.vb: Protected Sub WriteEvent(eventId As Integer, arg1 As String, arg2 As Integer, arg3 As Integer)
+    parameters:
+    - id: eventId
+      type: System.Int32
+      description: The event identifier.  This value should be between 0 and 65535.
+    - id: arg1
+      type: System.String
+      description: A string argument.
+    - id: arg2
+      type: System.Int32
+      description: A 32 bit integer argument.
+    - id: arg3
+      type: System.Int32
+      description: A 32 bit integer argument.
+- uid: System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.String,System.Int64)
+  id: WriteEvent(System.Int32,System.String,System.Int64)
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: WriteEvent(Int32, String, Int64)
+  fullName: System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32, System.String, System.Int64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 992
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Writes an event by using the provided event identifier and arguments.
+  syntax:
+    content: protected void WriteEvent(int eventId, string arg1, long arg2)
+    content.vb: Protected Sub WriteEvent(eventId As Integer, arg1 As String, arg2 As Long)
+    parameters:
+    - id: eventId
+      type: System.Int32
+      description: The event identifier.  This value should be between 0 and 65535.
+    - id: arg1
+      type: System.String
+      description: A string argument.
+    - id: arg2
+      type: System.Int64
+      description: A 64 bit integer argument.
+- uid: System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Int64,System.String)
+  id: WriteEvent(System.Int32,System.Int64,System.String)
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: WriteEvent(Int32, Int64, String)
+  fullName: System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32, System.Int64, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 1012
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Writes an event by using the provided event identifier and 64-bit integer, and string arguments.
+  syntax:
+    content: protected void WriteEvent(int eventId, long arg1, string arg2)
+    content.vb: Protected Sub WriteEvent(eventId As Integer, arg1 As Long, arg2 As String)
+    parameters:
+    - id: eventId
+      type: System.Int32
+      description: The event identifier.  This value should be between 0 and 65535.
+    - id: arg1
+      type: System.Int64
+      description: A 64-bit integer argument.
+    - id: arg2
+      type: System.String
+      description: A string argument.
+- uid: System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Int32,System.String)
+  id: WriteEvent(System.Int32,System.Int32,System.String)
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: WriteEvent(Int32, Int32, String)
+  fullName: System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32, System.Int32, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 1032
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Writes an event by using the provided event identifier and 32-bit integer and string arguments.
+  syntax:
+    content: protected void WriteEvent(int eventId, int arg1, string arg2)
+    content.vb: Protected Sub WriteEvent(eventId As Integer, arg1 As Integer, arg2 As String)
+    parameters:
+    - id: eventId
+      type: System.Int32
+      description: The event identifier. This value should be between 0 and 65535.
+    - id: arg1
+      type: System.Int32
+      description: A 32-bit integer argument.
+    - id: arg2
+      type: System.String
+      description: A string argument.
+- uid: System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Byte[])
+  id: WriteEvent(System.Int32,System.Byte[])
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: WriteEvent(Int32, Byte[])
+  name.vb: WriteEvent(Int32, Byte())
+  fullName: System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32, System.Byte[])
+  fullName.vb: System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32, System.Byte())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 1051
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Writes an event by using the provided event identifier and byte array argument.
+  syntax:
+    content: protected void WriteEvent(int eventId, byte[] arg1)
+    content.vb: Protected Sub WriteEvent(eventId As Integer, arg1 As Byte())
+    parameters:
+    - id: eventId
+      type: System.Int32
+      description: The event identifier.  This value should be between 0 and 65535.
+    - id: arg1
+      type: System.Byte[]
+      description: A byte array argument.
+- uid: System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Int64,System.Byte[])
+  id: WriteEvent(System.Int32,System.Int64,System.Byte[])
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: WriteEvent(Int32, Int64, Byte[])
+  name.vb: WriteEvent(Int32, Int64, Byte())
+  fullName: System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32, System.Int64, System.Byte[])
+  fullName.vb: System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32, System.Int64, System.Byte())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 1071
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Writes the event data using the specified indentifier and 64-bit integer and byte array arguments.
+  syntax:
+    content: protected void WriteEvent(int eventId, long arg1, byte[] arg2)
+    content.vb: Protected Sub WriteEvent(eventId As Integer, arg1 As Long, arg2 As Byte())
+    parameters:
+    - id: eventId
+      type: System.Int32
+      description: The event identifier.  This value should be between 0 and 65535.
+    - id: arg1
+      type: System.Int64
+      description: A 64-bit integer argument.
+    - id: arg2
+      type: System.Byte[]
+      description: A byte array argument.
+- uid: System.Diagnostics.Tracing.EventSource.WriteEventCore(System.Int32,System.Int32,System.Diagnostics.Tracing.EventSource.EventData*)
+  id: WriteEventCore(System.Int32,System.Int32,System.Diagnostics.Tracing.EventSource.EventData*)
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: WriteEventCore(Int32, Int32, EventSource.EventData*)
+  fullName: System.Diagnostics.Tracing.EventSource.WriteEventCore(System.Int32, System.Int32, System.Diagnostics.Tracing.EventSource.EventData*)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 1160
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Creates a new <see cref="Overload:System.Diagnostics.Tracing.EventSource.WriteEvent" /> overload by using the provided event identifier and event data.
+  remarks: >-
+    <code>
+
+    protected unsafe void WriteEvent(int eventId, string arg1, long arg2)
+
+    {
+
+    if (IsEnabled())
+
+    {
+
+    if (arg2 == null) arg2 = "";
+
+    fixed (char* string2Bytes = arg2)
+
+    {
+
+    EventSource.EventData* descrs = stackalloc EventSource.EventData[2];
+
+    descrs[0].DataPointer = (IntPtr)(&amp;arg1);
+
+    descrs[0].Size = 8;
+
+    descrs[1].DataPointer = (IntPtr)string2Bytes;
+
+    descrs[1].Size = ((arg2.Length + 1) * 2);
+
+    WriteEventCore(eventId, 2, descrs);
+
+    }
+
+    }
+
+    }
+
+    </code>
+  syntax:
+    content: protected void WriteEventCore(int eventId, int eventDataCount, EventSource.EventData*data)
+    content.vb: Protected Sub WriteEventCore(eventId As Integer, eventDataCount As Integer, data As EventSource.EventData *)
+    parameters:
+    - id: eventId
+      type: System.Int32
+      description: The event identifier.
+    - id: eventDataCount
+      type: System.Int32
+      description: The number of event data items.
+    - id: data
+      type: System.Diagnostics.Tracing.EventSource.EventData*
+      description: The structure that contains the event data.
+- uid: System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityIdCore(System.Int32,System.Guid*,System.Int32,System.Diagnostics.Tracing.EventSource.EventData*)
+  id: WriteEventWithRelatedActivityIdCore(System.Int32,System.Guid*,System.Int32,System.Diagnostics.Tracing.EventSource.EventData*)
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: WriteEventWithRelatedActivityIdCore(Int32, Guid*, Int32, EventSource.EventData*)
+  fullName: System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityIdCore(System.Int32, System.Guid*, System.Int32, System.Diagnostics.Tracing.EventSource.EventData*)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 1192
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: '[Supported in the .NET Framework 4.5.1 and later versions] Writes an event that indicates that the current activity is related to another activity.'
+  remarks: >-
+    <code>
+
+    protected unsafe void WriteEventWithRelatedActivityId(int eventId, Guid relatedActivityId, string arg1, long arg2)
+
+    {
+
+    if (IsEnabled())
+
+    {
+
+    if (arg2 == null) arg2 = "";
+
+    fixed (char* string2Bytes = arg2)
+
+    {
+
+    EventSource.EventData* descrs = stackalloc EventSource.EventData[2];
+
+    descrs[0].DataPointer = (IntPtr)(&amp;arg1);
+
+    descrs[0].Size = 8;
+
+    descrs[1].DataPointer = (IntPtr)string2Bytes;
+
+    descrs[1].Size = ((arg2.Length + 1) * 2);
+
+    WriteEventWithRelatedActivityIdCore(eventId, relatedActivityId, 2, descrs);
+
+    }
+
+    }
+
+    }
+
+    </code>
+  syntax:
+    content: protected void WriteEventWithRelatedActivityIdCore(int eventId, Guid*relatedActivityId, int eventDataCount, EventSource.EventData*data)
+    content.vb: Protected Sub WriteEventWithRelatedActivityIdCore(eventId As Integer, relatedActivityId As Guid *, eventDataCount As Integer, data As EventSource.EventData *)
+    parameters:
+    - id: eventId
+      type: System.Int32
+      description: An identifier that uniquely identifies this event within the @'System.Diagnostics.Tracing.EventSource'.
+    - id: relatedActivityId
+      type: System.Guid*
+      description: A pointer to the GUID of the related activity ID.
+    - id: eventDataCount
+      type: System.Int32
+      description: The number of items in the *data* field.
+    - id: data
+      type: System.Diagnostics.Tracing.EventSource.EventData*
+      description: A pointer to the first item in the event data field.
+- uid: System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Object[])
+  id: WriteEvent(System.Int32,System.Object[])
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: WriteEvent(Int32, Object[])
+  name.vb: WriteEvent(Int32, Object())
+  fullName: System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32, System.Object[])
+  fullName.vb: System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32, System.Object())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 1348
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Writes an event by using the provided event identifier and array of arguments.
+  syntax:
+    content: protected void WriteEvent(int eventId, params object[] args)
+    content.vb: Protected Sub WriteEvent(eventId As Integer, ParamArray args As Object())
+    parameters:
+    - id: eventId
+      type: System.Int32
+      description: The event identifier.  This value should be between 0 and 65535.
+    - id: args
+      type: System.Object[]
+      description: An array of objects.
+- uid: System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityId(System.Int32,System.Guid,System.Object[])
+  id: WriteEventWithRelatedActivityId(System.Int32,System.Guid,System.Object[])
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: WriteEventWithRelatedActivityId(Int32, Guid, Object[])
+  name.vb: WriteEventWithRelatedActivityId(Int32, Guid, Object())
+  fullName: System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityId(System.Int32, System.Guid, System.Object[])
+  fullName.vb: System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityId(System.Int32, System.Guid, System.Object())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 1363
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: '[Supported in the .NET Framework 4.5.1 and later versions] Writes an event that indicates that the current activity is related to another activity.'
+  syntax:
+    content: protected void WriteEventWithRelatedActivityId(int eventId, Guid relatedActivityId, params object[] args)
+    content.vb: Protected Sub WriteEventWithRelatedActivityId(eventId As Integer, relatedActivityId As Guid, ParamArray args As Object())
+    parameters:
+    - id: eventId
+      type: System.Int32
+      description: An identifier that uniquely identifies this event within the @'System.Diagnostics.Tracing.EventSource'.
+    - id: relatedActivityId
+      type: System.Guid
+      description: The related activity identifier.
+    - id: args
+      type: System.Object[]
+      description: An array of objects that contain data about the event.
+- uid: System.Diagnostics.Tracing.EventSource.Dispose
+  id: Dispose
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: Dispose()
+  fullName: System.Diagnostics.Tracing.EventSource.Dispose()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 1375
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Releases all resources used by the current instance of the @'System.Diagnostics.Tracing.EventSource' class.
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+- uid: System.Diagnostics.Tracing.EventSource.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: Dispose(Boolean)
+  fullName: System.Diagnostics.Tracing.EventSource.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 1390
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Releases the unmanaged resources used by the @'System.Diagnostics.Tracing.EventSource' class and optionally releases the managed resources.
+  remarks: >-
+    Called from Dispose() with disposing=true, and from the finalizer (~EventSource) with disposing=false.
+
+    Guidelines:
+
+    1. We may be called more than once: do nothing after the first call.
+
+    2. Avoid throwing exceptions if disposing is false, i.e. if we're being finalized.
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: true to release both managed and unmanaged resources; false to release only unmanaged resources.
+- uid: System.Diagnostics.Tracing.EventSource.Finalize
+  id: Finalize
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: Finalize()
+  fullName: System.Diagnostics.Tracing.EventSource.Finalize()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventSource.cs
+    startLine: 1419
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Allows the @'System.Diagnostics.Tracing.EventSource' object to attempt to free resources and perform other cleanup operations before the  object is reclaimed by garbage collection.
+  syntax:
+    content: protected void Finalize()
+    content.vb: Protected Sub Finalize
+- uid: System.Diagnostics.Tracing.EventSource.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: EventSource(String)
+  fullName: System.Diagnostics.Tracing.EventSource.EventSource(System.String)
+  type: Constructor
+  source:
+    remote: *o1
+    path: src/mscorlib/src/System/Diagnostics/Eventing/TraceLogging/TraceLoggingEventSource.cs
+    startLine: 52
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Creates a new instance of the @'System.Diagnostics.Tracing.EventSource' class with the specified name.
+  syntax:
+    content: public EventSource(string eventSourceName)
+    content.vb: Public Sub New(eventSourceName As String)
+    parameters:
+    - id: eventSourceName
+      type: System.String
+      description: The name to apply to the event source. Must not be null.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*eventSourceName* is null.'
+- uid: System.Diagnostics.Tracing.EventSource.#ctor(System.String,System.Diagnostics.Tracing.EventSourceSettings)
+  id: '#ctor(System.String,System.Diagnostics.Tracing.EventSourceSettings)'
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: EventSource(String, EventSourceSettings)
+  fullName: System.Diagnostics.Tracing.EventSource.EventSource(System.String, System.Diagnostics.Tracing.EventSourceSettings)
+  type: Constructor
+  source:
+    remote: *o1
+    path: src/mscorlib/src/System/Diagnostics/Eventing/TraceLogging/TraceLoggingEventSource.cs
+    startLine: 66
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Creates a new instance of the @'System.Diagnostics.Tracing.EventSource' class with the specified name and settings.
+  syntax:
+    content: public EventSource(string eventSourceName, EventSourceSettings config)
+    content.vb: Public Sub New(eventSourceName As String, config As EventSourceSettings)
+    parameters:
+    - id: eventSourceName
+      type: System.String
+      description: The name to apply to the event source. Must not be null.
+    - id: config
+      type: System.Diagnostics.Tracing.EventSourceSettings
+      description: A bitwise combination of the enumeration values that specify the configuration settings to apply to the event source.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*eventSourceName* is null.'
+  - type: System.ArgumentNullException
+    description: '*eventSourceName* is null.'
+- uid: System.Diagnostics.Tracing.EventSource.#ctor(System.String,System.Diagnostics.Tracing.EventSourceSettings,System.String[])
+  id: '#ctor(System.String,System.Diagnostics.Tracing.EventSourceSettings,System.String[])'
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: EventSource(String, EventSourceSettings, String[])
+  name.vb: EventSource(String, EventSourceSettings, String())
+  fullName: System.Diagnostics.Tracing.EventSource.EventSource(System.String, System.Diagnostics.Tracing.EventSourceSettings, System.String[])
+  fullName.vb: System.Diagnostics.Tracing.EventSource.EventSource(System.String, System.Diagnostics.Tracing.EventSourceSettings, System.String())
+  type: Constructor
+  source:
+    remote: *o1
+    path: src/mscorlib/src/System/Diagnostics/Eventing/TraceLogging/TraceLoggingEventSource.cs
+    startLine: 85
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Creates a new instance of the @'System.Diagnostics.Tracing.EventSource' class with the specified configuration settings.
+  syntax:
+    content: public EventSource(string eventSourceName, EventSourceSettings config, params string[] traits)
+    content.vb: Public Sub New(eventSourceName As String, config As EventSourceSettings, ParamArray traits As String())
+    parameters:
+    - id: eventSourceName
+      type: System.String
+      description: The name to apply to the event source. Must not be null.
+    - id: config
+      type: System.Diagnostics.Tracing.EventSourceSettings
+      description: A bitwise combination of the enumeration values that specify the configuration settings to apply to the event source.
+    - id: traits
+      type: System.String[]
+      description: The key-value pairs that specify traits for the event source.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*eventSourceName* is null.'
+  - type: System.ArgumentException
+    description: '*traits* is not specified in key-value pairs.'
+- uid: System.Diagnostics.Tracing.EventSource.Write(System.String)
+  id: Write(System.String)
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: Write(String)
+  fullName: System.Diagnostics.Tracing.EventSource.Write(System.String)
+  type: Method
+  source:
+    remote: *o1
+    path: src/mscorlib/src/System/Diagnostics/Eventing/TraceLogging/TraceLoggingEventSource.cs
+    startLine: 106
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Writes an event without fields, but with the specified name and default options.
+  syntax:
+    content: public void Write(string eventName)
+    content.vb: Public Sub Write(eventName As String)
+    parameters:
+    - id: eventName
+      type: System.String
+      description: The name of the event to write.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*eventName* is null.'
+- uid: System.Diagnostics.Tracing.EventSource.Write(System.String,System.Diagnostics.Tracing.EventSourceOptions)
+  id: Write(System.String,System.Diagnostics.Tracing.EventSourceOptions)
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: Write(String, EventSourceOptions)
+  fullName: System.Diagnostics.Tracing.EventSource.Write(System.String, System.Diagnostics.Tracing.EventSourceOptions)
+  type: Method
+  source:
+    remote: *o1
+    path: src/mscorlib/src/System/Diagnostics/Eventing/TraceLogging/TraceLoggingEventSource.cs
+    startLine: 135
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Writes an event without fields, but with the specified name and options.
+  syntax:
+    content: public void Write(string eventName, EventSourceOptions options)
+    content.vb: Public Sub Write(eventName As String, options As EventSourceOptions)
+    parameters:
+    - id: eventName
+      type: System.String
+      description: The name of the event to write.
+    - id: options
+      type: System.Diagnostics.Tracing.EventSourceOptions
+      description: The options such as level, keywords and operation code for the event.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*eventName* is null.'
+- uid: System.Diagnostics.Tracing.EventSource.Write``1(System.String,``0)
+  id: Write``1(System.String,``0)
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: Write<T>(String, T)
+  name.vb: Write(Of T)(String, T)
+  fullName: System.Diagnostics.Tracing.EventSource.Write<T>(System.String, T)
+  fullName.vb: System.Diagnostics.Tracing.EventSource.Write(Of T)(System.String, T)
+  type: Method
+  source:
+    remote: *o1
+    path: src/mscorlib/src/System/Diagnostics/Eventing/TraceLogging/TraceLoggingEventSource.cs
+    startLine: 173
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Writes an event with the specified name and data.
+  syntax:
+    content: public void Write<T>(string eventName, T data)
+    content.vb: Public Sub Write(Of T)(eventName As String, data As T)
+    parameters:
+    - id: eventName
+      type: System.String
+      description: The name of the event.
+    - id: data
+      type: '{T}'
+      description: The event data. This type must be an anonymous type or marked with the @'System.Diagnostics.Tracing.EventDataAttribute' attribute.
+    typeParameters:
+    - id: T
+      description: >-
+        The type that defines the event and its payload. This must be an
+
+        anonymous type or a type with an [EventData] attribute.
+- uid: System.Diagnostics.Tracing.EventSource.Write``1(System.String,System.Diagnostics.Tracing.EventSourceOptions,``0)
+  id: Write``1(System.String,System.Diagnostics.Tracing.EventSourceOptions,``0)
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: Write<T>(String, EventSourceOptions, T)
+  name.vb: Write(Of T)(String, EventSourceOptions, T)
+  fullName: System.Diagnostics.Tracing.EventSource.Write<T>(System.String, System.Diagnostics.Tracing.EventSourceOptions, T)
+  fullName.vb: System.Diagnostics.Tracing.EventSource.Write(Of T)(System.String, System.Diagnostics.Tracing.EventSourceOptions, T)
+  type: Method
+  source:
+    remote: *o1
+    path: src/mscorlib/src/System/Diagnostics/Eventing/TraceLogging/TraceLoggingEventSource.cs
+    startLine: 210
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Writes an event with the specified name, event data and options.
+  syntax:
+    content: public void Write<T>(string eventName, EventSourceOptions options, T data)
+    content.vb: Public Sub Write(Of T)(eventName As String, options As EventSourceOptions, data As T)
+    parameters:
+    - id: eventName
+      type: System.String
+      description: The name of the event.
+    - id: options
+      type: System.Diagnostics.Tracing.EventSourceOptions
+      description: The event options.
+    - id: data
+      type: '{T}'
+      description: The event data. This type must be an anonymous type or marked with the @'System.Diagnostics.Tracing.EventDataAttribute' attribute.
+    typeParameters:
+    - id: T
+      description: >-
+        The type that defines the event and its payload. This must be an
+
+        anonymous type or a type with an [EventData] attribute.
+- uid: System.Diagnostics.Tracing.EventSource.Write``1(System.String,System.Diagnostics.Tracing.EventSourceOptions@,``0@)
+  id: Write``1(System.String,System.Diagnostics.Tracing.EventSourceOptions@,``0@)
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: Write<T>(String, ref EventSourceOptions, ref T)
+  name.vb: Write(Of T)(String, ByRef EventSourceOptions, ByRef T)
+  fullName: System.Diagnostics.Tracing.EventSource.Write<T>(System.String, ref System.Diagnostics.Tracing.EventSourceOptions, ref T)
+  fullName.vb: System.Diagnostics.Tracing.EventSource.Write(Of T)(System.String, ByRef System.Diagnostics.Tracing.EventSourceOptions, ByRef T)
+  type: Method
+  source:
+    remote: *o1
+    path: src/mscorlib/src/System/Diagnostics/Eventing/TraceLogging/TraceLoggingEventSource.cs
+    startLine: 249
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Writes an event with the specified name, options and event data.
+  syntax:
+    content: public void Write<T>(string eventName, ref EventSourceOptions options, ref T data)
+    content.vb: Public Sub Write(Of T)(eventName As String, ByRef options As EventSourceOptions, ByRef data As T)
+    parameters:
+    - id: eventName
+      type: System.String
+      description: The name of the event.
+    - id: options
+      type: System.Diagnostics.Tracing.EventSourceOptions
+      description: The event options.
+    - id: data
+      type: '{T}'
+      description: The event data. This type must be an anonymous type or marked with the @'System.Diagnostics.Tracing.EventDataAttribute' attribute.
+    typeParameters:
+    - id: T
+      description: >-
+        The type that defines the event and its payload. This must be an
+
+        anonymous type or a type with an [EventData] attribute.
+- uid: System.Diagnostics.Tracing.EventSource.Write``1(System.String,System.Diagnostics.Tracing.EventSourceOptions@,System.Guid@,System.Guid@,``0@)
+  id: Write``1(System.String,System.Diagnostics.Tracing.EventSourceOptions@,System.Guid@,System.Guid@,``0@)
+  parent: System.Diagnostics.Tracing.EventSource
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: Write<T>(String, ref EventSourceOptions, ref Guid, ref Guid, ref T)
+  name.vb: Write(Of T)(String, ByRef EventSourceOptions, ByRef Guid, ByRef Guid, ByRef T)
+  fullName: System.Diagnostics.Tracing.EventSource.Write<T>(System.String, ref System.Diagnostics.Tracing.EventSourceOptions, ref System.Guid, ref System.Guid, ref T)
+  fullName.vb: System.Diagnostics.Tracing.EventSource.Write(Of T)(System.String, ByRef System.Diagnostics.Tracing.EventSourceOptions, ByRef System.Guid, ByRef System.Guid, ByRef T)
+  type: Method
+  source:
+    remote: *o1
+    path: src/mscorlib/src/System/Diagnostics/Eventing/TraceLogging/TraceLoggingEventSource.cs
+    startLine: 295
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.Tracing
+  summary: Writes an event with the specified name, options, related activity and event data.
+  syntax:
+    content: public void Write<T>(string eventName, ref EventSourceOptions options, ref Guid activityId, ref Guid relatedActivityId, ref T data)
+    content.vb: Public Sub Write(Of T)(eventName As String, ByRef options As EventSourceOptions, ByRef activityId As Guid, ByRef relatedActivityId As Guid, ByRef data As T)
+    parameters:
+    - id: eventName
+      type: System.String
+      description: The name of the event.
+    - id: options
+      type: System.Diagnostics.Tracing.EventSourceOptions
+      description: The event options.
+    - id: activityId
+      type: System.Guid
+      description: The ID of the activity associated with the event.
+    - id: relatedActivityId
+      type: System.Guid
+      description: The ID of an associated activity, or @'System.Guid.Empty' if there is no associated activity.
+    - id: data
+      type: '{T}'
+      description: The event data. This type must be an anonymous type or marked with the @'System.Diagnostics.Tracing.EventDataAttribute' attribute.
+    typeParameters:
+    - id: T
+      description: >-
+        The type that defines the event and its payload. This must be an
+
+        anonymous type or a type with an [EventData] attribute.
+references:
+- uid: System.Diagnostics.Tracing.EventSource.WriteEventCore(System.Int32,System.Int32,System.Diagnostics.Tracing.EventSource.EventData*)
+- uid: System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityIdCore(System.Int32,System.Guid*,System.Int32,System.Diagnostics.Tracing.EventSource.EventData*)
+- uid: System.Diagnostics.Tracing.EventAttribute
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventAttribute.yml
+  name: EventAttribute
+  fullName: System.Diagnostics.Tracing.EventAttribute
+  type: Class
+  summary: >-
+    Any instance methods in a class that subclasses @'System.Diagnostics.Tracing.EventSource' and that return void are
+
+    assumed by default to be methods that generate an ETW event. Enough information can be deduced from the
+
+    name of the method and its signature to generate basic schema information for the event. The
+
+    @'System.Diagnostics.Tracing.EventAttribute' class allows you to specify additional event schema information for an event if
+
+    desired.
+- uid: System.Diagnostics.Tracing.EventListener.DisableEvents(System.Diagnostics.Tracing.EventSource)
+- uid: System.Diagnostics.Tracing.EventSource.OnEventCommand(System.Diagnostics.Tracing.EventCommandEventArgs)
+- uid: System.Diagnostics.Tracing.EventListener
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventListener.yml
+  name: EventListener
+  fullName: System.Diagnostics.Tracing.EventListener
+  type: Class
+  summary: >-
+    An EventListener represents a target for the events generated by EventSources (that is subclasses
+
+    of @'System.Diagnostics.Tracing.EventSource'), in the current appdomain. When a new EventListener is created
+
+    it is logically attached to all eventSources in that appdomain. When the EventListener is Disposed, then
+
+    it is disconnected from the event eventSources. Note that there is a internal list of STRONG references
+
+    to EventListeners, which means that relying on the lack of references to EventListeners to clean up
+
+    EventListeners will NOT work. You must call EventListener.Dispose explicitly when a dispatcher is no
+
+    longer needed.
+
+    <para>
+
+    Once created, EventListeners can enable or disable on a per-eventSource basis using verbosity levels
+
+    (@'System.Diagnostics.Tracing.EventLevel') and bitfields (@'System.Diagnostics.Tracing.EventKeywords') to further restrict the set of
+
+    events to be sent to the dispatcher. The dispatcher can also send arbitrary commands to a particular
+
+    eventSource using the 'SendCommand' method. The meaning of the commands are eventSource specific.
+
+    </para><para>
+
+    The Null Guid (that is (new Guid()) has special meaning as a wildcard for 'all current eventSources in
+
+    the appdomain'. Thus it is relatively easy to turn on all events in the appdomain if desired.
+
+    </para><para>
+
+    It is possible for there to be many EventListener's defined in a single appdomain. Each dispatcher is
+
+    logically independent of the other listeners. Thus when one dispatcher enables or disables events, it
+
+    affects only that dispatcher (other listeners get the events they asked for). It is possible that
+
+    commands sent with 'SendCommand' would do a semantic operation that would affect the other listeners
+
+    (like doing a GC, or flushing data ...), but this is the exception rather than the rule.
+
+    </para><para>
+
+    Thus the model is that each EventSource keeps a list of EventListeners that it is sending events
+
+    to. Associated with each EventSource-dispatcher pair is a set of filtering criteria that determine for
+
+    that eventSource what events that dispatcher will receive.
+
+    </para><para>
+
+    Listeners receive the events on their 'OnEventWritten' method. Thus subclasses of EventListener must
+
+    override this method to do something useful with the data.
+
+    </para><para>
+
+    In addition, when new eventSources are created, the 'OnEventSourceCreate' method is called. The
+
+    invariant associated with this callback is that every eventSource gets exactly one
+
+    'OnEventSourceCreate' call for ever eventSource that can potentially send it log messages. In
+
+    particular when a EventListener is created, typically a series of OnEventSourceCreate' calls are
+
+    made to notify the new dispatcher of all the eventSources that existed before the EventListener was
+
+    created.
+
+    </para>
+- uid: System.Diagnostics.Tracing
+  isExternal: false
+  name: System.Diagnostics.Tracing
+  fullName: System.Diagnostics.Tracing
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  fullName: System.Guid
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Diagnostics.Tracing.EventLevel
+  parent: System.Diagnostics.Tracing
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventLevel.yml
+  name: EventLevel
+  fullName: System.Diagnostics.Tracing.EventLevel
+  type: Enum
+  summary: WindowsEventLevel. Custom values must be in the range from 16 through 255
+- uid: System.Diagnostics.Tracing.EventKeywords
+  parent: System.Diagnostics.Tracing
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventKeywords.yml
+  name: EventKeywords
+  fullName: System.Diagnostics.Tracing.EventKeywords
+  type: Enum
+  summary: EventOpcode
+- uid: System.Diagnostics.Tracing.EventChannel
+  parent: System.Diagnostics.Tracing
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventChannel.yml
+  name: EventChannel
+  fullName: System.Diagnostics.Tracing.EventChannel
+  type: Enum
+  summary: EventChannel. Custom values must be in the range from 16 through 255. Currently only predefined values allowed.
+- uid: System.Diagnostics.Tracing.EventSourceSettings
+  parent: System.Diagnostics.Tracing
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventSourceSettings.yml
+  name: EventSourceSettings
+  fullName: System.Diagnostics.Tracing.EventSourceSettings
+  type: Enum
+  summary: Enables specifying event source configuration options to be used in the EventSource constructor.
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  fullName: System.Type
+- uid: System.Diagnostics.Tracing.EventManifestOptions
+  parent: System.Diagnostics.Tracing
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventManifestOptions.yml
+  name: EventManifestOptions
+  fullName: System.Diagnostics.Tracing.EventManifestOptions
+  type: Enum
+  summary: >-
+    Flags that can be used with EventSource.GenerateManifest to control how the ETW manifest for the EventSource is
+
+    generated.
+- uid: System.Collections.Generic.IEnumerable{System.Diagnostics.Tracing.EventSource}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: System.Collections.Generic.IEnumerable`1.yml
+  name: IEnumerable<EventSource>
+  name.vb: IEnumerable(Of EventSource)
+  fullName: System.Collections.Generic.IEnumerable<System.Diagnostics.Tracing.EventSource>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Diagnostics.Tracing.EventSource)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    href: System.Collections.Generic.IEnumerable`1.yml
+  - name: <
+    fullName: <
+  - uid: System.Diagnostics.Tracing.EventSource
+    name: EventSource
+    fullName: System.Diagnostics.Tracing.EventSource
+    href: System.Diagnostics.Tracing.EventSource.yml
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    href: System.Collections.Generic.IEnumerable`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Diagnostics.Tracing.EventSource
+    name: EventSource
+    fullName: System.Diagnostics.Tracing.EventSource
+    href: System.Diagnostics.Tracing.EventSource.yml
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Diagnostics.Tracing.EventSource
+  parent: System.Diagnostics.Tracing
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventSource.yml
+  name: EventSource
+  fullName: System.Diagnostics.Tracing.EventSource
+  type: Class
+  summary: >-
+    This class is meant to be inherited by a user-defined event source in order to define a managed
+
+    ETW provider.   Please See DESIGN NOTES above for the internal architecture.
+
+    The minimal definition of an EventSource simply specifies a number of ETW event methods that
+
+    call one of the EventSource.WriteEvent overloads, @'System.Diagnostics.Tracing.EventSource.WriteEventCore(System.Int32,System.Int32,System.Diagnostics.Tracing.EventSource.EventData*)',
+
+    or @'System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityIdCore(System.Int32,System.Guid*,System.Int32,System.Diagnostics.Tracing.EventSource.EventData*)' to log them. This functionality
+
+    is sufficient for many users.
+
+    <para>
+
+    To achieve more control over the ETW provider manifest exposed by the event source type, the
+
+    [@'System.Diagnostics.Tracing.EventAttribute'] attributes can be specified for the ETW event methods.
+
+    </para><para>
+
+    For very advanced EventSources, it is possible to intercept the commands being given to the
+
+    eventSource and change what filtering is done (see EventListener.EnableEvents and
+
+    @'System.Diagnostics.Tracing.EventListener.DisableEvents(System.Diagnostics.Tracing.EventSource)') or cause actions to be performed by the eventSource,
+
+    e.g. dumping a data structure (see EventSource.SendCommand and
+
+    @'System.Diagnostics.Tracing.EventSource.OnEventCommand(System.Diagnostics.Tracing.EventCommandEventArgs)').
+
+    </para><para>
+
+    The eventSources can be turned on with Windows ETW controllers (e.g. logman), immediately.
+
+    It is also possible to control and intercept the data dispatcher programmatically.  See
+
+    @'System.Diagnostics.Tracing.EventListener' for more.
+
+    </para>
+- uid: System.Diagnostics.Tracing.EventCommand
+  parent: System.Diagnostics.Tracing
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventCommand.yml
+  name: EventCommand
+  fullName: System.Diagnostics.Tracing.EventCommand
+  type: Enum
+  summary: Describes the pre-defined command (EventCommandEventArgs.Command property) that is passed to the OnEventCommand callback.
+- uid: System.Collections.Generic.IDictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  name: IDictionary<String, String>
+  name.vb: IDictionary(Of String, String)
+  fullName: System.Collections.Generic.IDictionary<System.String, System.String>
+  fullName.vb: System.Collections.Generic.IDictionary(Of System.String, System.String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IDictionary`2
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IDictionary<TKey, TValue>
+  name.vb: IDictionary(Of TKey, TValue)
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    fullName: TKey
+  - name: ', '
+    fullName: ', '
+  - name: TValue
+    fullName: TValue
+  - name: )
+    fullName: )
+- uid: System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  fullName: System.Exception
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  name.vb: String()
+  fullName: System.String[]
+  fullName.vb: System.String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Diagnostics.Tracing.EventCommandEventArgs
+  parent: System.Diagnostics.Tracing
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventCommandEventArgs.yml
+  name: EventCommandEventArgs
+  fullName: System.Diagnostics.Tracing.EventCommandEventArgs
+  type: Class
+  summary: Passed to the code:EventSource.OnEventCommand callback
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  fullName: System.Int64
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  name.vb: Byte()
+  fullName: System.Byte[]
+  fullName.vb: System.Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Diagnostics.Tracing.EventSource.EventData*
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventSource.EventData.yml
+  name: EventSource.EventData*
+  fullName: System.Diagnostics.Tracing.EventSource.EventData*
+  spec.csharp:
+  - uid: System.Diagnostics.Tracing.EventSource.EventData
+    name: EventSource.EventData
+    fullName: System.Diagnostics.Tracing.EventSource.EventData
+    href: System.Diagnostics.Tracing.EventSource.EventData.yml
+  - name: '*'
+    fullName: '*'
+  spec.vb:
+  - uid: System.Diagnostics.Tracing.EventSource.EventData
+    name: EventSource.EventData
+    fullName: System.Diagnostics.Tracing.EventSource.EventData
+    href: System.Diagnostics.Tracing.EventSource.EventData.yml
+  - name: '*'
+    fullName: '*'
+- uid: System.Guid*
+  isExternal: false
+  href: System.Guid.yml
+  name: Guid*
+  fullName: System.Guid*
+  spec.csharp:
+  - uid: System.Guid
+    name: Guid
+    fullName: System.Guid
+    href: System.Guid.yml
+  - name: '*'
+    fullName: '*'
+  spec.vb:
+  - uid: System.Guid
+    name: Guid
+    fullName: System.Guid
+    href: System.Guid.yml
+  - name: '*'
+    fullName: '*'
+- uid: System.Diagnostics.Tracing.EventSource.IsEnabled
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  name.vb: Object()
+  fullName: System.Object[]
+  fullName.vb: System.Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Diagnostics.Tracing.EventSourceOptions
+  parent: System.Diagnostics.Tracing
+  isExternal: false
+  href: System.Diagnostics.Tracing.EventSourceOptions.yml
+  name: EventSourceOptions
+  fullName: System.Diagnostics.Tracing.EventSourceOptions
+  type: Struct
+  summary: >-
+    Used when calling EventSource.Write.
+
+    Optional overrides for event settings such as Level, Keywords, or Opcode.
+
+    If overrides are not provided for a setting, default values will be used.
+- uid: '{T}'
+  isExternal: false
+  name: T
+  fullName: T

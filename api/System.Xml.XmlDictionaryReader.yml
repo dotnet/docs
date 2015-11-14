@@ -1,0 +1,3930 @@
+items:
+- uid: System.Xml.XmlDictionaryReader
+  id: XmlDictionaryReader
+  parent: System.Xml
+  children:
+  - System.Xml.XmlDictionaryReader.CanCanonicalize
+  - System.Xml.XmlDictionaryReader.Close
+  - System.Xml.XmlDictionaryReader.CreateBinaryReader(System.Byte[],System.Int32,System.Int32,System.Xml.IXmlDictionary,System.Xml.XmlDictionaryReaderQuotas)
+  - System.Xml.XmlDictionaryReader.CreateBinaryReader(System.Byte[],System.Int32,System.Int32,System.Xml.IXmlDictionary,System.Xml.XmlDictionaryReaderQuotas,System.Xml.XmlBinaryReaderSession)
+  - System.Xml.XmlDictionaryReader.CreateBinaryReader(System.Byte[],System.Int32,System.Int32,System.Xml.XmlDictionaryReaderQuotas)
+  - System.Xml.XmlDictionaryReader.CreateBinaryReader(System.Byte[],System.Xml.XmlDictionaryReaderQuotas)
+  - System.Xml.XmlDictionaryReader.CreateBinaryReader(System.IO.Stream,System.Xml.IXmlDictionary,System.Xml.XmlDictionaryReaderQuotas)
+  - System.Xml.XmlDictionaryReader.CreateBinaryReader(System.IO.Stream,System.Xml.IXmlDictionary,System.Xml.XmlDictionaryReaderQuotas,System.Xml.XmlBinaryReaderSession)
+  - System.Xml.XmlDictionaryReader.CreateBinaryReader(System.IO.Stream,System.Xml.XmlDictionaryReaderQuotas)
+  - System.Xml.XmlDictionaryReader.CreateDictionaryReader(XmlReader)
+  - System.Xml.XmlDictionaryReader.CreateTextReader(System.Byte[],System.Int32,System.Int32,System.Xml.XmlDictionaryReaderQuotas)
+  - System.Xml.XmlDictionaryReader.CreateTextReader(System.Byte[],System.Xml.XmlDictionaryReaderQuotas)
+  - System.Xml.XmlDictionaryReader.CreateTextReader(System.IO.Stream,System.Text.Encoding,System.Xml.XmlDictionaryReaderQuotas,System.Xml.OnXmlDictionaryReaderClose)
+  - System.Xml.XmlDictionaryReader.CreateTextReader(System.IO.Stream,System.Xml.XmlDictionaryReaderQuotas)
+  - System.Xml.XmlDictionaryReader.EndCanonicalization
+  - System.Xml.XmlDictionaryReader.GetAttribute(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  - System.Xml.XmlDictionaryReader.IndexOfLocalName(System.String[],System.String)
+  - System.Xml.XmlDictionaryReader.IndexOfLocalName(System.Xml.XmlDictionaryString[],System.Xml.XmlDictionaryString)
+  - System.Xml.XmlDictionaryReader.IsLocalName(System.String)
+  - System.Xml.XmlDictionaryReader.IsLocalName(System.Xml.XmlDictionaryString)
+  - System.Xml.XmlDictionaryReader.IsNamespaceUri(System.String)
+  - System.Xml.XmlDictionaryReader.IsNamespaceUri(System.Xml.XmlDictionaryString)
+  - System.Xml.XmlDictionaryReader.IsStartArray(System.Type@)
+  - System.Xml.XmlDictionaryReader.IsStartElement(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  - System.Xml.XmlDictionaryReader.IsTextNode(XmlNodeType)
+  - System.Xml.XmlDictionaryReader.MoveToStartElement
+  - System.Xml.XmlDictionaryReader.MoveToStartElement(System.String)
+  - System.Xml.XmlDictionaryReader.MoveToStartElement(System.String,System.String)
+  - System.Xml.XmlDictionaryReader.MoveToStartElement(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  - System.Xml.XmlDictionaryReader.Quotas
+  - System.Xml.XmlDictionaryReader.ReadArray(System.String,System.String,System.Boolean[],System.Int32,System.Int32)
+  - System.Xml.XmlDictionaryReader.ReadArray(System.String,System.String,System.DateTime[],System.Int32,System.Int32)
+  - System.Xml.XmlDictionaryReader.ReadArray(System.String,System.String,System.Decimal[],System.Int32,System.Int32)
+  - System.Xml.XmlDictionaryReader.ReadArray(System.String,System.String,System.Double[],System.Int32,System.Int32)
+  - System.Xml.XmlDictionaryReader.ReadArray(System.String,System.String,System.Guid[],System.Int32,System.Int32)
+  - System.Xml.XmlDictionaryReader.ReadArray(System.String,System.String,System.Int16[],System.Int32,System.Int32)
+  - System.Xml.XmlDictionaryReader.ReadArray(System.String,System.String,System.Int32[],System.Int32,System.Int32)
+  - System.Xml.XmlDictionaryReader.ReadArray(System.String,System.String,System.Int64[],System.Int32,System.Int32)
+  - System.Xml.XmlDictionaryReader.ReadArray(System.String,System.String,System.Single[],System.Int32,System.Int32)
+  - System.Xml.XmlDictionaryReader.ReadArray(System.String,System.String,System.TimeSpan[],System.Int32,System.Int32)
+  - System.Xml.XmlDictionaryReader.ReadArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Boolean[],System.Int32,System.Int32)
+  - System.Xml.XmlDictionaryReader.ReadArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.DateTime[],System.Int32,System.Int32)
+  - System.Xml.XmlDictionaryReader.ReadArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Decimal[],System.Int32,System.Int32)
+  - System.Xml.XmlDictionaryReader.ReadArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Double[],System.Int32,System.Int32)
+  - System.Xml.XmlDictionaryReader.ReadArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Guid[],System.Int32,System.Int32)
+  - System.Xml.XmlDictionaryReader.ReadArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Int16[],System.Int32,System.Int32)
+  - System.Xml.XmlDictionaryReader.ReadArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Int32[],System.Int32,System.Int32)
+  - System.Xml.XmlDictionaryReader.ReadArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Int64[],System.Int32,System.Int32)
+  - System.Xml.XmlDictionaryReader.ReadArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Single[],System.Int32,System.Int32)
+  - System.Xml.XmlDictionaryReader.ReadArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.TimeSpan[],System.Int32,System.Int32)
+  - System.Xml.XmlDictionaryReader.ReadBooleanArray(System.String,System.String)
+  - System.Xml.XmlDictionaryReader.ReadBooleanArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  - System.Xml.XmlDictionaryReader.ReadContentAs(System.Type,IXmlNamespaceResolver)
+  - System.Xml.XmlDictionaryReader.ReadContentAsBase64
+  - System.Xml.XmlDictionaryReader.ReadContentAsBinHex
+  - System.Xml.XmlDictionaryReader.ReadContentAsBinHex(System.Int32)
+  - System.Xml.XmlDictionaryReader.ReadContentAsChars(System.Char[],System.Int32,System.Int32)
+  - System.Xml.XmlDictionaryReader.ReadContentAsDecimal
+  - System.Xml.XmlDictionaryReader.ReadContentAsFloat
+  - System.Xml.XmlDictionaryReader.ReadContentAsGuid
+  - System.Xml.XmlDictionaryReader.ReadContentAsQualifiedName(System.String@,System.String@)
+  - System.Xml.XmlDictionaryReader.ReadContentAsString
+  - System.Xml.XmlDictionaryReader.ReadContentAsString(System.Int32)
+  - System.Xml.XmlDictionaryReader.ReadContentAsString(System.String[],System.Int32@)
+  - System.Xml.XmlDictionaryReader.ReadContentAsString(System.Xml.XmlDictionaryString[],System.Int32@)
+  - System.Xml.XmlDictionaryReader.ReadContentAsTimeSpan
+  - System.Xml.XmlDictionaryReader.ReadContentAsUniqueId
+  - System.Xml.XmlDictionaryReader.ReadDateTimeArray(System.String,System.String)
+  - System.Xml.XmlDictionaryReader.ReadDateTimeArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  - System.Xml.XmlDictionaryReader.ReadDecimalArray(System.String,System.String)
+  - System.Xml.XmlDictionaryReader.ReadDecimalArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  - System.Xml.XmlDictionaryReader.ReadDoubleArray(System.String,System.String)
+  - System.Xml.XmlDictionaryReader.ReadDoubleArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  - System.Xml.XmlDictionaryReader.ReadElementContentAsBase64
+  - System.Xml.XmlDictionaryReader.ReadElementContentAsBinHex
+  - System.Xml.XmlDictionaryReader.ReadElementContentAsBoolean
+  - System.Xml.XmlDictionaryReader.ReadElementContentAsDateTime
+  - System.Xml.XmlDictionaryReader.ReadElementContentAsDecimal
+  - System.Xml.XmlDictionaryReader.ReadElementContentAsDouble
+  - System.Xml.XmlDictionaryReader.ReadElementContentAsFloat
+  - System.Xml.XmlDictionaryReader.ReadElementContentAsGuid
+  - System.Xml.XmlDictionaryReader.ReadElementContentAsInt
+  - System.Xml.XmlDictionaryReader.ReadElementContentAsLong
+  - System.Xml.XmlDictionaryReader.ReadElementContentAsString
+  - System.Xml.XmlDictionaryReader.ReadElementContentAsTimeSpan
+  - System.Xml.XmlDictionaryReader.ReadElementContentAsUniqueId
+  - System.Xml.XmlDictionaryReader.ReadFullStartElement
+  - System.Xml.XmlDictionaryReader.ReadFullStartElement(System.String)
+  - System.Xml.XmlDictionaryReader.ReadFullStartElement(System.String,System.String)
+  - System.Xml.XmlDictionaryReader.ReadFullStartElement(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  - System.Xml.XmlDictionaryReader.ReadGuidArray(System.String,System.String)
+  - System.Xml.XmlDictionaryReader.ReadGuidArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  - System.Xml.XmlDictionaryReader.ReadInt16Array(System.String,System.String)
+  - System.Xml.XmlDictionaryReader.ReadInt16Array(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  - System.Xml.XmlDictionaryReader.ReadInt32Array(System.String,System.String)
+  - System.Xml.XmlDictionaryReader.ReadInt32Array(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  - System.Xml.XmlDictionaryReader.ReadInt64Array(System.String,System.String)
+  - System.Xml.XmlDictionaryReader.ReadInt64Array(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  - System.Xml.XmlDictionaryReader.ReadSingleArray(System.String,System.String)
+  - System.Xml.XmlDictionaryReader.ReadSingleArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  - System.Xml.XmlDictionaryReader.ReadStartElement(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  - System.Xml.XmlDictionaryReader.ReadTimeSpanArray(System.String,System.String)
+  - System.Xml.XmlDictionaryReader.ReadTimeSpanArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  - System.Xml.XmlDictionaryReader.ReadValueAsBase64(System.Byte[],System.Int32,System.Int32)
+  - System.Xml.XmlDictionaryReader.StartCanonicalization(System.IO.Stream,System.Boolean,System.String[])
+  - System.Xml.XmlDictionaryReader.TryGetArrayLength(System.Int32@)
+  - System.Xml.XmlDictionaryReader.TryGetBase64ContentLength(System.Int32@)
+  - System.Xml.XmlDictionaryReader.TryGetLocalNameAsDictionaryString(System.Xml.XmlDictionaryString@)
+  - System.Xml.XmlDictionaryReader.TryGetNamespaceUriAsDictionaryString(System.Xml.XmlDictionaryString@)
+  - System.Xml.XmlDictionaryReader.TryGetValueAsDictionaryString(System.Xml.XmlDictionaryString@)
+  href: System.Xml.XmlDictionaryReader.yml
+  name: XmlDictionaryReader
+  fullName: System.Xml.XmlDictionaryReader
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 17
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: An abstract class that the Windows Communication Foundation (WCF) derives from @'System.Xml.XmlReader' to do serialization and deserialization.
+  syntax:
+    content: 'public abstract class XmlDictionaryReader : XmlReader'
+    content.vb: Public MustInherit Class XmlDictionaryReader Inherits XmlReader
+  inheritance:
+  - System.Object
+- uid: System.Xml.XmlDictionaryReader.CreateDictionaryReader(XmlReader)
+  id: CreateDictionaryReader(XmlReader)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: CreateDictionaryReader(XmlReader)
+  fullName: System.Xml.XmlDictionaryReader.CreateDictionaryReader(XmlReader)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 21
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  syntax:
+    content: public static XmlDictionaryReader CreateDictionaryReader(XmlReader reader)
+    content.vb: Public Shared Function CreateDictionaryReader(reader As XmlReader) As XmlDictionaryReader
+    parameters:
+    - id: reader
+      type: XmlReader
+    return:
+      type: System.Xml.XmlDictionaryReader
+- uid: System.Xml.XmlDictionaryReader.CreateBinaryReader(System.Byte[],System.Xml.XmlDictionaryReaderQuotas)
+  id: CreateBinaryReader(System.Byte[],System.Xml.XmlDictionaryReaderQuotas)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: CreateBinaryReader(Byte[], XmlDictionaryReaderQuotas)
+  name.vb: CreateBinaryReader(Byte(), XmlDictionaryReaderQuotas)
+  fullName: System.Xml.XmlDictionaryReader.CreateBinaryReader(System.Byte[], System.Xml.XmlDictionaryReaderQuotas)
+  fullName.vb: System.Xml.XmlDictionaryReader.CreateBinaryReader(System.Byte(), System.Xml.XmlDictionaryReaderQuotas)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 36
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Creates an instance of @'System.Xml.XmlDictionaryReader' that can read .NET Binary XML Format.
+  syntax:
+    content: public static XmlDictionaryReader CreateBinaryReader(byte[] buffer, XmlDictionaryReaderQuotas quotas)
+    content.vb: Public Shared Function CreateBinaryReader(buffer As Byte(), quotas As XmlDictionaryReaderQuotas) As XmlDictionaryReader
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+      description: The buffer from which to read.
+    - id: quotas
+      type: System.Xml.XmlDictionaryReaderQuotas
+      description: The quotas that apply to this operation.
+    return:
+      type: System.Xml.XmlDictionaryReader
+      description: An instance of @'System.Xml.XmlDictionaryReader'.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*buffer* is null.'
+- uid: System.Xml.XmlDictionaryReader.CreateBinaryReader(System.Byte[],System.Int32,System.Int32,System.Xml.XmlDictionaryReaderQuotas)
+  id: CreateBinaryReader(System.Byte[],System.Int32,System.Int32,System.Xml.XmlDictionaryReaderQuotas)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: CreateBinaryReader(Byte[], Int32, Int32, XmlDictionaryReaderQuotas)
+  name.vb: CreateBinaryReader(Byte(), Int32, Int32, XmlDictionaryReaderQuotas)
+  fullName: System.Xml.XmlDictionaryReader.CreateBinaryReader(System.Byte[], System.Int32, System.Int32, System.Xml.XmlDictionaryReaderQuotas)
+  fullName.vb: System.Xml.XmlDictionaryReader.CreateBinaryReader(System.Byte(), System.Int32, System.Int32, System.Xml.XmlDictionaryReaderQuotas)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 43
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Creates an instance of @'System.Xml.XmlDictionaryReader' that can read .NET Binary XML Format.
+  syntax:
+    content: public static XmlDictionaryReader CreateBinaryReader(byte[] buffer, int offset, int count, XmlDictionaryReaderQuotas quotas)
+    content.vb: Public Shared Function CreateBinaryReader(buffer As Byte(), offset As Integer, count As Integer, quotas As XmlDictionaryReaderQuotas) As XmlDictionaryReader
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+      description: The buffer from which to read.
+    - id: offset
+      type: System.Int32
+      description: The starting position from which to read in *buffer*.
+    - id: count
+      type: System.Int32
+      description: The number of bytes that can be read from *buffer*.
+    - id: quotas
+      type: System.Xml.XmlDictionaryReaderQuotas
+      description: The quotas that apply to this operation.
+    return:
+      type: System.Xml.XmlDictionaryReader
+      description: An instance of @'System.Xml.XmlDictionaryReader'.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*buffer* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is less than zero or greater than the buffer length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is less than zero or greater than the buffer length minus the offset.'
+- uid: System.Xml.XmlDictionaryReader.CreateBinaryReader(System.Byte[],System.Int32,System.Int32,System.Xml.IXmlDictionary,System.Xml.XmlDictionaryReaderQuotas)
+  id: CreateBinaryReader(System.Byte[],System.Int32,System.Int32,System.Xml.IXmlDictionary,System.Xml.XmlDictionaryReaderQuotas)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: CreateBinaryReader(Byte[], Int32, Int32, IXmlDictionary, XmlDictionaryReaderQuotas)
+  name.vb: CreateBinaryReader(Byte(), Int32, Int32, IXmlDictionary, XmlDictionaryReaderQuotas)
+  fullName: System.Xml.XmlDictionaryReader.CreateBinaryReader(System.Byte[], System.Int32, System.Int32, System.Xml.IXmlDictionary, System.Xml.XmlDictionaryReaderQuotas)
+  fullName.vb: System.Xml.XmlDictionaryReader.CreateBinaryReader(System.Byte(), System.Int32, System.Int32, System.Xml.IXmlDictionary, System.Xml.XmlDictionaryReaderQuotas)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 48
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Creates an instance of @'System.Xml.XmlDictionaryReader' that can read .NET Binary XML Format.
+  syntax:
+    content: public static XmlDictionaryReader CreateBinaryReader(byte[] buffer, int offset, int count, IXmlDictionary dictionary, XmlDictionaryReaderQuotas quotas)
+    content.vb: Public Shared Function CreateBinaryReader(buffer As Byte(), offset As Integer, count As Integer, dictionary As IXmlDictionary, quotas As XmlDictionaryReaderQuotas) As XmlDictionaryReader
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+      description: The buffer from which to read.
+    - id: offset
+      type: System.Int32
+      description: The starting position from which to read in *buffer*.
+    - id: count
+      type: System.Int32
+      description: The number of bytes that can be read from *buffer*.
+    - id: dictionary
+      type: System.Xml.IXmlDictionary
+      description: '@''System.Xml.XmlDictionary'' to use.'
+    - id: quotas
+      type: System.Xml.XmlDictionaryReaderQuotas
+      description: The quotas that apply to this operation.
+    return:
+      type: System.Xml.XmlDictionaryReader
+      description: An instance of @'System.Xml.XmlDictionaryReader'.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*buffer* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is less than zero or greater than the buffer length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is less than zero or greater than the buffer length minus the offset.'
+- uid: System.Xml.XmlDictionaryReader.CreateBinaryReader(System.Byte[],System.Int32,System.Int32,System.Xml.IXmlDictionary,System.Xml.XmlDictionaryReaderQuotas,System.Xml.XmlBinaryReaderSession)
+  id: CreateBinaryReader(System.Byte[],System.Int32,System.Int32,System.Xml.IXmlDictionary,System.Xml.XmlDictionaryReaderQuotas,System.Xml.XmlBinaryReaderSession)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: CreateBinaryReader(Byte[], Int32, Int32, IXmlDictionary, XmlDictionaryReaderQuotas, XmlBinaryReaderSession)
+  name.vb: CreateBinaryReader(Byte(), Int32, Int32, IXmlDictionary, XmlDictionaryReaderQuotas, XmlBinaryReaderSession)
+  fullName: System.Xml.XmlDictionaryReader.CreateBinaryReader(System.Byte[], System.Int32, System.Int32, System.Xml.IXmlDictionary, System.Xml.XmlDictionaryReaderQuotas, System.Xml.XmlBinaryReaderSession)
+  fullName.vb: System.Xml.XmlDictionaryReader.CreateBinaryReader(System.Byte(), System.Int32, System.Int32, System.Xml.IXmlDictionary, System.Xml.XmlDictionaryReaderQuotas, System.Xml.XmlBinaryReaderSession)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 53
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Creates an instance of @'System.Xml.XmlDictionaryReader' that can read .NET Binary XML Format.
+  syntax:
+    content: public static XmlDictionaryReader CreateBinaryReader(byte[] buffer, int offset, int count, IXmlDictionary dictionary, XmlDictionaryReaderQuotas quotas, XmlBinaryReaderSession session)
+    content.vb: Public Shared Function CreateBinaryReader(buffer As Byte(), offset As Integer, count As Integer, dictionary As IXmlDictionary, quotas As XmlDictionaryReaderQuotas, session As XmlBinaryReaderSession) As XmlDictionaryReader
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+      description: The buffer from which to read.
+    - id: offset
+      type: System.Int32
+      description: The starting position from which to read in *buffer*.
+    - id: count
+      type: System.Int32
+      description: The number of bytes that can be read from *buffer*.
+    - id: dictionary
+      type: System.Xml.IXmlDictionary
+      description: The @'System.Xml.XmlDictionary' to use.
+    - id: quotas
+      type: System.Xml.XmlDictionaryReaderQuotas
+      description: The @'System.Xml.XmlDictionaryReaderQuotas' to apply.
+    - id: session
+      type: System.Xml.XmlBinaryReaderSession
+      description: The @'System.Xml.XmlBinaryReaderSession' to use.
+    return:
+      type: System.Xml.XmlDictionaryReader
+      description: An instance of @'System.Xml.XmlDictionaryReader'.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*buffer* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is less than zero or greater than the buffer length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is less than zero or greater than the buffer length minus the offset.'
+- uid: System.Xml.XmlDictionaryReader.CreateBinaryReader(System.IO.Stream,System.Xml.XmlDictionaryReaderQuotas)
+  id: CreateBinaryReader(System.IO.Stream,System.Xml.XmlDictionaryReaderQuotas)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: CreateBinaryReader(Stream, XmlDictionaryReaderQuotas)
+  fullName: System.Xml.XmlDictionaryReader.CreateBinaryReader(System.IO.Stream, System.Xml.XmlDictionaryReaderQuotas)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 61
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Creates an instance of @'System.Xml.XmlDictionaryReader' that can read .NET Binary XML Format.
+  syntax:
+    content: public static XmlDictionaryReader CreateBinaryReader(Stream stream, XmlDictionaryReaderQuotas quotas)
+    content.vb: Public Shared Function CreateBinaryReader(stream As Stream, quotas As XmlDictionaryReaderQuotas) As XmlDictionaryReader
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: The stream from which to read.
+    - id: quotas
+      type: System.Xml.XmlDictionaryReaderQuotas
+      description: The quotas that apply to this operation.
+    return:
+      type: System.Xml.XmlDictionaryReader
+      description: An instance of @'System.Xml.XmlDictionaryReader'.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*stream* is null.'
+- uid: System.Xml.XmlDictionaryReader.CreateBinaryReader(System.IO.Stream,System.Xml.IXmlDictionary,System.Xml.XmlDictionaryReaderQuotas)
+  id: CreateBinaryReader(System.IO.Stream,System.Xml.IXmlDictionary,System.Xml.XmlDictionaryReaderQuotas)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: CreateBinaryReader(Stream, IXmlDictionary, XmlDictionaryReaderQuotas)
+  fullName: System.Xml.XmlDictionaryReader.CreateBinaryReader(System.IO.Stream, System.Xml.IXmlDictionary, System.Xml.XmlDictionaryReaderQuotas)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 66
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Creates an instance of @'System.Xml.XmlDictionaryReader' that can read .NET Binary XML Format.
+  syntax:
+    content: public static XmlDictionaryReader CreateBinaryReader(Stream stream, IXmlDictionary dictionary, XmlDictionaryReaderQuotas quotas)
+    content.vb: Public Shared Function CreateBinaryReader(stream As Stream, dictionary As IXmlDictionary, quotas As XmlDictionaryReaderQuotas) As XmlDictionaryReader
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: The stream from which to read.
+    - id: dictionary
+      type: System.Xml.IXmlDictionary
+      description: '@''System.Xml.XmlDictionary'' to use.'
+    - id: quotas
+      type: System.Xml.XmlDictionaryReaderQuotas
+      description: The quotas that apply to this operation.
+    return:
+      type: System.Xml.XmlDictionaryReader
+      description: An instance of @'System.Xml.XmlDictionaryReader'.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*stream* or *quotas* is null.'
+- uid: System.Xml.XmlDictionaryReader.CreateBinaryReader(System.IO.Stream,System.Xml.IXmlDictionary,System.Xml.XmlDictionaryReaderQuotas,System.Xml.XmlBinaryReaderSession)
+  id: CreateBinaryReader(System.IO.Stream,System.Xml.IXmlDictionary,System.Xml.XmlDictionaryReaderQuotas,System.Xml.XmlBinaryReaderSession)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: CreateBinaryReader(Stream, IXmlDictionary, XmlDictionaryReaderQuotas, XmlBinaryReaderSession)
+  fullName: System.Xml.XmlDictionaryReader.CreateBinaryReader(System.IO.Stream, System.Xml.IXmlDictionary, System.Xml.XmlDictionaryReaderQuotas, System.Xml.XmlBinaryReaderSession)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 71
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Creates an instance of @'System.Xml.XmlDictionaryReader' that can read .NET Binary XML Format.
+  syntax:
+    content: public static XmlDictionaryReader CreateBinaryReader(Stream stream, IXmlDictionary dictionary, XmlDictionaryReaderQuotas quotas, XmlBinaryReaderSession session)
+    content.vb: Public Shared Function CreateBinaryReader(stream As Stream, dictionary As IXmlDictionary, quotas As XmlDictionaryReaderQuotas, session As XmlBinaryReaderSession) As XmlDictionaryReader
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: The stream from which to read.
+    - id: dictionary
+      type: System.Xml.IXmlDictionary
+      description: '@''System.Xml.XmlDictionary'' to use.'
+    - id: quotas
+      type: System.Xml.XmlDictionaryReaderQuotas
+      description: The quotas that apply to this operation.
+    - id: session
+      type: System.Xml.XmlBinaryReaderSession
+      description: '@''System.Xml.XmlBinaryReaderSession'' to use.'
+    return:
+      type: System.Xml.XmlDictionaryReader
+      description: An instance of @'System.Xml.XmlDictionaryReader'.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*stream* is null.'
+- uid: System.Xml.XmlDictionaryReader.CreateTextReader(System.Byte[],System.Xml.XmlDictionaryReaderQuotas)
+  id: CreateTextReader(System.Byte[],System.Xml.XmlDictionaryReaderQuotas)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: CreateTextReader(Byte[], XmlDictionaryReaderQuotas)
+  name.vb: CreateTextReader(Byte(), XmlDictionaryReaderQuotas)
+  fullName: System.Xml.XmlDictionaryReader.CreateTextReader(System.Byte[], System.Xml.XmlDictionaryReaderQuotas)
+  fullName.vb: System.Xml.XmlDictionaryReader.CreateTextReader(System.Byte(), System.Xml.XmlDictionaryReaderQuotas)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 80
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Creates an instance of @'System.Xml.XmlDictionaryReader'.
+  syntax:
+    content: public static XmlDictionaryReader CreateTextReader(byte[] buffer, XmlDictionaryReaderQuotas quotas)
+    content.vb: Public Shared Function CreateTextReader(buffer As Byte(), quotas As XmlDictionaryReaderQuotas) As XmlDictionaryReader
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+      description: The buffer from which to read.
+    - id: quotas
+      type: System.Xml.XmlDictionaryReaderQuotas
+      description: The quotas applied to the reader.
+    return:
+      type: System.Xml.XmlDictionaryReader
+      description: An instance of @'System.Xml.XmlDictionaryReader'.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*buffer* is null.'
+- uid: System.Xml.XmlDictionaryReader.CreateTextReader(System.Byte[],System.Int32,System.Int32,System.Xml.XmlDictionaryReaderQuotas)
+  id: CreateTextReader(System.Byte[],System.Int32,System.Int32,System.Xml.XmlDictionaryReaderQuotas)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: CreateTextReader(Byte[], Int32, Int32, XmlDictionaryReaderQuotas)
+  name.vb: CreateTextReader(Byte(), Int32, Int32, XmlDictionaryReaderQuotas)
+  fullName: System.Xml.XmlDictionaryReader.CreateTextReader(System.Byte[], System.Int32, System.Int32, System.Xml.XmlDictionaryReaderQuotas)
+  fullName.vb: System.Xml.XmlDictionaryReader.CreateTextReader(System.Byte(), System.Int32, System.Int32, System.Xml.XmlDictionaryReaderQuotas)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 87
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Creates an instance of @'System.Xml.XmlDictionaryReader'.
+  syntax:
+    content: public static XmlDictionaryReader CreateTextReader(byte[] buffer, int offset, int count, XmlDictionaryReaderQuotas quotas)
+    content.vb: Public Shared Function CreateTextReader(buffer As Byte(), offset As Integer, count As Integer, quotas As XmlDictionaryReaderQuotas) As XmlDictionaryReader
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+      description: The buffer from which to read.
+    - id: offset
+      type: System.Int32
+      description: The starting position from which to read in *buffer*.
+    - id: count
+      type: System.Int32
+      description: The number of bytes that can be read from *buffer*.
+    - id: quotas
+      type: System.Xml.XmlDictionaryReaderQuotas
+      description: The quotas applied to the reader.
+    return:
+      type: System.Xml.XmlDictionaryReader
+      description: An instance of @'System.Xml.XmlDictionaryReader'.
+- uid: System.Xml.XmlDictionaryReader.CreateTextReader(System.IO.Stream,System.Xml.XmlDictionaryReaderQuotas)
+  id: CreateTextReader(System.IO.Stream,System.Xml.XmlDictionaryReaderQuotas)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: CreateTextReader(Stream, XmlDictionaryReaderQuotas)
+  fullName: System.Xml.XmlDictionaryReader.CreateTextReader(System.IO.Stream, System.Xml.XmlDictionaryReaderQuotas)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 94
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Creates an instance of @'System.Xml.XmlDictionaryReader'.
+  syntax:
+    content: public static XmlDictionaryReader CreateTextReader(Stream stream, XmlDictionaryReaderQuotas quotas)
+    content.vb: Public Shared Function CreateTextReader(stream As Stream, quotas As XmlDictionaryReaderQuotas) As XmlDictionaryReader
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: The stream from which to read.
+    - id: quotas
+      type: System.Xml.XmlDictionaryReaderQuotas
+      description: The quotas applied to the reader.
+    return:
+      type: System.Xml.XmlDictionaryReader
+      description: An instance of @'System.Xml.XmlDictionaryReader'.
+- uid: System.Xml.XmlDictionaryReader.CreateTextReader(System.IO.Stream,System.Text.Encoding,System.Xml.XmlDictionaryReaderQuotas,System.Xml.OnXmlDictionaryReaderClose)
+  id: CreateTextReader(System.IO.Stream,System.Text.Encoding,System.Xml.XmlDictionaryReaderQuotas,System.Xml.OnXmlDictionaryReaderClose)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: CreateTextReader(Stream, Encoding, XmlDictionaryReaderQuotas, OnXmlDictionaryReaderClose)
+  fullName: System.Xml.XmlDictionaryReader.CreateTextReader(System.IO.Stream, System.Text.Encoding, System.Xml.XmlDictionaryReaderQuotas, System.Xml.OnXmlDictionaryReaderClose)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 99
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Creates an instance of @'System.Xml.XmlDictionaryReader'.
+  syntax:
+    content: public static XmlDictionaryReader CreateTextReader(Stream stream, Encoding encoding, XmlDictionaryReaderQuotas quotas, OnXmlDictionaryReaderClose onClose)
+    content.vb: Public Shared Function CreateTextReader(stream As Stream, encoding As Encoding, quotas As XmlDictionaryReaderQuotas, onClose As OnXmlDictionaryReaderClose) As XmlDictionaryReader
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: The stream from which to read.
+    - id: encoding
+      type: System.Text.Encoding
+      description: The @'System.Text.Encoding' object that specifies the encoding properties to apply.
+    - id: quotas
+      type: System.Xml.XmlDictionaryReaderQuotas
+      description: The @'System.Xml.XmlDictionaryReaderQuotas' to apply.
+    - id: onClose
+      type: System.Xml.OnXmlDictionaryReaderClose
+      description: The delegate to be called when the reader is closed.
+    return:
+      type: System.Xml.XmlDictionaryReader
+      description: An instance of @'System.Xml.XmlDictionaryReader'.
+- uid: System.Xml.XmlDictionaryReader.CanCanonicalize
+  id: CanCanonicalize
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: CanCanonicalize
+  fullName: System.Xml.XmlDictionaryReader.CanCanonicalize
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 108
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: This property always returns false. Its derived classes can override to return true if they support canonicalization.
+  syntax:
+    content: public virtual bool CanCanonicalize { get; }
+    content.vb: Public Overridable ReadOnly Property CanCanonicalize As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: Returns false.
+- uid: System.Xml.XmlDictionaryReader.Quotas
+  id: Quotas
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: Quotas
+  fullName: System.Xml.XmlDictionaryReader.Quotas
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 116
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Gets the quota values that apply to the current instance of this class.
+  syntax:
+    content: public virtual XmlDictionaryReaderQuotas Quotas { get; }
+    content.vb: Public Overridable ReadOnly Property Quotas As XmlDictionaryReaderQuotas
+    parameters: []
+    return:
+      type: System.Xml.XmlDictionaryReaderQuotas
+      description: The @'System.Xml.XmlDictionaryReaderQuotas' that applies to the current instance of this class.
+- uid: System.Xml.XmlDictionaryReader.StartCanonicalization(System.IO.Stream,System.Boolean,System.String[])
+  id: StartCanonicalization(System.IO.Stream,System.Boolean,System.String[])
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: StartCanonicalization(Stream, Boolean, String[])
+  name.vb: StartCanonicalization(Stream, Boolean, String())
+  fullName: System.Xml.XmlDictionaryReader.StartCanonicalization(System.IO.Stream, System.Boolean, System.String[])
+  fullName.vb: System.Xml.XmlDictionaryReader.StartCanonicalization(System.IO.Stream, System.Boolean, System.String())
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 124
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: This method is not yet implemented.
+  syntax:
+    content: public virtual void StartCanonicalization(Stream stream, bool includeComments, string[] inclusivePrefixes)
+    content.vb: Public Overridable Sub StartCanonicalization(stream As Stream, includeComments As Boolean, inclusivePrefixes As String())
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: The stream to read from.
+    - id: includeComments
+      type: System.Boolean
+      description: Determines whether comments are included.
+    - id: inclusivePrefixes
+      type: System.String[]
+      description: The prefixes to be included.
+  exceptions:
+  - type: System.NotSupportedException
+    description: Always.
+- uid: System.Xml.XmlDictionaryReader.EndCanonicalization
+  id: EndCanonicalization
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: EndCanonicalization()
+  fullName: System.Xml.XmlDictionaryReader.EndCanonicalization()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 129
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: This method is not yet implemented.
+  syntax:
+    content: public virtual void EndCanonicalization()
+    content.vb: Public Overridable Sub
+  exceptions:
+  - type: System.NotSupportedException
+    description: Always.
+- uid: System.Xml.XmlDictionaryReader.MoveToStartElement
+  id: MoveToStartElement
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: MoveToStartElement()
+  fullName: System.Xml.XmlDictionaryReader.MoveToStartElement()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 134
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Tests whether the current content node is a start element or an empty element.
+  syntax:
+    content: public virtual void MoveToStartElement()
+    content.vb: Public Overridable Sub MoveToStartElement
+- uid: System.Xml.XmlDictionaryReader.MoveToStartElement(System.String)
+  id: MoveToStartElement(System.String)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: MoveToStartElement(String)
+  fullName: System.Xml.XmlDictionaryReader.MoveToStartElement(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 140
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Tests whether the current content node is a start element or an empty element and if the @'System.Xml.XmlReader.Name' property of the element matches the given argument.
+  syntax:
+    content: public virtual void MoveToStartElement(string name)
+    content.vb: Public Overridable Sub MoveToStartElement(name As String)
+    parameters:
+    - id: name
+      type: System.String
+      description: The @'System.Xml.XmlReader.Name' property of the element.
+- uid: System.Xml.XmlDictionaryReader.MoveToStartElement(System.String,System.String)
+  id: MoveToStartElement(System.String,System.String)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: MoveToStartElement(String, String)
+  fullName: System.Xml.XmlDictionaryReader.MoveToStartElement(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 146
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Tests whether the current content node is a start element or an empty element and if the @'System.Xml.XmlReader.LocalName' and @'System.Xml.XmlReader.NamespaceURI' properties of the element matches the given arguments.
+  syntax:
+    content: public virtual void MoveToStartElement(string localName, string namespaceUri)
+    content.vb: Public Overridable Sub MoveToStartElement(localName As String, namespaceUri As String)
+    parameters:
+    - id: localName
+      type: System.String
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.String
+      description: The namespace URI of the element.
+- uid: System.Xml.XmlDictionaryReader.MoveToStartElement(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  id: MoveToStartElement(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: MoveToStartElement(XmlDictionaryString, XmlDictionaryString)
+  fullName: System.Xml.XmlDictionaryReader.MoveToStartElement(System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 152
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Tests whether the current content node is a start element or an empty element and if the @'System.Xml.XmlReader.LocalName' and @'System.Xml.XmlReader.NamespaceURI' properties of the element matches the given argument.
+  syntax:
+    content: public virtual void MoveToStartElement(XmlDictionaryString localName, XmlDictionaryString namespaceUri)
+    content.vb: Public Overridable Sub MoveToStartElement(localName As XmlDictionaryString, namespaceUri As XmlDictionaryString)
+    parameters:
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace URI of the element.
+- uid: System.Xml.XmlDictionaryReader.IsLocalName(System.String)
+  id: IsLocalName(System.String)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: IsLocalName(String)
+  fullName: System.Xml.XmlDictionaryReader.IsLocalName(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 158
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Checks whether the parameter, *localName*, is the local name of the current node.
+  syntax:
+    content: public virtual bool IsLocalName(string localName)
+    content.vb: Public Overridable Function IsLocalName(localName As String) As Boolean
+    parameters:
+    - id: localName
+      type: System.String
+      description: The local name of the current node.
+    return:
+      type: System.Boolean
+      description: true if *localName* matches local name of the current node; otherwise false.
+- uid: System.Xml.XmlDictionaryReader.IsLocalName(System.Xml.XmlDictionaryString)
+  id: IsLocalName(System.Xml.XmlDictionaryString)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: IsLocalName(XmlDictionaryString)
+  fullName: System.Xml.XmlDictionaryReader.IsLocalName(System.Xml.XmlDictionaryString)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 163
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Checks whether the parameter, *localName*, is the local name of the current node.
+  syntax:
+    content: public virtual bool IsLocalName(XmlDictionaryString localName)
+    content.vb: Public Overridable Function IsLocalName(localName As XmlDictionaryString) As Boolean
+    parameters:
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: An @'System.Xml.XmlDictionaryString' that represents the local name of the current node.
+    return:
+      type: System.Boolean
+      description: true if *localName* matches local name of the current node; otherwise false.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*localName* is null.'
+- uid: System.Xml.XmlDictionaryReader.IsNamespaceUri(System.String)
+  id: IsNamespaceUri(System.String)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: IsNamespaceUri(String)
+  fullName: System.Xml.XmlDictionaryReader.IsNamespaceUri(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 171
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Checks whether the parameter, *namespaceUri*, is the namespace of the current node.
+  syntax:
+    content: public virtual bool IsNamespaceUri(string namespaceUri)
+    content.vb: Public Overridable Function IsNamespaceUri(namespaceUri As String) As Boolean
+    parameters:
+    - id: namespaceUri
+      type: System.String
+      description: The namespace of current node.
+    return:
+      type: System.Boolean
+      description: true if *namespaceUri* matches namespace of the current node; otherwise false.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*namespaceUri* is null.'
+- uid: System.Xml.XmlDictionaryReader.IsNamespaceUri(System.Xml.XmlDictionaryString)
+  id: IsNamespaceUri(System.Xml.XmlDictionaryString)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: IsNamespaceUri(XmlDictionaryString)
+  fullName: System.Xml.XmlDictionaryReader.IsNamespaceUri(System.Xml.XmlDictionaryString)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 178
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Checks whether the parameter, *namespaceUri*, is the namespace of the current node.
+  syntax:
+    content: public virtual bool IsNamespaceUri(XmlDictionaryString namespaceUri)
+    content.vb: Public Overridable Function IsNamespaceUri(namespaceUri As XmlDictionaryString) As Boolean
+    parameters:
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: Namespace of current node.
+    return:
+      type: System.Boolean
+      description: true if *namespaceUri* matches namespace of the current node; otherwise false.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*namespaceUri* is null.'
+- uid: System.Xml.XmlDictionaryReader.ReadFullStartElement
+  id: ReadFullStartElement
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadFullStartElement()
+  fullName: System.Xml.XmlDictionaryReader.ReadFullStartElement()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 185
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Checks whether the current node is an element and advances the reader to the next node.
+  syntax:
+    content: public virtual void ReadFullStartElement()
+    content.vb: Public Overridable Sub ReadFullStartElement
+  exceptions:
+  - type: System.Xml.XmlException
+    description: '@''System.Xml.XmlDictionaryReader.IsStartElement(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)'' returns false.'
+- uid: System.Xml.XmlDictionaryReader.ReadFullStartElement(System.String)
+  id: ReadFullStartElement(System.String)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadFullStartElement(String)
+  fullName: System.Xml.XmlDictionaryReader.ReadFullStartElement(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 193
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Checks whether the current node is an element with the given *name* and advances the reader to the next node.
+  syntax:
+    content: public virtual void ReadFullStartElement(string name)
+    content.vb: Public Overridable Sub ReadFullStartElement(name As String)
+    parameters:
+    - id: name
+      type: System.String
+      description: The qualified name of the element.
+  exceptions:
+  - type: System.Xml.XmlException
+    description: '@''System.Xml.XmlDictionaryReader.IsStartElement(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)'' returns false.'
+- uid: System.Xml.XmlDictionaryReader.ReadFullStartElement(System.String,System.String)
+  id: ReadFullStartElement(System.String,System.String)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadFullStartElement(String, String)
+  fullName: System.Xml.XmlDictionaryReader.ReadFullStartElement(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 201
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Checks whether the current node is an element with the given *localName* and *namespaceUri* and advances the reader to the next node.
+  syntax:
+    content: public virtual void ReadFullStartElement(string localName, string namespaceUri)
+    content.vb: Public Overridable Sub ReadFullStartElement(localName As String, namespaceUri As String)
+    parameters:
+    - id: localName
+      type: System.String
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.String
+      description: The namespace URI of the element.
+  exceptions:
+  - type: System.Xml.XmlException
+    description: '@''System.Xml.XmlDictionaryReader.IsStartElement(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)'' returns false.'
+- uid: System.Xml.XmlDictionaryReader.ReadFullStartElement(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  id: ReadFullStartElement(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadFullStartElement(XmlDictionaryString, XmlDictionaryString)
+  fullName: System.Xml.XmlDictionaryReader.ReadFullStartElement(System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 209
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Checks whether the current node is an element with the given *localName* and *namespaceUri* and advances the reader to the next node.
+  syntax:
+    content: public virtual void ReadFullStartElement(XmlDictionaryString localName, XmlDictionaryString namespaceUri)
+    content.vb: Public Overridable Sub ReadFullStartElement(localName As XmlDictionaryString, namespaceUri As XmlDictionaryString)
+    parameters:
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace URI of the element.
+  exceptions:
+  - type: System.Xml.XmlException
+    description: '@''System.Xml.XmlDictionaryReader.IsStartElement(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)'' returns false.'
+- uid: System.Xml.XmlDictionaryReader.ReadStartElement(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  id: ReadStartElement(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadStartElement(XmlDictionaryString, XmlDictionaryString)
+  fullName: System.Xml.XmlDictionaryReader.ReadStartElement(System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 217
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Checks whether the current node is an element with the given *localName* and *namespaceUri* and advances the reader to the next node.
+  syntax:
+    content: public virtual void ReadStartElement(XmlDictionaryString localName, XmlDictionaryString namespaceUri)
+    content.vb: Public Overridable Sub ReadStartElement(localName As XmlDictionaryString, namespaceUri As XmlDictionaryString)
+    parameters:
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace URI of the element.
+- uid: System.Xml.XmlDictionaryReader.IsStartElement(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  id: IsStartElement(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: IsStartElement(XmlDictionaryString, XmlDictionaryString)
+  fullName: System.Xml.XmlDictionaryReader.IsStartElement(System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 223
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Tests whether the first tag is a start tag or empty element tag and if the local name and namespace URI match those of the current node.
+  syntax:
+    content: public virtual bool IsStartElement(XmlDictionaryString localName, XmlDictionaryString namespaceUri)
+    content.vb: Public Overridable Function IsStartElement(localName As XmlDictionaryString, namespaceUri As XmlDictionaryString) As Boolean
+    parameters:
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: An @'System.Xml.XmlDictionaryString' that represents the local name of the attribute.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: An @'System.Xml.XmlDictionaryString' that represents the namespace of the attribute.
+    return:
+      type: System.Boolean
+      description: true if the first tag in the array is a start tag or empty element tag and matches *localName* and *namespaceUri*; otherwise false.
+- uid: System.Xml.XmlDictionaryReader.IndexOfLocalName(System.String[],System.String)
+  id: IndexOfLocalName(System.String[],System.String)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: IndexOfLocalName(String[], String)
+  name.vb: IndexOfLocalName(String(), String)
+  fullName: System.Xml.XmlDictionaryReader.IndexOfLocalName(System.String[], System.String)
+  fullName.vb: System.Xml.XmlDictionaryReader.IndexOfLocalName(System.String(), System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 228
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Gets the index of the local name of the current node within an array of names.
+  syntax:
+    content: public virtual int IndexOfLocalName(string[] localNames, string namespaceUri)
+    content.vb: Public Overridable Function IndexOfLocalName(localNames As String(), namespaceUri As String) As Integer
+    parameters:
+    - id: localNames
+      type: System.String[]
+      description: The string array of local names to be searched.
+    - id: namespaceUri
+      type: System.String
+      description: The namespace of current node.
+    return:
+      type: System.Int32
+      description: The index of the local name of the current node within an array of names.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*localNames* or any of the names in the array is null.'
+  - type: System.ArgumentNullException
+    description: '*namespaceUri* is null.'
+- uid: System.Xml.XmlDictionaryReader.IndexOfLocalName(System.Xml.XmlDictionaryString[],System.Xml.XmlDictionaryString)
+  id: IndexOfLocalName(System.Xml.XmlDictionaryString[],System.Xml.XmlDictionaryString)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: IndexOfLocalName(XmlDictionaryString[], XmlDictionaryString)
+  name.vb: IndexOfLocalName(XmlDictionaryString(), XmlDictionaryString)
+  fullName: System.Xml.XmlDictionaryReader.IndexOfLocalName(System.Xml.XmlDictionaryString[], System.Xml.XmlDictionaryString)
+  fullName.vb: System.Xml.XmlDictionaryReader.IndexOfLocalName(System.Xml.XmlDictionaryString(), System.Xml.XmlDictionaryString)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 254
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Gets the index of the local name of the current node within an array of names.
+  syntax:
+    content: public virtual int IndexOfLocalName(XmlDictionaryString[] localNames, XmlDictionaryString namespaceUri)
+    content.vb: Public Overridable Function IndexOfLocalName(localNames As XmlDictionaryString(), namespaceUri As XmlDictionaryString) As Integer
+    parameters:
+    - id: localNames
+      type: System.Xml.XmlDictionaryString[]
+      description: The @'System.Xml.XmlDictionaryString' array of local names to be searched.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace of current node.
+    return:
+      type: System.Int32
+      description: The index of the local name of the current node within an array of names.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*localNames* or any of the names in the array is null.'
+  - type: System.ArgumentNullException
+    description: '*namespaceUri* is null.'
+- uid: System.Xml.XmlDictionaryReader.GetAttribute(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  id: GetAttribute(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: GetAttribute(XmlDictionaryString, XmlDictionaryString)
+  fullName: System.Xml.XmlDictionaryReader.GetAttribute(System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 280
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: When overridden in a derived class, gets the value of an attribute.
+  syntax:
+    content: public virtual string GetAttribute(XmlDictionaryString localName, XmlDictionaryString namespaceUri)
+    content.vb: Public Overridable Function GetAttribute(localName As XmlDictionaryString, namespaceUri As XmlDictionaryString) As String
+    parameters:
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: An @'System.Xml.XmlDictionaryString' that represents the local name of the attribute.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: An @'System.Xml.XmlDictionaryString' that represents the namespace of the attribute.
+    return:
+      type: System.String
+      description: The value of the attribute.
+- uid: System.Xml.XmlDictionaryReader.TryGetBase64ContentLength(System.Int32@)
+  id: TryGetBase64ContentLength(System.Int32@)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: TryGetBase64ContentLength(out Int32)
+  name.vb: TryGetBase64ContentLength(ByRef Int32)
+  fullName: System.Xml.XmlDictionaryReader.TryGetBase64ContentLength(out System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryReader.TryGetBase64ContentLength(ByRef System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 285
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Not implemented in this class (it always returns false). May be overridden in derived classes.
+  syntax:
+    content: public virtual bool TryGetBase64ContentLength(out int length)
+    content.vb: Public Overridable Function TryGetBase64ContentLength(ByRef length As Integer) As Boolean
+    parameters:
+    - id: length
+      type: System.Int32
+      description: Returns 0, unless overridden in a derived class.
+    return:
+      type: System.Boolean
+      description: false, unless overridden in a derived class.
+- uid: System.Xml.XmlDictionaryReader.ReadValueAsBase64(System.Byte[],System.Int32,System.Int32)
+  id: ReadValueAsBase64(System.Byte[],System.Int32,System.Int32)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadValueAsBase64(Byte[], Int32, Int32)
+  name.vb: ReadValueAsBase64(Byte(), Int32, Int32)
+  fullName: System.Xml.XmlDictionaryReader.ReadValueAsBase64(System.Byte[], System.Int32, System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryReader.ReadValueAsBase64(System.Byte(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 291
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Not implemented.
+  syntax:
+    content: public virtual int ReadValueAsBase64(byte[] buffer, int offset, int count)
+    content.vb: Public Overridable Function ReadValueAsBase64(buffer As Byte(), offset As Integer, count As Integer) As Integer
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+      description: The buffer from which to read.
+    - id: offset
+      type: System.Int32
+      description: The starting position from which to read in *buffer*.
+    - id: count
+      type: System.Int32
+      description: The number of bytes that can be read from *buffer*.
+    return:
+      type: System.Int32
+      description: Not implemented.
+  exceptions:
+  - type: System.NotSupportedException
+    description: Always.
+- uid: System.Xml.XmlDictionaryReader.ReadContentAsBase64
+  id: ReadContentAsBase64
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadContentAsBase64()
+  fullName: System.Xml.XmlDictionaryReader.ReadContentAsBase64()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 296
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Reads the content and returns the Base64 decoded binary bytes.
+  syntax:
+    content: public virtual byte[] ReadContentAsBase64()
+    content.vb: Public Overridable Function ReadContentAsBase64 As Byte()
+    return:
+      type: System.Byte[]
+      description: A byte array that contains the Base64 decoded binary bytes.
+  exceptions:
+  - type: System.Xml.XmlException
+    description: The array size is greater than the MaxArrayLength quota for this reader.
+- uid: System.Xml.XmlDictionaryReader.ReadContentAsString
+  id: ReadContentAsString
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadContentAsString()
+  fullName: System.Xml.XmlDictionaryReader.ReadContentAsString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 323
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Converts a node's content to a string.
+  syntax:
+    content: public override string ReadContentAsString()
+    content.vb: Public Overrides Function ReadContentAsString As String
+    return:
+      type: System.String
+      description: The node content in a string representation.
+- uid: System.Xml.XmlDictionaryReader.ReadContentAsString(System.Int32)
+  id: ReadContentAsString(System.Int32)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadContentAsString(Int32)
+  fullName: System.Xml.XmlDictionaryReader.ReadContentAsString(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 328
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Converts a node's content to a string.
+  syntax:
+    content: protected string ReadContentAsString(int maxStringContentLength)
+    content.vb: Protected Function ReadContentAsString(maxStringContentLength As Integer) As String
+    parameters:
+    - id: maxStringContentLength
+      type: System.Int32
+      description: The maximum string length.
+    return:
+      type: System.String
+      description: Node content in string representation.
+- uid: System.Xml.XmlDictionaryReader.ReadContentAsBinHex
+  id: ReadContentAsBinHex
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadContentAsBinHex()
+  fullName: System.Xml.XmlDictionaryReader.ReadContentAsBinHex()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 388
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Reads the content and returns the BinHex decoded binary bytes.
+  syntax:
+    content: public virtual byte[] ReadContentAsBinHex()
+    content.vb: Public Overridable Function ReadContentAsBinHex As Byte()
+    return:
+      type: System.Byte[]
+      description: A byte array that contains the BinHex decoded binary bytes.
+  exceptions:
+  - type: System.Xml.XmlException
+    description: The array size is greater than @'System.Int32.MaxValue'.
+- uid: System.Xml.XmlDictionaryReader.ReadContentAsBinHex(System.Int32)
+  id: ReadContentAsBinHex(System.Int32)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadContentAsBinHex(Int32)
+  fullName: System.Xml.XmlDictionaryReader.ReadContentAsBinHex(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 393
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Reads the content and returns the BinHex decoded binary bytes.
+  syntax:
+    content: protected byte[] ReadContentAsBinHex(int maxByteArrayContentLength)
+    content.vb: Protected Function ReadContentAsBinHex(maxByteArrayContentLength As Integer) As Byte()
+    parameters:
+    - id: maxByteArrayContentLength
+      type: System.Int32
+      description: The maximum array length.
+    return:
+      type: System.Byte[]
+      description: A byte array that contains the BinHex decoded binary bytes.
+  exceptions:
+  - type: System.Xml.XmlException
+    description: The array size is greater than *maxByteArrayContentLength*.
+- uid: System.Xml.XmlDictionaryReader.IsTextNode(XmlNodeType)
+  id: IsTextNode(XmlNodeType)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: IsTextNode(XmlNodeType)
+  fullName: System.Xml.XmlDictionaryReader.IsTextNode(XmlNodeType)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 438
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  syntax:
+    content: protected bool IsTextNode(XmlNodeType nodeType)
+    content.vb: Protected Function IsTextNode(nodeType As XmlNodeType) As Boolean
+    parameters:
+    - id: nodeType
+      type: XmlNodeType
+    return:
+      type: System.Boolean
+- uid: System.Xml.XmlDictionaryReader.ReadContentAsChars(System.Char[],System.Int32,System.Int32)
+  id: ReadContentAsChars(System.Char[],System.Int32,System.Int32)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadContentAsChars(Char[], Int32, Int32)
+  name.vb: ReadContentAsChars(Char(), Int32, Int32)
+  fullName: System.Xml.XmlDictionaryReader.ReadContentAsChars(System.Char[], System.Int32, System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryReader.ReadContentAsChars(System.Char(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 447
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Reads the content into a char array.
+  syntax:
+    content: public virtual int ReadContentAsChars(char[] chars, int offset, int count)
+    content.vb: Public Overridable Function ReadContentAsChars(chars As Char(), offset As Integer, count As Integer) As Integer
+    parameters:
+    - id: chars
+      type: System.Char[]
+      description: The array into which the characters are put.
+    - id: offset
+      type: System.Int32
+      description: The starting index in the array.
+    - id: count
+      type: System.Int32
+      description: The number of characters to put in the array.
+    return:
+      type: System.Int32
+      description: Number of characters read.
+- uid: System.Xml.XmlDictionaryReader.ReadContentAs(System.Type,IXmlNamespaceResolver)
+  id: ReadContentAs(System.Type,IXmlNamespaceResolver)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadContentAs(Type, IXmlNamespaceResolver)
+  fullName: System.Xml.XmlDictionaryReader.ReadContentAs(System.Type, IXmlNamespaceResolver)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 480
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  syntax:
+    content: public override object ReadContentAs(Type type, IXmlNamespaceResolver namespaceResolver)
+    content.vb: Public Overrides Function ReadContentAs(type As Type, namespaceResolver As IXmlNamespaceResolver) As Object
+    parameters:
+    - id: type
+      type: System.Type
+    - id: namespaceResolver
+      type: IXmlNamespaceResolver
+    return:
+      type: System.Object
+- uid: System.Xml.XmlDictionaryReader.ReadContentAsString(System.String[],System.Int32@)
+  id: ReadContentAsString(System.String[],System.Int32@)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadContentAsString(String[], out Int32)
+  name.vb: ReadContentAsString(String(), ByRef Int32)
+  fullName: System.Xml.XmlDictionaryReader.ReadContentAsString(System.String[], out System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryReader.ReadContentAsString(System.String(), ByRef System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 501
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Converts a node's content to a string.
+  syntax:
+    content: public virtual string ReadContentAsString(string[] strings, out int index)
+    content.vb: Public Overridable Function ReadContentAsString(strings As String(), ByRef index As Integer) As String
+    parameters:
+    - id: strings
+      type: System.String[]
+      description: The array of strings to match content against.
+    - id: index
+      type: System.Int32
+      description: The index of the entry in *strings* that matches the content.
+    return:
+      type: System.String
+      description: The node content in a string representation.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*strings* is null.'
+  - type: System.ArgumentNullException
+    description: An entry in* strings* is null.
+- uid: System.Xml.XmlDictionaryReader.ReadContentAsString(System.Xml.XmlDictionaryString[],System.Int32@)
+  id: ReadContentAsString(System.Xml.XmlDictionaryString[],System.Int32@)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadContentAsString(XmlDictionaryString[], out Int32)
+  name.vb: ReadContentAsString(XmlDictionaryString(), ByRef Int32)
+  fullName: System.Xml.XmlDictionaryReader.ReadContentAsString(System.Xml.XmlDictionaryString[], out System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryReader.ReadContentAsString(System.Xml.XmlDictionaryString(), ByRef System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 521
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Converts a node's content to a string.
+  syntax:
+    content: public virtual string ReadContentAsString(XmlDictionaryString[] strings, out int index)
+    content.vb: Public Overridable Function ReadContentAsString(strings As XmlDictionaryString(), ByRef index As Integer) As String
+    parameters:
+    - id: strings
+      type: System.Xml.XmlDictionaryString[]
+      description: The array of @'System.Xml.XmlDictionaryString' objects to match content against.
+    - id: index
+      type: System.Int32
+      description: The index of the entry in *strings* that matches the content.
+    return:
+      type: System.String
+      description: The node content in a string representation.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*strings* is null.'
+  - type: System.ArgumentNullException
+    description: An entry in* strings* is null.
+- uid: System.Xml.XmlDictionaryReader.ReadContentAsDecimal
+  id: ReadContentAsDecimal
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadContentAsDecimal()
+  fullName: System.Xml.XmlDictionaryReader.ReadContentAsDecimal()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 541
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Converts a node's content to decimal.
+  syntax:
+    content: public override decimal ReadContentAsDecimal()
+    content.vb: Public Overrides Function ReadContentAsDecimal As Decimal
+    return:
+      type: System.Decimal
+      description: The decimal representation of node's content.
+- uid: System.Xml.XmlDictionaryReader.ReadContentAsFloat
+  id: ReadContentAsFloat
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadContentAsFloat()
+  fullName: System.Xml.XmlDictionaryReader.ReadContentAsFloat()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 546
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Converts a node's content to float.
+  syntax:
+    content: public override float ReadContentAsFloat()
+    content.vb: Public Overrides Function ReadContentAsFloat As Single
+    return:
+      type: System.Single
+      description: The float representation of node's content.
+- uid: System.Xml.XmlDictionaryReader.ReadContentAsUniqueId
+  id: ReadContentAsUniqueId
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadContentAsUniqueId()
+  fullName: System.Xml.XmlDictionaryReader.ReadContentAsUniqueId()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 551
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Converts a node's content to a unique identifier.
+  syntax:
+    content: public virtual UniqueId ReadContentAsUniqueId()
+    content.vb: Public Overridable Function ReadContentAsUniqueId As UniqueId
+    return:
+      type: System.Xml.UniqueId
+      description: The node's content represented as a unique identifier.
+- uid: System.Xml.XmlDictionaryReader.ReadContentAsGuid
+  id: ReadContentAsGuid
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadContentAsGuid()
+  fullName: System.Xml.XmlDictionaryReader.ReadContentAsGuid()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 556
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Converts a node's content to guid.
+  syntax:
+    content: public virtual Guid ReadContentAsGuid()
+    content.vb: Public Overridable Function ReadContentAsGuid As Guid
+    return:
+      type: System.Guid
+      description: The guid representation of node's content.
+- uid: System.Xml.XmlDictionaryReader.ReadContentAsTimeSpan
+  id: ReadContentAsTimeSpan
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadContentAsTimeSpan()
+  fullName: System.Xml.XmlDictionaryReader.ReadContentAsTimeSpan()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 561
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Converts a node's content to @'System.TimeSpan'.
+  syntax:
+    content: public virtual TimeSpan ReadContentAsTimeSpan()
+    content.vb: Public Overridable Function ReadContentAsTimeSpan As TimeSpan
+    return:
+      type: System.TimeSpan
+      description: '@''System.TimeSpan'' representation of node''s content.'
+- uid: System.Xml.XmlDictionaryReader.ReadContentAsQualifiedName(System.String@,System.String@)
+  id: ReadContentAsQualifiedName(System.String@,System.String@)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadContentAsQualifiedName(out String, out String)
+  name.vb: ReadContentAsQualifiedName(ByRef String, ByRef String)
+  fullName: System.Xml.XmlDictionaryReader.ReadContentAsQualifiedName(out System.String, out System.String)
+  fullName.vb: System.Xml.XmlDictionaryReader.ReadContentAsQualifiedName(ByRef System.String, ByRef System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 566
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Converts a node's content to a qualified name representation.
+  syntax:
+    content: public virtual void ReadContentAsQualifiedName(out string localName, out string namespaceUri)
+    content.vb: Public Overridable Sub ReadContentAsQualifiedName(ByRef localName As String, ByRef namespaceUri As String)
+    parameters:
+    - id: localName
+      type: System.String
+      description: The @'System.Xml.XmlReader.LocalName' part of the qualified name (out parameter).
+    - id: namespaceUri
+      type: System.String
+      description: The @'System.Xml.XmlReader.NamespaceURI' part of the qualified name (out parameter).
+- uid: System.Xml.XmlDictionaryReader.ReadElementContentAsString
+  id: ReadElementContentAsString
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadElementContentAsString()
+  fullName: System.Xml.XmlDictionaryReader.ReadElementContentAsString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 576
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Converts an element's content to a @'System.String'.
+  syntax:
+    content: public override string ReadElementContentAsString()
+    content.vb: Public Overrides Function ReadElementContentAsString As String
+    return:
+      type: System.String
+      description: The node's content represented as a @'System.String'.
+- uid: System.Xml.XmlDictionaryReader.ReadElementContentAsBoolean
+  id: ReadElementContentAsBoolean
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadElementContentAsBoolean()
+  fullName: System.Xml.XmlDictionaryReader.ReadElementContentAsBoolean()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 596
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Converts an element's content to a @'System.Boolean'.
+  syntax:
+    content: public override bool ReadElementContentAsBoolean()
+    content.vb: Public Overrides Function ReadElementContentAsBoolean As Boolean
+    return:
+      type: System.Boolean
+      description: The node's content represented as a @'System.Boolean'.
+- uid: System.Xml.XmlDictionaryReader.ReadElementContentAsInt
+  id: ReadElementContentAsInt
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadElementContentAsInt()
+  fullName: System.Xml.XmlDictionaryReader.ReadElementContentAsInt()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 616
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Converts an element's content to an integer (@'System.Int32').
+  syntax:
+    content: public override int ReadElementContentAsInt()
+    content.vb: Public Overrides Function ReadElementContentAsInt As Integer
+    return:
+      type: System.Int32
+      description: The node's content represented as an integer (@'System.Int32').
+- uid: System.Xml.XmlDictionaryReader.ReadElementContentAsLong
+  id: ReadElementContentAsLong
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadElementContentAsLong()
+  fullName: System.Xml.XmlDictionaryReader.ReadElementContentAsLong()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 636
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Converts an element's content to a long integer (@'System.Int64').
+  syntax:
+    content: public override long ReadElementContentAsLong()
+    content.vb: Public Overrides Function ReadElementContentAsLong As Long
+    return:
+      type: System.Int64
+      description: The node's content represented as a long integer (@'System.Int64').
+- uid: System.Xml.XmlDictionaryReader.ReadElementContentAsFloat
+  id: ReadElementContentAsFloat
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadElementContentAsFloat()
+  fullName: System.Xml.XmlDictionaryReader.ReadElementContentAsFloat()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 656
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Converts an element's content to a floating point number (@'System.Single').
+  syntax:
+    content: public override float ReadElementContentAsFloat()
+    content.vb: Public Overrides Function ReadElementContentAsFloat As Single
+    return:
+      type: System.Single
+      description: The node's content represented as a floating point number (@'System.Single').
+- uid: System.Xml.XmlDictionaryReader.ReadElementContentAsDouble
+  id: ReadElementContentAsDouble
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadElementContentAsDouble()
+  fullName: System.Xml.XmlDictionaryReader.ReadElementContentAsDouble()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 676
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Converts an element's content to a @'System.Double'.
+  syntax:
+    content: public override double ReadElementContentAsDouble()
+    content.vb: Public Overrides Function ReadElementContentAsDouble As Double
+    return:
+      type: System.Double
+      description: The node's content represented as a @'System.Double'.
+- uid: System.Xml.XmlDictionaryReader.ReadElementContentAsDecimal
+  id: ReadElementContentAsDecimal
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadElementContentAsDecimal()
+  fullName: System.Xml.XmlDictionaryReader.ReadElementContentAsDecimal()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 696
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Converts an element's content to a @'System.Decimal'.
+  syntax:
+    content: public override decimal ReadElementContentAsDecimal()
+    content.vb: Public Overrides Function ReadElementContentAsDecimal As Decimal
+    return:
+      type: System.Decimal
+      description: The node's content represented as a @'System.Decimal'.
+- uid: System.Xml.XmlDictionaryReader.ReadElementContentAsDateTime
+  id: ReadElementContentAsDateTime
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadElementContentAsDateTime()
+  fullName: System.Xml.XmlDictionaryReader.ReadElementContentAsDateTime()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 716
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Converts an element's content to a @'System.DateTime'.
+  syntax:
+    content: public virtual DateTime ReadElementContentAsDateTime()
+    content.vb: Public Overridable Function ReadElementContentAsDateTime As Date
+    return:
+      type: System.DateTime
+      description: The node's content represented as a @'System.DateTime'.
+  exceptions:
+  - type: System.ArgumentException
+    description: The element is not in valid format.
+  - type: System.FormatException
+    description: The element is not in valid format.
+- uid: System.Xml.XmlDictionaryReader.ReadElementContentAsUniqueId
+  id: ReadElementContentAsUniqueId
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadElementContentAsUniqueId()
+  fullName: System.Xml.XmlDictionaryReader.ReadElementContentAsUniqueId()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 747
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Converts an element's content to a unique identifier.
+  syntax:
+    content: public virtual UniqueId ReadElementContentAsUniqueId()
+    content.vb: Public Overridable Function ReadElementContentAsUniqueId As UniqueId
+    return:
+      type: System.Xml.UniqueId
+      description: The node's content represented as a unique identifier.
+  exceptions:
+  - type: System.ArgumentException
+    description: The element is not in valid format.
+  - type: System.FormatException
+    description: The element is not in valid format.
+- uid: System.Xml.XmlDictionaryReader.ReadElementContentAsGuid
+  id: ReadElementContentAsGuid
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadElementContentAsGuid()
+  fullName: System.Xml.XmlDictionaryReader.ReadElementContentAsGuid()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 778
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Converts an element's content to a @'System.Guid'.
+  syntax:
+    content: public virtual Guid ReadElementContentAsGuid()
+    content.vb: Public Overridable Function ReadElementContentAsGuid As Guid
+    return:
+      type: System.Guid
+      description: The node's content represented as a @'System.Guid'.
+  exceptions:
+  - type: System.ArgumentException
+    description: The element is not in valid format.
+  - type: System.FormatException
+    description: The element is not in valid format.
+- uid: System.Xml.XmlDictionaryReader.ReadElementContentAsTimeSpan
+  id: ReadElementContentAsTimeSpan
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadElementContentAsTimeSpan()
+  fullName: System.Xml.XmlDictionaryReader.ReadElementContentAsTimeSpan()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 813
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Converts an element's content to a @'System.TimeSpan'.
+  syntax:
+    content: public virtual TimeSpan ReadElementContentAsTimeSpan()
+    content.vb: Public Overridable Function ReadElementContentAsTimeSpan As TimeSpan
+    return:
+      type: System.TimeSpan
+      description: The node's content represented as a @'System.TimeSpan'.
+- uid: System.Xml.XmlDictionaryReader.ReadElementContentAsBase64
+  id: ReadElementContentAsBase64
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadElementContentAsBase64()
+  fullName: System.Xml.XmlDictionaryReader.ReadElementContentAsBase64()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 833
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Converts a node's content to a array of Base64 bytes.
+  syntax:
+    content: public virtual byte[] ReadElementContentAsBase64()
+    content.vb: Public Overridable Function ReadElementContentAsBase64 As Byte()
+    return:
+      type: System.Byte[]
+      description: The node's content represented as an array of Base64 bytes.
+- uid: System.Xml.XmlDictionaryReader.ReadElementContentAsBinHex
+  id: ReadElementContentAsBinHex
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadElementContentAsBinHex()
+  fullName: System.Xml.XmlDictionaryReader.ReadElementContentAsBinHex()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 853
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Converts a node's content to an array of BinHex bytes.
+  syntax:
+    content: public virtual byte[] ReadElementContentAsBinHex()
+    content.vb: Public Overridable Function ReadElementContentAsBinHex As Byte()
+    return:
+      type: System.Byte[]
+      description: The node's content represented as an array of BinHex bytes.
+- uid: System.Xml.XmlDictionaryReader.TryGetLocalNameAsDictionaryString(System.Xml.XmlDictionaryString@)
+  id: TryGetLocalNameAsDictionaryString(System.Xml.XmlDictionaryString@)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: TryGetLocalNameAsDictionaryString(out XmlDictionaryString)
+  name.vb: TryGetLocalNameAsDictionaryString(ByRef XmlDictionaryString)
+  fullName: System.Xml.XmlDictionaryReader.TryGetLocalNameAsDictionaryString(out System.Xml.XmlDictionaryString)
+  fullName.vb: System.Xml.XmlDictionaryReader.TryGetLocalNameAsDictionaryString(ByRef System.Xml.XmlDictionaryString)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 873
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Not implemented in this class (it always returns false). May be overridden in derived classes.
+  syntax:
+    content: public virtual bool TryGetLocalNameAsDictionaryString(out XmlDictionaryString localName)
+    content.vb: Public Overridable Function TryGetLocalNameAsDictionaryString(ByRef localName As XmlDictionaryString) As Boolean
+    parameters:
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: Returns null, unless overridden in a derived class. .
+    return:
+      type: System.Boolean
+      description: false, unless overridden in a derived class.
+- uid: System.Xml.XmlDictionaryReader.TryGetNamespaceUriAsDictionaryString(System.Xml.XmlDictionaryString@)
+  id: TryGetNamespaceUriAsDictionaryString(System.Xml.XmlDictionaryString@)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: TryGetNamespaceUriAsDictionaryString(out XmlDictionaryString)
+  name.vb: TryGetNamespaceUriAsDictionaryString(ByRef XmlDictionaryString)
+  fullName: System.Xml.XmlDictionaryReader.TryGetNamespaceUriAsDictionaryString(out System.Xml.XmlDictionaryString)
+  fullName.vb: System.Xml.XmlDictionaryReader.TryGetNamespaceUriAsDictionaryString(ByRef System.Xml.XmlDictionaryString)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 879
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Not implemented in this class (it always returns false). May be overridden in derived classes.
+  syntax:
+    content: public virtual bool TryGetNamespaceUriAsDictionaryString(out XmlDictionaryString namespaceUri)
+    content.vb: Public Overridable Function TryGetNamespaceUriAsDictionaryString(ByRef namespaceUri As XmlDictionaryString) As Boolean
+    parameters:
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: Returns null, unless overridden in a derived class.
+    return:
+      type: System.Boolean
+      description: false, unless overridden in a derived class.
+- uid: System.Xml.XmlDictionaryReader.TryGetValueAsDictionaryString(System.Xml.XmlDictionaryString@)
+  id: TryGetValueAsDictionaryString(System.Xml.XmlDictionaryString@)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: TryGetValueAsDictionaryString(out XmlDictionaryString)
+  name.vb: TryGetValueAsDictionaryString(ByRef XmlDictionaryString)
+  fullName: System.Xml.XmlDictionaryReader.TryGetValueAsDictionaryString(out System.Xml.XmlDictionaryString)
+  fullName.vb: System.Xml.XmlDictionaryReader.TryGetValueAsDictionaryString(ByRef System.Xml.XmlDictionaryString)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 885
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Not implemented in this class (it always returns false). May be overridden in derived classes.
+  syntax:
+    content: public virtual bool TryGetValueAsDictionaryString(out XmlDictionaryString value)
+    content.vb: Public Overridable Function TryGetValueAsDictionaryString(ByRef value As XmlDictionaryString) As Boolean
+    parameters:
+    - id: value
+      type: System.Xml.XmlDictionaryString
+      description: Returns null, unless overridden in a derived class.
+    return:
+      type: System.Boolean
+      description: false, unless overridden in a derived class.
+- uid: System.Xml.XmlDictionaryReader.IsStartArray(System.Type@)
+  id: IsStartArray(System.Type@)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: IsStartArray(out Type)
+  name.vb: IsStartArray(ByRef Type)
+  fullName: System.Xml.XmlDictionaryReader.IsStartArray(out System.Type)
+  fullName.vb: System.Xml.XmlDictionaryReader.IsStartArray(ByRef System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 905
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Checks whether the reader is positioned at the start of an array. This class returns false, but derived classes that have the concept of arrays might return true.
+  syntax:
+    content: public virtual bool IsStartArray(out Type type)
+    content.vb: Public Overridable Function IsStartArray(ByRef type As Type) As Boolean
+    parameters:
+    - id: type
+      type: System.Type
+      description: Type of the node, if a valid node; otherwise null.
+    return:
+      type: System.Boolean
+      description: true if the reader is positioned at the start of an array node; otherwise false.
+- uid: System.Xml.XmlDictionaryReader.TryGetArrayLength(System.Int32@)
+  id: TryGetArrayLength(System.Int32@)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: TryGetArrayLength(out Int32)
+  name.vb: TryGetArrayLength(ByRef Int32)
+  fullName: System.Xml.XmlDictionaryReader.TryGetArrayLength(out System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryReader.TryGetArrayLength(ByRef System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 911
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Not implemented in this class (it always returns false). May be overridden in derived classes.
+  syntax:
+    content: public virtual bool TryGetArrayLength(out int count)
+    content.vb: Public Overridable Function TryGetArrayLength(ByRef count As Integer) As Boolean
+    parameters:
+    - id: count
+      type: System.Int32
+      description: Returns 0, unless overridden in a derived class.
+    return:
+      type: System.Boolean
+      description: false, unless overridden in a derived class.
+- uid: System.Xml.XmlDictionaryReader.ReadBooleanArray(System.String,System.String)
+  id: ReadBooleanArray(System.String,System.String)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadBooleanArray(String, String)
+  fullName: System.Xml.XmlDictionaryReader.ReadBooleanArray(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 918
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Reads repeated occurrences of @'System.Boolean' nodes into a typed array.
+  syntax:
+    content: public virtual bool[] ReadBooleanArray(string localName, string namespaceUri)
+    content.vb: Public Overridable Function ReadBooleanArray(localName As String, namespaceUri As String) As Boolean()
+    parameters:
+    - id: localName
+      type: System.String
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.String
+      description: The namespace URI of the element.
+    return:
+      type: System.Boolean[]
+      description: A @'System.Boolean' array of the @'System.Boolean' nodes.
+- uid: System.Xml.XmlDictionaryReader.ReadBooleanArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  id: ReadBooleanArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadBooleanArray(XmlDictionaryString, XmlDictionaryString)
+  fullName: System.Xml.XmlDictionaryReader.ReadBooleanArray(System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 923
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Reads repeated occurrences of @'System.Boolean' nodes into a typed array.
+  syntax:
+    content: public virtual bool[] ReadBooleanArray(XmlDictionaryString localName, XmlDictionaryString namespaceUri)
+    content.vb: Public Overridable Function ReadBooleanArray(localName As XmlDictionaryString, namespaceUri As XmlDictionaryString) As Boolean()
+    parameters:
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace URI of the element.
+    return:
+      type: System.Boolean[]
+      description: A @'System.Boolean' array of the @'System.Boolean' nodes.
+- uid: System.Xml.XmlDictionaryReader.ReadArray(System.String,System.String,System.Boolean[],System.Int32,System.Int32)
+  id: ReadArray(System.String,System.String,System.Boolean[],System.Int32,System.Int32)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadArray(String, String, Boolean[], Int32, Int32)
+  name.vb: ReadArray(String, String, Boolean(), Int32, Int32)
+  fullName: System.Xml.XmlDictionaryReader.ReadArray(System.String, System.String, System.Boolean[], System.Int32, System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryReader.ReadArray(System.String, System.String, System.Boolean(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 928
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Reads repeated occurrences of @'System.Boolean' nodes into a typed array.
+  syntax:
+    content: public virtual int ReadArray(string localName, string namespaceUri, bool[] array, int offset, int count)
+    content.vb: Public Overridable Function ReadArray(localName As String, namespaceUri As String, array As Boolean(), offset As Integer, count As Integer) As Integer
+    parameters:
+    - id: localName
+      type: System.String
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.String
+      description: The local name of the element.
+    - id: array
+      type: System.Boolean[]
+      description: The array into which the nodes are put.
+    - id: offset
+      type: System.Int32
+      description: The starting index in the array.
+    - id: count
+      type: System.Int32
+      description: The number of nodes to put in the array.
+    return:
+      type: System.Int32
+      description: The number of nodes put in the array.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is < 0 or > *array* length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is < 0 or > *array* length minus *offset*.'
+- uid: System.Xml.XmlDictionaryReader.ReadArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Boolean[],System.Int32,System.Int32)
+  id: ReadArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Boolean[],System.Int32,System.Int32)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadArray(XmlDictionaryString, XmlDictionaryString, Boolean[], Int32, Int32)
+  name.vb: ReadArray(XmlDictionaryString, XmlDictionaryString, Boolean(), Int32, Int32)
+  fullName: System.Xml.XmlDictionaryReader.ReadArray(System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.Boolean[], System.Int32, System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryReader.ReadArray(System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.Boolean(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 940
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Reads repeated occurrences of @'System.Boolean' nodes into a typed array.
+  syntax:
+    content: public virtual int ReadArray(XmlDictionaryString localName, XmlDictionaryString namespaceUri, bool[] array, int offset, int count)
+    content.vb: Public Overridable Function ReadArray(localName As XmlDictionaryString, namespaceUri As XmlDictionaryString, array As Boolean(), offset As Integer, count As Integer) As Integer
+    parameters:
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace URI of the element.
+    - id: array
+      type: System.Boolean[]
+      description: The array into which the nodes are put.
+    - id: offset
+      type: System.Int32
+      description: The starting index in the array.
+    - id: count
+      type: System.Int32
+      description: The number of nodes to put in the array.
+    return:
+      type: System.Int32
+      description: The number of nodes put in the array.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is < 0 or > *array* length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is < 0 or > *array* length minus *offset*.'
+- uid: System.Xml.XmlDictionaryReader.ReadInt16Array(System.String,System.String)
+  id: ReadInt16Array(System.String,System.String)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadInt16Array(String, String)
+  fullName: System.Xml.XmlDictionaryReader.ReadInt16Array(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 946
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Reads the contents of a series of nodes with the given *localName* and *namespaceUri* into an array of short integers (@'System.Int16').
+  syntax:
+    content: public virtual short[] ReadInt16Array(string localName, string namespaceUri)
+    content.vb: Public Overridable Function ReadInt16Array(localName As String, namespaceUri As String) As Short()
+    parameters:
+    - id: localName
+      type: System.String
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.String
+      description: The namespace URI of the element.
+    return:
+      type: System.Int16[]
+      description: An array of short integers (@'System.Int16').
+- uid: System.Xml.XmlDictionaryReader.ReadInt16Array(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  id: ReadInt16Array(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadInt16Array(XmlDictionaryString, XmlDictionaryString)
+  fullName: System.Xml.XmlDictionaryReader.ReadInt16Array(System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 951
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Reads the contents of a series of nodes with the given *localName* and *namespaceUri* into an array of short integers (@'System.Int16').
+  syntax:
+    content: public virtual short[] ReadInt16Array(XmlDictionaryString localName, XmlDictionaryString namespaceUri)
+    content.vb: Public Overridable Function ReadInt16Array(localName As XmlDictionaryString, namespaceUri As XmlDictionaryString) As Short()
+    parameters:
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace URI of the element.
+    return:
+      type: System.Int16[]
+      description: An array of short integers (@'System.Int16').
+- uid: System.Xml.XmlDictionaryReader.ReadArray(System.String,System.String,System.Int16[],System.Int32,System.Int32)
+  id: ReadArray(System.String,System.String,System.Int16[],System.Int32,System.Int32)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadArray(String, String, Int16[], Int32, Int32)
+  name.vb: ReadArray(String, String, Int16(), Int32, Int32)
+  fullName: System.Xml.XmlDictionaryReader.ReadArray(System.String, System.String, System.Int16[], System.Int32, System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryReader.ReadArray(System.String, System.String, System.Int16(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 956
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Reads repeated occurrences of short integers into a typed array.
+  syntax:
+    content: public virtual int ReadArray(string localName, string namespaceUri, short[] array, int offset, int count)
+    content.vb: Public Overridable Function ReadArray(localName As String, namespaceUri As String, array As Short(), offset As Integer, count As Integer) As Integer
+    parameters:
+    - id: localName
+      type: System.String
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.String
+      description: The namespace URI of the element.
+    - id: array
+      type: System.Int16[]
+      description: The array into which the integers are put.
+    - id: offset
+      type: System.Int32
+      description: The starting index in the array.
+    - id: count
+      type: System.Int32
+      description: The number of integers to put in the array.
+    return:
+      type: System.Int32
+      description: The number of integers put in the array.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is < 0 or > *array* length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is < 0 or > *array* length minus *offset*.'
+- uid: System.Xml.XmlDictionaryReader.ReadArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Int16[],System.Int32,System.Int32)
+  id: ReadArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Int16[],System.Int32,System.Int32)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadArray(XmlDictionaryString, XmlDictionaryString, Int16[], Int32, Int32)
+  name.vb: ReadArray(XmlDictionaryString, XmlDictionaryString, Int16(), Int32, Int32)
+  fullName: System.Xml.XmlDictionaryReader.ReadArray(System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.Int16[], System.Int32, System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryReader.ReadArray(System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.Int16(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 971
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Reads repeated occurrences of short integers into a typed array.
+  syntax:
+    content: public virtual int ReadArray(XmlDictionaryString localName, XmlDictionaryString namespaceUri, short[] array, int offset, int count)
+    content.vb: Public Overridable Function ReadArray(localName As XmlDictionaryString, namespaceUri As XmlDictionaryString, array As Short(), offset As Integer, count As Integer) As Integer
+    parameters:
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace URI of the element.
+    - id: array
+      type: System.Int16[]
+      description: The array into which the integers are put.
+    - id: offset
+      type: System.Int32
+      description: The starting index in the array.
+    - id: count
+      type: System.Int32
+      description: The number of integers to put in the array.
+    return:
+      type: System.Int32
+      description: The number of integers put in the array.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is < 0 or > *array* length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is < 0 or > *array* length minus *offset*.'
+- uid: System.Xml.XmlDictionaryReader.ReadInt32Array(System.String,System.String)
+  id: ReadInt32Array(System.String,System.String)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadInt32Array(String, String)
+  fullName: System.Xml.XmlDictionaryReader.ReadInt32Array(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 977
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Reads the contents of a series of nodes with the given *localName* and *namespaceUri* into an array of integers (@'System.Int32').
+  syntax:
+    content: public virtual int[] ReadInt32Array(string localName, string namespaceUri)
+    content.vb: Public Overridable Function ReadInt32Array(localName As String, namespaceUri As String) As Integer()
+    parameters:
+    - id: localName
+      type: System.String
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.String
+      description: The namespace URI of the element.
+    return:
+      type: System.Int32[]
+      description: An array of integers (@'System.Int32').
+- uid: System.Xml.XmlDictionaryReader.ReadInt32Array(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  id: ReadInt32Array(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadInt32Array(XmlDictionaryString, XmlDictionaryString)
+  fullName: System.Xml.XmlDictionaryReader.ReadInt32Array(System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 982
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Reads the contents of a series of nodes with the given *localName* and *namespaceUri* into an array of integers (@'System.Int32').
+  syntax:
+    content: public virtual int[] ReadInt32Array(XmlDictionaryString localName, XmlDictionaryString namespaceUri)
+    content.vb: Public Overridable Function ReadInt32Array(localName As XmlDictionaryString, namespaceUri As XmlDictionaryString) As Integer()
+    parameters:
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace URI of the element.
+    return:
+      type: System.Int32[]
+      description: An array of integers (@'System.Int32').
+- uid: System.Xml.XmlDictionaryReader.ReadArray(System.String,System.String,System.Int32[],System.Int32,System.Int32)
+  id: ReadArray(System.String,System.String,System.Int32[],System.Int32,System.Int32)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadArray(String, String, Int32[], Int32, Int32)
+  name.vb: ReadArray(String, String, Int32(), Int32, Int32)
+  fullName: System.Xml.XmlDictionaryReader.ReadArray(System.String, System.String, System.Int32[], System.Int32, System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryReader.ReadArray(System.String, System.String, System.Int32(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 987
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Reads repeated occurrences of integers into a typed array.
+  syntax:
+    content: public virtual int ReadArray(string localName, string namespaceUri, int[] array, int offset, int count)
+    content.vb: Public Overridable Function ReadArray(localName As String, namespaceUri As String, array As Integer(), offset As Integer, count As Integer) As Integer
+    parameters:
+    - id: localName
+      type: System.String
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.String
+      description: The namespace URI of the element.
+    - id: array
+      type: System.Int32[]
+      description: The array into which the integers are put.
+    - id: offset
+      type: System.Int32
+      description: The starting index in the array.
+    - id: count
+      type: System.Int32
+      description: The number of integers to put in the array.
+    return:
+      type: System.Int32
+      description: The number of integers put in the array.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is < 0 or > *array* length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is < 0 or > *array* length minus *offset*.'
+- uid: System.Xml.XmlDictionaryReader.ReadArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Int32[],System.Int32,System.Int32)
+  id: ReadArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Int32[],System.Int32,System.Int32)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadArray(XmlDictionaryString, XmlDictionaryString, Int32[], Int32, Int32)
+  name.vb: ReadArray(XmlDictionaryString, XmlDictionaryString, Int32(), Int32, Int32)
+  fullName: System.Xml.XmlDictionaryReader.ReadArray(System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.Int32[], System.Int32, System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryReader.ReadArray(System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.Int32(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 999
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Reads repeated occurrences of integers into a typed array.
+  syntax:
+    content: public virtual int ReadArray(XmlDictionaryString localName, XmlDictionaryString namespaceUri, int[] array, int offset, int count)
+    content.vb: Public Overridable Function ReadArray(localName As XmlDictionaryString, namespaceUri As XmlDictionaryString, array As Integer(), offset As Integer, count As Integer) As Integer
+    parameters:
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace URI of the element.
+    - id: array
+      type: System.Int32[]
+      description: The array into which the integers are put.
+    - id: offset
+      type: System.Int32
+      description: The starting index in the array.
+    - id: count
+      type: System.Int32
+      description: The number of integers to put in the array.
+    return:
+      type: System.Int32
+      description: The number of integers put in the array.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is < 0 or > *array* length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is < 0 or > *array* length minus *offset*.'
+- uid: System.Xml.XmlDictionaryReader.ReadInt64Array(System.String,System.String)
+  id: ReadInt64Array(System.String,System.String)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadInt64Array(String, String)
+  fullName: System.Xml.XmlDictionaryReader.ReadInt64Array(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 1005
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Reads the contents of a series of nodes with the given *localName* and *namespaceUri* into an array of long integers (@'System.Int64').
+  syntax:
+    content: public virtual long[] ReadInt64Array(string localName, string namespaceUri)
+    content.vb: Public Overridable Function ReadInt64Array(localName As String, namespaceUri As String) As Long()
+    parameters:
+    - id: localName
+      type: System.String
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.String
+      description: The namespace URI of the element.
+    return:
+      type: System.Int64[]
+      description: An array of long integers (@'System.Int64').
+- uid: System.Xml.XmlDictionaryReader.ReadInt64Array(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  id: ReadInt64Array(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadInt64Array(XmlDictionaryString, XmlDictionaryString)
+  fullName: System.Xml.XmlDictionaryReader.ReadInt64Array(System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 1010
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Reads the contents of a series of nodes with the given *localName* and *namespaceUri* into an array of long integers (@'System.Int64').
+  syntax:
+    content: public virtual long[] ReadInt64Array(XmlDictionaryString localName, XmlDictionaryString namespaceUri)
+    content.vb: Public Overridable Function ReadInt64Array(localName As XmlDictionaryString, namespaceUri As XmlDictionaryString) As Long()
+    parameters:
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace URI of the element.
+    return:
+      type: System.Int64[]
+      description: An array of long integers (@'System.Int64').
+- uid: System.Xml.XmlDictionaryReader.ReadArray(System.String,System.String,System.Int64[],System.Int32,System.Int32)
+  id: ReadArray(System.String,System.String,System.Int64[],System.Int32,System.Int32)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadArray(String, String, Int64[], Int32, Int32)
+  name.vb: ReadArray(String, String, Int64(), Int32, Int32)
+  fullName: System.Xml.XmlDictionaryReader.ReadArray(System.String, System.String, System.Int64[], System.Int32, System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryReader.ReadArray(System.String, System.String, System.Int64(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 1015
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Reads repeated occurrences of long integers into a typed array.
+  syntax:
+    content: public virtual int ReadArray(string localName, string namespaceUri, long[] array, int offset, int count)
+    content.vb: Public Overridable Function ReadArray(localName As String, namespaceUri As String, array As Long(), offset As Integer, count As Integer) As Integer
+    parameters:
+    - id: localName
+      type: System.String
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.String
+      description: The namespace URI of the element.
+    - id: array
+      type: System.Int64[]
+      description: The array into which the integers are put.
+    - id: offset
+      type: System.Int32
+      description: The starting index in the array.
+    - id: count
+      type: System.Int32
+      description: The number of integers to put in the array.
+    return:
+      type: System.Int32
+      description: The number of integers put in the array.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is < 0 or > *array* length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is < 0 or > *array* length minus *offset*.'
+- uid: System.Xml.XmlDictionaryReader.ReadArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Int64[],System.Int32,System.Int32)
+  id: ReadArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Int64[],System.Int32,System.Int32)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadArray(XmlDictionaryString, XmlDictionaryString, Int64[], Int32, Int32)
+  name.vb: ReadArray(XmlDictionaryString, XmlDictionaryString, Int64(), Int32, Int32)
+  fullName: System.Xml.XmlDictionaryReader.ReadArray(System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.Int64[], System.Int32, System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryReader.ReadArray(System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.Int64(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 1027
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Reads repeated occurrences of long integers into a typed array.
+  syntax:
+    content: public virtual int ReadArray(XmlDictionaryString localName, XmlDictionaryString namespaceUri, long[] array, int offset, int count)
+    content.vb: Public Overridable Function ReadArray(localName As XmlDictionaryString, namespaceUri As XmlDictionaryString, array As Long(), offset As Integer, count As Integer) As Integer
+    parameters:
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace URI of the element.
+    - id: array
+      type: System.Int64[]
+      description: The array into which the integers are put.
+    - id: offset
+      type: System.Int32
+      description: The starting index in the array.
+    - id: count
+      type: System.Int32
+      description: The number of integers to put in the array.
+    return:
+      type: System.Int32
+      description: The number of integers put in the array.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is < 0 or > *array* length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is < 0 or > *array* length minus *offset*.'
+- uid: System.Xml.XmlDictionaryReader.ReadSingleArray(System.String,System.String)
+  id: ReadSingleArray(System.String,System.String)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadSingleArray(String, String)
+  fullName: System.Xml.XmlDictionaryReader.ReadSingleArray(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 1033
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Reads the contents of a series of nodes with the given *localName* and *namespaceUri* into an array of float numbers (@'System.Single').
+  syntax:
+    content: public virtual float[] ReadSingleArray(string localName, string namespaceUri)
+    content.vb: Public Overridable Function ReadSingleArray(localName As String, namespaceUri As String) As Single()
+    parameters:
+    - id: localName
+      type: System.String
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.String
+      description: The namespace URI of the element.
+    return:
+      type: System.Single[]
+      description: An array of float numbers (@'System.Single').
+- uid: System.Xml.XmlDictionaryReader.ReadSingleArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  id: ReadSingleArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadSingleArray(XmlDictionaryString, XmlDictionaryString)
+  fullName: System.Xml.XmlDictionaryReader.ReadSingleArray(System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 1038
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Reads the contents of a series of nodes with the given *localName* and *namespaceUri* into an array of float numbers (@'System.Single').
+  syntax:
+    content: public virtual float[] ReadSingleArray(XmlDictionaryString localName, XmlDictionaryString namespaceUri)
+    content.vb: Public Overridable Function ReadSingleArray(localName As XmlDictionaryString, namespaceUri As XmlDictionaryString) As Single()
+    parameters:
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace URI of the element.
+    return:
+      type: System.Single[]
+      description: An array of float numbers (@'System.Single').
+- uid: System.Xml.XmlDictionaryReader.ReadArray(System.String,System.String,System.Single[],System.Int32,System.Int32)
+  id: ReadArray(System.String,System.String,System.Single[],System.Int32,System.Int32)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadArray(String, String, Single[], Int32, Int32)
+  name.vb: ReadArray(String, String, Single(), Int32, Int32)
+  fullName: System.Xml.XmlDictionaryReader.ReadArray(System.String, System.String, System.Single[], System.Int32, System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryReader.ReadArray(System.String, System.String, System.Single(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 1043
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Reads repeated occurrences of float numbers into a typed array.
+  syntax:
+    content: public virtual int ReadArray(string localName, string namespaceUri, float[] array, int offset, int count)
+    content.vb: Public Overridable Function ReadArray(localName As String, namespaceUri As String, array As Single(), offset As Integer, count As Integer) As Integer
+    parameters:
+    - id: localName
+      type: System.String
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.String
+      description: The namespace URI of the element.
+    - id: array
+      type: System.Single[]
+      description: The array into which the float numbers are put.
+    - id: offset
+      type: System.Int32
+      description: The starting index in the array.
+    - id: count
+      type: System.Int32
+      description: The number of float numbers to put in the array.
+    return:
+      type: System.Int32
+      description: The umber of float numbers put in the array.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is < 0 or > *array* length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is < 0 or > *array* length minus *offset*.'
+- uid: System.Xml.XmlDictionaryReader.ReadArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Single[],System.Int32,System.Int32)
+  id: ReadArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Single[],System.Int32,System.Int32)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadArray(XmlDictionaryString, XmlDictionaryString, Single[], Int32, Int32)
+  name.vb: ReadArray(XmlDictionaryString, XmlDictionaryString, Single(), Int32, Int32)
+  fullName: System.Xml.XmlDictionaryReader.ReadArray(System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.Single[], System.Int32, System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryReader.ReadArray(System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.Single(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 1055
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Reads repeated occurrences of float numbers into a typed array.
+  syntax:
+    content: public virtual int ReadArray(XmlDictionaryString localName, XmlDictionaryString namespaceUri, float[] array, int offset, int count)
+    content.vb: Public Overridable Function ReadArray(localName As XmlDictionaryString, namespaceUri As XmlDictionaryString, array As Single(), offset As Integer, count As Integer) As Integer
+    parameters:
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace URI of the element.
+    - id: array
+      type: System.Single[]
+      description: The array into which the float numbers are put.
+    - id: offset
+      type: System.Int32
+      description: The starting index in the array.
+    - id: count
+      type: System.Int32
+      description: The number of float numbers to put in the array.
+    return:
+      type: System.Int32
+      description: The number of float numbers put in the array.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is < 0 or > *array* length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is < 0 or > *array* length minus *offset*.'
+- uid: System.Xml.XmlDictionaryReader.ReadDoubleArray(System.String,System.String)
+  id: ReadDoubleArray(System.String,System.String)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadDoubleArray(String, String)
+  fullName: System.Xml.XmlDictionaryReader.ReadDoubleArray(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 1061
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Converts a node's content to a @'System.Double' array.
+  syntax:
+    content: public virtual double[] ReadDoubleArray(string localName, string namespaceUri)
+    content.vb: Public Overridable Function ReadDoubleArray(localName As String, namespaceUri As String) As Double()
+    parameters:
+    - id: localName
+      type: System.String
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.String
+      description: The namespace URI of the element.
+    return:
+      type: System.Double[]
+      description: The node's content represented as a @'System.Double' array.
+- uid: System.Xml.XmlDictionaryReader.ReadDoubleArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  id: ReadDoubleArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadDoubleArray(XmlDictionaryString, XmlDictionaryString)
+  fullName: System.Xml.XmlDictionaryReader.ReadDoubleArray(System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 1066
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Converts a node's content to a @'System.Double' array.
+  syntax:
+    content: public virtual double[] ReadDoubleArray(XmlDictionaryString localName, XmlDictionaryString namespaceUri)
+    content.vb: Public Overridable Function ReadDoubleArray(localName As XmlDictionaryString, namespaceUri As XmlDictionaryString) As Double()
+    parameters:
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace URI of the element.
+    return:
+      type: System.Double[]
+      description: The node's content represented as a @'System.Double' array.
+- uid: System.Xml.XmlDictionaryReader.ReadArray(System.String,System.String,System.Double[],System.Int32,System.Int32)
+  id: ReadArray(System.String,System.String,System.Double[],System.Int32,System.Int32)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadArray(String, String, Double[], Int32, Int32)
+  name.vb: ReadArray(String, String, Double(), Int32, Int32)
+  fullName: System.Xml.XmlDictionaryReader.ReadArray(System.String, System.String, System.Double[], System.Int32, System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryReader.ReadArray(System.String, System.String, System.Double(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 1071
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Reads repeated occurrences of @'System.Double' nodes into a typed array.
+  syntax:
+    content: public virtual int ReadArray(string localName, string namespaceUri, double[] array, int offset, int count)
+    content.vb: Public Overridable Function ReadArray(localName As String, namespaceUri As String, array As Double(), offset As Integer, count As Integer) As Integer
+    parameters:
+    - id: localName
+      type: System.String
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.String
+      description: The namespace URI of the element.
+    - id: array
+      type: System.Double[]
+      description: The array into which the nodes are put.
+    - id: offset
+      type: System.Int32
+      description: The starting index in the array.
+    - id: count
+      type: System.Int32
+      description: The number of nodes to put in the array.
+    return:
+      type: System.Int32
+      description: The number of nodes put in the array.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is < 0 or > *array* length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is < 0 or > *array* length minus *offset*.'
+- uid: System.Xml.XmlDictionaryReader.ReadArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Double[],System.Int32,System.Int32)
+  id: ReadArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Double[],System.Int32,System.Int32)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadArray(XmlDictionaryString, XmlDictionaryString, Double[], Int32, Int32)
+  name.vb: ReadArray(XmlDictionaryString, XmlDictionaryString, Double(), Int32, Int32)
+  fullName: System.Xml.XmlDictionaryReader.ReadArray(System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.Double[], System.Int32, System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryReader.ReadArray(System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.Double(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 1083
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Reads repeated occurrences of @'System.Double' nodes type into a typed array.
+  syntax:
+    content: public virtual int ReadArray(XmlDictionaryString localName, XmlDictionaryString namespaceUri, double[] array, int offset, int count)
+    content.vb: Public Overridable Function ReadArray(localName As XmlDictionaryString, namespaceUri As XmlDictionaryString, array As Double(), offset As Integer, count As Integer) As Integer
+    parameters:
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace URI of the element.
+    - id: array
+      type: System.Double[]
+      description: The array into which the nodes are put.
+    - id: offset
+      type: System.Int32
+      description: The starting index in the array.
+    - id: count
+      type: System.Int32
+      description: The number of nodes to put in the array.
+    return:
+      type: System.Int32
+      description: The number of nodes put in the array.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is < 0 or > *array* length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is < 0 or > *array* length minus *offset*.'
+- uid: System.Xml.XmlDictionaryReader.ReadDecimalArray(System.String,System.String)
+  id: ReadDecimalArray(System.String,System.String)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadDecimalArray(String, String)
+  fullName: System.Xml.XmlDictionaryReader.ReadDecimalArray(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 1089
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Converts a node's content to a @'System.Decimal' array.
+  syntax:
+    content: public virtual decimal[] ReadDecimalArray(string localName, string namespaceUri)
+    content.vb: Public Overridable Function ReadDecimalArray(localName As String, namespaceUri As String) As Decimal()
+    parameters:
+    - id: localName
+      type: System.String
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.String
+      description: The namespace URI of the element.
+    return:
+      type: System.Decimal[]
+      description: The node's content represented as a @'System.Decimal' array.
+- uid: System.Xml.XmlDictionaryReader.ReadDecimalArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  id: ReadDecimalArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadDecimalArray(XmlDictionaryString, XmlDictionaryString)
+  fullName: System.Xml.XmlDictionaryReader.ReadDecimalArray(System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 1094
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Converts a node's content to a @'System.Decimal' array.
+  syntax:
+    content: public virtual decimal[] ReadDecimalArray(XmlDictionaryString localName, XmlDictionaryString namespaceUri)
+    content.vb: Public Overridable Function ReadDecimalArray(localName As XmlDictionaryString, namespaceUri As XmlDictionaryString) As Decimal()
+    parameters:
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace URI of the element.
+    return:
+      type: System.Decimal[]
+      description: The node's content represented as a @'System.Decimal' array.
+- uid: System.Xml.XmlDictionaryReader.ReadArray(System.String,System.String,System.Decimal[],System.Int32,System.Int32)
+  id: ReadArray(System.String,System.String,System.Decimal[],System.Int32,System.Int32)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadArray(String, String, Decimal[], Int32, Int32)
+  name.vb: ReadArray(String, String, Decimal(), Int32, Int32)
+  fullName: System.Xml.XmlDictionaryReader.ReadArray(System.String, System.String, System.Decimal[], System.Int32, System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryReader.ReadArray(System.String, System.String, System.Decimal(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 1099
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Reads repeated occurrences of @'System.Decimal' nodes into a typed array.
+  syntax:
+    content: public virtual int ReadArray(string localName, string namespaceUri, decimal[] array, int offset, int count)
+    content.vb: Public Overridable Function ReadArray(localName As String, namespaceUri As String, array As Decimal(), offset As Integer, count As Integer) As Integer
+    parameters:
+    - id: localName
+      type: System.String
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.String
+      description: The namespace URI of the element.
+    - id: array
+      type: System.Decimal[]
+      description: The array into which the nodes are put.
+    - id: offset
+      type: System.Int32
+      description: The starting index in the array.
+    - id: count
+      type: System.Int32
+      description: The number of nodes to put in the array.
+    return:
+      type: System.Int32
+      description: The number of nodes put in the array.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is < 0 or > *array* length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is < 0 or > *array* length minus *offset*.'
+- uid: System.Xml.XmlDictionaryReader.ReadArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Decimal[],System.Int32,System.Int32)
+  id: ReadArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Decimal[],System.Int32,System.Int32)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadArray(XmlDictionaryString, XmlDictionaryString, Decimal[], Int32, Int32)
+  name.vb: ReadArray(XmlDictionaryString, XmlDictionaryString, Decimal(), Int32, Int32)
+  fullName: System.Xml.XmlDictionaryReader.ReadArray(System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.Decimal[], System.Int32, System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryReader.ReadArray(System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.Decimal(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 1111
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Reads repeated occurrences of @'System.Decimal' nodes into a typed array.
+  syntax:
+    content: public virtual int ReadArray(XmlDictionaryString localName, XmlDictionaryString namespaceUri, decimal[] array, int offset, int count)
+    content.vb: Public Overridable Function ReadArray(localName As XmlDictionaryString, namespaceUri As XmlDictionaryString, array As Decimal(), offset As Integer, count As Integer) As Integer
+    parameters:
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace URI of the element.
+    - id: array
+      type: System.Decimal[]
+      description: The array into which the nodes are put.
+    - id: offset
+      type: System.Int32
+      description: The starting index in the array.
+    - id: count
+      type: System.Int32
+      description: The number of nodes to put in the array.
+    return:
+      type: System.Int32
+      description: The number of nodes put in the array.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is < 0 or > *array* length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is < 0 or > *array* length minus *offset*.'
+- uid: System.Xml.XmlDictionaryReader.ReadDateTimeArray(System.String,System.String)
+  id: ReadDateTimeArray(System.String,System.String)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadDateTimeArray(String, String)
+  fullName: System.Xml.XmlDictionaryReader.ReadDateTimeArray(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 1117
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Converts a node's content to a @'System.DateTime' array.
+  syntax:
+    content: public virtual DateTime[] ReadDateTimeArray(string localName, string namespaceUri)
+    content.vb: Public Overridable Function ReadDateTimeArray(localName As String, namespaceUri As String) As Date()
+    parameters:
+    - id: localName
+      type: System.String
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.String
+      description: The namespace URI of the element.
+    return:
+      type: System.DateTime[]
+      description: The node's content represented as a @'System.DateTime' array.
+- uid: System.Xml.XmlDictionaryReader.ReadDateTimeArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  id: ReadDateTimeArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadDateTimeArray(XmlDictionaryString, XmlDictionaryString)
+  fullName: System.Xml.XmlDictionaryReader.ReadDateTimeArray(System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 1122
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Converts a node's content to a @'System.DateTime' array.
+  syntax:
+    content: public virtual DateTime[] ReadDateTimeArray(XmlDictionaryString localName, XmlDictionaryString namespaceUri)
+    content.vb: Public Overridable Function ReadDateTimeArray(localName As XmlDictionaryString, namespaceUri As XmlDictionaryString) As Date()
+    parameters:
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace URI of the element.
+    return:
+      type: System.DateTime[]
+      description: The node's content represented as a @'System.DateTime' array.
+- uid: System.Xml.XmlDictionaryReader.ReadArray(System.String,System.String,System.DateTime[],System.Int32,System.Int32)
+  id: ReadArray(System.String,System.String,System.DateTime[],System.Int32,System.Int32)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadArray(String, String, DateTime[], Int32, Int32)
+  name.vb: ReadArray(String, String, DateTime(), Int32, Int32)
+  fullName: System.Xml.XmlDictionaryReader.ReadArray(System.String, System.String, System.DateTime[], System.Int32, System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryReader.ReadArray(System.String, System.String, System.DateTime(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 1127
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Reads repeated occurrences of @'System.DateTime' nodes into a typed array.
+  syntax:
+    content: public virtual int ReadArray(string localName, string namespaceUri, DateTime[] array, int offset, int count)
+    content.vb: Public Overridable Function ReadArray(localName As String, namespaceUri As String, array As Date(), offset As Integer, count As Integer) As Integer
+    parameters:
+    - id: localName
+      type: System.String
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.String
+      description: The namespace URI of the element.
+    - id: array
+      type: System.DateTime[]
+      description: The array into which the nodes are put.
+    - id: offset
+      type: System.Int32
+      description: The starting index in the array.
+    - id: count
+      type: System.Int32
+      description: The number of nodes to put in the array.
+    return:
+      type: System.Int32
+      description: The number of nodes put in the array.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is < 0 or > *array* length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is < 0 or > *array* length minus *offset*.'
+- uid: System.Xml.XmlDictionaryReader.ReadArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.DateTime[],System.Int32,System.Int32)
+  id: ReadArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.DateTime[],System.Int32,System.Int32)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadArray(XmlDictionaryString, XmlDictionaryString, DateTime[], Int32, Int32)
+  name.vb: ReadArray(XmlDictionaryString, XmlDictionaryString, DateTime(), Int32, Int32)
+  fullName: System.Xml.XmlDictionaryReader.ReadArray(System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.DateTime[], System.Int32, System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryReader.ReadArray(System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.DateTime(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 1139
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Reads repeated occurrences of @'System.DateTime' nodes into a typed array.
+  syntax:
+    content: public virtual int ReadArray(XmlDictionaryString localName, XmlDictionaryString namespaceUri, DateTime[] array, int offset, int count)
+    content.vb: Public Overridable Function ReadArray(localName As XmlDictionaryString, namespaceUri As XmlDictionaryString, array As Date(), offset As Integer, count As Integer) As Integer
+    parameters:
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace URI of the element.
+    - id: array
+      type: System.DateTime[]
+      description: The array into which the nodes are put.
+    - id: offset
+      type: System.Int32
+      description: The starting index in the array.
+    - id: count
+      type: System.Int32
+      description: The number of nodes to put in the array.
+    return:
+      type: System.Int32
+      description: The number of nodes put in the array.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is < 0 or > *array* length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is < 0 or > *array* length minus *offset*.'
+- uid: System.Xml.XmlDictionaryReader.ReadGuidArray(System.String,System.String)
+  id: ReadGuidArray(System.String,System.String)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadGuidArray(String, String)
+  fullName: System.Xml.XmlDictionaryReader.ReadGuidArray(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 1145
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Reads the contents of a series of nodes with the given *localName* and *namespaceUri* into an array of @'System.Guid'.
+  syntax:
+    content: public virtual Guid[] ReadGuidArray(string localName, string namespaceUri)
+    content.vb: Public Overridable Function ReadGuidArray(localName As String, namespaceUri As String) As Guid()
+    parameters:
+    - id: localName
+      type: System.String
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.String
+      description: The namespace URI of the element.
+    return:
+      type: System.Guid[]
+      description: An array of @'System.Guid'.
+- uid: System.Xml.XmlDictionaryReader.ReadGuidArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  id: ReadGuidArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadGuidArray(XmlDictionaryString, XmlDictionaryString)
+  fullName: System.Xml.XmlDictionaryReader.ReadGuidArray(System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 1150
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Reads the contents of a series of nodes with the given *localName* and *namespaceUri* into an array of @'System.Guid'.
+  syntax:
+    content: public virtual Guid[] ReadGuidArray(XmlDictionaryString localName, XmlDictionaryString namespaceUri)
+    content.vb: Public Overridable Function ReadGuidArray(localName As XmlDictionaryString, namespaceUri As XmlDictionaryString) As Guid()
+    parameters:
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace URI of the element.
+    return:
+      type: System.Guid[]
+      description: An array of @'System.Guid'.
+- uid: System.Xml.XmlDictionaryReader.ReadArray(System.String,System.String,System.Guid[],System.Int32,System.Int32)
+  id: ReadArray(System.String,System.String,System.Guid[],System.Int32,System.Int32)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadArray(String, String, Guid[], Int32, Int32)
+  name.vb: ReadArray(String, String, Guid(), Int32, Int32)
+  fullName: System.Xml.XmlDictionaryReader.ReadArray(System.String, System.String, System.Guid[], System.Int32, System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryReader.ReadArray(System.String, System.String, System.Guid(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 1155
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Reads repeated occurrences of @'System.Guid' nodes into a typed array.
+  syntax:
+    content: public virtual int ReadArray(string localName, string namespaceUri, Guid[] array, int offset, int count)
+    content.vb: Public Overridable Function ReadArray(localName As String, namespaceUri As String, array As Guid(), offset As Integer, count As Integer) As Integer
+    parameters:
+    - id: localName
+      type: System.String
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.String
+      description: The namespace URI of the element.
+    - id: array
+      type: System.Guid[]
+      description: The array into which the nodes are put.
+    - id: offset
+      type: System.Int32
+      description: The starting index in the array.
+    - id: count
+      type: System.Int32
+      description: The number of nodes to put in the array.
+    return:
+      type: System.Int32
+      description: The number of nodes put in the array.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is < 0 or > *array* length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is < 0 or > *array* length minus *offset*.'
+- uid: System.Xml.XmlDictionaryReader.ReadArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Guid[],System.Int32,System.Int32)
+  id: ReadArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Guid[],System.Int32,System.Int32)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadArray(XmlDictionaryString, XmlDictionaryString, Guid[], Int32, Int32)
+  name.vb: ReadArray(XmlDictionaryString, XmlDictionaryString, Guid(), Int32, Int32)
+  fullName: System.Xml.XmlDictionaryReader.ReadArray(System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.Guid[], System.Int32, System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryReader.ReadArray(System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.Guid(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 1167
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Reads repeated occurrences of @'System.Guid' nodes into a typed array.
+  syntax:
+    content: public virtual int ReadArray(XmlDictionaryString localName, XmlDictionaryString namespaceUri, Guid[] array, int offset, int count)
+    content.vb: Public Overridable Function ReadArray(localName As XmlDictionaryString, namespaceUri As XmlDictionaryString, array As Guid(), offset As Integer, count As Integer) As Integer
+    parameters:
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace URI of the element.
+    - id: array
+      type: System.Guid[]
+      description: The array into which the nodes are put.
+    - id: offset
+      type: System.Int32
+      description: The starting index in the array.
+    - id: count
+      type: System.Int32
+      description: The number of nodes to put in the array.
+    return:
+      type: System.Int32
+      description: The number of nodes put in the array.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is < 0 or > *array* length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is < 0 or > *array* length minus *offset*.'
+- uid: System.Xml.XmlDictionaryReader.ReadTimeSpanArray(System.String,System.String)
+  id: ReadTimeSpanArray(System.String,System.String)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadTimeSpanArray(String, String)
+  fullName: System.Xml.XmlDictionaryReader.ReadTimeSpanArray(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 1173
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Reads the contents of a series of nodes with the given *localName* and *namespaceUri* into a @'System.TimeSpan' array.
+  syntax:
+    content: public virtual TimeSpan[] ReadTimeSpanArray(string localName, string namespaceUri)
+    content.vb: Public Overridable Function ReadTimeSpanArray(localName As String, namespaceUri As String) As TimeSpan()
+    parameters:
+    - id: localName
+      type: System.String
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.String
+      description: The namespace URI of the element.
+    return:
+      type: System.TimeSpan[]
+      description: A @'System.TimeSpan' array.
+- uid: System.Xml.XmlDictionaryReader.ReadTimeSpanArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  id: ReadTimeSpanArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadTimeSpanArray(XmlDictionaryString, XmlDictionaryString)
+  fullName: System.Xml.XmlDictionaryReader.ReadTimeSpanArray(System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 1178
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Reads the contents of a series of nodes with the given *localName* and *namespaceUri* into a @'System.TimeSpan' array.
+  syntax:
+    content: public virtual TimeSpan[] ReadTimeSpanArray(XmlDictionaryString localName, XmlDictionaryString namespaceUri)
+    content.vb: Public Overridable Function ReadTimeSpanArray(localName As XmlDictionaryString, namespaceUri As XmlDictionaryString) As TimeSpan()
+    parameters:
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace URI of the element.
+    return:
+      type: System.TimeSpan[]
+      description: A @'System.TimeSpan' array.
+- uid: System.Xml.XmlDictionaryReader.ReadArray(System.String,System.String,System.TimeSpan[],System.Int32,System.Int32)
+  id: ReadArray(System.String,System.String,System.TimeSpan[],System.Int32,System.Int32)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadArray(String, String, TimeSpan[], Int32, Int32)
+  name.vb: ReadArray(String, String, TimeSpan(), Int32, Int32)
+  fullName: System.Xml.XmlDictionaryReader.ReadArray(System.String, System.String, System.TimeSpan[], System.Int32, System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryReader.ReadArray(System.String, System.String, System.TimeSpan(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 1183
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Reads repeated occurrences of @'System.TimeSpan' nodes into a typed array.
+  syntax:
+    content: public virtual int ReadArray(string localName, string namespaceUri, TimeSpan[] array, int offset, int count)
+    content.vb: Public Overridable Function ReadArray(localName As String, namespaceUri As String, array As TimeSpan(), offset As Integer, count As Integer) As Integer
+    parameters:
+    - id: localName
+      type: System.String
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.String
+      description: The namespace URI of the element.
+    - id: array
+      type: System.TimeSpan[]
+      description: The array into which the nodes are put.
+    - id: offset
+      type: System.Int32
+      description: The starting index in the array.
+    - id: count
+      type: System.Int32
+      description: The number of nodes to put in the array.
+    return:
+      type: System.Int32
+      description: The number of nodes put in the array.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is < 0 or > *array* length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is < 0 or > *array* length minus *offset*.'
+- uid: System.Xml.XmlDictionaryReader.ReadArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.TimeSpan[],System.Int32,System.Int32)
+  id: ReadArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.TimeSpan[],System.Int32,System.Int32)
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: ReadArray(XmlDictionaryString, XmlDictionaryString, TimeSpan[], Int32, Int32)
+  name.vb: ReadArray(XmlDictionaryString, XmlDictionaryString, TimeSpan(), Int32, Int32)
+  fullName: System.Xml.XmlDictionaryReader.ReadArray(System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.TimeSpan[], System.Int32, System.Int32)
+  fullName.vb: System.Xml.XmlDictionaryReader.ReadArray(System.Xml.XmlDictionaryString, System.Xml.XmlDictionaryString, System.TimeSpan(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 1195
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  summary: Reads repeated occurrences of @'System.TimeSpan' nodes into a typed array.
+  syntax:
+    content: public virtual int ReadArray(XmlDictionaryString localName, XmlDictionaryString namespaceUri, TimeSpan[] array, int offset, int count)
+    content.vb: Public Overridable Function ReadArray(localName As XmlDictionaryString, namespaceUri As XmlDictionaryString, array As TimeSpan(), offset As Integer, count As Integer) As Integer
+    parameters:
+    - id: localName
+      type: System.Xml.XmlDictionaryString
+      description: The local name of the element.
+    - id: namespaceUri
+      type: System.Xml.XmlDictionaryString
+      description: The namespace URI of the element.
+    - id: array
+      type: System.TimeSpan[]
+      description: The array into which the nodes are put.
+    - id: offset
+      type: System.Int32
+      description: The starting index in the array.
+    - id: count
+      type: System.Int32
+      description: The number of nodes to put in the array.
+    return:
+      type: System.Int32
+      description: The number of nodes put in the array.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*offset* is < 0 or > *array* length.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*count* is < 0 or > *array* length minus *offset*.'
+- uid: System.Xml.XmlDictionaryReader.Close
+  id: Close
+  parent: System.Xml.XmlDictionaryReader
+  href: System.Xml.XmlDictionaryReader.yml
+  name: Close()
+  fullName: System.Xml.XmlDictionaryReader.Close()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Private.DataContractSerialization/src/System/Xml/XmlDictionaryReader.cs
+    startLine: 1200
+  assemblies:
+  - System.Private.DataContractSerialization
+  namespace: System.Xml
+  syntax:
+    content: public virtual void Close()
+    content.vb: Public Overridable Sub Close
+references:
+- uid: System.Xml
+  isExternal: false
+  name: System.Xml
+  fullName: System.Xml
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: XmlReader
+  isExternal: true
+  name: XmlReader
+  fullName: XmlReader
+- uid: System.Xml.XmlDictionaryReader
+  parent: System.Xml
+  isExternal: false
+  href: System.Xml.XmlDictionaryReader.yml
+  name: XmlDictionaryReader
+  fullName: System.Xml.XmlDictionaryReader
+  type: Class
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  name.vb: Byte()
+  fullName: System.Byte[]
+  fullName.vb: System.Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Xml.XmlDictionaryReaderQuotas
+  parent: System.Xml
+  isExternal: false
+  href: System.Xml.XmlDictionaryReaderQuotas.yml
+  name: XmlDictionaryReaderQuotas
+  fullName: System.Xml.XmlDictionaryReaderQuotas
+  type: Class
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Xml.IXmlDictionary
+  isExternal: false
+  href: System.Xml.IXmlDictionary.yml
+  name: IXmlDictionary
+  fullName: System.Xml.IXmlDictionary
+  type: Interface
+- uid: System.Xml.XmlBinaryReaderSession
+  isExternal: false
+  href: System.Xml.XmlBinaryReaderSession.yml
+  name: XmlBinaryReaderSession
+  fullName: System.Xml.XmlBinaryReaderSession
+  type: Class
+- uid: System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  name: Stream
+  fullName: System.IO.Stream
+- uid: System.IO
+  isExternal: false
+  name: System.IO
+  fullName: System.IO
+- uid: System.Text.Encoding
+  parent: System.Text
+  isExternal: true
+  name: Encoding
+  fullName: System.Text.Encoding
+- uid: System.Xml.OnXmlDictionaryReaderClose
+  isExternal: false
+  href: System.Xml.OnXmlDictionaryReaderClose.yml
+  name: OnXmlDictionaryReaderClose
+  fullName: System.Xml.OnXmlDictionaryReaderClose
+  type: Delegate
+- uid: System.Text
+  isExternal: false
+  name: System.Text
+  fullName: System.Text
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  name.vb: String()
+  fullName: System.String[]
+  fullName.vb: System.String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Xml.XmlDictionaryString
+  parent: System.Xml
+  isExternal: false
+  href: System.Xml.XmlDictionaryString.yml
+  name: XmlDictionaryString
+  fullName: System.Xml.XmlDictionaryString
+  type: Class
+- uid: System.Xml.XmlDictionaryString[]
+  isExternal: false
+  href: System.Xml.XmlDictionaryString.yml
+  name: XmlDictionaryString[]
+  name.vb: XmlDictionaryString()
+  fullName: System.Xml.XmlDictionaryString[]
+  fullName.vb: System.Xml.XmlDictionaryString()
+  spec.csharp:
+  - uid: System.Xml.XmlDictionaryString
+    name: XmlDictionaryString
+    fullName: System.Xml.XmlDictionaryString
+    href: System.Xml.XmlDictionaryString.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Xml.XmlDictionaryString
+    name: XmlDictionaryString
+    fullName: System.Xml.XmlDictionaryString
+    href: System.Xml.XmlDictionaryString.yml
+  - name: ()
+    fullName: ()
+- uid: XmlNodeType
+  isExternal: true
+  name: XmlNodeType
+  fullName: XmlNodeType
+- uid: System.Char[]
+  isExternal: true
+  name: Char[]
+  name.vb: Char()
+  fullName: System.Char[]
+  fullName.vb: System.Char()
+  spec.csharp:
+  - uid: System.Char
+    name: Char
+    fullName: System.Char
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Char
+    name: Char
+    fullName: System.Char
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  fullName: System.Type
+- uid: IXmlNamespaceResolver
+  isExternal: true
+  name: IXmlNamespaceResolver
+  fullName: IXmlNamespaceResolver
+- uid: System.Decimal
+  parent: System
+  isExternal: true
+  name: Decimal
+  fullName: System.Decimal
+- uid: System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  fullName: System.Single
+- uid: System.Xml.UniqueId
+  parent: System.Xml
+  isExternal: false
+  href: System.Xml.UniqueId.yml
+  name: UniqueId
+  fullName: System.Xml.UniqueId
+  type: Class
+- uid: System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  fullName: System.Guid
+- uid: System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  fullName: System.TimeSpan
+- uid: System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  fullName: System.Int64
+- uid: System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  fullName: System.Double
+- uid: System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  fullName: System.DateTime
+- uid: System.Boolean[]
+  isExternal: false
+  href: System.Boolean.yml
+  name: Boolean[]
+  name.vb: Boolean()
+  fullName: System.Boolean[]
+  fullName.vb: System.Boolean()
+  spec.csharp:
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: ()
+    fullName: ()
+- uid: System.Int16[]
+  isExternal: false
+  href: System.Int16.yml
+  name: Int16[]
+  name.vb: Int16()
+  fullName: System.Int16[]
+  fullName.vb: System.Int16()
+  spec.csharp:
+  - uid: System.Int16
+    name: Int16
+    fullName: System.Int16
+    href: System.Int16.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int16
+    name: Int16
+    fullName: System.Int16
+    href: System.Int16.yml
+  - name: ()
+    fullName: ()
+- uid: System.Int32[]
+  isExternal: true
+  name: Int32[]
+  name.vb: Int32()
+  fullName: System.Int32[]
+  fullName.vb: System.Int32()
+  spec.csharp:
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Int64[]
+  isExternal: false
+  href: System.Int64.yml
+  name: Int64[]
+  name.vb: Int64()
+  fullName: System.Int64[]
+  fullName.vb: System.Int64()
+  spec.csharp:
+  - uid: System.Int64
+    name: Int64
+    fullName: System.Int64
+    href: System.Int64.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int64
+    name: Int64
+    fullName: System.Int64
+    href: System.Int64.yml
+  - name: ()
+    fullName: ()
+- uid: System.Single[]
+  isExternal: false
+  href: System.Single.yml
+  name: Single[]
+  name.vb: Single()
+  fullName: System.Single[]
+  fullName.vb: System.Single()
+  spec.csharp:
+  - uid: System.Single
+    name: Single
+    fullName: System.Single
+    href: System.Single.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    fullName: System.Single
+    href: System.Single.yml
+  - name: ()
+    fullName: ()
+- uid: System.Double[]
+  isExternal: false
+  href: System.Double.yml
+  name: Double[]
+  name.vb: Double()
+  fullName: System.Double[]
+  fullName.vb: System.Double()
+  spec.csharp:
+  - uid: System.Double
+    name: Double
+    fullName: System.Double
+    href: System.Double.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    fullName: System.Double
+    href: System.Double.yml
+  - name: ()
+    fullName: ()
+- uid: System.Decimal[]
+  isExternal: true
+  name: Decimal[]
+  name.vb: Decimal()
+  fullName: System.Decimal[]
+  fullName.vb: System.Decimal()
+  spec.csharp:
+  - uid: System.Decimal
+    name: Decimal
+    fullName: System.Decimal
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Decimal
+    name: Decimal
+    fullName: System.Decimal
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.DateTime[]
+  isExternal: true
+  name: DateTime[]
+  name.vb: DateTime()
+  fullName: System.DateTime[]
+  fullName.vb: System.DateTime()
+  spec.csharp:
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.DateTime
+    name: DateTime
+    fullName: System.DateTime
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Guid[]
+  isExternal: true
+  name: Guid[]
+  name.vb: Guid()
+  fullName: System.Guid[]
+  fullName.vb: System.Guid()
+  spec.csharp:
+  - uid: System.Guid
+    name: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Guid
+    name: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.TimeSpan[]
+  isExternal: false
+  href: System.TimeSpan.yml
+  name: TimeSpan[]
+  name.vb: TimeSpan()
+  fullName: System.TimeSpan[]
+  fullName.vb: System.TimeSpan()
+  spec.csharp:
+  - uid: System.TimeSpan
+    name: TimeSpan
+    fullName: System.TimeSpan
+    href: System.TimeSpan.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.TimeSpan
+    name: TimeSpan
+    fullName: System.TimeSpan
+    href: System.TimeSpan.yml
+  - name: ()
+    fullName: ()

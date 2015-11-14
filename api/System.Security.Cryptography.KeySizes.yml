@@ -1,0 +1,359 @@
+items:
+- uid: System.Security.Cryptography.KeySizes
+  id: KeySizes
+  parent: System.Security.Cryptography
+  children:
+  - System.Security.Cryptography.KeySizes.#ctor(System.Int32,System.Int32,System.Int32)
+  - System.Security.Cryptography.KeySizes.MaxSize
+  - System.Security.Cryptography.KeySizes.MinSize
+  - System.Security.Cryptography.KeySizes.SkipSize
+  href: System.Security.Cryptography.KeySizes.yml
+  name: KeySizes
+  fullName: System.Security.Cryptography.KeySizes
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Security/Cryptography/Crypto.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Security/Cryptography/Crypto.cs
+    startLine: 48
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: Determines the set of valid key sizes for the symmetric cryptographic algorithms.
+  syntax:
+    content: public sealed class KeySizes
+    content.vb: Public NotInheritable Class KeySizes
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Security.Cryptography.KeySizes.MinSize
+  id: MinSize
+  parent: System.Security.Cryptography.KeySizes
+  href: System.Security.Cryptography.KeySizes.yml
+  name: MinSize
+  fullName: System.Security.Cryptography.KeySizes.MinSize
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/Crypto.cs
+    startLine: 53
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: Specifies the minimum key size in bits.
+  syntax:
+    content: public int MinSize { get; }
+    content.vb: Public ReadOnly Property MinSize As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: The minimum key size in bits.
+- uid: System.Security.Cryptography.KeySizes.MaxSize
+  id: MaxSize
+  parent: System.Security.Cryptography.KeySizes
+  href: System.Security.Cryptography.KeySizes.yml
+  name: MaxSize
+  fullName: System.Security.Cryptography.KeySizes.MaxSize
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/Crypto.cs
+    startLine: 57
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: Specifies the maximum key size in bits.
+  syntax:
+    content: public int MaxSize { get; }
+    content.vb: Public ReadOnly Property MaxSize As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: The maximum key size in bits.
+- uid: System.Security.Cryptography.KeySizes.SkipSize
+  id: SkipSize
+  parent: System.Security.Cryptography.KeySizes
+  href: System.Security.Cryptography.KeySizes.yml
+  name: SkipSize
+  fullName: System.Security.Cryptography.KeySizes.SkipSize
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/Crypto.cs
+    startLine: 61
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: Specifies the interval between valid key sizes in bits.
+  syntax:
+    content: public int SkipSize { get; }
+    content.vb: Public ReadOnly Property SkipSize As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: The interval between valid key sizes in bits.
+- uid: System.Security.Cryptography.KeySizes.#ctor(System.Int32,System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32,System.Int32)'
+  parent: System.Security.Cryptography.KeySizes
+  href: System.Security.Cryptography.KeySizes.yml
+  name: KeySizes(Int32, Int32, Int32)
+  fullName: System.Security.Cryptography.KeySizes.KeySizes(System.Int32, System.Int32, System.Int32)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Cryptography/Crypto.cs
+    startLine: 65
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Cryptography
+  summary: Initializes a new instance of the @'System.Security.Cryptography.KeySizes' class with the specified key values.
+  syntax:
+    content: public KeySizes(int minSize, int maxSize, int skipSize)
+    content.vb: Public Sub New(minSize As Integer, maxSize As Integer, skipSize As Integer)
+    parameters:
+    - id: minSize
+      type: System.Int32
+      description: The minimum valid key size.
+    - id: maxSize
+      type: System.Int32
+      description: The maximum valid key size.
+    - id: skipSize
+      type: System.Int32
+      description: The interval between valid key sizes.
+references:
+- uid: System.Security.Cryptography
+  isExternal: false
+  name: System.Security.Cryptography
+  fullName: System.Security.Cryptography
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32

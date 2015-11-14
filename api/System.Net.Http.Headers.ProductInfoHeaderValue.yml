@@ -1,0 +1,536 @@
+items:
+- uid: System.Net.Http.Headers.ProductInfoHeaderValue
+  id: ProductInfoHeaderValue
+  parent: System.Net.Http.Headers
+  children:
+  - System.Net.Http.Headers.ProductInfoHeaderValue.#ctor(System.Net.Http.Headers.ProductHeaderValue)
+  - System.Net.Http.Headers.ProductInfoHeaderValue.#ctor(System.String)
+  - System.Net.Http.Headers.ProductInfoHeaderValue.#ctor(System.String,System.String)
+  - System.Net.Http.Headers.ProductInfoHeaderValue.Comment
+  - System.Net.Http.Headers.ProductInfoHeaderValue.Equals(System.Object)
+  - System.Net.Http.Headers.ProductInfoHeaderValue.GetHashCode
+  - System.Net.Http.Headers.ProductInfoHeaderValue.Parse(System.String)
+  - System.Net.Http.Headers.ProductInfoHeaderValue.Product
+  - System.Net.Http.Headers.ProductInfoHeaderValue.ToString
+  - System.Net.Http.Headers.ProductInfoHeaderValue.TryParse(System.String,System.Net.Http.Headers.ProductInfoHeaderValue@)
+  href: System.Net.Http.Headers.ProductInfoHeaderValue.yml
+  name: ProductInfoHeaderValue
+  fullName: System.Net.Http.Headers.ProductInfoHeaderValue
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Net.Http/src/System/Net/Http/Headers/ProductInfoHeaderValue.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Net.Http/src/System/Net/Http/Headers/ProductInfoHeaderValue.cs
+    startLine: 7
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Represents a value which can either be a product or a comment in a User-Agent header.
+  syntax:
+    content: 'public class ProductInfoHeaderValue : ICloneable'
+    content.vb: Public Class ProductInfoHeaderValue Implements ICloneable
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Net.Http.Headers.ProductInfoHeaderValue.Product
+  id: Product
+  parent: System.Net.Http.Headers.ProductInfoHeaderValue
+  href: System.Net.Http.Headers.ProductInfoHeaderValue.yml
+  name: Product
+  fullName: System.Net.Http.Headers.ProductInfoHeaderValue.Product
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/ProductInfoHeaderValue.cs
+    startLine: 12
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Gets the product from the @'System.Net.Http.Headers.ProductInfoHeaderValue' object.
+  syntax:
+    content: public ProductHeaderValue Product { get; }
+    content.vb: Public ReadOnly Property Product As ProductHeaderValue
+    parameters: []
+    return:
+      type: System.Net.Http.Headers.ProductHeaderValue
+      description: Returns @'System.Net.Http.Headers.ProductHeaderValue'.The product value from this @'System.Net.Http.Headers.ProductInfoHeaderValue'.
+- uid: System.Net.Http.Headers.ProductInfoHeaderValue.Comment
+  id: Comment
+  parent: System.Net.Http.Headers.ProductInfoHeaderValue
+  href: System.Net.Http.Headers.ProductInfoHeaderValue.yml
+  name: Comment
+  fullName: System.Net.Http.Headers.ProductInfoHeaderValue.Comment
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/ProductInfoHeaderValue.cs
+    startLine: 17
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Gets the comment from the @'System.Net.Http.Headers.ProductInfoHeaderValue' object.
+  syntax:
+    content: public string Comment { get; }
+    content.vb: Public ReadOnly Property Comment As String
+    parameters: []
+    return:
+      type: System.String
+      description: Returns @'System.String'.The comment value this @'System.Net.Http.Headers.ProductInfoHeaderValue'.
+- uid: System.Net.Http.Headers.ProductInfoHeaderValue.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: System.Net.Http.Headers.ProductInfoHeaderValue
+  href: System.Net.Http.Headers.ProductInfoHeaderValue.yml
+  name: ProductInfoHeaderValue(String, String)
+  fullName: System.Net.Http.Headers.ProductInfoHeaderValue.ProductInfoHeaderValue(System.String, System.String)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/ProductInfoHeaderValue.cs
+    startLine: 22
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Initializes a new instance of the @'System.Net.Http.Headers.ProductInfoHeaderValue' class.
+  syntax:
+    content: public ProductInfoHeaderValue(string productName, string productVersion)
+    content.vb: Public Sub New(productName As String, productVersion As String)
+    parameters:
+    - id: productName
+      type: System.String
+      description: The product name value.
+    - id: productVersion
+      type: System.String
+      description: The product version value.
+- uid: System.Net.Http.Headers.ProductInfoHeaderValue.#ctor(System.Net.Http.Headers.ProductHeaderValue)
+  id: '#ctor(System.Net.Http.Headers.ProductHeaderValue)'
+  parent: System.Net.Http.Headers.ProductInfoHeaderValue
+  href: System.Net.Http.Headers.ProductInfoHeaderValue.yml
+  name: ProductInfoHeaderValue(ProductHeaderValue)
+  fullName: System.Net.Http.Headers.ProductInfoHeaderValue.ProductInfoHeaderValue(System.Net.Http.Headers.ProductHeaderValue)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/ProductInfoHeaderValue.cs
+    startLine: 27
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Initializes a new instance of the @'System.Net.Http.Headers.ProductInfoHeaderValue' class.
+  syntax:
+    content: public ProductInfoHeaderValue(ProductHeaderValue product)
+    content.vb: Public Sub New(product As ProductHeaderValue)
+    parameters:
+    - id: product
+      type: System.Net.Http.Headers.ProductHeaderValue
+      description: A @'System.Net.Http.Headers.ProductInfoHeaderValue' object used to initialize the new instance.
+- uid: System.Net.Http.Headers.ProductInfoHeaderValue.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: System.Net.Http.Headers.ProductInfoHeaderValue
+  href: System.Net.Http.Headers.ProductInfoHeaderValue.yml
+  name: ProductInfoHeaderValue(String)
+  fullName: System.Net.Http.Headers.ProductInfoHeaderValue.ProductInfoHeaderValue(System.String)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/ProductInfoHeaderValue.cs
+    startLine: 37
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Initializes a new instance of the @'System.Net.Http.Headers.ProductInfoHeaderValue' class.
+  syntax:
+    content: public ProductInfoHeaderValue(string comment)
+    content.vb: Public Sub New(comment As String)
+    parameters:
+    - id: comment
+      type: System.String
+      description: A comment value.
+- uid: System.Net.Http.Headers.ProductInfoHeaderValue.ToString
+  id: ToString
+  parent: System.Net.Http.Headers.ProductInfoHeaderValue
+  href: System.Net.Http.Headers.ProductInfoHeaderValue.yml
+  name: ToString()
+  fullName: System.Net.Http.Headers.ProductInfoHeaderValue.ToString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/ProductInfoHeaderValue.cs
+    startLine: 55
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Returns a string that represents the current @'System.Net.Http.Headers.ProductInfoHeaderValue' object.
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+      description: Returns @'System.String'.A string that represents the current object.
+  overridden: System.Object.ToString
+- uid: System.Net.Http.Headers.ProductInfoHeaderValue.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Net.Http.Headers.ProductInfoHeaderValue
+  href: System.Net.Http.Headers.ProductInfoHeaderValue.yml
+  name: Equals(Object)
+  fullName: System.Net.Http.Headers.ProductInfoHeaderValue.Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/ProductInfoHeaderValue.cs
+    startLine: 64
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Determines whether the specified @'System.Object' is equal to the current @'System.Net.Http.Headers.ProductInfoHeaderValue' object.
+  syntax:
+    content: public override bool Equals(object obj)
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: Returns @'System.Boolean'.true if the specified @'System.Object' is equal to the current object; otherwise, false.
+  overridden: System.Object.Equals(System.Object)
+- uid: System.Net.Http.Headers.ProductInfoHeaderValue.GetHashCode
+  id: GetHashCode
+  parent: System.Net.Http.Headers.ProductInfoHeaderValue
+  href: System.Net.Http.Headers.ProductInfoHeaderValue.yml
+  name: GetHashCode()
+  fullName: System.Net.Http.Headers.ProductInfoHeaderValue.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/ProductInfoHeaderValue.cs
+    startLine: 82
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Serves as a hash function for an @'System.Net.Http.Headers.ProductInfoHeaderValue' object.
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: Returns @'System.Int32'.A hash code for the current object.
+  overridden: System.Object.GetHashCode
+- uid: System.Net.Http.Headers.ProductInfoHeaderValue.Parse(System.String)
+  id: Parse(System.String)
+  parent: System.Net.Http.Headers.ProductInfoHeaderValue
+  href: System.Net.Http.Headers.ProductInfoHeaderValue.yml
+  name: Parse(String)
+  fullName: System.Net.Http.Headers.ProductInfoHeaderValue.Parse(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/ProductInfoHeaderValue.cs
+    startLine: 91
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Converts a string to an @'System.Net.Http.Headers.ProductInfoHeaderValue' instance.
+  syntax:
+    content: public static ProductInfoHeaderValue Parse(string input)
+    content.vb: Public Shared Function Parse(input As String) As ProductInfoHeaderValue
+    parameters:
+    - id: input
+      type: System.String
+      description: A string that represents product info header value information.
+    return:
+      type: System.Net.Http.Headers.ProductInfoHeaderValue
+      description: Returns @'System.Net.Http.Headers.ProductInfoHeaderValue'.An @'System.Net.Http.Headers.ProductInfoHeaderValue' instance.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*input* is a null reference.'
+  - type: System.FormatException
+    description: '*input* is not valid product info header value information.'
+- uid: System.Net.Http.Headers.ProductInfoHeaderValue.TryParse(System.String,System.Net.Http.Headers.ProductInfoHeaderValue@)
+  id: TryParse(System.String,System.Net.Http.Headers.ProductInfoHeaderValue@)
+  parent: System.Net.Http.Headers.ProductInfoHeaderValue
+  href: System.Net.Http.Headers.ProductInfoHeaderValue.yml
+  name: TryParse(String, out ProductInfoHeaderValue)
+  name.vb: TryParse(String, ByRef ProductInfoHeaderValue)
+  fullName: System.Net.Http.Headers.ProductInfoHeaderValue.TryParse(System.String, out System.Net.Http.Headers.ProductInfoHeaderValue)
+  fullName.vb: System.Net.Http.Headers.ProductInfoHeaderValue.TryParse(System.String, ByRef System.Net.Http.Headers.ProductInfoHeaderValue)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/ProductInfoHeaderValue.cs
+    startLine: 105
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Determines whether a string is valid @'System.Net.Http.Headers.ProductInfoHeaderValue' information.
+  syntax:
+    content: public static bool TryParse(string input, out ProductInfoHeaderValue parsedValue)
+    content.vb: Public Shared Function TryParse(input As String, ByRef parsedValue As ProductInfoHeaderValue) As Boolean
+    parameters:
+    - id: input
+      type: System.String
+      description: The string to validate.
+    - id: parsedValue
+      type: System.Net.Http.Headers.ProductInfoHeaderValue
+      description: The @'System.Net.Http.Headers.ProductInfoHeaderValue' version of the string.
+    return:
+      type: System.Boolean
+      description: Returns @'System.Boolean'.true if *input* is valid @'System.Net.Http.Headers.ProductInfoHeaderValue' information; otherwise, false.
+references:
+- uid: System.Net.Http.Headers
+  isExternal: false
+  name: System.Net.Http.Headers
+  fullName: System.Net.Http.Headers
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Net.Http.Headers.ProductHeaderValue
+  parent: System.Net.Http.Headers
+  isExternal: false
+  href: System.Net.Http.Headers.ProductHeaderValue.yml
+  name: ProductHeaderValue
+  fullName: System.Net.Http.Headers.ProductHeaderValue
+  type: Class
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Net.Http.Headers.ProductInfoHeaderValue
+  parent: System.Net.Http.Headers
+  isExternal: false
+  href: System.Net.Http.Headers.ProductInfoHeaderValue.yml
+  name: ProductInfoHeaderValue
+  fullName: System.Net.Http.Headers.ProductInfoHeaderValue
+  type: Class

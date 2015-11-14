@@ -1,0 +1,1360 @@
+items:
+- uid: System.Numerics.Matrix3x2
+  id: Matrix3x2
+  parent: System.Numerics
+  children:
+  - System.Numerics.Matrix3x2.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  - System.Numerics.Matrix3x2.Add(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2)
+  - System.Numerics.Matrix3x2.CreateRotation(System.Single)
+  - System.Numerics.Matrix3x2.CreateRotation(System.Single,System.Numerics.Vector2)
+  - System.Numerics.Matrix3x2.CreateScale(System.Numerics.Vector2)
+  - System.Numerics.Matrix3x2.CreateScale(System.Numerics.Vector2,System.Numerics.Vector2)
+  - System.Numerics.Matrix3x2.CreateScale(System.Single)
+  - System.Numerics.Matrix3x2.CreateScale(System.Single,System.Numerics.Vector2)
+  - System.Numerics.Matrix3x2.CreateScale(System.Single,System.Single)
+  - System.Numerics.Matrix3x2.CreateScale(System.Single,System.Single,System.Numerics.Vector2)
+  - System.Numerics.Matrix3x2.CreateSkew(System.Single,System.Single)
+  - System.Numerics.Matrix3x2.CreateSkew(System.Single,System.Single,System.Numerics.Vector2)
+  - System.Numerics.Matrix3x2.CreateTranslation(System.Numerics.Vector2)
+  - System.Numerics.Matrix3x2.CreateTranslation(System.Single,System.Single)
+  - System.Numerics.Matrix3x2.Equals(System.Numerics.Matrix3x2)
+  - System.Numerics.Matrix3x2.Equals(System.Object)
+  - System.Numerics.Matrix3x2.GetDeterminant
+  - System.Numerics.Matrix3x2.GetHashCode
+  - System.Numerics.Matrix3x2.Identity
+  - System.Numerics.Matrix3x2.Invert(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2@)
+  - System.Numerics.Matrix3x2.IsIdentity
+  - System.Numerics.Matrix3x2.Lerp(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2,System.Single)
+  - System.Numerics.Matrix3x2.M11
+  - System.Numerics.Matrix3x2.M12
+  - System.Numerics.Matrix3x2.M21
+  - System.Numerics.Matrix3x2.M22
+  - System.Numerics.Matrix3x2.M31
+  - System.Numerics.Matrix3x2.M32
+  - System.Numerics.Matrix3x2.Multiply(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2)
+  - System.Numerics.Matrix3x2.Multiply(System.Numerics.Matrix3x2,System.Single)
+  - System.Numerics.Matrix3x2.Negate(System.Numerics.Matrix3x2)
+  - System.Numerics.Matrix3x2.op_Addition(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2)
+  - System.Numerics.Matrix3x2.op_Equality(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2)
+  - System.Numerics.Matrix3x2.op_Inequality(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2)
+  - System.Numerics.Matrix3x2.op_Multiply(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2)
+  - System.Numerics.Matrix3x2.op_Multiply(System.Numerics.Matrix3x2,System.Single)
+  - System.Numerics.Matrix3x2.op_Subtraction(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2)
+  - System.Numerics.Matrix3x2.op_UnaryNegation(System.Numerics.Matrix3x2)
+  - System.Numerics.Matrix3x2.Subtract(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2)
+  - System.Numerics.Matrix3x2.ToString
+  - System.Numerics.Matrix3x2.Translation
+  href: System.Numerics.Matrix3x2.yml
+  name: Matrix3x2
+  fullName: System.Numerics.Matrix3x2
+  type: Struct
+  source:
+    remote: &o0
+      path: src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
+    startLine: 10
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Represents a 3x2 matrix.
+  syntax:
+    content: 'public struct Matrix3x2 : IEquatable<Matrix3x2>'
+    content.vb: Public Structure Matrix3x2 Implements IEquatable(Of Matrix3x2)
+  implements:
+  - System.IEquatable{System.Numerics.Matrix3x2}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.Numerics.Matrix3x2.M11
+  id: M11
+  parent: System.Numerics.Matrix3x2
+  href: System.Numerics.Matrix3x2.yml
+  name: M11
+  fullName: System.Numerics.Matrix3x2.M11
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
+    startLine: 16
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: The first element of the first row.
+  syntax:
+    content: public float M11
+    content.vb: Public M11 As Single
+- uid: System.Numerics.Matrix3x2.M12
+  id: M12
+  parent: System.Numerics.Matrix3x2
+  href: System.Numerics.Matrix3x2.yml
+  name: M12
+  fullName: System.Numerics.Matrix3x2.M12
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
+    startLine: 20
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: The second element of the first row.
+  syntax:
+    content: public float M12
+    content.vb: Public M12 As Single
+- uid: System.Numerics.Matrix3x2.M21
+  id: M21
+  parent: System.Numerics.Matrix3x2
+  href: System.Numerics.Matrix3x2.yml
+  name: M21
+  fullName: System.Numerics.Matrix3x2.M21
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
+    startLine: 24
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: The first element of the second row.
+  syntax:
+    content: public float M21
+    content.vb: Public M21 As Single
+- uid: System.Numerics.Matrix3x2.M22
+  id: M22
+  parent: System.Numerics.Matrix3x2
+  href: System.Numerics.Matrix3x2.yml
+  name: M22
+  fullName: System.Numerics.Matrix3x2.M22
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
+    startLine: 28
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: The second element of the second row.
+  syntax:
+    content: public float M22
+    content.vb: Public M22 As Single
+- uid: System.Numerics.Matrix3x2.M31
+  id: M31
+  parent: System.Numerics.Matrix3x2
+  href: System.Numerics.Matrix3x2.yml
+  name: M31
+  fullName: System.Numerics.Matrix3x2.M31
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
+    startLine: 32
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: The first element of the third row.
+  syntax:
+    content: public float M31
+    content.vb: Public M31 As Single
+- uid: System.Numerics.Matrix3x2.M32
+  id: M32
+  parent: System.Numerics.Matrix3x2
+  href: System.Numerics.Matrix3x2.yml
+  name: M32
+  fullName: System.Numerics.Matrix3x2.M32
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
+    startLine: 36
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: The second element of the third row.
+  syntax:
+    content: public float M32
+    content.vb: Public M32 As Single
+- uid: System.Numerics.Matrix3x2.Identity
+  id: Identity
+  parent: System.Numerics.Matrix3x2
+  href: System.Numerics.Matrix3x2.yml
+  name: Identity
+  fullName: System.Numerics.Matrix3x2.Identity
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
+    startLine: 49
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Gets the multiplicative identity matrix.
+  syntax:
+    content: public static Matrix3x2 Identity { get; }
+    content.vb: Public Shared ReadOnly Property Identity As Matrix3x2
+    parameters: []
+    return:
+      type: System.Numerics.Matrix3x2
+      description: The multiplicative identify matrix.
+- uid: System.Numerics.Matrix3x2.IsIdentity
+  id: IsIdentity
+  parent: System.Numerics.Matrix3x2
+  href: System.Numerics.Matrix3x2.yml
+  name: IsIdentity
+  fullName: System.Numerics.Matrix3x2.IsIdentity
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
+    startLine: 57
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Indicates whether the current matrix is the identity matrix.
+  syntax:
+    content: public bool IsIdentity { get; }
+    content.vb: Public ReadOnly Property IsIdentity As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the current matrix is the identity matrix; otherwise, false.
+- uid: System.Numerics.Matrix3x2.Translation
+  id: Translation
+  parent: System.Numerics.Matrix3x2
+  href: System.Numerics.Matrix3x2.yml
+  name: Translation
+  fullName: System.Numerics.Matrix3x2.Translation
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
+    startLine: 71
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Gets or sets the translation component of this matrix.
+  syntax:
+    content: public Vector2 Translation { get; set; }
+    content.vb: Public Property Translation As Vector2
+    parameters: []
+    return:
+      type: System.Numerics.Vector2
+      description: The translation component of the current instance.
+- uid: System.Numerics.Matrix3x2.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  id: '#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)'
+  parent: System.Numerics.Matrix3x2
+  href: System.Numerics.Matrix3x2.yml
+  name: Matrix3x2(Single, Single, Single, Single, Single, Single)
+  fullName: System.Numerics.Matrix3x2.Matrix3x2(System.Single, System.Single, System.Single, System.Single, System.Single, System.Single)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
+    startLine: 88
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Creates a 3x2 matrix from the specified components.
+  syntax:
+    content: public Matrix3x2(float m11, float m12, float m21, float m22, float m31, float m32)
+    content.vb: Public Sub New(m11 As Single, m12 As Single, m21 As Single, m22 As Single, m31 As Single, m32 As Single)
+    parameters:
+    - id: m11
+      type: System.Single
+      description: The value to assign to the first element in the first row.
+    - id: m12
+      type: System.Single
+      description: The value to assign to the second element in the first row.
+    - id: m21
+      type: System.Single
+      description: The value to assign to the first element in the second row.
+    - id: m22
+      type: System.Single
+      description: The value to assign to the second element in the second row.
+    - id: m31
+      type: System.Single
+      description: The value to assign to the first element in the third row.
+    - id: m32
+      type: System.Single
+      description: The value to assign to the second element in the third row.
+- uid: System.Numerics.Matrix3x2.CreateTranslation(System.Numerics.Vector2)
+  id: CreateTranslation(System.Numerics.Vector2)
+  parent: System.Numerics.Matrix3x2
+  href: System.Numerics.Matrix3x2.yml
+  name: CreateTranslation(Vector2)
+  fullName: System.Numerics.Matrix3x2.CreateTranslation(System.Numerics.Vector2)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
+    startLine: 105
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Creates a translation matrix from the specified 2-dimensional vector.
+  syntax:
+    content: public static Matrix3x2 CreateTranslation(Vector2 position)
+    content.vb: Public Shared Function CreateTranslation(position As Vector2) As Matrix3x2
+    parameters:
+    - id: position
+      type: System.Numerics.Vector2
+      description: The translation position.
+    return:
+      type: System.Numerics.Matrix3x2
+      description: The translation matrix.
+- uid: System.Numerics.Matrix3x2.CreateTranslation(System.Single,System.Single)
+  id: CreateTranslation(System.Single,System.Single)
+  parent: System.Numerics.Matrix3x2
+  href: System.Numerics.Matrix3x2.yml
+  name: CreateTranslation(Single, Single)
+  fullName: System.Numerics.Matrix3x2.CreateTranslation(System.Single, System.Single)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
+    startLine: 126
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Creates a translation matrix from the specified X and Y components.
+  syntax:
+    content: public static Matrix3x2 CreateTranslation(float xPosition, float yPosition)
+    content.vb: Public Shared Function CreateTranslation(xPosition As Single, yPosition As Single) As Matrix3x2
+    parameters:
+    - id: xPosition
+      type: System.Single
+      description: The X position.
+    - id: yPosition
+      type: System.Single
+      description: The Y position.
+    return:
+      type: System.Numerics.Matrix3x2
+      description: The translation matrix.
+- uid: System.Numerics.Matrix3x2.CreateScale(System.Single,System.Single)
+  id: CreateScale(System.Single,System.Single)
+  parent: System.Numerics.Matrix3x2
+  href: System.Numerics.Matrix3x2.yml
+  name: CreateScale(Single, Single)
+  fullName: System.Numerics.Matrix3x2.CreateScale(System.Single, System.Single)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
+    startLine: 147
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Creates a scaling matrix from the specified X and Y components.
+  syntax:
+    content: public static Matrix3x2 CreateScale(float xScale, float yScale)
+    content.vb: Public Shared Function CreateScale(xScale As Single, yScale As Single) As Matrix3x2
+    parameters:
+    - id: xScale
+      type: System.Single
+      description: The value to scale by on the X axis.
+    - id: yScale
+      type: System.Single
+      description: The value to scale by on the Y axis.
+    return:
+      type: System.Numerics.Matrix3x2
+      description: The scaling matrix.
+- uid: System.Numerics.Matrix3x2.CreateScale(System.Single,System.Single,System.Numerics.Vector2)
+  id: CreateScale(System.Single,System.Single,System.Numerics.Vector2)
+  parent: System.Numerics.Matrix3x2
+  href: System.Numerics.Matrix3x2.yml
+  name: CreateScale(Single, Single, Vector2)
+  fullName: System.Numerics.Matrix3x2.CreateScale(System.Single, System.Single, System.Numerics.Vector2)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
+    startLine: 168
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Creates a scaling matrix that is offset by a given center point.
+  syntax:
+    content: public static Matrix3x2 CreateScale(float xScale, float yScale, Vector2 centerPoint)
+    content.vb: Public Shared Function CreateScale(xScale As Single, yScale As Single, centerPoint As Vector2) As Matrix3x2
+    parameters:
+    - id: xScale
+      type: System.Single
+      description: The value to scale by on the X axis.
+    - id: yScale
+      type: System.Single
+      description: The value to scale by on the Y axis.
+    - id: centerPoint
+      type: System.Numerics.Vector2
+      description: The center point.
+    return:
+      type: System.Numerics.Matrix3x2
+      description: The scaling matrix.
+- uid: System.Numerics.Matrix3x2.CreateScale(System.Numerics.Vector2)
+  id: CreateScale(System.Numerics.Vector2)
+  parent: System.Numerics.Matrix3x2
+  href: System.Numerics.Matrix3x2.yml
+  name: CreateScale(Vector2)
+  fullName: System.Numerics.Matrix3x2.CreateScale(System.Numerics.Vector2)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
+    startLine: 190
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Creates a scaling matrix from the specified vector scale.
+  syntax:
+    content: public static Matrix3x2 CreateScale(Vector2 scales)
+    content.vb: Public Shared Function CreateScale(scales As Vector2) As Matrix3x2
+    parameters:
+    - id: scales
+      type: System.Numerics.Vector2
+      description: The scale to use.
+    return:
+      type: System.Numerics.Matrix3x2
+      description: The scaling matrix.
+- uid: System.Numerics.Matrix3x2.CreateScale(System.Numerics.Vector2,System.Numerics.Vector2)
+  id: CreateScale(System.Numerics.Vector2,System.Numerics.Vector2)
+  parent: System.Numerics.Matrix3x2
+  href: System.Numerics.Matrix3x2.yml
+  name: CreateScale(Vector2, Vector2)
+  fullName: System.Numerics.Matrix3x2.CreateScale(System.Numerics.Vector2, System.Numerics.Vector2)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
+    startLine: 210
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Creates a scaling matrix from the specified vector scale with an offset from the specified center point.
+  syntax:
+    content: public static Matrix3x2 CreateScale(Vector2 scales, Vector2 centerPoint)
+    content.vb: Public Shared Function CreateScale(scales As Vector2, centerPoint As Vector2) As Matrix3x2
+    parameters:
+    - id: scales
+      type: System.Numerics.Vector2
+      description: The scale to use.
+    - id: centerPoint
+      type: System.Numerics.Vector2
+      description: The center offset.
+    return:
+      type: System.Numerics.Matrix3x2
+      description: The scaling matrix.
+- uid: System.Numerics.Matrix3x2.CreateScale(System.Single)
+  id: CreateScale(System.Single)
+  parent: System.Numerics.Matrix3x2
+  href: System.Numerics.Matrix3x2.yml
+  name: CreateScale(Single)
+  fullName: System.Numerics.Matrix3x2.CreateScale(System.Single)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
+    startLine: 232
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Creates a scaling matrix that scales uniformly with the given scale.
+  syntax:
+    content: public static Matrix3x2 CreateScale(float scale)
+    content.vb: Public Shared Function CreateScale(scale As Single) As Matrix3x2
+    parameters:
+    - id: scale
+      type: System.Single
+      description: The uniform scale to use.
+    return:
+      type: System.Numerics.Matrix3x2
+      description: The scaling matrix.
+- uid: System.Numerics.Matrix3x2.CreateScale(System.Single,System.Numerics.Vector2)
+  id: CreateScale(System.Single,System.Numerics.Vector2)
+  parent: System.Numerics.Matrix3x2
+  href: System.Numerics.Matrix3x2.yml
+  name: CreateScale(Single, Vector2)
+  fullName: System.Numerics.Matrix3x2.CreateScale(System.Single, System.Numerics.Vector2)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
+    startLine: 252
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Creates a scaling matrix that scales uniformly with the specified scale with an offset from the specified center.
+  syntax:
+    content: public static Matrix3x2 CreateScale(float scale, Vector2 centerPoint)
+    content.vb: Public Shared Function CreateScale(scale As Single, centerPoint As Vector2) As Matrix3x2
+    parameters:
+    - id: scale
+      type: System.Single
+      description: The uniform scale to use.
+    - id: centerPoint
+      type: System.Numerics.Vector2
+      description: The center offset.
+    return:
+      type: System.Numerics.Matrix3x2
+      description: The scaling matrix.
+- uid: System.Numerics.Matrix3x2.CreateSkew(System.Single,System.Single)
+  id: CreateSkew(System.Single,System.Single)
+  parent: System.Numerics.Matrix3x2
+  href: System.Numerics.Matrix3x2.yml
+  name: CreateSkew(Single, Single)
+  fullName: System.Numerics.Matrix3x2.CreateSkew(System.Single, System.Single)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
+    startLine: 275
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Creates a skew matrix from the specified angles in radians.
+  syntax:
+    content: public static Matrix3x2 CreateSkew(float radiansX, float radiansY)
+    content.vb: Public Shared Function CreateSkew(radiansX As Single, radiansY As Single) As Matrix3x2
+    parameters:
+    - id: radiansX
+      type: System.Single
+      description: The X angle, in radians.
+    - id: radiansY
+      type: System.Single
+      description: The Y angle, in radians.
+    return:
+      type: System.Numerics.Matrix3x2
+      description: The skew matrix.
+- uid: System.Numerics.Matrix3x2.CreateSkew(System.Single,System.Single,System.Numerics.Vector2)
+  id: CreateSkew(System.Single,System.Single,System.Numerics.Vector2)
+  parent: System.Numerics.Matrix3x2
+  href: System.Numerics.Matrix3x2.yml
+  name: CreateSkew(Single, Single, Vector2)
+  fullName: System.Numerics.Matrix3x2.CreateSkew(System.Single, System.Single, System.Numerics.Vector2)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
+    startLine: 299
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Creates a skew matrix from the specified angles in radians and a center point.
+  syntax:
+    content: public static Matrix3x2 CreateSkew(float radiansX, float radiansY, Vector2 centerPoint)
+    content.vb: Public Shared Function CreateSkew(radiansX As Single, radiansY As Single, centerPoint As Vector2) As Matrix3x2
+    parameters:
+    - id: radiansX
+      type: System.Single
+      description: The X angle, in radians.
+    - id: radiansY
+      type: System.Single
+      description: The Y angle, in radians.
+    - id: centerPoint
+      type: System.Numerics.Vector2
+      description: The center point.
+    return:
+      type: System.Numerics.Matrix3x2
+      description: The skew matrix.
+- uid: System.Numerics.Matrix3x2.CreateRotation(System.Single)
+  id: CreateRotation(System.Single)
+  parent: System.Numerics.Matrix3x2
+  href: System.Numerics.Matrix3x2.yml
+  name: CreateRotation(Single)
+  fullName: System.Numerics.Matrix3x2.CreateRotation(System.Single)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
+    startLine: 324
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Creates a rotation matrix using the given rotation in radians.
+  syntax:
+    content: public static Matrix3x2 CreateRotation(float radians)
+    content.vb: Public Shared Function CreateRotation(radians As Single) As Matrix3x2
+    parameters:
+    - id: radians
+      type: System.Single
+      description: The amount of rotation, in radians.
+    return:
+      type: System.Numerics.Matrix3x2
+      description: The rotation matrix.
+- uid: System.Numerics.Matrix3x2.CreateRotation(System.Single,System.Numerics.Vector2)
+  id: CreateRotation(System.Single,System.Numerics.Vector2)
+  parent: System.Numerics.Matrix3x2
+  href: System.Numerics.Matrix3x2.yml
+  name: CreateRotation(Single, Vector2)
+  fullName: System.Numerics.Matrix3x2.CreateRotation(System.Single, System.Numerics.Vector2)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
+    startLine: 384
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Creates a rotation matrix using the specified rotation in radians and a center point.
+  syntax:
+    content: public static Matrix3x2 CreateRotation(float radians, Vector2 centerPoint)
+    content.vb: Public Shared Function CreateRotation(radians As Single, centerPoint As Vector2) As Matrix3x2
+    parameters:
+    - id: radians
+      type: System.Single
+      description: The amount of rotation, in radians.
+    - id: centerPoint
+      type: System.Numerics.Vector2
+      description: The center point.
+    return:
+      type: System.Numerics.Matrix3x2
+      description: The rotation matrix.
+- uid: System.Numerics.Matrix3x2.GetDeterminant
+  id: GetDeterminant
+  parent: System.Numerics.Matrix3x2
+  href: System.Numerics.Matrix3x2.yml
+  name: GetDeterminant()
+  fullName: System.Numerics.Matrix3x2.GetDeterminant()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
+    startLine: 446
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Calculates the determinant for this matrix.
+  syntax:
+    content: public float GetDeterminant()
+    content.vb: Public Function GetDeterminant As Single
+    return:
+      type: System.Single
+      description: The determinant.
+- uid: System.Numerics.Matrix3x2.Invert(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2@)
+  id: Invert(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2@)
+  parent: System.Numerics.Matrix3x2
+  href: System.Numerics.Matrix3x2.yml
+  name: Invert(Matrix3x2, out Matrix3x2)
+  name.vb: Invert(Matrix3x2, ByRef Matrix3x2)
+  fullName: System.Numerics.Matrix3x2.Invert(System.Numerics.Matrix3x2, out System.Numerics.Matrix3x2)
+  fullName.vb: System.Numerics.Matrix3x2.Invert(System.Numerics.Matrix3x2, ByRef System.Numerics.Matrix3x2)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
+    startLine: 473
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Inverts the specified matrix. The return value indicates whether the operation succeeded.
+  syntax:
+    content: public static bool Invert(Matrix3x2 matrix, out Matrix3x2 result)
+    content.vb: Public Shared Function Invert(matrix As Matrix3x2, ByRef result As Matrix3x2) As Boolean
+    parameters:
+    - id: matrix
+      type: System.Numerics.Matrix3x2
+      description: The matrix to invert.
+    - id: result
+      type: System.Numerics.Matrix3x2
+      description: When this method returns, contains the inverted matrix if the operation succeeded.
+    return:
+      type: System.Boolean
+      description: true if *matrix* was converted successfully; otherwise,  false.
+- uid: System.Numerics.Matrix3x2.Lerp(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2,System.Single)
+  id: Lerp(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2,System.Single)
+  parent: System.Numerics.Matrix3x2
+  href: System.Numerics.Matrix3x2.yml
+  name: Lerp(Matrix3x2, Matrix3x2, Single)
+  fullName: System.Numerics.Matrix3x2.Lerp(System.Numerics.Matrix3x2, System.Numerics.Matrix3x2, System.Single)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
+    startLine: 502
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Performs a linear interpolation from one matrix to a second matrix based on a value that specifies the weighting of the second matrix.
+  syntax:
+    content: public static Matrix3x2 Lerp(Matrix3x2 matrix1, Matrix3x2 matrix2, float amount)
+    content.vb: Public Shared Function Lerp(matrix1 As Matrix3x2, matrix2 As Matrix3x2, amount As Single) As Matrix3x2
+    parameters:
+    - id: matrix1
+      type: System.Numerics.Matrix3x2
+      description: The first matrix.
+    - id: matrix2
+      type: System.Numerics.Matrix3x2
+      description: The second matrix.
+    - id: amount
+      type: System.Single
+      description: The relative weighting of *matrix2*.
+    return:
+      type: System.Numerics.Matrix3x2
+      description: The interpolated matrix.
+- uid: System.Numerics.Matrix3x2.Negate(System.Numerics.Matrix3x2)
+  id: Negate(System.Numerics.Matrix3x2)
+  parent: System.Numerics.Matrix3x2
+  href: System.Numerics.Matrix3x2.yml
+  name: Negate(Matrix3x2)
+  fullName: System.Numerics.Matrix3x2.Negate(System.Numerics.Matrix3x2)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
+    startLine: 526
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Negates the specified matrix by multiplying all its values by -1.
+  syntax:
+    content: public static Matrix3x2 Negate(Matrix3x2 value)
+    content.vb: Public Shared Function Negate(value As Matrix3x2) As Matrix3x2
+    parameters:
+    - id: value
+      type: System.Numerics.Matrix3x2
+      description: The matrix to negate.
+    return:
+      type: System.Numerics.Matrix3x2
+      description: The negated matrix.
+- uid: System.Numerics.Matrix3x2.Add(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2)
+  id: Add(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2)
+  parent: System.Numerics.Matrix3x2
+  href: System.Numerics.Matrix3x2.yml
+  name: Add(Matrix3x2, Matrix3x2)
+  fullName: System.Numerics.Matrix3x2.Add(System.Numerics.Matrix3x2, System.Numerics.Matrix3x2)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
+    startLine: 546
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Adds each element in one matrix with its corresponding element in a second matrix.
+  syntax:
+    content: public static Matrix3x2 Add(Matrix3x2 value1, Matrix3x2 value2)
+    content.vb: Public Shared Function Add(value1 As Matrix3x2, value2 As Matrix3x2) As Matrix3x2
+    parameters:
+    - id: value1
+      type: System.Numerics.Matrix3x2
+      description: The first matrix.
+    - id: value2
+      type: System.Numerics.Matrix3x2
+      description: The second matrix.
+    return:
+      type: System.Numerics.Matrix3x2
+      description: The matrix that contains the summed values of *value1* and *value2*.
+- uid: System.Numerics.Matrix3x2.Subtract(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2)
+  id: Subtract(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2)
+  parent: System.Numerics.Matrix3x2
+  href: System.Numerics.Matrix3x2.yml
+  name: Subtract(Matrix3x2, Matrix3x2)
+  fullName: System.Numerics.Matrix3x2.Subtract(System.Numerics.Matrix3x2, System.Numerics.Matrix3x2)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
+    startLine: 566
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Subtracts each element in a second matrix from its corresponding element in a first matrix.
+  syntax:
+    content: public static Matrix3x2 Subtract(Matrix3x2 value1, Matrix3x2 value2)
+    content.vb: Public Shared Function Subtract(value1 As Matrix3x2, value2 As Matrix3x2) As Matrix3x2
+    parameters:
+    - id: value1
+      type: System.Numerics.Matrix3x2
+      description: The first matrix.
+    - id: value2
+      type: System.Numerics.Matrix3x2
+      description: The second matrix.
+    return:
+      type: System.Numerics.Matrix3x2
+      description: The matrix containing the values that result from subtracting each element in *value2* from its corresponding element in *value1*.
+- uid: System.Numerics.Matrix3x2.Multiply(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2)
+  id: Multiply(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2)
+  parent: System.Numerics.Matrix3x2
+  href: System.Numerics.Matrix3x2.yml
+  name: Multiply(Matrix3x2, Matrix3x2)
+  fullName: System.Numerics.Matrix3x2.Multiply(System.Numerics.Matrix3x2, System.Numerics.Matrix3x2)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
+    startLine: 586
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns the matrix that results from multiplying two matrices together.
+  syntax:
+    content: public static Matrix3x2 Multiply(Matrix3x2 value1, Matrix3x2 value2)
+    content.vb: Public Shared Function Multiply(value1 As Matrix3x2, value2 As Matrix3x2) As Matrix3x2
+    parameters:
+    - id: value1
+      type: System.Numerics.Matrix3x2
+      description: The first matrix.
+    - id: value2
+      type: System.Numerics.Matrix3x2
+      description: The second matrix.
+    return:
+      type: System.Numerics.Matrix3x2
+      description: The product matrix.
+- uid: System.Numerics.Matrix3x2.Multiply(System.Numerics.Matrix3x2,System.Single)
+  id: Multiply(System.Numerics.Matrix3x2,System.Single)
+  parent: System.Numerics.Matrix3x2
+  href: System.Numerics.Matrix3x2.yml
+  name: Multiply(Matrix3x2, Single)
+  fullName: System.Numerics.Matrix3x2.Multiply(System.Numerics.Matrix3x2, System.Single)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
+    startLine: 611
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns the matrix that results from scaling all the elements of a specified matrix by a scalar factor.
+  syntax:
+    content: public static Matrix3x2 Multiply(Matrix3x2 value1, float value2)
+    content.vb: Public Shared Function Multiply(value1 As Matrix3x2, value2 As Single) As Matrix3x2
+    parameters:
+    - id: value1
+      type: System.Numerics.Matrix3x2
+      description: The matrix to scale.
+    - id: value2
+      type: System.Single
+      description: The scaling value to use.
+    return:
+      type: System.Numerics.Matrix3x2
+      description: The scaled matrix.
+- uid: System.Numerics.Matrix3x2.op_UnaryNegation(System.Numerics.Matrix3x2)
+  id: op_UnaryNegation(System.Numerics.Matrix3x2)
+  parent: System.Numerics.Matrix3x2
+  href: System.Numerics.Matrix3x2.yml
+  name: UnaryNegation(Matrix3x2)
+  fullName: System.Numerics.Matrix3x2.UnaryNegation(System.Numerics.Matrix3x2)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
+    startLine: 630
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Negates the specified matrix by multiplying all its values by -1.
+  syntax:
+    content: public static Matrix3x2 operator -(Matrix3x2 value)
+    content.vb: Public Shared Operator -(value As Matrix3x2) As Matrix3x2
+    parameters:
+    - id: value
+      type: System.Numerics.Matrix3x2
+      description: The matrix to negate.
+    return:
+      type: System.Numerics.Matrix3x2
+      description: The negated matrix.
+- uid: System.Numerics.Matrix3x2.op_Addition(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2)
+  id: op_Addition(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2)
+  parent: System.Numerics.Matrix3x2
+  href: System.Numerics.Matrix3x2.yml
+  name: Addition(Matrix3x2, Matrix3x2)
+  fullName: System.Numerics.Matrix3x2.Addition(System.Numerics.Matrix3x2, System.Numerics.Matrix3x2)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
+    startLine: 650
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Adds each element in one matrix with its corresponding element in a second matrix.
+  syntax:
+    content: public static Matrix3x2 operator +(Matrix3x2 value1, Matrix3x2 value2)
+    content.vb: Public Shared Operator +(value1 As Matrix3x2, value2 As Matrix3x2) As Matrix3x2
+    parameters:
+    - id: value1
+      type: System.Numerics.Matrix3x2
+      description: The first matrix.
+    - id: value2
+      type: System.Numerics.Matrix3x2
+      description: The second matrix.
+    return:
+      type: System.Numerics.Matrix3x2
+      description: The matrix that contains the summed values.
+- uid: System.Numerics.Matrix3x2.op_Subtraction(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2)
+  id: op_Subtraction(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2)
+  parent: System.Numerics.Matrix3x2
+  href: System.Numerics.Matrix3x2.yml
+  name: Subtraction(Matrix3x2, Matrix3x2)
+  fullName: System.Numerics.Matrix3x2.Subtraction(System.Numerics.Matrix3x2, System.Numerics.Matrix3x2)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
+    startLine: 670
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Subtracts each element in a second matrix from its corresponding element in a first matrix.
+  syntax:
+    content: public static Matrix3x2 operator -(Matrix3x2 value1, Matrix3x2 value2)
+    content.vb: Public Shared Operator -(value1 As Matrix3x2, value2 As Matrix3x2) As Matrix3x2
+    parameters:
+    - id: value1
+      type: System.Numerics.Matrix3x2
+      description: The first matrix.
+    - id: value2
+      type: System.Numerics.Matrix3x2
+      description: The second matrix.
+    return:
+      type: System.Numerics.Matrix3x2
+      description: The matrix containing the values that result from subtracting each element in *value2* from its corresponding element in *value1*.
+- uid: System.Numerics.Matrix3x2.op_Multiply(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2)
+  id: op_Multiply(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2)
+  parent: System.Numerics.Matrix3x2
+  href: System.Numerics.Matrix3x2.yml
+  name: Multiply(Matrix3x2, Matrix3x2)
+  fullName: System.Numerics.Matrix3x2.Multiply(System.Numerics.Matrix3x2, System.Numerics.Matrix3x2)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
+    startLine: 690
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns the matrix that results from multiplying two matrices together.
+  syntax:
+    content: public static Matrix3x2 operator *(Matrix3x2 value1, Matrix3x2 value2)
+    content.vb: Public Shared Operator *(value1 As Matrix3x2, value2 As Matrix3x2) As Matrix3x2
+    parameters:
+    - id: value1
+      type: System.Numerics.Matrix3x2
+      description: The first matrix.
+    - id: value2
+      type: System.Numerics.Matrix3x2
+      description: The second matrix.
+    return:
+      type: System.Numerics.Matrix3x2
+      description: The product matrix.
+- uid: System.Numerics.Matrix3x2.op_Multiply(System.Numerics.Matrix3x2,System.Single)
+  id: op_Multiply(System.Numerics.Matrix3x2,System.Single)
+  parent: System.Numerics.Matrix3x2
+  href: System.Numerics.Matrix3x2.yml
+  name: Multiply(Matrix3x2, Single)
+  fullName: System.Numerics.Matrix3x2.Multiply(System.Numerics.Matrix3x2, System.Single)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
+    startLine: 715
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns the matrix that results from scaling all the elements of a specified matrix by a scalar factor.
+  syntax:
+    content: public static Matrix3x2 operator *(Matrix3x2 value1, float value2)
+    content.vb: Public Shared Operator *(value1 As Matrix3x2, value2 As Single) As Matrix3x2
+    parameters:
+    - id: value1
+      type: System.Numerics.Matrix3x2
+      description: The matrix to scale.
+    - id: value2
+      type: System.Single
+      description: The scaling value to use.
+    return:
+      type: System.Numerics.Matrix3x2
+      description: The scaled matrix.
+- uid: System.Numerics.Matrix3x2.op_Equality(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2)
+  id: op_Equality(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2)
+  parent: System.Numerics.Matrix3x2
+  href: System.Numerics.Matrix3x2.yml
+  name: Equality(Matrix3x2, Matrix3x2)
+  fullName: System.Numerics.Matrix3x2.Equality(System.Numerics.Matrix3x2, System.Numerics.Matrix3x2)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
+    startLine: 735
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a value that indicates whether the specified matrices are equal.
+  syntax:
+    content: public static bool operator ==(Matrix3x2 value1, Matrix3x2 value2)
+    content.vb: Public Shared Operator =(value1 As Matrix3x2, value2 As Matrix3x2) As Boolean
+    parameters:
+    - id: value1
+      type: System.Numerics.Matrix3x2
+      description: The first matrix to compare.
+    - id: value2
+      type: System.Numerics.Matrix3x2
+      description: The second matrix to compare.
+    return:
+      type: System.Boolean
+      description: true if *value1* and *value2* are equal; otherwise, false.
+- uid: System.Numerics.Matrix3x2.op_Inequality(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2)
+  id: op_Inequality(System.Numerics.Matrix3x2,System.Numerics.Matrix3x2)
+  parent: System.Numerics.Matrix3x2
+  href: System.Numerics.Matrix3x2.yml
+  name: Inequality(Matrix3x2, Matrix3x2)
+  fullName: System.Numerics.Matrix3x2.Inequality(System.Numerics.Matrix3x2, System.Numerics.Matrix3x2)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
+    startLine: 749
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a value that indicates whether the specified matrices are not equal.
+  syntax:
+    content: public static bool operator !=(Matrix3x2 value1, Matrix3x2 value2)
+    content.vb: Public Shared Operator <>(value1 As Matrix3x2, value2 As Matrix3x2) As Boolean
+    parameters:
+    - id: value1
+      type: System.Numerics.Matrix3x2
+      description: The first matrix to compare.
+    - id: value2
+      type: System.Numerics.Matrix3x2
+      description: The second matrix to compare.
+    return:
+      type: System.Boolean
+      description: true if *value1* and *value2* are not equal; otherwise, false.
+- uid: System.Numerics.Matrix3x2.Equals(System.Numerics.Matrix3x2)
+  id: Equals(System.Numerics.Matrix3x2)
+  parent: System.Numerics.Matrix3x2
+  href: System.Numerics.Matrix3x2.yml
+  name: Equals(Matrix3x2)
+  fullName: System.Numerics.Matrix3x2.Equals(System.Numerics.Matrix3x2)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
+    startLine: 761
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a value that indicates whether this instance and another 3x2 matrix are equal.
+  syntax:
+    content: public bool Equals(Matrix3x2 other)
+    content.vb: Public Function Equals(other As Matrix3x2) As Boolean
+    parameters:
+    - id: other
+      type: System.Numerics.Matrix3x2
+      description: The other matrix.
+    return:
+      type: System.Boolean
+      description: true if the two matrices are equal; otherwise, false.
+- uid: System.Numerics.Matrix3x2.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Numerics.Matrix3x2
+  href: System.Numerics.Matrix3x2.yml
+  name: Equals(Object)
+  fullName: System.Numerics.Matrix3x2.Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
+    startLine: 774
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a value that indicates whether this instance and a specified object are equal.
+  syntax:
+    content: public override bool Equals(object obj)
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current instance.
+    return:
+      type: System.Boolean
+      description: true if the current instance and *obj* are equal; otherwise, false. If *obj* is null, the method returns false.
+  overridden: System.ValueType.Equals(System.Object)
+- uid: System.Numerics.Matrix3x2.ToString
+  id: ToString
+  parent: System.Numerics.Matrix3x2
+  href: System.Numerics.Matrix3x2.yml
+  name: ToString()
+  fullName: System.Numerics.Matrix3x2.ToString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
+    startLine: 788
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns a string that represents this matrix.
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+      description: The string representation of this matrix.
+  overridden: System.ValueType.ToString
+- uid: System.Numerics.Matrix3x2.GetHashCode
+  id: GetHashCode
+  parent: System.Numerics.Matrix3x2
+  href: System.Numerics.Matrix3x2.yml
+  name: GetHashCode()
+  fullName: System.Numerics.Matrix3x2.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
+    startLine: 801
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: Returns the hash code for this instance.
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: The hash code.
+  overridden: System.ValueType.GetHashCode
+references:
+- uid: System.Numerics
+  isExternal: false
+  name: System.Numerics
+  fullName: System.Numerics
+  type: Namespace
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Numerics.Matrix3x2
+  parent: System.Numerics
+  isExternal: false
+  href: System.Numerics.Matrix3x2.yml
+  name: Matrix3x2
+  fullName: System.Numerics.Matrix3x2
+  type: Struct
+  summary: A structure encapsulating a 3x2 matrix.
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Numerics.Vector2
+  parent: System.Numerics
+  isExternal: false
+  href: System.Numerics.Vector2.yml
+  name: Vector2
+  fullName: System.Numerics.Vector2
+  type: Struct
+  summary: A structure encapsulating two single precision floating point values and provides hardware accelerated methods.
+- uid: System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  fullName: System.Single
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32

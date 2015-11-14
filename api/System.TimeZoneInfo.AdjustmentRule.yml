@@ -1,0 +1,496 @@
+items:
+- uid: System.TimeZoneInfo.AdjustmentRule
+  id: TimeZoneInfo.AdjustmentRule
+  parent: System
+  children:
+  - System.TimeZoneInfo.AdjustmentRule.CreateAdjustmentRule(System.DateTime,System.DateTime,System.TimeSpan,System.TimeZoneInfo.TransitionTime,System.TimeZoneInfo.TransitionTime)
+  - System.TimeZoneInfo.AdjustmentRule.DateEnd
+  - System.TimeZoneInfo.AdjustmentRule.DateStart
+  - System.TimeZoneInfo.AdjustmentRule.DaylightDelta
+  - System.TimeZoneInfo.AdjustmentRule.DaylightTransitionEnd
+  - System.TimeZoneInfo.AdjustmentRule.DaylightTransitionStart
+  - System.TimeZoneInfo.AdjustmentRule.Equals(System.TimeZoneInfo.AdjustmentRule)
+  - System.TimeZoneInfo.AdjustmentRule.GetHashCode
+  href: System.TimeZoneInfo.AdjustmentRule.yml
+  name: TimeZoneInfo.AdjustmentRule
+  fullName: System.TimeZoneInfo.AdjustmentRule
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/TimeZoneInfo.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 4395
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Provides information about a time zone adjustment, such as the transition to and from daylight saving time.
+  syntax:
+    content: 'public sealed class AdjustmentRule : IEquatable<TimeZoneInfo.AdjustmentRule>, ISerializable, IDeserializationCallback'
+    content.vb: Public NotInheritable Class AdjustmentRule Implements IEquatable(Of TimeZoneInfo.AdjustmentRule), ISerializable, IDeserializationCallback
+  inheritance:
+  - System.Object
+  implements:
+  - System.IEquatable{System.TimeZoneInfo.AdjustmentRule}
+  - System.Runtime.Serialization.ISerializable
+  - System.Runtime.Serialization.IDeserializationCallback
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.TimeZoneInfo.AdjustmentRule.DateStart
+  id: DateStart
+  parent: System.TimeZoneInfo.AdjustmentRule
+  href: System.TimeZoneInfo.AdjustmentRule.yml
+  name: DateStart
+  fullName: System.TimeZoneInfo.AdjustmentRule.DateStart
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 4410
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the date when the adjustment rule takes effect.
+  syntax:
+    content: public DateTime DateStart { get; }
+    content.vb: Public ReadOnly Property DateStart As Date
+    parameters: []
+    return:
+      type: System.DateTime
+      description: A @'System.DateTime' value that indicates when the adjustment rule takes effect.
+- uid: System.TimeZoneInfo.AdjustmentRule.DateEnd
+  id: DateEnd
+  parent: System.TimeZoneInfo.AdjustmentRule
+  href: System.TimeZoneInfo.AdjustmentRule.yml
+  name: DateEnd
+  fullName: System.TimeZoneInfo.AdjustmentRule.DateEnd
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 4416
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the date when the adjustment rule ceases to be in effect.
+  syntax:
+    content: public DateTime DateEnd { get; }
+    content.vb: Public ReadOnly Property DateEnd As Date
+    parameters: []
+    return:
+      type: System.DateTime
+      description: A @'System.DateTime' value that indicates the end date of the adjustment rule.
+- uid: System.TimeZoneInfo.AdjustmentRule.DaylightDelta
+  id: DaylightDelta
+  parent: System.TimeZoneInfo.AdjustmentRule
+  href: System.TimeZoneInfo.AdjustmentRule.yml
+  name: DaylightDelta
+  fullName: System.TimeZoneInfo.AdjustmentRule.DaylightDelta
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 4422
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the amount of time that is required to form the time zone's daylight saving time. This amount of time is added to the time zone's offset from Coordinated Universal Time (UTC).
+  syntax:
+    content: public TimeSpan DaylightDelta { get; }
+    content.vb: Public ReadOnly Property DaylightDelta As TimeSpan
+    parameters: []
+    return:
+      type: System.TimeSpan
+      description: A @'System.TimeSpan' object that indicates the amount of time to add to the standard time changes as a result of the adjustment rule.
+- uid: System.TimeZoneInfo.AdjustmentRule.DaylightTransitionStart
+  id: DaylightTransitionStart
+  parent: System.TimeZoneInfo.AdjustmentRule
+  href: System.TimeZoneInfo.AdjustmentRule.yml
+  name: DaylightTransitionStart
+  fullName: System.TimeZoneInfo.AdjustmentRule.DaylightTransitionStart
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 4429
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets information about the annual transition from standard time to daylight saving time.
+  syntax:
+    content: public TimeZoneInfo.TransitionTime DaylightTransitionStart { get; }
+    content.vb: Public ReadOnly Property DaylightTransitionStart As TimeZoneInfo.TransitionTime
+    parameters: []
+    return:
+      type: System.TimeZoneInfo.TransitionTime
+      description: A @'System.TimeZoneInfo.TransitionTime' object that defines the annual transition from a time zone's standard time to daylight saving time.
+- uid: System.TimeZoneInfo.AdjustmentRule.DaylightTransitionEnd
+  id: DaylightTransitionEnd
+  parent: System.TimeZoneInfo.AdjustmentRule
+  href: System.TimeZoneInfo.AdjustmentRule.yml
+  name: DaylightTransitionEnd
+  fullName: System.TimeZoneInfo.AdjustmentRule.DaylightTransitionEnd
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 4436
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets information about the annual transition from daylight saving time back to standard time.
+  syntax:
+    content: public TimeZoneInfo.TransitionTime DaylightTransitionEnd { get; }
+    content.vb: Public ReadOnly Property DaylightTransitionEnd As TimeZoneInfo.TransitionTime
+    parameters: []
+    return:
+      type: System.TimeZoneInfo.TransitionTime
+      description: A @'System.TimeZoneInfo.TransitionTime' object that defines the annual transition from daylight saving time back to the time zone's standard time.
+- uid: System.TimeZoneInfo.AdjustmentRule.Equals(System.TimeZoneInfo.AdjustmentRule)
+  id: Equals(System.TimeZoneInfo.AdjustmentRule)
+  parent: System.TimeZoneInfo.AdjustmentRule
+  href: System.TimeZoneInfo.AdjustmentRule.yml
+  name: Equals(TimeZoneInfo.AdjustmentRule)
+  fullName: System.TimeZoneInfo.AdjustmentRule.Equals(System.TimeZoneInfo.AdjustmentRule)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 4473
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Determines whether the current @'System.TimeZoneInfo.AdjustmentRule' object is equal to a second @'System.TimeZoneInfo.AdjustmentRule' object.
+  syntax:
+    content: public bool Equals(TimeZoneInfo.AdjustmentRule other)
+    content.vb: Public Function Equals(other As TimeZoneInfo.AdjustmentRule) As Boolean
+    parameters:
+    - id: other
+      type: System.TimeZoneInfo.AdjustmentRule
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: true if both @'System.TimeZoneInfo.AdjustmentRule' objects have equal values; otherwise, false.
+- uid: System.TimeZoneInfo.AdjustmentRule.GetHashCode
+  id: GetHashCode
+  parent: System.TimeZoneInfo.AdjustmentRule
+  href: System.TimeZoneInfo.AdjustmentRule.yml
+  name: GetHashCode()
+  fullName: System.TimeZoneInfo.AdjustmentRule.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 4487
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Serves as a hash function for hashing algorithms and data structures such as hash tables.
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: A 32-bit signed integer that serves as the hash code for the current @'System.TimeZoneInfo.AdjustmentRule' object.
+  overridden: System.Object.GetHashCode
+- uid: System.TimeZoneInfo.AdjustmentRule.CreateAdjustmentRule(System.DateTime,System.DateTime,System.TimeSpan,System.TimeZoneInfo.TransitionTime,System.TimeZoneInfo.TransitionTime)
+  id: CreateAdjustmentRule(System.DateTime,System.DateTime,System.TimeSpan,System.TimeZoneInfo.TransitionTime,System.TimeZoneInfo.TransitionTime)
+  parent: System.TimeZoneInfo.AdjustmentRule
+  href: System.TimeZoneInfo.AdjustmentRule.yml
+  name: CreateAdjustmentRule(DateTime, DateTime, TimeSpan, TimeZoneInfo.TransitionTime, TimeZoneInfo.TransitionTime)
+  fullName: System.TimeZoneInfo.AdjustmentRule.CreateAdjustmentRule(System.DateTime, System.DateTime, System.TimeSpan, System.TimeZoneInfo.TransitionTime, System.TimeZoneInfo.TransitionTime)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 4523
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Creates a new adjustment rule for a particular time zone.
+  syntax:
+    content: public static TimeZoneInfo.AdjustmentRule CreateAdjustmentRule(DateTime dateStart, DateTime dateEnd, TimeSpan daylightDelta, TimeZoneInfo.TransitionTime daylightTransitionStart, TimeZoneInfo.TransitionTime daylightTransitionEnd)
+    content.vb: Public Shared Function CreateAdjustmentRule(dateStart As Date, dateEnd As Date, daylightDelta As TimeSpan, daylightTransitionStart As TimeZoneInfo.TransitionTime, daylightTransitionEnd As TimeZoneInfo.TransitionTime) As TimeZoneInfo.AdjustmentRule
+    parameters:
+    - id: dateStart
+      type: System.DateTime
+      description: The effective date of the adjustment rule. If the value of the *dateStart* parameter is DateTime.MinValue.Date, this is the first adjustment rule in effect for a time zone.
+    - id: dateEnd
+      type: System.DateTime
+      description: The last date that the adjustment rule is in force. If the value of the *dateEnd* parameter is DateTime.MaxValue.Date, the adjustment rule has no end date.
+    - id: daylightDelta
+      type: System.TimeSpan
+      description: The time change that results from the adjustment. This value is added to the time zone's @'System.TimeZoneInfo.BaseUtcOffset' property to obtain the correct daylight offset from Coordinated Universal Time (UTC). This value can range from -14 to 14.
+    - id: daylightTransitionStart
+      type: System.TimeZoneInfo.TransitionTime
+      description: An object that defines the start of daylight saving time.
+    - id: daylightTransitionEnd
+      type: System.TimeZoneInfo.TransitionTime
+      description: An object that defines the end of daylight saving time.
+    return:
+      type: System.TimeZoneInfo.AdjustmentRule
+      description: An object that represents the new adjustment rule.
+  exceptions:
+  - type: System.ArgumentException
+    description: The @'System.DateTime.Kind' property of the *dateStart* or *dateEnd* parameter does not equal @'System.DateTimeKind.Unspecified'.-or-The *daylightTransitionStart* parameter is equal to the *daylightTransitionEnd* parameter.-or-The *dateStart* or *dateEnd* parameter includes a time of day value.
+  - type: System.ArgumentOutOfRangeException
+    description: '*dateEnd* is earlier than *dateStart*.-or-*daylightDelta* is less than -14 or greater than 14.-or-The @''System.TimeSpan.Milliseconds'' property of the *daylightDelta* parameter is not equal to 0.-or-The @''System.TimeSpan.Ticks'' property of the *daylightDelta* parameter does not equal a whole number of seconds.'
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  fullName: System.DateTime
+- uid: System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  fullName: System.TimeSpan
+- uid: System.TimeZoneInfo.TransitionTime
+  parent: System
+  isExternal: false
+  href: System.TimeZoneInfo.TransitionTime.yml
+  name: TimeZoneInfo.TransitionTime
+  fullName: System.TimeZoneInfo.TransitionTime
+  type: Struct
+- uid: System.TimeZoneInfo.AdjustmentRule
+  parent: System
+  isExternal: false
+  href: System.TimeZoneInfo.AdjustmentRule.yml
+  name: TimeZoneInfo.AdjustmentRule
+  fullName: System.TimeZoneInfo.AdjustmentRule
+  type: Class
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32

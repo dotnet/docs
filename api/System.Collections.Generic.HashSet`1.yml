@@ -1,0 +1,1391 @@
+items:
+- uid: System.Collections.Generic.HashSet`1
+  id: HashSet`1
+  parent: System.Collections.Generic
+  children:
+  - System.Collections.Generic.HashSet`1.#ctor
+  - System.Collections.Generic.HashSet`1.#ctor(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Generic.HashSet`1.#ctor(System.Collections.Generic.IEnumerable{`0},System.Collections.Generic.IEqualityComparer{`0})
+  - System.Collections.Generic.HashSet`1.#ctor(System.Collections.Generic.IEqualityComparer{`0})
+  - System.Collections.Generic.HashSet`1.Add(`0)
+  - System.Collections.Generic.HashSet`1.Clear
+  - System.Collections.Generic.HashSet`1.Comparer
+  - System.Collections.Generic.HashSet`1.Contains(`0)
+  - System.Collections.Generic.HashSet`1.CopyTo(`0[])
+  - System.Collections.Generic.HashSet`1.CopyTo(`0[],System.Int32)
+  - System.Collections.Generic.HashSet`1.CopyTo(`0[],System.Int32,System.Int32)
+  - System.Collections.Generic.HashSet`1.Count
+  - System.Collections.Generic.HashSet`1.ExceptWith(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Generic.HashSet`1.GetEnumerator
+  - System.Collections.Generic.HashSet`1.IntersectWith(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Generic.HashSet`1.IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Generic.HashSet`1.IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Generic.HashSet`1.IsSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Generic.HashSet`1.IsSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Generic.HashSet`1.Overlaps(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Generic.HashSet`1.Remove(`0)
+  - System.Collections.Generic.HashSet`1.RemoveWhere(System.Predicate{`0})
+  - System.Collections.Generic.HashSet`1.SetEquals(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Generic.HashSet`1.SymmetricExceptWith(System.Collections.Generic.IEnumerable{`0})
+  - System.Collections.Generic.HashSet`1.System#Collections#Generic#ICollection{T}#Add(`0)
+  - System.Collections.Generic.HashSet`1.System#Collections#Generic#ICollection{T}#IsReadOnly
+  - System.Collections.Generic.HashSet`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator
+  - System.Collections.Generic.HashSet`1.System#Collections#IEnumerable#GetEnumerator
+  - System.Collections.Generic.HashSet`1.TrimExcess
+  - System.Collections.Generic.HashSet`1.UnionWith(System.Collections.Generic.IEnumerable{`0})
+  href: System.Collections.Generic.HashSet`1.yml
+  name: HashSet<T>
+  name.vb: HashSet(Of T)
+  fullName: System.Collections.Generic.HashSet<T>
+  fullName.vb: System.Collections.Generic.HashSet(Of T)
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Collections/src/System/Collections/Generic/HashSet.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Collections/src/System/Collections/Generic/HashSet.cs
+    startLine: 50
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Represents a set of values.To browse the .NET Framework source code for this type, see the Reference Source.
+  syntax:
+    content: 'public class HashSet<T> : ISet<T>, ICollection<T>, IReadOnlyCollection<T>, IEnumerable<T>, IEnumerable'
+    content.vb: Public Class HashSet(Of T) Implements ISet(Of T), ICollection(Of T), IReadOnlyCollection(Of T), IEnumerable(Of T), IEnumerable
+    typeParameters:
+    - id: T
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.Generic.ISet{{T}}
+  - System.Collections.Generic.ICollection{{T}}
+  - System.Collections.Generic.IReadOnlyCollection{{T}}
+  - System.Collections.Generic.IEnumerable{{T}}
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Collections.Generic.HashSet`1.#ctor
+  id: '#ctor'
+  parent: System.Collections.Generic.HashSet`1
+  href: System.Collections.Generic.HashSet`1.yml
+  name: HashSet()
+  fullName: System.Collections.Generic.HashSet<T>.HashSet()
+  fullName.vb: System.Collections.Generic.HashSet(Of T).HashSet()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/HashSet.cs
+    startLine: 76
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Initializes a new instance of the @'System.Collections.Generic.HashSet`1' class that is empty and uses the default equality comparer for the set type.
+  syntax:
+    content: public HashSet()
+    content.vb: Public Sub New
+- uid: System.Collections.Generic.HashSet`1.#ctor(System.Collections.Generic.IEqualityComparer{`0})
+  id: '#ctor(System.Collections.Generic.IEqualityComparer{`0})'
+  parent: System.Collections.Generic.HashSet`1
+  href: System.Collections.Generic.HashSet`1.yml
+  name: HashSet(IEqualityComparer<T>)
+  name.vb: HashSet(IEqualityComparer(Of T))
+  fullName: System.Collections.Generic.HashSet<T>.HashSet(System.Collections.Generic.IEqualityComparer<T>)
+  fullName.vb: System.Collections.Generic.HashSet(Of T).HashSet(System.Collections.Generic.IEqualityComparer(Of T))
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/HashSet.cs
+    startLine: 80
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Initializes a new instance of the @'System.Collections.Generic.HashSet`1' class that is empty and uses the specified equality comparer for the set type.
+  syntax:
+    content: public HashSet(IEqualityComparer<T> comparer)
+    content.vb: Public Sub New(comparer As IEqualityComparer(Of T))
+    parameters:
+    - id: comparer
+      type: System.Collections.Generic.IEqualityComparer{{T}}
+      description: The @'System.Collections.Generic.IEqualityComparer`1' implementation to use when comparing values in the set, or null to use the default @'System.Collections.Generic.EqualityComparer`1' implementation for the set type.
+- uid: System.Collections.Generic.HashSet`1.#ctor(System.Collections.Generic.IEnumerable{`0})
+  id: '#ctor(System.Collections.Generic.IEnumerable{`0})'
+  parent: System.Collections.Generic.HashSet`1
+  href: System.Collections.Generic.HashSet`1.yml
+  name: HashSet(IEnumerable<T>)
+  name.vb: HashSet(IEnumerable(Of T))
+  fullName: System.Collections.Generic.HashSet<T>.HashSet(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Generic.HashSet(Of T).HashSet(System.Collections.Generic.IEnumerable(Of T))
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/HashSet.cs
+    startLine: 94
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Initializes a new instance of the @'System.Collections.Generic.HashSet`1' class that uses the default equality comparer for the set type, contains elements copied from the specified collection, and has sufficient capacity to accommodate the number of elements copied.
+  syntax:
+    content: public HashSet(IEnumerable<T> collection)
+    content.vb: Public Sub New(collection As IEnumerable(Of T))
+    parameters:
+    - id: collection
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection whose elements are copied to the new set.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*collection* is null.'
+- uid: System.Collections.Generic.HashSet`1.#ctor(System.Collections.Generic.IEnumerable{`0},System.Collections.Generic.IEqualityComparer{`0})
+  id: '#ctor(System.Collections.Generic.IEnumerable{`0},System.Collections.Generic.IEqualityComparer{`0})'
+  parent: System.Collections.Generic.HashSet`1
+  href: System.Collections.Generic.HashSet`1.yml
+  name: HashSet(IEnumerable<T>, IEqualityComparer<T>)
+  name.vb: HashSet(IEnumerable(Of T), IEqualityComparer(Of T))
+  fullName: System.Collections.Generic.HashSet<T>.HashSet(System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IEqualityComparer<T>)
+  fullName.vb: System.Collections.Generic.HashSet(Of T).HashSet(System.Collections.Generic.IEnumerable(Of T), System.Collections.Generic.IEqualityComparer(Of T))
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/HashSet.cs
+    startLine: 105
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Initializes a new instance of the @'System.Collections.Generic.HashSet`1' class that uses the specified equality comparer for the set type, contains elements copied from the specified collection, and has sufficient capacity to accommodate the number of elements copied.
+  syntax:
+    content: public HashSet(IEnumerable<T> collection, IEqualityComparer<T> comparer)
+    content.vb: Public Sub New(collection As IEnumerable(Of T), comparer As IEqualityComparer(Of T))
+    parameters:
+    - id: collection
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection whose elements are copied to the new set.
+    - id: comparer
+      type: System.Collections.Generic.IEqualityComparer{{T}}
+      description: The @'System.Collections.Generic.IEqualityComparer`1' implementation to use when comparing values in the set, or null to use the default @'System.Collections.Generic.EqualityComparer`1' implementation for the set type.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*collection* is null.'
+- uid: System.Collections.Generic.HashSet`1.System#Collections#Generic#ICollection{T}#Add(`0)
+  id: System#Collections#Generic#ICollection{T}#Add(`0)
+  parent: System.Collections.Generic.HashSet`1
+  href: System.Collections.Generic.HashSet`1.yml
+  name: ICollection<T>.Add(T)
+  name.vb: System.Collections.Generic.ICollection<T>.Add(T)
+  fullName: System.Collections.Generic.HashSet<T>.System.Collections.Generic.ICollection<T>.Add(T)
+  fullName.vb: System.Collections.Generic.HashSet(Of T).System.Collections.Generic.ICollection<T>.Add(T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/HashSet.cs
+    startLine: 142
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Adds an item to an @'System.Collections.Generic.ICollection`1' object.
+  syntax:
+    content: void ICollection<T>.Add(T item)
+    content.vb: Sub System.Collections.Generic.ICollection<T>.Add(item As T) Implements ICollection(Of T).Add
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The object to add to the @'System.Collections.Generic.ICollection`1' object.
+  exceptions:
+  - type: System.NotSupportedException
+    description: The @'System.Collections.Generic.ICollection`1' is read-only.
+- uid: System.Collections.Generic.HashSet`1.Clear
+  id: Clear
+  parent: System.Collections.Generic.HashSet`1
+  href: System.Collections.Generic.HashSet`1.yml
+  name: Clear()
+  fullName: System.Collections.Generic.HashSet<T>.Clear()
+  fullName.vb: System.Collections.Generic.HashSet(Of T).Clear()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/HashSet.cs
+    startLine: 151
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Removes all elements from a @'System.Collections.Generic.HashSet`1' object.
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear
+- uid: System.Collections.Generic.HashSet`1.Contains(`0)
+  id: Contains(`0)
+  parent: System.Collections.Generic.HashSet`1
+  href: System.Collections.Generic.HashSet`1.yml
+  name: Contains(T)
+  fullName: System.Collections.Generic.HashSet<T>.Contains(T)
+  fullName.vb: System.Collections.Generic.HashSet(Of T).Contains(T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/HashSet.cs
+    startLine: 173
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Determines whether a @'System.Collections.Generic.HashSet`1' object contains the specified element.
+  syntax:
+    content: public bool Contains(T item)
+    content.vb: Public Function Contains(item As T) As Boolean
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The element to locate in the @'System.Collections.Generic.HashSet`1' object.
+    return:
+      type: System.Boolean
+      description: true if the @'System.Collections.Generic.HashSet`1' object contains the specified element; otherwise, false.
+- uid: System.Collections.Generic.HashSet`1.CopyTo(`0[],System.Int32)
+  id: CopyTo(`0[],System.Int32)
+  parent: System.Collections.Generic.HashSet`1
+  href: System.Collections.Generic.HashSet`1.yml
+  name: CopyTo(T[], Int32)
+  name.vb: CopyTo(T(), Int32)
+  fullName: System.Collections.Generic.HashSet<T>.CopyTo(T[], System.Int32)
+  fullName.vb: System.Collections.Generic.HashSet(Of T).CopyTo(T(), System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/HashSet.cs
+    startLine: 196
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Copies the elements of a @'System.Collections.Generic.HashSet`1' object to an array, starting at the specified array index.
+  syntax:
+    content: public void CopyTo(T[] array, int arrayIndex)
+    content.vb: Public Sub CopyTo(array As T(), arrayIndex As Integer)
+    parameters:
+    - id: array
+      type: '{T}[]'
+      description: The one-dimensional array that is the destination of the elements copied from the @'System.Collections.Generic.HashSet`1' object. The array must have zero-based indexing.
+    - id: arrayIndex
+      type: System.Int32
+      description: The zero-based index in *array* at which copying begins.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*arrayIndex* is less than 0.'
+  - type: System.ArgumentException
+    description: '*arrayIndex* is greater than the length of the destination *array*.'
+- uid: System.Collections.Generic.HashSet`1.Remove(`0)
+  id: Remove(`0)
+  parent: System.Collections.Generic.HashSet`1
+  href: System.Collections.Generic.HashSet`1.yml
+  name: Remove(T)
+  fullName: System.Collections.Generic.HashSet<T>.Remove(T)
+  fullName.vb: System.Collections.Generic.HashSet(Of T).Remove(T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/HashSet.cs
+    startLine: 206
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Removes the specified element from a @'System.Collections.Generic.HashSet`1' object.
+  syntax:
+    content: public bool Remove(T item)
+    content.vb: Public Function Remove(item As T) As Boolean
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The element to remove.
+    return:
+      type: System.Boolean
+      description: true if the element is successfully found and removed; otherwise, false.  This method returns false if *item* is not found in the @'System.Collections.Generic.HashSet`1' object.
+- uid: System.Collections.Generic.HashSet`1.Count
+  id: Count
+  parent: System.Collections.Generic.HashSet`1
+  href: System.Collections.Generic.HashSet`1.yml
+  name: Count
+  fullName: System.Collections.Generic.HashSet<T>.Count
+  fullName.vb: System.Collections.Generic.HashSet(Of T).Count
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/HashSet.cs
+    startLine: 253
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Gets the number of elements that are contained in a set.
+  syntax:
+    content: public int Count { get; }
+    content.vb: Public ReadOnly Property Count As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: The number of elements that are contained in the set.
+- uid: System.Collections.Generic.HashSet`1.System#Collections#Generic#ICollection{T}#IsReadOnly
+  id: System#Collections#Generic#ICollection{T}#IsReadOnly
+  parent: System.Collections.Generic.HashSet`1
+  href: System.Collections.Generic.HashSet`1.yml
+  name: ICollection<T>.IsReadOnly
+  name.vb: System.Collections.Generic.ICollection<T>.IsReadOnly
+  fullName: System.Collections.Generic.HashSet<T>.System.Collections.Generic.ICollection<T>.IsReadOnly
+  fullName.vb: System.Collections.Generic.HashSet(Of T).System.Collections.Generic.ICollection<T>.IsReadOnly
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/HashSet.cs
+    startLine: 261
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Gets a value indicating whether a collection is read-only.
+  syntax:
+    content: bool ICollection<T>.IsReadOnly { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.Generic.ICollection<T>.IsReadOnly As Boolean Implements ICollection(Of T).IsReadOnly
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the collection is read-only; otherwise, false.
+- uid: System.Collections.Generic.HashSet`1.GetEnumerator
+  id: GetEnumerator
+  parent: System.Collections.Generic.HashSet`1
+  href: System.Collections.Generic.HashSet`1.yml
+  name: GetEnumerator()
+  fullName: System.Collections.Generic.HashSet<T>.GetEnumerator()
+  fullName.vb: System.Collections.Generic.HashSet(Of T).GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/HashSet.cs
+    startLine: 270
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Returns an enumerator that iterates through a @'System.Collections.Generic.HashSet`1' object.
+  syntax:
+    content: public HashSet<T>.Enumerator GetEnumerator()
+    content.vb: Public Function GetEnumerator As HashSet(Of T).Enumerator
+    return:
+      type: System.Collections.Generic.HashSet`1.Enumerator
+      description: A @'System.Collections.Generic.HashSet`1.Enumerator' object for the @'System.Collections.Generic.HashSet`1' object.
+- uid: System.Collections.Generic.HashSet`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator
+  id: System#Collections#Generic#IEnumerable{T}#GetEnumerator
+  parent: System.Collections.Generic.HashSet`1
+  href: System.Collections.Generic.HashSet`1.yml
+  name: IEnumerable<T>.GetEnumerator()
+  name.vb: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.HashSet<T>.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  fullName.vb: System.Collections.Generic.HashSet(Of T).System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/HashSet.cs
+    startLine: 275
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Returns an enumerator that iterates through a collection.
+  syntax:
+    content: IEnumerator<T> IEnumerable<T>.GetEnumerator()
+    content.vb: Function System.Collections.Generic.IEnumerable<T>.GetEnumerator As IEnumerator(Of T) Implements IEnumerable(Of T).GetEnumerator
+    return:
+      type: System.Collections.Generic.IEnumerator{{T}}
+      description: An @'System.Collections.Generic.IEnumerator`1' object that can be used to iterate through the collection.
+- uid: System.Collections.Generic.HashSet`1.System#Collections#IEnumerable#GetEnumerator
+  id: System#Collections#IEnumerable#GetEnumerator
+  parent: System.Collections.Generic.HashSet`1
+  href: System.Collections.Generic.HashSet`1.yml
+  name: IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: System.Collections.Generic.HashSet<T>.System.Collections.IEnumerable.GetEnumerator()
+  fullName.vb: System.Collections.Generic.HashSet(Of T).System.Collections.IEnumerable.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/HashSet.cs
+    startLine: 280
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Returns an enumerator that iterates through a collection.
+  syntax:
+    content: IEnumerator IEnumerable.GetEnumerator()
+    content.vb: Function System.Collections.IEnumerable.GetEnumerator As IEnumerator Implements IEnumerable.GetEnumerator
+    return:
+      type: System.Collections.IEnumerator
+      description: An @'System.Collections.IEnumerator' object that can be used to iterate through the collection.
+- uid: System.Collections.Generic.HashSet`1.Add(`0)
+  id: Add(`0)
+  parent: System.Collections.Generic.HashSet`1
+  href: System.Collections.Generic.HashSet`1.yml
+  name: Add(T)
+  fullName: System.Collections.Generic.HashSet<T>.Add(T)
+  fullName.vb: System.Collections.Generic.HashSet(Of T).Add(T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/HashSet.cs
+    startLine: 295
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Adds the specified element to a set.
+  syntax:
+    content: public bool Add(T item)
+    content.vb: Public Function Add(item As T) As Boolean
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The element to add to the set.
+    return:
+      type: System.Boolean
+      description: true if the element is added to the @'System.Collections.Generic.HashSet`1' object; false if the element is already present.
+- uid: System.Collections.Generic.HashSet`1.UnionWith(System.Collections.Generic.IEnumerable{`0})
+  id: UnionWith(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Generic.HashSet`1
+  href: System.Collections.Generic.HashSet`1.yml
+  name: UnionWith(IEnumerable<T>)
+  name.vb: UnionWith(IEnumerable(Of T))
+  fullName: System.Collections.Generic.HashSet<T>.UnionWith(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Generic.HashSet(Of T).UnionWith(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/HashSet.cs
+    startLine: 308
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Modifies the current @'System.Collections.Generic.HashSet`1' object to contain all elements that are present in itself, the specified collection, or both.
+  syntax:
+    content: public void UnionWith(IEnumerable<T> other)
+    content.vb: Public Sub UnionWith(other As IEnumerable(Of T))
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to compare to the current @'System.Collections.Generic.HashSet`1' object.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*other* is null.'
+- uid: System.Collections.Generic.HashSet`1.IntersectWith(System.Collections.Generic.IEnumerable{`0})
+  id: IntersectWith(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Generic.HashSet`1
+  href: System.Collections.Generic.HashSet`1.yml
+  name: IntersectWith(IEnumerable<T>)
+  name.vb: IntersectWith(IEnumerable(Of T))
+  fullName: System.Collections.Generic.HashSet<T>.IntersectWith(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Generic.HashSet(Of T).IntersectWith(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/HashSet.cs
+    startLine: 336
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Modifies the current @'System.Collections.Generic.HashSet`1' object to contain only elements that are present in that object and in the specified collection.
+  syntax:
+    content: public void IntersectWith(IEnumerable<T> other)
+    content.vb: Public Sub IntersectWith(other As IEnumerable(Of T))
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to compare to the current @'System.Collections.Generic.HashSet`1' object.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*other* is null.'
+- uid: System.Collections.Generic.HashSet`1.ExceptWith(System.Collections.Generic.IEnumerable{`0})
+  id: ExceptWith(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Generic.HashSet`1
+  href: System.Collections.Generic.HashSet`1.yml
+  name: ExceptWith(IEnumerable<T>)
+  name.vb: ExceptWith(IEnumerable(Of T))
+  fullName: System.Collections.Generic.HashSet<T>.ExceptWith(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Generic.HashSet(Of T).ExceptWith(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/HashSet.cs
+    startLine: 378
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Removes all elements in the specified collection from the current @'System.Collections.Generic.HashSet`1' object.
+  syntax:
+    content: public void ExceptWith(IEnumerable<T> other)
+    content.vb: Public Sub ExceptWith(other As IEnumerable(Of T))
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection of items to remove from the @'System.Collections.Generic.HashSet`1' object.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*other* is null.'
+- uid: System.Collections.Generic.HashSet`1.SymmetricExceptWith(System.Collections.Generic.IEnumerable{`0})
+  id: SymmetricExceptWith(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Generic.HashSet`1
+  href: System.Collections.Generic.HashSet`1.yml
+  name: SymmetricExceptWith(IEnumerable<T>)
+  name.vb: SymmetricExceptWith(IEnumerable(Of T))
+  fullName: System.Collections.Generic.HashSet<T>.SymmetricExceptWith(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Generic.HashSet(Of T).SymmetricExceptWith(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/HashSet.cs
+    startLine: 410
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Modifies the current @'System.Collections.Generic.HashSet`1' object to contain only elements that are present either in that object or in the specified collection, but not both.
+  syntax:
+    content: public void SymmetricExceptWith(IEnumerable<T> other)
+    content.vb: Public Sub SymmetricExceptWith(other As IEnumerable(Of T))
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to compare to the current @'System.Collections.Generic.HashSet`1' object.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*other* is null.'
+- uid: System.Collections.Generic.HashSet`1.IsSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  id: IsSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Generic.HashSet`1
+  href: System.Collections.Generic.HashSet`1.yml
+  name: IsSubsetOf(IEnumerable<T>)
+  name.vb: IsSubsetOf(IEnumerable(Of T))
+  fullName: System.Collections.Generic.HashSet<T>.IsSubsetOf(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Generic.HashSet(Of T).IsSubsetOf(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/HashSet.cs
+    startLine: 462
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Determines whether a @'System.Collections.Generic.HashSet`1' object is a subset of the specified collection.
+  syntax:
+    content: public bool IsSubsetOf(IEnumerable<T> other)
+    content.vb: Public Function IsSubsetOf(other As IEnumerable(Of T)) As Boolean
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to compare to the current @'System.Collections.Generic.HashSet`1' object.
+    return:
+      type: System.Boolean
+      description: true if the @'System.Collections.Generic.HashSet`1' object is a subset of *other*; otherwise, false.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*other* is null.'
+- uid: System.Collections.Generic.HashSet`1.IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  id: IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Generic.HashSet`1
+  href: System.Collections.Generic.HashSet`1.yml
+  name: IsProperSubsetOf(IEnumerable<T>)
+  name.vb: IsProperSubsetOf(IEnumerable(Of T))
+  fullName: System.Collections.Generic.HashSet<T>.IsProperSubsetOf(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Generic.HashSet(Of T).IsProperSubsetOf(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/HashSet.cs
+    startLine: 513
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Determines whether a @'System.Collections.Generic.HashSet`1' object is a proper subset of the specified collection.
+  syntax:
+    content: public bool IsProperSubsetOf(IEnumerable<T> other)
+    content.vb: Public Function IsProperSubsetOf(other As IEnumerable(Of T)) As Boolean
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to compare to the current @'System.Collections.Generic.HashSet`1' object.
+    return:
+      type: System.Boolean
+      description: true if the @'System.Collections.Generic.HashSet`1' object is a proper subset of *other*; otherwise, false.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*other* is null.'
+- uid: System.Collections.Generic.HashSet`1.IsSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  id: IsSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Generic.HashSet`1
+  href: System.Collections.Generic.HashSet`1.yml
+  name: IsSupersetOf(IEnumerable<T>)
+  name.vb: IsSupersetOf(IEnumerable(Of T))
+  fullName: System.Collections.Generic.HashSet<T>.IsSupersetOf(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Generic.HashSet(Of T).IsSupersetOf(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/HashSet.cs
+    startLine: 560
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Determines whether a @'System.Collections.Generic.HashSet`1' object is a superset of the specified collection.
+  syntax:
+    content: public bool IsSupersetOf(IEnumerable<T> other)
+    content.vb: Public Function IsSupersetOf(other As IEnumerable(Of T)) As Boolean
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to compare to the current @'System.Collections.Generic.HashSet`1' object.
+    return:
+      type: System.Boolean
+      description: true if the @'System.Collections.Generic.HashSet`1' object is a superset of *other*; otherwise, false.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*other* is null.'
+- uid: System.Collections.Generic.HashSet`1.IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  id: IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Generic.HashSet`1
+  href: System.Collections.Generic.HashSet`1.yml
+  name: IsProperSupersetOf(IEnumerable<T>)
+  name.vb: IsProperSupersetOf(IEnumerable(Of T))
+  fullName: System.Collections.Generic.HashSet<T>.IsProperSupersetOf(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Generic.HashSet(Of T).IsProperSupersetOf(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/HashSet.cs
+    startLine: 612
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Determines whether a @'System.Collections.Generic.HashSet`1' object is a proper superset of the specified collection.
+  syntax:
+    content: public bool IsProperSupersetOf(IEnumerable<T> other)
+    content.vb: Public Function IsProperSupersetOf(other As IEnumerable(Of T)) As Boolean
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to compare to the current @'System.Collections.Generic.HashSet`1' object.
+    return:
+      type: System.Boolean
+      description: true if the @'System.Collections.Generic.HashSet`1' object is a proper superset of *other*; otherwise, false.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*other* is null.'
+- uid: System.Collections.Generic.HashSet`1.Overlaps(System.Collections.Generic.IEnumerable{`0})
+  id: Overlaps(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Generic.HashSet`1
+  href: System.Collections.Generic.HashSet`1.yml
+  name: Overlaps(IEnumerable<T>)
+  name.vb: Overlaps(IEnumerable(Of T))
+  fullName: System.Collections.Generic.HashSet<T>.Overlaps(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Generic.HashSet(Of T).Overlaps(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/HashSet.cs
+    startLine: 657
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Determines whether the current @'System.Collections.Generic.HashSet`1' object and a specified collection share common elements.
+  syntax:
+    content: public bool Overlaps(IEnumerable<T> other)
+    content.vb: Public Function Overlaps(other As IEnumerable(Of T)) As Boolean
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to compare to the current @'System.Collections.Generic.HashSet`1' object.
+    return:
+      type: System.Boolean
+      description: true if the @'System.Collections.Generic.HashSet`1' object and *other* share at least one common element; otherwise, false.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*other* is null.'
+- uid: System.Collections.Generic.HashSet`1.SetEquals(System.Collections.Generic.IEnumerable{`0})
+  id: SetEquals(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Generic.HashSet`1
+  href: System.Collections.Generic.HashSet`1.yml
+  name: SetEquals(IEnumerable<T>)
+  name.vb: SetEquals(IEnumerable(Of T))
+  fullName: System.Collections.Generic.HashSet<T>.SetEquals(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: System.Collections.Generic.HashSet(Of T).SetEquals(System.Collections.Generic.IEnumerable(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/HashSet.cs
+    startLine: 686
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Determines whether a @'System.Collections.Generic.HashSet`1' object and the specified collection contain the same elements.
+  syntax:
+    content: public bool SetEquals(IEnumerable<T> other)
+    content.vb: Public Function SetEquals(other As IEnumerable(Of T)) As Boolean
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The collection to compare to the current @'System.Collections.Generic.HashSet`1' object.
+    return:
+      type: System.Boolean
+      description: true if the @'System.Collections.Generic.HashSet`1' object is equal to *other*; otherwise, false.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*other* is null.'
+- uid: System.Collections.Generic.HashSet`1.CopyTo(`0[])
+  id: CopyTo(`0[])
+  parent: System.Collections.Generic.HashSet`1
+  href: System.Collections.Generic.HashSet`1.yml
+  name: CopyTo(T[])
+  name.vb: CopyTo(T())
+  fullName: System.Collections.Generic.HashSet<T>.CopyTo(T[])
+  fullName.vb: System.Collections.Generic.HashSet(Of T).CopyTo(T())
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/HashSet.cs
+    startLine: 725
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Copies the elements of a @'System.Collections.Generic.HashSet`1' object to an array.
+  syntax:
+    content: public void CopyTo(T[] array)
+    content.vb: Public Sub CopyTo(array As T())
+    parameters:
+    - id: array
+      type: '{T}[]'
+      description: The one-dimensional array that is the destination of the elements copied from the @'System.Collections.Generic.HashSet`1' object. The array must have zero-based indexing.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+- uid: System.Collections.Generic.HashSet`1.CopyTo(`0[],System.Int32,System.Int32)
+  id: CopyTo(`0[],System.Int32,System.Int32)
+  parent: System.Collections.Generic.HashSet`1
+  href: System.Collections.Generic.HashSet`1.yml
+  name: CopyTo(T[], Int32, Int32)
+  name.vb: CopyTo(T(), Int32, Int32)
+  fullName: System.Collections.Generic.HashSet<T>.CopyTo(T[], System.Int32, System.Int32)
+  fullName.vb: System.Collections.Generic.HashSet(Of T).CopyTo(T(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/HashSet.cs
+    startLine: 727
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Copies the specified number of elements of a @'System.Collections.Generic.HashSet`1' object to an array, starting at the specified array index.
+  syntax:
+    content: public void CopyTo(T[] array, int arrayIndex, int count)
+    content.vb: Public Sub CopyTo(array As T(), arrayIndex As Integer, count As Integer)
+    parameters:
+    - id: array
+      type: '{T}[]'
+      description: The one-dimensional array that is the destination of the elements copied from the @'System.Collections.Generic.HashSet`1' object. The array must have zero-based indexing.
+    - id: arrayIndex
+      type: System.Int32
+      description: The zero-based index in *array* at which copying begins.
+    - id: count
+      type: System.Int32
+      description: The number of elements to copy to *array*.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*arrayIndex* is less than 0.-or-*count* is less than 0.'
+  - type: System.ArgumentException
+    description: '*arrayIndex* is greater than the length of the destination *array*.-or-*count* is greater than the available space from the *index* to the end of the destination *array*.'
+- uid: System.Collections.Generic.HashSet`1.RemoveWhere(System.Predicate{`0})
+  id: RemoveWhere(System.Predicate{`0})
+  parent: System.Collections.Generic.HashSet`1
+  href: System.Collections.Generic.HashSet`1.yml
+  name: RemoveWhere(Predicate<T>)
+  name.vb: RemoveWhere(Predicate(Of T))
+  fullName: System.Collections.Generic.HashSet<T>.RemoveWhere(System.Predicate<T>)
+  fullName.vb: System.Collections.Generic.HashSet(Of T).RemoveWhere(System.Predicate(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/HashSet.cs
+    startLine: 771
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Removes all elements that match the conditions defined by the specified predicate from a @'System.Collections.Generic.HashSet`1' collection.
+  syntax:
+    content: public int RemoveWhere(Predicate<T> match)
+    content.vb: Public Function RemoveWhere(match As Predicate(Of T)) As Integer
+    parameters:
+    - id: match
+      type: System.Predicate{{T}}
+      description: The @'System.Predicate`1' delegate that defines the conditions of the elements to remove.
+    return:
+      type: System.Int32
+      description: The number of elements that were removed from the @'System.Collections.Generic.HashSet`1' collection.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*match* is null.'
+- uid: System.Collections.Generic.HashSet`1.Comparer
+  id: Comparer
+  parent: System.Collections.Generic.HashSet`1
+  href: System.Collections.Generic.HashSet`1.yml
+  name: Comparer
+  fullName: System.Collections.Generic.HashSet<T>.Comparer
+  fullName.vb: System.Collections.Generic.HashSet(Of T).Comparer
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/HashSet.cs
+    startLine: 803
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Gets the @'System.Collections.Generic.IEqualityComparer`1' object that is used to determine equality for the values in the set.
+  syntax:
+    content: public IEqualityComparer<T> Comparer { get; }
+    content.vb: Public ReadOnly Property Comparer As IEqualityComparer(Of T)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEqualityComparer{{T}}
+      description: The @'System.Collections.Generic.IEqualityComparer`1' object that is used to determine equality for the values in the set.
+- uid: System.Collections.Generic.HashSet`1.TrimExcess
+  id: TrimExcess
+  parent: System.Collections.Generic.HashSet`1
+  href: System.Collections.Generic.HashSet`1.yml
+  name: TrimExcess()
+  fullName: System.Collections.Generic.HashSet<T>.TrimExcess()
+  fullName.vb: System.Collections.Generic.HashSet(Of T).TrimExcess()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Collections/src/System/Collections/Generic/HashSet.cs
+    startLine: 822
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: Sets the capacity of a @'System.Collections.Generic.HashSet`1' object to the actual number of elements it contains, rounded up to a nearby, implementation-specific value.
+  syntax:
+    content: public void TrimExcess()
+    content.vb: Public Sub TrimExcess
+references:
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Collections.Generic.IEqualityComparer{{T}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEqualityComparer`1
+  name: IEqualityComparer<T>
+  name.vb: IEqualityComparer(Of T)
+  fullName: System.Collections.Generic.IEqualityComparer<T>
+  fullName.vb: System.Collections.Generic.IEqualityComparer(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEqualityComparer`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEqualityComparer<T>
+  name.vb: IEqualityComparer(Of T)
+  fullName: System.Collections.Generic.IEqualityComparer<T>
+  fullName.vb: System.Collections.Generic.IEqualityComparer(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: '{T}'
+  isExternal: false
+  name: T
+  fullName: T
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: '{T}[]'
+  isExternal: false
+  name: T[]
+  name.vb: T()
+  fullName: T[]
+  fullName.vb: T()
+  spec.csharp:
+  - name: T
+    fullName: T
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - name: T
+    fullName: T
+  - name: ()
+    fullName: ()
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Collections.Generic.HashSet`1.Enumerator
+  parent: System.Collections.Generic
+  isExternal: false
+  href: System.Collections.Generic.HashSet`1.Enumerator.yml
+  name: HashSet.Enumerator<>
+  name.vb: HashSet.Enumerator(Of )
+  fullName: System.Collections.Generic.HashSet.Enumerator<>
+  fullName.vb: System.Collections.Generic.HashSet.Enumerator(Of )
+  type: Struct
+  spec.csharp:
+  - uid: System.Collections.Generic.HashSet`1.Enumerator
+    name: HashSet.Enumerator
+    fullName: System.Collections.Generic.HashSet.Enumerator
+    href: System.Collections.Generic.HashSet`1.Enumerator.yml
+  - name: <
+    fullName: <
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.HashSet`1.Enumerator
+    name: HashSet.Enumerator
+    fullName: System.Collections.Generic.HashSet.Enumerator
+    href: System.Collections.Generic.HashSet`1.Enumerator.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator{{T}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  name: IEnumerator<T>
+  name.vb: IEnumerator(Of T)
+  fullName: System.Collections.Generic.IEnumerator<T>
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerator<T>
+  name.vb: IEnumerator(Of T)
+  fullName: System.Collections.Generic.IEnumerator<T>
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  isExternal: false
+  name: System.Collections
+  fullName: System.Collections
+- uid: System.Predicate{{T}}
+  parent: System
+  definition: System.Predicate`1
+  name: Predicate<T>
+  name.vb: Predicate(Of T)
+  fullName: System.Predicate<T>
+  fullName.vb: System.Predicate(Of T)
+  spec.csharp:
+  - uid: System.Predicate`1
+    name: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Predicate`1
+    name: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Predicate`1
+  parent: System
+  isExternal: true
+  name: Predicate<T>
+  name.vb: Predicate(Of T)
+  fullName: System.Predicate<T>
+  fullName.vb: System.Predicate(Of T)
+  spec.csharp:
+  - uid: System.Predicate`1
+    name: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Predicate`1
+    name: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )

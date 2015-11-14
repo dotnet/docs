@@ -1,0 +1,94 @@
+items:
+- uid: System.Runtime.CompilerServices.IRuntimeVariables
+  id: IRuntimeVariables
+  parent: System.Runtime.CompilerServices
+  children:
+  - System.Runtime.CompilerServices.IRuntimeVariables.Count
+  - System.Runtime.CompilerServices.IRuntimeVariables.Item(System.Int32)
+  href: System.Runtime.CompilerServices.IRuntimeVariables.yml
+  name: IRuntimeVariables
+  fullName: System.Runtime.CompilerServices.IRuntimeVariables
+  type: Interface
+  source:
+    remote: &o0
+      path: src/System.Linq.Expressions/src/System/Runtime/CompilerServices/IRuntimeVariables.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Linq.Expressions/src/System/Runtime/CompilerServices/IRuntimeVariables.cs
+    startLine: 8
+  assemblies:
+  - System.Linq.Expressions
+  namespace: System.Runtime.CompilerServices
+  summary: Represents the values of run-time variables.
+  syntax:
+    content: public interface IRuntimeVariables
+    content.vb: Public Interface IRuntimeVariables
+- uid: System.Runtime.CompilerServices.IRuntimeVariables.Count
+  id: Count
+  parent: System.Runtime.CompilerServices.IRuntimeVariables
+  href: System.Runtime.CompilerServices.IRuntimeVariables.yml
+  name: Count
+  fullName: System.Runtime.CompilerServices.IRuntimeVariables.Count
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Linq.Expressions/src/System/Runtime/CompilerServices/IRuntimeVariables.cs
+    startLine: 13
+  assemblies:
+  - System.Linq.Expressions
+  namespace: System.Runtime.CompilerServices
+  summary: Gets a count of the run-time variables.
+  syntax:
+    content: int Count { get; }
+    content.vb: ReadOnly Property Count As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: The number of run-time variables.
+- uid: System.Runtime.CompilerServices.IRuntimeVariables.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: System.Runtime.CompilerServices.IRuntimeVariables
+  href: System.Runtime.CompilerServices.IRuntimeVariables.yml
+  name: Item[Int32]
+  name.vb: Item(Int32)
+  fullName: System.Runtime.CompilerServices.IRuntimeVariables.Item[System.Int32]
+  fullName.vb: System.Runtime.CompilerServices.IRuntimeVariables.Item(System.Int32)
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Linq.Expressions/src/System/Runtime/CompilerServices/IRuntimeVariables.cs
+    startLine: 20
+  assemblies:
+  - System.Linq.Expressions
+  namespace: System.Runtime.CompilerServices
+  summary: Gets the value of the run-time variable at the specified index.
+  syntax:
+    content: object this[int index] { get; set; }
+    content.vb: Property Item(index As Integer) As Object
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the run-time variable whose value is to be returned.
+    return:
+      type: System.Object
+      description: The value of the run-time variable.
+references:
+- uid: System.Runtime.CompilerServices
+  isExternal: false
+  name: System.Runtime.CompilerServices
+  fullName: System.Runtime.CompilerServices
+  type: Namespace
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object

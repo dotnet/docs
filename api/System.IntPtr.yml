@@ -1,0 +1,904 @@
+items:
+- uid: System.IntPtr
+  id: IntPtr
+  parent: System
+  children:
+  - System.IntPtr.#ctor(System.Int32)
+  - System.IntPtr.#ctor(System.Int64)
+  - System.IntPtr.#ctor(System.Void*)
+  - System.IntPtr.Add(System.IntPtr,System.Int32)
+  - System.IntPtr.Equals(System.Object)
+  - System.IntPtr.GetHashCode
+  - System.IntPtr.op_Addition(System.IntPtr,System.Int32)
+  - System.IntPtr.op_Equality(System.IntPtr,System.IntPtr)
+  - System.IntPtr.op_Explicit(System.Int32)~System.IntPtr
+  - System.IntPtr.op_Explicit(System.Int64)~System.IntPtr
+  - System.IntPtr.op_Explicit(System.IntPtr)~System.Int32
+  - System.IntPtr.op_Explicit(System.IntPtr)~System.Int64
+  - System.IntPtr.op_Explicit(System.IntPtr)~System.Void*
+  - System.IntPtr.op_Explicit(System.Void*)~System.IntPtr
+  - System.IntPtr.op_Inequality(System.IntPtr,System.IntPtr)
+  - System.IntPtr.op_Subtraction(System.IntPtr,System.Int32)
+  - System.IntPtr.Size
+  - System.IntPtr.Subtract(System.IntPtr,System.Int32)
+  - System.IntPtr.ToInt32
+  - System.IntPtr.ToInt64
+  - System.IntPtr.ToPointer
+  - System.IntPtr.ToString
+  - System.IntPtr.ToString(System.String)
+  - System.IntPtr.Zero
+  href: System.IntPtr.yml
+  name: IntPtr
+  fullName: System.IntPtr
+  type: Struct
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/IntPtr.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/IntPtr.cs
+    startLine: 23
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: A platform-specific type that is used to represent a pointer or a handle.
+  syntax:
+    content: 'public struct IntPtr : ISerializable'
+    content.vb: Public Structure IntPtr Implements ISerializable
+  implements:
+  - System.Runtime.Serialization.ISerializable
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.IntPtr.Zero
+  id: Zero
+  parent: System.IntPtr
+  href: System.IntPtr.yml
+  name: Zero
+  fullName: System.IntPtr.Zero
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IntPtr.cs
+    startLine: 30
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: A read-only field that represents a pointer or handle that has been initialized to zero.
+  syntax:
+    content: public static readonly IntPtr Zero
+    content.vb: Public Shared ReadOnly Zero As IntPtr
+- uid: System.IntPtr.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: System.IntPtr
+  href: System.IntPtr.yml
+  name: IntPtr(Int32)
+  fullName: System.IntPtr.IntPtr(System.Int32)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IntPtr.cs
+    startLine: 41
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of @'System.IntPtr' using the specified 32-bit pointer or handle.
+  syntax:
+    content: public IntPtr(int value)
+    content.vb: Public Sub New(value As Integer)
+    parameters:
+    - id: value
+      type: System.Int32
+      description: A pointer or handle contained in a 32-bit signed integer.
+- uid: System.IntPtr.#ctor(System.Int64)
+  id: '#ctor(System.Int64)'
+  parent: System.IntPtr
+  href: System.IntPtr.yml
+  name: IntPtr(Int64)
+  fullName: System.IntPtr.IntPtr(System.Int64)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IntPtr.cs
+    startLine: 53
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of @'System.IntPtr' using the specified 64-bit pointer.
+  syntax:
+    content: public IntPtr(long value)
+    content.vb: Public Sub New(value As Long)
+    parameters:
+    - id: value
+      type: System.Int64
+      description: A pointer or handle contained in a 64-bit signed integer.
+  exceptions:
+  - type: System.OverflowException
+    description: On a 32-bit platform, *value* is too large or too small to represent as an @'System.IntPtr'.
+- uid: System.IntPtr.#ctor(System.Void*)
+  id: '#ctor(System.Void*)'
+  parent: System.IntPtr
+  href: System.IntPtr.yml
+  name: IntPtr(Void*)
+  fullName: System.IntPtr.IntPtr(System.Void*)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IntPtr.cs
+    startLine: 65
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of @'System.IntPtr' using the specified pointer to an unspecified type.
+  syntax:
+    content: public IntPtr(void *value)
+    content.vb: Public Sub New(value As *)
+    parameters:
+    - id: value
+      type: System.Void*
+      description: A pointer to an unspecified type.
+- uid: System.IntPtr.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.IntPtr
+  href: System.IntPtr.yml
+  name: Equals(Object)
+  fullName: System.IntPtr.Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IntPtr.cs
+    startLine: 100
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns a value indicating whether this instance is equal to a specified object.
+  syntax:
+    content: public override bool Equals(object obj)
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: An object to compare with this instance or null.
+    return:
+      type: System.Boolean
+      description: true if *obj* is an instance of @'System.IntPtr' and equals the value of this instance; otherwise, false.
+  overridden: System.ValueType.Equals(System.Object)
+- uid: System.IntPtr.GetHashCode
+  id: GetHashCode
+  parent: System.IntPtr
+  href: System.IntPtr.yml
+  name: GetHashCode()
+  fullName: System.IntPtr.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IntPtr.cs
+    startLine: 108
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns the hash code for this instance.
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: A 32-bit signed integer hash code.
+  overridden: System.ValueType.GetHashCode
+- uid: System.IntPtr.ToInt32
+  id: ToInt32
+  parent: System.IntPtr
+  href: System.IntPtr.yml
+  name: ToInt32()
+  fullName: System.IntPtr.ToInt32()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IntPtr.cs
+    startLine: 113
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the value of this instance to a 32-bit signed integer.
+  syntax:
+    content: public int ToInt32()
+    content.vb: Public Function ToInt32 As Integer
+    return:
+      type: System.Int32
+      description: A 32-bit signed integer equal to the value of this instance.
+  exceptions:
+  - type: System.OverflowException
+    description: On a 64-bit platform, the value of this instance is too large or too small to represent as a 32-bit signed integer.
+- uid: System.IntPtr.ToInt64
+  id: ToInt64
+  parent: System.IntPtr
+  href: System.IntPtr.yml
+  name: ToInt64()
+  fullName: System.IntPtr.ToInt64()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IntPtr.cs
+    startLine: 125
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the value of this instance to a 64-bit signed integer.
+  syntax:
+    content: public long ToInt64()
+    content.vb: Public Function ToInt64 As Long
+    return:
+      type: System.Int64
+      description: A 64-bit signed integer equal to the value of this instance.
+- uid: System.IntPtr.ToString
+  id: ToString
+  parent: System.IntPtr
+  href: System.IntPtr.yml
+  name: ToString()
+  fullName: System.IntPtr.ToString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IntPtr.cs
+    startLine: 136
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the numeric value of the current @'System.IntPtr' object to its equivalent string representation.
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+      description: The string representation of the value of this instance.
+  overridden: System.ValueType.ToString
+- uid: System.IntPtr.ToString(System.String)
+  id: ToString(System.String)
+  parent: System.IntPtr
+  href: System.IntPtr.yml
+  name: ToString(String)
+  fullName: System.IntPtr.ToString(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IntPtr.cs
+    startLine: 145
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the numeric value of the current @'System.IntPtr' object to its equivalent string representation.
+  syntax:
+    content: public string ToString(string format)
+    content.vb: Public Function ToString(format As String) As String
+    parameters:
+    - id: format
+      type: System.String
+      description: A format specification that governs how the current @'System.IntPtr' object is converted.
+    return:
+      type: System.String
+      description: The string representation of the value of the current @'System.IntPtr' object.
+- uid: System.IntPtr.op_Explicit(System.Int32)~System.IntPtr
+  id: op_Explicit(System.Int32)~System.IntPtr
+  parent: System.IntPtr
+  href: System.IntPtr.yml
+  name: Explicit(Int32 to IntPtr)
+  name.vb: Narrowing(Int32 to IntPtr)
+  fullName: System.IntPtr.Explicit(System.Int32 to System.IntPtr)
+  fullName.vb: System.IntPtr.Narrowing(System.Int32 to System.IntPtr)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IntPtr.cs
+    startLine: 158
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the value of a 32-bit signed integer to an @'System.IntPtr'.
+  syntax:
+    content: public static explicit operator IntPtr(int value)
+    content.vb: Public Shared Narrowing Operator CType(value As Integer) As IntPtr
+    parameters:
+    - id: value
+      type: System.Int32
+      description: A 32-bit signed integer.
+    return:
+      type: System.IntPtr
+      description: A new instance of @'System.IntPtr' initialized to *value*.
+- uid: System.IntPtr.op_Explicit(System.Int64)~System.IntPtr
+  id: op_Explicit(System.Int64)~System.IntPtr
+  parent: System.IntPtr
+  href: System.IntPtr.yml
+  name: Explicit(Int64 to IntPtr)
+  name.vb: Narrowing(Int64 to IntPtr)
+  fullName: System.IntPtr.Explicit(System.Int64 to System.IntPtr)
+  fullName.vb: System.IntPtr.Narrowing(System.Int64 to System.IntPtr)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IntPtr.cs
+    startLine: 165
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the value of a 64-bit signed integer to an @'System.IntPtr'.
+  syntax:
+    content: public static explicit operator IntPtr(long value)
+    content.vb: Public Shared Narrowing Operator CType(value As Long) As IntPtr
+    parameters:
+    - id: value
+      type: System.Int64
+      description: A 64-bit signed integer.
+    return:
+      type: System.IntPtr
+      description: A new instance of @'System.IntPtr' initialized to *value*.
+  exceptions:
+  - type: System.OverflowException
+    description: On a 32-bit platform, *value* is too large to represent as an @'System.IntPtr'.
+- uid: System.IntPtr.op_Explicit(System.Void*)~System.IntPtr
+  id: op_Explicit(System.Void*)~System.IntPtr
+  parent: System.IntPtr
+  href: System.IntPtr.yml
+  name: Explicit(Void* to IntPtr)
+  name.vb: Narrowing(Void* to IntPtr)
+  fullName: System.IntPtr.Explicit(System.Void* to System.IntPtr)
+  fullName.vb: System.IntPtr.Narrowing(System.Void* to System.IntPtr)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IntPtr.cs
+    startLine: 172
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the specified pointer to an unspecified type to an @'System.IntPtr'.
+  syntax:
+    content: public static explicit operator IntPtr(void *value)
+    content.vb: Public Shared Narrowing Operator CType(value As *) As IntPtr
+    parameters:
+    - id: value
+      type: System.Void*
+      description: A pointer to an unspecified type.
+    return:
+      type: System.IntPtr
+      description: A new instance of @'System.IntPtr' initialized to *value*.
+- uid: System.IntPtr.op_Explicit(System.IntPtr)~System.Void*
+  id: op_Explicit(System.IntPtr)~System.Void*
+  parent: System.IntPtr
+  href: System.IntPtr.yml
+  name: Explicit(IntPtr to Void*)
+  name.vb: Narrowing(IntPtr to Void*)
+  fullName: System.IntPtr.Explicit(System.IntPtr to System.Void*)
+  fullName.vb: System.IntPtr.Narrowing(System.IntPtr to System.Void*)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IntPtr.cs
+    startLine: 180
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the value of the specified @'System.IntPtr' to a pointer to an unspecified type.
+  syntax:
+    content: public static explicit operator void *(IntPtr value)
+    content.vb: Public Shared Narrowing Operator CType(value As IntPtr) As
+    parameters:
+    - id: value
+      type: System.IntPtr
+      description: The pointer or handle to convert.
+    return:
+      type: System.Void*
+      description: The contents of *value*.
+- uid: System.IntPtr.op_Explicit(System.IntPtr)~System.Int32
+  id: op_Explicit(System.IntPtr)~System.Int32
+  parent: System.IntPtr
+  href: System.IntPtr.yml
+  name: Explicit(IntPtr to Int32)
+  name.vb: Narrowing(IntPtr to Int32)
+  fullName: System.IntPtr.Explicit(System.IntPtr to System.Int32)
+  fullName.vb: System.IntPtr.Narrowing(System.IntPtr to System.Int32)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IntPtr.cs
+    startLine: 188
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the value of the specified @'System.IntPtr' to a 32-bit signed integer.
+  syntax:
+    content: public static explicit operator int (IntPtr value)
+    content.vb: Public Shared Narrowing Operator CType(value As IntPtr) As Integer
+    parameters:
+    - id: value
+      type: System.IntPtr
+      description: The pointer or handle to convert.
+    return:
+      type: System.Int32
+      description: The contents of *value*.
+  exceptions:
+  - type: System.OverflowException
+    description: On a 64-bit platform, the value of *value* is too large to represent as a 32-bit signed integer.
+- uid: System.IntPtr.op_Explicit(System.IntPtr)~System.Int64
+  id: op_Explicit(System.IntPtr)~System.Int64
+  parent: System.IntPtr
+  href: System.IntPtr.yml
+  name: Explicit(IntPtr to Int64)
+  name.vb: Narrowing(IntPtr to Int64)
+  fullName: System.IntPtr.Explicit(System.IntPtr to System.Int64)
+  fullName.vb: System.IntPtr.Narrowing(System.IntPtr to System.Int64)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IntPtr.cs
+    startLine: 200
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the value of the specified @'System.IntPtr' to a 64-bit signed integer.
+  syntax:
+    content: public static explicit operator long (IntPtr value)
+    content.vb: Public Shared Narrowing Operator CType(value As IntPtr) As Long
+    parameters:
+    - id: value
+      type: System.IntPtr
+      description: The pointer or handle to convert.
+    return:
+      type: System.Int64
+      description: The contents of *value*.
+- uid: System.IntPtr.op_Equality(System.IntPtr,System.IntPtr)
+  id: op_Equality(System.IntPtr,System.IntPtr)
+  parent: System.IntPtr
+  href: System.IntPtr.yml
+  name: Equality(IntPtr, IntPtr)
+  fullName: System.IntPtr.Equality(System.IntPtr, System.IntPtr)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IntPtr.cs
+    startLine: 211
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Determines whether two specified instances of @'System.IntPtr' are equal.
+  syntax:
+    content: public static bool operator ==(IntPtr value1, IntPtr value2)
+    content.vb: Public Shared Operator =(value1 As IntPtr, value2 As IntPtr) As Boolean
+    parameters:
+    - id: value1
+      type: System.IntPtr
+      description: The first pointer or handle to compare.
+    - id: value2
+      type: System.IntPtr
+      description: The second pointer or handle to compare.
+    return:
+      type: System.Boolean
+      description: true if *value1* equals *value2*; otherwise, false.
+- uid: System.IntPtr.op_Inequality(System.IntPtr,System.IntPtr)
+  id: op_Inequality(System.IntPtr,System.IntPtr)
+  parent: System.IntPtr
+  href: System.IntPtr.yml
+  name: Inequality(IntPtr, IntPtr)
+  fullName: System.IntPtr.Inequality(System.IntPtr, System.IntPtr)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IntPtr.cs
+    startLine: 219
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Determines whether two specified instances of @'System.IntPtr' are not equal.
+  syntax:
+    content: public static bool operator !=(IntPtr value1, IntPtr value2)
+    content.vb: Public Shared Operator <>(value1 As IntPtr, value2 As IntPtr) As Boolean
+    parameters:
+    - id: value1
+      type: System.IntPtr
+      description: The first pointer or handle to compare.
+    - id: value2
+      type: System.IntPtr
+      description: The second pointer or handle to compare.
+    return:
+      type: System.Boolean
+      description: true if *value1* does not equal *value2*; otherwise, false.
+- uid: System.IntPtr.Add(System.IntPtr,System.Int32)
+  id: Add(System.IntPtr,System.Int32)
+  parent: System.IntPtr
+  href: System.IntPtr.yml
+  name: Add(IntPtr, Int32)
+  fullName: System.IntPtr.Add(System.IntPtr, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IntPtr.cs
+    startLine: 227
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Adds an offset to the value of a pointer.
+  syntax:
+    content: public static IntPtr Add(IntPtr pointer, int offset)
+    content.vb: Public Shared Function Add(pointer As IntPtr, offset As Integer) As IntPtr
+    parameters:
+    - id: pointer
+      type: System.IntPtr
+      description: The pointer to add the offset to.
+    - id: offset
+      type: System.Int32
+      description: The offset to add.
+    return:
+      type: System.IntPtr
+      description: A new pointer that reflects the addition of *offset* to *pointer*.
+- uid: System.IntPtr.op_Addition(System.IntPtr,System.Int32)
+  id: op_Addition(System.IntPtr,System.Int32)
+  parent: System.IntPtr
+  href: System.IntPtr.yml
+  name: Addition(IntPtr, Int32)
+  fullName: System.IntPtr.Addition(System.IntPtr, System.Int32)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IntPtr.cs
+    startLine: 234
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Adds an offset to the value of a pointer.
+  syntax:
+    content: public static IntPtr operator +(IntPtr pointer, int offset)
+    content.vb: Public Shared Operator +(pointer As IntPtr, offset As Integer) As IntPtr
+    parameters:
+    - id: pointer
+      type: System.IntPtr
+      description: The pointer to add the offset to.
+    - id: offset
+      type: System.Int32
+      description: The offset to add.
+    return:
+      type: System.IntPtr
+      description: A new pointer that reflects the addition of *offset* to *pointer*.
+- uid: System.IntPtr.Subtract(System.IntPtr,System.Int32)
+  id: Subtract(System.IntPtr,System.Int32)
+  parent: System.IntPtr
+  href: System.IntPtr.yml
+  name: Subtract(IntPtr, Int32)
+  fullName: System.IntPtr.Subtract(System.IntPtr, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IntPtr.cs
+    startLine: 245
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Subtracts an offset from the value of a pointer.
+  syntax:
+    content: public static IntPtr Subtract(IntPtr pointer, int offset)
+    content.vb: Public Shared Function Subtract(pointer As IntPtr, offset As Integer) As IntPtr
+    parameters:
+    - id: pointer
+      type: System.IntPtr
+      description: The pointer to subtract the offset from.
+    - id: offset
+      type: System.Int32
+      description: The offset to subtract.
+    return:
+      type: System.IntPtr
+      description: A new pointer that reflects the subtraction of *offset* from *pointer*.
+- uid: System.IntPtr.op_Subtraction(System.IntPtr,System.Int32)
+  id: op_Subtraction(System.IntPtr,System.Int32)
+  parent: System.IntPtr
+  href: System.IntPtr.yml
+  name: Subtraction(IntPtr, Int32)
+  fullName: System.IntPtr.Subtraction(System.IntPtr, System.Int32)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IntPtr.cs
+    startLine: 251
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Subtracts an offset from the value of a pointer.
+  syntax:
+    content: public static IntPtr operator -(IntPtr pointer, int offset)
+    content.vb: Public Shared Operator -(pointer As IntPtr, offset As Integer) As IntPtr
+    parameters:
+    - id: pointer
+      type: System.IntPtr
+      description: The pointer to subtract the offset from.
+    - id: offset
+      type: System.Int32
+      description: The offset to subtract.
+    return:
+      type: System.IntPtr
+      description: A new pointer that reflects the subtraction of *offset* from *pointer*.
+- uid: System.IntPtr.Size
+  id: Size
+  parent: System.IntPtr
+  href: System.IntPtr.yml
+  name: Size
+  fullName: System.IntPtr.Size
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IntPtr.cs
+    startLine: 261
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the size of this instance.
+  syntax:
+    content: public static int Size { get; }
+    content.vb: Public Shared ReadOnly Property Size As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: The size of a pointer or handle in this process, measured in bytes. The value of this property is 4 in a 32-bit process, and 8 in a 64-bit process. You can define the process type by setting the /platform switch when you compile your code with the C# and Visual Basic compilers.
+- uid: System.IntPtr.ToPointer
+  id: ToPointer
+  parent: System.IntPtr
+  href: System.IntPtr.yml
+  name: ToPointer()
+  fullName: System.IntPtr.ToPointer()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IntPtr.cs
+    startLine: 277
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the value of this instance to a pointer to an unspecified type.
+  syntax:
+    content: public void *ToPointer()
+    content.vb: Public Function ToPointer As
+    return:
+      type: System.Void*
+      description: A pointer to @'System.Void'; that is, a pointer to memory containing data of an unspecified type.
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  fullName: System.Int64
+- uid: System.Void*
+  isExternal: false
+  href: System.Void.yml
+  name: Void*
+  fullName: System.Void*
+  spec.csharp:
+  - uid: System.Void
+    name: Void
+    fullName: System.Void
+    href: System.Void.yml
+  - name: '*'
+    fullName: '*'
+  spec.vb:
+  - uid: System.Void
+    name: Void
+    fullName: System.Void
+    href: System.Void.yml
+  - name: '*'
+    fullName: '*'
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.IntPtr
+  parent: System
+  isExternal: true
+  name: IntPtr
+  fullName: System.IntPtr

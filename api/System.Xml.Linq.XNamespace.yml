@@ -1,0 +1,641 @@
+items:
+- uid: System.Xml.Linq.XNamespace
+  id: XNamespace
+  parent: System.Xml.Linq
+  children:
+  - System.Xml.Linq.XNamespace.Equals(System.Object)
+  - System.Xml.Linq.XNamespace.Get(System.String)
+  - System.Xml.Linq.XNamespace.GetHashCode
+  - System.Xml.Linq.XNamespace.GetName(System.String)
+  - System.Xml.Linq.XNamespace.NamespaceName
+  - System.Xml.Linq.XNamespace.None
+  - System.Xml.Linq.XNamespace.op_Addition(System.Xml.Linq.XNamespace,System.String)
+  - System.Xml.Linq.XNamespace.op_Equality(System.Xml.Linq.XNamespace,System.Xml.Linq.XNamespace)
+  - System.Xml.Linq.XNamespace.op_Implicit(System.String)~System.Xml.Linq.XNamespace
+  - System.Xml.Linq.XNamespace.op_Inequality(System.Xml.Linq.XNamespace,System.Xml.Linq.XNamespace)
+  - System.Xml.Linq.XNamespace.ToString
+  - System.Xml.Linq.XNamespace.Xml
+  - System.Xml.Linq.XNamespace.Xmlns
+  href: System.Xml.Linq.XNamespace.yml
+  name: XNamespace
+  fullName: System.Xml.Linq.XNamespace
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XNamespace.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XNamespace.cs
+    startLine: 12
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Represents an XML namespace. This class cannot be inherited.
+  syntax:
+    content: public sealed class XNamespace
+    content.vb: Public NotInheritable Class XNamespace
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Xml.Linq.XNamespace.NamespaceName
+  id: NamespaceName
+  parent: System.Xml.Linq.XNamespace
+  href: System.Xml.Linq.XNamespace.yml
+  name: NamespaceName
+  fullName: System.Xml.Linq.XNamespace.NamespaceName
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XNamespace.cs
+    startLine: 42
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Gets the Uniform Resource Identifier (URI) of this namespace.
+  syntax:
+    content: public string NamespaceName { get; }
+    content.vb: Public ReadOnly Property NamespaceName As String
+    parameters: []
+    return:
+      type: System.String
+      description: A @'System.String' that contains the URI of the namespace.
+- uid: System.Xml.Linq.XNamespace.GetName(System.String)
+  id: GetName(System.String)
+  parent: System.Xml.Linq.XNamespace
+  href: System.Xml.Linq.XNamespace.yml
+  name: GetName(String)
+  fullName: System.Xml.Linq.XNamespace.GetName(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XNamespace.cs
+    startLine: 54
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Returns an @'System.Xml.Linq.XName' object created from this @'System.Xml.Linq.XNamespace' and the specified local name.
+  remarks: >-
+    The returned @'System.Xml.Linq.XName' object is guaranteed to be atomic (i.e. the only one in the system for this
+
+    particular expanded name).
+  syntax:
+    content: public XName GetName(string localName)
+    content.vb: Public Function GetName(localName As String) As XName
+    parameters:
+    - id: localName
+      type: System.String
+      description: A @'System.String' that contains a local name.
+    return:
+      type: System.Xml.Linq.XName
+      description: An @'System.Xml.Linq.XName' created from this @'System.Xml.Linq.XNamespace' and the specified local name.
+- uid: System.Xml.Linq.XNamespace.ToString
+  id: ToString
+  parent: System.Xml.Linq.XNamespace
+  href: System.Xml.Linq.XNamespace.yml
+  name: ToString()
+  fullName: System.Xml.Linq.XNamespace.ToString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XNamespace.cs
+    startLine: 64
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Returns the URI of this @'System.Xml.Linq.XNamespace'.
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+      description: The URI of this @'System.Xml.Linq.XNamespace'.
+  overridden: System.Object.ToString
+- uid: System.Xml.Linq.XNamespace.None
+  id: None
+  parent: System.Xml.Linq.XNamespace
+  href: System.Xml.Linq.XNamespace.yml
+  name: None
+  fullName: System.Xml.Linq.XNamespace.None
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XNamespace.cs
+    startLine: 76
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Gets the @'System.Xml.Linq.XNamespace' object that corresponds to no namespace.
+  remarks: >-
+    If an element or attribute is in no namespace, its namespace
+
+    will be set to the namespace returned by this property.
+  syntax:
+    content: public static XNamespace None { get; }
+    content.vb: Public Shared ReadOnly Property None As XNamespace
+    parameters: []
+    return:
+      type: System.Xml.Linq.XNamespace
+      description: The @'System.Xml.Linq.XNamespace' that corresponds to no namespace.
+- uid: System.Xml.Linq.XNamespace.Xml
+  id: Xml
+  parent: System.Xml.Linq.XNamespace
+  href: System.Xml.Linq.XNamespace.yml
+  name: Xml
+  fullName: System.Xml.Linq.XNamespace.Xml
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XNamespace.cs
+    startLine: 87
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Gets the @'System.Xml.Linq.XNamespace' object that corresponds to the XML URI (http://www.w3.org/XML/1998/namespace).
+  syntax:
+    content: public static XNamespace Xml { get; }
+    content.vb: Public Shared ReadOnly Property Xml As XNamespace
+    parameters: []
+    return:
+      type: System.Xml.Linq.XNamespace
+      description: The @'System.Xml.Linq.XNamespace' that corresponds to the XML URI (http://www.w3.org/XML/1998/namespace).
+- uid: System.Xml.Linq.XNamespace.Xmlns
+  id: Xmlns
+  parent: System.Xml.Linq.XNamespace
+  href: System.Xml.Linq.XNamespace.yml
+  name: Xmlns
+  fullName: System.Xml.Linq.XNamespace.Xmlns
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XNamespace.cs
+    startLine: 98
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Gets the @'System.Xml.Linq.XNamespace' object that corresponds to the xmlns URI (http://www.w3.org/2000/xmlns/).
+  syntax:
+    content: public static XNamespace Xmlns { get; }
+    content.vb: Public Shared ReadOnly Property Xmlns As XNamespace
+    parameters: []
+    return:
+      type: System.Xml.Linq.XNamespace
+      description: The @'System.Xml.Linq.XNamespace' that corresponds to the xmlns URI (http://www.w3.org/2000/xmlns/).
+- uid: System.Xml.Linq.XNamespace.Get(System.String)
+  id: Get(System.String)
+  parent: System.Xml.Linq.XNamespace
+  href: System.Xml.Linq.XNamespace.yml
+  name: Get(String)
+  fullName: System.Xml.Linq.XNamespace.Get(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XNamespace.cs
+    startLine: 113
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Gets an @'System.Xml.Linq.XNamespace' for the specified Uniform Resource Identifier (URI).
+  remarks: >-
+    The returned @'System.Xml.Linq.XNamespace' object is guaranteed to be atomic
+
+    (i.e. the only one in the system for that particular namespace name).
+  syntax:
+    content: public static XNamespace Get(string namespaceName)
+    content.vb: Public Shared Function Get(namespaceName As String) As XNamespace
+    parameters:
+    - id: namespaceName
+      type: System.String
+      description: A @'System.String' that contains a namespace URI.
+    return:
+      type: System.Xml.Linq.XNamespace
+      description: An @'System.Xml.Linq.XNamespace' created from the specified URI.
+- uid: System.Xml.Linq.XNamespace.op_Implicit(System.String)~System.Xml.Linq.XNamespace
+  id: op_Implicit(System.String)~System.Xml.Linq.XNamespace
+  parent: System.Xml.Linq.XNamespace
+  href: System.Xml.Linq.XNamespace.yml
+  name: Implicit(String to XNamespace)
+  name.vb: Widening(String to XNamespace)
+  fullName: System.Xml.Linq.XNamespace.Implicit(System.String to System.Xml.Linq.XNamespace)
+  fullName.vb: System.Xml.Linq.XNamespace.Widening(System.String to System.Xml.Linq.XNamespace)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XNamespace.cs
+    startLine: 124
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Converts a string containing a Uniform Resource Identifier (URI) to an @'System.Xml.Linq.XNamespace'.
+  syntax:
+    content: public static implicit operator XNamespace(string namespaceName)
+    content.vb: Public Shared Widening Operator CType(namespaceName As String) As XNamespace
+    parameters:
+    - id: namespaceName
+      type: System.String
+      description: A @'System.String' that contains the namespace URI.
+    return:
+      type: System.Xml.Linq.XNamespace
+      description: An @'System.Xml.Linq.XNamespace' constructed from the URI string.
+- uid: System.Xml.Linq.XNamespace.op_Addition(System.Xml.Linq.XNamespace,System.String)
+  id: op_Addition(System.Xml.Linq.XNamespace,System.String)
+  parent: System.Xml.Linq.XNamespace
+  href: System.Xml.Linq.XNamespace.yml
+  name: Addition(XNamespace, String)
+  fullName: System.Xml.Linq.XNamespace.Addition(System.Xml.Linq.XNamespace, System.String)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XNamespace.cs
+    startLine: 136
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Combines an @'System.Xml.Linq.XNamespace' object with a local name to create an @'System.Xml.Linq.XName'.
+  syntax:
+    content: public static XName operator +(XNamespace ns, string localName)
+    content.vb: Public Shared Operator +(ns As XNamespace, localName As String) As XName
+    parameters:
+    - id: ns
+      type: System.Xml.Linq.XNamespace
+      description: An @'System.Xml.Linq.XNamespace' that contains the namespace.
+    - id: localName
+      type: System.String
+      description: A @'System.String' that contains the local name.
+    return:
+      type: System.Xml.Linq.XName
+      description: The new @'System.Xml.Linq.XName' constructed from the namespace and local name.
+- uid: System.Xml.Linq.XNamespace.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Xml.Linq.XNamespace
+  href: System.Xml.Linq.XNamespace.yml
+  name: Equals(Object)
+  fullName: System.Xml.Linq.XNamespace.Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XNamespace.cs
+    startLine: 154
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Determines whether the specified @'System.Xml.Linq.XNamespace' is equal to the current @'System.Xml.Linq.XNamespace'.
+  remarks: >-
+    For two @'System.Xml.Linq.XNamespace' objects to be equal they must have the same
+
+    namespace name.
+  syntax:
+    content: public override bool Equals(object obj)
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The @'System.Xml.Linq.XNamespace' to compare to the current @'System.Xml.Linq.XNamespace'.
+    return:
+      type: System.Boolean
+      description: A @'System.Boolean' that indicates whether the specified @'System.Xml.Linq.XNamespace' is equal to the current @'System.Xml.Linq.XNamespace'.
+  overridden: System.Object.Equals(System.Object)
+- uid: System.Xml.Linq.XNamespace.GetHashCode
+  id: GetHashCode
+  parent: System.Xml.Linq.XNamespace
+  href: System.Xml.Linq.XNamespace.yml
+  name: GetHashCode()
+  fullName: System.Xml.Linq.XNamespace.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XNamespace.cs
+    startLine: 163
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Gets a hash code for this @'System.Xml.Linq.XNamespace'.
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: An @'System.Int32' that contains the hash code for the @'System.Xml.Linq.XNamespace'.
+  overridden: System.Object.GetHashCode
+- uid: System.Xml.Linq.XNamespace.op_Equality(System.Xml.Linq.XNamespace,System.Xml.Linq.XNamespace)
+  id: op_Equality(System.Xml.Linq.XNamespace,System.Xml.Linq.XNamespace)
+  parent: System.Xml.Linq.XNamespace
+  href: System.Xml.Linq.XNamespace.yml
+  name: Equality(XNamespace, XNamespace)
+  fullName: System.Xml.Linq.XNamespace.Equality(System.Xml.Linq.XNamespace, System.Xml.Linq.XNamespace)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XNamespace.cs
+    startLine: 185
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Returns a value indicating whether two instances of @'System.Xml.Linq.XNamespace' are equal.
+  remarks: >-
+    This overload is included to enable the comparison between
+
+    an instance of @'System.Xml.Linq.XNamespace' and string.
+  syntax:
+    content: public static bool operator ==(XNamespace left, XNamespace right)
+    content.vb: Public Shared Operator =(left As XNamespace, right As XNamespace) As Boolean
+    parameters:
+    - id: left
+      type: System.Xml.Linq.XNamespace
+      description: The first @'System.Xml.Linq.XNamespace' to compare.
+    - id: right
+      type: System.Xml.Linq.XNamespace
+      description: The second @'System.Xml.Linq.XNamespace' to compare.
+    return:
+      type: System.Boolean
+      description: A @'System.Boolean' that indicates whether *left* and *right* are equal.
+- uid: System.Xml.Linq.XNamespace.op_Inequality(System.Xml.Linq.XNamespace,System.Xml.Linq.XNamespace)
+  id: op_Inequality(System.Xml.Linq.XNamespace,System.Xml.Linq.XNamespace)
+  parent: System.Xml.Linq.XNamespace
+  href: System.Xml.Linq.XNamespace.yml
+  name: Inequality(XNamespace, XNamespace)
+  fullName: System.Xml.Linq.XNamespace.Inequality(System.Xml.Linq.XNamespace, System.Xml.Linq.XNamespace)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XNamespace.cs
+    startLine: 200
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Returns a value indicating whether two instances of @'System.Xml.Linq.XNamespace' are not equal.
+  remarks: >-
+    This overload is included to enable the comparison between
+
+    an instance of @'System.Xml.Linq.XNamespace' and string.
+  syntax:
+    content: public static bool operator !=(XNamespace left, XNamespace right)
+    content.vb: Public Shared Operator <>(left As XNamespace, right As XNamespace) As Boolean
+    parameters:
+    - id: left
+      type: System.Xml.Linq.XNamespace
+      description: The first @'System.Xml.Linq.XNamespace' to compare.
+    - id: right
+      type: System.Xml.Linq.XNamespace
+      description: The second @'System.Xml.Linq.XNamespace' to compare.
+    return:
+      type: System.Boolean
+      description: A @'System.Boolean' that indicates whether *left* and *right* are not equal.
+references:
+- uid: System.Xml.Linq
+  isExternal: false
+  name: System.Xml.Linq
+  fullName: System.Xml.Linq
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Xml.Linq.XName
+  parent: System.Xml.Linq
+  isExternal: false
+  href: System.Xml.Linq.XName.yml
+  name: XName
+  fullName: System.Xml.Linq.XName
+  type: Class
+  summary: Represents a name of an XML element or attribute. This class cannot be inherited.
+- uid: System.Xml.Linq.XNamespace
+  parent: System.Xml.Linq
+  isExternal: false
+  href: System.Xml.Linq.XNamespace.yml
+  name: XNamespace
+  fullName: System.Xml.Linq.XNamespace
+  type: Class
+  summary: Represents an XML namespace. This class cannot be inherited.
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32

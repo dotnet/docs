@@ -1,0 +1,640 @@
+items:
+- uid: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal
+  id: WindowsRuntimeMarshal
+  parent: System.Runtime.InteropServices.WindowsRuntime
+  children:
+  - System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.AddEventHandler``1(System.Func{``0,System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken},System.Action{System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken},``0)
+  - System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.FreeHString(System.IntPtr)
+  - System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.GetActivationFactory(System.Type)
+  - System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.PtrToStringHString(System.IntPtr)
+  - System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.RemoveAllEventHandlers(System.Action{System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken})
+  - System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.RemoveEventHandler``1(System.Action{System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken},``0)
+  - System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.StringToHString(System.String)
+  href: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.yml
+  name: WindowsRuntimeMarshal
+  fullName: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/InteropServices/WindowsRuntime/WindowsRuntimeMarshal.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/InteropServices/WindowsRuntime/WindowsRuntimeMarshal.cs
+    startLine: 17
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.WindowsRuntime
+  summary: Provides helper methods for marshaling data between the .NET Framework and the Windows Runtime.
+  syntax:
+    content: public class WindowsRuntimeMarshal
+    content.vb: Public Class WindowsRuntimeMarshal
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.AddEventHandler``1(System.Func{``0,System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken},System.Action{System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken},``0)
+  id: AddEventHandler``1(System.Func{``0,System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken},System.Action{System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken},``0)
+  parent: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal
+  href: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.yml
+  name: AddEventHandler<T>(Func<T, EventRegistrationToken>, Action<EventRegistrationToken>, T)
+  name.vb: AddEventHandler(Of T)(Func(Of T, EventRegistrationToken), Action(Of EventRegistrationToken), T)
+  fullName: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.AddEventHandler<T>(System.Func<T, System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken>, System.Action<System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken>, T)
+  fullName.vb: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.AddEventHandler(Of T)(System.Func(Of T, System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken), System.Action(Of System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken), T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/WindowsRuntime/WindowsRuntimeMarshal.cs
+    startLine: 24
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.WindowsRuntime
+  summary: Adds the specified event handler to a Windows Runtime event.
+  syntax:
+    content: public static void AddEventHandler<T>(Func<T, EventRegistrationToken> addMethod, Action<EventRegistrationToken> removeMethod, T handler)
+    content.vb: Public Shared Sub AddEventHandler(Of T)(addMethod As Func(Of T, EventRegistrationToken), removeMethod As Action(Of EventRegistrationToken), handler As T)
+    parameters:
+    - id: addMethod
+      type: System.Func{{T},System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken}
+      description: A delegate that represents the method that adds event handlers to the Windows Runtime event.
+    - id: removeMethod
+      type: System.Action{System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken}
+      description: A delegate that represents the method that removes event handlers from the Windows Runtime event.
+    - id: handler
+      type: '{T}'
+      description: A delegate the represents the event handler that is added.
+    typeParameters:
+    - id: T
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*addMethod* is null. -or-*removeMethod* is null.'
+- uid: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.RemoveEventHandler``1(System.Action{System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken},``0)
+  id: RemoveEventHandler``1(System.Action{System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken},``0)
+  parent: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal
+  href: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.yml
+  name: RemoveEventHandler<T>(Action<EventRegistrationToken>, T)
+  name.vb: RemoveEventHandler(Of T)(Action(Of EventRegistrationToken), T)
+  fullName: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.RemoveEventHandler<T>(System.Action<System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken>, T)
+  fullName.vb: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.RemoveEventHandler(Of T)(System.Action(Of System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken), T)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/WindowsRuntime/WindowsRuntimeMarshal.cs
+    startLine: 55
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.WindowsRuntime
+  summary: Removes the specified event handler from a Windows Runtime event.
+  syntax:
+    content: public static void RemoveEventHandler<T>(Action<EventRegistrationToken> removeMethod, T handler)
+    content.vb: Public Shared Sub RemoveEventHandler(Of T)(removeMethod As Action(Of EventRegistrationToken), handler As T)
+    parameters:
+    - id: removeMethod
+      type: System.Action{System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken}
+      description: A delegate that represents the method that removes event handlers from the Windows Runtime event.
+    - id: handler
+      type: '{T}'
+      description: The event handler that is removed.
+    typeParameters:
+    - id: T
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*removeMethod* is null.'
+- uid: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.RemoveAllEventHandlers(System.Action{System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken})
+  id: RemoveAllEventHandlers(System.Action{System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken})
+  parent: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal
+  href: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.yml
+  name: RemoveAllEventHandlers(Action<EventRegistrationToken>)
+  name.vb: RemoveAllEventHandlers(Action(Of EventRegistrationToken))
+  fullName: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.RemoveAllEventHandlers(System.Action<System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken>)
+  fullName.vb: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.RemoveAllEventHandlers(System.Action(Of System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken))
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/WindowsRuntime/WindowsRuntimeMarshal.cs
+    startLine: 80
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.WindowsRuntime
+  summary: Removes all the event handlers that can be removed by using the specified method.
+  syntax:
+    content: public static void RemoveAllEventHandlers(Action<EventRegistrationToken> removeMethod)
+    content.vb: Public Shared Sub RemoveAllEventHandlers(removeMethod As Action(Of EventRegistrationToken))
+    parameters:
+    - id: removeMethod
+      type: System.Action{System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken}
+      description: A delegate that represents the method that removes event handlers from the Windows Runtime event.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*removeMethod* is null.'
+- uid: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.GetActivationFactory(System.Type)
+  id: GetActivationFactory(System.Type)
+  parent: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal
+  href: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.yml
+  name: GetActivationFactory(Type)
+  fullName: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.GetActivationFactory(System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/WindowsRuntime/WindowsRuntimeMarshal.cs
+    startLine: 1269
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.WindowsRuntime
+  summary: Returns an object that implements the activation factory interface for the specified Windows Runtime type.
+  syntax:
+    content: public static IActivationFactory GetActivationFactory(Type type)
+    content.vb: Public Shared Function GetActivationFactory(type As Type) As IActivationFactory
+    parameters:
+    - id: type
+      type: System.Type
+      description: The Windows Runtime type to get the activation factory interface for.
+    return:
+      type: System.Runtime.InteropServices.WindowsRuntime.IActivationFactory
+      description: An object that implements the activation factory interface.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*type* does not represent a Windows Runtime type (that is, belonging to the Windows Runtime itself or defined in a Windows Runtime component). -or-The object specified for *type* was not provided by the common language runtime type system.'
+  - type: System.ArgumentNullException
+    description: '*type* is null.'
+  - type: System.TypeLoadException
+    description: The specified Windows Runtime class is not properly registered. For example, the .winmd file was located, but the Windows Runtime failed to locate the implementation.
+- uid: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.StringToHString(System.String)
+  id: StringToHString(System.String)
+  parent: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal
+  href: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.yml
+  name: StringToHString(String)
+  fullName: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.StringToHString(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/WindowsRuntime/WindowsRuntimeMarshal.cs
+    startLine: 1292
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.WindowsRuntime
+  summary: Allocates a Windows Runtime HSTRING and copies the specified managed string to it.
+  syntax:
+    content: public static IntPtr StringToHString(string s)
+    content.vb: Public Shared Function StringToHString(s As String) As IntPtr
+    parameters:
+    - id: s
+      type: System.String
+      description: The managed string to copy.
+    return:
+      type: System.IntPtr
+      description: An unmanaged pointer to the new HSTRING, or @'System.IntPtr.Zero' if *s* is @'System.String.Empty'.
+  exceptions:
+  - type: System.PlatformNotSupportedException
+    description: The Windows Runtime is not supported on the current version of the operating system.
+  - type: System.ArgumentNullException
+    description: '*s* is null.'
+- uid: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.PtrToStringHString(System.IntPtr)
+  id: PtrToStringHString(System.IntPtr)
+  parent: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal
+  href: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.yml
+  name: PtrToStringHString(IntPtr)
+  fullName: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.PtrToStringHString(System.IntPtr)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/WindowsRuntime/WindowsRuntimeMarshal.cs
+    startLine: 1310
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.WindowsRuntime
+  summary: Returns a managed string that contains a copy of the specified Windows Runtime HSTRING.
+  syntax:
+    content: public static string PtrToStringHString(IntPtr ptr)
+    content.vb: Public Shared Function PtrToStringHString(ptr As IntPtr) As String
+    parameters:
+    - id: ptr
+      type: System.IntPtr
+      description: An unmanaged pointer to the HSTRING to copy.
+    return:
+      type: System.String
+      description: A managed string that contains a copy of the HSTRING if *ptr* is not @'System.IntPtr.Zero'; otherwise, @'System.String.Empty'.
+  exceptions:
+  - type: System.PlatformNotSupportedException
+    description: The Windows Runtime is not supported on the current version of the operating system.
+- uid: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.FreeHString(System.IntPtr)
+  id: FreeHString(System.IntPtr)
+  parent: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal
+  href: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.yml
+  name: FreeHString(IntPtr)
+  fullName: System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.FreeHString(System.IntPtr)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/WindowsRuntime/WindowsRuntimeMarshal.cs
+    startLine: 1321
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices.WindowsRuntime
+  summary: Frees the specified Windows Runtime HSTRING.
+  syntax:
+    content: public static void FreeHString(IntPtr ptr)
+    content.vb: Public Shared Sub FreeHString(ptr As IntPtr)
+    parameters:
+    - id: ptr
+      type: System.IntPtr
+      description: The address of the HSTRING to free.
+  exceptions:
+  - type: System.PlatformNotSupportedException
+    description: The Windows Runtime is not supported on the current version of the operating system.
+references:
+- uid: System.Runtime.InteropServices.WindowsRuntime
+  isExternal: false
+  name: System.Runtime.InteropServices.WindowsRuntime
+  fullName: System.Runtime.InteropServices.WindowsRuntime
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Func{{T},System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken}
+  parent: System
+  definition: System.Func`2
+  href: System.Func`2.yml
+  name: Func<T, EventRegistrationToken>
+  name.vb: Func(Of T, EventRegistrationToken)
+  fullName: System.Func<T, System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken>
+  fullName.vb: System.Func(Of T, System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    fullName: System.Func
+    href: System.Func`2.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: ', '
+    fullName: ', '
+  - uid: System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken
+    name: EventRegistrationToken
+    fullName: System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken
+    href: System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken.yml
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    fullName: System.Func
+    href: System.Func`2.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: ', '
+    fullName: ', '
+  - uid: System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken
+    name: EventRegistrationToken
+    fullName: System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken
+    href: System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken.yml
+  - name: )
+    fullName: )
+- uid: System.Action{System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken}
+  parent: System
+  definition: System.Action`1
+  href: System.Action`1.yml
+  name: Action<EventRegistrationToken>
+  name.vb: Action(Of EventRegistrationToken)
+  fullName: System.Action<System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken>
+  fullName.vb: System.Action(Of System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    fullName: System.Action
+    href: System.Action`1.yml
+  - name: <
+    fullName: <
+  - uid: System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken
+    name: EventRegistrationToken
+    fullName: System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken
+    href: System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken.yml
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    fullName: System.Action
+    href: System.Action`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken
+    name: EventRegistrationToken
+    fullName: System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken
+    href: System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken.yml
+  - name: )
+    fullName: )
+- uid: '{T}'
+  isExternal: false
+  name: T
+  fullName: T
+- uid: System.Func`2
+  parent: System
+  isExternal: true
+  name: Func<T, TResult>
+  name.vb: Func(Of T, TResult)
+  fullName: System.Func<T, TResult>
+  fullName.vb: System.Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: ', '
+    fullName: ', '
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: ', '
+    fullName: ', '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Action`1
+  parent: System
+  isExternal: true
+  name: Action<T>
+  name.vb: Action(Of T)
+  fullName: System.Action<T>
+  fullName.vb: System.Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  fullName: System.Type
+- uid: System.Runtime.InteropServices.WindowsRuntime.IActivationFactory
+  isExternal: false
+  href: System.Runtime.InteropServices.WindowsRuntime.IActivationFactory.yml
+  name: IActivationFactory
+  fullName: System.Runtime.InteropServices.WindowsRuntime.IActivationFactory
+  type: Interface
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.IntPtr
+  parent: System
+  isExternal: true
+  name: IntPtr
+  fullName: System.IntPtr

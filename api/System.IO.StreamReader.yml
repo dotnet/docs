@@ -1,0 +1,1812 @@
+items:
+- uid: System.IO.StreamReader
+  id: StreamReader
+  parent: System.IO
+  children:
+  - System.IO.StreamReader.#ctor(System.IO.Stream)
+  - System.IO.StreamReader.#ctor(System.IO.Stream,System.Boolean)
+  - System.IO.StreamReader.#ctor(System.IO.Stream,System.Text.Encoding)
+  - System.IO.StreamReader.#ctor(System.IO.Stream,System.Text.Encoding,System.Boolean)
+  - System.IO.StreamReader.#ctor(System.IO.Stream,System.Text.Encoding,System.Boolean,System.Int32)
+  - System.IO.StreamReader.#ctor(System.IO.Stream,System.Text.Encoding,System.Boolean,System.Int32,System.Boolean)
+  - System.IO.StreamReader.#ctor(System.String)
+  - System.IO.StreamReader.#ctor(System.String,System.Boolean)
+  - System.IO.StreamReader.#ctor(System.String,System.Text.Encoding)
+  - System.IO.StreamReader.#ctor(System.String,System.Text.Encoding,System.Boolean)
+  - System.IO.StreamReader.#ctor(System.String,System.Text.Encoding,System.Boolean,System.Int32)
+  - System.IO.StreamReader.BaseStream
+  - System.IO.StreamReader.Close
+  - System.IO.StreamReader.CurrentEncoding
+  - System.IO.StreamReader.DiscardBufferedData
+  - System.IO.StreamReader.Dispose(System.Boolean)
+  - System.IO.StreamReader.EndOfStream
+  - System.IO.StreamReader.Null
+  - System.IO.StreamReader.Peek
+  - System.IO.StreamReader.Read
+  - System.IO.StreamReader.Read(System.Char[],System.Int32,System.Int32)
+  - System.IO.StreamReader.ReadAsync(System.Char[],System.Int32,System.Int32)
+  - System.IO.StreamReader.ReadBlock(System.Char[],System.Int32,System.Int32)
+  - System.IO.StreamReader.ReadBlockAsync(System.Char[],System.Int32,System.Int32)
+  - System.IO.StreamReader.ReadLine
+  - System.IO.StreamReader.ReadLineAsync
+  - System.IO.StreamReader.ReadToEnd
+  - System.IO.StreamReader.ReadToEndAsync
+  href: System.IO.StreamReader.yml
+  name: StreamReader
+  fullName: System.IO.StreamReader
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/IO/StreamReader.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/IO/StreamReader.cs
+    startLine: 30
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Implements a @'System.IO.TextReader' that reads characters from a byte stream in a particular encoding.To browse the .NET Framework source code for this type, see the Reference Source.
+  syntax:
+    content: 'public class StreamReader : TextReader, IDisposable'
+    content.vb: Public Class StreamReader Inherits TextReader Implements IDisposable
+  inheritance:
+  - System.Object
+  - System.IO.TextReader
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.IO.TextReader.Dispose
+  - System.IO.TextReader.Synchronized(System.IO.TextReader)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.IO.StreamReader.Null
+  parent: System.IO.StreamReader
+  href: System.IO.StreamReader.yml
+  fullName: System.IO.StreamReader.Null
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/StreamReader.cs
+    startLine: 35
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: A @'System.IO.StreamReader' object around an empty stream.
+  syntax:
+    content: public static readonly StreamReader Null
+    content.vb: Public Shared ReadOnly Null As StreamReader
+- uid: System.IO.StreamReader.#ctor(System.IO.Stream)
+  id: '#ctor(System.IO.Stream)'
+  parent: System.IO.StreamReader
+  href: System.IO.StreamReader.yml
+  name: StreamReader(Stream)
+  fullName: System.IO.StreamReader.StreamReader(System.IO.Stream)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/StreamReader.cs
+    startLine: 136
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Initializes a new instance of the @'System.IO.StreamReader' class for the specified stream.
+  syntax:
+    content: public StreamReader(Stream stream)
+    content.vb: Public Sub New(stream As Stream)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: The stream to be read.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*stream* does not support reading.'
+  - type: System.ArgumentNullException
+    description: '*stream* is null.'
+- uid: System.IO.StreamReader.#ctor(System.IO.Stream,System.Boolean)
+  id: '#ctor(System.IO.Stream,System.Boolean)'
+  parent: System.IO.StreamReader
+  href: System.IO.StreamReader.yml
+  name: StreamReader(Stream, Boolean)
+  fullName: System.IO.StreamReader.StreamReader(System.IO.Stream, System.Boolean)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/StreamReader.cs
+    startLine: 140
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Initializes a new instance of the @'System.IO.StreamReader' class for the specified stream, with the specified byte order mark detection option.
+  syntax:
+    content: public StreamReader(Stream stream, bool detectEncodingFromByteOrderMarks)
+    content.vb: Public Sub New(stream As Stream, detectEncodingFromByteOrderMarks As Boolean)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: The stream to be read.
+    - id: detectEncodingFromByteOrderMarks
+      type: System.Boolean
+      description: Indicates whether to look for byte order marks at the beginning of the file.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*stream* does not support reading.'
+  - type: System.ArgumentNullException
+    description: '*stream* is null.'
+- uid: System.IO.StreamReader.#ctor(System.IO.Stream,System.Text.Encoding)
+  id: '#ctor(System.IO.Stream,System.Text.Encoding)'
+  parent: System.IO.StreamReader
+  href: System.IO.StreamReader.yml
+  name: StreamReader(Stream, Encoding)
+  fullName: System.IO.StreamReader.StreamReader(System.IO.Stream, System.Text.Encoding)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/StreamReader.cs
+    startLine: 144
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Initializes a new instance of the @'System.IO.StreamReader' class for the specified stream, with the specified character encoding.
+  syntax:
+    content: public StreamReader(Stream stream, Encoding encoding)
+    content.vb: Public Sub New(stream As Stream, encoding As Encoding)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: The stream to be read.
+    - id: encoding
+      type: System.Text.Encoding
+      description: The character encoding to use.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*stream* does not support reading.'
+  - type: System.ArgumentNullException
+    description: '*stream* or *encoding* is null.'
+- uid: System.IO.StreamReader.#ctor(System.IO.Stream,System.Text.Encoding,System.Boolean)
+  id: '#ctor(System.IO.Stream,System.Text.Encoding,System.Boolean)'
+  parent: System.IO.StreamReader
+  href: System.IO.StreamReader.yml
+  name: StreamReader(Stream, Encoding, Boolean)
+  fullName: System.IO.StreamReader.StreamReader(System.IO.Stream, System.Text.Encoding, System.Boolean)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/StreamReader.cs
+    startLine: 148
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Initializes a new instance of the @'System.IO.StreamReader' class for the specified stream, with the specified character encoding and byte order mark detection option.
+  syntax:
+    content: public StreamReader(Stream stream, Encoding encoding, bool detectEncodingFromByteOrderMarks)
+    content.vb: Public Sub New(stream As Stream, encoding As Encoding, detectEncodingFromByteOrderMarks As Boolean)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: The stream to be read.
+    - id: encoding
+      type: System.Text.Encoding
+      description: The character encoding to use.
+    - id: detectEncodingFromByteOrderMarks
+      type: System.Boolean
+      description: Indicates whether to look for byte order marks at the beginning of the file.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*stream* does not support reading.'
+  - type: System.ArgumentNullException
+    description: '*stream* or *encoding* is null.'
+- uid: System.IO.StreamReader.#ctor(System.IO.Stream,System.Text.Encoding,System.Boolean,System.Int32)
+  id: '#ctor(System.IO.Stream,System.Text.Encoding,System.Boolean,System.Int32)'
+  parent: System.IO.StreamReader
+  href: System.IO.StreamReader.yml
+  name: StreamReader(Stream, Encoding, Boolean, Int32)
+  fullName: System.IO.StreamReader.StreamReader(System.IO.Stream, System.Text.Encoding, System.Boolean, System.Int32)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/StreamReader.cs
+    startLine: 162
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Initializes a new instance of the @'System.IO.StreamReader' class for the specified stream, with the specified character encoding, byte order mark detection option, and buffer size.
+  syntax:
+    content: public StreamReader(Stream stream, Encoding encoding, bool detectEncodingFromByteOrderMarks, int bufferSize)
+    content.vb: Public Sub New(stream As Stream, encoding As Encoding, detectEncodingFromByteOrderMarks As Boolean, bufferSize As Integer)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: The stream to be read.
+    - id: encoding
+      type: System.Text.Encoding
+      description: The character encoding to use.
+    - id: detectEncodingFromByteOrderMarks
+      type: System.Boolean
+      description: Indicates whether to look for byte order marks at the beginning of the file.
+    - id: bufferSize
+      type: System.Int32
+      description: The minimum buffer size.
+  exceptions:
+  - type: System.ArgumentException
+    description: The stream does not support reading.
+  - type: System.ArgumentNullException
+    description: '*stream* or *encoding* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*bufferSize* is less than or equal to zero.'
+- uid: System.IO.StreamReader.#ctor(System.IO.Stream,System.Text.Encoding,System.Boolean,System.Int32,System.Boolean)
+  id: '#ctor(System.IO.Stream,System.Text.Encoding,System.Boolean,System.Int32,System.Boolean)'
+  parent: System.IO.StreamReader
+  href: System.IO.StreamReader.yml
+  name: StreamReader(Stream, Encoding, Boolean, Int32, Boolean)
+  fullName: System.IO.StreamReader.StreamReader(System.IO.Stream, System.Text.Encoding, System.Boolean, System.Int32, System.Boolean)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/StreamReader.cs
+    startLine: 166
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Initializes a new instance of the @'System.IO.StreamReader' class for the specified stream based on the specified character encoding, byte order mark detection option, and buffer size, and optionally leaves the stream open.
+  syntax:
+    content: public StreamReader(Stream stream, Encoding encoding, bool detectEncodingFromByteOrderMarks, int bufferSize, bool leaveOpen)
+    content.vb: Public Sub New(stream As Stream, encoding As Encoding, detectEncodingFromByteOrderMarks As Boolean, bufferSize As Integer, leaveOpen As Boolean)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: The stream to read.
+    - id: encoding
+      type: System.Text.Encoding
+      description: The character encoding to use.
+    - id: detectEncodingFromByteOrderMarks
+      type: System.Boolean
+      description: true to look for byte order marks at the beginning of the file; otherwise, false.
+    - id: bufferSize
+      type: System.Int32
+      description: The minimum buffer size.
+    - id: leaveOpen
+      type: System.Boolean
+      description: true to leave the stream open after the @'System.IO.StreamReader' object is disposed; otherwise, false.
+- uid: System.IO.StreamReader.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: System.IO.StreamReader
+  href: System.IO.StreamReader.yml
+  name: StreamReader(String)
+  fullName: System.IO.StreamReader.StreamReader(System.String)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/StreamReader.cs
+    startLine: 180
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Initializes a new instance of the @'System.IO.StreamReader' class for the specified file name.
+  syntax:
+    content: public StreamReader(string path)
+    content.vb: Public Sub New(path As String)
+    parameters:
+    - id: path
+      type: System.String
+      description: The complete file path to be read.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*path* is an empty string ("").'
+  - type: System.ArgumentNullException
+    description: '*path* is null.'
+  - type: System.IO.FileNotFoundException
+    description: The file cannot be found.
+  - type: System.IO.DirectoryNotFoundException
+    description: The specified path is invalid, such as being on an unmapped drive.
+  - type: System.IO.IOException
+    description: '*path* includes an incorrect or invalid syntax for file name, directory name, or volume label.'
+- uid: System.IO.StreamReader.#ctor(System.String,System.Boolean)
+  id: '#ctor(System.String,System.Boolean)'
+  parent: System.IO.StreamReader
+  href: System.IO.StreamReader.yml
+  name: StreamReader(String, Boolean)
+  fullName: System.IO.StreamReader.StreamReader(System.String, System.Boolean)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/StreamReader.cs
+    startLine: 200
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Initializes a new instance of the @'System.IO.StreamReader' class for the specified file name, with the specified byte order mark detection option.
+  syntax:
+    content: public StreamReader(string path, bool detectEncodingFromByteOrderMarks)
+    content.vb: Public Sub New(path As String, detectEncodingFromByteOrderMarks As Boolean)
+    parameters:
+    - id: path
+      type: System.String
+      description: The complete file path to be read.
+    - id: detectEncodingFromByteOrderMarks
+      type: System.Boolean
+      description: Indicates whether to look for byte order marks at the beginning of the file.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*path* is an empty string ("").'
+  - type: System.ArgumentNullException
+    description: '*path* is null.'
+  - type: System.IO.FileNotFoundException
+    description: The file cannot be found.
+  - type: System.IO.DirectoryNotFoundException
+    description: The specified path is invalid, such as being on an unmapped drive.
+  - type: System.IO.IOException
+    description: '*path* includes an incorrect or invalid syntax for file name, directory name, or volume label.'
+- uid: System.IO.StreamReader.#ctor(System.String,System.Text.Encoding)
+  id: '#ctor(System.String,System.Text.Encoding)'
+  parent: System.IO.StreamReader
+  href: System.IO.StreamReader.yml
+  name: StreamReader(String, Encoding)
+  fullName: System.IO.StreamReader.StreamReader(System.String, System.Text.Encoding)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/StreamReader.cs
+    startLine: 204
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Initializes a new instance of the @'System.IO.StreamReader' class for the specified file name, with the specified character encoding.
+  syntax:
+    content: public StreamReader(string path, Encoding encoding)
+    content.vb: Public Sub New(path As String, encoding As Encoding)
+    parameters:
+    - id: path
+      type: System.String
+      description: The complete file path to be read.
+    - id: encoding
+      type: System.Text.Encoding
+      description: The character encoding to use.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*path* is an empty string ("").'
+  - type: System.ArgumentNullException
+    description: '*path* or *encoding* is null.'
+  - type: System.IO.FileNotFoundException
+    description: The file cannot be found.
+  - type: System.IO.DirectoryNotFoundException
+    description: The specified path is invalid, such as being on an unmapped drive.
+  - type: System.NotSupportedException
+    description: '*path* includes an incorrect or invalid syntax for file name, directory name, or volume label.'
+- uid: System.IO.StreamReader.#ctor(System.String,System.Text.Encoding,System.Boolean)
+  id: '#ctor(System.String,System.Text.Encoding,System.Boolean)'
+  parent: System.IO.StreamReader
+  href: System.IO.StreamReader.yml
+  name: StreamReader(String, Encoding, Boolean)
+  fullName: System.IO.StreamReader.StreamReader(System.String, System.Text.Encoding, System.Boolean)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/StreamReader.cs
+    startLine: 208
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Initializes a new instance of the @'System.IO.StreamReader' class for the specified file name, with the specified character encoding and byte order mark detection option.
+  syntax:
+    content: public StreamReader(string path, Encoding encoding, bool detectEncodingFromByteOrderMarks)
+    content.vb: Public Sub New(path As String, encoding As Encoding, detectEncodingFromByteOrderMarks As Boolean)
+    parameters:
+    - id: path
+      type: System.String
+      description: The complete file path to be read.
+    - id: encoding
+      type: System.Text.Encoding
+      description: The character encoding to use.
+    - id: detectEncodingFromByteOrderMarks
+      type: System.Boolean
+      description: Indicates whether to look for byte order marks at the beginning of the file.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*path* is an empty string ("").'
+  - type: System.ArgumentNullException
+    description: '*path* or *encoding* is null.'
+  - type: System.IO.FileNotFoundException
+    description: The file cannot be found.
+  - type: System.IO.DirectoryNotFoundException
+    description: The specified path is invalid, such as being on an unmapped drive.
+  - type: System.NotSupportedException
+    description: '*path* includes an incorrect or invalid syntax for file name, directory name, or volume label.'
+- uid: System.IO.StreamReader.#ctor(System.String,System.Text.Encoding,System.Boolean,System.Int32)
+  id: '#ctor(System.String,System.Text.Encoding,System.Boolean,System.Int32)'
+  parent: System.IO.StreamReader
+  href: System.IO.StreamReader.yml
+  name: StreamReader(String, Encoding, Boolean, Int32)
+  fullName: System.IO.StreamReader.StreamReader(System.String, System.Text.Encoding, System.Boolean, System.Int32)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/StreamReader.cs
+    startLine: 212
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Initializes a new instance of the @'System.IO.StreamReader' class for the specified file name, with the specified character encoding, byte order mark detection option, and buffer size.
+  syntax:
+    content: public StreamReader(string path, Encoding encoding, bool detectEncodingFromByteOrderMarks, int bufferSize)
+    content.vb: Public Sub New(path As String, encoding As Encoding, detectEncodingFromByteOrderMarks As Boolean, bufferSize As Integer)
+    parameters:
+    - id: path
+      type: System.String
+      description: The complete file path to be read.
+    - id: encoding
+      type: System.Text.Encoding
+      description: The character encoding to use.
+    - id: detectEncodingFromByteOrderMarks
+      type: System.Boolean
+      description: Indicates whether to look for byte order marks at the beginning of the file.
+    - id: bufferSize
+      type: System.Int32
+      description: The minimum buffer size, in number of 16-bit characters.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*path* is an empty string ("").'
+  - type: System.ArgumentNullException
+    description: '*path* or *encoding* is null.'
+  - type: System.IO.FileNotFoundException
+    description: The file cannot be found.
+  - type: System.IO.DirectoryNotFoundException
+    description: The specified path is invalid, such as being on an unmapped drive.
+  - type: System.NotSupportedException
+    description: '*path* includes an incorrect or invalid syntax for file name, directory name, or volume label.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*buffersize* is less than or equal to zero.'
+- uid: System.IO.StreamReader.Close
+  id: Close
+  parent: System.IO.StreamReader
+  href: System.IO.StreamReader.yml
+  name: Close()
+  fullName: System.IO.StreamReader.Close()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/StreamReader.cs
+    startLine: 272
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Closes the @'System.IO.StreamReader' object and the underlying stream, and releases any system resources associated with the reader.
+  syntax:
+    content: public override void Close()
+    content.vb: Public Overrides Sub Close
+  overridden: System.IO.TextReader.Close
+- uid: System.IO.StreamReader.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: System.IO.StreamReader
+  href: System.IO.StreamReader.yml
+  name: Dispose(Boolean)
+  fullName: System.IO.StreamReader.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/StreamReader.cs
+    startLine: 277
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Closes the underlying stream, releases the unmanaged resources used by the @'System.IO.StreamReader', and optionally releases the managed resources.
+  syntax:
+    content: protected override void Dispose(bool disposing)
+    content.vb: Protected Overrides Sub Dispose(disposing As Boolean)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: true to release both managed and unmanaged resources; false to release only unmanaged resources.
+  overridden: System.IO.TextReader.Dispose(System.Boolean)
+- uid: System.IO.StreamReader.CurrentEncoding
+  id: CurrentEncoding
+  parent: System.IO.StreamReader
+  href: System.IO.StreamReader.yml
+  name: CurrentEncoding
+  fullName: System.IO.StreamReader.CurrentEncoding
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/StreamReader.cs
+    startLine: 302
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Gets the current character encoding that the current @'System.IO.StreamReader' object is using.
+  syntax:
+    content: public virtual Encoding CurrentEncoding { get; }
+    content.vb: Public Overridable ReadOnly Property CurrentEncoding As Encoding
+    parameters: []
+    return:
+      type: System.Text.Encoding
+      description: The current character encoding used by the current reader. The value can be different after the first call to any <see cref="Overload:System.IO.StreamReader.Read" /> method of @'System.IO.StreamReader', since encoding autodetection is not done until the first call to a <see cref="Overload:System.IO.StreamReader.Read" /> method.
+- uid: System.IO.StreamReader.BaseStream
+  id: BaseStream
+  parent: System.IO.StreamReader
+  href: System.IO.StreamReader.yml
+  name: BaseStream
+  fullName: System.IO.StreamReader.BaseStream
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/StreamReader.cs
+    startLine: 306
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Returns the underlying stream.
+  syntax:
+    content: public virtual Stream BaseStream { get; }
+    content.vb: Public Overridable ReadOnly Property BaseStream As Stream
+    parameters: []
+    return:
+      type: System.IO.Stream
+      description: The underlying stream.
+- uid: System.IO.StreamReader.DiscardBufferedData
+  id: DiscardBufferedData
+  parent: System.IO.StreamReader
+  href: System.IO.StreamReader.yml
+  name: DiscardBufferedData()
+  fullName: System.IO.StreamReader.DiscardBufferedData()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/StreamReader.cs
+    startLine: 321
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Clears the internal buffer.
+  syntax:
+    content: public void DiscardBufferedData()
+    content.vb: Public Sub DiscardBufferedData
+- uid: System.IO.StreamReader.EndOfStream
+  id: EndOfStream
+  parent: System.IO.StreamReader
+  href: System.IO.StreamReader.yml
+  name: EndOfStream
+  fullName: System.IO.StreamReader.EndOfStream
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/StreamReader.cs
+    startLine: 336
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Gets a value that indicates whether the current stream position is at the end of the stream.
+  syntax:
+    content: public bool EndOfStream { get; }
+    content.vb: Public ReadOnly Property EndOfStream As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the current stream position is at the end of the stream; otherwise false.
+  exceptions:
+  - type: System.ObjectDisposedException
+    description: The underlying stream has been disposed.
+- uid: System.IO.StreamReader.Peek
+  id: Peek
+  parent: System.IO.StreamReader
+  href: System.IO.StreamReader.yml
+  name: Peek()
+  fullName: System.IO.StreamReader.Peek()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/StreamReader.cs
+    startLine: 352
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Returns the next available character but does not consume it.
+  syntax:
+    content: public override int Peek()
+    content.vb: Public Overrides Function Peek As Integer
+    return:
+      type: System.Int32
+      description: An integer representing the next character to be read, or -1 if there are no characters to be read or if the stream does not support seeking.
+  overridden: System.IO.TextReader.Peek
+  exceptions:
+  - type: System.IO.IOException
+    description: An I/O error occurs.
+- uid: System.IO.StreamReader.Read
+  id: Read
+  parent: System.IO.StreamReader
+  href: System.IO.StreamReader.yml
+  name: Read()
+  fullName: System.IO.StreamReader.Read()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/StreamReader.cs
+    startLine: 366
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads the next character from the input stream and advances the character position by one character.
+  syntax:
+    content: public override int Read()
+    content.vb: Public Overrides Function Read As Integer
+    return:
+      type: System.Int32
+      description: The next character from the input stream represented as an @'System.Int32' object, or -1 if no more characters are available.
+  overridden: System.IO.TextReader.Read
+  exceptions:
+  - type: System.IO.IOException
+    description: An I/O error occurs.
+- uid: System.IO.StreamReader.Read(System.Char[],System.Int32,System.Int32)
+  id: Read(System.Char[],System.Int32,System.Int32)
+  parent: System.IO.StreamReader
+  href: System.IO.StreamReader.yml
+  name: Read(Char[], Int32, Int32)
+  name.vb: Read(Char(), Int32, Int32)
+  fullName: System.IO.StreamReader.Read(System.Char[], System.Int32, System.Int32)
+  fullName.vb: System.IO.StreamReader.Read(System.Char(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/StreamReader.cs
+    startLine: 380
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads a specified maximum of characters from the current stream into a buffer, beginning at the specified index.
+  syntax:
+    content: public override int Read(char[] buffer, int index, int count)
+    content.vb: Public Overrides Function Read(buffer As Char(), index As Integer, count As Integer) As Integer
+    parameters:
+    - id: buffer
+      type: System.Char[]
+      description: When this method returns, contains the specified character array with the values between *index* and (*index + count - 1*) replaced by the characters read from the current source.
+    - id: index
+      type: System.Int32
+      description: The index of *buffer* at which to begin writing.
+    - id: count
+      type: System.Int32
+      description: The maximum number of characters to read.
+    return:
+      type: System.Int32
+      description: The number of characters that have been read, or 0 if at the end of the stream and no data was read. The number will be less than or equal to the *count* parameter, depending on whether the data is available within the stream.
+  overridden: System.IO.TextReader.Read(System.Char[],System.Int32,System.Int32)
+  exceptions:
+  - type: System.ArgumentException
+    description: The buffer length minus *index* is less than *count*.
+  - type: System.ArgumentNullException
+    description: '*buffer* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* or *count* is negative.'
+  - type: System.IO.IOException
+    description: An I/O error occurs, such as the stream is closed.
+- uid: System.IO.StreamReader.ReadToEnd
+  id: ReadToEnd
+  parent: System.IO.StreamReader
+  href: System.IO.StreamReader.yml
+  name: ReadToEnd()
+  fullName: System.IO.StreamReader.ReadToEnd()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/StreamReader.cs
+    startLine: 420
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads all characters from the current position to the end of the stream.
+  syntax:
+    content: public override string ReadToEnd()
+    content.vb: Public Overrides Function ReadToEnd As String
+    return:
+      type: System.String
+      description: The rest of the stream as a string, from the current position to the end. If the current position is at the end of the stream, returns an empty string ("").
+  overridden: System.IO.TextReader.ReadToEnd
+  exceptions:
+  - type: System.OutOfMemoryException
+    description: There is insufficient memory to allocate a buffer for the returned string.
+  - type: System.IO.IOException
+    description: An I/O error occurs.
+- uid: System.IO.StreamReader.ReadBlock(System.Char[],System.Int32,System.Int32)
+  id: ReadBlock(System.Char[],System.Int32,System.Int32)
+  parent: System.IO.StreamReader
+  href: System.IO.StreamReader.yml
+  name: ReadBlock(Char[], Int32, Int32)
+  name.vb: ReadBlock(Char(), Int32, Int32)
+  fullName: System.IO.StreamReader.ReadBlock(System.Char[], System.Int32, System.Int32)
+  fullName.vb: System.IO.StreamReader.ReadBlock(System.Char(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/StreamReader.cs
+    startLine: 438
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads a specified maximum number of characters from the current stream and writes the data to a buffer, beginning at the specified index.
+  syntax:
+    content: public override int ReadBlock(char[] buffer, int index, int count)
+    content.vb: Public Overrides Function ReadBlock(buffer As Char(), index As Integer, count As Integer) As Integer
+    parameters:
+    - id: buffer
+      type: System.Char[]
+      description: When this method returns, contains the specified character array with the values between *index* and (*index + count - 1*) replaced by the characters read from the current source.
+    - id: index
+      type: System.Int32
+      description: The position in *buffer* at which to begin writing.
+    - id: count
+      type: System.Int32
+      description: The maximum number of characters to read.
+    return:
+      type: System.Int32
+      description: The number of characters that have been read. The number will be less than or equal to *count*, depending on whether all input characters have been read.
+  overridden: System.IO.TextReader.ReadBlock(System.Char[],System.Int32,System.Int32)
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*buffer* is null.'
+  - type: System.ArgumentException
+    description: The buffer length minus *index* is less than *count*.
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* or *count* is negative.'
+  - type: System.ObjectDisposedException
+    description: The @'System.IO.StreamReader' is closed.
+  - type: System.IO.IOException
+    description: An I/O error occurred.
+- uid: System.IO.StreamReader.ReadLine
+  id: ReadLine
+  parent: System.IO.StreamReader
+  href: System.IO.StreamReader.yml
+  name: ReadLine()
+  fullName: System.IO.StreamReader.ReadLine()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/StreamReader.cs
+    startLine: 760
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads a line of characters from the current stream and returns the data as a string.
+  syntax:
+    content: public override string ReadLine()
+    content.vb: Public Overrides Function ReadLine As String
+    return:
+      type: System.String
+      description: The next line from the input stream, or null if the end of the input stream is reached.
+  overridden: System.IO.TextReader.ReadLine
+  exceptions:
+  - type: System.OutOfMemoryException
+    description: There is insufficient memory to allocate a buffer for the returned string.
+  - type: System.IO.IOException
+    description: An I/O error occurs.
+- uid: System.IO.StreamReader.ReadLineAsync
+  id: ReadLineAsync
+  parent: System.IO.StreamReader
+  href: System.IO.StreamReader.yml
+  name: ReadLineAsync()
+  fullName: System.IO.StreamReader.ReadLineAsync()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/StreamReader.cs
+    startLine: 804
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads a line of characters asynchronously from the current stream and returns the data as a string.
+  syntax:
+    content: public override Task<string> ReadLineAsync()
+    content.vb: Public Overrides Function ReadLineAsync As Task(Of String)
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: A task that represents the asynchronous read operation. The value of the *TResult* parameter contains the next line from the stream, or is null if all the characters have been read.
+  overridden: System.IO.TextReader.ReadLineAsync
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: The number of characters in the next line is larger than @'System.Int32.MaxValue'.
+  - type: System.ObjectDisposedException
+    description: The stream has been disposed.
+  - type: System.InvalidOperationException
+    description: The reader is currently in use by a previous read operation.
+- uid: System.IO.StreamReader.ReadToEndAsync
+  id: ReadToEndAsync
+  parent: System.IO.StreamReader
+  href: System.IO.StreamReader.yml
+  name: ReadToEndAsync()
+  fullName: System.IO.StreamReader.ReadToEndAsync()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/StreamReader.cs
+    startLine: 885
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads all characters from the current position to the end of the stream asynchronously and returns them as one string.
+  syntax:
+    content: public override Task<string> ReadToEndAsync()
+    content.vb: Public Overrides Function ReadToEndAsync As Task(Of String)
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: A task that represents the asynchronous read operation. The value of the *TResult* parameter contains a string with the characters from the current position to the end of the stream.
+  overridden: System.IO.TextReader.ReadToEndAsync
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: The number of characters is larger than @'System.Int32.MaxValue'.
+  - type: System.ObjectDisposedException
+    description: The stream has been disposed.
+  - type: System.InvalidOperationException
+    description: The reader is currently in use by a previous read operation.
+- uid: System.IO.StreamReader.ReadAsync(System.Char[],System.Int32,System.Int32)
+  id: ReadAsync(System.Char[],System.Int32,System.Int32)
+  parent: System.IO.StreamReader
+  href: System.IO.StreamReader.yml
+  name: ReadAsync(Char[], Int32, Int32)
+  name.vb: ReadAsync(Char(), Int32, Int32)
+  fullName: System.IO.StreamReader.ReadAsync(System.Char[], System.Int32, System.Int32)
+  fullName.vb: System.IO.StreamReader.ReadAsync(System.Char(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/StreamReader.cs
+    startLine: 922
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads a specified maximum number of characters from the current stream asynchronously and writes the data to a buffer, beginning at the specified index.
+  syntax:
+    content: public override Task<int> ReadAsync(char[] buffer, int index, int count)
+    content.vb: Public Overrides Function ReadAsync(buffer As Char(), index As Integer, count As Integer) As Task(Of Integer)
+    parameters:
+    - id: buffer
+      type: System.Char[]
+      description: When this method returns, contains the specified character array with the values between *index* and (*index* + *count* - 1) replaced by the characters read from the current source.
+    - id: index
+      type: System.Int32
+      description: The position in *buffer* at which to begin writing.
+    - id: count
+      type: System.Int32
+      description: The maximum number of characters to read. If the end of the stream is reached before the specified number of characters is written into the buffer, the current method returns.
+    return:
+      type: System.Threading.Tasks.Task{System.Int32}
+      description: A task that represents the asynchronous read operation. The value of the *TResult* parameter contains the total number of bytes read into the buffer. The result value can be less than the number of bytes requested if the number of bytes currently available is less than the requested number, or it can be 0 (zero) if the end of the stream has been reached.
+  overridden: System.IO.TextReader.ReadAsync(System.Char[],System.Int32,System.Int32)
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*buffer* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* or *count* is negative.'
+  - type: System.ArgumentException
+    description: The sum of *index* and *count* is larger than the buffer length.
+  - type: System.ObjectDisposedException
+    description: The stream has been disposed.
+  - type: System.InvalidOperationException
+    description: The reader is currently in use by a previous read operation.
+- uid: System.IO.StreamReader.ReadBlockAsync(System.Char[],System.Int32,System.Int32)
+  id: ReadBlockAsync(System.Char[],System.Int32,System.Int32)
+  parent: System.IO.StreamReader
+  href: System.IO.StreamReader.yml
+  name: ReadBlockAsync(Char[], Int32, Int32)
+  name.vb: ReadBlockAsync(Char(), Int32, Int32)
+  fullName: System.IO.StreamReader.ReadBlockAsync(System.Char[], System.Int32, System.Int32)
+  fullName.vb: System.IO.StreamReader.ReadBlockAsync(System.Char(), System.Int32, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/IO/StreamReader.cs
+    startLine: 1110
+  assemblies:
+  - mscorlib
+  namespace: System.IO
+  summary: Reads a specified maximum number of characters from the current stream asynchronously and writes the data to a buffer, beginning at the specified index.
+  syntax:
+    content: public override Task<int> ReadBlockAsync(char[] buffer, int index, int count)
+    content.vb: Public Overrides Function ReadBlockAsync(buffer As Char(), index As Integer, count As Integer) As Task(Of Integer)
+    parameters:
+    - id: buffer
+      type: System.Char[]
+      description: When this method returns, contains the specified character array with the values between *index* and (*index* + *count* - 1) replaced by the characters read from the current source.
+    - id: index
+      type: System.Int32
+      description: The position in *buffer* at which to begin writing.
+    - id: count
+      type: System.Int32
+      description: The maximum number of characters to read. If the end of the stream is reached before the specified number of characters is written into the buffer, the method returns.
+    return:
+      type: System.Threading.Tasks.Task{System.Int32}
+      description: A task that represents the asynchronous read operation. The value of the *TResult* parameter contains the total number of bytes read into the buffer. The result value can be less than the number of bytes requested if the number of bytes currently available is less than the requested number, or it can be 0 (zero) if the end of the stream has been reached.
+  overridden: System.IO.TextReader.ReadBlockAsync(System.Char[],System.Int32,System.Int32)
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*buffer* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* or *count* is negative.'
+  - type: System.ArgumentException
+    description: The sum of *index* and *count* is larger than the buffer length.
+  - type: System.ObjectDisposedException
+    description: The stream has been disposed.
+  - type: System.InvalidOperationException
+    description: The reader is currently in use by a previous read operation.
+references:
+- uid: System.IO
+  isExternal: false
+  name: System.IO
+  fullName: System.IO
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.IO.TextReader
+  parent: System.IO
+  isExternal: true
+  name: TextReader
+  fullName: System.IO.TextReader
+- uid: System.IO.TextReader.Dispose
+  parent: System.IO.TextReader
+  isExternal: false
+  href: System.IO.TextReader.yml
+  name: Dispose()
+  fullName: System.IO.TextReader.Dispose()
+  spec.csharp:
+  - uid: System.IO.TextReader.Dispose
+    name: Dispose
+    fullName: System.IO.TextReader.Dispose
+    href: System.IO.TextReader.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.TextReader.Dispose
+    name: Dispose
+    fullName: System.IO.TextReader.Dispose
+    href: System.IO.TextReader.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.IO.TextReader.Synchronized(System.IO.TextReader)
+  parent: System.IO.TextReader
+  isExternal: false
+  href: System.IO.TextReader.yml
+  name: Synchronized(TextReader)
+  fullName: System.IO.TextReader.Synchronized(System.IO.TextReader)
+  spec.csharp:
+  - uid: System.IO.TextReader.Synchronized(System.IO.TextReader)
+    name: Synchronized
+    fullName: System.IO.TextReader.Synchronized
+    href: System.IO.TextReader.yml
+  - name: (
+    fullName: (
+  - uid: System.IO.TextReader
+    name: TextReader
+    fullName: System.IO.TextReader
+    href: System.IO.TextReader.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.TextReader.Synchronized(System.IO.TextReader)
+    name: Synchronized
+    fullName: System.IO.TextReader.Synchronized
+    href: System.IO.TextReader.yml
+  - name: (
+    fullName: (
+  - uid: System.IO.TextReader
+    name: TextReader
+    fullName: System.IO.TextReader
+    href: System.IO.TextReader.yml
+  - name: )
+    fullName: )
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  name: Stream
+  fullName: System.IO.Stream
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Text.Encoding
+  parent: System.Text
+  isExternal: true
+  name: Encoding
+  fullName: System.Text.Encoding
+- uid: System.Text
+  isExternal: false
+  name: System.Text
+  fullName: System.Text
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.IO.TextReader.Close
+  parent: System.IO.TextReader
+  isExternal: false
+  href: System.IO.TextReader.yml
+  name: Close()
+  fullName: System.IO.TextReader.Close()
+  spec.csharp:
+  - uid: System.IO.TextReader.Close
+    name: Close
+    fullName: System.IO.TextReader.Close
+    href: System.IO.TextReader.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.TextReader.Close
+    name: Close
+    fullName: System.IO.TextReader.Close
+    href: System.IO.TextReader.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.IO.TextReader.Dispose(System.Boolean)
+  parent: System.IO.TextReader
+  isExternal: false
+  href: System.IO.TextReader.yml
+  name: Dispose(Boolean)
+  fullName: System.IO.TextReader.Dispose(System.Boolean)
+  spec.csharp:
+  - uid: System.IO.TextReader.Dispose(System.Boolean)
+    name: Dispose
+    fullName: System.IO.TextReader.Dispose
+    href: System.IO.TextReader.yml
+  - name: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.TextReader.Dispose(System.Boolean)
+    name: Dispose
+    fullName: System.IO.TextReader.Dispose
+    href: System.IO.TextReader.yml
+  - name: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+- uid: System.IO.TextReader.Peek
+  parent: System.IO.TextReader
+  isExternal: false
+  href: System.IO.TextReader.yml
+  name: Peek()
+  fullName: System.IO.TextReader.Peek()
+  spec.csharp:
+  - uid: System.IO.TextReader.Peek
+    name: Peek
+    fullName: System.IO.TextReader.Peek
+    href: System.IO.TextReader.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.TextReader.Peek
+    name: Peek
+    fullName: System.IO.TextReader.Peek
+    href: System.IO.TextReader.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.IO.TextReader.Read
+  parent: System.IO.TextReader
+  isExternal: false
+  href: System.IO.TextReader.yml
+  name: Read()
+  fullName: System.IO.TextReader.Read()
+  spec.csharp:
+  - uid: System.IO.TextReader.Read
+    name: Read
+    fullName: System.IO.TextReader.Read
+    href: System.IO.TextReader.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.TextReader.Read
+    name: Read
+    fullName: System.IO.TextReader.Read
+    href: System.IO.TextReader.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.IO.TextReader.Read(System.Char[],System.Int32,System.Int32)
+  parent: System.IO.TextReader
+  isExternal: false
+  href: System.IO.TextReader.yml
+  name: Read(Char[], Int32, Int32)
+  name.vb: Read(Char(), Int32, Int32)
+  fullName: System.IO.TextReader.Read(System.Char[], System.Int32, System.Int32)
+  fullName.vb: System.IO.TextReader.Read(System.Char(), System.Int32, System.Int32)
+  spec.csharp:
+  - uid: System.IO.TextReader.Read(System.Char[],System.Int32,System.Int32)
+    name: Read
+    fullName: System.IO.TextReader.Read
+    href: System.IO.TextReader.yml
+  - name: (
+    fullName: (
+  - uid: System.Char
+    name: Char
+    fullName: System.Char
+    href: System.Char.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.TextReader.Read(System.Char[],System.Int32,System.Int32)
+    name: Read
+    fullName: System.IO.TextReader.Read
+    href: System.IO.TextReader.yml
+  - name: (
+    fullName: (
+  - uid: System.Char
+    name: Char
+    fullName: System.Char
+    href: System.Char.yml
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Char[]
+  isExternal: true
+  name: Char[]
+  name.vb: Char()
+  fullName: System.Char[]
+  fullName.vb: System.Char()
+  spec.csharp:
+  - uid: System.Char
+    name: Char
+    fullName: System.Char
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Char
+    name: Char
+    fullName: System.Char
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.IO.TextReader.ReadToEnd
+  parent: System.IO.TextReader
+  isExternal: false
+  href: System.IO.TextReader.yml
+  name: ReadToEnd()
+  fullName: System.IO.TextReader.ReadToEnd()
+  spec.csharp:
+  - uid: System.IO.TextReader.ReadToEnd
+    name: ReadToEnd
+    fullName: System.IO.TextReader.ReadToEnd
+    href: System.IO.TextReader.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.TextReader.ReadToEnd
+    name: ReadToEnd
+    fullName: System.IO.TextReader.ReadToEnd
+    href: System.IO.TextReader.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.IO.TextReader.ReadBlock(System.Char[],System.Int32,System.Int32)
+  parent: System.IO.TextReader
+  isExternal: false
+  href: System.IO.TextReader.yml
+  name: ReadBlock(Char[], Int32, Int32)
+  name.vb: ReadBlock(Char(), Int32, Int32)
+  fullName: System.IO.TextReader.ReadBlock(System.Char[], System.Int32, System.Int32)
+  fullName.vb: System.IO.TextReader.ReadBlock(System.Char(), System.Int32, System.Int32)
+  spec.csharp:
+  - uid: System.IO.TextReader.ReadBlock(System.Char[],System.Int32,System.Int32)
+    name: ReadBlock
+    fullName: System.IO.TextReader.ReadBlock
+    href: System.IO.TextReader.yml
+  - name: (
+    fullName: (
+  - uid: System.Char
+    name: Char
+    fullName: System.Char
+    href: System.Char.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.TextReader.ReadBlock(System.Char[],System.Int32,System.Int32)
+    name: ReadBlock
+    fullName: System.IO.TextReader.ReadBlock
+    href: System.IO.TextReader.yml
+  - name: (
+    fullName: (
+  - uid: System.Char
+    name: Char
+    fullName: System.Char
+    href: System.Char.yml
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.IO.TextReader.ReadLine
+  parent: System.IO.TextReader
+  isExternal: false
+  href: System.IO.TextReader.yml
+  name: ReadLine()
+  fullName: System.IO.TextReader.ReadLine()
+  spec.csharp:
+  - uid: System.IO.TextReader.ReadLine
+    name: ReadLine
+    fullName: System.IO.TextReader.ReadLine
+    href: System.IO.TextReader.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.TextReader.ReadLine
+    name: ReadLine
+    fullName: System.IO.TextReader.ReadLine
+    href: System.IO.TextReader.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.IO.TextReader.ReadLineAsync
+  parent: System.IO.TextReader
+  isExternal: false
+  href: System.IO.TextReader.yml
+  name: ReadLineAsync()
+  fullName: System.IO.TextReader.ReadLineAsync()
+  spec.csharp:
+  - uid: System.IO.TextReader.ReadLineAsync
+    name: ReadLineAsync
+    fullName: System.IO.TextReader.ReadLineAsync
+    href: System.IO.TextReader.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.TextReader.ReadLineAsync
+    name: ReadLineAsync
+    fullName: System.IO.TextReader.ReadLineAsync
+    href: System.IO.TextReader.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<String>
+  name.vb: Task(Of String)
+  fullName: System.Threading.Tasks.Task<System.String>
+  fullName.vb: System.Threading.Tasks.Task(Of System.String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  name.vb: Task(Of TResult)
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  type: Namespace
+- uid: System.IO.TextReader.ReadToEndAsync
+  parent: System.IO.TextReader
+  isExternal: false
+  href: System.IO.TextReader.yml
+  name: ReadToEndAsync()
+  fullName: System.IO.TextReader.ReadToEndAsync()
+  spec.csharp:
+  - uid: System.IO.TextReader.ReadToEndAsync
+    name: ReadToEndAsync
+    fullName: System.IO.TextReader.ReadToEndAsync
+    href: System.IO.TextReader.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.TextReader.ReadToEndAsync
+    name: ReadToEndAsync
+    fullName: System.IO.TextReader.ReadToEndAsync
+    href: System.IO.TextReader.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.IO.TextReader.ReadAsync(System.Char[],System.Int32,System.Int32)
+  parent: System.IO.TextReader
+  isExternal: false
+  href: System.IO.TextReader.yml
+  name: ReadAsync(Char[], Int32, Int32)
+  name.vb: ReadAsync(Char(), Int32, Int32)
+  fullName: System.IO.TextReader.ReadAsync(System.Char[], System.Int32, System.Int32)
+  fullName.vb: System.IO.TextReader.ReadAsync(System.Char(), System.Int32, System.Int32)
+  spec.csharp:
+  - uid: System.IO.TextReader.ReadAsync(System.Char[],System.Int32,System.Int32)
+    name: ReadAsync
+    fullName: System.IO.TextReader.ReadAsync
+    href: System.IO.TextReader.yml
+  - name: (
+    fullName: (
+  - uid: System.Char
+    name: Char
+    fullName: System.Char
+    href: System.Char.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.TextReader.ReadAsync(System.Char[],System.Int32,System.Int32)
+    name: ReadAsync
+    fullName: System.IO.TextReader.ReadAsync
+    href: System.IO.TextReader.yml
+  - name: (
+    fullName: (
+  - uid: System.Char
+    name: Char
+    fullName: System.Char
+    href: System.Char.yml
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Int32}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Int32>
+  name.vb: Task(Of Int32)
+  fullName: System.Threading.Tasks.Task<System.Int32>
+  fullName.vb: System.Threading.Tasks.Task(Of System.Int32)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.IO.TextReader.ReadBlockAsync(System.Char[],System.Int32,System.Int32)
+  parent: System.IO.TextReader
+  isExternal: false
+  href: System.IO.TextReader.yml
+  name: ReadBlockAsync(Char[], Int32, Int32)
+  name.vb: ReadBlockAsync(Char(), Int32, Int32)
+  fullName: System.IO.TextReader.ReadBlockAsync(System.Char[], System.Int32, System.Int32)
+  fullName.vb: System.IO.TextReader.ReadBlockAsync(System.Char(), System.Int32, System.Int32)
+  spec.csharp:
+  - uid: System.IO.TextReader.ReadBlockAsync(System.Char[],System.Int32,System.Int32)
+    name: ReadBlockAsync
+    fullName: System.IO.TextReader.ReadBlockAsync
+    href: System.IO.TextReader.yml
+  - name: (
+    fullName: (
+  - uid: System.Char
+    name: Char
+    fullName: System.Char
+    href: System.Char.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.IO.TextReader.ReadBlockAsync(System.Char[],System.Int32,System.Int32)
+    name: ReadBlockAsync
+    fullName: System.IO.TextReader.ReadBlockAsync
+    href: System.IO.TextReader.yml
+  - name: (
+    fullName: (
+  - uid: System.Char
+    name: Char
+    fullName: System.Char
+    href: System.Char.yml
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )

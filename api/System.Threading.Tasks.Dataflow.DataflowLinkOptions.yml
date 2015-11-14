@@ -1,0 +1,373 @@
+items:
+- uid: System.Threading.Tasks.Dataflow.DataflowLinkOptions
+  id: DataflowLinkOptions
+  parent: System.Threading.Tasks.Dataflow
+  children:
+  - System.Threading.Tasks.Dataflow.DataflowLinkOptions.#ctor
+  - System.Threading.Tasks.Dataflow.DataflowLinkOptions.Append
+  - System.Threading.Tasks.Dataflow.DataflowLinkOptions.MaxMessages
+  - System.Threading.Tasks.Dataflow.DataflowLinkOptions.PropagateCompletion
+  href: System.Threading.Tasks.Dataflow.DataflowLinkOptions.yml
+  name: DataflowLinkOptions
+  fullName: System.Threading.Tasks.Dataflow.DataflowLinkOptions
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowLinkOptions.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowLinkOptions.cs
+    startLine: 45
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Provides options used to configure a link between dataflow blocks.
+  remarks: >-
+    @'System.Threading.Tasks.Dataflow.DataflowLinkOptions' is mutable and can be configured through its properties.
+
+    When specific configuration options are not set, the following defaults are used:
+
+    <list type="table"><listheader><term>Options</term><description>Default</description></listheader><item><term>PropagateCompletion</term><description>False</description></item><item><term>MaxMessages</term><description>DataflowBlockOptions.Unbounded (-1)</description></item><item><term>Append</term><description>True</description></item></list>
+
+    Dataflow blocks capture the state of the options at linking. Subsequent changes to the provided
+
+    @'System.Threading.Tasks.Dataflow.DataflowLinkOptions' instance should not affect the behavior of a link.
+  syntax:
+    content: public class DataflowLinkOptions
+    content.vb: Public Class DataflowLinkOptions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Threading.Tasks.Dataflow.DataflowLinkOptions.#ctor
+  id: '#ctor'
+  parent: System.Threading.Tasks.Dataflow.DataflowLinkOptions
+  href: System.Threading.Tasks.Dataflow.DataflowLinkOptions.yml
+  name: DataflowLinkOptions()
+  fullName: System.Threading.Tasks.Dataflow.DataflowLinkOptions.DataflowLinkOptions()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowLinkOptions.cs
+    startLine: 74
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Initializes the @'System.Threading.Tasks.Dataflow.DataflowLinkOptions'.
+  syntax:
+    content: public DataflowLinkOptions()
+    content.vb: Public Sub New
+- uid: System.Threading.Tasks.Dataflow.DataflowLinkOptions.PropagateCompletion
+  id: PropagateCompletion
+  parent: System.Threading.Tasks.Dataflow.DataflowLinkOptions
+  href: System.Threading.Tasks.Dataflow.DataflowLinkOptions.yml
+  name: PropagateCompletion
+  fullName: System.Threading.Tasks.Dataflow.DataflowLinkOptions.PropagateCompletion
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowLinkOptions.cs
+    startLine: 79
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Gets or sets whether the linked target will have completion and faulting notification propagated to it automatically.
+  syntax:
+    content: public bool PropagateCompletion { get; set; }
+    content.vb: Public Property PropagateCompletion As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: Returns @'System.Boolean'.
+- uid: System.Threading.Tasks.Dataflow.DataflowLinkOptions.MaxMessages
+  id: MaxMessages
+  parent: System.Threading.Tasks.Dataflow.DataflowLinkOptions
+  href: System.Threading.Tasks.Dataflow.DataflowLinkOptions.yml
+  name: MaxMessages
+  fullName: System.Threading.Tasks.Dataflow.DataflowLinkOptions.MaxMessages
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowLinkOptions.cs
+    startLine: 90
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: Gets or sets the maximum number of messages that may be consumed across the link.
+  syntax:
+    content: public int MaxMessages { get; set; }
+    content.vb: Public Property MaxMessages As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: Returns @'System.Int32'.
+- uid: System.Threading.Tasks.Dataflow.DataflowLinkOptions.Append
+  id: Append
+  parent: System.Threading.Tasks.Dataflow.DataflowLinkOptions
+  href: System.Threading.Tasks.Dataflow.DataflowLinkOptions.yml
+  name: Append
+  fullName: System.Threading.Tasks.Dataflow.DataflowLinkOptions.Append
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Threading.Tasks.Dataflow/src/Base/DataflowLinkOptions.cs
+    startLine: 102
+  assemblies:
+  - System.Threading.Tasks.Dataflow
+  namespace: System.Threading.Tasks.Dataflow
+  summary: "Gets or sets whether the link should be appended to the source’s list of links, or whether it should be prepended."
+  syntax:
+    content: public bool Append { get; set; }
+    content.vb: Public Property Append As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: Returns @'System.Boolean'.
+references:
+- uid: System.Threading.Tasks.Dataflow.DataflowLinkOptions
+  parent: System.Threading.Tasks.Dataflow
+  isExternal: false
+  href: System.Threading.Tasks.Dataflow.DataflowLinkOptions.yml
+  name: DataflowLinkOptions
+  fullName: System.Threading.Tasks.Dataflow.DataflowLinkOptions
+  type: Class
+  summary: Provides options used to configure a link between dataflow blocks.
+- uid: System.Threading.Tasks.Dataflow
+  isExternal: false
+  name: System.Threading.Tasks.Dataflow
+  fullName: System.Threading.Tasks.Dataflow
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32

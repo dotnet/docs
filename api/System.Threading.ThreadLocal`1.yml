@@ -1,0 +1,751 @@
+items:
+- uid: System.Threading.ThreadLocal`1
+  id: ThreadLocal`1
+  parent: System.Threading
+  children:
+  - System.Threading.ThreadLocal`1.#ctor
+  - System.Threading.ThreadLocal`1.#ctor(System.Boolean)
+  - System.Threading.ThreadLocal`1.#ctor(System.Func{`0})
+  - System.Threading.ThreadLocal`1.#ctor(System.Func{`0},System.Boolean)
+  - System.Threading.ThreadLocal`1.Dispose
+  - System.Threading.ThreadLocal`1.Dispose(System.Boolean)
+  - System.Threading.ThreadLocal`1.Finalize
+  - System.Threading.ThreadLocal`1.IsValueCreated
+  - System.Threading.ThreadLocal`1.ToString
+  - System.Threading.ThreadLocal`1.Value
+  - System.Threading.ThreadLocal`1.Values
+  href: System.Threading.ThreadLocal`1.yml
+  name: ThreadLocal<T>
+  name.vb: ThreadLocal(Of T)
+  fullName: System.Threading.ThreadLocal<T>
+  fullName.vb: System.Threading.ThreadLocal(Of T)
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Threading/ThreadLocal.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Threading/ThreadLocal.cs
+    startLine: 34
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Provides thread-local storage of data.
+  remarks: >-
+    <para>
+
+    With the exception of @'System.Threading.ThreadLocal`1.Dispose', all public and protected members of
+
+    @'System.Threading.ThreadLocal`1' are thread-safe and may be used
+
+    concurrently from multiple threads.
+
+    </para>
+  syntax:
+    content: 'public class ThreadLocal<T> : IDisposable'
+    content.vb: Public Class ThreadLocal(Of T) Implements IDisposable
+    typeParameters:
+    - id: T
+      description: Specifies the type of data stored per-thread.
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Threading.ThreadLocal`1.#ctor
+  id: '#ctor'
+  parent: System.Threading.ThreadLocal`1
+  href: System.Threading.ThreadLocal`1.yml
+  name: ThreadLocal()
+  fullName: System.Threading.ThreadLocal<T>.ThreadLocal()
+  fullName.vb: System.Threading.ThreadLocal(Of T).ThreadLocal()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadLocal.cs
+    startLine: 79
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Initializes the @'System.Threading.ThreadLocal`1' instance.
+  syntax:
+    content: public ThreadLocal()
+    content.vb: Public Sub New
+- uid: System.Threading.ThreadLocal`1.#ctor(System.Boolean)
+  id: '#ctor(System.Boolean)'
+  parent: System.Threading.ThreadLocal`1
+  href: System.Threading.ThreadLocal`1.yml
+  name: ThreadLocal(Boolean)
+  fullName: System.Threading.ThreadLocal<T>.ThreadLocal(System.Boolean)
+  fullName.vb: System.Threading.ThreadLocal(Of T).ThreadLocal(System.Boolean)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadLocal.cs
+    startLine: 88
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Initializes the @'System.Threading.ThreadLocal`1' instance.
+  syntax:
+    content: public ThreadLocal(bool trackAllValues)
+    content.vb: Public Sub New(trackAllValues As Boolean)
+    parameters:
+    - id: trackAllValues
+      type: System.Boolean
+      description: Whether to track all values set on the instance and expose them through the @'System.Threading.ThreadLocal`1.Values' property.
+- uid: System.Threading.ThreadLocal`1.#ctor(System.Func{`0})
+  id: '#ctor(System.Func{`0})'
+  parent: System.Threading.ThreadLocal`1
+  href: System.Threading.ThreadLocal`1.yml
+  name: ThreadLocal(Func<T>)
+  name.vb: ThreadLocal(Func(Of T))
+  fullName: System.Threading.ThreadLocal<T>.ThreadLocal(System.Func<T>)
+  fullName.vb: System.Threading.ThreadLocal(Of T).ThreadLocal(System.Func(Of T))
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadLocal.cs
+    startLine: 105
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Initializes the @'System.Threading.ThreadLocal`1' instance with the specified *valueFactory* function.
+  syntax:
+    content: public ThreadLocal(Func<T> valueFactory)
+    content.vb: Public Sub New(valueFactory As Func(Of T))
+    parameters:
+    - id: valueFactory
+      type: System.Func{{T}}
+      description: The  @'System.Func`1' invoked to produce a lazily-initialized value when an attempt is made to retrieve @'System.Threading.ThreadLocal`1.Value' without it having been previously initialized.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*valueFactory* is a null reference (Nothing in Visual Basic).'
+- uid: System.Threading.ThreadLocal`1.#ctor(System.Func{`0},System.Boolean)
+  id: '#ctor(System.Func{`0},System.Boolean)'
+  parent: System.Threading.ThreadLocal`1
+  href: System.Threading.ThreadLocal`1.yml
+  name: ThreadLocal(Func<T>, Boolean)
+  name.vb: ThreadLocal(Func(Of T), Boolean)
+  fullName: System.Threading.ThreadLocal<T>.ThreadLocal(System.Func<T>, System.Boolean)
+  fullName.vb: System.Threading.ThreadLocal(Of T).ThreadLocal(System.Func(Of T), System.Boolean)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadLocal.cs
+    startLine: 125
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Initializes the @'System.Threading.ThreadLocal`1' instance with the specified *valueFactory* function.
+  syntax:
+    content: public ThreadLocal(Func<T> valueFactory, bool trackAllValues)
+    content.vb: Public Sub New(valueFactory As Func(Of T), trackAllValues As Boolean)
+    parameters:
+    - id: valueFactory
+      type: System.Func{{T}}
+      description: The @'System.Func`1' invoked to produce a lazily-initialized value when an attempt is made to retrieve @'System.Threading.ThreadLocal`1.Value' without it having been previously initialized.
+    - id: trackAllValues
+      type: System.Boolean
+      description: Whether to track all values set on the instance and expose them via the @'System.Threading.ThreadLocal`1.Values' property.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*valueFactory* is a null reference (Nothing in Visual Basic).'
+- uid: System.Threading.ThreadLocal`1.Finalize
+  id: Finalize
+  parent: System.Threading.ThreadLocal`1
+  href: System.Threading.ThreadLocal`1.yml
+  name: Finalize()
+  fullName: System.Threading.ThreadLocal<T>.Finalize()
+  fullName.vb: System.Threading.ThreadLocal(Of T).Finalize()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadLocal.cs
+    startLine: 154
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Releases the resources used by this @'System.Threading.ThreadLocal`1' instance.
+  syntax:
+    content: protected void Finalize()
+    content.vb: Protected Sub Finalize
+- uid: System.Threading.ThreadLocal`1.Dispose
+  id: Dispose
+  parent: System.Threading.ThreadLocal`1
+  href: System.Threading.ThreadLocal`1.yml
+  name: Dispose()
+  fullName: System.Threading.ThreadLocal<T>.Dispose()
+  fullName.vb: System.Threading.ThreadLocal(Of T).Dispose()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadLocal.cs
+    startLine: 168
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Releases all resources used by the current instance of the @'System.Threading.ThreadLocal`1' class.
+  remarks: Unlike most of the members of @'System.Threading.ThreadLocal{T}', this method is not thread-safe.
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+- uid: System.Threading.ThreadLocal`1.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: System.Threading.ThreadLocal`1
+  href: System.Threading.ThreadLocal`1.yml
+  name: Dispose(Boolean)
+  fullName: System.Threading.ThreadLocal<T>.Dispose(System.Boolean)
+  fullName.vb: System.Threading.ThreadLocal(Of T).Dispose(System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadLocal.cs
+    startLine: 183
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Releases the resources used by this @'System.Threading.ThreadLocal`1' instance.
+  remarks: Unlike most of the members of @'System.Threading.ThreadLocal{T}', this method is not thread-safe.
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: A Boolean value that indicates whether this method is being called due to a call to @'System.Threading.ThreadLocal`1.Dispose'.
+- uid: System.Threading.ThreadLocal`1.ToString
+  id: ToString
+  parent: System.Threading.ThreadLocal`1
+  href: System.Threading.ThreadLocal`1.yml
+  name: ToString()
+  fullName: System.Threading.ThreadLocal<T>.ToString()
+  fullName.vb: System.Threading.ThreadLocal(Of T).ToString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadLocal.cs
+    startLine: 241
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Creates and returns a string representation of this instance for the current thread.
+  remarks: >-
+    Calling this method forces initialization for the current thread, as is the
+
+    case with accessing @'System.Threading.ThreadLocal`1.Value' directly.
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+      description: The result of calling @'System.Object.ToString' on the @'System.Threading.ThreadLocal`1.Value'.
+  overridden: System.Object.ToString
+  exceptions:
+  - type: System.ObjectDisposedException
+    description: The @'System.Threading.ThreadLocal`1' instance has been disposed.
+  - type: System.NullReferenceException
+    description: The @'System.Threading.ThreadLocal`1.Value' for the current thread is a null reference (Nothing in Visual Basic).
+  - type: System.InvalidOperationException
+    description: The initialization function attempted to reference @'System.Threading.ThreadLocal`1.Value' recursively.
+  - type: System.MissingMemberException
+    description: No default constructor is provided and no value factory is supplied.
+- uid: System.Threading.ThreadLocal`1.Value
+  id: Value
+  parent: System.Threading.ThreadLocal`1
+  href: System.Threading.ThreadLocal`1.yml
+  name: Value
+  fullName: System.Threading.ThreadLocal<T>.Value
+  fullName.vb: System.Threading.ThreadLocal(Of T).Value
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadLocal.cs
+    startLine: 262
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Gets or sets the value of this instance for the current thread.
+  remarks: >-
+    If this instance was not previously initialized for the current thread,
+
+    accessing @'System.Threading.ThreadLocal`1.Value' will attempt to initialize it. If an initialization function was
+
+    supplied during the construction, that initialization will happen by invoking the function
+
+    to retrieve the initial value for @'System.Threading.ThreadLocal`1.Value'.  Otherwise, the default value of
+
+    <typeparamref name="T" /> will be used.
+  syntax:
+    content: public T Value { get; set; }
+    content.vb: Public Property Value As T
+    parameters: []
+    return:
+      type: '{T}'
+      description: Returns an instance of the object that this ThreadLocal is responsible for initializing.
+  exceptions:
+  - type: System.ObjectDisposedException
+    description: The @'System.Threading.ThreadLocal`1' instance has been disposed.
+  - type: System.InvalidOperationException
+    description: The initialization function attempted to reference @'System.Threading.ThreadLocal`1.Value' recursively.
+  - type: System.MissingMemberException
+    description: No default constructor is provided and no value factory is supplied.
+- uid: System.Threading.ThreadLocal`1.Values
+  id: Values
+  parent: System.Threading.ThreadLocal`1
+  href: System.Threading.ThreadLocal`1.yml
+  name: Values
+  fullName: System.Threading.ThreadLocal<T>.Values
+  fullName.vb: System.Threading.ThreadLocal(Of T).Values
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadLocal.cs
+    startLine: 452
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Gets a list for all of the values currently stored by all of the threads that have accessed this instance.
+  syntax:
+    content: public IList<T> Values { get; }
+    content.vb: Public ReadOnly Property Values As IList(Of T)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{{T}}
+      description: A list for all of the values currently stored by all of the threads that have accessed this instance.
+  exceptions:
+  - type: System.ObjectDisposedException
+    description: The @'System.Threading.ThreadLocal`1' instance has been disposed.
+- uid: System.Threading.ThreadLocal`1.IsValueCreated
+  id: IsValueCreated
+  parent: System.Threading.ThreadLocal`1
+  href: System.Threading.ThreadLocal`1.yml
+  name: IsValueCreated
+  fullName: System.Threading.ThreadLocal<T>.IsValueCreated
+  fullName.vb: System.Threading.ThreadLocal(Of T).IsValueCreated
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/ThreadLocal.cs
+    startLine: 508
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Gets whether @'System.Threading.ThreadLocal`1.Value' is initialized on the current thread.
+  syntax:
+    content: public bool IsValueCreated { get; }
+    content.vb: Public ReadOnly Property IsValueCreated As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if @'System.Threading.ThreadLocal`1.Value' is initialized on the current thread; otherwise false.
+  exceptions:
+  - type: System.ObjectDisposedException
+    description: The @'System.Threading.ThreadLocal`1' instance has been disposed.
+references:
+- uid: System.Threading.ThreadLocal`1.Dispose
+- uid: System.Threading.ThreadLocal`1
+  isExternal: false
+  href: System.Threading.ThreadLocal`1.yml
+  name: ThreadLocal<T>
+  name.vb: ThreadLocal(Of T)
+  fullName: System.Threading.ThreadLocal<T>
+  fullName.vb: System.Threading.ThreadLocal(Of T)
+  type: Class
+  summary: Provides thread-local storage of data.
+  spec.csharp:
+  - uid: System.Threading.ThreadLocal`1
+    name: ThreadLocal
+    fullName: System.Threading.ThreadLocal
+    href: System.Threading.ThreadLocal`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.ThreadLocal`1
+    name: ThreadLocal
+    fullName: System.Threading.ThreadLocal
+    href: System.Threading.ThreadLocal`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Func{T}
+- uid: System.Threading.ThreadLocal`1.Value
+- uid: System.ArgumentNullException
+- uid: System.Func{{T}}
+  parent: System
+  definition: System.Func`1
+  name: Func<T>
+  name.vb: Func(Of T)
+  fullName: System.Func<T>
+  fullName.vb: System.Func(Of T)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Func`1
+  parent: System
+  isExternal: true
+  name: Func<TResult>
+  name.vb: Func(Of TResult)
+  fullName: System.Func<TResult>
+  fullName.vb: System.Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.ThreadLocal{T}
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.NullReferenceException
+  isExternal: false
+  href: System.NullReferenceException.yml
+  name: NullReferenceException
+  fullName: System.NullReferenceException
+  type: Class
+- uid: System.InvalidOperationException
+- uid: System.ObjectDisposedException
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: '{T}'
+  isExternal: false
+  name: T
+  fullName: T
+- uid: System.Collections.Generic.IList{{T}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<T>
+  name.vb: IList(Of T)
+  fullName: System.Collections.Generic.IList<T>
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IList`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IList<T>
+  name.vb: IList(Of T)
+  fullName: System.Collections.Generic.IList<T>
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic

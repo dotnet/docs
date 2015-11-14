@@ -1,0 +1,147 @@
+items:
+- uid: System.Diagnostics.SymbolStore.ISymbolNamespace
+  id: ISymbolNamespace
+  parent: System.Diagnostics.SymbolStore
+  children:
+  - System.Diagnostics.SymbolStore.ISymbolNamespace.GetNamespaces
+  - System.Diagnostics.SymbolStore.ISymbolNamespace.GetVariables
+  - System.Diagnostics.SymbolStore.ISymbolNamespace.Name
+  href: System.Diagnostics.SymbolStore.ISymbolNamespace.yml
+  name: ISymbolNamespace
+  fullName: System.Diagnostics.SymbolStore.ISymbolNamespace
+  type: Interface
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymNamespace.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymNamespace.cs
+    startLine: 16
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Represents a namespace within a symbol store.
+  syntax:
+    content: public interface ISymbolNamespace
+    content.vb: Public Interface ISymbolNamespace
+- uid: System.Diagnostics.SymbolStore.ISymbolNamespace.Name
+  id: Name
+  parent: System.Diagnostics.SymbolStore.ISymbolNamespace
+  href: System.Diagnostics.SymbolStore.ISymbolNamespace.yml
+  name: Name
+  fullName: System.Diagnostics.SymbolStore.ISymbolNamespace.Name
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymNamespace.cs
+    startLine: 20
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Gets the current namespace.
+  syntax:
+    content: string Name { get; }
+    content.vb: ReadOnly Property Name As String
+    parameters: []
+    return:
+      type: System.String
+      description: The current namespace.
+- uid: System.Diagnostics.SymbolStore.ISymbolNamespace.GetNamespaces
+  id: GetNamespaces
+  parent: System.Diagnostics.SymbolStore.ISymbolNamespace
+  href: System.Diagnostics.SymbolStore.ISymbolNamespace.yml
+  name: GetNamespaces()
+  fullName: System.Diagnostics.SymbolStore.ISymbolNamespace.GetNamespaces()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymNamespace.cs
+    startLine: 23
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Gets the child members of the current namespace.
+  syntax:
+    content: ISymbolNamespace[] GetNamespaces()
+    content.vb: Function GetNamespaces As ISymbolNamespace()
+    return:
+      type: System.Diagnostics.SymbolStore.ISymbolNamespace[]
+      description: The child members of the current namespace.
+- uid: System.Diagnostics.SymbolStore.ISymbolNamespace.GetVariables
+  id: GetVariables
+  parent: System.Diagnostics.SymbolStore.ISymbolNamespace
+  href: System.Diagnostics.SymbolStore.ISymbolNamespace.yml
+  name: GetVariables()
+  fullName: System.Diagnostics.SymbolStore.ISymbolNamespace.GetVariables()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Diagnostics/SymbolStore/ISymNamespace.cs
+    startLine: 26
+  assemblies:
+  - mscorlib
+  namespace: System.Diagnostics.SymbolStore
+  summary: Gets all the variables defined at global scope within the current namespace.
+  syntax:
+    content: ISymbolVariable[] GetVariables()
+    content.vb: Function GetVariables As ISymbolVariable()
+    return:
+      type: System.Diagnostics.SymbolStore.ISymbolVariable[]
+      description: The variables defined at global scope within the current namespace.
+references:
+- uid: System.Diagnostics.SymbolStore
+  isExternal: false
+  name: System.Diagnostics.SymbolStore
+  fullName: System.Diagnostics.SymbolStore
+  type: Namespace
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Diagnostics.SymbolStore.ISymbolNamespace[]
+  isExternal: false
+  href: System.Diagnostics.SymbolStore.ISymbolNamespace.yml
+  name: ISymbolNamespace[]
+  name.vb: ISymbolNamespace()
+  fullName: System.Diagnostics.SymbolStore.ISymbolNamespace[]
+  fullName.vb: System.Diagnostics.SymbolStore.ISymbolNamespace()
+  spec.csharp:
+  - uid: System.Diagnostics.SymbolStore.ISymbolNamespace
+    name: ISymbolNamespace
+    fullName: System.Diagnostics.SymbolStore.ISymbolNamespace
+    href: System.Diagnostics.SymbolStore.ISymbolNamespace.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Diagnostics.SymbolStore.ISymbolNamespace
+    name: ISymbolNamespace
+    fullName: System.Diagnostics.SymbolStore.ISymbolNamespace
+    href: System.Diagnostics.SymbolStore.ISymbolNamespace.yml
+  - name: ()
+    fullName: ()
+- uid: System.Diagnostics.SymbolStore.ISymbolVariable[]
+  isExternal: false
+  href: System.Diagnostics.SymbolStore.ISymbolVariable.yml
+  name: ISymbolVariable[]
+  name.vb: ISymbolVariable()
+  fullName: System.Diagnostics.SymbolStore.ISymbolVariable[]
+  fullName.vb: System.Diagnostics.SymbolStore.ISymbolVariable()
+  spec.csharp:
+  - uid: System.Diagnostics.SymbolStore.ISymbolVariable
+    name: ISymbolVariable
+    fullName: System.Diagnostics.SymbolStore.ISymbolVariable
+    href: System.Diagnostics.SymbolStore.ISymbolVariable.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Diagnostics.SymbolStore.ISymbolVariable
+    name: ISymbolVariable
+    fullName: System.Diagnostics.SymbolStore.ISymbolVariable
+    href: System.Diagnostics.SymbolStore.ISymbolVariable.yml
+  - name: ()
+    fullName: ()

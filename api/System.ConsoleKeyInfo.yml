@@ -1,0 +1,506 @@
+items:
+- uid: System.ConsoleKeyInfo
+  id: ConsoleKeyInfo
+  parent: System
+  children:
+  - System.ConsoleKeyInfo.#ctor(System.Char,System.ConsoleKey,System.Boolean,System.Boolean,System.Boolean)
+  - System.ConsoleKeyInfo.Equals(System.ConsoleKeyInfo)
+  - System.ConsoleKeyInfo.Equals(System.Object)
+  - System.ConsoleKeyInfo.GetHashCode
+  - System.ConsoleKeyInfo.Key
+  - System.ConsoleKeyInfo.KeyChar
+  - System.ConsoleKeyInfo.Modifiers
+  - System.ConsoleKeyInfo.op_Equality(System.ConsoleKeyInfo,System.ConsoleKeyInfo)
+  - System.ConsoleKeyInfo.op_Inequality(System.ConsoleKeyInfo,System.ConsoleKeyInfo)
+  href: System.ConsoleKeyInfo.yml
+  name: ConsoleKeyInfo
+  fullName: System.ConsoleKeyInfo
+  type: Struct
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/ConsoleKeyInfo.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/ConsoleKeyInfo.cs
+    startLine: 13
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Describes the console key that was pressed, including the character represented by the console key and the state of the SHIFT, ALT, and CTRL modifier keys.
+  syntax:
+    content: public struct ConsoleKeyInfo
+    content.vb: Public Structure ConsoleKeyInfo
+  inheritedMembers:
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.ConsoleKeyInfo.#ctor(System.Char,System.ConsoleKey,System.Boolean,System.Boolean,System.Boolean)
+  id: '#ctor(System.Char,System.ConsoleKey,System.Boolean,System.Boolean,System.Boolean)'
+  parent: System.ConsoleKeyInfo
+  href: System.ConsoleKeyInfo.yml
+  name: ConsoleKeyInfo(Char, ConsoleKey, Boolean, Boolean, Boolean)
+  fullName: System.ConsoleKeyInfo.ConsoleKeyInfo(System.Char, System.ConsoleKey, System.Boolean, System.Boolean, System.Boolean)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKeyInfo.cs
+    startLine: 19
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of the @'System.ConsoleKeyInfo' structure using the specified character, console key, and modifier keys.
+  syntax:
+    content: public ConsoleKeyInfo(char keyChar, ConsoleKey key, bool shift, bool alt, bool control)
+    content.vb: Public Sub New(keyChar As Char, key As ConsoleKey, shift As Boolean, alt As Boolean, control As Boolean)
+    parameters:
+    - id: keyChar
+      type: System.Char
+      description: The Unicode character that corresponds to the *key* parameter.
+    - id: key
+      type: System.ConsoleKey
+      description: The console key that corresponds to the *keyChar* parameter.
+    - id: shift
+      type: System.Boolean
+      description: true to indicate that a SHIFT key was pressed; otherwise, false.
+    - id: alt
+      type: System.Boolean
+      description: true to indicate that an ALT key was pressed; otherwise, false.
+    - id: control
+      type: System.Boolean
+      description: true to indicate that a CTRL key was pressed; otherwise, false.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: The numeric value of the *key* parameter is less than 0 or greater than 255.
+- uid: System.ConsoleKeyInfo.KeyChar
+  id: KeyChar
+  parent: System.ConsoleKeyInfo
+  href: System.ConsoleKeyInfo.yml
+  name: KeyChar
+  fullName: System.ConsoleKeyInfo.KeyChar
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKeyInfo.cs
+    startLine: 39
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the Unicode character represented by the current @'System.ConsoleKeyInfo' object.
+  syntax:
+    content: public char KeyChar { get; }
+    content.vb: Public ReadOnly Property KeyChar As Char
+    parameters: []
+    return:
+      type: System.Char
+      description: An object that corresponds to the console key represented by the current @'System.ConsoleKeyInfo' object.
+- uid: System.ConsoleKeyInfo.Key
+  id: Key
+  parent: System.ConsoleKeyInfo
+  href: System.ConsoleKeyInfo.yml
+  name: Key
+  fullName: System.ConsoleKeyInfo.Key
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKeyInfo.cs
+    startLine: 43
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the console key represented by the current @'System.ConsoleKeyInfo' object.
+  syntax:
+    content: public ConsoleKey Key { get; }
+    content.vb: Public ReadOnly Property Key As ConsoleKey
+    parameters: []
+    return:
+      type: System.ConsoleKey
+      description: A value that identifies the console key that was pressed.
+- uid: System.ConsoleKeyInfo.Modifiers
+  id: Modifiers
+  parent: System.ConsoleKeyInfo
+  href: System.ConsoleKeyInfo.yml
+  name: Modifiers
+  fullName: System.ConsoleKeyInfo.Modifiers
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKeyInfo.cs
+    startLine: 47
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets a bitwise combination of @'System.ConsoleModifiers' values that specifies one or more modifier keys pressed simultaneously with the console key.
+  syntax:
+    content: public ConsoleModifiers Modifiers { get; }
+    content.vb: Public ReadOnly Property Modifiers As ConsoleModifiers
+    parameters: []
+    return:
+      type: System.ConsoleModifiers
+      description: A bitwise combination of the enumeration values. There is no default value.
+- uid: System.ConsoleKeyInfo.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.ConsoleKeyInfo
+  href: System.ConsoleKeyInfo.yml
+  name: Equals(Object)
+  fullName: System.ConsoleKeyInfo.Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKeyInfo.cs
+    startLine: 51
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets a value indicating whether the specified object is equal to the current @'System.ConsoleKeyInfo' object.
+  syntax:
+    content: public override bool Equals(object value)
+    content.vb: Public Overrides Function Equals(value As Object) As Boolean
+    parameters:
+    - id: value
+      type: System.Object
+      description: An object to compare to the current @'System.ConsoleKeyInfo' object.
+    return:
+      type: System.Boolean
+      description: true if *value* is a @'System.ConsoleKeyInfo' object and is equal to the current @'System.ConsoleKeyInfo' object; otherwise, false.
+  overridden: System.ValueType.Equals(System.Object)
+- uid: System.ConsoleKeyInfo.Equals(System.ConsoleKeyInfo)
+  id: Equals(System.ConsoleKeyInfo)
+  parent: System.ConsoleKeyInfo
+  href: System.ConsoleKeyInfo.yml
+  name: Equals(ConsoleKeyInfo)
+  fullName: System.ConsoleKeyInfo.Equals(System.ConsoleKeyInfo)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKeyInfo.cs
+    startLine: 59
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets a value indicating whether the specified @'System.ConsoleKeyInfo' object is equal to the current @'System.ConsoleKeyInfo' object.
+  syntax:
+    content: public bool Equals(ConsoleKeyInfo obj)
+    content.vb: Public Function Equals(obj As ConsoleKeyInfo) As Boolean
+    parameters:
+    - id: obj
+      type: System.ConsoleKeyInfo
+      description: An object to compare to the current @'System.ConsoleKeyInfo' object.
+    return:
+      type: System.Boolean
+      description: true if *obj* is equal to the current @'System.ConsoleKeyInfo' object; otherwise, false.
+- uid: System.ConsoleKeyInfo.op_Equality(System.ConsoleKeyInfo,System.ConsoleKeyInfo)
+  id: op_Equality(System.ConsoleKeyInfo,System.ConsoleKeyInfo)
+  parent: System.ConsoleKeyInfo
+  href: System.ConsoleKeyInfo.yml
+  name: Equality(ConsoleKeyInfo, ConsoleKeyInfo)
+  fullName: System.ConsoleKeyInfo.Equality(System.ConsoleKeyInfo, System.ConsoleKeyInfo)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKeyInfo.cs
+    startLine: 64
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether the specified @'System.ConsoleKeyInfo' objects are equal.
+  syntax:
+    content: public static bool operator ==(ConsoleKeyInfo a, ConsoleKeyInfo b)
+    content.vb: Public Shared Operator =(a As ConsoleKeyInfo, b As ConsoleKeyInfo) As Boolean
+    parameters:
+    - id: a
+      type: System.ConsoleKeyInfo
+      description: The first object to compare.
+    - id: b
+      type: System.ConsoleKeyInfo
+      description: The second object to compare.
+    return:
+      type: System.Boolean
+      description: true if *a* is equal to *b*; otherwise, false.
+- uid: System.ConsoleKeyInfo.op_Inequality(System.ConsoleKeyInfo,System.ConsoleKeyInfo)
+  id: op_Inequality(System.ConsoleKeyInfo,System.ConsoleKeyInfo)
+  parent: System.ConsoleKeyInfo
+  href: System.ConsoleKeyInfo.yml
+  name: Inequality(ConsoleKeyInfo, ConsoleKeyInfo)
+  fullName: System.ConsoleKeyInfo.Inequality(System.ConsoleKeyInfo, System.ConsoleKeyInfo)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKeyInfo.cs
+    startLine: 69
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether the specified @'System.ConsoleKeyInfo' objects are not equal.
+  syntax:
+    content: public static bool operator !=(ConsoleKeyInfo a, ConsoleKeyInfo b)
+    content.vb: Public Shared Operator <>(a As ConsoleKeyInfo, b As ConsoleKeyInfo) As Boolean
+    parameters:
+    - id: a
+      type: System.ConsoleKeyInfo
+      description: The first object to compare.
+    - id: b
+      type: System.ConsoleKeyInfo
+      description: The second object to compare.
+    return:
+      type: System.Boolean
+      description: true if *a* is not equal to *b*; otherwise, false.
+- uid: System.ConsoleKeyInfo.GetHashCode
+  id: GetHashCode
+  parent: System.ConsoleKeyInfo
+  href: System.ConsoleKeyInfo.yml
+  name: GetHashCode()
+  fullName: System.ConsoleKeyInfo.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/ConsoleKeyInfo.cs
+    startLine: 74
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns the hash code for the current @'System.ConsoleKeyInfo' object.
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: A 32-bit signed integer hash code.
+  overridden: System.ValueType.GetHashCode
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Char
+  parent: System
+  isExternal: true
+  name: Char
+  fullName: System.Char
+- uid: System.ConsoleKey
+  parent: System
+  isExternal: false
+  href: System.ConsoleKey.yml
+  name: ConsoleKey
+  fullName: System.ConsoleKey
+  type: Enum
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.ConsoleModifiers
+  parent: System
+  isExternal: false
+  href: System.ConsoleModifiers.yml
+  name: ConsoleModifiers
+  fullName: System.ConsoleModifiers
+  type: Enum
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.ConsoleKeyInfo
+  parent: System
+  isExternal: false
+  href: System.ConsoleKeyInfo.yml
+  name: ConsoleKeyInfo
+  fullName: System.ConsoleKeyInfo
+  type: Struct
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32

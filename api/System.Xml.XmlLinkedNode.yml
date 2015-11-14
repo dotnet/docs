@@ -1,0 +1,1087 @@
+items:
+- uid: System.Xml.XmlLinkedNode
+  id: XmlLinkedNode
+  parent: System.Xml
+  children:
+  - System.Xml.XmlLinkedNode.NextSibling
+  - System.Xml.XmlLinkedNode.PreviousSibling
+  href: System.Xml.XmlLinkedNode.yml
+  name: XmlLinkedNode
+  fullName: System.Xml.XmlLinkedNode
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlLinkedNode.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlLinkedNode.cs
+    startLine: 6
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets the node immediately preceding or following this node.
+  syntax:
+    content: 'public abstract class XmlLinkedNode : XmlNode, IEnumerable'
+    content.vb: Public MustInherit Class XmlLinkedNode Inherits XmlNode Implements IEnumerable
+  inheritance:
+  - System.Object
+  - System.Xml.XmlNode
+  implements:
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Xml.XmlNode.Name
+  - System.Xml.XmlNode.Value
+  - System.Xml.XmlNode.NodeType
+  - System.Xml.XmlNode.ParentNode
+  - System.Xml.XmlNode.ChildNodes
+  - System.Xml.XmlNode.Attributes
+  - System.Xml.XmlNode.OwnerDocument
+  - System.Xml.XmlNode.FirstChild
+  - System.Xml.XmlNode.LastChild
+  - System.Xml.XmlNode.InsertBefore(System.Xml.XmlNode,System.Xml.XmlNode)
+  - System.Xml.XmlNode.InsertAfter(System.Xml.XmlNode,System.Xml.XmlNode)
+  - System.Xml.XmlNode.ReplaceChild(System.Xml.XmlNode,System.Xml.XmlNode)
+  - System.Xml.XmlNode.RemoveChild(System.Xml.XmlNode)
+  - System.Xml.XmlNode.PrependChild(System.Xml.XmlNode)
+  - System.Xml.XmlNode.AppendChild(System.Xml.XmlNode)
+  - System.Xml.XmlNode.HasChildNodes
+  - System.Xml.XmlNode.CloneNode(System.Boolean)
+  - System.Xml.XmlNode.Normalize
+  - System.Xml.XmlNode.Supports(System.String,System.String)
+  - System.Xml.XmlNode.NamespaceURI
+  - System.Xml.XmlNode.Prefix
+  - System.Xml.XmlNode.LocalName
+  - System.Xml.XmlNode.IsReadOnly
+  - System.Xml.XmlNode.System#Collections#IEnumerable#GetEnumerator
+  - System.Xml.XmlNode.GetEnumerator
+  - System.Xml.XmlNode.InnerText
+  - System.Xml.XmlNode.OuterXml
+  - System.Xml.XmlNode.InnerXml
+  - System.Xml.XmlNode.BaseURI
+  - System.Xml.XmlNode.WriteTo(XmlWriter)
+  - System.Xml.XmlNode.WriteContentTo(XmlWriter)
+  - System.Xml.XmlNode.RemoveAll
+  - System.Xml.XmlNode.GetNamespaceOfPrefix(System.String)
+  - System.Xml.XmlNode.GetPrefixOfNamespace(System.String)
+  - System.Xml.XmlNode.Item(System.String)
+  - System.Xml.XmlNode.Item(System.String,System.String)
+  - System.Xml.XmlNode.PreviousText
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Xml.XmlLinkedNode.PreviousSibling
+  id: PreviousSibling
+  parent: System.Xml.XmlLinkedNode
+  href: System.Xml.XmlLinkedNode.yml
+  name: PreviousSibling
+  fullName: System.Xml.XmlLinkedNode.PreviousSibling
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlLinkedNode.cs
+    startLine: 20
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets the node immediately preceding this node.
+  syntax:
+    content: public override XmlNode PreviousSibling { get; }
+    content.vb: Public Overrides ReadOnly Property PreviousSibling As XmlNode
+    parameters: []
+    return:
+      type: System.Xml.XmlNode
+      description: The preceding @'System.Xml.XmlNode' or null if one does not exist.
+  overridden: System.Xml.XmlNode.PreviousSibling
+- uid: System.Xml.XmlLinkedNode.NextSibling
+  id: NextSibling
+  parent: System.Xml.XmlLinkedNode
+  href: System.Xml.XmlLinkedNode.yml
+  name: NextSibling
+  fullName: System.Xml.XmlLinkedNode.NextSibling
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlLinkedNode.cs
+    startLine: 44
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: Gets the node immediately following this node.
+  syntax:
+    content: public override XmlNode NextSibling { get; }
+    content.vb: Public Overrides ReadOnly Property NextSibling As XmlNode
+    parameters: []
+    return:
+      type: System.Xml.XmlNode
+      description: The @'System.Xml.XmlNode' immediately following this node or null if one does not exist.
+  overridden: System.Xml.XmlNode.NextSibling
+references:
+- uid: System.Xml
+  isExternal: false
+  name: System.Xml
+  fullName: System.Xml
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Xml.XmlNode
+  parent: System.Xml
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: XmlNode
+  fullName: System.Xml.XmlNode
+  type: Class
+- uid: System.Xml.XmlNode.Name
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: Name
+  fullName: System.Xml.XmlNode.Name
+- uid: System.Xml.XmlNode.Value
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: Value
+  fullName: System.Xml.XmlNode.Value
+- uid: System.Xml.XmlNode.NodeType
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: NodeType
+  fullName: System.Xml.XmlNode.NodeType
+- uid: System.Xml.XmlNode.ParentNode
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: ParentNode
+  fullName: System.Xml.XmlNode.ParentNode
+- uid: System.Xml.XmlNode.ChildNodes
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: ChildNodes
+  fullName: System.Xml.XmlNode.ChildNodes
+- uid: System.Xml.XmlNode.Attributes
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: Attributes
+  fullName: System.Xml.XmlNode.Attributes
+- uid: System.Xml.XmlNode.OwnerDocument
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: OwnerDocument
+  fullName: System.Xml.XmlNode.OwnerDocument
+- uid: System.Xml.XmlNode.FirstChild
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: FirstChild
+  fullName: System.Xml.XmlNode.FirstChild
+- uid: System.Xml.XmlNode.LastChild
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: LastChild
+  fullName: System.Xml.XmlNode.LastChild
+- uid: System.Xml.XmlNode.InsertBefore(System.Xml.XmlNode,System.Xml.XmlNode)
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: InsertBefore(XmlNode, XmlNode)
+  fullName: System.Xml.XmlNode.InsertBefore(System.Xml.XmlNode, System.Xml.XmlNode)
+  spec.csharp:
+  - uid: System.Xml.XmlNode.InsertBefore(System.Xml.XmlNode,System.Xml.XmlNode)
+    name: InsertBefore
+    fullName: System.Xml.XmlNode.InsertBefore
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.Xml.XmlNode
+    name: XmlNode
+    fullName: System.Xml.XmlNode
+    href: System.Xml.XmlNode.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlNode
+    name: XmlNode
+    fullName: System.Xml.XmlNode
+    href: System.Xml.XmlNode.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.XmlNode.InsertBefore(System.Xml.XmlNode,System.Xml.XmlNode)
+    name: InsertBefore
+    fullName: System.Xml.XmlNode.InsertBefore
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.Xml.XmlNode
+    name: XmlNode
+    fullName: System.Xml.XmlNode
+    href: System.Xml.XmlNode.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlNode
+    name: XmlNode
+    fullName: System.Xml.XmlNode
+    href: System.Xml.XmlNode.yml
+  - name: )
+    fullName: )
+- uid: System.Xml.XmlNode.InsertAfter(System.Xml.XmlNode,System.Xml.XmlNode)
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: InsertAfter(XmlNode, XmlNode)
+  fullName: System.Xml.XmlNode.InsertAfter(System.Xml.XmlNode, System.Xml.XmlNode)
+  spec.csharp:
+  - uid: System.Xml.XmlNode.InsertAfter(System.Xml.XmlNode,System.Xml.XmlNode)
+    name: InsertAfter
+    fullName: System.Xml.XmlNode.InsertAfter
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.Xml.XmlNode
+    name: XmlNode
+    fullName: System.Xml.XmlNode
+    href: System.Xml.XmlNode.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlNode
+    name: XmlNode
+    fullName: System.Xml.XmlNode
+    href: System.Xml.XmlNode.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.XmlNode.InsertAfter(System.Xml.XmlNode,System.Xml.XmlNode)
+    name: InsertAfter
+    fullName: System.Xml.XmlNode.InsertAfter
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.Xml.XmlNode
+    name: XmlNode
+    fullName: System.Xml.XmlNode
+    href: System.Xml.XmlNode.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlNode
+    name: XmlNode
+    fullName: System.Xml.XmlNode
+    href: System.Xml.XmlNode.yml
+  - name: )
+    fullName: )
+- uid: System.Xml.XmlNode.ReplaceChild(System.Xml.XmlNode,System.Xml.XmlNode)
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: ReplaceChild(XmlNode, XmlNode)
+  fullName: System.Xml.XmlNode.ReplaceChild(System.Xml.XmlNode, System.Xml.XmlNode)
+  spec.csharp:
+  - uid: System.Xml.XmlNode.ReplaceChild(System.Xml.XmlNode,System.Xml.XmlNode)
+    name: ReplaceChild
+    fullName: System.Xml.XmlNode.ReplaceChild
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.Xml.XmlNode
+    name: XmlNode
+    fullName: System.Xml.XmlNode
+    href: System.Xml.XmlNode.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlNode
+    name: XmlNode
+    fullName: System.Xml.XmlNode
+    href: System.Xml.XmlNode.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.XmlNode.ReplaceChild(System.Xml.XmlNode,System.Xml.XmlNode)
+    name: ReplaceChild
+    fullName: System.Xml.XmlNode.ReplaceChild
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.Xml.XmlNode
+    name: XmlNode
+    fullName: System.Xml.XmlNode
+    href: System.Xml.XmlNode.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Xml.XmlNode
+    name: XmlNode
+    fullName: System.Xml.XmlNode
+    href: System.Xml.XmlNode.yml
+  - name: )
+    fullName: )
+- uid: System.Xml.XmlNode.RemoveChild(System.Xml.XmlNode)
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: RemoveChild(XmlNode)
+  fullName: System.Xml.XmlNode.RemoveChild(System.Xml.XmlNode)
+  spec.csharp:
+  - uid: System.Xml.XmlNode.RemoveChild(System.Xml.XmlNode)
+    name: RemoveChild
+    fullName: System.Xml.XmlNode.RemoveChild
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.Xml.XmlNode
+    name: XmlNode
+    fullName: System.Xml.XmlNode
+    href: System.Xml.XmlNode.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.XmlNode.RemoveChild(System.Xml.XmlNode)
+    name: RemoveChild
+    fullName: System.Xml.XmlNode.RemoveChild
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.Xml.XmlNode
+    name: XmlNode
+    fullName: System.Xml.XmlNode
+    href: System.Xml.XmlNode.yml
+  - name: )
+    fullName: )
+- uid: System.Xml.XmlNode.PrependChild(System.Xml.XmlNode)
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: PrependChild(XmlNode)
+  fullName: System.Xml.XmlNode.PrependChild(System.Xml.XmlNode)
+  spec.csharp:
+  - uid: System.Xml.XmlNode.PrependChild(System.Xml.XmlNode)
+    name: PrependChild
+    fullName: System.Xml.XmlNode.PrependChild
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.Xml.XmlNode
+    name: XmlNode
+    fullName: System.Xml.XmlNode
+    href: System.Xml.XmlNode.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.XmlNode.PrependChild(System.Xml.XmlNode)
+    name: PrependChild
+    fullName: System.Xml.XmlNode.PrependChild
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.Xml.XmlNode
+    name: XmlNode
+    fullName: System.Xml.XmlNode
+    href: System.Xml.XmlNode.yml
+  - name: )
+    fullName: )
+- uid: System.Xml.XmlNode.AppendChild(System.Xml.XmlNode)
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: AppendChild(XmlNode)
+  fullName: System.Xml.XmlNode.AppendChild(System.Xml.XmlNode)
+  spec.csharp:
+  - uid: System.Xml.XmlNode.AppendChild(System.Xml.XmlNode)
+    name: AppendChild
+    fullName: System.Xml.XmlNode.AppendChild
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.Xml.XmlNode
+    name: XmlNode
+    fullName: System.Xml.XmlNode
+    href: System.Xml.XmlNode.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.XmlNode.AppendChild(System.Xml.XmlNode)
+    name: AppendChild
+    fullName: System.Xml.XmlNode.AppendChild
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.Xml.XmlNode
+    name: XmlNode
+    fullName: System.Xml.XmlNode
+    href: System.Xml.XmlNode.yml
+  - name: )
+    fullName: )
+- uid: System.Xml.XmlNode.HasChildNodes
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: HasChildNodes
+  fullName: System.Xml.XmlNode.HasChildNodes
+- uid: System.Xml.XmlNode.CloneNode(System.Boolean)
+  parent: System.Xml.XmlNode
+  isExternal: true
+  href: System.Xml.XmlNode.yml
+  name: CloneNode(Boolean)
+  fullName: System.Xml.XmlNode.CloneNode(System.Boolean)
+  spec.csharp:
+  - uid: System.Xml.XmlNode.CloneNode(System.Boolean)
+    name: CloneNode
+    fullName: System.Xml.XmlNode.CloneNode
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.XmlNode.CloneNode(System.Boolean)
+    name: CloneNode
+    fullName: System.Xml.XmlNode.CloneNode
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Xml.XmlNode.Normalize
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: Normalize()
+  fullName: System.Xml.XmlNode.Normalize()
+  spec.csharp:
+  - uid: System.Xml.XmlNode.Normalize
+    name: Normalize
+    fullName: System.Xml.XmlNode.Normalize
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.XmlNode.Normalize
+    name: Normalize
+    fullName: System.Xml.XmlNode.Normalize
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Xml.XmlNode.Supports(System.String,System.String)
+  parent: System.Xml.XmlNode
+  isExternal: true
+  href: System.Xml.XmlNode.yml
+  name: Supports(String, String)
+  fullName: System.Xml.XmlNode.Supports(System.String, System.String)
+  spec.csharp:
+  - uid: System.Xml.XmlNode.Supports(System.String,System.String)
+    name: Supports
+    fullName: System.Xml.XmlNode.Supports
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.XmlNode.Supports(System.String,System.String)
+    name: Supports
+    fullName: System.Xml.XmlNode.Supports
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Xml.XmlNode.NamespaceURI
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: NamespaceURI
+  fullName: System.Xml.XmlNode.NamespaceURI
+- uid: System.Xml.XmlNode.Prefix
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: Prefix
+  fullName: System.Xml.XmlNode.Prefix
+- uid: System.Xml.XmlNode.LocalName
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: LocalName
+  fullName: System.Xml.XmlNode.LocalName
+- uid: System.Xml.XmlNode.IsReadOnly
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: IsReadOnly
+  fullName: System.Xml.XmlNode.IsReadOnly
+- uid: System.Xml.XmlNode.System#Collections#IEnumerable#GetEnumerator
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: System.Xml.XmlNode.System.Collections.IEnumerable.GetEnumerator()
+  spec.csharp:
+  - uid: System.Xml.XmlNode.System#Collections#IEnumerable#GetEnumerator
+    name: IEnumerable.GetEnumerator
+    fullName: System.Xml.XmlNode.System.Collections.IEnumerable.GetEnumerator
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.XmlNode.System#Collections#IEnumerable#GetEnumerator
+    name: System.Collections.IEnumerable.GetEnumerator
+    fullName: System.Xml.XmlNode.System.Collections.IEnumerable.GetEnumerator
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Xml.XmlNode.GetEnumerator
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: GetEnumerator()
+  fullName: System.Xml.XmlNode.GetEnumerator()
+  spec.csharp:
+  - uid: System.Xml.XmlNode.GetEnumerator
+    name: GetEnumerator
+    fullName: System.Xml.XmlNode.GetEnumerator
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.XmlNode.GetEnumerator
+    name: GetEnumerator
+    fullName: System.Xml.XmlNode.GetEnumerator
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Xml.XmlNode.InnerText
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: InnerText
+  fullName: System.Xml.XmlNode.InnerText
+- uid: System.Xml.XmlNode.OuterXml
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: OuterXml
+  fullName: System.Xml.XmlNode.OuterXml
+- uid: System.Xml.XmlNode.InnerXml
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: InnerXml
+  fullName: System.Xml.XmlNode.InnerXml
+- uid: System.Xml.XmlNode.BaseURI
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: BaseURI
+  fullName: System.Xml.XmlNode.BaseURI
+- uid: System.Xml.XmlNode.WriteTo(XmlWriter)
+  parent: System.Xml.XmlNode
+  isExternal: true
+  href: System.Xml.XmlNode.yml
+  name: WriteTo(XmlWriter)
+  fullName: System.Xml.XmlNode.WriteTo(XmlWriter)
+  spec.csharp:
+  - uid: System.Xml.XmlNode.WriteTo(XmlWriter)
+    name: WriteTo
+    fullName: System.Xml.XmlNode.WriteTo
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: XmlWriter
+    name: XmlWriter
+    fullName: XmlWriter
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.XmlNode.WriteTo(XmlWriter)
+    name: WriteTo
+    fullName: System.Xml.XmlNode.WriteTo
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: XmlWriter
+    name: XmlWriter
+    fullName: XmlWriter
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Xml.XmlNode.WriteContentTo(XmlWriter)
+  parent: System.Xml.XmlNode
+  isExternal: true
+  href: System.Xml.XmlNode.yml
+  name: WriteContentTo(XmlWriter)
+  fullName: System.Xml.XmlNode.WriteContentTo(XmlWriter)
+  spec.csharp:
+  - uid: System.Xml.XmlNode.WriteContentTo(XmlWriter)
+    name: WriteContentTo
+    fullName: System.Xml.XmlNode.WriteContentTo
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: XmlWriter
+    name: XmlWriter
+    fullName: XmlWriter
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.XmlNode.WriteContentTo(XmlWriter)
+    name: WriteContentTo
+    fullName: System.Xml.XmlNode.WriteContentTo
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: XmlWriter
+    name: XmlWriter
+    fullName: XmlWriter
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Xml.XmlNode.RemoveAll
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: RemoveAll()
+  fullName: System.Xml.XmlNode.RemoveAll()
+  spec.csharp:
+  - uid: System.Xml.XmlNode.RemoveAll
+    name: RemoveAll
+    fullName: System.Xml.XmlNode.RemoveAll
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.XmlNode.RemoveAll
+    name: RemoveAll
+    fullName: System.Xml.XmlNode.RemoveAll
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Xml.XmlNode.GetNamespaceOfPrefix(System.String)
+  parent: System.Xml.XmlNode
+  isExternal: true
+  href: System.Xml.XmlNode.yml
+  name: GetNamespaceOfPrefix(String)
+  fullName: System.Xml.XmlNode.GetNamespaceOfPrefix(System.String)
+  spec.csharp:
+  - uid: System.Xml.XmlNode.GetNamespaceOfPrefix(System.String)
+    name: GetNamespaceOfPrefix
+    fullName: System.Xml.XmlNode.GetNamespaceOfPrefix
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.XmlNode.GetNamespaceOfPrefix(System.String)
+    name: GetNamespaceOfPrefix
+    fullName: System.Xml.XmlNode.GetNamespaceOfPrefix
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Xml.XmlNode.GetPrefixOfNamespace(System.String)
+  parent: System.Xml.XmlNode
+  isExternal: true
+  href: System.Xml.XmlNode.yml
+  name: GetPrefixOfNamespace(String)
+  fullName: System.Xml.XmlNode.GetPrefixOfNamespace(System.String)
+  spec.csharp:
+  - uid: System.Xml.XmlNode.GetPrefixOfNamespace(System.String)
+    name: GetPrefixOfNamespace
+    fullName: System.Xml.XmlNode.GetPrefixOfNamespace
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.XmlNode.GetPrefixOfNamespace(System.String)
+    name: GetPrefixOfNamespace
+    fullName: System.Xml.XmlNode.GetPrefixOfNamespace
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Xml.XmlNode.Item(System.String)
+  parent: System.Xml.XmlNode
+  isExternal: true
+  href: System.Xml.XmlNode.yml
+  name: Item[String]
+  name.vb: Item(String)
+  fullName: System.Xml.XmlNode.Item[System.String]
+  fullName.vb: System.Xml.XmlNode.Item(System.String)
+  spec.csharp:
+  - uid: System.Xml.XmlNode.Item(System.String)
+    name: Item
+    fullName: System.Xml.XmlNode.Item
+    href: System.Xml.XmlNode.yml
+  - name: '['
+    fullName: '['
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ']'
+    fullName: ']'
+  spec.vb:
+  - uid: System.Xml.XmlNode.Item(System.String)
+    name: Item
+    fullName: System.Xml.XmlNode.Item
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Xml.XmlNode.Item(System.String,System.String)
+  parent: System.Xml.XmlNode
+  isExternal: true
+  href: System.Xml.XmlNode.yml
+  name: Item[String, String]
+  name.vb: Item(String, String)
+  fullName: System.Xml.XmlNode.Item[System.String, System.String]
+  fullName.vb: System.Xml.XmlNode.Item(System.String, System.String)
+  spec.csharp:
+  - uid: System.Xml.XmlNode.Item(System.String,System.String)
+    name: Item
+    fullName: System.Xml.XmlNode.Item
+    href: System.Xml.XmlNode.yml
+  - name: '['
+    fullName: '['
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ']'
+    fullName: ']'
+  spec.vb:
+  - uid: System.Xml.XmlNode.Item(System.String,System.String)
+    name: Item
+    fullName: System.Xml.XmlNode.Item
+    href: System.Xml.XmlNode.yml
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Xml.XmlNode.PreviousText
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: PreviousText
+  fullName: System.Xml.XmlNode.PreviousText
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Xml.XmlNode.PreviousSibling
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: PreviousSibling
+  fullName: System.Xml.XmlNode.PreviousSibling
+- uid: System.Xml.XmlNode.NextSibling
+  parent: System.Xml.XmlNode
+  isExternal: false
+  href: System.Xml.XmlNode.yml
+  name: NextSibling
+  fullName: System.Xml.XmlNode.NextSibling

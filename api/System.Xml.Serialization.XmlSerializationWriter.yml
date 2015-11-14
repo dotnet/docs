@@ -1,0 +1,2577 @@
+items:
+- uid: System.Xml.Serialization.XmlSerializationWriter
+  id: XmlSerializationWriter
+  parent: System.Xml.Serialization
+  children:
+  - System.Xml.Serialization.XmlSerializationWriter.CreateChoiceIdentifierValueException(System.String,System.String,System.String,System.String)
+  - System.Xml.Serialization.XmlSerializationWriter.CreateInvalidAnyTypeException(System.Object)
+  - System.Xml.Serialization.XmlSerializationWriter.CreateInvalidAnyTypeException(System.Type)
+  - System.Xml.Serialization.XmlSerializationWriter.CreateInvalidChoiceIdentifierValueException(System.String,System.String)
+  - System.Xml.Serialization.XmlSerializationWriter.CreateInvalidEnumValueException(System.Object,System.String)
+  - System.Xml.Serialization.XmlSerializationWriter.CreateMismatchChoiceException(System.String,System.String,System.String)
+  - System.Xml.Serialization.XmlSerializationWriter.CreateUnknownAnyElementException(System.String,System.String)
+  - System.Xml.Serialization.XmlSerializationWriter.CreateUnknownTypeException(System.Object)
+  - System.Xml.Serialization.XmlSerializationWriter.CreateUnknownTypeException(System.Type)
+  - System.Xml.Serialization.XmlSerializationWriter.EscapeName
+  - System.Xml.Serialization.XmlSerializationWriter.FromByteArrayBase64(System.Byte[])
+  - System.Xml.Serialization.XmlSerializationWriter.FromByteArrayHex(System.Byte[])
+  - System.Xml.Serialization.XmlSerializationWriter.FromChar(System.Char)
+  - System.Xml.Serialization.XmlSerializationWriter.FromDate(System.DateTime)
+  - System.Xml.Serialization.XmlSerializationWriter.FromDateTime(System.DateTime)
+  - System.Xml.Serialization.XmlSerializationWriter.FromEnum(System.Int64,System.String[],System.Int64[])
+  - System.Xml.Serialization.XmlSerializationWriter.FromEnum(System.Int64,System.String[],System.Int64[],System.String)
+  - System.Xml.Serialization.XmlSerializationWriter.FromTime(System.DateTime)
+  - System.Xml.Serialization.XmlSerializationWriter.FromXmlName(System.String)
+  - System.Xml.Serialization.XmlSerializationWriter.FromXmlNCName(System.String)
+  - System.Xml.Serialization.XmlSerializationWriter.FromXmlNmToken(System.String)
+  - System.Xml.Serialization.XmlSerializationWriter.FromXmlNmTokens(System.String)
+  - System.Xml.Serialization.XmlSerializationWriter.FromXmlQualifiedName(XmlQualifiedName)
+  - System.Xml.Serialization.XmlSerializationWriter.FromXmlQualifiedName(XmlQualifiedName,System.Boolean)
+  - System.Xml.Serialization.XmlSerializationWriter.InitCallbacks
+  - System.Xml.Serialization.XmlSerializationWriter.TopLevelElement
+  - System.Xml.Serialization.XmlSerializationWriter.WriteAttribute(System.String,System.Byte[])
+  - System.Xml.Serialization.XmlSerializationWriter.WriteAttribute(System.String,System.String)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteAttribute(System.String,System.String,System.Byte[])
+  - System.Xml.Serialization.XmlSerializationWriter.WriteAttribute(System.String,System.String,System.String)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteAttribute(System.String,System.String,System.String,System.String)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteElementLiteral(XmlNode,System.String,System.String,System.Boolean,System.Boolean)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteElementQualifiedName(System.String,System.String,XmlQualifiedName)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteElementQualifiedName(System.String,System.String,XmlQualifiedName,XmlQualifiedName)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteElementQualifiedName(System.String,XmlQualifiedName)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteElementQualifiedName(System.String,XmlQualifiedName,XmlQualifiedName)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteElementString(System.String,System.String)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteElementString(System.String,System.String,System.String)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteElementString(System.String,System.String,System.String,XmlQualifiedName)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteElementString(System.String,System.String,XmlQualifiedName)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String,System.Byte[])
+  - System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String,System.Byte[],XmlQualifiedName)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String,System.String)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String,System.String,System.Byte[])
+  - System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String,System.String,System.Byte[],XmlQualifiedName)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String,System.String,System.String)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String,System.String,System.String,XmlQualifiedName)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String,System.String,XmlQualifiedName)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteEmptyTag(System.String)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteEmptyTag(System.String,System.String)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteEndElement
+  - System.Xml.Serialization.XmlSerializationWriter.WriteEndElement(System.Object)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteNamespaceDeclarations(System.Xml.Serialization.XmlSerializerNamespaces)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteNullableQualifiedNameEncoded(System.String,System.String,XmlQualifiedName,XmlQualifiedName)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteNullableQualifiedNameLiteral(System.String,System.String,XmlQualifiedName)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringEncoded(System.String,System.String,System.String,XmlQualifiedName)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringEncodedRaw(System.String,System.String,System.Byte[],XmlQualifiedName)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringEncodedRaw(System.String,System.String,System.String,XmlQualifiedName)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringLiteral(System.String,System.String,System.String)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringLiteralRaw(System.String,System.String,System.Byte[])
+  - System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringLiteralRaw(System.String,System.String,System.String)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteNullTagEncoded(System.String)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteNullTagEncoded(System.String,System.String)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteNullTagLiteral(System.String)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteNullTagLiteral(System.String,System.String)
+  - System.Xml.Serialization.XmlSerializationWriter.Writer
+  - System.Xml.Serialization.XmlSerializationWriter.WriteSerializable(IXmlSerializable,System.String,System.String,System.Boolean)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteSerializable(IXmlSerializable,System.String,System.String,System.Boolean,System.Boolean)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteStartDocument
+  - System.Xml.Serialization.XmlSerializationWriter.WriteStartElement(System.String)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteStartElement(System.String,System.String)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteStartElement(System.String,System.String,System.Boolean)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteStartElement(System.String,System.String,System.Object)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteStartElement(System.String,System.String,System.Object,System.Boolean)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteStartElement(System.String,System.String,System.Object,System.Boolean,System.Xml.Serialization.XmlSerializerNamespaces)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteTypedPrimitive(System.String,System.String,System.Object,System.Boolean)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteValue(System.Byte[])
+  - System.Xml.Serialization.XmlSerializationWriter.WriteValue(System.String)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteXmlAttribute(XmlNode)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteXmlAttribute(XmlNode,System.Object)
+  - System.Xml.Serialization.XmlSerializationWriter.WriteXsiType(System.String,System.String)
+  - System.Xml.Serialization.XmlSerializationWriter.XmlNamespaces
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: XmlSerializationWriter
+  fullName: System.Xml.Serialization.XmlSerializationWriter
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 29
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Represents an abstract class used for controlling serialization by the @'System.Xml.Serialization.XmlSerializer' class.
+  syntax:
+    content: 'public abstract class XmlSerializationWriter : XmlSerializationGeneratedCode'
+    content.vb: Public MustInherit Class XmlSerializationWriter Inherits XmlSerializationGeneratedCode
+  inheritance:
+  - System.Object
+  - System.Xml.Serialization.XmlSerializationGeneratedCode
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Xml.Serialization.XmlSerializationWriter.EscapeName
+  id: EscapeName
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: EscapeName
+  fullName: System.Xml.Serialization.XmlSerializationWriter.EscapeName
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 54
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Gets or sets a value that indicates whether the @'System.Xml.XmlConvert.EncodeName(System.String)' method is used to write valid XML.
+  syntax:
+    content: protected bool EscapeName { get; set; }
+    content.vb: Protected Property EscapeName As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the @'System.Xml.Serialization.XmlSerializationWriter.FromXmlQualifiedName(System.Xml.XmlQualifiedName)' method returns an encoded name; otherwise, false.
+- uid: System.Xml.Serialization.XmlSerializationWriter.Writer
+  id: Writer
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: Writer
+  fullName: System.Xml.Serialization.XmlSerializationWriter.Writer
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 67
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Gets or sets the @'System.Xml.XmlWriter' that is being used by the @'System.Xml.Serialization.XmlSerializationWriter'.
+  syntax:
+    content: protected XmlWriter Writer { get; set; }
+    content.vb: Protected Property Writer As XmlWriter
+    parameters: []
+    return:
+      type: XmlWriter
+      description: The @'System.Xml.XmlWriter' used by the class instance.
+- uid: System.Xml.Serialization.XmlSerializationWriter.XmlNamespaces
+  id: XmlNamespaces
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: XmlNamespaces
+  fullName: System.Xml.Serialization.XmlSerializationWriter.XmlNamespaces
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 83
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: protected IList XmlNamespaces { get; set; }
+    content.vb: Protected Property XmlNamespaces As IList
+    parameters: []
+    return:
+      type: System.Collections.IList
+- uid: System.Xml.Serialization.XmlSerializationWriter.FromByteArrayBase64(System.Byte[])
+  id: FromByteArrayBase64(System.Byte[])
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: FromByteArrayBase64(Byte[])
+  name.vb: FromByteArrayBase64(Byte())
+  fullName: System.Xml.Serialization.XmlSerializationWriter.FromByteArrayBase64(System.Byte[])
+  fullName.vb: System.Xml.Serialization.XmlSerializationWriter.FromByteArrayBase64(System.Byte())
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 104
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Processes a base-64 byte array.
+  syntax:
+    content: protected static byte[] FromByteArrayBase64(byte[] value)
+    content.vb: Protected Shared Function FromByteArrayBase64(value As Byte()) As Byte()
+    parameters:
+    - id: value
+      type: System.Byte[]
+      description: A base-64 @'System.Byte' array.
+    return:
+      type: System.Byte[]
+      description: The same byte array that was passed in as an argument.
+- uid: System.Xml.Serialization.XmlSerializationWriter.FromByteArrayHex(System.Byte[])
+  id: FromByteArrayHex(System.Byte[])
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: FromByteArrayHex(Byte[])
+  name.vb: FromByteArrayHex(Byte())
+  fullName: System.Xml.Serialization.XmlSerializationWriter.FromByteArrayHex(System.Byte[])
+  fullName.vb: System.Xml.Serialization.XmlSerializationWriter.FromByteArrayHex(System.Byte())
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 115
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Produces a string from an input hexadecimal byte array.
+  syntax:
+    content: protected static string FromByteArrayHex(byte[] value)
+    content.vb: Protected Shared Function FromByteArrayHex(value As Byte()) As String
+    parameters:
+    - id: value
+      type: System.Byte[]
+      description: A hexadecimal byte array to translate to a string.
+    return:
+      type: System.String
+      description: The byte array value converted to a string.
+- uid: System.Xml.Serialization.XmlSerializationWriter.FromDateTime(System.DateTime)
+  id: FromDateTime(System.DateTime)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: FromDateTime(DateTime)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.FromDateTime(System.DateTime)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 121
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Produces a string from an input @'System.DateTime'.
+  syntax:
+    content: protected static string FromDateTime(DateTime value)
+    content.vb: Protected Shared Function FromDateTime(value As Date) As String
+    parameters:
+    - id: value
+      type: System.DateTime
+      description: A @'System.DateTime' to translate to a string.
+    return:
+      type: System.String
+      description: A string representation of the @'System.DateTime' that shows the date and time.
+- uid: System.Xml.Serialization.XmlSerializationWriter.FromDate(System.DateTime)
+  id: FromDate(System.DateTime)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: FromDate(DateTime)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.FromDate(System.DateTime)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 127
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Produces a string from a @'System.DateTime' object.
+  syntax:
+    content: protected static string FromDate(DateTime value)
+    content.vb: Protected Shared Function FromDate(value As Date) As String
+    parameters:
+    - id: value
+      type: System.DateTime
+      description: A @'System.DateTime' to translate to a string.
+    return:
+      type: System.String
+      description: A string representation of the @'System.DateTime' that shows the date but no time.
+- uid: System.Xml.Serialization.XmlSerializationWriter.FromTime(System.DateTime)
+  id: FromTime(System.DateTime)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: FromTime(DateTime)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.FromTime(System.DateTime)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 133
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Produces a string from a @'System.DateTime' object.
+  syntax:
+    content: protected static string FromTime(DateTime value)
+    content.vb: Protected Shared Function FromTime(value As Date) As String
+    parameters:
+    - id: value
+      type: System.DateTime
+      description: A @'System.DateTime' that is translated to a string.
+    return:
+      type: System.String
+      description: A string representation of the @'System.DateTime' object that shows the time but no date.
+- uid: System.Xml.Serialization.XmlSerializationWriter.FromChar(System.Char)
+  id: FromChar(System.Char)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: FromChar(Char)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.FromChar(System.Char)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 139
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Produces a string from an input @'System.Char'.
+  syntax:
+    content: protected static string FromChar(char value)
+    content.vb: Protected Shared Function FromChar(value As Char) As String
+    parameters:
+    - id: value
+      type: System.Char
+      description: A @'System.Char' to translate to a string.
+    return:
+      type: System.String
+      description: The @'System.Char' value converted to a string.
+- uid: System.Xml.Serialization.XmlSerializationWriter.FromEnum(System.Int64,System.String[],System.Int64[])
+  id: FromEnum(System.Int64,System.String[],System.Int64[])
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: FromEnum(Int64, String[], Int64[])
+  name.vb: FromEnum(Int64, String(), Int64())
+  fullName: System.Xml.Serialization.XmlSerializationWriter.FromEnum(System.Int64, System.String[], System.Int64[])
+  fullName.vb: System.Xml.Serialization.XmlSerializationWriter.FromEnum(System.Int64, System.String(), System.Int64())
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 145
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Produces a string that consists of delimited identifiers that represent the enumeration members that have been set.
+  syntax:
+    content: protected static string FromEnum(long value, string[] values, long[] ids)
+    content.vb: Protected Shared Function FromEnum(value As Long, values As String(), ids As Long()) As String
+    parameters:
+    - id: value
+      type: System.Int64
+      description: The enumeration value as a series of bitwise OR operations.
+    - id: values
+      type: System.String[]
+      description: The enumeration's name values.
+    - id: ids
+      type: System.Int64[]
+      description: The enumeration's constant values.
+    return:
+      type: System.String
+      description: A string that consists of delimited identifiers, where each represents a member from the set enumerator list.
+- uid: System.Xml.Serialization.XmlSerializationWriter.FromEnum(System.Int64,System.String[],System.Int64[],System.String)
+  id: FromEnum(System.Int64,System.String[],System.Int64[],System.String)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: FromEnum(Int64, String[], Int64[], String)
+  name.vb: FromEnum(Int64, String(), Int64(), String)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.FromEnum(System.Int64, System.String[], System.Int64[], System.String)
+  fullName.vb: System.Xml.Serialization.XmlSerializationWriter.FromEnum(System.Int64, System.String(), System.Int64(), System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 151
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Takes a numeric enumeration value and the names and constants from the enumerator list for the enumeration and returns a string that consists of delimited identifiers that represent the enumeration members that have been set.
+  syntax:
+    content: protected static string FromEnum(long value, string[] values, long[] ids, string typeName)
+    content.vb: Protected Shared Function FromEnum(value As Long, values As String(), ids As Long(), typeName As String) As String
+    parameters:
+    - id: value
+      type: System.Int64
+      description: The enumeration value as a series of bitwise OR operations.
+    - id: values
+      type: System.String[]
+      description: The values of the enumeration.
+    - id: ids
+      type: System.Int64[]
+      description: The constants of the enumeration.
+    - id: typeName
+      type: System.String
+      description: The name of the type
+    return:
+      type: System.String
+      description: A string that consists of delimited identifiers, where each item is one of the values set by the bitwise operation.
+- uid: System.Xml.Serialization.XmlSerializationWriter.FromXmlName(System.String)
+  id: FromXmlName(System.String)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: FromXmlName(String)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.FromXmlName(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 157
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Encodes a valid XML name by replacing characters that are not valid with escape sequences.
+  syntax:
+    content: protected static string FromXmlName(string name)
+    content.vb: Protected Shared Function FromXmlName(name As String) As String
+    parameters:
+    - id: name
+      type: System.String
+      description: A string to be used as an XML name.
+    return:
+      type: System.String
+      description: An encoded string.
+- uid: System.Xml.Serialization.XmlSerializationWriter.FromXmlNCName(System.String)
+  id: FromXmlNCName(System.String)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: FromXmlNCName(String)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.FromXmlNCName(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 163
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Encodes a valid XML local name by replacing characters that are not valid with escape sequences.
+  syntax:
+    content: protected static string FromXmlNCName(string ncName)
+    content.vb: Protected Shared Function FromXmlNCName(ncName As String) As String
+    parameters:
+    - id: ncName
+      type: System.String
+      description: A string to be used as a local (unqualified) XML name.
+    return:
+      type: System.String
+      description: An encoded string.
+- uid: System.Xml.Serialization.XmlSerializationWriter.FromXmlNmToken(System.String)
+  id: FromXmlNmToken(System.String)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: FromXmlNmToken(String)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.FromXmlNmToken(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 169
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Encodes an XML name.
+  syntax:
+    content: protected static string FromXmlNmToken(string nmToken)
+    content.vb: Protected Shared Function FromXmlNmToken(nmToken As String) As String
+    parameters:
+    - id: nmToken
+      type: System.String
+      description: An XML name to be encoded.
+    return:
+      type: System.String
+      description: An encoded string.
+- uid: System.Xml.Serialization.XmlSerializationWriter.FromXmlNmTokens(System.String)
+  id: FromXmlNmTokens(System.String)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: FromXmlNmTokens(String)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.FromXmlNmTokens(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 175
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Encodes a space-delimited sequence of XML names into a single XML name.
+  syntax:
+    content: protected static string FromXmlNmTokens(string nmTokens)
+    content.vb: Protected Shared Function FromXmlNmTokens(nmTokens As String) As String
+    parameters:
+    - id: nmTokens
+      type: System.String
+      description: A space-delimited sequence of XML names to be encoded.
+    return:
+      type: System.String
+      description: An encoded string.
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteXsiType(System.String,System.String)
+  id: WriteXsiType(System.String,System.String)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteXsiType(String, String)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteXsiType(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 181
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Writes an xsi:type attribute for an XML element that is being serialized into a document.
+  syntax:
+    content: protected void WriteXsiType(string name, string ns)
+    content.vb: Protected Sub WriteXsiType(name As String, ns As String)
+    parameters:
+    - id: name
+      type: System.String
+      description: The local name of an XML Schema data type.
+    - id: ns
+      type: System.String
+      description: The namespace of an XML Schema data type.
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteTypedPrimitive(System.String,System.String,System.Object,System.Boolean)
+  id: WriteTypedPrimitive(System.String,System.String,System.Object,System.Boolean)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteTypedPrimitive(String, String, Object, Boolean)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteTypedPrimitive(System.String, System.String, System.Object, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 244
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Writes an XML element whose text body is a value of a simple XML Schema data type.
+  syntax:
+    content: protected void WriteTypedPrimitive(string name, string ns, object o, bool xsiType)
+    content.vb: Protected Sub WriteTypedPrimitive(name As String, ns As String, o As Object, xsiType As Boolean)
+    parameters:
+    - id: name
+      type: System.String
+      description: The local name of the element to write.
+    - id: ns
+      type: System.String
+      description: The namespace of the element to write.
+    - id: o
+      type: System.Object
+      description: The object to be serialized in the element body.
+    - id: xsiType
+      type: System.Boolean
+      description: true if the XML element explicitly specifies the text value's type using the xsi:type attribute; otherwise, false.
+- uid: System.Xml.Serialization.XmlSerializationWriter.FromXmlQualifiedName(XmlQualifiedName)
+  id: FromXmlQualifiedName(XmlQualifiedName)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: FromXmlQualifiedName(XmlQualifiedName)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.FromXmlQualifiedName(XmlQualifiedName)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 417
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: protected string FromXmlQualifiedName(XmlQualifiedName xmlQualifiedName)
+    content.vb: Protected Function FromXmlQualifiedName(xmlQualifiedName As XmlQualifiedName) As String
+    parameters:
+    - id: xmlQualifiedName
+      type: XmlQualifiedName
+    return:
+      type: System.String
+- uid: System.Xml.Serialization.XmlSerializationWriter.FromXmlQualifiedName(XmlQualifiedName,System.Boolean)
+  id: FromXmlQualifiedName(XmlQualifiedName,System.Boolean)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: FromXmlQualifiedName(XmlQualifiedName, Boolean)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.FromXmlQualifiedName(XmlQualifiedName, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 423
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: protected string FromXmlQualifiedName(XmlQualifiedName xmlQualifiedName, bool ignoreEmpty)
+    content.vb: Protected Function FromXmlQualifiedName(xmlQualifiedName As XmlQualifiedName, ignoreEmpty As Boolean) As String
+    parameters:
+    - id: xmlQualifiedName
+      type: XmlQualifiedName
+    - id: ignoreEmpty
+      type: System.Boolean
+    return:
+      type: System.String
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteStartElement(System.String)
+  id: WriteStartElement(System.String)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteStartElement(String)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteStartElement(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 431
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Writes an opening element tag, including any attributes.
+  syntax:
+    content: protected void WriteStartElement(string name)
+    content.vb: Protected Sub WriteStartElement(name As String)
+    parameters:
+    - id: name
+      type: System.String
+      description: The local name of the XML element to write.
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteStartElement(System.String,System.String)
+  id: WriteStartElement(System.String,System.String)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteStartElement(String, String)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteStartElement(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 437
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Writes an opening element tag, including any attributes.
+  syntax:
+    content: protected void WriteStartElement(string name, string ns)
+    content.vb: Protected Sub WriteStartElement(name As String, ns As String)
+    parameters:
+    - id: name
+      type: System.String
+      description: The local name of the XML element to write.
+    - id: ns
+      type: System.String
+      description: The namespace of the XML element to write.
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteStartElement(System.String,System.String,System.Boolean)
+  id: WriteStartElement(System.String,System.String,System.Boolean)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteStartElement(String, String, Boolean)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteStartElement(System.String, System.String, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 443
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Writes an opening element tag, including any attributes.
+  syntax:
+    content: protected void WriteStartElement(string name, string ns, bool writePrefixed)
+    content.vb: Protected Sub WriteStartElement(name As String, ns As String, writePrefixed As Boolean)
+    parameters:
+    - id: name
+      type: System.String
+      description: The local name of the XML element to write.
+    - id: ns
+      type: System.String
+      description: The namespace of the XML element to write.
+    - id: writePrefixed
+      type: System.Boolean
+      description: true to write the element name with a prefix if none is available for the specified namespace; otherwise, false.
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteStartElement(System.String,System.String,System.Object)
+  id: WriteStartElement(System.String,System.String,System.Object)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteStartElement(String, String, Object)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteStartElement(System.String, System.String, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 449
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Writes an opening element tag, including any attributes.
+  syntax:
+    content: protected void WriteStartElement(string name, string ns, object o)
+    content.vb: Protected Sub WriteStartElement(name As String, ns As String, o As Object)
+    parameters:
+    - id: name
+      type: System.String
+      description: The local name of the XML element to write.
+    - id: ns
+      type: System.String
+      description: The namespace of the XML element to write.
+    - id: o
+      type: System.Object
+      description: The object being serialized as an XML element.
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteStartElement(System.String,System.String,System.Object,System.Boolean)
+  id: WriteStartElement(System.String,System.String,System.Object,System.Boolean)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteStartElement(String, String, Object, Boolean)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteStartElement(System.String, System.String, System.Object, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 455
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Writes an opening element tag, including any attributes.
+  syntax:
+    content: protected void WriteStartElement(string name, string ns, object o, bool writePrefixed)
+    content.vb: Protected Sub WriteStartElement(name As String, ns As String, o As Object, writePrefixed As Boolean)
+    parameters:
+    - id: name
+      type: System.String
+      description: The local name of the XML element to write.
+    - id: ns
+      type: System.String
+      description: The namespace of the XML element to write.
+    - id: o
+      type: System.Object
+      description: The object being serialized as an XML element.
+    - id: writePrefixed
+      type: System.Boolean
+      description: true to write the element name with a prefix if none is available for the specified namespace; otherwise, false.
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteStartElement(System.String,System.String,System.Object,System.Boolean,System.Xml.Serialization.XmlSerializerNamespaces)
+  id: WriteStartElement(System.String,System.String,System.Object,System.Boolean,System.Xml.Serialization.XmlSerializerNamespaces)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteStartElement(String, String, Object, Boolean, XmlSerializerNamespaces)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteStartElement(System.String, System.String, System.Object, System.Boolean, System.Xml.Serialization.XmlSerializerNamespaces)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 461
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Writes an opening element tag, including any attributes.
+  syntax:
+    content: protected void WriteStartElement(string name, string ns, object o, bool writePrefixed, XmlSerializerNamespaces xmlns)
+    content.vb: Protected Sub WriteStartElement(name As String, ns As String, o As Object, writePrefixed As Boolean, xmlns As XmlSerializerNamespaces)
+    parameters:
+    - id: name
+      type: System.String
+      description: The local name of the XML element to write.
+    - id: ns
+      type: System.String
+      description: The namespace of the XML element to write.
+    - id: o
+      type: System.Object
+      description: The object being serialized as an XML element.
+    - id: writePrefixed
+      type: System.Boolean
+      description: true to write the element name with a prefix if none is available for the specified namespace; otherwise, false.
+    - id: xmlns
+      type: System.Xml.Serialization.XmlSerializerNamespaces
+      description: An instance of the @'System.Xml.Serialization.XmlSerializerNamespaces' class that contains prefix and namespace pairs to be used in the generated XML.
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteNullTagEncoded(System.String)
+  id: WriteNullTagEncoded(System.String)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteNullTagEncoded(String)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteNullTagEncoded(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 577
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Writes an XML element with an xsi:nil='true' attribute.
+  syntax:
+    content: protected void WriteNullTagEncoded(string name)
+    content.vb: Protected Sub WriteNullTagEncoded(name As String)
+    parameters:
+    - id: name
+      type: System.String
+      description: The local name of the XML element to write.
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteNullTagEncoded(System.String,System.String)
+  id: WriteNullTagEncoded(System.String,System.String)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteNullTagEncoded(String, String)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteNullTagEncoded(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 583
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Writes an XML element with an xsi:nil='true' attribute.
+  syntax:
+    content: protected void WriteNullTagEncoded(string name, string ns)
+    content.vb: Protected Sub WriteNullTagEncoded(name As String, ns As String)
+    parameters:
+    - id: name
+      type: System.String
+      description: The local name of the XML element to write.
+    - id: ns
+      type: System.String
+      description: The namespace of the XML element to write.
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteNullTagLiteral(System.String)
+  id: WriteNullTagLiteral(System.String)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteNullTagLiteral(String)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteNullTagLiteral(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 593
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Writes an XML element with an xsi:nil='true' attribute.
+  syntax:
+    content: protected void WriteNullTagLiteral(string name)
+    content.vb: Protected Sub WriteNullTagLiteral(name As String)
+    parameters:
+    - id: name
+      type: System.String
+      description: The local name of the XML element to write.
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteNullTagLiteral(System.String,System.String)
+  id: WriteNullTagLiteral(System.String,System.String)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteNullTagLiteral(String, String)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteNullTagLiteral(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 599
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Writes an XML element with an xsi:nil='true' attribute.
+  syntax:
+    content: protected void WriteNullTagLiteral(string name, string ns)
+    content.vb: Protected Sub WriteNullTagLiteral(name As String, ns As String)
+    parameters:
+    - id: name
+      type: System.String
+      description: The local name of the XML element to write.
+    - id: ns
+      type: System.String
+      description: The namespace of the XML element to write.
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteEmptyTag(System.String)
+  id: WriteEmptyTag(System.String)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteEmptyTag(String)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteEmptyTag(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 609
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Writes an XML element whose body is empty.
+  syntax:
+    content: protected void WriteEmptyTag(string name)
+    content.vb: Protected Sub WriteEmptyTag(name As String)
+    parameters:
+    - id: name
+      type: System.String
+      description: The local name of the XML element to write.
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteEmptyTag(System.String,System.String)
+  id: WriteEmptyTag(System.String,System.String)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteEmptyTag(String, String)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteEmptyTag(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 615
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Writes an XML element whose body is empty.
+  syntax:
+    content: protected void WriteEmptyTag(string name, string ns)
+    content.vb: Protected Sub WriteEmptyTag(name As String, ns As String)
+    parameters:
+    - id: name
+      type: System.String
+      description: The local name of the XML element to write.
+    - id: ns
+      type: System.String
+      description: The namespace of the XML element to write.
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteEndElement
+  id: WriteEndElement
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteEndElement()
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteEndElement()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 624
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Writes a &lt;closing&gt; element tag.
+  syntax:
+    content: protected void WriteEndElement()
+    content.vb: Protected Sub WriteEndElement
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteEndElement(System.Object)
+  id: WriteEndElement(System.Object)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteEndElement(Object)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteEndElement(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 630
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Writes a &lt;closing&gt; element tag.
+  syntax:
+    content: protected void WriteEndElement(object o)
+    content.vb: Protected Sub WriteEndElement(o As Object)
+    parameters:
+    - id: o
+      type: System.Object
+      description: The object being serialized.
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteSerializable(IXmlSerializable,System.String,System.String,System.Boolean)
+  id: WriteSerializable(IXmlSerializable,System.String,System.String,System.Boolean)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteSerializable(IXmlSerializable, String, String, Boolean)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteSerializable(IXmlSerializable, System.String, System.String, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 646
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: protected void WriteSerializable(IXmlSerializable serializable, string name, string ns, bool isNullable)
+    content.vb: Protected Sub WriteSerializable(serializable As IXmlSerializable, name As String, ns As String, isNullable As Boolean)
+    parameters:
+    - id: serializable
+      type: IXmlSerializable
+    - id: name
+      type: System.String
+    - id: ns
+      type: System.String
+    - id: isNullable
+      type: System.Boolean
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteSerializable(IXmlSerializable,System.String,System.String,System.Boolean,System.Boolean)
+  id: WriteSerializable(IXmlSerializable,System.String,System.String,System.Boolean,System.Boolean)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteSerializable(IXmlSerializable, String, String, Boolean, Boolean)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteSerializable(IXmlSerializable, System.String, System.String, System.Boolean, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 652
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: protected void WriteSerializable(IXmlSerializable serializable, string name, string ns, bool isNullable, bool wrapped)
+    content.vb: Protected Sub WriteSerializable(serializable As IXmlSerializable, name As String, ns As String, isNullable As Boolean, wrapped As Boolean)
+    parameters:
+    - id: serializable
+      type: IXmlSerializable
+    - id: name
+      type: System.String
+    - id: ns
+      type: System.String
+    - id: isNullable
+      type: System.Boolean
+    - id: wrapped
+      type: System.Boolean
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringEncoded(System.String,System.String,System.String,XmlQualifiedName)
+  id: WriteNullableStringEncoded(System.String,System.String,System.String,XmlQualifiedName)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteNullableStringEncoded(String, String, String, XmlQualifiedName)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringEncoded(System.String, System.String, System.String, XmlQualifiedName)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 671
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: protected void WriteNullableStringEncoded(string name, string ns, string value, XmlQualifiedName xsiType)
+    content.vb: Protected Sub WriteNullableStringEncoded(name As String, ns As String, value As String, xsiType As XmlQualifiedName)
+    parameters:
+    - id: name
+      type: System.String
+    - id: ns
+      type: System.String
+    - id: value
+      type: System.String
+    - id: xsiType
+      type: XmlQualifiedName
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringLiteral(System.String,System.String,System.String)
+  id: WriteNullableStringLiteral(System.String,System.String,System.String)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteNullableStringLiteral(String, String, String)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringLiteral(System.String, System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 680
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Writes an XML element that contains a string as the body. @'System.Xml.XmlWriter' inserts an xsi:nil='true' attribute if the string's value is null.
+  syntax:
+    content: protected void WriteNullableStringLiteral(string name, string ns, string value)
+    content.vb: Protected Sub WriteNullableStringLiteral(name As String, ns As String, value As String)
+    parameters:
+    - id: name
+      type: System.String
+      description: The local name of the XML element to write.
+    - id: ns
+      type: System.String
+      description: The namespace of the XML element to write.
+    - id: value
+      type: System.String
+      description: The string to write in the body of the XML element.
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringEncodedRaw(System.String,System.String,System.String,XmlQualifiedName)
+  id: WriteNullableStringEncodedRaw(System.String,System.String,System.String,XmlQualifiedName)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteNullableStringEncodedRaw(String, String, String, XmlQualifiedName)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringEncodedRaw(System.String, System.String, System.String, XmlQualifiedName)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 690
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: protected void WriteNullableStringEncodedRaw(string name, string ns, string value, XmlQualifiedName xsiType)
+    content.vb: Protected Sub WriteNullableStringEncodedRaw(name As String, ns As String, value As String, xsiType As XmlQualifiedName)
+    parameters:
+    - id: name
+      type: System.String
+    - id: ns
+      type: System.String
+    - id: value
+      type: System.String
+    - id: xsiType
+      type: XmlQualifiedName
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringEncodedRaw(System.String,System.String,System.Byte[],XmlQualifiedName)
+  id: WriteNullableStringEncodedRaw(System.String,System.String,System.Byte[],XmlQualifiedName)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteNullableStringEncodedRaw(String, String, Byte[], XmlQualifiedName)
+  name.vb: WriteNullableStringEncodedRaw(String, String, Byte(), XmlQualifiedName)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringEncodedRaw(System.String, System.String, System.Byte[], XmlQualifiedName)
+  fullName.vb: System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringEncodedRaw(System.String, System.String, System.Byte(), XmlQualifiedName)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 699
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: protected void WriteNullableStringEncodedRaw(string name, string ns, byte[] value, XmlQualifiedName xsiType)
+    content.vb: Protected Sub WriteNullableStringEncodedRaw(name As String, ns As String, value As Byte(), xsiType As XmlQualifiedName)
+    parameters:
+    - id: name
+      type: System.String
+    - id: ns
+      type: System.String
+    - id: value
+      type: System.Byte[]
+    - id: xsiType
+      type: XmlQualifiedName
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringLiteralRaw(System.String,System.String,System.String)
+  id: WriteNullableStringLiteralRaw(System.String,System.String,System.String)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteNullableStringLiteralRaw(String, String, String)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringLiteralRaw(System.String, System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 708
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Writes an XML element that contains a string as the body. @'System.Xml.XmlWriter' inserts a xsi:nil='true' attribute if the string's value is null.
+  syntax:
+    content: protected void WriteNullableStringLiteralRaw(string name, string ns, string value)
+    content.vb: Protected Sub WriteNullableStringLiteralRaw(name As String, ns As String, value As String)
+    parameters:
+    - id: name
+      type: System.String
+      description: The local name of the XML element to write.
+    - id: ns
+      type: System.String
+      description: The namespace of the XML element to write.
+    - id: value
+      type: System.String
+      description: The string to write in the body of the XML element.
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringLiteralRaw(System.String,System.String,System.Byte[])
+  id: WriteNullableStringLiteralRaw(System.String,System.String,System.Byte[])
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteNullableStringLiteralRaw(String, String, Byte[])
+  name.vb: WriteNullableStringLiteralRaw(String, String, Byte())
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringLiteralRaw(System.String, System.String, System.Byte[])
+  fullName.vb: System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringLiteralRaw(System.String, System.String, System.Byte())
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 717
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Writes a byte array as the body of an XML element. @'System.Xml.XmlWriter' inserts an xsi:nil='true' attribute if the string's value is null.
+  syntax:
+    content: protected void WriteNullableStringLiteralRaw(string name, string ns, byte[] value)
+    content.vb: Protected Sub WriteNullableStringLiteralRaw(name As String, ns As String, value As Byte())
+    parameters:
+    - id: name
+      type: System.String
+      description: The local name of the XML element to write.
+    - id: ns
+      type: System.String
+      description: The namespace of the XML element to write.
+    - id: value
+      type: System.Byte[]
+      description: The byte array to write in the body of the XML element.
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteNullableQualifiedNameEncoded(System.String,System.String,XmlQualifiedName,XmlQualifiedName)
+  id: WriteNullableQualifiedNameEncoded(System.String,System.String,XmlQualifiedName,XmlQualifiedName)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteNullableQualifiedNameEncoded(String, String, XmlQualifiedName, XmlQualifiedName)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteNullableQualifiedNameEncoded(System.String, System.String, XmlQualifiedName, XmlQualifiedName)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 729
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: protected void WriteNullableQualifiedNameEncoded(string name, string ns, XmlQualifiedName value, XmlQualifiedName xsiType)
+    content.vb: Protected Sub WriteNullableQualifiedNameEncoded(name As String, ns As String, value As XmlQualifiedName, xsiType As XmlQualifiedName)
+    parameters:
+    - id: name
+      type: System.String
+    - id: ns
+      type: System.String
+    - id: value
+      type: XmlQualifiedName
+    - id: xsiType
+      type: XmlQualifiedName
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteNullableQualifiedNameLiteral(System.String,System.String,XmlQualifiedName)
+  id: WriteNullableQualifiedNameLiteral(System.String,System.String,XmlQualifiedName)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteNullableQualifiedNameLiteral(String, String, XmlQualifiedName)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteNullableQualifiedNameLiteral(System.String, System.String, XmlQualifiedName)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 741
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: protected void WriteNullableQualifiedNameLiteral(string name, string ns, XmlQualifiedName value)
+    content.vb: Protected Sub WriteNullableQualifiedNameLiteral(name As String, ns As String, value As XmlQualifiedName)
+    parameters:
+    - id: name
+      type: System.String
+    - id: ns
+      type: System.String
+    - id: value
+      type: XmlQualifiedName
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteElementLiteral(XmlNode,System.String,System.String,System.Boolean,System.Boolean)
+  id: WriteElementLiteral(XmlNode,System.String,System.String,System.Boolean,System.Boolean)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteElementLiteral(XmlNode, String, String, Boolean, Boolean)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteElementLiteral(XmlNode, System.String, System.String, System.Boolean, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 750
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: protected void WriteElementLiteral(XmlNode node, string name, string ns, bool isNullable, bool any)
+    content.vb: Protected Sub WriteElementLiteral(node As XmlNode, name As String, ns As String, isNullable As Boolean, any As Boolean)
+    parameters:
+    - id: node
+      type: XmlNode
+    - id: name
+      type: System.String
+    - id: ns
+      type: System.String
+    - id: isNullable
+      type: System.Boolean
+    - id: any
+      type: System.Boolean
+- uid: System.Xml.Serialization.XmlSerializationWriter.CreateUnknownTypeException(System.Object)
+  id: CreateUnknownTypeException(System.Object)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: CreateUnknownTypeException(Object)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.CreateUnknownTypeException(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 792
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Creates an @'System.InvalidOperationException' that indicates that a type being serialized is not being used in a valid manner or is unexpectedly encountered.
+  syntax:
+    content: protected Exception CreateUnknownTypeException(object o)
+    content.vb: Protected Function CreateUnknownTypeException(o As Object) As Exception
+    parameters:
+    - id: o
+      type: System.Object
+      description: The object whose type cannot be serialized.
+    return:
+      type: System.Exception
+      description: The newly created exception.
+- uid: System.Xml.Serialization.XmlSerializationWriter.CreateUnknownTypeException(System.Type)
+  id: CreateUnknownTypeException(System.Type)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: CreateUnknownTypeException(Type)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.CreateUnknownTypeException(System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 798
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Creates an @'System.InvalidOperationException' that indicates that a type being serialized is not being used in a valid manner or is unexpectedly encountered.
+  syntax:
+    content: protected Exception CreateUnknownTypeException(Type type)
+    content.vb: Protected Function CreateUnknownTypeException(type As Type) As Exception
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type that cannot be serialized.
+    return:
+      type: System.Exception
+      description: The newly created exception.
+- uid: System.Xml.Serialization.XmlSerializationWriter.CreateMismatchChoiceException(System.String,System.String,System.String)
+  id: CreateMismatchChoiceException(System.String,System.String,System.String)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: CreateMismatchChoiceException(String, String, String)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.CreateMismatchChoiceException(System.String, System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 807
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Creates an @'System.InvalidOperationException' that indicates that a value for an XML element does not match an enumeration type.
+  syntax:
+    content: protected Exception CreateMismatchChoiceException(string value, string elementName, string enumValue)
+    content.vb: Protected Function CreateMismatchChoiceException(value As String, elementName As String, enumValue As String) As Exception
+    parameters:
+    - id: value
+      type: System.String
+      description: The value that is not valid.
+    - id: elementName
+      type: System.String
+      description: The name of the XML element with an invalid value.
+    - id: enumValue
+      type: System.String
+      description: The valid value.
+    return:
+      type: System.Exception
+      description: The newly created exception.
+- uid: System.Xml.Serialization.XmlSerializationWriter.CreateUnknownAnyElementException(System.String,System.String)
+  id: CreateUnknownAnyElementException(System.String,System.String)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: CreateUnknownAnyElementException(String, String)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.CreateUnknownAnyElementException(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 814
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Creates an @'System.InvalidOperationException' that indicates that an XML element that should adhere to the XML Schema any element declaration cannot be processed.
+  syntax:
+    content: protected Exception CreateUnknownAnyElementException(string name, string ns)
+    content.vb: Protected Function CreateUnknownAnyElementException(name As String, ns As String) As Exception
+    parameters:
+    - id: name
+      type: System.String
+      description: The XML element that cannot be processed.
+    - id: ns
+      type: System.String
+      description: The namespace of the XML element.
+    return:
+      type: System.Exception
+      description: The newly created exception.
+- uid: System.Xml.Serialization.XmlSerializationWriter.CreateInvalidChoiceIdentifierValueException(System.String,System.String)
+  id: CreateInvalidChoiceIdentifierValueException(System.String,System.String)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: CreateInvalidChoiceIdentifierValueException(String, String)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.CreateInvalidChoiceIdentifierValueException(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 820
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Creates an @'System.InvalidOperationException' that indicates a failure while writing an array where an XML Schema choice element declaration is applied.
+  syntax:
+    content: protected Exception CreateInvalidChoiceIdentifierValueException(string type, string identifier)
+    content.vb: Protected Function CreateInvalidChoiceIdentifierValueException(type As String, identifier As String) As Exception
+    parameters:
+    - id: type
+      type: System.String
+      description: The type being serialized.
+    - id: identifier
+      type: System.String
+      description: A name for the choice element declaration.
+    return:
+      type: System.Exception
+      description: The newly created exception.
+- uid: System.Xml.Serialization.XmlSerializationWriter.CreateChoiceIdentifierValueException(System.String,System.String,System.String,System.String)
+  id: CreateChoiceIdentifierValueException(System.String,System.String,System.String,System.String)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: CreateChoiceIdentifierValueException(String, String, String, String)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.CreateChoiceIdentifierValueException(System.String, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 826
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Creates an @'System.InvalidOperationException' that indicates an unexpected name for an element that adheres to an XML Schema choice element declaration.
+  syntax:
+    content: protected Exception CreateChoiceIdentifierValueException(string value, string identifier, string name, string ns)
+    content.vb: Protected Function CreateChoiceIdentifierValueException(value As String, identifier As String, name As String, ns As String) As Exception
+    parameters:
+    - id: value
+      type: System.String
+      description: The name that is not valid.
+    - id: identifier
+      type: System.String
+      description: The choice element declaration that the name belongs to.
+    - id: name
+      type: System.String
+      description: The expected local name of an element.
+    - id: ns
+      type: System.String
+      description: The expected namespace of an element.
+    return:
+      type: System.Exception
+      description: The newly created exception.
+- uid: System.Xml.Serialization.XmlSerializationWriter.CreateInvalidEnumValueException(System.Object,System.String)
+  id: CreateInvalidEnumValueException(System.Object,System.String)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: CreateInvalidEnumValueException(Object, String)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.CreateInvalidEnumValueException(System.Object, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 833
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Creates an @'System.InvalidOperationException' for an invalid enumeration value.
+  syntax:
+    content: protected Exception CreateInvalidEnumValueException(object value, string typeName)
+    content.vb: Protected Function CreateInvalidEnumValueException(value As Object, typeName As String) As Exception
+    parameters:
+    - id: value
+      type: System.Object
+      description: An object that represents the invalid enumeration.
+    - id: typeName
+      type: System.String
+      description: The XML type name.
+    return:
+      type: System.Exception
+      description: The newly created exception.
+- uid: System.Xml.Serialization.XmlSerializationWriter.CreateInvalidAnyTypeException(System.Object)
+  id: CreateInvalidAnyTypeException(System.Object)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: CreateInvalidAnyTypeException(Object)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.CreateInvalidAnyTypeException(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 839
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Creates an @'System.InvalidOperationException' that indicates the @'System.Xml.Serialization.XmlAnyElementAttribute' which has been invalidly applied to a member; only members that are of type @'System.Xml.XmlNode', or derived from @'System.Xml.XmlNode', are valid.
+  syntax:
+    content: protected Exception CreateInvalidAnyTypeException(object o)
+    content.vb: Protected Function CreateInvalidAnyTypeException(o As Object) As Exception
+    parameters:
+    - id: o
+      type: System.Object
+      description: The object that represents the invalid member.
+    return:
+      type: System.Exception
+      description: The newly created exception.
+- uid: System.Xml.Serialization.XmlSerializationWriter.CreateInvalidAnyTypeException(System.Type)
+  id: CreateInvalidAnyTypeException(System.Type)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: CreateInvalidAnyTypeException(Type)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.CreateInvalidAnyTypeException(System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 845
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Creates an @'System.InvalidOperationException' that indicates the @'System.Xml.Serialization.XmlAnyElementAttribute' which has been invalidly applied to a member; only members that are of type @'System.Xml.XmlNode', or derived from @'System.Xml.XmlNode', are valid.
+  syntax:
+    content: protected Exception CreateInvalidAnyTypeException(Type type)
+    content.vb: Protected Function CreateInvalidAnyTypeException(type As Type) As Exception
+    parameters:
+    - id: type
+      type: System.Type
+      description: The @'System.Type' that is invalid.
+    return:
+      type: System.Exception
+      description: The newly created exception.
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteXmlAttribute(XmlNode)
+  id: WriteXmlAttribute(XmlNode)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteXmlAttribute(XmlNode)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteXmlAttribute(XmlNode)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 851
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: protected void WriteXmlAttribute(XmlNode node)
+    content.vb: Protected Sub WriteXmlAttribute(node As XmlNode)
+    parameters:
+    - id: node
+      type: XmlNode
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteXmlAttribute(XmlNode,System.Object)
+  id: WriteXmlAttribute(XmlNode,System.Object)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteXmlAttribute(XmlNode, Object)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteXmlAttribute(XmlNode, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 857
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: protected void WriteXmlAttribute(XmlNode node, object container)
+    content.vb: Protected Sub WriteXmlAttribute(node As XmlNode, container As Object)
+    parameters:
+    - id: node
+      type: XmlNode
+    - id: container
+      type: System.Object
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteAttribute(System.String,System.String,System.String)
+  id: WriteAttribute(System.String,System.String,System.String)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteAttribute(String, String, String)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteAttribute(System.String, System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 881
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Writes an XML attribute.
+  syntax:
+    content: protected void WriteAttribute(string localName, string ns, string value)
+    content.vb: Protected Sub WriteAttribute(localName As String, ns As String, value As String)
+    parameters:
+    - id: localName
+      type: System.String
+      description: The local name of the XML attribute.
+    - id: ns
+      type: System.String
+      description: The namespace of the XML attribute.
+    - id: value
+      type: System.String
+      description: The value of the XML attribute as a string.
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteAttribute(System.String,System.String,System.Byte[])
+  id: WriteAttribute(System.String,System.String,System.Byte[])
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteAttribute(String, String, Byte[])
+  name.vb: WriteAttribute(String, String, Byte())
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteAttribute(System.String, System.String, System.Byte[])
+  fullName.vb: System.Xml.Serialization.XmlSerializationWriter.WriteAttribute(System.String, System.String, System.Byte())
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 914
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Instructs an @'System.Xml.XmlWriter' object to write an XML attribute.
+  syntax:
+    content: protected void WriteAttribute(string localName, string ns, byte[] value)
+    content.vb: Protected Sub WriteAttribute(localName As String, ns As String, value As Byte())
+    parameters:
+    - id: localName
+      type: System.String
+      description: The local name of the XML attribute.
+    - id: ns
+      type: System.String
+      description: The namespace of the XML attribute.
+    - id: value
+      type: System.Byte[]
+      description: The value of the XML attribute as a byte array.
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteAttribute(System.String,System.String)
+  id: WriteAttribute(System.String,System.String)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteAttribute(String, String)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteAttribute(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 950
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Instructs the @'System.Xml.XmlWriter' to write an XML attribute that has no namespace specified for its name.
+  syntax:
+    content: protected void WriteAttribute(string localName, string value)
+    content.vb: Protected Sub WriteAttribute(localName As String, value As String)
+    parameters:
+    - id: localName
+      type: System.String
+      description: The local name of the XML attribute.
+    - id: value
+      type: System.String
+      description: The value of the XML attribute as a string.
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteAttribute(System.String,System.Byte[])
+  id: WriteAttribute(System.String,System.Byte[])
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteAttribute(String, Byte[])
+  name.vb: WriteAttribute(String, Byte())
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteAttribute(System.String, System.Byte[])
+  fullName.vb: System.Xml.Serialization.XmlSerializationWriter.WriteAttribute(System.String, System.Byte())
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 957
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Instructs an @'System.Xml.XmlWriter' object to write an XML attribute that has no namespace specified for its name.
+  syntax:
+    content: protected void WriteAttribute(string localName, byte[] value)
+    content.vb: Protected Sub WriteAttribute(localName As String, value As Byte())
+    parameters:
+    - id: localName
+      type: System.String
+      description: The local name of the XML attribute.
+    - id: value
+      type: System.Byte[]
+      description: The value of the XML attribute as a byte array.
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteAttribute(System.String,System.String,System.String,System.String)
+  id: WriteAttribute(System.String,System.String,System.String,System.String)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteAttribute(String, String, String, String)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteAttribute(System.String, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 967
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Writes an XML attribute where the namespace prefix is provided manually.
+  syntax:
+    content: protected void WriteAttribute(string prefix, string localName, string ns, string value)
+    content.vb: Protected Sub WriteAttribute(prefix As String, localName As String, ns As String, value As String)
+    parameters:
+    - id: prefix
+      type: System.String
+      description: The namespace prefix to write.
+    - id: localName
+      type: System.String
+      description: The local name of the XML attribute.
+    - id: ns
+      type: System.String
+      description: The namespace represented by the prefix.
+    - id: value
+      type: System.String
+      description: The value of the XML attribute as a string.
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteValue(System.String)
+  id: WriteValue(System.String)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteValue(String)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteValue(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 974
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Writes a specified string value.
+  syntax:
+    content: protected void WriteValue(string value)
+    content.vb: Protected Sub WriteValue(value As String)
+    parameters:
+    - id: value
+      type: System.String
+      description: The value of the string to write.
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteValue(System.Byte[])
+  id: WriteValue(System.Byte[])
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteValue(Byte[])
+  name.vb: WriteValue(Byte())
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteValue(System.Byte[])
+  fullName.vb: System.Xml.Serialization.XmlSerializationWriter.WriteValue(System.Byte())
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 981
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Writes a base-64 byte array.
+  syntax:
+    content: protected void WriteValue(byte[] value)
+    content.vb: Protected Sub WriteValue(value As Byte())
+    parameters:
+    - id: value
+      type: System.Byte[]
+      description: The byte array to write.
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteStartDocument
+  id: WriteStartDocument
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteStartDocument()
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteStartDocument()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 988
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Writes the XML declaration if the writer is positioned at the start of an XML document.
+  syntax:
+    content: protected void WriteStartDocument()
+    content.vb: Protected Sub WriteStartDocument
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteElementString(System.String,System.String)
+  id: WriteElementString(System.String,System.String)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteElementString(String, String)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteElementString(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 997
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Writes an XML element with a specified value in its body.
+  syntax:
+    content: protected void WriteElementString(string localName, string value)
+    content.vb: Protected Sub WriteElementString(localName As String, value As String)
+    parameters:
+    - id: localName
+      type: System.String
+      description: The local name of the XML element to be written without namespace qualification.
+    - id: value
+      type: System.String
+      description: The text value of the XML element.
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteElementString(System.String,System.String,System.String)
+  id: WriteElementString(System.String,System.String,System.String)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteElementString(String, String, String)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteElementString(System.String, System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 1003
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Writes an XML element with a specified value in its body.
+  syntax:
+    content: protected void WriteElementString(string localName, string ns, string value)
+    content.vb: Protected Sub WriteElementString(localName As String, ns As String, value As String)
+    parameters:
+    - id: localName
+      type: System.String
+      description: The local name of the XML element.
+    - id: ns
+      type: System.String
+      description: The namespace of the XML element.
+    - id: value
+      type: System.String
+      description: The text value of the XML element.
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteElementString(System.String,System.String,XmlQualifiedName)
+  id: WriteElementString(System.String,System.String,XmlQualifiedName)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteElementString(String, String, XmlQualifiedName)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteElementString(System.String, System.String, XmlQualifiedName)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 1009
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: protected void WriteElementString(string localName, string value, XmlQualifiedName xsiType)
+    content.vb: Protected Sub WriteElementString(localName As String, value As String, xsiType As XmlQualifiedName)
+    parameters:
+    - id: localName
+      type: System.String
+    - id: value
+      type: System.String
+    - id: xsiType
+      type: XmlQualifiedName
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteElementString(System.String,System.String,System.String,XmlQualifiedName)
+  id: WriteElementString(System.String,System.String,System.String,XmlQualifiedName)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteElementString(String, String, String, XmlQualifiedName)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteElementString(System.String, System.String, System.String, XmlQualifiedName)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 1015
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: protected void WriteElementString(string localName, string ns, string value, XmlQualifiedName xsiType)
+    content.vb: Protected Sub WriteElementString(localName As String, ns As String, value As String, xsiType As XmlQualifiedName)
+    parameters:
+    - id: localName
+      type: System.String
+    - id: ns
+      type: System.String
+    - id: value
+      type: System.String
+    - id: xsiType
+      type: XmlQualifiedName
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String,System.String)
+  id: WriteElementStringRaw(System.String,System.String)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteElementStringRaw(String, String)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 1030
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Writes an XML element with a specified value in its body.
+  syntax:
+    content: protected void WriteElementStringRaw(string localName, string value)
+    content.vb: Protected Sub WriteElementStringRaw(localName As String, value As String)
+    parameters:
+    - id: localName
+      type: System.String
+      description: The local name of the XML element.
+    - id: value
+      type: System.String
+      description: The text value of the XML element.
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String,System.Byte[])
+  id: WriteElementStringRaw(System.String,System.Byte[])
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteElementStringRaw(String, Byte[])
+  name.vb: WriteElementStringRaw(String, Byte())
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String, System.Byte[])
+  fullName.vb: System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String, System.Byte())
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 1036
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Writes an XML element with a specified value in its body.
+  syntax:
+    content: protected void WriteElementStringRaw(string localName, byte[] value)
+    content.vb: Protected Sub WriteElementStringRaw(localName As String, value As Byte())
+    parameters:
+    - id: localName
+      type: System.String
+      description: The local name of the XML element.
+    - id: value
+      type: System.Byte[]
+      description: The text value of the XML element.
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String,System.String,System.String)
+  id: WriteElementStringRaw(System.String,System.String,System.String)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteElementStringRaw(String, String, String)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String, System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 1042
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Writes an XML element with a specified value in its body.
+  syntax:
+    content: protected void WriteElementStringRaw(string localName, string ns, string value)
+    content.vb: Protected Sub WriteElementStringRaw(localName As String, ns As String, value As String)
+    parameters:
+    - id: localName
+      type: System.String
+      description: The local name of the XML element.
+    - id: ns
+      type: System.String
+      description: The namespace of the XML element.
+    - id: value
+      type: System.String
+      description: The text value of the XML element.
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String,System.String,System.Byte[])
+  id: WriteElementStringRaw(System.String,System.String,System.Byte[])
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteElementStringRaw(String, String, Byte[])
+  name.vb: WriteElementStringRaw(String, String, Byte())
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String, System.String, System.Byte[])
+  fullName.vb: System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String, System.String, System.Byte())
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 1048
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Writes an XML element with a specified value in its body.
+  syntax:
+    content: protected void WriteElementStringRaw(string localName, string ns, byte[] value)
+    content.vb: Protected Sub WriteElementStringRaw(localName As String, ns As String, value As Byte())
+    parameters:
+    - id: localName
+      type: System.String
+      description: The local name of the XML element.
+    - id: ns
+      type: System.String
+      description: The namespace of the XML element.
+    - id: value
+      type: System.Byte[]
+      description: The text value of the XML element.
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String,System.String,XmlQualifiedName)
+  id: WriteElementStringRaw(System.String,System.String,XmlQualifiedName)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteElementStringRaw(String, String, XmlQualifiedName)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String, System.String, XmlQualifiedName)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 1054
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: protected void WriteElementStringRaw(string localName, string value, XmlQualifiedName xsiType)
+    content.vb: Protected Sub WriteElementStringRaw(localName As String, value As String, xsiType As XmlQualifiedName)
+    parameters:
+    - id: localName
+      type: System.String
+    - id: value
+      type: System.String
+    - id: xsiType
+      type: XmlQualifiedName
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String,System.Byte[],XmlQualifiedName)
+  id: WriteElementStringRaw(System.String,System.Byte[],XmlQualifiedName)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteElementStringRaw(String, Byte[], XmlQualifiedName)
+  name.vb: WriteElementStringRaw(String, Byte(), XmlQualifiedName)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String, System.Byte[], XmlQualifiedName)
+  fullName.vb: System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String, System.Byte(), XmlQualifiedName)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 1060
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: protected void WriteElementStringRaw(string localName, byte[] value, XmlQualifiedName xsiType)
+    content.vb: Protected Sub WriteElementStringRaw(localName As String, value As Byte(), xsiType As XmlQualifiedName)
+    parameters:
+    - id: localName
+      type: System.String
+    - id: value
+      type: System.Byte[]
+    - id: xsiType
+      type: XmlQualifiedName
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String,System.String,System.String,XmlQualifiedName)
+  id: WriteElementStringRaw(System.String,System.String,System.String,XmlQualifiedName)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteElementStringRaw(String, String, String, XmlQualifiedName)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String, System.String, System.String, XmlQualifiedName)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 1066
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: protected void WriteElementStringRaw(string localName, string ns, string value, XmlQualifiedName xsiType)
+    content.vb: Protected Sub WriteElementStringRaw(localName As String, ns As String, value As String, xsiType As XmlQualifiedName)
+    parameters:
+    - id: localName
+      type: System.String
+    - id: ns
+      type: System.String
+    - id: value
+      type: System.String
+    - id: xsiType
+      type: XmlQualifiedName
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String,System.String,System.Byte[],XmlQualifiedName)
+  id: WriteElementStringRaw(System.String,System.String,System.Byte[],XmlQualifiedName)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteElementStringRaw(String, String, Byte[], XmlQualifiedName)
+  name.vb: WriteElementStringRaw(String, String, Byte(), XmlQualifiedName)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String, System.String, System.Byte[], XmlQualifiedName)
+  fullName.vb: System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String, System.String, System.Byte(), XmlQualifiedName)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 1077
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: protected void WriteElementStringRaw(string localName, string ns, byte[] value, XmlQualifiedName xsiType)
+    content.vb: Protected Sub WriteElementStringRaw(localName As String, ns As String, value As Byte(), xsiType As XmlQualifiedName)
+    parameters:
+    - id: localName
+      type: System.String
+    - id: ns
+      type: System.String
+    - id: value
+      type: System.Byte[]
+    - id: xsiType
+      type: XmlQualifiedName
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteElementQualifiedName(System.String,XmlQualifiedName)
+  id: WriteElementQualifiedName(System.String,XmlQualifiedName)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteElementQualifiedName(String, XmlQualifiedName)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteElementQualifiedName(System.String, XmlQualifiedName)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 1092
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: protected void WriteElementQualifiedName(string localName, XmlQualifiedName value)
+    content.vb: Protected Sub WriteElementQualifiedName(localName As String, value As XmlQualifiedName)
+    parameters:
+    - id: localName
+      type: System.String
+    - id: value
+      type: XmlQualifiedName
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteElementQualifiedName(System.String,XmlQualifiedName,XmlQualifiedName)
+  id: WriteElementQualifiedName(System.String,XmlQualifiedName,XmlQualifiedName)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteElementQualifiedName(String, XmlQualifiedName, XmlQualifiedName)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteElementQualifiedName(System.String, XmlQualifiedName, XmlQualifiedName)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 1098
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: protected void WriteElementQualifiedName(string localName, XmlQualifiedName value, XmlQualifiedName xsiType)
+    content.vb: Protected Sub WriteElementQualifiedName(localName As String, value As XmlQualifiedName, xsiType As XmlQualifiedName)
+    parameters:
+    - id: localName
+      type: System.String
+    - id: value
+      type: XmlQualifiedName
+    - id: xsiType
+      type: XmlQualifiedName
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteElementQualifiedName(System.String,System.String,XmlQualifiedName)
+  id: WriteElementQualifiedName(System.String,System.String,XmlQualifiedName)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteElementQualifiedName(String, String, XmlQualifiedName)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteElementQualifiedName(System.String, System.String, XmlQualifiedName)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 1107
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: protected void WriteElementQualifiedName(string localName, string ns, XmlQualifiedName value)
+    content.vb: Protected Sub WriteElementQualifiedName(localName As String, ns As String, value As XmlQualifiedName)
+    parameters:
+    - id: localName
+      type: System.String
+    - id: ns
+      type: System.String
+    - id: value
+      type: XmlQualifiedName
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteElementQualifiedName(System.String,System.String,XmlQualifiedName,XmlQualifiedName)
+  id: WriteElementQualifiedName(System.String,System.String,XmlQualifiedName,XmlQualifiedName)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteElementQualifiedName(String, String, XmlQualifiedName, XmlQualifiedName)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteElementQualifiedName(System.String, System.String, XmlQualifiedName, XmlQualifiedName)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 1113
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: protected void WriteElementQualifiedName(string localName, string ns, XmlQualifiedName value, XmlQualifiedName xsiType)
+    content.vb: Protected Sub WriteElementQualifiedName(localName As String, ns As String, value As XmlQualifiedName, xsiType As XmlQualifiedName)
+    parameters:
+    - id: localName
+      type: System.String
+    - id: ns
+      type: System.String
+    - id: value
+      type: XmlQualifiedName
+    - id: xsiType
+      type: XmlQualifiedName
+- uid: System.Xml.Serialization.XmlSerializationWriter.InitCallbacks
+  id: InitCallbacks
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: InitCallbacks()
+  fullName: System.Xml.Serialization.XmlSerializationWriter.InitCallbacks()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 1139
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Initializes an instances of the @'System.Xml.Serialization.XmlSerializationWriteCallback' delegate to serialize SOAP-encoded XML data.
+  syntax:
+    content: protected abstract void InitCallbacks()
+    content.vb: Protected MustOverride Sub InitCallbacks
+- uid: System.Xml.Serialization.XmlSerializationWriter.TopLevelElement
+  id: TopLevelElement
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: TopLevelElement()
+  fullName: System.Xml.Serialization.XmlSerializationWriter.TopLevelElement()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 1143
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Initializes object references only while serializing a SOAP-encoded SOAP message.
+  syntax:
+    content: protected void TopLevelElement()
+    content.vb: Protected Sub TopLevelElement
+- uid: System.Xml.Serialization.XmlSerializationWriter.WriteNamespaceDeclarations(System.Xml.Serialization.XmlSerializerNamespaces)
+  id: WriteNamespaceDeclarations(System.Xml.Serialization.XmlSerializerNamespaces)
+  parent: System.Xml.Serialization.XmlSerializationWriter
+  href: System.Xml.Serialization.XmlSerializationWriter.yml
+  name: WriteNamespaceDeclarations(XmlSerializerNamespaces)
+  fullName: System.Xml.Serialization.XmlSerializationWriter.WriteNamespaceDeclarations(System.Xml.Serialization.XmlSerializerNamespaces)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlSerializationWriter.cs
+    startLine: 1150
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Writes the namespace declaration attributes.
+  syntax:
+    content: protected void WriteNamespaceDeclarations(XmlSerializerNamespaces xmlns)
+    content.vb: Protected Sub WriteNamespaceDeclarations(xmlns As XmlSerializerNamespaces)
+    parameters:
+    - id: xmlns
+      type: System.Xml.Serialization.XmlSerializerNamespaces
+      description: The XML namespaces to declare.
+references:
+- uid: System.Xml.Serialization
+  isExternal: false
+  name: System.Xml.Serialization
+  fullName: System.Xml.Serialization
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Xml.Serialization.XmlSerializationGeneratedCode
+  isExternal: false
+  href: System.Xml.Serialization.XmlSerializationGeneratedCode.yml
+  name: XmlSerializationGeneratedCode
+  fullName: System.Xml.Serialization.XmlSerializationGeneratedCode
+  type: Class
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: XmlWriter
+  isExternal: true
+  name: XmlWriter
+  fullName: XmlWriter
+- uid: System.Collections.IList
+  parent: System.Collections
+  isExternal: true
+  name: IList
+  fullName: System.Collections.IList
+- uid: System.Collections
+  isExternal: false
+  name: System.Collections
+  fullName: System.Collections
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  name.vb: Byte()
+  fullName: System.Byte[]
+  fullName.vb: System.Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  fullName: System.DateTime
+- uid: System.Char
+  parent: System
+  isExternal: true
+  name: Char
+  fullName: System.Char
+- uid: System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  fullName: System.Int64
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  name.vb: String()
+  fullName: System.String[]
+  fullName.vb: System.String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Int64[]
+  isExternal: false
+  href: System.Int64.yml
+  name: Int64[]
+  name.vb: Int64()
+  fullName: System.Int64[]
+  fullName.vb: System.Int64()
+  spec.csharp:
+  - uid: System.Int64
+    name: Int64
+    fullName: System.Int64
+    href: System.Int64.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int64
+    name: Int64
+    fullName: System.Int64
+    href: System.Int64.yml
+  - name: ()
+    fullName: ()
+- uid: XmlQualifiedName
+  isExternal: true
+  name: XmlQualifiedName
+  fullName: XmlQualifiedName
+- uid: System.Xml.Serialization.XmlSerializerNamespaces
+  parent: System.Xml.Serialization
+  isExternal: false
+  href: System.Xml.Serialization.XmlSerializerNamespaces.yml
+  name: XmlSerializerNamespaces
+  fullName: System.Xml.Serialization.XmlSerializerNamespaces
+  type: Class
+- uid: IXmlSerializable
+  isExternal: true
+  name: IXmlSerializable
+  fullName: IXmlSerializable
+- uid: XmlNode
+  isExternal: true
+  name: XmlNode
+  fullName: XmlNode
+- uid: System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  fullName: System.Exception
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  fullName: System.Type

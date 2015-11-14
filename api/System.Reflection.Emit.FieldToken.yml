@@ -1,0 +1,427 @@
+items:
+- uid: System.Reflection.Emit.FieldToken
+  id: FieldToken
+  parent: System.Reflection.Emit
+  children:
+  - System.Reflection.Emit.FieldToken.Empty
+  - System.Reflection.Emit.FieldToken.Equals(System.Object)
+  - System.Reflection.Emit.FieldToken.Equals(System.Reflection.Emit.FieldToken)
+  - System.Reflection.Emit.FieldToken.GetHashCode
+  - System.Reflection.Emit.FieldToken.op_Equality(System.Reflection.Emit.FieldToken,System.Reflection.Emit.FieldToken)
+  - System.Reflection.Emit.FieldToken.op_Inequality(System.Reflection.Emit.FieldToken,System.Reflection.Emit.FieldToken)
+  - System.Reflection.Emit.FieldToken.Token
+  href: System.Reflection.Emit.FieldToken.yml
+  name: FieldToken
+  fullName: System.Reflection.Emit.FieldToken
+  type: Struct
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Reflection/Emit/FieldToken.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Reflection/Emit/FieldToken.cs
+    startLine: 23
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: The FieldToken struct is an object representation of a token that represents a field.
+  syntax:
+    content: public struct FieldToken
+    content.vb: Public Structure FieldToken
+  inheritedMembers:
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.Reflection.Emit.FieldToken.Empty
+  id: Empty
+  parent: System.Reflection.Emit.FieldToken
+  href: System.Reflection.Emit.FieldToken.yml
+  name: Empty
+  fullName: System.Reflection.Emit.FieldToken.Empty
+  type: Field
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/FieldToken.cs
+    startLine: 27
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: The default FieldToken with @'System.Reflection.Emit.FieldToken.Token' value 0.
+  syntax:
+    content: public static readonly FieldToken Empty
+    content.vb: Public Shared ReadOnly Empty As FieldToken
+- uid: System.Reflection.Emit.FieldToken.Token
+  id: Token
+  parent: System.Reflection.Emit.FieldToken
+  href: System.Reflection.Emit.FieldToken.yml
+  name: Token
+  fullName: System.Reflection.Emit.FieldToken.Token
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/FieldToken.cs
+    startLine: 47
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Retrieves the metadata token for this field.
+  syntax:
+    content: public int Token { get; }
+    content.vb: Public ReadOnly Property Token As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: Read-only. Retrieves the metadata token of this field.
+- uid: System.Reflection.Emit.FieldToken.GetHashCode
+  id: GetHashCode
+  parent: System.Reflection.Emit.FieldToken
+  href: System.Reflection.Emit.FieldToken.yml
+  name: GetHashCode()
+  fullName: System.Reflection.Emit.FieldToken.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/FieldToken.cs
+    startLine: 53
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Generates the hash code for this field.
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: Returns the hash code for this instance.
+  overridden: System.ValueType.GetHashCode
+- uid: System.Reflection.Emit.FieldToken.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Reflection.Emit.FieldToken
+  href: System.Reflection.Emit.FieldToken.yml
+  name: Equals(Object)
+  fullName: System.Reflection.Emit.FieldToken.Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/FieldToken.cs
+    startLine: 60
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Determines if an object is an instance of FieldToken and is equal to this instance.
+  syntax:
+    content: public override bool Equals(object obj)
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare to this FieldToken.
+    return:
+      type: System.Boolean
+      description: Returns true if *obj* is an instance of FieldToken and is equal to this object; otherwise, false.
+  overridden: System.ValueType.Equals(System.Object)
+- uid: System.Reflection.Emit.FieldToken.Equals(System.Reflection.Emit.FieldToken)
+  id: Equals(System.Reflection.Emit.FieldToken)
+  parent: System.Reflection.Emit.FieldToken
+  href: System.Reflection.Emit.FieldToken.yml
+  name: Equals(FieldToken)
+  fullName: System.Reflection.Emit.FieldToken.Equals(System.Reflection.Emit.FieldToken)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/FieldToken.cs
+    startLine: 68
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Indicates whether the current instance is equal to the specified @'System.Reflection.Emit.FieldToken'.
+  syntax:
+    content: public bool Equals(FieldToken obj)
+    content.vb: Public Function Equals(obj As FieldToken) As Boolean
+    parameters:
+    - id: obj
+      type: System.Reflection.Emit.FieldToken
+      description: The @'System.Reflection.Emit.FieldToken' to compare to the current instance.
+    return:
+      type: System.Boolean
+      description: true if the value of *obj* is equal to the value of the current instance; otherwise, false.
+- uid: System.Reflection.Emit.FieldToken.op_Equality(System.Reflection.Emit.FieldToken,System.Reflection.Emit.FieldToken)
+  id: op_Equality(System.Reflection.Emit.FieldToken,System.Reflection.Emit.FieldToken)
+  parent: System.Reflection.Emit.FieldToken
+  href: System.Reflection.Emit.FieldToken.yml
+  name: Equality(FieldToken, FieldToken)
+  fullName: System.Reflection.Emit.FieldToken.Equality(System.Reflection.Emit.FieldToken, System.Reflection.Emit.FieldToken)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/FieldToken.cs
+    startLine: 73
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Indicates whether two @'System.Reflection.Emit.FieldToken' structures are equal.
+  syntax:
+    content: public static bool operator ==(FieldToken a, FieldToken b)
+    content.vb: Public Shared Operator =(a As FieldToken, b As FieldToken) As Boolean
+    parameters:
+    - id: a
+      type: System.Reflection.Emit.FieldToken
+      description: The @'System.Reflection.Emit.FieldToken' to compare to *b*.
+    - id: b
+      type: System.Reflection.Emit.FieldToken
+      description: The @'System.Reflection.Emit.FieldToken' to compare to *a*.
+    return:
+      type: System.Boolean
+      description: true if *a* is equal to *b*; otherwise, false.
+- uid: System.Reflection.Emit.FieldToken.op_Inequality(System.Reflection.Emit.FieldToken,System.Reflection.Emit.FieldToken)
+  id: op_Inequality(System.Reflection.Emit.FieldToken,System.Reflection.Emit.FieldToken)
+  parent: System.Reflection.Emit.FieldToken
+  href: System.Reflection.Emit.FieldToken.yml
+  name: Inequality(FieldToken, FieldToken)
+  fullName: System.Reflection.Emit.FieldToken.Inequality(System.Reflection.Emit.FieldToken, System.Reflection.Emit.FieldToken)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/FieldToken.cs
+    startLine: 78
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Indicates whether two @'System.Reflection.Emit.FieldToken' structures are not equal.
+  syntax:
+    content: public static bool operator !=(FieldToken a, FieldToken b)
+    content.vb: Public Shared Operator <>(a As FieldToken, b As FieldToken) As Boolean
+    parameters:
+    - id: a
+      type: System.Reflection.Emit.FieldToken
+      description: The @'System.Reflection.Emit.FieldToken' to compare to *b*.
+    - id: b
+      type: System.Reflection.Emit.FieldToken
+      description: The @'System.Reflection.Emit.FieldToken' to compare to *a*.
+    return:
+      type: System.Boolean
+      description: true if *a* is not equal to *b*; otherwise, false.
+references:
+- uid: System.Reflection.Emit
+  isExternal: false
+  name: System.Reflection.Emit
+  fullName: System.Reflection.Emit
+  type: Namespace
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Reflection.Emit.FieldToken
+  parent: System.Reflection.Emit
+  isExternal: false
+  href: System.Reflection.Emit.FieldToken.yml
+  name: FieldToken
+  fullName: System.Reflection.Emit.FieldToken
+  type: Struct

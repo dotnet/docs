@@ -1,0 +1,534 @@
+items:
+- uid: System.Security.Cryptography.X509Certificates.X509ChainElementCollection
+  id: X509ChainElementCollection
+  parent: System.Security.Cryptography.X509Certificates
+  children:
+  - System.Security.Cryptography.X509Certificates.X509ChainElementCollection.CopyTo(System.Security.Cryptography.X509Certificates.X509ChainElement[],System.Int32)
+  - System.Security.Cryptography.X509Certificates.X509ChainElementCollection.Count
+  - System.Security.Cryptography.X509Certificates.X509ChainElementCollection.GetEnumerator
+  - System.Security.Cryptography.X509Certificates.X509ChainElementCollection.IsSynchronized
+  - System.Security.Cryptography.X509Certificates.X509ChainElementCollection.Item(System.Int32)
+  - System.Security.Cryptography.X509Certificates.X509ChainElementCollection.SyncRoot
+  - System.Security.Cryptography.X509Certificates.X509ChainElementCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  - System.Security.Cryptography.X509Certificates.X509ChainElementCollection.System#Collections#IEnumerable#GetEnumerator
+  href: System.Security.Cryptography.X509Certificates.X509ChainElementCollection.yml
+  name: X509ChainElementCollection
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainElementCollection
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainElementCollection.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainElementCollection.cs
+    startLine: 8
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Represents a collection of @'System.Security.Cryptography.X509Certificates.X509ChainElement' objects. This class cannot be inherited.
+  syntax:
+    content: 'public sealed class X509ChainElementCollection : ICollection, IEnumerable'
+    content.vb: Public NotInheritable Class X509ChainElementCollection Implements ICollection, IEnumerable
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.ICollection
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Security.Cryptography.X509Certificates.X509ChainElementCollection.Count
+  id: Count
+  parent: System.Security.Cryptography.X509Certificates.X509ChainElementCollection
+  href: System.Security.Cryptography.X509Certificates.X509ChainElementCollection.yml
+  name: Count
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainElementCollection.Count
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainElementCollection.cs
+    startLine: 23
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Gets the number of elements in the collection.
+  syntax:
+    content: public int Count { get; }
+    content.vb: Public ReadOnly Property Count As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: An integer representing the number of elements in the collection.
+- uid: System.Security.Cryptography.X509Certificates.X509ChainElementCollection.IsSynchronized
+  id: IsSynchronized
+  parent: System.Security.Cryptography.X509Certificates.X509ChainElementCollection
+  href: System.Security.Cryptography.X509Certificates.X509ChainElementCollection.yml
+  name: IsSynchronized
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainElementCollection.IsSynchronized
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainElementCollection.cs
+    startLine: 28
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Gets a value indicating whether the collection of chain elements is synchronized.
+  syntax:
+    content: public bool IsSynchronized { get; }
+    content.vb: Public ReadOnly Property IsSynchronized As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: Always returns false.
+- uid: System.Security.Cryptography.X509Certificates.X509ChainElementCollection.SyncRoot
+  id: SyncRoot
+  parent: System.Security.Cryptography.X509Certificates.X509ChainElementCollection
+  href: System.Security.Cryptography.X509Certificates.X509ChainElementCollection.yml
+  name: SyncRoot
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainElementCollection.SyncRoot
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainElementCollection.cs
+    startLine: 33
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Gets an object that can be used to synchronize access to an @'System.Security.Cryptography.X509Certificates.X509ChainElementCollection' object.
+  syntax:
+    content: public object SyncRoot { get; }
+    content.vb: Public ReadOnly Property SyncRoot As Object
+    parameters: []
+    return:
+      type: System.Object
+      description: A pointer reference to the current object.
+- uid: System.Security.Cryptography.X509Certificates.X509ChainElementCollection.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: System.Security.Cryptography.X509Certificates.X509ChainElementCollection
+  href: System.Security.Cryptography.X509Certificates.X509ChainElementCollection.yml
+  name: Item[Int32]
+  name.vb: Item(Int32)
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainElementCollection.Item[System.Int32]
+  fullName.vb: System.Security.Cryptography.X509Certificates.X509ChainElementCollection.Item(System.Int32)
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainElementCollection.cs
+    startLine: 38
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Gets the @'System.Security.Cryptography.X509Certificates.X509ChainElement' object at the specified index.
+  syntax:
+    content: public X509ChainElement this[int index] { get; }
+    content.vb: Public ReadOnly Property Item(index As Integer) As X509ChainElement
+    parameters:
+    - id: index
+      type: System.Int32
+      description: An integer value.
+    return:
+      type: System.Security.Cryptography.X509Certificates.X509ChainElement
+      description: An @'System.Security.Cryptography.X509Certificates.X509ChainElement' object.
+  exceptions:
+  - type: System.InvalidOperationException
+    description: '*index* is less than zero.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is greater than or equal to the length of the collection.'
+- uid: System.Security.Cryptography.X509Certificates.X509ChainElementCollection.CopyTo(System.Security.Cryptography.X509Certificates.X509ChainElement[],System.Int32)
+  id: CopyTo(System.Security.Cryptography.X509Certificates.X509ChainElement[],System.Int32)
+  parent: System.Security.Cryptography.X509Certificates.X509ChainElementCollection
+  href: System.Security.Cryptography.X509Certificates.X509ChainElementCollection.yml
+  name: CopyTo(X509ChainElement[], Int32)
+  name.vb: CopyTo(X509ChainElement(), Int32)
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainElementCollection.CopyTo(System.Security.Cryptography.X509Certificates.X509ChainElement[], System.Int32)
+  fullName.vb: System.Security.Cryptography.X509Certificates.X509ChainElementCollection.CopyTo(System.Security.Cryptography.X509Certificates.X509ChainElement(), System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainElementCollection.cs
+    startLine: 51
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Copies an @'System.Security.Cryptography.X509Certificates.X509ChainElementCollection' object into an array, starting at the specified index.
+  syntax:
+    content: public void CopyTo(X509ChainElement[] array, int index)
+    content.vb: Public Sub CopyTo(array As X509ChainElement(), index As Integer)
+    parameters:
+    - id: array
+      type: System.Security.Cryptography.X509Certificates.X509ChainElement[]
+      description: An array of @'System.Security.Cryptography.X509Certificates.X509ChainElement' objects.
+    - id: index
+      type: System.Int32
+      description: An integer representing the index value.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: The specified *index* is less than zero, or greater than or equal to the length of the array.
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentException
+    description: '*index* plus the current count is greater than the length of the array.'
+- uid: System.Security.Cryptography.X509Certificates.X509ChainElementCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  id: System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  parent: System.Security.Cryptography.X509Certificates.X509ChainElementCollection
+  href: System.Security.Cryptography.X509Certificates.X509ChainElementCollection.yml
+  name: ICollection.CopyTo(Array, Int32)
+  name.vb: System.Collections.ICollection.CopyTo(Array, Int32)
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainElementCollection.System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainElementCollection.cs
+    startLine: 57
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Copies an @'System.Security.Cryptography.X509Certificates.X509ChainElementCollection' object into an array, starting at the specified index.
+  syntax:
+    content: void ICollection.CopyTo(Array array, int index)
+    content.vb: Sub System.Collections.ICollection.CopyTo(array As Array, index As Integer) Implements ICollection.CopyTo
+    parameters:
+    - id: array
+      type: System.Array
+      description: An array to copy the @'System.Security.Cryptography.X509Certificates.X509ChainElementCollection' object to.
+    - id: index
+      type: System.Int32
+      description: The index of *array* at which to start copying.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: The specified *index* is less than zero, or greater than or equal to the length of the array.
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentException
+    description: '*index* plus the current count is greater than the length of the array.'
+- uid: System.Security.Cryptography.X509Certificates.X509ChainElementCollection.GetEnumerator
+  id: GetEnumerator
+  parent: System.Security.Cryptography.X509Certificates.X509ChainElementCollection
+  href: System.Security.Cryptography.X509Certificates.X509ChainElementCollection.yml
+  name: GetEnumerator()
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainElementCollection.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainElementCollection.cs
+    startLine: 77
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Gets an @'System.Security.Cryptography.X509Certificates.X509ChainElementEnumerator' object that can be used to navigate through a collection of chain elements.
+  syntax:
+    content: public X509ChainElementEnumerator GetEnumerator()
+    content.vb: Public Function GetEnumerator As X509ChainElementEnumerator
+    return:
+      type: System.Security.Cryptography.X509Certificates.X509ChainElementEnumerator
+      description: An @'System.Security.Cryptography.X509Certificates.X509ChainElementEnumerator' object.
+- uid: System.Security.Cryptography.X509Certificates.X509ChainElementCollection.System#Collections#IEnumerable#GetEnumerator
+  id: System#Collections#IEnumerable#GetEnumerator
+  parent: System.Security.Cryptography.X509Certificates.X509ChainElementCollection
+  href: System.Security.Cryptography.X509Certificates.X509ChainElementCollection.yml
+  name: IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainElementCollection.System.Collections.IEnumerable.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Security.Cryptography.X509Certificates/src/System/Security/Cryptography/X509Certificates/X509ChainElementCollection.cs
+    startLine: 82
+  assemblies:
+  - System.Security.Cryptography.X509Certificates
+  namespace: System.Security.Cryptography.X509Certificates
+  summary: Gets an @'System.Collections.IEnumerator' object that can be used to navigate a collection of chain elements.
+  syntax:
+    content: IEnumerator IEnumerable.GetEnumerator()
+    content.vb: Function System.Collections.IEnumerable.GetEnumerator As IEnumerator Implements IEnumerable.GetEnumerator
+    return:
+      type: System.Collections.IEnumerator
+      description: An @'System.Collections.IEnumerator' object.
+references:
+- uid: System.Security.Cryptography.X509Certificates
+  isExternal: false
+  name: System.Security.Cryptography.X509Certificates
+  fullName: System.Security.Cryptography.X509Certificates
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Security.Cryptography.X509Certificates.X509ChainElement
+  isExternal: false
+  href: System.Security.Cryptography.X509Certificates.X509ChainElement.yml
+  name: X509ChainElement
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainElement
+  type: Class
+- uid: System.Security.Cryptography.X509Certificates.X509ChainElement[]
+  isExternal: false
+  href: System.Security.Cryptography.X509Certificates.X509ChainElement.yml
+  name: X509ChainElement[]
+  name.vb: X509ChainElement()
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainElement[]
+  fullName.vb: System.Security.Cryptography.X509Certificates.X509ChainElement()
+  spec.csharp:
+  - uid: System.Security.Cryptography.X509Certificates.X509ChainElement
+    name: X509ChainElement
+    fullName: System.Security.Cryptography.X509Certificates.X509ChainElement
+    href: System.Security.Cryptography.X509Certificates.X509ChainElement.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Security.Cryptography.X509Certificates.X509ChainElement
+    name: X509ChainElement
+    fullName: System.Security.Cryptography.X509Certificates.X509ChainElement
+    href: System.Security.Cryptography.X509Certificates.X509ChainElement.yml
+  - name: ()
+    fullName: ()
+- uid: System.Array
+  parent: System
+  isExternal: true
+  name: Array
+  fullName: System.Array
+- uid: System.Security.Cryptography.X509Certificates.X509ChainElementEnumerator
+  parent: System.Security.Cryptography.X509Certificates
+  isExternal: false
+  href: System.Security.Cryptography.X509Certificates.X509ChainElementEnumerator.yml
+  name: X509ChainElementEnumerator
+  fullName: System.Security.Cryptography.X509Certificates.X509ChainElementEnumerator
+  type: Class
+- uid: System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  isExternal: false
+  name: System.Collections
+  fullName: System.Collections

@@ -1,0 +1,444 @@
+items:
+- uid: System.Runtime.InteropServices.RuntimeEnvironment
+  id: RuntimeEnvironment
+  parent: System.Runtime.InteropServices
+  children:
+  - System.Runtime.InteropServices.RuntimeEnvironment.FromGlobalAccessCache(System.Reflection.Assembly)
+  - System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeDirectory
+  - System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeInterfaceAsIntPtr(System.Guid,System.Guid)
+  - System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeInterfaceAsObject(System.Guid,System.Guid)
+  - System.Runtime.InteropServices.RuntimeEnvironment.GetSystemVersion
+  - System.Runtime.InteropServices.RuntimeEnvironment.SystemConfigurationFile
+  href: System.Runtime.InteropServices.RuntimeEnvironment.yml
+  name: RuntimeEnvironment
+  fullName: System.Runtime.InteropServices.RuntimeEnvironment
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/InteropServices/RuntimeEnvironment.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/InteropServices/RuntimeEnvironment.cs
+    startLine: 25
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Provides a collection of static methods that return information about the common language runtime environment.
+  syntax:
+    content: public class RuntimeEnvironment
+    content.vb: Public Class RuntimeEnvironment
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Runtime.InteropServices.RuntimeEnvironment.FromGlobalAccessCache(System.Reflection.Assembly)
+  id: FromGlobalAccessCache(System.Reflection.Assembly)
+  parent: System.Runtime.InteropServices.RuntimeEnvironment
+  href: System.Runtime.InteropServices.RuntimeEnvironment.yml
+  name: FromGlobalAccessCache(Assembly)
+  fullName: System.Runtime.InteropServices.RuntimeEnvironment.FromGlobalAccessCache(System.Reflection.Assembly)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/RuntimeEnvironment.cs
+    startLine: 62
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Tests whether the specified assembly is loaded in the global assembly cache.
+  syntax:
+    content: public static bool FromGlobalAccessCache(Assembly a)
+    content.vb: Public Shared Function FromGlobalAccessCache(a As Assembly) As Boolean
+    parameters:
+    - id: a
+      type: System.Reflection.Assembly
+      description: The assembly to test.
+    return:
+      type: System.Boolean
+      description: true if the assembly is loaded in the global assembly cache; otherwise, false.
+- uid: System.Runtime.InteropServices.RuntimeEnvironment.GetSystemVersion
+  id: GetSystemVersion
+  parent: System.Runtime.InteropServices.RuntimeEnvironment
+  href: System.Runtime.InteropServices.RuntimeEnvironment.yml
+  name: GetSystemVersion()
+  fullName: System.Runtime.InteropServices.RuntimeEnvironment.GetSystemVersion()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/RuntimeEnvironment.cs
+    startLine: 70
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Gets the version number of the common language runtime that is running the current process.
+  syntax:
+    content: public static string GetSystemVersion()
+    content.vb: Public Shared Function GetSystemVersion As String
+    return:
+      type: System.String
+      description: A string containing the version number of the common language runtime.
+- uid: System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeDirectory
+  id: GetRuntimeDirectory
+  parent: System.Runtime.InteropServices.RuntimeEnvironment
+  href: System.Runtime.InteropServices.RuntimeEnvironment.yml
+  name: GetRuntimeDirectory()
+  fullName: System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeDirectory()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/RuntimeEnvironment.cs
+    startLine: 87
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Returns the directory where the common language runtime is installed.
+  syntax:
+    content: public static string GetRuntimeDirectory()
+    content.vb: Public Shared Function GetRuntimeDirectory As String
+    return:
+      type: System.String
+      description: A string that contains the path to the directory where the common language runtime is installed.
+- uid: System.Runtime.InteropServices.RuntimeEnvironment.SystemConfigurationFile
+  id: SystemConfigurationFile
+  parent: System.Runtime.InteropServices.RuntimeEnvironment
+  href: System.Runtime.InteropServices.RuntimeEnvironment.yml
+  name: SystemConfigurationFile
+  fullName: System.Runtime.InteropServices.RuntimeEnvironment.SystemConfigurationFile
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/RuntimeEnvironment.cs
+    startLine: 100
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Gets the path to the system configuration file.
+  syntax:
+    content: public static string SystemConfigurationFile { get; }
+    content.vb: Public Shared ReadOnly Property SystemConfigurationFile As String
+    parameters: []
+    return:
+      type: System.String
+      description: The path to the system configuration file.
+- uid: System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeInterfaceAsIntPtr(System.Guid,System.Guid)
+  id: GetRuntimeInterfaceAsIntPtr(System.Guid,System.Guid)
+  parent: System.Runtime.InteropServices.RuntimeEnvironment
+  href: System.Runtime.InteropServices.RuntimeEnvironment.yml
+  name: GetRuntimeInterfaceAsIntPtr(Guid, Guid)
+  fullName: System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeInterfaceAsIntPtr(System.Guid, System.Guid)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/RuntimeEnvironment.cs
+    startLine: 131
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Returns the specified interface on the specified class.
+  syntax:
+    content: public static IntPtr GetRuntimeInterfaceAsIntPtr(Guid clsid, Guid riid)
+    content.vb: Public Shared Function GetRuntimeInterfaceAsIntPtr(clsid As Guid, riid As Guid) As IntPtr
+    parameters:
+    - id: clsid
+      type: System.Guid
+      description: The identifier for the desired class.
+    - id: riid
+      type: System.Guid
+      description: The identifier for the desired interface.
+    return:
+      type: System.IntPtr
+      description: An unmanaged pointer to the requested interface.
+  exceptions:
+  - type: System.Runtime.InteropServices.COMException
+    description: IUnknown::QueryInterface failure.
+- uid: System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeInterfaceAsObject(System.Guid,System.Guid)
+  id: GetRuntimeInterfaceAsObject(System.Guid,System.Guid)
+  parent: System.Runtime.InteropServices.RuntimeEnvironment
+  href: System.Runtime.InteropServices.RuntimeEnvironment.yml
+  name: GetRuntimeInterfaceAsObject(Guid, Guid)
+  fullName: System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeInterfaceAsObject(System.Guid, System.Guid)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/RuntimeEnvironment.cs
+    startLine: 146
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Returns an instance of a type that represents a COM object by a pointer to its IUnknown interface.
+  syntax:
+    content: public static object GetRuntimeInterfaceAsObject(Guid clsid, Guid riid)
+    content.vb: Public Shared Function GetRuntimeInterfaceAsObject(clsid As Guid, riid As Guid) As Object
+    parameters:
+    - id: clsid
+      type: System.Guid
+      description: The identifier for the desired class.
+    - id: riid
+      type: System.Guid
+      description: The identifier for the desired interface.
+    return:
+      type: System.Object
+      description: An object that represents the specified unmanaged COM object.
+  exceptions:
+  - type: System.Runtime.InteropServices.COMException
+    description: IUnknown::QueryInterface failure.
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Reflection.Assembly
+  parent: System.Reflection
+  isExternal: true
+  name: Assembly
+  fullName: System.Reflection.Assembly
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  fullName: System.Guid
+- uid: System.IntPtr
+  parent: System
+  isExternal: true
+  name: IntPtr
+  fullName: System.IntPtr

@@ -1,0 +1,122 @@
+items:
+- uid: System.Xml.Serialization.IXmlSerializable
+  id: IXmlSerializable
+  parent: System.Xml.Serialization
+  children:
+  - System.Xml.Serialization.IXmlSerializable.GetSchema
+  - System.Xml.Serialization.IXmlSerializable.ReadXml(System.Xml.XmlReader)
+  - System.Xml.Serialization.IXmlSerializable.WriteXml(System.Xml.XmlWriter)
+  href: System.Xml.Serialization.IXmlSerializable.yml
+  name: IXmlSerializable
+  fullName: System.Xml.Serialization.IXmlSerializable
+  type: Interface
+  source:
+    remote: &o0
+      path: src/System.Xml.ReaderWriter/src/System/Xml/Serialization/IXmlSerializable.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Xml.ReaderWriter/src/System/Xml/Serialization/IXmlSerializable.cs
+    startLine: 12
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml.Serialization
+  summary: Provides custom formatting for XML serialization and deserialization.
+  syntax:
+    content: public interface IXmlSerializable
+    content.vb: Public Interface IXmlSerializable
+- uid: System.Xml.Serialization.IXmlSerializable.GetSchema
+  id: GetSchema
+  parent: System.Xml.Serialization.IXmlSerializable
+  href: System.Xml.Serialization.IXmlSerializable.yml
+  name: GetSchema()
+  fullName: System.Xml.Serialization.IXmlSerializable.GetSchema()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/Serialization/IXmlSerializable.cs
+    startLine: 15
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml.Serialization
+  summary: This method is reserved and should not be used. When implementing the IXmlSerializable interface, you should return null (Nothing in Visual Basic) from this method, and instead, if specifying a custom schema is required, apply the @'System.Xml.Serialization.XmlSchemaProviderAttribute' to the class.
+  syntax:
+    content: XmlSchema GetSchema()
+    content.vb: Function GetSchema As XmlSchema
+    return:
+      type: System.Xml.Schema.XmlSchema
+      description: An @'System.Xml.Schema.XmlSchema' that describes the XML representation of the object that is produced by the @'System.Xml.Serialization.IXmlSerializable.WriteXml(System.Xml.XmlWriter)' method and consumed by the @'System.Xml.Serialization.IXmlSerializable.ReadXml(System.Xml.XmlReader)' method.
+- uid: System.Xml.Serialization.IXmlSerializable.ReadXml(System.Xml.XmlReader)
+  id: ReadXml(System.Xml.XmlReader)
+  parent: System.Xml.Serialization.IXmlSerializable
+  href: System.Xml.Serialization.IXmlSerializable.yml
+  name: ReadXml(XmlReader)
+  fullName: System.Xml.Serialization.IXmlSerializable.ReadXml(System.Xml.XmlReader)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/Serialization/IXmlSerializable.cs
+    startLine: 17
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml.Serialization
+  summary: Generates an object from its XML representation.
+  syntax:
+    content: void ReadXml(XmlReader reader)
+    content.vb: Sub ReadXml(reader As XmlReader)
+    parameters:
+    - id: reader
+      type: System.Xml.XmlReader
+      description: The @'System.Xml.XmlReader' stream from which the object is deserialized.
+- uid: System.Xml.Serialization.IXmlSerializable.WriteXml(System.Xml.XmlWriter)
+  id: WriteXml(System.Xml.XmlWriter)
+  parent: System.Xml.Serialization.IXmlSerializable
+  href: System.Xml.Serialization.IXmlSerializable.yml
+  name: WriteXml(XmlWriter)
+  fullName: System.Xml.Serialization.IXmlSerializable.WriteXml(System.Xml.XmlWriter)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/Serialization/IXmlSerializable.cs
+    startLine: 19
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml.Serialization
+  summary: Converts an object into its XML representation.
+  syntax:
+    content: void WriteXml(XmlWriter writer)
+    content.vb: Sub WriteXml(writer As XmlWriter)
+    parameters:
+    - id: writer
+      type: System.Xml.XmlWriter
+      description: The @'System.Xml.XmlWriter' stream to which the object is serialized.
+references:
+- uid: System.Xml.Serialization
+  isExternal: false
+  name: System.Xml.Serialization
+  fullName: System.Xml.Serialization
+  type: Namespace
+- uid: System.Xml.Schema.XmlSchema
+  isExternal: false
+  href: System.Xml.Schema.XmlSchema.yml
+  name: XmlSchema
+  fullName: System.Xml.Schema.XmlSchema
+  type: Class
+- uid: System.Xml.XmlReader
+  parent: System.Xml
+  isExternal: false
+  href: System.Xml.XmlReader.yml
+  name: XmlReader
+  fullName: System.Xml.XmlReader
+  type: Class
+- uid: System.Xml
+  isExternal: false
+  name: System.Xml
+  fullName: System.Xml
+  type: Namespace
+- uid: System.Xml.XmlWriter
+  parent: System.Xml
+  isExternal: false
+  href: System.Xml.XmlWriter.yml
+  name: XmlWriter
+  fullName: System.Xml.XmlWriter
+  type: Class

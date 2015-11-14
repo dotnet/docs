@@ -1,0 +1,587 @@
+items:
+- uid: System.MissingFieldException
+  id: MissingFieldException
+  parent: System
+  children:
+  - System.MissingFieldException.#ctor
+  - System.MissingFieldException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - System.MissingFieldException.#ctor(System.String)
+  - System.MissingFieldException.#ctor(System.String,System.Exception)
+  - System.MissingFieldException.#ctor(System.String,System.String)
+  - System.MissingFieldException.Message
+  href: System.MissingFieldException.yml
+  name: MissingFieldException
+  fullName: System.MissingFieldException
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/MissingFieldException.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/MissingFieldException.cs
+    startLine: 17
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: The exception that is thrown when there is an attempt to dynamically access a field that does not exist.
+  syntax:
+    content: 'public class MissingFieldException : MissingMemberException, _Exception, ISerializable'
+    content.vb: Public Class MissingFieldException Inherits MissingMemberException Implements _Exception, ISerializable
+  inheritance:
+  - System.Object
+  - System.Exception
+  - System.SystemException
+  - System.MemberAccessException
+  - System.MissingMemberException
+  implements:
+  - System.Runtime.InteropServices._Exception
+  - System.Runtime.Serialization.ISerializable
+  inheritedMembers:
+  - System.MissingMemberException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - System.MissingMemberException.ClassName
+  - System.MissingMemberException.MemberName
+  - System.MissingMemberException.Signature
+  - System.Exception.Data
+  - System.Exception.GetBaseException
+  - System.Exception.InnerException
+  - System.Exception.TargetSite
+  - System.Exception.StackTrace
+  - System.Exception.HelpLink
+  - System.Exception.Source
+  - System.Exception.ToString
+  - System.Exception.HResult
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.MissingFieldException.#ctor
+  id: '#ctor'
+  parent: System.MissingFieldException
+  href: System.MissingFieldException.yml
+  name: MissingFieldException()
+  fullName: System.MissingFieldException.MissingFieldException()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/MissingFieldException.cs
+    startLine: 20
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of the @'System.MissingFieldException' class.
+  syntax:
+    content: public MissingFieldException()
+    content.vb: Public Sub New
+- uid: System.MissingFieldException.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: System.MissingFieldException
+  href: System.MissingFieldException.yml
+  name: MissingFieldException(String)
+  fullName: System.MissingFieldException.MissingFieldException(System.String)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/MissingFieldException.cs
+    startLine: 25
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of the @'System.MissingFieldException' class with a specified error message.
+  syntax:
+    content: public MissingFieldException(string message)
+    content.vb: Public Sub New(message As String)
+    parameters:
+    - id: message
+      type: System.String
+      description: A @'System.String' that describes the error.
+- uid: System.MissingFieldException.#ctor(System.String,System.Exception)
+  id: '#ctor(System.String,System.Exception)'
+  parent: System.MissingFieldException
+  href: System.MissingFieldException.yml
+  name: MissingFieldException(String, Exception)
+  fullName: System.MissingFieldException.MissingFieldException(System.String, System.Exception)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/MissingFieldException.cs
+    startLine: 30
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of the @'System.MissingFieldException' class with a specified error message and a reference to the inner exception that is the cause of this exception.
+  syntax:
+    content: public MissingFieldException(string message, Exception inner)
+    content.vb: Public Sub New(message As String, inner As Exception)
+    parameters:
+    - id: message
+      type: System.String
+      description: The error message that explains the reason for the exception.
+    - id: inner
+      type: System.Exception
+      description: The exception that is the cause of the current exception. If the *inner* parameter is not a null reference (Nothing in Visual Basic), the current exception is raised in a catch block that handles the inner exception.
+- uid: System.MissingFieldException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  id: '#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)'
+  parent: System.MissingFieldException
+  href: System.MissingFieldException.yml
+  name: MissingFieldException(SerializationInfo, StreamingContext)
+  fullName: System.MissingFieldException.MissingFieldException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/MissingFieldException.cs
+    startLine: 35
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of the @'System.MissingFieldException' class with serialized data.
+  syntax:
+    content: protected MissingFieldException(SerializationInfo info, StreamingContext context)
+    content.vb: Protected Sub New(info As SerializationInfo, context As StreamingContext)
+    parameters:
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+      description: The object that holds the serialized object data.
+    - id: context
+      type: System.Runtime.Serialization.StreamingContext
+      description: The contextual information about the source or destination.
+- uid: System.MissingFieldException.Message
+  id: Message
+  parent: System.MissingFieldException
+  href: System.MissingFieldException.yml
+  name: Message
+  fullName: System.MissingFieldException.Message
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/MissingFieldException.cs
+    startLine: 38
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the text string showing the signature of the missing field, the class name, and the field name. This property is read-only.
+  syntax:
+    content: public override string Message { get; }
+    content.vb: Public Overrides ReadOnly Property Message As String
+    parameters: []
+    return:
+      type: System.String
+      description: The error message string.
+  overridden: System.MissingMemberException.Message
+- uid: System.MissingFieldException.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: System.MissingFieldException
+  href: System.MissingFieldException.yml
+  name: MissingFieldException(String, String)
+  fullName: System.MissingFieldException.MissingFieldException(System.String, System.String)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/MissingFieldException.cs
+    startLine: 61
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Initializes a new instance of the @'System.MissingFieldException' class with the specified class name and field name.
+  syntax:
+    content: public MissingFieldException(string className, string fieldName)
+    content.vb: Public Sub New(className As String, fieldName As String)
+    parameters:
+    - id: className
+      type: System.String
+      description: The name of the class in which access to a nonexistent field was attempted.
+    - id: fieldName
+      type: System.String
+      description: The name of the field that cannot be accessed.
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  fullName: System.Exception
+- uid: System.SystemException
+  parent: System
+  isExternal: true
+  name: SystemException
+  fullName: System.SystemException
+- uid: System.MemberAccessException
+  isExternal: false
+  href: System.MemberAccessException.yml
+  name: MemberAccessException
+  fullName: System.MemberAccessException
+  type: Class
+- uid: System.MissingMemberException
+  parent: System
+  isExternal: false
+  href: System.MissingMemberException.yml
+  name: MissingMemberException
+  fullName: System.MissingMemberException
+  type: Class
+- uid: System.MissingMemberException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: System.MissingMemberException
+  isExternal: false
+  href: System.MissingMemberException.yml
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  fullName: System.MissingMemberException.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: System.MissingMemberException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    fullName: System.MissingMemberException.GetObjectData
+    href: System.MissingMemberException.yml
+  - name: (
+    fullName: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    fullName: System.Runtime.Serialization.SerializationInfo
+    href: System.Runtime.Serialization.SerializationInfo.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    href: System.Runtime.Serialization.StreamingContext.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.MissingMemberException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    fullName: System.MissingMemberException.GetObjectData
+    href: System.MissingMemberException.yml
+  - name: (
+    fullName: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    fullName: System.Runtime.Serialization.SerializationInfo
+    href: System.Runtime.Serialization.SerializationInfo.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    href: System.Runtime.Serialization.StreamingContext.yml
+  - name: )
+    fullName: )
+- uid: System.MissingMemberException.ClassName
+  parent: System.MissingMemberException
+  isExternal: false
+  href: System.MissingMemberException.yml
+  name: ClassName
+  fullName: System.MissingMemberException.ClassName
+- uid: System.MissingMemberException.MemberName
+  parent: System.MissingMemberException
+  isExternal: false
+  href: System.MissingMemberException.yml
+  name: MemberName
+  fullName: System.MissingMemberException.MemberName
+- uid: System.MissingMemberException.Signature
+  parent: System.MissingMemberException
+  isExternal: false
+  href: System.MissingMemberException.yml
+  name: Signature
+  fullName: System.MissingMemberException.Signature
+- uid: System.Exception.Data
+  parent: System.Exception
+  isExternal: true
+  name: Data
+  fullName: System.Exception.Data
+- uid: System.Exception.GetBaseException
+  parent: System.Exception
+  isExternal: true
+  name: GetBaseException()
+  fullName: System.Exception.GetBaseException()
+  spec.csharp:
+  - uid: System.Exception.GetBaseException
+    name: GetBaseException
+    fullName: System.Exception.GetBaseException
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Exception.GetBaseException
+    name: GetBaseException
+    fullName: System.Exception.GetBaseException
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Exception.InnerException
+  parent: System.Exception
+  isExternal: true
+  name: InnerException
+  fullName: System.Exception.InnerException
+- uid: System.Exception.TargetSite
+  parent: System.Exception
+  isExternal: true
+  name: TargetSite
+  fullName: System.Exception.TargetSite
+- uid: System.Exception.StackTrace
+  parent: System.Exception
+  isExternal: true
+  name: StackTrace
+  fullName: System.Exception.StackTrace
+- uid: System.Exception.HelpLink
+  parent: System.Exception
+  isExternal: true
+  name: HelpLink
+  fullName: System.Exception.HelpLink
+- uid: System.Exception.Source
+  parent: System.Exception
+  isExternal: true
+  name: Source
+  fullName: System.Exception.Source
+- uid: System.Exception.ToString
+  parent: System.Exception
+  isExternal: true
+  name: ToString()
+  fullName: System.Exception.ToString()
+  spec.csharp:
+  - uid: System.Exception.ToString
+    name: ToString
+    fullName: System.Exception.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Exception.ToString
+    name: ToString
+    fullName: System.Exception.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Exception.HResult
+  parent: System.Exception
+  isExternal: true
+  name: HResult
+  fullName: System.Exception.HResult
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Runtime.Serialization.SerializationInfo
+  parent: System.Runtime.Serialization
+  isExternal: false
+  href: System.Runtime.Serialization.SerializationInfo.yml
+  name: SerializationInfo
+  fullName: System.Runtime.Serialization.SerializationInfo
+  type: Class
+- uid: System.Runtime.Serialization.StreamingContext
+  isExternal: false
+  href: System.Runtime.Serialization.StreamingContext.yml
+  name: StreamingContext
+  fullName: System.Runtime.Serialization.StreamingContext
+  type: Struct
+- uid: System.Runtime.Serialization
+  isExternal: false
+  name: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+  type: Namespace
+- uid: System.MissingMemberException.Message
+  parent: System.MissingMemberException
+  isExternal: false
+  href: System.MissingMemberException.yml
+  name: Message
+  fullName: System.MissingMemberException.Message

@@ -1,0 +1,634 @@
+items:
+- uid: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection
+  id: KeyContainerPermissionAccessEntryCollection
+  parent: System.Security.Permissions
+  children:
+  - System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.Add(System.Security.Permissions.KeyContainerPermissionAccessEntry)
+  - System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.Clear
+  - System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.CopyTo(System.Security.Permissions.KeyContainerPermissionAccessEntry[],System.Int32)
+  - System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.Count
+  - System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.GetEnumerator
+  - System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.IndexOf(System.Security.Permissions.KeyContainerPermissionAccessEntry)
+  - System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.IsSynchronized
+  - System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.Item(System.Int32)
+  - System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.Remove(System.Security.Permissions.KeyContainerPermissionAccessEntry)
+  - System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.SyncRoot
+  - System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  - System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.System#Collections#IEnumerable#GetEnumerator
+  href: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.yml
+  name: KeyContainerPermissionAccessEntryCollection
+  fullName: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Security/Permissions/keycontainerpermission.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Security/Permissions/keycontainerpermission.cs
+    startLine: 216
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Represents a collection of @'System.Security.Permissions.KeyContainerPermissionAccessEntry' objects. This class cannot be inherited.
+  syntax:
+    content: 'public sealed class KeyContainerPermissionAccessEntryCollection : ICollection, IEnumerable'
+    content.vb: Public NotInheritable Class KeyContainerPermissionAccessEntryCollection Implements ICollection, IEnumerable
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.ICollection
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection
+  href: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.yml
+  name: Item[Int32]
+  name.vb: Item(Int32)
+  fullName: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.Item[System.Int32]
+  fullName.vb: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.Item(System.Int32)
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/keycontainerpermission.cs
+    startLine: 228
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Gets the item at the specified index in the collection.
+  syntax:
+    content: public KeyContainerPermissionAccessEntry this[int index] { get; }
+    content.vb: Public ReadOnly Property Item(index As Integer) As KeyContainerPermissionAccessEntry
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the element to access.
+    return:
+      type: System.Security.Permissions.KeyContainerPermissionAccessEntry
+      description: The @'System.Security.Permissions.KeyContainerPermissionAccessEntry' object at the specified index in the collection.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is greater than or equal to the collection count.'
+  - type: System.InvalidOperationException
+    description: '*index* is negative.'
+- uid: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.Count
+  id: Count
+  parent: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection
+  href: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.yml
+  name: Count
+  fullName: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.Count
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/keycontainerpermission.cs
+    startLine: 240
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Gets the number of items in the collection.
+  syntax:
+    content: public int Count { get; }
+    content.vb: Public ReadOnly Property Count As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: The number of @'System.Security.Permissions.KeyContainerPermissionAccessEntry' objects in the collection.
+- uid: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.Add(System.Security.Permissions.KeyContainerPermissionAccessEntry)
+  id: Add(System.Security.Permissions.KeyContainerPermissionAccessEntry)
+  parent: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection
+  href: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.yml
+  name: Add(KeyContainerPermissionAccessEntry)
+  fullName: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.Add(System.Security.Permissions.KeyContainerPermissionAccessEntry)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/keycontainerpermission.cs
+    startLine: 246
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Adds a @'System.Security.Permissions.KeyContainerPermissionAccessEntry' object to the collection.
+  syntax:
+    content: public int Add(KeyContainerPermissionAccessEntry accessEntry)
+    content.vb: Public Function Add(accessEntry As KeyContainerPermissionAccessEntry) As Integer
+    parameters:
+    - id: accessEntry
+      type: System.Security.Permissions.KeyContainerPermissionAccessEntry
+      description: The @'System.Security.Permissions.KeyContainerPermissionAccessEntry' object to add.
+    return:
+      type: System.Int32
+      description: The index at which the new element was inserted.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*accessEntry* is null.'
+- uid: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.Clear
+  id: Clear
+  parent: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection
+  href: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.yml
+  name: Clear()
+  fullName: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.Clear()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/keycontainerpermission.cs
+    startLine: 266
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Removes all the @'System.Security.Permissions.KeyContainerPermissionAccessEntry' objects from the collection.
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear
+- uid: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.IndexOf(System.Security.Permissions.KeyContainerPermissionAccessEntry)
+  id: IndexOf(System.Security.Permissions.KeyContainerPermissionAccessEntry)
+  parent: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection
+  href: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.yml
+  name: IndexOf(KeyContainerPermissionAccessEntry)
+  fullName: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.IndexOf(System.Security.Permissions.KeyContainerPermissionAccessEntry)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/keycontainerpermission.cs
+    startLine: 270
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Gets the index in the collection of the specified @'System.Security.Permissions.KeyContainerPermissionAccessEntry' object, if it exists in the collection.
+  syntax:
+    content: public int IndexOf(KeyContainerPermissionAccessEntry accessEntry)
+    content.vb: Public Function IndexOf(accessEntry As KeyContainerPermissionAccessEntry) As Integer
+    parameters:
+    - id: accessEntry
+      type: System.Security.Permissions.KeyContainerPermissionAccessEntry
+      description: The @'System.Security.Permissions.KeyContainerPermissionAccessEntry' object to locate.
+    return:
+      type: System.Int32
+      description: "The index of the specified @'System.Security.Permissions.KeyContainerPermissionAccessEntry' object in the collection, or –1 if no match is found."
+- uid: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.Remove(System.Security.Permissions.KeyContainerPermissionAccessEntry)
+  id: Remove(System.Security.Permissions.KeyContainerPermissionAccessEntry)
+  parent: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection
+  href: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.yml
+  name: Remove(KeyContainerPermissionAccessEntry)
+  fullName: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.Remove(System.Security.Permissions.KeyContainerPermissionAccessEntry)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/keycontainerpermission.cs
+    startLine: 274
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Removes the specified @'System.Security.Permissions.KeyContainerPermissionAccessEntry' object from thecollection.
+  syntax:
+    content: public void Remove(KeyContainerPermissionAccessEntry accessEntry)
+    content.vb: Public Sub Remove(accessEntry As KeyContainerPermissionAccessEntry)
+    parameters:
+    - id: accessEntry
+      type: System.Security.Permissions.KeyContainerPermissionAccessEntry
+      description: The @'System.Security.Permissions.KeyContainerPermissionAccessEntry' object to remove.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*accessEntry* is null.'
+- uid: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.GetEnumerator
+  id: GetEnumerator
+  parent: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection
+  href: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.yml
+  name: GetEnumerator()
+  fullName: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/keycontainerpermission.cs
+    startLine: 281
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Returns a @'System.Security.Permissions.KeyContainerPermissionAccessEntryEnumerator' object that can be used to iterate through the objects in the collection.
+  syntax:
+    content: public KeyContainerPermissionAccessEntryEnumerator GetEnumerator()
+    content.vb: Public Function GetEnumerator As KeyContainerPermissionAccessEntryEnumerator
+    return:
+      type: System.Security.Permissions.KeyContainerPermissionAccessEntryEnumerator
+      description: A @'System.Security.Permissions.KeyContainerPermissionAccessEntryEnumerator' object that can be used to iterate through the collection.
+- uid: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.System#Collections#IEnumerable#GetEnumerator
+  id: System#Collections#IEnumerable#GetEnumerator
+  parent: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection
+  href: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.yml
+  name: IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.System.Collections.IEnumerable.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/keycontainerpermission.cs
+    startLine: 286
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Returns a @'System.Security.Permissions.KeyContainerPermissionAccessEntryEnumerator' object that can be used to iterate through the objects in the collection.
+  syntax:
+    content: IEnumerator IEnumerable.GetEnumerator()
+    content.vb: Function System.Collections.IEnumerable.GetEnumerator As IEnumerator Implements IEnumerable.GetEnumerator
+    return:
+      type: System.Collections.IEnumerator
+      description: A @'System.Security.Permissions.KeyContainerPermissionAccessEntryEnumerator' object that can be used to iterate through the collection.
+- uid: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  id: System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  parent: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection
+  href: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.yml
+  name: ICollection.CopyTo(Array, Int32)
+  name.vb: System.Collections.ICollection.CopyTo(Array, Int32)
+  fullName: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/keycontainerpermission.cs
+    startLine: 291
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Copies the elements of the collection to a compatible one-dimensional array, starting at the specified index of the target array.
+  syntax:
+    content: void ICollection.CopyTo(Array array, int index)
+    content.vb: Sub System.Collections.ICollection.CopyTo(array As Array, index As Integer) Implements ICollection.CopyTo
+    parameters:
+    - id: array
+      type: System.Array
+      description: The one-dimensional array that is the destination of the elements copied from the current collection.
+    - id: index
+      type: System.Int32
+      description: The index in *array* at which copying begins.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than the lower bound of *array*.'
+  - type: System.ArgumentException
+    description: '*array* is multidimensional.-or- The number of elements in the collection is greater than the available space from *index* to the end of the destination *array*.'
+- uid: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.CopyTo(System.Security.Permissions.KeyContainerPermissionAccessEntry[],System.Int32)
+  id: CopyTo(System.Security.Permissions.KeyContainerPermissionAccessEntry[],System.Int32)
+  parent: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection
+  href: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.yml
+  name: CopyTo(KeyContainerPermissionAccessEntry[], Int32)
+  name.vb: CopyTo(KeyContainerPermissionAccessEntry(), Int32)
+  fullName: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.CopyTo(System.Security.Permissions.KeyContainerPermissionAccessEntry[], System.Int32)
+  fullName.vb: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.CopyTo(System.Security.Permissions.KeyContainerPermissionAccessEntry(), System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/keycontainerpermission.cs
+    startLine: 308
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Copies the elements of the collection to a compatible one-dimensional array, starting at the specified index of the target array.
+  syntax:
+    content: public void CopyTo(KeyContainerPermissionAccessEntry[] array, int index)
+    content.vb: Public Sub CopyTo(array As KeyContainerPermissionAccessEntry(), index As Integer)
+    parameters:
+    - id: array
+      type: System.Security.Permissions.KeyContainerPermissionAccessEntry[]
+      description: The one-dimensional @'System.Security.Permissions.KeyContainerPermissionAccessEntry' array that is the destination of the elements copied from the current collection.
+    - id: index
+      type: System.Int32
+      description: The index in *array* at which copying begins.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*array* is null.'
+  - type: System.ArgumentOutOfRangeException
+    description: '*index* is less than the lower bound of *array*.'
+  - type: System.ArgumentException
+    description: '*array* is multidimensional.-or- The number of elements in the collection is greater than the available space from *index* to the end of the destination *array*.'
+- uid: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.IsSynchronized
+  id: IsSynchronized
+  parent: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection
+  href: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.yml
+  name: IsSynchronized
+  fullName: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.IsSynchronized
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/keycontainerpermission.cs
+    startLine: 312
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Gets a value indicating whether the collection is synchronized (thread safe).
+  syntax:
+    content: public bool IsSynchronized { get; }
+    content.vb: Public ReadOnly Property IsSynchronized As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: false in all cases.
+- uid: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.SyncRoot
+  id: SyncRoot
+  parent: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection
+  href: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.yml
+  name: SyncRoot
+  fullName: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection.SyncRoot
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/Permissions/keycontainerpermission.cs
+    startLine: 318
+  assemblies:
+  - mscorlib
+  namespace: System.Security.Permissions
+  summary: Gets an object that can be used to synchronize access to the collection.
+  syntax:
+    content: public object SyncRoot { get; }
+    content.vb: Public ReadOnly Property SyncRoot As Object
+    parameters: []
+    return:
+      type: System.Object
+      description: An object that can be used to synchronize access to the collection.
+references:
+- uid: System.Security.Permissions
+  isExternal: false
+  name: System.Security.Permissions
+  fullName: System.Security.Permissions
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Security.Permissions.KeyContainerPermissionAccessEntry
+  isExternal: false
+  href: System.Security.Permissions.KeyContainerPermissionAccessEntry.yml
+  name: KeyContainerPermissionAccessEntry
+  fullName: System.Security.Permissions.KeyContainerPermissionAccessEntry
+  type: Class
+- uid: System.Security.Permissions.KeyContainerPermissionAccessEntryEnumerator
+  parent: System.Security.Permissions
+  isExternal: false
+  href: System.Security.Permissions.KeyContainerPermissionAccessEntryEnumerator.yml
+  name: KeyContainerPermissionAccessEntryEnumerator
+  fullName: System.Security.Permissions.KeyContainerPermissionAccessEntryEnumerator
+  type: Class
+- uid: System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  isExternal: false
+  name: System.Collections
+  fullName: System.Collections
+- uid: System.Array
+  parent: System
+  isExternal: true
+  name: Array
+  fullName: System.Array
+- uid: System.Security.Permissions.KeyContainerPermissionAccessEntry[]
+  isExternal: false
+  href: System.Security.Permissions.KeyContainerPermissionAccessEntry.yml
+  name: KeyContainerPermissionAccessEntry[]
+  name.vb: KeyContainerPermissionAccessEntry()
+  fullName: System.Security.Permissions.KeyContainerPermissionAccessEntry[]
+  fullName.vb: System.Security.Permissions.KeyContainerPermissionAccessEntry()
+  spec.csharp:
+  - uid: System.Security.Permissions.KeyContainerPermissionAccessEntry
+    name: KeyContainerPermissionAccessEntry
+    fullName: System.Security.Permissions.KeyContainerPermissionAccessEntry
+    href: System.Security.Permissions.KeyContainerPermissionAccessEntry.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Security.Permissions.KeyContainerPermissionAccessEntry
+    name: KeyContainerPermissionAccessEntry
+    fullName: System.Security.Permissions.KeyContainerPermissionAccessEntry
+    href: System.Security.Permissions.KeyContainerPermissionAccessEntry.yml
+  - name: ()
+    fullName: ()
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean

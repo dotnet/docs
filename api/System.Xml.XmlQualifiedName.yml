@@ -1,0 +1,592 @@
+items:
+- uid: System.Xml.XmlQualifiedName
+  id: XmlQualifiedName
+  parent: System.Xml
+  children:
+  - System.Xml.XmlQualifiedName.#ctor
+  - System.Xml.XmlQualifiedName.#ctor(System.String)
+  - System.Xml.XmlQualifiedName.#ctor(System.String,System.String)
+  - System.Xml.XmlQualifiedName.Empty
+  - System.Xml.XmlQualifiedName.Equals(System.Object)
+  - System.Xml.XmlQualifiedName.GetHashCode
+  - System.Xml.XmlQualifiedName.IsEmpty
+  - System.Xml.XmlQualifiedName.Name
+  - System.Xml.XmlQualifiedName.Namespace
+  - System.Xml.XmlQualifiedName.op_Equality(System.Xml.XmlQualifiedName,System.Xml.XmlQualifiedName)
+  - System.Xml.XmlQualifiedName.op_Inequality(System.Xml.XmlQualifiedName,System.Xml.XmlQualifiedName)
+  - System.Xml.XmlQualifiedName.ToString
+  - System.Xml.XmlQualifiedName.ToString(System.String,System.String)
+  href: System.Xml.XmlQualifiedName.yml
+  name: XmlQualifiedName
+  fullName: System.Xml.XmlQualifiedName
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Xml.ReaderWriter/src/System/Xml/XmlQualifiedName.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Xml.ReaderWriter/src/System/Xml/XmlQualifiedName.cs
+    startLine: 12
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: Represents an XML qualified name.
+  syntax:
+    content: public class XmlQualifiedName
+    content.vb: Public Class XmlQualifiedName
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Xml.XmlQualifiedName.Empty
+  id: Empty
+  parent: System.Xml.XmlQualifiedName
+  href: System.Xml.XmlQualifiedName.yml
+  name: Empty
+  fullName: System.Xml.XmlQualifiedName.Empty
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/XmlQualifiedName.cs
+    startLine: 23
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: Provides an empty @'System.Xml.XmlQualifiedName'.
+  syntax:
+    content: public static readonly XmlQualifiedName Empty
+    content.vb: Public Shared ReadOnly Empty As XmlQualifiedName
+- uid: System.Xml.XmlQualifiedName.#ctor
+  id: '#ctor'
+  parent: System.Xml.XmlQualifiedName
+  href: System.Xml.XmlQualifiedName.yml
+  name: XmlQualifiedName()
+  fullName: System.Xml.XmlQualifiedName.XmlQualifiedName()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/XmlQualifiedName.cs
+    startLine: 29
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: Initializes a new instance of the @'System.Xml.XmlQualifiedName' class.
+  syntax:
+    content: public XmlQualifiedName()
+    content.vb: Public Sub New
+- uid: System.Xml.XmlQualifiedName.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: System.Xml.XmlQualifiedName
+  href: System.Xml.XmlQualifiedName.yml
+  name: XmlQualifiedName(String)
+  fullName: System.Xml.XmlQualifiedName.XmlQualifiedName(System.String)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/XmlQualifiedName.cs
+    startLine: 35
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: Initializes a new instance of the @'System.Xml.XmlQualifiedName' class with the specified name.
+  syntax:
+    content: public XmlQualifiedName(string name)
+    content.vb: Public Sub New(name As String)
+    parameters:
+    - id: name
+      type: System.String
+      description: The local name to use as the name of the @'System.Xml.XmlQualifiedName' object.
+- uid: System.Xml.XmlQualifiedName.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: System.Xml.XmlQualifiedName
+  href: System.Xml.XmlQualifiedName.yml
+  name: XmlQualifiedName(String, String)
+  fullName: System.Xml.XmlQualifiedName.XmlQualifiedName(System.String, System.String)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/XmlQualifiedName.cs
+    startLine: 41
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: Initializes a new instance of the @'System.Xml.XmlQualifiedName' class with the specified name and namespace.
+  syntax:
+    content: public XmlQualifiedName(string name, string ns)
+    content.vb: Public Sub New(name As String, ns As String)
+    parameters:
+    - id: name
+      type: System.String
+      description: The local name to use as the name of the @'System.Xml.XmlQualifiedName' object.
+    - id: ns
+      type: System.String
+      description: The namespace for the @'System.Xml.XmlQualifiedName' object.
+- uid: System.Xml.XmlQualifiedName.Namespace
+  id: Namespace
+  parent: System.Xml.XmlQualifiedName
+  href: System.Xml.XmlQualifiedName.yml
+  name: Namespace
+  fullName: System.Xml.XmlQualifiedName.Namespace
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/XmlQualifiedName.cs
+    startLine: 51
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: Gets a string representation of the namespace of the @'System.Xml.XmlQualifiedName'.
+  syntax:
+    content: public string Namespace { get; }
+    content.vb: Public ReadOnly Property Namespace As String
+    parameters: []
+    return:
+      type: System.String
+      description: A string representation of the namespace or String.Empty if a namespace is not defined for the object.
+- uid: System.Xml.XmlQualifiedName.Name
+  id: Name
+  parent: System.Xml.XmlQualifiedName
+  href: System.Xml.XmlQualifiedName.yml
+  name: Name
+  fullName: System.Xml.XmlQualifiedName.Name
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/XmlQualifiedName.cs
+    startLine: 60
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: Gets a string representation of the qualified name of the @'System.Xml.XmlQualifiedName'.
+  syntax:
+    content: public string Name { get; }
+    content.vb: Public ReadOnly Property Name As String
+    parameters: []
+    return:
+      type: System.String
+      description: A string representation of the qualified name or String.Empty if a name is not defined for the object.
+- uid: System.Xml.XmlQualifiedName.GetHashCode
+  id: GetHashCode
+  parent: System.Xml.XmlQualifiedName
+  href: System.Xml.XmlQualifiedName.yml
+  name: GetHashCode()
+  fullName: System.Xml.XmlQualifiedName.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/XmlQualifiedName.cs
+    startLine: 69
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: Returns the hash code for the @'System.Xml.XmlQualifiedName'.
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: A hash code for this object.
+  overridden: System.Object.GetHashCode
+- uid: System.Xml.XmlQualifiedName.IsEmpty
+  id: IsEmpty
+  parent: System.Xml.XmlQualifiedName
+  href: System.Xml.XmlQualifiedName.yml
+  name: IsEmpty
+  fullName: System.Xml.XmlQualifiedName.IsEmpty
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/XmlQualifiedName.cs
+    startLine: 82
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: Gets a value indicating whether the @'System.Xml.XmlQualifiedName' is empty.
+  syntax:
+    content: public bool IsEmpty { get; }
+    content.vb: Public ReadOnly Property IsEmpty As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if name and namespace are empty strings; otherwise, false.
+- uid: System.Xml.XmlQualifiedName.ToString
+  id: ToString
+  parent: System.Xml.XmlQualifiedName
+  href: System.Xml.XmlQualifiedName.yml
+  name: ToString()
+  fullName: System.Xml.XmlQualifiedName.ToString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/XmlQualifiedName.cs
+    startLine: 91
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: Returns the string value of the @'System.Xml.XmlQualifiedName'.
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+      description: The string value of the @'System.Xml.XmlQualifiedName' in the format of namespace:localname. If the object does not have a namespace defined, this method returns just the local name.
+  overridden: System.Object.ToString
+- uid: System.Xml.XmlQualifiedName.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Xml.XmlQualifiedName
+  href: System.Xml.XmlQualifiedName.yml
+  name: Equals(Object)
+  fullName: System.Xml.XmlQualifiedName.Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/XmlQualifiedName.cs
+    startLine: 100
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: Determines whether the specified @'System.Xml.XmlQualifiedName' object is equal to the current @'System.Xml.XmlQualifiedName' object.
+  syntax:
+    content: public override bool Equals(object other)
+    content.vb: Public Overrides Function Equals(other As Object) As Boolean
+    parameters:
+    - id: other
+      type: System.Object
+      description: The @'System.Xml.XmlQualifiedName' to compare.
+    return:
+      type: System.Boolean
+      description: true if the two are the same instance object; otherwise, false.
+  overridden: System.Object.Equals(System.Object)
+- uid: System.Xml.XmlQualifiedName.op_Equality(System.Xml.XmlQualifiedName,System.Xml.XmlQualifiedName)
+  id: op_Equality(System.Xml.XmlQualifiedName,System.Xml.XmlQualifiedName)
+  parent: System.Xml.XmlQualifiedName
+  href: System.Xml.XmlQualifiedName.yml
+  name: Equality(XmlQualifiedName, XmlQualifiedName)
+  fullName: System.Xml.XmlQualifiedName.Equality(System.Xml.XmlQualifiedName, System.Xml.XmlQualifiedName)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/XmlQualifiedName.cs
+    startLine: 121
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: Compares two @'System.Xml.XmlQualifiedName' objects.
+  syntax:
+    content: public static bool operator ==(XmlQualifiedName a, XmlQualifiedName b)
+    content.vb: Public Shared Operator =(a As XmlQualifiedName, b As XmlQualifiedName) As Boolean
+    parameters:
+    - id: a
+      type: System.Xml.XmlQualifiedName
+      description: An @'System.Xml.XmlQualifiedName' to compare.
+    - id: b
+      type: System.Xml.XmlQualifiedName
+      description: An @'System.Xml.XmlQualifiedName' to compare.
+    return:
+      type: System.Boolean
+      description: true if the two objects have the same name and namespace values; otherwise, false.
+- uid: System.Xml.XmlQualifiedName.op_Inequality(System.Xml.XmlQualifiedName,System.Xml.XmlQualifiedName)
+  id: op_Inequality(System.Xml.XmlQualifiedName,System.Xml.XmlQualifiedName)
+  parent: System.Xml.XmlQualifiedName
+  href: System.Xml.XmlQualifiedName.yml
+  name: Inequality(XmlQualifiedName, XmlQualifiedName)
+  fullName: System.Xml.XmlQualifiedName.Inequality(System.Xml.XmlQualifiedName, System.Xml.XmlQualifiedName)
+  type: Operator
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/XmlQualifiedName.cs
+    startLine: 136
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: Compares two @'System.Xml.XmlQualifiedName' objects.
+  syntax:
+    content: public static bool operator !=(XmlQualifiedName a, XmlQualifiedName b)
+    content.vb: Public Shared Operator <>(a As XmlQualifiedName, b As XmlQualifiedName) As Boolean
+    parameters:
+    - id: a
+      type: System.Xml.XmlQualifiedName
+      description: An @'System.Xml.XmlQualifiedName' to compare.
+    - id: b
+      type: System.Xml.XmlQualifiedName
+      description: An @'System.Xml.XmlQualifiedName' to compare.
+    return:
+      type: System.Boolean
+      description: true if the name and namespace values for the two objects differ; otherwise, false.
+- uid: System.Xml.XmlQualifiedName.ToString(System.String,System.String)
+  id: ToString(System.String,System.String)
+  parent: System.Xml.XmlQualifiedName
+  href: System.Xml.XmlQualifiedName.yml
+  name: ToString(String, String)
+  fullName: System.Xml.XmlQualifiedName.ToString(System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.ReaderWriter/src/System/Xml/XmlQualifiedName.cs
+    startLine: 145
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: Returns the string value of the @'System.Xml.XmlQualifiedName'.
+  syntax:
+    content: public static string ToString(string name, string ns)
+    content.vb: Public Shared Function ToString(name As String, ns As String) As String
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the object.
+    - id: ns
+      type: System.String
+      description: The namespace of the object.
+    return:
+      type: System.String
+      description: The string value of the @'System.Xml.XmlQualifiedName' in the format of namespace:localname. If the object does not have a namespace defined, this method returns just the local name.
+references:
+- uid: System.Xml
+  isExternal: false
+  name: System.Xml
+  fullName: System.Xml
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Xml.XmlQualifiedName
+  parent: System.Xml
+  isExternal: false
+  href: System.Xml.XmlQualifiedName.yml
+  name: XmlQualifiedName
+  fullName: System.Xml.XmlQualifiedName
+  type: Class

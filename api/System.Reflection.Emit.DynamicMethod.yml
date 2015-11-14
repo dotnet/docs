@@ -1,0 +1,2434 @@
+items:
+- uid: System.Reflection.Emit.DynamicMethod
+  id: DynamicMethod
+  parent: System.Reflection.Emit
+  children:
+  - System.Reflection.Emit.DynamicMethod.#ctor(System.String,System.Reflection.MethodAttributes,System.Reflection.CallingConventions,System.Type,System.Type[],System.Reflection.Module,System.Boolean)
+  - System.Reflection.Emit.DynamicMethod.#ctor(System.String,System.Reflection.MethodAttributes,System.Reflection.CallingConventions,System.Type,System.Type[],System.Type,System.Boolean)
+  - System.Reflection.Emit.DynamicMethod.#ctor(System.String,System.Type,System.Type[])
+  - System.Reflection.Emit.DynamicMethod.#ctor(System.String,System.Type,System.Type[],System.Boolean)
+  - System.Reflection.Emit.DynamicMethod.#ctor(System.String,System.Type,System.Type[],System.Reflection.Module)
+  - System.Reflection.Emit.DynamicMethod.#ctor(System.String,System.Type,System.Type[],System.Reflection.Module,System.Boolean)
+  - System.Reflection.Emit.DynamicMethod.#ctor(System.String,System.Type,System.Type[],System.Type)
+  - System.Reflection.Emit.DynamicMethod.#ctor(System.String,System.Type,System.Type[],System.Type,System.Boolean)
+  - System.Reflection.Emit.DynamicMethod.Attributes
+  - System.Reflection.Emit.DynamicMethod.CallingConvention
+  - System.Reflection.Emit.DynamicMethod.CreateDelegate(System.Type)
+  - System.Reflection.Emit.DynamicMethod.CreateDelegate(System.Type,System.Object)
+  - System.Reflection.Emit.DynamicMethod.DeclaringType
+  - System.Reflection.Emit.DynamicMethod.DefineParameter(System.Int32,System.Reflection.ParameterAttributes,System.String)
+  - System.Reflection.Emit.DynamicMethod.GetBaseDefinition
+  - System.Reflection.Emit.DynamicMethod.GetCustomAttributes(System.Boolean)
+  - System.Reflection.Emit.DynamicMethod.GetCustomAttributes(System.Type,System.Boolean)
+  - System.Reflection.Emit.DynamicMethod.GetDynamicILInfo
+  - System.Reflection.Emit.DynamicMethod.GetILGenerator
+  - System.Reflection.Emit.DynamicMethod.GetILGenerator(System.Int32)
+  - System.Reflection.Emit.DynamicMethod.GetMethodImplementationFlags
+  - System.Reflection.Emit.DynamicMethod.GetParameters
+  - System.Reflection.Emit.DynamicMethod.InitLocals
+  - System.Reflection.Emit.DynamicMethod.Invoke(System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)
+  - System.Reflection.Emit.DynamicMethod.IsDefined(System.Type,System.Boolean)
+  - System.Reflection.Emit.DynamicMethod.IsSecurityCritical
+  - System.Reflection.Emit.DynamicMethod.IsSecuritySafeCritical
+  - System.Reflection.Emit.DynamicMethod.IsSecurityTransparent
+  - System.Reflection.Emit.DynamicMethod.MethodHandle
+  - System.Reflection.Emit.DynamicMethod.Module
+  - System.Reflection.Emit.DynamicMethod.Name
+  - System.Reflection.Emit.DynamicMethod.ReflectedType
+  - System.Reflection.Emit.DynamicMethod.ReturnParameter
+  - System.Reflection.Emit.DynamicMethod.ReturnType
+  - System.Reflection.Emit.DynamicMethod.ReturnTypeCustomAttributes
+  - System.Reflection.Emit.DynamicMethod.ToString
+  href: System.Reflection.Emit.DynamicMethod.yml
+  name: DynamicMethod
+  fullName: System.Reflection.Emit.DynamicMethod
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Reflection/Emit/DynamicMethod.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Reflection/Emit/DynamicMethod.cs
+    startLine: 19
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Defines and represents a dynamic method that can be compiled, executed, and discarded. Discarded methods are available for garbage collection.
+  syntax:
+    content: 'public sealed class DynamicMethod : MethodInfo, ICustomAttributeProvider, _MemberInfo, _MethodBase, _MethodInfo'
+    content.vb: Public NotInheritable Class DynamicMethod Inherits MethodInfo Implements ICustomAttributeProvider, _MemberInfo, _MethodBase, _MethodInfo
+  inheritance:
+  - System.Object
+  - System.Reflection.MemberInfo
+  - System.Reflection.MethodBase
+  - System.Reflection.MethodInfo
+  implements:
+  - System.Reflection.ICustomAttributeProvider
+  - System.Runtime.InteropServices._MemberInfo
+  - System.Runtime.InteropServices._MethodBase
+  - System.Runtime.InteropServices._MethodInfo
+  inheritedMembers:
+  - System.Reflection.MethodInfo.Equals(System.Object)
+  - System.Reflection.MethodInfo.GetHashCode
+  - System.Reflection.MethodInfo.MemberType
+  - System.Reflection.MethodInfo.GetGenericArguments
+  - System.Reflection.MethodInfo.GetGenericMethodDefinition
+  - System.Reflection.MethodInfo.MakeGenericMethod(System.Type[])
+  - System.Reflection.MethodBase.GetMethodFromHandle(System.RuntimeMethodHandle)
+  - System.Reflection.MethodBase.GetMethodFromHandle(System.RuntimeMethodHandle,System.RuntimeTypeHandle)
+  - System.Reflection.MethodBase.GetCurrentMethod
+  - System.Reflection.MethodBase.MethodImplementationFlags
+  - System.Reflection.MethodBase.IsGenericMethodDefinition
+  - System.Reflection.MethodBase.ContainsGenericParameters
+  - System.Reflection.MethodBase.IsGenericMethod
+  - System.Reflection.MethodBase.Invoke(System.Object,System.Object[])
+  - System.Reflection.MethodBase.IsPublic
+  - System.Reflection.MethodBase.IsPrivate
+  - System.Reflection.MethodBase.IsFamily
+  - System.Reflection.MethodBase.IsAssembly
+  - System.Reflection.MethodBase.IsFamilyAndAssembly
+  - System.Reflection.MethodBase.IsFamilyOrAssembly
+  - System.Reflection.MethodBase.IsStatic
+  - System.Reflection.MethodBase.IsFinal
+  - System.Reflection.MethodBase.IsVirtual
+  - System.Reflection.MethodBase.IsHideBySig
+  - System.Reflection.MethodBase.IsAbstract
+  - System.Reflection.MethodBase.IsSpecialName
+  - System.Reflection.MethodBase.IsConstructor
+  - System.Reflection.MethodBase.GetMethodBody
+  - System.Reflection.MemberInfo.CustomAttributes
+  - System.Reflection.MemberInfo.GetCustomAttributesData
+  - System.Reflection.MemberInfo.MetadataToken
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Reflection.Emit.DynamicMethod.#ctor(System.String,System.Type,System.Type[])
+  id: '#ctor(System.String,System.Type,System.Type[])'
+  parent: System.Reflection.Emit.DynamicMethod
+  href: System.Reflection.Emit.DynamicMethod.yml
+  name: DynamicMethod(String, Type, Type[])
+  name.vb: DynamicMethod(String, Type, Type())
+  fullName: System.Reflection.Emit.DynamicMethod.DynamicMethod(System.String, System.Type, System.Type[])
+  fullName.vb: System.Reflection.Emit.DynamicMethod.DynamicMethod(System.String, System.Type, System.Type())
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/DynamicMethod.cs
+    startLine: 73
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Initializes an anonymously hosted dynamic method, specifying the method name, return type, and parameter types.
+  syntax:
+    content: public DynamicMethod(string name, Type returnType, Type[] parameterTypes)
+    content.vb: Public Sub New(name As String, returnType As Type, parameterTypes As Type())
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the dynamic method. This can be a zero-length string, but it cannot be null.
+    - id: returnType
+      type: System.Type
+      description: A @'System.Type' object that specifies the return type of the dynamic method, or null if the method has no return type.
+    - id: parameterTypes
+      type: System.Type[]
+      description: An array of @'System.Type' objects specifying the types of the parameters of the dynamic method, or null if the method has no parameters.
+  exceptions:
+  - type: System.ArgumentException
+    description: An element of *parameterTypes* is null or @'System.Void'.
+  - type: System.ArgumentNullException
+    description: '*name* is null.'
+  - type: System.NotSupportedException
+    description: '*returnType* is a type for which @''System.Type.IsByRef'' returns true.'
+- uid: System.Reflection.Emit.DynamicMethod.#ctor(System.String,System.Type,System.Type[],System.Boolean)
+  id: '#ctor(System.String,System.Type,System.Type[],System.Boolean)'
+  parent: System.Reflection.Emit.DynamicMethod
+  href: System.Reflection.Emit.DynamicMethod.yml
+  name: DynamicMethod(String, Type, Type[], Boolean)
+  name.vb: DynamicMethod(String, Type, Type(), Boolean)
+  fullName: System.Reflection.Emit.DynamicMethod.DynamicMethod(System.String, System.Type, System.Type[], System.Boolean)
+  fullName.vb: System.Reflection.Emit.DynamicMethod.DynamicMethod(System.String, System.Type, System.Type(), System.Boolean)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/DynamicMethod.cs
+    startLine: 93
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Initializes an anonymously hosted dynamic method, specifying the method name, return type, parameter types, and whether just-in-time (JIT) visibility checks should be skipped for types and members accessed by the Microsoft intermediate language (MSIL) of the dynamic method.
+  syntax:
+    content: public DynamicMethod(string name, Type returnType, Type[] parameterTypes, bool restrictedSkipVisibility)
+    content.vb: Public Sub New(name As String, returnType As Type, parameterTypes As Type(), restrictedSkipVisibility As Boolean)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the dynamic method. This can be a zero-length string, but it cannot be null.
+    - id: returnType
+      type: System.Type
+      description: A @'System.Type' object that specifies the return type of the dynamic method, or null if the method has no return type.
+    - id: parameterTypes
+      type: System.Type[]
+      description: An array of @'System.Type' objects specifying the types of the parameters of the dynamic method, or null if the method has no parameters.
+    - id: restrictedSkipVisibility
+      type: System.Boolean
+      description: 'true to skip JIT visibility checks on types and members accessed by the MSIL of the dynamic method, with this restriction: the trust level of the assemblies that contain those types and members must be equal to or less than the trust level of the call stack that emits the dynamic method; otherwise, false.'
+  exceptions:
+  - type: System.ArgumentException
+    description: An element of *parameterTypes* is null or @'System.Void'.
+  - type: System.ArgumentNullException
+    description: '*name* is null.'
+  - type: System.NotSupportedException
+    description: '*returnType* is a type for which @''System.Type.IsByRef'' returns true.'
+- uid: System.Reflection.Emit.DynamicMethod.#ctor(System.String,System.Type,System.Type[],System.Reflection.Module)
+  id: '#ctor(System.String,System.Type,System.Type[],System.Reflection.Module)'
+  parent: System.Reflection.Emit.DynamicMethod
+  href: System.Reflection.Emit.DynamicMethod.yml
+  name: DynamicMethod(String, Type, Type[], Module)
+  name.vb: DynamicMethod(String, Type, Type(), Module)
+  fullName: System.Reflection.Emit.DynamicMethod.DynamicMethod(System.String, System.Type, System.Type[], System.Reflection.Module)
+  fullName.vb: System.Reflection.Emit.DynamicMethod.DynamicMethod(System.String, System.Type, System.Type(), System.Reflection.Module)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/DynamicMethod.cs
+    startLine: 115
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Creates a dynamic method that is global to a module, specifying the method name, return type, parameter types, and module.
+  syntax:
+    content: public DynamicMethod(string name, Type returnType, Type[] parameterTypes, Module m)
+    content.vb: Public Sub New(name As String, returnType As Type, parameterTypes As Type(), m As Module)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the dynamic method. This can be a zero-length string, but it cannot be null.
+    - id: returnType
+      type: System.Type
+      description: A @'System.Type' object that specifies the return type of the dynamic method, or null if the method has no return type.
+    - id: parameterTypes
+      type: System.Type[]
+      description: An array of @'System.Type' objects specifying the types of the parameters of the dynamic method, or null if the method has no parameters.
+    - id: m
+      type: System.Reflection.Module
+      description: A @'System.Reflection.Module' representing the module with which the dynamic method is to be logically associated.
+  exceptions:
+  - type: System.ArgumentException
+    description: An element of *parameterTypes* is null or @'System.Void'. -or-*m* is a module that provides anonymous hosting for dynamic methods.
+  - type: System.ArgumentNullException
+    description: '*name* is null. -or-*m* is null.'
+  - type: System.NotSupportedException
+    description: '*returnType* is a type for which @''System.Type.IsByRef'' returns true.'
+- uid: System.Reflection.Emit.DynamicMethod.#ctor(System.String,System.Type,System.Type[],System.Reflection.Module,System.Boolean)
+  id: '#ctor(System.String,System.Type,System.Type[],System.Reflection.Module,System.Boolean)'
+  parent: System.Reflection.Emit.DynamicMethod
+  href: System.Reflection.Emit.DynamicMethod.yml
+  name: DynamicMethod(String, Type, Type[], Module, Boolean)
+  name.vb: DynamicMethod(String, Type, Type(), Module, Boolean)
+  fullName: System.Reflection.Emit.DynamicMethod.DynamicMethod(System.String, System.Type, System.Type[], System.Reflection.Module, System.Boolean)
+  fullName.vb: System.Reflection.Emit.DynamicMethod.DynamicMethod(System.String, System.Type, System.Type(), System.Reflection.Module, System.Boolean)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/DynamicMethod.cs
+    startLine: 139
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Creates a dynamic method that is global to a module, specifying the method name, return type, parameter types, module, and whether just-in-time (JIT) visibility checks should be skipped for types and members accessed by the Microsoft intermediate language (MSIL) of the dynamic method.
+  syntax:
+    content: public DynamicMethod(string name, Type returnType, Type[] parameterTypes, Module m, bool skipVisibility)
+    content.vb: Public Sub New(name As String, returnType As Type, parameterTypes As Type(), m As Module, skipVisibility As Boolean)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the dynamic method. This can be a zero-length string, but it cannot be null.
+    - id: returnType
+      type: System.Type
+      description: A @'System.Type' object that specifies the return type of the dynamic method, or null if the method has no return type.
+    - id: parameterTypes
+      type: System.Type[]
+      description: An array of @'System.Type' objects specifying the types of the parameters of the dynamic method, or null if the method has no parameters.
+    - id: m
+      type: System.Reflection.Module
+      description: A @'System.Reflection.Module' representing the module with which the dynamic method is to be logically associated.
+    - id: skipVisibility
+      type: System.Boolean
+      description: true to skip JIT visibility checks on types and members accessed by the MSIL of the dynamic method.
+  exceptions:
+  - type: System.ArgumentException
+    description: An element of *parameterTypes* is null or @'System.Void'. -or-*m* is a module that provides anonymous hosting for dynamic methods.
+  - type: System.ArgumentNullException
+    description: '*name* is null. -or-*m* is null.'
+  - type: System.NotSupportedException
+    description: '*returnType* is a type for which @''System.Type.IsByRef'' returns true.'
+- uid: System.Reflection.Emit.DynamicMethod.#ctor(System.String,System.Reflection.MethodAttributes,System.Reflection.CallingConventions,System.Type,System.Type[],System.Reflection.Module,System.Boolean)
+  id: '#ctor(System.String,System.Reflection.MethodAttributes,System.Reflection.CallingConventions,System.Type,System.Type[],System.Reflection.Module,System.Boolean)'
+  parent: System.Reflection.Emit.DynamicMethod
+  href: System.Reflection.Emit.DynamicMethod.yml
+  name: DynamicMethod(String, MethodAttributes, CallingConventions, Type, Type[], Module, Boolean)
+  name.vb: DynamicMethod(String, MethodAttributes, CallingConventions, Type, Type(), Module, Boolean)
+  fullName: System.Reflection.Emit.DynamicMethod.DynamicMethod(System.String, System.Reflection.MethodAttributes, System.Reflection.CallingConventions, System.Type, System.Type[], System.Reflection.Module, System.Boolean)
+  fullName.vb: System.Reflection.Emit.DynamicMethod.DynamicMethod(System.String, System.Reflection.MethodAttributes, System.Reflection.CallingConventions, System.Type, System.Type(), System.Reflection.Module, System.Boolean)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/DynamicMethod.cs
+    startLine: 164
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Creates a dynamic method that is global to a module, specifying the method name, attributes, calling convention, return type, parameter types, module, and whether just-in-time (JIT) visibility checks should be skipped for types and members accessed by the Microsoft intermediate language (MSIL) of the dynamic method.
+  syntax:
+    content: public DynamicMethod(string name, MethodAttributes attributes, CallingConventions callingConvention, Type returnType, Type[] parameterTypes, Module m, bool skipVisibility)
+    content.vb: Public Sub New(name As String, attributes As MethodAttributes, callingConvention As CallingConventions, returnType As Type, parameterTypes As Type(), m As Module, skipVisibility As Boolean)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the dynamic method. This can be a zero-length string, but it cannot be null.
+    - id: attributes
+      type: System.Reflection.MethodAttributes
+      description: A bitwise combination of @'System.Reflection.MethodAttributes' values that specifies the attributes of the dynamic method. The only combination allowed is @'System.Reflection.MethodAttributes.Public' and @'System.Reflection.MethodAttributes.Static'.
+    - id: callingConvention
+      type: System.Reflection.CallingConventions
+      description: The calling convention for the dynamic method. Must be @'System.Reflection.CallingConventions.Standard'.
+    - id: returnType
+      type: System.Type
+      description: A @'System.Type' object that specifies the return type of the dynamic method, or null if the method has no return type.
+    - id: parameterTypes
+      type: System.Type[]
+      description: An array of @'System.Type' objects specifying the types of the parameters of the dynamic method, or null if the method has no parameters.
+    - id: m
+      type: System.Reflection.Module
+      description: A @'System.Reflection.Module' representing the module with which the dynamic method is to be logically associated.
+    - id: skipVisibility
+      type: System.Boolean
+      description: true to skip JIT visibility checks on types and members accessed by the MSIL of the dynamic method; otherwise, false.
+  exceptions:
+  - type: System.ArgumentException
+    description: An element of *parameterTypes* is null or @'System.Void'.-or-*m* is a module that provides anonymous hosting for dynamic methods.
+  - type: System.ArgumentNullException
+    description: '*name* is null. -or-*m* is null.'
+  - type: System.NotSupportedException
+    description: '*attributes* is a combination of flags other than @''System.Reflection.MethodAttributes.Public'' and @''System.Reflection.MethodAttributes.Static''.-or-*callingConvention* is not @''System.Reflection.CallingConventions.Standard''.-or-*returnType* is a type for which @''System.Type.IsByRef'' returns true.'
+- uid: System.Reflection.Emit.DynamicMethod.#ctor(System.String,System.Type,System.Type[],System.Type)
+  id: '#ctor(System.String,System.Type,System.Type[],System.Type)'
+  parent: System.Reflection.Emit.DynamicMethod
+  href: System.Reflection.Emit.DynamicMethod.yml
+  name: DynamicMethod(String, Type, Type[], Type)
+  name.vb: DynamicMethod(String, Type, Type(), Type)
+  fullName: System.Reflection.Emit.DynamicMethod.DynamicMethod(System.String, System.Type, System.Type[], System.Type)
+  fullName.vb: System.Reflection.Emit.DynamicMethod.DynamicMethod(System.String, System.Type, System.Type(), System.Type)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/DynamicMethod.cs
+    startLine: 191
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Creates a dynamic method, specifying the method name, return type, parameter types, and the type with which the dynamic method is logically associated.
+  syntax:
+    content: public DynamicMethod(string name, Type returnType, Type[] parameterTypes, Type owner)
+    content.vb: Public Sub New(name As String, returnType As Type, parameterTypes As Type(), owner As Type)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the dynamic method. This can be a zero-length string, but it cannot be null.
+    - id: returnType
+      type: System.Type
+      description: A @'System.Type' object that specifies the return type of the dynamic method, or null if the method has no return type.
+    - id: parameterTypes
+      type: System.Type[]
+      description: An array of @'System.Type' objects specifying the types of the parameters of the dynamic method, or null if the method has no parameters.
+    - id: owner
+      type: System.Type
+      description: A @'System.Type' with which the dynamic method is logically associated. The dynamic method has access to all members of the type.
+  exceptions:
+  - type: System.ArgumentException
+    description: An element of *parameterTypes* is null or @'System.Void'.-or- *owner* is an interface, an array, an open generic type, or a type parameter of a generic type or method.
+  - type: System.ArgumentNullException
+    description: '*name* is null. -or-*owner* is null.'
+  - type: System.NotSupportedException
+    description: '*returnType* is null, or is a type for which @''System.Type.IsByRef'' returns true.'
+- uid: System.Reflection.Emit.DynamicMethod.#ctor(System.String,System.Type,System.Type[],System.Type,System.Boolean)
+  id: '#ctor(System.String,System.Type,System.Type[],System.Type,System.Boolean)'
+  parent: System.Reflection.Emit.DynamicMethod
+  href: System.Reflection.Emit.DynamicMethod.yml
+  name: DynamicMethod(String, Type, Type[], Type, Boolean)
+  name.vb: DynamicMethod(String, Type, Type(), Type, Boolean)
+  fullName: System.Reflection.Emit.DynamicMethod.DynamicMethod(System.String, System.Type, System.Type[], System.Type, System.Boolean)
+  fullName.vb: System.Reflection.Emit.DynamicMethod.DynamicMethod(System.String, System.Type, System.Type(), System.Type, System.Boolean)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/DynamicMethod.cs
+    startLine: 215
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Creates a dynamic method, specifying the method name, return type, parameter types, the type with which the dynamic method is logically associated, and whether just-in-time (JIT) visibility checks should be skipped for types and members accessed by the Microsoft intermediate language (MSIL) of the dynamic method.
+  syntax:
+    content: public DynamicMethod(string name, Type returnType, Type[] parameterTypes, Type owner, bool skipVisibility)
+    content.vb: Public Sub New(name As String, returnType As Type, parameterTypes As Type(), owner As Type, skipVisibility As Boolean)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the dynamic method. This can be a zero-length string, but it cannot be null.
+    - id: returnType
+      type: System.Type
+      description: A @'System.Type' object that specifies the return type of the dynamic method, or null if the method has no return type.
+    - id: parameterTypes
+      type: System.Type[]
+      description: An array of @'System.Type' objects specifying the types of the parameters of the dynamic method, or null if the method has no parameters.
+    - id: owner
+      type: System.Type
+      description: A @'System.Type' with which the dynamic method is logically associated. The dynamic method has access to all members of the type.
+    - id: skipVisibility
+      type: System.Boolean
+      description: true to skip JIT visibility checks on types and members accessed by the MSIL of the dynamic method; otherwise, false.
+  exceptions:
+  - type: System.ArgumentException
+    description: An element of *parameterTypes* is null or @'System.Void'.-or- *owner* is an interface, an array, an open generic type, or a type parameter of a generic type or method.
+  - type: System.ArgumentNullException
+    description: '*name* is null. -or-*owner* is null.'
+  - type: System.NotSupportedException
+    description: '*returnType* is null, or is a type for which @''System.Type.IsByRef'' returns true.'
+- uid: System.Reflection.Emit.DynamicMethod.#ctor(System.String,System.Reflection.MethodAttributes,System.Reflection.CallingConventions,System.Type,System.Type[],System.Type,System.Boolean)
+  id: '#ctor(System.String,System.Reflection.MethodAttributes,System.Reflection.CallingConventions,System.Type,System.Type[],System.Type,System.Boolean)'
+  parent: System.Reflection.Emit.DynamicMethod
+  href: System.Reflection.Emit.DynamicMethod.yml
+  name: DynamicMethod(String, MethodAttributes, CallingConventions, Type, Type[], Type, Boolean)
+  name.vb: DynamicMethod(String, MethodAttributes, CallingConventions, Type, Type(), Type, Boolean)
+  fullName: System.Reflection.Emit.DynamicMethod.DynamicMethod(System.String, System.Reflection.MethodAttributes, System.Reflection.CallingConventions, System.Type, System.Type[], System.Type, System.Boolean)
+  fullName.vb: System.Reflection.Emit.DynamicMethod.DynamicMethod(System.String, System.Reflection.MethodAttributes, System.Reflection.CallingConventions, System.Type, System.Type(), System.Type, System.Boolean)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/DynamicMethod.cs
+    startLine: 240
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Creates a dynamic method, specifying the method name, attributes, calling convention, return type, parameter types, the type with which the dynamic method is logically associated, and whether just-in-time (JIT) visibility checks should be skipped for types and members accessed by the Microsoft intermediate language (MSIL) of the dynamic method.
+  syntax:
+    content: public DynamicMethod(string name, MethodAttributes attributes, CallingConventions callingConvention, Type returnType, Type[] parameterTypes, Type owner, bool skipVisibility)
+    content.vb: Public Sub New(name As String, attributes As MethodAttributes, callingConvention As CallingConventions, returnType As Type, parameterTypes As Type(), owner As Type, skipVisibility As Boolean)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the dynamic method. This can be a zero-length string, but it cannot be null.
+    - id: attributes
+      type: System.Reflection.MethodAttributes
+      description: A bitwise combination of @'System.Reflection.MethodAttributes' values that specifies the attributes of the dynamic method. The only combination allowed is @'System.Reflection.MethodAttributes.Public' and @'System.Reflection.MethodAttributes.Static'.
+    - id: callingConvention
+      type: System.Reflection.CallingConventions
+      description: The calling convention for the dynamic method. Must be @'System.Reflection.CallingConventions.Standard'.
+    - id: returnType
+      type: System.Type
+      description: A @'System.Type' object that specifies the return type of the dynamic method, or null if the method has no return type.
+    - id: parameterTypes
+      type: System.Type[]
+      description: An array of @'System.Type' objects specifying the types of the parameters of the dynamic method, or null if the method has no parameters.
+    - id: owner
+      type: System.Type
+      description: A @'System.Type' with which the dynamic method is logically associated. The dynamic method has access to all members of the type.
+    - id: skipVisibility
+      type: System.Boolean
+      description: true to skip JIT visibility checks on types and members accessed by the MSIL of the dynamic method; otherwise, false.
+  exceptions:
+  - type: System.ArgumentException
+    description: An element of *parameterTypes* is null or @'System.Void'. -or-*owner* is an interface, an array, an open generic type, or a type parameter of a generic type or method.
+  - type: System.ArgumentNullException
+    description: '*name* is null. -or-*owner* is null.'
+  - type: System.NotSupportedException
+    description: '*attributes* is a combination of flags other than @''System.Reflection.MethodAttributes.Public'' and @''System.Reflection.MethodAttributes.Static''.-or-*callingConvention* is not @''System.Reflection.CallingConventions.Standard''.-or-*returnType* is a type for which @''System.Type.IsByRef'' returns true.'
+- uid: System.Reflection.Emit.DynamicMethod.CreateDelegate(System.Type)
+  id: CreateDelegate(System.Type)
+  parent: System.Reflection.Emit.DynamicMethod
+  href: System.Reflection.Emit.DynamicMethod.yml
+  name: CreateDelegate(Type)
+  fullName: System.Reflection.Emit.DynamicMethod.CreateDelegate(System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/DynamicMethod.cs
+    startLine: 526
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Completes the dynamic method and creates a delegate that can be used to execute it.
+  syntax:
+    content: public override sealed Delegate CreateDelegate(Type delegateType)
+    content.vb: Public NotOverridable Overrides Function CreateDelegate(delegateType As Type) As
+    parameters:
+    - id: delegateType
+      type: System.Type
+      description: A delegate type whose signature matches that of the dynamic method.
+    return:
+      type: System.Delegate
+      description: A delegate of the specified type, which can be used to execute the dynamic method.
+  overridden: System.Reflection.MethodInfo.CreateDelegate(System.Type)
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The dynamic method has no method body.
+  - type: System.ArgumentException
+    description: '*delegateType* has the wrong number of parameters or the wrong parameter types.'
+- uid: System.Reflection.Emit.DynamicMethod.CreateDelegate(System.Type,System.Object)
+  id: CreateDelegate(System.Type,System.Object)
+  parent: System.Reflection.Emit.DynamicMethod
+  href: System.Reflection.Emit.DynamicMethod.yml
+  name: CreateDelegate(Type, Object)
+  fullName: System.Reflection.Emit.DynamicMethod.CreateDelegate(System.Type, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/DynamicMethod.cs
+    startLine: 542
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Completes the dynamic method and creates a delegate that can be used to execute it, specifying the delegate type and an object the delegate is bound to.
+  syntax:
+    content: public override sealed Delegate CreateDelegate(Type delegateType, object target)
+    content.vb: Public NotOverridable Overrides Function CreateDelegate(delegateType As Type, target As Object) As
+    parameters:
+    - id: delegateType
+      type: System.Type
+      description: A delegate type whose signature matches that of the dynamic method, minus the first parameter.
+    - id: target
+      type: System.Object
+      description: An object the delegate is bound to. Must be of the same type as the first parameter of the dynamic method.
+    return:
+      type: System.Delegate
+      description: A delegate of the specified type, which can be used to execute the dynamic method with the specified target object.
+  overridden: System.Reflection.MethodInfo.CreateDelegate(System.Type,System.Object)
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The dynamic method has no method body.
+  - type: System.ArgumentException
+    description: '*target* is not the same type as the first parameter of the dynamic method, and is not assignable to that type.-or-*delegateType* has the wrong number of parameters or the wrong parameter types.'
+- uid: System.Reflection.Emit.DynamicMethod.ToString
+  id: ToString
+  parent: System.Reflection.Emit.DynamicMethod
+  href: System.Reflection.Emit.DynamicMethod.yml
+  name: ToString()
+  fullName: System.Reflection.Emit.DynamicMethod.ToString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/DynamicMethod.cs
+    startLine: 598
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Returns the signature of the method, represented as a string.
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+      description: A string representing the method signature.
+  overridden: System.Object.ToString
+- uid: System.Reflection.Emit.DynamicMethod.Name
+  id: Name
+  parent: System.Reflection.Emit.DynamicMethod
+  href: System.Reflection.Emit.DynamicMethod.yml
+  name: Name
+  fullName: System.Reflection.Emit.DynamicMethod.Name
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/DynamicMethod.cs
+    startLine: 600
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Gets the name of the dynamic method.
+  syntax:
+    content: public override string Name { get; }
+    content.vb: Public Overrides ReadOnly Property Name As String
+    parameters: []
+    return:
+      type: System.String
+      description: The simple name of the method.
+  overridden: System.Reflection.MemberInfo.Name
+- uid: System.Reflection.Emit.DynamicMethod.DeclaringType
+  id: DeclaringType
+  parent: System.Reflection.Emit.DynamicMethod
+  href: System.Reflection.Emit.DynamicMethod.yml
+  name: DeclaringType
+  fullName: System.Reflection.Emit.DynamicMethod.DeclaringType
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/DynamicMethod.cs
+    startLine: 602
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Gets the type that declares the method, which is always null for dynamic methods.
+  syntax:
+    content: public override Type DeclaringType { get; }
+    content.vb: Public Overrides ReadOnly Property DeclaringType As Type
+    parameters: []
+    return:
+      type: System.Type
+      description: Always null.
+  overridden: System.Reflection.MemberInfo.DeclaringType
+- uid: System.Reflection.Emit.DynamicMethod.ReflectedType
+  id: ReflectedType
+  parent: System.Reflection.Emit.DynamicMethod
+  href: System.Reflection.Emit.DynamicMethod.yml
+  name: ReflectedType
+  fullName: System.Reflection.Emit.DynamicMethod.ReflectedType
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/DynamicMethod.cs
+    startLine: 604
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Gets the class that was used in reflection to obtain the method.
+  syntax:
+    content: public override Type ReflectedType { get; }
+    content.vb: Public Overrides ReadOnly Property ReflectedType As Type
+    parameters: []
+    return:
+      type: System.Type
+      description: Always null.
+  overridden: System.Reflection.MemberInfo.ReflectedType
+- uid: System.Reflection.Emit.DynamicMethod.Module
+  id: Module
+  parent: System.Reflection.Emit.DynamicMethod
+  href: System.Reflection.Emit.DynamicMethod.yml
+  name: Module
+  fullName: System.Reflection.Emit.DynamicMethod.Module
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/DynamicMethod.cs
+    startLine: 606
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Gets the module with which the dynamic method is logically associated.
+  syntax:
+    content: public override Module Module { get; }
+    content.vb: Public Overrides ReadOnly Property Module As
+    parameters: []
+    return:
+      type: System.Reflection.Module
+      description: The @'System.Reflection.Module' with which the current dynamic method is associated.
+  overridden: System.Reflection.MemberInfo.Module
+- uid: System.Reflection.Emit.DynamicMethod.MethodHandle
+  id: MethodHandle
+  parent: System.Reflection.Emit.DynamicMethod
+  href: System.Reflection.Emit.DynamicMethod.yml
+  name: MethodHandle
+  fullName: System.Reflection.Emit.DynamicMethod.MethodHandle
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/DynamicMethod.cs
+    startLine: 609
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Not supported for dynamic methods.
+  syntax:
+    content: public override RuntimeMethodHandle MethodHandle { get; }
+    content.vb: Public Overrides ReadOnly Property MethodHandle As RuntimeMethodHandle
+    parameters: []
+    return:
+      type: System.RuntimeMethodHandle
+      description: Not supported for dynamic methods.
+  overridden: System.Reflection.MethodBase.MethodHandle
+  exceptions:
+  - type: System.InvalidOperationException
+    description: Not allowed for dynamic methods.
+- uid: System.Reflection.Emit.DynamicMethod.Attributes
+  id: Attributes
+  parent: System.Reflection.Emit.DynamicMethod
+  href: System.Reflection.Emit.DynamicMethod.yml
+  name: Attributes
+  fullName: System.Reflection.Emit.DynamicMethod.Attributes
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/DynamicMethod.cs
+    startLine: 611
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Gets the attributes specified when the dynamic method was created.
+  syntax:
+    content: public override MethodAttributes Attributes { get; }
+    content.vb: Public Overrides ReadOnly Property Attributes As MethodAttributes
+    parameters: []
+    return:
+      type: System.Reflection.MethodAttributes
+      description: A bitwise combination of the @'System.Reflection.MethodAttributes' values representing the attributes for the method.
+  overridden: System.Reflection.MethodBase.Attributes
+- uid: System.Reflection.Emit.DynamicMethod.CallingConvention
+  id: CallingConvention
+  parent: System.Reflection.Emit.DynamicMethod
+  href: System.Reflection.Emit.DynamicMethod.yml
+  name: CallingConvention
+  fullName: System.Reflection.Emit.DynamicMethod.CallingConvention
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/DynamicMethod.cs
+    startLine: 613
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Gets the calling convention specified when the dynamic method was created.
+  syntax:
+    content: public override CallingConventions CallingConvention { get; }
+    content.vb: Public Overrides ReadOnly Property CallingConvention As CallingConventions
+    parameters: []
+    return:
+      type: System.Reflection.CallingConventions
+      description: One of the @'System.Reflection.CallingConventions' values that indicates the calling convention of the method.
+  overridden: System.Reflection.MethodBase.CallingConvention
+- uid: System.Reflection.Emit.DynamicMethod.GetBaseDefinition
+  id: GetBaseDefinition
+  parent: System.Reflection.Emit.DynamicMethod
+  href: System.Reflection.Emit.DynamicMethod.yml
+  name: GetBaseDefinition()
+  fullName: System.Reflection.Emit.DynamicMethod.GetBaseDefinition()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/DynamicMethod.cs
+    startLine: 615
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Returns the base implementation for the method.
+  syntax:
+    content: public override MethodInfo GetBaseDefinition()
+    content.vb: Public Overrides Function GetBaseDefinition As MethodInfo
+    return:
+      type: System.Reflection.MethodInfo
+      description: The base implementation of the method.
+  overridden: System.Reflection.MethodInfo.GetBaseDefinition
+- uid: System.Reflection.Emit.DynamicMethod.GetParameters
+  id: GetParameters
+  parent: System.Reflection.Emit.DynamicMethod
+  href: System.Reflection.Emit.DynamicMethod.yml
+  name: GetParameters()
+  fullName: System.Reflection.Emit.DynamicMethod.GetParameters()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/DynamicMethod.cs
+    startLine: 617
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Returns the parameters of the dynamic method.
+  syntax:
+    content: public override ParameterInfo[] GetParameters()
+    content.vb: Public Overrides Function GetParameters As ParameterInfo()
+    return:
+      type: System.Reflection.ParameterInfo[]
+      description: An array of @'System.Reflection.ParameterInfo' objects that represent the parameters of the dynamic method.
+  overridden: System.Reflection.MethodBase.GetParameters
+- uid: System.Reflection.Emit.DynamicMethod.GetMethodImplementationFlags
+  id: GetMethodImplementationFlags
+  parent: System.Reflection.Emit.DynamicMethod
+  href: System.Reflection.Emit.DynamicMethod.yml
+  name: GetMethodImplementationFlags()
+  fullName: System.Reflection.Emit.DynamicMethod.GetMethodImplementationFlags()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/DynamicMethod.cs
+    startLine: 620
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Returns the implementation flags for the method.
+  syntax:
+    content: public override MethodImplAttributes GetMethodImplementationFlags()
+    content.vb: Public Overrides Function GetMethodImplementationFlags As MethodImplAttributes
+    return:
+      type: System.Reflection.MethodImplAttributes
+      description: A bitwise combination of @'System.Reflection.MethodImplAttributes' values representing the implementation flags for the method.
+  overridden: System.Reflection.MethodBase.GetMethodImplementationFlags
+- uid: System.Reflection.Emit.DynamicMethod.IsSecurityCritical
+  id: IsSecurityCritical
+  parent: System.Reflection.Emit.DynamicMethod
+  href: System.Reflection.Emit.DynamicMethod.yml
+  name: IsSecurityCritical
+  fullName: System.Reflection.Emit.DynamicMethod.IsSecurityCritical
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/DynamicMethod.cs
+    startLine: 631
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Gets a value that indicates whether the current dynamic method is security-critical or security-safe-critical, and therefore can perform critical operations.
+  syntax:
+    content: public override bool IsSecurityCritical { get; }
+    content.vb: Public Overrides ReadOnly Property IsSecurityCritical As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the current dynamic method is security-critical or security-safe-critical; false if it is transparent.
+  overridden: System.Reflection.MethodBase.IsSecurityCritical
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The dynamic method doesn't have a method body.
+- uid: System.Reflection.Emit.DynamicMethod.IsSecuritySafeCritical
+  id: IsSecuritySafeCritical
+  parent: System.Reflection.Emit.DynamicMethod
+  href: System.Reflection.Emit.DynamicMethod.yml
+  name: IsSecuritySafeCritical
+  fullName: System.Reflection.Emit.DynamicMethod.IsSecuritySafeCritical
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/DynamicMethod.cs
+    startLine: 657
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Gets a value that indicates whether the current dynamic method is security-safe-critical at the current trust level; that is, whether it can perform critical operations and can be accessed by transparent code.
+  syntax:
+    content: public override bool IsSecuritySafeCritical { get; }
+    content.vb: Public Overrides ReadOnly Property IsSecuritySafeCritical As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the dynamic method is security-safe-critical at the current trust level; false if it is security-critical or transparent.
+  overridden: System.Reflection.MethodBase.IsSecuritySafeCritical
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The dynamic method doesn't have a method body.
+- uid: System.Reflection.Emit.DynamicMethod.IsSecurityTransparent
+  id: IsSecurityTransparent
+  parent: System.Reflection.Emit.DynamicMethod
+  href: System.Reflection.Emit.DynamicMethod.yml
+  name: IsSecurityTransparent
+  fullName: System.Reflection.Emit.DynamicMethod.IsSecurityTransparent
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/DynamicMethod.cs
+    startLine: 683
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Gets a value that indicates whether the current dynamic method is transparent at the current trust level, and therefore cannot perform critical operations.
+  syntax:
+    content: public override bool IsSecurityTransparent { get; }
+    content.vb: Public Overrides ReadOnly Property IsSecurityTransparent As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the dynamic method is security-transparent at the current trust level; otherwise, false.
+  overridden: System.Reflection.MethodBase.IsSecurityTransparent
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The dynamic method doesn't have a method body.
+- uid: System.Reflection.Emit.DynamicMethod.Invoke(System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)
+  id: Invoke(System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)
+  parent: System.Reflection.Emit.DynamicMethod
+  href: System.Reflection.Emit.DynamicMethod.yml
+  name: Invoke(Object, BindingFlags, Binder, Object[], CultureInfo)
+  name.vb: Invoke(Object, BindingFlags, Binder, Object(), CultureInfo)
+  fullName: System.Reflection.Emit.DynamicMethod.Invoke(System.Object, System.Reflection.BindingFlags, System.Reflection.Binder, System.Object[], System.Globalization.CultureInfo)
+  fullName.vb: System.Reflection.Emit.DynamicMethod.Invoke(System.Object, System.Reflection.BindingFlags, System.Reflection.Binder, System.Object(), System.Globalization.CultureInfo)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/DynamicMethod.cs
+    startLine: 709
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Invokes the dynamic method using the specified parameters, under the constraints of the specified binder, with the specified culture information.
+  syntax:
+    content: public override object Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+    content.vb: Public Overrides Function Invoke(obj As Object, invokeAttr As BindingFlags, binder As Binder, parameters As Object(), culture As CultureInfo) As Object
+    parameters:
+    - id: obj
+      type: System.Object
+      description: This parameter is ignored for dynamic methods, because they are static. Specify null.
+    - id: invokeAttr
+      type: System.Reflection.BindingFlags
+      description: A bitwise combination of @'System.Reflection.BindingFlags' values.
+    - id: binder
+      type: System.Reflection.Binder
+      description: A @'System.Reflection.Binder' object that enables the binding, coercion of argument types, invocation of members, and retrieval of @'System.Reflection.MemberInfo' objects through reflection. If *binder* is null, the default binder is used. For more details, see @'System.Reflection.Binder'.
+    - id: parameters
+      type: System.Object[]
+      description: An argument list. This is an array of arguments with the same number, order, and type as the parameters of the method to be invoked. If there are no parameters this parameter should be null.
+    - id: culture
+      type: System.Globalization.CultureInfo
+      description: An instance of @'System.Globalization.CultureInfo' used to govern the coercion of types. If this is null, the @'System.Globalization.CultureInfo' for the current thread is used. For example, this information is needed to correctly convert a @'System.String' that represents 1000 to a @'System.Double' value, because 1000 is represented differently by different cultures.
+    return:
+      type: System.Object
+      description: A @'System.Object' containing the return value of the invoked method.
+  overridden: System.Reflection.MethodBase.Invoke(System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)
+  exceptions:
+  - type: System.NotSupportedException
+    description: The @'System.Reflection.CallingConventions.VarArgs' calling convention is not supported.
+  - type: System.Reflection.TargetParameterCountException
+    description: The number of elements in *parameters* does not match the number of parameters in the dynamic method.
+  - type: System.ArgumentException
+    description: The type of one or more elements of *parameters* does not match the type of the corresponding parameter of the dynamic method.
+  - type: System.Reflection.TargetInvocationException
+    description: The dynamic method is associated with a module, is not anonymously hosted, and was constructed with *skipVisibility* set to false, but the dynamic method accesses members that are not public or internal (Friend in Visual Basic).-or-The dynamic method is anonymously hosted and was constructed with *skipVisibility* set to false, but it accesses members that are not public.-or-The dynamic method contains unverifiable code. See the "Verification" section in Remarks for @'System.Reflection.Emit.DynamicMethod'.
+- uid: System.Reflection.Emit.DynamicMethod.GetCustomAttributes(System.Type,System.Boolean)
+  id: GetCustomAttributes(System.Type,System.Boolean)
+  parent: System.Reflection.Emit.DynamicMethod
+  href: System.Reflection.Emit.DynamicMethod.yml
+  name: GetCustomAttributes(Type, Boolean)
+  fullName: System.Reflection.Emit.DynamicMethod.GetCustomAttributes(System.Type, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/DynamicMethod.cs
+    startLine: 754
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Returns the custom attributes of the specified type that have been applied to the method.
+  syntax:
+    content: public override object[] GetCustomAttributes(Type attributeType, bool inherit)
+    content.vb: Public Overrides Function GetCustomAttributes(attributeType As Type, inherit As Boolean) As Object()
+    parameters:
+    - id: attributeType
+      type: System.Type
+      description: A @'System.Type' representing the type of custom attribute to return.
+    - id: inherit
+      type: System.Boolean
+      description: true to search the method's inheritance chain to find the custom attributes; false to check only the current method.
+    return:
+      type: System.Object[]
+      description: An array of objects representing the attributes of the method that are of type *attributeType* or derive from type *attributeType*.
+  overridden: System.Reflection.MemberInfo.GetCustomAttributes(System.Type,System.Boolean)
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*attributeType* is null.'
+- uid: System.Reflection.Emit.DynamicMethod.GetCustomAttributes(System.Boolean)
+  id: GetCustomAttributes(System.Boolean)
+  parent: System.Reflection.Emit.DynamicMethod
+  href: System.Reflection.Emit.DynamicMethod.yml
+  name: GetCustomAttributes(Boolean)
+  fullName: System.Reflection.Emit.DynamicMethod.GetCustomAttributes(System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/DynamicMethod.cs
+    startLine: 759
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Returns all the custom attributes defined for the method.
+  syntax:
+    content: public override object[] GetCustomAttributes(bool inherit)
+    content.vb: Public Overrides Function GetCustomAttributes(inherit As Boolean) As Object()
+    parameters:
+    - id: inherit
+      type: System.Boolean
+      description: true to search the method's inheritance chain to find the custom attributes; false to check only the current method.
+    return:
+      type: System.Object[]
+      description: An array of objects representing all the custom attributes of the method.
+  overridden: System.Reflection.MemberInfo.GetCustomAttributes(System.Boolean)
+- uid: System.Reflection.Emit.DynamicMethod.IsDefined(System.Type,System.Boolean)
+  id: IsDefined(System.Type,System.Boolean)
+  parent: System.Reflection.Emit.DynamicMethod
+  href: System.Reflection.Emit.DynamicMethod.yml
+  name: IsDefined(Type, Boolean)
+  fullName: System.Reflection.Emit.DynamicMethod.IsDefined(System.Type, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/DynamicMethod.cs
+    startLine: 761
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Indicates whether the specified custom attribute type is defined.
+  syntax:
+    content: public override bool IsDefined(Type attributeType, bool inherit)
+    content.vb: Public Overrides Function IsDefined(attributeType As Type, inherit As Boolean) As Boolean
+    parameters:
+    - id: attributeType
+      type: System.Type
+      description: A @'System.Type' representing the type of custom attribute to search for.
+    - id: inherit
+      type: System.Boolean
+      description: true to search the method's inheritance chain to find the custom attributes; false to check only the current method.
+    return:
+      type: System.Boolean
+      description: true if the specified custom attribute type is defined; otherwise, false.
+  overridden: System.Reflection.MemberInfo.IsDefined(System.Type,System.Boolean)
+- uid: System.Reflection.Emit.DynamicMethod.ReturnType
+  id: ReturnType
+  parent: System.Reflection.Emit.DynamicMethod
+  href: System.Reflection.Emit.DynamicMethod.yml
+  name: ReturnType
+  fullName: System.Reflection.Emit.DynamicMethod.ReturnType
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/DynamicMethod.cs
+    startLine: 763
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Gets the type of return value for the dynamic method.
+  syntax:
+    content: public override Type ReturnType { get; }
+    content.vb: Public Overrides ReadOnly Property ReturnType As Type
+    parameters: []
+    return:
+      type: System.Type
+      description: A @'System.Type' representing the type of the return value of the current method; @'System.Void' if the method has no return type.
+  overridden: System.Reflection.MethodInfo.ReturnType
+- uid: System.Reflection.Emit.DynamicMethod.ReturnParameter
+  id: ReturnParameter
+  parent: System.Reflection.Emit.DynamicMethod
+  href: System.Reflection.Emit.DynamicMethod.yml
+  name: ReturnParameter
+  fullName: System.Reflection.Emit.DynamicMethod.ReturnParameter
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/DynamicMethod.cs
+    startLine: 765
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Gets the return parameter of the dynamic method.
+  syntax:
+    content: public override ParameterInfo ReturnParameter { get; }
+    content.vb: Public Overrides ReadOnly Property ReturnParameter As ParameterInfo
+    parameters: []
+    return:
+      type: System.Reflection.ParameterInfo
+      description: Always null.
+  overridden: System.Reflection.MethodInfo.ReturnParameter
+- uid: System.Reflection.Emit.DynamicMethod.ReturnTypeCustomAttributes
+  id: ReturnTypeCustomAttributes
+  parent: System.Reflection.Emit.DynamicMethod
+  href: System.Reflection.Emit.DynamicMethod.yml
+  name: ReturnTypeCustomAttributes
+  fullName: System.Reflection.Emit.DynamicMethod.ReturnTypeCustomAttributes
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/DynamicMethod.cs
+    startLine: 767
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Gets the custom attributes of the return type for the dynamic method.
+  syntax:
+    content: public override ICustomAttributeProvider ReturnTypeCustomAttributes { get; }
+    content.vb: Public Overrides ReadOnly Property ReturnTypeCustomAttributes As ICustomAttributeProvider
+    parameters: []
+    return:
+      type: System.Reflection.ICustomAttributeProvider
+      description: An @'System.Reflection.ICustomAttributeProvider' representing the custom attributes of the return type for the dynamic method.
+  overridden: System.Reflection.MethodInfo.ReturnTypeCustomAttributes
+- uid: System.Reflection.Emit.DynamicMethod.DefineParameter(System.Int32,System.Reflection.ParameterAttributes,System.String)
+  id: DefineParameter(System.Int32,System.Reflection.ParameterAttributes,System.String)
+  parent: System.Reflection.Emit.DynamicMethod
+  href: System.Reflection.Emit.DynamicMethod.yml
+  name: DefineParameter(Int32, ParameterAttributes, String)
+  fullName: System.Reflection.Emit.DynamicMethod.DefineParameter(System.Int32, System.Reflection.ParameterAttributes, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/DynamicMethod.cs
+    startLine: 773
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Defines a parameter of the dynamic method.
+  syntax:
+    content: public ParameterBuilder DefineParameter(int position, ParameterAttributes attributes, string parameterName)
+    content.vb: Public Function DefineParameter(position As Integer, attributes As ParameterAttributes, parameterName As String) As ParameterBuilder
+    parameters:
+    - id: position
+      type: System.Int32
+      description: The position of the parameter in the parameter list. Parameters are indexed beginning with the number 1 for the first parameter.
+    - id: attributes
+      type: System.Reflection.ParameterAttributes
+      description: A bitwise combination of @'System.Reflection.ParameterAttributes' values that specifies the attributes of the parameter.
+    - id: parameterName
+      type: System.String
+      description: The name of the parameter. The name can be a zero-length string.
+    return:
+      type: System.Reflection.Emit.ParameterBuilder
+      description: Always returns null.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: The method has no parameters.-or- *position* is less than 0.-or- *position* is greater than the number of the method's parameters.
+- uid: System.Reflection.Emit.DynamicMethod.GetDynamicILInfo
+  id: GetDynamicILInfo
+  parent: System.Reflection.Emit.DynamicMethod
+  href: System.Reflection.Emit.DynamicMethod.yml
+  name: GetDynamicILInfo()
+  fullName: System.Reflection.Emit.DynamicMethod.GetDynamicILInfo()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/DynamicMethod.cs
+    startLine: 786
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Returns a @'System.Reflection.Emit.DynamicILInfo' object that can be used to generate a method body from metadata tokens, scopes, and Microsoft intermediate language (MSIL) streams.
+  syntax:
+    content: public DynamicILInfo GetDynamicILInfo()
+    content.vb: Public Function GetDynamicILInfo As DynamicILInfo
+    return:
+      type: System.Reflection.Emit.DynamicILInfo
+      description: A @'System.Reflection.Emit.DynamicILInfo' object that can be used to generate a method body from metadata tokens, scopes, and MSIL streams.
+- uid: System.Reflection.Emit.DynamicMethod.GetILGenerator
+  id: GetILGenerator
+  parent: System.Reflection.Emit.DynamicMethod
+  href: System.Reflection.Emit.DynamicMethod.yml
+  name: GetILGenerator()
+  fullName: System.Reflection.Emit.DynamicMethod.GetILGenerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/DynamicMethod.cs
+    startLine: 812
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Returns a Microsoft intermediate language (MSIL) generator for the method with a default MSIL stream size of 64 bytes.
+  syntax:
+    content: public ILGenerator GetILGenerator()
+    content.vb: Public Function GetILGenerator As ILGenerator
+    return:
+      type: System.Reflection.Emit.ILGenerator
+      description: An @'System.Reflection.Emit.ILGenerator' object for the method.
+- uid: System.Reflection.Emit.DynamicMethod.GetILGenerator(System.Int32)
+  id: GetILGenerator(System.Int32)
+  parent: System.Reflection.Emit.DynamicMethod
+  href: System.Reflection.Emit.DynamicMethod.yml
+  name: GetILGenerator(Int32)
+  fullName: System.Reflection.Emit.DynamicMethod.GetILGenerator(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/DynamicMethod.cs
+    startLine: 816
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Returns a Microsoft intermediate language (MSIL) generator for the method with the specified MSIL stream size.
+  syntax:
+    content: public ILGenerator GetILGenerator(int streamSize)
+    content.vb: Public Function GetILGenerator(streamSize As Integer) As ILGenerator
+    parameters:
+    - id: streamSize
+      type: System.Int32
+      description: The size of the MSIL stream, in bytes.
+    return:
+      type: System.Reflection.Emit.ILGenerator
+      description: An @'System.Reflection.Emit.ILGenerator' object for the method, with the specified MSIL stream size.
+- uid: System.Reflection.Emit.DynamicMethod.InitLocals
+  id: InitLocals
+  parent: System.Reflection.Emit.DynamicMethod
+  href: System.Reflection.Emit.DynamicMethod.yml
+  name: InitLocals
+  fullName: System.Reflection.Emit.DynamicMethod.InitLocals
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/Emit/DynamicMethod.cs
+    startLine: 828
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection.Emit
+  summary: Gets or sets a value indicating whether the local variables in the method are zero-initialized.
+  syntax:
+    content: public bool InitLocals { get; set; }
+    content.vb: Public Property InitLocals As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the local variables in the method are zero-initialized; otherwise, false. The default is true.
+references:
+- uid: System.Reflection.Emit
+  isExternal: false
+  name: System.Reflection.Emit
+  fullName: System.Reflection.Emit
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Reflection.MemberInfo
+  parent: System.Reflection
+  isExternal: false
+  href: System.Reflection.MemberInfo.yml
+  name: MemberInfo
+  fullName: System.Reflection.MemberInfo
+  type: Class
+- uid: System.Reflection.MethodBase
+  parent: System.Reflection
+  isExternal: false
+  href: System.Reflection.MethodBase.yml
+  name: MethodBase
+  fullName: System.Reflection.MethodBase
+  type: Class
+- uid: System.Reflection.MethodInfo
+  parent: System.Reflection
+  isExternal: true
+  name: MethodInfo
+  fullName: System.Reflection.MethodInfo
+- uid: System.Reflection.MethodInfo.Equals(System.Object)
+  parent: System.Reflection.MethodInfo
+  isExternal: false
+  href: System.Reflection.MethodInfo.yml
+  name: Equals(Object)
+  fullName: System.Reflection.MethodInfo.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Reflection.MethodInfo.Equals(System.Object)
+    name: Equals
+    fullName: System.Reflection.MethodInfo.Equals
+    href: System.Reflection.MethodInfo.yml
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    href: System.Object.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.MethodInfo.Equals(System.Object)
+    name: Equals
+    fullName: System.Reflection.MethodInfo.Equals
+    href: System.Reflection.MethodInfo.yml
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    href: System.Object.yml
+  - name: )
+    fullName: )
+- uid: System.Reflection.MethodInfo.GetHashCode
+  parent: System.Reflection.MethodInfo
+  isExternal: false
+  href: System.Reflection.MethodInfo.yml
+  name: GetHashCode()
+  fullName: System.Reflection.MethodInfo.GetHashCode()
+  spec.csharp:
+  - uid: System.Reflection.MethodInfo.GetHashCode
+    name: GetHashCode
+    fullName: System.Reflection.MethodInfo.GetHashCode
+    href: System.Reflection.MethodInfo.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.MethodInfo.GetHashCode
+    name: GetHashCode
+    fullName: System.Reflection.MethodInfo.GetHashCode
+    href: System.Reflection.MethodInfo.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Reflection.MethodInfo.MemberType
+  parent: System.Reflection.MethodInfo
+  isExternal: false
+  href: System.Reflection.MethodInfo.yml
+  name: MemberType
+  fullName: System.Reflection.MethodInfo.MemberType
+- uid: System.Reflection.MethodInfo.GetGenericArguments
+  parent: System.Reflection.MethodInfo
+  isExternal: false
+  href: System.Reflection.MethodInfo.yml
+  name: GetGenericArguments()
+  fullName: System.Reflection.MethodInfo.GetGenericArguments()
+  spec.csharp:
+  - uid: System.Reflection.MethodInfo.GetGenericArguments
+    name: GetGenericArguments
+    fullName: System.Reflection.MethodInfo.GetGenericArguments
+    href: System.Reflection.MethodInfo.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.MethodInfo.GetGenericArguments
+    name: GetGenericArguments
+    fullName: System.Reflection.MethodInfo.GetGenericArguments
+    href: System.Reflection.MethodInfo.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Reflection.MethodInfo.GetGenericMethodDefinition
+  parent: System.Reflection.MethodInfo
+  isExternal: false
+  href: System.Reflection.MethodInfo.yml
+  name: GetGenericMethodDefinition()
+  fullName: System.Reflection.MethodInfo.GetGenericMethodDefinition()
+  spec.csharp:
+  - uid: System.Reflection.MethodInfo.GetGenericMethodDefinition
+    name: GetGenericMethodDefinition
+    fullName: System.Reflection.MethodInfo.GetGenericMethodDefinition
+    href: System.Reflection.MethodInfo.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.MethodInfo.GetGenericMethodDefinition
+    name: GetGenericMethodDefinition
+    fullName: System.Reflection.MethodInfo.GetGenericMethodDefinition
+    href: System.Reflection.MethodInfo.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Reflection.MethodInfo.MakeGenericMethod(System.Type[])
+  parent: System.Reflection.MethodInfo
+  isExternal: false
+  href: System.Reflection.MethodInfo.yml
+  name: MakeGenericMethod(Type[])
+  name.vb: MakeGenericMethod(Type())
+  fullName: System.Reflection.MethodInfo.MakeGenericMethod(System.Type[])
+  fullName.vb: System.Reflection.MethodInfo.MakeGenericMethod(System.Type())
+  spec.csharp:
+  - uid: System.Reflection.MethodInfo.MakeGenericMethod(System.Type[])
+    name: MakeGenericMethod
+    fullName: System.Reflection.MethodInfo.MakeGenericMethod
+    href: System.Reflection.MethodInfo.yml
+  - name: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.MethodInfo.MakeGenericMethod(System.Type[])
+    name: MakeGenericMethod
+    fullName: System.Reflection.MethodInfo.MakeGenericMethod
+    href: System.Reflection.MethodInfo.yml
+  - name: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: ()
+    fullName: ()
+  - name: )
+    fullName: )
+- uid: System.Reflection.MethodBase.GetMethodFromHandle(System.RuntimeMethodHandle)
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  href: System.Reflection.MethodBase.yml
+  name: GetMethodFromHandle(RuntimeMethodHandle)
+  fullName: System.Reflection.MethodBase.GetMethodFromHandle(System.RuntimeMethodHandle)
+  spec.csharp:
+  - uid: System.Reflection.MethodBase.GetMethodFromHandle(System.RuntimeMethodHandle)
+    name: GetMethodFromHandle
+    fullName: System.Reflection.MethodBase.GetMethodFromHandle
+    href: System.Reflection.MethodBase.yml
+  - name: (
+    fullName: (
+  - uid: System.RuntimeMethodHandle
+    name: RuntimeMethodHandle
+    fullName: System.RuntimeMethodHandle
+    href: System.RuntimeMethodHandle.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.MethodBase.GetMethodFromHandle(System.RuntimeMethodHandle)
+    name: GetMethodFromHandle
+    fullName: System.Reflection.MethodBase.GetMethodFromHandle
+    href: System.Reflection.MethodBase.yml
+  - name: (
+    fullName: (
+  - uid: System.RuntimeMethodHandle
+    name: RuntimeMethodHandle
+    fullName: System.RuntimeMethodHandle
+    href: System.RuntimeMethodHandle.yml
+  - name: )
+    fullName: )
+- uid: System.Reflection.MethodBase.GetMethodFromHandle(System.RuntimeMethodHandle,System.RuntimeTypeHandle)
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  href: System.Reflection.MethodBase.yml
+  name: GetMethodFromHandle(RuntimeMethodHandle, RuntimeTypeHandle)
+  fullName: System.Reflection.MethodBase.GetMethodFromHandle(System.RuntimeMethodHandle, System.RuntimeTypeHandle)
+  spec.csharp:
+  - uid: System.Reflection.MethodBase.GetMethodFromHandle(System.RuntimeMethodHandle,System.RuntimeTypeHandle)
+    name: GetMethodFromHandle
+    fullName: System.Reflection.MethodBase.GetMethodFromHandle
+    href: System.Reflection.MethodBase.yml
+  - name: (
+    fullName: (
+  - uid: System.RuntimeMethodHandle
+    name: RuntimeMethodHandle
+    fullName: System.RuntimeMethodHandle
+    href: System.RuntimeMethodHandle.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.RuntimeTypeHandle
+    name: RuntimeTypeHandle
+    fullName: System.RuntimeTypeHandle
+    href: System.RuntimeTypeHandle.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.MethodBase.GetMethodFromHandle(System.RuntimeMethodHandle,System.RuntimeTypeHandle)
+    name: GetMethodFromHandle
+    fullName: System.Reflection.MethodBase.GetMethodFromHandle
+    href: System.Reflection.MethodBase.yml
+  - name: (
+    fullName: (
+  - uid: System.RuntimeMethodHandle
+    name: RuntimeMethodHandle
+    fullName: System.RuntimeMethodHandle
+    href: System.RuntimeMethodHandle.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.RuntimeTypeHandle
+    name: RuntimeTypeHandle
+    fullName: System.RuntimeTypeHandle
+    href: System.RuntimeTypeHandle.yml
+  - name: )
+    fullName: )
+- uid: System.Reflection.MethodBase.GetCurrentMethod
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  href: System.Reflection.MethodBase.yml
+  name: GetCurrentMethod()
+  fullName: System.Reflection.MethodBase.GetCurrentMethod()
+  spec.csharp:
+  - uid: System.Reflection.MethodBase.GetCurrentMethod
+    name: GetCurrentMethod
+    fullName: System.Reflection.MethodBase.GetCurrentMethod
+    href: System.Reflection.MethodBase.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.MethodBase.GetCurrentMethod
+    name: GetCurrentMethod
+    fullName: System.Reflection.MethodBase.GetCurrentMethod
+    href: System.Reflection.MethodBase.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Reflection.MethodBase.MethodImplementationFlags
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  href: System.Reflection.MethodBase.yml
+  name: MethodImplementationFlags
+  fullName: System.Reflection.MethodBase.MethodImplementationFlags
+- uid: System.Reflection.MethodBase.IsGenericMethodDefinition
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  href: System.Reflection.MethodBase.yml
+  name: IsGenericMethodDefinition
+  fullName: System.Reflection.MethodBase.IsGenericMethodDefinition
+- uid: System.Reflection.MethodBase.ContainsGenericParameters
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  href: System.Reflection.MethodBase.yml
+  name: ContainsGenericParameters
+  fullName: System.Reflection.MethodBase.ContainsGenericParameters
+- uid: System.Reflection.MethodBase.IsGenericMethod
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  href: System.Reflection.MethodBase.yml
+  name: IsGenericMethod
+  fullName: System.Reflection.MethodBase.IsGenericMethod
+- uid: System.Reflection.MethodBase.Invoke(System.Object,System.Object[])
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  href: System.Reflection.MethodBase.yml
+  name: Invoke(Object, Object[])
+  name.vb: Invoke(Object, Object())
+  fullName: System.Reflection.MethodBase.Invoke(System.Object, System.Object[])
+  fullName.vb: System.Reflection.MethodBase.Invoke(System.Object, System.Object())
+  spec.csharp:
+  - uid: System.Reflection.MethodBase.Invoke(System.Object,System.Object[])
+    name: Invoke
+    fullName: System.Reflection.MethodBase.Invoke
+    href: System.Reflection.MethodBase.yml
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    href: System.Object.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    href: System.Object.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.MethodBase.Invoke(System.Object,System.Object[])
+    name: Invoke
+    fullName: System.Reflection.MethodBase.Invoke
+    href: System.Reflection.MethodBase.yml
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    href: System.Object.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    href: System.Object.yml
+  - name: ()
+    fullName: ()
+  - name: )
+    fullName: )
+- uid: System.Reflection.MethodBase.IsPublic
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  href: System.Reflection.MethodBase.yml
+  name: IsPublic
+  fullName: System.Reflection.MethodBase.IsPublic
+- uid: System.Reflection.MethodBase.IsPrivate
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  href: System.Reflection.MethodBase.yml
+  name: IsPrivate
+  fullName: System.Reflection.MethodBase.IsPrivate
+- uid: System.Reflection.MethodBase.IsFamily
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  href: System.Reflection.MethodBase.yml
+  name: IsFamily
+  fullName: System.Reflection.MethodBase.IsFamily
+- uid: System.Reflection.MethodBase.IsAssembly
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  href: System.Reflection.MethodBase.yml
+  name: IsAssembly
+  fullName: System.Reflection.MethodBase.IsAssembly
+- uid: System.Reflection.MethodBase.IsFamilyAndAssembly
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  href: System.Reflection.MethodBase.yml
+  name: IsFamilyAndAssembly
+  fullName: System.Reflection.MethodBase.IsFamilyAndAssembly
+- uid: System.Reflection.MethodBase.IsFamilyOrAssembly
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  href: System.Reflection.MethodBase.yml
+  name: IsFamilyOrAssembly
+  fullName: System.Reflection.MethodBase.IsFamilyOrAssembly
+- uid: System.Reflection.MethodBase.IsStatic
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  href: System.Reflection.MethodBase.yml
+  name: IsStatic
+  fullName: System.Reflection.MethodBase.IsStatic
+- uid: System.Reflection.MethodBase.IsFinal
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  href: System.Reflection.MethodBase.yml
+  name: IsFinal
+  fullName: System.Reflection.MethodBase.IsFinal
+- uid: System.Reflection.MethodBase.IsVirtual
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  href: System.Reflection.MethodBase.yml
+  name: IsVirtual
+  fullName: System.Reflection.MethodBase.IsVirtual
+- uid: System.Reflection.MethodBase.IsHideBySig
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  href: System.Reflection.MethodBase.yml
+  name: IsHideBySig
+  fullName: System.Reflection.MethodBase.IsHideBySig
+- uid: System.Reflection.MethodBase.IsAbstract
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  href: System.Reflection.MethodBase.yml
+  name: IsAbstract
+  fullName: System.Reflection.MethodBase.IsAbstract
+- uid: System.Reflection.MethodBase.IsSpecialName
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  href: System.Reflection.MethodBase.yml
+  name: IsSpecialName
+  fullName: System.Reflection.MethodBase.IsSpecialName
+- uid: System.Reflection.MethodBase.IsConstructor
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  href: System.Reflection.MethodBase.yml
+  name: IsConstructor
+  fullName: System.Reflection.MethodBase.IsConstructor
+- uid: System.Reflection.MethodBase.GetMethodBody
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  href: System.Reflection.MethodBase.yml
+  name: GetMethodBody()
+  fullName: System.Reflection.MethodBase.GetMethodBody()
+  spec.csharp:
+  - uid: System.Reflection.MethodBase.GetMethodBody
+    name: GetMethodBody
+    fullName: System.Reflection.MethodBase.GetMethodBody
+    href: System.Reflection.MethodBase.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.MethodBase.GetMethodBody
+    name: GetMethodBody
+    fullName: System.Reflection.MethodBase.GetMethodBody
+    href: System.Reflection.MethodBase.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Reflection.MemberInfo.CustomAttributes
+  parent: System.Reflection.MemberInfo
+  isExternal: false
+  href: System.Reflection.MemberInfo.yml
+  name: CustomAttributes
+  fullName: System.Reflection.MemberInfo.CustomAttributes
+- uid: System.Reflection.MemberInfo.GetCustomAttributesData
+  parent: System.Reflection.MemberInfo
+  isExternal: false
+  href: System.Reflection.MemberInfo.yml
+  name: GetCustomAttributesData()
+  fullName: System.Reflection.MemberInfo.GetCustomAttributesData()
+  spec.csharp:
+  - uid: System.Reflection.MemberInfo.GetCustomAttributesData
+    name: GetCustomAttributesData
+    fullName: System.Reflection.MemberInfo.GetCustomAttributesData
+    href: System.Reflection.MemberInfo.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.MemberInfo.GetCustomAttributesData
+    name: GetCustomAttributesData
+    fullName: System.Reflection.MemberInfo.GetCustomAttributesData
+    href: System.Reflection.MemberInfo.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Reflection.MemberInfo.MetadataToken
+  parent: System.Reflection.MemberInfo
+  isExternal: false
+  href: System.Reflection.MemberInfo.yml
+  name: MetadataToken
+  fullName: System.Reflection.MemberInfo.MetadataToken
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  fullName: System.Type
+- uid: System.Type[]
+  isExternal: true
+  name: Type[]
+  name.vb: Type()
+  fullName: System.Type[]
+  fullName.vb: System.Type()
+  spec.csharp:
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Reflection.Module
+  parent: System.Reflection
+  isExternal: false
+  href: System.Reflection.Module.yml
+  name: Module
+  fullName: System.Reflection.Module
+  type: Class
+- uid: System.Reflection.MethodAttributes
+  parent: System.Reflection
+  isExternal: true
+  name: MethodAttributes
+  fullName: System.Reflection.MethodAttributes
+- uid: System.Reflection.CallingConventions
+  parent: System.Reflection
+  isExternal: false
+  href: System.Reflection.CallingConventions.yml
+  name: CallingConventions
+  fullName: System.Reflection.CallingConventions
+  type: Enum
+- uid: System.Reflection.MethodInfo.CreateDelegate(System.Type)
+  parent: System.Reflection.MethodInfo
+  isExternal: false
+  href: System.Reflection.MethodInfo.yml
+  name: CreateDelegate(Type)
+  fullName: System.Reflection.MethodInfo.CreateDelegate(System.Type)
+  spec.csharp:
+  - uid: System.Reflection.MethodInfo.CreateDelegate(System.Type)
+    name: CreateDelegate
+    fullName: System.Reflection.MethodInfo.CreateDelegate
+    href: System.Reflection.MethodInfo.yml
+  - name: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.MethodInfo.CreateDelegate(System.Type)
+    name: CreateDelegate
+    fullName: System.Reflection.MethodInfo.CreateDelegate
+    href: System.Reflection.MethodInfo.yml
+  - name: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: )
+    fullName: )
+- uid: System.Delegate
+  parent: System
+  isExternal: false
+  href: System.Delegate.yml
+  name: Delegate
+  fullName: System.Delegate
+  type: Class
+- uid: System.Reflection.MethodInfo.CreateDelegate(System.Type,System.Object)
+  parent: System.Reflection.MethodInfo
+  isExternal: false
+  href: System.Reflection.MethodInfo.yml
+  name: CreateDelegate(Type, Object)
+  fullName: System.Reflection.MethodInfo.CreateDelegate(System.Type, System.Object)
+  spec.csharp:
+  - uid: System.Reflection.MethodInfo.CreateDelegate(System.Type,System.Object)
+    name: CreateDelegate
+    fullName: System.Reflection.MethodInfo.CreateDelegate
+    href: System.Reflection.MethodInfo.yml
+  - name: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    href: System.Object.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.MethodInfo.CreateDelegate(System.Type,System.Object)
+    name: CreateDelegate
+    fullName: System.Reflection.MethodInfo.CreateDelegate
+    href: System.Reflection.MethodInfo.yml
+  - name: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    href: System.Object.yml
+  - name: )
+    fullName: )
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Reflection.MemberInfo.Name
+  parent: System.Reflection.MemberInfo
+  isExternal: false
+  href: System.Reflection.MemberInfo.yml
+  name: Name
+  fullName: System.Reflection.MemberInfo.Name
+- uid: System.Reflection.MemberInfo.DeclaringType
+  parent: System.Reflection.MemberInfo
+  isExternal: false
+  href: System.Reflection.MemberInfo.yml
+  name: DeclaringType
+  fullName: System.Reflection.MemberInfo.DeclaringType
+- uid: System.Reflection.MemberInfo.ReflectedType
+  parent: System.Reflection.MemberInfo
+  isExternal: false
+  href: System.Reflection.MemberInfo.yml
+  name: ReflectedType
+  fullName: System.Reflection.MemberInfo.ReflectedType
+- uid: System.Reflection.MemberInfo.Module
+  parent: System.Reflection.MemberInfo
+  isExternal: false
+  href: System.Reflection.MemberInfo.yml
+  name: Module
+  fullName: System.Reflection.MemberInfo.Module
+- uid: System.Reflection.MethodBase.MethodHandle
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  href: System.Reflection.MethodBase.yml
+  name: MethodHandle
+  fullName: System.Reflection.MethodBase.MethodHandle
+- uid: System.RuntimeMethodHandle
+  parent: System
+  isExternal: false
+  href: System.RuntimeMethodHandle.yml
+  name: RuntimeMethodHandle
+  fullName: System.RuntimeMethodHandle
+  type: Struct
+- uid: System.Reflection.MethodBase.Attributes
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  href: System.Reflection.MethodBase.yml
+  name: Attributes
+  fullName: System.Reflection.MethodBase.Attributes
+- uid: System.Reflection.MethodBase.CallingConvention
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  href: System.Reflection.MethodBase.yml
+  name: CallingConvention
+  fullName: System.Reflection.MethodBase.CallingConvention
+- uid: System.Reflection.MethodInfo.GetBaseDefinition
+  parent: System.Reflection.MethodInfo
+  isExternal: false
+  href: System.Reflection.MethodInfo.yml
+  name: GetBaseDefinition()
+  fullName: System.Reflection.MethodInfo.GetBaseDefinition()
+  spec.csharp:
+  - uid: System.Reflection.MethodInfo.GetBaseDefinition
+    name: GetBaseDefinition
+    fullName: System.Reflection.MethodInfo.GetBaseDefinition
+    href: System.Reflection.MethodInfo.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.MethodInfo.GetBaseDefinition
+    name: GetBaseDefinition
+    fullName: System.Reflection.MethodInfo.GetBaseDefinition
+    href: System.Reflection.MethodInfo.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Reflection.MethodBase.GetParameters
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  href: System.Reflection.MethodBase.yml
+  name: GetParameters()
+  fullName: System.Reflection.MethodBase.GetParameters()
+  spec.csharp:
+  - uid: System.Reflection.MethodBase.GetParameters
+    name: GetParameters
+    fullName: System.Reflection.MethodBase.GetParameters
+    href: System.Reflection.MethodBase.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.MethodBase.GetParameters
+    name: GetParameters
+    fullName: System.Reflection.MethodBase.GetParameters
+    href: System.Reflection.MethodBase.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Reflection.ParameterInfo[]
+  isExternal: false
+  href: System.Reflection.ParameterInfo.yml
+  name: ParameterInfo[]
+  name.vb: ParameterInfo()
+  fullName: System.Reflection.ParameterInfo[]
+  fullName.vb: System.Reflection.ParameterInfo()
+  spec.csharp:
+  - uid: System.Reflection.ParameterInfo
+    name: ParameterInfo
+    fullName: System.Reflection.ParameterInfo
+    href: System.Reflection.ParameterInfo.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Reflection.ParameterInfo
+    name: ParameterInfo
+    fullName: System.Reflection.ParameterInfo
+    href: System.Reflection.ParameterInfo.yml
+  - name: ()
+    fullName: ()
+- uid: System.Reflection.MethodBase.GetMethodImplementationFlags
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  href: System.Reflection.MethodBase.yml
+  name: GetMethodImplementationFlags()
+  fullName: System.Reflection.MethodBase.GetMethodImplementationFlags()
+  spec.csharp:
+  - uid: System.Reflection.MethodBase.GetMethodImplementationFlags
+    name: GetMethodImplementationFlags
+    fullName: System.Reflection.MethodBase.GetMethodImplementationFlags
+    href: System.Reflection.MethodBase.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.MethodBase.GetMethodImplementationFlags
+    name: GetMethodImplementationFlags
+    fullName: System.Reflection.MethodBase.GetMethodImplementationFlags
+    href: System.Reflection.MethodBase.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Reflection.MethodImplAttributes
+  parent: System.Reflection
+  isExternal: true
+  name: MethodImplAttributes
+  fullName: System.Reflection.MethodImplAttributes
+- uid: System.Reflection.MethodBase.IsSecurityCritical
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  href: System.Reflection.MethodBase.yml
+  name: IsSecurityCritical
+  fullName: System.Reflection.MethodBase.IsSecurityCritical
+- uid: System.Reflection.MethodBase.IsSecuritySafeCritical
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  href: System.Reflection.MethodBase.yml
+  name: IsSecuritySafeCritical
+  fullName: System.Reflection.MethodBase.IsSecuritySafeCritical
+- uid: System.Reflection.MethodBase.IsSecurityTransparent
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  href: System.Reflection.MethodBase.yml
+  name: IsSecurityTransparent
+  fullName: System.Reflection.MethodBase.IsSecurityTransparent
+- uid: System.Reflection.MethodBase.Invoke(System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  href: System.Reflection.MethodBase.yml
+  name: Invoke(Object, BindingFlags, Binder, Object[], CultureInfo)
+  name.vb: Invoke(Object, BindingFlags, Binder, Object(), CultureInfo)
+  fullName: System.Reflection.MethodBase.Invoke(System.Object, System.Reflection.BindingFlags, System.Reflection.Binder, System.Object[], System.Globalization.CultureInfo)
+  fullName.vb: System.Reflection.MethodBase.Invoke(System.Object, System.Reflection.BindingFlags, System.Reflection.Binder, System.Object(), System.Globalization.CultureInfo)
+  spec.csharp:
+  - uid: System.Reflection.MethodBase.Invoke(System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)
+    name: Invoke
+    fullName: System.Reflection.MethodBase.Invoke
+    href: System.Reflection.MethodBase.yml
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    href: System.Object.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Reflection.BindingFlags
+    name: BindingFlags
+    fullName: System.Reflection.BindingFlags
+    href: System.Reflection.BindingFlags.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Reflection.Binder
+    name: Binder
+    fullName: System.Reflection.Binder
+    href: System.Reflection.Binder.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    href: System.Object.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Globalization.CultureInfo
+    name: CultureInfo
+    fullName: System.Globalization.CultureInfo
+    href: System.Globalization.CultureInfo.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.MethodBase.Invoke(System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)
+    name: Invoke
+    fullName: System.Reflection.MethodBase.Invoke
+    href: System.Reflection.MethodBase.yml
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    href: System.Object.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Reflection.BindingFlags
+    name: BindingFlags
+    fullName: System.Reflection.BindingFlags
+    href: System.Reflection.BindingFlags.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Reflection.Binder
+    name: Binder
+    fullName: System.Reflection.Binder
+    href: System.Reflection.Binder.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    href: System.Object.yml
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Globalization.CultureInfo
+    name: CultureInfo
+    fullName: System.Globalization.CultureInfo
+    href: System.Globalization.CultureInfo.yml
+  - name: )
+    fullName: )
+- uid: System.Reflection.BindingFlags
+  parent: System.Reflection
+  isExternal: true
+  name: BindingFlags
+  fullName: System.Reflection.BindingFlags
+- uid: System.Reflection.Binder
+  parent: System.Reflection
+  isExternal: false
+  href: System.Reflection.Binder.yml
+  name: Binder
+  fullName: System.Reflection.Binder
+  type: Class
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  name.vb: Object()
+  fullName: System.Object[]
+  fullName.vb: System.Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Globalization.CultureInfo
+  parent: System.Globalization
+  isExternal: true
+  name: CultureInfo
+  fullName: System.Globalization.CultureInfo
+- uid: System.Globalization
+  isExternal: false
+  name: System.Globalization
+  fullName: System.Globalization
+- uid: System.Reflection.MemberInfo.GetCustomAttributes(System.Type,System.Boolean)
+  parent: System.Reflection.MemberInfo
+  isExternal: false
+  href: System.Reflection.MemberInfo.yml
+  name: GetCustomAttributes(Type, Boolean)
+  fullName: System.Reflection.MemberInfo.GetCustomAttributes(System.Type, System.Boolean)
+  spec.csharp:
+  - uid: System.Reflection.MemberInfo.GetCustomAttributes(System.Type,System.Boolean)
+    name: GetCustomAttributes
+    fullName: System.Reflection.MemberInfo.GetCustomAttributes
+    href: System.Reflection.MemberInfo.yml
+  - name: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.MemberInfo.GetCustomAttributes(System.Type,System.Boolean)
+    name: GetCustomAttributes
+    fullName: System.Reflection.MemberInfo.GetCustomAttributes
+    href: System.Reflection.MemberInfo.yml
+  - name: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+- uid: System.Reflection.MemberInfo.GetCustomAttributes(System.Boolean)
+  parent: System.Reflection.MemberInfo
+  isExternal: false
+  href: System.Reflection.MemberInfo.yml
+  name: GetCustomAttributes(Boolean)
+  fullName: System.Reflection.MemberInfo.GetCustomAttributes(System.Boolean)
+  spec.csharp:
+  - uid: System.Reflection.MemberInfo.GetCustomAttributes(System.Boolean)
+    name: GetCustomAttributes
+    fullName: System.Reflection.MemberInfo.GetCustomAttributes
+    href: System.Reflection.MemberInfo.yml
+  - name: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.MemberInfo.GetCustomAttributes(System.Boolean)
+    name: GetCustomAttributes
+    fullName: System.Reflection.MemberInfo.GetCustomAttributes
+    href: System.Reflection.MemberInfo.yml
+  - name: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+- uid: System.Reflection.MemberInfo.IsDefined(System.Type,System.Boolean)
+  parent: System.Reflection.MemberInfo
+  isExternal: false
+  href: System.Reflection.MemberInfo.yml
+  name: IsDefined(Type, Boolean)
+  fullName: System.Reflection.MemberInfo.IsDefined(System.Type, System.Boolean)
+  spec.csharp:
+  - uid: System.Reflection.MemberInfo.IsDefined(System.Type,System.Boolean)
+    name: IsDefined
+    fullName: System.Reflection.MemberInfo.IsDefined
+    href: System.Reflection.MemberInfo.yml
+  - name: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.MemberInfo.IsDefined(System.Type,System.Boolean)
+    name: IsDefined
+    fullName: System.Reflection.MemberInfo.IsDefined
+    href: System.Reflection.MemberInfo.yml
+  - name: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    href: System.Type.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+- uid: System.Reflection.MethodInfo.ReturnType
+  parent: System.Reflection.MethodInfo
+  isExternal: false
+  href: System.Reflection.MethodInfo.yml
+  name: ReturnType
+  fullName: System.Reflection.MethodInfo.ReturnType
+- uid: System.Reflection.MethodInfo.ReturnParameter
+  parent: System.Reflection.MethodInfo
+  isExternal: false
+  href: System.Reflection.MethodInfo.yml
+  name: ReturnParameter
+  fullName: System.Reflection.MethodInfo.ReturnParameter
+- uid: System.Reflection.ParameterInfo
+  parent: System.Reflection
+  isExternal: false
+  href: System.Reflection.ParameterInfo.yml
+  name: ParameterInfo
+  fullName: System.Reflection.ParameterInfo
+  type: Class
+- uid: System.Reflection.MethodInfo.ReturnTypeCustomAttributes
+  parent: System.Reflection.MethodInfo
+  isExternal: false
+  href: System.Reflection.MethodInfo.yml
+  name: ReturnTypeCustomAttributes
+  fullName: System.Reflection.MethodInfo.ReturnTypeCustomAttributes
+- uid: System.Reflection.ICustomAttributeProvider
+  parent: System.Reflection
+  isExternal: false
+  href: System.Reflection.ICustomAttributeProvider.yml
+  name: ICustomAttributeProvider
+  fullName: System.Reflection.ICustomAttributeProvider
+  type: Interface
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Reflection.ParameterAttributes
+  parent: System.Reflection
+  isExternal: true
+  name: ParameterAttributes
+  fullName: System.Reflection.ParameterAttributes
+- uid: System.Reflection.Emit.ParameterBuilder
+  parent: System.Reflection.Emit
+  isExternal: false
+  href: System.Reflection.Emit.ParameterBuilder.yml
+  name: ParameterBuilder
+  fullName: System.Reflection.Emit.ParameterBuilder
+  type: Class
+- uid: System.Reflection.Emit.DynamicILInfo
+  isExternal: false
+  href: System.Reflection.Emit.DynamicILInfo.yml
+  name: DynamicILInfo
+  fullName: System.Reflection.Emit.DynamicILInfo
+  type: Class
+- uid: System.Reflection.Emit.ILGenerator
+  parent: System.Reflection.Emit
+  isExternal: false
+  href: System.Reflection.Emit.ILGenerator.yml
+  name: ILGenerator
+  fullName: System.Reflection.Emit.ILGenerator
+  type: Class

@@ -1,0 +1,660 @@
+items:
+- uid: System.Runtime.InteropServices.UCOMIMoniker
+  id: UCOMIMoniker
+  parent: System.Runtime.InteropServices
+  children:
+  - System.Runtime.InteropServices.UCOMIMoniker.BindToObject(System.Runtime.InteropServices.UCOMIBindCtx,System.Runtime.InteropServices.UCOMIMoniker,System.Guid@,System.Object@)
+  - System.Runtime.InteropServices.UCOMIMoniker.BindToStorage(System.Runtime.InteropServices.UCOMIBindCtx,System.Runtime.InteropServices.UCOMIMoniker,System.Guid@,System.Object@)
+  - System.Runtime.InteropServices.UCOMIMoniker.CommonPrefixWith(System.Runtime.InteropServices.UCOMIMoniker,System.Runtime.InteropServices.UCOMIMoniker@)
+  - System.Runtime.InteropServices.UCOMIMoniker.ComposeWith(System.Runtime.InteropServices.UCOMIMoniker,System.Boolean,System.Runtime.InteropServices.UCOMIMoniker@)
+  - System.Runtime.InteropServices.UCOMIMoniker.Enum(System.Boolean,System.Runtime.InteropServices.UCOMIEnumMoniker@)
+  - System.Runtime.InteropServices.UCOMIMoniker.GetClassID(System.Guid@)
+  - System.Runtime.InteropServices.UCOMIMoniker.GetDisplayName(System.Runtime.InteropServices.UCOMIBindCtx,System.Runtime.InteropServices.UCOMIMoniker,System.String@)
+  - System.Runtime.InteropServices.UCOMIMoniker.GetSizeMax(System.Int64@)
+  - System.Runtime.InteropServices.UCOMIMoniker.GetTimeOfLastChange(System.Runtime.InteropServices.UCOMIBindCtx,System.Runtime.InteropServices.UCOMIMoniker,System.Runtime.InteropServices.FILETIME@)
+  - System.Runtime.InteropServices.UCOMIMoniker.Hash(System.Int32@)
+  - System.Runtime.InteropServices.UCOMIMoniker.Inverse(System.Runtime.InteropServices.UCOMIMoniker@)
+  - System.Runtime.InteropServices.UCOMIMoniker.IsDirty
+  - System.Runtime.InteropServices.UCOMIMoniker.IsEqual(System.Runtime.InteropServices.UCOMIMoniker)
+  - System.Runtime.InteropServices.UCOMIMoniker.IsRunning(System.Runtime.InteropServices.UCOMIBindCtx,System.Runtime.InteropServices.UCOMIMoniker,System.Runtime.InteropServices.UCOMIMoniker)
+  - System.Runtime.InteropServices.UCOMIMoniker.IsSystemMoniker(System.Int32@)
+  - System.Runtime.InteropServices.UCOMIMoniker.Load(System.Runtime.InteropServices.UCOMIStream)
+  - System.Runtime.InteropServices.UCOMIMoniker.ParseDisplayName(System.Runtime.InteropServices.UCOMIBindCtx,System.Runtime.InteropServices.UCOMIMoniker,System.String,System.Int32@,System.Runtime.InteropServices.UCOMIMoniker@)
+  - System.Runtime.InteropServices.UCOMIMoniker.Reduce(System.Runtime.InteropServices.UCOMIBindCtx,System.Int32,System.Runtime.InteropServices.UCOMIMoniker@,System.Runtime.InteropServices.UCOMIMoniker@)
+  - System.Runtime.InteropServices.UCOMIMoniker.RelativePathTo(System.Runtime.InteropServices.UCOMIMoniker,System.Runtime.InteropServices.UCOMIMoniker@)
+  - System.Runtime.InteropServices.UCOMIMoniker.Save(System.Runtime.InteropServices.UCOMIStream,System.Boolean)
+  href: System.Runtime.InteropServices.UCOMIMoniker.yml
+  name: UCOMIMoniker
+  fullName: System.Runtime.InteropServices.UCOMIMoniker
+  type: Interface
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIMoniker.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIMoniker.cs
+    startLine: 25
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Use @'System.Runtime.InteropServices.ComTypes.IMoniker' instead.
+  syntax:
+    content: public interface UCOMIMoniker
+    content.vb: Public Interface UCOMIMoniker
+- uid: System.Runtime.InteropServices.UCOMIMoniker.GetClassID(System.Guid@)
+  id: GetClassID(System.Guid@)
+  parent: System.Runtime.InteropServices.UCOMIMoniker
+  href: System.Runtime.InteropServices.UCOMIMoniker.yml
+  name: GetClassID(out Guid)
+  name.vb: GetClassID(ByRef Guid)
+  fullName: System.Runtime.InteropServices.UCOMIMoniker.GetClassID(out System.Guid)
+  fullName.vb: System.Runtime.InteropServices.UCOMIMoniker.GetClassID(ByRef System.Guid)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIMoniker.cs
+    startLine: 32
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Retrieves the class identifier (CLSID) of an object.
+  syntax:
+    content: void GetClassID(out Guid pClassID)
+    content.vb: Sub GetClassID(ByRef pClassID As Guid)
+    parameters:
+    - id: pClassID
+      type: System.Guid
+      description: On successful return, contains the CLSID.
+- uid: System.Runtime.InteropServices.UCOMIMoniker.IsDirty
+  id: IsDirty
+  parent: System.Runtime.InteropServices.UCOMIMoniker
+  href: System.Runtime.InteropServices.UCOMIMoniker.yml
+  name: IsDirty()
+  fullName: System.Runtime.InteropServices.UCOMIMoniker.IsDirty()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIMoniker.cs
+    startLine: 35
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Checks the object for changes since it was last saved.
+  syntax:
+    content: int IsDirty()
+    content.vb: Function IsDirty As Integer
+    return:
+      type: System.Int32
+      description: An S_OKHRESULT value if the object has changed; otherwise, an S_FALSEHRESULT value.
+- uid: System.Runtime.InteropServices.UCOMIMoniker.Load(System.Runtime.InteropServices.UCOMIStream)
+  id: Load(System.Runtime.InteropServices.UCOMIStream)
+  parent: System.Runtime.InteropServices.UCOMIMoniker
+  href: System.Runtime.InteropServices.UCOMIMoniker.yml
+  name: Load(UCOMIStream)
+  fullName: System.Runtime.InteropServices.UCOMIMoniker.Load(System.Runtime.InteropServices.UCOMIStream)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIMoniker.cs
+    startLine: 37
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Initializes an object from the stream where it was previously saved.
+  syntax:
+    content: void Load(UCOMIStream pStm)
+    content.vb: Sub Load(pStm As UCOMIStream)
+    parameters:
+    - id: pStm
+      type: System.Runtime.InteropServices.UCOMIStream
+      description: Stream from which the object is loaded.
+- uid: System.Runtime.InteropServices.UCOMIMoniker.Save(System.Runtime.InteropServices.UCOMIStream,System.Boolean)
+  id: Save(System.Runtime.InteropServices.UCOMIStream,System.Boolean)
+  parent: System.Runtime.InteropServices.UCOMIMoniker
+  href: System.Runtime.InteropServices.UCOMIMoniker.yml
+  name: Save(UCOMIStream, Boolean)
+  fullName: System.Runtime.InteropServices.UCOMIMoniker.Save(System.Runtime.InteropServices.UCOMIStream, System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIMoniker.cs
+    startLine: 38
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Saves an object to the specified stream.
+  syntax:
+    content: void Save(UCOMIStream pStm, bool fClearDirty)
+    content.vb: Sub Save(pStm As UCOMIStream, fClearDirty As Boolean)
+    parameters:
+    - id: pStm
+      type: System.Runtime.InteropServices.UCOMIStream
+      description: The stream into which the object is saved.
+    - id: fClearDirty
+      type: System.Boolean
+      description: Indicates whether to clear the modified flag after the save is complete.
+- uid: System.Runtime.InteropServices.UCOMIMoniker.GetSizeMax(System.Int64@)
+  id: GetSizeMax(System.Int64@)
+  parent: System.Runtime.InteropServices.UCOMIMoniker
+  href: System.Runtime.InteropServices.UCOMIMoniker.yml
+  name: GetSizeMax(out Int64)
+  name.vb: GetSizeMax(ByRef Int64)
+  fullName: System.Runtime.InteropServices.UCOMIMoniker.GetSizeMax(out System.Int64)
+  fullName.vb: System.Runtime.InteropServices.UCOMIMoniker.GetSizeMax(ByRef System.Int64)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIMoniker.cs
+    startLine: 39
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Returns the size in bytes of the stream needed to save the object.
+  syntax:
+    content: void GetSizeMax(out long pcbSize)
+    content.vb: Sub GetSizeMax(ByRef pcbSize As Long)
+    parameters:
+    - id: pcbSize
+      type: System.Int64
+      description: On successful return, contains a long value indicating the size in bytes of the stream needed to save this object.
+- uid: System.Runtime.InteropServices.UCOMIMoniker.BindToObject(System.Runtime.InteropServices.UCOMIBindCtx,System.Runtime.InteropServices.UCOMIMoniker,System.Guid@,System.Object@)
+  id: BindToObject(System.Runtime.InteropServices.UCOMIBindCtx,System.Runtime.InteropServices.UCOMIMoniker,System.Guid@,System.Object@)
+  parent: System.Runtime.InteropServices.UCOMIMoniker
+  href: System.Runtime.InteropServices.UCOMIMoniker.yml
+  name: BindToObject(UCOMIBindCtx, UCOMIMoniker, ref Guid, out Object)
+  name.vb: BindToObject(UCOMIBindCtx, UCOMIMoniker, ByRef Guid, ByRef Object)
+  fullName: System.Runtime.InteropServices.UCOMIMoniker.BindToObject(System.Runtime.InteropServices.UCOMIBindCtx, System.Runtime.InteropServices.UCOMIMoniker, ref System.Guid, out System.Object)
+  fullName.vb: System.Runtime.InteropServices.UCOMIMoniker.BindToObject(System.Runtime.InteropServices.UCOMIBindCtx, System.Runtime.InteropServices.UCOMIMoniker, ByRef System.Guid, ByRef System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIMoniker.cs
+    startLine: 42
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Uses the moniker to bind to the object it identifies.
+  syntax:
+    content: void BindToObject(UCOMIBindCtx pbc, UCOMIMoniker pmkToLeft, ref Guid riidResult, out object ppvResult)
+    content.vb: Sub BindToObject(pbc As UCOMIBindCtx, pmkToLeft As UCOMIMoniker, ByRef riidResult As Guid, ByRef ppvResult As Object)
+    parameters:
+    - id: pbc
+      type: System.Runtime.InteropServices.UCOMIBindCtx
+      description: A reference to the IBindCtx interface on the bind context object used in this binding operation.
+    - id: pmkToLeft
+      type: System.Runtime.InteropServices.UCOMIMoniker
+      description: A reference to the moniker to the left of this moniker, if the moniker is part of a composite moniker.
+    - id: riidResult
+      type: System.Guid
+      description: The interface identifier (IID) of the interface the client intends to use to communicate with the object that the moniker identifies.
+    - id: ppvResult
+      type: System.Object
+      description: On successful return, reference to the interface requested by *riidResult*.
+- uid: System.Runtime.InteropServices.UCOMIMoniker.BindToStorage(System.Runtime.InteropServices.UCOMIBindCtx,System.Runtime.InteropServices.UCOMIMoniker,System.Guid@,System.Object@)
+  id: BindToStorage(System.Runtime.InteropServices.UCOMIBindCtx,System.Runtime.InteropServices.UCOMIMoniker,System.Guid@,System.Object@)
+  parent: System.Runtime.InteropServices.UCOMIMoniker
+  href: System.Runtime.InteropServices.UCOMIMoniker.yml
+  name: BindToStorage(UCOMIBindCtx, UCOMIMoniker, ref Guid, out Object)
+  name.vb: BindToStorage(UCOMIBindCtx, UCOMIMoniker, ByRef Guid, ByRef Object)
+  fullName: System.Runtime.InteropServices.UCOMIMoniker.BindToStorage(System.Runtime.InteropServices.UCOMIBindCtx, System.Runtime.InteropServices.UCOMIMoniker, ref System.Guid, out System.Object)
+  fullName.vb: System.Runtime.InteropServices.UCOMIMoniker.BindToStorage(System.Runtime.InteropServices.UCOMIBindCtx, System.Runtime.InteropServices.UCOMIMoniker, ByRef System.Guid, ByRef System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIMoniker.cs
+    startLine: 43
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Retrieves an interface pointer to the storage that contains the object identified by the moniker.
+  syntax:
+    content: void BindToStorage(UCOMIBindCtx pbc, UCOMIMoniker pmkToLeft, ref Guid riid, out object ppvObj)
+    content.vb: Sub BindToStorage(pbc As UCOMIBindCtx, pmkToLeft As UCOMIMoniker, ByRef riid As Guid, ByRef ppvObj As Object)
+    parameters:
+    - id: pbc
+      type: System.Runtime.InteropServices.UCOMIBindCtx
+      description: A reference to the IBindCtx interface on the bind context object used during this binding operation.
+    - id: pmkToLeft
+      type: System.Runtime.InteropServices.UCOMIMoniker
+      description: A reference to the moniker to the left of this moniker, if the moniker is part of a composite moniker.
+    - id: riid
+      type: System.Guid
+      description: The interface identifier (IID) of the storage interface requested.
+    - id: ppvObj
+      type: System.Object
+      description: On successful return, a reference to the interface requested by *riid*.
+- uid: System.Runtime.InteropServices.UCOMIMoniker.Reduce(System.Runtime.InteropServices.UCOMIBindCtx,System.Int32,System.Runtime.InteropServices.UCOMIMoniker@,System.Runtime.InteropServices.UCOMIMoniker@)
+  id: Reduce(System.Runtime.InteropServices.UCOMIBindCtx,System.Int32,System.Runtime.InteropServices.UCOMIMoniker@,System.Runtime.InteropServices.UCOMIMoniker@)
+  parent: System.Runtime.InteropServices.UCOMIMoniker
+  href: System.Runtime.InteropServices.UCOMIMoniker.yml
+  name: Reduce(UCOMIBindCtx, Int32, ref UCOMIMoniker, out UCOMIMoniker)
+  name.vb: Reduce(UCOMIBindCtx, Int32, ByRef UCOMIMoniker, ByRef UCOMIMoniker)
+  fullName: System.Runtime.InteropServices.UCOMIMoniker.Reduce(System.Runtime.InteropServices.UCOMIBindCtx, System.Int32, ref System.Runtime.InteropServices.UCOMIMoniker, out System.Runtime.InteropServices.UCOMIMoniker)
+  fullName.vb: System.Runtime.InteropServices.UCOMIMoniker.Reduce(System.Runtime.InteropServices.UCOMIBindCtx, System.Int32, ByRef System.Runtime.InteropServices.UCOMIMoniker, ByRef System.Runtime.InteropServices.UCOMIMoniker)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIMoniker.cs
+    startLine: 44
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Returns a reduced moniker which is another moniker that refers to the same object as this moniker but can be bound with equal or greater efficiency.
+  syntax:
+    content: void Reduce(UCOMIBindCtx pbc, int dwReduceHowFar, ref UCOMIMoniker ppmkToLeft, out UCOMIMoniker ppmkReduced)
+    content.vb: Sub Reduce(pbc As UCOMIBindCtx, dwReduceHowFar As Integer, ByRef ppmkToLeft As UCOMIMoniker, ByRef ppmkReduced As UCOMIMoniker)
+    parameters:
+    - id: pbc
+      type: System.Runtime.InteropServices.UCOMIBindCtx
+      description: A reference to the IBindCtx interface on the bind context to be used in this binding operation.
+    - id: dwReduceHowFar
+      type: System.Int32
+      description: Specifies how far this moniker should be reduced.
+    - id: ppmkToLeft
+      type: System.Runtime.InteropServices.UCOMIMoniker
+      description: A reference to the moniker to the left of this moniker.
+    - id: ppmkReduced
+      type: System.Runtime.InteropServices.UCOMIMoniker
+      description: On successful return, a reference to the reduced form of this moniker, which can be null if an error occurs or if this moniker is reduced to nothing.
+- uid: System.Runtime.InteropServices.UCOMIMoniker.ComposeWith(System.Runtime.InteropServices.UCOMIMoniker,System.Boolean,System.Runtime.InteropServices.UCOMIMoniker@)
+  id: ComposeWith(System.Runtime.InteropServices.UCOMIMoniker,System.Boolean,System.Runtime.InteropServices.UCOMIMoniker@)
+  parent: System.Runtime.InteropServices.UCOMIMoniker
+  href: System.Runtime.InteropServices.UCOMIMoniker.yml
+  name: ComposeWith(UCOMIMoniker, Boolean, out UCOMIMoniker)
+  name.vb: ComposeWith(UCOMIMoniker, Boolean, ByRef UCOMIMoniker)
+  fullName: System.Runtime.InteropServices.UCOMIMoniker.ComposeWith(System.Runtime.InteropServices.UCOMIMoniker, System.Boolean, out System.Runtime.InteropServices.UCOMIMoniker)
+  fullName.vb: System.Runtime.InteropServices.UCOMIMoniker.ComposeWith(System.Runtime.InteropServices.UCOMIMoniker, System.Boolean, ByRef System.Runtime.InteropServices.UCOMIMoniker)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIMoniker.cs
+    startLine: 45
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Combines the current moniker with another moniker, creating a new composite moniker.
+  syntax:
+    content: void ComposeWith(UCOMIMoniker pmkRight, bool fOnlyIfNotGeneric, out UCOMIMoniker ppmkComposite)
+    content.vb: Sub ComposeWith(pmkRight As UCOMIMoniker, fOnlyIfNotGeneric As Boolean, ByRef ppmkComposite As UCOMIMoniker)
+    parameters:
+    - id: pmkRight
+      type: System.Runtime.InteropServices.UCOMIMoniker
+      description: A reference to the IMoniker interface on the moniker to compose onto the end of this moniker.
+    - id: fOnlyIfNotGeneric
+      type: System.Boolean
+      description: If true, the caller requires a nongeneric composition, so the operation proceeds only if *pmkRight* is a moniker class that this moniker can compose with in some way other than forming a generic composite. If false, the method can create a generic composite if necessary.
+    - id: ppmkComposite
+      type: System.Runtime.InteropServices.UCOMIMoniker
+      description: On successful return, a reference to the resulting composite moniker.
+- uid: System.Runtime.InteropServices.UCOMIMoniker.Enum(System.Boolean,System.Runtime.InteropServices.UCOMIEnumMoniker@)
+  id: Enum(System.Boolean,System.Runtime.InteropServices.UCOMIEnumMoniker@)
+  parent: System.Runtime.InteropServices.UCOMIMoniker
+  href: System.Runtime.InteropServices.UCOMIMoniker.yml
+  name: Enum(Boolean, out UCOMIEnumMoniker)
+  name.vb: Enum(Boolean, ByRef UCOMIEnumMoniker)
+  fullName: System.Runtime.InteropServices.UCOMIMoniker.Enum(System.Boolean, out System.Runtime.InteropServices.UCOMIEnumMoniker)
+  fullName.vb: System.Runtime.InteropServices.UCOMIMoniker.Enum(System.Boolean, ByRef System.Runtime.InteropServices.UCOMIEnumMoniker)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIMoniker.cs
+    startLine: 46
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Supplies a pointer to an enumerator that can enumerate the components of a composite moniker.
+  syntax:
+    content: void Enum(bool fForward, out UCOMIEnumMoniker ppenumMoniker)
+    content.vb: Sub Enum(fForward As Boolean, ByRef ppenumMoniker As UCOMIEnumMoniker)
+    parameters:
+    - id: fForward
+      type: System.Boolean
+      description: If true, enumerates the monikers from left to right. If false, enumerates from right to left.
+    - id: ppenumMoniker
+      type: System.Runtime.InteropServices.UCOMIEnumMoniker
+      description: On successful return, references the enumerator object for the moniker.
+- uid: System.Runtime.InteropServices.UCOMIMoniker.IsEqual(System.Runtime.InteropServices.UCOMIMoniker)
+  id: IsEqual(System.Runtime.InteropServices.UCOMIMoniker)
+  parent: System.Runtime.InteropServices.UCOMIMoniker
+  href: System.Runtime.InteropServices.UCOMIMoniker.yml
+  name: IsEqual(UCOMIMoniker)
+  fullName: System.Runtime.InteropServices.UCOMIMoniker.IsEqual(System.Runtime.InteropServices.UCOMIMoniker)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIMoniker.cs
+    startLine: 47
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Compares this moniker with a specified moniker and indicates whether they are identical.
+  syntax:
+    content: void IsEqual(UCOMIMoniker pmkOtherMoniker)
+    content.vb: Sub IsEqual(pmkOtherMoniker As UCOMIMoniker)
+    parameters:
+    - id: pmkOtherMoniker
+      type: System.Runtime.InteropServices.UCOMIMoniker
+      description: A reference to the moniker to be used for comparison.
+- uid: System.Runtime.InteropServices.UCOMIMoniker.Hash(System.Int32@)
+  id: Hash(System.Int32@)
+  parent: System.Runtime.InteropServices.UCOMIMoniker
+  href: System.Runtime.InteropServices.UCOMIMoniker.yml
+  name: Hash(out Int32)
+  name.vb: Hash(ByRef Int32)
+  fullName: System.Runtime.InteropServices.UCOMIMoniker.Hash(out System.Int32)
+  fullName.vb: System.Runtime.InteropServices.UCOMIMoniker.Hash(ByRef System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIMoniker.cs
+    startLine: 48
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Calculates a 32-bit integer using the internal state of the moniker.
+  syntax:
+    content: void Hash(out int pdwHash)
+    content.vb: Sub Hash(ByRef pdwHash As Integer)
+    parameters:
+    - id: pdwHash
+      type: System.Int32
+      description: On successful return, contains the hash value for this moniker.
+- uid: System.Runtime.InteropServices.UCOMIMoniker.IsRunning(System.Runtime.InteropServices.UCOMIBindCtx,System.Runtime.InteropServices.UCOMIMoniker,System.Runtime.InteropServices.UCOMIMoniker)
+  id: IsRunning(System.Runtime.InteropServices.UCOMIBindCtx,System.Runtime.InteropServices.UCOMIMoniker,System.Runtime.InteropServices.UCOMIMoniker)
+  parent: System.Runtime.InteropServices.UCOMIMoniker
+  href: System.Runtime.InteropServices.UCOMIMoniker.yml
+  name: IsRunning(UCOMIBindCtx, UCOMIMoniker, UCOMIMoniker)
+  fullName: System.Runtime.InteropServices.UCOMIMoniker.IsRunning(System.Runtime.InteropServices.UCOMIBindCtx, System.Runtime.InteropServices.UCOMIMoniker, System.Runtime.InteropServices.UCOMIMoniker)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIMoniker.cs
+    startLine: 49
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Determines whether the object that is identified by this moniker is currently loaded and running.
+  syntax:
+    content: void IsRunning(UCOMIBindCtx pbc, UCOMIMoniker pmkToLeft, UCOMIMoniker pmkNewlyRunning)
+    content.vb: Sub IsRunning(pbc As UCOMIBindCtx, pmkToLeft As UCOMIMoniker, pmkNewlyRunning As UCOMIMoniker)
+    parameters:
+    - id: pbc
+      type: System.Runtime.InteropServices.UCOMIBindCtx
+      description: A reference to the bind context to be used in this binding operation.
+    - id: pmkToLeft
+      type: System.Runtime.InteropServices.UCOMIMoniker
+      description: A reference to the moniker to the left of this moniker if this moniker is part of a composite.
+    - id: pmkNewlyRunning
+      type: System.Runtime.InteropServices.UCOMIMoniker
+      description: A reference to the moniker most recently added to the Running Object Table.
+- uid: System.Runtime.InteropServices.UCOMIMoniker.GetTimeOfLastChange(System.Runtime.InteropServices.UCOMIBindCtx,System.Runtime.InteropServices.UCOMIMoniker,System.Runtime.InteropServices.FILETIME@)
+  id: GetTimeOfLastChange(System.Runtime.InteropServices.UCOMIBindCtx,System.Runtime.InteropServices.UCOMIMoniker,System.Runtime.InteropServices.FILETIME@)
+  parent: System.Runtime.InteropServices.UCOMIMoniker
+  href: System.Runtime.InteropServices.UCOMIMoniker.yml
+  name: GetTimeOfLastChange(UCOMIBindCtx, UCOMIMoniker, out FILETIME)
+  name.vb: GetTimeOfLastChange(UCOMIBindCtx, UCOMIMoniker, ByRef FILETIME)
+  fullName: System.Runtime.InteropServices.UCOMIMoniker.GetTimeOfLastChange(System.Runtime.InteropServices.UCOMIBindCtx, System.Runtime.InteropServices.UCOMIMoniker, out System.Runtime.InteropServices.FILETIME)
+  fullName.vb: System.Runtime.InteropServices.UCOMIMoniker.GetTimeOfLastChange(System.Runtime.InteropServices.UCOMIBindCtx, System.Runtime.InteropServices.UCOMIMoniker, ByRef System.Runtime.InteropServices.FILETIME)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIMoniker.cs
+    startLine: 50
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Provides a number representing the time the object identified by this moniker was last changed.
+  syntax:
+    content: void GetTimeOfLastChange(UCOMIBindCtx pbc, UCOMIMoniker pmkToLeft, out FILETIME pFileTime)
+    content.vb: Sub GetTimeOfLastChange(pbc As UCOMIBindCtx, pmkToLeft As UCOMIMoniker, ByRef pFileTime As FILETIME)
+    parameters:
+    - id: pbc
+      type: System.Runtime.InteropServices.UCOMIBindCtx
+      description: A reference to the bind context to be used in this binding operation.
+    - id: pmkToLeft
+      type: System.Runtime.InteropServices.UCOMIMoniker
+      description: A reference to the moniker to the left of this moniker, if the moniker is part of a composite moniker.
+    - id: pFileTime
+      type: System.Runtime.InteropServices.FILETIME
+      description: On successful return, contains the time of last change.
+- uid: System.Runtime.InteropServices.UCOMIMoniker.Inverse(System.Runtime.InteropServices.UCOMIMoniker@)
+  id: Inverse(System.Runtime.InteropServices.UCOMIMoniker@)
+  parent: System.Runtime.InteropServices.UCOMIMoniker
+  href: System.Runtime.InteropServices.UCOMIMoniker.yml
+  name: Inverse(out UCOMIMoniker)
+  name.vb: Inverse(ByRef UCOMIMoniker)
+  fullName: System.Runtime.InteropServices.UCOMIMoniker.Inverse(out System.Runtime.InteropServices.UCOMIMoniker)
+  fullName.vb: System.Runtime.InteropServices.UCOMIMoniker.Inverse(ByRef System.Runtime.InteropServices.UCOMIMoniker)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIMoniker.cs
+    startLine: 51
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Provides a moniker that, when composed to the right of this moniker or one of similar structure, composes to nothing.
+  syntax:
+    content: void Inverse(out UCOMIMoniker ppmk)
+    content.vb: Sub Inverse(ByRef ppmk As UCOMIMoniker)
+    parameters:
+    - id: ppmk
+      type: System.Runtime.InteropServices.UCOMIMoniker
+      description: On successful return, contains a moniker that is the inverse of this moniker.
+- uid: System.Runtime.InteropServices.UCOMIMoniker.CommonPrefixWith(System.Runtime.InteropServices.UCOMIMoniker,System.Runtime.InteropServices.UCOMIMoniker@)
+  id: CommonPrefixWith(System.Runtime.InteropServices.UCOMIMoniker,System.Runtime.InteropServices.UCOMIMoniker@)
+  parent: System.Runtime.InteropServices.UCOMIMoniker
+  href: System.Runtime.InteropServices.UCOMIMoniker.yml
+  name: CommonPrefixWith(UCOMIMoniker, out UCOMIMoniker)
+  name.vb: CommonPrefixWith(UCOMIMoniker, ByRef UCOMIMoniker)
+  fullName: System.Runtime.InteropServices.UCOMIMoniker.CommonPrefixWith(System.Runtime.InteropServices.UCOMIMoniker, out System.Runtime.InteropServices.UCOMIMoniker)
+  fullName.vb: System.Runtime.InteropServices.UCOMIMoniker.CommonPrefixWith(System.Runtime.InteropServices.UCOMIMoniker, ByRef System.Runtime.InteropServices.UCOMIMoniker)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIMoniker.cs
+    startLine: 52
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Creates a new moniker based on the common prefix that this moniker shares with another moniker.
+  syntax:
+    content: void CommonPrefixWith(UCOMIMoniker pmkOther, out UCOMIMoniker ppmkPrefix)
+    content.vb: Sub CommonPrefixWith(pmkOther As UCOMIMoniker, ByRef ppmkPrefix As UCOMIMoniker)
+    parameters:
+    - id: pmkOther
+      type: System.Runtime.InteropServices.UCOMIMoniker
+      description: A reference to the IMoniker interface on another moniker to compare with this for a common prefix.
+    - id: ppmkPrefix
+      type: System.Runtime.InteropServices.UCOMIMoniker
+      description: On successful return, contains the moniker that is the common prefix of this moniker and *pmkOther*.
+- uid: System.Runtime.InteropServices.UCOMIMoniker.RelativePathTo(System.Runtime.InteropServices.UCOMIMoniker,System.Runtime.InteropServices.UCOMIMoniker@)
+  id: RelativePathTo(System.Runtime.InteropServices.UCOMIMoniker,System.Runtime.InteropServices.UCOMIMoniker@)
+  parent: System.Runtime.InteropServices.UCOMIMoniker
+  href: System.Runtime.InteropServices.UCOMIMoniker.yml
+  name: RelativePathTo(UCOMIMoniker, out UCOMIMoniker)
+  name.vb: RelativePathTo(UCOMIMoniker, ByRef UCOMIMoniker)
+  fullName: System.Runtime.InteropServices.UCOMIMoniker.RelativePathTo(System.Runtime.InteropServices.UCOMIMoniker, out System.Runtime.InteropServices.UCOMIMoniker)
+  fullName.vb: System.Runtime.InteropServices.UCOMIMoniker.RelativePathTo(System.Runtime.InteropServices.UCOMIMoniker, ByRef System.Runtime.InteropServices.UCOMIMoniker)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIMoniker.cs
+    startLine: 53
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Supplies a moniker that, when appended to this moniker (or one with a similar structure), yields the specified moniker.
+  syntax:
+    content: void RelativePathTo(UCOMIMoniker pmkOther, out UCOMIMoniker ppmkRelPath)
+    content.vb: Sub RelativePathTo(pmkOther As UCOMIMoniker, ByRef ppmkRelPath As UCOMIMoniker)
+    parameters:
+    - id: pmkOther
+      type: System.Runtime.InteropServices.UCOMIMoniker
+      description: A reference to the moniker to which a relative path should be taken.
+    - id: ppmkRelPath
+      type: System.Runtime.InteropServices.UCOMIMoniker
+      description: On successful return, reference to the relative moniker.
+- uid: System.Runtime.InteropServices.UCOMIMoniker.GetDisplayName(System.Runtime.InteropServices.UCOMIBindCtx,System.Runtime.InteropServices.UCOMIMoniker,System.String@)
+  id: GetDisplayName(System.Runtime.InteropServices.UCOMIBindCtx,System.Runtime.InteropServices.UCOMIMoniker,System.String@)
+  parent: System.Runtime.InteropServices.UCOMIMoniker
+  href: System.Runtime.InteropServices.UCOMIMoniker.yml
+  name: GetDisplayName(UCOMIBindCtx, UCOMIMoniker, out String)
+  name.vb: GetDisplayName(UCOMIBindCtx, UCOMIMoniker, ByRef String)
+  fullName: System.Runtime.InteropServices.UCOMIMoniker.GetDisplayName(System.Runtime.InteropServices.UCOMIBindCtx, System.Runtime.InteropServices.UCOMIMoniker, out System.String)
+  fullName.vb: System.Runtime.InteropServices.UCOMIMoniker.GetDisplayName(System.Runtime.InteropServices.UCOMIBindCtx, System.Runtime.InteropServices.UCOMIMoniker, ByRef System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIMoniker.cs
+    startLine: 54
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Gets the display name, which is a user-readable representation of this moniker.
+  syntax:
+    content: void GetDisplayName(UCOMIBindCtx pbc, UCOMIMoniker pmkToLeft, out string ppszDisplayName)
+    content.vb: Sub GetDisplayName(pbc As UCOMIBindCtx, pmkToLeft As UCOMIMoniker, ByRef ppszDisplayName As String)
+    parameters:
+    - id: pbc
+      type: System.Runtime.InteropServices.UCOMIBindCtx
+      description: A reference to the bind context to use in this operation.
+    - id: pmkToLeft
+      type: System.Runtime.InteropServices.UCOMIMoniker
+      description: A reference to the moniker to the left of this moniker, if the moniker is part of a composite moniker.
+    - id: ppszDisplayName
+      type: System.String
+      description: On successful return, contains the display name string.
+- uid: System.Runtime.InteropServices.UCOMIMoniker.ParseDisplayName(System.Runtime.InteropServices.UCOMIBindCtx,System.Runtime.InteropServices.UCOMIMoniker,System.String,System.Int32@,System.Runtime.InteropServices.UCOMIMoniker@)
+  id: ParseDisplayName(System.Runtime.InteropServices.UCOMIBindCtx,System.Runtime.InteropServices.UCOMIMoniker,System.String,System.Int32@,System.Runtime.InteropServices.UCOMIMoniker@)
+  parent: System.Runtime.InteropServices.UCOMIMoniker
+  href: System.Runtime.InteropServices.UCOMIMoniker.yml
+  name: ParseDisplayName(UCOMIBindCtx, UCOMIMoniker, String, out Int32, out UCOMIMoniker)
+  name.vb: ParseDisplayName(UCOMIBindCtx, UCOMIMoniker, String, ByRef Int32, ByRef UCOMIMoniker)
+  fullName: System.Runtime.InteropServices.UCOMIMoniker.ParseDisplayName(System.Runtime.InteropServices.UCOMIBindCtx, System.Runtime.InteropServices.UCOMIMoniker, System.String, out System.Int32, out System.Runtime.InteropServices.UCOMIMoniker)
+  fullName.vb: System.Runtime.InteropServices.UCOMIMoniker.ParseDisplayName(System.Runtime.InteropServices.UCOMIBindCtx, System.Runtime.InteropServices.UCOMIMoniker, System.String, ByRef System.Int32, ByRef System.Runtime.InteropServices.UCOMIMoniker)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIMoniker.cs
+    startLine: 55
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Reads as many characters of the specified display name as it understands and builds a moniker corresponding to the portion read.
+  syntax:
+    content: void ParseDisplayName(UCOMIBindCtx pbc, UCOMIMoniker pmkToLeft, string pszDisplayName, out int pchEaten, out UCOMIMoniker ppmkOut)
+    content.vb: Sub ParseDisplayName(pbc As UCOMIBindCtx, pmkToLeft As UCOMIMoniker, pszDisplayName As String, ByRef pchEaten As Integer, ByRef ppmkOut As UCOMIMoniker)
+    parameters:
+    - id: pbc
+      type: System.Runtime.InteropServices.UCOMIBindCtx
+      description: A reference to the bind context to be used in this binding operation.
+    - id: pmkToLeft
+      type: System.Runtime.InteropServices.UCOMIMoniker
+      description: A reference to the moniker that has been built out of the display name up to this point.
+    - id: pszDisplayName
+      type: System.String
+      description: A reference to the string containing the remaining display name to parse.
+    - id: pchEaten
+      type: System.Int32
+      description: On successful return, contains the number of characters in *pszDisplayName* that were consumed in this step.
+    - id: ppmkOut
+      type: System.Runtime.InteropServices.UCOMIMoniker
+      description: Reference to the moniker that was built from *pszDisplayName*.
+- uid: System.Runtime.InteropServices.UCOMIMoniker.IsSystemMoniker(System.Int32@)
+  id: IsSystemMoniker(System.Int32@)
+  parent: System.Runtime.InteropServices.UCOMIMoniker
+  href: System.Runtime.InteropServices.UCOMIMoniker.yml
+  name: IsSystemMoniker(out Int32)
+  name.vb: IsSystemMoniker(ByRef Int32)
+  fullName: System.Runtime.InteropServices.UCOMIMoniker.IsSystemMoniker(out System.Int32)
+  fullName.vb: System.Runtime.InteropServices.UCOMIMoniker.IsSystemMoniker(ByRef System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/UCOMIMoniker.cs
+    startLine: 56
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Indicates whether this moniker is of one of the system-supplied moniker classes.
+  syntax:
+    content: void IsSystemMoniker(out int pdwMksys)
+    content.vb: Sub IsSystemMoniker(ByRef pdwMksys As Integer)
+    parameters:
+    - id: pdwMksys
+      type: System.Int32
+      description: A pointer to an integer that is one of the values from the MKSYS enumeration, and refers to one of the COM moniker classes.
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace
+- uid: System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  fullName: System.Guid
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Runtime.InteropServices.UCOMIStream
+  parent: System.Runtime.InteropServices
+  isExternal: false
+  href: System.Runtime.InteropServices.UCOMIStream.yml
+  name: UCOMIStream
+  fullName: System.Runtime.InteropServices.UCOMIStream
+  type: Interface
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  fullName: System.Int64
+- uid: System.Runtime.InteropServices.UCOMIBindCtx
+  isExternal: false
+  href: System.Runtime.InteropServices.UCOMIBindCtx.yml
+  name: UCOMIBindCtx
+  fullName: System.Runtime.InteropServices.UCOMIBindCtx
+  type: Interface
+- uid: System.Runtime.InteropServices.UCOMIMoniker
+  parent: System.Runtime.InteropServices
+  isExternal: false
+  href: System.Runtime.InteropServices.UCOMIMoniker.yml
+  name: UCOMIMoniker
+  fullName: System.Runtime.InteropServices.UCOMIMoniker
+  type: Interface
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Runtime.InteropServices.UCOMIEnumMoniker
+  parent: System.Runtime.InteropServices
+  isExternal: false
+  href: System.Runtime.InteropServices.UCOMIEnumMoniker.yml
+  name: UCOMIEnumMoniker
+  fullName: System.Runtime.InteropServices.UCOMIEnumMoniker
+  type: Interface
+- uid: System.Runtime.InteropServices.FILETIME
+  isExternal: false
+  href: System.Runtime.InteropServices.FILETIME.yml
+  name: FILETIME
+  fullName: System.Runtime.InteropServices.FILETIME
+  type: Struct
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String

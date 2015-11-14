@@ -1,0 +1,523 @@
+items:
+- uid: System.Linq.Expressions.SwitchCase
+  id: SwitchCase
+  parent: System.Linq.Expressions
+  children:
+  - System.Linq.Expressions.SwitchCase.Body
+  - System.Linq.Expressions.SwitchCase.TestValues
+  - System.Linq.Expressions.SwitchCase.ToString
+  - System.Linq.Expressions.SwitchCase.Update(System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression},System.Linq.Expressions.Expression)
+  href: System.Linq.Expressions.SwitchCase.yml
+  name: SwitchCase
+  fullName: System.Linq.Expressions.SwitchCase
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Linq.Expressions/src/System/Linq/Expressions/SwitchCase.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Linq.Expressions/src/System/Linq/Expressions/SwitchCase.cs
+    startLine: 14
+  assemblies:
+  - System.Linq.Expressions
+  namespace: System.Linq.Expressions
+  summary: Represents one case of a @'System.Linq.Expressions.SwitchExpression'.
+  syntax:
+    content: public sealed class SwitchCase
+    content.vb: Public NotInheritable Class SwitchCase
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Linq.Expressions.SwitchCase.TestValues
+  id: TestValues
+  parent: System.Linq.Expressions.SwitchCase
+  href: System.Linq.Expressions.SwitchCase.yml
+  name: TestValues
+  fullName: System.Linq.Expressions.SwitchCase.TestValues
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Linq.Expressions/src/System/Linq/Expressions/SwitchCase.cs
+    startLine: 29
+  assemblies:
+  - System.Linq.Expressions
+  namespace: System.Linq.Expressions
+  summary: Gets the values of this case. This case is selected for execution when the @'System.Linq.Expressions.SwitchExpression.SwitchValue' matches any of these values.
+  syntax:
+    content: public ReadOnlyCollection<Expression> TestValues { get; }
+    content.vb: Public ReadOnly Property TestValues As ReadOnlyCollection(Of Expression)
+    parameters: []
+    return:
+      type: System.Collections.ObjectModel.ReadOnlyCollection{System.Linq.Expressions.Expression}
+      description: The read-only collection of the values for this case block.
+- uid: System.Linq.Expressions.SwitchCase.Body
+  id: Body
+  parent: System.Linq.Expressions.SwitchCase
+  href: System.Linq.Expressions.SwitchCase.yml
+  name: Body
+  fullName: System.Linq.Expressions.SwitchCase.Body
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Linq.Expressions/src/System/Linq/Expressions/SwitchCase.cs
+    startLine: 37
+  assemblies:
+  - System.Linq.Expressions
+  namespace: System.Linq.Expressions
+  summary: Gets the body of this case.
+  syntax:
+    content: public Expression Body { get; }
+    content.vb: Public ReadOnly Property Body As Expression
+    parameters: []
+    return:
+      type: System.Linq.Expressions.Expression
+      description: The @'System.Linq.Expressions.Expression' object that represents the body of the case block.
+- uid: System.Linq.Expressions.SwitchCase.ToString
+  id: ToString
+  parent: System.Linq.Expressions.SwitchCase
+  href: System.Linq.Expressions.SwitchCase.yml
+  name: ToString()
+  fullName: System.Linq.Expressions.SwitchCase.ToString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Linq.Expressions/src/System/Linq/Expressions/SwitchCase.cs
+    startLine: 46
+  assemblies:
+  - System.Linq.Expressions
+  namespace: System.Linq.Expressions
+  summary: Returns a @'System.String' that represents the current @'System.Object'.
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+      description: A @'System.String' that represents the current @'System.Object'.
+  overridden: System.Object.ToString
+- uid: System.Linq.Expressions.SwitchCase.Update(System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression},System.Linq.Expressions.Expression)
+  id: Update(System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression},System.Linq.Expressions.Expression)
+  parent: System.Linq.Expressions.SwitchCase
+  href: System.Linq.Expressions.SwitchCase.yml
+  name: Update(IEnumerable<Expression>, Expression)
+  name.vb: Update(IEnumerable(Of Expression), Expression)
+  fullName: System.Linq.Expressions.SwitchCase.Update(System.Collections.Generic.IEnumerable<System.Linq.Expressions.Expression>, System.Linq.Expressions.Expression)
+  fullName.vb: System.Linq.Expressions.SwitchCase.Update(System.Collections.Generic.IEnumerable(Of System.Linq.Expressions.Expression), System.Linq.Expressions.Expression)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Linq.Expressions/src/System/Linq/Expressions/SwitchCase.cs
+    startLine: 59
+  assemblies:
+  - System.Linq.Expressions
+  namespace: System.Linq.Expressions
+  summary: Creates a new expression that is like this one, but using the supplied children. If all of the children are the same, it will return this expression.
+  syntax:
+    content: public SwitchCase Update(IEnumerable<Expression> testValues, Expression body)
+    content.vb: Public Function Update(testValues As IEnumerable(Of Expression), body As Expression) As SwitchCase
+    parameters:
+    - id: testValues
+      type: System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression}
+      description: The @'System.Linq.Expressions.SwitchCase.TestValues' property of the result.
+    - id: body
+      type: System.Linq.Expressions.Expression
+      description: The @'System.Linq.Expressions.SwitchCase.Body' property of the result.
+    return:
+      type: System.Linq.Expressions.SwitchCase
+      description: This expression if no children are changed or an expression with the updated children.
+references:
+- uid: System.Linq.Expressions.SwitchExpression
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.SwitchExpression.yml
+  name: SwitchExpression
+  fullName: System.Linq.Expressions.SwitchExpression
+  type: Class
+  summary: Represents a control expression that handles multiple selections by passing control to a @'System.Linq.Expressions.SwitchCase'.
+- uid: System.Linq.Expressions
+  isExternal: false
+  name: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Linq.Expressions.SwitchExpression.SwitchValue
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{System.Linq.Expressions.Expression}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1
+  href: System.Linq.Expressions.Expression.yml
+  name: ReadOnlyCollection<Expression>
+  name.vb: ReadOnlyCollection(Of Expression)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<System.Linq.Expressions.Expression>
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of System.Linq.Expressions.Expression)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    fullName: System.Linq.Expressions.Expression
+    href: System.Linq.Expressions.Expression.yml
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    fullName: System.Linq.Expressions.Expression
+    href: System.Linq.Expressions.Expression.yml
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+  parent: System.Collections.ObjectModel
+  isExternal: true
+  name: ReadOnlyCollection<T>
+  name.vb: ReadOnlyCollection(Of T)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel
+  isExternal: false
+  name: System.Collections.ObjectModel
+  fullName: System.Collections.ObjectModel
+  type: Namespace
+- uid: System.Linq.Expressions.Expression
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.Expression.yml
+  name: Expression
+  fullName: System.Linq.Expressions.Expression
+  type: Class
+  summary: The base type for all nodes in Expression Trees.
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Linq.Expressions.SwitchCase.TestValues
+- uid: System.Linq.Expressions.SwitchCase.Body
+- uid: System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: System.Linq.Expressions.Expression.yml
+  name: IEnumerable<Expression>
+  name.vb: IEnumerable(Of Expression)
+  fullName: System.Collections.Generic.IEnumerable<System.Linq.Expressions.Expression>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Linq.Expressions.Expression)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    fullName: System.Linq.Expressions.Expression
+    href: System.Linq.Expressions.Expression.yml
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    fullName: System.Linq.Expressions.Expression
+    href: System.Linq.Expressions.Expression.yml
+  - name: )
+    fullName: )
+- uid: System.Linq.Expressions.SwitchCase
+  parent: System.Linq.Expressions
+  isExternal: false
+  href: System.Linq.Expressions.SwitchCase.yml
+  name: SwitchCase
+  fullName: System.Linq.Expressions.SwitchCase
+  type: Class
+  summary: Represents one case of a @'System.Linq.Expressions.SwitchExpression'.
+- uid: System.Collections.Generic.IEnumerable`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic

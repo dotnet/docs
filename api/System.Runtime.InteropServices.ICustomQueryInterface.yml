@@ -1,0 +1,81 @@
+items:
+- uid: System.Runtime.InteropServices.ICustomQueryInterface
+  id: ICustomQueryInterface
+  parent: System.Runtime.InteropServices
+  children:
+  - System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(System.Guid@,System.IntPtr@)
+  href: System.Runtime.InteropServices.ICustomQueryInterface.yml
+  name: ICustomQueryInterface
+  fullName: System.Runtime.InteropServices.ICustomQueryInterface
+  type: Interface
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/InteropServices/ICustomQueryInterface.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/InteropServices/ICustomQueryInterface.cs
+    startLine: 31
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Enables developers to provide a custom, managed implementation of the IUnknown::QueryInterface(REFIID riid, void **ppvObject) method.
+  syntax:
+    content: public interface ICustomQueryInterface
+    content.vb: Public Interface ICustomQueryInterface
+- uid: System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(System.Guid@,System.IntPtr@)
+  id: GetInterface(System.Guid@,System.IntPtr@)
+  parent: System.Runtime.InteropServices.ICustomQueryInterface
+  href: System.Runtime.InteropServices.ICustomQueryInterface.yml
+  name: GetInterface(ref Guid, out IntPtr)
+  name.vb: GetInterface(ByRef Guid, ByRef IntPtr)
+  fullName: System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(ref System.Guid, out System.IntPtr)
+  fullName.vb: System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(ByRef System.Guid, ByRef System.IntPtr)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/InteropServices/ICustomQueryInterface.cs
+    startLine: 34
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.InteropServices
+  summary: Returns an interface according to a specified interface ID.
+  syntax:
+    content: CustomQueryInterfaceResult GetInterface(ref Guid iid, out IntPtr ppv)
+    content.vb: Function GetInterface(ByRef iid As Guid, ByRef ppv As IntPtr) As CustomQueryInterfaceResult
+    parameters:
+    - id: iid
+      type: System.Guid
+      description: The GUID of the requested interface.
+    - id: ppv
+      type: System.IntPtr
+      description: A reference to the requested interface, when this method returns.
+    return:
+      type: System.Runtime.InteropServices.CustomQueryInterfaceResult
+      description: One of the enumeration values that indicates whether a custom implementation of IUnknown::QueryInterface was used.
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+  type: Namespace
+- uid: System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  fullName: System.Guid
+- uid: System.IntPtr
+  parent: System
+  isExternal: true
+  name: IntPtr
+  fullName: System.IntPtr
+- uid: System.Runtime.InteropServices.CustomQueryInterfaceResult
+  parent: System.Runtime.InteropServices
+  isExternal: false
+  href: System.Runtime.InteropServices.CustomQueryInterfaceResult.yml
+  name: CustomQueryInterfaceResult
+  fullName: System.Runtime.InteropServices.CustomQueryInterfaceResult
+  type: Enum
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

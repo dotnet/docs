@@ -1,0 +1,188 @@
+items:
+- uid: System.Runtime.Serialization.IFormatter
+  id: IFormatter
+  parent: System.Runtime.Serialization
+  children:
+  - System.Runtime.Serialization.IFormatter.Binder
+  - System.Runtime.Serialization.IFormatter.Context
+  - System.Runtime.Serialization.IFormatter.Deserialize(System.IO.Stream)
+  - System.Runtime.Serialization.IFormatter.Serialize(System.IO.Stream,System.Object)
+  - System.Runtime.Serialization.IFormatter.SurrogateSelector
+  href: System.Runtime.Serialization.IFormatter.yml
+  name: IFormatter
+  fullName: System.Runtime.Serialization.IFormatter
+  type: Interface
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/Serialization/IFormatter.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/Serialization/IFormatter.cs
+    startLine: 17
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Provides functionality for formatting serialized objects.
+  syntax:
+    content: public interface IFormatter
+    content.vb: Public Interface IFormatter
+- uid: System.Runtime.Serialization.IFormatter.Deserialize(System.IO.Stream)
+  id: Deserialize(System.IO.Stream)
+  parent: System.Runtime.Serialization.IFormatter
+  href: System.Runtime.Serialization.IFormatter.yml
+  name: Deserialize(Stream)
+  fullName: System.Runtime.Serialization.IFormatter.Deserialize(System.IO.Stream)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/IFormatter.cs
+    startLine: 19
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Deserializes the data on the provided stream and reconstitutes the graph of objects.
+  syntax:
+    content: object Deserialize(Stream serializationStream)
+    content.vb: Function Deserialize(serializationStream As Stream) As Object
+    parameters:
+    - id: serializationStream
+      type: System.IO.Stream
+      description: The stream that contains the data to deserialize.
+    return:
+      type: System.Object
+      description: The top object of the deserialized graph.
+- uid: System.Runtime.Serialization.IFormatter.Serialize(System.IO.Stream,System.Object)
+  id: Serialize(System.IO.Stream,System.Object)
+  parent: System.Runtime.Serialization.IFormatter
+  href: System.Runtime.Serialization.IFormatter.yml
+  name: Serialize(Stream, Object)
+  fullName: System.Runtime.Serialization.IFormatter.Serialize(System.IO.Stream, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/IFormatter.cs
+    startLine: 21
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Serializes an object, or graph of objects with the given root to the provided stream.
+  syntax:
+    content: void Serialize(Stream serializationStream, object graph)
+    content.vb: Sub Serialize(serializationStream As Stream, graph As Object)
+    parameters:
+    - id: serializationStream
+      type: System.IO.Stream
+      description: The stream where the formatter puts the serialized data. This stream can reference a variety of backing stores (such as files, network, memory, and so on).
+    - id: graph
+      type: System.Object
+      description: The object, or root of the object graph, to serialize. All child objects of this root object are automatically serialized.
+- uid: System.Runtime.Serialization.IFormatter.SurrogateSelector
+  id: SurrogateSelector
+  parent: System.Runtime.Serialization.IFormatter
+  href: System.Runtime.Serialization.IFormatter.yml
+  name: SurrogateSelector
+  fullName: System.Runtime.Serialization.IFormatter.SurrogateSelector
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/IFormatter.cs
+    startLine: 24
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Gets or sets the @'System.Runtime.Serialization.SurrogateSelector' used by the current formatter.
+  syntax:
+    content: ISurrogateSelector SurrogateSelector { get; set; }
+    content.vb: Property SurrogateSelector As ISurrogateSelector
+    parameters: []
+    return:
+      type: System.Runtime.Serialization.ISurrogateSelector
+      description: The @'System.Runtime.Serialization.SurrogateSelector' used by this formatter.
+- uid: System.Runtime.Serialization.IFormatter.Binder
+  id: Binder
+  parent: System.Runtime.Serialization.IFormatter
+  href: System.Runtime.Serialization.IFormatter.yml
+  name: Binder
+  fullName: System.Runtime.Serialization.IFormatter.Binder
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/IFormatter.cs
+    startLine: 29
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Gets or sets the @'System.Runtime.Serialization.SerializationBinder' that performs type lookups during deserialization.
+  syntax:
+    content: SerializationBinder Binder { get; set; }
+    content.vb: Property Binder As SerializationBinder
+    parameters: []
+    return:
+      type: System.Runtime.Serialization.SerializationBinder
+      description: The @'System.Runtime.Serialization.SerializationBinder' that performs type lookups during deserialization.
+- uid: System.Runtime.Serialization.IFormatter.Context
+  id: Context
+  parent: System.Runtime.Serialization.IFormatter
+  href: System.Runtime.Serialization.IFormatter.yml
+  name: Context
+  fullName: System.Runtime.Serialization.IFormatter.Context
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/Serialization/IFormatter.cs
+    startLine: 34
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.Serialization
+  summary: Gets or sets the @'System.Runtime.Serialization.StreamingContext' used for serialization and deserialization.
+  syntax:
+    content: StreamingContext Context { get; set; }
+    content.vb: Property Context As StreamingContext
+    parameters: []
+    return:
+      type: System.Runtime.Serialization.StreamingContext
+      description: The @'System.Runtime.Serialization.StreamingContext' used for serialization and deserialization.
+references:
+- uid: System.Runtime.Serialization
+  isExternal: false
+  name: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+  type: Namespace
+- uid: System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  name: Stream
+  fullName: System.IO.Stream
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.IO
+  isExternal: false
+  name: System.IO
+  fullName: System.IO
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Runtime.Serialization.ISurrogateSelector
+  parent: System.Runtime.Serialization
+  isExternal: false
+  href: System.Runtime.Serialization.ISurrogateSelector.yml
+  name: ISurrogateSelector
+  fullName: System.Runtime.Serialization.ISurrogateSelector
+  type: Interface
+- uid: System.Runtime.Serialization.SerializationBinder
+  parent: System.Runtime.Serialization
+  isExternal: false
+  href: System.Runtime.Serialization.SerializationBinder.yml
+  name: SerializationBinder
+  fullName: System.Runtime.Serialization.SerializationBinder
+  type: Class
+- uid: System.Runtime.Serialization.StreamingContext
+  isExternal: false
+  href: System.Runtime.Serialization.StreamingContext.yml
+  name: StreamingContext
+  fullName: System.Runtime.Serialization.StreamingContext
+  type: Struct

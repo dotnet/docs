@@ -1,0 +1,504 @@
+items:
+- uid: System.Net.WebResponse
+  id: WebResponse
+  parent: System.Net
+  children:
+  - System.Net.WebResponse.#ctor
+  - System.Net.WebResponse.ContentLength
+  - System.Net.WebResponse.ContentType
+  - System.Net.WebResponse.Dispose
+  - System.Net.WebResponse.Dispose(System.Boolean)
+  - System.Net.WebResponse.GetResponseStream
+  - System.Net.WebResponse.Headers
+  - System.Net.WebResponse.ResponseUri
+  - System.Net.WebResponse.SupportsHeaders
+  href: System.Net.WebResponse.yml
+  name: WebResponse
+  fullName: System.Net.WebResponse
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Net.Requests/src/System/Net/WebResponse.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Net.Requests/src/System/Net/WebResponse.cs
+    startLine: 16
+  assemblies:
+  - System.Net.Requests
+  namespace: System.Net
+  summary: Provides a response from a Uniform Resource Identifier (URI). This is an abstract class.
+  syntax:
+    content: 'public abstract class WebResponse : IDisposable'
+    content.vb: Public MustInherit Class WebResponse Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Net.WebResponse.#ctor
+  id: '#ctor'
+  parent: System.Net.WebResponse
+  href: System.Net.WebResponse.yml
+  name: WebResponse()
+  fullName: System.Net.WebResponse.WebResponse()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Net.Requests/src/System/Net/WebResponse.cs
+    startLine: 23
+  assemblies:
+  - System.Net.Requests
+  namespace: System.Net
+  summary: Initializes a new instance of the @'System.Net.WebResponse' class.
+  syntax:
+    content: protected WebResponse()
+    content.vb: Protected Sub New
+- uid: System.Net.WebResponse.Dispose
+  id: Dispose
+  parent: System.Net.WebResponse
+  href: System.Net.WebResponse.yml
+  name: Dispose()
+  fullName: System.Net.WebResponse.Dispose()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.Requests/src/System/Net/WebResponse.cs
+    startLine: 27
+  assemblies:
+  - System.Net.Requests
+  namespace: System.Net
+  summary: Releases the unmanaged resources used by the @'System.Net.WebResponse' object.
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+- uid: System.Net.WebResponse.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: System.Net.WebResponse
+  href: System.Net.WebResponse.yml
+  name: Dispose(Boolean)
+  fullName: System.Net.WebResponse.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.Requests/src/System/Net/WebResponse.cs
+    startLine: 33
+  assemblies:
+  - System.Net.Requests
+  namespace: System.Net
+  summary: Releases the unmanaged resources used by the @'System.Net.WebResponse' object, and optionally disposes of the managed resources.
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: true to release both managed and unmanaged resources; false to releases only unmanaged resources.
+- uid: System.Net.WebResponse.ContentLength
+  id: ContentLength
+  parent: System.Net.WebResponse
+  href: System.Net.WebResponse.yml
+  name: ContentLength
+  fullName: System.Net.WebResponse.ContentLength
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Requests/src/System/Net/WebResponse.cs
+    startLine: 43
+  assemblies:
+  - System.Net.Requests
+  namespace: System.Net
+  summary: When overridden in a descendant class, gets or sets the content length of data being received.
+  syntax:
+    content: public abstract long ContentLength { get; }
+    content.vb: Public MustOverride ReadOnly Property ContentLength As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: The number of bytes returned from the Internet resource.
+  exceptions:
+  - type: System.NotSupportedException
+    description: Any attempt is made to get or set the property, when the property is not overridden in a descendant class.
+- uid: System.Net.WebResponse.ContentType
+  id: ContentType
+  parent: System.Net.WebResponse
+  href: System.Net.WebResponse.yml
+  name: ContentType
+  fullName: System.Net.WebResponse.ContentType
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Requests/src/System/Net/WebResponse.cs
+    startLine: 54
+  assemblies:
+  - System.Net.Requests
+  namespace: System.Net
+  summary: When overridden in a derived class, gets or sets the content type of the data being received.
+  syntax:
+    content: public abstract string ContentType { get; }
+    content.vb: Public MustOverride ReadOnly Property ContentType As String
+    parameters: []
+    return:
+      type: System.String
+      description: A string that contains the content type of the response.
+  exceptions:
+  - type: System.NotSupportedException
+    description: Any attempt is made to get or set the property, when the property is not overridden in a descendant class.
+- uid: System.Net.WebResponse.GetResponseStream
+  id: GetResponseStream
+  parent: System.Net.WebResponse
+  href: System.Net.WebResponse.yml
+  name: GetResponseStream()
+  fullName: System.Net.WebResponse.GetResponseStream()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.Requests/src/System/Net/WebResponse.cs
+    startLine: 64
+  assemblies:
+  - System.Net.Requests
+  namespace: System.Net
+  summary: When overridden in a descendant class, returns the data stream from the Internet resource.
+  syntax:
+    content: public abstract Stream GetResponseStream()
+    content.vb: Public MustOverride Function GetResponseStream As Stream
+    return:
+      type: System.IO.Stream
+      description: An instance of the @'System.IO.Stream' class for reading data from the Internet resource.
+  exceptions:
+  - type: System.NotSupportedException
+    description: Any attempt is made to access the method, when the method is not overridden in a descendant class.
+- uid: System.Net.WebResponse.ResponseUri
+  id: ResponseUri
+  parent: System.Net.WebResponse
+  href: System.Net.WebResponse.yml
+  name: ResponseUri
+  fullName: System.Net.WebResponse.ResponseUri
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Requests/src/System/Net/WebResponse.cs
+    startLine: 71
+  assemblies:
+  - System.Net.Requests
+  namespace: System.Net
+  summary: When overridden in a derived class, gets the URI of the Internet resource that actually responded to the request.
+  syntax:
+    content: public abstract Uri ResponseUri { get; }
+    content.vb: Public MustOverride ReadOnly Property ResponseUri As Uri
+    parameters: []
+    return:
+      type: Uri
+      description: An instance of the @'System.Uri' class that contains the URI of the Internet resource that actually responded to the request.
+  exceptions:
+  - type: System.NotSupportedException
+    description: Any attempt is made to get or set the property, when the property is not overridden in a descendant class.
+- uid: System.Net.WebResponse.Headers
+  id: Headers
+  parent: System.Net.WebResponse
+  href: System.Net.WebResponse.yml
+  name: Headers
+  fullName: System.Net.WebResponse.Headers
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Requests/src/System/Net/WebResponse.cs
+    startLine: 81
+  assemblies:
+  - System.Net.Requests
+  namespace: System.Net
+  summary: When overridden in a derived class, gets a collection of header name-value pairs associated with this request.
+  syntax:
+    content: public virtual WebHeaderCollection Headers { get; }
+    content.vb: Public Overridable ReadOnly Property Headers As WebHeaderCollection
+    parameters: []
+    return:
+      type: WebHeaderCollection
+      description: An instance of the @'System.Net.WebHeaderCollection' class that contains header values associated with this response.
+  exceptions:
+  - type: System.NotSupportedException
+    description: Any attempt is made to get or set the property, when the property is not overridden in a descendant class.
+- uid: System.Net.WebResponse.SupportsHeaders
+  id: SupportsHeaders
+  parent: System.Net.WebResponse
+  href: System.Net.WebResponse.yml
+  name: SupportsHeaders
+  fullName: System.Net.WebResponse.SupportsHeaders
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Requests/src/System/Net/WebResponse.cs
+    startLine: 95
+  assemblies:
+  - System.Net.Requests
+  namespace: System.Net
+  summary: Gets a value that indicates if headers are supported.
+  syntax:
+    content: public virtual bool SupportsHeaders { get; }
+    content.vb: Public Overridable ReadOnly Property SupportsHeaders As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: Returns @'System.Boolean'.true if headers are supported; otherwise, false.
+references:
+- uid: System.Net
+  isExternal: false
+  name: System.Net
+  fullName: System.Net
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  fullName: System.Int64
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  name: Stream
+  fullName: System.IO.Stream
+- uid: System.IO
+  isExternal: false
+  name: System.IO
+  fullName: System.IO
+- uid: Uri
+  isExternal: true
+  name: Uri
+  fullName: Uri
+- uid: WebHeaderCollection
+  isExternal: true
+  name: WebHeaderCollection
+  fullName: WebHeaderCollection

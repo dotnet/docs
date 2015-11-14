@@ -1,0 +1,830 @@
+items:
+- uid: System.Xml.Serialization.XmlArrayItemAttributes
+  id: XmlArrayItemAttributes
+  parent: System.Xml.Serialization
+  children:
+  - System.Xml.Serialization.XmlArrayItemAttributes.Add(System.Xml.Serialization.XmlArrayItemAttribute)
+  - System.Xml.Serialization.XmlArrayItemAttributes.Clear
+  - System.Xml.Serialization.XmlArrayItemAttributes.Contains(System.Xml.Serialization.XmlArrayItemAttribute)
+  - System.Xml.Serialization.XmlArrayItemAttributes.CopyTo(System.Xml.Serialization.XmlArrayItemAttribute[],System.Int32)
+  - System.Xml.Serialization.XmlArrayItemAttributes.Count
+  - System.Xml.Serialization.XmlArrayItemAttributes.GetEnumerator
+  - System.Xml.Serialization.XmlArrayItemAttributes.IndexOf(System.Xml.Serialization.XmlArrayItemAttribute)
+  - System.Xml.Serialization.XmlArrayItemAttributes.Insert(System.Int32,System.Xml.Serialization.XmlArrayItemAttribute)
+  - System.Xml.Serialization.XmlArrayItemAttributes.Item(System.Int32)
+  - System.Xml.Serialization.XmlArrayItemAttributes.Remove(System.Xml.Serialization.XmlArrayItemAttribute)
+  - System.Xml.Serialization.XmlArrayItemAttributes.RemoveAt(System.Int32)
+  - System.Xml.Serialization.XmlArrayItemAttributes.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  - System.Xml.Serialization.XmlArrayItemAttributes.System#Collections#ICollection#IsSynchronized
+  - System.Xml.Serialization.XmlArrayItemAttributes.System#Collections#ICollection#SyncRoot
+  - System.Xml.Serialization.XmlArrayItemAttributes.System#Collections#IList#Add(System.Object)
+  - System.Xml.Serialization.XmlArrayItemAttributes.System#Collections#IList#Contains(System.Object)
+  - System.Xml.Serialization.XmlArrayItemAttributes.System#Collections#IList#IndexOf(System.Object)
+  - System.Xml.Serialization.XmlArrayItemAttributes.System#Collections#IList#Insert(System.Int32,System.Object)
+  - System.Xml.Serialization.XmlArrayItemAttributes.System#Collections#IList#IsFixedSize
+  - System.Xml.Serialization.XmlArrayItemAttributes.System#Collections#IList#IsReadOnly
+  - System.Xml.Serialization.XmlArrayItemAttributes.System#Collections#IList#Item(System.Int32)
+  - System.Xml.Serialization.XmlArrayItemAttributes.System#Collections#IList#Remove(System.Object)
+  href: System.Xml.Serialization.XmlArrayItemAttributes.yml
+  name: XmlArrayItemAttributes
+  fullName: System.Xml.Serialization.XmlArrayItemAttributes
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlArrayItemAttributes.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlArrayItemAttributes.cs
+    startLine: 18
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Represents a collection of @'System.Xml.Serialization.XmlArrayItemAttribute' objects.
+  syntax:
+    content: 'public class XmlArrayItemAttributes : IList, ICollection, IEnumerable'
+    content.vb: Public Class XmlArrayItemAttributes Implements IList, ICollection, IEnumerable
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.IList
+  - System.Collections.ICollection
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Xml.Serialization.XmlArrayItemAttributes.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: System.Xml.Serialization.XmlArrayItemAttributes
+  href: System.Xml.Serialization.XmlArrayItemAttributes.yml
+  name: Item[Int32]
+  name.vb: Item(Int32)
+  fullName: System.Xml.Serialization.XmlArrayItemAttributes.Item[System.Int32]
+  fullName.vb: System.Xml.Serialization.XmlArrayItemAttributes.Item(System.Int32)
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlArrayItemAttributes.cs
+    startLine: 26
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Gets or sets the item at the specified index.
+  syntax:
+    content: public XmlArrayItemAttribute this[int index] { get; set; }
+    content.vb: Public Property Item(index As Integer) As XmlArrayItemAttribute
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the collection member to get or set.
+    return:
+      type: System.Xml.Serialization.XmlArrayItemAttribute
+      description: The @'System.Xml.Serialization.XmlArrayItemAttribute' at the specified index.
+- uid: System.Xml.Serialization.XmlArrayItemAttributes.Add(System.Xml.Serialization.XmlArrayItemAttribute)
+  id: Add(System.Xml.Serialization.XmlArrayItemAttribute)
+  parent: System.Xml.Serialization.XmlArrayItemAttributes
+  href: System.Xml.Serialization.XmlArrayItemAttributes.yml
+  name: Add(XmlArrayItemAttribute)
+  fullName: System.Xml.Serialization.XmlArrayItemAttributes.Add(System.Xml.Serialization.XmlArrayItemAttribute)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlArrayItemAttributes.cs
+    startLine: 36
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Adds an @'System.Xml.Serialization.XmlArrayItemAttribute' to the collection.
+  syntax:
+    content: public int Add(XmlArrayItemAttribute attribute)
+    content.vb: Public Function Add(attribute As XmlArrayItemAttribute) As Integer
+    parameters:
+    - id: attribute
+      type: System.Xml.Serialization.XmlArrayItemAttribute
+      description: The @'System.Xml.Serialization.XmlArrayItemAttribute' to add to the collection.
+    return:
+      type: System.Int32
+      description: The index of the added item.
+- uid: System.Xml.Serialization.XmlArrayItemAttributes.Insert(System.Int32,System.Xml.Serialization.XmlArrayItemAttribute)
+  id: Insert(System.Int32,System.Xml.Serialization.XmlArrayItemAttribute)
+  parent: System.Xml.Serialization.XmlArrayItemAttributes
+  href: System.Xml.Serialization.XmlArrayItemAttributes.yml
+  name: Insert(Int32, XmlArrayItemAttribute)
+  fullName: System.Xml.Serialization.XmlArrayItemAttributes.Insert(System.Int32, System.Xml.Serialization.XmlArrayItemAttribute)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlArrayItemAttributes.cs
+    startLine: 45
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Inserts an @'System.Xml.Serialization.XmlArrayItemAttribute' into the collection at the specified index.
+  syntax:
+    content: public void Insert(int index, XmlArrayItemAttribute attribute)
+    content.vb: Public Sub Insert(index As Integer, attribute As XmlArrayItemAttribute)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The index at which the attribute is inserted.
+    - id: attribute
+      type: System.Xml.Serialization.XmlArrayItemAttribute
+      description: The @'System.Xml.Serialization.XmlArrayItemAttribute'  to insert.
+- uid: System.Xml.Serialization.XmlArrayItemAttributes.IndexOf(System.Xml.Serialization.XmlArrayItemAttribute)
+  id: IndexOf(System.Xml.Serialization.XmlArrayItemAttribute)
+  parent: System.Xml.Serialization.XmlArrayItemAttributes
+  href: System.Xml.Serialization.XmlArrayItemAttributes.yml
+  name: IndexOf(XmlArrayItemAttribute)
+  fullName: System.Xml.Serialization.XmlArrayItemAttributes.IndexOf(System.Xml.Serialization.XmlArrayItemAttribute)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlArrayItemAttributes.cs
+    startLine: 54
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Returns the zero-based index of the first occurrence of the specified @'System.Xml.Serialization.XmlArrayItemAttribute' in the collection or -1 if the attribute is not found in the collection.
+  syntax:
+    content: public int IndexOf(XmlArrayItemAttribute attribute)
+    content.vb: Public Function IndexOf(attribute As XmlArrayItemAttribute) As Integer
+    parameters:
+    - id: attribute
+      type: System.Xml.Serialization.XmlArrayItemAttribute
+      description: The @'System.Xml.Serialization.XmlArrayItemAttribute' to locate in the collection.
+    return:
+      type: System.Int32
+      description: The first index of the @'System.Xml.Serialization.XmlArrayItemAttribute' in the collection or -1 if the attribute is not found in the collection.
+- uid: System.Xml.Serialization.XmlArrayItemAttributes.Contains(System.Xml.Serialization.XmlArrayItemAttribute)
+  id: Contains(System.Xml.Serialization.XmlArrayItemAttribute)
+  parent: System.Xml.Serialization.XmlArrayItemAttributes
+  href: System.Xml.Serialization.XmlArrayItemAttributes.yml
+  name: Contains(XmlArrayItemAttribute)
+  fullName: System.Xml.Serialization.XmlArrayItemAttributes.Contains(System.Xml.Serialization.XmlArrayItemAttribute)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlArrayItemAttributes.cs
+    startLine: 63
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Determines whether the collection contains the specified @'System.Xml.Serialization.XmlArrayItemAttribute'.
+  syntax:
+    content: public bool Contains(XmlArrayItemAttribute attribute)
+    content.vb: Public Function Contains(attribute As XmlArrayItemAttribute) As Boolean
+    parameters:
+    - id: attribute
+      type: System.Xml.Serialization.XmlArrayItemAttribute
+      description: The @'System.Xml.Serialization.XmlArrayItemAttribute' to check for.
+    return:
+      type: System.Boolean
+      description: true if the collection contains the specified @'System.Xml.Serialization.XmlArrayItemAttribute'; otherwise, false.
+- uid: System.Xml.Serialization.XmlArrayItemAttributes.Remove(System.Xml.Serialization.XmlArrayItemAttribute)
+  id: Remove(System.Xml.Serialization.XmlArrayItemAttribute)
+  parent: System.Xml.Serialization.XmlArrayItemAttributes
+  href: System.Xml.Serialization.XmlArrayItemAttributes.yml
+  name: Remove(XmlArrayItemAttribute)
+  fullName: System.Xml.Serialization.XmlArrayItemAttributes.Remove(System.Xml.Serialization.XmlArrayItemAttribute)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlArrayItemAttributes.cs
+    startLine: 72
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Removes an @'System.Xml.Serialization.XmlArrayItemAttribute' from the collection, if it is present.
+  syntax:
+    content: public void Remove(XmlArrayItemAttribute attribute)
+    content.vb: Public Sub Remove(attribute As XmlArrayItemAttribute)
+    parameters:
+    - id: attribute
+      type: System.Xml.Serialization.XmlArrayItemAttribute
+      description: The @'System.Xml.Serialization.XmlArrayItemAttribute' to remove.
+- uid: System.Xml.Serialization.XmlArrayItemAttributes.CopyTo(System.Xml.Serialization.XmlArrayItemAttribute[],System.Int32)
+  id: CopyTo(System.Xml.Serialization.XmlArrayItemAttribute[],System.Int32)
+  parent: System.Xml.Serialization.XmlArrayItemAttributes
+  href: System.Xml.Serialization.XmlArrayItemAttributes.yml
+  name: CopyTo(XmlArrayItemAttribute[], Int32)
+  name.vb: CopyTo(XmlArrayItemAttribute(), Int32)
+  fullName: System.Xml.Serialization.XmlArrayItemAttributes.CopyTo(System.Xml.Serialization.XmlArrayItemAttribute[], System.Int32)
+  fullName.vb: System.Xml.Serialization.XmlArrayItemAttributes.CopyTo(System.Xml.Serialization.XmlArrayItemAttribute(), System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlArrayItemAttributes.cs
+    startLine: 81
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  summary: Copies an @'System.Xml.Serialization.XmlArrayItemAttribute' array to the collection, starting at a specified target index.
+  syntax:
+    content: public void CopyTo(XmlArrayItemAttribute[] array, int index)
+    content.vb: Public Sub CopyTo(array As XmlArrayItemAttribute(), index As Integer)
+    parameters:
+    - id: array
+      type: System.Xml.Serialization.XmlArrayItemAttribute[]
+      description: The array of @'System.Xml.Serialization.XmlArrayItemAttribute' objects to copy to the collection.
+    - id: index
+      type: System.Int32
+      description: The index at which the copied attributes begin.
+- uid: System.Xml.Serialization.XmlArrayItemAttributes.Count
+  id: Count
+  parent: System.Xml.Serialization.XmlArrayItemAttributes
+  href: System.Xml.Serialization.XmlArrayItemAttributes.yml
+  name: Count
+  fullName: System.Xml.Serialization.XmlArrayItemAttributes.Count
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlArrayItemAttributes.cs
+    startLine: 100
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: public int Count { get; }
+    content.vb: Public ReadOnly Property Count As Integer
+    parameters: []
+    return:
+      type: System.Int32
+- uid: System.Xml.Serialization.XmlArrayItemAttributes.Clear
+  id: Clear
+  parent: System.Xml.Serialization.XmlArrayItemAttributes
+  href: System.Xml.Serialization.XmlArrayItemAttributes.yml
+  name: Clear()
+  fullName: System.Xml.Serialization.XmlArrayItemAttributes.Clear()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlArrayItemAttributes.cs
+    startLine: 108
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear
+- uid: System.Xml.Serialization.XmlArrayItemAttributes.RemoveAt(System.Int32)
+  id: RemoveAt(System.Int32)
+  parent: System.Xml.Serialization.XmlArrayItemAttributes
+  href: System.Xml.Serialization.XmlArrayItemAttributes.yml
+  name: RemoveAt(Int32)
+  fullName: System.Xml.Serialization.XmlArrayItemAttributes.RemoveAt(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlArrayItemAttributes.cs
+    startLine: 113
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: public void RemoveAt(int index)
+    content.vb: Public Sub RemoveAt(index As Integer)
+    parameters:
+    - id: index
+      type: System.Int32
+- uid: System.Xml.Serialization.XmlArrayItemAttributes.System#Collections#IList#IsReadOnly
+  id: System#Collections#IList#IsReadOnly
+  parent: System.Xml.Serialization.XmlArrayItemAttributes
+  href: System.Xml.Serialization.XmlArrayItemAttributes.yml
+  name: IList.IsReadOnly
+  name.vb: System.Collections.IList.IsReadOnly
+  fullName: System.Xml.Serialization.XmlArrayItemAttributes.System.Collections.IList.IsReadOnly
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlArrayItemAttributes.cs
+    startLine: 118
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: bool IList.IsReadOnly { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.IList.IsReadOnly As Boolean Implements IList.IsReadOnly
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Xml.Serialization.XmlArrayItemAttributes.System#Collections#IList#IsFixedSize
+  id: System#Collections#IList#IsFixedSize
+  parent: System.Xml.Serialization.XmlArrayItemAttributes
+  href: System.Xml.Serialization.XmlArrayItemAttributes.yml
+  name: IList.IsFixedSize
+  name.vb: System.Collections.IList.IsFixedSize
+  fullName: System.Xml.Serialization.XmlArrayItemAttributes.System.Collections.IList.IsFixedSize
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlArrayItemAttributes.cs
+    startLine: 123
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: bool IList.IsFixedSize { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.IList.IsFixedSize As Boolean Implements IList.IsFixedSize
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Xml.Serialization.XmlArrayItemAttributes.System#Collections#ICollection#IsSynchronized
+  id: System#Collections#ICollection#IsSynchronized
+  parent: System.Xml.Serialization.XmlArrayItemAttributes
+  href: System.Xml.Serialization.XmlArrayItemAttributes.yml
+  name: ICollection.IsSynchronized
+  name.vb: System.Collections.ICollection.IsSynchronized
+  fullName: System.Xml.Serialization.XmlArrayItemAttributes.System.Collections.ICollection.IsSynchronized
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlArrayItemAttributes.cs
+    startLine: 128
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: bool ICollection.IsSynchronized { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.ICollection.IsSynchronized As Boolean Implements ICollection.IsSynchronized
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Xml.Serialization.XmlArrayItemAttributes.System#Collections#ICollection#SyncRoot
+  id: System#Collections#ICollection#SyncRoot
+  parent: System.Xml.Serialization.XmlArrayItemAttributes
+  href: System.Xml.Serialization.XmlArrayItemAttributes.yml
+  name: ICollection.SyncRoot
+  name.vb: System.Collections.ICollection.SyncRoot
+  fullName: System.Xml.Serialization.XmlArrayItemAttributes.System.Collections.ICollection.SyncRoot
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlArrayItemAttributes.cs
+    startLine: 133
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: object ICollection.SyncRoot { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.ICollection.SyncRoot As Object Implements ICollection.SyncRoot
+    parameters: []
+    return:
+      type: System.Object
+- uid: System.Xml.Serialization.XmlArrayItemAttributes.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  id: System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  parent: System.Xml.Serialization.XmlArrayItemAttributes
+  href: System.Xml.Serialization.XmlArrayItemAttributes.yml
+  name: ICollection.CopyTo(Array, Int32)
+  name.vb: System.Collections.ICollection.CopyTo(Array, Int32)
+  fullName: System.Xml.Serialization.XmlArrayItemAttributes.System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlArrayItemAttributes.cs
+    startLine: 138
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: void ICollection.CopyTo(Array array, int index)
+    content.vb: Sub System.Collections.ICollection.CopyTo(array As Array, index As Integer) Implements ICollection.CopyTo
+    parameters:
+    - id: array
+      type: System.Array
+    - id: index
+      type: System.Int32
+- uid: System.Xml.Serialization.XmlArrayItemAttributes.System#Collections#IList#Item(System.Int32)
+  id: System#Collections#IList#Item(System.Int32)
+  parent: System.Xml.Serialization.XmlArrayItemAttributes
+  href: System.Xml.Serialization.XmlArrayItemAttributes.yml
+  name: IList.Item[Int32]
+  name.vb: System.Collections.IList.Item(Int32)
+  fullName: System.Xml.Serialization.XmlArrayItemAttributes.System.Collections.IList.Item[System.Int32]
+  fullName.vb: System.Xml.Serialization.XmlArrayItemAttributes.System.Collections.IList.Item(System.Int32)
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlArrayItemAttributes.cs
+    startLine: 143
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: object IList.this[int index] { get; set; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.IList.Item(index As Integer) As Object Implements IList.this
+    parameters:
+    - id: index
+      type: System.Int32
+    return:
+      type: System.Object
+- uid: System.Xml.Serialization.XmlArrayItemAttributes.System#Collections#IList#Contains(System.Object)
+  id: System#Collections#IList#Contains(System.Object)
+  parent: System.Xml.Serialization.XmlArrayItemAttributes
+  href: System.Xml.Serialization.XmlArrayItemAttributes.yml
+  name: IList.Contains(Object)
+  name.vb: System.Collections.IList.Contains(Object)
+  fullName: System.Xml.Serialization.XmlArrayItemAttributes.System.Collections.IList.Contains(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlArrayItemAttributes.cs
+    startLine: 155
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: bool IList.Contains(object value)
+    content.vb: Function System.Collections.IList.Contains(value As Object) As Boolean Implements IList.Contains
+    parameters:
+    - id: value
+      type: System.Object
+    return:
+      type: System.Boolean
+- uid: System.Xml.Serialization.XmlArrayItemAttributes.System#Collections#IList#Add(System.Object)
+  id: System#Collections#IList#Add(System.Object)
+  parent: System.Xml.Serialization.XmlArrayItemAttributes
+  href: System.Xml.Serialization.XmlArrayItemAttributes.yml
+  name: IList.Add(Object)
+  name.vb: System.Collections.IList.Add(Object)
+  fullName: System.Xml.Serialization.XmlArrayItemAttributes.System.Collections.IList.Add(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlArrayItemAttributes.cs
+    startLine: 160
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: int IList.Add(object value)
+    content.vb: Function System.Collections.IList.Add(value As Object) As Integer Implements IList.Add
+    parameters:
+    - id: value
+      type: System.Object
+    return:
+      type: System.Int32
+- uid: System.Xml.Serialization.XmlArrayItemAttributes.System#Collections#IList#Remove(System.Object)
+  id: System#Collections#IList#Remove(System.Object)
+  parent: System.Xml.Serialization.XmlArrayItemAttributes
+  href: System.Xml.Serialization.XmlArrayItemAttributes.yml
+  name: IList.Remove(Object)
+  name.vb: System.Collections.IList.Remove(Object)
+  fullName: System.Xml.Serialization.XmlArrayItemAttributes.System.Collections.IList.Remove(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlArrayItemAttributes.cs
+    startLine: 165
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: void IList.Remove(object value)
+    content.vb: Sub System.Collections.IList.Remove(value As Object) Implements IList.Remove
+    parameters:
+    - id: value
+      type: System.Object
+- uid: System.Xml.Serialization.XmlArrayItemAttributes.System#Collections#IList#IndexOf(System.Object)
+  id: System#Collections#IList#IndexOf(System.Object)
+  parent: System.Xml.Serialization.XmlArrayItemAttributes
+  href: System.Xml.Serialization.XmlArrayItemAttributes.yml
+  name: IList.IndexOf(Object)
+  name.vb: System.Collections.IList.IndexOf(Object)
+  fullName: System.Xml.Serialization.XmlArrayItemAttributes.System.Collections.IList.IndexOf(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlArrayItemAttributes.cs
+    startLine: 171
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: int IList.IndexOf(object value)
+    content.vb: Function System.Collections.IList.IndexOf(value As Object) As Integer Implements IList.IndexOf
+    parameters:
+    - id: value
+      type: System.Object
+    return:
+      type: System.Int32
+- uid: System.Xml.Serialization.XmlArrayItemAttributes.System#Collections#IList#Insert(System.Int32,System.Object)
+  id: System#Collections#IList#Insert(System.Int32,System.Object)
+  parent: System.Xml.Serialization.XmlArrayItemAttributes
+  href: System.Xml.Serialization.XmlArrayItemAttributes.yml
+  name: IList.Insert(Int32, Object)
+  name.vb: System.Collections.IList.Insert(Int32, Object)
+  fullName: System.Xml.Serialization.XmlArrayItemAttributes.System.Collections.IList.Insert(System.Int32, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlArrayItemAttributes.cs
+    startLine: 176
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: void IList.Insert(int index, object value)
+    content.vb: Sub System.Collections.IList.Insert(index As Integer, value As Object) Implements IList.Insert
+    parameters:
+    - id: index
+      type: System.Int32
+    - id: value
+      type: System.Object
+- uid: System.Xml.Serialization.XmlArrayItemAttributes.GetEnumerator
+  id: GetEnumerator
+  parent: System.Xml.Serialization.XmlArrayItemAttributes
+  href: System.Xml.Serialization.XmlArrayItemAttributes.yml
+  name: GetEnumerator()
+  fullName: System.Xml.Serialization.XmlArrayItemAttributes.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Xml.XmlSerializer/src/System/Xml/Serialization/XmlArrayItemAttributes.cs
+    startLine: 181
+  assemblies:
+  - System.Xml.XmlSerializer
+  namespace: System.Xml.Serialization
+  syntax:
+    content: public IEnumerator GetEnumerator()
+    content.vb: Public Function GetEnumerator As IEnumerator
+    return:
+      type: System.Collections.IEnumerator
+references:
+- uid: System.Xml.Serialization
+  isExternal: false
+  name: System.Xml.Serialization
+  fullName: System.Xml.Serialization
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Xml.Serialization.XmlArrayItemAttribute
+  isExternal: false
+  href: System.Xml.Serialization.XmlArrayItemAttribute.yml
+  name: XmlArrayItemAttribute
+  fullName: System.Xml.Serialization.XmlArrayItemAttribute
+  type: Class
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Xml.Serialization.XmlArrayItemAttribute[]
+  isExternal: false
+  href: System.Xml.Serialization.XmlArrayItemAttribute.yml
+  name: XmlArrayItemAttribute[]
+  name.vb: XmlArrayItemAttribute()
+  fullName: System.Xml.Serialization.XmlArrayItemAttribute[]
+  fullName.vb: System.Xml.Serialization.XmlArrayItemAttribute()
+  spec.csharp:
+  - uid: System.Xml.Serialization.XmlArrayItemAttribute
+    name: XmlArrayItemAttribute
+    fullName: System.Xml.Serialization.XmlArrayItemAttribute
+    href: System.Xml.Serialization.XmlArrayItemAttribute.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Xml.Serialization.XmlArrayItemAttribute
+    name: XmlArrayItemAttribute
+    fullName: System.Xml.Serialization.XmlArrayItemAttribute
+    href: System.Xml.Serialization.XmlArrayItemAttribute.yml
+  - name: ()
+    fullName: ()
+- uid: System.Array
+  parent: System
+  isExternal: true
+  name: Array
+  fullName: System.Array
+- uid: System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  isExternal: false
+  name: System.Collections
+  fullName: System.Collections

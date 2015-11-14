@@ -1,0 +1,952 @@
+items:
+- uid: System.Threading.Tasks.TaskCompletionSource`1
+  id: TaskCompletionSource`1
+  parent: System.Threading.Tasks
+  children:
+  - System.Threading.Tasks.TaskCompletionSource`1.#ctor
+  - System.Threading.Tasks.TaskCompletionSource`1.#ctor(System.Object)
+  - System.Threading.Tasks.TaskCompletionSource`1.#ctor(System.Object,System.Threading.Tasks.TaskCreationOptions)
+  - System.Threading.Tasks.TaskCompletionSource`1.#ctor(System.Threading.Tasks.TaskCreationOptions)
+  - System.Threading.Tasks.TaskCompletionSource`1.SetCanceled
+  - System.Threading.Tasks.TaskCompletionSource`1.SetException(System.Collections.Generic.IEnumerable{System.Exception})
+  - System.Threading.Tasks.TaskCompletionSource`1.SetException(System.Exception)
+  - System.Threading.Tasks.TaskCompletionSource`1.SetResult(`0)
+  - System.Threading.Tasks.TaskCompletionSource`1.Task
+  - System.Threading.Tasks.TaskCompletionSource`1.TrySetCanceled
+  - System.Threading.Tasks.TaskCompletionSource`1.TrySetCanceled(System.Threading.CancellationToken)
+  - System.Threading.Tasks.TaskCompletionSource`1.TrySetException(System.Collections.Generic.IEnumerable{System.Exception})
+  - System.Threading.Tasks.TaskCompletionSource`1.TrySetException(System.Exception)
+  - System.Threading.Tasks.TaskCompletionSource`1.TrySetResult(`0)
+  href: System.Threading.Tasks.TaskCompletionSource`1.yml
+  name: TaskCompletionSource<TResult>
+  name.vb: TaskCompletionSource(Of TResult)
+  fullName: System.Threading.Tasks.TaskCompletionSource<TResult>
+  fullName.vb: System.Threading.Tasks.TaskCompletionSource(Of TResult)
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs
+    startLine: 48
+  assemblies:
+  - mscorlib
+  namespace: System.Threading.Tasks
+  summary: Represents the producer side of a @'System.Threading.Tasks.Task`1' unbound to a delegate, providing access to the consumer side through the @'System.Threading.Tasks.TaskCompletionSource`1.Task' property.
+  remarks: >-
+    <para>
+
+    It is often the case that a @'System.Threading.Tasks.Task{TResult}' is desired to
+
+    represent another asynchronous operation.
+
+    @'System.Threading.Tasks.TaskCompletionSource`1' is provided for this purpose. It enables
+
+    the creation of a task that can be handed out to consumers, and those consumers can use the members
+
+    of the task as they would any other. However, unlike most tasks, the state of a task created by a
+
+    TaskCompletionSource is controlled explicitly by the methods on TaskCompletionSource. This enables the
+
+    completion of the external asynchronous operation to be propagated to the underlying Task. The
+
+    separation also ensures that consumers are not able to transition the state without access to the
+
+    corresponding TaskCompletionSource.
+
+    </para>
+
+    <para>
+
+    All members of @'System.Threading.Tasks.TaskCompletionSource`1' are thread-safe
+
+    and may be used from multiple threads concurrently.
+
+    </para>
+  syntax:
+    content: public class TaskCompletionSource<TResult>
+    content.vb: Public Class TaskCompletionSource(Of TResult)
+    typeParameters:
+    - id: TResult
+      description: The type of the result value assocatied with this @'System.Threading.Tasks.TaskCompletionSource`1'.
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Threading.Tasks.TaskCompletionSource`1.#ctor
+  id: '#ctor'
+  parent: System.Threading.Tasks.TaskCompletionSource`1
+  href: System.Threading.Tasks.TaskCompletionSource`1.yml
+  name: TaskCompletionSource()
+  fullName: System.Threading.Tasks.TaskCompletionSource<TResult>.TaskCompletionSource()
+  fullName.vb: System.Threading.Tasks.TaskCompletionSource(Of TResult).TaskCompletionSource()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs
+    startLine: 56
+  assemblies:
+  - mscorlib
+  namespace: System.Threading.Tasks
+  summary: Creates a @'System.Threading.Tasks.TaskCompletionSource`1'.
+  syntax:
+    content: public TaskCompletionSource()
+    content.vb: Public Sub New
+- uid: System.Threading.Tasks.TaskCompletionSource`1.#ctor(System.Threading.Tasks.TaskCreationOptions)
+  id: '#ctor(System.Threading.Tasks.TaskCreationOptions)'
+  parent: System.Threading.Tasks.TaskCompletionSource`1
+  href: System.Threading.Tasks.TaskCompletionSource`1.yml
+  name: TaskCompletionSource(TaskCreationOptions)
+  fullName: System.Threading.Tasks.TaskCompletionSource<TResult>.TaskCompletionSource(System.Threading.Tasks.TaskCreationOptions)
+  fullName.vb: System.Threading.Tasks.TaskCompletionSource(Of TResult).TaskCompletionSource(System.Threading.Tasks.TaskCreationOptions)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs
+    startLine: 76
+  assemblies:
+  - mscorlib
+  namespace: System.Threading.Tasks
+  summary: Creates a @'System.Threading.Tasks.TaskCompletionSource`1' with the specified options.
+  remarks: >-
+    The @'System.Threading.Tasks.Task{TResult}' created
+
+    by this instance and accessible through its @'System.Threading.Tasks.TaskCompletionSource`1.Task' property
+
+    will be instantiated using the specified <paramref name="creationOptions" />.
+  syntax:
+    content: public TaskCompletionSource(TaskCreationOptions creationOptions)
+    content.vb: Public Sub New(creationOptions As TaskCreationOptions)
+    parameters:
+    - id: creationOptions
+      type: System.Threading.Tasks.TaskCreationOptions
+      description: The options to use when creating the underlying @'System.Threading.Tasks.Task`1'.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: The *creationOptions* represent options invalid for use with a @'System.Threading.Tasks.TaskCompletionSource`1'.
+- uid: System.Threading.Tasks.TaskCompletionSource`1.#ctor(System.Object)
+  id: '#ctor(System.Object)'
+  parent: System.Threading.Tasks.TaskCompletionSource`1
+  href: System.Threading.Tasks.TaskCompletionSource`1.yml
+  name: TaskCompletionSource(Object)
+  fullName: System.Threading.Tasks.TaskCompletionSource<TResult>.TaskCompletionSource(System.Object)
+  fullName.vb: System.Threading.Tasks.TaskCompletionSource(Of TResult).TaskCompletionSource(System.Object)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs
+    startLine: 87
+  assemblies:
+  - mscorlib
+  namespace: System.Threading.Tasks
+  summary: Creates a @'System.Threading.Tasks.TaskCompletionSource`1' with the specified state.
+  syntax:
+    content: public TaskCompletionSource(object state)
+    content.vb: Public Sub New(state As Object)
+    parameters:
+    - id: state
+      type: System.Object
+      description: The state to use as the underlying @'System.Threading.Tasks.Task`1''s AsyncState.
+- uid: System.Threading.Tasks.TaskCompletionSource`1.#ctor(System.Object,System.Threading.Tasks.TaskCreationOptions)
+  id: '#ctor(System.Object,System.Threading.Tasks.TaskCreationOptions)'
+  parent: System.Threading.Tasks.TaskCompletionSource`1
+  href: System.Threading.Tasks.TaskCompletionSource`1.yml
+  name: TaskCompletionSource(Object, TaskCreationOptions)
+  fullName: System.Threading.Tasks.TaskCompletionSource<TResult>.TaskCompletionSource(System.Object, System.Threading.Tasks.TaskCreationOptions)
+  fullName.vb: System.Threading.Tasks.TaskCompletionSource(Of TResult).TaskCompletionSource(System.Object, System.Threading.Tasks.TaskCreationOptions)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs
+    startLine: 104
+  assemblies:
+  - mscorlib
+  namespace: System.Threading.Tasks
+  summary: Creates a @'System.Threading.Tasks.TaskCompletionSource`1' with the specified state and options.
+  syntax:
+    content: public TaskCompletionSource(object state, TaskCreationOptions creationOptions)
+    content.vb: Public Sub New(state As Object, creationOptions As TaskCreationOptions)
+    parameters:
+    - id: state
+      type: System.Object
+      description: The state to use as the underlying @'System.Threading.Tasks.Task`1''s AsyncState.
+    - id: creationOptions
+      type: System.Threading.Tasks.TaskCreationOptions
+      description: The options to use when creating the underlying @'System.Threading.Tasks.Task`1'.
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    description: The *creationOptions* represent options invalid for use with a @'System.Threading.Tasks.TaskCompletionSource`1'.
+- uid: System.Threading.Tasks.TaskCompletionSource`1.Task
+  id: Task
+  parent: System.Threading.Tasks.TaskCompletionSource`1
+  href: System.Threading.Tasks.TaskCompletionSource`1.yml
+  name: Task
+  fullName: System.Threading.Tasks.TaskCompletionSource<TResult>.Task
+  fullName.vb: System.Threading.Tasks.TaskCompletionSource(Of TResult).Task
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs
+    startLine: 122
+  assemblies:
+  - mscorlib
+  namespace: System.Threading.Tasks
+  summary: Gets the @'System.Threading.Tasks.Task`1' created by this @'System.Threading.Tasks.TaskCompletionSource`1'.
+  remarks: >-
+    This property enables a consumer access to the @'System.Threading.Tasks.Task{TResult}' that is controlled by this instance.
+
+    The @'System.Threading.Tasks.TaskCompletionSource`1.SetResult(`0)', @'System.Threading.Tasks.TaskCompletionSource`1.SetException(System.Exception)',
+
+    @'System.Threading.Tasks.TaskCompletionSource`1.SetException(System.Collections.Generic.IEnumerable{System.Exception})', and @'System.Threading.Tasks.TaskCompletionSource`1.SetCanceled'
+
+    methods (and their "Try" variants) on this instance all result in the relevant state
+
+    transitions on this underlying Task.
+  syntax:
+    content: public Task<TResult> Task { get; }
+    content.vb: Public ReadOnly Property Task As Task(Of TResult)
+    parameters: []
+    return:
+      type: System.Threading.Tasks.Task{{TResult}}
+      description: Returns the @'System.Threading.Tasks.Task`1' created by this @'System.Threading.Tasks.TaskCompletionSource`1'.
+- uid: System.Threading.Tasks.TaskCompletionSource`1.TrySetException(System.Exception)
+  id: TrySetException(System.Exception)
+  parent: System.Threading.Tasks.TaskCompletionSource`1
+  href: System.Threading.Tasks.TaskCompletionSource`1.yml
+  name: TrySetException(Exception)
+  fullName: System.Threading.Tasks.TaskCompletionSource<TResult>.TrySetException(System.Exception)
+  fullName.vb: System.Threading.Tasks.TaskCompletionSource(Of TResult).TrySetException(System.Exception)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs
+    startLine: 155
+  assemblies:
+  - mscorlib
+  namespace: System.Threading.Tasks
+  summary: Attempts to transition the underlying @'System.Threading.Tasks.Task`1' into the @'System.Threading.Tasks.TaskStatus.Faulted' state.
+  remarks: >-
+    This operation will return false if the
+
+    @'System.Threading.Tasks.Task{TResult}' is already in one
+
+    of the three final states:
+
+    @'System.Threading.Tasks.TaskStatus.RanToCompletion',
+
+    @'System.Threading.Tasks.TaskStatus.Faulted', or
+
+    @'System.Threading.Tasks.TaskStatus.Canceled'.
+  syntax:
+    content: public bool TrySetException(Exception exception)
+    content.vb: Public Function TrySetException(exception As Exception) As Boolean
+    parameters:
+    - id: exception
+      type: System.Exception
+      description: The exception to bind to this @'System.Threading.Tasks.Task`1'.
+    return:
+      type: System.Boolean
+      description: True if the operation was successful; otherwise, false.
+  exceptions:
+  - type: System.ObjectDisposedException
+    description: The @'System.Threading.Tasks.TaskCompletionSource`1.Task' was disposed.
+  - type: System.ArgumentNullException
+    description: The *exception* argument is null.
+- uid: System.Threading.Tasks.TaskCompletionSource`1.TrySetException(System.Collections.Generic.IEnumerable{System.Exception})
+  id: TrySetException(System.Collections.Generic.IEnumerable{System.Exception})
+  parent: System.Threading.Tasks.TaskCompletionSource`1
+  href: System.Threading.Tasks.TaskCompletionSource`1.yml
+  name: TrySetException(IEnumerable<Exception>)
+  name.vb: TrySetException(IEnumerable(Of Exception))
+  fullName: System.Threading.Tasks.TaskCompletionSource<TResult>.TrySetException(System.Collections.Generic.IEnumerable<System.Exception>)
+  fullName.vb: System.Threading.Tasks.TaskCompletionSource(Of TResult).TrySetException(System.Collections.Generic.IEnumerable(Of System.Exception))
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs
+    startLine: 184
+  assemblies:
+  - mscorlib
+  namespace: System.Threading.Tasks
+  summary: Attempts to transition the underlying @'System.Threading.Tasks.Task`1' into the @'System.Threading.Tasks.TaskStatus.Faulted' state.
+  remarks: >-
+    This operation will return false if the
+
+    @'System.Threading.Tasks.Task{TResult}' is already in one
+
+    of the three final states:
+
+    @'System.Threading.Tasks.TaskStatus.RanToCompletion',
+
+    @'System.Threading.Tasks.TaskStatus.Faulted', or
+
+    @'System.Threading.Tasks.TaskStatus.Canceled'.
+  syntax:
+    content: public bool TrySetException(IEnumerable<Exception> exceptions)
+    content.vb: Public Function TrySetException(exceptions As IEnumerable(Of Exception)) As Boolean
+    parameters:
+    - id: exceptions
+      type: System.Collections.Generic.IEnumerable{System.Exception}
+      description: The collection of exceptions to bind to this @'System.Threading.Tasks.Task`1'.
+    return:
+      type: System.Boolean
+      description: True if the operation was successful; otherwise, false.
+  exceptions:
+  - type: System.ObjectDisposedException
+    description: The @'System.Threading.Tasks.TaskCompletionSource`1.Task' was disposed.
+  - type: System.ArgumentNullException
+    description: The *exceptions* argument is null.
+  - type: System.ArgumentException
+    description: There are one or more null elements in *exceptions*.-or-The *exceptions* collection is empty.
+- uid: System.Threading.Tasks.TaskCompletionSource`1.SetException(System.Exception)
+  id: SetException(System.Exception)
+  parent: System.Threading.Tasks.TaskCompletionSource`1
+  href: System.Threading.Tasks.TaskCompletionSource`1.yml
+  name: SetException(Exception)
+  fullName: System.Threading.Tasks.TaskCompletionSource<TResult>.SetException(System.Exception)
+  fullName.vb: System.Threading.Tasks.TaskCompletionSource(Of TResult).SetException(System.Exception)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs
+    startLine: 237
+  assemblies:
+  - mscorlib
+  namespace: System.Threading.Tasks
+  summary: Transitions the underlying @'System.Threading.Tasks.Task`1' into the @'System.Threading.Tasks.TaskStatus.Faulted' state.
+  syntax:
+    content: public void SetException(Exception exception)
+    content.vb: Public Sub SetException(exception As Exception)
+    parameters:
+    - id: exception
+      type: System.Exception
+      description: The exception to bind to this @'System.Threading.Tasks.Task`1'.
+  exceptions:
+  - type: System.ObjectDisposedException
+    description: The @'System.Threading.Tasks.TaskCompletionSource`1.Task' was disposed.
+  - type: System.ArgumentNullException
+    description: The *exception* argument is null.
+  - type: System.InvalidOperationException
+    description: 'The underlying @''System.Threading.Tasks.Task`1'' is already in one of the three final states: @''System.Threading.Tasks.TaskStatus.RanToCompletion'', @''System.Threading.Tasks.TaskStatus.Faulted'', or @''System.Threading.Tasks.TaskStatus.Canceled''.'
+- uid: System.Threading.Tasks.TaskCompletionSource`1.SetException(System.Collections.Generic.IEnumerable{System.Exception})
+  id: SetException(System.Collections.Generic.IEnumerable{System.Exception})
+  parent: System.Threading.Tasks.TaskCompletionSource`1
+  href: System.Threading.Tasks.TaskCompletionSource`1.yml
+  name: SetException(IEnumerable<Exception>)
+  name.vb: SetException(IEnumerable(Of Exception))
+  fullName: System.Threading.Tasks.TaskCompletionSource<TResult>.SetException(System.Collections.Generic.IEnumerable<System.Exception>)
+  fullName.vb: System.Threading.Tasks.TaskCompletionSource(Of TResult).SetException(System.Collections.Generic.IEnumerable(Of System.Exception))
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs
+    startLine: 265
+  assemblies:
+  - mscorlib
+  namespace: System.Threading.Tasks
+  summary: Transitions the underlying @'System.Threading.Tasks.Task`1' into the @'System.Threading.Tasks.TaskStatus.Faulted' state.
+  syntax:
+    content: public void SetException(IEnumerable<Exception> exceptions)
+    content.vb: Public Sub SetException(exceptions As IEnumerable(Of Exception))
+    parameters:
+    - id: exceptions
+      type: System.Collections.Generic.IEnumerable{System.Exception}
+      description: The collection of exceptions to bind to this @'System.Threading.Tasks.Task`1'.
+  exceptions:
+  - type: System.ObjectDisposedException
+    description: The @'System.Threading.Tasks.TaskCompletionSource`1.Task' was disposed.
+  - type: System.ArgumentNullException
+    description: The *exceptions* argument is null.
+  - type: System.ArgumentException
+    description: There are one or more null elements in *exceptions*.
+  - type: System.InvalidOperationException
+    description: 'The underlying @''System.Threading.Tasks.Task`1'' is already in one of the three final states: @''System.Threading.Tasks.TaskStatus.RanToCompletion'', @''System.Threading.Tasks.TaskStatus.Faulted'', or @''System.Threading.Tasks.TaskStatus.Canceled''.'
+- uid: System.Threading.Tasks.TaskCompletionSource`1.TrySetResult(`0)
+  id: TrySetResult(`0)
+  parent: System.Threading.Tasks.TaskCompletionSource`1
+  href: System.Threading.Tasks.TaskCompletionSource`1.yml
+  name: TrySetResult(TResult)
+  fullName: System.Threading.Tasks.TaskCompletionSource<TResult>.TrySetResult(TResult)
+  fullName.vb: System.Threading.Tasks.TaskCompletionSource(Of TResult).TrySetResult(TResult)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs
+    startLine: 291
+  assemblies:
+  - mscorlib
+  namespace: System.Threading.Tasks
+  summary: Attempts to transition the underlying @'System.Threading.Tasks.Task`1' into the @'System.Threading.Tasks.TaskStatus.RanToCompletion' state.
+  remarks: >-
+    This operation will return false if the
+
+    @'System.Threading.Tasks.Task{TResult}' is already in one
+
+    of the three final states:
+
+    @'System.Threading.Tasks.TaskStatus.RanToCompletion',
+
+    @'System.Threading.Tasks.TaskStatus.Faulted', or
+
+    @'System.Threading.Tasks.TaskStatus.Canceled'.
+  syntax:
+    content: public bool TrySetResult(TResult result)
+    content.vb: Public Function TrySetResult(result As TResult) As Boolean
+    parameters:
+    - id: result
+      type: '{TResult}'
+      description: The result value to bind to this @'System.Threading.Tasks.Task`1'.
+    return:
+      type: System.Boolean
+      description: True if the operation was successful; otherwise, false.
+  exceptions:
+  - type: System.ObjectDisposedException
+    description: The  was disposed.
+- uid: System.Threading.Tasks.TaskCompletionSource`1.SetResult(`0)
+  id: SetResult(`0)
+  parent: System.Threading.Tasks.TaskCompletionSource`1
+  href: System.Threading.Tasks.TaskCompletionSource`1.yml
+  name: SetResult(TResult)
+  fullName: System.Threading.Tasks.TaskCompletionSource<TResult>.SetResult(TResult)
+  fullName.vb: System.Threading.Tasks.TaskCompletionSource(Of TResult).SetResult(TResult)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs
+    startLine: 314
+  assemblies:
+  - mscorlib
+  namespace: System.Threading.Tasks
+  summary: Transitions the underlying @'System.Threading.Tasks.Task`1' into the @'System.Threading.Tasks.TaskStatus.RanToCompletion' state.
+  syntax:
+    content: public void SetResult(TResult result)
+    content.vb: Public Sub SetResult(result As TResult)
+    parameters:
+    - id: result
+      type: '{TResult}'
+      description: The result value to bind to this @'System.Threading.Tasks.Task`1'.
+  exceptions:
+  - type: System.ObjectDisposedException
+    description: The @'System.Threading.Tasks.TaskCompletionSource`1.Task' was disposed.
+  - type: System.InvalidOperationException
+    description: 'The underlying @''System.Threading.Tasks.Task`1'' is already in one of the three final states: @''System.Threading.Tasks.TaskStatus.RanToCompletion'', @''System.Threading.Tasks.TaskStatus.Faulted'', or @''System.Threading.Tasks.TaskStatus.Canceled''.'
+- uid: System.Threading.Tasks.TaskCompletionSource`1.TrySetCanceled
+  id: TrySetCanceled
+  parent: System.Threading.Tasks.TaskCompletionSource`1
+  href: System.Threading.Tasks.TaskCompletionSource`1.yml
+  name: TrySetCanceled()
+  fullName: System.Threading.Tasks.TaskCompletionSource<TResult>.TrySetCanceled()
+  fullName.vb: System.Threading.Tasks.TaskCompletionSource(Of TResult).TrySetCanceled()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs
+    startLine: 335
+  assemblies:
+  - mscorlib
+  namespace: System.Threading.Tasks
+  summary: Attempts to transition the underlying @'System.Threading.Tasks.Task`1' into the @'System.Threading.Tasks.TaskStatus.Canceled' state.
+  remarks: >-
+    This operation will return false if the
+
+    @'System.Threading.Tasks.Task{TResult}' is already in one
+
+    of the three final states:
+
+    @'System.Threading.Tasks.TaskStatus.RanToCompletion',
+
+    @'System.Threading.Tasks.TaskStatus.Faulted', or
+
+    @'System.Threading.Tasks.TaskStatus.Canceled'.
+  syntax:
+    content: public bool TrySetCanceled()
+    content.vb: Public Function TrySetCanceled As Boolean
+    return:
+      type: System.Boolean
+      description: True if the operation was successful; false if the operation was unsuccessful or the object has already been disposed.
+  exceptions:
+  - type: System.ObjectDisposedException
+    description: The  was disposed.
+- uid: System.Threading.Tasks.TaskCompletionSource`1.TrySetCanceled(System.Threading.CancellationToken)
+  id: TrySetCanceled(System.Threading.CancellationToken)
+  parent: System.Threading.Tasks.TaskCompletionSource`1
+  href: System.Threading.Tasks.TaskCompletionSource`1.yml
+  name: TrySetCanceled(CancellationToken)
+  fullName: System.Threading.Tasks.TaskCompletionSource<TResult>.TrySetCanceled(System.Threading.CancellationToken)
+  fullName.vb: System.Threading.Tasks.TaskCompletionSource(Of TResult).TrySetCanceled(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs
+    startLine: 341
+  assemblies:
+  - mscorlib
+  namespace: System.Threading.Tasks
+  summary: Attempts to transition the underlying @'System.Threading.Tasks.Task`1' into the @'System.Threading.Tasks.TaskStatus.Canceled' state and enables a cancellation token to be stored in the canceled task.
+  syntax:
+    content: public bool TrySetCanceled(CancellationToken cancellationToken)
+    content.vb: Public Function TrySetCanceled(cancellationToken As CancellationToken) As Boolean
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A cancellation token.
+    return:
+      type: System.Boolean
+      description: true if the operation is successful; otherwise, false.
+- uid: System.Threading.Tasks.TaskCompletionSource`1.SetCanceled
+  id: SetCanceled
+  parent: System.Threading.Tasks.TaskCompletionSource`1
+  href: System.Threading.Tasks.TaskCompletionSource`1.yml
+  name: SetCanceled()
+  fullName: System.Threading.Tasks.TaskCompletionSource<TResult>.SetCanceled()
+  fullName.vb: System.Threading.Tasks.TaskCompletionSource(Of TResult).SetCanceled()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Tasks/TaskCompletionSource.cs
+    startLine: 362
+  assemblies:
+  - mscorlib
+  namespace: System.Threading.Tasks
+  summary: Transitions the underlying @'System.Threading.Tasks.Task`1' into the @'System.Threading.Tasks.TaskStatus.Canceled' state.
+  syntax:
+    content: public void SetCanceled()
+    content.vb: Public Sub SetCanceled
+  exceptions:
+  - type: System.InvalidOperationException
+    description: 'The underlying @''System.Threading.Tasks.Task`1'' is already in one of the three final states: @''System.Threading.Tasks.TaskStatus.RanToCompletion'', @''System.Threading.Tasks.TaskStatus.Faulted'', or @''System.Threading.Tasks.TaskStatus.Canceled'', or if the underlying @''System.Threading.Tasks.Task`1'' has already been disposed.'
+references:
+- uid: System.Threading.Tasks.Task{TResult}
+- uid: System.Threading.Tasks.TaskCompletionSource`1.Task
+- uid: System.Threading.Tasks.TaskCompletionSource`1
+  isExternal: false
+  href: System.Threading.Tasks.TaskCompletionSource`1.yml
+  name: TaskCompletionSource<TResult>
+  name.vb: TaskCompletionSource(Of TResult)
+  fullName: System.Threading.Tasks.TaskCompletionSource<TResult>
+  fullName.vb: System.Threading.Tasks.TaskCompletionSource(Of TResult)
+  type: Class
+  summary: >-
+    Represents the producer side of a @'System.Threading.Tasks.Task{TResult}' unbound to a
+
+    delegate, providing access to the consumer side through the @'System.Threading.Tasks.TaskCompletionSource`1.Task' property.
+  spec.csharp:
+  - uid: System.Threading.Tasks.TaskCompletionSource`1
+    name: TaskCompletionSource
+    fullName: System.Threading.Tasks.TaskCompletionSource
+    href: System.Threading.Tasks.TaskCompletionSource`1.yml
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.TaskCompletionSource`1
+    name: TaskCompletionSource
+    fullName: System.Threading.Tasks.TaskCompletionSource
+    href: System.Threading.Tasks.TaskCompletionSource`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.ArgumentOutOfRangeException
+- uid: System.Threading.Tasks.TaskCreationOptions
+  parent: System.Threading.Tasks
+  isExternal: false
+  href: System.Threading.Tasks.TaskCreationOptions.yml
+  name: TaskCreationOptions
+  fullName: System.Threading.Tasks.TaskCreationOptions
+  type: Enum
+  summary: Specifies flags that control optional behavior for the creation and execution of tasks.
+- uid: System.Threading.Tasks.TaskCompletionSource`1.SetResult(`0)
+- uid: System.Threading.Tasks.TaskCompletionSource`1.SetException(System.Exception)
+- uid: System.Threading.Tasks.TaskCompletionSource`1.SetException(System.Collections.Generic.IEnumerable{System.Exception})
+- uid: System.Threading.Tasks.TaskCompletionSource`1.SetCanceled
+- uid: System.Threading.Tasks.Task{{TResult}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<TResult>
+  name.vb: Task(Of TResult)
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  name.vb: Task(Of TResult)
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.TaskStatus.Faulted
+- uid: System.Threading.Tasks.TaskStatus.RanToCompletion
+- uid: System.Threading.Tasks.TaskStatus.Canceled
+- uid: System.ArgumentNullException
+- uid: System.ObjectDisposedException
+- uid: System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  fullName: System.Exception
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.ArgumentException
+- uid: System.Collections.Generic.IEnumerable{System.Exception}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: System.Collections.Generic.IEnumerable`1.yml
+  name: IEnumerable<Exception>
+  name.vb: IEnumerable(Of Exception)
+  fullName: System.Collections.Generic.IEnumerable<System.Exception>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Exception)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    href: System.Collections.Generic.IEnumerable`1.yml
+  - name: <
+    fullName: <
+  - uid: System.Exception
+    name: Exception
+    fullName: System.Exception
+    href: System.Exception.yml
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    href: System.Collections.Generic.IEnumerable`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Exception
+    name: Exception
+    fullName: System.Exception
+    href: System.Exception.yml
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.InvalidOperationException
+- uid: '{TResult}'
+  isExternal: false
+  name: TResult
+  fullName: TResult
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading

@@ -1,0 +1,374 @@
+items:
+- uid: System.Collections.IDictionary
+  id: IDictionary
+  parent: System.Collections
+  children:
+  - System.Collections.IDictionary.Add(System.Object,System.Object)
+  - System.Collections.IDictionary.Clear
+  - System.Collections.IDictionary.Contains(System.Object)
+  - System.Collections.IDictionary.GetEnumerator
+  - System.Collections.IDictionary.IsFixedSize
+  - System.Collections.IDictionary.IsReadOnly
+  - System.Collections.IDictionary.Item(System.Object)
+  - System.Collections.IDictionary.Keys
+  - System.Collections.IDictionary.Remove(System.Object)
+  - System.Collections.IDictionary.Values
+  href: System.Collections.IDictionary.yml
+  name: IDictionary
+  fullName: System.Collections.IDictionary
+  type: Interface
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Collections/IDictionary.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Collections/IDictionary.cs
+    startLine: 25
+  assemblies:
+  - mscorlib
+  namespace: System.Collections
+  summary: Represents a nongeneric collection of key/value pairs.
+  syntax:
+    content: 'public interface IDictionary : ICollection, IEnumerable'
+    content.vb: Public Interface IDictionary Inherits ICollection
+  inheritedMembers:
+  - System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+  - System.Collections.ICollection.Count
+  - System.Collections.ICollection.SyncRoot
+  - System.Collections.ICollection.IsSynchronized
+- uid: System.Collections.IDictionary.Item(System.Object)
+  id: Item(System.Object)
+  parent: System.Collections.IDictionary
+  href: System.Collections.IDictionary.yml
+  name: Item[Object]
+  name.vb: Item(Object)
+  fullName: System.Collections.IDictionary.Item[System.Object]
+  fullName.vb: System.Collections.IDictionary.Item(System.Object)
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/IDictionary.cs
+    startLine: 31
+  assemblies:
+  - mscorlib
+  namespace: System.Collections
+  summary: Gets or sets the element with the specified key.
+  syntax:
+    content: object this[object key] { get; set; }
+    content.vb: Property Item(key As Object) As Object
+    parameters:
+    - id: key
+      type: System.Object
+      description: The key of the element to get or set.
+    return:
+      type: System.Object
+      description: The element with the specified key, or null if the key does not exist.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*key* is null.'
+  - type: System.NotSupportedException
+    description: The property is set and the @'System.Collections.IDictionary' object is read-only.-or- The property is set, *key* does not exist in the collection, and the @'System.Collections.IDictionary' has a fixed size.
+- uid: System.Collections.IDictionary.Keys
+  id: Keys
+  parent: System.Collections.IDictionary
+  href: System.Collections.IDictionary.yml
+  name: Keys
+  fullName: System.Collections.IDictionary.Keys
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/IDictionary.cs
+    startLine: 37
+  assemblies:
+  - mscorlib
+  namespace: System.Collections
+  summary: Gets an @'System.Collections.ICollection' object containing the keys of the @'System.Collections.IDictionary' object.
+  syntax:
+    content: ICollection Keys { get; }
+    content.vb: ReadOnly Property Keys As ICollection
+    parameters: []
+    return:
+      type: System.Collections.ICollection
+      description: An @'System.Collections.ICollection' object containing the keys of the @'System.Collections.IDictionary' object.
+- uid: System.Collections.IDictionary.Values
+  id: Values
+  parent: System.Collections.IDictionary
+  href: System.Collections.IDictionary.yml
+  name: Values
+  fullName: System.Collections.IDictionary.Values
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/IDictionary.cs
+    startLine: 42
+  assemblies:
+  - mscorlib
+  namespace: System.Collections
+  summary: Gets an @'System.Collections.ICollection' object containing the values in the @'System.Collections.IDictionary' object.
+  syntax:
+    content: ICollection Values { get; }
+    content.vb: ReadOnly Property Values As ICollection
+    parameters: []
+    return:
+      type: System.Collections.ICollection
+      description: An @'System.Collections.ICollection' object containing the values in the @'System.Collections.IDictionary' object.
+- uid: System.Collections.IDictionary.Contains(System.Object)
+  id: Contains(System.Object)
+  parent: System.Collections.IDictionary
+  href: System.Collections.IDictionary.yml
+  name: Contains(Object)
+  fullName: System.Collections.IDictionary.Contains(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/IDictionary.cs
+    startLine: 48
+  assemblies:
+  - mscorlib
+  namespace: System.Collections
+  summary: Determines whether the @'System.Collections.IDictionary' object contains an element with the specified key.
+  syntax:
+    content: bool Contains(object key)
+    content.vb: Function Contains(key As Object) As Boolean
+    parameters:
+    - id: key
+      type: System.Object
+      description: The key to locate in the @'System.Collections.IDictionary' object.
+    return:
+      type: System.Boolean
+      description: true if the @'System.Collections.IDictionary' contains an element with the key; otherwise, false.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*key* is null.'
+- uid: System.Collections.IDictionary.Add(System.Object,System.Object)
+  id: Add(System.Object,System.Object)
+  parent: System.Collections.IDictionary
+  href: System.Collections.IDictionary.yml
+  name: Add(Object, Object)
+  fullName: System.Collections.IDictionary.Add(System.Object, System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/IDictionary.cs
+    startLine: 52
+  assemblies:
+  - mscorlib
+  namespace: System.Collections
+  summary: Adds an element with the provided key and value to the @'System.Collections.IDictionary' object.
+  syntax:
+    content: void Add(object key, object value)
+    content.vb: Sub Add(key As Object, value As Object)
+    parameters:
+    - id: key
+      type: System.Object
+      description: The @'System.Object' to use as the key of the element to add.
+    - id: value
+      type: System.Object
+      description: The @'System.Object' to use as the value of the element to add.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*key* is null.'
+  - type: System.ArgumentException
+    description: An element with the same key already exists in the @'System.Collections.IDictionary' object.
+  - type: System.NotSupportedException
+    description: The @'System.Collections.IDictionary' is read-only.-or- The @'System.Collections.IDictionary' has a fixed size.
+- uid: System.Collections.IDictionary.Clear
+  id: Clear
+  parent: System.Collections.IDictionary
+  href: System.Collections.IDictionary.yml
+  name: Clear()
+  fullName: System.Collections.IDictionary.Clear()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/IDictionary.cs
+    startLine: 55
+  assemblies:
+  - mscorlib
+  namespace: System.Collections
+  summary: Removes all elements from the @'System.Collections.IDictionary' object.
+  syntax:
+    content: void Clear()
+    content.vb: Sub Clear
+  exceptions:
+  - type: System.NotSupportedException
+    description: The @'System.Collections.IDictionary' object is read-only.
+- uid: System.Collections.IDictionary.IsReadOnly
+  id: IsReadOnly
+  parent: System.Collections.IDictionary
+  href: System.Collections.IDictionary.yml
+  name: IsReadOnly
+  fullName: System.Collections.IDictionary.IsReadOnly
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/IDictionary.cs
+    startLine: 57
+  assemblies:
+  - mscorlib
+  namespace: System.Collections
+  summary: Gets a value indicating whether the @'System.Collections.IDictionary' object is read-only.
+  syntax:
+    content: bool IsReadOnly { get; }
+    content.vb: ReadOnly Property IsReadOnly As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the @'System.Collections.IDictionary' object is read-only; otherwise, false.
+- uid: System.Collections.IDictionary.IsFixedSize
+  id: IsFixedSize
+  parent: System.Collections.IDictionary
+  href: System.Collections.IDictionary.yml
+  name: IsFixedSize
+  fullName: System.Collections.IDictionary.IsFixedSize
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/IDictionary.cs
+    startLine: 60
+  assemblies:
+  - mscorlib
+  namespace: System.Collections
+  summary: Gets a value indicating whether the @'System.Collections.IDictionary' object has a fixed size.
+  syntax:
+    content: bool IsFixedSize { get; }
+    content.vb: ReadOnly Property IsFixedSize As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the @'System.Collections.IDictionary' object has a fixed size; otherwise, false.
+- uid: System.Collections.IDictionary.GetEnumerator
+  id: GetEnumerator
+  parent: System.Collections.IDictionary
+  href: System.Collections.IDictionary.yml
+  name: GetEnumerator()
+  fullName: System.Collections.IDictionary.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/IDictionary.cs
+    startLine: 64
+  assemblies:
+  - mscorlib
+  namespace: System.Collections
+  summary: Returns an @'System.Collections.IDictionaryEnumerator' object for the @'System.Collections.IDictionary' object.
+  syntax:
+    content: IDictionaryEnumerator GetEnumerator()
+    content.vb: Function GetEnumerator As IDictionaryEnumerator
+    return:
+      type: System.Collections.IDictionaryEnumerator
+      description: An @'System.Collections.IDictionaryEnumerator' object for the @'System.Collections.IDictionary' object.
+- uid: System.Collections.IDictionary.Remove(System.Object)
+  id: Remove(System.Object)
+  parent: System.Collections.IDictionary
+  href: System.Collections.IDictionary.yml
+  name: Remove(Object)
+  fullName: System.Collections.IDictionary.Remove(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Collections/IDictionary.cs
+    startLine: 68
+  assemblies:
+  - mscorlib
+  namespace: System.Collections
+  summary: Removes the element with the specified key from the @'System.Collections.IDictionary' object.
+  syntax:
+    content: void Remove(object key)
+    content.vb: Sub Remove(key As Object)
+    parameters:
+    - id: key
+      type: System.Object
+      description: The key of the element to remove.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*key* is null.'
+  - type: System.NotSupportedException
+    description: The @'System.Collections.IDictionary' object is read-only.-or- The @'System.Collections.IDictionary' has a fixed size.
+references:
+- uid: System.Collections
+  isExternal: false
+  name: System.Collections
+  fullName: System.Collections
+- uid: System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+  parent: System.Collections.ICollection
+  isExternal: true
+  name: CopyTo(Array, Int32)
+  fullName: System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  spec.csharp:
+  - uid: System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+    name: CopyTo
+    fullName: System.Collections.ICollection.CopyTo
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Array
+    name: Array
+    fullName: System.Array
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+    name: CopyTo
+    fullName: System.Collections.ICollection.CopyTo
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Array
+    name: Array
+    fullName: System.Array
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.ICollection.Count
+  parent: System.Collections.ICollection
+  isExternal: true
+  name: Count
+  fullName: System.Collections.ICollection.Count
+- uid: System.Collections.ICollection.SyncRoot
+  parent: System.Collections.ICollection
+  isExternal: true
+  name: SyncRoot
+  fullName: System.Collections.ICollection.SyncRoot
+- uid: System.Collections.ICollection.IsSynchronized
+  parent: System.Collections.ICollection
+  isExternal: true
+  name: IsSynchronized
+  fullName: System.Collections.ICollection.IsSynchronized
+- uid: System.Collections.ICollection
+  parent: System.Collections
+  isExternal: true
+  name: ICollection
+  fullName: System.Collections.ICollection
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Collections.IDictionaryEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IDictionaryEnumerator
+  fullName: System.Collections.IDictionaryEnumerator

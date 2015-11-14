@@ -1,0 +1,1603 @@
+items:
+- uid: System.Threading.Mutex
+  id: Mutex
+  parent: System.Threading
+  children:
+  - System.Threading.Mutex.#ctor
+  - System.Threading.Mutex.#ctor(System.Boolean)
+  - System.Threading.Mutex.#ctor(System.Boolean,System.String)
+  - System.Threading.Mutex.#ctor(System.Boolean,System.String,System.Boolean@)
+  - System.Threading.Mutex.#ctor(System.Boolean,System.String,System.Boolean@,System.Threading.Mutex.MutexSecurity)
+  - System.Threading.Mutex.OpenExisting(System.String)
+  - System.Threading.Mutex.OpenExisting(System.String,System.Threading.Mutex.MutexRights)
+  - System.Threading.Mutex.ReleaseMutex
+  - System.Threading.Mutex.TryOpenExisting(System.String,System.Threading.Mutex.MutexRights,System.Threading.Mutex@)
+  - System.Threading.Mutex.TryOpenExisting(System.String,System.Threading.Mutex@)
+  href: System.Threading.Mutex.yml
+  name: Mutex
+  fullName: System.Threading.Mutex
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Threading/Mutex.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Threading/Mutex.cs
+    startLine: 32
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: A synchronization primitive that can also be used for interprocess synchronization.
+  syntax:
+    content: 'public sealed class Mutex : WaitHandle, IDisposable'
+    content.vb: Public NotInheritable Class Mutex Inherits WaitHandle Implements IDisposable
+  inheritance:
+  - System.Object
+  - System.Threading.WaitHandle
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Threading.WaitHandle.WaitTimeout
+  - System.Threading.WaitHandle.InvalidHandle
+  - System.Threading.WaitHandle.Handle
+  - System.Threading.WaitHandle.SafeWaitHandle
+  - System.Threading.WaitHandle.WaitOne(System.Int32,System.Boolean)
+  - System.Threading.WaitHandle.WaitOne(System.TimeSpan,System.Boolean)
+  - System.Threading.WaitHandle.WaitOne
+  - System.Threading.WaitHandle.WaitOne(System.Int32)
+  - System.Threading.WaitHandle.WaitOne(System.TimeSpan)
+  - System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.Int32,System.Boolean)
+  - System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.TimeSpan,System.Boolean)
+  - System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[])
+  - System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.Int32)
+  - System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.TimeSpan)
+  - System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.Int32,System.Boolean)
+  - System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.TimeSpan,System.Boolean)
+  - System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.TimeSpan)
+  - System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[])
+  - System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.Int32)
+  - System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle,System.Threading.WaitHandle)
+  - System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle,System.Threading.WaitHandle,System.TimeSpan,System.Boolean)
+  - System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle,System.Threading.WaitHandle,System.Int32,System.Boolean)
+  - System.Threading.WaitHandle.Close
+  - System.Threading.WaitHandle.Dispose(System.Boolean)
+  - System.Threading.WaitHandle.Dispose
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Threading.Mutex.#ctor(System.Boolean,System.String,System.Boolean@)
+  id: '#ctor(System.Boolean,System.String,System.Boolean@)'
+  parent: System.Threading.Mutex
+  href: System.Threading.Mutex.yml
+  name: Mutex(Boolean, String, out Boolean)
+  name.vb: Mutex(Boolean, String, ByRef Boolean)
+  fullName: System.Threading.Mutex.Mutex(System.Boolean, System.String, out System.Boolean)
+  fullName.vb: System.Threading.Mutex.Mutex(System.Boolean, System.String, ByRef System.Boolean)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Mutex.cs
+    startLine: 43
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Initializes a new instance of the @'System.Threading.Mutex' class with a Boolean value that indicates whether the calling thread should have initial ownership of the mutex, a string that is the name of the mutex, and a Boolean value that, when the method returns, indicates whether the calling thread was granted initial ownership of the mutex.
+  syntax:
+    content: public Mutex(bool initiallyOwned, string name, out bool createdNew)
+    content.vb: Public Sub New(initiallyOwned As Boolean, name As String, ByRef createdNew As Boolean)
+    parameters:
+    - id: initiallyOwned
+      type: System.Boolean
+      description: true to give the calling thread initial ownership of the named system mutex if the named system mutex is created as a result of this call; otherwise, false.
+    - id: name
+      type: System.String
+      description: The name of the @'System.Threading.Mutex'. If the value is null, the @'System.Threading.Mutex' is unnamed.
+    - id: createdNew
+      type: System.Boolean
+      description: When this method returns, contains a Boolean that is true if a local mutex was created (that is, if *name* is null or an empty string) or if the specified named system mutex was created; false if the specified named system mutex already existed. This parameter is passed uninitialized.
+  exceptions:
+  - type: System.UnauthorizedAccessException
+    description: The named mutex exists and has access control security, but the user does not have @'System.Security.AccessControl.MutexRights.FullControl'.
+  - type: System.IO.IOException
+    description: A Win32 error occurred.
+  - type: System.Threading.WaitHandleCannotBeOpenedException
+    description: The named mutex cannot be created, perhaps because a wait handle of a different type has the same name.
+  - type: System.ArgumentException
+    description: '*name* is longer than 260 characters.'
+- uid: System.Threading.Mutex.#ctor(System.Boolean,System.String,System.Boolean@,System.Threading.Mutex.MutexSecurity)
+  id: '#ctor(System.Boolean,System.String,System.Boolean@,System.Threading.Mutex.MutexSecurity)'
+  parent: System.Threading.Mutex
+  href: System.Threading.Mutex.yml
+  name: Mutex(Boolean, String, out Boolean, Mutex.MutexSecurity)
+  name.vb: Mutex(Boolean, String, ByRef Boolean, Mutex.MutexSecurity)
+  fullName: System.Threading.Mutex.Mutex(System.Boolean, System.String, out System.Boolean, System.Threading.Mutex.MutexSecurity)
+  fullName.vb: System.Threading.Mutex.Mutex(System.Boolean, System.String, ByRef System.Boolean, System.Threading.Mutex.MutexSecurity)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Mutex.cs
+    startLine: 50
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  syntax:
+    content: public Mutex(bool initiallyOwned, string name, out bool createdNew, Mutex.MutexSecurity mutexSecurity)
+    content.vb: Public Sub New(initiallyOwned As Boolean, name As String, ByRef createdNew As Boolean, mutexSecurity As Mutex.MutexSecurity)
+    parameters:
+    - id: initiallyOwned
+      type: System.Boolean
+    - id: name
+      type: System.String
+    - id: createdNew
+      type: System.Boolean
+    - id: mutexSecurity
+      type: System.Threading.Mutex.MutexSecurity
+- uid: System.Threading.Mutex.#ctor(System.Boolean,System.String)
+  id: '#ctor(System.Boolean,System.String)'
+  parent: System.Threading.Mutex
+  href: System.Threading.Mutex.yml
+  name: Mutex(Boolean, String)
+  fullName: System.Threading.Mutex.Mutex(System.Boolean, System.String)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Mutex.cs
+    startLine: 253
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Initializes a new instance of the @'System.Threading.Mutex' class with a Boolean value that indicates whether the calling thread should have initial ownership of the mutex, and a string that is the name of the mutex.
+  syntax:
+    content: public Mutex(bool initiallyOwned, string name)
+    content.vb: Public Sub New(initiallyOwned As Boolean, name As String)
+    parameters:
+    - id: initiallyOwned
+      type: System.Boolean
+      description: true to give the calling thread initial ownership of the named system mutex if the named system mutex is created as a result of this call; otherwise, false.
+    - id: name
+      type: System.String
+      description: The name of the @'System.Threading.Mutex'. If the value is null, the @'System.Threading.Mutex' is unnamed.
+  exceptions:
+  - type: System.UnauthorizedAccessException
+    description: The named mutex exists and has access control security, but the user does not have @'System.Security.AccessControl.MutexRights.FullControl'.
+  - type: System.IO.IOException
+    description: A Win32 error occurred.
+  - type: System.Threading.WaitHandleCannotBeOpenedException
+    description: The named mutex cannot be created, perhaps because a wait handle of a different type has the same name.
+  - type: System.ArgumentException
+    description: '*name* is longer than 260 characters.'
+- uid: System.Threading.Mutex.#ctor(System.Boolean)
+  id: '#ctor(System.Boolean)'
+  parent: System.Threading.Mutex
+  href: System.Threading.Mutex.yml
+  name: Mutex(Boolean)
+  fullName: System.Threading.Mutex.Mutex(System.Boolean)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Mutex.cs
+    startLine: 261
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Initializes a new instance of the @'System.Threading.Mutex' class with a Boolean value that indicates whether the calling thread should have initial ownership of the mutex.
+  syntax:
+    content: public Mutex(bool initiallyOwned)
+    content.vb: Public Sub New(initiallyOwned As Boolean)
+    parameters:
+    - id: initiallyOwned
+      type: System.Boolean
+      description: true to give the calling thread initial ownership of the mutex; otherwise, false.
+- uid: System.Threading.Mutex.#ctor
+  id: '#ctor'
+  parent: System.Threading.Mutex
+  href: System.Threading.Mutex.yml
+  name: Mutex()
+  fullName: System.Threading.Mutex.Mutex()
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Mutex.cs
+    startLine: 267
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Initializes a new instance of the @'System.Threading.Mutex' class with default properties.
+  syntax:
+    content: public Mutex()
+    content.vb: Public Sub New
+- uid: System.Threading.Mutex.OpenExisting(System.String)
+  id: OpenExisting(System.String)
+  parent: System.Threading.Mutex
+  href: System.Threading.Mutex.yml
+  name: OpenExisting(String)
+  fullName: System.Threading.Mutex.OpenExisting(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Mutex.cs
+    startLine: 281
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Opens the specified named mutex, if it already exists.
+  syntax:
+    content: public static Mutex OpenExisting(string name)
+    content.vb: Public Shared Function OpenExisting(name As String) As Mutex
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the system mutex to open.
+    return:
+      type: System.Threading.Mutex
+      description: An object that represents the named system mutex.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*name* is an empty string.-or-*name* is longer than 260 characters.'
+  - type: System.ArgumentNullException
+    description: '*name* is null.'
+  - type: System.Threading.WaitHandleCannotBeOpenedException
+    description: The named mutex does not exist.
+  - type: System.IO.IOException
+    description: A Win32 error occurred.
+  - type: System.UnauthorizedAccessException
+    description: The named mutex exists, but the user does not have the security access required to use it.
+- uid: System.Threading.Mutex.OpenExisting(System.String,System.Threading.Mutex.MutexRights)
+  id: OpenExisting(System.String,System.Threading.Mutex.MutexRights)
+  parent: System.Threading.Mutex
+  href: System.Threading.Mutex.yml
+  name: OpenExisting(String, Mutex.MutexRights)
+  fullName: System.Threading.Mutex.OpenExisting(System.String, System.Threading.Mutex.MutexRights)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Mutex.cs
+    startLine: 297
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  syntax:
+    content: public static Mutex OpenExisting(string name, Mutex.MutexRights rights)
+    content.vb: Public Shared Function OpenExisting(name As String, rights As Mutex.MutexRights) As Mutex
+    parameters:
+    - id: name
+      type: System.String
+    - id: rights
+      type: System.Threading.Mutex.MutexRights
+    return:
+      type: System.Threading.Mutex
+- uid: System.Threading.Mutex.TryOpenExisting(System.String,System.Threading.Mutex@)
+  id: TryOpenExisting(System.String,System.Threading.Mutex@)
+  parent: System.Threading.Mutex
+  href: System.Threading.Mutex.yml
+  name: TryOpenExisting(String, out Mutex)
+  name.vb: TryOpenExisting(String, ByRef Mutex)
+  fullName: System.Threading.Mutex.TryOpenExisting(System.String, out System.Threading.Mutex)
+  fullName.vb: System.Threading.Mutex.TryOpenExisting(System.String, ByRef System.Threading.Mutex)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Mutex.cs
+    startLine: 318
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Opens the specified named mutex, if it already exists, and returns a value that indicates whether the operation succeeded.
+  syntax:
+    content: public static bool TryOpenExisting(string name, out Mutex result)
+    content.vb: Public Shared Function TryOpenExisting(name As String, ByRef result As Mutex) As Boolean
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the system mutex to open.
+    - id: result
+      type: System.Threading.Mutex
+      description: When this method returns, contains a @'System.Threading.Mutex' object that represents the named mutex if the call succeeded, or null if the call failed. This parameter is treated as uninitialized.
+    return:
+      type: System.Boolean
+      description: true if the named mutex was opened successfully; otherwise, false.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*name* is an empty string.-or-*name* is longer than 260 characters.'
+  - type: System.ArgumentNullException
+    description: '*name* is null.'
+  - type: System.IO.IOException
+    description: A Win32 error occurred.
+  - type: System.UnauthorizedAccessException
+    description: The named mutex exists, but the user does not have the security access required to use it.
+- uid: System.Threading.Mutex.TryOpenExisting(System.String,System.Threading.Mutex.MutexRights,System.Threading.Mutex@)
+  id: TryOpenExisting(System.String,System.Threading.Mutex.MutexRights,System.Threading.Mutex@)
+  parent: System.Threading.Mutex
+  href: System.Threading.Mutex.yml
+  name: TryOpenExisting(String, Mutex.MutexRights, out Mutex)
+  name.vb: TryOpenExisting(String, Mutex.MutexRights, ByRef Mutex)
+  fullName: System.Threading.Mutex.TryOpenExisting(System.String, System.Threading.Mutex.MutexRights, out System.Threading.Mutex)
+  fullName.vb: System.Threading.Mutex.TryOpenExisting(System.String, System.Threading.Mutex.MutexRights, ByRef System.Threading.Mutex)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Mutex.cs
+    startLine: 328
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  syntax:
+    content: public static bool TryOpenExisting(string name, Mutex.MutexRights rights, out Mutex result)
+    content.vb: Public Shared Function TryOpenExisting(name As String, rights As Mutex.MutexRights, ByRef result As Mutex) As Boolean
+    parameters:
+    - id: name
+      type: System.String
+    - id: rights
+      type: System.Threading.Mutex.MutexRights
+    - id: result
+      type: System.Threading.Mutex
+    return:
+      type: System.Boolean
+- uid: System.Threading.Mutex.ReleaseMutex
+  id: ReleaseMutex
+  parent: System.Threading.Mutex
+  href: System.Threading.Mutex.yml
+  name: ReleaseMutex()
+  fullName: System.Threading.Mutex.ReleaseMutex()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Threading/Mutex.cs
+    startLine: 396
+  assemblies:
+  - mscorlib
+  namespace: System.Threading
+  summary: Releases the @'System.Threading.Mutex' once.
+  syntax:
+    content: public void ReleaseMutex()
+    content.vb: Public Sub ReleaseMutex
+  exceptions:
+  - type: System.ApplicationException
+    description: The calling thread does not own the mutex.
+references:
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Threading.WaitHandle
+  parent: System.Threading
+  isExternal: true
+  name: WaitHandle
+  fullName: System.Threading.WaitHandle
+- uid: System.Threading.WaitHandle.WaitTimeout
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: WaitTimeout
+  fullName: System.Threading.WaitHandle.WaitTimeout
+- uid: System.Threading.WaitHandle.InvalidHandle
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: InvalidHandle
+  fullName: System.Threading.WaitHandle.InvalidHandle
+- uid: System.Threading.WaitHandle.Handle
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: Handle
+  fullName: System.Threading.WaitHandle.Handle
+- uid: System.Threading.WaitHandle.SafeWaitHandle
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: SafeWaitHandle
+  fullName: System.Threading.WaitHandle.SafeWaitHandle
+- uid: System.Threading.WaitHandle.WaitOne(System.Int32,System.Boolean)
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: WaitOne(Int32, Boolean)
+  fullName: System.Threading.WaitHandle.WaitOne(System.Int32, System.Boolean)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitOne(System.Int32,System.Boolean)
+    name: WaitOne
+    fullName: System.Threading.WaitHandle.WaitOne
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitOne(System.Int32,System.Boolean)
+    name: WaitOne
+    fullName: System.Threading.WaitHandle.WaitOne
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+- uid: System.Threading.WaitHandle.WaitOne(System.TimeSpan,System.Boolean)
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: WaitOne(TimeSpan, Boolean)
+  fullName: System.Threading.WaitHandle.WaitOne(System.TimeSpan, System.Boolean)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitOne(System.TimeSpan,System.Boolean)
+    name: WaitOne
+    fullName: System.Threading.WaitHandle.WaitOne
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.TimeSpan
+    name: TimeSpan
+    fullName: System.TimeSpan
+    href: System.TimeSpan.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitOne(System.TimeSpan,System.Boolean)
+    name: WaitOne
+    fullName: System.Threading.WaitHandle.WaitOne
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.TimeSpan
+    name: TimeSpan
+    fullName: System.TimeSpan
+    href: System.TimeSpan.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+- uid: System.Threading.WaitHandle.WaitOne
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: WaitOne()
+  fullName: System.Threading.WaitHandle.WaitOne()
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitOne
+    name: WaitOne
+    fullName: System.Threading.WaitHandle.WaitOne
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitOne
+    name: WaitOne
+    fullName: System.Threading.WaitHandle.WaitOne
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Threading.WaitHandle.WaitOne(System.Int32)
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: WaitOne(Int32)
+  fullName: System.Threading.WaitHandle.WaitOne(System.Int32)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitOne(System.Int32)
+    name: WaitOne
+    fullName: System.Threading.WaitHandle.WaitOne
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitOne(System.Int32)
+    name: WaitOne
+    fullName: System.Threading.WaitHandle.WaitOne
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Threading.WaitHandle.WaitOne(System.TimeSpan)
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: WaitOne(TimeSpan)
+  fullName: System.Threading.WaitHandle.WaitOne(System.TimeSpan)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitOne(System.TimeSpan)
+    name: WaitOne
+    fullName: System.Threading.WaitHandle.WaitOne
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.TimeSpan
+    name: TimeSpan
+    fullName: System.TimeSpan
+    href: System.TimeSpan.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitOne(System.TimeSpan)
+    name: WaitOne
+    fullName: System.Threading.WaitHandle.WaitOne
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.TimeSpan
+    name: TimeSpan
+    fullName: System.TimeSpan
+    href: System.TimeSpan.yml
+  - name: )
+    fullName: )
+- uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.Int32,System.Boolean)
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: WaitAll(WaitHandle[], Int32, Boolean)
+  name.vb: WaitAll(WaitHandle(), Int32, Boolean)
+  fullName: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[], System.Int32, System.Boolean)
+  fullName.vb: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle(), System.Int32, System.Boolean)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.Int32,System.Boolean)
+    name: WaitAll
+    fullName: System.Threading.WaitHandle.WaitAll
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.Int32,System.Boolean)
+    name: WaitAll
+    fullName: System.Threading.WaitHandle.WaitAll
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+- uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.TimeSpan,System.Boolean)
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: WaitAll(WaitHandle[], TimeSpan, Boolean)
+  name.vb: WaitAll(WaitHandle(), TimeSpan, Boolean)
+  fullName: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[], System.TimeSpan, System.Boolean)
+  fullName.vb: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle(), System.TimeSpan, System.Boolean)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.TimeSpan,System.Boolean)
+    name: WaitAll
+    fullName: System.Threading.WaitHandle.WaitAll
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.TimeSpan
+    name: TimeSpan
+    fullName: System.TimeSpan
+    href: System.TimeSpan.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.TimeSpan,System.Boolean)
+    name: WaitAll
+    fullName: System.Threading.WaitHandle.WaitAll
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.TimeSpan
+    name: TimeSpan
+    fullName: System.TimeSpan
+    href: System.TimeSpan.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+- uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[])
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: WaitAll(WaitHandle[])
+  name.vb: WaitAll(WaitHandle())
+  fullName: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[])
+  fullName.vb: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle())
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[])
+    name: WaitAll
+    fullName: System.Threading.WaitHandle.WaitAll
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[])
+    name: WaitAll
+    fullName: System.Threading.WaitHandle.WaitAll
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: ()
+    fullName: ()
+  - name: )
+    fullName: )
+- uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.Int32)
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: WaitAll(WaitHandle[], Int32)
+  name.vb: WaitAll(WaitHandle(), Int32)
+  fullName: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[], System.Int32)
+  fullName.vb: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle(), System.Int32)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.Int32)
+    name: WaitAll
+    fullName: System.Threading.WaitHandle.WaitAll
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.Int32)
+    name: WaitAll
+    fullName: System.Threading.WaitHandle.WaitAll
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.TimeSpan)
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: WaitAll(WaitHandle[], TimeSpan)
+  name.vb: WaitAll(WaitHandle(), TimeSpan)
+  fullName: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[], System.TimeSpan)
+  fullName.vb: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle(), System.TimeSpan)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.TimeSpan)
+    name: WaitAll
+    fullName: System.Threading.WaitHandle.WaitAll
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.TimeSpan
+    name: TimeSpan
+    fullName: System.TimeSpan
+    href: System.TimeSpan.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.TimeSpan)
+    name: WaitAll
+    fullName: System.Threading.WaitHandle.WaitAll
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.TimeSpan
+    name: TimeSpan
+    fullName: System.TimeSpan
+    href: System.TimeSpan.yml
+  - name: )
+    fullName: )
+- uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.Int32,System.Boolean)
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: WaitAny(WaitHandle[], Int32, Boolean)
+  name.vb: WaitAny(WaitHandle(), Int32, Boolean)
+  fullName: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[], System.Int32, System.Boolean)
+  fullName.vb: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle(), System.Int32, System.Boolean)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.Int32,System.Boolean)
+    name: WaitAny
+    fullName: System.Threading.WaitHandle.WaitAny
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.Int32,System.Boolean)
+    name: WaitAny
+    fullName: System.Threading.WaitHandle.WaitAny
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+- uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.TimeSpan,System.Boolean)
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: WaitAny(WaitHandle[], TimeSpan, Boolean)
+  name.vb: WaitAny(WaitHandle(), TimeSpan, Boolean)
+  fullName: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[], System.TimeSpan, System.Boolean)
+  fullName.vb: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle(), System.TimeSpan, System.Boolean)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.TimeSpan,System.Boolean)
+    name: WaitAny
+    fullName: System.Threading.WaitHandle.WaitAny
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.TimeSpan
+    name: TimeSpan
+    fullName: System.TimeSpan
+    href: System.TimeSpan.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.TimeSpan,System.Boolean)
+    name: WaitAny
+    fullName: System.Threading.WaitHandle.WaitAny
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.TimeSpan
+    name: TimeSpan
+    fullName: System.TimeSpan
+    href: System.TimeSpan.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+- uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.TimeSpan)
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: WaitAny(WaitHandle[], TimeSpan)
+  name.vb: WaitAny(WaitHandle(), TimeSpan)
+  fullName: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[], System.TimeSpan)
+  fullName.vb: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle(), System.TimeSpan)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.TimeSpan)
+    name: WaitAny
+    fullName: System.Threading.WaitHandle.WaitAny
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.TimeSpan
+    name: TimeSpan
+    fullName: System.TimeSpan
+    href: System.TimeSpan.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.TimeSpan)
+    name: WaitAny
+    fullName: System.Threading.WaitHandle.WaitAny
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.TimeSpan
+    name: TimeSpan
+    fullName: System.TimeSpan
+    href: System.TimeSpan.yml
+  - name: )
+    fullName: )
+- uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[])
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: WaitAny(WaitHandle[])
+  name.vb: WaitAny(WaitHandle())
+  fullName: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[])
+  fullName.vb: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle())
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[])
+    name: WaitAny
+    fullName: System.Threading.WaitHandle.WaitAny
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[])
+    name: WaitAny
+    fullName: System.Threading.WaitHandle.WaitAny
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: ()
+    fullName: ()
+  - name: )
+    fullName: )
+- uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.Int32)
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: WaitAny(WaitHandle[], Int32)
+  name.vb: WaitAny(WaitHandle(), Int32)
+  fullName: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[], System.Int32)
+  fullName.vb: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle(), System.Int32)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.Int32)
+    name: WaitAny
+    fullName: System.Threading.WaitHandle.WaitAny
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: '[]'
+    fullName: '[]'
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.Int32)
+    name: WaitAny
+    fullName: System.Threading.WaitHandle.WaitAny
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: ()
+    fullName: ()
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: )
+    fullName: )
+- uid: System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle,System.Threading.WaitHandle)
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: SignalAndWait(WaitHandle, WaitHandle)
+  fullName: System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle, System.Threading.WaitHandle)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle,System.Threading.WaitHandle)
+    name: SignalAndWait
+    fullName: System.Threading.WaitHandle.SignalAndWait
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle,System.Threading.WaitHandle)
+    name: SignalAndWait
+    fullName: System.Threading.WaitHandle.SignalAndWait
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: )
+    fullName: )
+- uid: System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle,System.Threading.WaitHandle,System.TimeSpan,System.Boolean)
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: SignalAndWait(WaitHandle, WaitHandle, TimeSpan, Boolean)
+  fullName: System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle, System.Threading.WaitHandle, System.TimeSpan, System.Boolean)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle,System.Threading.WaitHandle,System.TimeSpan,System.Boolean)
+    name: SignalAndWait
+    fullName: System.Threading.WaitHandle.SignalAndWait
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.TimeSpan
+    name: TimeSpan
+    fullName: System.TimeSpan
+    href: System.TimeSpan.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle,System.Threading.WaitHandle,System.TimeSpan,System.Boolean)
+    name: SignalAndWait
+    fullName: System.Threading.WaitHandle.SignalAndWait
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.TimeSpan
+    name: TimeSpan
+    fullName: System.TimeSpan
+    href: System.TimeSpan.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+- uid: System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle,System.Threading.WaitHandle,System.Int32,System.Boolean)
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: SignalAndWait(WaitHandle, WaitHandle, Int32, Boolean)
+  fullName: System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle, System.Threading.WaitHandle, System.Int32, System.Boolean)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle,System.Threading.WaitHandle,System.Int32,System.Boolean)
+    name: SignalAndWait
+    fullName: System.Threading.WaitHandle.SignalAndWait
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle,System.Threading.WaitHandle,System.Int32,System.Boolean)
+    name: SignalAndWait
+    fullName: System.Threading.WaitHandle.SignalAndWait
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Threading.WaitHandle
+    name: WaitHandle
+    fullName: System.Threading.WaitHandle
+    href: System.Threading.WaitHandle.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    href: System.Int32.yml
+  - name: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+- uid: System.Threading.WaitHandle.Close
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: Close()
+  fullName: System.Threading.WaitHandle.Close()
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.Close
+    name: Close
+    fullName: System.Threading.WaitHandle.Close
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.Close
+    name: Close
+    fullName: System.Threading.WaitHandle.Close
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Threading.WaitHandle.Dispose(System.Boolean)
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: Dispose(Boolean)
+  fullName: System.Threading.WaitHandle.Dispose(System.Boolean)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.Dispose(System.Boolean)
+    name: Dispose
+    fullName: System.Threading.WaitHandle.Dispose
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.Dispose(System.Boolean)
+    name: Dispose
+    fullName: System.Threading.WaitHandle.Dispose
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    href: System.Boolean.yml
+  - name: )
+    fullName: )
+- uid: System.Threading.WaitHandle.Dispose
+  parent: System.Threading.WaitHandle
+  isExternal: false
+  href: System.Threading.WaitHandle.yml
+  name: Dispose()
+  fullName: System.Threading.WaitHandle.Dispose()
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.Dispose
+    name: Dispose
+    fullName: System.Threading.WaitHandle.Dispose
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.Dispose
+    name: Dispose
+    fullName: System.Threading.WaitHandle.Dispose
+    href: System.Threading.WaitHandle.yml
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Threading.Mutex.MutexSecurity
+  parent: System.Threading
+  isExternal: false
+  href: System.Threading.Mutex.MutexSecurity.yml
+  name: Mutex.MutexSecurity
+  fullName: System.Threading.Mutex.MutexSecurity
+  type: Class
+- uid: System.Threading.Mutex
+  parent: System.Threading
+  isExternal: false
+  href: System.Threading.Mutex.yml
+  name: Mutex
+  fullName: System.Threading.Mutex
+  type: Class
+- uid: System.Threading.Mutex.MutexRights
+  parent: System.Threading
+  isExternal: false
+  href: System.Threading.Mutex.MutexRights.yml
+  name: Mutex.MutexRights
+  fullName: System.Threading.Mutex.MutexRights
+  type: Enum

@@ -1,0 +1,968 @@
+items:
+- uid: System.Security.PermissionSet
+  id: PermissionSet
+  parent: System.Security
+  children:
+  - System.Security.PermissionSet.#ctor(System.Security.Permissions.PermissionState)
+  - System.Security.PermissionSet.#ctor(System.Security.PermissionSet)
+  - System.Security.PermissionSet.AddPermission(System.Security.IPermission)
+  - System.Security.PermissionSet.AddPermissionImpl(System.Security.IPermission)
+  - System.Security.PermissionSet.Assert
+  - System.Security.PermissionSet.ContainsNonCodeAccessPermissions
+  - System.Security.PermissionSet.Copy
+  - System.Security.PermissionSet.CopyTo(System.Array,System.Int32)
+  - System.Security.PermissionSet.Count
+  - System.Security.PermissionSet.Demand
+  - System.Security.PermissionSet.Deny
+  - System.Security.PermissionSet.Equals(System.Object)
+  - System.Security.PermissionSet.GetEnumerator
+  - System.Security.PermissionSet.GetEnumeratorImpl
+  - System.Security.PermissionSet.GetHashCode
+  - System.Security.PermissionSet.Intersect(System.Security.PermissionSet)
+  - System.Security.PermissionSet.IsEmpty
+  - System.Security.PermissionSet.IsReadOnly
+  - System.Security.PermissionSet.IsSubsetOf(System.Security.PermissionSet)
+  - System.Security.PermissionSet.IsSynchronized
+  - System.Security.PermissionSet.IsUnrestricted
+  - System.Security.PermissionSet.PermitOnly
+  - System.Security.PermissionSet.RevertAssert
+  - System.Security.PermissionSet.SetPermission(System.Security.IPermission)
+  - System.Security.PermissionSet.SetPermissionImpl(System.Security.IPermission)
+  - System.Security.PermissionSet.SyncRoot
+  - System.Security.PermissionSet.Union(System.Security.PermissionSet)
+  href: System.Security.PermissionSet.yml
+  name: PermissionSet
+  fullName: System.Security.PermissionSet
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Security/PermissionSet.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Security/PermissionSet.cs
+    startLine: 34
+  assemblies:
+  - mscorlib
+  namespace: System.Security
+  summary: Represents a collection that can contain many different types of permissions.
+  syntax:
+    content: 'public class PermissionSet : ISecurityEncodable, ICollection, IEnumerable, IStackWalk, IDeserializationCallback'
+    content.vb: Public Class PermissionSet Implements ISecurityEncodable, ICollection, IEnumerable, IStackWalk, IDeserializationCallback
+  inheritance:
+  - System.Object
+  implements:
+  - System.Security.ISecurityEncodable
+  - System.Collections.ICollection
+  - System.Collections.IEnumerable
+  - System.Security.IStackWalk
+  - System.Runtime.Serialization.IDeserializationCallback
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Security.PermissionSet.#ctor(System.Security.Permissions.PermissionState)
+  id: '#ctor(System.Security.Permissions.PermissionState)'
+  parent: System.Security.PermissionSet
+  href: System.Security.PermissionSet.yml
+  name: PermissionSet(PermissionState)
+  fullName: System.Security.PermissionSet.PermissionSet(System.Security.Permissions.PermissionState)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/PermissionSet.cs
+    startLine: 188
+  assemblies:
+  - mscorlib
+  namespace: System.Security
+  summary: Initializes a new instance of the @'System.Security.PermissionSet' class with the specified @'System.Security.Permissions.PermissionState'.
+  syntax:
+    content: public PermissionSet(PermissionState state)
+    content.vb: Public Sub New(state As PermissionState)
+    parameters:
+    - id: state
+      type: System.Security.Permissions.PermissionState
+      description: One of the enumeration values that specifies the permission set's access to resources.
+  exceptions:
+  - type: System.ArgumentException
+    description: The *state* parameter is not a valid @'System.Security.Permissions.PermissionState'.
+- uid: System.Security.PermissionSet.#ctor(System.Security.PermissionSet)
+  id: '#ctor(System.Security.PermissionSet)'
+  parent: System.Security.PermissionSet
+  href: System.Security.PermissionSet.yml
+  name: PermissionSet(PermissionSet)
+  fullName: System.Security.PermissionSet.PermissionSet(System.Security.PermissionSet)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/PermissionSet.cs
+    startLine: 205
+  assemblies:
+  - mscorlib
+  namespace: System.Security
+  summary: Initializes a new instance of the @'System.Security.PermissionSet' class with initial values taken from the *permSet* parameter.
+  syntax:
+    content: public PermissionSet(PermissionSet permSet)
+    content.vb: Public Sub New(permSet As PermissionSet)
+    parameters:
+    - id: permSet
+      type: System.Security.PermissionSet
+      description: The set from which to take the value of the new @'System.Security.PermissionSet', or null to create an empty @'System.Security.PermissionSet'.
+- uid: System.Security.PermissionSet.CopyTo(System.Array,System.Int32)
+  id: CopyTo(System.Array,System.Int32)
+  parent: System.Security.PermissionSet
+  href: System.Security.PermissionSet.yml
+  name: CopyTo(Array, Int32)
+  fullName: System.Security.PermissionSet.CopyTo(System.Array, System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/PermissionSet.cs
+    startLine: 246
+  assemblies:
+  - mscorlib
+  namespace: System.Security
+  summary: Copies the permission objects of the set to the indicated location in an @'System.Array'.
+  syntax:
+    content: public virtual void CopyTo(Array array, int index)
+    content.vb: Public Overridable Sub CopyTo(array As Array, index As Integer)
+    parameters:
+    - id: array
+      type: System.Array
+      description: The target array to which to copy.
+    - id: index
+      type: System.Int32
+      description: The starting position in the array to begin copying (zero based).
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *array* parameter is null.
+  - type: System.ArgumentException
+    description: The *array* parameter has more than one dimension.
+  - type: System.IndexOutOfRangeException
+    description: The *index* parameter is out of the range of the *array* parameter.
+- uid: System.Security.PermissionSet.SyncRoot
+  id: SyncRoot
+  parent: System.Security.PermissionSet
+  href: System.Security.PermissionSet.yml
+  name: SyncRoot
+  fullName: System.Security.PermissionSet.SyncRoot
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/PermissionSet.cs
+    startLine: 270
+  assemblies:
+  - mscorlib
+  namespace: System.Security
+  summary: Gets the root object of the current collection.
+  syntax:
+    content: public virtual object SyncRoot { get; }
+    content.vb: Public Overridable ReadOnly Property SyncRoot As Object
+    parameters: []
+    return:
+      type: System.Object
+      description: The root object of the current collection.
+- uid: System.Security.PermissionSet.IsSynchronized
+  id: IsSynchronized
+  parent: System.Security.PermissionSet
+  href: System.Security.PermissionSet.yml
+  name: IsSynchronized
+  fullName: System.Security.PermissionSet.IsSynchronized
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/PermissionSet.cs
+    startLine: 277
+  assemblies:
+  - mscorlib
+  namespace: System.Security
+  summary: Gets a value indicating whether the collection is guaranteed to be thread safe.
+  syntax:
+    content: public virtual bool IsSynchronized { get; }
+    content.vb: Public Overridable ReadOnly Property IsSynchronized As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: Always false.
+- uid: System.Security.PermissionSet.IsReadOnly
+  id: IsReadOnly
+  parent: System.Security.PermissionSet
+  href: System.Security.PermissionSet.yml
+  name: IsReadOnly
+  fullName: System.Security.PermissionSet.IsReadOnly
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/PermissionSet.cs
+    startLine: 281
+  assemblies:
+  - mscorlib
+  namespace: System.Security
+  summary: Gets a value indicating whether the collection is read-only.
+  syntax:
+    content: public virtual bool IsReadOnly { get; }
+    content.vb: Public Overridable ReadOnly Property IsReadOnly As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: Always false.
+- uid: System.Security.PermissionSet.IsEmpty
+  id: IsEmpty
+  parent: System.Security.PermissionSet
+  href: System.Security.PermissionSet.yml
+  name: IsEmpty()
+  fullName: System.Security.PermissionSet.IsEmpty()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/PermissionSet.cs
+    startLine: 307
+  assemblies:
+  - mscorlib
+  namespace: System.Security
+  summary: Gets a value indicating whether the @'System.Security.PermissionSet' is empty.
+  syntax:
+    content: public bool IsEmpty()
+    content.vb: Public Function IsEmpty As Boolean
+    return:
+      type: System.Boolean
+      description: true if the @'System.Security.PermissionSet' is empty; otherwise, false.
+- uid: System.Security.PermissionSet.Count
+  id: Count
+  parent: System.Security.PermissionSet
+  href: System.Security.PermissionSet.yml
+  name: Count
+  fullName: System.Security.PermissionSet.Count
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/PermissionSet.cs
+    startLine: 341
+  assemblies:
+  - mscorlib
+  namespace: System.Security
+  summary: Gets the number of permission objects contained in the permission set.
+  syntax:
+    content: public virtual int Count { get; }
+    content.vb: Public Overridable ReadOnly Property Count As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: The number of permission objects contained in the @'System.Security.PermissionSet'.
+- uid: System.Security.PermissionSet.SetPermission(System.Security.IPermission)
+  id: SetPermission(System.Security.IPermission)
+  parent: System.Security.PermissionSet
+  href: System.Security.PermissionSet.yml
+  name: SetPermission(IPermission)
+  fullName: System.Security.PermissionSet.SetPermission(System.Security.IPermission)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/PermissionSet.cs
+    startLine: 407
+  assemblies:
+  - mscorlib
+  namespace: System.Security
+  summary: Sets a permission to the @'System.Security.PermissionSet', replacing any existing permission of the same type.
+  syntax:
+    content: public IPermission SetPermission(IPermission perm)
+    content.vb: Public Function SetPermission(perm As IPermission) As IPermission
+    parameters:
+    - id: perm
+      type: System.Security.IPermission
+      description: The permission to set.
+    return:
+      type: System.Security.IPermission
+      description: The set permission.
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The method is called from a @'System.Security.ReadOnlyPermissionSet'.
+- uid: System.Security.PermissionSet.SetPermissionImpl(System.Security.IPermission)
+  id: SetPermissionImpl(System.Security.IPermission)
+  parent: System.Security.PermissionSet
+  href: System.Security.PermissionSet.yml
+  name: SetPermissionImpl(IPermission)
+  fullName: System.Security.PermissionSet.SetPermissionImpl(System.Security.IPermission)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/PermissionSet.cs
+    startLine: 413
+  assemblies:
+  - mscorlib
+  namespace: System.Security
+  summary: Sets a permission to the @'System.Security.PermissionSet', replacing any existing permission of the same type.
+  syntax:
+    content: protected virtual IPermission SetPermissionImpl(IPermission perm)
+    content.vb: Protected Overridable Function SetPermissionImpl(perm As IPermission) As IPermission
+    parameters:
+    - id: perm
+      type: System.Security.IPermission
+      description: The permission to set.
+    return:
+      type: System.Security.IPermission
+      description: The set permission.
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The method is called from a @'System.Security.ReadOnlyPermissionSet'.
+- uid: System.Security.PermissionSet.AddPermission(System.Security.IPermission)
+  id: AddPermission(System.Security.IPermission)
+  parent: System.Security.PermissionSet
+  href: System.Security.PermissionSet.yml
+  name: AddPermission(IPermission)
+  fullName: System.Security.PermissionSet.AddPermission(System.Security.IPermission)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/PermissionSet.cs
+    startLine: 438
+  assemblies:
+  - mscorlib
+  namespace: System.Security
+  summary: Adds a specified permission to the @'System.Security.PermissionSet'.
+  syntax:
+    content: public IPermission AddPermission(IPermission perm)
+    content.vb: Public Function AddPermission(perm As IPermission) As IPermission
+    parameters:
+    - id: perm
+      type: System.Security.IPermission
+      description: The permission to add.
+    return:
+      type: System.Security.IPermission
+      description: The union of the permission added and any permission of the same type that already exists in the @'System.Security.PermissionSet'.
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The method is called from a @'System.Security.ReadOnlyPermissionSet'.
+- uid: System.Security.PermissionSet.AddPermissionImpl(System.Security.IPermission)
+  id: AddPermissionImpl(System.Security.IPermission)
+  parent: System.Security.PermissionSet
+  href: System.Security.PermissionSet.yml
+  name: AddPermissionImpl(IPermission)
+  fullName: System.Security.PermissionSet.AddPermissionImpl(System.Security.IPermission)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/PermissionSet.cs
+    startLine: 443
+  assemblies:
+  - mscorlib
+  namespace: System.Security
+  summary: Adds a specified permission to the @'System.Security.PermissionSet'.
+  syntax:
+    content: protected virtual IPermission AddPermissionImpl(IPermission perm)
+    content.vb: Protected Overridable Function AddPermissionImpl(perm As IPermission) As IPermission
+    parameters:
+    - id: perm
+      type: System.Security.IPermission
+      description: The permission to add.
+    return:
+      type: System.Security.IPermission
+      description: The union of the permission added and any permission of the same type that already exists in the @'System.Security.PermissionSet', or null if *perm* is null.
+  exceptions:
+  - type: System.InvalidOperationException
+    description: The method is called from a @'System.Security.ReadOnlyPermissionSet'.
+- uid: System.Security.PermissionSet.IsUnrestricted
+  id: IsUnrestricted
+  parent: System.Security.PermissionSet
+  href: System.Security.PermissionSet.yml
+  name: IsUnrestricted()
+  fullName: System.Security.PermissionSet.IsUnrestricted()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/PermissionSet.cs
+    startLine: 524
+  assemblies:
+  - mscorlib
+  namespace: System.Security
+  summary: Determines whether the @'System.Security.PermissionSet' is Unrestricted.
+  syntax:
+    content: public bool IsUnrestricted()
+    content.vb: Public Function IsUnrestricted As Boolean
+    return:
+      type: System.Boolean
+      description: true if the @'System.Security.PermissionSet' is Unrestricted; otherwise, false.
+- uid: System.Security.PermissionSet.IsSubsetOf(System.Security.PermissionSet)
+  id: IsSubsetOf(System.Security.PermissionSet)
+  parent: System.Security.PermissionSet
+  href: System.Security.PermissionSet.yml
+  name: IsSubsetOf(PermissionSet)
+  fullName: System.Security.PermissionSet.IsSubsetOf(System.Security.PermissionSet)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/PermissionSet.cs
+    startLine: 623
+  assemblies:
+  - mscorlib
+  namespace: System.Security
+  summary: Determines whether the current @'System.Security.PermissionSet' is a subset of the specified @'System.Security.PermissionSet'.
+  syntax:
+    content: public bool IsSubsetOf(PermissionSet target)
+    content.vb: Public Function IsSubsetOf(target As PermissionSet) As Boolean
+    parameters:
+    - id: target
+      type: System.Security.PermissionSet
+      description: The permission set to test for the subset relationship. This must be either a @'System.Security.PermissionSet' or a @'System.Security.NamedPermissionSet'.
+    return:
+      type: System.Boolean
+      description: true if the current @'System.Security.PermissionSet' is a subset of the *target* parameter; otherwise, false.
+- uid: System.Security.PermissionSet.Intersect(System.Security.PermissionSet)
+  id: Intersect(System.Security.PermissionSet)
+  parent: System.Security.PermissionSet
+  href: System.Security.PermissionSet.yml
+  name: Intersect(PermissionSet)
+  fullName: System.Security.PermissionSet.Intersect(System.Security.PermissionSet)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/PermissionSet.cs
+    startLine: 930
+  assemblies:
+  - mscorlib
+  namespace: System.Security
+  summary: Creates and returns a permission set that is the intersection of the current @'System.Security.PermissionSet' and the specified @'System.Security.PermissionSet'.
+  syntax:
+    content: public PermissionSet Intersect(PermissionSet other)
+    content.vb: Public Function Intersect(other As PermissionSet) As PermissionSet
+    parameters:
+    - id: other
+      type: System.Security.PermissionSet
+      description: A permission set to intersect with the current @'System.Security.PermissionSet'.
+    return:
+      type: System.Security.PermissionSet
+      description: A new permission set that represents the intersection of the current @'System.Security.PermissionSet' and the specified target. This object is null if the intersection is empty.
+- uid: System.Security.PermissionSet.Union(System.Security.PermissionSet)
+  id: Union(System.Security.PermissionSet)
+  parent: System.Security.PermissionSet
+  href: System.Security.PermissionSet.yml
+  name: Union(PermissionSet)
+  fullName: System.Security.PermissionSet.Union(System.Security.PermissionSet)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/PermissionSet.cs
+    startLine: 1221
+  assemblies:
+  - mscorlib
+  namespace: System.Security
+  summary: Creates a @'System.Security.PermissionSet' that is the union of the current @'System.Security.PermissionSet' and the specified @'System.Security.PermissionSet'.
+  syntax:
+    content: public PermissionSet Union(PermissionSet other)
+    content.vb: Public Function Union(other As PermissionSet) As PermissionSet
+    parameters:
+    - id: other
+      type: System.Security.PermissionSet
+      description: The permission set to form the union with the current @'System.Security.PermissionSet'.
+    return:
+      type: System.Security.PermissionSet
+      description: A new permission set that represents the union of the current @'System.Security.PermissionSet' and the specified @'System.Security.PermissionSet'.
+- uid: System.Security.PermissionSet.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Security.PermissionSet
+  href: System.Security.PermissionSet.yml
+  name: Equals(Object)
+  fullName: System.Security.PermissionSet.Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/PermissionSet.cs
+    startLine: 1408
+  assemblies:
+  - mscorlib
+  namespace: System.Security
+  summary: Determines whether the specified @'System.Security.PermissionSet' or @'System.Security.NamedPermissionSet' object is equal to the current @'System.Security.PermissionSet'.
+  syntax:
+    content: public override bool Equals(object obj)
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current @'System.Security.PermissionSet'.
+    return:
+      type: System.Boolean
+      description: true if the specified object is equal to the current @'System.Security.PermissionSet' object; otherwise, false.
+  overridden: System.Object.Equals(System.Object)
+- uid: System.Security.PermissionSet.GetHashCode
+  id: GetHashCode
+  parent: System.Security.PermissionSet
+  href: System.Security.PermissionSet.yml
+  name: GetHashCode()
+  fullName: System.Security.PermissionSet.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/PermissionSet.cs
+    startLine: 1460
+  assemblies:
+  - mscorlib
+  namespace: System.Security
+  summary: Gets a hash code for the @'System.Security.PermissionSet' object that is suitable for use in hashing algorithms and data structures such as a hash table.
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: A hash code for the current @'System.Security.PermissionSet' object.
+  overridden: System.Object.GetHashCode
+- uid: System.Security.PermissionSet.Demand
+  id: Demand
+  parent: System.Security.PermissionSet
+  href: System.Security.PermissionSet.yml
+  name: Demand()
+  fullName: System.Security.PermissionSet.Demand()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/PermissionSet.cs
+    startLine: 1488
+  assemblies:
+  - mscorlib
+  namespace: System.Security
+  summary: Forces a @'System.Security.SecurityException' at run time if all callers higher in the call stack have not been granted the permissions specified by the current instance.
+  syntax:
+    content: public void Demand()
+    content.vb: Public Sub Demand
+  exceptions:
+  - type: System.Security.SecurityException
+    description: A caller in the call chain does not have the permission demanded.
+- uid: System.Security.PermissionSet.Assert
+  id: Assert
+  parent: System.Security.PermissionSet
+  href: System.Security.PermissionSet.yml
+  name: Assert()
+  fullName: System.Security.PermissionSet.Assert()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/PermissionSet.cs
+    startLine: 1532
+  assemblies:
+  - mscorlib
+  namespace: System.Security
+  summary: Declares that the calling code can access the resource protected by a permission demand through the code that calls this method, even if callers higher in the stack have not been granted permission to access the resource. Using @'System.Security.PermissionSet.Assert' can create security vulnerabilities.
+  syntax:
+    content: public void Assert()
+    content.vb: Public Sub Assert
+  exceptions:
+  - type: System.Security.SecurityException
+    description: The @'System.Security.PermissionSet' instance asserted has not been granted to the asserting code.-or- There is already an active @'System.Security.PermissionSet.Assert' for the current frame.
+- uid: System.Security.PermissionSet.Deny
+  id: Deny
+  parent: System.Security.PermissionSet
+  href: System.Security.PermissionSet.yml
+  name: Deny()
+  fullName: System.Security.PermissionSet.Deny()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/PermissionSet.cs
+    startLine: 1544
+  assemblies:
+  - mscorlib
+  namespace: System.Security
+  summary: Causes any @'System.Security.PermissionSet.Demand' that passes through the calling code for a permission that has an intersection with a permission of a type contained in the current @'System.Security.PermissionSet' to fail.
+  syntax:
+    content: public void Deny()
+    content.vb: Public Sub Deny
+  exceptions:
+  - type: System.Security.SecurityException
+    description: A previous call to @'System.Security.PermissionSet.Deny' has already restricted the permissions for the current stack frame.
+- uid: System.Security.PermissionSet.PermitOnly
+  id: PermitOnly
+  parent: System.Security.PermissionSet
+  href: System.Security.PermissionSet.yml
+  name: PermitOnly()
+  fullName: System.Security.PermissionSet.PermitOnly()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/PermissionSet.cs
+    startLine: 1557
+  assemblies:
+  - mscorlib
+  namespace: System.Security
+  summary: Causes any @'System.Security.PermissionSet.Demand' that passes through the calling code for any @'System.Security.PermissionSet' that is not a subset of the current @'System.Security.PermissionSet' to fail.
+  syntax:
+    content: public void PermitOnly()
+    content.vb: Public Sub PermitOnly
+- uid: System.Security.PermissionSet.Copy
+  id: Copy
+  parent: System.Security.PermissionSet
+  href: System.Security.PermissionSet.yml
+  name: Copy()
+  fullName: System.Security.PermissionSet.Copy()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/PermissionSet.cs
+    startLine: 1575
+  assemblies:
+  - mscorlib
+  namespace: System.Security
+  summary: Creates a copy of the @'System.Security.PermissionSet'.
+  syntax:
+    content: public virtual PermissionSet Copy()
+    content.vb: Public Overridable Function Copy As PermissionSet
+    return:
+      type: System.Security.PermissionSet
+      description: A copy of the @'System.Security.PermissionSet'.
+- uid: System.Security.PermissionSet.GetEnumerator
+  id: GetEnumerator
+  parent: System.Security.PermissionSet
+  href: System.Security.PermissionSet.yml
+  name: GetEnumerator()
+  fullName: System.Security.PermissionSet.GetEnumerator()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/PermissionSet.cs
+    startLine: 1601
+  assemblies:
+  - mscorlib
+  namespace: System.Security
+  summary: Returns an enumerator for the permissions of the set.
+  syntax:
+    content: public IEnumerator GetEnumerator()
+    content.vb: Public Function GetEnumerator As IEnumerator
+    return:
+      type: System.Collections.IEnumerator
+      description: An enumerator object for the permissions of the set.
+- uid: System.Security.PermissionSet.GetEnumeratorImpl
+  id: GetEnumeratorImpl
+  parent: System.Security.PermissionSet
+  href: System.Security.PermissionSet.yml
+  name: GetEnumeratorImpl()
+  fullName: System.Security.PermissionSet.GetEnumeratorImpl()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/PermissionSet.cs
+    startLine: 1606
+  assemblies:
+  - mscorlib
+  namespace: System.Security
+  summary: Returns an enumerator for the permissions of the set.
+  syntax:
+    content: protected virtual IEnumerator GetEnumeratorImpl()
+    content.vb: Protected Overridable Function GetEnumeratorImpl As IEnumerator
+    return:
+      type: System.Collections.IEnumerator
+      description: An enumerator object for the permissions of the set.
+- uid: System.Security.PermissionSet.ContainsNonCodeAccessPermissions
+  id: ContainsNonCodeAccessPermissions
+  parent: System.Security.PermissionSet
+  href: System.Security.PermissionSet.yml
+  name: ContainsNonCodeAccessPermissions()
+  fullName: System.Security.PermissionSet.ContainsNonCodeAccessPermissions()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/PermissionSet.cs
+    startLine: 2249
+  assemblies:
+  - mscorlib
+  namespace: System.Security
+  summary: Gets a value indicating whether the @'System.Security.PermissionSet' contains permissions that are not derived from @'System.Security.CodeAccessPermission'.
+  syntax:
+    content: public bool ContainsNonCodeAccessPermissions()
+    content.vb: Public Function ContainsNonCodeAccessPermissions As Boolean
+    return:
+      type: System.Boolean
+      description: true if the @'System.Security.PermissionSet' contains permissions that are not derived from @'System.Security.CodeAccessPermission'; otherwise, false.
+- uid: System.Security.PermissionSet.RevertAssert
+  id: RevertAssert
+  parent: System.Security.PermissionSet
+  href: System.Security.PermissionSet.yml
+  name: RevertAssert()
+  fullName: System.Security.PermissionSet.RevertAssert()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Security/PermissionSet.cs
+    startLine: 2498
+  assemblies:
+  - mscorlib
+  namespace: System.Security
+  summary: Causes any previous @'System.Security.CodeAccessPermission.Assert' for the current frame to be removed and no longer be in effect.
+  syntax:
+    content: public static void RevertAssert()
+    content.vb: Public Shared Sub RevertAssert
+  exceptions:
+  - type: System.InvalidOperationException
+    description: There is no previous @'System.Security.CodeAccessPermission.Assert' for the current frame.
+references:
+- uid: System.Security
+  isExternal: false
+  name: System.Security
+  fullName: System.Security
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Security.Permissions.PermissionState
+  parent: System.Security.Permissions
+  isExternal: false
+  href: System.Security.Permissions.PermissionState.yml
+  name: PermissionState
+  fullName: System.Security.Permissions.PermissionState
+  type: Enum
+- uid: System.Security.Permissions
+  isExternal: false
+  name: System.Security.Permissions
+  fullName: System.Security.Permissions
+  type: Namespace
+- uid: System.Security.PermissionSet
+  parent: System.Security
+  isExternal: false
+  href: System.Security.PermissionSet.yml
+  name: PermissionSet
+  fullName: System.Security.PermissionSet
+  type: Class
+- uid: System.Array
+  parent: System
+  isExternal: true
+  name: Array
+  fullName: System.Array
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Security.IPermission
+  parent: System.Security
+  isExternal: false
+  href: System.Security.IPermission.yml
+  name: IPermission
+  fullName: System.Security.IPermission
+  type: Interface
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  isExternal: false
+  name: System.Collections
+  fullName: System.Collections

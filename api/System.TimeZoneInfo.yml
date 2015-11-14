@@ -1,0 +1,1591 @@
+items:
+- uid: System.TimeZoneInfo
+  id: TimeZoneInfo
+  parent: System
+  children:
+  - System.TimeZoneInfo.BaseUtcOffset
+  - System.TimeZoneInfo.ClearCachedData
+  - System.TimeZoneInfo.ConvertTime(System.DateTime,System.TimeZoneInfo)
+  - System.TimeZoneInfo.ConvertTime(System.DateTime,System.TimeZoneInfo,System.TimeZoneInfo)
+  - System.TimeZoneInfo.ConvertTime(System.DateTimeOffset,System.TimeZoneInfo)
+  - System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId(System.DateTime,System.String)
+  - System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId(System.DateTime,System.String,System.String)
+  - System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId(System.DateTimeOffset,System.String)
+  - System.TimeZoneInfo.ConvertTimeFromUtc(System.DateTime,System.TimeZoneInfo)
+  - System.TimeZoneInfo.ConvertTimeToUtc(System.DateTime)
+  - System.TimeZoneInfo.ConvertTimeToUtc(System.DateTime,System.TimeZoneInfo)
+  - System.TimeZoneInfo.CreateCustomTimeZone(System.String,System.TimeSpan,System.String,System.String)
+  - System.TimeZoneInfo.CreateCustomTimeZone(System.String,System.TimeSpan,System.String,System.String,System.String,System.TimeZoneInfo.AdjustmentRule[])
+  - System.TimeZoneInfo.CreateCustomTimeZone(System.String,System.TimeSpan,System.String,System.String,System.String,System.TimeZoneInfo.AdjustmentRule[],System.Boolean)
+  - System.TimeZoneInfo.DaylightName
+  - System.TimeZoneInfo.DisplayName
+  - System.TimeZoneInfo.Equals(System.Object)
+  - System.TimeZoneInfo.Equals(System.TimeZoneInfo)
+  - System.TimeZoneInfo.FindSystemTimeZoneById(System.String)
+  - System.TimeZoneInfo.FromSerializedString(System.String)
+  - System.TimeZoneInfo.GetAdjustmentRules
+  - System.TimeZoneInfo.GetAmbiguousTimeOffsets(System.DateTime)
+  - System.TimeZoneInfo.GetAmbiguousTimeOffsets(System.DateTimeOffset)
+  - System.TimeZoneInfo.GetHashCode
+  - System.TimeZoneInfo.GetSystemTimeZones
+  - System.TimeZoneInfo.GetUtcOffset(System.DateTime)
+  - System.TimeZoneInfo.GetUtcOffset(System.DateTimeOffset)
+  - System.TimeZoneInfo.HasSameRules(System.TimeZoneInfo)
+  - System.TimeZoneInfo.Id
+  - System.TimeZoneInfo.IsAmbiguousTime(System.DateTime)
+  - System.TimeZoneInfo.IsAmbiguousTime(System.DateTimeOffset)
+  - System.TimeZoneInfo.IsDaylightSavingTime(System.DateTime)
+  - System.TimeZoneInfo.IsDaylightSavingTime(System.DateTimeOffset)
+  - System.TimeZoneInfo.IsInvalidTime(System.DateTime)
+  - System.TimeZoneInfo.Local
+  - System.TimeZoneInfo.StandardName
+  - System.TimeZoneInfo.SupportsDaylightSavingTime
+  - System.TimeZoneInfo.ToSerializedString
+  - System.TimeZoneInfo.ToString
+  - System.TimeZoneInfo.Utc
+  href: System.TimeZoneInfo.yml
+  name: TimeZoneInfo
+  fullName: System.TimeZoneInfo
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/TimeZoneInfo.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 51
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Represents any time zone in the world.
+  syntax:
+    content: 'public sealed class TimeZoneInfo : IEquatable<TimeZoneInfo>, ISerializable, IDeserializationCallback'
+    content.vb: Public NotInheritable Class TimeZoneInfo Implements IEquatable(Of TimeZoneInfo), ISerializable, IDeserializationCallback
+  inheritance:
+  - System.Object
+  implements:
+  - System.IEquatable{System.TimeZoneInfo}
+  - System.Runtime.Serialization.ISerializable
+  - System.Runtime.Serialization.IDeserializationCallback
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.TimeZoneInfo.Id
+  id: Id
+  parent: System.TimeZoneInfo
+  href: System.TimeZoneInfo.yml
+  name: Id
+  fullName: System.TimeZoneInfo.Id
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 282
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the time zone identifier.
+  syntax:
+    content: public string Id { get; }
+    content.vb: Public ReadOnly Property Id As String
+    parameters: []
+    return:
+      type: System.String
+      description: The time zone identifier.
+- uid: System.TimeZoneInfo.DisplayName
+  id: DisplayName
+  parent: System.TimeZoneInfo
+  href: System.TimeZoneInfo.yml
+  name: DisplayName
+  fullName: System.TimeZoneInfo.DisplayName
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 288
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the general display name that represents the time zone.
+  syntax:
+    content: public string DisplayName { get; }
+    content.vb: Public ReadOnly Property DisplayName As String
+    parameters: []
+    return:
+      type: System.String
+      description: The time zone's general display name.
+- uid: System.TimeZoneInfo.StandardName
+  id: StandardName
+  parent: System.TimeZoneInfo
+  href: System.TimeZoneInfo.yml
+  name: StandardName
+  fullName: System.TimeZoneInfo.StandardName
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 294
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the display name for the time zone's standard time.
+  syntax:
+    content: public string StandardName { get; }
+    content.vb: Public ReadOnly Property StandardName As String
+    parameters: []
+    return:
+      type: System.String
+      description: The display name of the time zone's standard time.
+- uid: System.TimeZoneInfo.DaylightName
+  id: DaylightName
+  parent: System.TimeZoneInfo
+  href: System.TimeZoneInfo.yml
+  name: DaylightName
+  fullName: System.TimeZoneInfo.DaylightName
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 300
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the display name for the current time zone's daylight saving time.
+  syntax:
+    content: public string DaylightName { get; }
+    content.vb: Public ReadOnly Property DaylightName As String
+    parameters: []
+    return:
+      type: System.String
+      description: The display name for the time zone's daylight saving time.
+- uid: System.TimeZoneInfo.BaseUtcOffset
+  id: BaseUtcOffset
+  parent: System.TimeZoneInfo
+  href: System.TimeZoneInfo.yml
+  name: BaseUtcOffset
+  fullName: System.TimeZoneInfo.BaseUtcOffset
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 306
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets the time difference between the current time zone's standard time and Coordinated Universal Time (UTC).
+  syntax:
+    content: public TimeSpan BaseUtcOffset { get; }
+    content.vb: Public ReadOnly Property BaseUtcOffset As TimeSpan
+    parameters: []
+    return:
+      type: System.TimeSpan
+      description: An object that indicates the time difference between the current time zone's standard time and Coordinated Universal Time (UTC).
+- uid: System.TimeZoneInfo.SupportsDaylightSavingTime
+  id: SupportsDaylightSavingTime
+  parent: System.TimeZoneInfo
+  href: System.TimeZoneInfo.yml
+  name: SupportsDaylightSavingTime
+  fullName: System.TimeZoneInfo.SupportsDaylightSavingTime
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 312
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets a value indicating whether the time zone has any daylight saving time rules.
+  syntax:
+    content: public bool SupportsDaylightSavingTime { get; }
+    content.vb: Public ReadOnly Property SupportsDaylightSavingTime As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the time zone supports daylight saving time; otherwise, false.
+- uid: System.TimeZoneInfo.GetAdjustmentRules
+  id: GetAdjustmentRules
+  parent: System.TimeZoneInfo
+  href: System.TimeZoneInfo.yml
+  name: GetAdjustmentRules()
+  fullName: System.TimeZoneInfo.GetAdjustmentRules()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 326
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Retrieves an array of @'System.TimeZoneInfo.AdjustmentRule' objects that apply to the current @'System.TimeZoneInfo' object.
+  syntax:
+    content: public TimeZoneInfo.AdjustmentRule[] GetAdjustmentRules()
+    content.vb: Public Function GetAdjustmentRules As TimeZoneInfo.AdjustmentRule()
+    return:
+      type: System.TimeZoneInfo.AdjustmentRule[]
+      description: An array of objects for this time zone.
+  exceptions:
+  - type: System.OutOfMemoryException
+    description: The system does not have enough memory to make an in-memory copy of the adjustment rules.
+- uid: System.TimeZoneInfo.GetAmbiguousTimeOffsets(System.DateTimeOffset)
+  id: GetAmbiguousTimeOffsets(System.DateTimeOffset)
+  parent: System.TimeZoneInfo
+  href: System.TimeZoneInfo.yml
+  name: GetAmbiguousTimeOffsets(DateTimeOffset)
+  fullName: System.TimeZoneInfo.GetAmbiguousTimeOffsets(System.DateTimeOffset)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 342
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns information about the possible dates and times that an ambiguous date and time can be mapped to.
+  syntax:
+    content: public TimeSpan[] GetAmbiguousTimeOffsets(DateTimeOffset dateTimeOffset)
+    content.vb: Public Function GetAmbiguousTimeOffsets(dateTimeOffset As DateTimeOffset) As TimeSpan()
+    parameters:
+    - id: dateTimeOffset
+      type: System.DateTimeOffset
+      description: A date and time.
+    return:
+      type: System.TimeSpan[]
+      description: An array of objects that represents possible Coordinated Universal Time (UTC) offsets that a particular date and time can be mapped to.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*dateTimeOffset* is not an ambiguous time.'
+- uid: System.TimeZoneInfo.GetAmbiguousTimeOffsets(System.DateTime)
+  id: GetAmbiguousTimeOffsets(System.DateTime)
+  parent: System.TimeZoneInfo
+  href: System.TimeZoneInfo.yml
+  name: GetAmbiguousTimeOffsets(DateTime)
+  fullName: System.TimeZoneInfo.GetAmbiguousTimeOffsets(System.DateTime)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 379
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns information about the possible dates and times that an ambiguous date and time can be mapped to.
+  syntax:
+    content: public TimeSpan[] GetAmbiguousTimeOffsets(DateTime dateTime)
+    content.vb: Public Function GetAmbiguousTimeOffsets(dateTime As Date) As TimeSpan()
+    parameters:
+    - id: dateTime
+      type: System.DateTime
+      description: A date and time.
+    return:
+      type: System.TimeSpan[]
+      description: An array of objects that represents possible Coordinated Universal Time (UTC) offsets that a particular date and time can be mapped to.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*dateTime* is not an ambiguous time.'
+- uid: System.TimeZoneInfo.GetUtcOffset(System.DateTimeOffset)
+  id: GetUtcOffset(System.DateTimeOffset)
+  parent: System.TimeZoneInfo
+  href: System.TimeZoneInfo.yml
+  name: GetUtcOffset(DateTimeOffset)
+  fullName: System.TimeZoneInfo.GetUtcOffset(System.DateTimeOffset)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 465
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Calculates the offset or difference between the time in this time zone and Coordinated Universal Time (UTC) for a particular date and time.
+  syntax:
+    content: public TimeSpan GetUtcOffset(DateTimeOffset dateTimeOffset)
+    content.vb: Public Function GetUtcOffset(dateTimeOffset As DateTimeOffset) As TimeSpan
+    parameters:
+    - id: dateTimeOffset
+      type: System.DateTimeOffset
+      description: The date and time to determine the offset for.
+    return:
+      type: System.TimeSpan
+      description: An object that indicates the time difference between Coordinated Universal Time (UTC) and the current time zone.
+- uid: System.TimeZoneInfo.GetUtcOffset(System.DateTime)
+  id: GetUtcOffset(System.DateTime)
+  parent: System.TimeZoneInfo
+  href: System.TimeZoneInfo.yml
+  name: GetUtcOffset(DateTime)
+  fullName: System.TimeZoneInfo.GetUtcOffset(System.DateTime)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 470
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Calculates the offset or difference between the time in this time zone and Coordinated Universal Time (UTC) for a particular date and time.
+  syntax:
+    content: public TimeSpan GetUtcOffset(DateTime dateTime)
+    content.vb: Public Function GetUtcOffset(dateTime As Date) As TimeSpan
+    parameters:
+    - id: dateTime
+      type: System.DateTime
+      description: The date and time to determine the offset for.
+    return:
+      type: System.TimeSpan
+      description: An object that indicates the time difference between the two time zones.
+- uid: System.TimeZoneInfo.IsAmbiguousTime(System.DateTimeOffset)
+  id: IsAmbiguousTime(System.DateTimeOffset)
+  parent: System.TimeZoneInfo
+  href: System.TimeZoneInfo.yml
+  name: IsAmbiguousTime(DateTimeOffset)
+  fullName: System.TimeZoneInfo.IsAmbiguousTime(System.DateTimeOffset)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 531
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Determines whether a particular date and time in a particular time zone is ambiguous and can be mapped to two or more Coordinated Universal Time (UTC) times.
+  syntax:
+    content: public bool IsAmbiguousTime(DateTimeOffset dateTimeOffset)
+    content.vb: Public Function IsAmbiguousTime(dateTimeOffset As DateTimeOffset) As Boolean
+    parameters:
+    - id: dateTimeOffset
+      type: System.DateTimeOffset
+      description: A date and time.
+    return:
+      type: System.Boolean
+      description: true if the *dateTimeOffset* parameter is ambiguous in the current time zone; otherwise, false.
+- uid: System.TimeZoneInfo.IsAmbiguousTime(System.DateTime)
+  id: IsAmbiguousTime(System.DateTime)
+  parent: System.TimeZoneInfo
+  href: System.TimeZoneInfo.yml
+  name: IsAmbiguousTime(DateTime)
+  fullName: System.TimeZoneInfo.IsAmbiguousTime(System.DateTime)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 541
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Determines whether a particular date and time in a particular time zone is ambiguous and can be mapped to two or more Coordinated Universal Time (UTC) times.
+  syntax:
+    content: public bool IsAmbiguousTime(DateTime dateTime)
+    content.vb: Public Function IsAmbiguousTime(dateTime As Date) As Boolean
+    parameters:
+    - id: dateTime
+      type: System.DateTime
+      description: A date and time value.
+    return:
+      type: System.Boolean
+      description: true if the *dateTime* parameter is ambiguous; otherwise, false.
+  exceptions:
+  - type: System.ArgumentException
+    description: The @'System.DateTime.Kind' property of the *dateTime* value is @'System.DateTimeKind.Local' and *dateTime* is an invalid time.
+- uid: System.TimeZoneInfo.IsDaylightSavingTime(System.DateTimeOffset)
+  id: IsDaylightSavingTime(System.DateTimeOffset)
+  parent: System.TimeZoneInfo
+  href: System.TimeZoneInfo.yml
+  name: IsDaylightSavingTime(DateTimeOffset)
+  fullName: System.TimeZoneInfo.IsDaylightSavingTime(System.DateTimeOffset)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 579
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether a specified date and time falls in the range of daylight saving time for the time zone of the current @'System.TimeZoneInfo' object.
+  syntax:
+    content: public bool IsDaylightSavingTime(DateTimeOffset dateTimeOffset)
+    content.vb: Public Function IsDaylightSavingTime(dateTimeOffset As DateTimeOffset) As Boolean
+    parameters:
+    - id: dateTimeOffset
+      type: System.DateTimeOffset
+      description: A date and time value.
+    return:
+      type: System.Boolean
+      description: true if the *dateTimeOffset* parameter is a daylight saving time; otherwise, false.
+- uid: System.TimeZoneInfo.IsDaylightSavingTime(System.DateTime)
+  id: IsDaylightSavingTime(System.DateTime)
+  parent: System.TimeZoneInfo
+  href: System.TimeZoneInfo.yml
+  name: IsDaylightSavingTime(DateTime)
+  fullName: System.TimeZoneInfo.IsDaylightSavingTime(System.DateTime)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 586
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether a specified date and time falls in the range of daylight saving time for the time zone of the current @'System.TimeZoneInfo' object.
+  syntax:
+    content: public bool IsDaylightSavingTime(DateTime dateTime)
+    content.vb: Public Function IsDaylightSavingTime(dateTime As Date) As Boolean
+    parameters:
+    - id: dateTime
+      type: System.DateTime
+      description: A date and time value.
+    return:
+      type: System.Boolean
+      description: true if the *dateTime* parameter is a daylight saving time; otherwise, false.
+  exceptions:
+  - type: System.ArgumentException
+    description: The @'System.DateTime.Kind' property of the *dateTime* value is @'System.DateTimeKind.Local' and *dateTime* is an invalid time.
+- uid: System.TimeZoneInfo.IsInvalidTime(System.DateTime)
+  id: IsInvalidTime(System.DateTime)
+  parent: System.TimeZoneInfo
+  href: System.TimeZoneInfo.yml
+  name: IsInvalidTime(DateTime)
+  fullName: System.TimeZoneInfo.IsInvalidTime(System.DateTime)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 657
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether a particular date and time is invalid.
+  syntax:
+    content: public bool IsInvalidTime(DateTime dateTime)
+    content.vb: Public Function IsInvalidTime(dateTime As Date) As Boolean
+    parameters:
+    - id: dateTime
+      type: System.DateTime
+      description: A date and time value.
+    return:
+      type: System.Boolean
+      description: true if *dateTime* is invalid; otherwise, false.
+- uid: System.TimeZoneInfo.ClearCachedData
+  id: ClearCachedData
+  parent: System.TimeZoneInfo
+  href: System.TimeZoneInfo.yml
+  name: ClearCachedData()
+  fullName: System.TimeZoneInfo.ClearCachedData()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 684
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Clears cached time zone data.
+  syntax:
+    content: public static void ClearCachedData()
+    content.vb: Public Shared Sub ClearCachedData
+- uid: System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId(System.DateTimeOffset,System.String)
+  id: ConvertTimeBySystemTimeZoneId(System.DateTimeOffset,System.String)
+  parent: System.TimeZoneInfo
+  href: System.TimeZoneInfo.yml
+  name: ConvertTimeBySystemTimeZoneId(DateTimeOffset, String)
+  fullName: System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId(System.DateTimeOffset, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 695
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts a time to the time in another time zone based on the time zone's identifier.
+  syntax:
+    content: public static DateTimeOffset ConvertTimeBySystemTimeZoneId(DateTimeOffset dateTimeOffset, string destinationTimeZoneId)
+    content.vb: Public Shared Function ConvertTimeBySystemTimeZoneId(dateTimeOffset As DateTimeOffset, destinationTimeZoneId As String) As DateTimeOffset
+    parameters:
+    - id: dateTimeOffset
+      type: System.DateTimeOffset
+      description: The date and time to convert.
+    - id: destinationTimeZoneId
+      type: System.String
+      description: The identifier of the destination time zone.
+    return:
+      type: System.DateTimeOffset
+      description: The date and time in the destination time zone.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*destinationTimeZoneId* is null.'
+  - type: System.InvalidTimeZoneException
+    description: The time zone identifier was found but the registry data is corrupted.
+  - type: System.Security.SecurityException
+    description: The process does not have the permissions required to read from the registry key that contains the time zone information.
+  - type: System.TimeZoneNotFoundException
+    description: The *destinationTimeZoneId* identifier was not found on the local system.
+- uid: System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId(System.DateTime,System.String)
+  id: ConvertTimeBySystemTimeZoneId(System.DateTime,System.String)
+  parent: System.TimeZoneInfo
+  href: System.TimeZoneInfo.yml
+  name: ConvertTimeBySystemTimeZoneId(DateTime, String)
+  fullName: System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId(System.DateTime, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 699
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts a time to the time in another time zone based on the time zone's identifier.
+  syntax:
+    content: public static DateTime ConvertTimeBySystemTimeZoneId(DateTime dateTime, string destinationTimeZoneId)
+    content.vb: Public Shared Function ConvertTimeBySystemTimeZoneId(dateTime As Date, destinationTimeZoneId As String) As Date
+    parameters:
+    - id: dateTime
+      type: System.DateTime
+      description: The date and time to convert.
+    - id: destinationTimeZoneId
+      type: System.String
+      description: The identifier of the destination time zone.
+    return:
+      type: System.DateTime
+      description: The date and time in the destination time zone.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*destinationTimeZoneId* is null.'
+  - type: System.InvalidTimeZoneException
+    description: The time zone identifier was found, but the registry data is corrupted.
+  - type: System.Security.SecurityException
+    description: The process does not have the permissions required to read from the registry key that contains the time zone information.
+  - type: System.TimeZoneNotFoundException
+    description: The *destinationTimeZoneId* identifier was not found on the local system.
+- uid: System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId(System.DateTime,System.String,System.String)
+  id: ConvertTimeBySystemTimeZoneId(System.DateTime,System.String,System.String)
+  parent: System.TimeZoneInfo
+  href: System.TimeZoneInfo.yml
+  name: ConvertTimeBySystemTimeZoneId(DateTime, String, String)
+  fullName: System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId(System.DateTime, System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 703
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts a time from one time zone to another based on time zone identifiers.
+  syntax:
+    content: public static DateTime ConvertTimeBySystemTimeZoneId(DateTime dateTime, string sourceTimeZoneId, string destinationTimeZoneId)
+    content.vb: Public Shared Function ConvertTimeBySystemTimeZoneId(dateTime As Date, sourceTimeZoneId As String, destinationTimeZoneId As String) As Date
+    parameters:
+    - id: dateTime
+      type: System.DateTime
+      description: The date and time to convert.
+    - id: sourceTimeZoneId
+      type: System.String
+      description: The identifier of the source time zone.
+    - id: destinationTimeZoneId
+      type: System.String
+      description: The identifier of the destination time zone.
+    return:
+      type: System.DateTime
+      description: The date and time in the destination time zone that corresponds to the *dateTime* parameter in the source time zone.
+  exceptions:
+  - type: System.ArgumentException
+    description: The @'System.DateTime.Kind' property of the *dateTime* parameter does not correspond to the source time zone.-or-*dateTime* is an invalid time in the source time zone.
+  - type: System.ArgumentNullException
+    description: '*sourceTimeZoneId* is null.-or-*destinationTimeZoneId* is null.'
+  - type: System.InvalidTimeZoneException
+    description: The time zone identifiers were found, but the registry data is corrupted.
+  - type: System.Security.SecurityException
+    description: The process does not have the permissions required to read from the registry key that contains the time zone information.
+  - type: System.TimeZoneNotFoundException
+    description: The *sourceTimeZoneId* identifier was not found on the local system.-or-The *destinationTimeZoneId* identifier was not found on the local system.
+  - type: System.Security.SecurityException
+    description: The user does not have the permissions required to read from the registry keys that hold time zone data.
+- uid: System.TimeZoneInfo.ConvertTime(System.DateTimeOffset,System.TimeZoneInfo)
+  id: ConvertTime(System.DateTimeOffset,System.TimeZoneInfo)
+  parent: System.TimeZoneInfo
+  href: System.TimeZoneInfo.yml
+  name: ConvertTime(DateTimeOffset, TimeZoneInfo)
+  fullName: System.TimeZoneInfo.ConvertTime(System.DateTimeOffset, System.TimeZoneInfo)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 735
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts a time to the time in a particular time zone.
+  syntax:
+    content: public static DateTimeOffset ConvertTime(DateTimeOffset dateTimeOffset, TimeZoneInfo destinationTimeZone)
+    content.vb: Public Shared Function ConvertTime(dateTimeOffset As DateTimeOffset, destinationTimeZone As TimeZoneInfo) As DateTimeOffset
+    parameters:
+    - id: dateTimeOffset
+      type: System.DateTimeOffset
+      description: The date and time to convert.
+    - id: destinationTimeZone
+      type: System.TimeZoneInfo
+      description: The time zone to convert *dateTime* to.
+    return:
+      type: System.DateTimeOffset
+      description: The date and time in the destination time zone.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The value of the *destinationTimeZone* parameter is null.
+- uid: System.TimeZoneInfo.ConvertTime(System.DateTime,System.TimeZoneInfo)
+  id: ConvertTime(System.DateTime,System.TimeZoneInfo)
+  parent: System.TimeZoneInfo
+  href: System.TimeZoneInfo.yml
+  name: ConvertTime(DateTime, TimeZoneInfo)
+  fullName: System.TimeZoneInfo.ConvertTime(System.DateTime, System.TimeZoneInfo)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 759
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts a time to the time in a particular time zone.
+  syntax:
+    content: public static DateTime ConvertTime(DateTime dateTime, TimeZoneInfo destinationTimeZone)
+    content.vb: Public Shared Function ConvertTime(dateTime As Date, destinationTimeZone As TimeZoneInfo) As Date
+    parameters:
+    - id: dateTime
+      type: System.DateTime
+      description: The date and time to convert.
+    - id: destinationTimeZone
+      type: System.TimeZoneInfo
+      description: The time zone to convert *dateTime* to.
+    return:
+      type: System.DateTime
+      description: The date and time in the destination time zone.
+  exceptions:
+  - type: System.ArgumentException
+    description: The value of the *dateTime* parameter represents an invalid time.
+  - type: System.ArgumentNullException
+    description: The value of the *destinationTimeZone* parameter is null.
+- uid: System.TimeZoneInfo.ConvertTime(System.DateTime,System.TimeZoneInfo,System.TimeZoneInfo)
+  id: ConvertTime(System.DateTime,System.TimeZoneInfo,System.TimeZoneInfo)
+  parent: System.TimeZoneInfo
+  href: System.TimeZoneInfo.yml
+  name: ConvertTime(DateTime, TimeZoneInfo, TimeZoneInfo)
+  fullName: System.TimeZoneInfo.ConvertTime(System.DateTime, System.TimeZoneInfo, System.TimeZoneInfo)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 778
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts a time from one time zone to another.
+  syntax:
+    content: public static DateTime ConvertTime(DateTime dateTime, TimeZoneInfo sourceTimeZone, TimeZoneInfo destinationTimeZone)
+    content.vb: Public Shared Function ConvertTime(dateTime As Date, sourceTimeZone As TimeZoneInfo, destinationTimeZone As TimeZoneInfo) As Date
+    parameters:
+    - id: dateTime
+      type: System.DateTime
+      description: The date and time to convert.
+    - id: sourceTimeZone
+      type: System.TimeZoneInfo
+      description: The time zone of *dateTime*.
+    - id: destinationTimeZone
+      type: System.TimeZoneInfo
+      description: The time zone to convert *dateTime* to.
+    return:
+      type: System.DateTime
+      description: The date and time in the destination time zone that corresponds to the *dateTime* parameter in the source time zone.
+  exceptions:
+  - type: System.ArgumentException
+    description: The @'System.DateTime.Kind' property of the *dateTime* parameter is @'System.DateTimeKind.Local', but the *sourceTimeZone* parameter does not equal @'System.DateTimeKind.Local'. For more information, see the Remarks section. -or-The @'System.DateTime.Kind' property of the *dateTime* parameter is @'System.DateTimeKind.Utc', but the *sourceTimeZone* parameter does not equal @'System.TimeZoneInfo.Utc'.-or-The *dateTime* parameter is an invalid time (that is, it represents a time that does not exist because of a time zone's adjustment rules).
+  - type: System.ArgumentNullException
+    description: The *sourceTimeZone* parameter is null.-or-The *destinationTimeZone* parameter is null.
+- uid: System.TimeZoneInfo.ConvertTimeFromUtc(System.DateTime,System.TimeZoneInfo)
+  id: ConvertTimeFromUtc(System.DateTime,System.TimeZoneInfo)
+  parent: System.TimeZoneInfo
+  href: System.TimeZoneInfo.yml
+  name: ConvertTimeFromUtc(DateTime, TimeZoneInfo)
+  fullName: System.TimeZoneInfo.ConvertTimeFromUtc(System.DateTime, System.TimeZoneInfo)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 863
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts a Coordinated Universal Time (UTC) to the time in a specified time zone.
+  syntax:
+    content: public static DateTime ConvertTimeFromUtc(DateTime dateTime, TimeZoneInfo destinationTimeZone)
+    content.vb: Public Shared Function ConvertTimeFromUtc(dateTime As Date, destinationTimeZone As TimeZoneInfo) As Date
+    parameters:
+    - id: dateTime
+      type: System.DateTime
+      description: The Coordinated Universal Time (UTC).
+    - id: destinationTimeZone
+      type: System.TimeZoneInfo
+      description: The time zone to convert *dateTime* to.
+    return:
+      type: System.DateTime
+      description: The date and time in the destination time zone. Its @'System.DateTime.Kind' property is @'System.DateTimeKind.Utc' if *destinationTimeZone* is @'System.TimeZoneInfo.Utc'; otherwise, its @'System.DateTime.Kind' property is @'System.DateTimeKind.Unspecified'.
+  exceptions:
+  - type: System.ArgumentException
+    description: The @'System.DateTime.Kind' property of *dateTime* is @'System.DateTimeKind.Local'.
+  - type: System.ArgumentNullException
+    description: '*destinationTimeZone* is null.'
+- uid: System.TimeZoneInfo.ConvertTimeToUtc(System.DateTime)
+  id: ConvertTimeToUtc(System.DateTime)
+  parent: System.TimeZoneInfo
+  href: System.TimeZoneInfo.yml
+  name: ConvertTimeToUtc(DateTime)
+  fullName: System.TimeZoneInfo.ConvertTimeToUtc(System.DateTime)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 874
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the specified date and time to Coordinated Universal Time (UTC).
+  syntax:
+    content: public static DateTime ConvertTimeToUtc(DateTime dateTime)
+    content.vb: Public Shared Function ConvertTimeToUtc(dateTime As Date) As Date
+    parameters:
+    - id: dateTime
+      type: System.DateTime
+      description: The date and time to convert.
+    return:
+      type: System.DateTime
+      description: The Coordinated Universal Time (UTC) that corresponds to the *dateTime* parameter. The @'System.DateTime' value's @'System.DateTime.Kind' property is always set to @'System.DateTimeKind.Utc'.
+  exceptions:
+  - type: System.ArgumentException
+    description: TimeZoneInfo.Local.IsInvalidDateTime(*dateTime*) returns true.
+- uid: System.TimeZoneInfo.ConvertTimeToUtc(System.DateTime,System.TimeZoneInfo)
+  id: ConvertTimeToUtc(System.DateTime,System.TimeZoneInfo)
+  parent: System.TimeZoneInfo
+  href: System.TimeZoneInfo.yml
+  name: ConvertTimeToUtc(DateTime, TimeZoneInfo)
+  fullName: System.TimeZoneInfo.ConvertTimeToUtc(System.DateTime, System.TimeZoneInfo)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 891
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the time in a specified time zone to Coordinated Universal Time (UTC).
+  syntax:
+    content: public static DateTime ConvertTimeToUtc(DateTime dateTime, TimeZoneInfo sourceTimeZone)
+    content.vb: Public Shared Function ConvertTimeToUtc(dateTime As Date, sourceTimeZone As TimeZoneInfo) As Date
+    parameters:
+    - id: dateTime
+      type: System.DateTime
+      description: The date and time to convert.
+    - id: sourceTimeZone
+      type: System.TimeZoneInfo
+      description: The time zone of *dateTime*.
+    return:
+      type: System.DateTime
+      description: The Coordinated Universal Time (UTC) that corresponds to the *dateTime* parameter. The @'System.DateTime' object's @'System.DateTime.Kind' property is always set to @'System.DateTimeKind.Utc'.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*dateTime*.Kind is @''System.DateTimeKind.Utc'' and *sourceTimeZone* does not equal @''System.TimeZoneInfo.Utc''.-or-*dateTime*.Kind is @''System.DateTimeKind.Local'' and *sourceTimeZone* does not equal @''System.TimeZoneInfo.Local''.-or-*sourceTimeZone*.IsInvalidDateTime(*dateTime*) returns true.'
+  - type: System.ArgumentNullException
+    description: '*sourceTimeZone* is null.'
+- uid: System.TimeZoneInfo.Equals(System.TimeZoneInfo)
+  id: Equals(System.TimeZoneInfo)
+  parent: System.TimeZoneInfo
+  href: System.TimeZoneInfo.yml
+  name: Equals(TimeZoneInfo)
+  fullName: System.TimeZoneInfo.Equals(System.TimeZoneInfo)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 903
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Determines whether the current @'System.TimeZoneInfo' object and another @'System.TimeZoneInfo' object are equal.
+  syntax:
+    content: public bool Equals(TimeZoneInfo other)
+    content.vb: Public Function Equals(other As TimeZoneInfo) As Boolean
+    parameters:
+    - id: other
+      type: System.TimeZoneInfo
+      description: A second object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: true if the two @'System.TimeZoneInfo' objects are equal; otherwise, false.
+- uid: System.TimeZoneInfo.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.TimeZoneInfo
+  href: System.TimeZoneInfo.yml
+  name: Equals(Object)
+  fullName: System.TimeZoneInfo.Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 907
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Determines whether the current @'System.TimeZoneInfo' object and another object are equal.
+  syntax:
+    content: public override bool Equals(object obj)
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: A second object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: true if *obj* is a @'System.TimeZoneInfo' object that is equal to the current instance; otherwise, false.
+  overridden: System.Object.Equals(System.Object)
+- uid: System.TimeZoneInfo.FromSerializedString(System.String)
+  id: FromSerializedString(System.String)
+  parent: System.TimeZoneInfo
+  href: System.TimeZoneInfo.yml
+  name: FromSerializedString(String)
+  fullName: System.TimeZoneInfo.FromSerializedString(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 918
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Deserializes a string to re-create an original serialized @'System.TimeZoneInfo' object.
+  syntax:
+    content: public static TimeZoneInfo FromSerializedString(string source)
+    content.vb: Public Shared Function FromSerializedString(source As String) As TimeZoneInfo
+    parameters:
+    - id: source
+      type: System.String
+      description: The string representation of the serialized @'System.TimeZoneInfo' object.
+    return:
+      type: System.TimeZoneInfo
+      description: The original serialized object.
+  exceptions:
+  - type: System.ArgumentException
+    description: The *source* parameter is @'System.String.Empty'.
+  - type: System.ArgumentNullException
+    description: The *source* parameter is a null string.
+  - type: System.Runtime.Serialization.SerializationException
+    description: The source parameter cannot be deserialized back into a @'System.TimeZoneInfo' object.
+- uid: System.TimeZoneInfo.GetHashCode
+  id: GetHashCode
+  parent: System.TimeZoneInfo
+  href: System.TimeZoneInfo.yml
+  name: GetHashCode()
+  fullName: System.TimeZoneInfo.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 934
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Serves as a hash function for hashing algorithms and data structures such as hash tables.
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: A 32-bit signed integer that serves as the hash code for this @'System.TimeZoneInfo' object.
+  overridden: System.Object.GetHashCode
+- uid: System.TimeZoneInfo.GetSystemTimeZones
+  id: GetSystemTimeZones
+  parent: System.TimeZoneInfo
+  href: System.TimeZoneInfo.yml
+  name: GetSystemTimeZones()
+  fullName: System.TimeZoneInfo.GetSystemTimeZones()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 951
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns a sorted collection of all the time zones about which information is available on the local system.
+  syntax:
+    content: public static ReadOnlyCollection<TimeZoneInfo> GetSystemTimeZones()
+    content.vb: Public Shared Function GetSystemTimeZones As ReadOnlyCollection(Of TimeZoneInfo)
+    return:
+      type: System.Collections.ObjectModel.ReadOnlyCollection{System.TimeZoneInfo}
+      description: A read-only collection of @'System.TimeZoneInfo' objects.
+  exceptions:
+  - type: System.OutOfMemoryException
+    description: There is insufficient memory to store all time zone information.
+  - type: System.Security.SecurityException
+    description: The user does not have permission to read from the registry keys that contain time zone information.
+- uid: System.TimeZoneInfo.HasSameRules(System.TimeZoneInfo)
+  id: HasSameRules(System.TimeZoneInfo)
+  parent: System.TimeZoneInfo
+  href: System.TimeZoneInfo.yml
+  name: HasSameRules(TimeZoneInfo)
+  fullName: System.TimeZoneInfo.HasSameRules(System.TimeZoneInfo)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 1022
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Indicates whether the current object and another @'System.TimeZoneInfo' object have the same adjustment rules.
+  syntax:
+    content: public bool HasSameRules(TimeZoneInfo other)
+    content.vb: Public Function HasSameRules(other As TimeZoneInfo) As Boolean
+    parameters:
+    - id: other
+      type: System.TimeZoneInfo
+      description: A second object to compare with the current @'System.TimeZoneInfo' object.
+    return:
+      type: System.Boolean
+      description: true if the two time zones have identical adjustment rules and an identical base offset; otherwise, false.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *other* parameter is null.
+- uid: System.TimeZoneInfo.Local
+  id: Local
+  parent: System.TimeZoneInfo
+  href: System.TimeZoneInfo.yml
+  name: Local
+  fullName: System.TimeZoneInfo.Local
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 1071
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets a @'System.TimeZoneInfo' object that represents the local time zone.
+  syntax:
+    content: public static TimeZoneInfo Local { get; }
+    content.vb: Public Shared ReadOnly Property Local As TimeZoneInfo
+    parameters: []
+    return:
+      type: System.TimeZoneInfo
+      description: An object that represents the local time zone.
+- uid: System.TimeZoneInfo.ToSerializedString
+  id: ToSerializedString
+  parent: System.TimeZoneInfo
+  href: System.TimeZoneInfo.yml
+  name: ToSerializedString()
+  fullName: System.TimeZoneInfo.ToSerializedString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 1093
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Converts the current @'System.TimeZoneInfo' object to a serialized string.
+  syntax:
+    content: public string ToSerializedString()
+    content.vb: Public Function ToSerializedString As String
+    return:
+      type: System.String
+      description: A string that represents the current @'System.TimeZoneInfo' object.
+- uid: System.TimeZoneInfo.ToString
+  id: ToString
+  parent: System.TimeZoneInfo
+  href: System.TimeZoneInfo.yml
+  name: ToString()
+  fullName: System.TimeZoneInfo.ToString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 1104
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Returns the current @'System.TimeZoneInfo' object's display name.
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+      description: The value of the @'System.TimeZoneInfo.DisplayName' property of the current @'System.TimeZoneInfo' object.
+  overridden: System.Object.ToString
+- uid: System.TimeZoneInfo.Utc
+  id: Utc
+  parent: System.TimeZoneInfo
+  href: System.TimeZoneInfo.yml
+  name: Utc
+  fullName: System.TimeZoneInfo.Utc
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 1114
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Gets a @'System.TimeZoneInfo' object that represents the Coordinated Universal Time (UTC) zone.
+  syntax:
+    content: public static TimeZoneInfo Utc { get; }
+    content.vb: Public Shared ReadOnly Property Utc As TimeZoneInfo
+    parameters: []
+    return:
+      type: System.TimeZoneInfo
+      description: An object that represents the Coordinated Universal Time (UTC) zone.
+- uid: System.TimeZoneInfo.CreateCustomTimeZone(System.String,System.TimeSpan,System.String,System.String)
+  id: CreateCustomTimeZone(System.String,System.TimeSpan,System.String,System.String)
+  parent: System.TimeZoneInfo
+  href: System.TimeZoneInfo.yml
+  name: CreateCustomTimeZone(String, TimeSpan, String, String)
+  fullName: System.TimeZoneInfo.CreateCustomTimeZone(System.String, System.TimeSpan, System.String, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 1251
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Creates a custom time zone with a specified identifier, an offset from Coordinated Universal Time (UTC), a display name, and a standard time display name.
+  syntax:
+    content: public static TimeZoneInfo CreateCustomTimeZone(string id, TimeSpan baseUtcOffset, string displayName, string standardDisplayName)
+    content.vb: Public Shared Function CreateCustomTimeZone(id As String, baseUtcOffset As TimeSpan, displayName As String, standardDisplayName As String) As TimeZoneInfo
+    parameters:
+    - id: id
+      type: System.String
+      description: The time zone's identifier.
+    - id: baseUtcOffset
+      type: System.TimeSpan
+      description: An object that represents the time difference between this time zone and Coordinated Universal Time (UTC).
+    - id: displayName
+      type: System.String
+      description: The display name of the new time zone.
+    - id: standardDisplayName
+      type: System.String
+      description: The name of the new time zone's standard time.
+    return:
+      type: System.TimeZoneInfo
+      description: The new time zone.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *id* parameter is null.
+  - type: System.ArgumentException
+    description: The *id* parameter is an empty string ("").-or-The *baseUtcOffset* parameter does not represent a whole number of minutes.
+  - type: System.ArgumentOutOfRangeException
+    description: The *baseUtcOffset* parameter is greater than 14 hours or less than -14 hours.
+- uid: System.TimeZoneInfo.CreateCustomTimeZone(System.String,System.TimeSpan,System.String,System.String,System.String,System.TimeZoneInfo.AdjustmentRule[])
+  id: CreateCustomTimeZone(System.String,System.TimeSpan,System.String,System.String,System.String,System.TimeZoneInfo.AdjustmentRule[])
+  parent: System.TimeZoneInfo
+  href: System.TimeZoneInfo.yml
+  name: CreateCustomTimeZone(String, TimeSpan, String, String, String, TimeZoneInfo.AdjustmentRule[])
+  name.vb: CreateCustomTimeZone(String, TimeSpan, String, String, String, TimeZoneInfo.AdjustmentRule())
+  fullName: System.TimeZoneInfo.CreateCustomTimeZone(System.String, System.TimeSpan, System.String, System.String, System.String, System.TimeZoneInfo.AdjustmentRule[])
+  fullName.vb: System.TimeZoneInfo.CreateCustomTimeZone(System.String, System.TimeSpan, System.String, System.String, System.String, System.TimeZoneInfo.AdjustmentRule())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 1273
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Creates a custom time zone with a specified identifier, an offset from Coordinated Universal Time (UTC), a display name, a standard time name, a daylight saving time name, and daylight saving time rules.
+  syntax:
+    content: public static TimeZoneInfo CreateCustomTimeZone(string id, TimeSpan baseUtcOffset, string displayName, string standardDisplayName, string daylightDisplayName, TimeZoneInfo.AdjustmentRule[] adjustmentRules)
+    content.vb: Public Shared Function CreateCustomTimeZone(id As String, baseUtcOffset As TimeSpan, displayName As String, standardDisplayName As String, daylightDisplayName As String, adjustmentRules As TimeZoneInfo.AdjustmentRule()) As TimeZoneInfo
+    parameters:
+    - id: id
+      type: System.String
+      description: The time zone's identifier.
+    - id: baseUtcOffset
+      type: System.TimeSpan
+      description: An object that represents the time difference between this time zone and Coordinated Universal Time (UTC).
+    - id: displayName
+      type: System.String
+      description: The display name of the new time zone.
+    - id: standardDisplayName
+      type: System.String
+      description: The new time zone's standard time name.
+    - id: daylightDisplayName
+      type: System.String
+      description: The daylight saving time name of the new time zone.
+    - id: adjustmentRules
+      type: System.TimeZoneInfo.AdjustmentRule[]
+      description: An array that augments the base UTC offset for a particular period.
+    return:
+      type: System.TimeZoneInfo
+      description: A @'System.TimeZoneInfo' object that represents the new time zone.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *id* parameter is null.
+  - type: System.ArgumentException
+    description: The *id* parameter is an empty string ("").-or-The *baseUtcOffset* parameter does not represent a whole number of minutes.
+  - type: System.ArgumentOutOfRangeException
+    description: The *baseUtcOffset* parameter is greater than 14 hours or less than -14 hours.
+  - type: System.InvalidTimeZoneException
+    description: The adjustment rules specified in the *adjustmentRules* parameter overlap.-or-The adjustment rules specified in the *adjustmentRules* parameter are not in chronological order.-or-One or more elements in *adjustmentRules* are null.-or-A date can have multiple adjustment rules applied to it.-or-The sum of the *baseUtcOffset* parameter and the @'System.TimeZoneInfo.AdjustmentRule.DaylightDelta' value of one or more objects in the *adjustmentRules* array is greater than 14 hours or less than -14 hours.
+- uid: System.TimeZoneInfo.CreateCustomTimeZone(System.String,System.TimeSpan,System.String,System.String,System.String,System.TimeZoneInfo.AdjustmentRule[],System.Boolean)
+  id: CreateCustomTimeZone(System.String,System.TimeSpan,System.String,System.String,System.String,System.TimeZoneInfo.AdjustmentRule[],System.Boolean)
+  parent: System.TimeZoneInfo
+  href: System.TimeZoneInfo.yml
+  name: CreateCustomTimeZone(String, TimeSpan, String, String, String, TimeZoneInfo.AdjustmentRule[], Boolean)
+  name.vb: CreateCustomTimeZone(String, TimeSpan, String, String, String, TimeZoneInfo.AdjustmentRule(), Boolean)
+  fullName: System.TimeZoneInfo.CreateCustomTimeZone(System.String, System.TimeSpan, System.String, System.String, System.String, System.TimeZoneInfo.AdjustmentRule[], System.Boolean)
+  fullName.vb: System.TimeZoneInfo.CreateCustomTimeZone(System.String, System.TimeSpan, System.String, System.String, System.String, System.TimeZoneInfo.AdjustmentRule(), System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 1301
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Creates a custom time zone with a specified identifier, an offset from Coordinated Universal Time (UTC), a display name, a standard time name, a daylight saving time name, daylight saving time rules, and a value that indicates whether the returned object reflects daylight saving time information.
+  syntax:
+    content: public static TimeZoneInfo CreateCustomTimeZone(string id, TimeSpan baseUtcOffset, string displayName, string standardDisplayName, string daylightDisplayName, TimeZoneInfo.AdjustmentRule[] adjustmentRules, bool disableDaylightSavingTime)
+    content.vb: Public Shared Function CreateCustomTimeZone(id As String, baseUtcOffset As TimeSpan, displayName As String, standardDisplayName As String, daylightDisplayName As String, adjustmentRules As TimeZoneInfo.AdjustmentRule(), disableDaylightSavingTime As Boolean) As TimeZoneInfo
+    parameters:
+    - id: id
+      type: System.String
+      description: The time zone's identifier.
+    - id: baseUtcOffset
+      type: System.TimeSpan
+      description: A @'System.TimeSpan' object that represents the time difference between this time zone and Coordinated Universal Time (UTC).
+    - id: displayName
+      type: System.String
+      description: The display name of the new time zone.
+    - id: standardDisplayName
+      type: System.String
+      description: The standard time name of the new time zone.
+    - id: daylightDisplayName
+      type: System.String
+      description: The daylight saving time name of the new time zone.
+    - id: adjustmentRules
+      type: System.TimeZoneInfo.AdjustmentRule[]
+      description: An array of @'System.TimeZoneInfo.AdjustmentRule' objects that augment the base UTC offset for a particular period.
+    - id: disableDaylightSavingTime
+      type: System.Boolean
+      description: true to discard any daylight saving time-related information present in *adjustmentRules* with the new object; otherwise, false.
+    return:
+      type: System.TimeZoneInfo
+      description: The new time zone. If the *disableDaylightSavingTime* parameter is true, the returned object has no daylight saving time data.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *id* parameter is null.
+  - type: System.ArgumentException
+    description: The *id* parameter is an empty string ("").-or-The *baseUtcOffset* parameter does not represent a whole number of minutes.
+  - type: System.ArgumentOutOfRangeException
+    description: The *baseUtcOffset* parameter is greater than 14 hours or less than -14 hours.
+  - type: System.InvalidTimeZoneException
+    description: The adjustment rules specified in the *adjustmentRules* parameter overlap.-or-The adjustment rules specified in the *adjustmentRules* parameter are not in chronological order.-or-One or more elements in *adjustmentRules* are null.-or-A date can have multiple adjustment rules applied to it.-or-The sum of the *baseUtcOffset* parameter and the @'System.TimeZoneInfo.AdjustmentRule.DaylightDelta' value of one or more objects in the *adjustmentRules* array is greater than 14 hours or less than -14 hours.
+- uid: System.TimeZoneInfo.FindSystemTimeZoneById(System.String)
+  id: FindSystemTimeZoneById(System.String)
+  parent: System.TimeZoneInfo
+  href: System.TimeZoneInfo.yml
+  name: FindSystemTimeZoneById(String)
+  fullName: System.TimeZoneInfo.FindSystemTimeZoneById(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/TimeZoneInfo.cs
+    startLine: 2540
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Retrieves a @'System.TimeZoneInfo' object from the registry based on its identifier.
+  syntax:
+    content: public static TimeZoneInfo FindSystemTimeZoneById(string id)
+    content.vb: Public Shared Function FindSystemTimeZoneById(id As String) As TimeZoneInfo
+    parameters:
+    - id: id
+      type: System.String
+      description: The time zone identifier, which corresponds to the @'System.TimeZoneInfo.Id' property.
+    return:
+      type: System.TimeZoneInfo
+      description: An object whose identifier is the value of the *id* parameter.
+  exceptions:
+  - type: System.OutOfMemoryException
+    description: The system does not have enough memory to hold information about the time zone.
+  - type: System.ArgumentNullException
+    description: The *id* parameter is null.
+  - type: System.TimeZoneNotFoundException
+    description: The time zone identifier specified by *id* was not found. This means that a registry key whose name matches *id* does not exist, or that the key exists but does not contain any time zone data.
+  - type: System.Security.SecurityException
+    description: The process does not have the permissions required to read from the registry key that contains the time zone information.
+  - type: System.InvalidTimeZoneException
+    description: The time zone identifier was found, but the registry data is corrupted.
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  fullName: System.TimeSpan
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.TimeZoneInfo.AdjustmentRule[]
+  isExternal: false
+  href: System.TimeZoneInfo.AdjustmentRule.yml
+  name: TimeZoneInfo.AdjustmentRule[]
+  name.vb: TimeZoneInfo.AdjustmentRule()
+  fullName: System.TimeZoneInfo.AdjustmentRule[]
+  fullName.vb: System.TimeZoneInfo.AdjustmentRule()
+  spec.csharp:
+  - uid: System.TimeZoneInfo.AdjustmentRule
+    name: TimeZoneInfo.AdjustmentRule
+    fullName: System.TimeZoneInfo.AdjustmentRule
+    href: System.TimeZoneInfo.AdjustmentRule.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.TimeZoneInfo.AdjustmentRule
+    name: TimeZoneInfo.AdjustmentRule
+    fullName: System.TimeZoneInfo.AdjustmentRule
+    href: System.TimeZoneInfo.AdjustmentRule.yml
+  - name: ()
+    fullName: ()
+- uid: System.DateTimeOffset
+  parent: System
+  isExternal: true
+  name: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: System.TimeSpan[]
+  isExternal: false
+  href: System.TimeSpan.yml
+  name: TimeSpan[]
+  name.vb: TimeSpan()
+  fullName: System.TimeSpan[]
+  fullName.vb: System.TimeSpan()
+  spec.csharp:
+  - uid: System.TimeSpan
+    name: TimeSpan
+    fullName: System.TimeSpan
+    href: System.TimeSpan.yml
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.TimeSpan
+    name: TimeSpan
+    fullName: System.TimeSpan
+    href: System.TimeSpan.yml
+  - name: ()
+    fullName: ()
+- uid: System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  fullName: System.DateTime
+- uid: System.TimeZoneInfo
+  parent: System
+  isExternal: false
+  href: System.TimeZoneInfo.yml
+  name: TimeZoneInfo
+  fullName: System.TimeZoneInfo
+  type: Class
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{System.TimeZoneInfo}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1
+  href: System.Collections.ObjectModel.ReadOnlyCollection`1.yml
+  name: ReadOnlyCollection<TimeZoneInfo>
+  name.vb: ReadOnlyCollection(Of TimeZoneInfo)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<System.TimeZoneInfo>
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of System.TimeZoneInfo)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    href: System.Collections.ObjectModel.ReadOnlyCollection`1.yml
+  - name: <
+    fullName: <
+  - uid: System.TimeZoneInfo
+    name: TimeZoneInfo
+    fullName: System.TimeZoneInfo
+    href: System.TimeZoneInfo.yml
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    href: System.Collections.ObjectModel.ReadOnlyCollection`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.TimeZoneInfo
+    name: TimeZoneInfo
+    fullName: System.TimeZoneInfo
+    href: System.TimeZoneInfo.yml
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+  parent: System.Collections.ObjectModel
+  isExternal: true
+  name: ReadOnlyCollection<T>
+  name.vb: ReadOnlyCollection(Of T)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.ObjectModel
+  isExternal: false
+  name: System.Collections.ObjectModel
+  fullName: System.Collections.ObjectModel
+  type: Namespace
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )

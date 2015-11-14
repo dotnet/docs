@@ -1,0 +1,1181 @@
+items:
+- uid: System.Security.Principal.WindowsPrincipal
+  id: WindowsPrincipal
+  parent: System.Security.Principal
+  children:
+  - System.Security.Principal.WindowsPrincipal.#ctor(System.Security.Principal.WindowsIdentity)
+  - System.Security.Principal.WindowsPrincipal.DeviceClaims
+  - System.Security.Principal.WindowsPrincipal.Identity
+  - System.Security.Principal.WindowsPrincipal.IsInRole(System.Int32)
+  - System.Security.Principal.WindowsPrincipal.IsInRole(System.Security.Principal.SecurityIdentifier)
+  - System.Security.Principal.WindowsPrincipal.IsInRole(System.Security.Principal.WindowsBuiltInRole)
+  - System.Security.Principal.WindowsPrincipal.IsInRole(System.String)
+  - System.Security.Principal.WindowsPrincipal.UserClaims
+  href: System.Security.Principal.WindowsPrincipal.yml
+  name: WindowsPrincipal
+  fullName: System.Security.Principal.WindowsPrincipal
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Security.Principal.Windows/src/System/Security/Principal/WindowsPrincipal.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/WindowsPrincipal.cs
+    startLine: 24
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Enables code to check the Windows group membership of a Windows user.
+  syntax:
+    content: 'public class WindowsPrincipal : ClaimsPrincipal, IPrincipal'
+    content.vb: Public Class WindowsPrincipal Inherits ClaimsPrincipal Implements IPrincipal
+  inheritance:
+  - System.Object
+  - System.Security.Claims.ClaimsPrincipal
+  implements:
+  - System.Security.Principal.IPrincipal
+  inheritedMembers:
+  - System.Security.Claims.ClaimsPrincipal.Clone
+  - System.Security.Claims.ClaimsPrincipal.CreateClaimsIdentity(System.IO.BinaryReader)
+  - System.Security.Claims.ClaimsPrincipal.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - System.Security.Claims.ClaimsPrincipal.AddIdentity(System.Security.Claims.ClaimsIdentity)
+  - System.Security.Claims.ClaimsPrincipal.AddIdentities(System.Collections.Generic.IEnumerable{System.Security.Claims.ClaimsIdentity})
+  - System.Security.Claims.ClaimsPrincipal.FindAll(System.Predicate{System.Security.Claims.Claim})
+  - System.Security.Claims.ClaimsPrincipal.FindAll(System.String)
+  - System.Security.Claims.ClaimsPrincipal.FindFirst(System.Predicate{System.Security.Claims.Claim})
+  - System.Security.Claims.ClaimsPrincipal.FindFirst(System.String)
+  - System.Security.Claims.ClaimsPrincipal.HasClaim(System.Predicate{System.Security.Claims.Claim})
+  - System.Security.Claims.ClaimsPrincipal.HasClaim(System.String,System.String)
+  - System.Security.Claims.ClaimsPrincipal.WriteTo(System.IO.BinaryWriter)
+  - System.Security.Claims.ClaimsPrincipal.WriteTo(System.IO.BinaryWriter,System.Byte[])
+  - System.Security.Claims.ClaimsPrincipal.PrimaryIdentitySelector
+  - System.Security.Claims.ClaimsPrincipal.ClaimsPrincipalSelector
+  - System.Security.Claims.ClaimsPrincipal.CustomSerializationData
+  - System.Security.Claims.ClaimsPrincipal.Claims
+  - System.Security.Claims.ClaimsPrincipal.Current
+  - System.Security.Claims.ClaimsPrincipal.Identities
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Security.Principal.WindowsPrincipal.#ctor(System.Security.Principal.WindowsIdentity)
+  id: '#ctor(System.Security.Principal.WindowsIdentity)'
+  parent: System.Security.Principal.WindowsPrincipal
+  href: System.Security.Principal.WindowsPrincipal.yml
+  name: WindowsPrincipal(WindowsIdentity)
+  fullName: System.Security.Principal.WindowsPrincipal.WindowsPrincipal(System.Security.Principal.WindowsIdentity)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/WindowsPrincipal.cs
+    startLine: 34
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Initializes a new instance of the @'System.Security.Principal.WindowsPrincipal' class by using the specified @'System.Security.Principal.WindowsIdentity' object.
+  syntax:
+    content: public WindowsPrincipal(WindowsIdentity ntIdentity)
+    content.vb: Public Sub New(ntIdentity As WindowsIdentity)
+    parameters:
+    - id: ntIdentity
+      type: System.Security.Principal.WindowsIdentity
+      description: The object from which to construct the new instance of @'System.Security.Principal.WindowsPrincipal'.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*ntIdentity* is null.'
+- uid: System.Security.Principal.WindowsPrincipal.Identity
+  id: Identity
+  parent: System.Security.Principal.WindowsPrincipal
+  href: System.Security.Principal.WindowsPrincipal.yml
+  name: Identity
+  fullName: System.Security.Principal.WindowsPrincipal.Identity
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/WindowsPrincipal.cs
+    startLine: 47
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Gets the identity of the current principal.
+  syntax:
+    content: public override IIdentity Identity { get; }
+    content.vb: Public Overrides ReadOnly Property Identity As IIdentity
+    parameters: []
+    return:
+      type: System.Security.Principal.IIdentity
+      description: The @'System.Security.Principal.WindowsIdentity' object of the current principal.
+  overridden: System.Security.Claims.ClaimsPrincipal.Identity
+- uid: System.Security.Principal.WindowsPrincipal.IsInRole(System.String)
+  id: IsInRole(System.String)
+  parent: System.Security.Principal.WindowsPrincipal
+  href: System.Security.Principal.WindowsPrincipal.yml
+  name: IsInRole(String)
+  fullName: System.Security.Principal.WindowsPrincipal.IsInRole(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/WindowsPrincipal.cs
+    startLine: 60
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Determines whether the current principal belongs to the Windows user group with the specified name.
+  syntax:
+    content: public override bool IsInRole(string role)
+    content.vb: Public Overrides Function IsInRole(role As String) As Boolean
+    parameters:
+    - id: role
+      type: System.String
+      description: The name of the Windows user group for which to check membership.
+    return:
+      type: System.Boolean
+      description: true if the current principal is a member of the specified Windows user group; otherwise, false.
+  overridden: System.Security.Claims.ClaimsPrincipal.IsInRole(System.String)
+- uid: System.Security.Principal.WindowsPrincipal.UserClaims
+  id: UserClaims
+  parent: System.Security.Principal.WindowsPrincipal
+  href: System.Security.Principal.WindowsPrincipal.yml
+  name: UserClaims
+  fullName: System.Security.Principal.WindowsPrincipal.UserClaims
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/WindowsPrincipal.cs
+    startLine: 88
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Gets all Windows user claims from this principal.
+  syntax:
+    content: public virtual IEnumerable<Claim> UserClaims { get; }
+    content.vb: Public Overridable ReadOnly Property UserClaims As IEnumerable(Of Claim)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Security.Claims.Claim}
+      description: A collection of all Windows user claims from this principal.
+- uid: System.Security.Principal.WindowsPrincipal.DeviceClaims
+  id: DeviceClaims
+  parent: System.Security.Principal.WindowsPrincipal
+  href: System.Security.Principal.WindowsPrincipal.yml
+  name: DeviceClaims
+  fullName: System.Security.Principal.WindowsPrincipal.DeviceClaims
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/WindowsPrincipal.cs
+    startLine: 110
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Gets all Windows device claims from this principal.
+  syntax:
+    content: public virtual IEnumerable<Claim> DeviceClaims { get; }
+    content.vb: Public Overridable ReadOnly Property DeviceClaims As IEnumerable(Of Claim)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Security.Claims.Claim}
+      description: A collection of all Windows device claims from this principal.
+- uid: System.Security.Principal.WindowsPrincipal.IsInRole(System.Security.Principal.WindowsBuiltInRole)
+  id: IsInRole(System.Security.Principal.WindowsBuiltInRole)
+  parent: System.Security.Principal.WindowsPrincipal
+  href: System.Security.Principal.WindowsPrincipal.yml
+  name: IsInRole(WindowsBuiltInRole)
+  fullName: System.Security.Principal.WindowsPrincipal.IsInRole(System.Security.Principal.WindowsBuiltInRole)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/WindowsPrincipal.cs
+    startLine: 128
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Determines whether the current principal belongs to the Windows user group with the specified @'System.Security.Principal.WindowsBuiltInRole'.
+  syntax:
+    content: public virtual bool IsInRole(WindowsBuiltInRole role)
+    content.vb: Public Overridable Function IsInRole(role As WindowsBuiltInRole) As Boolean
+    parameters:
+    - id: role
+      type: System.Security.Principal.WindowsBuiltInRole
+      description: One of the @'System.Security.Principal.WindowsBuiltInRole' values.
+    return:
+      type: System.Boolean
+      description: true if the current principal is a member of the specified Windows user group; otherwise, false.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*role* is not a valid @''System.Security.Principal.WindowsBuiltInRole'' value.'
+- uid: System.Security.Principal.WindowsPrincipal.IsInRole(System.Int32)
+  id: IsInRole(System.Int32)
+  parent: System.Security.Principal.WindowsPrincipal
+  href: System.Security.Principal.WindowsPrincipal.yml
+  name: IsInRole(Int32)
+  fullName: System.Security.Principal.WindowsPrincipal.IsInRole(System.Int32)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/WindowsPrincipal.cs
+    startLine: 137
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Determines whether the current principal belongs to the Windows user group with the specified relative identifier (RID).
+  syntax:
+    content: public virtual bool IsInRole(int rid)
+    content.vb: Public Overridable Function IsInRole(rid As Integer) As Boolean
+    parameters:
+    - id: rid
+      type: System.Int32
+      description: "The RID of the Windows user group in which to check for the principal’s membership status."
+    return:
+      type: System.Boolean
+      description: true if the current principal is a member of the specified Windows user group, that is, in a particular role; otherwise, false.
+- uid: System.Security.Principal.WindowsPrincipal.IsInRole(System.Security.Principal.SecurityIdentifier)
+  id: IsInRole(System.Security.Principal.SecurityIdentifier)
+  parent: System.Security.Principal.WindowsPrincipal
+  href: System.Security.Principal.WindowsPrincipal.yml
+  name: IsInRole(SecurityIdentifier)
+  fullName: System.Security.Principal.WindowsPrincipal.IsInRole(System.Security.Principal.SecurityIdentifier)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/WindowsPrincipal.cs
+    startLine: 150
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Determines whether the current principal belongs to the Windows user group with the specified security identifier (SID).
+  syntax:
+    content: public virtual bool IsInRole(SecurityIdentifier sid)
+    content.vb: Public Overridable Function IsInRole(sid As SecurityIdentifier) As Boolean
+    parameters:
+    - id: sid
+      type: System.Security.Principal.SecurityIdentifier
+      description: A @'System.Security.Principal.SecurityIdentifier'  that uniquely identifies a Windows user group.
+    return:
+      type: System.Boolean
+      description: true if the current principal is a member of the specified Windows user group; otherwise, false.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*sid* is null.'
+  - type: System.Security.SecurityException
+    description: Windows returned a Win32 error.
+references:
+- uid: System.Security.Principal
+  isExternal: false
+  name: System.Security.Principal
+  fullName: System.Security.Principal
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Security.Claims.ClaimsPrincipal
+  parent: System.Security.Claims
+  isExternal: true
+  name: ClaimsPrincipal
+  fullName: System.Security.Claims.ClaimsPrincipal
+- uid: System.Security.Claims.ClaimsPrincipal.Clone
+  parent: System.Security.Claims.ClaimsPrincipal
+  isExternal: true
+  name: Clone()
+  fullName: System.Security.Claims.ClaimsPrincipal.Clone()
+  spec.csharp:
+  - uid: System.Security.Claims.ClaimsPrincipal.Clone
+    name: Clone
+    fullName: System.Security.Claims.ClaimsPrincipal.Clone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Claims.ClaimsPrincipal.Clone
+    name: Clone
+    fullName: System.Security.Claims.ClaimsPrincipal.Clone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Security.Claims.ClaimsPrincipal.CreateClaimsIdentity(System.IO.BinaryReader)
+  parent: System.Security.Claims.ClaimsPrincipal
+  isExternal: true
+  name: CreateClaimsIdentity(BinaryReader)
+  fullName: System.Security.Claims.ClaimsPrincipal.CreateClaimsIdentity(System.IO.BinaryReader)
+  spec.csharp:
+  - uid: System.Security.Claims.ClaimsPrincipal.CreateClaimsIdentity(System.IO.BinaryReader)
+    name: CreateClaimsIdentity
+    fullName: System.Security.Claims.ClaimsPrincipal.CreateClaimsIdentity
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IO.BinaryReader
+    name: BinaryReader
+    fullName: System.IO.BinaryReader
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Claims.ClaimsPrincipal.CreateClaimsIdentity(System.IO.BinaryReader)
+    name: CreateClaimsIdentity
+    fullName: System.Security.Claims.ClaimsPrincipal.CreateClaimsIdentity
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IO.BinaryReader
+    name: BinaryReader
+    fullName: System.IO.BinaryReader
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Security.Claims.ClaimsPrincipal.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: System.Security.Claims.ClaimsPrincipal
+  isExternal: true
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  fullName: System.Security.Claims.ClaimsPrincipal.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: System.Security.Claims.ClaimsPrincipal.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    fullName: System.Security.Claims.ClaimsPrincipal.GetObjectData
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    fullName: System.Runtime.Serialization.SerializationInfo
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Claims.ClaimsPrincipal.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    fullName: System.Security.Claims.ClaimsPrincipal.GetObjectData
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    fullName: System.Runtime.Serialization.SerializationInfo
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Security.Claims.ClaimsPrincipal.AddIdentity(System.Security.Claims.ClaimsIdentity)
+  parent: System.Security.Claims.ClaimsPrincipal
+  isExternal: true
+  name: AddIdentity(ClaimsIdentity)
+  fullName: System.Security.Claims.ClaimsPrincipal.AddIdentity(System.Security.Claims.ClaimsIdentity)
+  spec.csharp:
+  - uid: System.Security.Claims.ClaimsPrincipal.AddIdentity(System.Security.Claims.ClaimsIdentity)
+    name: AddIdentity
+    fullName: System.Security.Claims.ClaimsPrincipal.AddIdentity
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Security.Claims.ClaimsIdentity
+    name: ClaimsIdentity
+    fullName: System.Security.Claims.ClaimsIdentity
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Claims.ClaimsPrincipal.AddIdentity(System.Security.Claims.ClaimsIdentity)
+    name: AddIdentity
+    fullName: System.Security.Claims.ClaimsPrincipal.AddIdentity
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Security.Claims.ClaimsIdentity
+    name: ClaimsIdentity
+    fullName: System.Security.Claims.ClaimsIdentity
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Security.Claims.ClaimsPrincipal.AddIdentities(System.Collections.Generic.IEnumerable{System.Security.Claims.ClaimsIdentity})
+  parent: System.Security.Claims.ClaimsPrincipal
+  isExternal: true
+  name: AddIdentities(IEnumerable<ClaimsIdentity>)
+  name.vb: AddIdentities(IEnumerable(Of ClaimsIdentity))
+  fullName: System.Security.Claims.ClaimsPrincipal.AddIdentities(System.Collections.Generic.IEnumerable<System.Security.Claims.ClaimsIdentity>)
+  fullName.vb: System.Security.Claims.ClaimsPrincipal.AddIdentities(System.Collections.Generic.IEnumerable(Of System.Security.Claims.ClaimsIdentity))
+  spec.csharp:
+  - uid: System.Security.Claims.ClaimsPrincipal.AddIdentities(System.Collections.Generic.IEnumerable{System.Security.Claims.ClaimsIdentity})
+    name: AddIdentities
+    fullName: System.Security.Claims.ClaimsPrincipal.AddIdentities
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Security.Claims.ClaimsIdentity
+    name: ClaimsIdentity
+    fullName: System.Security.Claims.ClaimsIdentity
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Claims.ClaimsPrincipal.AddIdentities(System.Collections.Generic.IEnumerable{System.Security.Claims.ClaimsIdentity})
+    name: AddIdentities
+    fullName: System.Security.Claims.ClaimsPrincipal.AddIdentities
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Security.Claims.ClaimsIdentity
+    name: ClaimsIdentity
+    fullName: System.Security.Claims.ClaimsIdentity
+    isExternal: true
+  - name: )
+    fullName: )
+  - name: )
+    fullName: )
+- uid: System.Security.Claims.ClaimsPrincipal.FindAll(System.Predicate{System.Security.Claims.Claim})
+  parent: System.Security.Claims.ClaimsPrincipal
+  isExternal: true
+  name: FindAll(Predicate<Claim>)
+  name.vb: FindAll(Predicate(Of Claim))
+  fullName: System.Security.Claims.ClaimsPrincipal.FindAll(System.Predicate<System.Security.Claims.Claim>)
+  fullName.vb: System.Security.Claims.ClaimsPrincipal.FindAll(System.Predicate(Of System.Security.Claims.Claim))
+  spec.csharp:
+  - uid: System.Security.Claims.ClaimsPrincipal.FindAll(System.Predicate{System.Security.Claims.Claim})
+    name: FindAll
+    fullName: System.Security.Claims.ClaimsPrincipal.FindAll
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Predicate`1
+    name: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Claims.ClaimsPrincipal.FindAll(System.Predicate{System.Security.Claims.Claim})
+    name: FindAll
+    fullName: System.Security.Claims.ClaimsPrincipal.FindAll
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Predicate`1
+    name: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: )
+    fullName: )
+  - name: )
+    fullName: )
+- uid: System.Security.Claims.ClaimsPrincipal.FindAll(System.String)
+  parent: System.Security.Claims.ClaimsPrincipal
+  isExternal: true
+  name: FindAll(String)
+  fullName: System.Security.Claims.ClaimsPrincipal.FindAll(System.String)
+  spec.csharp:
+  - uid: System.Security.Claims.ClaimsPrincipal.FindAll(System.String)
+    name: FindAll
+    fullName: System.Security.Claims.ClaimsPrincipal.FindAll
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Claims.ClaimsPrincipal.FindAll(System.String)
+    name: FindAll
+    fullName: System.Security.Claims.ClaimsPrincipal.FindAll
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Security.Claims.ClaimsPrincipal.FindFirst(System.Predicate{System.Security.Claims.Claim})
+  parent: System.Security.Claims.ClaimsPrincipal
+  isExternal: true
+  name: FindFirst(Predicate<Claim>)
+  name.vb: FindFirst(Predicate(Of Claim))
+  fullName: System.Security.Claims.ClaimsPrincipal.FindFirst(System.Predicate<System.Security.Claims.Claim>)
+  fullName.vb: System.Security.Claims.ClaimsPrincipal.FindFirst(System.Predicate(Of System.Security.Claims.Claim))
+  spec.csharp:
+  - uid: System.Security.Claims.ClaimsPrincipal.FindFirst(System.Predicate{System.Security.Claims.Claim})
+    name: FindFirst
+    fullName: System.Security.Claims.ClaimsPrincipal.FindFirst
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Predicate`1
+    name: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Claims.ClaimsPrincipal.FindFirst(System.Predicate{System.Security.Claims.Claim})
+    name: FindFirst
+    fullName: System.Security.Claims.ClaimsPrincipal.FindFirst
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Predicate`1
+    name: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: )
+    fullName: )
+  - name: )
+    fullName: )
+- uid: System.Security.Claims.ClaimsPrincipal.FindFirst(System.String)
+  parent: System.Security.Claims.ClaimsPrincipal
+  isExternal: true
+  name: FindFirst(String)
+  fullName: System.Security.Claims.ClaimsPrincipal.FindFirst(System.String)
+  spec.csharp:
+  - uid: System.Security.Claims.ClaimsPrincipal.FindFirst(System.String)
+    name: FindFirst
+    fullName: System.Security.Claims.ClaimsPrincipal.FindFirst
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Claims.ClaimsPrincipal.FindFirst(System.String)
+    name: FindFirst
+    fullName: System.Security.Claims.ClaimsPrincipal.FindFirst
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Security.Claims.ClaimsPrincipal.HasClaim(System.Predicate{System.Security.Claims.Claim})
+  parent: System.Security.Claims.ClaimsPrincipal
+  isExternal: true
+  name: HasClaim(Predicate<Claim>)
+  name.vb: HasClaim(Predicate(Of Claim))
+  fullName: System.Security.Claims.ClaimsPrincipal.HasClaim(System.Predicate<System.Security.Claims.Claim>)
+  fullName.vb: System.Security.Claims.ClaimsPrincipal.HasClaim(System.Predicate(Of System.Security.Claims.Claim))
+  spec.csharp:
+  - uid: System.Security.Claims.ClaimsPrincipal.HasClaim(System.Predicate{System.Security.Claims.Claim})
+    name: HasClaim
+    fullName: System.Security.Claims.ClaimsPrincipal.HasClaim
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Predicate`1
+    name: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Claims.ClaimsPrincipal.HasClaim(System.Predicate{System.Security.Claims.Claim})
+    name: HasClaim
+    fullName: System.Security.Claims.ClaimsPrincipal.HasClaim
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Predicate`1
+    name: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: )
+    fullName: )
+  - name: )
+    fullName: )
+- uid: System.Security.Claims.ClaimsPrincipal.HasClaim(System.String,System.String)
+  parent: System.Security.Claims.ClaimsPrincipal
+  isExternal: true
+  name: HasClaim(String, String)
+  fullName: System.Security.Claims.ClaimsPrincipal.HasClaim(System.String, System.String)
+  spec.csharp:
+  - uid: System.Security.Claims.ClaimsPrincipal.HasClaim(System.String,System.String)
+    name: HasClaim
+    fullName: System.Security.Claims.ClaimsPrincipal.HasClaim
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Claims.ClaimsPrincipal.HasClaim(System.String,System.String)
+    name: HasClaim
+    fullName: System.Security.Claims.ClaimsPrincipal.HasClaim
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Security.Claims.ClaimsPrincipal.WriteTo(System.IO.BinaryWriter)
+  parent: System.Security.Claims.ClaimsPrincipal
+  isExternal: true
+  name: WriteTo(BinaryWriter)
+  fullName: System.Security.Claims.ClaimsPrincipal.WriteTo(System.IO.BinaryWriter)
+  spec.csharp:
+  - uid: System.Security.Claims.ClaimsPrincipal.WriteTo(System.IO.BinaryWriter)
+    name: WriteTo
+    fullName: System.Security.Claims.ClaimsPrincipal.WriteTo
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IO.BinaryWriter
+    name: BinaryWriter
+    fullName: System.IO.BinaryWriter
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Claims.ClaimsPrincipal.WriteTo(System.IO.BinaryWriter)
+    name: WriteTo
+    fullName: System.Security.Claims.ClaimsPrincipal.WriteTo
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IO.BinaryWriter
+    name: BinaryWriter
+    fullName: System.IO.BinaryWriter
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Security.Claims.ClaimsPrincipal.WriteTo(System.IO.BinaryWriter,System.Byte[])
+  parent: System.Security.Claims.ClaimsPrincipal
+  isExternal: true
+  name: WriteTo(BinaryWriter, Byte[])
+  name.vb: WriteTo(BinaryWriter, Byte())
+  fullName: System.Security.Claims.ClaimsPrincipal.WriteTo(System.IO.BinaryWriter, System.Byte[])
+  fullName.vb: System.Security.Claims.ClaimsPrincipal.WriteTo(System.IO.BinaryWriter, System.Byte())
+  spec.csharp:
+  - uid: System.Security.Claims.ClaimsPrincipal.WriteTo(System.IO.BinaryWriter,System.Byte[])
+    name: WriteTo
+    fullName: System.Security.Claims.ClaimsPrincipal.WriteTo
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IO.BinaryWriter
+    name: BinaryWriter
+    fullName: System.IO.BinaryWriter
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Claims.ClaimsPrincipal.WriteTo(System.IO.BinaryWriter,System.Byte[])
+    name: WriteTo
+    fullName: System.Security.Claims.ClaimsPrincipal.WriteTo
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IO.BinaryWriter
+    name: BinaryWriter
+    fullName: System.IO.BinaryWriter
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+  - name: )
+    fullName: )
+- uid: System.Security.Claims.ClaimsPrincipal.PrimaryIdentitySelector
+  parent: System.Security.Claims.ClaimsPrincipal
+  isExternal: true
+  name: PrimaryIdentitySelector
+  fullName: System.Security.Claims.ClaimsPrincipal.PrimaryIdentitySelector
+- uid: System.Security.Claims.ClaimsPrincipal.ClaimsPrincipalSelector
+  parent: System.Security.Claims.ClaimsPrincipal
+  isExternal: true
+  name: ClaimsPrincipalSelector
+  fullName: System.Security.Claims.ClaimsPrincipal.ClaimsPrincipalSelector
+- uid: System.Security.Claims.ClaimsPrincipal.CustomSerializationData
+  parent: System.Security.Claims.ClaimsPrincipal
+  isExternal: true
+  name: CustomSerializationData
+  fullName: System.Security.Claims.ClaimsPrincipal.CustomSerializationData
+- uid: System.Security.Claims.ClaimsPrincipal.Claims
+  parent: System.Security.Claims.ClaimsPrincipal
+  isExternal: true
+  name: Claims
+  fullName: System.Security.Claims.ClaimsPrincipal.Claims
+- uid: System.Security.Claims.ClaimsPrincipal.Current
+  parent: System.Security.Claims.ClaimsPrincipal
+  isExternal: true
+  name: Current
+  fullName: System.Security.Claims.ClaimsPrincipal.Current
+- uid: System.Security.Claims.ClaimsPrincipal.Identities
+  parent: System.Security.Claims.ClaimsPrincipal
+  isExternal: true
+  name: Identities
+  fullName: System.Security.Claims.ClaimsPrincipal.Identities
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Security.Claims
+  isExternal: false
+  name: System.Security.Claims
+  fullName: System.Security.Claims
+- uid: System.Security.Principal.WindowsIdentity
+  parent: System.Security.Principal
+  isExternal: false
+  href: System.Security.Principal.WindowsIdentity.yml
+  name: WindowsIdentity
+  fullName: System.Security.Principal.WindowsIdentity
+  type: Class
+- uid: System.Security.Claims.ClaimsPrincipal.Identity
+  parent: System.Security.Claims.ClaimsPrincipal
+  isExternal: true
+  name: Identity
+  fullName: System.Security.Claims.ClaimsPrincipal.Identity
+- uid: System.Security.Principal.IIdentity
+  parent: System.Security.Principal
+  isExternal: false
+  href: System.Security.Principal.IIdentity.yml
+  name: IIdentity
+  fullName: System.Security.Principal.IIdentity
+  type: Interface
+- uid: System.Security.Claims.ClaimsPrincipal.IsInRole(System.String)
+  parent: System.Security.Claims.ClaimsPrincipal
+  isExternal: true
+  name: IsInRole(String)
+  fullName: System.Security.Claims.ClaimsPrincipal.IsInRole(System.String)
+  spec.csharp:
+  - uid: System.Security.Claims.ClaimsPrincipal.IsInRole(System.String)
+    name: IsInRole
+    fullName: System.Security.Claims.ClaimsPrincipal.IsInRole
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Claims.ClaimsPrincipal.IsInRole(System.String)
+    name: IsInRole
+    fullName: System.Security.Claims.ClaimsPrincipal.IsInRole
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Collections.Generic.IEnumerable{System.Security.Claims.Claim}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<Claim>
+  name.vb: IEnumerable(Of Claim)
+  fullName: System.Collections.Generic.IEnumerable<System.Security.Claims.Claim>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Security.Claims.Claim)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Security.Principal.WindowsBuiltInRole
+  parent: System.Security.Principal
+  isExternal: false
+  href: System.Security.Principal.WindowsBuiltInRole.yml
+  name: WindowsBuiltInRole
+  fullName: System.Security.Principal.WindowsBuiltInRole
+  type: Enum
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Security.Principal.SecurityIdentifier
+  parent: System.Security.Principal
+  isExternal: false
+  href: System.Security.Principal.SecurityIdentifier.yml
+  name: SecurityIdentifier
+  fullName: System.Security.Principal.SecurityIdentifier
+  type: Class

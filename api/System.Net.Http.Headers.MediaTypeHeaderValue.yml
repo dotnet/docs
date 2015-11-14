@@ -1,0 +1,593 @@
+items:
+- uid: System.Net.Http.Headers.MediaTypeHeaderValue
+  id: MediaTypeHeaderValue
+  parent: System.Net.Http.Headers
+  children:
+  - System.Net.Http.Headers.MediaTypeHeaderValue.#ctor(System.Net.Http.Headers.MediaTypeHeaderValue)
+  - System.Net.Http.Headers.MediaTypeHeaderValue.#ctor(System.String)
+  - System.Net.Http.Headers.MediaTypeHeaderValue.CharSet
+  - System.Net.Http.Headers.MediaTypeHeaderValue.Equals(System.Object)
+  - System.Net.Http.Headers.MediaTypeHeaderValue.GetHashCode
+  - System.Net.Http.Headers.MediaTypeHeaderValue.MediaType
+  - System.Net.Http.Headers.MediaTypeHeaderValue.Parameters
+  - System.Net.Http.Headers.MediaTypeHeaderValue.Parse(System.String)
+  - System.Net.Http.Headers.MediaTypeHeaderValue.ToString
+  - System.Net.Http.Headers.MediaTypeHeaderValue.TryParse(System.String,System.Net.Http.Headers.MediaTypeHeaderValue@)
+  href: System.Net.Http.Headers.MediaTypeHeaderValue.yml
+  name: MediaTypeHeaderValue
+  fullName: System.Net.Http.Headers.MediaTypeHeaderValue
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Net.Http/src/System/Net/Http/Headers/MediaTypeHeaderValue.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Net.Http/src/System/Net/Http/Headers/MediaTypeHeaderValue.cs
+    startLine: 8
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Represents a media type used in a Content-Type header as defined in the RFC 2616.
+  syntax:
+    content: 'public class MediaTypeHeaderValue : ICloneable'
+    content.vb: Public Class MediaTypeHeaderValue Implements ICloneable
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Net.Http.Headers.MediaTypeHeaderValue.CharSet
+  id: CharSet
+  parent: System.Net.Http.Headers.MediaTypeHeaderValue
+  href: System.Net.Http.Headers.MediaTypeHeaderValue.yml
+  name: CharSet
+  fullName: System.Net.Http.Headers.MediaTypeHeaderValue.CharSet
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/MediaTypeHeaderValue.cs
+    startLine: 15
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Gets or sets the character set.
+  syntax:
+    content: public string CharSet { get; set; }
+    content.vb: Public Property CharSet As String
+    parameters: []
+    return:
+      type: System.String
+      description: Returns @'System.String'.The character set.
+- uid: System.Net.Http.Headers.MediaTypeHeaderValue.Parameters
+  id: Parameters
+  parent: System.Net.Http.Headers.MediaTypeHeaderValue
+  href: System.Net.Http.Headers.MediaTypeHeaderValue.yml
+  name: Parameters
+  fullName: System.Net.Http.Headers.MediaTypeHeaderValue.Parameters
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/MediaTypeHeaderValue.cs
+    startLine: 53
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Gets or sets the media-type header value parameters.
+  syntax:
+    content: public ICollection<NameValueHeaderValue> Parameters { get; }
+    content.vb: Public ReadOnly Property Parameters As ICollection(Of NameValueHeaderValue)
+    parameters: []
+    return:
+      type: System.Collections.Generic.ICollection{System.Net.Http.Headers.NameValueHeaderValue}
+      description: Returns @'System.Collections.Generic.ICollection`1'.The media-type header value parameters.
+- uid: System.Net.Http.Headers.MediaTypeHeaderValue.MediaType
+  id: MediaType
+  parent: System.Net.Http.Headers.MediaTypeHeaderValue
+  href: System.Net.Http.Headers.MediaTypeHeaderValue.yml
+  name: MediaType
+  fullName: System.Net.Http.Headers.MediaTypeHeaderValue.MediaType
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/MediaTypeHeaderValue.cs
+    startLine: 65
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Gets or sets the media-type header value.
+  syntax:
+    content: public string MediaType { get; set; }
+    content.vb: Public Property MediaType As String
+    parameters: []
+    return:
+      type: System.String
+      description: Returns @'System.String'.The media-type header value.
+- uid: System.Net.Http.Headers.MediaTypeHeaderValue.#ctor(System.Net.Http.Headers.MediaTypeHeaderValue)
+  id: '#ctor(System.Net.Http.Headers.MediaTypeHeaderValue)'
+  parent: System.Net.Http.Headers.MediaTypeHeaderValue
+  href: System.Net.Http.Headers.MediaTypeHeaderValue.yml
+  name: MediaTypeHeaderValue(MediaTypeHeaderValue)
+  fullName: System.Net.Http.Headers.MediaTypeHeaderValue.MediaTypeHeaderValue(System.Net.Http.Headers.MediaTypeHeaderValue)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/MediaTypeHeaderValue.cs
+    startLine: 80
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Initializes a new instance of the @'System.Net.Http.Headers.MediaTypeHeaderValue' class.
+  syntax:
+    content: protected MediaTypeHeaderValue(MediaTypeHeaderValue source)
+    content.vb: Protected Sub New(source As MediaTypeHeaderValue)
+    parameters:
+    - id: source
+      type: System.Net.Http.Headers.MediaTypeHeaderValue
+      description: A @'System.Net.Http.Headers.MediaTypeHeaderValue' object used to initialize the new instance.
+- uid: System.Net.Http.Headers.MediaTypeHeaderValue.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: System.Net.Http.Headers.MediaTypeHeaderValue
+  href: System.Net.Http.Headers.MediaTypeHeaderValue.yml
+  name: MediaTypeHeaderValue(String)
+  fullName: System.Net.Http.Headers.MediaTypeHeaderValue.MediaTypeHeaderValue(System.String)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/MediaTypeHeaderValue.cs
+    startLine: 95
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Initializes a new instance of the @'System.Net.Http.Headers.MediaTypeHeaderValue' class.
+  syntax:
+    content: public MediaTypeHeaderValue(string mediaType)
+    content.vb: Public Sub New(mediaType As String)
+    parameters:
+    - id: mediaType
+      type: System.String
+      description: The source represented as a string to initialize the new instance.
+- uid: System.Net.Http.Headers.MediaTypeHeaderValue.ToString
+  id: ToString
+  parent: System.Net.Http.Headers.MediaTypeHeaderValue
+  href: System.Net.Http.Headers.MediaTypeHeaderValue.yml
+  name: ToString()
+  fullName: System.Net.Http.Headers.MediaTypeHeaderValue.ToString()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/MediaTypeHeaderValue.cs
+    startLine: 101
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Returns a string that represents the current @'System.Net.Http.Headers.MediaTypeHeaderValue' object.
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+      description: Returns @'System.String'.A string that represents the current object.
+  overridden: System.Object.ToString
+- uid: System.Net.Http.Headers.MediaTypeHeaderValue.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Net.Http.Headers.MediaTypeHeaderValue
+  href: System.Net.Http.Headers.MediaTypeHeaderValue.yml
+  name: Equals(Object)
+  fullName: System.Net.Http.Headers.MediaTypeHeaderValue.Equals(System.Object)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/MediaTypeHeaderValue.cs
+    startLine: 106
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Determines whether the specified @'System.Object' is equal to the current @'System.Net.Http.Headers.MediaTypeHeaderValue' object.
+  syntax:
+    content: public override bool Equals(object obj)
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: Returns @'System.Boolean'.true if the specified @'System.Object' is equal to the current object; otherwise, false.
+  overridden: System.Object.Equals(System.Object)
+- uid: System.Net.Http.Headers.MediaTypeHeaderValue.GetHashCode
+  id: GetHashCode
+  parent: System.Net.Http.Headers.MediaTypeHeaderValue
+  href: System.Net.Http.Headers.MediaTypeHeaderValue.yml
+  name: GetHashCode()
+  fullName: System.Net.Http.Headers.MediaTypeHeaderValue.GetHashCode()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/MediaTypeHeaderValue.cs
+    startLine: 119
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Serves as a hash function for an @'System.Net.Http.Headers.MediaTypeHeaderValue' object.
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: Returns @'System.Int32'.A hash code for the current object.
+  overridden: System.Object.GetHashCode
+- uid: System.Net.Http.Headers.MediaTypeHeaderValue.Parse(System.String)
+  id: Parse(System.String)
+  parent: System.Net.Http.Headers.MediaTypeHeaderValue
+  href: System.Net.Http.Headers.MediaTypeHeaderValue.yml
+  name: Parse(String)
+  fullName: System.Net.Http.Headers.MediaTypeHeaderValue.Parse(System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/MediaTypeHeaderValue.cs
+    startLine: 125
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Converts a string to an @'System.Net.Http.Headers.MediaTypeHeaderValue' instance.
+  syntax:
+    content: public static MediaTypeHeaderValue Parse(string input)
+    content.vb: Public Shared Function Parse(input As String) As MediaTypeHeaderValue
+    parameters:
+    - id: input
+      type: System.String
+      description: A string that represents media type header value information.
+    return:
+      type: System.Net.Http.Headers.MediaTypeHeaderValue
+      description: Returns @'System.Net.Http.Headers.MediaTypeHeaderValue'.An @'System.Net.Http.Headers.MediaTypeHeaderValue' instance.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: '*input* is a null reference.'
+  - type: System.FormatException
+    description: '*input* is not valid media type header value information.'
+- uid: System.Net.Http.Headers.MediaTypeHeaderValue.TryParse(System.String,System.Net.Http.Headers.MediaTypeHeaderValue@)
+  id: TryParse(System.String,System.Net.Http.Headers.MediaTypeHeaderValue@)
+  parent: System.Net.Http.Headers.MediaTypeHeaderValue
+  href: System.Net.Http.Headers.MediaTypeHeaderValue.yml
+  name: TryParse(String, out MediaTypeHeaderValue)
+  name.vb: TryParse(String, ByRef MediaTypeHeaderValue)
+  fullName: System.Net.Http.Headers.MediaTypeHeaderValue.TryParse(System.String, out System.Net.Http.Headers.MediaTypeHeaderValue)
+  fullName.vb: System.Net.Http.Headers.MediaTypeHeaderValue.TryParse(System.String, ByRef System.Net.Http.Headers.MediaTypeHeaderValue)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.Http/src/System/Net/Http/Headers/MediaTypeHeaderValue.cs
+    startLine: 131
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http.Headers
+  summary: Determines whether a string is valid @'System.Net.Http.Headers.MediaTypeHeaderValue' information.
+  syntax:
+    content: public static bool TryParse(string input, out MediaTypeHeaderValue parsedValue)
+    content.vb: Public Shared Function TryParse(input As String, ByRef parsedValue As MediaTypeHeaderValue) As Boolean
+    parameters:
+    - id: input
+      type: System.String
+      description: The string to validate.
+    - id: parsedValue
+      type: System.Net.Http.Headers.MediaTypeHeaderValue
+      description: The @'System.Net.Http.Headers.MediaTypeHeaderValue' version of the string.
+    return:
+      type: System.Boolean
+      description: Returns @'System.Boolean'.true if *input* is valid @'System.Net.Http.Headers.MediaTypeHeaderValue' information; otherwise, false.
+references:
+- uid: System.Net.Http.Headers
+  isExternal: false
+  name: System.Net.Http.Headers
+  fullName: System.Net.Http.Headers
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Collections.Generic.ICollection{System.Net.Http.Headers.NameValueHeaderValue}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  href: System.Net.Http.Headers.NameValueHeaderValue.yml
+  name: ICollection<NameValueHeaderValue>
+  name.vb: ICollection(Of NameValueHeaderValue)
+  fullName: System.Collections.Generic.ICollection<System.Net.Http.Headers.NameValueHeaderValue>
+  fullName.vb: System.Collections.Generic.ICollection(Of System.Net.Http.Headers.NameValueHeaderValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Net.Http.Headers.NameValueHeaderValue
+    name: NameValueHeaderValue
+    fullName: System.Net.Http.Headers.NameValueHeaderValue
+    href: System.Net.Http.Headers.NameValueHeaderValue.yml
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Net.Http.Headers.NameValueHeaderValue
+    name: NameValueHeaderValue
+    fullName: System.Net.Http.Headers.NameValueHeaderValue
+    href: System.Net.Http.Headers.NameValueHeaderValue.yml
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: ICollection<T>
+  name.vb: ICollection(Of T)
+  fullName: System.Collections.Generic.ICollection<T>
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Net.Http.Headers.MediaTypeHeaderValue
+  parent: System.Net.Http.Headers
+  isExternal: false
+  href: System.Net.Http.Headers.MediaTypeHeaderValue.yml
+  name: MediaTypeHeaderValue
+  fullName: System.Net.Http.Headers.MediaTypeHeaderValue
+  type: Class
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  fullName: System.Int32

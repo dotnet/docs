@@ -1,0 +1,1771 @@
+items:
+- uid: System.Security.Principal.WindowsIdentity
+  id: WindowsIdentity
+  parent: System.Security.Principal
+  children:
+  - System.Security.Principal.WindowsIdentity.#ctor(System.IntPtr)
+  - System.Security.Principal.WindowsIdentity.#ctor(System.IntPtr,System.String)
+  - System.Security.Principal.WindowsIdentity.#ctor(System.Security.Principal.WindowsIdentity)
+  - System.Security.Principal.WindowsIdentity.AccessToken
+  - System.Security.Principal.WindowsIdentity.AuthenticationType
+  - System.Security.Principal.WindowsIdentity.Claims
+  - System.Security.Principal.WindowsIdentity.Clone
+  - System.Security.Principal.WindowsIdentity.DefaultIssuer
+  - System.Security.Principal.WindowsIdentity.DeviceClaims
+  - System.Security.Principal.WindowsIdentity.Dispose
+  - System.Security.Principal.WindowsIdentity.Dispose(System.Boolean)
+  - System.Security.Principal.WindowsIdentity.GetAnonymous
+  - System.Security.Principal.WindowsIdentity.GetCurrent
+  - System.Security.Principal.WindowsIdentity.GetCurrent(System.Boolean)
+  - System.Security.Principal.WindowsIdentity.GetCurrent(System.Security.Principal.TokenAccessLevels)
+  - System.Security.Principal.WindowsIdentity.Groups
+  - System.Security.Principal.WindowsIdentity.ImpersonationLevel
+  - System.Security.Principal.WindowsIdentity.IsAnonymous
+  - System.Security.Principal.WindowsIdentity.IsAuthenticated
+  - System.Security.Principal.WindowsIdentity.IsGuest
+  - System.Security.Principal.WindowsIdentity.IsSystem
+  - System.Security.Principal.WindowsIdentity.Name
+  - System.Security.Principal.WindowsIdentity.Owner
+  - System.Security.Principal.WindowsIdentity.RunImpersonated(Microsoft.Win32.SafeHandles.SafeAccessTokenHandle,System.Action)
+  - System.Security.Principal.WindowsIdentity.RunImpersonated``1(Microsoft.Win32.SafeHandles.SafeAccessTokenHandle,System.Func{``0})
+  - System.Security.Principal.WindowsIdentity.User
+  - System.Security.Principal.WindowsIdentity.UserClaims
+  href: System.Security.Principal.WindowsIdentity.yml
+  name: WindowsIdentity
+  fullName: System.Security.Principal.WindowsIdentity
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Security.Principal.Windows/src/System/Security/Principal/WindowsIdentity.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/WindowsIdentity.cs
+    startLine: 15
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Represents a Windows user.
+  syntax:
+    content: 'public class WindowsIdentity : ClaimsIdentity, IIdentity, IDisposable'
+    content.vb: Public Class WindowsIdentity Inherits ClaimsIdentity Implements IIdentity, IDisposable
+  inheritance:
+  - System.Object
+  - System.Security.Claims.ClaimsIdentity
+  implements:
+  - System.Security.Principal.IIdentity
+  - System.IDisposable
+  inheritedMembers:
+  - System.Security.Claims.ClaimsIdentity.DefaultNameClaimType
+  - System.Security.Claims.ClaimsIdentity.DefaultRoleClaimType
+  - System.Security.Claims.ClaimsIdentity.AddClaim(System.Security.Claims.Claim)
+  - System.Security.Claims.ClaimsIdentity.AddClaims(System.Collections.Generic.IEnumerable{System.Security.Claims.Claim})
+  - System.Security.Claims.ClaimsIdentity.TryRemoveClaim(System.Security.Claims.Claim)
+  - System.Security.Claims.ClaimsIdentity.RemoveClaim(System.Security.Claims.Claim)
+  - System.Security.Claims.ClaimsIdentity.FindAll(System.Predicate{System.Security.Claims.Claim})
+  - System.Security.Claims.ClaimsIdentity.FindAll(System.String)
+  - System.Security.Claims.ClaimsIdentity.HasClaim(System.Predicate{System.Security.Claims.Claim})
+  - System.Security.Claims.ClaimsIdentity.HasClaim(System.String,System.String)
+  - System.Security.Claims.ClaimsIdentity.FindFirst(System.Predicate{System.Security.Claims.Claim})
+  - System.Security.Claims.ClaimsIdentity.FindFirst(System.String)
+  - System.Security.Claims.ClaimsIdentity.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - System.Security.Claims.ClaimsIdentity.CreateClaim(System.IO.BinaryReader)
+  - System.Security.Claims.ClaimsIdentity.WriteTo(System.IO.BinaryWriter)
+  - System.Security.Claims.ClaimsIdentity.WriteTo(System.IO.BinaryWriter,System.Byte[])
+  - System.Security.Claims.ClaimsIdentity.Actor
+  - System.Security.Claims.ClaimsIdentity.BootstrapContext
+  - System.Security.Claims.ClaimsIdentity.CustomSerializationData
+  - System.Security.Claims.ClaimsIdentity.Label
+  - System.Security.Claims.ClaimsIdentity.NameClaimType
+  - System.Security.Claims.ClaimsIdentity.RoleClaimType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Security.Principal.WindowsIdentity.DefaultIssuer
+  id: DefaultIssuer
+  parent: System.Security.Principal.WindowsIdentity
+  href: System.Security.Principal.WindowsIdentity.yml
+  name: DefaultIssuer
+  fullName: System.Security.Principal.WindowsIdentity.DefaultIssuer
+  type: Field
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/WindowsIdentity.cs
+    startLine: 28
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Identifies the name of the default @'System.Security.Claims.ClaimsIdentity' issuer.
+  syntax:
+    content: public const string DefaultIssuer
+    content.vb: Public Const DefaultIssuer As String = "AD AUTHORITY"
+- uid: System.Security.Principal.WindowsIdentity.#ctor(System.IntPtr)
+  id: '#ctor(System.IntPtr)'
+  parent: System.Security.Principal.WindowsIdentity
+  href: System.Security.Principal.WindowsIdentity.yml
+  name: WindowsIdentity(IntPtr)
+  fullName: System.Security.Principal.WindowsIdentity.WindowsIdentity(System.IntPtr)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/WindowsIdentity.cs
+    startLine: 44
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Initializes a new instance of the @'System.Security.Principal.WindowsIdentity' class for the user represented by the specified Windows account token.
+  syntax:
+    content: public WindowsIdentity(IntPtr userToken)
+    content.vb: Public Sub New(userToken As IntPtr)
+    parameters:
+    - id: userToken
+      type: System.IntPtr
+      description: The account token for the user on whose behalf the code is running.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*userToken* is 0.-or-*userToken* is duplicated and invalid for impersonation.'
+  - type: System.Security.SecurityException
+    description: The caller does not have the correct permissions. -or-A Win32 error occurred.
+- uid: System.Security.Principal.WindowsIdentity.#ctor(System.IntPtr,System.String)
+  id: '#ctor(System.IntPtr,System.String)'
+  parent: System.Security.Principal.WindowsIdentity
+  href: System.Security.Principal.WindowsIdentity.yml
+  name: WindowsIdentity(IntPtr, String)
+  fullName: System.Security.Principal.WindowsIdentity.WindowsIdentity(System.IntPtr, System.String)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/WindowsIdentity.cs
+    startLine: 47
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Initializes a new instance of the @'System.Security.Principal.WindowsIdentity' class for the user represented by the specified Windows account token and the specified authentication type.
+  syntax:
+    content: public WindowsIdentity(IntPtr userToken, string type)
+    content.vb: Public Sub New(userToken As IntPtr, type As String)
+    parameters:
+    - id: userToken
+      type: System.IntPtr
+      description: The account token for the user on whose behalf the code is running.
+    - id: type
+      type: System.String
+      description: (Informational use only.) The type of authentication used to identify the user. For more information, see Remarks.
+  exceptions:
+  - type: System.ArgumentException
+    description: '*userToken* is 0.-or-*userToken* is duplicated and invalid for impersonation.'
+  - type: System.Security.SecurityException
+    description: The caller does not have the correct permissions. -or-A Win32 error occurred.
+- uid: System.Security.Principal.WindowsIdentity.GetCurrent
+  id: GetCurrent
+  parent: System.Security.Principal.WindowsIdentity
+  href: System.Security.Principal.WindowsIdentity.yml
+  name: GetCurrent()
+  fullName: System.Security.Principal.WindowsIdentity.GetCurrent()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/WindowsIdentity.cs
+    startLine: 86
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Returns a @'System.Security.Principal.WindowsIdentity' object that represents the current Windows user.
+  syntax:
+    content: public static WindowsIdentity GetCurrent()
+    content.vb: Public Shared Function GetCurrent As WindowsIdentity
+    return:
+      type: System.Security.Principal.WindowsIdentity
+      description: An object that represents the current user.
+  exceptions:
+  - type: System.Security.SecurityException
+    description: The caller does not have the correct permissions.
+- uid: System.Security.Principal.WindowsIdentity.GetCurrent(System.Boolean)
+  id: GetCurrent(System.Boolean)
+  parent: System.Security.Principal.WindowsIdentity
+  href: System.Security.Principal.WindowsIdentity.yml
+  name: GetCurrent(Boolean)
+  fullName: System.Security.Principal.WindowsIdentity.GetCurrent(System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/WindowsIdentity.cs
+    startLine: 92
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Returns a @'System.Security.Principal.WindowsIdentity' object that represents the Windows identity for either the thread or the process, depending on the value of the *ifImpersonating* parameter.
+  syntax:
+    content: public static WindowsIdentity GetCurrent(bool ifImpersonating)
+    content.vb: Public Shared Function GetCurrent(ifImpersonating As Boolean) As WindowsIdentity
+    parameters:
+    - id: ifImpersonating
+      type: System.Boolean
+      description: true to return the @'System.Security.Principal.WindowsIdentity' only if the thread is currently impersonating; false to return the @'System.Security.Principal.WindowsIdentity'   of the thread if it is impersonating or the @'System.Security.Principal.WindowsIdentity' of the process if the thread is not currently impersonating.
+    return:
+      type: System.Security.Principal.WindowsIdentity
+      description: An object that represents a Windows user.
+- uid: System.Security.Principal.WindowsIdentity.GetCurrent(System.Security.Principal.TokenAccessLevels)
+  id: GetCurrent(System.Security.Principal.TokenAccessLevels)
+  parent: System.Security.Principal.WindowsIdentity
+  href: System.Security.Principal.WindowsIdentity.yml
+  name: GetCurrent(TokenAccessLevels)
+  fullName: System.Security.Principal.WindowsIdentity.GetCurrent(System.Security.Principal.TokenAccessLevels)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/WindowsIdentity.cs
+    startLine: 98
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Returns a @'System.Security.Principal.WindowsIdentity' object that represents the current Windows user, using the specified desired token access level.
+  syntax:
+    content: public static WindowsIdentity GetCurrent(TokenAccessLevels desiredAccess)
+    content.vb: Public Shared Function GetCurrent(desiredAccess As TokenAccessLevels) As WindowsIdentity
+    parameters:
+    - id: desiredAccess
+      type: System.Security.Principal.TokenAccessLevels
+      description: A bitwise combination of the enumeration values.
+    return:
+      type: System.Security.Principal.WindowsIdentity
+      description: An object that represents the current user.
+- uid: System.Security.Principal.WindowsIdentity.GetAnonymous
+  id: GetAnonymous
+  parent: System.Security.Principal.WindowsIdentity
+  href: System.Security.Principal.WindowsIdentity.yml
+  name: GetAnonymous()
+  fullName: System.Security.Principal.WindowsIdentity.GetAnonymous()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/WindowsIdentity.cs
+    startLine: 108
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Returns a @'System.Security.Principal.WindowsIdentity' object that you can use as a sentinel value in your code to represent an anonymous user. The property value does not represent the built-in anonymous identity used by the Windows operating system.
+  syntax:
+    content: public static WindowsIdentity GetAnonymous()
+    content.vb: Public Shared Function GetAnonymous As WindowsIdentity
+    return:
+      type: System.Security.Principal.WindowsIdentity
+      description: An object that represents an anonymous user.
+- uid: System.Security.Principal.WindowsIdentity.AuthenticationType
+  id: AuthenticationType
+  parent: System.Security.Principal.WindowsIdentity
+  href: System.Security.Principal.WindowsIdentity.yml
+  name: AuthenticationType
+  fullName: System.Security.Principal.WindowsIdentity.AuthenticationType
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/WindowsIdentity.cs
+    startLine: 117
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Gets the type of authentication used to identify the user.
+  syntax:
+    content: public override sealed string AuthenticationType { get; }
+    content.vb: Public NotOverridable Overrides ReadOnly Property AuthenticationType As String
+    parameters: []
+    return:
+      type: System.String
+      description: The type of authentication used to identify the user.
+  overridden: System.Security.Claims.ClaimsIdentity.AuthenticationType
+  exceptions:
+  - type: System.UnauthorizedAccessException
+    description: "Windows returned the Windows NT status code STATUS_ACCESS_DENIED."
+  - type: System.OutOfMemoryException
+    description: There is insufficient memory available.
+  - type: System.Security.SecurityException
+    description: The caller does not have the correct permissions. -or-The computer is not attached to a Windows 2003 or later domain.-or-The computer is not running Windows 2003 or later.-or-The user is not a member of the domain the computer is attached to.
+- uid: System.Security.Principal.WindowsIdentity.ImpersonationLevel
+  id: ImpersonationLevel
+  parent: System.Security.Principal.WindowsIdentity
+  href: System.Security.Principal.WindowsIdentity.yml
+  name: ImpersonationLevel
+  fullName: System.Security.Principal.WindowsIdentity.ImpersonationLevel
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/WindowsIdentity.cs
+    startLine: 154
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Gets the impersonation level for the user.
+  syntax:
+    content: public TokenImpersonationLevel ImpersonationLevel { get; }
+    content.vb: Public ReadOnly Property ImpersonationLevel As TokenImpersonationLevel
+    parameters: []
+    return:
+      type: System.Security.Principal.TokenImpersonationLevel
+      description: One of the enumeration values that specifies the impersonation level.
+- uid: System.Security.Principal.WindowsIdentity.IsAuthenticated
+  id: IsAuthenticated
+  parent: System.Security.Principal.WindowsIdentity
+  href: System.Security.Principal.WindowsIdentity.yml
+  name: IsAuthenticated
+  fullName: System.Security.Principal.WindowsIdentity.IsAuthenticated
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/WindowsIdentity.cs
+    startLine: 191
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Gets a value indicating whether the user has been authenticated by Windows.
+  syntax:
+    content: public override bool IsAuthenticated { get; }
+    content.vb: Public Overrides ReadOnly Property IsAuthenticated As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the user was authenticated; otherwise, false.
+  overridden: System.Security.Claims.ClaimsIdentity.IsAuthenticated
+- uid: System.Security.Principal.WindowsIdentity.IsGuest
+  id: IsGuest
+  parent: System.Security.Principal.WindowsIdentity
+  href: System.Security.Principal.WindowsIdentity.yml
+  name: IsGuest
+  fullName: System.Security.Principal.WindowsIdentity.IsGuest
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/WindowsIdentity.cs
+    startLine: 255
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Gets a value indicating whether the user account is identified as a @'System.Security.Principal.WindowsAccountType.Guest' account by the system.
+  syntax:
+    content: public virtual bool IsGuest { get; }
+    content.vb: Public Overridable ReadOnly Property IsGuest As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the user account is a @'System.Security.Principal.WindowsAccountType.Guest' account; otherwise, false.
+- uid: System.Security.Principal.WindowsIdentity.IsSystem
+  id: IsSystem
+  parent: System.Security.Principal.WindowsIdentity
+  href: System.Security.Principal.WindowsIdentity.yml
+  name: IsSystem
+  fullName: System.Security.Principal.WindowsIdentity.IsSystem
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/WindowsIdentity.cs
+    startLine: 268
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Gets a value indicating whether the user account is identified as a @'System.Security.Principal.WindowsAccountType.System' account by the system.
+  syntax:
+    content: public virtual bool IsSystem { get; }
+    content.vb: Public Overridable ReadOnly Property IsSystem As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the user account is a @'System.Security.Principal.WindowsAccountType.System' account; otherwise, false.
+- uid: System.Security.Principal.WindowsIdentity.IsAnonymous
+  id: IsAnonymous
+  parent: System.Security.Principal.WindowsIdentity
+  href: System.Security.Principal.WindowsIdentity.yml
+  name: IsAnonymous
+  fullName: System.Security.Principal.WindowsIdentity.IsAnonymous
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/WindowsIdentity.cs
+    startLine: 281
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Gets a value that indicates whether the user account is identified as an anonymous account by the system.
+  syntax:
+    content: public virtual bool IsAnonymous { get; }
+    content.vb: Public Overridable ReadOnly Property IsAnonymous As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the user account is an anonymous account; otherwise, false.
+- uid: System.Security.Principal.WindowsIdentity.Name
+  id: Name
+  parent: System.Security.Principal.WindowsIdentity
+  href: System.Security.Principal.WindowsIdentity.yml
+  name: Name
+  fullName: System.Security.Principal.WindowsIdentity.Name
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/WindowsIdentity.cs
+    startLine: 294
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Gets the user's Windows logon name.
+  syntax:
+    content: public override string Name { get; }
+    content.vb: Public Overrides ReadOnly Property Name As String
+    parameters: []
+    return:
+      type: System.String
+      description: The Windows logon name of the user on whose behalf the code is being run.
+  overridden: System.Security.Claims.ClaimsIdentity.Name
+- uid: System.Security.Principal.WindowsIdentity.Owner
+  id: Owner
+  parent: System.Security.Principal.WindowsIdentity
+  href: System.Security.Principal.WindowsIdentity.yml
+  name: Owner
+  fullName: System.Security.Principal.WindowsIdentity.Owner
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/WindowsIdentity.cs
+    startLine: 321
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Gets the security identifier (SID) for the token owner.
+  syntax:
+    content: public SecurityIdentifier Owner { get; }
+    content.vb: Public ReadOnly Property Owner As SecurityIdentifier
+    parameters: []
+    return:
+      type: System.Security.Principal.SecurityIdentifier
+      description: An object for the token owner.
+- uid: System.Security.Principal.WindowsIdentity.User
+  id: User
+  parent: System.Security.Principal.WindowsIdentity
+  href: System.Security.Principal.WindowsIdentity.yml
+  name: User
+  fullName: System.Security.Principal.WindowsIdentity.User
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/WindowsIdentity.cs
+    startLine: 341
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Gets the security identifier (SID) for the user.
+  syntax:
+    content: public SecurityIdentifier User { get; }
+    content.vb: Public ReadOnly Property User As SecurityIdentifier
+    parameters: []
+    return:
+      type: System.Security.Principal.SecurityIdentifier
+      description: An object for the user.
+- uid: System.Security.Principal.WindowsIdentity.Groups
+  id: Groups
+  parent: System.Security.Principal.WindowsIdentity
+  href: System.Security.Principal.WindowsIdentity.yml
+  name: Groups
+  fullName: System.Security.Principal.WindowsIdentity.Groups
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/WindowsIdentity.cs
+    startLine: 361
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Gets the groups the current Windows user belongs to.
+  syntax:
+    content: public IdentityReferenceCollection Groups { get; }
+    content.vb: Public ReadOnly Property Groups As IdentityReferenceCollection
+    parameters: []
+    return:
+      type: System.Security.Principal.IdentityReferenceCollection
+      description: An object representing the groups the current Windows user belongs to.
+- uid: System.Security.Principal.WindowsIdentity.AccessToken
+  id: AccessToken
+  parent: System.Security.Principal.WindowsIdentity
+  href: System.Security.Principal.WindowsIdentity.yml
+  name: AccessToken
+  fullName: System.Security.Principal.WindowsIdentity.AccessToken
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/WindowsIdentity.cs
+    startLine: 401
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Gets this @'Microsoft.Win32.SafeHandles.SafeAccessTokenHandle' for this @'System.Security.Principal.WindowsIdentity' instance.
+  syntax:
+    content: public SafeAccessTokenHandle AccessToken { get; }
+    content.vb: Public ReadOnly Property AccessToken As SafeAccessTokenHandle
+    parameters: []
+    return:
+      type: Microsoft.Win32.SafeHandles.SafeAccessTokenHandle
+      description: Returns a @'Microsoft.Win32.SafeHandles.SafeAccessTokenHandle'.
+- uid: System.Security.Principal.WindowsIdentity.RunImpersonated(Microsoft.Win32.SafeHandles.SafeAccessTokenHandle,System.Action)
+  id: RunImpersonated(Microsoft.Win32.SafeHandles.SafeAccessTokenHandle,System.Action)
+  parent: System.Security.Principal.WindowsIdentity
+  href: System.Security.Principal.WindowsIdentity.yml
+  name: RunImpersonated(SafeAccessTokenHandle, Action)
+  fullName: System.Security.Principal.WindowsIdentity.RunImpersonated(Microsoft.Win32.SafeHandles.SafeAccessTokenHandle, System.Action)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/WindowsIdentity.cs
+    startLine: 413
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Runs the specified action as the impersonated Windows identity. Instead of using an impersonated method call and running your function in @'System.Security.Principal.WindowsImpersonationContext', you can use @'System.Security.Principal.WindowsIdentity.RunImpersonated(Microsoft.Win32.SafeHandles.SafeAccessTokenHandle,System.Action)' and provide your function directly as a parameter.
+  syntax:
+    content: public static void RunImpersonated(SafeAccessTokenHandle safeAccessTokenHandle, Action action)
+    content.vb: Public Shared Sub RunImpersonated(safeAccessTokenHandle As SafeAccessTokenHandle, action As Action)
+    parameters:
+    - id: safeAccessTokenHandle
+      type: Microsoft.Win32.SafeHandles.SafeAccessTokenHandle
+      description: The SafeAccessTokenHandle of the impersonated Windows identity.
+    - id: action
+      type: System.Action
+      description: The System.Action to run.
+- uid: System.Security.Principal.WindowsIdentity.RunImpersonated``1(Microsoft.Win32.SafeHandles.SafeAccessTokenHandle,System.Func{``0})
+  id: RunImpersonated``1(Microsoft.Win32.SafeHandles.SafeAccessTokenHandle,System.Func{``0})
+  parent: System.Security.Principal.WindowsIdentity
+  href: System.Security.Principal.WindowsIdentity.yml
+  name: RunImpersonated<T>(SafeAccessTokenHandle, Func<T>)
+  name.vb: RunImpersonated(Of T)(SafeAccessTokenHandle, Func(Of T))
+  fullName: System.Security.Principal.WindowsIdentity.RunImpersonated<T>(Microsoft.Win32.SafeHandles.SafeAccessTokenHandle, System.Func<T>)
+  fullName.vb: System.Security.Principal.WindowsIdentity.RunImpersonated(Of T)(Microsoft.Win32.SafeHandles.SafeAccessTokenHandle, System.Func(Of T))
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/WindowsIdentity.cs
+    startLine: 422
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Runs the specified function as the impersonated Windows identity. Instead of using an impersonated method call and running your function in @'System.Security.Principal.WindowsImpersonationContext', you can use @'System.Security.Principal.WindowsIdentity.RunImpersonated(Microsoft.Win32.SafeHandles.SafeAccessTokenHandle,System.Action)' and provide your function directly as a parameter.
+  syntax:
+    content: public static T RunImpersonated<T>(SafeAccessTokenHandle safeAccessTokenHandle, Func<T> func)
+    content.vb: Public Shared Function RunImpersonated(Of T)(safeAccessTokenHandle As SafeAccessTokenHandle, func As Func(Of T)) As T
+    parameters:
+    - id: safeAccessTokenHandle
+      type: Microsoft.Win32.SafeHandles.SafeAccessTokenHandle
+      description: The SafeAccessTokenHandle of the impersonated Windows identity.
+    - id: func
+      type: System.Func{{T}}
+      description: The System.Func to run.
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+      description: Returns the result of the function.
+- uid: System.Security.Principal.WindowsIdentity.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: System.Security.Principal.WindowsIdentity
+  href: System.Security.Principal.WindowsIdentity.yml
+  name: Dispose(Boolean)
+  fullName: System.Security.Principal.WindowsIdentity.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/WindowsIdentity.cs
+    startLine: 433
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Releases the unmanaged resources used by the @'System.Security.Principal.WindowsIdentity' and optionally releases the managed resources.
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: true to release both managed and unmanaged resources; false to release only unmanaged resources.
+- uid: System.Security.Principal.WindowsIdentity.Dispose
+  id: Dispose
+  parent: System.Security.Principal.WindowsIdentity
+  href: System.Security.Principal.WindowsIdentity.yml
+  name: Dispose()
+  fullName: System.Security.Principal.WindowsIdentity.Dispose()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/WindowsIdentity.cs
+    startLine: 445
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Releases all resources used by the @'System.Security.Principal.WindowsIdentity'.
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+- uid: System.Security.Principal.WindowsIdentity.#ctor(System.Security.Principal.WindowsIdentity)
+  id: '#ctor(System.Security.Principal.WindowsIdentity)'
+  parent: System.Security.Principal.WindowsIdentity
+  href: System.Security.Principal.WindowsIdentity.yml
+  name: WindowsIdentity(WindowsIdentity)
+  fullName: System.Security.Principal.WindowsIdentity.WindowsIdentity(System.Security.Principal.WindowsIdentity)
+  type: Constructor
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/WindowsIdentity.cs
+    startLine: 677
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Initializes a new instance of the @'System.Security.Principal.WindowsIdentity' class by using the specified @'System.Security.Principal.WindowsIdentity' object.
+  syntax:
+    content: protected WindowsIdentity(WindowsIdentity identity)
+    content.vb: Protected Sub New(identity As WindowsIdentity)
+    parameters:
+    - id: identity
+      type: System.Security.Principal.WindowsIdentity
+      description: The object from which to construct the new instance of @'System.Security.Principal.WindowsIdentity'.
+- uid: System.Security.Principal.WindowsIdentity.Clone
+  id: Clone
+  parent: System.Security.Principal.WindowsIdentity
+  href: System.Security.Principal.WindowsIdentity.yml
+  name: Clone()
+  fullName: System.Security.Principal.WindowsIdentity.Clone()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/WindowsIdentity.cs
+    startLine: 734
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Creates a new  object that is a copy of the current instance.
+  syntax:
+    content: public override ClaimsIdentity Clone()
+    content.vb: Public Overrides Function Clone As ClaimsIdentity
+    return:
+      type: System.Security.Claims.ClaimsIdentity
+      description: A copy of the current instance.
+  overridden: System.Security.Claims.ClaimsIdentity.Clone
+- uid: System.Security.Principal.WindowsIdentity.UserClaims
+  id: UserClaims
+  parent: System.Security.Principal.WindowsIdentity
+  href: System.Security.Principal.WindowsIdentity.yml
+  name: UserClaims
+  fullName: System.Security.Principal.WindowsIdentity.UserClaims
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/WindowsIdentity.cs
+    startLine: 742
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Gets claims that have the @'System.Security.Claims.ClaimTypes.WindowsUserClaim' property key.
+  syntax:
+    content: public virtual IEnumerable<Claim> UserClaims { get; }
+    content.vb: Public Overridable ReadOnly Property UserClaims As IEnumerable(Of Claim)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Security.Claims.Claim}
+      description: A collection of claims that have the @'System.Security.Claims.ClaimTypes.WindowsUserClaim' property key.
+- uid: System.Security.Principal.WindowsIdentity.DeviceClaims
+  id: DeviceClaims
+  parent: System.Security.Principal.WindowsIdentity
+  href: System.Security.Principal.WindowsIdentity.yml
+  name: DeviceClaims
+  fullName: System.Security.Principal.WindowsIdentity.DeviceClaims
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/WindowsIdentity.cs
+    startLine: 755
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Gets claims that have the @'System.Security.Claims.ClaimTypes.WindowsDeviceClaim' property key.
+  syntax:
+    content: public virtual IEnumerable<Claim> DeviceClaims { get; }
+    content.vb: Public Overridable ReadOnly Property DeviceClaims As IEnumerable(Of Claim)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Security.Claims.Claim}
+      description: A collection of claims that have the @'System.Security.Claims.ClaimTypes.WindowsDeviceClaim' property key.
+- uid: System.Security.Principal.WindowsIdentity.Claims
+  id: Claims
+  parent: System.Security.Principal.WindowsIdentity
+  href: System.Security.Principal.WindowsIdentity.yml
+  name: Claims
+  fullName: System.Security.Principal.WindowsIdentity.Claims
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Security.Principal.Windows/src/System/Security/Principal/WindowsIdentity.cs
+    startLine: 769
+  assemblies:
+  - System.Security.Principal.Windows
+  namespace: System.Security.Principal
+  summary: Gets all claims for the user represented by this Windows identity.
+  syntax:
+    content: public override IEnumerable<Claim> Claims { get; }
+    content.vb: Public Overrides ReadOnly Property Claims As IEnumerable(Of Claim)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Security.Claims.Claim}
+      description: A collection of claims for this @'System.Security.Principal.WindowsIdentity' object.
+  overridden: System.Security.Claims.ClaimsIdentity.Claims
+references:
+- uid: System.Security.Principal
+  isExternal: false
+  name: System.Security.Principal
+  fullName: System.Security.Principal
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Security.Claims.ClaimsIdentity
+  parent: System.Security.Claims
+  isExternal: true
+  name: ClaimsIdentity
+  fullName: System.Security.Claims.ClaimsIdentity
+- uid: System.Security.Claims.ClaimsIdentity.DefaultNameClaimType
+  parent: System.Security.Claims.ClaimsIdentity
+  isExternal: true
+  name: DefaultNameClaimType
+  fullName: System.Security.Claims.ClaimsIdentity.DefaultNameClaimType
+- uid: System.Security.Claims.ClaimsIdentity.DefaultRoleClaimType
+  parent: System.Security.Claims.ClaimsIdentity
+  isExternal: true
+  name: DefaultRoleClaimType
+  fullName: System.Security.Claims.ClaimsIdentity.DefaultRoleClaimType
+- uid: System.Security.Claims.ClaimsIdentity.AddClaim(System.Security.Claims.Claim)
+  parent: System.Security.Claims.ClaimsIdentity
+  isExternal: true
+  name: AddClaim(Claim)
+  fullName: System.Security.Claims.ClaimsIdentity.AddClaim(System.Security.Claims.Claim)
+  spec.csharp:
+  - uid: System.Security.Claims.ClaimsIdentity.AddClaim(System.Security.Claims.Claim)
+    name: AddClaim
+    fullName: System.Security.Claims.ClaimsIdentity.AddClaim
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Claims.ClaimsIdentity.AddClaim(System.Security.Claims.Claim)
+    name: AddClaim
+    fullName: System.Security.Claims.ClaimsIdentity.AddClaim
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Security.Claims.ClaimsIdentity.AddClaims(System.Collections.Generic.IEnumerable{System.Security.Claims.Claim})
+  parent: System.Security.Claims.ClaimsIdentity
+  isExternal: true
+  name: AddClaims(IEnumerable<Claim>)
+  name.vb: AddClaims(IEnumerable(Of Claim))
+  fullName: System.Security.Claims.ClaimsIdentity.AddClaims(System.Collections.Generic.IEnumerable<System.Security.Claims.Claim>)
+  fullName.vb: System.Security.Claims.ClaimsIdentity.AddClaims(System.Collections.Generic.IEnumerable(Of System.Security.Claims.Claim))
+  spec.csharp:
+  - uid: System.Security.Claims.ClaimsIdentity.AddClaims(System.Collections.Generic.IEnumerable{System.Security.Claims.Claim})
+    name: AddClaims
+    fullName: System.Security.Claims.ClaimsIdentity.AddClaims
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Claims.ClaimsIdentity.AddClaims(System.Collections.Generic.IEnumerable{System.Security.Claims.Claim})
+    name: AddClaims
+    fullName: System.Security.Claims.ClaimsIdentity.AddClaims
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: )
+    fullName: )
+  - name: )
+    fullName: )
+- uid: System.Security.Claims.ClaimsIdentity.TryRemoveClaim(System.Security.Claims.Claim)
+  parent: System.Security.Claims.ClaimsIdentity
+  isExternal: true
+  name: TryRemoveClaim(Claim)
+  fullName: System.Security.Claims.ClaimsIdentity.TryRemoveClaim(System.Security.Claims.Claim)
+  spec.csharp:
+  - uid: System.Security.Claims.ClaimsIdentity.TryRemoveClaim(System.Security.Claims.Claim)
+    name: TryRemoveClaim
+    fullName: System.Security.Claims.ClaimsIdentity.TryRemoveClaim
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Claims.ClaimsIdentity.TryRemoveClaim(System.Security.Claims.Claim)
+    name: TryRemoveClaim
+    fullName: System.Security.Claims.ClaimsIdentity.TryRemoveClaim
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Security.Claims.ClaimsIdentity.RemoveClaim(System.Security.Claims.Claim)
+  parent: System.Security.Claims.ClaimsIdentity
+  isExternal: true
+  name: RemoveClaim(Claim)
+  fullName: System.Security.Claims.ClaimsIdentity.RemoveClaim(System.Security.Claims.Claim)
+  spec.csharp:
+  - uid: System.Security.Claims.ClaimsIdentity.RemoveClaim(System.Security.Claims.Claim)
+    name: RemoveClaim
+    fullName: System.Security.Claims.ClaimsIdentity.RemoveClaim
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Claims.ClaimsIdentity.RemoveClaim(System.Security.Claims.Claim)
+    name: RemoveClaim
+    fullName: System.Security.Claims.ClaimsIdentity.RemoveClaim
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Security.Claims.ClaimsIdentity.FindAll(System.Predicate{System.Security.Claims.Claim})
+  parent: System.Security.Claims.ClaimsIdentity
+  isExternal: true
+  name: FindAll(Predicate<Claim>)
+  name.vb: FindAll(Predicate(Of Claim))
+  fullName: System.Security.Claims.ClaimsIdentity.FindAll(System.Predicate<System.Security.Claims.Claim>)
+  fullName.vb: System.Security.Claims.ClaimsIdentity.FindAll(System.Predicate(Of System.Security.Claims.Claim))
+  spec.csharp:
+  - uid: System.Security.Claims.ClaimsIdentity.FindAll(System.Predicate{System.Security.Claims.Claim})
+    name: FindAll
+    fullName: System.Security.Claims.ClaimsIdentity.FindAll
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Predicate`1
+    name: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Claims.ClaimsIdentity.FindAll(System.Predicate{System.Security.Claims.Claim})
+    name: FindAll
+    fullName: System.Security.Claims.ClaimsIdentity.FindAll
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Predicate`1
+    name: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: )
+    fullName: )
+  - name: )
+    fullName: )
+- uid: System.Security.Claims.ClaimsIdentity.FindAll(System.String)
+  parent: System.Security.Claims.ClaimsIdentity
+  isExternal: true
+  name: FindAll(String)
+  fullName: System.Security.Claims.ClaimsIdentity.FindAll(System.String)
+  spec.csharp:
+  - uid: System.Security.Claims.ClaimsIdentity.FindAll(System.String)
+    name: FindAll
+    fullName: System.Security.Claims.ClaimsIdentity.FindAll
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Claims.ClaimsIdentity.FindAll(System.String)
+    name: FindAll
+    fullName: System.Security.Claims.ClaimsIdentity.FindAll
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Security.Claims.ClaimsIdentity.HasClaim(System.Predicate{System.Security.Claims.Claim})
+  parent: System.Security.Claims.ClaimsIdentity
+  isExternal: true
+  name: HasClaim(Predicate<Claim>)
+  name.vb: HasClaim(Predicate(Of Claim))
+  fullName: System.Security.Claims.ClaimsIdentity.HasClaim(System.Predicate<System.Security.Claims.Claim>)
+  fullName.vb: System.Security.Claims.ClaimsIdentity.HasClaim(System.Predicate(Of System.Security.Claims.Claim))
+  spec.csharp:
+  - uid: System.Security.Claims.ClaimsIdentity.HasClaim(System.Predicate{System.Security.Claims.Claim})
+    name: HasClaim
+    fullName: System.Security.Claims.ClaimsIdentity.HasClaim
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Predicate`1
+    name: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Claims.ClaimsIdentity.HasClaim(System.Predicate{System.Security.Claims.Claim})
+    name: HasClaim
+    fullName: System.Security.Claims.ClaimsIdentity.HasClaim
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Predicate`1
+    name: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: )
+    fullName: )
+  - name: )
+    fullName: )
+- uid: System.Security.Claims.ClaimsIdentity.HasClaim(System.String,System.String)
+  parent: System.Security.Claims.ClaimsIdentity
+  isExternal: true
+  name: HasClaim(String, String)
+  fullName: System.Security.Claims.ClaimsIdentity.HasClaim(System.String, System.String)
+  spec.csharp:
+  - uid: System.Security.Claims.ClaimsIdentity.HasClaim(System.String,System.String)
+    name: HasClaim
+    fullName: System.Security.Claims.ClaimsIdentity.HasClaim
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Claims.ClaimsIdentity.HasClaim(System.String,System.String)
+    name: HasClaim
+    fullName: System.Security.Claims.ClaimsIdentity.HasClaim
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Security.Claims.ClaimsIdentity.FindFirst(System.Predicate{System.Security.Claims.Claim})
+  parent: System.Security.Claims.ClaimsIdentity
+  isExternal: true
+  name: FindFirst(Predicate<Claim>)
+  name.vb: FindFirst(Predicate(Of Claim))
+  fullName: System.Security.Claims.ClaimsIdentity.FindFirst(System.Predicate<System.Security.Claims.Claim>)
+  fullName.vb: System.Security.Claims.ClaimsIdentity.FindFirst(System.Predicate(Of System.Security.Claims.Claim))
+  spec.csharp:
+  - uid: System.Security.Claims.ClaimsIdentity.FindFirst(System.Predicate{System.Security.Claims.Claim})
+    name: FindFirst
+    fullName: System.Security.Claims.ClaimsIdentity.FindFirst
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Predicate`1
+    name: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Claims.ClaimsIdentity.FindFirst(System.Predicate{System.Security.Claims.Claim})
+    name: FindFirst
+    fullName: System.Security.Claims.ClaimsIdentity.FindFirst
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Predicate`1
+    name: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: )
+    fullName: )
+  - name: )
+    fullName: )
+- uid: System.Security.Claims.ClaimsIdentity.FindFirst(System.String)
+  parent: System.Security.Claims.ClaimsIdentity
+  isExternal: true
+  name: FindFirst(String)
+  fullName: System.Security.Claims.ClaimsIdentity.FindFirst(System.String)
+  spec.csharp:
+  - uid: System.Security.Claims.ClaimsIdentity.FindFirst(System.String)
+    name: FindFirst
+    fullName: System.Security.Claims.ClaimsIdentity.FindFirst
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Claims.ClaimsIdentity.FindFirst(System.String)
+    name: FindFirst
+    fullName: System.Security.Claims.ClaimsIdentity.FindFirst
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.String
+    name: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Security.Claims.ClaimsIdentity.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: System.Security.Claims.ClaimsIdentity
+  isExternal: true
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  fullName: System.Security.Claims.ClaimsIdentity.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: System.Security.Claims.ClaimsIdentity.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    fullName: System.Security.Claims.ClaimsIdentity.GetObjectData
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    fullName: System.Runtime.Serialization.SerializationInfo
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Claims.ClaimsIdentity.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    fullName: System.Security.Claims.ClaimsIdentity.GetObjectData
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    fullName: System.Runtime.Serialization.SerializationInfo
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Security.Claims.ClaimsIdentity.CreateClaim(System.IO.BinaryReader)
+  parent: System.Security.Claims.ClaimsIdentity
+  isExternal: true
+  name: CreateClaim(BinaryReader)
+  fullName: System.Security.Claims.ClaimsIdentity.CreateClaim(System.IO.BinaryReader)
+  spec.csharp:
+  - uid: System.Security.Claims.ClaimsIdentity.CreateClaim(System.IO.BinaryReader)
+    name: CreateClaim
+    fullName: System.Security.Claims.ClaimsIdentity.CreateClaim
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IO.BinaryReader
+    name: BinaryReader
+    fullName: System.IO.BinaryReader
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Claims.ClaimsIdentity.CreateClaim(System.IO.BinaryReader)
+    name: CreateClaim
+    fullName: System.Security.Claims.ClaimsIdentity.CreateClaim
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IO.BinaryReader
+    name: BinaryReader
+    fullName: System.IO.BinaryReader
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Security.Claims.ClaimsIdentity.WriteTo(System.IO.BinaryWriter)
+  parent: System.Security.Claims.ClaimsIdentity
+  isExternal: true
+  name: WriteTo(BinaryWriter)
+  fullName: System.Security.Claims.ClaimsIdentity.WriteTo(System.IO.BinaryWriter)
+  spec.csharp:
+  - uid: System.Security.Claims.ClaimsIdentity.WriteTo(System.IO.BinaryWriter)
+    name: WriteTo
+    fullName: System.Security.Claims.ClaimsIdentity.WriteTo
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IO.BinaryWriter
+    name: BinaryWriter
+    fullName: System.IO.BinaryWriter
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Claims.ClaimsIdentity.WriteTo(System.IO.BinaryWriter)
+    name: WriteTo
+    fullName: System.Security.Claims.ClaimsIdentity.WriteTo
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IO.BinaryWriter
+    name: BinaryWriter
+    fullName: System.IO.BinaryWriter
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Security.Claims.ClaimsIdentity.WriteTo(System.IO.BinaryWriter,System.Byte[])
+  parent: System.Security.Claims.ClaimsIdentity
+  isExternal: true
+  name: WriteTo(BinaryWriter, Byte[])
+  name.vb: WriteTo(BinaryWriter, Byte())
+  fullName: System.Security.Claims.ClaimsIdentity.WriteTo(System.IO.BinaryWriter, System.Byte[])
+  fullName.vb: System.Security.Claims.ClaimsIdentity.WriteTo(System.IO.BinaryWriter, System.Byte())
+  spec.csharp:
+  - uid: System.Security.Claims.ClaimsIdentity.WriteTo(System.IO.BinaryWriter,System.Byte[])
+    name: WriteTo
+    fullName: System.Security.Claims.ClaimsIdentity.WriteTo
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IO.BinaryWriter
+    name: BinaryWriter
+    fullName: System.IO.BinaryWriter
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Claims.ClaimsIdentity.WriteTo(System.IO.BinaryWriter,System.Byte[])
+    name: WriteTo
+    fullName: System.Security.Claims.ClaimsIdentity.WriteTo
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.IO.BinaryWriter
+    name: BinaryWriter
+    fullName: System.IO.BinaryWriter
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    fullName: ()
+  - name: )
+    fullName: )
+- uid: System.Security.Claims.ClaimsIdentity.Actor
+  parent: System.Security.Claims.ClaimsIdentity
+  isExternal: true
+  name: Actor
+  fullName: System.Security.Claims.ClaimsIdentity.Actor
+- uid: System.Security.Claims.ClaimsIdentity.BootstrapContext
+  parent: System.Security.Claims.ClaimsIdentity
+  isExternal: true
+  name: BootstrapContext
+  fullName: System.Security.Claims.ClaimsIdentity.BootstrapContext
+- uid: System.Security.Claims.ClaimsIdentity.CustomSerializationData
+  parent: System.Security.Claims.ClaimsIdentity
+  isExternal: true
+  name: CustomSerializationData
+  fullName: System.Security.Claims.ClaimsIdentity.CustomSerializationData
+- uid: System.Security.Claims.ClaimsIdentity.Label
+  parent: System.Security.Claims.ClaimsIdentity
+  isExternal: true
+  name: Label
+  fullName: System.Security.Claims.ClaimsIdentity.Label
+- uid: System.Security.Claims.ClaimsIdentity.NameClaimType
+  parent: System.Security.Claims.ClaimsIdentity
+  isExternal: true
+  name: NameClaimType
+  fullName: System.Security.Claims.ClaimsIdentity.NameClaimType
+- uid: System.Security.Claims.ClaimsIdentity.RoleClaimType
+  parent: System.Security.Claims.ClaimsIdentity
+  isExternal: true
+  name: RoleClaimType
+  fullName: System.Security.Claims.ClaimsIdentity.RoleClaimType
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Security.Claims
+  isExternal: false
+  name: System.Security.Claims
+  fullName: System.Security.Claims
+- uid: System.IntPtr
+  parent: System
+  isExternal: true
+  name: IntPtr
+  fullName: System.IntPtr
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Security.Principal.WindowsIdentity
+  parent: System.Security.Principal
+  isExternal: false
+  href: System.Security.Principal.WindowsIdentity.yml
+  name: WindowsIdentity
+  fullName: System.Security.Principal.WindowsIdentity
+  type: Class
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Security.Principal.TokenAccessLevels
+  parent: System.Security.Principal
+  isExternal: false
+  href: System.Security.Principal.TokenAccessLevels.yml
+  name: TokenAccessLevels
+  fullName: System.Security.Principal.TokenAccessLevels
+  type: Enum
+- uid: System.Security.Claims.ClaimsIdentity.AuthenticationType
+  parent: System.Security.Claims.ClaimsIdentity
+  isExternal: true
+  name: AuthenticationType
+  fullName: System.Security.Claims.ClaimsIdentity.AuthenticationType
+- uid: System.Security.Principal.TokenImpersonationLevel
+  parent: System.Security.Principal
+  isExternal: false
+  href: System.Security.Principal.TokenImpersonationLevel.yml
+  name: TokenImpersonationLevel
+  fullName: System.Security.Principal.TokenImpersonationLevel
+  type: Enum
+- uid: System.Security.Claims.ClaimsIdentity.IsAuthenticated
+  parent: System.Security.Claims.ClaimsIdentity
+  isExternal: true
+  name: IsAuthenticated
+  fullName: System.Security.Claims.ClaimsIdentity.IsAuthenticated
+- uid: System.Security.Claims.ClaimsIdentity.Name
+  parent: System.Security.Claims.ClaimsIdentity
+  isExternal: true
+  name: Name
+  fullName: System.Security.Claims.ClaimsIdentity.Name
+- uid: System.Security.Principal.SecurityIdentifier
+  parent: System.Security.Principal
+  isExternal: false
+  href: System.Security.Principal.SecurityIdentifier.yml
+  name: SecurityIdentifier
+  fullName: System.Security.Principal.SecurityIdentifier
+  type: Class
+- uid: System.Security.Principal.IdentityReferenceCollection
+  parent: System.Security.Principal
+  isExternal: false
+  href: System.Security.Principal.IdentityReferenceCollection.yml
+  name: IdentityReferenceCollection
+  fullName: System.Security.Principal.IdentityReferenceCollection
+  type: Class
+- uid: Microsoft.Win32.SafeHandles.SafeAccessTokenHandle
+  parent: Microsoft.Win32.SafeHandles
+  isExternal: false
+  href: Microsoft.Win32.SafeHandles.SafeAccessTokenHandle.yml
+  name: SafeAccessTokenHandle
+  fullName: Microsoft.Win32.SafeHandles.SafeAccessTokenHandle
+  type: Class
+- uid: Microsoft.Win32.SafeHandles
+  isExternal: false
+  name: Microsoft.Win32.SafeHandles
+  fullName: Microsoft.Win32.SafeHandles
+  type: Namespace
+- uid: System.Action
+- uid: System.Func{{T}}
+  parent: System
+  definition: System.Func`1
+  name: Func<T>
+  name.vb: Func(Of T)
+  fullName: System.Func<T>
+  fullName.vb: System.Func(Of T)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: '{T}'
+  isExternal: false
+  name: T
+  fullName: T
+- uid: System.Func`1
+  parent: System
+  isExternal: true
+  name: Func<TResult>
+  name.vb: Func(Of TResult)
+  fullName: System.Func<TResult>
+  fullName.vb: System.Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Security.Claims.ClaimsIdentity.Clone
+  parent: System.Security.Claims.ClaimsIdentity
+  isExternal: true
+  name: Clone()
+  fullName: System.Security.Claims.ClaimsIdentity.Clone()
+  spec.csharp:
+  - uid: System.Security.Claims.ClaimsIdentity.Clone
+    name: Clone
+    fullName: System.Security.Claims.ClaimsIdentity.Clone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Claims.ClaimsIdentity.Clone
+    name: Clone
+    fullName: System.Security.Claims.ClaimsIdentity.Clone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{System.Security.Claims.Claim}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<Claim>
+  name.vb: IEnumerable(Of Claim)
+  fullName: System.Collections.Generic.IEnumerable<System.Security.Claims.Claim>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Security.Claims.Claim)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Security.Claims.ClaimsIdentity.Claims
+  parent: System.Security.Claims.ClaimsIdentity
+  isExternal: true
+  name: Claims
+  fullName: System.Security.Claims.ClaimsIdentity.Claims

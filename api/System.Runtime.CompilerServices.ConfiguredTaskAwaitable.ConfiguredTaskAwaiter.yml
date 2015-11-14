@@ -1,0 +1,400 @@
+items:
+- uid: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter
+  id: ConfiguredTaskAwaitable.ConfiguredTaskAwaiter
+  parent: System.Runtime.CompilerServices
+  children:
+  - System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.GetResult
+  - System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.IsCompleted
+  - System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.OnCompleted(System.Action)
+  - System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.UnsafeOnCompleted(System.Action)
+  href: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.yml
+  name: ConfiguredTaskAwaitable.ConfiguredTaskAwaiter
+  fullName: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter
+  type: Struct
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Runtime/CompilerServices/TaskAwaiter.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Runtime/CompilerServices/TaskAwaiter.cs
+    startLine: 378
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.CompilerServices
+  summary: Provides an awaiter for an awaitable (@'System.Runtime.CompilerServices.ConfiguredTaskAwaitable') object.
+  remarks: This type is intended for compiler use only.
+  syntax:
+    content: 'public struct ConfiguredTaskAwaiter : ICriticalNotifyCompletion, INotifyCompletion'
+    content.vb: Public Structure ConfiguredTaskAwaiter Implements ICriticalNotifyCompletion, INotifyCompletion
+  implements:
+  - System.Runtime.CompilerServices.ICriticalNotifyCompletion
+  - System.Runtime.CompilerServices.INotifyCompletion
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.IsCompleted
+  id: IsCompleted
+  parent: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter
+  href: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.yml
+  name: IsCompleted
+  fullName: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.IsCompleted
+  type: Property
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/CompilerServices/TaskAwaiter.cs
+    startLine: 402
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.CompilerServices
+  summary: Gets a value that specifies whether the task being awaited is completed.
+  remarks: This property is intended for compiler user rather than use directly in code.
+  syntax:
+    content: public bool IsCompleted { get; }
+    content.vb: Public ReadOnly Property IsCompleted As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the task being awaited is completed; otherwise, false.
+  exceptions:
+  - type: System.NullReferenceException
+    description: The awaiter was not properly initialized.
+- uid: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.OnCompleted(System.Action)
+  id: OnCompleted(System.Action)
+  parent: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter
+  href: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.yml
+  name: OnCompleted(Action)
+  fullName: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.OnCompleted(System.Action)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/CompilerServices/TaskAwaiter.cs
+    startLine: 412
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.CompilerServices
+  summary: Schedules the continuation action for the task associated with this awaiter.
+  remarks: This method is intended for compiler user rather than use directly in code.
+  syntax:
+    content: public void OnCompleted(Action continuation)
+    content.vb: Public Sub OnCompleted(continuation As Action)
+    parameters:
+    - id: continuation
+      type: System.Action
+      description: The action to invoke when the await operation completes.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *continuation* argument is null.
+  - type: System.NullReferenceException
+    description: The awaiter was not properly initialized.
+- uid: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.UnsafeOnCompleted(System.Action)
+  id: UnsafeOnCompleted(System.Action)
+  parent: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter
+  href: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.yml
+  name: UnsafeOnCompleted(Action)
+  fullName: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.UnsafeOnCompleted(System.Action)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/CompilerServices/TaskAwaiter.cs
+    startLine: 423
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.CompilerServices
+  summary: Schedules the continuation action for the task associated with this awaiter.
+  remarks: This method is intended for compiler user rather than use directly in code.
+  syntax:
+    content: public void UnsafeOnCompleted(Action continuation)
+    content.vb: Public Sub UnsafeOnCompleted(continuation As Action)
+    parameters:
+    - id: continuation
+      type: System.Action
+      description: The action to invoke when the await operation completes.
+  exceptions:
+  - type: System.ArgumentNullException
+    description: The *continuation* argument is null.
+  - type: System.NullReferenceException
+    description: The awaiter was not properly initialized.
+- uid: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.GetResult
+  id: GetResult
+  parent: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter
+  href: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.yml
+  name: GetResult()
+  fullName: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.GetResult()
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Runtime/CompilerServices/TaskAwaiter.cs
+    startLine: 434
+  assemblies:
+  - mscorlib
+  namespace: System.Runtime.CompilerServices
+  summary: Ends the await on the completed task.
+  syntax:
+    content: public void GetResult()
+    content.vb: Public Sub GetResult
+  exceptions:
+  - type: System.NullReferenceException
+    description: The awaiter was not properly initialized.
+  - type: System.Threading.Tasks.TaskCanceledException
+    description: The task was canceled.
+  - type: System.Exception
+    description: The task completed in a faulted state.
+references:
+- uid: System.Runtime.CompilerServices.ConfiguredTaskAwaitable
+  isExternal: false
+  href: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.yml
+  name: ConfiguredTaskAwaitable
+  fullName: System.Runtime.CompilerServices.ConfiguredTaskAwaitable
+  type: Struct
+  summary: Provides an awaitable object that allows for configured awaits on @'System.Threading.Tasks.Task'.
+- uid: System.Runtime.CompilerServices
+  isExternal: false
+  name: System.Runtime.CompilerServices
+  fullName: System.Runtime.CompilerServices
+  type: Namespace
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.NullReferenceException
+  isExternal: false
+  href: System.NullReferenceException.yml
+  name: NullReferenceException
+  fullName: System.NullReferenceException
+  type: Class
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Runtime.CompilerServices.TaskAwaiter
+  isExternal: false
+  href: System.Runtime.CompilerServices.TaskAwaiter.yml
+  name: TaskAwaiter
+  fullName: System.Runtime.CompilerServices.TaskAwaiter
+  type: Struct
+  summary: Provides an awaiter for awaiting a @'System.Threading.Tasks.Task'.
+- uid: System.ArgumentNullException
+- uid: System.Action
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  type: Namespace
+- uid: System.Threading.Tasks.TaskCanceledException
+  isExternal: false
+  href: System.Threading.Tasks.TaskCanceledException.yml
+  name: TaskCanceledException
+  fullName: System.Threading.Tasks.TaskCanceledException
+  type: Class
+  summary: Represents an exception used to communicate task cancellation.
+- uid: System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  fullName: System.Exception

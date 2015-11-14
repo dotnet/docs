@@ -1,0 +1,762 @@
+items:
+- uid: System.Net.WebSockets.WebSocket
+  id: WebSocket
+  parent: System.Net.WebSockets
+  children:
+  - System.Net.WebSockets.WebSocket.Abort
+  - System.Net.WebSockets.WebSocket.CloseAsync(System.Net.WebSockets.WebSocketCloseStatus,System.String,System.Threading.CancellationToken)
+  - System.Net.WebSockets.WebSocket.CloseOutputAsync(System.Net.WebSockets.WebSocketCloseStatus,System.String,System.Threading.CancellationToken)
+  - System.Net.WebSockets.WebSocket.CloseStatus
+  - System.Net.WebSockets.WebSocket.CloseStatusDescription
+  - System.Net.WebSockets.WebSocket.Dispose
+  - System.Net.WebSockets.WebSocket.ReceiveAsync(System.ArraySegment{System.Byte},System.Threading.CancellationToken)
+  - System.Net.WebSockets.WebSocket.SendAsync(System.ArraySegment{System.Byte},System.Net.WebSockets.WebSocketMessageType,System.Boolean,System.Threading.CancellationToken)
+  - System.Net.WebSockets.WebSocket.State
+  - System.Net.WebSockets.WebSocket.SubProtocol
+  href: System.Net.WebSockets.WebSocket.yml
+  name: WebSocket
+  fullName: System.Net.WebSockets.WebSocket
+  type: Class
+  source:
+    remote: &o0
+      path: src/System.Net.WebSockets/src/System/Net/WebSockets/WebSocket.cs
+      branch: master
+      repo: https://github.com/chenkennt/corefx.git
+    path: src/System.Net.WebSockets/src/System/Net/WebSockets/WebSocket.cs
+    startLine: 11
+  assemblies:
+  - System.Net.WebSockets
+  namespace: System.Net.WebSockets
+  summary: The WebSocket class allows applications to send and receive data after the WebSocket upgrade has completed.
+  syntax:
+    content: 'public abstract class WebSocket : IDisposable'
+    content.vb: Public MustInherit Class WebSocket Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Net.WebSockets.WebSocket.CloseStatus
+  id: CloseStatus
+  parent: System.Net.WebSockets.WebSocket
+  href: System.Net.WebSockets.WebSocket.yml
+  name: CloseStatus
+  fullName: System.Net.WebSockets.WebSocket.CloseStatus
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.WebSockets/src/System/Net/WebSockets/WebSocket.cs
+    startLine: 13
+  assemblies:
+  - System.Net.WebSockets
+  namespace: System.Net.WebSockets
+  summary: Indicates the reason why the remote endpoint initiated the close handshake.
+  syntax:
+    content: public abstract WebSocketCloseStatus? CloseStatus { get; }
+    content.vb: Public MustOverride ReadOnly Property CloseStatus As WebSocketCloseStatus?
+    parameters: []
+    return:
+      type: System.Nullable{System.Net.WebSockets.WebSocketCloseStatus}
+      description: Returns @'System.Net.WebSockets.WebSocketCloseStatus'.
+- uid: System.Net.WebSockets.WebSocket.CloseStatusDescription
+  id: CloseStatusDescription
+  parent: System.Net.WebSockets.WebSocket
+  href: System.Net.WebSockets.WebSocket.yml
+  name: CloseStatusDescription
+  fullName: System.Net.WebSockets.WebSocket.CloseStatusDescription
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.WebSockets/src/System/Net/WebSockets/WebSocket.cs
+    startLine: 14
+  assemblies:
+  - System.Net.WebSockets
+  namespace: System.Net.WebSockets
+  summary: Allows the remote endpoint to describe the reason why the connection was closed.
+  syntax:
+    content: public abstract string CloseStatusDescription { get; }
+    content.vb: Public MustOverride ReadOnly Property CloseStatusDescription As String
+    parameters: []
+    return:
+      type: System.String
+      description: Returns @'System.String'.
+- uid: System.Net.WebSockets.WebSocket.SubProtocol
+  id: SubProtocol
+  parent: System.Net.WebSockets.WebSocket
+  href: System.Net.WebSockets.WebSocket.yml
+  name: SubProtocol
+  fullName: System.Net.WebSockets.WebSocket.SubProtocol
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.WebSockets/src/System/Net/WebSockets/WebSocket.cs
+    startLine: 15
+  assemblies:
+  - System.Net.WebSockets
+  namespace: System.Net.WebSockets
+  summary: The subprotocol that was negotiated during the opening handshake.
+  syntax:
+    content: public abstract string SubProtocol { get; }
+    content.vb: Public MustOverride ReadOnly Property SubProtocol As String
+    parameters: []
+    return:
+      type: System.String
+      description: Returns @'System.String'.
+- uid: System.Net.WebSockets.WebSocket.State
+  id: State
+  parent: System.Net.WebSockets.WebSocket
+  href: System.Net.WebSockets.WebSocket.yml
+  name: State
+  fullName: System.Net.WebSockets.WebSocket.State
+  type: Property
+  source:
+    remote: *o0
+    path: src/System.Net.WebSockets/src/System/Net/WebSockets/WebSocket.cs
+    startLine: 16
+  assemblies:
+  - System.Net.WebSockets
+  namespace: System.Net.WebSockets
+  summary: Returns the current state of the WebSocket connection.
+  syntax:
+    content: public abstract WebSocketState State { get; }
+    content.vb: Public MustOverride ReadOnly Property State As WebSocketState
+    parameters: []
+    return:
+      type: System.Net.WebSockets.WebSocketState
+      description: Returns @'System.Net.WebSockets.WebSocketState'.
+- uid: System.Net.WebSockets.WebSocket.Abort
+  id: Abort
+  parent: System.Net.WebSockets.WebSocket
+  href: System.Net.WebSockets.WebSocket.yml
+  name: Abort()
+  fullName: System.Net.WebSockets.WebSocket.Abort()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.WebSockets/src/System/Net/WebSockets/WebSocket.cs
+    startLine: 18
+  assemblies:
+  - System.Net.WebSockets
+  namespace: System.Net.WebSockets
+  summary: Aborts the WebSocket connection and cancels any pending IO operations.
+  syntax:
+    content: public abstract void Abort()
+    content.vb: Public MustOverride Sub Abort
+- uid: System.Net.WebSockets.WebSocket.CloseAsync(System.Net.WebSockets.WebSocketCloseStatus,System.String,System.Threading.CancellationToken)
+  id: CloseAsync(System.Net.WebSockets.WebSocketCloseStatus,System.String,System.Threading.CancellationToken)
+  parent: System.Net.WebSockets.WebSocket
+  href: System.Net.WebSockets.WebSocket.yml
+  name: CloseAsync(WebSocketCloseStatus, String, CancellationToken)
+  fullName: System.Net.WebSockets.WebSocket.CloseAsync(System.Net.WebSockets.WebSocketCloseStatus, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.WebSockets/src/System/Net/WebSockets/WebSocket.cs
+    startLine: 19
+  assemblies:
+  - System.Net.WebSockets
+  namespace: System.Net.WebSockets
+  summary: Closes the WebSocket connection as an asynchronous operation using the close handshake defined in the WebSocket protocol specification section 7.
+  syntax:
+    content: public abstract Task CloseAsync(WebSocketCloseStatus closeStatus, string statusDescription, CancellationToken cancellationToken)
+    content.vb: Public MustOverride Function CloseAsync(closeStatus As WebSocketCloseStatus, statusDescription As String, cancellationToken As CancellationToken) As Task
+    parameters:
+    - id: closeStatus
+      type: System.Net.WebSockets.WebSocketCloseStatus
+      description: Indicates the reason for closing the WebSocket connection.
+    - id: statusDescription
+      type: System.String
+      description: Specifies a human readable explanation as to why the connection is closed.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The token that can be used to propagate notification that operations should be canceled.
+    return:
+      type: System.Threading.Tasks.Task
+      description: Returns @'System.Threading.Tasks.Task'.The task object representing the asynchronous operation.
+- uid: System.Net.WebSockets.WebSocket.CloseOutputAsync(System.Net.WebSockets.WebSocketCloseStatus,System.String,System.Threading.CancellationToken)
+  id: CloseOutputAsync(System.Net.WebSockets.WebSocketCloseStatus,System.String,System.Threading.CancellationToken)
+  parent: System.Net.WebSockets.WebSocket
+  href: System.Net.WebSockets.WebSocket.yml
+  name: CloseOutputAsync(WebSocketCloseStatus, String, CancellationToken)
+  fullName: System.Net.WebSockets.WebSocket.CloseOutputAsync(System.Net.WebSockets.WebSocketCloseStatus, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.WebSockets/src/System/Net/WebSockets/WebSocket.cs
+    startLine: 22
+  assemblies:
+  - System.Net.WebSockets
+  namespace: System.Net.WebSockets
+  summary: Initiates or completes the close handshake defined in the WebSocket protocol specification section 7.
+  syntax:
+    content: public abstract Task CloseOutputAsync(WebSocketCloseStatus closeStatus, string statusDescription, CancellationToken cancellationToken)
+    content.vb: Public MustOverride Function CloseOutputAsync(closeStatus As WebSocketCloseStatus, statusDescription As String, cancellationToken As CancellationToken) As Task
+    parameters:
+    - id: closeStatus
+      type: System.Net.WebSockets.WebSocketCloseStatus
+      description: Indicates the reason for closing the WebSocket connection.
+    - id: statusDescription
+      type: System.String
+      description: Allows applications to specify a human readable explanation as to why the connection is closed.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The token that can be used to propagate notification that operations should be canceled.
+    return:
+      type: System.Threading.Tasks.Task
+      description: Returns @'System.Threading.Tasks.Task'.The task object representing the asynchronous operation.
+- uid: System.Net.WebSockets.WebSocket.Dispose
+  id: Dispose
+  parent: System.Net.WebSockets.WebSocket
+  href: System.Net.WebSockets.WebSocket.yml
+  name: Dispose()
+  fullName: System.Net.WebSockets.WebSocket.Dispose()
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.WebSockets/src/System/Net/WebSockets/WebSocket.cs
+    startLine: 25
+  assemblies:
+  - System.Net.WebSockets
+  namespace: System.Net.WebSockets
+  summary: Used to clean up unmanaged resources for ASP.NET and self-hosted implementations.
+  syntax:
+    content: public abstract void Dispose()
+    content.vb: Public MustOverride Sub Dispose
+- uid: System.Net.WebSockets.WebSocket.ReceiveAsync(System.ArraySegment{System.Byte},System.Threading.CancellationToken)
+  id: ReceiveAsync(System.ArraySegment{System.Byte},System.Threading.CancellationToken)
+  parent: System.Net.WebSockets.WebSocket
+  href: System.Net.WebSockets.WebSocket.yml
+  name: ReceiveAsync(ArraySegment<Byte>, CancellationToken)
+  name.vb: ReceiveAsync(ArraySegment(Of Byte), CancellationToken)
+  fullName: System.Net.WebSockets.WebSocket.ReceiveAsync(System.ArraySegment<System.Byte>, System.Threading.CancellationToken)
+  fullName.vb: System.Net.WebSockets.WebSocket.ReceiveAsync(System.ArraySegment(Of System.Byte), System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.WebSockets/src/System/Net/WebSockets/WebSocket.cs
+    startLine: 26
+  assemblies:
+  - System.Net.WebSockets
+  namespace: System.Net.WebSockets
+  summary: Receives data from the WebSocket connection asynchronously.
+  syntax:
+    content: public abstract Task<WebSocketReceiveResult> ReceiveAsync(ArraySegment<byte> buffer, CancellationToken cancellationToken)
+    content.vb: Public MustOverride Function ReceiveAsync(buffer As ArraySegment(Of Byte), cancellationToken As CancellationToken) As Task(Of WebSocketReceiveResult)
+    parameters:
+    - id: buffer
+      type: System.ArraySegment{System.Byte}
+      description: References the application buffer that is the storage location for the received data.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Propagate the notification that operations should be canceled.
+    return:
+      type: System.Threading.Tasks.Task{System.Net.WebSockets.WebSocketReceiveResult}
+      description: Returns @'System.Threading.Tasks.Task`1'.The task object representing the asynchronous operation. The @'System.Threading.Tasks.Task`1.Result' property on the task object returns a @'System.Byte' array containing the received data.
+- uid: System.Net.WebSockets.WebSocket.SendAsync(System.ArraySegment{System.Byte},System.Net.WebSockets.WebSocketMessageType,System.Boolean,System.Threading.CancellationToken)
+  id: SendAsync(System.ArraySegment{System.Byte},System.Net.WebSockets.WebSocketMessageType,System.Boolean,System.Threading.CancellationToken)
+  parent: System.Net.WebSockets.WebSocket
+  href: System.Net.WebSockets.WebSocket.yml
+  name: SendAsync(ArraySegment<Byte>, WebSocketMessageType, Boolean, CancellationToken)
+  name.vb: SendAsync(ArraySegment(Of Byte), WebSocketMessageType, Boolean, CancellationToken)
+  fullName: System.Net.WebSockets.WebSocket.SendAsync(System.ArraySegment<System.Byte>, System.Net.WebSockets.WebSocketMessageType, System.Boolean, System.Threading.CancellationToken)
+  fullName.vb: System.Net.WebSockets.WebSocket.SendAsync(System.ArraySegment(Of System.Byte), System.Net.WebSockets.WebSocketMessageType, System.Boolean, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote: *o0
+    path: src/System.Net.WebSockets/src/System/Net/WebSockets/WebSocket.cs
+    startLine: 28
+  assemblies:
+  - System.Net.WebSockets
+  namespace: System.Net.WebSockets
+  summary: Sends data over the WebSocket connection asynchronously.
+  syntax:
+    content: public abstract Task SendAsync(ArraySegment<byte> buffer, WebSocketMessageType messageType, bool endOfMessage, CancellationToken cancellationToken)
+    content.vb: Public MustOverride Function SendAsync(buffer As ArraySegment(Of Byte), messageType As WebSocketMessageType, endOfMessage As Boolean, cancellationToken As CancellationToken) As Task
+    parameters:
+    - id: buffer
+      type: System.ArraySegment{System.Byte}
+      description: The buffer to be sent over the connection.
+    - id: messageType
+      type: System.Net.WebSockets.WebSocketMessageType
+      description: Indicates whether the application is sending a binary or text message.
+    - id: endOfMessage
+      type: System.Boolean
+      description: "Indicates whether the data in “buffer” is the last part of a message."
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The token that propagates the notification that operations should be canceled.
+    return:
+      type: System.Threading.Tasks.Task
+      description: Returns @'System.Threading.Tasks.Task'.The task object representing the asynchronous operation.
+references:
+- uid: System.Net.WebSockets
+  isExternal: false
+  name: System.Net.WebSockets
+  fullName: System.Net.WebSockets
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Nullable{System.Net.WebSockets.WebSocketCloseStatus}
+  parent: System
+  definition: System.Nullable`1
+  href: System.Net.WebSockets.WebSocketCloseStatus.yml
+  name: Nullable<WebSocketCloseStatus>
+  name.vb: Nullable(Of WebSocketCloseStatus)
+  fullName: System.Nullable<System.Net.WebSockets.WebSocketCloseStatus>
+  fullName.vb: System.Nullable(Of System.Net.WebSockets.WebSocketCloseStatus)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Net.WebSockets.WebSocketCloseStatus
+    name: WebSocketCloseStatus
+    fullName: System.Net.WebSockets.WebSocketCloseStatus
+    href: System.Net.WebSockets.WebSocketCloseStatus.yml
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Net.WebSockets.WebSocketCloseStatus
+    name: WebSocketCloseStatus
+    fullName: System.Net.WebSockets.WebSocketCloseStatus
+    href: System.Net.WebSockets.WebSocketCloseStatus.yml
+  - name: )
+    fullName: )
+- uid: System.Nullable`1
+  parent: System
+  isExternal: true
+  name: Nullable<T>
+  name.vb: Nullable(Of T)
+  fullName: System.Nullable<T>
+  fullName.vb: System.Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Net.WebSockets.WebSocketState
+  parent: System.Net.WebSockets
+  isExternal: false
+  href: System.Net.WebSockets.WebSocketState.yml
+  name: WebSocketState
+  fullName: System.Net.WebSockets.WebSocketState
+  type: Enum
+- uid: System.Net.WebSockets.WebSocketCloseStatus
+  parent: System.Net.WebSockets
+  isExternal: false
+  href: System.Net.WebSockets.WebSocketCloseStatus.yml
+  name: WebSocketCloseStatus
+  fullName: System.Net.WebSockets.WebSocketCloseStatus
+  type: Enum
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading
+  isExternal: false
+  name: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  type: Namespace
+- uid: System.ArraySegment{System.Byte}
+  parent: System
+  definition: System.ArraySegment`1
+  href: System.ArraySegment`1.yml
+  name: ArraySegment<Byte>
+  name.vb: ArraySegment(Of Byte)
+  fullName: System.ArraySegment<System.Byte>
+  fullName.vb: System.ArraySegment(Of System.Byte)
+  spec.csharp:
+  - uid: System.ArraySegment`1
+    name: ArraySegment
+    fullName: System.ArraySegment
+    href: System.ArraySegment`1.yml
+  - name: <
+    fullName: <
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    href: System.Byte.yml
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.ArraySegment`1
+    name: ArraySegment
+    fullName: System.ArraySegment
+    href: System.ArraySegment`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Byte
+    name: Byte
+    fullName: System.Byte
+    href: System.Byte.yml
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Net.WebSockets.WebSocketReceiveResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: System.Net.WebSockets.WebSocketReceiveResult.yml
+  name: Task<WebSocketReceiveResult>
+  name.vb: Task(Of WebSocketReceiveResult)
+  fullName: System.Threading.Tasks.Task<System.Net.WebSockets.WebSocketReceiveResult>
+  fullName.vb: System.Threading.Tasks.Task(Of System.Net.WebSockets.WebSocketReceiveResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Net.WebSockets.WebSocketReceiveResult
+    name: WebSocketReceiveResult
+    fullName: System.Net.WebSockets.WebSocketReceiveResult
+    href: System.Net.WebSockets.WebSocketReceiveResult.yml
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Net.WebSockets.WebSocketReceiveResult
+    name: WebSocketReceiveResult
+    fullName: System.Net.WebSockets.WebSocketReceiveResult
+    href: System.Net.WebSockets.WebSocketReceiveResult.yml
+  - name: )
+    fullName: )
+- uid: System.ArraySegment`1
+  parent: System
+  isExternal: false
+  href: System.ArraySegment`1.yml
+  name: ArraySegment<T>
+  name.vb: ArraySegment(Of T)
+  fullName: System.ArraySegment<T>
+  fullName.vb: System.ArraySegment(Of T)
+  type: Struct
+  spec.csharp:
+  - uid: System.ArraySegment`1
+    name: ArraySegment
+    fullName: System.ArraySegment
+    href: System.ArraySegment`1.yml
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.ArraySegment`1
+    name: ArraySegment
+    fullName: System.ArraySegment
+    href: System.ArraySegment`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task<TResult>
+  name.vb: Task(Of TResult)
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: TResult
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    fullName: TResult
+  - name: )
+    fullName: )
+- uid: System.Net.WebSockets.WebSocketMessageType
+  parent: System.Net.WebSockets
+  isExternal: false
+  href: System.Net.WebSockets.WebSocketMessageType.yml
+  name: WebSocketMessageType
+  fullName: System.Net.WebSockets.WebSocketMessageType
+  type: Enum
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean

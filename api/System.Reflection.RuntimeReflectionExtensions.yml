@@ -1,0 +1,803 @@
+items:
+- uid: System.Reflection.RuntimeReflectionExtensions
+  id: RuntimeReflectionExtensions
+  parent: System.Reflection
+  children:
+  - System.Reflection.RuntimeReflectionExtensions.GetMethodInfo(System.Delegate)
+  - System.Reflection.RuntimeReflectionExtensions.GetRuntimeBaseDefinition(System.Reflection.MethodInfo)
+  - System.Reflection.RuntimeReflectionExtensions.GetRuntimeEvent(System.Type,System.String)
+  - System.Reflection.RuntimeReflectionExtensions.GetRuntimeEvents(System.Type)
+  - System.Reflection.RuntimeReflectionExtensions.GetRuntimeField(System.Type,System.String)
+  - System.Reflection.RuntimeReflectionExtensions.GetRuntimeFields(System.Type)
+  - System.Reflection.RuntimeReflectionExtensions.GetRuntimeInterfaceMap(System.Reflection.TypeInfo,System.Type)
+  - System.Reflection.RuntimeReflectionExtensions.GetRuntimeMethod(System.Type,System.String,System.Type[])
+  - System.Reflection.RuntimeReflectionExtensions.GetRuntimeMethods(System.Type)
+  - System.Reflection.RuntimeReflectionExtensions.GetRuntimeProperties(System.Type)
+  - System.Reflection.RuntimeReflectionExtensions.GetRuntimeProperty(System.Type,System.String)
+  href: System.Reflection.RuntimeReflectionExtensions.yml
+  name: RuntimeReflectionExtensions
+  fullName: System.Reflection.RuntimeReflectionExtensions
+  type: Class
+  source:
+    remote: &o0
+      path: src/mscorlib/src/System/Reflection/RuntimeReflectionExtensions.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Reflection/RuntimeReflectionExtensions.cs
+    startLine: 7
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Provides methods that retrieve information about types at run time.
+  syntax:
+    content: public class RuntimeReflectionExtensions
+    content.vb: Public Class RuntimeReflectionExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: System.Reflection.RuntimeReflectionExtensions.GetRuntimeProperties(System.Type)
+  id: GetRuntimeProperties(System.Type)
+  parent: System.Reflection.RuntimeReflectionExtensions
+  href: System.Reflection.RuntimeReflectionExtensions.yml
+  name: GetRuntimeProperties(Type)
+  fullName: System.Reflection.RuntimeReflectionExtensions.GetRuntimeProperties(System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/RuntimeReflectionExtensions.cs
+    startLine: 23
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Retrieves a collection that represents all the properties defined on a specified type.
+  syntax:
+    content: public static IEnumerable<PropertyInfo> GetRuntimeProperties(Type type)
+    content.vb: Public Shared Function GetRuntimeProperties(type As Type) As IEnumerable(Of PropertyInfo)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type that contains the properties.
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.PropertyInfo}
+      description: A collection of properties for the specified type.
+- uid: System.Reflection.RuntimeReflectionExtensions.GetRuntimeEvents(System.Type)
+  id: GetRuntimeEvents(System.Type)
+  parent: System.Reflection.RuntimeReflectionExtensions
+  href: System.Reflection.RuntimeReflectionExtensions.yml
+  name: GetRuntimeEvents(Type)
+  fullName: System.Reflection.RuntimeReflectionExtensions.GetRuntimeEvents(System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/RuntimeReflectionExtensions.cs
+    startLine: 28
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Retrieves a collection that represents all the events defined on a specified type.
+  syntax:
+    content: public static IEnumerable<EventInfo> GetRuntimeEvents(Type type)
+    content.vb: Public Shared Function GetRuntimeEvents(type As Type) As IEnumerable(Of EventInfo)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type that contains the events.
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.EventInfo}
+      description: A collection of events for the specified type.
+- uid: System.Reflection.RuntimeReflectionExtensions.GetRuntimeMethods(System.Type)
+  id: GetRuntimeMethods(System.Type)
+  parent: System.Reflection.RuntimeReflectionExtensions
+  href: System.Reflection.RuntimeReflectionExtensions.yml
+  name: GetRuntimeMethods(Type)
+  fullName: System.Reflection.RuntimeReflectionExtensions.GetRuntimeMethods(System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/RuntimeReflectionExtensions.cs
+    startLine: 34
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Retrieves a collection that represents all methods defined on a specified type.
+  syntax:
+    content: public static IEnumerable<MethodInfo> GetRuntimeMethods(Type type)
+    content.vb: Public Shared Function GetRuntimeMethods(type As Type) As IEnumerable(Of MethodInfo)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type that contains the methods.
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo}
+      description: A collection of methods for the specified type.
+- uid: System.Reflection.RuntimeReflectionExtensions.GetRuntimeFields(System.Type)
+  id: GetRuntimeFields(System.Type)
+  parent: System.Reflection.RuntimeReflectionExtensions
+  href: System.Reflection.RuntimeReflectionExtensions.yml
+  name: GetRuntimeFields(Type)
+  fullName: System.Reflection.RuntimeReflectionExtensions.GetRuntimeFields(System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/RuntimeReflectionExtensions.cs
+    startLine: 40
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Retrieves a collection that represents all the fields defined on a specified type.
+  syntax:
+    content: public static IEnumerable<FieldInfo> GetRuntimeFields(Type type)
+    content.vb: Public Shared Function GetRuntimeFields(type As Type) As IEnumerable(Of FieldInfo)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type that contains the fields.
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.FieldInfo}
+      description: A collection of fields for the specified type.
+- uid: System.Reflection.RuntimeReflectionExtensions.GetRuntimeProperty(System.Type,System.String)
+  id: GetRuntimeProperty(System.Type,System.String)
+  parent: System.Reflection.RuntimeReflectionExtensions
+  href: System.Reflection.RuntimeReflectionExtensions.yml
+  name: GetRuntimeProperty(Type, String)
+  fullName: System.Reflection.RuntimeReflectionExtensions.GetRuntimeProperty(System.Type, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/RuntimeReflectionExtensions.cs
+    startLine: 46
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Retrieves an object that represents a specified property.
+  syntax:
+    content: public static PropertyInfo GetRuntimeProperty(Type type, string name)
+    content.vb: Public Shared Function GetRuntimeProperty(type As Type, name As String) As PropertyInfo
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type that contains the property.
+    - id: name
+      type: System.String
+      description: The name of the property.
+    return:
+      type: System.Reflection.PropertyInfo
+      description: An object that represents the specified property, or null if the property is not found.
+- uid: System.Reflection.RuntimeReflectionExtensions.GetRuntimeEvent(System.Type,System.String)
+  id: GetRuntimeEvent(System.Type,System.String)
+  parent: System.Reflection.RuntimeReflectionExtensions
+  href: System.Reflection.RuntimeReflectionExtensions.yml
+  name: GetRuntimeEvent(Type, String)
+  fullName: System.Reflection.RuntimeReflectionExtensions.GetRuntimeEvent(System.Type, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/RuntimeReflectionExtensions.cs
+    startLine: 51
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Retrieves an object that represents the specified event.
+  syntax:
+    content: public static EventInfo GetRuntimeEvent(Type type, string name)
+    content.vb: Public Shared Function GetRuntimeEvent(type As Type, name As String) As EventInfo
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type that contains the event.
+    - id: name
+      type: System.String
+      description: The name of the event.
+    return:
+      type: System.Reflection.EventInfo
+      description: An object that represents the specified event, or null if the event is not found.
+- uid: System.Reflection.RuntimeReflectionExtensions.GetRuntimeMethod(System.Type,System.String,System.Type[])
+  id: GetRuntimeMethod(System.Type,System.String,System.Type[])
+  parent: System.Reflection.RuntimeReflectionExtensions
+  href: System.Reflection.RuntimeReflectionExtensions.yml
+  name: GetRuntimeMethod(Type, String, Type[])
+  name.vb: GetRuntimeMethod(Type, String, Type())
+  fullName: System.Reflection.RuntimeReflectionExtensions.GetRuntimeMethod(System.Type, System.String, System.Type[])
+  fullName.vb: System.Reflection.RuntimeReflectionExtensions.GetRuntimeMethod(System.Type, System.String, System.Type())
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/RuntimeReflectionExtensions.cs
+    startLine: 56
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Retrieves an object that represents a specified method.
+  syntax:
+    content: public static MethodInfo GetRuntimeMethod(Type type, string name, Type[] parameters)
+    content.vb: Public Shared Function GetRuntimeMethod(type As Type, name As String, parameters As Type()) As MethodInfo
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type that contains the method.
+    - id: name
+      type: System.String
+      description: The name of the method.
+    - id: parameters
+      type: System.Type[]
+      description: An array that contains the method's parameters.
+    return:
+      type: System.Reflection.MethodInfo
+      description: An object that represents the specified method, or null if the method is not found.
+- uid: System.Reflection.RuntimeReflectionExtensions.GetRuntimeField(System.Type,System.String)
+  id: GetRuntimeField(System.Type,System.String)
+  parent: System.Reflection.RuntimeReflectionExtensions
+  href: System.Reflection.RuntimeReflectionExtensions.yml
+  name: GetRuntimeField(Type, String)
+  fullName: System.Reflection.RuntimeReflectionExtensions.GetRuntimeField(System.Type, System.String)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/RuntimeReflectionExtensions.cs
+    startLine: 61
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Retrieves an object that represents a specified field.
+  syntax:
+    content: public static FieldInfo GetRuntimeField(Type type, string name)
+    content.vb: Public Shared Function GetRuntimeField(type As Type, name As String) As FieldInfo
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type that contains the field.
+    - id: name
+      type: System.String
+      description: The name of the field.
+    return:
+      type: System.Reflection.FieldInfo
+      description: An object that represents the specified field, or null if the field is not found.
+- uid: System.Reflection.RuntimeReflectionExtensions.GetRuntimeBaseDefinition(System.Reflection.MethodInfo)
+  id: GetRuntimeBaseDefinition(System.Reflection.MethodInfo)
+  parent: System.Reflection.RuntimeReflectionExtensions
+  href: System.Reflection.RuntimeReflectionExtensions.yml
+  name: GetRuntimeBaseDefinition(MethodInfo)
+  fullName: System.Reflection.RuntimeReflectionExtensions.GetRuntimeBaseDefinition(System.Reflection.MethodInfo)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/RuntimeReflectionExtensions.cs
+    startLine: 66
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Retrieves an object that represents the specified method on the direct or indirect base class where the method was first declared.
+  syntax:
+    content: public static MethodInfo GetRuntimeBaseDefinition(MethodInfo method)
+    content.vb: Public Shared Function GetRuntimeBaseDefinition(method As MethodInfo) As MethodInfo
+    parameters:
+    - id: method
+      type: System.Reflection.MethodInfo
+      description: The method to retrieve information about.
+    return:
+      type: System.Reflection.MethodInfo
+      description: An object that represents the specified method's initial declaration on a base class.
+- uid: System.Reflection.RuntimeReflectionExtensions.GetRuntimeInterfaceMap(System.Reflection.TypeInfo,System.Type)
+  id: GetRuntimeInterfaceMap(System.Reflection.TypeInfo,System.Type)
+  parent: System.Reflection.RuntimeReflectionExtensions
+  href: System.Reflection.RuntimeReflectionExtensions.yml
+  name: GetRuntimeInterfaceMap(TypeInfo, Type)
+  fullName: System.Reflection.RuntimeReflectionExtensions.GetRuntimeInterfaceMap(System.Reflection.TypeInfo, System.Type)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/RuntimeReflectionExtensions.cs
+    startLine: 71
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Returns an interface mapping for the specified type and the specified interface.
+  syntax:
+    content: public static InterfaceMapping GetRuntimeInterfaceMap(TypeInfo typeInfo, Type interfaceType)
+    content.vb: Public Shared Function GetRuntimeInterfaceMap(typeInfo As TypeInfo, interfaceType As Type) As InterfaceMapping
+    parameters:
+    - id: typeInfo
+      type: System.Reflection.TypeInfo
+      description: The type to retrieve a mapping for.
+    - id: interfaceType
+      type: System.Type
+      description: The interface to retrieve a mapping for.
+    return:
+      type: System.Reflection.InterfaceMapping
+      description: An object that represents the interface mapping for the specified interface and type.
+- uid: System.Reflection.RuntimeReflectionExtensions.GetMethodInfo(System.Delegate)
+  id: GetMethodInfo(System.Delegate)
+  parent: System.Reflection.RuntimeReflectionExtensions
+  href: System.Reflection.RuntimeReflectionExtensions.yml
+  name: GetMethodInfo(Delegate)
+  fullName: System.Reflection.RuntimeReflectionExtensions.GetMethodInfo(System.Delegate)
+  type: Method
+  source:
+    remote: *o0
+    path: src/mscorlib/src/System/Reflection/RuntimeReflectionExtensions.cs
+    startLine: 79
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Gets an object that represents the method represented by the specified delegate.
+  syntax:
+    content: public static MethodInfo GetMethodInfo(Delegate del)
+    content.vb: Public Shared Function GetMethodInfo(del As Delegate) As MethodInfo
+    parameters:
+    - id: del
+      type: System.Delegate
+      description: The delegate to examine.
+    return:
+      type: System.Reflection.MethodInfo
+      description: An object that represents the method.
+references:
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  fullName: System.Type
+- uid: System.Collections.Generic.IEnumerable{System.Reflection.PropertyInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: System.Collections.Generic.IEnumerable`1.yml
+  name: IEnumerable<PropertyInfo>
+  name.vb: IEnumerable(Of PropertyInfo)
+  fullName: System.Collections.Generic.IEnumerable<System.Reflection.PropertyInfo>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Reflection.PropertyInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    href: System.Collections.Generic.IEnumerable`1.yml
+  - name: <
+    fullName: <
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    fullName: System.Reflection.PropertyInfo
+    href: System.Reflection.PropertyInfo.yml
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    href: System.Collections.Generic.IEnumerable`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    fullName: System.Reflection.PropertyInfo
+    href: System.Reflection.PropertyInfo.yml
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  parent: System.Collections.Generic
+  isExternal: true
+  name: IEnumerable<T>
+  name.vb: IEnumerable(Of T)
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.Generic.IEnumerable{System.Reflection.EventInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: System.Collections.Generic.IEnumerable`1.yml
+  name: IEnumerable<EventInfo>
+  name.vb: IEnumerable(Of EventInfo)
+  fullName: System.Collections.Generic.IEnumerable<System.Reflection.EventInfo>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Reflection.EventInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    href: System.Collections.Generic.IEnumerable`1.yml
+  - name: <
+    fullName: <
+  - uid: System.Reflection.EventInfo
+    name: EventInfo
+    fullName: System.Reflection.EventInfo
+    href: System.Reflection.EventInfo.yml
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    href: System.Collections.Generic.IEnumerable`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Reflection.EventInfo
+    name: EventInfo
+    fullName: System.Reflection.EventInfo
+    href: System.Reflection.EventInfo.yml
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: System.Collections.Generic.IEnumerable`1.yml
+  name: IEnumerable<MethodInfo>
+  name.vb: IEnumerable(Of MethodInfo)
+  fullName: System.Collections.Generic.IEnumerable<System.Reflection.MethodInfo>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Reflection.MethodInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    href: System.Collections.Generic.IEnumerable`1.yml
+  - name: <
+    fullName: <
+  - uid: System.Reflection.MethodInfo
+    name: MethodInfo
+    fullName: System.Reflection.MethodInfo
+    href: System.Reflection.MethodInfo.yml
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    href: System.Collections.Generic.IEnumerable`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Reflection.MethodInfo
+    name: MethodInfo
+    fullName: System.Reflection.MethodInfo
+    href: System.Reflection.MethodInfo.yml
+  - name: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{System.Reflection.FieldInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: System.Collections.Generic.IEnumerable`1.yml
+  name: IEnumerable<FieldInfo>
+  name.vb: IEnumerable(Of FieldInfo)
+  fullName: System.Collections.Generic.IEnumerable<System.Reflection.FieldInfo>
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Reflection.FieldInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    href: System.Collections.Generic.IEnumerable`1.yml
+  - name: <
+    fullName: <
+  - uid: System.Reflection.FieldInfo
+    name: FieldInfo
+    fullName: System.Reflection.FieldInfo
+    href: System.Reflection.FieldInfo.yml
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    href: System.Collections.Generic.IEnumerable`1.yml
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Reflection.FieldInfo
+    name: FieldInfo
+    fullName: System.Reflection.FieldInfo
+    href: System.Reflection.FieldInfo.yml
+  - name: )
+    fullName: )
+- uid: System.String
+  parent: System
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Reflection.PropertyInfo
+  parent: System.Reflection
+  isExternal: true
+  name: PropertyInfo
+  fullName: System.Reflection.PropertyInfo
+- uid: System.Reflection.EventInfo
+  parent: System.Reflection
+  isExternal: true
+  name: EventInfo
+  fullName: System.Reflection.EventInfo
+- uid: System.Type[]
+  isExternal: true
+  name: Type[]
+  name.vb: Type()
+  fullName: System.Type[]
+  fullName.vb: System.Type()
+  spec.csharp:
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Type
+    name: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Reflection.MethodInfo
+  parent: System.Reflection
+  isExternal: true
+  name: MethodInfo
+  fullName: System.Reflection.MethodInfo
+- uid: System.Reflection.FieldInfo
+  parent: System.Reflection
+  isExternal: true
+  name: FieldInfo
+  fullName: System.Reflection.FieldInfo
+- uid: System.Reflection.TypeInfo
+  parent: System.Reflection
+  isExternal: false
+  href: System.Reflection.TypeInfo.yml
+  name: TypeInfo
+  fullName: System.Reflection.TypeInfo
+  type: Class
+- uid: System.Reflection.InterfaceMapping
+  parent: System.Reflection
+  isExternal: false
+  href: System.Reflection.InterfaceMapping.yml
+  name: InterfaceMapping
+  fullName: System.Reflection.InterfaceMapping
+  type: Struct
+- uid: System.Delegate
+  parent: System
+  isExternal: false
+  href: System.Delegate.yml
+  name: Delegate
+  fullName: System.Delegate
+  type: Class

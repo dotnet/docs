@@ -1,0 +1,59 @@
+items:
+- uid: System.ResolveEventHandler
+  id: ResolveEventHandler
+  parent: System
+  children: []
+  href: System.ResolveEventHandler.yml
+  name: ResolveEventHandler
+  fullName: System.ResolveEventHandler
+  type: Delegate
+  source:
+    remote:
+      path: src/mscorlib/src/System/AppDomain.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/AppDomain.cs
+    startLine: 108
+  assemblies:
+  - mscorlib
+  namespace: System
+  summary: Represents a method that handles the @'System.AppDomain.TypeResolve', @'System.AppDomain.ResourceResolve', or @'System.AppDomain.AssemblyResolve' event of an @'System.AppDomain'.
+  syntax:
+    content: public delegate Assembly ResolveEventHandler(object sender, ResolveEventArgs args);
+    content.vb: Public Delegate Function ResolveEventHandler(sender As Object, args As ResolveEventArgs) As Assembly
+    parameters:
+    - id: sender
+      type: System.Object
+      description: The source of the event.
+    - id: args
+      type: System.ResolveEventArgs
+      description: The event data.
+    return:
+      type: System.Reflection.Assembly
+      description: The assembly that resolves the type, assembly, or resource; or null if the assembly cannot be resolved.
+references:
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.ResolveEventArgs
+  isExternal: false
+  href: System.ResolveEventArgs.yml
+  name: ResolveEventArgs
+  fullName: System.ResolveEventArgs
+  type: Class
+- uid: System.Reflection.Assembly
+  parent: System.Reflection
+  isExternal: true
+  name: Assembly
+  fullName: System.Reflection.Assembly
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace

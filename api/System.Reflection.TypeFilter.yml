@@ -1,0 +1,58 @@
+items:
+- uid: System.Reflection.TypeFilter
+  id: TypeFilter
+  parent: System.Reflection
+  children: []
+  href: System.Reflection.TypeFilter.yml
+  name: TypeFilter
+  fullName: System.Reflection.TypeFilter
+  type: Delegate
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/TypeFilter.cs
+      branch: master
+      repo: https://github.com/chenkennt/coreclr.git
+    path: src/mscorlib/src/System/Reflection/TypeFilter.cs
+    startLine: 14
+  assemblies:
+  - mscorlib
+  namespace: System.Reflection
+  summary: Filters the classes represented in an array of @'System.Type' objects.
+  syntax:
+    content: public delegate bool TypeFilter(Type m, object filterCriteria);
+    content.vb: Public Delegate Function TypeFilter(m As Type, filterCriteria As Object) As Boolean
+    parameters:
+    - id: m
+      type: System.Type
+      description: The Type object to which the filter is applied.
+    - id: filterCriteria
+      type: System.Object
+      description: An arbitrary object used to filter the list.
+    return:
+      type: System.Boolean
+      description: true to include the @'System.Type' in the filtered list; otherwise false.
+references:
+- uid: System.Reflection
+  isExternal: false
+  name: System.Reflection
+  fullName: System.Reflection
+  type: Namespace
+- uid: System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  fullName: System.Type
+- uid: System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System
+  isExternal: false
+  name: System
+  fullName: System

@@ -2,6 +2,22 @@
 
 The code samples here are simple, buildable projects which augment the .NET Core Documentation with demonstrative code snippets.  These samples are directly embedded into documentation.
 
+Sample projects are broken up by language.  Here is an example general structure:
+
+```
+/samples
+   /concept-to-sample
+      /csharp
+         global.json
+         /src
+            File1.cs
+            project.json
+         /test
+            Test1.cs
+            project.json
+      /vb
+      /fsharp
+```
 If you wish to add a code sample:
 
 1. Your sample **must be part of a buildable project**

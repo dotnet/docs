@@ -1,0 +1,50 @@
+﻿{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
+            "../corefx/src/**/src/**/*.csproj",
+            "../coreclr/src/mscorlib/mscorlib.csproj"
+          ],
+          "exclude": [ "**/bin/**", "**/obj/**" ]
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content":
+      [
+        {
+          "files": ["api/**/*.yml"]
+        },
+        {
+          "files": [
+            "docs/**/*.md",
+            "**/index.md"
+          ]
+        },
+        {
+          "files": ["toc.yml"]
+        }
+      ],
+    "resource":
+      [
+        {
+          "files": [
+            "docs/_images/**",
+            "images/**"
+          ]
+        }
+      ],
+    "overwrite": "apidoc/*.md",
+    "externalReference": [
+    ],
+    "globalMetadata": {
+      "_appTitle": "CoreCLR site"
+    },
+    "dest": "_site",
+    "template": [ "default", "template" ]
+  }
+}
